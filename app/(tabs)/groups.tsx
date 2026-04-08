@@ -1,15 +1,15 @@
 import { View, Text, StyleSheet } from 'react-native';
 import { theme } from '@/src/lib/theme';
 
-// Phase 2 will replace this with the watchlist (Want / Watching / Watched)
-export default function MyShowsScreen() {
+// Phase 4 will replace this with the groups list
+export default function GroupsScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.emoji}>📺</Text>
-      <Text style={styles.title}>My Shows</Text>
+      <Text style={styles.emoji}>👥</Text>
+      <Text style={styles.title}>Groups</Text>
       <Text style={styles.subtitle}>
-        Your watchlists will live here.{'\n'}
-        Search for a show to get started.
+        Watch shows together with friends.{'\n'}
+        Create a group to get started.
       </Text>
     </View>
   );
