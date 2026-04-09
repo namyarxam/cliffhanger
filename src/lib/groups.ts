@@ -261,6 +261,15 @@ export async function toggleSpoilerLock(groupId: string, enabled: boolean): Prom
   if (error) throw error;
 }
 
+export async function deleteGroup(groupId: string): Promise<void> {
+  const { error } = await supabase
+    .from('groups')
+    .delete()
+    .eq('id', groupId);
+
+  if (error) throw error;
+}
+
 export async function getMemberCount(groupId: string): Promise<number> {
   const { count, error } = await supabase
     .from('group_members')

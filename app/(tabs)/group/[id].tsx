@@ -25,6 +25,7 @@ import {
   getFrontRunner,
   isCaughtUp,
   leaveGroup,
+  deleteGroup,
   toggleSpoilerLock,
 } from '@/src/lib/groups';
 import type { Group, GroupMember, GroupMessage } from '@/src/lib/types';
@@ -136,7 +137,7 @@ export default function GroupDetailScreen() {
         onPress: async () => {
           try {
             await leaveGroup(userId, id);
-            router.back();
+            router.replace('/(tabs)/groups');
           } catch {
             Alert.alert('Error', 'Failed to leave group');
           }
@@ -144,6 +145,25 @@ export default function GroupDetailScreen() {
       },
     ]);
   }, [userId, id, router]);
+
+  const handleDelete = useCallback(() => {
+    if (!id) return;
+    Alert.alert('Delete Group', 'This will remove the group for all members. This cannot be undone.', [
+      { text: 'Cancel', style: 'cancel' },
+      {
+        text: 'Delete',
+        style: 'destructive',
+        onPress: async () => {
+          try {
+            await deleteGroup(id);
+            router.replace('/(tabs)/groups');
+          } catch {
+            Alert.alert('Error', 'Failed to delete group');
+          }
+        },
+      },
+    ]);
+  }, [id, router]);
 
   const handleToggleSpoilerLock = useCallback(async () => {
     if (!group) return;
@@ -202,8 +222,8 @@ export default function GroupDetailScreen() {
                 <Text style={styles.codeCopy}> Copy</Text>
               </Pressable>
             </View>
-            <Pressable onPress={handleLeave}>
-              <Text style={styles.leaveText}>Leave</Text>
+            <Pressable onPress={isOwner ? handleDelete : handleLeave}>
+              <Text style={styles.leaveText}>{isOwner ? 'Delete' : 'Leave'}</Text>
             </Pressable>
           </View>
 
