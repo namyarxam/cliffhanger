@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, useCallback } from 'react';
+import { useState, useCallback, useRef } from 'react';
 import {
   View,
   Text,
@@ -9,62 +9,50 @@ import {
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { theme } from '@/src/lib/theme';
-import { fetchRankings } from '@/src/lib/data';
+import { searchShows } from '@/src/lib/data';
 import ShowCard from '@/src/components/ShowCard';
 import type { ShowSummary } from '@/src/lib/types';
 
 export default function SearchScreen() {
   const router = useRouter();
-  const [shows, setShows] = useState<ShowSummary[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [results, setResults] = useState<ShowSummary[]>([]);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [query, setQuery] = useState('');
+  const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  useEffect(() => {
-    fetchRankings()
-      .then(setShows)
-      .catch(e => setError(e.message))
-      .finally(() => setLoading(false));
+  const handleSearch = useCallback((text: string) => {
+    setQuery(text);
+    setError(null);
+
+    if (debounceRef.current) clearTimeout(debounceRef.current);
+
+    if (text.trim().length < 3) {
+      setResults([]);
+      setLoading(false);
+      return;
+    }
+
+    setLoading(true);
+    debounceRef.current = setTimeout(async () => {
+      try {
+        const data = await searchShows(text);
+        setResults(data);
+      } catch (e: any) {
+        setError(e.message);
+      } finally {
+        setLoading(false);
+      }
+    }, 600);
   }, []);
-
-  // Simple case-insensitive title search
-  const results = useMemo(() => {
-    if (!query.trim()) return shows.slice(0, 100); // show top 100 by default
-    const q = query.toLowerCase();
-    return shows.filter(s => s.title.toLowerCase().includes(q)).slice(0, 50);
-  }, [shows, query]);
 
   const handlePress = useCallback((id: string) => {
     router.push(`/show/${id}`);
   }, [router]);
 
-  const renderItem = useCallback(({ item, index }: { item: ShowSummary; index: number }) => (
-    <ShowCard
-      show={item}
-      rank={!query.trim() ? index + 1 : undefined}
-      onPress={handlePress}
-    />
-  ), [query, handlePress]);
-
-  if (loading) {
-    return (
-      <View style={styles.center}>
-        <ActivityIndicator color={theme.accent} size="large" />
-        <Text style={styles.loadingText}>Loading shows...</Text>
-      </View>
-    );
-  }
-
-  if (error) {
-    return (
-      <View style={styles.center}>
-        <Text style={styles.errorText}>Failed to load: {error}</Text>
-        <Text style={styles.errorHint}>
-          Make sure the web app dev server is running (npm run dev in cliffhanger/)
-        </Text>
-      </View>
-    );
-  }
+  const renderItem = useCallback(({ item }: { item: ShowSummary }) => (
+    <ShowCard show={item} onPress={handlePress} />
+  ), [handlePress]);
 
   return (
     <View style={styles.container}>
@@ -74,26 +62,45 @@ export default function SearchScreen() {
           placeholder="Search TV shows..."
           placeholderTextColor={theme.textFaint}
           value={query}
-          onChangeText={setQuery}
+          onChangeText={handleSearch}
           autoCorrect={false}
           clearButtonMode="while-editing"
         />
       </View>
 
-      <FlatList
-        data={results}
-        renderItem={renderItem}
-        keyExtractor={item => item.id}
-        contentContainerStyle={styles.list}
-        keyboardDismissMode="on-drag"
-        initialNumToRender={20}
-        maxToRenderPerBatch={20}
-        ListEmptyComponent={
-          <View style={styles.empty}>
-            <Text style={styles.emptyText}>No shows match "{query}"</Text>
-          </View>
-        }
-      />
+      {!query.trim() && !loading && (
+        <View style={styles.empty}>
+          <Text style={styles.emptyText}>Search for a TV show to get started</Text>
+        </View>
+      )}
+
+      {loading && (
+        <View style={styles.center}>
+          <ActivityIndicator color={theme.accent} size="small" />
+        </View>
+      )}
+
+      {error && (
+        <View style={styles.center}>
+          <Text style={styles.errorText}>{error}</Text>
+        </View>
+      )}
+
+      {!loading && !error && results.length > 0 && (
+        <FlatList
+          data={results}
+          renderItem={renderItem}
+          keyExtractor={item => item.id}
+          contentContainerStyle={styles.list}
+          keyboardDismissMode="on-drag"
+        />
+      )}
+
+      {!loading && !error && query.trim() && results.length === 0 && (
+        <View style={styles.empty}>
+          <Text style={styles.emptyText}>No shows match "{query}"</Text>
+        </View>
+      )}
     </View>
   );
 }
@@ -104,30 +111,14 @@ const styles = StyleSheet.create({
     backgroundColor: theme.bg,
   },
   center: {
-    flex: 1,
-    backgroundColor: theme.bg,
-    justifyContent: 'center',
-    alignItems: 'center',
     padding: 32,
-  },
-  loadingText: {
-    marginTop: 12,
-    color: theme.textDim,
-    fontFamily: 'DMSans_400Regular',
-    fontSize: 14,
+    alignItems: 'center',
   },
   errorText: {
     color: '#f87171',
     fontFamily: 'DMSans_600SemiBold',
     fontSize: 14,
     textAlign: 'center',
-  },
-  errorHint: {
-    color: theme.textFaint,
-    fontFamily: 'DMSans_400Regular',
-    fontSize: 12,
-    textAlign: 'center',
-    marginTop: 8,
   },
   searchBar: {
     paddingHorizontal: 16,

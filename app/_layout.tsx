@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { View, ActivityIndicator } from 'react-native';
-import { Slot, useRouter, useSegments } from 'expo-router';
+import { Stack, useRouter, useSegments } from 'expo-router';
 import { useFonts, DMSans_400Regular, DMSans_500Medium, DMSans_600SemiBold, DMSans_700Bold } from '@expo-google-fonts/dm-sans';
 import * as SplashScreen from 'expo-splash-screen';
 import { AuthProvider, useAuth } from '@/src/providers/AuthProvider';
@@ -39,8 +39,12 @@ function AuthGate() {
     );
   }
 
-  // Slot renders whatever the current route is (auth screens or tabs)
-  return <Slot />;
+  return (
+    <Stack screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="(auth)" />
+      <Stack.Screen name="(tabs)" />
+    </Stack>
+  );
 }
 
 export default function RootLayout() {

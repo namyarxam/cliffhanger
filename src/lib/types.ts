@@ -1,38 +1,39 @@
-// ─── Ported from web app ────────────────────────────────────────────────────
+// ─── TVMaze-based types ─────────────────────────────────────────────────────
 
 export interface Episode {
-  e: number;
-  t: string;
-  r: number;
-  v: number;
+  number: number;
+  title: string;
+  rating: number | null;
+  airdate: string | null;
+  airtime: string | null;
+  runtime: number | null;
 }
 
 export interface Season {
-  s: number;
-  eps: Episode[];
+  number: number;
+  episodes: Episode[];
 }
 
-/** Lightweight show data for the rankings list (from rankings.json) */
+/** Lightweight show data for search results */
 export interface ShowSummary {
-  id: string; // IMDB tconst, e.g. "tt0903747"
+  id: string; // TVMaze show ID (as string for consistency)
   title: string;
   year: number | null;
   endYear: number | null;
   genre: string;
   genres: string[];
-  seasons: number;
-  totalEpisodes: number;
-  overallRating: number;
-  totalRatings: number;
-  lastAired?: string | null;
+  image: string | null;
+  network: string | null;
+  status: string | null; // "Running", "Ended", etc.
+  summary: string | null;
 }
 
-/** Full show data with episodes (from shows/{id}.json) */
+/** Full show data with seasons and episodes */
 export interface ShowFull extends ShowSummary {
-  episodes: Season[];
-  network?: string | null;
-  summary?: string | null;
-  image?: string | null;
+  seasons: Season[];
+  totalSeasons: number;
+  totalEpisodes: number;
+  rating: number | null;
 }
 
 // ─── New types for mobile app ───────────────────────────────────────────────
@@ -43,8 +44,12 @@ export interface UserShow {
   user_id: string;
   show_id: string;
   status: WatchStatus;
+  show_title: string;
+  show_image: string | null;
+  show_network: string | null;
   current_season: number;
   current_episode: number;
+  current_episode_airdate: string | null;
   added_at: string;
   updated_at: string;
 }
