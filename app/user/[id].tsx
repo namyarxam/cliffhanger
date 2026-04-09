@@ -7,12 +7,15 @@ import {
   ActivityIndicator,
   Pressable,
   SafeAreaView,
+  Alert,
 } from 'react-native';
 import { useLocalSearchParams, useRouter, Stack } from 'expo-router';
+import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { getUserShows } from '@/src/lib/watchlist';
 import { getFriendshipStatus, sendFriendRequest, removeFriend } from '@/src/lib/friends';
+import { createGroup } from '@/src/lib/groups';
 import { supabase } from '@/src/lib/supabase';
 import WatchlistCard from '@/src/components/WatchlistCard';
 import type { UserShow, UserProfile, WatchStatus } from '@/src/lib/types';
@@ -31,6 +34,7 @@ export default function UserProfileScreen() {
 
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [shows, setShows] = useState<UserShow[]>([]);
+  const [myShowIds, setMyShowIds] = useState<Set<string>>(new Set());
   const [loading, setLoading] = useState(true);
   const [friendStatus, setFriendStatus] = useState<{
     friendship_id: string;
@@ -43,6 +47,7 @@ export default function UserProfileScreen() {
 
     setProfile(null);
     setShows([]);
+    setMyShowIds(new Set());
     setLoading(true);
 
     // Fetch profile
@@ -61,6 +66,13 @@ export default function UserProfileScreen() {
       .catch(() => {})
       .finally(() => setLoading(false));
 
+    // Fetch my shows to find overlap
+    if (userId) {
+      getUserShows(userId)
+        .then(mine => setMyShowIds(new Set(mine.map(s => s.show_id))))
+        .catch(() => {});
+    }
+
     // Fetch friendship status
     if (userId && id !== userId) {
       getFriendshipStatus(userId, id).then(setFriendStatus).catch(() => {});
@@ -71,11 +83,9 @@ export default function UserProfileScreen() {
     if (!userId || !id) return;
 
     if (!friendStatus) {
-      // Send request
       await sendFriendRequest(userId, id);
       setFriendStatus({ friendship_id: '', status: 'pending', is_incoming: false });
     } else if (friendStatus.status === 'accepted') {
-      // Unfriend
       await removeFriend(friendStatus.friendship_id);
       setFriendStatus(null);
     }
@@ -84,6 +94,40 @@ export default function UserProfileScreen() {
   const handleShowPress = useCallback((showId: string) => {
     router.push(`/show/${showId}`);
   }, [router]);
+
+  const handleCreateGroup = useCallback(async (show: UserShow) => {
+    if (!userId || !id || !profile) return;
+
+    Alert.alert(
+      'Create Group',
+      `Start a group for "${show.show_title}" with ${profile.display_name}?`,
+      [
+        { text: 'Cancel', style: 'cancel' },
+        {
+          text: 'Create',
+          onPress: async () => {
+            try {
+              const group = await createGroup(
+                userId,
+                `${show.show_title}`,
+                show.show_id,
+                show.show_title,
+                show.show_image,
+              );
+              // Add the other person to the group
+              await supabase
+                .from('group_members')
+                .insert({ group_id: group.id, user_id: id });
+
+              router.push(`/group/${group.id}`);
+            } catch {
+              Alert.alert('Error', 'Failed to create group');
+            }
+          },
+        },
+      ],
+    );
+  }, [userId, id, profile, router]);
 
   const sections = SECTION_ORDER
     .map(({ key, title }) => ({
@@ -116,9 +160,25 @@ export default function UserProfileScreen() {
         <SectionList
           sections={sections}
           keyExtractor={item => item.show_id}
-          renderItem={({ item }) => (
-            <WatchlistCard show={item} onPress={handleShowPress} />
-          )}
+          renderItem={({ item }) => {
+            const isShared = myShowIds.has(item.show_id);
+            return (
+              <View style={styles.showRow}>
+                <View style={styles.showRowCard}>
+                  <WatchlistCard show={item} onPress={handleShowPress} />
+                </View>
+                {isShared && (
+                  <Pressable
+                    style={({ pressed }) => [styles.groupButton, pressed && { opacity: 0.6 }]}
+                    onPress={() => handleCreateGroup(item)}
+                  >
+                    <FontAwesome name="users" size={12} color="#fff" />
+                    <Text style={styles.groupButtonPlus}>+</Text>
+                  </Pressable>
+                )}
+              </View>
+            );
+          }}
           renderSectionHeader={({ section }) => (
             <View style={styles.sectionHeader}>
               <Text style={styles.sectionTitle}>{section.title}</Text>
@@ -262,5 +322,29 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontFamily: 'DMSans_400Regular',
     color: theme.textDim,
+  },
+  showRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  showRowCard: {
+    flex: 1,
+  },
+  groupButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: 'rgba(96,165,250,0.2)',
+    borderWidth: 1,
+    borderColor: 'rgba(96,165,250,0.3)',
+    borderRadius: 8,
+    paddingHorizontal: 10,
+    paddingVertical: 8,
+    marginRight: 16,
+    gap: 2,
+  },
+  groupButtonPlus: {
+    fontSize: 12,
+    fontFamily: 'DMSans_700Bold',
+    color: '#fff',
   },
 });

@@ -53,6 +53,27 @@ function AuthGate() {
           headerShadowVisible: false,
         }}
       />
+      <Stack.Screen
+        name="group/create"
+        options={{
+          headerShown: true,
+          title: 'Create Group',
+          headerStyle: { backgroundColor: theme.bg },
+          headerTintColor: theme.text,
+          headerTitleStyle: { fontFamily: 'DMSans_700Bold', fontSize: 17 },
+          headerShadowVisible: false,
+        }}
+      />
+      <Stack.Screen
+        name="group/[id]"
+        options={{
+          headerShown: true,
+          headerStyle: { backgroundColor: theme.bg },
+          headerTintColor: theme.text,
+          headerTitleStyle: { fontFamily: 'DMSans_700Bold', fontSize: 17 },
+          headerShadowVisible: false,
+        }}
+      />
     </Stack>
   );
 }

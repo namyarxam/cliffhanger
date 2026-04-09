@@ -92,8 +92,11 @@ export interface Group {
   id: string;
   name: string;
   show_id: string;
+  show_title: string;
+  show_image: string | null;
   created_by: string;
   invite_code: string;
+  spoiler_lock: boolean;
   created_at: string;
 }
 
