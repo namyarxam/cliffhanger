@@ -12,7 +12,7 @@ import { useRouter } from 'expo-router';
 import { useFocusEffect } from 'expo-router';
 import { theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
-import { getUserShows } from '@/src/lib/watchlist';
+import { getUserShows, getShowsWithNewEpisodes, dismissNewEpisodes } from '@/src/lib/watchlist';
 import WatchlistCard from '@/src/components/WatchlistCard';
 import type { UserShow, WatchStatus } from '@/src/lib/types';
 
@@ -28,14 +28,19 @@ export default function MyShowsScreen() {
   const userId = session?.user?.id;
 
   const [shows, setShows] = useState<UserShow[]>([]);
+  const [showsWithNew, setShowsWithNew] = useState<Set<string>>(new Set());
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
 
   const fetchData = useCallback(async () => {
     if (!userId) return;
     try {
-      const data = await getUserShows(userId);
+      const [data, newEps] = await Promise.all([
+        getUserShows(userId),
+        getShowsWithNewEpisodes(userId),
+      ]);
       setShows(data);
+      setShowsWithNew(newEps);
     } catch {
       // silently fail
     } finally {
@@ -50,9 +55,18 @@ export default function MyShowsScreen() {
     }, [fetchData])
   );
 
-  const handlePress = useCallback((id: string) => {
+  const handlePress = useCallback(async (id: string) => {
+    // Dismiss new episodes indicator when tapping into the show
+    if (userId && showsWithNew.has(id)) {
+      dismissNewEpisodes(userId, id).catch(() => {});
+      setShowsWithNew(prev => {
+        const next = new Set(prev);
+        next.delete(id);
+        return next;
+      });
+    }
     router.push(`/show/${id}`);
-  }, [router]);
+  }, [router, userId, showsWithNew]);
 
   const sections = SECTION_ORDER
     .map(({ key, title }) => ({
@@ -90,7 +104,11 @@ export default function MyShowsScreen() {
       sections={sections}
       keyExtractor={item => item.show_id}
       renderItem={({ item }) => (
-        <WatchlistCard show={item} onPress={handlePress} />
+        <WatchlistCard
+          show={item}
+          onPress={handlePress}
+          hasNewEpisodes={showsWithNew.has(item.show_id)}
+        />
       )}
       renderSectionHeader={({ section }) => (
         <View style={styles.sectionHeader}>

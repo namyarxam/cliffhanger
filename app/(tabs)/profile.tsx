@@ -54,6 +54,15 @@ export default function ProfileScreen() {
         <Text style={styles.friendsChevron}>▸</Text>
       </Pressable>
 
+      {/* Settings button */}
+      <Pressable
+        style={({ pressed }) => [styles.settingsButton, pressed && { opacity: 0.7 }]}
+        onPress={() => router.push('/(tabs)/settings')}
+      >
+        <Text style={styles.settingsButtonText}>Settings</Text>
+        <Text style={styles.settingsChevron}>▸</Text>
+      </Pressable>
+
       <Pressable style={styles.signOutButton} onPress={signOut}>
         <Text style={styles.signOutText}>Sign Out</Text>
       </Pressable>
@@ -148,6 +157,27 @@ const styles = StyleSheet.create({
     color: '#fff',
   },
   friendsChevron: {
+    fontSize: 16,
+    color: theme.textDim,
+  },
+  settingsButton: {
+    width: '100%',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: theme.bgCard,
+    borderRadius: 10,
+    padding: 16,
+    borderWidth: 1,
+    borderColor: theme.border,
+    marginTop: 12,
+  },
+  settingsButtonText: {
+    fontSize: 16,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.text,
+  },
+  settingsChevron: {
     fontSize: 16,
     color: theme.textDim,
   },

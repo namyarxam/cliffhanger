@@ -83,18 +83,28 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="settings"
+        options={{ href: null, headerShown: false }}
+      />
+      <Tabs.Screen
         name="friends"
-        options={{
-          href: null,
-          headerShown: false,
-        }}
+        options={{ href: null, headerShown: false }}
       />
       <Tabs.Screen
         name="show/[id]"
-        options={{
-          href: null,
-          headerShown: false,
-        }}
+        options={{ href: null, headerShown: false }}
+      />
+      <Tabs.Screen
+        name="group/[id]"
+        options={{ href: null, headerShown: false }}
+      />
+      <Tabs.Screen
+        name="group/create"
+        options={{ href: null, headerShown: false }}
+      />
+      <Tabs.Screen
+        name="user/[id]"
+        options={{ href: null, headerShown: false }}
       />
     </Tabs>
     </RefreshBadgeContext.Provider>

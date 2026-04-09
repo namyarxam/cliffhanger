@@ -21,9 +21,10 @@ function formatAirdate(airdate: string): string {
 interface Props {
   show: UserShow;
   onPress: (id: string) => void;
+  hasNewEpisodes?: boolean;
 }
 
-export default memo(function WatchlistCard({ show, onPress }: Props) {
+export default memo(function WatchlistCard({ show, onPress, hasNewEpisodes }: Props) {
   return (
     <Pressable
       style={({ pressed }) => [styles.container, pressed && styles.pressed]}
@@ -45,9 +46,15 @@ export default memo(function WatchlistCard({ show, onPress }: Props) {
       </View>
 
       <View style={styles.info}>
-        <Text style={styles.title} numberOfLines={1}>
-          {show.show_title}
-        </Text>
+        <View style={styles.titleRow}>
+          {hasNewEpisodes && <View style={styles.newDot} />}
+          <Text style={styles.title} numberOfLines={1}>
+            {show.show_title}
+          </Text>
+        </View>
+        {hasNewEpisodes && (
+          <Text style={styles.newText}>New episodes</Text>
+        )}
       </View>
 
       {/* Right side: network, episode progress, or checkmark */}
@@ -112,10 +119,28 @@ const styles = StyleSheet.create({
     flex: 1,
     gap: 3,
   },
+  titleRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+  },
+  newDot: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: theme.accent,
+  },
   title: {
     fontSize: 15,
     fontFamily: 'DMSans_600SemiBold',
     color: theme.text,
+    flexShrink: 1,
+  },
+  newText: {
+    fontSize: 11,
+    fontFamily: 'DMSans_500Medium',
+    color: theme.accent,
+    marginTop: 1,
   },
   rightInfo: {
     alignItems: 'flex-end',

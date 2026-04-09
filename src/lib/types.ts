@@ -50,6 +50,7 @@ export interface UserShow {
   current_season: number;
   current_episode: number;
   current_episode_airdate: string | null;
+  new_episodes_seen_at: string | null;
   added_at: string;
   updated_at: string;
 }
@@ -67,6 +68,7 @@ export interface UserProfile {
   display_name: string;
   username: string;
   avatar_url: string | null;
+  push_new_episodes: boolean;
   created_at: string;
 }
 

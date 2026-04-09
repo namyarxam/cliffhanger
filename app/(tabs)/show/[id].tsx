@@ -84,6 +84,7 @@ export default function ShowDetailScreen() {
         current_season: 0,
         current_episode: 0,
         current_episode_airdate: null,
+        new_episodes_seen_at: null,
         added_at: new Date().toISOString(),
         updated_at: new Date().toISOString(),
       });
@@ -175,6 +176,7 @@ export default function ShowDetailScreen() {
         current_season: season,
         current_episode: episode,
         current_episode_airdate: targetEp?.airdate ?? null,
+        new_episodes_seen_at: null,
         added_at: new Date().toISOString(),
         updated_at: new Date().toISOString(),
       });

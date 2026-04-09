@@ -233,3 +233,20 @@ export async function unmarkEpisode(
 
   if (error) throw error;
 }
+
+export async function getShowsWithNewEpisodes(userId: string): Promise<Set<string>> {
+  const { data, error } = await supabase.rpc('get_shows_with_new_episodes', {
+    p_user_id: userId,
+  });
+
+  if (error) return new Set();
+  return new Set((data ?? []).map((r: { show_id: string }) => r.show_id));
+}
+
+export async function dismissNewEpisodes(userId: string, showId: string): Promise<void> {
+  await supabase
+    .from('user_shows')
+    .update({ new_episodes_seen_at: new Date().toISOString() })
+    .eq('user_id', userId)
+    .eq('show_id', showId);
+}
