@@ -16,9 +16,11 @@ import { useAuth } from '@/src/providers/AuthProvider';
 import { getUserShows } from '@/src/lib/watchlist';
 import { getFriendshipStatus, sendFriendRequest, removeFriend } from '@/src/lib/friends';
 import { createGroup } from '@/src/lib/groups';
+import { getTopShows } from '@/src/lib/topshows';
 import { supabase } from '@/src/lib/supabase';
+import TopShowsRow from '@/src/components/TopShowsRow';
 import WatchlistCard from '@/src/components/WatchlistCard';
-import type { UserShow, UserProfile, WatchStatus } from '@/src/lib/types';
+import type { UserShow, UserProfile, WatchStatus, TopShow } from '@/src/lib/types';
 
 const SECTION_ORDER: { key: WatchStatus; title: string }[] = [
   { key: 'currently_watching', title: 'Currently Watching' },
@@ -35,6 +37,7 @@ export default function UserProfileScreen() {
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [shows, setShows] = useState<UserShow[]>([]);
   const [myShowIds, setMyShowIds] = useState<Set<string>>(new Set());
+  const [topShows, setTopShows] = useState<TopShow[]>([]);
   const [loading, setLoading] = useState(true);
   const [friendStatus, setFriendStatus] = useState<{
     friendship_id: string;
@@ -48,6 +51,7 @@ export default function UserProfileScreen() {
     setProfile(null);
     setShows([]);
     setMyShowIds(new Set());
+    setTopShows([]);
     setLoading(true);
 
     // Fetch profile
@@ -59,6 +63,9 @@ export default function UserProfileScreen() {
       .then(({ data }) => {
         if (data) setProfile(data);
       });
+
+    // Fetch their top shows
+    getTopShows(id).then(setTopShows).catch(() => {});
 
     // Fetch their shows
     getUserShows(id)
@@ -130,10 +137,13 @@ export default function UserProfileScreen() {
   }, [userId, id, profile, router]);
 
   const sections = SECTION_ORDER
-    .map(({ key, title }) => ({
-      title,
-      data: shows.filter(s => s.status === key),
-    }))
+    .map(({ key, title }) => {
+      let data = shows.filter(s => s.status === key);
+      if (key === 'watched') {
+        data = [...data].sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0));
+      }
+      return { title, data };
+    })
     .filter(s => s.data.length > 0);
 
   const friendButtonText = !friendStatus
@@ -152,6 +162,11 @@ export default function UserProfileScreen() {
         headerShadowVisible: false,
       }} />
 
+      {/* Back header */}
+      <Pressable style={styles.backButton} onPress={() => router.back()}>
+        <Text style={styles.backText}>‹ Back</Text>
+      </Pressable>
+
       {loading ? (
         <View style={styles.center}>
           <ActivityIndicator color={theme.accent} size="large" />
@@ -163,11 +178,10 @@ export default function UserProfileScreen() {
           renderItem={({ item }) => {
             const isShared = myShowIds.has(item.show_id);
             return (
-              <View style={styles.showRow}>
-                <View style={styles.showRowCard}>
-                  <WatchlistCard show={item} onPress={handleShowPress} />
-                </View>
-                {isShared && (
+              <WatchlistCard
+                show={item}
+                onPress={handleShowPress}
+                leftAccessory={isShared ? (
                   <Pressable
                     style={({ pressed }) => [styles.groupButton, pressed && { opacity: 0.6 }]}
                     onPress={() => handleCreateGroup(item)}
@@ -175,8 +189,8 @@ export default function UserProfileScreen() {
                     <FontAwesome name="users" size={12} color="#fff" />
                     <Text style={styles.groupButtonPlus}>+</Text>
                   </Pressable>
-                )}
-              </View>
+                ) : undefined}
+              />
             );
           }}
           renderSectionHeader={({ section }) => (
@@ -197,24 +211,20 @@ export default function UserProfileScreen() {
               </Text>
               <Text style={styles.username}>@{profile?.username || 'unknown'}</Text>
 
-              {userId && id !== userId && (
+              {userId && id !== userId && friendStatus?.status !== 'accepted' && (
                 <Pressable
-                  style={({ pressed }) => [
-                    styles.friendButton,
-                    friendStatus?.status === 'accepted' && styles.friendButtonActive,
-                    pressed && styles.friendButtonPressed,
-                  ]}
+                  style={({ pressed }) => [styles.friendButton, pressed && styles.friendButtonPressed]}
                   onPress={handleFriendAction}
                   disabled={friendStatus?.status === 'pending' && !friendStatus.is_incoming}
                 >
-                  <Text style={[
-                    styles.friendButtonText,
-                    friendStatus?.status === 'accepted' && styles.friendButtonTextActive,
-                  ]}>
-                    {friendButtonText}
-                  </Text>
+                  <Text style={styles.friendButtonText}>{friendButtonText}</Text>
                 </Pressable>
               )}
+
+              <TopShowsRow
+                shows={topShows}
+                onPress={handleShowPress}
+              />
             </View>
           }
           ListEmptyComponent={
@@ -234,6 +244,15 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: theme.bg,
+  },
+  backButton: {
+    paddingHorizontal: 16,
+    paddingVertical: 10,
+  },
+  backText: {
+    fontSize: 17,
+    fontFamily: 'DMSans_500Medium',
+    color: theme.accent,
   },
   center: {
     padding: 32,
@@ -277,16 +296,17 @@ const styles = StyleSheet.create({
     color: theme.textDim,
     marginBottom: 16,
   },
+  friendIndicator: {
+    fontSize: 12,
+    fontFamily: 'DMSans_400Regular',
+    color: theme.textFaint,
+    marginBottom: 4,
+  },
   friendButton: {
     backgroundColor: theme.accent,
     paddingHorizontal: 24,
     paddingVertical: 8,
     borderRadius: 8,
-  },
-  friendButtonActive: {
-    backgroundColor: 'rgba(74,222,128,0.1)',
-    borderWidth: 1,
-    borderColor: 'rgba(74,222,128,0.2)',
   },
   friendButtonPressed: {
     opacity: 0.7,
@@ -295,9 +315,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontFamily: 'DMSans_600SemiBold',
     color: '#fff',
-  },
-  friendButtonTextActive: {
-    color: 'rgba(74,222,128,0.7)',
   },
   sectionHeader: {
     flexDirection: 'row',
@@ -323,13 +340,6 @@ const styles = StyleSheet.create({
     fontFamily: 'DMSans_400Regular',
     color: theme.textDim,
   },
-  showRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  showRowCard: {
-    flex: 1,
-  },
   groupButton: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -339,7 +349,6 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     paddingHorizontal: 10,
     paddingVertical: 8,
-    marginRight: 16,
     gap: 2,
   },
   groupButtonPlus: {

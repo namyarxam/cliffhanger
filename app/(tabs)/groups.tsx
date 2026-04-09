@@ -13,6 +13,7 @@ import {
 import { useRouter } from 'expo-router';
 import { useFocusEffect } from 'expo-router';
 import { theme } from '@/src/lib/theme';
+import { useToast } from '@/src/providers/ToastProvider';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { getMyGroups, joinGroup } from '@/src/lib/groups';
 import GroupCard from '@/src/components/GroupCard';
@@ -22,6 +23,7 @@ export default function GroupsScreen() {
   const router = useRouter();
   const { session } = useAuth();
   const userId = session?.user?.id;
+  const { showToast } = useToast();
 
   const [groups, setGroups] = useState<Group[]>([]);
   const [loading, setLoading] = useState(true);
@@ -61,7 +63,7 @@ export default function GroupsScreen() {
       fetchGroups();
       router.push(`/group/${group.id}`);
     } catch (e: any) {
-      Alert.alert('Error', e.message || 'Failed to join group');
+      showToast(e.message || 'Failed to join group', 'error');
     } finally {
       setJoining(false);
     }

@@ -1,41 +1,105 @@
 import { useState, useCallback } from 'react';
-import { View, Text, Pressable, StyleSheet } from 'react-native';
+import { View, Text, TextInput, Pressable, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useFocusEffect } from 'expo-router';
 import { useAuth } from '@/src/providers/AuthProvider';
+import { useToast } from '@/src/providers/ToastProvider';
 import { theme } from '@/src/lib/theme';
+import { supabase } from '@/src/lib/supabase';
 import { getFriends, getPendingRequests } from '@/src/lib/friends';
+import { getTopShows } from '@/src/lib/topshows';
+import TopShowsRow from '@/src/components/TopShowsRow';
+import type { TopShow } from '@/src/lib/types';
 
 export default function ProfileScreen() {
-  const { profile, user, signOut } = useAuth();
+  const { profile, user, signOut, refreshProfile } = useAuth();
   const router = useRouter();
+  const { showToast } = useToast();
   const [friendCount, setFriendCount] = useState(0);
   const [pendingCount, setPendingCount] = useState(0);
+  const [topShows, setTopShows] = useState<TopShow[]>([]);
+
+  const [editing, setEditing] = useState(false);
+  const [editName, setEditName] = useState('');
 
   useFocusEffect(
     useCallback(() => {
       if (!user?.id) return;
       getFriends(user.id).then(f => setFriendCount(f.length)).catch(() => {});
       getPendingRequests(user.id).then(p => setPendingCount(p.length)).catch(() => {});
+      getTopShows(user.id).then(setTopShows).catch(() => {});
     }, [user?.id])
   );
 
+  const handleStartEdit = () => {
+    setEditName(profile?.display_name || '');
+    setEditing(true);
+  };
+
+  const handleSaveEdit = async () => {
+    if (!user?.id || !editName.trim()) return;
+    try {
+      const { error } = await supabase
+        .from('profiles')
+        .update({ display_name: editName.trim() })
+        .eq('id', user.id);
+
+      if (error) throw error;
+      await refreshProfile();
+      setEditing(false);
+      showToast('Name updated', 'success');
+    } catch {
+      showToast('Failed to update name', 'error');
+    }
+  };
+
   return (
     <View style={styles.container}>
-      {/* Avatar placeholder */}
+      {/* Avatar */}
       <View style={styles.avatar}>
         <Text style={styles.avatarText}>
           {(profile?.display_name || profile?.username || '?')[0].toUpperCase()}
         </Text>
       </View>
 
-      <Text style={styles.displayName}>
-        {profile?.display_name || 'Anonymous'}
-      </Text>
+      {/* Display name — tappable to edit */}
+      {editing ? (
+        <View style={styles.editRow}>
+          <TextInput
+            style={styles.editInput}
+            value={editName}
+            onChangeText={setEditName}
+            autoFocus
+            maxLength={40}
+            onSubmitEditing={handleSaveEdit}
+            returnKeyType="done"
+          />
+          <Pressable style={styles.saveButton} onPress={handleSaveEdit}>
+            <Text style={styles.saveText}>Save</Text>
+          </Pressable>
+          <Pressable style={styles.cancelButton} onPress={() => setEditing(false)}>
+            <Text style={styles.cancelText}>Cancel</Text>
+          </Pressable>
+        </View>
+      ) : (
+        <Pressable onPress={handleStartEdit}>
+          <Text style={styles.displayName}>
+            {profile?.display_name || 'Anonymous'}
+            <Text style={styles.editHint}> ✎</Text>
+          </Text>
+        </Pressable>
+      )}
+
       <Text style={styles.username}>
         @{profile?.username || 'unknown'}
       </Text>
       <Text style={styles.email}>{user?.email}</Text>
+
+      {/* Top 4 Shows */}
+      <TopShowsRow
+        shows={topShows}
+        onPress={(showId) => router.push(`/show/${showId}`)}
+      />
 
       {/* Friends button */}
       <Pressable
@@ -99,6 +163,49 @@ const styles = StyleSheet.create({
     fontFamily: 'DMSans_700Bold',
     color: theme.text,
     marginBottom: 4,
+  },
+  editHint: {
+    fontSize: 16,
+    color: theme.textFaint,
+  },
+  editRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    marginBottom: 4,
+  },
+  editInput: {
+    fontSize: 20,
+    fontFamily: 'DMSans_700Bold',
+    color: theme.text,
+    backgroundColor: theme.bgCard,
+    borderWidth: 1,
+    borderColor: theme.accent,
+    borderRadius: 8,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    minWidth: 150,
+    textAlign: 'center',
+  },
+  saveButton: {
+    backgroundColor: theme.accent,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 6,
+  },
+  saveText: {
+    fontSize: 13,
+    fontFamily: 'DMSans_600SemiBold',
+    color: '#fff',
+  },
+  cancelButton: {
+    paddingHorizontal: 8,
+    paddingVertical: 6,
+  },
+  cancelText: {
+    fontSize: 13,
+    fontFamily: 'DMSans_500Medium',
+    color: theme.textDim,
   },
   username: {
     fontSize: 14,

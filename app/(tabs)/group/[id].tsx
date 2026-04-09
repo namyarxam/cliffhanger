@@ -15,6 +15,7 @@ import {
 import { useLocalSearchParams, Stack, useRouter } from 'expo-router';
 import * as Clipboard from 'expo-clipboard';
 import { theme } from '@/src/lib/theme';
+import { useToast } from '@/src/providers/ToastProvider';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { supabase } from '@/src/lib/supabase';
 import {
@@ -30,11 +31,24 @@ import {
 } from '@/src/lib/groups';
 import type { Group, GroupMember, GroupMessage } from '@/src/lib/types';
 
+function formatChatDate(dateStr: string): string {
+  const d = new Date(dateStr);
+  const now = new Date();
+  const today = now.toDateString();
+  const yesterday = new Date(now.getTime() - 86400000).toDateString();
+  const msgDay = d.toDateString();
+
+  if (msgDay === today) return 'Today';
+  if (msgDay === yesterday) return 'Yesterday';
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+}
+
 export default function GroupDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
   const { session } = useAuth();
   const userId = session?.user?.id;
+  const { showToast } = useToast();
 
   const [group, setGroup] = useState<Group | null>(null);
   const [members, setMembers] = useState<GroupMember[]>([]);
@@ -115,7 +129,7 @@ export default function GroupDetailScreen() {
       await sendMessage(id, userId, messageText);
       setMessageText('');
     } catch {
-      Alert.alert('Error', 'Failed to send message');
+      showToast('Failed to send message', 'error');
     } finally {
       setSending(false);
     }
@@ -139,7 +153,7 @@ export default function GroupDetailScreen() {
             await leaveGroup(userId, id);
             router.replace('/(tabs)/groups');
           } catch {
-            Alert.alert('Error', 'Failed to leave group');
+            showToast('Failed to leave group', 'error');
           }
         },
       },
@@ -158,7 +172,7 @@ export default function GroupDetailScreen() {
             await deleteGroup(id);
             router.replace('/(tabs)/groups');
           } catch {
-            Alert.alert('Error', 'Failed to delete group');
+            showToast('Failed to delete group', 'error');
           }
         },
       },
@@ -172,7 +186,7 @@ export default function GroupDetailScreen() {
       await toggleSpoilerLock(group.id, newValue);
       setGroup({ ...group, spoiler_lock: newValue });
     } catch {
-      Alert.alert('Error', 'Failed to update spoiler lock');
+      showToast('Failed to update spoiler lock', 'error');
     }
   }, [group]);
 
@@ -280,23 +294,35 @@ export default function GroupDetailScreen() {
               <FlatList
                 data={messages}
                 keyExtractor={item => item.id}
-                renderItem={({ item }) => {
+                renderItem={({ item, index }) => {
                   const isMe = item.user_id === userId;
+                  const msgDate = new Date(item.created_at).toDateString();
+                  const nextMsg = messages[index + 1];
+                  const nextDate = nextMsg ? new Date(nextMsg.created_at).toDateString() : null;
+                  const showDateSep = !nextMsg || msgDate !== nextDate;
+
                   return (
-                    <View style={[styles.messageBubble, isMe ? styles.messageSelf : styles.messageOther]}>
-                      {!isMe && (
-                        <Text style={styles.messageSender}>{item.sender_name}</Text>
+                    <>
+                      <View style={[styles.messageBubble, isMe ? styles.messageSelf : styles.messageOther]}>
+                        {!isMe && (
+                          <Text style={styles.messageSender}>{item.sender_name}</Text>
+                        )}
+                        <Text style={[styles.messageText, isMe && styles.messageTextSelf]}>
+                          {item.message}
+                        </Text>
+                        <Text style={styles.messageTime}>
+                          {new Date(item.created_at).toLocaleTimeString('en-US', {
+                            hour: 'numeric',
+                            minute: '2-digit',
+                          })}
+                        </Text>
+                      </View>
+                      {showDateSep && (
+                        <View style={styles.dateSeparator}>
+                          <Text style={styles.dateSeparatorText}>{formatChatDate(item.created_at)}</Text>
+                        </View>
                       )}
-                      <Text style={[styles.messageText, isMe && styles.messageTextSelf]}>
-                        {item.message}
-                      </Text>
-                      <Text style={styles.messageTime}>
-                        {new Date(item.created_at).toLocaleTimeString('en-US', {
-                          hour: 'numeric',
-                          minute: '2-digit',
-                        })}
-                      </Text>
-                    </View>
+                    </>
                   );
                 }}
                 inverted
@@ -551,6 +577,20 @@ const styles = StyleSheet.create({
     color: 'rgba(255,255,255,0.4)',
     marginTop: 4,
     alignSelf: 'flex-end',
+  },
+  dateSeparator: {
+    alignItems: 'center',
+    paddingVertical: 12,
+  },
+  dateSeparatorText: {
+    fontSize: 11,
+    fontFamily: 'DMSans_500Medium',
+    color: theme.textFaint,
+    backgroundColor: theme.bgCard,
+    paddingHorizontal: 12,
+    paddingVertical: 4,
+    borderRadius: 10,
+    overflow: 'hidden',
   },
   chatEmpty: {
     padding: 32,

@@ -2,6 +2,7 @@ import { memo } from 'react';
 import { View, Text, Pressable, StyleSheet } from 'react-native';
 import { Image } from 'expo-image';
 import { theme } from '@/src/lib/theme';
+import { getUserRatingColor } from '@/src/components/RatingSelector';
 import type { UserShow } from '@/src/lib/types';
 
 function formatAirdate(airdate: string): string {
@@ -15,16 +16,22 @@ function formatAirdate(airdate: string): string {
   if (diffDays === 1) return 'Yesterday';
   if (diffDays < 7) return `${diffDays}d ago`;
   if (diffDays < 30) return `${Math.floor(diffDays / 7)}w ago`;
-  return epDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  const sameYear = epDate.getFullYear() === now.getFullYear();
+  return epDate.toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    ...(sameYear ? {} : { year: 'numeric' }),
+  });
 }
 
 interface Props {
   show: UserShow;
   onPress: (id: string) => void;
   hasNewEpisodes?: boolean;
+  leftAccessory?: React.ReactNode;
 }
 
-export default memo(function WatchlistCard({ show, onPress, hasNewEpisodes }: Props) {
+export default memo(function WatchlistCard({ show, onPress, hasNewEpisodes, leftAccessory }: Props) {
   return (
     <Pressable
       style={({ pressed }) => [styles.container, pressed && styles.pressed]}
@@ -57,7 +64,9 @@ export default memo(function WatchlistCard({ show, onPress, hasNewEpisodes }: Pr
         )}
       </View>
 
-      {/* Right side: network, episode progress, or checkmark */}
+      {leftAccessory}
+
+      {/* Right side: network, episode progress, or rating */}
       {show.status === 'want_to_watch' && show.show_network && (
         <Text style={styles.network}>{show.show_network}</Text>
       )}
@@ -75,9 +84,11 @@ export default memo(function WatchlistCard({ show, onPress, hasNewEpisodes }: Pr
         </View>
       )}
 
-      {show.status === 'watched' && (
-        <View style={styles.checkCircle}>
-          <Text style={styles.checkMark}>✓</Text>
+      {show.status === 'watched' && show.rating != null && (
+        <View style={[styles.ratingCircle, { backgroundColor: `${getUserRatingColor(show.rating)}20` }]}>
+          <Text style={[styles.ratingText, { color: getUserRatingColor(show.rating) }]}>
+            {show.rating.toFixed(1)}
+          </Text>
         </View>
       )}
     </Pressable>
@@ -161,19 +172,16 @@ const styles = StyleSheet.create({
     fontFamily: 'DMSans_500Medium',
     color: 'rgba(255,255,255,0.45)',
   },
-  checkCircle: {
-    width: 22,
-    height: 22,
-    borderRadius: 11,
-    backgroundColor: 'rgba(74,222,128,0.15)',
-    borderWidth: 1,
-    borderColor: 'rgba(74,222,128,0.3)',
+  ratingCircle: {
+    minWidth: 36,
+    height: 28,
+    borderRadius: 14,
     alignItems: 'center',
     justifyContent: 'center',
+    paddingHorizontal: 6,
   },
-  checkMark: {
-    color: 'rgba(74,222,128,0.7)',
+  ratingText: {
     fontSize: 12,
-    fontWeight: '700',
+    fontFamily: 'DMSans_700Bold',
   },
 });

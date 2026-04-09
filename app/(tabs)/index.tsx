@@ -31,6 +31,7 @@ export default function MyShowsScreen() {
   const [showsWithNew, setShowsWithNew] = useState<Set<string>>(new Set());
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
+  const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
 
   const fetchData = useCallback(async () => {
     if (!userId) return;
@@ -68,12 +69,30 @@ export default function MyShowsScreen() {
     router.push(`/show/${id}`);
   }, [router, userId, showsWithNew]);
 
+  const toggleSection = useCallback((title: string) => {
+    setCollapsed(prev => {
+      const next = new Set(prev);
+      if (next.has(title)) next.delete(title);
+      else next.add(title);
+      return next;
+    });
+  }, []);
+
   const sections = SECTION_ORDER
-    .map(({ key, title }) => ({
-      title,
-      data: shows.filter(s => s.status === key),
-    }))
-    .filter(s => s.data.length > 0);
+    .map(({ key, title }) => {
+      let allData = shows.filter(s => s.status === key);
+      if (key === 'watched') {
+        allData = [...allData].sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0));
+      } else {
+        allData = [...allData].sort((a, b) => a.show_title.localeCompare(b.show_title));
+      }
+      return {
+        title,
+        data: collapsed.has(title) ? [] : allData,
+        count: allData.length,
+      };
+    })
+    .filter(s => s.count > 0);
 
   if (loading) {
     return (
@@ -110,12 +129,18 @@ export default function MyShowsScreen() {
           hasNewEpisodes={showsWithNew.has(item.show_id)}
         />
       )}
-      renderSectionHeader={({ section }) => (
-        <View style={styles.sectionHeader}>
-          <Text style={styles.sectionTitle}>{section.title}</Text>
-          <Text style={styles.sectionCount}>{section.data.length}</Text>
-        </View>
-      )}
+      renderSectionHeader={({ section }) => {
+        const isCollapsed = collapsed.has(section.title);
+        return (
+          <Pressable
+            style={styles.sectionHeader}
+            onPress={() => toggleSection(section.title)}
+          >
+            <Text style={styles.sectionTitle}>{section.title}</Text>
+            <Text style={styles.sectionCount}>{section.count}</Text>
+          </Pressable>
+        );
+      }}
       refreshControl={
         <RefreshControl
           refreshing={refreshing}
@@ -165,6 +190,7 @@ const styles = StyleSheet.create({
     fontSize: 13,
     fontFamily: 'DMSans_400Regular',
     color: theme.textFaint,
+    flex: 1,
   },
   emptyTitle: {
     fontSize: 18,

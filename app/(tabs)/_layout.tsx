@@ -1,13 +1,23 @@
 import { useState, useEffect, useCallback, createContext, useContext } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, Pressable, StyleSheet } from 'react-native';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { Tabs } from 'expo-router';
+import { Tabs, usePathname } from 'expo-router';
 import { theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { getPendingRequests } from '@/src/lib/friends';
 
 const RefreshBadgeContext = createContext<() => void>(() => {});
 export const useRefreshBadge = () => useContext(RefreshBadgeContext);
+
+// Map hidden routes to the tab that should highlight
+const ROUTE_TO_TAB: Record<string, string> = {
+  'show/[id]': 'index',
+  'group/[id]': 'groups',
+  'group/create': 'groups',
+  'friends': 'profile',
+  'settings': 'profile',
+  'user/[id]': 'profile',
+};
 
 function TabIcon(props: { name: React.ComponentProps<typeof FontAwesome>['name']; color: string }) {
   return <FontAwesome size={22} style={{ marginBottom: -2 }} {...props} />;
@@ -16,6 +26,7 @@ function TabIcon(props: { name: React.ComponentProps<typeof FontAwesome>['name']
 export default function TabLayout() {
   const { session } = useAuth();
   const [pendingCount, setPendingCount] = useState(0);
+  const pathname = usePathname();
 
   const refreshPending = useCallback(() => {
     if (!session?.user?.id) return;
@@ -30,94 +41,125 @@ export default function TabLayout() {
     return () => clearInterval(interval);
   }, [refreshPending]);
 
+  // Determine which tab should be active based on current path
+  const getActiveTab = useCallback(() => {
+    // pathname is like "/show/123", "/group/abc", "/friends", "/settings", etc.
+    const path = pathname.replace(/^\//, ''); // remove leading slash
+
+    // Direct tab matches
+    if (path === '' || path === 'index') return 'index';
+    if (path === 'search') return 'search';
+    if (path === 'groups') return 'groups';
+    if (path === 'profile') return 'profile';
+
+    // Hidden route matches
+    if (path.startsWith('show/')) return 'index';
+    if (path.startsWith('group/')) return 'groups';
+    if (path === 'friends' || path === 'settings' || path.startsWith('user/')) return 'profile';
+
+    return null;
+  }, [pathname]);
+
+  const activeTab = getActiveTab();
+
   return (
     <RefreshBadgeContext.Provider value={refreshPending}>
     <Tabs
+      tabBar={(props) => {
+        const tabs = [
+          { name: 'index', title: 'My Shows', icon: 'tv' as const },
+          { name: 'search', title: 'Search', icon: 'search' as const },
+          { name: 'groups', title: 'Groups', icon: 'users' as const },
+          { name: 'profile', title: 'Profile', icon: 'user' as const },
+        ];
+
+        return (
+          <View style={styles.tabBar}>
+            {tabs.map(tab => {
+              const isActive = activeTab === tab.name;
+              const color = isActive ? theme.accent : theme.textDim;
+
+              return (
+                <Pressable
+                  key={tab.name}
+                  style={styles.tabItem}
+                  onPress={() => {
+                    const route = props.state.routes.find(r => r.name === tab.name);
+                    if (route) {
+                      props.navigation.navigate(route.name);
+                    }
+                  }}
+                >
+                  <View>
+                    <TabIcon name={tab.icon} color={color} />
+                    {tab.name === 'profile' && pendingCount > 0 && (
+                      <View style={styles.badge}>
+                        <Text style={styles.badgeText}>{pendingCount}</Text>
+                      </View>
+                    )}
+                  </View>
+                  <Text style={[styles.tabLabel, { color }]}>{tab.title}</Text>
+                </Pressable>
+              );
+            })}
+          </View>
+        );
+      }}
       screenOptions={{
-        tabBarActiveTintColor: theme.accent,
-        tabBarInactiveTintColor: theme.textDim,
-        tabBarStyle: {
-          backgroundColor: theme.bg,
-          borderTopColor: theme.border,
-          borderTopWidth: 1,
-        },
-        headerStyle: {
-          backgroundColor: theme.bg,
-        },
+        headerStyle: { backgroundColor: theme.bg },
         headerTintColor: theme.text,
-        headerTitleStyle: {
-          fontFamily: 'DMSans_700Bold',
-          fontSize: 17,
-        },
+        headerTitleStyle: { fontFamily: 'DMSans_700Bold', fontSize: 17 },
         headerShadowVisible: false,
       }}
     >
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: 'My Shows',
-          tabBarIcon: ({ color }) => <TabIcon name="tv" color={color} />,
-        }}
-      />
-      <Tabs.Screen
-        name="search"
-        options={{
-          title: 'Search',
-          tabBarIcon: ({ color }) => <TabIcon name="search" color={color} />,
-        }}
-      />
-      <Tabs.Screen
-        name="groups"
-        options={{
-          title: 'Groups',
-          tabBarIcon: ({ color }) => <TabIcon name="users" color={color} />,
-        }}
-      />
-      <Tabs.Screen
-        name="profile"
-        options={{
-          title: 'Profile',
-          tabBarIcon: ({ color }) => <TabIcon name="user" color={color} />,
-          tabBarBadge: pendingCount > 0 ? pendingCount : undefined,
-          tabBarBadgeStyle: pendingCount > 0 ? styles.badge : undefined,
-        }}
-      />
-      <Tabs.Screen
-        name="settings"
-        options={{ href: null, headerShown: false }}
-      />
-      <Tabs.Screen
-        name="friends"
-        options={{ href: null, headerShown: false }}
-      />
-      <Tabs.Screen
-        name="show/[id]"
-        options={{ href: null, headerShown: false }}
-      />
-      <Tabs.Screen
-        name="group/[id]"
-        options={{ href: null, headerShown: false }}
-      />
-      <Tabs.Screen
-        name="group/create"
-        options={{ href: null, headerShown: false }}
-      />
-      <Tabs.Screen
-        name="user/[id]"
-        options={{ href: null, headerShown: false }}
-      />
+      <Tabs.Screen name="index" options={{ title: 'My Shows' }} />
+      <Tabs.Screen name="search" options={{ title: 'Search' }} />
+      <Tabs.Screen name="groups" options={{ title: 'Groups' }} />
+      <Tabs.Screen name="profile" options={{ title: 'Profile' }} />
+      <Tabs.Screen name="settings" options={{ href: null, headerShown: false }} />
+      <Tabs.Screen name="friends" options={{ href: null, headerShown: false }} />
+      <Tabs.Screen name="show/[id]" options={{ href: null, headerShown: false }} />
+      <Tabs.Screen name="group/[id]" options={{ href: null, headerShown: false }} />
+      <Tabs.Screen name="group/create" options={{ href: null, headerShown: false }} />
+      <Tabs.Screen name="user/[id]" options={{ href: null, headerShown: false }} />
     </Tabs>
     </RefreshBadgeContext.Provider>
   );
 }
 
 const styles = StyleSheet.create({
+  tabBar: {
+    flexDirection: 'row',
+    backgroundColor: theme.bg,
+    borderTopWidth: 1,
+    borderTopColor: theme.border,
+    paddingBottom: 28,
+    paddingTop: 8,
+  },
+  tabItem: {
+    flex: 1,
+    alignItems: 'center',
+    gap: 4,
+  },
+  tabLabel: {
+    fontSize: 10,
+    fontFamily: 'DMSans_500Medium',
+  },
   badge: {
+    position: 'absolute',
+    top: -4,
+    right: -10,
     backgroundColor: theme.accent,
-    fontSize: 11,
-    fontWeight: '700',
+    borderRadius: 9,
     minWidth: 18,
     height: 18,
-    borderRadius: 9,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 4,
+  },
+  badgeText: {
+    fontSize: 11,
+    fontWeight: '700',
+    color: '#fff',
   },
 });

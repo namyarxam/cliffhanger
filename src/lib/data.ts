@@ -42,6 +42,8 @@ interface TVMazeEpisode {
   airtime: string;
   runtime: number | null;
   rating: { average: number | null };
+  image: { medium: string; original: string } | null;
+  summary: string | null;
 }
 
 // ─── Transform TVMaze data to our types ─────────────────────────────────────
@@ -75,6 +77,9 @@ function groupEpisodes(episodes: TVMazeEpisode[]): Season[] {
       airdate: ep.airdate || null,
       airtime: ep.airtime || null,
       runtime: ep.runtime ?? null,
+      image: ep.image?.medium ?? null,
+      imageOriginal: ep.image?.original ?? null,
+      summary: ep.summary ? stripHtml(ep.summary) : null,
     });
   }
 

@@ -7,6 +7,9 @@ export interface Episode {
   airdate: string | null;
   airtime: string | null;
   runtime: number | null;
+  image: string | null;
+  imageOriginal: string | null;
+  summary: string | null;
 }
 
 export interface Season {
@@ -51,6 +54,7 @@ export interface UserShow {
   current_episode: number;
   current_episode_airdate: string | null;
   new_episodes_seen_at: string | null;
+  rating: number | null;
   added_at: string;
   updated_at: string;
 }
@@ -88,6 +92,14 @@ export interface FriendWithProfile {
   user: UserProfile;
   status: FriendshipStatus;
   is_incoming: boolean;
+}
+
+export interface TopShow {
+  user_id: string;
+  position: number;
+  show_id: string;
+  show_title: string;
+  show_image: string | null;
 }
 
 export interface Group {

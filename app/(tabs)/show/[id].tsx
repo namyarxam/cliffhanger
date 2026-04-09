@@ -8,10 +8,12 @@ import {
   ActivityIndicator,
   SafeAreaView,
   Alert,
+  LayoutAnimation,
 } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
 import { Image } from 'expo-image';
 import { theme } from '@/src/lib/theme';
+import { useToast } from '@/src/providers/ToastProvider';
 import { fetchShow } from '@/src/lib/data';
 import { useAuth } from '@/src/providers/AuthProvider';
 import {
@@ -21,9 +23,16 @@ import {
   removeShow,
   getWatchedEpisodes,
   markExactlyUpTo,
+  rateShow,
 } from '@/src/lib/watchlist';
-import EpisodeTimeline from '@/src/components/EpisodeTimeline';
-import type { ShowFull, WatchStatus, UserShow } from '@/src/lib/types';
+import WatchProgressBar from '@/src/components/WatchProgressBar';
+import CaughtUpButton from '@/src/components/CaughtUpButton';
+import EpisodePicker from '@/src/components/EpisodePicker';
+import RatingSelector from '@/src/components/RatingSelector';
+import { isInTopShows, addTopShow, removeTopShow } from '@/src/lib/topshows';
+import { getFriends } from '@/src/lib/friends';
+import { supabase } from '@/src/lib/supabase';
+import type { ShowFull, WatchStatus, UserShow, UserProfile } from '@/src/lib/types';
 
 const STATUS_LABELS: Record<WatchStatus, string> = {
   want_to_watch: 'Want to Watch',
@@ -37,6 +46,7 @@ export default function ShowDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const { session } = useAuth();
   const userId = session?.user?.id;
+  const { showToast } = useToast();
 
   const [show, setShow] = useState<ShowFull | null>(null);
   const [loading, setLoading] = useState(true);
@@ -44,12 +54,17 @@ export default function ShowDetailScreen() {
 
   const [userShow, setUserShow] = useState<UserShow | null>(null);
   const [watchedEps, setWatchedEps] = useState<Set<string>>(new Set());
+  const [isTop4, setIsTop4] = useState(false);
+  const [scrollEnabled, setScrollEnabled] = useState(true);
+  const [friendsWatching, setFriendsWatching] = useState<{ profile: UserProfile; status: string; season: number; episode: number }[]>([]);
 
   // Reset everything when navigating to a different show
   useEffect(() => {
     setShow(null);
     setUserShow(null);
     setWatchedEps(new Set());
+    setIsTop4(false);
+    setFriendsWatching([]);
     setLoading(true);
     setError(null);
 
@@ -58,7 +73,32 @@ export default function ShowDetailScreen() {
       .then(setShow)
       .catch(e => setError(e.message))
       .finally(() => setLoading(false));
-  }, [id]);
+
+    if (userId) {
+      isInTopShows(userId, id).then(setIsTop4).catch(() => {});
+
+      // Fetch friends who watch this show
+      getFriends(userId).then(async (friends) => {
+        if (friends.length === 0) return;
+        const friendIds = friends.map(f => f.user.id);
+        const { data } = await supabase
+          .from('user_shows')
+          .select('user_id, status, current_season, current_episode')
+          .eq('show_id', id)
+          .in('user_id', friendIds);
+
+        if (!data || data.length === 0) { setFriendsWatching([]); return; }
+
+        const profileMap = new Map(friends.map(f => [f.user.id, f.user]));
+        setFriendsWatching(data.map(d => ({
+          profile: profileMap.get(d.user_id)!,
+          status: d.status,
+          season: d.current_season,
+          episode: d.current_episode,
+        })).filter(d => d.profile));
+      }).catch(() => {});
+    }
+  }, [id, userId]);
 
   useEffect(() => {
     if (!userId || !id) return;
@@ -70,14 +110,30 @@ export default function ShowDetailScreen() {
     getWatchedEpisodes(userId, id).then(setWatchedEps).catch(() => {});
   }, [userId, id, userShow]);
 
-  const handleAddToWatchlist = useCallback(async () => {
+  const handleToggleTop4 = useCallback(async () => {
     if (!userId || !show) return;
     try {
-      await addShow(userId, show.id, 'want_to_watch', show.title, show.image, show.network);
+      if (isTop4) {
+        await removeTopShow(userId, show.id);
+        setIsTop4(false);
+      } else {
+        await addTopShow(userId, show.id, show.title, show.image);
+        setIsTop4(true);
+      }
+    } catch (e: any) {
+      showToast(e.message || 'Failed to update Top 4', 'error');
+    }
+  }, [userId, show, isTop4]);
+
+  const handleAddWithStatus = useCallback(async (status: WatchStatus) => {
+    if (!userId || !show) return;
+    try {
+      LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+      await addShow(userId, show.id, status, show.title, show.image, show.network);
       setUserShow({
         user_id: userId,
         show_id: show.id,
-        status: 'want_to_watch',
+        status,
         show_title: show.title,
         show_image: show.image,
         show_network: show.network,
@@ -85,11 +141,13 @@ export default function ShowDetailScreen() {
         current_episode: 0,
         current_episode_airdate: null,
         new_episodes_seen_at: null,
+        rating: null,
         added_at: new Date().toISOString(),
         updated_at: new Date().toISOString(),
       });
+      showToast(`Added to ${STATUS_LABELS[status]}`, 'success');
     } catch {
-      Alert.alert('Error', 'Failed to add show to watchlist');
+      showToast('Failed to add show', 'error');
     }
   }, [userId, show]);
 
@@ -111,7 +169,7 @@ export default function ShowDetailScreen() {
                 await removeShow(userId, id);
                 setUserShow(null);
               } catch {
-                Alert.alert('Error', 'Failed to remove show');
+                showToast('Failed to remove show', 'error');
               }
             },
           },
@@ -121,6 +179,7 @@ export default function ShowDetailScreen() {
     }
 
     try {
+      LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
       if (status === 'watched' && show) {
         // Find last aired episode and mark everything as watched
         const today = new Date().toISOString().slice(0, 10);
@@ -154,9 +213,62 @@ export default function ShowDetailScreen() {
         setUserShow(prev => prev ? { ...prev, status, updated_at: new Date().toISOString() } : null);
       }
     } catch {
-      Alert.alert('Error', 'Failed to update status');
+      showToast('Failed to update status', 'error');
     }
   }, [userId, id, userShow, show]);
+
+  const handleCatchUp = useCallback(async () => {
+    if (!userId || !id || !show) return;
+    const today = new Date().toISOString().slice(0, 10);
+    let lastSeason = 0;
+    let lastEp = 0;
+    let lastAirdate: string | null = null;
+    for (const s of show.seasons) {
+      for (const ep of s.episodes) {
+        if (!ep.airdate || ep.airdate <= today) {
+          lastSeason = s.number;
+          lastEp = ep.number;
+          lastAirdate = ep.airdate;
+        }
+      }
+    }
+    if (lastSeason > 0) {
+      // Optimistic
+      const optimistic = new Set<string>();
+      for (const s of show.seasons) {
+        for (const ep of s.episodes) {
+          if (s.number < lastSeason || (s.number === lastSeason && ep.number <= lastEp)) {
+            optimistic.add(`S${s.number}E${ep.number}`);
+          }
+        }
+      }
+      setWatchedEps(optimistic);
+
+      try {
+        const newSet = await markExactlyUpTo(userId, id, lastSeason, lastEp, show.seasons);
+        setWatchedEps(newSet);
+        setUserShow(prev => prev ? {
+          ...prev,
+          status: 'currently_watching',
+          current_season: lastSeason,
+          current_episode: lastEp,
+          current_episode_airdate: lastAirdate,
+        } : null);
+      } catch {
+        getWatchedEpisodes(userId, id).then(setWatchedEps).catch(() => {});
+      }
+    }
+  }, [userId, id, show]);
+
+  const handleRate = useCallback(async (rating: number) => {
+    if (!userId || !id) return;
+    try {
+      await rateShow(userId, id, rating);
+      setUserShow(prev => prev ? { ...prev, rating } : null);
+    } catch {
+      showToast('Failed to save rating', 'error');
+    }
+  }, [userId, id]);
 
   const handleEpisodeTap = useCallback(async (season: number, episode: number) => {
     if (!userId || !id || !show) return;
@@ -177,6 +289,7 @@ export default function ShowDetailScreen() {
         current_episode: episode,
         current_episode_airdate: targetEp?.airdate ?? null,
         new_episodes_seen_at: null,
+        rating: null,
         added_at: new Date().toISOString(),
         updated_at: new Date().toISOString(),
       });
@@ -227,9 +340,20 @@ export default function ShowDetailScreen() {
 
   const isRunning = show.status === 'Running';
 
+  const airedCount = (() => {
+    const today = new Date().toISOString().slice(0, 10);
+    let count = 0;
+    for (const s of show.seasons) {
+      for (const ep of s.episodes) {
+        if (!ep.airdate || ep.airdate <= today) count++;
+      }
+    }
+    return count;
+  })();
+
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView contentContainerStyle={styles.content}>
+      <ScrollView contentContainerStyle={styles.content} scrollEnabled={scrollEnabled}>
         {/* Hero: Poster + Info */}
         <View style={styles.hero}>
           {show.image ? (
@@ -241,7 +365,14 @@ export default function ShowDetailScreen() {
           )}
 
           <View style={styles.heroInfo}>
-            <Text style={styles.title}>{show.title}</Text>
+            <View style={styles.titleRow}>
+              <Text style={styles.title}>{show.title}</Text>
+              <Pressable onPress={handleToggleTop4} style={styles.starButton}>
+                <Text style={[styles.starIcon, isTop4 && styles.starIconActive]}>
+                  {isTop4 ? '★' : '☆'}
+                </Text>
+              </Pressable>
+            </View>
             <View style={styles.metaRow}>
               <Text style={styles.meta}>
                 {show.year}{show.endYear ? `–${show.endYear}` : ''}
@@ -261,49 +392,103 @@ export default function ShowDetailScreen() {
           </View>
         </View>
 
+        {/* Progress bar — seamless divider */}
+        {userShow && (
+          <WatchProgressBar
+            airedCount={airedCount}
+            watchedCount={
+              userShow.status === 'watched'
+                ? airedCount
+                : userShow.status === 'want_to_watch'
+                  ? 0
+                  : Math.min(watchedEps.size, airedCount)
+            }
+          />
+        )}
+
         {/* Watchlist Controls */}
         <View style={styles.section}>
-          {!userShow ? (
-            <Pressable
-              style={({ pressed }) => [styles.addButton, pressed && styles.buttonPressed]}
-              onPress={handleAddToWatchlist}
-            >
-              <Text style={styles.addButtonText}>+ Add to Watchlist</Text>
-            </Pressable>
-          ) : (
-            <View>
-              <View style={styles.statusRow}>
-                {STATUSES.map(s => (
-                  <Pressable
-                    key={s}
-                    style={[
-                      styles.statusPill,
-                      userShow.status === s && styles.statusPillActive,
-                    ]}
-                    onPress={() => handleStatusChange(s)}
-                  >
-                    <Text style={[
-                      styles.statusPillText,
-                      userShow.status === s && styles.statusPillTextActive,
-                    ]}>
-                      {STATUS_LABELS[s]}
-                    </Text>
-                  </Pressable>
-                ))}
-              </View>
-            </View>
-          )}
+          <View style={styles.statusRow}>
+            {STATUSES.map(s => (
+              <Pressable
+                key={s}
+                style={[
+                  styles.statusPill,
+                  userShow?.status === s && styles.statusPillActive,
+                ]}
+                onPress={() => userShow ? handleStatusChange(s) : handleAddWithStatus(s)}
+              >
+                <Text style={[
+                  styles.statusPillText,
+                  userShow?.status === s && styles.statusPillTextActive,
+                ]}>
+                  {STATUS_LABELS[s]}
+                </Text>
+              </Pressable>
+            ))}
+          </View>
         </View>
 
-        {/* Episode Timeline */}
-        <EpisodeTimeline
-          seasons={show.seasons}
-          totalEpisodes={show.totalEpisodes}
-          watchedEps={watchedEps}
-          currentSeason={userShow?.current_season ?? 0}
-          currentEpisode={userShow?.current_episode ?? 0}
-          onEpisodeTap={handleEpisodeTap}
-        />
+        {/* Want to Watch: show friends watching this show */}
+        {userShow && userShow.status === 'want_to_watch' && friendsWatching.length > 0 && (
+          <View style={styles.friendsSection}>
+            <Text style={styles.friendsSectionTitle}>Friends watching</Text>
+            {friendsWatching.map(fw => (
+              <View key={fw.profile.id} style={styles.friendWatchRow}>
+                <View style={styles.friendAvatar}>
+                  <Text style={styles.friendAvatarText}>
+                    {(fw.profile.display_name[0] || '?').toUpperCase()}
+                  </Text>
+                </View>
+                <Text style={styles.friendName} numberOfLines={1}>{fw.profile.display_name}</Text>
+                <Text style={styles.friendProgress}>
+                  {fw.status === 'watched'
+                    ? 'Finished'
+                    : fw.season > 0
+                      ? `S${fw.season} E${fw.episode}`
+                      : 'Not started'}
+                </Text>
+              </View>
+            ))}
+          </View>
+        )}
+
+        {/* Currently Watching: catch up + episode picker */}
+        {userShow && userShow.status === 'currently_watching' && (
+          <>
+            <CaughtUpButton
+              onCatchUp={handleCatchUp}
+              isCaughtUp={watchedEps.size >= airedCount}
+            />
+            <EpisodePicker
+              seasons={show.seasons}
+              watchedEps={watchedEps}
+              currentSeason={userShow.current_season}
+              currentEpisode={userShow.current_episode}
+              onEpisodeTap={handleEpisodeTap}
+            />
+          </>
+        )}
+
+        {/* Watched: rating + read-only episode picker */}
+        {userShow && userShow.status === 'watched' && (
+          <>
+            <RatingSelector
+              rating={userShow.rating ?? null}
+              onRate={handleRate}
+              onDragStart={() => setScrollEnabled(false)}
+              onDragEnd={() => setScrollEnabled(true)}
+            />
+            <EpisodePicker
+              seasons={show.seasons}
+              watchedEps={watchedEps}
+              currentSeason={userShow.current_season}
+              currentEpisode={userShow.current_episode}
+              onEpisodeTap={handleEpisodeTap}
+              readOnly
+            />
+          </>
+        )}
       </ScrollView>
     </SafeAreaView>
   );
@@ -357,11 +542,27 @@ const styles = StyleSheet.create({
     flex: 1,
     gap: 3,
   },
+  titleRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    marginBottom: 4,
+  },
   title: {
     fontSize: 20,
     fontFamily: 'DMSans_700Bold',
     color: theme.text,
-    marginBottom: 4,
+    flexShrink: 1,
+  },
+  starButton: {
+    padding: 2,
+  },
+  starIcon: {
+    fontSize: 22,
+    color: theme.textDim,
+  },
+  starIconActive: {
+    color: '#fbbf24',
   },
   metaRow: {
     flexDirection: 'row',
@@ -400,19 +601,52 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     marginTop: 24,
   },
-  addButton: {
-    backgroundColor: theme.accent,
-    borderRadius: 10,
-    padding: 16,
-    alignItems: 'center',
-  },
-  addButtonText: {
-    color: '#fff',
-    fontSize: 16,
-    fontFamily: 'DMSans_600SemiBold',
-  },
   buttonPressed: {
     opacity: 0.7,
+  },
+  friendsSection: {
+    marginTop: 20,
+    paddingHorizontal: 20,
+  },
+  friendsSectionTitle: {
+    fontSize: 14,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.textDim,
+    marginBottom: 10,
+  },
+  friendWatchRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: 8,
+    gap: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: theme.border,
+  },
+  friendAvatar: {
+    width: 28,
+    height: 28,
+    borderRadius: 14,
+    backgroundColor: theme.bgCard,
+    borderWidth: 1,
+    borderColor: theme.border,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  friendAvatarText: {
+    fontSize: 12,
+    fontFamily: 'DMSans_700Bold',
+    color: theme.textDim,
+  },
+  friendName: {
+    flex: 1,
+    fontSize: 13,
+    fontFamily: 'DMSans_500Medium',
+    color: theme.text,
+  },
+  friendProgress: {
+    fontSize: 12,
+    fontFamily: 'DMSans_400Regular',
+    color: theme.textFaint,
   },
   statusRow: {
     flexDirection: 'row',
