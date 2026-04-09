@@ -1,13 +1,37 @@
+import { useState, useEffect, useCallback, createContext, useContext } from 'react';
+import { View, Text, StyleSheet } from 'react-native';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Tabs } from 'expo-router';
 import { theme } from '@/src/lib/theme';
+import { useAuth } from '@/src/providers/AuthProvider';
+import { getPendingRequests } from '@/src/lib/friends';
+
+const RefreshBadgeContext = createContext<() => void>(() => {});
+export const useRefreshBadge = () => useContext(RefreshBadgeContext);
 
 function TabIcon(props: { name: React.ComponentProps<typeof FontAwesome>['name']; color: string }) {
   return <FontAwesome size={22} style={{ marginBottom: -2 }} {...props} />;
 }
 
 export default function TabLayout() {
+  const { session } = useAuth();
+  const [pendingCount, setPendingCount] = useState(0);
+
+  const refreshPending = useCallback(() => {
+    if (!session?.user?.id) return;
+    getPendingRequests(session.user.id)
+      .then(p => setPendingCount(p.length))
+      .catch(() => {});
+  }, [session?.user?.id]);
+
+  useEffect(() => {
+    refreshPending();
+    const interval = setInterval(refreshPending, 30000);
+    return () => clearInterval(interval);
+  }, [refreshPending]);
+
   return (
+    <RefreshBadgeContext.Provider value={refreshPending}>
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: theme.accent,
@@ -54,6 +78,15 @@ export default function TabLayout() {
         options={{
           title: 'Profile',
           tabBarIcon: ({ color }) => <TabIcon name="user" color={color} />,
+          tabBarBadge: pendingCount > 0 ? pendingCount : undefined,
+          tabBarBadgeStyle: pendingCount > 0 ? styles.badge : undefined,
+        }}
+      />
+      <Tabs.Screen
+        name="friends"
+        options={{
+          href: null,
+          headerShown: false,
         }}
       />
       <Tabs.Screen
@@ -64,5 +97,17 @@ export default function TabLayout() {
         }}
       />
     </Tabs>
+    </RefreshBadgeContext.Provider>
   );
 }
+
+const styles = StyleSheet.create({
+  badge: {
+    backgroundColor: theme.accent,
+    fontSize: 11,
+    fontWeight: '700',
+    minWidth: 18,
+    height: 18,
+    borderRadius: 9,
+  },
+});

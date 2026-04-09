@@ -11,8 +11,6 @@ import * as Haptics from 'expo-haptics';
 import { theme, SEASON_COLORS } from '@/src/lib/theme';
 import type { Season } from '@/src/lib/types';
 
-const SCREEN_WIDTH = Dimensions.get('window').width;
-
 interface FlatEpisode {
   season: number;
   episode: number;
@@ -47,16 +45,9 @@ export default function EpisodeTimeline({
   onEpisodeTap,
 }: Props) {
   const scrollRef = useRef<ScrollView>(null);
+  const hasScrolledOnLoad = useRef(false);
+  const timelineWidth = useRef(0);
   const [selectedEp, setSelectedEp] = useState<FlatEpisode | null>(null);
-  const dotPositions = useRef<Record<number, number>>({});
-  const hasScrolled = useRef(false);
-  const prevSeasonsRef = useRef(seasons);
-
-  // Reset state when show changes
-  if (prevSeasonsRef.current !== seasons) {
-    prevSeasonsRef.current = seasons;
-    hasScrolled.current = false;
-  }
 
   // Flatten all episodes into a linear array, marking future and last-aired
   const flatEpisodes = useMemo(() => {
@@ -109,38 +100,38 @@ export default function EpisodeTimeline({
     return { dot: 12, gap: 4, hit: 28 };
   }, [totalEpisodes]);
 
-  // Find the current episode in the flat list for auto-scroll
-  const currentIndex = useMemo(() => {
-    if (currentSeason === 0 && currentEpisode === 0) return -1;
-    return flatEpisodes.findIndex(
-      ep => ep.season === currentSeason && ep.episode === currentEpisode
-    );
-  }, [flatEpisodes, currentSeason, currentEpisode]);
-
-  // Auto-scroll to current position on mount only
+  // Reset selected episode when show changes, scroll to current on first load
   useEffect(() => {
-    if (hasScrolled.current || currentIndex < 0) return;
-    hasScrolled.current = true;
-    const timer = setTimeout(() => {
-      const x = dotPositions.current[currentIndex];
-      if (x != null && scrollRef.current) {
-        scrollRef.current.scrollTo({
-          x: Math.max(0, x - SCREEN_WIDTH / 2 + sizing.dot / 2),
-          animated: true,
-        });
-      }
-    }, 100);
-    return () => clearTimeout(timer);
-  }, [currentIndex, sizing.dot]);
-
-  // Reset selected episode when show changes, set to current if available
-  useEffect(() => {
-    if (currentIndex >= 0 && flatEpisodes[currentIndex]) {
-      setSelectedEp(flatEpisodes[currentIndex]);
+    hasScrolledOnLoad.current = false;
+    if (currentSeason > 0 && currentEpisode > 0) {
+      const current = flatEpisodes.find(
+        ep => ep.season === currentSeason && ep.episode === currentEpisode
+      );
+      setSelectedEp(current ?? null);
     } else {
       setSelectedEp(null);
     }
   }, [flatEpisodes]);
+
+  const handleTimelineLayout = (width: number) => {
+    timelineWidth.current = width;
+    if (hasScrolledOnLoad.current) return;
+    if (currentSeason === 0 && currentEpisode === 0) return;
+
+    const idx = flatEpisodes.findIndex(
+      ep => ep.season === currentSeason && ep.episode === currentEpisode
+    );
+    if (idx < 0 || flatEpisodes.length === 0) return;
+
+    hasScrolledOnLoad.current = true;
+    const fraction = idx / flatEpisodes.length;
+    const screenWidth = Dimensions.get('window').width;
+    const targetX = fraction * width - screenWidth / 2;
+    scrollRef.current?.scrollTo({
+      x: Math.max(0, targetX),
+      animated: false,
+    });
+  };
 
   const handleTap = (ep: FlatEpisode) => {
     if (ep.isFuture) return; // can't mark future episodes
@@ -174,6 +165,7 @@ export default function EpisodeTimeline({
         horizontal
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={[styles.timeline, { paddingHorizontal: 20 }]}
+        onContentSizeChange={(w) => handleTimelineLayout(w)}
       >
         {flatEpisodes.map((ep, i) => {
           const key = `S${ep.season}E${ep.episode}`;
@@ -203,9 +195,6 @@ export default function EpisodeTimeline({
 
               {/* Dot */}
               <Pressable
-                onLayout={(e) => {
-                  dotPositions.current[ep.globalIndex] = e.nativeEvent.layout.x;
-                }}
                 onPress={() => handleTap(ep)}
                 disabled={ep.isFuture}
                 style={[
@@ -250,7 +239,7 @@ export default function EpisodeTimeline({
             S{selectedEp.season} E{selectedEp.episode}
             <Text style={styles.detailDim}> · {selectedEp.title}</Text>
             {selectedEp.airdate && (
-              <Text style={styles.detailDim}> · {selectedEp.airdate}</Text>
+              <Text style={styles.detailDim}> · {new Date(selectedEp.airdate + 'T00:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</Text>
             )}
           </Text>
         </View>
@@ -264,7 +253,7 @@ export default function EpisodeTimeline({
             <View key={`upcoming-${ep.season}-${ep.episode}`} style={styles.upcomingRow}>
               <Text style={styles.upcomingEp}>S{ep.season} E{ep.episode}</Text>
               <Text style={styles.upcomingName} numberOfLines={1}>{ep.title}</Text>
-              <Text style={styles.upcomingDate}>{ep.airdate}</Text>
+              <Text style={styles.upcomingDate}>{ep.airdate ? new Date(ep.airdate + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : ''}</Text>
             </View>
           ))}
         </View>

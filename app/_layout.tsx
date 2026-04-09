@@ -43,6 +43,16 @@ function AuthGate() {
     <Stack screenOptions={{ headerShown: false }}>
       <Stack.Screen name="(auth)" />
       <Stack.Screen name="(tabs)" />
+      <Stack.Screen
+        name="user/[id]"
+        options={{
+          headerShown: true,
+          headerStyle: { backgroundColor: theme.bg },
+          headerTintColor: theme.text,
+          headerTitleStyle: { fontFamily: 'DMSans_700Bold', fontSize: 17 },
+          headerShadowVisible: false,
+        }}
+      />
     </Stack>
   );
 }

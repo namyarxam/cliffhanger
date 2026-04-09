@@ -1,9 +1,24 @@
+import { useState, useCallback } from 'react';
 import { View, Text, Pressable, StyleSheet } from 'react-native';
+import { useRouter } from 'expo-router';
+import { useFocusEffect } from 'expo-router';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { theme } from '@/src/lib/theme';
+import { getFriends, getPendingRequests } from '@/src/lib/friends';
 
 export default function ProfileScreen() {
   const { profile, user, signOut } = useAuth();
+  const router = useRouter();
+  const [friendCount, setFriendCount] = useState(0);
+  const [pendingCount, setPendingCount] = useState(0);
+
+  useFocusEffect(
+    useCallback(() => {
+      if (!user?.id) return;
+      getFriends(user.id).then(f => setFriendCount(f.length)).catch(() => {});
+      getPendingRequests(user.id).then(p => setPendingCount(p.length)).catch(() => {});
+    }, [user?.id])
+  );
 
   return (
     <View style={styles.container}>
@@ -22,7 +37,22 @@ export default function ProfileScreen() {
       </Text>
       <Text style={styles.email}>{user?.email}</Text>
 
-      {/* Future: friends list, stats, settings will go here */}
+      {/* Friends button */}
+      <Pressable
+        style={({ pressed }) => [styles.friendsButton, pressed && styles.friendsButtonPressed]}
+        onPress={() => router.push('/(tabs)/friends')}
+      >
+        <View style={styles.friendsButtonContent}>
+          <Text style={styles.friendsButtonText}>Friends</Text>
+          <Text style={styles.friendsCount}>{friendCount}</Text>
+        </View>
+        {pendingCount > 0 && (
+          <View style={styles.pendingBadge}>
+            <Text style={styles.pendingBadgeText}>{pendingCount}</Text>
+          </View>
+        )}
+        <Text style={styles.friendsChevron}>▸</Text>
+      </Pressable>
 
       <Pressable style={styles.signOutButton} onPress={signOut}>
         <Text style={styles.signOutText}>Sign Out</Text>
@@ -71,7 +101,55 @@ const styles = StyleSheet.create({
     fontSize: 13,
     fontFamily: 'DMSans_400Regular',
     color: theme.textFaint,
-    marginBottom: 40,
+    marginBottom: 32,
+  },
+  friendsButton: {
+    width: '100%',
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: theme.bgCard,
+    borderRadius: 10,
+    padding: 16,
+    borderWidth: 1,
+    borderColor: theme.border,
+  },
+  friendsButtonPressed: {
+    opacity: 0.7,
+  },
+  friendsButtonContent: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  friendsButtonText: {
+    fontSize: 16,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.text,
+  },
+  friendsCount: {
+    fontSize: 14,
+    fontFamily: 'DMSans_400Regular',
+    color: theme.textDim,
+  },
+  pendingBadge: {
+    backgroundColor: theme.accent,
+    borderRadius: 10,
+    minWidth: 20,
+    height: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 6,
+    marginRight: 8,
+  },
+  pendingBadgeText: {
+    fontSize: 11,
+    fontFamily: 'DMSans_700Bold',
+    color: '#fff',
+  },
+  friendsChevron: {
+    fontSize: 16,
+    color: theme.textDim,
   },
   signOutButton: {
     marginTop: 'auto',

@@ -70,6 +70,24 @@ export interface UserProfile {
   created_at: string;
 }
 
+export type FriendshipStatus = 'pending' | 'accepted';
+
+export interface Friendship {
+  id: string;
+  user_id: string;
+  friend_id: string;
+  status: FriendshipStatus;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface FriendWithProfile {
+  friendship_id: string;
+  user: UserProfile;
+  status: FriendshipStatus;
+  is_incoming: boolean;
+}
+
 export interface Group {
   id: string;
   name: string;
