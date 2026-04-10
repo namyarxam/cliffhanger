@@ -66,7 +66,7 @@ export default function MyShowsScreen() {
   );
 
   const handlePress = useCallback((id: string) => {
-    router.push(`/show/${id}`);
+    router.push(`/show/${id}?from=/`);
   }, [router]);
 
   const handleMarkNext = useCallback(async (showId: string, season: number, episode: number) => {

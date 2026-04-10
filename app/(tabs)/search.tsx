@@ -47,7 +47,7 @@ export default function SearchScreen() {
   }, []);
 
   const handlePress = useCallback((id: string) => {
-    router.push(`/show/${id}`);
+    router.push(`/show/${id}?from=/search`);
   }, [router]);
 
   const renderItem = useCallback(({ item }: { item: ShowSummary }) => (

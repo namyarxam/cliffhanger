@@ -97,7 +97,7 @@ export default function ProfileScreen() {
       {/* Top 4 Shows */}
       <TopShowsRow
         shows={topShows}
-        onPress={(showId) => router.push(`/show/${showId}`)}
+        onPress={(showId) => router.push(`/show/${showId}?from=/profile`)}
       />
 
       {/* Friends button */}

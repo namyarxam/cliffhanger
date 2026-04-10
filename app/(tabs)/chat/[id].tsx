@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import {
   View,
   Text,
@@ -12,6 +12,8 @@ import {
   Alert,
   Keyboard,
   Modal,
+  Animated,
+  PanResponder,
 } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
@@ -79,6 +81,21 @@ export default function ChatDetailScreen() {
   const [editName, setEditName] = useState('');
   const [userShows, setUserShows] = useState<UserShow[]>([]);
   const [loadingShows, setLoadingShows] = useState(false);
+
+  // iMessage-style swipe: whole list shifts left, timestamps revealed on right
+  const dragX = useRef(new Animated.Value(0)).current;
+  const panResponder = useMemo(() => PanResponder.create({
+    onMoveShouldSetPanResponder: (_, g) => g.dx < -5 && Math.abs(g.dy) < Math.abs(g.dx),
+    onPanResponderMove: (_, g) => {
+      if (g.dx < 0) dragX.setValue(Math.max(g.dx * 0.15, -23));
+    },
+    onPanResponderRelease: () => {
+      Animated.spring(dragX, { toValue: 0, useNativeDriver: false, tension: 80, friction: 12 }).start();
+    },
+    onPanResponderTerminate: () => {
+      Animated.spring(dragX, { toValue: 0, useNativeDriver: false, tension: 80, friction: 12 }).start();
+    },
+  }), [dragX]);
 
   const fetchData = useCallback(async () => {
     if (!id) return;
@@ -325,7 +342,7 @@ export default function ChatDetailScreen() {
         </View>
 
         {/* Chat */}
-        <View style={styles.chatArea}>
+        <View style={styles.chatArea} {...panResponder.panHandlers}>
           {chatUnlocked ? (
             <>
               <FlatList
@@ -339,14 +356,26 @@ export default function ChatDetailScreen() {
                   const nextMsg = messages[index + 1];
                   const nextDate = nextMsg ? new Date(nextMsg.created_at).toDateString() : null;
                   const showDateSep = !nextMsg || msgDate !== nextDate;
+                  const timeStr = new Date(item.created_at).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
                   return (
                     <>
-                      <View style={[styles.messageBubble, isMe ? styles.messageSelf : styles.messageOther]}>
-                        {!isMe && members.length > 2 && <Text style={styles.messageSender}>{item.sender_name}</Text>}
-                        <Text style={[styles.messageText, isMe && styles.messageTextSelf]}>{item.message}</Text>
-                        <Text style={styles.messageTime}>
-                          {new Date(item.created_at).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' })}
-                        </Text>
+                      <View style={styles.messageOuter}>
+                        <Animated.View style={[
+                          styles.messageRow,
+                          isMe ? styles.messageRowSelf : styles.messageRowOther,
+                          { marginRight: dragX.interpolate({ inputRange: [-23, 0], outputRange: [23, 0], extrapolate: 'clamp' }) },
+                        ]}>
+                          <View style={[styles.messageBubble, isMe ? styles.messageSelf : styles.messageOther]}>
+                            {!isMe && members.length > 2 && <Text style={styles.messageSender}>{item.sender_name}</Text>}
+                            <Text style={[styles.messageText, isMe && styles.messageTextSelf]}>{item.message}</Text>
+                          </View>
+                        </Animated.View>
+                        <Animated.View style={[styles.timeReveal, {
+                          width: dragX.interpolate({ inputRange: [-23, 0], outputRange: [23, 0], extrapolate: 'clamp' }),
+                          opacity: dragX.interpolate({ inputRange: [-23, -5, 0], outputRange: [1, 0.3, 0], extrapolate: 'clamp' }),
+                        }]}>
+                          <Text style={styles.messageTime}>{timeStr}</Text>
+                        </Animated.View>
                       </View>
                       {showDateSep && (
                         <View style={styles.dateSeparator}>
@@ -547,14 +576,19 @@ const styles = StyleSheet.create({
 
   // Chat
   chatArea: { flex: 1 },
-  messageList: { padding: 16, gap: 8 },
-  messageBubble: { maxWidth: '80%', padding: 10, borderRadius: 12, marginBottom: 4 },
-  messageSelf: { alignSelf: 'flex-end', backgroundColor: theme.accent, borderBottomRightRadius: 4 },
-  messageOther: { alignSelf: 'flex-start', backgroundColor: theme.bgCard, borderBottomLeftRadius: 4 },
+  messageList: { paddingVertical: 16, gap: 4 },
+  messageOuter: { flexDirection: 'row', alignItems: 'center' },
+  messageRow: { flex: 1, flexDirection: 'row', alignItems: 'center', paddingHorizontal: 16 },
+  messageRowSelf: { justifyContent: 'flex-end' },
+  messageRowOther: { justifyContent: 'flex-start' },
+  messageBubble: { maxWidth: '80%', padding: 10, borderRadius: 12, flexShrink: 1 },
+  messageSelf: { backgroundColor: theme.accent, borderBottomRightRadius: 4 },
+  messageOther: { backgroundColor: theme.bgCard, borderBottomLeftRadius: 4 },
   messageSender: { fontSize: 11, fontFamily: 'DMSans_600SemiBold', color: theme.textDim, marginBottom: 2 },
   messageText: { fontSize: 14, fontFamily: 'DMSans_400Regular', color: theme.text },
   messageTextSelf: { color: '#fff' },
-  messageTime: { fontSize: 10, fontFamily: 'DMSans_400Regular', color: 'rgba(255,255,255,0.4)', marginTop: 4, alignSelf: 'flex-end' },
+  timeReveal: { justifyContent: 'center' },
+  messageTime: { fontSize: 10, fontFamily: 'DMSans_400Regular', color: 'rgba(255,255,255,0.4)', position: 'absolute', right: 0, width: 50, textAlign: 'right', paddingRight: 7 },
   dateSeparator: { alignItems: 'center', paddingVertical: 12 },
   dateSeparatorText: { fontSize: 11, fontFamily: 'DMSans_500Medium', color: theme.textFaint, backgroundColor: theme.bgCard, paddingHorizontal: 12, paddingVertical: 4, borderRadius: 10, overflow: 'hidden' },
   chatEmpty: { padding: 32, alignItems: 'center' },

@@ -10,7 +10,8 @@ import {
   Alert,
   LayoutAnimation,
 } from 'react-native';
-import { useLocalSearchParams } from 'expo-router';
+import { useLocalSearchParams, useRouter } from 'expo-router';
+import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Image } from 'expo-image';
 import { theme } from '@/src/lib/theme';
 
@@ -43,7 +44,8 @@ const STATUS_LABELS: Record<WatchStatus, string> = {
 const STATUSES: WatchStatus[] = ['want_to_watch', 'currently_watching', 'watched'];
 
 export default function ShowDetailScreen() {
-  const { id } = useLocalSearchParams<{ id: string }>();
+  const { id, from } = useLocalSearchParams<{ id: string; from?: string }>();
+  const router = useRouter();
   const { session } = useAuth();
   const userId = session?.user?.id;
 
@@ -354,6 +356,14 @@ export default function ShowDetailScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.content} scrollEnabled={scrollEnabled}>
+        <Pressable style={({ pressed }) => [styles.backButton, pressed && { opacity: 0.5 }]} onPress={() => {
+          if (from) router.push(from as any);
+          else router.back();
+        }}>
+          <FontAwesome name="chevron-left" size={16} color={theme.accent} />
+          <Text style={styles.backText}>Back</Text>
+        </Pressable>
+
         {/* Hero: Poster + Info */}
         <View style={styles.hero}>
           {show.image ? (
@@ -389,6 +399,14 @@ export default function ShowDetailScreen() {
             <Text style={styles.meta}>
               {show.totalSeasons} season{show.totalSeasons !== 1 ? 's' : ''} · {show.totalEpisodes} episode{show.totalEpisodes !== 1 ? 's' : ''}
             </Text>
+            {show.rating != null && (
+              <View style={styles.tvmazeRating}>
+                <Text style={[styles.tvmazeRatingText, { color: getUserRatingColor(show.rating) }]}>
+                  {show.rating.toFixed(1)}
+                </Text>
+                <Text style={styles.tvmazeRatingLabel}>TVMaze</Text>
+              </View>
+            )}
           </View>
         </View>
 
@@ -429,8 +447,8 @@ export default function ShowDetailScreen() {
           </View>
         </View>
 
-        {/* Friends watching this show */}
-        {friendsWatching.length > 0 && (
+        {/* Friends watching this show (hidden on Watched tab — it has its own version with ratings) */}
+        {friendsWatching.length > 0 && (!userShow || userShow.status !== 'watched') && (
           <View style={styles.friendsSection}>
             <Text style={styles.friendsSectionTitle}>Friends watching</Text>
             {friendsWatching.map(fw => (
@@ -532,6 +550,18 @@ const styles = StyleSheet.create({
   content: {
     paddingBottom: 40,
   },
+  backButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+  },
+  backText: {
+    fontSize: 15,
+    fontFamily: 'DMSans_500Medium',
+    color: theme.accent,
+  },
   center: {
     flex: 1,
     backgroundColor: theme.bg,
@@ -603,6 +633,22 @@ const styles = StyleSheet.create({
     fontSize: 13,
     fontFamily: 'DMSans_400Regular',
     color: theme.textDim,
+  },
+  tvmazeRating: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    alignSelf: 'flex-start',
+    gap: 6,
+    marginTop: 6,
+  },
+  tvmazeRatingText: {
+    fontSize: 16,
+    fontFamily: 'DMSans_700Bold',
+  },
+  tvmazeRatingLabel: {
+    fontSize: 10,
+    fontFamily: 'DMSans_500Medium',
+    color: theme.textFaint,
   },
   liveBadge: {
     flexDirection: 'row',

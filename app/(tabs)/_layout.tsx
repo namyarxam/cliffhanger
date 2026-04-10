@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, createContext, useContext } from 'react';
+import { useState, useEffect, useCallback, useRef, createContext, useContext } from 'react';
 import { View, Text, Pressable, StyleSheet } from 'react-native';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Tabs, usePathname } from 'expo-router';
@@ -36,6 +36,8 @@ export default function TabLayout() {
     return () => clearInterval(interval);
   }, [refreshPending]);
 
+  const activeTabRef = useRef<string | null>('index');
+
   const getActiveTab = useCallback(() => {
     const path = pathname.replace(/^\//, '');
 
@@ -44,7 +46,8 @@ export default function TabLayout() {
     if (path === 'chat') return 'chat';
     if (path === 'profile') return 'profile';
 
-    if (path.startsWith('show/')) return 'index';
+    // show/[id] doesn't force a tab — keep whatever tab was active before
+    if (path.startsWith('show/')) return activeTabRef.current;
     if (path.startsWith('chat/')) return 'chat';
     if (path === 'friends' || path === 'settings' || path.startsWith('user/')) return 'profile';
 
@@ -52,6 +55,13 @@ export default function TabLayout() {
   }, [pathname]);
 
   const activeTab = getActiveTab();
+
+  // Track the last real tab for routes like show/[id] that don't belong to a specific tab
+  useEffect(() => {
+    if (activeTab && !pathname.startsWith('/show/')) {
+      activeTabRef.current = activeTab;
+    }
+  }, [activeTab, pathname]);
 
   return (
     <RefreshBadgeContext.Provider value={refreshPending}>

@@ -87,8 +87,8 @@ export default function UserProfileScreen() {
   }, [userId, id, friendStatus]);
 
   const handleShowPress = useCallback((showId: string) => {
-    router.push(`/show/${showId}`);
-  }, [router]);
+    router.push(`/show/${showId}?from=/user/${id}`);
+  }, [router, id]);
 
   const sections = SECTION_ORDER
     .map(({ key, title }) => {
