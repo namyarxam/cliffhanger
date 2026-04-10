@@ -3,7 +3,7 @@ import { View, Text, TextInput, Pressable, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useFocusEffect } from 'expo-router';
 import { useAuth } from '@/src/providers/AuthProvider';
-import { useToast } from '@/src/providers/ToastProvider';
+
 import { theme } from '@/src/lib/theme';
 import { supabase } from '@/src/lib/supabase';
 import { getFriends, getPendingRequests } from '@/src/lib/friends';
@@ -14,7 +14,7 @@ import type { TopShow } from '@/src/lib/types';
 export default function ProfileScreen() {
   const { profile, user, signOut, refreshProfile } = useAuth();
   const router = useRouter();
-  const { showToast } = useToast();
+
   const [friendCount, setFriendCount] = useState(0);
   const [pendingCount, setPendingCount] = useState(0);
   const [topShows, setTopShows] = useState<TopShow[]>([]);
@@ -47,9 +47,8 @@ export default function ProfileScreen() {
       if (error) throw error;
       await refreshProfile();
       setEditing(false);
-      showToast('Name updated', 'success');
     } catch {
-      showToast('Failed to update name', 'error');
+      // silently fail
     }
   };
 

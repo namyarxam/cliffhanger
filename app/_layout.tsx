@@ -4,7 +4,7 @@ import { Stack, useRouter, useSegments } from 'expo-router';
 import { useFonts, DMSans_400Regular, DMSans_500Medium, DMSans_600SemiBold, DMSans_700Bold } from '@expo-google-fonts/dm-sans';
 import * as SplashScreen from 'expo-splash-screen';
 import { AuthProvider, useAuth } from '@/src/providers/AuthProvider';
-import ToastProvider from '@/src/providers/ToastProvider';
+
 import { theme } from '@/src/lib/theme';
 
 export { ErrorBoundary } from 'expo-router';
@@ -70,9 +70,7 @@ export default function RootLayout() {
 
   return (
     <AuthProvider>
-      <ToastProvider>
-        <AuthGate />
-      </ToastProvider>
+      <AuthGate />
     </AuthProvider>
   );
 }

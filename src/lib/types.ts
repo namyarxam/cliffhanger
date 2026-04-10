@@ -73,6 +73,8 @@ export interface UserProfile {
   username: string;
   avatar_url: string | null;
   push_new_episodes: boolean;
+  show_top4_in_list: boolean;
+  show_posters_in_list: boolean;
   created_at: string;
 }
 
@@ -102,20 +104,27 @@ export interface TopShow {
   show_image: string | null;
 }
 
-export interface Group {
+export interface Conversation {
   id: string;
-  name: string;
-  show_id: string;
-  show_title: string;
+  name: string | null;
+  show_id: string | null;
+  show_title: string | null;
   show_image: string | null;
-  created_by: string;
-  invite_code: string;
   spoiler_lock: boolean;
+  created_by: string;
+  last_message_at: string;
   created_at: string;
 }
 
-export interface GroupMember {
-  group_id: string;
+export interface ConversationPreview extends Conversation {
+  member_names: string[];
+  member_count: number;
+  last_message: string | null;
+  last_message_sender: string | null;
+}
+
+export interface ConversationMember {
+  conversation_id: string;
   user_id: string;
   joined_at: string;
   display_name: string;
@@ -124,14 +133,37 @@ export interface GroupMember {
   current_episode: number;
 }
 
-export interface GroupMessage {
+export interface Message {
   id: string;
-  group_id: string;
+  conversation_id: string;
   user_id: string;
   message: string;
   created_at: string;
   sender_name: string;
   sender_avatar: string | null;
+}
+
+export type ConversationInviteStatus = 'pending' | 'accepted' | 'declined';
+
+export interface ConversationInvite {
+  id: string;
+  conversation_id: string;
+  invited_by: string;
+  invited_user: string;
+  status: ConversationInviteStatus;
+  created_at: string;
+}
+
+export interface ConversationInviteWithDetails {
+  id: string;
+  conversation_id: string;
+  conversation_name: string | null;
+  show_title: string | null;
+  show_image: string | null;
+  invited_by_name: string;
+  member_names: string[];
+  status: ConversationInviteStatus;
+  created_at: string;
 }
 
 export interface ScheduleEntry {

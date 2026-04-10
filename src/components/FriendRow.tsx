@@ -3,7 +3,7 @@ import { View, Text, Pressable, StyleSheet } from 'react-native';
 import { theme } from '@/src/lib/theme';
 import type { UserProfile } from '@/src/lib/types';
 
-export type FriendAction = 'add' | 'pending' | 'accept' | 'friends' | 'none';
+export type FriendAction = 'add' | 'pending' | 'accept' | 'friends' | 'invite' | 'invited' | 'none';
 
 interface Props {
   user: UserProfile;
@@ -69,6 +69,21 @@ export default memo(function FriendRow({
           >
             <Text style={styles.declineText}>Decline</Text>
           </Pressable>
+        </View>
+      )}
+
+      {action === 'invite' && (
+        <Pressable
+          style={({ pressed }) => [styles.actionButton, pressed && styles.actionPressed]}
+          onPress={() => onAction?.(user.id)}
+        >
+          <Text style={styles.actionText}>Invite</Text>
+        </Pressable>
+      )}
+
+      {action === 'invited' && (
+        <View style={styles.pendingBadge}>
+          <Text style={styles.pendingText}>Invited</Text>
         </View>
       )}
 

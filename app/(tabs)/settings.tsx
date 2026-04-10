@@ -13,27 +13,44 @@ import { supabase } from '@/src/lib/supabase';
 import { registerForPushNotifications, unregisterPushNotifications } from '@/src/lib/notifications';
 
 export default function SettingsScreen() {
-  const { user } = useAuth();
+  const { user, refreshProfile } = useAuth();
   const [pushNewEpisodes, setPushNewEpisodes] = useState(false);
+  const [showTop4, setShowTop4] = useState(true);
+  const [showPosters, setShowPosters] = useState(false);
 
   useEffect(() => {
     if (!user?.id) return;
     supabase
       .from('profiles')
-      .select('push_new_episodes')
+      .select('push_new_episodes, show_top4_in_list, show_posters_in_list')
       .eq('id', user.id)
       .single()
       .then(({ data }) => {
-        if (data) setPushNewEpisodes(data.push_new_episodes);
+        if (data) {
+          setPushNewEpisodes(data.push_new_episodes);
+          setShowTop4(data.show_top4_in_list);
+          setShowPosters(data.show_posters_in_list);
+        }
       });
   }, [user?.id]);
+
+  const updateProfile = useCallback(async (field: string, value: boolean) => {
+    if (!user?.id) return;
+    const { error } = await supabase
+      .from('profiles')
+      .update({ [field]: value })
+      .eq('id', user.id);
+
+    if (error) return false;
+    await refreshProfile();
+    return true;
+  }, [user?.id, refreshProfile]);
 
   const handleTogglePush = useCallback(async () => {
     if (!user?.id) return;
     const newValue = !pushNewEpisodes;
 
     if (newValue) {
-      // Turning on: request permission and register token
       const token = await registerForPushNotifications(user.id);
       if (!token) {
         Alert.alert(
@@ -43,21 +60,27 @@ export default function SettingsScreen() {
         return;
       }
     } else {
-      // Turning off: remove push token
       await unregisterPushNotifications(user.id);
     }
 
     setPushNewEpisodes(newValue);
-    const { error } = await supabase
-      .from('profiles')
-      .update({ push_new_episodes: newValue })
-      .eq('id', user.id);
+    const ok = await updateProfile('push_new_episodes', newValue);
+    if (!ok) setPushNewEpisodes(!newValue);
+  }, [user?.id, pushNewEpisodes, updateProfile]);
 
-    if (error) {
-      setPushNewEpisodes(!newValue);
-      Alert.alert('Error', 'Failed to update setting');
-    }
-  }, [user?.id, pushNewEpisodes]);
+  const handleToggleTop4 = useCallback(async () => {
+    const newValue = !showTop4;
+    setShowTop4(newValue);
+    const ok = await updateProfile('show_top4_in_list', newValue);
+    if (!ok) setShowTop4(!newValue);
+  }, [showTop4, updateProfile]);
+
+  const handleTogglePosters = useCallback(async () => {
+    const newValue = !showPosters;
+    setShowPosters(newValue);
+    const ok = await updateProfile('show_posters_in_list', newValue);
+    if (!ok) setShowPosters(!newValue);
+  }, [showPosters, updateProfile]);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -68,7 +91,6 @@ export default function SettingsScreen() {
       {/* Notifications section */}
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Notifications</Text>
-
         <Pressable style={styles.settingRow} onPress={handleTogglePush}>
           <View style={styles.settingInfo}>
             <Text style={styles.settingLabel}>New Episode Alerts</Text>
@@ -82,10 +104,40 @@ export default function SettingsScreen() {
         </Pressable>
       </View>
 
+      {/* Display section */}
+      <View style={styles.section}>
+        <Text style={styles.sectionTitle}>Display</Text>
+
+        <Pressable style={styles.settingRow} onPress={handleToggleTop4}>
+          <View style={styles.settingInfo}>
+            <Text style={styles.settingLabel}>Show Favorites in My Shows</Text>
+            <Text style={styles.settingHint}>
+              Display your Top 4 at the top of your show list
+            </Text>
+          </View>
+          <View style={[styles.toggleTrack, showTop4 && styles.toggleTrackOn]}>
+            <View style={[styles.toggleThumb, showTop4 && styles.toggleThumbOn]} />
+          </View>
+        </Pressable>
+
+        <View style={styles.settingGap} />
+
+        <Pressable style={styles.settingRow} onPress={handleTogglePosters}>
+          <View style={styles.settingInfo}>
+            <Text style={styles.settingLabel}>Show Posters</Text>
+            <Text style={styles.settingHint}>
+              Display show poster images in your lists
+            </Text>
+          </View>
+          <View style={[styles.toggleTrack, showPosters && styles.toggleTrackOn]}>
+            <View style={[styles.toggleThumb, showPosters && styles.toggleThumbOn]} />
+          </View>
+        </Pressable>
+      </View>
+
       {/* About section */}
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>About</Text>
-
         <View style={styles.aboutRow}>
           <Text style={styles.aboutLabel}>Version</Text>
           <Text style={styles.aboutValue}>1.0.0</Text>
@@ -134,6 +186,9 @@ const styles = StyleSheet.create({
     padding: 16,
     borderWidth: 1,
     borderColor: theme.border,
+  },
+  settingGap: {
+    height: 10,
   },
   settingInfo: {
     flex: 1,

@@ -7,9 +7,10 @@ import type { TopShow } from '@/src/lib/types';
 interface Props {
   shows: TopShow[];
   onPress?: (showId: string) => void;
+  size?: 'default' | 'large';
 }
 
-export default memo(function TopShowsRow({ shows, onPress }: Props) {
+export default memo(function TopShowsRow({ shows, onPress, size = 'default' }: Props) {
   if (shows.length === 0) return null;
 
   return (
@@ -24,12 +25,12 @@ export default memo(function TopShowsRow({ shows, onPress }: Props) {
             {show.show_image ? (
               <Image
                 source={{ uri: show.show_image }}
-                style={styles.poster}
+                style={size === 'large' ? styles.posterLarge : styles.poster}
                 contentFit="cover"
                 transition={200}
               />
             ) : (
-              <View style={[styles.poster, styles.posterPlaceholder]}>
+              <View style={[size === 'large' ? styles.posterLarge : styles.poster, styles.posterPlaceholder]}>
                 <Text style={styles.placeholderText}>📺</Text>
               </View>
             )}
@@ -65,6 +66,11 @@ const styles = StyleSheet.create({
   poster: {
     width: 70,
     height: 100,
+    borderRadius: 6,
+  },
+  posterLarge: {
+    width: 88,
+    height: 125,
     borderRadius: 6,
   },
   posterPlaceholder: {

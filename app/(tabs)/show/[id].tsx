@@ -13,7 +13,7 @@ import {
 import { useLocalSearchParams } from 'expo-router';
 import { Image } from 'expo-image';
 import { theme } from '@/src/lib/theme';
-import { useToast } from '@/src/providers/ToastProvider';
+
 import { fetchShow } from '@/src/lib/data';
 import { useAuth } from '@/src/providers/AuthProvider';
 import {
@@ -46,7 +46,7 @@ export default function ShowDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const { session } = useAuth();
   const userId = session?.user?.id;
-  const { showToast } = useToast();
+
 
   const [show, setShow] = useState<ShowFull | null>(null);
   const [loading, setLoading] = useState(true);
@@ -121,7 +121,7 @@ export default function ShowDetailScreen() {
         setIsTop4(true);
       }
     } catch (e: any) {
-      showToast(e.message || 'Failed to update Top 4', 'error');
+      // silently fail
     }
   }, [userId, show, isTop4]);
 
@@ -145,9 +145,8 @@ export default function ShowDetailScreen() {
         added_at: new Date().toISOString(),
         updated_at: new Date().toISOString(),
       });
-      showToast(`Added to ${STATUS_LABELS[status]}`, 'success');
     } catch {
-      showToast('Failed to add show', 'error');
+      // silently fail
     }
   }, [userId, show]);
 
@@ -169,7 +168,7 @@ export default function ShowDetailScreen() {
                 await removeShow(userId, id);
                 setUserShow(null);
               } catch {
-                showToast('Failed to remove show', 'error');
+                // silently fail
               }
             },
           },
@@ -213,7 +212,7 @@ export default function ShowDetailScreen() {
         setUserShow(prev => prev ? { ...prev, status, updated_at: new Date().toISOString() } : null);
       }
     } catch {
-      showToast('Failed to update status', 'error');
+      // silently fail
     }
   }, [userId, id, userShow, show]);
 
@@ -266,7 +265,7 @@ export default function ShowDetailScreen() {
       await rateShow(userId, id, rating);
       setUserShow(prev => prev ? { ...prev, rating } : null);
     } catch {
-      showToast('Failed to save rating', 'error');
+      // silently fail
     }
   }, [userId, id]);
 

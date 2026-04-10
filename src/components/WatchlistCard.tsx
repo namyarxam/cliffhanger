@@ -29,28 +29,31 @@ interface Props {
   onPress: (id: string) => void;
   hasNewEpisodes?: boolean;
   leftAccessory?: React.ReactNode;
+  hidePosters?: boolean;
 }
 
-export default memo(function WatchlistCard({ show, onPress, hasNewEpisodes, leftAccessory }: Props) {
+export default memo(function WatchlistCard({ show, onPress, hasNewEpisodes, leftAccessory, hidePosters }: Props) {
   return (
     <Pressable
       style={({ pressed }) => [styles.container, pressed && styles.pressed]}
       onPress={() => onPress(show.show_id)}
     >
-      <View style={styles.posterWrap}>
-        {show.show_image ? (
-          <Image
-            source={{ uri: show.show_image }}
-            style={styles.poster}
-            contentFit="cover"
-            transition={200}
-          />
-        ) : (
-          <View style={[styles.poster, styles.posterPlaceholder]}>
-            <Text style={styles.posterPlaceholderText}>📺</Text>
-          </View>
-        )}
-      </View>
+      {!hidePosters && (
+        <View style={styles.posterWrap}>
+          {show.show_image ? (
+            <Image
+              source={{ uri: show.show_image }}
+              style={styles.poster}
+              contentFit="cover"
+              transition={200}
+            />
+          ) : (
+            <View style={[styles.poster, styles.posterPlaceholder]}>
+              <Text style={styles.posterPlaceholderText}>📺</Text>
+            </View>
+          )}
+        </View>
+      )}
 
       <View style={styles.info}>
         <View style={styles.titleRow}>

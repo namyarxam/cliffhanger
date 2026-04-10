@@ -5,19 +5,10 @@ import { Tabs, usePathname } from 'expo-router';
 import { theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { getPendingRequests } from '@/src/lib/friends';
+import { getPendingInviteCount } from '@/src/lib/conversations';
 
 const RefreshBadgeContext = createContext<() => void>(() => {});
 export const useRefreshBadge = () => useContext(RefreshBadgeContext);
-
-// Map hidden routes to the tab that should highlight
-const ROUTE_TO_TAB: Record<string, string> = {
-  'show/[id]': 'index',
-  'group/[id]': 'groups',
-  'group/create': 'groups',
-  'friends': 'profile',
-  'settings': 'profile',
-  'user/[id]': 'profile',
-};
 
 function TabIcon(props: { name: React.ComponentProps<typeof FontAwesome>['name']; color: string }) {
   return <FontAwesome size={22} style={{ marginBottom: -2 }} {...props} />;
@@ -26,12 +17,16 @@ function TabIcon(props: { name: React.ComponentProps<typeof FontAwesome>['name']
 export default function TabLayout() {
   const { session } = useAuth();
   const [pendingCount, setPendingCount] = useState(0);
+  const [chatInviteCount, setChatInviteCount] = useState(0);
   const pathname = usePathname();
 
   const refreshPending = useCallback(() => {
     if (!session?.user?.id) return;
     getPendingRequests(session.user.id)
       .then(p => setPendingCount(p.length))
+      .catch(() => {});
+    getPendingInviteCount(session.user.id)
+      .then(c => setChatInviteCount(c))
       .catch(() => {});
   }, [session?.user?.id]);
 
@@ -41,20 +36,16 @@ export default function TabLayout() {
     return () => clearInterval(interval);
   }, [refreshPending]);
 
-  // Determine which tab should be active based on current path
   const getActiveTab = useCallback(() => {
-    // pathname is like "/show/123", "/group/abc", "/friends", "/settings", etc.
-    const path = pathname.replace(/^\//, ''); // remove leading slash
+    const path = pathname.replace(/^\//, '');
 
-    // Direct tab matches
     if (path === '' || path === 'index') return 'index';
     if (path === 'search') return 'search';
-    if (path === 'groups') return 'groups';
+    if (path === 'chat') return 'chat';
     if (path === 'profile') return 'profile';
 
-    // Hidden route matches
     if (path.startsWith('show/')) return 'index';
-    if (path.startsWith('group/')) return 'groups';
+    if (path.startsWith('chat/')) return 'chat';
     if (path === 'friends' || path === 'settings' || path.startsWith('user/')) return 'profile';
 
     return null;
@@ -69,7 +60,7 @@ export default function TabLayout() {
         const tabs = [
           { name: 'index', title: 'My Shows', icon: 'tv' as const },
           { name: 'search', title: 'Search', icon: 'search' as const },
-          { name: 'groups', title: 'Groups', icon: 'users' as const },
+          { name: 'chat', title: 'Chat', icon: 'comments' as const },
           { name: 'profile', title: 'Profile', icon: 'user' as const },
         ];
 
@@ -97,6 +88,11 @@ export default function TabLayout() {
                         <Text style={styles.badgeText}>{pendingCount}</Text>
                       </View>
                     )}
+                    {tab.name === 'chat' && chatInviteCount > 0 && (
+                      <View style={styles.badge}>
+                        <Text style={styles.badgeText}>{chatInviteCount}</Text>
+                      </View>
+                    )}
                   </View>
                   <Text style={[styles.tabLabel, { color }]}>{tab.title}</Text>
                 </Pressable>
@@ -114,13 +110,13 @@ export default function TabLayout() {
     >
       <Tabs.Screen name="index" options={{ title: 'My Shows' }} />
       <Tabs.Screen name="search" options={{ title: 'Search' }} />
-      <Tabs.Screen name="groups" options={{ title: 'Groups' }} />
+      <Tabs.Screen name="chat" options={{ title: 'Chat' }} />
       <Tabs.Screen name="profile" options={{ title: 'Profile' }} />
       <Tabs.Screen name="settings" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="friends" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="show/[id]" options={{ href: null, headerShown: false }} />
-      <Tabs.Screen name="group/[id]" options={{ href: null, headerShown: false }} />
-      <Tabs.Screen name="group/create" options={{ href: null, headerShown: false }} />
+      <Tabs.Screen name="chat/[id]" options={{ href: null, headerShown: false }} />
+      <Tabs.Screen name="chat/new" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="user/[id]" options={{ href: null, headerShown: false }} />
     </Tabs>
     </RefreshBadgeContext.Provider>

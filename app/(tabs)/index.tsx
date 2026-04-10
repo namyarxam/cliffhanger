@@ -13,8 +13,14 @@ import { useFocusEffect } from 'expo-router';
 import { theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { getUserShows, getShowsWithNewEpisodes, dismissNewEpisodes } from '@/src/lib/watchlist';
+import { getTopShows } from '@/src/lib/topshows';
 import WatchlistCard from '@/src/components/WatchlistCard';
-import type { UserShow, WatchStatus } from '@/src/lib/types';
+import TopShowsRow from '@/src/components/TopShowsRow';
+import type { UserShow, TopShow, WatchStatus } from '@/src/lib/types';
+
+function sortTitle(t: string): string {
+  return t.replace(/^The\s+/i, '');
+}
 
 const SECTION_ORDER: { key: WatchStatus; title: string }[] = [
   { key: 'currently_watching', title: 'Currently Watching' },
@@ -24,10 +30,11 @@ const SECTION_ORDER: { key: WatchStatus; title: string }[] = [
 
 export default function MyShowsScreen() {
   const router = useRouter();
-  const { session } = useAuth();
+  const { session, profile } = useAuth();
   const userId = session?.user?.id;
 
   const [shows, setShows] = useState<UserShow[]>([]);
+  const [topShows, setTopShows] = useState<TopShow[]>([]);
   const [showsWithNew, setShowsWithNew] = useState<Set<string>>(new Set());
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
@@ -36,12 +43,14 @@ export default function MyShowsScreen() {
   const fetchData = useCallback(async () => {
     if (!userId) return;
     try {
-      const [data, newEps] = await Promise.all([
+      const [data, newEps, top] = await Promise.all([
         getUserShows(userId),
         getShowsWithNewEpisodes(userId),
+        getTopShows(userId),
       ]);
       setShows(data);
       setShowsWithNew(newEps);
+      setTopShows(top);
     } catch {
       // silently fail
     } finally {
@@ -84,7 +93,7 @@ export default function MyShowsScreen() {
       if (key === 'watched') {
         allData = [...allData].sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0));
       } else {
-        allData = [...allData].sort((a, b) => a.show_title.localeCompare(b.show_title));
+        allData = [...allData].sort((a, b) => sortTitle(a.show_title).localeCompare(sortTitle(b.show_title)));
       }
       return {
         title,
@@ -127,6 +136,7 @@ export default function MyShowsScreen() {
           show={item}
           onPress={handlePress}
           hasNewEpisodes={showsWithNew.has(item.show_id)}
+          hidePosters={profile?.show_posters_in_list === false}
         />
       )}
       renderSectionHeader={({ section }) => {
@@ -141,6 +151,11 @@ export default function MyShowsScreen() {
           </Pressable>
         );
       }}
+      ListHeaderComponent={
+        profile?.show_top4_in_list !== false && topShows.length > 0 ? (
+          <TopShowsRow shows={topShows} onPress={handlePress} size="large" />
+        ) : null
+      }
       refreshControl={
         <RefreshControl
           refreshing={refreshing}
