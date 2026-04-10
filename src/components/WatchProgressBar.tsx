@@ -1,5 +1,5 @@
-import { memo } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { memo, useEffect, useRef } from 'react';
+import { View, Animated, StyleSheet } from 'react-native';
 import { theme } from '@/src/lib/theme';
 
 interface Props {
@@ -9,12 +9,29 @@ interface Props {
 
 export default memo(function WatchProgressBar({ airedCount, watchedCount }: Props) {
   const fraction = airedCount > 0 ? Math.min(watchedCount / airedCount, 1) : 0;
+  const animatedWidth = useRef(new Animated.Value(fraction)).current;
+
+  useEffect(() => {
+    Animated.timing(animatedWidth, {
+      toValue: fraction,
+      duration: 400,
+      useNativeDriver: false,
+    }).start();
+  }, [fraction, animatedWidth]);
 
   return (
     <View style={styles.track}>
-      {fraction > 0 && (
-        <View style={[styles.fill, { width: `${fraction * 100}%` }]} />
-      )}
+      <Animated.View
+        style={[
+          styles.fill,
+          {
+            width: animatedWidth.interpolate({
+              inputRange: [0, 1],
+              outputRange: ['0%', '100%'],
+            }),
+          },
+        ]}
+      />
     </View>
   );
 });

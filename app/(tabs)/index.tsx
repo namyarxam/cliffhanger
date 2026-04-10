@@ -12,7 +12,7 @@ import { useRouter } from 'expo-router';
 import { useFocusEffect } from 'expo-router';
 import { theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
-import { getUserShows, getShowsWithNewEpisodes, dismissNewEpisodes } from '@/src/lib/watchlist';
+import { getUserShows, getNextEpisodesForShows, markNextEpisode } from '@/src/lib/watchlist';
 import { getTopShows } from '@/src/lib/topshows';
 import WatchlistCard from '@/src/components/WatchlistCard';
 import TopShowsRow from '@/src/components/TopShowsRow';
@@ -35,7 +35,7 @@ export default function MyShowsScreen() {
 
   const [shows, setShows] = useState<UserShow[]>([]);
   const [topShows, setTopShows] = useState<TopShow[]>([]);
-  const [showsWithNew, setShowsWithNew] = useState<Set<string>>(new Set());
+  const [nextEpisodes, setNextEpisodes] = useState<Map<string, { season: number; episode: number }>>(new Map());
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
@@ -43,13 +43,13 @@ export default function MyShowsScreen() {
   const fetchData = useCallback(async () => {
     if (!userId) return;
     try {
-      const [data, newEps, top] = await Promise.all([
+      const [data, nextEps, top] = await Promise.all([
         getUserShows(userId),
-        getShowsWithNewEpisodes(userId),
+        getNextEpisodesForShows(userId),
         getTopShows(userId),
       ]);
       setShows(data);
-      setShowsWithNew(newEps);
+      setNextEpisodes(nextEps);
       setTopShows(top);
     } catch {
       // silently fail
@@ -65,18 +65,34 @@ export default function MyShowsScreen() {
     }, [fetchData])
   );
 
-  const handlePress = useCallback(async (id: string) => {
-    // Dismiss new episodes indicator when tapping into the show
-    if (userId && showsWithNew.has(id)) {
-      dismissNewEpisodes(userId, id).catch(() => {});
-      setShowsWithNew(prev => {
-        const next = new Set(prev);
-        next.delete(id);
-        return next;
-      });
-    }
+  const handlePress = useCallback((id: string) => {
     router.push(`/show/${id}`);
-  }, [router, userId, showsWithNew]);
+  }, [router]);
+
+  const handleMarkNext = useCallback(async (showId: string, season: number, episode: number) => {
+    if (!userId) return;
+    // Optimistic: remove from next episodes map and update show progress
+    setNextEpisodes(prev => {
+      const next = new Map(prev);
+      next.delete(showId);
+      return next;
+    });
+    setShows(prev => prev.map(s =>
+      s.show_id === showId
+        ? { ...s, current_season: season, current_episode: episode }
+        : s
+    ));
+
+    try {
+      await markNextEpisode(userId, showId, season, episode);
+      // Refetch to check if there are more new episodes
+      const nextEps = await getNextEpisodesForShows(userId);
+      setNextEpisodes(nextEps);
+    } catch {
+      // Revert on failure
+      fetchData();
+    }
+  }, [userId, fetchData]);
 
   const toggleSection = useCallback((title: string) => {
     setCollapsed(prev => {
@@ -135,7 +151,8 @@ export default function MyShowsScreen() {
         <WatchlistCard
           show={item}
           onPress={handlePress}
-          hasNewEpisodes={showsWithNew.has(item.show_id)}
+          nextEpisode={nextEpisodes.get(item.show_id)}
+          onMarkNext={handleMarkNext}
           hidePosters={profile?.show_posters_in_list === false}
         />
       )}

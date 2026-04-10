@@ -225,14 +225,10 @@ export async function getPendingConversationInvites(
 }
 
 export async function getPendingInviteCount(userId: string): Promise<number> {
-  const { count, error } = await supabase
-    .from('conversation_invites')
-    .select('*', { count: 'exact', head: true })
-    .eq('invited_user', userId)
-    .eq('status', 'pending');
-
-  if (error) return 0;
-  return count ?? 0;
+  // Use the full fetch to ensure count matches what actually renders
+  // (avoids phantom badges from RLS-blocked conversations)
+  const invites = await getPendingConversationInvites(userId);
+  return invites.length;
 }
 
 export async function acceptConversationInvite(
@@ -602,7 +598,6 @@ export async function sendMessage(
     sender_avatar: profile?.avatar_url ?? null,
   };
 
-  // Broadcast to all subscribers instantly
   supabase
     .channel(`chat-${conversationId}`)
     .send({

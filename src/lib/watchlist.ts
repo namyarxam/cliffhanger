@@ -264,3 +264,46 @@ export async function dismissNewEpisodes(userId: string, showId: string): Promis
     .eq('user_id', userId)
     .eq('show_id', showId);
 }
+
+export async function getNextEpisodesForShows(
+  userId: string,
+): Promise<Map<string, { season: number; episode: number }>> {
+  const { data, error } = await supabase.rpc('get_next_episodes_for_shows', {
+    p_user_id: userId,
+  });
+
+  if (error) return new Map();
+  const map = new Map<string, { season: number; episode: number }>();
+  for (const r of data ?? []) {
+    map.set(r.show_id, { season: r.next_season, episode: r.next_episode });
+  }
+  return map;
+}
+
+export async function markNextEpisode(
+  userId: string,
+  showId: string,
+  season: number,
+  episode: number,
+): Promise<void> {
+  // Insert the single episode watch
+  await supabase
+    .from('episode_watches')
+    .upsert(
+      { user_id: userId, show_id: showId, season, episode },
+      { onConflict: 'user_id,show_id,season,episode' },
+    );
+
+  // Update user_shows progress
+  const { error } = await supabase
+    .from('user_shows')
+    .update({
+      current_season: season,
+      current_episode: episode,
+      updated_at: new Date().toISOString(),
+    })
+    .eq('user_id', userId)
+    .eq('show_id', showId);
+
+  if (error) throw error;
+}

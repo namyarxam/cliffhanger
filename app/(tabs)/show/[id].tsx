@@ -28,7 +28,7 @@ import {
 import WatchProgressBar from '@/src/components/WatchProgressBar';
 import CaughtUpButton from '@/src/components/CaughtUpButton';
 import EpisodePicker from '@/src/components/EpisodePicker';
-import RatingSelector from '@/src/components/RatingSelector';
+import RatingSelector, { getUserRatingColor } from '@/src/components/RatingSelector';
 import { isInTopShows, addTopShow, removeTopShow } from '@/src/lib/topshows';
 import { getFriends } from '@/src/lib/friends';
 import { supabase } from '@/src/lib/supabase';
@@ -56,7 +56,7 @@ export default function ShowDetailScreen() {
   const [watchedEps, setWatchedEps] = useState<Set<string>>(new Set());
   const [isTop4, setIsTop4] = useState(false);
   const [scrollEnabled, setScrollEnabled] = useState(true);
-  const [friendsWatching, setFriendsWatching] = useState<{ profile: UserProfile; status: string; season: number; episode: number }[]>([]);
+  const [friendsWatching, setFriendsWatching] = useState<{ profile: UserProfile; status: string; season: number; episode: number; rating: number | null }[]>([]);
 
   // Reset everything when navigating to a different show
   useEffect(() => {
@@ -83,7 +83,7 @@ export default function ShowDetailScreen() {
         const friendIds = friends.map(f => f.user.id);
         const { data } = await supabase
           .from('user_shows')
-          .select('user_id, status, current_season, current_episode')
+          .select('user_id, status, current_season, current_episode, rating')
           .eq('show_id', id)
           .in('user_id', friendIds);
 
@@ -95,6 +95,7 @@ export default function ShowDetailScreen() {
           status: d.status,
           season: d.current_season,
           episode: d.current_episode,
+          rating: d.rating ?? null,
         })).filter(d => d.profile));
       }).catch(() => {});
     }
@@ -428,8 +429,8 @@ export default function ShowDetailScreen() {
           </View>
         </View>
 
-        {/* Want to Watch: show friends watching this show */}
-        {userShow && userShow.status === 'want_to_watch' && friendsWatching.length > 0 && (
+        {/* Friends watching this show */}
+        {friendsWatching.length > 0 && (
           <View style={styles.friendsSection}>
             <Text style={styles.friendsSectionTitle}>Friends watching</Text>
             {friendsWatching.map(fw => (
@@ -469,7 +470,7 @@ export default function ShowDetailScreen() {
           </>
         )}
 
-        {/* Watched: rating + read-only episode picker */}
+        {/* Watched: rating + friends status */}
         {userShow && userShow.status === 'watched' && (
           <>
             <RatingSelector
@@ -478,14 +479,44 @@ export default function ShowDetailScreen() {
               onDragStart={() => setScrollEnabled(false)}
               onDragEnd={() => setScrollEnabled(true)}
             />
-            <EpisodePicker
-              seasons={show.seasons}
-              watchedEps={watchedEps}
-              currentSeason={userShow.current_season}
-              currentEpisode={userShow.current_episode}
-              onEpisodeTap={handleEpisodeTap}
-              readOnly
-            />
+            {friendsWatching.filter(fw => fw.status !== 'want_to_watch').length > 0 && (
+              <View style={styles.friendsStatusSection}>
+                <Text style={styles.friendsSectionTitle}>Friends</Text>
+                {friendsWatching
+                  .filter(fw => fw.status !== 'want_to_watch')
+                  .sort((a, b) => {
+                    // Show "watched" friends first (with ratings), then "currently_watching"
+                    if (a.status === 'watched' && b.status !== 'watched') return -1;
+                    if (a.status !== 'watched' && b.status === 'watched') return 1;
+                    return 0;
+                  })
+                  .map(fw => (
+                    <View key={fw.profile.id} style={styles.friendWatchRow}>
+                      <View style={styles.friendAvatar}>
+                        <Text style={styles.friendAvatarText}>
+                          {(fw.profile.display_name[0] || '?').toUpperCase()}
+                        </Text>
+                      </View>
+                      <Text style={styles.friendName} numberOfLines={1}>{fw.profile.display_name}</Text>
+                      {fw.status === 'watched' && fw.rating != null ? (
+                        <View style={[styles.friendRating, { backgroundColor: `${getUserRatingColor(fw.rating)}20` }]}>
+                          <Text style={[styles.friendRatingText, { color: getUserRatingColor(fw.rating) }]}>
+                            {fw.rating.toFixed(1)}
+                          </Text>
+                        </View>
+                      ) : (
+                        <Text style={styles.friendProgress}>
+                          {fw.status === 'watched'
+                            ? 'Finished'
+                            : fw.season > 0
+                              ? `S${fw.season} E${fw.episode}`
+                              : 'Not started'}
+                        </Text>
+                      )}
+                    </View>
+                  ))}
+              </View>
+            )}
           </>
         )}
       </ScrollView>
@@ -646,6 +677,22 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontFamily: 'DMSans_400Regular',
     color: theme.textFaint,
+  },
+  friendsStatusSection: {
+    marginTop: 20,
+    paddingHorizontal: 20,
+  },
+  friendRating: {
+    minWidth: 36,
+    height: 24,
+    borderRadius: 12,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 6,
+  },
+  friendRatingText: {
+    fontSize: 12,
+    fontFamily: 'DMSans_700Bold',
   },
   statusRow: {
     flexDirection: 'row',

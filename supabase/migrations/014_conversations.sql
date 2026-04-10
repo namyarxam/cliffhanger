@@ -92,12 +92,23 @@ ALTER TABLE public.conversation_members ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.messages ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.conversation_invites ENABLE ROW LEVEL SECURITY;
 
+-- Helper to check invite status without RLS circularity
+CREATE OR REPLACE FUNCTION is_conversation_invitee(conv_id UUID, uid UUID)
+RETURNS BOOLEAN AS $$
+  SELECT EXISTS (
+    SELECT 1 FROM public.conversation_invites
+    WHERE conversation_id = conv_id
+    AND invited_user = uid
+    AND status = 'pending'
+  )
+$$ LANGUAGE sql STABLE SECURITY DEFINER;
+
 -- Conversations: creator, members, and invitees can view
 CREATE POLICY "Members and creator can view conversations" ON public.conversations
   FOR SELECT USING (
     auth.uid() = created_by
     OR auth.uid() IN (SELECT user_id FROM public.conversation_members WHERE conversation_id = id)
-    OR auth.uid() IN (SELECT invited_user FROM public.conversation_invites WHERE conversation_id = id AND status = 'pending')
+    OR is_conversation_invitee(id, auth.uid())
   );
 
 CREATE POLICY "Authenticated users can create conversations" ON public.conversations

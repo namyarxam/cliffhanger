@@ -27,15 +27,22 @@ function formatAirdate(airdate: string): string {
 interface Props {
   show: UserShow;
   onPress: (id: string) => void;
-  hasNewEpisodes?: boolean;
+  nextEpisode?: { season: number; episode: number };
+  onMarkNext?: (showId: string, season: number, episode: number) => void;
   leftAccessory?: React.ReactNode;
   hidePosters?: boolean;
 }
 
-export default memo(function WatchlistCard({ show, onPress, hasNewEpisodes, leftAccessory, hidePosters }: Props) {
+export default memo(function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, leftAccessory, hidePosters }: Props) {
+  const hasNext = !!nextEpisode && show.status === 'currently_watching';
+
   return (
     <Pressable
-      style={({ pressed }) => [styles.container, pressed && styles.pressed]}
+      style={({ pressed }) => [
+        styles.container,
+        pressed && styles.pressed,
+        hasNext && styles.containerGlow,
+      ]}
       onPress={() => onPress(show.show_id)}
     >
       {!hidePosters && (
@@ -56,25 +63,36 @@ export default memo(function WatchlistCard({ show, onPress, hasNewEpisodes, left
       )}
 
       <View style={styles.info}>
-        <View style={styles.titleRow}>
-          {hasNewEpisodes && <View style={styles.newDot} />}
-          <Text style={styles.title} numberOfLines={1}>
-            {show.show_title}
-          </Text>
-        </View>
-        {hasNewEpisodes && (
-          <Text style={styles.newText}>New episodes</Text>
-        )}
+        <Text style={styles.title} numberOfLines={1}>
+          {show.show_title}
+        </Text>
       </View>
 
       {leftAccessory}
 
-      {/* Right side: network, episode progress, or rating */}
+      {/* Right side: network, episode progress, catch-up CTA, or rating */}
       {show.status === 'want_to_watch' && show.show_network && (
         <Text style={styles.network}>{show.show_network}</Text>
       )}
 
-      {show.status === 'currently_watching' && show.current_season > 0 && (
+      {show.status === 'currently_watching' && hasNext && (
+        <View style={styles.catchUpRow}>
+          <Text style={styles.catchUpLabel}>
+            S{nextEpisode.season} E{nextEpisode.episode}
+          </Text>
+          <Pressable
+            style={({ pressed }) => [styles.catchUpButton, pressed && { opacity: 0.7 }]}
+            onPress={(e) => {
+              e.stopPropagation();
+              onMarkNext?.(show.show_id, nextEpisode.season, nextEpisode.episode);
+            }}
+          >
+            <Text style={styles.catchUpCheck}>✓</Text>
+          </Pressable>
+        </View>
+      )}
+
+      {show.status === 'currently_watching' && !hasNext && show.current_season > 0 && (
         <View style={styles.rightInfo}>
           <Text style={styles.progress}>
             S{show.current_season} E{show.current_episode}
@@ -108,6 +126,11 @@ const styles = StyleSheet.create({
     borderBottomColor: theme.border,
     gap: 12,
   },
+  containerGlow: {
+    backgroundColor: 'rgba(255,107,53,0.06)',
+    borderLeftWidth: 3,
+    borderLeftColor: theme.accent,
+  },
   pressed: {
     backgroundColor: theme.bgCard,
   },
@@ -133,28 +156,11 @@ const styles = StyleSheet.create({
     flex: 1,
     gap: 3,
   },
-  titleRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 6,
-  },
-  newDot: {
-    width: 8,
-    height: 8,
-    borderRadius: 4,
-    backgroundColor: theme.accent,
-  },
   title: {
     fontSize: 15,
     fontFamily: 'DMSans_600SemiBold',
     color: theme.text,
     flexShrink: 1,
-  },
-  newText: {
-    fontSize: 11,
-    fontFamily: 'DMSans_500Medium',
-    color: theme.accent,
-    marginTop: 1,
   },
   rightInfo: {
     alignItems: 'flex-end',
@@ -186,5 +192,30 @@ const styles = StyleSheet.create({
   ratingText: {
     fontSize: 12,
     fontFamily: 'DMSans_700Bold',
+  },
+
+  // Catch-up CTA
+  catchUpRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  catchUpLabel: {
+    fontSize: 12,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.accent,
+  },
+  catchUpButton: {
+    width: 28,
+    height: 28,
+    borderRadius: 14,
+    backgroundColor: theme.accent,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  catchUpCheck: {
+    fontSize: 14,
+    fontWeight: '700',
+    color: '#fff',
   },
 });

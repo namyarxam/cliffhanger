@@ -16,7 +16,7 @@ export default function SettingsScreen() {
   const { user, refreshProfile } = useAuth();
   const [pushNewEpisodes, setPushNewEpisodes] = useState(false);
   const [showTop4, setShowTop4] = useState(true);
-  const [showPosters, setShowPosters] = useState(false);
+  const [showPosters, setShowPosters] = useState(true);
 
   useEffect(() => {
     if (!user?.id) return;
