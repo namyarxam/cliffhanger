@@ -1,25 +1,42 @@
-import { useState, useCallback, useRef } from 'react';
+import { useState, useCallback, useRef, useEffect } from 'react';
 import {
   View,
   Text,
   TextInput,
   FlatList,
+  Pressable,
   StyleSheet,
   ActivityIndicator,
 } from 'react-native';
 import { useRouter } from 'expo-router';
+import { Image } from 'expo-image';
 import { theme } from '@/src/lib/theme';
+import { useAuth } from '@/src/providers/AuthProvider';
 import { searchShows } from '@/src/lib/data';
+import { getPopularWithFriends } from '@/src/lib/watchlist';
+import type { PopularShow } from '@/src/lib/watchlist';
 import ShowCard from '@/src/components/ShowCard';
 import type { ShowSummary } from '@/src/lib/types';
 
 export default function SearchScreen() {
   const router = useRouter();
+  const { session } = useAuth();
+  const userId = session?.user?.id;
   const [results, setResults] = useState<ShowSummary[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [query, setQuery] = useState('');
+  const [popular, setPopular] = useState<PopularShow[]>([]);
+  const [loadingPopular, setLoadingPopular] = useState(true);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    if (!userId) return;
+    getPopularWithFriends(userId)
+      .then(setPopular)
+      .catch(() => {})
+      .finally(() => setLoadingPopular(false));
+  }, [userId]);
 
   const handleSearch = useCallback((text: string) => {
     setQuery(text);
@@ -54,6 +71,8 @@ export default function SearchScreen() {
     <ShowCard show={item} onPress={handlePress} />
   ), [handlePress]);
 
+  const showPopular = !query.trim() && !loading && popular.length > 0;
+
   return (
     <View style={styles.container}>
       <View style={styles.searchBar}>
@@ -68,7 +87,40 @@ export default function SearchScreen() {
         />
       </View>
 
-      {!query.trim() && !loading && (
+      {showPopular && (
+        <View style={styles.popularSection}>
+          <Text style={styles.popularTitle}>Popular with Friends</Text>
+          {popular.map(show => (
+            <Pressable
+              key={show.show_id}
+              style={({ pressed }) => [styles.popularRow, pressed && { opacity: 0.7 }]}
+              onPress={() => handlePress(show.show_id)}
+            >
+              <View style={styles.popularPosterWrap}>
+                {show.show_image ? (
+                  <Image source={{ uri: show.show_image }} style={styles.popularPoster} contentFit="cover" />
+                ) : (
+                  <View style={[styles.popularPoster, styles.popularPosterPlaceholder]}>
+                    <Text style={{ fontSize: 14 }}>📺</Text>
+                  </View>
+                )}
+              </View>
+              <View style={styles.popularInfo}>
+                <Text style={styles.popularShowTitle} numberOfLines={1}>{show.show_title}</Text>
+                <Text style={styles.popularFriends} numberOfLines={1}>
+                  {show.friend_count === 1
+                    ? show.friend_names[0]
+                    : show.friend_count === 2
+                      ? `${show.friend_names[0]} & ${show.friend_names[1]}`
+                      : `${show.friend_names[0]} & ${show.friend_count - 1} others`}
+                </Text>
+              </View>
+            </Pressable>
+          ))}
+        </View>
+      )}
+
+      {!query.trim() && !loading && !showPopular && !loadingPopular && (
         <View style={styles.empty}>
           <Text style={styles.emptyText}>Search for a TV show to get started</Text>
         </View>
@@ -89,6 +141,7 @@ export default function SearchScreen() {
       {!loading && !error && results.length > 0 && (
         <FlatList
           data={results}
+          keyboardShouldPersistTaps="handled"
           renderItem={renderItem}
           keyExtractor={item => item.id}
           contentContainerStyle={styles.list}
@@ -147,5 +200,55 @@ const styles = StyleSheet.create({
     color: theme.textFaint,
     fontFamily: 'DMSans_400Regular',
     fontSize: 14,
+  },
+
+  // Popular with Friends
+  popularSection: {
+    paddingTop: 20,
+  },
+  popularTitle: {
+    fontSize: 15,
+    fontFamily: 'DMSans_700Bold',
+    color: theme.text,
+    paddingHorizontal: 16,
+    marginBottom: 12,
+  },
+  popularRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingVertical: 10,
+    gap: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: theme.border,
+  },
+  popularPosterWrap: {
+    width: 40,
+    height: 56,
+    borderRadius: 4,
+    overflow: 'hidden',
+  },
+  popularPoster: {
+    width: '100%',
+    height: '100%',
+  },
+  popularPosterPlaceholder: {
+    backgroundColor: theme.bgCard,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  popularInfo: {
+    flex: 1,
+    gap: 3,
+  },
+  popularShowTitle: {
+    fontSize: 15,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.text,
+  },
+  popularFriends: {
+    fontSize: 12,
+    fontFamily: 'DMSans_400Regular',
+    color: theme.textDim,
   },
 });

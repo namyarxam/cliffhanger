@@ -107,6 +107,13 @@ export default function FriendsScreen() {
     }, 400);
   }, [userId]);
 
+  // Re-run search on focus to refresh stale friend statuses (e.g. pending → accepted)
+  useFocusEffect(
+    useCallback(() => {
+      if (query.trim().length >= 2) handleSearch(query);
+    }, [query, handleSearch])
+  );
+
   const handleAdd = useCallback(async (friendId: string) => {
     if (!userId) return;
     try {

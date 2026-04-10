@@ -36,6 +36,7 @@ export default function MyShowsScreen() {
   const [shows, setShows] = useState<UserShow[]>([]);
   const [topShows, setTopShows] = useState<TopShow[]>([]);
   const [nextEpisodes, setNextEpisodes] = useState<Map<string, { season: number; episode: number }>>(new Map());
+  const [caughtUp, setCaughtUp] = useState<Set<string>>(new Set());
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
@@ -43,13 +44,14 @@ export default function MyShowsScreen() {
   const fetchData = useCallback(async () => {
     if (!userId) return;
     try {
-      const [data, nextEps, top] = await Promise.all([
+      const [data, episodeData, top] = await Promise.all([
         getUserShows(userId),
         getNextEpisodesForShows(userId),
         getTopShows(userId),
       ]);
       setShows(data);
-      setNextEpisodes(nextEps);
+      setNextEpisodes(episodeData.nextEpisodes);
+      setCaughtUp(episodeData.caughtUpShows);
       setTopShows(top);
     } catch {
       // silently fail
@@ -86,8 +88,9 @@ export default function MyShowsScreen() {
     try {
       await markNextEpisode(userId, showId, season, episode);
       // Refetch to check if there are more new episodes
-      const nextEps = await getNextEpisodesForShows(userId);
-      setNextEpisodes(nextEps);
+      const episodeData = await getNextEpisodesForShows(userId);
+      setNextEpisodes(episodeData.nextEpisodes);
+      setCaughtUp(episodeData.caughtUpShows);
     } catch {
       // Revert on failure
       fetchData();
@@ -153,6 +156,7 @@ export default function MyShowsScreen() {
           onPress={handlePress}
           nextEpisode={nextEpisodes.get(item.show_id)}
           onMarkNext={handleMarkNext}
+          isCaughtUp={caughtUp.has(item.show_id)}
           hidePosters={profile?.show_posters_in_list === false}
         />
       )}

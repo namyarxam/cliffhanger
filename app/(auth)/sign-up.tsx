@@ -48,12 +48,8 @@ export default function SignUpScreen() {
 
     if (error) {
       Alert.alert('Sign up failed', error.message);
-    } else {
-      Alert.alert(
-        'Check your email',
-        'We sent you a confirmation link. Tap it to activate your account.',
-      );
     }
+    // On success, AuthProvider detects the session and redirects to (tabs)
   }
 
   return (

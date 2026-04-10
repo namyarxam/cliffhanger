@@ -29,11 +29,12 @@ interface Props {
   onPress: (id: string) => void;
   nextEpisode?: { season: number; episode: number };
   onMarkNext?: (showId: string, season: number, episode: number) => void;
+  isCaughtUp?: boolean;
   leftAccessory?: React.ReactNode;
   hidePosters?: boolean;
 }
 
-export default memo(function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, leftAccessory, hidePosters }: Props) {
+export default memo(function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, isCaughtUp: caughtUp, leftAccessory, hidePosters }: Props) {
   const hasNext = !!nextEpisode && show.status === 'currently_watching';
 
   return (
@@ -77,9 +78,12 @@ export default memo(function WatchlistCard({ show, onPress, nextEpisode, onMarkN
 
       {show.status === 'currently_watching' && hasNext && (
         <View style={styles.catchUpRow}>
-          <Text style={styles.catchUpLabel}>
-            S{nextEpisode.season} E{nextEpisode.episode}
-          </Text>
+          <View style={styles.catchUpInfo}>
+            <Text style={styles.catchUpNew}>NEW</Text>
+            <Text style={styles.catchUpLabel}>
+              S{nextEpisode.season} E{nextEpisode.episode}
+            </Text>
+          </View>
           <Pressable
             style={({ pressed }) => [styles.catchUpButton, pressed && { opacity: 0.7 }]}
             onPress={(e) => {
@@ -97,11 +101,7 @@ export default memo(function WatchlistCard({ show, onPress, nextEpisode, onMarkN
           <Text style={styles.progress}>
             S{show.current_season} E{show.current_episode}
           </Text>
-          {show.current_episode_airdate && (
-            <Text style={styles.progressDate}>
-              {formatAirdate(show.current_episode_airdate)}
-            </Text>
-          )}
+          {caughtUp && <Text style={styles.caughtUpCheck}>✓</Text>}
         </View>
       )}
 
@@ -163,18 +163,18 @@ const styles = StyleSheet.create({
     flexShrink: 1,
   },
   rightInfo: {
-    alignItems: 'flex-end',
+    alignItems: 'center',
     gap: 2,
   },
   progress: {
     fontSize: 12,
     fontFamily: 'DMSans_600SemiBold',
-    color: theme.accent,
+    color: theme.textDim,
   },
-  progressDate: {
-    fontSize: 11,
-    fontFamily: 'DMSans_400Regular',
-    color: 'rgba(255,255,255,0.45)',
+  caughtUpCheck: {
+    fontSize: 12,
+    fontFamily: 'DMSans_700Bold',
+    color: 'rgba(74,222,128,0.7)',
   },
   network: {
     fontSize: 12,
@@ -199,6 +199,16 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
+  },
+  catchUpInfo: {
+    alignItems: 'flex-end',
+    gap: 1,
+  },
+  catchUpNew: {
+    fontSize: 9,
+    fontFamily: 'DMSans_700Bold',
+    color: theme.accent,
+    letterSpacing: 1,
   },
   catchUpLabel: {
     fontSize: 12,

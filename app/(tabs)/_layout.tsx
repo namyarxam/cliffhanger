@@ -32,7 +32,7 @@ export default function TabLayout() {
 
   useEffect(() => {
     refreshPending();
-    const interval = setInterval(refreshPending, 30000);
+    const interval = setInterval(refreshPending, 10000);
     return () => clearInterval(interval);
   }, [refreshPending]);
 

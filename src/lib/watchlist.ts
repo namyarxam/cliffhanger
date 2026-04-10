@@ -1,5 +1,63 @@
 import { supabase } from './supabase';
+import { getFriends } from './friends';
 import type { UserShow, EpisodeWatch, WatchStatus, Season } from './types';
+
+export interface PopularShow {
+  show_id: string;
+  show_title: string;
+  show_image: string | null;
+  friend_count: number;
+  friend_names: string[];
+  latestAdd: string;
+}
+
+export async function getPopularWithFriends(userId: string): Promise<PopularShow[]> {
+  const friends = await getFriends(userId);
+  if (friends.length === 0) return [];
+
+  const friendIds = friends.map(f => f.user.id);
+
+  const { data } = await supabase
+    .from('user_shows')
+    .select('show_id, show_title, show_image, user_id, added_at')
+    .in('user_id', friendIds);
+
+  if (!data || data.length === 0) return [];
+
+  // Build a name map from friends
+  const nameMap = new Map(friends.map(f => [f.user.id, f.user.display_name]));
+
+  // Group by show, count friends, collect names, track most recent add
+  const showMap = new Map<string, { title: string; image: string | null; names: string[]; latestAdd: string }>();
+  for (const row of data) {
+    const entry = showMap.get(row.show_id) ?? { title: row.show_title, image: row.show_image, names: [] as string[], latestAdd: row.added_at };
+    const name = nameMap.get(row.user_id);
+    if (name) entry.names.push(name);
+    if (row.added_at > entry.latestAdd) entry.latestAdd = row.added_at;
+    showMap.set(row.show_id, entry);
+  }
+
+  // Filter out shows the user already has
+  const { data: myShows } = await supabase
+    .from('user_shows')
+    .select('show_id')
+    .eq('user_id', userId);
+
+  const myShowIds = new Set((myShows ?? []).map(s => s.show_id));
+
+  return [...showMap.entries()]
+    .filter(([id]) => !myShowIds.has(id))
+    .map(([id, info]) => ({
+      show_id: id,
+      show_title: info.title,
+      show_image: info.image,
+      friend_count: info.names.length,
+      friend_names: info.names,
+      latestAdd: info.latestAdd,
+    }))
+    .sort((a, b) => b.friend_count - a.friend_count || b.latestAdd.localeCompare(a.latestAdd))
+    .slice(0, 6);
+}
 
 export async function getUserShows(userId: string): Promise<UserShow[]> {
   const { data, error } = await supabase
@@ -31,7 +89,25 @@ export async function addShow(
   title: string,
   image: string | null,
   network: string | null,
-): Promise<void> {
+): Promise<{ currentSeason: number; currentEpisode: number }> {
+  // Check for existing episode watches to restore progress
+  let currentSeason = 0;
+  let currentEpisode = 0;
+
+  const { data: watches } = await supabase
+    .from('episode_watches')
+    .select('season, episode')
+    .eq('user_id', userId)
+    .eq('show_id', showId)
+    .order('season', { ascending: false })
+    .order('episode', { ascending: false })
+    .limit(1);
+
+  if (watches && watches.length > 0) {
+    currentSeason = watches[0].season;
+    currentEpisode = watches[0].episode;
+  }
+
   const { error } = await supabase
     .from('user_shows')
     .upsert({
@@ -41,12 +117,13 @@ export async function addShow(
       show_title: title,
       show_image: image,
       show_network: network,
-      current_season: 0,
-      current_episode: 0,
+      current_season: currentSeason,
+      current_episode: currentEpisode,
       updated_at: new Date().toISOString(),
     });
 
   if (error) throw error;
+  return { currentSeason, currentEpisode };
 }
 
 export async function updateShowStatus(
@@ -267,17 +344,41 @@ export async function dismissNewEpisodes(userId: string, showId: string): Promis
 
 export async function getNextEpisodesForShows(
   userId: string,
-): Promise<Map<string, { season: number; episode: number }>> {
+): Promise<{ nextEpisodes: Map<string, { season: number; episode: number }>; caughtUpShows: Set<string> }> {
   const { data, error } = await supabase.rpc('get_next_episodes_for_shows', {
     p_user_id: userId,
   });
 
-  if (error) return new Map();
-  const map = new Map<string, { season: number; episode: number }>();
+  const nextEpisodes = new Map<string, { season: number; episode: number }>();
   for (const r of data ?? []) {
-    map.set(r.show_id, { season: r.next_season, episode: r.next_episode });
+    nextEpisodes.set(r.show_id, { season: r.next_season, episode: r.next_episode });
   }
-  return map;
+
+  // Find which currently-watching shows are in the schedule table
+  const { data: userShows } = await supabase
+    .from('user_shows')
+    .select('show_id')
+    .eq('user_id', userId)
+    .eq('status', 'currently_watching');
+
+  const watchingIds = (userShows ?? []).map(s => s.show_id);
+  const caughtUpShows = new Set<string>();
+
+  if (watchingIds.length > 0) {
+    const { data: scheduled } = await supabase
+      .from('schedule')
+      .select('show_id')
+      .in('show_id', watchingIds);
+
+    const scheduledIds = new Set((scheduled ?? []).map(s => s.show_id));
+
+    // Caught up = in schedule but no next episode
+    for (const id of scheduledIds) {
+      if (!nextEpisodes.has(id)) caughtUpShows.add(id);
+    }
+  }
+
+  return { nextEpisodes, caughtUpShows };
 }
 
 export async function markNextEpisode(

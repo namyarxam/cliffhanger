@@ -36,7 +36,7 @@ import { supabase } from '@/src/lib/supabase';
 import type { ShowFull, WatchStatus, UserShow, UserProfile } from '@/src/lib/types';
 
 const STATUS_LABELS: Record<WatchStatus, string> = {
-  want_to_watch: 'Want to Watch',
+  want_to_watch: 'Watchlist',
   currently_watching: 'Watching',
   watched: 'Watched',
 };
@@ -132,7 +132,7 @@ export default function ShowDetailScreen() {
     if (!userId || !show) return;
     try {
       LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
-      await addShow(userId, show.id, status, show.title, show.image, show.network);
+      const { currentSeason, currentEpisode } = await addShow(userId, show.id, status, show.title, show.image, show.network);
       setUserShow({
         user_id: userId,
         show_id: show.id,
@@ -140,8 +140,8 @@ export default function ShowDetailScreen() {
         show_title: show.title,
         show_image: show.image,
         show_network: show.network,
-        current_season: 0,
-        current_episode: 0,
+        current_season: currentSeason,
+        current_episode: currentEpisode,
         current_episode_airdate: null,
         new_episodes_seen_at: null,
         rating: null,
@@ -342,8 +342,9 @@ export default function ShowDetailScreen() {
 
   const isRunning = show.status === 'Running';
 
+  const today = new Date().toISOString().slice(0, 10);
+
   const airedCount = (() => {
-    const today = new Date().toISOString().slice(0, 10);
     let count = 0;
     for (const s of show.seasons) {
       for (const ep of s.episodes) {
@@ -352,6 +353,19 @@ export default function ShowDetailScreen() {
     }
     return count;
   })();
+
+  const getEpisodesBehind = (season: number, episode: number): number => {
+    let behind = 0;
+    let pastPosition = false;
+    for (const s of show.seasons) {
+      for (const ep of s.episodes) {
+        if (!ep.airdate || ep.airdate > today) continue;
+        if (pastPosition) behind++;
+        if (s.number === season && ep.number === episode) pastPosition = true;
+      }
+    }
+    return behind;
+  };
 
   return (
     <SafeAreaView style={styles.container}>
@@ -427,23 +441,29 @@ export default function ShowDetailScreen() {
         {/* Watchlist Controls */}
         <View style={styles.section}>
           <View style={styles.statusRow}>
-            {STATUSES.map(s => (
-              <Pressable
-                key={s}
-                style={[
-                  styles.statusPill,
-                  userShow?.status === s && styles.statusPillActive,
-                ]}
-                onPress={() => userShow ? handleStatusChange(s) : handleAddWithStatus(s)}
-              >
-                <Text style={[
-                  styles.statusPillText,
-                  userShow?.status === s && styles.statusPillTextActive,
-                ]}>
-                  {STATUS_LABELS[s]}
-                </Text>
-              </Pressable>
-            ))}
+            {STATUSES.map(s => {
+              const isActive = userShow?.status === s;
+              return (
+                <Pressable
+                  key={s}
+                  style={({ pressed }) => [
+                    styles.statusPill,
+                    !userShow && styles.statusPillEmpty,
+                    isActive && styles.statusPillActive,
+                    pressed && !isActive && styles.statusPillPressed,
+                  ]}
+                  onPress={() => userShow ? handleStatusChange(s) : handleAddWithStatus(s)}
+                >
+                  {!userShow && <Text style={styles.statusPillPlus}>+</Text>}
+                  <Text style={[
+                    styles.statusPillText,
+                    isActive && styles.statusPillTextActive,
+                  ]}>
+                    {STATUS_LABELS[s]}
+                  </Text>
+                </Pressable>
+              );
+            })}
           </View>
         </View>
 
@@ -451,23 +471,28 @@ export default function ShowDetailScreen() {
         {friendsWatching.length > 0 && (!userShow || userShow.status !== 'watched') && (
           <View style={styles.friendsSection}>
             <Text style={styles.friendsSectionTitle}>Friends watching</Text>
-            {friendsWatching.map(fw => (
-              <View key={fw.profile.id} style={styles.friendWatchRow}>
-                <View style={styles.friendAvatar}>
-                  <Text style={styles.friendAvatarText}>
-                    {(fw.profile.display_name[0] || '?').toUpperCase()}
-                  </Text>
+            {friendsWatching.map(fw => {
+              const behind = fw.season > 0 ? getEpisodesBehind(fw.season, fw.episode) : 0;
+              return (
+                <View key={fw.profile.id} style={styles.friendWatchRow}>
+                  <View style={styles.friendAvatar}>
+                    <Text style={styles.friendAvatarText}>
+                      {(fw.profile.display_name[0] || '?').toUpperCase()}
+                    </Text>
+                  </View>
+                  <Text style={styles.friendName} numberOfLines={1}>{fw.profile.display_name}</Text>
+                  {fw.status === 'watched' ? (
+                    <Text style={styles.friendCaughtUp}>Finished</Text>
+                  ) : fw.season === 0 ? (
+                    <Text style={styles.friendProgress}>Not started</Text>
+                  ) : behind === 0 ? (
+                    <Text style={styles.friendCaughtUp}>Caught up</Text>
+                  ) : (
+                    <Text style={styles.friendProgress}>{behind} ep{behind !== 1 ? 's' : ''} behind</Text>
+                  )}
                 </View>
-                <Text style={styles.friendName} numberOfLines={1}>{fw.profile.display_name}</Text>
-                <Text style={styles.friendProgress}>
-                  {fw.status === 'watched'
-                    ? 'Finished'
-                    : fw.season > 0
-                      ? `S${fw.season} E${fw.episode}`
-                      : 'Not started'}
-                </Text>
-              </View>
-            ))}
+              );
+            })}
           </View>
         )}
 
@@ -508,31 +533,32 @@ export default function ShowDetailScreen() {
                     if (a.status !== 'watched' && b.status === 'watched') return 1;
                     return 0;
                   })
-                  .map(fw => (
-                    <View key={fw.profile.id} style={styles.friendWatchRow}>
-                      <View style={styles.friendAvatar}>
-                        <Text style={styles.friendAvatarText}>
-                          {(fw.profile.display_name[0] || '?').toUpperCase()}
-                        </Text>
-                      </View>
-                      <Text style={styles.friendName} numberOfLines={1}>{fw.profile.display_name}</Text>
-                      {fw.status === 'watched' && fw.rating != null ? (
-                        <View style={[styles.friendRating, { backgroundColor: `${getUserRatingColor(fw.rating)}20` }]}>
-                          <Text style={[styles.friendRatingText, { color: getUserRatingColor(fw.rating) }]}>
-                            {fw.rating.toFixed(1)}
+                  .map(fw => {
+                    const behind = fw.season > 0 ? getEpisodesBehind(fw.season, fw.episode) : 0;
+                    return (
+                      <View key={fw.profile.id} style={styles.friendWatchRow}>
+                        <View style={styles.friendAvatar}>
+                          <Text style={styles.friendAvatarText}>
+                            {(fw.profile.display_name[0] || '?').toUpperCase()}
                           </Text>
                         </View>
-                      ) : (
-                        <Text style={styles.friendProgress}>
-                          {fw.status === 'watched'
-                            ? 'Finished'
-                            : fw.season > 0
-                              ? `S${fw.season} E${fw.episode}`
-                              : 'Not started'}
-                        </Text>
-                      )}
-                    </View>
-                  ))}
+                        <Text style={styles.friendName} numberOfLines={1}>{fw.profile.display_name}</Text>
+                        {fw.status === 'watched' && fw.rating != null ? (
+                          <View style={[styles.friendRating, { backgroundColor: `${getUserRatingColor(fw.rating)}20` }]}>
+                            <Text style={[styles.friendRatingText, { color: getUserRatingColor(fw.rating) }]}>
+                              {fw.rating.toFixed(1)}
+                            </Text>
+                          </View>
+                        ) : fw.status === 'watched' ? (
+                          <Text style={styles.friendCaughtUp}>Finished</Text>
+                        ) : behind === 0 ? (
+                          <Text style={styles.friendCaughtUp}>Caught up</Text>
+                        ) : (
+                          <Text style={styles.friendProgress}>{behind} ep{behind !== 1 ? 's' : ''} behind</Text>
+                        )}
+                      </View>
+                    );
+                  })}
               </View>
             )}
           </>
@@ -724,6 +750,11 @@ const styles = StyleSheet.create({
     fontFamily: 'DMSans_400Regular',
     color: theme.textFaint,
   },
+  friendCaughtUp: {
+    fontSize: 12,
+    fontFamily: 'DMSans_600SemiBold',
+    color: 'rgba(74,222,128,0.7)',
+  },
   friendsStatusSection: {
     marginTop: 20,
     paddingHorizontal: 20,
@@ -746,15 +777,31 @@ const styles = StyleSheet.create({
   },
   statusPill: {
     flex: 1,
+    flexDirection: 'row',
     paddingVertical: 10,
     borderRadius: 8,
     borderWidth: 1,
     borderColor: theme.border,
     alignItems: 'center',
+    justifyContent: 'center',
+    gap: 4,
+  },
+  statusPillEmpty: {
+    borderColor: 'rgba(255,107,53,0.3)',
+    borderStyle: 'dashed',
+  },
+  statusPillPressed: {
+    backgroundColor: 'rgba(255,107,53,0.08)',
   },
   statusPillActive: {
     backgroundColor: theme.accent,
     borderColor: theme.accent,
+    borderStyle: 'solid',
+  },
+  statusPillPlus: {
+    fontSize: 14,
+    fontFamily: 'DMSans_700Bold',
+    color: theme.accent,
   },
   statusPillText: {
     fontSize: 12,
