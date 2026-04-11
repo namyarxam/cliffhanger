@@ -13,10 +13,10 @@ import { useFocusEffect } from 'expo-router';
 import { theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { getUserShows, getNextEpisodesForShows, markNextEpisode } from '@/src/lib/watchlist';
-import { getTopShows } from '@/src/lib/topshows';
+import { getDisplayList } from '@/src/lib/lists';
 import WatchlistCard from '@/src/components/WatchlistCard';
 import TopShowsRow from '@/src/components/TopShowsRow';
-import type { UserShow, TopShow, WatchStatus } from '@/src/lib/types';
+import type { UserShow, ListWithItems, WatchStatus } from '@/src/lib/types';
 
 function sortTitle(t: string): string {
   return t.replace(/^The\s+/i, '');
@@ -34,25 +34,26 @@ export default function MyShowsScreen() {
   const userId = session?.user?.id;
 
   const [shows, setShows] = useState<UserShow[]>([]);
-  const [topShows, setTopShows] = useState<TopShow[]>([]);
+  const [displayList, setDisplayList] = useState<ListWithItems | null>(null);
   const [nextEpisodes, setNextEpisodes] = useState<Map<string, { season: number; episode: number }>>(new Map());
   const [caughtUp, setCaughtUp] = useState<Set<string>>(new Set());
   const [loading, setLoading] = useState(true);
+  const [dataReady, setDataReady] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
 
   const fetchData = useCallback(async () => {
     if (!userId) return;
     try {
-      const [data, episodeData, top] = await Promise.all([
+      const [data, episodeData, display] = await Promise.all([
         getUserShows(userId),
         getNextEpisodesForShows(userId),
-        getTopShows(userId),
+        getDisplayList(userId),
       ]);
       setShows(data);
       setNextEpisodes(episodeData.nextEpisodes);
       setCaughtUp(episodeData.caughtUpShows);
-      setTopShows(top);
+      setDisplayList(display);
     } catch {
       // silently fail
     } finally {
@@ -63,7 +64,8 @@ export default function MyShowsScreen() {
 
   useFocusEffect(
     useCallback(() => {
-      fetchData();
+      setDataReady(false);
+      fetchData().then(() => setDataReady(true));
     }, [fetchData])
   );
 
@@ -173,8 +175,8 @@ export default function MyShowsScreen() {
         );
       }}
       ListHeaderComponent={
-        profile?.show_top4_in_list !== false && topShows.length > 0 ? (
-          <TopShowsRow shows={topShows} onPress={handlePress} size="large" />
+        dataReady && profile?.show_top4_in_list !== false && displayList && displayList.items.length > 0 ? (
+          <TopShowsRow items={displayList.items} onPress={(itemId) => handlePress(itemId)} size="large" />
         ) : null
       }
       refreshControl={

@@ -51,7 +51,7 @@ export default function TabLayout() {
     // show/[id] doesn't force a tab — keep whatever tab was active before
     if (path.startsWith('show/')) return activeTabRef.current;
     if (path.startsWith('chat/')) return 'chat';
-    if (path === 'friends' || path === 'settings' || path.startsWith('user/')) return 'profile';
+    if (path === 'friends' || path === 'settings' || path === 'lists' || path.startsWith('user/') || path.startsWith('lists/')) return 'profile';
 
     return null;
   }, [pathname]);
@@ -129,6 +129,8 @@ export default function TabLayout() {
       <Tabs.Screen name="show/[id]" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="chat/[id]" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="chat/new" options={{ href: null, headerShown: false }} />
+      <Tabs.Screen name="lists" options={{ href: null, headerShown: false }} />
+      <Tabs.Screen name="lists/[id]" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="user/[id]" options={{ href: null, headerShown: false }} />
     </Tabs>
     </RefreshBadgeContext.Provider>

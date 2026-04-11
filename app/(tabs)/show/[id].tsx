@@ -32,8 +32,9 @@ import WatchProgressBar from '@/src/components/WatchProgressBar';
 import CaughtUpButton from '@/src/components/CaughtUpButton';
 import EpisodePicker from '@/src/components/EpisodePicker';
 import RatingSelector, { getUserRatingColor } from '@/src/components/RatingSelector';
-import { isInTopShows, addTopShow, removeTopShow } from '@/src/lib/topshows';
+import { getLists, addListItem, removeListItem, getListsContainingItem } from '@/src/lib/lists';
 import { getFriends } from '@/src/lib/friends';
+import type { ListWithItems } from '@/src/lib/types';
 import { supabase } from '@/src/lib/supabase';
 import type { ShowFull, WatchStatus, UserShow, UserProfile } from '@/src/lib/types';
 
@@ -58,7 +59,9 @@ export default function ShowDetailScreen() {
 
   const [userShow, setUserShow] = useState<UserShow | null>(null);
   const [watchedEps, setWatchedEps] = useState<Set<string>>(new Set());
-  const [isTop4, setIsTop4] = useState(false);
+  const [userLists, setUserLists] = useState<ListWithItems[]>([]);
+  const [listsContaining, setListsContaining] = useState<Set<string>>(new Set());
+  const [listModalVisible, setListModalVisible] = useState(false);
   const [scrollEnabled, setScrollEnabled] = useState(true);
   const [friendRatingsVisible, setFriendRatingsVisible] = useState(false);
   const [friendsWatching, setFriendsWatching] = useState<{ profile: UserProfile; status: string; season: number; episode: number; rating: number | null }[]>([]);
@@ -68,7 +71,8 @@ export default function ShowDetailScreen() {
     setShow(null);
     setUserShow(null);
     setWatchedEps(new Set());
-    setIsTop4(false);
+    setUserLists([]);
+    setListsContaining(new Set());
     setFriendsWatching([]);
     setLoading(true);
     setError(null);
@@ -80,7 +84,8 @@ export default function ShowDetailScreen() {
       .finally(() => setLoading(false));
 
     if (userId) {
-      isInTopShows(userId, id).then(setIsTop4).catch(() => {});
+      getLists(userId).then(l => setUserLists(l.filter(ll => ll.type === 'shows'))).catch(() => {});
+      getListsContainingItem(userId, id).then(ids => setListsContaining(new Set(ids))).catch(() => {});
 
       // Fetch friends who watch this show
       getFriends(userId).then(async (friends) => {
@@ -116,20 +121,27 @@ export default function ShowDetailScreen() {
     getWatchedEpisodes(userId, id).then(setWatchedEps).catch(() => {});
   }, [userId, id, userShow]);
 
-  const handleToggleTop4 = useCallback(async () => {
-    if (!userId || !show) return;
+  const handleAddToList = useCallback(async (listId: string) => {
+    if (!show) return;
     try {
-      if (isTop4) {
-        await removeTopShow(userId, show.id);
-        setIsTop4(false);
-      } else {
-        await addTopShow(userId, show.id, show.title, show.image);
-        setIsTop4(true);
-      }
+      await addListItem(listId, show.id, show.title, show.image);
+      setListsContaining(prev => new Set(prev).add(listId));
     } catch (e: any) {
-      // silently fail
+      Alert.alert('Error', e.message || 'Failed to add');
     }
-  }, [userId, show, isTop4]);
+  }, [show]);
+
+  const handleRemoveFromList = useCallback(async (listId: string) => {
+    if (!show) return;
+    try {
+      await removeListItem(listId, show.id);
+      setListsContaining(prev => {
+        const next = new Set(prev);
+        next.delete(listId);
+        return next;
+      });
+    } catch {}
+  }, [show]);
 
   const handleAddWithStatus = useCallback(async (status: WatchStatus) => {
     if (!userId || !show) return;
@@ -394,11 +406,6 @@ export default function ShowDetailScreen() {
           <View style={styles.heroInfo}>
             <View style={styles.titleRow}>
               <Text style={styles.title}>{show.title}</Text>
-              <Pressable onPress={handleToggleTop4} style={styles.starButton}>
-                <Text style={[styles.starIcon, isTop4 && styles.starIconActive]}>
-                  {isTop4 ? '★' : '☆'}
-                </Text>
-              </Pressable>
             </View>
             <View style={styles.metaRow}>
               <Text style={styles.meta}>
@@ -632,6 +639,43 @@ export default function ShowDetailScreen() {
           />
         </View>
       </Modal>
+
+      {/* List Picker Modal */}
+      <Modal visible={listModalVisible} animationType="slide" presentationStyle="pageSheet" onRequestClose={() => setListModalVisible(false)}>
+        <View style={styles.modalContainer}>
+          <View style={styles.modalHeader}>
+            <Text style={styles.modalTitle}>Add to a List</Text>
+            <Pressable onPress={() => setListModalVisible(false)}>
+              <Text style={styles.modalDone}>Done</Text>
+            </Pressable>
+          </View>
+          <FlatList
+            data={userLists}
+            keyExtractor={item => item.id}
+            renderItem={({ item: list }) => {
+              const isInList = listsContaining.has(list.id);
+              const isFull = list.items.length >= 4 && !isInList;
+              return (
+                <Pressable
+                  style={({ pressed }) => [styles.listPickerRow, pressed && { opacity: 0.7 }, isFull && { opacity: 0.4 }]}
+                  onPress={() => {
+                    if (isFull) return;
+                    if (isInList) handleRemoveFromList(list.id);
+                    else handleAddToList(list.id);
+                  }}
+                  disabled={isFull}
+                >
+                  <View style={styles.listPickerInfo}>
+                    <Text style={styles.listPickerName}>{list.name}</Text>
+                    <Text style={styles.listPickerMeta}>{list.items.length}/4</Text>
+                  </View>
+                  {isInList && <Text style={styles.listPickerCheck}>✓</Text>}
+                </Pressable>
+              );
+            }}
+          />
+        </View>
+      </Modal>
     </SafeAreaView>
   );
 }
@@ -708,15 +752,50 @@ const styles = StyleSheet.create({
     color: theme.text,
     flexShrink: 1,
   },
-  starButton: {
-    padding: 2,
+  listPillButton: {
+    borderWidth: 1,
+    borderColor: theme.accent,
+    borderRadius: 6,
+    paddingHorizontal: 10,
+    paddingVertical: 4,
   },
-  starIcon: {
-    fontSize: 22,
+  listPillButtonActive: {
+    backgroundColor: 'rgba(255,107,53,0.15)',
+  },
+  listPillText: {
+    fontSize: 12,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.accent,
+  },
+  listPillTextActive: {
+    color: theme.accent,
+  },
+  listPickerRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingVertical: 14,
+    borderBottomWidth: 1,
+    borderBottomColor: theme.border,
+  },
+  listPickerInfo: {
+    flex: 1,
+    gap: 2,
+  },
+  listPickerName: {
+    fontSize: 16,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.text,
+  },
+  listPickerMeta: {
+    fontSize: 12,
+    fontFamily: 'DMSans_400Regular',
     color: theme.textDim,
   },
-  starIconActive: {
-    color: '#fbbf24',
+  listPickerCheck: {
+    fontSize: 18,
+    fontFamily: 'DMSans_700Bold',
+    color: theme.accent,
   },
   metaRow: {
     flexDirection: 'row',

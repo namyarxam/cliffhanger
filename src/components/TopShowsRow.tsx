@@ -2,31 +2,31 @@ import { memo } from 'react';
 import { View, Text, Pressable, StyleSheet, useWindowDimensions } from 'react-native';
 import { Image } from 'expo-image';
 import { theme } from '@/src/lib/theme';
-import type { TopShow } from '@/src/lib/types';
+import type { ListItem } from '@/src/lib/types';
 
 interface Props {
-  shows: TopShow[];
-  onPress?: (showId: string) => void;
+  items: ListItem[];
+  onPress?: (itemId: string) => void;
   size?: 'default' | 'large';
 }
 
-export default memo(function TopShowsRow({ shows, onPress, size = 'default' }: Props) {
+export default memo(function TopShowsRow({ items, onPress, size = 'default' }: Props) {
   const { width } = useWindowDimensions();
   const isSmall = width < 380;
-  if (shows.length === 0) return null;
+  if (items.length === 0) return null;
 
   return (
     <View style={styles.container}>
       <View style={styles.row}>
-        {shows.map(show => (
+        {items.map(item => (
           <Pressable
-            key={show.show_id}
+            key={item.item_id}
             style={({ pressed }) => [styles.posterWrap, pressed && onPress && { opacity: 0.7 }]}
-            onPress={() => onPress?.(show.show_id)}
+            onPress={() => onPress?.(item.item_id)}
           >
-            {show.show_image ? (
+            {item.item_image ? (
               <Image
-                source={{ uri: show.show_image }}
+                source={{ uri: item.item_image }}
                 style={size === 'large' ? [styles.posterLarge, isSmall && styles.posterLargeSmall] : styles.poster}
                 contentFit="cover"
                 transition={200}
@@ -47,14 +47,6 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     paddingVertical: 16,
-  },
-  label: {
-    fontSize: 13,
-    fontFamily: 'DMSans_600SemiBold',
-    color: theme.textDim,
-    marginBottom: 12,
-    textTransform: 'uppercase',
-    letterSpacing: 0.5,
   },
   row: {
     flexDirection: 'row',

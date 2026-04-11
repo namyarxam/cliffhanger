@@ -18,12 +18,11 @@ import { useAuth } from '@/src/providers/AuthProvider';
 import { theme } from '@/src/lib/theme';
 import { supabase } from '@/src/lib/supabase';
 import { getFriends, getPendingRequests } from '@/src/lib/friends';
-import { getTopShows } from '@/src/lib/topshows';
+import { getLists, ensureDefaultList } from '@/src/lib/lists';
 import { getUserShows } from '@/src/lib/watchlist';
 import { fetchCast } from '@/src/lib/data';
 import type { CastMember } from '@/src/lib/data';
-import TopShowsRow from '@/src/components/TopShowsRow';
-import type { TopShow, UserShow } from '@/src/lib/types';
+import type { UserShow } from '@/src/lib/types';
 
 export default function ProfileScreen() {
   const { profile, user, signOut, refreshProfile } = useAuth();
@@ -31,7 +30,7 @@ export default function ProfileScreen() {
 
   const [friendCount, setFriendCount] = useState(0);
   const [pendingCount, setPendingCount] = useState(0);
-  const [topShows, setTopShows] = useState<TopShow[]>([]);
+  const [listCount, setListCount] = useState(0);
 
   const [editing, setEditing] = useState(false);
   const [editName, setEditName] = useState('');
@@ -50,7 +49,7 @@ export default function ProfileScreen() {
       if (!user?.id) return;
       getFriends(user.id).then(f => setFriendCount(f.length)).catch(() => {});
       getPendingRequests(user.id).then(p => setPendingCount(p.length)).catch(() => {});
-      getTopShows(user.id).then(setTopShows).catch(() => {});
+      ensureDefaultList(user.id).then(() => getLists(user.id).then(l => setListCount(l.length))).catch(() => {});
     }, [user?.id])
   );
 
@@ -176,11 +175,14 @@ export default function ProfileScreen() {
         </View>
       </View>
 
-      {/* Top 4 Shows */}
-      <TopShowsRow
-        shows={topShows}
-        onPress={(showId) => router.push(`/show/${showId}?from=/profile`)}
-      />
+      {/* Lists button — prominent */}
+      <Pressable
+        style={({ pressed }) => [styles.listsButton, pressed && { opacity: 0.8 }]}
+        onPress={() => router.push('/(tabs)/lists')}
+      >
+        <Text style={styles.listsButtonText}>My Lists</Text>
+        <Text style={styles.listsButtonCount}>{listCount} {listCount === 1 ? 'list' : 'lists'}</Text>
+      </Pressable>
 
       {/* Friends button */}
       <Pressable
@@ -419,6 +421,25 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontFamily: 'DMSans_400Regular',
     color: theme.textFaint,
+  },
+  listsButton: {
+    width: '100%',
+    backgroundColor: theme.accent,
+    borderRadius: 10,
+    padding: 16,
+    alignItems: 'center',
+    marginBottom: 12,
+  },
+  listsButtonText: {
+    fontSize: 16,
+    fontFamily: 'DMSans_700Bold',
+    color: '#fff',
+  },
+  listsButtonCount: {
+    fontSize: 12,
+    fontFamily: 'DMSans_400Regular',
+    color: 'rgba(255,255,255,0.7)',
+    marginTop: 2,
   },
   friendsButton: {
     width: '100%',

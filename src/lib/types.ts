@@ -96,12 +96,29 @@ export interface FriendWithProfile {
   is_incoming: boolean;
 }
 
-export interface TopShow {
+export type ListType = 'shows' | 'characters';
+
+export interface List {
+  id: string;
   user_id: string;
+  name: string;
+  type: ListType;
+  is_display: boolean;
+  created_at: string;
+}
+
+export interface ListItem {
+  id: string;
+  list_id: string;
   position: number;
-  show_id: string;
-  show_title: string;
-  show_image: string | null;
+  item_id: string;
+  item_title: string;
+  item_image: string | null;
+  created_at: string;
+}
+
+export interface ListWithItems extends List {
+  items: ListItem[];
 }
 
 export interface Conversation {

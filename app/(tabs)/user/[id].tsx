@@ -11,13 +11,13 @@ import {
 import { useLocalSearchParams, useRouter, Stack } from 'expo-router';
 import { theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
+import { Image } from 'expo-image';
 import { getUserShows } from '@/src/lib/watchlist';
 import { getFriendshipStatus, sendFriendRequest, removeFriend } from '@/src/lib/friends';
-import { getTopShows } from '@/src/lib/topshows';
+import { getLists } from '@/src/lib/lists';
 import { supabase } from '@/src/lib/supabase';
-import TopShowsRow from '@/src/components/TopShowsRow';
 import WatchlistCard from '@/src/components/WatchlistCard';
-import type { UserShow, UserProfile, WatchStatus, TopShow } from '@/src/lib/types';
+import type { UserShow, UserProfile, WatchStatus, ListWithItems } from '@/src/lib/types';
 
 const SECTION_ORDER: { key: WatchStatus; title: string }[] = [
   { key: 'currently_watching', title: 'Currently Watching' },
@@ -33,7 +33,8 @@ export default function UserProfileScreen() {
 
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [shows, setShows] = useState<UserShow[]>([]);
-  const [topShows, setTopShows] = useState<TopShow[]>([]);
+  const [friendLists, setFriendLists] = useState<ListWithItems[]>([]);
+  const [activeTab, setActiveTab] = useState<'watchlist' | 'lists'>('watchlist');
   const [loading, setLoading] = useState(true);
   const [friendStatus, setFriendStatus] = useState<{
     friendship_id: string;
@@ -46,7 +47,8 @@ export default function UserProfileScreen() {
 
     setProfile(null);
     setShows([]);
-    setTopShows([]);
+    setFriendLists([]);
+    setActiveTab('watchlist');
     setLoading(true);
 
     // Fetch profile
@@ -59,8 +61,8 @@ export default function UserProfileScreen() {
         if (data) setProfile(data);
       });
 
-    // Fetch their top shows
-    getTopShows(id).then(setTopShows).catch(() => {});
+    // Fetch their lists
+    getLists(id).then(setFriendLists).catch(() => {});
 
     // Fetch their shows
     getUserShows(id)
@@ -125,7 +127,7 @@ export default function UserProfileScreen() {
         <View style={styles.center}>
           <ActivityIndicator color={theme.accent} size="large" />
         </View>
-      ) : (
+      ) : activeTab === 'watchlist' ? (
         <SectionList
           sections={sections}
           keyExtractor={item => item.show_id}
@@ -160,10 +162,22 @@ export default function UserProfileScreen() {
                 </Pressable>
               )}
 
-              <TopShowsRow
-                shows={topShows}
-                onPress={handleShowPress}
-              />
+              {friendLists.length > 0 && (
+                <View style={styles.tabToggle}>
+                  <Pressable
+                    style={[styles.tabToggleBtn, activeTab === 'watchlist' && styles.tabToggleBtnActive]}
+                    onPress={() => setActiveTab('watchlist')}
+                  >
+                    <Text style={[styles.tabToggleText, activeTab === 'watchlist' && styles.tabToggleTextActive]}>Watchlist</Text>
+                  </Pressable>
+                  <Pressable
+                    style={[styles.tabToggleBtn, (activeTab as string) === 'lists' && styles.tabToggleBtnActive]}
+                    onPress={() => setActiveTab('lists')}
+                  >
+                    <Text style={[styles.tabToggleText, (activeTab as string) === 'lists' && styles.tabToggleTextActive]}>Lists</Text>
+                  </Pressable>
+                </View>
+              )}
             </View>
           }
           ListEmptyComponent={
@@ -174,6 +188,28 @@ export default function UserProfileScreen() {
           contentContainerStyle={styles.list}
           stickySectionHeadersEnabled={false}
         />
+      ) : (
+        <View style={styles.listsContent}>
+            {friendLists.map(list => (
+              <View key={list.id} style={styles.friendListRow}>
+                <View style={styles.friendListInfo}>
+                  <Text style={styles.friendListName}>{list.name}</Text>
+                  <Text style={styles.friendListType}>{list.type === 'shows' ? 'Shows' : 'Characters'}</Text>
+                </View>
+                <View style={styles.friendListThumbnails}>
+                  {list.items.map(item => (
+                    item.item_image ? (
+                      <Image key={item.item_id} source={{ uri: item.item_image }} style={styles.friendListThumb} contentFit="cover" />
+                    ) : (
+                      <View key={item.item_id} style={[styles.friendListThumb, styles.friendListThumbPlaceholder]}>
+                        <Text style={{ fontSize: 12 }}>📺</Text>
+                      </View>
+                    )
+                  ))}
+                </View>
+              </View>
+            ))}
+          </View>
       )}
     </SafeAreaView>
   );
@@ -278,5 +314,72 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontFamily: 'DMSans_400Regular',
     color: theme.textDim,
+  },
+
+  // Toggle
+  tabToggle: {
+    flexDirection: 'row',
+    marginTop: 16,
+    backgroundColor: theme.bgCard,
+    borderRadius: 8,
+    padding: 3,
+  },
+  tabToggleBtn: {
+    flex: 1,
+    paddingVertical: 8,
+    borderRadius: 6,
+    alignItems: 'center',
+  },
+  tabToggleBtnActive: {
+    backgroundColor: theme.accent,
+  },
+  tabToggleText: {
+    fontSize: 13,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.textDim,
+  },
+  tabToggleTextActive: {
+    color: '#fff',
+  },
+
+  // Friend lists
+  listsContent: {
+    paddingTop: 8,
+  },
+  friendListRow: {
+    paddingHorizontal: 16,
+    paddingVertical: 14,
+    borderBottomWidth: 1,
+    borderBottomColor: theme.border,
+    gap: 10,
+  },
+  friendListInfo: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  friendListName: {
+    fontSize: 15,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.text,
+  },
+  friendListType: {
+    fontSize: 11,
+    fontFamily: 'DMSans_500Medium',
+    color: theme.textFaint,
+  },
+  friendListThumbnails: {
+    flexDirection: 'row',
+    gap: 8,
+  },
+  friendListThumb: {
+    width: 50,
+    height: 70,
+    borderRadius: 4,
+  },
+  friendListThumbPlaceholder: {
+    backgroundColor: theme.bgCard,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
