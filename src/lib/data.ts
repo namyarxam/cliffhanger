@@ -91,6 +91,12 @@ function groupEpisodes(episodes: TVMazeEpisode[]): Season[] {
     }));
 }
 
+export interface CastMember {
+  personName: string;
+  characterName: string;
+  image: string | null;
+}
+
 // ─── Public API ─────────────────────────────────────────────────────────────
 
 export async function searchShows(query: string): Promise<ShowSummary[]> {
@@ -99,6 +105,19 @@ export async function searchShows(query: string): Promise<ShowSummary[]> {
   if (!res.ok) throw new Error(`Search failed: ${res.status}`);
   const results: TVMazeSearchResult[] = await res.json();
   return results.map(r => toShowSummary(r.show));
+}
+
+export async function fetchCast(showId: string): Promise<CastMember[]> {
+  const res = await fetch(`${TVMAZE_BASE}/shows/${showId}/cast`);
+  if (!res.ok) return [];
+  const data: any[] = await res.json();
+  return data
+    .map(entry => ({
+      personName: entry.person?.name ?? 'Unknown',
+      characterName: entry.character?.name ?? 'Unknown',
+      image: entry.character?.image?.medium ?? entry.person?.image?.medium ?? null,
+    }))
+    .filter(c => c.image != null);
 }
 
 export async function fetchShow(id: string): Promise<ShowFull> {

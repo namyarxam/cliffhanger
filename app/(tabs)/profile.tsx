@@ -1,15 +1,29 @@
 import { useState, useCallback } from 'react';
-import { View, Text, TextInput, Pressable, ScrollView, StyleSheet } from 'react-native';
+import {
+  View,
+  Text,
+  TextInput,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Modal,
+  FlatList,
+  ActivityIndicator,
+} from 'react-native';
 import { useRouter } from 'expo-router';
 import { useFocusEffect } from 'expo-router';
+import { Image } from 'expo-image';
 import { useAuth } from '@/src/providers/AuthProvider';
 
 import { theme } from '@/src/lib/theme';
 import { supabase } from '@/src/lib/supabase';
 import { getFriends, getPendingRequests } from '@/src/lib/friends';
 import { getTopShows } from '@/src/lib/topshows';
+import { getUserShows } from '@/src/lib/watchlist';
+import { fetchCast } from '@/src/lib/data';
+import type { CastMember } from '@/src/lib/data';
 import TopShowsRow from '@/src/components/TopShowsRow';
-import type { TopShow } from '@/src/lib/types';
+import type { TopShow, UserShow } from '@/src/lib/types';
 
 export default function ProfileScreen() {
   const { profile, user, signOut, refreshProfile } = useAuth();
@@ -21,6 +35,15 @@ export default function ProfileScreen() {
 
   const [editing, setEditing] = useState(false);
   const [editName, setEditName] = useState('');
+
+  // Avatar picker state
+  const [avatarModalVisible, setAvatarModalVisible] = useState(false);
+  const [avatarStep, setAvatarStep] = useState<'shows' | 'cast'>('shows');
+  const [myShows, setMyShows] = useState<UserShow[]>([]);
+  const [castList, setCastList] = useState<CastMember[]>([]);
+  const [selectedShowTitle, setSelectedShowTitle] = useState('');
+  const [loadingCast, setLoadingCast] = useState(false);
+  const [loadingShows, setLoadingShows] = useState(false);
 
   useFocusEffect(
     useCallback(() => {
@@ -52,15 +75,75 @@ export default function ProfileScreen() {
     }
   };
 
+  const handleOpenAvatarPicker = async () => {
+    if (!user?.id) return;
+    setAvatarModalVisible(true);
+    setAvatarStep('shows');
+    setLoadingShows(true);
+    try {
+      const shows = await getUserShows(user.id);
+      setMyShows(shows);
+    } catch {} finally {
+      setLoadingShows(false);
+    }
+  };
+
+  const handlePickShow = async (show: UserShow) => {
+    setAvatarStep('cast');
+    setSelectedShowTitle(show.show_title);
+    setLoadingCast(true);
+    try {
+      const cast = await fetchCast(show.show_id);
+      setCastList(cast);
+    } catch {
+      setCastList([]);
+    } finally {
+      setLoadingCast(false);
+    }
+  };
+
+  const handlePickCharacter = async (imageUrl: string) => {
+    if (!user?.id) return;
+    try {
+      await supabase
+        .from('profiles')
+        .update({ avatar_url: imageUrl })
+        .eq('id', user.id);
+      await refreshProfile();
+      setAvatarModalVisible(false);
+    } catch {}
+  };
+
+  const handleRemoveAvatar = async () => {
+    if (!user?.id) return;
+    try {
+      await supabase
+        .from('profiles')
+        .update({ avatar_url: null })
+        .eq('id', user.id);
+      await refreshProfile();
+      setAvatarModalVisible(false);
+    } catch {}
+  };
+
   return (
     <ScrollView style={styles.scroll} contentContainerStyle={styles.container}>
       {/* Profile header */}
       <View style={styles.header}>
-        <View style={styles.avatar}>
-          <Text style={styles.avatarText}>
-            {(profile?.display_name || profile?.username || '?')[0].toUpperCase()}
-          </Text>
-        </View>
+        <Pressable onPress={handleOpenAvatarPicker}>
+          {profile?.avatar_url ? (
+            <Image source={{ uri: profile.avatar_url }} style={styles.avatarImage} contentFit="cover" />
+          ) : (
+            <View style={styles.avatar}>
+              <Text style={styles.avatarText}>
+                {(profile?.display_name || profile?.username || '?')[0].toUpperCase()}
+              </Text>
+            </View>
+          )}
+          <View style={styles.avatarEditBadge}>
+            <Text style={styles.avatarEditIcon}>✎</Text>
+          </View>
+        </Pressable>
         <View style={styles.headerInfo}>
           {editing ? (
             <View style={styles.editRow}>
@@ -128,6 +211,96 @@ export default function ProfileScreen() {
       <Pressable style={styles.signOutButton} onPress={signOut}>
         <Text style={styles.signOutText}>Sign Out</Text>
       </Pressable>
+
+      {/* Avatar Picker Modal */}
+      <Modal
+        visible={avatarModalVisible}
+        animationType="slide"
+        presentationStyle="pageSheet"
+        onRequestClose={() => setAvatarModalVisible(false)}
+      >
+        <View style={styles.modalContainer}>
+          <View style={styles.modalHeader}>
+            {avatarStep === 'cast' ? (
+              <Pressable onPress={() => setAvatarStep('shows')}>
+                <Text style={styles.modalBack}>← Shows</Text>
+              </Pressable>
+            ) : (
+              <Text style={styles.modalTitle}>Pick a Character</Text>
+            )}
+            {avatarStep === 'cast' && (
+              <Text style={styles.modalTitle} numberOfLines={1}>{selectedShowTitle}</Text>
+            )}
+            <Pressable onPress={() => setAvatarModalVisible(false)}>
+              <Text style={styles.modalDone}>Cancel</Text>
+            </Pressable>
+          </View>
+
+          {avatarStep === 'shows' && (
+            <>
+              {profile?.avatar_url && (
+                <Pressable style={styles.removeAvatarRow} onPress={handleRemoveAvatar}>
+                  <Text style={styles.removeAvatarText}>Remove current photo</Text>
+                </Pressable>
+              )}
+              {loadingShows ? (
+                <View style={styles.modalCenter}><ActivityIndicator color={theme.accent} size="large" /></View>
+              ) : (
+                <FlatList
+                  data={myShows}
+                  keyExtractor={item => item.show_id}
+                  renderItem={({ item }) => (
+                    <Pressable
+                      style={({ pressed }) => [styles.showRow, pressed && { opacity: 0.7 }]}
+                      onPress={() => handlePickShow(item)}
+                    >
+                      <View style={styles.showPosterWrap}>
+                        {item.show_image ? (
+                          <Image source={{ uri: item.show_image }} style={styles.showPoster} contentFit="cover" />
+                        ) : (
+                          <View style={[styles.showPoster, styles.showPosterPlaceholder]}>
+                            <Text style={{ fontSize: 14 }}>📺</Text>
+                          </View>
+                        )}
+                      </View>
+                      <Text style={styles.showTitle} numberOfLines={1}>{item.show_title}</Text>
+                      <Text style={styles.showChevron}>▸</Text>
+                    </Pressable>
+                  )}
+                />
+              )}
+            </>
+          )}
+
+          {avatarStep === 'cast' && (
+            loadingCast ? (
+              <View style={styles.modalCenter}><ActivityIndicator color={theme.accent} size="large" /></View>
+            ) : castList.length === 0 ? (
+              <View style={styles.modalCenter}>
+                <Text style={styles.modalEmptyText}>No character photos available</Text>
+              </View>
+            ) : (
+              <FlatList
+                data={castList}
+                keyExtractor={(item, i) => `${item.characterName}-${i}`}
+                numColumns={3}
+                columnWrapperStyle={styles.castGrid}
+                renderItem={({ item }) => (
+                  <Pressable
+                    style={({ pressed }) => [styles.castItem, pressed && { opacity: 0.7 }]}
+                    onPress={() => handlePickCharacter(item.image!)}
+                  >
+                    <Image source={{ uri: item.image! }} style={styles.castImage} contentFit="cover" />
+                    <Text style={styles.castCharacter} numberOfLines={1}>{item.characterName}</Text>
+                    <Text style={styles.castActor} numberOfLines={1}>{item.personName}</Text>
+                  </Pressable>
+                )}
+                contentContainerStyle={styles.castList}
+              />
+            )
+          )}
+        </View>
+      </Modal>
     </ScrollView>
   );
 }
@@ -160,10 +333,32 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  avatarImage: {
+    width: 70,
+    height: 70,
+    borderRadius: 35,
+    borderWidth: 2,
+    borderColor: theme.accent,
+  },
   avatarText: {
     fontSize: 28,
     fontFamily: 'DMSans_700Bold',
     color: theme.accent,
+  },
+  avatarEditBadge: {
+    position: 'absolute',
+    bottom: -2,
+    right: -2,
+    width: 22,
+    height: 22,
+    borderRadius: 11,
+    backgroundColor: theme.accent,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  avatarEditIcon: {
+    fontSize: 11,
+    color: '#fff',
   },
   headerInfo: {
     gap: 2,
@@ -174,7 +369,7 @@ const styles = StyleSheet.create({
     color: theme.text,
   },
   editHint: {
-    fontSize: 16,
+    fontSize: 14,
     color: theme.textFaint,
   },
   editRow: {
@@ -184,17 +379,16 @@ const styles = StyleSheet.create({
     marginBottom: 4,
   },
   editInput: {
-    fontSize: 20,
+    fontSize: 18,
     fontFamily: 'DMSans_700Bold',
     color: theme.text,
     backgroundColor: theme.bgCard,
     borderWidth: 1,
     borderColor: theme.accent,
     borderRadius: 8,
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    minWidth: 150,
-    textAlign: 'center',
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    minWidth: 120,
   },
   saveButton: {
     backgroundColor: theme.accent,
@@ -302,10 +496,131 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     borderWidth: 1,
     borderColor: 'rgba(248,113,113,0.3)',
+    alignSelf: 'center',
   },
   signOutText: {
     color: '#f87171',
     fontSize: 15,
     fontFamily: 'DMSans_600SemiBold',
+  },
+
+  // Avatar Picker Modal
+  modalContainer: {
+    flex: 1,
+    backgroundColor: theme.bg,
+  },
+  modalHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 16,
+    paddingVertical: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: theme.border,
+  },
+  modalTitle: {
+    fontSize: 18,
+    fontFamily: 'DMSans_700Bold',
+    color: theme.text,
+    flex: 1,
+  },
+  modalBack: {
+    fontSize: 15,
+    fontFamily: 'DMSans_500Medium',
+    color: theme.accent,
+    marginRight: 12,
+  },
+  modalDone: {
+    fontSize: 15,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.accent,
+  },
+  modalCenter: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  modalEmptyText: {
+    fontSize: 14,
+    fontFamily: 'DMSans_400Regular',
+    color: theme.textDim,
+  },
+  removeAvatarRow: {
+    paddingVertical: 14,
+    alignItems: 'center',
+    borderBottomWidth: 1,
+    borderBottomColor: theme.border,
+  },
+  removeAvatarText: {
+    fontSize: 14,
+    fontFamily: 'DMSans_500Medium',
+    color: '#f87171',
+  },
+
+  // Show list
+  showRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingVertical: 10,
+    gap: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: theme.border,
+  },
+  showPosterWrap: {
+    width: 36,
+    height: 50,
+    borderRadius: 4,
+    overflow: 'hidden',
+  },
+  showPoster: {
+    width: '100%',
+    height: '100%',
+  },
+  showPosterPlaceholder: {
+    backgroundColor: theme.bgCard,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  showTitle: {
+    flex: 1,
+    fontSize: 15,
+    fontFamily: 'DMSans_500Medium',
+    color: theme.text,
+  },
+  showChevron: {
+    fontSize: 14,
+    color: theme.textDim,
+  },
+
+  // Cast grid
+  castList: {
+    padding: 12,
+  },
+  castGrid: {
+    gap: 8,
+    marginBottom: 8,
+  },
+  castItem: {
+    flex: 1,
+    alignItems: 'center',
+    gap: 4,
+  },
+  castImage: {
+    width: '100%',
+    aspectRatio: 0.7,
+    borderRadius: 8,
+  },
+  castCharacter: {
+    fontSize: 11,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.text,
+    textAlign: 'center',
+  },
+  castActor: {
+    fontSize: 10,
+    fontFamily: 'DMSans_400Regular',
+    color: theme.textFaint,
+    textAlign: 'center',
   },
 });
