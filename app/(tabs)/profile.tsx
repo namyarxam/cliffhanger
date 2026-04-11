@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react';
-import { View, Text, TextInput, Pressable, StyleSheet } from 'react-native';
+import { View, Text, TextInput, Pressable, ScrollView, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useFocusEffect } from 'expo-router';
 import { useAuth } from '@/src/providers/AuthProvider';
@@ -53,46 +53,45 @@ export default function ProfileScreen() {
   };
 
   return (
-    <View style={styles.container}>
-      {/* Avatar */}
-      <View style={styles.avatar}>
-        <Text style={styles.avatarText}>
-          {(profile?.display_name || profile?.username || '?')[0].toUpperCase()}
-        </Text>
-      </View>
-
-      {/* Display name — tappable to edit */}
-      {editing ? (
-        <View style={styles.editRow}>
-          <TextInput
-            style={styles.editInput}
-            value={editName}
-            onChangeText={setEditName}
-            autoFocus
-            maxLength={40}
-            onSubmitEditing={handleSaveEdit}
-            returnKeyType="done"
-          />
-          <Pressable style={styles.saveButton} onPress={handleSaveEdit}>
-            <Text style={styles.saveText}>Save</Text>
-          </Pressable>
-          <Pressable style={styles.cancelButton} onPress={() => setEditing(false)}>
-            <Text style={styles.cancelText}>Cancel</Text>
-          </Pressable>
-        </View>
-      ) : (
-        <Pressable onPress={handleStartEdit}>
-          <Text style={styles.displayName}>
-            {profile?.display_name || 'Anonymous'}
-            <Text style={styles.editHint}> ✎</Text>
+    <ScrollView style={styles.scroll} contentContainerStyle={styles.container}>
+      {/* Profile header */}
+      <View style={styles.header}>
+        <View style={styles.avatar}>
+          <Text style={styles.avatarText}>
+            {(profile?.display_name || profile?.username || '?')[0].toUpperCase()}
           </Text>
-        </Pressable>
-      )}
-
-      <Text style={styles.username}>
-        @{profile?.username || 'unknown'}
-      </Text>
-      <Text style={styles.email}>{user?.email}</Text>
+        </View>
+        <View style={styles.headerInfo}>
+          {editing ? (
+            <View style={styles.editRow}>
+              <TextInput
+                style={styles.editInput}
+                value={editName}
+                onChangeText={setEditName}
+                autoFocus
+                maxLength={40}
+                onSubmitEditing={handleSaveEdit}
+                returnKeyType="done"
+              />
+              <Pressable style={styles.saveButton} onPress={handleSaveEdit}>
+                <Text style={styles.saveText}>Save</Text>
+              </Pressable>
+              <Pressable style={styles.cancelButton} onPress={() => setEditing(false)}>
+                <Text style={styles.cancelText}>Cancel</Text>
+              </Pressable>
+            </View>
+          ) : (
+            <Pressable onPress={handleStartEdit}>
+              <Text style={styles.displayName}>
+                {profile?.display_name || 'Anonymous'}
+                <Text style={styles.editHint}> ✎</Text>
+              </Text>
+            </Pressable>
+          )}
+          <Text style={styles.username}>@{profile?.username || 'unknown'}</Text>
+          <Text style={styles.email}>{user?.email}</Text>
+        </View>
+      </View>
 
       {/* Top 4 Shows */}
       <TopShowsRow
@@ -129,39 +128,50 @@ export default function ProfileScreen() {
       <Pressable style={styles.signOutButton} onPress={signOut}>
         <Text style={styles.signOutText}>Sign Out</Text>
       </Pressable>
-    </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  scroll: {
     flex: 1,
     backgroundColor: theme.bg,
+  },
+  container: {
+    flexGrow: 1,
+    paddingTop: 20,
+    paddingHorizontal: 20,
+    paddingBottom: 40,
+  },
+  header: {
+    flexDirection: 'row',
     alignItems: 'center',
-    paddingTop: 40,
-    paddingHorizontal: 32,
+    justifyContent: 'center',
+    gap: 16,
+    marginBottom: 24,
   },
   avatar: {
-    width: 80,
-    height: 80,
-    borderRadius: 40,
+    width: 70,
+    height: 70,
+    borderRadius: 35,
     backgroundColor: theme.bgCard,
     borderWidth: 2,
     borderColor: theme.accent,
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 16,
   },
   avatarText: {
-    fontSize: 32,
+    fontSize: 28,
     fontFamily: 'DMSans_700Bold',
     color: theme.accent,
   },
+  headerInfo: {
+    gap: 2,
+  },
   displayName: {
-    fontSize: 22,
+    fontSize: 20,
     fontFamily: 'DMSans_700Bold',
     color: theme.text,
-    marginBottom: 4,
   },
   editHint: {
     fontSize: 16,
@@ -210,13 +220,11 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontFamily: 'DMSans_500Medium',
     color: theme.textDim,
-    marginBottom: 4,
   },
   email: {
-    fontSize: 13,
+    fontSize: 12,
     fontFamily: 'DMSans_400Regular',
     color: theme.textFaint,
-    marginBottom: 32,
   },
   friendsButton: {
     width: '100%',
@@ -288,8 +296,7 @@ const styles = StyleSheet.create({
     color: theme.textDim,
   },
   signOutButton: {
-    marginTop: 'auto',
-    marginBottom: 40,
+    marginTop: 32,
     paddingVertical: 14,
     paddingHorizontal: 32,
     borderRadius: 10,

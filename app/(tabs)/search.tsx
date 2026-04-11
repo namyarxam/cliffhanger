@@ -4,6 +4,7 @@ import {
   Text,
   TextInput,
   FlatList,
+  ScrollView,
   Pressable,
   StyleSheet,
   ActivityIndicator,
@@ -88,7 +89,7 @@ export default function SearchScreen() {
       </View>
 
       {showPopular && (
-        <View style={styles.popularSection}>
+        <ScrollView style={styles.popularSection} contentContainerStyle={styles.popularContent}>
           <Text style={styles.popularTitle}>Popular with Friends</Text>
           {popular.map(show => (
             <Pressable
@@ -117,7 +118,7 @@ export default function SearchScreen() {
               </View>
             </Pressable>
           ))}
-        </View>
+        </ScrollView>
       )}
 
       {!query.trim() && !loading && !showPopular && !loadingPopular && (
@@ -204,7 +205,11 @@ const styles = StyleSheet.create({
 
   // Popular with Friends
   popularSection: {
+    flex: 1,
+  },
+  popularContent: {
     paddingTop: 20,
+    paddingBottom: 20,
   },
   popularTitle: {
     fontSize: 15,

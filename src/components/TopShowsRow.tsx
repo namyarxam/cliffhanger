@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { View, Text, Pressable, StyleSheet } from 'react-native';
+import { View, Text, Pressable, StyleSheet, useWindowDimensions } from 'react-native';
 import { Image } from 'expo-image';
 import { theme } from '@/src/lib/theme';
 import type { TopShow } from '@/src/lib/types';
@@ -11,6 +11,8 @@ interface Props {
 }
 
 export default memo(function TopShowsRow({ shows, onPress, size = 'default' }: Props) {
+  const { width } = useWindowDimensions();
+  const isSmall = width < 380;
   if (shows.length === 0) return null;
 
   return (
@@ -25,12 +27,12 @@ export default memo(function TopShowsRow({ shows, onPress, size = 'default' }: P
             {show.show_image ? (
               <Image
                 source={{ uri: show.show_image }}
-                style={size === 'large' ? styles.posterLarge : styles.poster}
+                style={size === 'large' ? [styles.posterLarge, isSmall && styles.posterLargeSmall] : styles.poster}
                 contentFit="cover"
                 transition={200}
               />
             ) : (
-              <View style={[size === 'large' ? styles.posterLarge : styles.poster, styles.posterPlaceholder]}>
+              <View style={[size === 'large' ? [styles.posterLarge, isSmall && styles.posterLargeSmall] : styles.poster, styles.posterPlaceholder]}>
                 <Text style={styles.placeholderText}>📺</Text>
               </View>
             )}
@@ -72,6 +74,10 @@ const styles = StyleSheet.create({
     width: 88,
     height: 125,
     borderRadius: 6,
+  },
+  posterLargeSmall: {
+    width: 78,
+    height: 111,
   },
   posterPlaceholder: {
     backgroundColor: theme.bgCard,

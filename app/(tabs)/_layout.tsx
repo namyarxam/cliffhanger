@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback, useRef, createContext, useContext } from 'react';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { View, Text, Pressable, StyleSheet } from 'react-native';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Tabs, usePathname } from 'expo-router';
@@ -15,6 +16,7 @@ function TabIcon(props: { name: React.ComponentProps<typeof FontAwesome>['name']
 }
 
 export default function TabLayout() {
+  const insets = useSafeAreaInsets();
   const { session } = useAuth();
   const [pendingCount, setPendingCount] = useState(0);
   const [chatInviteCount, setChatInviteCount] = useState(0);
@@ -75,7 +77,7 @@ export default function TabLayout() {
         ];
 
         return (
-          <View style={styles.tabBar}>
+          <View style={[styles.tabBar, { paddingBottom: Math.max(insets.bottom, 8) }]}>
             {tabs.map(tab => {
               const isActive = activeTab === tab.name;
               const color = isActive ? theme.accent : theme.textDim;
@@ -139,7 +141,7 @@ const styles = StyleSheet.create({
     backgroundColor: theme.bg,
     borderTopWidth: 1,
     borderTopColor: theme.border,
-    paddingBottom: 28,
+    // paddingBottom set dynamically via insets
     paddingTop: 8,
   },
   tabItem: {
