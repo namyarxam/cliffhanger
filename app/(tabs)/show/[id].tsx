@@ -9,6 +9,8 @@ import {
   SafeAreaView,
   Alert,
   LayoutAnimation,
+  Modal,
+  FlatList,
 } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
@@ -58,6 +60,7 @@ export default function ShowDetailScreen() {
   const [watchedEps, setWatchedEps] = useState<Set<string>>(new Set());
   const [isTop4, setIsTop4] = useState(false);
   const [scrollEnabled, setScrollEnabled] = useState(true);
+  const [friendRatingsVisible, setFriendRatingsVisible] = useState(false);
   const [friendsWatching, setFriendsWatching] = useState<{ profile: UserProfile; status: string; season: number; episode: number; rating: number | null }[]>([]);
 
   // Reset everything when navigating to a different show
@@ -413,14 +416,38 @@ export default function ShowDetailScreen() {
             <Text style={styles.meta}>
               {show.totalSeasons} season{show.totalSeasons !== 1 ? 's' : ''} · {show.totalEpisodes} episode{show.totalEpisodes !== 1 ? 's' : ''}
             </Text>
-            {show.rating != null && (
-              <View style={styles.tvmazeRating}>
-                <Text style={[styles.tvmazeRatingText, { color: getUserRatingColor(show.rating) }]}>
-                  {show.rating.toFixed(1)}
-                </Text>
-                <Text style={styles.tvmazeRatingLabel}>TVMaze</Text>
-              </View>
-            )}
+            {(() => {
+              const friendRatings = friendsWatching.filter(f => f.rating != null);
+              const friendAvg = friendRatings.length > 0
+                ? friendRatings.reduce((sum, f) => sum + f.rating!, 0) / friendRatings.length
+                : null;
+              return (
+                <View style={styles.ratingsRow}>
+                  {show.rating != null && (
+                    <View style={styles.ratingBadge}>
+                      <Text style={[styles.ratingBadgeNumber, { color: getUserRatingColor(show.rating) }]}>
+                        {show.rating.toFixed(1)}
+                      </Text>
+                      <Text style={styles.ratingBadgeLabel}>TVMaze</Text>
+                    </View>
+                  )}
+                  {friendAvg != null && (
+                    <Pressable
+                      style={({ pressed }) => [styles.ratingBadge, styles.ratingBadgeTappable, pressed && { opacity: 0.7 }]}
+                      onPress={() => setFriendRatingsVisible(true)}
+                    >
+                      <Text style={[styles.ratingBadgeNumber, { color: getUserRatingColor(friendAvg) }]}>
+                        {friendAvg.toFixed(1)}
+                      </Text>
+                      <View style={styles.ratingBadgeLabelRow}>
+                        <Text style={styles.ratingBadgeLabel}>Friends</Text>
+                        <Text style={styles.ratingBadgeChevron}>▸</Text>
+                      </View>
+                    </Pressable>
+                  )}
+                </View>
+              );
+            })()}
           </View>
         </View>
 
@@ -564,6 +591,47 @@ export default function ShowDetailScreen() {
           </>
         )}
       </ScrollView>
+
+      {/* Friend Ratings Breakdown Modal */}
+      <Modal
+        visible={friendRatingsVisible}
+        animationType="slide"
+        presentationStyle="pageSheet"
+        onRequestClose={() => setFriendRatingsVisible(false)}
+      >
+        <View style={styles.modalContainer}>
+          <View style={styles.modalHeader}>
+            <Text style={styles.modalTitle}>Friend Ratings</Text>
+            <Pressable onPress={() => setFriendRatingsVisible(false)}>
+              <Text style={styles.modalDone}>Done</Text>
+            </Pressable>
+          </View>
+          <FlatList
+            data={friendsWatching.filter(f => f.rating != null).sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0))}
+            keyExtractor={item => item.profile.id}
+            renderItem={({ item }) => (
+              <View style={styles.friendRatingRow}>
+                <View style={styles.friendRatingAvatar}>
+                  <Text style={styles.friendRatingAvatarText}>
+                    {(item.profile.display_name[0] || '?').toUpperCase()}
+                  </Text>
+                </View>
+                <Text style={styles.friendRatingName} numberOfLines={1}>{item.profile.display_name}</Text>
+                <View style={[styles.friendRatingBadge, { backgroundColor: `${getUserRatingColor(item.rating!)}20` }]}>
+                  <Text style={[styles.friendRatingValue, { color: getUserRatingColor(item.rating!) }]}>
+                    {item.rating!.toFixed(1)}
+                  </Text>
+                </View>
+              </View>
+            )}
+            ListEmptyComponent={
+              <View style={styles.modalEmpty}>
+                <Text style={styles.modalEmptyText}>No friends have rated this show yet</Text>
+              </View>
+            }
+          />
+        </View>
+      </Modal>
     </SafeAreaView>
   );
 }
@@ -660,20 +728,39 @@ const styles = StyleSheet.create({
     fontFamily: 'DMSans_400Regular',
     color: theme.textDim,
   },
-  tvmazeRating: {
+  ratingsRow: {
     flexDirection: 'row',
-    alignItems: 'center',
-    alignSelf: 'flex-start',
-    gap: 6,
+    gap: 12,
     marginTop: 6,
   },
-  tvmazeRatingText: {
+  ratingBadge: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+  },
+  ratingBadgeTappable: {
+    backgroundColor: 'rgba(255,255,255,0.04)',
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 6,
+    marginLeft: -8,
+  },
+  ratingBadgeNumber: {
     fontSize: 16,
     fontFamily: 'DMSans_700Bold',
   },
-  tvmazeRatingLabel: {
+  ratingBadgeLabel: {
     fontSize: 10,
     fontFamily: 'DMSans_500Medium',
+    color: theme.textFaint,
+  },
+  ratingBadgeLabelRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 2,
+  },
+  ratingBadgeChevron: {
+    fontSize: 8,
     color: theme.textFaint,
   },
   liveBadge: {
@@ -810,5 +897,81 @@ const styles = StyleSheet.create({
   },
   statusPillTextActive: {
     color: '#fff',
+  },
+
+  // Friend Ratings Modal
+  modalContainer: {
+    flex: 1,
+    backgroundColor: theme.bg,
+  },
+  modalHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 16,
+    paddingVertical: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: theme.border,
+  },
+  modalTitle: {
+    fontSize: 18,
+    fontFamily: 'DMSans_700Bold',
+    color: theme.text,
+  },
+  modalDone: {
+    fontSize: 15,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.accent,
+  },
+  modalEmpty: {
+    padding: 32,
+    alignItems: 'center',
+  },
+  modalEmptyText: {
+    fontSize: 14,
+    fontFamily: 'DMSans_400Regular',
+    color: theme.textDim,
+  },
+  friendRatingRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    gap: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: theme.border,
+  },
+  friendRatingAvatar: {
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    backgroundColor: theme.bgCard,
+    borderWidth: 1,
+    borderColor: theme.border,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  friendRatingAvatarText: {
+    fontSize: 14,
+    fontFamily: 'DMSans_700Bold',
+    color: theme.textDim,
+  },
+  friendRatingName: {
+    flex: 1,
+    fontSize: 15,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.text,
+  },
+  friendRatingBadge: {
+    minWidth: 42,
+    height: 28,
+    borderRadius: 14,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 8,
+  },
+  friendRatingValue: {
+    fontSize: 14,
+    fontFamily: 'DMSans_700Bold',
   },
 });
