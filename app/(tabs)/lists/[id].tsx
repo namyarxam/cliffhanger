@@ -508,7 +508,7 @@ const styles = StyleSheet.create({
   pickerAdded: { fontSize: 12, fontFamily: 'DMSans_500Medium', color: theme.textFaint },
 
   castContent: { paddingHorizontal: 16, paddingTop: 12 },
-  castGrid: { justifyContent: 'space-between', marginBottom: 12 },
+  castGrid: { gap: 12, marginBottom: 12 },
   castItem: { width: '31%', alignItems: 'center', gap: 4 },
   castImage: { width: '100%', aspectRatio: 0.7, borderRadius: 8 },
   castCharacter: { fontSize: 11, fontFamily: 'DMSans_600SemiBold', color: theme.text, textAlign: 'center' },

@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useRef } from 'react';
 import {
   View,
   Text,
@@ -20,9 +20,9 @@ import { supabase } from '@/src/lib/supabase';
 import { getFriends, getPendingRequests } from '@/src/lib/friends';
 import { getLists, ensureDefaultList } from '@/src/lib/lists';
 import { getUserShows } from '@/src/lib/watchlist';
-import { fetchCast } from '@/src/lib/data';
+import { fetchCast, searchShows } from '@/src/lib/data';
 import type { CastMember } from '@/src/lib/data';
-import type { UserShow } from '@/src/lib/types';
+import type { UserShow, ShowSummary } from '@/src/lib/types';
 
 export default function ProfileScreen() {
   const { profile, user, signOut, refreshProfile } = useAuth();
@@ -43,6 +43,10 @@ export default function ProfileScreen() {
   const [selectedShowTitle, setSelectedShowTitle] = useState('');
   const [loadingCast, setLoadingCast] = useState(false);
   const [loadingShows, setLoadingShows] = useState(false);
+  const [avatarSearch, setAvatarSearch] = useState('');
+  const [avatarSearchResults, setAvatarSearchResults] = useState<ShowSummary[]>([]);
+  const [avatarSearching, setAvatarSearching] = useState(false);
+  const avatarSearchDebounce = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useFocusEffect(
     useCallback(() => {
@@ -78,12 +82,46 @@ export default function ProfileScreen() {
     if (!user?.id) return;
     setAvatarModalVisible(true);
     setAvatarStep('shows');
+    setAvatarSearch('');
+    setAvatarSearchResults([]);
     setLoadingShows(true);
     try {
       const shows = await getUserShows(user.id);
       setMyShows(shows);
     } catch {} finally {
       setLoadingShows(false);
+    }
+  };
+
+  const handleAvatarSearch = useCallback((text: string) => {
+    setAvatarSearch(text);
+    if (avatarSearchDebounce.current) clearTimeout(avatarSearchDebounce.current);
+    if (text.trim().length < 3) {
+      setAvatarSearchResults([]);
+      setAvatarSearching(false);
+      return;
+    }
+    setAvatarSearching(true);
+    avatarSearchDebounce.current = setTimeout(async () => {
+      try {
+        const results = await searchShows(text);
+        setAvatarSearchResults(results);
+      } catch { setAvatarSearchResults([]); }
+      finally { setAvatarSearching(false); }
+    }, 500);
+  }, []);
+
+  const handlePickSearchShow = async (show: ShowSummary) => {
+    setAvatarStep('cast');
+    setSelectedShowTitle(show.title);
+    setLoadingCast(true);
+    try {
+      const cast = await fetchCast(show.id);
+      setCastList(cast);
+    } catch {
+      setCastList([]);
+    } finally {
+      setLoadingCast(false);
     }
   };
 
@@ -245,30 +283,56 @@ export default function ProfileScreen() {
                   <Text style={styles.removeAvatarText}>Remove current photo</Text>
                 </Pressable>
               )}
+              <TextInput
+                style={styles.avatarSearchInput}
+                placeholder="Search any show..."
+                placeholderTextColor={theme.textFaint}
+                value={avatarSearch}
+                onChangeText={handleAvatarSearch}
+                autoCorrect={false}
+                returnKeyType="search"
+              />
               {loadingShows ? (
                 <View style={styles.modalCenter}><ActivityIndicator color={theme.accent} size="large" /></View>
               ) : (
                 <FlatList
-                  data={myShows}
-                  keyExtractor={item => item.show_id}
-                  renderItem={({ item }) => (
-                    <Pressable
-                      style={({ pressed }) => [styles.showRow, pressed && { opacity: 0.7 }]}
-                      onPress={() => handlePickShow(item)}
-                    >
-                      <View style={styles.showPosterWrap}>
-                        {item.show_image ? (
-                          <Image source={{ uri: item.show_image }} style={styles.showPoster} contentFit="cover" />
-                        ) : (
-                          <View style={[styles.showPoster, styles.showPosterPlaceholder]}>
-                            <Text style={{ fontSize: 14 }}>📺</Text>
-                          </View>
-                        )}
-                      </View>
-                      <Text style={styles.showTitle} numberOfLines={1}>{item.show_title}</Text>
-                      <Text style={styles.showChevron}>▸</Text>
-                    </Pressable>
-                  )}
+                  data={(avatarSearch.trim().length >= 3 ? avatarSearchResults : myShows) as any[]}
+                  keyExtractor={(item: any) => item.show_id ?? item.id}
+                  keyboardShouldPersistTaps="handled"
+                  ListHeaderComponent={
+                    avatarSearch.trim().length >= 3 ? (
+                      avatarSearching ? (
+                        <View style={{ padding: 12, alignItems: 'center' }}><ActivityIndicator color={theme.accent} size="small" /></View>
+                      ) : avatarSearchResults.length === 0 ? (
+                        <Text style={styles.avatarNoResults}>No results</Text>
+                      ) : null
+                    ) : myShows.length > 0 ? (
+                      <Text style={styles.avatarSectionLabel}>From your watchlist</Text>
+                    ) : null
+                  }
+                  renderItem={({ item }: { item: any }) => {
+                    const isSearch = 'title' in item && !('show_id' in item);
+                    const title = isSearch ? item.title : item.show_title;
+                    const image = isSearch ? item.image : item.show_image;
+                    return (
+                      <Pressable
+                        style={({ pressed }) => [styles.showRow, pressed && { opacity: 0.7 }]}
+                        onPress={() => isSearch ? handlePickSearchShow(item) : handlePickShow(item)}
+                      >
+                        <View style={styles.showPosterWrap}>
+                          {image ? (
+                            <Image source={{ uri: image }} style={styles.showPoster} contentFit="cover" />
+                          ) : (
+                            <View style={[styles.showPoster, styles.showPosterPlaceholder]}>
+                              <Text style={{ fontSize: 14 }}>📺</Text>
+                            </View>
+                          )}
+                        </View>
+                        <Text style={styles.showTitle} numberOfLines={1}>{title}</Text>
+                        <Text style={styles.showChevron}>▸</Text>
+                      </Pressable>
+                    );
+                  }}
                 />
               )}
             </>
@@ -565,6 +629,33 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontFamily: 'DMSans_400Regular',
     color: theme.textDim,
+  },
+  avatarSearchInput: {
+    backgroundColor: theme.bgCard,
+    borderRadius: 10,
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    fontSize: 14,
+    fontFamily: 'DMSans_400Regular',
+    color: theme.text,
+    borderWidth: 1,
+    borderColor: theme.border,
+    marginHorizontal: 16,
+    marginVertical: 12,
+  },
+  avatarSectionLabel: {
+    fontSize: 12,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.textDim,
+    paddingHorizontal: 16,
+    paddingBottom: 8,
+  },
+  avatarNoResults: {
+    fontSize: 13,
+    fontFamily: 'DMSans_400Regular',
+    color: theme.textFaint,
+    textAlign: 'center',
+    paddingVertical: 12,
   },
   removeAvatarRow: {
     paddingVertical: 14,
