@@ -57,6 +57,9 @@ export default function GifPicker({ onSelect }: Props) {
 
   useEffect(() => {
     fetchGifs('');
+    return () => {
+      if (debounceRef.current) clearTimeout(debounceRef.current);
+    };
   }, [fetchGifs]);
 
   const handleSearch = useCallback((text: string) => {

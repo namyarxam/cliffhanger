@@ -174,7 +174,7 @@ const styles = StyleSheet.create({
   caughtUpCheck: {
     fontSize: 12,
     fontFamily: 'DMSans_700Bold',
-    color: 'rgba(74,222,128,0.7)',
+    color: theme.successDim,
   },
   network: {
     fontSize: 12,
@@ -226,6 +226,6 @@ const styles = StyleSheet.create({
   catchUpCheck: {
     fontSize: 14,
     fontWeight: '700',
-    color: '#fff',
+    color: theme.textBright,
   },
 });

@@ -1,5 +1,8 @@
 import { supabase } from './supabase';
+import { buildMap } from './utils';
 import type { UserProfile, FriendWithProfile, Friendship } from './types';
+
+const SEARCH_RESULTS_LIMIT = 20;
 
 export async function searchUsers(
   query: string,
@@ -12,7 +15,7 @@ export async function searchUsers(
     .select('*')
     .ilike('username', `%${query.trim()}%`)
     .neq('id', currentUserId)
-    .limit(20);
+    .limit(SEARCH_RESULTS_LIMIT);
 
   if (error) throw error;
   return data ?? [];
@@ -89,10 +92,7 @@ export async function getFriends(userId: string): Promise<FriendWithProfile[]> {
     .select('*')
     .in('id', otherIds);
 
-  const profileMap = new Map<string, UserProfile>();
-  for (const p of profiles ?? []) {
-    profileMap.set(p.id, p);
-  }
+  const profileMap = buildMap(profiles);
 
   return friendships
     .map((f: Friendship) => {
@@ -129,10 +129,7 @@ export async function getPendingRequests(
     .select('*')
     .in('id', senderIds);
 
-  const profileMap = new Map<string, UserProfile>();
-  for (const p of profiles ?? []) {
-    profileMap.set(p.id, p);
-  }
+  const profileMap = buildMap(profiles);
 
   return friendships
     .map((f: Friendship) => {

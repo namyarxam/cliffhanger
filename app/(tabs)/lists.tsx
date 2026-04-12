@@ -16,6 +16,7 @@ import { theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { getLists, createList } from '@/src/lib/lists';
 import type { ListWithItems, ListType } from '@/src/lib/types';
+import { silentCatch } from '@/src/lib/errorLog';
 
 export default function ListsScreen() {
   const router = useRouter();
@@ -34,7 +35,7 @@ export default function ListsScreen() {
     try {
       const data = await getLists(userId);
       setLists(data);
-    } catch {} finally {
+    } catch (e) { silentCatch('lists:fetch')(e); } finally {
       setLoading(false);
     }
   }, [userId]);
@@ -53,7 +54,7 @@ export default function ListsScreen() {
       setShowCreate(false);
       Keyboard.dismiss();
       router.push(`/lists/${list.id}`);
-    } catch {} finally {
+    } catch (e) { silentCatch('lists:create')(e); } finally {
       setCreating(false);
     }
   }, [userId, newName, newType, creating, router]);

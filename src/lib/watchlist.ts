@@ -2,6 +2,47 @@ import { supabase } from './supabase';
 import { getFriends } from './friends';
 import type { UserShow, EpisodeWatch, WatchStatus, Season } from './types';
 
+const POPULAR_SHOWS_LIMIT = 6;
+
+// ─── Episode Helpers ──────────────────────────────────────────────────────────
+
+/** Find the last episode that has already aired. */
+export function getLastAiredEpisode(
+  seasons: Season[],
+  today = new Date().toISOString().slice(0, 10),
+): { season: number; episode: number; airdate: string | null } | null {
+  let lastSeason = 0;
+  let lastEp = 0;
+  let lastAirdate: string | null = null;
+  for (const s of seasons) {
+    for (const ep of s.episodes) {
+      if (!ep.airdate || ep.airdate <= today) {
+        lastSeason = s.number;
+        lastEp = ep.number;
+        lastAirdate = ep.airdate;
+      }
+    }
+  }
+  return lastSeason > 0 ? { season: lastSeason, episode: lastEp, airdate: lastAirdate } : null;
+}
+
+/** Build a Set of "S{n}E{n}" keys for all episodes up to the given position. */
+export function buildEpisodeSet(
+  seasons: Season[],
+  targetSeason: number,
+  targetEpisode: number,
+): Set<string> {
+  const set = new Set<string>();
+  for (const s of seasons) {
+    for (const ep of s.episodes) {
+      if (s.number < targetSeason || (s.number === targetSeason && ep.number <= targetEpisode)) {
+        set.add(`S${s.number}E${ep.number}`);
+      }
+    }
+  }
+  return set;
+}
+
 export interface PopularShow {
   show_id: string;
   show_title: string;
@@ -56,7 +97,7 @@ export async function getPopularWithFriends(userId: string): Promise<PopularShow
       latestAdd: info.latestAdd,
     }))
     .sort((a, b) => b.friend_count - a.friend_count || b.latestAdd.localeCompare(a.latestAdd))
-    .slice(0, 6);
+    .slice(0, POPULAR_SHOWS_LIMIT);
 }
 
 export async function getUserShows(userId: string): Promise<UserShow[]> {
@@ -215,7 +256,7 @@ export async function markUpToEpisode(
   }
 
   // Update current progress on user_shows
-  await supabase
+  const { error: updateError } = await supabase
     .from('user_shows')
     .update({
       current_season: targetSeason,
@@ -225,6 +266,8 @@ export async function markUpToEpisode(
     })
     .eq('user_id', userId)
     .eq('show_id', showId);
+
+  if (updateError) throw updateError;
 
   // Return the new watched set
   const set = new Set<string>();
@@ -279,7 +322,7 @@ export async function markExactlyUpTo(
     if (error) throw error;
   }
 
-  await supabase
+  const { error: progressError } = await supabase
     .from('user_shows')
     .update({
       current_season: targetSeason,
@@ -290,6 +333,8 @@ export async function markExactlyUpTo(
     })
     .eq('user_id', userId)
     .eq('show_id', showId);
+
+  if (progressError) throw progressError;
 
   return set;
 }
@@ -330,16 +375,18 @@ export async function getShowsWithNewEpisodes(userId: string): Promise<Set<strin
     p_user_id: userId,
   });
 
-  if (error) return new Set();
+  if (error) throw error;
   return new Set((data ?? []).map((r: { show_id: string }) => r.show_id));
 }
 
 export async function dismissNewEpisodes(userId: string, showId: string): Promise<void> {
-  await supabase
+  const { error } = await supabase
     .from('user_shows')
     .update({ new_episodes_seen_at: new Date().toISOString() })
     .eq('user_id', userId)
     .eq('show_id', showId);
+
+  if (error) throw error;
 }
 
 export async function getNextEpisodesForShows(
@@ -388,12 +435,14 @@ export async function markNextEpisode(
   episode: number,
 ): Promise<void> {
   // Insert the single episode watch
-  await supabase
+  const { error: watchError } = await supabase
     .from('episode_watches')
     .upsert(
       { user_id: userId, show_id: showId, season, episode },
       { onConflict: 'user_id,show_id,season,episode' },
     );
+
+  if (watchError) throw watchError;
 
   // Update user_shows progress
   const { error } = await supabase

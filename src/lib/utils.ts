@@ -1,3 +1,19 @@
+// ─── Collection Helpers ────────────────────────────────────────────────────
+
+/** Build a Map keyed by `id` from an array of objects (e.g. Supabase profile rows). */
+export function buildMap<T extends { id: string }>(rows: T[] | null | undefined): Map<string, T> {
+  const map = new Map<string, T>();
+  for (const row of rows ?? []) map.set(row.id, row);
+  return map;
+}
+
+/** Build a Map of id → display_name from profile rows. */
+export function buildNameMap(rows: { id: string; display_name: string }[] | null | undefined): Map<string, string> {
+  const map = new Map<string, string>();
+  for (const row of rows ?? []) map.set(row.id, row.display_name);
+  return map;
+}
+
 // ─── Rating Color Scale (ported verbatim from web app) ──────────────────────
 
 export function getRatingColor(rating: number): string {
@@ -27,10 +43,12 @@ export function formatVotes(n: number): string {
 
 // ─── Live Detection ─────────────────────────────────────────────────────────
 
+const LIVE_WINDOW_MS = 30 * 24 * 60 * 60 * 1000; // 30 days
+
 export function isLive(lastAired?: string | null): boolean {
   if (!lastAired) return false;
   const diff = Date.now() - new Date(lastAired).getTime();
-  return diff >= 0 && diff < 30 * 24 * 60 * 60 * 1000;
+  return diff >= 0 && diff < LIVE_WINDOW_MS;
 }
 
 // ─── Math ───────────────────────────────────────────────────────────────────

@@ -24,12 +24,18 @@ import {
   deleteList,
   setDisplayList,
   clearDisplayList,
+  MAX_LIST_ITEMS,
 } from '@/src/lib/lists';
 import { getUserShows } from '@/src/lib/watchlist';
 import { fetchCast, searchShows } from '@/src/lib/data';
 import type { CastMember } from '@/src/lib/data';
 import type { ShowSummary } from '@/src/lib/types';
 import type { ListWithItems, UserShow } from '@/src/lib/types';
+import { silentCatch } from '@/src/lib/errorLog';
+
+type ShowPickerItem =
+  | { kind: 'userShow'; data: UserShow }
+  | { kind: 'searchResult'; data: ShowSummary };
 
 export default function ListDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -61,7 +67,7 @@ export default function ListDetailScreen() {
       const all = await getLists(userId);
       const found = all.find(l => l.id === id);
       setList(found ?? null);
-    } catch {} finally {
+    } catch (e) { silentCatch('listDetail:fetch')(e); } finally {
       setLoading(false);
     }
   }, [userId, id]);
@@ -79,7 +85,7 @@ export default function ListDetailScreen() {
       setList({ ...list, name: editName.trim() });
       setEditingName(false);
       Keyboard.dismiss();
-    } catch {}
+    } catch (e) { silentCatch('listDetail:rename')(e); }
   }, [list, editName]);
 
   const handleDelete = useCallback(() => {
@@ -89,7 +95,7 @@ export default function ListDetailScreen() {
       {
         text: 'Delete', style: 'destructive',
         onPress: async () => {
-          try { await deleteList(list.id); router.push('/(tabs)/lists'); } catch {}
+          try { await deleteList(list.id); router.push('/(tabs)/lists'); } catch (e) { silentCatch('listDetail:delete')(e); }
         },
       },
     ]);
@@ -105,7 +111,7 @@ export default function ListDetailScreen() {
         await setDisplayList(userId, list.id);
         setList({ ...list, is_display: true });
       }
-    } catch {}
+    } catch (e) { silentCatch('listDetail:toggleDisplay')(e); }
   }, [userId, list]);
 
   const handleRemoveItem = useCallback(async (itemId: string) => {
@@ -113,7 +119,7 @@ export default function ListDetailScreen() {
     try {
       await removeListItem(list.id, itemId);
       setList({ ...list, items: list.items.filter(i => i.item_id !== itemId) });
-    } catch {}
+    } catch (e) { silentCatch('listDetail:removeItem')(e); }
   }, [list]);
 
   // Show picker
@@ -127,7 +133,7 @@ export default function ListDetailScreen() {
     try {
       const shows = await getUserShows(userId);
       setMyShows(shows);
-    } catch {} finally {
+    } catch (e) { silentCatch('listDetail:loadShows')(e); } finally {
       setLoadingPicker(false);
     }
   }, [userId]);
@@ -307,7 +313,7 @@ export default function ListDetailScreen() {
         }}
         ListFooterComponent={
           <View style={styles.footerSection}>
-            {list.items.length < 10 && (
+            {list.items.length < MAX_LIST_ITEMS && (
               <Pressable style={({ pressed }) => [styles.addButton, pressed && { opacity: 0.7 }]} onPress={handleOpenPicker}>
                 <Text style={styles.addButtonText}>+ Add {list.type === 'shows' ? 'Show' : 'Character'}</Text>
               </Pressable>
@@ -342,10 +348,14 @@ export default function ListDetailScreen() {
           {loadingPicker ? (
             <View style={styles.center}><ActivityIndicator color={theme.accent} size="large" /></View>
           ) : pickerStep === 'shows' ? (
-            <FlatList
+            <FlatList<ShowPickerItem>
               key="shows-list"
-              data={(searchQuery.trim().length >= 3 ? searchResults : myShows) as any[]}
-              keyExtractor={(item: any) => item.show_id ?? item.id}
+              data={
+                searchQuery.trim().length >= 3
+                  ? searchResults.map(s => ({ kind: 'searchResult' as const, data: s }))
+                  : myShows.map(s => ({ kind: 'userShow' as const, data: s }))
+              }
+              keyExtractor={item => item.kind === 'searchResult' ? item.data.id : item.data.show_id}
               keyboardShouldPersistTaps="handled"
               ListHeaderComponent={
                 <View>
@@ -369,19 +379,18 @@ export default function ListDetailScreen() {
                   ) : null}
                 </View>
               }
-              renderItem={({ item }: { item: any }) => {
-                const isSearchResult = 'title' in item && !('show_id' in item);
-                const showId: string = isSearchResult ? item.id : item.show_id;
-                const showTitle: string = isSearchResult ? item.title : item.show_title;
-                const showImage: string | null = isSearchResult ? item.image : item.show_image;
+              renderItem={({ item }) => {
+                const showId = item.kind === 'searchResult' ? item.data.id : item.data.show_id;
+                const showTitle = item.kind === 'searchResult' ? item.data.title : item.data.show_title;
+                const showImage = item.kind === 'searchResult' ? item.data.image : item.data.show_image;
                 const alreadyAdded = list.type === 'shows' && list.items.some(i => i.item_id === showId);
                 return (
                   <Pressable
                     style={({ pressed }) => [styles.pickerRow, pressed && { opacity: 0.7 }, alreadyAdded && { opacity: 0.4 }]}
                     onPress={() => {
                       if (alreadyAdded) return;
-                      if (isSearchResult) handlePickSearchResult(item as ShowSummary);
-                      else handlePickShow(item as UserShow);
+                      if (item.kind === 'searchResult') handlePickSearchResult(item.data);
+                      else handlePickShow(item.data);
                     }}
                     disabled={alreadyAdded}
                   >

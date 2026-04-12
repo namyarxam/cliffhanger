@@ -1,4 +1,5 @@
 import { supabase } from './supabase';
+import { buildNameMap } from './utils';
 import { getFriends } from './friends';
 import type {
   Conversation,
@@ -17,10 +18,9 @@ export function getConversationDisplayName(
   currentUserId: string,
 ): string {
   if (conversation.name) return conversation.name;
-  const others = memberNames.filter((_, i) => i < memberNames.length); // all names passed should already exclude current user
-  if (others.length === 0) return 'Chat';
-  if (others.length <= 3) return others.join(', ');
-  return `${others.slice(0, 2).join(', ')} +${others.length - 2}`;
+  if (memberNames.length === 0) return 'Chat';
+  if (memberNames.length <= 3) return memberNames.join(', ');
+  return `${memberNames.slice(0, 2).join(', ')} +${memberNames.length - 2}`;
 }
 
 // ─── Create ───────────────────────────────────────────────────────────────────
@@ -112,7 +112,7 @@ export async function findExistingDM(
 
   const sharedIds = shared.map(s => s.conversation_id);
 
-  // Check which of these have no show and exactly 2 members
+  // Check which of these have no show attached
   const { data: convos } = await supabase
     .from('conversations')
     .select('id')
@@ -121,13 +121,22 @@ export async function findExistingDM(
 
   if (!convos || convos.length === 0) return null;
 
-  for (const c of convos) {
-    const { count } = await supabase
-      .from('conversation_members')
-      .select('*', { count: 'exact', head: true })
-      .eq('conversation_id', c.id);
+  // Batch-fetch all members for candidate conversations instead of querying per-conversation
+  const candidateIds = convos.map(c => c.id);
+  const { data: allMembers } = await supabase
+    .from('conversation_members')
+    .select('conversation_id')
+    .in('conversation_id', candidateIds);
 
-    if (count === 2) return c.id;
+  // Count members per conversation
+  const countByConvo = new Map<string, number>();
+  for (const m of allMembers ?? []) {
+    countByConvo.set(m.conversation_id, (countByConvo.get(m.conversation_id) ?? 0) + 1);
+  }
+
+  // Return the first conversation with exactly 2 members (a DM)
+  for (const c of convos) {
+    if (countByConvo.get(c.id) === 2) return c.id;
   }
 
   return null;
@@ -179,8 +188,7 @@ export async function getPendingConversationInvites(
     .select('*')
     .in('id', inviterIds);
 
-  const profileMap = new Map<string, string>();
-  for (const p of profiles ?? []) profileMap.set(p.id, p.display_name);
+  const profileMap = buildNameMap(profiles);
 
   // Get member names for auto-naming
   const { data: allMembers } = await supabase
@@ -194,8 +202,7 @@ export async function getPendingConversationInvites(
     .select('id, display_name')
     .in('id', memberUserIds);
 
-  const nameMap = new Map<string, string>();
-  for (const p of memberProfiles ?? []) nameMap.set(p.id, p.display_name);
+  const nameMap = buildNameMap(memberProfiles);
 
   const membersByConvo = new Map<string, string[]>();
   for (const m of allMembers ?? []) {
@@ -225,10 +232,15 @@ export async function getPendingConversationInvites(
 }
 
 export async function getPendingInviteCount(userId: string): Promise<number> {
-  // Use the full fetch to ensure count matches what actually renders
-  // (avoids phantom badges from RLS-blocked conversations)
-  const invites = await getPendingConversationInvites(userId);
-  return invites.length;
+  // Simple count query — RLS ensures only visible invites are counted
+  const { count, error } = await supabase
+    .from('conversation_invites')
+    .select('*', { count: 'exact', head: true })
+    .eq('invited_user', userId)
+    .eq('status', 'pending');
+
+  if (error) return 0;
+  return count ?? 0;
 }
 
 export async function acceptConversationInvite(
@@ -332,8 +344,7 @@ export async function getMyConversations(userId: string): Promise<ConversationPr
     .select('id, display_name')
     .in('id', memberUserIds);
 
-  const nameMap = new Map<string, string>();
-  for (const p of profiles ?? []) nameMap.set(p.id, p.display_name);
+  const nameMap = buildNameMap(profiles);
 
   // Build member info per conversation
   const membersByConvo = new Map<string, { names: string[]; count: number }>();
@@ -408,9 +419,7 @@ export async function getConversationMembers(
     .in('id', userIds);
 
   const profileMap = new Map<string, { display_name: string; avatar_url: string | null }>();
-  for (const p of profiles ?? []) {
-    profileMap.set(p.id, { display_name: p.display_name, avatar_url: p.avatar_url });
-  }
+  for (const p of profiles ?? []) profileMap.set(p.id, { display_name: p.display_name, avatar_url: p.avatar_url });
 
   // Only fetch show progress if a show is attached
   const progressMap = new Map<string, { season: number; episode: number }>();
@@ -545,9 +554,7 @@ export async function getMessages(
     .in('id', senderIds);
 
   const profileMap = new Map<string, { display_name: string; avatar_url: string | null }>();
-  for (const p of profiles ?? []) {
-    profileMap.set(p.id, { display_name: p.display_name, avatar_url: p.avatar_url });
-  }
+  for (const p of profiles ?? []) profileMap.set(p.id, { display_name: p.display_name, avatar_url: p.avatar_url });
 
   return messages.map(m => {
     const profile = profileMap.get(m.user_id);
@@ -643,6 +650,6 @@ export async function getMemberCount(conversationId: string): Promise<number> {
     .select('*', { count: 'exact', head: true })
     .eq('conversation_id', conversationId);
 
-  if (error) return 0;
+  if (error) throw error;
   return count ?? 0;
 }

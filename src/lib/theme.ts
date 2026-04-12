@@ -6,9 +6,14 @@ export const theme = {
   bgDarker: '#10111e',
   border: 'rgba(255,255,255,0.05)',
   text: '#e8e6e3',
+  textBright: '#fff',
   textDim: 'rgba(255,255,255,0.31)',
   textFaint: 'rgba(255,255,255,0.19)',
   accent: '#ff6b35',
+  success: '#4ade80',
+  successDim: 'rgba(74,222,128,0.7)',
+  successBg: 'rgba(74,222,128,0.1)',
+  successBorder: 'rgba(74,222,128,0.2)',
 } as const;
 
 export const SEASON_COLORS = [

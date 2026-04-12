@@ -271,7 +271,7 @@ const styles = StyleSheet.create({
     color: theme.textFaint,
   },
   seasonProgressDone: {
-    color: '#4ade80',
+    color: theme.success,
   },
   chevron: {
     fontSize: 20,
@@ -348,7 +348,7 @@ const styles = StyleSheet.create({
     borderColor: theme.accent,
   },
   watchCheck: {
-    color: '#fff',
+    color: theme.textBright,
     fontSize: 12,
     fontWeight: '700',
   },
@@ -401,7 +401,7 @@ const styles = StyleSheet.create({
   markButtonText: {
     fontSize: 13,
     fontFamily: 'DMSans_600SemiBold',
-    color: '#fff',
+    color: theme.textBright,
   },
   markButtonTextWatched: {
     color: theme.textDim,

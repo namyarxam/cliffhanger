@@ -25,6 +25,7 @@ import {
 import FriendRow from '@/src/components/FriendRow';
 import type { FriendAction } from '@/src/components/FriendRow';
 import type { FriendWithProfile, UserProfile } from '@/src/lib/types';
+import { silentCatch } from '@/src/lib/errorLog';
 
 interface SearchResult {
   user: UserProfile;
@@ -55,8 +56,8 @@ export default function FriendsScreen() {
       ]);
       setFriends(f);
       setPending(p);
-    } catch {
-      // silently fail
+    } catch (e) {
+      silentCatch('friends:fetchData')(e);
     } finally {
       setLoading(false);
     }
@@ -125,7 +126,7 @@ export default function FriendsScreen() {
         )
       );
       fetchData();
-    } catch {}
+    } catch (e) { silentCatch('friends:add')(e); }
   }, [userId, fetchData]);
 
   const handleAccept = useCallback(async (friendId: string) => {
@@ -145,7 +146,7 @@ export default function FriendsScreen() {
           r.user.id === friendId ? { ...r, action: 'friends' as FriendAction } : r
         )
       );
-    } catch {}
+    } catch (e) { silentCatch('friends:accept')(e); }
   }, [pending, searchResults, fetchData]);
 
   const handleDecline = useCallback(async (friendId: string) => {
@@ -155,7 +156,7 @@ export default function FriendsScreen() {
       await removeFriend(req.friendship_id);
       fetchData();
       refreshBadge();
-    } catch {}
+    } catch (e) { silentCatch('friends:decline')(e); }
   }, [pending, fetchData]);
 
   const handlePressFriend = useCallback((friendUserId: string) => {

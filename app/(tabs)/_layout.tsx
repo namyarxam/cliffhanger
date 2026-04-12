@@ -7,6 +7,7 @@ import { theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { getPendingRequests } from '@/src/lib/friends';
 import { getPendingInviteCount } from '@/src/lib/conversations';
+import { silentCatch } from '@/src/lib/errorLog';
 
 const RefreshBadgeContext = createContext<() => void>(() => {});
 export const useRefreshBadge = () => useContext(RefreshBadgeContext);
@@ -26,10 +27,10 @@ export default function TabLayout() {
     if (!session?.user?.id) return;
     getPendingRequests(session.user.id)
       .then(p => setPendingCount(p.length))
-      .catch(() => {});
+      .catch(silentCatch('layout:pendingRequests'));
     getPendingInviteCount(session.user.id)
       .then(c => setChatInviteCount(c))
-      .catch(() => {});
+      .catch(silentCatch('layout:chatInvites'));
   }, [session?.user?.id]);
 
   useEffect(() => {

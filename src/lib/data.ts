@@ -46,6 +46,11 @@ interface TVMazeEpisode {
   summary: string | null;
 }
 
+interface TVMazeCastEntry {
+  person: { name: string } | null;
+  character: { name: string; image: { medium: string; original: string } | null } | null;
+}
+
 // ─── Transform TVMaze data to our types ─────────────────────────────────────
 
 function toShowSummary(show: TVMazeShow): ShowSummary {
@@ -110,7 +115,7 @@ export async function searchShows(query: string): Promise<ShowSummary[]> {
 export async function fetchCast(showId: string): Promise<CastMember[]> {
   const res = await fetch(`${TVMAZE_BASE}/shows/${showId}/cast`);
   if (!res.ok) return [];
-  const data: any[] = await res.json();
+  const data: TVMazeCastEntry[] = await res.json();
   return data
     .map(entry => ({
       personName: entry.person?.name ?? 'Unknown',

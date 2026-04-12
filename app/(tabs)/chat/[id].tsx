@@ -44,6 +44,7 @@ import { getUserShows } from '@/src/lib/watchlist';
 import FriendRow from '@/src/components/FriendRow';
 import GifPicker from '@/src/components/GifPicker';
 import type { Conversation, ConversationMember, Message, UserProfile, UserShow } from '@/src/lib/types';
+import { silentCatch } from '@/src/lib/errorLog';
 
 function formatChatDate(dateStr: string): string {
   const d = new Date(dateStr);
@@ -174,7 +175,8 @@ export default function ChatDetailScreen() {
     try {
       const saved = await sendMessage(id, userId, text);
       setMessages(prev => prev.map(m => m.id === optimistic.id ? saved : m));
-    } catch {
+    } catch (e) {
+      silentCatch('chatDetail:sendMessage')(e);
       setMessages(prev => prev.filter(m => m.id !== optimistic.id));
     } finally {
       setSending(false);
@@ -201,7 +203,8 @@ export default function ChatDetailScreen() {
     try {
       const saved = await sendMessage(id, userId, undefined, gifUrl);
       setMessages(prev => prev.map(m => m.id === optimistic.id ? saved : m));
-    } catch {
+    } catch (e) {
+      silentCatch('chatDetail:sendGif')(e);
       setMessages(prev => prev.filter(m => m.id !== optimistic.id));
     }
   }, [userId, id]);
@@ -213,7 +216,7 @@ export default function ChatDetailScreen() {
       {
         text: 'Leave', style: 'destructive',
         onPress: async () => {
-          try { await leaveConversation(userId, id); router.replace('/(tabs)/chat'); } catch {}
+          try { await leaveConversation(userId, id); router.replace('/(tabs)/chat'); } catch (e) { silentCatch('chatDetail:leave')(e); }
         },
       },
     ]);
@@ -226,7 +229,7 @@ export default function ChatDetailScreen() {
       {
         text: 'Delete', style: 'destructive',
         onPress: async () => {
-          try { await deleteConversation(id); router.replace('/(tabs)/chat'); } catch {}
+          try { await deleteConversation(id); router.replace('/(tabs)/chat'); } catch (e) { silentCatch('chatDetail:delete')(e); }
         },
       },
     ]);
@@ -238,7 +241,7 @@ export default function ChatDetailScreen() {
       const newValue = !conversation.spoiler_lock;
       await toggleSpoilerLock(conversation.id, newValue);
       setConversation({ ...conversation, spoiler_lock: newValue });
-    } catch {}
+    } catch (e) { silentCatch('chatDetail:spoilerLock')(e); }
   }, [conversation]);
 
   const handleOpenInviteModal = useCallback(async () => {
@@ -249,7 +252,7 @@ export default function ChatDetailScreen() {
       const friends = await getFriendsNotInConversation(userId, id);
       setInvitableFriends(friends);
       setInvitedIds(new Set(friends.filter(f => f.alreadyInvited).map(f => f.user.id)));
-    } catch {} finally { setLoadingFriends(false); }
+    } catch (e) { silentCatch('chatDetail:loadInvitable')(e); } finally { setLoadingFriends(false); }
   }, [userId, id]);
 
   const handleInviteFriend = useCallback(async (friendId: string) => {
@@ -257,7 +260,7 @@ export default function ChatDetailScreen() {
     try {
       await sendConversationInvite(id, userId, friendId);
       setInvitedIds(prev => new Set(prev).add(friendId));
-    } catch {}
+    } catch (e) { silentCatch('chatDetail:invite')(e); }
   }, [userId, id]);
 
   const handleRename = useCallback(async () => {
@@ -266,7 +269,7 @@ export default function ChatDetailScreen() {
       const newName = editName.trim() || null;
       await renameConversation(conversation.id, newName);
       setConversation({ ...conversation, name: newName });
-    } catch {}
+    } catch (e) { silentCatch('chatDetail:rename')(e); }
   }, [conversation, editName]);
 
   const handleOpenShowPicker = useCallback(async () => {
@@ -276,7 +279,7 @@ export default function ChatDetailScreen() {
     try {
       const shows = await getUserShows(userId);
       setUserShows(shows.filter(s => s.status === 'currently_watching' || s.status === 'watched'));
-    } catch {} finally { setLoadingShows(false); }
+    } catch (e) { silentCatch('chatDetail:loadShows')(e); } finally { setLoadingShows(false); }
   }, [userId]);
 
   const handleAttachShow = useCallback(async (show: UserShow) => {
@@ -286,7 +289,7 @@ export default function ChatDetailScreen() {
       setConversation({ ...conversation, show_id: show.show_id, show_title: show.show_title, show_image: show.show_image });
       setShowPickerVisible(false);
       fetchData(); // refresh members with show progress
-    } catch {}
+    } catch (e) { silentCatch('chatDetail:attachShow')(e); }
   }, [conversation, fetchData]);
 
   const handleDetachShow = useCallback(async () => {
@@ -295,7 +298,7 @@ export default function ChatDetailScreen() {
       await detachShow(conversation.id);
       setConversation({ ...conversation, show_id: null, show_title: null, show_image: null, spoiler_lock: false });
       fetchData();
-    } catch {}
+    } catch (e) { silentCatch('chatDetail:detachShow')(e); }
   }, [conversation, fetchData]);
 
   if (loading) return <View style={styles.center}><ActivityIndicator color={theme.accent} size="large" /></View>;

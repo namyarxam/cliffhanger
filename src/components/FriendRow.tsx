@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
   actionText: {
     fontSize: 13,
     fontFamily: 'DMSans_600SemiBold',
-    color: '#fff',
+    color: theme.textBright,
   },
   pendingBadge: {
     paddingHorizontal: 12,
@@ -187,7 +187,7 @@ const styles = StyleSheet.create({
   acceptText: {
     fontSize: 13,
     fontFamily: 'DMSans_600SemiBold',
-    color: '#fff',
+    color: theme.textBright,
   },
   declineButton: {
     paddingHorizontal: 12,
@@ -205,13 +205,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 6,
     borderRadius: 6,
-    backgroundColor: 'rgba(74,222,128,0.1)',
+    backgroundColor: theme.successBg,
     borderWidth: 1,
-    borderColor: 'rgba(74,222,128,0.2)',
+    borderColor: theme.successBorder,
   },
   friendsText: {
     fontSize: 12,
     fontFamily: 'DMSans_500Medium',
-    color: 'rgba(74,222,128,0.7)',
+    color: theme.successDim,
   },
 });

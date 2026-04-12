@@ -1,6 +1,8 @@
 import { supabase } from './supabase';
 import type { List, ListItem, ListWithItems, ListType } from './types';
 
+export const MAX_LIST_ITEMS = 10;
+
 export async function getLists(userId: string): Promise<ListWithItems[]> {
   const { data, error } = await supabase
     .from('lists')
@@ -104,10 +106,10 @@ export async function addListItem(
 
   const used = new Set((existing ?? []).map(e => e.position));
   let position = 0;
-  for (let i = 1; i <= 10; i++) {
+  for (let i = 1; i <= MAX_LIST_ITEMS; i++) {
     if (!used.has(i)) { position = i; break; }
   }
-  if (position === 0) throw new Error('List is full (max 10 items)');
+  if (position === 0) throw new Error(`List is full (max ${MAX_LIST_ITEMS} items)`);
 
   const { data, error } = await supabase
     .from('list_items')

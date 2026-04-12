@@ -126,7 +126,7 @@ export default memo(function RatingSelector({ rating, onRate, onDragStart, onDra
                 ? {
                     left: fillWidth - 10,
                     backgroundColor: color,
-                    borderColor: '#fff',
+                    borderColor: theme.textBright,
                     transform: [{ scale: dragging ? 1.2 : 1 }],
                   }
                 : {
@@ -175,7 +175,7 @@ const styles = StyleSheet.create({
   },
   track: {
     height: 6,
-    backgroundColor: 'rgba(255,255,255,0.08)',
+    backgroundColor: theme.border,
     borderRadius: 3,
     overflow: 'hidden',
   },
@@ -189,7 +189,7 @@ const styles = StyleSheet.create({
     height: 20,
     borderRadius: 10,
     borderWidth: 2,
-    borderColor: '#fff',
+    borderColor: theme.textBright,
   },
   scaleLabels: {
     flexDirection: 'row',

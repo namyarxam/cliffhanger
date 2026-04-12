@@ -19,6 +19,7 @@ import { getFriends } from '@/src/lib/friends';
 import { getUserShows } from '@/src/lib/watchlist';
 import { createConversation } from '@/src/lib/conversations';
 import type { FriendWithProfile, UserShow } from '@/src/lib/types';
+import { silentCatch } from '@/src/lib/errorLog';
 
 export default function NewChatScreen() {
   const router = useRouter();
@@ -54,7 +55,7 @@ export default function NewChatScreen() {
           setFriends(friendData);
           setShows(showData);
         })
-        .catch(() => {})
+        .catch(silentCatch('newChat:loadData'))
         .finally(() => setLoading(false));
     }, [userId])
   );

@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   textActive: {
     fontSize: 14,
     fontFamily: 'DMSans_600SemiBold',
-    color: '#fff',
+    color: theme.textBright,
   },
   textDone: {
     fontSize: 14,

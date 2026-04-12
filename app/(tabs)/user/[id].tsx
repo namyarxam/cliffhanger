@@ -7,6 +7,7 @@ import {
   StyleSheet,
   ActivityIndicator,
   Pressable,
+  LayoutAnimation,
 } from 'react-native';
 import { useLocalSearchParams, useRouter, Stack } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -15,10 +16,11 @@ import { useAuth } from '@/src/providers/AuthProvider';
 import { Image } from 'expo-image';
 import { getUserShows } from '@/src/lib/watchlist';
 import { getFriendshipStatus, sendFriendRequest, removeFriend } from '@/src/lib/friends';
-import { getLists } from '@/src/lib/lists';
+import { getLists, getDisplayList } from '@/src/lib/lists';
 import { supabase } from '@/src/lib/supabase';
 import WatchlistCard from '@/src/components/WatchlistCard';
-import type { UserShow, UserProfile, WatchStatus, ListWithItems } from '@/src/lib/types';
+import type { UserShow, UserProfile, WatchStatus, ListWithItems, ListItem } from '@/src/lib/types';
+import { silentCatch } from '@/src/lib/errorLog';
 
 const SECTION_ORDER: { key: WatchStatus; title: string }[] = [
   { key: 'currently_watching', title: 'Currently Watching' },
@@ -35,7 +37,9 @@ export default function UserProfileScreen() {
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [shows, setShows] = useState<UserShow[]>([]);
   const [friendLists, setFriendLists] = useState<ListWithItems[]>([]);
+  const [displayItems, setDisplayItems] = useState<ListItem[]>([]);
   const [activeTab, setActiveTab] = useState<'watchlist' | 'lists'>('watchlist');
+  const [expandedList, setExpandedList] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [friendStatus, setFriendStatus] = useState<{
     friendship_id: string;
@@ -63,19 +67,27 @@ export default function UserProfileScreen() {
       });
 
     // Fetch their lists
-    getLists(id).then(setFriendLists).catch(() => {});
+    getLists(id).then(setFriendLists).catch(silentCatch('userProfile:lists'));
+    getDisplayList(id).then(d => setDisplayItems(d?.items.slice(0, 4) ?? [])).catch(silentCatch('userProfile:display'));
 
     // Fetch their shows
     getUserShows(id)
       .then(setShows)
-      .catch(() => {})
+      .catch(silentCatch('userProfile:shows'))
       .finally(() => setLoading(false));
 
     // Fetch friendship status
     if (userId && id !== userId) {
-      getFriendshipStatus(userId, id).then(setFriendStatus).catch(() => {});
+      getFriendshipStatus(userId, id).then(setFriendStatus).catch(silentCatch('userProfile:friendship'));
     }
   }, [id, userId]);
+
+  // Default to lists tab if they only have lists and no shows
+  useEffect(() => {
+    if (!loading && shows.length === 0 && friendLists.filter(l => l.items.length > 0).length > 0) {
+      setActiveTab('lists');
+    }
+  }, [loading, shows.length, friendLists.filter(l => l.items.length > 0).length]);
 
   const handleFriendAction = useCallback(async () => {
     if (!userId || !id) return;
@@ -120,8 +132,8 @@ export default function UserProfileScreen() {
       }} />
 
       {/* Back header */}
-      <Pressable style={styles.backButton} onPress={() => router.back()}>
-        <Text style={styles.backText}>‹ Back</Text>
+      <Pressable style={styles.backButton} onPress={() => router.push('/(tabs)/friends')}>
+        <Text style={styles.backText}>‹ Friends</Text>
       </Pressable>
 
       {loading ? (
@@ -131,19 +143,34 @@ export default function UserProfileScreen() {
       ) : (
         <ScrollView contentContainerStyle={styles.list}>
           <View style={styles.profileHeader}>
-            {profile?.avatar_url ? (
-              <Image source={{ uri: profile.avatar_url }} style={styles.avatarImage} contentFit="cover" />
-            ) : (
-              <View style={styles.avatar}>
-                <Text style={styles.avatarText}>
-                  {(profile?.display_name || profile?.username || '?')[0].toUpperCase()}
-                </Text>
+            <View style={styles.profileTopRow}>
+              {profile?.avatar_url ? (
+                <Image source={{ uri: profile.avatar_url }} style={styles.avatarImage} contentFit="cover" />
+              ) : (
+                <View style={styles.avatar}>
+                  <Text style={styles.avatarText}>
+                    {(profile?.display_name || profile?.username || '?')[0].toUpperCase()}
+                  </Text>
+                </View>
+              )}
+              <View style={styles.profileInfo}>
+                <Text style={styles.displayName}>{profile?.display_name || 'Unknown'}</Text>
+                <Text style={styles.username}>@{profile?.username || 'unknown'}</Text>
               </View>
-            )}
-            <Text style={styles.displayName}>
-              {profile?.display_name || 'Unknown'}
-            </Text>
-            <Text style={styles.username}>@{profile?.username || 'unknown'}</Text>
+              {displayItems.length > 0 && (
+                <View style={styles.featuredPosters}>
+                  {displayItems.map(item => (
+                    item.item_image ? (
+                      <Image key={item.item_id} source={{ uri: item.item_image }} style={styles.featuredPoster} contentFit="cover" />
+                    ) : (
+                      <View key={item.item_id} style={[styles.featuredPoster, styles.friendListThumbPlaceholder]}>
+                        <Text style={{ fontSize: 10 }}>📺</Text>
+                      </View>
+                    )
+                  ))}
+                </View>
+              )}
+            </View>
 
             {userId && id !== userId && friendStatus?.status !== 'accepted' && (
               <Pressable
@@ -155,7 +182,7 @@ export default function UserProfileScreen() {
               </Pressable>
             )}
 
-            {friendLists.length > 0 && (
+            {friendLists.filter(l => l.items.length > 0).length > 0 && shows.length > 0 && (
               <View style={styles.tabToggle}>
                 <Pressable
                   style={[styles.tabToggleBtn, activeTab === 'watchlist' && styles.tabToggleBtnActive]}
@@ -173,7 +200,11 @@ export default function UserProfileScreen() {
             )}
           </View>
 
-          {activeTab === 'watchlist' ? (
+          {shows.length === 0 && friendLists.filter(l => l.items.length > 0).length === 0 ? (
+            <View style={styles.emptyProfile}>
+              <Text style={styles.emptyProfileText}>Nothing here yet</Text>
+            </View>
+          ) : activeTab === 'watchlist' ? (
             sections.length === 0 ? (
               <View style={styles.center}>
                 <Text style={styles.emptyText}>No shows tracked yet</Text>
@@ -192,25 +223,70 @@ export default function UserProfileScreen() {
               ))
             )
           ) : (
-            friendLists.map(list => (
-              <View key={list.id} style={styles.friendListRow}>
-                <View style={styles.friendListInfo}>
-                  <Text style={styles.friendListName}>{list.name}</Text>
-                  <Text style={styles.friendListType}>{list.type === 'shows' ? 'Shows' : 'Characters'}</Text>
+            friendLists.filter(l => l.items.length > 0).map(list => {
+              const isExpanded = expandedList === list.id;
+              return (
+                <View key={list.id}>
+                  <Pressable
+                    style={styles.friendListRow}
+                    onPress={() => {
+                      LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+                      setExpandedList(isExpanded ? null : list.id);
+                    }}
+                  >
+                    <View style={styles.friendListInfo}>
+                      <Text style={styles.friendListName}>{list.name}</Text>
+                      <Text style={styles.friendListType}>
+                        {list.items.length} {list.type === 'shows' ? (list.items.length === 1 ? 'Show' : 'Shows') : (list.items.length === 1 ? 'Character' : 'Characters')}
+                      </Text>
+                    </View>
+                    <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.friendListThumbnails}>
+                      {list.items.map(item => (
+                        item.item_image ? (
+                          <Image key={item.item_id} source={{ uri: item.item_image }} style={styles.friendListThumb} contentFit="cover" />
+                        ) : (
+                          <View key={item.item_id} style={[styles.friendListThumb, styles.friendListThumbPlaceholder]}>
+                            <Text style={{ fontSize: 12 }}>📺</Text>
+                          </View>
+                        )
+                      ))}
+                    </ScrollView>
+                  </Pressable>
+                  {isExpanded && (
+                    <View style={styles.expandedList}>
+                      {list.items.map(item => {
+                        const isChar = list.type === 'characters';
+                        const [charName, showName] = isChar && item.item_title.includes('::')
+                          ? item.item_title.split('::')
+                          : [item.item_title, null];
+                        return (
+                          <Pressable
+                            key={item.item_id}
+                            style={({ pressed }) => [styles.expandedItem, !isChar && pressed && { opacity: 0.7 }]}
+                            onPress={() => {
+                              if (!isChar) handleShowPress(item.item_id);
+                            }}
+                            disabled={isChar}
+                          >
+                            {item.item_image ? (
+                              <Image source={{ uri: item.item_image }} style={styles.expandedItemImage} contentFit="cover" />
+                            ) : (
+                              <View style={[styles.expandedItemImage, styles.friendListThumbPlaceholder]}>
+                                <Text style={{ fontSize: 14 }}>📺</Text>
+                              </View>
+                            )}
+                            <View style={styles.expandedItemInfo}>
+                              <Text style={styles.expandedItemTitle} numberOfLines={1}>{charName}</Text>
+                              {showName && <Text style={styles.expandedItemSub} numberOfLines={1}>{showName}</Text>}
+                            </View>
+                          </Pressable>
+                        );
+                      })}
+                    </View>
+                  )}
                 </View>
-                <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.friendListThumbnails}>
-                  {list.items.map(item => (
-                    item.item_image ? (
-                      <Image key={item.item_id} source={{ uri: item.item_image }} style={styles.friendListThumb} contentFit="cover" />
-                    ) : (
-                      <View key={item.item_id} style={[styles.friendListThumb, styles.friendListThumbPlaceholder]}>
-                        <Text style={{ fontSize: 12 }}>📺</Text>
-                      </View>
-                    )
-                  ))}
-                </ScrollView>
-              </View>
-            ))
+              );
+            })
           )}
         </ScrollView>
       )}
@@ -241,10 +317,29 @@ const styles = StyleSheet.create({
   },
   profileHeader: {
     alignItems: 'center',
-    paddingVertical: 24,
-    paddingHorizontal: 32,
+    paddingVertical: 20,
+    paddingHorizontal: 16,
     borderBottomWidth: 1,
     borderBottomColor: theme.border,
+  },
+  profileTopRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    width: '100%',
+    gap: 12,
+  },
+  profileInfo: {
+    flex: 1,
+    gap: 2,
+  },
+  featuredPosters: {
+    flexDirection: 'row',
+    gap: 4,
+  },
+  featuredPoster: {
+    width: 48,
+    height: 68,
+    borderRadius: 4,
   },
   avatar: {
     width: 64,
@@ -271,16 +366,14 @@ const styles = StyleSheet.create({
     color: theme.textDim,
   },
   displayName: {
-    fontSize: 18,
+    fontSize: 17,
     fontFamily: 'DMSans_700Bold',
     color: theme.text,
-    marginBottom: 2,
   },
   username: {
     fontSize: 13,
     fontFamily: 'DMSans_400Regular',
     color: theme.textDim,
-    marginBottom: 16,
   },
   friendIndicator: {
     fontSize: 12,
@@ -325,6 +418,15 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontFamily: 'DMSans_400Regular',
     color: theme.textDim,
+  },
+  emptyProfile: {
+    padding: 60,
+    alignItems: 'center',
+  },
+  emptyProfileText: {
+    fontSize: 15,
+    fontFamily: 'DMSans_500Medium',
+    color: theme.textFaint,
   },
 
   // Toggle
@@ -392,5 +494,39 @@ const styles = StyleSheet.create({
     backgroundColor: theme.bgCard,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+
+  // Expanded list
+  expandedList: {
+    paddingHorizontal: 16,
+    paddingBottom: 12,
+    backgroundColor: 'rgba(255,255,255,0.02)',
+    borderBottomWidth: 1,
+    borderBottomColor: theme.border,
+  },
+  expandedItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: 8,
+    gap: 12,
+  },
+  expandedItemImage: {
+    width: 44,
+    height: 62,
+    borderRadius: 4,
+  },
+  expandedItemInfo: {
+    flex: 1,
+    gap: 2,
+  },
+  expandedItemTitle: {
+    fontSize: 14,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.text,
+  },
+  expandedItemSub: {
+    fontSize: 12,
+    fontFamily: 'DMSans_400Regular',
+    color: theme.textDim,
   },
 });

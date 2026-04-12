@@ -17,6 +17,7 @@ import { getDisplayList } from '@/src/lib/lists';
 import WatchlistCard from '@/src/components/WatchlistCard';
 import TopShowsRow from '@/src/components/TopShowsRow';
 import type { UserShow, ListWithItems, WatchStatus } from '@/src/lib/types';
+import { silentCatch } from '@/src/lib/errorLog';
 
 function sortTitle(t: string): string {
   return t.replace(/^The\s+/i, '');
@@ -53,8 +54,8 @@ export default function MyShowsScreen() {
       setNextEpisodes(episodeData.nextEpisodes);
       setCaughtUp(episodeData.caughtUpShows);
       setDisplayList(display);
-    } catch {
-      // silently fail
+    } catch (e) {
+      silentCatch('myShows:fetchData')(e);
     } finally {
       setLoading(false);
       setRefreshing(false);
@@ -91,8 +92,8 @@ export default function MyShowsScreen() {
       const episodeData = await getNextEpisodesForShows(userId);
       setNextEpisodes(episodeData.nextEpisodes);
       setCaughtUp(episodeData.caughtUpShows);
-    } catch {
-      // Revert on failure
+    } catch (e) {
+      silentCatch('myShows:markNext')(e);
       fetchData();
     }
   }, [userId, fetchData]);

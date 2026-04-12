@@ -22,6 +22,7 @@ import {
 } from '@/src/lib/conversations';
 import ConversationCard from '@/src/components/ConversationCard';
 import type { ConversationPreview, ConversationInviteWithDetails } from '@/src/lib/types';
+import { silentCatch } from '@/src/lib/errorLog';
 
 export default function ChatScreen() {
   const router = useRouter();
@@ -41,8 +42,8 @@ export default function ChatScreen() {
       ]);
       setConversations(data);
       setPendingInvites(invites);
-    } catch {
-      // silently fail
+    } catch (e) {
+      silentCatch('chat:fetchData')(e);
     } finally {
       setLoading(false);
     }
@@ -65,8 +66,8 @@ export default function ChatScreen() {
       setPendingInvites(prev => prev.filter(i => i.id !== inviteId));
       fetchData();
       router.push(`/chat/${conversationId}`);
-    } catch {
-      // silently fail
+    } catch (e) {
+      silentCatch('chat:accept')(e);
     }
   }, [userId, fetchData, router]);
 
@@ -74,8 +75,8 @@ export default function ChatScreen() {
     try {
       await declineConversationInvite(inviteId);
       setPendingInvites(prev => prev.filter(i => i.id !== inviteId));
-    } catch {
-      // silently fail
+    } catch (e) {
+      silentCatch('chat:decline')(e);
     }
   }, []);
 

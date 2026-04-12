@@ -23,6 +23,11 @@ import { getUserShows } from '@/src/lib/watchlist';
 import { fetchCast, searchShows } from '@/src/lib/data';
 import type { CastMember } from '@/src/lib/data';
 import type { UserShow, ShowSummary } from '@/src/lib/types';
+import { silentCatch } from '@/src/lib/errorLog';
+
+type AvatarPickerItem =
+  | { kind: 'userShow'; data: UserShow }
+  | { kind: 'searchResult'; data: ShowSummary };
 
 export default function ProfileScreen() {
   const { profile, user, signOut, refreshProfile } = useAuth();
@@ -51,9 +56,9 @@ export default function ProfileScreen() {
   useFocusEffect(
     useCallback(() => {
       if (!user?.id) return;
-      getFriends(user.id).then(f => setFriendCount(f.length)).catch(() => {});
-      getPendingRequests(user.id).then(p => setPendingCount(p.length)).catch(() => {});
-      ensureDefaultList(user.id).then(() => getLists(user.id).then(l => setListCount(l.length))).catch(() => {});
+      getFriends(user.id).then(f => setFriendCount(f.length)).catch(silentCatch('profile:friends'));
+      getPendingRequests(user.id).then(p => setPendingCount(p.length)).catch(silentCatch('profile:pending'));
+      ensureDefaultList(user.id).then(() => getLists(user.id).then(l => setListCount(l.length))).catch(silentCatch('profile:lists'));
     }, [user?.id])
   );
 
@@ -295,9 +300,13 @@ export default function ProfileScreen() {
               {loadingShows ? (
                 <View style={styles.modalCenter}><ActivityIndicator color={theme.accent} size="large" /></View>
               ) : (
-                <FlatList
-                  data={(avatarSearch.trim().length >= 3 ? avatarSearchResults : myShows) as any[]}
-                  keyExtractor={(item: any) => item.show_id ?? item.id}
+                <FlatList<AvatarPickerItem>
+                  data={
+                    avatarSearch.trim().length >= 3
+                      ? avatarSearchResults.map(s => ({ kind: 'searchResult' as const, data: s }))
+                      : myShows.map(s => ({ kind: 'userShow' as const, data: s }))
+                  }
+                  keyExtractor={item => item.kind === 'searchResult' ? item.data.id : item.data.show_id}
                   keyboardShouldPersistTaps="handled"
                   ListHeaderComponent={
                     avatarSearch.trim().length >= 3 ? (
@@ -310,14 +319,13 @@ export default function ProfileScreen() {
                       <Text style={styles.avatarSectionLabel}>From your watchlist</Text>
                     ) : null
                   }
-                  renderItem={({ item }: { item: any }) => {
-                    const isSearch = 'title' in item && !('show_id' in item);
-                    const title = isSearch ? item.title : item.show_title;
-                    const image = isSearch ? item.image : item.show_image;
+                  renderItem={({ item }) => {
+                    const title = item.kind === 'searchResult' ? item.data.title : item.data.show_title;
+                    const image = item.kind === 'searchResult' ? item.data.image : item.data.show_image;
                     return (
                       <Pressable
                         style={({ pressed }) => [styles.showRow, pressed && { opacity: 0.7 }]}
-                        onPress={() => isSearch ? handlePickSearchShow(item) : handlePickShow(item)}
+                        onPress={() => item.kind === 'searchResult' ? handlePickSearchShow(item.data) : handlePickShow(item.data)}
                       >
                         <View style={styles.showPosterWrap}>
                           {image ? (

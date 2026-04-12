@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState } from 'react';
 import {
   View,
   Text,
@@ -6,10 +6,6 @@ import {
   Pressable,
   StyleSheet,
   ActivityIndicator,
-  Alert,
-  LayoutAnimation,
-  Modal,
-  FlatList,
 } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
@@ -17,26 +13,15 @@ import { Image } from 'expo-image';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { theme } from '@/src/lib/theme';
 
-import { fetchShow } from '@/src/lib/data';
-import { useAuth } from '@/src/providers/AuthProvider';
-import {
-  getUserShow,
-  addShow,
-  updateShowStatus,
-  removeShow,
-  getWatchedEpisodes,
-  markExactlyUpTo,
-  rateShow,
-} from '@/src/lib/watchlist';
+import { useShowData } from '@/src/hooks/useShowData';
+import { useShowActions } from '@/src/hooks/useShowActions';
 import WatchProgressBar from '@/src/components/WatchProgressBar';
 import CaughtUpButton from '@/src/components/CaughtUpButton';
 import EpisodePicker from '@/src/components/EpisodePicker';
 import RatingSelector, { getUserRatingColor } from '@/src/components/RatingSelector';
-import { getLists, addListItem, removeListItem, getListsContainingItem } from '@/src/lib/lists';
-import { getFriends } from '@/src/lib/friends';
-import type { ListWithItems } from '@/src/lib/types';
-import { supabase } from '@/src/lib/supabase';
-import type { ShowFull, WatchStatus, UserShow, UserProfile } from '@/src/lib/types';
+import FriendRatingsModal from '@/src/components/FriendRatingsModal';
+import ListPickerModal from '@/src/components/ListPickerModal';
+import type { WatchStatus } from '@/src/lib/types';
 
 const STATUS_LABELS: Record<WatchStatus, string> = {
   want_to_watch: 'Watchlist',
@@ -49,294 +34,24 @@ const STATUSES: WatchStatus[] = ['want_to_watch', 'currently_watching', 'watched
 export default function ShowDetailScreen() {
   const { id, from } = useLocalSearchParams<{ id: string; from?: string }>();
   const router = useRouter();
-  const { session } = useAuth();
-  const userId = session?.user?.id;
 
+  const data = useShowData(id);
+  const {
+    show, loading, error, userId,
+    userShow, setUserShow, watchedEps, setWatchedEps,
+    userLists, listsContaining, setListsContaining,
+    friendsWatching, refetchWatchedEps,
+  } = data;
 
-  const [show, setShow] = useState<ShowFull | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const actions = useShowActions({
+    userId, id, show, userShow,
+    setUserShow, setWatchedEps, setListsContaining,
+    refetchWatchedEps,
+  });
 
-  const [userShow, setUserShow] = useState<UserShow | null>(null);
-  const [watchedEps, setWatchedEps] = useState<Set<string>>(new Set());
-  const [userLists, setUserLists] = useState<ListWithItems[]>([]);
-  const [listsContaining, setListsContaining] = useState<Set<string>>(new Set());
   const [listModalVisible, setListModalVisible] = useState(false);
   const [scrollEnabled, setScrollEnabled] = useState(true);
   const [friendRatingsVisible, setFriendRatingsVisible] = useState(false);
-  const [friendsWatching, setFriendsWatching] = useState<{ profile: UserProfile; status: string; season: number; episode: number; rating: number | null }[]>([]);
-
-  // Reset everything when navigating to a different show
-  useEffect(() => {
-    setShow(null);
-    setUserShow(null);
-    setWatchedEps(new Set());
-    setUserLists([]);
-    setListsContaining(new Set());
-    setFriendsWatching([]);
-    setLoading(true);
-    setError(null);
-
-    if (!id) return;
-    fetchShow(id)
-      .then(setShow)
-      .catch(e => setError(e.message))
-      .finally(() => setLoading(false));
-
-    if (userId) {
-      getLists(userId).then(l => setUserLists(l.filter(ll => ll.type === 'shows'))).catch(() => {});
-      getListsContainingItem(userId, id).then(ids => setListsContaining(new Set(ids))).catch(() => {});
-
-      // Fetch friends who watch this show
-      getFriends(userId).then(async (friends) => {
-        if (friends.length === 0) return;
-        const friendIds = friends.map(f => f.user.id);
-        const { data } = await supabase
-          .from('user_shows')
-          .select('user_id, status, current_season, current_episode, rating')
-          .eq('show_id', id)
-          .in('user_id', friendIds);
-
-        if (!data || data.length === 0) { setFriendsWatching([]); return; }
-
-        const profileMap = new Map(friends.map(f => [f.user.id, f.user]));
-        setFriendsWatching(data.map(d => ({
-          profile: profileMap.get(d.user_id)!,
-          status: d.status,
-          season: d.current_season,
-          episode: d.current_episode,
-          rating: d.rating ?? null,
-        })).filter(d => d.profile));
-      }).catch(() => {});
-    }
-  }, [id, userId]);
-
-  useEffect(() => {
-    if (!userId || !id) return;
-    getUserShow(userId, id).then(setUserShow).catch(() => {});
-  }, [userId, id]);
-
-  useEffect(() => {
-    if (!userId || !id || !userShow) return;
-    getWatchedEpisodes(userId, id).then(setWatchedEps).catch(() => {});
-  }, [userId, id, userShow]);
-
-  const handleAddToList = useCallback(async (listId: string) => {
-    if (!show) return;
-    try {
-      await addListItem(listId, show.id, show.title, show.image);
-      setListsContaining(prev => new Set(prev).add(listId));
-    } catch (e: any) {
-      Alert.alert('Error', e.message || 'Failed to add');
-    }
-  }, [show]);
-
-  const handleRemoveFromList = useCallback(async (listId: string) => {
-    if (!show) return;
-    try {
-      await removeListItem(listId, show.id);
-      setListsContaining(prev => {
-        const next = new Set(prev);
-        next.delete(listId);
-        return next;
-      });
-    } catch {}
-  }, [show]);
-
-  const handleAddWithStatus = useCallback(async (status: WatchStatus) => {
-    if (!userId || !show) return;
-    try {
-      LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
-      const { currentSeason, currentEpisode } = await addShow(userId, show.id, status, show.title, show.image, show.network);
-      setUserShow({
-        user_id: userId,
-        show_id: show.id,
-        status,
-        show_title: show.title,
-        show_image: show.image,
-        show_network: show.network,
-        current_season: currentSeason,
-        current_episode: currentEpisode,
-        current_episode_airdate: null,
-        new_episodes_seen_at: null,
-        rating: null,
-        added_at: new Date().toISOString(),
-        updated_at: new Date().toISOString(),
-      });
-    } catch {
-      // silently fail
-    }
-  }, [userId, show]);
-
-  const handleStatusChange = useCallback(async (status: WatchStatus) => {
-    if (!userId || !id || !userShow) return;
-
-    // Re-tapping the active status = un-track the show
-    if (status === userShow.status) {
-      Alert.alert(
-        'Remove from list?',
-        'Your episode progress will be saved if you add it back later.',
-        [
-          { text: 'Cancel', style: 'cancel' },
-          {
-            text: 'Remove',
-            style: 'destructive',
-            onPress: async () => {
-              try {
-                await removeShow(userId, id);
-                setUserShow(null);
-              } catch {
-                // silently fail
-              }
-            },
-          },
-        ],
-      );
-      return;
-    }
-
-    try {
-      LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
-      if (status === 'watched' && show) {
-        // Find last aired episode and mark everything as watched
-        const today = new Date().toISOString().slice(0, 10);
-        let lastSeason = 0;
-        let lastEp = 0;
-        let lastAirdate: string | null = null;
-        for (const s of show.seasons) {
-          for (const ep of s.episodes) {
-            if (!ep.airdate || ep.airdate <= today) {
-              lastSeason = s.number;
-              lastEp = ep.number;
-              lastAirdate = ep.airdate;
-            }
-          }
-        }
-        if (lastSeason > 0) {
-          const newSet = await markExactlyUpTo(userId, id, lastSeason, lastEp, show.seasons);
-          setWatchedEps(newSet);
-        }
-        await updateShowStatus(userId, id, 'watched');
-        setUserShow(prev => prev ? {
-          ...prev,
-          status: 'watched',
-          current_season: lastSeason,
-          current_episode: lastEp,
-          current_episode_airdate: lastAirdate,
-          updated_at: new Date().toISOString(),
-        } : null);
-      } else {
-        await updateShowStatus(userId, id, status);
-        setUserShow(prev => prev ? { ...prev, status, updated_at: new Date().toISOString() } : null);
-      }
-    } catch {
-      // silently fail
-    }
-  }, [userId, id, userShow, show]);
-
-  const handleCatchUp = useCallback(async () => {
-    if (!userId || !id || !show) return;
-    const today = new Date().toISOString().slice(0, 10);
-    let lastSeason = 0;
-    let lastEp = 0;
-    let lastAirdate: string | null = null;
-    for (const s of show.seasons) {
-      for (const ep of s.episodes) {
-        if (!ep.airdate || ep.airdate <= today) {
-          lastSeason = s.number;
-          lastEp = ep.number;
-          lastAirdate = ep.airdate;
-        }
-      }
-    }
-    if (lastSeason > 0) {
-      // Optimistic
-      const optimistic = new Set<string>();
-      for (const s of show.seasons) {
-        for (const ep of s.episodes) {
-          if (s.number < lastSeason || (s.number === lastSeason && ep.number <= lastEp)) {
-            optimistic.add(`S${s.number}E${ep.number}`);
-          }
-        }
-      }
-      setWatchedEps(optimistic);
-
-      try {
-        const newSet = await markExactlyUpTo(userId, id, lastSeason, lastEp, show.seasons);
-        setWatchedEps(newSet);
-        setUserShow(prev => prev ? {
-          ...prev,
-          status: 'currently_watching',
-          current_season: lastSeason,
-          current_episode: lastEp,
-          current_episode_airdate: lastAirdate,
-        } : null);
-      } catch {
-        getWatchedEpisodes(userId, id).then(setWatchedEps).catch(() => {});
-      }
-    }
-  }, [userId, id, show]);
-
-  const handleRate = useCallback(async (rating: number) => {
-    if (!userId || !id) return;
-    try {
-      await rateShow(userId, id, rating);
-      setUserShow(prev => prev ? { ...prev, rating } : null);
-    } catch {
-      // silently fail
-    }
-  }, [userId, id]);
-
-  const handleEpisodeTap = useCallback(async (season: number, episode: number) => {
-    if (!userId || !id || !show) return;
-
-    // Auto-add to watchlist if not already added
-    if (!userShow) {
-      await addShow(userId, id, 'currently_watching', show.title, show.image, show.network);
-      const targetSeason = show.seasons.find(s => s.number === season);
-      const targetEp = targetSeason?.episodes.find(e => e.number === episode);
-      setUserShow({
-        user_id: userId,
-        show_id: id,
-        status: 'currently_watching',
-        show_title: show.title,
-        show_image: show.image,
-        show_network: show.network,
-        current_season: season,
-        current_episode: episode,
-        current_episode_airdate: targetEp?.airdate ?? null,
-        new_episodes_seen_at: null,
-        rating: null,
-        added_at: new Date().toISOString(),
-        updated_at: new Date().toISOString(),
-      });
-    }
-
-    // Optimistic: mark everything up to this episode
-    const optimistic = new Set<string>();
-    for (const s of show.seasons) {
-      for (const ep of s.episodes) {
-        if (s.number < season || (s.number === season && ep.number <= episode)) {
-          optimistic.add(`S${s.number}E${ep.number}`);
-        }
-      }
-    }
-    setWatchedEps(optimistic);
-
-    try {
-      const newSet = await markExactlyUpTo(userId, id, season, episode, show.seasons);
-      setWatchedEps(newSet);
-      setUserShow(prev => prev ? {
-        ...prev,
-        status: 'currently_watching',
-        current_season: season,
-        current_episode: episode,
-      } : null);
-    } catch {
-      // Revert — refetch from server
-      getWatchedEpisodes(userId, id).then(setWatchedEps).catch(() => {});
-    }
-  }, [userId, id, show, userShow]);
 
   if (loading) {
     return (
@@ -356,7 +71,6 @@ export default function ShowDetailScreen() {
   }
 
   const isRunning = show.status === 'Running';
-
   const today = new Date().toISOString().slice(0, 10);
 
   const airedCount = (() => {
@@ -458,7 +172,7 @@ export default function ShowDetailScreen() {
           </View>
         </View>
 
-        {/* Progress bar — seamless divider */}
+        {/* Progress bar */}
         {userShow && (
           <WatchProgressBar
             airedCount={airedCount}
@@ -486,7 +200,7 @@ export default function ShowDetailScreen() {
                     isActive && styles.statusPillActive,
                     pressed && !isActive && styles.statusPillPressed,
                   ]}
-                  onPress={() => userShow ? handleStatusChange(s) : handleAddWithStatus(s)}
+                  onPress={() => userShow ? actions.handleStatusChange(s) : actions.handleAddWithStatus(s)}
                 >
                   {!userShow && <Text style={styles.statusPillPlus}>+</Text>}
                   <Text style={[
@@ -501,7 +215,7 @@ export default function ShowDetailScreen() {
           </View>
         </View>
 
-        {/* Friends watching this show (hidden on Watched tab — it has its own version with ratings) */}
+        {/* Friends watching this show */}
         {friendsWatching.length > 0 && (!userShow || userShow.status !== 'watched') && (
           <View style={styles.friendsSection}>
             <Text style={styles.friendsSectionTitle}>Friends watching</Text>
@@ -538,7 +252,7 @@ export default function ShowDetailScreen() {
         {userShow && userShow.status === 'currently_watching' && (
           <>
             <CaughtUpButton
-              onCatchUp={handleCatchUp}
+              onCatchUp={actions.handleCatchUp}
               isCaughtUp={watchedEps.size >= airedCount}
             />
             <EpisodePicker
@@ -546,7 +260,7 @@ export default function ShowDetailScreen() {
               watchedEps={watchedEps}
               currentSeason={userShow.current_season}
               currentEpisode={userShow.current_episode}
-              onEpisodeTap={handleEpisodeTap}
+              onEpisodeTap={actions.handleEpisodeTap}
             />
           </>
         )}
@@ -556,7 +270,7 @@ export default function ShowDetailScreen() {
           <>
             <RatingSelector
               rating={userShow.rating ?? null}
-              onRate={handleRate}
+              onRate={actions.handleRate}
               onDragStart={() => setScrollEnabled(false)}
               onDragEnd={() => setScrollEnabled(true)}
             />
@@ -566,7 +280,6 @@ export default function ShowDetailScreen() {
                 {friendsWatching
                   .filter(fw => fw.status !== 'want_to_watch')
                   .sort((a, b) => {
-                    // Show "watched" friends first (with ratings), then "currently_watching"
                     if (a.status === 'watched' && b.status !== 'watched') return -1;
                     if (a.status !== 'watched' && b.status === 'watched') return 1;
                     return 0;
@@ -603,87 +316,20 @@ export default function ShowDetailScreen() {
         )}
       </ScrollView>
 
-      {/* Friend Ratings Breakdown Modal */}
-      <Modal
+      <FriendRatingsModal
         visible={friendRatingsVisible}
-        animationType="slide"
-        presentationStyle="pageSheet"
-        onRequestClose={() => setFriendRatingsVisible(false)}
-      >
-        <View style={styles.modalContainer}>
-          <View style={styles.modalHeader}>
-            <Text style={styles.modalTitle}>Friend Ratings</Text>
-            <Pressable onPress={() => setFriendRatingsVisible(false)}>
-              <Text style={styles.modalDone}>Done</Text>
-            </Pressable>
-          </View>
-          <FlatList
-            data={friendsWatching.filter(f => f.rating != null).sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0))}
-            keyExtractor={item => item.profile.id}
-            renderItem={({ item }) => (
-              <View style={styles.friendRatingRow}>
-                {item.profile.avatar_url ? (
-                  <Image source={{ uri: item.profile.avatar_url }} style={styles.friendRatingAvatarImage} contentFit="cover" />
-                ) : (
-                  <View style={styles.friendRatingAvatar}>
-                    <Text style={styles.friendRatingAvatarText}>
-                      {(item.profile.display_name[0] || '?').toUpperCase()}
-                    </Text>
-                  </View>
-                )}
-                <Text style={styles.friendRatingName} numberOfLines={1}>{item.profile.display_name}</Text>
-                <View style={[styles.friendRatingBadge, { backgroundColor: `${getUserRatingColor(item.rating!)}20` }]}>
-                  <Text style={[styles.friendRatingValue, { color: getUserRatingColor(item.rating!) }]}>
-                    {item.rating!.toFixed(1)}
-                  </Text>
-                </View>
-              </View>
-            )}
-            ListEmptyComponent={
-              <View style={styles.modalEmpty}>
-                <Text style={styles.modalEmptyText}>No friends have rated this show yet</Text>
-              </View>
-            }
-          />
-        </View>
-      </Modal>
+        onClose={() => setFriendRatingsVisible(false)}
+        friends={friendsWatching}
+      />
 
-      {/* List Picker Modal */}
-      <Modal visible={listModalVisible} animationType="slide" presentationStyle="pageSheet" onRequestClose={() => setListModalVisible(false)}>
-        <View style={styles.modalContainer}>
-          <View style={styles.modalHeader}>
-            <Text style={styles.modalTitle}>Add to a List</Text>
-            <Pressable onPress={() => setListModalVisible(false)}>
-              <Text style={styles.modalDone}>Done</Text>
-            </Pressable>
-          </View>
-          <FlatList
-            data={userLists}
-            keyExtractor={item => item.id}
-            renderItem={({ item: list }) => {
-              const isInList = listsContaining.has(list.id);
-              const isFull = list.items.length >= 4 && !isInList;
-              return (
-                <Pressable
-                  style={({ pressed }) => [styles.listPickerRow, pressed && { opacity: 0.7 }, isFull && { opacity: 0.4 }]}
-                  onPress={() => {
-                    if (isFull) return;
-                    if (isInList) handleRemoveFromList(list.id);
-                    else handleAddToList(list.id);
-                  }}
-                  disabled={isFull}
-                >
-                  <View style={styles.listPickerInfo}>
-                    <Text style={styles.listPickerName}>{list.name}</Text>
-                    <Text style={styles.listPickerMeta}>{list.items.length}/4</Text>
-                  </View>
-                  {isInList && <Text style={styles.listPickerCheck}>✓</Text>}
-                </Pressable>
-              );
-            }}
-          />
-        </View>
-      </Modal>
+      <ListPickerModal
+        visible={listModalVisible}
+        onClose={() => setListModalVisible(false)}
+        lists={userLists}
+        listsContaining={listsContaining}
+        onAdd={actions.handleAddToList}
+        onRemove={actions.handleRemoveFromList}
+      />
     </SafeAreaView>
   );
 }
@@ -760,51 +406,6 @@ const styles = StyleSheet.create({
     color: theme.text,
     flexShrink: 1,
   },
-  listPillButton: {
-    borderWidth: 1,
-    borderColor: theme.accent,
-    borderRadius: 6,
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-  },
-  listPillButtonActive: {
-    backgroundColor: 'rgba(255,107,53,0.15)',
-  },
-  listPillText: {
-    fontSize: 12,
-    fontFamily: 'DMSans_600SemiBold',
-    color: theme.accent,
-  },
-  listPillTextActive: {
-    color: theme.accent,
-  },
-  listPickerRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: 16,
-    paddingVertical: 14,
-    borderBottomWidth: 1,
-    borderBottomColor: theme.border,
-  },
-  listPickerInfo: {
-    flex: 1,
-    gap: 2,
-  },
-  listPickerName: {
-    fontSize: 16,
-    fontFamily: 'DMSans_600SemiBold',
-    color: theme.text,
-  },
-  listPickerMeta: {
-    fontSize: 12,
-    fontFamily: 'DMSans_400Regular',
-    color: theme.textDim,
-  },
-  listPickerCheck: {
-    fontSize: 18,
-    fontFamily: 'DMSans_700Bold',
-    color: theme.accent,
-  },
   metaRow: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -854,7 +455,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 4,
-    backgroundColor: 'rgba(74,222,128,0.1)',
+    backgroundColor: theme.successBg,
     paddingHorizontal: 8,
     paddingVertical: 2,
     borderRadius: 4,
@@ -863,12 +464,12 @@ const styles = StyleSheet.create({
     width: 5,
     height: 5,
     borderRadius: 3,
-    backgroundColor: '#4ade80',
+    backgroundColor: theme.success,
   },
   liveText: {
     fontSize: 10,
     fontFamily: 'DMSans_700Bold',
-    color: '#4ade80',
+    color: theme.success,
     letterSpacing: 0.5,
   },
 
@@ -877,9 +478,48 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     marginTop: 24,
   },
-  buttonPressed: {
-    opacity: 0.7,
+  statusRow: {
+    flexDirection: 'row',
+    gap: 8,
   },
+  statusPill: {
+    flex: 1,
+    flexDirection: 'row',
+    paddingVertical: 10,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: theme.border,
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 4,
+  },
+  statusPillEmpty: {
+    borderColor: 'rgba(255,107,53,0.3)',
+    borderStyle: 'dashed',
+  },
+  statusPillPressed: {
+    backgroundColor: 'rgba(255,107,53,0.08)',
+  },
+  statusPillActive: {
+    backgroundColor: theme.accent,
+    borderColor: theme.accent,
+    borderStyle: 'solid',
+  },
+  statusPillPlus: {
+    fontSize: 14,
+    fontFamily: 'DMSans_700Bold',
+    color: theme.accent,
+  },
+  statusPillText: {
+    fontSize: 12,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.textDim,
+  },
+  statusPillTextActive: {
+    color: theme.textBright,
+  },
+
+  // Friends
   friendsSection: {
     marginTop: 20,
     paddingHorizontal: 20,
@@ -932,7 +572,7 @@ const styles = StyleSheet.create({
   friendCaughtUp: {
     fontSize: 12,
     fontFamily: 'DMSans_600SemiBold',
-    color: 'rgba(74,222,128,0.7)',
+    color: theme.successDim,
   },
   friendsStatusSection: {
     marginTop: 20,
@@ -948,127 +588,6 @@ const styles = StyleSheet.create({
   },
   friendRatingText: {
     fontSize: 12,
-    fontFamily: 'DMSans_700Bold',
-  },
-  statusRow: {
-    flexDirection: 'row',
-    gap: 8,
-  },
-  statusPill: {
-    flex: 1,
-    flexDirection: 'row',
-    paddingVertical: 10,
-    borderRadius: 8,
-    borderWidth: 1,
-    borderColor: theme.border,
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 4,
-  },
-  statusPillEmpty: {
-    borderColor: 'rgba(255,107,53,0.3)',
-    borderStyle: 'dashed',
-  },
-  statusPillPressed: {
-    backgroundColor: 'rgba(255,107,53,0.08)',
-  },
-  statusPillActive: {
-    backgroundColor: theme.accent,
-    borderColor: theme.accent,
-    borderStyle: 'solid',
-  },
-  statusPillPlus: {
-    fontSize: 14,
-    fontFamily: 'DMSans_700Bold',
-    color: theme.accent,
-  },
-  statusPillText: {
-    fontSize: 12,
-    fontFamily: 'DMSans_600SemiBold',
-    color: theme.textDim,
-  },
-  statusPillTextActive: {
-    color: '#fff',
-  },
-
-  // Friend Ratings Modal
-  modalContainer: {
-    flex: 1,
-    backgroundColor: theme.bg,
-  },
-  modalHeader: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingHorizontal: 16,
-    paddingVertical: 16,
-    borderBottomWidth: 1,
-    borderBottomColor: theme.border,
-  },
-  modalTitle: {
-    fontSize: 18,
-    fontFamily: 'DMSans_700Bold',
-    color: theme.text,
-  },
-  modalDone: {
-    fontSize: 15,
-    fontFamily: 'DMSans_600SemiBold',
-    color: theme.accent,
-  },
-  modalEmpty: {
-    padding: 32,
-    alignItems: 'center',
-  },
-  modalEmptyText: {
-    fontSize: 14,
-    fontFamily: 'DMSans_400Regular',
-    color: theme.textDim,
-  },
-  friendRatingRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    gap: 12,
-    borderBottomWidth: 1,
-    borderBottomColor: theme.border,
-  },
-  friendRatingAvatar: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
-    backgroundColor: theme.bgCard,
-    borderWidth: 1,
-    borderColor: theme.border,
-    alignItems: 'center',
-  },
-  friendRatingAvatarImage: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
-    justifyContent: 'center',
-  },
-  friendRatingAvatarText: {
-    fontSize: 14,
-    fontFamily: 'DMSans_700Bold',
-    color: theme.textDim,
-  },
-  friendRatingName: {
-    flex: 1,
-    fontSize: 15,
-    fontFamily: 'DMSans_600SemiBold',
-    color: theme.text,
-  },
-  friendRatingBadge: {
-    minWidth: 42,
-    height: 28,
-    borderRadius: 14,
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingHorizontal: 8,
-  },
-  friendRatingValue: {
-    fontSize: 14,
     fontFamily: 'DMSans_700Bold',
   },
 });

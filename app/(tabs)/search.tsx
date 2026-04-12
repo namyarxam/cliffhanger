@@ -18,6 +18,7 @@ import { getPopularWithFriends } from '@/src/lib/watchlist';
 import type { PopularShow } from '@/src/lib/watchlist';
 import ShowCard from '@/src/components/ShowCard';
 import type { ShowSummary } from '@/src/lib/types';
+import { silentCatch } from '@/src/lib/errorLog';
 
 export default function SearchScreen() {
   const router = useRouter();
@@ -35,7 +36,7 @@ export default function SearchScreen() {
     if (!userId) return;
     getPopularWithFriends(userId)
       .then(setPopular)
-      .catch(() => {})
+      .catch(silentCatch('search:popular'))
       .finally(() => setLoadingPopular(false));
   }, [userId]);
 
