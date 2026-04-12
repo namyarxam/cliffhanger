@@ -38,7 +38,6 @@ export default function MyShowsScreen() {
   const [nextEpisodes, setNextEpisodes] = useState<Map<string, { season: number; episode: number }>>(new Map());
   const [caughtUp, setCaughtUp] = useState<Set<string>>(new Set());
   const [loading, setLoading] = useState(true);
-  const [dataReady, setDataReady] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
 
@@ -64,8 +63,7 @@ export default function MyShowsScreen() {
 
   useFocusEffect(
     useCallback(() => {
-      setDataReady(false);
-      fetchData().then(() => setDataReady(true));
+      fetchData();
     }, [fetchData])
   );
 
@@ -175,7 +173,7 @@ export default function MyShowsScreen() {
         );
       }}
       ListHeaderComponent={
-        dataReady && profile?.show_top4_in_list !== false && displayList && displayList.items.length > 0 ? (
+        profile?.show_top4_in_list !== false && displayList && displayList.items.length > 0 ? (
           <TopShowsRow items={displayList.items} onPress={(itemId) => handlePress(itemId)} size="large" />
         ) : null
       }

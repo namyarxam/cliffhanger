@@ -623,7 +623,7 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   castItem: {
-    flex: 1,
+    width: '31%',
     alignItems: 'center',
     gap: 4,
   },

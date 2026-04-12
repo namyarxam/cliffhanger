@@ -556,6 +556,7 @@ export async function getMessages(
       conversation_id: m.conversation_id,
       user_id: m.user_id,
       message: m.message,
+      gif_url: m.gif_url ?? null,
       created_at: m.created_at,
       sender_name: profile?.display_name ?? 'Unknown',
       sender_avatar: profile?.avatar_url ?? null,
@@ -566,9 +567,10 @@ export async function getMessages(
 export async function sendMessage(
   conversationId: string,
   userId: string,
-  message: string,
+  message?: string,
+  gifUrl?: string,
 ): Promise<Message> {
-  const trimmed = message.trim();
+  const trimmed = message?.trim() || null;
 
   const { data, error } = await supabase
     .from('messages')
@@ -576,6 +578,7 @@ export async function sendMessage(
       conversation_id: conversationId,
       user_id: userId,
       message: trimmed,
+      gif_url: gifUrl ?? null,
     })
     .select()
     .single();
@@ -593,6 +596,7 @@ export async function sendMessage(
     conversation_id: data.conversation_id,
     user_id: data.user_id,
     message: data.message,
+    gif_url: data.gif_url ?? null,
     created_at: data.created_at,
     sender_name: profile?.display_name ?? 'Unknown',
     sender_avatar: profile?.avatar_url ?? null,

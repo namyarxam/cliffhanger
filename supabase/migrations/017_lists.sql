@@ -11,7 +11,7 @@ CREATE TABLE public.lists (
 CREATE TABLE public.list_items (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   list_id UUID NOT NULL REFERENCES public.lists(id) ON DELETE CASCADE,
-  position INTEGER NOT NULL CHECK (position BETWEEN 1 AND 4),
+  position INTEGER NOT NULL CHECK (position BETWEEN 1 AND 10),
   item_id TEXT NOT NULL,
   item_title TEXT NOT NULL,
   item_image TEXT,

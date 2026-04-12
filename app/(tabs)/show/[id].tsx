@@ -6,7 +6,6 @@ import {
   Pressable,
   StyleSheet,
   ActivityIndicator,
-  SafeAreaView,
   Alert,
   LayoutAnimation,
   Modal,
@@ -15,6 +14,7 @@ import {
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Image } from 'expo-image';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { theme } from '@/src/lib/theme';
 
 import { fetchShow } from '@/src/lib/data';
@@ -618,11 +618,15 @@ export default function ShowDetailScreen() {
             keyExtractor={item => item.profile.id}
             renderItem={({ item }) => (
               <View style={styles.friendRatingRow}>
-                <View style={styles.friendRatingAvatar}>
-                  <Text style={styles.friendRatingAvatarText}>
-                    {(item.profile.display_name[0] || '?').toUpperCase()}
-                  </Text>
-                </View>
+                {item.profile.avatar_url ? (
+                  <Image source={{ uri: item.profile.avatar_url }} style={styles.friendRatingAvatarImage} contentFit="cover" />
+                ) : (
+                  <View style={styles.friendRatingAvatar}>
+                    <Text style={styles.friendRatingAvatarText}>
+                      {(item.profile.display_name[0] || '?').toUpperCase()}
+                    </Text>
+                  </View>
+                )}
                 <Text style={styles.friendRatingName} numberOfLines={1}>{item.profile.display_name}</Text>
                 <View style={[styles.friendRatingBadge, { backgroundColor: `${getUserRatingColor(item.rating!)}20` }]}>
                   <Text style={[styles.friendRatingValue, { color: getUserRatingColor(item.rating!) }]}>
@@ -1028,6 +1032,11 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: theme.border,
     alignItems: 'center',
+  },
+  friendRatingAvatarImage: {
+    width: 36,
+    height: 36,
+    borderRadius: 18,
     justifyContent: 'center',
   },
   friendRatingAvatarText: {

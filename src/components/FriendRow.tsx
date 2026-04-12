@@ -1,5 +1,6 @@
 import { memo } from 'react';
 import { View, Text, Pressable, StyleSheet } from 'react-native';
+import { Image } from 'expo-image';
 import { theme } from '@/src/lib/theme';
 import type { UserProfile } from '@/src/lib/types';
 
@@ -29,9 +30,13 @@ export default memo(function FriendRow({
       style={({ pressed }) => [styles.container, pressed && onPress && styles.pressed]}
       onPress={() => onPress?.(user.id)}
     >
-      <View style={styles.avatar}>
-        <Text style={styles.avatarText}>{getInitial(user.display_name || user.username)}</Text>
-      </View>
+      {user.avatar_url ? (
+        <Image source={{ uri: user.avatar_url }} style={styles.avatarImage} contentFit="cover" />
+      ) : (
+        <View style={styles.avatar}>
+          <Text style={styles.avatarText}>{getInitial(user.display_name || user.username)}</Text>
+        </View>
+      )}
 
       <View style={styles.info}>
         <Text style={styles.displayName} numberOfLines={1}>
@@ -118,6 +123,11 @@ const styles = StyleSheet.create({
     borderColor: theme.border,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  avatarImage: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
   },
   avatarText: {
     fontSize: 16,

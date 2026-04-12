@@ -3,12 +3,13 @@ import {
   View,
   Text,
   SectionList,
+  ScrollView,
   StyleSheet,
   ActivityIndicator,
   Pressable,
-  SafeAreaView,
 } from 'react-native';
 import { useLocalSearchParams, useRouter, Stack } from 'expo-router';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { Image } from 'expo-image';
@@ -127,76 +128,77 @@ export default function UserProfileScreen() {
         <View style={styles.center}>
           <ActivityIndicator color={theme.accent} size="large" />
         </View>
-      ) : activeTab === 'watchlist' ? (
-        <SectionList
-          sections={sections}
-          keyExtractor={item => item.show_id}
-          renderItem={({ item }) => (
-            <WatchlistCard show={item} onPress={handleShowPress} />
-          )}
-          renderSectionHeader={({ section }) => (
-            <View style={styles.sectionHeader}>
-              <Text style={styles.sectionTitle}>{section.title}</Text>
-              <Text style={styles.sectionCount}>{section.data.length}</Text>
-            </View>
-          )}
-          ListHeaderComponent={
-            <View style={styles.profileHeader}>
+      ) : (
+        <ScrollView contentContainerStyle={styles.list}>
+          <View style={styles.profileHeader}>
+            {profile?.avatar_url ? (
+              <Image source={{ uri: profile.avatar_url }} style={styles.avatarImage} contentFit="cover" />
+            ) : (
               <View style={styles.avatar}>
                 <Text style={styles.avatarText}>
                   {(profile?.display_name || profile?.username || '?')[0].toUpperCase()}
                 </Text>
               </View>
-              <Text style={styles.displayName}>
-                {profile?.display_name || 'Unknown'}
-              </Text>
-              <Text style={styles.username}>@{profile?.username || 'unknown'}</Text>
+            )}
+            <Text style={styles.displayName}>
+              {profile?.display_name || 'Unknown'}
+            </Text>
+            <Text style={styles.username}>@{profile?.username || 'unknown'}</Text>
 
-              {userId && id !== userId && friendStatus?.status !== 'accepted' && (
+            {userId && id !== userId && friendStatus?.status !== 'accepted' && (
+              <Pressable
+                style={({ pressed }) => [styles.friendButton, pressed && styles.friendButtonPressed]}
+                onPress={handleFriendAction}
+                disabled={friendStatus?.status === 'pending' && !friendStatus.is_incoming}
+              >
+                <Text style={styles.friendButtonText}>{friendButtonText}</Text>
+              </Pressable>
+            )}
+
+            {friendLists.length > 0 && (
+              <View style={styles.tabToggle}>
                 <Pressable
-                  style={({ pressed }) => [styles.friendButton, pressed && styles.friendButtonPressed]}
-                  onPress={handleFriendAction}
-                  disabled={friendStatus?.status === 'pending' && !friendStatus.is_incoming}
+                  style={[styles.tabToggleBtn, activeTab === 'watchlist' && styles.tabToggleBtnActive]}
+                  onPress={() => setActiveTab('watchlist')}
                 >
-                  <Text style={styles.friendButtonText}>{friendButtonText}</Text>
+                  <Text style={[styles.tabToggleText, activeTab === 'watchlist' && styles.tabToggleTextActive]}>Watchlist</Text>
                 </Pressable>
-              )}
+                <Pressable
+                  style={[styles.tabToggleBtn, (activeTab as string) === 'lists' && styles.tabToggleBtnActive]}
+                  onPress={() => setActiveTab('lists')}
+                >
+                  <Text style={[styles.tabToggleText, (activeTab as string) === 'lists' && styles.tabToggleTextActive]}>Lists</Text>
+                </Pressable>
+              </View>
+            )}
+          </View>
 
-              {friendLists.length > 0 && (
-                <View style={styles.tabToggle}>
-                  <Pressable
-                    style={[styles.tabToggleBtn, activeTab === 'watchlist' && styles.tabToggleBtnActive]}
-                    onPress={() => setActiveTab('watchlist')}
-                  >
-                    <Text style={[styles.tabToggleText, activeTab === 'watchlist' && styles.tabToggleTextActive]}>Watchlist</Text>
-                  </Pressable>
-                  <Pressable
-                    style={[styles.tabToggleBtn, (activeTab as string) === 'lists' && styles.tabToggleBtnActive]}
-                    onPress={() => setActiveTab('lists')}
-                  >
-                    <Text style={[styles.tabToggleText, (activeTab as string) === 'lists' && styles.tabToggleTextActive]}>Lists</Text>
-                  </Pressable>
+          {activeTab === 'watchlist' ? (
+            sections.length === 0 ? (
+              <View style={styles.center}>
+                <Text style={styles.emptyText}>No shows tracked yet</Text>
+              </View>
+            ) : (
+              sections.map(section => (
+                <View key={section.title}>
+                  <View style={styles.sectionHeader}>
+                    <Text style={styles.sectionTitle}>{section.title}</Text>
+                    <Text style={styles.sectionCount}>{section.data.length}</Text>
+                  </View>
+                  {section.data.map(item => (
+                    <WatchlistCard key={item.show_id} show={item} onPress={handleShowPress} />
+                  ))}
                 </View>
-              )}
-            </View>
-          }
-          ListEmptyComponent={
-            <View style={styles.center}>
-              <Text style={styles.emptyText}>No shows tracked yet</Text>
-            </View>
-          }
-          contentContainerStyle={styles.list}
-          stickySectionHeadersEnabled={false}
-        />
-      ) : (
-        <View style={styles.listsContent}>
-            {friendLists.map(list => (
+              ))
+            )
+          ) : (
+            friendLists.map(list => (
               <View key={list.id} style={styles.friendListRow}>
                 <View style={styles.friendListInfo}>
                   <Text style={styles.friendListName}>{list.name}</Text>
                   <Text style={styles.friendListType}>{list.type === 'shows' ? 'Shows' : 'Characters'}</Text>
                 </View>
-                <View style={styles.friendListThumbnails}>
+                <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.friendListThumbnails}>
                   {list.items.map(item => (
                     item.item_image ? (
                       <Image key={item.item_id} source={{ uri: item.item_image }} style={styles.friendListThumb} contentFit="cover" />
@@ -206,10 +208,11 @@ export default function UserProfileScreen() {
                       </View>
                     )
                   ))}
-                </View>
+                </ScrollView>
               </View>
-            ))}
-          </View>
+            ))
+          )}
+        </ScrollView>
       )}
     </SafeAreaView>
   );
@@ -252,6 +255,14 @@ const styles = StyleSheet.create({
     borderColor: theme.border,
     justifyContent: 'center',
     alignItems: 'center',
+    marginBottom: 12,
+  },
+  avatarImage: {
+    width: 64,
+    height: 64,
+    borderRadius: 32,
+    borderWidth: 2,
+    borderColor: theme.accent,
     marginBottom: 12,
   },
   avatarText: {

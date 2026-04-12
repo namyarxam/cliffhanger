@@ -7,10 +7,10 @@ import {
   Pressable,
   StyleSheet,
   ActivityIndicator,
-  SafeAreaView,
   Keyboard,
 } from 'react-native';
 import { useRouter, useFocusEffect } from 'expo-router';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { Image } from 'expo-image';
 import { theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
@@ -89,10 +89,10 @@ export default function ListsScreen() {
             <View style={styles.listInfo}>
               <View style={styles.listTitleRow}>
                 <Text style={styles.listName} numberOfLines={1}>{item.name}</Text>
-                {item.is_display && <View style={styles.pinBadge}><Text style={styles.pinBadgeText}>Display</Text></View>}
+                {item.is_display && <Text style={styles.pinStar}>★</Text>}
               </View>
               <Text style={styles.listMeta}>
-                {item.type === 'shows' ? 'Shows' : 'Characters'} · {item.items.length}/4
+                {item.items.length} {item.type === 'shows' ? (item.items.length === 1 ? 'Show' : 'Shows') : (item.items.length === 1 ? 'Character' : 'Characters')}
               </Text>
             </View>
             <View style={styles.listThumbnails}>
@@ -209,8 +209,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: 16,
-    paddingVertical: 14,
-    gap: 12,
+    paddingVertical: 18,
+    gap: 14,
     borderBottomWidth: 1,
     borderBottomColor: theme.border,
   },
@@ -224,21 +224,14 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   listName: {
-    fontSize: 16,
+    fontSize: 17,
     fontFamily: 'DMSans_600SemiBold',
     color: theme.text,
     flexShrink: 1,
   },
-  pinBadge: {
-    backgroundColor: 'rgba(255,107,53,0.15)',
-    paddingHorizontal: 6,
-    paddingVertical: 2,
-    borderRadius: 4,
-  },
-  pinBadgeText: {
-    fontSize: 10,
-    fontFamily: 'DMSans_600SemiBold',
-    color: theme.accent,
+  pinStar: {
+    fontSize: 14,
+    color: '#fbbf24',
   },
   listMeta: {
     fontSize: 12,
@@ -250,9 +243,9 @@ const styles = StyleSheet.create({
     gap: 4,
   },
   thumbnail: {
-    width: 28,
-    height: 40,
-    borderRadius: 3,
+    width: 36,
+    height: 52,
+    borderRadius: 4,
   },
   thumbnailPlaceholder: {
     backgroundColor: theme.bgCard,

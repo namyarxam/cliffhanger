@@ -6,10 +6,10 @@ import {
   FlatList,
   StyleSheet,
   ActivityIndicator,
-  SafeAreaView,
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useFocusEffect } from 'expo-router';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { useRefreshBadge } from './_layout';

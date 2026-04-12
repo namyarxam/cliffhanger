@@ -154,7 +154,8 @@ export interface Message {
   id: string;
   conversation_id: string;
   user_id: string;
-  message: string;
+  message: string | null;
+  gif_url: string | null;
   created_at: string;
   sender_name: string;
   sender_avatar: string | null;

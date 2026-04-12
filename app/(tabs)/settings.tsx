@@ -4,9 +4,9 @@ import {
   Text,
   Pressable,
   StyleSheet,
-  SafeAreaView,
   Alert,
 } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { supabase } from '@/src/lib/supabase';

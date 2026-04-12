@@ -42,6 +42,7 @@ import {
 } from '@/src/lib/conversations';
 import { getUserShows } from '@/src/lib/watchlist';
 import FriendRow from '@/src/components/FriendRow';
+import GifPicker from '@/src/components/GifPicker';
 import type { Conversation, ConversationMember, Message, UserProfile, UserShow } from '@/src/lib/types';
 
 function formatChatDate(dateStr: string): string {
@@ -72,6 +73,7 @@ export default function ChatDetailScreen() {
   const memberProfileMap = useRef(new Map<string, { name: string; avatar: string | null }>());
 
   // Modal state
+  const [gifPickerVisible, setGifPickerVisible] = useState(false);
   const [settingsModalVisible, setSettingsModalVisible] = useState(false);
   const [inviteModalVisible, setInviteModalVisible] = useState(false);
   const [showPickerVisible, setShowPickerVisible] = useState(false);
@@ -123,7 +125,13 @@ export default function ChatDetailScreen() {
     }
   }, [id]);
 
-  useEffect(() => { fetchData(); }, [fetchData]);
+  useEffect(() => {
+    setConversation(null);
+    setMembers([]);
+    setMessages([]);
+    setLoading(true);
+    fetchData();
+  }, [fetchData]);
 
   useEffect(() => {
     const sub = Keyboard.addListener('keyboardWillShow', () => setShowMembers(false));
@@ -156,6 +164,7 @@ export default function ChatDetailScreen() {
       conversation_id: id,
       user_id: userId,
       message: text,
+      gif_url: null,
       created_at: new Date().toISOString(),
       sender_name: profile?.name ?? 'You',
       sender_avatar: profile?.avatar ?? null,
@@ -171,6 +180,31 @@ export default function ChatDetailScreen() {
       setSending(false);
     }
   }, [userId, id, messageText, sending]);
+
+  const handleSendGif = useCallback(async (gifUrl: string) => {
+    if (!userId || !id) return;
+    setGifPickerVisible(false);
+
+    const profile = memberProfileMap.current.get(userId);
+    const optimistic: Message = {
+      id: `temp-${Date.now()}`,
+      conversation_id: id,
+      user_id: userId,
+      message: null,
+      gif_url: gifUrl,
+      created_at: new Date().toISOString(),
+      sender_name: profile?.name ?? 'You',
+      sender_avatar: profile?.avatar ?? null,
+    };
+    setMessages(prev => [optimistic, ...prev]);
+
+    try {
+      const saved = await sendMessage(id, userId, undefined, gifUrl);
+      setMessages(prev => prev.map(m => m.id === optimistic.id ? saved : m));
+    } catch {
+      setMessages(prev => prev.filter(m => m.id !== optimistic.id));
+    }
+  }, [userId, id]);
 
   const handleLeave = useCallback(() => {
     if (!userId || !id) return;
@@ -365,10 +399,17 @@ export default function ChatDetailScreen() {
                           isMe ? styles.messageRowSelf : styles.messageRowOther,
                           { marginRight: dragX.interpolate({ inputRange: [-23, 0], outputRange: [23, 0], extrapolate: 'clamp' }) },
                         ]}>
-                          <View style={[styles.messageBubble, isMe ? styles.messageSelf : styles.messageOther]}>
-                            {!isMe && members.length > 2 && <Text style={styles.messageSender}>{item.sender_name}</Text>}
-                            <Text style={[styles.messageText, isMe && styles.messageTextSelf]}>{item.message}</Text>
-                          </View>
+                          {item.gif_url ? (
+                            <View style={[styles.gifBubble, isMe ? styles.gifSelf : styles.gifOther]}>
+                              {!isMe && members.length > 2 && <Text style={styles.messageSender}>{item.sender_name}</Text>}
+                              <Image source={{ uri: item.gif_url }} style={styles.gifImage} contentFit="cover" autoplay />
+                            </View>
+                          ) : (
+                            <View style={[styles.messageBubble, isMe ? styles.messageSelf : styles.messageOther]}>
+                              {!isMe && members.length > 2 && <Text style={styles.messageSender}>{item.sender_name}</Text>}
+                              <Text style={[styles.messageText, isMe && styles.messageTextSelf]}>{item.message}</Text>
+                            </View>
+                          )}
                         </Animated.View>
                         <Animated.View style={[styles.timeReveal, {
                           width: dragX.interpolate({ inputRange: [-23, 0], outputRange: [23, 0], extrapolate: 'clamp' }),
@@ -389,7 +430,10 @@ export default function ChatDetailScreen() {
                 contentContainerStyle={styles.messageList}
                 ListEmptyComponent={<View style={styles.chatEmpty}><Text style={styles.chatEmptyText}>No messages yet. Start the conversation!</Text></View>}
               />
-              <View style={[styles.inputBar, { paddingBottom: Math.max(8, insets.bottom) }]}>
+              <View style={[styles.inputBar, { paddingBottom: insets.bottom > 0 ? insets.bottom - 20 : 13 }]}>
+                <Pressable style={({ pressed }) => pressed && { opacity: 0.5 }} onPress={() => setGifPickerVisible(true)}>
+                  <Text style={styles.gifButton}>GIF</Text>
+                </Pressable>
                 <TextInput style={styles.messageInput} placeholder="Message..." placeholderTextColor={theme.textFaint} value={messageText} onChangeText={setMessageText} multiline maxLength={2000} />
                 <Pressable
                   style={({ pressed }) => [styles.sendButton, (!messageText.trim() || sending) && styles.sendButtonDisabled, pressed && { opacity: 0.7 }]}
@@ -509,6 +553,17 @@ export default function ChatDetailScreen() {
         </View>
       </Modal>
 
+      {/* GIF Picker Modal */}
+      <Modal visible={gifPickerVisible} animationType="slide" presentationStyle="pageSheet" onRequestClose={() => setGifPickerVisible(false)}>
+        <View style={styles.modalContainer}>
+          <View style={styles.modalHeader}>
+            <Text style={styles.modalTitle}>Send a GIF</Text>
+            <Pressable onPress={() => setGifPickerVisible(false)}><Text style={styles.modalDone}>Cancel</Text></Pressable>
+          </View>
+          <GifPicker onSelect={handleSendGif} />
+        </View>
+      </Modal>
+
       {/* Show Picker Modal */}
       <Modal visible={showPickerVisible} animationType="slide" presentationStyle="pageSheet" onRequestClose={() => setShowPickerVisible(false)}>
         <View style={styles.modalContainer}>
@@ -584,6 +639,10 @@ const styles = StyleSheet.create({
   messageBubble: { maxWidth: '80%', padding: 10, borderRadius: 12, flexShrink: 1 },
   messageSelf: { backgroundColor: theme.accent, borderBottomRightRadius: 4 },
   messageOther: { backgroundColor: theme.bgCard, borderBottomLeftRadius: 4 },
+  gifBubble: { maxWidth: '65%', marginBottom: 4 },
+  gifSelf: { alignSelf: 'flex-end' },
+  gifOther: { alignSelf: 'flex-start' },
+  gifImage: { width: '100%', aspectRatio: 1.5, borderRadius: 12 },
   messageSender: { fontSize: 11, fontFamily: 'DMSans_600SemiBold', color: theme.textDim, marginBottom: 2 },
   messageText: { fontSize: 14, fontFamily: 'DMSans_400Regular', color: theme.text },
   messageTextSelf: { color: '#fff' },
@@ -595,10 +654,11 @@ const styles = StyleSheet.create({
   chatEmptyText: { fontSize: 13, fontFamily: 'DMSans_400Regular', color: theme.textFaint, textAlign: 'center' },
 
   // Input
-  inputBar: { flexDirection: 'row', alignItems: 'flex-end', paddingHorizontal: 12, paddingVertical: 8, borderTopWidth: 1, borderTopColor: theme.border, gap: 8 },
+  inputBar: { flexDirection: 'row', alignItems: 'flex-end', paddingHorizontal: 12, paddingTop: 12, paddingBottom: 4, borderTopWidth: 1, borderTopColor: theme.border, gap: 8 },
   messageInput: { flex: 1, backgroundColor: theme.bgCard, borderRadius: 20, paddingHorizontal: 16, paddingVertical: 10, fontSize: 14, fontFamily: 'DMSans_400Regular', color: theme.text, maxHeight: 100, borderWidth: 1, borderColor: theme.border },
   sendButton: { backgroundColor: theme.accent, borderRadius: 20, paddingHorizontal: 16, paddingVertical: 10 },
   sendButtonDisabled: { opacity: 0.4 },
+  gifButton: { fontSize: 12, fontFamily: 'DMSans_700Bold', color: theme.accent, borderWidth: 1, borderColor: theme.accent, borderRadius: 6, paddingHorizontal: 8, paddingVertical: 10, overflow: 'hidden' },
   sendButtonText: { fontSize: 14, fontFamily: 'DMSans_600SemiBold', color: '#fff' },
 
   // Locked

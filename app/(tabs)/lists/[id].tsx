@@ -7,12 +7,12 @@ import {
   Pressable,
   StyleSheet,
   ActivityIndicator,
-  SafeAreaView,
   Alert,
   Modal,
   Keyboard,
 } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { Image } from 'expo-image';
 import { theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
@@ -262,13 +262,16 @@ export default function ListDetailScreen() {
 
             {/* Display toggle */}
             <Pressable style={styles.displayToggle} onPress={handleToggleDisplay}>
-              <Text style={styles.displayToggleText}>Pin as display list</Text>
+              <View style={styles.displayToggleInfo}>
+                <Text style={styles.displayToggleText}>Pin as display list</Text>
+                <Text style={styles.displayToggleHint}>First 4 items shown on your profile</Text>
+              </View>
               <View style={[styles.toggleTrack, list.is_display && styles.toggleTrackOn]}>
                 <View style={[styles.toggleThumb, list.is_display && styles.toggleThumbOn]} />
               </View>
             </Pressable>
 
-            <Text style={styles.itemsLabel}>Items ({list.items.length}/4)</Text>
+            <Text style={styles.itemsLabel}>Items ({list.items.length}/10)</Text>
           </View>
         }
         renderItem={({ item }) => {
@@ -304,7 +307,7 @@ export default function ListDetailScreen() {
         }}
         ListFooterComponent={
           <View style={styles.footerSection}>
-            {list.items.length < 4 && (
+            {list.items.length < 10 && (
               <Pressable style={({ pressed }) => [styles.addButton, pressed && { opacity: 0.7 }]} onPress={handleOpenPicker}>
                 <Text style={styles.addButtonText}>+ Add {list.type === 'shows' ? 'Show' : 'Character'}</Text>
               </Pressable>
@@ -340,6 +343,7 @@ export default function ListDetailScreen() {
             <View style={styles.center}><ActivityIndicator color={theme.accent} size="large" /></View>
           ) : pickerStep === 'shows' ? (
             <FlatList
+              key="shows-list"
               data={(searchQuery.trim().length >= 3 ? searchResults : myShows) as any[]}
               keyExtractor={(item: any) => item.show_id ?? item.id}
               keyboardShouldPersistTaps="handled"
@@ -401,6 +405,7 @@ export default function ListDetailScreen() {
               <View style={styles.center}><Text style={styles.emptyText}>No character photos available</Text></View>
             ) : (
               <FlatList
+                key="cast-grid"
                 data={castList}
                 keyExtractor={(item, i) => `${item.characterName}-${i}`}
                 numColumns={3}
@@ -459,7 +464,9 @@ const styles = StyleSheet.create({
   typeBadge: { fontSize: 12, fontFamily: 'DMSans_500Medium', color: theme.textDim },
 
   displayToggle: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', backgroundColor: theme.bgCard, borderRadius: 8, padding: 14, borderWidth: 1, borderColor: theme.border },
+  displayToggleInfo: { flex: 1 },
   displayToggleText: { fontSize: 14, fontFamily: 'DMSans_500Medium', color: theme.text },
+  displayToggleHint: { fontSize: 11, fontFamily: 'DMSans_400Regular', color: theme.textFaint, marginTop: 2 },
   toggleTrack: { width: 40, height: 22, borderRadius: 11, backgroundColor: 'rgba(255,255,255,0.1)', justifyContent: 'center', paddingHorizontal: 2 },
   toggleTrackOn: { backgroundColor: theme.accent },
   toggleThumb: { width: 18, height: 18, borderRadius: 9, backgroundColor: '#fff' },
@@ -500,9 +507,9 @@ const styles = StyleSheet.create({
   pickerTitle: { flex: 1, fontSize: 14, fontFamily: 'DMSans_500Medium', color: theme.text },
   pickerAdded: { fontSize: 12, fontFamily: 'DMSans_500Medium', color: theme.textFaint },
 
-  castContent: { padding: 12 },
-  castGrid: { gap: 8, marginBottom: 8 },
-  castItem: { flex: 1, alignItems: 'center', gap: 4 },
+  castContent: { paddingHorizontal: 16, paddingTop: 12 },
+  castGrid: { justifyContent: 'space-between', marginBottom: 12 },
+  castItem: { width: '31%', alignItems: 'center', gap: 4 },
   castImage: { width: '100%', aspectRatio: 0.7, borderRadius: 8 },
   castCharacter: { fontSize: 11, fontFamily: 'DMSans_600SemiBold', color: theme.text, textAlign: 'center' },
   castActor: { fontSize: 10, fontFamily: 'DMSans_400Regular', color: theme.textFaint, textAlign: 'center' },
