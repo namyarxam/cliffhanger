@@ -115,7 +115,7 @@ export async function fetchCast(showId: string): Promise<CastMember[]> {
     .map(entry => ({
       personName: entry.person?.name ?? 'Unknown',
       characterName: entry.character?.name ?? 'Unknown',
-      image: entry.character?.image?.medium ?? entry.person?.image?.medium ?? null,
+      image: entry.character?.image?.medium ?? null,
     }))
     .filter(c => c.image != null);
 }

@@ -328,9 +328,13 @@ export default function ChatDetailScreen() {
                 <Image source={{ uri: conversation.show_image }} style={styles.headerPoster} contentFit="cover" />
               </View>
             ) : isDM && otherMembers.length > 0 ? (
-              <View style={styles.headerAvatar}>
-                <Text style={styles.headerAvatarText}>{(otherMembers[0].display_name[0] || '?').toUpperCase()}</Text>
-              </View>
+              otherMembers[0].avatar_url ? (
+                <Image source={{ uri: otherMembers[0].avatar_url }} style={styles.headerAvatarImage} contentFit="cover" />
+              ) : (
+                <View style={styles.headerAvatar}>
+                  <Text style={styles.headerAvatarText}>{(otherMembers[0].display_name[0] || '?').toUpperCase()}</Text>
+                </View>
+              )
             ) : null}
             <View style={styles.headerInfo}>
               <Text style={styles.headerName} numberOfLines={1}>{displayName}</Text>
@@ -359,9 +363,13 @@ export default function ChatDetailScreen() {
                 const isFront = hasShow && m.current_season === frontRunner.season && m.current_episode === frontRunner.episode && frontRunner.season > 0;
                 return (
                   <View key={m.user_id} style={styles.memberRow}>
-                    <View style={styles.memberAvatar}>
-                      <Text style={styles.memberAvatarText}>{(m.display_name[0] || '?').toUpperCase()}</Text>
-                    </View>
+                    {m.avatar_url ? (
+                      <Image source={{ uri: m.avatar_url }} style={styles.memberAvatarImage} contentFit="cover" />
+                    ) : (
+                      <View style={styles.memberAvatar}>
+                        <Text style={styles.memberAvatarText}>{(m.display_name[0] || '?').toUpperCase()}</Text>
+                      </View>
+                    )}
                     <Text style={styles.memberName} numberOfLines={1}>{m.display_name}</Text>
                     {hasShow && (
                       <Text style={[styles.memberProgress, isFront && styles.memberProgressFront]}>
@@ -611,6 +619,7 @@ const styles = StyleSheet.create({
   headerPosterWrap: { width: 40, height: 56, borderRadius: 4, overflow: 'hidden' },
   headerPoster: { width: '100%', height: '100%' },
   headerAvatar: { width: 40, height: 40, borderRadius: 20, backgroundColor: theme.bgCard, borderWidth: 1, borderColor: theme.border, alignItems: 'center', justifyContent: 'center' },
+  headerAvatarImage: { width: 40, height: 40, borderRadius: 20 },
   headerAvatarText: { fontSize: 16, fontFamily: 'DMSans_700Bold', color: theme.textDim },
   headerInfo: { flex: 1, gap: 2 },
   headerName: { fontSize: 15, fontFamily: 'DMSans_700Bold', color: theme.text },
@@ -624,6 +633,7 @@ const styles = StyleSheet.create({
   chevron: { fontSize: 12, color: theme.textDim },
   memberRow: { flexDirection: 'row', alignItems: 'center', paddingHorizontal: 16, paddingVertical: 6, gap: 10 },
   memberAvatar: { width: 28, height: 28, borderRadius: 14, backgroundColor: theme.bgCard, borderWidth: 1, borderColor: theme.border, alignItems: 'center', justifyContent: 'center' },
+  memberAvatarImage: { width: 28, height: 28, borderRadius: 14 },
   memberAvatarText: { fontSize: 12, fontFamily: 'DMSans_700Bold', color: theme.textDim },
   memberName: { flex: 1, fontSize: 13, fontFamily: 'DMSans_500Medium', color: theme.text },
   memberProgress: { fontSize: 12, fontFamily: 'DMSans_400Regular', color: theme.textFaint },

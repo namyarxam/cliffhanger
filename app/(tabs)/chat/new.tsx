@@ -142,11 +142,15 @@ export default function NewChatScreen() {
                   style={[styles.friendRow, isSelected && styles.friendRowSelected]}
                   onPress={() => toggleFriend(user.id)}
                 >
-                  <View style={styles.friendAvatar}>
-                    <Text style={styles.friendAvatarText}>
-                      {(user.display_name[0] || '?').toUpperCase()}
-                    </Text>
-                  </View>
+                  {user.avatar_url ? (
+                    <Image source={{ uri: user.avatar_url }} style={styles.friendAvatarImage} contentFit="cover" />
+                  ) : (
+                    <View style={styles.friendAvatar}>
+                      <Text style={styles.friendAvatarText}>
+                        {(user.display_name[0] || '?').toUpperCase()}
+                      </Text>
+                    </View>
+                  )}
                   <View style={styles.friendInfo}>
                     <Text style={styles.friendName} numberOfLines={1}>{user.display_name}</Text>
                     <Text style={styles.friendUsername}>@{user.username}</Text>
@@ -304,6 +308,11 @@ const styles = StyleSheet.create({
     borderColor: theme.border,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  friendAvatarImage: {
+    width: 36,
+    height: 36,
+    borderRadius: 18,
   },
   friendAvatarText: {
     fontSize: 14,

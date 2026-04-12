@@ -509,11 +509,15 @@ export default function ShowDetailScreen() {
               const behind = fw.season > 0 ? getEpisodesBehind(fw.season, fw.episode) : 0;
               return (
                 <View key={fw.profile.id} style={styles.friendWatchRow}>
-                  <View style={styles.friendAvatar}>
-                    <Text style={styles.friendAvatarText}>
-                      {(fw.profile.display_name[0] || '?').toUpperCase()}
-                    </Text>
-                  </View>
+                  {fw.profile.avatar_url ? (
+                    <Image source={{ uri: fw.profile.avatar_url }} style={styles.friendAvatarImage} contentFit="cover" />
+                  ) : (
+                    <View style={styles.friendAvatar}>
+                      <Text style={styles.friendAvatarText}>
+                        {(fw.profile.display_name[0] || '?').toUpperCase()}
+                      </Text>
+                    </View>
+                  )}
                   <Text style={styles.friendName} numberOfLines={1}>{fw.profile.display_name}</Text>
                   {fw.status === 'watched' ? (
                     <Text style={styles.friendCaughtUp}>Finished</Text>
@@ -903,6 +907,11 @@ const styles = StyleSheet.create({
     borderColor: theme.border,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  friendAvatarImage: {
+    width: 28,
+    height: 28,
+    borderRadius: 14,
   },
   friendAvatarText: {
     fontSize: 12,
