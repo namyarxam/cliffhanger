@@ -418,20 +418,20 @@ export async function getConversationMembers(
     .select('*')
     .in('id', userIds);
 
-  const profileMap = new Map<string, { display_name: string; avatar_url: string | null }>();
-  for (const p of profiles ?? []) profileMap.set(p.id, { display_name: p.display_name, avatar_url: p.avatar_url });
+  const profileMap = new Map<string, { display_name: string; username: string; avatar_url: string | null }>();
+  for (const p of profiles ?? []) profileMap.set(p.id, { display_name: p.display_name, username: p.username, avatar_url: p.avatar_url });
 
   // Only fetch show progress if a show is attached
-  const progressMap = new Map<string, { season: number; episode: number }>();
+  const progressMap = new Map<string, { season: number; episode: number; status: string | null }>();
   if (showId) {
     const { data: showProgress } = await supabase
       .from('user_shows')
-      .select('user_id, current_season, current_episode')
+      .select('user_id, current_season, current_episode, status')
       .eq('show_id', showId)
       .in('user_id', userIds);
 
     for (const s of showProgress ?? []) {
-      progressMap.set(s.user_id, { season: s.current_season, episode: s.current_episode });
+      progressMap.set(s.user_id, { season: s.current_season, episode: s.current_episode, status: s.status });
     }
   }
 
@@ -443,9 +443,11 @@ export async function getConversationMembers(
       user_id: m.user_id,
       joined_at: m.joined_at,
       display_name: profile?.display_name ?? 'Unknown',
+      username: profile?.username ?? 'unknown',
       avatar_url: profile?.avatar_url ?? null,
       current_season: progress?.season ?? 0,
       current_episode: progress?.episode ?? 0,
+      show_status: (progress?.status as import('./types').WatchStatus) ?? null,
     };
   });
 }

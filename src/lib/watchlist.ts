@@ -160,6 +160,7 @@ export async function addShow(
       show_network: network,
       current_season: currentSeason,
       current_episode: currentEpisode,
+      new_episodes_seen_at: new Date().toISOString(),
       updated_at: new Date().toISOString(),
     });
 
@@ -329,6 +330,7 @@ export async function markExactlyUpTo(
       current_episode: targetEpisode,
       current_episode_airdate: airdate,
       status: 'currently_watching',
+      new_episodes_seen_at: new Date().toISOString(),
       updated_at: new Date().toISOString(),
     })
     .eq('user_id', userId)

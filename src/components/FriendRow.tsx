@@ -12,6 +12,7 @@ interface Props {
   onPress?: (userId: string) => void;
   onAction?: (userId: string) => void;
   onDecline?: (userId: string) => void;
+  onLongPress?: (userId: string) => void;
 }
 
 function getInitial(name: string): string {
@@ -24,11 +25,13 @@ export default memo(function FriendRow({
   onPress,
   onAction,
   onDecline,
+  onLongPress,
 }: Props) {
   return (
     <Pressable
-      style={({ pressed }) => [styles.container, pressed && onPress && styles.pressed]}
+      style={({ pressed }) => [styles.container, pressed && (onPress || onLongPress) && styles.pressed]}
       onPress={() => onPress?.(user.id)}
+      onLongPress={onLongPress ? () => onLongPress(user.id) : undefined}
     >
       {user.avatar_url ? (
         <Image source={{ uri: user.avatar_url }} style={styles.avatarImage} contentFit="cover" />

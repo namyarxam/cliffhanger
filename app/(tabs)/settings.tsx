@@ -15,7 +15,7 @@ import { registerForPushNotifications, unregisterPushNotifications } from '@/src
 export default function SettingsScreen() {
   const { user, refreshProfile } = useAuth();
   const [pushNewEpisodes, setPushNewEpisodes] = useState(false);
-  const [showTop4, setShowTop4] = useState(true);
+  const [showTop4, setShowTop4] = useState(false);
   const [showPosters, setShowPosters] = useState(true);
 
   useEffect(() => {
@@ -133,6 +133,15 @@ export default function SettingsScreen() {
             <View style={[styles.toggleThumb, showPosters && styles.toggleThumbOn]} />
           </View>
         </Pressable>
+      </View>
+
+      {/* Account section */}
+      <View style={styles.section}>
+        <Text style={styles.sectionTitle}>Account</Text>
+        <View style={styles.aboutRow}>
+          <Text style={styles.aboutLabel}>Email</Text>
+          <Text style={styles.aboutValue}>{user?.email}</Text>
+        </View>
       </View>
 
       {/* About section */}

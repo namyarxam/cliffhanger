@@ -18,11 +18,11 @@ import { useAuth } from '@/src/providers/AuthProvider';
 import { theme } from '@/src/lib/theme';
 import { supabase } from '@/src/lib/supabase';
 import { getFriends, getPendingRequests } from '@/src/lib/friends';
-import { getLists, ensureDefaultList } from '@/src/lib/lists';
+import { getLists, ensureDefaultList, getDisplayList } from '@/src/lib/lists';
 import { getUserShows } from '@/src/lib/watchlist';
 import { fetchCast, searchShows } from '@/src/lib/data';
 import type { CastMember } from '@/src/lib/data';
-import type { UserShow, ShowSummary } from '@/src/lib/types';
+import type { UserShow, ShowSummary, ListItem } from '@/src/lib/types';
 import { silentCatch } from '@/src/lib/errorLog';
 
 type AvatarPickerItem =
@@ -33,9 +33,10 @@ export default function ProfileScreen() {
   const { profile, user, signOut, refreshProfile } = useAuth();
   const router = useRouter();
 
-  const [friendCount, setFriendCount] = useState(0);
+  const [friendCount, setFriendCount] = useState<number | null>(null);
   const [pendingCount, setPendingCount] = useState(0);
-  const [listCount, setListCount] = useState(0);
+  const [listCount, setListCount] = useState<number | null>(null);
+  const [displayItems, setDisplayItems] = useState<ListItem[]>([]);
 
   const [editing, setEditing] = useState(false);
   const [editName, setEditName] = useState('');
@@ -59,6 +60,7 @@ export default function ProfileScreen() {
       getFriends(user.id).then(f => setFriendCount(f.length)).catch(silentCatch('profile:friends'));
       getPendingRequests(user.id).then(p => setPendingCount(p.length)).catch(silentCatch('profile:pending'));
       ensureDefaultList(user.id).then(() => getLists(user.id).then(l => setListCount(l.length))).catch(silentCatch('profile:lists'));
+      getDisplayList(user.id).then(d => setDisplayItems(d?.items.slice(0, 4) ?? [])).catch(silentCatch('profile:display'));
     }, [user?.id])
   );
 
@@ -214,8 +216,20 @@ export default function ProfileScreen() {
             </Pressable>
           )}
           <Text style={styles.username}>@{profile?.username || 'unknown'}</Text>
-          <Text style={styles.email}>{user?.email}</Text>
         </View>
+        {displayItems.length > 0 && (
+          <View style={styles.featuredPosters}>
+            {displayItems.map(item => (
+              item.item_image ? (
+                <Image key={item.item_id} source={{ uri: item.item_image }} style={styles.featuredPoster} contentFit="cover" />
+              ) : (
+                <View key={item.item_id} style={[styles.featuredPoster, { backgroundColor: theme.bgCard, alignItems: 'center', justifyContent: 'center' }]}>
+                  <Text style={{ fontSize: 10 }}>📺</Text>
+                </View>
+              )
+            ))}
+          </View>
+        )}
       </View>
 
       {/* Lists button — prominent */}
@@ -224,7 +238,7 @@ export default function ProfileScreen() {
         onPress={() => router.push('/(tabs)/lists')}
       >
         <Text style={styles.listsButtonText}>My Lists</Text>
-        <Text style={styles.listsButtonCount}>{listCount} {listCount === 1 ? 'list' : 'lists'}</Text>
+        <Text style={[styles.listsButtonCount, listCount === null && { opacity: 0 }]}>{listCount ?? 0} {listCount === 1 ? 'list' : 'lists'}</Text>
       </Pressable>
 
       {/* Friends button */}
@@ -234,7 +248,7 @@ export default function ProfileScreen() {
       >
         <View style={styles.friendsButtonContent}>
           <Text style={styles.friendsButtonText}>Friends</Text>
-          <Text style={styles.friendsCount}>{friendCount}</Text>
+          {friendCount !== null && <Text style={styles.friendsCount}>{friendCount}</Text>}
         </View>
         {pendingCount > 0 && (
           <View style={styles.pendingBadge}>
@@ -435,7 +449,17 @@ const styles = StyleSheet.create({
     color: '#fff',
   },
   headerInfo: {
+    flex: 1,
     gap: 2,
+  },
+  featuredPosters: {
+    flexDirection: 'row',
+    gap: 4,
+  },
+  featuredPoster: {
+    width: 48,
+    height: 68,
+    borderRadius: 4,
   },
   displayName: {
     fontSize: 20,
@@ -488,11 +512,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontFamily: 'DMSans_500Medium',
     color: theme.textDim,
-  },
-  email: {
-    fontSize: 12,
-    fontFamily: 'DMSans_400Regular',
-    color: theme.textFaint,
   },
   listsButton: {
     width: '100%',

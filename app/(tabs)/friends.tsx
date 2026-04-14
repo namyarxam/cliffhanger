@@ -1,4 +1,4 @@
-import { useState, useCallback, useRef } from 'react';
+import { useState, useCallback, useRef, useMemo } from 'react';
 import {
   View,
   Text,
@@ -6,6 +6,9 @@ import {
   FlatList,
   StyleSheet,
   ActivityIndicator,
+  Alert,
+  Pressable,
+  Modal,
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useFocusEffect } from 'expo-router';
@@ -41,11 +44,15 @@ export default function FriendsScreen() {
 
   const [friends, setFriends] = useState<FriendWithProfile[]>([]);
   const [pending, setPending] = useState<FriendWithProfile[]>([]);
-  const [searchResults, setSearchResults] = useState<SearchResult[]>([]);
-  const [query, setQuery] = useState('');
-  const [searching, setSearching] = useState(false);
+  const [filterQuery, setFilterQuery] = useState('');
   const [loading, setLoading] = useState(true);
-  const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Add friend modal state
+  const [addModalVisible, setAddModalVisible] = useState(false);
+  const [addQuery, setAddQuery] = useState('');
+  const [addResults, setAddResults] = useState<SearchResult[]>([]);
+  const [addSearching, setAddSearching] = useState(false);
+  const addDebounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const fetchData = useCallback(async () => {
     if (!userId) return;
@@ -69,22 +76,32 @@ export default function FriendsScreen() {
     }, [fetchData])
   );
 
-  const handleSearch = useCallback((text: string) => {
-    setQuery(text);
-    if (debounceRef.current) clearTimeout(debounceRef.current);
+  // ── Filter friends list ─────────────────────────────────────────────────────
+  const filteredFriends = useMemo(() => {
+    const q = filterQuery.trim().toLowerCase();
+    if (!q) return friends;
+    return friends.filter(f =>
+      f.user.display_name.toLowerCase().includes(q) ||
+      f.user.username.toLowerCase().includes(q)
+    );
+  }, [friends, filterQuery]);
+
+  // ── Add friend modal search ─────────────────────────────────────────────────
+  const handleAddSearch = useCallback((text: string) => {
+    setAddQuery(text);
+    if (addDebounceRef.current) clearTimeout(addDebounceRef.current);
 
     if (text.trim().length < 2) {
-      setSearchResults([]);
-      setSearching(false);
+      setAddResults([]);
+      setAddSearching(false);
       return;
     }
 
-    setSearching(true);
-    debounceRef.current = setTimeout(async () => {
+    setAddSearching(true);
+    addDebounceRef.current = setTimeout(async () => {
       if (!userId) return;
       try {
         const users = await searchUsers(text, userId);
-        // Get friendship status for each result
         const results: SearchResult[] = await Promise.all(
           users.map(async (u) => {
             const fs = await getFriendshipStatus(userId, u.id);
@@ -99,28 +116,27 @@ export default function FriendsScreen() {
             return { user: u, action, friendshipId };
           })
         );
-        setSearchResults(results);
+        setAddResults(results);
       } catch {
-        setSearchResults([]);
+        setAddResults([]);
       } finally {
-        setSearching(false);
+        setAddSearching(false);
       }
     }, 400);
   }, [userId]);
 
-  // Re-run search on focus to refresh stale friend statuses (e.g. pending → accepted)
-  useFocusEffect(
-    useCallback(() => {
-      if (query.trim().length >= 2) handleSearch(query);
-    }, [query, handleSearch])
-  );
+  const handleOpenAddModal = useCallback(() => {
+    setAddQuery('');
+    setAddResults([]);
+    setAddModalVisible(true);
+  }, []);
 
+  // ── Actions ─────────────────────────────────────────────────────────────────
   const handleAdd = useCallback(async (friendId: string) => {
     if (!userId) return;
     try {
       await sendFriendRequest(userId, friendId);
-      // Update search results optimistically
-      setSearchResults(prev =>
+      setAddResults(prev =>
         prev.map(r =>
           r.user.id === friendId ? { ...r, action: 'pending' as FriendAction } : r
         )
@@ -130,9 +146,8 @@ export default function FriendsScreen() {
   }, [userId, fetchData]);
 
   const handleAccept = useCallback(async (friendId: string) => {
-    // Find the friendship ID
     const req = pending.find(p => p.user.id === friendId);
-    const searchReq = searchResults.find(r => r.user.id === friendId);
+    const searchReq = addResults.find(r => r.user.id === friendId);
     const fid = req?.friendship_id ?? searchReq?.friendshipId;
     if (!fid) return;
 
@@ -140,14 +155,13 @@ export default function FriendsScreen() {
       await acceptFriendRequest(fid);
       fetchData();
       refreshBadge();
-      // Update search results
-      setSearchResults(prev =>
+      setAddResults(prev =>
         prev.map(r =>
           r.user.id === friendId ? { ...r, action: 'friends' as FriendAction } : r
         )
       );
     } catch (e) { silentCatch('friends:accept')(e); }
-  }, [pending, searchResults, fetchData]);
+  }, [pending, addResults, fetchData]);
 
   const handleDecline = useCallback(async (friendId: string) => {
     const req = pending.find(p => p.user.id === friendId);
@@ -163,75 +177,78 @@ export default function FriendsScreen() {
     router.push(`/user/${friendUserId}`);
   }, [router]);
 
-  const isSearching = query.trim().length >= 2;
+  const handleRemoveFriend = useCallback((friendUserId: string) => {
+    const friend = friends.find(f => f.user.id === friendUserId);
+    if (!friend) return;
+    Alert.alert(
+      'Remove Friend',
+      `Remove ${friend.user.display_name} as a friend?`,
+      [
+        { text: 'Cancel', style: 'cancel' },
+        {
+          text: 'Remove',
+          style: 'destructive',
+          onPress: async () => {
+            try {
+              await removeFriend(friend.friendship_id);
+              fetchData();
+              refreshBadge();
+            } catch (e) { silentCatch('friends:remove')(e); }
+          },
+        },
+      ],
+    );
+  }, [friends, fetchData, refreshBadge]);
+
+  // ── Build list data ─────────────────────────────────────────────────────────
+  const listData = useMemo(() => {
+    const items: ({ type: 'header'; title: string } | { type: 'pending'; data: FriendWithProfile } | { type: 'friend'; data: FriendWithProfile })[] = [];
+
+    if (pending.length > 0 && !filterQuery.trim()) {
+      items.push({ type: 'header', title: `Requests (${pending.length})` });
+      for (const p of pending) items.push({ type: 'pending', data: p });
+    }
+
+    if (filteredFriends.length > 0) {
+      items.push({ type: 'header', title: `Friends (${friends.length})` });
+      for (const f of filteredFriends) items.push({ type: 'friend', data: f });
+    }
+
+    return items;
+  }, [pending, filteredFriends, friends.length, filterQuery]);
 
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Friends</Text>
+        <Pressable
+          style={({ pressed }) => [styles.addButton, pressed && { opacity: 0.7 }]}
+          onPress={handleOpenAddModal}
+        >
+          <Text style={styles.addButtonText}>+ Add</Text>
+        </Pressable>
       </View>
 
       <View style={styles.searchBar}>
         <TextInput
           style={styles.searchInput}
-          placeholder="Search by username..."
+          placeholder="Filter friends..."
           placeholderTextColor={theme.textFaint}
-          value={query}
-          onChangeText={handleSearch}
+          value={filterQuery}
+          onChangeText={setFilterQuery}
           autoCapitalize="none"
           autoCorrect={false}
           clearButtonMode="while-editing"
         />
       </View>
 
-      {loading && !isSearching && (
+      {loading ? (
         <View style={styles.center}>
           <ActivityIndicator color={theme.accent} size="large" />
         </View>
-      )}
-
-      {/* Search results mode */}
-      {isSearching && (
-        <View style={styles.section}>
-          {searching && (
-            <View style={styles.center}>
-              <ActivityIndicator color={theme.accent} size="small" />
-            </View>
-          )}
-          {!searching && searchResults.length === 0 && (
-            <View style={styles.center}>
-              <Text style={styles.emptyText}>No users found</Text>
-            </View>
-          )}
-          <FlatList
-            data={searchResults}
-            keyExtractor={item => item.user.id}
-            renderItem={({ item }) => (
-              <FriendRow
-                user={item.user}
-                action={item.action}
-                onPress={item.action === 'friends' ? handlePressFriend : undefined}
-                onAction={
-                  item.action === 'add' ? handleAdd :
-                  item.action === 'accept' ? handleAccept :
-                  undefined
-                }
-                onDecline={item.action === 'accept' ? handleDecline : undefined}
-              />
-            )}
-          />
-        </View>
-      )}
-
-      {/* Normal mode: pending + friends */}
-      {!isSearching && !loading && (
+      ) : (
         <FlatList
-          data={[
-            ...(pending.length > 0 ? [{ type: 'header' as const, title: `Requests (${pending.length})` }] : []),
-            ...pending.map(p => ({ type: 'pending' as const, data: p })),
-            ...(friends.length > 0 ? [{ type: 'header' as const, title: `Friends (${friends.length})` }] : []),
-            ...friends.map(f => ({ type: 'friend' as const, data: f })),
-          ]}
+          data={listData}
           keyExtractor={(item, i) => 'data' in item ? item.data.user.id : `header-${i}`}
           renderItem={({ item }) => {
             if (item.type === 'header') {
@@ -256,18 +273,94 @@ export default function FriendsScreen() {
                 user={item.data.user}
                 action="none"
                 onPress={handlePressFriend}
+                onLongPress={handleRemoveFriend}
               />
             );
           }}
           contentContainerStyle={styles.list}
           ListEmptyComponent={
-            <View style={styles.center}>
-              <Text style={styles.emptyTitle}>No friends yet</Text>
-              <Text style={styles.emptyText}>Search for people by username to add them</Text>
-            </View>
+            filterQuery.trim() ? (
+              <View style={styles.center}>
+                <Text style={styles.emptyText}>No friends match "{filterQuery}"</Text>
+              </View>
+            ) : (
+              <View style={styles.center}>
+                <Text style={styles.emptyTitle}>No friends yet</Text>
+                <Text style={styles.emptyText}>Tap "+ Add" to find people by username</Text>
+              </View>
+            )
           }
         />
       )}
+
+      {/* Add Friend Modal */}
+      <Modal
+        visible={addModalVisible}
+        animationType="slide"
+        presentationStyle="pageSheet"
+        onRequestClose={() => setAddModalVisible(false)}
+      >
+        <View style={styles.modalContainer}>
+          <View style={styles.modalHeader}>
+            <Text style={styles.modalTitle}>Add Friend</Text>
+            <Pressable onPress={() => setAddModalVisible(false)}>
+              <Text style={styles.modalDone}>Done</Text>
+            </Pressable>
+          </View>
+
+          <View style={styles.modalSearchBar}>
+            <TextInput
+              style={styles.searchInput}
+              placeholder="Search by username..."
+              placeholderTextColor={theme.textFaint}
+              value={addQuery}
+              onChangeText={handleAddSearch}
+              autoCapitalize="none"
+              autoCorrect={false}
+              autoFocus
+              clearButtonMode="while-editing"
+              returnKeyType="search"
+            />
+          </View>
+
+          {addSearching && (
+            <View style={styles.center}>
+              <ActivityIndicator color={theme.accent} size="small" />
+            </View>
+          )}
+
+          {!addSearching && addQuery.trim().length >= 2 && addResults.length === 0 && (
+            <View style={styles.center}>
+              <Text style={styles.emptyText}>No users found</Text>
+            </View>
+          )}
+
+          {addQuery.trim().length < 2 && (
+            <View style={styles.center}>
+              <Text style={styles.emptyText}>Search for people by username</Text>
+            </View>
+          )}
+
+          <FlatList
+            data={addResults}
+            keyExtractor={item => item.user.id}
+            keyboardShouldPersistTaps="handled"
+            renderItem={({ item }) => (
+              <FriendRow
+                user={item.user}
+                action={item.action}
+                onPress={item.action === 'friends' ? handlePressFriend : undefined}
+                onAction={
+                  item.action === 'add' ? handleAdd :
+                  item.action === 'accept' ? handleAccept :
+                  undefined
+                }
+                onDecline={item.action === 'accept' ? handleDecline : undefined}
+              />
+            )}
+          />
+        </View>
+      </Modal>
     </SafeAreaView>
   );
 }
@@ -278,6 +371,9 @@ const styles = StyleSheet.create({
     backgroundColor: theme.bg,
   },
   header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
     paddingHorizontal: 16,
     paddingTop: 8,
     paddingBottom: 4,
@@ -286,6 +382,17 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontFamily: 'DMSans_700Bold',
     color: theme.text,
+  },
+  addButton: {
+    backgroundColor: theme.accent,
+    paddingHorizontal: 14,
+    paddingVertical: 7,
+    borderRadius: 8,
+  },
+  addButtonText: {
+    fontSize: 14,
+    fontFamily: 'DMSans_600SemiBold',
+    color: '#fff',
   },
   searchBar: {
     paddingHorizontal: 16,
@@ -302,9 +409,6 @@ const styles = StyleSheet.create({
     color: theme.text,
     borderWidth: 1,
     borderColor: theme.border,
-  },
-  section: {
-    flex: 1,
   },
   sectionHeader: {
     paddingHorizontal: 16,
@@ -337,5 +441,34 @@ const styles = StyleSheet.create({
     fontFamily: 'DMSans_400Regular',
     color: theme.textDim,
     textAlign: 'center',
+  },
+
+  // Add Friend Modal
+  modalContainer: {
+    flex: 1,
+    backgroundColor: theme.bg,
+  },
+  modalHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 16,
+    paddingVertical: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: theme.border,
+  },
+  modalTitle: {
+    fontSize: 18,
+    fontFamily: 'DMSans_700Bold',
+    color: theme.text,
+  },
+  modalDone: {
+    fontSize: 15,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.accent,
+  },
+  modalSearchBar: {
+    paddingHorizontal: 16,
+    paddingVertical: 12,
   },
 });

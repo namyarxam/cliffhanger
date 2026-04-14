@@ -145,9 +145,11 @@ export interface ConversationMember {
   user_id: string;
   joined_at: string;
   display_name: string;
+  username: string;
   avatar_url: string | null;
   current_season: number;
   current_episode: number;
+  show_status: WatchStatus | null;
 }
 
 export interface Message {

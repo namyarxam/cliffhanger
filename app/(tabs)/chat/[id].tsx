@@ -269,6 +269,7 @@ export default function ChatDetailScreen() {
       const newName = editName.trim() || null;
       await renameConversation(conversation.id, newName);
       setConversation({ ...conversation, name: newName });
+      setSettingsModalVisible(false);
     } catch (e) { silentCatch('chatDetail:rename')(e); }
   }, [conversation, editName]);
 
@@ -355,33 +356,41 @@ export default function ChatDetailScreen() {
             </Pressable>
           </View>
 
-          {/* Members toggle (groups only) */}
-          {members.length > 2 && (
+          {/* Show progress — always visible when show attached */}
+          {hasShow && members.length > 0 && (
+            <View style={styles.progressRow}>
+              {members.map(m => {
+                const isFront = m.current_season === frontRunner.season && m.current_episode === frontRunner.episode && frontRunner.season > 0;
+                const status = m.show_status === 'watched' ? 'Watched' : m.current_season > 0 ? `S${m.current_season} E${m.current_episode}` : m.show_status === 'want_to_watch' ? 'Watchlist' : 'Not started';
+                return (
+                  <View key={m.user_id} style={[styles.progressChip, isFront && styles.progressChipFront]}>
+                    <Text style={styles.progressName} numberOfLines={1}>{m.username}</Text>
+                    <Text style={[styles.progressStatus, isFront && styles.progressStatusFront]}>{status}</Text>
+                  </View>
+                );
+              })}
+            </View>
+          )}
+
+          {/* Members toggle (groups without show) */}
+          {!hasShow && members.length > 2 && (
             <>
               <Pressable style={styles.membersToggle} onPress={() => setShowMembers(!showMembers)}>
                 <Text style={styles.membersToggleText}>Members ({members.length})</Text>
                 <Text style={styles.chevron}>{showMembers ? '▾' : '▸'}</Text>
               </Pressable>
-              {showMembers && members.map(m => {
-                const isFront = hasShow && m.current_season === frontRunner.season && m.current_episode === frontRunner.episode && frontRunner.season > 0;
-                return (
-                  <View key={m.user_id} style={styles.memberRow}>
-                    {m.avatar_url ? (
-                      <Image source={{ uri: m.avatar_url }} style={styles.memberAvatarImage} contentFit="cover" />
-                    ) : (
-                      <View style={styles.memberAvatar}>
-                        <Text style={styles.memberAvatarText}>{(m.display_name[0] || '?').toUpperCase()}</Text>
-                      </View>
-                    )}
-                    <Text style={styles.memberName} numberOfLines={1}>{m.display_name}</Text>
-                    {hasShow && (
-                      <Text style={[styles.memberProgress, isFront && styles.memberProgressFront]}>
-                        {m.current_season > 0 ? `S${m.current_season} E${m.current_episode}` : 'Not started'}
-                      </Text>
-                    )}
-                  </View>
-                );
-              })}
+              {showMembers && members.map(m => (
+                <View key={m.user_id} style={styles.memberRow}>
+                  {m.avatar_url ? (
+                    <Image source={{ uri: m.avatar_url }} style={styles.memberAvatarImage} contentFit="cover" />
+                  ) : (
+                    <View style={styles.memberAvatar}>
+                      <Text style={styles.memberAvatarText}>{(m.display_name[0] || '?').toUpperCase()}</Text>
+                    </View>
+                  )}
+                  <Text style={styles.memberName} numberOfLines={1}>{m.display_name}</Text>
+                </View>
+              ))}
             </>
           )}
         </View>
@@ -629,6 +638,14 @@ const styles = StyleSheet.create({
   headerShowTitle: { fontSize: 12, fontFamily: 'DMSans_400Regular', color: theme.textDim },
   inviteButton: { backgroundColor: theme.accent, paddingHorizontal: 14, paddingVertical: 6, borderRadius: 6 },
   inviteButtonText: { fontSize: 13, fontFamily: 'DMSans_600SemiBold', color: '#fff' },
+
+  // Progress pills (show-attached chats)
+  progressRow: { flexDirection: 'row', flexWrap: 'wrap', paddingHorizontal: 16, paddingTop: 10, gap: 6 },
+  progressChip: { flexDirection: 'row', alignItems: 'center', backgroundColor: theme.bgCard, borderRadius: 10, borderWidth: 1, borderColor: theme.border, overflow: 'hidden' },
+  progressChipFront: { borderColor: 'rgba(255,107,53,0.4)' },
+  progressName: { fontSize: 11, fontFamily: 'DMSans_600SemiBold', color: theme.text, paddingHorizontal: 8, paddingVertical: 5 },
+  progressStatus: { fontSize: 11, fontFamily: 'DMSans_500Medium', color: theme.textDim, backgroundColor: theme.bg, paddingHorizontal: 8, paddingVertical: 5 },
+  progressStatusFront: { color: theme.accent, fontFamily: 'DMSans_600SemiBold' },
 
   // Members
   membersToggle: { flexDirection: 'row', alignItems: 'center', paddingHorizontal: 16, paddingTop: 12, gap: 6 },
