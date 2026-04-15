@@ -95,13 +95,16 @@ export default function SettingsScreen() {
           <View style={styles.settingInfo}>
             <Text style={styles.settingLabel}>New Episode Alerts</Text>
             <Text style={styles.settingHint}>
-              Get notified when new episodes air for shows you're watching
+              Master switch for all episode notifications
             </Text>
           </View>
           <View style={[styles.toggleTrack, pushNewEpisodes && styles.toggleTrackOn]}>
             <View style={[styles.toggleThumb, pushNewEpisodes && styles.toggleThumbOn]} />
           </View>
         </Pressable>
+        <Text style={styles.settingNote}>
+          Turn this on, then tap the bell icon on any show to get notified when new episodes air. You'll only get alerts for shows you've opted into.
+        </Text>
       </View>
 
       {/* Display section */}
@@ -214,6 +217,14 @@ const styles = StyleSheet.create({
     color: theme.textFaint,
     marginTop: 4,
     lineHeight: 18,
+  },
+  settingNote: {
+    fontSize: 12,
+    fontFamily: 'DMSans_400Regular',
+    color: theme.textFaint,
+    marginTop: 10,
+    lineHeight: 18,
+    paddingHorizontal: 4,
   },
   toggleTrack: {
     width: 44,

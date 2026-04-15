@@ -6,6 +6,7 @@ import {
   removeShow,
   markExactlyUpTo,
   rateShow,
+  toggleShowNotify,
   getLastAiredEpisode,
   buildEpisodeSet,
 } from '@/src/lib/watchlist';
@@ -66,6 +67,7 @@ export function useShowActions(deps: ShowActionsDeps) {
         current_episode_airdate: null,
         new_episodes_seen_at: new Date().toISOString(),
         caught_up: false,
+        notify: false,
         rating: null,
         added_at: new Date().toISOString(),
         updated_at: new Date().toISOString(),
@@ -176,6 +178,7 @@ export function useShowActions(deps: ShowActionsDeps) {
         current_episode_airdate: targetEp?.airdate ?? null,
         new_episodes_seen_at: new Date().toISOString(),
         caught_up: tapCaughtUp,
+        notify: false,
         rating: null,
         added_at: new Date().toISOString(),
         updated_at: new Date().toISOString(),
@@ -202,6 +205,18 @@ export function useShowActions(deps: ShowActionsDeps) {
     }
   }, [userId, id, show, userShow, setUserShow, setWatchedEps, refetchWatchedEps]);
 
+  const handleToggleNotify = useCallback(async () => {
+    if (!userId || !id || !userShow) return;
+    const newValue = !userShow.notify;
+    setUserShow(prev => prev ? { ...prev, notify: newValue } : null);
+    try {
+      await toggleShowNotify(userId, id, newValue);
+    } catch (e) {
+      setUserShow(prev => prev ? { ...prev, notify: !newValue } : null);
+      silentCatch('show:toggleNotify')(e);
+    }
+  }, [userId, id, userShow, setUserShow]);
+
   return {
     handleAddToList,
     handleRemoveFromList,
@@ -210,5 +225,6 @@ export function useShowActions(deps: ShowActionsDeps) {
     handleCatchUp,
     handleRate,
     handleEpisodeTap,
+    handleToggleNotify,
   };
 }

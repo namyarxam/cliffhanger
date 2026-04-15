@@ -12,6 +12,7 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Image } from 'expo-image';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { theme } from '@/src/lib/theme';
+import { useAuth } from '@/src/providers/AuthProvider';
 
 import { useShowData } from '@/src/hooks/useShowData';
 import { useShowActions } from '@/src/hooks/useShowActions';
@@ -34,6 +35,8 @@ const STATUSES: WatchStatus[] = ['want_to_watch', 'currently_watching', 'watched
 export default function ShowDetailScreen() {
   const { id, from } = useLocalSearchParams<{ id: string; from?: string }>();
   const router = useRouter();
+  const { profile } = useAuth();
+  const pushEnabled = profile?.push_new_episodes ?? false;
 
   const data = useShowData(id);
   const {
@@ -193,25 +196,22 @@ export default function ShowDetailScreen() {
         {/* Watchlist Controls */}
         <View style={styles.section}>
           <View style={styles.statusRow}>
-            {(userShow ? [...STATUSES, 'dropped' as WatchStatus] : STATUSES).map(s => {
+            {STATUSES.map(s => {
               const isActive = userShow?.status === s;
-              const isDropped = s === 'dropped';
               return (
                 <Pressable
                   key={s}
                   style={({ pressed }) => [
                     styles.statusPill,
-                    isDropped && styles.statusPillDropped,
                     !userShow && styles.statusPillEmpty,
-                    isActive && (isDropped ? styles.statusPillDroppedActive : styles.statusPillActive),
-                    pressed && !isActive && (isDropped ? styles.statusPillDroppedPressed : styles.statusPillPressed),
+                    isActive && styles.statusPillActive,
+                    pressed && !isActive && styles.statusPillPressed,
                   ]}
                   onPress={() => userShow ? actions.handleStatusChange(s) : actions.handleAddWithStatus(s)}
                 >
                   {!userShow && <Text style={styles.statusPillPlus}>+</Text>}
                   <Text style={[
                     styles.statusPillText,
-                    isDropped && !isActive && styles.statusPillTextDropped,
                     isActive && styles.statusPillTextActive,
                   ]}>
                     {STATUS_LABELS[s]}
@@ -219,6 +219,22 @@ export default function ShowDetailScreen() {
                 </Pressable>
               );
             })}
+            {userShow && pushEnabled && (
+              <Pressable
+                style={({ pressed }) => [styles.iconButton, userShow.notify && styles.iconButtonNotifyActive, pressed && { opacity: 0.7 }]}
+                onPress={actions.handleToggleNotify}
+              >
+                <FontAwesome name={userShow.notify ? 'bell' : 'bell-o'} size={14} color={userShow.notify ? theme.accent : theme.textDim} />
+              </Pressable>
+            )}
+            {userShow && (
+              <Pressable
+                style={({ pressed }) => [styles.iconButton, userShow.status === 'dropped' && styles.iconButtonDroppedActive, pressed && { opacity: 0.7 }]}
+                onPress={() => actions.handleStatusChange('dropped')}
+              >
+                <FontAwesome name="ban" size={15} color={userShow.status === 'dropped' ? '#fff' : 'rgba(239,68,68,0.5)'} />
+              </Pressable>
+            )}
           </View>
 
           {/* Catch up / caught up — inline under pills */}
@@ -582,10 +598,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     gap: 4,
   },
-  statusPillDropped: {
-    flex: 0.7,
-    borderColor: 'rgba(239,68,68,0.15)',
-  },
   statusPillEmpty: {
     borderColor: 'rgba(255,107,53,0.3)',
     borderStyle: 'dashed',
@@ -593,23 +605,32 @@ const styles = StyleSheet.create({
   statusPillPressed: {
     backgroundColor: 'rgba(255,107,53,0.08)',
   },
-  statusPillDroppedPressed: {
-    backgroundColor: 'rgba(239,68,68,0.06)',
-  },
   statusPillActive: {
     backgroundColor: theme.accent,
     borderColor: theme.accent,
-    borderStyle: 'solid',
-  },
-  statusPillDroppedActive: {
-    backgroundColor: 'rgba(239,68,68,0.8)',
-    borderColor: 'rgba(239,68,68,0.8)',
     borderStyle: 'solid',
   },
   statusPillPlus: {
     fontSize: 14,
     fontFamily: 'DMSans_700Bold',
     color: theme.accent,
+  },
+  iconButton: {
+    width: 36,
+    height: 36,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: theme.border,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  iconButtonDroppedActive: {
+    backgroundColor: 'rgba(239,68,68,0.8)',
+    borderColor: 'rgba(239,68,68,0.8)',
+  },
+  iconButtonNotifyActive: {
+    borderColor: 'rgba(255,107,53,0.3)',
+    backgroundColor: 'rgba(255,107,53,0.08)',
   },
   catchUpRow: {
     flexDirection: 'row',
@@ -642,9 +663,6 @@ const styles = StyleSheet.create({
   },
   statusPillTextActive: {
     color: theme.textBright,
-  },
-  statusPillTextDropped: {
-    color: 'rgba(239,68,68,0.45)',
   },
 
   // Friends

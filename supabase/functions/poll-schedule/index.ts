@@ -69,12 +69,13 @@ Deno.serve(async (_req) => {
     const showIds = [...new Set(episodes.map(e => e.show_id))];
 
     if (showIds.length > 0) {
-      // Get users watching these shows with push enabled
+      // Get users watching these shows with per-show notify enabled
       const { data: watchers } = await supabase
         .from('user_shows')
         .select('user_id, show_id, show_title, current_season, current_episode')
         .in('show_id', showIds)
-        .eq('status', 'currently_watching');
+        .eq('status', 'currently_watching')
+        .eq('notify', true);
 
       if (watchers && watchers.length > 0) {
         // Check which users want push notifications

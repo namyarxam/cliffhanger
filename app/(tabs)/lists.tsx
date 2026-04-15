@@ -72,7 +72,7 @@ export default function ListsScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <Pressable onPress={() => router.back()}>
+        <Pressable onPress={() => router.push('/(tabs)/profile')}>
           <Text style={styles.backText}>← Profile</Text>
         </Pressable>
         <Text style={styles.headerTitle}>My Lists</Text>

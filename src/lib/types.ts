@@ -55,6 +55,7 @@ export interface UserShow {
   current_episode_airdate: string | null;
   new_episodes_seen_at: string | null;
   caught_up: boolean;
+  notify: boolean;
   rating: number | null;
   added_at: string;
   updated_at: string;

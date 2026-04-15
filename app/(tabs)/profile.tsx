@@ -22,7 +22,7 @@ import { getLists, ensureDefaultList, getDisplayList } from '@/src/lib/lists';
 import { getUserShows } from '@/src/lib/watchlist';
 import { fetchCast, searchShows } from '@/src/lib/data';
 import type { CastMember } from '@/src/lib/data';
-import type { UserShow, ShowSummary, ListItem } from '@/src/lib/types';
+import type { UserShow, ShowSummary, ListItem, ListWithItems } from '@/src/lib/types';
 import { silentCatch } from '@/src/lib/errorLog';
 
 type AvatarPickerItem =
@@ -36,7 +36,7 @@ export default function ProfileScreen() {
   const [friendCount, setFriendCount] = useState<number | null>(null);
   const [pendingCount, setPendingCount] = useState(0);
   const [listCount, setListCount] = useState<number | null>(null);
-  const [displayItems, setDisplayItems] = useState<ListItem[]>([]);
+  const [displayList, setDisplayList] = useState<ListWithItems | null>(null);
 
   const [droppedCount, setDroppedCount] = useState(0);
   const [editing, setEditing] = useState(false);
@@ -61,7 +61,7 @@ export default function ProfileScreen() {
       getFriends(user.id).then(f => setFriendCount(f.length)).catch(silentCatch('profile:friends'));
       getPendingRequests(user.id).then(p => setPendingCount(p.length)).catch(silentCatch('profile:pending'));
       ensureDefaultList(user.id).then(() => getLists(user.id).then(l => setListCount(l.length))).catch(silentCatch('profile:lists'));
-      getDisplayList(user.id).then(d => setDisplayItems(d?.items.slice(0, 4) ?? [])).catch(silentCatch('profile:display'));
+      getDisplayList(user.id).then(d => setDisplayList(d)).catch(silentCatch('profile:display'));
       getUserShows(user.id).then(s => setDroppedCount(s.filter(sh => sh.status === 'dropped').length)).catch(silentCatch('profile:dropped'));
     }, [user?.id])
   );
@@ -220,23 +220,36 @@ export default function ProfileScreen() {
       </View>
 
       {/* Featured posters — prominent display list */}
-      {displayItems.length > 0 && (
-        <Pressable
-          style={({ pressed }) => [styles.featuredSection, pressed && { opacity: 0.8 }]}
-          onPress={() => router.push('/(tabs)/lists')}
-        >
+      {displayList && displayList.items.length > 0 && (
+        <View style={styles.featuredSection}>
           <View style={styles.featuredPosters}>
-            {displayItems.map(item => (
-              item.item_image ? (
-                <Image key={item.item_id} source={{ uri: item.item_image }} style={styles.featuredPoster} contentFit="cover" />
+            {displayList.items.slice(0, 4).map(item => (
+              displayList.type === 'shows' ? (
+                <Pressable
+                  key={item.item_id}
+                  style={({ pressed }) => [styles.featuredPosterWrap, pressed && { opacity: 0.7 }]}
+                  onPress={() => router.push(`/show/${item.item_id}?from=/(tabs)/profile`)}
+                >
+                  {item.item_image ? (
+                    <Image source={{ uri: item.item_image }} style={styles.featuredPoster} contentFit="cover" />
+                  ) : (
+                    <View style={[styles.featuredPoster, styles.featuredPosterPlaceholder]}>
+                      <Text style={{ fontSize: 16 }}>📺</Text>
+                    </View>
+                  )}
+                </Pressable>
               ) : (
-                <View key={item.item_id} style={[styles.featuredPoster, styles.featuredPosterPlaceholder]}>
-                  <Text style={{ fontSize: 16 }}>📺</Text>
-                </View>
+                item.item_image ? (
+                  <Image key={item.item_id} source={{ uri: item.item_image }} style={styles.featuredPoster} contentFit="cover" />
+                ) : (
+                  <View key={item.item_id} style={[styles.featuredPoster, styles.featuredPosterPlaceholder]}>
+                    <Text style={{ fontSize: 16 }}>📺</Text>
+                  </View>
+                )
               )
             ))}
           </View>
-        </Pressable>
+        </View>
       )}
 
       {/* Navigation rows */}
@@ -529,6 +542,10 @@ const styles = StyleSheet.create({
     flex: 1,
     aspectRatio: 0.67,
     borderRadius: 6,
+    maxWidth: 100,
+  },
+  featuredPosterWrap: {
+    flex: 1,
     maxWidth: 100,
   },
   featuredPosterPlaceholder: {
