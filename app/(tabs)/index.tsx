@@ -162,6 +162,7 @@ export default function MyShowsScreen() {
           onMarkNext={handleMarkNext}
           isCaughtUp={item.caught_up}
           hidePosters={profile?.show_posters_in_list === false}
+
         />
       )}
       renderSectionHeader={({ section }) => {
@@ -215,19 +216,23 @@ const styles = StyleSheet.create({
   sectionHeader: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
+    gap: 6,
     paddingHorizontal: 16,
-    paddingTop: 24,
-    paddingBottom: 8,
+    paddingTop: 28,
+    paddingBottom: 10,
     backgroundColor: theme.bg,
+    borderBottomWidth: 1,
+    borderBottomColor: theme.border,
   },
   sectionTitle: {
-    fontSize: 16,
+    fontSize: 12,
     fontFamily: 'DMSans_700Bold',
-    color: theme.text,
+    color: theme.textDim,
+    textTransform: 'uppercase',
+    letterSpacing: 0.8,
   },
   sectionCount: {
-    fontSize: 13,
+    fontSize: 12,
     fontFamily: 'DMSans_400Regular',
     color: theme.textFaint,
     flex: 1,

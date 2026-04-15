@@ -205,7 +205,7 @@ export default function UserProfileScreen() {
                     <Text style={styles.sectionCount}>{section.data.length}</Text>
                   </View>
                   {section.data.map(item => (
-                    <WatchlistCard key={item.show_id} show={item} onPress={handleShowPress} />
+                    <WatchlistCard key={item.show_id} show={profile?.hide_ratings ? { ...item, rating: null } : item} onPress={handleShowPress} />
                   ))}
                 </View>
               ))

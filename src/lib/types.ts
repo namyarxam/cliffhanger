@@ -77,6 +77,7 @@ export interface UserProfile {
   push_new_episodes: boolean;
   show_top4_in_list: boolean;
   show_posters_in_list: boolean;
+  hide_ratings: boolean;
   created_at: string;
 }
 

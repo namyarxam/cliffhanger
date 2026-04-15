@@ -3,6 +3,7 @@ import {
   View,
   Text,
   Pressable,
+  ScrollView,
   StyleSheet,
   Alert,
 } from 'react-native';
@@ -17,12 +18,13 @@ export default function SettingsScreen() {
   const [pushNewEpisodes, setPushNewEpisodes] = useState(false);
   const [showTop4, setShowTop4] = useState(false);
   const [showPosters, setShowPosters] = useState(true);
+  const [hideRatings, setHideRatings] = useState(false);
 
   useEffect(() => {
     if (!user?.id) return;
     supabase
       .from('profiles')
-      .select('push_new_episodes, show_top4_in_list, show_posters_in_list')
+      .select('push_new_episodes, show_top4_in_list, show_posters_in_list, hide_ratings, default_sort, compact_mode')
       .eq('id', user.id)
       .single()
       .then(({ data }) => {
@@ -30,11 +32,14 @@ export default function SettingsScreen() {
           setPushNewEpisodes(data.push_new_episodes);
           setShowTop4(data.show_top4_in_list);
           setShowPosters(data.show_posters_in_list);
+          setHideRatings(data.hide_ratings);
+
+
         }
       });
   }, [user?.id]);
 
-  const updateProfile = useCallback(async (field: string, value: boolean) => {
+  const updateProfile = useCallback(async (field: string, value: boolean | string) => {
     if (!user?.id) return;
     const { error } = await supabase
       .from('profiles')
@@ -82,8 +87,17 @@ export default function SettingsScreen() {
     if (!ok) setShowPosters(!newValue);
   }, [showPosters, updateProfile]);
 
+  const handleToggleHideRatings = useCallback(async () => {
+    const newValue = !hideRatings;
+    setHideRatings(newValue);
+    const ok = await updateProfile('hide_ratings', newValue);
+    if (!ok) setHideRatings(!newValue);
+  }, [hideRatings, updateProfile]);
+
+
   return (
     <SafeAreaView style={styles.container}>
+      <ScrollView contentContainerStyle={styles.scrollContent}>
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Settings</Text>
       </View>
@@ -136,6 +150,23 @@ export default function SettingsScreen() {
             <View style={[styles.toggleThumb, showPosters && styles.toggleThumbOn]} />
           </View>
         </Pressable>
+
+      </View>
+
+      {/* Social section */}
+      <View style={styles.section}>
+        <Text style={styles.sectionTitle}>Social</Text>
+        <Pressable style={styles.settingRow} onPress={handleToggleHideRatings}>
+          <View style={styles.settingInfo}>
+            <Text style={styles.settingLabel}>Hide My Ratings</Text>
+            <Text style={styles.settingHint}>
+              Friends won't see your ratings on shows
+            </Text>
+          </View>
+          <View style={[styles.toggleTrack, hideRatings && styles.toggleTrackOn]}>
+            <View style={[styles.toggleThumb, hideRatings && styles.toggleThumbOn]} />
+          </View>
+        </Pressable>
       </View>
 
       {/* Account section */}
@@ -159,6 +190,7 @@ export default function SettingsScreen() {
           <Text style={styles.aboutValue}>Powered by TVMaze</Text>
         </View>
       </View>
+      </ScrollView>
     </SafeAreaView>
   );
 }
@@ -167,6 +199,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: theme.bg,
+  },
+  scrollContent: {
+    paddingBottom: 40,
   },
   header: {
     paddingHorizontal: 16,

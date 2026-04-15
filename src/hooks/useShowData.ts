@@ -48,13 +48,16 @@ export function useShowData(id: string | undefined) {
       if (!data || data.length === 0) { setFriendsWatching([]); return; }
 
       const profileMap = new Map(friends.map(f => [f.user.id, f.user]));
-      setFriendsWatching(data.map(d => ({
-        profile: profileMap.get(d.user_id)!,
-        status: d.status,
-        season: d.current_season,
-        episode: d.current_episode,
-        rating: d.rating ?? null,
-      })).filter(d => d.profile));
+      setFriendsWatching(data.map(d => {
+        const friendProfile = profileMap.get(d.user_id)!;
+        return {
+          profile: friendProfile,
+          status: d.status,
+          season: d.current_season,
+          episode: d.current_episode,
+          rating: friendProfile?.hide_ratings ? null : (d.rating ?? null),
+        };
+      }).filter(d => d.profile));
     } catch (e) { silentCatch('show:friendsWatching')(e); }
   }, [userId, id]);
 
