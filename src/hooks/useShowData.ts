@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { fetchShow } from '@/src/lib/data';
 import { useAuth } from '@/src/providers/AuthProvider';
 import {
@@ -33,6 +33,31 @@ export function useShowData(id: string | undefined) {
   const [listsContaining, setListsContaining] = useState<Set<string>>(new Set());
   const [friendsWatching, setFriendsWatching] = useState<FriendWatching[]>([]);
 
+  const fetchFriendsWatching = useCallback(async () => {
+    if (!userId || !id) return;
+    try {
+      const friends = await getFriends(userId);
+      if (friends.length === 0) { setFriendsWatching([]); return; }
+      const friendIds = friends.map(f => f.user.id);
+      const { data } = await supabase
+        .from('user_shows')
+        .select('user_id, status, current_season, current_episode, rating')
+        .eq('show_id', id)
+        .in('user_id', friendIds);
+
+      if (!data || data.length === 0) { setFriendsWatching([]); return; }
+
+      const profileMap = new Map(friends.map(f => [f.user.id, f.user]));
+      setFriendsWatching(data.map(d => ({
+        profile: profileMap.get(d.user_id)!,
+        status: d.status,
+        season: d.current_season,
+        episode: d.current_episode,
+        rating: d.rating ?? null,
+      })).filter(d => d.profile));
+    } catch (e) { silentCatch('show:friendsWatching')(e); }
+  }, [userId, id]);
+
   // Reset everything when navigating to a different show
   useEffect(() => {
     setShow(null);
@@ -53,27 +78,7 @@ export function useShowData(id: string | undefined) {
     if (userId) {
       getLists(userId).then(l => setUserLists(l.filter(ll => ll.type === 'shows'))).catch(silentCatch('show:lists'));
       getListsContainingItem(userId, id).then(ids => setListsContaining(new Set(ids))).catch(silentCatch('show:listsContaining'));
-
-      getFriends(userId).then(async (friends) => {
-        if (friends.length === 0) return;
-        const friendIds = friends.map(f => f.user.id);
-        const { data } = await supabase
-          .from('user_shows')
-          .select('user_id, status, current_season, current_episode, rating')
-          .eq('show_id', id)
-          .in('user_id', friendIds);
-
-        if (!data || data.length === 0) { setFriendsWatching([]); return; }
-
-        const profileMap = new Map(friends.map(f => [f.user.id, f.user]));
-        setFriendsWatching(data.map(d => ({
-          profile: profileMap.get(d.user_id)!,
-          status: d.status,
-          season: d.current_season,
-          episode: d.current_episode,
-          rating: d.rating ?? null,
-        })).filter(d => d.profile));
-      }).catch(silentCatch('show:friendsWatching'));
+      fetchFriendsWatching();
     }
   }, [id, userId]);
 
@@ -106,5 +111,6 @@ export function useShowData(id: string | undefined) {
     setListsContaining,
     friendsWatching,
     refetchWatchedEps,
+    refetchFriendsWatching: fetchFriendsWatching,
   };
 }

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import {
   View,
   Text,
@@ -7,7 +7,7 @@ import {
   StyleSheet,
   ActivityIndicator,
 } from 'react-native';
-import { useLocalSearchParams, useRouter } from 'expo-router';
+import { useLocalSearchParams, useRouter, useFocusEffect } from 'expo-router';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Image } from 'expo-image';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -16,7 +16,6 @@ import { theme } from '@/src/lib/theme';
 import { useShowData } from '@/src/hooks/useShowData';
 import { useShowActions } from '@/src/hooks/useShowActions';
 import WatchProgressBar from '@/src/components/WatchProgressBar';
-import CaughtUpButton from '@/src/components/CaughtUpButton';
 import EpisodePicker from '@/src/components/EpisodePicker';
 import RatingSelector, { getUserRatingColor } from '@/src/components/RatingSelector';
 import FriendRatingsModal from '@/src/components/FriendRatingsModal';
@@ -27,6 +26,7 @@ const STATUS_LABELS: Record<WatchStatus, string> = {
   want_to_watch: 'Watchlist',
   currently_watching: 'Watching',
   watched: 'Watched',
+  dropped: 'Dropped',
 };
 
 const STATUSES: WatchStatus[] = ['want_to_watch', 'currently_watching', 'watched'];
@@ -40,8 +40,11 @@ export default function ShowDetailScreen() {
     show, loading, error, userId,
     userShow, setUserShow, watchedEps, setWatchedEps,
     userLists, listsContaining, setListsContaining,
-    friendsWatching, refetchWatchedEps,
+    friendsWatching, refetchWatchedEps, refetchFriendsWatching,
   } = data;
+
+  // Refetch friends watching on screen focus (picks up new friendships)
+  useFocusEffect(useCallback(() => { refetchFriendsWatching(); }, [refetchFriendsWatching]));
 
   const actions = useShowActions({
     userId, id, show, userShow,
@@ -52,6 +55,7 @@ export default function ShowDetailScreen() {
   const [listModalVisible, setListModalVisible] = useState(false);
   const [scrollEnabled, setScrollEnabled] = useState(true);
   const [friendRatingsVisible, setFriendRatingsVisible] = useState(false);
+  const [friendsExpanded, setFriendsExpanded] = useState(false);
 
   if (loading) {
     return (
@@ -189,22 +193,25 @@ export default function ShowDetailScreen() {
         {/* Watchlist Controls */}
         <View style={styles.section}>
           <View style={styles.statusRow}>
-            {STATUSES.map(s => {
+            {(userShow ? [...STATUSES, 'dropped' as WatchStatus] : STATUSES).map(s => {
               const isActive = userShow?.status === s;
+              const isDropped = s === 'dropped';
               return (
                 <Pressable
                   key={s}
                   style={({ pressed }) => [
                     styles.statusPill,
+                    isDropped && styles.statusPillDropped,
                     !userShow && styles.statusPillEmpty,
-                    isActive && styles.statusPillActive,
-                    pressed && !isActive && styles.statusPillPressed,
+                    isActive && (isDropped ? styles.statusPillDroppedActive : styles.statusPillActive),
+                    pressed && !isActive && (isDropped ? styles.statusPillDroppedPressed : styles.statusPillPressed),
                   ]}
                   onPress={() => userShow ? actions.handleStatusChange(s) : actions.handleAddWithStatus(s)}
                 >
                   {!userShow && <Text style={styles.statusPillPlus}>+</Text>}
                   <Text style={[
                     styles.statusPillText,
+                    isDropped && !isActive && styles.statusPillTextDropped,
                     isActive && styles.statusPillTextActive,
                   ]}>
                     {STATUS_LABELS[s]}
@@ -213,16 +220,101 @@ export default function ShowDetailScreen() {
               );
             })}
           </View>
+
+          {/* Catch up / caught up — inline under pills */}
+          {userShow && userShow.status === 'currently_watching' && (
+            watchedEps.size >= airedCount ? (
+              <View style={styles.caughtUpRow}>
+                <FontAwesome name="check" size={12} color={theme.successDim} />
+                <Text style={styles.caughtUpText}>All caught up</Text>
+              </View>
+            ) : (
+              <Pressable
+                style={({ pressed }) => [styles.catchUpRow, pressed && { opacity: 0.7 }]}
+                onPress={actions.handleCatchUp}
+              >
+                <FontAwesome name="forward" size={11} color={theme.accent} />
+                <Text style={styles.catchUpText}>Catch up to latest</Text>
+              </Pressable>
+            )
+          )}
+
+          {/* Friend activity — collapsible card on Watching only */}
+          {friendsWatching.length > 0 && userShow?.status === 'currently_watching' && (
+            <Pressable
+              style={({ pressed }) => [styles.friendsCard, pressed && { opacity: 0.8 }]}
+              onPress={() => setFriendsExpanded(e => !e)}
+            >
+              <View style={styles.friendsCardHeader}>
+                <View style={styles.avatarStack}>
+                  {friendsWatching.slice(0, 3).map((fw, i) => (
+                    fw.profile.avatar_url ? (
+                      <Image key={fw.profile.id} source={{ uri: fw.profile.avatar_url }} style={[styles.stackAvatar, i > 0 && styles.stackAvatarOverlap]} contentFit="cover" />
+                    ) : (
+                      <View key={fw.profile.id} style={[styles.stackAvatarFallback, i > 0 && styles.stackAvatarOverlap]}>
+                        <Text style={styles.stackAvatarText}>{(fw.profile.display_name[0] || '?').toUpperCase()}</Text>
+                      </View>
+                    )
+                  ))}
+                </View>
+                <View style={styles.friendsCardMeta}>
+                  <Text style={styles.friendsCardTitle}>Friend activity</Text>
+                  <Text style={styles.friendsCardCount}>
+                    {friendsWatching.length} friend{friendsWatching.length !== 1 ? 's' : ''}
+                  </Text>
+                </View>
+                <FontAwesome name={friendsExpanded ? 'chevron-up' : 'chevron-down'} size={11} color={theme.textDim} />
+              </View>
+              {friendsExpanded && (
+                <View style={styles.friendsList}>
+                  {friendsWatching.map(fw => {
+                    const behind = fw.season > 0 ? getEpisodesBehind(fw.season, fw.episode) : 0;
+                    const statusLabel = fw.status === 'want_to_watch' ? 'Wants to watch'
+                      : fw.status === 'watched' ? 'Finished'
+                      : fw.status === 'dropped' ? 'Dropped'
+                      : fw.season === 0 ? 'Not started'
+                      : behind === 0 ? 'Caught up'
+                      : `${behind} ep${behind !== 1 ? 's' : ''} behind`;
+                    const isPositive = fw.status === 'watched' || (fw.status === 'currently_watching' && behind === 0);
+                    const isDropped = fw.status === 'dropped';
+                    return (
+                      <View key={fw.profile.id} style={styles.friendRow}>
+                        {fw.profile.avatar_url ? (
+                          <Image source={{ uri: fw.profile.avatar_url }} style={styles.friendAvatarImage} contentFit="cover" />
+                        ) : (
+                          <View style={styles.friendAvatar}>
+                            <Text style={styles.friendAvatarText}>
+                              {(fw.profile.display_name[0] || '?').toUpperCase()}
+                            </Text>
+                          </View>
+                        )}
+                        <Text style={styles.friendName} numberOfLines={1}>{fw.profile.display_name}</Text>
+                        <Text style={[styles.friendStatus, isPositive && styles.friendStatusPositive, isDropped && styles.friendStatusDropped]}>{statusLabel}</Text>
+                      </View>
+                    );
+                  })}
+                </View>
+              )}
+            </Pressable>
+          )}
         </View>
 
-        {/* Friends watching this show */}
-        {friendsWatching.length > 0 && (!userShow || userShow.status !== 'watched') && (
-          <View style={styles.friendsSection}>
-            <Text style={styles.friendsSectionTitle}>Friends watching</Text>
+        {/* Friend activity — flat list for Watchlist, Dropped, and no-status */}
+        {friendsWatching.length > 0 && (!userShow || userShow.status === 'want_to_watch' || userShow.status === 'dropped') && (
+          <View style={styles.friendsFlatSection}>
+            <Text style={styles.friendsFlatTitle}>Friend activity</Text>
             {friendsWatching.map(fw => {
               const behind = fw.season > 0 ? getEpisodesBehind(fw.season, fw.episode) : 0;
+              const statusLabel = fw.status === 'want_to_watch' ? 'Wants to watch'
+                : fw.status === 'watched' ? 'Finished'
+                : fw.status === 'dropped' ? 'Dropped'
+                : fw.season === 0 ? 'Not started'
+                : behind === 0 ? 'Caught up'
+                : `${behind} ep${behind !== 1 ? 's' : ''} behind`;
+              const isPositive = fw.status === 'watched' || (fw.status === 'currently_watching' && behind === 0);
+              const isDropped = fw.status === 'dropped';
               return (
-                <View key={fw.profile.id} style={styles.friendWatchRow}>
+                <View key={fw.profile.id} style={styles.friendFlatRow}>
                   {fw.profile.avatar_url ? (
                     <Image source={{ uri: fw.profile.avatar_url }} style={styles.friendAvatarImage} contentFit="cover" />
                   ) : (
@@ -233,28 +325,16 @@ export default function ShowDetailScreen() {
                     </View>
                   )}
                   <Text style={styles.friendName} numberOfLines={1}>{fw.profile.display_name}</Text>
-                  {fw.status === 'watched' ? (
-                    <Text style={styles.friendCaughtUp}>Finished</Text>
-                  ) : fw.season === 0 ? (
-                    <Text style={styles.friendProgress}>Not started</Text>
-                  ) : behind === 0 ? (
-                    <Text style={styles.friendCaughtUp}>Caught up</Text>
-                  ) : (
-                    <Text style={styles.friendProgress}>{behind} ep{behind !== 1 ? 's' : ''} behind</Text>
-                  )}
+                  <Text style={[styles.friendStatus, isPositive && styles.friendStatusPositive, isDropped && styles.friendStatusDropped]}>{statusLabel}</Text>
                 </View>
               );
             })}
           </View>
         )}
 
-        {/* Currently Watching: catch up + episode picker */}
+        {/* Currently Watching: episode picker */}
         {userShow && userShow.status === 'currently_watching' && (
           <>
-            <CaughtUpButton
-              onCatchUp={actions.handleCatchUp}
-              isCaughtUp={watchedEps.size >= airedCount}
-            />
             <EpisodePicker
               seasons={show.seasons}
               watchedEps={watchedEps}
@@ -274,11 +354,10 @@ export default function ShowDetailScreen() {
               onDragStart={() => setScrollEnabled(false)}
               onDragEnd={() => setScrollEnabled(true)}
             />
-            {friendsWatching.filter(fw => fw.status !== 'want_to_watch').length > 0 && (
-              <View style={styles.friendsStatusSection}>
-                <Text style={styles.friendsSectionTitle}>Friends</Text>
+            {friendsWatching.length > 0 && (
+              <View style={styles.friendsFlatSection}>
+                <Text style={styles.friendsFlatTitle}>Friends</Text>
                 {friendsWatching
-                  .filter(fw => fw.status !== 'want_to_watch')
                   .sort((a, b) => {
                     if (a.status === 'watched' && b.status !== 'watched') return -1;
                     if (a.status !== 'watched' && b.status === 'watched') return 1;
@@ -286,26 +365,35 @@ export default function ShowDetailScreen() {
                   })
                   .map(fw => {
                     const behind = fw.season > 0 ? getEpisodesBehind(fw.season, fw.episode) : 0;
+                    const hasRating = fw.status === 'watched' && fw.rating != null;
+                    const statusLabel = fw.status === 'want_to_watch' ? 'Wants to watch'
+                      : fw.status === 'watched' ? 'Finished'
+                      : fw.status === 'dropped' ? 'Dropped'
+                      : fw.season === 0 ? 'Not started'
+                      : behind === 0 ? 'Caught up'
+                      : `${behind} ep${behind !== 1 ? 's' : ''} behind`;
+                    const isPositive = fw.status === 'watched' || (fw.status === 'currently_watching' && behind === 0);
+                    const isDropped = fw.status === 'dropped';
                     return (
-                      <View key={fw.profile.id} style={styles.friendWatchRow}>
-                        <View style={styles.friendAvatar}>
-                          <Text style={styles.friendAvatarText}>
-                            {(fw.profile.display_name[0] || '?').toUpperCase()}
-                          </Text>
-                        </View>
-                        <Text style={styles.friendName} numberOfLines={1}>{fw.profile.display_name}</Text>
-                        {fw.status === 'watched' && fw.rating != null ? (
-                          <View style={[styles.friendRating, { backgroundColor: `${getUserRatingColor(fw.rating)}20` }]}>
-                            <Text style={[styles.friendRatingText, { color: getUserRatingColor(fw.rating) }]}>
-                              {fw.rating.toFixed(1)}
+                      <View key={fw.profile.id} style={styles.friendFlatRow}>
+                        {fw.profile.avatar_url ? (
+                          <Image source={{ uri: fw.profile.avatar_url }} style={styles.friendAvatarImage} contentFit="cover" />
+                        ) : (
+                          <View style={styles.friendAvatar}>
+                            <Text style={styles.friendAvatarText}>
+                              {(fw.profile.display_name[0] || '?').toUpperCase()}
                             </Text>
                           </View>
-                        ) : fw.status === 'watched' ? (
-                          <Text style={styles.friendCaughtUp}>Finished</Text>
-                        ) : behind === 0 ? (
-                          <Text style={styles.friendCaughtUp}>Caught up</Text>
+                        )}
+                        <Text style={styles.friendName} numberOfLines={1}>{fw.profile.display_name}</Text>
+                        {hasRating ? (
+                          <View style={[styles.friendRating, { backgroundColor: `${getUserRatingColor(fw.rating!)}20` }]}>
+                            <Text style={[styles.friendRatingText, { color: getUserRatingColor(fw.rating!) }]}>
+                              {fw.rating!.toFixed(1)}
+                            </Text>
+                          </View>
                         ) : (
-                          <Text style={styles.friendProgress}>{behind} ep{behind !== 1 ? 's' : ''} behind</Text>
+                          <Text style={[styles.friendStatus, isPositive && styles.friendStatusPositive, isDropped && styles.friendStatusDropped]}>{statusLabel}</Text>
                         )}
                       </View>
                     );
@@ -477,21 +565,26 @@ const styles = StyleSheet.create({
   section: {
     paddingHorizontal: 20,
     marginTop: 24,
+    gap: 10,
   },
   statusRow: {
     flexDirection: 'row',
-    gap: 8,
+    gap: 6,
   },
   statusPill: {
     flex: 1,
     flexDirection: 'row',
-    paddingVertical: 10,
+    paddingVertical: 9,
     borderRadius: 8,
     borderWidth: 1,
     borderColor: theme.border,
     alignItems: 'center',
     justifyContent: 'center',
     gap: 4,
+  },
+  statusPillDropped: {
+    flex: 0.7,
+    borderColor: 'rgba(239,68,68,0.15)',
   },
   statusPillEmpty: {
     borderColor: 'rgba(255,107,53,0.3)',
@@ -500,9 +593,17 @@ const styles = StyleSheet.create({
   statusPillPressed: {
     backgroundColor: 'rgba(255,107,53,0.08)',
   },
+  statusPillDroppedPressed: {
+    backgroundColor: 'rgba(239,68,68,0.06)',
+  },
   statusPillActive: {
     backgroundColor: theme.accent,
     borderColor: theme.accent,
+    borderStyle: 'solid',
+  },
+  statusPillDroppedActive: {
+    backgroundColor: 'rgba(239,68,68,0.8)',
+    borderColor: 'rgba(239,68,68,0.8)',
     borderStyle: 'solid',
   },
   statusPillPlus: {
@@ -510,27 +611,115 @@ const styles = StyleSheet.create({
     fontFamily: 'DMSans_700Bold',
     color: theme.accent,
   },
+  catchUpRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 6,
+    paddingVertical: 4,
+  },
+  catchUpText: {
+    fontSize: 13,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.accent,
+  },
+  caughtUpRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 6,
+    paddingVertical: 4,
+  },
+  caughtUpText: {
+    fontSize: 13,
+    fontFamily: 'DMSans_500Medium',
+    color: theme.successDim,
+  },
   statusPillText: {
-    fontSize: 12,
+    fontSize: 11,
     fontFamily: 'DMSans_600SemiBold',
     color: theme.textDim,
   },
   statusPillTextActive: {
     color: theme.textBright,
   },
+  statusPillTextDropped: {
+    color: 'rgba(239,68,68,0.45)',
+  },
 
   // Friends
-  friendsSection: {
+  friendsCard: {
+    backgroundColor: theme.bgCard,
+    borderRadius: 14,
+    overflow: 'hidden',
+  },
+  friendsCardHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 14,
+    gap: 12,
+  },
+  friendsCardMeta: {
+    flex: 1,
+    gap: 1,
+  },
+  friendsCardTitle: {
+    fontSize: 14,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.text,
+  },
+  friendsCardCount: {
+    fontSize: 12,
+    fontFamily: 'DMSans_400Regular',
+    color: theme.textDim,
+  },
+  avatarStack: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  stackAvatar: {
+    width: 30,
+    height: 30,
+    borderRadius: 15,
+    borderWidth: 2,
+    borderColor: theme.bgCard,
+  },
+  stackAvatarOverlap: {
+    marginLeft: -10,
+  },
+  stackAvatarFallback: {
+    width: 30,
+    height: 30,
+    borderRadius: 15,
+    backgroundColor: theme.bg,
+    borderWidth: 2,
+    borderColor: theme.bgCard,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  stackAvatarText: {
+    fontSize: 10,
+    fontFamily: 'DMSans_700Bold',
+    color: theme.textDim,
+  },
+  friendsList: {
+    paddingHorizontal: 14,
+    paddingBottom: 6,
+    borderTopWidth: 1,
+    borderTopColor: theme.border,
+  },
+  friendsFlatSection: {
     marginTop: 20,
     paddingHorizontal: 20,
   },
-  friendsSectionTitle: {
+  friendsFlatTitle: {
     fontSize: 14,
     fontFamily: 'DMSans_600SemiBold',
     color: theme.textDim,
     marginBottom: 10,
   },
-  friendWatchRow: {
+  friendFlatRow: {
     flexDirection: 'row',
     alignItems: 'center',
     paddingVertical: 8,
@@ -538,23 +727,27 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: theme.border,
   },
+  friendRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: 9,
+    gap: 10,
+  },
   friendAvatar: {
-    width: 28,
-    height: 28,
-    borderRadius: 14,
-    backgroundColor: theme.bgCard,
-    borderWidth: 1,
-    borderColor: theme.border,
+    width: 26,
+    height: 26,
+    borderRadius: 13,
+    backgroundColor: theme.bg,
     alignItems: 'center',
     justifyContent: 'center',
   },
   friendAvatarImage: {
-    width: 28,
-    height: 28,
-    borderRadius: 14,
+    width: 26,
+    height: 26,
+    borderRadius: 13,
   },
   friendAvatarText: {
-    fontSize: 12,
+    fontSize: 11,
     fontFamily: 'DMSans_700Bold',
     color: theme.textDim,
   },
@@ -564,19 +757,18 @@ const styles = StyleSheet.create({
     fontFamily: 'DMSans_500Medium',
     color: theme.text,
   },
-  friendProgress: {
+  friendStatus: {
     fontSize: 12,
     fontFamily: 'DMSans_400Regular',
     color: theme.textFaint,
   },
-  friendCaughtUp: {
-    fontSize: 12,
+  friendStatusPositive: {
     fontFamily: 'DMSans_600SemiBold',
     color: theme.successDim,
   },
-  friendsStatusSection: {
-    marginTop: 20,
-    paddingHorizontal: 20,
+  friendStatusDropped: {
+    fontFamily: 'DMSans_600SemiBold',
+    color: 'rgba(239,68,68,0.7)',
   },
   friendRating: {
     minWidth: 36,

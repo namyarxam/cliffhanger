@@ -96,11 +96,15 @@ export default memo(function WatchlistCard({ show, onPress, nextEpisode, onMarkN
         </View>
       )}
 
-      {show.status === 'currently_watching' && !hasNext && show.current_season > 0 && (
+      {show.status === 'currently_watching' && !hasNext && (
         <View style={styles.rightInfo}>
-          <Text style={styles.progress}>
-            S{show.current_season} E{show.current_episode}
-          </Text>
+          {show.current_season > 0 ? (
+            <Text style={styles.progress}>
+              S{show.current_season} E{show.current_episode}
+            </Text>
+          ) : (
+            <Text style={styles.progress}>Not started</Text>
+          )}
           {caughtUp && <Text style={styles.caughtUpCheck}>✓</Text>}
         </View>
       )}

@@ -65,6 +65,7 @@ export function useShowActions(deps: ShowActionsDeps) {
         current_episode: currentEpisode,
         current_episode_airdate: null,
         new_episodes_seen_at: new Date().toISOString(),
+        caught_up: false,
         rating: null,
         added_at: new Date().toISOString(),
         updated_at: new Date().toISOString(),
@@ -138,6 +139,7 @@ export function useShowActions(deps: ShowActionsDeps) {
         current_season: lastAired.season,
         current_episode: lastAired.episode,
         current_episode_airdate: lastAired.airdate,
+        caught_up: true,
       } : null);
     } catch {
       refetchWatchedEps();
@@ -160,6 +162,8 @@ export function useShowActions(deps: ShowActionsDeps) {
       await addShow(userId, id, 'currently_watching', show.title, show.image, show.network);
       const targetSeason = show.seasons.find(s => s.number === season);
       const targetEp = targetSeason?.episodes.find(e => e.number === episode);
+      const lastAired = getLastAiredEpisode(show.seasons);
+      const tapCaughtUp = lastAired != null && season === lastAired.season && episode === lastAired.episode;
       setUserShow({
         user_id: userId,
         show_id: id,
@@ -171,6 +175,7 @@ export function useShowActions(deps: ShowActionsDeps) {
         current_episode: episode,
         current_episode_airdate: targetEp?.airdate ?? null,
         new_episodes_seen_at: new Date().toISOString(),
+        caught_up: tapCaughtUp,
         rating: null,
         added_at: new Date().toISOString(),
         updated_at: new Date().toISOString(),
@@ -178,6 +183,8 @@ export function useShowActions(deps: ShowActionsDeps) {
     }
 
     // Optimistic
+    const lastAired = getLastAiredEpisode(show.seasons);
+    const tapCaughtUp = lastAired != null && season === lastAired.season && episode === lastAired.episode;
     setWatchedEps(buildEpisodeSet(show.seasons, season, episode));
 
     try {
@@ -188,6 +195,7 @@ export function useShowActions(deps: ShowActionsDeps) {
         status: 'currently_watching',
         current_season: season,
         current_episode: episode,
+        caught_up: tapCaughtUp,
       } : null);
     } catch {
       refetchWatchedEps();

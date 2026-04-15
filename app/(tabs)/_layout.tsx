@@ -133,6 +133,7 @@ export default function TabLayout() {
       <Tabs.Screen name="lists" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="lists/[id]" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="user/[id]" options={{ href: null, headerShown: false }} />
+      <Tabs.Screen name="dropped" options={{ href: null, headerShown: false }} />
     </Tabs>
     </RefreshBadgeContext.Provider>
   );

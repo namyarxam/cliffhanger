@@ -41,7 +41,7 @@ export interface ShowFull extends ShowSummary {
 
 // ─── New types for mobile app ───────────────────────────────────────────────
 
-export type WatchStatus = 'want_to_watch' | 'currently_watching' | 'watched';
+export type WatchStatus = 'want_to_watch' | 'currently_watching' | 'watched' | 'dropped';
 
 export interface UserShow {
   user_id: string;
@@ -54,6 +54,7 @@ export interface UserShow {
   current_episode: number;
   current_episode_airdate: string | null;
   new_episodes_seen_at: string | null;
+  caught_up: boolean;
   rating: number | null;
   added_at: string;
   updated_at: string;

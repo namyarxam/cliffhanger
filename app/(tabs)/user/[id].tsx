@@ -37,7 +37,7 @@ export default function UserProfileScreen() {
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [shows, setShows] = useState<UserShow[]>([]);
   const [friendLists, setFriendLists] = useState<ListWithItems[]>([]);
-  const [displayItems, setDisplayItems] = useState<ListItem[]>([]);
+  const [displayList, setDisplayList] = useState<ListWithItems | null>(null);
   const [activeTab, setActiveTab] = useState<'watchlist' | 'lists'>('watchlist');
   const [expandedList, setExpandedList] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
@@ -53,6 +53,7 @@ export default function UserProfileScreen() {
     setProfile(null);
     setShows([]);
     setFriendLists([]);
+    setDisplayList(null);
     setActiveTab('watchlist');
     setLoading(true);
 
@@ -68,7 +69,7 @@ export default function UserProfileScreen() {
 
     // Fetch their lists
     getLists(id).then(setFriendLists).catch(silentCatch('userProfile:lists'));
-    getDisplayList(id).then(d => setDisplayItems(d?.items.slice(0, 4) ?? [])).catch(silentCatch('userProfile:display'));
+    getDisplayList(id).then(d => setDisplayList(d)).catch(silentCatch('userProfile:display'));
 
     // Fetch their shows
     getUserShows(id)
@@ -142,35 +143,19 @@ export default function UserProfileScreen() {
         </View>
       ) : (
         <ScrollView contentContainerStyle={styles.list}>
+          {/* Header — centered */}
           <View style={styles.profileHeader}>
-            <View style={styles.profileTopRow}>
-              {profile?.avatar_url ? (
-                <Image source={{ uri: profile.avatar_url }} style={styles.avatarImage} contentFit="cover" />
-              ) : (
-                <View style={styles.avatar}>
-                  <Text style={styles.avatarText}>
-                    {(profile?.display_name || profile?.username || '?')[0].toUpperCase()}
-                  </Text>
-                </View>
-              )}
-              <View style={styles.profileInfo}>
-                <Text style={styles.displayName}>{profile?.display_name || 'Unknown'}</Text>
-                <Text style={styles.username}>@{profile?.username || 'unknown'}</Text>
+            {profile?.avatar_url ? (
+              <Image source={{ uri: profile.avatar_url }} style={styles.avatarImage} contentFit="cover" />
+            ) : (
+              <View style={styles.avatar}>
+                <Text style={styles.avatarText}>
+                  {(profile?.display_name || profile?.username || '?')[0].toUpperCase()}
+                </Text>
               </View>
-              {displayItems.length > 0 && (
-                <View style={styles.featuredPosters}>
-                  {displayItems.map(item => (
-                    item.item_image ? (
-                      <Image key={item.item_id} source={{ uri: item.item_image }} style={styles.featuredPoster} contentFit="cover" />
-                    ) : (
-                      <View key={item.item_id} style={[styles.featuredPoster, styles.friendListThumbPlaceholder]}>
-                        <Text style={{ fontSize: 10 }}>📺</Text>
-                      </View>
-                    )
-                  ))}
-                </View>
-              )}
-            </View>
+            )}
+            <Text style={styles.displayName}>{profile?.display_name || 'Unknown'}</Text>
+            <Text style={styles.username}>@{profile?.username || 'unknown'}</Text>
 
             {userId && id !== userId && friendStatus?.status !== 'accepted' && (
               <Pressable
@@ -181,8 +166,11 @@ export default function UserProfileScreen() {
                 <Text style={styles.friendButtonText}>{friendButtonText}</Text>
               </Pressable>
             )}
+          </View>
 
-            {friendLists.filter(l => l.items.length > 0).length > 0 && shows.length > 0 && (
+          {/* Tab toggle */}
+          {friendLists.filter(l => l.items.length > 0).length > 0 && shows.length > 0 && (
+            <View style={[styles.tabToggleWrap, (activeTab !== 'lists' || !displayList || displayList.items.length === 0) && styles.tabToggleWrapBorder]}>
               <View style={styles.tabToggle}>
                 <Pressable
                   style={[styles.tabToggleBtn, activeTab === 'watchlist' && styles.tabToggleBtnActive]}
@@ -197,8 +185,8 @@ export default function UserProfileScreen() {
                   <Text style={[styles.tabToggleText, (activeTab as string) === 'lists' && styles.tabToggleTextActive]}>Lists</Text>
                 </Pressable>
               </View>
-            )}
-          </View>
+            </View>
+          )}
 
           {shows.length === 0 && friendLists.filter(l => l.items.length > 0).length === 0 ? (
             <View style={styles.emptyProfile}>
@@ -223,70 +211,91 @@ export default function UserProfileScreen() {
               ))
             )
           ) : (
-            friendLists.filter(l => l.items.length > 0).map(list => {
-              const isExpanded = expandedList === list.id;
-              return (
-                <View key={list.id}>
-                  <Pressable
-                    style={styles.friendListRow}
-                    onPress={() => {
-                      LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
-                      setExpandedList(isExpanded ? null : list.id);
-                    }}
-                  >
-                    <View style={styles.friendListInfo}>
-                      <Text style={styles.friendListName}>{list.name}</Text>
-                      <Text style={styles.friendListType}>
-                        {list.items.length} {list.type === 'shows' ? (list.items.length === 1 ? 'Show' : 'Shows') : (list.items.length === 1 ? 'Character' : 'Characters')}
-                      </Text>
-                    </View>
-                    <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.friendListThumbnails}>
-                      {list.items.map(item => (
-                        item.item_image ? (
-                          <Image key={item.item_id} source={{ uri: item.item_image }} style={styles.friendListThumb} contentFit="cover" />
-                        ) : (
-                          <View key={item.item_id} style={[styles.friendListThumb, styles.friendListThumbPlaceholder]}>
-                            <Text style={{ fontSize: 12 }}>📺</Text>
-                          </View>
-                        )
-                      ))}
-                    </ScrollView>
-                  </Pressable>
-                  {isExpanded && (
-                    <View style={styles.expandedList}>
-                      {list.items.map(item => {
-                        const isChar = list.type === 'characters';
-                        const [charName, showName] = isChar && item.item_title.includes('::')
-                          ? item.item_title.split('::')
-                          : [item.item_title, null];
-                        return (
-                          <Pressable
-                            key={item.item_id}
-                            style={({ pressed }) => [styles.expandedItem, !isChar && pressed && { opacity: 0.7 }]}
-                            onPress={() => {
-                              if (!isChar) handleShowPress(item.item_id);
-                            }}
-                            disabled={isChar}
-                          >
-                            {item.item_image ? (
-                              <Image source={{ uri: item.item_image }} style={styles.expandedItemImage} contentFit="cover" />
-                            ) : (
-                              <View style={[styles.expandedItemImage, styles.friendListThumbPlaceholder]}>
-                                <Text style={{ fontSize: 14 }}>📺</Text>
-                              </View>
-                            )}
-                            <View style={styles.expandedItemInfo}>
-                              <Text style={styles.expandedItemTitle} numberOfLines={1}>{charName}</Text>
-                              {showName && <Text style={styles.expandedItemSub} numberOfLines={1}>{showName}</Text>}
-                            </View>
-                          </Pressable>
-                        );
-                      })}
-                    </View>
-                  )}
+            <>
+              {/* Display list hero */}
+              {displayList && displayList.items.length > 0 && (
+                <View style={styles.displayListHero}>
+                  <View style={styles.featuredPosters}>
+                    {displayList.items.slice(0, 4).map(item => (
+                      item.item_image ? (
+                        <Image key={item.item_id} source={{ uri: item.item_image }} style={styles.featuredPoster} contentFit="cover" />
+                      ) : (
+                        <View key={item.item_id} style={[styles.featuredPoster, styles.featuredPosterPlaceholder]}>
+                          <Text style={{ fontSize: 16 }}>📺</Text>
+                        </View>
+                      )
+                    ))}
+                  </View>
+                  <Text style={styles.displayListName}>{displayList.name}</Text>
                 </View>
-              );
-            })
+              )}
+
+              {/* Remaining lists */}
+              {friendLists.filter(l => l.items.length > 0 && l.id !== displayList?.id).map(list => {
+                const isExpanded = expandedList === list.id;
+                return (
+                  <View key={list.id}>
+                    <Pressable
+                      style={styles.friendListRow}
+                      onPress={() => {
+                        LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+                        setExpandedList(isExpanded ? null : list.id);
+                      }}
+                    >
+                      <View style={styles.friendListInfo}>
+                        <Text style={styles.friendListName}>{list.name}</Text>
+                        <Text style={styles.friendListType}>
+                          {list.items.length} {list.type === 'shows' ? (list.items.length === 1 ? 'Show' : 'Shows') : (list.items.length === 1 ? 'Character' : 'Characters')}
+                        </Text>
+                      </View>
+                      <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.friendListThumbnails}>
+                        {list.items.map(item => (
+                          item.item_image ? (
+                            <Image key={item.item_id} source={{ uri: item.item_image }} style={styles.friendListThumb} contentFit="cover" />
+                          ) : (
+                            <View key={item.item_id} style={[styles.friendListThumb, styles.friendListThumbPlaceholder]}>
+                              <Text style={{ fontSize: 12 }}>📺</Text>
+                            </View>
+                          )
+                        ))}
+                      </ScrollView>
+                    </Pressable>
+                    {isExpanded && (
+                      <View style={styles.expandedList}>
+                        {list.items.map(item => {
+                          const isChar = list.type === 'characters';
+                          const [charName, showName] = isChar && item.item_title.includes('::')
+                            ? item.item_title.split('::')
+                            : [item.item_title, null];
+                          return (
+                            <Pressable
+                              key={item.item_id}
+                              style={({ pressed }) => [styles.expandedItem, !isChar && pressed && { opacity: 0.7 }]}
+                              onPress={() => {
+                                if (!isChar) handleShowPress(item.item_id);
+                              }}
+                              disabled={isChar}
+                            >
+                              {item.item_image ? (
+                                <Image source={{ uri: item.item_image }} style={styles.expandedItemImage} contentFit="cover" />
+                              ) : (
+                                <View style={[styles.expandedItemImage, styles.friendListThumbPlaceholder]}>
+                                  <Text style={{ fontSize: 14 }}>📺</Text>
+                                </View>
+                              )}
+                              <View style={styles.expandedItemInfo}>
+                                <Text style={styles.expandedItemTitle} numberOfLines={1}>{charName}</Text>
+                                {showName && <Text style={styles.expandedItemSub} numberOfLines={1}>{showName}</Text>}
+                              </View>
+                            </Pressable>
+                          );
+                        })}
+                      </View>
+                    )}
+                  </View>
+                );
+              })}
+            </>
           )}
         </ScrollView>
       )}
@@ -317,48 +326,27 @@ const styles = StyleSheet.create({
   },
   profileHeader: {
     alignItems: 'center',
-    paddingVertical: 20,
+    paddingTop: 12,
+    paddingBottom: 16,
     paddingHorizontal: 16,
-    borderBottomWidth: 1,
-    borderBottomColor: theme.border,
-  },
-  profileTopRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    width: '100%',
-    gap: 12,
-  },
-  profileInfo: {
-    flex: 1,
-    gap: 2,
-  },
-  featuredPosters: {
-    flexDirection: 'row',
-    gap: 4,
-  },
-  featuredPoster: {
-    width: 48,
-    height: 68,
-    borderRadius: 4,
+    gap: 6,
   },
   avatar: {
-    width: 64,
-    height: 64,
-    borderRadius: 32,
+    width: 68,
+    height: 68,
+    borderRadius: 34,
     backgroundColor: theme.bgCard,
     borderWidth: 2,
     borderColor: theme.border,
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 12,
   },
   avatarImage: {
-    width: 64,
-    height: 64,
-    borderRadius: 32,
+    width: 68,
+    height: 68,
+    borderRadius: 34,
     borderWidth: 2,
     borderColor: theme.accent,
-    marginBottom: 12,
   },
   avatarText: {
     fontSize: 24,
@@ -366,26 +354,22 @@ const styles = StyleSheet.create({
     color: theme.textDim,
   },
   displayName: {
-    fontSize: 17,
+    fontSize: 18,
     fontFamily: 'DMSans_700Bold',
     color: theme.text,
+    textAlign: 'center',
   },
   username: {
     fontSize: 13,
     fontFamily: 'DMSans_400Regular',
     color: theme.textDim,
   },
-  friendIndicator: {
-    fontSize: 12,
-    fontFamily: 'DMSans_400Regular',
-    color: theme.textFaint,
-    marginBottom: 4,
-  },
   friendButton: {
     backgroundColor: theme.accent,
     paddingHorizontal: 24,
     paddingVertical: 8,
     borderRadius: 8,
+    marginTop: 4,
   },
   friendButtonPressed: {
     opacity: 0.7,
@@ -394,6 +378,36 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontFamily: 'DMSans_600SemiBold',
     color: '#fff',
+  },
+  featuredPosters: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    gap: 8,
+  },
+  featuredPoster: {
+    flex: 1,
+    aspectRatio: 0.67,
+    borderRadius: 6,
+    maxWidth: 100,
+  },
+  featuredPosterPlaceholder: {
+    backgroundColor: theme.bgCard,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  displayListHero: {
+    paddingHorizontal: 20,
+    paddingTop: 16,
+    paddingBottom: 20,
+    borderBottomWidth: 1,
+    borderBottomColor: theme.border,
+    gap: 10,
+  },
+  displayListName: {
+    fontSize: 13,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.textDim,
+    textAlign: 'center',
   },
   sectionHeader: {
     flexDirection: 'row',
@@ -430,9 +444,16 @@ const styles = StyleSheet.create({
   },
 
   // Toggle
+  tabToggleWrap: {
+    paddingHorizontal: 16,
+    paddingBottom: 8,
+  },
+  tabToggleWrapBorder: {
+    borderBottomWidth: 1,
+    borderBottomColor: theme.border,
+  },
   tabToggle: {
     flexDirection: 'row',
-    marginTop: 16,
     backgroundColor: theme.bgCard,
     borderRadius: 8,
     padding: 3,

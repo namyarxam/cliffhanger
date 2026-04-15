@@ -37,7 +37,6 @@ export default function MyShowsScreen() {
   const [shows, setShows] = useState<UserShow[]>([]);
   const [displayList, setDisplayList] = useState<ListWithItems | null>(null);
   const [nextEpisodes, setNextEpisodes] = useState<Map<string, { season: number; episode: number }>>(new Map());
-  const [caughtUp, setCaughtUp] = useState<Set<string>>(new Set());
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
@@ -52,7 +51,6 @@ export default function MyShowsScreen() {
       ]);
       setShows(data);
       setNextEpisodes(episodeData.nextEpisodes);
-      setCaughtUp(episodeData.caughtUpShows);
       setDisplayList(display);
     } catch (e) {
       silentCatch('myShows:fetchData')(e);
@@ -91,7 +89,12 @@ export default function MyShowsScreen() {
       // Refetch to check if there are more new episodes
       const episodeData = await getNextEpisodesForShows(userId);
       setNextEpisodes(episodeData.nextEpisodes);
-      setCaughtUp(episodeData.caughtUpShows);
+      // If no more next episodes for this show, it's caught up
+      if (!episodeData.nextEpisodes.has(showId)) {
+        setShows(prev => prev.map(s =>
+          s.show_id === showId ? { ...s, caught_up: true } : s
+        ));
+      }
     } catch (e) {
       silentCatch('myShows:markNext')(e);
       fetchData();
@@ -157,7 +160,7 @@ export default function MyShowsScreen() {
           onPress={handlePress}
           nextEpisode={nextEpisodes.get(item.show_id)}
           onMarkNext={handleMarkNext}
-          isCaughtUp={caughtUp.has(item.show_id)}
+          isCaughtUp={item.caught_up}
           hidePosters={profile?.show_posters_in_list === false}
         />
       )}

@@ -38,6 +38,7 @@ export default function ProfileScreen() {
   const [listCount, setListCount] = useState<number | null>(null);
   const [displayItems, setDisplayItems] = useState<ListItem[]>([]);
 
+  const [droppedCount, setDroppedCount] = useState(0);
   const [editing, setEditing] = useState(false);
   const [editName, setEditName] = useState('');
 
@@ -61,6 +62,7 @@ export default function ProfileScreen() {
       getPendingRequests(user.id).then(p => setPendingCount(p.length)).catch(silentCatch('profile:pending'));
       ensureDefaultList(user.id).then(() => getLists(user.id).then(l => setListCount(l.length))).catch(silentCatch('profile:lists'));
       getDisplayList(user.id).then(d => setDisplayItems(d?.items.slice(0, 4) ?? [])).catch(silentCatch('profile:display'));
+      getUserShows(user.id).then(s => setDroppedCount(s.filter(sh => sh.status === 'dropped').length)).catch(silentCatch('profile:dropped'));
     }, [user?.id])
   );
 
@@ -172,7 +174,7 @@ export default function ProfileScreen() {
 
   return (
     <ScrollView style={styles.scroll} contentContainerStyle={styles.container}>
-      {/* Profile header */}
+      {/* Profile header — centered */}
       <View style={styles.header}>
         <Pressable onPress={handleOpenAvatarPicker}>
           {profile?.avatar_url ? (
@@ -188,84 +190,99 @@ export default function ProfileScreen() {
             <Text style={styles.avatarEditIcon}>✎</Text>
           </View>
         </Pressable>
-        <View style={styles.headerInfo}>
-          {editing ? (
-            <View style={styles.editRow}>
-              <TextInput
-                style={styles.editInput}
-                value={editName}
-                onChangeText={setEditName}
-                autoFocus
-                maxLength={40}
-                onSubmitEditing={handleSaveEdit}
-                returnKeyType="done"
-              />
-              <Pressable style={styles.saveButton} onPress={handleSaveEdit}>
-                <Text style={styles.saveText}>Save</Text>
-              </Pressable>
-              <Pressable style={styles.cancelButton} onPress={() => setEditing(false)}>
-                <Text style={styles.cancelText}>Cancel</Text>
-              </Pressable>
-            </View>
-          ) : (
-            <Pressable onPress={handleStartEdit}>
-              <Text style={styles.displayName}>
-                {profile?.display_name || 'Anonymous'}
-                <Text style={styles.editHint}> ✎</Text>
-              </Text>
+        {editing ? (
+          <View style={styles.editRow}>
+            <TextInput
+              style={styles.editInput}
+              value={editName}
+              onChangeText={setEditName}
+              autoFocus
+              maxLength={40}
+              onSubmitEditing={handleSaveEdit}
+              returnKeyType="done"
+            />
+            <Pressable style={styles.saveButton} onPress={handleSaveEdit}>
+              <Text style={styles.saveText}>Save</Text>
             </Pressable>
-          )}
-          <Text style={styles.username}>@{profile?.username || 'unknown'}</Text>
-        </View>
-        {displayItems.length > 0 && (
+            <Pressable style={styles.cancelButton} onPress={() => setEditing(false)}>
+              <Text style={styles.cancelText}>Cancel</Text>
+            </Pressable>
+          </View>
+        ) : (
+          <Pressable onPress={handleStartEdit}>
+            <Text style={styles.displayName}>
+              {profile?.display_name || 'Anonymous'}
+              <Text style={styles.editHint}> ✎</Text>
+            </Text>
+          </Pressable>
+        )}
+        <Text style={styles.username}>@{profile?.username || 'unknown'}</Text>
+      </View>
+
+      {/* Featured posters — prominent display list */}
+      {displayItems.length > 0 && (
+        <Pressable
+          style={({ pressed }) => [styles.featuredSection, pressed && { opacity: 0.8 }]}
+          onPress={() => router.push('/(tabs)/lists')}
+        >
           <View style={styles.featuredPosters}>
             {displayItems.map(item => (
               item.item_image ? (
                 <Image key={item.item_id} source={{ uri: item.item_image }} style={styles.featuredPoster} contentFit="cover" />
               ) : (
-                <View key={item.item_id} style={[styles.featuredPoster, { backgroundColor: theme.bgCard, alignItems: 'center', justifyContent: 'center' }]}>
-                  <Text style={{ fontSize: 10 }}>📺</Text>
+                <View key={item.item_id} style={[styles.featuredPoster, styles.featuredPosterPlaceholder]}>
+                  <Text style={{ fontSize: 16 }}>📺</Text>
                 </View>
               )
             ))}
           </View>
+        </Pressable>
+      )}
+
+      {/* Navigation rows */}
+      <View style={styles.navGroup}>
+        <Pressable
+          style={({ pressed }) => [styles.navRow, pressed && { opacity: 0.7 }]}
+          onPress={() => router.push('/(tabs)/lists')}
+        >
+          <Text style={styles.navRowTextAccent}>My Lists</Text>
+          <Text style={styles.navRowCount}>{listCount ?? 0}</Text>
+          <Text style={styles.navChevron}>▸</Text>
+        </Pressable>
+
+        <Pressable
+          style={({ pressed }) => [styles.navRow, pressed && { opacity: 0.7 }]}
+          onPress={() => router.push('/(tabs)/friends')}
+        >
+          <Text style={styles.navRowText}>Friends</Text>
+          {pendingCount > 0 && (
+            <View style={styles.pendingBadge}>
+              <Text style={styles.pendingBadgeText}>{pendingCount}</Text>
+            </View>
+          )}
+          <Text style={styles.navRowCount}>{friendCount ?? 0}</Text>
+          <Text style={styles.navChevron}>▸</Text>
+        </Pressable>
+
+        <Pressable
+          style={({ pressed }) => [styles.navRow, pressed && { opacity: 0.7 }]}
+          onPress={() => router.push('/(tabs)/settings')}
+        >
+          <Text style={styles.navRowText}>Settings</Text>
+          <Text style={styles.navChevron}>▸</Text>
+        </Pressable>
+
+        {droppedCount > 0 && (
+          <Pressable
+            style={({ pressed }) => [styles.navRow, pressed && { opacity: 0.7 }]}
+            onPress={() => router.push('/(tabs)/dropped')}
+          >
+            <Text style={styles.navRowText}>Dropped Shows</Text>
+            <Text style={styles.navRowCount}>{droppedCount}</Text>
+            <Text style={styles.navChevron}>▸</Text>
+          </Pressable>
         )}
       </View>
-
-      {/* Lists button — prominent */}
-      <Pressable
-        style={({ pressed }) => [styles.listsButton, pressed && { opacity: 0.8 }]}
-        onPress={() => router.push('/(tabs)/lists')}
-      >
-        <Text style={styles.listsButtonText}>My Lists</Text>
-        <Text style={[styles.listsButtonCount, listCount === null && { opacity: 0 }]}>{listCount ?? 0} {listCount === 1 ? 'list' : 'lists'}</Text>
-      </Pressable>
-
-      {/* Friends button */}
-      <Pressable
-        style={({ pressed }) => [styles.friendsButton, pressed && styles.friendsButtonPressed]}
-        onPress={() => router.push('/(tabs)/friends')}
-      >
-        <View style={styles.friendsButtonContent}>
-          <Text style={styles.friendsButtonText}>Friends</Text>
-          {friendCount !== null && <Text style={styles.friendsCount}>{friendCount}</Text>}
-        </View>
-        {pendingCount > 0 && (
-          <View style={styles.pendingBadge}>
-            <Text style={styles.pendingBadgeText}>{pendingCount}</Text>
-          </View>
-        )}
-        <Text style={styles.friendsChevron}>▸</Text>
-      </Pressable>
-
-      {/* Settings button */}
-      <Pressable
-        style={({ pressed }) => [styles.settingsButton, pressed && { opacity: 0.7 }]}
-        onPress={() => router.push('/(tabs)/settings')}
-      >
-        <Text style={styles.settingsButtonText}>Settings</Text>
-        <Text style={styles.settingsChevron}>▸</Text>
-      </Pressable>
 
       <Pressable style={styles.signOutButton} onPress={signOut}>
         <Text style={styles.signOutText}>Sign Out</Text>
@@ -400,21 +417,19 @@ const styles = StyleSheet.create({
   },
   container: {
     flexGrow: 1,
-    paddingTop: 20,
+    paddingTop: 16,
     paddingHorizontal: 20,
     paddingBottom: 40,
   },
   header: {
-    flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
-    gap: 16,
-    marginBottom: 24,
+    gap: 6,
+    marginBottom: 20,
   },
   avatar: {
-    width: 70,
-    height: 70,
-    borderRadius: 35,
+    width: 72,
+    height: 72,
+    borderRadius: 36,
     backgroundColor: theme.bgCard,
     borderWidth: 2,
     borderColor: theme.accent,
@@ -422,9 +437,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   avatarImage: {
-    width: 70,
-    height: 70,
-    borderRadius: 35,
+    width: 72,
+    height: 72,
+    borderRadius: 36,
     borderWidth: 2,
     borderColor: theme.accent,
   },
@@ -448,23 +463,11 @@ const styles = StyleSheet.create({
     fontSize: 11,
     color: '#fff',
   },
-  headerInfo: {
-    flex: 1,
-    gap: 2,
-  },
-  featuredPosters: {
-    flexDirection: 'row',
-    gap: 4,
-  },
-  featuredPoster: {
-    width: 48,
-    height: 68,
-    borderRadius: 4,
-  },
   displayName: {
     fontSize: 20,
     fontFamily: 'DMSans_700Bold',
     color: theme.text,
+    textAlign: 'center',
   },
   editHint: {
     fontSize: 14,
@@ -474,7 +477,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
-    marginBottom: 4,
   },
   editInput: {
     fontSize: 18,
@@ -513,53 +515,64 @@ const styles = StyleSheet.create({
     fontFamily: 'DMSans_500Medium',
     color: theme.textDim,
   },
-  listsButton: {
-    width: '100%',
-    backgroundColor: theme.accent,
-    borderRadius: 10,
-    padding: 16,
-    alignItems: 'center',
-    marginBottom: 12,
+
+  // Featured display list
+  featuredSection: {
+    marginBottom: 24,
   },
-  listsButtonText: {
-    fontSize: 16,
-    fontFamily: 'DMSans_700Bold',
-    color: '#fff',
-  },
-  listsButtonCount: {
-    fontSize: 12,
-    fontFamily: 'DMSans_400Regular',
-    color: 'rgba(255,255,255,0.7)',
-    marginTop: 2,
-  },
-  friendsButton: {
-    width: '100%',
+  featuredPosters: {
     flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: theme.bgCard,
-    borderRadius: 10,
-    padding: 16,
-    borderWidth: 1,
-    borderColor: theme.border,
-  },
-  friendsButtonPressed: {
-    opacity: 0.7,
-  },
-  friendsButtonContent: {
-    flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
+    justifyContent: 'center',
     gap: 8,
   },
-  friendsButtonText: {
+  featuredPoster: {
+    flex: 1,
+    aspectRatio: 0.67,
+    borderRadius: 6,
+    maxWidth: 100,
+  },
+  featuredPosterPlaceholder: {
+    backgroundColor: theme.bgCard,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  // Navigation
+  navGroup: {
+    backgroundColor: theme.bgCard,
+    borderRadius: 12,
+    overflow: 'hidden',
+    marginBottom: 24,
+  },
+  navRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: 15,
+    paddingHorizontal: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: theme.border,
+  },
+  navRowText: {
+    flex: 1,
     fontSize: 16,
-    fontFamily: 'DMSans_600SemiBold',
+    fontFamily: 'DMSans_500Medium',
     color: theme.text,
   },
-  friendsCount: {
+  navRowTextAccent: {
+    flex: 1,
+    fontSize: 16,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.accent,
+  },
+  navRowCount: {
     fontSize: 14,
     fontFamily: 'DMSans_400Regular',
     color: theme.textDim,
+    marginRight: 8,
+  },
+  navChevron: {
+    fontSize: 16,
+    color: theme.textFaint,
   },
   pendingBadge: {
     backgroundColor: theme.accent,
@@ -575,31 +588,6 @@ const styles = StyleSheet.create({
     fontSize: 11,
     fontFamily: 'DMSans_700Bold',
     color: '#fff',
-  },
-  friendsChevron: {
-    fontSize: 16,
-    color: theme.textDim,
-  },
-  settingsButton: {
-    width: '100%',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    backgroundColor: theme.bgCard,
-    borderRadius: 10,
-    padding: 16,
-    borderWidth: 1,
-    borderColor: theme.border,
-    marginTop: 12,
-  },
-  settingsButtonText: {
-    fontSize: 16,
-    fontFamily: 'DMSans_600SemiBold',
-    color: theme.text,
-  },
-  settingsChevron: {
-    fontSize: 16,
-    color: theme.textDim,
   },
   signOutButton: {
     marginTop: 32,

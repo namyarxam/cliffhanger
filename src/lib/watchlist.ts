@@ -184,6 +184,11 @@ export async function updateShowStatus(
     update.current_episode = 0;
   }
 
+  // Only currently_watching can be caught up
+  if (status !== 'currently_watching') {
+    update.caught_up = false;
+  }
+
   const { error } = await supabase
     .from('user_shows')
     .update(update)
@@ -323,6 +328,11 @@ export async function markExactlyUpTo(
     if (error) throw error;
   }
 
+  const lastAired = getLastAiredEpisode(allSeasons);
+  const isCaughtUp = lastAired != null
+    && targetSeason === lastAired.season
+    && targetEpisode === lastAired.episode;
+
   const { error: progressError } = await supabase
     .from('user_shows')
     .update({
@@ -330,6 +340,7 @@ export async function markExactlyUpTo(
       current_episode: targetEpisode,
       current_episode_airdate: airdate,
       status: 'currently_watching',
+      caught_up: isCaughtUp,
       new_episodes_seen_at: new Date().toISOString(),
       updated_at: new Date().toISOString(),
     })
@@ -393,7 +404,7 @@ export async function dismissNewEpisodes(userId: string, showId: string): Promis
 
 export async function getNextEpisodesForShows(
   userId: string,
-): Promise<{ nextEpisodes: Map<string, { season: number; episode: number }>; caughtUpShows: Set<string> }> {
+): Promise<{ nextEpisodes: Map<string, { season: number; episode: number }> }> {
   const { data, error } = await supabase.rpc('get_next_episodes_for_shows', {
     p_user_id: userId,
   });
@@ -403,31 +414,7 @@ export async function getNextEpisodesForShows(
     nextEpisodes.set(r.show_id, { season: r.next_season, episode: r.next_episode });
   }
 
-  // Find which currently-watching shows are in the schedule table
-  const { data: userShows } = await supabase
-    .from('user_shows')
-    .select('show_id')
-    .eq('user_id', userId)
-    .eq('status', 'currently_watching');
-
-  const watchingIds = (userShows ?? []).map(s => s.show_id);
-  const caughtUpShows = new Set<string>();
-
-  if (watchingIds.length > 0) {
-    const { data: scheduled } = await supabase
-      .from('schedule')
-      .select('show_id')
-      .in('show_id', watchingIds);
-
-    const scheduledIds = new Set((scheduled ?? []).map(s => s.show_id));
-
-    // Caught up = in schedule but no next episode
-    for (const id of scheduledIds) {
-      if (!nextEpisodes.has(id)) caughtUpShows.add(id);
-    }
-  }
-
-  return { nextEpisodes, caughtUpShows };
+  return { nextEpisodes };
 }
 
 export async function markNextEpisode(
