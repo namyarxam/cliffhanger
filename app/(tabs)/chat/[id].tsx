@@ -31,7 +31,6 @@ import {
   getFrontRunner,
   isCaughtUp,
   leaveConversation,
-  deleteConversation,
   toggleSpoilerLock,
   getFriendsNotInConversation,
   sendConversationInvite,
@@ -211,7 +210,7 @@ export default function ChatDetailScreen() {
 
   const handleLeave = useCallback(() => {
     if (!userId || !id) return;
-    Alert.alert('Leave Chat', 'Are you sure you want to leave this conversation?', [
+    Alert.alert('Leave Chat', "Leave this conversation? You'll lose access unless invited again.", [
       { text: 'Cancel', style: 'cancel' },
       {
         text: 'Leave', style: 'destructive',
@@ -221,19 +220,6 @@ export default function ChatDetailScreen() {
       },
     ]);
   }, [userId, id, router]);
-
-  const handleDelete = useCallback(() => {
-    if (!id) return;
-    Alert.alert('Delete Chat', 'This will remove the conversation for everyone. This cannot be undone.', [
-      { text: 'Cancel', style: 'cancel' },
-      {
-        text: 'Delete', style: 'destructive',
-        onPress: async () => {
-          try { await deleteConversation(id); router.replace('/(tabs)/chat'); } catch (e) { silentCatch('chatDetail:delete')(e); }
-        },
-      },
-    ]);
-  }, [id, router]);
 
   const handleToggleSpoilerLock = useCallback(async () => {
     if (!conversation) return;
@@ -560,13 +546,13 @@ export default function ChatDetailScreen() {
               </View>
             )}
 
-            {/* Leave / Delete */}
+            {/* Leave */}
             <View style={styles.settingsSection}>
               <Pressable
                 style={({ pressed }) => [styles.dangerButton, pressed && { opacity: 0.7 }]}
-                onPress={() => { setSettingsModalVisible(false); setTimeout(() => { if (isOwner) handleDelete(); else handleLeave(); }, 300); }}
+                onPress={() => { setSettingsModalVisible(false); setTimeout(() => handleLeave(), 300); }}
               >
-                <Text style={styles.dangerButtonText}>{isOwner ? 'Delete Chat' : 'Leave Chat'}</Text>
+                <Text style={styles.dangerButtonText}>Leave Chat</Text>
               </Pressable>
             </View>
           </View>
