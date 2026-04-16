@@ -12,9 +12,10 @@ import { theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { supabase } from '@/src/lib/supabase';
 import { registerForPushNotifications, unregisterPushNotifications } from '@/src/lib/notifications';
+import { silentCatch } from '@/src/lib/errorLog';
 
 export default function SettingsScreen() {
-  const { user, refreshProfile } = useAuth();
+  const { user, refreshProfile, signOut } = useAuth();
   const [pushNewEpisodes, setPushNewEpisodes] = useState(false);
   const [showTop4, setShowTop4] = useState(false);
   const [showPosters, setShowPosters] = useState(true);
@@ -93,6 +94,48 @@ export default function SettingsScreen() {
     const ok = await updateProfile('hide_ratings', newValue);
     if (!ok) setHideRatings(!newValue);
   }, [hideRatings, updateProfile]);
+
+  const handleDeleteAccount = useCallback(() => {
+    Alert.alert(
+      'Delete Account',
+      'This will permanently delete your account, watchlists, ratings, messages, and friendships. This cannot be undone.',
+      [
+        { text: 'Cancel', style: 'cancel' },
+        {
+          text: 'Continue',
+          style: 'destructive',
+          onPress: () => {
+            Alert.alert(
+              'Are you absolutely sure?',
+              'Your account and all associated data will be permanently deleted.',
+              [
+                { text: 'Cancel', style: 'cancel' },
+                {
+                  text: 'Delete Forever',
+                  style: 'destructive',
+                  onPress: async () => {
+                    try {
+                      const { data, error } = await supabase.functions.invoke('delete-account', { method: 'POST' });
+                      if (error) {
+                        const ctx = error instanceof Error ? await (error as unknown as { context?: Response }).context?.text?.() : undefined;
+                        throw new Error(`${error.message}${ctx ? ` — ${ctx}` : ''}`);
+                      }
+                      if (data && !data.ok) throw new Error(data.error || 'Unknown error');
+                      await signOut();
+                    } catch (e) {
+                      silentCatch('settings:deleteAccount')(e);
+                      const msg = e instanceof Error ? e.message : String(e);
+                      Alert.alert('Delete Failed', msg);
+                    }
+                  },
+                },
+              ],
+            );
+          },
+        },
+      ],
+    );
+  }, [signOut]);
 
 
   return (
@@ -176,6 +219,12 @@ export default function SettingsScreen() {
           <Text style={styles.aboutLabel}>Email</Text>
           <Text style={styles.aboutValue}>{user?.email}</Text>
         </View>
+        <Pressable
+          style={({ pressed }) => [styles.deleteButton, pressed && { opacity: 0.7 }]}
+          onPress={handleDeleteAccount}
+        >
+          <Text style={styles.deleteButtonText}>Delete Account</Text>
+        </Pressable>
       </View>
 
       {/* About section */}
@@ -298,5 +347,18 @@ const styles = StyleSheet.create({
     fontSize: 13,
     fontFamily: 'DMSans_400Regular',
     color: theme.textDim,
+  },
+  deleteButton: {
+    marginTop: 16,
+    paddingVertical: 14,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: 'rgba(239,68,68,0.4)',
+    alignItems: 'center',
+  },
+  deleteButtonText: {
+    fontSize: 14,
+    fontFamily: 'DMSans_600SemiBold',
+    color: '#ef4444',
   },
 });
