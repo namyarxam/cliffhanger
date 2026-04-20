@@ -94,4 +94,4 @@ We may update this policy as the app evolves. When we make material changes, we'
 
 Questions about this policy, or about data we hold on you?
 
-**Email:** privacy@cliffhanger.app
+**Email:** cliffhanger.support@gmail.com
