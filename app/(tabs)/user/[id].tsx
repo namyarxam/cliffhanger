@@ -8,9 +8,11 @@ import {
   ActivityIndicator,
   Pressable,
   LayoutAnimation,
+  Alert,
 } from 'react-native';
 import { useLocalSearchParams, useRouter, Stack } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { Image } from 'expo-image';
@@ -18,7 +20,9 @@ import { getUserShows } from '@/src/lib/watchlist';
 import { getFriendshipStatus, sendFriendRequest, removeFriend } from '@/src/lib/friends';
 import { getLists, getDisplayList } from '@/src/lib/lists';
 import { supabase } from '@/src/lib/supabase';
+import { blockUser } from '@/src/lib/moderation';
 import WatchlistCard from '@/src/components/WatchlistCard';
+import ReportModal from '@/src/components/ReportModal';
 import type { UserShow, UserProfile, WatchStatus, ListWithItems, ListItem } from '@/src/lib/types';
 import { silentCatch } from '@/src/lib/errorLog';
 
@@ -46,6 +50,7 @@ export default function UserProfileScreen() {
     status: string;
     is_incoming: boolean;
   } | null>(null);
+  const [reportVisible, setReportVisible] = useState(false);
 
   useEffect(() => {
     if (!id) return;
@@ -106,6 +111,45 @@ export default function UserProfileScreen() {
     router.push(`/show/${showId}?from=/user/${id}`);
   }, [router, id]);
 
+  const handleModerationMenu = useCallback(() => {
+    if (!userId || !id || !profile) return;
+    Alert.alert(
+      profile.display_name,
+      undefined,
+      [
+        { text: 'Report', onPress: () => setReportVisible(true) },
+        {
+          text: 'Block',
+          style: 'destructive',
+          onPress: () => {
+            Alert.alert(
+              `Block ${profile.display_name}?`,
+              'They won\'t be able to message you or see your profile. Any existing direct message with them will be deleted.',
+              [
+                { text: 'Cancel', style: 'cancel' },
+                {
+                  text: 'Block',
+                  style: 'destructive',
+                  onPress: async () => {
+                    try {
+                      await blockUser(userId, id);
+                      // Redirect to Friends with a signal so the list can optimistically
+                      // remove this user before the background refetch finishes.
+                      router.replace(`/(tabs)/friends?blocked=${id}`);
+                    } catch (e: any) {
+                      Alert.alert('Could not block', e.message || 'Please try again.');
+                    }
+                  },
+                },
+              ],
+            );
+          },
+        },
+        { text: 'Cancel', style: 'cancel' },
+      ],
+    );
+  }, [userId, id, profile, router]);
+
   const sections = SECTION_ORDER
     .map(({ key, title }) => {
       let data = shows.filter(s => s.status === key);
@@ -133,9 +177,20 @@ export default function UserProfileScreen() {
       }} />
 
       {/* Back header */}
-      <Pressable style={styles.backButton} onPress={() => router.push('/(tabs)/friends')}>
-        <Text style={styles.backText}>‹ Friends</Text>
-      </Pressable>
+      <View style={styles.topBar}>
+        <Pressable style={styles.backButton} onPress={() => router.push('/(tabs)/friends')}>
+          <Text style={styles.backText}>‹ Friends</Text>
+        </Pressable>
+        {userId && id !== userId && (
+          <Pressable
+            style={({ pressed }) => [styles.menuButton, pressed && { opacity: 0.5 }]}
+            onPress={handleModerationMenu}
+            hitSlop={10}
+          >
+            <FontAwesome name="ellipsis-h" size={18} color={theme.textDim} />
+          </Pressable>
+        )}
+      </View>
 
       {loading ? (
         <View style={styles.center}>
@@ -299,6 +354,15 @@ export default function UserProfileScreen() {
           )}
         </ScrollView>
       )}
+
+      {userId && id && profile && (
+        <ReportModal
+          visible={reportVisible}
+          reporterId={userId}
+          target={{ userId: id, label: profile.display_name }}
+          onClose={() => setReportVisible(false)}
+        />
+      )}
     </SafeAreaView>
   );
 }
@@ -307,6 +371,15 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: theme.bg,
+  },
+  topBar: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  menuButton: {
+    paddingHorizontal: 16,
+    paddingVertical: 12,
   },
   backButton: {
     paddingHorizontal: 16,

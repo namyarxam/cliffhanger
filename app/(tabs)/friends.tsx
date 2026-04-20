@@ -10,7 +10,7 @@ import {
   Pressable,
   Modal,
 } from 'react-native';
-import { useRouter } from 'expo-router';
+import { useRouter, useLocalSearchParams } from 'expo-router';
 import { useFocusEffect } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { theme } from '@/src/lib/theme';
@@ -25,6 +25,7 @@ import {
   getPendingRequests,
   getFriendshipStatus,
 } from '@/src/lib/friends';
+import { getBlockedIds } from '@/src/lib/moderation';
 import FriendRow from '@/src/components/FriendRow';
 import type { FriendAction } from '@/src/components/FriendRow';
 import type { FriendWithProfile, UserProfile } from '@/src/lib/types';
@@ -38,6 +39,7 @@ interface SearchResult {
 
 export default function FriendsScreen() {
   const router = useRouter();
+  const { blocked: blockedParam } = useLocalSearchParams<{ blocked?: string }>();
   const { session } = useAuth();
   const userId = session?.user?.id;
   const refreshBadge = useRefreshBadge();
@@ -72,8 +74,15 @@ export default function FriendsScreen() {
 
   useFocusEffect(
     useCallback(() => {
+      // If we arrived here via a "user just blocked someone" redirect, optimistically
+      // remove them from the local list so they don't flash before the fetch returns.
+      if (blockedParam) {
+        setFriends(prev => prev.filter(f => f.user.id !== blockedParam));
+        setPending(prev => prev.filter(p => p.user.id !== blockedParam));
+        router.setParams({ blocked: undefined });
+      }
       fetchData();
-    }, [fetchData])
+    }, [fetchData, blockedParam, router])
   );
 
   // ── Filter friends list ─────────────────────────────────────────────────────
@@ -101,9 +110,13 @@ export default function FriendsScreen() {
     addDebounceRef.current = setTimeout(async () => {
       if (!userId) return;
       try {
-        const users = await searchUsers(text, userId);
+        const [users, blockedIds] = await Promise.all([
+          searchUsers(text, userId),
+          getBlockedIds(userId),
+        ]);
+        const notBlocked = users.filter(u => !blockedIds.has(u.id));
         const results: SearchResult[] = await Promise.all(
-          users.map(async (u) => {
+          notBlocked.map(async (u) => {
             const fs = await getFriendshipStatus(userId, u.id);
             let action: FriendAction = 'add';
             let friendshipId: string | undefined;

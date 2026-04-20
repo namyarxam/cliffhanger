@@ -41,6 +41,7 @@ export default function ProfileScreen() {
 
   const [droppedCount, setDroppedCount] = useState(0);
   const [watchedCount, setWatchedCount] = useState(0);
+  const [navLoaded, setNavLoaded] = useState(false);
   const [editing, setEditing] = useState(false);
   const [editName, setEditName] = useState('');
 
@@ -60,14 +61,21 @@ export default function ProfileScreen() {
   useFocusEffect(
     useCallback(() => {
       if (!user?.id) return;
-      getFriends(user.id).then(f => setFriendCount(f.length)).catch(silentCatch('profile:friends'));
-      getPendingRequests(user.id).then(p => setPendingCount(p.length)).catch(silentCatch('profile:pending'));
-      ensureDefaultList(user.id).then(() => getLists(user.id).then(l => setListCount(l.length))).catch(silentCatch('profile:lists'));
-      getDisplayList(user.id).then(d => setDisplayList(d)).catch(silentCatch('profile:display'));
-      getUserShows(user.id).then(s => {
-        setDroppedCount(s.filter(sh => sh.status === 'dropped').length);
-        setWatchedCount(s.filter(sh => sh.status === 'watched').length);
-      }).catch(silentCatch('profile:shows'));
+      const uid = user.id;
+      // Nav rows wait on all four queries so counts + conditional rows appear at once,
+      // not in a staggered pop-in. displayList is independent (hero area, not nav).
+      Promise.all([
+        getFriends(uid).then(f => setFriendCount(f.length)),
+        getPendingRequests(uid).then(p => setPendingCount(p.length)),
+        ensureDefaultList(uid).then(() => getLists(uid).then(l => setListCount(l.length))),
+        getUserShows(uid).then(s => {
+          setDroppedCount(s.filter(sh => sh.status === 'dropped').length);
+          setWatchedCount(s.filter(sh => sh.status === 'watched').length);
+        }),
+      ])
+        .catch(silentCatch('profile:nav'))
+        .finally(() => setNavLoaded(true));
+      getDisplayList(uid).then(d => setDisplayList(d)).catch(silentCatch('profile:display'));
     }, [user?.id])
   );
 
@@ -257,6 +265,14 @@ export default function ProfileScreen() {
         </View>
       )}
 
+      {/* Nav — render only when all counts have loaded so rows don't pop in */}
+      {!navLoaded && (
+        <View style={styles.navLoading}>
+          <ActivityIndicator color={theme.textDim} size="small" />
+        </View>
+      )}
+      {navLoaded && (
+        <>
       {/* Primary nav */}
       <View style={styles.navGroup}>
         <Pressable
@@ -324,6 +340,8 @@ export default function ProfileScreen() {
           </Pressable>
         )}
       </View>
+        </>
+      )}
 
       <Pressable style={styles.signOutButton} onPress={signOut}>
         <Text style={styles.signOutText}>Sign Out</Text>
@@ -588,6 +606,10 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     overflow: 'hidden',
     marginBottom: 12,
+  },
+  navLoading: {
+    paddingVertical: 40,
+    alignItems: 'center',
   },
   navRow: {
     flexDirection: 'row',

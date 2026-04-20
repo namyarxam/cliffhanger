@@ -9,6 +9,7 @@ import {
   Linking,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { useRouter } from 'expo-router';
 import { theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { supabase } from '@/src/lib/supabase';
@@ -18,6 +19,7 @@ import { silentCatch } from '@/src/lib/errorLog';
 const PRIVACY_URL = 'https://namyarxam.github.io/cliffhanger-docs/privacy';
 
 export default function SettingsScreen() {
+  const router = useRouter();
   const { user, refreshProfile, signOut } = useAuth();
   const [pushNewEpisodes, setPushNewEpisodes] = useState(false);
   const [showTop4, setShowTop4] = useState(false);
@@ -213,6 +215,16 @@ export default function SettingsScreen() {
             <View style={[styles.toggleThumb, hideRatings && styles.toggleThumbOn]} />
           </View>
         </Pressable>
+        <Pressable
+          style={({ pressed }) => [styles.settingRow, pressed && { opacity: 0.7 }]}
+          onPress={() => router.push('/(tabs)/blocked')}
+        >
+          <View style={styles.settingInfo}>
+            <Text style={styles.settingLabel}>Blocked Users</Text>
+            <Text style={styles.settingHint}>Manage users you've blocked</Text>
+          </View>
+          <Text style={styles.settingChevron}>▸</Text>
+        </Pressable>
       </View>
 
       {/* Account section */}
@@ -304,6 +316,10 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontFamily: 'DMSans_600SemiBold',
     color: theme.text,
+  },
+  settingChevron: {
+    fontSize: 18,
+    color: theme.textFaint,
   },
   settingHint: {
     fontSize: 12,
