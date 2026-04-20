@@ -13,6 +13,7 @@ import {
 import { useRouter } from 'expo-router';
 import { useFocusEffect } from 'expo-router';
 import { Image } from 'expo-image';
+import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { useAuth } from '@/src/providers/AuthProvider';
 
 import { theme } from '@/src/lib/theme';
@@ -39,6 +40,7 @@ export default function ProfileScreen() {
   const [displayList, setDisplayList] = useState<ListWithItems | null>(null);
 
   const [droppedCount, setDroppedCount] = useState(0);
+  const [watchedCount, setWatchedCount] = useState(0);
   const [editing, setEditing] = useState(false);
   const [editName, setEditName] = useState('');
 
@@ -62,7 +64,10 @@ export default function ProfileScreen() {
       getPendingRequests(user.id).then(p => setPendingCount(p.length)).catch(silentCatch('profile:pending'));
       ensureDefaultList(user.id).then(() => getLists(user.id).then(l => setListCount(l.length))).catch(silentCatch('profile:lists'));
       getDisplayList(user.id).then(d => setDisplayList(d)).catch(silentCatch('profile:display'));
-      getUserShows(user.id).then(s => setDroppedCount(s.filter(sh => sh.status === 'dropped').length)).catch(silentCatch('profile:dropped'));
+      getUserShows(user.id).then(s => {
+        setDroppedCount(s.filter(sh => sh.status === 'dropped').length);
+        setWatchedCount(s.filter(sh => sh.status === 'watched').length);
+      }).catch(silentCatch('profile:shows'));
     }, [user?.id])
   );
 
@@ -252,22 +257,16 @@ export default function ProfileScreen() {
         </View>
       )}
 
-      {/* Navigation rows */}
+      {/* Primary nav */}
       <View style={styles.navGroup}>
         <Pressable
-          style={({ pressed }) => [styles.navRow, pressed && { opacity: 0.7 }]}
-          onPress={() => router.push('/(tabs)/lists')}
-        >
-          <Text style={styles.navRowTextAccent}>My Lists</Text>
-          <Text style={styles.navRowCount}>{listCount ?? 0}</Text>
-          <Text style={styles.navChevron}>▸</Text>
-        </Pressable>
-
-        <Pressable
-          style={({ pressed }) => [styles.navRow, pressed && { opacity: 0.7 }]}
+          style={({ pressed }) => [styles.navRowPrimary, pressed && { opacity: 0.7 }]}
           onPress={() => router.push('/(tabs)/friends')}
         >
-          <Text style={styles.navRowText}>Friends</Text>
+          <View style={[styles.navIconTile, { backgroundColor: 'rgba(96,165,250,0.15)' }]}>
+            <FontAwesome name="users" size={13} color="#60a5fa" />
+          </View>
+          <Text style={styles.navRowTextPrimary}>Friends</Text>
           {pendingCount > 0 && (
             <View style={styles.pendingBadge}>
               <Text style={styles.pendingBadgeText}>{pendingCount}</Text>
@@ -277,6 +276,35 @@ export default function ProfileScreen() {
           <Text style={styles.navChevron}>▸</Text>
         </Pressable>
 
+        <Pressable
+          style={({ pressed }) => [styles.navRowPrimary, pressed && { opacity: 0.7 }]}
+          onPress={() => router.push('/(tabs)/lists')}
+        >
+          <View style={[styles.navIconTile, { backgroundColor: 'rgba(192,132,252,0.15)' }]}>
+            <FontAwesome name="bookmark" size={13} color="#c084fc" />
+          </View>
+          <Text style={styles.navRowTextPrimary}>My Lists</Text>
+          <Text style={styles.navRowCount}>{listCount ?? 0}</Text>
+          <Text style={styles.navChevron}>▸</Text>
+        </Pressable>
+
+        {watchedCount > 0 && (
+          <Pressable
+            style={({ pressed }) => [styles.navRowPrimary, pressed && { opacity: 0.7 }]}
+            onPress={() => router.push('/(tabs)/watched')}
+          >
+            <View style={[styles.navIconTile, { backgroundColor: 'rgba(74,222,128,0.15)' }]}>
+              <FontAwesome name="check" size={13} color={theme.success} />
+            </View>
+            <Text style={styles.navRowTextPrimary}>Watched Shows</Text>
+            <Text style={styles.navRowCount}>{watchedCount}</Text>
+            <Text style={styles.navChevron}>▸</Text>
+          </Pressable>
+        )}
+      </View>
+
+      {/* Secondary nav */}
+      <View style={styles.navGroup}>
         <Pressable
           style={({ pressed }) => [styles.navRow, pressed && { opacity: 0.7 }]}
           onPress={() => router.push('/(tabs)/settings')}
@@ -559,7 +587,7 @@ const styles = StyleSheet.create({
     backgroundColor: theme.bgCard,
     borderRadius: 12,
     overflow: 'hidden',
-    marginBottom: 24,
+    marginBottom: 12,
   },
   navRow: {
     flexDirection: 'row',
@@ -569,17 +597,33 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: theme.border,
   },
+  navRowPrimary: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    paddingVertical: 14,
+    paddingHorizontal: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: theme.border,
+  },
+  navIconTile: {
+    width: 28,
+    height: 28,
+    borderRadius: 7,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   navRowText: {
     flex: 1,
     fontSize: 16,
     fontFamily: 'DMSans_500Medium',
     color: theme.text,
   },
-  navRowTextAccent: {
+  navRowTextPrimary: {
     flex: 1,
-    fontSize: 16,
+    fontSize: 17,
     fontFamily: 'DMSans_600SemiBold',
-    color: theme.accent,
+    color: theme.text,
   },
   navRowCount: {
     fontSize: 14,

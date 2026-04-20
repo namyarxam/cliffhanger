@@ -12,12 +12,16 @@ import { useRouter } from 'expo-router';
 import { useFocusEffect } from 'expo-router';
 import { theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
-import { getUserShows, getNextEpisodesForShows, markNextEpisode } from '@/src/lib/watchlist';
+import { getUserShows, getNextEpisodesForShows, getPopularWithFriends, markNextEpisode } from '@/src/lib/watchlist';
+import type { PopularShow } from '@/src/lib/watchlist';
 import { getDisplayList } from '@/src/lib/lists';
 import WatchlistCard from '@/src/components/WatchlistCard';
 import TopShowsRow from '@/src/components/TopShowsRow';
+import PopularWithFriendsRow from '@/src/components/PopularWithFriendsRow';
 import type { UserShow, ListWithItems, WatchStatus } from '@/src/lib/types';
 import { silentCatch } from '@/src/lib/errorLog';
+
+const POPULAR_CAROUSEL_LIMIT = 25;
 
 function sortTitle(t: string): string {
   return t.replace(/^The\s+/i, '');
@@ -26,8 +30,9 @@ function sortTitle(t: string): string {
 const SECTION_ORDER: { key: WatchStatus; title: string }[] = [
   { key: 'currently_watching', title: 'Currently Watching' },
   { key: 'want_to_watch', title: 'Want to Watch' },
-  { key: 'watched', title: 'Watched' },
 ];
+
+const POPULAR_SECTION_TITLE = 'Popular with Friends';
 
 export default function MyShowsScreen() {
   const router = useRouter();
@@ -37,6 +42,7 @@ export default function MyShowsScreen() {
   const [shows, setShows] = useState<UserShow[]>([]);
   const [displayList, setDisplayList] = useState<ListWithItems | null>(null);
   const [nextEpisodes, setNextEpisodes] = useState<Map<string, { season: number; episode: number }>>(new Map());
+  const [popular, setPopular] = useState<PopularShow[]>([]);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
@@ -44,14 +50,16 @@ export default function MyShowsScreen() {
   const fetchData = useCallback(async () => {
     if (!userId) return;
     try {
-      const [data, episodeData, display] = await Promise.all([
+      const [data, episodeData, display, popularShows] = await Promise.all([
         getUserShows(userId),
         getNextEpisodesForShows(userId),
         getDisplayList(userId),
+        getPopularWithFriends(userId, POPULAR_CAROUSEL_LIMIT),
       ]);
       setShows(data);
       setNextEpisodes(episodeData.nextEpisodes);
       setDisplayList(display);
+      setPopular(popularShows);
     } catch (e) {
       silentCatch('myShows:fetchData')(e);
     } finally {
@@ -110,21 +118,27 @@ export default function MyShowsScreen() {
     });
   }, []);
 
-  const sections = SECTION_ORDER
+  const userSections = SECTION_ORDER
     .map(({ key, title }) => {
-      let allData = shows.filter(s => s.status === key);
-      if (key === 'watched') {
-        allData = [...allData].sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0));
-      } else {
-        allData = [...allData].sort((a, b) => sortTitle(a.show_title).localeCompare(sortTitle(b.show_title)));
-      }
+      const allData = [...shows.filter(s => s.status === key)].sort((a, b) => sortTitle(a.show_title).localeCompare(sortTitle(b.show_title)));
       return {
         title,
         data: collapsed.has(title) ? [] : allData,
         count: allData.length,
+        isCarousel: false,
       };
     })
     .filter(s => s.count > 0);
+
+  const sections: typeof userSections = [...userSections];
+  if (popular.length > 0) {
+    sections.unshift({
+      title: POPULAR_SECTION_TITLE,
+      data: [],
+      count: 0,
+      isCarousel: true,
+    });
+  }
 
   if (loading) {
     return (
@@ -166,7 +180,16 @@ export default function MyShowsScreen() {
         />
       )}
       renderSectionHeader={({ section }) => {
-        const isCollapsed = collapsed.has(section.title);
+        if (section.isCarousel) {
+          return (
+            <View>
+              <View style={styles.sectionHeader}>
+                <Text style={styles.sectionTitle}>{section.title}</Text>
+              </View>
+              <PopularWithFriendsRow items={popular} onPress={handlePress} />
+            </View>
+          );
+        }
         return (
           <Pressable
             style={styles.sectionHeader}
@@ -221,8 +244,6 @@ const styles = StyleSheet.create({
     paddingTop: 28,
     paddingBottom: 10,
     backgroundColor: theme.bg,
-    borderBottomWidth: 1,
-    borderBottomColor: theme.border,
   },
   sectionTitle: {
     fontSize: 12,

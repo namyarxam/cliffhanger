@@ -2,7 +2,7 @@ import { supabase } from './supabase';
 import { getFriends } from './friends';
 import type { UserShow, EpisodeWatch, WatchStatus, Season } from './types';
 
-const POPULAR_SHOWS_LIMIT = 6;
+const POPULAR_SHOWS_LIMIT_DEFAULT = 6;
 
 // ─── Episode Helpers ──────────────────────────────────────────────────────────
 
@@ -52,7 +52,7 @@ export interface PopularShow {
   latestAdd: string;
 }
 
-export async function getPopularWithFriends(userId: string): Promise<PopularShow[]> {
+export async function getPopularWithFriends(userId: string, limit: number = POPULAR_SHOWS_LIMIT_DEFAULT): Promise<PopularShow[]> {
   const friends = await getFriends(userId);
   if (friends.length === 0) return [];
 
@@ -97,7 +97,7 @@ export async function getPopularWithFriends(userId: string): Promise<PopularShow
       latestAdd: info.latestAdd,
     }))
     .sort((a, b) => b.friend_count - a.friend_count || b.latestAdd.localeCompare(a.latestAdd))
-    .slice(0, POPULAR_SHOWS_LIMIT);
+    .slice(0, limit);
 }
 
 export async function getUserShows(userId: string): Promise<UserShow[]> {

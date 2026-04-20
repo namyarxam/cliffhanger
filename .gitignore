@@ -40,6 +40,9 @@ yarn-error.*
 # Claude
 CLAUDE.md
 
+# Supabase CLI local state
+supabase/.temp/
+
 # generated native folders
 /ios
 /android
