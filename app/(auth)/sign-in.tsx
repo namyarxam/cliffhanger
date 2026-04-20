@@ -18,6 +18,7 @@ export default function SignInScreen() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
+  const [unverified, setUnverified] = useState(false);
 
   async function handleSignIn() {
     if (!email || !password) {
@@ -30,10 +31,26 @@ export default function SignInScreen() {
     setLoading(false);
 
     if (error) {
+      // Supabase returns "Email not confirmed" when email verification is required.
+      if (error.message.toLowerCase().includes('email not confirmed')) {
+        setUnverified(true);
+        return;
+      }
       Alert.alert('Sign in failed', error.message);
+      return;
     }
+    setUnverified(false);
     // On success, the AuthProvider detects the session change
     // and the root layout redirects to (tabs)
+  }
+
+  async function handleResendConfirmation() {
+    const { error } = await supabase.auth.resend({ type: 'signup', email });
+    if (error) {
+      Alert.alert('Could not resend', error.message);
+      return;
+    }
+    Alert.alert('Sent', 'A new confirmation email is on its way.');
   }
 
   return (
@@ -79,6 +96,17 @@ export default function SignInScreen() {
             <Text style={styles.buttonText}>Sign In</Text>
           )}
         </Pressable>
+
+        {unverified && (
+          <View style={styles.unverifiedBox}>
+            <Text style={styles.unverifiedText}>
+              This account isn't verified yet. Check your inbox for the confirmation link.
+            </Text>
+            <Pressable style={({ pressed }) => [styles.resendButton, pressed && { opacity: 0.7 }]} onPress={handleResendConfirmation}>
+              <Text style={styles.resendText}>Resend confirmation email</Text>
+            </Pressable>
+          </View>
+        )}
 
         <Link href="/(auth)/forgot-password" asChild>
           <Pressable style={styles.forgotButton}>
@@ -149,6 +177,28 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 16,
     fontWeight: '600',
+  },
+  unverifiedBox: {
+    marginTop: 16,
+    padding: 14,
+    borderRadius: 10,
+    backgroundColor: 'rgba(255,107,53,0.08)',
+    borderWidth: 1,
+    borderColor: 'rgba(255,107,53,0.25)',
+  },
+  unverifiedText: {
+    fontSize: 13,
+    color: theme.text,
+    lineHeight: 18,
+    marginBottom: 10,
+  },
+  resendButton: {
+    alignSelf: 'flex-start',
+  },
+  resendText: {
+    fontSize: 14,
+    color: theme.accent,
+    fontFamily: 'DMSans_600SemiBold',
   },
   forgotButton: {
     marginTop: 16,

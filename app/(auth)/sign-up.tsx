@@ -24,6 +24,7 @@ export default function SignUpScreen() {
   const [displayName, setDisplayName] = useState('');
   const [username, setUsername] = useState('');
   const [loading, setLoading] = useState(false);
+  const [awaitingConfirmation, setAwaitingConfirmation] = useState(false);
 
   async function handleSignUp() {
     if (!email || !password || !username) {
@@ -37,7 +38,7 @@ export default function SignUpScreen() {
     }
 
     setLoading(true);
-    const { error } = await supabase.auth.signUp({
+    const { data, error } = await supabase.auth.signUp({
       email,
       password,
       options: {
@@ -51,8 +52,24 @@ export default function SignUpScreen() {
 
     if (error) {
       Alert.alert('Sign up failed', error.message);
+      return;
     }
-    // On success, AuthProvider detects the session and redirects to (tabs)
+
+    // If email confirmation is required, no session is returned.
+    // Hold the user on a "check your inbox" screen until they click the email link.
+    if (!data.session) {
+      setAwaitingConfirmation(true);
+    }
+    // Otherwise, AuthProvider detects the session and AuthGate redirects to (tabs).
+  }
+
+  async function handleResendConfirmation() {
+    const { error } = await supabase.auth.resend({ type: 'signup', email });
+    if (error) {
+      Alert.alert('Could not resend', error.message);
+      return;
+    }
+    Alert.alert('Sent', 'A new confirmation email is on its way.');
   }
 
   return (
@@ -67,8 +84,28 @@ export default function SignUpScreen() {
         <Text style={styles.logo}>
           cliff<Text style={styles.logoAccent}>hanger</Text>
         </Text>
-        <Text style={styles.subtitle}>Create your account</Text>
+        <Text style={styles.subtitle}>
+          {awaitingConfirmation ? 'Check your email' : 'Create your account'}
+        </Text>
 
+        {awaitingConfirmation ? (
+          <>
+            <Text style={styles.confirmBody}>
+              We sent a confirmation link to <Text style={styles.confirmEmail}>{email}</Text>. Open it on this device to finish signing up.
+            </Text>
+            <Pressable style={styles.button} onPress={handleResendConfirmation}>
+              <Text style={styles.buttonText}>Resend email</Text>
+            </Pressable>
+            <Link href="/(auth)/sign-in" asChild>
+              <Pressable style={styles.linkButton}>
+                <Text style={styles.linkText}>
+                  Already confirmed? <Text style={styles.linkAccent}>Sign in</Text>
+                </Text>
+              </Pressable>
+            </Link>
+          </>
+        ) : (
+          <>
         <TextInput
           style={styles.input}
           placeholder="Username *"
@@ -136,6 +173,8 @@ export default function SignUpScreen() {
             </Text>
           </Pressable>
         </Link>
+          </>
+        )}
       </ScrollView>
     </KeyboardAvoidingView>
   );
@@ -200,6 +239,17 @@ const styles = StyleSheet.create({
     color: theme.textFaint,
     textAlign: 'center',
     lineHeight: 17,
+  },
+  confirmBody: {
+    fontSize: 14,
+    color: theme.textDim,
+    textAlign: 'center',
+    lineHeight: 20,
+    marginBottom: 24,
+  },
+  confirmEmail: {
+    color: theme.text,
+    fontFamily: 'DMSans_600SemiBold',
   },
   disclaimerLink: {
     color: theme.textDim,

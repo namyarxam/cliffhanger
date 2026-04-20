@@ -15,9 +15,11 @@ export { ErrorBoundary } from 'expo-router';
 SplashScreen.preventAutoHideAsync();
 
 /**
- * Handle incoming deep links — currently just Supabase password-reset emails.
- * URL shape: cliffhanger://reset-password#access_token=...&refresh_token=...&type=recovery
- * We consume the tokens to establish a session, then route into the reset screen.
+ * Handle incoming Supabase auth deep links (password reset, email confirmation).
+ * URL shape: cliffhanger://<path>#access_token=...&refresh_token=...&type=<recovery|signup|email_change>
+ * We consume the tokens to establish a session, then:
+ *   - recovery → push into reset-password screen
+ *   - signup / email_change → let AuthGate route into (tabs)
  */
 async function handleAuthDeepLink(url: string, router: ReturnType<typeof useRouter>) {
   const fragmentIdx = url.indexOf('#');
@@ -26,14 +28,15 @@ async function handleAuthDeepLink(url: string, router: ReturnType<typeof useRout
   const accessToken = params.get('access_token');
   const refreshToken = params.get('refresh_token');
   const type = params.get('type');
-  if (!accessToken || !refreshToken || type !== 'recovery') return;
+  if (!accessToken || !refreshToken) return;
 
   const { error } = await supabase.auth.setSession({
     access_token: accessToken,
     refresh_token: refreshToken,
   });
   if (error) { silentCatch('deepLink:setSession')(error); return; }
-  router.replace('/(auth)/reset-password');
+  if (type === 'recovery') router.replace('/(auth)/reset-password');
+  // signup/email_change: session is established, AuthGate will route into the app automatically
 }
 
 function AuthGate() {
