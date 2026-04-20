@@ -122,13 +122,37 @@ Deno.serve(async (_req) => {
               }
             }
 
-            // Send via Expo push service (batch)
+            // Send via Expo push service (batch) and prune dead tokens from the response
             if (notifications.length > 0) {
-              await fetch('https://exp.host/--/api/v2/push/send', {
+              const pushRes = await fetch('https://exp.host/--/api/v2/push/send', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                 body: JSON.stringify(notifications),
               });
+
+              if (pushRes.ok) {
+                const pushBody = await pushRes.json();
+                const tickets: Array<{ status: string; details?: { error?: string; expoPushToken?: string } }> =
+                  pushBody?.data ?? [];
+
+                // Expo returns DeviceNotRegistered when a token is dead (uninstall, logout,
+                // permission revoked). Remove those so we stop wasting future sends on them.
+                const deadTokens: string[] = [];
+                for (let i = 0; i < tickets.length; i++) {
+                  const t = tickets[i];
+                  if (t?.status === 'error' && t.details?.error === 'DeviceNotRegistered') {
+                    const token = t.details.expoPushToken ?? notifications[i]?.to;
+                    if (token) deadTokens.push(token);
+                  }
+                }
+
+                if (deadTokens.length > 0) {
+                  await supabase
+                    .from('push_tokens')
+                    .delete()
+                    .in('expo_push_token', deadTokens);
+                }
+              }
             }
           }
         }

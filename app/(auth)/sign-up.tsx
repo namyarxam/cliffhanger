@@ -32,8 +32,12 @@ export default function SignUpScreen() {
       return;
     }
 
-    if (username.length < 3) {
-      Alert.alert('Username too short', 'Username must be at least 3 characters.');
+    if (username.length < 3 || username.length > 24) {
+      Alert.alert('Invalid username', 'Username must be between 3 and 24 characters.');
+      return;
+    }
+    if (displayName.length > 40) {
+      Alert.alert('Display name too long', 'Display name must be 40 characters or fewer.');
       return;
     }
 
@@ -114,6 +118,7 @@ export default function SignUpScreen() {
           onChangeText={setUsername}
           autoCapitalize="none"
           autoComplete="username-new"
+          maxLength={24}
         />
 
         <TextInput
@@ -123,6 +128,7 @@ export default function SignUpScreen() {
           value={displayName}
           onChangeText={setDisplayName}
           autoComplete="name"
+          maxLength={40}
         />
 
         <TextInput

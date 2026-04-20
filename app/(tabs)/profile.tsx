@@ -9,6 +9,7 @@ import {
   Modal,
   FlatList,
   ActivityIndicator,
+  Alert,
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useFocusEffect } from 'expo-router';
@@ -86,6 +87,10 @@ export default function ProfileScreen() {
 
   const handleSaveEdit = async () => {
     if (!user?.id || !editName.trim()) return;
+    if (editName.trim().length > 40) {
+      Alert.alert('Display name too long', 'Display name must be 40 characters or fewer.');
+      return;
+    }
     try {
       const { error } = await supabase
         .from('profiles')
