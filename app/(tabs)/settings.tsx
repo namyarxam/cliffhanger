@@ -6,6 +6,7 @@ import {
   ScrollView,
   StyleSheet,
   Alert,
+  Linking,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { theme } from '@/src/lib/theme';
@@ -13,6 +14,8 @@ import { useAuth } from '@/src/providers/AuthProvider';
 import { supabase } from '@/src/lib/supabase';
 import { registerForPushNotifications, unregisterPushNotifications } from '@/src/lib/notifications';
 import { silentCatch } from '@/src/lib/errorLog';
+
+const PRIVACY_URL = 'https://namyarxam.github.io/cliffhanger-docs/privacy';
 
 export default function SettingsScreen() {
   const { user, refreshProfile, signOut } = useAuth();
@@ -238,6 +241,13 @@ export default function SettingsScreen() {
           <Text style={styles.aboutLabel}>Data</Text>
           <Text style={styles.aboutValue}>Powered by TVMaze</Text>
         </View>
+        <Pressable
+          style={({ pressed }) => [styles.aboutRow, pressed && { opacity: 0.7 }]}
+          onPress={() => Linking.openURL(PRIVACY_URL)}
+        >
+          <Text style={styles.aboutLabel}>Privacy Policy</Text>
+          <Text style={styles.aboutLink}>Open ▸</Text>
+        </Pressable>
       </View>
       </ScrollView>
     </SafeAreaView>
@@ -347,6 +357,11 @@ const styles = StyleSheet.create({
     fontSize: 13,
     fontFamily: 'DMSans_400Regular',
     color: theme.textDim,
+  },
+  aboutLink: {
+    fontSize: 13,
+    fontFamily: 'DMSans_500Medium',
+    color: theme.accent,
   },
   deleteButton: {
     marginTop: 16,

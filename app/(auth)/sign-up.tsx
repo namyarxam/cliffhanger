@@ -10,10 +10,13 @@ import {
   ActivityIndicator,
   Alert,
   ScrollView,
+  Linking,
 } from 'react-native';
 import { Link } from 'expo-router';
 import { supabase } from '@/src/lib/supabase';
 import { theme } from '@/src/lib/theme';
+
+const PRIVACY_URL = 'https://namyarxam.github.io/cliffhanger-docs/privacy';
 
 export default function SignUpScreen() {
   const [email, setEmail] = useState('');
@@ -118,6 +121,14 @@ export default function SignUpScreen() {
           )}
         </Pressable>
 
+        <Text style={styles.disclaimer}>
+          By creating an account, you agree to our{' '}
+          <Text style={styles.disclaimerLink} onPress={() => Linking.openURL(PRIVACY_URL)}>
+            Privacy Policy
+          </Text>
+          .
+        </Text>
+
         <Link href="/(auth)/sign-in" asChild>
           <Pressable style={styles.linkButton}>
             <Text style={styles.linkText}>
@@ -182,6 +193,17 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 16,
     fontWeight: '600',
+  },
+  disclaimer: {
+    marginTop: 16,
+    fontSize: 12,
+    color: theme.textFaint,
+    textAlign: 'center',
+    lineHeight: 17,
+  },
+  disclaimerLink: {
+    color: theme.textDim,
+    textDecorationLine: 'underline',
   },
   linkButton: {
     marginTop: 24,
