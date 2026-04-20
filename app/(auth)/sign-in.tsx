@@ -80,6 +80,12 @@ export default function SignInScreen() {
           )}
         </Pressable>
 
+        <Link href="/(auth)/forgot-password" asChild>
+          <Pressable style={styles.forgotButton}>
+            <Text style={styles.forgotText}>Forgot password?</Text>
+          </Pressable>
+        </Link>
+
         <Link href="/(auth)/sign-up" asChild>
           <Pressable style={styles.linkButton}>
             <Text style={styles.linkText}>
@@ -143,6 +149,14 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 16,
     fontWeight: '600',
+  },
+  forgotButton: {
+    marginTop: 16,
+    alignItems: 'center',
+  },
+  forgotText: {
+    color: theme.textDim,
+    fontSize: 13,
   },
   linkButton: {
     marginTop: 24,
