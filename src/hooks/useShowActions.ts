@@ -52,27 +52,37 @@ export function useShowActions(deps: ShowActionsDeps) {
 
   const handleAddWithStatus = useCallback(async (status: WatchStatus) => {
     if (!userId || !show) return;
+    // Optimistic: render post-click state immediately; reconcile with server result (or revert on failure).
+    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+    const nowIso = new Date().toISOString();
+    setUserShow({
+      user_id: userId,
+      show_id: show.id,
+      status,
+      show_title: show.title,
+      show_image: show.image,
+      show_network: show.network,
+      current_season: 0,
+      current_episode: 0,
+      current_episode_airdate: null,
+      new_episodes_seen_at: nowIso,
+      caught_up: false,
+      notify: false,
+      rating: null,
+      added_at: nowIso,
+      updated_at: nowIso,
+    });
     try {
-      LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
       const { currentSeason, currentEpisode } = await addShow(userId, show.id, status, show.title, show.image, show.network);
-      setUserShow({
-        user_id: userId,
-        show_id: show.id,
-        status,
-        show_title: show.title,
-        show_image: show.image,
-        show_network: show.network,
-        current_season: currentSeason,
-        current_episode: currentEpisode,
-        current_episode_airdate: null,
-        new_episodes_seen_at: new Date().toISOString(),
-        caught_up: false,
-        notify: false,
-        rating: null,
-        added_at: new Date().toISOString(),
-        updated_at: new Date().toISOString(),
-      });
-    } catch (e) { silentCatch('show:addWithStatus')(e); }
+      // addShow restores previous episode_watches progress if the show was added before.
+      // If that restored progress differs from our optimistic (0,0), reconcile silently.
+      if (currentSeason !== 0 || currentEpisode !== 0) {
+        setUserShow(prev => prev ? { ...prev, current_season: currentSeason, current_episode: currentEpisode } : null);
+      }
+    } catch (e) {
+      silentCatch('show:addWithStatus')(e);
+      setUserShow(null);
+    }
   }, [userId, show, setUserShow]);
 
   const handleStatusChange = useCallback(async (status: WatchStatus) => {
@@ -100,29 +110,45 @@ export function useShowActions(deps: ShowActionsDeps) {
       return;
     }
 
-    try {
-      LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
-      if (status === 'watched' && show) {
-        const lastAired = getLastAiredEpisode(show.seasons);
+    // Snapshot for rollback in case server update fails.
+    const prevUserShow = userShow;
+
+    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+    if (status === 'watched' && show) {
+      const lastAired = getLastAiredEpisode(show.seasons);
+      // Optimistic: apply the full "watched" state (progress bumped to last aired) immediately.
+      setUserShow(prev => prev ? {
+        ...prev,
+        status: 'watched',
+        current_season: lastAired?.season ?? 0,
+        current_episode: lastAired?.episode ?? 0,
+        current_episode_airdate: lastAired?.airdate ?? null,
+        updated_at: new Date().toISOString(),
+      } : null);
+      if (lastAired) {
+        setWatchedEps(buildEpisodeSet(show.seasons, lastAired.season, lastAired.episode));
+      }
+      try {
         if (lastAired) {
           const newSet = await markExactlyUpTo(userId, id, lastAired.season, lastAired.episode, show.seasons);
           setWatchedEps(newSet);
         }
         await updateShowStatus(userId, id, 'watched');
-        setUserShow(prev => prev ? {
-          ...prev,
-          status: 'watched',
-          current_season: lastAired?.season ?? 0,
-          current_episode: lastAired?.episode ?? 0,
-          current_episode_airdate: lastAired?.airdate ?? null,
-          updated_at: new Date().toISOString(),
-        } : null);
-      } else {
-        await updateShowStatus(userId, id, status);
-        setUserShow(prev => prev ? { ...prev, status, updated_at: new Date().toISOString() } : null);
+      } catch (e) {
+        silentCatch('show:statusChange:watched')(e);
+        setUserShow(prevUserShow);
+        refetchWatchedEps();
       }
-    } catch (e) { silentCatch('show:statusChange')(e); }
-  }, [userId, id, userShow, show, setUserShow, setWatchedEps]);
+    } else {
+      setUserShow(prev => prev ? { ...prev, status, updated_at: new Date().toISOString() } : null);
+      try {
+        await updateShowStatus(userId, id, status);
+      } catch (e) {
+        silentCatch('show:statusChange')(e);
+        setUserShow(prevUserShow);
+      }
+    }
+  }, [userId, id, userShow, show, setUserShow, setWatchedEps, refetchWatchedEps]);
 
   const handleCatchUp = useCallback(async () => {
     if (!userId || !id || !show) return;

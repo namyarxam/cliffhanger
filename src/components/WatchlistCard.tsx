@@ -32,17 +32,19 @@ interface Props {
   isCaughtUp?: boolean;
   leftAccessory?: React.ReactNode;
   hidePosters?: boolean;
+  airsToday?: boolean;
 }
 
-export default memo(function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, isCaughtUp: caughtUp, leftAccessory, hidePosters }: Props) {
+export default memo(function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, isCaughtUp: caughtUp, leftAccessory, hidePosters, airsToday }: Props) {
   const hasNext = !!nextEpisode && show.status === 'currently_watching';
+  const showToday = airsToday && show.status === 'currently_watching';
 
   return (
     <Pressable
       style={({ pressed }) => [
         styles.container,
         pressed && styles.pressed,
-        hasNext && styles.containerGlow,
+        showToday && styles.containerGlow,
       ]}
       onPress={() => onPress(show.show_id)}
     >
@@ -64,9 +66,17 @@ export default memo(function WatchlistCard({ show, onPress, nextEpisode, onMarkN
       )}
 
       <View style={styles.info}>
-        <Text style={styles.title} numberOfLines={1}>
-          {show.show_title}
-        </Text>
+        <View style={styles.titleRow}>
+          <Text style={styles.title} numberOfLines={1}>
+            {show.show_title}
+          </Text>
+          {showToday && (
+            <View style={styles.todayPill}>
+              <View style={styles.todayDot} />
+              <Text style={styles.todayText}>TODAY</Text>
+            </View>
+          )}
+        </View>
       </View>
 
       {leftAccessory}
@@ -160,11 +170,37 @@ const styles = StyleSheet.create({
     flex: 1,
     gap: 3,
   },
+  titleRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
   title: {
     fontSize: 15,
     fontFamily: 'DMSans_600SemiBold',
     color: theme.text,
     flexShrink: 1,
+  },
+  todayPill: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    backgroundColor: 'rgba(255,107,53,0.15)',
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 4,
+  },
+  todayDot: {
+    width: 5,
+    height: 5,
+    borderRadius: 3,
+    backgroundColor: theme.accent,
+  },
+  todayText: {
+    fontSize: 9,
+    fontFamily: 'DMSans_700Bold',
+    color: theme.accent,
+    letterSpacing: 0.8,
   },
   rightInfo: {
     alignItems: 'center',

@@ -69,24 +69,33 @@ Deno.serve(async (_req) => {
     const showIds = [...new Set(episodes.map(e => e.show_id))];
 
     if (showIds.length > 0) {
-      // Get users watching these shows with per-show notify enabled
-      const { data: watchers } = await supabase
+      // Pull all currently_watching rows for our show_ids. We'll filter to
+      // "notify-eligible" below once we know per-user preferences.
+      // last_notified_{season,episode} is the push-dedup cursor — separate from
+      // current_{season,episode} so watching progress and push state don't conflate.
+      const { data: allWatchers } = await supabase
         .from('user_shows')
-        .select('user_id, show_id, show_title, current_season, current_episode')
+        .select('user_id, show_id, show_title, notify, last_notified_season, last_notified_episode')
         .in('show_id', showIds)
-        .eq('status', 'currently_watching')
-        .eq('notify', true);
+        .eq('status', 'currently_watching');
 
-      if (watchers && watchers.length > 0) {
-        // Check which users want push notifications
-        const userIds = [...new Set(watchers.map(w => w.user_id))];
+      if (allWatchers && allWatchers.length > 0) {
+        // Check which users have the master push toggle on, and which have the
+        // "alert for all currently watching" override.
+        const userIds = [...new Set(allWatchers.map(w => w.user_id))];
         const { data: profiles } = await supabase
           .from('profiles')
-          .select('id, push_new_episodes')
+          .select('id, push_new_episodes, notify_all_current')
           .in('id', userIds)
           .eq('push_new_episodes', true);
 
         const pushEnabledUsers = new Set((profiles || []).map(p => p.id));
+        const notifyAllUsers = new Set((profiles || []).filter(p => p.notify_all_current).map(p => p.id));
+
+        // Per-show notify OR global notify_all_current override
+        const watchers = allWatchers.filter(
+          w => w.notify === true || notifyAllUsers.has(w.user_id),
+        );
 
         // Get push tokens for these users
         if (pushEnabledUsers.size > 0) {
@@ -96,21 +105,28 @@ Deno.serve(async (_req) => {
             .in('user_id', [...pushEnabledUsers]);
 
           if (tokens && tokens.length > 0) {
-            // Build notifications: one per user per show with new episodes
+            // Build notifications: one per user per show with new episodes.
+            // Track which (user, show) pairs we're notifying and the latest episode,
+            // so we can bump last_notified_{season,episode} after sending.
             const notifications: { to: string; title: string; body: string }[] = [];
+            const notified: { user_id: string; show_id: string; season: number; episode: number }[] = [];
 
             for (const watcher of watchers) {
               if (!pushEnabledUsers.has(watcher.user_id)) continue;
 
-              // Check if any new episodes are beyond the user's current position
+              // Only surface episodes we haven't already pushed about.
               const newEps = episodes.filter(
                 e =>
                   e.show_id === watcher.show_id &&
-                  (e.season > watcher.current_season ||
-                    (e.season === watcher.current_season && e.episode > watcher.current_episode))
+                  (e.season > watcher.last_notified_season ||
+                    (e.season === watcher.last_notified_season && e.episode > watcher.last_notified_episode))
               );
 
               if (newEps.length === 0) continue;
+
+              const latest = newEps.reduce((a, b) =>
+                b.season > a.season || (b.season === a.season && b.episode > a.episode) ? b : a,
+              );
 
               const userTokens = tokens.filter(t => t.user_id === watcher.user_id);
               for (const token of userTokens) {
@@ -120,6 +136,13 @@ Deno.serve(async (_req) => {
                   body: `${watcher.show_title} — S${newEps[0].season} E${newEps[0].episode} aired today`,
                 });
               }
+
+              notified.push({
+                user_id: watcher.user_id,
+                show_id: watcher.show_id,
+                season: latest.season,
+                episode: latest.episode,
+              });
             }
 
             // Send via Expo push service (batch) and prune dead tokens from the response
@@ -152,6 +175,20 @@ Deno.serve(async (_req) => {
                     .delete()
                     .in('expo_push_token', deadTokens);
                 }
+              }
+
+              // Bump last_notified_{season,episode} for every (user, show) pair we just
+              // pushed about. On the next poll, those episodes won't re-qualify even if
+              // the user hasn't watched them yet.
+              for (const n of notified) {
+                await supabase
+                  .from('user_shows')
+                  .update({
+                    last_notified_season: n.season,
+                    last_notified_episode: n.episode,
+                  })
+                  .eq('user_id', n.user_id)
+                  .eq('show_id', n.show_id);
               }
             }
           }

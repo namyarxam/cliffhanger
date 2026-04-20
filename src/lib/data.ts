@@ -26,6 +26,11 @@ interface TVMazeShow {
   image: { medium: string; original: string } | null;
   summary: string | null;
   rating: { average: number | null };
+  runtime: number | null;
+  averageRuntime: number | null;
+  type: string | null;
+  language: string | null;
+  officialSite: string | null;
 }
 
 interface TVMazeSearchResult {
@@ -47,7 +52,7 @@ interface TVMazeEpisode {
 }
 
 interface TVMazeCastEntry {
-  person: { name: string } | null;
+  person: { name: string; image: { medium: string; original: string } | null } | null;
   character: { name: string; image: { medium: string; original: string } | null } | null;
 }
 
@@ -126,7 +131,7 @@ export async function fetchCast(showId: string): Promise<CastMember[]> {
 }
 
 export async function fetchShow(id: string): Promise<ShowFull> {
-  const res = await fetch(`${TVMAZE_BASE}/shows/${id}?embed[]=episodes`);
+  const res = await fetch(`${TVMAZE_BASE}/shows/${id}?embed[]=episodes&embed[]=cast&embed[]=nextepisode`);
   if (!res.ok) throw new Error(`Failed to fetch show ${id}: ${res.status}`);
   const data = await res.json();
 
@@ -134,11 +139,33 @@ export async function fetchShow(id: string): Promise<ShowFull> {
   const episodes: TVMazeEpisode[] = data._embedded?.episodes ?? [];
   const seasons = groupEpisodes(episodes);
 
+  // Cast: prefer character image (recognizable in costume) over person headshot.
+  const castRaw: TVMazeCastEntry[] = data._embedded?.cast ?? [];
+  const cast: CastMember[] = castRaw.map(entry => ({
+    personName: entry.person?.name ?? 'Unknown',
+    characterName: entry.character?.name ?? 'Unknown',
+    image: entry.character?.image?.medium ?? entry.person?.image?.medium ?? null,
+  }));
+
+  const nextEp = data._embedded?.nextepisode;
+  const nextEpisode = nextEp ? {
+    season: nextEp.season,
+    number: nextEp.number,
+    name: nextEp.name,
+    airdate: nextEp.airdate ?? null,
+  } : null;
+
   return {
     ...toShowSummary(show),
     seasons,
     totalSeasons: seasons.length,
     totalEpisodes: episodes.filter(e => e.number != null).length,
     rating: show.rating?.average ?? null,
+    runtime: show.averageRuntime ?? show.runtime ?? null,
+    type: show.type,
+    language: show.language,
+    officialSite: show.officialSite,
+    cast,
+    nextEpisode,
   };
 }

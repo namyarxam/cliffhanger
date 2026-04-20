@@ -416,6 +416,36 @@ export async function dismissNewEpisodes(userId: string, showId: string): Promis
   if (error) throw error;
 }
 
+/** Returns the set of show_ids where the user has an unwatched episode airing today. */
+export async function getShowsAiringToday(userId: string): Promise<Set<string>> {
+  const today = new Date().toISOString().slice(0, 10);
+
+  const { data: userShows } = await supabase
+    .from('user_shows')
+    .select('show_id, current_season, current_episode')
+    .eq('user_id', userId)
+    .eq('status', 'currently_watching');
+  if (!userShows || userShows.length === 0) return new Set();
+
+  const { data: entries } = await supabase
+    .from('schedule')
+    .select('show_id, season, episode')
+    .in('show_id', userShows.map(s => s.show_id))
+    .eq('airdate', today);
+  if (!entries || entries.length === 0) return new Set();
+
+  const posByShow = new Map(userShows.map(s => [s.show_id, { s: s.current_season, e: s.current_episode }]));
+  const airing = new Set<string>();
+  for (const entry of entries) {
+    const pos = posByShow.get(entry.show_id);
+    if (!pos) continue;
+    if (entry.season > pos.s || (entry.season === pos.s && entry.episode > pos.e)) {
+      airing.add(entry.show_id);
+    }
+  }
+  return airing;
+}
+
 export async function getNextEpisodesForShows(
   userId: string,
 ): Promise<{ nextEpisodes: Map<string, { season: number; episode: number }> }> {

@@ -22,6 +22,7 @@ export default function SettingsScreen() {
   const router = useRouter();
   const { user, refreshProfile, signOut } = useAuth();
   const [pushNewEpisodes, setPushNewEpisodes] = useState(false);
+  const [notifyAllCurrent, setNotifyAllCurrent] = useState(false);
   const [showTop4, setShowTop4] = useState(false);
   const [showPosters, setShowPosters] = useState(true);
   const [hideRatings, setHideRatings] = useState(false);
@@ -30,17 +31,16 @@ export default function SettingsScreen() {
     if (!user?.id) return;
     supabase
       .from('profiles')
-      .select('push_new_episodes, show_top4_in_list, show_posters_in_list, hide_ratings, default_sort, compact_mode')
+      .select('push_new_episodes, notify_all_current, show_top4_in_list, show_posters_in_list, hide_ratings, default_sort, compact_mode')
       .eq('id', user.id)
       .single()
       .then(({ data }) => {
         if (data) {
           setPushNewEpisodes(data.push_new_episodes);
+          setNotifyAllCurrent(data.notify_all_current);
           setShowTop4(data.show_top4_in_list);
           setShowPosters(data.show_posters_in_list);
           setHideRatings(data.hide_ratings);
-
-
         }
       });
   }, [user?.id]);
@@ -78,6 +78,13 @@ export default function SettingsScreen() {
     const ok = await updateProfile('push_new_episodes', newValue);
     if (!ok) setPushNewEpisodes(!newValue);
   }, [user?.id, pushNewEpisodes, updateProfile]);
+
+  const handleToggleNotifyAll = useCallback(async () => {
+    const newValue = !notifyAllCurrent;
+    setNotifyAllCurrent(newValue);
+    const ok = await updateProfile('notify_all_current', newValue);
+    if (!ok) setNotifyAllCurrent(!newValue);
+  }, [notifyAllCurrent, updateProfile]);
 
   const handleToggleTop4 = useCallback(async () => {
     const newValue = !showTop4;
@@ -155,7 +162,12 @@ export default function SettingsScreen() {
         <Text style={styles.sectionTitle}>Notifications</Text>
         <Pressable style={styles.settingRow} onPress={handleTogglePush}>
           <View style={styles.settingInfo}>
-            <Text style={styles.settingLabel}>New Episode Alerts</Text>
+            <View style={styles.settingLabelRow}>
+              <Text style={styles.settingLabel}>New Episode Alerts</Text>
+              <View style={styles.betaBadge}>
+                <Text style={styles.betaBadgeText}>BETA</Text>
+              </View>
+            </View>
             <Text style={styles.settingHint}>
               Master switch for all episode notifications
             </Text>
@@ -165,8 +177,24 @@ export default function SettingsScreen() {
           </View>
         </Pressable>
         <Text style={styles.settingNote}>
-          Turn this on, then tap the bell icon on any show to get notified when new episodes air. You'll only get alerts for shows you've opted into.
+          Notifications are in early beta.
         </Text>
+
+        <Pressable style={styles.settingRow} onPress={handleToggleNotifyAll} disabled={!pushNewEpisodes}>
+          <View style={[styles.settingInfo, !pushNewEpisodes && { opacity: 0.4 }]}>
+            <Text style={styles.settingLabel}>Alert for all shows I'm watching</Text>
+            <Text style={styles.settingHint}>
+              Automatically enable alerts for every show in your Currently Watching list. Per-show bells still work.
+            </Text>
+          </View>
+          <View style={[
+            styles.toggleTrack,
+            notifyAllCurrent && pushNewEpisodes && styles.toggleTrackOn,
+            !pushNewEpisodes && { opacity: 0.4 },
+          ]}>
+            <View style={[styles.toggleThumb, notifyAllCurrent && pushNewEpisodes && styles.toggleThumbOn]} />
+          </View>
+        </Pressable>
       </View>
 
       {/* Display section */}
@@ -312,10 +340,27 @@ const styles = StyleSheet.create({
     flex: 1,
     marginRight: 12,
   },
+  settingLabelRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
   settingLabel: {
     fontSize: 15,
     fontFamily: 'DMSans_600SemiBold',
     color: theme.text,
+  },
+  betaBadge: {
+    backgroundColor: 'rgba(255,107,53,0.15)',
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 4,
+  },
+  betaBadgeText: {
+    fontSize: 9,
+    fontFamily: 'DMSans_700Bold',
+    color: theme.accent,
+    letterSpacing: 0.8,
   },
   settingChevron: {
     fontSize: 18,

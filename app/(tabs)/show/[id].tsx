@@ -33,6 +33,22 @@ const STATUS_LABELS: Record<WatchStatus, string> = {
 
 const STATUSES: WatchStatus[] = ['want_to_watch', 'currently_watching', 'watched'];
 
+function formatAirdate(airdate: string): string {
+  const d = new Date(airdate + 'T00:00:00');
+  const now = new Date();
+  const diffDays = Math.floor((d.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
+  if (diffDays === 0) return 'Airs today';
+  if (diffDays === 1) return 'Airs tomorrow';
+  if (diffDays > 0 && diffDays < 7) return `Airs in ${diffDays} days`;
+  const sameYear = d.getFullYear() === now.getFullYear();
+  const label = d.toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    ...(sameYear ? {} : { year: 'numeric' }),
+  });
+  return diffDays < 0 ? `Aired ${label}` : `Airs ${label}`;
+}
+
 const STATUS_ICONS: Record<WatchStatus, React.ComponentProps<typeof FontAwesome>['name']> = {
   want_to_watch: 'bookmark-o',
   currently_watching: 'play',
@@ -85,7 +101,15 @@ export default function ShowDetailScreen() {
     );
   }
 
-  const isRunning = show.status === 'Running';
+  // AIRING reflects "actively releasing episodes right now" — not just "not ended".
+  // TVMaze marks shows "Running" during long hiatuses between seasons, so we also
+  // require a scheduled next episode within the next 30 days.
+  const isRunning = (() => {
+    if (show.status !== 'Running' || !show.nextEpisode?.airdate) return false;
+    const next = new Date(show.nextEpisode.airdate + 'T00:00:00').getTime();
+    const daysAway = (next - Date.now()) / (1000 * 60 * 60 * 24);
+    return daysAway <= 30;
+  })();
   const today = new Date().toISOString().slice(0, 10);
 
   const airedCount = (() => {
@@ -234,13 +258,15 @@ export default function ShowDetailScreen() {
           <View style={styles.statusRow}>
             {STATUSES.map(s => {
               const isActive = userShow?.status === s;
-              const iconColor = isActive ? theme.textBright : !userShow ? theme.accent : theme.textDim;
+              // Empty state pills are solid accent, so icon/text needs bright contrast.
+              const iconColor = !userShow || isActive ? theme.textBright : theme.textDim;
               return (
                 <Pressable
                   key={s}
                   style={({ pressed }) => [
                     styles.statusPill,
-                    (!userShow || !isActive) && styles.statusPillEmpty,
+                    !userShow && styles.statusPillEmpty,
+                    userShow && !isActive && styles.statusPillInactive,
                     isActive && styles.statusPillActive,
                     pressed && !isActive && styles.statusPillPressed,
                   ]}
@@ -355,7 +381,9 @@ export default function ShowDetailScreen() {
           )}
         </View>
 
-        {/* Friend activity — flat list for Watchlist, Dropped, and no-status */}
+        {/* Friend activity — flat list for Watchlist, Dropped, and no-status.
+            For the "no show added yet" case this is the top priority so social
+            signal is the first thing a user sees when evaluating a show. */}
         {friendsWatching.length > 0 && (!userShow || userShow.status === 'want_to_watch' || userShow.status === 'dropped') && (
           <View style={styles.friendsFlatSection}>
             <Text style={styles.friendsFlatTitle}>Friend activity</Text>
@@ -385,6 +413,61 @@ export default function ShowDetailScreen() {
                 </View>
               );
             })}
+          </View>
+        )}
+
+        {/* About — surface details before the user commits to the show.
+            Only shown for unadded shows; once added, the user's in action mode
+            and the pills/picker dominate the page. */}
+        {!userShow && (
+          <View style={styles.aboutSection}>
+            {show.summary && (
+              <Text style={styles.aboutSummary}>{show.summary}</Text>
+            )}
+
+            {show.runtime != null && (
+              <Text style={styles.aboutRuntime}>~{show.runtime} min per episode</Text>
+            )}
+
+            {show.nextEpisode && show.status === 'Running' && (
+              <View style={styles.aboutNextEp}>
+                <Text style={styles.aboutNextEpLabel}>Next Episode</Text>
+                <Text style={styles.aboutNextEpTitle} numberOfLines={1}>
+                  S{show.nextEpisode.season} · E{show.nextEpisode.number}
+                  {show.nextEpisode.name ? ` — ${show.nextEpisode.name}` : ''}
+                </Text>
+                {show.nextEpisode.airdate && (
+                  <Text style={styles.aboutNextEpDate}>
+                    {formatAirdate(show.nextEpisode.airdate)}
+                  </Text>
+                )}
+              </View>
+            )}
+
+            {show.cast.length > 0 && (
+              <View>
+                <Text style={styles.aboutSectionTitle}>Cast</Text>
+                <ScrollView
+                  horizontal
+                  showsHorizontalScrollIndicator={false}
+                  contentContainerStyle={styles.castRow}
+                >
+                  {show.cast.slice(0, 12).map((c, i) => (
+                    <View key={`${c.personName}-${i}`} style={styles.castCard}>
+                      {c.image ? (
+                        <Image source={{ uri: c.image }} style={styles.castImage} contentFit="cover" transition={200} />
+                      ) : (
+                        <View style={[styles.castImage, styles.castPlaceholder]}>
+                          <Text style={styles.castPlaceholderText}>👤</Text>
+                        </View>
+                      )}
+                      <Text style={styles.castCharacter} numberOfLines={1}>{c.characterName}</Text>
+                      <Text style={styles.castPerson} numberOfLines={1}>{c.personName}</Text>
+                    </View>
+                  ))}
+                </ScrollView>
+              </View>
+            )}
           </View>
         )}
 
@@ -656,22 +739,26 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     paddingVertical: 13,
     borderRadius: 10,
-    borderWidth: 1,
-    borderColor: theme.border,
+    backgroundColor: theme.bgCard,
     alignItems: 'center',
     justifyContent: 'center',
     gap: 7,
   },
   statusPillEmpty: {
-    borderColor: 'rgba(255,107,53,0.4)',
-    backgroundColor: 'rgba(255,107,53,0.1)',
+    // Pre-selection all three are primary CTAs — solid accent fill makes them
+    // obviously tappable without the old border-plus-fill double treatment.
+    backgroundColor: theme.accent,
+  },
+  statusPillInactive: {
+    // Post-selection, the un-picked pills recede so the active one dominates,
+    // but stay readable so the user can switch.
+    backgroundColor: 'rgba(255,255,255,0.05)',
   },
   statusPillPressed: {
-    backgroundColor: 'rgba(255,107,53,0.18)',
+    backgroundColor: 'rgba(255,107,53,0.5)',
   },
   statusPillActive: {
     backgroundColor: theme.accent,
-    borderColor: theme.accent,
   },
   secondaryActionsRow: {
     flexDirection: 'row',
@@ -721,10 +808,92 @@ const styles = StyleSheet.create({
     color: theme.textDim,
   },
   statusPillTextEmpty: {
-    color: theme.accent,
+    color: theme.textBright,
   },
   statusPillTextActive: {
     color: theme.textBright,
+  },
+
+
+  // About section (empty-state only: pre-commit details)
+  aboutSection: {
+    paddingHorizontal: 20,
+    paddingTop: 20,
+    gap: 18,
+  },
+  aboutSummary: {
+    fontSize: 14,
+    fontFamily: 'DMSans_400Regular',
+    color: theme.text,
+    lineHeight: 20,
+  },
+  aboutRuntime: {
+    fontSize: 13,
+    fontFamily: 'DMSans_500Medium',
+    color: theme.textDim,
+  },
+  aboutNextEp: {
+    backgroundColor: theme.bgCard,
+    padding: 14,
+    borderRadius: 10,
+    gap: 4,
+  },
+  aboutNextEpLabel: {
+    fontSize: 10,
+    fontFamily: 'DMSans_700Bold',
+    color: theme.accent,
+    letterSpacing: 0.8,
+    textTransform: 'uppercase',
+  },
+  aboutNextEpTitle: {
+    fontSize: 14,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.text,
+  },
+  aboutNextEpDate: {
+    fontSize: 12,
+    fontFamily: 'DMSans_400Regular',
+    color: theme.textDim,
+  },
+  aboutSectionTitle: {
+    fontSize: 12,
+    fontFamily: 'DMSans_700Bold',
+    color: theme.textDim,
+    textTransform: 'uppercase',
+    letterSpacing: 0.8,
+    marginBottom: 10,
+  },
+  castRow: {
+    gap: 12,
+    paddingRight: 8,
+  },
+  castCard: {
+    width: 90,
+  },
+  castImage: {
+    width: 90,
+    height: 120,
+    borderRadius: 6,
+  },
+  castPlaceholder: {
+    backgroundColor: theme.bgCard,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  castPlaceholderText: {
+    fontSize: 28,
+  },
+  castCharacter: {
+    fontSize: 12,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.text,
+    marginTop: 6,
+  },
+  castPerson: {
+    fontSize: 11,
+    fontFamily: 'DMSans_400Regular',
+    color: theme.textDim,
+    marginTop: 1,
   },
 
   // Friends

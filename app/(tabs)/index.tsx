@@ -12,7 +12,7 @@ import { useRouter } from 'expo-router';
 import { useFocusEffect } from 'expo-router';
 import { theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
-import { getUserShows, getNextEpisodesForShows, getPopularWithFriends, markNextEpisode } from '@/src/lib/watchlist';
+import { getUserShows, getNextEpisodesForShows, getPopularWithFriends, getShowsAiringToday, markNextEpisode } from '@/src/lib/watchlist';
 import type { PopularShow } from '@/src/lib/watchlist';
 import { getDisplayList } from '@/src/lib/lists';
 import WatchlistCard from '@/src/components/WatchlistCard';
@@ -43,6 +43,7 @@ export default function MyShowsScreen() {
   const [displayList, setDisplayList] = useState<ListWithItems | null>(null);
   const [nextEpisodes, setNextEpisodes] = useState<Map<string, { season: number; episode: number }>>(new Map());
   const [popular, setPopular] = useState<PopularShow[]>([]);
+  const [airingToday, setAiringToday] = useState<Set<string>>(new Set());
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
@@ -50,16 +51,18 @@ export default function MyShowsScreen() {
   const fetchData = useCallback(async () => {
     if (!userId) return;
     try {
-      const [data, episodeData, display, popularShows] = await Promise.all([
+      const [data, episodeData, display, popularShows, airing] = await Promise.all([
         getUserShows(userId),
         getNextEpisodesForShows(userId),
         getDisplayList(userId),
         getPopularWithFriends(userId, POPULAR_CAROUSEL_LIMIT),
+        getShowsAiringToday(userId),
       ]);
       setShows(data);
       setNextEpisodes(episodeData.nextEpisodes);
       setDisplayList(display);
       setPopular(popularShows);
+      setAiringToday(airing);
     } catch (e) {
       silentCatch('myShows:fetchData')(e);
     } finally {
@@ -176,7 +179,7 @@ export default function MyShowsScreen() {
           onMarkNext={handleMarkNext}
           isCaughtUp={item.caught_up}
           hidePosters={profile?.show_posters_in_list === false}
-
+          airsToday={airingToday.has(item.show_id)}
         />
       )}
       renderSectionHeader={({ section }) => {

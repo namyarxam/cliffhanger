@@ -31,12 +31,31 @@ export interface ShowSummary {
   summary: string | null;
 }
 
+export interface ShowCastMember {
+  personName: string;
+  characterName: string;
+  image: string | null;
+}
+
+export interface ShowNextEpisode {
+  season: number;
+  number: number;
+  name: string;
+  airdate: string | null;
+}
+
 /** Full show data with seasons and episodes */
 export interface ShowFull extends ShowSummary {
   seasons: Season[];
   totalSeasons: number;
   totalEpisodes: number;
   rating: number | null;
+  runtime: number | null;
+  type: string | null;
+  language: string | null;
+  officialSite: string | null;
+  cast: ShowCastMember[];
+  nextEpisode: ShowNextEpisode | null;
 }
 
 // ─── New types for mobile app ───────────────────────────────────────────────
