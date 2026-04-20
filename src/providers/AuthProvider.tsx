@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { Session, User } from '@supabase/supabase-js';
+import * as Sentry from '@sentry/react-native';
 import { supabase } from '@/src/lib/supabase';
 import type { UserProfile } from '@/src/lib/types';
 
@@ -35,8 +36,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     supabase.auth.getSession().then(({ data: { session } }) => {
       setSession(session);
       if (session?.user) {
+        Sentry.setUser({ id: session.user.id, email: session.user.email });
         fetchProfile(session.user.id);
       } else {
+        Sentry.setUser(null);
         setLoading(false);
       }
     });
@@ -46,8 +49,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       async (_event, session) => {
         setSession(session);
         if (session?.user) {
+          Sentry.setUser({ id: session.user.id, email: session.user.email });
           await fetchProfile(session.user.id);
         } else {
+          Sentry.setUser(null);
           setProfile(null);
           setLoading(false);
         }

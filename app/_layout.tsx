@@ -3,6 +3,7 @@ import { View, ActivityIndicator, Linking } from 'react-native';
 import { Stack, useRouter, useSegments } from 'expo-router';
 import { useFonts, DMSans_400Regular, DMSans_500Medium, DMSans_600SemiBold, DMSans_700Bold } from '@expo-google-fonts/dm-sans';
 import * as SplashScreen from 'expo-splash-screen';
+import * as Sentry from '@sentry/react-native';
 import { AuthProvider, useAuth } from '@/src/providers/AuthProvider';
 import { supabase } from '@/src/lib/supabase';
 import { silentCatch } from '@/src/lib/errorLog';
@@ -10,6 +11,20 @@ import { silentCatch } from '@/src/lib/errorLog';
 import { theme } from '@/src/lib/theme';
 
 export { ErrorBoundary } from 'expo-router';
+
+// Sentry error tracking — runs before anything renders so the earliest crash is captured.
+if (process.env.EXPO_PUBLIC_SENTRY_DSN) {
+  Sentry.init({
+    dsn: process.env.EXPO_PUBLIC_SENTRY_DSN,
+    debug: __DEV__,
+    // Error tracking only for now; performance monitoring off to conserve free-tier budget.
+    tracesSampleRate: 0,
+    // Sentry sets this to true by default in newer SDKs; we keep it explicit + off so
+    // device IPs and other auto-collected PII stay local. Only identified user data
+    // we set ourselves via Sentry.setUser() gets sent.
+    sendDefaultPii: false,
+  });
+}
 
 // Keep the splash screen visible while we load fonts + check auth
 SplashScreen.preventAutoHideAsync();
@@ -85,7 +100,7 @@ function AuthGate() {
   );
 }
 
-export default function RootLayout() {
+function RootLayout() {
   const [fontsLoaded, fontError] = useFonts({
     DMSans_400Regular,
     DMSans_500Medium,
@@ -111,3 +126,5 @@ export default function RootLayout() {
     </AuthProvider>
   );
 }
+
+export default Sentry.wrap(RootLayout);
