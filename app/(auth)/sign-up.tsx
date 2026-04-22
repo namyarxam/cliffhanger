@@ -50,6 +50,7 @@ export default function SignUpScreen() {
           display_name: displayName || username,
           username: username.toLowerCase().replace(/[^a-z0-9_]/g, ''),
         },
+        emailRedirectTo: 'cliffhanger://signup',
       },
     });
     setLoading(false);
