@@ -10,7 +10,7 @@ interface Props {
   size?: 'default' | 'large';
 }
 
-export default memo(function TopShowsRow({ items, onPress, size = 'default' }: Props) {
+function TopShowsRow({ items, onPress, size = 'default' }: Props) {
   const { width } = useWindowDimensions();
   const isSmall = width < 380;
   if (items.length === 0) return null;
@@ -41,7 +41,9 @@ export default memo(function TopShowsRow({ items, onPress, size = 'default' }: P
       </View>
     </View>
   );
-});
+}
+
+export default memo(TopShowsRow);
 
 const styles = StyleSheet.create({
   container: {

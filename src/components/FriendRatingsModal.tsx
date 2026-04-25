@@ -11,7 +11,7 @@ interface Props {
   friends: FriendWatching[];
 }
 
-export default memo(function FriendRatingsModal({ visible, onClose, friends }: Props) {
+function FriendRatingsModal({ visible, onClose, friends }: Props) {
   const rated = friends.filter(f => f.rating != null).sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0));
 
   return (
@@ -59,7 +59,9 @@ export default memo(function FriendRatingsModal({ visible, onClose, friends }: P
       </View>
     </Modal>
   );
-});
+}
+
+export default memo(FriendRatingsModal);
 
 const styles = StyleSheet.create({
   container: {

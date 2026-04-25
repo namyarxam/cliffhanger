@@ -10,7 +10,7 @@ interface Props {
   onPress: (showId: string) => void;
 }
 
-export default memo(function PopularWithFriendsRow({ items, onPress }: Props) {
+function PopularWithFriendsRow({ items, onPress }: Props) {
   if (items.length === 0) return null;
 
   return (
@@ -45,7 +45,9 @@ export default memo(function PopularWithFriendsRow({ items, onPress }: Props) {
       />
     </View>
   );
-});
+}
+
+export default memo(PopularWithFriendsRow);
 
 const styles = StyleSheet.create({
   scrollContent: {

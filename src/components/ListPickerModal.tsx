@@ -13,7 +13,7 @@ interface Props {
   onRemove: (listId: string) => void;
 }
 
-export default memo(function ListPickerModal({ visible, onClose, lists, listsContaining, onAdd, onRemove }: Props) {
+function ListPickerModal({ visible, onClose, lists, listsContaining, onAdd, onRemove }: Props) {
   return (
     <Modal visible={visible} animationType="slide" presentationStyle="pageSheet" onRequestClose={onClose}>
       <View style={styles.container}>
@@ -51,7 +51,9 @@ export default memo(function ListPickerModal({ visible, onClose, lists, listsCon
       </View>
     </Modal>
   );
-});
+}
+
+export default memo(ListPickerModal);
 
 const styles = StyleSheet.create({
   container: {

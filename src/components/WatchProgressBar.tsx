@@ -7,7 +7,7 @@ interface Props {
   watchedCount: number;
 }
 
-export default memo(function WatchProgressBar({ airedCount, watchedCount }: Props) {
+function WatchProgressBar({ airedCount, watchedCount }: Props) {
   const fraction = airedCount > 0 ? Math.min(watchedCount / airedCount, 1) : 0;
   const animatedWidth = useRef(new Animated.Value(fraction)).current;
 
@@ -34,7 +34,9 @@ export default memo(function WatchProgressBar({ airedCount, watchedCount }: Prop
       />
     </View>
   );
-});
+}
+
+export default memo(WatchProgressBar);
 
 const styles = StyleSheet.create({
   track: {

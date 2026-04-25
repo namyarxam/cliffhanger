@@ -9,7 +9,7 @@ interface Props {
   onPress: (id: string) => void;
 }
 
-export default memo(function ShowCard({ show, onPress }: Props) {
+function ShowCard({ show, onPress }: Props) {
   const isRunning = show.status === 'Running';
 
   return (
@@ -47,7 +47,9 @@ export default memo(function ShowCard({ show, onPress }: Props) {
       </View>
     </Pressable>
   );
-});
+}
+
+export default memo(ShowCard);
 
 const styles = StyleSheet.create({
   container: {

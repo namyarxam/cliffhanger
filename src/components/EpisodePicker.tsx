@@ -23,7 +23,7 @@ function formatDate(dateStr: string): string {
   return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 }
 
-export default memo(function EpisodePicker({
+function EpisodePicker({
   seasons,
   watchedEps,
   currentSeason,
@@ -207,7 +207,9 @@ export default memo(function EpisodePicker({
       })}
     </View>
   );
-});
+}
+
+export default memo(EpisodePicker);
 
 const styles = StyleSheet.create({
   container: {

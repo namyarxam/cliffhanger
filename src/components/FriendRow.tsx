@@ -19,7 +19,7 @@ function getInitial(name: string): string {
   return (name[0] || '?').toUpperCase();
 }
 
-export default memo(function FriendRow({
+function FriendRow({
   user,
   action,
   onPress,
@@ -102,7 +102,9 @@ export default memo(function FriendRow({
       )}
     </Pressable>
   );
-});
+}
+
+export default memo(FriendRow);
 
 const styles = StyleSheet.create({
   container: {

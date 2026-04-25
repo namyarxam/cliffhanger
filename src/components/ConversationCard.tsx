@@ -24,7 +24,7 @@ interface Props {
   onPress: (id: string) => void;
 }
 
-export default memo(function ConversationCard({ conversation, currentUserId, onPress }: Props) {
+function ConversationCard({ conversation, currentUserId, onPress }: Props) {
   const displayName = getConversationDisplayName(conversation, conversation.member_names, currentUserId);
   const isDM = conversation.member_count === 2 && !conversation.show_id;
 
@@ -72,7 +72,9 @@ export default memo(function ConversationCard({ conversation, currentUserId, onP
       </Text>
     </Pressable>
   );
-});
+}
+
+export default memo(ConversationCard);
 
 const styles = StyleSheet.create({
   container: {

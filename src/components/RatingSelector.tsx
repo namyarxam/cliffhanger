@@ -29,7 +29,7 @@ interface Props {
   onDragEnd?: () => void;
 }
 
-export default memo(function RatingSelector({ rating, onRate, onDragStart, onDragEnd }: Props) {
+function RatingSelector({ rating, onRate, onDragStart, onDragEnd }: Props) {
   const [trackWidth, setTrackWidth] = useState(0);
   const [dragging, setDragging] = useState(false);
   const [tempRating, setTempRating] = useState<number | null>(null);
@@ -147,7 +147,9 @@ export default memo(function RatingSelector({ rating, onRate, onDragStart, onDra
       </View>
     </View>
   );
-});
+}
+
+export default memo(RatingSelector);
 
 const styles = StyleSheet.create({
   container: {

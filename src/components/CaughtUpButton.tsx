@@ -7,7 +7,7 @@ interface Props {
   isCaughtUp: boolean;
 }
 
-export default memo(function CaughtUpButton({ onCatchUp, isCaughtUp }: Props) {
+function CaughtUpButton({ onCatchUp, isCaughtUp }: Props) {
   if (isCaughtUp) {
     return (
       <Pressable style={[styles.button, styles.buttonDone]} disabled>
@@ -24,7 +24,9 @@ export default memo(function CaughtUpButton({ onCatchUp, isCaughtUp }: Props) {
       <Text style={styles.textActive}>Catch Up</Text>
     </Pressable>
   );
-});
+}
+
+export default memo(CaughtUpButton);
 
 const styles = StyleSheet.create({
   button: {

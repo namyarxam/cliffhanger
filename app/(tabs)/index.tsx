@@ -16,6 +16,7 @@ import { getUserShows, getNextEpisodesForShows, getPopularWithFriends, getShowsA
 import type { PopularShow, NextEpisode } from '@/src/lib/watchlist';
 import { getDisplayList } from '@/src/lib/lists';
 import WatchlistCard from '@/src/components/WatchlistCard';
+import EpisodeCatchUpSheet from '@/src/components/EpisodeCatchUpSheet';
 import TopShowsRow from '@/src/components/TopShowsRow';
 import PopularWithFriendsRow from '@/src/components/PopularWithFriendsRow';
 import type { UserShow, ListWithItems } from '@/src/lib/types';
@@ -78,6 +79,7 @@ export default function MyShowsScreen() {
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
+  const [catchUpTarget, setCatchUpTarget] = useState<UserShow | null>(null);
 
   const fetchData = useCallback(async () => {
     if (!userId) return;
@@ -150,6 +152,10 @@ export default function MyShowsScreen() {
       else next.add(title);
       return next;
     });
+  }, []);
+
+  const handleCatchUp = useCallback((show: UserShow) => {
+    setCatchUpTarget(show);
   }, []);
 
   const handleMarkWatched = useCallback(async (showId: string) => {
@@ -238,6 +244,7 @@ export default function MyShowsScreen() {
   }
 
   return (
+    <>
     <SectionList
       style={styles.container}
       sections={sections}
@@ -270,6 +277,7 @@ export default function MyShowsScreen() {
             nextEpisode={nextEp}
             onMarkNext={handleMarkNext}
             onMarkWatched={handleMarkWatched}
+            onCatchUp={handleCatchUp}
             isCaughtUp={item.caught_up}
             hidePosters={profile?.show_posters_in_list === false}
             airsToday={airingToday.has(item.show_id)}
@@ -315,6 +323,17 @@ export default function MyShowsScreen() {
       contentContainerStyle={styles.list}
       stickySectionHeadersEnabled={false}
     />
+    <EpisodeCatchUpSheet
+      visible={catchUpTarget != null}
+      onClose={() => setCatchUpTarget(null)}
+      userId={userId}
+      showId={catchUpTarget?.show_id ?? null}
+      showTitle={catchUpTarget?.show_title ?? ''}
+      currentSeason={catchUpTarget?.current_season ?? 0}
+      currentEpisode={catchUpTarget?.current_episode ?? 0}
+      onMarked={fetchData}
+    />
+    </>
   );
 }
 

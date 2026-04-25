@@ -49,6 +49,7 @@ interface Props {
   nextEpisode?: { season: number; episode: number; airdate: string | null };
   onMarkNext?: (showId: string, season: number, episode: number) => void;
   onMarkWatched?: (showId: string) => void;
+  onCatchUp?: (show: UserShow) => void;
   isCaughtUp?: boolean;
   leftAccessory?: React.ReactNode;
   hidePosters?: boolean;
@@ -64,7 +65,7 @@ function isAiredRecently(airdate: string | null): boolean {
   return diff >= 0 && diff <= NEW_WINDOW_MS;
 }
 
-export default memo(function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, isCaughtUp: caughtUp, leftAccessory, hidePosters, airsToday }: Props) {
+function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, onCatchUp, isCaughtUp: caughtUp, leftAccessory, hidePosters, airsToday }: Props) {
   const hasNext = !!nextEpisode && show.status === 'currently_watching';
   const showToday = airsToday && show.status === 'currently_watching';
   const isEnded = show.status === 'currently_watching' && !hasNext && show.show_status === 'Ended';
@@ -73,6 +74,22 @@ export default memo(function WatchlistCard({ show, onPress, nextEpisode, onMarkN
   // mark — only fire when its airdate is within the last week. Skips the false
   // positive on old shows where the next-unwatched aired years ago.
   const isNewEpisode = hasNext && isAiredRecently(nextEpisode?.airdate ?? null);
+
+  // Multi-behind from cache: same season + ≥2 gap, or any cross-season gap.
+  // Triggers the "Catch up" CTA that opens the sheet for context. We only know
+  // the exact count when both sides of the gap are in the same season; for
+  // cross-season we render a count-less CTA (would need cached season episode
+  // counts to know "S1 had 13 eps" before we could total).
+  const epsBehindSameSeason = (() => {
+    if (show.last_aired_season == null || show.last_aired_episode == null) return null;
+    if (show.last_aired_season !== show.current_season) return null;
+    return show.last_aired_episode - show.current_episode;
+  })();
+  const isMultiBehind = hasNext && (() => {
+    if (show.last_aired_season == null || show.last_aired_episode == null) return false;
+    if (show.last_aired_season > show.current_season) return true;
+    return (epsBehindSameSeason ?? 0) >= 2;
+  })();
 
   return (
     <Pressable
@@ -122,23 +139,40 @@ export default memo(function WatchlistCard({ show, onPress, nextEpisode, onMarkN
       )}
 
       {show.status === 'currently_watching' && hasNext && (
-        <View style={styles.catchUpRow}>
-          <View style={styles.catchUpInfo}>
-            {isNewEpisode && <Text style={styles.catchUpNew}>NEW</Text>}
-            <Text style={styles.catchUpLabel}>
-              S{nextEpisode.season} E{nextEpisode.episode}
-            </Text>
-          </View>
+        isMultiBehind ? (
           <Pressable
-            style={({ pressed }) => [styles.catchUpButton, pressed && { opacity: 0.7 }]}
+            style={({ pressed }) => [styles.catchUpRow, pressed && { opacity: 0.7 }]}
             onPress={(e) => {
               e.stopPropagation();
-              onMarkNext?.(show.show_id, nextEpisode.season, nextEpisode.episode);
+              onCatchUp?.(show);
             }}
           >
-            <Text style={styles.catchUpCheck}>✓</Text>
+            <Text style={styles.catchUpLabel}>Catch up</Text>
+            <View style={styles.catchUpButton}>
+              <Text style={styles.catchUpCount}>
+                {epsBehindSameSeason != null ? epsBehindSameSeason : '›'}
+              </Text>
+            </View>
           </Pressable>
-        </View>
+        ) : (
+          <View style={styles.catchUpRow}>
+            <View style={styles.catchUpInfo}>
+              {isNewEpisode && <Text style={styles.catchUpNew}>NEW</Text>}
+              <Text style={styles.catchUpLabel}>
+                S{nextEpisode.season} E{nextEpisode.episode}
+              </Text>
+            </View>
+            <Pressable
+              style={({ pressed }) => [styles.catchUpButton, pressed && { opacity: 0.7 }]}
+              onPress={(e) => {
+                e.stopPropagation();
+                onMarkNext?.(show.show_id, nextEpisode.season, nextEpisode.episode);
+              }}
+            >
+              <Text style={styles.catchUpCheck}>✓</Text>
+            </Pressable>
+          </View>
+        )
       )}
 
       {show.status === 'currently_watching' && !hasNext && isEnded && (
@@ -171,7 +205,9 @@ export default memo(function WatchlistCard({ show, onPress, nextEpisode, onMarkN
       )}
     </Pressable>
   );
-});
+}
+
+export default memo(WatchlistCard);
 
 const styles = StyleSheet.create({
   container: {
@@ -321,5 +357,11 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: '700',
     color: theme.textBright,
+  },
+  catchUpCount: {
+    fontSize: 13,
+    fontFamily: 'DMSans_700Bold',
+    color: theme.textBright,
+    lineHeight: 16,
   },
 });
