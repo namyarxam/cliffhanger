@@ -243,6 +243,9 @@ export default function SettingsScreen() {
             <View style={[styles.toggleThumb, hideRatings && styles.toggleThumbOn]} />
           </View>
         </Pressable>
+
+        <View style={styles.settingGap} />
+
         <Pressable
           style={({ pressed }) => [styles.settingRow, pressed && { opacity: 0.7 }]}
           onPress={() => router.push('/(tabs)/blocked')}

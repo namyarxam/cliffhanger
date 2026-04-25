@@ -4,6 +4,8 @@ import { useAuth } from '@/src/providers/AuthProvider';
 import {
   getUserShow,
   getWatchedEpisodes,
+  cacheShowMetadata,
+  getLastAiredEpisode,
 } from '@/src/lib/watchlist';
 import { getLists, getListsContainingItem } from '@/src/lib/lists';
 import { getFriends } from '@/src/lib/friends';
@@ -91,6 +93,21 @@ export function useShowData(id: string | undefined) {
     if (!userId || !id) return;
     getUserShow(userId, id).then(setUserShow).catch(silentCatch('show:userShow'));
   }, [userId, id]);
+
+  // Refresh the My-Shows cache every time the user opens this screen.
+  // Drives sub-grouping (status + next airdate) and the cache-fallback
+  // "Behind" detection (last-aired episode) without a separate cron job.
+  useEffect(() => {
+    if (!userId || !id || !show) return;
+    const lastAired = getLastAiredEpisode(show.seasons);
+    cacheShowMetadata(
+      userId,
+      id,
+      show.status,
+      show.nextEpisode?.airdate ?? null,
+      lastAired ? { season: lastAired.season, episode: lastAired.episode, airdate: lastAired.airdate } : null,
+    ).catch(silentCatch('show:cacheMetadata'));
+  }, [userId, id, show]);
 
   useEffect(() => {
     if (!userId || !id || !userShow) return;

@@ -130,6 +130,13 @@ export async function addShow(
   title: string,
   image: string | null,
   network: string | null,
+  metadata?: {
+    showStatus: string | null;
+    nextEpisodeAirdate: string | null;
+    lastAiredSeason: number | null;
+    lastAiredEpisode: number | null;
+    lastAiredAirdate: string | null;
+  },
 ): Promise<{ currentSeason: number; currentEpisode: number }> {
   // Check for existing episode watches to restore progress
   let currentSeason = 0;
@@ -158,6 +165,11 @@ export async function addShow(
       show_title: title,
       show_image: image,
       show_network: network,
+      show_status: metadata?.showStatus ?? null,
+      next_episode_airdate: metadata?.nextEpisodeAirdate ?? null,
+      last_aired_season: metadata?.lastAiredSeason ?? null,
+      last_aired_episode: metadata?.lastAiredEpisode ?? null,
+      last_aired_airdate: metadata?.lastAiredAirdate ?? null,
       current_season: currentSeason,
       current_episode: currentEpisode,
       new_episodes_seen_at: new Date().toISOString(),
@@ -166,6 +178,32 @@ export async function addShow(
 
   if (error) throw error;
   return { currentSeason, currentEpisode };
+}
+
+/**
+ * Refresh the cached TVMaze metadata (status + next-episode airdate) on a
+ * single user_shows row. Called fire-and-forget from useShowData when a show
+ * detail page loads, so the My Shows list groupings stay accurate without a
+ * separate cron job.
+ */
+export async function cacheShowMetadata(
+  userId: string,
+  showId: string,
+  showStatus: string | null,
+  nextEpisodeAirdate: string | null,
+  lastAired: { season: number; episode: number; airdate: string | null } | null,
+): Promise<void> {
+  await supabase
+    .from('user_shows')
+    .update({
+      show_status: showStatus,
+      next_episode_airdate: nextEpisodeAirdate,
+      last_aired_season: lastAired?.season ?? null,
+      last_aired_episode: lastAired?.episode ?? null,
+      last_aired_airdate: lastAired?.airdate ?? null,
+    })
+    .eq('user_id', userId)
+    .eq('show_id', showId);
 }
 
 export async function updateShowStatus(
@@ -446,16 +484,26 @@ export async function getShowsAiringToday(userId: string): Promise<Set<string>> 
   return airing;
 }
 
+export interface NextEpisode {
+  season: number;
+  episode: number;
+  airdate: string | null;
+}
+
 export async function getNextEpisodesForShows(
   userId: string,
-): Promise<{ nextEpisodes: Map<string, { season: number; episode: number }> }> {
-  const { data, error } = await supabase.rpc('get_next_episodes_for_shows', {
+): Promise<{ nextEpisodes: Map<string, NextEpisode> }> {
+  const { data } = await supabase.rpc('get_next_episodes_for_shows', {
     p_user_id: userId,
   });
 
-  const nextEpisodes = new Map<string, { season: number; episode: number }>();
+  const nextEpisodes = new Map<string, NextEpisode>();
   for (const r of data ?? []) {
-    nextEpisodes.set(r.show_id, { season: r.next_season, episode: r.next_episode });
+    nextEpisodes.set(r.show_id, {
+      season: r.next_season,
+      episode: r.next_episode,
+      airdate: r.next_airdate ?? null,
+    });
   }
 
   return { nextEpisodes };

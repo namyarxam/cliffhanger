@@ -72,6 +72,11 @@ export interface UserShow {
   current_season: number;
   current_episode: number;
   current_episode_airdate: string | null;
+  next_episode_airdate: string | null;
+  show_status: string | null;
+  last_aired_season: number | null;
+  last_aired_episode: number | null;
+  last_aired_airdate: string | null;
   new_episodes_seen_at: string | null;
   caught_up: boolean;
   notify: boolean;

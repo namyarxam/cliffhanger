@@ -55,6 +55,7 @@ export function useShowActions(deps: ShowActionsDeps) {
     // Optimistic: render post-click state immediately; reconcile with server result (or revert on failure).
     LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
     const nowIso = new Date().toISOString();
+    const lastAired = getLastAiredEpisode(show.seasons);
     setUserShow({
       user_id: userId,
       show_id: show.id,
@@ -62,6 +63,11 @@ export function useShowActions(deps: ShowActionsDeps) {
       show_title: show.title,
       show_image: show.image,
       show_network: show.network,
+      show_status: show.status,
+      next_episode_airdate: show.nextEpisode?.airdate ?? null,
+      last_aired_season: lastAired?.season ?? null,
+      last_aired_episode: lastAired?.episode ?? null,
+      last_aired_airdate: lastAired?.airdate ?? null,
       current_season: 0,
       current_episode: 0,
       current_episode_airdate: null,
@@ -73,7 +79,13 @@ export function useShowActions(deps: ShowActionsDeps) {
       updated_at: nowIso,
     });
     try {
-      const { currentSeason, currentEpisode } = await addShow(userId, show.id, status, show.title, show.image, show.network);
+      const { currentSeason, currentEpisode } = await addShow(userId, show.id, status, show.title, show.image, show.network, {
+        showStatus: show.status,
+        nextEpisodeAirdate: show.nextEpisode?.airdate ?? null,
+        lastAiredSeason: lastAired?.season ?? null,
+        lastAiredEpisode: lastAired?.episode ?? null,
+        lastAiredAirdate: lastAired?.airdate ?? null,
+      });
       // addShow restores previous episode_watches progress if the show was added before.
       // If that restored progress differs from our optimistic (0,0), reconcile silently.
       if (currentSeason !== 0 || currentEpisode !== 0) {
@@ -187,10 +199,16 @@ export function useShowActions(deps: ShowActionsDeps) {
 
     // Auto-add to watchlist if not already added
     if (!userShow) {
-      await addShow(userId, id, 'currently_watching', show.title, show.image, show.network);
+      const lastAired = getLastAiredEpisode(show.seasons);
+      await addShow(userId, id, 'currently_watching', show.title, show.image, show.network, {
+        showStatus: show.status,
+        nextEpisodeAirdate: show.nextEpisode?.airdate ?? null,
+        lastAiredSeason: lastAired?.season ?? null,
+        lastAiredEpisode: lastAired?.episode ?? null,
+        lastAiredAirdate: lastAired?.airdate ?? null,
+      });
       const targetSeason = show.seasons.find(s => s.number === season);
       const targetEp = targetSeason?.episodes.find(e => e.number === episode);
-      const lastAired = getLastAiredEpisode(show.seasons);
       const tapCaughtUp = lastAired != null && season === lastAired.season && episode === lastAired.episode;
       setUserShow({
         user_id: userId,
@@ -199,6 +217,11 @@ export function useShowActions(deps: ShowActionsDeps) {
         show_title: show.title,
         show_image: show.image,
         show_network: show.network,
+        show_status: show.status,
+        next_episode_airdate: show.nextEpisode?.airdate ?? null,
+        last_aired_season: lastAired?.season ?? null,
+        last_aired_episode: lastAired?.episode ?? null,
+        last_aired_airdate: lastAired?.airdate ?? null,
         current_season: season,
         current_episode: episode,
         current_episode_airdate: targetEp?.airdate ?? null,

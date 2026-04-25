@@ -24,20 +24,55 @@ function formatAirdate(airdate: string): string {
   });
 }
 
+// Future-leaning version: cached `next_episode_airdate` can occasionally fall
+// in the past if the schedule cron hasn't caught up — handle both directions.
+function formatReturnDate(airdate: string): string {
+  const epDate = new Date(airdate + 'T00:00:00');
+  const now = new Date();
+  const diffDays = Math.round((epDate.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
+
+  if (diffDays === 0) return 'Today';
+  if (diffDays === 1) return 'Tomorrow';
+  if (diffDays > 1 && diffDays < 7) return `in ${diffDays}d`;
+  if (diffDays < 0) return formatAirdate(airdate);
+  const sameYear = epDate.getFullYear() === now.getFullYear();
+  return epDate.toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    ...(sameYear ? {} : { year: 'numeric' }),
+  });
+}
+
 interface Props {
   show: UserShow;
   onPress: (id: string) => void;
-  nextEpisode?: { season: number; episode: number };
+  nextEpisode?: { season: number; episode: number; airdate: string | null };
   onMarkNext?: (showId: string, season: number, episode: number) => void;
+  onMarkWatched?: (showId: string) => void;
   isCaughtUp?: boolean;
   leftAccessory?: React.ReactNode;
   hidePosters?: boolean;
   airsToday?: boolean;
 }
 
-export default memo(function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, isCaughtUp: caughtUp, leftAccessory, hidePosters, airsToday }: Props) {
+const NEW_WINDOW_MS = 7 * 24 * 60 * 60 * 1000;
+
+function isAiredRecently(airdate: string | null): boolean {
+  if (!airdate) return false;
+  const aired = new Date(airdate + 'T00:00:00').getTime();
+  const diff = Date.now() - aired;
+  return diff >= 0 && diff <= NEW_WINDOW_MS;
+}
+
+export default memo(function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, isCaughtUp: caughtUp, leftAccessory, hidePosters, airsToday }: Props) {
   const hasNext = !!nextEpisode && show.status === 'currently_watching';
   const showToday = airsToday && show.status === 'currently_watching';
+  const isEnded = show.status === 'currently_watching' && !hasNext && show.show_status === 'Ended';
+  const isReturning = show.status === 'currently_watching' && !hasNext && !isEnded && !!show.next_episode_airdate;
+  // "NEW" is reserved for the specific episode the user is being prompted to
+  // mark — only fire when its airdate is within the last week. Skips the false
+  // positive on old shows where the next-unwatched aired years ago.
+  const isNewEpisode = hasNext && isAiredRecently(nextEpisode?.airdate ?? null);
 
   return (
     <Pressable
@@ -89,7 +124,7 @@ export default memo(function WatchlistCard({ show, onPress, nextEpisode, onMarkN
       {show.status === 'currently_watching' && hasNext && (
         <View style={styles.catchUpRow}>
           <View style={styles.catchUpInfo}>
-            <Text style={styles.catchUpNew}>NEW</Text>
+            {isNewEpisode && <Text style={styles.catchUpNew}>NEW</Text>}
             <Text style={styles.catchUpLabel}>
               S{nextEpisode.season} E{nextEpisode.episode}
             </Text>
@@ -106,18 +141,26 @@ export default memo(function WatchlistCard({ show, onPress, nextEpisode, onMarkN
         </View>
       )}
 
-      {show.status === 'currently_watching' && !hasNext && (
-        <View style={styles.rightInfo}>
-          {show.current_season > 0 ? (
-            <Text style={styles.progress}>
-              S{show.current_season} E{show.current_episode}
-            </Text>
-          ) : (
-            <Text style={styles.progress}>Not started</Text>
-          )}
-          {caughtUp && <Text style={styles.caughtUpCheck}>✓</Text>}
-        </View>
+      {show.status === 'currently_watching' && !hasNext && isEnded && (
+        <Pressable
+          style={({ pressed }) => [styles.endedNudge, pressed && { opacity: 0.6 }]}
+          onPress={(e) => {
+            e.stopPropagation();
+            onMarkWatched?.(show.show_id);
+          }}
+          hitSlop={6}
+        >
+          <Text style={styles.endedNudgeText}>Done?</Text>
+          <Text style={styles.endedNudgeCheck}>✓</Text>
+        </Pressable>
       )}
+
+      {show.status === 'currently_watching' && !hasNext && isReturning && (
+        <Text style={styles.returnDate}>{formatReturnDate(show.next_episode_airdate!)}</Text>
+      )}
+
+      {/* On hiatus or status unknown: render nothing on the right — the
+          sub-section header carries the meaning. */}
 
       {show.status === 'watched' && show.rating != null && (
         <View style={[styles.ratingCircle, { backgroundColor: `${getUserRatingColor(show.rating)}20` }]}>
@@ -202,17 +245,28 @@ const styles = StyleSheet.create({
     color: theme.accent,
     letterSpacing: 0.8,
   },
-  rightInfo: {
-    alignItems: 'center',
-    gap: 2,
-  },
-  progress: {
+  returnDate: {
     fontSize: 12,
+    fontFamily: 'DMSans_500Medium',
+    color: theme.textDim,
+  },
+  endedNudge: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 6,
+    borderWidth: 1,
+    borderColor: theme.border,
+  },
+  endedNudgeText: {
+    fontSize: 11,
     fontFamily: 'DMSans_600SemiBold',
     color: theme.textDim,
   },
-  caughtUpCheck: {
-    fontSize: 12,
+  endedNudgeCheck: {
+    fontSize: 11,
     fontFamily: 'DMSans_700Bold',
     color: theme.successDim,
   },

@@ -12,13 +12,13 @@ import { useRouter } from 'expo-router';
 import { useFocusEffect } from 'expo-router';
 import { theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
-import { getUserShows, getNextEpisodesForShows, getPopularWithFriends, getShowsAiringToday, markNextEpisode } from '@/src/lib/watchlist';
-import type { PopularShow } from '@/src/lib/watchlist';
+import { getUserShows, getNextEpisodesForShows, getPopularWithFriends, getShowsAiringToday, markNextEpisode, updateShowStatus } from '@/src/lib/watchlist';
+import type { PopularShow, NextEpisode } from '@/src/lib/watchlist';
 import { getDisplayList } from '@/src/lib/lists';
 import WatchlistCard from '@/src/components/WatchlistCard';
 import TopShowsRow from '@/src/components/TopShowsRow';
 import PopularWithFriendsRow from '@/src/components/PopularWithFriendsRow';
-import type { UserShow, ListWithItems, WatchStatus } from '@/src/lib/types';
+import type { UserShow, ListWithItems } from '@/src/lib/types';
 import { silentCatch } from '@/src/lib/errorLog';
 
 const POPULAR_CAROUSEL_LIMIT = 25;
@@ -27,10 +27,41 @@ function sortTitle(t: string): string {
   return t.replace(/^The\s+/i, '');
 }
 
-const SECTION_ORDER: { key: WatchStatus; title: string }[] = [
-  { key: 'currently_watching', title: 'Currently Watching' },
-  { key: 'want_to_watch', title: 'Want to Watch' },
-];
+// Sub-groups within Currently Watching, in render order.
+//   behind:    aired episodes the user hasn't watched yet (action zone)
+//   returning: caught up, TVMaze has a future airdate (sorted asc by date)
+//   hiatus:    caught up, TVMaze status is "Running" but no scheduled return
+//              (also the fallback bucket for legacy rows with NULL show_status)
+//   ended:     caught up, TVMaze status is "Ended" — gets a soft "move to
+//              Watched?" nudge on the row
+type CWGroup = 'behind' | 'returning' | 'hiatus' | 'ended';
+
+const CW_GROUP_TITLES: Record<CWGroup, string> = {
+  behind: 'Behind',
+  returning: 'Returning',
+  hiatus: 'On Hiatus',
+  ended: 'Series Ended',
+};
+
+// "Behind" has two signals:
+//   1. The schedule cron picked up an aired episode past the user's progress
+//      (fast/eager — works the day a new ep drops, but only if the cron ran).
+//   2. The cached last-aired episode (set when the user last opened the show
+//      detail page) is past the user's progress (reliable fallback — self-heals
+//      on the next show-page visit if the cron missed the episode).
+function isBehindFromCache(s: UserShow): boolean {
+  if (s.last_aired_season == null || s.last_aired_episode == null) return false;
+  if (s.last_aired_season > s.current_season) return true;
+  if (s.last_aired_season === s.current_season && s.last_aired_episode > s.current_episode) return true;
+  return false;
+}
+
+function classifyCW(s: UserShow, hasNextFromSchedule: boolean): CWGroup {
+  if (hasNextFromSchedule || isBehindFromCache(s)) return 'behind';
+  if (s.show_status === 'Ended') return 'ended';
+  if (s.next_episode_airdate) return 'returning';
+  return 'hiatus';
+}
 
 const POPULAR_SECTION_TITLE = 'Popular with Friends';
 
@@ -41,7 +72,7 @@ export default function MyShowsScreen() {
 
   const [shows, setShows] = useState<UserShow[]>([]);
   const [displayList, setDisplayList] = useState<ListWithItems | null>(null);
-  const [nextEpisodes, setNextEpisodes] = useState<Map<string, { season: number; episode: number }>>(new Map());
+  const [nextEpisodes, setNextEpisodes] = useState<Map<string, NextEpisode>>(new Map());
   const [popular, setPopular] = useState<PopularShow[]>([]);
   const [airingToday, setAiringToday] = useState<Set<string>>(new Set());
   const [loading, setLoading] = useState(true);
@@ -121,16 +152,56 @@ export default function MyShowsScreen() {
     });
   }, []);
 
-  const userSections = SECTION_ORDER
-    .map(({ key, title }) => {
-      const allData = [...shows.filter(s => s.status === key)].sort((a, b) => sortTitle(a.show_title).localeCompare(sortTitle(b.show_title)));
-      return {
-        title,
-        data: collapsed.has(title) ? [] : allData,
-        count: allData.length,
-        isCarousel: false,
-      };
-    })
+  const handleMarkWatched = useCallback(async (showId: string) => {
+    if (!userId) return;
+    // Optimistic: drop from the list (Watched isn't shown on My Shows).
+    setShows(prev => prev.filter(s => s.show_id !== showId));
+    try {
+      // Await the flip so the show detail page mounts with status='watched'
+      // already in the DB — that's what reveals the inline RatingSelector
+      // and surfaces the rating prompt.
+      await updateShowStatus(userId, showId, 'watched');
+      router.push(`/show/${showId}?from=/`);
+    } catch (e) {
+      silentCatch('myShows:markWatched')(e);
+      fetchData();
+    }
+  }, [userId, router, fetchData]);
+
+  // Split currently_watching into the four sub-groups; everything else stays
+  // as a single section.
+  const cwGroups: Record<CWGroup, UserShow[]> = { behind: [], returning: [], hiatus: [], ended: [] };
+  for (const s of shows) {
+    if (s.status !== 'currently_watching') continue;
+    cwGroups[classifyCW(s, nextEpisodes.has(s.show_id))].push(s);
+  }
+  const byTitle = (a: UserShow, b: UserShow) => sortTitle(a.show_title).localeCompare(sortTitle(b.show_title));
+  cwGroups.behind.sort(byTitle);
+  cwGroups.returning.sort((a, b) =>
+    (a.next_episode_airdate ?? '9999-12-31').localeCompare(b.next_episode_airdate ?? '9999-12-31'),
+  );
+  cwGroups.hiatus.sort(byTitle);
+  cwGroups.ended.sort(byTitle);
+
+  const wantToWatch = shows
+    .filter(s => s.status === 'want_to_watch')
+    .sort(byTitle);
+
+  const userSections = (
+    [
+      { title: CW_GROUP_TITLES.behind, data: cwGroups.behind },
+      { title: CW_GROUP_TITLES.returning, data: cwGroups.returning },
+      { title: CW_GROUP_TITLES.hiatus, data: cwGroups.hiatus },
+      { title: CW_GROUP_TITLES.ended, data: cwGroups.ended },
+      { title: 'Want to Watch', data: wantToWatch },
+    ] as { title: string; data: UserShow[] }[]
+  )
+    .map(({ title, data }) => ({
+      title,
+      data: collapsed.has(title) ? [] : data,
+      count: data.length,
+      isCarousel: false,
+    }))
     .filter(s => s.count > 0);
 
   const sections: typeof userSections = [...userSections];
@@ -171,17 +242,40 @@ export default function MyShowsScreen() {
       style={styles.container}
       sections={sections}
       keyExtractor={item => item.show_id}
-      renderItem={({ item }) => (
-        <WatchlistCard
-          show={item}
-          onPress={handlePress}
-          nextEpisode={nextEpisodes.get(item.show_id)}
-          onMarkNext={handleMarkNext}
-          isCaughtUp={item.caught_up}
-          hidePosters={profile?.show_posters_in_list === false}
-          airsToday={airingToday.has(item.show_id)}
-        />
-      )}
+      renderItem={({ item }) => {
+        // Schedule cron is the eager source — already carries the airdate so
+        // WatchlistCard can decide whether to surface "NEW".
+        // Cache fallback walks the user one episode at a time (current+1)
+        // rather than jumping to last_aired (would skip and create gaps in
+        // episode_watches). We only know the airdate of current+1 when
+        // current+1 IS exactly last_aired (the 1-behind case); otherwise null
+        // so the card hides "NEW" until the user has fewer episodes to clear.
+        const fromSchedule = nextEpisodes.get(item.show_id);
+        let nextEp = fromSchedule;
+        if (!nextEp && isBehindFromCache(item)) {
+          const nextSeason = item.current_season;
+          const nextEpisode = item.current_episode + 1;
+          const isExactlyLastAired =
+            item.last_aired_season === nextSeason && item.last_aired_episode === nextEpisode;
+          nextEp = {
+            season: nextSeason,
+            episode: nextEpisode,
+            airdate: isExactlyLastAired ? item.last_aired_airdate : null,
+          };
+        }
+        return (
+          <WatchlistCard
+            show={item}
+            onPress={handlePress}
+            nextEpisode={nextEp}
+            onMarkNext={handleMarkNext}
+            onMarkWatched={handleMarkWatched}
+            isCaughtUp={item.caught_up}
+            hidePosters={profile?.show_posters_in_list === false}
+            airsToday={airingToday.has(item.show_id)}
+          />
+        );
+      }}
       renderSectionHeader={({ section }) => {
         if (section.isCarousel) {
           return (
