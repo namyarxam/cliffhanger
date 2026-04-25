@@ -31,10 +31,11 @@ export default function SettingsScreen() {
     if (!user?.id) return;
     supabase
       .from('profiles')
-      .select('push_new_episodes, notify_all_current, show_top4_in_list, show_posters_in_list, hide_ratings, default_sort, compact_mode')
+      .select('push_new_episodes, notify_all_current, show_top4_in_list, show_posters_in_list, hide_ratings')
       .eq('id', user.id)
       .single()
-      .then(({ data }) => {
+      .then(({ data, error }) => {
+        if (error) { silentCatch('settings:loadProfile')(error); return; }
         if (data) {
           setPushNewEpisodes(data.push_new_episodes);
           setNotifyAllCurrent(data.notify_all_current);

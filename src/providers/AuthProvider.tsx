@@ -1,4 +1,5 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import React, { createContext, useContext, useEffect, useState, useRef } from 'react';
+import { AppState } from 'react-native';
 import { Session, User } from '@supabase/supabase-js';
 import * as Sentry from '@sentry/react-native';
 import { supabase } from '@/src/lib/supabase';
@@ -61,6 +62,21 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     );
 
     return () => subscription.unsubscribe();
+  }, []);
+
+  // Re-pull the profile every time the app comes back to the foreground.
+  // Without this, settings the user changed on a different device (e.g.
+  // TestFlight build vs local Expo) stay stale in the cached profile until
+  // the next sign-in, leading to UI that disagrees with itself across screens.
+  const sessionRef = useRef(session);
+  sessionRef.current = session;
+  useEffect(() => {
+    const sub = AppState.addEventListener('change', state => {
+      if (state !== 'active') return;
+      const s = sessionRef.current;
+      if (s?.user) fetchProfile(s.user.id);
+    });
+    return () => sub.remove();
   }, []);
 
   async function fetchProfile(userId: string) {
