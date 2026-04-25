@@ -2,6 +2,7 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 import { Session, User } from '@supabase/supabase-js';
 import * as Sentry from '@sentry/react-native';
 import { supabase } from '@/src/lib/supabase';
+import { silentCatch } from '@/src/lib/errorLog';
 import type { UserProfile } from '@/src/lib/types';
 
 interface AuthState {
@@ -63,16 +64,42 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   async function fetchProfile(userId: string) {
-    const { data, error } = await supabase
-      .from('profiles')
-      .select('*')
-      .eq('id', userId)
-      .single();
+    try {
+      for (let attempt = 0; attempt < 2; attempt++) {
+        const { data, error } = await supabase
+          .from('profiles')
+          .select('*')
+          .eq('id', userId)
+          .single();
 
-    if (!error && data) {
-      setProfile(data as UserProfile);
+        if (!error && data) {
+          setProfile(data as UserProfile);
+          return;
+        }
+
+        if (error?.code !== 'PGRST116') {
+          silentCatch('auth:fetchProfile')(error);
+          return;
+        }
+
+        // No profile row — retry once after short delay to handle the
+        // handle_new_user() trigger race on fresh signups.
+        if (attempt === 0) await new Promise(r => setTimeout(r, 500));
+      }
+
+      // Profile still missing after retry = zombie session
+      // (user was deleted server-side but this device has a cached session).
+      // Sign out so the user lands back on the sign-in screen cleanly instead
+      // of being stuck in an "Anonymous @unknown" loading state.
+      silentCatch('auth:zombieSession')(
+        new Error('Session references user with no profile row — signing out')
+      );
+      await supabase.auth.signOut();
+    } catch (e) {
+      silentCatch('auth:fetchProfile')(e);
+    } finally {
+      setLoading(false);
     }
-    setLoading(false);
   }
 
   async function signOut() {

@@ -67,7 +67,7 @@ export default function ShowDetailScreen() {
     show, loading, error, userId,
     userShow, setUserShow, watchedEps, setWatchedEps,
     userLists, listsContaining, setListsContaining,
-    friendsWatching, refetchWatchedEps, refetchFriendsWatching,
+    friendsWatching, refetchWatchedEps, refetchFriendsWatching, refetch,
   } = data;
 
   // Refetch friends watching on screen focus (picks up new friendships)
@@ -95,8 +95,17 @@ export default function ShowDetailScreen() {
   if (error || !show) {
     return (
       <View style={styles.center}>
-        <Text style={styles.errorText}>Failed to load show</Text>
-        <Text style={styles.errorHint}>{error}</Text>
+        <Text style={styles.errorText}>Couldn&apos;t load show</Text>
+        <Text style={styles.errorHint}>{error || 'Check your connection and try again.'}</Text>
+        <Pressable
+          style={({ pressed }) => [styles.retryButton, pressed && { opacity: 0.7 }]}
+          onPress={() => {
+            Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+            refetch();
+          }}
+        >
+          <Text style={styles.retryButtonText}>Try Again</Text>
+        </Pressable>
       </View>
     );
   }
@@ -187,6 +196,21 @@ export default function ShowDetailScreen() {
           <View style={styles.heroInfo}>
             <View style={styles.titleRow}>
               <Text style={styles.title}>{show.title}</Text>
+              {userShow && pushEnabled && (
+                <Pressable
+                  hitSlop={12}
+                  onPress={() => {
+                    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+                    actions.handleToggleNotify();
+                  }}
+                >
+                  <FontAwesome
+                    name={userShow.notify ? 'bell' : 'bell-o'}
+                    size={16}
+                    color={userShow.notify ? theme.accent : theme.textDim}
+                  />
+                </Pressable>
+              )}
             </View>
             <View style={styles.metaRow}>
               <Text style={styles.meta}>
@@ -288,20 +312,6 @@ export default function ShowDetailScreen() {
               );
             })}
           </View>
-
-          {userShow && pushEnabled && (
-            <View style={styles.secondaryActionsRow}>
-              <Pressable
-                style={({ pressed }) => [styles.iconButton, userShow.notify && styles.iconButtonNotifyActive, pressed && { opacity: 0.7 }]}
-                onPress={() => {
-                  Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-                  actions.handleToggleNotify();
-                }}
-              >
-                <FontAwesome name={userShow.notify ? 'bell' : 'bell-o'} size={14} color={userShow.notify ? theme.accent : theme.textDim} />
-              </Pressable>
-            </View>
-          )}
 
           {/* Catch up / caught up — inline under pills */}
           {userShow && userShow.status === 'currently_watching' && (
@@ -622,6 +632,19 @@ const styles = StyleSheet.create({
     fontFamily: 'DMSans_400Regular',
     fontSize: 12,
     marginTop: 4,
+    textAlign: 'center',
+  },
+  retryButton: {
+    backgroundColor: theme.accent,
+    borderRadius: 10,
+    paddingHorizontal: 24,
+    paddingVertical: 12,
+    marginTop: 20,
+  },
+  retryButtonText: {
+    color: '#fff',
+    fontSize: 15,
+    fontFamily: 'DMSans_600SemiBold',
   },
 
   // Hero
@@ -759,24 +782,6 @@ const styles = StyleSheet.create({
   },
   statusPillActive: {
     backgroundColor: theme.accent,
-  },
-  secondaryActionsRow: {
-    flexDirection: 'row',
-    justifyContent: 'flex-end',
-    gap: 6,
-  },
-  iconButton: {
-    width: 32,
-    height: 32,
-    borderRadius: 8,
-    borderWidth: 1,
-    borderColor: theme.border,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  iconButtonNotifyActive: {
-    borderColor: 'rgba(255,107,53,0.3)',
-    backgroundColor: 'rgba(255,107,53,0.08)',
   },
   catchUpRow: {
     flexDirection: 'row',

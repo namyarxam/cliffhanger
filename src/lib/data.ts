@@ -1,4 +1,5 @@
 import type { ShowSummary, ShowFull, Season, Episode } from './types';
+import { timeoutFetch } from './network';
 
 const TVMAZE_BASE = 'https://api.tvmaze.com';
 
@@ -111,14 +112,14 @@ export interface CastMember {
 
 export async function searchShows(query: string): Promise<ShowSummary[]> {
   if (!query.trim()) return [];
-  const res = await fetch(`${TVMAZE_BASE}/search/shows?q=${encodeURIComponent(query)}`);
+  const res = await timeoutFetch(`${TVMAZE_BASE}/search/shows?q=${encodeURIComponent(query)}`);
   if (!res.ok) throw new Error(`Search failed: ${res.status}`);
   const results: TVMazeSearchResult[] = await res.json();
   return results.map(r => toShowSummary(r.show));
 }
 
 export async function fetchCast(showId: string): Promise<CastMember[]> {
-  const res = await fetch(`${TVMAZE_BASE}/shows/${showId}/cast`);
+  const res = await timeoutFetch(`${TVMAZE_BASE}/shows/${showId}/cast`);
   if (!res.ok) return [];
   const data: TVMazeCastEntry[] = await res.json();
   return data
@@ -131,7 +132,7 @@ export async function fetchCast(showId: string): Promise<CastMember[]> {
 }
 
 export async function fetchShow(id: string): Promise<ShowFull> {
-  const res = await fetch(`${TVMAZE_BASE}/shows/${id}?embed[]=episodes&embed[]=cast&embed[]=nextepisode`);
+  const res = await timeoutFetch(`${TVMAZE_BASE}/shows/${id}?embed[]=episodes&embed[]=cast&embed[]=nextepisode`);
   if (!res.ok) throw new Error(`Failed to fetch show ${id}: ${res.status}`);
   const data = await res.json();
 

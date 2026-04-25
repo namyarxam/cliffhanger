@@ -61,8 +61,7 @@ export function useShowData(id: string | undefined) {
     } catch (e) { silentCatch('show:friendsWatching')(e); }
   }, [userId, id]);
 
-  // Reset everything when navigating to a different show
-  useEffect(() => {
+  const fetchAll = useCallback(() => {
     setShow(null);
     setUserShow(null);
     setWatchedEps(new Set());
@@ -83,7 +82,10 @@ export function useShowData(id: string | undefined) {
       getListsContainingItem(userId, id).then(ids => setListsContaining(new Set(ids))).catch(silentCatch('show:listsContaining'));
       fetchFriendsWatching();
     }
-  }, [id, userId]);
+  }, [id, userId, fetchFriendsWatching]);
+
+  // Reset everything when navigating to a different show
+  useEffect(() => { fetchAll(); }, [fetchAll]);
 
   useEffect(() => {
     if (!userId || !id) return;
@@ -115,5 +117,6 @@ export function useShowData(id: string | undefined) {
     friendsWatching,
     refetchWatchedEps,
     refetchFriendsWatching: fetchFriendsWatching,
+    refetch: fetchAll,
   };
 }
