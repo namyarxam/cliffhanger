@@ -28,7 +28,7 @@ import { silentCatch } from '@/src/lib/errorLog';
 
 const SECTION_ORDER: { key: WatchStatus; title: string }[] = [
   { key: 'currently_watching', title: 'Currently Watching' },
-  { key: 'want_to_watch', title: 'Want to Watch' },
+  { key: 'want_to_watch', title: 'Watchlist' },
   { key: 'watched', title: 'Watched' },
 ];
 

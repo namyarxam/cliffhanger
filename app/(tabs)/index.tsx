@@ -199,7 +199,7 @@ export default function MyShowsScreen() {
       { title: CW_GROUP_TITLES.returning, data: cwGroups.returning },
       { title: CW_GROUP_TITLES.hiatus, data: cwGroups.hiatus },
       { title: CW_GROUP_TITLES.ended, data: cwGroups.ended },
-      { title: 'Want to Watch', data: wantToWatch },
+      { title: 'Watchlist', data: wantToWatch },
     ] as { title: string; data: UserShow[] }[]
   )
     .map(({ title, data }) => ({
