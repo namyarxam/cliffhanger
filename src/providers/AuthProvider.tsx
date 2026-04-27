@@ -34,17 +34,24 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Get the current session on mount
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      setSession(session);
-      if (session?.user) {
-        Sentry.setUser({ id: session.user.id, email: session.user.email });
-        fetchProfile(session.user.id);
-      } else {
-        Sentry.setUser(null);
+    // Get the current session on mount. Without a .catch the rejection
+    // (network blip on cold launch, Supabase hiccup) leaves `loading: true`
+    // forever and the whole app sits on the auth-gate spinner.
+    supabase.auth.getSession()
+      .then(({ data: { session } }) => {
+        setSession(session);
+        if (session?.user) {
+          Sentry.setUser({ id: session.user.id, email: session.user.email });
+          fetchProfile(session.user.id);
+        } else {
+          Sentry.setUser(null);
+          setLoading(false);
+        }
+      })
+      .catch(e => {
+        silentCatch('auth:getSession')(e);
         setLoading(false);
-      }
-    });
+      });
 
     // Listen for auth changes (sign in, sign out, token refresh)
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
