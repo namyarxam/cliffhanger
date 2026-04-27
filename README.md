@@ -1,6 +1,6 @@
 # Cliffhanger
 
-A social TV show tracking app — Letterboxd for television. Track what you're watching, see where your friends are in a show, and chat about episodes without spoilers.
+A social TV show tracking app. Track what you're watching, see where your friends are in a show, and chat about episodes without spoilers.
 
 Built with [Expo](https://expo.dev) (React Native), [Supabase](https://supabase.com), and the [TVMaze API](https://www.tvmaze.com/api).
 
