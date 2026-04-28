@@ -356,12 +356,12 @@ const styles = StyleSheet.create({
   catchUpCheck: {
     fontSize: 14,
     fontWeight: '700',
-    color: theme.textBright,
+    color: '#fff',
   },
   catchUpCount: {
     fontSize: 13,
     fontFamily: 'DMSans_700Bold',
-    color: theme.textBright,
+    color: '#fff',
     lineHeight: 16,
   },
 });

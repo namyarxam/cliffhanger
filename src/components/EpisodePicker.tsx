@@ -350,7 +350,7 @@ const styles = StyleSheet.create({
     borderColor: theme.accent,
   },
   watchCheck: {
-    color: theme.textBright,
+    color: '#fff',
     fontSize: 12,
     fontWeight: '700',
   },

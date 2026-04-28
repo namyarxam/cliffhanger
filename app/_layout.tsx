@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { View, ActivityIndicator, Linking } from 'react-native';
 import { Stack, useRouter, useSegments } from 'expo-router';
 import { useFonts, DMSans_400Regular, DMSans_500Medium, DMSans_600SemiBold, DMSans_700Bold } from '@expo-google-fonts/dm-sans';
+import { StatusBar } from 'expo-status-bar';
 import * as SplashScreen from 'expo-splash-screen';
 import * as Sentry from '@sentry/react-native';
 import { AuthProvider, useAuth } from '@/src/providers/AuthProvider';
@@ -122,6 +123,7 @@ function RootLayout() {
 
   return (
     <AuthProvider>
+      <StatusBar style={theme.statusBarStyle} />
       <AuthGate />
     </AuthProvider>
   );
