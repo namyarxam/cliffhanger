@@ -22,7 +22,7 @@ export async function withTimeout<T>(promise: Promise<T>, ms = 15000): Promise<T
  * just abandoning the promise (frees up the network slot).
  */
 export async function timeoutFetch(
-  input: RequestInfo,
+  input: RequestInfo | URL,
   init: RequestInit = {},
   ms = 15000,
 ): Promise<Response> {
