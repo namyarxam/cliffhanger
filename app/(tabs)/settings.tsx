@@ -190,7 +190,7 @@ export default function SettingsScreen() {
           <View style={[styles.settingInfo, !pushNewEpisodes && { opacity: 0.4 }]}>
             <Text style={styles.settingLabel}>Alert for all shows I'm watching</Text>
             <Text style={styles.settingHint}>
-              Automatically enable alerts for every show in your Currently Watching list. Per-show bells still work.
+              Automatically alert for every show in your Currently Watching list. Disables per-show bells while on.
             </Text>
           </View>
           <View style={[
@@ -238,7 +238,7 @@ export default function SettingsScreen() {
       {/* Theme section */}
       <View style={styles.section}>
         <View style={styles.themeSectionHeader}>
-          <Text style={styles.sectionTitle}>Theme</Text>
+          <Text style={[styles.sectionTitle, styles.themeSectionTitle]}>Theme</Text>
           <View style={styles.betaBadge}>
             <Text style={styles.betaBadgeText}>BETA</Text>
           </View>
@@ -414,6 +414,9 @@ const createStyles = (theme: Theme) => StyleSheet.create({
     alignItems: 'center',
     gap: 8,
     marginBottom: 12,
+  },
+  themeSectionTitle: {
+    marginBottom: 0,
   },
   themeRow: {
     flexDirection: 'row',

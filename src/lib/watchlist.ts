@@ -454,6 +454,53 @@ export async function dismissNewEpisodes(userId: string, showId: string): Promis
   if (error) throw error;
 }
 
+export interface ReturnAnnouncement {
+  show_id: string;
+  show_title: string;
+  show_image: string | null;
+  next_episode_airdate: string | null;
+  returning_announced_at: string;
+}
+
+/**
+ * Currently-watching shows where the refresh cron caught a hiatus → returning
+ * transition the user hasn't acknowledged yet. Drives the "Coming back!"
+ * banner. Filters out announcements whose return date already passed —
+ * those shows have either aired (now in Behind) or stayed silent again.
+ */
+export async function getReturnAnnouncements(userId: string): Promise<ReturnAnnouncement[]> {
+  const today = new Date().toISOString().slice(0, 10);
+  const { data, error } = await supabase
+    .from('user_shows')
+    .select('show_id, show_title, show_image, next_episode_airdate, returning_announced_at, returning_seen_at')
+    .eq('user_id', userId)
+    .eq('status', 'currently_watching')
+    .not('returning_announced_at', 'is', null)
+    .gte('next_episode_airdate', today)
+    .order('next_episode_airdate', { ascending: true });
+
+  if (error) throw error;
+  return (data ?? [])
+    .filter(r => r.returning_seen_at == null || r.returning_seen_at < r.returning_announced_at)
+    .map(r => ({
+      show_id: r.show_id,
+      show_title: r.show_title,
+      show_image: r.show_image,
+      next_episode_airdate: r.next_episode_airdate,
+      returning_announced_at: r.returning_announced_at,
+    }));
+}
+
+export async function markReturnAnnouncementSeen(userId: string, showId: string): Promise<void> {
+  const { error } = await supabase
+    .from('user_shows')
+    .update({ returning_seen_at: new Date().toISOString() })
+    .eq('user_id', userId)
+    .eq('show_id', showId);
+
+  if (error) throw error;
+}
+
 /** Returns the set of show_ids where the user has an unwatched episode airing today. */
 export async function getShowsAiringToday(userId: string): Promise<Set<string>> {
   const today = new Date().toISOString().slice(0, 10);

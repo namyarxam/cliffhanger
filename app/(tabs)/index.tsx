@@ -1,4 +1,5 @@
-import { useState, useCallback, useMemo } from 'react';
+import { useState, useCallback, useEffect, useMemo } from 'react';
+import * as Notifications from 'expo-notifications';
 import {
   View,
   Text,
@@ -13,17 +14,29 @@ import { useFocusEffect } from 'expo-router';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
-import { getUserShows, getNextEpisodesForShows, getPopularWithFriends, getShowsAiringToday, markNextEpisode, updateShowStatus } from '@/src/lib/watchlist';
-import type { PopularShow, NextEpisode } from '@/src/lib/watchlist';
+import { getUserShows, getNextEpisodesForShows, getPopularWithFriends, getShowsAiringToday, getReturnAnnouncements, markReturnAnnouncementSeen, markNextEpisode, updateShowStatus } from '@/src/lib/watchlist';
+import type { PopularShow, NextEpisode, ReturnAnnouncement } from '@/src/lib/watchlist';
 import { getDisplayList } from '@/src/lib/lists';
 import WatchlistCard from '@/src/components/WatchlistCard';
 import EpisodeCatchUpSheet from '@/src/components/EpisodeCatchUpSheet';
+import ReturnAnnouncementCard from '@/src/components/ReturnAnnouncementCard';
 import TopShowsRow from '@/src/components/TopShowsRow';
 import PopularWithFriendsRow from '@/src/components/PopularWithFriendsRow';
 import type { UserShow, ListWithItems } from '@/src/lib/types';
 import { silentCatch } from '@/src/lib/errorLog';
 
 const POPULAR_CAROUSEL_LIMIT = 25;
+
+// Window for the "Back soon" banner treatment + the iOS app icon badge.
+// Keep in sync with SOON_DAYS in ReturnAnnouncementCard.
+const SOON_DAYS = 5;
+
+function isSoonAnnouncement(a: ReturnAnnouncement): boolean {
+  if (!a.next_episode_airdate) return false;
+  const epDate = new Date(a.next_episode_airdate + 'T00:00:00');
+  const days = Math.round((epDate.getTime() - Date.now()) / (1000 * 60 * 60 * 24));
+  return days >= 0 && days <= SOON_DAYS;
+}
 
 function sortTitle(t: string): string {
   return t.replace(/^The\s+/i, '');
@@ -79,6 +92,7 @@ export default function MyShowsScreen() {
   const [nextEpisodes, setNextEpisodes] = useState<Map<string, NextEpisode>>(new Map());
   const [popular, setPopular] = useState<PopularShow[]>([]);
   const [airingToday, setAiringToday] = useState<Set<string>>(new Set());
+  const [returnAnnouncements, setReturnAnnouncements] = useState<ReturnAnnouncement[]>([]);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
@@ -87,18 +101,20 @@ export default function MyShowsScreen() {
   const fetchData = useCallback(async () => {
     if (!userId) return;
     try {
-      const [data, episodeData, display, popularShows, airing] = await Promise.all([
+      const [data, episodeData, display, popularShows, airing, announcements] = await Promise.all([
         getUserShows(userId),
         getNextEpisodesForShows(userId),
         getDisplayList(userId),
         getPopularWithFriends(userId, POPULAR_CAROUSEL_LIMIT),
         getShowsAiringToday(userId),
+        getReturnAnnouncements(userId),
       ]);
       setShows(data);
       setNextEpisodes(episodeData.nextEpisodes);
       setDisplayList(display);
       setPopular(popularShows);
       setAiringToday(airing);
+      setReturnAnnouncements(announcements);
     } catch (e) {
       silentCatch('myShows:fetchData')(e);
     } finally {
@@ -112,6 +128,15 @@ export default function MyShowsScreen() {
       fetchData();
     }, [fetchData])
   );
+
+  // Mirror the "soon" announcement count to the iOS app icon badge. Cleared
+  // automatically when the user dismisses (returnAnnouncements shrinks) and
+  // re-set on every fetchData. Cron sends a parallel silent push from the
+  // server side so the badge can update before the user opens the app.
+  useEffect(() => {
+    const count = returnAnnouncements.filter(isSoonAnnouncement).length;
+    Notifications.setBadgeCountAsync(count).catch(silentCatch('myShows:badge'));
+  }, [returnAnnouncements]);
 
   const handlePress = useCallback((id: string) => {
     router.push(`/show/${id}?from=/`);
@@ -160,6 +185,21 @@ export default function MyShowsScreen() {
   const handleCatchUp = useCallback((show: UserShow) => {
     setCatchUpTarget(show);
   }, []);
+
+  const handleDismissAnnouncement = useCallback(async (showId: string) => {
+    if (!userId) return;
+    setReturnAnnouncements(prev => prev.filter(a => a.show_id !== showId));
+    try {
+      await markReturnAnnouncementSeen(userId, showId);
+    } catch (e) {
+      silentCatch('myShows:dismissAnnouncement')(e);
+    }
+  }, [userId]);
+
+  const handleAnnouncementPress = useCallback((showId: string) => {
+    handleDismissAnnouncement(showId);
+    router.push(`/show/${showId}?from=/`);
+  }, [router, handleDismissAnnouncement]);
 
   const handleMarkWatched = useCallback(async (showId: string) => {
     if (!userId) return;
@@ -309,9 +349,23 @@ export default function MyShowsScreen() {
         );
       }}
       ListHeaderComponent={
-        profile?.show_top4_in_list !== false && displayList && displayList.items.length > 0 ? (
-          <TopShowsRow items={displayList.items} onPress={(itemId) => handlePress(itemId)} size="large" />
-        ) : null
+        <>
+          {profile?.show_top4_in_list !== false && displayList && displayList.items.length > 0 && (
+            <TopShowsRow items={displayList.items} onPress={(itemId) => handlePress(itemId)} size="large" />
+          )}
+          {returnAnnouncements.length > 0 && (
+            <View style={styles.announcementsBlock}>
+              {returnAnnouncements.map(a => (
+                <ReturnAnnouncementCard
+                  key={a.show_id}
+                  announcement={a}
+                  onPress={handleAnnouncementPress}
+                  onDismiss={handleDismissAnnouncement}
+                />
+              ))}
+            </View>
+          )}
+        </>
       }
       refreshControl={
         <RefreshControl
@@ -354,6 +408,10 @@ const createStyles = (theme: Theme) => StyleSheet.create({
   },
   list: {
     paddingBottom: 20,
+  },
+  announcementsBlock: {
+    paddingTop: 12,
+    paddingBottom: 4,
   },
   sectionHeader: {
     flexDirection: 'row',

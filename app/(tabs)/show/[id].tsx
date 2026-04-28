@@ -6,6 +6,7 @@ import {
   Pressable,
   StyleSheet,
   ActivityIndicator,
+  Alert,
 } from 'react-native';
 import { useLocalSearchParams, useRouter, useFocusEffect } from 'expo-router';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
@@ -64,6 +65,7 @@ export default function ShowDetailScreen() {
   const router = useRouter();
   const { profile } = useAuth();
   const pushEnabled = profile?.push_new_episodes ?? false;
+  const notifyAll = profile?.notify_all_current ?? false;
 
   const data = useShowData(id);
   const {
@@ -203,14 +205,21 @@ export default function ShowDetailScreen() {
                 <Pressable
                   hitSlop={12}
                   onPress={() => {
+                    if (notifyAll) {
+                      Alert.alert(
+                        'Alerts on for all shows',
+                        'You\'re alerted for every show in your Currently Watching list. Turn off "Alert for all shows I\'m watching" in Settings to set per-show.',
+                      );
+                      return;
+                    }
                     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
                     actions.handleToggleNotify();
                   }}
                 >
                   <FontAwesome
-                    name={userShow.notify ? 'bell' : 'bell-o'}
+                    name={notifyAll || userShow.notify ? 'bell' : 'bell-o'}
                     size={16}
-                    color={userShow.notify ? theme.accent : theme.textDim}
+                    color={notifyAll || userShow.notify ? theme.accent : theme.textDim}
                   />
                 </Pressable>
               )}
