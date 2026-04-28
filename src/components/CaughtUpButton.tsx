@@ -1,6 +1,7 @@
-import { memo } from 'react';
+import { memo, useMemo } from 'react';
 import { Pressable, Text, StyleSheet } from 'react-native';
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 
 interface Props {
   onCatchUp: () => void;
@@ -8,6 +9,8 @@ interface Props {
 }
 
 function CaughtUpButton({ onCatchUp, isCaughtUp }: Props) {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   if (isCaughtUp) {
     return (
       <Pressable style={[styles.button, styles.buttonDone]} disabled>
@@ -28,7 +31,7 @@ function CaughtUpButton({ onCatchUp, isCaughtUp }: Props) {
 
 export default memo(CaughtUpButton);
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   button: {
     marginTop: 12,
     marginHorizontal: 20,

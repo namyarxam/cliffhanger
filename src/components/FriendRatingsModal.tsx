@@ -1,7 +1,8 @@
-import { memo } from 'react';
+import { memo, useMemo } from 'react';
 import { View, Text, FlatList, Pressable, StyleSheet, Modal } from 'react-native';
 import { Image } from 'expo-image';
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 import { getUserRatingColor } from '@/src/components/RatingSelector';
 import type { FriendWatching } from '@/src/hooks/useShowData';
 
@@ -12,6 +13,8 @@ interface Props {
 }
 
 function FriendRatingsModal({ visible, onClose, friends }: Props) {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   const rated = friends.filter(f => f.rating != null).sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0));
 
   return (
@@ -63,7 +66,7 @@ function FriendRatingsModal({ visible, onClose, friends }: Props) {
 
 export default memo(FriendRatingsModal);
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: theme.bg,

@@ -19,7 +19,8 @@ import { useLocalSearchParams, useRouter } from 'expo-router';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Image } from 'expo-image';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 
 import { useAuth } from '@/src/providers/AuthProvider';
 import { supabase } from '@/src/lib/supabase';
@@ -57,6 +58,8 @@ function formatChatDate(dateStr: string): string {
 }
 
 export default function ChatDetailScreen() {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
   const insets = useSafeAreaInsets();
@@ -605,7 +608,7 @@ export default function ChatDetailScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   container: { flex: 1, backgroundColor: theme.bg },
   flex: { flex: 1 },
   center: { flex: 1, backgroundColor: theme.bg, justifyContent: 'center', alignItems: 'center' },

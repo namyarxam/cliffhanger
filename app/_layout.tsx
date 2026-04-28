@@ -6,10 +6,10 @@ import { StatusBar } from 'expo-status-bar';
 import * as SplashScreen from 'expo-splash-screen';
 import * as Sentry from '@sentry/react-native';
 import { AuthProvider, useAuth } from '@/src/providers/AuthProvider';
+import { ThemeProvider, useTheme, useThemeControl } from '@/src/providers/ThemeProvider';
+import { THEMES, type ThemeName } from '@/src/lib/theme';
 import { supabase } from '@/src/lib/supabase';
 import { silentCatch } from '@/src/lib/errorLog';
-
-import { theme } from '@/src/lib/theme';
 
 export { ErrorBoundary } from 'expo-router';
 
@@ -56,9 +56,22 @@ async function handleAuthDeepLink(url: string, router: ReturnType<typeof useRout
 }
 
 function AuthGate() {
-  const { session, loading } = useAuth();
+  const { session, profile, loading } = useAuth();
   const segments = useSegments();
   const router = useRouter();
+  const theme = useTheme();
+  const { themeName, setThemeName } = useThemeControl();
+
+  // Reconcile DB → ThemeProvider. AsyncStorage gives us an instant first paint
+  // on cold boot, but it's per-device. When the profile lands (initial auth
+  // resolve, foreground refresh, or sign-in on a new device), prefer the
+  // server value so theme follows the user across devices.
+  useEffect(() => {
+    const dbTheme = profile?.theme;
+    if (!dbTheme || !(dbTheme in THEMES)) return;
+    if (dbTheme === themeName) return;
+    setThemeName(dbTheme as ThemeName);
+  }, [profile?.theme, themeName, setThemeName]);
 
   // Listen for incoming auth deep links (password reset now; email confirmation later)
   useEffect(() => {
@@ -101,31 +114,43 @@ function AuthGate() {
   );
 }
 
-function RootLayout() {
+// Inner shell — runs inside ThemeProvider so it can read the theme. Splash
+// stays up until both fonts and the AsyncStorage theme load resolve, so the
+// first paint already uses the user's saved palette.
+function AppShell() {
   const [fontsLoaded, fontError] = useFonts({
     DMSans_400Regular,
     DMSans_500Medium,
     DMSans_600SemiBold,
     DMSans_700Bold,
   });
+  const { ready: themeReady, theme } = useThemeControl();
 
   useEffect(() => {
     if (fontError) throw fontError;
   }, [fontError]);
 
   useEffect(() => {
-    if (fontsLoaded) {
+    if (fontsLoaded && themeReady) {
       SplashScreen.hideAsync();
     }
-  }, [fontsLoaded]);
+  }, [fontsLoaded, themeReady]);
 
-  if (!fontsLoaded) return null;
+  if (!fontsLoaded || !themeReady) return null;
 
   return (
     <AuthProvider>
       <StatusBar style={theme.statusBarStyle} />
       <AuthGate />
     </AuthProvider>
+  );
+}
+
+function RootLayout() {
+  return (
+    <ThemeProvider>
+      <AppShell />
+    </ThemeProvider>
   );
 }
 

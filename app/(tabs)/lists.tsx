@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useMemo } from 'react';
 import {
   View,
   Text,
@@ -12,13 +12,16 @@ import {
 import { useRouter, useFocusEffect } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Image } from 'expo-image';
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { getLists, createList } from '@/src/lib/lists';
 import type { ListWithItems, ListType } from '@/src/lib/types';
 import { silentCatch } from '@/src/lib/errorLog';
 
 export default function ListsScreen() {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   const router = useRouter();
   const { session } = useAuth();
   const userId = session?.user?.id;
@@ -173,7 +176,7 @@ export default function ListsScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: theme.bg,

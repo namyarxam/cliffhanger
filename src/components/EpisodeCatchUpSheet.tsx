@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import {
   Modal,
   View,
@@ -10,7 +10,8 @@ import {
 } from 'react-native';
 import { Image } from 'expo-image';
 import * as Haptics from 'expo-haptics';
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 import { fetchShow } from '@/src/lib/data';
 import { getWatchedEpisodes, markUpToEpisode } from '@/src/lib/watchlist';
 import { silentCatch } from '@/src/lib/errorLog';
@@ -44,6 +45,8 @@ function formatShortDate(d: string): string {
 export default function EpisodeCatchUpSheet({
   visible, onClose, userId, showId, showTitle, currentSeason, currentEpisode, onMarked,
 }: Props) {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   const [show, setShow] = useState<ShowFull | null>(null);
   const [watched, setWatched] = useState<Set<string>>(new Set());
   const [loading, setLoading] = useState(false);
@@ -166,7 +169,7 @@ export default function EpisodeCatchUpSheet({
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: theme.bg,

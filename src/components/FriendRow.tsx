@@ -1,7 +1,8 @@
-import { memo } from 'react';
+import { memo, useMemo } from 'react';
 import { View, Text, Pressable, StyleSheet } from 'react-native';
 import { Image } from 'expo-image';
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 import type { UserProfile } from '@/src/lib/types';
 
 export type FriendAction = 'add' | 'pending' | 'accept' | 'friends' | 'invite' | 'invited' | 'none';
@@ -27,6 +28,8 @@ function FriendRow({
   onDecline,
   onLongPress,
 }: Props) {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   return (
     <Pressable
       style={({ pressed }) => [styles.container, pressed && (onPress || onLongPress) && styles.pressed]}
@@ -106,7 +109,7 @@ function FriendRow({
 
 export default memo(FriendRow);
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   container: {
     flexDirection: 'row',
     alignItems: 'center',

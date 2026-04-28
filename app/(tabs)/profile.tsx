@@ -1,4 +1,4 @@
-import { useState, useCallback, useRef } from 'react';
+import { useState, useCallback, useRef, useMemo } from 'react';
 import {
   View,
   Text,
@@ -17,7 +17,8 @@ import { Image } from 'expo-image';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { useAuth } from '@/src/providers/AuthProvider';
 
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 import { supabase } from '@/src/lib/supabase';
 import { getFriends, getPendingRequests } from '@/src/lib/friends';
 import { getLists, ensureDefaultList, getDisplayList } from '@/src/lib/lists';
@@ -32,6 +33,8 @@ type AvatarPickerItem =
   | { kind: 'searchResult'; data: ShowSummary };
 
 export default function ProfileScreen() {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   const { profile, user, signOut, refreshProfile } = useAuth();
   const router = useRouter();
 
@@ -474,7 +477,7 @@ export default function ProfileScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   scroll: {
     flex: 1,
     backgroundColor: theme.bg,

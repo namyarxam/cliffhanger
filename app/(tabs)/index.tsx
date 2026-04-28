@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useMemo } from 'react';
 import {
   View,
   Text,
@@ -10,7 +10,8 @@ import {
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useFocusEffect } from 'expo-router';
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { getUserShows, getNextEpisodesForShows, getPopularWithFriends, getShowsAiringToday, markNextEpisode, updateShowStatus } from '@/src/lib/watchlist';
 import type { PopularShow, NextEpisode } from '@/src/lib/watchlist';
@@ -67,6 +68,8 @@ function classifyCW(s: UserShow, hasNextFromSchedule: boolean): CWGroup {
 const POPULAR_SECTION_TITLE = 'Popular with Friends';
 
 export default function MyShowsScreen() {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   const router = useRouter();
   const { session, profile } = useAuth();
   const userId = session?.user?.id;
@@ -337,7 +340,7 @@ export default function MyShowsScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: theme.bg,

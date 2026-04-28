@@ -1,7 +1,8 @@
-import { memo } from 'react';
+import { memo, useMemo } from 'react';
 import { View, Text, Pressable, StyleSheet, useWindowDimensions } from 'react-native';
 import { Image } from 'expo-image';
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 import type { ListItem } from '@/src/lib/types';
 
 interface Props {
@@ -11,6 +12,8 @@ interface Props {
 }
 
 function TopShowsRow({ items, onPress, size = 'default' }: Props) {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   const { width } = useWindowDimensions();
   const isSmall = width < 380;
   if (items.length === 0) return null;
@@ -45,7 +48,7 @@ function TopShowsRow({ items, onPress, size = 'default' }: Props) {
 
 export default memo(TopShowsRow);
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   container: {
     alignItems: 'center',
     paddingVertical: 16,

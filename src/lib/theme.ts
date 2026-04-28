@@ -1,8 +1,11 @@
-// Color theme. Four palettes defined below. To try a different one, change
-// ACTIVE_THEME at the bottom and reload the app. All consumers import `theme`
-// — they don't care which palette is active.
+// Color theme. Four palettes defined below. The ACTIVE palette is held in
+// React Context via ThemeProvider — components read it through useTheme().
+// Switching is live: the picker in Settings calls setThemeName() and every
+// consumer re-renders with the new palette. There is no static `theme`
+// export anymore — that would bake values into module-level StyleSheet.create
+// calls and prevent live swap.
 
-type Theme = {
+export type Theme = {
   bg: string;
   bgCard: string;
   bgDarker: string;
@@ -110,22 +113,32 @@ const themePaper: Theme = {
   statusBarStyle: 'dark',
 };
 
-const THEMES = {
+export const THEMES = {
   navy: themeNavy,
   plum: themePlum,
   smoke: themeSmoke,
   paper: themePaper,
+} as const;
+
+export type ThemeName = keyof typeof THEMES;
+
+export const DEFAULT_THEME: ThemeName = 'navy';
+
+export const THEME_LABELS: Record<ThemeName, string> = {
+  navy: 'Navy',
+  smoke: 'Smoke',
+  plum: 'Plum',
+  paper: 'Paper',
 };
 
-// ─── ACTIVE THEME ───────────────────────────────────────────────────────────
-// Change this string and reload the app to swap the palette.
-//   'navy'  — midnight navy + warm orange (dark, original)
-//   'plum'  — aubergine + hot magenta (dark, theatrical)
-//   'smoke' — neutral charcoal + cyan-teal (dark, architectural)
-//   'paper' — warm cream + brick red (light, editorial)
-const ACTIVE_THEME: keyof typeof THEMES = 'navy';
+export const THEME_DESCRIPTIONS: Record<ThemeName, string> = {
+  navy: 'Midnight navy + warm orange',
+  smoke: 'Neutral charcoal + cyan-teal',
+  plum: 'Aubergine + hot magenta',
+  paper: 'Warm cream + Prussian blue',
+};
 
-export const theme: Theme = THEMES[ACTIVE_THEME];
+export const THEME_STORAGE_KEY = '@cliffhanger:theme';
 
 // Per-season episode dot colors. Theme-independent — these are meant to be
 // distinguishable from each other regardless of background. May want

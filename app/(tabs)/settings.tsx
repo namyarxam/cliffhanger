@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useMemo, useState, useEffect, useCallback } from 'react';
 import {
   View,
   Text,
@@ -10,7 +10,8 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
-import { theme } from '@/src/lib/theme';
+import { useThemeControl } from '@/src/providers/ThemeProvider';
+import { THEME_LABELS, THEME_DESCRIPTIONS, type Theme, type ThemeName } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { supabase } from '@/src/lib/supabase';
 import { registerForPushNotifications, unregisterPushNotifications } from '@/src/lib/notifications';
@@ -18,7 +19,11 @@ import { silentCatch } from '@/src/lib/errorLog';
 
 const PRIVACY_URL = 'https://namyarxam.github.io/cliffhanger-docs/privacy';
 
+const THEME_ORDER: ThemeName[] = ['navy', 'smoke', 'plum', 'paper'];
+
 export default function SettingsScreen() {
+  const { theme, themeName, setThemeName } = useThemeControl();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   const router = useRouter();
   const { user, refreshProfile, signOut } = useAuth();
   const [pushNewEpisodes, setPushNewEpisodes] = useState(false);
@@ -230,6 +235,40 @@ export default function SettingsScreen() {
 
       </View>
 
+      {/* Theme section */}
+      <View style={styles.section}>
+        <View style={styles.themeSectionHeader}>
+          <Text style={styles.sectionTitle}>Theme</Text>
+          <View style={styles.betaBadge}>
+            <Text style={styles.betaBadgeText}>BETA</Text>
+          </View>
+        </View>
+        {THEME_ORDER.map((name, idx) => {
+          const active = themeName === name;
+          return (
+            <Pressable
+              key={name}
+              style={({ pressed }) => [
+                styles.themeRow,
+                idx === 0 && styles.themeRowFirst,
+                idx === THEME_ORDER.length - 1 && styles.themeRowLast,
+                pressed && { opacity: 0.7 },
+              ]}
+              onPress={() => {
+                setThemeName(name);
+                updateProfile('theme', name);
+              }}
+            >
+              <View style={styles.themeInfo}>
+                <Text style={styles.themeLabel}>{THEME_LABELS[name]}</Text>
+                <Text style={styles.themeDescription}>{THEME_DESCRIPTIONS[name]}</Text>
+              </View>
+              {active && <Text style={styles.themeActiveCheck}>✓</Text>}
+            </Pressable>
+          );
+        })}
+      </View>
+
       {/* Social section */}
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Social</Text>
@@ -298,7 +337,7 @@ export default function SettingsScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: theme.bg,
@@ -369,6 +408,51 @@ const styles = StyleSheet.create({
   settingChevron: {
     fontSize: 18,
     color: theme.textFaint,
+  },
+  themeSectionHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    marginBottom: 12,
+  },
+  themeRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: theme.bgCard,
+    paddingHorizontal: 16,
+    paddingVertical: 14,
+    borderWidth: 1,
+    borderColor: theme.border,
+    borderTopWidth: 0,
+  },
+  themeRowFirst: {
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    borderTopWidth: 1,
+  },
+  themeRowLast: {
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+  },
+  themeInfo: {
+    flex: 1,
+    marginRight: 12,
+  },
+  themeLabel: {
+    fontSize: 15,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.text,
+  },
+  themeDescription: {
+    fontSize: 12,
+    fontFamily: 'DMSans_400Regular',
+    color: theme.textFaint,
+    marginTop: 2,
+  },
+  themeActiveCheck: {
+    fontSize: 16,
+    fontFamily: 'DMSans_700Bold',
+    color: theme.accent,
   },
   settingHint: {
     fontSize: 12,

@@ -1,9 +1,10 @@
-import { useState, useEffect, useCallback, useRef, createContext, useContext } from 'react';
+import { useState, useEffect, useCallback, useRef, createContext, useContext, useMemo } from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { View, Text, Pressable, StyleSheet } from 'react-native';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Tabs, usePathname } from 'expo-router';
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { getPendingRequests } from '@/src/lib/friends';
 import { getPendingInviteCount } from '@/src/lib/conversations';
@@ -17,6 +18,8 @@ function TabIcon(props: { name: React.ComponentProps<typeof FontAwesome>['name']
 }
 
 export default function TabLayout() {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   const insets = useSafeAreaInsets();
   const { session } = useAuth();
   const [pendingCount, setPendingCount] = useState(0);
@@ -141,7 +144,7 @@ export default function TabLayout() {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   tabBar: {
     flexDirection: 'row',
     backgroundColor: theme.bg,

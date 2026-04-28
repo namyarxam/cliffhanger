@@ -1,9 +1,10 @@
-import { useState, useCallback } from 'react';
+import { useMemo, useState, useCallback } from 'react';
 import { View, Text, FlatList, Pressable, StyleSheet } from 'react-native';
 import { useRouter, useFocusEffect } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { getUserShows } from '@/src/lib/watchlist';
 import WatchlistCard from '@/src/components/WatchlistCard';
@@ -11,6 +12,8 @@ import type { UserShow } from '@/src/lib/types';
 import { silentCatch } from '@/src/lib/errorLog';
 
 export default function WatchedScreen() {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   const router = useRouter();
   const { session, profile } = useAuth();
   const userId = session?.user?.id;
@@ -61,7 +64,7 @@ export default function WatchedScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: theme.bg,

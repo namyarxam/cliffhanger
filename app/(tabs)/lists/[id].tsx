@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useMemo, useState, useEffect, useCallback, useRef } from 'react';
 import {
   View,
   Text,
@@ -14,7 +14,8 @@ import {
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Image } from 'expo-image';
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import {
   getLists,
@@ -38,6 +39,8 @@ type ShowPickerItem =
   | { kind: 'searchResult'; data: ShowSummary };
 
 export default function ListDetailScreen() {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
   const { session } = useAuth();
@@ -444,7 +447,7 @@ export default function ListDetailScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   container: { flex: 1, backgroundColor: theme.bg },
   center: { flex: 1, justifyContent: 'center', alignItems: 'center' },
   errorText: { fontSize: 14, fontFamily: 'DMSans_600SemiBold', color: '#f87171' },

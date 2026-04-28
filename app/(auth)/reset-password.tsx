@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import {
   View,
   Text,
@@ -12,9 +12,12 @@ import {
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { supabase } from '@/src/lib/supabase';
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 
 export default function ResetPasswordScreen() {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   const router = useRouter();
   const [password, setPassword] = useState('');
   const [confirm, setConfirm] = useState('');
@@ -88,7 +91,7 @@ export default function ResetPasswordScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: theme.bg,

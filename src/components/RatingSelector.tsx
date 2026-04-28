@@ -1,6 +1,7 @@
-import { memo, useState, useRef } from 'react';
+import { memo, useState, useRef, useMemo } from 'react';
 import { View, Text, StyleSheet, PanResponder, LayoutChangeEvent } from 'react-native';
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 
 // Green-based color scale for the dark theme
 // 10 = vibrant green, down through teal, blue, purple, to muted red-grey
@@ -30,6 +31,8 @@ interface Props {
 }
 
 function RatingSelector({ rating, onRate, onDragStart, onDragEnd }: Props) {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   const [trackWidth, setTrackWidth] = useState(0);
   const [dragging, setDragging] = useState(false);
   const [tempRating, setTempRating] = useState<number | null>(null);
@@ -151,7 +154,7 @@ function RatingSelector({ rating, onRate, onDragStart, onDragEnd }: Props) {
 
 export default memo(RatingSelector);
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   container: {
     marginTop: 24,
     paddingHorizontal: 20,

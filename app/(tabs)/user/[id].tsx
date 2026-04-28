@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useMemo, useState, useEffect, useCallback } from 'react';
 import {
   View,
   Text,
@@ -13,7 +13,8 @@ import {
 import { useLocalSearchParams, useRouter, Stack } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { Image } from 'expo-image';
 import { getUserShows } from '@/src/lib/watchlist';
@@ -33,6 +34,8 @@ const SECTION_ORDER: { key: WatchStatus; title: string }[] = [
 ];
 
 export default function UserProfileScreen() {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
   const { session } = useAuth();
@@ -367,7 +370,7 @@ export default function UserProfileScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: theme.bg,

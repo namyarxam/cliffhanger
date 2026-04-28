@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useMemo, useState, useCallback } from 'react';
 import {
   View,
   Text,
@@ -12,7 +12,8 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 import * as Haptics from 'expo-haptics';
 import { Image } from 'expo-image';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 
 import { useShowData } from '@/src/hooks/useShowData';
@@ -57,6 +58,8 @@ const STATUS_ICONS: Record<WatchStatus, React.ComponentProps<typeof FontAwesome>
 };
 
 export default function ShowDetailScreen() {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   const { id, from } = useLocalSearchParams<{ id: string; from?: string }>();
   const router = useRouter();
   const { profile } = useAuth();
@@ -571,7 +574,7 @@ export default function ShowDetailScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: theme.bg,

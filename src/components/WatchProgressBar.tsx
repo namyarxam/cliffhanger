@@ -1,6 +1,7 @@
-import { memo, useEffect, useRef } from 'react';
+import { memo, useEffect, useRef, useMemo } from 'react';
 import { View, Animated, StyleSheet } from 'react-native';
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 
 interface Props {
   airedCount: number;
@@ -8,6 +9,8 @@ interface Props {
 }
 
 function WatchProgressBar({ airedCount, watchedCount }: Props) {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   const fraction = airedCount > 0 ? Math.min(watchedCount / airedCount, 1) : 0;
   const animatedWidth = useRef(new Animated.Value(fraction)).current;
 
@@ -38,7 +41,7 @@ function WatchProgressBar({ airedCount, watchedCount }: Props) {
 
 export default memo(WatchProgressBar);
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   track: {
     height: 3,
     backgroundColor: 'rgba(255,255,255,0.04)',

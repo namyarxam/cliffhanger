@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useMemo } from 'react';
 import {
   View,
   Text,
@@ -10,7 +10,8 @@ import {
 import { useRouter } from 'expo-router';
 import { useFocusEffect } from 'expo-router';
 import { Image } from 'expo-image';
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 
 import { useAuth } from '@/src/providers/AuthProvider';
 import {
@@ -25,6 +26,8 @@ import type { ConversationPreview, ConversationInviteWithDetails } from '@/src/l
 import { silentCatch } from '@/src/lib/errorLog';
 
 export default function ChatScreen() {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   const router = useRouter();
   const { session } = useAuth();
   const userId = session?.user?.id;
@@ -183,7 +186,7 @@ export default function ChatScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: theme.bg,

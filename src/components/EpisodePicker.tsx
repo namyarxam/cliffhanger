@@ -1,7 +1,9 @@
-import { memo, useState, useEffect } from 'react';
+import { memo, useState, useEffect, useMemo } from 'react';
 import { View, Text, Pressable, StyleSheet, LayoutAnimation } from 'react-native';
 import { Image } from 'expo-image';
-import { theme, SEASON_COLORS } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
+import { SEASON_COLORS } from '@/src/lib/theme';
 import type { Season } from '@/src/lib/types';
 
 interface Props {
@@ -31,6 +33,8 @@ function EpisodePicker({
   onEpisodeTap,
   readOnly = false,
 }: Props) {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   const [selectedSeason, setSelectedSeason] = useState<number | null>(null);
   const [expandedEpisode, setExpandedEpisode] = useState<number | null>(null);
   const today = getToday();
@@ -211,7 +215,7 @@ function EpisodePicker({
 
 export default memo(EpisodePicker);
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   container: {
     marginTop: 24,
     paddingHorizontal: 20,

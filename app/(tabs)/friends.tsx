@@ -13,7 +13,8 @@ import {
 import { useRouter, useLocalSearchParams } from 'expo-router';
 import { useFocusEffect } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { useRefreshBadge } from './_layout';
 import {
@@ -38,6 +39,8 @@ interface SearchResult {
 }
 
 export default function FriendsScreen() {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   const router = useRouter();
   const { blocked: blockedParam } = useLocalSearchParams<{ blocked?: string }>();
   const { session } = useAuth();
@@ -378,7 +381,7 @@ export default function FriendsScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: theme.bg,

@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import {
   View,
   Text,
@@ -10,7 +10,8 @@ import {
   Dimensions,
 } from 'react-native';
 import { Image } from 'expo-image';
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 
 const GIPHY_API_KEY = process.env.EXPO_PUBLIC_GIPHY_API_KEY ?? '';
 const COLUMN_COUNT = 2;
@@ -33,6 +34,8 @@ interface GiphyGif {
 }
 
 export default function GifPicker({ onSelect }: Props) {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   const [query, setQuery] = useState('');
   const [gifs, setGifs] = useState<GiphyGif[]>([]);
   const [loading, setLoading] = useState(true);
@@ -125,7 +128,7 @@ export default function GifPicker({ onSelect }: Props) {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   container: {
     flex: 1,
   },

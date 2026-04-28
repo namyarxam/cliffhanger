@@ -1,7 +1,8 @@
-import { memo } from 'react';
+import { memo, useMemo } from 'react';
 import { View, Text, Pressable, StyleSheet } from 'react-native';
 import { Image } from 'expo-image';
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 import type { ShowSummary } from '@/src/lib/types';
 
 interface Props {
@@ -10,6 +11,8 @@ interface Props {
 }
 
 function ShowCard({ show, onPress }: Props) {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   const isRunning = show.status === 'Running';
 
   return (
@@ -51,7 +54,7 @@ function ShowCard({ show, onPress }: Props) {
 
 export default memo(ShowCard);
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   container: {
     flexDirection: 'row',
     alignItems: 'center',

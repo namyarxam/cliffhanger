@@ -1,7 +1,8 @@
-import { memo } from 'react';
+import { memo, useMemo } from 'react';
 import { View, Text, Pressable, StyleSheet } from 'react-native';
 import { Image } from 'expo-image';
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 import { getConversationDisplayName } from '@/src/lib/conversations';
 import type { ConversationPreview } from '@/src/lib/types';
 
@@ -25,6 +26,8 @@ interface Props {
 }
 
 function ConversationCard({ conversation, currentUserId, onPress }: Props) {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   const displayName = getConversationDisplayName(conversation, conversation.member_names, currentUserId);
   const isDM = conversation.member_count === 2 && !conversation.show_id;
 
@@ -76,7 +79,7 @@ function ConversationCard({ conversation, currentUserId, onPress }: Props) {
 
 export default memo(ConversationCard);
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   container: {
     flexDirection: 'row',
     alignItems: 'center',

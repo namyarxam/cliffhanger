@@ -102,6 +102,7 @@ export interface UserProfile {
   show_top4_in_list: boolean;
   show_posters_in_list: boolean;
   hide_ratings: boolean;
+  theme: string | null;
   created_at: string;
 }
 

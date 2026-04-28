@@ -1,8 +1,9 @@
-import { memo } from 'react';
+import { memo, useMemo } from 'react';
 import { View, Text, Pressable, ScrollView, StyleSheet } from 'react-native';
 import { Image } from 'expo-image';
 import { LinearGradient } from 'expo-linear-gradient';
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 import type { PopularShow } from '@/src/lib/watchlist';
 
 interface Props {
@@ -11,6 +12,8 @@ interface Props {
 }
 
 function PopularWithFriendsRow({ items, onPress }: Props) {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   if (items.length === 0) return null;
 
   return (
@@ -49,7 +52,7 @@ function PopularWithFriendsRow({ items, onPress }: Props) {
 
 export default memo(PopularWithFriendsRow);
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   scrollContent: {
     paddingHorizontal: 16,
     paddingTop: 10,

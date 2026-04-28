@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import {
   Modal,
   View,
@@ -12,7 +12,8 @@ import {
   Alert,
 } from 'react-native';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { theme } from '@/src/lib/theme';
+import { useTheme } from '@/src/providers/ThemeProvider';
+import type { Theme } from '@/src/lib/theme';
 import { reportUser, REPORT_REASONS } from '@/src/lib/moderation';
 import type { ReportReason } from '@/src/lib/moderation';
 
@@ -30,6 +31,8 @@ interface Props {
 }
 
 export default function ReportModal({ visible, reporterId, target, onClose, onSubmitted }: Props) {
+  const theme = useTheme();
+  const styles = useMemo(() => createStyles(theme), [theme]);
   const [reason, setReason] = useState<ReportReason | null>(null);
   const [details, setDetails] = useState('');
   const [submitting, setSubmitting] = useState(false);
@@ -144,7 +147,7 @@ export default function ReportModal({ visible, reporterId, target, onClose, onSu
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: theme.bg,
