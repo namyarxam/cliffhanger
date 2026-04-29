@@ -56,11 +56,25 @@ async function handleAuthDeepLink(url: string, router: ReturnType<typeof useRout
 }
 
 function AuthGate() {
-  const { session, profile, loading } = useAuth();
+  const { session, profile, loading, retryAuth } = useAuth();
   const segments = useSegments();
   const router = useRouter();
   const theme = useTheme();
   const { themeName, setThemeName } = useThemeControl();
+
+  // Silent auto-recovery for wedged loading. iOS sometimes leaves fetch
+  // promises in a permanently-pending state after a sleep/wake cycle —
+  // controller.abort() doesn't propagate the rejection, so the spinner
+  // sits forever. If we're still loading after 4s, fire a fresh
+  // retryAuth() — it spawns new fetches that aren't tied to the dead ones.
+  // No copy or button; user just sees the spinner clear when recovery hits.
+  useEffect(() => {
+    if (!loading) return;
+    const timer = setTimeout(() => {
+      retryAuth().catch(() => {});
+    }, 4000);
+    return () => clearTimeout(timer);
+  }, [loading, retryAuth]);
 
   // Reconcile DB → ThemeProvider. AsyncStorage gives us an instant first paint
   // on cold boot, but it's per-device. When the profile lands (initial auth

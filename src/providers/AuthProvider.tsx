@@ -13,6 +13,10 @@ interface AuthState {
   loading: boolean;
   signOut: () => Promise<void>;
   refreshProfile: () => Promise<void>;
+  // Force a fresh getSession + fetchProfile cycle. Used by AuthGate to escape
+  // a wedged-loading state caused by zombie fetch promises that survived an
+  // iOS background/resume cycle.
+  retryAuth: () => Promise<void>;
 }
 
 const AuthContext = createContext<AuthState>({
@@ -22,6 +26,7 @@ const AuthContext = createContext<AuthState>({
   loading: true,
   signOut: async () => {},
   refreshProfile: async () => {},
+  retryAuth: async () => {},
 });
 
 export function useAuth() {
@@ -33,25 +38,30 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    // Get the current session on mount. Without a .catch the rejection
-    // (network blip on cold launch, Supabase hiccup) leaves `loading: true`
-    // forever and the whole app sits on the auth-gate spinner.
-    supabase.auth.getSession()
-      .then(({ data: { session } }) => {
-        setSession(session);
-        if (session?.user) {
-          Sentry.setUser({ id: session.user.id, email: session.user.email });
-          fetchProfile(session.user.id);
-        } else {
-          Sentry.setUser(null);
-          setLoading(false);
-        }
-      })
-      .catch(e => {
-        silentCatch('auth:getSession')(e);
+  // Run the full session-resolve + profile-fetch cycle. Idempotent — calling
+  // it again kicks off fresh network calls regardless of whether a previous
+  // attempt is still pending. AuthGate uses it to recover from wedged-loading
+  // states (e.g. dead fetch promises after iOS background/resume).
+  async function retryAuth() {
+    setLoading(true);
+    try {
+      const { data: { session: s } } = await supabase.auth.getSession();
+      setSession(s);
+      if (s?.user) {
+        Sentry.setUser({ id: s.user.id, email: s.user.email });
+        await fetchProfile(s.user.id);
+      } else {
+        Sentry.setUser(null);
         setLoading(false);
-      });
+      }
+    } catch (e) {
+      silentCatch('auth:retryAuth')(e);
+      setLoading(false);
+    }
+  }
+
+  useEffect(() => {
+    retryAuth();
 
     // Listen for auth changes (sign in, sign out, token refresh)
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
@@ -141,6 +151,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       refreshProfile: async () => {
         if (session?.user) await fetchProfile(session.user.id);
       },
+      retryAuth,
     }}>
       {children}
     </AuthContext.Provider>
