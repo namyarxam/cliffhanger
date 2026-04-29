@@ -56,7 +56,7 @@ export default function BlockedUsersScreen() {
   return (
     <SafeAreaView style={styles.container} edges={['top']}>
       <View style={styles.header}>
-        <Pressable style={({ pressed }) => [styles.backButton, pressed && { opacity: 0.5 }]} onPress={() => router.back()}>
+        <Pressable style={({ pressed }) => [styles.backButton, pressed && { opacity: 0.5 }]} onPress={() => router.replace('/(tabs)/settings')}>
           <FontAwesome name="chevron-left" size={16} color={theme.accent} />
           <Text style={styles.backText}>Settings</Text>
         </Pressable>
