@@ -18,11 +18,13 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
     detectSessionInUrl: false,
   },
   global: {
-    // Hard 20s timeout on every Supabase HTTP call. Without this, a stalled
-    // request leaves any awaiting query hanging forever and the screen sits
-    // on an infinite spinner that doesn't recover until app restart. Errors
-    // out via AbortController so caller try/catch fires, loading states flip,
-    // and the user can pull-to-refresh / retry.
-    fetch: (input, init) => timeoutFetch(input, init, 20000),
+    // Hard 8s timeout on every Supabase HTTP call. Was 20s but that felt
+    // like forever to users staring at a spinner — by the time the timeout
+    // fired most testers had already force-killed the app, never seeing the
+    // recovery path. 8s is short enough to fail-fast on transient cellular
+    // stalls and let the user pull-to-refresh, but generous for legit slow
+    // first-load queries. Errors out via AbortController so caller try/catch
+    // fires and loading states flip cleanly.
+    fetch: (input, init) => timeoutFetch(input, init, 8000),
   },
 });

@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef, createContext, useContext, useMemo } from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { View, Text, Pressable, StyleSheet } from 'react-native';
+import { View, Text, Pressable, StyleSheet, AppState } from 'react-native';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Tabs, usePathname } from 'expo-router';
 import { useTheme } from '@/src/providers/ThemeProvider';
@@ -36,11 +36,36 @@ export default function TabLayout() {
       .catch(silentCatch('layout:chatInvites'));
   }, [session?.user?.id]);
 
+  // Poll while the app is foreground; pause when backgrounded. iOS suspends
+  // JS shortly after backgrounding, but timers can still fire briefly during
+  // the transition — those polls hit Supabase, get torn down with status_code:0
+  // when the OS yanks the socket, and surface as Sentry noise on resume.
   useEffect(() => {
-    refreshPending();
-    const interval = setInterval(refreshPending, 10000);
-    return () => clearInterval(interval);
-  }, [refreshPending]);
+    if (!session?.user?.id) return;
+    let interval: ReturnType<typeof setInterval> | null = null;
+
+    const start = () => {
+      if (interval) return;
+      refreshPending();
+      interval = setInterval(refreshPending, 10000);
+    };
+    const stop = () => {
+      if (!interval) return;
+      clearInterval(interval);
+      interval = null;
+    };
+
+    if (AppState.currentState === 'active') start();
+    const sub = AppState.addEventListener('change', state => {
+      if (state === 'active') start();
+      else stop();
+    });
+
+    return () => {
+      sub.remove();
+      stop();
+    };
+  }, [refreshPending, session?.user?.id]);
 
   const activeTabRef = useRef<string | null>('index');
 
