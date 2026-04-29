@@ -535,6 +535,12 @@ export interface NextEpisode {
   season: number;
   episode: number;
   airdate: string | null;
+  // Total unwatched aired episodes for this show. Powers the "Catch up · N"
+  // pill on the home screen. Comes straight from the schedule table so it
+  // stays current whenever the cron picks up a new airing — no dependency
+  // on the per-row last_aired cache, which only refreshes on show-detail
+  // visits.
+  behindCount: number;
 }
 
 export async function getNextEpisodesForShows(
@@ -550,6 +556,7 @@ export async function getNextEpisodesForShows(
       season: r.next_season,
       episode: r.next_episode,
       airdate: r.next_airdate ?? null,
+      behindCount: r.behind_count ?? 1,
     });
   }
 

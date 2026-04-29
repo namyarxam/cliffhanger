@@ -307,10 +307,15 @@ export default function MyShowsScreen() {
           const nextEpisode = item.current_episode + 1;
           const isExactlyLastAired =
             item.last_aired_season === nextSeason && item.last_aired_episode === nextEpisode;
+          // Cache fallback path: schedule cron didn't catch this airing yet.
+          // Behind count is at least 1; we can't compute the true count from
+          // the cache without season episode totals, so default to 1 and
+          // accept a brief lag until the cron catches up.
           nextEp = {
             season: nextSeason,
             episode: nextEpisode,
             airdate: isExactlyLastAired ? item.last_aired_airdate : null,
+            behindCount: 1,
           };
         }
         return (

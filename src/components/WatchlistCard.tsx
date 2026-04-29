@@ -47,7 +47,7 @@ function formatReturnDate(airdate: string): string {
 interface Props {
   show: UserShow;
   onPress: (id: string) => void;
-  nextEpisode?: { season: number; episode: number; airdate: string | null };
+  nextEpisode?: { season: number; episode: number; airdate: string | null; behindCount: number };
   onMarkNext?: (showId: string, season: number, episode: number) => void;
   onMarkWatched?: (showId: string) => void;
   onCatchUp?: (show: UserShow) => void;
@@ -78,21 +78,12 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, 
   // positive on old shows where the next-unwatched aired years ago.
   const isNewEpisode = hasNext && isAiredRecently(nextEpisode?.airdate ?? null);
 
-  // Multi-behind from cache: same season + ≥2 gap, or any cross-season gap.
-  // Triggers the "Catch up" CTA that opens the sheet for context. We only know
-  // the exact count when both sides of the gap are in the same season; for
-  // cross-season we render a count-less CTA (would need cached season episode
-  // counts to know "S1 had 13 eps" before we could total).
-  const epsBehindSameSeason = (() => {
-    if (show.last_aired_season == null || show.last_aired_episode == null) return null;
-    if (show.last_aired_season !== show.current_season) return null;
-    return show.last_aired_episode - show.current_episode;
-  })();
-  const isMultiBehind = hasNext && (() => {
-    if (show.last_aired_season == null || show.last_aired_episode == null) return false;
-    if (show.last_aired_season > show.current_season) return true;
-    return (epsBehindSameSeason ?? 0) >= 2;
-  })();
+  // Multi-behind count comes from the schedule-table RPC, not the per-row
+  // last_aired cache, so it stays current the moment the cron picks up a
+  // new airing. Cache used to lag until the user opened the show detail —
+  // they'd see the single-catchup pip even after a new episode aired.
+  const behindCount = nextEpisode?.behindCount ?? 0;
+  const isMultiBehind = hasNext && behindCount >= 2;
 
   return (
     <Pressable
@@ -152,9 +143,7 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, 
           >
             <Text style={styles.catchUpLabel}>Catch up</Text>
             <View style={styles.catchUpButton}>
-              <Text style={styles.catchUpCount}>
-                {epsBehindSameSeason != null ? epsBehindSameSeason : '›'}
-              </Text>
+              <Text style={styles.catchUpCount}>{behindCount}</Text>
             </View>
           </Pressable>
         ) : (
