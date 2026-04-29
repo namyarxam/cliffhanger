@@ -11,7 +11,15 @@ const supabaseAnonKey = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY!;
 export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
   auth: {
     storage: AsyncStorage,
-    autoRefreshToken: true,
+    // EXPERIMENT: was true. Disabling because cold-launch hangs traced to
+    // supabase-js firing an auto-refresh on createClient that holds an
+    // internal auth mutex while waiting on a slow first network call —
+    // every subsequent auth call (retryAuth, AppState handler) queues
+    // behind that lock and never resolves until force-quit. Tokens still
+    // get refreshed on-demand inside supabase queries when they're near
+    // expiry; we just lose the periodic background refresh tick. Revert
+    // to true if 401s start showing up on long-running sessions.
+    autoRefreshToken: false,
     persistSession: true,
     // Must be false for React Native — Supabase tries to read OAuth
     // tokens from the URL by default, which doesn't work in a native app.
