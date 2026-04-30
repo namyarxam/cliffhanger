@@ -65,6 +65,30 @@ Deno.serve(async (_req) => {
         .upsert(episodes, { onConflict: 'show_id,season,episode', ignoreDuplicates: true });
     }
 
+    // Bump user_shows.last_aired_* for any currently_watching row whose
+    // cached value is now older than what we just wrote to schedule. The
+    // cache used to lag until the user opened the show detail page, which
+    // caused the home screen to mis-classify shows as "Returning" right
+    // after a mark-watched (cache said caught-up while schedule said
+    // behind). The OR filter ensures we only update rows where the new
+    // episode is actually newer than what's cached.
+    for (const ep of episodes) {
+      await supabase
+        .from('user_shows')
+        .update({
+          last_aired_season: ep.season,
+          last_aired_episode: ep.episode,
+          last_aired_airdate: ep.airdate,
+        })
+        .eq('show_id', ep.show_id)
+        .eq('status', 'currently_watching')
+        .or(
+          `last_aired_season.is.null,` +
+          `last_aired_season.lt.${ep.season},` +
+          `and(last_aired_season.eq.${ep.season},last_aired_episode.lt.${ep.episode})`,
+        );
+    }
+
     // Find users who are watching these shows and want push notifications
     const showIds = [...new Set(episodes.map(e => e.show_id))];
 

@@ -292,9 +292,13 @@ export async function markUpToEpisode(
   }
 
   if (rows.length > 0) {
+    // ignoreDuplicates skips on-conflict instead of doing an UPDATE — the
+    // RLS policy on episode_watches only allows INSERT/SELECT/DELETE, so
+    // upsert without this flag fails with 42501 when any of the rows
+    // already exist. Marking the same episode again is idempotent anyway.
     const { error } = await supabase
       .from('episode_watches')
-      .upsert(rows, { onConflict: 'user_id,show_id,season,episode' });
+      .upsert(rows, { onConflict: 'user_id,show_id,season,episode', ignoreDuplicates: true });
 
     if (error) throw error;
   }

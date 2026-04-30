@@ -78,12 +78,25 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, 
   // positive on old shows where the next-unwatched aired years ago.
   const isNewEpisode = hasNext && isAiredRecently(nextEpisode?.airdate ?? null);
 
-  // Multi-behind count comes from the schedule-table RPC, not the per-row
-  // last_aired cache, so it stays current the moment the cron picks up a
-  // new airing. Cache used to lag until the user opened the show detail —
-  // they'd see the single-catchup pip even after a new episode aired.
-  const behindCount = nextEpisode?.behindCount ?? 0;
-  const isMultiBehind = hasNext && behindCount >= 2;
+  // Multi-behind count: schedule table is the live source (updates when the
+  // cron runs), but only contains episodes that aired since polling started.
+  // For shows with backlog that aired before the cron's coverage window
+  // (e.g., user added a show with several already-aired episodes), schedule
+  // undercounts. Cache's last_aired_* gives us same-season exact diff; for
+  // cross-season we don't know season totals so we can't compute a number —
+  // render a chevron sentinel and let the catch-up sheet show the detail.
+  const scheduleBehind = nextEpisode?.behindCount ?? 0;
+  const sameSeasonBehind = (() => {
+    if (show.last_aired_season == null || show.last_aired_episode == null) return 0;
+    if (show.last_aired_season !== show.current_season) return 0;
+    return Math.max(0, show.last_aired_episode - show.current_episode);
+  })();
+  const isCrossSeasonBehind =
+    show.last_aired_season != null &&
+    show.last_aired_episode != null &&
+    show.last_aired_season > show.current_season;
+  const behindCount = Math.max(scheduleBehind, sameSeasonBehind);
+  const isMultiBehind = hasNext && (behindCount >= 2 || isCrossSeasonBehind);
 
   return (
     <Pressable
@@ -141,9 +154,10 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, 
               onCatchUp?.(show);
             }}
           >
-            <Text style={styles.catchUpLabel}>Catch up</Text>
             <View style={styles.catchUpButton}>
-              <Text style={styles.catchUpCount}>{behindCount}</Text>
+              <Text style={styles.catchUpCount}>
+                {isCrossSeasonBehind ? '›' : behindCount}
+              </Text>
             </View>
           </Pressable>
         ) : (
