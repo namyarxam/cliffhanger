@@ -39,6 +39,7 @@ yarn-error.*
 
 # Claude
 CLAUDE.md
+.claude/
 
 # Supabase CLI local state
 supabase/.temp/
