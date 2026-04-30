@@ -135,29 +135,47 @@ export default function MyShowsScreen() {
 
   const fetchData = useCallback(async () => {
     if (!userId) return;
-    try {
-      const [data, episodeData, display, popularShows, airing, announcements, counts] = await Promise.all([
-        getUserShows(userId),
-        getNextEpisodesForShows(userId),
-        getDisplayList(userId),
-        getPopularWithFriends(userId, POPULAR_CAROUSEL_LIMIT),
-        getShowsAiringToday(userId),
-        getReturnAnnouncements(userId),
-        getWatchedCounts(userId),
-      ]);
-      setShows(data);
-      setNextEpisodes(episodeData.nextEpisodes);
-      setDisplayList(display);
-      setPopular(popularShows);
-      setAiringToday(airing);
-      setReturnAnnouncements(announcements);
-      setWatchedCounts(counts);
-    } catch (e) {
-      silentCatch('myShows:fetchData')(e);
-    } finally {
-      setLoading(false);
-      setRefreshing(false);
-    }
+    // Promise.allSettled (not Promise.all) so one transient failure can't
+    // blank the screen. With Promise.all, if e.g. getPopularWithFriends had a
+    // network blip the entire batch rejects, the catch fires, and NONE of
+    // the state updates run — leaving popular at [], shows at [], etc. With
+    // allSettled each query updates independently and a partial failure
+    // preserves the last-known state for the failing slice.
+    const results = await Promise.allSettled([
+      getUserShows(userId),
+      getNextEpisodesForShows(userId),
+      getDisplayList(userId),
+      getPopularWithFriends(userId, POPULAR_CAROUSEL_LIMIT),
+      getShowsAiringToday(userId),
+      getReturnAnnouncements(userId),
+      getWatchedCounts(userId),
+    ]);
+
+    const [showsR, episodesR, displayR, popularR, airingR, announcementsR, countsR] = results;
+
+    if (showsR.status === 'fulfilled') setShows(showsR.value);
+    else silentCatch('myShows:getUserShows')(showsR.reason);
+
+    if (episodesR.status === 'fulfilled') setNextEpisodes(episodesR.value.nextEpisodes);
+    else silentCatch('myShows:getNextEpisodes')(episodesR.reason);
+
+    if (displayR.status === 'fulfilled') setDisplayList(displayR.value);
+    else silentCatch('myShows:getDisplayList')(displayR.reason);
+
+    if (popularR.status === 'fulfilled') setPopular(popularR.value);
+    else silentCatch('myShows:getPopular')(popularR.reason);
+
+    if (airingR.status === 'fulfilled') setAiringToday(airingR.value);
+    else silentCatch('myShows:getAiringToday')(airingR.reason);
+
+    if (announcementsR.status === 'fulfilled') setReturnAnnouncements(announcementsR.value);
+    else silentCatch('myShows:getReturnAnnouncements')(announcementsR.reason);
+
+    if (countsR.status === 'fulfilled') setWatchedCounts(countsR.value);
+    else silentCatch('myShows:getWatchedCounts')(countsR.reason);
+
+    setLoading(false);
+    setRefreshing(false);
   }, [userId]);
 
   useFocusEffect(
@@ -337,7 +355,22 @@ export default function MyShowsScreen() {
     <SectionList
       style={styles.container}
       sections={sections}
-      keyExtractor={item => item.show_id}
+      // Key includes the sub-classification for currently_watching shows so
+      // that when a row jumps between Watching/Returning/Hiatus/Ended the
+      // virtualized cell unmounts instead of being rebound — otherwise the
+      // recycled cell can paint stale content (the previous occupant's data
+      // or mid-swipe Animated.Value state) at the new position. Non-CW rows
+      // (watchlist) keep their plain key.
+      keyExtractor={item =>
+        item.status === 'currently_watching'
+          ? `${classifyCW(item, nextEpisodes.has(item.show_id))}-${item.show_id}`
+          : `${item.status}-${item.show_id}`
+      }
+      // VirtualizedList only re-evaluates cells when `data` references change
+      // OR `extraData` changes. renderItem reads several pieces of state that
+      // aren't in the section data (nextEpisodes/airingToday/watchedCounts/
+      // hidePosters), so any change to those needs to invalidate cached cells.
+      extraData={`${nextEpisodes.size}:${airingToday.size}:${watchedCounts.size}:${shows.length}:${profile?.show_posters_in_list === false ? 1 : 0}`}
       renderItem={({ item }) => {
         // Schedule cron is the eager source — already carries the airdate so
         // WatchlistCard can decide whether to surface "NEW".

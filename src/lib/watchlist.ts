@@ -77,24 +77,39 @@ export async function getPopularWithFriends(userId: string, limit: number = POPU
 
   const friendIds = friends.map(f => f.user.id);
 
-  const { data } = await supabase
+  // Capture the error rather than swallowing it. Previously this returned []
+  // on any non-data response, which let transient failures (network blips,
+  // RLS hiccups, rate-limits) silently blank the carousel. fetchData's
+  // allSettled wrapper catches the throw and preserves the prior state.
+  const { data, error } = await supabase
     .from('user_shows_full')
     .select('show_id, show_title, show_image, user_id, added_at')
     .in('user_id', friendIds);
 
+  if (error) throw error;
   if (!data || data.length === 0) return [];
 
   // Build a name map from friends
   const nameMap = new Map(friends.map(f => [f.user.id, f.user.display_name]));
 
-  // Group by show, count friends, collect names, track most recent add
+  // Group by show, count friends, collect names, track most recent add.
+  // Title/image are LEFT-JOIN-derived from the centralized `shows` table; if
+  // one friend's row has nulls (orphan user_shows row, transient JOIN miss),
+  // a later friend's row with populated values is preferred. Without this
+  // the first-row-wins behavior could leave a popular entry permanently
+  // blank-postered.
   const showMap = new Map<string, { title: string; image: string | null; names: string[]; latestAdd: string }>();
   for (const row of data) {
-    const entry = showMap.get(row.show_id) ?? { title: row.show_title, image: row.show_image, names: [] as string[], latestAdd: row.added_at };
+    let entry = showMap.get(row.show_id);
+    if (!entry) {
+      entry = { title: row.show_title ?? '', image: row.show_image, names: [], latestAdd: row.added_at };
+      showMap.set(row.show_id, entry);
+    }
+    if (!entry.title && row.show_title) entry.title = row.show_title;
+    if (!entry.image && row.show_image) entry.image = row.show_image;
     const name = nameMap.get(row.user_id);
     if (name) entry.names.push(name);
     if (row.added_at > entry.latestAdd) entry.latestAdd = row.added_at;
-    showMap.set(row.show_id, entry);
   }
 
   // Filter out shows the user already has
