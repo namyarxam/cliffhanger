@@ -15,6 +15,10 @@ export type Theme = {
   textDim: string;
   textFaint: string;
   accent: string;
+  // Tinted/translucent accent for ghost buttons + soft accent fills. Pairs
+  // with accent for the foreground content. Tuned per-theme for the right
+  // visual weight on each palette's bg.
+  accentBg: string;
   success: string;
   successDim: string;
   successBg: string;
@@ -37,6 +41,7 @@ const themeNavy: Theme = {
   textDim: 'rgba(255,255,255,0.31)',
   textFaint: 'rgba(255,255,255,0.19)',
   accent: '#ff6b35',
+  accentBg: 'rgba(255,107,53,0.15)',
   success: '#4ade80',
   successDim: 'rgba(74,222,128,0.7)',
   successBg: 'rgba(74,222,128,0.1)',
@@ -60,6 +65,7 @@ const themeSmoke: Theme = {
   textDim: 'rgba(232,232,236,0.62)',
   textFaint: 'rgba(232,232,236,0.38)',
   accent: '#3DB6A4',
+  accentBg: 'rgba(61,182,164,0.15)',
   success: '#34D399',
   successDim: 'rgba(52,211,153,0.75)',
   successBg: 'rgba(52,211,153,0.12)',
@@ -81,6 +87,7 @@ const themePlum: Theme = {
   textDim: 'rgba(232,228,240,0.62)',
   textFaint: 'rgba(232,228,240,0.38)',
   accent: '#EC4899',
+  accentBg: 'rgba(236,72,153,0.15)',
   success: '#5EEAD4',
   successDim: 'rgba(94,234,212,0.72)',
   successBg: 'rgba(94,234,212,0.12)',
@@ -106,6 +113,7 @@ const themePaper: Theme = {
   textDim: 'rgba(40,30,15,0.62)',
   textFaint: 'rgba(40,30,15,0.42)',
   accent: '#1B4965',
+  accentBg: 'rgba(27,73,101,0.15)',
   success: '#3F6B3F',
   successDim: 'rgba(63,107,63,0.72)',
   successBg: 'rgba(63,107,63,0.12)',

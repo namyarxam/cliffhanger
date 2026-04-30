@@ -148,6 +148,7 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, 
       {show.status === 'currently_watching' && hasNext && (
         isMultiBehind ? (
           <Pressable
+            hitSlop={8}
             style={({ pressed }) => [styles.catchUpRow, pressed && { opacity: 0.7 }]}
             onPress={(e) => {
               e.stopPropagation();
@@ -169,6 +170,7 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, 
               </Text>
             </View>
             <Pressable
+              hitSlop={8}
               style={({ pressed }) => [styles.catchUpButton, pressed && { opacity: 0.7 }]}
               onPress={(e) => {
                 e.stopPropagation();
@@ -352,22 +354,22 @@ const createStyles = (theme: Theme) => StyleSheet.create({
     color: theme.accent,
   },
   catchUpButton: {
-    width: 28,
-    height: 28,
-    borderRadius: 14,
-    backgroundColor: theme.accent,
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    backgroundColor: theme.accentBg,
     alignItems: 'center',
     justifyContent: 'center',
   },
   catchUpCheck: {
-    fontSize: 14,
+    fontSize: 16,
     fontWeight: '700',
-    color: '#fff',
+    color: theme.accent,
   },
   catchUpCount: {
-    fontSize: 13,
+    fontSize: 14,
     fontFamily: 'DMSans_700Bold',
-    color: '#fff',
+    color: theme.accent,
     lineHeight: 16,
   },
 });
