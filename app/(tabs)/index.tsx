@@ -273,59 +273,127 @@ export default function MyShowsScreen() {
   }, [userId, router, fetchData]);
 
   // Split currently_watching into the four sub-groups; everything else stays
-  // as a single section.
-  const cwGroups: Record<CWGroup, UserShow[]> = { watching: [], returning: [], hiatus: [], ended: [] };
-  for (const s of shows) {
-    if (s.status !== 'currently_watching') continue;
-    cwGroups[classifyCW(s, nextEpisodes.has(s.show_id))].push(s);
-  }
-  const byTitle = (a: UserShow, b: UserShow) => sortTitle(a.show_title).localeCompare(sortTitle(b.show_title));
-  // Within Watching: behind shows surface first (need attention), sorted by
-  // title. Caught-up actively-airing shows follow, sorted by their next
-  // airdate ascending so the soonest-airing is on top.
-  cwGroups.watching.sort((a, b) => {
-    const aBehind = nextEpisodes.has(a.show_id) || isBehindFromCache(a);
-    const bBehind = nextEpisodes.has(b.show_id) || isBehindFromCache(b);
-    if (aBehind !== bBehind) return aBehind ? -1 : 1;
-    if (aBehind) return byTitle(a, b);
-    return (a.next_episode_airdate ?? '9999-12-31').localeCompare(b.next_episode_airdate ?? '9999-12-31');
-  });
-  cwGroups.returning.sort((a, b) =>
-    (a.next_episode_airdate ?? '9999-12-31').localeCompare(b.next_episode_airdate ?? '9999-12-31'),
-  );
-  cwGroups.hiatus.sort(byTitle);
-  cwGroups.ended.sort(byTitle);
-
-  const wantToWatch = shows
-    .filter(s => s.status === 'want_to_watch')
-    .sort(byTitle);
-
-  const userSections = (
-    [
-      { title: CW_GROUP_TITLES.watching, data: cwGroups.watching },
-      { title: CW_GROUP_TITLES.returning, data: cwGroups.returning },
-      { title: CW_GROUP_TITLES.hiatus, data: cwGroups.hiatus },
-      { title: CW_GROUP_TITLES.ended, data: cwGroups.ended },
-      { title: 'Watchlist', data: wantToWatch },
-    ] as { title: string; data: UserShow[] }[]
-  )
-    .map(({ title, data }) => ({
-      title,
-      data: collapsed.has(title) ? [] : data,
-      count: data.length,
-      isCarousel: false,
-    }))
-    .filter(s => s.count > 0);
-
-  const sections: typeof userSections = [...userSections];
-  if (popular.length > 0) {
-    sections.unshift({
-      title: POPULAR_SECTION_TITLE,
-      data: [],
-      count: 0,
-      isCarousel: true,
+  // as a single section. Memoized so SectionList sees a stable `sections`
+  // reference when nothing in the inputs changed — avoids a full reconcile
+  // on every parent render.
+  const sections = useMemo(() => {
+    const cwGroups: Record<CWGroup, UserShow[]> = { watching: [], returning: [], hiatus: [], ended: [] };
+    for (const s of shows) {
+      if (s.status !== 'currently_watching') continue;
+      cwGroups[classifyCW(s, nextEpisodes.has(s.show_id))].push(s);
+    }
+    const byTitle = (a: UserShow, b: UserShow) => sortTitle(a.show_title).localeCompare(sortTitle(b.show_title));
+    // Within Watching: behind shows surface first (need attention), sorted by
+    // title. Caught-up actively-airing shows follow, sorted by their next
+    // airdate ascending so the soonest-airing is on top.
+    cwGroups.watching.sort((a, b) => {
+      const aBehind = nextEpisodes.has(a.show_id) || isBehindFromCache(a);
+      const bBehind = nextEpisodes.has(b.show_id) || isBehindFromCache(b);
+      if (aBehind !== bBehind) return aBehind ? -1 : 1;
+      if (aBehind) return byTitle(a, b);
+      return (a.next_episode_airdate ?? '9999-12-31').localeCompare(b.next_episode_airdate ?? '9999-12-31');
     });
-  }
+    cwGroups.returning.sort((a, b) =>
+      (a.next_episode_airdate ?? '9999-12-31').localeCompare(b.next_episode_airdate ?? '9999-12-31'),
+    );
+    cwGroups.hiatus.sort(byTitle);
+    cwGroups.ended.sort(byTitle);
+
+    const wantToWatch = shows
+      .filter(s => s.status === 'want_to_watch')
+      .sort(byTitle);
+
+    const userSections = (
+      [
+        { title: CW_GROUP_TITLES.watching, data: cwGroups.watching },
+        { title: CW_GROUP_TITLES.returning, data: cwGroups.returning },
+        { title: CW_GROUP_TITLES.hiatus, data: cwGroups.hiatus },
+        { title: CW_GROUP_TITLES.ended, data: cwGroups.ended },
+        { title: 'Watchlist', data: wantToWatch },
+      ] as { title: string; data: UserShow[] }[]
+    )
+      .map(({ title, data }) => ({
+        title,
+        data: collapsed.has(title) ? [] : data,
+        count: data.length,
+        isCarousel: false,
+      }))
+      .filter(s => s.count > 0);
+
+    const all: typeof userSections = [...userSections];
+    if (popular.length > 0) {
+      all.unshift({
+        title: POPULAR_SECTION_TITLE,
+        data: [],
+        count: 0,
+        isCarousel: true,
+      });
+    }
+    return all;
+  }, [shows, nextEpisodes, collapsed, popular.length]);
+
+  // Per-row nextEpisode lookup with cache-fallback baked in. Built once per
+  // (shows, nextEpisodes) change so per-row props reference-stable across
+  // renders — the previous inline-construction created a fresh object every
+  // render for cache-fallback rows, defeating WatchlistCard's memo and
+  // preventing SectionList from skipping rendered work for unchanged shows.
+  const nextEpisodesWithFallback = useMemo(() => {
+    const map = new Map<string, NextEpisode>();
+    for (const s of shows) {
+      const fromSchedule = nextEpisodes.get(s.show_id);
+      if (fromSchedule) {
+        map.set(s.show_id, fromSchedule);
+      } else if (isBehindFromCache(s)) {
+        const nextSeason = s.current_season;
+        const nextEpisode = s.current_episode + 1;
+        const isExactlyLastAired = s.last_aired_season === nextSeason && s.last_aired_episode === nextEpisode;
+        map.set(s.show_id, {
+          season: nextSeason,
+          episode: nextEpisode,
+          airdate: isExactlyLastAired ? s.last_aired_airdate : null,
+          behindCount: 1,
+        });
+      }
+    }
+    return map;
+  }, [shows, nextEpisodes]);
+
+  const hidePosters = profile?.show_posters_in_list === false;
+
+  // useCallback so SectionList's renderItem prop has stable identity across
+  // re-renders. Combined with the memoized nextEpisodesWithFallback above,
+  // unchanged rows skip re-rendering. Deps must include EVERY value the
+  // closure reads — missing one means stale renders worse than the bug we
+  // just fixed.
+  const renderItem = useCallback(({ item }: { item: UserShow }) => (
+    <WatchlistCard
+      show={item}
+      onPress={handlePress}
+      nextEpisode={nextEpisodesWithFallback.get(item.show_id)}
+      onMarkNext={handleMarkNext}
+      onMarkWatched={handleMarkWatched}
+      onCatchUp={handleCatchUp}
+      isCaughtUp={item.caught_up}
+      hidePosters={hidePosters}
+      airsToday={airingToday.has(item.show_id)}
+      watchedCount={watchedCounts.get(item.show_id) ?? 0}
+    />
+  ), [
+    handlePress,
+    handleMarkNext,
+    handleMarkWatched,
+    handleCatchUp,
+    hidePosters,
+    airingToday,
+    watchedCounts,
+    nextEpisodesWithFallback,
+  ]);
+
+  const keyExtractor = useCallback((item: UserShow) =>
+    item.status === 'currently_watching'
+      ? `${classifyCW(item, nextEpisodes.has(item.show_id))}-${item.show_id}`
+      : `${item.status}-${item.show_id}`,
+  [nextEpisodes]);
 
   if (loading) {
     return (
@@ -355,63 +423,13 @@ export default function MyShowsScreen() {
     <SectionList
       style={styles.container}
       sections={sections}
-      // Key includes the sub-classification for currently_watching shows so
-      // that when a row jumps between Watching/Returning/Hiatus/Ended the
-      // virtualized cell unmounts instead of being rebound — otherwise the
-      // recycled cell can paint stale content (the previous occupant's data
-      // or mid-swipe Animated.Value state) at the new position. Non-CW rows
-      // (watchlist) keep their plain key.
-      keyExtractor={item =>
-        item.status === 'currently_watching'
-          ? `${classifyCW(item, nextEpisodes.has(item.show_id))}-${item.show_id}`
-          : `${item.status}-${item.show_id}`
-      }
+      keyExtractor={keyExtractor}
       // VirtualizedList only re-evaluates cells when `data` references change
       // OR `extraData` changes. renderItem reads several pieces of state that
       // aren't in the section data (nextEpisodes/airingToday/watchedCounts/
       // hidePosters), so any change to those needs to invalidate cached cells.
-      extraData={`${nextEpisodes.size}:${airingToday.size}:${watchedCounts.size}:${shows.length}:${profile?.show_posters_in_list === false ? 1 : 0}`}
-      renderItem={({ item }) => {
-        // Schedule cron is the eager source — already carries the airdate so
-        // WatchlistCard can decide whether to surface "NEW".
-        // Cache fallback walks the user one episode at a time (current+1)
-        // rather than jumping to last_aired (would skip and create gaps in
-        // episode_watches). We only know the airdate of current+1 when
-        // current+1 IS exactly last_aired (the 1-behind case); otherwise null
-        // so the card hides "NEW" until the user has fewer episodes to clear.
-        const fromSchedule = nextEpisodes.get(item.show_id);
-        let nextEp = fromSchedule;
-        if (!nextEp && isBehindFromCache(item)) {
-          const nextSeason = item.current_season;
-          const nextEpisode = item.current_episode + 1;
-          const isExactlyLastAired =
-            item.last_aired_season === nextSeason && item.last_aired_episode === nextEpisode;
-          // Cache fallback path: schedule cron didn't catch this airing yet.
-          // Behind count is at least 1; we can't compute the true count from
-          // the cache without season episode totals, so default to 1 and
-          // accept a brief lag until the cron catches up.
-          nextEp = {
-            season: nextSeason,
-            episode: nextEpisode,
-            airdate: isExactlyLastAired ? item.last_aired_airdate : null,
-            behindCount: 1,
-          };
-        }
-        return (
-          <WatchlistCard
-            show={item}
-            onPress={handlePress}
-            nextEpisode={nextEp}
-            onMarkNext={handleMarkNext}
-            onMarkWatched={handleMarkWatched}
-            onCatchUp={handleCatchUp}
-            isCaughtUp={item.caught_up}
-            hidePosters={profile?.show_posters_in_list === false}
-            airsToday={airingToday.has(item.show_id)}
-            watchedCount={watchedCounts.get(item.show_id) ?? 0}
-          />
-        );
-      }}
+      extraData={`${nextEpisodes.size}:${airingToday.size}:${watchedCounts.size}:${shows.length}:${hidePosters ? 1 : 0}`}
+      renderItem={renderItem}
       renderSectionHeader={({ section }) => {
         if (section.isCarousel) {
           return (

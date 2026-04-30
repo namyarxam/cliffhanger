@@ -1,4 +1,4 @@
-import { memo, useMemo, useRef } from 'react';
+import { memo, useMemo, useRef, useEffect } from 'react';
 import { View, Text, Pressable, StyleSheet, Animated, PanResponder } from 'react-native';
 import * as Haptics from 'expo-haptics';
 import { Image } from 'expo-image';
@@ -65,6 +65,17 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, 
   const styles = useMemo(() => createStyles(theme), [theme]);
   const dragX = useRef(new Animated.Value(0)).current;
   const armed = useRef(false);
+
+  // Defensive reset when the cell is reused for a different show. Combined
+  // with the SectionList keyExtractor that includes the CWGroup, cross-
+  // section moves should already remount the cell — but if the same show_id
+  // ever gets rebound during a recycle (e.g. when re-ordering within the
+  // same section) we don't want a stale Animated.Value or armed flag from
+  // the previous occupant bleeding through.
+  useEffect(() => {
+    dragX.setValue(0);
+    armed.current = false;
+  }, [show.show_id, dragX]);
   const hasNext = !!nextEpisode && show.status === 'currently_watching';
   const showToday = airsToday && show.status === 'currently_watching';
   const isEnded = show.status === 'currently_watching' && !hasNext && show.show_status === 'Ended';
@@ -378,7 +389,57 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, 
   );
 }
 
-export default memo(WatchlistCard);
+// Custom comparator: skip the function-prop identity check (callers pass
+// useCallback'd handlers — these may still tick refs even when underlying
+// behavior is identical) and instead compare exactly the fields this
+// component renders from. Keep this list in sync with what the component
+// reads above; missing a field means stale rows.
+function areEqual(prev: Props, next: Props): boolean {
+  if (prev.show !== next.show) {
+    // Object identity differs — cheap escape. Fall through to field-level
+    // comparison so we don't re-render when only an irrelevant field changed.
+    if (
+      prev.show.show_id !== next.show.show_id ||
+      prev.show.show_title !== next.show.show_title ||
+      prev.show.show_image !== next.show.show_image ||
+      prev.show.show_network !== next.show.show_network ||
+      prev.show.show_status !== next.show.show_status ||
+      prev.show.status !== next.show.status ||
+      prev.show.current_season !== next.show.current_season ||
+      prev.show.current_episode !== next.show.current_episode ||
+      prev.show.last_aired_season !== next.show.last_aired_season ||
+      prev.show.last_aired_episode !== next.show.last_aired_episode ||
+      prev.show.last_aired_airdate !== next.show.last_aired_airdate ||
+      prev.show.next_episode_airdate !== next.show.next_episode_airdate ||
+      prev.show.next_episode_season !== next.show.next_episode_season ||
+      prev.show.next_episode_episode !== next.show.next_episode_episode ||
+      prev.show.total_aired_episodes !== next.show.total_aired_episodes ||
+      prev.show.rating !== next.show.rating ||
+      prev.show.caught_up !== next.show.caught_up
+    ) {
+      return false;
+    }
+  }
+  if (
+    prev.nextEpisode?.season !== next.nextEpisode?.season ||
+    prev.nextEpisode?.episode !== next.nextEpisode?.episode ||
+    prev.nextEpisode?.airdate !== next.nextEpisode?.airdate ||
+    prev.nextEpisode?.behindCount !== next.nextEpisode?.behindCount
+  ) {
+    return false;
+  }
+  if (prev.airsToday !== next.airsToday) return false;
+  if (prev.watchedCount !== next.watchedCount) return false;
+  if (prev.hidePosters !== next.hidePosters) return false;
+  if (prev.isCaughtUp !== next.isCaughtUp) return false;
+  if (prev.leftAccessory !== next.leftAccessory) return false;
+  // Function props: assumed stable via useCallback in parent. If a parent
+  // ever passes a fresh function each render, that'd silently nerf this
+  // memo — flag it during code review.
+  return true;
+}
+
+export default memo(WatchlistCard, areEqual);
 
 const createStyles = (theme: Theme) => StyleSheet.create({
   outer: {
