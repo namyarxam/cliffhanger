@@ -62,6 +62,30 @@ export interface ShowFull extends ShowSummary {
 
 export type WatchStatus = 'want_to_watch' | 'currently_watching' | 'watched' | 'dropped';
 
+// Centralized TVMaze metadata. One row per show_id, shared by every user
+// tracking the show. Mutated by the refresh-show-metadata cron and by
+// addShow / cacheShowMetadata on the client.
+export interface Show {
+  show_id: string;
+  show_title: string;
+  show_image: string | null;
+  show_network: string | null;
+  show_status: string | null;
+  next_episode_airdate: string | null;
+  next_episode_season: number | null;
+  next_episode_episode: number | null;
+  last_aired_season: number | null;
+  last_aired_episode: number | null;
+  last_aired_airdate: string | null;
+  returning_announced_at: string | null;
+  total_aired_episodes: number | null;
+  updated_at: string;
+}
+
+// Flat read shape served by the `user_shows_full` view. Consuming code keeps
+// the same field access it had before the shows table was split out — the view
+// joins shows back in. Writes go to `user_shows` (per-user) or `shows`
+// (shared) directly.
 export interface UserShow {
   user_id: string;
   show_id: string;
@@ -79,6 +103,9 @@ export interface UserShow {
   last_aired_season: number | null;
   last_aired_episode: number | null;
   last_aired_airdate: string | null;
+  returning_announced_at: string | null;
+  returning_seen_at: string | null;
+  total_aired_episodes: number | null;
   new_episodes_seen_at: string | null;
   caught_up: boolean;
   notify: boolean;

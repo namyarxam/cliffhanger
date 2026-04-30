@@ -1,17 +1,16 @@
 // Supabase Edge Function: Refresh cached TVMaze metadata for currently-watching shows.
 //
 // poll-schedule only writes today's airing episodes — it never touches the
-// next_episode_airdate / show_status cache on user_shows. So when TVMaze
-// announces a future airdate (e.g. House of the Dragon's next season), the
-// home screen sub-grouping ("On Hiatus" vs "Returning") stays stale until the
-// user opens the show detail page, which is the only thing that calls
-// cacheShowMetadata.
+// next_episode_airdate / show_status cache on shows. So when TVMaze announces
+// a future airdate (e.g. House of the Dragon's next season), the home screen
+// sub-grouping ("On Hiatus" vs "Returning") stays stale until the user opens
+// the show detail page, which is the only thing that calls cacheShowMetadata.
 //
-// This function fixes that without per-user TVMaze calls: pull every distinct
-// show_id that someone is currently watching (skipping Ended shows, which
-// won't get new episodes), fetch /shows/{id}?embed=nextepisode once per show,
-// and bulk-update next_episode_airdate + show_status on every user_shows row
-// for that show_id. One TVMaze call covers all users watching the show.
+// This function fixes that: pull every distinct show_id someone is currently
+// watching (skipping Ended shows), fetch /shows/{id}?embed=nextepisode once
+// per show, and update one row in `shows` per show_id. After the
+// centralize-shows refactor this is a single write per show — was N writes
+// per show, one per watcher.
 //
 // Deploy: supabase functions deploy refresh-show-metadata
 // Schedule: see pg_cron SQL in CLAUDE.md / project docs (twice daily,
@@ -32,6 +31,9 @@ interface TVMazeShowResponse {
       number?: number;
       airdate?: string;
     };
+    episodes?: Array<{
+      airdate?: string | null;
+    }>;
   };
 }
 
@@ -46,11 +48,11 @@ Deno.serve(async (_req) => {
 
   try {
     // Pull every show_id on someone's currently-watching list, excluding
-    // shows TVMaze has marked Ended. Returning + Hiatus + Behind shows are
-    // all in scope — any of their cached metadata could change (date moves,
-    // hiatus → returning, returning → ended).
+    // shows TVMaze has marked Ended. Joining the view keeps the show_status
+    // filter readable; the underlying tables are user_shows (per-user) and
+    // shows (TVMaze metadata).
     const { data: rows, error } = await supabase
-      .from('user_shows')
+      .from('user_shows_full')
       .select('show_id')
       .eq('status', 'currently_watching')
       .or('show_status.is.null,show_status.neq.Ended');
@@ -64,18 +66,16 @@ Deno.serve(async (_req) => {
 
     for (const showId of showIds) {
       try {
-        // Pre-read one row's cached airdate so we can detect a hiatus → returning
-        // transition. All currently_watching rows for the same show carry the
-        // same cached value (cron writes them in lockstep), so one row is enough.
+        // Read the cached airdate so we can detect a hiatus → returning
+        // transition (null → non-null on next_episode_airdate).
         const { data: existing } = await supabase
-          .from('user_shows')
+          .from('shows')
           .select('next_episode_airdate')
           .eq('show_id', showId)
-          .eq('status', 'currently_watching')
-          .limit(1);
-        const previousAirdate = existing?.[0]?.next_episode_airdate ?? null;
+          .maybeSingle();
+        const previousAirdate = existing?.next_episode_airdate ?? null;
 
-        const res = await fetch(`${TVMAZE_BASE}/shows/${showId}?embed[]=nextepisode`);
+        const res = await fetch(`${TVMAZE_BASE}/shows/${showId}?embed[]=nextepisode&embed[]=episodes`);
         if (!res.ok) {
           failed++;
         } else {
@@ -85,35 +85,52 @@ Deno.serve(async (_req) => {
           const nextSeason = nextEp?.season ?? null;
           const nextEpisode = nextEp?.number ?? null;
           const status = data.status ?? null;
+          // Count episodes whose airdate is on or before today. Drives the
+          // My Shows progress-bar denominator (numerator is the user's
+          // episode_watches count).
+          const todayDate = new Date().toISOString().slice(0, 10);
+          const totalAiredEpisodes = (data._embedded?.episodes ?? []).reduce(
+            (n, ep) => (ep.airdate && ep.airdate <= todayDate ? n + 1 : n),
+            0,
+          );
 
           // Hiatus → returning: TVMaze just announced a future airdate for a
           // show that didn't have one before. Stamp announced_at (drives the
-          // "Coming back!" banner) and reset seen_at so it re-fires even if
-          // this same show has been announced before.
+          // "Coming back!" banner) and reset every user's seen_at so the
+          // banner re-fires even if this show has been announced before.
           const isReturnAnnouncement = previousAirdate == null && nextAirdate != null;
 
-          const update: Record<string, unknown> = {
+          const showUpdate: Record<string, unknown> = {
             show_status: status,
             next_episode_airdate: nextAirdate,
             next_episode_season: nextSeason,
             next_episode_episode: nextEpisode,
+            total_aired_episodes: totalAiredEpisodes,
+            updated_at: new Date().toISOString(),
           };
           if (isReturnAnnouncement) {
-            update.returning_announced_at = new Date().toISOString();
-            update.returning_seen_at = null;
+            showUpdate.returning_announced_at = new Date().toISOString();
           }
 
-          // Update across all users watching this show. Scoping to
-          // currently_watching keeps want_to_watch / watched rows untouched —
-          // their sub-grouping doesn't depend on this cache.
           const { error: updateError } = await supabase
-            .from('user_shows')
-            .update(update)
-            .eq('show_id', showId)
-            .eq('status', 'currently_watching');
+            .from('shows')
+            .update(showUpdate)
+            .eq('show_id', showId);
 
-          if (updateError) failed++;
-          else refreshed++;
+          if (updateError) {
+            failed++;
+          } else {
+            // Per-user dismissal stamp lives on user_shows; reset for every
+            // currently-watching user so they all see the new banner.
+            if (isReturnAnnouncement) {
+              await supabase
+                .from('user_shows')
+                .update({ returning_seen_at: null })
+                .eq('show_id', showId)
+                .eq('status', 'currently_watching');
+            }
+            refreshed++;
+          }
         }
       } catch {
         failed++;
@@ -137,7 +154,7 @@ Deno.serve(async (_req) => {
     const soonStr = new Date(today.getTime() + 5 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
 
     const { data: soonRows } = await supabase
-      .from('user_shows')
+      .from('user_shows_full')
       .select('user_id, returning_announced_at, returning_seen_at')
       .eq('status', 'currently_watching')
       .not('returning_announced_at', 'is', null)

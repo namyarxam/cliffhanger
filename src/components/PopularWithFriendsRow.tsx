@@ -41,7 +41,7 @@ function PopularWithFriendsRow({ items, onPress }: Props) {
       </ScrollView>
       <LinearGradient
         pointerEvents="none"
-        colors={['rgba(19,21,32,0)', theme.bg]}
+        colors={[`${theme.bg}00`, theme.bg]}
         start={{ x: 0, y: 0.5 }}
         end={{ x: 1, y: 0.5 }}
         style={styles.edgeFade}

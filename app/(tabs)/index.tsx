@@ -14,7 +14,7 @@ import { useFocusEffect } from 'expo-router';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
-import { getUserShows, getNextEpisodesForShows, getPopularWithFriends, getShowsAiringToday, getReturnAnnouncements, markReturnAnnouncementSeen, markNextEpisode, updateShowStatus } from '@/src/lib/watchlist';
+import { getUserShows, getNextEpisodesForShows, getPopularWithFriends, getShowsAiringToday, getReturnAnnouncements, markReturnAnnouncementSeen, markNextEpisode, updateShowStatus, getWatchedCounts } from '@/src/lib/watchlist';
 import type { PopularShow, NextEpisode, ReturnAnnouncement } from '@/src/lib/watchlist';
 import { getDisplayList } from '@/src/lib/lists';
 import WatchlistCard from '@/src/components/WatchlistCard';
@@ -127,6 +127,7 @@ export default function MyShowsScreen() {
   const [popular, setPopular] = useState<PopularShow[]>([]);
   const [airingToday, setAiringToday] = useState<Set<string>>(new Set());
   const [returnAnnouncements, setReturnAnnouncements] = useState<ReturnAnnouncement[]>([]);
+  const [watchedCounts, setWatchedCounts] = useState<Map<string, number>>(new Map());
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
@@ -135,13 +136,14 @@ export default function MyShowsScreen() {
   const fetchData = useCallback(async () => {
     if (!userId) return;
     try {
-      const [data, episodeData, display, popularShows, airing, announcements] = await Promise.all([
+      const [data, episodeData, display, popularShows, airing, announcements, counts] = await Promise.all([
         getUserShows(userId),
         getNextEpisodesForShows(userId),
         getDisplayList(userId),
         getPopularWithFriends(userId, POPULAR_CAROUSEL_LIMIT),
         getShowsAiringToday(userId),
         getReturnAnnouncements(userId),
+        getWatchedCounts(userId),
       ]);
       setShows(data);
       setNextEpisodes(episodeData.nextEpisodes);
@@ -149,6 +151,7 @@ export default function MyShowsScreen() {
       setPopular(popularShows);
       setAiringToday(airing);
       setReturnAnnouncements(announcements);
+      setWatchedCounts(counts);
     } catch (e) {
       silentCatch('myShows:fetchData')(e);
     } finally {
@@ -372,6 +375,7 @@ export default function MyShowsScreen() {
             isCaughtUp={item.caught_up}
             hidePosters={profile?.show_posters_in_list === false}
             airsToday={airingToday.has(item.show_id)}
+            watchedCount={watchedCounts.get(item.show_id) ?? 0}
           />
         );
       }}

@@ -1,10 +1,17 @@
-import { memo, useMemo } from 'react';
-import { View, Text, Pressable, StyleSheet } from 'react-native';
+import { memo, useMemo, useRef } from 'react';
+import { View, Text, Pressable, StyleSheet, Animated, PanResponder } from 'react-native';
+import * as Haptics from 'expo-haptics';
 import { Image } from 'expo-image';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 import { getUserRatingColor } from '@/src/components/RatingSelector';
 import type { UserShow } from '@/src/lib/types';
+
+// Single-catchup swipe tuning. Threshold = commit point. Cap = max travel
+// (resistance past commit gives a rubbery "armed" feel). Both empirically
+// chosen to feel deliberate but not slow.
+const SWIPE_COMMIT_THRESHOLD = 70;
+const SWIPE_MAX_TRAVEL = 110;
 
 function daysUntil(airdate: string): number {
   const next = new Date(airdate + 'T00:00:00');
@@ -41,6 +48,7 @@ interface Props {
   leftAccessory?: React.ReactNode;
   hidePosters?: boolean;
   airsToday?: boolean;
+  watchedCount?: number;
 }
 
 const NEW_WINDOW_MS = 7 * 24 * 60 * 60 * 1000;
@@ -52,9 +60,11 @@ function isAiredRecently(airdate: string | null): boolean {
   return diff >= 0 && diff <= NEW_WINDOW_MS;
 }
 
-function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, onCatchUp, leftAccessory, hidePosters, airsToday }: Props) {
+function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, onCatchUp, leftAccessory, hidePosters, airsToday, watchedCount }: Props) {
   const theme = useTheme();
   const styles = useMemo(() => createStyles(theme), [theme]);
+  const dragX = useRef(new Animated.Value(0)).current;
+  const armed = useRef(false);
   const hasNext = !!nextEpisode && show.status === 'currently_watching';
   const showToday = airsToday && show.status === 'currently_watching';
   const isEnded = show.status === 'currently_watching' && !hasNext && show.show_status === 'Ended';
@@ -112,34 +122,110 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, 
     !isPremiereDay &&
     !isPremiereUpcoming &&
     (isBehind || isCaughtUpActive);
-  // Approximate progress using episode position across all seasons. We don't
-  // cache per-season totals, so AVG_PER_SEASON is a heuristic — works well
-  // for prestige TV (8-12 ep seasons), under/over-estimates on 22-ep network
-  // shows or 4-ep miniseries. Good enough for a visual cue; future migration
-  // could cache real totals.
+  // Real progress: count of episodes the user has marked watched divided by
+  // count of episodes that have aired. Both are exact — no AVG_PER_SEASON
+  // heuristic, no over/under-estimation on long network shows or miniseries.
+  // Falls back to the position heuristic for legacy rows where
+  // total_aired_episodes hasn't been populated yet (cron self-heals within
+  // hours, and any show-detail visit fills it in immediately).
   const AVG_PER_SEASON = 10;
   const positionOf = (season: number, episode: number) =>
     Math.max(0, season - 1) * AVG_PER_SEASON + Math.max(0, episode);
-  const watchedPos = positionOf(show.current_season, show.current_episode);
-  const airedPos =
-    show.last_aired_season != null && show.last_aired_episode != null
-      ? positionOf(show.last_aired_season, show.last_aired_episode)
-      : watchedPos + behindCount;
-  const progressPct = airedPos > 0 ? Math.min(1, watchedPos / airedPos) : 0;
-
-  const handleActionPress = (e: { stopPropagation: () => void }) => {
-    e.stopPropagation();
-    if (isPremiereDay && show.next_episode_season != null && show.next_episode_episode != null) {
-      // Mark E1 of the upcoming season — flips engagement and the show
-      // moves to Watching on the next render.
-      onMarkNext?.(show.show_id, show.next_episode_season, show.next_episode_episode);
-      return;
+  const progressPct = (() => {
+    if (show.total_aired_episodes != null && show.total_aired_episodes > 0 && watchedCount != null) {
+      return Math.min(1, watchedCount / show.total_aired_episodes);
     }
-    if (isMultiBehind) {
-      onCatchUp?.(show);
+    const watchedPos = positionOf(show.current_season, show.current_episode);
+    const airedPos =
+      show.last_aired_season != null && show.last_aired_episode != null
+        ? positionOf(show.last_aired_season, show.last_aired_episode)
+        : watchedPos + behindCount;
+    return airedPos > 0 ? Math.min(1, watchedPos / airedPos) : 0;
+  })();
+
+  // Single-tap catch-up applies in two states:
+  //   - Watching, single-behind → mark next aired episode.
+  //   - Returning, premiere-day → mark E1 of the new season (flips engagement,
+  //     show jumps to Watching on next render).
+  // Both fire onMarkNext under the hood; the swipe gesture below dispatches.
+  const isSingleCatchup =
+    show.status === 'currently_watching' && (isPremiereDay || (isSingleBehind && !!nextEpisode));
+  // Long-press surfaces the catch-up modal whenever there's anything to catch
+  // up to. Lets the user pick an exact episode rather than the one-tap default.
+  const hasCatchup =
+    show.status === 'currently_watching' && (isSingleCatchup || isMultiBehind || isCrossSeasonBehind);
+
+  const fireSingleCatchup = () => {
+    if (isPremiereDay && show.next_episode_season != null && show.next_episode_episode != null) {
+      onMarkNext?.(show.show_id, show.next_episode_season, show.next_episode_episode);
     } else if (isSingleBehind && nextEpisode) {
       onMarkNext?.(show.show_id, nextEpisode.season, nextEpisode.episode);
     }
+  };
+
+  // PanResponder claims the gesture only when the user moves clearly to the
+  // right — vertical scrolls and taps fall through to the SectionList /
+  // Pressable as before. Past commit threshold the row resists further travel
+  // (rubbery feel) and a haptic fires once at the threshold cross to signal
+  // the swipe is armed.
+  const panResponder = useMemo(
+    () =>
+      isSingleCatchup
+        ? PanResponder.create({
+            onMoveShouldSetPanResponder: (_, g) => g.dx > 8 && Math.abs(g.dy) < Math.abs(g.dx),
+            onPanResponderGrant: () => {
+              armed.current = false;
+            },
+            onPanResponderMove: (_, g) => {
+              if (g.dx <= 0) {
+                dragX.setValue(0);
+                return;
+              }
+              const past = Math.max(0, g.dx - SWIPE_COMMIT_THRESHOLD);
+              const resisted = SWIPE_COMMIT_THRESHOLD + past * 0.35;
+              const next = Math.min(g.dx < SWIPE_COMMIT_THRESHOLD ? g.dx : resisted, SWIPE_MAX_TRAVEL);
+              dragX.setValue(next);
+              if (!armed.current && g.dx >= SWIPE_COMMIT_THRESHOLD) {
+                armed.current = true;
+                Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
+              } else if (armed.current && g.dx < SWIPE_COMMIT_THRESHOLD) {
+                armed.current = false;
+              }
+            },
+            onPanResponderRelease: (_, g) => {
+              const committed = g.dx >= SWIPE_COMMIT_THRESHOLD;
+              if (committed) {
+                Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success).catch(() => {});
+                fireSingleCatchup();
+              }
+              Animated.spring(dragX, {
+                toValue: 0,
+                useNativeDriver: true,
+                tension: 80,
+                friction: 12,
+              }).start();
+              armed.current = false;
+            },
+            onPanResponderTerminate: () => {
+              Animated.spring(dragX, {
+                toValue: 0,
+                useNativeDriver: true,
+                tension: 80,
+                friction: 12,
+              }).start();
+              armed.current = false;
+            },
+          })
+        : null,
+    // fireSingleCatchup closes over current props; rebuild when any of those change.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [isSingleCatchup, isPremiereDay, isSingleBehind, nextEpisode?.season, nextEpisode?.episode, show.next_episode_season, show.next_episode_episode],
+  );
+
+  const handleLongPress = () => {
+    if (!hasCatchup) return;
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
+    onCatchUp?.(show);
   };
 
   // Subtext under the title: state-dependent. Premieres get a prominent
@@ -192,24 +278,11 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, 
     return null;
   })();
 
-  // Right-side affordance. Premiere day = ✓ pill that engages with the
-  // upcoming season's E1. Single-behind = ✓ (one-tap mark). Multi-behind /
-  // cross-season = pill (count or ›) opening the catch-up sheet. All share
-  // the accentBg-tinted style.
+  // Right-side affordance. Catch-up actions (single, multi, cross-season,
+  // premiere) used to live here as tap pills — those moved to the swipe-right
+  // gesture (single) and long-press (modal). What remains: the "Done?" nudge
+  // for ended shows, and the rating circle for watched shows.
   const actionPill = (() => {
-    if (show.status === 'currently_watching' && (hasNext || isPremiereDay)) {
-      return (
-        <Pressable
-          hitSlop={10}
-          style={({ pressed }) => [styles.actionPill, pressed && { opacity: 0.55 }]}
-          onPress={handleActionPress}
-        >
-          <Text style={styles.actionPillText}>
-            {isPremiereDay || isSingleBehind ? '✓' : isCrossSeasonBehind ? '›' : behindCount}
-          </Text>
-        </Pressable>
-      );
-    }
     if (show.status === 'currently_watching' && !hasNext && isEnded) {
       return (
         <Pressable
@@ -240,61 +313,89 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, 
   })();
 
   return (
-    <Pressable
-      style={({ pressed }) => [
-        styles.row,
-        pressed && styles.pressed,
-        showToday && styles.rowGlow,
-      ]}
-      onPress={() => onPress(show.show_id)}
-    >
-      {!hidePosters && (
-        <View style={styles.posterWrap}>
-          {show.show_image ? (
-            <Image
-              source={{ uri: show.show_image }}
-              style={styles.poster}
-              contentFit="cover"
-              transition={200}
-            />
-          ) : (
-            <View style={[styles.poster, styles.posterPlaceholder]}>
-              <Text style={styles.posterPlaceholderText}>📺</Text>
+    <View style={styles.outer}>
+      {/* Persistent orange bar at the screen's left edge — visual hint that
+          the row is swipe-actionable. Stays put while the row content
+          translates right under the user's finger. */}
+      {isSingleCatchup && <View style={styles.catchupBar} pointerEvents="none" />}
+      <Animated.View
+        style={[styles.swipeWrap, { transform: [{ translateX: dragX }] }]}
+        {...(panResponder?.panHandlers ?? {})}
+      >
+        <Pressable
+          style={({ pressed }) => [
+            styles.row,
+            pressed && styles.pressed,
+            showToday && styles.rowGlow,
+          ]}
+          onPress={() => onPress(show.show_id)}
+          onLongPress={hasCatchup ? handleLongPress : undefined}
+          delayLongPress={400}
+        >
+          {!hidePosters && (
+            <View style={styles.posterWrap}>
+              {show.show_image ? (
+                <Image
+                  source={{ uri: show.show_image }}
+                  style={styles.poster}
+                  contentFit="cover"
+                  transition={200}
+                />
+              ) : (
+                <View style={[styles.poster, styles.posterPlaceholder]}>
+                  <Text style={styles.posterPlaceholderText}>📺</Text>
+                </View>
+              )}
+              {showProgress && (
+                <View style={styles.progressTrack}>
+                  <View style={[styles.progressFill, { width: `${progressPct * 100}%` }]} />
+                </View>
+              )}
             </View>
           )}
-          {showProgress && (
-            <View style={styles.progressTrack}>
-              <View style={[styles.progressFill, { width: `${progressPct * 100}%` }]} />
+
+          <View style={styles.info}>
+            <View style={styles.titleRow}>
+              <Text style={styles.title} numberOfLines={1}>
+                {show.show_title}
+              </Text>
+              {showToday && (
+                <View style={styles.todayPill}>
+                  <View style={styles.todayDot} />
+                  <Text style={styles.todayText}>TODAY</Text>
+                </View>
+              )}
             </View>
-          )}
-        </View>
-      )}
+            {subtext}
+          </View>
 
-      <View style={styles.info}>
-        <View style={styles.titleRow}>
-          <Text style={styles.title} numberOfLines={1}>
-            {show.show_title}
-          </Text>
-          {showToday && (
-            <View style={styles.todayPill}>
-              <View style={styles.todayDot} />
-              <Text style={styles.todayText}>TODAY</Text>
-            </View>
-          )}
-        </View>
-        {subtext}
-      </View>
+          {leftAccessory}
 
-      {leftAccessory}
-
-      {actionPill}
-    </Pressable>
+          {actionPill}
+        </Pressable>
+      </Animated.View>
+    </View>
   );
 }
 
 export default memo(WatchlistCard);
 
 const createStyles = (theme: Theme) => StyleSheet.create({
+  outer: {
+    position: 'relative',
+  },
+  swipeWrap: {
+    backgroundColor: theme.bg,
+  },
+  catchupBar: {
+    position: 'absolute',
+    left: 0,
+    top: 0,
+    bottom: 0,
+    width: 3,
+    backgroundColor: theme.accent,
+    zIndex: 1,
+  },
   row: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -394,20 +495,6 @@ const createStyles = (theme: Theme) => StyleSheet.create({
     fontSize: 22,
     color: theme.textDim,
     fontFamily: 'DMSans_400Regular',
-  },
-  actionPill: {
-    minWidth: 32,
-    height: 28,
-    borderRadius: 14,
-    paddingHorizontal: 10,
-    backgroundColor: theme.accentBg,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  actionPillText: {
-    fontSize: 13,
-    fontFamily: 'DMSans_700Bold',
-    color: theme.accent,
   },
   endedNudge: {
     flexDirection: 'row',

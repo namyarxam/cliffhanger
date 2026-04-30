@@ -6,6 +6,7 @@ import {
   getWatchedEpisodes,
   cacheShowMetadata,
   getLastAiredEpisode,
+  countAiredEpisodes,
 } from '@/src/lib/watchlist';
 import { getLists, getListsContainingItem } from '@/src/lib/lists';
 import { getFriends } from '@/src/lib/friends';
@@ -101,13 +102,13 @@ export function useShowData(id: string | undefined) {
     if (!userId || !id || !show) return;
     const lastAired = getLastAiredEpisode(show.seasons);
     cacheShowMetadata(
-      userId,
       id,
       show.status,
       show.nextEpisode
         ? { season: show.nextEpisode.season, episode: show.nextEpisode.number, airdate: show.nextEpisode.airdate }
         : null,
       lastAired ? { season: lastAired.season, episode: lastAired.episode, airdate: lastAired.airdate } : null,
+      countAiredEpisodes(show.seasons),
     ).catch(silentCatch('show:cacheMetadata'));
   }, [userId, id, show]);
 

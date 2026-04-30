@@ -26,6 +26,25 @@ export function getLastAiredEpisode(
   return lastSeason > 0 ? { season: lastSeason, episode: lastEp, airdate: lastAirdate } : null;
 }
 
+/**
+ * Count episodes whose airdate is on or before today. Drives the My Shows
+ * progress bar denominator (numerator is the user's episode_watches count).
+ * Episodes with no airdate are treated as unaired — TVMaze leaves the field
+ * null on placeholder rows for unannounced future episodes.
+ */
+export function countAiredEpisodes(
+  seasons: Season[],
+  today = new Date().toISOString().slice(0, 10),
+): number {
+  let count = 0;
+  for (const s of seasons) {
+    for (const ep of s.episodes) {
+      if (ep.airdate && ep.airdate <= today) count++;
+    }
+  }
+  return count;
+}
+
 /** Build a Set of "S{n}E{n}" keys for all episodes up to the given position. */
 export function buildEpisodeSet(
   seasons: Season[],
@@ -59,7 +78,7 @@ export async function getPopularWithFriends(userId: string, limit: number = POPU
   const friendIds = friends.map(f => f.user.id);
 
   const { data } = await supabase
-    .from('user_shows')
+    .from('user_shows_full')
     .select('show_id, show_title, show_image, user_id, added_at')
     .in('user_id', friendIds);
 
@@ -102,7 +121,7 @@ export async function getPopularWithFriends(userId: string, limit: number = POPU
 
 export async function getUserShows(userId: string): Promise<UserShow[]> {
   const { data, error } = await supabase
-    .from('user_shows')
+    .from('user_shows_full')
     .select('*')
     .eq('user_id', userId)
     .order('updated_at', { ascending: false });
@@ -113,7 +132,7 @@ export async function getUserShows(userId: string): Promise<UserShow[]> {
 
 export async function getUserShow(userId: string, showId: string): Promise<UserShow | null> {
   const { data, error } = await supabase
-    .from('user_shows')
+    .from('user_shows_full')
     .select('*')
     .eq('user_id', userId)
     .eq('show_id', showId)
@@ -138,6 +157,7 @@ export async function addShow(
     lastAiredSeason: number | null;
     lastAiredEpisode: number | null;
     lastAiredAirdate: string | null;
+    totalAiredEpisodes: number | null;
   },
 ): Promise<{ currentSeason: number; currentEpisode: number }> {
   // Check for existing episode watches to restore progress
@@ -158,12 +178,13 @@ export async function addShow(
     currentEpisode = watches[0].episode;
   }
 
-  const { error } = await supabase
-    .from('user_shows')
+  // Upsert the shared TVMaze metadata first. Idempotent across users — every
+  // client adding this show writes the same data. If the user_shows insert
+  // below fails, the orphan shows row is harmless and gets reused on retry.
+  const { error: showError } = await supabase
+    .from('shows')
     .upsert({
-      user_id: userId,
       show_id: showId,
-      status,
       show_title: title,
       show_image: image,
       show_network: network,
@@ -174,6 +195,18 @@ export async function addShow(
       last_aired_season: metadata?.lastAiredSeason ?? null,
       last_aired_episode: metadata?.lastAiredEpisode ?? null,
       last_aired_airdate: metadata?.lastAiredAirdate ?? null,
+      total_aired_episodes: metadata?.totalAiredEpisodes ?? null,
+      updated_at: new Date().toISOString(),
+    });
+
+  if (showError) throw showError;
+
+  const { error } = await supabase
+    .from('user_shows')
+    .upsert({
+      user_id: userId,
+      show_id: showId,
+      status,
       current_season: currentSeason,
       current_episode: currentEpisode,
       new_episodes_seen_at: new Date().toISOString(),
@@ -185,20 +218,20 @@ export async function addShow(
 }
 
 /**
- * Refresh the cached TVMaze metadata (status + next-episode airdate) on a
- * single user_shows row. Called fire-and-forget from useShowData when a show
- * detail page loads, so the My Shows list groupings stay accurate without a
- * separate cron job.
+ * Refresh the cached TVMaze metadata for a show. Called fire-and-forget from
+ * useShowData when a show detail page loads, so the My Shows list groupings
+ * stay accurate without a separate cron job. One write covers every user
+ * tracking the show.
  */
 export async function cacheShowMetadata(
-  userId: string,
   showId: string,
   showStatus: string | null,
   nextEpisode: { season: number; episode: number; airdate: string | null } | null,
   lastAired: { season: number; episode: number; airdate: string | null } | null,
+  totalAiredEpisodes: number | null,
 ): Promise<void> {
   await supabase
-    .from('user_shows')
+    .from('shows')
     .update({
       show_status: showStatus,
       next_episode_airdate: nextEpisode?.airdate ?? null,
@@ -207,8 +240,9 @@ export async function cacheShowMetadata(
       last_aired_season: lastAired?.season ?? null,
       last_aired_episode: lastAired?.episode ?? null,
       last_aired_airdate: lastAired?.airdate ?? null,
+      total_aired_episodes: totalAiredEpisodes,
+      updated_at: new Date().toISOString(),
     })
-    .eq('user_id', userId)
     .eq('show_id', showId);
 }
 
@@ -251,6 +285,26 @@ export async function removeShow(userId: string, showId: string): Promise<void> 
     .eq('show_id', showId);
 
   if (error) throw error;
+}
+
+/**
+ * Map of show_id → number of episodes the user has marked watched. Powers the
+ * progress-bar numerator on the My Shows list. One round-trip for the whole
+ * watchlist instead of N per-show count queries.
+ */
+export async function getWatchedCounts(userId: string): Promise<Map<string, number>> {
+  const { data, error } = await supabase
+    .from('episode_watches')
+    .select('show_id')
+    .eq('user_id', userId);
+
+  if (error) throw error;
+
+  const counts = new Map<string, number>();
+  for (const row of data ?? []) {
+    counts.set(row.show_id, (counts.get(row.show_id) ?? 0) + 1);
+  }
+  return counts;
 }
 
 export async function getWatchedEpisodes(
@@ -481,7 +535,7 @@ export interface ReturnAnnouncement {
 export async function getReturnAnnouncements(userId: string): Promise<ReturnAnnouncement[]> {
   const today = new Date().toISOString().slice(0, 10);
   const { data, error } = await supabase
-    .from('user_shows')
+    .from('user_shows_full')
     .select('show_id, show_title, show_image, next_episode_airdate, returning_announced_at, returning_seen_at')
     .eq('user_id', userId)
     .eq('status', 'currently_watching')

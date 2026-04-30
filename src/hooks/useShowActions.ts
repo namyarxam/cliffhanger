@@ -9,6 +9,7 @@ import {
   toggleShowNotify,
   getLastAiredEpisode,
   buildEpisodeSet,
+  countAiredEpisodes,
 } from '@/src/lib/watchlist';
 import { addListItem, removeListItem } from '@/src/lib/lists';
 import { silentCatch } from '@/src/lib/errorLog';
@@ -70,6 +71,9 @@ export function useShowActions(deps: ShowActionsDeps) {
       last_aired_season: lastAired?.season ?? null,
       last_aired_episode: lastAired?.episode ?? null,
       last_aired_airdate: lastAired?.airdate ?? null,
+      returning_announced_at: null,
+      returning_seen_at: null,
+      total_aired_episodes: countAiredEpisodes(show.seasons),
       current_season: 0,
       current_episode: 0,
       current_episode_airdate: null,
@@ -89,6 +93,7 @@ export function useShowActions(deps: ShowActionsDeps) {
         lastAiredSeason: lastAired?.season ?? null,
         lastAiredEpisode: lastAired?.episode ?? null,
         lastAiredAirdate: lastAired?.airdate ?? null,
+        totalAiredEpisodes: countAiredEpisodes(show.seasons),
       });
       // addShow restores previous episode_watches progress if the show was added before.
       // If that restored progress differs from our optimistic (0,0), reconcile silently.
@@ -212,6 +217,7 @@ export function useShowActions(deps: ShowActionsDeps) {
         lastAiredSeason: lastAired?.season ?? null,
         lastAiredEpisode: lastAired?.episode ?? null,
         lastAiredAirdate: lastAired?.airdate ?? null,
+        totalAiredEpisodes: countAiredEpisodes(show.seasons),
       });
       const targetSeason = show.seasons.find(s => s.number === season);
       const targetEp = targetSeason?.episodes.find(e => e.number === episode);
@@ -225,11 +231,14 @@ export function useShowActions(deps: ShowActionsDeps) {
         show_network: show.network,
         show_status: show.status,
         next_episode_airdate: show.nextEpisode?.airdate ?? null,
-      next_episode_season: show.nextEpisode?.season ?? null,
-      next_episode_episode: show.nextEpisode?.number ?? null,
+        next_episode_season: show.nextEpisode?.season ?? null,
+        next_episode_episode: show.nextEpisode?.number ?? null,
         last_aired_season: lastAired?.season ?? null,
         last_aired_episode: lastAired?.episode ?? null,
         last_aired_airdate: lastAired?.airdate ?? null,
+        returning_announced_at: null,
+        returning_seen_at: null,
+        total_aired_episodes: countAiredEpisodes(show.seasons),
         current_season: season,
         current_episode: episode,
         current_episode_airdate: targetEp?.airdate ?? null,

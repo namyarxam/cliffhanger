@@ -65,28 +65,40 @@ Deno.serve(async (_req) => {
         .upsert(episodes, { onConflict: 'show_id,season,episode', ignoreDuplicates: true });
     }
 
-    // Bump user_shows.last_aired_* for any currently_watching row whose
-    // cached value is now older than what we just wrote to schedule. The
-    // cache used to lag until the user opened the show detail page, which
-    // caused the home screen to mis-classify shows as "Returning" right
-    // after a mark-watched (cache said caught-up while schedule said
-    // behind). The OR filter ensures we only update rows where the new
-    // episode is actually newer than what's cached.
+    // Bump shows.last_aired_* whenever the schedule reveals an episode newer
+    // than what's cached. After the centralize-shows refactor this is one
+    // write per show_id (was N writes per show_id, one per watcher). The OR
+    // filter ensures we only overwrite when the new episode is actually
+    // newer — cron runs against the same airdates can no-op cleanly.
+    //
+    // Also +1 the total_aired_episodes counter (My Shows progress-bar
+    // denominator). The OR filter doubles as the dedup guard: an UPDATE that
+    // matches no rows is a no-op, so re-running the same poll won't
+    // double-count. RPC needed because PostgREST .update() can't reference
+    // the row's existing column value.
     for (const ep of episodes) {
-      await supabase
-        .from('user_shows')
+      const { data: updated } = await supabase
+        .from('shows')
         .update({
           last_aired_season: ep.season,
           last_aired_episode: ep.episode,
           last_aired_airdate: ep.airdate,
+          updated_at: new Date().toISOString(),
         })
         .eq('show_id', ep.show_id)
-        .eq('status', 'currently_watching')
         .or(
           `last_aired_season.is.null,` +
           `last_aired_season.lt.${ep.season},` +
           `and(last_aired_season.eq.${ep.season},last_aired_episode.lt.${ep.episode})`,
-        );
+        )
+        .select('show_id, total_aired_episodes');
+
+      if (updated && updated.length > 0 && updated[0].total_aired_episodes != null) {
+        await supabase
+          .from('shows')
+          .update({ total_aired_episodes: updated[0].total_aired_episodes + 1 })
+          .eq('show_id', ep.show_id);
+      }
     }
 
     // Find users who are watching these shows and want push notifications
@@ -98,7 +110,7 @@ Deno.serve(async (_req) => {
       // last_notified_{season,episode} is the push-dedup cursor — separate from
       // current_{season,episode} so watching progress and push state don't conflate.
       const { data: allWatchers } = await supabase
-        .from('user_shows')
+        .from('user_shows_full')
         .select('user_id, show_id, show_title, notify, last_notified_season, last_notified_episode')
         .in('show_id', showIds)
         .eq('status', 'currently_watching');
