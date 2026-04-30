@@ -104,7 +104,9 @@ export function useShowData(id: string | undefined) {
       userId,
       id,
       show.status,
-      show.nextEpisode?.airdate ?? null,
+      show.nextEpisode
+        ? { season: show.nextEpisode.season, episode: show.nextEpisode.number, airdate: show.nextEpisode.airdate }
+        : null,
       lastAired ? { season: lastAired.season, episode: lastAired.episode, airdate: lastAired.airdate } : null,
     ).catch(silentCatch('show:cacheMetadata'));
   }, [userId, id, show]);

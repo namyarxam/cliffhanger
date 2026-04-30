@@ -28,6 +28,8 @@ interface TVMazeShowResponse {
   status?: string;
   _embedded?: {
     nextepisode?: {
+      season?: number;
+      number?: number;
       airdate?: string;
     };
   };
@@ -78,7 +80,10 @@ Deno.serve(async (_req) => {
           failed++;
         } else {
           const data: TVMazeShowResponse = await res.json();
-          const nextAirdate = data._embedded?.nextepisode?.airdate ?? null;
+          const nextEp = data._embedded?.nextepisode;
+          const nextAirdate = nextEp?.airdate ?? null;
+          const nextSeason = nextEp?.season ?? null;
+          const nextEpisode = nextEp?.number ?? null;
           const status = data.status ?? null;
 
           // Hiatus → returning: TVMaze just announced a future airdate for a
@@ -90,6 +95,8 @@ Deno.serve(async (_req) => {
           const update: Record<string, unknown> = {
             show_status: status,
             next_episode_airdate: nextAirdate,
+            next_episode_season: nextSeason,
+            next_episode_episode: nextEpisode,
           };
           if (isReturnAnnouncement) {
             update.returning_announced_at = new Date().toISOString();

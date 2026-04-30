@@ -43,20 +43,45 @@ function sortTitle(t: string): string {
 }
 
 // Sub-groups within Currently Watching, in render order.
-//   behind:    aired episodes the user hasn't watched yet (action zone)
-//   returning: caught up, TVMaze has a future airdate (sorted asc by date)
-//   hiatus:    caught up, TVMaze status is "Running" but no scheduled return
-//              (also the fallback bucket for legacy rows with NULL show_status)
-//   ended:     caught up, TVMaze status is "Ended" — gets a soft "move to
-//              Watched?" nudge on the row
-type CWGroup = 'behind' | 'returning' | 'hiatus' | 'ended';
+//   watching:  actively airing right now — either user is behind on aired
+//              episodes, or they're caught up and the next episode is within
+//              the active-airing window (~14 days). Mid-season state.
+//   returning: caught up, next episode is further out (between seasons).
+//   hiatus:    not currently airing, no scheduled return. Also the fallback
+//              bucket for legacy rows with NULL show_status.
+//   ended:     TVMaze status is "Ended" — gets a soft "move to Watched?" nudge.
+type CWGroup = 'watching' | 'returning' | 'hiatus' | 'ended';
 
 const CW_GROUP_TITLES: Record<CWGroup, string> = {
-  behind: 'Behind',
+  watching: 'Watching',
   returning: 'Returning',
   hiatus: 'On Hiatus',
   ended: 'Series Ended',
 };
+
+// Premiere detection. The fingerprint of a season premiere:
+//   - Day-of: last aired episode IS E1 of a season newer than user's current.
+//             Means cron just bumped last_aired to today's premiere.
+//   - Upcoming: caught up, next future episode is E1 of a season newer than
+//             user's current.
+// Multi-season catch-up (user on S1E4 of a 4-season show) is NOT a premiere
+// — last aired is S4Ex with x > 1, so the E1 check fails.
+function isPremiereDayState(s: UserShow): boolean {
+  return (
+    s.last_aired_season != null &&
+    s.last_aired_episode === 1 &&
+    s.last_aired_season > s.current_season
+  );
+}
+function isPremiereUpcomingState(s: UserShow): boolean {
+  return (
+    !!s.next_episode_airdate &&
+    s.show_status !== 'Ended' &&
+    s.next_episode_season != null &&
+    s.next_episode_episode === 1 &&
+    s.next_episode_season > s.current_season
+  );
+}
 
 // "Behind" has two signals:
 //   1. The schedule cron picked up an aired episode past the user's progress
@@ -72,9 +97,18 @@ function isBehindFromCache(s: UserShow): boolean {
 }
 
 function classifyCW(s: UserShow, hasNextFromSchedule: boolean): CWGroup {
-  if (hasNextFromSchedule || isBehindFromCache(s)) return 'behind';
+  const isBehind = hasNextFromSchedule || isBehindFromCache(s);
+  // Premiere day: user is "behind" by exactly E1 of a new season that just
+  // aired. Hold in Returning until they tap the premiere ✓.
+  if (isBehind && isPremiereDayState(s)) return 'returning';
+  if (isBehind) return 'watching';
   if (s.show_status === 'Ended') return 'ended';
-  if (s.next_episode_airdate) return 'returning';
+  if (s.next_episode_airdate) {
+    // Caught up + airdate: Returning if it's the upcoming-premiere of a new
+    // season; otherwise Watching (mid-season caught up, just waiting for
+    // the next regular episode).
+    return isPremiereUpcomingState(s) ? 'returning' : 'watching';
+  }
   return 'hiatus';
 }
 
@@ -219,13 +253,22 @@ export default function MyShowsScreen() {
 
   // Split currently_watching into the four sub-groups; everything else stays
   // as a single section.
-  const cwGroups: Record<CWGroup, UserShow[]> = { behind: [], returning: [], hiatus: [], ended: [] };
+  const cwGroups: Record<CWGroup, UserShow[]> = { watching: [], returning: [], hiatus: [], ended: [] };
   for (const s of shows) {
     if (s.status !== 'currently_watching') continue;
     cwGroups[classifyCW(s, nextEpisodes.has(s.show_id))].push(s);
   }
   const byTitle = (a: UserShow, b: UserShow) => sortTitle(a.show_title).localeCompare(sortTitle(b.show_title));
-  cwGroups.behind.sort(byTitle);
+  // Within Watching: behind shows surface first (need attention), sorted by
+  // title. Caught-up actively-airing shows follow, sorted by their next
+  // airdate ascending so the soonest-airing is on top.
+  cwGroups.watching.sort((a, b) => {
+    const aBehind = nextEpisodes.has(a.show_id) || isBehindFromCache(a);
+    const bBehind = nextEpisodes.has(b.show_id) || isBehindFromCache(b);
+    if (aBehind !== bBehind) return aBehind ? -1 : 1;
+    if (aBehind) return byTitle(a, b);
+    return (a.next_episode_airdate ?? '9999-12-31').localeCompare(b.next_episode_airdate ?? '9999-12-31');
+  });
   cwGroups.returning.sort((a, b) =>
     (a.next_episode_airdate ?? '9999-12-31').localeCompare(b.next_episode_airdate ?? '9999-12-31'),
   );
@@ -238,7 +281,7 @@ export default function MyShowsScreen() {
 
   const userSections = (
     [
-      { title: CW_GROUP_TITLES.behind, data: cwGroups.behind },
+      { title: CW_GROUP_TITLES.watching, data: cwGroups.watching },
       { title: CW_GROUP_TITLES.returning, data: cwGroups.returning },
       { title: CW_GROUP_TITLES.hiatus, data: cwGroups.hiatus },
       { title: CW_GROUP_TITLES.ended, data: cwGroups.ended },

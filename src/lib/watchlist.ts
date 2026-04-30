@@ -133,6 +133,8 @@ export async function addShow(
   metadata?: {
     showStatus: string | null;
     nextEpisodeAirdate: string | null;
+    nextEpisodeSeason: number | null;
+    nextEpisodeEpisode: number | null;
     lastAiredSeason: number | null;
     lastAiredEpisode: number | null;
     lastAiredAirdate: string | null;
@@ -167,6 +169,8 @@ export async function addShow(
       show_network: network,
       show_status: metadata?.showStatus ?? null,
       next_episode_airdate: metadata?.nextEpisodeAirdate ?? null,
+      next_episode_season: metadata?.nextEpisodeSeason ?? null,
+      next_episode_episode: metadata?.nextEpisodeEpisode ?? null,
       last_aired_season: metadata?.lastAiredSeason ?? null,
       last_aired_episode: metadata?.lastAiredEpisode ?? null,
       last_aired_airdate: metadata?.lastAiredAirdate ?? null,
@@ -190,14 +194,16 @@ export async function cacheShowMetadata(
   userId: string,
   showId: string,
   showStatus: string | null,
-  nextEpisodeAirdate: string | null,
+  nextEpisode: { season: number; episode: number; airdate: string | null } | null,
   lastAired: { season: number; episode: number; airdate: string | null } | null,
 ): Promise<void> {
   await supabase
     .from('user_shows')
     .update({
       show_status: showStatus,
-      next_episode_airdate: nextEpisodeAirdate,
+      next_episode_airdate: nextEpisode?.airdate ?? null,
+      next_episode_season: nextEpisode?.season ?? null,
+      next_episode_episode: nextEpisode?.episode ?? null,
       last_aired_season: lastAired?.season ?? null,
       last_aired_episode: lastAired?.episode ?? null,
       last_aired_airdate: lastAired?.airdate ?? null,
