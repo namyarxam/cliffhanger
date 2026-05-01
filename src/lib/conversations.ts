@@ -68,10 +68,12 @@ export async function createConversation(
     .insert({ conversation_id: data.id, user_id: userId });
 
   if (memberIds.length === 1 && !showId) {
-    // DM: add the other person directly as a member (no invite needed)
-    await supabase
+    // DM: add the other person directly as a member (no invite needed).
+    // Allowed by the "creator can add friend members" policy in migration 039.
+    const { error: addError } = await supabase
       .from('conversation_members')
       .insert({ conversation_id: data.id, user_id: memberIds[0] });
+    if (addError) throw addError;
   } else if (memberIds.length > 0) {
     // Group: send invites to all selected friends
     const invites = memberIds.map(friendId => ({

@@ -8,6 +8,7 @@ import {
   Pressable,
   StyleSheet,
   ActivityIndicator,
+  Keyboard,
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { Image } from 'expo-image';
@@ -33,6 +34,7 @@ export default function SearchScreen() {
   const [query, setQuery] = useState('');
   const [popular, setPopular] = useState<PopularShow[]>([]);
   const [loadingPopular, setLoadingPopular] = useState(true);
+  const [isFocused, setIsFocused] = useState(false);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
@@ -72,6 +74,14 @@ export default function SearchScreen() {
     router.push(`/show/${id}?from=/search`);
   }, [router]);
 
+  const handleCancel = useCallback(() => {
+    Keyboard.dismiss();
+    setQuery('');
+    setResults([]);
+    setError(null);
+    if (debounceRef.current) clearTimeout(debounceRef.current);
+  }, []);
+
   const renderItem = useCallback(({ item }: { item: ShowSummary }) => (
     <ShowCard show={item} onPress={handlePress} />
   ), [handlePress]);
@@ -82,18 +92,26 @@ export default function SearchScreen() {
     <View style={styles.container}>
       <View style={styles.searchBar}>
         <TextInput
-          style={styles.searchInput}
+          style={[styles.searchInput, (isFocused || query.length > 0) && styles.searchInputActive]}
           placeholder="Search TV shows..."
           placeholderTextColor={theme.textFaint}
           value={query}
           onChangeText={handleSearch}
+          onFocus={() => setIsFocused(true)}
+          onBlur={() => setIsFocused(false)}
           autoCorrect={false}
+          returnKeyType="search"
           clearButtonMode="while-editing"
         />
+        {(isFocused || query.length > 0) && (
+          <Pressable onPress={handleCancel} hitSlop={8} style={styles.cancelButton}>
+            <Text style={styles.cancelText}>Cancel</Text>
+          </Pressable>
+        )}
       </View>
 
       {showPopular && (
-        <ScrollView style={styles.popularSection} contentContainerStyle={styles.popularContent}>
+        <ScrollView style={styles.popularSection} contentContainerStyle={styles.popularContent} keyboardDismissMode="on-drag" keyboardShouldPersistTaps="handled">
           <Text style={styles.popularTitle}>Popular with Friends</Text>
           {popular.map(show => (
             <Pressable
@@ -179,12 +197,16 @@ const createStyles = (theme: Theme) => StyleSheet.create({
     textAlign: 'center',
   },
   searchBar: {
+    flexDirection: 'row',
+    alignItems: 'center',
     paddingHorizontal: 16,
     paddingVertical: 12,
     borderBottomWidth: 1,
     borderBottomColor: theme.border,
+    gap: 12,
   },
   searchInput: {
+    flex: 1,
     backgroundColor: theme.bgCard,
     borderRadius: 10,
     padding: 12,
@@ -193,6 +215,17 @@ const createStyles = (theme: Theme) => StyleSheet.create({
     color: theme.text,
     borderWidth: 1,
     borderColor: theme.border,
+  },
+  searchInputActive: {
+    borderColor: theme.accent,
+  },
+  cancelButton: {
+    paddingVertical: 6,
+  },
+  cancelText: {
+    color: theme.accent,
+    fontFamily: 'DMSans_600SemiBold',
+    fontSize: 15,
   },
   list: {
     paddingBottom: 20,

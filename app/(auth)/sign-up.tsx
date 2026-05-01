@@ -24,7 +24,6 @@ export default function SignUpScreen() {
   const styles = useMemo(() => createStyles(theme), [theme]);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [displayName, setDisplayName] = useState('');
   const [username, setUsername] = useState('');
   const [loading, setLoading] = useState(false);
   const [awaitingConfirmation, setAwaitingConfirmation] = useState(false);
@@ -39,10 +38,6 @@ export default function SignUpScreen() {
       Alert.alert('Invalid username', 'Username must be between 3 and 24 characters.');
       return;
     }
-    if (displayName.length > 40) {
-      Alert.alert('Display name too long', 'Display name must be 40 characters or fewer.');
-      return;
-    }
 
     setLoading(true);
     const { data, error } = await supabase.auth.signUp({
@@ -50,7 +45,7 @@ export default function SignUpScreen() {
       password,
       options: {
         data: {
-          display_name: displayName || username,
+          display_name: username,
           username: username.toLowerCase().replace(/[^a-z0-9_]/g, ''),
         },
         emailRedirectTo: 'https://namyarxam.github.io/cliffhanger-docs/confirmed',
@@ -123,16 +118,6 @@ export default function SignUpScreen() {
           autoCapitalize="none"
           autoComplete="username-new"
           maxLength={24}
-        />
-
-        <TextInput
-          style={styles.input}
-          placeholder="Display name"
-          placeholderTextColor={theme.textFaint}
-          value={displayName}
-          onChangeText={setDisplayName}
-          autoComplete="name"
-          maxLength={40}
         />
 
         <TextInput

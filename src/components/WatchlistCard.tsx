@@ -159,12 +159,18 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, 
   //   - Returning, premiere-day → mark E1 of the new season (flips engagement,
   //     show jumps to Watching on next render).
   // Both fire onMarkNext under the hood; the swipe gesture below dispatches.
+  // Gated on onMarkNext so read-only contexts (friend profiles) don't show
+  // an interactive-looking row that no-ops on tap/swipe.
   const isSingleCatchup =
-    show.status === 'currently_watching' && (isPremiereDay || (isSingleBehind && !!nextEpisode));
+    !!onMarkNext &&
+    show.status === 'currently_watching' &&
+    (isPremiereDay || (isSingleBehind && !!nextEpisode));
   // Long-press surfaces the catch-up modal whenever there's anything to catch
   // up to. Lets the user pick an exact episode rather than the one-tap default.
   const hasCatchup =
-    show.status === 'currently_watching' && (isSingleCatchup || isMultiBehind || isCrossSeasonBehind);
+    !!onCatchUp &&
+    show.status === 'currently_watching' &&
+    (isSingleCatchup || isMultiBehind || isCrossSeasonBehind);
 
   const fireSingleCatchup = () => {
     if (isPremiereDay && show.next_episode_season != null && show.next_episode_episode != null) {
@@ -183,6 +189,15 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, 
     () =>
       isSingleCatchup
         ? PanResponder.create({
+            // Don't claim plain taps — they should still navigate to the show.
+            onStartShouldSetPanResponderCapture: () => false,
+            // Capture-phase claim: fires top-down before the SectionList's
+            // scroll recognizer engages. Only fires on a strongly horizontal
+            // motion (dy < dx/2) so genuine vertical scrolls still pass
+            // through. Lower dx threshold (6 vs 8) lets us preempt native
+            // scroll, which engages on smaller deltas than JS PanResponder.
+            onMoveShouldSetPanResponderCapture: (_, g) =>
+              g.dx > 6 && Math.abs(g.dy) * 2 < g.dx,
             onMoveShouldSetPanResponder: (_, g) => g.dx > 8 && Math.abs(g.dy) < Math.abs(g.dx),
             onPanResponderGrant: () => {
               armed.current = false;
@@ -294,13 +309,13 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, 
   // gesture (single) and long-press (modal). What remains: the "Done?" nudge
   // for ended shows, and the rating circle for watched shows.
   const actionPill = (() => {
-    if (show.status === 'currently_watching' && !hasNext && isEnded) {
+    if (onMarkWatched && show.status === 'currently_watching' && !hasNext && isEnded) {
       return (
         <Pressable
           style={({ pressed }) => [styles.endedNudge, pressed && { opacity: 0.6 }]}
           onPress={(e) => {
             e.stopPropagation();
-            onMarkWatched?.(show.show_id);
+            onMarkWatched(show.show_id);
           }}
           hitSlop={6}
         >

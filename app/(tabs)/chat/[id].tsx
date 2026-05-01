@@ -316,25 +316,28 @@ export default function ChatDetailScreen() {
         {/* Header */}
         <View style={styles.header}>
           <View style={styles.headerTop}>
-            {hasShow && conversation.show_image ? (
-              <View style={styles.headerPosterWrap}>
-                <Image source={{ uri: conversation.show_image }} style={styles.headerPoster} contentFit="cover" />
-              </View>
-            ) : isDM && otherMembers.length > 0 ? (
-              otherMembers[0].avatar_url ? (
-                <Image source={{ uri: otherMembers[0].avatar_url }} style={styles.headerAvatarImage} contentFit="cover" />
-              ) : (
-                <View style={styles.headerAvatar}>
-                  <Text style={styles.headerAvatarText}>{(otherMembers[0].display_name[0] || '?').toUpperCase()}</Text>
+            <Pressable style={({ pressed }) => [styles.headerBackArea, pressed && { opacity: 0.5 }]} onPress={() => router.back()} hitSlop={{ top: 8, bottom: 8 }}>
+              <FontAwesome name="chevron-left" size={20} color={theme.textDim} />
+              {hasShow && conversation.show_image ? (
+                <View style={styles.headerPosterWrap}>
+                  <Image source={{ uri: conversation.show_image }} style={styles.headerPoster} contentFit="cover" />
                 </View>
-              )
-            ) : null}
-            <View style={styles.headerInfo}>
-              <Text style={styles.headerName} numberOfLines={1}>{displayName}</Text>
-              {hasShow && conversation.show_title && (
-                <Text style={styles.headerShowTitle}>{conversation.show_title}</Text>
-              )}
-            </View>
+              ) : isDM && otherMembers.length > 0 ? (
+                otherMembers[0].avatar_url ? (
+                  <Image source={{ uri: otherMembers[0].avatar_url }} style={styles.headerAvatarImage} contentFit="cover" />
+                ) : (
+                  <View style={styles.headerAvatar}>
+                    <Text style={styles.headerAvatarText}>{(otherMembers[0].display_name[0] || '?').toUpperCase()}</Text>
+                  </View>
+                )
+              ) : null}
+              <View style={styles.headerInfo}>
+                <Text style={styles.headerName} numberOfLines={1}>{displayName}</Text>
+                {hasShow && conversation.show_title && (
+                  <Text style={styles.headerShowTitle}>{conversation.show_title}</Text>
+                )}
+              </View>
+            </Pressable>
             {!isDM && (
               <Pressable style={({ pressed }) => [styles.inviteButton, pressed && { opacity: 0.7 }]} onPress={handleOpenInviteModal}>
                 <Text style={styles.inviteButtonText}>Invite</Text>
@@ -617,6 +620,7 @@ const createStyles = (theme: Theme) => StyleSheet.create({
   // Header
   header: { borderBottomWidth: 1, borderBottomColor: theme.border, paddingBottom: 12 },
   headerTop: { flexDirection: 'row', alignItems: 'center', paddingHorizontal: 16, paddingTop: 12, gap: 12 },
+  headerBackArea: { flex: 1, flexDirection: 'row', alignItems: 'center', gap: 12, paddingVertical: 4 },
   headerPosterWrap: { width: 40, height: 56, borderRadius: 4, overflow: 'hidden' },
   headerPoster: { width: '100%', height: '100%' },
   headerAvatar: { width: 40, height: 40, borderRadius: 20, backgroundColor: theme.bgCard, borderWidth: 1, borderColor: theme.border, alignItems: 'center', justifyContent: 'center' },
