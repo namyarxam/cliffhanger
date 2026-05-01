@@ -4,6 +4,7 @@ import { Session, User } from '@supabase/supabase-js';
 import * as Sentry from '@sentry/react-native';
 import { supabase } from '@/src/lib/supabase';
 import { silentCatch } from '@/src/lib/errorLog';
+import { withTimeout } from '@/src/lib/network';
 import type { UserProfile } from '@/src/lib/types';
 
 interface AuthState {
@@ -42,14 +43,19 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   // it again kicks off fresh network calls regardless of whether a previous
   // attempt is still pending. AuthGate uses it to recover from wedged-loading
   // states (e.g. dead fetch promises after iOS background/resume).
+  //
+  // Both inner awaits are wrapped in withTimeout so a hung supabase-js promise
+  // chain (lock-acquisition stall, AsyncStorage hang, internal refresh retry
+  // loop) can't trap the spinner forever. On timeout, the catch flips loading
+  // off and AuthGate routes the user to /sign-in — better than infinite spin.
   async function retryAuth() {
     setLoading(true);
     try {
-      const { data: { session: s } } = await supabase.auth.getSession();
+      const { data: { session: s } } = await withTimeout(supabase.auth.getSession(), 3000);
       setSession(s);
       if (s?.user) {
         Sentry.setUser({ id: s.user.id, email: s.user.email });
-        await fetchProfile(s.user.id);
+        await withTimeout(fetchProfile(s.user.id), 5000);
       } else {
         Sentry.setUser(null);
         setLoading(false);
@@ -63,13 +69,22 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     retryAuth();
 
-    // Listen for auth changes (sign in, sign out, token refresh)
+    // Listen for auth changes (sign in, sign out, token refresh).
+    // INITIAL_SESSION fires once on subscribe with whatever's persisted —
+    // this is the path that usually hydrates the cold-launch session.
+    // fetchProfile is timeout-wrapped for the same reason as retryAuth:
+    // a hung profile query can't trap loading=true forever.
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
       async (_event, session) => {
         setSession(session);
         if (session?.user) {
           Sentry.setUser({ id: session.user.id, email: session.user.email });
-          await fetchProfile(session.user.id);
+          try {
+            await withTimeout(fetchProfile(session.user.id), 5000);
+          } catch (e) {
+            silentCatch('auth:onAuthStateChange')(e);
+            setLoading(false);
+          }
         } else {
           Sentry.setUser(null);
           setProfile(null);
