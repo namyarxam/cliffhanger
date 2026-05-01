@@ -118,6 +118,10 @@ function EpisodePicker({
         const isWatched = watchedEps.has(key);
         const isFuture = ep.airdate ? ep.airdate > today : false;
         const isExpanded = expandedEpisode === ep.number;
+        // Tapping the episode that equals current progress regresses by one
+        // (handled in useShowActions). Reflect that in the button label so
+        // users know the tap will roll back instead of re-marking.
+        const isCurrent = activeSeason.number === currentSeason && ep.number === currentEpisode;
 
         return (
           <View key={ep.number}>
@@ -200,7 +204,11 @@ function EpisodePicker({
                       styles.markButtonText,
                       isWatched && styles.markButtonTextWatched,
                     ]}>
-                      {isWatched ? 'Watched up to here' : 'Mark watched up to here'}
+                      {isCurrent && isWatched
+                        ? 'Unwatch this episode'
+                        : isWatched
+                          ? 'Watched up to here'
+                          : 'Mark watched up to here'}
                     </Text>
                   </Pressable>
                 )}

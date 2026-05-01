@@ -160,32 +160,54 @@ export default function ShowDetailScreen() {
             <FontAwesome name="chevron-left" size={16} color={theme.accent} />
             <Text style={styles.backText}>Back</Text>
           </Pressable>
-          {userShow && (
-            <Pressable
-              style={({ pressed }) => [
-                styles.topBarAction,
-                userShow.status === 'dropped' && styles.topBarActionDropped,
-                pressed && { opacity: 0.7 },
-              ]}
-              onPress={() => {
-                Haptics.impactAsync(
-                  userShow.status === 'dropped'
-                    ? Haptics.ImpactFeedbackStyle.Light
-                    : Haptics.ImpactFeedbackStyle.Medium
-                );
+          <Pressable
+            style={({ pressed }) => [
+              styles.topBarAction,
+              userShow?.status === 'dropped' && styles.topBarActionDropped,
+              pressed && { opacity: 0.7 },
+            ]}
+            onPress={() => {
+              const isDropped = userShow?.status === 'dropped';
+              Haptics.impactAsync(
+                isDropped
+                  ? Haptics.ImpactFeedbackStyle.Light
+                  : Haptics.ImpactFeedbackStyle.Medium
+              );
+              // Already dropped → re-tap = un-track (existing "Remove from
+              // list?" alert via handleStatusChange's same-status branch).
+              if (isDropped) {
                 actions.handleStatusChange('dropped');
-              }}
-            >
-              <FontAwesome
-                name="ban"
-                size={15}
-                color={userShow.status === 'dropped' ? '#fff' : 'rgba(239,68,68,0.5)'}
-              />
-              {userShow.status === 'dropped' && (
-                <Text style={styles.topBarActionDroppedText}>Dropped</Text>
-              )}
-            </Pressable>
-          )}
+                return;
+              }
+              // Not dropped (untracked, or in any other status) → confirm
+              // with explainer so users understand the side effect on
+              // explore carousels.
+              Alert.alert(
+                'Not interested?',
+                "Dropping tells us you're not into this show. It'll be added to your Dropped list in your profile.",
+                [
+                  { text: 'Cancel', style: 'cancel' },
+                  {
+                    text: 'Drop',
+                    style: 'destructive',
+                    onPress: () => {
+                      if (userShow) actions.handleStatusChange('dropped');
+                      else actions.handleAddWithStatus('dropped');
+                    },
+                  },
+                ],
+              );
+            }}
+          >
+            <FontAwesome
+              name="ban"
+              size={15}
+              color={userShow?.status === 'dropped' ? '#fff' : 'rgba(239,68,68,0.5)'}
+            />
+            {userShow?.status === 'dropped' && (
+              <Text style={styles.topBarActionDroppedText}>Dropped</Text>
+            )}
+          </Pressable>
         </View>
 
         {/* Hero: Poster + Info */}
@@ -294,17 +316,34 @@ export default function ShowDetailScreen() {
           <View style={styles.statusRow}>
             {STATUSES.map(s => {
               const isActive = userShow?.status === s;
+              // Watched only makes sense once the show is finished. TVMaze
+              // marks completed shows as "Ended"; anything else (Running,
+              // To Be Determined, In Development, null) is still ongoing.
+              // Disable + relabel "Ongoing" so users don't mark it Watched
+              // when they really mean "caught up on what's aired so far".
+              const isOngoingWatched = s === 'watched' && show.status !== 'Ended';
+              const label = isOngoingWatched ? 'Airing' : STATUS_LABELS[s];
+              const iconName = isOngoingWatched ? 'clock-o' : STATUS_ICONS[s];
               // Empty state pills are solid accent, so icon/text needs bright contrast.
-              const iconColor = !userShow || isActive ? theme.textBright : theme.textDim;
+              // Airing/disabled forces a faint grey regardless of empty/active state.
+              // Paper theme's textBright is dark slate which collapses against the
+              // dark-blue accent — force white there specifically.
+              const isLightTheme = theme.statusBarStyle === 'dark';
+              const onAccent = isLightTheme ? '#fff' : theme.textBright;
+              const iconColor = isOngoingWatched
+                ? theme.textFaint
+                : !userShow || isActive ? onAccent : theme.textDim;
               return (
                 <Pressable
                   key={s}
+                  disabled={isOngoingWatched}
                   style={({ pressed }) => [
                     styles.statusPill,
                     !userShow && styles.statusPillEmpty,
                     userShow && !isActive && styles.statusPillInactive,
                     isActive && styles.statusPillActive,
                     pressed && !isActive && styles.statusPillPressed,
+                    isOngoingWatched && styles.statusPillDisabled,
                   ]}
                   onPress={() => {
                     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
@@ -312,13 +351,15 @@ export default function ShowDetailScreen() {
                     else actions.handleAddWithStatus(s);
                   }}
                 >
-                  <FontAwesome name={STATUS_ICONS[s]} size={13} color={iconColor} />
+                  <FontAwesome name={iconName} size={13} color={iconColor} />
                   <Text style={[
                     styles.statusPillText,
                     !userShow && styles.statusPillTextEmpty,
                     isActive && styles.statusPillTextActive,
+                    isOngoingWatched && styles.statusPillTextDisabled,
+                    isLightTheme && (!userShow || isActive) && !isOngoingWatched && { color: '#fff' },
                   ]}>
-                    {STATUS_LABELS[s]}
+                    {label}
                   </Text>
                 </Pressable>
               );
@@ -794,6 +835,15 @@ const createStyles = (theme: Theme) => StyleSheet.create({
   },
   statusPillActive: {
     backgroundColor: theme.accent,
+  },
+  statusPillDisabled: {
+    // "Airing" treatment — present and informative, but not actionable.
+    // Solid grey instead of opacity-dimmed so it reads as disabled rather
+    // than just visually muted next to the orange empty/active pills.
+    backgroundColor: 'rgba(255,255,255,0.04)',
+  },
+  statusPillTextDisabled: {
+    color: 'rgba(255,255,255,0.4)',
   },
   catchUpRow: {
     flexDirection: 'row',

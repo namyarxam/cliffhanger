@@ -536,7 +536,11 @@ const createStyles = (theme: Theme) => StyleSheet.create({
   },
   progressFill: {
     height: '100%',
-    backgroundColor: theme.accent,
+    // Paper's dark-blue accent washes out against many poster backdrops, and
+    // white fails on light posters. Brick red is saturated enough to read on
+    // both, and stays editorial-feeling against the cream theme. Scoped to
+    // paper only — other themes keep their accent fill.
+    backgroundColor: theme.statusBarStyle === 'dark' ? '#B83A2A' : theme.accent,
   },
   info: {
     flex: 1,

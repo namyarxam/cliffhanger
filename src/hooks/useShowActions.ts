@@ -13,7 +13,21 @@ import {
 } from '@/src/lib/watchlist';
 import { addListItem, removeListItem } from '@/src/lib/lists';
 import { silentCatch } from '@/src/lib/errorLog';
-import type { ShowFull, WatchStatus, UserShow } from '@/src/lib/types';
+import type { ShowFull, Season, WatchStatus, UserShow } from '@/src/lib/types';
+
+// Walk back one episode within a season, or to the last episode of the prior
+// season. Returns null when the input is the very first episode of the show.
+function getPreviousEpisode(
+  seasons: Season[],
+  season: number,
+  episode: number,
+): { season: number; episode: number } | null {
+  if (episode > 1) return { season, episode: episode - 1 };
+  const prev = seasons.find(s => s.number === season - 1);
+  if (!prev || prev.episodes.length === 0) return null;
+  const last = prev.episodes[prev.episodes.length - 1];
+  return { season: prev.number, episode: last.number };
+}
 
 interface ShowActionsDeps {
   userId: string | undefined;
@@ -205,6 +219,35 @@ export function useShowActions(deps: ShowActionsDeps) {
 
   const handleEpisodeTap = useCallback(async (season: number, episode: number) => {
     if (!userId || !id || !show) return;
+
+    // Tapping the currently-selected episode regresses by one. Lets users
+    // undo a misclick or course-correct without hunting for the previous
+    // dot. S1E1 → clears all progress (current goes to 0/0); the show stays
+    // in currently_watching with no episodes marked.
+    if (
+      userShow &&
+      userShow.current_season === season &&
+      userShow.current_episode === episode
+    ) {
+      const target = getPreviousEpisode(show.seasons, season, episode) ?? { season: 0, episode: 0 };
+      setWatchedEps(buildEpisodeSet(show.seasons, target.season, target.episode));
+      try {
+        const newSet = await markExactlyUpTo(userId, id, target.season, target.episode, show.seasons);
+        setWatchedEps(newSet);
+        const lastAired = getLastAiredEpisode(show.seasons);
+        const tapCaughtUp = lastAired != null && target.season === lastAired.season && target.episode === lastAired.episode;
+        setUserShow(prev => prev ? {
+          ...prev,
+          status: 'currently_watching',
+          current_season: target.season,
+          current_episode: target.episode,
+          caught_up: tapCaughtUp,
+        } : null);
+      } catch {
+        refetchWatchedEps();
+      }
+      return;
+    }
 
     // Auto-add to watchlist if not already added
     if (!userShow) {
