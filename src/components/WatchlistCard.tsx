@@ -49,6 +49,13 @@ interface Props {
   hidePosters?: boolean;
   airsToday?: boolean;
   watchedCount?: number;
+  // Friend-profile / list-display reads. Strips the row to title + poster +
+  // rating only — no catch-up subtext, no progress bar, no TODAY pill. The
+  // interactive affordances (Done? pill, swipe, long-press) are already
+  // separately gated on their callbacks, but the visual flair has its own
+  // gate here so a passive viewer doesn't see "behind" / "Next ep in 3d"
+  // copy that only makes sense on your own list.
+  readOnly?: boolean;
 }
 
 const NEW_WINDOW_MS = 7 * 24 * 60 * 60 * 1000;
@@ -60,7 +67,7 @@ function isAiredRecently(airdate: string | null): boolean {
   return diff >= 0 && diff <= NEW_WINDOW_MS;
 }
 
-function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, onCatchUp, leftAccessory, hidePosters, airsToday, watchedCount }: Props) {
+function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, onCatchUp, leftAccessory, hidePosters, airsToday, watchedCount, readOnly }: Props) {
   const theme = useTheme();
   const styles = useMemo(() => createStyles(theme), [theme]);
   const dragX = useRef(new Animated.Value(0)).current;
@@ -77,7 +84,7 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, 
     armed.current = false;
   }, [show.show_id, dragX]);
   const hasNext = !!nextEpisode && show.status === 'currently_watching';
-  const showToday = airsToday && show.status === 'currently_watching';
+  const showToday = !readOnly && airsToday && show.status === 'currently_watching';
   const isEnded = show.status === 'currently_watching' && !hasNext && show.show_status === 'Ended';
   const isNewEpisode = hasNext && isAiredRecently(nextEpisode?.airdate ?? null);
 
@@ -129,6 +136,7 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, 
   // Returning) also skip — their progress through the upcoming season is
   // 0 until they engage.
   const showProgress =
+    !readOnly &&
     show.status === 'currently_watching' &&
     !isPremiereDay &&
     !isPremiereUpcoming &&
@@ -258,7 +266,19 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, 
   // accent treatment so the row reads as a moment, not a generic Returning
   // card. Single-behind keeps the "NEW · S5 E5" copy. Everything else is
   // dim metadata.
+  //
+  // All catch-up-flavored subtexts (Catch up, N behind, NEW · S5 E5, premiere
+  // banners, mid-season "Next episode in") are gated on currently_watching.
+  // The underlying behind-state derivations are pure season/episode math —
+  // a Watched or Watchlist show whose last_aired_season is past the user's
+  // current_season would otherwise render "Catch up" forever.
   const subtext = (() => {
+    if (readOnly) return null;
+    if (show.status === 'want_to_watch' && show.show_network) {
+      return <Text style={styles.subtext} numberOfLines={1}>{show.show_network}</Text>;
+    }
+    if (show.status !== 'currently_watching') return null;
+
     if (isPremiereDay) {
       return (
         <Text style={styles.subtext} numberOfLines={1}>
@@ -297,9 +317,6 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, 
           {formatNextEpisodeIn(show.next_episode_airdate)}
         </Text>
       );
-    }
-    if (show.status === 'want_to_watch' && show.show_network) {
-      return <Text style={styles.subtext} numberOfLines={1}>{show.show_network}</Text>;
     }
     return null;
   })();
@@ -448,6 +465,7 @@ function areEqual(prev: Props, next: Props): boolean {
   if (prev.hidePosters !== next.hidePosters) return false;
   if (prev.isCaughtUp !== next.isCaughtUp) return false;
   if (prev.leftAccessory !== next.leftAccessory) return false;
+  if (prev.readOnly !== next.readOnly) return false;
   // Function props: assumed stable via useCallback in parent. If a parent
   // ever passes a fresh function each render, that'd silently nerf this
   // memo — flag it during code review.
