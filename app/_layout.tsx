@@ -1,15 +1,16 @@
 import { useEffect } from 'react';
-import { View, ActivityIndicator, Linking } from 'react-native';
+import { Linking } from 'react-native';
 import { Stack, useRouter, useSegments } from 'expo-router';
 import { useFonts, DMSans_400Regular, DMSans_500Medium, DMSans_600SemiBold, DMSans_700Bold } from '@expo-google-fonts/dm-sans';
 import { StatusBar } from 'expo-status-bar';
 import * as SplashScreen from 'expo-splash-screen';
 import * as Sentry from '@sentry/react-native';
 import { AuthProvider, useAuth } from '@/src/providers/AuthProvider';
-import { ThemeProvider, useTheme, useThemeControl } from '@/src/providers/ThemeProvider';
+import { ThemeProvider, useThemeControl } from '@/src/providers/ThemeProvider';
 import { THEMES, type ThemeName } from '@/src/lib/theme';
 import { supabase } from '@/src/lib/supabase';
 import { silentCatch } from '@/src/lib/errorLog';
+import LoaderFlavor from '@/src/components/LoaderFlavor';
 
 export { ErrorBoundary } from 'expo-router';
 
@@ -59,7 +60,6 @@ function AuthGate() {
   const { session, profile, loading, retryAuth } = useAuth();
   const segments = useSegments();
   const router = useRouter();
-  const theme = useTheme();
   const { themeName, setThemeName } = useThemeControl();
 
   // Silent auto-recovery for wedged loading. iOS sometimes leaves fetch
@@ -113,11 +113,7 @@ function AuthGate() {
   }, [session, loading, segments]);
 
   if (loading) {
-    return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: theme.bg }}>
-        <ActivityIndicator color={theme.accent} size="large" />
-      </View>
-    );
+    return <LoaderFlavor />;
   }
 
   return (

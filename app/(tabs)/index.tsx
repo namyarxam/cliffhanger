@@ -22,6 +22,7 @@ import EpisodeCatchUpSheet from '@/src/components/EpisodeCatchUpSheet';
 import ReturnAnnouncementCard from '@/src/components/ReturnAnnouncementCard';
 import TopShowsRow from '@/src/components/TopShowsRow';
 import PopularWithFriendsRow from '@/src/components/PopularWithFriendsRow';
+import LoaderFlavor, { SHELF_MESSAGES } from '@/src/components/LoaderFlavor';
 import type { UserShow, ListWithItems } from '@/src/lib/types';
 import { silentCatch } from '@/src/lib/errorLog';
 
@@ -396,11 +397,7 @@ export default function MyShowsScreen() {
   [nextEpisodes]);
 
   if (loading) {
-    return (
-      <View style={styles.center}>
-        <ActivityIndicator color={theme.accent} size="large" />
-      </View>
-    );
+    return <LoaderFlavor messages={SHELF_MESSAGES} />;
   }
 
   if (shows.length === 0) {
