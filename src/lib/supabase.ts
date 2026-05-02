@@ -5,12 +5,20 @@ import { timeoutFetch } from './network';
 const supabaseUrl = process.env.EXPO_PUBLIC_SUPABASE_URL!;
 const supabaseAnonKey = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY!;
 
+// Exported so AuthProvider can read the persisted session DIRECTLY from
+// AsyncStorage on cold launch — bypassing auth-js's `initializePromise`
+// which gets memoized as dead if the iOS sandbox-migration AsyncStorage
+// read stalls during a fresh app update. Whatever value auth-js writes
+// here is the same value we'll read out.
+export const SUPABASE_STORAGE_KEY = `sb-${new URL(supabaseUrl).hostname.split('.')[0]}-auth-token`;
+
 // AsyncStorage adapter for persisting auth sessions on the device.
 // This is the React Native equivalent of localStorage — your login
 // session survives app restarts.
 export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
   auth: {
     storage: AsyncStorage,
+    storageKey: SUPABASE_STORAGE_KEY,
     // EXPERIMENT: was true. Disabling because cold-launch hangs traced to
     // supabase-js firing an auto-refresh on createClient that holds an
     // internal auth mutex while waiting on a slow first network call —
