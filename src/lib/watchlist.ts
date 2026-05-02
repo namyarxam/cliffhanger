@@ -81,10 +81,14 @@ export async function getPopularWithFriends(userId: string, limit: number = POPU
   // on any non-data response, which let transient failures (network blips,
   // RLS hiccups, rate-limits) silently blank the carousel. fetchData's
   // allSettled wrapper catches the throw and preserves the prior state.
+  // Exclude dropped rows. A friend dropping a show is a negative signal —
+  // counting it toward "Popular with Friends" let shows trend to the top
+  // when more friends had bailed than were actually watching.
   const { data, error } = await supabase
     .from('user_shows_full')
     .select('show_id, show_title, show_image, user_id, added_at')
-    .in('user_id', friendIds);
+    .in('user_id', friendIds)
+    .neq('status', 'dropped');
 
   if (error) throw error;
   if (!data || data.length === 0) return [];
