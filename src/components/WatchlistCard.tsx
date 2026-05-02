@@ -8,10 +8,11 @@ import { getUserRatingColor } from '@/src/components/RatingSelector';
 import type { UserShow } from '@/src/lib/types';
 
 // Single-catchup swipe tuning. Threshold = commit point. Cap = max travel
-// (resistance past commit gives a rubbery "armed" feel). Both empirically
-// chosen to feel deliberate but not slow.
-const SWIPE_COMMIT_THRESHOLD = 70;
-const SWIPE_MAX_TRAVEL = 110;
+// (resistance past commit gives a rubbery "armed" feel). Tuned to feel
+// like a quick flick, not a deliberate drag — testers reported the
+// previous 70/110 felt like you had to pull the row halfway off-screen.
+const SWIPE_COMMIT_THRESHOLD = 40;
+const SWIPE_MAX_TRAVEL = 75;
 
 function daysUntil(airdate: string): number {
   const next = new Date(airdate + 'T00:00:00');

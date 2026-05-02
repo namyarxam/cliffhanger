@@ -122,6 +122,11 @@ export function useShowData(id: string | undefined) {
     getWatchedEpisodes(userId, id).then(setWatchedEps).catch(silentCatch('show:watchedEps'));
   }, [userId, id]);
 
+  const refetchUserShow = useCallback(() => {
+    if (!userId || !id) return;
+    getUserShow(userId, id).then(setUserShow).catch(silentCatch('show:userShow'));
+  }, [userId, id]);
+
   return {
     show,
     loading,
@@ -136,6 +141,7 @@ export function useShowData(id: string | undefined) {
     setListsContaining,
     friendsWatching,
     refetchWatchedEps,
+    refetchUserShow,
     refetchFriendsWatching: fetchFriendsWatching,
     refetch: fetchAll,
   };

@@ -304,20 +304,23 @@ export async function removeShow(userId: string, showId: string): Promise<void> 
 
 /**
  * Map of show_id → number of episodes the user has marked watched. Powers the
- * progress-bar numerator on the My Shows list. One round-trip for the whole
- * watchlist instead of N per-show count queries.
+ * progress-bar numerator on the My Shows list.
+ *
+ * Reads from the `user_episode_watch_counts` view (migration 041) which
+ * pre-aggregates watches via GROUP BY in Postgres. One row per show instead
+ * of one row per watched episode — payload stays small no matter how many
+ * watches a user has, and we sidestep PostgREST's default 1000-row limit
+ * that previously caused non-deterministic partial counts on heavy users.
  */
 export async function getWatchedCounts(userId: string): Promise<Map<string, number>> {
   const { data, error } = await supabase
-    .from('episode_watches')
-    .select('show_id')
+    .from('user_episode_watch_counts')
+    .select('show_id, watched_count')
     .eq('user_id', userId);
-
   if (error) throw error;
-
   const counts = new Map<string, number>();
   for (const row of data ?? []) {
-    counts.set(row.show_id, (counts.get(row.show_id) ?? 0) + 1);
+    counts.set(row.show_id, row.watched_count);
   }
   return counts;
 }

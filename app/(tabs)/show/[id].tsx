@@ -72,11 +72,18 @@ export default function ShowDetailScreen() {
     show, loading, error, userId,
     userShow, setUserShow, watchedEps, setWatchedEps,
     userLists, listsContaining, setListsContaining,
-    friendsWatching, refetchWatchedEps, refetchFriendsWatching, refetch,
+    friendsWatching, refetchWatchedEps, refetchUserShow, refetchFriendsWatching, refetch,
   } = data;
 
-  // Refetch friends watching on screen focus (picks up new friendships)
-  useFocusEffect(useCallback(() => { refetchFriendsWatching(); }, [refetchFriendsWatching]));
+  // Refetch user-specific state on screen focus. Without this, swiping to
+  // catch up on My Shows updates the DB but the cached show-detail state
+  // (userShow.current_*, watchedEps) stays at whatever it was when this
+  // screen first mounted — episode list looks stale until a hard reload.
+  useFocusEffect(useCallback(() => {
+    refetchUserShow();
+    refetchWatchedEps();
+    refetchFriendsWatching();
+  }, [refetchUserShow, refetchWatchedEps, refetchFriendsWatching]));
 
   const actions = useShowActions({
     userId, id, show, userShow,
