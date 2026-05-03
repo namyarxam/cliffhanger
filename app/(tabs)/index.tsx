@@ -69,6 +69,11 @@ const CW_GROUP_TITLES: Record<CWGroup, string> = {
 // — last aired is S4Ex with x > 1, so the E1 check fails.
 function isPremiereDayState(s: UserShow): boolean {
   return (
+    // current_season > 0 guard: premiere copy is only meaningful if the
+    // user was actually following the show. Without this, a fresh add of
+    // a long-running show (current=0, last_aired=S2E1+) trivially passes
+    // the season comparison and misfires as "PREMIERES TODAY".
+    s.current_season > 0 &&
     s.last_aired_season != null &&
     s.last_aired_episode === 1 &&
     s.last_aired_season > s.current_season
@@ -76,6 +81,7 @@ function isPremiereDayState(s: UserShow): boolean {
 }
 function isPremiereUpcomingState(s: UserShow): boolean {
   return (
+    s.current_season > 0 &&
     !!s.next_episode_airdate &&
     s.show_status !== 'Ended' &&
     s.next_episode_season != null &&

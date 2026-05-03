@@ -109,13 +109,20 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, 
   // when caught up to last_aired and the next future ep is E1 of a new
   // season. Multi-season catch-up (user on S1E4 of a S4-airing show) does
   // NOT match — last_aired_episode is > 1.
+  // current_season > 0 guard: premiere copy is only meaningful if the user
+  // was actually following the show. A fresh add of a long-running show
+  // (current=0, last_aired=S2E1+) trivially passes the season comparison
+  // and misfires as "PREMIERES TODAY" when really they just haven't
+  // engaged with the show yet.
   const isPremiereDay =
     isBehind &&
+    show.current_season > 0 &&
     show.last_aired_season != null &&
     show.last_aired_episode === 1 &&
     show.last_aired_season > show.current_season;
   const isPremiereUpcoming =
     !isBehind &&
+    show.current_season > 0 &&
     !!show.next_episode_airdate &&
     show.show_status !== 'Ended' &&
     show.next_episode_season != null &&

@@ -323,34 +323,21 @@ export default function ShowDetailScreen() {
           <View style={styles.statusRow}>
             {STATUSES.map(s => {
               const isActive = userShow?.status === s;
-              // Watched only makes sense once the show is finished. TVMaze
-              // marks completed shows as "Ended"; anything else (Running,
-              // To Be Determined, In Development, null) is still ongoing.
-              // Disable + relabel "Ongoing" so users don't mark it Watched
-              // when they really mean "caught up on what's aired so far".
-              const isOngoingWatched = s === 'watched' && show.status !== 'Ended';
-              const label = isOngoingWatched ? 'Airing' : STATUS_LABELS[s];
-              const iconName = isOngoingWatched ? 'clock-o' : STATUS_ICONS[s];
               // Empty state pills are solid accent, so icon/text needs bright contrast.
-              // Airing/disabled forces a faint grey regardless of empty/active state.
               // Paper theme's textBright is dark slate which collapses against the
               // dark-blue accent — force white there specifically.
               const isLightTheme = theme.statusBarStyle === 'dark';
               const onAccent = isLightTheme ? '#fff' : theme.textBright;
-              const iconColor = isOngoingWatched
-                ? theme.textFaint
-                : !userShow || isActive ? onAccent : theme.textDim;
+              const iconColor = !userShow || isActive ? onAccent : theme.textDim;
               return (
                 <Pressable
                   key={s}
-                  disabled={isOngoingWatched}
                   style={({ pressed }) => [
                     styles.statusPill,
                     !userShow && styles.statusPillEmpty,
                     userShow && !isActive && styles.statusPillInactive,
                     isActive && styles.statusPillActive,
                     pressed && !isActive && styles.statusPillPressed,
-                    isOngoingWatched && styles.statusPillDisabled,
                   ]}
                   onPress={() => {
                     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
@@ -358,20 +345,39 @@ export default function ShowDetailScreen() {
                     else actions.handleAddWithStatus(s);
                   }}
                 >
-                  <FontAwesome name={iconName} size={13} color={iconColor} />
+                  <FontAwesome name={STATUS_ICONS[s]} size={13} color={iconColor} />
                   <Text style={[
                     styles.statusPillText,
                     !userShow && styles.statusPillTextEmpty,
                     isActive && styles.statusPillTextActive,
-                    isOngoingWatched && styles.statusPillTextDisabled,
-                    isLightTheme && (!userShow || isActive) && !isOngoingWatched && { color: '#fff' },
+                    isLightTheme && (!userShow || isActive) && { color: '#fff' },
                   ]}>
-                    {label}
+                    {STATUS_LABELS[s]}
                   </Text>
                 </Pressable>
               );
             })}
           </View>
+
+          {/* "Did you mean Watching?" nudge — appears only after the user
+              has selected Watched on a still-airing show. Tap to switch.
+              Doesn't block the original decision; just gives a soft escape
+              hatch in case they meant Currently Watching. Hidden when the
+              show is officially Ended (no ambiguity). */}
+          {userShow?.status === 'watched' && show.status !== 'Ended' && (
+            <Pressable
+              style={({ pressed }) => [styles.stillAiringRow, pressed && { opacity: 0.7 }]}
+              onPress={() => {
+                Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+                actions.handleStatusChange('currently_watching');
+              }}
+            >
+              <FontAwesome name="info-circle" size={12} color={theme.accent} />
+              <Text style={styles.stillAiringText}>
+                Still airing — switch to Watching?
+              </Text>
+            </Pressable>
+          )}
 
           {/* Catch up / caught up — inline under pills */}
           {userShow && userShow.status === 'currently_watching' && (
@@ -843,14 +849,18 @@ const createStyles = (theme: Theme) => StyleSheet.create({
   statusPillActive: {
     backgroundColor: theme.accent,
   },
-  statusPillDisabled: {
-    // "Airing" treatment — present and informative, but not actionable.
-    // Solid grey instead of opacity-dimmed so it reads as disabled rather
-    // than just visually muted next to the orange empty/active pills.
-    backgroundColor: 'rgba(255,255,255,0.04)',
+  stillAiringRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 6,
+    marginTop: 10,
+    paddingVertical: 6,
   },
-  statusPillTextDisabled: {
-    color: 'rgba(255,255,255,0.4)',
+  stillAiringText: {
+    fontSize: 13,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.accent,
   },
   catchUpRow: {
     flexDirection: 'row',
