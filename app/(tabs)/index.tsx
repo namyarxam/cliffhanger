@@ -262,10 +262,13 @@ export default function MyShowsScreen() {
     // Optimistic update — writes directly to the cache so dependent screens
     // (show detail, etc) see the change instantly. On error, invalidate so
     // the cache refetches from server truth.
-    queryClient.setQueryData<Map<string, NextEpisode>>(['nextEpisodes', userId], prev => {
-      const next = new Map(prev ?? EMPTY_NEXT_EPISODES);
-      next.delete(showId);
-      return next;
+    // The nextEpisodes query stores `{ nextEpisodes: Map }`, not the bare Map —
+    // matching the queryFn return shape. Wrapping the bare Map in new Map()
+    // would TypeError since the object isn't iterable.
+    queryClient.setQueryData<{ nextEpisodes: Map<string, NextEpisode> }>(['nextEpisodes', userId], prev => {
+      const nextMap = new Map(prev?.nextEpisodes ?? EMPTY_NEXT_EPISODES);
+      nextMap.delete(showId);
+      return { nextEpisodes: nextMap };
     });
     queryClient.setQueryData<UserShow[]>(['userShows', userId], prev =>
       (prev ?? EMPTY_SHOWS).map(s =>
@@ -334,6 +337,11 @@ export default function MyShowsScreen() {
       // and surfaces the rating prompt.
       await updateShowStatus(userId, showId, 'watched');
       queryClient.invalidateQueries({ queryKey: ['userShows', userId] });
+      // Per-show userShow cache lives at qk.userShow(userId, showId). Without
+      // this invalidation the show-detail page rehydrates from a pre-watched
+      // cache entry, status doesn't read 'watched', and the rating prompt
+      // never appears.
+      queryClient.invalidateQueries({ queryKey: qk.userShow(userId, showId) });
       router.push(`/show/${showId}?from=/`);
     } catch (e) {
       silentCatch('myShows:markWatched')(e);
