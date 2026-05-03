@@ -1,11 +1,12 @@
 import { useEffect } from 'react';
-import { Linking } from 'react-native';
+import { AppState, Linking, Platform } from 'react-native';
+import type { AppStateStatus } from 'react-native';
 import { Stack, useRouter, useSegments } from 'expo-router';
 import { useFonts, DMSans_400Regular, DMSans_500Medium, DMSans_600SemiBold, DMSans_700Bold } from '@expo-google-fonts/dm-sans';
 import { StatusBar } from 'expo-status-bar';
 import * as SplashScreen from 'expo-splash-screen';
 import * as Sentry from '@sentry/react-native';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { QueryClient, QueryClientProvider, focusManager } from '@tanstack/react-query';
 import { AuthProvider, useAuth } from '@/src/providers/AuthProvider';
 import { ThemeProvider, useThemeControl } from '@/src/providers/ThemeProvider';
 import { THEMES, type ThemeName } from '@/src/lib/theme';
@@ -29,6 +30,21 @@ const queryClient = new QueryClient({
     },
   },
 });
+
+// TanStack Query's foreground/background detection relies on the browser
+// Page Visibility API, which doesn't exist in React Native — without this
+// bridge, focusManager treats the app as permanently focused, so options
+// like refetchIntervalInBackground:false never fire and polling queries
+// keep ticking while the app is suspended. Wire AppState into focusManager
+// once at module load so every query benefits.
+if (Platform.OS !== 'web') {
+  focusManager.setEventListener(handleFocus => {
+    const sub = AppState.addEventListener('change', (status: AppStateStatus) => {
+      handleFocus(status === 'active');
+    });
+    return () => sub.remove();
+  });
+}
 
 export { ErrorBoundary } from 'expo-router';
 

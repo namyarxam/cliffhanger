@@ -36,8 +36,9 @@ export default function SearchScreen() {
   const [isFocused, setIsFocused] = useState(false);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Shares the cache key with My Shows — when one screen invalidates
-  // popular, the other reflects it on next focus without re-fetching.
+  // Separate cache entry from My Shows because the limit differs (6 here,
+  // 25 there) and each screen wants its own ranked slice. A prefix match
+  // on ['popular', userId] still invalidates both at once when needed.
   const popularQuery = useQuery({
     queryKey: qk.popular(userId, POPULAR_SHOWS_LIMIT_DEFAULT),
     queryFn: () => getPopularWithFriends(userId!, POPULAR_SHOWS_LIMIT_DEFAULT),

@@ -10,6 +10,7 @@ import { useAuth } from '@/src/providers/AuthProvider';
 import { getPendingRequests } from '@/src/lib/friends';
 import { getPendingInviteCount } from '@/src/lib/conversations';
 import { qk } from '@/src/lib/queryKeys';
+import { silentCatch } from '@/src/lib/errorLog';
 
 const RefreshBadgeContext = createContext<() => void>(() => {});
 export const useRefreshBadge = () => useContext(RefreshBadgeContext);
@@ -29,7 +30,9 @@ export default function TabLayout() {
 
   // Polled badge counts. refetchInterval handles the foreground polling;
   // refetchIntervalInBackground=false pauses when the app backgrounds —
-  // matches the previous AppState-aware setInterval pattern, just declarative.
+  // wired up via the focusManager+AppState bridge in app/_layout.tsx,
+  // without which TanStack treats RN as permanently focused and the
+  // option is a no-op.
   const pendingRequestsCountQ = useQuery({
     queryKey: qk.pendingRequestCount(userId),
     queryFn: async () => (await getPendingRequests(userId!)).length,
@@ -46,6 +49,16 @@ export default function TabLayout() {
   });
   const pendingCount = pendingRequestsCountQ.data ?? 0;
   const chatInviteCount = chatInviteCountQ.data ?? 0;
+
+  // Forward query errors to Sentry. The pre-migration setInterval fetches
+  // ran through silentCatch on every tick; after the TanStack switch the
+  // errors became silent — bring observability back in line.
+  useEffect(() => {
+    if (pendingRequestsCountQ.error) silentCatch('tabs:pendingRequestsCount')(pendingRequestsCountQ.error);
+  }, [pendingRequestsCountQ.error]);
+  useEffect(() => {
+    if (chatInviteCountQ.error) silentCatch('tabs:chatInviteCount')(chatInviteCountQ.error);
+  }, [chatInviteCountQ.error]);
 
   // Friends/Chat screens call refreshBadge() after a mutation that should
   // immediately reflect in the tab badge — wired to invalidate so it
