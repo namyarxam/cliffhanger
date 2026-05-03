@@ -12,7 +12,7 @@ import {
   LayoutAnimation,
   Alert,
 } from 'react-native';
-import { useLocalSearchParams, useRouter, Stack } from 'expo-router';
+import { useLocalSearchParams, useRouter, Stack, useFocusEffect } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { useTheme } from '@/src/providers/ThemeProvider';
@@ -104,6 +104,18 @@ export default function UserProfileScreen() {
     setActiveTab('watchlist');
     setExpandedList(null);
   }, [id]);
+
+  // Aggressive freshness on the profile row only — display_name + avatar_url
+  // are the fields that change in-session (a friend updating their pic in
+  // the car, etc.) and the friends-list screen invalidates them on focus
+  // already. Keeping this scoped to the profile query avoids reissuing the
+  // heavier shows/lists fetches on every back-and-forth navigation.
+  useFocusEffect(
+    useCallback(() => {
+      if (!id) return;
+      queryClient.invalidateQueries({ queryKey: qk.profile(id) });
+    }, [id, queryClient]),
+  );
 
   // Default to lists tab if they only have lists and no shows
   useEffect(() => {
