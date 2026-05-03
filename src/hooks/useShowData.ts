@@ -1,4 +1,4 @@
-import { useEffect, useCallback } from 'react';
+import { useEffect, useCallback, useMemo } from 'react';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { fetchShow } from '@/src/lib/data';
 import { useAuth } from '@/src/providers/AuthProvider';
@@ -59,12 +59,13 @@ export function useShowData(id: string | undefined) {
     enabled: userEnabled && !!userShowQuery.data,
   });
 
+  // Share the cache key with profile + user/[id], which read getLists
+  // unfiltered. Filtering inside the queryFn would write filtered data
+  // into the shared cache and poison reads on the other screens — instead
+  // store the full list in cache and filter at consumption below.
   const userListsQuery = useQuery({
     queryKey: qk.lists(userId),
-    queryFn: async () => {
-      const all = await getLists(userId!);
-      return all.filter(l => l.type === 'shows');
-    },
+    queryFn: () => getLists(userId!),
     enabled: !!userId,
   });
 
@@ -191,6 +192,14 @@ export function useShowData(id: string | undefined) {
     }
   }, [queryClient, userId, id]);
 
+  // Filter at consumption (cache stores unfiltered lists shared with
+  // profile/user screens). Memoized so downstream useMemo deps stay
+  // reference-stable when the underlying lists haven't changed.
+  const showsLists = useMemo(
+    () => (userListsQuery.data ?? EMPTY_USER_LISTS).filter(l => l.type === 'shows'),
+    [userListsQuery.data],
+  );
+
   return {
     show: showQuery.data ?? null,
     loading: showQuery.isLoading,
@@ -200,7 +209,7 @@ export function useShowData(id: string | undefined) {
     setUserShow,
     watchedEps: watchedEpsQuery.data ?? EMPTY_WATCHED_EPS,
     setWatchedEps,
-    userLists: userListsQuery.data ?? EMPTY_USER_LISTS,
+    userLists: showsLists,
     listsContaining: listsContainingQuery.data ?? EMPTY_LISTS_CONTAINING,
     setListsContaining,
     friendsWatching: friendsWatchingQuery.data ?? EMPTY_FRIENDS_WATCHING,

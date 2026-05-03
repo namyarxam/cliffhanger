@@ -84,7 +84,7 @@ export default function ChatDetailScreen() {
   const conversation = conversationQ.data ?? null;
 
   const membersQ = useQuery({
-    queryKey: qk.conversationMembers(id),
+    queryKey: qk.conversationMembers(id, conversation?.show_id ?? null),
     queryFn: () => getConversationMembers(id!, conversation?.show_id ?? null),
     enabled: !!id && !!conversation,
   });
@@ -128,7 +128,10 @@ export default function ChatDetailScreen() {
   const fetchData = useCallback(() => {
     if (!id) return;
     queryClient.invalidateQueries({ queryKey: qk.conversation(id) });
-    queryClient.invalidateQueries({ queryKey: qk.conversationMembers(id) });
+    // Prefix match — invalidates every conversationMembers entry for this
+    // conversation regardless of show_id, so attach/detach paths land on
+    // fresh data.
+    queryClient.invalidateQueries({ queryKey: ['conversationMembers', id] });
     queryClient.invalidateQueries({ queryKey: qk.messages(id) });
   }, [queryClient, id]);
 
