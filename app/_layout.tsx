@@ -5,12 +5,30 @@ import { useFonts, DMSans_400Regular, DMSans_500Medium, DMSans_600SemiBold, DMSa
 import { StatusBar } from 'expo-status-bar';
 import * as SplashScreen from 'expo-splash-screen';
 import * as Sentry from '@sentry/react-native';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { AuthProvider, useAuth } from '@/src/providers/AuthProvider';
 import { ThemeProvider, useThemeControl } from '@/src/providers/ThemeProvider';
 import { THEMES, type ThemeName } from '@/src/lib/theme';
 import { supabase } from '@/src/lib/supabase';
 import { silentCatch } from '@/src/lib/errorLog';
 import LoaderFlavor from '@/src/components/LoaderFlavor';
+
+// Single QueryClient for the app's lifetime. Defaults tuned for a TV-tracker
+// — staleTime keeps cached data "fresh enough" for ~30s so a quick tab
+// bounce doesn't refetch; cacheTime holds discarded queries for 5 min so
+// returning to a screen rehydrates from memory instead of re-fetching.
+// Retries off — we surface failures fast (existing 8s timeoutFetch + the
+// query's loading/error states) instead of looping.
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 30_000,
+      gcTime: 5 * 60_000,
+      retry: false,
+      refetchOnReconnect: 'always',
+    },
+  },
+});
 
 export { ErrorBoundary } from 'expo-router';
 
@@ -158,9 +176,11 @@ function AppShell() {
 
 function RootLayout() {
   return (
-    <ThemeProvider>
-      <AppShell />
-    </ThemeProvider>
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider>
+        <AppShell />
+      </ThemeProvider>
+    </QueryClientProvider>
   );
 }
 

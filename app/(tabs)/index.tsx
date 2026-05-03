@@ -5,17 +5,18 @@ import {
   Text,
   SectionList,
   StyleSheet,
-  ActivityIndicator,
   Pressable,
   RefreshControl,
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useFocusEffect } from 'expo-router';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
+import { qk } from '@/src/lib/queryKeys';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { getUserShows, getNextEpisodesForShows, getPopularWithFriends, getShowsAiringToday, getReturnAnnouncements, markReturnAnnouncementSeen, markNextEpisode, updateShowStatus, getWatchedCounts } from '@/src/lib/watchlist';
-import type { PopularShow, NextEpisode, ReturnAnnouncement } from '@/src/lib/watchlist';
+import type { NextEpisode, ReturnAnnouncement, PopularShow } from '@/src/lib/watchlist';
 import { getDisplayList } from '@/src/lib/lists';
 import WatchlistCard from '@/src/components/WatchlistCard';
 import EpisodeCatchUpSheet from '@/src/components/EpisodeCatchUpSheet';
@@ -23,10 +24,21 @@ import ReturnAnnouncementCard from '@/src/components/ReturnAnnouncementCard';
 import TopShowsRow from '@/src/components/TopShowsRow';
 import PopularWithFriendsRow from '@/src/components/PopularWithFriendsRow';
 import LoaderFlavor, { SHELF_MESSAGES } from '@/src/components/LoaderFlavor';
-import type { UserShow, ListWithItems } from '@/src/lib/types';
+import type { UserShow } from '@/src/lib/types';
 import { silentCatch } from '@/src/lib/errorLog';
 
 const POPULAR_CAROUSEL_LIMIT = 25;
+
+// Stable empty defaults for `data ?? EMPTY` fallbacks. Without these, every
+// render would allocate a fresh `[]` / `new Set()` / `new Map()`, breaking
+// referential equality for downstream useMemo deps and forcing the whole
+// tree to re-evaluate.
+const EMPTY_SHOWS: UserShow[] = [];
+const EMPTY_NEXT_EPISODES: Map<string, NextEpisode> = new Map();
+const EMPTY_POPULAR: PopularShow[] = [];
+const EMPTY_AIRING_TODAY: Set<string> = new Set();
+const EMPTY_ANNOUNCEMENTS: ReturnAnnouncement[] = [];
+const EMPTY_WATCHED_COUNTS: Map<string, number> = new Map();
 
 // Window for the "Back soon" banner treatment + the iOS app icon badge.
 // Keep in sync with SOON_DAYS in ReturnAnnouncementCard.
@@ -127,68 +139,109 @@ export default function MyShowsScreen() {
   const router = useRouter();
   const { session, profile } = useAuth();
   const userId = session?.user?.id;
+  const queryClient = useQueryClient();
 
-  const [shows, setShows] = useState<UserShow[]>([]);
-  const [displayList, setDisplayList] = useState<ListWithItems | null>(null);
-  const [nextEpisodes, setNextEpisodes] = useState<Map<string, NextEpisode>>(new Map());
-  const [popular, setPopular] = useState<PopularShow[]>([]);
-  const [airingToday, setAiringToday] = useState<Set<string>>(new Set());
-  const [returnAnnouncements, setReturnAnnouncements] = useState<ReturnAnnouncement[]>([]);
-  const [watchedCounts, setWatchedCounts] = useState<Map<string, number>>(new Map());
-  const [loading, setLoading] = useState(true);
+  // ─── Queries ────────────────────────────────────────────────────────────
+  // All seven were previously useState + a Promise.allSettled fetchData on
+  // useFocusEffect. TanStack Query handles cache, dedup, refetch on stale,
+  // and stale-while-revalidate — so switching tabs back doesn't show a
+  // flash of old data, and a mutation in another screen invalidates these
+  // and they refetch in background. Each query is independently failable,
+  // matching the old allSettled behavior (one blip doesn't blank the screen).
+  const enabled = !!userId;
+  const userShowsQuery = useQuery({
+    queryKey: ['userShows', userId],
+    queryFn: () => getUserShows(userId!),
+    enabled,
+  });
+  const nextEpisodesQuery = useQuery({
+    queryKey: ['nextEpisodes', userId],
+    queryFn: () => getNextEpisodesForShows(userId!),
+    enabled,
+  });
+  const displayListQuery = useQuery({
+    queryKey: ['displayList', userId],
+    queryFn: () => getDisplayList(userId!),
+    enabled,
+  });
+  const popularQuery = useQuery({
+    queryKey: qk.popular(userId, POPULAR_CAROUSEL_LIMIT),
+    queryFn: () => getPopularWithFriends(userId!, POPULAR_CAROUSEL_LIMIT),
+    enabled,
+  });
+  const airingTodayQuery = useQuery({
+    queryKey: ['airingToday', userId],
+    queryFn: () => getShowsAiringToday(userId!),
+    enabled,
+  });
+  const returnAnnouncementsQuery = useQuery({
+    queryKey: ['returnAnnouncements', userId],
+    queryFn: () => getReturnAnnouncements(userId!),
+    enabled,
+  });
+  const watchedCountsQuery = useQuery({
+    queryKey: ['watchedCounts', userId],
+    queryFn: () => getWatchedCounts(userId!),
+    enabled,
+  });
+
+  // Derived state with safe defaults — keeps the rest of the render code
+  // identical to the pre-migration version.
+  const shows = userShowsQuery.data ?? EMPTY_SHOWS;
+  const nextEpisodes = nextEpisodesQuery.data?.nextEpisodes ?? EMPTY_NEXT_EPISODES;
+  const displayList = displayListQuery.data ?? null;
+  const popular = popularQuery.data ?? EMPTY_POPULAR;
+  const airingToday = airingTodayQuery.data ?? EMPTY_AIRING_TODAY;
+  const returnAnnouncements = returnAnnouncementsQuery.data ?? EMPTY_ANNOUNCEMENTS;
+  const watchedCounts = watchedCountsQuery.data ?? EMPTY_WATCHED_COUNTS;
+
+  // Initial load = isLoading (no cached data yet). Refresh control = the
+  // pull-to-refresh manual trigger (state below).
+  const loading = userShowsQuery.isLoading;
   const [refreshing, setRefreshing] = useState(false);
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
   const [catchUpTarget, setCatchUpTarget] = useState<UserShow | null>(null);
 
-  const fetchData = useCallback(async () => {
-    if (!userId) return;
-    // Promise.allSettled (not Promise.all) so one transient failure can't
-    // blank the screen. With Promise.all, if e.g. getPopularWithFriends had a
-    // network blip the entire batch rejects, the catch fires, and NONE of
-    // the state updates run — leaving popular at [], shows at [], etc. With
-    // allSettled each query updates independently and a partial failure
-    // preserves the last-known state for the failing slice.
-    const results = await Promise.allSettled([
-      getUserShows(userId),
-      getNextEpisodesForShows(userId),
-      getDisplayList(userId),
-      getPopularWithFriends(userId, POPULAR_CAROUSEL_LIMIT),
-      getShowsAiringToday(userId),
-      getReturnAnnouncements(userId),
-      getWatchedCounts(userId),
-    ]);
+  // Surface query errors via Sentry once they settle (post-fetch). No render
+  // impact — UI keeps last-known data on transient failures, matching the
+  // old Promise.allSettled per-slice behavior.
+  useEffect(() => {
+    if (userShowsQuery.error) silentCatch('myShows:getUserShows')(userShowsQuery.error);
+  }, [userShowsQuery.error]);
+  useEffect(() => {
+    if (nextEpisodesQuery.error) silentCatch('myShows:getNextEpisodes')(nextEpisodesQuery.error);
+  }, [nextEpisodesQuery.error]);
+  useEffect(() => {
+    if (displayListQuery.error) silentCatch('myShows:getDisplayList')(displayListQuery.error);
+  }, [displayListQuery.error]);
+  useEffect(() => {
+    if (popularQuery.error) silentCatch('myShows:getPopular')(popularQuery.error);
+  }, [popularQuery.error]);
+  useEffect(() => {
+    if (airingTodayQuery.error) silentCatch('myShows:getAiringToday')(airingTodayQuery.error);
+  }, [airingTodayQuery.error]);
+  useEffect(() => {
+    if (returnAnnouncementsQuery.error) silentCatch('myShows:getReturnAnnouncements')(returnAnnouncementsQuery.error);
+  }, [returnAnnouncementsQuery.error]);
+  useEffect(() => {
+    if (watchedCountsQuery.error) silentCatch('myShows:getWatchedCounts')(watchedCountsQuery.error);
+  }, [watchedCountsQuery.error]);
 
-    const [showsR, episodesR, displayR, popularR, airingR, announcementsR, countsR] = results;
-
-    if (showsR.status === 'fulfilled') setShows(showsR.value);
-    else silentCatch('myShows:getUserShows')(showsR.reason);
-
-    if (episodesR.status === 'fulfilled') setNextEpisodes(episodesR.value.nextEpisodes);
-    else silentCatch('myShows:getNextEpisodes')(episodesR.reason);
-
-    if (displayR.status === 'fulfilled') setDisplayList(displayR.value);
-    else silentCatch('myShows:getDisplayList')(displayR.reason);
-
-    if (popularR.status === 'fulfilled') setPopular(popularR.value);
-    else silentCatch('myShows:getPopular')(popularR.reason);
-
-    if (airingR.status === 'fulfilled') setAiringToday(airingR.value);
-    else silentCatch('myShows:getAiringToday')(airingR.reason);
-
-    if (announcementsR.status === 'fulfilled') setReturnAnnouncements(announcementsR.value);
-    else silentCatch('myShows:getReturnAnnouncements')(announcementsR.reason);
-
-    if (countsR.status === 'fulfilled') setWatchedCounts(countsR.value);
-    else silentCatch('myShows:getWatchedCounts')(countsR.reason);
-
-    setLoading(false);
-    setRefreshing(false);
-  }, [userId]);
-
+  // Mark queries stale on tab focus so they background-refetch if data is
+  // older than staleTime. Cached render shows immediately; fresh data swaps
+  // in when ready (stale-while-revalidate). Replaces the old useFocusEffect
+  // that did a synchronous full-refetch.
   useFocusEffect(
     useCallback(() => {
-      fetchData();
-    }, [fetchData])
+      if (!userId) return;
+      queryClient.invalidateQueries({ queryKey: ['userShows', userId] });
+      queryClient.invalidateQueries({ queryKey: ['nextEpisodes', userId] });
+      queryClient.invalidateQueries({ queryKey: ['displayList', userId] });
+      queryClient.invalidateQueries({ queryKey: ['popular', userId] });
+      queryClient.invalidateQueries({ queryKey: ['airingToday', userId] });
+      queryClient.invalidateQueries({ queryKey: ['returnAnnouncements', userId] });
+      queryClient.invalidateQueries({ queryKey: ['watchedCounts', userId] });
+    }, [userId, queryClient])
   );
 
   // Mirror the "soon" announcement count to the iOS app icon badge. Cleared
@@ -206,34 +259,36 @@ export default function MyShowsScreen() {
 
   const handleMarkNext = useCallback(async (showId: string, season: number, episode: number) => {
     if (!userId) return;
-    // Optimistic: remove from next episodes map and update show progress
-    setNextEpisodes(prev => {
-      const next = new Map(prev);
+    // Optimistic update — writes directly to the cache so dependent screens
+    // (show detail, etc) see the change instantly. On error, invalidate so
+    // the cache refetches from server truth.
+    queryClient.setQueryData<Map<string, NextEpisode>>(['nextEpisodes', userId], prev => {
+      const next = new Map(prev ?? EMPTY_NEXT_EPISODES);
       next.delete(showId);
       return next;
     });
-    setShows(prev => prev.map(s =>
-      s.show_id === showId
-        ? { ...s, current_season: season, current_episode: episode }
-        : s
-    ));
+    queryClient.setQueryData<UserShow[]>(['userShows', userId], prev =>
+      (prev ?? EMPTY_SHOWS).map(s =>
+        s.show_id === showId ? { ...s, current_season: season, current_episode: episode } : s,
+      ),
+    );
 
     try {
       await markNextEpisode(userId, showId, season, episode);
-      // Refetch to check if there are more new episodes
-      const episodeData = await getNextEpisodesForShows(userId);
-      setNextEpisodes(episodeData.nextEpisodes);
-      // If no more next episodes for this show, it's caught up
-      if (!episodeData.nextEpisodes.has(showId)) {
-        setShows(prev => prev.map(s =>
-          s.show_id === showId ? { ...s, caught_up: true } : s
-        ));
-      }
+      // Invalidate so any other screens / future renders pick up freshness.
+      // The wrapping NextEpisodes query also returns its own caught_up data —
+      // letting it refetch handles the "no more next episodes → caught_up=true"
+      // transition without us re-implementing it here.
+      queryClient.invalidateQueries({ queryKey: ['nextEpisodes', userId] });
+      queryClient.invalidateQueries({ queryKey: ['userShows', userId] });
+      queryClient.invalidateQueries({ queryKey: ['watchedCounts', userId] });
     } catch (e) {
       silentCatch('myShows:markNext')(e);
-      fetchData();
+      // Rollback the optimistic write by refetching from server.
+      queryClient.invalidateQueries({ queryKey: ['userShows', userId] });
+      queryClient.invalidateQueries({ queryKey: ['nextEpisodes', userId] });
     }
-  }, [userId, fetchData]);
+  }, [userId, queryClient]);
 
   const toggleSection = useCallback((title: string) => {
     setCollapsed(prev => {
@@ -250,13 +305,17 @@ export default function MyShowsScreen() {
 
   const handleDismissAnnouncement = useCallback(async (showId: string) => {
     if (!userId) return;
-    setReturnAnnouncements(prev => prev.filter(a => a.show_id !== showId));
+    queryClient.setQueryData<ReturnAnnouncement[]>(
+      ['returnAnnouncements', userId],
+      prev => (prev ?? EMPTY_ANNOUNCEMENTS).filter(a => a.show_id !== showId),
+    );
     try {
       await markReturnAnnouncementSeen(userId, showId);
     } catch (e) {
       silentCatch('myShows:dismissAnnouncement')(e);
+      queryClient.invalidateQueries({ queryKey: ['returnAnnouncements', userId] });
     }
-  }, [userId]);
+  }, [userId, queryClient]);
 
   const handleAnnouncementPress = useCallback((showId: string) => {
     handleDismissAnnouncement(showId);
@@ -266,18 +325,21 @@ export default function MyShowsScreen() {
   const handleMarkWatched = useCallback(async (showId: string) => {
     if (!userId) return;
     // Optimistic: drop from the list (Watched isn't shown on My Shows).
-    setShows(prev => prev.filter(s => s.show_id !== showId));
+    queryClient.setQueryData<UserShow[]>(['userShows', userId], prev =>
+      (prev ?? EMPTY_SHOWS).filter(s => s.show_id !== showId),
+    );
     try {
       // Await the flip so the show detail page mounts with status='watched'
       // already in the DB — that's what reveals the inline RatingSelector
       // and surfaces the rating prompt.
       await updateShowStatus(userId, showId, 'watched');
+      queryClient.invalidateQueries({ queryKey: ['userShows', userId] });
       router.push(`/show/${showId}?from=/`);
     } catch (e) {
       silentCatch('myShows:markWatched')(e);
-      fetchData();
+      queryClient.invalidateQueries({ queryKey: ['userShows', userId] });
     }
-  }, [userId, router, fetchData]);
+  }, [userId, router, queryClient]);
 
   // Split currently_watching into the four sub-groups; everything else stays
   // as a single section. Memoized so SectionList sees a stable `sections`
@@ -476,9 +538,22 @@ export default function MyShowsScreen() {
       refreshControl={
         <RefreshControl
           refreshing={refreshing}
-          onRefresh={() => {
+          onRefresh={async () => {
+            if (!userId) return;
             setRefreshing(true);
-            fetchData();
+            try {
+              await Promise.allSettled([
+                queryClient.refetchQueries({ queryKey: ['userShows', userId] }),
+                queryClient.refetchQueries({ queryKey: ['nextEpisodes', userId] }),
+                queryClient.refetchQueries({ queryKey: ['displayList', userId] }),
+                queryClient.refetchQueries({ queryKey: ['popular', userId] }),
+                queryClient.refetchQueries({ queryKey: ['airingToday', userId] }),
+                queryClient.refetchQueries({ queryKey: ['returnAnnouncements', userId] }),
+                queryClient.refetchQueries({ queryKey: ['watchedCounts', userId] }),
+              ]);
+            } finally {
+              setRefreshing(false);
+            }
           }}
           tintColor={theme.accent}
         />
@@ -494,7 +569,12 @@ export default function MyShowsScreen() {
       showTitle={catchUpTarget?.show_title ?? ''}
       currentSeason={catchUpTarget?.current_season ?? 0}
       currentEpisode={catchUpTarget?.current_episode ?? 0}
-      onMarked={fetchData}
+      onMarked={() => {
+        if (!userId) return;
+        queryClient.invalidateQueries({ queryKey: ['userShows', userId] });
+        queryClient.invalidateQueries({ queryKey: ['nextEpisodes', userId] });
+        queryClient.invalidateQueries({ queryKey: ['watchedCounts', userId] });
+      }}
     />
     </>
   );

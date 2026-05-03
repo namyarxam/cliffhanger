@@ -1,4 +1,6 @@
 import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
+import { qk } from '@/src/lib/queryKeys';
 import {
   View,
   Text,
@@ -46,6 +48,9 @@ import GifPicker from '@/src/components/GifPicker';
 import type { Conversation, ConversationMember, Message, UserProfile, UserShow } from '@/src/lib/types';
 import { silentCatch } from '@/src/lib/errorLog';
 
+const EMPTY_MEMBERS: ConversationMember[] = [];
+const EMPTY_MESSAGES: Message[] = [];
+
 function formatChatDate(dateStr: string): string {
   const d = new Date(dateStr);
   const now = new Date();
@@ -66,14 +71,66 @@ export default function ChatDetailScreen() {
   const { session } = useAuth();
   const userId = session?.user?.id;
 
-  const [conversation, setConversation] = useState<Conversation | null>(null);
-  const [members, setMembers] = useState<ConversationMember[]>([]);
-  const [messages, setMessages] = useState<Message[]>([]);
-  const [loading, setLoading] = useState(true);
+  const queryClient = useQueryClient();
+
+  // Conversation, members, messages all cache-keyed by conversation id so
+  // returning to a chat rehydrates instantly. Realtime broadcast writes
+  // through to the messages cache (see useEffect below).
+  const conversationQ = useQuery({
+    queryKey: qk.conversation(id),
+    queryFn: () => getConversationDetail(id!),
+    enabled: !!id,
+  });
+  const conversation = conversationQ.data ?? null;
+
+  const membersQ = useQuery({
+    queryKey: qk.conversationMembers(id),
+    queryFn: () => getConversationMembers(id!, conversation?.show_id ?? null),
+    enabled: !!id && !!conversation,
+  });
+  const members: ConversationMember[] = membersQ.data ?? EMPTY_MEMBERS;
+
+  const messagesQ = useQuery({
+    queryKey: qk.messages(id),
+    queryFn: () => getMessages(id!).catch(() => [] as Message[]),
+    enabled: !!id,
+  });
+  const messages: Message[] = messagesQ.data ?? EMPTY_MESSAGES;
+
+  const loading = conversationQ.isLoading || membersQ.isLoading || messagesQ.isLoading;
+
   const [messageText, setMessageText] = useState('');
   const [sending, setSending] = useState(false);
   const [showMembers, setShowMembers] = useState(false);
   const memberProfileMap = useRef(new Map<string, { name: string; avatar: string | null }>());
+
+  // Cache the member profiles for the optimistic-message sender lookup.
+  useEffect(() => {
+    for (const member of members) {
+      memberProfileMap.current.set(member.user_id, {
+        name: member.display_name,
+        avatar: member.avatar_url,
+      });
+    }
+  }, [members]);
+
+  // setX wrappers — keep mutation handlers below readable while routing the
+  // writes through the shared query cache so other screens see them.
+  const setMessages = useCallback((updater: Message[] | ((prev: Message[]) => Message[])) => {
+    queryClient.setQueryData<Message[]>(qk.messages(id), prev => {
+      const base = prev ?? EMPTY_MESSAGES;
+      return typeof updater === 'function' ? (updater as (p: Message[]) => Message[])(base) : updater;
+    });
+  }, [queryClient, id]);
+  const setConversation = useCallback((next: Conversation | null) => {
+    queryClient.setQueryData<Conversation | null>(qk.conversation(id), next);
+  }, [queryClient, id]);
+  const fetchData = useCallback(() => {
+    if (!id) return;
+    queryClient.invalidateQueries({ queryKey: qk.conversation(id) });
+    queryClient.invalidateQueries({ queryKey: qk.conversationMembers(id) });
+    queryClient.invalidateQueries({ queryKey: qk.messages(id) });
+  }, [queryClient, id]);
 
   // Modal state
   const [gifPickerVisible, setGifPickerVisible] = useState(false);
@@ -102,46 +159,14 @@ export default function ChatDetailScreen() {
     },
   }), [dragX]);
 
-  const fetchData = useCallback(async () => {
-    if (!id) return;
-    try {
-      const c = await getConversationDetail(id);
-      setConversation(c);
-
-      const [m, msgs] = await Promise.all([
-        getConversationMembers(id, c.show_id),
-        getMessages(id).catch(() => [] as Message[]),
-      ]);
-      setMembers(m);
-      setMessages(msgs);
-
-      for (const member of m) {
-        memberProfileMap.current.set(member.user_id, {
-          name: member.display_name,
-          avatar: member.avatar_url,
-        });
-      }
-    } catch (e) {
-      console.error('Chat fetch error:', e);
-    } finally {
-      setLoading(false);
-    }
-  }, [id]);
-
-  useEffect(() => {
-    setConversation(null);
-    setMembers([]);
-    setMessages([]);
-    setLoading(true);
-    fetchData();
-  }, [fetchData]);
-
   useEffect(() => {
     const sub = Keyboard.addListener('keyboardWillShow', () => setShowMembers(false));
     return () => sub.remove();
   }, []);
 
-  // Realtime via Broadcast
+  // Realtime via Broadcast — write incoming messages directly into the
+  // messages query cache so all readers (including any future re-render of
+  // this screen, or a re-mount on tab focus) stay in sync.
   useEffect(() => {
     if (!id) return;
     const channel = supabase
@@ -149,11 +174,11 @@ export default function ChatDetailScreen() {
       .on('broadcast', { event: 'new_message' }, (payload) => {
         const msg = payload.payload as Message;
         if (msg.user_id === userId) return;
-        setMessages(prev => [msg, ...prev]);
+        queryClient.setQueryData<Message[]>(qk.messages(id), prev => [msg, ...(prev ?? EMPTY_MESSAGES)]);
       })
       .subscribe();
     return () => { supabase.removeChannel(channel); };
-  }, [id, userId]);
+  }, [id, userId, queryClient]);
 
   const handleSend = useCallback(async () => {
     if (!userId || !id || !messageText.trim() || sending) return;

@@ -1,4 +1,4 @@
-import { useState, useCallback, useMemo } from 'react';
+import { useCallback, useMemo, useEffect } from 'react';
 import {
   View,
   Text,
@@ -10,6 +10,7 @@ import {
 import { useRouter } from 'expo-router';
 import { useFocusEffect } from 'expo-router';
 import { Image } from 'expo-image';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 
@@ -24,6 +25,10 @@ import {
 import ConversationCard from '@/src/components/ConversationCard';
 import type { ConversationPreview, ConversationInviteWithDetails } from '@/src/lib/types';
 import { silentCatch } from '@/src/lib/errorLog';
+import { qk } from '@/src/lib/queryKeys';
+
+const EMPTY_CONVERSATIONS: ConversationPreview[] = [];
+const EMPTY_INVITES: ConversationInviteWithDetails[] = [];
 
 export default function ChatScreen() {
   const theme = useTheme();
@@ -32,30 +37,36 @@ export default function ChatScreen() {
   const { session } = useAuth();
   const userId = session?.user?.id;
 
-  const [conversations, setConversations] = useState<ConversationPreview[]>([]);
-  const [pendingInvites, setPendingInvites] = useState<ConversationInviteWithDetails[]>([]);
-  const [loading, setLoading] = useState(true);
+  const queryClient = useQueryClient();
 
-  const fetchData = useCallback(async () => {
-    if (!userId) return;
-    try {
-      const [data, invites] = await Promise.all([
-        getMyConversations(userId),
-        getPendingConversationInvites(userId),
-      ]);
-      setConversations(data);
-      setPendingInvites(invites);
-    } catch (e) {
-      silentCatch('chat:fetchData')(e);
-    } finally {
-      setLoading(false);
-    }
-  }, [userId]);
+  const conversationsQuery = useQuery({
+    queryKey: qk.conversations(userId),
+    queryFn: () => getMyConversations(userId!),
+    enabled: !!userId,
+  });
+  const invitesQuery = useQuery({
+    queryKey: qk.pendingInvites(userId),
+    queryFn: () => getPendingConversationInvites(userId!),
+    enabled: !!userId,
+  });
+
+  const conversations = conversationsQuery.data ?? EMPTY_CONVERSATIONS;
+  const pendingInvites = invitesQuery.data ?? EMPTY_INVITES;
+  const loading = conversationsQuery.isLoading || invitesQuery.isLoading;
+
+  useEffect(() => {
+    if (conversationsQuery.error) silentCatch('chat:getMyConversations')(conversationsQuery.error);
+  }, [conversationsQuery.error]);
+  useEffect(() => {
+    if (invitesQuery.error) silentCatch('chat:getPendingInvites')(invitesQuery.error);
+  }, [invitesQuery.error]);
 
   useFocusEffect(
     useCallback(() => {
-      fetchData();
-    }, [fetchData])
+      if (!userId) return;
+      queryClient.invalidateQueries({ queryKey: qk.conversations(userId) });
+      queryClient.invalidateQueries({ queryKey: qk.pendingInvites(userId) });
+    }, [userId, queryClient])
   );
 
   const handlePress = useCallback((id: string) => {
@@ -66,22 +77,31 @@ export default function ChatScreen() {
     if (!userId) return;
     try {
       const conversationId = await acceptConversationInvite(inviteId, userId);
-      setPendingInvites(prev => prev.filter(i => i.id !== inviteId));
-      fetchData();
+      queryClient.setQueryData<ConversationInviteWithDetails[]>(
+        qk.pendingInvites(userId),
+        prev => (prev ?? EMPTY_INVITES).filter(i => i.id !== inviteId),
+      );
+      queryClient.invalidateQueries({ queryKey: qk.conversations(userId) });
+      queryClient.invalidateQueries({ queryKey: qk.pendingInviteCount(userId) });
       router.push(`/chat/${conversationId}`);
     } catch (e) {
       silentCatch('chat:accept')(e);
     }
-  }, [userId, fetchData, router]);
+  }, [userId, queryClient, router]);
 
   const handleDecline = useCallback(async (inviteId: string) => {
+    if (!userId) return;
     try {
       await declineConversationInvite(inviteId);
-      setPendingInvites(prev => prev.filter(i => i.id !== inviteId));
+      queryClient.setQueryData<ConversationInviteWithDetails[]>(
+        qk.pendingInvites(userId),
+        prev => (prev ?? EMPTY_INVITES).filter(i => i.id !== inviteId),
+      );
+      queryClient.invalidateQueries({ queryKey: qk.pendingInviteCount(userId) });
     } catch (e) {
       silentCatch('chat:decline')(e);
     }
-  }, []);
+  }, [userId, queryClient]);
 
   if (loading) {
     return (

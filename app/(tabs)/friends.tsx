@@ -1,4 +1,6 @@
 import { useState, useCallback, useRef, useMemo } from 'react';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
+import { qk } from '@/src/lib/queryKeys';
 import {
   View,
   Text,
@@ -38,6 +40,9 @@ interface SearchResult {
   friendshipId?: string;
 }
 
+const EMPTY_FRIENDS: FriendWithProfile[] = [];
+const EMPTY_PENDING: FriendWithProfile[] = [];
+
 export default function FriendsScreen() {
   const theme = useTheme();
   const styles = useMemo(() => createStyles(theme), [theme]);
@@ -47,10 +52,22 @@ export default function FriendsScreen() {
   const userId = session?.user?.id;
   const refreshBadge = useRefreshBadge();
 
-  const [friends, setFriends] = useState<FriendWithProfile[]>([]);
-  const [pending, setPending] = useState<FriendWithProfile[]>([]);
+  const queryClient = useQueryClient();
+  const friendsQuery = useQuery({
+    queryKey: qk.friends(userId),
+    queryFn: () => getFriends(userId!),
+    enabled: !!userId,
+  });
+  const pendingQuery = useQuery({
+    queryKey: qk.pendingRequests(userId),
+    queryFn: () => getPendingRequests(userId!),
+    enabled: !!userId,
+  });
+  const friends = friendsQuery.data ?? EMPTY_FRIENDS;
+  const pending = pendingQuery.data ?? EMPTY_PENDING;
+  const loading = friendsQuery.isLoading || pendingQuery.isLoading;
+
   const [filterQuery, setFilterQuery] = useState('');
-  const [loading, setLoading] = useState(true);
 
   // Add friend modal state
   const [addModalVisible, setAddModalVisible] = useState(false);
@@ -59,33 +76,26 @@ export default function FriendsScreen() {
   const [addSearching, setAddSearching] = useState(false);
   const addDebounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const fetchData = useCallback(async () => {
-    if (!userId) return;
-    try {
-      const [f, p] = await Promise.all([
-        getFriends(userId),
-        getPendingRequests(userId),
-      ]);
-      setFriends(f);
-      setPending(p);
-    } catch (e) {
-      silentCatch('friends:fetchData')(e);
-    } finally {
-      setLoading(false);
-    }
-  }, [userId]);
-
   useFocusEffect(
     useCallback(() => {
-      // If we arrived here via a "user just blocked someone" redirect, optimistically
-      // remove them from the local list so they don't flash before the fetch returns.
+      if (!userId) return;
+      // If we arrived here via a "user just blocked someone" redirect,
+      // optimistically remove them from the cache so they don't flash before
+      // the refetch returns.
       if (blockedParam) {
-        setFriends(prev => prev.filter(f => f.user.id !== blockedParam));
-        setPending(prev => prev.filter(p => p.user.id !== blockedParam));
+        queryClient.setQueryData<FriendWithProfile[]>(
+          qk.friends(userId),
+          prev => (prev ?? EMPTY_FRIENDS).filter(f => f.user.id !== blockedParam),
+        );
+        queryClient.setQueryData<FriendWithProfile[]>(
+          qk.pendingRequests(userId),
+          prev => (prev ?? EMPTY_PENDING).filter(p => p.user.id !== blockedParam),
+        );
         router.setParams({ blocked: undefined });
       }
-      fetchData();
-    }, [fetchData, blockedParam, router])
+      queryClient.invalidateQueries({ queryKey: qk.friends(userId) });
+      queryClient.invalidateQueries({ queryKey: qk.pendingRequests(userId) });
+    }, [userId, queryClient, blockedParam, router])
   );
 
   // ── Filter friends list ─────────────────────────────────────────────────────
@@ -147,6 +157,13 @@ export default function FriendsScreen() {
     setAddModalVisible(true);
   }, []);
 
+  const invalidateFriends = useCallback(() => {
+    if (!userId) return;
+    queryClient.invalidateQueries({ queryKey: qk.friends(userId) });
+    queryClient.invalidateQueries({ queryKey: qk.pendingRequests(userId) });
+    queryClient.invalidateQueries({ queryKey: qk.pendingRequestCount(userId) });
+  }, [userId, queryClient]);
+
   // ── Actions ─────────────────────────────────────────────────────────────────
   const handleAdd = useCallback(async (friendId: string) => {
     if (!userId) return;
@@ -157,9 +174,9 @@ export default function FriendsScreen() {
           r.user.id === friendId ? { ...r, action: 'pending' as FriendAction } : r
         )
       );
-      fetchData();
+      invalidateFriends();
     } catch (e) { silentCatch('friends:add')(e); }
-  }, [userId, fetchData]);
+  }, [userId, invalidateFriends]);
 
   const handleAccept = useCallback(async (friendId: string) => {
     const req = pending.find(p => p.user.id === friendId);
@@ -169,7 +186,7 @@ export default function FriendsScreen() {
 
     try {
       await acceptFriendRequest(fid);
-      fetchData();
+      invalidateFriends();
       refreshBadge();
       setAddResults(prev =>
         prev.map(r =>
@@ -177,17 +194,17 @@ export default function FriendsScreen() {
         )
       );
     } catch (e) { silentCatch('friends:accept')(e); }
-  }, [pending, addResults, fetchData]);
+  }, [pending, addResults, invalidateFriends, refreshBadge]);
 
   const handleDecline = useCallback(async (friendId: string) => {
     const req = pending.find(p => p.user.id === friendId);
     if (!req) return;
     try {
       await removeFriend(req.friendship_id);
-      fetchData();
+      invalidateFriends();
       refreshBadge();
     } catch (e) { silentCatch('friends:decline')(e); }
-  }, [pending, fetchData]);
+  }, [pending, invalidateFriends, refreshBadge]);
 
   const handlePressFriend = useCallback((friendUserId: string) => {
     router.push(`/user/${friendUserId}`);
@@ -207,14 +224,14 @@ export default function FriendsScreen() {
           onPress: async () => {
             try {
               await removeFriend(friend.friendship_id);
-              fetchData();
+              invalidateFriends();
               refreshBadge();
             } catch (e) { silentCatch('friends:remove')(e); }
           },
         },
       ],
     );
-  }, [friends, fetchData, refreshBadge]);
+  }, [friends, invalidateFriends, refreshBadge]);
 
   // ── Build list data ─────────────────────────────────────────────────────────
   const listData = useMemo(() => {

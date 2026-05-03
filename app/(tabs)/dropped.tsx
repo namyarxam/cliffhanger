@@ -4,6 +4,7 @@ import { useRouter, useFocusEffect } from 'expo-router';
 import { Image } from 'expo-image';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
@@ -11,6 +12,7 @@ import { getUserShows, rateShow, updateShowStatus } from '@/src/lib/watchlist';
 import RatingSelector, { getUserRatingColor } from '@/src/components/RatingSelector';
 import type { UserShow } from '@/src/lib/types';
 import { silentCatch } from '@/src/lib/errorLog';
+import { qk } from '@/src/lib/queryKeys';
 
 export default function DroppedScreen() {
   const theme = useTheme();
@@ -18,24 +20,33 @@ export default function DroppedScreen() {
   const router = useRouter();
   const { session } = useAuth();
   const userId = session?.user?.id;
-  const [shows, setShows] = useState<UserShow[]>([]);
+  const queryClient = useQueryClient();
   const [ratingShowId, setRatingShowId] = useState<string | null>(null);
   const [scrollEnabled, setScrollEnabled] = useState(true);
 
-  const fetchDropped = useCallback(() => {
-    if (!userId) return;
-    getUserShows(userId)
-      .then(s => setShows(s.filter(sh => sh.status === 'dropped')))
-      .catch(silentCatch('dropped:fetch'));
-  }, [userId]);
+  const userShowsQ = useQuery({
+    queryKey: qk.userShows.all(userId),
+    queryFn: () => getUserShows(userId!),
+    enabled: !!userId,
+  });
+  const shows = useMemo(
+    () => (userShowsQ.data ?? []).filter(s => s.status === 'dropped'),
+    [userShowsQ.data],
+  );
 
-  useFocusEffect(useCallback(() => { fetchDropped(); }, [fetchDropped]));
+  useFocusEffect(useCallback(() => {
+    if (!userId) return;
+    queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
+  }, [userId, queryClient]));
 
   const handleRate = async (showId: string, rating: number) => {
     if (!userId) return;
     try {
       await rateShow(userId, showId, rating);
-      setShows(prev => prev.map(s => s.show_id === showId ? { ...s, rating } : s));
+      // Update the shared cache so My Shows / profile reflect the rating too.
+      queryClient.setQueryData<UserShow[]>(qk.userShows.all(userId), prev =>
+        (prev ?? []).map(s => s.show_id === showId ? { ...s, rating } : s),
+      );
     } catch (e) { silentCatch('dropped:rate')(e); }
   };
 
@@ -51,7 +62,9 @@ export default function DroppedScreen() {
             if (!userId) return;
             try {
               await updateShowStatus(userId, show.show_id, 'watched');
-              setShows(prev => prev.filter(s => s.show_id !== show.show_id));
+              queryClient.setQueryData<UserShow[]>(qk.userShows.all(userId), prev =>
+                (prev ?? []).map(s => s.show_id === show.show_id ? { ...s, status: 'watched' as const } : s),
+              );
             } catch (e) { silentCatch('dropped:moveToWatched')(e); }
           },
         },

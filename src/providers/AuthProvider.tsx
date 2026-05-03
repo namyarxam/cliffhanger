@@ -3,6 +3,7 @@ import { AppState } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Session, User } from '@supabase/supabase-js';
 import * as Sentry from '@sentry/react-native';
+import { useQueryClient } from '@tanstack/react-query';
 import { supabase, SUPABASE_STORAGE_KEY } from '@/src/lib/supabase';
 import { silentCatch } from '@/src/lib/errorLog';
 import { withTimeout } from '@/src/lib/network';
@@ -55,6 +56,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [session, setSession] = useState<Session | null>(null);
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [loading, setLoading] = useState(true);
+  const queryClient = useQueryClient();
 
   const fetchProfile = useCallback(async (userId: string) => {
     try {
@@ -207,6 +209,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     await supabase.auth.signOut();
     setSession(null);
     setProfile(null);
+    // Wipe every cached query so the next account that signs in (or the
+    // sign-in screen itself) doesn't briefly read previous-user data.
+    queryClient.clear();
   }
 
   return (

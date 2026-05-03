@@ -1,4 +1,6 @@
-import { useMemo, useState, useCallback } from 'react';
+import { useMemo, useState, useCallback, useEffect } from 'react';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
+import { qk } from '@/src/lib/queryKeys';
 import {
   View,
   Text,
@@ -30,37 +32,45 @@ export default function NewChatScreen() {
   const { session } = useAuth();
   const userId = session?.user?.id;
 
-  const [friends, setFriends] = useState<FriendWithProfile[]>([]);
+  const queryClient = useQueryClient();
   const [selectedFriends, setSelectedFriends] = useState<Set<string>>(new Set());
   const [name, setName] = useState('');
-  const [shows, setShows] = useState<UserShow[]>([]);
   const [selectedShow, setSelectedShow] = useState<UserShow | null>(null);
-  const [loading, setLoading] = useState(true);
   const [creating, setCreating] = useState(false);
+
+  const friendsQ = useQuery({
+    queryKey: qk.friends(userId),
+    queryFn: () => getFriends(userId!),
+    enabled: !!userId,
+  });
+  const userShowsQ = useQuery({
+    queryKey: qk.userShows.all(userId),
+    queryFn: () => getUserShows(userId!),
+    enabled: !!userId,
+  });
+  const friends: FriendWithProfile[] = friendsQ.data ?? [];
+  const shows = useMemo(
+    () => (userShowsQ.data ?? []).filter(s => s.status === 'currently_watching' || s.status === 'watched'),
+    [userShowsQ.data],
+  );
+  const loading = friendsQ.isLoading || userShowsQ.isLoading;
+
+  useEffect(() => {
+    if (friendsQ.error) silentCatch('newChat:friends')(friendsQ.error);
+    if (userShowsQ.error) silentCatch('newChat:userShows')(userShowsQ.error);
+  }, [friendsQ.error, userShowsQ.error]);
 
   useFocusEffect(
     useCallback(() => {
-      // Reset state on each visit
+      // Reset transient state on each visit
       setSelectedFriends(new Set());
       setName('');
       setSelectedShow(null);
       setCreating(false);
-      setLoading(true);
-
       if (!userId) return;
-      Promise.all([
-        getFriends(userId),
-        getUserShows(userId).then(data =>
-          data.filter(s => s.status === 'currently_watching' || s.status === 'watched')
-        ),
-      ])
-        .then(([friendData, showData]) => {
-          setFriends(friendData);
-          setShows(showData);
-        })
-        .catch(silentCatch('newChat:loadData'))
-        .finally(() => setLoading(false));
-    }, [userId])
+      queryClient.invalidateQueries({ queryKey: qk.friends(userId) });
+      queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
+    }, [userId, queryClient])
   );
 
   const toggleFriend = useCallback((friendId: string) => {

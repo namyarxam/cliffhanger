@@ -1,14 +1,15 @@
-import { useState, useEffect, useCallback, useRef, createContext, useContext, useMemo } from 'react';
+import { useEffect, useCallback, useRef, createContext, useContext, useMemo } from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { View, Text, Pressable, StyleSheet, AppState } from 'react-native';
+import { View, Text, Pressable, StyleSheet } from 'react-native';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Tabs, usePathname } from 'expo-router';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { getPendingRequests } from '@/src/lib/friends';
 import { getPendingInviteCount } from '@/src/lib/conversations';
-import { silentCatch } from '@/src/lib/errorLog';
+import { qk } from '@/src/lib/queryKeys';
 
 const RefreshBadgeContext = createContext<() => void>(() => {});
 export const useRefreshBadge = () => useContext(RefreshBadgeContext);
@@ -22,50 +23,38 @@ export default function TabLayout() {
   const styles = useMemo(() => createStyles(theme), [theme]);
   const insets = useSafeAreaInsets();
   const { session } = useAuth();
-  const [pendingCount, setPendingCount] = useState(0);
-  const [chatInviteCount, setChatInviteCount] = useState(0);
+  const userId = session?.user?.id;
+  const queryClient = useQueryClient();
   const pathname = usePathname();
 
+  // Polled badge counts. refetchInterval handles the foreground polling;
+  // refetchIntervalInBackground=false pauses when the app backgrounds —
+  // matches the previous AppState-aware setInterval pattern, just declarative.
+  const pendingRequestsCountQ = useQuery({
+    queryKey: qk.pendingRequestCount(userId),
+    queryFn: async () => (await getPendingRequests(userId!)).length,
+    enabled: !!userId,
+    refetchInterval: 10000,
+    refetchIntervalInBackground: false,
+  });
+  const chatInviteCountQ = useQuery({
+    queryKey: qk.pendingInviteCount(userId),
+    queryFn: () => getPendingInviteCount(userId!),
+    enabled: !!userId,
+    refetchInterval: 10000,
+    refetchIntervalInBackground: false,
+  });
+  const pendingCount = pendingRequestsCountQ.data ?? 0;
+  const chatInviteCount = chatInviteCountQ.data ?? 0;
+
+  // Friends/Chat screens call refreshBadge() after a mutation that should
+  // immediately reflect in the tab badge — wired to invalidate so it
+  // refetches now instead of waiting for the next 10s tick.
   const refreshPending = useCallback(() => {
-    if (!session?.user?.id) return;
-    getPendingRequests(session.user.id)
-      .then(p => setPendingCount(p.length))
-      .catch(silentCatch('layout:pendingRequests'));
-    getPendingInviteCount(session.user.id)
-      .then(c => setChatInviteCount(c))
-      .catch(silentCatch('layout:chatInvites'));
-  }, [session?.user?.id]);
-
-  // Poll while the app is foreground; pause when backgrounded. iOS suspends
-  // JS shortly after backgrounding, but timers can still fire briefly during
-  // the transition — those polls hit Supabase, get torn down with status_code:0
-  // when the OS yanks the socket, and surface as Sentry noise on resume.
-  useEffect(() => {
-    if (!session?.user?.id) return;
-    let interval: ReturnType<typeof setInterval> | null = null;
-
-    const start = () => {
-      if (interval) return;
-      refreshPending();
-      interval = setInterval(refreshPending, 10000);
-    };
-    const stop = () => {
-      if (!interval) return;
-      clearInterval(interval);
-      interval = null;
-    };
-
-    if (AppState.currentState === 'active') start();
-    const sub = AppState.addEventListener('change', state => {
-      if (state === 'active') start();
-      else stop();
-    });
-
-    return () => {
-      sub.remove();
-      stop();
-    };
-  }, [refreshPending, session?.user?.id]);
+    if (!userId) return;
+    queryClient.invalidateQueries({ queryKey: qk.pendingRequestCount(userId) });
+    queryClient.invalidateQueries({ queryKey: qk.pendingInviteCount(userId) });
+  }, [userId, queryClient]);
 
   const activeTabRef = useRef<string | null>('index');
 

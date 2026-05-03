@@ -2,7 +2,7 @@ import { supabase } from './supabase';
 import { getFriends } from './friends';
 import type { UserShow, EpisodeWatch, WatchStatus, Season } from './types';
 
-const POPULAR_SHOWS_LIMIT_DEFAULT = 6;
+export const POPULAR_SHOWS_LIMIT_DEFAULT = 6;
 
 // ─── Episode Helpers ──────────────────────────────────────────────────────────
 

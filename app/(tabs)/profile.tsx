@@ -1,4 +1,6 @@
-import { useState, useCallback, useRef, useMemo } from 'react';
+import { useState, useCallback, useRef, useMemo, useEffect } from 'react';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
+import { qk } from '@/src/lib/queryKeys';
 import {
   View,
   Text,
@@ -38,14 +40,46 @@ export default function ProfileScreen() {
   const { profile, user, signOut, refreshProfile } = useAuth();
   const router = useRouter();
 
-  const [friendCount, setFriendCount] = useState<number | null>(null);
-  const [pendingCount, setPendingCount] = useState(0);
-  const [listCount, setListCount] = useState<number | null>(null);
-  const [displayList, setDisplayList] = useState<ListWithItems | null>(null);
+  const userId = user?.id;
+  const queryClient = useQueryClient();
 
-  const [droppedCount, setDroppedCount] = useState(0);
-  const [watchedCount, setWatchedCount] = useState(0);
-  const [navLoaded, setNavLoaded] = useState(false);
+  const friendsQ = useQuery({
+    queryKey: qk.friends(userId),
+    queryFn: () => getFriends(userId!),
+    enabled: !!userId,
+  });
+  const pendingRequestsQ = useQuery({
+    queryKey: qk.pendingRequests(userId),
+    queryFn: () => getPendingRequests(userId!),
+    enabled: !!userId,
+  });
+  const listsQ = useQuery({
+    queryKey: qk.lists(userId),
+    queryFn: async () => {
+      await ensureDefaultList(userId!);
+      return getLists(userId!);
+    },
+    enabled: !!userId,
+  });
+  const userShowsQ = useQuery({
+    queryKey: qk.userShows.all(userId),
+    queryFn: () => getUserShows(userId!),
+    enabled: !!userId,
+  });
+  const displayListQ = useQuery({
+    queryKey: qk.displayList(userId),
+    queryFn: () => getDisplayList(userId!),
+    enabled: !!userId,
+  });
+
+  const friendCount = friendsQ.data?.length ?? null;
+  const pendingCount = pendingRequestsQ.data?.length ?? 0;
+  const listCount = listsQ.data?.length ?? null;
+  const droppedCount = userShowsQ.data?.filter(s => s.status === 'dropped').length ?? 0;
+  const watchedCount = userShowsQ.data?.filter(s => s.status === 'watched').length ?? 0;
+  const displayList = displayListQ.data ?? null;
+  const navLoaded = !friendsQ.isLoading && !pendingRequestsQ.isLoading && !listsQ.isLoading && !userShowsQ.isLoading;
+
   const [editing, setEditing] = useState(false);
   const [editName, setEditName] = useState('');
 
@@ -64,24 +98,19 @@ export default function ProfileScreen() {
 
   useFocusEffect(
     useCallback(() => {
-      if (!user?.id) return;
-      const uid = user.id;
-      // Nav rows wait on all four queries so counts + conditional rows appear at once,
-      // not in a staggered pop-in. displayList is independent (hero area, not nav).
-      Promise.all([
-        getFriends(uid).then(f => setFriendCount(f.length)),
-        getPendingRequests(uid).then(p => setPendingCount(p.length)),
-        ensureDefaultList(uid).then(() => getLists(uid).then(l => setListCount(l.length))),
-        getUserShows(uid).then(s => {
-          setDroppedCount(s.filter(sh => sh.status === 'dropped').length);
-          setWatchedCount(s.filter(sh => sh.status === 'watched').length);
-        }),
-      ])
-        .catch(silentCatch('profile:nav'))
-        .finally(() => setNavLoaded(true));
-      getDisplayList(uid).then(d => setDisplayList(d)).catch(silentCatch('profile:display'));
-    }, [user?.id])
+      if (!userId) return;
+      queryClient.invalidateQueries({ queryKey: qk.friends(userId) });
+      queryClient.invalidateQueries({ queryKey: qk.pendingRequests(userId) });
+      queryClient.invalidateQueries({ queryKey: qk.lists(userId) });
+      queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
+      queryClient.invalidateQueries({ queryKey: qk.displayList(userId) });
+    }, [userId, queryClient])
   );
+
+  useEffect(() => {
+    [friendsQ.error, pendingRequestsQ.error, listsQ.error, userShowsQ.error, displayListQ.error]
+      .forEach((e, i) => { if (e) silentCatch(`profile:q${i}`)(e); });
+  }, [friendsQ.error, pendingRequestsQ.error, listsQ.error, userShowsQ.error, displayListQ.error]);
 
   const handleStartEdit = () => {
     setEditName(profile?.display_name || '');

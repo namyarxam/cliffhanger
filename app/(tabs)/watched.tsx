@@ -1,15 +1,15 @@
-import { useMemo, useState, useCallback } from 'react';
+import { useMemo, useCallback } from 'react';
 import { View, Text, FlatList, Pressable, StyleSheet } from 'react-native';
 import { useRouter, useFocusEffect } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { getUserShows } from '@/src/lib/watchlist';
 import WatchlistCard from '@/src/components/WatchlistCard';
-import type { UserShow } from '@/src/lib/types';
-import { silentCatch } from '@/src/lib/errorLog';
+import { qk } from '@/src/lib/queryKeys';
 
 export default function WatchedScreen() {
   const theme = useTheme();
@@ -17,20 +17,26 @@ export default function WatchedScreen() {
   const router = useRouter();
   const { session, profile } = useAuth();
   const userId = session?.user?.id;
-  const [shows, setShows] = useState<UserShow[]>([]);
+  const queryClient = useQueryClient();
 
-  const fetchWatched = useCallback(() => {
+  // Reads the same userShows cache key as My Shows / profile / user-profile.
+  // Filtering + sorting is per-screen — keep the cache normalized to the raw
+  // userShows array, derive views in render.
+  const userShowsQ = useQuery({
+    queryKey: qk.userShows.all(userId),
+    queryFn: () => getUserShows(userId!),
+    enabled: !!userId,
+  });
+  const shows = useMemo(() => {
+    return (userShowsQ.data ?? [])
+      .filter(sh => sh.status === 'watched')
+      .sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0));
+  }, [userShowsQ.data]);
+
+  useFocusEffect(useCallback(() => {
     if (!userId) return;
-    getUserShows(userId)
-      .then(s => {
-        const watched = s.filter(sh => sh.status === 'watched')
-          .sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0));
-        setShows(watched);
-      })
-      .catch(silentCatch('watched:fetch'));
-  }, [userId]);
-
-  useFocusEffect(useCallback(() => { fetchWatched(); }, [fetchWatched]));
+    queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
+  }, [userId, queryClient]));
 
   return (
     <SafeAreaView style={styles.container} edges={['top']}>

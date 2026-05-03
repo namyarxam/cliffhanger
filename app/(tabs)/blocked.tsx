@@ -1,15 +1,16 @@
-import { useState, useCallback, useMemo } from 'react';
+import { useCallback, useMemo } from 'react';
 import { View, Text, FlatList, Pressable, StyleSheet, Alert, ActivityIndicator } from 'react-native';
 import { useRouter, useFocusEffect } from 'expo-router';
 import { Image } from 'expo-image';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { getBlockedUsers, unblockUser } from '@/src/lib/moderation';
 import type { UserProfile } from '@/src/lib/types';
-import { silentCatch } from '@/src/lib/errorLog';
+import { qk } from '@/src/lib/queryKeys';
 
 export default function BlockedUsersScreen() {
   const theme = useTheme();
@@ -17,19 +18,20 @@ export default function BlockedUsersScreen() {
   const router = useRouter();
   const { session } = useAuth();
   const userId = session?.user?.id;
-  const [users, setUsers] = useState<UserProfile[]>([]);
-  const [loading, setLoading] = useState(true);
+  const queryClient = useQueryClient();
 
-  const fetchBlocked = useCallback(() => {
+  const blockedQ = useQuery({
+    queryKey: qk.blocked(userId),
+    queryFn: () => getBlockedUsers(userId!),
+    enabled: !!userId,
+  });
+  const users = blockedQ.data ?? [];
+  const loading = blockedQ.isLoading;
+
+  useFocusEffect(useCallback(() => {
     if (!userId) return;
-    setLoading(true);
-    getBlockedUsers(userId)
-      .then(setUsers)
-      .catch(silentCatch('blocked:fetch'))
-      .finally(() => setLoading(false));
-  }, [userId]);
-
-  useFocusEffect(useCallback(() => { fetchBlocked(); }, [fetchBlocked]));
+    queryClient.invalidateQueries({ queryKey: qk.blocked(userId) });
+  }, [userId, queryClient]));
 
   const handleUnblock = useCallback((user: UserProfile) => {
     if (!userId) return;
@@ -43,7 +45,10 @@ export default function BlockedUsersScreen() {
           onPress: async () => {
             try {
               await unblockUser(userId, user.id);
-              setUsers(prev => prev.filter(u => u.id !== user.id));
+              queryClient.setQueryData<UserProfile[]>(
+                qk.blocked(userId),
+                prev => (prev ?? []).filter(u => u.id !== user.id),
+              );
             } catch (e: any) {
               Alert.alert('Could not unblock', e.message || 'Please try again.');
             }
@@ -51,7 +56,7 @@ export default function BlockedUsersScreen() {
         },
       ],
     );
-  }, [userId]);
+  }, [userId, queryClient]);
 
   return (
     <SafeAreaView style={styles.container} edges={['top']}>

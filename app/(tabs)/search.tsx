@@ -1,4 +1,4 @@
-import { useMemo, useState, useCallback, useRef, useEffect } from 'react';
+import { useMemo, useState, useCallback, useRef } from 'react';
 import {
   View,
   Text,
@@ -12,15 +12,16 @@ import {
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { Image } from 'expo-image';
+import { useQuery } from '@tanstack/react-query';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { searchShows } from '@/src/lib/data';
-import { getPopularWithFriends } from '@/src/lib/watchlist';
+import { getPopularWithFriends, POPULAR_SHOWS_LIMIT_DEFAULT } from '@/src/lib/watchlist';
 import type { PopularShow } from '@/src/lib/watchlist';
 import ShowCard from '@/src/components/ShowCard';
 import type { ShowSummary } from '@/src/lib/types';
-import { silentCatch } from '@/src/lib/errorLog';
+import { qk } from '@/src/lib/queryKeys';
 
 export default function SearchScreen() {
   const theme = useTheme();
@@ -32,18 +33,18 @@ export default function SearchScreen() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [query, setQuery] = useState('');
-  const [popular, setPopular] = useState<PopularShow[]>([]);
-  const [loadingPopular, setLoadingPopular] = useState(true);
   const [isFocused, setIsFocused] = useState(false);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  useEffect(() => {
-    if (!userId) return;
-    getPopularWithFriends(userId)
-      .then(setPopular)
-      .catch(silentCatch('search:popular'))
-      .finally(() => setLoadingPopular(false));
-  }, [userId]);
+  // Shares the cache key with My Shows — when one screen invalidates
+  // popular, the other reflects it on next focus without re-fetching.
+  const popularQuery = useQuery({
+    queryKey: qk.popular(userId, POPULAR_SHOWS_LIMIT_DEFAULT),
+    queryFn: () => getPopularWithFriends(userId!, POPULAR_SHOWS_LIMIT_DEFAULT),
+    enabled: !!userId,
+  });
+  const popular: PopularShow[] = popularQuery.data ?? [];
+  const loadingPopular = popularQuery.isLoading;
 
   const handleSearch = useCallback((text: string) => {
     setQuery(text);

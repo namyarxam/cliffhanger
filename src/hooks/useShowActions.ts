@@ -1,5 +1,6 @@
 import { useCallback } from 'react';
 import { Alert, LayoutAnimation } from 'react-native';
+import { useQueryClient } from '@tanstack/react-query';
 import {
   addShow,
   updateShowStatus,
@@ -13,6 +14,7 @@ import {
 } from '@/src/lib/watchlist';
 import { addListItem, removeListItem } from '@/src/lib/lists';
 import { silentCatch } from '@/src/lib/errorLog';
+import { qk } from '@/src/lib/queryKeys';
 import type { ShowFull, Season, WatchStatus, UserShow } from '@/src/lib/types';
 
 // Walk back one episode within a season, or to the last episode of the prior
@@ -42,6 +44,19 @@ interface ShowActionsDeps {
 
 export function useShowActions(deps: ShowActionsDeps) {
   const { userId, id, show, userShow, setUserShow, setWatchedEps, setListsContaining, refetchWatchedEps } = deps;
+  const queryClient = useQueryClient();
+
+  // After any mutation that changes user/show data, invalidate the My Shows
+  // queries so that screen sees fresh data on next focus. Show-detail's own
+  // queries are kept in sync via the setUserShow / setWatchedEps wrappers
+  // that write through to the shared cache.
+  const invalidateMyShows = useCallback(() => {
+    if (!userId) return;
+    queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
+    queryClient.invalidateQueries({ queryKey: qk.nextEpisodes(userId) });
+    queryClient.invalidateQueries({ queryKey: qk.watchedCounts(userId) });
+    queryClient.invalidateQueries({ queryKey: qk.airingToday(userId) });
+  }, [queryClient, userId]);
 
   const handleAddToList = useCallback(async (listId: string) => {
     if (!show) return;
@@ -114,11 +129,12 @@ export function useShowActions(deps: ShowActionsDeps) {
       if (currentSeason !== 0 || currentEpisode !== 0) {
         setUserShow(prev => prev ? { ...prev, current_season: currentSeason, current_episode: currentEpisode } : null);
       }
+      invalidateMyShows();
     } catch (e) {
       silentCatch('show:addWithStatus')(e);
       setUserShow(null);
     }
-  }, [userId, show, setUserShow]);
+  }, [userId, show, setUserShow, invalidateMyShows]);
 
   const handleStatusChange = useCallback(async (status: WatchStatus) => {
     if (!userId || !id || !userShow) return;
@@ -137,6 +153,7 @@ export function useShowActions(deps: ShowActionsDeps) {
               try {
                 await removeShow(userId, id);
                 setUserShow(null);
+                invalidateMyShows();
               } catch (e) { silentCatch('show:remove')(e); }
             },
           },
@@ -169,6 +186,7 @@ export function useShowActions(deps: ShowActionsDeps) {
           setWatchedEps(newSet);
         }
         await updateShowStatus(userId, id, 'watched');
+        invalidateMyShows();
       } catch (e) {
         silentCatch('show:statusChange:watched')(e);
         setUserShow(prevUserShow);
@@ -178,12 +196,13 @@ export function useShowActions(deps: ShowActionsDeps) {
       setUserShow(prev => prev ? { ...prev, status, updated_at: new Date().toISOString() } : null);
       try {
         await updateShowStatus(userId, id, status);
+        invalidateMyShows();
       } catch (e) {
         silentCatch('show:statusChange')(e);
         setUserShow(prevUserShow);
       }
     }
-  }, [userId, id, userShow, show, setUserShow, setWatchedEps, refetchWatchedEps]);
+  }, [userId, id, userShow, show, setUserShow, setWatchedEps, refetchWatchedEps, invalidateMyShows]);
 
   const handleCatchUp = useCallback(async () => {
     if (!userId || !id || !show) return;
@@ -204,18 +223,20 @@ export function useShowActions(deps: ShowActionsDeps) {
         current_episode_airdate: lastAired.airdate,
         caught_up: true,
       } : null);
+      invalidateMyShows();
     } catch {
       refetchWatchedEps();
     }
-  }, [userId, id, show, setWatchedEps, setUserShow, refetchWatchedEps]);
+  }, [userId, id, show, setWatchedEps, setUserShow, refetchWatchedEps, invalidateMyShows]);
 
   const handleRate = useCallback(async (rating: number) => {
     if (!userId || !id) return;
     try {
       await rateShow(userId, id, rating);
       setUserShow(prev => prev ? { ...prev, rating } : null);
+      invalidateMyShows();
     } catch (e) { silentCatch('show:rate')(e); }
-  }, [userId, id, setUserShow]);
+  }, [userId, id, setUserShow, invalidateMyShows]);
 
   const handleEpisodeTap = useCallback(async (season: number, episode: number) => {
     if (!userId || !id || !show) return;
@@ -243,6 +264,7 @@ export function useShowActions(deps: ShowActionsDeps) {
           current_episode: target.episode,
           caught_up: tapCaughtUp,
         } : null);
+        invalidateMyShows();
       } catch {
         refetchWatchedEps();
       }
@@ -309,10 +331,11 @@ export function useShowActions(deps: ShowActionsDeps) {
         current_episode: episode,
         caught_up: tapCaughtUp,
       } : null);
+      invalidateMyShows();
     } catch {
       refetchWatchedEps();
     }
-  }, [userId, id, show, userShow, setUserShow, setWatchedEps, refetchWatchedEps]);
+  }, [userId, id, show, userShow, setUserShow, setWatchedEps, refetchWatchedEps, invalidateMyShows]);
 
   const handleToggleNotify = useCallback(async () => {
     if (!userId || !id || !userShow) return;
@@ -320,11 +343,12 @@ export function useShowActions(deps: ShowActionsDeps) {
     setUserShow(prev => prev ? { ...prev, notify: newValue } : null);
     try {
       await toggleShowNotify(userId, id, newValue);
+      invalidateMyShows();
     } catch (e) {
       setUserShow(prev => prev ? { ...prev, notify: !newValue } : null);
       silentCatch('show:toggleNotify')(e);
     }
-  }, [userId, id, userShow, setUserShow]);
+  }, [userId, id, userShow, setUserShow, invalidateMyShows]);
 
   return {
     handleAddToList,

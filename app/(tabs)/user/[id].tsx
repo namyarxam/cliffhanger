@@ -1,4 +1,6 @@
 import { useMemo, useState, useEffect, useCallback } from 'react';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
+import { qk } from '@/src/lib/queryKeys';
 import {
   View,
   Text,
@@ -33,6 +35,9 @@ const SECTION_ORDER: { key: WatchStatus; title: string }[] = [
   { key: 'watched', title: 'Watched' },
 ];
 
+const EMPTY_USER_SHOWS: UserShow[] = [];
+const EMPTY_LISTS: ListWithItems[] = [];
+
 export default function UserProfileScreen() {
   const theme = useTheme();
   const styles = useMemo(() => createStyles(theme), [theme]);
@@ -41,55 +46,64 @@ export default function UserProfileScreen() {
   const { session } = useAuth();
   const userId = session?.user?.id;
 
-  const [profile, setProfile] = useState<UserProfile | null>(null);
-  const [shows, setShows] = useState<UserShow[]>([]);
-  const [friendLists, setFriendLists] = useState<ListWithItems[]>([]);
-  const [displayList, setDisplayList] = useState<ListWithItems | null>(null);
+  const queryClient = useQueryClient();
   const [activeTab, setActiveTab] = useState<'watchlist' | 'lists'>('watchlist');
   const [expandedList, setExpandedList] = useState<string | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [friendStatus, setFriendStatus] = useState<{
-    friendship_id: string;
-    status: string;
-    is_incoming: boolean;
-  } | null>(null);
   const [reportVisible, setReportVisible] = useState(false);
 
+  // Friend's profile is read-only — fetch their data scoped by THEIR id, not
+  // the viewer's. Sharing the userShows cache key (qk.userShows.all(id))
+  // means if you happened to view your own profile via this route the data
+  // would dedupe with your My Shows cache.
+  const profileQ = useQuery({
+    queryKey: qk.profile(id),
+    queryFn: async () => {
+      const { data } = await supabase.from('profiles').select('*').eq('id', id!).single();
+      return data as UserProfile | null;
+    },
+    enabled: !!id,
+  });
+  const showsQ = useQuery({
+    queryKey: qk.userShows.all(id),
+    queryFn: () => getUserShows(id!),
+    enabled: !!id,
+  });
+  const listsQ = useQuery({
+    queryKey: qk.lists(id),
+    queryFn: () => getLists(id!),
+    enabled: !!id,
+  });
+  const displayListQ = useQuery({
+    queryKey: qk.displayList(id),
+    queryFn: () => getDisplayList(id!),
+    enabled: !!id,
+  });
+  const friendStatusEnabled = !!userId && !!id && id !== userId;
+  const friendStatusQ = useQuery({
+    queryKey: ['friendStatus', userId, id] as const,
+    queryFn: () => getFriendshipStatus(userId!, id!),
+    enabled: friendStatusEnabled,
+  });
+
+  const profile = profileQ.data ?? null;
+  const shows = showsQ.data ?? EMPTY_USER_SHOWS;
+  const friendLists = listsQ.data ?? EMPTY_LISTS;
+  const displayList = displayListQ.data ?? null;
+  const friendStatus = friendStatusQ.data ?? null;
+  const loading = showsQ.isLoading;
+
+  // friendStatus is the only piece of state where local optimistic writes
+  // (sendFriendRequest, removeFriend) need to override the cached value.
+  // Use queryClient.setQueryData for this.
+  const setFriendStatus = useCallback((next: { friendship_id: string; status: string; is_incoming: boolean } | null) => {
+    queryClient.setQueryData(['friendStatus', userId, id], next);
+  }, [queryClient, userId, id]);
+
+  // Reset local UI state when navigating to a new user.
   useEffect(() => {
-    if (!id) return;
-
-    setProfile(null);
-    setShows([]);
-    setFriendLists([]);
-    setDisplayList(null);
     setActiveTab('watchlist');
-    setLoading(true);
-
-    // Fetch profile
-    supabase
-      .from('profiles')
-      .select('*')
-      .eq('id', id)
-      .single()
-      .then(({ data }) => {
-        if (data) setProfile(data);
-      });
-
-    // Fetch their lists
-    getLists(id).then(setFriendLists).catch(silentCatch('userProfile:lists'));
-    getDisplayList(id).then(d => setDisplayList(d)).catch(silentCatch('userProfile:display'));
-
-    // Fetch their shows
-    getUserShows(id)
-      .then(setShows)
-      .catch(silentCatch('userProfile:shows'))
-      .finally(() => setLoading(false));
-
-    // Fetch friendship status
-    if (userId && id !== userId) {
-      getFriendshipStatus(userId, id).then(setFriendStatus).catch(silentCatch('userProfile:friendship'));
-    }
-  }, [id, userId]);
+    setExpandedList(null);
+  }, [id]);
 
   // Default to lists tab if they only have lists and no shows
   useEffect(() => {
