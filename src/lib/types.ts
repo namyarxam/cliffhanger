@@ -208,6 +208,8 @@ export interface ConversationMember {
   current_season: number;
   current_episode: number;
   show_status: WatchStatus | null;
+  muted: boolean;
+  last_active_at: string | null;
 }
 
 export interface Message {

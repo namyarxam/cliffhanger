@@ -151,14 +151,23 @@ export async function sendConversationInvite(
   invitedBy: string,
   invitedUser: string,
 ): Promise<void> {
-  const { error } = await supabase
+  const { data, error } = await supabase
     .from('conversation_invites')
     .upsert(
       { conversation_id: conversationId, invited_by: invitedBy, invited_user: invitedUser, status: 'pending' },
       { onConflict: 'conversation_id,invited_user' },
-    );
+    )
+    .select('id')
+    .single();
 
   if (error) throw error;
+
+  // Fire-and-forget push notification. Edge Function gates on the invitee's
+  // master toggle and pending-status check.
+  if (data?.id) {
+    supabase.functions.invoke('notify-invite', { body: { invite_id: data.id } })
+      .catch(() => {});
+  }
 }
 
 export async function getPendingConversationInvites(
@@ -407,7 +416,7 @@ export async function getConversationMembers(
 ): Promise<ConversationMember[]> {
   const { data: members, error } = await supabase
     .from('conversation_members')
-    .select('user_id, joined_at')
+    .select('user_id, joined_at, muted, last_active_at')
     .eq('conversation_id', conversationId);
 
   if (error) throw error;
@@ -450,6 +459,8 @@ export async function getConversationMembers(
       current_season: progress?.season ?? 0,
       current_episode: progress?.episode ?? 0,
       show_status: (progress?.status as import('./types').WatchStatus) ?? null,
+      muted: m.muted ?? false,
+      last_active_at: m.last_active_at ?? null,
     };
   });
 }
@@ -493,6 +504,36 @@ export async function toggleSpoilerLock(conversationId: string, enabled: boolean
     .eq('id', conversationId);
 
   if (error) throw error;
+}
+
+// Per-chat mute. Stored on conversation_members so each member's preference
+// is independent. notify-message Edge Function reads this column.
+export async function setConversationMuted(
+  conversationId: string,
+  userId: string,
+  muted: boolean,
+): Promise<void> {
+  const { error } = await supabase
+    .from('conversation_members')
+    .update({ muted })
+    .eq('conversation_id', conversationId)
+    .eq('user_id', userId);
+
+  if (error) throw error;
+}
+
+// Bump last_active_at — chat detail screen calls this on focus and on send.
+// notify-message uses the timestamp to suppress pushes for members currently
+// in the chat (within ~30s).
+export async function bumpLastActive(
+  conversationId: string,
+  userId: string,
+): Promise<void> {
+  await supabase
+    .from('conversation_members')
+    .update({ last_active_at: new Date().toISOString() })
+    .eq('conversation_id', conversationId)
+    .eq('user_id', userId);
 }
 
 // ─── Show Management ──────────────────────────────────────────────────────────
@@ -620,6 +661,13 @@ export async function sendMessage(
       event: 'new_message',
       payload: msg,
     });
+
+  // Fire-and-forget push notification fanout. The Edge Function filters by
+  // master toggle / per-chat mute / last_active_at server-side, so this is
+  // unconditional from the sender's perspective. Errors are swallowed —
+  // missing one notification is preferable to blocking the send path.
+  supabase.functions.invoke('notify-message', { body: { message_id: msg.id } })
+    .catch(() => {});
 
   return msg;
 }

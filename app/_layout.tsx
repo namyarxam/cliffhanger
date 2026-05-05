@@ -6,6 +6,7 @@ import { useFonts, DMSans_400Regular, DMSans_500Medium, DMSans_600SemiBold, DMSa
 import { StatusBar } from 'expo-status-bar';
 import * as SplashScreen from 'expo-splash-screen';
 import * as Sentry from '@sentry/react-native';
+import * as Notifications from 'expo-notifications';
 import { QueryClient, QueryClientProvider, focusManager } from '@tanstack/react-query';
 import { AuthProvider, useAuth } from '@/src/providers/AuthProvider';
 import { ThemeProvider, useThemeControl } from '@/src/providers/ThemeProvider';
@@ -125,6 +126,28 @@ function AuthGate() {
   useEffect(() => {
     Linking.getInitialURL().then(url => { if (url) handleAuthDeepLink(url, router); });
     const sub = Linking.addEventListener('url', ({ url }) => handleAuthDeepLink(url, router));
+    return () => sub.remove();
+  }, [router]);
+
+  // Route notification taps. notify-message + notify-invite Edge Functions
+  // include `{ type: 'chat' | 'invite', conversation_id }` in the data
+  // payload. Chat → open the conversation. Invite → land on the chat list
+  // where they accept/decline (we don't open the conversation directly
+  // because they aren't a member yet and the screen would 403).
+  useEffect(() => {
+    const route = (data: unknown) => {
+      const d = data as { type?: string; conversation_id?: string } | null;
+      if (!d?.conversation_id) return;
+      if (d.type === 'chat') router.push(`/(tabs)/chat/${d.conversation_id}`);
+      else if (d.type === 'invite') router.push('/(tabs)/chat');
+    };
+    // Cold-launch case: the OS opened the app via notification tap.
+    Notifications.getLastNotificationResponseAsync().then(r => {
+      if (r) route(r.notification.request.content.data);
+    });
+    const sub = Notifications.addNotificationResponseReceivedListener(r => {
+      route(r.notification.request.content.data);
+    });
     return () => sub.remove();
   }, [router]);
 

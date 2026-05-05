@@ -41,6 +41,8 @@ import {
   renameConversation,
   attachShow,
   detachShow,
+  setConversationMuted,
+  bumpLastActive,
 } from '@/src/lib/conversations';
 import { getUserShows } from '@/src/lib/watchlist';
 import FriendRow from '@/src/components/FriendRow';
@@ -213,12 +215,23 @@ export default function ChatDetailScreen() {
 
   // Belt-and-suspenders for realtime drops: if a packet is missed during a
   // suspended/backgrounded socket, focus brings the data back in line.
+  // Also bumps last_active_at so the notify-message Edge Function knows the
+  // user is sitting in this chat and shouldn't push to them. Re-bumps every
+  // 20s while focused so a passive reader stays "active" past the 30s
+  // suppression cutoff — without this, sitting in a chat for >30s would
+  // start firing notifications for incoming messages the user is reading.
   useFocusEffect(
     useCallback(() => {
       if (!id) return;
       queryClient.invalidateQueries({ queryKey: qk.conversation(id) });
       queryClient.invalidateQueries({ queryKey: ['conversationMembers', id] });
-    }, [id, queryClient]),
+      if (!userId) return;
+      bumpLastActive(id, userId).catch(() => {});
+      const interval = setInterval(() => {
+        bumpLastActive(id, userId).catch(() => {});
+      }, 20000);
+      return () => clearInterval(interval);
+    }, [id, userId, queryClient]),
   );
 
   const handleSend = useCallback(async () => {
@@ -289,6 +302,26 @@ export default function ChatDetailScreen() {
       },
     ]);
   }, [userId, id, router]);
+
+  const handleToggleMuted = useCallback(async () => {
+    if (!userId || !id) return;
+    const current = members.find(m => m.user_id === userId)?.muted ?? false;
+    const next = !current;
+    // Optimistic write — flip the cached members entry so the toggle moves
+    // immediately. Postgres realtime sub will reconcile if anything diverges.
+    queryClient.setQueryData<ConversationMember[]>(
+      qk.conversationMembers(id, conversation?.show_id ?? null),
+      prev => (prev ?? EMPTY_MEMBERS).map(m =>
+        m.user_id === userId ? { ...m, muted: next } : m,
+      ),
+    );
+    try {
+      await setConversationMuted(id, userId, next);
+    } catch (e) {
+      silentCatch('chatDetail:toggleMuted')(e);
+      queryClient.invalidateQueries({ queryKey: ['conversationMembers', id] });
+    }
+  }, [userId, id, members, conversation?.show_id, queryClient]);
 
   const handleToggleSpoilerLock = useCallback(async () => {
     if (!conversation) return;
@@ -617,6 +650,21 @@ export default function ChatDetailScreen() {
                 {!isOwner && <Text style={styles.settingsNote}>Only the creator can change this</Text>}
               </View>
             )}
+
+            {/* Mute notifications (per-chat, every member) */}
+            <View style={styles.settingsSection}>
+              <Pressable style={styles.settingsRow} onPress={handleToggleMuted}>
+                <View style={styles.settingsRowInfo}>
+                  <Text style={styles.settingsLabel}>Mute notifications</Text>
+                  <Text style={styles.settingsHint}>
+                    Stop push notifications for new messages in this chat. You'll still see them inside the app.
+                  </Text>
+                </View>
+                <View style={[styles.toggleTrack, !!myMember?.muted && styles.toggleTrackOn]}>
+                  <View style={[styles.toggleThumb, !!myMember?.muted && styles.toggleThumbOn]} />
+                </View>
+              </Pressable>
+            </View>
 
             {/* Leave */}
             <View style={styles.settingsSection}>

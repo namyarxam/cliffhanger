@@ -28,6 +28,7 @@ export default function SettingsScreen() {
   const { user, refreshProfile, signOut } = useAuth();
   const [pushNewEpisodes, setPushNewEpisodes] = useState(false);
   const [notifyAllCurrent, setNotifyAllCurrent] = useState(false);
+  const [pushChatMessages, setPushChatMessages] = useState(true);
   const [showTop4, setShowTop4] = useState(false);
   const [showPosters, setShowPosters] = useState(true);
   const [hideRatings, setHideRatings] = useState(false);
@@ -36,7 +37,7 @@ export default function SettingsScreen() {
     if (!user?.id) return;
     supabase
       .from('profiles')
-      .select('push_new_episodes, notify_all_current, show_top4_in_list, show_posters_in_list, hide_ratings')
+      .select('push_new_episodes, notify_all_current, push_chat_messages, show_top4_in_list, show_posters_in_list, hide_ratings')
       .eq('id', user.id)
       .single()
       .then(({ data, error }) => {
@@ -44,6 +45,7 @@ export default function SettingsScreen() {
         if (data) {
           setPushNewEpisodes(data.push_new_episodes);
           setNotifyAllCurrent(data.notify_all_current);
+          setPushChatMessages(data.push_chat_messages ?? true);
           setShowTop4(data.show_top4_in_list);
           setShowPosters(data.show_posters_in_list);
           setHideRatings(data.hide_ratings);
@@ -91,6 +93,26 @@ export default function SettingsScreen() {
     const ok = await updateProfile('notify_all_current', newValue);
     if (!ok) setNotifyAllCurrent(!newValue);
   }, [notifyAllCurrent, updateProfile]);
+
+  const handleToggleChatMessages = useCallback(async () => {
+    if (!user?.id) return;
+    const newValue = !pushChatMessages;
+    // Permission gate same as the episode toggle — turning ON pushes for
+    // the first time needs OS permission and a token registered.
+    if (newValue) {
+      const token = await registerForPushNotifications(user.id);
+      if (!token) {
+        Alert.alert(
+          'Notifications Disabled',
+          'Please enable notifications for Cliffhanger in your device settings.',
+        );
+        return;
+      }
+    }
+    setPushChatMessages(newValue);
+    const ok = await updateProfile('push_chat_messages', newValue);
+    if (!ok) setPushChatMessages(!newValue);
+  }, [user?.id, pushChatMessages, updateProfile]);
 
   const handleToggleTop4 = useCallback(async () => {
     const newValue = !showTop4;
@@ -199,6 +221,20 @@ export default function SettingsScreen() {
             !pushNewEpisodes && { opacity: 0.4 },
           ]}>
             <View style={[styles.toggleThumb, notifyAllCurrent && pushNewEpisodes && styles.toggleThumbOn]} />
+          </View>
+        </Pressable>
+
+        <View style={styles.settingGap} />
+
+        <Pressable style={styles.settingRow} onPress={handleToggleChatMessages}>
+          <View style={styles.settingInfo}>
+            <Text style={styles.settingLabel}>Chat Messages</Text>
+            <Text style={styles.settingHint}>
+              Get notified when friends send a message or invite you to a chat. Mute individual chats from their settings.
+            </Text>
+          </View>
+          <View style={[styles.toggleTrack, pushChatMessages && styles.toggleTrackOn]}>
+            <View style={[styles.toggleThumb, pushChatMessages && styles.toggleThumbOn]} />
           </View>
         </Pressable>
       </View>
