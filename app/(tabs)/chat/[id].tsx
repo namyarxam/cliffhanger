@@ -17,7 +17,7 @@ import {
   Animated,
   PanResponder,
 } from 'react-native';
-import { useLocalSearchParams, useRouter } from 'expo-router';
+import { useLocalSearchParams, useRouter, useFocusEffect } from 'expo-router';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Image } from 'expo-image';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -170,6 +170,14 @@ export default function ChatDetailScreen() {
   // Realtime via Broadcast — write incoming messages directly into the
   // messages query cache so all readers (including any future re-render of
   // this screen, or a re-mount on tab focus) stay in sync.
+  //
+  // Plus postgres_changes on the conversation row + members table so any
+  // owner-side mutation (spoiler_lock toggle, rename, attach/detach show,
+  // member added/removed) pushes to every other member instantly. Without
+  // this, the toggling member's app updates locally but everyone else
+  // serves stale cached data until force-quit. Requires Replication
+  // enabled on `conversations` and `conversation_members` in Supabase
+  // Dashboard.
   useEffect(() => {
     if (!id) return;
     const channel = supabase
@@ -179,9 +187,39 @@ export default function ChatDetailScreen() {
         if (msg.user_id === userId) return;
         queryClient.setQueryData<Message[]>(qk.messages(id), prev => [msg, ...(prev ?? EMPTY_MESSAGES)]);
       })
+      .on(
+        'postgres_changes',
+        { event: 'UPDATE', schema: 'public', table: 'conversations', filter: `id=eq.${id}` },
+        (payload) => {
+          // Write the post-update row through to the cached conversation so
+          // spoiler-lock / show / name changes reflect without a refetch.
+          const next = payload.new as Conversation;
+          queryClient.setQueryData<Conversation | null>(qk.conversation(id), next);
+        },
+      )
+      .on(
+        'postgres_changes',
+        { event: '*', schema: 'public', table: 'conversation_members', filter: `conversation_id=eq.${id}` },
+        () => {
+          // Member added / removed — invalidate so the members query refetches
+          // (we don't have the joined profile data on the realtime payload).
+          // Prefix match to hit both with-show and without-show entries.
+          queryClient.invalidateQueries({ queryKey: ['conversationMembers', id] });
+        },
+      )
       .subscribe();
     return () => { supabase.removeChannel(channel); };
   }, [id, userId, queryClient]);
+
+  // Belt-and-suspenders for realtime drops: if a packet is missed during a
+  // suspended/backgrounded socket, focus brings the data back in line.
+  useFocusEffect(
+    useCallback(() => {
+      if (!id) return;
+      queryClient.invalidateQueries({ queryKey: qk.conversation(id) });
+      queryClient.invalidateQueries({ queryKey: ['conversationMembers', id] });
+    }, [id, queryClient]),
+  );
 
   const handleSend = useCallback(async () => {
     if (!userId || !id || !messageText.trim() || sending) return;
