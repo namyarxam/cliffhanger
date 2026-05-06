@@ -44,7 +44,8 @@ import {
   setConversationMuted,
   bumpLastActive,
 } from '@/src/lib/conversations';
-import { getUserShows } from '@/src/lib/watchlist';
+import { getUserShows, markExactlyUpTo } from '@/src/lib/watchlist';
+import { fetchShow } from '@/src/lib/data';
 import FriendRow from '@/src/components/FriendRow';
 import GifPicker from '@/src/components/GifPicker';
 import type { Conversation, ConversationMember, Message, UserProfile, UserShow } from '@/src/lib/types';
@@ -332,6 +333,43 @@ export default function ChatDetailScreen() {
     } catch (e) { silentCatch('chatDetail:spoilerLock')(e); }
   }, [conversation]);
 
+  // Quick-catchup from the spoiler-lock screen. Fetches the show's full
+  // episode list (needed to insert all episode_watches rows up to the
+  // front-runner) then jumps the user's progress to match. The chat
+  // unlocks on the next conversationMembers refetch — both via the
+  // explicit invalidate below and the postgres_changes realtime sync
+  // already wired into useEffect.
+  const [catchingUp, setCatchingUp] = useState(false);
+  const handleQuickCatchup = useCallback(async (targetSeason: number, targetEpisode: number) => {
+    if (!userId || !conversation?.show_id || catchingUp) return;
+    Alert.alert(
+      `Catch up to S${targetSeason} E${targetEpisode}?`,
+      'This marks every episode up to that point as watched and unlocks the chat.',
+      [
+        { text: 'Cancel', style: 'cancel' },
+        {
+          text: 'Catch up',
+          style: 'default',
+          onPress: async () => {
+            setCatchingUp(true);
+            try {
+              const show = await fetchShow(conversation.show_id!);
+              await markExactlyUpTo(userId, conversation.show_id!, targetSeason, targetEpisode, show.seasons);
+              queryClient.invalidateQueries({ queryKey: qk.conversationMembers(id, conversation.show_id) });
+              queryClient.invalidateQueries({ queryKey: ['userShows', userId] });
+              queryClient.invalidateQueries({ queryKey: ['watchedCounts', userId] });
+              queryClient.invalidateQueries({ queryKey: ['nextEpisodes', userId] });
+            } catch (e) {
+              silentCatch('chatDetail:quickCatchup')(e);
+            } finally {
+              setCatchingUp(false);
+            }
+          },
+        },
+      ],
+    );
+  }, [userId, id, conversation, catchingUp, queryClient]);
+
   const handleOpenInviteModal = useCallback(async () => {
     if (!userId || !id) return;
     setInviteModalVisible(true);
@@ -560,6 +598,17 @@ export default function ChatDetailScreen() {
               <Text style={styles.lockedTitle}>Chat Locked</Text>
               <Text style={styles.lockedMessage}>Catch up to S{frontRunner.season} E{frontRunner.episode} to unlock</Text>
               <Text style={styles.lockedHint}>This prevents spoilers — once you're caught up, the chat opens instantly</Text>
+              <Pressable
+                disabled={catchingUp}
+                style={({ pressed }) => [styles.lockedCatchupButton, (pressed || catchingUp) && { opacity: 0.7 }]}
+                onPress={() => handleQuickCatchup(frontRunner.season, frontRunner.episode)}
+              >
+                {catchingUp ? (
+                  <ActivityIndicator color="#fff" size="small" />
+                ) : (
+                  <Text style={styles.lockedCatchupText}>Catch me up</Text>
+                )}
+              </Pressable>
             </View>
           )}
         </View>
@@ -804,6 +853,8 @@ const createStyles = (theme: Theme) => StyleSheet.create({
   lockedTitle: { fontSize: 20, fontFamily: 'DMSans_700Bold', color: theme.text, marginBottom: 8 },
   lockedMessage: { fontSize: 15, fontFamily: 'DMSans_600SemiBold', color: theme.accent, textAlign: 'center', marginBottom: 12 },
   lockedHint: { fontSize: 13, fontFamily: 'DMSans_400Regular', color: theme.textFaint, textAlign: 'center', lineHeight: 20 },
+  lockedCatchupButton: { marginTop: 24, backgroundColor: theme.accent, paddingHorizontal: 24, paddingVertical: 12, borderRadius: 8, minWidth: 160, alignItems: 'center' },
+  lockedCatchupText: { fontSize: 14, fontFamily: 'DMSans_700Bold', color: '#fff', letterSpacing: 0.3 },
 
   // Modals
   modalContainer: { flex: 1, backgroundColor: theme.bg },

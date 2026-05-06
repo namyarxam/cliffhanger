@@ -375,6 +375,14 @@ const createStyles = (theme: Theme) => StyleSheet.create({
     fontSize: 14,
   },
   exploreScroll: {
+    // flexGrow lets the content container expand to fill the ScrollView's
+    // viewport when the carousels alone don't fill it (e.g. user has no
+    // friends so Popular is hidden, or the device is tall). justifyContent
+    // then centers them vertically. If the carousels do fill the viewport
+    // — tall enough device, all three rows visible — flexGrow yields and
+    // the content scrolls from the top normally.
+    flexGrow: 1,
+    justifyContent: 'center',
     paddingTop: 12,
     paddingBottom: 20,
   },

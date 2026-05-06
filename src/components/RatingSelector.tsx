@@ -45,6 +45,14 @@ function RatingSelector({ rating, onRate, onDragStart, onDragEnd }: Props) {
     const x = pageX - trackPageX.current;
     const clamped = Math.max(0, Math.min(x, trackWidth));
     const raw = 1.0 + (clamped / trackWidth) * 9.0;
+    // Magnetic snap to integers. Without this the slider rounds to 0.1
+    // increments uniformly — anyone aiming for a whole number has to land
+    // within the default ±0.05 of it. Widening the integer zone to ±0.10
+    // gives a soft "stick at whole numbers" feel while still letting users
+    // dial in 7.3 / 7.7 / etc. between integer ticks.
+    const MAGNETIC_RADIUS = 0.10;
+    const nearestInt = Math.round(raw);
+    if (Math.abs(raw - nearestInt) <= MAGNETIC_RADIUS) return nearestInt;
     return Math.round(raw * 10) / 10;
   }
 
@@ -119,6 +127,25 @@ function RatingSelector({ rating, onRate, onDragStart, onDragEnd }: Props) {
             ]}
           />
         </View>
+
+        {/* Integer tick marks. Render outside the track-fill clipping
+            container so they sit on top of both filled and empty regions.
+            10 ticks at 1.0, 2.0, ..., 10.0 — give users a visible anchor
+            for the magnetic snap zones. */}
+        {trackWidth > 0 && Array.from({ length: 10 }, (_, i) => {
+          const r = i + 1;
+          const left = ratingToX(r);
+          return (
+            <View
+              key={r}
+              pointerEvents="none"
+              style={[
+                styles.tick,
+                { left: left - 1 },
+              ]}
+            />
+          );
+        })}
 
         {/* Thumb */}
         {trackWidth > 0 && (
@@ -195,6 +222,15 @@ const createStyles = (theme: Theme) => StyleSheet.create({
     borderRadius: 10,
     borderWidth: 2,
     borderColor: theme.textBright,
+  },
+  tick: {
+    position: 'absolute',
+    top: '50%',
+    marginTop: -5,
+    width: 2,
+    height: 10,
+    borderRadius: 1,
+    backgroundColor: theme.textFaint,
   },
   scaleLabels: {
     flexDirection: 'row',

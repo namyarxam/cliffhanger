@@ -339,7 +339,7 @@ export default function ShowDetailScreen() {
                     if (s === 'watched' && show.status !== 'Ended' && userShow?.status !== 'watched') {
                       Alert.alert(
                         'Are you sure you are finished?',
-                        'This show is still airing.',
+                        'This show is still airing. Finished shows are not tracked.',
                         [
                           { text: 'Cancel', style: 'cancel' },
                           { text: 'Finished', style: 'destructive', onPress: apply },
