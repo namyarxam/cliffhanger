@@ -60,7 +60,7 @@ export interface ShowFull extends ShowSummary {
 
 // ─── New types for mobile app ───────────────────────────────────────────────
 
-export type WatchStatus = 'want_to_watch' | 'currently_watching' | 'watched' | 'dropped';
+export type WatchStatus = 'want_to_watch' | 'currently_watching' | 'watched' | 'muted';
 
 // Centralized TVMaze metadata. One row per show_id, shared by every user
 // tracking the show. Mutated by the refresh-show-metadata cron and by

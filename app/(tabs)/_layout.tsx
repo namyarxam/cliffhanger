@@ -75,7 +75,7 @@ export default function TabLayout() {
     const path = pathname.replace(/^\//, '');
 
     if (path === '' || path === 'index') return 'index';
-    if (path === 'search') return 'search';
+    if (path === 'explore') return 'explore';
     if (path === 'chat') return 'chat';
     if (path === 'profile') return 'profile';
 
@@ -102,7 +102,7 @@ export default function TabLayout() {
       tabBar={(props) => {
         const tabs = [
           { name: 'index', title: 'My Shows', icon: 'tv' as const },
-          { name: 'search', title: 'Search', icon: 'search' as const },
+          { name: 'explore', title: 'Explore', icon: 'compass' as const },
           { name: 'chat', title: 'Chat', icon: 'comments' as const },
           { name: 'profile', title: 'Profile', icon: 'user' as const },
         ];
@@ -152,7 +152,7 @@ export default function TabLayout() {
       }}
     >
       <Tabs.Screen name="index" options={{ title: 'My Shows' }} />
-      <Tabs.Screen name="search" options={{ title: 'Search' }} />
+      <Tabs.Screen name="explore" options={{ title: 'Explore' }} />
       <Tabs.Screen name="chat" options={{ title: 'Chat' }} />
       <Tabs.Screen name="profile" options={{ title: 'Profile' }} />
       <Tabs.Screen name="settings" options={{ href: null, headerShown: false }} />
@@ -163,7 +163,7 @@ export default function TabLayout() {
       <Tabs.Screen name="lists" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="lists/[id]" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="user/[id]" options={{ href: null, headerShown: false }} />
-      <Tabs.Screen name="dropped" options={{ href: null, headerShown: false }} />
+      <Tabs.Screen name="muted" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="watched" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="blocked" options={{ href: null, headerShown: false }} />
     </Tabs>

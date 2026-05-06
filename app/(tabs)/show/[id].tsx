@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import { useLocalSearchParams, useRouter, useFocusEffect } from 'expo-router';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import * as Haptics from 'expo-haptics';
 import { Image } from 'expo-image';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -29,8 +30,8 @@ import type { WatchStatus } from '@/src/lib/types';
 const STATUS_LABELS: Record<WatchStatus, string> = {
   want_to_watch: 'Watchlist',
   currently_watching: 'Watching',
-  watched: 'Watched',
-  dropped: 'Dropped',
+  watched: 'Finished',
+  muted: 'Muted',
 };
 
 const STATUSES: WatchStatus[] = ['want_to_watch', 'currently_watching', 'watched'];
@@ -55,7 +56,7 @@ const STATUS_ICONS: Record<WatchStatus, React.ComponentProps<typeof FontAwesome>
   want_to_watch: 'bookmark-o',
   currently_watching: 'play',
   watched: 'check',
-  dropped: 'ban',
+  muted: 'volume-off',
 };
 
 export default function ShowDetailScreen() {
@@ -167,55 +168,45 @@ export default function ShowDetailScreen() {
             <FontAwesome name="chevron-left" size={16} color={theme.accent} />
             <Text style={styles.backText}>Back</Text>
           </Pressable>
+          {/* Mute toggle. No confirm alert in either direction — single
+              tap commits. When muted, the page content below dims so the
+              muted state is visible without a banner. The button itself
+              stays at full opacity so the user can always tap to unmute. */}
           <Pressable
             style={({ pressed }) => [
               styles.topBarAction,
-              userShow?.status === 'dropped' && styles.topBarActionDropped,
+              userShow?.status === 'muted' && styles.topBarActionMuted,
               pressed && { opacity: 0.7 },
             ]}
+            hitSlop={8}
             onPress={() => {
-              const isDropped = userShow?.status === 'dropped';
+              const wasMuted = userShow?.status === 'muted';
               Haptics.impactAsync(
-                isDropped
+                wasMuted
                   ? Haptics.ImpactFeedbackStyle.Light
                   : Haptics.ImpactFeedbackStyle.Medium
               );
-              // Already dropped → re-tap = un-track (existing "Remove from
-              // list?" alert via handleStatusChange's same-status branch).
-              if (isDropped) {
-                actions.handleStatusChange('dropped');
-                return;
+              if (wasMuted) {
+                // Toggle off: silent untrack — no "Remove from list?" alert.
+                actions.handleStatusChange('muted', { confirm: false });
+              } else {
+                if (userShow) actions.handleStatusChange('muted');
+                else actions.handleAddWithStatus('muted');
               }
-              // Not dropped (untracked, or in any other status) → confirm
-              // with explainer so users understand the side effect on
-              // explore carousels.
-              Alert.alert(
-                'Not interested?',
-                "Dropping tells us you're not into this show. It'll be added to your Dropped list in your profile.",
-                [
-                  { text: 'Cancel', style: 'cancel' },
-                  {
-                    text: 'Drop',
-                    style: 'destructive',
-                    onPress: () => {
-                      if (userShow) actions.handleStatusChange('dropped');
-                      else actions.handleAddWithStatus('dropped');
-                    },
-                  },
-                ],
-              );
             }}
           >
-            <FontAwesome
-              name="ban"
-              size={15}
-              color={userShow?.status === 'dropped' ? '#fff' : 'rgba(239,68,68,0.5)'}
+            {/* Icon flips between speaker (inactive) and slashed-speaker
+                (active = muted). Ionicons because FontAwesome 4 doesn't
+                ship a slashed-speaker glyph. */}
+            <Ionicons
+              name={userShow?.status === 'muted' ? 'volume-mute' : 'volume-medium'}
+              size={26}
+              color={userShow?.status === 'muted' ? '#fff' : theme.textDim}
             />
-            {userShow?.status === 'dropped' && (
-              <Text style={styles.topBarActionDroppedText}>Dropped</Text>
-            )}
           </Pressable>
         </View>
+
+        <View style={userShow?.status === 'muted' ? styles.mutedContent : undefined}>
 
         {/* Hero: Poster + Info */}
         <View style={styles.hero}>
@@ -341,8 +332,22 @@ export default function ShowDetailScreen() {
                   ]}
                   onPress={() => {
                     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-                    if (userShow) actions.handleStatusChange(s);
-                    else actions.handleAddWithStatus(s);
+                    const apply = () => {
+                      if (userShow) actions.handleStatusChange(s);
+                      else actions.handleAddWithStatus(s);
+                    };
+                    if (s === 'watched' && show.status !== 'Ended' && userShow?.status !== 'watched') {
+                      Alert.alert(
+                        'Are you sure you are finished?',
+                        'This show is still airing.',
+                        [
+                          { text: 'Cancel', style: 'cancel' },
+                          { text: 'Finished', style: 'destructive', onPress: apply },
+                        ],
+                      );
+                      return;
+                    }
+                    apply();
                   }}
                 >
                   <FontAwesome name={STATUS_ICONS[s]} size={13} color={iconColor} />
@@ -429,12 +434,12 @@ export default function ShowDetailScreen() {
                     const behind = fw.season > 0 ? getEpisodesBehind(fw.season, fw.episode) : 0;
                     const statusLabel = fw.status === 'want_to_watch' ? 'Wants to watch'
                       : fw.status === 'watched' ? 'Finished'
-                      : fw.status === 'dropped' ? 'Dropped'
+                      : fw.status === 'muted' ? 'Muted'
                       : fw.season === 0 ? 'Not started'
                       : behind === 0 ? 'Caught up'
                       : `${behind} ep${behind !== 1 ? 's' : ''} behind`;
                     const isPositive = fw.status === 'watched' || (fw.status === 'currently_watching' && behind === 0);
-                    const isDropped = fw.status === 'dropped';
+                    const isMuted = fw.status === 'muted';
                     return (
                       <View key={fw.profile.id} style={styles.friendRow}>
                         {fw.profile.avatar_url ? (
@@ -447,7 +452,7 @@ export default function ShowDetailScreen() {
                           </View>
                         )}
                         <Text style={styles.friendName} numberOfLines={1}>{fw.profile.display_name}</Text>
-                        <Text style={[styles.friendStatus, isPositive && styles.friendStatusPositive, isDropped && styles.friendStatusDropped]}>{statusLabel}</Text>
+                        <Text style={[styles.friendStatus, isPositive && styles.friendStatusPositive, isMuted && styles.friendStatusMuted]}>{statusLabel}</Text>
                       </View>
                     );
                   })}
@@ -460,19 +465,19 @@ export default function ShowDetailScreen() {
         {/* Friend activity — flat list for Watchlist, Dropped, and no-status.
             For the "no show added yet" case this is the top priority so social
             signal is the first thing a user sees when evaluating a show. */}
-        {friendsWatching.length > 0 && (!userShow || userShow.status === 'want_to_watch' || userShow.status === 'dropped') && (
+        {friendsWatching.length > 0 && (!userShow || userShow.status === 'want_to_watch' || userShow.status === 'muted') && (
           <View style={styles.friendsFlatSection}>
             <Text style={styles.friendsFlatTitle}>Friend activity</Text>
             {friendsWatching.map(fw => {
               const behind = fw.season > 0 ? getEpisodesBehind(fw.season, fw.episode) : 0;
               const statusLabel = fw.status === 'want_to_watch' ? 'Wants to watch'
                 : fw.status === 'watched' ? 'Finished'
-                : fw.status === 'dropped' ? 'Dropped'
+                : fw.status === 'muted' ? 'Muted'
                 : fw.season === 0 ? 'Not started'
                 : behind === 0 ? 'Caught up'
                 : `${behind} ep${behind !== 1 ? 's' : ''} behind`;
               const isPositive = fw.status === 'watched' || (fw.status === 'currently_watching' && behind === 0);
-              const isDropped = fw.status === 'dropped';
+              const isMuted = fw.status === 'muted';
               return (
                 <View key={fw.profile.id} style={styles.friendFlatRow}>
                   {fw.profile.avatar_url ? (
@@ -485,7 +490,7 @@ export default function ShowDetailScreen() {
                     </View>
                   )}
                   <Text style={styles.friendName} numberOfLines={1}>{fw.profile.display_name}</Text>
-                  <Text style={[styles.friendStatus, isPositive && styles.friendStatusPositive, isDropped && styles.friendStatusDropped]}>{statusLabel}</Text>
+                  <Text style={[styles.friendStatus, isPositive && styles.friendStatusPositive, isMuted && styles.friendStatusMuted]}>{statusLabel}</Text>
                 </View>
               );
             })}
@@ -583,12 +588,12 @@ export default function ShowDetailScreen() {
                     const hasRating = fw.status === 'watched' && fw.rating != null;
                     const statusLabel = fw.status === 'want_to_watch' ? 'Wants to watch'
                       : fw.status === 'watched' ? 'Finished'
-                      : fw.status === 'dropped' ? 'Dropped'
+                      : fw.status === 'muted' ? 'Muted'
                       : fw.season === 0 ? 'Not started'
                       : behind === 0 ? 'Caught up'
                       : `${behind} ep${behind !== 1 ? 's' : ''} behind`;
                     const isPositive = fw.status === 'watched' || (fw.status === 'currently_watching' && behind === 0);
-                    const isDropped = fw.status === 'dropped';
+                    const isMuted = fw.status === 'muted';
                     return (
                       <View key={fw.profile.id} style={styles.friendFlatRow}>
                         {fw.profile.avatar_url ? (
@@ -608,7 +613,7 @@ export default function ShowDetailScreen() {
                             </Text>
                           </View>
                         ) : (
-                          <Text style={[styles.friendStatus, isPositive && styles.friendStatusPositive, isDropped && styles.friendStatusDropped]}>{statusLabel}</Text>
+                          <Text style={[styles.friendStatus, isPositive && styles.friendStatusPositive, isMuted && styles.friendStatusMuted]}>{statusLabel}</Text>
                         )}
                       </View>
                     );
@@ -617,6 +622,7 @@ export default function ShowDetailScreen() {
             )}
           </>
         )}
+        </View>
       </ScrollView>
 
       <FriendRatingsModal
@@ -660,26 +666,26 @@ const createStyles = (theme: Theme) => StyleSheet.create({
   topBarAction: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 6,
+    gap: 5,
     marginHorizontal: 12,
-    marginVertical: 8,
-    paddingHorizontal: 10,
-    paddingVertical: 6,
+    marginVertical: 4,
+    paddingHorizontal: 8,
+    paddingVertical: 4,
     borderRadius: 8,
   },
-  topBarActionDropped: {
-    backgroundColor: '#ef4444',
-  },
-  topBarActionDroppedText: {
-    fontSize: 13,
-    fontFamily: 'DMSans_700Bold',
-    color: '#fff',
-    letterSpacing: 0.3,
+  topBarActionMuted: {
+    backgroundColor: theme.accent,
   },
   backText: {
     fontSize: 15,
     fontFamily: 'DMSans_500Medium',
     color: theme.accent,
+  },
+  // Wraps the entire show body when status === 'muted'. Dimming the page
+  // signals "this is muted" without a banner — top-bar mute toggle stays
+  // outside this wrapper so it remains tappable to unmute.
+  mutedContent: {
+    opacity: 0.4,
   },
   center: {
     flex: 1,
@@ -1099,7 +1105,7 @@ const createStyles = (theme: Theme) => StyleSheet.create({
     fontFamily: 'DMSans_600SemiBold',
     color: theme.successDim,
   },
-  friendStatusDropped: {
+  friendStatusMuted: {
     fontFamily: 'DMSans_600SemiBold',
     color: 'rgba(239,68,68,0.7)',
   },

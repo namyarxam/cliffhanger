@@ -23,6 +23,8 @@ export const qk = {
   watchedCounts: (userId: string | undefined) => ['watchedCounts', userId] as const,
   returnAnnouncements: (userId: string | undefined) => ['returnAnnouncements', userId] as const,
   popular: (userId: string | undefined, limit?: number) => ['popular', userId, limit] as const,
+  airingThisWeek: (userId: string | undefined) => ['airingThisWeek', userId] as const,
+  topRated: (userId: string | undefined) => ['topRated', userId] as const,
   displayList: (userId: string | undefined) => ['displayList', userId] as const,
 
   // Show detail

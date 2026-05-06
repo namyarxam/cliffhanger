@@ -85,14 +85,14 @@ export async function getPopularWithFriends(userId: string, limit: number = POPU
   // on any non-data response, which let transient failures (network blips,
   // RLS hiccups, rate-limits) silently blank the carousel. fetchData's
   // allSettled wrapper catches the throw and preserves the prior state.
-  // Exclude dropped rows. A friend dropping a show is a negative signal —
+  // Exclude muted rows. A friend muting a show is a negative signal —
   // counting it toward "Popular with Friends" let shows trend to the top
   // when more friends had bailed than were actually watching.
   const { data, error } = await supabase
     .from('user_shows_full')
     .select('show_id, show_title, show_image, user_id, added_at')
     .in('user_id', friendIds)
-    .neq('status', 'dropped');
+    .neq('status', 'muted');
 
   if (error) throw error;
   if (!data || data.length === 0) return [];
@@ -682,3 +682,115 @@ export async function markNextEpisode(
 
   if (error) throw error;
 }
+
+// ─── Explore: Airing This Week + Top Rated ───────────────────────────────────
+
+/**
+ * Carousel-shaped explore item. The same shape backs all three explore
+ * carousels (Popular with Friends, Airing This Week, Top Rated) so the
+ * UI can use a single FeaturedCarousel component.
+ */
+export interface FeaturedShow {
+  show_id: string;
+  show_title: string | null;
+  show_image: string | null;
+}
+
+// Top Rated displays N out of a larger pool (90), so when the user mutes
+// or adds a show the next-ranked one fills the slot. Airing This Week is
+// already capped at 15 server-side by the cron filter.
+const TOP_RATED_DISPLAY_LIMIT = 15;
+
+/**
+ * Pull the shows the caller has any user_shows row for — used to exclude
+ * already-tracked shows from explore carousels. Muted shows are tracked
+ * (status='muted') and naturally fall under this single filter.
+ */
+async function getTrackedShowIds(userId: string): Promise<Set<string>> {
+  const { data } = await supabase
+    .from('user_shows')
+    .select('show_id')
+    .eq('user_id', userId);
+  return new Set((data ?? []).map(r => r.show_id));
+}
+
+/**
+ * Read the cron-refreshed Airing This Week list. JOINs to `shows` for
+ * display metadata. Excludes shows the caller has any user_shows row for
+ * (muted, added, watched, etc.) so explore stays a pure "discover"
+ * surface.
+ */
+export async function getAiringThisWeek(userId: string | undefined): Promise<FeaturedShow[]> {
+  const { data, error } = await supabase
+    .from('airing_this_week')
+    .select('rank, show_id, shows!inner(show_id, show_title, show_image)')
+    .order('rank', { ascending: true });
+
+  if (error) throw error;
+  if (!data || data.length === 0) return [];
+
+  const trackedIds = userId ? await getTrackedShowIds(userId) : new Set<string>();
+
+  return data
+    .filter(r => !trackedIds.has(r.show_id))
+    .map(r => {
+      const s = (r as unknown as { shows: { show_id: string; show_title: string | null; show_image: string | null } }).shows;
+      return { show_id: s.show_id, show_title: s.show_title, show_image: s.show_image };
+    });
+}
+
+/**
+ * Read the Top Rated pool (90 shows) and surface the top N (default 15)
+ * the caller hasn't already tracked. As shows are muted/added the next
+ * pool entry fills in — the carousel re-populates without a manual
+ * pagination call.
+ */
+export async function getTopRated(
+  userId: string | undefined,
+  limit: number = TOP_RATED_DISPLAY_LIMIT,
+): Promise<FeaturedShow[]> {
+  const { data, error } = await supabase
+    .from('top_rated_shows')
+    .select('rank, show_id, shows!inner(show_id, show_title, show_image)')
+    .order('rank', { ascending: true });
+
+  if (error) throw error;
+  if (!data || data.length === 0) return [];
+
+  const trackedIds = userId ? await getTrackedShowIds(userId) : new Set<string>();
+
+  const out: FeaturedShow[] = [];
+  for (const r of data) {
+    if (trackedIds.has(r.show_id)) continue;
+    const s = (r as unknown as { shows: { show_id: string; show_title: string | null; show_image: string | null } }).shows;
+    out.push({ show_id: s.show_id, show_title: s.show_title, show_image: s.show_image });
+    if (out.length >= limit) break;
+  }
+  return out;
+}
+
+/**
+ * Mute a show for the current user. Universal "don't surface this" signal;
+ * removes the show from every explore carousel and adds it to the user's
+ * Muted Shows screen. Works for both tracked and untracked shows.
+ */
+export async function muteShow(
+  userId: string,
+  showId: string,
+  title: string,
+  image: string | null,
+): Promise<void> {
+  const { data: existing } = await supabase
+    .from('user_shows')
+    .select('user_id')
+    .eq('user_id', userId)
+    .eq('show_id', showId)
+    .maybeSingle();
+
+  if (existing) {
+    await updateShowStatus(userId, showId, 'muted');
+  } else {
+    await addShow(userId, showId, 'muted', title, image, null);
+  }
+}
+

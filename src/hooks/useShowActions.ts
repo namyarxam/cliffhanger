@@ -136,27 +136,32 @@ export function useShowActions(deps: ShowActionsDeps) {
     }
   }, [userId, show, setUserShow, invalidateMyShows]);
 
-  const handleStatusChange = useCallback(async (status: WatchStatus) => {
+  const handleStatusChange = useCallback(async (status: WatchStatus, opts?: { confirm?: boolean }) => {
     if (!userId || !id || !userShow) return;
+    const confirm = opts?.confirm ?? true;
 
-    // Re-tapping the active status = un-track the show
+    // Re-tapping the active status = un-track the show. Default behavior
+    // shows a confirm alert (to prevent fat-fingered loss of Watching /
+    // Watched progress); callers can opt out with confirm=false — used
+    // by the muted toggle, where re-tap is the obvious "unmute" action.
     if (status === userShow.status) {
+      const doRemove = async () => {
+        try {
+          await removeShow(userId, id);
+          setUserShow(null);
+          invalidateMyShows();
+        } catch (e) { silentCatch('show:remove')(e); }
+      };
+      if (!confirm) {
+        await doRemove();
+        return;
+      }
       Alert.alert(
         'Remove from list?',
         'Your episode progress will be saved if you add it back later.',
         [
           { text: 'Cancel', style: 'cancel' },
-          {
-            text: 'Remove',
-            style: 'destructive',
-            onPress: async () => {
-              try {
-                await removeShow(userId, id);
-                setUserShow(null);
-                invalidateMyShows();
-              } catch (e) { silentCatch('show:remove')(e); }
-            },
-          },
+          { text: 'Remove', style: 'destructive', onPress: doRemove },
         ],
       );
       return;

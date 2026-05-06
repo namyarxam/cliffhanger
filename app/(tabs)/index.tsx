@@ -15,12 +15,11 @@ import { qk } from '@/src/lib/queryKeys';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
-import { getUserShows, getNextEpisodesForShows, getPopularWithFriends, getShowsAiringToday, getReturnAnnouncements, markReturnAnnouncementSeen, markNextEpisode, updateShowStatus, getWatchedCounts, POPULAR_SHOWS_LIMIT_DEFAULT } from '@/src/lib/watchlist';
-import type { NextEpisode, ReturnAnnouncement, PopularShow } from '@/src/lib/watchlist';
+import { getUserShows, getNextEpisodesForShows, getShowsAiringToday, getReturnAnnouncements, markReturnAnnouncementSeen, markNextEpisode, updateShowStatus, getWatchedCounts } from '@/src/lib/watchlist';
+import type { NextEpisode, ReturnAnnouncement } from '@/src/lib/watchlist';
 import WatchlistCard from '@/src/components/WatchlistCard';
 import EpisodeCatchUpSheet from '@/src/components/EpisodeCatchUpSheet';
 import ReturnAnnouncementCard from '@/src/components/ReturnAnnouncementCard';
-import PopularWithFriendsRow from '@/src/components/PopularWithFriendsRow';
 import LoaderFlavor, { SHELF_MESSAGES } from '@/src/components/LoaderFlavor';
 import type { UserShow } from '@/src/lib/types';
 import { silentCatch } from '@/src/lib/errorLog';
@@ -31,7 +30,6 @@ import { silentCatch } from '@/src/lib/errorLog';
 // tree to re-evaluate.
 const EMPTY_SHOWS: UserShow[] = [];
 const EMPTY_NEXT_EPISODES: Map<string, NextEpisode> = new Map();
-const EMPTY_POPULAR: PopularShow[] = [];
 const EMPTY_AIRING_TODAY: Set<string> = new Set();
 const EMPTY_ANNOUNCEMENTS: ReturnAnnouncement[] = [];
 const EMPTY_WATCHED_COUNTS: Map<string, number> = new Map();
@@ -127,8 +125,6 @@ function classifyCW(s: UserShow, hasNextFromSchedule: boolean): CWGroup {
   return 'hiatus';
 }
 
-const POPULAR_SECTION_TITLE = 'Popular with Friends';
-
 export default function MyShowsScreen() {
   const theme = useTheme();
   const styles = useMemo(() => createStyles(theme), [theme]);
@@ -155,11 +151,6 @@ export default function MyShowsScreen() {
     queryFn: () => getNextEpisodesForShows(userId!),
     enabled,
   });
-  const popularQuery = useQuery({
-    queryKey: qk.popular(userId, POPULAR_SHOWS_LIMIT_DEFAULT),
-    queryFn: () => getPopularWithFriends(userId!, POPULAR_SHOWS_LIMIT_DEFAULT),
-    enabled,
-  });
   const airingTodayQuery = useQuery({
     queryKey: ['airingToday', userId],
     queryFn: () => getShowsAiringToday(userId!),
@@ -180,7 +171,6 @@ export default function MyShowsScreen() {
   // identical to the pre-migration version.
   const shows = userShowsQuery.data ?? EMPTY_SHOWS;
   const nextEpisodes = nextEpisodesQuery.data?.nextEpisodes ?? EMPTY_NEXT_EPISODES;
-  const popular = popularQuery.data ?? EMPTY_POPULAR;
   const airingToday = airingTodayQuery.data ?? EMPTY_AIRING_TODAY;
   const returnAnnouncements = returnAnnouncementsQuery.data ?? EMPTY_ANNOUNCEMENTS;
   const watchedCounts = watchedCountsQuery.data ?? EMPTY_WATCHED_COUNTS;
@@ -202,9 +192,6 @@ export default function MyShowsScreen() {
     if (nextEpisodesQuery.error) silentCatch('myShows:getNextEpisodes')(nextEpisodesQuery.error);
   }, [nextEpisodesQuery.error]);
   useEffect(() => {
-    if (popularQuery.error) silentCatch('myShows:getPopular')(popularQuery.error);
-  }, [popularQuery.error]);
-  useEffect(() => {
     if (airingTodayQuery.error) silentCatch('myShows:getAiringToday')(airingTodayQuery.error);
   }, [airingTodayQuery.error]);
   useEffect(() => {
@@ -223,7 +210,6 @@ export default function MyShowsScreen() {
       if (!userId) return;
       queryClient.invalidateQueries({ queryKey: ['userShows', userId] });
       queryClient.invalidateQueries({ queryKey: ['nextEpisodes', userId] });
-      queryClient.invalidateQueries({ queryKey: ['popular', userId] });
       queryClient.invalidateQueries({ queryKey: ['airingToday', userId] });
       queryClient.invalidateQueries({ queryKey: ['returnAnnouncements', userId] });
       queryClient.invalidateQueries({ queryKey: ['watchedCounts', userId] });
@@ -379,21 +365,11 @@ export default function MyShowsScreen() {
         title,
         data: collapsed.has(title) ? [] : data,
         count: data.length,
-        isCarousel: false,
       }))
       .filter(s => s.count > 0);
 
-    const all: typeof userSections = [...userSections];
-    if (popular.length > 0) {
-      all.unshift({
-        title: POPULAR_SECTION_TITLE,
-        data: [],
-        count: 0,
-        isCarousel: true,
-      });
-    }
-    return all;
-  }, [shows, nextEpisodes, collapsed, popular.length]);
+    return userSections;
+  }, [shows, nextEpisodes, collapsed]);
 
   // Per-row nextEpisode lookup with cache-fallback baked in. Built once per
   // (shows, nextEpisodes) change so per-row props reference-stable across
@@ -469,7 +445,7 @@ export default function MyShowsScreen() {
         <Text style={styles.emptyText}>Search for a show and add it to your watchlist</Text>
         <Pressable
           style={({ pressed }) => [styles.searchButton, pressed && { opacity: 0.7 }]}
-          onPress={() => router.push('/(tabs)/search')}
+          onPress={() => router.push('/(tabs)/explore')}
         >
           <Text style={styles.searchButtonText}>Search Shows</Text>
         </Pressable>
@@ -490,16 +466,6 @@ export default function MyShowsScreen() {
       extraData={`${nextEpisodes.size}:${airingToday.size}:${watchedCounts.size}:${shows.length}:${hidePosters ? 1 : 0}`}
       renderItem={renderItem}
       renderSectionHeader={({ section }) => {
-        if (section.isCarousel) {
-          return (
-            <View>
-              <View style={styles.sectionHeader}>
-                <Text style={styles.sectionTitle}>{section.title}</Text>
-              </View>
-              <PopularWithFriendsRow items={popular} onPress={handlePress} />
-            </View>
-          );
-        }
         return (
           <Pressable
             style={styles.sectionHeader}
@@ -536,7 +502,6 @@ export default function MyShowsScreen() {
               await Promise.allSettled([
                 queryClient.refetchQueries({ queryKey: ['userShows', userId] }),
                 queryClient.refetchQueries({ queryKey: ['nextEpisodes', userId] }),
-                queryClient.refetchQueries({ queryKey: ['popular', userId] }),
                 queryClient.refetchQueries({ queryKey: ['airingToday', userId] }),
                 queryClient.refetchQueries({ queryKey: ['returnAnnouncements', userId] }),
                 queryClient.refetchQueries({ queryKey: ['watchedCounts', userId] }),

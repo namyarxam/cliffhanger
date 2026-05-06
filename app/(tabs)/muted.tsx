@@ -14,7 +14,7 @@ import type { UserShow } from '@/src/lib/types';
 import { silentCatch } from '@/src/lib/errorLog';
 import { qk } from '@/src/lib/queryKeys';
 
-export default function DroppedScreen() {
+export default function MutedScreen() {
   const theme = useTheme();
   const styles = useMemo(() => createStyles(theme), [theme]);
   const router = useRouter();
@@ -30,7 +30,7 @@ export default function DroppedScreen() {
     enabled: !!userId,
   });
   const shows = useMemo(
-    () => (userShowsQ.data ?? []).filter(s => s.status === 'dropped'),
+    () => (userShowsQ.data ?? []).filter(s => s.status === 'muted'),
     [userShowsQ.data],
   );
 
@@ -47,7 +47,7 @@ export default function DroppedScreen() {
       queryClient.setQueryData<UserShow[]>(qk.userShows.all(userId), prev =>
         (prev ?? []).map(s => s.show_id === showId ? { ...s, rating } : s),
       );
-    } catch (e) { silentCatch('dropped:rate')(e); }
+    } catch (e) { silentCatch('muted:rate')(e); }
   };
 
   const handleMoveToWatched = (show: UserShow) => {
@@ -65,7 +65,7 @@ export default function DroppedScreen() {
               queryClient.setQueryData<UserShow[]>(qk.userShows.all(userId), prev =>
                 (prev ?? []).map(s => s.show_id === show.show_id ? { ...s, status: 'watched' as const } : s),
               );
-            } catch (e) { silentCatch('dropped:moveToWatched')(e); }
+            } catch (e) { silentCatch('muted:moveToWatched')(e); }
           },
         },
       ],
@@ -79,13 +79,13 @@ export default function DroppedScreen() {
           <FontAwesome name="chevron-left" size={16} color={theme.accent} />
           <Text style={styles.backText}>Profile</Text>
         </Pressable>
-        <Text style={styles.title}>Dropped</Text>
+        <Text style={styles.title}>Muted</Text>
         <View style={styles.backButton} />
       </View>
 
       {shows.length === 0 ? (
         <View style={styles.empty}>
-          <Text style={styles.emptyText}>No dropped shows</Text>
+          <Text style={styles.emptyText}>No muted shows</Text>
         </View>
       ) : (
         <FlatList
@@ -109,7 +109,7 @@ export default function DroppedScreen() {
                   <Text style={styles.showTitle} numberOfLines={1}>{item.show_title}</Text>
                   <Text style={styles.progress}>
                     {item.current_season > 0
-                      ? `Dropped at S${item.current_season} E${item.current_episode}`
+                      ? `Muted at S${item.current_season} E${item.current_episode}`
                       : 'Never started'}
                   </Text>
                 </View>

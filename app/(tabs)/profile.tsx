@@ -75,7 +75,7 @@ export default function ProfileScreen() {
   const friendCount = friendsQ.data?.length ?? null;
   const pendingCount = pendingRequestsQ.data?.length ?? 0;
   const listCount = listsQ.data?.length ?? null;
-  const droppedCount = userShowsQ.data?.filter(s => s.status === 'dropped').length ?? 0;
+  const mutedCount = userShowsQ.data?.filter(s => s.status === 'muted').length ?? 0;
   const watchedCount = userShowsQ.data?.filter(s => s.status === 'watched').length ?? 0;
   const displayList = displayListQ.data ?? null;
   const navLoaded = !friendsQ.isLoading && !pendingRequestsQ.isLoading && !listsQ.isLoading && !userShowsQ.isLoading;
@@ -366,13 +366,13 @@ export default function ProfileScreen() {
           <Text style={styles.navChevron}>▸</Text>
         </Pressable>
 
-        {droppedCount > 0 && (
+        {mutedCount > 0 && (
           <Pressable
             style={({ pressed }) => [styles.navRow, pressed && { opacity: 0.7 }]}
-            onPress={() => router.push('/(tabs)/dropped')}
+            onPress={() => router.push('/(tabs)/muted')}
           >
-            <Text style={styles.navRowText}>Dropped Shows</Text>
-            <Text style={styles.navRowCount}>{droppedCount}</Text>
+            <Text style={styles.navRowText}>Muted Shows</Text>
+            <Text style={styles.navRowCount}>{mutedCount}</Text>
             <Text style={styles.navChevron}>▸</Text>
           </Pressable>
         )}
