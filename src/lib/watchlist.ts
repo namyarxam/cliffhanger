@@ -2,7 +2,11 @@ import { supabase } from './supabase';
 import { getFriends } from './friends';
 import type { UserShow, EpisodeWatch, WatchStatus, Season } from './types';
 
-export const POPULAR_SHOWS_LIMIT_DEFAULT = 6;
+// Used by both My Shows ("Popular with Friends" carousel) and the Search
+// screen's empty state. Same value across screens so the TanStack cache
+// key `qk.popular(userId, limit)` matches and the two screens share one
+// cache entry instead of fetching independently.
+export const POPULAR_SHOWS_LIMIT_DEFAULT = 25;
 
 // ─── Episode Helpers ──────────────────────────────────────────────────────────
 

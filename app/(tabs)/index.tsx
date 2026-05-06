@@ -15,7 +15,7 @@ import { qk } from '@/src/lib/queryKeys';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
-import { getUserShows, getNextEpisodesForShows, getPopularWithFriends, getShowsAiringToday, getReturnAnnouncements, markReturnAnnouncementSeen, markNextEpisode, updateShowStatus, getWatchedCounts } from '@/src/lib/watchlist';
+import { getUserShows, getNextEpisodesForShows, getPopularWithFriends, getShowsAiringToday, getReturnAnnouncements, markReturnAnnouncementSeen, markNextEpisode, updateShowStatus, getWatchedCounts, POPULAR_SHOWS_LIMIT_DEFAULT } from '@/src/lib/watchlist';
 import type { NextEpisode, ReturnAnnouncement, PopularShow } from '@/src/lib/watchlist';
 import { getDisplayList } from '@/src/lib/lists';
 import WatchlistCard from '@/src/components/WatchlistCard';
@@ -26,8 +26,6 @@ import PopularWithFriendsRow from '@/src/components/PopularWithFriendsRow';
 import LoaderFlavor, { SHELF_MESSAGES } from '@/src/components/LoaderFlavor';
 import type { UserShow } from '@/src/lib/types';
 import { silentCatch } from '@/src/lib/errorLog';
-
-const POPULAR_CAROUSEL_LIMIT = 25;
 
 // Stable empty defaults for `data ?? EMPTY` fallbacks. Without these, every
 // render would allocate a fresh `[]` / `new Set()` / `new Map()`, breaking
@@ -165,8 +163,8 @@ export default function MyShowsScreen() {
     enabled,
   });
   const popularQuery = useQuery({
-    queryKey: qk.popular(userId, POPULAR_CAROUSEL_LIMIT),
-    queryFn: () => getPopularWithFriends(userId!, POPULAR_CAROUSEL_LIMIT),
+    queryKey: qk.popular(userId, POPULAR_SHOWS_LIMIT_DEFAULT),
+    queryFn: () => getPopularWithFriends(userId!, POPULAR_SHOWS_LIMIT_DEFAULT),
     enabled,
   });
   const airingTodayQuery = useQuery({
