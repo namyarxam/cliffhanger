@@ -129,7 +129,6 @@ export interface UserProfile {
   avatar_url: string | null;
   push_new_episodes: boolean;
   notify_all_current: boolean;
-  show_top4_in_list: boolean;
   show_posters_in_list: boolean;
   hide_ratings: boolean;
   theme: string | null;

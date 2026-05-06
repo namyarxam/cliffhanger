@@ -29,7 +29,6 @@ export default function SettingsScreen() {
   const [pushNewEpisodes, setPushNewEpisodes] = useState(false);
   const [notifyAllCurrent, setNotifyAllCurrent] = useState(false);
   const [pushChatMessages, setPushChatMessages] = useState(true);
-  const [showTop4, setShowTop4] = useState(false);
   const [showPosters, setShowPosters] = useState(true);
   const [hideRatings, setHideRatings] = useState(false);
 
@@ -37,7 +36,7 @@ export default function SettingsScreen() {
     if (!user?.id) return;
     supabase
       .from('profiles')
-      .select('push_new_episodes, notify_all_current, push_chat_messages, show_top4_in_list, show_posters_in_list, hide_ratings')
+      .select('push_new_episodes, notify_all_current, push_chat_messages, show_posters_in_list, hide_ratings')
       .eq('id', user.id)
       .single()
       .then(({ data, error }) => {
@@ -46,7 +45,6 @@ export default function SettingsScreen() {
           setPushNewEpisodes(data.push_new_episodes);
           setNotifyAllCurrent(data.notify_all_current);
           setPushChatMessages(data.push_chat_messages ?? true);
-          setShowTop4(data.show_top4_in_list);
           setShowPosters(data.show_posters_in_list);
           setHideRatings(data.hide_ratings);
         }
@@ -113,13 +111,6 @@ export default function SettingsScreen() {
     const ok = await updateProfile('push_chat_messages', newValue);
     if (!ok) setPushChatMessages(!newValue);
   }, [user?.id, pushChatMessages, updateProfile]);
-
-  const handleToggleTop4 = useCallback(async () => {
-    const newValue = !showTop4;
-    setShowTop4(newValue);
-    const ok = await updateProfile('show_top4_in_list', newValue);
-    if (!ok) setShowTop4(!newValue);
-  }, [showTop4, updateProfile]);
 
   const handleTogglePosters = useCallback(async () => {
     const newValue = !showPosters;
@@ -242,20 +233,6 @@ export default function SettingsScreen() {
       {/* Display section */}
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Display</Text>
-
-        <Pressable style={styles.settingRow} onPress={handleToggleTop4}>
-          <View style={styles.settingInfo}>
-            <Text style={styles.settingLabel}>Show Favorites in My Shows</Text>
-            <Text style={styles.settingHint}>
-              Display your Top 4 at the top of your show list
-            </Text>
-          </View>
-          <View style={[styles.toggleTrack, showTop4 && styles.toggleTrackOn]}>
-            <View style={[styles.toggleThumb, showTop4 && styles.toggleThumbOn]} />
-          </View>
-        </Pressable>
-
-        <View style={styles.settingGap} />
 
         <Pressable style={styles.settingRow} onPress={handleTogglePosters}>
           <View style={styles.settingInfo}>
