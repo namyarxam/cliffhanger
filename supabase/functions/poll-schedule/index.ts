@@ -183,13 +183,26 @@ Deno.serve(async (_req) => {
 
             // Send via Expo push service (batch) and prune dead tokens from the response
             if (notifications.length > 0) {
+              const expoToken = Deno.env.get('EXPO_ACCESS_TOKEN');
+              const pushHeaders: Record<string, string> = {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+              };
+              if (expoToken) pushHeaders['Authorization'] = `Bearer ${expoToken}`;
+
               const pushRes = await fetch('https://exp.host/--/api/v2/push/send', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                headers: pushHeaders,
                 body: JSON.stringify(notifications),
               });
 
-              if (pushRes.ok) {
+              if (!pushRes.ok) {
+                // Surface Expo Push API failures (typically 401/403 when
+                // EXPO_ACCESS_TOKEN is missing or invalid against an Enhanced
+                // Push Security project) so they show up in supabase functions
+                // logs instead of disappearing into the success branch.
+                console.error('poll-schedule: Expo push send failed', pushRes.status, await pushRes.text());
+              } else {
                 const pushBody = await pushRes.json();
                 const tickets: Array<{ status: string; details?: { error?: string; expoPushToken?: string } }> =
                   pushBody?.data ?? [];

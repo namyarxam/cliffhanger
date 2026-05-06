@@ -121,26 +121,41 @@ Deno.serve(async (req) => {
     sound: 'default' as const,
   }));
 
+  const expoToken = Deno.env.get('EXPO_ACCESS_TOKEN');
+  const pushHeaders: Record<string, string> = {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+  };
+  if (expoToken) pushHeaders['Authorization'] = `Bearer ${expoToken}`;
+
   const pushRes = await fetch('https://exp.host/--/api/v2/push/send', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    headers: pushHeaders,
     body: JSON.stringify(notifications),
   });
 
-  if (pushRes.ok) {
-    const pushBody = await pushRes.json();
-    const tickets: PushTicket[] = pushBody?.data ?? [];
-    const deadTokens: string[] = [];
-    for (let i = 0; i < tickets.length; i++) {
-      const t = tickets[i];
-      if (t?.status === 'error' && t.details?.error === 'DeviceNotRegistered') {
-        const tk = t.details.expoPushToken ?? notifications[i]?.to;
-        if (tk) deadTokens.push(tk);
-      }
+  if (!pushRes.ok) {
+    // Most common cause of a non-2xx here is Expo Enhanced Push Security
+    // rejecting the request — either EXPO_ACCESS_TOKEN is unset, expired,
+    // or scoped to the wrong project. Log the body so the failure mode
+    // shows up in supabase functions logs instead of silently no-op'ing.
+    const errBody = await pushRes.text();
+    console.error('notify-message: Expo push send failed', pushRes.status, errBody);
+    return json({ ok: false, expo_status: pushRes.status, expo_body: errBody }, 502);
+  }
+
+  const pushBody = await pushRes.json();
+  const tickets: PushTicket[] = pushBody?.data ?? [];
+  const deadTokens: string[] = [];
+  for (let i = 0; i < tickets.length; i++) {
+    const t = tickets[i];
+    if (t?.status === 'error' && t.details?.error === 'DeviceNotRegistered') {
+      const tk = t.details.expoPushToken ?? notifications[i]?.to;
+      if (tk) deadTokens.push(tk);
     }
-    if (deadTokens.length > 0) {
-      await admin.from('push_tokens').delete().in('expo_push_token', deadTokens);
-    }
+  }
+  if (deadTokens.length > 0) {
+    await admin.from('push_tokens').delete().in('expo_push_token', deadTokens);
   }
 
   return json({ ok: true, sent: notifications.length });
