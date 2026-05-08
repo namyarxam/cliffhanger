@@ -1,4 +1,4 @@
-import { useMemo, useState, useCallback } from 'react';
+import { useMemo, useState, useCallback, useRef } from 'react';
 import {
   View,
   Text,
@@ -20,6 +20,7 @@ import { useAuth } from '@/src/providers/AuthProvider';
 
 import { useShowData } from '@/src/hooks/useShowData';
 import { useShowActions } from '@/src/hooks/useShowActions';
+import { useCoachmark } from '@/src/tutorial/useCoachmark';
 import WatchProgressBar from '@/src/components/WatchProgressBar';
 import EpisodePicker from '@/src/components/EpisodePicker';
 import RatingSelector, { getUserRatingColor } from '@/src/components/RatingSelector';
@@ -97,6 +98,69 @@ export default function ShowDetailScreen() {
   const [friendRatingsVisible, setFriendRatingsVisible] = useState(false);
   const [friendsExpanded, setFriendsExpanded] = useState(false);
 
+  // ─── First-visit coachmark sequence ────────────────────────────────────
+  // Four-step chain on a user's first show detail visit:
+  //   Watchlist → Watching → Finished → Mute
+  // Each pill / button gets a ref the coachmark hook uses to measure. The
+  // sequence is gated on `coachmarksReady` — the screen must be focused AND
+  // the show data must be loaded (otherwise the pills aren't on-screen and
+  // measureInWindow would bail). All four hooks run unconditionally; the
+  // chain via `showAfter` ensures only one is visible at a time.
+  const watchlistPillRef = useRef<View>(null);
+  const watchingPillRef = useRef<View>(null);
+  const finishedPillRef = useRef<View>(null);
+  const muteRef = useRef<View>(null);
+  const [isFocused, setIsFocused] = useState(false);
+  useFocusEffect(useCallback(() => {
+    setIsFocused(true);
+    return () => setIsFocused(false);
+  }, []));
+  const coachmarksReady = isFocused && !loading && !error && !!show;
+  // Pre-add the status pills are solid accent (orange) so the default
+  // accent-colored cutout ring + tap pulse vanish into them — override to
+  // white so the indicators read against the button. Mute matches for visual
+  // consistency across the four-step sequence.
+  const PILL_HIGHLIGHT = '#fff';
+  useCoachmark({
+    id: 'tap_watchlist',
+    when: coachmarksReady,
+    ref: watchlistPillRef,
+    gesture: 'tap',
+    title: 'Watchlist',
+    body: 'Save shows here to watch later.',
+    highlightColor: PILL_HIGHLIGHT,
+  });
+  useCoachmark({
+    id: 'tap_watching',
+    when: coachmarksReady,
+    ref: watchingPillRef,
+    gesture: 'tap',
+    title: 'Watching',
+    body: 'Track your progress and get a heads-up when new episodes and premieres drop.',
+    showAfter: 'tap_watchlist',
+    highlightColor: PILL_HIGHLIGHT,
+  });
+  useCoachmark({
+    id: 'tap_finished',
+    when: coachmarksReady,
+    ref: finishedPillRef,
+    gesture: 'tap',
+    title: 'Finished',
+    body: 'Mark a show as finished and rate it.',
+    showAfter: 'tap_watching',
+    highlightColor: PILL_HIGHLIGHT,
+  });
+  useCoachmark({
+    id: 'tap_mute',
+    when: coachmarksReady,
+    ref: muteRef,
+    gesture: 'tap',
+    title: 'Mute a show',
+    body: 'Hides it from every list. Undo any time from the Profile tab.',
+    showAfter: 'tap_finished',
+    highlightColor: PILL_HIGHLIGHT,
+  });
+
   if (loading) {
     return (
       <View style={styles.center}>
@@ -173,6 +237,7 @@ export default function ShowDetailScreen() {
               muted state is visible without a banner. The button itself
               stays at full opacity so the user can always tap to unmute. */}
           <Pressable
+            ref={muteRef}
             style={({ pressed }) => [
               styles.topBarAction,
               userShow?.status === 'muted' && styles.topBarActionMuted,
@@ -320,9 +385,14 @@ export default function ShowDetailScreen() {
               const isLightTheme = theme.statusBarStyle === 'dark';
               const onAccent = isLightTheme ? '#fff' : theme.textBright;
               const iconColor = !userShow || isActive ? onAccent : theme.textDim;
+              const pillRef = s === 'want_to_watch' ? watchlistPillRef
+                : s === 'currently_watching' ? watchingPillRef
+                : s === 'watched' ? finishedPillRef
+                : undefined;
               return (
                 <Pressable
                   key={s}
+                  ref={pillRef}
                   style={({ pressed }) => [
                     styles.statusPill,
                     !userShow && styles.statusPillEmpty,

@@ -19,6 +19,9 @@ interface AuthState {
   // Force a fresh session-resolve + profile-fetch cycle. AuthGate calls this
   // from its soft-retry timer to recover from a wedged-loading state.
   retryAuth: () => Promise<void>;
+  markOnboarded: () => Promise<void>;
+  markCoachmarkSeen: (id: string) => Promise<void>;
+  resetCoachmarks: () => Promise<void>;
 }
 
 const AuthContext = createContext<AuthState>({
@@ -29,6 +32,9 @@ const AuthContext = createContext<AuthState>({
   signOut: async () => {},
   refreshProfile: async () => {},
   retryAuth: async () => {},
+  markOnboarded: async () => {},
+  markCoachmarkSeen: async () => {},
+  resetCoachmarks: async () => {},
 });
 
 export function useAuth() {
@@ -68,7 +74,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           .single();
 
         if (!error && data) {
-          setProfile(data as UserProfile);
+          // Defensive: if migration 048 hasn't been applied locally yet, the
+          // column won't be returned. Default to [] so the rest of the app
+          // can read profile.coachmarks_seen without a null check.
+          const safe = { ...data, coachmarks_seen: (data as { coachmarks_seen?: string[] }).coachmarks_seen ?? [] } as UserProfile;
+          setProfile(safe);
           return;
         }
 
@@ -196,6 +206,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   // stale in the cached profile until next sign-in.
   const sessionRef = useRef(session);
   sessionRef.current = session;
+  // Mirror profile to a ref so callbacks can read the latest array without
+  // racing React's queued setState. Used by markCoachmarkSeen — see note
+  // there for why setProfile's functional-update form is insufficient.
+  const profileRef = useRef(profile);
+  profileRef.current = profile;
   useEffect(() => {
     const sub = AppState.addEventListener('change', state => {
       if (state !== 'active') return;
@@ -204,6 +219,55 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     });
     return () => sub.remove();
   }, [fetchProfile]);
+
+  // Marks the welcome flow complete. Optimistic local update lets AuthGate
+  // reroute the moment the user taps "Skip" or finishes adding their first
+  // show, even if the network write is still in-flight.
+  const markOnboarded = useCallback(async () => {
+    const userId = sessionRef.current?.user?.id;
+    if (!userId) return;
+    const stamp = new Date().toISOString();
+    setProfile(prev => (prev ? { ...prev, onboarded_at: stamp } : prev));
+    const { error } = await supabase
+      .from('profiles')
+      .update({ onboarded_at: stamp })
+      .eq('id', userId);
+    if (error) silentCatch('auth:markOnboarded')(error);
+  }, []);
+
+  // Append a coachmark ID to the user's seen list. Optimistic — local state
+  // flips first so the overlay dismisses with no flicker, then we commit.
+  // Idempotent: re-marking a seen ID is a no-op locally and harmless server-side.
+  // We use profileRef for the read because setProfile's functional-update form
+  // doesn't run synchronously in React 18 — using `let nextArr` inside that
+  // callback to capture the new array would leave nextArr null on the line
+  // immediately after, silently skipping the DB write.
+  const markCoachmarkSeen = useCallback(async (id: string) => {
+    const userId = sessionRef.current?.user?.id;
+    const prev = profileRef.current;
+    if (!userId || !prev) return;
+    if (prev.coachmarks_seen.includes(id)) return;
+    const nextArr = [...prev.coachmarks_seen, id];
+    setProfile(p => p ? { ...p, coachmarks_seen: nextArr } : p);
+    const { error } = await supabase
+      .from('profiles')
+      .update({ coachmarks_seen: nextArr })
+      .eq('id', userId);
+    if (error) silentCatch('auth:markCoachmarkSeen')(error);
+  }, []);
+
+  // Debug-only: clear the seen list so the user can re-experience every
+  // coachmark. Wired to a settings button for in-app testing.
+  const resetCoachmarks = useCallback(async () => {
+    const userId = sessionRef.current?.user?.id;
+    if (!userId) return;
+    setProfile(prev => prev ? { ...prev, coachmarks_seen: [] } : prev);
+    const { error } = await supabase
+      .from('profiles')
+      .update({ coachmarks_seen: [] })
+      .eq('id', userId);
+    if (error) silentCatch('auth:resetCoachmarks')(error);
+  }, []);
 
   async function signOut() {
     await supabase.auth.signOut();
@@ -225,6 +289,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         if (session?.user) await fetchProfile(session.user.id);
       },
       retryAuth,
+      markOnboarded,
+      markCoachmarkSeen,
+      resetCoachmarks,
     }}>
       {children}
     </AuthContext.Provider>

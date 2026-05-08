@@ -9,6 +9,7 @@ import {
   ActivityIndicator,
 } from 'react-native';
 import { Image } from 'expo-image';
+import FontAwesome from '@expo/vector-icons/FontAwesome';
 import * as Haptics from 'expo-haptics';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
@@ -100,6 +101,15 @@ export default function EpisodeCatchUpSheet({
     } finally {
       setMarking(false);
     }
+  };
+
+  // Mark every aired-but-unwatched episode as watched in one tap. The last
+  // entry in `queue` is always the most recently aired unwatched episode,
+  // so handing it to markUpToEpisode catches the user up to "now."
+  const handleMarkAll = () => {
+    const last = queue[queue.length - 1];
+    if (!last) return;
+    handleMarkUpTo(last.season, last.episode);
   };
 
   return (
@@ -203,12 +213,29 @@ const createStyles = (theme: Theme) => StyleSheet.create({
     fontFamily: 'DMSans_600SemiBold',
     color: theme.accent,
   },
+  markAllChip: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: 7,
+    paddingHorizontal: 12,
+    borderRadius: 999,
+    backgroundColor: theme.successBg,
+    borderWidth: 1,
+    borderColor: theme.successBorder,
+  },
+  markAllChipText: {
+    color: theme.success,
+    fontSize: 13,
+    fontFamily: 'DMSans_600SemiBold',
+    letterSpacing: 0.1,
+  },
   hint: {
     fontSize: 12,
     fontFamily: 'DMSans_400Regular',
     color: theme.textFaint,
     paddingHorizontal: 16,
-    paddingVertical: 12,
+    paddingTop: 10,
+    paddingBottom: 6,
   },
   center: {
     flex: 1,

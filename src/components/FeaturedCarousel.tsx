@@ -39,6 +39,12 @@ interface Props {
    */
   mode?: 'loop' | 'extend';
   onEndReached?: () => void;
+  /**
+   * Optional ref the carousel will attach to its very first card. Used by
+   * the tutorial system to highlight the first poster for coachmark hints
+   * (e.g. long-press-to-mute). Doesn't affect carousel behavior.
+   */
+  firstItemRef?: React.Ref<View>;
 }
 
 const SKELETON_DEFAULT = 8;
@@ -54,7 +60,7 @@ const DISMISS_DISTANCE = 220;
 // Long-press delay. Standard iOS feels intentional without being annoying.
 const LONG_PRESS_MS = 450;
 
-function FeaturedCarousel({ items, onPress, onMute, loading = false, skeletonCount = SKELETON_DEFAULT, resetSignal, mode = 'loop', onEndReached }: Props) {
+function FeaturedCarousel({ items, onPress, onMute, loading = false, skeletonCount = SKELETON_DEFAULT, resetSignal, mode = 'loop', onEndReached, firstItemRef }: Props) {
   const theme = useTheme();
   const styles = useMemo(() => createStyles(theme), [theme]);
 
@@ -94,6 +100,7 @@ function FeaturedCarousel({ items, onPress, onMute, loading = false, skeletonCou
         onMute={onMute}
         resetSignal={resetSignal}
         onEndReached={onEndReached}
+        firstItemRef={firstItemRef}
       />
     );
   }
@@ -106,6 +113,7 @@ function FeaturedCarousel({ items, onPress, onMute, loading = false, skeletonCou
       onPress={onPress}
       onMute={onMute}
       resetSignal={resetSignal}
+      firstItemRef={firstItemRef}
     />
   );
 }
@@ -117,6 +125,7 @@ interface LoopingRailProps {
   onPress: (showId: string) => void;
   onMute: (showId: string) => void;
   resetSignal?: number;
+  firstItemRef?: React.Ref<View>;
 }
 
 /**
@@ -126,7 +135,7 @@ interface LoopingRailProps {
  * imperceptible because the scroll offset jumps to the visually-identical
  * position one copy width away.
  */
-function LoopingRail({ items, styles, bgColor, onPress, onMute, resetSignal }: LoopingRailProps) {
+function LoopingRail({ items, styles, bgColor, onPress, onMute, resetSignal, firstItemRef }: LoopingRailProps) {
   const scrollRef = useRef<ScrollView>(null);
   const initialized = useRef(false);
   const lastResetSignal = useRef(resetSignal);
@@ -177,15 +186,31 @@ function LoopingRail({ items, styles, bgColor, onPress, onMute, resetSignal }: L
         // expects discrete momentum-end events at predictable offsets.
         bounces={false}
       >
-        {looped.map((item, idx) => (
-          <CarouselCard
-            key={`${item.show_id}-${idx}`}
-            item={item}
-            styles={styles}
-            onPress={onPress}
-            onMute={onMute}
-          />
-        ))}
+        {looped.map((item, idx) => {
+          const card = (
+            <CarouselCard
+              key={`${item.show_id}-${idx}`}
+              item={item}
+              styles={styles}
+              onPress={onPress}
+              onMute={onMute}
+            />
+          );
+          // Wrap the visually-first card with the coach-anchor View so the
+          // tutorial can highlight it. The looping rail renders items 3x
+          // and starts scrolled to the middle copy — so the card the user
+          // actually sees on the left edge is at idx === items.length, NOT
+          // idx === 0 (which is the offscreen leading copy).
+          // collapsable=false keeps the wrapper alive on Android.
+          if (idx === items.length && firstItemRef) {
+            return (
+              <View key={`${item.show_id}-anchor-${idx}`} ref={firstItemRef} collapsable={false}>
+                {card}
+              </View>
+            );
+          }
+          return card;
+        })}
       </ScrollView>
       <LinearGradient
         pointerEvents="none"
@@ -206,6 +231,7 @@ interface ExtendingRailProps {
   onMute: (showId: string) => void;
   resetSignal?: number;
   onEndReached?: () => void;
+  firstItemRef?: React.Ref<View>;
 }
 
 // Distance from the right edge (in px) at which we trigger the parent's
@@ -220,7 +246,7 @@ const END_REACH_THRESHOLD = 200;
  * Reset behavior is identical to LoopingRail — bumping resetSignal snaps
  * back to scrollX = 0.
  */
-function ExtendingRail({ items, styles, bgColor, onPress, onMute, resetSignal, onEndReached }: ExtendingRailProps) {
+function ExtendingRail({ items, styles, bgColor, onPress, onMute, resetSignal, onEndReached, firstItemRef }: ExtendingRailProps) {
   const scrollRef = useRef<ScrollView>(null);
   const lastResetSignal = useRef(resetSignal);
   // Latches once the user crosses into the "near end" zone so onEndReached
@@ -259,15 +285,25 @@ function ExtendingRail({ items, styles, bgColor, onPress, onMute, resetSignal, o
         onScroll={handleScroll}
         scrollEventThrottle={200}
       >
-        {items.map((item, idx) => (
-          <CarouselCard
-            key={`${item.show_id}-${idx}`}
-            item={item}
-            styles={styles}
-            onPress={onPress}
-            onMute={onMute}
-          />
-        ))}
+        {items.map((item, idx) => {
+          const card = (
+            <CarouselCard
+              key={`${item.show_id}-${idx}`}
+              item={item}
+              styles={styles}
+              onPress={onPress}
+              onMute={onMute}
+            />
+          );
+          if (idx === 0 && firstItemRef) {
+            return (
+              <View key={`${item.show_id}-anchor-${idx}`} ref={firstItemRef} collapsable={false}>
+                {card}
+              </View>
+            );
+          }
+          return card;
+        })}
       </ScrollView>
       <LinearGradient
         pointerEvents="none"

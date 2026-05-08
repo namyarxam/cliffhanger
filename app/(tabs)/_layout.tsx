@@ -104,7 +104,7 @@ export default function TabLayout() {
           { name: 'index', title: 'My Shows', icon: 'tv' as const },
           { name: 'explore', title: 'Explore', icon: 'compass' as const },
           { name: 'chat', title: 'Chat', icon: 'comments' as const },
-          { name: 'profile', title: 'Social', icon: 'users' as const },
+          { name: 'profile', title: 'Profile', icon: 'user' as const },
         ];
 
         return (
@@ -154,7 +154,7 @@ export default function TabLayout() {
       <Tabs.Screen name="index" options={{ title: 'My Shows' }} />
       <Tabs.Screen name="explore" options={{ title: 'Explore' }} />
       <Tabs.Screen name="chat" options={{ title: 'Chat' }} />
-      <Tabs.Screen name="profile" options={{ title: 'Social' }} />
+      <Tabs.Screen name="profile" options={{ title: 'Profile' }} />
       <Tabs.Screen name="settings" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="friends" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="show/[id]" options={{ href: null, headerShown: false }} />

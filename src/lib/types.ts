@@ -132,6 +132,8 @@ export interface UserProfile {
   show_posters_in_list: boolean;
   hide_ratings: boolean;
   theme: string | null;
+  onboarded_at: string | null;
+  coachmarks_seen: string[];
   created_at: string;
 }
 

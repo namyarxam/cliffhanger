@@ -25,7 +25,7 @@ export default function SettingsScreen() {
   const { theme, themeName, setThemeName } = useThemeControl();
   const styles = useMemo(() => createStyles(theme), [theme]);
   const router = useRouter();
-  const { user, refreshProfile, signOut } = useAuth();
+  const { user, refreshProfile, signOut, resetCoachmarks } = useAuth();
   const [pushNewEpisodes, setPushNewEpisodes] = useState(false);
   const [notifyAllCurrent, setNotifyAllCurrent] = useState(false);
   const [pushChatMessages, setPushChatMessages] = useState(true);
@@ -326,6 +326,17 @@ export default function SettingsScreen() {
         </Pressable>
       </View>
 
+      {/* Tutorial reset — useful for re-experiencing coachmarks. */}
+      <View style={styles.section}>
+        <Text style={styles.sectionTitle}>Tutorial</Text>
+        <Pressable
+          style={({ pressed }) => [styles.resetCoachmarksBtn, pressed && { opacity: 0.7 }]}
+          onPress={async () => { await resetCoachmarks(); Alert.alert('Tutorial reset', 'Coachmarks will reappear as you use the app.'); }}
+        >
+          <Text style={styles.resetCoachmarksText}>Replay tips</Text>
+        </Pressable>
+      </View>
+
       {/* About section */}
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>About</Text>
@@ -527,6 +538,19 @@ const createStyles = (theme: Theme) => StyleSheet.create({
     fontSize: 13,
     fontFamily: 'DMSans_500Medium',
     color: theme.accent,
+  },
+  resetCoachmarksBtn: {
+    paddingVertical: 14,
+    borderRadius: 10,
+    backgroundColor: theme.bgCard,
+    borderWidth: 1,
+    borderColor: theme.border,
+    alignItems: 'center',
+  },
+  resetCoachmarksText: {
+    fontSize: 14,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.text,
   },
   deleteButton: {
     marginTop: 16,

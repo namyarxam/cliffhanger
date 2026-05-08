@@ -9,6 +9,7 @@ import * as Sentry from '@sentry/react-native';
 import * as Notifications from 'expo-notifications';
 import { QueryClient, QueryClientProvider, focusManager } from '@tanstack/react-query';
 import { AuthProvider, useAuth } from '@/src/providers/AuthProvider';
+import { TutorialProvider } from '@/src/providers/TutorialProvider';
 import { ThemeProvider, useThemeControl } from '@/src/providers/ThemeProvider';
 import { THEMES, type ThemeName } from '@/src/lib/theme';
 import { supabase } from '@/src/lib/supabase';
@@ -156,18 +157,26 @@ function AuthGate() {
 
     // Check if the user is on an auth screen
     const inAuthGroup = segments[0] === '(auth)';
+    const inOnboardingGroup = segments[0] === '(onboarding)';
     // Don't bounce users away from the reset screen — they hit it via deep link
     // and have a temporary recovery session that shouldn't trigger the "signed in" redirect.
     const onResetScreen = segments[0] === '(auth)' && segments[1] === 'reset-password';
 
+    // Treat onboarding as required only after the profile row has resolved.
+    // While `profile` is still null (first paint after sign-in), we don't
+    // know yet — so we skip routing this tick and let the next render decide.
+    const needsOnboarding = !!session && !!profile && !profile.onboarded_at;
+
     if (!session && !inAuthGroup) {
-      // Not signed in → redirect to sign-in
       router.replace('/(auth)/sign-in');
     } else if (session && inAuthGroup && !onResetScreen) {
-      // Signed in but on auth screen → redirect to main app
+      router.replace(needsOnboarding ? '/(onboarding)/welcome' : '/(tabs)');
+    } else if (needsOnboarding && !inOnboardingGroup) {
+      router.replace('/(onboarding)/welcome');
+    } else if (session && profile && profile.onboarded_at && inOnboardingGroup) {
       router.replace('/(tabs)');
     }
-  }, [session, loading, segments]);
+  }, [session, profile, loading, segments]);
 
   if (loading) {
     return <LoaderFlavor />;
@@ -176,6 +185,7 @@ function AuthGate() {
   return (
     <Stack screenOptions={{ headerShown: false }}>
       <Stack.Screen name="(auth)" />
+      <Stack.Screen name="(onboarding)" />
       <Stack.Screen name="(tabs)" />
     </Stack>
   );
@@ -207,8 +217,10 @@ function AppShell() {
 
   return (
     <AuthProvider>
-      <StatusBar style={theme.statusBarStyle} />
-      <AuthGate />
+      <TutorialProvider>
+        <StatusBar style={theme.statusBarStyle} />
+        <AuthGate />
+      </TutorialProvider>
     </AuthProvider>
   );
 }

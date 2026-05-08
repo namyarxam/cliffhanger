@@ -1,18 +1,11 @@
-import { memo, useMemo, useRef, useEffect } from 'react';
-import { View, Text, Pressable, StyleSheet, Animated, PanResponder } from 'react-native';
+import { memo, useMemo } from 'react';
+import { View, Text, Pressable, StyleSheet } from 'react-native';
 import * as Haptics from 'expo-haptics';
 import { Image } from 'expo-image';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 import { getUserRatingColor } from '@/src/components/RatingSelector';
 import type { UserShow } from '@/src/lib/types';
-
-// Single-catchup swipe tuning. Threshold = commit point. Cap = max travel
-// (resistance past commit gives a rubbery "armed" feel). Tuned to feel
-// like a quick flick, not a deliberate drag — testers reported the
-// previous 70/110 felt like you had to pull the row halfway off-screen.
-const SWIPE_COMMIT_THRESHOLD = 40;
-const SWIPE_MAX_TRAVEL = 75;
 
 function daysUntil(airdate: string): number {
   const next = new Date(airdate + 'T00:00:00');
@@ -57,6 +50,9 @@ interface Props {
   // gate here so a passive viewer doesn't see "behind" / "Next ep in 3d"
   // copy that only makes sense on your own list.
   readOnly?: boolean;
+  // Ref attached to the outermost row View. Used by the tutorial system to
+  // anchor a coachmark to a specific row. Doesn't affect rendering otherwise.
+  outerRef?: React.Ref<View>;
 }
 
 const NEW_WINDOW_MS = 7 * 24 * 60 * 60 * 1000;
@@ -68,22 +64,9 @@ function isAiredRecently(airdate: string | null): boolean {
   return diff >= 0 && diff <= NEW_WINDOW_MS;
 }
 
-function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, onCatchUp, leftAccessory, hidePosters, airsToday, watchedCount, readOnly }: Props) {
+function WatchlistCard({ show, onPress, nextEpisode, onMarkWatched, onCatchUp, leftAccessory, hidePosters, airsToday, watchedCount, readOnly, outerRef }: Props) {
   const theme = useTheme();
   const styles = useMemo(() => createStyles(theme), [theme]);
-  const dragX = useRef(new Animated.Value(0)).current;
-  const armed = useRef(false);
-
-  // Defensive reset when the cell is reused for a different show. Combined
-  // with the SectionList keyExtractor that includes the CWGroup, cross-
-  // section moves should already remount the cell — but if the same show_id
-  // ever gets rebound during a recycle (e.g. when re-ordering within the
-  // same section) we don't want a stale Animated.Value or armed flag from
-  // the previous occupant bleeding through.
-  useEffect(() => {
-    dragX.setValue(0);
-    armed.current = false;
-  }, [show.show_id, dragX]);
   const hasNext = !!nextEpisode && show.status === 'currently_watching';
   const showToday = !readOnly && airsToday && show.status === 'currently_watching';
   const isEnded = show.status === 'currently_watching' && !hasNext && show.show_status === 'Ended';
@@ -170,15 +153,11 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, 
     return airedPos > 0 ? Math.min(1, watchedPos / airedPos) : 0;
   })();
 
-  // Single-tap catch-up applies in two states:
-  //   - Watching, single-behind → mark next aired episode.
-  //   - Returning, premiere-day → mark E1 of the new season (flips engagement,
-  //     show jumps to Watching on next render).
-  // Both fire onMarkNext under the hood; the swipe gesture below dispatches.
-  // Gated on onMarkNext so read-only contexts (friend profiles) don't show
-  // an interactive-looking row that no-ops on tap/swipe.
+  // Single-behind / premiere-day rows still have something to catch up to —
+  // the long-press modal handles all flavors. The swipe-to-mark-next mechanic
+  // (and its accompanying orange left bar) used to live here but was removed
+  // in favor of the modal-only flow.
   const isSingleCatchup =
-    !!onMarkNext &&
     show.status === 'currently_watching' &&
     (isPremiereDay || (isSingleBehind && !!nextEpisode));
   // Long-press surfaces the catch-up modal whenever there's anything to catch
@@ -187,82 +166,6 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, 
     !!onCatchUp &&
     show.status === 'currently_watching' &&
     (isSingleCatchup || isMultiBehind || isCrossSeasonBehind);
-
-  const fireSingleCatchup = () => {
-    if (isPremiereDay && show.next_episode_season != null && show.next_episode_episode != null) {
-      onMarkNext?.(show.show_id, show.next_episode_season, show.next_episode_episode);
-    } else if (isSingleBehind && nextEpisode) {
-      onMarkNext?.(show.show_id, nextEpisode.season, nextEpisode.episode);
-    }
-  };
-
-  // PanResponder claims the gesture only when the user moves clearly to the
-  // right — vertical scrolls and taps fall through to the SectionList /
-  // Pressable as before. Past commit threshold the row resists further travel
-  // (rubbery feel) and a haptic fires once at the threshold cross to signal
-  // the swipe is armed.
-  const panResponder = useMemo(
-    () =>
-      isSingleCatchup
-        ? PanResponder.create({
-            // Don't claim plain taps — they should still navigate to the show.
-            onStartShouldSetPanResponderCapture: () => false,
-            // Capture-phase claim: fires top-down before the SectionList's
-            // scroll recognizer engages. Only fires on a strongly horizontal
-            // motion (dy < dx/2) so genuine vertical scrolls still pass
-            // through. Lower dx threshold (6 vs 8) lets us preempt native
-            // scroll, which engages on smaller deltas than JS PanResponder.
-            onMoveShouldSetPanResponderCapture: (_, g) =>
-              g.dx > 6 && Math.abs(g.dy) * 2 < g.dx,
-            onMoveShouldSetPanResponder: (_, g) => g.dx > 8 && Math.abs(g.dy) < Math.abs(g.dx),
-            onPanResponderGrant: () => {
-              armed.current = false;
-            },
-            onPanResponderMove: (_, g) => {
-              if (g.dx <= 0) {
-                dragX.setValue(0);
-                return;
-              }
-              const past = Math.max(0, g.dx - SWIPE_COMMIT_THRESHOLD);
-              const resisted = SWIPE_COMMIT_THRESHOLD + past * 0.35;
-              const next = Math.min(g.dx < SWIPE_COMMIT_THRESHOLD ? g.dx : resisted, SWIPE_MAX_TRAVEL);
-              dragX.setValue(next);
-              if (!armed.current && g.dx >= SWIPE_COMMIT_THRESHOLD) {
-                armed.current = true;
-                Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
-              } else if (armed.current && g.dx < SWIPE_COMMIT_THRESHOLD) {
-                armed.current = false;
-              }
-            },
-            onPanResponderRelease: (_, g) => {
-              const committed = g.dx >= SWIPE_COMMIT_THRESHOLD;
-              if (committed) {
-                Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success).catch(() => {});
-                fireSingleCatchup();
-              }
-              Animated.spring(dragX, {
-                toValue: 0,
-                useNativeDriver: true,
-                tension: 80,
-                friction: 12,
-              }).start();
-              armed.current = false;
-            },
-            onPanResponderTerminate: () => {
-              Animated.spring(dragX, {
-                toValue: 0,
-                useNativeDriver: true,
-                tension: 80,
-                friction: 12,
-              }).start();
-              armed.current = false;
-            },
-          })
-        : null,
-    // fireSingleCatchup closes over current props; rebuild when any of those change.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [isSingleCatchup, isPremiereDay, isSingleBehind, nextEpisode?.season, nextEpisode?.episode, show.next_episode_season, show.next_episode_episode],
-  );
 
   const handleLongPress = () => {
     if (!hasCatchup) return;
@@ -364,15 +267,8 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, 
   })();
 
   return (
-    <View style={styles.outer}>
-      {/* Persistent orange bar at the screen's left edge — visual hint that
-          the row is swipe-actionable. Stays put while the row content
-          translates right under the user's finger. */}
-      {isSingleCatchup && <View style={styles.catchupBar} pointerEvents="none" />}
-      <Animated.View
-        style={[styles.swipeWrap, { transform: [{ translateX: dragX }] }]}
-        {...(panResponder?.panHandlers ?? {})}
-      >
+    <View style={styles.outer} ref={outerRef} collapsable={false}>
+      <View style={styles.swipeWrap}>
         <Pressable
           style={({ pressed }) => [
             styles.row,
@@ -424,7 +320,7 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkNext, onMarkWatched, 
 
           {actionPill}
         </Pressable>
-      </Animated.View>
+      </View>
     </View>
   );
 }
@@ -474,6 +370,8 @@ function areEqual(prev: Props, next: Props): boolean {
   if (prev.isCaughtUp !== next.isCaughtUp) return false;
   if (prev.leftAccessory !== next.leftAccessory) return false;
   if (prev.readOnly !== next.readOnly) return false;
+  // outerRef identity matters — coachmark target moves between rows.
+  if (prev.outerRef !== next.outerRef) return false;
   // Function props: assumed stable via useCallback in parent. If a parent
   // ever passes a fresh function each render, that'd silently nerf this
   // memo — flag it during code review.
@@ -488,15 +386,6 @@ const createStyles = (theme: Theme) => StyleSheet.create({
   },
   swipeWrap: {
     backgroundColor: theme.bg,
-  },
-  catchupBar: {
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    bottom: 0,
-    width: 3,
-    backgroundColor: theme.accent,
-    zIndex: 1,
   },
   row: {
     flexDirection: 'row',

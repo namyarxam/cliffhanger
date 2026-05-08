@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect, useMemo } from 'react';
+import { useState, useCallback, useEffect, useMemo, useRef } from 'react';
 import * as Notifications from 'expo-notifications';
 import {
   View,
@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useFocusEffect } from 'expo-router';
+import { useCoachmark } from '@/src/tutorial/useCoachmark';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { qk } from '@/src/lib/queryKeys';
 import { useTheme } from '@/src/providers/ThemeProvider';
@@ -181,6 +182,15 @@ export default function MyShowsScreen() {
   const [refreshing, setRefreshing] = useState(false);
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
   const [catchUpTarget, setCatchUpTarget] = useState<UserShow | null>(null);
+  // Tracks tab focus so the long-press-catchup coachmark only fires when the
+  // user is actually looking at My Shows. Without this, an unfocused tab
+  // could measureInWindow and dim a screen the user can't see.
+  const [isFocused, setIsFocused] = useState(false);
+  const catchupTargetRef = useRef<View>(null);
+  useFocusEffect(useCallback(() => {
+    setIsFocused(true);
+    return () => setIsFocused(false);
+  }, []));
 
   // Surface query errors via Sentry once they settle (post-fetch). No render
   // impact — UI keeps last-known data on transient failures, matching the
@@ -371,6 +381,41 @@ export default function MyShowsScreen() {
     return userSections;
   }, [shows, nextEpisodes, collapsed]);
 
+  // Coachmark target: the first behind row in the Watching section. The
+  // section's data is sorted with behind shows first, so .data[0] is exactly
+  // that — provided it's behind. Falls through to null when the user is
+  // caught up on everything (no coachmark needed in that case).
+  const catchupTargetShowId = useMemo(() => {
+    const watching = sections.find(s => s.title === CW_GROUP_TITLES.watching);
+    const first = watching?.data[0];
+    if (!first) return null;
+    const isBehind = nextEpisodes.has(first.show_id) || isBehindFromCache(first);
+    return isBehind ? first.show_id : null;
+  }, [sections, nextEpisodes]);
+
+  // Sequential pair on the same target: tap-to-open first, then on dismiss
+  // longpress-to-catchup takes over via the provider's chain handoff. Both
+  // gate on the target existing, so users with no behind Watching show see
+  // neither. The chain (`showAfter`) means the swap is atomic — same render,
+  // no flash where neither is active.
+  useCoachmark({
+    id: 'tap_show_detail',
+    when: isFocused && catchupTargetShowId !== null,
+    ref: catchupTargetRef,
+    gesture: 'tap',
+    title: 'Tap a show',
+    body: "View show detail, ratings, episodes, and you and your friend's watch statuses!",
+  });
+  useCoachmark({
+    id: 'long_press_catchup',
+    when: isFocused && catchupTargetShowId !== null,
+    ref: catchupTargetRef,
+    gesture: 'longpress',
+    title: 'Catch up easily',
+    body: 'Press and hold to mark episodes as watched.',
+    showAfter: 'tap_show_detail',
+  });
+
   // Per-row nextEpisode lookup with cache-fallback baked in. Built once per
   // (shows, nextEpisodes) change so per-row props reference-stable across
   // renders — the previous inline-construction created a fresh object every
@@ -416,6 +461,7 @@ export default function MyShowsScreen() {
       hidePosters={hidePosters}
       airsToday={airingToday.has(item.show_id)}
       watchedCount={watchedCounts.get(item.show_id) ?? 0}
+      outerRef={item.show_id === catchupTargetShowId ? catchupTargetRef : undefined}
     />
   ), [
     handlePress,
@@ -426,6 +472,7 @@ export default function MyShowsScreen() {
     airingToday,
     watchedCounts,
     nextEpisodesWithFallback,
+    catchupTargetShowId,
   ]);
 
   const keyExtractor = useCallback((item: UserShow) =>
@@ -438,16 +485,19 @@ export default function MyShowsScreen() {
     return <LoaderFlavor messages={SHELF_MESSAGES} />;
   }
 
-  if (shows.length === 0) {
+  // Empty state when nothing is on My Shows — either a brand-new account or
+  // all of the user's shows are Finished/Muted (those live on other tabs).
+  // Gating on `sections.length` instead of `shows.length` covers both cases.
+  if (sections.length === 0) {
     return (
       <View style={styles.center}>
-        <Text style={styles.emptyTitle}>No shows yet</Text>
-        <Text style={styles.emptyText}>Search for a show and add it to your watchlist</Text>
+        <Text style={styles.emptyTitle}>Nothing to track yet</Text>
+        <Text style={styles.emptyText}>Find a show in Explore and add it to your watchlist or start watching it.</Text>
         <Pressable
           style={({ pressed }) => [styles.searchButton, pressed && { opacity: 0.7 }]}
           onPress={() => router.push('/(tabs)/explore')}
         >
-          <Text style={styles.searchButtonText}>Search Shows</Text>
+          <Text style={styles.searchButtonText}>Go to Explore</Text>
         </Pressable>
       </View>
     );

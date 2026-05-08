@@ -13,6 +13,7 @@ import {
 import { useRouter, useFocusEffect } from 'expo-router';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { useTheme } from '@/src/providers/ThemeProvider';
+import { useCoachmark } from '@/src/tutorial/useCoachmark';
 import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { searchShows } from '@/src/lib/data';
@@ -219,7 +220,27 @@ export default function SearchScreen() {
     <ShowCard show={item} onPress={handlePress} />
   ), [handlePress]);
 
+  // Coach the user on long-press-to-mute. We attach the anchor to the first
+  // poster of whichever carousel renders first AND has data — so the tooltip
+  // points at something visible. Trigger fires only when the user is on
+  // Explore (carousels visible) and there's at least one card to long-press.
+  const firstCardRef = useRef<View>(null);
+  const firstNonEmptyCarousel: 'popular' | 'airing' | 'topRated' | null =
+    popularItems.length > 0 ? 'popular'
+    : airingItems.length > 0 ? 'airing'
+    : topRatedItems.length > 0 ? 'topRated'
+    : null;
   const showCarousels = !query.trim() && !loading;
+  useCoachmark({
+    id: 'long_press_mute',
+    when: showCarousels && firstNonEmptyCarousel !== null,
+    ref: firstCardRef,
+    gesture: 'longpress',
+    title: 'Hide shows you don\'t care about',
+    body: 'Press and hold any poster to mute it from your Explore feed.',
+    delay: 700,
+  });
+
   const showSearching = loading;
   const showError = !!error;
   const showResults = !loading && !error && results.length > 0;
@@ -260,19 +281,19 @@ export default function SearchScreen() {
           {(popularQ.isLoading || popularItems.length > 0) && (
             <View style={styles.carouselSection}>
               <Text style={styles.carouselTitle}>Popular with Friends</Text>
-              <FeaturedCarousel items={popularItems} loading={popularQ.isLoading} onPress={handlePress} onMute={handleMute} resetSignal={carouselResetSignal} />
+              <FeaturedCarousel items={popularItems} loading={popularQ.isLoading} onPress={handlePress} onMute={handleMute} resetSignal={carouselResetSignal} firstItemRef={firstNonEmptyCarousel === 'popular' ? firstCardRef : undefined} />
             </View>
           )}
           {(airingQ.isLoading || airingItems.length > 0) && (
             <View style={styles.carouselSection}>
               <Text style={styles.carouselTitle}>Airing This Week</Text>
-              <FeaturedCarousel items={airingItems} loading={airingQ.isLoading} onPress={handlePress} onMute={handleMute} resetSignal={carouselResetSignal} />
+              <FeaturedCarousel items={airingItems} loading={airingQ.isLoading} onPress={handlePress} onMute={handleMute} resetSignal={carouselResetSignal} firstItemRef={firstNonEmptyCarousel === 'airing' ? firstCardRef : undefined} />
             </View>
           )}
           {(topRatedQ.isLoading || topRatedItems.length > 0) && (
             <View style={styles.carouselSection}>
               <Text style={styles.carouselTitle}>Top Rated</Text>
-              <FeaturedCarousel items={topRatedItems} loading={topRatedQ.isLoading} onPress={handlePress} onMute={handleMute} resetSignal={carouselResetSignal} mode="extend" onEndReached={handleTopRatedEndReached} />
+              <FeaturedCarousel items={topRatedItems} loading={topRatedQ.isLoading} onPress={handlePress} onMute={handleMute} resetSignal={carouselResetSignal} mode="extend" onEndReached={handleTopRatedEndReached} firstItemRef={firstNonEmptyCarousel === 'topRated' ? firstCardRef : undefined} />
             </View>
           )}
           {popularItems.length === 0 && airingItems.length === 0 && topRatedItems.length === 0 &&
@@ -375,15 +396,7 @@ const createStyles = (theme: Theme) => StyleSheet.create({
     fontSize: 14,
   },
   exploreScroll: {
-    // flexGrow lets the content container expand to fill the ScrollView's
-    // viewport when the carousels alone don't fill it (e.g. user has no
-    // friends so Popular is hidden, or the device is tall). justifyContent
-    // then centers them vertically. If the carousels do fill the viewport
-    // — tall enough device, all three rows visible — flexGrow yields and
-    // the content scrolls from the top normally.
-    flexGrow: 1,
-    justifyContent: 'center',
-    paddingTop: 12,
+    paddingTop: 24,
     paddingBottom: 20,
   },
   carouselSection: {
