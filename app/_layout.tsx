@@ -7,13 +7,17 @@ import { StatusBar } from 'expo-status-bar';
 import * as SplashScreen from 'expo-splash-screen';
 import * as Sentry from '@sentry/react-native';
 import * as Notifications from 'expo-notifications';
-import { QueryClient, QueryClientProvider, focusManager } from '@tanstack/react-query';
+import { QueryClient, focusManager } from '@tanstack/react-query';
+import { PersistQueryClientProvider } from '@tanstack/react-query-persist-client';
+import { createAsyncStoragePersister } from '@tanstack/query-async-storage-persister';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { AuthProvider, useAuth } from '@/src/providers/AuthProvider';
 import { TutorialProvider } from '@/src/providers/TutorialProvider';
 import { ThemeProvider, useThemeControl } from '@/src/providers/ThemeProvider';
 import { THEMES, type ThemeName } from '@/src/lib/theme';
 import { supabase } from '@/src/lib/supabase';
 import { silentCatch } from '@/src/lib/errorLog';
+import { PERSIST_QUERY_CACHE_KEY } from '@/src/lib/queryKeys';
 import LoaderFlavor from '@/src/components/LoaderFlavor';
 
 // Single QueryClient for the app's lifetime. Defaults tuned for a TV-tracker
@@ -26,11 +30,34 @@ const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       staleTime: 30_000,
-      gcTime: 5 * 60_000,
+      // gcTime must be >= persister maxAge or the persister will rehydrate
+      // entries that the in-memory cache immediately garbage-collects, leaving
+      // stale rows on disk that never serve a cache hit. Bumped to 24h to
+      // match PERSIST_MAX_AGE below.
+      gcTime: 1000 * 60 * 60 * 24,
       retry: false,
       refetchOnReconnect: 'always',
     },
   },
+});
+
+// AsyncStorage-backed persister for TanStack Query. On cold launch, cached
+// queries hydrate from disk before any network call fires — returning users
+// see their My Shows list instantly with stale-while-revalidate handling
+// freshness in the background. Bump `buster` when query shapes change so
+// stale rows from older builds get invalidated instead of crashing readers.
+//
+// Cross-user safety: every per-user queryKey in src/lib/queryKeys.ts is
+// scoped by userId, so a different user signing in on this device looks up
+// keys that don't match the previous user's cached data. signOut additionally
+// wipes the disk cache (see AuthProvider.signOut) for defense-in-depth.
+const PERSIST_MAX_AGE = 1000 * 60 * 60 * 24; // 24h
+const PERSIST_BUSTER = 'v1';
+
+const persister = createAsyncStoragePersister({
+  storage: AsyncStorage,
+  key: PERSIST_QUERY_CACHE_KEY,
+  throttleTime: 1000,
 });
 
 // TanStack Query's foreground/background detection relies on the browser
@@ -170,7 +197,13 @@ function AuthGate() {
     if (!session && !inAuthGroup) {
       router.replace('/(auth)/sign-in');
     } else if (session && inAuthGroup && !onResetScreen) {
-      router.replace(needsOnboarding ? '/(onboarding)/welcome' : '/(tabs)');
+      // Hold on the auth screen until the profile lands so we route to the
+      // right place on the first hop. Without this guard, fresh signups
+      // route to (tabs) (because !!profile is briefly false → needsOnboarding
+      // is false), then bounce to /(onboarding)/welcome once the profile
+      // resolves — flashing the empty-state My Shows screen for a beat.
+      if (!profile) return;
+      router.replace(profile.onboarded_at ? '/(tabs)' : '/(onboarding)/welcome');
     } else if (needsOnboarding && !inOnboardingGroup) {
       router.replace('/(onboarding)/welcome');
     } else if (session && profile && profile.onboarded_at && inOnboardingGroup) {
@@ -191,9 +224,10 @@ function AuthGate() {
   );
 }
 
-// Inner shell — runs inside ThemeProvider so it can read the theme. Splash
-// stays up until both fonts and the AsyncStorage theme load resolve, so the
-// first paint already uses the user's saved palette.
+// Inner shell — splash stays up until both fonts and the AsyncStorage theme
+// load resolve, so the first paint already uses the user's saved palette.
+// AuthProvider sits ABOVE this shell so its retryAuth network work runs in
+// parallel with font + theme loading instead of waiting for them to finish.
 function AppShell() {
   const [fontsLoaded, fontError] = useFonts({
     DMSans_400Regular,
@@ -216,22 +250,35 @@ function AppShell() {
   if (!fontsLoaded || !themeReady) return null;
 
   return (
-    <AuthProvider>
-      <TutorialProvider>
-        <StatusBar style={theme.statusBarStyle} />
-        <AuthGate />
-      </TutorialProvider>
-    </AuthProvider>
+    <>
+      <StatusBar style={theme.statusBarStyle} />
+      <AuthGate />
+    </>
   );
 }
 
+// Provider order matters:
+//   PersistQueryClientProvider — must wrap everything that reads from
+//     react-query (AuthProvider's prefetch, every screen).
+//   AuthProvider — hoisted to the top so retryAuth fires at module mount,
+//     concurrently with font/theme loading. Doesn't read theme.
+//   ThemeProvider — wraps Tutorial+AppShell because Coachmark consumes useTheme.
+//   TutorialProvider — needs both auth (profile.coachmarks_seen) and theme
+//     (Coachmark visuals), so it sits inside both.
 function RootLayout() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <ThemeProvider>
-        <AppShell />
-      </ThemeProvider>
-    </QueryClientProvider>
+    <PersistQueryClientProvider
+      client={queryClient}
+      persistOptions={{ persister, maxAge: PERSIST_MAX_AGE, buster: PERSIST_BUSTER }}
+    >
+      <AuthProvider>
+        <ThemeProvider>
+          <TutorialProvider>
+            <AppShell />
+          </TutorialProvider>
+        </ThemeProvider>
+      </AuthProvider>
+    </PersistQueryClientProvider>
   );
 }
 

@@ -236,11 +236,26 @@ export function useShowActions(deps: ShowActionsDeps) {
 
   const handleRate = useCallback(async (rating: number) => {
     if (!userId || !id) return;
+    // Optimistic — flip the cached userShow.rating BEFORE awaiting the
+    // network write. RatingSelector clears its local tempRating on release
+    // and falls back to the `rating` prop (sourced from userShow.rating);
+    // without an optimistic write, the slider snaps back to the old value
+    // for the duration of the network roundtrip, then jumps to the new
+    // value once the await resolves — a visible half-second flash.
+    let prevRating: number | null = null;
+    setUserShow(prev => {
+      if (!prev) return null;
+      prevRating = prev.rating ?? null;
+      return { ...prev, rating };
+    });
     try {
       await rateShow(userId, id, rating);
-      setUserShow(prev => prev ? { ...prev, rating } : null);
       invalidateMyShows();
-    } catch (e) { silentCatch('show:rate')(e); }
+    } catch (e) {
+      silentCatch('show:rate')(e);
+      // Revert on failure so the slider doesn't lie about persisted state.
+      setUserShow(prev => prev ? { ...prev, rating: prevRating } : null);
+    }
   }, [userId, id, setUserShow, invalidateMyShows]);
 
   const handleEpisodeTap = useCallback(async (season: number, episode: number) => {

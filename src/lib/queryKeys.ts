@@ -1,4 +1,12 @@
 /**
+ * AsyncStorage key under which the TanStack Query disk cache is persisted.
+ * Owned here so AuthProvider can clear it on signOut without importing from
+ * app/_layout.tsx (which would create a circular import — _layout imports
+ * AuthProvider).
+ */
+export const PERSIST_QUERY_CACHE_KEY = 'cliffhanger-rq-cache';
+
+/**
  * Centralized TanStack Query keys. Functions returning tuples so TS
  * enforces userId/showId/etc. arguments at every call site — typos can't
  * silently miss the cache. Each top-level domain ('userShows', 'profile',

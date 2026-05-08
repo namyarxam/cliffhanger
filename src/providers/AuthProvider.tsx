@@ -7,6 +7,8 @@ import { useQueryClient } from '@tanstack/react-query';
 import { supabase, SUPABASE_STORAGE_KEY } from '@/src/lib/supabase';
 import { silentCatch } from '@/src/lib/errorLog';
 import { withTimeout } from '@/src/lib/network';
+import { qk, PERSIST_QUERY_CACHE_KEY } from '@/src/lib/queryKeys';
+import { getUserShows } from '@/src/lib/watchlist';
 import type { UserProfile } from '@/src/lib/types';
 
 interface AuthState {
@@ -158,6 +160,20 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       setSession(data.session);
       Sentry.setUser({ id: data.session.user.id, email: data.session.user.email });
 
+      // Kick off the My Shows fetch in parallel with fetchProfile. By the
+      // time AuthGate routes the user to (tabs)/index, the data is already
+      // cached and the screen renders without a spinner. prefetchQuery
+      // respects staleTime — if the persister already hydrated fresh data,
+      // this is a no-op. Fire-and-forget; silentCatch handles failures so
+      // the cold-start path doesn't block on a flaky network.
+      const prefetchUserId = data.session.user.id;
+      queryClient
+        .prefetchQuery({
+          queryKey: qk.userShows.all(prefetchUserId),
+          queryFn: () => getUserShows(prefetchUserId),
+        })
+        .catch(silentCatch('auth:prefetchUserShows'));
+
       Sentry.addBreadcrumb({ category: 'auth', message: 'fetchProfile:start' });
       await withTimeout(fetchProfile(data.session.user.id), 5000);
       Sentry.addBreadcrumb({ category: 'auth', message: 'fetchProfile:done' });
@@ -276,6 +292,12 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     // Wipe every cached query so the next account that signs in (or the
     // sign-in screen itself) doesn't briefly read previous-user data.
     queryClient.clear();
+    // Also nuke the persisted disk cache. queryClient.clear() only empties
+    // memory; without this, the next launch would rehydrate the prior user's
+    // queries from disk before we revalidate. Per-user queryKeys make this
+    // defense-in-depth (different userIds wouldn't match anyway), but a
+    // shared device with the same Supabase project still benefits.
+    AsyncStorage.removeItem(PERSIST_QUERY_CACHE_KEY).catch(silentCatch('auth:clearPersistedCache'));
   }
 
   return (
