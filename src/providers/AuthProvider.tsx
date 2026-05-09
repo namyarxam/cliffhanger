@@ -133,8 +133,29 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       // Step 2: parse the stored session and hand it to auth-js. If
       // initializePromise is alive this resolves; if it's dead behind the
       // wedged read, withTimeout(4000) escapes and we nuke + sign-out.
-      const stored = JSON.parse(raw) as { access_token?: string; refresh_token?: string };
-      if (!stored.access_token || !stored.refresh_token) {
+      //
+      // Defensive parse: a corrupt value here used to crash boot — the
+      // raw SyntaxError would propagate up, the user couldn't open the app,
+      // and the bad value persisted across launches because nothing cleared
+      // it. Now we catch the parse error, wipe the bad key so the next
+      // launch starts clean, and fall through to no-session (sign-in).
+      // Same treatment for a parsed-but-malformed shape: clear and bail.
+      let stored: { access_token?: string; refresh_token?: string };
+      try {
+        stored = JSON.parse(raw);
+      } catch (parseErr) {
+        Sentry.captureException(parseErr, { tags: { context: 'auth:sessionStorageCorrupt' } });
+        await AsyncStorage.removeItem(SUPABASE_STORAGE_KEY).catch(silentCatch('auth:clearCorruptSession'));
+        Sentry.setUser(null);
+        setSession(null);
+        return;
+      }
+      if (!stored || typeof stored !== 'object' || !stored.access_token || !stored.refresh_token) {
+        Sentry.captureException(
+          new Error('Stored session missing access_token or refresh_token — clearing'),
+          { tags: { context: 'auth:sessionStorageMalformed' } },
+        );
+        await AsyncStorage.removeItem(SUPABASE_STORAGE_KEY).catch(silentCatch('auth:clearMalformedSession'));
         Sentry.setUser(null);
         setSession(null);
         return;
