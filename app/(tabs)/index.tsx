@@ -143,27 +143,27 @@ export default function MyShowsScreen() {
   // matching the old allSettled behavior (one blip doesn't blank the screen).
   const enabled = !!userId;
   const userShowsQuery = useQuery({
-    queryKey: ['userShows', userId],
+    queryKey: qk.userShows.all(userId),
     queryFn: () => getUserShows(userId!),
     enabled,
   });
   const nextEpisodesQuery = useQuery({
-    queryKey: ['nextEpisodes', userId],
+    queryKey: qk.nextEpisodes(userId),
     queryFn: () => getNextEpisodesForShows(userId!),
     enabled,
   });
   const airingTodayQuery = useQuery({
-    queryKey: ['airingToday', userId],
+    queryKey: qk.airingToday(userId),
     queryFn: () => getShowsAiringToday(userId!),
     enabled,
   });
   const returnAnnouncementsQuery = useQuery({
-    queryKey: ['returnAnnouncements', userId],
+    queryKey: qk.returnAnnouncements(userId),
     queryFn: () => getReturnAnnouncements(userId!),
     enabled,
   });
   const watchedCountsQuery = useQuery({
-    queryKey: ['watchedCounts', userId],
+    queryKey: qk.watchedCounts(userId),
     queryFn: () => getWatchedCounts(userId!),
     enabled,
   });
@@ -218,11 +218,11 @@ export default function MyShowsScreen() {
   useFocusEffect(
     useCallback(() => {
       if (!userId) return;
-      queryClient.invalidateQueries({ queryKey: ['userShows', userId] });
-      queryClient.invalidateQueries({ queryKey: ['nextEpisodes', userId] });
-      queryClient.invalidateQueries({ queryKey: ['airingToday', userId] });
-      queryClient.invalidateQueries({ queryKey: ['returnAnnouncements', userId] });
-      queryClient.invalidateQueries({ queryKey: ['watchedCounts', userId] });
+      queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
+      queryClient.invalidateQueries({ queryKey: qk.nextEpisodes(userId) });
+      queryClient.invalidateQueries({ queryKey: qk.airingToday(userId) });
+      queryClient.invalidateQueries({ queryKey: qk.returnAnnouncements(userId) });
+      queryClient.invalidateQueries({ queryKey: qk.watchedCounts(userId) });
     }, [userId, queryClient])
   );
 
@@ -247,12 +247,12 @@ export default function MyShowsScreen() {
     // The nextEpisodes query stores `{ nextEpisodes: Map }`, not the bare Map —
     // matching the queryFn return shape. Wrapping the bare Map in new Map()
     // would TypeError since the object isn't iterable.
-    queryClient.setQueryData<{ nextEpisodes: Map<string, NextEpisode> }>(['nextEpisodes', userId], prev => {
+    queryClient.setQueryData<{ nextEpisodes: Map<string, NextEpisode> }>(qk.nextEpisodes(userId), prev => {
       const nextMap = new Map(prev?.nextEpisodes ?? EMPTY_NEXT_EPISODES);
       nextMap.delete(showId);
       return { nextEpisodes: nextMap };
     });
-    queryClient.setQueryData<UserShow[]>(['userShows', userId], prev =>
+    queryClient.setQueryData<UserShow[]>(qk.userShows.all(userId), prev =>
       (prev ?? EMPTY_SHOWS).map(s =>
         s.show_id === showId ? { ...s, current_season: season, current_episode: episode } : s,
       ),
@@ -264,14 +264,14 @@ export default function MyShowsScreen() {
       // The wrapping NextEpisodes query also returns its own caught_up data —
       // letting it refetch handles the "no more next episodes → caught_up=true"
       // transition without us re-implementing it here.
-      queryClient.invalidateQueries({ queryKey: ['nextEpisodes', userId] });
-      queryClient.invalidateQueries({ queryKey: ['userShows', userId] });
-      queryClient.invalidateQueries({ queryKey: ['watchedCounts', userId] });
+      queryClient.invalidateQueries({ queryKey: qk.nextEpisodes(userId) });
+      queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
+      queryClient.invalidateQueries({ queryKey: qk.watchedCounts(userId) });
     } catch (e) {
       silentCatch('myShows:markNext')(e);
       // Rollback the optimistic write by refetching from server.
-      queryClient.invalidateQueries({ queryKey: ['userShows', userId] });
-      queryClient.invalidateQueries({ queryKey: ['nextEpisodes', userId] });
+      queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
+      queryClient.invalidateQueries({ queryKey: qk.nextEpisodes(userId) });
     }
   }, [userId, queryClient]);
 
@@ -291,14 +291,14 @@ export default function MyShowsScreen() {
   const handleDismissAnnouncement = useCallback(async (showId: string) => {
     if (!userId) return;
     queryClient.setQueryData<ReturnAnnouncement[]>(
-      ['returnAnnouncements', userId],
+      qk.returnAnnouncements(userId),
       prev => (prev ?? EMPTY_ANNOUNCEMENTS).filter(a => a.show_id !== showId),
     );
     try {
       await markReturnAnnouncementSeen(userId, showId);
     } catch (e) {
       silentCatch('myShows:dismissAnnouncement')(e);
-      queryClient.invalidateQueries({ queryKey: ['returnAnnouncements', userId] });
+      queryClient.invalidateQueries({ queryKey: qk.returnAnnouncements(userId) });
     }
   }, [userId, queryClient]);
 
@@ -310,7 +310,7 @@ export default function MyShowsScreen() {
   const handleMarkWatched = useCallback(async (showId: string) => {
     if (!userId) return;
     // Optimistic: drop from the list (Watched isn't shown on My Shows).
-    queryClient.setQueryData<UserShow[]>(['userShows', userId], prev =>
+    queryClient.setQueryData<UserShow[]>(qk.userShows.all(userId), prev =>
       (prev ?? EMPTY_SHOWS).filter(s => s.show_id !== showId),
     );
     try {
@@ -318,7 +318,7 @@ export default function MyShowsScreen() {
       // already in the DB — that's what reveals the inline RatingSelector
       // and surfaces the rating prompt.
       await updateShowStatus(userId, showId, 'watched');
-      queryClient.invalidateQueries({ queryKey: ['userShows', userId] });
+      queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
       // Per-show userShow cache lives at qk.userShow(userId, showId). Without
       // this invalidation the show-detail page rehydrates from a pre-watched
       // cache entry, status doesn't read 'watched', and the rating prompt
@@ -327,7 +327,7 @@ export default function MyShowsScreen() {
       router.push(`/show/${showId}?from=/`);
     } catch (e) {
       silentCatch('myShows:markWatched')(e);
-      queryClient.invalidateQueries({ queryKey: ['userShows', userId] });
+      queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
     }
   }, [userId, router, queryClient]);
 
@@ -550,11 +550,11 @@ export default function MyShowsScreen() {
             setRefreshing(true);
             try {
               await Promise.allSettled([
-                queryClient.refetchQueries({ queryKey: ['userShows', userId] }),
-                queryClient.refetchQueries({ queryKey: ['nextEpisodes', userId] }),
-                queryClient.refetchQueries({ queryKey: ['airingToday', userId] }),
-                queryClient.refetchQueries({ queryKey: ['returnAnnouncements', userId] }),
-                queryClient.refetchQueries({ queryKey: ['watchedCounts', userId] }),
+                queryClient.refetchQueries({ queryKey: qk.userShows.all(userId) }),
+                queryClient.refetchQueries({ queryKey: qk.nextEpisodes(userId) }),
+                queryClient.refetchQueries({ queryKey: qk.airingToday(userId) }),
+                queryClient.refetchQueries({ queryKey: qk.returnAnnouncements(userId) }),
+                queryClient.refetchQueries({ queryKey: qk.watchedCounts(userId) }),
               ]);
             } finally {
               setRefreshing(false);
@@ -576,9 +576,9 @@ export default function MyShowsScreen() {
       currentEpisode={catchUpTarget?.current_episode ?? 0}
       onMarked={() => {
         if (!userId) return;
-        queryClient.invalidateQueries({ queryKey: ['userShows', userId] });
-        queryClient.invalidateQueries({ queryKey: ['nextEpisodes', userId] });
-        queryClient.invalidateQueries({ queryKey: ['watchedCounts', userId] });
+        queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
+        queryClient.invalidateQueries({ queryKey: qk.nextEpisodes(userId) });
+        queryClient.invalidateQueries({ queryKey: qk.watchedCounts(userId) });
       }}
     />
     </>

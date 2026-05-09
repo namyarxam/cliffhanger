@@ -41,13 +41,29 @@ export default function MutedScreen() {
 
   const handleRate = async (showId: string, rating: number) => {
     if (!userId) return;
+    // Optimistic — write the new rating to the shared userShows cache first
+    // so RatingSelector lands instantly on release. Without this, the slider
+    // falls back to the cached rating prop during the network roundtrip and
+    // visibly snaps half a second later. Same pattern as the show detail
+    // page's handleRate (src/hooks/useShowActions.ts).
+    let prevRating: number | null = null;
+    queryClient.setQueryData<UserShow[]>(qk.userShows.all(userId), prev => {
+      if (!prev) return prev;
+      return prev.map(s => {
+        if (s.show_id !== showId) return s;
+        prevRating = s.rating ?? null;
+        return { ...s, rating };
+      });
+    });
     try {
       await rateShow(userId, showId, rating);
-      // Update the shared cache so My Shows / profile reflect the rating too.
+    } catch (e) {
+      silentCatch('muted:rate')(e);
+      // Revert on failure so the slider doesn't lie about persisted state.
       queryClient.setQueryData<UserShow[]>(qk.userShows.all(userId), prev =>
-        (prev ?? []).map(s => s.show_id === showId ? { ...s, rating } : s),
+        (prev ?? []).map(s => s.show_id === showId ? { ...s, rating: prevRating } : s),
       );
-    } catch (e) { silentCatch('muted:rate')(e); }
+    }
   };
 
   const handleMoveToWatched = (show: UserShow) => {
