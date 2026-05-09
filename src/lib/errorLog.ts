@@ -23,6 +23,20 @@ function isExpectedNetworkError(err: unknown): boolean {
 }
 
 /**
+ * Supabase wraps PostgREST/RPC errors as plain objects:
+ *   { code, details, hint, message }
+ * Passing one to Sentry.captureException directly produces an unhelpful
+ * "Object captured as exception with keys: code, details, hint, message"
+ * event with no usable stack. Detect that shape and rewrap into a real
+ * Error so the message + the diagnostic fields land on the Sentry event.
+ */
+function isSupabaseErrorShape(err: unknown): err is { code?: string; details?: string; hint?: string; message?: string } {
+  if (err == null || typeof err !== 'object' || err instanceof Error) return false;
+  const e = err as Record<string, unknown>;
+  return 'code' in e && 'message' in e && ('details' in e || 'hint' in e);
+}
+
+/**
  * Lightweight error logging for non-critical async operations.
  *
  * In dev: warns to the console so issues are visible while coding.
@@ -37,6 +51,14 @@ export function silentCatch(context: string) {
       return;
     }
     if (isExpectedNetworkError(err)) return;
+    if (isSupabaseErrorShape(err)) {
+      const wrapped = new Error(err.message || `Supabase error (code=${err.code ?? 'unknown'})`);
+      Sentry.captureException(wrapped, {
+        tags: { context, source: 'supabase' },
+        extra: { code: err.code, details: err.details, hint: err.hint, message: err.message },
+      });
+      return;
+    }
     Sentry.captureException(err, { tags: { context } });
   };
 }

@@ -7,7 +7,7 @@ import { useQueryClient } from '@tanstack/react-query';
 import { supabase, SUPABASE_STORAGE_KEY } from '@/src/lib/supabase';
 import { silentCatch } from '@/src/lib/errorLog';
 import { withTimeout } from '@/src/lib/network';
-import { qk, PERSIST_QUERY_CACHE_KEY } from '@/src/lib/queryKeys';
+import { qk } from '@/src/lib/queryKeys';
 import { getUserShows } from '@/src/lib/watchlist';
 import type { UserProfile } from '@/src/lib/types';
 
@@ -313,12 +313,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     // Wipe every cached query so the next account that signs in (or the
     // sign-in screen itself) doesn't briefly read previous-user data.
     queryClient.clear();
-    // Also nuke the persisted disk cache. queryClient.clear() only empties
-    // memory; without this, the next launch would rehydrate the prior user's
-    // queries from disk before we revalidate. Per-user queryKeys make this
-    // defense-in-depth (different userIds wouldn't match anyway), but a
-    // shared device with the same Supabase project still benefits.
-    AsyncStorage.removeItem(PERSIST_QUERY_CACHE_KEY).catch(silentCatch('auth:clearPersistedCache'));
   }
 
   return (

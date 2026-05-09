@@ -1,63 +1,42 @@
 import { useEffect } from 'react';
-import { AppState, Linking, Platform } from 'react-native';
+import { AppState, Linking, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 import type { AppStateStatus } from 'react-native';
 import { Stack, useRouter, useSegments } from 'expo-router';
+import type { ErrorBoundaryProps } from 'expo-router';
 import { useFonts, DMSans_400Regular, DMSans_500Medium, DMSans_600SemiBold, DMSans_700Bold } from '@expo-google-fonts/dm-sans';
 import { StatusBar } from 'expo-status-bar';
 import * as SplashScreen from 'expo-splash-screen';
 import * as Sentry from '@sentry/react-native';
 import * as Notifications from 'expo-notifications';
-import { QueryClient, focusManager } from '@tanstack/react-query';
-import { PersistQueryClientProvider } from '@tanstack/react-query-persist-client';
-import { createAsyncStoragePersister } from '@tanstack/query-async-storage-persister';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { QueryClient, QueryClientProvider, focusManager } from '@tanstack/react-query';
 import { AuthProvider, useAuth } from '@/src/providers/AuthProvider';
 import { TutorialProvider } from '@/src/providers/TutorialProvider';
 import { ThemeProvider, useThemeControl } from '@/src/providers/ThemeProvider';
 import { THEMES, type ThemeName } from '@/src/lib/theme';
 import { supabase } from '@/src/lib/supabase';
 import { silentCatch } from '@/src/lib/errorLog';
-import { PERSIST_QUERY_CACHE_KEY } from '@/src/lib/queryKeys';
 import LoaderFlavor from '@/src/components/LoaderFlavor';
 
 // Single QueryClient for the app's lifetime. Defaults tuned for a TV-tracker
 // — staleTime keeps cached data "fresh enough" for ~30s so a quick tab
-// bounce doesn't refetch; cacheTime holds discarded queries for 5 min so
+// bounce doesn't refetch; gcTime holds discarded queries for 5 min so
 // returning to a screen rehydrates from memory instead of re-fetching.
 // Retries off — we surface failures fast (existing 8s timeoutFetch + the
 // query's loading/error states) instead of looping.
+//
+// Note: AsyncStorage persistence was tried (commit 3a377e9) and reverted
+// after multiple TestFlight users hit "undefined is not a function" boot
+// crashes. Hoisting AuthProvider out of AppShell (also from that commit)
+// is kept — it's an independent change and was not the regression source.
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       staleTime: 30_000,
-      // gcTime must be >= persister maxAge or the persister will rehydrate
-      // entries that the in-memory cache immediately garbage-collects, leaving
-      // stale rows on disk that never serve a cache hit. Bumped to 24h to
-      // match PERSIST_MAX_AGE below.
-      gcTime: 1000 * 60 * 60 * 24,
+      gcTime: 5 * 60_000,
       retry: false,
       refetchOnReconnect: 'always',
     },
   },
-});
-
-// AsyncStorage-backed persister for TanStack Query. On cold launch, cached
-// queries hydrate from disk before any network call fires — returning users
-// see their My Shows list instantly with stale-while-revalidate handling
-// freshness in the background. Bump `buster` when query shapes change so
-// stale rows from older builds get invalidated instead of crashing readers.
-//
-// Cross-user safety: every per-user queryKey in src/lib/queryKeys.ts is
-// scoped by userId, so a different user signing in on this device looks up
-// keys that don't match the previous user's cached data. signOut additionally
-// wipes the disk cache (see AuthProvider.signOut) for defense-in-depth.
-const PERSIST_MAX_AGE = 1000 * 60 * 60 * 24; // 24h
-const PERSIST_BUSTER = 'v1';
-
-const persister = createAsyncStoragePersister({
-  storage: AsyncStorage,
-  key: PERSIST_QUERY_CACHE_KEY,
-  throttleTime: 1000,
 });
 
 // TanStack Query's foreground/background detection relies on the browser
@@ -75,8 +54,6 @@ if (Platform.OS !== 'web') {
   });
 }
 
-export { ErrorBoundary } from 'expo-router';
-
 // Sentry error tracking — runs before anything renders so the earliest crash is captured.
 if (process.env.EXPO_PUBLIC_SENTRY_DSN) {
   Sentry.init({
@@ -93,6 +70,46 @@ if (process.env.EXPO_PUBLIC_SENTRY_DSN) {
 
 // Keep the splash screen visible while we load fonts + check auth
 SplashScreen.preventAutoHideAsync();
+
+// Custom expo-router ErrorBoundary. When a render error escapes a screen,
+// expo-router catches it and renders this component instead of crashing the
+// process. The default export from expo-router is silent — it shows
+// "Something went wrong" but doesn't notify Sentry, so production crashes
+// went unobserved. This version captures the error with a stack-preserving
+// tag, surfaces the error message to the user, and offers a Retry that
+// re-mounts the route subtree.
+//
+// Errors that happen ABOVE the route boundary (in providers, in module
+// load) are caught by Sentry.wrap() at the bottom of this file. Together
+// the two layers cover every JS render path.
+export function ErrorBoundary({ error, retry }: ErrorBoundaryProps) {
+  useEffect(() => {
+    Sentry.captureException(error, { tags: { context: 'expo-router:ErrorBoundary' } });
+  }, [error]);
+
+  return (
+    <View style={errorStyles.container}>
+      <Text style={errorStyles.title}>Something went wrong</Text>
+      <Text style={errorStyles.message}>{error.message || String(error)}</Text>
+      <Pressable
+        onPress={() => { retry().catch(() => {}); }}
+        style={({ pressed }) => [errorStyles.retry, pressed && { opacity: 0.7 }]}
+      >
+        <Text style={errorStyles.retryText}>Retry</Text>
+      </Pressable>
+    </View>
+  );
+}
+
+// Inline styles — this component must render even if ThemeProvider failed
+// or hasn't mounted yet, so it can't depend on the theme context.
+const errorStyles = StyleSheet.create({
+  container: { flex: 1, backgroundColor: '#000', justifyContent: 'center', alignItems: 'center', padding: 24 },
+  title: { color: '#fff', fontSize: 22, fontWeight: '700', marginBottom: 12, textAlign: 'center' },
+  message: { color: '#aaa', fontSize: 14, marginBottom: 32, textAlign: 'center' },
+  retry: { borderColor: '#fff', borderWidth: 1, borderRadius: 8, paddingHorizontal: 32, paddingVertical: 14 },
+  retryText: { color: '#fff', fontSize: 16, fontWeight: '600' },
+});
 
 /**
  * Handle incoming Supabase auth deep links (password reset, email confirmation).
@@ -258,8 +275,8 @@ function AppShell() {
 }
 
 // Provider order matters:
-//   PersistQueryClientProvider — must wrap everything that reads from
-//     react-query (AuthProvider's prefetch, every screen).
+//   QueryClientProvider — must wrap everything that reads from react-query
+//     (AuthProvider's prefetch, every screen).
 //   AuthProvider — hoisted to the top so retryAuth fires at module mount,
 //     concurrently with font/theme loading. Doesn't read theme.
 //   ThemeProvider — wraps Tutorial+AppShell because Coachmark consumes useTheme.
@@ -267,10 +284,7 @@ function AppShell() {
 //     (Coachmark visuals), so it sits inside both.
 function RootLayout() {
   return (
-    <PersistQueryClientProvider
-      client={queryClient}
-      persistOptions={{ persister, maxAge: PERSIST_MAX_AGE, buster: PERSIST_BUSTER }}
-    >
+    <QueryClientProvider client={queryClient}>
       <AuthProvider>
         <ThemeProvider>
           <TutorialProvider>
@@ -278,7 +292,7 @@ function RootLayout() {
           </TutorialProvider>
         </ThemeProvider>
       </AuthProvider>
-    </PersistQueryClientProvider>
+    </QueryClientProvider>
   );
 }
 
