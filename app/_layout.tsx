@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { AppState, Linking, Platform, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
+import { AppState, Linking, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 import type { AppStateStatus } from 'react-native';
 import { Stack, useRouter, useSegments } from 'expo-router';
 import type { ErrorBoundaryProps } from 'expo-router';
@@ -17,35 +17,12 @@ import { supabase } from '@/src/lib/supabase';
 import { silentCatch } from '@/src/lib/errorLog';
 import LoaderFlavor from '@/src/components/LoaderFlavor';
 
-// Force every Text/TextInput in the app to ignore the user's iOS Dynamic
-// Type setting and render at the size we wrote in the stylesheet. Without
-// this, users with "Larger Accessibility Sizes" enabled see text scaled
-// up to ~310% of default — buttons crop, labels collide, episode timeline
-// numbers overflow. Tradeoff: users who legitimately need bigger text
-// won't get it from this app (they'd see system-level text grow but ours
-// stays put). Acceptable for now; revisit with maxFontSizeMultiplier if
-// we want a partial concession.
-//
-// Implementation: React 19 dropped defaultProps for function components,
-// and RN's Text/TextInput are forwardRef function components — the old
-// `Text.defaultProps = { allowFontScaling: false }` trick is silently
-// ignored under React 19. Patching the underlying `render` function on
-// the forwardRef object is version-agnostic and works in both React 18
-// and 19 because RN's reconciler still calls `.render` directly.
-import React from 'react';
-type ForwardRefRender = { render: (...args: unknown[]) => React.ReactElement };
-function disableScaling(component: unknown) {
-  const c = component as ForwardRefRender;
-  if (typeof c?.render !== 'function') return;
-  const original = c.render;
-  c.render = function patched(...args: unknown[]) {
-    const elem = original.apply(this, args);
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    return React.cloneElement(elem, { allowFontScaling: false } as any);
-  };
-}
-disableScaling(Text);
-disableScaling(TextInput);
+// Note: Dynamic Type opt-out is enforced via patches/react-native+0.81.5.patch
+// (see patches/ directory). React 19 dropped defaultProps for function
+// components and the .render override is no longer reachable under Fabric
+// (RN GitHub #51113), so we hardcode allowFontScaling=false directly in
+// node_modules/react-native/Libraries/Text/Text.js + TextInput/TextInput.js
+// via patch-package. Postinstall hook reapplies on every npm/yarn install.
 
 // Single QueryClient for the app's lifetime. Defaults tuned for a TV-tracker
 // — staleTime keeps cached data "fresh enough" for ~30s so a quick tab
