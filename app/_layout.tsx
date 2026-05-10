@@ -26,13 +26,26 @@ import LoaderFlavor from '@/src/components/LoaderFlavor';
 // stays put). Acceptable for now; revisit with maxFontSizeMultiplier if
 // we want a partial concession.
 //
-// Set on defaultProps before the first render so every component picks
-// it up — even ones that don't pass the prop themselves.
-type WithDefaultProps = { defaultProps?: { allowFontScaling?: boolean } };
-const TextWithDefaults = Text as unknown as WithDefaultProps;
-const TextInputWithDefaults = TextInput as unknown as WithDefaultProps;
-TextWithDefaults.defaultProps = { ...TextWithDefaults.defaultProps, allowFontScaling: false };
-TextInputWithDefaults.defaultProps = { ...TextInputWithDefaults.defaultProps, allowFontScaling: false };
+// Implementation: React 19 dropped defaultProps for function components,
+// and RN's Text/TextInput are forwardRef function components — the old
+// `Text.defaultProps = { allowFontScaling: false }` trick is silently
+// ignored under React 19. Patching the underlying `render` function on
+// the forwardRef object is version-agnostic and works in both React 18
+// and 19 because RN's reconciler still calls `.render` directly.
+import React from 'react';
+type ForwardRefRender = { render: (...args: unknown[]) => React.ReactElement };
+function disableScaling(component: unknown) {
+  const c = component as ForwardRefRender;
+  if (typeof c?.render !== 'function') return;
+  const original = c.render;
+  c.render = function patched(...args: unknown[]) {
+    const elem = original.apply(this, args);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return React.cloneElement(elem, { allowFontScaling: false } as any);
+  };
+}
+disableScaling(Text);
+disableScaling(TextInput);
 
 // Single QueryClient for the app's lifetime. Defaults tuned for a TV-tracker
 // — staleTime keeps cached data "fresh enough" for ~30s so a quick tab
