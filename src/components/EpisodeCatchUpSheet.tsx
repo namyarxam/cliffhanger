@@ -26,7 +26,7 @@ interface Props {
   showTitle: string;
   currentSeason: number;
   currentEpisode: number;
-  onMarked: () => void;
+  onMarked: (season: number, episode: number) => void;
 }
 
 interface UnwatchedEpisode {
@@ -94,7 +94,7 @@ export default function EpisodeCatchUpSheet({
       // episode_watches, no gaps. Different from markNextEpisode which only
       // upserts a single row.
       await markUpToEpisode(userId, showId, season, episode, show.seasons);
-      onMarked();
+      onMarked(season, episode);
       onClose();
     } catch (e) {
       silentCatch('catchUpSheet:markUpTo')(e);

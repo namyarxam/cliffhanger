@@ -171,7 +171,24 @@ export default function MyShowsScreen() {
   // Derived state with safe defaults — keeps the rest of the render code
   // identical to the pre-migration version.
   const shows = userShowsQuery.data ?? EMPTY_SHOWS;
-  const nextEpisodes = nextEpisodesQuery.data?.nextEpisodes ?? EMPTY_NEXT_EPISODES;
+  const rawNextEpisodes = nextEpisodesQuery.data?.nextEpisodes ?? EMPTY_NEXT_EPISODES;
+  // Filter out entries whose airdate is strictly in the future. The
+  // get_next_episodes_for_shows RPC sometimes surfaces the next-up episode
+  // regardless of whether it has actually aired (e.g., S4E4 listed when
+  // S4E4 doesn't drop until tomorrow). We don't want those rows treated as
+  // "behind" — there's nothing to catch up to. Filtering here lets every
+  // downstream consumer (classifyCW, sort, WatchlistCard subtext, the
+  // long-press catchup affordance) fall through to the caught-up-active
+  // path which renders "Next episode tomorrow" copy and disables catchup.
+  const nextEpisodes = useMemo(() => {
+    const now = Date.now();
+    const out = new Map<string, NextEpisode>();
+    for (const [showId, ep] of rawNextEpisodes) {
+      if (ep.airdate && new Date(ep.airdate + 'T00:00:00').getTime() > now) continue;
+      out.set(showId, ep);
+    }
+    return out;
+  }, [rawNextEpisodes]);
   const airingToday = airingTodayQuery.data ?? EMPTY_AIRING_TODAY;
   const returnAnnouncements = returnAnnouncementsQuery.data ?? EMPTY_ANNOUNCEMENTS;
   const watchedCounts = watchedCountsQuery.data ?? EMPTY_WATCHED_COUNTS;
@@ -574,8 +591,25 @@ export default function MyShowsScreen() {
       showTitle={catchUpTarget?.show_title ?? ''}
       currentSeason={catchUpTarget?.current_season ?? 0}
       currentEpisode={catchUpTarget?.current_episode ?? 0}
-      onMarked={() => {
-        if (!userId) return;
+      onMarked={(season, episode) => {
+        if (!userId || !catchUpTarget) return;
+        const showId = catchUpTarget.show_id;
+        // Optimistic — write the new progress + drop this show from the
+        // schedule's next-episode map BEFORE invalidating. Without this, the
+        // row keeps reading the old (behind) state until refetch returns,
+        // which can take long enough that "nothing changed" feels broken.
+        // Especially noticeable on single-behind catch-ups where the user
+        // expects the row to immediately flip to caught-up.
+        queryClient.setQueryData<UserShow[]>(qk.userShows.all(userId), prev =>
+          (prev ?? EMPTY_SHOWS).map(s =>
+            s.show_id === showId ? { ...s, current_season: season, current_episode: episode } : s,
+          ),
+        );
+        queryClient.setQueryData<{ nextEpisodes: Map<string, NextEpisode> }>(qk.nextEpisodes(userId), prev => {
+          const map = new Map(prev?.nextEpisodes ?? EMPTY_NEXT_EPISODES);
+          map.delete(showId);
+          return { nextEpisodes: map };
+        });
         queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
         queryClient.invalidateQueries({ queryKey: qk.nextEpisodes(userId) });
         queryClient.invalidateQueries({ queryKey: qk.watchedCounts(userId) });
