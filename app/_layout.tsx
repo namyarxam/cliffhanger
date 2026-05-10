@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { AppState, Linking, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
+import { AppState, Linking, Platform, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 import type { AppStateStatus } from 'react-native';
 import { Stack, useRouter, useSegments } from 'expo-router';
 import type { ErrorBoundaryProps } from 'expo-router';
@@ -16,6 +16,23 @@ import { THEMES, type ThemeName } from '@/src/lib/theme';
 import { supabase } from '@/src/lib/supabase';
 import { silentCatch } from '@/src/lib/errorLog';
 import LoaderFlavor from '@/src/components/LoaderFlavor';
+
+// Force every Text/TextInput in the app to ignore the user's iOS Dynamic
+// Type setting and render at the size we wrote in the stylesheet. Without
+// this, users with "Larger Accessibility Sizes" enabled see text scaled
+// up to ~310% of default — buttons crop, labels collide, episode timeline
+// numbers overflow. Tradeoff: users who legitimately need bigger text
+// won't get it from this app (they'd see system-level text grow but ours
+// stays put). Acceptable for now; revisit with maxFontSizeMultiplier if
+// we want a partial concession.
+//
+// Set on defaultProps before the first render so every component picks
+// it up — even ones that don't pass the prop themselves.
+type WithDefaultProps = { defaultProps?: { allowFontScaling?: boolean } };
+const TextWithDefaults = Text as unknown as WithDefaultProps;
+const TextInputWithDefaults = TextInput as unknown as WithDefaultProps;
+TextWithDefaults.defaultProps = { ...TextWithDefaults.defaultProps, allowFontScaling: false };
+TextInputWithDefaults.defaultProps = { ...TextInputWithDefaults.defaultProps, allowFontScaling: false };
 
 // Single QueryClient for the app's lifetime. Defaults tuned for a TV-tracker
 // — staleTime keeps cached data "fresh enough" for ~30s so a quick tab
