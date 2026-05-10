@@ -64,6 +64,21 @@ function isAiredRecently(airdate: string | null): boolean {
   return diff >= 0 && diff <= NEW_WINDOW_MS;
 }
 
+// Mirror of isBehindFromCache in app/(tabs)/index.tsx — must include the
+// same null/future last_aired_airdate guard. Stale cached rows (from before
+// f34b02f) can have last_aired_episode pointing at a null-airdate
+// placeholder; those should NOT count as behind, otherwise the row renders
+// "S{N} E{N}" catch-up copy for an episode that hasn't aired yet.
+function isCachedBehind(s: { last_aired_season: number | null; last_aired_episode: number | null; last_aired_airdate: string | null; current_season: number; current_episode: number }): boolean {
+  if (s.last_aired_season == null || s.last_aired_episode == null) return false;
+  if (!s.last_aired_airdate) return false;
+  const today = new Date().toISOString().slice(0, 10);
+  if (s.last_aired_airdate > today) return false;
+  if (s.last_aired_season > s.current_season) return true;
+  if (s.last_aired_season === s.current_season && s.last_aired_episode > s.current_episode) return true;
+  return false;
+}
+
 function WatchlistCard({ show, onPress, nextEpisode, onMarkWatched, onCatchUp, leftAccessory, hidePosters, airsToday, watchedCount, readOnly, outerRef }: Props) {
   const theme = useTheme();
   const styles = useMemo(() => createStyles(theme), [theme]);
@@ -73,14 +88,18 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkWatched, onCatchUp, l
   const isNewEpisode = hasNext && isAiredRecently(nextEpisode?.airdate ?? null);
 
   const scheduleBehind = nextEpisode?.behindCount ?? 0;
-  const sameSeasonBehind = (() => {
-    if (show.last_aired_season == null || show.last_aired_episode == null) return 0;
-    if (show.last_aired_season !== show.current_season) return 0;
-    return Math.max(0, show.last_aired_episode - show.current_episode);
-  })();
+  // Cache-derived "behind" math is gated on isCachedBehind so stale rows
+  // (last_aired_airdate null or in the future) can't render as behind.
+  // Without that gate, a row with a null-airdate placeholder cached as
+  // last_aired would show "S{N} E{N}" catch-up copy for an unaired episode.
+  const cachedBehind = isCachedBehind(show);
+  const sameSeasonBehind =
+    cachedBehind && show.last_aired_season === show.current_season && show.last_aired_episode != null
+      ? Math.max(0, show.last_aired_episode - show.current_episode)
+      : 0;
   const isCrossSeasonBehind =
+    cachedBehind &&
     show.last_aired_season != null &&
-    show.last_aired_episode != null &&
     show.last_aired_season > show.current_season;
   const behindCount = Math.max(scheduleBehind, sameSeasonBehind);
   const isBehind = hasNext || sameSeasonBehind > 0 || isCrossSeasonBehind;

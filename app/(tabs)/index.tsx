@@ -103,8 +103,21 @@ function isPremiereUpcomingState(s: UserShow): boolean {
 //   2. The cached last-aired episode (set when the user last opened the show
 //      detail page) is past the user's progress (reliable fallback — self-heals
 //      on the next show-page visit if the cron missed the episode).
+//
+// Defense against stale cache: also require last_aired_airdate to be a real
+// date that's already passed. An older bug (fixed in f34b02f) wrote
+// null-airdate placeholders into shows.last_aired_*, leaving rows where
+// last_aired_episode points at a future placeholder with last_aired_airdate
+// = null. Without this gate, those rows render as "behind" forever — even
+// after the function fix shipped — until the user happens to revisit show
+// detail and trigger a re-cache. Treating null/future airdate as "we don't
+// know if it actually aired" lets the row fall through to the schedule RPC
+// (which has its own airdate gate) instead of trusting bad cached data.
 function isBehindFromCache(s: UserShow): boolean {
   if (s.last_aired_season == null || s.last_aired_episode == null) return false;
+  if (!s.last_aired_airdate) return false;
+  const today = new Date().toISOString().slice(0, 10);
+  if (s.last_aired_airdate > today) return false;
   if (s.last_aired_season > s.current_season) return true;
   if (s.last_aired_season === s.current_season && s.last_aired_episode > s.current_episode) return true;
   return false;
