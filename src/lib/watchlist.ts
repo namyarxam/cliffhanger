@@ -14,13 +14,19 @@ export const POPULAR_SHOWS_LIMIT_DEFAULT = 25;
 export function getLastAiredEpisode(
   seasons: Season[],
   today = new Date().toISOString().slice(0, 10),
-): { season: number; episode: number; airdate: string | null } | null {
+): { season: number; episode: number; airdate: string } | null {
   let lastSeason = 0;
   let lastEp = 0;
-  let lastAirdate: string | null = null;
+  let lastAirdate = '';
   for (const s of seasons) {
     for (const ep of s.episodes) {
-      if (!ep.airdate || ep.airdate <= today) {
+      // Only count episodes with an explicit airdate on/before today.
+      // TVMaze leaves airdate=null on placeholder rows for unannounced
+      // future episodes — including those would have us write the
+      // highest-numbered placeholder as "last aired" and treat the user
+      // as perpetually behind a phantom episode that doesn't exist yet.
+      // (countAiredEpisodes below uses the same gate.)
+      if (ep.airdate && ep.airdate <= today) {
         lastSeason = s.number;
         lastEp = ep.number;
         lastAirdate = ep.airdate;
