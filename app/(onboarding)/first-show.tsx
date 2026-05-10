@@ -78,6 +78,8 @@ export default function FirstShowScreen() {
         nextEpisodeAirdate: full.nextEpisode?.airdate ?? null,
         nextEpisodeSeason: full.nextEpisode?.season ?? null,
         nextEpisodeEpisode: full.nextEpisode?.number ?? null,
+        nextEpisodeAirstamp: full.nextEpisode?.airstamp ?? null,
+        nextEpisodeAirtime: full.nextEpisode?.airtime ?? null,
         lastAiredSeason: lastAired?.season ?? null,
         lastAiredEpisode: lastAired?.episode ?? null,
         lastAiredAirdate: lastAired?.airdate ?? null,

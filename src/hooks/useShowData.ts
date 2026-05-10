@@ -117,7 +117,7 @@ export function useShowData(id: string | undefined) {
       id,
       show.status,
       show.nextEpisode
-        ? { season: show.nextEpisode.season, episode: show.nextEpisode.number, airdate: show.nextEpisode.airdate }
+        ? { season: show.nextEpisode.season, episode: show.nextEpisode.number, airdate: show.nextEpisode.airdate, airstamp: show.nextEpisode.airstamp, airtime: show.nextEpisode.airtime }
         : null,
       lastAired ? { season: lastAired.season, episode: lastAired.episode, airdate: lastAired.airdate } : null,
       countAiredEpisodes(show.seasons),

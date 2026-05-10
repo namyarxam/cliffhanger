@@ -15,11 +15,78 @@ function daysUntil(airdate: string): number {
   // ms-difference math rounded that to 0 days and rendered "today."
   return daysBetween(getLocalToday(), airdate);
 }
-function formatNextEpisodeIn(airdate: string): string {
-  const days = daysUntil(airdate);
-  if (days <= 0) return 'Next episode today';
-  if (days === 1) return 'Next episode tomorrow';
-  return `Next episode in ${days}d`;
+
+function localDateString(d: Date): string {
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
+}
+
+// "9:00 PM" → "9PM", "9:30 PM" → "9:30PM". Uses formatToParts so we don't
+// depend on the locale's literal separator (some locales drop the space).
+function formatTime(d: Date): string {
+  const fmt = new Intl.DateTimeFormat(undefined, {
+    hour: 'numeric',
+    minute: '2-digit',
+    hour12: true,
+  });
+  const parts = fmt.formatToParts(d);
+  const hour = parts.find(p => p.type === 'hour')?.value ?? '';
+  const minute = parts.find(p => p.type === 'minute')?.value ?? '';
+  const dp = (parts.find(p => p.type === 'dayPeriod')?.value ?? '').toUpperCase().replace(/\s/g, '');
+  return minute === '00' ? `${hour}${dp}` : `${hour}:${minute}${dp}`;
+}
+
+function formatNextEpisodeIn(airdate: string, airstamp: string | null, airtime: string | null): string {
+  // No airstamp → row hasn't been refreshed since the airstamp column landed.
+  // No airtime → TVMaze didn't pin a real drop time (common for streamers like
+  // Prime, Apple TV+, MGM+) — its `airstamp` defaults to noon UTC in that
+  // case, which would render confidently-wrong "today at 12PM" copy. In both
+  // cases fall through to date-only.
+  if (!airstamp || !airtime) {
+    const days = daysUntil(airdate);
+    if (days <= 0) return 'Returns today';
+    if (days === 1) return 'Returns tomorrow';
+    return `Returns in ${days}d`;
+  }
+
+  // airstamp is "2026-05-10T16:00:00+00:00" — fully qualified, JS parses it
+  // straight to the absolute instant. Day + time render in device tz.
+  const instant = new Date(airstamp);
+  if (isNaN(instant.getTime())) {
+    const days = daysUntil(airdate);
+    if (days <= 0) return 'Returns today';
+    if (days === 1) return 'Returns tomorrow';
+    return `Returns in ${days}d`;
+  }
+
+  // Recompute days against the user-local date — converting from network tz
+  // can shift the day across midnight (a Sunday 9pm ET show is Monday 2am
+  // for a UK viewer).
+  const userDate = localDateString(instant);
+  const days = daysBetween(getLocalToday(), userDate);
+
+  // Outside the 3-day window → fall back to date-only "in Xd" copy
+  if (days < 0 || days > 3) {
+    if (days <= 0) return 'Returns today';
+    if (days === 1) return 'Returns tomorrow';
+    return `Returns in ${days}d`;
+  }
+
+  const time = formatTime(instant);
+
+  if (days === 0) {
+    // Past 6pm device-local + airing today reads as "tonight" — feels more
+    // imminent than the generic "today" cue. Pre-6pm shows (3am late-night
+    // drops, daytime soaps) keep "today".
+    const nowHour = new Date().getHours();
+    if (nowHour >= 18) return `Returns tonight at ${time}`;
+    return `Returns today at ${time}`;
+  }
+  if (days === 1) return `Returns tomorrow at ${time}`;
+  const weekday = instant.toLocaleDateString(undefined, { weekday: 'long' });
+  return `Returns ${weekday} at ${time}`;
 }
 function formatPremiereIn(airdate: string): string {
   const days = daysUntil(airdate);
@@ -202,7 +269,7 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkWatched, onCatchUp, l
   // dim metadata.
   //
   // All catch-up-flavored subtexts (Catch up, N behind, NEW · S5 E5, premiere
-  // banners, mid-season "Next episode in") are gated on currently_watching.
+  // banners, mid-season "Returns in") are gated on currently_watching.
   // The underlying behind-state derivations are pure season/episode math —
   // a Watched or Watchlist show whose last_aired_season is past the user's
   // current_season would otherwise render "Catch up" forever.
@@ -248,7 +315,7 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkWatched, onCatchUp, l
     if (isCaughtUpActive && show.next_episode_airdate) {
       return (
         <Text style={styles.subtext} numberOfLines={1}>
-          {formatNextEpisodeIn(show.next_episode_airdate)}
+          {formatNextEpisodeIn(show.next_episode_airdate, show.next_episode_airstamp, show.next_episode_airtime)}
         </Text>
       );
     }
@@ -372,6 +439,8 @@ function areEqual(prev: Props, next: Props): boolean {
       prev.show.next_episode_airdate !== next.show.next_episode_airdate ||
       prev.show.next_episode_season !== next.show.next_episode_season ||
       prev.show.next_episode_episode !== next.show.next_episode_episode ||
+      prev.show.next_episode_airstamp !== next.show.next_episode_airstamp ||
+      prev.show.next_episode_airtime !== next.show.next_episode_airtime ||
       prev.show.total_aired_episodes !== next.show.total_aired_episodes ||
       prev.show.rating !== next.show.rating ||
       prev.show.caught_up !== next.show.caught_up

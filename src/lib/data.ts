@@ -154,6 +154,17 @@ export async function fetchShow(id: string): Promise<ShowFull> {
     number: nextEp.number,
     name: nextEp.name,
     airdate: nextEp.airdate ?? null,
+    // Wall-clock airtime in the network's local timezone (e.g. "21:00").
+    // Empty string for streamers TVMaze hasn't pinned a real drop time on —
+    // the My Shows row uses this as a presence gate before trusting the
+    // accompanying airstamp (which TVMaze defaults to noon UTC when airtime
+    // is blank).
+    airtime: nextEp.airtime || null,
+    // ISO 8601 with offset (e.g. "2026-05-10T16:00:00+00:00"). TVMaze
+    // populates this even when `airtime` is blank — the absolute UTC instant
+    // is what the My Shows row uses to render "Wednesday at 9PM" in the
+    // viewer's local clock.
+    airstamp: nextEp.airstamp ?? null,
   } : null;
 
   return {

@@ -184,6 +184,8 @@ export async function addShow(
     nextEpisodeAirdate: string | null;
     nextEpisodeSeason: number | null;
     nextEpisodeEpisode: number | null;
+    nextEpisodeAirstamp: string | null;
+    nextEpisodeAirtime: string | null;
     lastAiredSeason: number | null;
     lastAiredEpisode: number | null;
     lastAiredAirdate: string | null;
@@ -222,6 +224,8 @@ export async function addShow(
       next_episode_airdate: metadata?.nextEpisodeAirdate ?? null,
       next_episode_season: metadata?.nextEpisodeSeason ?? null,
       next_episode_episode: metadata?.nextEpisodeEpisode ?? null,
+      next_episode_airstamp: metadata?.nextEpisodeAirstamp ?? null,
+      next_episode_airtime: metadata?.nextEpisodeAirtime ?? null,
       last_aired_season: metadata?.lastAiredSeason ?? null,
       last_aired_episode: metadata?.lastAiredEpisode ?? null,
       last_aired_airdate: metadata?.lastAiredAirdate ?? null,
@@ -256,7 +260,7 @@ export async function addShow(
 export async function cacheShowMetadata(
   showId: string,
   showStatus: string | null,
-  nextEpisode: { season: number; episode: number; airdate: string | null } | null,
+  nextEpisode: { season: number; episode: number; airdate: string | null; airstamp: string | null; airtime: string | null } | null,
   lastAired: { season: number; episode: number; airdate: string | null } | null,
   totalAiredEpisodes: number | null,
 ): Promise<void> {
@@ -267,6 +271,8 @@ export async function cacheShowMetadata(
       next_episode_airdate: nextEpisode?.airdate ?? null,
       next_episode_season: nextEpisode?.season ?? null,
       next_episode_episode: nextEpisode?.episode ?? null,
+      next_episode_airstamp: nextEpisode?.airstamp ?? null,
+      next_episode_airtime: nextEpisode?.airtime ?? null,
       last_aired_season: lastAired?.season ?? null,
       last_aired_episode: lastAired?.episode ?? null,
       last_aired_airdate: lastAired?.airdate ?? null,
