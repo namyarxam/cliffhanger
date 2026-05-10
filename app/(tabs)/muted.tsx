@@ -76,12 +76,29 @@ export default function MutedScreen() {
           text: 'Move',
           onPress: async () => {
             if (!userId) return;
+            // Optimistic — flip status in the shared cache before the network
+            // call so the row leaves the muted list instantly. Snapshot for
+            // revert on failure.
+            let prevShows: UserShow[] | undefined;
+            queryClient.setQueryData<UserShow[]>(qk.userShows.all(userId), prev => {
+              prevShows = prev;
+              return (prev ?? []).map(s =>
+                s.show_id === show.show_id ? { ...s, status: 'watched' as const } : s,
+              );
+            });
             try {
               await updateShowStatus(userId, show.show_id, 'watched');
-              queryClient.setQueryData<UserShow[]>(qk.userShows.all(userId), prev =>
-                (prev ?? []).map(s => s.show_id === show.show_id ? { ...s, status: 'watched' as const } : s),
-              );
-            } catch (e) { silentCatch('muted:moveToWatched')(e); }
+              // Per-show userShow cache lives at qk.userShow(userId, showId).
+              // Invalidate so a subsequent show-detail visit refetches with
+              // status='watched' (reveals the rating prompt). watchedCounts
+              // also derives from status — invalidate so My Shows badge and
+              // Watched tab counts stay in sync.
+              queryClient.invalidateQueries({ queryKey: qk.userShow(userId, show.show_id) });
+              queryClient.invalidateQueries({ queryKey: qk.watchedCounts(userId) });
+            } catch (e) {
+              queryClient.setQueryData<UserShow[]>(qk.userShows.all(userId), prevShows);
+              silentCatch('muted:moveToWatched')(e);
+            }
           },
         },
       ],

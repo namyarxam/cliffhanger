@@ -43,13 +43,18 @@ export default function BlockedUsersScreen() {
         {
           text: 'Unblock',
           onPress: async () => {
+            // Optimistic — drop the row from the cached blocked list before
+            // the network call so the user sees their tap take effect
+            // instantly. Snapshot for revert on failure.
+            let prevList: UserProfile[] | undefined;
+            queryClient.setQueryData<UserProfile[]>(qk.blocked(userId), prev => {
+              prevList = prev;
+              return (prev ?? []).filter(u => u.id !== user.id);
+            });
             try {
               await unblockUser(userId, user.id);
-              queryClient.setQueryData<UserProfile[]>(
-                qk.blocked(userId),
-                prev => (prev ?? []).filter(u => u.id !== user.id),
-              );
             } catch (e: any) {
+              queryClient.setQueryData<UserProfile[]>(qk.blocked(userId), prevList);
               Alert.alert('Could not unblock', e.message || 'Please try again.');
             }
           },

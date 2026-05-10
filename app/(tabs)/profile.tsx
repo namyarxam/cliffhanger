@@ -37,7 +37,7 @@ type AvatarPickerItem =
 export default function ProfileScreen() {
   const theme = useTheme();
   const styles = useMemo(() => createStyles(theme), [theme]);
-  const { profile, user, signOut, refreshProfile } = useAuth();
+  const { profile, user, signOut, refreshProfile, updateProfile } = useAuth();
   const router = useRouter();
 
   const userId = user?.id;
@@ -119,21 +119,21 @@ export default function ProfileScreen() {
 
   const handleSaveEdit = async () => {
     if (!user?.id || !editName.trim()) return;
-    if (editName.trim().length > 40) {
+    const trimmed = editName.trim();
+    if (trimmed.length > 40) {
       Alert.alert('Display name too long', 'Display name must be 40 characters or fewer.');
       return;
     }
+    // Close the editor optimistically. updateProfile writes the new name to
+    // the auth context's profile state synchronously, so the header reflects
+    // the change instantly. On failure it reverts and we keep the editor
+    // closed (the snapped-back name is correct), but surface an Alert so the
+    // user knows the save didn't stick.
+    setEditing(false);
     try {
-      const { error } = await supabase
-        .from('profiles')
-        .update({ display_name: editName.trim() })
-        .eq('id', user.id);
-
-      if (error) throw error;
-      await refreshProfile();
-      setEditing(false);
-    } catch {
-      // silently fail
+      await updateProfile({ display_name: trimmed });
+    } catch (e: any) {
+      Alert.alert('Could not save name', e?.message || 'Please try again.');
     }
   };
 

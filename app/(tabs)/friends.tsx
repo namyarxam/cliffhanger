@@ -165,18 +165,29 @@ export default function FriendsScreen() {
   }, [userId, queryClient]);
 
   // ── Actions ─────────────────────────────────────────────────────────────────
+  // Pattern across all three handlers: flip the row's action label in
+  // local state BEFORE the network call so the button feels instant. On
+  // failure, revert to the prior label so we don't lie about persisted
+  // state. Cache invalidations fire after the await so the friends list
+  // refreshes once the server confirms.
+  const setRowAction = useCallback((friendId: string, action: FriendAction) => {
+    setAddResults(prev =>
+      prev.map(r => r.user.id === friendId ? { ...r, action } : r),
+    );
+  }, []);
+
   const handleAdd = useCallback(async (friendId: string) => {
     if (!userId) return;
+    const prev = addResults.find(r => r.user.id === friendId)?.action;
+    setRowAction(friendId, 'pending');
     try {
       await sendFriendRequest(userId, friendId);
-      setAddResults(prev =>
-        prev.map(r =>
-          r.user.id === friendId ? { ...r, action: 'pending' as FriendAction } : r
-        )
-      );
       invalidateFriends();
-    } catch (e) { silentCatch('friends:add')(e); }
-  }, [userId, invalidateFriends]);
+    } catch (e) {
+      if (prev) setRowAction(friendId, prev);
+      silentCatch('friends:add')(e);
+    }
+  }, [userId, addResults, setRowAction, invalidateFriends]);
 
   const handleAccept = useCallback(async (friendId: string) => {
     const req = pending.find(p => p.user.id === friendId);
@@ -184,17 +195,17 @@ export default function FriendsScreen() {
     const fid = req?.friendship_id ?? searchReq?.friendshipId;
     if (!fid) return;
 
+    const prev = searchReq?.action;
+    setRowAction(friendId, 'friends');
     try {
       await acceptFriendRequest(fid);
       invalidateFriends();
       refreshBadge();
-      setAddResults(prev =>
-        prev.map(r =>
-          r.user.id === friendId ? { ...r, action: 'friends' as FriendAction } : r
-        )
-      );
-    } catch (e) { silentCatch('friends:accept')(e); }
-  }, [pending, addResults, invalidateFriends, refreshBadge]);
+    } catch (e) {
+      if (prev) setRowAction(friendId, prev);
+      silentCatch('friends:accept')(e);
+    }
+  }, [pending, addResults, setRowAction, invalidateFriends, refreshBadge]);
 
   const handleDecline = useCallback(async (friendId: string) => {
     const req = pending.find(p => p.user.id === friendId);

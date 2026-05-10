@@ -24,6 +24,11 @@ interface AuthState {
   markOnboarded: () => Promise<void>;
   markCoachmarkSeen: (id: string) => Promise<void>;
   resetCoachmarks: () => Promise<void>;
+  // Optimistic profile field update. Writes the partial patch to local state
+  // before the network call so callers (display name edit, settings toggles,
+  // theme picker, etc.) feel instant. Reverts the local state on failure.
+  // Throws on error so callers can surface their own UI feedback if needed.
+  updateProfile: (patch: Partial<UserProfile>) => Promise<void>;
 }
 
 const AuthContext = createContext<AuthState>({
@@ -37,6 +42,7 @@ const AuthContext = createContext<AuthState>({
   markOnboarded: async () => {},
   markCoachmarkSeen: async () => {},
   resetCoachmarks: async () => {},
+  updateProfile: async () => {},
 });
 
 export function useAuth() {
@@ -293,6 +299,28 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     if (error) silentCatch('auth:markCoachmarkSeen')(error);
   }, []);
 
+  // Optimistic profile patch. Writes the partial fields to local state first
+  // so the UI updates instantly (display name input, theme picker, settings
+  // toggles), then commits to Supabase. On failure the local state reverts
+  // to the snapshot taken before the optimistic write so the UI doesn't
+  // lie about persisted state. Throws so callers can react if needed
+  // (e.g., show an Alert for a constraint violation).
+  const updateProfile = useCallback(async (patch: Partial<UserProfile>) => {
+    const userId = sessionRef.current?.user?.id;
+    const prev = profileRef.current;
+    if (!userId || !prev) return;
+    const next = { ...prev, ...patch };
+    setProfile(next);
+    const { error } = await supabase
+      .from('profiles')
+      .update(patch)
+      .eq('id', userId);
+    if (error) {
+      setProfile(prev);
+      throw error;
+    }
+  }, []);
+
   // Debug-only: clear the seen list so the user can re-experience every
   // coachmark. Wired to a settings button for in-app testing.
   const resetCoachmarks = useCallback(async () => {
@@ -329,6 +357,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       markOnboarded,
       markCoachmarkSeen,
       resetCoachmarks,
+      updateProfile,
     }}>
       {children}
     </AuthContext.Provider>
