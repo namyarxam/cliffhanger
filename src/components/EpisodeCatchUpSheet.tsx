@@ -16,6 +16,7 @@ import type { Theme } from '@/src/lib/theme';
 import { fetchShow } from '@/src/lib/data';
 import { getWatchedEpisodes, markUpToEpisode } from '@/src/lib/watchlist';
 import { silentCatch } from '@/src/lib/errorLog';
+import { getLocalToday } from '@/src/lib/utils';
 import type { ShowFull } from '@/src/lib/types';
 
 interface Props {
@@ -63,7 +64,7 @@ export default function EpisodeCatchUpSheet({
       .finally(() => setLoading(false));
   }, [visible, showId, userId]);
 
-  const today = new Date().toISOString().slice(0, 10);
+  const today = getLocalToday();
   const queue: UnwatchedEpisode[] = show
     ? show.seasons.flatMap(season =>
         season.episodes

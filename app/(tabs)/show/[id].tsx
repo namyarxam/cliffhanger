@@ -26,6 +26,7 @@ import EpisodePicker from '@/src/components/EpisodePicker';
 import RatingSelector, { getUserRatingColor } from '@/src/components/RatingSelector';
 import FriendRatingsModal from '@/src/components/FriendRatingsModal';
 import ListPickerModal from '@/src/components/ListPickerModal';
+import { getLocalToday } from '@/src/lib/utils';
 import type { WatchStatus } from '@/src/lib/types';
 
 const STATUS_LABELS: Record<WatchStatus, string> = {
@@ -196,7 +197,7 @@ export default function ShowDetailScreen() {
     const daysAway = (next - Date.now()) / (1000 * 60 * 60 * 24);
     return daysAway <= 30;
   })();
-  const today = new Date().toISOString().slice(0, 10);
+  const today = getLocalToday();
 
   const airedCount = (() => {
     let count = 0;

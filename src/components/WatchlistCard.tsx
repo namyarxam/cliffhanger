@@ -5,11 +5,15 @@ import { Image } from 'expo-image';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 import { getUserRatingColor } from '@/src/components/RatingSelector';
+import { daysBetween, getLocalToday } from '@/src/lib/utils';
 import type { UserShow } from '@/src/lib/types';
 
 function daysUntil(airdate: string): number {
-  const next = new Date(airdate + 'T00:00:00');
-  return Math.round((next.getTime() - Date.now()) / (1000 * 60 * 60 * 24));
+  // Compare local-midnight to local-midnight so an episode airing
+  // tomorrow always reads "tomorrow," even when the user is checking at
+  // 9pm and tomorrow's midnight is technically <24 hours away. The old
+  // ms-difference math rounded that to 0 days and rendered "today."
+  return daysBetween(getLocalToday(), airdate);
 }
 function formatNextEpisodeIn(airdate: string): string {
   const days = daysUntil(airdate);
@@ -72,7 +76,7 @@ function isAiredRecently(airdate: string | null): boolean {
 function isCachedBehind(s: { last_aired_season: number | null; last_aired_episode: number | null; last_aired_airdate: string | null; current_season: number; current_episode: number }): boolean {
   if (s.last_aired_season == null || s.last_aired_episode == null) return false;
   if (!s.last_aired_airdate) return false;
-  const today = new Date().toISOString().slice(0, 10);
+  const today = getLocalToday();
   if (s.last_aired_airdate > today) return false;
   if (s.last_aired_season > s.current_season) return true;
   if (s.last_aired_season === s.current_season && s.last_aired_episode > s.current_episode) return true;

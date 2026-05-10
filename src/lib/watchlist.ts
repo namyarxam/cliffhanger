@@ -1,5 +1,6 @@
 import { supabase } from './supabase';
 import { getFriends } from './friends';
+import { getLocalToday } from './utils';
 import type { UserShow, EpisodeWatch, WatchStatus, Season } from './types';
 
 // Used by both My Shows ("Popular with Friends" carousel) and the Search
@@ -13,7 +14,7 @@ export const POPULAR_SHOWS_LIMIT_DEFAULT = 25;
 /** Find the last episode that has already aired. */
 export function getLastAiredEpisode(
   seasons: Season[],
-  today = new Date().toISOString().slice(0, 10),
+  today = getLocalToday(),
 ): { season: number; episode: number; airdate: string } | null {
   let lastSeason = 0;
   let lastEp = 0;
@@ -44,7 +45,7 @@ export function getLastAiredEpisode(
  */
 export function countAiredEpisodes(
   seasons: Season[],
-  today = new Date().toISOString().slice(0, 10),
+  today = getLocalToday(),
 ): number {
   let count = 0;
   for (const s of seasons) {
@@ -565,7 +566,7 @@ export interface ReturnAnnouncement {
  * those shows have either aired (now in Behind) or stayed silent again.
  */
 export async function getReturnAnnouncements(userId: string): Promise<ReturnAnnouncement[]> {
-  const today = new Date().toISOString().slice(0, 10);
+  const today = getLocalToday();
   const { data, error } = await supabase
     .from('user_shows_full')
     .select('show_id, show_title, show_image, next_episode_airdate, returning_announced_at, returning_seen_at')
@@ -599,7 +600,7 @@ export async function markReturnAnnouncementSeen(userId: string, showId: string)
 
 /** Returns the set of show_ids where the user has an unwatched episode airing today. */
 export async function getShowsAiringToday(userId: string): Promise<Set<string>> {
-  const today = new Date().toISOString().slice(0, 10);
+  const today = getLocalToday();
 
   const { data: userShows } = await supabase
     .from('user_shows')

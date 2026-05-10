@@ -17,6 +17,7 @@ import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { getUserShows, getNextEpisodesForShows, getShowsAiringToday, getReturnAnnouncements, markReturnAnnouncementSeen, markNextEpisode, updateShowStatus, getWatchedCounts } from '@/src/lib/watchlist';
+import { getLocalToday } from '@/src/lib/utils';
 import type { NextEpisode, ReturnAnnouncement } from '@/src/lib/watchlist';
 import WatchlistCard from '@/src/components/WatchlistCard';
 import EpisodeCatchUpSheet from '@/src/components/EpisodeCatchUpSheet';
@@ -116,8 +117,7 @@ function isPremiereUpcomingState(s: UserShow): boolean {
 function isBehindFromCache(s: UserShow): boolean {
   if (s.last_aired_season == null || s.last_aired_episode == null) return false;
   if (!s.last_aired_airdate) return false;
-  const today = new Date().toISOString().slice(0, 10);
-  if (s.last_aired_airdate > today) return false;
+  if (s.last_aired_airdate > getLocalToday()) return false;
   if (s.last_aired_season > s.current_season) return true;
   if (s.last_aired_season === s.current_season && s.last_aired_episode > s.current_episode) return true;
   return false;
