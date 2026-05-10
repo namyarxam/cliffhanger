@@ -8,7 +8,6 @@ import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { getPendingRequests } from '@/src/lib/friends';
-import { getPendingInviteCount } from '@/src/lib/conversations';
 import { qk } from '@/src/lib/queryKeys';
 import { silentCatch } from '@/src/lib/errorLog';
 
@@ -40,15 +39,7 @@ export default function TabLayout() {
     refetchInterval: 10000,
     refetchIntervalInBackground: false,
   });
-  const chatInviteCountQ = useQuery({
-    queryKey: qk.pendingInviteCount(userId),
-    queryFn: () => getPendingInviteCount(userId!),
-    enabled: !!userId,
-    refetchInterval: 10000,
-    refetchIntervalInBackground: false,
-  });
   const pendingCount = pendingRequestsCountQ.data ?? 0;
-  const chatInviteCount = chatInviteCountQ.data ?? 0;
 
   // Forward query errors to Sentry. The pre-migration setInterval fetches
   // ran through silentCatch on every tick; after the TanStack switch the
@@ -56,17 +47,12 @@ export default function TabLayout() {
   useEffect(() => {
     if (pendingRequestsCountQ.error) silentCatch('tabs:pendingRequestsCount')(pendingRequestsCountQ.error);
   }, [pendingRequestsCountQ.error]);
-  useEffect(() => {
-    if (chatInviteCountQ.error) silentCatch('tabs:chatInviteCount')(chatInviteCountQ.error);
-  }, [chatInviteCountQ.error]);
 
-  // Friends/Chat screens call refreshBadge() after a mutation that should
-  // immediately reflect in the tab badge — wired to invalidate so it
-  // refetches now instead of waiting for the next 10s tick.
+  // Friends screen calls refreshBadge() after accept/decline so the tab
+  // badge updates immediately instead of waiting for the next 10s tick.
   const refreshPending = useCallback(() => {
     if (!userId) return;
     queryClient.invalidateQueries({ queryKey: qk.pendingRequestCount(userId) });
-    queryClient.invalidateQueries({ queryKey: qk.pendingInviteCount(userId) });
   }, [userId, queryClient]);
 
   const activeTabRef = useRef<string | null>('index');
@@ -129,11 +115,6 @@ export default function TabLayout() {
                     {tab.name === 'profile' && pendingCount > 0 && (
                       <View style={styles.badge}>
                         <Text style={styles.badgeText}>{pendingCount}</Text>
-                      </View>
-                    )}
-                    {tab.name === 'chat' && chatInviteCount > 0 && (
-                      <View style={styles.badge}>
-                        <Text style={styles.badgeText}>{chatInviteCount}</Text>
                       </View>
                     )}
                   </View>

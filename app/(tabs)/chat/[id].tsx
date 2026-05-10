@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
-import { useQuery, useQueryClient } from '@tanstack/react-query';
+import { useQuery, useInfiniteQuery, useQueryClient, type InfiniteData } from '@tanstack/react-query';
 import { qk } from '@/src/lib/queryKeys';
 import {
   View,
@@ -36,7 +36,7 @@ import {
   leaveConversation,
   toggleSpoilerLock,
   getFriendsNotInConversation,
-  sendConversationInvite,
+  addFriendToConversation,
   getConversationDisplayName,
   renameConversation,
   attachShow,
@@ -93,12 +93,25 @@ export default function ChatDetailScreen() {
   });
   const members: ConversationMember[] = membersQ.data ?? EMPTY_MEMBERS;
 
-  const messagesQ = useQuery({
+  // Paginated via useInfiniteQuery — first page is the latest 50 messages,
+  // each subsequent page fetches messages older than the last loaded page's
+  // oldest created_at. The FlatList is `inverted`, so onEndReached fires when
+  // the user scrolls UP into older history, which calls fetchNextPage.
+  const MESSAGES_PAGE_SIZE = 50;
+  const messagesQ = useInfiniteQuery({
     queryKey: qk.messages(id),
-    queryFn: () => getMessages(id!).catch(() => [] as Message[]),
+    initialPageParam: undefined as string | undefined,
+    queryFn: ({ pageParam }) => getMessages(id!, MESSAGES_PAGE_SIZE, pageParam).catch(() => [] as Message[]),
+    // Each page is sorted desc (newest → oldest within the page). When a page
+    // is short, there's nothing older.
+    getNextPageParam: (lastPage) =>
+      lastPage.length < MESSAGES_PAGE_SIZE ? undefined : lastPage[lastPage.length - 1].created_at,
     enabled: !!id,
   });
-  const messages: Message[] = messagesQ.data ?? EMPTY_MESSAGES;
+  const messages: Message[] = useMemo(
+    () => messagesQ.data?.pages.flat() ?? EMPTY_MESSAGES,
+    [messagesQ.data],
+  );
 
   const loading = conversationQ.isLoading || membersQ.isLoading || messagesQ.isLoading;
 
@@ -119,10 +132,22 @@ export default function ChatDetailScreen() {
 
   // setX wrappers — keep mutation handlers below readable while routing the
   // writes through the shared query cache so other screens see them.
+  //
+  // All mutation paths (optimistic add, replace temp w/ saved, remove on
+  // failure, incoming broadcast) only ever touch the most recent messages,
+  // which always live on the first page. Older pages are append-only history
+  // and never edited here, so we apply updaters to pages[0] and leave the
+  // rest of the InfiniteData shape intact.
   const setMessages = useCallback((updater: Message[] | ((prev: Message[]) => Message[])) => {
-    queryClient.setQueryData<Message[]>(qk.messages(id), prev => {
-      const base = prev ?? EMPTY_MESSAGES;
-      return typeof updater === 'function' ? (updater as (p: Message[]) => Message[])(base) : updater;
+    queryClient.setQueryData<InfiniteData<Message[], string | undefined>>(qk.messages(id), prev => {
+      const headPage = prev?.pages[0] ?? EMPTY_MESSAGES;
+      const nextHead = typeof updater === 'function'
+        ? (updater as (p: Message[]) => Message[])(headPage)
+        : updater;
+      if (!prev) {
+        return { pages: [nextHead], pageParams: [undefined] };
+      }
+      return { ...prev, pages: [nextHead, ...prev.pages.slice(1)] };
     });
   }, [queryClient, id]);
   const setConversation = useCallback((next: Conversation | null) => {
@@ -141,10 +166,9 @@ export default function ChatDetailScreen() {
   // Modal state
   const [gifPickerVisible, setGifPickerVisible] = useState(false);
   const [settingsModalVisible, setSettingsModalVisible] = useState(false);
-  const [inviteModalVisible, setInviteModalVisible] = useState(false);
+  const [addFriendsModalVisible, setAddFriendsModalVisible] = useState(false);
   const [showPickerVisible, setShowPickerVisible] = useState(false);
-  const [invitableFriends, setInvitableFriends] = useState<{ user: UserProfile; alreadyInvited: boolean }[]>([]);
-  const [invitedIds, setInvitedIds] = useState<Set<string>>(new Set());
+  const [addableFriends, setAddableFriends] = useState<UserProfile[]>([]);
   const [loadingFriends, setLoadingFriends] = useState(false);
   const [editName, setEditName] = useState('');
   const [userShows, setUserShows] = useState<UserShow[]>([]);
@@ -188,7 +212,12 @@ export default function ChatDetailScreen() {
       .on('broadcast', { event: 'new_message' }, (payload) => {
         const msg = payload.payload as Message;
         if (msg.user_id === userId) return;
-        queryClient.setQueryData<Message[]>(qk.messages(id), prev => [msg, ...(prev ?? EMPTY_MESSAGES)]);
+        queryClient.setQueryData<InfiniteData<Message[], string | undefined>>(qk.messages(id), prev => {
+          const headPage = prev?.pages[0] ?? EMPTY_MESSAGES;
+          const nextHead = [msg, ...headPage];
+          if (!prev) return { pages: [nextHead], pageParams: [undefined] };
+          return { ...prev, pages: [nextHead, ...prev.pages.slice(1)] };
+        });
       })
       .on(
         'postgres_changes',
@@ -370,24 +399,34 @@ export default function ChatDetailScreen() {
     );
   }, [userId, id, conversation, catchingUp, queryClient]);
 
-  const handleOpenInviteModal = useCallback(async () => {
+  const handleOpenAddFriendsModal = useCallback(async () => {
     if (!userId || !id) return;
-    setInviteModalVisible(true);
+    setAddFriendsModalVisible(true);
     setLoadingFriends(true);
     try {
       const friends = await getFriendsNotInConversation(userId, id);
-      setInvitableFriends(friends);
-      setInvitedIds(new Set(friends.filter(f => f.alreadyInvited).map(f => f.user.id)));
-    } catch (e) { silentCatch('chatDetail:loadInvitable')(e); } finally { setLoadingFriends(false); }
+      setAddableFriends(friends);
+    } catch (e) { silentCatch('chatDetail:loadAddable')(e); } finally { setLoadingFriends(false); }
   }, [userId, id]);
 
-  const handleInviteFriend = useCallback(async (friendId: string) => {
+  const handleAddFriend = useCallback(async (friendId: string) => {
     if (!userId || !id) return;
+    // Optimistic remove — once added they're a member, no point keeping them
+    // in the addable list. postgres_changes refresh will pull them into the
+    // members query automatically.
+    setAddableFriends(prev => prev.filter(f => f.id !== friendId));
     try {
-      await sendConversationInvite(id, userId, friendId);
-      setInvitedIds(prev => new Set(prev).add(friendId));
-    } catch (e) { silentCatch('chatDetail:invite')(e); }
-  }, [userId, id]);
+      await addFriendToConversation(id, friendId);
+      queryClient.invalidateQueries({ queryKey: ['conversationMembers', id] });
+    } catch (e) {
+      silentCatch('chatDetail:addFriend')(e);
+      // Reload the friends list on failure so the row reappears.
+      try {
+        const friends = await getFriendsNotInConversation(userId, id);
+        setAddableFriends(friends);
+      } catch (reloadErr) { silentCatch('chatDetail:reloadAddable')(reloadErr); }
+    }
+  }, [userId, id, queryClient]);
 
   const handleRename = useCallback(async () => {
     if (!conversation) return;
@@ -453,7 +492,11 @@ export default function ChatDetailScreen() {
         {/* Header */}
         <View style={styles.header}>
           <View style={styles.headerTop}>
-            <Pressable style={({ pressed }) => [styles.headerBackArea, pressed && { opacity: 0.5 }]} onPress={() => router.back()} hitSlop={{ top: 8, bottom: 8 }}>
+            <Pressable
+              style={({ pressed }) => [styles.headerBackArea, pressed && { opacity: 0.5 }]}
+              onPress={() => router.replace('/(tabs)/chat')}
+              hitSlop={{ top: 8, bottom: 8 }}
+            >
               <FontAwesome name="chevron-left" size={20} color={theme.textDim} />
               {hasShow && conversation.show_image ? (
                 <View style={styles.headerPosterWrap}>
@@ -476,12 +519,16 @@ export default function ChatDetailScreen() {
               </View>
             </Pressable>
             {!isDM && (
-              <Pressable style={({ pressed }) => [styles.inviteButton, pressed && { opacity: 0.7 }]} onPress={handleOpenInviteModal}>
-                <Text style={styles.inviteButtonText}>Invite</Text>
+              <Pressable style={({ pressed }) => [styles.inviteButton, pressed && { opacity: 0.7 }]} onPress={handleOpenAddFriendsModal}>
+                <Text style={styles.inviteButtonText}>Add</Text>
               </Pressable>
             )}
-            <Pressable style={({ pressed }) => pressed && { opacity: 0.5 }} onPress={() => { setEditName(conversation.name ?? ''); setSettingsModalVisible(true); }}>
-              <FontAwesome name="gear" size={20} color={theme.textDim} />
+            <Pressable
+              style={({ pressed }) => [styles.gearButton, pressed && { opacity: 0.5 }]}
+              hitSlop={{ top: 14, bottom: 14, left: 14, right: 14 }}
+              onPress={() => { setEditName(conversation.name ?? ''); setSettingsModalVisible(true); }}
+            >
+              <FontAwesome name="gear" size={24} color={theme.textDim} />
             </Pressable>
           </View>
 
@@ -578,6 +625,15 @@ export default function ChatDetailScreen() {
                 inverted
                 contentContainerStyle={styles.messageList}
                 ListEmptyComponent={<View style={styles.chatEmpty}><Text style={styles.chatEmptyText}>No messages yet. Start the conversation!</Text></View>}
+                onEndReachedThreshold={0.5}
+                onEndReached={() => {
+                  if (messagesQ.hasNextPage && !messagesQ.isFetchingNextPage) {
+                    messagesQ.fetchNextPage();
+                  }
+                }}
+                ListFooterComponent={messagesQ.isFetchingNextPage ? (
+                  <View style={styles.chatLoadingMore}><ActivityIndicator color={theme.textFaint} size="small" /></View>
+                ) : null}
               />
               <View style={[styles.inputBar, { paddingBottom: insets.bottom > 0 ? insets.bottom - 20 : 13 }]}>
                 <Pressable style={({ pressed }) => pressed && { opacity: 0.5 }} onPress={() => setGifPickerVisible(true)}>
@@ -614,20 +670,20 @@ export default function ChatDetailScreen() {
         </View>
       </KeyboardAvoidingView>
 
-      {/* Invite Modal */}
-      <Modal visible={inviteModalVisible} animationType="slide" presentationStyle="pageSheet" onRequestClose={() => setInviteModalVisible(false)}>
+      {/* Add Friends Modal */}
+      <Modal visible={addFriendsModalVisible} animationType="slide" presentationStyle="pageSheet" onRequestClose={() => setAddFriendsModalVisible(false)}>
         <View style={styles.modalContainer}>
           <View style={styles.modalHeader}>
-            <Text style={styles.modalTitle}>Invite Friends</Text>
-            <Pressable onPress={() => setInviteModalVisible(false)}><Text style={styles.modalDone}>Done</Text></Pressable>
+            <Text style={styles.modalTitle}>Add Friends</Text>
+            <Pressable onPress={() => setAddFriendsModalVisible(false)}><Text style={styles.modalDone}>Done</Text></Pressable>
           </View>
           {loadingFriends ? (
             <View style={styles.center}><ActivityIndicator color={theme.accent} size="large" /></View>
-          ) : invitableFriends.length === 0 ? (
-            <View style={styles.center}><Text style={styles.modalEmptyText}>No friends to invite</Text></View>
+          ) : addableFriends.length === 0 ? (
+            <View style={styles.center}><Text style={styles.modalEmptyText}>No friends to add</Text></View>
           ) : (
-            <FlatList data={invitableFriends} keyExtractor={item => item.user.id} renderItem={({ item }) => (
-              <FriendRow user={item.user} action={invitedIds.has(item.user.id) ? 'invited' : 'invite'} onAction={handleInviteFriend} />
+            <FlatList data={addableFriends} keyExtractor={item => item.id} renderItem={({ item }) => (
+              <FriendRow user={item} action="add" onAction={handleAddFriend} />
             )} />
           )}
         </View>
@@ -794,6 +850,7 @@ const createStyles = (theme: Theme) => StyleSheet.create({
   headerShowTitle: { fontSize: 12, fontFamily: 'DMSans_400Regular', color: theme.textDim },
   inviteButton: { backgroundColor: theme.accent, paddingHorizontal: 14, paddingVertical: 6, borderRadius: 6 },
   inviteButtonText: { fontSize: 13, fontFamily: 'DMSans_600SemiBold', color: '#fff' },
+  gearButton: { padding: 8, marginRight: -8 },
 
   // Progress pills (show-attached chats)
   progressRow: { flexDirection: 'row', flexWrap: 'wrap', paddingHorizontal: 16, paddingTop: 10, gap: 6 },
@@ -837,6 +894,7 @@ const createStyles = (theme: Theme) => StyleSheet.create({
   dateSeparator: { alignItems: 'center', paddingVertical: 12 },
   dateSeparatorText: { fontSize: 11, fontFamily: 'DMSans_500Medium', color: theme.textFaint, backgroundColor: theme.bgCard, paddingHorizontal: 12, paddingVertical: 4, borderRadius: 10, overflow: 'hidden' },
   chatEmpty: { padding: 32, alignItems: 'center' },
+  chatLoadingMore: { paddingVertical: 12, alignItems: 'center' },
   chatEmptyText: { fontSize: 13, fontFamily: 'DMSans_400Regular', color: theme.textFaint, textAlign: 'center' },
 
   // Input

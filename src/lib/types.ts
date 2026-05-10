@@ -42,6 +42,8 @@ export interface ShowNextEpisode {
   number: number;
   name: string;
   airdate: string | null;
+  airtime: string | null;
+  airstamp: string | null;
 }
 
 /** Full show data with seasons and episodes */
@@ -74,6 +76,8 @@ export interface Show {
   next_episode_airdate: string | null;
   next_episode_season: number | null;
   next_episode_episode: number | null;
+  next_episode_airstamp: string | null;
+  next_episode_airtime: string | null;
   last_aired_season: number | null;
   last_aired_episode: number | null;
   last_aired_airdate: string | null;
@@ -99,6 +103,8 @@ export interface UserShow {
   next_episode_airdate: string | null;
   next_episode_season: number | null;
   next_episode_episode: number | null;
+  next_episode_airstamp: string | null;
+  next_episode_airtime: string | null;
   show_status: string | null;
   last_aired_season: number | null;
   last_aired_episode: number | null;
@@ -189,6 +195,8 @@ export interface Conversation {
   spoiler_lock: boolean;
   created_by: string;
   last_message_at: string;
+  last_message_text: string | null;
+  last_message_user_id: string | null;
   created_at: string;
 }
 
@@ -222,29 +230,6 @@ export interface Message {
   created_at: string;
   sender_name: string;
   sender_avatar: string | null;
-}
-
-export type ConversationInviteStatus = 'pending' | 'accepted' | 'declined';
-
-export interface ConversationInvite {
-  id: string;
-  conversation_id: string;
-  invited_by: string;
-  invited_user: string;
-  status: ConversationInviteStatus;
-  created_at: string;
-}
-
-export interface ConversationInviteWithDetails {
-  id: string;
-  conversation_id: string;
-  conversation_name: string | null;
-  show_title: string | null;
-  show_image: string | null;
-  invited_by_name: string;
-  member_names: string[];
-  status: ConversationInviteStatus;
-  created_at: string;
 }
 
 export interface ScheduleEntry {

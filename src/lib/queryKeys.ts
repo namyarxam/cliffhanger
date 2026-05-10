@@ -48,8 +48,6 @@ export const qk = {
 
   // Conversations
   conversations: (userId: string | undefined) => ['conversations', userId] as const,
-  pendingInvites: (userId: string | undefined) => ['pendingInvites', userId] as const,
-  pendingInviteCount: (userId: string | undefined) => ['pendingInviteCount', userId] as const,
   conversation: (conversationId: string | undefined) =>
     ['conversation', conversationId] as const,
   // showId is part of the key because getConversationMembers fetches per-show

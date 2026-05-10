@@ -11,6 +11,7 @@ import {
   ActivityIndicator,
   Alert,
   Keyboard,
+  useWindowDimensions,
 } from 'react-native';
 import { useRouter, Stack, useFocusEffect } from 'expo-router';
 import { Image } from 'expo-image';
@@ -29,6 +30,7 @@ export default function NewChatScreen() {
   const styles = useMemo(() => createStyles(theme), [theme]);
   const router = useRouter();
   const insets = useSafeAreaInsets();
+  const { height: windowHeight } = useWindowDimensions();
   const { session } = useAuth();
   const userId = session?.user?.id;
 
@@ -101,19 +103,27 @@ export default function NewChatScreen() {
   }, [userId, selectedFriends, name, selectedShow, router]);
 
   const isGroup = selectedFriends.size > 1;
+  const hasSelection = selectedFriends.size > 0;
+  // Cap the friends list at ~45% of the screen once a friend is selected so
+  // the options section (name input, show picker) is always visible without
+  // having to scroll past the friend list. Without this cap a long friend
+  // list pushes the options off-screen and people don't realize they exist.
+  const friendsListMaxHeight = hasSelection ? Math.max(220, windowHeight * 0.45) : undefined;
 
-  const listData = [
-    { type: 'friendsHeader' as const },
-    ...friends.map(f => ({ type: 'friend' as const, friend: f })),
-    ...(selectedFriends.size > 0
-      ? [
-          { type: 'optionsHeader' as const },
-          { type: 'nameInput' as const },
-          { type: 'showHeader' as const },
-          ...shows.map(s => ({ type: 'show' as const, show: s })),
-        ]
-      : []),
-  ];
+  type OptionItem =
+    | { type: 'optionsHeader' }
+    | { type: 'nameInput' }
+    | { type: 'showHeader' }
+    | { type: 'show'; show: UserShow };
+
+  const optionItems: OptionItem[] = hasSelection
+    ? [
+        { type: 'optionsHeader' },
+        { type: 'nameInput' },
+        { type: 'showHeader' },
+        ...shows.map(s => ({ type: 'show' as const, show: s })),
+      ]
+    : [];
 
   return (
     <View style={[styles.container, { paddingTop: insets.top }]}>
@@ -128,112 +138,111 @@ export default function NewChatScreen() {
           <Text style={styles.emptyText}>Add some friends first to start chatting</Text>
         </View>
       ) : (
-        <FlatList
-          data={listData}
-          keyboardShouldPersistTaps="handled"
-          keyExtractor={(item, index) => {
-            if (item.type === 'friend') return `friend-${item.friend.user.id}`;
-            if (item.type === 'show') return `show-${item.show.show_id}`;
-            return item.type;
-          }}
-          renderItem={({ item }) => {
-            if (item.type === 'friendsHeader') {
-              return (
-                <View style={styles.sectionHeader}>
-                  <Text style={styles.sectionLabel}>Select Friends</Text>
-                  {selectedFriends.size > 0 && (
-                    <Text style={styles.sectionCount}>{selectedFriends.size} selected</Text>
-                  )}
-                </View>
-              );
-            }
-
-            if (item.type === 'friend') {
-              const isSelected = selectedFriends.has(item.friend.user.id);
-              const user = item.friend.user;
-              return (
-                <Pressable
-                  style={[styles.friendRow, isSelected && styles.friendRowSelected]}
-                  onPress={() => toggleFriend(user.id)}
-                >
-                  {user.avatar_url ? (
-                    <Image source={{ uri: user.avatar_url }} style={styles.friendAvatarImage} contentFit="cover" />
-                  ) : (
-                    <View style={styles.friendAvatar}>
-                      <Text style={styles.friendAvatarText}>
-                        {(user.display_name[0] || '?').toUpperCase()}
-                      </Text>
-                    </View>
-                  )}
-                  <View style={styles.friendInfo}>
-                    <Text style={styles.friendName} numberOfLines={1}>{user.display_name}</Text>
-                    <Text style={styles.friendUsername}>@{user.username}</Text>
-                  </View>
-                  {isSelected && <Text style={styles.checkMark}>✓</Text>}
-                </Pressable>
-              );
-            }
-
-            if (item.type === 'optionsHeader') {
-              return (
-                <View style={[styles.sectionHeader, { marginTop: 16 }]}>
-                  <Text style={styles.sectionLabel}>Options</Text>
-                </View>
-              );
-            }
-
-            if (item.type === 'nameInput') {
-              return (
-                <View style={styles.nameInputWrap}>
-                  <TextInput
-                    style={styles.nameInput}
-                    placeholder="Name this chat (optional)"
-                    placeholderTextColor={theme.textFaint}
-                    value={name}
-                    onChangeText={setName}
-                    maxLength={50}
-                    returnKeyType="done"
-                    onSubmitEditing={Keyboard.dismiss}
-                  />
-                </View>
-              );
-            }
-
-            if (item.type === 'showHeader') {
-              return (
-                <View style={styles.showHeaderSection}>
-                  <Text style={styles.showHeaderLabel}>Attach a Show</Text>
-                  <Text style={styles.showHeaderHint}>Optional — connect a show for episode tracking</Text>
-                </View>
-              );
-            }
-
-            if (item.type === 'show') {
-              const isSelected = selectedShow?.show_id === item.show.show_id;
-              return (
-                <Pressable
-                  style={[styles.showRow, isSelected && styles.showRowSelected]}
-                  onPress={() => setSelectedShow(isSelected ? null : item.show)}
-                >
-                  <View style={styles.posterWrap}>
-                    {item.show.show_image ? (
-                      <Image source={{ uri: item.show.show_image }} style={styles.poster} contentFit="cover" />
+        <>
+          <View style={hasSelection ? { maxHeight: friendsListMaxHeight, flexShrink: 1 } : { flex: 1 }}>
+            <View style={styles.sectionHeader}>
+              <Text style={styles.sectionLabel}>Select Friends</Text>
+              {hasSelection && (
+                <Text style={styles.sectionCount}>{selectedFriends.size} selected</Text>
+              )}
+            </View>
+            <FlatList
+              data={friends}
+              keyboardShouldPersistTaps="handled"
+              keyExtractor={item => item.user.id}
+              renderItem={({ item }) => {
+                const isSelected = selectedFriends.has(item.user.id);
+                const user = item.user;
+                return (
+                  <Pressable
+                    style={[styles.friendRow, isSelected && styles.friendRowSelected]}
+                    onPress={() => toggleFriend(user.id)}
+                  >
+                    {user.avatar_url ? (
+                      <Image source={{ uri: user.avatar_url }} style={styles.friendAvatarImage} contentFit="cover" />
                     ) : (
-                      <View style={[styles.poster, styles.posterPlaceholder]}>
-                        <Text style={{ fontSize: 14 }}>📺</Text>
+                      <View style={styles.friendAvatar}>
+                        <Text style={styles.friendAvatarText}>
+                          {(user.display_name[0] || '?').toUpperCase()}
+                        </Text>
                       </View>
                     )}
-                  </View>
-                  <Text style={styles.showTitle} numberOfLines={1}>{item.show.show_title}</Text>
-                  {isSelected && <Text style={styles.checkMark}>✓</Text>}
-                </Pressable>
-              );
-            }
+                    <View style={styles.friendInfo}>
+                      <Text style={styles.friendName} numberOfLines={1}>{user.display_name}</Text>
+                      <Text style={styles.friendUsername}>@{user.username}</Text>
+                    </View>
+                    {isSelected && <Text style={styles.checkMark}>✓</Text>}
+                  </Pressable>
+                );
+              }}
+            />
+          </View>
 
-            return null;
-          }}
-          contentContainerStyle={styles.list}
-        />
+          {hasSelection && (
+            <FlatList
+              style={styles.optionsSection}
+              data={optionItems}
+              keyboardShouldPersistTaps="handled"
+              keyExtractor={(item) => item.type === 'show' ? `show-${item.show.show_id}` : item.type}
+              renderItem={({ item }) => {
+                if (item.type === 'optionsHeader') {
+                  return (
+                    <View style={styles.sectionHeader}>
+                      <Text style={styles.sectionLabel}>Options</Text>
+                    </View>
+                  );
+                }
+                if (item.type === 'nameInput') {
+                  return (
+                    <View style={styles.nameInputWrap}>
+                      <TextInput
+                        style={styles.nameInput}
+                        placeholder="Name this chat (optional)"
+                        placeholderTextColor={theme.textFaint}
+                        value={name}
+                        onChangeText={setName}
+                        maxLength={50}
+                        returnKeyType="done"
+                        onSubmitEditing={Keyboard.dismiss}
+                      />
+                    </View>
+                  );
+                }
+                if (item.type === 'showHeader') {
+                  return (
+                    <View style={styles.showHeaderSection}>
+                      <Text style={styles.showHeaderLabel}>Attach a Show</Text>
+                      <Text style={styles.showHeaderHint}>Optional — connect a show for episode tracking</Text>
+                    </View>
+                  );
+                }
+                if (item.type === 'show') {
+                  const isSelected = selectedShow?.show_id === item.show.show_id;
+                  return (
+                    <Pressable
+                      style={[styles.showRow, isSelected && styles.showRowSelected]}
+                      onPress={() => setSelectedShow(isSelected ? null : item.show)}
+                    >
+                      <View style={styles.posterWrap}>
+                        {item.show.show_image ? (
+                          <Image source={{ uri: item.show.show_image }} style={styles.poster} contentFit="cover" />
+                        ) : (
+                          <View style={[styles.poster, styles.posterPlaceholder]}>
+                            <Text style={{ fontSize: 14 }}>📺</Text>
+                          </View>
+                        )}
+                      </View>
+                      <Text style={styles.showTitle} numberOfLines={1}>{item.show.show_title}</Text>
+                      {isSelected && <Text style={styles.checkMark}>✓</Text>}
+                    </Pressable>
+                  );
+                }
+                return null;
+              }}
+              contentContainerStyle={styles.list}
+            />
+          )}
+        </>
       )}
 
       {selectedFriends.size > 0 && (
@@ -280,6 +289,11 @@ const createStyles = (theme: Theme) => StyleSheet.create({
   },
   list: {
     paddingBottom: 100,
+  },
+  optionsSection: {
+    flex: 1,
+    borderTopWidth: 1,
+    borderTopColor: theme.border,
   },
   sectionHeader: {
     flexDirection: 'row',

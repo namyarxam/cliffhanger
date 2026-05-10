@@ -9,6 +9,7 @@ import { silentCatch } from '@/src/lib/errorLog';
 import { withTimeout } from '@/src/lib/network';
 import { qk } from '@/src/lib/queryKeys';
 import { getUserShows } from '@/src/lib/watchlist';
+import { registerForPushNotifications } from '@/src/lib/notifications';
 import type { UserProfile } from '@/src/lib/types';
 
 interface AuthState {
@@ -201,6 +202,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         })
         .catch(silentCatch('auth:prefetchUserShows'));
 
+      // Push token registration — idempotent upsert keyed on user_id. Without
+      // this, push tokens were only ever saved when the user manually toggled
+      // the switch in Settings, so most users never received chat
+      // notifications. Fire-and-forget; iOS shows the permission prompt the
+      // first time on a real device, denials silently no-op.
+      registerForPushNotifications(prefetchUserId).catch(silentCatch('auth:registerPush'));
+
       Sentry.addBreadcrumb({ category: 'auth', message: 'fetchProfile:start' });
       await withTimeout(fetchProfile(data.session.user.id), 5000);
       Sentry.addBreadcrumb({ category: 'auth', message: 'fetchProfile:done' });
@@ -226,6 +234,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         setSession(sess);
         if (sess?.user) {
           Sentry.setUser({ id: sess.user.id, email: sess.user.email });
+          // Same idempotent push token upsert as in retryAuth — fires on every
+          // sign-in (and on token refresh, which is harmless because upsert).
+          registerForPushNotifications(sess.user.id).catch(silentCatch('auth:registerPush'));
           try {
             await withTimeout(fetchProfile(sess.user.id), 5000);
           } catch (e) {

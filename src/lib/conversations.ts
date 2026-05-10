@@ -6,7 +6,6 @@ import type {
   ConversationPreview,
   ConversationMember,
   Message,
-  ConversationInviteWithDetails,
   UserProfile,
 } from './types';
 
@@ -67,24 +66,36 @@ export async function createConversation(
     .from('conversation_members')
     .insert({ conversation_id: data.id, user_id: userId });
 
-  if (memberIds.length === 1 && !showId) {
-    // DM: add the other person directly as a member (no invite needed).
-    // Allowed by the "creator can add friend members" policy in migration 039.
+  // Drop every selected friend straight into conversation_members. The
+  // "Members can add accepted friends" RLS policy (migration 057) authorizes
+  // the creator (who is a member after the insert above) to add anyone they
+  // are friends with — both DM (1 friend) and group (N friends) paths use
+  // the same insert. No invite/accept step.
+  if (memberIds.length > 0) {
+    const memberRows = memberIds.map(friendId => ({
+      conversation_id: data.id,
+      user_id: friendId,
+    }));
     const { error: addError } = await supabase
       .from('conversation_members')
-      .insert({ conversation_id: data.id, user_id: memberIds[0] });
+      .insert(memberRows);
     if (addError) throw addError;
-  } else if (memberIds.length > 0) {
-    // Group: send invites to all selected friends
-    const invites = memberIds.map(friendId => ({
-      conversation_id: data.id,
-      invited_by: userId,
-      invited_user: friendId,
-    }));
-    await supabase.from('conversation_invites').insert(invites);
   }
 
   return data;
+}
+
+// Add an accepted friend to an existing conversation. Authorized by the
+// "Members can add accepted friends" RLS policy — caller must be a current
+// member and target must be an accepted friend.
+export async function addFriendToConversation(
+  conversationId: string,
+  friendId: string,
+): Promise<void> {
+  const { error } = await supabase
+    .from('conversation_members')
+    .insert({ conversation_id: conversationId, user_id: friendId });
+  if (error) throw error;
 }
 
 // ─── Find Existing DM ────────────────────────────────────────────────────────
@@ -144,158 +155,12 @@ export async function findExistingDM(
   return null;
 }
 
-// ─── Invites ──────────────────────────────────────────────────────────────────
-
-export async function sendConversationInvite(
-  conversationId: string,
-  invitedBy: string,
-  invitedUser: string,
-): Promise<void> {
-  const { data, error } = await supabase
-    .from('conversation_invites')
-    .upsert(
-      { conversation_id: conversationId, invited_by: invitedBy, invited_user: invitedUser, status: 'pending' },
-      { onConflict: 'conversation_id,invited_user' },
-    )
-    .select('id')
-    .single();
-
-  if (error) throw error;
-
-  // Fire-and-forget push notification. Edge Function gates on the invitee's
-  // master toggle and pending-status check.
-  if (data?.id) {
-    supabase.functions.invoke('notify-invite', { body: { invite_id: data.id } })
-      .catch(() => {});
-  }
-}
-
-export async function getPendingConversationInvites(
-  userId: string,
-): Promise<ConversationInviteWithDetails[]> {
-  const { data: invites, error } = await supabase
-    .from('conversation_invites')
-    .select('*')
-    .eq('invited_user', userId)
-    .eq('status', 'pending')
-    .order('created_at', { ascending: false });
-
-  if (error) throw error;
-  if (!invites || invites.length === 0) return [];
-
-  const convIds = [...new Set(invites.map(i => i.conversation_id))];
-  const { data: convos } = await supabase
-    .from('conversations')
-    .select('*')
-    .in('id', convIds);
-
-  const convoMap = new Map<string, Conversation>();
-  for (const c of convos ?? []) convoMap.set(c.id, c);
-
-  // Get inviter profiles
-  const inviterIds = [...new Set(invites.map(i => i.invited_by))];
-  const { data: profiles } = await supabase
-    .from('profiles')
-    .select('*')
-    .in('id', inviterIds);
-
-  const profileMap = buildNameMap(profiles);
-
-  // Get member names for auto-naming
-  const { data: allMembers } = await supabase
-    .from('conversation_members')
-    .select('conversation_id, user_id')
-    .in('conversation_id', convIds);
-
-  const memberUserIds = [...new Set((allMembers ?? []).map(m => m.user_id))];
-  const { data: memberProfiles } = await supabase
-    .from('profiles')
-    .select('id, display_name')
-    .in('id', memberUserIds);
-
-  const nameMap = buildNameMap(memberProfiles);
-
-  const membersByConvo = new Map<string, string[]>();
-  for (const m of allMembers ?? []) {
-    const names = membersByConvo.get(m.conversation_id) ?? [];
-    const name = nameMap.get(m.user_id);
-    if (name) names.push(name);
-    membersByConvo.set(m.conversation_id, names);
-  }
-
-  return invites
-    .map(i => {
-      const convo = convoMap.get(i.conversation_id);
-      if (!convo) return null;
-      return {
-        id: i.id,
-        conversation_id: i.conversation_id,
-        conversation_name: convo.name,
-        show_title: convo.show_title,
-        show_image: convo.show_image,
-        invited_by_name: profileMap.get(i.invited_by) ?? 'Someone',
-        member_names: membersByConvo.get(i.conversation_id) ?? [],
-        status: i.status,
-        created_at: i.created_at,
-      };
-    })
-    .filter((i): i is NonNullable<typeof i> => i !== null);
-}
-
-export async function getPendingInviteCount(userId: string): Promise<number> {
-  // Simple count query — RLS ensures only visible invites are counted
-  const { count, error } = await supabase
-    .from('conversation_invites')
-    .select('*', { count: 'exact', head: true })
-    .eq('invited_user', userId)
-    .eq('status', 'pending');
-
-  if (error) return 0;
-  return count ?? 0;
-}
-
-export async function acceptConversationInvite(
-  inviteId: string,
-  userId: string,
-): Promise<string> {
-  const { data: invite, error: fetchError } = await supabase
-    .from('conversation_invites')
-    .select('conversation_id')
-    .eq('id', inviteId)
-    .single();
-
-  if (fetchError || !invite) throw new Error('Invite not found');
-
-  const { error: updateError } = await supabase
-    .from('conversation_invites')
-    .update({ status: 'accepted' })
-    .eq('id', inviteId);
-
-  if (updateError) throw updateError;
-
-  await supabase
-    .from('conversation_members')
-    .upsert(
-      { conversation_id: invite.conversation_id, user_id: userId },
-      { onConflict: 'conversation_id,user_id' },
-    );
-
-  return invite.conversation_id;
-}
-
-export async function declineConversationInvite(inviteId: string): Promise<void> {
-  const { error } = await supabase
-    .from('conversation_invites')
-    .update({ status: 'declined' })
-    .eq('id', inviteId);
-
-  if (error) throw error;
-}
+// ─── Friends not in conversation ──────────────────────────────────────────────
 
 export async function getFriendsNotInConversation(
   userId: string,
   conversationId: string,
-): Promise<{ user: UserProfile; alreadyInvited: boolean }[]> {
+): Promise<UserProfile[]> {
   const friends = await getFriends(userId);
 
   const { data: members } = await supabase
@@ -305,20 +170,9 @@ export async function getFriendsNotInConversation(
 
   const memberIds = new Set((members ?? []).map(m => m.user_id));
 
-  const { data: invites } = await supabase
-    .from('conversation_invites')
-    .select('invited_user')
-    .eq('conversation_id', conversationId)
-    .eq('status', 'pending');
-
-  const invitedIds = new Set((invites ?? []).map(i => i.invited_user));
-
   return friends
     .filter(f => !memberIds.has(f.user.id))
-    .map(f => ({
-      user: f.user,
-      alreadyInvited: invitedIds.has(f.user.id),
-    }));
+    .map(f => f.user);
 }
 
 // ─── Conversation CRUD ────────────────────────────────────────────────────────
@@ -350,10 +204,18 @@ export async function getMyConversations(userId: string): Promise<ConversationPr
     .in('conversation_id', convIds);
 
   const memberUserIds = [...new Set((allMembers ?? []).map(m => m.user_id))];
+
+  // last_message sender may be a former member who has since left, so include
+  // those user ids in the profile lookup as well.
+  const senderUserIds = convos
+    .map(c => c.last_message_user_id)
+    .filter((uid): uid is string => !!uid);
+  const profileIds = [...new Set([...memberUserIds, ...senderUserIds])];
+
   const { data: profiles } = await supabase
     .from('profiles')
     .select('id, display_name')
-    .in('id', memberUserIds);
+    .in('id', profileIds);
 
   const nameMap = buildNameMap(profiles);
 
@@ -369,32 +231,16 @@ export async function getMyConversations(userId: string): Promise<ConversationPr
     membersByConvo.set(m.conversation_id, entry);
   }
 
-  // Get last message for each conversation
-  const { data: lastMessages } = await supabase
-    .from('messages')
-    .select('conversation_id, message, user_id')
-    .in('conversation_id', convIds)
-    .order('created_at', { ascending: false });
-
-  const lastMsgMap = new Map<string, { message: string; sender: string }>();
-  for (const msg of lastMessages ?? []) {
-    if (!lastMsgMap.has(msg.conversation_id)) {
-      lastMsgMap.set(msg.conversation_id, {
-        message: msg.message,
-        sender: nameMap.get(msg.user_id) ?? 'Unknown',
-      });
-    }
-  }
-
   return convos.map(c => {
     const members = membersByConvo.get(c.id) ?? { names: [], count: 0 };
-    const lastMsg = lastMsgMap.get(c.id);
     return {
       ...c,
       member_names: members.names,
       member_count: members.count,
-      last_message: lastMsg?.message ?? null,
-      last_message_sender: lastMsg?.sender ?? null,
+      last_message: c.last_message_text ?? null,
+      last_message_sender: c.last_message_user_id
+        ? (nameMap.get(c.last_message_user_id) ?? null)
+        : null,
     };
   });
 }
