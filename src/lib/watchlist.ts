@@ -1,5 +1,4 @@
 import { supabase } from './supabase';
-import { getFriends } from './friends';
 import { getLocalToday } from './utils';
 import type { UserShow, EpisodeWatch, WatchStatus, Season } from './types';
 
@@ -83,70 +82,34 @@ export interface PopularShow {
 }
 
 export async function getPopularWithFriends(userId: string, limit: number = POPULAR_SHOWS_LIMIT_DEFAULT): Promise<PopularShow[]> {
-  const friends = await getFriends(userId);
-  if (friends.length === 0) return [];
-
-  const friendIds = friends.map(f => f.user.id);
-
-  // Capture the error rather than swallowing it. Previously this returned []
-  // on any non-data response, which let transient failures (network blips,
-  // RLS hiccups, rate-limits) silently blank the carousel. fetchData's
-  // allSettled wrapper catches the throw and preserves the prior state.
-  // Exclude muted rows. A friend muting a show is a negative signal —
-  // counting it toward "Popular with Friends" let shows trend to the top
-  // when more friends had bailed than were actually watching.
-  const { data, error } = await supabase
-    .from('user_shows_full')
-    .select('show_id, show_title, show_image, user_id, added_at')
-    .in('user_id', friendIds)
-    .neq('status', 'muted');
+  // Aggregation runs server-side via the get_popular_with_friends RPC
+  // (migration 056). The function counts friends per show, excludes muted
+  // rows + shows the caller already tracks, and returns just the top N —
+  // dramatically less data over the wire than transferring every friend's
+  // full watchlist to group client-side.
+  const { data, error } = await supabase.rpc('get_popular_with_friends', {
+    p_user_id: userId,
+    p_limit: limit,
+  });
 
   if (error) throw error;
-  if (!data || data.length === 0) return [];
+  if (!data) return [];
 
-  // Build a name map from friends
-  const nameMap = new Map(friends.map(f => [f.user.id, f.user.display_name]));
-
-  // Group by show, count friends, collect names, track most recent add.
-  // Title/image are LEFT-JOIN-derived from the centralized `shows` table; if
-  // one friend's row has nulls (orphan user_shows row, transient JOIN miss),
-  // a later friend's row with populated values is preferred. Without this
-  // the first-row-wins behavior could leave a popular entry permanently
-  // blank-postered.
-  const showMap = new Map<string, { title: string; image: string | null; names: string[]; latestAdd: string }>();
-  for (const row of data) {
-    let entry = showMap.get(row.show_id);
-    if (!entry) {
-      entry = { title: row.show_title ?? '', image: row.show_image, names: [], latestAdd: row.added_at };
-      showMap.set(row.show_id, entry);
-    }
-    if (!entry.title && row.show_title) entry.title = row.show_title;
-    if (!entry.image && row.show_image) entry.image = row.show_image;
-    const name = nameMap.get(row.user_id);
-    if (name) entry.names.push(name);
-    if (row.added_at > entry.latestAdd) entry.latestAdd = row.added_at;
-  }
-
-  // Filter out shows the user already has
-  const { data: myShows } = await supabase
-    .from('user_shows')
-    .select('show_id')
-    .eq('user_id', userId);
-
-  const myShowIds = new Set((myShows ?? []).map(s => s.show_id));
-
-  return [...showMap.entries()]
-    .filter(([id]) => !myShowIds.has(id))
-    .map(([id, info]) => ({
-      show_id: id,
-      show_title: info.title,
-      show_image: info.image,
-      friend_count: info.names.length,
-      friend_names: info.names,
-      latestAdd: info.latestAdd,
-    }))
-    .sort((a, b) => b.friend_count - a.friend_count || b.latestAdd.localeCompare(a.latestAdd))
-    .slice(0, limit);
+  return (data as Array<{
+    show_id: string;
+    show_title: string | null;
+    show_image: string | null;
+    friend_count: number;
+    friend_names: string[] | null;
+    latest_add: string;
+  }>).map(row => ({
+    show_id: row.show_id,
+    show_title: row.show_title ?? '',
+    show_image: row.show_image,
+    friend_count: row.friend_count,
+    friend_names: row.friend_names ?? [],
+    latestAdd: row.latest_add,
+  }));
 }
 
 export async function getUserShows(userId: string): Promise<UserShow[]> {
