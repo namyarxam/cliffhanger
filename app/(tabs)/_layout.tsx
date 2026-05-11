@@ -8,6 +8,7 @@ import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { getPendingRequests } from '@/src/lib/friends';
+import { getUnseenConversationCount } from '@/src/lib/conversations';
 import { qk } from '@/src/lib/queryKeys';
 import { silentCatch } from '@/src/lib/errorLog';
 
@@ -39,7 +40,15 @@ export default function TabLayout() {
     refetchInterval: 10000,
     refetchIntervalInBackground: false,
   });
+  const unseenChatsCountQ = useQuery({
+    queryKey: qk.unseenConversationCount(userId),
+    queryFn: () => getUnseenConversationCount(userId!),
+    enabled: !!userId,
+    refetchInterval: 10000,
+    refetchIntervalInBackground: false,
+  });
   const pendingCount = pendingRequestsCountQ.data ?? 0;
+  const unseenChatsCount = unseenChatsCountQ.data ?? 0;
 
   // Forward query errors to Sentry. The pre-migration setInterval fetches
   // ran through silentCatch on every tick; after the TanStack switch the
@@ -47,12 +56,18 @@ export default function TabLayout() {
   useEffect(() => {
     if (pendingRequestsCountQ.error) silentCatch('tabs:pendingRequestsCount')(pendingRequestsCountQ.error);
   }, [pendingRequestsCountQ.error]);
+  useEffect(() => {
+    if (unseenChatsCountQ.error) silentCatch('tabs:unseenChatsCount')(unseenChatsCountQ.error);
+  }, [unseenChatsCountQ.error]);
 
   // Friends screen calls refreshBadge() after accept/decline so the tab
   // badge updates immediately instead of waiting for the next 10s tick.
+  // Chat detail screen also calls it after opening a chat so the unseen
+  // badge clears without waiting for the poll.
   const refreshPending = useCallback(() => {
     if (!userId) return;
     queryClient.invalidateQueries({ queryKey: qk.pendingRequestCount(userId) });
+    queryClient.invalidateQueries({ queryKey: qk.unseenConversationCount(userId) });
   }, [userId, queryClient]);
 
   const activeTabRef = useRef<string | null>('index');
@@ -115,6 +130,11 @@ export default function TabLayout() {
                     {tab.name === 'profile' && pendingCount > 0 && (
                       <View style={styles.badge}>
                         <Text style={styles.badgeText}>{pendingCount}</Text>
+                      </View>
+                    )}
+                    {tab.name === 'chat' && unseenChatsCount > 0 && (
+                      <View style={styles.badge}>
+                        <Text style={styles.badgeText}>{unseenChatsCount}</Text>
                       </View>
                     )}
                   </View>

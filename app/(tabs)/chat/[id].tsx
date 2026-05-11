@@ -257,6 +257,11 @@ export default function ChatDetailScreen() {
       queryClient.invalidateQueries({ queryKey: ['conversationMembers', id] });
       if (!userId) return;
       bumpLastActive(id, userId).catch(() => {});
+      // Opening a chat flips last_active_at from NULL → now() for the user,
+      // which clears this chat from the unseen-chats badge count. Invalidate
+      // the badge query so the tab updates immediately instead of waiting
+      // up to 10s for the next poll tick.
+      queryClient.invalidateQueries({ queryKey: qk.unseenConversationCount(userId) });
       const interval = setInterval(() => {
         bumpLastActive(id, userId).catch(() => {});
       }, 20000);

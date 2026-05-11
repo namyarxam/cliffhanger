@@ -64,9 +64,18 @@ export async function createConversation(
   // Add creator as first member. Throw on failure so a broken RLS policy
   // surfaces here instead of silently no-op'ing and cascading into a
   // confusing "no existing member" failure on the friend insert below.
+  //
+  // Set last_active_at = now() on the creator's own row so the "unseen
+  // chats" badge (counts members where last_active_at IS NULL) doesn't
+  // flag their own newly-created chat. Friends added below leave the
+  // column NULL — they haven't seen the chat yet, that's the signal.
   const { error: creatorErr } = await supabase
     .from('conversation_members')
-    .insert({ conversation_id: data.id, user_id: userId });
+    .insert({
+      conversation_id: data.id,
+      user_id: userId,
+      last_active_at: new Date().toISOString(),
+    });
   if (creatorErr) throw creatorErr;
 
   // Drop every selected friend straight into conversation_members. The
@@ -543,5 +552,20 @@ export async function getMemberCount(conversationId: string): Promise<number> {
     .eq('conversation_id', conversationId);
 
   if (error) throw error;
+  return count ?? 0;
+}
+
+// Count of chats the user has been added to but never opened (Chat tab badge).
+// last_active_at is NULL until the chat detail screen runs bumpLastActive on
+// focus, so the NULL state is a clean "unseen" signal. The creator's own row
+// is set to now() at creation time so they don't badge their own new chats.
+export async function getUnseenConversationCount(userId: string): Promise<number> {
+  const { count, error } = await supabase
+    .from('conversation_members')
+    .select('*', { count: 'exact', head: true })
+    .eq('user_id', userId)
+    .is('last_active_at', null);
+
+  if (error) return 0;
   return count ?? 0;
 }
