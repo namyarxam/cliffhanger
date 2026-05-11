@@ -11,9 +11,9 @@ import {
   ActivityIndicator,
   Alert,
   Keyboard,
-  useWindowDimensions,
 } from 'react-native';
-import { useRouter, Stack, useFocusEffect } from 'expo-router';
+import { useRouter, useFocusEffect } from 'expo-router';
+import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Image } from 'expo-image';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useTheme } from '@/src/providers/ThemeProvider';
@@ -25,16 +25,18 @@ import { createConversation } from '@/src/lib/conversations';
 import type { FriendWithProfile, UserShow } from '@/src/lib/types';
 import { silentCatch } from '@/src/lib/errorLog';
 
+type Step = 'friends' | 'options';
+
 export default function NewChatScreen() {
   const theme = useTheme();
   const styles = useMemo(() => createStyles(theme), [theme]);
   const router = useRouter();
   const insets = useSafeAreaInsets();
-  const { height: windowHeight } = useWindowDimensions();
   const { session } = useAuth();
   const userId = session?.user?.id;
 
   const queryClient = useQueryClient();
+  const [step, setStep] = useState<Step>('friends');
   const [selectedFriends, setSelectedFriends] = useState<Set<string>>(new Set());
   const [name, setName] = useState('');
   const [selectedShow, setSelectedShow] = useState<UserShow | null>(null);
@@ -65,6 +67,7 @@ export default function NewChatScreen() {
   useFocusEffect(
     useCallback(() => {
       // Reset transient state on each visit
+      setStep('friends');
       setSelectedFriends(new Set());
       setName('');
       setSelectedShow(null);
@@ -82,6 +85,16 @@ export default function NewChatScreen() {
       else next.add(friendId);
       return next;
     });
+  }, []);
+
+  const handleBack = useCallback(() => {
+    if (step === 'options') setStep('friends');
+    else router.back();
+  }, [step, router]);
+
+  const handleContinue = useCallback(() => {
+    Keyboard.dismiss();
+    setStep('options');
   }, []);
 
   const handleCreate = useCallback(async () => {
@@ -103,31 +116,33 @@ export default function NewChatScreen() {
   }, [userId, selectedFriends, name, selectedShow, router]);
 
   const isGroup = selectedFriends.size > 1;
-  const hasSelection = selectedFriends.size > 0;
-  // Cap the friends list at ~45% of the screen once a friend is selected so
-  // the options section (name input, show picker) is always visible without
-  // having to scroll past the friend list. Without this cap a long friend
-  // list pushes the options off-screen and people don't realize they exist.
-  const friendsListMaxHeight = hasSelection ? Math.max(220, windowHeight * 0.45) : undefined;
+  const selectedFriendNames = useMemo(() => {
+    const names: string[] = [];
+    for (const f of friends) {
+      if (selectedFriends.has(f.user.id)) names.push(f.user.display_name);
+    }
+    return names;
+  }, [friends, selectedFriends]);
 
-  type OptionItem =
-    | { type: 'optionsHeader' }
-    | { type: 'nameInput' }
-    | { type: 'showHeader' }
-    | { type: 'show'; show: UserShow };
-
-  const optionItems: OptionItem[] = hasSelection
-    ? [
-        { type: 'optionsHeader' },
-        { type: 'nameInput' },
-        { type: 'showHeader' },
-        ...shows.map(s => ({ type: 'show' as const, show: s })),
-      ]
-    : [];
+  const headerTitle = step === 'friends' ? 'New Chat' : 'Chat Details';
 
   return (
     <View style={[styles.container, { paddingTop: insets.top }]}>
-      <Stack.Screen options={{ title: 'New Chat' }} />
+      {/* Custom header — Stack header is hidden for this route so we own back nav. */}
+      <View style={styles.header}>
+        <Pressable
+          style={({ pressed }) => [styles.headerBack, pressed && { opacity: 0.5 }]}
+          hitSlop={{ top: 12, bottom: 12, left: 12, right: 12 }}
+          onPress={handleBack}
+        >
+          <FontAwesome name="chevron-left" size={20} color={theme.textDim} />
+        </Pressable>
+        <Text style={styles.headerTitle}>{headerTitle}</Text>
+        {/* Step indicator on the right */}
+        <View style={styles.headerStep}>
+          <Text style={styles.headerStepText}>{step === 'friends' ? '1 / 2' : '2 / 2'}</Text>
+        </View>
+      </View>
 
       {loading ? (
         <View style={styles.center}>
@@ -137,133 +152,146 @@ export default function NewChatScreen() {
         <View style={styles.center}>
           <Text style={styles.emptyText}>Add some friends first to start chatting</Text>
         </View>
-      ) : (
+      ) : step === 'friends' ? (
         <>
-          <View style={hasSelection ? { maxHeight: friendsListMaxHeight, flexShrink: 1 } : { flex: 1 }}>
-            <View style={styles.sectionHeader}>
-              <Text style={styles.sectionLabel}>Select Friends</Text>
-              {hasSelection && (
-                <Text style={styles.sectionCount}>{selectedFriends.size} selected</Text>
-              )}
-            </View>
-            <FlatList
-              data={friends}
-              keyboardShouldPersistTaps="handled"
-              keyExtractor={item => item.user.id}
-              renderItem={({ item }) => {
-                const isSelected = selectedFriends.has(item.user.id);
-                const user = item.user;
-                return (
-                  <Pressable
-                    style={[styles.friendRow, isSelected && styles.friendRowSelected]}
-                    onPress={() => toggleFriend(user.id)}
-                  >
-                    {user.avatar_url ? (
-                      <Image source={{ uri: user.avatar_url }} style={styles.friendAvatarImage} contentFit="cover" />
-                    ) : (
-                      <View style={styles.friendAvatar}>
-                        <Text style={styles.friendAvatarText}>
-                          {(user.display_name[0] || '?').toUpperCase()}
-                        </Text>
-                      </View>
-                    )}
-                    <View style={styles.friendInfo}>
-                      <Text style={styles.friendName} numberOfLines={1}>{user.display_name}</Text>
-                      <Text style={styles.friendUsername}>@{user.username}</Text>
-                    </View>
-                    {isSelected && <Text style={styles.checkMark}>✓</Text>}
-                  </Pressable>
-                );
-              }}
-            />
+          <View style={styles.sectionHeader}>
+            <Text style={styles.sectionLabel}>Select Friends</Text>
+            {selectedFriends.size > 0 && (
+              <Text style={styles.sectionCount}>{selectedFriends.size} selected</Text>
+            )}
           </View>
-
-          {hasSelection && (
-            <FlatList
-              style={styles.optionsSection}
-              data={optionItems}
-              keyboardShouldPersistTaps="handled"
-              keyExtractor={(item) => item.type === 'show' ? `show-${item.show.show_id}` : item.type}
-              renderItem={({ item }) => {
-                if (item.type === 'optionsHeader') {
-                  return (
-                    <View style={styles.sectionHeader}>
-                      <Text style={styles.sectionLabel}>Options</Text>
+          <FlatList
+            data={friends}
+            keyboardShouldPersistTaps="handled"
+            keyExtractor={item => item.user.id}
+            renderItem={({ item }) => {
+              const isSelected = selectedFriends.has(item.user.id);
+              const user = item.user;
+              return (
+                <Pressable
+                  style={[styles.friendRow, isSelected && styles.friendRowSelected]}
+                  onPress={() => toggleFriend(user.id)}
+                >
+                  {user.avatar_url ? (
+                    <Image source={{ uri: user.avatar_url }} style={styles.friendAvatarImage} contentFit="cover" />
+                  ) : (
+                    <View style={styles.friendAvatar}>
+                      <Text style={styles.friendAvatarText}>
+                        {(user.display_name[0] || '?').toUpperCase()}
+                      </Text>
                     </View>
-                  );
-                }
-                if (item.type === 'nameInput') {
-                  return (
-                    <View style={styles.nameInputWrap}>
-                      <TextInput
-                        style={styles.nameInput}
-                        placeholder="Name this chat (optional)"
-                        placeholderTextColor={theme.textFaint}
-                        value={name}
-                        onChangeText={setName}
-                        maxLength={50}
-                        returnKeyType="done"
-                        onSubmitEditing={Keyboard.dismiss}
-                      />
-                    </View>
-                  );
-                }
-                if (item.type === 'showHeader') {
-                  return (
-                    <View style={styles.showHeaderSection}>
-                      <Text style={styles.showHeaderLabel}>Attach a Show</Text>
-                      <Text style={styles.showHeaderHint}>Optional — connect a show for episode tracking</Text>
-                    </View>
-                  );
-                }
-                if (item.type === 'show') {
-                  const isSelected = selectedShow?.show_id === item.show.show_id;
-                  return (
-                    <Pressable
-                      style={[styles.showRow, isSelected && styles.showRowSelected]}
-                      onPress={() => setSelectedShow(isSelected ? null : item.show)}
-                    >
-                      <View style={styles.posterWrap}>
-                        {item.show.show_image ? (
-                          <Image source={{ uri: item.show.show_image }} style={styles.poster} contentFit="cover" />
-                        ) : (
-                          <View style={[styles.poster, styles.posterPlaceholder]}>
-                            <Text style={{ fontSize: 14 }}>📺</Text>
-                          </View>
-                        )}
-                      </View>
-                      <Text style={styles.showTitle} numberOfLines={1}>{item.show.show_title}</Text>
-                      {isSelected && <Text style={styles.checkMark}>✓</Text>}
-                    </Pressable>
-                  );
-                }
-                return null;
-              }}
-              contentContainerStyle={styles.list}
-            />
-          )}
+                  )}
+                  <View style={styles.friendInfo}>
+                    <Text style={styles.friendName} numberOfLines={1}>{user.display_name}</Text>
+                    <Text style={styles.friendUsername}>@{user.username}</Text>
+                  </View>
+                  {isSelected && <Text style={styles.checkMark}>✓</Text>}
+                </Pressable>
+              );
+            }}
+            contentContainerStyle={styles.list}
+          />
         </>
+      ) : (
+        <FlatList
+          data={shows}
+          keyboardShouldPersistTaps="handled"
+          keyExtractor={item => item.show_id}
+          ListHeaderComponent={
+            <>
+              <View style={styles.summaryCard}>
+                <Text style={styles.summaryLabel}>{isGroup ? 'Members' : 'Chatting with'}</Text>
+                <Text style={styles.summaryNames} numberOfLines={2}>
+                  {selectedFriendNames.join(', ')}
+                </Text>
+                <Pressable onPress={() => setStep('friends')} hitSlop={{ top: 8, bottom: 8 }}>
+                  <Text style={styles.summaryEdit}>Edit</Text>
+                </Pressable>
+              </View>
+
+              <View style={styles.sectionHeader}>
+                <Text style={styles.sectionLabel}>Name (Optional)</Text>
+              </View>
+              <View style={styles.nameInputWrap}>
+                <TextInput
+                  style={styles.nameInput}
+                  placeholder="Name this chat"
+                  placeholderTextColor={theme.textFaint}
+                  value={name}
+                  onChangeText={setName}
+                  maxLength={50}
+                  returnKeyType="done"
+                  onSubmitEditing={Keyboard.dismiss}
+                />
+              </View>
+
+              <View style={styles.showHeaderSection}>
+                <Text style={styles.showHeaderLabel}>Attach a Show (Optional)</Text>
+                <Text style={styles.showHeaderHint}>Connect a show for episode tracking + spoiler lock</Text>
+              </View>
+            </>
+          }
+          renderItem={({ item }) => {
+            const isSelected = selectedShow?.show_id === item.show_id;
+            return (
+              <Pressable
+                style={[styles.showRow, isSelected && styles.showRowSelected]}
+                onPress={() => setSelectedShow(isSelected ? null : item)}
+              >
+                <View style={styles.posterWrap}>
+                  {item.show_image ? (
+                    <Image source={{ uri: item.show_image }} style={styles.poster} contentFit="cover" />
+                  ) : (
+                    <View style={[styles.poster, styles.posterPlaceholder]}>
+                      <Text style={{ fontSize: 14 }}>📺</Text>
+                    </View>
+                  )}
+                </View>
+                <Text style={styles.showTitle} numberOfLines={1}>{item.show_title}</Text>
+                {isSelected && <Text style={styles.checkMark}>✓</Text>}
+              </Pressable>
+            );
+          }}
+          contentContainerStyle={styles.list}
+        />
       )}
 
-      {selectedFriends.size > 0 && (
+      {/* Footer — Continue (step 1) / Create (step 2) */}
+      {!loading && friends.length > 0 && (
         <View style={styles.footer}>
-          <Pressable
-            style={({ pressed }) => [
-              styles.createButton,
-              creating && styles.createButtonDisabled,
-              pressed && { opacity: 0.7 },
-            ]}
-            onPress={handleCreate}
-            disabled={creating}
-          >
-            {creating ? (
-              <ActivityIndicator color="#fff" size="small" />
-            ) : (
-              <Text style={styles.createButtonText}>
-                {isGroup ? 'Create Group Chat' : 'Start Chat'}
+          {step === 'friends' ? (
+            <Pressable
+              style={({ pressed }) => [
+                styles.primaryButton,
+                selectedFriends.size === 0 && styles.primaryButtonDisabled,
+                pressed && { opacity: 0.7 },
+              ]}
+              onPress={handleContinue}
+              disabled={selectedFriends.size === 0}
+            >
+              <Text style={styles.primaryButtonText}>
+                Continue{selectedFriends.size > 0 ? ` (${selectedFriends.size})` : ''}
               </Text>
-            )}
-          </Pressable>
+            </Pressable>
+          ) : (
+            <Pressable
+              style={({ pressed }) => [
+                styles.primaryButton,
+                creating && styles.primaryButtonDisabled,
+                pressed && { opacity: 0.7 },
+              ]}
+              onPress={handleCreate}
+              disabled={creating}
+            >
+              {creating ? (
+                <ActivityIndicator color="#fff" size="small" />
+              ) : (
+                <Text style={styles.primaryButtonText}>
+                  {isGroup ? 'Create Group Chat' : 'Start Chat'}
+                </Text>
+              )}
+            </Pressable>
+          )}
         </View>
       )}
     </View>
@@ -287,13 +315,42 @@ const createStyles = (theme: Theme) => StyleSheet.create({
     color: theme.textDim,
     textAlign: 'center',
   },
+
+  // Header
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: theme.border,
+    gap: 12,
+  },
+  headerBack: {
+    padding: 4,
+  },
+  headerTitle: {
+    flex: 1,
+    fontSize: 17,
+    fontFamily: 'DMSans_700Bold',
+    color: theme.text,
+  },
+  headerStep: {
+    backgroundColor: theme.bgCard,
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: theme.border,
+  },
+  headerStepText: {
+    fontSize: 11,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.textDim,
+  },
+
   list: {
     paddingBottom: 100,
-  },
-  optionsSection: {
-    flex: 1,
-    borderTopWidth: 1,
-    borderTopColor: theme.border,
   },
   sectionHeader: {
     flexDirection: 'row',
@@ -365,6 +422,36 @@ const createStyles = (theme: Theme) => StyleSheet.create({
     fontSize: 16,
     color: theme.accent,
     fontWeight: '700',
+  },
+
+  // Step 2 — selected friends summary
+  summaryCard: {
+    margin: 16,
+    padding: 14,
+    borderRadius: 10,
+    backgroundColor: theme.bgCard,
+    borderWidth: 1,
+    borderColor: theme.border,
+    gap: 4,
+  },
+  summaryLabel: {
+    fontSize: 11,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.textFaint,
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
+  },
+  summaryNames: {
+    fontSize: 14,
+    fontFamily: 'DMSans_500Medium',
+    color: theme.text,
+    marginBottom: 4,
+  },
+  summaryEdit: {
+    fontSize: 13,
+    fontFamily: 'DMSans_600SemiBold',
+    color: theme.accent,
+    alignSelf: 'flex-start',
   },
 
   // Name input
@@ -446,16 +533,16 @@ const createStyles = (theme: Theme) => StyleSheet.create({
     borderTopWidth: 1,
     borderTopColor: theme.border,
   },
-  createButton: {
+  primaryButton: {
     backgroundColor: theme.accent,
     borderRadius: 10,
     padding: 16,
     alignItems: 'center',
   },
-  createButtonDisabled: {
-    opacity: 0.5,
+  primaryButtonDisabled: {
+    opacity: 0.4,
   },
-  createButtonText: {
+  primaryButtonText: {
     color: '#fff',
     fontSize: 16,
     fontFamily: 'DMSans_600SemiBold',
