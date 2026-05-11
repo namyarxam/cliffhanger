@@ -17,7 +17,7 @@ import { supabase } from '@/src/lib/supabase';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 
-const PRIVACY_URL = 'https://namyarxam.github.io/cliffhanger-docs/privacy';
+const PRIVACY_URL = 'https://cliffhangerapp.com/privacy';
 
 export default function SignUpScreen() {
   const theme = useTheme();
@@ -48,7 +48,7 @@ export default function SignUpScreen() {
           display_name: username,
           username: username.toLowerCase().replace(/[^a-z0-9_]/g, ''),
         },
-        emailRedirectTo: 'https://namyarxam.github.io/cliffhanger-docs/confirmed',
+        emailRedirectTo: 'https://cliffhangerapp.com/confirmed',
       },
     });
     setLoading(false);

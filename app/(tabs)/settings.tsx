@@ -17,7 +17,7 @@ import { supabase } from '@/src/lib/supabase';
 import { registerForPushNotifications, unregisterPushNotifications } from '@/src/lib/notifications';
 import { silentCatch } from '@/src/lib/errorLog';
 
-const PRIVACY_URL = 'https://namyarxam.github.io/cliffhanger-docs/privacy';
+const PRIVACY_URL = 'https://cliffhangerapp.com/privacy';
 
 const THEME_ORDER: ThemeName[] = ['navy', 'smoke', 'plum', 'paper'];
 
