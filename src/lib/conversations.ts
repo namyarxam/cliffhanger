@@ -61,10 +61,13 @@ export async function createConversation(
 
   if (error) throw error;
 
-  // Add creator as first member
-  await supabase
+  // Add creator as first member. Throw on failure so a broken RLS policy
+  // surfaces here instead of silently no-op'ing and cascading into a
+  // confusing "no existing member" failure on the friend insert below.
+  const { error: creatorErr } = await supabase
     .from('conversation_members')
     .insert({ conversation_id: data.id, user_id: userId });
+  if (creatorErr) throw creatorErr;
 
   // Drop every selected friend straight into conversation_members. The
   // "Members can add accepted friends" RLS policy (migration 057) authorizes
