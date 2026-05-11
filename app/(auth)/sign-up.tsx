@@ -94,7 +94,7 @@ export default function SignUpScreen() {
         {awaitingConfirmation ? (
           <>
             <Text style={styles.confirmBody}>
-              We sent a confirmation link to <Text style={styles.confirmEmail}>{email}</Text>. Open it on this device to finish signing up.
+              We sent a confirmation link to <Text style={styles.confirmEmail}>{email}</Text>. Open it to finish signing up.
             </Text>
             <Pressable style={styles.button} onPress={handleResendConfirmation}>
               <Text style={styles.buttonText}>Resend email</Text>
