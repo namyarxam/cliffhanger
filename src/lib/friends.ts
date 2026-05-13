@@ -21,6 +21,19 @@ export async function searchUsers(
   return data ?? [];
 }
 
+// Fire-and-forget push trigger. Errors are swallowed locally so a push
+// failure never blocks the friend request itself — the Edge Function logs
+// to Supabase logs + Sentry catches its own.
+async function notifyFriendRequest(friendshipId: string): Promise<void> {
+  try {
+    await supabase.functions.invoke('notify-friend-request', {
+      body: { friendship_id: friendshipId },
+    });
+  } catch {
+    // Intentionally silent — see comment above.
+  }
+}
+
 export async function sendFriendRequest(
   userId: string,
   friendId: string,
@@ -34,11 +47,12 @@ export async function sendFriendRequest(
     .maybeSingle();
 
   if (existing && existing.status === 'pending') {
-    // Mutual request — accept it
+    // Mutual request — accept it. Push the original sender that we accepted.
     await supabase
       .from('friendships')
       .update({ status: 'accepted', updated_at: new Date().toISOString() })
       .eq('id', existing.id);
+    notifyFriendRequest(existing.id);
     return;
   }
 
@@ -46,11 +60,14 @@ export async function sendFriendRequest(
     return; // Already friends
   }
 
-  const { error } = await supabase
+  const { data: inserted, error } = await supabase
     .from('friendships')
-    .insert({ user_id: userId, friend_id: friendId });
+    .insert({ user_id: userId, friend_id: friendId })
+    .select('id')
+    .single();
 
   if (error) throw error;
+  if (inserted?.id) notifyFriendRequest(inserted.id);
 }
 
 export async function acceptFriendRequest(friendshipId: string): Promise<void> {
@@ -60,6 +77,8 @@ export async function acceptFriendRequest(friendshipId: string): Promise<void> {
     .eq('id', friendshipId);
 
   if (error) throw error;
+  // Notify the original sender that their request was accepted.
+  notifyFriendRequest(friendshipId);
 }
 
 export async function removeFriend(friendshipId: string): Promise<void> {

@@ -29,6 +29,7 @@ export default function SettingsScreen() {
   const [pushNewEpisodes, setPushNewEpisodes] = useState(false);
   const [notifyAllCurrent, setNotifyAllCurrent] = useState(false);
   const [pushChatMessages, setPushChatMessages] = useState(true);
+  const [pushFriendRequests, setPushFriendRequests] = useState(true);
   const [showPosters, setShowPosters] = useState(true);
   const [hideRatings, setHideRatings] = useState(false);
 
@@ -36,7 +37,7 @@ export default function SettingsScreen() {
     if (!user?.id) return;
     supabase
       .from('profiles')
-      .select('push_new_episodes, notify_all_current, push_chat_messages, show_posters_in_list, hide_ratings')
+      .select('push_new_episodes, notify_all_current, push_chat_messages, push_friend_requests, show_posters_in_list, hide_ratings')
       .eq('id', user.id)
       .single()
       .then(({ data, error }) => {
@@ -45,6 +46,7 @@ export default function SettingsScreen() {
           setPushNewEpisodes(data.push_new_episodes);
           setNotifyAllCurrent(data.notify_all_current);
           setPushChatMessages(data.push_chat_messages ?? true);
+          setPushFriendRequests(data.push_friend_requests ?? true);
           setShowPosters(data.show_posters_in_list);
           setHideRatings(data.hide_ratings);
         }
@@ -111,6 +113,24 @@ export default function SettingsScreen() {
     const ok = await updateProfile('push_chat_messages', newValue);
     if (!ok) setPushChatMessages(!newValue);
   }, [user?.id, pushChatMessages, updateProfile]);
+
+  const handleToggleFriendRequests = useCallback(async () => {
+    if (!user?.id) return;
+    const newValue = !pushFriendRequests;
+    if (newValue) {
+      const token = await registerForPushNotifications(user.id);
+      if (!token) {
+        Alert.alert(
+          'Notifications Disabled',
+          'Please enable notifications for Cliffhanger in your device settings.',
+        );
+        return;
+      }
+    }
+    setPushFriendRequests(newValue);
+    const ok = await updateProfile('push_friend_requests', newValue);
+    if (!ok) setPushFriendRequests(!newValue);
+  }, [user?.id, pushFriendRequests, updateProfile]);
 
   const handleTogglePosters = useCallback(async () => {
     const newValue = !showPosters;
@@ -226,6 +246,20 @@ export default function SettingsScreen() {
           </View>
           <View style={[styles.toggleTrack, pushChatMessages && styles.toggleTrackOn]}>
             <View style={[styles.toggleThumb, pushChatMessages && styles.toggleThumbOn]} />
+          </View>
+        </Pressable>
+
+        <View style={styles.settingGap} />
+
+        <Pressable style={styles.settingRow} onPress={handleToggleFriendRequests}>
+          <View style={styles.settingInfo}>
+            <Text style={styles.settingLabel}>Friend Requests</Text>
+            <Text style={styles.settingHint}>
+              Get notified when someone adds you as a friend or accepts your request.
+            </Text>
+          </View>
+          <View style={[styles.toggleTrack, pushFriendRequests && styles.toggleTrackOn]}>
+            <View style={[styles.toggleThumb, pushFriendRequests && styles.toggleThumbOn]} />
           </View>
         </Pressable>
       </View>

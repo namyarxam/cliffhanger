@@ -181,15 +181,20 @@ function AuthGate() {
     return () => sub.remove();
   }, [router]);
 
-  // Route notification taps. notify-message Edge Function attaches
-  // `{ type: 'chat', conversation_id }` to the data payload — open the
-  // conversation directly. (The historical 'invite' type was removed when
-  // chat invites went away in favor of direct member-add.)
+  // Route notification taps. notify-message attaches { type: 'chat',
+  // conversation_id }; notify-friend-request attaches { type:
+  // 'friend_request' } and we drop the user into the Friends tab so they
+  // can accept the pending row. (The historical chat 'invite' type was
+  // removed when chat invites went away in favor of direct member-add.)
   useEffect(() => {
     const route = (data: unknown) => {
       const d = data as { type?: string; conversation_id?: string } | null;
-      if (!d?.conversation_id) return;
-      if (d.type === 'chat') router.push(`/(tabs)/chat/${d.conversation_id}`);
+      if (!d) return;
+      if (d.type === 'chat' && d.conversation_id) {
+        router.push(`/(tabs)/chat/${d.conversation_id}`);
+      } else if (d.type === 'friend_request') {
+        router.push('/(tabs)/friends');
+      }
     };
     // Cold-launch case: the OS opened the app via notification tap.
     Notifications.getLastNotificationResponseAsync().then(r => {
