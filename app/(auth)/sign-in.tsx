@@ -5,15 +5,15 @@ import {
   TextInput,
   Pressable,
   StyleSheet,
-  KeyboardAvoidingView,
-  Platform,
   ActivityIndicator,
   Alert,
+  ScrollView,
 } from 'react-native';
 import { Link } from 'expo-router';
 import { supabase } from '@/src/lib/supabase';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
+import { StableKeyboardView } from '@/src/components/StableKeyboardView';
 
 export default function SignInScreen() {
   const theme = useTheme();
@@ -57,11 +57,11 @@ export default function SignInScreen() {
   }
 
   return (
-    <KeyboardAvoidingView
-      style={styles.container}
-      behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-    >
-      <View style={styles.inner}>
+    <StableKeyboardView style={styles.container}>
+      <ScrollView
+        contentContainerStyle={styles.inner}
+        keyboardShouldPersistTaps="handled"
+      >
         <Text style={styles.logo}>
           cliff<Text style={styles.logoAccent}>hanger</Text>
         </Text>
@@ -124,8 +124,8 @@ export default function SignInScreen() {
             </Text>
           </Pressable>
         </Link>
-      </View>
-    </KeyboardAvoidingView>
+      </ScrollView>
+    </StableKeyboardView>
   );
 }
 
@@ -135,9 +135,10 @@ const createStyles = (theme: Theme) => StyleSheet.create({
     backgroundColor: theme.bg,
   },
   inner: {
-    flex: 1,
+    flexGrow: 1,
     justifyContent: 'center',
     paddingHorizontal: 32,
+    paddingVertical: 48,
   },
   logo: {
     fontSize: 32,

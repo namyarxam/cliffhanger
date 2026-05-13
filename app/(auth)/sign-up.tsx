@@ -5,8 +5,6 @@ import {
   TextInput,
   Pressable,
   StyleSheet,
-  KeyboardAvoidingView,
-  Platform,
   ActivityIndicator,
   Alert,
   ScrollView,
@@ -16,6 +14,7 @@ import { Link } from 'expo-router';
 import { supabase } from '@/src/lib/supabase';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
+import { StableKeyboardView } from '@/src/components/StableKeyboardView';
 
 const PRIVACY_URL = 'https://cliffhangerapp.com/privacy';
 
@@ -76,10 +75,7 @@ export default function SignUpScreen() {
   }
 
   return (
-    <KeyboardAvoidingView
-      style={styles.container}
-      behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-    >
+    <StableKeyboardView style={styles.container}>
       <ScrollView
         contentContainerStyle={styles.inner}
         keyboardShouldPersistTaps="handled"
@@ -171,7 +167,7 @@ export default function SignUpScreen() {
           </>
         )}
       </ScrollView>
-    </KeyboardAvoidingView>
+    </StableKeyboardView>
   );
 }
 

@@ -5,8 +5,6 @@ import {
   TextInput,
   Pressable,
   StyleSheet,
-  KeyboardAvoidingView,
-  Platform,
   ActivityIndicator,
   Alert,
 } from 'react-native';
@@ -15,6 +13,7 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { supabase } from '@/src/lib/supabase';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
+import { StableKeyboardView } from '@/src/components/StableKeyboardView';
 
 const RESET_REDIRECT = 'cliffhanger://reset-password';
 
@@ -46,10 +45,7 @@ export default function ForgotPasswordScreen() {
   }
 
   return (
-    <KeyboardAvoidingView
-      style={styles.container}
-      behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-    >
+    <StableKeyboardView style={styles.container}>
       <View style={styles.inner}>
         <Pressable style={({ pressed }) => [styles.backButton, pressed && { opacity: 0.5 }]} onPress={() => router.back()}>
           <FontAwesome name="chevron-left" size={16} color={theme.accent} />
@@ -96,7 +92,7 @@ export default function ForgotPasswordScreen() {
           </>
         )}
       </View>
-    </KeyboardAvoidingView>
+    </StableKeyboardView>
   );
 }
 
