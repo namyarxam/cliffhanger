@@ -46,9 +46,9 @@ function formatNextEpisodeIn(airdate: string, airstamp: string | null, airtime: 
   // cases fall through to date-only.
   if (!airstamp || !airtime) {
     const days = daysUntil(airdate);
-    if (days <= 0) return 'Returns today';
-    if (days === 1) return 'Returns tomorrow';
-    return `Returns in ${days}d`;
+    if (days <= 0) return 'Next episode today';
+    if (days === 1) return 'Next episode tomorrow';
+    return `Next episode in ${days}d`;
   }
 
   // airstamp is "2026-05-10T16:00:00+00:00" — fully qualified, JS parses it
@@ -56,9 +56,9 @@ function formatNextEpisodeIn(airdate: string, airstamp: string | null, airtime: 
   const instant = new Date(airstamp);
   if (isNaN(instant.getTime())) {
     const days = daysUntil(airdate);
-    if (days <= 0) return 'Returns today';
-    if (days === 1) return 'Returns tomorrow';
-    return `Returns in ${days}d`;
+    if (days <= 0) return 'Next episode today';
+    if (days === 1) return 'Next episode tomorrow';
+    return `Next episode in ${days}d`;
   }
 
   // Recompute days against the user-local date — converting from network tz
@@ -69,9 +69,9 @@ function formatNextEpisodeIn(airdate: string, airstamp: string | null, airtime: 
 
   // Outside the 3-day window → fall back to date-only "in Xd" copy
   if (days < 0 || days > 3) {
-    if (days <= 0) return 'Returns today';
-    if (days === 1) return 'Returns tomorrow';
-    return `Returns in ${days}d`;
+    if (days <= 0) return 'Next episode today';
+    if (days === 1) return 'Next episode tomorrow';
+    return `Next episode in ${days}d`;
   }
 
   const time = formatTime(instant);
@@ -81,12 +81,12 @@ function formatNextEpisodeIn(airdate: string, airstamp: string | null, airtime: 
     // imminent than the generic "today" cue. Pre-6pm shows (3am late-night
     // drops, daytime soaps) keep "today".
     const nowHour = new Date().getHours();
-    if (nowHour >= 18) return `Returns tonight at ${time}`;
-    return `Returns today at ${time}`;
+    if (nowHour >= 18) return `Next episode tonight at ${time}`;
+    return `Next episode today at ${time}`;
   }
-  if (days === 1) return `Returns tomorrow at ${time}`;
+  if (days === 1) return `Next episode tomorrow at ${time}`;
   const weekday = instant.toLocaleDateString(undefined, { weekday: 'long' });
-  return `Returns ${weekday} at ${time}`;
+  return `Next episode ${weekday} at ${time}`;
 }
 function formatPremiereIn(airdate: string): string {
   const days = daysUntil(airdate);
