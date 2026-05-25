@@ -12,7 +12,7 @@ Built with [Expo](https://expo.dev) (React Native), [Supabase](https://supabase.
 - "Airing" badge on currently active shows; upcoming-episode info with air dates
 
 ### Watchlists & episode tracking
-- Three-list system: **Watchlist**, **Currently Watching**, **Watched**
+- Three-list system: **Watchlist**, **Currently Watching**, **Finished**
 - One-tap status switching; re-tap removes (episode progress preserved)
 - **Visual episode timeline** — horizontal scrollable strip of color-coded dots, grouped by season
 - One-tap catch-up: tap any episode and everything before it (across seasons) marks as watched
@@ -36,7 +36,7 @@ Built with [Expo](https://expo.dev) (React Native), [Supabase](https://supabase.
 - Friend-based invites (no codes); pending invite badges on the Chat tab
 
 ### Notifications
-- Supabase Edge Function polls TVMaze schedule daily; new episodes appear in your "Behind" group automatically
+- Supabase Edge Function polls TVMaze schedule every 3 hours; new episodes appear in your "Behind" group automatically
 - Per-show bell toggle for episode-aired push notifications
 - Master push toggle + "alert for all currently watching" override in Settings
 
@@ -84,7 +84,7 @@ EXPO_PUBLIC_SENTRY_DSN=your-sentry-dsn
 EXPO_PUBLIC_GIPHY_API_KEY=your-giphy-key
 ```
 
-Apply the database migrations in `supabase/migrations/` (in numeric order) via the Supabase SQL Editor — there are 30+ files covering schema, RLS policies, and stored functions.
+Apply the database migrations in `supabase/migrations/` (in numeric order) via the Supabase SQL Editor — 50+ files covering schema, RLS policies, and stored functions.
 
 Run the dev server:
 
@@ -115,7 +115,7 @@ Schedule it to run every 3 hours via pg_cron or an external cron service.
 
 ## Status
 
-In TestFlight beta as of April 2026. App Store launch pending real-user feedback.
+Live on the App Store since April 2026. v1.0.1 in progress.
 
 ## License
 
