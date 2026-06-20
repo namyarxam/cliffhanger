@@ -16,7 +16,8 @@ import { qk } from '@/src/lib/queryKeys';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
-import { getUserShows, getNextEpisodesForShows, getShowsAiringToday, getReturnAnnouncements, markReturnAnnouncementSeen, markNextEpisode, updateShowStatus, getWatchedCounts } from '@/src/lib/watchlist';
+import { getUserShows, getNextEpisodesForShows, getShowsAiringToday, getReturnAnnouncements, markReturnAnnouncementSeen, markNextEpisode, updateShowStatus, getWatchedCounts, cacheShowMetadata, getLastAiredEpisode, countAiredEpisodes } from '@/src/lib/watchlist';
+import { fetchShow } from '@/src/lib/data';
 import { getLocalToday } from '@/src/lib/utils';
 import type { NextEpisode, ReturnAnnouncement } from '@/src/lib/watchlist';
 import WatchlistCard from '@/src/components/WatchlistCard';
@@ -241,6 +242,50 @@ export default function MyShowsScreen() {
     if (watchedCountsQuery.error) silentCatch('myShows:getWatchedCounts')(watchedCountsQuery.error);
   }, [watchedCountsQuery.error]);
 
+  // Refresh shows.last_aired_* / next_episode_* for every currently_watching
+  // show via TVMaze's authoritative show endpoint. Mirrors what useShowData
+  // does for a single show on the show detail screen — running it here means
+  // My Shows reflects newly-aired episodes without the user having to drill
+  // into show detail first. The poll-schedule cron only bumps the cache for
+  // episodes it picks up on their actual airing day, so a single missed cron
+  // run leaves the cache permanently stale until something else rewrites it.
+  // Throttled to once per 5 min to avoid hammering TVMaze on rapid tab toggles.
+  const lastMetadataRefresh = useRef(0);
+  const refreshWatchingMetadata = useCallback(async (force = false) => {
+    if (!userId) return;
+    const now = Date.now();
+    if (!force && now - lastMetadataRefresh.current < 5 * 60 * 1000) return;
+    const currentShows = queryClient.getQueryData<UserShow[]>(qk.userShows.all(userId)) ?? EMPTY_SHOWS;
+    const watching = currentShows.filter(s => s.status === 'currently_watching');
+    if (watching.length === 0) return;
+    lastMetadataRefresh.current = now;
+    await Promise.allSettled(
+      watching.map(async (s) => {
+        const full = await fetchShow(s.show_id);
+        const lastAired = getLastAiredEpisode(full.seasons);
+        await cacheShowMetadata(
+          s.show_id,
+          full.status,
+          full.nextEpisode
+            ? { season: full.nextEpisode.season, episode: full.nextEpisode.number, airdate: full.nextEpisode.airdate, airstamp: full.nextEpisode.airstamp, airtime: full.nextEpisode.airtime }
+            : null,
+          lastAired ? { season: lastAired.season, episode: lastAired.episode, airdate: lastAired.airdate } : null,
+          countAiredEpisodes(full.seasons),
+        );
+      }),
+    );
+    queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
+    queryClient.invalidateQueries({ queryKey: qk.nextEpisodes(userId) });
+  }, [userId, queryClient]);
+
+  // Cold-start trigger: fire the metadata refresh once shows actually load.
+  // useFocusEffect alone misses this because the first focus happens before
+  // userShows has data, so the refresh has nothing to iterate over.
+  const hasShowsData = userShowsQuery.data != null;
+  useEffect(() => {
+    if (hasShowsData) refreshWatchingMetadata().catch(silentCatch('myShows:refreshMetadata'));
+  }, [hasShowsData, refreshWatchingMetadata]);
+
   // Mark queries stale on tab focus so they background-refetch if data is
   // older than staleTime. Cached render shows immediately; fresh data swaps
   // in when ready (stale-while-revalidate). Replaces the old useFocusEffect
@@ -253,7 +298,8 @@ export default function MyShowsScreen() {
       queryClient.invalidateQueries({ queryKey: qk.airingToday(userId) });
       queryClient.invalidateQueries({ queryKey: qk.returnAnnouncements(userId) });
       queryClient.invalidateQueries({ queryKey: qk.watchedCounts(userId) });
-    }, [userId, queryClient])
+      refreshWatchingMetadata().catch(silentCatch('myShows:refreshMetadata'));
+    }, [userId, queryClient, refreshWatchingMetadata])
   );
 
   // Mirror the "soon" announcement count to the iOS app icon badge. Cleared
@@ -580,6 +626,7 @@ export default function MyShowsScreen() {
             setRefreshing(true);
             try {
               await Promise.allSettled([
+                refreshWatchingMetadata(true),
                 queryClient.refetchQueries({ queryKey: qk.userShows.all(userId) }),
                 queryClient.refetchQueries({ queryKey: qk.nextEpisodes(userId) }),
                 queryClient.refetchQueries({ queryKey: qk.airingToday(userId) }),
