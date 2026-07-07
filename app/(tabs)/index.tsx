@@ -504,23 +504,52 @@ export default function MyShowsScreen() {
   // renders — the previous inline-construction created a fresh object every
   // render for cache-fallback rows, defeating WatchlistCard's memo and
   // preventing SectionList from skipping rendered work for unchanged shows.
+  //
+  // Fallback synthesis premise: "next unwatched = current + 1 in current
+  // season." That holds when last_aired is in the same season the user is
+  // watching. When last_aired has crossed a season boundary the premise
+  // breaks — synthesizing S{current_season}E{current_episode+1} fabricates
+  // a non-existent episode (e.g. S2E11 for a 10-ep season) whenever the
+  // user is at the previous season's finale. Two sub-cases:
+  //   - Cross-season premiere (last_aired_episode === 1): synth the
+  //     premiere itself. Covers the common "just finished last season,
+  //     new season E1 just dropped" pattern (Silo S2 finale → S3E1).
+  //   - Deep cross-season (last_aired_episode > 1): can't safely synth
+  //     because we don't have the current-season episode count on the
+  //     row. Skip; the row falls through to the "Catch up" branch, which
+  //     is the vague-but-honest copy for genuine multi-episode gaps.
   const nextEpisodesWithFallback = useMemo(() => {
     const map = new Map<string, NextEpisode>();
     for (const s of shows) {
       const fromSchedule = nextEpisodes.get(s.show_id);
       if (fromSchedule) {
         map.set(s.show_id, fromSchedule);
-      } else if (isBehindFromCache(s)) {
-        const nextSeason = s.current_season;
-        const nextEpisode = s.current_episode + 1;
-        const isExactlyLastAired = s.last_aired_season === nextSeason && s.last_aired_episode === nextEpisode;
-        map.set(s.show_id, {
-          season: nextSeason,
-          episode: nextEpisode,
-          airdate: isExactlyLastAired ? s.last_aired_airdate : null,
-          behindCount: 1,
-        });
+        continue;
       }
+      if (!isBehindFromCache(s)) continue;
+      const sameSeason = s.last_aired_season === s.current_season;
+      const crossSeasonPremiere =
+        s.last_aired_season != null &&
+        s.last_aired_season > s.current_season &&
+        s.last_aired_episode === 1;
+      let nextSeason: number;
+      let nextEpisode: number;
+      if (sameSeason) {
+        nextSeason = s.current_season;
+        nextEpisode = s.current_episode + 1;
+      } else if (crossSeasonPremiere) {
+        nextSeason = s.last_aired_season!;
+        nextEpisode = 1;
+      } else {
+        continue;
+      }
+      const isExactlyLastAired = s.last_aired_season === nextSeason && s.last_aired_episode === nextEpisode;
+      map.set(s.show_id, {
+        season: nextSeason,
+        episode: nextEpisode,
+        airdate: isExactlyLastAired ? s.last_aired_airdate : null,
+        behindCount: 1,
+      });
     }
     return map;
   }, [shows, nextEpisodes]);
