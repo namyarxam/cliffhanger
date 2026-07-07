@@ -178,21 +178,28 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkWatched, onCatchUp, l
   const isSingleBehind = isBehind && !isMultiBehind;
 
   // Premiere fingerprints — see classifyCW for the same shape. Day-of fires
-  // when last_aired is E1 of a new season (cron just bumped). Upcoming fires
-  // when caught up to last_aired and the next future ep is E1 of a new
-  // season. Multi-season catch-up (user on S1E4 of a S4-airing show) does
-  // NOT match — last_aired_episode is > 1.
+  // when last_aired is E1 of a new season AND that airdate is today. Upcoming
+  // fires when caught up to last_aired and the next future ep is E1 of a new
+  // season with an airdate >= today. Multi-season catch-up (user on S1E4 of a
+  // S4-airing show) does NOT match — last_aired_episode is > 1.
   // current_season > 0 guard: premiere copy is only meaningful if the user
   // was actually following the show. A fresh add of a long-running show
   // (current=0, last_aired=S2E1+) trivially passes the season comparison
   // and misfires as "PREMIERES TODAY" when really they just haven't
   // engaged with the show yet.
+  // Airdate gates: without them a premiere that aired days ago still trips
+  // the "PREMIERES TODAY" copy because the E1-of-newer-season fingerprint
+  // stays true until the user advances their progress. Same story for
+  // isPremiereUpcoming when next_episode_airdate is in the past because
+  // the cron missed bumping last_aired.
+  const today = getLocalToday();
   const isPremiereDay =
     isBehind &&
     show.current_season > 0 &&
     show.last_aired_season != null &&
     show.last_aired_episode === 1 &&
-    show.last_aired_season > show.current_season;
+    show.last_aired_season > show.current_season &&
+    show.last_aired_airdate === today;
   const isPremiereUpcoming =
     !isBehind &&
     show.current_season > 0 &&
@@ -200,7 +207,8 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkWatched, onCatchUp, l
     show.show_status !== 'Ended' &&
     show.next_episode_season != null &&
     show.next_episode_episode === 1 &&
-    show.next_episode_season > show.current_season;
+    show.next_episode_season > show.current_season &&
+    show.next_episode_airdate >= today;
 
   // Caught up + airdate + not an upcoming-premiere = mid-season Watching.
   // (Upcoming-premiere drops to Returning instead.)

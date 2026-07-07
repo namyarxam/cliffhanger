@@ -70,12 +70,17 @@ const CW_GROUP_TITLES: Record<CWGroup, string> = {
 };
 
 // Premiere detection. The fingerprint of a season premiere:
-//   - Day-of: last aired episode IS E1 of a season newer than user's current.
-//             Means cron just bumped last_aired to today's premiere.
+//   - Day-of: last aired episode IS E1 of a season newer than user's current
+//             AND that airdate is today. Means cron bumped last_aired for
+//             an E1 that just dropped.
 //   - Upcoming: caught up, next future episode is E1 of a season newer than
-//             user's current.
+//             user's current, with an airdate >= today.
 // Multi-season catch-up (user on S1E4 of a 4-season show) is NOT a premiere
 // — last aired is S4Ex with x > 1, so the E1 check fails.
+// Airdate gates: without them, a premiere from days ago keeps tripping the
+// day-of fingerprint indefinitely (until the user advances), and an
+// upcoming premiere with a past airdate (cron missed the last_aired bump)
+// keeps rendering "Premieres today" for that stale next_episode.
 function isPremiereDayState(s: UserShow): boolean {
   return (
     // current_season > 0 guard: premiere copy is only meaningful if the
@@ -85,7 +90,8 @@ function isPremiereDayState(s: UserShow): boolean {
     s.current_season > 0 &&
     s.last_aired_season != null &&
     s.last_aired_episode === 1 &&
-    s.last_aired_season > s.current_season
+    s.last_aired_season > s.current_season &&
+    s.last_aired_airdate === getLocalToday()
   );
 }
 function isPremiereUpcomingState(s: UserShow): boolean {
@@ -95,7 +101,8 @@ function isPremiereUpcomingState(s: UserShow): boolean {
     s.show_status !== 'Ended' &&
     s.next_episode_season != null &&
     s.next_episode_episode === 1 &&
-    s.next_episode_season > s.current_season
+    s.next_episode_season > s.current_season &&
+    s.next_episode_airdate >= getLocalToday()
   );
 }
 
