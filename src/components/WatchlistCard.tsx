@@ -174,7 +174,14 @@ function WatchlistCard({ show, onPress, nextEpisode, onMarkWatched, onCatchUp, l
     show.last_aired_season > show.current_season;
   const behindCount = Math.max(scheduleBehind, sameSeasonBehind);
   const isBehind = hasNext || sameSeasonBehind > 0 || isCrossSeasonBehind;
-  const isMultiBehind = isBehind && (behindCount >= 2 || isCrossSeasonBehind);
+  // Cross-season with count=1 (season finale → season premiere, one ep to
+  // watch) falls under isSingleBehind so it renders "S{n} E{n}" like any
+  // other 1-behind row, matching the user's mental model that "one episode
+  // away" is the same regardless of season boundary. The vague "Catch up"
+  // copy is reserved for genuine multi-episode cross-season gaps (S1E4 of
+  // a S4-airing show) where the next-episode number alone doesn't convey
+  // how far behind the user is.
+  const isMultiBehind = isBehind && behindCount >= 2;
   const isSingleBehind = isBehind && !isMultiBehind;
 
   // Premiere fingerprints — see classifyCW for the same shape. Day-of fires
