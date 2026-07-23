@@ -91,23 +91,8 @@ export function estimateMinutes(frameCount: number): number {
   return Math.max(1, Math.round(frameCount / 7));
 }
 
-export type RecapMeta = {
-  slug: string;
-  title: string;
-  totalSeasons: number;
-  /** Seasons we actually hold content for — the spoiler ceiling. */
-  availableSeasons: number[];
-  network: string | null;
-  poster: string;
-  /** Card art for the recap list. */
-  backdrop: string;
-};
-
-/** The season ranges offered on the list card. Every single season, plus the
- *  full span when there's more than one. */
-export function offeredRanges(availableSeasons: number[]): SeasonRange[] {
-  const singles = availableSeasons.map(s => ({ from: s, through: s }));
-  if (availableSeasons.length < 2) return singles;
-  const full = { from: availableSeasons[0], through: availableSeasons[availableSeasons.length - 1] };
-  return [...singles, full];
-}
+// RecapMeta and offeredRanges lived here when recaps were bundled JSON. Both
+// now come from the database instead: the show's metadata is a row in
+// recap_shows (RecapListEntry in src/lib/recaps.ts), and the offered ranges
+// are bounded by the viewer's own progress rather than by what content exists,
+// which is a question only the server can answer — see offeredRangesFor.

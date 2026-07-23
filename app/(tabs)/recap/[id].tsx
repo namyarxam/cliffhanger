@@ -8,7 +8,7 @@
 // progress bar so it doesn't feel disowned from the rest of the app.
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { View, Text, StyleSheet, Pressable, useWindowDimensions } from 'react-native';
+import { View, Text, StyleSheet, Pressable, useWindowDimensions, ActivityIndicator } from 'react-native';
 import { Image } from 'expo-image';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -22,8 +22,11 @@ import Animated, {
   withTiming,
   Easing,
 } from 'react-native-reanimated';
+import { useQuery } from '@tanstack/react-query';
 import { useTheme } from '@/src/providers/ThemeProvider';
-import { getRecapMeta, buildFrames } from '@/src/recap/registry';
+import { useAuth } from '@/src/providers/AuthProvider';
+import { qk } from '@/src/lib/queryKeys';
+import { listRecaps, getRecapSeasons, buildFrames } from '@/src/lib/recaps';
 import { ACT_ORDER, ACT_LABELS } from '@/src/recap/types';
 import type { RecapFrame } from '@/src/recap/types';
 
@@ -40,17 +43,38 @@ export default function RecapStoryScreen() {
   const insets = useSafeAreaInsets();
   const { width, height } = useWindowDimensions();
 
-  const meta = useMemo(() => getRecapMeta(String(id)), [id]);
+  const { session } = useAuth();
+  const userId = session?.user?.id;
 
-  // Range comes from the chip the user tapped. Defaults span everything we
-  // hold; buildFrames clamps, so a hand-edited deep link can't reach past the
-  // spoiler boundary.
-  const frames = useMemo(() => {
-    if (!meta) return [];
-    const lo = Number(from) || meta.availableSeasons[0];
-    const hi = Number(through) || meta.availableSeasons[meta.availableSeasons.length - 1];
-    return buildFrames(String(id), { from: lo, through: hi });
-  }, [id, meta, from, through]);
+  // Shares a cache key with the Recap tab, so arriving from the list costs no
+  // extra round trip and the season cap is whatever the list already resolved.
+  const recapsQ = useQuery({
+    queryKey: qk.recaps(userId),
+    queryFn: listRecaps,
+    enabled: !!userId,
+  });
+  const entry = useMemo(
+    () => recapsQ.data?.find(r => r.slug === String(id)) ?? null,
+    [recapsQ.data, id],
+  );
+
+  // Range comes from the chip the user tapped. It is passed to the server
+  // as-is and NOT clamped here: the database decides what it will send, so
+  // asking for more seasons than you have earned returns fewer rows rather
+  // than more content. A hand-edited deep link degrades, it does not spoil.
+  const lo = Math.max(1, Number(from) || 1);
+  const hi = Number(through) || entry?.maxSeason || 1;
+
+  const seasonsQ = useQuery({
+    queryKey: qk.recapSeasons(userId, String(id), lo, hi),
+    queryFn: () => getRecapSeasons(String(id), { from: lo, through: hi }, entry!.generatedAt),
+    enabled: !!entry,
+  });
+
+  const frames = useMemo(
+    () => (entry && seasonsQ.data ? buildFrames(entry, seasonsQ.data) : []),
+    [entry, seasonsQ.data],
+  );
 
   const [index, setIndex] = useState(0);
 
@@ -148,10 +172,24 @@ export default function RecapStoryScreen() {
     [index, frames.length, exit],
   );
 
-  if (!meta || !frame) {
+  // Content is fetched, so there is a real pending state here that the
+  // bundled version never had. Shown on the dark story background rather than
+  // the app background so entering the recap doesn't flash a themed screen.
+  if (recapsQ.isLoading || (!!entry && seasonsQ.isLoading)) {
     return (
       <View style={styles.missing}>
-        <Text style={styles.missingText}>Recap unavailable.</Text>
+        <StatusBar style="light" />
+        <ActivityIndicator color="rgba(255,255,255,0.5)" />
+      </View>
+    );
+  }
+
+  if (!entry || !frame) {
+    return (
+      <View style={styles.missing}>
+        <Text style={styles.missingText}>
+          {seasonsQ.isError || recapsQ.isError ? "Couldn't load this recap." : 'Recap unavailable.'}
+        </Text>
         <Pressable onPress={exit} hitSlop={12}>
           <Text style={[styles.missingLink, { color: theme.accent }]}>Go back</Text>
         </Pressable>

@@ -46,6 +46,15 @@ export const qk = {
   // Lists
   lists: (userId: string | undefined) => ['lists', userId] as const,
 
+  // Recaps
+  //
+  // Keyed on userId because the list carries a per-viewer season cap — two
+  // accounts on the same device must not share a cached list, or one could be
+  // offered a season the other had earned.
+  recaps: (userId: string | undefined) => ['recaps', userId] as const,
+  recapSeasons: (userId: string | undefined, slug: string, from: number, through: number) =>
+    ['recapSeasons', userId, slug, from, through] as const,
+
   // Profile
   profile: (userId: string | undefined) => ['profile', userId] as const,
 

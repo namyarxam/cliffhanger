@@ -10,8 +10,8 @@
 // recap directly rather than selecting-then-confirming, which would add a tap
 // for no information gain. The play button starts the full span.
 
-import { useMemo } from 'react';
-import { View, Text, StyleSheet, Pressable, ScrollView } from 'react-native';
+import { useEffect, useMemo } from 'react';
+import { View, Text, StyleSheet, Pressable, ScrollView, ActivityIndicator } from 'react-native';
 import { Image } from 'expo-image';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -19,16 +19,43 @@ import { useRouter } from 'expo-router';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
-import { listRecaps, buildFrames } from '@/src/recap/registry';
-import { offeredRanges, rangeLabel, estimateMinutes } from '@/src/recap/types';
-import type { RecapMeta, SeasonRange } from '@/src/recap/types';
+import { useQuery } from '@tanstack/react-query';
+import { useAuth } from '@/src/providers/AuthProvider';
+import { qk } from '@/src/lib/queryKeys';
+import { silentCatch } from '@/src/lib/errorLog';
+import { listRecaps, offeredRangesFor, prefetchRecap } from '@/src/lib/recaps';
+import type { RecapListEntry } from '@/src/lib/recaps';
+import { rangeLabel, estimateMinutes } from '@/src/recap/types';
+import type { SeasonRange } from '@/src/recap/types';
 
 export default function RecapScreen() {
   const theme = useTheme();
   const styles = useMemo(() => createStyles(theme), [theme]);
   const insets = useSafeAreaInsets();
   const router = useRouter();
-  const recaps = useMemo(() => listRecaps(), []);
+  const { session } = useAuth();
+  const userId = session?.user?.id;
+
+  const recapsQ = useQuery({
+    queryKey: qk.recaps(userId),
+    queryFn: listRecaps,
+    enabled: !!userId,
+  });
+  const recaps = recapsQ.data ?? [];
+
+  useEffect(() => {
+    if (recapsQ.error) silentCatch('recap:list')(recapsQ.error);
+  }, [recapsQ.error]);
+
+  // Warm the cache for everything this viewer is already entitled to.
+  //
+  // You want a season's recap roughly a year after finishing it, when the
+  // next season airs — never at the moment you catch up. So fetching quietly
+  // here means the data is on the device long before anyone asks for it, and
+  // the server-side season cap costs nothing in felt speed.
+  useEffect(() => {
+    for (const entry of recaps) void prefetchRecap(entry);
+  }, [recaps]);
 
   const open = (slug: string, range: SeasonRange) =>
     router.push(`/recap/${slug}?from=${range.from}&through=${range.through}`);
@@ -47,6 +74,21 @@ export default function RecapScreen() {
         // the surface always feels live rather than locked.
         alwaysBounceVertical
       >
+        {recapsQ.isLoading && (
+          <View style={styles.stateBox}>
+            <ActivityIndicator color={theme.textDim} />
+          </View>
+        )}
+
+        {recapsQ.isError && !recapsQ.isLoading && (
+          <View style={styles.stateBox}>
+            <Text style={styles.stateText}>Couldn't load recaps.</Text>
+            <Pressable onPress={() => recapsQ.refetch()} hitSlop={8}>
+              <Text style={[styles.stateText, { color: theme.accent }]}>Try again</Text>
+            </Pressable>
+          </View>
+        )}
+
         {recaps.map(item => (
           <RecapCard
             key={item.slug}
@@ -57,19 +99,31 @@ export default function RecapScreen() {
           />
         ))}
 
-        {/* Honest empty-state framing: the prototype has exactly one show, and
-            pretending otherwise would hide the coverage problem that the real
-            feature has to solve. */}
-        <View style={styles.note}>
-          <FontAwesome name="info-circle" size={13} color={theme.textFaint} />
-          <Text style={styles.noteText}>
-            More shows coming. Recaps are built per season, so they never spoil
-            past the season you pick.
-          </Text>
-        </View>
+        {!recapsQ.isLoading && !recapsQ.isError && (
+          <View style={styles.note}>
+            <FontAwesome name="info-circle" size={13} color={theme.textFaint} />
+            <Text style={styles.noteText}>
+              More shows coming. Recaps only ever cover seasons you've finished,
+              so they can't spoil what's ahead of you.
+            </Text>
+          </View>
+        )}
       </ScrollView>
     </View>
   );
+}
+
+/**
+ * Why a card has nothing to offer yet.
+ *
+ * Stated plainly rather than hiding the card: a recap for a show you haven't
+ * started is just a spoiler, but "we have this, finish a season and it opens"
+ * is useful information and a reason to add the show.
+ */
+function lockedReason(item: RecapListEntry): string {
+  if (item.watchStatus === 'muted') return 'Muted';
+  if (!item.watchStatus) return 'Add this show to unlock';
+  return 'Finish a season to unlock';
 }
 
 function RecapCard({
@@ -78,26 +132,35 @@ function RecapCard({
   theme,
   onOpen,
 }: {
-  item: RecapMeta;
+  item: RecapListEntry;
   styles: ReturnType<typeof createStyles>;
   theme: Theme;
   onOpen: (range: SeasonRange) => void;
 }) {
-  const ranges = useMemo(() => offeredRanges(item.availableSeasons), [item.availableSeasons]);
-  const fullRange = ranges[ranges.length - 1];
+  // Bounded by the viewer's own progress, not by what we hold. maxSeason is
+  // 0 when the show isn't tracked, is muted, or no season has been finished —
+  // in which case there is nothing to offer and the card renders locked.
+  const ranges = useMemo(() => offeredRangesFor(item.maxSeason), [item.maxSeason]);
+  const fullRange = ranges[ranges.length - 1] ?? null;
+  const locked = ranges.length === 0;
+
+  // Estimated from season count rather than an actual frame list, since the
+  // frames for a range aren't fetched until it's opened. Every season is a
+  // title + premise + ~6 character cards + ~7 beats + a cliffhanger.
   const minutes = useMemo(
-    () => estimateMinutes(buildFrames(item.slug, fullRange).length),
-    [item.slug, fullRange],
+    () => estimateMinutes(2 + 6 + item.maxSeason * 7 + 1),
+    [item.maxSeason],
   );
 
   return (
     <View style={styles.card}>
       <Pressable
-        style={({ pressed }) => [styles.cardHero, pressed && styles.cardPressed]}
-        onPress={() => onOpen(fullRange)}
+        style={({ pressed }) => [styles.cardHero, pressed && !locked && styles.cardPressed]}
+        onPress={() => fullRange && onOpen(fullRange)}
+        disabled={locked}
       >
         <Image
-          source={{ uri: item.backdrop }}
+          source={{ uri: item.backdrop ?? item.poster ?? undefined }}
           style={styles.cardImage}
           contentFit="cover"
           transition={220}
@@ -114,17 +177,19 @@ function RecapCard({
           <View style={styles.cardCopy}>
             <Text style={styles.cardTitle}>{item.title}</Text>
             <Text style={styles.cardMeta}>
-              {item.availableSeasons.length} seasons available · {minutes} min
+              {locked
+                ? lockedReason(item)
+                : `${item.maxSeason} season${item.maxSeason === 1 ? '' : 's'} · ${minutes} min`}
             </Text>
           </View>
-          <View style={[styles.playChip, { backgroundColor: theme.accent }]}>
-            <FontAwesome name="play" size={11} color="#fff" />
+          <View style={[styles.playChip, { backgroundColor: locked ? 'rgba(255,255,255,0.12)' : theme.accent }]}>
+            <FontAwesome name={locked ? 'lock' : 'play'} size={11} color={locked ? theme.textDim : '#fff'} />
           </View>
         </View>
       </Pressable>
 
       <View style={styles.chipRow}>
-        <Text style={styles.chipLabel}>Recap</Text>
+        <Text style={styles.chipLabel}>{locked ? '' : 'Recap'}</Text>
         {ranges.map(r => (
           <Pressable
             key={rangeLabel(r)}
@@ -170,6 +235,16 @@ const createStyles = (theme: Theme) =>
       // Guarantees the scroll view has at least a full screen of content box,
       // so alwaysBounceVertical has something to bounce.
       flexGrow: 1,
+    },
+    stateBox: {
+      paddingVertical: 40,
+      alignItems: 'center',
+      gap: 10,
+    },
+    stateText: {
+      fontSize: 14,
+      fontFamily: 'DMSans_400Regular',
+      color: theme.textDim,
     },
     card: {
       borderRadius: 18,
