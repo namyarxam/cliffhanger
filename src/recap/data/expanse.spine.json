@@ -1,0 +1,354 @@
+{
+  "slug": "expanse",
+  "generatedFor": "The Expanse",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Canterbury nuked",
+          "text": "The ice hauler Canterbury answers a distress call and is destroyed by stealth ships, leaving XO Jim Holden and a small away crew as the only survivors.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "This is the inciting attack that forms the Rocinante crew and puts the protomolecule mystery in motion.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Miller takes the case",
+          "text": "On Ceres, jaded detective Joe Miller is hired to find heiress Julie Mao and becomes obsessed enough to be fired, tracing her ties to the militant Belter OPA.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Miller's Julie thread is the wire that connects Ceres, the OPA, and the protomolecule together.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The broadcast",
+          "text": "To keep his crew alive, Holden broadcasts that the Canterbury was killed by Martian tech, igniting protests across the Belt and pushing Earth and Mars toward war.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "It brands Holden a war-starter and hard-wires the political tension every later season inherits.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Rocinante is born",
+          "text": "The same stealth ships gut the Martian flagship Donnager; Holden's crew escapes on a captured frigate they rename Rocinante and dock with OPA-tied Fred Johnson at Tycho.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The ship and the Tycho alliance are the crew's base of operations from here on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Avasarala smells a setup",
+          "text": "In New York, UN deputy Chrisjen Avasarala plays Errinwright and the Martian ambassador and realises a third party is trying to spark the war.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Avasarala's private investigation is the thread that will pull Errinwright and Mao into the light.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Eros sealed",
+          "text": "Miller and Holden converge on Eros to find Julie killed by an alien 'protomolecule'; Jules-Pierre Mao's men seal the station and infect its poor as living incubators.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "This is the first live protomolecule outbreak — the emergency the whole next season is chasing.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Errinwright unmasked",
+          "text": "The Rocinante crew barely escape irradiated Eros; Avasarala matches the reactor tech to a program Errinwright is shielding and quietly ships her family to Luna.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "She now knows her own government is the enemy — the private knowledge that arms her for the political war ahead.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Eros is a live protomolecule experiment run by Jules-Pierre Mao behind Errinwright's back; the Rocinante crew and Miller escape irradiated and hunted, and Avasarala privately knows a rogue faction inside her own government helped light the fuse.",
+        "questions": [
+          "What is the protomolecule doing to the sealed population of Eros?",
+          "Who else inside the UN is backing Errinwright and Mao?",
+          "What will Miller do now that he has confirmed Julie is dead?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jim Holden",
+          "line": "Acting captain of the salvaged frigate Rocinante, marked man for his broadcast, in an uneasy alliance with Fred Johnson."
+        },
+        {
+          "name": "Joe Miller",
+          "line": "Fired Ceres detective still chasing Julie Mao's ghost, now aboard the Rocinante and poisoned by radiation from Eros."
+        },
+        {
+          "name": "Naomi Nagata",
+          "line": "The Rocinante's engineer and the crew's quiet moral centre, growing closer to Holden."
+        },
+        {
+          "name": "Chrisjen Avasarala",
+          "line": "Senior UN deputy who has identified a hidden faction inside her own government and is working it alone."
+        },
+        {
+          "name": "Fred Johnson",
+          "line": "Tycho Station chief and unofficial OPA power, sheltering Holden's crew in exchange for their testimony against the conspirators."
+        },
+        {
+          "name": "Jules-Pierre Mao",
+          "line": "Julie's father, secret architect of the protomolecule program and financier of the Eros experiment."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Two moons die",
+          "text": "Mars nukes Phoebe Station to erase the protomolecule's origin and Earth retaliates by destroying the Martian moon Deimos; the Solar System sits one incident away from open war.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Establishes the war footing that Errinwright will exploit and Avasarala will spend the season trying to defuse.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Miller kills Dresden",
+          "text": "The Rocinante and Fred Johnson's OPA storm Thoth Station and capture project lead Dresden; before he can talk his way free, Miller executes him and fractures the alliance.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Kills the one man who could explain the protomolecule and isolates Miller inside his own crew.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Eros crashes into Venus",
+          "text": "Eros wakes and steers itself at Earth; Miller carries a bomb to its heart and talks a protomolecule-hybrid Julie into crashing them both into Venus instead.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Removes Miller from the board and plants the protomolecule on Venus, where it will visibly start building something.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ganymede falls",
+          "text": "On Ganymede, MCRN gunnery sergeant Bobbie Draper watches her squad slaughtered by an inhuman figure while the orbital battle above devastates the moon's food domes.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Introduces Bobbie and the hybrid weapon, and creates the Belt-wide hunger crisis pushing everyone toward war.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Mao cornered",
+          "text": "Avasarala engineers a peace summit on Earth; Bobbie's off-book testimony convinces her Jules-Pierre Mao is selling a protomolecule weapon to both governments.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "This alliance between Bobbie and Avasarala is the axis of the next season's political thriller.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Hybrid on the Rocinante",
+          "text": "Bobbie defects and Avasarala meets Mao aboard his yacht; his ambush is broken by her power armour, while a hybrid monster smuggles itself onto the Rocinante.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Bobbie is now Avasarala's asset and the crew have a live weapon on their ship — the emergency that opens the next chapter.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Naomi's confession",
+          "text": "The crew kill the hybrid, but Naomi admits she gave the protomolecule sample to Fred Johnson so the Belt would have leverage; meanwhile Venus is being visibly remade.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Detonates the crew's trust and hands the Belt its own protomolecule — a card that reshapes the balance of power.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Miller is gone and Eros is on Venus, but Mao's program continues on Io using kidnapped Ganymede children — including Prax's daughter Mei — while the Belt now quietly holds its own protomolecule sample and Venus is being remade in plain sight.",
+        "questions": [
+          "What is the protomolecule building on Venus?",
+          "What are Mao's hybrids being engineered for?",
+          "Now that Fred Johnson holds a protomolecule sample, what will the Belt do with it?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jim Holden",
+          "line": "Rocinante captain, harder after Eros, struggling to keep the crew together after Naomi's confession."
+        },
+        {
+          "name": "Naomi Nagata",
+          "line": "Rocinante engineer whose secret cache of protomolecule has just detonated the crew's trust in her."
+        },
+        {
+          "name": "Chrisjen Avasarala",
+          "line": "Senior UN deputy who has openly turned on Errinwright and is now hunting Mao's hybrid program with Bobbie's help."
+        },
+        {
+          "name": "Bobbie Draper",
+          "line": "Former MCRN gunnery sergeant, defected to Avasarala on Earth after being ordered to lie about the Ganymede hybrid."
+        },
+        {
+          "name": "Sadavir Errinwright",
+          "line": "UN Undersecretary and Mao's Earth partner; known to Avasarala as a traitor but still in office and untouched."
+        },
+        {
+          "name": "Jules-Pierre Mao",
+          "line": "Fugitive protomolecule financier, still producing hybrids from kidnapped Ganymede children in a hidden lab on Io."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Errinwright frames Avasarala",
+          "text": "Errinwright frames Avasarala as Mao's ally and pushes Earth into open war with Mars; the Rocinante rescues her and Bobbie as fleets converge on Mao's lab at Io.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "This is the political detonation that fuses every faction's plot into one point at Io.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Battle of Io",
+          "text": "At Io, rogue Admiral Nguyen fires hybrid warheads; an infected Cotyar destroys the UN flagship to contain them, Mao is captured, and Fred Johnson downs the rest.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Ends Mao's hybrid program and takes the protomolecule off the war chessboard — clearing space for what Venus is about to send.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Errinwright falls, Belt legitimised",
+          "text": "Pastor Anna Volovodov forces the UN to arrest Errinwright with a leaked confession; peace holds, and the OPA under Dawes and Fred Johnson is recognised as the government of the Belt.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Removes Avasarala's antagonist and turns the Belt into a real political actor for the first time.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The Ring appears",
+          "text": "The protomolecule finishes a Ring beyond Uranus; Earth, Mars and the Belt each send fleets, with Camina Drummer captaining the OPA's converted Behemoth and Naomi at her side.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The Ring is the new plot engine and the pretext that puts every faction's flagship in one place.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Miller returns, Clarissa boards",
+          "text": "A construct of Miller starts appearing only to Holden, pulling him toward the Ring; Mao's other daughter Clarissa boards under an alias to frame and kill Holden for her father.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Reintroduces Miller as the protomolecule's messenger and plants Clarissa as the human threat inside the fleet.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Slow zone",
+          "text": "The Ring's station clamps every ship to near-stillness, killing many; Holden touches the alien core and sees that the protomolecule's makers were themselves wiped out by something.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Reveals the real threat is not the protomolecule but whatever killed its creators — the shadow behind everything to come.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · 1300 gates open",
+          "text": "Ashford tries to blow the Ring; Holden powers every ship down and calms the station, which instead opens 1300 gates to habitable systems and hands humanity a frontier.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "This is the map change that redefines every faction's ambitions and drives the whole next chapter.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Ring's station has opened gates to 1300 habitable systems and handed humanity a frontier no government is ready for; the protomolecule's makers were killed by something unknown that is still out there, and no faction agrees on who gets to claim what.",
+        "questions": [
+          "Who will control the 1300 new worlds — Earth, Mars, or the Belt?",
+          "What killed the protomolecule's builders, and is it still watching?",
+          "With Miller gone, who guides Holden through what the station showed him?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jim Holden",
+          "line": "Rocinante captain, unwilling messenger of the Ring; Miller is finally gone from his head."
+        },
+        {
+          "name": "Naomi Nagata",
+          "line": "Rocinante engineer who briefly commanded the Behemoth before choosing to return to her crew."
+        },
+        {
+          "name": "Chrisjen Avasarala",
+          "line": "Senior UN official vindicated after exposing Errinwright, now urging caution over the gates against a growing expansionist mood."
+        },
+        {
+          "name": "Bobbie Draper",
+          "line": "Reinstated Martian marine who has again shed the uniform to formally join the Rocinante crew."
+        },
+        {
+          "name": "Klaes Ashford",
+          "line": "Former pirate turned OPA commander, chastened after his attempt to destroy the Ring was overridden by Holden."
+        },
+        {
+          "name": "Camina Drummer",
+          "line": "OPA captain of the Behemoth, now walking on mechanical legs and allied with Naomi and Ashford after surviving the slow zone."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Race to Ilus",
+          "text": "With the gates open, Belter refugees settle a world called Ilus over Earth's blockade; Avasarala sends Holden as her envoy just as an Earth corporate expedition arrives to compete.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the template for the whole new-frontier era — Belters plant flags first, Inners follow with money and guns.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Belters vs Earthers",
+          "text": "Naomi dopes herself onto drugs to survive Ilus's gravity but never fully adapts; on the surface, settlers and Earth security chief Adolphus Murtry escalate into open gunfire.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Shows Belters can survive down a well but not comfortably, and puts a face on Earth corporate ruthlessness in the colonies.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Bobbie on Mars",
+          "text": "On Mars, Bobbie fails to find honest work and joins Detective Esai Martin's arms-trafficking gang, uncovering that Martian military hardware is quietly leaking out to the Belt.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Bobbie stumbling onto the Mars-to-Belt weapons pipeline is the intel that later explains where Marco's arsenal came from.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Ilus turns hostile",
+          "text": "Guided by Miller, Holden reactivates a dormant alien machine and triggers cascading disasters on Ilus — lightning, quakes, a tsunami, and a plague that blinds every settler.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Confirms the new worlds are booby-trapped with the leftover tech of a killed civilisation, not empty real estate.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Marco Inaros surfaces",
+          "text": "OPA peacekeepers Drummer and Ashford catch Naomi's ex-lover Marco Inaros stealing a UN colony ship and executing its passengers, but Belt politics acquit him.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Introduces the season's real villain and shows the OPA cannot police its own radicals.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Miller finishes his job",
+          "text": "On Ilus, Miller pushes a metal proxy body through an alien artefact and shuts down every protomolecule process on the planet; he is gone for good.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Closes out the Miller thread completely and severs Holden's line to the protomolecule's ancient civilisation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Gao wins, Marco strikes",
+          "text": "Avasarala loses the UN election to Nancy Gao; Ashford tracks Marco down but is killed by Naomi's son Filip, and Marco launches stealth-coated asteroids at Earth.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "This is the ending: no political top cover, the one man who could stop Marco is dead, and cloaked rocks are already in flight.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Marco Inaros has launched Martian-stealth asteroids at an Earth that cannot see them coming; Avasarala is out of office, Ashford is dead with a hidden warning nobody has found, and Bobbie is sitting on the smoking-gun evidence of the Mars-to-Belt weapons pipeline.",
+        "questions": [
+          "Will Ashford's hidden recording ever reach anyone who can stop Marco?",
+          "What happens when the stealth asteroids hit an unwarned Earth?",
+          "With Avasarala sidelined, who will act on what Bobbie now knows about Mars?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jim Holden",
+          "line": "Rocinante captain returning from Ilus, finally free of Miller and carrying proof that the new worlds are not safe."
+        },
+        {
+          "name": "Naomi Nagata",
+          "line": "Rocinante engineer whose ex-lover Marco Inaros and long-lost son Filip are now active enemies of everyone she loves."
+        },
+        {
+          "name": "Chrisjen Avasarala",
+          "line": "Defeated UN Secretary General on her way to Luna, estranged from her husband Arjun and out of formal power."
+        },
+        {
+          "name": "Bobbie Draper",
+          "line": "Avasarala's Mars asset, freshly signed on after uncovering the pipeline of Martian stealth tech and weapons flowing to the Belt."
+        },
+        {
+          "name": "Marco Inaros",
+          "line": "Radical OPA faction leader, Naomi's ex and father of her son, who has just launched cloaked asteroids at an unsuspecting Earth."
+        },
+        {
+          "name": "Camina Drummer",
+          "line": "Former Medina Station commander who resigned in disgust after Fred Johnson gave Earth the intel on Marco's location."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "slug": "silo",
+  "generatedFor": "Silo",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Allison's cleaning",
+          "text": "Sheriff Holston's wife Allison finds proof the outside view is faked, declares she wants to 'go out,' and dies walking into a toxic wasteland.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the central lie about the outside and the Pact rule that anyone who says 'go out' is sent out. Every later beat sits on this.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Holston follows",
+          "text": "Two years later Holston investigates the death of Juliette's lover George, walks out himself, briefly sees a lush green world before dying, and names her his successor.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Hands the investigation and the sheriff role to Juliette, and plants the second version of 'outside' — a lush lie the audience must remember.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Sheriff Juliette",
+          "text": "Juliette takes the sheriff badge, carved 'TRUTH,' to hunt George's killer. Mayor Jahns is poisoned and Deputy Marnes murdered; Judicial's Billings becomes her deputy.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Puts Juliette in position, removes the two adults who trusted her, and installs Billings — the person she'll spend the season learning whether to trust.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Cameras and Flamekeepers",
+          "text": "She uncovers hidden cameras behind the Silo's mirrors and a secret group, the Flamekeepers, who preserve the past. She retrieves George's forbidden hard drive.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The moment the conspiracy stops being rumour and becomes physical evidence in Juliette's hands. Everything after is the fight over that hard drive.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Bernard revealed",
+          "text": "IT head Bernard reveals he is the Silo's true ruler, admits ordering Jahns and Marnes killed, seizes the drive, and falsely declares Juliette wants to 'go out.'",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Names the antagonist and locks in the mechanism that sends Juliette outside — she isn't caught, she's forcibly written into the cleaning ritual.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The green lie exposed",
+          "text": "Juliette escapes, accesses the drive, and watches a past cleaning showing lush greenery outside. Her broadcast of the truth is cut off before the Silo can see it.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Confirms the outside footage is fabricated in the helmets themselves, and shows the Silo population never learns — critical for how season 2 opens inside.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Over the ridge",
+          "text": "Sent out to clean, Juliette's helmet shows the same fake green view — but her suit holds. She survives and sees dozens of other silos ringing a ruined city on the horizon.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The final image and the premise of the next season: Juliette alive outside, and the world is not one silo but many.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Juliette has walked out of her Silo, survived the poisoned air, and climbed over the crater rim to find dozens of other silos and a ruined city on the horizon. Inside her Silo, Bernard believes she is dead and the truth is buried.",
+        "questions": [
+          "Are the other silos inhabited, and do any of them know about each other?",
+          "Who or what is Bernard actually serving, and how far up does the deception go?",
+          "What happened to the world outside, and why has every generation been lied to about it?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Juliette Nichols",
+          "line": "Engineer turned sheriff who just survived her own cleaning; last seen walking away from her Silo toward a ruined city, unaware anyone inside might learn she lived."
+        },
+        {
+          "name": "Bernard Holland",
+          "line": "Head of IT and the Silo's true ruler; ordered the murders of Jahns and Marnes, has the hard drive, and believes he has finally silenced Juliette."
+        },
+        {
+          "name": "Robert Sims",
+          "line": "Bernard's Judicial enforcer, running the hidden camera network and cleaning up anyone — including his own people — who gets close to the secret."
+        },
+        {
+          "name": "Paul Billings",
+          "line": "Juliette's deputy, secretly carrying the disqualifying 'Syndrome'; now positioned to be made sheriff in her place under Bernard's protection.",
+          "note": "Kept one page of the children's book after burning the rest — sympathies unclear."
+        },
+        {
+          "name": "Lukas Kyle",
+          "line": "The cafeteria stargazer who grew close to Juliette; sentenced by Bernard to the mines for helping her with the hard drive.",
+          "note": "Knows enough to be dangerous to Bernard if he ever gets out."
+        },
+        {
+          "name": "Martha Walker",
+          "line": "Juliette's agoraphobic mentor in Mechanical who quietly swapped the heat tape on Juliette's suit — the single act that kept her alive on the way out."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Into Silo 17",
+          "text": "Juliette survives her cleaning and crosses into abandoned Silo 17, where a man locked in the vault, Solo, tells her fifty silos exist.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Anchors the whole season geographically and delivers the scope revelation (50 silos) that reframes everything.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Bernard clamps down",
+          "text": "In Silo 18, Bernard hides that Juliette lived, imposes a curfew, and jails Walker to smother the unrest her defiance is sparking in Mechanical.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Explains why the lower levels are already primed for revolt before anything else happens.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Meadows framed",
+          "text": "Meadows demands to be sent outside; Bernard poisons her and frames Knox and Shirley for the murder, pushing Mechanical into open revolt.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The ignition point of the civil war that occupies the rest of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Lukas and the Legacy",
+          "text": "Bernard makes Lukas his shadow to decode a 140-year-old letter; Lukas finds the Legacy vault, the fifty silos, and a hidden 'safeguard'.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Establishes Lukas as the second POV into the silo's true history and seeds the 'safeguard' that pays off at the end.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Solo's silo",
+          "text": "Juliette fixes Solo's flooded pump, discovers five young survivors he had lied about, and learns the safeguard is a poison line that can kill everyone.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Sets up the Silo 17 group Juliette is now bound to and defines the doomsday stakes.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The rebellion wins",
+          "text": "Rebels feed Bernard lies through his own camera and seize the lower floors; Lukas resigns as his shadow after learning the truth.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Bernard's regime collapses and Lukas exits the seat of power, leaving a leadership vacuum going into s3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Incinerator",
+          "text": "Juliette returns to Silo 18 in a firefighter suit; she and Bernard are locked in the incinerator as a flashback drops to Washington and a dirty-bomb crisis.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The literal cliffhanger plus the first crack in the origin mystery — this is the state s3 opens in.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Juliette has walked back into a Silo 18 mid-revolution and is locked with Bernard inside the firing incinerator, while a flashback to Washington opens a door onto how the silos began.",
+        "questions": [
+          "Can Juliette or Bernard survive the incinerator?",
+          "With Lukas gone and Mechanical holding the lower floors, who actually runs Silo 18 now?",
+          "What does the Washington, D.C. dirty-bomb flashback have to do with the silos?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Juliette Nichols",
+          "line": "Engineer-turned-sheriff who survived her cleaning; back inside Silo 18 in a firefighter suit and locked in the incinerator with Bernard."
+        },
+        {
+          "name": "Bernard Holland",
+          "line": "Silo 18's mayor and head of IT; his cover-ups have collapsed and he is trapped in the incinerator with the woman he tried to kill."
+        },
+        {
+          "name": "Lukas Kyle",
+          "line": "Bernard's former shadow, who decoded Quinn's letter, saw the Legacy and the fifty silos, and resigned rather than inherit the lie."
+        },
+        {
+          "name": "Solo (Jimmy)",
+          "line": "The lone adult who has lived inside Silo 17's vault since the rebellion of his childhood, now allied with Juliette and the five young survivors."
+        },
+        {
+          "name": "Knox",
+          "line": "Head of Mechanical and de facto leader of the rebellion; has broken Bernard's blockade and pushed the fight ten floors up."
+        },
+        {
+          "name": "Robert Sims",
+          "line": "Former head of Judicial Security, promoted to Bernard's IT shadow at the last moment; his wife Camille is the one the Legacy accepted, not him."
+        }
+      ]
+    }
+  }
+}

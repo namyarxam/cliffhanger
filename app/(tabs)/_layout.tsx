@@ -77,11 +77,13 @@ export default function TabLayout() {
 
     if (path === '' || path === 'index') return 'index';
     if (path === 'explore') return 'explore';
+    if (path === 'recap') return 'recap';
     if (path === 'chat') return 'chat';
     if (path === 'profile') return 'profile';
 
     // show/[id] doesn't force a tab — keep whatever tab was active before
     if (path.startsWith('show/')) return activeTabRef.current;
+    if (path.startsWith('recap/')) return 'recap';
     if (path.startsWith('chat/')) return 'chat';
     if (path === 'friends' || path === 'settings' || path === 'lists' || path.startsWith('user/') || path.startsWith('lists/')) return 'profile';
 
@@ -101,10 +103,13 @@ export default function TabLayout() {
     <RefreshBadgeContext.Provider value={refreshPending}>
     <Tabs
       tabBar={(props) => {
+        // Chat is swapped out for Recap while the recap experience is being
+        // prototyped. Every chat file is untouched — the screens are just
+        // unreachable (href: null below), so restoring is a one-line revert.
         const tabs = [
           { name: 'index', title: 'My Shows', icon: 'tv' as const },
           { name: 'explore', title: 'Explore', icon: 'compass' as const },
-          { name: 'chat', title: 'Chat', icon: 'comments' as const },
+          { name: 'recap', title: 'Recap', icon: 'history' as const },
           { name: 'profile', title: 'Profile', icon: 'user' as const },
         ];
 
@@ -132,11 +137,9 @@ export default function TabLayout() {
                         <Text style={styles.badgeText}>{pendingCount}</Text>
                       </View>
                     )}
-                    {tab.name === 'chat' && unseenChatsCount > 0 && (
-                      <View style={styles.badge}>
-                        <Text style={styles.badgeText}>{unseenChatsCount}</Text>
-                      </View>
-                    )}
+                    {/* Chat unseen badge intentionally omitted while the tab is
+                        swapped for Recap — the count query still runs, it just
+                        has nowhere to render. */}
                   </View>
                   <Text style={[styles.tabLabel, { color }]}>{tab.title}</Text>
                 </Pressable>
@@ -154,11 +157,14 @@ export default function TabLayout() {
     >
       <Tabs.Screen name="index" options={{ title: 'My Shows' }} />
       <Tabs.Screen name="explore" options={{ title: 'Explore' }} />
-      <Tabs.Screen name="chat" options={{ title: 'Chat' }} />
+      <Tabs.Screen name="recap" options={{ title: 'Recap', headerShown: false }} />
       <Tabs.Screen name="profile" options={{ title: 'Profile' }} />
+      <Tabs.Screen name="recap/[id]" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="settings" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="friends" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="show/[id]" options={{ href: null, headerShown: false }} />
+      {/* Chat — parked, not deleted. Reachable again by restoring the tab entry above. */}
+      <Tabs.Screen name="chat" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="chat/[id]" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="chat/new" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="lists" options={{ href: null, headerShown: false }} />
