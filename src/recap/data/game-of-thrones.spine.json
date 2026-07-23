@@ -5,435 +5,527 @@
     "1": {
       "beats": [
         {
-          "label": "S1 · The Hand's summons",
-          "text": "Ned accepts the Hand role after Jon Arryn's suspicious death; Jaime shoves young Bran from a tower to hide his incest with Cersei.",
+          "label": "S1 · The fall",
+          "text": "Bran climbs a tower and sees Queen Cersei sleeping with her twin Jaime; Jaime pushes him to hide the incest, and Bran survives crippled.",
           "anchorEpisode": 1,
-          "whyLoadBearing": "Establishes the two engines of the whole series: Stark honor pulled south, and the Lannister secret that Ned will die uncovering.",
+          "whyLoadBearing": "The secret Ned will die chasing, and the injury that eventually turns Bran into something else.",
           "needsVerify": false
         },
         {
-          "label": "S1 · Catelyn arrests Tyrion",
-          "text": "Catelyn arrests Tyrion for the assassin she blames on the Lannisters; the accusation lights the fuse between the two great houses.",
+          "label": "S1 · Ned goes south",
+          "text": "Ned Stark accepts the role of Hand of the King and travels south to investigate the mysterious death of his predecessor, Jon Arryn.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Puts Ned inside the Lannister court and away from Winterfell.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Catelyn takes Tyrion",
+          "text": "Believing the Lannisters sent an assassin after Bran, Catelyn arrests Tyrion on the road; the Lannisters retaliate by wounding Ned in the street.",
           "anchorEpisode": 4,
-          "whyLoadBearing": "The Stark-Lannister war of coming seasons starts here, on a wrong guess about who sent the knife.",
+          "whyLoadBearing": "First shot of the Stark–Lannister war; Ned is now injured and isolated.",
           "needsVerify": false
         },
         {
-          "label": "S1 · Joffrey is a Lannister",
-          "text": "In King's Landing, Ned uncovers that Joffrey and his siblings are Jaime's children, not Robert's — the crown is founded on a lie.",
+          "label": "S1 · The queen's secret",
+          "text": "Ned discovers Joffrey and his siblings are Jaime's children, not Robert's; he confronts Cersei and warns her to flee before he tells the king.",
           "anchorEpisode": 7,
-          "whyLoadBearing": "This is the secret every claimant to the throne will fight over for years; Ned's discovery gets him killed.",
+          "whyLoadBearing": "The information that makes Ned lethal to Cersei and that seals his death.",
           "needsVerify": false
         },
         {
-          "label": "S1 · Robert's death, Ned's trap",
-          "text": "Robert dies from a boar; Ned tries to install rightful heir Stannis, but Littlefinger betrays him and Joffrey seizes the throne.",
+          "label": "S1 · Robert dies, Ned falls",
+          "text": "When Robert dies from a hunting wound, Ned tries to install his brother Stannis as rightful heir; Baelish betrays him and Cersei crowns Joffrey.",
           "anchorEpisode": 7,
-          "whyLoadBearing": "Introduces Littlefinger as the true operator and cements Joffrey's illegitimate crown, both of which drive years of story.",
+          "whyLoadBearing": "The coup that installs a Lannister boy on the throne and jails Ned.",
           "needsVerify": false
         },
         {
-          "label": "S1 · Ned's beheading",
-          "text": "Sansa begs for Ned's life; he confesses treason to protect her, but Joffrey has him beheaded anyway on the steps of the Sept.",
+          "label": "S1 · Ned beheaded",
+          "text": "Ned falsely confesses treason to save his daughters, but Joffrey has him executed anyway; the North proclaims Robb king and marches to war.",
           "anchorEpisode": 9,
-          "whyLoadBearing": "The show's founding shock: nobody is safe, and every Stark child's arc from now on runs from this moment.",
+          "whyLoadBearing": "House Stark loses its head and becomes a rebel kingdom; every later thread depends on this.",
           "needsVerify": false
         },
         {
-          "label": "S1 · The North rises",
-          "text": "Robb marches south, captures Jaime, and is proclaimed King in the North; Arya is smuggled out of King's Landing disguised as a boy.",
+          "label": "S1 · Dragons reborn",
+          "text": "Across the sea Khal Drogo dies, and Daenerys walks into his funeral pyre; she emerges unburnt with three newborn dragons, the first in centuries.",
           "anchorEpisode": 10,
-          "whyLoadBearing": "The war of the Five Kings begins with the Starks splitting from the realm, and Arya's fugitive arc begins.",
-          "needsVerify": false
-        },
-        {
-          "label": "S1 · Dragons return",
-          "text": "Across the sea, Drogo dies. Daenerys walks into his funeral pyre and emerges unburnt with three newborn dragons on her shoulders.",
-          "anchorEpisode": 10,
-          "whyLoadBearing": "Magic re-enters the world for the first time in centuries; the show's other spine — Daenerys's slow return — is now armed.",
+          "whyLoadBearing": "The show's second engine ignites: a claimant with weapons no one else has.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "Ned is dead. The North has seceded, the Iron Throne sits under an illegitimate boy king, and Robert's brothers Stannis and Renly both claim the crown. Across the Narrow Sea, a Targaryen has hatched living dragons.",
+        "text": "Ned Stark is dead and the Seven Kingdoms are fracturing. Robb marches south as King in the North, Robert's brothers Stannis and Renly stir their own claims, and across the sea Daenerys walks out of a fire holding three baby dragons.",
         "questions": [
-          "Can Robb defeat the Lannisters and get his sisters back?",
-          "Will Stannis or Renly enforce the true line of succession before Joffrey does?",
-          "What will Daenerys do now that dragons walk the world again?"
+          "Can Robb win his war and get his sisters back from the Lannisters?",
+          "Will Daenerys turn her newborn dragons toward Westeros?",
+          "What did the deserter at Winterfell actually see in the snow beyond the Wall?"
         ]
       },
       "characters": [
         {
-          "name": "Jon Snow",
-          "line": "Ned's bastard son, sworn to the Night's Watch, riding beyond the Wall to search for his missing uncle Benjen."
-        },
-        {
-          "name": "Daenerys Targaryen",
-          "line": "Widowed Khaleesi with three newborn dragons, followed by Ser Jorah and a small remnant of Drogo's khalasar."
+          "name": "Ned Stark",
+          "line": "Lord of Winterfell and Hand of the King, executed by Joffrey after uncovering the Lannister incest and being betrayed by Baelish."
         },
         {
           "name": "Robb Stark",
-          "line": "Proclaimed King in the North, marching south with an intact army and Jaime Lannister as his prisoner."
+          "line": "Ned's eldest son, proclaimed King in the North and marching south to war after his father's execution."
+        },
+        {
+          "name": "Cersei Lannister",
+          "line": "Queen Regent to her son Joffrey, secretly the mother of Jaime's children and now the true power behind the throne."
+        },
+        {
+          "name": "Joffrey Baratheon",
+          "line": "Crowned king after Robert's death, a cruel boy who executed Ned Stark despite promising mercy."
+        },
+        {
+          "name": "Jaime Lannister",
+          "line": "Cersei's twin and secret lover, father of her children; pushed Bran from the tower to hide the incest."
         },
         {
           "name": "Tyrion Lannister",
-          "line": "Sent by his father Tywin to King's Landing as acting Hand of the King, to keep Cersei and Joffrey in check."
+          "line": "The Lannister dwarf, arrested by Catelyn on the road and now returning to King's Landing after clearing his name."
+        },
+        {
+          "name": "Daenerys Targaryen",
+          "line": "Widowed Targaryen exile who walked into Drogo's pyre and emerged unburnt as mother of the first three dragons in centuries."
+        },
+        {
+          "name": "Robert Baratheon",
+          "line": "King of the Seven Kingdoms and Ned's old friend, killed by a boar on a hunt he was too drunk to survive."
+        },
+        {
+          "name": "Bran Stark",
+          "line": "Ned's second son, crippled after Jaime pushed him from a tower for witnessing the incest."
         },
         {
           "name": "Sansa Stark",
-          "line": "Hostage of Joffrey in King's Landing after watching her father Ned beheaded on Joffrey's orders."
+          "line": "Ned's elder daughter, trapped in King's Landing as Joffrey's captive betrothed after her father's execution."
         },
         {
           "name": "Arya Stark",
-          "line": "Smuggled out of King's Landing disguised as a boy by a Night's Watch recruiter, presumed dead by the Lannisters."
+          "line": "Ned's younger daughter, fled the capital in disguise as a boy after her father's arrest."
+        },
+        {
+          "name": "Jon Snow",
+          "line": "Ned's bastard son, now sworn to the Night's Watch at the Wall as war breaks out in the south."
         }
       ]
     },
     "2": {
       "beats": [
         {
-          "label": "S2 · Stannis's fire god",
-          "text": "Stannis Baratheon claims the Iron Throne on Dragonstone, backed by the red priestess Melisandre and her god of fire.",
+          "label": "S2 · Five kings rise",
+          "text": "With Robert dead, Stannis reveals Joffrey's bastardy and claims the throne; his brother Renly, Robb, and Balon Greyjoy each raise armies of their own.",
           "anchorEpisode": 1,
-          "whyLoadBearing": "Introduces Melisandre and Stannis as the third claimant; her shadow magic will kill Renly and shape years of Stannis's story.",
-          "needsVerify": false
-        },
-        {
-          "label": "S2 · Robb marries Talisa",
-          "text": "Tyrion arrives as acting Hand to rein in Joffrey and Cersei, while Robb falls for the healer Talisa and secretly weds her.",
-          "anchorEpisode": 3,
-          "whyLoadBearing": "Robb breaking his Frey marriage pact is the seed of the Red Wedding, and Tyrion's tenure as Hand starts here.",
+          "whyLoadBearing": "Establishes the four-way war Tyrion and Tywin have to fight from a single city.",
           "needsVerify": false
         },
         {
           "label": "S2 · Theon takes Winterfell",
-          "text": "Theon returns to the Iron Islands, is scorned by his father Balon, and betrays the Starks by seizing an undefended Winterfell.",
+          "text": "Sent to negotiate with his father Balon, Theon instead sides with the Ironborn and seizes Winterfell from Bran; his own men soon betray him and torch the castle.",
           "anchorEpisode": 6,
-          "whyLoadBearing": "Theon's betrayal severs the last Stark stronghold from the war and puts Bran and Rickon on the run north.",
+          "whyLoadBearing": "Fractures House Stark further; Bran and Rickon vanish and Theon becomes a hostage.",
           "needsVerify": false
         },
         {
-          "label": "S2 · Arya and Jaqen",
-          "text": "At Harrenhal, Arya serves Tywin as his cupbearer and befriends Jaqen H'ghar, who repays his debt by killing three people she names.",
-          "anchorEpisode": 5,
-          "whyLoadBearing": "Arya's introduction to the Faceless Men — the coin Jaqen gives her is the key to her long Braavos arc.",
-          "needsVerify": false
-        },
-        {
-          "label": "S2 · Blackwater",
-          "text": "Stannis attacks King's Landing; Tyrion holds the city with wildfire until Tywin and the Tyrells arrive to save Joffrey at the last moment.",
-          "anchorEpisode": 9,
-          "whyLoadBearing": "Stannis is broken, Tyrion is unrewarded and wounded, and the Tyrells now sit next to the throne — the whole KL power map has moved.",
+          "label": "S2 · Arya at Harrenhal",
+          "text": "Captured and hidden in plain sight as Tywin's own cupbearer, Arya uses a Faceless Man's debt to kill three enemies before slipping away with Gendry and Hot Pie.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Puts a Jaqen coin in her hand and sets her on the road to Braavos.",
           "needsVerify": false
         },
         {
           "label": "S2 · Jon among the Wildlings",
-          "text": "Beyond the Wall, Jon lets himself be captured by the Wildlings on Qhorin's orders; Sam sees the White Walkers marching south with the dead.",
+          "text": "Sent north of the Wall, Jon is captured by the Wildling Ygritte; Qhorin Halfhand forces Jon to kill him so he can infiltrate as a false defector.",
           "anchorEpisode": 10,
-          "whyLoadBearing": "The two Northern threads that carry the rest of the show — Jon's cover with the Free Folk and the confirmed White Walker army — both start here.",
+          "whyLoadBearing": "Places Jon inside the Wildling army as the next season's threat gathers.",
           "needsVerify": false
         },
         {
-          "label": "S2 · Bran flees north",
-          "text": "Theon loses Winterfell to Ramsay's men, who torch it and flay everyone; Bran and Rickon flee north with Osha and Hodor, presumed dead.",
+          "label": "S2 · Renly killed",
+          "text": "Melisandre births a shadow that murders Renly in his tent; most of his forces fold into Stannis, and Brienne swears her sword to Catelyn after being blamed.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Consolidates the Baratheon claim under Stannis and gives Catelyn her most important protector.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Blackwater",
+          "text": "Stannis assaults King's Landing; Tyrion destroys the fleet with wildfire and Tywin arrives with the Tyrells to save the city, then quietly begins to shove Tyrion aside.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Preserves the Lannister–Tyrell alliance that dominates the capital going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Robb breaks his oath",
+          "text": "Against Catelyn's warning, Robb secretly marries Talisa instead of the Frey daughter he was promised; north of the Wall, Sam watches an army of the dead march past.",
           "anchorEpisode": 10,
-          "whyLoadBearing": "Bran's journey toward the Three-Eyed Raven begins; Winterfell now belongs, offscreen, to House Bolton.",
+          "whyLoadBearing": "Two long fuses lit in one hour: Walder Frey's insult, and the confirmed White Walker army.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "Winterfell is a smoking ruin, Bran and Rickon are on the run, and Robb has broken his oath to Walder Frey. Stannis is defeated but not destroyed. Beyond the Wall, an army of the dead has been sighted for the first time.",
+        "text": "Robb has won every battle but has just insulted the ally who controls his only bridge home. Winterfell is in ashes, Bran and Rickon are presumed dead, and north of the Wall Sam has watched an army of the dead march past a hiding rock.",
         "questions": [
-          "Will Walder Frey forgive Robb's broken oath?",
-          "How will Bran and Rickon survive with no Stark stronghold left?",
-          "Can the Night's Watch warn the realm before the dead reach the Wall?"
+          "Can Robb repair his broken pact with Walder Frey?",
+          "What does Daenerys do now that she has a ship, wealth, and three growing dragons?",
+          "How does the Wall respond to an enemy no one there believes exists?"
         ]
       },
       "characters": [
         {
-          "name": "Jon Snow",
-          "line": "Night's Watch ranger posing as a wildling defector, being led to the King-Beyond-the-Wall Mance Rayder."
-        },
-        {
-          "name": "Daenerys Targaryen",
-          "line": "Leaving Qarth on a purchased ship with three young dragons after retrieving them from the House of the Undying."
-        },
-        {
           "name": "Robb Stark",
-          "line": "Winning the war on the field but has broken his Frey marriage pact by secretly wedding the healer Talisa."
+          "line": "King in the North, winning battles against the Lannisters but secretly married to Talisa against his mother's warning and the Frey pact."
         },
         {
           "name": "Tyrion Lannister",
-          "line": "Wounded and stripped of the Handship after saving King's Landing; his father Tywin has arrived and reclaimed the office."
+          "line": "Acting Hand of the King, saved the capital with wildfire at the Blackwater only to be shoved aside by his newly arrived father."
+        },
+        {
+          "name": "Tywin Lannister",
+          "line": "Lord of Casterly Rock, arrived with the Tyrells to break Stannis at the Blackwater and reclaim command of the realm."
         },
         {
           "name": "Stannis Baratheon",
-          "line": "Defeated at the Blackwater with most of his fleet destroyed, but still ridden by Melisandre and her fiery god."
+          "line": "Robert's brother and self-declared rightful king, his fleet destroyed at King's Landing and his army broken in retreat."
+        },
+        {
+          "name": "Catelyn Stark",
+          "line": "Robb's mother, bound by her promises to the Freys and now served by Brienne after Renly's murder."
+        },
+        {
+          "name": "Theon Greyjoy",
+          "line": "Balon's son, seized Winterfell from Bran but was betrayed by his own men, who torched the castle."
+        },
+        {
+          "name": "Balon Greyjoy",
+          "line": "Lord of the Iron Islands, declared himself king and sent his Ironborn to raid the North."
+        },
+        {
+          "name": "Renly Baratheon",
+          "line": "Robert's youngest brother who claimed the throne with Tyrell support, murdered in his tent by a shadow born of Melisandre."
         },
         {
           "name": "Arya Stark",
-          "line": "Escaped Harrenhal with Gendry and Hot Pie, carrying a coin from Jaqen that can take her to Braavos."
+          "line": "Fugitive from King's Landing, hidden as Tywin's cupbearer at Harrenhal before slipping away with Gendry and Hot Pie."
+        },
+        {
+          "name": "Jon Snow",
+          "line": "Ranger of the Night's Watch, captured by the wildling Ygritte and posing as a defector on Qhorin Halfhand's orders."
+        },
+        {
+          "name": "Bran Stark",
+          "line": "Crippled heir of Winterfell, driven from his home when Theon seized it and hiding as the castle burned."
         }
       ]
     },
     "3": {
       "beats": [
         {
-          "label": "S3 · The Unsullied",
-          "text": "In Astapor, Daenerys trades a dragon for the Unsullied army — then turns the dragon on the slaver, freeing every slave and leading them out.",
-          "anchorEpisode": 4,
-          "whyLoadBearing": "Daenerys gains the disciplined army she has been missing and commits to the freeing-slaves identity that defines the rest of her arc.",
-          "needsVerify": false
-        },
-        {
           "label": "S3 · Jaime loses his hand",
-          "text": "Jaime is captured with Brienne; his sword hand is severed by Locke, forcing him to depend on her and rethink who he is.",
+          "text": "Jaime and Brienne, captive together, form an unlikely bond after his sword hand is cut off; he later escorts her back to King's Landing changed.",
           "anchorEpisode": 3,
-          "whyLoadBearing": "The Kingslayer without a sword hand is a new character; his slow softening toward Brienne begins the arc that shapes his later choices.",
+          "whyLoadBearing": "Reforms the Kingslayer into someone with a conscience; Brienne now has an ally at court.",
           "needsVerify": false
         },
         {
-          "label": "S3 · Robb loses his army",
-          "text": "Robb executes his bannerman Karstark, loses the Karstark forces, and travels to the Twins to remake his broken marriage pact with Walder Frey.",
+          "label": "S3 · Robb loses his grip",
+          "text": "After executing Lord Karstark for murdering hostages, Robb loses half his army; desperate, he sends his uncle Edmure to marry a Frey daughter in his place.",
           "anchorEpisode": 5,
-          "whyLoadBearing": "Sets up the Red Wedding: Robb needs Frey desperately, and Frey has been publicly humiliated — the trap is being baited.",
+          "whyLoadBearing": "Forces Robb back to Walder Frey's gate with his hat in his hand.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Dany takes the Unsullied",
+          "text": "In Astapor Daenerys pretends to trade a dragon for the Unsullied army, then burns the slavers and frees the city; Yunkai's army defects to her next.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Gives her the disciplined foot army she'll need to actually threaten Westeros.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Jon breaks his oath",
+          "text": "Embedded with the Wildlings, Jon becomes Ygritte's lover but flees back to the Wall when he refuses to murder an innocent farmer.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Ends the infiltration and sends both sides charging at Castle Black.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Sansa married off",
+          "text": "To thwart a Tyrell plot to steal Sansa, Tywin forces her into a marriage with Tyrion and promises Cersei to Loras; none of the four wants any of it.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Chains Sansa to House Lannister and quietly ruins Tyrion's standing.",
           "needsVerify": false
         },
         {
           "label": "S3 · The Red Wedding",
-          "text": "At the Twins, Roose Bolton and Walder Frey slaughter Robb, his mother Catelyn, and his pregnant wife Talisa in front of their guests.",
+          "text": "At Edmure's wedding feast, Walder Frey and Roose Bolton butcher Robb, his mother Catelyn, his pregnant wife, and most of his army; the northern rebellion is broken.",
           "anchorEpisode": 9,
-          "whyLoadBearing": "The war of the North is over. The remaining Starks are children scattered across the map, and Roose Bolton now holds the North.",
+          "whyLoadBearing": "Wipes House Stark off the war map and hands the North to the Boltons.",
           "needsVerify": false
         },
         {
-          "label": "S3 · Sansa forced to marry Tyrion",
-          "text": "To seize the Northern claim, Tywin forces Tyrion to wed Sansa; her family is destroyed and she is now a Lannister bride in name.",
-          "anchorEpisode": 8,
-          "whyLoadBearing": "Sansa's marriage is a legal weapon the Lannisters can never quite use — and it locks her into Littlefinger's coming rescue.",
-          "needsVerify": false
-        },
-        {
-          "label": "S3 · Ramsay's plaything",
-          "text": "In a hidden cellar, Theon is tortured by a smiling stranger who is later revealed as Roose Bolton's cruel bastard son, Ramsay Snow.",
-          "anchorEpisode": 7,
-          "whyLoadBearing": "Ramsay is the villain of the next several seasons in the North; Theon's remaking into Reek is happening in real time.",
-          "needsVerify": false
-        },
-        {
-          "label": "S3 · Jon breaks cover",
-          "text": "Jon refuses to murder a farmer for the Wildlings and flees back to Castle Black; Ygritte fills him with arrows but can't bring herself to kill him.",
+          "label": "S3 · Theon becomes Reek",
+          "text": "Held in a hidden dungeon, Theon is tortured and castrated by his captor, revealed at last as Ramsay Snow, Roose Bolton's bastard son.",
           "anchorEpisode": 10,
-          "whyLoadBearing": "Jon returns to the Night's Watch just as the Wildling army is marching on the Wall, which sets up the whole defense next season.",
+          "whyLoadBearing": "Names the man who now runs the North's most dangerous room.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "The Starks are broken — Robb and Catelyn dead, Bran heading beyond the Wall for the Three-Eyed Raven, Sansa a Lannister bride, Arya adrift with the Hound. Ramsay has Theon in a cellar, and Daenerys marches on Yunkai with a slave army at her back.",
+        "text": "House Stark has been shattered. Robb and Catelyn are dead, Bran and Rickon are gone north, Sansa is married to a Lannister and Arya is on a road with the Hound. The Boltons rule the North for Tywin, and beyond the Wall the Wildlings are almost at Castle Black.",
         "questions": [
-          "Who avenges the Red Wedding when every remaining Stark is scattered?",
-          "Will Stannis answer the Night's Watch's call for aid against the Wildlings?",
-          "What does Ramsay want from a broken Theon?"
+          "Who is left to stand for the North against the Boltons?",
+          "Can Jon hold Castle Black against the Wildling army he just rode with?",
+          "Will Daenerys turn her freed armies toward Westeros, or stay to rule what she has taken?"
         ]
       },
       "characters": [
         {
-          "name": "Jon Snow",
-          "line": "Back at Castle Black wounded, cover blown, warning the Watch that a wildling army of a hundred thousand is coming for the Wall."
-        },
-        {
-          "name": "Daenerys Targaryen",
-          "line": "Marching with the Unsullied and thousands of freed slaves, hailed as 'Mhysa' — mother — outside the gates of Yunkai."
-        },
-        {
-          "name": "Tyrion Lannister",
-          "line": "Reluctantly married to Sansa, alienated from Tywin, still nominally on the small council but out of his father's favor."
-        },
-        {
-          "name": "Sansa Stark",
-          "line": "Trapped in King's Landing as Tyrion's wife, all her family either dead or missing after the Red Wedding."
-        },
-        {
-          "name": "Arya Stark",
-          "line": "On the road with the Hound, who arrived at the Twins as the massacre began and is now taking her toward Lysa in the Vale."
+          "name": "Robb Stark",
+          "line": "King in the North, murdered with his mother and pregnant wife at the Red Wedding after breaking his Frey marriage pact."
         },
         {
           "name": "Jaime Lannister",
-          "line": "Returned to King's Landing without a sword hand, changed by his captivity, reunited with Cersei but no longer the same man."
+          "line": "Freed from captivity and returned to King's Landing, changed by his ordeal with Brienne and by the loss of his sword hand."
+        },
+        {
+          "name": "Tyrion Lannister",
+          "line": "Forced by his father to marry Sansa to secure Winterfell for the Lannisters, a match neither of them wanted."
+        },
+        {
+          "name": "Sansa Stark",
+          "line": "Married against her will to Tyrion to thwart a Tyrell plot, still a captive in the capital."
+        },
+        {
+          "name": "Daenerys Targaryen",
+          "line": "Broke Astapor, took the Unsullied and Yunkai, and marches on Meereen as a growing liberator across Essos."
+        },
+        {
+          "name": "Cersei Lannister",
+          "line": "Betrothed by her father to Loras Tyrell against her will as part of Tywin's realm-securing marriage plot."
+        },
+        {
+          "name": "Theon Greyjoy",
+          "line": "Held in a hidden dungeon, tortured and castrated by Ramsay Snow, Roose Bolton's bastard son."
+        },
+        {
+          "name": "Edmure Tully",
+          "line": "Robb's uncle, forced into the Frey marriage in Robb's place — the wedding that became the Red Wedding."
+        },
+        {
+          "name": "Roose Bolton",
+          "line": "Robb's own bannerman, who conspired with Walder Frey to butcher the Starks at the Red Wedding and ended the northern rebellion."
+        },
+        {
+          "name": "Walder Frey",
+          "line": "Lord of the Twins, whose wedding feast became the massacre of Robb's army after Robb broke his marriage promise."
+        },
+        {
+          "name": "Jon Snow",
+          "line": "Embedded with the wildlings as Ygritte's lover, fled back to the Wall after refusing to kill an innocent farmer."
         }
       ]
     },
     "4": {
       "beats": [
         {
-          "label": "S4 · The Purple Wedding",
-          "text": "At his own wedding, Joffrey is poisoned by Olenna Tyrell and Littlefinger; Cersei blames Tyrion in her grief and has him arrested.",
+          "label": "S4 · Joffrey killed",
+          "text": "King Joffrey is murdered with poisoned wine at his own wedding; Cersei blames Tyrion and arrests him, while Baelish spirits Sansa out of the capital.",
           "anchorEpisode": 2,
-          "whyLoadBearing": "Removes the show's central villain, empties the Iron Throne for a pliable child, and puts Tyrion on trial for a crime he didn't commit.",
+          "whyLoadBearing": "Removes the king, jails Tyrion, and puts Sansa in play as Littlefinger's piece.",
           "needsVerify": false
         },
         {
-          "label": "S4 · Sansa vanishes",
-          "text": "Littlefinger smuggles Sansa out of King's Landing to Lysa in the Eyrie, then shoves Lysa through the Moon Door — Sansa lies to save him.",
-          "anchorEpisode": 7,
-          "whyLoadBearing": "Sansa is now Littlefinger's pupil, not his hostage; she has consciously chosen to protect a murderer and lie for him.",
+          "label": "S4 · Tyrion's trial",
+          "text": "Tyrion is tried for the murder; when his lover Shae testifies against him, he furiously demands trial by combat rather than confess to a crime he did not commit.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Sets up the duel that decides his life and turns him permanently against his family.",
           "needsVerify": false
         },
         {
-          "label": "S4 · Meereen and the choice to stay",
-          "text": "Daenerys captures Meereen, frees its slaves, and decides to stay and rule Slaver's Bay rather than sail on for Westeros.",
-          "anchorEpisode": 4,
-          "whyLoadBearing": "Explains why Daenerys is stuck in Essos for the next several seasons instead of taking her armies west when she plainly could.",
+          "label": "S4 · Oberyn falls",
+          "text": "Prince Oberyn Martell fights the Mountain as Tyrion's champion to avenge his sister's rape; he wins the fight but is killed after gloating, sentencing Tyrion to death.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Costs Tyrion his verdict and Dorne its favourite son, poisoning both alliances.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The Wall holds",
+          "text": "Mance Rayder's Wildlings assault Castle Black; Ygritte dies in Jon's arms, then Stannis and a freshly funded army arrive to crush the Wildlings and take Mance prisoner.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Keeps the Wall standing and repositions Stannis as the North's would-be liberator.",
           "needsVerify": false
         },
         {
           "label": "S4 · Bran reaches the Raven",
-          "text": "Beyond the Wall, Bran and his party reach the Three-Eyed Raven in his cave of visions after Jojen Reed is killed by wights.",
+          "text": "Beyond the Wall Bran and his companions find the Three-Eyed Raven encased in weirwood roots; Jojen Reed dies saving them from the undead servants of the Night King.",
           "anchorEpisode": 10,
-          "whyLoadBearing": "Bran's whole future — as seer, as chronicler — begins in this cave, and the White Walkers now know where he is.",
+          "whyLoadBearing": "Delivers Bran to the person who will remake him and pauses his story inside the cave.",
           "needsVerify": false
         },
         {
-          "label": "S4 · The Viper falls",
-          "text": "Oberyn Martell fights the Mountain in trial by combat for Tyrion but gloats too long over his prone opponent — the Mountain crushes his skull.",
-          "anchorEpisode": 8,
-          "whyLoadBearing": "Tyrion is condemned to die, Dorne is now blood-feuding with the Lannisters, and Oberyn's paramour Ellaria will not forget.",
+          "label": "S4 · Meereen and the chains",
+          "text": "Daenerys conquers Meereen and stays to rule rather than sail for Westeros; after her dragons burn a child, she chains two of them and Drogon flies free.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Delays her invasion by an entire arc and shows her losing control of her weapons.",
           "needsVerify": false
         },
         {
-          "label": "S4 · Tyrion kills Tywin",
-          "text": "Jaime and Varys break Tyrion out; he strangles his lover Shae in Tywin's bed and shoots his father dead on the privy with a crossbow.",
+          "label": "S4 · Kinslayer",
+          "text": "Jaime frees Tyrion; on his escape Tyrion strangles Shae in Tywin's bed and shoots his father with a crossbow before Varys smuggles him abroad. Arya sails for Braavos.",
           "anchorEpisode": 10,
-          "whyLoadBearing": "The Lannister patriarch is gone, Cersei loses her one restraint, and Tyrion is smuggled to Essos where he'll find Daenerys.",
-          "needsVerify": false
-        },
-        {
-          "label": "S4 · Arya sails east",
-          "text": "Arya leaves the Hound dying against a boulder and boards a ship for Braavos, using the coin Jaqen H'ghar gave her back at Harrenhal.",
-          "anchorEpisode": 10,
-          "whyLoadBearing": "Sets up Arya's whole Braavos storyline and severs her from Westeros for years.",
+          "whyLoadBearing": "Kills the Lannister patriarch and puts Tyrion on the road to Daenerys.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "Tywin is dead on his privy and Tyrion is a fugitive on a ship to Essos. Cersei has lost her father, her son Joffrey, and her control of the Sparrows-adjacent city. Sansa is now Littlefinger's willing conspirator; Daenerys is trying to rule a city that keeps trying to overthrow her; Bran has reached his cave.",
+        "text": "Tywin is dead and Tyrion is a fugitive across the sea. Cersei's grip on her weak new son-king Tommen is shaky, Sansa is hidden away in the Vale as Littlefinger's protégée, and beyond the Wall Bran is being fed to weirwood roots.",
         "questions": [
-          "Who holds Lannister power now that the patriarch is gone?",
-          "Can Daenerys rule a city where the slavers keep coming back?",
-          "What can Bran do with the Three-Eyed Raven's gifts?"
+          "Who actually runs the Lannisters now that Tywin is gone?",
+          "Can Daenerys hold Meereen without losing sight of the throne she came for?",
+          "What is Bran becoming inside the Three-Eyed Raven's cave?"
         ]
       },
       "characters": [
         {
-          "name": "Jon Snow",
-          "line": "Commanding respect at Castle Black after driving off the Wildling assault; Stannis has just arrived north with an army."
-        },
-        {
-          "name": "Daenerys Targaryen",
-          "line": "Queen of Meereen, trying to learn to rule after Astapor and Yunkai have quietly reverted to slavery behind her."
+          "name": "Tyrion Lannister",
+          "line": "Framed for Joffrey's murder, condemned in a trial, then freed by Jaime; he killed Shae and Tywin before Varys smuggled him out of Westeros."
         },
         {
           "name": "Cersei Lannister",
-          "line": "Queen Mother to the new boy king Tommen, grieving Joffrey, at war with the brother who just murdered their father."
+          "line": "Blamed Tyrion for Joffrey's poisoning and drove his conviction, only to lose her father to his crossbow before Tyrion escaped."
         },
         {
-          "name": "Tyrion Lannister",
-          "line": "A fugitive smuggled across the Narrow Sea in a crate by Varys, having killed his father and his lover."
+          "name": "Jaime Lannister",
+          "line": "Kingsguard commander in King's Landing, who freed his brother the night before his execution."
+        },
+        {
+          "name": "Joffrey Baratheon",
+          "line": "The king, poisoned with wine at his own wedding feast."
         },
         {
           "name": "Sansa Stark",
-          "line": "With Littlefinger in the Vale, now complicit in Lysa's murder and starting to play the game herself."
+          "line": "Spirited out of King's Landing by Baelish after Joffrey's murder and hidden in the Vale."
+        },
+        {
+          "name": "Petyr Baelish",
+          "line": "The schemer who smuggled Sansa away from the capital and installed himself as her protector in the Vale."
         },
         {
           "name": "Arya Stark",
-          "line": "Alone on a ship to Braavos with a Faceless Man's coin, having left the Hound to die."
+          "line": "After abandoning the Hound, sailed for Braavos to seek out the Faceless Men."
+        },
+        {
+          "name": "Jon Snow",
+          "line": "Defender of Castle Black, held the Wall against Mance Rayder's assault and watched Ygritte die in his arms."
+        },
+        {
+          "name": "Stannis Baratheon",
+          "line": "Reappeared at the Wall with an Iron Bank–funded army, crushing the wildlings and taking Mance prisoner."
+        },
+        {
+          "name": "Daenerys Targaryen",
+          "line": "Conquered Meereen and stayed to rule; after her dragons killed a child she chained two of them, and Drogon flew free."
+        },
+        {
+          "name": "Shae",
+          "line": "Tyrion's lover, who testified against him at his trial and was strangled by him in Tywin's bed."
         }
       ]
     },
     "5": {
       "beats": [
         {
-          "label": "S5 · Cersei arms the Sparrows",
-          "text": "Cersei arms the fanatical Sparrows to attack the Tyrells; the trap catches Margaery, then Loras, and eventually herself.",
+          "label": "S5 · The Sparrows rise",
+          "text": "Cersei arms the fanatical Sparrows to weaken the Tyrells; they arrest Loras and Margaery for lying about his homosexuality, then turn on Cersei herself.",
           "anchorEpisode": 4,
-          "whyLoadBearing": "Cersei creates the religious army that will imprison her and hold King's Landing hostage — the wildfire plot next season starts from here.",
+          "whyLoadBearing": "Creates the militant faction inside the capital that ends up dictating the throne room's politics.",
           "needsVerify": false
         },
         {
-          "label": "S5 · Sansa given to Ramsay",
-          "text": "Littlefinger delivers Sansa to Winterfell as Ramsay Bolton's bride, promising rescue; Ramsay abuses her nightly in front of a broken Theon.",
+          "label": "S5 · Sansa wed to Ramsay",
+          "text": "Littlefinger delivers Sansa to Winterfell as Ramsay Bolton's bride, promising Stannis will save her; Ramsay rapes her on their wedding night while Theon watches.",
           "anchorEpisode": 6,
-          "whyLoadBearing": "Puts a Stark back inside Winterfell, cracks Theon's Reek persona, and sets up her escape and the retaking of the North.",
+          "whyLoadBearing": "Puts Sansa inside the enemy's house and turns Winterfell into the next battleground.",
           "needsVerify": false
         },
         {
-          "label": "S5 · Tyrion joins Daenerys",
-          "text": "Tyrion is captured by the exiled Jorah and brought as a gift to Daenerys, who instead accepts him as an advisor in Meereen.",
-          "anchorEpisode": 7,
-          "whyLoadBearing": "The two protagonists of opposite halves of the show finally meet; Tyrion becomes the political brain of Daenerys's court.",
+          "label": "S5 · Jon opens the gates",
+          "text": "Elected Lord Commander, Jon breaks tradition by admitting the Wildlings; at Hardhome he watches the Night King raise thousands of the fallen as new soldiers.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Sets the Night's Watch mutiny in motion and proves the dead can multiply on sight.",
           "needsVerify": false
         },
         {
-          "label": "S5 · The pit and Drogon returns",
-          "text": "Daenerys weds Hizdahr for peace; at the reopened fighting pit the Sons of the Harpy ambush her, until Drogon returns and flies her off.",
+          "label": "S5 · Tyrion finds his queen",
+          "text": "Captured by the exiled Jorah, Tyrion is delivered to Meereen and becomes Daenerys's counsel; when the fighting pits reopen an ambush forces Drogon to fly her away.",
           "anchorEpisode": 9,
-          "whyLoadBearing": "Daenerys is now separated from her council in Meereen, alone on a dragon over Dothraki country — that separation drives all of next season's Essos plot.",
+          "whyLoadBearing": "Puts the show's two most important characters in the same room and then splits them.",
           "needsVerify": false
         },
         {
           "label": "S5 · Stannis burns Shireen",
-          "text": "To win his march on Winterfell, Stannis lets Melisandre burn his own daughter Shireen alive as a sacrifice — and loses everything anyway.",
+          "text": "Down to nothing, Stannis lets Melisandre burn his daughter Shireen alive for magical favour; the Boltons crush his army, half his men desert, and Brienne executes him.",
           "anchorEpisode": 9,
-          "whyLoadBearing": "The moral end of Stannis and, effectively, of his claim; sets up his execution by Brienne and Melisandre's flight to Castle Black.",
+          "whyLoadBearing": "Collapses the Stannis rebellion and hands the Bolton victory Sansa was waiting to be rescued from.",
           "needsVerify": false
         },
         {
-          "label": "S5 · Arya blinded",
-          "text": "Arya defies the Faceless Men by killing Meryn Trant in personal revenge; Jaqen strips her of her sight as punishment.",
+          "label": "S5 · Cersei's walk of shame",
+          "text": "Cersei confesses lesser sins to escape the Sparrows and is paraded naked through King's Landing; back at the Red Keep, Qyburn reveals her monstrous new bodyguard.",
           "anchorEpisode": 10,
-          "whyLoadBearing": "Arya's whole training is about becoming 'no one' by giving up personal vengeance — she has just failed, publicly, and now must earn her sight back.",
+          "whyLoadBearing": "Hardens Cersei into something else and gives her a champion no man can beat.",
           "needsVerify": false
         },
         {
-          "label": "S5 · For the Watch",
-          "text": "Jon lets the Wildlings through the Wall to save them from the dead; his own Night's Watch brothers stab him to death for it in the courtyard.",
+          "label": "S5 · Jon murdered",
+          "text": "Mutineers led by Alliser Thorne and Jon's own steward Olly stab Jon to death for admitting Wildlings past the Wall, leaving his body bleeding in the courtyard snow.",
           "anchorEpisode": 10,
-          "whyLoadBearing": "The season ends on Jon dead in the snow — the cliffhanger the whole audience walks back into next season.",
+          "whyLoadBearing": "Kills the character everything at the Wall depends on, right as the dead are proven real.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "Jon lies dead in the snow, killed by his own brothers. Sansa and Theon have just leapt from Winterfell's walls, running from Ramsay. Cersei has been marched naked through King's Landing by the Sparrows she armed. Stannis has been executed by Brienne. Daenerys is lost with Drogon among a Dothraki horde.",
+        "text": "Jon lies dead in the snow. Sansa and Theon have leapt from Winterfell into unknown drifts, Daenerys has been carried off by Drogon and captured by a Dothraki horde, and Cersei walks free with a reanimated Mountain at her back.",
         "questions": [
-          "Is Jon truly dead, and can Melisandre bring him back?",
-          "Will Sansa reach safety before Ramsay recaptures her?",
-          "Can Daenerys survive alone among the Dothraki?"
+          "Can Melisandre bring Jon back after what she just watched happen at Stannis's camp?",
+          "Will Daenerys survive her Dothraki captors?",
+          "What can stop Cersei now that she has the Mountain reborn?"
         ]
       },
       "characters": [
         {
-          "name": "Jon Snow",
-          "line": "Lord Commander of the Night's Watch, stabbed to death in the courtyard of Castle Black by Alliser Thorne and his own steward Olly."
-        },
-        {
-          "name": "Daenerys Targaryen",
-          "line": "Flown out of Meereen on Drogon and marooned in Dothraki country; her council rules a shaky Meereen without her."
-        },
-        {
           "name": "Cersei Lannister",
-          "line": "Freed by the Sparrows only after a naked walk of shame through the city, now back at the Red Keep with Qyburn's Mountain reanimated at her side."
+          "line": "Armed the Sparrows to strike at the Tyrells, was arrested herself, and confessed her way to a naked walk of shame through King's Landing."
         },
         {
-          "name": "Tyrion Lannister",
-          "line": "Governing Meereen in Daenerys's absence alongside Varys, Grey Worm, and Missandei."
+          "name": "Jon Snow",
+          "line": "Lord Commander of the Night's Watch, murdered in the courtyard by his own brothers for admitting the wildlings past the Wall."
+        },
+        {
+          "name": "Stannis Baratheon",
+          "line": "Burned his daughter Shireen for the Lord of Light, was crushed by the Boltons, and executed by Brienne outside Winterfell."
         },
         {
           "name": "Sansa Stark",
-          "line": "Escaped from Winterfell with Theon by jumping into the snow together, running from Ramsay and his hunting dogs."
+          "line": "Delivered by Littlefinger to Winterfell as Ramsay's bride and raped by him on their wedding night while Theon was made to watch."
         },
         {
-          "name": "Arya Stark",
-          "line": "Punished with blindness by the Faceless Men for stealing a face and killing Meryn Trant for personal revenge."
+          "name": "Ramsay Bolton",
+          "line": "Roose's legitimized son and Sansa's new husband, whose brutality at Winterfell defines her captivity."
+        },
+        {
+          "name": "Daenerys Targaryen",
+          "line": "Ruling Meereen with a reluctant Tyrion at her side, until an ambush at the pits forced Drogon to carry her away into the Dothraki Sea."
+        },
+        {
+          "name": "Tyrion Lannister",
+          "line": "Captured by Jorah, delivered to Meereen, and installed as Daenerys's most trusted counsel."
+        },
+        {
+          "name": "Melisandre",
+          "line": "Stannis's red priestess, who convinced him to burn Shireen alive for magical favour before his army was destroyed."
         }
       ]
     },
@@ -441,260 +533,273 @@
       "beats": [
         {
           "label": "S6 · Jon returns",
-          "text": "Melisandre resurrects Jon; he executes his murderers, walks away from the Night's Watch, and joins Sansa to retake Winterfell.",
+          "text": "Melisandre resurrects Jon; he executes his murderers, renounces the Night's Watch, and reunites with Sansa, who has fled Ramsay with Brienne's help.",
           "anchorEpisode": 2,
-          "whyLoadBearing": "The show's central hero is back and free of his old vow — everything Jon does for the rest of the series follows from this reset.",
+          "whyLoadBearing": "Puts Jon back on the board and joins him to Sansa for the Stark counter-attack.",
           "needsVerify": false
         },
         {
-          "label": "S6 · Ramsay takes the North",
-          "text": "Ramsay murders his father Roose to seize House Bolton; he lures Jon onto the field by torturing and killing Rickon Stark before his eyes.",
-          "anchorEpisode": 9,
-          "whyLoadBearing": "Ramsay becomes the sole Bolton and kills the youngest Stark boy — the confrontation this sets up is the entire back half of the season.",
+          "label": "S6 · Boltons rule the North",
+          "text": "Ramsay murders his father Roose, his stepmother, and their newborn son to secure Winterfell, then holds their captured brother Rickon to bait Jon into open battle.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Concentrates the North's evil in one person Jon has to march on.",
           "needsVerify": false
         },
         {
-          "label": "S6 · The Night King marks Bran",
-          "text": "The Night King finds Bran through his visions, kills the Three-Eyed Raven, and marks him — Bran barely escapes north bearing the mantle himself.",
+          "label": "S6 · Bran becomes the Raven",
+          "text": "Bran overreaches in the weirwood visions and is marked by the Night King; the resulting attack kills the Three-Eyed Raven and Hodor, and Bran inherits the sight.",
           "anchorEpisode": 5,
-          "whyLoadBearing": "Bran is now the Raven, and the Night King has a direct line to him; the war for the living gains an actual timeline.",
+          "whyLoadBearing": "Creates the character who can see the past and know what everyone else does not.",
           "needsVerify": false
         },
         {
-          "label": "S6 · Daenerys and the Dothraki",
-          "text": "Daenerys burns the Dothraki khals alive inside their sacred temple and walks out unburnt; the whole horde kneels and follows her.",
+          "label": "S6 · Dany takes the Dothraki",
+          "text": "A captive in Vaes Dothrak, Daenerys burns the assembled Khals alive in their temple; the horde kneels, and reunited with her council she prepares to sail west at last.",
           "anchorEpisode": 4,
-          "whyLoadBearing": "Solves the S5 cliffhanger and gives Daenerys the Dothraki cavalry that fills out her invasion force.",
+          "whyLoadBearing": "Gives her the mounted army she needed and finally points her at Westeros.",
           "needsVerify": false
         },
         {
-          "label": "S6 · Wildfire in the Sept",
-          "text": "Cersei destroys the Sept of Baelor with wildfire, killing the High Sparrow, the Tyrells, Lancel, and Kevan; her son Tommen leaps to his death in grief.",
-          "anchorEpisode": 10,
-          "whyLoadBearing": "Cersei has murdered every rival at once, lost her last child, and now has no reason to rule with restraint.",
-          "needsVerify": false
-        },
-        {
-          "label": "S6 · Battle of the Bastards",
-          "text": "Sansa's secret call brings the Vale's knights to the field at the last moment; Jon defeats Ramsay, who is fed alive to his own starving hounds.",
+          "label": "S6 · The Battle of the Bastards",
+          "text": "Ramsay lures Jon into a trap by killing Rickon before the fight begins; the Vale's cavalry saves the day, and Sansa feeds Ramsay to his own starved dogs.",
           "anchorEpisode": 9,
-          "whyLoadBearing": "Winterfell is Stark again and Jon is proclaimed King in the North — the setup for his collision with Daenerys and Cersei.",
+          "whyLoadBearing": "Restores House Stark to Winterfell and clears the North of its most immediate enemy.",
           "needsVerify": false
         },
         {
-          "label": "S6 · Three claimants, one throne",
-          "text": "Cersei crowns herself Queen of the Seven Kingdoms; Daenerys sails at last for Westeros with dragons, an armada, and Tyrion as her Hand.",
+          "label": "S6 · Cersei destroys the Sept",
+          "text": "Facing trial, Cersei blows up the Sept of Baelor with wildfire, killing the High Sparrow, the Tyrells, and Kevan Lannister; Tommen leaps to his death and Cersei crowns herself queen.",
           "anchorEpisode": 10,
-          "whyLoadBearing": "The three claimants — Cersei on the throne, Jon in the North, Daenerys on the sea — are now moving toward each other.",
+          "whyLoadBearing": "Wipes out every rival in the capital in one hour and makes Cersei the actual monarch.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Dany sails, Jon crowned",
+          "text": "Daenerys sets sail for Westeros with the Greyjoys, the Dothraki, the Unsullied, and her three dragons; in the North, Lyanna Mormont leads the lords in proclaiming Jon their king.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Two independent invasions of the same continent are now moving toward the same throne.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "Cersei rules from a hollowed-out King's Landing. Jon rules the North. Daenerys is finally crossing the Narrow Sea with dragons, an armada, and her allies. Bran carries the memory of everything, including a truth about Jon's parents he has not yet shared.",
+        "text": "Daenerys is finally sailing for Westeros with dragons and armies. Cersei sits on a throne built on the ashes of her enemies and her last surviving child, while Jon holds a united North and Bran sees history from beyond the Wall.",
         "questions": [
-          "What happens when Cersei, Jon, and Daenerys collide over the same throne?",
-          "When will Jon learn what Bran now knows about his true parents?",
-          "Can anyone slow the Night King before he reaches the Wall?"
+          "Whose Iron Throne will Daenerys find when she arrives?",
+          "Will Jon and Sansa stand together in the North or fall to Littlefinger's whispers?",
+          "What does Bran do with the truths only he can see?"
         ]
       },
       "characters": [
         {
           "name": "Jon Snow",
-          "line": "Resurrected, released from his Night's Watch vows, proclaimed King in the North after taking Winterfell back from the Boltons."
-        },
-        {
-          "name": "Daenerys Targaryen",
-          "line": "Sailing at last for Westeros with the Greyjoy fleet, the Dothraki, the Unsullied, three grown dragons, and Tyrion as her Hand."
-        },
-        {
-          "name": "Cersei Lannister",
-          "line": "Queen of the Seven Kingdoms in her own name, having burned every rival alive; her last living child killed himself in response."
+          "line": "Resurrected by Melisandre, renounced the Night's Watch, retook Winterfell, and was proclaimed King in the North by the northern lords."
         },
         {
           "name": "Sansa Stark",
-          "line": "Back at Winterfell alongside Jon but quietly resentful that the Northern lords crowned him and not her, and still in secret contact with Littlefinger."
+          "line": "Reunited with Jon, helped him win Winterfell back with the Vale's cavalry, and fed Ramsay to his own dogs."
         },
         {
-          "name": "Arya Stark",
-          "line": "Back in Westeros with the Faceless Men's face-changing gift, having begun her list of names in earnest."
+          "name": "Ramsay Bolton",
+          "line": "Murdered his own father and infant brother to hold Winterfell, lured Jon into battle by killing Rickon, and was eaten alive by his starved hounds."
+        },
+        {
+          "name": "Cersei Lannister",
+          "line": "Blew up the Sept of Baelor with wildfire to destroy her enemies, then crowned herself queen after Tommen's suicide."
+        },
+        {
+          "name": "Daenerys Targaryen",
+          "line": "Burned the Khals in Vaes Dothrak, took the horde, and set sail for Westeros with the Greyjoys, Dothraki, Unsullied, and her three dragons."
         },
         {
           "name": "Bran Stark",
-          "line": "The new Three-Eyed Raven, at the Wall with Meera; his visions have shown him that Jon is the son of Lyanna Stark and Rhaegar Targaryen."
+          "line": "The new Three-Eyed Raven after the old one died protecting him, his overreach in the visions costing Hodor's life."
+        },
+        {
+          "name": "Tyrion Lannister",
+          "line": "Hand of the Queen to Daenerys, sailing west at her side to reclaim Westeros."
+        },
+        {
+          "name": "Jaime Lannister",
+          "line": "Cersei's brother and commander of the Lannister armies, still by her side as she seized the throne."
+        },
+        {
+          "name": "Rickon Stark",
+          "line": "The youngest Stark boy, captured by Ramsay and shot down within Jon's sight to bait him into battle."
         }
       ]
     },
     "7": {
       "beats": [
         {
-          "label": "S7 · Daenerys lands, Arya strikes",
-          "text": "Daenerys lands at her ancestral Dragonstone with dragons and armies; in the Riverlands, Arya poisons the surviving lords of House Frey.",
+          "label": "S7 · The rivals gather",
+          "text": "Daenerys lands at Dragonstone with her armies and dragons; Cersei allies with Euron Greyjoy for a fleet, and Jon rides south to seek Daenerys's help against the dead.",
           "anchorEpisode": 1,
-          "whyLoadBearing": "Daenerys is finally in Westeros and Arya's list has begun collecting — the two long-delayed storylines both step onto the board this hour.",
+          "whyLoadBearing": "Places all three sides on the map for the season's collisions.",
           "needsVerify": false
         },
         {
-          "label": "S7 · Highgarden falls",
-          "text": "Jaime sacks Highgarden and takes its gold; a poisoned Olenna Tyrell confesses on her deathbed that she was the one who killed Joffrey.",
+          "label": "S7 · Cersei's opening moves",
+          "text": "Euron destroys Yara's fleet and captures Ellaria for Cersei to slowly poison; Jaime then sacks Highgarden, killing Olenna, who confesses she poisoned Joffrey.",
           "anchorEpisode": 3,
-          "whyLoadBearing": "The Tyrells are extinct, Cersei has funds again, and Jaime finally learns his son was killed by the ally he trusted — quietly loosening the Lannister twin bond.",
+          "whyLoadBearing": "Strips Daenerys of two Westerosi allies and refills Cersei's war chest.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Dragonfire on the road",
+          "text": "Daenerys leads Drogon and the Dothraki against the Lannister loot train, incinerating the army; Bronn barely saves a suicidal Jaime as the war's balance tilts.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "First real demonstration that dragons make Lannister armies useless, and starts Jaime's disillusionment.",
           "needsVerify": false
         },
         {
           "label": "S7 · Jon meets Daenerys",
-          "text": "Daenerys torches the Lannister army from Drogon; Jon travels to Dragonstone to ask her help against the dead but refuses to bend the knee to her.",
-          "anchorEpisode": 4,
-          "whyLoadBearing": "The two protagonists finally meet and immediately deadlock, which is the whole plot engine of the rest of the season.",
+          "text": "Jon refuses to bend the knee but mines dragonglass with Daenerys's blessing; they slowly grow close as Cersei plots behind an offered parley.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Puts the two claimants in one room, and pulls them into an alliance that becomes something else.",
           "needsVerify": false
         },
         {
-          "label": "S7 · Viserion dies, the wight is captured",
-          "text": "Jon leads a raid beyond the Wall to capture a wight; the Night King spears the dragon Viserion out of the sky before they can escape.",
+          "label": "S7 · Beyond the Wall",
+          "text": "A raid north of the Wall to capture a wight goes bad; the Night King kills the dragon Viserion, and Jon pledges the North to Daenerys as her lover.",
           "anchorEpisode": 6,
-          "whyLoadBearing": "The dead now have a weapon that can breach the Wall, and Daenerys has seen the threat with her own eyes.",
+          "whyLoadBearing": "Gives the enemy a dragon and welds Jon and Daenerys together as one force.",
           "needsVerify": false
         },
         {
-          "label": "S7 · The summit and Cersei's lie",
-          "text": "The captured wight is shown at a summit in King's Landing; Cersei feigns joining the alliance while secretly hiring the Golden Company from Essos.",
+          "label": "S7 · The false truce",
+          "text": "Cersei publicly agrees to a truce at a wight-viewing summit but privately tells Jaime she'll let Daenerys and Jon fight the dead alone; disgusted, Jaime abandons her and rides north.",
           "anchorEpisode": 7,
-          "whyLoadBearing": "Cersei's betrayal is the ticking bomb inside the coalition — Jaime rides north having finally left her over it.",
+          "whyLoadBearing": "Splits the Lannister twins for the first time and leaves the North without the promised southern reinforcements.",
           "needsVerify": false
         },
         {
-          "label": "S7 · Littlefinger's end",
-          "text": "At Winterfell, Arya and Sansa turn on Littlefinger together and execute him for his years of manipulation, from Jon Arryn's murder onward.",
+          "label": "S7 · Wall falls, truth rises",
+          "text": "Sam and Bran together realize Jon is Rhaegar Targaryen's legitimate son and the true heir to the Iron Throne, while the Night King rides the dead Viserion through the Wall.",
           "anchorEpisode": 7,
-          "whyLoadBearing": "Removes the show's other great manipulator and unites the Stark sisters, closing a thread that has been open since S1.",
-          "needsVerify": false
-        },
-        {
-          "label": "S7 · The Wall falls",
-          "text": "Sam and Bran realise Jon is the legitimate Targaryen heir; the Night King, riding the reanimated Viserion, blasts through the Wall at Eastwatch.",
-          "anchorEpisode": 7,
-          "whyLoadBearing": "Two of the show's largest secrets and structures — Jon's parentage and the Wall itself — resolve in the same hour, straight into the final season.",
+          "whyLoadBearing": "Two shattered walls at once: the ice one, and Daenerys's undisputed claim.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "The Wall has fallen and the Night King is marching south on an undead dragon. Jon and Daenerys are lovers who don't yet know they are aunt and nephew, and Cersei has secretly reneged on the alliance she publicly joined.",
+        "text": "The Wall has fallen. The Night King rides a dead dragon into the Seven Kingdoms, and the two Targaryen lovers marching to meet him do not yet know that Jon is the true heir and Daenerys's own nephew.",
         "questions": [
-          "Can the living stop the Night King now that he has a dragon?",
-          "What happens when Jon learns he is Aegon Targaryen and has a stronger claim than Daenerys?",
-          "When will Cersei's betrayal be revealed to the North?"
+          "Can the living stop the Night King now that he has a dragon of his own?",
+          "What happens when Jon learns who his parents really were, and Daenerys learns she is his aunt?",
+          "Will Cersei ever send the army she promised, or wait for both her rivals to die in the snow?"
         ]
       },
       "characters": [
         {
-          "name": "Jon Snow",
-          "line": "Has bent the knee to Daenerys and become her lover, sailing north with her, unaware he is her nephew Aegon Targaryen."
+          "name": "Daenerys Targaryen",
+          "line": "Landed at Dragonstone with her armies and dragons, took Jon Snow as her lover, and marched north to fight the dead after losing Viserion."
         },
         {
-          "name": "Daenerys Targaryen",
-          "line": "Down to two dragons after losing Viserion to the Night King, allied to Jon in bed and in war."
+          "name": "Jon Snow",
+          "line": "King in the North who bent the knee to Daenerys, mined dragonglass for the war against the dead, and — unknown to him — is Rhaegar Targaryen's legitimate heir to the Iron Throne."
         },
         {
           "name": "Cersei Lannister",
-          "line": "Sitting Queen who has publicly joined the alliance against the dead while secretly hiring the Golden Company to hold her throne while others die."
+          "line": "Queen on the Iron Throne, allied with Euron for a fleet, publicly agreed to a truce, then betrayed it and drove Jaime to abandon her."
         },
         {
           "name": "Jaime Lannister",
-          "line": "Riding north alone in the snow, having finally quit Cersei after learning she planned to betray Jon and Daenerys."
+          "line": "Commanded the sack of Highgarden and barely survived Daenerys's dragon on the loot train; rode north alone after Cersei broke the truce."
         },
         {
-          "name": "Sansa Stark",
-          "line": "Lady of Winterfell in Jon's absence, reconciled with Arya after the two of them executed Littlefinger together."
+          "name": "Tyrion Lannister",
+          "line": "Hand of the Queen, brokering the wight-viewing summit that Cersei used to deceive the alliance."
         },
         {
           "name": "Bran Stark",
-          "line": "The Three-Eyed Raven at Winterfell, holder of the truth about Jon's parents, which he and Sam have just pieced together."
+          "line": "The Three-Eyed Raven at Winterfell, whose visions with Sam confirmed Jon's true parentage."
+        },
+        {
+          "name": "The Night King",
+          "line": "Killed and reanimated the dragon Viserion, rode it through the Wall, and marched his army into the North."
+        },
+        {
+          "name": "Euron Greyjoy",
+          "line": "Cersei's new naval ally, who destroyed Yara's fleet and captured Ellaria as a prize for the queen."
         }
       ]
     },
     "8": {
       "beats": [
         {
-          "label": "S8 · Jon learns who he is",
-          "text": "Sam tells Jon he is Aegon Targaryen, Daenerys's nephew and the true heir; Jaime arrives at Winterfell to fight the dead beside them.",
+          "label": "S8 · Alliance at Winterfell",
+          "text": "Daenerys and Jon arrive at Winterfell to face the dead; the Northern lords resent bending to a foreign queen, and Sam tells Jon that he is the true Targaryen heir.",
           "anchorEpisode": 2,
-          "whyLoadBearing": "Jon knowing his parentage is the wedge between him and Daenerys that drives everything after the Long Night.",
+          "whyLoadBearing": "Puts Jon's birthright in the room just before Daenerys most needs him to have no claim.",
           "needsVerify": false
         },
         {
-          "label": "S8 · Arya kills the Night King",
-          "text": "At the Battle of Winterfell, Arya slips past the White Walkers and stabs the Night King with her Valyrian dagger — the dead crumble in a single stroke.",
+          "label": "S8 · The Long Night",
+          "text": "The Army of the Dead assaults Winterfell; the defenders are nearly overrun until Arya slips past the Night King and stabs him with her Valyrian dagger, shattering him and his army at once.",
           "anchorEpisode": 3,
-          "whyLoadBearing": "The White Walker threat that has structured the whole show ends in one hour, freeing the survivors — and Daenerys — to turn on each other.",
+          "whyLoadBearing": "Ends the show's northern threat and reroutes every remaining player toward King's Landing.",
           "needsVerify": false
         },
         {
-          "label": "S8 · Rhaegal and Missandei",
-          "text": "Cersei has Euron ambush Daenerys's fleet, killing Rhaegal from ship-mounted ballistas, and beheads Missandei on the walls in front of Grey Worm and Daenerys.",
+          "label": "S8 · Missandei killed",
+          "text": "Sailing south, Euron ambushes Daenerys's fleet and kills the dragon Rhaegal; Cersei then beheads the captured Missandei on the walls of King's Landing in view of the queen.",
           "anchorEpisode": 4,
-          "whyLoadBearing": "Two blows — a dragon and her closest friend — push Daenerys past the last restraint keeping her from burning the city.",
+          "whyLoadBearing": "Strips Daenerys of another dragon and her closest friend in the same hour, and pushes her past restraint.",
           "needsVerify": false
         },
         {
-          "label": "S8 · The bells",
-          "text": "Isolated by grief and betrayal, Daenerys burns King's Landing to the ground on Drogon even after the city rings the bells of surrender.",
+          "label": "S8 · Daenerys burns the city",
+          "text": "King's Landing surrenders, but a grief-mad Daenerys razes the city with Drogon anyway; Jaime dies in Cersei's arms as the Red Keep collapses on top of them.",
           "anchorEpisode": 5,
-          "whyLoadBearing": "The heel turn the show has been building for years, and the reason Jon will do what he does next.",
-          "needsVerify": false
-        },
-        {
-          "label": "S8 · The twins die together",
-          "text": "Jaime returns to Cersei; the two die together as the Red Keep collapses on them, while Arya barely escapes the burning streets.",
-          "anchorEpisode": 5,
-          "whyLoadBearing": "Closes the Lannister twins in the ruins of the throne they spent the whole series clawing for.",
+          "whyLoadBearing": "Turns Daenerys from liberator to tyrant and kills the Lannister twins in the rubble of their capital.",
           "needsVerify": false
         },
         {
           "label": "S8 · Jon kills Daenerys",
-          "text": "Jon confronts Daenerys in the throne room and stabs her mid-embrace; Drogon melts the Iron Throne in grief and carries her body away.",
+          "text": "Convinced she will burn the whole world next, Jon stabs Daenerys in the ruined throne room; Drogon melts the Iron Throne in grief and carries her body away east.",
           "anchorEpisode": 6,
-          "whyLoadBearing": "The throne everyone has died for is destroyed by the last dragon, and its most likely occupant lies dead in Jon's arms.",
+          "whyLoadBearing": "Ends the Targaryen restoration and the throne itself in a single scene.",
           "needsVerify": false
         },
         {
-          "label": "S8 · A chosen king",
-          "text": "The lords elect Bran as King of the Six Kingdoms; Sansa wins the North's independence, Arya sails west, and Jon is exiled to the Wall.",
+          "label": "S8 · A new order",
+          "text": "The remaining Westerosi lords crown Bran king of the Six Kingdoms with Sansa granted independence in the North; Jon is exiled to the Wall and Arya sails west into the unknown.",
           "anchorEpisode": 6,
-          "whyLoadBearing": "The Stark children end the series each ruling a piece of what remains, and Jon is sent back where he started.",
+          "whyLoadBearing": "Resolves every surviving Stark and settles who actually holds power at the end.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "The wars are over. The Iron Throne is slag, Daenerys is dead, and the realm has just tried something unprecedented — a king chosen rather than born. Bran rules from a rebuilt King's Landing; Sansa rules an independent North; Jon rides beyond the Wall with the Free Folk; Arya sails into uncharted waters.",
+        "text": "The war is over. Bran the Broken rules the Six Kingdoms from a ruined King's Landing with Tyrion as his Hand; Sansa reigns as Queen in an independent North; Jon lives with the Wildlings beyond the Wall; and Arya has sailed off the western edge of every known map.",
         "questions": [
-          "Will a chosen kingship hold, or will old succession disputes come back?",
-          "What lies west of Westeros, where Arya has now sailed off the maps?",
-          "Can Jon find peace beyond the Wall after killing the woman he loved?"
+          "What kind of king will Bran actually be?",
+          "Will Tyrion's elective monarchy hold once the current lords are gone?",
+          "What lies west of Westeros?"
         ]
       },
       "characters": [
         {
           "name": "Jon Snow",
-          "line": "Exiled to the Night's Watch for killing Daenerys, riding north of the Wall with Tormund and the Free Folk."
-        },
-        {
-          "name": "Bran Stark",
-          "line": "King of the Six Kingdoms — 'Bran the Broken' — chosen by the surviving lords of Westeros in a first-of-its-kind election."
-        },
-        {
-          "name": "Sansa Stark",
-          "line": "Crowned Queen in the North, having won an independent kingdom back for her house at Bran's coronation."
-        },
-        {
-          "name": "Arya Stark",
-          "line": "Sailing on a ship of her own commission, headed west of Westeros to explore lands no map has drawn."
-        },
-        {
-          "name": "Tyrion Lannister",
-          "line": "Hand of King Bran, running a small council of survivors — Brienne, Bronn, Davos, Sam — to rebuild the ruined capital."
+          "line": "The true Targaryen heir, who fought at Winterfell, stabbed Daenerys in the throne room to stop her, and was exiled back to the Wall."
         },
         {
           "name": "Daenerys Targaryen",
-          "line": "Dead, killed by Jon in the throne room after burning King's Landing; her body carried east by Drogon."
+          "line": "Razed King's Landing with Drogon after Cersei killed Missandei, and was killed in the ruined throne room by the lover she had turned into her assassin."
+        },
+        {
+          "name": "Bran Stark",
+          "line": "Chosen by the surviving lords to be king of the Six Kingdoms after Daenerys's death."
+        },
+        {
+          "name": "Arya Stark",
+          "line": "Slipped past the Night King at Winterfell and killed him with her Valyrian dagger, then sailed west into the unknown."
+        },
+        {
+          "name": "Sansa Stark",
+          "line": "Granted independence as Queen in the North when Bran was crowned in the south."
+        },
+        {
+          "name": "Cersei Lannister",
+          "line": "Beheaded Missandei on the walls of King's Landing, then died in Jaime's arms as the Red Keep collapsed around them."
         }
       ]
     }

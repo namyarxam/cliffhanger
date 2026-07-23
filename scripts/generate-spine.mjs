@@ -138,7 +138,15 @@ Rules:
 
 Also produce, as of the END of season ${season.season}:
 - cliffhanger: the unresolved situation the reader is walking back into. One or two sentences, plus 3 open questions. Pose questions; do not answer them.
-- characters: the 6 most important people, and who each one IS at this exact point — their position and their current situation. One sentence each. Not their whole arc; their current state.
+- characters: the people a returning viewer must be able to recognise, and who each one IS at that exact point — their position and their current situation. One sentence each. Not their whole arc; their current state.
+
+  Choose by the SAME test as the beats, not by screen time or billing. A person belongs here if failing to recognise them would make the next season confusing. That is a different question from "who is a main character": someone who dies at the end of this season may be essential, because the next season is about the hole they left, while a regular who drifts through without affecting anything is not.
+
+  Two rules that are not negotiable:
+  - Anyone who is central to two or more of your beats MUST have an entry. If they are load-bearing enough to carry the plot, they are load-bearing enough to introduce.
+  - Do not include anyone the beats never touch and whose absence would confuse nobody. Padding the list to a round number makes the recap longer and worse.
+
+  Use as many as the show needs and no more — typically 4 to 10. A tight two-hander genuinely has 4; a large ensemble in a season where power changes hands genuinely has 9. Order them by how badly the viewer needs them, most essential first. The set changes from season to season as people rise, die, or leave.
 
 Return ONLY valid JSON, no commentary, in exactly this shape:
 
@@ -232,7 +240,15 @@ A storyline that opens and closes inside season N may deserve a single beat, not
 
 For each season, also produce, as of the END of that season:
 - cliffhanger: the unresolved situation the reader is walking back into. One or two sentences, plus exactly 3 open questions. Pose questions; do not answer them.
-- characters: EXACTLY 6 people — the 6 most important as of the end of that season — and who each one IS at that exact point: their position and their current situation. One sentence each. Not their whole arc; their current state. Six, not five, not nine. The set may change from season to season as people rise, die, or leave.
+- characters: the people a returning viewer must be able to recognise, and who each one IS at that exact point — their position and their current situation. One sentence each. Not their whole arc; their current state.
+
+  Choose by the SAME test as the beats, not by screen time or billing. A person belongs here if failing to recognise them would make the next season confusing. That is a different question from "who is a main character": someone who dies at the end of this season may be essential, because the next season is about the hole they left, while a regular who drifts through without affecting anything is not.
+
+  Two rules that are not negotiable:
+  - Anyone who is central to two or more of your beats MUST have an entry. If they are load-bearing enough to carry the plot, they are load-bearing enough to introduce.
+  - Do not include anyone the beats never touch and whose absence would confuse nobody. Padding the list to a round number makes the recap longer and worse.
+
+  Use as many as the show needs and no more — typically 4 to 10. A tight two-hander genuinely has 4; a large ensemble in a season where power changes hands genuinely has 9. Order them by how badly the viewer needs them, most essential first. The set changes from season to season as people rise, die, or leave.
 
 Give every season the SAME care. Do not let later seasons come back thinner or shorter than earlier ones.
 

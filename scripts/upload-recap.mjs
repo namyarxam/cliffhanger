@@ -42,6 +42,21 @@ const DATA = resolve(ROOT, 'src/recap/data');
 // almost none; a character card is mostly face and needs just enough to keep
 // the caption legible; a portrait-less card falls back to key art and needs
 // considerably more because the copy lands on a busy scene.
+/**
+ * Most character cards shown before the story starts.
+ *
+ * The stored list is as long as coherence demands — Game of Thrones season 1
+ * genuinely needs twelve people to match its beats, and cutting that list at
+ * the source would put the omissions back. But twelve full-screen cards before
+ * a single plot beat is a slog, and the pacing that made Silo work was six.
+ *
+ * So the two concerns are separated: the data stays complete and checkable,
+ * and the recap shows the front of it. Safe to truncate because the repair
+ * pass orders by how badly the viewer needs each person, so what falls off the
+ * end is always the least load-bearing.
+ */
+const MAX_CHARACTER_CARDS = 8;
+
 const DIM = { title: 0.15, premise: 0.45, character: 0.28, characterNoPortrait: 0.55, beat: 0.18, cliffhanger: 0.3 };
 
 // ---------------------------------------------------------------- env
@@ -170,7 +185,7 @@ function composeShow(data, spine) {
       dim: DIM.beat,
     }));
 
-    const characters = (entry.characters ?? []).map(c => {
+    const characters = (entry.characters ?? []).slice(0, MAX_CHARACTER_CARDS).map(c => {
       const portrait = portraitOf(c.name);
       return {
         name: c.name,

@@ -22,6 +22,7 @@
  */
 
 import { readFile } from 'node:fs/promises';
+import { coherence } from './coherence.mjs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -117,6 +118,7 @@ function stats(spine) {
       chars: s.characters?.length ?? 0,
       questions: s.cliffhanger?.questions?.length ?? 0,
       verify: beats.filter(b => b.needsVerify).length,
+      ...coherence(s),
       // Ordering is enforced downstream in build.ts, but a spine that comes
       // back scrambled is a signal the generation itself was sloppy.
       ordered: beats.every(
@@ -148,6 +150,9 @@ function printStats(name, s) {
         `${String(r.max).padEnd(5)}${String(r.over).padEnd(6)}${String(r.chars).padEnd(6)}` +
         `${String(r.questions).padEnd(4)}${String(r.verify).padEnd(8)}${r.ordered ? '✓' : '✗'}`,
     );
+    if (r.uncarded?.length)
+      console.log(`             ⚠ in beats, no card: ${r.uncarded.slice(0, 4).map(u => `${u.name} (${u.beats})`).join(', ')}`);
+    if (r.unused?.length) console.log(`             ⚠ card but not in any beat: ${r.unused.join(', ')}`);
   }
   const t = s.total;
   console.log(
