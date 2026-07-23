@@ -14,7 +14,6 @@ import { useEffect, useMemo, useState } from 'react';
 import { View, Text, StyleSheet, Pressable, ScrollView, ActivityIndicator } from 'react-native';
 import { Image } from 'expo-image';
 import { LinearGradient } from 'expo-linear-gradient';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { useTheme } from '@/src/providers/ThemeProvider';
@@ -31,7 +30,6 @@ import type { SeasonRange } from '@/src/recap/types';
 export default function RecapScreen() {
   const theme = useTheme();
   const styles = useMemo(() => createStyles(theme), [theme]);
-  const insets = useSafeAreaInsets();
   const router = useRouter();
   const { session } = useAuth();
   const userId = session?.user?.id;
@@ -86,12 +84,7 @@ export default function RecapScreen() {
     router.push(`/recap/${slug}?from=${range.from}&through=${range.through}`);
 
   return (
-    <View style={[styles.screen, { paddingTop: insets.top }]}>
-      <View style={styles.header}>
-        <Text style={styles.title}>Recap</Text>
-        <Text style={styles.subtitle}>Pick up where you left off</Text>
-      </View>
-
+    <View style={styles.screen}>
       <ScrollView
         contentContainerStyle={styles.list}
         showsVerticalScrollIndicator={false}
@@ -277,25 +270,9 @@ const createStyles = (theme: Theme) =>
       flex: 1,
       backgroundColor: theme.bg,
     },
-    header: {
-      paddingHorizontal: 20,
-      paddingTop: 8,
-      paddingBottom: 16,
-    },
-    title: {
-      fontSize: 30,
-      fontFamily: 'DMSans_700Bold',
-      color: theme.textBright,
-      letterSpacing: -0.5,
-    },
-    subtitle: {
-      fontSize: 14,
-      fontFamily: 'DMSans_400Regular',
-      color: theme.textDim,
-      marginTop: 2,
-    },
     list: {
       paddingHorizontal: 16,
+      paddingTop: 14,
       paddingBottom: 32,
       gap: 14,
       // Guarantees the scroll view has at least a full screen of content box,
