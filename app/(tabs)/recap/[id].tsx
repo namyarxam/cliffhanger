@@ -32,6 +32,30 @@ import type { RecapFrame } from '@/src/recap/types';
 
 const KEN_BURNS_MS = 9000;
 
+/**
+ * Type size for the title card, chosen by length.
+ *
+ * At 54pt with 6pt of letterspacing each character occupies roughly 39pt, so
+ * a 390pt screen fits about eight before it overflows. "SEVERANCE" is nine and
+ * broke mid-word — SEVERANC / E — because a single word longer than the line
+ * has nowhere else to break. "HOUSE OF THE DRAGON" is nineteen.
+ *
+ * Letterspacing scales with the size rather than staying fixed, since it is a
+ * meaningful share of the width at these sizes, and iOS does not shrink it
+ * with adjustsFontSizeToFit — leaving it at 6 would let a shrunken title
+ * overflow anyway.
+ */
+function titleSizing(title: string) {
+  const n = title.length;
+  // 34 rather than 36 in the third band so the longest single WORD in the
+  // library, YELLOWJACKETS at thirteen characters, clears the line with room
+  // rather than landing exactly on it. Multi-word titles past that width wrap
+  // at a space, which is fine — only a word longer than the line has nowhere
+  // to break and splits itself.
+  const fontSize = n <= 8 ? 54 : n <= 12 ? 44 : n <= 16 ? 34 : 29;
+  return { fontSize, letterSpacing: fontSize * 0.11 };
+}
+
 export default function RecapStoryScreen() {
   const { id, from, through } = useLocalSearchParams<{
     id: string;
@@ -480,7 +504,17 @@ function FrameContent({ frame, accent }: { frame: RecapFrame; accent: string }) 
       return (
         <View>
           <Text style={styles.kicker}>{frame.kicker}</Text>
-          <Text style={styles.bigTitle}>{frame.title}</Text>
+          <Text
+            style={[styles.bigTitle, titleSizing(frame.title)]}
+            numberOfLines={2}
+            // Backstop for the cases the length table cannot know about — an
+            // unusually wide title at a given length, or a larger text-size
+            // accessibility setting.
+            adjustsFontSizeToFit
+            minimumFontScale={0.6}
+          >
+            {frame.title}
+          </Text>
           <View style={[styles.rule, { backgroundColor: accent }]} />
           <Text style={styles.meta}>{frame.meta}</Text>
         </View>
