@@ -676,6 +676,468 @@
       "episodeCount": 6,
       "profile": "https://image.tmdb.org/t/p/original/qct6kKiahTQ0KYlEYIOb56rs21n.jpg",
       "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/137/344868.jpg"
+    },
+    {
+      "name": "Arnd Klawitter",
+      "character": "H.G. Tannhaus",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/g6ezPH1rBJcoOx8zJgFgQiR8a3M.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Hans Diehl",
+      "character": "Old Unknown",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/u8V0bhqhQt7aFeL8MvaLB6OUSZ3.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/267/669255.jpg"
+    },
+    {
+      "name": "Jakob Diehl",
+      "character": "Adult Unknown",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/tx49ojPhegCyQ0AhYxEDi9vyjL5.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/267/669242.jpg"
+    },
+    {
+      "name": "Claude Heinrich",
+      "character": "Young Unknown",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/aspKceNwFn0sTrxto0NfIzJTShn.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/267/669254.jpg"
+    },
+    {
+      "name": "Barbara Nüsse",
+      "character": "Eva",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/zE76X5f1akHFVqkSLkXwE66BXvH.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/268/671464.jpg"
+    },
+    {
+      "name": "Angela Winkler",
+      "character": "Ines Kahnwald",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/vX2MuzSTmhxx1uWrplsUP6aXaV6.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/137/343972.jpg"
+    },
+    {
+      "name": "Luise Heyer",
+      "character": "Doris Tiedemann",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/ffPzIu201oXjT1R0RCW4loZaxQA.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/267/669246.jpg"
+    },
+    {
+      "name": "Tom Jahn",
+      "character": "Jürgen Obendorf",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/l1arXCBNHE8pJrtwDQS4qgENtMG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Winfried Glatzeder",
+      "character": "Old Ulrich Nielsen",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/7sPmlre57ZpfxOW0om79hTihasV.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nina Kronjäger",
+      "character": "Female Stranger",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/2TOiN86T3Nzhc1s1Uj8Z4cppZio.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/268/671463.jpg"
+    },
+    {
+      "name": "Wolfram Koch",
+      "character": "Adult Magnus Nielsen",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/lNlMI7Rkd258V6aUyM1wRClq7FS.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/267/669245.jpg"
+    },
+    {
+      "name": "Michael Mendl",
+      "character": "Bernd Doppler",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/3RrIh45zEvRtyq9kG6qyh52a2I8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Anne Lebinsky",
+      "character": "Jana Nielsen",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/yGslmqDTP5D7BNYb7AGGU5ULNrv.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/137/344870.jpg"
+    },
+    {
+      "name": "Felix Kramer",
+      "character": "Tronte Nielsen",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/miTBzoeUCmJZjtkhiXQAwRKlukl.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/268/671381.jpg"
+    },
+    {
+      "name": "Tara Fischer",
+      "character": "Girl in School",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/utJT7LCEHp9Ut6nCpL0mz3YLSGC.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Joshio Marlon",
+      "character": "Tronte Nielsen",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/lIbLTCCPudVhLVikm2FDy7vWQfG.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/268/671381.jpg"
+    },
+    {
+      "name": "Gwendolyn Göbel",
+      "character": "Claudia Tiedemann",
+      "episodeCount": 4,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/268/671380.jpg"
+    },
+    {
+      "name": "Anatole Taubman",
+      "character": "Bernd Doppler",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/A7B7POXpFyNg7C36fGxVc4EiR2W.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Stephanie Amarell",
+      "character": "Charlotte Doppler",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/2UZqu1u5e67mXIYbFlXqJgfKMkT.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/137/343962.jpg"
+    },
+    {
+      "name": "Anna König",
+      "character": "Pathologist Edda Heimann",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/r6rrVmgIb6txbAs7I0fTjem10sw.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lena Dörrie",
+      "character": "Nurse Clara Schrage",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/dlJRBL7t4q8B4xCVkZKQ3bX1TI4.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nils Brunkhorst",
+      "character": "Teacher",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/4k3X1AFh08zIYBEWI5vVz6fMkg1.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Roland Wolf",
+      "character": "Police Officer",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/oNW7mfIcPk8Pa8SbpYwaGKTAjLZ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Béla Gabor Lenz",
+      "character": "Aleksander Tiedemann",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/feN3WsvxkF3dHtqM5TN2lTyFytT.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/137/343974.jpg"
+    },
+    {
+      "name": "Sammy Scheuritzel",
+      "character": "Kilian Obendorf",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/7eqzZdJDDTgscO15hudHaN3JAuK.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/263/657891.jpg"
+    },
+    {
+      "name": "Rike Sindler",
+      "character": "Jana Nielsen",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/eXlJ83UT6jaDNg6efup1gkE8ZYS.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/137/344870.jpg"
+    },
+    {
+      "name": "Lena Urzendowsky",
+      "character": "Ines Kahnwald",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/emDznsmfi8tuBTUQPfgZU7wRhfp.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/137/343972.jpg"
+    },
+    {
+      "name": "Katharina Spiering",
+      "character": "Nurse in Psychiatric Hospital",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/vRrodwkIjJPihmv5syLfHs7vaac.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Roman Knižka",
+      "character": "Adult Bartosz Tiedemann",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/vwMaBe14YucOXmmk6eA4HrqyR1z.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Barbara Philipp",
+      "character": "Caseworker Selma Ahrens",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/oWU8aLNm9i4i0uAitcMblLnYvXE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Denis Schmidt",
+      "character": "Sebastian Krüger",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/iQkTXe3ypM9VkTV4ko5bPZmA0jD.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Anna Schönberg",
+      "character": "Nurse Donata",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/f0AAPyOi4pbtlPx5v0C44xc9Xth.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Franz Hartwig",
+      "character": "Martin Döhring",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/x1sAXpEBTRVFq0yc6xkWuX166Lc.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Thomas Arnold",
+      "character": "Farmer Hermann Albers",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/gfMW8lKfAcLpBvAJ6g53DqdOnmJ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Axel Werner",
+      "character": "Gustav Tannhaus",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/raxK0x4u95rj2HQqBJm34g0HhuZ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Henning Peker",
+      "character": "Pathologist Udo Meier",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/vAtZTarZEr2q4mkDdaNBsYpsZTA.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Andreas Schröders",
+      "character": "Powerplant Worker #1",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/7miAwQu7etFQj1UaguPd7trBQ5u.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tilla Kratochwil",
+      "character": "Erna",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/dlp5uFj0oP0rFd0HhSOzXVNdl4t.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jennipher Antoni",
+      "character": "Ulla Obendorf",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/tNI8Ahe19Hav9pd5IhjGwTA5rND.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Luc Feit",
+      "character": "Veterinarian Dr. Schaller",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/qLg5l56oNwziohvddF6ixivtSD6.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Hannes Wegener",
+      "character": "Dr. Reimann",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/nZzHmYSMXb4yVkv0NPfwC8mXSwh.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Eva Maria Jost",
+      "character": "Anne Reisch",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/57DeJu3lmS5xeES0ND8vhr3x8Ki.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Valentin Oppermann",
+      "character": "Mads Nielsen",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/c3JxlSMYETPI3g2MPjPoKhxAHqH.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Cornelia Lippert",
+      "character": "Woman Search Party",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/zd9RxMGE5eMitu2VQQyEZ4pZ2tw.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Christian Kuchenbuch",
+      "character": "Regina's Doctor",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/3dmJrlWLLIKjtu95NoRkknJbytN.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jörg Malchow",
+      "character": "Prison Guard",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/bSqehJur9dc1WSYZWQEJoFE2DKx.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Helena Pieske",
+      "character": "Agnes Nielsen",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/4gtseuKQBiyAwTrDisammllIK2B.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Hendrik Heutmann",
+      "character": "Farmer #1",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/qscFtLmF6B8duirx41QglMS3Ub1.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Oliver Bigalke",
+      "character": "Farmer #2",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/a7R3TWUu8qmV4GYEhTHDlaUXckk.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alexander Schubert",
+      "character": "Power Plant Security Guard",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/dWRleMp2Qqs7dpae56Tzpxv5yEJ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Ihnow",
+      "character": "Library Employee",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/GJgaRzbGabqDKknNFZe1I1QB9p.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Paula Kroh",
+      "character": "Library Student",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/ipVxnnAdaWj939NZEZWU4RjjMmn.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Werner Wölbern",
+      "character": "Gustav Tannhaus' Father",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/pBslKYTZ8xj0nfpxqXJVStzM4le.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Eric Bouwer",
+      "character": "Male Nurse Psychiatry",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/fWVHXAPGLF2MqA9kh5z7FU6RJEK.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nina Weniger",
+      "character": "School for the Deaf Teacher",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/di3Bv4ivSqFEqVZ6E2T7IEuGAo8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nino Böhlau",
+      "character": "Bully #1",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/8RN4mBvNqnYYf54CFiQT6RF54yh.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Leon Blaschke",
+      "character": "Student #2 Theater",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/gAXOFZ7iqt2QYTILySCiwvgcBCC.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mariella Aumann",
+      "character": "Young Helene Albers",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/4Km4jNmvmC960Gp4deswojk1yJd.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Holger Handtke",
+      "character": "Doctor",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/bMPv1yyBq20wwlFioft1uxglJXV.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Christian Kerepeszki",
+      "character": "Powerplant Worker #2",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/gdA26xPdeBxBKZdmYHL9UYVWirw.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Schenk",
+      "character": "Mayor of Winden",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/DEDREM4jrODgrE2wdT4CRhebqc.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Pablo Striebeck",
+      "character": "Peter Doppler",
+      "episodeCount": 1,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/137/344871.jpg"
+    },
+    {
+      "name": "Isaak Dentler",
+      "character": "Burglar",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/4DZp6TInnuUotdhzwlCaQnRaV1m.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lissy Pernthaler",
+      "character": "Silja Tiedemann",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/2dCBxDyrXLeLK7BIwr9ER7Ip9EX.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/203/507699.jpg"
+    },
+    {
+      "name": "Merlin Rose",
+      "character": "Marek Tannhaus",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/puU8cte0fzKBkOhLBToQuFw4b62.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Svenja Jung",
+      "character": "Sonja Tannhaus",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/j8x2jGFNf3gDDhIKqmrgAt4S6kH.jpg",
+      "inCharacter": null
     }
   ],
   "generatedAt": "2026-07-23T04:02:00.106Z"

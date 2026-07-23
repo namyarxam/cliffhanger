@@ -76,37 +76,97 @@ async function loadEnv() {
 
 // ---------------------------------------------------------------- matching
 
-const STRIP_TITLES =
-  /^(sheriff|deputy|judge|mayor|dr\.?|doctor|mr\.?|mrs\.?|ms\.?|captain|cap|chief|admiral|secretary|gunnery sergeant|sgt\.?|lt\.?|colonel|commander)\s+/i;
+// Rank, title and honorific words that are never the name. Stripped from both
+// sides before matching, since the spine writes "Rhaenyra Targaryen" while the
+// cast list says "Princess Rhaenyra Targaryen".
+const TITLES = new Set([
+  'sheriff', 'deputy', 'judge', 'mayor', 'dr', 'doctor', 'mr', 'mrs', 'ms',
+  'captain', 'cap', 'chief', 'admiral', 'secretary', 'sergeant', 'sgt', 'lt',
+  'colonel', 'commander', 'general', 'major', 'officer', 'detective', 'agent',
+  'professor', 'father', 'sister', 'brother', 'aunt', 'uncle',
+  // Fantasy and period titles — House of the Dragon and Game of Thrones are
+  // almost entirely titles.
+  'king', 'queen', 'prince', 'princess', 'lord', 'lady', 'ser', 'sir', 'maester',
+  'grand', 'septa', 'septon', 'khal', 'khaleesi', 'archmaester', 'the',
+]);
 
 const tokens = s =>
   s
-    .replace(STRIP_TITLES, '')
     .toLowerCase()
+    // Quoted nicknames are names too — Corlys 'The Sea Snake' Velaryon.
     .split(/[^a-z]+/)
-    .filter(t => t.length > 2);
+    .filter(t => t.length > 2 && !TITLES.has(t));
 
 function composer(data) {
   const keyArt = data.backdrop ?? data.backdrops?.[0] ?? data.poster;
 
+  // How many cast members each name token belongs to. A token shared by
+  // several people carries no identifying information.
+  const tokenOwners = new Map();
+  for (const c of data.cast) {
+    if (!c.character) continue;
+    for (const t of new Set(tokens(c.character))) {
+      tokenOwners.set(t, (tokenOwners.get(t) ?? 0) + 1);
+    }
+  }
+
   /**
-   * Spine names and cast names do not share a vocabulary — the spine writes
-   * "Sims", the cast has "Robert Sims". Exact matching drops roughly half the
-   * cards, so fall back to a shared significant token, which is almost always
-   * the surname and specific enough not to collide inside one show's cast.
+   * Match a spine character name to a cast row.
+   *
+   * The vocabularies differ — the spine writes "Rhaenyra Targaryen", the cast
+   * has "Princess Rhaenyra Targaryen" — so this cannot be an exact comparison.
+   * But the previous version fell back to "share ANY token and take the first
+   * hit", which on House of the Dragon matched Rhaenyra to the first Targaryen
+   * in the list and put Matt Smith's face and credit on her card. Every show
+   * with a dynasty had the same hole: one Stark absorbing all the Starks.
+   *
+   * A surname is not an identifier when twelve people share it, so candidates
+   * are scored by token RARITY: a shared token counts for 1/(number of cast
+   * members carrying it). Matching only on "Stark" among twelve Starks scores
+   * 0.083 and is refused.
+   *
+   * Rarity alone is not enough either, because a deep cast list carries
+   * variants of the same person — "Lord Eddard 'Ned' Stark", "Young Ned Stark"
+   * and "Young Ned" are three separate credits, which dilutes "ned" to a third
+   * and drags the real Ned below any fixed threshold. So the ranking also
+   * weighs how much of the show each candidate is actually in: Sean Bean has
+   * ten episodes, the flashback boys have one apiece. Log-scaled, so presence
+   * breaks ties between plausible candidates without letting a series regular
+   * win on volume alone against a genuine name match.
+   *
+   * Where nothing clears the bar the answer is nothing at all. A card with no
+   * portrait falls back to key art and reads as unremarkable; a card with the
+   * wrong face and the wrong actor's name is a straightforward lie — which is
+   * what shipped for Rhaenyra Targaryen, credited to Matt Smith.
    */
   const castRowFor = name => {
     const want = tokens(name);
     if (!want.length) return null;
+
     const exact = data.cast.find(c => c.character && tokens(c.character).join(' ') === want.join(' '));
     if (exact) return exact;
-    return (
-      data.cast.find(c => {
-        if (!c.character) return false;
-        const have = tokens(c.character);
-        return want.some(w => have.includes(w));
-      }) ?? null
-    );
+
+    let best = null;
+    let bestScore = 0;
+    for (const c of data.cast) {
+      if (!c.character) continue;
+      const have = new Set(tokens(c.character));
+      const shared = want.filter(w => have.has(w));
+      if (!shared.length) continue;
+      // Rarer tokens are worth more: a unique given name outweighs a surname
+      // half the cast carries. A match resting only on "Stark" among eight
+      // Starks scores 0.125 and is refused; "Rhaenyra" scores 1.
+      const rarity = shared.reduce((a, w) => a + 1 / (tokenOwners.get(w) ?? 1), 0);
+      // Floor on rarity alone: a token carried by more than five cast members
+      // identifies nobody, however many episodes the candidate appears in.
+      if (rarity < 0.2) continue;
+      const score = rarity * Math.log1p(c.episodeCount ?? 0);
+      if (score > bestScore) {
+        best = c;
+        bestScore = score;
+      }
+    }
+    return best;
   };
 
   /**

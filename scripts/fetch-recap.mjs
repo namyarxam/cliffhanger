@@ -448,7 +448,7 @@ async function build({ showName, slug, through: throughArg }) {
   // episode count — someone pivotal who dies in the premiere, or who only
   // appears in one season, would be missed by a top-20 cut.
   const cast = (credits.cast ?? [])
-    .slice(0, 45)
+    .slice(0, 250)
     .map(c => {
       const character = c.roles?.[0]?.character ?? null;
       const inCharacter = character ? characterImages.get(character.toLowerCase()) ?? null : null;
