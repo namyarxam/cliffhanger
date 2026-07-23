@@ -1,0 +1,808 @@
+{
+  "slug": "yellowjackets",
+  "tmdbId": 117488,
+  "tvmazeId": 36672,
+  "matchedBy": "imdb_id",
+  "title": "Yellowjackets",
+  "overview": "This equal parts survival epic, psychological horror story and coming-of-age drama tells the saga of a team of wildly talented high school girls soccer players who become the (un)lucky survivors of a plane crash deep in the remote northern wilderness. The series chronicles their descent from a complicated but thriving team to savage clans, while also tracking the lives they’ve attempted to piece back together nearly 25 years later.",
+  "firstAirDate": "2021-11-14",
+  "network": "Showtime",
+  "poster": "https://image.tmdb.org/t/p/w780/xRnGrn7Z7SC0KIBodocoU1QgDZF.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/original/ibFWJDWS8cTO6s2vZVd2uKDm8p.jpg",
+  "backdrops": [
+    "https://image.tmdb.org/t/p/original/ibFWJDWS8cTO6s2vZVd2uKDm8p.jpg",
+    "https://image.tmdb.org/t/p/original/3FVvYhS8lmS9UN3UxBc1Kj8OxLb.jpg",
+    "https://image.tmdb.org/t/p/original/ihzMEmq7Yc6ZfgEhagdDKnhGBgX.jpg",
+    "https://image.tmdb.org/t/p/original/t9gfV0eM9nWqJ4vMey4CSYFiqmZ.jpg",
+    "https://image.tmdb.org/t/p/original/oD4caWrYVrC1KLyLBuyiNZJVSl0.jpg",
+    "https://image.tmdb.org/t/p/original/d9oBLmfm9KAAB5PzqIBmcFDQmpy.jpg",
+    "https://image.tmdb.org/t/p/original/zD9KrQ2DiMfM5lCQMzcJo6dK0fz.jpg",
+    "https://image.tmdb.org/t/p/original/jFgAeJscuNehOscjOwJdNTiWpYi.jpg",
+    "https://image.tmdb.org/t/p/original/bnzdMWL9IgrdQjwvH4zw5D33dTD.jpg",
+    "https://image.tmdb.org/t/p/original/40qEZd3BOVcPUHDGhVnNnnjD6IP.jpg",
+    "https://image.tmdb.org/t/p/original/2QCcU9TXAcUC90A78B7Jhf2ig92.jpg",
+    "https://image.tmdb.org/t/p/original/3hhr6nAg7HB6RCGQItxVkK960nC.jpg"
+  ],
+  "throughSeason": 4,
+  "totalSeasons": 4,
+  "showType": "Scripted",
+  "genres": [
+    "Drama",
+    "Horror",
+    "Supernatural"
+  ],
+  "status": "Running",
+  "runtime": 58,
+  "language": "English",
+  "seasons": [
+    {
+      "season": 1,
+      "name": "Season 1",
+      "airDate": "2021-11-14",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Pilot",
+          "overview": "On the eve of a fateful flight, a championship high school girls soccer squad celebrates being a team by betraying one another. 25 years later, the survivors do their best imitations of well-adjusted people.",
+          "plot": "A young woman, dressed only in a nightgown, runs in fear through a snow-covered forest. She is killed by falling into a trap, and her body is dragged away by people wearing Yellowjackets t-shirts, animal furs, and masks. She is then slaughtered. ---- In 1996, a New Jersey girls' high-school soccer team, known as the Yellowjackets, achieves a place in a national tournament in Seattle. During practice, Taissa tackles Allie, a freshman player she considers a liability, breaking Allie's leg and ruling her out of the tournament. At a party, Shauna tries to start a fight with Taissa and several of their teammates become involved. Team captain Jackie, Shauna's best friend, intervenes. Shauna secretly has sex with Jackie's boyfriend Jeff. On the day of the trip, the team boards a private plane to Nationals that includes Coach Martinez, Assistant Coach Ben Scott, equipment manager Misty Quigley, and Martinez' two sons, Travis and Javi. During a storm that forces a reroute over Canada, the plane crashes, leaving the survivors stranded in the wilderness. ---- In 2021, Shauna and Jeff are married with a teenage daughter. Jessica Roberts, a fake journalist, offers Shauna a seven-figure book deal if she will reveal the details of what happened in the wilderness. Taissa poses with her wife Simone and their son Sammy for photographs as she launches her campaign for state senator. Misty is employed as a geriatric nurse. Natalie has completed rehab and returns to New Jersey to \"reconnect with some old friends\".",
+          "airDate": "2021-11-14",
+          "still": "https://image.tmdb.org/t/p/original/auqCUaYGDXiRMZbYdDn5gPHLiAy.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/auqCUaYGDXiRMZbYdDn5gPHLiAy.jpg",
+            "https://image.tmdb.org/t/p/original/jPoeVGPs7NzM1kJKr9QdARelSr5.jpg",
+            "https://image.tmdb.org/t/p/original/qsj7i2xyzefZ5EXnEIAsbTR2lEJ.jpg",
+            "https://image.tmdb.org/t/p/original/l08o2K6Lgh3JKz076BtVewVqUDr.jpg",
+            "https://image.tmdb.org/t/p/original/iTQxKwwiZLjAY97ulVw6uVTAGgX.jpg",
+            "https://image.tmdb.org/t/p/original/42UdlbiioJ6hdvVisIabyrvJSzJ.jpg",
+            "https://image.tmdb.org/t/p/original/s29FqThmBjnxHNOFdzY58dAPLLd.jpg",
+            "https://image.tmdb.org/t/p/original/tt110PiOrBFvrv2u9XKjeNbl9oF.jpg",
+            "https://image.tmdb.org/t/p/original/fdaOYaIm2QrkeN2hawtzGvPgzli.jpg",
+            "https://image.tmdb.org/t/p/original/hqMuJORRF584xzfiXyJWNOhkBH1.jpg",
+            "https://image.tmdb.org/t/p/original/zEmqPInkrKTSQLJMWymMi8ichGb.jpg",
+            "https://image.tmdb.org/t/p/original/jK4KHynlRWoCwEupwztiAJpsWO2.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "F Sharp",
+          "overview": "As the teens get their bearings among the wreckage, Misty finds hell on earth quite becoming. In the present: revenge, sex homework and the policeman formerly known as Goth.",
+          "plot": "Misty uses her advanced knowledge of first aid to care for the injured after the plane crash. She saves the life of Ben Scott, the assistant coach, by amputating and cauterizing his mangled leg. Travis discovers his father's dead body impaled on a tree branch. Revelling in the attention and praise her survival skills bring her, Misty destroys the plane's emergency locator beacon after discovering it by chance. ---- In 2021, Shauna and Jeff's marriage therapist advises them to rekindle their relationship by exploring sexual fantasies. Shauna meets an intriguing stranger named Adam after she rear-ends his car, and they exchange information. After Shauna and Jeff have sex, she sees a text message on his phone from a woman who is arranging to meet him the following day when he says he will be working late. Natalie holds Misty at gunpoint in an attempt to find out who sent her a postcard with an ominous symbol from their past. Misty states that she also received the postcard and shows Natalie that she has tracked down Travis with amateur detective work. Misty and Natalie embark on a road trip to find Travis after Misty covertly removes some wiring from Natalie's car. Taissa is concerned about her son Sammy's disturbing drawings that are similar to visions she had in her childhood.",
+          "airDate": "2021-11-21",
+          "still": "https://image.tmdb.org/t/p/original/wlsLlt84Jedh5nVsEjtV8KTMCzC.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/wlsLlt84Jedh5nVsEjtV8KTMCzC.jpg",
+            "https://image.tmdb.org/t/p/original/hI6Yb8bvD3hz9aXuEEU2VjuTpgo.jpg",
+            "https://image.tmdb.org/t/p/original/mg2ksyxYbSpOGrOcVr1MqQSfttI.jpg",
+            "https://image.tmdb.org/t/p/original/oYAdTM9ZsaK0iqDzUl468sJqWC.jpg",
+            "https://image.tmdb.org/t/p/original/EWS4KRQhtNg0Xb0sP0dhA5UAYW.jpg",
+            "https://image.tmdb.org/t/p/original/vYC3tweLHAHvhZZHgv4dU52Q2uA.jpg",
+            "https://image.tmdb.org/t/p/original/1sQa19brWGrtMTmXo7QvxfSVeoV.jpg",
+            "https://image.tmdb.org/t/p/original/3Il2rOoARQ6Jwyo9vfVMNBClmqO.jpg",
+            "https://image.tmdb.org/t/p/original/epIeuiCjNzzam8xSlrcXZv9XnB0.jpg",
+            "https://image.tmdb.org/t/p/original/5r9tH4NLPNpXHHYZfuCdnBc0su2.jpg",
+            "https://image.tmdb.org/t/p/original/sDP9P8L2ZXNWdCAjr0mCYAOADYw.jpg",
+            "https://image.tmdb.org/t/p/original/kSMWCtwen8gJ8UAKxwyLxEiy2Yx.jpg",
+            "https://image.tmdb.org/t/p/original/26uV0RnF0Ef1EdciKP5axClKjtK.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "The Dollhouse",
+          "overview": "The Yellowjackets debate the merits of probably dying while staying put or probably dying while looking for shelter. Taissa navigates a dirty attack ad and the other C-word. Shauna sees about a boy.",
+          "plot": "Three days following the plane crash, the survivors bury the deceased crash victims. Taissa convinces the group to hike towards a nearby lake. Tensions rise as the group question whether they will be rescued and what their strategy is for survival. The group discovers an abandoned cabin. Lottie feels that something is wrong with the cabin and later discovers its former occupant dead in the attic. ---- In 2021, Taissa's political opponent Phil Bathurst airs a campaign ad insinuating that she is a cannibal. Taissa's concerns for Sammy grow after he purposefully hurts a child at a playground. Shauna follows her husband to a hotel, where she runs into Adam and spots Jeff with another woman. Shauna and Adam go to a hotel room together. Meanwhile, Misty and Natalie go to Travis's home but are arrested for breaking and entering. After they are released, they visit the ranch where he works and find he has hung himself. His death appears to be a suicide but Natalie believes someone has murdered him.",
+          "airDate": "2021-11-28",
+          "still": "https://image.tmdb.org/t/p/original/cifHyYw3rkFEjv64n4CZwfYlFLL.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/cifHyYw3rkFEjv64n4CZwfYlFLL.jpg",
+            "https://image.tmdb.org/t/p/original/Aac6hE1jZlzUoQiPTuT0rYM4sID.jpg",
+            "https://image.tmdb.org/t/p/original/xzyCpMydbg0bTEUN8F0SSrAebMF.jpg",
+            "https://image.tmdb.org/t/p/original/RqCMQxFUSLzKWEWwtawawLlUBh.jpg",
+            "https://image.tmdb.org/t/p/original/2Ruv8p4TBUhCCzlYTdKhN6o2QKz.jpg",
+            "https://image.tmdb.org/t/p/original/1vj2ulMtNVqKNJZsEqf5PJUNrdq.jpg",
+            "https://image.tmdb.org/t/p/original/z7l4K8oKbIgM7LulHwrOsscnUs4.jpg",
+            "https://image.tmdb.org/t/p/original/9wShSgualgpU6aTQmI3VvqEwh0H.jpg",
+            "https://image.tmdb.org/t/p/original/cLzMCN2D9LFLPtxtwr07vHFwDNc.jpg",
+            "https://image.tmdb.org/t/p/original/yvbsxxgM0JQk6cXzGj3xgHjLJny.jpg",
+            "https://image.tmdb.org/t/p/original/fpu6HpFPnAdSY8PKCi5tTDfbSNu.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Bear Down",
+          "overview": "The girls play with guns to determine who is the most responsible. Natalie untangles a lifetime of piecing together broken men. Taissa greets the rich.",
+          "plot": "The group find a rifle with a plentiful supply of ammunition inside the cabin. Natalie and Travis prove to be best suited to handle the firearm. They bond as they hunt a deer and recover a keepsake ring from the buried body of Travis' father. In a flashback, it is revealed that Natalie's abusive father died in a gun discharge accident during an argument about her best friend Kevyn spending time in her bedroom. The rest of the group finds a functional propeller aircraft. Shauna bonds with Travis's younger brother Javi. ---- In 2021, Natalie runs into an adult Kevyn, now a police officer, and uses his affection for her to entice him to dig into Travis's murder. Misty texts Kevyn, posing as Nat. Taissa rejects an endorsement from a powerful potential donor when she tries to probe into the plane crash. Shauna and Adam begin an intimate affair, enacting Shauna's missed teen fantasies, while Adam is shown to probe for personal information on her. Misty threatens Jessica while following Nat and Kevyn on a date. Misty calls Shauna to tell her that Travis is dead.",
+          "airDate": "2021-12-05",
+          "still": "https://image.tmdb.org/t/p/original/sPpbLnTELJqXuoOvzk1vYjO48ii.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/sPpbLnTELJqXuoOvzk1vYjO48ii.jpg",
+            "https://image.tmdb.org/t/p/original/opi27o3lfMq6psv7qa9m842SvKj.jpg",
+            "https://image.tmdb.org/t/p/original/oyCvvZVdhyq05smdBzplmyFOsfR.jpg",
+            "https://image.tmdb.org/t/p/original/s5dNNup85VvVJO3BfhEzr88qit7.jpg",
+            "https://image.tmdb.org/t/p/original/RPKJMBlgYAscG3uiTunAs4kmug.jpg",
+            "https://image.tmdb.org/t/p/original/syHxegRTav7y3g5lZ5aUlozzfcy.jpg",
+            "https://image.tmdb.org/t/p/original/obAXfVIBVjlMOXyo9cyxii2tXgl.jpg",
+            "https://image.tmdb.org/t/p/original/5wYjhu6k6SluWybU4VOO4v4YRPX.jpg",
+            "https://image.tmdb.org/t/p/original/yq8d3Rd8yUpNOXZIGS9gmLgfbmC.jpg",
+            "https://image.tmdb.org/t/p/original/7pxGog06YHJd2Zf8hx4WjHKEhwW.jpg",
+            "https://image.tmdb.org/t/p/original/czgGr5wLns8VmAO7cj62CdBZGMv.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Blood Hive",
+          "overview": "Out in the wilderness, the girls ride the crimson wave and plan a dark arts slumber party. Natalie and Misty tame a stallion. On Halloween night, Shauna parties like it’s 1996.",
+          "plot": "Lottie has run out of Loxapine, the medication she takes to manage the symptoms of schizophrenia. Relationships form between Taissa and Van as well as Natalie and Travis. The group holds a seance in the attic where Lottie appears to become possessed. Ben is poisoned by Misty but does not die. In order to get her to leave him alone, Ben deceives Misty by saying he has feelings for her too. After Taissa suspects Shauna's pregnancy, Shauna confesses. ---- In 2021, Taissa finds the word \"spill\" painted on the front door of her home. She confronts Sammy after discovering a container of paint in his room. Sammy denies painting the word and blames \"the lady in the tree\". Later, with her political opponent attacks increasing, Taissa contemplates dropping out of the Senate race but decides not to. Shauna attends a Halloween party where she runs into her teenage daughter Callie. The following day, what initially seems like Callie bonding with Shauna ends in Callie unsuccessfully threatening to tell Jeff about Adam. Natalie and Misty gain access to Kevyn's files, and they find the same ominous symbol at the scene of Travis' murder. Natalie calls Taissa to her motel room, telling her what she has learned. Nat calls Shauna to tell her but learn that Misty already informed her. Meanwhile, Misty watches them through a hidden camera.",
+          "airDate": "2021-12-12",
+          "still": "https://image.tmdb.org/t/p/original/4DacGSEd2yzLpu1wWk9PvMiNAwX.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/4DacGSEd2yzLpu1wWk9PvMiNAwX.jpg",
+            "https://image.tmdb.org/t/p/original/r1hOH9CWeJ5akXUVdJRHf2b4E4d.jpg",
+            "https://image.tmdb.org/t/p/original/2Vhb7Okv4PZcYgpCDHUCGINdk9Z.jpg",
+            "https://image.tmdb.org/t/p/original/4yeFPutNi1NjUmHXNDDfPOgwHwO.jpg",
+            "https://image.tmdb.org/t/p/original/hygDBC4f5voFbxCnGDKzLkU1k3c.jpg",
+            "https://image.tmdb.org/t/p/original/3ZUrqSh2tpZ9loayvMhpZ2Ia0UR.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Saints",
+          "overview": "The Yellowjackets tangle with the birds & the bees, navigating love, lust and DIY surgery. In the present : blackmail, bunnies and an icy reunion. Misty prepares for a surprise(d) houseguest.",
+          "plot": "In a flashback to Lottie's childhood, Lottie distracts her parents seconds before the car traveling in front of them is involved in a fatal accident. Shauna tells Taissa that the baby is Jeff's, Jackie's then-boyfriend. With Taissa's assistance, Shauna tries to perform a self-induced abortion but is unable to go through with it. Lottie begins having hallucinations of a deer. She tells the religious Laura Lee that she is having visions and agrees to be baptized. Later, Natalie and Travis kill a maggot-infested deer. Laura Lee concludes that Lottie is having premonitions. ---- In 2021, Natalie and Taissa tell Shauna what happened to Travis. Taissa's wife, Simone, makes an appointment with a child psychologist who says Sammy is under significant stress. Natalie and Kevyn develop feelings for one another and have sex. Misty kidnaps Jessica. Late at night, Taissa is revealed to be \"the lady in the tree\".",
+          "airDate": "2021-12-19",
+          "still": "https://image.tmdb.org/t/p/original/19vvCa44Jv0G5DaFziryUCEXpUV.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/19vvCa44Jv0G5DaFziryUCEXpUV.jpg",
+            "https://image.tmdb.org/t/p/original/yoa5lsHKlF0gPSbJpdXLlONVF9M.jpg",
+            "https://image.tmdb.org/t/p/original/1JM8Q9HOIHCO1FCTicjvP3lIRmb.jpg",
+            "https://image.tmdb.org/t/p/original/1mxrEgYuzc4kD1BI1wwTEAcdS6u.jpg",
+            "https://image.tmdb.org/t/p/original/gG9MQ5ok3EPlJIgDXuycXbNM0tq.jpg",
+            "https://image.tmdb.org/t/p/original/5hOtHa3t1RloaBpq0gamLtCfHsO.jpg",
+            "https://image.tmdb.org/t/p/original/eW9umqp925STjFJQOqBKdxEnCcp.jpg",
+            "https://image.tmdb.org/t/p/original/7ocDqOMG3Bu2Iy8JVtnGVCkqewF.jpg",
+            "https://image.tmdb.org/t/p/original/943JhtAFlqXC9mcaAeAINa4VMzD.jpg",
+            "https://image.tmdb.org/t/p/original/zK3kQrQd2IFRDu1CNac5Ta8UVXn.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "No Compass",
+          "overview": "As starvation looms, Taissa leads a last-ditch effort and/or suicide mission. Amid felony schemes and all-night stakeouts, the Yellowjackets are forced to commit small talk.",
+          "plot": "Taissa, Van, Misty, Akilah, and Mari agree to go on an expedition to find a way out of the wilderness. As they depart, Lottie tells Van that they will encounter a \"river of blood\" and \"red smoke\". While walking, the group finds a red-colored river. Later, they are attacked by a pack of wolves. Taissa defends the group using a flare gun, but Van is severely wounded. Meanwhile, Shauna tells Jackie that she is pregnant but lies about who the father is. At night, Jackie reads Shauna's diary. ---- In 2021, Natalie, Shauna, and Taissa agree to pay $50,000 to a blackmailer. After spotting the blackmailer, the group chases them. The blackmailer falls into a box of glitter during the pursuit before getting away. Misty questions Jessica, believing her to be the blackmailer. Jessica reveals she was hired by Taissa to learn about the rest of the group. Back home, Shauna has sex with Adam. In the morning, they are almost caught by Jeff. Kevyn learns that Natalie used his gun but she does not tell him about the blackmailer.",
+          "airDate": "2021-12-26",
+          "still": "https://image.tmdb.org/t/p/original/wqzWSPb0yNZCEE6GYlkVoHGqbM3.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/wqzWSPb0yNZCEE6GYlkVoHGqbM3.jpg",
+            "https://image.tmdb.org/t/p/original/qbap9aKNLu4kbgQCAAVLocYMqO9.jpg",
+            "https://image.tmdb.org/t/p/original/3yCeK2r7oldHsKlDNoelZbR6j5.jpg",
+            "https://image.tmdb.org/t/p/original/bwEVICizmfolFgnqu24LxuMc742.jpg",
+            "https://image.tmdb.org/t/p/original/yKgY5mOD9tERlrNeFMGf69tOBxN.jpg",
+            "https://image.tmdb.org/t/p/original/6gsLykaUlRvsaf8LREQW9SUa9uX.jpg",
+            "https://image.tmdb.org/t/p/original/8bIWTCrxDksdZSxJjid4iGsvTOK.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Flight of the Bumblebee",
+          "overview": "What is madness and what is divine? While in triage after a vicious attack, the Yellowjackets are left to suss out the best of their worst ideas. Shauna dabbles in some light cyberstalking.",
+          "plot": "After Van regains consciousness, the group returns to the cabin. Natalie and Travis cut off their relationship when he backs out during sex. Natalie talks to Ben, who offers relationship advice and reveals he is gay. Laura Lee announces her desire to fly the abandoned plane out of the wilderness. Upon ascent, however, it explodes. ---- In 2021, Misty stops Natalie from relapsing and reveals the hidden camera in the process. Misty tells Natalie that someone withdrew all the money from Travis's bank account after he died. The next day, Natalie tries to get information out of Suzie, an acquaintance who works in a bank. After Suzie refuses to cooperate, Natalie resorts to blackmail. Taissa tells Simone about her condition in which she becomes an entirely different person at night. Fearing she will hurt Sammy, she begs Simone to leave her alone in the house for a while. Shauna discovers that someone took all of her journals and she finds glitter in her closet. After learning that Adam is not who he says he is, Shauna goes to his apartment to question him.",
+          "airDate": "2022-01-02",
+          "still": "https://image.tmdb.org/t/p/original/lRmMUvj2jXd2pzutB25VWmLwNyE.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/lRmMUvj2jXd2pzutB25VWmLwNyE.jpg",
+            "https://image.tmdb.org/t/p/original/iRots9Fq4gWXX5LvWucsQcRW2f5.jpg",
+            "https://image.tmdb.org/t/p/original/7yxw5erAFNZphYY3vuJ4xDfWOCf.jpg",
+            "https://image.tmdb.org/t/p/original/w6qJ2tOia96XFVxGfM4J77SD66f.jpg",
+            "https://image.tmdb.org/t/p/original/7VWISyPE9hVg8L3tH9WoVu5lxWh.jpg",
+            "https://image.tmdb.org/t/p/original/kOgZeITyrjklkdgkstYD4VOczeZ.jpg",
+            "https://image.tmdb.org/t/p/original/ikKB9CAneTP2jB4OateCLCk767s.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Doomcoming",
+          "overview": "You are cordially invited to The Doomcoming. On the brink of death, the Yellowjackets opt to throw one last rager before careening into oblivion. An increasingly paranoid Shauna struggles between keeping her cool and being Shauna.",
+          "plot": "The group organizes a homecoming party, dubbed \"Doomcoming\". Everyone except Jackie unknowingly consumes hallucinogenic mushrooms. Jackie and Travis have sex despite Travis saying he still has feelings for Natalie. Ben and Natalie leave the party to talk alone; Misty follows them. After Natalie leaves to find Travis, Ben tells Misty that he is gay. The rest of the group, on a bad trip, decide to confront Jackie at the cabin, leaving Javi alone in the woods. When the group finds Jackie and Travis, they lock Jackie in a closet and try to rape Travis. When he flees, the group chases while howling like wolves. After catching him, Lottie orders Shauna to slit his throat. Natalie arrives and stops her. ---- In 2021, Shauna kills Adam after confirming that he is digging in her past. She remembers back home that Jeff has access to the safe where she keeps her journals. She questions him, and Jeff reveals he blackmailed the group because his furniture store was going out of business. The woman at the hotel was, in fact, a loan shark, and Jeff was not having an affair. Shauna tells Jeff that she killed Adam and they discuss their options. Shauna convinces Natalie and Taissa that Adam was the blackmailer. Natalie asks Misty to dispose of the body.",
+          "airDate": "2022-01-09",
+          "still": "https://image.tmdb.org/t/p/original/1eKwkKWyrSsr3nbyz1EDxORKEAT.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/1eKwkKWyrSsr3nbyz1EDxORKEAT.jpg",
+            "https://image.tmdb.org/t/p/original/yjzwD2fQ6q57NnDCgrU3VTByHIT.jpg",
+            "https://image.tmdb.org/t/p/original/IAsgRTnP3xZjTlw7gr1z5p9oH7.jpg",
+            "https://image.tmdb.org/t/p/original/7uTHRnEozGHPiHKGk0UXUoGRcph.jpg",
+            "https://image.tmdb.org/t/p/original/k07d4TiY6SYIuZgV0EVaPvRx6ps.jpg",
+            "https://image.tmdb.org/t/p/original/z5cvCdmvM7VCVTLt1lkO8oYrRre.jpg",
+            "https://image.tmdb.org/t/p/original/2AAA004LYIWrRsKcddj28DIEMag.jpg",
+            "https://image.tmdb.org/t/p/original/oHLZqZbrII32lvmEG236JAVhduH.jpg",
+            "https://image.tmdb.org/t/p/original/xNFas4SFbtIkk4movWx3nYNFktq.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Sic Transit Gloria Mundi",
+          "overview": "On the night of their 25-year class reunion, the Yellowjackets navigate damning evidence, false alibis and a dubious attempt to “heal.” In the wilderness, the Doomcoming fallout finds everything firmly off the rails as simmering resentments come to a head. Season finale.",
+          "plot": "Van begins to believe Lottie has supernatural abilities. Lottie kills a bear that calmly walks in front of her. Travis and Natalie look for Javi, who disappeared after the \"Doomcoming\" party. Everyone eats while Jackie refuses. She angrily confronts the group for hurting Travis and reveals that she knows Jeff was cheating on her with Shauna, leading to a fight between the two. Jackie is ordered to sleep outside. The next day, to Shauna's horror, they see that it has snowed and Jackie has frozen to death. Lottie, Misty, and Van offer the bear's heart as a tribute to the wilderness. ---- In 2021, Shauna, Taissa, Natalie, and Misty clean up the murder scene. The group attends a 25-year high school reunion. Shauna confronts Jeff's friend Randy, who knows about the blackmail, and threatens to kill him if he tells anyone else. Callie learns of Adam's disappearance in the news. Simone finds the severed head of her dog, Sammy's doll, and what appears to be a human heart in a hidden room in the basement. Misty poisons Jessica, Taissa wins the Senate race, and a mysterious group kidnaps Natalie. Suzie tells Natalie in a voicemail that Lottie is responsible for emptying Travis' bank account.",
+          "airDate": "2022-01-16",
+          "still": "https://image.tmdb.org/t/p/original/peqday8J3DpItYalNmfQYYKHfoU.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/peqday8J3DpItYalNmfQYYKHfoU.jpg",
+            "https://image.tmdb.org/t/p/original/3HRlxY5TMU8Pra1m55NIRefbC8U.jpg",
+            "https://image.tmdb.org/t/p/original/9eEePxldixUEqn3wLWksSNbfNPd.jpg",
+            "https://image.tmdb.org/t/p/original/iIUrVykolE72b3Obrm93qAYminT.jpg",
+            "https://image.tmdb.org/t/p/original/7LQ16vxh3wvAh9BJD958AYwwMdK.jpg",
+            "https://image.tmdb.org/t/p/original/yiGAf5eMTfeHEQ6cNU1tcnGgIYT.jpg",
+            "https://image.tmdb.org/t/p/original/58wd0wjQ2XoN3yBAphthrpWgY4X.jpg",
+            "https://image.tmdb.org/t/p/original/vKrVsF6kktmmUbWx77ucgdRsp0e.jpg",
+            "https://image.tmdb.org/t/p/original/i1NjKHYrUkjt3LoHPcKEH1GDBpH.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 2,
+      "name": "Season 2",
+      "airDate": "2023-03-26",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Friends, Romans, Countrymen",
+          "overview": "Two months into winter the survivors cope with falling rations, low morale and their latest disastrous attempt to freeze a teammate out of the game. Shauna explores the secondary market for Yellowjackets memorabilia, while Taissa, Misty and Natalie all seek out best friends, both old and new. For those of you keeping the stat book: Lottie Matthews comes in off the bench.",
+          "plot": "Two months after Jackie's death, the group of survivors are struggling to make it through winter. Lottie has taken on a spiritual leader role. Natalie and Travis are unsuccessful in hunting food and locating a missing Javi. Meanwhile, a pregnant Shauna spends her time talking to Jackie's frozen corpse. During one visit, Jackie's ear rips off and Shauna later secretly eats it. Van ties her wrist to Taissa's at night to prevent her from sleepwalking. Misty, still ostracized after the mushroom incident, bonds with Crystal, a member of the JV girls team. Lottie talks Travis down from a panic attack with strange visions. ---- In the present day, Shauna and Jeff cover their involvement in Adam's murder by destroying his personal art studio and burning his identification, along with Shauna's journals. Callie uncovers the remains of Adam's charred ID. Simone warns Taissa to stay away from Sammy; Taissa later finds the altar she unknowingly constructed in the basement. Misty begins searching for Natalie's whereabouts and notices she was likely taken by force. She attempts to ward off a fellow Citizen Detective investigating Adam's disappearance. Natalie finds herself held hostage in a wellness commune run by Lottie and manages to confront her.",
+          "airDate": "2023-03-26",
+          "still": "https://image.tmdb.org/t/p/original/t9U5kOWwJKSdF0BvfPeVrnIJNmV.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/t9U5kOWwJKSdF0BvfPeVrnIJNmV.jpg",
+            "https://image.tmdb.org/t/p/original/5MTYG6TzTapVau0DuAizDzqlvpV.jpg",
+            "https://image.tmdb.org/t/p/original/h1POJFfVdjkCtodvuy2Lrf7Pgcd.jpg",
+            "https://image.tmdb.org/t/p/original/ydfuDuUJ1PLkaov7UKSJ0M5X3yP.jpg",
+            "https://image.tmdb.org/t/p/original/yCCR4YfdO6vNmVYKSqLPjcewodR.jpg",
+            "https://image.tmdb.org/t/p/original/f5yY7eZulKNFe0r59fZIrRZXtAE.jpg",
+            "https://image.tmdb.org/t/p/original/wXWRUNqGDIVNIHwAwiPpNKYnit8.jpg",
+            "https://image.tmdb.org/t/p/original/whO6ARUliNmHF9ryerRc4OcVbv1.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Edible Complex",
+          "overview": "The Yellowjackets barely made it through summer in the woods, but now as winter begins to bite, we’ll see if hunger and desperation turn into full-on psychosis. While there may or may not be a dark and powerful force inhabiting the wilderness, their survival could depend upon what they choose to believe. Meanwhile, twenty-five years later, each survivor must ask themselves – Is the darkness coming for them, or is it coming from them?",
+          "plot": "Shauna continues to talk to Jackie's corpse, even to the point of dressing it up with makeup; Jackie's ghost taunts her about how hungry she is. Taissa insists that it is time to cremate Jackie and move on. Van saves Taissa from sleepwalking off a cliff; she recommends they talk to Lottie, but Taissa refuses. Natalie fakes Javi's death to Travis by smearing a pair of his shorts with her own blood. Jackie's body is burned on a pyre, but a deluge of snow slows the flame and cooks the body. Succumbing to their hunger, the team eats her corpse, while Coach Ben watches in horror. ---- In the present, Shauna is questioned by Kevyn about Adam's disappearance. Callie flirts with a man named Matt who, unbeknownst to her, is a detective working with Kevyn. The anonymous Citizen Detective locates Misty at her job and invites her to join him on Adam's case. Sammy visits Taissa unprompted, but when Simone arrives to pick him up, they cannot find him. Taissa and Simone are involved in a car accident after it is revealed Taissa had hallucinated Sammy's visit. Lottie tells Natalie about Travis's death, but Natalie suspects she is hiding the truth.",
+          "airDate": "2023-04-02",
+          "still": "https://image.tmdb.org/t/p/original/ykoWQGd6Wu5zjhgJfRWCRLj9Okn.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ykoWQGd6Wu5zjhgJfRWCRLj9Okn.jpg",
+            "https://image.tmdb.org/t/p/original/ksuhkOZ4xMa3YZkuUPz8y8LnJCk.jpg",
+            "https://image.tmdb.org/t/p/original/wt1NMhUplR16c6eX9uW8FB7uBWL.jpg",
+            "https://image.tmdb.org/t/p/original/gpJUCZwwMsZQAlcZSMilgRERA7z.jpg",
+            "https://image.tmdb.org/t/p/original/2CUGTthIH5Ilo95kJgGdWiknfub.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Digestif",
+          "overview": "The girls experience an unusual hangover. Shauna learns the thrill of peer-to-peer car rentals. Natalie audits Lottie’s class in emotional apiology. Tai reflects, Misty hits the high seas, and you’ve never attended a baby shower like the one the Yellowjackets throw here.",
+          "plot": "Taissa has no memory of eating Jackie and is horrified to learn she participated while in her fugue state. Natalie disposes of Jackie's remains at the crash site; she encounters a white moose, but it disappears as she tries to shoot it. A sleepwalking Taissa tells Van about \"The One with No Eyes\". Misty strengthens her bond with Crystal. A delirious Ben imagines life if he had stayed behind with his boyfriend Paul. The team throws Shauna a baby shower, but birds begin to fall from the sky when her nose bleeds on the symbol stitched into her blanket. Lottie suggests they are blessings from the woods. ---- In the present, Shauna and Jeff are carjacked, but Shauna disarms the perpetrator before he drives off. She tracks down the car at a scrapyard and intimidates the owner at gunpoint. Jeff attempts but fails to get Kevyn to back off from Shauna. With Simone in the hospital, Taissa is left to confront her fugue alter ego. Misty meets Walter, the Citizen Detective; the two interrogate Randy Walsh about Natalie's disappearance. Lottie introduces Natalie to her support group, but her hallucinations begin to return.",
+          "airDate": "2023-04-09",
+          "still": "https://image.tmdb.org/t/p/original/uWlTAkAgIk5SQHrgMuxtOShO4PE.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/uWlTAkAgIk5SQHrgMuxtOShO4PE.jpg",
+            "https://image.tmdb.org/t/p/original/a2JtLk4F6IPu12n4Ilrm4sD9YI3.jpg",
+            "https://image.tmdb.org/t/p/original/vRAFBn8BPtGwqYvkwBi5yhaU3IR.jpg",
+            "https://image.tmdb.org/t/p/original/2CcPlJ2TKVq6scfPWRQsVOeAvbI.jpg",
+            "https://image.tmdb.org/t/p/original/dREMB6wcr1lmYQ0X9lizYDSUVyM.jpg",
+            "https://image.tmdb.org/t/p/original/pz8STtHVFpDszSxAcCu1SPGHCVF.jpg",
+            "https://image.tmdb.org/t/p/original/8sspfDKNbfvm2F68REGBs9n2T5q.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Old Wounds",
+          "overview": "Relive your youth by hitting the road! Take a roadtrip with your child! Go on vacation with a new friend! Hitchhike, if you must! Just make sure you pack a good playlist for the ride. Some recommendations from us: “Anything You Can Do,” “You Get What You Give,” “Instinct,” a famous composition by Frank Comstock, but absolutely not anything from “Starlight Express”.",
+          "plot": "When part of the team begins to favor Lottie's mysticism over Natalie's hunting skills, the two girls compete by going on separate hunts. Lottie quickly becomes hypothermic and has a vision of Laura Lee and the team. Natalie finds the white moose encased under a frozen lake; she and the team try to pull it out, but it sinks. She and Lottie tentatively make amends. Meanwhile, Van makes a map of all of the strange symbols Taissa has found and estimates where the last one could be; they instead find a disoriented Javi and bring him back to camp. ---- In the present, Shauna, pressed by Callie, confesses the truth to her about Adam's death. Natalie bonds with Lisa, a cult member she had attacked earlier. Misty and Walter camp out at a bed and breakfast near Lottie's compound. Lottie's psychiatrist suggests she pay attention to her hallucinations. Taissa follows her fugue self's intuition and hitchhikes to a small town in Ohio, where she sees Van for the first time in years.",
+          "airDate": "2023-04-16",
+          "still": "https://image.tmdb.org/t/p/original/ve1pHpS75Pnbo2oXPBD1gkV4UX5.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ve1pHpS75Pnbo2oXPBD1gkV4UX5.jpg",
+            "https://image.tmdb.org/t/p/original/odisW1eDxCc7oJFzR6gWKR65hxX.jpg",
+            "https://image.tmdb.org/t/p/original/aqIxA7VzoBE2YdCwCycUPVGpL7o.jpg",
+            "https://image.tmdb.org/t/p/original/b2NSkFE0rt4qnNTt331K6fVjd5.jpg",
+            "https://image.tmdb.org/t/p/original/qYQrROXZ7zhdEfcpvvCApS2CThn.jpg",
+            "https://image.tmdb.org/t/p/original/2ro0aLYUdQvcZ6bcU7SjCtS6N5p.jpg",
+            "https://image.tmdb.org/t/p/original/46bQvEHN9DBsKlVbD0k3ABUdm32.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Two Truths and a Lie",
+          "overview": "Okay, Fellowjackets, rise and shine and don’t forget your booties because it’s coooold out there. Misty makes a leap of faith for her bestie, Natalie and Lottie play a game of surrender, Shauna finds herself unexpectedly randy, and Tai seeks out a movie recommendation.",
+          "plot": "Lottie hosts meditation sessions for the team; they help Taissa with her sleepwalking, but Shauna fears she is losing Tai's support. Javi refuses to speak to the team, but tells Ben that his \"friend\" did not want him to return. Misty admits to Crystal that she destroyed the plane's emergency transmitter; when Crystal reacts coldly, Misty threatens her and accidentally backs her off the edge of a cliff. Shauna and Tai get caught in a snowstorm and use Lottie's meditation techniques to return to camp. Once inside, Shauna goes into labor. ---- In the present, Callie, realizing Matt is a policeman, tells him that Shauna was sleeping with Randy. Shauna stages a tryst in a motel room, but Kevyn and Matt uncover the ruse. Taissa tells Van her sleepwalking has returned, and Van offers her support. Misty and Walter find Natalie, who rebuffs them. Walter tells Misty his theories about Adam's case; she sends him away and goes back to Lottie's compound. Lottie helps Natalie recall the last time she saw Travis.",
+          "airDate": "2023-04-23",
+          "still": "https://image.tmdb.org/t/p/original/ovZdsafPZFrF1OIRGnjKmz25qSR.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ovZdsafPZFrF1OIRGnjKmz25qSR.jpg",
+            "https://image.tmdb.org/t/p/original/pISzR4ct1BJVACEWAwamrLhuQKD.jpg",
+            "https://image.tmdb.org/t/p/original/7iA9RIbza7VyFNQIdR5M0opdoYL.jpg",
+            "https://image.tmdb.org/t/p/original/z8eFRJkYAAB7Au5VNhVU7P7LX2B.jpg",
+            "https://image.tmdb.org/t/p/original/g6UMU9lUnDoOCcPZDa6JpkYcrC.jpg",
+            "https://image.tmdb.org/t/p/original/bJ40xhEDMIgdjmoqZkx4IAOpKC8.jpg",
+            "https://image.tmdb.org/t/p/original/cspuv21kXNmzz7Kd0pRqA65OcFB.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Qui",
+          "overview": "Trapped inside on a snow day, the Yellowjackets revisit the highlights, humiliations and traumas of “Health Class.” Tai and Van help each other kindly rewind, Misty explores joining a classic Cosmic American tribute band, Lisa helps Natalie carp the day, and Shauna gets a pop-quiz on her cookie-reading assignment.",
+          "plot": "The Yellowjackets volunteer Misty to deliver Shauna's baby. Travis and Lottie create an altar and place offerings upon it. Shauna blacks out and gives birth to a baby boy. She has trouble breastfeeding due to her own starvation, but ultimately succeeds. Later that night, she hears chanting from downstairs and finds the team eating her baby. She then comes to, revealing that she had dreamed the previous events and her baby did not survive. Shauna holds her stillborn and grieves, insisting that she can still hear him crying. ---- In the present, Taissa notices Van's past due notices in the trashcan, but Van brushes it off. Misty calls Tai from Lottie's compound. Natalie and Lisa talk about forgiveness. Shauna and Callie are called to the police station for questioning; Shauna admits to her affair with Adam, while Callie falsely claims that Matt took her virginity. Jeff pushes Shauna to follow Tai and Van to Lottie. Shauna, Taissa, Van, Natalie, Misty, and Lottie all reunite at the compound.",
+          "airDate": "2023-05-07",
+          "still": "https://image.tmdb.org/t/p/original/cu1r2X3Aj5VVN3jVc8bzBbRjlMb.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/cu1r2X3Aj5VVN3jVc8bzBbRjlMb.jpg",
+            "https://image.tmdb.org/t/p/original/mjFFQR8Zx3OxAeeUDsqNnAOrCiw.jpg",
+            "https://image.tmdb.org/t/p/original/nTfwOqQJzMfJIWlVSst3otMcKPN.jpg",
+            "https://image.tmdb.org/t/p/original/pRd9jcmtVoeTIDUVlsSwcPbnvEl.jpg",
+            "https://image.tmdb.org/t/p/original/1bIvr4khN07vJn3X9NrhABNv3QR.jpg",
+            "https://image.tmdb.org/t/p/original/l4xNOQlDYpyXPxYLeWA0QdBgEwz.jpg",
+            "https://image.tmdb.org/t/p/original/6Acpc5ya3EqlXEhiUokmsZ70Xg3.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Burial",
+          "overview": "Sometimes the best therapy is cranking the hits to eleven, so today we’re exploring the hardcore kid-care revival movement, 11 o’clock theatrical birdcore numbers, some late hits of the renovationwave era (call us about a spinoff!), flower duets, and a classic live record. Out in the wilderness, Coach Scott does a great Karl Havoc impression for an unimpressed Misty.",
+          "plot": "Shauna buries her stillborn child and grieves for him and Jackie. The team sets out on a half-hearted mission to find Crystal, unaware of what happened to her earlier. Van admits to Taissa her doubts about survival. Misty goes to the spot where Crystal died, only to find that her body is now missing. She then talks Ben out of committing suicide. After Shauna punches Misty and accuses everyone of eating her baby, Lottie encourages Shauna to let out her pain on her; Shauna beats Lottie unconscious while the team looks on in shock. ---- In the present, everyone is assigned a form of therapy at Lottie's compound. Misty uses an isolation tank and talks to a human version of her bird Caligula; she later calls Walter and confirms his theories about Adam's disappearance. Taissa and Van share a kiss, but Van reveals that she has terminal cancer, and will be dead within months. Lottie realizes her psychiatrist is merely another hallucination. The women discuss what they might have repressed from their time in the wilderness and dance around a campfire. Jeff calls Shauna and reveals that the authorities have found Adam's body.",
+          "airDate": "2023-05-14",
+          "still": "https://image.tmdb.org/t/p/original/rwHRZpkhLTqsvJfrDq0TXgV4igH.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/rwHRZpkhLTqsvJfrDq0TXgV4igH.jpg",
+            "https://image.tmdb.org/t/p/original/bRKY7QmHEU2UFPk6LvO5Z0BuZej.jpg",
+            "https://image.tmdb.org/t/p/original/ifeczCLVTEzHRjcH0uUN5tbivHO.jpg",
+            "https://image.tmdb.org/t/p/original/3830c0BSE3HMdyl9ItERNUqF67G.jpg",
+            "https://image.tmdb.org/t/p/original/wwblnNdbvoI5Mxaci0XI6D7MEqr.jpg",
+            "https://image.tmdb.org/t/p/original/tAkUIltjcShTaq00lcqj5KpKQOI.jpg",
+            "https://image.tmdb.org/t/p/original/pWynLFDSZjjI5Hed9G7MPaIBwEs.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "It Chooses",
+          "overview": "Shhh, it’s only going to get worse from here. Despite the whole “winter never’s gonna end” thing, the 1996 New Jersey state girls soccer champions decide to start their spring training early with an impromptu cardio session. Callie encounters an old flame, Van proves goalies never say die, most of the adults intentionally commune in the sharing shack, and, Lottie, baby, I hear the blues are calling for tossed salad and scrambled eggs. Mercy!",
+          "plot": "The Yellowjackets struggle with hallucinations and paranoia. Coach Ben discovers Javi survived by living in a cave hidden underneath a tree. Lottie, grievously injured from Shauna's attack, tells the team not to waste her body if she is to die. Taissa suggests they must find another way to survive, which culminates in the survivors drawing cards to determine who will be killed. Natalie draws the Queen of Hearts, but before Shauna can sacrifice her, Travis pushes Shauna out of the way; Natalie escapes the cabin and is chased through the woods. Javi, trying to help her, falls through the frozen lake; the Yellowjackets let him drown, leaving Natalie spared. ---- In the present, the police obtain a search warrant for the Sadeckis' house, and Kevyn and Matt question Jeff. Later, Jeff reveals the truth about Shauna's stillborn child to Callie. Walter emails the police, telling them he has information about Adam's disappearance, before leaving for Lottie's compound. In Lottie's \"Sharing Shack,\" Shauna admits that Jeff was the blackmailer instead of Adam, Taissa reveals she hired Jessica Roberts to investigate the survivors, and Misty reveals the truth of the reporter's death. Lottie insists the wilderness is demanding a sacrifice and presents a choice of six cups, one containing phenobarbital, to the women.",
+          "airDate": "2023-05-21",
+          "still": "https://image.tmdb.org/t/p/original/tOyM3Zm53t720zklbZhIPRDn5pT.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/tOyM3Zm53t720zklbZhIPRDn5pT.jpg",
+            "https://image.tmdb.org/t/p/original/3ZXSndvsvSs1aLWEh872GWWBy5B.jpg",
+            "https://image.tmdb.org/t/p/original/qCI2EuDUyVDhAnW0DhGSqbtaQzC.jpg",
+            "https://image.tmdb.org/t/p/original/m1sl0cnCY5zqMyKeIIaw1eXgsX5.jpg",
+            "https://image.tmdb.org/t/p/original/3fEHcIS5kUMBvQ9AYrG9xiYu3jp.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Storytelling",
+          "overview": "Heavy is the head that wears the antler crown is a lesson you don’t learn until much later in life… if you ever even learn it at all. Everything’s about to get really wild(erness), and we’re so excited (so excited!) and so, so scared to find out who paid attention to what lessons and when. So, on the count of three, you may pick up your pencil, open your testing booklet, and start this finale exam. One… Two…",
+          "plot": "The girls return Javi's body to the cabin, where they dismember and begin to cook him. Lottie is alarmed by the team's decision to hunt each other, but Misty tells the team that Lottie approves. Coach Ben informs Natalie of Javi's hiding spot, but she tells him that he no longer belongs among them as he is a good person. Lottie tells the group that the wilderness no longer needs her as their leader because they can all communicate with it now and declares Natalie to be the new leader. While the Yellowjackets are sleeping, the cabin is lit on fire, forcing them to evacuate and leaving them stranded with no shelter. ---- In the present, the women agree to proceed with Lottie's ritual but secretly plan to botch the ritual and have Lottie committed. Walter lethally poisons Kevyn at the compound and works with Jeff to frame him for a conspiracy, ending the investigation surrounding Adam Martin. Shauna draws the Queen of Hearts during the ritual and is chased by the others. Callie shoots Lottie in the shoulder to protect her mother, and Taissa and Van reveal that they called off the crisis team they contacted for Lottie. When Lisa arrives with a gun, Misty charges towards her with a fentanyl injection, but Natalie jumps in the way and takes the injection, dying in Misty's arms. Lottie is taken away by EMTs, but tells the women that the wilderness is pleased with their sacrifice and will reward them.",
+          "airDate": "2023-05-28",
+          "still": "https://image.tmdb.org/t/p/original/haCD2oR8C0UJi08RQ5RupTILCJ1.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/haCD2oR8C0UJi08RQ5RupTILCJ1.jpg",
+            "https://image.tmdb.org/t/p/original/6yVJu6h0MqYi7ZPc0LgMjaS6O6U.jpg",
+            "https://image.tmdb.org/t/p/original/uGX1YWfOb1tvMjeCpB2oq4y4aXI.jpg",
+            "https://image.tmdb.org/t/p/original/fWiWTevBAjsTlpwzBb6KkiBxRSo.jpg",
+            "https://image.tmdb.org/t/p/original/x0FPNH0f31f39DVuF5yAfPXqNsu.jpg",
+            "https://image.tmdb.org/t/p/original/y22QsWZf9TFxWhY6YOi6o6o8vtk.jpg",
+            "https://image.tmdb.org/t/p/original/vEfaTNg3thx7ia3AaSUCtB8VFAF.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 3,
+      "name": "Season 3",
+      "airDate": "2025-02-16",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "It Girl",
+          "overview": "Summer inspires the Yellowjackets to ditch soccer for a more contact-intensive sport and revive an old pagan tradition. In the present, a cringe-worthy funeral flows organically into a bar therapy session.",
+          "plot": "It is the late days of spring, and the Yellowjackets are living comfortably, thanks to Natalie's leadership. While under the influence of hallucinogens, Travis hears the wilderness screaming, and Lottie encourages him to connect with it. Shauna is still full of resentment towards her teammates and begins a feud with Mari, with a fight at dinner pushing Mari to leave the group. Coach Ben wanders the woods alone. He finds a survival kit and sets up game traps; one of his pit traps captures Mari. --------------------------- In the present, the Yellowjackets pay their respects to Natalie, with Misty grieving the loss the hardest; she gets drunk and belligerent at a bar and is rescued by Walter. Callie is suspended from school for attacking classmates with a bag of animal guts after they insult Shauna. Later, a cryptic envelope containing a cassette tape arrives for Shauna, but Callie intercepts it. Taissa, now separated from Simone and Sammy, takes care of Van in her ailing health. The two go out to a fancy dinner but dine and dash, resulting in the waiter suffering a heart attack while in pursuit.",
+          "airDate": "2025-02-16",
+          "still": "https://image.tmdb.org/t/p/original/hm1wUcFBAXdkjP3qa7stvIM6uiV.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/hm1wUcFBAXdkjP3qa7stvIM6uiV.jpg",
+            "https://image.tmdb.org/t/p/original/oUbEv9jNUCgHCB4Z4EEaICY9ueA.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Dislocation",
+          "overview": "The Yellowjackets are stuck deciding whether to track down a missing teammate or just trip out on mushrooms. Shauna secures a spot on the world's most unsupportive partner list. Misty finds herself tangled in the intimate chaos of sleepover parties.",
+          "plot": "The Yellowjackets go looking for Mari. Misty suspects that Natalie knows where Ben is hiding and tells Shauna her suspicions. Lottie pushes Travis to take more mushrooms to connect with the wilderness, which results in him attacking her. Ben rescues Mari from his pit, but knowing the team thinks he burned down the cabin, refuses to let her leave. He takes Mari to his cave, where she catches him seemingly talking to somebody else. Shauna moves the grave of her stillborn son to a more private location, but JV team member Melissa finds it. When Shauna threatens Melissa, Melissa kisses her in response. Shauna kisses her back. ----------- In the present, Taissa returns to the restaurant to settle the unpaid bill but flees when she discovers that she inadvertently killed the waiter. Lottie arrives unannounced at Shauna and Jeff's house, and Callie convinces them to let her stay. Shauna calls Misty to \"babysit\" while she and Jeff take a meeting with potential furniture store clients. Callie drugs Misty and bonds with Lottie. Walter warns Misty that they are not truly her friends and only call her when convenient, but Misty rebukes him. While meeting with the potential clients, Shauna is followed into the bathroom, where she is left a cell phone with no caller ID. Later, she nervously calls the restaurant to find out who retrieved the phone.",
+          "airDate": "2025-02-16",
+          "still": "https://image.tmdb.org/t/p/original/sBjGuCBnWc8TvZjxXNC6sR7GEMA.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/sBjGuCBnWc8TvZjxXNC6sR7GEMA.jpg",
+            "https://image.tmdb.org/t/p/original/v1nCeOoleRbgQcoixtVPGoGqMpI.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Them's the Brakes",
+          "overview": "The return of a Yellowjacket sparks a vengeful frenzy in the team. Lottie's rendition of Cool Aunt Without Kids leaves Callie with an open door to answers about her mother's twisted past. Tai and Van receive a karmic payout for their dine and dash.",
+          "plot": "After a scuffle and a heart to heart, Ben lets Mari go. She finds her way back to camp and quickly reveals Ben's location. She leads most of the team to the tunnel into his cave, and they split up to find him. Shauna, Van, and Akilah team up, but are soon haunted by detailed visions – Van is trapped in a fiery cabin, Akilah is swallowed up by the earth, and Shauna is unable to swim to shore to greet her son. Their visions all converge into one, in a classroom with Lottie and Jackie. They're saved by Ben, who reveals that the cave has some kind of noxious gas. Natalie and Taissa then find them and tell Ben he has to come with them. ----- In the present, Van learns that her cancer has stopped metastasizing. Taissa suggests the waiter's death saved Van's life. Later, Taissa spots The Man With No Eyes in a vintage ice cream store commercial. She and Van drive to the abandoned store and break in. Callie meets up with Lottie, who encourages her to shoplift. Misty invites Shauna out for coffee to explain her side of the previous night. In the car, Shauna finds that her brakes have been tampered with and immediately blames Misty, who denies it and storms off, denouncing Shauna as a friend. Shauna comes home to find Lottie has given Jackie's heart necklace to Callie. Furious, Shauna orders Lottie to leave.",
+          "airDate": "2025-02-23",
+          "still": "https://image.tmdb.org/t/p/original/mTdEEpwHFWIuK2Xi6JUX5ftvtH.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/mTdEEpwHFWIuK2Xi6JUX5ftvtH.jpg",
+            "https://image.tmdb.org/t/p/original/nqidkMZivB25ANexkgRajWLbJE6.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "12 Angry Girls and 1 Drunk Travis",
+          "overview": "The Yellowjackets attempt to spin a hundred suspicions into proof. Coach Scott has an existential meltdown. Meanwhile, Jeff embarks on a crusade to make things right as Shauna is forcibly committed to some \"me time.\" Spoiler: it's not a spa day.",
+          "plot": "The team holds a trial to determine Ben's guilt, with Natalie as judge, Taissa as the prosecutor, and Misty as the defense. Shauna blames Ben for not being there for her birth, while Lottie expresses reasonable doubt. Shauna tells Tai that Nat knew Ben was alive. When questioned, Nat admits that she knew but had trusted Ben to leave them in peace. Ben defends himself and apologizes to Shauna and the team for abandoning them when they needed him. When the team struggles to meet a two-thirds majority, Shauna strong-arms everyone into voting against Ben. The team ultimately finds Ben guilty of burning down the cabin. ------- In the present, Shauna learns that her brakes were never cut and it was simply a faulty brake booster. Jeff feels that they are haunted by bad karma, and signs them up for volunteer work at the residential home where Misty works. Shauna is locked in the freezer and haunted by Jackie. Taissa calls Lottie and asks her to clarify what she meant during the night that Natalie died, but Lottie dodges the question. Tai and Van test the wilderness by planting a Queen of Hearts card for a random passerby to choose, but they back out before they can hurt him. While scrolling through her Citizen Detective forum, Misty finds a photo of Lottie dead at the bottom of a flight of stairs.",
+          "airDate": "2025-03-02",
+          "still": "https://image.tmdb.org/t/p/original/iNSudsLn2ophdz9VyrZRVKJJXHA.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/iNSudsLn2ophdz9VyrZRVKJJXHA.jpg",
+            "https://image.tmdb.org/t/p/original/7Ij98IfaE51ujEt4fuf6v06tgnW.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Did Tai Do That?",
+          "overview": "The Yellowjackets confront the reality of having to pull an Old Yeller. Lottie mentors an up-and-coming prophet. In the present, Misty investigates a suspicious death. Shauna, desperate, turns to the last person she would trust – because, why not?",
+          "plot": "The team decides to execute Ben firing squad style, so they draw cards to pick the gunman, and Taissa draws the King of Hearts. Van encourages Tai to connect with \"other Tai\" to make it easier. Lottie and Travis take Akilah back to the cave to connect with the wilderness, and she hallucinates Ben as a bridge home. Lottie rescues Ben from the firing squad, but Melissa, with Shauna's encouragement, cuts his Achilles tendon to prevent him from running away. -------- In the present, Misty tells the other women of Lottie's death and begins a Citizen Detective investigation. Shauna is cornered by Walter and recruited into investigating Lottie's death with him. The three of them infiltrate Lottie's father's home. He is dealing with dementia and imagines Shauna as Lottie, and she has an emotional discussion with him. Tai and Van have an awkward reunion with Simone and Sammy, but Sammy backs away from Tai. Tai suggests to Van that they pursue \"a change of scenery.\"",
+          "airDate": "2025-03-09",
+          "still": "https://image.tmdb.org/t/p/original/wNrxzi1fNYOut7yiBRzTupYcIVq.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/wNrxzi1fNYOut7yiBRzTupYcIVq.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Thanksgiving (Canada)",
+          "overview": "The Yellowjackets start turning on each other faster than a reality TV reunion special. Meanwhile, the Sadecki family \"vacation\" features a vending machine and a deep dive into questionable parenting choices. Misty uncovers an incriminating clue.",
+          "plot": "Ben, suffering from his wound and tired of captivity, repeatedly asks Natalie to kill him when she brings him food. When she refuses, he goes on a hunger strike, prompting the rest of the team to restrain and force-feed him. Unable to watch him suffer further, Natalie sneaks into his pen one night and euthanizes him with her knife. A devastated Misty demands Natalie be held to account, and the rest of the team, outraged by Natalie's choice, agrees. Shauna is named their new leader, and makes Natalie butcher Ben's body for meat so that they can \"honor\" him with a feast. That night, while eating, they hear the wilderness screaming again. They respond by singing, and are interrupted by the arrival of three adult strangers, who react with horror upon seeing Ben's severed head resting on a tree stump. -------- In the present, Callie gives Shauna the cassette tape after learning of Lottie's death. Shauna, convinced her family may be targeted next, moves them to a hotel. Unable to play the tape, she contacts Van and Taissa, who bring a DAT player to the hotel. The three are unnerved by the contents of the tape, believing it to be a threat. Callie plants a phone in Shauna's bag in an attempt to eavesdrop on the recording, but Shauna finds it and deletes it. However, Callie retrieves it from the phone's \"Recently Deleted\" folder. Meanwhile, Misty continues her investigation, obtaining and analyzing a DNA sample from the crime scene. With nothing to compare the analysis to, she reluctantly asks Walter for help. She also tracks down Lisa, who reveals that Lottie gave her $50,000 cash and met with Taissa the day she died.",
+          "airDate": "2025-03-16",
+          "still": "https://image.tmdb.org/t/p/original/lStAjOJYexlJQ1IvLCG0WiVbVOC.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/lStAjOJYexlJQ1IvLCG0WiVbVOC.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Croak",
+          "overview": "The Yellowjackets realize their choices have snowballed into a catastrophe. Misty sets her sights on a fresh suspect, and even she's surprised by the plot twist. Meanwhile, Taissa's desperation is peeling back layers she didn't even know she had.",
+          "plot": "The strangers are revealed to be two frog scientists, Edwin and Hannah, and their guide, Kodiak. Lottie quickly kills Edwin with an axe, claiming that the wilderness does not want them there. Hannah and Kodiak run, and the team pursues them. Hannah hides behind a log and records a message to her child into her DAT recorder. Taissa and Van find the scientists' tent, but are dismayed to see that their satellite phone is broken. Travis and Akilah save Kodiak from falling off the cliffside. Natalie and Shauna find Hannah, and the team takes her back to their camp. --------------------- In the present, Misty questions Taissa about her having been with Lottie the night she died. Shauna listens to the tape and hears Hannah's message; she concludes that Hannah's daughter is the one harassing her and decides to confront her. Walter calls Misty and tells her the DNA found under Lottie's fingernails is a match for Shauna. Van begins to cough up blood, and she is quickly brought to the hospital, where she has visions of her teenage self and of \"other Tai\". Callie reveals to Jeff that she knows about the frog scientists and wonders if Shauna is truly a bad person. That night, Shauna drives to a suburban home and patiently waits in her car with a leather-bound hunting knife.",
+          "airDate": "2025-03-23",
+          "still": "https://image.tmdb.org/t/p/original/qSuBClT5gUUWQHwFzI3xDgW6Uhw.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/qSuBClT5gUUWQHwFzI3xDgW6Uhw.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "A Normal, Boring Life",
+          "overview": "With a possible escape from their nightmare, the Yellowjackets learn not everyone may be in a rush to leave. In the present, the unexpected return of an old teammate sends Shauna spiraling in ways that should probably concern everyone.",
+          "plot": "The girls interrogate Hannah, who recognizes the girls from the plane crash news. She reveals that there was a search party, but they eventually gave up, disappointing them. Travis reveals to Akilah that he lied about his visions and that she is not \"a seer\", disappointing her. Hannah and Kodiak claim they can get the girls to a rescue point; Lottie claims \"it\" does not want them back there. Natalie rounds the team up to go, but Lottie, Taissa, and Shauna announce they are staying, and Shauna forbids the group from leaving. ------------ In the present, Taissa and Misty learn that Van might need to enter hospice. To appease \"it\", Tai attempts to suffocate a patient on his death bed, but does not follow through before he naturally dies. Callie and Jeff conclude that they are not actually in danger. Jeff reencounters the furniture clients and quickly blames their prior bad meeting on Shauna's behavior. Meanwhile, Shauna breaks into the house and encounters adult Melissa, who is living incognito and is married to Hannah's daughter. Melissa denies any wrongdoing and mocks Shauna for living a lie. Shauna attacks Melissa and bites a chunk out of her arm, forcing her to eat it while threatening to reveal her identity to her family.",
+          "airDate": "2025-03-30",
+          "still": "https://image.tmdb.org/t/p/original/1xL0A5DveIX1iWpR4tbABBeW4Td.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/1xL0A5DveIX1iWpR4tbABBeW4Td.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "How the Story Ends",
+          "overview": "The Yellowjackets' rites of spring come to an end, with Misty getting a pick-me-up and Shauna facing a sticky Melissa problem, all while taking cues from Stravinsky (or Picciotto).",
+          "plot": "Due to Shauna's threats, the team is forced to stay at the campsite longer. Travis rigs the pit with spikes and lures Lottie over to it, but she manages not to spring it. Melissa rebukes Shauna's attitude in front of everyone. Shauna threatens Melissa with the rifle, but Melissa challenges her further; Shauna shoots, grazing the side of Melissa's jacket. Natalie conspires with some of the team to free Hannah and Kodiak, but when they're caught by Shauna, Hannah kills Kodiak and offers to stay with the team. Natalie cries in despair as the first snowfall arrives. Misty recovers the broken emergency locator beacon and shows a shocked Natalie that she can get them home. --------- In the present, Van hallucinates a conversation with her teen self. She awakes in the hospital and leaves with Taissa and Misty. Melissa manages to escape Shauna, but is picked up along the side of the road by Van, Tai, and Misty, and brought back to the house. Melissa denies killing Lottie, and Misty admits to locking Shauna in the freezer. Misty leaves and meets up with Walter; she steals his copy of Lottie's phone and discovers something in his camera roll. Melissa discreetly shuts the flue and poisons the house with carbon monoxide. Van rescues Tai and Shauna and attacks Melissa with a knife, but cannot bring herself to kill her; Melissa stabs Van in the chest. Van finds herself in the plane with her younger self, explaining that despite her death, this is not the end.",
+          "airDate": "2025-04-06",
+          "still": "https://image.tmdb.org/t/p/original/jyH3UR7iksHpvh8XQFaiGgQOY7M.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/jyH3UR7iksHpvh8XQFaiGgQOY7M.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Full Circle",
+          "overview": "Things turn frigid as bloody new alliances get built and spilled. It's our time, right now, down here in the new Queen's court. Eat up, drink deep, and descend.",
+          "plot": "Natalie is furious with Misty for destroying the emergency transponder, but agrees to not tell the team if Misty helps her. The livestock has mysteriously died, leading the team to declare a new hunt. Taissa and Van try to rig the card selection so Hannah is selected, but Shauna catches on and manipulates it so that Mari is chosen. Mari is chased, but the hunt is largely a distraction to get Natalie the satellite phone. Mari springs the covered spike pit trap and is impaled. After the feast, Shauna realizes Natalie is missing; Natalie has taken the satellite phone to the top of a cliff. A male voice on the other end of the phone responds. ----- In the present, Taissa buries Van's body, but not before carving out her heart and eating it. Misty interrogates Callie, who admits to killing Lottie; Callie had pushed Lottie down the stairs in a moment of rage. Callie reveals this to Jeff, and they both flee the house and disconnect from Shauna. Taissa and Misty meet to discuss what to do about Shauna next. Shauna finds the house empty and the discarded note that had accompanied the DAT tape. She rips it up and journals about her desire to claim her power back.",
+          "airDate": "2025-04-13",
+          "still": "https://image.tmdb.org/t/p/original/bx10gBsPuBNwdDAlt4MoqpQVNfC.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/bx10gBsPuBNwdDAlt4MoqpQVNfC.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 4,
+      "name": "Season 4",
+      "airDate": null,
+      "episodes": []
+    }
+  ],
+  "cast": [
+    {
+      "name": "Melanie Lynskey",
+      "character": "Shauna Sadecki",
+      "episodeCount": 29,
+      "profile": "https://image.tmdb.org/t/p/original/kzrWI1sTgnA0H7TCIKzDOUtOW4n.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tawny Cypress",
+      "character": "Taissa Turner",
+      "episodeCount": 29,
+      "profile": "https://image.tmdb.org/t/p/original/9Ar9G1Uye2e2ZiTTiYrn1MutBis.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sophie Nélisse",
+      "character": "Teen Shauna Shipman",
+      "episodeCount": 29,
+      "profile": "https://image.tmdb.org/t/p/original/gRznDS7CEKllld5wqxxUcaE0DWW.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jasmin Savoy Brown",
+      "character": "Teen Taissa Turner",
+      "episodeCount": 29,
+      "profile": "https://image.tmdb.org/t/p/original/yWaCA2iKmVps20SFxwiB1DvbN6j.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sophie Thatcher",
+      "character": "Teen Natalie Scatorccio",
+      "episodeCount": 29,
+      "profile": "https://image.tmdb.org/t/p/original/lQfSgP34VWtZXuyvULsA6ZZl3qE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sammi Hanratty",
+      "character": "Teen Misty Quigley",
+      "episodeCount": 29,
+      "profile": "https://image.tmdb.org/t/p/original/id4myk8Y3pvcQL2cCXxv2Ro3gn3.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Warren Kole",
+      "character": "Jeff Sadecki",
+      "episodeCount": 29,
+      "profile": "https://image.tmdb.org/t/p/original/rwJHDXng0zn4QWhAP36tfhkXWjt.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Courtney Eaton",
+      "character": "Teen Lottie Matthews",
+      "episodeCount": 29,
+      "profile": "https://image.tmdb.org/t/p/original/rluUCxqPhrtvXHDGVSqWulfSBZ3.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/385/963692.jpg"
+    },
+    {
+      "name": "Christina Ricci",
+      "character": "Misty Quigley",
+      "episodeCount": 29,
+      "profile": "https://image.tmdb.org/t/p/original/dzB58d6fNrTEi7nBAU1tySJc2at.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kevin Alves",
+      "character": "Teen Travis",
+      "episodeCount": 29,
+      "profile": "https://image.tmdb.org/t/p/original/nVMBL1LbcrW6zJgXeKpaxHnC1Vt.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Liv Hewson",
+      "character": "Teen Van Palmer",
+      "episodeCount": 29,
+      "profile": "https://image.tmdb.org/t/p/original/rxR5ptYFgUk5nhwOTIbqgN1jOVu.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alexa Barajas",
+      "character": "Teen Mari Ibarra",
+      "episodeCount": 29,
+      "profile": "https://image.tmdb.org/t/p/original/if1HWePT7cmB0xSQcAklNJqxpIG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nia Sondaya",
+      "character": "Akilah",
+      "episodeCount": 29,
+      "profile": "https://image.tmdb.org/t/p/original/sU0MvYIXw5MwkP1JxkwXvuYcdkx.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Steven Krueger",
+      "character": "Ben Scott",
+      "episodeCount": 25,
+      "profile": "https://image.tmdb.org/t/p/original/k8ycMlgSYB9duF7wQjKRutn4QPF.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/385/963688.jpg"
+    },
+    {
+      "name": "Sarah Desjardins",
+      "character": "Callie Sadecki",
+      "episodeCount": 23,
+      "profile": "https://image.tmdb.org/t/p/original/amQ52JYS7bGJ7Hr0y27YmugIpvH.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lauren Ambrose",
+      "character": "Van Palmer",
+      "episodeCount": 19,
+      "profile": "https://image.tmdb.org/t/p/original/67oLiPwWKhy0zqdfm6NX9cXD5is.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Juliette Lewis",
+      "character": "Natalie Scatorccio",
+      "episodeCount": 19,
+      "profile": "https://image.tmdb.org/t/p/original/vvitS2sZSM9RupCf5B0sZYNS6wT.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jenna Burgess",
+      "character": "Teen Melissa",
+      "episodeCount": 19,
+      "profile": "https://image.tmdb.org/t/p/original/tji4r2VFbYG7O3IvYxbg9zgETjC.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ella Purnell",
+      "character": "Jackie Taylor",
+      "episodeCount": 16,
+      "profile": "https://image.tmdb.org/t/p/original/jqrYg35GHuMGwGqEVUthqTLQnay.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/385/963687.jpg"
+    },
+    {
+      "name": "Luciano Leroux",
+      "character": "Javi Martinez",
+      "episodeCount": 16,
+      "profile": "https://image.tmdb.org/t/p/original/tJWRho2fulQhv3rKFs0AED3O8Gu.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mya Lowe",
+      "character": "Teen Gen",
+      "episodeCount": 16,
+      "profile": "https://image.tmdb.org/t/p/original/ajWvs8AxyXzv0giYf1XQiXNYsrU.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Elijah Wood",
+      "character": "Walter",
+      "episodeCount": 14,
+      "profile": "https://image.tmdb.org/t/p/original/7UKRbJBNG7mxBl2QQc5XsAh6F8B.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Simone Kessell",
+      "character": "Lottie Matthews",
+      "episodeCount": 13,
+      "profile": "https://image.tmdb.org/t/p/original/rWZrkFkJVbrLSAxdHRE90it3yGh.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jane Widdop",
+      "character": "Laura Lee",
+      "episodeCount": 12,
+      "profile": "https://image.tmdb.org/t/p/original/wn9jiMFSUZVtlVYwmBFT7WuNcyx.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alex Wyndham",
+      "character": "Kevyn",
+      "episodeCount": 12,
+      "profile": "https://image.tmdb.org/t/p/original/tZ0JfsEYnZqIxEEK8YIvey9zsuV.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Aiden Stoxx",
+      "character": "Sammy Abara-Turner",
+      "episodeCount": 12,
+      "profile": "https://image.tmdb.org/t/p/original/42xffUpYAlk6tHz4ee7Z3rqsbLr.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rukiya Bernard",
+      "character": "Simone",
+      "episodeCount": 12,
+      "profile": "https://image.tmdb.org/t/p/original/1xnSniYd3y84qt6lqLvDIzGT4x0.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Vanessa Prasad",
+      "character": "Teen Gen",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/kh056Ksix4iV5FDNoXMD8KLKLVV.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Anisa Harris",
+      "character": "Teen Robin",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/9AuI50ZL3RkPK8VD1aag1O0XWGT.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rekha Sharma",
+      "character": "Jessica Roberts",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/expPWm2S08u334D9ZiN6MUOozRv.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nicole Maines",
+      "character": "Lisa",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/g0Wv8JJBsHrGbF0ZlDBVIGUifwT.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Peter Gadiot",
+      "character": "Adam",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/462ODB50nmhpuXdpHz2otQ2rfOy.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jeff Holman",
+      "character": "Randy Walsh",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/kVmjCEGhTYJO0R25tPcEAT2wbWm.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Princess Davis",
+      "character": "Yellowjacket #2",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/7xnPCaWsO4sOVVJaAQ4cfg4zWnH.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nuha Jes Izman",
+      "character": "Crystal",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/pp5kCJq7C4XXTiQTm5kqBCIZjsT.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "John Reynolds",
+      "character": "Matt",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/1yzDTZqIeFQaI4i8eGC0TB1UfZg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "François Arnaud",
+      "character": "Paul",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/2aPDGUGRcrBYmrQLc8AklEqp7xI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michelle Choi-Lee",
+      "character": "Campaign Manager",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/WOlWIDRFwHdNWO3y2wXuYW89ug.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jack DePew",
+      "character": "Teen Jeff",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/dyrC7Zqiw5ty6GSkgPdAmAukFVf.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Andres Soto",
+      "character": "Adult Travis Martinez",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/43si5UUvzOYlY7JtyZd49M4EZJ8.jpg",
+      "inCharacter": null
+    }
+  ],
+  "generatedAt": "2026-07-23T04:02:06.891Z"
+}

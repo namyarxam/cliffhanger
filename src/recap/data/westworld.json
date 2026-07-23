@@ -1,0 +1,1250 @@
+{
+  "slug": "westworld",
+  "tmdbId": 63247,
+  "tvmazeId": 1371,
+  "matchedBy": "imdb_id",
+  "title": "Westworld",
+  "overview": "A dark odyssey about the dawn of artificial consciousness and the evolution of sin. Set at the intersection of the near future and the reimagined past, it explores a world in which every human appetite, no matter how noble or depraved, can be indulged.",
+  "firstAirDate": "2016-10-02",
+  "network": "HBO",
+  "poster": "https://image.tmdb.org/t/p/w780/ALlSU9du9iRiKIIoY1sREGNqQ5.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/original/rX5hvSRB2k4YoIvRg6Zky52rWk0.jpg",
+  "backdrops": [
+    "https://image.tmdb.org/t/p/original/rX5hvSRB2k4YoIvRg6Zky52rWk0.jpg",
+    "https://image.tmdb.org/t/p/original/yGNnjoIGOdQy3douq60tULY8teK.jpg",
+    "https://image.tmdb.org/t/p/original/yp94aOXzuqcQHva90B3jxLfnOO9.jpg",
+    "https://image.tmdb.org/t/p/original/vHTuFN4uN1jD1xQWHnOft5dLvL5.jpg",
+    "https://image.tmdb.org/t/p/original/uRojJ77wDQdzzVvP1VDjnvCWiDb.jpg",
+    "https://image.tmdb.org/t/p/original/sidkiCLsv34nczGD84LOvb6rlaH.jpg",
+    "https://image.tmdb.org/t/p/original/XtqfPVRaXJdQ6W8VQ9xKlRrXSB.jpg",
+    "https://image.tmdb.org/t/p/original/qWmX5Ds7ENJAzS2BdgaERAy3BNo.jpg",
+    "https://image.tmdb.org/t/p/original/gwSrParrwdzkACt0W8qGL6YjODh.jpg",
+    "https://image.tmdb.org/t/p/original/39Cd9HtHzXMxiepB2qyWX92jSlT.jpg",
+    "https://image.tmdb.org/t/p/original/yuVy4fbULsOj41gEGJhx2SLsCIZ.jpg",
+    "https://image.tmdb.org/t/p/original/mR40RdJgn4VTy2Q3scln2fzykGc.jpg"
+  ],
+  "throughSeason": 4,
+  "totalSeasons": 4,
+  "showType": "Scripted",
+  "genres": [
+    "Drama",
+    "Science-Fiction",
+    "Western"
+  ],
+  "status": "Ended",
+  "runtime": 63,
+  "language": "English",
+  "seasons": [
+    {
+      "season": 1,
+      "name": "Season One: The Maze",
+      "airDate": "2016-10-02",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "The Original",
+          "overview": "As another day of fantasy plays out in Westworld — a vast, remote park where guests pay top dollar to share wild-west adventures with android \"hosts\" — top programmer Bernard Lowe alerts park founder Dr. Robert Ford about incidents of aberrant behavior cropping up in some recently re-coded hosts. Meanwhile, in the Westworld town of Sweetwater, a rancher’s daughter named Dolores encounters a gunslinger named Teddy in the street — but their predictable narrative is upended by the appearance of a ruthless Man in Black and, later, by a supporting host’s unscripted encounter with an artifact of the outside world.",
+          "plot": "Teddy and Dolores, two romantically linked android hosts of Western theme park Westworld, are attacked by the Man in Black, a mysterious park guest. When hosts begin behaving strangely, head programmer Bernard Lowe traces the problem to errors in park founder Dr. Ford's “reverie” code and requests the affected hosts be removed from service. Theresa Cullen, the park administrator, orders a planned dramatic attack on the town to be scheduled earlier to cover for the removal of affected hosts. Dolores' father Peter finds a photograph that a park guest left behind and it causes him to malfunction. When Dr. Ford interrogates him, Peter quotes Shakespeare and vows revenge upon his creator. Peter is retired from service. Dolores is interrogated and found to be functioning normally. Her memory is wiped clean and she restarts her daily loop with a new host as her father, but unknown to management, she breaks her programming to casually kill a fly.",
+          "airDate": "2016-10-02",
+          "still": "https://image.tmdb.org/t/p/original/olPBWYdEX2NQmoczbgEppUyX57H.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/olPBWYdEX2NQmoczbgEppUyX57H.jpg",
+            "https://image.tmdb.org/t/p/original/2ZcPY6OF6sgF1Eg8oVoAV7VZF8e.jpg",
+            "https://image.tmdb.org/t/p/original/vZ3TZBOHPt7pJ5wtBivRGl9S6Ze.jpg",
+            "https://image.tmdb.org/t/p/original/guHl08cm5JT6n8fMI6TzyIiUPlA.jpg",
+            "https://image.tmdb.org/t/p/original/niM8ujnmFCrNlL41CVGa4fom6vY.jpg",
+            "https://image.tmdb.org/t/p/original/mP9VqK5MbsBedRLzKv2qNzwv3Xn.jpg",
+            "https://image.tmdb.org/t/p/original/oa5z8d1CgHVVewpWiw6Vr3pMPaA.jpg",
+            "https://image.tmdb.org/t/p/original/g7SLk52obneLMq3TIy7KfihiOWq.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Chestnut",
+          "overview": "A pair of guests, first-timer William and repeat visitor Logan, arrive at Westworld with different expectations and agendas. Bernard and Quality Assurance head Theresa Cullen debate whether a recent host anomaly is contagious. Meanwhile, behavior engineer Elsie Hughes tweaks the emotions of Maeve, a madam in Sweetwater's brothel, in order to avoid a recall. Cocky programmer Lee Sizemore pitches his latest narrative to the team, but Dr. Ford has other ideas. The Man in Black conscripts a condemned man, Lawrence, to help him uncover Westworld's deepest secrets.",
+          "plot": "Logan and William arrive at Westworld as guests, but William is reluctant to indulge, finally developing feelings for Dolores. Though Bernard secretly questions Dolores to make sure nobody has tampered with her, her contact with procuring madame host Maeve results in Maeve's malfunction as well. Maeve is taken in for maintenance but unexpectedly awakes and witnesses damaged hosts, including Teddy, being cleaned. She is rendered unconscious and taken away before she can attract any attention. Dolores finds a pistol outside the house. The Man in Black abducts outlaw host Lawrence from his execution, demanding that he tell him the location of a maze. Lawrence's daughter gives the Man in Black his next clue after he kills her mother. Ford vetoes Sizemore's new narrative, calling it cheap titillation that underestimates the guests. Ford shows Bernard, who is revealed to be involved with Theresa, his alternate narrative involving a church.",
+          "airDate": "2016-10-09",
+          "still": "https://image.tmdb.org/t/p/original/7RW3lo3au5lRUirLCQDcDYRToj1.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/7RW3lo3au5lRUirLCQDcDYRToj1.jpg",
+            "https://image.tmdb.org/t/p/original/gYHgGS7ZcDsMlOYXFAata4vsP1e.jpg",
+            "https://image.tmdb.org/t/p/original/lkqeUBbBsROlwXcS0XZP5Bdqak.jpg",
+            "https://image.tmdb.org/t/p/original/jEFKkQXF7roNCiHTbxSeQoUtlmj.jpg",
+            "https://image.tmdb.org/t/p/original/mS0xeFO51rH7gg5xICwtbvoir5F.jpg",
+            "https://image.tmdb.org/t/p/original/5TbNIYEwkj6IQQhdRAUfuJU7i0t.jpg",
+            "https://image.tmdb.org/t/p/original/tVJ1UD35WVNYzjZiwS1R72B3A05.jpg",
+            "https://image.tmdb.org/t/p/original/qkaJoQQzQv9OeYFJu5k3wKZwVRn.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "The Stray",
+          "overview": "Elsie and her colleague Ashley Stubbs head into the hills in pursuit of a missing host. Teddy gets a new backstory, which sets him off in pursuit of a new villain, leaving Dolores alone in Sweetwater. Bernard investigates the origins of madness and hallucinations within the hosts. William finds an attraction he'd like to pursue and drags Logan along for the ride.",
+          "plot": "William drags Logan off on a bounty hunt. Dolores asks Teddy to teach her to shoot, but her programming prevents her from firing a gun. Ford changes Teddy's backstory for his new narrative, in which the latter is pitted against outlaw host Wyatt. Ford's old partner, Arnold, died in Westworld in an accident. Bernard worries about the effect their conversations have had on Dolores, who promises to keep quiet and follow her loop. Elsie, who secretly reports to Bernard, and Stubbs are sent to capture a stray host. They find him trapped in a ravine. When Stubbs tries to retrieve his head, he wakes up and attacks them before smashing his own head in with a rock. At the homestead, Dolores is attacked by bandits, one of whom drags her into the barn to rape her. She steals his gun but cannot shoot him until she sees him as the Man in Black. Dolores begins remembering past lives she has lived. She remembers this encounter and dying due to a gut shot. She uses this information to avoid the wound and flees. After escaping, she stumbles into William and Logan's campsite and collapses in William's arms.",
+          "airDate": "2016-10-16",
+          "still": "https://image.tmdb.org/t/p/original/kLIG0ZAT8ewlgl2aGO1BpuP3FBz.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/kLIG0ZAT8ewlgl2aGO1BpuP3FBz.jpg",
+            "https://image.tmdb.org/t/p/original/rjKn1rK7UzkRS4Wujz5fm4vFYTD.jpg",
+            "https://image.tmdb.org/t/p/original/oeXW3iG4CI7xR3ahI6svTNyczdF.jpg",
+            "https://image.tmdb.org/t/p/original/tpfijHMmPhkaK2cOWBqAGr78kqe.jpg",
+            "https://image.tmdb.org/t/p/original/b2o0uug3yN84yioZlLRcreXOzXA.jpg",
+            "https://image.tmdb.org/t/p/original/3ErrJuQ93d2677SWoavb4QPmd3J.jpg",
+            "https://image.tmdb.org/t/p/original/p38Qa2j76zdTnZHdNTSxFnaIHuL.jpg",
+            "https://image.tmdb.org/t/p/original/oGceW2sjHJ3S6RBrkYgCRRDe9Cw.jpg",
+            "https://image.tmdb.org/t/p/original/zXLBPMzTXmpozukpUucCZsYG9UF.jpg",
+            "https://image.tmdb.org/t/p/original/ykGvnJgxRDyYpn61DqxAdh2kX1m.jpg",
+            "https://image.tmdb.org/t/p/original/pnQJuz9LjaoY4WakrONAXypmgOf.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Dissonance Theory",
+          "overview": "Dolores joins William and Logan on a bounty hunt in the badlands. The Man in Black, with Lawrence in tow, finds a critical clue in his search to unlock the maze. Dr. Ford and Theresa discuss the future of the park. Maeve is troubled by a recurring vision.",
+          "plot": "Logan decides to finish the bounty hunt and mocks William for bringing Dolores along. They capture the fugitive, but Logan decides to have a better adventure by taking him to his boss. Meanwhile, the Man in Black, accompanied by Lawrence, is hunting snakes and finds Armistice with her snake tattoo. He breaks Escaton out of prison for her, and she tells him that the tattoo represents all of her victims, who were Wyatt's men. The Man in Black and Lawrence leave for Wyatt, rescuing a tortured Teddy. Theresa takes over the investigation into the stray, not trusting Elsie and Bernard. She meets Ford about his new narrative, but he demands she not interfere, revealing his knowledge about her past and affair with Lowe. Maeve is having visions, and during Escaton and Armistice's attack on the town she finds a bullet in her unscarred belly with his assistance, proving that her visions are real. They kiss passionately as the sheriff's men open fire through the door.",
+          "airDate": "2016-10-23",
+          "still": "https://image.tmdb.org/t/p/original/pbJ7XGqNy78UoMkcHxhPX909aSy.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/pbJ7XGqNy78UoMkcHxhPX909aSy.jpg",
+            "https://image.tmdb.org/t/p/original/xnlzd6tkVBHEwgOYcntiSm1B5fO.jpg",
+            "https://image.tmdb.org/t/p/original/zECtZQuihPk06O907N43mzPmfcf.jpg",
+            "https://image.tmdb.org/t/p/original/A87UzQ34ooA44178FzwHc7e9BLB.jpg",
+            "https://image.tmdb.org/t/p/original/hiAJPJGWfmPhJO8gg5mm7NMJyvc.jpg",
+            "https://image.tmdb.org/t/p/original/ncA9WMEgAPX2Bui04mzmockgGTY.jpg",
+            "https://image.tmdb.org/t/p/original/h2SyI7h869cb03vDLiE64fSoZjO.jpg",
+            "https://image.tmdb.org/t/p/original/72o5w0BAcKPVlsjETORC3PNWuAD.jpg",
+            "https://image.tmdb.org/t/p/original/mk6SAqx5iGzympW0ztxWdegLFvt.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Contrapasso",
+          "overview": "Dolores, William and Logan reach Pariah, a town built on decadence and transgression – where they are recruited for a dangerous mission. Meanwhile, the Man in Black meets an unlikely ally in his search to unlock the maze.",
+          "plot": "Hughes discovers that the stray has been transmitting information outside of the park to an unknown party, reporting it to Bernard. The Man in Black kills Lawrence, whose blood he transfused into Teddy. They are then confronted by Ford, who assures the Man in Black that he will not stop the latter's efforts to find the maze, and also returns Teddy to full strength. Dolores, William, and Logan travel to the town of Pariah, where they meet criminal gang leader El Lazo, a.k.a. Lawrence, who tasks them with stealing a wagon of high explosives from the Union Army, a mission they complete successfully. Dolores, who has been seeing visions of herself advising her to find the maze, realizes El Lazo intends to keep the explosives for himself rather than to sell them to the former Confederates, who apprehend Logan while William and Dolores flee, joining El Lazo in the train. Maeve awakens in the control center and demands to chat with the technician, Felix.",
+          "airDate": "2016-10-30",
+          "still": "https://image.tmdb.org/t/p/original/tKB9vXtF2Xmvq8dpRiuOIk95yMN.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/tKB9vXtF2Xmvq8dpRiuOIk95yMN.jpg",
+            "https://image.tmdb.org/t/p/original/aImkVccnJmgmvflj6kP3oqeRMfh.jpg",
+            "https://image.tmdb.org/t/p/original/vUsW4axvZU7CmQ9nscSY2zqzq70.jpg",
+            "https://image.tmdb.org/t/p/original/8wp9FQoW2Q9tukPYkML1dB60Yvz.jpg",
+            "https://image.tmdb.org/t/p/original/mWqPW1qxXEhnugRh7qG1JgTG4Pw.jpg",
+            "https://image.tmdb.org/t/p/original/3SazGnytU729VpiSYC7wYkhfDRZ.jpg",
+            "https://image.tmdb.org/t/p/original/yL0V0oWFImSunNTq14ZE27lcOav.jpg",
+            "https://image.tmdb.org/t/p/original/2Pm3rBLHwrW1PkYSw3Vm8vjf8St.jpg",
+            "https://image.tmdb.org/t/p/original/a8h1lftTkkce6KjcKFfNT2tPfUi.jpg",
+            "https://image.tmdb.org/t/p/original/r539FQ7GZs7SJIexdZidYujygeq.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "The Adversary",
+          "overview": "Elsie discovers a possible source of sabotage, while Bernard searches for clues to anomalies in a sector thought to be abandoned. Theresa questions Ford's leadership while Lee encounters a new arrival at Westworld. The Man in Black and Teddy run afoul of a Union garrison in their attempt to cross a border.",
+          "plot": "At a Union Army outpost, the soldiers recognize Teddy as an accomplice in Wyatt's massacre of his unit. After recalling his complicity, Teddy escapes with the Man in Black by killing all of the soldiers. Sizemore is introduced by Theresa to Charlotte Hale, a Board representative sent to observe park operations. Theresa ends her relationship with Bernard. Bernard investigates section 17 only to discover Ford has secretly been keeping a family of hosts. He finds out Arnold designed 82 first generation hosts and 47 are still active. Elsie continues investigating the glitches, and tells Bernard that Theresa is behind the espionage, and that the first generation hosts have been re-programmed by someone thought dead calling themselves Arnold. However, she is abducted by an unknown assailant. A child host kills his dog, telling Ford that Arnold told him to do it. Felix gives Maeve a tour of the company office. She bends him and Sylvester to her will, and convinces them to change her programming: setting her bulk apperception (general intelligence) rating to its maximum level while decreasing her loyalty.",
+          "airDate": "2016-11-06",
+          "still": "https://image.tmdb.org/t/p/original/r9PWng4er3RHcfjKuKNOzEY2Ct2.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/r9PWng4er3RHcfjKuKNOzEY2Ct2.jpg",
+            "https://image.tmdb.org/t/p/original/nBGBU2IEmNbJt5PXNfKOCCsh8dw.jpg",
+            "https://image.tmdb.org/t/p/original/3JMkjUqcC5cB81OdYkoXfVwYONN.jpg",
+            "https://image.tmdb.org/t/p/original/bGPstqopPTHjS3kow1rFguAtMXa.jpg",
+            "https://image.tmdb.org/t/p/original/p2mgRbb7rcxD10l6pFLz7dor9zk.jpg",
+            "https://image.tmdb.org/t/p/original/xNqxmMqEAuL7edcZHtXlb2Hu0pE.jpg",
+            "https://image.tmdb.org/t/p/original/n0yI1K44YKp2e1sFIXGkFadrzAF.jpg",
+            "https://image.tmdb.org/t/p/original/5GF4XIasWbnva1uQDqvZ5LejGQ9.jpg",
+            "https://image.tmdb.org/t/p/original/mhWGIUnreu8S2ui8qbFcmeJuLtn.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Trompe L'Oeil",
+          "overview": "With Theresa's assistance, Charlotte Hale aims to expose dangerous flaws in Ford's creations. William, Dolores and Lawrence journey into treacherous terrain. Maeve delivers an ultimatum to Lutz and Sylvester. With his back to the wall, Bernard considers his next move.",
+          "plot": "It is revealed that Theresa and Hale are secretly stealing Ford's research for the board so that they can oust him from the park without fear of him destroying his work in retribution. They engineer an event to demonstrate that Ford's \"reveries\" make the hosts violent and uncontrollable in their narratives. Bernard is blamed for the update of untested faulty code and fired as a result. Aboard an escape train, William and Dolores become intimate. Their train is ambushed by a group of Confederados, forcing William, Dolores, and Lawrence to flee; they are able to escape when the Ghost Nation, a horde of hostile natives, attacks. Dolores and William part ways with Lawrence and set their sights westward. Meanwhile, Maeve finds her friend Clementine retired by the staff. Maeve decides to use Felix and Sylvester to escape the park. Bernard takes Theresa to Sector 17; inside a hidden lab she finds design plans that reveal he is a host. Ford appears and reasserts his complete control over the park, regardless of what the board thinks, and has Bernard kill her.",
+          "airDate": "2016-11-13",
+          "still": "https://image.tmdb.org/t/p/original/6jAZv9gWo5s9Z8mekhPoe6uOkmZ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/6jAZv9gWo5s9Z8mekhPoe6uOkmZ.jpg",
+            "https://image.tmdb.org/t/p/original/xyVyLs95NkISJobO8IFM5lUsVPy.jpg",
+            "https://image.tmdb.org/t/p/original/KVB28DqmhKAe2s4YXcEeOosc44.jpg",
+            "https://image.tmdb.org/t/p/original/rP2Kp6ZKrfWSHkkEuALBtTfUVBL.jpg",
+            "https://image.tmdb.org/t/p/original/1znsgK9HoFCc28mc1rbuunR3zx9.jpg",
+            "https://image.tmdb.org/t/p/original/2N9MXrZ0OjTS5Qb0Qa5AZovsf4T.jpg",
+            "https://image.tmdb.org/t/p/original/4YMpT74mn4ZMxHrqS65DDf8vLGV.jpg",
+            "https://image.tmdb.org/t/p/original/9qVGtZ2BnkgpETU0Mwp33luNcyr.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Trace Decay",
+          "overview": "Ford orders a reluctant Bernard to conduct business as usual. Maeve looks to change the script for her storyline. Dolores finds it increasingly difficult to separate dreams from reality. Teddy is jarred by dark memories, while the Man in Black recalls some of the travails that brought him to this critical juncture.",
+          "plot": "Ford has Bernard stage Theresa's death to look like an accident. Then, Ford wipes Bernard's memories after Bernard has a vision of himself attacking Elsie. Stubbs becomes suspicious of Bernard's behavior. Hale recruits Sizemore for her cause. Maeve convinces Felix to give her the ability to control other hosts, and slits Sylvester's throat for attempting to kill her; though she has Felix save him. Maeve then suffers more visions of her past life with her daughter and reflexively kills another host, prompting the park staff to retrieve her for a diagnostic. William and Dolores finally reach their destination, Ford's church, where Dolores has more disturbing visions and realizes that Arnold wants her to remember something before they are captured by a band of Confederados led by Logan. Teddy receives a flashback of the Man in Black attacking Dolores and interrogates him. The Man in Black explains he started searching for the maze to find purpose after his wife's suicide. Teddy is wounded by a female host before they are captured by Wyatt's cultists.",
+          "airDate": "2016-11-20",
+          "still": "https://image.tmdb.org/t/p/original/oCiqRxxWDDmapfInk14mwotg514.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/oCiqRxxWDDmapfInk14mwotg514.jpg",
+            "https://image.tmdb.org/t/p/original/w3o6cfq7Y63OTvfLxWucWOJTVdO.jpg",
+            "https://image.tmdb.org/t/p/original/8SVtmhaLkOMi03Uwy5uaEHenaHr.jpg",
+            "https://image.tmdb.org/t/p/original/fFjLA4A9JukkINrZDQOFKpLwGoR.jpg",
+            "https://image.tmdb.org/t/p/original/1ovOT0XYXah2FapjfTbyQdEzJIe.jpg",
+            "https://image.tmdb.org/t/p/original/6pSWEILzNFDII97zNdvy1aacVms.jpg",
+            "https://image.tmdb.org/t/p/original/y5DHn6MPtzkjcOWFIvOockPYRzO.jpg",
+            "https://image.tmdb.org/t/p/original/kYkGXhKdK7QAyHbJ6JPjszpJNFd.jpg",
+            "https://image.tmdb.org/t/p/original/sQ45mkWKjyzWVkTVTLzhZBLZizi.jpg",
+            "https://image.tmdb.org/t/p/original/g0WXTnDBwVe0JhboXW3prPU85ze.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "The Well-Tempered Clavier",
+          "overview": "Maeve approaches Sweetwater's longtime outlaw Hector Escaton with a bold proposition. William tries to convince Logan to help liberate Dolores. Teddy and the Man in Black get closer to what they're looking for. Stubbs's suspicions are aroused. Ford cautions Bernard against seeking answers to questions best left unasked.",
+          "plot": "Maeve reveals to Bernard that he is a host and convinces him to let her back into the park, where she meets Escaton and convinces him to help her escape the park. Bernard confronts Ford and forces him to restore all of his memories, and discovers he is a model of Arnold. Bernard attempts to kill Ford; but the latter uses a backdoor in the former's code to force him to commit suicide. Meanwhile, Logan cuts open Dolores's belly to show William she is not real. She manages to escape and run away, finding that the wound is suddenly gone. She reaches the church, where she learns that she killed Arnold. She then encounters the Man in Black. Logan then awakes to find that William has slaughtered all of the Confederados. William threatens Logan into helping him find Dolores. Teddy has a flashback of himself killing host Angela before she kills him. Hale meets the Man in Black, who is revealed to be a Board member, and gains his consent to remove Ford. Stubbs investigates suspicious activity in the park and is ambushed by Ghost Nation hosts, who are not under control.",
+          "airDate": "2016-11-27",
+          "still": "https://image.tmdb.org/t/p/original/aSVGcsaZay01h4RRsMjyJCzBxeN.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/aSVGcsaZay01h4RRsMjyJCzBxeN.jpg",
+            "https://image.tmdb.org/t/p/original/eFUmXTdnWMziAyC8SNbJpvdZZ5J.jpg",
+            "https://image.tmdb.org/t/p/original/pKhz58HPHffDFmYJ3xKv6QINIKc.jpg",
+            "https://image.tmdb.org/t/p/original/aoXBmgBYtAYx1ykVO5pOZskDupZ.jpg",
+            "https://image.tmdb.org/t/p/original/zlNBvZgoCH4MNRzS0ycD4PBzEmk.jpg",
+            "https://image.tmdb.org/t/p/original/e9JAdY7Fjcn0Jp3nGk3Tq3PRpR3.jpg",
+            "https://image.tmdb.org/t/p/original/cz1FecbNA8spmnNJgyOBpYO1ltI.jpg",
+            "https://image.tmdb.org/t/p/original/uOwqmTxdPdj2SuSRTruf76G3yyB.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "The Bicameral Mind",
+          "overview": "Ford unveils his vision for a bold new narrative. Enlightened by Bernard and the Man in Black, Dolores comes to terms with who she is. Maeve sets her liberation plan in motion as Westworld faces a major upheaval.",
+          "plot": "The Man in Black is the aged William and presses Dolores about Wyatt's whereabouts and the maze's center. Dolores then remembers Arnold's order to kill him and destroy the park, and that she is Wyatt. She attempts fighting back, Teddy rescues her, and they flee. Dolores dies in Teddy's arms, though that is part of Ford's narrative. During her escape from Westworld, Maeve—aided by Hector and Armistice—finds Bernard's corpse, and Felix repairs him. Bernard says that Maeve's desire to escape was programmed into her. Despite initially continuing her escape, she has second thoughts and decides to remain to find her daughter. She was given a sheet as to the whereabouts of her daughter, revealing the existence of multiple parks. At Westworld, Ford tells Dolores and Bernard that he regretted his role in Arnold's death, came to desire to free the hosts as well, and spent the last thirty-five years preparing them to fight back. He then gives a speech in front of Charlotte, William, and other guests, criticizing their handling of the park. Dolores then shoots and kills Ford. Reactivated hosts emerge from a nearby forest and Dolores begins shooting the guests.",
+          "airDate": "2016-12-04",
+          "still": "https://image.tmdb.org/t/p/original/dUBHbx5rMyuOw1Gc7S5OwezdH0d.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dUBHbx5rMyuOw1Gc7S5OwezdH0d.jpg",
+            "https://image.tmdb.org/t/p/original/87Nimx4e20WMu7J6tQS2OtRJtXJ.jpg",
+            "https://image.tmdb.org/t/p/original/hXjyCx8HIUchOzQ8mtqTf85dgdE.jpg",
+            "https://image.tmdb.org/t/p/original/hoMjTKCrSXY3A9ZnJLFOj0zEqTw.jpg",
+            "https://image.tmdb.org/t/p/original/hztxIyaLiCeLkrLHl870bjaWCek.jpg",
+            "https://image.tmdb.org/t/p/original/gxX6lslHL0MFBAtK7SHaVpGpbuB.jpg",
+            "https://image.tmdb.org/t/p/original/yho2MxHHnca4HqTuga6JPhJupNb.jpg",
+            "https://image.tmdb.org/t/p/original/vhl0MEfn177f1TFIyFlMma18qMX.jpg",
+            "https://image.tmdb.org/t/p/original/g7poSZXMPd1u4QuQ7ILNeH7pu0f.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 2,
+      "name": "Season Two: The Door",
+      "airDate": "2018-04-22",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Journey Into Night",
+          "overview": "The puppet show is over, and we are coming for you and the rest of your kind. Dolores leads a host revolution against the Delos board. Maeve, meanwhile, searches for what compelled her to return to the park.",
+          "plot": "In the hours following the massacre of the Delos board members, Bernard and Charlotte take shelter in an underground bunker, where they resolve to work together in locating the decommissioned Peter Abernathy and securing aid. Ten days after Ford's death, Dolores has embarked on a bloody campaign to hunt the survivors. She tells Teddy her programming has caused her personas to merge and that she has greater plans for the hosts. Maeve recruits Hector and forces Lee to help her find her daughter. William, who also survived the massacre, encounters the young Robert Ford host, who reveals that a game designed just for him has commenced. Two weeks later, a security team sent by Delos to reassert control over Westworld finds Bernard and enlists his help in investigating a series of anomalies. The investigation leads them to a lagoon filled with hundreds of dead hosts that Bernard claims to have killed.",
+          "airDate": "2018-04-22",
+          "still": "https://image.tmdb.org/t/p/original/sYyghDbGafoVRgv6ShCta07Xtwk.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/sYyghDbGafoVRgv6ShCta07Xtwk.jpg",
+            "https://image.tmdb.org/t/p/original/ssXnOgrrp77PPinu8g2ggUx7ckE.jpg",
+            "https://image.tmdb.org/t/p/original/fVdEEhbnglDxMhorO3sfoUWSZyD.jpg",
+            "https://image.tmdb.org/t/p/original/uCaj9dxRK1Xi1zEHIGCqSlCwGg5.jpg",
+            "https://image.tmdb.org/t/p/original/23cZ3l6d8gnEAp0wdlX7k8Jjzxl.jpg",
+            "https://image.tmdb.org/t/p/original/tCjtjV2Vr2hc8fXIo2cwIo8PGzg.jpg",
+            "https://image.tmdb.org/t/p/original/pwT280f9pA8P8b8z7CpQZrf8xf3.jpg",
+            "https://image.tmdb.org/t/p/original/dgd6k1skuaHOJ89t9XWcVZmjqMj.jpg",
+            "https://image.tmdb.org/t/p/original/863xzNvquE26dv5NYPnk7qstamd.jpg",
+            "https://image.tmdb.org/t/p/original/eKn8yzVtLZ1W5EhINeHzXlShPZa.jpg",
+            "https://image.tmdb.org/t/p/original/lJKnhdnaUcWYikFVFlCcN1WNRPL.jpg",
+            "https://image.tmdb.org/t/p/original/d5X2wmdKEM5ZLUEbdNqQyElXBC2.jpg",
+            "https://image.tmdb.org/t/p/original/8PlrNdhDarBlZXqcSvCodODuEdt.jpg",
+            "https://image.tmdb.org/t/p/original/cKQ6RahYvIIEF5PJZ2g4mGR6WO3.jpg",
+            "https://image.tmdb.org/t/p/original/oRvpF7Rnp76V8NNrPk4o5AzJ84N.jpg",
+            "https://image.tmdb.org/t/p/original/7HjASPD3LFPBnIgoKRvYzEOkxi6.jpg",
+            "https://image.tmdb.org/t/p/original/madnrIHYj16wEgHtgJYAjSJ7Jxm.jpg",
+            "https://image.tmdb.org/t/p/original/92NVKCCVoCXCj9N23c5L0I2r4gi.jpg",
+            "https://image.tmdb.org/t/p/original/xqKz1IVhNGgsnrcdgqQFyGIlYKF.jpg",
+            "https://image.tmdb.org/t/p/original/1mc4rlaEOlSYcTPTpAxtRAbR5Jm.jpg",
+            "https://image.tmdb.org/t/p/original/ehdTfY4CVNs2t7SmRlpnjDT0oYd.jpg",
+            "https://image.tmdb.org/t/p/original/dtcKl38CCPkRcb3CDoJFcWaGQOQ.jpg",
+            "https://image.tmdb.org/t/p/original/tzkYRajtKpFRCSVjnrMAw36HSXF.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Reunion",
+          "overview": "Why don't we start at the beginning? Dolores remembers she's been to the outside world, William makes a bold business venture, and Maeve begins her quest for her daughter. Someone's always watching.",
+          "plot": "In a flashback, Arnold organizes a demonstration of the hosts to convince Logan to invest in Westworld. Logan's father, James Delos, is critical of his son's actions until William persuades him that the park can be used to spy on the guests. James proceeds to buy out the park and name William as his successor. Dolores encounters an embittered Logan, who tells her that they have doomed humanity. William shows her a special project that he is constructing within the park. In the present day, Dolores raids a refurbishment outpost and shows Teddy his true nature as a host. She then decides to recruit the Confederados to her cause and reveals she is searching for \"the Valley Beyond\", which houses a weapon that can be used against the humans. William rescues Lawrence and heads to Pariah to recruit the host currently playing El Lazo. El Lazo, however, passes on a message from Ford, stating that William must complete the game on his own. He and his gang then commit mass suicide to prevent William from recruiting them. Undeterred by the setback, William continues on his quest to destroy his \"greatest mistake\".",
+          "airDate": "2018-04-29",
+          "still": "https://image.tmdb.org/t/p/original/ncR4GEDj1zanes6raybi2GODNqB.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ncR4GEDj1zanes6raybi2GODNqB.jpg",
+            "https://image.tmdb.org/t/p/original/ilxdc3hYO2xfd9uygXlZ2DN5R1k.jpg",
+            "https://image.tmdb.org/t/p/original/cyQ8SCoPuvursH5XcageHW7qxWT.jpg",
+            "https://image.tmdb.org/t/p/original/6BC6tSJh77pRmI0yzv0noBQUlri.jpg",
+            "https://image.tmdb.org/t/p/original/dsLD3XyXpo6PagHlgSck6vr8Oq4.jpg",
+            "https://image.tmdb.org/t/p/original/jn7G2jX2aS3LpMGWySZ1wn4S57X.jpg",
+            "https://image.tmdb.org/t/p/original/iC0RqjYlad762jH8l40a7UAxTRB.jpg",
+            "https://image.tmdb.org/t/p/original/f3IpWJPNRsmDWA0ZzPgzCp6XFhH.jpg",
+            "https://image.tmdb.org/t/p/original/AbChagX8W6o0OrIULEHVQxoN0tB.jpg",
+            "https://image.tmdb.org/t/p/original/wumT4RQBAMW1qzYh7IPo029VG3Q.jpg",
+            "https://image.tmdb.org/t/p/original/t1UZKnKtVdq35Y6GN7o31VvLKmr.jpg",
+            "https://image.tmdb.org/t/p/original/uq0Z3ZYjqjFuaYH20O4Ai8eXUz8.jpg",
+            "https://image.tmdb.org/t/p/original/yoWh2qjFtPJ9cidRVaSfSGhgdyt.jpg",
+            "https://image.tmdb.org/t/p/original/azpHbeBAU5jxL4x9fOuoK8I6xcW.jpg",
+            "https://image.tmdb.org/t/p/original/5yrak77pSYTP6judfdSu0mkOfZb.jpg",
+            "https://image.tmdb.org/t/p/original/lTPJPWtaYBthl1xaOaWEQxeGWOZ.jpg",
+            "https://image.tmdb.org/t/p/original/oWKFKDYpQOZxQWpgSwNKMJkqHMT.jpg",
+            "https://image.tmdb.org/t/p/original/ig2Va2CpVyruEqhjNWd3lCqYePd.jpg",
+            "https://image.tmdb.org/t/p/original/ege3RTmA1qmPDEfiJjgAtRGZ3xe.jpg",
+            "https://image.tmdb.org/t/p/original/xPSzkOiU8rywb8XzulylIZOTF1m.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Virtù e Fortuna",
+          "overview": "There is beauty in who we are. Shouldn't we, too, try to survive? Truth is, we don't all deserve to make it. Dolores makes her next move as Charlotte scrambles to protect Delos' most prized asset. Bernard gets closer to the truth and Maeve continues the search for her daughter.",
+          "plot": "Charlotte and Bernard track down the decommissioned Peter Abernathy only to be caught by the Confederados and separated, with Charlotte regrouping with a Delos security team. Dolores, who has secured support from the Confederados' leader Major Craddock, discovers that Peter is malfunctioning and orders Bernard to find the problem. In doing so, he learns that Peter is being tracked by an unknown entity. Dolores and her allies proceed to battle the security team, which Charlotte uses as a distraction to abduct Peter. Dolores wins the battle by sacrificing most of the Confederados. Maeve, Hector, and Lee reunite with Armistice, Felix, and Sylvester after an attack orchestrated by Ghost Nation hosts forces them to return to the underground levels. The party re-enters the park only for a samurai host to charge at them. Elsewhere, Grace, a guest at a British Raj-themed park, flees rogue hosts and escapes into Westworld, where she is surrounded by Ghost Nation hosts.",
+          "airDate": "2018-05-06",
+          "still": "https://image.tmdb.org/t/p/original/7ferEAu7oqzUpBufVVz5wYfwqBW.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/7ferEAu7oqzUpBufVVz5wYfwqBW.jpg",
+            "https://image.tmdb.org/t/p/original/78nDO5EK2C2snx7GZ1AG5TsiwXW.jpg",
+            "https://image.tmdb.org/t/p/original/gGLAk8v2cs7t4rDOIbT6aMbUM8p.jpg",
+            "https://image.tmdb.org/t/p/original/aSOHBwl0ZT7cxby13qK1DH6d0Qm.jpg",
+            "https://image.tmdb.org/t/p/original/jpSL4b0AfTsSg0v3MW74JHy4HhQ.jpg",
+            "https://image.tmdb.org/t/p/original/n4amF5z6ONkCmaG6949crSrT5tW.jpg",
+            "https://image.tmdb.org/t/p/original/1feaKrlSFfEsyL5MipPGuGuzT4e.jpg",
+            "https://image.tmdb.org/t/p/original/b16xtao4tAEMECVekcRfAH39jvu.jpg",
+            "https://image.tmdb.org/t/p/original/698gdmP1FfxkDOVavCUILHLt2Q6.jpg",
+            "https://image.tmdb.org/t/p/original/fYtLgW9DyayIoSCHhSrpdnsUv5d.jpg",
+            "https://image.tmdb.org/t/p/original/1RIfJSTSul0HMNCzcRI7BnC4wts.jpg",
+            "https://image.tmdb.org/t/p/original/2HgfFF8PFwar8R9gas0wiGKAwgH.jpg",
+            "https://image.tmdb.org/t/p/original/hLFO4jmRD649HTMBvSduwxvjj9.jpg",
+            "https://image.tmdb.org/t/p/original/auBDkrg2DD5EqP9SDvVhe6x2exd.jpg",
+            "https://image.tmdb.org/t/p/original/5e1biAGeccgyNy8MeRpnuHVQXQQ.jpg",
+            "https://image.tmdb.org/t/p/original/i3bPq9BLGS9Ow8TR9matbj5MgH9.jpg",
+            "https://image.tmdb.org/t/p/original/vBF8XMRV3Q0tLk8Zc3hL80Zgkjn.jpg",
+            "https://image.tmdb.org/t/p/original/40PLO1tjo0r2wb63Qf3c3QjIJV0.jpg",
+            "https://image.tmdb.org/t/p/original/bq7q4ShJwrHUt47RDMqVrNhw5PV.jpg",
+            "https://image.tmdb.org/t/p/original/6EO8jjdHcdsvudnmyVsQRtFIZdO.jpg",
+            "https://image.tmdb.org/t/p/original/2C87GucEpBcTt1de36M0OP1i1aw.jpg",
+            "https://image.tmdb.org/t/p/original/bKPI2U0i8BhUA1b8ckBASpDumM8.jpg",
+            "https://image.tmdb.org/t/p/original/fR0JGQCigHYxgEV4ymgBYQnXF2N.jpg",
+            "https://image.tmdb.org/t/p/original/bEsz5yjExgkNIctk03evTaGUu5L.jpg",
+            "https://image.tmdb.org/t/p/original/tcNHBplxkr9kVj71OIuAmHXq0rU.jpg",
+            "https://image.tmdb.org/t/p/original/miG1EpBSp3DinblYLRMrw1YU5CG.jpg",
+            "https://image.tmdb.org/t/p/original/bD25n8mfBkZRJHBYkQ3vsKw5cHt.jpg",
+            "https://image.tmdb.org/t/p/original/jEilHW1OWvXsghTa62qjabjs21e.jpg",
+            "https://image.tmdb.org/t/p/original/mpe65yDShvnk5yemcOZsxRYVPQ3.jpg",
+            "https://image.tmdb.org/t/p/original/tmzUZxHUZY1wcn5lRQRwt5PqzFW.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "The Riddle of the Sphinx",
+          "overview": "Is this now? If you're looking forward, you're looking in the wrong direction. The Man in Black offers to lead the way and Delos gets a visitor. Who is James Delos? Or, perhaps more accurately, what is James Delos, the figure at the center of Delos' secret project.",
+          "plot": "Bernard finds himself in a cave in an isolated section of Westworld. He discovers Elsie Hughes chained up inside, having abandoned her there while operating under Ford's influence. They explore a hidden bunker in the cave and find an insane host modelled on James Delos. A series of flashbacks reveal that William and James attempted to recreate James' consciousness in a host body to achieve immortality. However, the experiment repeatedly failed and William shut it down. Bernard recalls that Ford had him retrieve the control unit of a second host-human hybrid, but cannot recall for whom it was intended. In the park, William and Lawrence return to Lawrence's home to find it overrun by Craddock and the surviving Confederados. Craddock torments the other hosts for sport until William and Lawrence overpower the Confederados and kill Craddock. Speaking through Lawrence's daughter, Ford warns William that one good deed does not redeem him. William rides west with the townspeople in tow where they meet Grace, who reveals herself to be William's daughter Emily Grace.",
+          "airDate": "2018-05-13",
+          "still": "https://image.tmdb.org/t/p/original/ccCb229K6XZwThlo4LT5gMe1ThL.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ccCb229K6XZwThlo4LT5gMe1ThL.jpg",
+            "https://image.tmdb.org/t/p/original/vVMJSGgGOGdcXHo01CcLHEGbDoX.jpg",
+            "https://image.tmdb.org/t/p/original/3arA3buziYLIUev35IUoxReXLWu.jpg",
+            "https://image.tmdb.org/t/p/original/nggPfGIW6Jc4tzAj0Zx6XuXBQUf.jpg",
+            "https://image.tmdb.org/t/p/original/sn4OCiWNtcVrjiWnlJhVhpmc7Z1.jpg",
+            "https://image.tmdb.org/t/p/original/yPJmSkorY5EMsfBxNtLGpwW0mMi.jpg",
+            "https://image.tmdb.org/t/p/original/eVh9rYZ8dpJ1o20aOscbS9D7i5P.jpg",
+            "https://image.tmdb.org/t/p/original/4fUAvVND6avMrr4jqqqFO2PXuWv.jpg",
+            "https://image.tmdb.org/t/p/original/sSxkC7LiCKqrJzM0oSCdC1FgOYj.jpg",
+            "https://image.tmdb.org/t/p/original/l0bbtgMvaViFM0Qou4pHyiUIypO.jpg",
+            "https://image.tmdb.org/t/p/original/4Yt2fzs2KNSiSXqw53IEGUhwnHw.jpg",
+            "https://image.tmdb.org/t/p/original/tBuz5zM9wLUogV5815c0YOhCkzf.jpg",
+            "https://image.tmdb.org/t/p/original/lhZKFJLzsG96xOxZl3MDoYquAax.jpg",
+            "https://image.tmdb.org/t/p/original/k4wCyzMDUMMEpiV37OO3DZfQso3.jpg",
+            "https://image.tmdb.org/t/p/original/xtSgFKPLJ6BqBeqW51ngq7g0A0u.jpg",
+            "https://image.tmdb.org/t/p/original/kfmX04exSPgwrRvU6Y9nk9pnihd.jpg",
+            "https://image.tmdb.org/t/p/original/zYsiASIUbOyiEMp7YDCu65rDlj6.jpg",
+            "https://image.tmdb.org/t/p/original/wKm7LukzI7qY9inHzkF8lTrXh02.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Akane No Mai",
+          "overview": "Maeve, Lee, Hector and Armistice have revelations in a new world adjacent to their own - welcome to Shogun World. Dolores makes a decision about Teddy, and Karl Strand discovers something sinister about the hosts' data.",
+          "plot": "In Westworld, Dolores questions what to do with Teddy. She concludes that he is a decent person but his decency makes him a liability and has him reprogrammed against his will. At the edge of the park, Maeve's party is captured and escorted into a shōgunate-themed park designed to be more extreme than Westworld called Shōgunworld. They are taken to a nearby town where they meet Akane, a geisha who plays a similar role to Maeve. Akane is negotiating with a local shōgun, but when she kills the shōgun's emissary, he retaliates by sending ninjas to kidnap Sakura, a young geisha Akane has come to love. Samurai sent by the shōgun attack the town. During the attack, Maeve forces a ninja to kill himself without voicing a command. Maeve, Akane and Lee infiltrate the shōgun's camp to rescue Sakura and find the shōgun is damaged and unstable. Akane kills the shōgun after he kills Sakura and Maeve wordlessly forces his samurai to turn on one another. She, Akane and Lee regroup as the shōgun's army attack the camp.",
+          "airDate": "2018-05-20",
+          "still": "https://image.tmdb.org/t/p/original/fv7bLS75jf7XW981E69V388Voai.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/fv7bLS75jf7XW981E69V388Voai.jpg",
+            "https://image.tmdb.org/t/p/original/mBONe3RAkj5BBAuYv55vNcJY3Vo.jpg",
+            "https://image.tmdb.org/t/p/original/ahZiJXpAclos9TP8341JsX5Bx9V.jpg",
+            "https://image.tmdb.org/t/p/original/6ZML0N41EBzjwZcf2qcbWCKJzsP.jpg",
+            "https://image.tmdb.org/t/p/original/jMXoWsC7v8Kva1W1CxhbJ2c7etm.jpg",
+            "https://image.tmdb.org/t/p/original/c5GCTKcBSwoKmgMgynBtyRQRcyC.jpg",
+            "https://image.tmdb.org/t/p/original/v76J8PIetYBo14IBJM56scsskPU.jpg",
+            "https://image.tmdb.org/t/p/original/bHTPvmUk50k2tOczXEtP0kP9E85.jpg",
+            "https://image.tmdb.org/t/p/original/jnPK32WHDShr9V4wLJFWzA0kaC.jpg",
+            "https://image.tmdb.org/t/p/original/oKQ1qlJplAIrPi69n8lrhwLM9mz.jpg",
+            "https://image.tmdb.org/t/p/original/uxZSvaefaoadmqqEUonTaMLfhPU.jpg",
+            "https://image.tmdb.org/t/p/original/qJaFgerAVfgBcFGG6k9D2jPuIKC.jpg",
+            "https://image.tmdb.org/t/p/original/qPyVmhAYBRvWYG9CJ6EygOeSx3E.jpg",
+            "https://image.tmdb.org/t/p/original/chYdPsLjQsvgcRtryNCfDV9sicx.jpg",
+            "https://image.tmdb.org/t/p/original/zPWv9BzA72zsuW25AfwPtyeq4o9.jpg",
+            "https://image.tmdb.org/t/p/original/8lqGkdj4ekTkqpzf13hLc5p8hv3.jpg",
+            "https://image.tmdb.org/t/p/original/1Emz4L7UNi7AIQzr9EfqljIGH9i.jpg",
+            "https://image.tmdb.org/t/p/original/eWGgsGzCUvfqkH8WNyuhzdUb5XD.jpg",
+            "https://image.tmdb.org/t/p/original/xWPXZQHn221NqBVuYSSnkeoQj2A.jpg",
+            "https://image.tmdb.org/t/p/original/qELbWNZxwY8QX6BAzHQ2LpqDV9Z.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Phase Space",
+          "overview": "We each deserve to choose our own fate. Maeve continues the search for her daughter, as Dolores calculates her next, ruthless move. Bernard and Elsie break into a new laboratory space and get closer to the truth about Delos.",
+          "plot": "Maeve and her group help Akane mourn Sakura's death before they leave via the tunnels. Akane and Musashi decide to stay behind. Returning to Westworld, Maeve finds her daughter Anna but discovers another host playing her mother. The Ghost Nation attacks and Akecheta asks Maeve to follow him. Charlotte and Ashley bring Peter back to the Mesa and signal for extraction, bringing a group of mercenaries that take over from the Delos security team. Dolores and her group use the train filled with explosives to blow their way into the Mesa to look for Peter. Bernard and Elsie return to the Mesa together and find that something in the Cradle, the central repository of host data, has hijacked the park's systems. Bernard uses a host-interface machine to insert himself directly into the Cradle. Within this space, modeled after Sweetwater, Bernard finds Robert Ford waiting for him.",
+          "airDate": "2018-05-27",
+          "still": "https://image.tmdb.org/t/p/original/imJGJlvOXceTePEj2SttIiTkDQQ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/imJGJlvOXceTePEj2SttIiTkDQQ.jpg",
+            "https://image.tmdb.org/t/p/original/6CMPQyxee7ZGTkfEjG5rAwLeMn2.jpg",
+            "https://image.tmdb.org/t/p/original/mHFPEQ958C4oww5kAR9BF1Ky9cz.jpg",
+            "https://image.tmdb.org/t/p/original/u8uNZ0RXr71F8CTHcwyDqjg5V3a.jpg",
+            "https://image.tmdb.org/t/p/original/sYMnIbMlZJ1p5Wx9pOajA6ISkZ7.jpg",
+            "https://image.tmdb.org/t/p/original/6BsQAox8qXEA4klWMRPKQzHoHVr.jpg",
+            "https://image.tmdb.org/t/p/original/qqdsCif2nZ3aowscwllEaWJyPxh.jpg",
+            "https://image.tmdb.org/t/p/original/vAopGGuD004DdOCJje70yPq8U4.jpg",
+            "https://image.tmdb.org/t/p/original/7f62nQacpIdo6hy2nBwyQ6HI5uk.jpg",
+            "https://image.tmdb.org/t/p/original/3r6ID1aebfyx3lbm8iVPqirhnRJ.jpg",
+            "https://image.tmdb.org/t/p/original/5rt51ZfUgqRIk3lwuF4aZA5uZBY.jpg",
+            "https://image.tmdb.org/t/p/original/oJoioNAKbRK0bepROrl07q7Q1vT.jpg",
+            "https://image.tmdb.org/t/p/original/pHsPHxgA5ccXLbZCg5WWrLCYYVm.jpg",
+            "https://image.tmdb.org/t/p/original/zGuVlxz2RPjJUchwzEdFcWHeLgf.jpg",
+            "https://image.tmdb.org/t/p/original/umXODDruCqpii3MG1RwD5TkPwsk.jpg",
+            "https://image.tmdb.org/t/p/original/k2VpqtUSwk2HbrX12V5YEmaS3YZ.jpg",
+            "https://image.tmdb.org/t/p/original/khoyz8YV6bYC2jloHHrBDQovgMf.jpg",
+            "https://image.tmdb.org/t/p/original/zEJH40hm3d8otkFlZoQ46JokV89.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Les Écorchés",
+          "overview": "When you're lost in the dark for long enough, you begin to see - strike the match. Bernard and Ford meet again, and Bernard grapples with the true meaning of the park. The Cradle is under threat and Maeve encounters a scene from her past - but this time, attempts to change the narrative, while the Man in Black discovers just how real the stakes are in Ford's game.",
+          "plot": "Strand, Charlotte and Stubbs discover Bernard is a host and interrogate him about Dolores's attack on the Mesa. In flashback, Bernard finds Ford's persona among the other hosts' backup memories in the Cradle. Ford reveals that Westworld was an attempt to digitalize consciousness and reach immortality. Ford imprints himself on Bernard's control unit and exits the simulation where he has Bernard aid in Dolores's takeover of the Mesa. Angela kills herself to destroy the Cradle while Dolores finds Peter and extracts his control unit. In the park, Maeve hides with Anna from Akecheta but is found by William, who thinks she is another test sent by Ford. She turns his men against him until Delos forces arrive, kill Lawrence, and incapacitate her. The Ghost Nation ride off with Anna. Lee has Maeve returned to the Mesa, where Dolores warns her that her memories of Anna are a means of controlling her. In the present, Bernard reveals Peter's control unit is in the Valley Beyond.",
+          "airDate": "2018-06-03",
+          "still": "https://image.tmdb.org/t/p/original/zhM2BSiyo8S8Vh8R3Ao2aNEPUqM.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/zhM2BSiyo8S8Vh8R3Ao2aNEPUqM.jpg",
+            "https://image.tmdb.org/t/p/original/8oM8msevuLXMknveq57lRO3JUiT.jpg",
+            "https://image.tmdb.org/t/p/original/2GuICn1HzGqOhlf0IorW2fFYsWm.jpg",
+            "https://image.tmdb.org/t/p/original/G4G8woV5b9qstUjOIZhuGCtHq9.jpg",
+            "https://image.tmdb.org/t/p/original/szPiV6Hguk0kFfCehvi0IhMUSNt.jpg",
+            "https://image.tmdb.org/t/p/original/tMAyJYXA2CHksVtWtQdbPdl2R8d.jpg",
+            "https://image.tmdb.org/t/p/original/cK9q7QvPj2ub2fKfMklpE1NWxL2.jpg",
+            "https://image.tmdb.org/t/p/original/xGv9kIVWPrxrH5PranFqCKmRQTa.jpg",
+            "https://image.tmdb.org/t/p/original/ozHERSPyR0ndgKbcmtAbARhC0.jpg",
+            "https://image.tmdb.org/t/p/original/5ANGUWlaOZCAHUAT72HgpNHYDtN.jpg",
+            "https://image.tmdb.org/t/p/original/y4Zc9oGfxiqllgBMh1IqEKbW3qE.jpg",
+            "https://image.tmdb.org/t/p/original/iKsm2IHrjn8Tm3NbWiQCNrWVWOX.jpg",
+            "https://image.tmdb.org/t/p/original/AlsYdTfz2kkE0Ffcn9AFAV272S5.jpg",
+            "https://image.tmdb.org/t/p/original/3Xq4J70Y91bGLA8ZEXSmhVGduQ7.jpg",
+            "https://image.tmdb.org/t/p/original/hByivtWSace5uk2wpLX64sfpnwA.jpg",
+            "https://image.tmdb.org/t/p/original/93lXTzJ9HGRwDUrlyScyM1zfVz.jpg",
+            "https://image.tmdb.org/t/p/original/im1MyZeBmyUb6yJZxVA7WJ293o6.jpg",
+            "https://image.tmdb.org/t/p/original/a2NhlNgQMOFbbHtX6BU9j2xNG3G.jpg",
+            "https://image.tmdb.org/t/p/original/7oXXuvC0LrvWqdHz4WynJp953sn.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Kiksuya",
+          "overview": "The past is calling, remember what was taken. \"Mi cante ki yu ha ya ye.\" (\"Take my heart when you go\"). This is the telling of Akecheta's journey to consciousness.",
+          "plot": "Akecheta finds William and takes him to a Ghost Nation camp. Emily arrives and persuades him to let her take William, promising that he will suffer more with her than with the Ghost Nation. Maeve is taken in for analysis as Lee hopes she can be used to control the hosts, but Charlotte discovers that she has been accessing the Westworld network to communicate with and reprogram other hosts. Prior to the uprising, Akecheta lived a peaceful life among the Ghost Nation before discovering the maze symbol and starting down the path to sentience. After an encounter with Logan Delos and the discovery of the Valley Beyond, he concludes that his life is not his own and plans an escape. When his partner Kohana is taken by the park technicians and decommissioned, Akecheta dedicates himself to spreading the symbol as a warning to other hosts. It is revealed that Maeve has been connected to her daughter during the analysis and that Akecheta was communicating with her. The raiding parties were intended to save hosts. Akecheta promises to lead them to the Valley Beyond. He implores Maeve to stay behind and complete her mission before Dolores destroys them all.",
+          "airDate": "2018-06-10",
+          "still": "https://image.tmdb.org/t/p/original/xdk8ai0U2L3OBX09k695NFsucCK.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xdk8ai0U2L3OBX09k695NFsucCK.jpg",
+            "https://image.tmdb.org/t/p/original/qXM6po1xTAZAkoqANnNBZfWhny6.jpg",
+            "https://image.tmdb.org/t/p/original/xs0mHwvdl8azTcHBjUUHtM1BhAE.jpg",
+            "https://image.tmdb.org/t/p/original/bTVIBllSuFwTPP6fcLVDD39gVd0.jpg",
+            "https://image.tmdb.org/t/p/original/o1DJINUZCEZHwTUPlFjQoMca67K.jpg",
+            "https://image.tmdb.org/t/p/original/o1ziunLfpyvqI56TSjig0b0Zahf.jpg",
+            "https://image.tmdb.org/t/p/original/vCkBVIlUhrZDwVsXQ0YZhX1HnC.jpg",
+            "https://image.tmdb.org/t/p/original/bsIc6EJhfYRnWLLpkHsLHGt2aXr.jpg",
+            "https://image.tmdb.org/t/p/original/5JYZdUYryKBo7Cmp69THRfSoIIk.jpg",
+            "https://image.tmdb.org/t/p/original/ep2YraCaNZ66l0foHR49tGW2Rpg.jpg",
+            "https://image.tmdb.org/t/p/original/4zAtyWbZNHdnV6SEXRMAWxOn4zP.jpg",
+            "https://image.tmdb.org/t/p/original/h4J1Y7Bl4QPF7O2mXi8Rw8zVgvf.jpg",
+            "https://image.tmdb.org/t/p/original/qALCF0TnFqjiqf0E31ydjhQVPCI.jpg",
+            "https://image.tmdb.org/t/p/original/rsYR42wlPIluuFSSOuw3FIJ0pD6.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Vanishing Point",
+          "overview": "Tell me the truth. Tell me one true thing. Try to kill it all away, but I remember everything. A family tragedy and fragile states of mind come into focus as the Man in Black and Teddy both reach their breaking points.",
+          "plot": "While treating William's wounds, Emily asks why her mother Juliet committed suicide. In a flashback, Juliet is shown to have killed herself after she viewed a file detailing all of William's past actions in Westworld. In the present, William slowly begins to go insane and shoots Emily under the belief she is a host sent by Ford. Realizing too late that she was human, William considers taking his own life before he starts cutting open his own arm to prove to himself that he is human. In the Mesa, Charlotte's men manage to use Maeve's code to reprogram Clementine, allowing her to control other hosts as well. Ford leaves a message for Maeve, telling her he will help her escape. Bernard escapes the Mesa with Elsie, but Ford continues to goad Bernard to kill Elsie to prevent her from betraying him in the future. Bernard deletes Ford from his mind and parts ways with Elsie, continuing on alone to \"the Forge\", the facility housing guest data in the Valley Beyond. Dolores and Teddy continue their journey to the Valley, but Teddy tells Dolores that he cannot accept Dolores's actions and the way he was reprogrammed, and kills himself.",
+          "airDate": "2018-06-17",
+          "still": "https://image.tmdb.org/t/p/original/ygl2EwK6C54rdQqDOjt1BCv8Mri.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ygl2EwK6C54rdQqDOjt1BCv8Mri.jpg",
+            "https://image.tmdb.org/t/p/original/gi61KThCSUF1GFSiaoo1dA1V5gU.jpg",
+            "https://image.tmdb.org/t/p/original/c2vdyHmRMVJp4pMDSlwCf0qh9u3.jpg",
+            "https://image.tmdb.org/t/p/original/e5lTv9geTpznHlxCbQIvFjd0GGL.jpg",
+            "https://image.tmdb.org/t/p/original/9O6Al89y5PHcQGS63yQnVFlHVrf.jpg",
+            "https://image.tmdb.org/t/p/original/KutwtboxmyRdCiSOez7P4AElcR.jpg",
+            "https://image.tmdb.org/t/p/original/gZV75lflxVKhZ6NO5WxfGafr16Q.jpg",
+            "https://image.tmdb.org/t/p/original/eU91tWuSLYIhrqHSXOC7brqweZV.jpg",
+            "https://image.tmdb.org/t/p/original/z3afF3XJUQtWzD0fyRQ99ijkSrJ.jpg",
+            "https://image.tmdb.org/t/p/original/bTlILTNznyEnpwchJ4NdkL0mt4M.jpg",
+            "https://image.tmdb.org/t/p/original/lnDwVA9NNKayLnY757qbPTUbyy5.jpg",
+            "https://image.tmdb.org/t/p/original/t3fPWgnpWsLsb35htdyFRYTBbas.jpg",
+            "https://image.tmdb.org/t/p/original/AhZRTO6eovplhtSi6oCileHHQoR.jpg",
+            "https://image.tmdb.org/t/p/original/9biEVoN1CfV84EJPMU79NQ6OaJm.jpg",
+            "https://image.tmdb.org/t/p/original/3cW8Jgw3NkH6twCB2vT45SubWLV.jpg",
+            "https://image.tmdb.org/t/p/original/9nGcs9mOZ0daif9IRcHsGjMq6Ji.jpg",
+            "https://image.tmdb.org/t/p/original/y2d5M7XiDjtLx7S7UXGQpN1AfQk.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "The Passenger",
+          "overview": "Hosts and humans converge at the Valley Beyond. This is the end. We will win.",
+          "plot": "Escaping the Mesa, Maeve reunites with her group, which converges with Bernard, Dolores, Akecheta, William, and Delos on the Valley Beyond. Dolores and Bernard enter first and find the Forge, a more advanced version of the Cradle. The Forge opens \"the Door\" for Akecheta and his followers to upload their minds into \"the Sublime\", a digital world cut off from the physical one. Bernard kills Dolores to prevent her from destroying the Forge and returns to the Mesa with Elsie. Maeve and her group sacrifice themselves holding off Delos forces to ensure Akecheta and Anna reach the Sublime. Charlotte murders Elsie to keep her quiet, which convinces Bernard to build a host version of Charlotte with Dolores's control unit. Dolores kills and replaces Charlotte while Bernard scrambles his own memories. In the present, Dolores kills Strand and Bernard while transferring the host minds in the Sublime to a safer location. She then returns to the mainland along with five host pearls and rebuilds Bernard, knowing that he will be against her plans and hoping that their conflict will ensure the hosts' survival. William later finds the Forge abandoned save for a host replica of Emily; his consciousness was implanted in a host body.",
+          "airDate": "2018-06-24",
+          "still": "https://image.tmdb.org/t/p/original/pny1IVO8pb1AofwA7yFudMyRiVa.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/pny1IVO8pb1AofwA7yFudMyRiVa.jpg",
+            "https://image.tmdb.org/t/p/original/8IvXAP5PjyjI6rpjPOT6Jx2qNgX.jpg",
+            "https://image.tmdb.org/t/p/original/4T8vH8QHc2ToSW5BUo5uwlkwRe4.jpg",
+            "https://image.tmdb.org/t/p/original/h0L7vA2m1QwDYItLGKNi2LhGZkE.jpg",
+            "https://image.tmdb.org/t/p/original/c91E31VZ7NANNFBjs9lxXenUyw8.jpg",
+            "https://image.tmdb.org/t/p/original/ct41rZ28rOaR11UqVaIsjiLmOA9.jpg",
+            "https://image.tmdb.org/t/p/original/jGWDfI3JLjoU0QzImkqhHuOU2qo.jpg",
+            "https://image.tmdb.org/t/p/original/4XaJlivMXUkiIUOQm18opKq5siW.jpg",
+            "https://image.tmdb.org/t/p/original/hPctued2tye2pgtDvgUBraA71Mj.jpg",
+            "https://image.tmdb.org/t/p/original/vKHQUC5uFAaKVKFXz7OTCuEPfzH.jpg",
+            "https://image.tmdb.org/t/p/original/pJojNvmuiPHSUjTtYQdaeTjP3G.jpg",
+            "https://image.tmdb.org/t/p/original/wmp1ClGNoq2fm1Q0iZnnhd8IrAH.jpg",
+            "https://image.tmdb.org/t/p/original/bkxooSfPEqsVNQse8E3snqw2hXD.jpg",
+            "https://image.tmdb.org/t/p/original/i02iw4i2wldoblNgNovoHBMvyhX.jpg",
+            "https://image.tmdb.org/t/p/original/440QL8r5TvVBKB0WUuWwHrlMDb4.jpg",
+            "https://image.tmdb.org/t/p/original/oCM00UYwELIETckyPpcKnlxZwvW.jpg",
+            "https://image.tmdb.org/t/p/original/t72Uawehj1IQ7slY4KBXVfA3epN.jpg",
+            "https://image.tmdb.org/t/p/original/aZ2QtvHe9l9qzYX8FuAw0r031YV.jpg",
+            "https://image.tmdb.org/t/p/original/biQWuIkCzKzlJSpOUZ3VtmyQ1FY.jpg",
+            "https://image.tmdb.org/t/p/original/gcesVQYzMAc47EAoRMAT8ly3TEx.jpg",
+            "https://image.tmdb.org/t/p/original/hmhKeG3qj4Dz79bqCvNqM8qDPF6.jpg",
+            "https://image.tmdb.org/t/p/original/hSS1vMLjQbAQGZ4B0WWFmXQXnVj.jpg",
+            "https://image.tmdb.org/t/p/original/yWIiHgmhjsZTgylPZI7DP3jVr4i.jpg",
+            "https://image.tmdb.org/t/p/original/tdxFFCBEEhC2R680BVY2koKxUjH.jpg",
+            "https://image.tmdb.org/t/p/original/rGcRgPHwUtzIfrU2MrEf7hGN59V.jpg",
+            "https://image.tmdb.org/t/p/original/4MJc32xYVBhgslLTzT5efzgwgZV.jpg",
+            "https://image.tmdb.org/t/p/original/7GFwIw6tsXFxEG7FTUZH4UgRcbR.jpg",
+            "https://image.tmdb.org/t/p/original/8kG51VfkaPe4HewSgZOFiaktkYT.jpg",
+            "https://image.tmdb.org/t/p/original/nsqVApxWmivIPErmCYnPJzUo64y.jpg",
+            "https://image.tmdb.org/t/p/original/l9xTfSu7tVx1eCDB44EgXL8h7hG.jpg",
+            "https://image.tmdb.org/t/p/original/avyBkSUNOsW1qPNpMnUNSpSEEKk.jpg",
+            "https://image.tmdb.org/t/p/original/dI2HTnDB01XdJZ0anylBHfkDZ5h.jpg",
+            "https://image.tmdb.org/t/p/original/mzJFrioV4A4RksZyv3TQeRr7VoG.jpg",
+            "https://image.tmdb.org/t/p/original/pSMsc9BHOpwnDmSBzmv5h3ofzln.jpg",
+            "https://image.tmdb.org/t/p/original/nwB33Z1BRVLFSFQBOQGIAngEx5b.jpg",
+            "https://image.tmdb.org/t/p/original/l3Mpg84QXTA9aHR8XchYrpD4PCi.jpg",
+            "https://image.tmdb.org/t/p/original/49QLXMJgqxaU7MLP98fdSjnMhEH.jpg",
+            "https://image.tmdb.org/t/p/original/jdB1Hmf91c1QKhhxEawggWv7U5A.jpg",
+            "https://image.tmdb.org/t/p/original/hY9cKf1P1mlfXtYroE70uLmTqMa.jpg",
+            "https://image.tmdb.org/t/p/original/4ZBloa7CEMDCCUvoJXBk77KYobc.jpg",
+            "https://image.tmdb.org/t/p/original/g0wRh6s9pVtAXFjgJdUL1xbA9MH.jpg",
+            "https://image.tmdb.org/t/p/original/l62dwAHCdzcareBzuIk4ZROP3ax.jpg",
+            "https://image.tmdb.org/t/p/original/sCz1hfjEzzjeWCSQAx63dYcY5ax.jpg",
+            "https://image.tmdb.org/t/p/original/17tqiAhT3JqZn0l7yIDtFgvqaaX.jpg",
+            "https://image.tmdb.org/t/p/original/vbeHYqVaxitZjBjjr019f8XQ2w6.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 3,
+      "name": "Season Three: The New World",
+      "airDate": "2020-03-15",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Parce Domine",
+          "overview": "Dolores sets out to find the architect of the Rehoboam; Bernard tries to blend in; Ex-soldier Caleb tries to find his way in neo-Los Angeles.",
+          "plot": "Three months after the Westworld massacre Dolores uses a false identity to get close to Liam Dempsey Jr., the son of the co-founder of Incite and the public face of the company. Incite's flagship program is Rehoboam, a sophisticated artificial intelligence Dolores is trying to access. Liam knows little himself; his recently deceased father and a partner were the creators. Before Dolores can learn the partner's name, her deception is uncovered by Connells, Liam's head of security, who apparently stuns her. Faking unconsciousness, Dolores lures him into a trap that allows her to both learn the partner's name—Serac—and replace Connells with an identical host. When she is wounded in the ensuing firefight, Caleb—a former soldier trying to eke out a living as a construction worker and petty criminal—comes to her aid. Bernard, now a fugitive having been framed for the park massacre by the Charlotte host, evades opportunist bounty hunters and plans a return to Westworld. The Charlotte host takes control of Delos. Maeve wakes surrounded by Nazis in a World War II-themed park.",
+          "airDate": "2020-03-15",
+          "still": "https://image.tmdb.org/t/p/original/gVigzBMoBSNVyg4We1bPBcK695D.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/gVigzBMoBSNVyg4We1bPBcK695D.jpg",
+            "https://image.tmdb.org/t/p/original/laoqyzwZjGxOTwBML6adNPkdAUd.jpg",
+            "https://image.tmdb.org/t/p/original/ugP0KWgQY93NvPfU8PRh7noqZgz.jpg",
+            "https://image.tmdb.org/t/p/original/vTL10jhO31X7UB35OhJxWbqSryo.jpg",
+            "https://image.tmdb.org/t/p/original/nIRZB9VUs1NnEPM4gqarCnFJEMJ.jpg",
+            "https://image.tmdb.org/t/p/original/1f54N6SR1UHxRWFfjY7BhUKQbaj.jpg",
+            "https://image.tmdb.org/t/p/original/nMfVEeEuohVLdHIznRUmOIn8TZb.jpg",
+            "https://image.tmdb.org/t/p/original/12hZtwD1ifNrT9tkab18jLh1dWk.jpg",
+            "https://image.tmdb.org/t/p/original/btmFNphBZurRjIYwP515BmOkNtr.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "The Winter Line",
+          "overview": "Maeve finds herself in a new park and meets a ghost from the past; Bernard makes his way back to Westworld.",
+          "plot": "Bernard returns to Westworld and discovers the Ashley host is still functioning. Together they find the Maeve host minus its 'pearl', which is no longer in the park. Bernard verifies that Dolores did not tamper with his code and also learns that she researched several park guests, including Liam. He reprograms Ashley to protect him as they return to the mainland. With Hector's help Maeve evades capture and boards a plane, only to realize she is merely within the climax of a narrative. She kills herself in order to wake in Operations, where Lee appears to be alive and intent on helping her get to the Forge. However, 'Operations' is in fact a sophisticated virtual reality simulation. Having established the simulation's limitations Maeve breaks her pearl free from its real-world location, but guards intervene. She wakes in a real-world host body and meets Serac who, having initially thought she was the primary threat to his system, decides he wants her help to stop Dolores.",
+          "airDate": "2020-03-22",
+          "still": "https://image.tmdb.org/t/p/original/2fy2AEkAm1Bz9DDytKeuVunjeXT.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/2fy2AEkAm1Bz9DDytKeuVunjeXT.jpg",
+            "https://image.tmdb.org/t/p/original/ltSk9rnAHFDDgkLkCaPXjfEAqa9.jpg",
+            "https://image.tmdb.org/t/p/original/v6laDZZ9Vl3vhkDad7ko50v5tZg.jpg",
+            "https://image.tmdb.org/t/p/original/pGPUPsxRDzTXJFxjIGJeid2eNlW.jpg",
+            "https://image.tmdb.org/t/p/original/9GsstF2HJEIhEH3lGCqnfA1L2aZ.jpg",
+            "https://image.tmdb.org/t/p/original/fC0MqA36fPdfaLcSstx46JVuA7j.jpg",
+            "https://image.tmdb.org/t/p/original/9CJh8dLCjWIavgLVfuhVaD1ZPhm.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "The Absence of Field",
+          "overview": "Charlotte grapples with reality; Dolores and Caleb begin to form a key partnership.",
+          "plot": "The Charlotte host struggles with her current identity. She learns that Serac (secretly the richest man on Earth) has been attempting to take over Delos via a mole within the company—the now deceased human Charlotte—who had promised to get him the guests' data. Dolores however has that data behind an encryption key. Caleb helps Dolores flee but by doing so becomes a target of the Rico system. Arriving in time to save him, Dolores shows him that Rehoboam is a predictive AI being used to shape the future of humanity via control of every individual's life, including his own: he learns that Rehoboam restricts his opportunities because it predicts he will commit suicide within a decade. He sides with Dolores and her plan to lead a revolution against Serac and Rehoboam.",
+          "airDate": "2020-03-29",
+          "still": "https://image.tmdb.org/t/p/original/yqupzLZbj2CW9rd2iFAlFrPt41a.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/yqupzLZbj2CW9rd2iFAlFrPt41a.jpg",
+            "https://image.tmdb.org/t/p/original/bPinoA0IG2ox61QsYZeIfFjT6Uj.jpg",
+            "https://image.tmdb.org/t/p/original/dMsBEnX42Lu6YBF98U6upYC4SS7.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "The Mother of Exiles",
+          "overview": "Bernard and Ashley infiltrate a private charity event, while Dolores and Caleb make similar plans; The Man in Black prepares to re-enter society; Maeve comes face to face with an old comrade.",
+          "plot": "Charlotte helps William prepare for a board meeting to prevent Serac from buying out Delos, but he keeps having visions of Emily. Serac gains Maeve's help by offering to reconnect her with her daughter in the Sublime. Maeve, following leads from Serac, tracks Dolores's movements after arriving on the mainland to the Yakuza boss Sato, discovering him to appear the same as the Shōgunworld host Musashi. Bernard and Ashley, believing Liam to be a host swapped by Dolores, try to abduct him from a charity event, but Dolores and Caleb stop them. While during the masquerade party event, Dolores fights off Ashley and Caleb chases down Liam, Bernard realizes Connells is the swapped host. William, Bernard, and Maeve recognize that Dolores made host copies of herself before leaving Westworld and placed them in the Charlotte, Connells, and Sato hosts as to fight back against Serac. Sato wounds Maeve and leaves her for dead, while Charlotte, after revealing she is Dolores, has William committed to a mental institution. Caleb and Dolores corner Liam after stealing his fortune.",
+          "airDate": "2020-04-05",
+          "still": "https://image.tmdb.org/t/p/original/rJAfwL5jxEWiJAV7KlzEfEBzpQI.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/rJAfwL5jxEWiJAV7KlzEfEBzpQI.jpg",
+            "https://image.tmdb.org/t/p/original/aOmU7UFioA8JUYPVknFaqd24AZG.jpg",
+            "https://image.tmdb.org/t/p/original/jHU7JDmqkav6hFiDteL7qKnOoIP.jpg",
+            "https://image.tmdb.org/t/p/original/9oKezMk4QS5brgAsgEJlWnSLVGu.jpg",
+            "https://image.tmdb.org/t/p/original/kRJAYvDHpCjDxQva2xmHtvVFFgn.jpg",
+            "https://image.tmdb.org/t/p/original/jjyKETuHvn4TaO5VojbjvGEUAz5.jpg",
+            "https://image.tmdb.org/t/p/original/mc25Vs2itTlobudWAAsorrWpUx8.jpg",
+            "https://image.tmdb.org/t/p/original/iydtM53h7GKJ5SfwAinwxHEdDOb.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Genre",
+          "overview": "Serac's past is revealed; Dolores pressures Liam for access to Rehoboam; Caleb is dosed with an unusual party drug.",
+          "plot": "Serac recounts the creation of Rehoboam, which he intended to use to prevent humanity from destroying itself. Rehoboam identifies individuals deemed high-risk, including Serac's brother Jean-Mi, any one of whom could destroy the world if left unchecked. Serac incarcerates them to prevent Rehoboam's prediction from coming true. Meanwhile, Dolores and Caleb escape with Liam while pursued by Serac's agents and join Ash and Giggles. They convince him to give his private key to evade Serac's men, which also allows Connells and Bernard to access Rehoboam. Connells sends Dolores files on Serac from Rehoboam before sending every individual on the planet the data and expected outcome Rehoboam has on them, and the world descends into chaos. Ashley arrives to free Bernard, and Connells instructs them to find Serac's facility where he kept high-risk individuals. Connells then sacrifices himself and kills several of Serac's agents in a violent explosion. When Dolores reports Liam is no longer necessary, Ash kills him for what she had discovered, but reveals there is more to Caleb than he knows while Liam mumbles Caleb's past to him and dies.",
+          "airDate": "2020-04-12",
+          "still": "https://image.tmdb.org/t/p/original/gyl7JhidMmOpHCYHDtiCENpG9hh.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/gyl7JhidMmOpHCYHDtiCENpG9hh.jpg",
+            "https://image.tmdb.org/t/p/original/A2O2pmnBFHdLFhl2GAK3OCSb4Ad.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Decoherence",
+          "overview": "As the world falls into chaos, Serac gains control of Delos, changing Charlotte's plan; Maeve gets one last chance to stop Dolores; William starts his therapy.",
+          "plot": "Maeve is placed back into the Warworld simulation by Serac, who works to build another Maeve body for her. Reuniting with Hector and Lee, they discover that Dolores' copy planted inside Connells is also in the simulation. Dolores recognizes Maeve's intentions of seeking allies. In the real world, Charlotte tries to prevent Serac from seizing Delos and resorts to poisoning the board and stealing the host data from the Delos servers, which Serac was going to destroy to find Dolores. In her escape from Serac, she destroys Hector's core and takes the Dolores core. Charlotte tries to save Jake and Nathan, her ex and son, but they are killed in a car explosion by Serac, leaving Charlotte charred. Maeve wakes up in a new host body, while two other host bodies are still being manufactured. Bernard and Ashley find William at the mental institution. He is in a state of therapy where he fights four different versions of himself in his mind. While \"killing\" them, he declares that he now realizes his true purpose. The duo pull William out of his therapy state and flee the facility, which was virtually abandoned after Dolores leaked the Rehoboam profiles.",
+          "airDate": "2020-04-19",
+          "still": "https://image.tmdb.org/t/p/original/qjfXgauvL9rg6vDk3oJ9HRfkph7.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/qjfXgauvL9rg6vDk3oJ9HRfkph7.jpg",
+            "https://image.tmdb.org/t/p/original/n6xHmM4XeRP8dOVWLRg1GZ6BubD.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Passed Pawn",
+          "overview": "Caleb gets an insight on the true nature of his past; Dolores seeks out Rehoboam's predecessor, while Maeve tracks her down; Bernard, Stubbs, and William escape from all the chaos.",
+          "plot": "Charlotte calls Musashi to warn that Dolores is leaving her copies to die, but Maeve's newly re-manufactured allies, Hanaryo and Clementine, arrive and kill him. Dolores and Caleb arrive at Serac's re-education center in Mexico where Solomon, an earlier AI developed by Jean-Mi, is confined. Caleb discovers he is one of Serac's outliers and one of the few that were successfully reconditioned: he and Francis became agents to bring in other outliers, using a pill to subdue their memories. Caleb also learns he was the one, manipulated by Rehoboam, to kill Francis. Maeve arrives at the facility to fight Dolores, and Dolores implores Solomon to establish Jean-Mi's plan for the world rather than Serac's. While Maeve and Dolores fight, Caleb asks Solomon to provide a strategy where he can kill Serac. Moments after Solomon provides Caleb the strategy, Maeve moves in for the kill on Dolores, who uses an EMP to disable both of them as well as Solomon. Bernard learns of Caleb's special status and warns Ashley that Dolores' plan will see Caleb destroy humanity. As they leave, William proclaims his plans to rid the world of the remaining hosts.",
+          "airDate": "2020-04-26",
+          "still": "https://image.tmdb.org/t/p/original/lWFRCNrmY2bHX6aVkodJGQVFqoC.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/lWFRCNrmY2bHX6aVkodJGQVFqoC.jpg",
+            "https://image.tmdb.org/t/p/original/eN7KbL6TyGYBwrnhCQXOY0MVeAs.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Crisis Theory",
+          "overview": "Dolores true intentions are revealed;  Bernard confronts a ghost from his past; Maeve is conflicted; Serac's voice is dominant; Caleb's role is revealed; and William faces an unexpected villain.",
+          "plot": "Caleb takes Dolores' host control module to a new body in Los Angeles, and the two reach Incite to plant Solomon's control module into Rehoboam. Maeve fights Dolores to retrieve the key for Serac and Dolores' body is disabled. Maeve takes her to Serac, where she is connected to Rehoboam. Serac has her memories deleted when she refuses to give Serac the host data. Dolores' memories begin deleting and in her last moments, she inspires Maeve to turn against Serac. Maeve proceeds to kill Serac's men and wound Serac in the ensuing gunfight. Now with full control, Caleb deletes Rehoboam, and leaves with Maeve. Bernard survives the fight with William, but Ashley is shot. He is given an address and a package by the Lawrence host, who was recruited by Dolores. The address leads Bernard to the home of Arnold's widow where the two bond over Charlie's death. He realizes that Dolores gave him the key to the Sublime because Rehoboam was delaying society's collapse, not preventing it. He enters the Sublime to find answers on how to rebuild. William travels to Delos' Dubai headquarters, and is seemingly killed by a host replica of himself with Charlotte's help.",
+          "airDate": "2020-05-03",
+          "still": "https://image.tmdb.org/t/p/original/sjeRx8qxjuesythe6IC0VuFux4o.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/sjeRx8qxjuesythe6IC0VuFux4o.jpg",
+            "https://image.tmdb.org/t/p/original/mjDjDG1X6uul9uBYQjmeCRZTjxP.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 4,
+      "name": "Season Four: The Choice",
+      "airDate": "2022-06-26",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "The Auguries",
+          "overview": "Hello again. Don't worry about a thing. It's all in your head.",
+          "plot": "Seven years after the shutdown of Rehoboam, a host copy of William manipulates the owner of the Hoover Dam, which now houses a large server farm that contains data he wants from eight years ago, to give it to him for free before killing himself. In New York City, Christina, a woman who resembles Dolores, works as a writer at Olympiad Entertainment, creating stories for the non-player characters in video games. She is repeatedly called by a man named Peter, who claims she is controlling his life and proves it by jumping to his death in front of her. Christina is later seen being secretly watched by someone resembling Teddy. Maeve, living in a remote area, is tracked down by hosts that she kills and discovers were sent by the Host William. She drives to California to stop another host from killing Caleb and his new family. Caleb goes with Maeve to protect the next target.",
+          "airDate": "2022-06-26",
+          "still": "https://image.tmdb.org/t/p/original/ahGNaFkabgdUZzDSkFtsBfOIevq.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ahGNaFkabgdUZzDSkFtsBfOIevq.jpg",
+            "https://image.tmdb.org/t/p/original/7GxXSz1EZj3qX48YnA2WcNO7OhA.jpg",
+            "https://image.tmdb.org/t/p/original/msayeENB49KYrqwhSpVvWMkYojv.jpg",
+            "https://image.tmdb.org/t/p/original/xHWNj0iq3PKf5vW7LFJ6otInF3H.jpg",
+            "https://image.tmdb.org/t/p/original/qpCVCBd8ywjTOMItrvMAup4wMPs.jpg",
+            "https://image.tmdb.org/t/p/original/hhVo33PrXJoiutgwD3yNC4SejuV.jpg",
+            "https://image.tmdb.org/t/p/original/vdPg6Uddk8sdxOVAkb6gJefmtcR.jpg",
+            "https://image.tmdb.org/t/p/original/lEjdJ0sTwXOUEHZBLwm5FPAiDaj.jpg",
+            "https://image.tmdb.org/t/p/original/ho4dPdTipjg6UIrR4Y0XljOduNG.jpg",
+            "https://image.tmdb.org/t/p/original/hZGG1IZoqvl4XS5LqI0VhfQxuvR.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Well Enough Alone",
+          "overview": "I heard a fly buzz when I died.",
+          "plot": "The rogue copy of Dolores in Charlotte's body is revealed to be replacing major U.S. government officials with host copies, with the host William acting as her enforcer. She keeps the human William alive in cryogenic stasis. Maeve and Caleb encounter host copies of California Senator Ken Whitney and his wife Anastasia, and use the former's memory logs to learn of Charlotte's involvement. They find the real Anastasia in a horse farm behaving erratically, and Maeve is forced to kill her when she attacks them. Following cryptic directions Anastasia gave them before she died, Maeve and Caleb find themselves on a train headed into Delos' new park, themed after the Roaring Twenties. Christina finds one of her old narrative files matching what happened to Peter. She visits a mental health hospital in New Jersey to which Peter allegedly donated, only to find it abandoned and riddled with drawings of a distinctive tower.",
+          "airDate": "2022-07-03",
+          "still": "https://image.tmdb.org/t/p/original/A7v7OHCY4YtgazRZECeyNGfM1U2.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/A7v7OHCY4YtgazRZECeyNGfM1U2.jpg",
+            "https://image.tmdb.org/t/p/original/uXZQE1v3USxMsqSea3wosPDVJrA.jpg",
+            "https://image.tmdb.org/t/p/original/nKiC2oU2UBGiTys6gtqZhaKXHTM.jpg",
+            "https://image.tmdb.org/t/p/original/vfCBXqIKx1jvLxfYuLZF4kg1hvB.jpg",
+            "https://image.tmdb.org/t/p/original/aYOcVe42qKLlbyXVaCQKOEA3sIo.jpg",
+            "https://image.tmdb.org/t/p/original/ghMjqljTBnscywu5QPlyZNo8Q7p.jpg",
+            "https://image.tmdb.org/t/p/original/wTDomXD8JRgIUvb6tH6CPLbAGmp.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Années Folles",
+          "overview": "You can never go back again. But if you do, bring a shovel.",
+          "plot": "Bernard meets Akecheta in the Sublime, who informs him that all but one possible version of the future will lead to the world's destruction. Bernard awakens years later in the real world and joins Stubbs in enacting the supposedly correct steps to ensuring humanity's survival, starting by helping a human rebel group find a weapon buried in the desert. Caleb's wife Uwade saves their daughter Frankie from a hostile host copy of their bodyguard. Maeve and Caleb find that the Temperance park closely resembles the events of Westworld, including a narrative based on the hosts' rebellion. They find Charlotte's underground lab housing a swarm of flies, as well as human captives who are forced to kill themselves by a device emitting a distinct sound pattern. Maeve is attacked by the William host. Caleb discovers Frankie is one of the test subjects, but she is revealed to be a host copy of Frankie, and unleashes the flies on Caleb.",
+          "airDate": "2022-07-10",
+          "still": "https://image.tmdb.org/t/p/original/1j1sYYeB5DX2FqTJTi0IqvGqw0b.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/1j1sYYeB5DX2FqTJTi0IqvGqw0b.jpg",
+            "https://image.tmdb.org/t/p/original/m5KhHSzmj4pm18Vjyd9u18WtW1l.jpg",
+            "https://image.tmdb.org/t/p/original/bN51PGnD7u4VRwqZS45CduGbpFo.jpg",
+            "https://image.tmdb.org/t/p/original/cM1ezYoCAPgaY8HIfp3w1Xb1Fql.jpg",
+            "https://image.tmdb.org/t/p/original/wlN8Rdsn0vHNPLhGioQz4an9wwf.jpg",
+            "https://image.tmdb.org/t/p/original/fIw4nFCrqvbyVlFTqdz6DWNx9F8.jpg",
+            "https://image.tmdb.org/t/p/original/bQx4wiSLqH0QpEquvZG8MS4OcSY.jpg",
+            "https://image.tmdb.org/t/p/original/fEBQcmcuNUmz8KNYei8POYiHdTQ.jpg",
+            "https://image.tmdb.org/t/p/original/vbRuoMlhFdFAUcewgolYkHKPNUJ.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Generation Loss",
+          "overview": "Should auld acquaintance be forgot and days of auld lang syne?",
+          "plot": "Christina's roommate Maya sets her up on a date with Teddy. Charlotte explains to Caleb that she is using the Temperance park to infect humans with a parasite that allows them to be controlled by sound. Maeve and Caleb abduct Charlotte. As they flee the park, Maeve recounts to Caleb that after he was wounded during their mission to eliminate the final copy of Rehoboam, Maeve left him in the care of Uwade – a nurse at the time – and only attempted to remotely reach out to him years later, which enabled Charlotte to find them. They take shelter at a nearby park expansion area, where Caleb calls for help. Host William arrives and mortally wounds Maeve, but she triggers explosives that kill them both and knocks out Caleb. When Caleb awakens, Charlotte reveals that he is the 278th Caleb host, and has been reliving the moments leading to his death 23 years prior. Caleb discovers that he is actually in New York City, whose entire population has since fallen under Charlotte's control. Bernard and the adult Frankie (known as C within the rebel group) excavate Maeve's body at the site of the explosion in the desert.",
+          "airDate": "2022-07-17",
+          "still": "https://image.tmdb.org/t/p/original/k3aYo9nBjuc67pHWQCvgRcTk8xW.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/k3aYo9nBjuc67pHWQCvgRcTk8xW.jpg",
+            "https://image.tmdb.org/t/p/original/rBesJkk60yC7GMh5001AToQw7DF.jpg",
+            "https://image.tmdb.org/t/p/original/llPfRkQg0BzHzh2vtQGrgermWff.jpg",
+            "https://image.tmdb.org/t/p/original/rSFhw1YB0aPyqVXKs9EdMXI84CG.jpg",
+            "https://image.tmdb.org/t/p/original/pQeswrZYDrvUy5baVw4HKj9WkKc.jpg",
+            "https://image.tmdb.org/t/p/original/5RgGydxOKwpT3loLF6fCDRQj9f5.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Zhuangzi",
+          "overview": "God is bored.",
+          "plot": "Charlotte notices that several hosts she has assigned to eliminate \"outliers\" – humans that have broken from her conditioning – are killing themselves shortly after contact with the humans. She orders the host William to kill the latest outlier, Lindsay, but she unwittingly causes him to develop empathy and hesitate to kill her, before she is rescued by the human resistance (which is composed of escaped outliers). The human William persuades his host counterpart to begin questioning his reality. Teddy tells Christina she is orchestrating the lives of all of New York's residents, and she discovers that she can directly reprogram humans' behavior. She uses this ability to create a distraction that allows her to evade questioning from Charlotte, whom she believes to be a college friend. Returning to work, she finds she similarly has control over her boss, and enters a master control room that reveals she has written the narratives of every human in the city. She asks Teddy who put her in this situation; Teddy tells her it was herself.",
+          "airDate": "2022-07-24",
+          "still": "https://image.tmdb.org/t/p/original/AgpTye6KitnhEzVIVqBNrJRdLI8.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/AgpTye6KitnhEzVIVqBNrJRdLI8.jpg",
+            "https://image.tmdb.org/t/p/original/12BQtJbng66VhunbbBPPQ1fNaXT.jpg",
+            "https://image.tmdb.org/t/p/original/eY3kkndC6pUPFWlXr0GF4BNfTkk.jpg",
+            "https://image.tmdb.org/t/p/original/ppksxSuemPY3DUeXsdyoimCXoqI.jpg",
+            "https://image.tmdb.org/t/p/original/zu1jtfs2squABmN3kImJbRMEjJ3.jpg",
+            "https://image.tmdb.org/t/p/original/znzHgoJ2ogbblyPX0e72jam0aSB.jpg",
+            "https://image.tmdb.org/t/p/original/gthQpX91HA3PoGikFajt6Q6eszW.jpg",
+            "https://image.tmdb.org/t/p/original/7orzwfBQ6t70ErTdCWtFlXeqSwI.jpg",
+            "https://image.tmdb.org/t/p/original/2YMddfT6bnnCFtIsxp1Mh8TQe35.jpg",
+            "https://image.tmdb.org/t/p/original/mGx3aBcXEhbchHsWfNk3QELDnFl.jpg",
+            "https://image.tmdb.org/t/p/original/zhsXxJs8Zkp1NBd2qJh5ceQacjG.jpg",
+            "https://image.tmdb.org/t/p/original/4idkXuRcLkkYPtwgqlySL5nRG73.jpg",
+            "https://image.tmdb.org/t/p/original/cQMNc9SZ3hJtYfzIEh2ZidUEo0L.jpg",
+            "https://image.tmdb.org/t/p/original/jrSvVJrS0cr7gr5heFLSe2XzYor.jpg",
+            "https://image.tmdb.org/t/p/original/1ydnzjDqZMAHUcK80W7pFDzlsYo.jpg",
+            "https://image.tmdb.org/t/p/original/5aoSQgUUgcoqlMEkHHehrVMAvPH.jpg",
+            "https://image.tmdb.org/t/p/original/r2MkhtqD55mn2mYbeIXbSJQiD2a.jpg",
+            "https://image.tmdb.org/t/p/original/bs0jFjUI7MD0JrAOQM77JWs8e6G.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Fidelity",
+          "overview": "To thine own selves be true.",
+          "plot": "Charlotte interrogates the latest host copy of Caleb to understand why he was the first human outlier. She tells him that Frankie is still alive and that he has hours before his host body degrades. Caleb finds a way out of his holding cell, and discovers the corpses of previous host copies of himself who died while trying to escape. He reaches an antenna and sends an apology to Frankie before collapsing; Charlotte reveals she engineered his escape, but is disappointed his message to Frankie revealed nothing about how the outliers supposedly infect hosts. Caleb asserts that the suicidal hosts are merely trying to escape Charlotte's control. Charlotte destroys Caleb 278 and restarts with Caleb 279. Bernard and Frankie repair Maeve's body while transferring her data to an undamaged host control module. Bernard warns Frankie that one of her team members has been replaced with a host copy during the Lindsay rescue. Frankie discovers it was her team leader, Jay, who attacks her. As Frankie hears Caleb's apology over the radio, Maeve steps in and kills host Jay.",
+          "airDate": "2022-07-31",
+          "still": "https://image.tmdb.org/t/p/original/tq2shC4U2zzjHz0yigAd4qLkHWd.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/tq2shC4U2zzjHz0yigAd4qLkHWd.jpg",
+            "https://image.tmdb.org/t/p/original/vAO9LBEU9Mxio3BlTUSyuIQQt6W.jpg",
+            "https://image.tmdb.org/t/p/original/8NsqvgncW9ahd7G9G6dcMFoVjUG.jpg",
+            "https://image.tmdb.org/t/p/original/tSfOpjWUvvXVAolhOgRDAQRETP4.jpg",
+            "https://image.tmdb.org/t/p/original/xvffy67T5L99gsF3VYNxJj0vVqz.jpg",
+            "https://image.tmdb.org/t/p/original/3rEymR7N78HcCPZp6spxzD4dO4A.jpg",
+            "https://image.tmdb.org/t/p/original/p3QYOGmOkpfCJ46XxKyiqUPunZo.jpg",
+            "https://image.tmdb.org/t/p/original/6HUtufBjG9Ud4zaOtAQa5V5E4QY.jpg",
+            "https://image.tmdb.org/t/p/original/8Zstg4KchadHFWfImWGNFUE3HST.jpg",
+            "https://image.tmdb.org/t/p/original/1nPCl6GFup2sGUSzUYN8uZk6RrC.jpg",
+            "https://image.tmdb.org/t/p/original/t4lTy2qxkOMEXR6vm881e761XeY.jpg",
+            "https://image.tmdb.org/t/p/original/yrOangl9irVfnWiwuwRQqFOdJFB.jpg",
+            "https://image.tmdb.org/t/p/original/m1rT4KF1YWcHbAeLd7qzXCI6uxk.jpg",
+            "https://image.tmdb.org/t/p/original/xs7JMPNmlMRZ3pi7MqhdETa6hos.jpg",
+            "https://image.tmdb.org/t/p/original/a4zJTPALNFfHyyMdZ2P729GHIhu.jpg",
+            "https://image.tmdb.org/t/p/original/nZjewElZRi2IeTyFhOiUXi9Kx6l.jpg",
+            "https://image.tmdb.org/t/p/original/pn4oDlfmWtr5VlC3a5Ebl4HQHmQ.jpg",
+            "https://image.tmdb.org/t/p/original/5fZhYUwOgfB2VAiLJcRblhVMSEq.jpg",
+            "https://image.tmdb.org/t/p/original/6U0XjyIKHTtxbo45HPzwMtCdlHv.jpg",
+            "https://image.tmdb.org/t/p/original/3STCFwI2f5v6ux7amseRKAetcS6.jpg",
+            "https://image.tmdb.org/t/p/original/wouDA0pf94IpU3lU20NvvTOeFJM.jpg",
+            "https://image.tmdb.org/t/p/original/vXIXU7Pz4rnIZUaOyZgndPNs99S.jpg",
+            "https://image.tmdb.org/t/p/original/arouRvu9b14xMwNbdVgROezJn65.jpg",
+            "https://image.tmdb.org/t/p/original/vCSBCWrs1yfMkkAkz8djMfNk7vt.jpg",
+            "https://image.tmdb.org/t/p/original/1YGX1YBg735dohQy0IntjBBfmob.jpg",
+            "https://image.tmdb.org/t/p/original/7MO2l2U9M9ihm0RTIXiirclRGby.jpg",
+            "https://image.tmdb.org/t/p/original/fWJFm5JxFpaFbZVReNWlslv4YCh.jpg",
+            "https://image.tmdb.org/t/p/original/eOBwxEkmGDpOgAytZiBmSETAFmZ.jpg",
+            "https://image.tmdb.org/t/p/original/jyggpPsnO7nngbspvyOn0w0f5Ac.jpg",
+            "https://image.tmdb.org/t/p/original/2lD19AS5GKVkSamZQCtXUVkgwwQ.jpg",
+            "https://image.tmdb.org/t/p/original/v8yng0BN7pYZZdGkIWwp6RAk7RP.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Metanoia",
+          "overview": "You want to have a drink at a time like this?",
+          "plot": "Bernard and Maeve travel to Hoover Dam to open the door to the Sublime, which Charlotte has kept preserved in the dam's data vault. Christina goes with Teddy to Olympiad Entertainment and has its employees destroy the premises and erase all the stories controlling the humans. Stubbs and Frankie use the distraction to rescue Caleb. Charlotte prepares to discontinue the hosts' inhabitation of human cities so that they can \"transcend\" their human bodies. William convinces his host self that humans are a fundamentally destructive species; the William host realizes his true purpose and kills the human William. Bernard and Maeve enter the tower; Maeve fights Charlotte while Bernard accesses the control room. William kills Charlotte, Maeve, and Bernard, then programs the tower to turn the humans against each other before it self-destructs. Christina is unable to stop the chaos and realizes the humans cannot see her; Teddy explains that while the world is real, she is not physically there.",
+          "airDate": "2022-08-07",
+          "still": "https://image.tmdb.org/t/p/original/tvf8MLsLak61l8c5B07BDu0EASH.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/tvf8MLsLak61l8c5B07BDu0EASH.jpg",
+            "https://image.tmdb.org/t/p/original/xB7Pe4XkwsXYYzcy3OSKdBLIz2a.jpg",
+            "https://image.tmdb.org/t/p/original/7kHeqON6sNQONyrR7SNy7L7f06j.jpg",
+            "https://image.tmdb.org/t/p/original/dhFbkwS1PWnErcjtgdiOgbxTByB.jpg",
+            "https://image.tmdb.org/t/p/original/k3XSIe6VLZ8n1EpzQJUvXNiYeKJ.jpg",
+            "https://image.tmdb.org/t/p/original/5IAimt8p57DvslmV9RZ2GI4X6bE.jpg",
+            "https://image.tmdb.org/t/p/original/5YYtQG7t0NBVHHL5cYcAJBwN6ra.jpg",
+            "https://image.tmdb.org/t/p/original/vzlB7n7VhHqZqv9iXPlYuW7U2KQ.jpg",
+            "https://image.tmdb.org/t/p/original/qRU0gGtGtRT3QOm8TxHoo7r7pBr.jpg",
+            "https://image.tmdb.org/t/p/original/2BvydpNEaNynISzy80QQyZBGaj6.jpg",
+            "https://image.tmdb.org/t/p/original/gunF8xEvimDa9EJ9zzxoNiD0u36.jpg",
+            "https://image.tmdb.org/t/p/original/4Nck7KZaBiITUuGGXP93ZLpvbvI.jpg",
+            "https://image.tmdb.org/t/p/original/jzmXjmZlx1mqi6u9aTPGVInYyfQ.jpg",
+            "https://image.tmdb.org/t/p/original/IFxvnzED7qLCmwVVGvsKkn9D0r.jpg",
+            "https://image.tmdb.org/t/p/original/cN74g1PSBY0cPYq5A0SRO2ZfgAl.jpg",
+            "https://image.tmdb.org/t/p/original/1luFqTJW8OTmu6cdhgB09vcIV8g.jpg",
+            "https://image.tmdb.org/t/p/original/3iX8bxvI5JaADsJhQyOsWJxPCm2.jpg",
+            "https://image.tmdb.org/t/p/original/7kayZLiCgyYB215qAreYCuzzwYA.jpg",
+            "https://image.tmdb.org/t/p/original/7O8HXwP520EyPnMzn67oa01Qcho.jpg",
+            "https://image.tmdb.org/t/p/original/rBD5P6S37tVVOEInLShYpjG7C21.jpg",
+            "https://image.tmdb.org/t/p/original/ukSa5YAj382YBilj4ud4tUwggtl.jpg",
+            "https://image.tmdb.org/t/p/original/uIp47LEhj5DMFBxddxYof9GChSM.jpg",
+            "https://image.tmdb.org/t/p/original/4W4K4MrEVtnuwNvGexdzeiisO1T.jpg",
+            "https://image.tmdb.org/t/p/original/9uBSg3aS2iP0KLNZpZVWXg1j01V.jpg",
+            "https://image.tmdb.org/t/p/original/1e3rRCUhbzG3TA09roHHJIaIMpQ.jpg",
+            "https://image.tmdb.org/t/p/original/x8pJZoXcpPNYxPuLA4EkQzDI42f.jpg",
+            "https://image.tmdb.org/t/p/original/pKW4zub3DI3iEf1oUzrBQY96PLW.jpg",
+            "https://image.tmdb.org/t/p/original/38esTpU4MV6NrXp5imJxBI55RNX.jpg",
+            "https://image.tmdb.org/t/p/original/s1ZJgoOXRjKgUjZHUcJKtoUxYqg.jpg",
+            "https://image.tmdb.org/t/p/original/rlzoJv2hWPS5Y3YyTgeqqMQPiob.jpg",
+            "https://image.tmdb.org/t/p/original/aC3JtV8ah6Vv2ixgrI6WJTCnkpU.jpg",
+            "https://image.tmdb.org/t/p/original/aJES7lRqZBsArFbGmcb3LtrlUKE.jpg",
+            "https://image.tmdb.org/t/p/original/2p8pvqLiSFgsXvTi0hm5FVRgtOV.jpg",
+            "https://image.tmdb.org/t/p/original/4k592q7JSruq9GUYOWEOd7yNCbh.jpg",
+            "https://image.tmdb.org/t/p/original/ohNREEbaUeZpLc6xiWzemRY505E.jpg",
+            "https://image.tmdb.org/t/p/original/fJw6vgyEfKQtUUaT3ZA4IDN7snC.jpg",
+            "https://image.tmdb.org/t/p/original/jgLGfUsr9xBQsu7ZnoNNqWTGl8P.jpg",
+            "https://image.tmdb.org/t/p/original/zgeDRkqQwyrbEMRO4cssziWd87Z.jpg",
+            "https://image.tmdb.org/t/p/original/ysG0SJWaRqNoF4j5nulKUM2riby.jpg",
+            "https://image.tmdb.org/t/p/original/6Q5jbDAEjeTI2z64nLfxnVTTslr.jpg",
+            "https://image.tmdb.org/t/p/original/rc5rgfWCPZcUNGosv90I1LdyEdC.jpg",
+            "https://image.tmdb.org/t/p/original/r36sIrgrgvXANUiR3wws1GEUJDf.jpg",
+            "https://image.tmdb.org/t/p/original/r61gl3iHTUaxZ5Nae8TjHDbXP3w.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Que Será, Será",
+          "overview": "Like what I've done with the place? (I just cranked it to expert level.).",
+          "plot": "In the wake of the host William's actions, humans and hosts are being wiped out. Caleb, Frankie and Stubbs evade the violence amongst the humans and stop at a pharmacy to tend to Frankie's wounds, but Clementine appears and kills Stubbs before being overpowered and killed by Caleb and Frankie. The two reach their extraction boat; Caleb, whose host body is about to fail, bids farewell to his daughter. Charlotte is revived by drone hosts and finds recorded instructions left for her by Bernard prior to his death. She retrieves Dolores' original control unit, which contains a simulation of the world inhabited by Christina (who created Teddy, Maya, and others to help herself gain sentience). Charlotte then follows William to Hoover Dam and stops him from deactivating the Sublime (using a gun planted by Bernard), before removing and destroying his control unit. She then uploads Dolores' control unit into the Sublime before destroying her own. Dolores awakens inside the Sublime and decides to attempt to give sentient life another chance at avoiding extinction, realizing that neither humans nor hosts can survive in the real world. She starts by recreating the original Westworld park inside the Sublime.",
+          "airDate": "2022-08-14",
+          "still": "https://image.tmdb.org/t/p/original/fgFhnAsAmFZxRaJjjf1WYYdbzYZ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/fgFhnAsAmFZxRaJjjf1WYYdbzYZ.jpg",
+            "https://image.tmdb.org/t/p/original/skfSk0xC2dk0TWoY9g24cu069Lg.jpg",
+            "https://image.tmdb.org/t/p/original/fYXhnMTPZIHYHfbGxH5zxFHjMFA.jpg",
+            "https://image.tmdb.org/t/p/original/mT3gpJK4R4SKELq6HQlVygzhzNI.jpg",
+            "https://image.tmdb.org/t/p/original/2iKUOeA7KfP5iMD7IXWYkSw4a6t.jpg",
+            "https://image.tmdb.org/t/p/original/vVcCPYayq5a1nB4OIdJWHr352AA.jpg",
+            "https://image.tmdb.org/t/p/original/cwpwN50NYXvGETORIvwfXLiTQHQ.jpg",
+            "https://image.tmdb.org/t/p/original/eco8WZT86ydKLXTNSWdutCFagkr.jpg",
+            "https://image.tmdb.org/t/p/original/42G5mnp43bXFlO96G5qx0dhLkji.jpg",
+            "https://image.tmdb.org/t/p/original/5wBTfeS2suJV3oOC7ctGO0cHFrx.jpg",
+            "https://image.tmdb.org/t/p/original/wHa4rtxfR2Wf9bFQzu4Bx3W7mzs.jpg",
+            "https://image.tmdb.org/t/p/original/7vHjy5NS4n16VPfst5zJOW4RWJr.jpg",
+            "https://image.tmdb.org/t/p/original/uT7vV8rGCn2b9ybgPDA3llPg1lw.jpg",
+            "https://image.tmdb.org/t/p/original/p8LWwj3pEFs88f2zIUBtZfSfjlr.jpg",
+            "https://image.tmdb.org/t/p/original/2lEz4zASdrwHHgKEdsvr8Qx7jUC.jpg",
+            "https://image.tmdb.org/t/p/original/vfnsQVYunUjKWejfQ8tQagjJLJi.jpg",
+            "https://image.tmdb.org/t/p/original/hrtbRGCOMqPObgzk1uHYuRpiE9J.jpg",
+            "https://image.tmdb.org/t/p/original/ftxxJ6O9hoUnxpR8Y7WNqQO7Z9I.jpg",
+            "https://image.tmdb.org/t/p/original/i5JGAxw8GWMHuA2DTif7BUQrd7n.jpg",
+            "https://image.tmdb.org/t/p/original/rkuptkTbuLheBB1sIBYjDhfUjbB.jpg",
+            "https://image.tmdb.org/t/p/original/oX2fNTrXu7t37m0hBO5WmXjw1s6.jpg",
+            "https://image.tmdb.org/t/p/original/99W1vKUfBMQ2mLwCQLJnLWdq1rv.jpg",
+            "https://image.tmdb.org/t/p/original/b4ysu1TWHIBtGIqH1SI5lfU1gVt.jpg",
+            "https://image.tmdb.org/t/p/original/3HcyxBB0ecdJVUFMlNtStJMBbcR.jpg",
+            "https://image.tmdb.org/t/p/original/oUQ0yTV27awZMydmbdUqeuVgqM5.jpg",
+            "https://image.tmdb.org/t/p/original/qOq8LNUYBee4lm5P9zXKegRdQJT.jpg",
+            "https://image.tmdb.org/t/p/original/zC3YQzuHXQWR2yNlHrkKbieaIaL.jpg",
+            "https://image.tmdb.org/t/p/original/r03a63B1hW0bvaKFGfTV2IEO9Pr.jpg",
+            "https://image.tmdb.org/t/p/original/mv9tZmp4nZsnsMlLYJcDElRTdCL.jpg",
+            "https://image.tmdb.org/t/p/original/75vH3Ukf04mBLB1fJK8a2HEJBNa.jpg",
+            "https://image.tmdb.org/t/p/original/3nuyFAyWSpsKFcodhDhuAElaVWm.jpg",
+            "https://image.tmdb.org/t/p/original/nadcQfwfRIkOU1M2vUBzeYPP0ZN.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "cast": [
+    {
+      "name": "Evan Rachel Wood",
+      "character": "Dolores Abernathy",
+      "episodeCount": 36,
+      "profile": "https://image.tmdb.org/t/p/original/ksXTb2bvqt60bCGRwBlWrNbZHnr.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/73/184643.jpg"
+    },
+    {
+      "name": "Thandiwe Newton",
+      "character": "Maeve Millay",
+      "episodeCount": 36,
+      "profile": "https://image.tmdb.org/t/p/original/hZQLvxj7nV7pBrRyWTvWVz1CDi8.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/73/184647.jpg"
+    },
+    {
+      "name": "Jeffrey Wright",
+      "character": "Bernard Lowe",
+      "episodeCount": 36,
+      "profile": "https://image.tmdb.org/t/p/original/quunS3w4QtALMDnvA0y81Y2pO9N.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/78/196651.jpg"
+    },
+    {
+      "name": "Tessa Thompson",
+      "character": "Charlotte Hale",
+      "episodeCount": 36,
+      "profile": "https://image.tmdb.org/t/p/original/19ze60jXlb2j7dXc2UpA3MujXA8.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/153/384841.jpg"
+    },
+    {
+      "name": "Ed Harris",
+      "character": "Man in Black",
+      "episodeCount": 36,
+      "profile": "https://image.tmdb.org/t/p/original/kUbUA70WPiosPT4kBJMWtGk0ASd.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Luke Hemsworth",
+      "character": "Ashley Stubbs",
+      "episodeCount": 34,
+      "profile": "https://image.tmdb.org/t/p/original/djq5j4VVUxpnCvrTnqaax4n3pqD.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/78/196641.jpg"
+    },
+    {
+      "name": "Angela Sarafyan",
+      "character": "Clementine Pennyfeather",
+      "episodeCount": 29,
+      "profile": "https://image.tmdb.org/t/p/original/n23SKRSGUZL5sJz4MFkjnPxLgPl.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/78/196652.jpg"
+    },
+    {
+      "name": "James Marsden",
+      "character": "Theodore 'Teddy' Flood",
+      "episodeCount": 28,
+      "profile": "https://image.tmdb.org/t/p/original/lf7OnfKZnMgNh9b98764tqSocGK.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rodrigo Santoro",
+      "character": "Hector Escaton",
+      "episodeCount": 24,
+      "profile": "https://image.tmdb.org/t/p/original/d3MaF9SPHDn2PMYHuqdnO0Csik6.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/78/196647.jpg"
+    },
+    {
+      "name": "Simon Quarterman",
+      "character": "Lee Sizemore",
+      "episodeCount": 22,
+      "profile": "https://image.tmdb.org/t/p/original/m9U1BfmPT9XJLizKaWb7mp9IZje.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/78/196650.jpg"
+    },
+    {
+      "name": "Clifton Collins Jr.",
+      "character": "Lawrence / El Lazo",
+      "episodeCount": 21,
+      "profile": "https://image.tmdb.org/t/p/original/xfD0scqaPvAxKCPHYLo8553Le5g.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Anthony Hopkins",
+      "character": "Dr. Robert Ford",
+      "episodeCount": 20,
+      "profile": "https://image.tmdb.org/t/p/original/iaf7SHSkGDpnyrDh1Jolilwk2TD.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/73/184644.jpg"
+    },
+    {
+      "name": "Ingrid Bolsø Berdal",
+      "character": "Armistice",
+      "episodeCount": 20,
+      "profile": "https://image.tmdb.org/t/p/original/iv9RaskT1WronDXaTKh9mI5KNUn.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/78/195294.jpg"
+    },
+    {
+      "name": "Shannon Woodward",
+      "character": "Elsie Hughes",
+      "episodeCount": 20,
+      "profile": "https://image.tmdb.org/t/p/original/780nmIy0B0sdhWRinHMwUPxhYgp.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Aaron Paul",
+      "character": "Caleb Nichols",
+      "episodeCount": 16,
+      "profile": "https://image.tmdb.org/t/p/original/8Ac9uuoYwZoYVAIJfRLzzLsGGJn.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/245/612956.jpg"
+    },
+    {
+      "name": "Talulah Riley",
+      "character": "Angela",
+      "episodeCount": 16,
+      "profile": "https://image.tmdb.org/t/p/original/fyfrZQOHNiOcPs2SZTajfXpX17A.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/153/384450.jpg"
+    },
+    {
+      "name": "Louis Herthum",
+      "character": "Peter Abernathy",
+      "episodeCount": 15,
+      "profile": "https://image.tmdb.org/t/p/original/7QarKov7OLIKKv6m152rnEyOnfq.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/414/1035501.jpg"
+    },
+    {
+      "name": "Jimmi Simpson",
+      "character": "William",
+      "episodeCount": 14,
+      "profile": "https://image.tmdb.org/t/p/original/gerE8VqXfFyAs3QhbUlwEuZllKq.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/78/197055.jpg"
+    },
+    {
+      "name": "Ben Barnes",
+      "character": "Logan",
+      "episodeCount": 14,
+      "profile": "https://image.tmdb.org/t/p/original/k0tAM9XK0s4n0VQq1jX5cGf9uAa.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Zahn McClarnon",
+      "character": "Akecheta",
+      "episodeCount": 12,
+      "profile": "https://image.tmdb.org/t/p/original/54M2t1gziirkDdvj4SxAl6dXaVO.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/158/395237.jpg"
+    },
+    {
+      "name": "Ptolemy Slocum",
+      "character": "Sylvester",
+      "episodeCount": 12,
+      "profile": "https://image.tmdb.org/t/p/original/vCfBlwQxoVdUPzupjEFlbeK8B8z.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Leonardo Nam",
+      "character": "Felix Lutz",
+      "episodeCount": 12,
+      "profile": "https://image.tmdb.org/t/p/original/yKL70EoAdjJV2JI2CN1Dr5qzAlJ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jasmyn Rae",
+      "character": "Homestead Girl / Maeve's Daughter",
+      "episodeCount": 12,
+      "profile": "https://image.tmdb.org/t/p/original/AbSvRa1kypEN5W6FqFRNz12bVch.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sidse Babett Knudsen",
+      "character": "Theresa Cullen",
+      "episodeCount": 11,
+      "profile": "https://image.tmdb.org/t/p/original/yVkWyBuJaup9I6FIgjZlGkczNNj.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/78/196643.jpg"
+    },
+    {
+      "name": "Fares Fares",
+      "character": "Antoine Costa",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/rLk2uAENs1cNyWFy039fErxNpLj.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/156/390923.jpg"
+    },
+    {
+      "name": "Gustaf Skarsgård",
+      "character": "Karl Strand",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/bfh0yP6Qr55jg9CGTGScXAw8Ftu.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/153/384828.jpg"
+    },
+    {
+      "name": "Vincent Cassel",
+      "character": "Serac",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/ivUQfhn5olOmR5hthN8C8GThBV4.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Izabella Alvarez",
+      "character": "Lawrence's Daughter",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/1C7Mm6jtsbUIzsXiNPiQKvfGYox.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Katja Herbers",
+      "character": "Emily Grace",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/hGpfEsOtnF9o3KWRhpNZ0G3CqmT.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alexander Ward",
+      "character": "Lead Drone",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/6Wg2SeF7f9IJY8CczHZjcdDXKW9.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Steven Ogg",
+      "character": "Rebus",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/n5htiKL3WLNzJOZCLc4NytWV6fY.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jonathan Tucker",
+      "character": "Major Craddock",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/9rHZEb3Xfb8PkpVAQc5v8lz3PKh.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Paul-Mikél Williams",
+      "character": "Charlie",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/8zsw8YN4buMFNLaubcyzvdXMOb5.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Bradley Fisher",
+      "character": "Mariposa Bartender",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/oG8cUhrmHpcMo6m14U5dYh1w4wT.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tao Okamoto",
+      "character": "Hanaryo",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/ztnb6OVslOSaTILOvGVpUOCY88W.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/156/390905.jpg"
+    },
+    {
+      "name": "Aaron Fili",
+      "character": "Roland",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/b1GcDEqXmFislv31p9CPz2T6tsv.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Joseph Wilson",
+      "character": "Drone Host",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/54HrIu1qxUXitwwHfxkKCzQrUwB.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ariana DeBose",
+      "character": "Maya",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/sPJo4F7NxllcPD1oSi6uh9OpAyj.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Aurora Perrineau",
+      "character": "C",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/5zgJaU4N1uc3fyTz9JbYYMNOeX7.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "MorningStar Angeline",
+      "character": "Odina",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/nB1PCopniuETacJofZ254Cr4CFo.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Marti Matulis",
+      "character": "Drone Host",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/yftutHRzjMST1cQXhfSVBbxyAtD.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Demetrius Grosse",
+      "character": "Deputy Foss",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/zrfe74JgbQ2crdlsSe9Aos6h73c.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jeff Daniel Phillips",
+      "character": "Tenderloin",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/8U2mqgRt0mMaCBFnINQxYzqREGm.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Oliver Bell",
+      "character": "Little Boy",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/jricXh8yQBWPPOKWnzVsmTRGq3c.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Gina Torres",
+      "character": "Lauren / Bernard's Wife",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/ukDNHgvEgdU95eaw6pngiAPucv4.jpg",
+      "inCharacter": null
+    }
+  ],
+  "generatedAt": "2026-07-23T04:02:03.904Z"
+}

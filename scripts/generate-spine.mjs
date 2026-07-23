@@ -273,6 +273,21 @@ async function main() {
   const outName = outArg >= 0 ? argv[outArg + 1] : `${slug}.spine.json`;
 
   const show = JSON.parse(await readFile(resolve(ROOT, `src/recap/data/${slug}.json`), 'utf8'));
+
+  // Bound generation to the seasons we can honestly write.
+  //
+  // The dataset holds every season, but Wikipedia lags broadcast, so the most
+  // recent season is often barely summarised. Generating it anyway produces a
+  // confident wrong recap rather than a thin one. The batch runner passes the
+  // usable bound from eligibility; a lone run defaults to everything fetched.
+  const throughArg = argv.indexOf('--through') >= 0 ? Number(argv[argv.indexOf('--through') + 1]) : null;
+  if (throughArg) {
+    const before = show.seasons.length;
+    show.seasons = show.seasons.filter(s => s.season <= throughArg);
+    if (show.seasons.length < before) {
+      console.log(`  (bounded to S1-S${throughArg} of ${before} fetched)`);
+    }
+  }
   console.log(
     `\n▸ Generating spine for "${show.title}" (${show.seasons.length} seasons fetched)` +
       `${wholeShow ? ' — whole-show mode, 1 call' : ''}\n`,

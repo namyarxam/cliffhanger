@@ -1,0 +1,414 @@
+{
+  "slug": "chernobyl",
+  "tmdbId": 87108,
+  "tvmazeId": 30770,
+  "matchedBy": "imdb_id",
+  "title": "Chernobyl",
+  "overview": "The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster.",
+  "firstAirDate": "2019-05-06",
+  "network": "HBO",
+  "poster": "https://image.tmdb.org/t/p/w780/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/original/3URK0z9PzpVNJrGE7XOuyy6KFzk.jpg",
+  "backdrops": [
+    "https://image.tmdb.org/t/p/original/3URK0z9PzpVNJrGE7XOuyy6KFzk.jpg",
+    "https://image.tmdb.org/t/p/original/uL6Ad12W09L1sfuOE2pcTeak7bt.jpg",
+    "https://image.tmdb.org/t/p/original/900tHlUYUkp7Ol04XFSoAaEIXcT.jpg",
+    "https://image.tmdb.org/t/p/original/cDpR6URVghK5LC7G7NgPkCP8x6E.jpg",
+    "https://image.tmdb.org/t/p/original/5DJonZy0OMxKYUUAVZJddkDL6WM.jpg",
+    "https://image.tmdb.org/t/p/original/4VRHQOtKu6PFcItwbMYwKwvwzVd.jpg",
+    "https://image.tmdb.org/t/p/original/faQd80gSDiidDjNqXIZGuKXME1a.jpg",
+    "https://image.tmdb.org/t/p/original/5BvHuWktcqcecQxmyecqyBFTdBN.jpg",
+    "https://image.tmdb.org/t/p/original/qkOm6QBX2hxWquq7hSCUYADrlIQ.jpg",
+    "https://image.tmdb.org/t/p/original/knz6G4KnGoEcYklcM937FrlIlK1.jpg",
+    "https://image.tmdb.org/t/p/original/10rmuw6lKZ8D25kWdn1Tl33kp3a.jpg",
+    "https://image.tmdb.org/t/p/original/tBKIEta6JraGIDRce7r1CCAnrsw.jpg"
+  ],
+  "throughSeason": 1,
+  "totalSeasons": 1,
+  "showType": "Scripted",
+  "genres": [
+    "Drama",
+    "History"
+  ],
+  "status": "Ended",
+  "runtime": 70,
+  "language": "English",
+  "seasons": [
+    {
+      "season": 1,
+      "name": "Miniseries",
+      "airDate": "2019-05-06",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "1:23:45",
+          "overview": "April 26, 1986, Ukrainian SSR. Plant workers and firefighters put their lives on the line to control a catastrophic 1986 explosion at a Soviet nuclear power plant.",
+          "plot": null,
+          "airDate": "2019-05-06",
+          "still": "https://image.tmdb.org/t/p/original/thaMHLz5l6TVL8R4EzaBkjn2EZA.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/thaMHLz5l6TVL8R4EzaBkjn2EZA.jpg",
+            "https://image.tmdb.org/t/p/original/qnfJGivpD6576hcRfAzKlXK3tEO.jpg",
+            "https://image.tmdb.org/t/p/original/9M4N1evDhzKEsvYDud0isZdPOaw.jpg",
+            "https://image.tmdb.org/t/p/original/A7rCpso88XUBKsxs2bDoDdhKHvJ.jpg",
+            "https://image.tmdb.org/t/p/original/ctX5nFbgKZL1vkWbM72GzxFi2rh.jpg",
+            "https://image.tmdb.org/t/p/original/bQOVHStx8ipG2D2yChSK4ldrxoi.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Please Remain Calm",
+          "overview": "With untold millions at risk after the Chernobyl explosion, nuclear physicist Ulana Khomyuk makes a desperate attempt to reach Valery Legasov, a leading Soviet nuclear physicist, and warn him about the threat of second explosion that could devastate the continent.",
+          "plot": null,
+          "airDate": "2019-05-13",
+          "still": "https://image.tmdb.org/t/p/original/kVsUEtOOYeLRmABVuZztl4k9onO.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/kVsUEtOOYeLRmABVuZztl4k9onO.jpg",
+            "https://image.tmdb.org/t/p/original/2zAvn4VHTXLKhN3mtCJPgJQUa7R.jpg",
+            "https://image.tmdb.org/t/p/original/rpD09jwgqXerqs9C0O9RGLWPBk9.jpg",
+            "https://image.tmdb.org/t/p/original/qsBdcZKSqqwrfEceYGbZAtOKqnJ.jpg",
+            "https://image.tmdb.org/t/p/original/a5prMLKx4QtF5jXvK84qZ9KOx1P.jpg",
+            "https://image.tmdb.org/t/p/original/tgrOWRONi2aQUQNMqbY0vNGxX4Z.jpg",
+            "https://image.tmdb.org/t/p/original/aIHMs7zGakkL2maPdX4paGBFDK4.jpg",
+            "https://image.tmdb.org/t/p/original/qYQBbT4vvjTP0nadJjPvwAcxuQ4.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Open Wide, O Earth",
+          "overview": "Lyudmilla Ignatenko, a Pripyat resident, ignores warning about her firefighter husband's contamination. Valery Legasov lays out a decontamination plan, complete with human risks.",
+          "plot": null,
+          "airDate": "2019-05-20",
+          "still": "https://image.tmdb.org/t/p/original/2Eje4lD5MWkTdbFdtlHnrHT2kA2.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/2Eje4lD5MWkTdbFdtlHnrHT2kA2.jpg",
+            "https://image.tmdb.org/t/p/original/f3AgIEfGWWO3qNoxymagUqCBaE8.jpg",
+            "https://image.tmdb.org/t/p/original/iXwnsdHQheTQ4n0FDUzEyNOpd63.jpg",
+            "https://image.tmdb.org/t/p/original/mxhfzK6x5TUXWUJpLKE8hn8H0DE.jpg",
+            "https://image.tmdb.org/t/p/original/yGXZjeMwEsWoR3IYA8Ky0jPvmI1.jpg",
+            "https://image.tmdb.org/t/p/original/EDMyLRXf4SEAqlunonI8v4LvWT.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "The Happiness of All Mankind",
+          "overview": "Valery Legasov and Soviet Deputy Prime Minister Boris Shcherbina consider using lunar rovers to remove radioactive debris, while Ulana Khomyuk faces government hurdles in determining the truth about the cause of the explosion.",
+          "plot": null,
+          "airDate": "2019-05-27",
+          "still": "https://image.tmdb.org/t/p/original/xV2eVT4ejGhVn9OIMCo4uBOhmCC.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xV2eVT4ejGhVn9OIMCo4uBOhmCC.jpg",
+            "https://image.tmdb.org/t/p/original/4JhCBbnlA6J3skK2koQc1MJ3oXG.jpg",
+            "https://image.tmdb.org/t/p/original/wmJEQwNF25Dkm27uyC0hmcPG5TI.jpg",
+            "https://image.tmdb.org/t/p/original/e5ipEgepldI9cEVygjEcugM1Z5z.jpg",
+            "https://image.tmdb.org/t/p/original/d2EHHxD2EZ8CeUY3fdZXHW2um76.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Vichnaya Pamyat",
+          "overview": "Valery Legasov, Boris Shcherbina and Ulana Khomyuk risk their lives and reputations to expose the truth about Chernobyl.",
+          "plot": null,
+          "airDate": "2019-06-03",
+          "still": "https://image.tmdb.org/t/p/original/mgXm2Y6SOFDHtD5thi2LmS7uQBj.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/mgXm2Y6SOFDHtD5thi2LmS7uQBj.jpg",
+            "https://image.tmdb.org/t/p/original/zK98jZ91NVEnceVcgT8rvI5ZYzp.jpg",
+            "https://image.tmdb.org/t/p/original/5DAvkQFDwA7Qhmd1BPwuOXzKxgg.jpg",
+            "https://image.tmdb.org/t/p/original/v4tGfHqV7xyT3vMKWqS8UF1E1R3.jpg",
+            "https://image.tmdb.org/t/p/original/4ug7d7LFE8dwR737vPTxfxIKn9m.jpg",
+            "https://image.tmdb.org/t/p/original/fs1OH5z43BKw1jqwgJsFdogvO2x.jpg",
+            "https://image.tmdb.org/t/p/original/5fqjSMtIs19wB87uHjFDlFoTBs2.jpg",
+            "https://image.tmdb.org/t/p/original/edIqs6xxtDavb9Zmf61hXgWXCTq.jpg",
+            "https://image.tmdb.org/t/p/original/gBeXjpvqqdSbhsxKhLGd91ZGNwU.jpg",
+            "https://image.tmdb.org/t/p/original/3eONdJtvEvHnG4RWuobJBMTrVXV.jpg",
+            "https://image.tmdb.org/t/p/original/eJhWIilWBTxkEKS6PXPO6TTwNvN.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "cast": [
+    {
+      "name": "Jared Harris",
+      "character": "Valery Legasov",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/jAyPWkmge3BqXtgxIG9MfXBzOGj.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/200/501796.jpg"
+    },
+    {
+      "name": "Stellan Skarsgård",
+      "character": "Boris Shcherbina",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/mW7xmtGV4y79kQGn0zkKVGDMAmw.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/200/501797.jpg"
+    },
+    {
+      "name": "Emily Watson",
+      "character": "Ulana Khomyuk",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/bd0qiJXHoLNpkCqABsh67AKRtjC.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/200/501795.jpg"
+    },
+    {
+      "name": "Paul Ritter",
+      "character": "Anatoly Dyatlov",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/hYRSjC5vxrIFZ5sx1rM6V4ZEI8G.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/196/491069.jpg"
+    },
+    {
+      "name": "Jessie Buckley",
+      "character": "Lyudmilla Ignatenko",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/qbz9175DERSqsCQeYWGJWwqb38z.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/196/491052.jpg"
+    },
+    {
+      "name": "Adam Nagaitis",
+      "character": "Vasily Ignatenko",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/e05YxtScfLCI723ZFU6WOzLiJ6u.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/196/491156.jpg"
+    },
+    {
+      "name": "Sam Troughton",
+      "character": "Alexandr Akimov",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/7Gnt2TblEvlj0Nrzc5mQyOcHtPF.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/200/502066.jpg"
+    },
+    {
+      "name": "Robert Emms",
+      "character": "Leonid Toptunov",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/yqXBUz5WMcuicfyp6GlKSLBdBJH.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/196/491067.jpg"
+    },
+    {
+      "name": "Con O'Neill",
+      "character": "Viktor Bryukhanov",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/7Fnj1dB9kStTuy29eEVK4IuOxWO.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/196/491065.jpg"
+    },
+    {
+      "name": "Adrian Rawlins",
+      "character": "Nikolai Fomin",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/G0PGZqTjenuVTAQiib4ScU7vAI.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/196/491068.jpg"
+    },
+    {
+      "name": "Alan Williams",
+      "character": "KGB Chairman Charkov",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/hvfjcPUtKkbBewvJdJ6uGutwS51.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "David Dencik",
+      "character": "Mikhail Gorbachev",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/2BPsGhw8lGhe6HNs1aLu4Q1XeVn.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mark Lewis Jones",
+      "character": "General Pikalov",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/5SAmzx40A0C3VOgzYPlcOmwqdL6.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ralph Ineson",
+      "character": "General Tarakanov",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/sn3ONJw2pJxMHiCqPwvkaiWr5mc.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/198/496205.jpg"
+    },
+    {
+      "name": "Barry Keoghan",
+      "character": "Pavel",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/ngoitknM6hw8fffLywyvjzy6Iti.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alex Ferns",
+      "character": "Glukhov",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/3V3L7MJGURXU6lVaqai80zFT4Wa.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Fares Fares",
+      "character": "Bacho",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/rLk2uAENs1cNyWFy039fErxNpLj.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/199/499174.jpg"
+    },
+    {
+      "name": "Michael McElhatton",
+      "character": "Prosecutor Andrei Stepashin",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/aPjuV6N10zAJMr55lAIvnpdsNgE.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/200/502074.jpg"
+    },
+    {
+      "name": "Laura Elphinstone",
+      "character": "Oksana",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/yPsWPEF7NXbmUyO5O2PGB7JqGuB.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Socha",
+      "character": "Mikhail",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/qjqXqf72GIwXgDYdQW75xojayVL.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Karl Davies",
+      "character": "Viktor Proskuryakov",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/hSyZI2vedubRXd1CS9w84ufCYDc.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ron Cook",
+      "character": "Old Maternity Doctor",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/gRHsTI9gwajULovSd2TVHROEEMj.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Donald Sumpter",
+      "character": "Zharkov",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/jfdH7vojRZ3fRSesLF8K3tZwwtq.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Philip Barantini",
+      "character": "Bezpalov",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/8v03JkqIDNm6TnaTuCiD929bexm.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Oscar Dyekjær Giese",
+      "character": "Baranov",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/2xQYfDB51BostEN2LkbvJ8E4P1j.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Baltasar Breki Samper",
+      "character": "Ananenko",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/cU1kHRsVfsHb6vhf59gEmj3FSXZ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Povilas Jatkevičius",
+      "character": "Kibenok",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/cKpADbOG9S4BWPS2Ql8saJ9qazM.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Darius Petkevičius",
+      "character": "Local Husband",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/52IgPsBJZFsj07qe6dnRSWMROJC.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Amanda Drew",
+      "character": "Kremlin Aide Female",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/dd5NSaGnHJe1F9oEEPHaDGRqcr8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jamie Sives",
+      "character": "Sitnikov",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/bdEyp4f1VUEepihC6vyqCGP6k2s.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Douggie McMeekin",
+      "character": "Yuvchenko",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/mPqhmMPosUfEYCrkrGaqQ01wcYf.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Shaeffer",
+      "character": "Blond Man",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/5O0UCmRy8NWpYvHeCJDntPKXmti.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Adam Lundgren",
+      "character": "Brazhnik",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/hB62780sPK5HpHBylShEsrtfIh1.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Billy Postlethwaite",
+      "character": "Boris Stolyarchuk",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/62omaRURpSOCZZr0yP0KowgrjkE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jay Simpson",
+      "character": "Perevozchenko",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/4UDQaaRqvMqPwJbUxJVZ7u6P7Wt.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Paulius Markevičius",
+      "character": "Aleksandr Kudryavstev",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/sC2C5egekG384t82zcAp7AMsBJK.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Joshua Leese",
+      "character": "Kirschenbaum",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/wGRR4ADI2VYHxKogPgi6KMXi3p5.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Karolis Kasperavičius",
+      "character": "Viktor Degtaryenko",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/yaaUYPnMNplDcQjQ68ApP7EiW8S.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sam Strike",
+      "character": "Misha",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/xX6aB2rH84LiwPB4c25iPTzMB9t.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sammy Hayman",
+      "character": "Titenok",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/g2y6domOIIdAht8wfmKmNtNE0WE.jpg",
+      "inCharacter": null
+    }
+  ],
+  "generatedAt": "2026-07-23T04:02:12.110Z"
+}

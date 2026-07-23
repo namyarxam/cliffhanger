@@ -188,8 +188,9 @@ async function main() {
 
     const { stats } = verdict;
     console.log(
-      `\n▸ ${show.slug} — ${stats.seasons} seasons, ${stats.totalEpisodes} eps, ` +
-        `coverage ${Math.round(stats.coverage * 100)}%, cast continuity ${Math.round(stats.continuity * 100)}%`,
+      `\n▸ ${show.slug} — ${stats.seasons} seasons fetched, usable S1-S${verdict.usableThrough} ` +
+        `(${stats.usableEpisodes} eps), coverage ${Math.round(stats.coverage * 100)}%, ` +
+        `cast continuity ${Math.round(stats.continuity * 100)}%`,
     );
     for (const w of verdict.warnings) console.log(`  ⚠ ${w}`);
     if (!verdict.ok) {
@@ -202,7 +203,13 @@ async function main() {
     // ---- spine ----------------------------------------------------------
     if (!e.spine || !(await exists(spinePath))) {
       console.log(`  … generating spine (1 call)`);
-      const r = await run('generate-spine.mjs', ['--slug', show.slug, '--whole-show']);
+      const r = await run('generate-spine.mjs', [
+        '--slug', show.slug,
+        '--whole-show',
+        // Never generate past what eligibility judged writable — the seasons
+        // beyond it are the ones Wikipedia has not caught up on.
+        '--through', String(verdict.usableThrough),
+      ]);
       const text = r.out + r.err;
       if (r.code !== 0) {
         if (isRateLimited(text)) {
