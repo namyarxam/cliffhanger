@@ -189,22 +189,27 @@ function RecapCard({
   // 0 when the show isn't tracked, is muted, or no season has been finished —
   // in which case there is nothing to offer and the card renders locked.
   const ranges = useMemo(() => offeredRangesFor(item.maxSeason), [item.maxSeason]);
-  const fullRange = ranges[ranges.length - 1] ?? null;
+  // The hero opens the LATEST finished season, not the whole series. That is
+  // the moment the feature exists for: a new season is coming and the one
+  // before it has gone. Earlier seasons are still reachable below, they are
+  // just not the default.
+  const latest = ranges[ranges.length - 1] ?? null;
+  const earlier = ranges.slice(0, -1);
   const locked = ranges.length === 0;
 
   // Estimated from season count rather than an actual frame list, since the
   // frames for a range aren't fetched until it's opened. Every season is a
   // title + premise + ~6 character cards + ~7 beats + a cliffhanger.
-  const minutes = useMemo(
-    () => estimateMinutes(2 + 6 + item.maxSeason * 7 + 1),
-    [item.maxSeason],
-  );
+  // One season: a title card, ~6 character cards, ~7 beats, a cliffhanger.
+  // Previously scaled by every season the viewer had unlocked, which was the
+  // whole-series figure and no longer describes what the button does.
+  const minutes = useMemo(() => estimateMinutes(1 + 6 + 7 + 1), []);
 
   return (
     <View style={styles.card}>
       <Pressable
         style={({ pressed }) => [styles.cardHero, pressed && !locked && styles.cardPressed]}
-        onPress={() => fullRange && onOpen(fullRange)}
+        onPress={() => latest && onOpen(latest)}
         disabled={locked}
       >
         <Image
@@ -221,13 +226,22 @@ function RecapCard({
           style={StyleSheet.absoluteFill}
         />
 
+        {/* Which season this card opens. The hero used to run the whole
+            series, so the button's scope was implicit; now that it is one
+            specific season it has to say which, or tapping is a guess. Sits
+            top-left, away from the play chip and clear of the bottom gradient
+            that carries the title. */}
+        {!locked && (
+          <View style={styles.seasonBadge}>
+            <Text style={styles.seasonBadgeText}>SEASON {item.maxSeason}</Text>
+          </View>
+        )}
+
         <View style={styles.cardBody}>
           <View style={styles.cardCopy}>
             <Text style={styles.cardTitle}>{item.title}</Text>
             <Text style={styles.cardMeta}>
-              {locked
-                ? lockedReason(item)
-                : `${item.maxSeason} season${item.maxSeason === 1 ? '' : 's'} · ${minutes} min`}
+              {locked ? lockedReason(item) : `Season ${item.maxSeason} · ${minutes} min`}
             </Text>
           </View>
           <View style={[styles.playChip, { backgroundColor: locked ? 'rgba(255,255,255,0.12)' : theme.accent }]}>
@@ -236,30 +250,33 @@ function RecapCard({
         </View>
       </Pressable>
 
-      {/* Horizontal scroll because the chip count is unbounded: an eight-season
-          show offers nine ranges, which overflows the screen edge and would
-          otherwise simply be unreachable. */}
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={styles.chipRow}
-        // The row sits inside a vertically scrolling list; without this a
-        // near-vertical drag starting on a chip gets captured here and the
-        // page stops scrolling.
-        directionalLockEnabled
-      >
-        <Text style={styles.chipLabel}>{locked ? '' : 'Recap'}</Text>
-        {ranges.map(r => (
-          <Pressable
-            key={rangeLabel(r)}
-            onPress={() => onOpen(r)}
-            style={({ pressed }) => [styles.chip, pressed && { backgroundColor: theme.accentBg }]}
-            hitSlop={4}
-          >
-            <Text style={styles.chipText}>{rangeLabel(r)}</Text>
-          </Pressable>
-        ))}
-      </ScrollView>
+      {/* Earlier seasons only — the latest one is the card itself. Horizontal
+          scroll because the count is unbounded: The Walking Dead offers ten
+          here, which runs past the screen edge and would otherwise be
+          unreachable. */}
+      {earlier.length > 0 && (
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.chipRow}
+          // The row sits inside a vertically scrolling list; without this a
+          // near-vertical drag starting on a chip gets captured here and the
+          // page stops scrolling.
+          directionalLockEnabled
+        >
+          <Text style={styles.chipLabel}>Earlier</Text>
+          {earlier.map(r => (
+            <Pressable
+              key={rangeLabel(r)}
+              onPress={() => onOpen(r)}
+              style={({ pressed }) => [styles.chip, pressed && { backgroundColor: theme.accentBg }]}
+              hitSlop={4}
+            >
+              <Text style={styles.chipText}>{rangeLabel(r)}</Text>
+            </Pressable>
+          ))}
+        </ScrollView>
+      )}
     </View>
   );
 }
@@ -290,6 +307,23 @@ const createStyles = (theme: Theme) =>
       fontSize: 13,
       fontFamily: 'DMSans_500Medium',
       color: theme.textDim,
+    },
+    seasonBadge: {
+      position: 'absolute',
+      top: 12,
+      left: 12,
+      paddingHorizontal: 9,
+      paddingVertical: 5,
+      borderRadius: 6,
+      // Its own scrim rather than relying on the gradient, which is weighted
+      // to the bottom of the card where the title sits.
+      backgroundColor: 'rgba(0,0,0,0.55)',
+    },
+    seasonBadgeText: {
+      fontSize: 11,
+      fontFamily: 'DMSans_700Bold',
+      color: 'rgba(255,255,255,0.95)',
+      letterSpacing: 1.1,
     },
     stateBox: {
       paddingVertical: 40,

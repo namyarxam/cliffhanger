@@ -261,17 +261,27 @@ export function frameLabelFor(frame: RecapFrame): string {
 // ---------------------------------------------------------------- frames
 
 /**
- * Season ranges to offer on a card.
+ * Season ranges to offer on a card, newest last.
+ *
+ * Single seasons only. A whole-series option used to sit at the end, and
+ * Game of Thrones offered S1-S8: fifty-six beats plus characters and a
+ * cliffhanger, about sixty-six taps. Nobody finishes that, and it is not what
+ * the feature is for — you come back because ONE season is about to start and
+ * you have forgotten the one before it.
+ *
+ * Nothing in the data prevents ranges; get_recap still takes a from and a
+ * through, and the seasons are stored separately precisely so a range can be
+ * composed. This is a decision about what to offer, not a limitation, so
+ * restoring a multi-season option later costs one line.
  *
  * Bounded by maxSeason, so a viewer is never offered a season they have not
- * finished. The full-span option only appears once there is more than one
- * season to span.
+ * finished.
  */
 export function offeredRangesFor(maxSeason: number): SeasonRange[] {
   if (maxSeason < 1) return [];
-  const singles: SeasonRange[] = [];
-  for (let s = 1; s <= maxSeason; s++) singles.push({ from: s, through: s });
-  return maxSeason > 1 ? [...singles, { from: 1, through: maxSeason }] : singles;
+  const ranges: SeasonRange[] = [];
+  for (let s = 1; s <= maxSeason; s++) ranges.push({ from: s, through: s });
+  return ranges;
 }
 
 /**
