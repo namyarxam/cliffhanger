@@ -36,7 +36,7 @@ const surnamesOf = name =>
  *   uncarded — named in two or more beats but never introduced
  *   unused   — introduced but absent from every beat, usually padding
  */
-export function coherence(entry) {
+export function coherence(entry, ignore = new Set()) {
   const carded = new Set(
     (entry.characters ?? []).flatMap(c => surnamesOf(c.name).map(w => w.toLowerCase())),
   );
@@ -56,7 +56,7 @@ export function coherence(entry) {
   }
 
   const uncarded = [...counts.entries()]
-    .filter(([w, n]) => n >= 2 && !carded.has(w))
+    .filter(([w, n]) => n >= 2 && !carded.has(w) && !ignore.has(w))
     .sort((a, b) => b[1] - a[1])
     .map(([name, beats]) => ({ name, beats }));
 
@@ -79,9 +79,19 @@ export function coherence(entry) {
   return { uncarded, unused, keep };
 }
 
-/** Seasons that need repair, with the evidence the repair call needs. */
+/**
+ * Seasons that need repair, with the evidence the repair call needs.
+ *
+ * Extraction deliberately over-reports — it cannot tell a person from a place,
+ * so "Winterfell", "Wall", "King" and the dragons all come through. Those are
+ * filtered by the repair call, which knows the difference, and the names it
+ * rejects are recorded on the spine as `notPeople`. Without that memory the
+ * gate would report the same six seasons as failing forever, and a gate that
+ * is never green cannot gate anything.
+ */
 export function failingSeasons(spine) {
+  const ignore = new Set(spine.notPeople ?? []);
   return Object.entries(spine.seasons)
-    .map(([season, entry]) => ({ season: Number(season), entry, ...coherence(entry) }))
+    .map(([season, entry]) => ({ season: Number(season), entry, ...coherence(entry, ignore) }))
     .filter(s => s.uncarded.length > 0 || s.unused.length > 0);
 }

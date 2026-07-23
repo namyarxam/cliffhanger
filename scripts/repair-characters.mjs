@@ -153,14 +153,25 @@ async function main() {
   console.log(`\n  … repairing in 1 call`);
   const parsed = extractJSON(await askClaude(buildPrompt(show, failures), model));
 
+  // Names offered to the repair call that it declined to turn into a person.
+  // Recorded so the checker stops re-reporting them: extraction cannot tell
+  // "Ramsay" from "Winterfell", but the repair can, and that judgement is
+  // worth keeping rather than re-deriving on every run.
+  const notPeople = new Set(spine.notPeople ?? []);
+
   for (const f of failures) {
     const fixed = parsed.seasons?.[String(f.season)];
     if (!Array.isArray(fixed) || !fixed.length) {
       console.warn(`  ⚠ S${f.season} missing from response — left unchanged`);
       continue;
     }
+    const accepted = new Set(
+      fixed.flatMap(c => c.name.split(/\s+/).map(w => w.toLowerCase())),
+    );
+    for (const u of f.uncarded) if (!accepted.has(u.name)) notPeople.add(u.name);
     spine.seasons[String(f.season)].characters = fixed;
   }
+  spine.notPeople = [...notPeople].sort();
 
   await writeFile(resolve(DATA, outName), JSON.stringify(spine, null, 2));
 

@@ -65,28 +65,35 @@
       "characters": [
         {
           "name": "Jonas Kahnwald",
-          "line": "Teenage protagonist, stranded in a post-apocalyptic 2052 after his older self triggered the wormhole he was trying to destroy."
+          "line": "A Winden teenager who discovers his late father was the missing boy Mikkel and is hurled forward into a ruined 2052 as the cave wormhole is destroyed."
         },
         {
           "name": "Mikkel Nielsen / Michael Kahnwald",
-          "line": "The missing boy, now revealed as the man who grew up in the 1980s to become Jonas' father and later kill himself.",
-          "note": "One person, two names in two eras."
+          "line": "Ulrich's youngest son, sent back to 1986, raised as Michael Kahnwald, married to Hannah and father to Jonas before killing himself in 2019."
         },
         {
           "name": "Ulrich Nielsen",
-          "line": "Winden police officer who followed the passage to 1953 and is now jailed there for beating a child Helge."
+          "line": "Winden police officer investigating the disappearances who chases Helge to 1953, beats him nearly to death in the bunker, and is arrested and imprisoned in the past."
         },
         {
           "name": "The Stranger",
-          "line": "An adult Jonas from the future, working to collapse the wormhole and prevent his own loop."
+          "line": "A grown-up Jonas returned to Winden, who succeeds in detonating Tannhaus' brass device to close the wormhole."
         },
         {
           "name": "Noah",
-          "line": "The priest running the child-killing time-machine experiments, taking orders from a larger organisation Winden has not yet seen."
+          "line": "A priest and time-traveller conducting fatal portal experiments on abducted children in Helge's bunker."
+        },
+        {
+          "name": "Helge Doppler",
+          "line": "The elderly caretaker of the plant, revealed as Noah's accomplice and, as a boy in 1953, nearly killed by Ulrich for the murders he would go on to commit."
+        },
+        {
+          "name": "Mads Nielsen",
+          "line": "Ulrich's brother, whose 1986 disappearance haunts him — his body is the corpse in 1980s clothes that surfaces the day after Mikkel vanishes."
         },
         {
           "name": "Charlotte Doppler",
-          "line": "Winden's police chief, the only local closing in on the cave-plant-1986 connection."
+          "line": "Winden's chief of police, working the disappearances alongside Ulrich as both eras' cases begin to converge on her family's cabin."
         }
       ]
     },
@@ -153,27 +160,35 @@
       "characters": [
         {
           "name": "Jonas Kahnwald",
-          "line": "Just pulled through by an alternate Martha into a parallel reality, the Winden he knows now destroyed behind him."
+          "line": "Stranded in 2053, he retrieves the God Particle, fails to prevent his father's suicide, and is pulled by an unknown Martha into a parallel world where he was never born."
         },
         {
           "name": "Adam",
-          "line": "The disfigured elder Jonas who runs Sic Mundus from 1921 and has just killed his younger love to try to end the cycle."
+          "line": "A disfigured elder Jonas leading the 1921 society Sic Mundus, who shoots Martha dead moments before the apocalypse."
         },
         {
           "name": "Claudia Tiedemann",
-          "line": "The veteran time traveller openly guiding young Jonas against Adam, with her own long game underway."
+          "line": "The elderly former plant director who convinces Jonas his father's suicide must happen to preserve the loop."
         },
         {
           "name": "Martha Nielsen",
-          "line": "Shot dead by Adam in Jonas' world — while a version of her from another reality has just stepped into her place."
+          "line": "Jonas' love, killed by Adam in Winden minutes before the apocalypse, then seemingly replaced by a counterpart from another reality."
         },
         {
           "name": "Charlotte Doppler",
-          "line": "Now knows Noah is her father and Tannhaus only raised her, but does not know who her mother is."
+          "line": "Winden's chief of police, revealed by Noah to be his daughter, raised by Tannhaus after strangers left her with him."
         },
         {
           "name": "Katharina Nielsen",
-          "line": "Convinced of time travel and going after her son — has just opened the cave gate as Winden burns."
+          "line": "Ulrich's wife, who forces the cave gate open as the town is destroyed."
+        },
+        {
+          "name": "Noah",
+          "line": "Adam's lieutenant in 1921, tasked with preparing Sic Mundus for the coming apocalypse."
+        },
+        {
+          "name": "Clausen",
+          "line": "The federal investigator sent to Winden, who forces open Aleksander's buried radioactive drums at the plant and triggers the apocalypse."
         }
       ]
     },
@@ -240,29 +255,36 @@
       "characters": [
         {
           "name": "Jonas Kahnwald",
-          "line": "Erased along with Adam's and Eva's worlds after undoing the origin — the version of him that ever existed no longer does."
+          "line": "Traveling with Martha to the origin world, he undoes the crash that made Tannhaus build the machine, erasing Adam's and Eva's worlds — and himself — from existence."
         },
         {
           "name": "Martha Nielsen",
-          "line": "Erased with Jonas after saving Tannhaus' family — the two of them the last casualties of the loop they were born from."
+          "line": "Jonas' counterpart from Eva's world, pregnant with the Unknown, who joins him in the origin world to end both realities."
         },
         {
           "name": "Adam",
-          "line": "The elder Jonas who spent lifetimes trying to end the cycle; accepts the true fix and vanishes with his world."
+          "line": "Elder Jonas of the original world, still leading Sic Mundus and seeking to erase both worlds, locked in a knot with Eva until the origin is undone."
         },
         {
           "name": "Eva",
-          "line": "The elder Martha of the mirror world, Adam's counterpart; embraces him at the end as their shared existence is undone."
+          "line": "The elder Martha of the parallel world, leading Erit Lux and fighting to preserve both realities against Adam."
         },
         {
           "name": "Claudia Tiedemann",
-          "line": "The traveller who found the third world and handed Adam the answer that ends both his and Eva's realities."
+          "line": "Having killed and replaced her Eva-world counterpart, she uncovers the third 'origin' world and hands Jonas the key to breaking the loop."
         },
         {
           "name": "Hannah",
-          "line": "A survivor in the origin world, pregnant with a new Jonas by a healed Torben Wöller, faintly haunted by something she cannot name."
+          "line": "In the parallel Winden where Jonas was never born, married to Ulrich after he divorced Katharina."
+        },
+        {
+          "name": "H.G. Tannhaus",
+          "line": "The origin-world clockmaker whose grief over his son's family drove him to build the time machine that shattered reality into Adam's and Eva's worlds."
         }
       ]
     }
-  }
+  },
+  "notPeople": [
+    "winden"
+  ]
 }

@@ -175,48 +175,48 @@
       },
       "characters": [
         {
-          "name": "Robb Stark",
-          "line": "King in the North, winning battles against the Lannisters but secretly married to Talisa against his mother's warning and the Frey pact."
-        },
-        {
           "name": "Tyrion Lannister",
-          "line": "Acting Hand of the King, saved the capital with wildfire at the Blackwater only to be shoved aside by his newly arrived father."
+          "line": "Acting Hand of the King who saves King's Landing from Stannis with wildfire, only to be shoved aside the moment his father Tywin arrives."
         },
         {
-          "name": "Tywin Lannister",
-          "line": "Lord of Casterly Rock, arrived with the Tyrells to break Stannis at the Blackwater and reclaim command of the realm."
+          "name": "Robb Stark",
+          "line": "King in the North winning battles against the Lannisters, but has secretly married Talisa and broken his oath to the Freys."
         },
         {
           "name": "Stannis Baratheon",
-          "line": "Robert's brother and self-declared rightful king, his fleet destroyed at King's Landing and his army broken in retreat."
+          "line": "Robert's brother and self-declared rightful king, his fleet burned at the Blackwater and his army broken outside King's Landing."
+        },
+        {
+          "name": "Tywin Lannister",
+          "line": "Lord of Casterly Rock who arrives with the Tyrells to relieve King's Landing and reclaim the Handship for himself."
         },
         {
           "name": "Catelyn Stark",
-          "line": "Robb's mother, bound by her promises to the Freys and now served by Brienne after Renly's murder."
+          "line": "Robb's mother and counsel, blamed for Renly's death, gaining Brienne's sword but losing her son's trust after his secret marriage."
         },
         {
           "name": "Theon Greyjoy",
-          "line": "Balon's son, seized Winterfell from Bran but was betrayed by his own men, who torched the castle."
+          "line": "Ward of the Starks turned Ironborn traitor, briefly holds Winterfell before his own men betray him and burn it."
         },
         {
           "name": "Balon Greyjoy",
-          "line": "Lord of the Iron Islands, declared himself king and sent his Ironborn to raid the North."
+          "line": "King of the Iron Islands who rejects an alliance with Robb and sends his people to raid the North."
         },
         {
           "name": "Renly Baratheon",
-          "line": "Robert's youngest brother who claimed the throne with Tyrell support, murdered in his tent by a shadow born of Melisandre."
+          "line": "Robert's youngest brother and rival claimant to the throne, murdered in his tent by a shadow born of Melisandre."
         },
         {
           "name": "Arya Stark",
-          "line": "Fugitive from King's Landing, hidden as Tywin's cupbearer at Harrenhal before slipping away with Gendry and Hot Pie."
+          "line": "Hiding as Tywin's cupbearer at Harrenhal, uses a Faceless Man's three deaths to escape north with Gendry and Hot Pie."
         },
         {
           "name": "Jon Snow",
-          "line": "Ranger of the Night's Watch, captured by the wildling Ygritte and posing as a defector on Qhorin Halfhand's orders."
+          "line": "Night's Watch ranger captured beyond the Wall, forced to kill Qhorin Halfhand so he can pose as a defector to the Wildlings."
         },
         {
           "name": "Bran Stark",
-          "line": "Crippled heir of Winterfell, driven from his home when Theon seized it and hiding as the castle burned."
+          "line": "Young lord of Winterfell after Robb's departure, driven from his home when Theon seizes the castle."
         }
       ]
     },
@@ -390,47 +390,47 @@
       "characters": [
         {
           "name": "Tyrion Lannister",
-          "line": "Framed for Joffrey's murder, condemned in a trial, then freed by Jaime; he killed Shae and Tywin before Varys smuggled him out of Westeros."
+          "line": "Falsely condemned for Joffrey's murder, he strangles Shae and kills his father Tywin with a crossbow before Varys smuggles him out of Westeros."
         },
         {
           "name": "Cersei Lannister",
-          "line": "Blamed Tyrion for Joffrey's poisoning and drove his conviction, only to lose her father to his crossbow before Tyrion escaped."
+          "line": "Grieving mother of the murdered king who blames Tyrion for Joffrey's death and pushes for his execution."
         },
         {
           "name": "Jaime Lannister",
-          "line": "Kingsguard commander in King's Landing, who freed his brother the night before his execution."
+          "line": "Kingsguard commander who frees his brother Tyrion from the black cells the night before his scheduled execution."
         },
         {
           "name": "Joffrey Baratheon",
-          "line": "The king, poisoned with wine at his own wedding feast."
+          "line": "Cruel boy-king poisoned to death at his own wedding feast."
         },
         {
           "name": "Sansa Stark",
-          "line": "Spirited out of King's Landing by Baelish after Joffrey's murder and hidden in the Vale."
+          "line": "Widowed by Joffrey's murder and spirited out of King's Landing by Littlefinger."
         },
         {
           "name": "Petyr Baelish",
-          "line": "The schemer who smuggled Sansa away from the capital and installed himself as her protector in the Vale."
+          "line": "Master schemer who orchestrates Joffrey's poisoning and takes Sansa away to the Vale."
         },
         {
           "name": "Arya Stark",
-          "line": "After abandoning the Hound, sailed for Braavos to seek out the Faceless Men."
+          "line": "Abandons Westeros for Braavos to seek out the Faceless Men after leaving the Hound to die."
         },
         {
           "name": "Jon Snow",
-          "line": "Defender of Castle Black, held the Wall against Mance Rayder's assault and watched Ygritte die in his arms."
+          "line": "Defender of Castle Black against Mance Rayder's Wildlings, saved at the last moment by Stannis's arrival."
         },
         {
           "name": "Stannis Baratheon",
-          "line": "Reappeared at the Wall with an Iron Bank–funded army, crushing the wildlings and taking Mance prisoner."
+          "line": "Reinvented as the North's saviour, arriving with a newly funded army to crush the Wildlings at the Wall."
         },
         {
           "name": "Daenerys Targaryen",
-          "line": "Conquered Meereen and stayed to rule; after her dragons killed a child she chained two of them, and Drogon flew free."
+          "line": "Conqueror of Meereen who chooses to stay and rule, chaining two of her dragons after Drogon burns a child."
         },
         {
           "name": "Shae",
-          "line": "Tyrion's lover, who testified against him at his trial and was strangled by him in Tywin's bed."
+          "line": "Tyrion's former lover whose false testimony helps condemn him, killed in Tywin's bed on Tyrion's escape."
         }
       ]
     },
@@ -497,35 +497,35 @@
       "characters": [
         {
           "name": "Cersei Lannister",
-          "line": "Armed the Sparrows to strike at the Tyrells, was arrested herself, and confessed her way to a naked walk of shame through King's Landing."
+          "line": "Arms the Sparrows to strike at the Tyrells, only to be arrested and paraded naked through King's Landing herself."
         },
         {
           "name": "Jon Snow",
-          "line": "Lord Commander of the Night's Watch, murdered in the courtyard by his own brothers for admitting the wildlings past the Wall."
+          "line": "Lord Commander of the Night's Watch, stabbed to death in the courtyard snow by his own men for admitting the Wildlings."
         },
         {
           "name": "Stannis Baratheon",
-          "line": "Burned his daughter Shireen for the Lord of Light, was crushed by the Boltons, and executed by Brienne outside Winterfell."
+          "line": "Marching on Winterfell, he burns his daughter Shireen alive for magic and is executed by Brienne after the Boltons rout his army."
         },
         {
           "name": "Sansa Stark",
-          "line": "Delivered by Littlefinger to Winterfell as Ramsay's bride and raped by him on their wedding night while Theon was made to watch."
+          "line": "Delivered to Winterfell as Ramsay Bolton's bride by Littlefinger and repeatedly raped by her new husband."
         },
         {
           "name": "Ramsay Bolton",
-          "line": "Roose's legitimized son and Sansa's new husband, whose brutality at Winterfell defines her captivity."
+          "line": "Cruel heir to Winterfell who marries Sansa and forces Theon to watch him rape her on their wedding night."
         },
         {
           "name": "Daenerys Targaryen",
-          "line": "Ruling Meereen with a reluctant Tyrion at her side, until an ambush at the pits forced Drogon to carry her away into the Dothraki Sea."
+          "line": "Reopens the fighting pits of Meereen and, ambushed there, is carried off to safety on Drogon's back."
         },
         {
           "name": "Tyrion Lannister",
-          "line": "Captured by Jorah, delivered to Meereen, and installed as Daenerys's most trusted counsel."
+          "line": "Captured by the exiled Jorah, brought to Meereen, and installed as Daenerys's chief counsel."
         },
         {
           "name": "Melisandre",
-          "line": "Stannis's red priestess, who convinced him to burn Shireen alive for magical favour before his army was destroyed."
+          "line": "Red priestess at Stannis's side who persuades him to burn his own daughter Shireen for the Lord of Light's favour."
         }
       ]
     },
@@ -592,39 +592,39 @@
       "characters": [
         {
           "name": "Jon Snow",
-          "line": "Resurrected by Melisandre, renounced the Night's Watch, retook Winterfell, and was proclaimed King in the North by the northern lords."
+          "line": "Resurrected by Melisandre, he executes his murderers, retakes Winterfell from Ramsay, and is proclaimed King in the North."
         },
         {
           "name": "Sansa Stark",
-          "line": "Reunited with Jon, helped him win Winterfell back with the Vale's cavalry, and fed Ramsay to his own dogs."
+          "line": "Reunited with Jon after fleeing Ramsay, she brings the Vale's cavalry to Winterfell and feeds Ramsay to his own dogs."
         },
         {
           "name": "Ramsay Bolton",
-          "line": "Murdered his own father and infant brother to hold Winterfell, lured Jon into battle by killing Rickon, and was eaten alive by his starved hounds."
+          "line": "Murders his father Roose to seize Winterfell, kills Rickon to bait Jon into battle, and is torn apart by his own starved hounds."
         },
         {
           "name": "Cersei Lannister",
-          "line": "Blew up the Sept of Baelor with wildfire to destroy her enemies, then crowned herself queen after Tommen's suicide."
+          "line": "Blows up the Sept of Baelor with wildfire to destroy her enemies, then crowns herself queen after Tommen's suicide."
         },
         {
           "name": "Daenerys Targaryen",
-          "line": "Burned the Khals in Vaes Dothrak, took the horde, and set sail for Westeros with the Greyjoys, Dothraki, Unsullied, and her three dragons."
+          "line": "Burns the Dothraki Khals alive, wins their horde, and finally sets sail for Westeros with dragons, Unsullied and Greyjoy fleet."
         },
         {
           "name": "Bran Stark",
-          "line": "The new Three-Eyed Raven after the old one died protecting him, his overreach in the visions costing Hodor's life."
+          "line": "Marked by the Night King in a vision, he inherits the Three-Eyed Raven's sight after the attack that kills Hodor."
         },
         {
           "name": "Tyrion Lannister",
-          "line": "Hand of the Queen to Daenerys, sailing west at her side to reclaim Westeros."
+          "line": "Left to govern Meereen in Daenerys's absence, he now sails west at her side as Hand of the Queen."
         },
         {
           "name": "Jaime Lannister",
-          "line": "Cersei's brother and commander of the Lannister armies, still by her side as she seized the throne."
+          "line": "Returns to King's Landing to find Tommen dead and Cersei on the Iron Throne, her power built on a mountain of ash."
         },
         {
           "name": "Rickon Stark",
-          "line": "The youngest Stark boy, captured by Ramsay and shot down within Jon's sight to bait him into battle."
+          "line": "Youngest Stark son, captured and killed by Ramsay to bait Jon into battle at Winterfell."
         }
       ]
     },
@@ -691,35 +691,35 @@
       "characters": [
         {
           "name": "Daenerys Targaryen",
-          "line": "Landed at Dragonstone with her armies and dragons, took Jon Snow as her lover, and marched north to fight the dead after losing Viserion."
+          "line": "Landed at Dragonstone with her armies and dragons, she takes Jon as her lover and rides north to fight the dead."
         },
         {
           "name": "Jon Snow",
-          "line": "King in the North who bent the knee to Daenerys, mined dragonglass for the war against the dead, and — unknown to him — is Rhaegar Targaryen's legitimate heir to the Iron Throne."
+          "line": "King in the North who bends the knee to Daenerys, unaware Sam and Bran have discovered he is the true Targaryen heir."
         },
         {
           "name": "Cersei Lannister",
-          "line": "Queen on the Iron Throne, allied with Euron for a fleet, publicly agreed to a truce, then betrayed it and drove Jaime to abandon her."
+          "line": "Feigns a truce at the wight-viewing summit but plans to let the North and Daenerys bleed each other against the dead."
         },
         {
           "name": "Jaime Lannister",
-          "line": "Commanded the sack of Highgarden and barely survived Daenerys's dragon on the loot train; rode north alone after Cersei broke the truce."
+          "line": "Barely survives Daenerys's assault on the loot train, then abandons Cersei in disgust when she breaks the truce and rides north."
         },
         {
           "name": "Tyrion Lannister",
-          "line": "Hand of the Queen, brokering the wight-viewing summit that Cersei used to deceive the alliance."
+          "line": "Hand of the Queen who brokers the parley with Cersei and struggles as Daenerys grows more willing to burn her enemies."
         },
         {
           "name": "Bran Stark",
-          "line": "The Three-Eyed Raven at Winterfell, whose visions with Sam confirmed Jon's true parentage."
+          "line": "The new Three-Eyed Raven at Winterfell, whose visions with Sam confirm Jon is Rhaegar Targaryen's legitimate son."
         },
         {
           "name": "The Night King",
-          "line": "Killed and reanimated the dragon Viserion, rode it through the Wall, and marched his army into the North."
+          "line": "Kills the dragon Viserion beyond the Wall, raises him as a wight, and rides him through the Wall itself."
         },
         {
           "name": "Euron Greyjoy",
-          "line": "Cersei's new naval ally, who destroyed Yara's fleet and captured Ellaria as a prize for the queen."
+          "line": "Cersei's new ally, whose fleet destroys Yara's ships and delivers Ellaria Sand to King's Landing."
         }
       ]
     },
@@ -779,29 +779,41 @@
       "characters": [
         {
           "name": "Jon Snow",
-          "line": "The true Targaryen heir, who fought at Winterfell, stabbed Daenerys in the throne room to stop her, and was exiled back to the Wall."
+          "line": "Reveals his Targaryen parentage to Daenerys, then stabs her in the throne room and is exiled to the Wall for the murder."
         },
         {
           "name": "Daenerys Targaryen",
-          "line": "Razed King's Landing with Drogon after Cersei killed Missandei, and was killed in the ruined throne room by the lover she had turned into her assassin."
+          "line": "Razes King's Landing with Drogon after Cersei's surrender, then is killed by Jon in the ruined throne room."
         },
         {
           "name": "Bran Stark",
-          "line": "Chosen by the surviving lords to be king of the Six Kingdoms after Daenerys's death."
+          "line": "Crowned Bran the Broken, king of the Six Kingdoms by the assembled lords of Westeros."
         },
         {
           "name": "Arya Stark",
-          "line": "Slipped past the Night King at Winterfell and killed him with her Valyrian dagger, then sailed west into the unknown."
+          "line": "Kills the Night King with her Valyrian dagger at Winterfell, then sails west to chart the unknown."
         },
         {
           "name": "Sansa Stark",
-          "line": "Granted independence as Queen in the North when Bran was crowned in the south."
+          "line": "Granted the independent crown of a free North after Bran is chosen king of the rest."
         },
         {
           "name": "Cersei Lannister",
-          "line": "Beheaded Missandei on the walls of King's Landing, then died in Jaime's arms as the Red Keep collapsed around them."
+          "line": "Watches King's Landing burn from the Red Keep and dies in Jaime's arms as the walls collapse on top of them."
         }
       ]
     }
-  }
+  },
+  "notPeople": [
+    "drogon",
+    "king",
+    "landing",
+    "night",
+    "sent",
+    "sparrows",
+    "viserion",
+    "wall",
+    "wildlings",
+    "winterfell"
+  ]
 }

@@ -58,27 +58,31 @@
       "characters": [
         {
           "name": "Jimmy McGill",
-          "line": "Public defender turned elder-law lawyer, just walked away from a Santa Fe job offer and stopped pretending to be a good man."
+          "line": "A hustling public defender working out of a nail salon back room, chasing a big case at Sandpiper Crossing after swearing off cons following Marco's death."
         },
         {
           "name": "Chuck McGill",
-          "line": "HHM name partner, mostly housebound with EHS, and quietly the reason Jimmy's legal career keeps stalling."
+          "line": "Jimmy's older brother and a founding partner at HHM, housebound with electromagnetic hypersensitivity, who has quietly worked to keep Jimmy out of the law."
         },
         {
-          "name": "Kim Wexler",
-          "line": "HHM associate who wouldn't leave for Jimmy's partnership pitch, presently punished in the document review pit."
+          "name": "The Kettlemans",
+          "line": "A county treasurer and his wife who embezzled $1.6M and, after Jimmy recovered the cash, took a plea deal for Craig."
         },
         {
-          "name": "Mike Ehrmantraut",
-          "line": "Courthouse parking attendant and ex-Philly cop, now taking small bodyguard jobs on the edge of the cartel world."
-        },
-        {
-          "name": "Howard Hamlin",
-          "line": "HHM managing partner, publicly wearing Chuck's freeze-out of Jimmy as if it were his own decision."
+          "name": "Tuco Salamanca",
+          "line": "A volatile Salamanca enforcer whose desert standoff with Jimmy first pulled him into the cartel's orbit."
         },
         {
           "name": "Nacho Varga",
-          "line": "Mid-level Salamanca lieutenant who's clocked Jimmy as a criminal he can call on when needed."
+          "line": "Tuco's calmer lieutenant, intrigued by Jimmy's talk-down of Tuco and waiting for the day he calls to get 'in the game'."
+        },
+        {
+          "name": "Mike Ehrmantraut",
+          "line": "A retired Philadelphia cop working the courthouse parking booth who helped Jimmy retrieve the Kettleman money without keeping a cent."
+        },
+        {
+          "name": "Howard Hamlin",
+          "line": "The polished managing partner at HHM who fronts Chuck's refusals to hire Jimmy, taking the heat Chuck won't."
         }
       ]
     },
@@ -145,27 +149,32 @@
       "characters": [
         {
           "name": "Jimmy McGill",
-          "line": "Half of Wexler-McGill, out of Davis & Main, just confessed on tape to a felony he doesn't know was recorded."
+          "line": "Briefly an associate at Davis & Main, he engineers his own firing to keep the bonus and quietly tampers with Chuck's Mesa Verde filing."
         },
         {
           "name": "Kim Wexler",
-          "line": "Solo attorney for Mesa Verde and Jimmy's practice partner, unaware the 'correct' paperwork she resubmitted was Jimmy's forgery."
+          "line": "An HHM associate who lands Mesa Verde on her own, is punished with doc review, and leaves to share a two-office practice with Jimmy."
         },
         {
           "name": "Chuck McGill",
-          "line": "Mostly homebound but working outdoors enough to entrap Jimmy; holds the taped confession and plans to use it."
+          "line": "Convinced Jimmy sabotaged his Mesa Verde work, he stages a copy-store fall to draw a taped confession out of his brother."
         },
         {
           "name": "Howard Hamlin",
-          "line": "HHM's public face, just lost Kim and Mesa Verde, unaware Jimmy is at the root of it."
+          "line": "HHM's managing partner, who kept Kim on document review after Mesa Verde and now finds himself losing that client to her."
         },
         {
           "name": "Mike Ehrmantraut",
-          "line": "Salamanca-adjacent problem-solver, stole $250,000 from Hector's truck, and just met an unseen adversary who spared his life."
+          "line": "Drawn deeper into cartel work, he takes $50K from Hector to eat Tuco's gun charge, then aborts a rifle shot on Hector after an anonymous 'Don't' note."
         },
         {
-          "name": "Nacho Varga",
-          "line": "Split the truck money with Mike, dangerously close to Hector, still hiding side deals from the family."
+          "name": "Hector Salamanca",
+          "line": "The Salamanca family's regional boss, now paying Mike to bury Tuco's assault charge and using his ice-cream trucks to move product."
+        },
+        {
+          "name": "Mesa Verde",
+          "line": "The regional bank whose expansion work Kim wins, loses to Chuck's HHM, and reclaims after Jimmy's filing swap.",
+          "note": "client, not a person"
         }
       ]
     },
@@ -232,27 +241,35 @@
       "characters": [
         {
           "name": "Jimmy McGill",
-          "line": "Suspended for a year, hustling TV airtime as 'Saul Goodman', doesn't yet know Chuck is dead."
+          "line": "Suspended from law for a year after Chuck's tape, he reinvents himself hawking commercial airtime as 'Saul Goodman' and torpedoes his own Sandpiper payday to help Irene."
+        },
+        {
+          "name": "Chuck McGill",
+          "line": "Broken on the stand at Jimmy's bar hearing and forced out of HHM, he relapses into full EHS and dies when a lantern topples in his gutted house."
         },
         {
           "name": "Kim Wexler",
-          "line": "Recovering from a serious car crash caused by overwork, still Mesa Verde's outside counsel."
+          "line": "Jimmy's partner and lover, carrying Mesa Verde and every other client alone until she totals her car from exhaustion."
         },
         {
           "name": "Howard Hamlin",
-          "line": "The last McGill left at HHM, having just paid Chuck the first installment of his buyout."
+          "line": "HHM's managing partner, who pays out Chuck's buyout personally to force him into retirement."
         },
         {
           "name": "Mike Ehrmantraut",
-          "line": "In an uneasy alliance with Gus Fring, taking money to hurt Hector without killing him."
+          "line": "Now openly working for Gus, tailing his own surveillance to Los Pollos Hermanos and accepting a role in disrupting the Salamancas."
         },
         {
           "name": "Gus Fring",
-          "line": "The 'man behind the note', running his empire from behind Los Pollos and controlling Nacho through the pill swap he witnessed."
+          "line": "The Los Pollos Hermanos owner and secret cartel distributor, who recruits Mike, tolerates Nacho's pill swap, and keeps Hector alive in a wheelchair to prolong his suffering."
         },
         {
           "name": "Nacho Varga",
-          "line": "Trapped by Gus's knowledge, still working the Salamanca street operation for a Hector who cannot speak or move."
+          "line": "Terrified for his father, he swaps Hector's nitro pills for placebos and triggers the stroke at Don Eladio's summit."
+        },
+        {
+          "name": "Hector Salamanca",
+          "line": "The Salamanca boss whose meeting with Gus ends in the stroke that will leave him mute and wheelchair-bound."
         }
       ]
     },
@@ -319,27 +336,39 @@
       "characters": [
         {
           "name": "Jimmy McGill",
-          "line": "Reinstated but electing to do business as 'Saul Goodman'; refuses to grieve Chuck or answer for what he did to him."
+          "line": "Numb after Chuck's death, he fakes remorse to win reinstatement and announces to Kim that he'll practice under 'Saul Goodman'."
         },
         {
           "name": "Kim Wexler",
-          "line": "Schweikart & Cokely partner running Mesa Verde and building a pro bono defense practice, blindsided by Jimmy's Saul announcement."
+          "line": "Now at Schweikart & Cokely with Mesa Verde in tow, she throws herself into pro bono defense work and is blindsided by Jimmy's Saul plan."
+        },
+        {
+          "name": "Chuck McGill",
+          "line": "Dead by suicide before the season begins, his ruling as accidental lets Jimmy shed blame while Kim rages at Howard on his behalf."
         },
         {
           "name": "Mike Ehrmantraut",
-          "line": "Gus's field lieutenant on the superlab, just executed Werner Ziegler on Gus's orders."
+          "line": "Working a Madrigal security cover for Gus, he oversees Werner's dig and is forced to shoot the engineer when he goes off-leash."
         },
         {
           "name": "Gus Fring",
-          "line": "Quietly building the superlab, using Nacho as his eyes inside a Salamanca crew now run by Lalo."
+          "line": "Building the superlab under a laundry, he keeps Hector alive as a puppet and installs Nacho as his mole inside the Salamancas."
+        },
+        {
+          "name": "Werner Ziegler",
+          "line": "The German engineer secretly excavating Gus's lab, whose homesick slip to Lalo costs him his life at Mike's hand."
         },
         {
           "name": "Lalo Salamanca",
-          "line": "Hector's smart, curious nephew, freshly running the family in Albuquerque and already sniffing at Werner's death."
+          "line": "Hector's charming, dangerous nephew freshly arrived to run family business, already sniffing around Werner and Gus's operation."
         },
         {
           "name": "Nacho Varga",
-          "line": "Senior in the Salamanca org and Gus's mole, now sitting under Lalo, who watches everything."
+          "line": "Wounded in a staged attack that killed Arturo, he is now owned by Gus, who knows about the pill swap."
+        },
+        {
+          "name": "Hector Salamanca",
+          "line": "Nursed back to twitching consciousness by Gus, trapped in a body that can barely tap a bell."
         }
       ]
     },
@@ -406,27 +435,27 @@
       "characters": [
         {
           "name": "Jimmy 'Saul Goodman' McGill",
-          "line": "Full-time criminal lawyer, married to Kim, just survived the desert as Lalo's bail bagman."
+          "line": "Now practicing as Saul, he takes on Lalo as a client, marries Kim, and barely survives a desert bail run for the cartel."
         },
         {
           "name": "Kim Wexler",
-          "line": "Quit Schweikart & Cokely for a pro bono public-defender load; the one who proposed destroying Howard."
-        },
-        {
-          "name": "Mike Ehrmantraut",
-          "line": "Gus's most senior field lieutenant, saved Jimmy in the desert on Gus's orders."
-        },
-        {
-          "name": "Gus Fring",
-          "line": "Running Salamanca smuggling routes on paper for the cartel and believes Lalo is dead."
+          "line": "Increasingly hooked on the con, she rejects Mesa Verde's tactics on Acker, marries Jimmy, faces down Lalo in her apartment, and tells Jimmy she wants Howard destroyed."
         },
         {
           "name": "Lalo Salamanca",
-          "line": "Reported dead but hidden and alive, certain Gus tried to kill him and hunting for proof."
+          "line": "The Salamancas' new field commander, jailed and bailed on the Fred killing, who survives Gus's Chihuahua hit and lets the cartel believe him dead."
+        },
+        {
+          "name": "Gus Fring",
+          "line": "Playing both sides, he lets Lalo's DEA gambit through to protect Nacho and orchestrates the failed assassination on Lalo's estate."
+        },
+        {
+          "name": "Mike Ehrmantraut",
+          "line": "Gus's fixer, dispatched to shadow Saul's cash run and pick off the ambushers who nearly kill him in the desert."
         },
         {
           "name": "Nacho Varga",
-          "line": "Opened Lalo's gate for the assassins and fled, now hunted by the Salamancas."
+          "line": "Gus's mole inside the Salamancas, he opens Lalo's back gate for the hit team and flees into the night."
         }
       ]
     },
@@ -493,29 +522,40 @@
       "characters": [
         {
           "name": "Jimmy McGill",
-          "line": "Inmate serving 86 years, has abandoned 'Saul' and admitted his role in Chuck's death and Walt's empire."
+          "line": "Fully Saul Goodman after Kim leaves, he is finally caught as 'Gene' in Omaha and throws away his plea deal in court to confess everything, including his part in Chuck's death."
         },
         {
           "name": "Kim Wexler",
-          "line": "Living quietly in Florida, has told Cheryl Hamlin the truth and given up the law."
+          "line": "The architect of the Howard con, she surrenders her law license and writes Cheryl an affidavit before walking away from Jimmy."
         },
         {
-          "name": "Mike Ehrmantraut",
-          "line": "Gus's chief enforcer, cleaned up Lalo, Howard, and Nacho's deaths in ways that hold up."
+          "name": "Lalo Salamanca",
+          "line": "Back from the dead, he traces Gus's lab through Werner's widow, shoots Howard in Jimmy and Kim's apartment, and dies in the unfinished superlab."
         },
         {
           "name": "Gus Fring",
-          "line": "The sole remaining major player in New Mexico now that Lalo is dead, with the superlab intact and operational."
+          "line": "Lures Lalo into the half-built lab and kills him with a hidden pistol, burying the last Salamanca threat under concrete."
         },
         {
           "name": "Howard Hamlin",
-          "line": "Murdered by Lalo at Jimmy and Kim's apartment, publicly remembered as an addict who killed himself."
+          "line": "Framed as a cocaine-addled wreck by Jimmy and Kim's con, then shot dead by Lalo the same night and buried beneath the lab."
+        },
+        {
+          "name": "Mike Ehrmantraut",
+          "line": "Gus's cleaner, who buries Lalo and Howard together under the superlab floor."
+        },
+        {
+          "name": "Saul Goodman",
+          "line": "The strip-mall persona Jimmy fully becomes once Kim leaves, running a criminal law mill until his Omaha exile as 'Gene'."
         },
         {
           "name": "Marion",
-          "line": "Jeff's elderly mother in Omaha, the one who saw through 'Gene' and turned him in."
+          "line": "Gene's kindly Omaha acquaintance who recognises him from a Better Call Saul clip and calls the police from her Life Alert."
         }
       ]
     }
-  }
+  },
+  "notPeople": [
+    "saul"
+  ]
 }

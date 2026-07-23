@@ -23,12 +23,22 @@ const SEASON_COVERAGE_BAR = 0.8;
 const EPISODE_ANTHOLOGY = 0.15;
 
 /**
- * Below this, seasons probably tell separate stories (Fargo, The White Lotus).
- * A warning, never a rejection — each season still recaps fine on its own; it
- * is only the multi-season range that would stitch together stories that never
- * met.
+ * Below this, seasons tell separate stories — an anthology, and a rejection.
+ *
+ * Season anthologies are not a degraded case of the feature, they are outside
+ * it. The trigger a recap exists for is "the new season is imminent and I have
+ * forgotten the old one", and for Fargo or The White Lotus there is nothing to
+ * have forgotten: the next season is a different story with different people.
+ * A per-season recap would be well-formed and pointless.
+ *
+ * Threshold measured across the validation set, where the gap is unambiguous:
+ * Black Mirror 6%, Fargo 24%, The White Lotus 67%, and every continuous show
+ * 100%. Nothing lands in between, so 75% separates cleanly with room on both
+ * sides. Worth revisiting if a legitimate show with a genuinely rotating
+ * ensemble ever falls below it — the failure mode is a show wrongly skipped,
+ * which is visible and recoverable, rather than a bad recap shipped.
  */
-const SEASON_ANTHOLOGY = 0.7;
+const ANTHOLOGY = 0.75;
 
 export function evaluate(data) {
   const reasons = [];
@@ -84,14 +94,18 @@ export function evaluate(data) {
   // passes every one of them — the first version of this rule did exactly
   // that and let Black Mirror through.
   const topBilling = Math.max(0, ...data.cast.map(c => c.episodeCount ?? 0));
-  const continuity = totalEpisodes ? topBilling / totalEpisodes : 0;
+  // Capped at 1. TMDB reports episode counts across a show's whole run while
+  // totalEpisodes reflects only the seasons fetched, so a dataset bounded by
+  // --through reads above 100% (The Expanse 135%, Silo 150%). Harmless — it can
+  // only inflate, never falsely reject — but it should not look like a number.
+  const continuity = totalEpisodes ? Math.min(1, topBilling / totalEpisodes) : 0;
   if (continuity < EPISODE_ANTHOLOGY) {
     reasons.push(
       `per-episode anthology — no recurring cast (top billing appears in ${topBilling}/${totalEpisodes} episodes)`,
     );
-  } else if (continuity < SEASON_ANTHOLOGY) {
-    warnings.push(
-      `likely season anthology (cast continuity ${Math.round(continuity * 100)}%) — per-season recaps are fine, cross-season ranges are not`,
+  } else if (continuity < ANTHOLOGY) {
+    reasons.push(
+      `anthology — each season is a separate story (cast continuity ${Math.round(continuity * 100)}%), so an earlier season is not preparation for the next`,
     );
   }
 

@@ -34,6 +34,7 @@ import { readFile, readdir } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createClient } from '@supabase/supabase-js';
+import { evaluate } from './eligibility.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = resolve(ROOT, 'src/recap/data');
@@ -278,6 +279,18 @@ async function main() {
   for (const slug of slugs) {
     const data = JSON.parse(await readFile(resolve(DATA, `${slug}.json`), 'utf8'));
     const spine = JSON.parse(await readFile(resolve(DATA, `${slug}.spine.json`), 'utf8'));
+    // Eligibility is re-checked at the last possible moment, not trusted from
+    // the batch run. A spine on disk only means it was generated once; the
+    // rules have already changed under it more than once (anthologies became a
+    // rejection after Fargo and The White Lotus were generated), and this is
+    // the only gate standing between a rejected show and real users.
+    const verdict = evaluate(data);
+    if (!verdict.ok) {
+      console.log(`\n▸ ${data.title} (${slug})`);
+      for (const r of verdict.reasons) console.log(`  ✗ NOT ELIGIBLE: ${r}`);
+      continue;
+    }
+
     const { show, seasons } = composeShow(data, spine);
 
     report(slug, show, seasons);

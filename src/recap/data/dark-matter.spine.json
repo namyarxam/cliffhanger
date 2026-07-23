@@ -65,29 +65,28 @@
       "characters": [
         {
           "name": "Jason Dessen (#01)",
-          "line": "The original Chicago physics professor, now stepping into an unknown world with the family he fought a version of himself to reclaim."
+          "line": "The original Jason, a Chicago physics professor who was abducted from his own life and, after crossing countless realities, has finally returned home to reclaim his family."
         },
         {
           "name": "Daniela Dessen",
-          "line": "Jason's wife and a painter, who saw through the impostor, chose #01, and now flees with him through the multiverse."
-        },
-        {
-          "name": "Charlie Dessen",
-          "line": "Their teenage son, aware his father was replaced and traveling the corridor alongside his parents."
+          "line": "Jason's wife, who saw through the impostor after a nut-allergy scare and has chosen the original Jason over the swarm of rival versions."
         },
         {
           "name": "Jason #02",
-          "line": "The alternate Jason who abducted #01 and took his life; ultimately helped the Dessens escape rather than keep them."
+          "line": "The genius variant who built the box, stole #01's life, and — after helping the Dessens escape the other Jasons — remains in the original Chicago."
+        },
+        {
+          "name": "Charlie Dessen",
+          "line": "Jason and Daniela's teenage son, fleeing Chicago with his parents through the box into a reality of their own choosing."
         },
         {
           "name": "Amanda Lucas",
-          "line": "Velocity's lab psychiatrist who escaped the box with #01, then chose to stay behind in a progressive alternate Chicago."
-        },
-        {
-          "name": "Leighton Vance",
-          "line": "Velocity's CEO in Jason #01's world; entered the box himself at season's end and is now loose inside the corridor."
+          "line": "The Velocity Labs psychiatrist who fled the box with #01 and stayed behind in a progressive Chicago rather than return to her own world."
         }
       ]
     }
-  }
+  },
+  "notPeople": [
+    "chicago"
+  ]
 }

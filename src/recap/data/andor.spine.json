@@ -65,27 +65,31 @@
       "characters": [
         {
           "name": "Cassian Andor",
-          "line": "Fugitive who has just placed himself under Luthen's command, willing to serve the Rebellion."
+          "line": "A Ferrix scavenger turned reluctant rebel who, after leading the Narkina 5 breakout and burying his mother, boards Luthen's ship to fight the Empire in earnest."
         },
         {
           "name": "Luthen Rael",
-          "line": "Rebel spymaster running his network from a Coruscant antiques shop, now openly sponsoring Cassian."
-        },
-        {
-          "name": "Mon Mothma",
-          "line": "Imperial senator secretly funding Luthen; has agreed to marry off her thirteen-year-old daughter Leida to cover the missing money."
+          "line": "A Coruscant antiquities dealer running a covert rebel network, who recruits Cassian for Aldhani and extracts him from Ferrix to serve full-time."
         },
         {
           "name": "Dedra Meero",
-          "line": "ISB supervisor who has identified an unknown handler she calls 'Axis' and holds authority over Ferrix."
+          "line": "An ambitious ISB supervisor hunting the mind behind Aldhani, who tortured Bix for answers and was pulled from a Ferrix riot by Syril."
         },
         {
           "name": "Syril Karn",
-          "line": "Disgraced ex-Corpo obsessed with Cassian, now working a menial Coruscant desk job; saved Dedra during the Ferrix riot."
+          "line": "A disgraced Pre-Mor deputy obsessed with catching Cassian, who saved Dedra during the Ferrix uprising and now orbits the ISB officer he idolises."
+        },
+        {
+          "name": "Mon Mothma",
+          "line": "A Chandrilan senator secretly funding Luthen's network, who has agreed to betroth her daughter Leida to a banker's son to launder the money trail."
         },
         {
           "name": "Bix Caleen",
-          "line": "Ferrix mechanic tortured by Dr. Gorst; fleeing offworld with Brasso, Wilmon and B2EMO."
+          "line": "Cassian's oldest friend on Ferrix, freed from ISB custody during the uprising but broken by Dedra's interrogation."
+        },
+        {
+          "name": "Maarva Andor",
+          "line": "Cassian's adoptive mother, whose recorded funeral speech on Ferrix ignited the town's uprising against the Empire."
         }
       ]
     },
@@ -152,29 +156,48 @@
       "characters": [
         {
           "name": "Cassian Andor",
-          "line": "Rebel operative flying to Kafrene to collect intelligence on an Imperial superweapon."
+          "line": "A seasoned operative running missions for Luthen, now flying to Kafrene to meet Saw's informant while Bix hides offworld with their child."
         },
         {
-          "name": "Bix Caleen",
-          "line": "In hiding on Mina-Rau, raising Cassian's child alone while he stays in the fight."
-        },
-        {
-          "name": "Mon Mothma",
-          "line": "Political face of the open Rebellion on Yavin IV after denouncing Palpatine in the Senate."
-        },
-        {
-          "name": "Kleya Marki",
-          "line": "Sole surviving member of Luthen's cell, now integrating into the Yavin leadership after killing him herself."
+          "name": "Luthen Rael",
+          "line": "The rebel spymaster known as Axis, cornered by Dedra and killed by Kleya, whose intel reaches Yavin after his death."
         },
         {
           "name": "Dedra Meero",
-          "line": "Fallen ISB supervisor, imprisoned in a Narkina-style labor camp for her overreach on Ghorman."
+          "line": "An ISB supervisor tasked by Krennic with manufacturing a Ghorman insurgency, who unmasked Luthen as Axis but lost Syril in the Palmo massacre."
         },
         {
-          "name": "K-2SO",
-          "line": "Reprogrammed Imperial KX security droid now serving as Cassian's partner."
+          "name": "Mon Mothma",
+          "line": "The Chandrilan senator who denounced Palpatine on the Senate floor and fled to Yavin with Cassian to lead the rebellion openly."
+        },
+        {
+          "name": "Bix Caleen",
+          "line": "Back in the fight after Mina-Rau, she tortured Gorst with his own device and has slipped away to raise her and Cassian's child so he can keep fighting."
+        },
+        {
+          "name": "Syril Karn",
+          "line": "Dedra's partner and undercover Ghorman infiltrator, killed in the Palmo square after recognising Cassian and confronting Dedra over the massacre."
+        },
+        {
+          "name": "Kleya Marki",
+          "line": "Luthen's lieutenant and closest confidante, who finished him to protect the network and delivered his intelligence to Yavin."
+        },
+        {
+          "name": "Orson Krennic",
+          "line": "The Imperial director quietly stripping Ghorman for a secret weapons project, using Dedra to fabricate the insurgency that justifies it."
+        },
+        {
+          "name": "Doctor Gorst",
+          "line": "The ISB torturer whose recordings broke Bix on Ferrix, later subjected to his own device when she captured him."
         }
       ]
     }
-  }
+  },
+  "notPeople": [
+    "aldhani",
+    "ferrix",
+    "ghorman",
+    "narkina",
+    "yavin"
+  ]
 }
