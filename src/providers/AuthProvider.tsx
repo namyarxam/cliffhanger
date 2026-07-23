@@ -265,14 +265,59 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   // there for why setProfile's functional-update form is insufficient.
   const profileRef = useRef(profile);
   profileRef.current = profile;
+
+  /**
+   * Record that the app was opened.
+   *
+   * The only signal for "this user is still around". Every other timestamp in
+   * the schema is a side effect of writing something, so a session spent
+   * reading — checking what is airing, opening a show, browsing Explore —
+   * used to be completely invisible.
+   *
+   * Throttled to once an hour against the value already on the loaded profile,
+   * so foregrounding repeatedly through the day costs one write, not dozens.
+   * Reading the ref rather than a local timestamp means the throttle survives
+   * a remount and is shared across devices.
+   *
+   * Fire-and-forget, and deliberately not reflected in local state: nothing in
+   * the UI reads last_seen_at, so a re-render would be pure cost. A failure is
+   * one missing data point and must never be visible to the user.
+   */
+  const touchLastSeen = useCallback((userId: string) => {
+    const previous = profileRef.current?.last_seen_at;
+    if (previous && Date.now() - new Date(previous).getTime() < 60 * 60 * 1000) return;
+    const stamp = new Date().toISOString();
+    if (profileRef.current) profileRef.current = { ...profileRef.current, last_seen_at: stamp };
+    supabase
+      .from('profiles')
+      .update({ last_seen_at: stamp })
+      .eq('id', userId)
+      .then(({ error }) => {
+        if (error) silentCatch('auth:touchLastSeen')(error);
+      });
+  }, []);
+
   useEffect(() => {
     const sub = AppState.addEventListener('change', state => {
       if (state !== 'active') return;
       const s = sessionRef.current;
-      if (s?.user) fetchProfile(s.user.id);
+      if (s?.user) {
+        fetchProfile(s.user.id);
+        touchLastSeen(s.user.id);
+      }
     });
     return () => sub.remove();
-  }, [fetchProfile]);
+  }, [fetchProfile, touchLastSeen]);
+
+  // Cold launch. AppState only emits 'active' on a FOREGROUND transition, so
+  // an app opened from cold never fires it and would otherwise go unrecorded —
+  // which is most opens. Keyed on the profile id so it runs once the throttle
+  // has a previous value to compare against, and not again on subsequent
+  // profile refreshes for the same user.
+  useEffect(() => {
+    const uid = sessionRef.current?.user?.id;
+    if (uid && profile?.id) touchLastSeen(uid);
+  }, [profile?.id, touchLastSeen]);
 
   // Marks the welcome flow complete. Optimistic local update lets AuthGate
   // reroute the moment the user taps "Skip" or finishes adding their first

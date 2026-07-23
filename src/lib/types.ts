@@ -141,6 +141,9 @@ export interface UserProfile {
   theme: string | null;
   onboarded_at: string | null;
   coachmarks_seen: string[];
+  /** Last app open, throttled to once an hour. Null means not seen since
+   *  last_seen_at started being recorded — deliberately not backfilled. */
+  last_seen_at: string | null;
   created_at: string;
 }
 
