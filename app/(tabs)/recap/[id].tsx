@@ -8,7 +8,15 @@
 // progress bar so it doesn't feel disowned from the rest of the app.
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { View, Text, StyleSheet, Pressable, useWindowDimensions, ActivityIndicator } from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  Pressable,
+  useWindowDimensions,
+  ActivityIndicator,
+  Modal,
+} from 'react-native';
 import { Image } from 'expo-image';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -26,11 +34,94 @@ import { useQuery } from '@tanstack/react-query';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { qk } from '@/src/lib/queryKeys';
-import { listRecaps, getRecapSeasons, buildFrames } from '@/src/lib/recaps';
+import {
+  listRecaps,
+  getRecapSeasons,
+  buildFrames,
+  reportRecapFrame,
+  frameLabelFor,
+  REPORT_REASONS,
+  type RecapReportReason,
+} from '@/src/lib/recaps';
+import { silentCatch } from '@/src/lib/errorLog';
 import { ACT_ORDER, ACT_LABELS } from '@/src/recap/types';
 import type { RecapFrame } from '@/src/recap/types';
 
 const KEN_BURNS_MS = 9000;
+
+/**
+ * Reason picker for a wrong frame.
+ *
+ * Presets rather than free text, because a tappable list gets filed and a text
+ * box mostly does not — and because the reason is what routes the fix. The
+ * send is fire-and-forget and the sheet closes immediately: a report is worth
+ * nothing to the person filing it, so making them wait on a round trip only
+ * charges them for helping.
+ */
+function ReportSheet({
+  visible,
+  frameLabel,
+  accent,
+  onClose,
+  onSubmit,
+}: {
+  visible: boolean;
+  frameLabel: string;
+  accent: string;
+  onClose: () => void;
+  onSubmit: (reason: RecapReportReason) => void;
+}) {
+  return (
+    <Modal visible={visible} transparent animationType="fade" onRequestClose={onClose}>
+      <Pressable style={sheet.backdrop} onPress={onClose}>
+        <Pressable style={sheet.card} onPress={e => e.stopPropagation()}>
+          <Text style={sheet.title}>What's wrong here?</Text>
+          <Text style={sheet.subtitle} numberOfLines={1}>
+            {frameLabel}
+          </Text>
+          {REPORT_REASONS.map(r => (
+            <Pressable
+              key={r.value}
+              style={({ pressed }) => [sheet.row, pressed && { backgroundColor: 'rgba(255,255,255,0.08)' }]}
+              onPress={() => onSubmit(r.value)}
+            >
+              <Text style={sheet.rowText}>{r.label}</Text>
+            </Pressable>
+          ))}
+          <Pressable style={sheet.cancel} onPress={onClose}>
+            <Text style={[sheet.cancelText, { color: accent }]}>Cancel</Text>
+          </Pressable>
+        </Pressable>
+      </Pressable>
+    </Modal>
+  );
+}
+
+// Always dark, like the story screen it sits over — the recap ignores the
+// app's light theme because it is edge-to-edge photography.
+const sheet = StyleSheet.create({
+  backdrop: { flex: 1, backgroundColor: 'rgba(0,0,0,0.72)', justifyContent: 'flex-end' },
+  card: {
+    backgroundColor: '#141414',
+    borderTopLeftRadius: 18,
+    borderTopRightRadius: 18,
+    paddingTop: 20,
+    paddingBottom: 34,
+    paddingHorizontal: 18,
+  },
+  title: { fontSize: 17, fontFamily: 'DMSans_700Bold', color: '#fff' },
+  subtitle: {
+    fontSize: 13,
+    fontFamily: 'DMSans_400Regular',
+    color: 'rgba(255,255,255,0.45)',
+    marginTop: 2,
+    marginBottom: 12,
+  },
+  row: { paddingVertical: 14, borderRadius: 10, paddingHorizontal: 10 },
+  rowText: { fontSize: 15, fontFamily: 'DMSans_500Medium', color: 'rgba(255,255,255,0.92)' },
+  cancel: { paddingTop: 14, alignItems: 'center' },
+  cancelText: { fontSize: 15, fontFamily: 'DMSans_500Medium' },
+});
 
 /**
  * Type size for the title card, chosen by length.
@@ -101,6 +192,8 @@ export default function RecapStoryScreen() {
   );
 
   const [index, setIndex] = useState(0);
+  const [reporting, setReporting] = useState(false);
+  const [reported, setReported] = useState(false);
 
   // Reset to the first frame whenever the recap changes.
   //
@@ -118,6 +211,15 @@ export default function RecapStoryScreen() {
   if (framesKey !== frames) {
     setFramesKey(frames);
     setIndex(0);
+    setReported(false);
+  }
+
+  // The flag turns into a tick as acknowledgement for THIS frame, so it has to
+  // clear when the frame does — otherwise every later slide looks reported.
+  const [reportedAt, setReportedAt] = useState(-1);
+  if (reported && reportedAt !== index && reportedAt !== -1) {
+    setReported(false);
+    setReportedAt(-1);
   }
 
   // Clamped defensively: if a recap ever renders with a shorter frame list
@@ -279,9 +381,27 @@ export default function RecapStoryScreen() {
         <ProgressBar frames={frames} index={index} accent={theme.accent} />
         <View style={styles.chromeRow} pointerEvents="box-none">
           <Text style={styles.actLabel}>{ACT_LABELS[frame.act]}</Text>
-          <Pressable onPress={exit} hitSlop={14} style={styles.close}>
-            <FontAwesome name="times" size={17} color="rgba(255,255,255,0.85)" />
-          </Pressable>
+          <View style={styles.chromeActions}>
+            {/* Reporting is deliberately reachable from the frame itself.
+                Every real defect so far was spotted while looking at a
+                specific slide, and a report that has to be filed later loses
+                the one thing that makes it actionable — which slide. */}
+            <Pressable
+              onPress={() => setReporting(true)}
+              hitSlop={14}
+              style={styles.close}
+              accessibilityLabel="Report a problem with this slide"
+            >
+              <FontAwesome
+                name={reported ? 'check' : 'flag-o'}
+                size={15}
+                color={reported ? theme.accent : 'rgba(255,255,255,0.6)'}
+              />
+            </Pressable>
+            <Pressable onPress={exit} hitSlop={14} style={styles.close}>
+              <FontAwesome name="times" size={17} color="rgba(255,255,255,0.85)" />
+            </Pressable>
+          </View>
         </View>
       </View>
 
@@ -297,6 +417,27 @@ export default function RecapStoryScreen() {
       >
         <FrameContent frame={frame} accent={theme.accent} />
       </View>
+
+      <ReportSheet
+        visible={reporting}
+        frameLabel={frameLabelFor(frame)}
+        accent={theme.accent}
+        onClose={() => setReporting(false)}
+        onSubmit={reason => {
+          setReporting(false);
+          setReported(true);
+          setReportedAt(index);
+          if (!userId || !entry) return;
+          reportRecapFrame({
+            userId,
+            slug: entry.slug,
+            season: 'season' in frame && frame.season ? frame.season : null,
+            frameKind: frame.kind,
+            frameLabel: frameLabelFor(frame),
+            reason,
+          }).catch(silentCatch('recap:report'));
+        }}
+      />
     </View>
   );
 }
@@ -592,6 +733,7 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
   },
   close: { padding: 4 },
+  chromeActions: { flexDirection: 'row', alignItems: 'center', gap: 12 },
 
   progressRow: { flexDirection: 'row', gap: 8 },
   progressGroup: { flexDirection: 'row', gap: 3 },

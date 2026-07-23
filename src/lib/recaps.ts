@@ -190,6 +190,74 @@ export async function prefetchRecap(entry: RecapListEntry): Promise<void> {
   }
 }
 
+// ---------------------------------------------------------------- reports
+
+/** Why a frame is wrong. Mirrors the CHECK constraint on recap_reports. */
+export type RecapReportReason = 'wrong_photo' | 'wrong_facts' | 'spoiler' | 'wrong_show' | 'other';
+
+export const REPORT_REASONS: Array<{ value: RecapReportReason; label: string }> = [
+  // Ordered by how often each has actually occurred during review, except
+  // spoiler, which leads because it is the one defect the feature exists to
+  // prevent and the only one that cannot be undone for whoever hit it.
+  { value: 'spoiler', label: 'Spoils something later' },
+  { value: 'wrong_photo', label: 'Wrong photo or actor' },
+  { value: 'wrong_facts', label: "This isn't what happened" },
+  { value: 'wrong_show', label: 'This is a different show' },
+  { value: 'other', label: 'Something else' },
+];
+
+/**
+ * Flag a frame as wrong.
+ *
+ * Every serious defect so far was found by a person looking at a slide, and
+ * none tripped an automated check — a wrong actor, a spine describing a
+ * different series, a character attributed to her father. All were correctly
+ * SHAPED, which is all the gates verify. So this is the gate for the rest.
+ *
+ * The frame's own coordinates are recorded rather than its index, because
+ * regenerating a recap renumbers frames while a character keeps their name.
+ * Re-reporting the same frame for the same reason is a no-op, not an error:
+ * the unique constraint absorbs it, so a viewer tapping twice does not become
+ * two votes.
+ */
+export async function reportRecapFrame(input: {
+  userId: string;
+  slug: string;
+  season: number | null;
+  frameKind: string;
+  frameLabel: string;
+  reason: RecapReportReason;
+  note?: string;
+}): Promise<void> {
+  const { error } = await supabase.from('recap_reports').upsert(
+    {
+      user_id: input.userId,
+      slug: input.slug,
+      season: input.season,
+      frame_kind: input.frameKind,
+      frame_label: input.frameLabel.slice(0, 120),
+      reason: input.reason,
+      note: input.note?.trim() ? input.note.trim().slice(0, 500) : null,
+    },
+    { onConflict: 'user_id,slug,season,frame_label,reason', ignoreDuplicates: false },
+  );
+  if (error) throw error;
+}
+
+/** A label identifying the frame well enough to find it again by hand. */
+export function frameLabelFor(frame: RecapFrame): string {
+  switch (frame.kind) {
+    case 'character':
+      return frame.name;
+    case 'beat':
+      return frame.label;
+    case 'cliffhanger':
+      return 'Cliffhanger';
+    case 'title':
+      return 'Title card';
+  }
+}
+
 // ---------------------------------------------------------------- frames
 
 /**
