@@ -38,6 +38,24 @@ export const tokens = s =>
     .split(/[^a-z]+/)
     .filter(t => t.length > 2 && !TITLES.has(t));
 
+
+/**
+ * A card name can carry two identities for one person — Severance writes
+ * "Helly R. / Helena Eagan" and "Gemma Scout / Ms. Casey". Each side is a
+ * complete name and must be matched separately.
+ *
+ * Treating the whole string as one name breaks the surname rule, which assumes
+ * the last token is the family name: in "Gemma Scout / Ms. Casey" the last
+ * token is Casey, so Scout counted as a given name and matched Mark Scout.
+ * That card was then dropped as a duplicate of Mark's and vanished from the
+ * recap entirely.
+ */
+export const alternates = name =>
+  String(name ?? '')
+    .split(/\s*\/\s*/)
+    .map(s => s.trim())
+    .filter(Boolean);
+
 /** How many entries each token belongs to. A token half the cast shares
  *  identifies nobody. */
 export function tokenOwners(names) {
@@ -61,11 +79,34 @@ export function tokenOwners(names) {
  * face on the card.
  */
 export function bestMatch(name, candidates, owners) {
+  // Try each identity separately and take the best-scoring result.
+  const parts = alternates(name);
+  if (parts.length > 1) {
+    for (const p of parts) {
+      const hit = bestMatch(p, candidates, owners);
+      if (hit) return hit;
+    }
+    return null;
+  }
+
   const want = tokens(name);
   if (!want.length) return null;
 
   const exact = candidates.find(c => tokens(c.name).join(' ') === want.join(' '));
   if (exact) return exact;
+
+  // A surname alone never identifies anyone.
+  //
+  // "Helena Eagan" matched "Jame Eagan" — her father — because Helena is
+  // credited as Helly Riggs, so "eagan" belonged to exactly one cast member
+  // and looked distinctive. The card carried Michael Siberry's face and name.
+  // Rarity cannot catch this: the token genuinely was rare, it was just the
+  // wrong half of the name.
+  //
+  // So a match must rest on something other than the last token — a given
+  // name, a nickname, a middle name. Single-token names are exempt, having no
+  // surname to be confused by.
+  const identifying = want.length > 1 ? new Set(want.slice(0, -1)) : new Set(want);
 
   let best = null;
   let bestScore = 0;
@@ -73,6 +114,7 @@ export function bestMatch(name, candidates, owners) {
     const have = new Set(tokens(c.name));
     const shared = want.filter(w => have.has(w));
     if (!shared.length) continue;
+    if (!shared.some(w => identifying.has(w))) continue;
     const rarity = shared.reduce((a, w) => a + 1 / (owners.get(w) ?? 1), 0);
     // A token carried by more than five entries identifies nobody, however
     // prominent the candidate.

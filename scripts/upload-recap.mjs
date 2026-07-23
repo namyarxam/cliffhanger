@@ -157,11 +157,30 @@ function composer(data, castLinks) {
     const explicit = linked(name);
     if (explicit) return explicit;
 
+    // "Helly R. / Helena Eagan" is one person written two ways. Each side is a
+    // whole name and is matched separately — read as a single string, the
+    // surname rule misreads which token is the family name, and "Gemma Scout /
+    // Ms. Casey" matched Mark Scout.
+    const parts = String(name).split(/\s*\/\s*/).map(x => x.trim()).filter(Boolean);
+    if (parts.length > 1) {
+      for (const p of parts) {
+        const hit = castRowFor(p);
+        if (hit) return hit;
+      }
+      return null;
+    }
+
     const want = tokens(name);
     if (!want.length) return null;
 
     const exact = data.cast.find(c => c.character && tokens(c.character).join(' ') === want.join(' '));
     if (exact) return exact;
+
+    // A surname alone never identifies anyone — "Helena Eagan" matched "Jame
+    // Eagan", her father, because Helena is credited as Helly Riggs so "eagan"
+    // belonged to one cast member and read as distinctive. A match must share
+    // something other than the last token.
+    const identifying = want.length > 1 ? new Set(want.slice(0, -1)) : new Set(want);
 
     let best = null;
     let bestScore = 0;
@@ -170,6 +189,7 @@ function composer(data, castLinks) {
       const have = new Set(tokens(c.character));
       const shared = want.filter(w => have.has(w));
       if (!shared.length) continue;
+      if (!shared.some(w => identifying.has(w))) continue;
       // Rarer tokens are worth more: a unique given name outweighs a surname
       // half the cast carries. A match resting only on "Stark" among eight
       // Starks scores 0.125 and is refused; "Rhaenyra" scores 1.
@@ -263,7 +283,30 @@ function composeShow(data, spine) {
       dim: DIM.beat,
     }));
 
-    const characters = (entry.characters ?? []).slice(0, MAX_CHARACTER_CARDS).map(c => {
+    // One person, one card.
+    //
+    // A season can name the same character two ways — Severance's spine lists
+    // both "Helly R." and "Helena Eagan", who are the same woman, and rendered
+    // two cards with two slightly different descriptions back to back. They
+    // are only detectable as one person once both resolve to the same cast
+    // member, which is why this lives here rather than in the spine: it is the
+    // matching that reveals the duplicate.
+    //
+    // The earlier card wins, since the list is ordered by how badly the viewer
+    // needs each person. Unmatched cards are never treated as duplicates of
+    // each other — two people who both failed to match are not the same
+    // person.
+    const claimed = new Set();
+    const deduped = [];
+    for (const c of entry.characters ?? []) {
+      const row = castRowFor(c.name);
+      const key = row ? `${row.name}|${row.character}` : null;
+      if (key && claimed.has(key)) continue;
+      if (key) claimed.add(key);
+      deduped.push(c);
+    }
+
+    const characters = deduped.slice(0, MAX_CHARACTER_CARDS).map(c => {
       const portrait = portraitOf(c.name);
       return {
         name: c.name,

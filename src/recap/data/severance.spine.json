@@ -179,5 +179,15 @@
   },
   "notPeople": [
     "lumon"
-  ]
+  ],
+  "castLinks": {
+    "Helena Eagan": {
+      "actor": "Britt Lower",
+      "character": "Helly Riggs"
+    },
+    "Gemma Scout": {
+      "actor": "Dichen Lachman",
+      "character": "Ms. Casey"
+    }
+  }
 }

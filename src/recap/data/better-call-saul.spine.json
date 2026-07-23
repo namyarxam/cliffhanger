@@ -558,5 +558,10 @@
   "notPeople": [
     "saul"
   ],
-  "castLinks": {}
+  "castLinks": {
+    "Saul Goodman": {
+      "actor": "Bob Odenkirk",
+      "character": "Jimmy McGill"
+    }
+  }
 }
