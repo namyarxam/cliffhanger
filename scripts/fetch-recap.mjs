@@ -18,6 +18,7 @@
 import { writeFile, mkdir, readFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { bestMatch, tokenOwners } from './name-match.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -355,7 +356,13 @@ async function build({ showName, slug, through: throughArg }) {
     getJSON(`https://api.tvmaze.com/shows/${tvmazeId}`, {}, 'TVMaze show').catch(() => null),
   ]);
 
-  // Keyed by lowercased character name for lookup against the TMDB roles.
+  // TVMaze in-costume stills, matched to the TMDB roles by name rather than by
+  // string equality — the two sources disagree on titles constantly, and an
+  // exact lookup silently drops the photo and falls back to a headshot.
+  const portraits = tvmazeCast
+    .filter(c => c.character?.name && c.character?.image?.original)
+    .map(c => ({ name: c.character.name, image: c.character.image.original, weight: 1 }));
+  const portraitOwners = tokenOwners(portraits.map(p => p.name));
   const characterImages = new Map();
   for (const c of tvmazeCast) {
     const name = c.character?.name?.toLowerCase();
@@ -451,7 +458,7 @@ async function build({ showName, slug, through: throughArg }) {
     .slice(0, 250)
     .map(c => {
       const character = c.roles?.[0]?.character ?? null;
-      const inCharacter = character ? characterImages.get(character.toLowerCase()) ?? null : null;
+      const inCharacter = character ? bestMatch(character, portraits, portraitOwners)?.image ?? null : null;
       return {
         name: c.name,
         character,

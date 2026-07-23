@@ -650,7 +650,7 @@
       "character": "Fatima",
       "episodeCount": 40,
       "profile": "https://image.tmdb.org/t/p/original/iLl3NYHTmp2n4CqlukO3bUTNhCf.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/397/993166.jpg"
     },
     {
       "name": "Simon Webster",
@@ -664,7 +664,7 @@
       "character": "Donna",
       "episodeCount": 40,
       "profile": "https://image.tmdb.org/t/p/original/j3gPh9XkEJb789p7U0JgA1CFnpC.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/397/993168.jpg"
     },
     {
       "name": "Avery Konrad",
@@ -699,7 +699,7 @@
       "character": "Tian-Chen Liu",
       "episodeCount": 30,
       "profile": "https://image.tmdb.org/t/p/original/qanDyzwpag6V0NJWgIA3TcOaSJO.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/397/993169.jpg"
     },
     {
       "name": "A.J. Simmons",
@@ -734,7 +734,7 @@
       "character": "Dani Acosta",
       "episodeCount": 20,
       "profile": "https://image.tmdb.org/t/p/original/s8shUKGCNBCxnKeGHwV3wP0HpIS.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/623/1559529.jpg"
     },
     {
       "name": "Deborah Grover",
@@ -835,11 +835,18 @@
       "inCharacter": null
     },
     {
+      "name": "Eli Arsenault",
+      "character": "Young Victor",
+      "episodeCount": 4,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/462/1157267.jpg"
+    },
+    {
       "name": "Lisa Ryder",
       "character": "Abby Stevens",
       "episodeCount": 4,
       "profile": "https://image.tmdb.org/t/p/original/trvgfnULUcQiSQKJWi31csZgNl6.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/397/993156.jpg"
     },
     {
       "name": "Douglas E. Hughes",
@@ -853,7 +860,7 @@
       "character": "Bing-Qian Liu",
       "episodeCount": 3,
       "profile": "https://image.tmdb.org/t/p/original/t2umcoYo4nyMWJCWPjDWCl0cppP.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/397/993162.jpg"
     },
     {
       "name": "Bob Mann",
@@ -940,6 +947,13 @@
       "inCharacter": null
     },
     {
+      "name": "Vivian Crooks",
+      "character": "Young Tabitha",
+      "episodeCount": 2,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/397/993157.jpg"
+    },
+    {
       "name": "Mallory Amirault",
       "character": "Doctor",
       "episodeCount": 2,
@@ -996,11 +1010,18 @@
       "inCharacter": null
     },
     {
+      "name": "Zach Tovey",
+      "character": "Jade",
+      "episodeCount": 1,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/397/993167.jpg"
+    },
+    {
       "name": "Viggo Hanvelt",
       "character": "Young Jade",
       "episodeCount": 1,
       "profile": "https://image.tmdb.org/t/p/original/yZfqdAdnBt2807O1BzwYxxsqYGn.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/397/993167.jpg"
     },
     {
       "name": "Sean Skerry",

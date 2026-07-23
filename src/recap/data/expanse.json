@@ -1131,7 +1131,7 @@
       "character": "Jim Holden",
       "episodeCount": 62,
       "profile": "https://image.tmdb.org/t/p/original/m7heTGlIKOZJgWrTtY5TS3LaZxS.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/375/939747.jpg"
     },
     {
       "name": "Dominique Tipper",
@@ -1166,7 +1166,7 @@
       "character": "Bobbie Draper",
       "episodeCount": 52,
       "profile": "https://image.tmdb.org/t/p/original/aAUHUSf0lh3OBRoaiCRL9ep8lfL.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/375/939744.jpg"
     },
     {
       "name": "Cara Gee",
@@ -1187,14 +1187,14 @@
       "character": "Julie Mao",
       "episodeCount": 24,
       "profile": "https://image.tmdb.org/t/p/original/wzMk1rtsGwuKjGDXmongb1CVtQC.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/35/89994.jpg"
     },
     {
       "name": "Thomas Jane",
       "character": "Joe Miller",
       "episodeCount": 24,
       "profile": "https://image.tmdb.org/t/p/original/9frnlc2zoDcoeqZALB6aeYSQddl.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/93/233372.jpg"
     },
     {
       "name": "Nadine Nicole",
@@ -1229,7 +1229,7 @@
       "character": "Filip",
       "episodeCount": 17,
       "profile": "https://image.tmdb.org/t/p/original/vXtqh9zUDPIzaTUI639yH0dUbBH.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/375/939738.jpg"
     },
     {
       "name": "Andrew Rotilio",
@@ -1250,7 +1250,7 @@
       "character": "Jules-Pierre Mao",
       "episodeCount": 13,
       "profile": "https://image.tmdb.org/t/p/original/fRKnZpGoUBJAEx9gEOkN1bG21D8.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/375/939740.jpg"
     },
     {
       "name": "David Strathairn",
@@ -1453,7 +1453,7 @@
       "character": "Arjun Avasarala",
       "episodeCount": 6,
       "profile": "https://image.tmdb.org/t/p/original/mHjc58pfKkxtghhliPOnNz0SlcT.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/375/939743.jpg"
     },
     {
       "name": "Jared Harris",
@@ -1649,7 +1649,7 @@
       "character": "David Draper",
       "episodeCount": 5,
       "profile": "https://image.tmdb.org/t/p/original/kHbd0AdFRzcSYhv0StO89RINDdx.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/375/939744.jpg"
     },
     {
       "name": "Nabeel El Khafif",
@@ -1698,7 +1698,7 @@
       "character": "Mao Guard #3",
       "episodeCount": 4,
       "profile": "https://image.tmdb.org/t/p/original/43V7DJ1unnPEZAOprgybX72hCT3.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/375/939740.jpg"
     },
     {
       "name": "Sarah Allen",
@@ -1796,7 +1796,7 @@
       "character": "Avasarala's Aide",
       "episodeCount": 4,
       "profile": "https://image.tmdb.org/t/p/original/yoqd3uaWz51BIqT38BndLiA6NBf.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/375/939743.jpg"
     },
     {
       "name": "Michael Murray",
@@ -1810,7 +1810,7 @@
       "character": "Avasarala's Grandson #1",
       "episodeCount": 3,
       "profile": "https://image.tmdb.org/t/p/original/zBLHVb1uYXsLGzEHCoxNxco5B5m.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/375/939743.jpg"
     },
     {
       "name": "Ted Ludzik",
@@ -1915,7 +1915,7 @@
       "character": "Mao Bodyguard",
       "episodeCount": 3,
       "profile": "https://image.tmdb.org/t/p/original/iENmI8mo8VATlqB53GYGvW1ycXA.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/375/939740.jpg"
     },
     {
       "name": "Lara Jean Chorostecki",
@@ -2013,7 +2013,7 @@
       "character": "Benji Draper",
       "episodeCount": 3,
       "profile": "https://image.tmdb.org/t/p/original/jhcXcqlhp8KpnBL6tElljQGM3ff.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/375/939744.jpg"
     },
     {
       "name": "Christian Potenza",
@@ -2184,6 +2184,13 @@
       "inCharacter": null
     },
     {
+      "name": "Tommy Chang",
+      "character": "Mao Guard #1",
+      "episodeCount": 2,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/375/939740.jpg"
+    },
+    {
       "name": "Adam Bogen",
       "character": "Bizi Bitiko",
       "episodeCount": 2,
@@ -2231,6 +2238,13 @@
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/nKDmSVksx3dmTCuucvPClGrL6g5.jpg",
       "inCharacter": null
+    },
+    {
+      "name": "Jonathan Collard",
+      "character": "Mao Guard #2",
+      "episodeCount": 2,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/375/939740.jpg"
     },
     {
       "name": "Samora Smallwood",
@@ -2335,7 +2349,7 @@
       "character": "Elise Holden",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/3iNDgd54IIj8g8hGqhhUjM6TeWd.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/375/939747.jpg"
     },
     {
       "name": "Benz Antoine",
@@ -2356,7 +2370,7 @@
       "character": "Mao Guard #5",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/8HuKTQaDSOiv6LQFXzZUPA29Zna.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/375/939740.jpg"
     },
     {
       "name": "Dayton Sinkia",

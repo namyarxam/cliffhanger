@@ -438,14 +438,14 @@
       "character": "Hank",
       "episodeCount": 26,
       "profile": "https://image.tmdb.org/t/p/original/62omaRURpSOCZZr0yP0KowgrjkE.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/461/1154593.jpg"
     },
     {
       "name": "Remmie Milner",
       "character": "Shirley",
       "episodeCount": 25,
       "profile": "https://image.tmdb.org/t/p/original/4LDy6vhBZ11kOevBdAGBRM34d3L.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/545/1364106.jpg"
     },
     {
       "name": "Shane McRae",
@@ -487,14 +487,14 @@
       "character": "Kathleen Billings",
       "episodeCount": 13,
       "profile": "https://image.tmdb.org/t/p/original/aMoal7n4vRy5q3NL0jZb9b998p5.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/631/1577904.jpg"
     },
     {
       "name": "Iain Glen",
       "character": "Dr. Pete Nichols",
       "episodeCount": 12,
       "profile": "https://image.tmdb.org/t/p/original/d9CKAAiV1HvSnzzmpDzD0mC0HlX.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/466/1166279.jpg"
     },
     {
       "name": "Ashley Zukerman",
@@ -641,7 +641,7 @@
       "character": "Anthony Sims",
       "episodeCount": 5,
       "profile": "https://image.tmdb.org/t/p/original/bx9kzUmhKjZreA3EcGFAiElnbkz.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/545/1364102.jpg"
     },
     {
       "name": "Will Patton",
@@ -704,7 +704,7 @@
       "character": "Young Juliette",
       "episodeCount": 3,
       "profile": "https://image.tmdb.org/t/p/original/k4eYis1YWLzMYS4pL8bIhSzqWgx.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/466/1166279.jpg"
     },
     {
       "name": "Nick Haverson",
@@ -753,14 +753,14 @@
       "character": "Hanna Nichols",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/nO190bAQxXvZH3DG9rZto0eocLe.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/466/1166279.jpg"
     },
     {
       "name": "Ida Brooke",
       "character": "Young Shirley",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/e9kGzuYnYRMvRcPo0tBmIV2Phhy.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/545/1364106.jpg"
     },
     {
       "name": "Sonita Henry",
@@ -816,7 +816,7 @@
       "character": "Ms. Kyle",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/1yXfDNOaOsAzzwLek2QkoFIFksl.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/548/1371276.jpg"
     },
     {
       "name": "Reggie Absolom",
@@ -887,6 +887,20 @@
       "episodeCount": 1,
       "profile": "https://image.tmdb.org/t/p/original/cgWGm9eYCretBWeljPVtpRV7n6V.jpg",
       "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/466/1166236.jpg"
+    },
+    {
+      "name": "Charlie Coombes",
+      "character": "Young Knox",
+      "episodeCount": 1,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/545/1364107.jpg"
+    },
+    {
+      "name": "Cole Vernon",
+      "character": "Jacob Nichols",
+      "episodeCount": 1,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/466/1166279.jpg"
     },
     {
       "name": "Alana Maria",

@@ -643,14 +643,14 @@
       "character": "Carmen 'Carmy' Berzatto",
       "episodeCount": 46,
       "profile": "https://image.tmdb.org/t/p/original/pXRADDRhprgaQ4Bri44NH3bYeu6.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/413/1034302.jpg"
     },
     {
       "name": "Ebon Moss-Bachrach",
       "character": "Richard 'Richie' Jerimovich",
       "episodeCount": 46,
       "profile": "https://image.tmdb.org/t/p/original/xD8GVNayMpiTZxLfahy2DseYcQq.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/413/1034303.jpg"
     },
     {
       "name": "Ayo Edebiri",
@@ -671,14 +671,14 @@
       "character": "Natalie 'Sugar' Berzatto",
       "episodeCount": 46,
       "profile": "https://image.tmdb.org/t/p/original/v7h08EsTce2pLHkZiaFe1QRuYbU.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/413/1034305.jpg"
     },
     {
       "name": "Liza Colón-Zayas",
       "character": "Bettina 'Tina' Marrero",
       "episodeCount": 46,
       "profile": "https://image.tmdb.org/t/p/original/q2gHcef0wckji0AS8ZEO6cYx065.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/413/1034307.jpg"
     },
     {
       "name": "Matty Matheson",
@@ -713,7 +713,7 @@
       "character": "Theodore Fak",
       "episodeCount": 26,
       "profile": "https://image.tmdb.org/t/p/original/yYyvZSV4mQxqesIZLUdcvyyhG9D.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/466/1166494.jpg"
     },
     {
       "name": "Richard Esteras",
@@ -783,21 +783,21 @@
       "character": "Emmanuel Adamu",
       "episodeCount": 12,
       "profile": "https://image.tmdb.org/t/p/original/saXSXNW1G1Wt9kN4r4Chjxm3YcU.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/413/1034304.jpg"
     },
     {
       "name": "Jamie Lee Curtis",
       "character": "Donna Berzatto",
       "episodeCount": 12,
       "profile": "https://image.tmdb.org/t/p/original/eWKubKAAssRzmFwCZKh1mdYqGCH.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/413/1034302.jpg"
     },
     {
       "name": "Gillian Jacobs",
       "character": "Tiffany Jerimovich",
       "episodeCount": 8,
       "profile": "https://image.tmdb.org/t/p/original/sbZVI3F2t5CjmRANwHk3X6iOQpt.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/413/1034303.jpg"
     },
     {
       "name": "Adam Shapiro",
@@ -811,7 +811,7 @@
       "character": "Michael Berzatto",
       "episodeCount": 7,
       "profile": "https://image.tmdb.org/t/p/original/o0t6EVkJOrFAjESDilZUlf46IbQ.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/413/1034302.jpg"
     },
     {
       "name": "Elsie Fisher",
@@ -846,7 +846,7 @@
       "character": "David Marrero",
       "episodeCount": 5,
       "profile": "https://image.tmdb.org/t/p/original/w1E8n9gl2HcZEhfBOXdVzMvIlzg.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/413/1034307.jpg"
     },
     {
       "name": "John Mulaney",
@@ -874,7 +874,7 @@
       "character": "Angela Brooks",
       "episodeCount": 3,
       "profile": "https://image.tmdb.org/t/p/original/f04viU7huF2svmUVs2jfgxjen5V.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/413/1034306.jpg"
     },
     {
       "name": "Bob Odenkirk",
@@ -1052,6 +1052,13 @@
       "inCharacter": null
     },
     {
+      "name": "Jack Bronis",
+      "character": "Richie's Electrician",
+      "episodeCount": 1,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/413/1034303.jpg"
+    },
+    {
       "name": "April Lichtman",
       "character": "Student #2",
       "episodeCount": 1,
@@ -1091,7 +1098,7 @@
       "character": "Samuel 'Sammy' Fak",
       "episodeCount": 1,
       "profile": "https://image.tmdb.org/t/p/original/rgB2eIOt7WyQjdgJCOuESdDlrjg.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/466/1166494.jpg"
     },
     {
       "name": "Daniel Boulud",
@@ -1127,6 +1134,13 @@
       "episodeCount": 1,
       "profile": "https://image.tmdb.org/t/p/original/rYD5EmN7O5rvnc3uwlgrxCLh4M5.jpg",
       "inCharacter": null
+    },
+    {
+      "name": "Bill Reilly",
+      "character": "Gary Fak",
+      "episodeCount": 1,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/466/1166494.jpg"
     },
     {
       "name": "Matthew C. Yee",
@@ -1245,7 +1259,7 @@
       "character": "Francie Fak",
       "episodeCount": 1,
       "profile": "https://image.tmdb.org/t/p/original/rlbQbpu3tkMAikPWM53VElMUnzR.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/466/1166494.jpg"
     },
     {
       "name": "Jack Bensinger",
@@ -1301,7 +1315,7 @@
       "character": "James Brooks",
       "episodeCount": 1,
       "profile": "https://image.tmdb.org/t/p/original/kNGiizWpetf4pyAkINkjkWacmCL.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/413/1034306.jpg"
     },
     {
       "name": "Tom Skilling",

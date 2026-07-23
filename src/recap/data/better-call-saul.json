@@ -1205,7 +1205,7 @@
       "character": "Mike Ehrmantraut",
       "episodeCount": 63,
       "profile": "https://image.tmdb.org/t/p/original/bswk26L13PvY4iMTwUTAsepXCLv.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/45/113921.jpg"
     },
     {
       "name": "Rhea Seehorn",
@@ -1226,14 +1226,14 @@
       "character": "Nacho Varga",
       "episodeCount": 49,
       "profile": "https://image.tmdb.org/t/p/original/gvM2wG66bjEpiirdeQdyG9EzUfv.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/107/269600.jpg"
     },
     {
       "name": "Giancarlo Esposito",
       "character": "Gus Fring",
       "episodeCount": 40,
       "profile": "https://image.tmdb.org/t/p/original/rcXnr82TwDzU4ZGdBeNXfG0ZQnZ.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/107/269599.jpg"
     },
     {
       "name": "Michael McKean",
@@ -1247,21 +1247,21 @@
       "character": "Lalo Salamanca",
       "episodeCount": 26,
       "profile": "https://image.tmdb.org/t/p/original/vWteTJu9Dyrax7gQq8ndTjx5s6V.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/418/1046602.jpg"
     },
     {
       "name": "Mark Margolis",
       "character": "Hector Salamanca",
       "episodeCount": 22,
       "profile": "https://image.tmdb.org/t/p/original/rT5TYJIPLBkTqsrUs00AixGeaMM.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/418/1046602.jpg"
     },
     {
       "name": "Kerry Condon",
       "character": "Stacey Ehrmantraut",
       "episodeCount": 18,
       "profile": "https://image.tmdb.org/t/p/original/8RO25vJxQSoNdhsVbiAHOsiGfvl.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/45/113921.jpg"
     },
     {
       "name": "Jeremiah Bitsui",
@@ -1359,7 +1359,7 @@
       "character": "Manuel Varga",
       "episodeCount": 11,
       "profile": "https://image.tmdb.org/t/p/original/zg0zGiingVYY2MxAsj0nAazHYMA.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/107/269600.jpg"
     },
     {
       "name": "Eric Steinig",
@@ -1373,14 +1373,14 @@
       "character": "Marco Salamanca",
       "episodeCount": 10,
       "profile": "https://image.tmdb.org/t/p/original/t3H7bTAu3lYKvHAEYtevOd91kzx.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/418/1046602.jpg"
     },
     {
       "name": "Daniel Moncada",
       "character": "Leonel Salamanca",
       "episodeCount": 10,
       "profile": "https://image.tmdb.org/t/p/original/pfR9dEo0RWq62rNqzclqx0zUQmp.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/418/1046602.jpg"
     },
     {
       "name": "Jessie Ennis",
@@ -1422,7 +1422,7 @@
       "character": "Kaylee Ehrmantraut",
       "episodeCount": 8,
       "profile": "https://image.tmdb.org/t/p/original/oDpDWt8PBjyyQxc639CW2BJDSsv.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/45/113921.jpg"
     },
     {
       "name": "James E. Dowling",
@@ -1667,7 +1667,7 @@
       "character": "Tuco Salamanca",
       "episodeCount": 3,
       "profile": "https://image.tmdb.org/t/p/original/ndhc53yEQeeFn01QoOxtPa6GroU.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/418/1046602.jpg"
     },
     {
       "name": "Morgan Krantz",
@@ -1849,7 +1849,7 @@
       "character": "Cheryl Hamlin",
       "episodeCount": 3,
       "profile": "https://image.tmdb.org/t/p/original/qvuH2mRmfG2yIchpsHefprcKYLK.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/45/113925.jpg"
     },
     {
       "name": "Pat Healy",
@@ -1929,6 +1929,13 @@
       "inCharacter": null
     },
     {
+      "name": "Rose Liotta",
+      "character": "Chuck's Neighbor",
+      "episodeCount": 2,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/45/113924.jpg"
+    },
+    {
       "name": "Caleb Burgess",
       "character": "Warren Kettleman",
       "episodeCount": 2,
@@ -1948,6 +1955,20 @@
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/dc10W0hRNxrO0IcwgKOcsUajtOG.jpg",
       "inCharacter": null
+    },
+    {
+      "name": "Lalo Flores",
+      "character": "Nacho's Man #1",
+      "episodeCount": 2,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/107/269600.jpg"
+    },
+    {
+      "name": "Victor A. Guajardo",
+      "character": "Nacho's Man #2",
+      "episodeCount": 2,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/107/269600.jpg"
     },
     {
       "name": "Brendan Fehr",
@@ -2227,14 +2248,14 @@
       "character": "Young Kim",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/9ZwWgiX8IPhQWWKW9XefZVab2xN.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/45/113923.jpg"
     },
     {
       "name": "Beth Hoyt",
       "character": "Mrs. Wexler",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/agmi6RGqbdHuRIKob4mUn6c4LEB.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/45/113923.jpg"
     },
     {
       "name": "Dylan Kenin",
@@ -2423,7 +2444,7 @@
       "character": "Mike's Bartender",
       "episodeCount": 1,
       "profile": "https://image.tmdb.org/t/p/original/wJEpBkl0PPSntF0U7z1iBpggGAB.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/45/113921.jpg"
     },
     {
       "name": "Joshua Caleb Horton",

@@ -393,7 +393,7 @@
       "character": "Laurie Duffy",
       "episodeCount": 8,
       "profile": "https://image.tmdb.org/t/p/original/vWChiHhXFjZVKC6HbACyyRFmdW4.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/556/1390803.jpg"
     },
     {
       "name": "Walton Goggins",
@@ -470,7 +470,7 @@
       "character": "Sritala Hollinger",
       "episodeCount": 8,
       "profile": "https://image.tmdb.org/t/p/original/40u5XijcdlqVcnNbvDn8ZyUfuKe.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/556/1390809.jpg"
     },
     {
       "name": "F. Murray Abraham",
@@ -736,7 +736,7 @@
       "character": "Zion Lindsey",
       "episodeCount": 4,
       "profile": "https://image.tmdb.org/t/p/original/kJQt4ZiGVbfVrVJQgrPLRYh8vqQ.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/556/1390808.jpg"
     },
     {
       "name": "Julian Kostov",
@@ -800,6 +800,13 @@
       "episodeCount": 3,
       "profile": "https://image.tmdb.org/t/p/original/3wpLJm9YwSJIA3xZNy7JrjmNr8a.jpg",
       "inCharacter": null
+    },
+    {
+      "name": "Sommanat Natt Suttichada",
+      "character": "Greg's Butler",
+      "episodeCount": 3,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/455/1139329.jpg"
     },
     {
       "name": "Molly Shannon",

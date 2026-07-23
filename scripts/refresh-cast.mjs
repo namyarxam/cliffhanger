@@ -24,6 +24,7 @@
 import { readFile, writeFile, readdir } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { bestMatch, tokenOwners } from './name-match.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = resolve(ROOT, 'src/recap/data');
@@ -70,12 +71,17 @@ async function refresh(slug, auth) {
     ? await getJSON(`https://api.tvmaze.com/shows/${data.tvmazeId}/cast`, {}, 'TVMaze cast').catch(() => [])
     : [];
 
-  const characterImages = new Map();
-  for (const c of tvmazeCast) {
-    const n = c.character?.name?.toLowerCase();
-    const img = c.character?.image?.original;
-    if (n && img && !characterImages.has(n)) characterImages.set(n, img);
-  }
+  // TVMaze in-costume stills, matched to TMDB credits by name rather than by
+  // string equality. The two sources disagree on titles constantly — TMDB
+  // credits "Queen Alicent Hightower" where TVMaze has "Lady Alicent
+  // Hightower", because a character's rank changes across a series and each
+  // source froze a different moment. Exact matching lost those, so a card that
+  // could have carried an in-character photo fell back to a red-carpet
+  // headshot in the middle of a run of proper stills.
+  const portraits = tvmazeCast
+    .filter(c => c.character?.name && c.character?.image?.original)
+    .map(c => ({ name: c.character.name, image: c.character.image.original, weight: 1 }));
+  const portraitOwners = tokenOwners(portraits.map(p => p.name));
 
   const before = data.cast.length;
   data.cast = (credits.cast ?? [])
@@ -87,7 +93,7 @@ async function refresh(slug, auth) {
         character,
         episodeCount: c.total_episode_count ?? 0,
         profile: IMG('original', c.profile_path),
-        inCharacter: character ? characterImages.get(character.toLowerCase()) ?? null : null,
+        inCharacter: character ? bestMatch(character, portraits, portraitOwners)?.image ?? null : null,
       };
     })
     .filter(c => c.profile || c.inCharacter);
