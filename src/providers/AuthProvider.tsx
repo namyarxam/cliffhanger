@@ -204,8 +204,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
       // Push token registration — idempotent upsert keyed on user_id. Without
       // this, push tokens were only ever saved when the user manually toggled
-      // the switch in Settings, so most users never received chat
-      // notifications. Fire-and-forget; iOS shows the permission prompt the
+      // the switch in Settings, so most users never received push
+      // notifications at all. Fire-and-forget; iOS shows the permission prompt the
       // first time on a real device, denials silently no-op.
       registerForPushNotifications(prefetchUserId).catch(silentCatch('auth:registerPush'));
 
