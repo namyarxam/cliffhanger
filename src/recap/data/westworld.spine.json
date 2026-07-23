@@ -371,5 +371,11 @@
       ]
     }
   },
-  "notPeople": []
+  "notPeople": [],
+  "castLinks": {
+    "Arnold": {
+      "actor": "Jeffrey Wright",
+      "character": "Bernard Lowe"
+    }
+  }
 }

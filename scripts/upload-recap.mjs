@@ -97,8 +97,22 @@ const tokens = s =>
     .split(/[^a-z]+/)
     .filter(t => t.length > 2 && !TITLES.has(t));
 
-function composer(data) {
+function composer(data, castLinks) {
   const keyArt = data.backdrop ?? data.backdrops?.[0] ?? data.poster;
+
+  /**
+   * Explicit links, resolved once by scripts/link-cast.mjs and frozen into the
+   * spine. These are the pairs no string comparison can reach, because the
+   * recap calls someone by a name the credits never use: "The Governor" is
+   * credited as Philip Blake, "Arnold" as Bernard Lowe. Consulted before the
+   * algorithm, since a decision already made deliberately should not be
+   * re-derived by a heuristic that was unable to make it.
+   */
+  const linked = name => {
+    const link = castLinks[name];
+    if (!link) return null;
+    return data.cast.find(c => c.name === link.actor && c.character === link.character) ?? null;
+  };
 
   // How many cast members each name token belongs to. A token shared by
   // several people carries no identifying information.
@@ -140,6 +154,9 @@ function composer(data) {
    * what shipped for Rhaenyra Targaryen, credited to Matt Smith.
    */
   const castRowFor = name => {
+    const explicit = linked(name);
+    if (explicit) return explicit;
+
     const want = tokens(name);
     if (!want.length) return null;
 
@@ -219,7 +236,7 @@ function orderedBeats(seasonEntry) {
 // ---------------------------------------------------------------- compose
 
 function composeShow(data, spine) {
-  const { keyArt, castRowFor, portraitOf, freshStill } = composer(data);
+  const { keyArt, castRowFor, portraitOf, freshStill } = composer(data, spine.castLinks ?? {});
 
   const show = {
     slug: data.slug,

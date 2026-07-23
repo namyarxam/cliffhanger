@@ -1037,5 +1037,15 @@
     "terminus",
     "whisperer",
     "woodbury"
-  ]
+  ],
+  "castLinks": {
+    "The Governor": {
+      "actor": "David Morrissey",
+      "character": "Philip Blake"
+    },
+    "Anne": {
+      "actor": "Pollyanna McIntosh",
+      "character": "Jadis"
+    }
+  }
 }
