@@ -23,8 +23,17 @@
     "https://image.tmdb.org/t/p/original/u26J1oZL333w32kAUX5epds9UvP.jpg",
     "https://image.tmdb.org/t/p/original/kDq0SV60yKs98yebWjtofjiQIJ5.jpg"
   ],
-  "throughSeason": 2,
+  "throughSeason": 3,
   "totalSeasons": 3,
+  "showType": "Scripted",
+  "genres": [
+    "Drama",
+    "Science-Fiction",
+    "Mystery"
+  ],
+  "status": "Running",
+  "runtime": 50,
+  "language": "English",
   "seasons": [
     {
       "season": 1,
@@ -402,6 +411,157 @@
           ]
         }
       ]
+    },
+    {
+      "season": 3,
+      "name": "Season 3",
+      "airDate": "2026-07-02",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Who Are You?",
+          "overview": "New mayor Juliette can't remember anything from her time outside—or her past.",
+          "plot": "Three months after the rebellion, Silo 18 is peaceful. A new council has been established and is seemingly leading reform. Juliette has become the mayor but is being controlled by Camille, who is following the Legacy's instructions to feed Juliette memory-suppressing drugs. In a flashback, it is revealed that Bernard didn't die from poisoning and burning but that Sims killed him. Juliette receives a secret message offering to tell her the truth. Billings and Sims are searching for members of the Outsiders, a remaining group of rebels who believe that it is safe to go outside. In the past, Congressman Daniel Keene's tries to get onto Senator Rosalind Thurman's committee for military action against Iran, in retaliation for a supposed Iranian \"dirty bomb\" attack in Washington, D.C. after being urged to do so by his sister, Charlotte. Charlotte, a naval aviator, is part of the mission into Iran when her squadron's planes are downed by a cloud of mysterious technology. Senator Thurman has Charlotte admitted to the Heidi Stensen Clinic in Fairfax for her injuries, but when Daniel visits her, she does not recognize him.",
+          "airDate": "2026-07-02",
+          "still": "https://image.tmdb.org/t/p/original/nIvrv95n7gukebcCEUeZJDy9iEp.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/nIvrv95n7gukebcCEUeZJDy9iEp.jpg",
+            "https://image.tmdb.org/t/p/original/zcV4BWhp1pyyKt5bHBGLOrptY5e.jpg",
+            "https://image.tmdb.org/t/p/original/p5W3FqnDQW3o3ovowbXEE8eUkOv.jpg",
+            "https://image.tmdb.org/t/p/original/zlUiFz3kDr10GAzuJiKVEj4Nitf.jpg",
+            "https://image.tmdb.org/t/p/original/hsJ063zOgsTXhwFihL9uo8UTxBW.jpg",
+            "https://image.tmdb.org/t/p/original/2wUqHNE9HZdEIBBoPQVljm4DRH4.jpg",
+            "https://image.tmdb.org/t/p/original/j6dhDQfXqjJCPW2FtcWkT7TbIpI.jpg",
+            "https://image.tmdb.org/t/p/original/t3xHMqhssev77766UV2sgLhV1N.jpg",
+            "https://image.tmdb.org/t/p/original/5lxrXZYqFkcTYxTlKltJasnpMoj.jpg",
+            "https://image.tmdb.org/t/p/original/unstAQWf2aejPCAmswVGtfEWcEX.jpg",
+            "https://image.tmdb.org/t/p/original/rSBUw4BuN3MdsFa2vqjN7rve2ql.jpg",
+            "https://image.tmdb.org/t/p/original/q7iBPEYClktyUQEGL1TSMI9CsZ.jpg",
+            "https://image.tmdb.org/t/p/original/gGqLKZp64c6OBm7pjvMQRB5jqy2.jpg",
+            "https://image.tmdb.org/t/p/original/wGMuw29xcVLMVnTdUVHXvCYnpjb.jpg",
+            "https://image.tmdb.org/t/p/original/7gJJZ5X3YyYWIy02m5scjUDQlqS.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "It's All Good",
+          "overview": "Billings investigates a disappearance. Daniel Keene has a run-in with a reporter.",
+          "plot": "Juliette follows the message's instructions and meets Outsiders Sandy, Patrick and Danny, who believe in a conspiracy to hide what Juliette saw outside and make her question what she's been told. Billings' wife Kathleen is also an Outsider, which he is reluctantly keeping hidden. Knox tells Juliette about Lukas, who has been missing but might be able to answer her questions. Juliette stops taking her pills but her nurse finds a pill in the sink. Camille is frustrated that Juliette is resisting the memory-suppressing drugs, but she and the Legacy are preparing for a memory reset of the whole Silo via the water supply. Billings investigates the disappearance of Orla Kent, shadow to the Head of Supply. In the past, Daniel meets Charlotte's doctor Victor Crnkovich, who has been doing controversial tests on human subjects on memory suppression and recall. Journalist Helen Drew is caught sneaking in to meet Charlotte, whom she had been meeting before the Iran mission to share her doubts on the government's intentions. Helen asks if Daniel will help her uncover the truth.",
+          "airDate": "2026-07-09",
+          "still": "https://image.tmdb.org/t/p/original/u4kB03bgyjnwDEIpBkpjqTvdcbz.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/u4kB03bgyjnwDEIpBkpjqTvdcbz.jpg",
+            "https://image.tmdb.org/t/p/original/3Lr05lRd6A8rcdQe8awjL1U9qbo.jpg",
+            "https://image.tmdb.org/t/p/original/vYVGpHiWAm6NvbZECbonxZO1e4S.jpg",
+            "https://image.tmdb.org/t/p/original/zlWyvDn0aG11ZbDo7sg3htlccC9.jpg",
+            "https://image.tmdb.org/t/p/original/nDJn807k5kSlICLc1d1eFH6xpVq.jpg",
+            "https://image.tmdb.org/t/p/original/6w52qiv5vFMocg5p9MZse2b1bVk.jpg",
+            "https://image.tmdb.org/t/p/original/ukagWhFRgfMjZmzW9VALViKCS9u.jpg",
+            "https://image.tmdb.org/t/p/original/uZf7omaYuI45vshIkJxHLS2t8f9.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "A Dark Web",
+          "overview": "Juliette takes control of her recovery process. Helen suffers consequences of her investigation.",
+          "plot": "Juliette travels down the Silo to investigate Lukas's movements. Camille is aware that Juliette has been spitting her pills, but allows it to continue as she hopes Juliette will enable them to find Lukas and Outsiders, preventing the need for a full reset of the Silo. Camille realizes Lukas may be in the mines digging towards another Silo, and orders the mines immediately fumigated. Juliette enters the poisoned mines and is saved by Lukas, who then flees and is found by Sandy and Danny. Billings identifies Orla as one of the dead in the mines. The Legacy suggests to Camille that she allow Juliette, who is unconscious under medical care, to die and be made a martyr for peace of the Silo. In the past, Helen is fired because of her investigation into the Iran incident. She and Daniel meet a dark web hacker who made a recording of the mission's audio, as they were ordered to use old radios. When Daniel and Helen return to the hacker to get a copy of the recording, the place has been ransacked.",
+          "airDate": "2026-07-16",
+          "still": "https://image.tmdb.org/t/p/original/rlfEJJlIAlFEcw6nNfYpyNUbTPR.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/rlfEJJlIAlFEcw6nNfYpyNUbTPR.jpg",
+            "https://image.tmdb.org/t/p/original/pJOfN8phPBuux0uFNKRgQDM8u3n.jpg",
+            "https://image.tmdb.org/t/p/original/skgcKJzwPcdxTd2bksWgTCFiYBL.jpg",
+            "https://image.tmdb.org/t/p/original/kwn6G9Pr7AjjFTEb5h4oH0JQXLV.jpg",
+            "https://image.tmdb.org/t/p/original/12OQJ6V5Dnzspw2hZTfekBnQ32h.jpg",
+            "https://image.tmdb.org/t/p/original/sfUPQMJrstXJfDyjH6ubApXOAXV.jpg",
+            "https://image.tmdb.org/t/p/original/62KcNzhHrhBzMxgNEnp5zF9pxXA.jpg",
+            "https://image.tmdb.org/t/p/original/nhQDrRgQ5AcraWYYl4lnmU09KHj.jpg",
+            "https://image.tmdb.org/t/p/original/dt4ZFTMXPuIr4vPGkcbAHPwpQ8w.jpg",
+            "https://image.tmdb.org/t/p/original/oldomuQRFI6T2YehO48TGuGYbhF.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Whatever You Do, Don't Go Home",
+          "overview": "The race to evade Camille leads Juliette to a shocking discovery. Daniel seeks help from a friend.",
+          "plot": null,
+          "airDate": "2026-07-23",
+          "still": "https://image.tmdb.org/t/p/original/pYnJjrdS64krUWUAGB4ckZsqN1r.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/pYnJjrdS64krUWUAGB4ckZsqN1r.jpg",
+            "https://image.tmdb.org/t/p/original/5pfgH5Fv1Wn8rxm3PMKQNzqqIwM.jpg",
+            "https://image.tmdb.org/t/p/original/fXZzcCxqVJ0Ga9clPVggszi4xnK.jpg",
+            "https://image.tmdb.org/t/p/original/e1hC95Qm5TS1EYpbzxTvQs4zuJq.jpg",
+            "https://image.tmdb.org/t/p/original/cpjIHR6sSb6abeCTLYcSVsTHJfm.jpg",
+            "https://image.tmdb.org/t/p/original/w0M1xILnUtwehWN1WP1AOAR2PZk.jpg",
+            "https://image.tmdb.org/t/p/original/cJPgppZt09EUGN47RPkHwINDCEm.jpg",
+            "https://image.tmdb.org/t/p/original/nIn5YADiXbhl2lJqg62ZJnDa3Zw.jpg",
+            "https://image.tmdb.org/t/p/original/vIhr5qWdBcpxXpQW46JLiutSva5.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Episode 5",
+          "overview": "",
+          "plot": null,
+          "airDate": "2026-07-30",
+          "still": "https://image.tmdb.org/t/p/original/q1M0Vp0ZFYfEE3EOeBIQ5xJp8m6.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/q1M0Vp0ZFYfEE3EOeBIQ5xJp8m6.jpg",
+            "https://image.tmdb.org/t/p/original/9zMApEBZCj3QSt84HgtlDx5DPFf.jpg",
+            "https://image.tmdb.org/t/p/original/37Lebn85fIrxfRg5gP2xvyYFzQ0.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Episode 6",
+          "overview": "",
+          "plot": null,
+          "airDate": "2026-08-06",
+          "still": null,
+          "stills": []
+        },
+        {
+          "episode": 7,
+          "name": "Episode 7",
+          "overview": "",
+          "plot": null,
+          "airDate": "2026-08-13",
+          "still": "https://image.tmdb.org/t/p/original/7Wo1oxC1gSnDurCDDb1aLqLoNtA.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/7Wo1oxC1gSnDurCDDb1aLqLoNtA.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Episode 8",
+          "overview": "",
+          "plot": null,
+          "airDate": "2026-08-20",
+          "still": "https://image.tmdb.org/t/p/original/udUad5m2ypSbhw06Q9pVdvh5s6f.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/udUad5m2ypSbhw06Q9pVdvh5s6f.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Episode 9",
+          "overview": "",
+          "plot": null,
+          "airDate": "2026-08-27",
+          "still": null,
+          "stills": []
+        },
+        {
+          "episode": 10,
+          "name": "Episode 10",
+          "overview": "",
+          "plot": null,
+          "airDate": "2026-09-03",
+          "still": null,
+          "stills": []
+        }
+      ]
     }
   ],
   "cast": [
@@ -487,14 +647,14 @@
       "character": "Kathleen Billings",
       "episodeCount": 13,
       "profile": "https://image.tmdb.org/t/p/original/aMoal7n4vRy5q3NL0jZb9b998p5.jpg",
-      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/631/1577904.jpg"
+      "inCharacter": null
     },
     {
       "name": "Iain Glen",
       "character": "Dr. Pete Nichols",
       "episodeCount": 12,
       "profile": "https://image.tmdb.org/t/p/original/d9CKAAiV1HvSnzzmpDzD0mC0HlX.jpg",
-      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/466/1166279.jpg"
+      "inCharacter": null
     },
     {
       "name": "Ashley Zukerman",
@@ -641,7 +801,7 @@
       "character": "Anthony Sims",
       "episodeCount": 5,
       "profile": "https://image.tmdb.org/t/p/original/bx9kzUmhKjZreA3EcGFAiElnbkz.jpg",
-      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/545/1364102.jpg"
+      "inCharacter": null
     },
     {
       "name": "Will Patton",
@@ -704,7 +864,7 @@
       "character": "Young Juliette",
       "episodeCount": 3,
       "profile": "https://image.tmdb.org/t/p/original/k4eYis1YWLzMYS4pL8bIhSzqWgx.jpg",
-      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/466/1166279.jpg"
+      "inCharacter": null
     },
     {
       "name": "Nick Haverson",
@@ -753,14 +913,14 @@
       "character": "Hanna Nichols",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/nO190bAQxXvZH3DG9rZto0eocLe.jpg",
-      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/466/1166279.jpg"
+      "inCharacter": null
     },
     {
       "name": "Ida Brooke",
       "character": "Young Shirley",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/e9kGzuYnYRMvRcPo0tBmIV2Phhy.jpg",
-      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/545/1364106.jpg"
+      "inCharacter": null
     },
     {
       "name": "Sonita Henry",
@@ -887,20 +1047,6 @@
       "episodeCount": 1,
       "profile": "https://image.tmdb.org/t/p/original/cgWGm9eYCretBWeljPVtpRV7n6V.jpg",
       "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/466/1166236.jpg"
-    },
-    {
-      "name": "Charlie Coombes",
-      "character": "Young Knox",
-      "episodeCount": 1,
-      "profile": null,
-      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/545/1364107.jpg"
-    },
-    {
-      "name": "Cole Vernon",
-      "character": "Jacob Nichols",
-      "episodeCount": 1,
-      "profile": null,
-      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/466/1166279.jpg"
     },
     {
       "name": "Alana Maria",
@@ -1225,5 +1371,5 @@
       "inCharacter": null
     }
   ],
-  "generatedAt": "2026-07-23T02:17:54.515Z"
+  "generatedAt": "2026-07-23T07:24:20.105Z"
 }

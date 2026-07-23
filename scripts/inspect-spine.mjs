@@ -106,6 +106,11 @@ function spoilerScan(data, spine) {
 // --- stats ------------------------------------------------------------------
 
 function stats(spine) {
+  // Names the repair pass already judged not to be people — places, ships,
+  // factions. Without this the inspector re-reports Canterbury, Eros and
+  // Rocinante as missing character cards on a spine the repair gate calls
+  // clean, so the two disagree and neither can be trusted.
+  const ignore = new Set(spine.notPeople ?? []);
   const rows = Object.entries(spine.seasons).map(([n, s]) => {
     const beats = s.beats ?? [];
     const lens = beats.map(b => b.text.length);
@@ -118,7 +123,7 @@ function stats(spine) {
       chars: s.characters?.length ?? 0,
       questions: s.cliffhanger?.questions?.length ?? 0,
       verify: beats.filter(b => b.needsVerify).length,
-      ...coherence(s),
+      ...coherence(s, ignore),
       // Ordering is enforced downstream in build.ts, but a spine that comes
       // back scrambled is a signal the generation itself was sloppy.
       ordered: beats.every(

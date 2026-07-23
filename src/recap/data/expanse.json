@@ -23,8 +23,17 @@
     "https://image.tmdb.org/t/p/original/sArRwok5YkerwjLWR2KG0yx1i3r.jpg",
     "https://image.tmdb.org/t/p/original/1FBveSoDH32yT3gkJWrfD5XH8oH.jpg"
   ],
-  "throughSeason": 4,
+  "throughSeason": 6,
   "totalSeasons": 6,
+  "showType": "Scripted",
+  "genres": [
+    "Science-Fiction",
+    "Thriller",
+    "Mystery"
+  ],
+  "status": "Ended",
+  "runtime": 55,
+  "language": "English",
   "seasons": [
     {
       "season": 1,
@@ -1123,6 +1132,212 @@
           ]
         }
       ]
+    },
+    {
+      "season": 5,
+      "name": "Season 5",
+      "airDate": "2020-12-16",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Exodus",
+          "overview": "Holden tries to convince Fred Johnson to destroy the last sample of protomolecule. Naomi gets an important lead to her son. On Luna, Avasarala begins to hunt for Marco Inaros.",
+          "plot": "A team of Belters, sent by Marco Inaros and led by his and Naomi's son Filip, attacks a science vessel near Venus, killing all aboard. Holden and Naomi are stationed at Tycho while Rocinante is undergoing long-overdue repairs. Holden is contacted by Monica Stuart about protomolecule research she has heard about and confronts Fred Johnson about that. Naomi gets word that Filip is on the asteroid Pallas and makes plans to go there alone. Amos is going to Baltimore, Earth, to settle affairs of an old friend and is met by Avasarala during his stop at Luna. On Mars, Bobbie is working for Avasarala to investigate the ongoing Martian weapons trafficking but feels that she is running out of time. Alex arrives to Mars to try and make amends with his family but gets a cold welcome; Bobbie meets him at the bar afterwards but their conversation does not go well. On Luna, Avasarala starts investigating the possible involvement of Inaros in the science vessel attack.",
+          "airDate": "2020-12-16",
+          "still": "https://image.tmdb.org/t/p/original/1QuHHmcPUsl0pPsqesVQN68f8VU.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/1QuHHmcPUsl0pPsqesVQN68f8VU.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Churn",
+          "overview": "Holden and Fred deal with infiltrators on Tycho. Drummer's past comes back to haunt her. Amos returns to Baltimore. Alex and Bobbie's investigation on Mars leads to rogue soldiers.",
+          "plot": "Drummer accidentally discovers the remains of Klaes Ashford's ship with great remorse. Amos returns to Earth for his recently deceased foster mother, Lydia, and finds her senior boyfriend Charles is about to be evicted. Amos confronts crime boss Erich to secure Charles' housing, and plans to meet someone before leaving his home planet forever. On Tycho Station, Holden receives a message from Monica, the reporter who claims to have proof of a plot stealing the protomolecule, but later finds she is missing. He eventually rescues Monica, nearly dead, from a shipping container on Tycho. On Mars, Bobbie reveals to Alex that she has been investigating Martian weapons trafficking with the help of Avasarala. Alex fails to approach Admiral Sauveterre, a possible trafficker, but finds himself a date with Sauveterre's charismatic personal assistant, Lt. Babbage. Avasarala's concerns about Inaros launching an attack on Earth still fall on deaf ears.",
+          "airDate": "2020-12-16",
+          "still": "https://image.tmdb.org/t/p/original/jlp5fXHpHqkqzFrjQGwzNzJwdwQ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/jlp5fXHpHqkqzFrjQGwzNzJwdwQ.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Mother",
+          "overview": "Naomi comes face to face with Filip. Holden and Fred turn the tables. Avasarala closes in on Marco's plot.",
+          "plot": "Drummer finds Ashford's abandoned ship, confirming his death. She extracts the recording in which Marco Inaros describes his plan to go after targets bigger than Tycho or Ceres, and sends it to Fred, who then forwards it to Avasarala. Drummer eventually decides against going after Inaros. Naomi travels to Pallas Station, where she reconnects with Belter friends Cyn and Karal. She eventually meets Filip, who is angry at her, and they take Naomi captive. On Mars, the meeting of Alex and Babbage is fruitless. Later, Alex is attacked by two assailants and is only saved by Bobbie. On Tycho, Monica shows Holden and Fred a video of a fight that occurred on Ceres in which Cortazar can be identified. Sakai, the chief engineer of Tycho, identifies the people who purchased the shipping container in which Monica was discovered, but they find them already killed. Bull, the chief of security, concludes they have a traitor on Tycho working for Marco Inaros. The first of Inaros' stealth asteroids collides with Earth.",
+          "airDate": "2020-12-16",
+          "still": "https://image.tmdb.org/t/p/original/4ZX9LYNKgo8HWjVMOXfYCazieLr.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/4ZX9LYNKgo8HWjVMOXfYCazieLr.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Gaugamela",
+          "overview": "Marco's grand plan shocks Earth, Mars and the Belt.",
+          "plot": "Alex and Bobbie take the Razorback, now named Screaming Firehawk, and follow a group of Martian ships they suspect of weapons trafficking. Amos is visiting Clarissa in a high-security underground prison when the second asteroid hits, triggering a lockdown. Avasarala contacts Nancy Gao, warning her of the stealth asteroids. Gao orders the Watchtower satellites set for spotting further asteroids right before the third asteroid hits near her plane, destroying it. Her order still goes out, and the next asteroid is spotted and neutralized. On Tycho, the ship coming for the container holding Monica attacks the station. The traitor is revealed to be Sakai, who assassinates Fred Johnson and helps steal the sample of the protomolecule kept on the station. Filip takes Naomi to Marco's ship, where she is locked up. Marco, now in possession of the protomolecule, broadcasts a speech claiming responsibility for the stealth asteroid attacks and declaring his Free Navy as the ruling power of the Sol system as well as all the ring gates.",
+          "airDate": "2020-12-23",
+          "still": "https://image.tmdb.org/t/p/original/xzFAPvoqQ5FJDUxHEsK58FpitXB.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xzFAPvoqQ5FJDUxHEsK58FpitXB.jpg",
+            "https://image.tmdb.org/t/p/original/6Lr6lRoFd6ERJJ9hRnRtgBoKCMr.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Down and Out",
+          "overview": "Amos and Clarissa are trapped in a collapsed building. Naomi contends with her old family. Holden assembles a new crew on the Roci. Alex and Bobbie make a dangerous discovery in the Belt.",
+          "plot": "Drummer receives Inaros' offer to meet, which she and her crew accept. In the aftermath of the second asteroid impact, Amos and Clarissa are trapped in an underground cell at the prison. Along with three guards and another modded prisoner, they are able to break into a locked-off service ladder in the elevator and climb to the scorched surface. Naomi is held on Marco's ship, where she makes a concealed but futile attempt to assassinate Marco Inaros. She discerns that the Rocinantes drive has been sabotaged and manages to send a message to Holden, who avoids launching the Rocinante just in time. Pursuing the Martian ship Barkeith, Alex and Bobbie witness its rendezvous with Belters, but are later spotted and have to fend off a torpedo launch with a last-ditch core dump, leaving their fates uncertain drifting into the void.",
+          "airDate": "2020-12-30",
+          "still": "https://image.tmdb.org/t/p/original/pE9KN9NrSseAkyyY2kUoLhL2xj9.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/pE9KN9NrSseAkyyY2kUoLhL2xj9.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Tribes",
+          "overview": "Holden and the Roci go on the hunt. Amos and Clarissa seek shelter on a devastated Earth. Bobbie and Alex fight a desperate battle. Marco makes Drummer an offer she can't refuse. Avasarala returns to a position of power.",
+          "plot": "Holden takes the Rocinante out after verifying their software is valid. Avasarala meets the new Secretary-General, who is out of depth in the crisis and asks for her support. Bobbie and Alex use some trickery to defeat a Belter boarding party and their ship. Drummer's clan meets with Marco. After some tense discussion, they reluctantly align with him. While talking with Filip, Drummer talks about Naomi and her role on board the Behemoth. Filip asks Naomi for details while Marco watches in the surveillance system. Amos and Clarissa avoid government relief sites to make their own way planning to get to Baltimore. Amos mentions to Clarissa his need to rejoin his crew.",
+          "airDate": "2021-01-06",
+          "still": "https://image.tmdb.org/t/p/original/1481Rcqal4A0livQ442QUnhySww.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/1481Rcqal4A0livQ442QUnhySww.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Oyedeng",
+          "overview": "Naomi makes a desperate attempt to save her son from Marco. On the Roci, Holden battles for the last sample of protomolecule.",
+          "plot": "Naomi and Filip Inaros talk about their pasts and future. Naomi attempts to warn her son that Marco is an opportunist and gives her side of the story for leaving his father. Cyn also confesses to Naomi that he helped Marco hide their son from her. Holden joins forces with Bobbie and Alex to hunt down the ship Zmeya and to rescue Naomi. During the course of their investigation, Alex discovers that the Martians are selling ships to Marco's Free Navy. Holden, Bull, and Monica track down the Zmeya and disable it following a gun battle. However, the Belter crew destroy the Zmeya before Holden and his team can investigate the ship. Seeking to curry Filip's favor, Marco convinces his son to lend his personal ship Chetzemoka for a plot to trap the Rocinante while naming him as his successor. Marco reveals this plot to Naomi, who flees out the airlock towards the derelict Chetzemoka, having injected herself with hyper-oxygenated blood. Cyn attempts to stop her but perishes.",
+          "airDate": "2021-01-13",
+          "still": "https://image.tmdb.org/t/p/original/u1IUqcbbO19bVjxz8CVQ58rO3HF.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/u1IUqcbbO19bVjxz8CVQ58rO3HF.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Hard Vacuum",
+          "overview": "Amos returns to Baltimore with Clarissa. On Luna, Avasarala's alliances begin to shift. Alone and adrift, Naomi becomes a deadly lure.",
+          "plot": "Following Naomi's escape, a grieving Marco blames Filip for Cyn's death. Aboard the Rocinante, Holden and his team find no traces of the protomolecule during an analysis of the Zmeya wreckage. Holden resolves to find and rescue Naomi. While collecting salvage from wrecked warships, Drummer, who is uneasy about following Marco, clashes with Karal, who supports Marco's cause. Back on Earth, Avasarala supports the new interim UN Secretary-General David Paster, who is learning the ropes of his job. At the first UN Security Council meeting, Avasarala opposes Admiral Delgado's proposal to launch a punitive strike against Belter civilians on Pallas station. Meanwhile, Amos and Clarissa travel to a devastated Baltimore where they convince the criminal Erich that they can access a sub-orbital shuttle at a holiday retreat in Lake Winnipesaukee. In space, Naomi discovers that Marco had rigged the Chetzemoka with a bomb and fake distress message in order to destroy the Rocinante. After several attempts, Naomi manages to distort the fake distress message, which is picked up by a suspicious Holden and Drummer.",
+          "airDate": "2021-01-20",
+          "still": "https://image.tmdb.org/t/p/original/fZQN787eGIDVdacRQ7ZzLVy43T9.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/fZQN787eGIDVdacRQ7ZzLVy43T9.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Winnipesaukee",
+          "overview": "Amos, Clarissa, and a gang of thieves work together to leave Earth. Avasarala tries to head off a brutal military strike. Drummer's new family bonds are tested as Naomi's life hangs in the balance.",
+          "plot": "Amos, Clarissa, Erich and the rest of their group reach Lake Winnipesaukee, attempting to commandeer a suborbital shuttle. As they prepare the shuttle for departure, Clarissa persuades him to allow some of the winter staff of the now-abandoned mansions to join them, to escape the recent disaster. Avasarala learns that Pallas Station has been attacked by Earth forces, and leads a mass resignation from the Cabinet that results in the current Secretary General standing down; she later accepts the nomination to return to the position. Drummer learns that Naomi is still alive aboard the Chetzemoka but is powerless to aid her, as Inaros orders Drummer to lead a strike force to destroy her friends on the Rocinante. Filip is manipulated by Marco once again with his mother's survival. Alex and Bobbie realize they are closer to Chetzemoka than Holden is, and alter course in the Razorback. On Earth, a private security detail ambushes Amos's party in the evening darkness, but after a brutal firefight, they are able to successfully launch, bound for Luna.",
+          "airDate": "2021-01-27",
+          "still": "https://image.tmdb.org/t/p/original/7FEzJvWQ8ZKdl98B8UyC0J65Dnb.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/7FEzJvWQ8ZKdl98B8UyC0J65Dnb.jpg",
+            "https://image.tmdb.org/t/p/original/eHdffO0ZB1yW6GznjPEeCamworn.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Nemesis Games",
+          "overview": "Holden and the Roci face off against Marco's forces and Drummer, while Alex and Bobbie attempt a dangerous rescue of Naomi, and the balance of power in the Solar System shifts.",
+          "plot": "As the Rocinante finds itself surrounded by Free Navy ships, Drummer betrays Karal to save it from destruction. Drummer loses members of her crew in protest, and Inaros executes her associate in retaliation. On the Chetzemoka, Naomi breaks a pressure valve, putting the ship into a spin to prevent docking. As Alex attempts a docking maneuver with the Razorback anyway, Naomi flees the Chetzemoka in her suit and attempts to warn them off. Bobbie rescues Naomi before her life support gives out, but Alex dies from a stroke during the high-G encounter. The Rocinante's crew reunites on Luna, where Amos tricks Holden into giving Clarissa safe refuge, Bobbie joins newly-elected Avasarala's team, and Chrisjen signals she intends to use the Rocinante's crew as a role model for winning the war against Inaros. Free Navy ships, aided by Medina Station and rogue Martian warships commanded by Admiral Sauveterre attack and destroy the joint Earth and Mars garrison at the Ring. As the ex-MCRN Barkeith transits a ring gate en route to Laconia, a world beyond the ring space, the entities that destroyed the Ring Builders begin to awaken and devour the ship. Meanwhile an alien superstructure orbiting Laconia suddenly blooms with the protomolecule.",
+          "airDate": "2021-02-03",
+          "still": "https://image.tmdb.org/t/p/original/jpVmMnaGZMwjDHxvYMZV0srljmd.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/jpVmMnaGZMwjDHxvYMZV0srljmd.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 6,
+      "name": "Season 6",
+      "airDate": "2021-12-09",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Strange Dogs",
+          "overview": "The Rocinante crew make a startling discovery on an asteroid. Avasarala and Bobbie contend with the devastation on Earth. Drummer and her family must make a heartbreaking decision. On Ceres, Marco and Filip's struggles turn inward.",
+          "plot": "On the alien world of Laconia, a young girl named Cara studies the local fauna and encounters alien creatures which she dubs \"dogs\". After an alien bird-analog falls injured, Cara takes it away to find help. On Earth, Avasarala and Bobbie are dealing with the ecological collapse caused by the Free Navy's continuing asteroid bombardment, which is tying up Earth's fleet in a defensive role. In the Belt, the Rocinante is on a recon mission. After destroying a Free Navy ship, the crew (Holden, Naomi, Amos, and Clarissa) discovers evidence that a ship called \"Azure Dragon\" is coordinating the asteroid strikes. On Ceres, Marco declares the planetoid the capital of the Belt, drawing wide praise and acclaim. Meanwhile, Filip struggles with accepting both his place as his father's son and his role in killing millions on Earth. In a heated altercation, he shoots and kills his friend Yoan. Elsewhere in the Belt, Drummer's crew-family (Drummer, Michio, and Josep) aboard the Tynan destroys a Free Navy bounty hunter ship pursuing them. In the process, they lose their second ship Dewalt due to Michio's mistake. Drummer and Josep decide to leave Michio at a safe harbor until the conflict is over.",
+          "airDate": "2021-12-09",
+          "still": "https://image.tmdb.org/t/p/original/sl1vTgXrZwh9ZfWhj2uBcNEvUYW.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/sl1vTgXrZwh9ZfWhj2uBcNEvUYW.jpg",
+            "https://image.tmdb.org/t/p/original/mMDQEZiglHOyhVuh7FrpDXG2VK6.jpg",
+            "https://image.tmdb.org/t/p/original/mUHyIlgRzo8KW7T7IuDLrwptCP1.jpg",
+            "https://image.tmdb.org/t/p/original/gVZUgDJKvpc3vawpj87ueYMAqbS.jpg",
+            "https://image.tmdb.org/t/p/original/eadfT8BtM7s7bedLPZU6gEvqQJr.jpg",
+            "https://image.tmdb.org/t/p/original/mIHBwkyru9KHhk6TPhAanmTifAx.jpg",
+            "https://image.tmdb.org/t/p/original/zHsJAQ8ecBntT1wqfT6NvAKq8PE.jpg",
+            "https://image.tmdb.org/t/p/original/gismz0d0wDO06xyNcgrafSdajPq.jpg",
+            "https://image.tmdb.org/t/p/original/yEWfBX3kESsHjZ1QtmCZUpFbruQ.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Azure Dragon",
+          "overview": "With an unexpected passenger aboard the Rocinante, Holden and crew undertake a dangerous mission that could shift the balance of power in the war. Drummer decides to make an uneasy alliance. Filip wrestles with his guilt.",
+          "plot": "On Laconia, Cara shows her parents the dying alien bird and learns that it was killed by the human food she gave it. She attempts to care for its young using a drone copter, but accidentally crashes it. A \"strange dog\" steals the bird's corpse. In the Belt, the Rocinante rendezvouses with a UNN tender; they take on supplies and Bobbie Draper, who has been sent by Avasarala to supervise the strike against the Azure Dragon. After a brief skirmish, the Rocinante captures the Dragon and its data core, with the locations of all the asteroids aimed at Earth. Elsewhere in the Belt, Drummer and her crew meet with Liang Walker, a pirate loosely affiliated with the Free Navy who will shepherd Michio to safety. While talking, Drummer and Walker realize they have aligned interests in injuring Marco and start planning their piracy together. On the UNN Zenobia, Avasarala requests that Monica Stuart use her journalistic talents to build sympathy for Earth among Belters. On Ceres, Marco releases Filip from prison. Feeling guilty, Filip arranges compensation for Yoan's family. Marco receives word of the Azure Dragons capture and prepares for the Inners' fleets to come for Ceres.",
+          "airDate": "2021-12-16",
+          "still": "https://image.tmdb.org/t/p/original/vyT1EYwM1gs1pOgvSlKsQGFBjJQ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/vyT1EYwM1gs1pOgvSlKsQGFBjJQ.jpg",
+            "https://image.tmdb.org/t/p/original/k4cjtFUzFaOb4zhfX9WjukRxa29.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Force Projection",
+          "overview": "Avasarala, with the Combined Fleet of Earth and Mars, takes the war to Marco. Filip and Marco's relationship is tested. The war becomes more perilous and personal for Holden and Naomi when the Rocinante is suddenly forced into a battle.",
+          "plot": "On Laconia, Cara discovers that the drone and bird were \"fixed\" by a strange dog. Returning home, she finds that her young brother Xan has died in a traffic accident. The Joint Fleet of Earth and Mars enters Ceres without resistance, finding it abandoned and stripped of resources by the Free Navy. As UNN and MCRN marines coordinate relief efforts, a large explosion occurs in the docks. En route to Ceres, the Rocinante crew discusses their personal issues. Naomi helps Holden investigate the ship disappearances during the ring transits. On the Pella, Filip confronts Marco for abandoning Ceres as they start losing support among the Belters. As they detect the Rocinante, Marco decides to attack it with his three ships. During the battle, the Rocinante disables two ships; then Bobbie tricks the Pella and disables its drive. After Marco refuses to surrender, Bobbie fires a nuclear torpedo to finish the Pella, but Holden disarms it as he sees Filip on the screen; the Pella withdraws. Filip and Marco blame each other for the failure; Marco relieves Filip of duty. Elsewhere in the Belt, Drummer and Walker make plans to attack Marco's supply depots and are joined by more forces.",
+          "airDate": "2021-12-23",
+          "still": "https://image.tmdb.org/t/p/original/t20lW6sKFgLLYdNE2AJweJcKjrO.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/t20lW6sKFgLLYdNE2AJweJcKjrO.jpg",
+            "https://image.tmdb.org/t/p/original/zqb1PLZrB1Xgkbr1US76wfexQV9.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Redoubt",
+          "overview": "Holden finds himself at odds with his crew when a controversial decision is uncovered. On Ceres, Avasarala struggles to contain an escalating humanitarian crisis. Drummer's growing faction stage a daring raid with dire stakes. Filip, demoted to repair skiff duty, makes an unexpected discovery.",
+          "plot": "At Xan's funeral, Admiral Duarte, the leader of the Laconia settlement, comforts Cara with a discussion about sacrifice. Paolo Cortazar tells Duarte he has found a way to activate the protomolecule structure in orbit. At night, Cara steals Xan's body and goes into the woods. On Ceres, Belters protest against the Inners' presence while the Joint Fleet deals with the consequences of the explosion. On the Rocinante, Holden is confronted by Amos and Naomi as they find out he disarmed the torpedo that failed to destroy the Pella. However, Clarissa advises him not to \"feel bad about not killing someone.\" On the Pella, Marco punishes officers for their loss in battle; his executive officer Rosenfeld calms him down and tries to reconcile him with Filip. Filip is assigned to assist Tadeo, a repair technician. Drummer's team takes control of the Free Navy supply depot, but Josep loses his arm in the process. Drummer releases a system-wide broadcast calling Marco Inaros a coward. When the crew of the Pella sees Drummer's message, Filip loudly proclaims that Drummer is their enemy and they should fight anyone who stands against them as \"there is no turning back now.\"",
+          "airDate": "2021-12-30",
+          "still": "https://image.tmdb.org/t/p/original/2mUFeFhgaLkrFD4URs56LZeuu1J.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/2mUFeFhgaLkrFD4URs56LZeuu1J.jpg",
+            "https://image.tmdb.org/t/p/original/y36cl3zhqlNtGnJcm7Xncl2tyN1.jpg",
+            "https://image.tmdb.org/t/p/original/8FuAyaBjbJns3vqYl4fsqA3x0oW.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Why We Fight",
+          "overview": "Paths converge on Ceres when Drummer and her fleet arrive to aid the relief effort. Holden tries to convince Avasarala to release crucial information that might avert catastrophe, but she has her own request of him. As Amos and Bobbie get a little R&R at the station, Naomi has a difficult and long-awaited reunion.",
+          "plot": "On Laconia, Cara calls for the strange dogs to fix Xan. After spending the night in the forest, she finds Xan alive but with pitch black eyes; Xan says that \"everything looks different\" for him now. At the Ring, an MCRN strike force attacks Medina Station but is destroyed by the heavy Laconian railguns that the Free Navy have emplaced on the Ring Station itself. On Ceres, the joint forces of Mars and Earth cannot agree on how to respond. On the Pella, the crew celebrates the victory. After Tadeo finds out that his brother was killed during the explosion on Ceres, he confesses to Filip that he was one of the people who planted the bombs. The Rocinante is stationed on Ceres for repairs. Upset with Holden's decision in the battle with the Pella, Amos is unsure if he wants to continue fighting alongside him; Bobbie convinces him to stay with his crew. Dr. Elvi Okoye shares insight with Holden and Naomi on the ring gate disappearances. Drummer arrives at Ceres with the resources from Marco's supply depot. In an emotional encounter, Naomi convinces Drummer to meet with Avasarala. Drummer and Avasarala form an alliance against Marco.",
+          "airDate": "2022-01-06",
+          "still": "https://image.tmdb.org/t/p/original/8gPJZHVzieleYuBXyb7nNhnblAV.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/8gPJZHVzieleYuBXyb7nNhnblAV.jpg",
+            "https://image.tmdb.org/t/p/original/dT0SHT6YWvnNasxJNoPtkVmaDN7.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Babylon's Ashes",
+          "overview": "In the thrilling season finale, Inners and Belters fight side by side with the crew of the Rocinante in a last, massive, desperate battle with Marco and his Free Navy, with the fate of the Solar System, the Ring Gates, and of all humanity hanging in the balance.",
+          "plot": "On Laconia, Cara's parents are horrified by the reanimated Xan and the father attacks him; Cara and Xan flee into the woods. The combined fleets of Earth, Mars, and Drummer-aligned Belters intercept the Free Navy forces headed for the Ring in a bloody but inconclusive battle. Disguised, the Pella inflicts significant casualties on the Belters' ships. Walker sacrifices himself by ramming his ship into the Pella, damaging it significantly. Meanwhile, Holden and crew send a team to the surface of the Ring Station to capture its railguns but are forced to destroy them instead. Naomi leads a plan to awaken the entities inside the Ring at the moment the Free Navy reaches it. The entities consume Marco and the Free Navy as they attempt to transit; Filip however survives as, having become disillusioned in Marco, he has secretly left the Pella on a skiff. After their victory over the Free Navy, the leaders of Earth, Mars, and the Belt form an independent Transport Union, selecting Holden as its president. He accepts on the condition that Drummer be his vice-president, then immediately resigns, leaving Drummer in charge. The series ends with the Rocinante and crew flying toward the unknown.",
+          "airDate": "2022-01-13",
+          "still": "https://image.tmdb.org/t/p/original/tzXQdklwgEGOOHSE4ynN4imjz0K.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/tzXQdklwgEGOOHSE4ynN4imjz0K.jpg",
+            "https://image.tmdb.org/t/p/original/tL8lNr273QPrMzwK2VmL5QVzbRF.jpg"
+          ]
+        }
+      ]
     }
   ],
   "cast": [
@@ -1250,7 +1465,7 @@
       "character": "Jules-Pierre Mao",
       "episodeCount": 13,
       "profile": "https://image.tmdb.org/t/p/original/fRKnZpGoUBJAEx9gEOkN1bG21D8.jpg",
-      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/375/939740.jpg"
+      "inCharacter": null
     },
     {
       "name": "David Strathairn",
@@ -1453,7 +1668,7 @@
       "character": "Arjun Avasarala",
       "episodeCount": 6,
       "profile": "https://image.tmdb.org/t/p/original/mHjc58pfKkxtghhliPOnNz0SlcT.jpg",
-      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/375/939743.jpg"
+      "inCharacter": null
     },
     {
       "name": "Jared Harris",
@@ -1649,7 +1864,7 @@
       "character": "David Draper",
       "episodeCount": 5,
       "profile": "https://image.tmdb.org/t/p/original/kHbd0AdFRzcSYhv0StO89RINDdx.jpg",
-      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/375/939744.jpg"
+      "inCharacter": null
     },
     {
       "name": "Nabeel El Khafif",
@@ -2013,7 +2228,7 @@
       "character": "Benji Draper",
       "episodeCount": 3,
       "profile": "https://image.tmdb.org/t/p/original/jhcXcqlhp8KpnBL6tElljQGM3ff.jpg",
-      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/375/939744.jpg"
+      "inCharacter": null
     },
     {
       "name": "Christian Potenza",
@@ -2349,7 +2564,7 @@
       "character": "Elise Holden",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/3iNDgd54IIj8g8hGqhhUjM6TeWd.jpg",
-      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/375/939747.jpg"
+      "inCharacter": null
     },
     {
       "name": "Benz Antoine",
@@ -2639,5 +2854,5 @@
       "inCharacter": null
     }
   ],
-  "generatedAt": "2026-07-23T02:17:53.638Z"
+  "generatedAt": "2026-07-23T07:24:17.283Z"
 }
