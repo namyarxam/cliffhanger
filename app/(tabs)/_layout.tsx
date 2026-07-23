@@ -8,7 +8,6 @@ import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { getPendingRequests } from '@/src/lib/friends';
-import { getUnseenConversationCount } from '@/src/lib/conversations';
 import { qk } from '@/src/lib/queryKeys';
 import { silentCatch } from '@/src/lib/errorLog';
 
@@ -40,15 +39,7 @@ export default function TabLayout() {
     refetchInterval: 10000,
     refetchIntervalInBackground: false,
   });
-  const unseenChatsCountQ = useQuery({
-    queryKey: qk.unseenConversationCount(userId),
-    queryFn: () => getUnseenConversationCount(userId!),
-    enabled: !!userId,
-    refetchInterval: 10000,
-    refetchIntervalInBackground: false,
-  });
   const pendingCount = pendingRequestsCountQ.data ?? 0;
-  const unseenChatsCount = unseenChatsCountQ.data ?? 0;
 
   // Forward query errors to Sentry. The pre-migration setInterval fetches
   // ran through silentCatch on every tick; after the TanStack switch the
@@ -56,18 +47,12 @@ export default function TabLayout() {
   useEffect(() => {
     if (pendingRequestsCountQ.error) silentCatch('tabs:pendingRequestsCount')(pendingRequestsCountQ.error);
   }, [pendingRequestsCountQ.error]);
-  useEffect(() => {
-    if (unseenChatsCountQ.error) silentCatch('tabs:unseenChatsCount')(unseenChatsCountQ.error);
-  }, [unseenChatsCountQ.error]);
 
   // Friends screen calls refreshBadge() after accept/decline so the tab
   // badge updates immediately instead of waiting for the next 10s tick.
-  // Chat detail screen also calls it after opening a chat so the unseen
-  // badge clears without waiting for the poll.
   const refreshPending = useCallback(() => {
     if (!userId) return;
     queryClient.invalidateQueries({ queryKey: qk.pendingRequestCount(userId) });
-    queryClient.invalidateQueries({ queryKey: qk.unseenConversationCount(userId) });
   }, [userId, queryClient]);
 
   const activeTabRef = useRef<string | null>('index');
@@ -78,13 +63,11 @@ export default function TabLayout() {
     if (path === '' || path === 'index') return 'index';
     if (path === 'explore') return 'explore';
     if (path === 'recap') return 'recap';
-    if (path === 'chat') return 'chat';
     if (path === 'profile') return 'profile';
 
     // show/[id] doesn't force a tab — keep whatever tab was active before
     if (path.startsWith('show/')) return activeTabRef.current;
     if (path.startsWith('recap/')) return 'recap';
-    if (path.startsWith('chat/')) return 'chat';
     if (path === 'friends' || path === 'settings' || path === 'lists' || path.startsWith('user/') || path.startsWith('lists/')) return 'profile';
 
     return null;
@@ -103,9 +86,6 @@ export default function TabLayout() {
     <RefreshBadgeContext.Provider value={refreshPending}>
     <Tabs
       tabBar={(props) => {
-        // Chat is swapped out for Recap while the recap experience is being
-        // prototyped. Every chat file is untouched — the screens are just
-        // unreachable (href: null below), so restoring is a one-line revert.
         const tabs = [
           { name: 'index', title: 'My Shows', icon: 'tv' as const },
           { name: 'explore', title: 'Explore', icon: 'compass' as const },
@@ -137,9 +117,6 @@ export default function TabLayout() {
                         <Text style={styles.badgeText}>{pendingCount}</Text>
                       </View>
                     )}
-                    {/* Chat unseen badge intentionally omitted while the tab is
-                        swapped for Recap — the count query still runs, it just
-                        has nowhere to render. */}
                   </View>
                   <Text style={[styles.tabLabel, { color }]}>{tab.title}</Text>
                 </Pressable>
@@ -163,10 +140,6 @@ export default function TabLayout() {
       <Tabs.Screen name="settings" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="friends" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="show/[id]" options={{ href: null, headerShown: false }} />
-      {/* Chat — parked, not deleted. Reachable again by restoring the tab entry above. */}
-      <Tabs.Screen name="chat" options={{ href: null, headerShown: false }} />
-      <Tabs.Screen name="chat/[id]" options={{ href: null, headerShown: false }} />
-      <Tabs.Screen name="chat/new" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="lists" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="lists/[id]" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="user/[id]" options={{ href: null, headerShown: false }} />

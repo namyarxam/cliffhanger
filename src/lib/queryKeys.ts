@@ -46,23 +46,6 @@ export const qk = {
   // Lists
   lists: (userId: string | undefined) => ['lists', userId] as const,
 
-  // Conversations
-  conversations: (userId: string | undefined) => ['conversations', userId] as const,
-  unseenConversationCount: (userId: string | undefined) =>
-    ['unseenConversationCount', userId] as const,
-  conversation: (conversationId: string | undefined) =>
-    ['conversation', conversationId] as const,
-  // showId is part of the key because getConversationMembers fetches per-show
-  // progress (current_season/current_episode/status) when a show is attached.
-  // Without showId in the key, attaching/detaching/swapping the show would
-  // serve stale member data from the prior cache entry.
-  conversationMembers: (
-    conversationId: string | undefined,
-    showId: string | null | undefined,
-  ) => ['conversationMembers', conversationId, showId ?? null] as const,
-  messages: (conversationId: string | undefined) =>
-    ['messages', conversationId] as const,
-
   // Profile
   profile: (userId: string | undefined) => ['profile', userId] as const,
 

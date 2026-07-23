@@ -187,51 +187,15 @@ export interface ListWithItems extends List {
   items: ListItem[];
 }
 
-export interface Conversation {
-  id: string;
-  name: string | null;
-  show_id: string | null;
-  show_title: string | null;
-  show_image: string | null;
-  spoiler_lock: boolean;
-  created_by: string;
-  last_message_at: string;
-  last_message_text: string | null;
-  last_message_user_id: string | null;
-  created_at: string;
-}
-
-export interface ConversationPreview extends Conversation {
-  member_names: string[];
-  member_count: number;
-  last_message: string | null;
-  last_message_sender: string | null;
-}
-
-export interface ConversationMember {
-  conversation_id: string;
-  user_id: string;
-  joined_at: string;
-  display_name: string;
-  username: string;
-  avatar_url: string | null;
-  current_season: number;
-  current_episode: number;
-  show_status: WatchStatus | null;
-  muted: boolean;
-  last_active_at: string | null;
-}
-
-export interface Message {
-  id: string;
-  conversation_id: string;
-  user_id: string;
-  message: string | null;
-  gif_url: string | null;
-  created_at: string;
-  sender_name: string;
-  sender_avatar: string | null;
-}
+// Chat types (Conversation, ConversationPreview, ConversationMember,
+// Message) were removed along with the chat feature. The conversations,
+// conversation_members and messages TABLES are deliberately retained, so
+// these types are gone but the data is not.
+//
+// Two things still touch those tables without going through here:
+// src/lib/moderation.ts deletes DMs when one user blocks another, and the
+// delete-account Edge Function clears them on account deletion. Both use
+// inline types and neither needs this file.
 
 export interface ScheduleEntry {
   show_id: string;

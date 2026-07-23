@@ -181,18 +181,22 @@ function AuthGate() {
     return () => sub.remove();
   }, [router]);
 
-  // Route notification taps. notify-message attaches { type: 'chat',
-  // conversation_id }; notify-friend-request attaches { type:
+  // Route notification taps. notify-friend-request attaches { type:
   // 'friend_request' } and we drop the user into the Friends tab so they
-  // can accept the pending row. (The historical chat 'invite' type was
-  // removed when chat invites went away in favor of direct member-add.)
+  // can accept the pending row.
+  //
+  // Unknown types are ignored rather than routed anywhere. Chat pushes
+  // ({ type: 'chat' }) used to land here, and they can still arrive: chat
+  // notifications fired from the SENDER's client, so anyone still on an
+  // older build will keep sending them to people whose app no longer has
+  // chat. Falling through leaves the app where it was, which is the right
+  // outcome — the alternative is navigating to a route that no longer
+  // exists.
   useEffect(() => {
     const route = (data: unknown) => {
-      const d = data as { type?: string; conversation_id?: string } | null;
+      const d = data as { type?: string } | null;
       if (!d) return;
-      if (d.type === 'chat' && d.conversation_id) {
-        router.push(`/(tabs)/chat/${d.conversation_id}`);
-      } else if (d.type === 'friend_request') {
+      if (d.type === 'friend_request') {
         router.push('/(tabs)/friends');
       }
     };
