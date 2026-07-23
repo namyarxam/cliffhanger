@@ -1,0 +1,1906 @@
+{
+  "slug": "yellowstone",
+  "tmdbId": 73586,
+  "tvmazeId": 27848,
+  "matchedBy": "imdb_id",
+  "title": "Yellowstone",
+  "overview": "Follow the violent world of the Dutton family, who controls the largest contiguous ranch in the United States. Led by their patriarch John Dutton, the family defends their property against constant attack by land developers, an Indian reservation, and America’s first National Park.",
+  "firstAirDate": "2018-06-20",
+  "network": "Paramount Network",
+  "poster": "https://image.tmdb.org/t/p/w780/vOYfRZ0NpUK5hG2CB2dJFnYJlGe.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/original/ynSOcgDLZfdLCZfRSYZGiTgYJVo.jpg",
+  "backdrops": [
+    "https://image.tmdb.org/t/p/original/ynSOcgDLZfdLCZfRSYZGiTgYJVo.jpg",
+    "https://image.tmdb.org/t/p/original/hFFAYkK8XkvIlQss9GYxo8TOhFi.jpg",
+    "https://image.tmdb.org/t/p/original/xHkOKPUe3ioXyPIe5odyL6o6cp4.jpg",
+    "https://image.tmdb.org/t/p/original/5YTM1bh3Jyfy9IP2eS64W3JDeGs.jpg",
+    "https://image.tmdb.org/t/p/original/oBilGalyrQJTtDuYIljRQGNXXb8.jpg",
+    "https://image.tmdb.org/t/p/original/2Erj4Oav9EHAtqLI354VM7ULDqu.jpg",
+    "https://image.tmdb.org/t/p/original/8CN6Wwe7lmKdkLN3Q21wnFxzU4G.jpg",
+    "https://image.tmdb.org/t/p/original/yVxVZn6tR83ogxHyFTs3lzMfjP7.jpg",
+    "https://image.tmdb.org/t/p/original/896pHtC57XFBDIfQfM0zSwtLZ0H.jpg",
+    "https://image.tmdb.org/t/p/original/49zlPXSiHfJW8zvvddrBk6G2nyr.jpg",
+    "https://image.tmdb.org/t/p/original/jqhq7RpkbxnnyqQV4dDYTk2Fpnb.jpg",
+    "https://image.tmdb.org/t/p/original/uzKBAqpZAvo8xyKcklqXhMlQXhZ.jpg"
+  ],
+  "throughSeason": 5,
+  "totalSeasons": 5,
+  "showType": "Scripted",
+  "genres": [
+    "Drama",
+    "Western"
+  ],
+  "status": "Ended",
+  "runtime": 67,
+  "language": "English",
+  "seasons": [
+    {
+      "season": 1,
+      "name": "Season 1",
+      "airDate": "2018-06-20",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Daybreak",
+          "overview": "The Dutton family, owners of the largest ranch in Montana, fight ruthlessly to keep their land from the neighboring Indian reservation and the new chief seeking to reclaim it.",
+          "plot": "Ranch owner John Dutton euthanizes an injured horse after a collision with a developer's truck, then has a legal case dismissed with the help of his middle son Jamie. Top ranchhand Rip hires an ex-con named Jimmy, and John sends them with dynamite to stop the developer's dam project by diverting a river. Meanwhile, Kayce, John's third son, lives on a Native American reservation with his wife Monica and family. When Dutton cattle wander onto Native American land, a confrontation ensues, resulting in the deaths of eldest son Lee Dutton and Kayce's brother-in-law Robert. Aided by daughter Beth's return from Utah, the Duttons then plan their next counter-moves.",
+          "airDate": "2018-06-20",
+          "still": "https://image.tmdb.org/t/p/original/6uX0MNaI18hu6IJ5I5DRbmx09yN.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/6uX0MNaI18hu6IJ5I5DRbmx09yN.jpg",
+            "https://image.tmdb.org/t/p/original/rWHbCuIwcP0FsRQaj95IBrdQVUl.jpg",
+            "https://image.tmdb.org/t/p/original/iB02S7mJymLii8UAOJHkBhHBJnD.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Kill the Messenger",
+          "overview": "As the dust settles from the shootout, the Duttons deal with the potential repercussions. John calls in a favor and collects on some old debts. Jamie meets with the governor to do damage control.",
+          "plot": "Governor Lynelle Perry's autopsy report implicates Kayce in Robert's murder, so John tries to keep the evidence from going public. He convinces Federal agents to stay quiet but the county shares the results with the tribal police. Chief Thomas Rainwater sees an opportunity to remove the Duttons, and John cremates Lee's body to destroy evidence. Meanwhile, Kayce discovers dinosaur bones and decides to leave Montana for the Navy. Monica confronts him about Robert's murder, and then they discover a meth lab. After mercy-killing the lone survivor, Kayce joins Rainwater in a tribal ritual. On John's orders, Rip kills the medical examiner and burns his lab.",
+          "airDate": "2018-06-27",
+          "still": "https://image.tmdb.org/t/p/original/x1Oom04u2dwa8Jv3U4bBXu5OFW4.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/x1Oom04u2dwa8Jv3U4bBXu5OFW4.jpg",
+            "https://image.tmdb.org/t/p/original/aa6PgXjDPcNB1QkbBJw5njo0YzQ.jpg",
+            "https://image.tmdb.org/t/p/original/ffyvsjYpkvtwkYMVLc0E6ed2bur.jpg",
+            "https://image.tmdb.org/t/p/original/8ghLaNp4algdIz8ojfbfx3jG9pl.jpg",
+            "https://image.tmdb.org/t/p/original/d1U2TH5SShE51LnzhGGbf7cWIlv.jpg",
+            "https://image.tmdb.org/t/p/original/8uMO4iMRhOtcFP0nr1IMmbd51rX.jpg",
+            "https://image.tmdb.org/t/p/original/qYzpaPk4HDC5ynMB0BCLYU1mp2i.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "No Good Horses",
+          "overview": "The Duttons deal with a painful family anniversary. Kayce saves a young girl from danger. Jamie and Beth plan their respective political careers. Rainwater makes an ominous threat to the Dutton legacy.",
+          "plot": "In a childhood flashback, Beth and Kayce are horseback riding with their mother Evelyn. Beth is nervous, her horse rears up and causes Evelyn to be thrown by her own horse, critically injuring her. Kayce tries going for help, but Evelyn insists Beth go instead as the accident was Beth's fault. John finds Beth and, hours later, Evelyn's deceased body. Back in the present, Governor Lynelle spends the night with John on the anniversary of Evelyn's death, upsetting an already irritated Beth. On the reservation, Kayce and his son Tate come across a suspicious white van. Kayce looks inside, sees a young girl bound with tape and shoots two men as they emerge. He restores the girl to her family and then returns with the girl's father, Danny, to burn and bury the two bodies. Jamie tells John he wants to run for Attorney General. John supports him, but also tells Beth he wants her to run for the state assembly. She doesn't wish to but doesn't say no. Rainwater is arrested for stealing John's cattle. He returns them but tells John that when he dies, Rainwater will tear down his fences and take back the land. Monica's sister-in-law commits suicide, distraught over her husband's death.",
+          "airDate": "2018-07-11",
+          "still": "https://image.tmdb.org/t/p/original/hRlpgIwvu1NkHVRE7EKMzx3ITaX.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/hRlpgIwvu1NkHVRE7EKMzx3ITaX.jpg",
+            "https://image.tmdb.org/t/p/original/dXjwD2gGcL1KKY5hZxKxdNXHqqM.jpg",
+            "https://image.tmdb.org/t/p/original/8myssNe6L8ufJWXgihxP1BlDrrX.jpg",
+            "https://image.tmdb.org/t/p/original/aMF4rHA2VYG3DrmscFTFWtSuxYS.jpg",
+            "https://image.tmdb.org/t/p/original/pEV9gv8YFUOgUWJk1PfKi5x4i4p.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "The Long Black Train",
+          "overview": "A secret about John comes to the surface. Beth shows Jenkins a rough night out. Quality time with Tate leads to a close call.",
+          "plot": "Thomas Rainwater and a work crew discover the graves and bones of the bodies buried by Kayce and Danny. A ranch worker is concerned that John should not be riding horses, and it is revealed that he has colon cancer and recently had surgery to have part of his colon removed. Kayce arrives at the ranch with Tate. Tate and John go to the river, where they gather wood to start a fire. Tate falls into the river, and John rescues him. Jimmy struggles with finding his footing in the ranch, and gets into a fight with a ranchhand named Fred. Rip comes to Jimmy's rescue and tells Fred and other men that if they ever hit a branded man, they will die. Later, John tells Rip to take Fred to the \"train station\", a euphemism meaning to kill him and dump his body where it will never be found.",
+          "airDate": "2018-07-18",
+          "still": "https://image.tmdb.org/t/p/original/vGemvoRc2nFMpnRFNqWI2EjkPE6.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/vGemvoRc2nFMpnRFNqWI2EjkPE6.jpg",
+            "https://image.tmdb.org/t/p/original/hdywspTKUK4YcLIRqYjNJEjF44z.jpg",
+            "https://image.tmdb.org/t/p/original/udWPOttHADK8HlZ6fwbqjdavwhW.jpg",
+            "https://image.tmdb.org/t/p/original/t0hl8ZeWJfWm9QCcRjbFO3qWMae.jpg",
+            "https://image.tmdb.org/t/p/original/vqI1eDD9akr5jxQJtUDrVyAakQ0.jpg",
+            "https://image.tmdb.org/t/p/original/hasO0hiPnLRJP7HYa3bsdTtAVz9.jpg",
+            "https://image.tmdb.org/t/p/original/c8nurTAbL1hxzup7uKxsmQAHofi.jpg",
+            "https://image.tmdb.org/t/p/original/4Ez3gvWztiQIC2g3q4T8AIs6hFg.jpg",
+            "https://image.tmdb.org/t/p/original/pmEBJwI3Rf9Yvj6pV1HBjXpUzVm.jpg",
+            "https://image.tmdb.org/t/p/original/5ldGsP69Mqi0zI27K102GpummyT.jpg",
+            "https://image.tmdb.org/t/p/original/wBMqJO1knxkD73Wx7LALE9J2w8y.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Coming Home",
+          "overview": "As Kayce feels the heat from tribal police, Jamie works some legal magic. Rip recruits a new cowboy for the ranch, and a beaten-down Jimmy begins to find some respect. John makes a play to keep Kayce and Monica close to home.",
+          "plot": "As Kayce feels the heat from the tribal police, Jamie works some legal magic. Rip recruits another ex-convict, Walker, as an extra cowboy for the ranch, and a beaten-down Jimmy begins to find some respect. John makes a play to keep Kayce and Monica close to home.",
+          "airDate": "2018-07-25",
+          "still": "https://image.tmdb.org/t/p/original/ehPPF0uko10BRjosnHZ0XLd8eyf.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ehPPF0uko10BRjosnHZ0XLd8eyf.jpg",
+            "https://image.tmdb.org/t/p/original/vVMys9xHqfiropcrksmn4NxCpPn.jpg",
+            "https://image.tmdb.org/t/p/original/siw8dscbew03XSX6boMidYeuDqP.jpg",
+            "https://image.tmdb.org/t/p/original/kcJNM6GLE5Gs4LPs4bwFT0dhiQ1.jpg",
+            "https://image.tmdb.org/t/p/original/sTqwOTMHDcFiFLf6dO6gZfZIkhp.jpg",
+            "https://image.tmdb.org/t/p/original/jR0RgDKnhvApztduEB5ik5qMB2k.jpg",
+            "https://image.tmdb.org/t/p/original/oGpK42WAapiS56kXGSa6HaVDLj4.jpg",
+            "https://image.tmdb.org/t/p/original/mGMWuB7xHkllyTnlbgD9PieK3ST.jpg",
+            "https://image.tmdb.org/t/p/original/rVhblak63WqX2E8A07WBp6CBI6X.jpg",
+            "https://image.tmdb.org/t/p/original/9vhH5aPVO4cpvrhICLnTxchUSOd.jpg",
+            "https://image.tmdb.org/t/p/original/lGN5VgJZQXNenjwKlqdfStEO8UV.jpg",
+            "https://image.tmdb.org/t/p/original/hoKXIZWWImczO9rjuU3yClDDxe4.jpg",
+            "https://image.tmdb.org/t/p/original/r25yivofkeFVQ1JRM3IObpVfUcU.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "The Remembering",
+          "overview": "John reveals a family secret to Monica, Jamie ramps up his political career, Beth pushes John too far, Kayce and Rip butt heads, and a new partnership threatens Yellowstone.",
+          "plot": "A new partnership between developer Dan Jenkins and Chief Rainwater threatens John and the Yellowstone ranch. Jamie ramps up his political campaign with the aid of a female organizer. Rip confronts Kayce about cleaning up his messes. Monica gets punched in the head while trying to break up a fight at her school.",
+          "airDate": "2018-08-01",
+          "still": "https://image.tmdb.org/t/p/original/31jdlZMWsdYtpPVqjbkiybzCx3W.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/31jdlZMWsdYtpPVqjbkiybzCx3W.jpg",
+            "https://image.tmdb.org/t/p/original/hybnnVgZR9aTLG8T6Hyb98vMWf.jpg",
+            "https://image.tmdb.org/t/p/original/zxtCTuAlmNXbJ8EfFZdt8IF2xR4.jpg",
+            "https://image.tmdb.org/t/p/original/3UPP1zIcCsW3guG87nUewUC69K9.jpg",
+            "https://image.tmdb.org/t/p/original/9febX8CMTLuCiaZzbN20RiMi3kS.jpg",
+            "https://image.tmdb.org/t/p/original/uugFPKw6pUw3xk0Ac2ZsE4hjycQ.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "A Monster Is Among Us",
+          "overview": "Rip stumbles upon a dangerous and dire situation. A plan is set in motion designed to squeeze John Dutton and threaten his way of life. Monica begins a tough recovery.",
+          "plot": "John scares away a coachload of Chinese tourists trespassing on the ranch land. Rip stumbles upon a dangerous and dire situation with two hikers who fall to their death after fleeing a bear, and then shoots the bear in self-defense. A plan is set in motion designed to squeeze John Dutton and threaten his way of life. Monica has a slow recovery after brain surgery to relieve a hematoma in her brain. John feels sick after his checkup and ends up vomiting blood.",
+          "airDate": "2018-08-08",
+          "still": "https://image.tmdb.org/t/p/original/1lbIuTepEhS22AOjl35sNFAHf1B.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/1lbIuTepEhS22AOjl35sNFAHf1B.jpg",
+            "https://image.tmdb.org/t/p/original/nJKSjN2j9yez8oMppIG0ACYwzWS.jpg",
+            "https://image.tmdb.org/t/p/original/bleEX9wh0JH0gIK51wKYU8hbbyx.jpg",
+            "https://image.tmdb.org/t/p/original/c77L1I3zMUeI8SYIpPFjY9rXcu7.jpg",
+            "https://image.tmdb.org/t/p/original/iHpjYVjDYdMIEKG0Y5lzlEv67hb.jpg",
+            "https://image.tmdb.org/t/p/original/zdFshXujOXD9oGVpAgpK7uM95Yh.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "The Unravelling (1)",
+          "overview": "A Sheriff’s investigation turns the heat up on Rip. Jamie makes a bold decision about his future and faces the consequences. With the walls closing in, John discovers which family and allies will stand with him and fight.",
+          "plot": "Episode starts with Rip's backstory. Rip undergoes a sheriff's investigation into the deaths of the tourists and the bear killing. Beth enacts a strategy to undermine the developer Jenkins' finances and remove him from the board of his own company. Jamie's unavailability to the family leads John to ask him to drop out from the attorney general race. Monica decides to separate from Kayce. Walker realises that he signed up for the wrong ranch.",
+          "airDate": "2018-08-15",
+          "still": "https://image.tmdb.org/t/p/original/xVsKOtxEy1dhfVOWGgHKq07pAoN.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xVsKOtxEy1dhfVOWGgHKq07pAoN.jpg",
+            "https://image.tmdb.org/t/p/original/xD2B7EC3fNg3SeMFbczZRvNxcba.jpg",
+            "https://image.tmdb.org/t/p/original/AwjUttXtTNr6ZbEhLRwvWX1JpU8.jpg",
+            "https://image.tmdb.org/t/p/original/eX8gBweVnVAgGSuZXTQ8wY2ieJn.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "The Unravelling (2)",
+          "overview": "John discovers his true alliances, Rip searches for answers, Jamie's political career is threatened, Beth takes on a new role, and Kayce returns home.",
+          "plot": "John discovers his true alliances. Rip searches to identify those plotting against the ranch and recruits the help of a female Native American wrangler, Avery, who joins the men living in the bunkhouse. Jamie's political career is threatened by John's cessation of all economic support, and in retaliation he agrees to a newspaper interview about his father. Beth takes on a new role, and Kayce moves into the ranch bunkhouse after Monica's decision to separate from him. Rip, Kayce and Jimmy interrogate Jenkins with the aid of a hanging rope, to reveal the full extent of the plot against the Dutton ranch.",
+          "airDate": "2018-08-22",
+          "still": "https://image.tmdb.org/t/p/original/4T6WlBB05h5elfaP5WXxU0Yf2WC.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/4T6WlBB05h5elfaP5WXxU0Yf2WC.jpg",
+            "https://image.tmdb.org/t/p/original/ehnTIg9DkgIrGg1ujMn1xgXDWw7.jpg",
+            "https://image.tmdb.org/t/p/original/vSthI5vCHD1ypBzFmfQUnQrBHfl.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 2,
+      "name": "Season 2",
+      "airDate": "2019-06-19",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "A Thundering",
+          "overview": "Kayce settles into his new role at the ranch. A damaging article threatens to expose John. Rainwater pitches his new plan to the tribal council.",
+          "plot": "John Dutton is hospitalized after suffering a ruptured ulcer and undergoes emergency surgery. Following his recovery, he reassesses his personal priorities and leadership of the Yellowstone Ranch. Beth Dutton begins maneuvering to protect the family's land and interest by supporting a political challenger to her brother Jamie, whose actions have created tension within the family. She also continues efforts to counter developer Dan Jenkins. Kayce Dutton takes on increasing responsibility at the ranch, leading to friction with Rip Wheeler. The two later cooperate in dealing with a conflict at a local bar. Elsewhere, Thomas Rainwater experiences a symbolic dream that foreshadows a future conflict, while Monica Dutton begins a new role as a college instructor, reflecting her evolving relationship with the Dutton family and ranch life.",
+          "airDate": "2019-06-19",
+          "still": "https://image.tmdb.org/t/p/original/bIduIibBMONcfhadY4PyczM5SMV.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/bIduIibBMONcfhadY4PyczM5SMV.jpg",
+            "https://image.tmdb.org/t/p/original/xlq3bL6HwBi5VEXX0q3vTXWLCB5.jpg",
+            "https://image.tmdb.org/t/p/original/du6B60oZWYNwYxEVOW4D3X39o8J.jpg",
+            "https://image.tmdb.org/t/p/original/4OhESqLsDPco1y2zDnramxcRN6f.jpg",
+            "https://image.tmdb.org/t/p/original/y9UCDTIfaAnNFoFvfJxMdexXCWU.jpg",
+            "https://image.tmdb.org/t/p/original/l6TEefAPbxAS6TuhCz0kcl4WHoH.jpg",
+            "https://image.tmdb.org/t/p/original/fsWiui6x9vKY5OrimUfKJUqWQhr.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "New Beginnings",
+          "overview": "Kayce and Rip come to blows. Beth starts buying up land to protect the ranch. Monica begins a new chapter at the university.",
+          "plot": "John Dutton recovers from surgery after his near-fatal ulcer and is advised to begin swimming therapy. He returns to the ranch, where Kayce starts taking on more responsibility, stepping into a leadership role that creates tension with Rip. Rip, loyal to John, makes a personal sacrifice for the ranch, but his clash with Kayce escalates into a fight. Meanwhile, Beth continues her aggressive campaign against Dan Jenkins and Chief Rainwater, who are working together to undermine the Dutton family.",
+          "airDate": "2019-06-26",
+          "still": "https://image.tmdb.org/t/p/original/c5SoDINMn36IMtl04l3BcPCLwOS.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/c5SoDINMn36IMtl04l3BcPCLwOS.jpg",
+            "https://image.tmdb.org/t/p/original/5TFK7WuY4Xhi506fxBBfM7RqvtP.jpg",
+            "https://image.tmdb.org/t/p/original/4E4o811eTbq5YkN80C9TJlnR7cB.jpg",
+            "https://image.tmdb.org/t/p/original/eN1IBwNQzJPnXM933xpdaU9JzVf.jpg",
+            "https://image.tmdb.org/t/p/original/pwn0sE5LISuTbD6tHOuot49kBm9.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "The Reek of Desperation",
+          "overview": "Rainwater teams up with Jenkins for a big business deal, but powerful new enemies look to block their plans. John and Beth groom a new political candidate.",
+          "plot": "John Dutton begins grooming Kayce to take on more responsibility at the ranch, testing his leadership skills and pushing him toward a managerial role. Rip advises Kayce on how to earn respect from the ranch hands, highlighting the tension between them. Meanwhile, Jamie faces new political challenges when Governor Perry announces that he will no longer run unopposed, as Cassidy Reid enters the race. Rainwater and Jenkins strengthen their alliance by announcing a major investment project, escalating the threat to the Dutton family’s land and influence.",
+          "airDate": "2019-07-10",
+          "still": "https://image.tmdb.org/t/p/original/leeud6E82MArT6l8mTZ4DW5cMpu.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/leeud6E82MArT6l8mTZ4DW5cMpu.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Only Devils Left",
+          "overview": "The Duttons try to figure out who's sabotaging their ranch, and Thomas Rainwater breaks ground on his casino, putting all the ranchers' businesses in jeopardy.",
+          "plot": "John's enemies strike a direct hit on the Yellowstone. John forms an unlikely alliance. Kayce has his first day as a livestock officer.",
+          "airDate": "2019-07-17",
+          "still": "https://image.tmdb.org/t/p/original/733i5nXjoM7o17NzZ4hDX9JqGR6.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/733i5nXjoM7o17NzZ4hDX9JqGR6.jpg",
+            "https://image.tmdb.org/t/p/original/s2E7LsHjwwIbfWg1b48NS50CO7F.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Touching Your Enemy",
+          "overview": "Jamie tries desperately to walk back a previous mistake. Kayce tracks down evidence. Monica and Martin attend a traditional Indian horse relay.",
+          "plot": "Jamie tries desperately to walk back from a previous mistake. Kayce tracks down evidence. Monica and Martin attend a traditional Indian horse relay.",
+          "airDate": "2019-07-24",
+          "still": "https://image.tmdb.org/t/p/original/rqUtVWoKCLbCkp0MhdKLCat3MMN.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/rqUtVWoKCLbCkp0MhdKLCat3MMN.jpg",
+            "https://image.tmdb.org/t/p/original/qWJNzib3DmcO5YTtLIOwibxdRaT.jpg",
+            "https://image.tmdb.org/t/p/original/tkWXAwm3LSwhsq15JH7nAnk8jNk.jpg",
+            "https://image.tmdb.org/t/p/original/ytBvbmyjqntgstF5GX1lreJdgoF.jpg",
+            "https://image.tmdb.org/t/p/original/1IZXzM6LJNytPjeLVk5bXKICXzF.jpg",
+            "https://image.tmdb.org/t/p/original/lLmIV54JH0txWsCO1UKmfJ81DOw.jpg",
+            "https://image.tmdb.org/t/p/original/3weaoMmFH0P1iZL0w9cjBUBADGI.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Blood the Boy",
+          "overview": "Jamie makes a drastic move in order to protect his family, Jimmy takes a shot at a rodeo competition, Walker tries to leave the ranch, and Kayce and John spend quality time with Tate.",
+          "plot": "John prepares to partner with a former pair of foes. Jamie makes a drastic move to protect the ranch. Jimmy takes a shot at a bronco riding competition. Kayce and John take Tate on his first deer hunt.",
+          "airDate": "2019-07-31",
+          "still": "https://image.tmdb.org/t/p/original/lnSFfjTds8EotsduCPfiFqIhFOo.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/lnSFfjTds8EotsduCPfiFqIhFOo.jpg",
+            "https://image.tmdb.org/t/p/original/pCMviVpNB1z5cKeXcPodvtFofDE.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Resurrection Day",
+          "overview": "Jamie is driven to a dark place while grappling with the consequences of his actions, Malcolm threatens Beth, and Monica and Tate move to the ranch with Kayce.",
+          "plot": "Tensions escalate as the Beck brothers become frustrated by the Duttons' unwillingness to play ball. Jamie looks for a fresh start. Tate gets his first horse.",
+          "airDate": "2019-08-07",
+          "still": "https://image.tmdb.org/t/p/original/ruHbcaww7N0WyzMsAZvqBWQpf2t.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ruHbcaww7N0WyzMsAZvqBWQpf2t.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Behind Us Only Grey",
+          "overview": "John and Rip seek revenge, Monica ponders the consequences of her living situation, and Jimmy clears old debts.",
+          "plot": "John and Rip seek revenge. Monica ponders the consequences of her living situation. Jimmy clears old debts to prevent further attacks on his grandfather. The Duttons, Rainwater, and Jenkins put aside their differences to unite against the Becks.",
+          "airDate": "2019-08-14",
+          "still": "https://image.tmdb.org/t/p/original/15Dp9HG797VqU69yjGS4mPWSz2y.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/15Dp9HG797VqU69yjGS4mPWSz2y.jpg",
+            "https://image.tmdb.org/t/p/original/3XJBkM5oaxiwebdC8xG3mifaDDx.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Enemies by Monday",
+          "overview": "The Duttons gear up for a final fight with the Becks. Beth helps Monica out of an uncomfortable situation.",
+          "plot": "The Duttons gear up for a final fight with the Becks. Beth helps Monica out of an uncomfortable situation. Tate is kidnapped by the Becks.",
+          "airDate": "2019-08-21",
+          "still": "https://image.tmdb.org/t/p/original/iF0MhALKhxmcMMMKVTGOj68vkqt.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/iF0MhALKhxmcMMMKVTGOj68vkqt.jpg",
+            "https://image.tmdb.org/t/p/original/eLK0SeuQXC669FrG0SsDf9PMVXf.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Sins of the Father",
+          "overview": "The feud with the Becks comes to a head as the Duttons scramble to save one of their own.",
+          "plot": "John is reminded of his father's last days as the feud with the Becks comes to a head in an attempt to save Tate. Rip receives an inheritance of sorts. *This was Dabney Coleman's final role before his death on May 16, 2024.",
+          "airDate": "2019-08-28",
+          "still": "https://image.tmdb.org/t/p/original/uyMpqbsXA2OIIQ7M6coNomzT0QZ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/uyMpqbsXA2OIIQ7M6coNomzT0QZ.jpg",
+            "https://image.tmdb.org/t/p/original/wpkhkB7ZH9T2CMTylAWLEfP5yfn.jpg",
+            "https://image.tmdb.org/t/p/original/j7V5rCpUcASbycSLquYcmtBTAWw.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 3,
+      "name": "Season 3",
+      "airDate": "2020-06-21",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "You're the Indian Now",
+          "overview": "John makes a deal with Governor Perry, Beth is uneasy about a hospitality company's presence near the ranch, Monica asks for a favor, and Jamie gets a new opportunity.",
+          "plot": "John meets with the Governor and says he will resign as livestock commissioner and decides to name Jamie as his successor. Kayce decides to build a camp for the summer so they can keep an eye on the herd. Monica chastises her students for their lack of interest in the world in which they live. Beth and Chief Rainwater both find out about a new threat in the valley.",
+          "airDate": "2020-06-21",
+          "still": "https://image.tmdb.org/t/p/original/5wjIsTMk2pl9a0gIVapO7eXNzZL.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/5wjIsTMk2pl9a0gIVapO7eXNzZL.jpg",
+            "https://image.tmdb.org/t/p/original/2pzfpUXFlRn0cOtSqDaZ95l6d44.jpg",
+            "https://image.tmdb.org/t/p/original/busmmO01lrqBonm1zkzOh1C4Xhy.jpg",
+            "https://image.tmdb.org/t/p/original/1zLPkxkeEDQFgU41WsS6C0oMm6M.jpg",
+            "https://image.tmdb.org/t/p/original/wSBx2LtZU4ikc3cPP3ZUlS3ey8d.jpg",
+            "https://image.tmdb.org/t/p/original/2Bv37OTC6joMouX4s8Ze2RBP2aL.jpg",
+            "https://image.tmdb.org/t/p/original/4ww9Bf6JTMqUTRcnxrb7kx2W6JP.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Freight Trains and Monsters",
+          "overview": "The Duttons open camp, which proves to be the best therapy for Tate. Jamie and Hendon agree to teach a lesson to two criminals, but it does not go as intended. Beth learns more about Roarke's business plans. Teeter joins the bunkhouse.",
+          "plot": "Life continues at the summer camp while Jamie begins his new job as Livestock Commissioner. Beth pays a visit to the enigmatic Roarke Morris and learns of his ultimate plans for the valley. Teeter joins the ranch as a new female ranch hand. John reminisces about past lives. Jamie is faced with a problem that could rock the very foundations of his career and future.",
+          "airDate": "2020-06-28",
+          "still": "https://image.tmdb.org/t/p/original/6E2F8x51HSTVDLOmyHaGDLmUkAi.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/6E2F8x51HSTVDLOmyHaGDLmUkAi.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "An Acceptable Surrender",
+          "overview": "Jamie plays cover-up and damage control with Hendon. Governor Perry hears a $6 billion pitch for a development right on the Yellowstone, and later makes some political maneuvers. Jimmy competes in a rodeo competition.",
+          "plot": "Jamie seeks to fix the problem of Agent Hendon's murderous actions by concocting a story that will save everyone involved, while earning Jamie the respect of the ranchers he represents. Ellis Steele approaches Governor Perry and unveils his plans for placing an airport in the middle of the Yellowstone Ranch, pressuring her to invoke eminent domain for the billions of tax revenue the new resort will earn for Montana. Jimmy decides to pursue his dreams of rodeo, while John and Governor Perry discuss saving the ranch by moving Jamie into the position of interim Attorney General and appointing Kayce as Livestock Commissioner.",
+          "airDate": "2020-07-05",
+          "still": "https://image.tmdb.org/t/p/original/zdzfEoNcZqjlqK5wr1pgZa2ygLl.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/zdzfEoNcZqjlqK5wr1pgZa2ygLl.jpg",
+            "https://image.tmdb.org/t/p/original/fS5gYhIma3nv6xuQ4iGGAe1qlBj.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Going Back to Cali",
+          "overview": "Jimmy gets help with his recovery, Thomas Rainwater obtains an ally, Beth takes advantage of an opportunity, Gov. Perry talks to Kayce, and uninvited guests visit Yellowstone.",
+          "plot": "Jimmy recuperates from his rodeo accident with a little help from Mia. Beth leaks information to the press about Market Equities' unsecured leasing plans to develop the valley, thus causing their stock prices to plummet. Thomas Rainwater enlists the help of an old adversary to battle Ellis Steele and his horde of developers. Governor Perry pays a visit to the summer camp to convince Kayce to become Livestock Commissioner. Beth reveals to Rip that she cannot bear children. California bikers are taught a lesson they won't soon forget about trespassing on the Dutton Ranch.",
+          "airDate": "2020-07-12",
+          "still": "https://image.tmdb.org/t/p/original/4npiWYsNkRmIZPH2ZBs1WW69I6V.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/4npiWYsNkRmIZPH2ZBs1WW69I6V.jpg",
+            "https://image.tmdb.org/t/p/original/6UPEYre0iVXgcQ9liJpT1zQhYHx.jpg",
+            "https://image.tmdb.org/t/p/original/qwPhcF4CHteg28H78iiMYAHN6rE.jpg",
+            "https://image.tmdb.org/t/p/original/3uGrlKHYBHKvOfSzLTBXbFF9P8c.jpg",
+            "https://image.tmdb.org/t/p/original/3SXPEwtQ2NKyE8hSwPaRj2PHjVB.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Cowboys and Dreamers",
+          "overview": "Beth is haunted by her past, Jamie assumes a new role, Kayce helps a family in need, John and Thomas Rainwater find common ground, and Beth's battle with Roarke intensifies.",
+          "plot": "A flashback reveals the origin of Beth's intense hatred toward Jamie: when they were teenagers, she asked him for help getting an abortion when she became pregnant. He took her to an abortion clinic on a reservation, the only clinic he could find that wouldn't notify her father, but he didn't tell her that the clinic would also sterilize her, its usual policy for underage abortion patients. Thomas Rainwater and John meet to discuss their common enemies and how best to combat them. Kayce, as new Livestock Commissioner, takes a risk to help a local family after the father's suicide. Beth continues to come after Roarke by shorting his company's stock. Rip and the wranglers get into an altercation with Wade Morrow, an old adversary of John Dutton.",
+          "airDate": "2020-07-19",
+          "still": "https://image.tmdb.org/t/p/original/aKJBycwHMcU63uA7ZCy3M2gp1sh.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/aKJBycwHMcU63uA7ZCy3M2gp1sh.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "All for Nothing",
+          "overview": "Kayce and Monica help search for a missing Indigenous woman, Market Equities presents Jamie with a lucrative offer, and John finds out about Beth and Jamie's secret.",
+          "plot": "Wade Morrow and John Dutton confront one another over an old feud. A missing girl on the Broken Rock Indian Reservation sparks a massive search that results in finding the young girl murdered, fostering a newfound commitment from Monica for her people. Mia and Laramie shake up the bunkhouse with a little late night buffalo riding. Willa Hays, CEO of Market Equities, makes Jamie an obscenely lucrative offer for 50,000 acres of the Dutton Ranch. Beth confesses to her father what Jamie did at the abortion clinic when they were teenagers, thus widening the schism in the family.",
+          "airDate": "2020-07-26",
+          "still": "https://image.tmdb.org/t/p/original/uSXMjJ8gBD2OWagjXAdBYWCgbKp.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/uSXMjJ8gBD2OWagjXAdBYWCgbKp.jpg",
+            "https://image.tmdb.org/t/p/original/wR2ok1SpP3isOZXcBRvIqclZOjk.jpg",
+            "https://image.tmdb.org/t/p/original/fRWOANl7BbRUJq4QDYQVz5T6nwU.jpg",
+            "https://image.tmdb.org/t/p/original/dkmQfFjpQrISJd8KLKe0RCqmPW8.jpg",
+            "https://image.tmdb.org/t/p/original/tdJw5zyjZxa37SaZU3Dtp2gZ5vn.jpg",
+            "https://image.tmdb.org/t/p/original/jExi8LJKzlxWSyvvIrp6pDOXR2E.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "The Beating",
+          "overview": "Kayce searches for answers following a theft on the ranch, Jamie learns a shocking family secret, John issues a warning, and Beth takes matters into her own hands.",
+          "plot": "Cattle thieves send Kayce and his crew on a statewide hunt for the missing livestock. Rip has a very bad day with Jimmy and Mia. Beth and Angela Blue Thunder align their common causes against Market Equities. John gives Wade Morrow's son a beating in a local diner. Beth asks Rip to marry her. Jamie discovers a secret that has been kept from him since childhood.",
+          "airDate": "2020-08-02",
+          "still": "https://image.tmdb.org/t/p/original/p9hVvcRvytFx2ht4vIsJ4czXAbC.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/p9hVvcRvytFx2ht4vIsJ4czXAbC.jpg",
+            "https://image.tmdb.org/t/p/original/5haf0U7u3fgdht8IEsrTWhOmscf.jpg",
+            "https://image.tmdb.org/t/p/original/191iYj3bZyN978eoImeKJRETbUJ.jpg",
+            "https://image.tmdb.org/t/p/original/i3SUnSxflIGWL7W3AMdwZJG2pAv.jpg",
+            "https://image.tmdb.org/t/p/original/9Qy8jCHrfkkPdJt9Bas0nH7NzAa.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "I Killed a Man Today",
+          "overview": "Kayce gains the local ranchers' appreciation, Beth makes a gamble, Monica steps into a dangerous situation, Wade sends John a message, and John keeps a promise.",
+          "plot": "John and Tate enjoy a little horsemanship. Jamie convinces Kayce that Market Equities' offer is the only way to avoid losing it through eminent domain. Willa Hays and Beth play tug-of-war with each other's companies' stock. Monica departs on a dangerous mission to bring justice to Native women. Beth unsuccessfully attempts to convince John to sell off part of the ranch. Wade Morrow sends a message to John by exacting revenge upon Colby and Teeter.",
+          "airDate": "2020-08-09",
+          "still": "https://image.tmdb.org/t/p/original/8qyRDVREHSRWgi7FiBY8urtfnPt.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/8qyRDVREHSRWgi7FiBY8urtfnPt.jpg",
+            "https://image.tmdb.org/t/p/original/s9fImV98mgP5Mdv0bgQFGvaj8oe.jpg",
+            "https://image.tmdb.org/t/p/original/kLkwD2VHQkH08trHDutHtVEJexH.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Meaner Than Evil",
+          "overview": "Rip and Kayce must work together to solve an unresolved issue, Beth's plan backfires, Jamie searches for answers about his past, and the ranch hands seek revenge.",
+          "plot": "Walker is dragged back to the fold after Rip and Lloyd spot him performing in a bar in Dillon. Beth is fired from her job at Schwartz & Meyer by Willa Hays, but vows revenge. Jamie confronts his biological father. Rip and some of the wranglers lay a trap for Wade Morrow and kill him, but not before cutting the Yellowstone brand from his chest. Rip forces Walker to do the cutting to prove his loyalty to the brand. The bodies of Morrow and his son are \"taken to the train station\" to be dumped.",
+          "airDate": "2020-08-16",
+          "still": "https://image.tmdb.org/t/p/original/x2AI2BNDF3fRZ2XcAveg8UtNWrS.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/x2AI2BNDF3fRZ2XcAveg8UtNWrS.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "The World Is Purple",
+          "overview": "Jamie calls a meeting, Beth retaliates, Thomas Rainwater makes John an offer, Mia gives Jimmy an ultimatum, and Kayce receives a surprising endorsement.",
+          "plot": "In speaking with his biological father, Jamie realizes certain truths about his life that will set him on a different path. Willa tasks Roarke with more dirty deeds against the Duttons. Mia confronts Jimmy about the brand on his chest and challenges him to return to rodeo. All the players sit down at the negotiating table with John's back clearly against the wall. Angela Blue Thunder admonishes Chief Rainwater for being a slave to the white man's rules and tells him that the land must be retaken by force if necessary. All-out war is unleashed on the Dutton family as they are targeted one-by-one for assassination.",
+          "airDate": "2020-08-23",
+          "still": "https://image.tmdb.org/t/p/original/6alLSU9sHg9TmdThaqry7SwVD8w.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/6alLSU9sHg9TmdThaqry7SwVD8w.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 4,
+      "name": "Season 4",
+      "airDate": "2021-11-07",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Half the Money",
+          "overview": "The coordinated attack on the Duttons continues as everyone searches for answers on who is responsible, and Rip delivers on a promise.",
+          "plot": "After being shot on a remote highway, John leaves a message in the dirt that the shooters are in a blue van, and is still breathing when Rip arrives. Kayce fights back against his attackers and starts a police chase of the blue van, intercepting it and killing all the shooters during a violent firefight. John is rushed to a hospital by helicopter and is barely stable while in intensive care. Beth survives the bombing of her office building and she confronts Jamie about his apparent complicity in arranging the shooting and her desire to take revenge against him. Rip murders Roarke as an act of retaliation.",
+          "airDate": "2021-11-07",
+          "still": "https://image.tmdb.org/t/p/original/4zzPd71GP52hRFie9TTaUp8pn0V.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/4zzPd71GP52hRFie9TTaUp8pn0V.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Phantom Pain",
+          "overview": "The Yellowstone recovers and begins planning revenge. Rainwater receives an offer from a newcomer. Rip gets a surprise.",
+          "plot": "John is eventually released from the hospital though still shaken by the health consequences of his multiple gunshot wounds. Kayce also recovers from the wounds he suffered during the firefight. While at the hospital seeing to her father's release, Beth takes interest in a 14-year-old boy who witnesses the death of his heroin-addicted father and brings him home to see Rip, who is initially reluctant to have him around but eventually takes him under his wing. Meanwhile, Jamie buys land with the help of his biological father, Garrett.",
+          "airDate": "2021-11-07",
+          "still": "https://image.tmdb.org/t/p/original/dfg3wQUFC8maWeKWJd8OOuZmXES.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dfg3wQUFC8maWeKWJd8OOuZmXES.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "All I See Is You",
+          "overview": "John seeks revenge with help from some unexpected allies. Kayce solves a problem with an unconventional method. Beth gives Carter his options. Jimmy prepares for a change.",
+          "plot": "John and Kayce continue to hunt down the members of the multiple hit squads contracted to kill their family. The results are effective and bloody. Some of the captured perpetrators are bound, tortured, and interrogated about the hit squads. As the Duttons make progress in finding all the culprits, John deals with one of them in a one-on-one, midnight shootout with handguns, during which he successfully dispenses with his enemy.",
+          "airDate": "2021-11-14",
+          "still": "https://image.tmdb.org/t/p/original/87RfT1VHJyVqIL4zeW0KVIbVNrz.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/87RfT1VHJyVqIL4zeW0KVIbVNrz.jpg",
+            "https://image.tmdb.org/t/p/original/3zBgCUiOS0aD1dxGLHpKprAFELK.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Winning or Learning",
+          "overview": "Jamie receives some surprising news. Beth receives an offer. Jimmy settles in on the road. Tensions boil over in the bunkhouse.",
+          "plot": "John takes Kayce to his favorite place at the ranch and tells him that he must test Jamie's loyalty to the family. He hands Kayce the file given to him by Mo and Rainwater. It identifies the apparent leader of the multiple hit-squads hired to kill his family—an imprisoned felon named Riggins. John instructs Kayce to take the file to Jamie and ask him to open the prison file on Riggins for more information; if Jamie balks or delays in any way, John will assume that Jamie is selling out the family. Kayce gets Jamie to agree to order the prison files to be released. When Jamie receives the prison file for Riggins, he is visibly dismayed to learn that one of Riggins' previous cellmates was an ex-convict named Garrett Randall, Jamie's own biological father.",
+          "airDate": "2021-11-21",
+          "still": "https://image.tmdb.org/t/p/original/sRH2qBsaVPuluoUWN5nzhQF6W0o.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/sRH2qBsaVPuluoUWN5nzhQF6W0o.jpg",
+            "https://image.tmdb.org/t/p/original/p6kQxYRWguqUD9JEgUhoxluPLKZ.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Under a Blanket of Red",
+          "overview": "John and Kayce are forced to deal with some newcomers in town. Lloyd is in the doghouse with Rip, and finds purpose in teaching Carter. Jamie seeks information about his father.",
+          "plot": "John discovers that Beth has slept over at the house without telling anyone. She tells John that she is planning to leverage the offer from Market Equities and Schwartz & Meyer against both of them in an attempt to protect the ranch. At the Livestock Commission, Kayce is surprised by a random protest from an animal rights group against what they see as neglect by local ranchers. As they are arrested, John's attention is caught by the head protester, Summer; he bails her out and offers her a tour of the ranch. Jamie offers formal immunity for Riggins in prison, and reduction of sentence to soft labor in prison if he gives information about his father, Garrett Randall. When Jamie goes to confront his father with his findings, he is surprised to find his ex-girlfriend Christina walking up to him with a child, in front of Garrett. She tells Jamie to meet his own son.",
+          "airDate": "2021-11-28",
+          "still": "https://image.tmdb.org/t/p/original/pWoIox9RjQCE4nGoQ5KT5aDxXb2.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/pWoIox9RjQCE4nGoQ5KT5aDxXb2.jpg",
+            "https://image.tmdb.org/t/p/original/qzElV79zBh9FFEaaoortHtu35Kg.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "I Want To Be Him",
+          "overview": "Beth confronts her father's houseguest. Kayce and his family search for a new home. Jamie seeks answers from Garrett and Lloyd loses his cool.",
+          "plot": "John's invitation to Summer to tour the ranch after the animal-rights protest turns into an overnight stay. Beth gets upset when she discovers that her father spent the night with a new love interest. Jamie confronts Garrett about the assassination attempt against John by holding a loaded handgun in his face. Garrett tells Jamie to shoot if he completely believes that John did not act in his own interest, over-and-above Jamie's, when it came to protecting John's ranch. He embraces Jamie and the two seem to have reconciled for the moment. Lloyd continues to have troubles at the bunkhouse and stabs his rival in the side of the chest with his knife. His victim is patched up and John tells Lloyd that he is on final notice for either staying or leaving the ranch forever. Rip decides that Lloyd must have a final knock-down fight with his bunkhouse rival with no holds barred. Meanwhile, Beth confronts Jamie again telling him that he is still on her notice for being a disloyal member of the family.",
+          "airDate": "2021-12-05",
+          "still": "https://image.tmdb.org/t/p/original/5MJ0hBn4AVeJmUxNtEX8MXqzd1i.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/5MJ0hBn4AVeJmUxNtEX8MXqzd1i.jpg",
+            "https://image.tmdb.org/t/p/original/y7AbYqNfRsN8iENSz6wbl2ngL8z.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Keep the Wolves Close",
+          "overview": "John is put in an awkward position by Gov. Perry. Carter works to earn back Beth's trust. Jamie is in for a big surprise.",
+          "plot": "Kayce is still searching for the horses reported as stolen that are still missing. Jamie continues bonding with his newfound son, his returned ex-girlfriend Christina, and his father Garrett. Garrett asks Christina if she'll help organize Jamie's bid for State Governor. Beth goes to her new office and discovers that the plans to renovate Yellowstone and its surrounding area are far more advanced than she ever suspected. John's sometimes love-interest, Governor Lynelle Perry, comes to visit him at the ranch to tell him that she is running for the U.S. Senate, and that she is ready to endorse Jamie for Governor. John expresses grave doubts about Jamie's loyalty and competence to be Governor, and tells her that he may end up running for Governor himself. Later, John confirms with Beth his suspicions about Jamie and his own plans to run for Governor. Jamie thinks that he is ready to accept Governor Perry's endorsement for his own campaign, when suddenly she announces publicly that she is endorsing John as her chosen candidate for the new Governor instead of Jamie.",
+          "airDate": "2021-12-12",
+          "still": "https://image.tmdb.org/t/p/original/f3Jmviq564uG49edT0GO8717flw.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/f3Jmviq564uG49edT0GO8717flw.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "No Kindness for the Coward",
+          "overview": "Tensions escalate with the protestors, but Beth has a plan. Jimmy and Emily get closer. Monica and Kayce share a special moment.",
+          "plot": "Jamie is distraught at the news that the Governor has endorsed John to run for office instead of him as was promised. Garrett and Christina counsel him to spurn the endorsement, and that John's old-fashioned message will not help him with voters, which boosts Jamie's confidence. Beth's work at Market Equities puts her in charge of dealing with a large group of protesters at the building site for the new airport. John and Rip are heading for a meeting with the sheriff to discuss the convict in prison, whom John believes masterminded the assassination plot against him. When they reach the diner, John and Rip see that a hold-up is in progress. After a bloody shoot-out in the diner, John and Rip survive and all of the would-be robbers are dead. The sheriff is wounded and also dies in the attack. Seeing that he was trying to call his daughter, John is left to relay to her that her father has just died in the line of duty.",
+          "airDate": "2021-12-19",
+          "still": "https://image.tmdb.org/t/p/original/7YkqYb4d0z3m188dcRrgtzyNuEz.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/7YkqYb4d0z3m188dcRrgtzyNuEz.jpg",
+            "https://image.tmdb.org/t/p/original/kzlTsCDOx9dy3YpuMSBiZycR8Bq.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "No Such Thing as Fair",
+          "overview": "John and Beth squabble. Jimmy has an important decision to make. Kayce begins a new quest. Jamie realizes Garrett's past might affect his own future.",
+          "plot": "Jamie is dismayed about John's campaign for Governor, but Christina tells him John's old-fashioned message has no lasting campaign value. Jamie tells her Garrett did hard time for murdering his own wife, Jamie's mother; Christina advises him to distance himself from Garrett for the sake of his campaign. Kayce tells Rainwater and Mo that he wishes to take the warrior initiation rites of Monica's tribe, and they agree to arrange it. John gets a call from Summer that she is in jail for the airport protest, charged for assaulting the arresting officer. On his way to Summer's plea bargain meeting, John spots Garrett having breakfast and they exchange bitter words. When John gets to Summer's meeting, he finds out Beth was behind the arrest of the protesters. Beth is distraught as John voices his disappointment and threatens to kick her out of the house. In the mountains by the ranch, Kayce is taken by Mo and Rainwater to the tribal ritual initiation site where he must endure the outdoor elements for four days without food, water or help.",
+          "airDate": "2021-12-26",
+          "still": "https://image.tmdb.org/t/p/original/ggDJ7uDgwdw0jlHAKQjh4NEwLxh.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ggDJ7uDgwdw0jlHAKQjh4NEwLxh.jpg",
+            "https://image.tmdb.org/t/p/original/ovYu0FaLE9Z3jpg94R129OeHki5.jpg",
+            "https://image.tmdb.org/t/p/original/kOUT0F34ONs8OajOtu9yqsf1Z2g.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Grass on the Streets and Weeds on the Rooftops",
+          "overview": "To the Duttons, family is everything. However, newfound truths threaten that bond. Jimmy comes home, and has important decisions to make. Beth takes family matters into her own hands.",
+          "plot": "Rip convinces Beth to fully apologize to John, which he accepts. John clears all of Jimmy's debt, allowing him to move to Texas. At Market Equities, Beth is confronted by the board chairman who fires her and threatens to bring a major lawsuit against the ranch. Later, Beth kidnaps a Catholic priest to perform the marriage ceremony with Rip. John tries to get Summer free, but the judge decides to sentence her. Kayce's tribal initiation rites lead to nightmares and unpleasant flashbacks, causing him to believe his marriage to Monica is ill-fated. Beth visits Riggins in prison and gets him to admit he was hired by Garrett to kill the Duttons, and that Jamie knew about it. She then confronts Jamie at gunpoint, forcing him to kill Garrett and dispose of his body, using evidence to blackmail him. Without relaying the details, Beth tells John that she now has Jamie under her control.",
+          "airDate": "2022-01-02",
+          "still": "https://image.tmdb.org/t/p/original/odiFu6TV6D7UEa9NK7aedzlH9BP.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/odiFu6TV6D7UEa9NK7aedzlH9BP.jpg",
+            "https://image.tmdb.org/t/p/original/2zLJ4PLqkOtzVZ9UWzKgGedO93w.jpg",
+            "https://image.tmdb.org/t/p/original/qTTy4LJxYuzgmfAyEpIJXn8Pb9.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 5,
+      "name": "Season 5",
+      "airDate": "2022-11-13",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "One Hundred Years Is Nothing",
+          "overview": "John is sworn in as governor of Montana, settles into the powers of his office and makes bold moves to protect the Yellowstone, and the bunkhouse and the Duttons enjoy the Governor's Ball.",
+          "plot": "John is sworn in as Governor of Montana. Beth and Jamie have a stare down. Market Equities CEO Caroline Warner, certain that John's election spells the death of the airport and resort, summons corporate raider Sarah Atwood to Montana. Governor Dutton reconfirms he didn't want the job, he just wants to preserve what makes Montana special. He announces his first official action is to cancel the funding for the Paradise Valley Airport Project and surrounding commercial developments. Night falls as the stolen horses are corralled and wait to be picked up. Kayce calls Monica to update her on what's happening. She appears to be ready to give birth any minute even though it's three weeks before her due date. Kayce's worried about her driving and says he'll have an ambulance meet her on the road. Kayce leaves and heads out with the horses. Monica crashes the car on the way to the hospital and loses the baby. Tate reveals his mom and dad named the baby John.",
+          "airDate": "2022-11-13",
+          "still": "https://image.tmdb.org/t/p/original/pLHvzY7Q7TFDtvvRuEu6I80m410.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/pLHvzY7Q7TFDtvvRuEu6I80m410.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "The Sting of Wisdom",
+          "overview": "John makes a passionate speech to the state of Montana, a formidable new opponent from Market Equities arrives on a private jet, and the cowboys on the Yellowstone deal with a new problem.",
+          "plot": "Kayce and Monica decide to bury their dead son at the ranch. John appoints Beth as his chief of staff to stop the airport construction, which Jamie warns could lead to a lawsuit, but Beth finds a zoning loophole. Lynelle warns John to find a political solution to keep his land safe. When the ranch hands find a dead cow in the fields, Rip suspects wolves and has ranch hands kill the 5 wolves responsible but discovers they are wearing GPS tracking collars from Yellowstone Park, forcing them to dispose of the bodies and imitating pack movements away from the ranch towards a river, where they dispose of the trackers. Despite being warned, John makes Jamie deliver the executive order revoking rights against Market Equities, who retaliate with cease-and-desist orders. In a flashback, John finds dead animals around a stream on his property and discovers utility workers spraying an EPA-approved herbicide that seeps into the water. The ranch hands attack the foreman responsible, vandalize the equipment, and spray his house with the deadly weed killer.",
+          "airDate": "2022-11-13",
+          "still": "https://image.tmdb.org/t/p/original/gAVvcD1NbX2iZJHHYWQNAF9Gucb.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/gAVvcD1NbX2iZJHHYWQNAF9Gucb.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Tall Drink of Water",
+          "overview": "Beth heads to Salt Lake City to take care of unfinished business, a trap's set for Jamie, Kayce makes an important decision for his family, and Thomas Rainwater deals with mounting pressure.",
+          "plot": "Law enforcement officials investigate the missing wolves and question Rip, then insist he ride out with them to track the wolves. They go to the spot where the wolves were killed but the land has been plowed, removing all evidence. Talking with members of Monica's tribe, Kayce and Monica discuss how they're going to say goodbye to their son's spirit. Jamie arrives at his office where he's been served by Sarah Atwood. Sarah appeals to Jamie financially, believing she knows he knows he's made a mistake in canceling the lease, then invites him to dinner. In Salt Lake City, Beth offers up her controlling shares in Schwartz & Meyer to Market Equities' rival, but will keep the Montana real estate. She does so under the guise of relinquishing her power because Equities will be coming after her stake in a lawsuit. The rival company signs the deal, much to Beth's delight, allowing her to block Equities from building on the ranch. Beth, Rip, Carter and the ranchers celebrate at a bar in Bozeman. Another woman starts flirting with Rip then unwisely approaches an angry Beth, who breaks a bottle over her head. A bar brawl ensues, the police arrive and Sheriff Ramsey charges Beth with aggravated assault.",
+          "airDate": "2022-11-20",
+          "still": "https://image.tmdb.org/t/p/original/VAQmK1Fr6NKkPwLSsWkCzDsEeS.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/VAQmK1Fr6NKkPwLSsWkCzDsEeS.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Horses in Heaven",
+          "overview": "John makes swift changes at the Capitol, the venom between Jamie and Beth reaches a boiling point, Rip updates John on his solution to the wolves, and the Yellowstone cowboys brand calves.",
+          "plot": "John decides to fire his policy staff, while Jamie is forced to help get Beth out of jail and convince the woman that she attacked to not go forward with charges but was unable to get her off the disorderly conduct, for which she is given community service. When Beth discovers Jamie has a son, she becomes infuriated and swears to take his child away from him. Kayce and Monica bury their child in the ranch's family cemetery, following her Native American traditions. Afterward, John comforts Monica, sharing a personal story that seems to bond them. John commutes Summer's sentence after a year of time-served and becomes her supervisor so she can help him fight the upcoming wolf court case. Jamie meets Sarah Atwood at a hotel bar and ends up having sex with her, while Beth listens from a distance. She finds Sarah's license and discovers it's fake, but before she can investigate further, has a tense encounter with Summer.",
+          "airDate": "2022-11-27",
+          "still": "https://image.tmdb.org/t/p/original/xrda67clIjyw4ERpy72uZ9DmVm0.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xrda67clIjyw4ERpy72uZ9DmVm0.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Watch 'Em Ride Away",
+          "overview": "John tells Clara to cancel his Capitol meetings so he can brand cattle with the Yellowstone cowboys, and Beth's disdain for a perceived rival reaches a boiling point.",
+          "plot": "John is assessing his new position as Governor and what he sees as his primary responsibilities to saving the Yellowstone ranch. He changes tactics politically and clears his appointments for two weeks, so he can camp with his many cowboy friends to see to the needs of the ranch. John tasks his office to begin planning an extravagant public event at his home to increase his political base, whom he plans to use to save his ranch from hostile market-based takeovers. Beth is livid with John for signing her out for custodial supervision at their ranch house. When Summer, a vegan, eventually sits down at the supper table with the Duttons, she criticizes the table and the chef for the family's \"carnivorous\" dinner. Beth immediately invites Summer to step outside and the two get into a fight. Rip gets the two to batter each other punch-for-punch until Beth lands a blow that nearly knocks Summer out, forcing her to concede and fostering a little respect. The next day, the Duttons and ranch members begin silent and determined preparations for their three-day bivouac, which creates a thoughtful atmosphere for Summer to reflect. She watches the cowboys depart for the distant parts of the vast Yellowstone ranch.",
+          "airDate": "2022-12-04",
+          "still": "https://image.tmdb.org/t/p/original/odbPcT8N6dE4lBAGfBe0LS99b6K.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/odbPcT8N6dE4lBAGfBe0LS99b6K.jpg",
+            "https://image.tmdb.org/t/p/original/aEEgSb2scasvQdkqYo3OarfkIts.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Cigarettes, Whiskey, a Meadow and You",
+          "overview": "The Yellowstone enjoys an almost-perfect day branding cattle, Montana gets an unexpected visitor, Sarah sinks her teeth into Jamie, and Thomas Rainwater deals with a challenger from within.",
+          "plot": "The cowboys, along with John, make it across the vast Yellowstone ranch and begin to round up the cattle. Beth reconnects with Rip who shows her his dream location at Yellowstone. He thinks it might make an impression on Beth as a place to finally build her own home, and she is deeply impressed. While John and the cowboys are away, a government military detachment of special services arrives at the reservation to begin setting up a perimeter for a VIP to arrive for a large public reception. Jamie reacts impulsively when he is seduced by Sarah, and starts having multiple sexual encounters with her. She eventually makes clear that she wants him to grandfather permission for Equities to build the new airport near Yellowstone; Jamie is convinced he can do so. Mo discovers that the President of the United States is unexpectedly arriving at the reservation for a visit of public support. During the herding, a fellow cowboy and friend of John's dies in his sleep, which John calls the perfect cowboy's death. John goes to comfort the widow of the elderly cowboy, which is captured by TV cameras.",
+          "airDate": "2022-12-11",
+          "still": "https://image.tmdb.org/t/p/original/pQcc293HZgojsbMPPKG4AytXRAX.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/pQcc293HZgojsbMPPKG4AytXRAX.jpg",
+            "https://image.tmdb.org/t/p/original/9hNXddM71xQh9PEfKmZegOQXyXQ.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "The Dream Is Not Me",
+          "overview": "John deals with a herd problem, Senator Perry delivers news to Thomas Rainwater, Jamie and Sarah plan their next move, and Beth discusses a new business plan with the ranch in mind.",
+          "plot": "In a flashback, a young Rip is jeered by a cowboy for Beth's affections, leading to a fight that leaves his rival severely injured. Despite Rip's going to John for help, the cowboy dies. Agreeing to hide the crime, John makes Rip promise to devote the rest of his life to the ranch, implying his Yellowstone branding. Jamie is confronted by Market Equities and Sarah, with official papers stating that the Dutton ranch and property is protected as a national park under state jurisdiction. Jamie is livid, since John and Beth kept him out of the loop. Sarah warns him that Equities will sue the state, potentially leading to bankruptcy. She convinces him that John needs to be removed from office, and promises him Equities' support in becoming the next governor. At the ranch, John and the cowboys discover that part of the land has been contaminated by bison, forcing them to use winter resources to feed the cattle. With little choice, John decides to lease some land in Texas to protect the livestock, although doing so will put them in debt. Beth discovers another form of income, as opposed to ranching, and struggles to get her father to agree. Jamie prepares a speech to the state assembly calling for John's impeachment.",
+          "airDate": "2022-12-18",
+          "still": "https://image.tmdb.org/t/p/original/l8JNrPjb6DztDGS9LHSdLPPx5zA.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/l8JNrPjb6DztDGS9LHSdLPPx5zA.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "A Knife and No Coin",
+          "overview": "Jamie goes through with his plan, John lends support to an unexpected friend, the Yellowstone cowboys embark on a journey, and a flashback reveals the source of Rip's loyalty.",
+          "plot": "Rip and the other cowboys make their way to Texas, leaving Kayce to run the ranch. As John lends support to Rainwater and the Broken Rock Reservation in defiance of a pipeline, he learns that Jamie has publicly called for his impeachment. Beth finds out and threatens Jamie that she will reveal that he dumped the body of his biological father, whom she forced Jamie to execute. Jamie replies that her evidence is useless, revealing the long tradition of the Duttons dumping their enemies in a no-man's land called the \"train station\", leaving Beth shocked and speechless. Jamie points out how their father's reckless, stubborn actions have done the ranch more harm than good and that the only way for it to thrive is to remove him from power. Realizing she had underestimated Jamie, Beth suggests to John that her brother might need to be taken to the train station himself. John is visibly uncomfortable about the idea and does not respond. Unbeknownst to Beth, Jamie has anticipated his sister's murderous intentions, and plans to counter by asking Sarah about hiring \"professionals\".",
+          "airDate": "2023-01-01",
+          "still": "https://image.tmdb.org/t/p/original/7qj1VJD1TzUQLk4dAptq3Lqtsoi.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/7qj1VJD1TzUQLk4dAptq3Lqtsoi.jpg",
+            "https://image.tmdb.org/t/p/original/ektUN4HvSKHRbwTowLeNOyU4xRc.jpg",
+            "https://image.tmdb.org/t/p/original/oMEJ8m1CY85Ah2sfpJVlpSkpYRO.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Desire Is All You Need",
+          "overview": "After an event rattles the state of Montana, nothing will ever be the same.",
+          "plot": "Beth and Kayce arrive at the Governor's mansion to discover that John Dutton has seemingly committed suicide. As Kayce comforts Beth, she accuses Jamie of being responsible before calling Rip, who is in Texas with many of the other wranglers. Flashback back to six weeks, Sarah speaks with a 'contractor' on how to kill John Dutton, agreeing to stage his death as suicide. During this time, Rip and the others are finishing up the transport of the cattle and horses to Texas. Back in the present, Jamie confronts Sarah about John's death, and she confirms that she arranged it. Beth and Kayce discuss if Jamie truly had John killed before Rip arrives back at the ranch to comfort Beth. Cameo by Billy Ray Klapper.",
+          "airDate": "2024-11-10",
+          "still": "https://image.tmdb.org/t/p/original/zMRVsbAGJ8IotrmZCF3ToDACwLH.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/zMRVsbAGJ8IotrmZCF3ToDACwLH.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "The Apocalypse of Change",
+          "overview": "Beth comes to a chilling realization. Kayce reaches out to an old friend in search of information. Jamie meets with Market Equities.",
+          "plot": "During the six weeks before John's death, Beth finishes her community service before heading out to spend some time with Rip in Texas, where the ranch members struggle with new problems. Kayce, Monica, and Tate move into a new house near the ranch. In the present, Rip comforts Carter before driving Summer to the airport. Beth confronts Jamie, who refuses to answer or look at her, confirming her suspicions before Sarah and Ellis arrive to speak with him on Market Equities' desire to buy the land. After leaving, Beth calls Kayce to confirm Jamie's involvement, and Kayce then contacts a war buddy for help.",
+          "airDate": "2024-11-17",
+          "still": "https://image.tmdb.org/t/p/original/B5qU4Ij7I0pNa3Hk2yr6H6EDpX.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/B5qU4Ij7I0pNa3Hk2yr6H6EDpX.jpg"
+          ]
+        },
+        {
+          "episode": 11,
+          "name": "Three Fifty-Three",
+          "overview": "Beth discusses the fate of the ranch with an unlikely ally. Kayce takes the investigation into his own hands. Jamie looks to advance his political agenda.",
+          "plot": "In a flashback, mercenaries kill John Dutton and stage his death as a suicide. In the present, Steven Rawlings is sworn in as Governor and begins to undo John's decisions, even trying to have Jamie removed from his position of power. Kayce uses his authority to have his father's body re-examined, using his knowledge as a Navy SEAL to help discover evidence of foul play to have the case reopened. Rainwater pays a visit to Beth and the two discuss the land, while Kayce confronts Jamie, who denies involvement in John's death. When Sarah learns about the case reopening, she begins to panic and has an argument with Jamie before leaving. In her car, Sarah is killed by assassins.",
+          "airDate": "2024-11-24",
+          "still": "https://image.tmdb.org/t/p/original/nV3eO9s8IBPo7T0U629k6M75jU.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/nV3eO9s8IBPo7T0U629k6M75jU.jpg"
+          ]
+        },
+        {
+          "episode": 12,
+          "name": "Counting Coup",
+          "overview": "Kayce makes a bold move. Rip asks for help from a friend in Texas, while the bunkhouse contemplates their future. Jamie attempts to cover his tracks.",
+          "plot": "After the assassination of Sarah, Jamie does everything he can to avoid being associated with the murder of John Dutton. Meanwhile, fears for the future spread among the cowboys, most of whom have spent their entire working lives on the ranch. Through his former military contacts, Kayce is able to identify and then confront the agent who coordinated the murder of his father.",
+          "airDate": "2024-12-01",
+          "still": "https://image.tmdb.org/t/p/original/dN9meK9KKR95zzO6EjKgfHRzZbm.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dN9meK9KKR95zzO6EjKgfHRzZbm.jpg"
+          ]
+        },
+        {
+          "episode": 13,
+          "name": "Give the World Away",
+          "overview": "Jamie begins to spiral, and later seeks advice. Beth and Travis make a deal. Kayce has an idea about the future of the ranch.",
+          "plot": "Jamie's connection to Sarah comes to light and he seeks advice from his former campaign strategist (and ex-girlfriend), Christina. The ranch's inventory and livestock are auctioned off, but the proceeds will not be enough to pay the inheritance tax. Kayce finally discovers the true meaning of his earlier visions.",
+          "airDate": "2024-12-08",
+          "still": "https://image.tmdb.org/t/p/original/r5QyFQSjtBUYb0g1RpDoJRFiTMo.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/r5QyFQSjtBUYb0g1RpDoJRFiTMo.jpg"
+          ]
+        },
+        {
+          "episode": 14,
+          "name": "Life Is a Promise",
+          "overview": "As the Duttons and the Yellowstone cowboys lay John to rest, the fate of the ranch is revealed.",
+          "plot": "John Dutton is laid to rest in a private ceremony. Beth and Jamie have unfinished business. The bunkhouse cowboys go their separate ways. The Broken Rock tribe takes certain matters into their own hands, and Kayce gains a blood brother. A long-forgotten Dutton offers a fresh perspective as the \"train station\" welcomes another passenger. The ranch undergoes dramatic changes.",
+          "airDate": "2024-12-15",
+          "still": "https://image.tmdb.org/t/p/original/ztsyXjw5HMeCydK3uqaSZwE7FVV.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ztsyXjw5HMeCydK3uqaSZwE7FVV.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "cast": [
+    {
+      "name": "Kevin Costner",
+      "character": "John Dutton",
+      "episodeCount": 53,
+      "profile": "https://image.tmdb.org/t/p/original/608blZipRDZkDpzp8VItB64qMaT.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/153/383746.jpg"
+    },
+    {
+      "name": "Luke Grimes",
+      "character": "Kayce Dutton",
+      "episodeCount": 53,
+      "profile": "https://image.tmdb.org/t/p/original/c547Xiwf9feeDbGfQchfJCkC111.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/153/383748.jpg"
+    },
+    {
+      "name": "Kelly Reilly",
+      "character": "Beth Dutton",
+      "episodeCount": 53,
+      "profile": "https://image.tmdb.org/t/p/original/l8aQsryOQvxgX6SdZ4XtzU8KEXn.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/159/397504.jpg"
+    },
+    {
+      "name": "Wes Bentley",
+      "character": "Jamie Dutton",
+      "episodeCount": 53,
+      "profile": "https://image.tmdb.org/t/p/original/voD93lzFZrr9xfAggwFcPRBi84i.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/153/383747.jpg"
+    },
+    {
+      "name": "Cole Hauser",
+      "character": "Rip Wheeler",
+      "episodeCount": 53,
+      "profile": "https://image.tmdb.org/t/p/original/1SNoIDILoXtAUJu4f7nDCPVQH5j.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/153/383750.jpg"
+    },
+    {
+      "name": "Kelsey Asbille",
+      "character": "Monica Dutton",
+      "episodeCount": 53,
+      "profile": "https://image.tmdb.org/t/p/original/8mXqxKaPc6FpAnLeZlPaaUaJHdC.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/219/547527.jpg"
+    },
+    {
+      "name": "Brecken Merrill",
+      "character": "Tate Dutton",
+      "episodeCount": 53,
+      "profile": "https://image.tmdb.org/t/p/original/j2cJIrlfMSVWCq491ZMnguhGjXP.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/262/655937.jpg"
+    },
+    {
+      "name": "Gil Birmingham",
+      "character": "Thomas Rainwater",
+      "episodeCount": 53,
+      "profile": "https://image.tmdb.org/t/p/original/bWYOwtq0zUgpbEhTyiJHo2TmVju.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/219/547524.jpg"
+    },
+    {
+      "name": "Ian Bohen",
+      "character": "Ryan",
+      "episodeCount": 51,
+      "profile": "https://image.tmdb.org/t/p/original/qEi3UXB3rx9vithYZPtqW3U5e3L.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/373/933874.jpg"
+    },
+    {
+      "name": "Forrie J. Smith",
+      "character": "Lloyd",
+      "episodeCount": 51,
+      "profile": "https://image.tmdb.org/t/p/original/dlfukfoPCoF9PraKuyuIq7rmu8Y.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/499/1247673.jpg"
+    },
+    {
+      "name": "Denim Richards",
+      "character": "Colby",
+      "episodeCount": 51,
+      "profile": "https://image.tmdb.org/t/p/original/A2Gl1Xi0wuC7xd9AYe41SldIUmA.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/160/401714.jpg"
+    },
+    {
+      "name": "Mo Brings Plenty",
+      "character": "Mo Brings Plenty",
+      "episodeCount": 41,
+      "profile": "https://image.tmdb.org/t/p/original/2CxofuWPRZf3G0kYJytblYiHXIy.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/499/1247676.jpg"
+    },
+    {
+      "name": "Jefferson White",
+      "character": "Jimmy Hurdstrom",
+      "episodeCount": 39,
+      "profile": "https://image.tmdb.org/t/p/original/8QSrhrWpqTBGJN3rfijXCvmOcb5.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/160/401716.jpg"
+    },
+    {
+      "name": "Ryan Bingham",
+      "character": "Walker",
+      "episodeCount": 37,
+      "profile": "https://image.tmdb.org/t/p/original/mnTDK0M2ncJgTUm0T56AD4OxB83.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/219/547525.jpg"
+    },
+    {
+      "name": "Jennifer Landon",
+      "character": "Teeter",
+      "episodeCount": 32,
+      "profile": "https://image.tmdb.org/t/p/original/jpcNM8UJRcnPnCLasVMfA329wZ4.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/499/1247675.jpg"
+    },
+    {
+      "name": "Wendy Moniz",
+      "character": "Lynelle Perry",
+      "episodeCount": 28,
+      "profile": "https://image.tmdb.org/t/p/original/o6h5BiaTiezKKEOaQKiGuTGeePe.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/499/1247677.jpg"
+    },
+    {
+      "name": "Finn Little",
+      "character": "Carter",
+      "episodeCount": 24,
+      "profile": "https://image.tmdb.org/t/p/original/jkMmLjj5Zk4CsABIxxFtOj0Zxic.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/499/1247678.jpg"
+    },
+    {
+      "name": "Danny Huston",
+      "character": "Dan Jenkins",
+      "episodeCount": 18,
+      "profile": "https://image.tmdb.org/t/p/original/mNz9t7MNANopavbLgcsZMMQBJ0u.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/159/397507.jpg"
+    },
+    {
+      "name": "Hassie Harrison",
+      "character": "Laramie",
+      "episodeCount": 17,
+      "profile": "https://image.tmdb.org/t/p/original/cUu16UFtcmAJwyge5g5sbMstZCc.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kathryn Kelly",
+      "character": "Emily",
+      "episodeCount": 16,
+      "profile": "https://image.tmdb.org/t/p/original/qy8hO9fSWjizOZ9QRlCp5E6qEyV.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/499/1247679.jpg"
+    },
+    {
+      "name": "John Emmet Tracy",
+      "character": "Ellis Steele",
+      "episodeCount": 14,
+      "profile": "https://image.tmdb.org/t/p/original/tJUSztVpizjsXLpqvEVwSq91isp.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Eden Brolin",
+      "character": "Mia",
+      "episodeCount": 14,
+      "profile": "https://image.tmdb.org/t/p/original/z64sPFRx1IomrKZvkRF8GLwCvag.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Hugh Dillon",
+      "character": "Donnie Haskell",
+      "episodeCount": 12,
+      "profile": "https://image.tmdb.org/t/p/original/npY8dF5b1j5pUqt11sDBi89BDTi.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "James Jordan",
+      "character": "Livestock Agent Steve Hendon",
+      "episodeCount": 12,
+      "profile": "https://image.tmdb.org/t/p/original/8flzkBpcrl0QqjDnXhbg52rsNOY.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Taylor Sheridan",
+      "character": "Travis Wheatley",
+      "episodeCount": 11,
+      "profile": "https://image.tmdb.org/t/p/original/enrOQII7bCIf7U0WbdxiuXGfzrs.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Katherine Cunningham",
+      "character": "Christina",
+      "episodeCount": 11,
+      "profile": "https://image.tmdb.org/t/p/original/z9O8kEPRiIDh4lhC0GCryQXhmX.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Piper Perabo",
+      "character": "Summer Higgins",
+      "episodeCount": 11,
+      "profile": "https://image.tmdb.org/t/p/original/5XrzISDEox0KubRDzJU668Oxmxy.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rudy Ramos",
+      "character": "Felix Long",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/mu4DP6WfLWdE36g9EF8sxAcAYx7.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Timothy Carhart",
+      "character": "A.G. Stewart",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/jfEzqYXfX7sH0BFmmiXty6kB1Lq.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Atticus Todd",
+      "character": "Ben Waters",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/ts0iRqKx4kLW4UgXWdZeySJ2Btg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Josh Holloway",
+      "character": "Roarke",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/biuhUJn5BDhXpfKvVW4dVUxvB44.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dawn Olivieri",
+      "character": "Sarah Atwood",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/tet7ZVbzhLWwT44m9j94folyl5N.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Josh Lucas",
+      "character": "Young John Dutton",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/ueR4CH32f22DGjFxuhnW1o3YKB3.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/153/383746.jpg"
+    },
+    {
+      "name": "Kyle Red Silverstein",
+      "character": "Young Rip",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/mywgXyUyrCSnS597TGV51ZotFo7.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Nouri",
+      "character": "Bob Schwartz",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/cbrDZMRb7DRsiVcuoU0VDbLL6qj.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Q'orianka Kilcher",
+      "character": "Angela Blue Thunder",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/uduApOlv4MumUKdc9LtLSBL0bW8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lilli Kay",
+      "character": "Clara Brewer",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/21wRVVOMT3eQnLCioxxOnPD4r60.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kylie Rogers",
+      "character": "Young Beth",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/9c9CPWTT8a2GXMab8vuSxCJ0CcW.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jacki Weaver",
+      "character": "Caroline Warner",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/zalCqZnNQMKseFmwQwOlLrl3w2P.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Will Patton",
+      "character": "Garrett Randle",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/1V4DbU1mfEim4oaA5bvJywDAKwB.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tanaya Beatty",
+      "character": "Avery",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/nQQd9rpMxYM2MshYlOSV0PfffPP.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michaela Conlin",
+      "character": "Sarah Nguyen",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/5Qv7KNTMDbdO7m5p1wIic5kVKr8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "David Cleveland Brown",
+      "character": "Jason",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/nSR0UpRQoBBEtxUVqfSKfY17gS9.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Boots Southerland",
+      "character": "Wade Morrow",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/sUIXYHl18ClE8t5o8227VKJ5Cdk.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Terry Serpico",
+      "character": "Teal Beck",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/5UfDA4ySgYUhle7iXqOuhzAgghn.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Wolé Parks",
+      "character": "Torry",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/nstF434UXqCR3rig37TdbAdyNmZ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Neal McDonough",
+      "character": "Malcolm Beck",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/3mI3i1CpjATSCta1Tb2qsyl1KCh.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Maria Julian",
+      "character": "Jamie's Assistant",
+      "episodeCount": 6,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/153/383747.jpg"
+    },
+    {
+      "name": "K.C. Clyde",
+      "character": "County Attorney Randy",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/3Yug5axLRvnmuJHHlomDj06SSFH.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Buck Taylor",
+      "character": "Emmett Walsh",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/l4fy1zNNRIG2i4pmNpCqatFuz7d.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lainey Wilson",
+      "character": "Abby",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/5bFkESPlURPG76bHTI6XmHyXKTa.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rory Cochrane",
+      "character": "Dillard",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/yBwm1RI4QCRXM0vkkDGVqdoiZLH.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tokala Black Elk",
+      "character": "Sam Stands Alone",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/fZ4wmUVQdyfRCHpcWKeAyyvdc9g.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Robert Mirabal",
+      "character": "Principal Littlefield",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/swNOotGUh3qZPVb7N2aNjAmOWu8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kelly Rohrbach Walton",
+      "character": "Cassidy Reid",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/jmp1SZ0H30atVZrrguBWRD3vjX3.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Martin Sensmeier",
+      "character": "Martin",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/d25Mx8thmbgQWHR35S5s6MxjsCc.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lane Garrison",
+      "character": "Ray",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/KhZIIPwqUzRavrWqCnZ47MHwYf.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ryan Dorsey",
+      "character": "Blake",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/yomA0PIhGFD5dNG5mQkp8Fw2pYh.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Karen Pittman",
+      "character": "Willa Hayes",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/uxJK6uJPL3tSODytazVKTWfAaSf.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Matthew Downs",
+      "character": "Trooper Mark Rigby",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/2mGd77LJZr3IS7YmIfelk5K6UQh.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Maria Julian",
+      "character": "Jamie's Assistant Kate",
+      "episodeCount": 4,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/153/383747.jpg"
+    },
+    {
+      "name": "Dave Annable",
+      "character": "Lee Dutton",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/5DXu9ZiB4dfqNmHIOGnhXMBouPP.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sol Xavier May-Kennedy",
+      "character": "Robert Long Son 1",
+      "episodeCount": 3,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/219/547527.jpg"
+    },
+    {
+      "name": "Wolford Reed May-Kennedy",
+      "character": "Robert Long Son 2",
+      "episodeCount": 3,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/219/547527.jpg"
+    },
+    {
+      "name": "Mosiah Aaron Crowfoot",
+      "character": "Robert Long Son 3",
+      "episodeCount": 3,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/219/547527.jpg"
+    },
+    {
+      "name": "Luke Peckinpah",
+      "character": "Fred Myers",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/zRuNHRnZysWJzvSr8hEpcohkLg8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Fredric Lehne",
+      "character": "Carl Reynolds",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/qjtfC2QWLukoNVnDjp8QZF6E6Xz.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Heather Hemmens",
+      "character": "Melody Prescott",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/dVwYV1oVQYeyvlEm0a6rFVYBmEO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Savonna Spracklin",
+      "character": "Alice Wahl",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/8rRIIgOr1vspwGMR6l3c3gq3EYL.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Stanley J. Peternal",
+      "character": "Dirk Hurdstram",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/we2sJ6KOSJ8YTNjNCkZazI3vN3G.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Steve Coulter",
+      "character": "Mel Thompson",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/ng01ren9pCYPIsIwRqC1xHzD5IG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Katie Cockrell",
+      "character": "Receptionist",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/sxu9sc1xZk4VGuC7tlgMj1YWq3a.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Steven Williams",
+      "character": "Cowboy",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/nOsMJ7zPykxlPkjgoMrk677BaqQ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brian Unger",
+      "character": "Dr. Stafford",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/aBrtRXhPvdmstl4oDq2Cp6MS6aW.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Scout Smith",
+      "character": "Student",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/nW579usZ4lHgREjIW7fo17bl2dG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rob Kirkland",
+      "character": "Watch Commander Bill Ramsey",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/uLKSHq67IdiG2UVWsdp9NcHv4cQ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Don Hudson",
+      "character": "Reporter",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/zKTB3WUAY77UjIhvUqpUibrmcFv.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Matt Gerald",
+      "character": "Grant Horton",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/six7c3aZpiEomHjj4ZYokq8Vgtx.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Bella Hadid",
+      "character": "Sadie",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/2e8qNiLiLCH11JAgqNodZxMCKov.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "MorningStar Angeline",
+      "character": "Samantha Long",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/nB1PCopniuETacJofZ254Cr4CFo.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Bill Tangradi",
+      "character": "Alan Keene",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/2LVS3gD5iAFqe2O6HvGojevQxmO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "John Aylward",
+      "character": "Father Bob",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/5FLmm3GsLgLYsdrTlEja8nIfkJj.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Gretchen Mol",
+      "character": "Evelyn Dutton",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/e3C1D1I09gtSGy4Ej1ewW2FFoew.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Barret Swatek",
+      "character": "Victoria Jenkins",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/lEk7CsLtCBWNe3G957U4oXYV65E.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tinsel Korey",
+      "character": "Emily Sessions",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/qXJwRJ6yFLKTWzAXxsNVuWCECdS.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/499/1247679.jpg"
+    },
+    {
+      "name": "Eddie Spears",
+      "character": "Marcus",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/s46Kd03cCFNnObBncWjaenegrye.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Camrey Bagley Fox",
+      "character": "Assistant",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/4XDB9CTP94bYk4nfLynSYeq0Pg1.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ashley Erin Campbell",
+      "character": "Secretary",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/2FoPsUn8Mng9hRP73GZipaUOI5L.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kelli D. Warrack",
+      "character": "Beth's Assistant",
+      "episodeCount": 2,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/159/397504.jpg"
+    },
+    {
+      "name": "Rya Kihlstedt",
+      "character": "Sam the Vet",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/86ysgxNPkckt8jp715X79CdopB7.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Cindy Perez",
+      "character": "Receptionist",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/jK4ITQhiWgS5ZIIdQIR0WrxhC8V.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brad Carter",
+      "character": "Checkers",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/xdQINDoQK3nx5ndIJnYU3qKRM4Y.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tim McGraw",
+      "character": "James Dillard Dutton",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/gJdDFQHnsptnjI1bepJ2nxzBPkv.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Charlie Stover",
+      "character": "Spencer Dutton",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/8XUkjppvAqpIie8DgxU8xKPo6DX.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nichole Galicia",
+      "character": "Charlotte Riley",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/4gySGMvp97LLru8m5caD97t6LMo.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jerynce Brings Plenty",
+      "character": "Jerynce Brings Plenty",
+      "episodeCount": 2,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/499/1247676.jpg"
+    },
+    {
+      "name": "Ashley Platz",
+      "character": "Hailey Brewer",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/irGjrYjLFBSCU5E0vQsOKzWNxyK.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Chase Ramsey",
+      "character": "Dale Medders",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/xUqxf7OmlUNW6axmvBeFxZEBPsd.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Stacey Hinnen",
+      "character": "Jeffrey Hayes",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/oygYDaOBWOsax9dDHF37xpow26N.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Matt Nolan",
+      "character": "Abby's Band (Drums)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/cph12yf1h82tucawsqo8wIIlivb.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Stephen Fuller Austin",
+      "character": "Chief Justice",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/oQ43F0e3IgW1ASCU3ou9wJIj9kO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Orli Gottesman",
+      "character": "Hailie",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/ApZXZVnYB7bqyMdVoZ7qrTnnvd8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jake McLaughlin",
+      "character": "Cade McPhereson",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/14ZiT9mSr50N2sNXbzEthiiyVH9.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jill Hennessy",
+      "character": "Senator Huntington",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/aKsMIyY7gro0rrowVj91grq6OeM.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jeremiah Bitsui",
+      "character": "Robert Long",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/jB4u8jekprqQeB0xhdB4YSgO8FG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "J.R. Cacia",
+      "character": "Ted at the Bar",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/6GgUgsHfg1uzJu2VyA7k8rKrZNe.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Morgan Lund",
+      "character": "Trent Willet",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/80p9IRMll98CxH8w1gpPwieFV83.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jeremy Hoop",
+      "character": "State PD Officer",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/qkgZKm7SH3VoUhn7d06gg60O5gy.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "David H. Stevens",
+      "character": "Petroleum Engineer",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/sE0EIZbyMT5lkJj832g5yOIAf5y.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Joshua Michael French",
+      "character": "Oil Worker",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/uUawrtiBezZJz9p8rEYKUK9Dg4p.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Christopher May",
+      "character": "Craig Martin",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/k6duFujsZSaGNgzQ771QX59wOwm.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kenneth Ruthardt",
+      "character": "Big Belly",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/1eXqhsxBAwSsSnSG9IIu17Wme3l.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Gabriel Casdorph",
+      "character": "Ron Wright",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/jdVLnMl27bUXBX5RGtOfbXOXJZE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Crystle Lightning",
+      "character": "Verda Stands Alone",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/vx5UIK3ddm8hLf5WGKvQ2za26Sv.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mason D. Davis",
+      "character": "Viggo",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/hFPWzuEzA6Q8Um5UmJNhN7uEsMf.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Geno Segers",
+      "character": "Danny Trudeau",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/wBrpM22iabuY2B9Um35J7ctiu8i.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dakota Love",
+      "character": "Daisy Trudeau",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/eiFUJhXcPTkNaWp6Et7CFUS7fOy.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Wally Welch",
+      "character": "Mickey Creagan",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/8FpDaS5YESZu2VhtnpZXrqaVZdA.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dylan Kenin",
+      "character": "Cowboy",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/yGq7PooU34xeRWFORF96fmJmvl9.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Howard Ferguson Jr.",
+      "character": "Rough Cowboy",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/3LMQaP5OqrjTEyTsuEfLfcmveOO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Braden Lynch",
+      "character": "Dr. Patrick Monteith",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/sxSQHuXwDQVTy8GPBABoRkDRiQr.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Austin R. Grant",
+      "character": "Aaron McReary",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/6R10zNAf7VHxVXO8B4XO4nL4s33.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sila Agavale",
+      "character": "Process Server",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/yGmr4BKKyMMJo10KOAnmXwZSZgm.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kellie Cockrell",
+      "character": "Governor's Aide",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/VCjJlVbCdIW5KZBAwPhyI6PKPv.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/499/1247677.jpg"
+    },
+    {
+      "name": "Casey Pieretti",
+      "character": "Dying Man",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/k7opo00tRQklVshKUQXqCks86Ke.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mike Faiola",
+      "character": "Dr. Fielding",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/iyjwCEdRVgM07LgWqcnRPS3Cugf.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Aria Song",
+      "character": "Translator",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/3OKi7sVjokCNODtrn4Dpn8wHVBm.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jim Lau",
+      "character": "Tourist",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/vtnVGok0rQoSiH6ubJa73l94tVV.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michelle Campbell",
+      "character": "Nurse Makes Origami",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/tcIZEy3fIJNMV9n1NuV1Pwbx4pv.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Valerie Yu",
+      "character": "Kim",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/qraItXGo8atO3iFgXK3OLZfL0M3.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Heidi Sulzman",
+      "character": "Officer Charlotte Skyles",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/uNC6WvpMomcMhRqvZsVdIyGkigU.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Darin Southam",
+      "character": "Stan",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/hIaaIorufzIy5gGZ7livDJcgNbk.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ambyr M. Reyes",
+      "character": "Paige Nutter",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/dPMIMrlLr6xCONBWNfFGCOMFSO8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "James Pickens Jr.",
+      "character": "Old Cowboy",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/iddDcaysDQ6IVMUjJ97Bv3lTBCu.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "DeJean Brown",
+      "character": "Officer Mike Sullivan",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/e3GioNYtbcaI6jNN4WBn96N6UqI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Aimee-Lynn Chadwick",
+      "character": "Waitress",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/xKIyCsT8Qzwlwp8vaLnJlj0OTob.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "JJ Neward",
+      "character": "Meg Thurman",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/bL9yWJKa7KNT065LMfn4ZKNySUW.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sean J. Dillingham",
+      "character": "Marty",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/quqA6H7UwuKc9h9kfKmAGou1247.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Derek Boone",
+      "character": "Oil Worker",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/2vb8IQK3YKgADYFpvxzY1SP9Hkt.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ryan Begay",
+      "character": "Tribal Member",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/oIzcJxPs0gcW5Ne6beuwaXKTZrJ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Christy Summerhays",
+      "character": "Carla",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/me5VkTLSncvx3Dk8M8zhc3EPXYw.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Harvey J. Alperin",
+      "character": "Mr. Pelican",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/2SvRHzpjMa9hbO9A1qUB3RsMftE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Whitney Palmer",
+      "character": "Physical Therapist",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/iyDlLNv8C9oJ633o2YuEpCBCa4Y.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Shae Robins",
+      "character": "Waitress",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/vfOLdbrzCzKQgMQNU6wMDbSAMi5.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nicolas Harvard",
+      "character": "Director",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/6mhAwz64RwJs7gIaSqUOYODMIdR.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Don Harvey",
+      "character": "Jerry Hayes",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/dc10W0hRNxrO0IcwgKOcsUajtOG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jae Head",
+      "character": "Luke Hayes",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/nNh2DiYXZneyeiYDitKT6s1AwEy.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kari Hawker-Diaz",
+      "character": "News Reporter",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/uSyvb5wgavNKwE5NC5al73abio6.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Stacey Thunder",
+      "character": "News Reporter",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/wYgwz77slEGyXZDVWhl9cbYPBxA.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Luce Rains",
+      "character": "Mean Cowboy",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/az7wB3HJNQ7T3TmDdZ3rIdZ6bxO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Chase Palmer",
+      "character": "Student",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/xo68gl6EcQOUtP8WJAaTENpyWhL.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jenessa Sheffield",
+      "character": "Cowgirl",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/l6GRm2x0FzwEPwuz2T70mqckhOB.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Scott Deckert",
+      "character": "Masked Man",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/7rBoHozyT5q2TEmrT0UP6jPVlvO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Allison Dunbar",
+      "character": "Veronique",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/6qm1GYfxBoFqtct7fkytCkV7FOo.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Chantel Flanders",
+      "character": "Sales Associate",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/a8QjW2XCcIg3GpkOJSRp8Ybrtod.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dabney Coleman",
+      "character": "John Dutton Sr.",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/1Evye7M6ndlNIIfs5s8tBFWWhhT.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/153/383746.jpg"
+    },
+    {
+      "name": "Tito Livas",
+      "character": "Deputy",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/89IyXrANI6LnSEggXnwVgHGSeFT.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tom Jenkins",
+      "character": "Senator Balen",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/qfALI1iNFbc2xNxL9qGPDhlkMkE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Blythe Howard",
+      "character": "Woman",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/bBaE8oyF8N1729PoE7SSVNQcbmN.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mark Rowe",
+      "character": "Phil Hawthorne",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/4G3LvCPuTFzLuFdLvly1xSGjhEI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kelsie Elena",
+      "character": "Nurse",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/jEGewoJcIKada1ZviBMUk7lFfZq.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Steve Luna",
+      "character": "State Trooper",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/iHGkjZfBS3kiVzjzVQAyHiBsGLb.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Adam Johnson",
+      "character": "Biker",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/oFgiM8x3dGk2AQXI7RKcb6j1J7g.jpg",
+      "inCharacter": null
+    }
+  ],
+  "generatedAt": "2026-07-23T18:34:28.348Z"
+}

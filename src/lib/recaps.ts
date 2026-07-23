@@ -44,6 +44,11 @@ export type RecapListEntry = {
   watchStatus: string | null;
   nextEpisodeAirdate: string | null;
   generatedAt: string;
+  /**
+   * 0 live · 1 not yet earned · 2 spent. Computed server-side alongside the
+   * ordering so the two cannot disagree — see migration 069.
+   */
+  tier: 0 | 1 | 2;
 };
 
 /** One season's composed content, as stored. */
@@ -125,6 +130,10 @@ export async function listRecaps(): Promise<RecapListEntry[]> {
     watchStatus: (r.watch_status as string) ?? null,
     nextEpisodeAirdate: (r.next_episode_airdate as string) ?? null,
     generatedAt: r.generated_at as string,
+    // Defaults to the live tier if the column is absent, so a client running
+    // ahead of the migration degrades to the old single-list behaviour rather
+    // than filing everything under "finished".
+    tier: ((r.tier as number) ?? 0) as 0 | 1 | 2,
   }));
 }
 

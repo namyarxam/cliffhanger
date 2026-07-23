@@ -50,3 +50,6 @@ supabase/.temp/
 
 # Recap batch checkpoints — machine state, rewritten on every run
 src/recap/data/_batch-state.json
+# Audit findings and ranking debug — regenerated every run, not source of truth
+src/recap/data/*.audit.json
+src/recap/data/_candidates.debug.json

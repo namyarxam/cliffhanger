@@ -1,0 +1,1291 @@
+{
+  "slug": "peacemaker",
+  "tmdbId": 110492,
+  "tvmazeId": 50603,
+  "matchedBy": "imdb_id",
+  "title": "Peacemaker",
+  "overview": "The continuing story of Peacemaker, a vainglorious superhero/supervillain who believes in peace at any cost — no matter how many people he has to kill. After a miraculous recovery from his duel with Bloodsport, Peacemaker soon discovers that his freedom comes at a price.",
+  "firstAirDate": "2022-01-13",
+  "network": "HBO Max",
+  "poster": "https://image.tmdb.org/t/p/w780/eYzbGcYnOUlvj2fa76pTgIXogd7.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/original/aJcUU3LMlqMKBi8L3eaxGfAbd4G.jpg",
+  "backdrops": [
+    "https://image.tmdb.org/t/p/original/aJcUU3LMlqMKBi8L3eaxGfAbd4G.jpg",
+    "https://image.tmdb.org/t/p/original/pj1wFbZF3gpEg7F0EreXTvZNZTG.jpg",
+    "https://image.tmdb.org/t/p/original/ctxm191q5o3axFzQsvNPlbKoSYv.jpg",
+    "https://image.tmdb.org/t/p/original/8VElCi4ZthGwcr8YBfbD5qvHExX.jpg",
+    "https://image.tmdb.org/t/p/original/stpY3WVxo92Tws0AXFiOGospUVS.jpg",
+    "https://image.tmdb.org/t/p/original/tMNN1Z55Nvz863tefoWeZ7kdk8s.jpg",
+    "https://image.tmdb.org/t/p/original/umwNVLbihigC6c6GMHvN2h8yT3T.jpg",
+    "https://image.tmdb.org/t/p/original/bTaMwHkAWURVqBWAPnnP5f7DQ5S.jpg",
+    "https://image.tmdb.org/t/p/original/2gf2wnKC29wBD5rQTiM5D07NGgT.jpg",
+    "https://image.tmdb.org/t/p/original/q7YHckbOAcGplmD3YIH7nMESQ2l.jpg",
+    "https://image.tmdb.org/t/p/original/m5u4M29j4WBaS1sGFg9RRunQYSQ.jpg",
+    "https://image.tmdb.org/t/p/original/al5muzS4RJYPzNBSuZXtvm8A2IW.jpg"
+  ],
+  "throughSeason": 2,
+  "totalSeasons": 2,
+  "showType": "Scripted",
+  "genres": [
+    "Comedy",
+    "Action",
+    "Science-Fiction"
+  ],
+  "status": "Ended",
+  "runtime": 43,
+  "language": "English",
+  "seasons": [
+    {
+      "season": 1,
+      "name": "Season 1",
+      "airDate": "2022-01-13",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "A Whole New Whirled",
+          "overview": "After making a miraculous recovery, Peacemaker returns home–only to discover that his freedom comes at a price.",
+          "plot": "Five months after his mission with the Suicide Squad in Corto Maltese, Chris Smith / Peacemaker has recovered from injuries suffered there and is discharged from hospital. Upon returning to his trailer home, Chris is confronted by a team: leader Clemson Murn, newcomer Leota Adebayo, plus A.R.G.U.S. agents Emilia Harcourt and John Economos. Murn gives Chris the choice of returning to Belle Reve prison or joining a new mission, \"Project Butterfly\", arranged by A.R.G.U.S. leader Amanda Waller. Chris reluctantly accepts the latter. Chris visits his emotionally distant and white supremacist father, Auggie, to retrieve his pet bald eagle, Eagly, and acquire a new outfit. During dinner with the team, Murn gives Chris a dossier of an assassination target. Later in a bar, Harcourt angrily rejects Chris's proposition of sex, so Chris accompanies another woman, Annie Sturphausen, to her apartment. After sex, Sturphausen attacks Chris, showcasing her superhuman strength. The fight ends when Chris activates a sonic boom weapon in his helmet that destroys Sturphausen. Meanwhile, Waller, who is Adebayo's mother, privately discusses with Adebayo a secret order to plant a forged diary in Chris's home.",
+          "airDate": "2022-01-13",
+          "still": "https://image.tmdb.org/t/p/original/538eLa2f3FoSwNNzHpHi0J1ZXl6.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/538eLa2f3FoSwNNzHpHi0J1ZXl6.jpg",
+            "https://image.tmdb.org/t/p/original/oU3dLg7tz0txbT89IiJrdNMsRxi.jpg",
+            "https://image.tmdb.org/t/p/original/9Z44RuXgwiXrAvkade6ug4TVnCm.jpg",
+            "https://image.tmdb.org/t/p/original/1ZjJxgre2F4vQZScMz4EylbVq7R.jpg",
+            "https://image.tmdb.org/t/p/original/yCsALxvVGTrAjcgApJvxxTCVtHf.jpg",
+            "https://image.tmdb.org/t/p/original/cxKDX2bpmoBwRv6n6Ayxx3oQqn1.jpg",
+            "https://image.tmdb.org/t/p/original/69ADgixVWhGf2AVAGXcwaxmPPGF.jpg",
+            "https://image.tmdb.org/t/p/original/caW6YA8Z3fneUXq770B7PxIiv58.jpg",
+            "https://image.tmdb.org/t/p/original/e6rDTbr5Px9ANeI0G98Uc0QgWYp.jpg",
+            "https://image.tmdb.org/t/p/original/6YnxC793uEsY0fbqzAY6h6KHKsG.jpg",
+            "https://image.tmdb.org/t/p/original/4Ex2QvidmAmNlvDrUuuYb8j2rPm.jpg",
+            "https://image.tmdb.org/t/p/original/nxAWaC8D89VwyTIEVHkCJphvy5s.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Best Friends, For Never",
+          "overview": "After Peacemaker’s hazardous escape, tension and mistrust build within the team. Later, as Peacemaker grapples with his new assignment, he receives a surprise visitor.",
+          "plot": "Chris contacts Harcourt and explains his situation as Evergreen's police force, including detectives Sophie Song and Larry Fitzgibbon, arrive to investigate the sonic boom. While collecting his belongings in Sturphausen's apartment, Chris finds an alien device and keeps it. The police chase Chris, but fail to catch or identify him. Adebayo drives Chris, Harcourt and Eagly to safety, while Chris's wrecked car is left behind. In a rush, Economos switches Chris's car registration and fingerprint records with Auggie's. Song and Fitzgibbon arrest Auggie and jail him, where several white inmates hail him as the White Dragon. Chris tells the team that Sturphausen only attacked him after she read the dossier on his assassination target. Returning to his trailer, Chris regrets his aggravating nature and his killing of Rick Flag. The costumed and masked Vigilante arrives, wanting to befriend Chris, who expresses doubts over killing to achieve peace. Vigilante cheers Chris up by testing weapons and explosives together. They then discover that the alien device transforms into a small spaceship.",
+          "airDate": "2022-01-13",
+          "still": "https://image.tmdb.org/t/p/original/dUAS7fZqjdPcfYnLnxCm40U0LUa.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dUAS7fZqjdPcfYnLnxCm40U0LUa.jpg",
+            "https://image.tmdb.org/t/p/original/sIiAvxmcomki2BkGyRgAQ0UB4RL.jpg",
+            "https://image.tmdb.org/t/p/original/8stDxyj581nTk38cv778Pu6KSpE.jpg",
+            "https://image.tmdb.org/t/p/original/6ocGyugHxX6Q8nQEDpjDHWIyjNq.jpg",
+            "https://image.tmdb.org/t/p/original/95h7y1oi0RSwWvbP4a4GG4qbZOu.jpg",
+            "https://image.tmdb.org/t/p/original/edmBJpc7spVuyxnVQBNog8EqSs7.jpg",
+            "https://image.tmdb.org/t/p/original/mD15tm0zbuRom4JgZEmWVw6GQSV.jpg",
+            "https://image.tmdb.org/t/p/original/cvDVMsIyoED12Zrt3QyW7GVKBpY.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Better Goff Dead",
+          "overview": "On their first official mission to assassinate suspected “butterflies,” Economos and Murn bond, and Peacemaker and Harcourt reach an understanding. But the whole job goes sideways with the arrival of Judomaster.",
+          "plot": "The team's first mission is to assassinate United States Senator Royland Goff, a 'Butterfly', and his wife and children if they are also 'Butterflies'. Chris hesitates at killing children. The team conducts a stakeout outside the Goff household, joined by a tagalong Vigilante. The team sees the Goff family displaying alien-like behavior. Murn orders Chris to kill them all, but Chris freezes, despite having a clear shot. Vigilante takes his gun and kills Goff's wife and children, but Goff's bodyguard Judomaster intervenes, incapacitating Chris, Vigilante and Harcourt before Vigilante can kill Goff. Judomaster and Goff capture Chris and Vigilante into the house's basement. Adebayo saves Harcourt from Goff's other bodyguard, whom Harcourt executes. Goff sends Judomaster away to warn 'Glan Tai', but Economos incapacitates Judomaster. Goff tortures Vigilante (revealed to be diner employee Adrian Chase), but Chris refuses to divulge any information. Murn, Harcourt, and Adebayo use an explosive to access the basement. The explosion blasts Murn back, though he is largely unharmed, and blasts Chris forward, allowing him to escape his bonds. He shoots Goff's face, killing him. Chris and Adrian see a butterfly-like alien emerge from Goff's head. The team's computer shows thousands of suspected Butterflies worldwide.",
+          "airDate": "2022-01-13",
+          "still": "https://image.tmdb.org/t/p/original/wyZXot4qqZEOCOOB3Vrv5F4KXRR.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/wyZXot4qqZEOCOOB3Vrv5F4KXRR.jpg",
+            "https://image.tmdb.org/t/p/original/icQa4VHF9zzOEYnL5k2DX7Xxojh.jpg",
+            "https://image.tmdb.org/t/p/original/cbLvAkaC0rwjz7labwBkwfnf9JU.jpg",
+            "https://image.tmdb.org/t/p/original/y7eWTiW4Mn3t7OU1Q6o2sQG5jl6.jpg",
+            "https://image.tmdb.org/t/p/original/5py9k8uX75ZlqXQwulwpKePALPl.jpg",
+            "https://image.tmdb.org/t/p/original/3aGCENC3FkUIX8lqtOCbAKxiDft.jpg",
+            "https://image.tmdb.org/t/p/original/a5vsdxHFOgleU8OuCL6NqDhiqKa.jpg",
+            "https://image.tmdb.org/t/p/original/hzBVVuiMS9YlzxXbGAvRwAb3LIB.jpg",
+            "https://image.tmdb.org/t/p/original/tLUNBEQl864RtJTFMjhwQ4wDRAY.jpg",
+            "https://image.tmdb.org/t/p/original/rqTcY8qJOpj0qqJ4k8Cv1D37nKn.jpg",
+            "https://image.tmdb.org/t/p/original/pUFmX0Jw47BFKMFfYqB0Nx5r4vS.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "The Choad Less Traveled",
+          "overview": "Following a somewhat successful mission, Murn recruits Vigilante. Meanwhile, after learning that the team helped land his father in prison, Peacemaker confronts his complicated past.",
+          "plot": "Chris tells the team he killed Goff's Butterfly. Judomaster is restrained in the team's headquarters. Adrian drives Chris to Auggie's house to retrieve new helmets, where a neighbor reveals Auggie's jailing to Chris. Despite Murn and Adebayo's efforts to dissuade him, Chris visits Auggie and reveals the team's framing of Auggie and the team's goal of eliminating aliens. Auggie vows to tell the police this to exonerate himself and stop Chris from working with the \"deep state\". Adrian gets himself arrested in attempt to kill Auggie but fails to do so. Chris and Adebayo return to their headquarters where an escaped Judomaster fights Chris. Adebayo shoots Judomaster as he starts discussing the Butterflies; he is again restrained, unconscious. Murn has Economos arrange for Adrian's release from jail; the team learns Adrian's identity. Returning to his trailer, Chris takes out Goff's Butterfly, alive in a jar. Chris reflects on killing Rick Flag, being trained by Auggie to kill from a young age, and the death of his brother. Adebayo identifies Glan Tai Bottling Company as related to the Butterflies and informs Murn.",
+          "airDate": "2022-01-20",
+          "still": "https://image.tmdb.org/t/p/original/b0jdRtuGm7blKJZamhU30Z1XlP5.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/b0jdRtuGm7blKJZamhU30Z1XlP5.jpg",
+            "https://image.tmdb.org/t/p/original/66iMcepjcj3Leu7HFNJLYFDdmV2.jpg",
+            "https://image.tmdb.org/t/p/original/Ajw4pUILjstw4usslceNWxGQxKX.jpg",
+            "https://image.tmdb.org/t/p/original/yXYt2tV8Q8TKTqxocIcE6O3Lihk.jpg",
+            "https://image.tmdb.org/t/p/original/tX939pMe0aYqNRq8tZDDvT1CsaR.jpg",
+            "https://image.tmdb.org/t/p/original/sprniBS6wxeScLu2Wulesa06oZ9.jpg",
+            "https://image.tmdb.org/t/p/original/zvYpJnXPM2H4QgyUOIalKTqbWl7.jpg",
+            "https://image.tmdb.org/t/p/original/ybT65dfR8sy1SX14FWWwdf7Juc5.jpg",
+            "https://image.tmdb.org/t/p/original/4mxXNZUOdh3ymmUne8SourD6EA5.jpg",
+            "https://image.tmdb.org/t/p/original/o9rG19YudNOhhgH7l3Y5t6qUu52.jpg",
+            "https://image.tmdb.org/t/p/original/m85HgimnEGVXwBLw48wo87Dmw3k.jpg",
+            "https://image.tmdb.org/t/p/original/5voZIfwsV1Lkj4CIqjmStMgseA4.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Monkey Dory",
+          "overview": "The team scouts the apparent hub for the aliens’ food supply, only to come face-to-face with a full-fledged invasion. Meanwhile, Auggie’s attempt to sell out his son to the police is complicated by Murn’s mysterious contact.",
+          "plot": "Murn briefs the team about Butterflies, who have taken over many notable figures, including celebrities and politicians. Butterflies enter humans, take over their brains, enhancing body strength, but only feed on a particular amber liquid. Murn has the rest of the team raid Glan Tai's factory, where they find the Butterflies' food being mass-processed. Chris's X-ray vision helmet reveals the factory employees as Butterflies, whom the team kills. They are attacked by Charlie, a Butterfly-controlled gorilla, whom Economos kills with a chainsaw, winning Chris's respect. The team bond over their success. Auggie has Song and Fitzgibbon recheck his fingerprints, exonerating him. Evan Calcaterra tells Song and Fitzgibbon that Chris is the real culprit. Murn arranges for his associate, Caspar Locke, to become the new Evergreen police captain; Locke overrides Song, proclaiming Auggie guilty, keeping him jailed. Song asks her uncle, Judge William Judy, to help issue a search warrant regarding Chris. Chris invites Adebayo to drink at his home; she plants a fake diary there to frame him, per Waller's orders. Afterwards, Adebayo discovers with Chris's X-ray helmet that Murn is a Butterfly, he realizes this and chases her down.",
+          "airDate": "2022-01-27",
+          "still": "https://image.tmdb.org/t/p/original/hUAnjCnWPn7SulqtNTe7xJhv38A.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/hUAnjCnWPn7SulqtNTe7xJhv38A.jpg",
+            "https://image.tmdb.org/t/p/original/ogM7f0n4YuFzXXMvplIJMPL4CZ0.jpg",
+            "https://image.tmdb.org/t/p/original/fU21zgEe72KUrDpgEXj1a9IHwvh.jpg",
+            "https://image.tmdb.org/t/p/original/9DIAZvuWoRcJlcCIBpmzi8R6qM5.jpg",
+            "https://image.tmdb.org/t/p/original/5MUrOls1QHBpki7qARp0Y0a0BRn.jpg",
+            "https://image.tmdb.org/t/p/original/auHc9WTbN65cARTcuRsOcPa8LbB.jpg",
+            "https://image.tmdb.org/t/p/original/xOIlFRhZDZg4o2Ho4C4Ugk1pExP.jpg",
+            "https://image.tmdb.org/t/p/original/wqjZ5blJ4iHpKXURvH1aOEUPixu.jpg",
+            "https://image.tmdb.org/t/p/original/tglXoBXlQqTSuAYaYCqUxtojEXh.jpg",
+            "https://image.tmdb.org/t/p/original/iRtF9dSWhomiKuoMqJWHWqv2RC.jpg",
+            "https://image.tmdb.org/t/p/original/89QRlxqyQjrriMt3AlYGZeinSJc.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Murn After Reading",
+          "overview": "Murn reveals his deepest secret. Auggie is set free. The botched arrest of Peacemaker sends alien Goff into an unexpected new host.",
+          "plot": "Harcourt tells Adebayo that she and Economos know Murn's Butterfly identity, but refuse to tell Waller, distrusting her. Murn tells Adebayo that the Butterflies came from a dying planet and are trying to conquer Earth, led by Goff's Butterfly, with Murn being the sole dissenter. Song obtains an arrest warrant for Chris and releases Auggie from prison. After being warned of the oncoming arrest raid by Murn, Chris and Adrian sneak away from Chris's home, but Song follows. Adrian accidentally breaks the jar containing Goff's Butterfly; it enters Song and takes over her brain. Locke acquires the planted fake diary and kills three officers, helping Chris, Adrian, and Eagly escape. Chris tells the team that Goff's Butterfly has taken over Song. Economos traces the Butterflies' activities to Coverdale Ranch, suspecting that an alien 'Cow' is mass-producing the Butterflies' food there. Butterfly-Song arranges for the Butterflies to take over all Evergreen prisoners and police officers, including Fitzgibbon and Locke. Using the fake diary, Butterfly-Locke publicly incriminates Chris as the killer of Sturphausen, the Glan Tai employees, Senator Goff and his family. Auggie reunites with his Aryan Empire followers and vows to kill Chris.",
+          "airDate": "2022-02-03",
+          "still": "https://image.tmdb.org/t/p/original/4IIMkGmzSsC02fjfqiFRQp7ySAM.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/4IIMkGmzSsC02fjfqiFRQp7ySAM.jpg",
+            "https://image.tmdb.org/t/p/original/5XxCcdfNqgu5ROX0KN8cHM4wBze.jpg",
+            "https://image.tmdb.org/t/p/original/ejYbA1CyRlbpwcZIMHwtuJbEVDR.jpg",
+            "https://image.tmdb.org/t/p/original/pKJUZxPlYgjNSh4xnXu0VVe4fPb.jpg",
+            "https://image.tmdb.org/t/p/original/rXXjZBKwktBZZldgQlmEr4i4SQD.jpg",
+            "https://image.tmdb.org/t/p/original/draQE1u5ase8pAxbSycHeeunRHX.jpg",
+            "https://image.tmdb.org/t/p/original/gEr1KXv5fgmEXm67ukHVLSZXHlF.jpg",
+            "https://image.tmdb.org/t/p/original/cNnNEgAj1M7bVWaNXlSeXpoPArW.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Stop Dragon My Heart Around",
+          "overview": "Harcourt, Murn, and Adebayo find themselves surrounded by an alien force, while Peacemaker squares off against his father with help from Vigilante and Economos.",
+          "plot": "Chris remembers accidentally killing his brother when Auggie made them fight in front of others while collecting bets. As a wanted man, Chris hurriedly sets out with Eagly, Adrian, and Economos to kill the Cow, but is tracked down and attacked by the suited Auggie and his followers. Adrian and Economos kill Auggie's followers as Auggie fights Chris. Chris blames Auggie for his brother's death before shooting him dead. Harcourt confronts Adebayo on her betraying Chris. Adebayo admits it and mentions being Waller's daughter and wanting to leave the team. Butterfly-Locke leads the Butterfly-officers to invade Murn's apartment, where Butterfly-Song shoots Murn's body and kills Murn's Butterfly. Judomaster escapes and attacks Harcourt and Adebayo, who incapacitate him. The team reunites at a veterinary clinic where Eagly recovers. Seeing Chris pray for Eagly, Adebayo decides to remain with the team. Without Murn, the team appoints Harcourt as their new leader. To defeat the Butterflies, the team intends to starve them by killing their Cow before the Butterflies can teleport it to another location. During the drive to Coverdale Ranch, Adebayo apologizes to Chris, but he indicates that their friendship is over.",
+          "airDate": "2022-02-10",
+          "still": "https://image.tmdb.org/t/p/original/bzdhWTRUb9CFF3tDT4SyBn0QGd.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/bzdhWTRUb9CFF3tDT4SyBn0QGd.jpg",
+            "https://image.tmdb.org/t/p/original/dCrp7cCXK8297sLOPG7PbddFcus.jpg",
+            "https://image.tmdb.org/t/p/original/fSJWS7LrtU8Xh5QSEUheGmaaTAm.jpg",
+            "https://image.tmdb.org/t/p/original/3JKrnWeNhXTIAWQTNRLojF825AR.jpg",
+            "https://image.tmdb.org/t/p/original/chV6k7zcVKWcYcS2lRgtdXPFWDV.jpg",
+            "https://image.tmdb.org/t/p/original/g4qjhVkG3gSeBTql9Ee7qwyqnh0.jpg",
+            "https://image.tmdb.org/t/p/original/spBPjVfkYqEcGiiiGDXw5oo1mtA.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "It's Cow or Never",
+          "overview": "With Peacemaker and Adebayo at odds, can the team kill the cow once and for all – or will their fracture give the aliens the opening they need to complete its teleportation?",
+          "plot": "Chris says his killings are aimed at preventing future meaningless deaths, while Adebayo advises him to not define himself by his accidental killing of his brother. The team reaches Coverdale Ranch; Adebayo asks Waller for backup, but none can come immediately. Entering the barn, Chris, Harcourt and Adrian fight and kill many Butterflies, including Butterfly-Fitzgibbon. Harcourt and Adrian are wounded. Adebayo joins the fight and saves Harcourt. Needing Chris's help to teleport the Cow away, Butterfly-Song saves Chris from rubble and asks for his help, explaining that the Butterflies are protecting Earth from humans who prioritize profit over their own survival. Chris instead kills the Cow by launching Adebayo into it using his human torpedo helmet. Chris kills Butterfly-Locke. He shoots Song's body; Goff's Butterfly emerges. The Justice League arrives, too late to help. Harcourt, Economos, and Adrian undergo medical treatment. Chris and Adebayo reconcile. Adebayo exposes Project Butterfly, Task Force X, and Waller's leadership of both to the press, clearing Chris and Adrian's names. Chris returns home with Eagly and Goff's Butterfly, who he feeds the last of his amber fluid. Chris hallucinates Auggie's presence.",
+          "airDate": "2022-02-17",
+          "still": "https://image.tmdb.org/t/p/original/9oi9FPSEYlDmMvHSQaCmhsDO6PU.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/9oi9FPSEYlDmMvHSQaCmhsDO6PU.jpg",
+            "https://image.tmdb.org/t/p/original/gdflvW6ymIe83nU3h5r59T1qJ4g.jpg",
+            "https://image.tmdb.org/t/p/original/c2gdGVFJlDrugpUvPJwnWNzzbp2.jpg",
+            "https://image.tmdb.org/t/p/original/gxKvyCtLqX1HA5Cvd7MdNRfcE6l.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 2,
+      "name": "Season 2",
+      "airDate": "2025-08-21",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "The Ties That Grind",
+          "overview": "While Peacemaker attempts to join the Justice Gang, Harcourt struggles to find work, and Economos takes on a challenging new assignment.",
+          "plot": "One night, Chris Smith / Peacemaker encounters a door in the Quantum Unfolding Chamber (QUC) he uses as a storage area, in which he finds an alternate reality where his father Auggie Smith is alive and a superhero. Six months later, Chris is displeased that he has not been taken seriously as a superhero and failed to join the Justice Gang, while Emilia Harcourt has been unable to find work in other agencies due to Amanda Waller's influence. Acting A.R.G.U.S. director Rick Flag Sr. is distrustful of John Economos' report on Peacemaker, while Economos and Leota Adebayo are aware that Flag knows that Peacemaker killed his son Rick Flag Jr. Chris returns to the alternate reality, where his brother Keith is shown to also be alive and a superhero. Chris eventually encounters his counterpart and a fight breaks out in the QUC, which ends with Peacemaker-2 being mortally wounded and dying in Chris' arms.",
+          "airDate": "2025-08-21",
+          "still": "https://image.tmdb.org/t/p/original/hoL20ZxHYTyNqzYZw5AAgwhHZPP.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/hoL20ZxHYTyNqzYZw5AAgwhHZPP.jpg",
+            "https://image.tmdb.org/t/p/original/u4PDid2D51qtACS9NT7KMHLLQNb.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "A Man Is Only As Good As His Bird",
+          "overview": "As Economos clashes with his new handler, Peacemaker must deal with the consequences of his actions in the alternate dimension.",
+          "plot": "A.R.G.U.S. agent Langston Fleury is assigned as Economos' handler, as Flag Sr. grows suspicious of the latter. Adebayo visits Chris and informs him of Flag Sr. monitoring him, while suggesting he surrender the QUC to A.R.G.U.S. Adrian Chase meets with the pair and later helps Chris dispose of Peacemaker-2's corpse. While Chris and the 11th Street Kids hold a party on the rooftop of Harcourt's apartment, Fleury leads an A.R.G.U.S. squad to infiltrate Chris' residence, only to be assaulted by his bald eagle pet Eagly. A drunken Chris returns home and goes to the alternate universe once more, this time sending a text to this universe's Harcourt, who was previously in a relationship with Peacemaker-2.",
+          "airDate": "2025-08-28",
+          "still": "https://image.tmdb.org/t/p/original/sAqQYYUMaS9FqHNACCQL9LRwsYn.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/sAqQYYUMaS9FqHNACCQL9LRwsYn.jpg",
+            "https://image.tmdb.org/t/p/original/m33IgFqmhDO0lNu37cFuTFwgopN.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Another Rick Up My Sleeve",
+          "overview": "Economos pays for the team's bungled mission, while Peacemaker explores the depths of his relationship with Harcourt in the other dimension.",
+          "plot": "Chris goes to meet Harcourt-2 at A.R.G.U.S. headquarters, where he learns that Flag Jr. is alive and dating Harcourt-2 in this universe. Harcourt-2 and Chris go on a walk, where Chris learns Harcourt-2 broke up with his counterpart because of his infidelity and unwillingness to commit to a serious relationship. Their conversation is interrupted by the Sons of Liberty, a paramilitary terrorist group who threatens to destroy a building with explosives. Chris sneaks into the building, kills the Sons, and deactivates the bomb. Later, after having an emotional conversation with Keith, Chris returns to his universe, unaware that A.R.G.U.S. agent Sasha Bordeaux has mobilized a team including Economos, Fleury, Judomaster, and eagle hunter Red St. Wild to raid Chris' home.",
+          "airDate": "2025-09-04",
+          "still": "https://image.tmdb.org/t/p/original/a8TIhxg98a8BLVOMP8p24c3lFaC.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/a8TIhxg98a8BLVOMP8p24c3lFaC.jpg",
+            "https://image.tmdb.org/t/p/original/gNQ6SZVJ2LUjtLr4YnViMIH1fPB.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Need I Say Door",
+          "overview": "As A.R.G.U.S. ramps up efforts to find the QUC, Harcourt receives a tempting offer from Flag – which comes at a steep cost to Peacemaker.",
+          "plot": "Economos tips Chris off about the incoming A.R.G.U.S. raid, prompting him to escape his home with Eagly and the gateway device for the QUC. Later, Economos knocks out St. Wild to prevent him from shooting Eagly, while Chris defeats Judomaster after encountering him in the woods. Chris calls Adebayo and explains the situation as both of them drive to a cabin in Settlers' Hill, where Chris sets up the device to transfer the QUC gateway to the cabin before A.R.G.U.S. could access it. Flag Sr. meets with Harcourt and offers her a chance to return to A.R.G.U.S., on the condition that she help him apprehend Peacemaker. Chris reveals to Adebayo his intention to move to the alternate dimension in spite of her protest, then later texts Harcourt asking to meet with her, unaware that she had reluctantly accepted Flag Sr.'s offer. As Chris goes to the meeting location, St. Wild performs a ritual that grants him a vision, allowing him to locate Eagly at the cabin.",
+          "airDate": "2025-09-11",
+          "still": "https://image.tmdb.org/t/p/original/6bdIgolsJzPHyJE7RLGeca1YKLn.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/6bdIgolsJzPHyJE7RLGeca1YKLn.jpg",
+            "https://image.tmdb.org/t/p/original/gVLsyIH1WMkVZPBP4pTVTRBbYUX.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Back to the Suture",
+          "overview": "After a catastrophic showdown with Flag, Peacemaker makes a shocking decision, while his friends scramble to keep the 11th Street Kids together.",
+          "plot": "At the meeting location, Harcourt tries to convince Chris to leave, denying that they had a connection after previously hooking up. However, not wanting Bordeaux to kill him, Harcourt knocks Chris unconscious herself. At A.R.G.U.S., Harcourt manages to get Economos to book Chris in jail to save his life as Flag Sr. brutally beats him up. Chris is let go and picked up by Adebayo, who takes him back to the cabin, unaware that Judomaster is following them on Flag Sr.'s order. Believing he does not belong in this universe, Chris decides to go to the alternate dimension permanently along with Eagly, who as the \"Prime Eagle\" summoned a horde of eagles to maul St. Wild to death while the 11th Street Kids were gone. Judomaster manages to sneak into the QUC before it closes. Later, as Adebayo reads Chris's farewell letter to the group, Harcourt resolves to bring him home.",
+          "airDate": "2025-09-18",
+          "still": "https://image.tmdb.org/t/p/original/c8LmcPtTvxqE708zBo1bD8RYqGw.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/c8LmcPtTvxqE708zBo1bD8RYqGw.jpg",
+            "https://image.tmdb.org/t/p/original/sa1tWLiZ2NpeDYWEOUt35yNkcnA.jpg",
+            "https://image.tmdb.org/t/p/original/463Llp41RuVxxrn9BZ58kM1SvtD.jpg",
+            "https://image.tmdb.org/t/p/original/9HeMMTlsRmU1NmVlHkk5UonGL9.jpg",
+            "https://image.tmdb.org/t/p/original/qYES8vkJCgC92VuKKiPOHzsfmf3.jpg",
+            "https://image.tmdb.org/t/p/original/r8vSWuKu40vAvRCxsA9NMCWa9oZ.jpg",
+            "https://image.tmdb.org/t/p/original/3j6IfIf0Al2xMTLhkAMYoBqpL2L.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Ignorance Is Chris",
+          "overview": "As the 11th Street Kids fight to bring their missing member home, Flag doubles down on his efforts to hold Peacemaker accountable.",
+          "plot": "The 11th Street Kids set up the dimensional portal at Adrian's home and head to the other dimension to try and get Chris home. Harcourt is taken by Keith to A.R.G.U.S., where she meets Chris, while Adrian manages to find his dimensional counterpart. Adrian-2 reveals that Peacemaker-2 is his archnemesis and the reason why he joined the Sons of Liberty. Economos is found by Auggie and stabbed in the hand with a knife, causing him to confess the death of Peacemaker-2 to Auggie. Chris confesses his love for Harcourt, but does not want to leave the alternate universe. Harcourt-2 shows up and calls security on the original Harcourt after Chris discovers a U.S. flag with a Nazi swastika on it in place of stars. Adebayo goes on a walk, but is soon pursued by Keith and other residents, as racial minorities are persecuted in this world. Meanwhile, Flag Sr. visits Lex Luthor in Belle Reve and strikes a deal to move him to Van Kull Prison, in exchange for his help in locating Peacemaker and his dimensional portal.",
+          "airDate": "2025-09-25",
+          "still": "https://image.tmdb.org/t/p/original/l55bH1tdPjWjCVaOe0yaXHVC2wn.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/l55bH1tdPjWjCVaOe0yaXHVC2wn.jpg",
+            "https://image.tmdb.org/t/p/original/ilvMGSXrdwDjNBrHQ1d5q1AoHx1.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Like a Keith in the Night",
+          "overview": "As Flag and A.R.G.U.S. close in, the 11th Street Kids attempt to keep the ever-increasing dangers of the alternate world around them at bay.",
+          "plot": "Chris and Harcourt escape A.R.G.U.S. before Auggie and Keith corner them and take them back to the Smiths' mansion. At the same time, Judomaster rescues Adebayo. Meanwhile, Flag Sr. and Bordeaux work with Sydney Happersen, a former LuthorCorp employee, to locate the dimensional rift at Adrian's house. Auggie and Keith interrogate Chris, but are interrupted by the cops looking for Chris. The two Vigilantes meet with Adebayo and Judomaster outside of the Smith house. Auggie allows Chris and his friends to leave the dimension, despite Keith's protests. Adrian sneaks up on and kills Auggie, to Chris and Keith's horror, and the Kids head to the portal. Keith pursues them and is severely injured by Eagly, Adrian, and Harcourt, before a traumatized Chris stops them from killing him and admits that he feels responsible for all of the deaths that occur around him. After fighting off cops, the Kids and Judomaster run back to their dimension and shut the portal down, but are confronted by A.R.G.U.S. waiting outside of Adrian's house. Chris hands over the device to Flag and gives himself up for arrest.",
+          "airDate": "2025-10-02",
+          "still": "https://image.tmdb.org/t/p/original/zGwyJ5w7SKznoR336cK3UFldkx1.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/zGwyJ5w7SKznoR336cK3UFldkx1.jpg",
+            "https://image.tmdb.org/t/p/original/eGaC2eVcOT76aHB3gx9xWJPBfjv.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Full Nelson",
+          "overview": "As Flag puts everyone around him in increasing danger, the 11th Street Kids must convince Peacemaker that he's one of them.",
+          "plot": "One month earlier, Chris and Harcourt go out for a night that ends in a kiss that results in Harcourt leaving. In the present day, Chris is in prison, refusing to see the Kids. Meanwhile, A.R.G.U.S. investigates the doors in the QUC, where multiple A.R.G.U.S. agents are killed. Adebayo and Adrian bail out Chris, who takes Eagly and runs away, with none of the Kids knowing where he went. A.R.G.U.S manages to find a habitable dimension, which they name Salvation. Flag Sr. pitches the new dimension be used as a prison for metahumans to the government, which is approved. Disillusioned, Bordeaux reveals this to Harcourt before using Bordeaux's A.R.G.U.S. credentials to locate Peacemaker. The two then quit their jobs at A.R.G.U.S. together. The Kids head to the motel where Chris is staying and they tell him he is loved and appreciated. Harcourt tells Chris that the night on the boat was meaningful to her as well and the two begin dating. One week later, they all start a new agency, Checkmate, alongside Bordeaux, Fleury, and Judomaster. However, Chris is kidnapped and trapped in Salvation by Flag and A.R.G.U.S.",
+          "airDate": "2025-10-09",
+          "still": "https://image.tmdb.org/t/p/original/xxcurGIZRflwVqNVvJ7kG5CTaVs.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xxcurGIZRflwVqNVvJ7kG5CTaVs.jpg",
+            "https://image.tmdb.org/t/p/original/ehVDxibqt3TfYTDEKWwHAC6XbGj.jpg",
+            "https://image.tmdb.org/t/p/original/gzOBgNETW0PQegZ4EiDJpE7I41S.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "cast": [
+    {
+      "name": "John Cena",
+      "character": "Christopher 'Chris' Smith / Peacemaker",
+      "episodeCount": 16,
+      "profile": "https://image.tmdb.org/t/p/original/rgB2eIOt7WyQjdgJCOuESdDlrjg.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/384/960763.jpg"
+    },
+    {
+      "name": "Danielle Brooks",
+      "character": "Leota Adebayo",
+      "episodeCount": 16,
+      "profile": "https://image.tmdb.org/t/p/original/hwrMFbcALcqrV7S2pRP9C5BXrU0.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/384/960768.jpg"
+    },
+    {
+      "name": "Freddie Stroma",
+      "character": "Adrian Chase / Vigilante",
+      "episodeCount": 16,
+      "profile": "https://image.tmdb.org/t/p/original/wZ8nqxyGvybdInXLBfQIjg2es5Z.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/384/960765.jpg"
+    },
+    {
+      "name": "Jennifer Holland",
+      "character": "Emilia Harcourt",
+      "episodeCount": 16,
+      "profile": "https://image.tmdb.org/t/p/original/ynuKq1Pd6aVGwhb07uJ0PiYV4F6.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/384/960766.jpg"
+    },
+    {
+      "name": "Steve Agee",
+      "character": "John Economos",
+      "episodeCount": 16,
+      "profile": "https://image.tmdb.org/t/p/original/sbMpatWydjTl2cTcDXFMTgCkEBO.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/384/960767.jpg"
+    },
+    {
+      "name": "Robert Patrick",
+      "character": "August 'Auggie' Smith / Blue Dragon",
+      "episodeCount": 16,
+      "profile": "https://image.tmdb.org/t/p/original/qRv2Es9rZoloullTbzss3I5j1Mp.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/587/1468919.jpg"
+    },
+    {
+      "name": "Dee Bradley Baker",
+      "character": "Eagly (voice)",
+      "episodeCount": 16,
+      "profile": "https://image.tmdb.org/t/p/original/9oFnToDZWp0I484s7Ua1EzNQQ2m.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nhut Le",
+      "character": "Rip Jagger / Judomaster",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/A9DmI30NVJZHZ67f1cgEp4PJeeV.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lochlyn Munro",
+      "character": "Larry Fitzgibbon",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/bOJ03k0oe2R6snRgzV8M4Qtoo4O.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Chukwudi Iwuji",
+      "character": "Clemson Murn",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/5JILtFNmAmA8T4gRQrO5sn8krDv.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/384/960764.jpg"
+    },
+    {
+      "name": "Frank Grillo",
+      "character": "Rick Flag Sr.",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/kuEco4vo1xrsM8DyrNSZUEi593P.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/587/1468517.jpg"
+    },
+    {
+      "name": "Annie Chang",
+      "character": "Sophie Song",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/aRCg4OFqRcSDuzsgLCHVrM7KRAd.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Elizabeth Faith Ludlow",
+      "character": "Keeya",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/1uPWvmq1SsFqjJPhgZsr8GNXbcI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sol Rodriguez",
+      "character": "Sasha Bordeaux",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/trBvJNWzg1uFkVXpzilfl6xLrzC.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tim Meadows",
+      "character": "Langston Fleury",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/u9MCgfy0n5jJ2GTsGALdist19C1.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rochelle Greenwood",
+      "character": "Peggy",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/1AsN5UFwBRibQJqKNhczDQlV7M9.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Zak Santiago",
+      "character": "Prison Guard",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/hzFNa8a6rAD9FtWqJoXj20F2xdq.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brandon Stanley",
+      "character": "Agent Kline",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/26wYqLBknyVfXQoLw1RSbhPeDV.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kevin O'Grady",
+      "character": "Johnson",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/yTH5u9Sdh06i9BE8W4zU54DQqwU.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Neil Webb",
+      "character": "Cool Steve",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/1kh8qAPiOix87Cg4vGBH9zZbVPV.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Bzhaun Rhoden",
+      "character": "Young Man",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/eMLSCvqhfhSFk1lZsqcpIGru1pM.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Reinaldo Faberlle",
+      "character": "Agent Vega",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/vVsxgN6hsbqeXMk9Gn0VvNbTSy2.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "David Denman",
+      "character": "Keith Smith / Captain Triumph",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/4I06ZD8SQ6pU1QYShiUXb711fJW.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Quinn Bennett",
+      "character": "Young Chris",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/xbsq2FVxl8Nk6HbxM8l4LX57h9d.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Liam Hughes",
+      "character": "Keith",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/1lZLJ9Xi1cyWOoqKXgD5dBPjgmV.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Christopher Heyerdahl",
+      "character": "Captain Caspar Locke",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/pTPZa3TFIkxRbqM5adXYE51a99s.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dorian Kingi",
+      "character": "Kyphotic Alien",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/2bqMvUVaQUg8jGqpf3OcQyKhUYg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mel Tuck",
+      "character": "Auggie's Neighbor",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/eKFilK9fu4HrMezY7O3qNfFJJEL.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/587/1468919.jpg"
+    },
+    {
+      "name": "Stephen Blackehart",
+      "character": "Sydney Happersen",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/v5niazocH1HjyCIxrnbrf93P1dK.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Rooker",
+      "character": "Red St. Wild",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/ngOuHNIAGrKyY1O7F0f9C5Q9ONg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Daniel Baldock",
+      "character": "Billy",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/4BEfv5Vl82iM9vmmFSPHXBh5146.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Joel Kinnaman",
+      "character": "Colonel Rick Flag Jr. (archive footage) (uncredited)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/cVfYzTyQdJ4xtxKPZe7IcW3BJN4.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/587/1468517.jpg"
+    },
+    {
+      "name": "Taylor St. Clair",
+      "character": "Vigilante's Mom",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/d9dVvcJsFBB76chmYl7kPRFXbH8.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/384/960765.jpg"
+    },
+    {
+      "name": "Crystal Mudry",
+      "character": "Annie Sturphausen",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/z5Zp4GbPtWuEbl7rECRehcHxGFG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Paul Lazenby",
+      "character": "Dickhead",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/nLql838eW98JYcNyZ8FlBHACxGo.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Darryl Scheelar",
+      "character": "Dickhead",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/ee7Mr2N7eKIQEZ9XhlFyElZgDs0.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alison Araya",
+      "character": "Amber Calcaterra",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/gOQv2rkXLRBvVXVoXYERnjcSKAk.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lenny Jacobson",
+      "character": "Evan Calcaterra",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/ljpRA3yHIhjcsNTemUahpMAfGlS.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rizwan Manji",
+      "character": "Jamil",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/mBsLE1sDCWZXR9PWV8xptTpxkQc.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ryan Jefferson Booth",
+      "character": "Racist Thug",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/h4JgRHkHvugPGWQ8AWGLoEHsphg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jen Znack",
+      "character": "Skinhead Girl",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/aUd0s0lUSdy60LTPynWLEDEl07z.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Klarc Jerome Wilson",
+      "character": "Dave",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/pBS0da0XqdDzc32JALihUL5Tb6w.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Paul Tryl",
+      "character": "Whitehood Wanker",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/dqvqhttA7iX7rAzDeAqkBUC0odY.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Viola Davis",
+      "character": "Amanda Waller (uncredited)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/xDssw6vpYNRjsybvMPRE30e0dPN.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Troy Anthony Young",
+      "character": "Terrified Man",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/v943HENHD4NozCUomhqPfdXbOve.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lissa Neptuno",
+      "character": "Doctor",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/x1IOyR0S9dhkoDjScQAMjB576Ts.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Elliot Frances Flynn",
+      "character": "Zora",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/fWrTxbldXRDEmyHmPStKSZkMGyr.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "John Nania",
+      "character": "Jerry",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/2CzFwb95Aj7g2tYZqFA6UzTPoqm.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Anissa Matlock",
+      "character": "Agent Angler",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/zbHdwhc6hZGBEjZktBV0WHsbXEy.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rabon Hutcherson",
+      "character": "Rando Agent",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/jgxLFcry9jl1W3B7WMZRaP3whB3.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kellen Boyle",
+      "character": "Vigilante Acting Double",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/bR53ypX16z5dvf1186Q7p5mKft2.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/384/960765.jpg"
+    },
+    {
+      "name": "Devin Broadbent",
+      "character": "ARGUS Guard",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/wGZSl4JtKMCTusUDJC2mN2x4051.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Elizabeth McCarthy",
+      "character": "Head Nurse",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/q6PdvwIVclWSxBHgBYVpbK0PM02.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Faith Wright",
+      "character": "Murn's Inside Nurse",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/7cqpgfKYesFX6DMZnUulpe7fpWr.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/384/960764.jpg"
+    },
+    {
+      "name": "Tim Zhang",
+      "character": "Cabbie",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/sSleUZIReLxmiRFsdWeQJlAx9dP.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brent Chapman",
+      "character": "Fact Attack Host",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/1DNhHT7MwKBHK7LAzAbOp5YMDV0.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ursina Luther",
+      "character": "Waitress",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/oe3CkkmjhvXKGkF79keo8cCWGZM.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kris Kuruneri",
+      "character": "Bartender",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/mR4yxvz5R0n9Pk4FN6OW0aCbK25.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jade Pawluk",
+      "character": "Douchebag",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/v1HfdkUab9Sqd39A095Xbn3JqEF.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Scott Pocha",
+      "character": "Even Bigger Friend",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/5xur8R3yiOKLAzEeCoW3KcpKlUg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Gabriela Reynoso",
+      "character": "Lookie-Loo",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/o8TjNJ7hi29KPQyCKSU5QVcTote.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Veena Sood",
+      "character": "Captain Miele",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/yze2fvd4rvzovqyjtKbCpFaw1UM.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Natalia Safran",
+      "character": "Mrs. Goff",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/3luVtifpeQvF54jEf6NbK2Oz0dE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Antonio Cupo",
+      "character": "Senator Royland Goff",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/9DMre8ZuRg11kEeI4X0ESbVIW2.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sage Brocklebank",
+      "character": "Bodyguard",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/7BFFanLsfc2m4FU7Hvw8GDTGOEt.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Neetu Garcha",
+      "character": "Reporter",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/oZszGN28ZgYDtxwoSWev1d1y5fR.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Yvette Ferguson",
+      "character": "Receptionist",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/AcLxtmeZFbbtdtHZAkXQT9aTNm8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Troy Mundle",
+      "character": "Harried Worker",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/ySAtMdzDnEfzw1yUP3h0olc8arY.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "David Beairsto",
+      "character": "Judge William Judy",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/4lfV0ydCyq1odhEK0THPKqEXu4x.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alexander Brophy",
+      "character": "'Sad Eyed Kid'",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/2AwP31oBvHye1b81pTaJRikmeX4.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Marcia D. Bennett",
+      "character": "Teacher",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/aFzBSJbUwSmqm98Do4nxldIl9nq.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Billy Christos Jr.",
+      "character": "'Chubster'",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/94Sv538BmjE0SciggyRO5XoFEBF.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "David Pavlov",
+      "character": "'Urkel'",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/iJkUCc2wBJH84cYONSIa7j1NmCE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alice Comer",
+      "character": "'Pasketti Arms'",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/klUb66tBtHLUp65hmKMxe92Pplz.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Douglas Roy Dack",
+      "character": "White Power Shithead",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/4nPJvK65azO95NHneIrl4fQKp8v.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Trevor Hinton",
+      "character": "Asshole Referee",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/liq7isCmjEC6YkIa8yX9k2mDfT1.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Newman",
+      "character": "Reporter",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/r5LVYDwXX4HlHl6KO6WtbiuuOib.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jason Momoa",
+      "character": "Arthur Curry / Aquaman (uncredited)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/3troAR6QbSb6nUFMDu61YCCWLKa.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ezra Miller",
+      "character": "Barry Allen / The Flash (uncredited)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/6wmTpbYpmhthaxzM5ss3377F9IV.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tyler Burrows",
+      "character": "Frat Dude",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/a9hP7WBeb47ZBs401Np0AwGRsAb.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dan Ginnane",
+      "character": "Frat Dude",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/bnmKZPw4YImSNdR7ndLCTcP7Gxk.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Isaac George-Hotchkiss",
+      "character": "7-11 Cashier",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/qFLhQq6QrhadmciUenUAcK0drxf.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Haig Sutherland",
+      "character": "Dr. Hurwitz",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/o6wu1HoDk1xnqPHZorW7OmERhnj.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sarah Corrigan",
+      "character": "Female Nurse",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/qfGFXoiZuIfgyQ8w1dhy1SCZDfD.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Philippe Collins",
+      "character": "Male Nurse",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/iS01UadtaL6HZt4nzFkBhxZYjtK.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brad Abramenko",
+      "character": "Clark Kent / Superman (uncredited)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/klzowbCIiUqdUGaIwvITpK7Heds.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Cynthia Oroz",
+      "character": "Nurse",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/lvVAuJS9a5B16zIYDZZe97m66uk.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kimberley von Ilberg",
+      "character": "Diana Prince / Wonder Woman (uncredited)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/241LVRsym1s1HNm2HTVMnxkBbJ4.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Isabela Merced",
+      "character": "Hawkgirl",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/4SolFI9dwyPm6BXcb3PDcOYzSEl.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nathan Fillion",
+      "character": "Guy Gardner",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/aW6vCxkUZtwb6iH2Wf88Uq0XNVv.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sean Gunn",
+      "character": "Maxwell Lord",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/tiolBlPytndQVGHO9vLnBKWWenq.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brey Noelle",
+      "character": "White Rabbit",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/3TPXzKsNWMydoC57BWthKBxqZmM.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Vince Pisani",
+      "character": "Psychologist",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/auCC2e7IKC146MDvO4k8tPXMKaZ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Angela Ray",
+      "character": "Ms. Godfrey",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/hyojZybdJjPFOq9ddVHMIQ70s9X.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Ian Black",
+      "character": "Cleavis Thornwaite",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/qAOJfAK6VjV7ugRfy1zbud14OkQ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Josh Diogo",
+      "character": "Burly Biker",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/7iOhofsMaIuOxJQqlDP8t2XY7J8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jefferson Cox",
+      "character": "Biker",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/4J1uS59Fiz2FLnrfpF3zbgn4f4P.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Troy Butler",
+      "character": "Biker",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/5Bj3TY5Xws4uJSOfF38ImM8RlPC.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dan Mast",
+      "character": "Biker",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/jLYJLW8BUTXlbQtlLI7GSKhtDpk.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Erin Elizabeth Burns",
+      "character": "Timid Woman",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/1FzWjqOAMtqNV2cToMJcrLhU5kv.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jesse Burt",
+      "character": "Reputed Beaker Lookalike",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/48xbOOAt66BrTs2KjkpV8PfQMs8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tanya Freeman",
+      "character": "Woman in Aisle",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/rxq9Dub9QYhbr7osL0hPDwfGlj2.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Patrick Logan",
+      "character": "Agent Tillerson",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/gDUxtZ2NQIDPE9RSVwe91DzUPxg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sarah Elaine",
+      "character": "Sexy Woman",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/7bUQAmyG29P0AlhILeiK4axVHWG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Adam Boyer",
+      "character": "Scruffy Man",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/lxqVHfVnMxExCSzJLal5gFHeVW8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Vanessa Cater",
+      "character": "Amy",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/ybri5mdJeBFIPQQ5ZLiTQGloGyX.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Royal Allen",
+      "character": "Large Man",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/2toZnHYsnxJYamamMo9zww3yGT7.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kurt Hockenberry",
+      "character": "Guard",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/7ZldGDiKcO1iGXKMWeOhx7bZ1R4.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "CC Ice",
+      "character": "Filthy Woman",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/rBpLiVRM7b0XiclcvaPpT5G8B3A.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "David Flannery",
+      "character": "Brad",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/bq71kRzofr8gnGDihZUupjbQK6i.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alicia Kelley",
+      "character": "Hostage",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/zR6AEQW9thXriqrtnqGKzVviOpD.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Daniel Norris",
+      "character": "Gary",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/qYF3flu5MEmIBQBl6PWXRfwGhld.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Trey Butler",
+      "character": "Cop",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/srPB93dOkbhqdIw8WuhGwYHnwy8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rory Keane",
+      "character": "Pet Store Guy",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/hbv61xBI0sQSKg9APeiLUu9DLcd.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ben Bladon",
+      "character": "Jim",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/fUTaHAc9PHjt33UU9bSGJNFv8Qe.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dylan Cheek",
+      "character": "Helicopter Pilot",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/myPu6yF9gcwSYcPZg0BE3Wi7p5q.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Matthew Sean Blumm",
+      "character": "Helicopter Son",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/bfhzOs0pDxTZrI5rdMOnFFkeb6D.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ben Aycrigg",
+      "character": "Stairwell Son",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/ykHcYxPi3KqYnxFXaD3RFWVHTGv.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Bryson Haney",
+      "character": "Young Keith",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/rC0uDmtRgiqyMrOIjuIs7vQt6Ku.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sylvia Castro Galan",
+      "character": "Older Woman",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/xsPvhrYFkIFfCJSYmunxOZR1mrN.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Cameron Bass",
+      "character": "Young Man",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/xaVTWTjlg6zGWQeCGGpyFB0tDNp.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Willa Darian",
+      "character": "Young Woman",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/xNuJZlgyCwGTA1gVMY5CwC7XVu5.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nicholas Hoult",
+      "character": "Lex Luthor",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/pXm8GWTm9eIA8pUGOjvmYjlxamu.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Aven Lotz",
+      "character": "Blonde Kid",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/lbOvCiG8tqkQ6jdEaD055tLbyg5.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tyler Buckingham",
+      "character": "ARGUS Guard with Dog",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/emD970x4qNHXKkW3VvJ2AdWLEo8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Regis Harrington",
+      "character": "Yelling Neighbor",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/siOP8vEs5MfRlaFha5E5uDxYEIE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Noah Bain Garret",
+      "character": "Yelling Neighbor",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/fe4149rQ47GWH486JhAwFLG43IN.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Bryan Bachman",
+      "character": "Armed ARGUS Guard",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/lFyD72ZhHEarrTOlnyXh10ikP1Y.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Terence Rosemore",
+      "character": "Otis Berg",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/mjBaREqAREvJLxDpOlUGLxaYrIP.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "James Hiroyuki Liao",
+      "character": "General Mori",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/lF7Vs93LJAXnIuipKKnC1O3jTU2.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Keith Brooks",
+      "character": "Hick",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/opl2R31eCiiJU6NVmX8lpo5cdNU.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jeff Kaplan",
+      "character": "Hazmat Agent",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/zo6jL8je2H72Q1ABtL0nlVCXUQr.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Natasha Halevi",
+      "character": "Amanda Marie McCoy",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/wDHcMDjNexo3cfOUjmruaThhv6H.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Bonnie Discepolo",
+      "character": "Ms. Jessop",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/vGIlPXkuqLhe8kVmQigbEv7dTAE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jared Haibon",
+      "character": "ARGUS Coke Head",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/x5cz9wjC7paOZCuMyfQjijLaLEn.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Eric Nally",
+      "character": "Foxy Shazam - Lead Singer",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/kJikueLQ1VfrHnCNLb0R0urSwXQ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Adam Hart",
+      "character": "Zombie (uncredited)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/lVQreqn2sL33TgPlqY12YymQ3e8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Gunnar Nelson",
+      "character": "Gunnar Nelson",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/1rf72K3mv6gCWJsZZQCkyjpMzxi.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Spring Lyons",
+      "character": "Orgy Participant(uncredited)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/i0p22J2IpyBfxIFeIhlRsMgERSk.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Madison Oakley",
+      "character": "Orgy Participant (uncredited)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/Adna05v1SK4fUWgxO4sqgsVfvhF.jpg",
+      "inCharacter": null
+    }
+  ],
+  "generatedAt": "2026-07-23T19:58:38.117Z"
+}

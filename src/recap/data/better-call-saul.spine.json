@@ -58,7 +58,7 @@
       "characters": [
         {
           "name": "Jimmy McGill",
-          "line": "A hustling public defender working out of a nail salon back room, chasing a big case at Sandpiper Crossing after swearing off cons following Marco's death."
+          "line": "A hustling public defender working out of a nail salon back room, walking away from the Sandpiper case after Marco's death and resolving to stop doing the right thing."
         },
         {
           "name": "Chuck McGill",
@@ -132,7 +132,7 @@
         },
         {
           "label": "S2 · The tape",
-          "text": "Chuck stages a fall at the copy store to lure Jimmy into confessing to the tampering — and secretly records every word.",
+          "text": "Chuck collapses at the copy store from his EHS, then stages a broken-judgment retirement at home to lure Jimmy into confessing — and secretly records every word.",
           "anchorEpisode": 10,
           "whyLoadBearing": "The evidence Chuck will weaponize; the trap Jimmy is walking into blind.",
           "needsVerify": false
@@ -157,7 +157,7 @@
         },
         {
           "name": "Chuck McGill",
-          "line": "Convinced Jimmy sabotaged his Mesa Verde work, he stages a copy-store fall to draw a taped confession out of his brother."
+          "line": "Convinced Jimmy sabotaged his Mesa Verde work, he stages a broken-judgment retirement at home to draw a taped confession out of his brother."
         },
         {
           "name": "Howard Hamlin",
@@ -169,7 +169,7 @@
         },
         {
           "name": "Hector Salamanca",
-          "line": "The Salamanca family's regional boss, now paying Mike to bury Tuco's assault charge and using his ice-cream trucks to move product."
+          "line": "The Salamanca family's regional boss, now paying Mike to bury Tuco's assault charge and using cargo trucks to move product."
         },
         {
           "name": "Mesa Verde",
@@ -196,7 +196,7 @@
         },
         {
           "label": "S3 · Chicanery",
-          "text": "At Jimmy's bar hearing, Kim plants Chuck's phone battery on him; Chuck's rant on the stand exposes his EHS as psychological and finishes his career.",
+          "text": "At Jimmy's bar hearing, Huell plants Jimmy's phone battery on Chuck; Chuck's rant on the stand exposes his EHS as psychological and finishes his career.",
           "anchorEpisode": 5,
           "whyLoadBearing": "The public destruction of Chuck — the wound that drives him into his last months.",
           "needsVerify": false
@@ -249,7 +249,7 @@
         },
         {
           "name": "Kim Wexler",
-          "line": "Jimmy's partner and lover, carrying Mesa Verde and every other client alone until she totals her car from exhaustion."
+          "line": "Jimmy's partner and lover, taking on a second client to make ends meet until she totals her car from exhaustion."
         },
         {
           "name": "Howard Hamlin",
@@ -261,11 +261,11 @@
         },
         {
           "name": "Gus Fring",
-          "line": "The Los Pollos Hermanos owner and secret cartel distributor, who recruits Mike, tolerates Nacho's pill swap, and keeps Hector alive in a wheelchair to prolong his suffering."
+          "line": "The Los Pollos Hermanos owner and secret cartel distributor, who recruits Mike, tolerates Nacho's pill swap, and resuscitates Hector after his stroke."
         },
         {
           "name": "Nacho Varga",
-          "line": "Terrified for his father, he swaps Hector's nitro pills for placebos and triggers the stroke at Don Eladio's summit."
+          "line": "Terrified for his father, he swaps Hector's nitro pills for placebos and triggers the stroke at a meeting with Gus and Juan Bolsa."
         },
         {
           "name": "Hector Salamanca",
@@ -376,7 +376,7 @@
       "beats": [
         {
           "label": "S5 · Lalo's lawyer",
-          "text": "Jimmy hangs the Saul Goodman shingle; Nacho, forced by Gus, delivers Saul to Lalo Salamanca as a lawyer the family can use.",
+          "text": "Jimmy hangs the Saul Goodman shingle; Nacho delivers Saul to Lalo Salamanca, who wants a lawyer to spring Domingo from prison without talking.",
           "anchorEpisode": 2,
           "whyLoadBearing": "The introduction that pulls Saul from petty grift into cartel-scale exposure.",
           "needsVerify": false
@@ -512,7 +512,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Jimmy is serving 86 years and has reclaimed both his name and the blame for Chuck. Kim, having confessed her own role, walks free but ruined. The last image is the two of them sharing a cigarette through the prison fence.",
+        "text": "Jimmy is serving 86 years and has reclaimed both his name and the blame for Chuck. Kim, having confessed her own role, walks free but ruined. The last image is their signature finger-gun gesture as she leaves.",
         "questions": [
           "What does a life outside the law look like for Kim now?",
           "Does Jimmy find any peace as the man Chuck once told him he could be?",
@@ -526,7 +526,7 @@
         },
         {
           "name": "Kim Wexler",
-          "line": "The architect of the Howard con, she surrenders her law license and writes Cheryl an affidavit before walking away from Jimmy."
+          "line": "The architect of the Howard con, she surrenders her law license and walks away from Jimmy, later writing Cheryl an affidavit."
         },
         {
           "name": "Lalo Salamanca",
@@ -550,7 +550,7 @@
         },
         {
           "name": "Marion",
-          "line": "Gene's kindly Omaha acquaintance who recognises him from a Better Call Saul clip and calls the police from her Life Alert."
+          "line": "Gene's kindly Omaha acquaintance who identifies him as Saul Goodman via an online search and calls the police from her Life Alert."
         }
       ]
     }
@@ -563,5 +563,6 @@
       "actor": "Bob Odenkirk",
       "character": "Jimmy McGill"
     }
-  }
+  },
+  "repairedAt": "2026-07-23T17:13:49.682Z"
 }

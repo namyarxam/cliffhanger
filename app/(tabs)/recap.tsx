@@ -42,29 +42,32 @@ export default function RecapScreen() {
   const recaps = recapsQ.data ?? [];
 
   /**
-   * Two tiers: what's worth recapping now, and everything else.
+   * Two groups, on `tier` from the server (migrations 069 + 070):
    *
-   * A recap earns a full card when it is both available and still ahead of
-   * you — you have finished a season and there is more show to come. Once a
-   * show is finished, or you have not started it, the recap still exists but
-   * the moment for it does not, so it goes below the fold rather than
-   * competing for attention with the ones that are actually useful.
+   *   live (0)   a recap you have earned, with show still ahead of you
+   *   spent (2)  the show has ended and you have seen all of it. The recap
+   *              still exists but the moment for it has passed.
    *
-   * Collapsed rather than hidden because the ratio only gets worse as the
-   * library grows: at 100 shows a typical viewer has a handful of live ones
-   * and everything else is either finished or untracked, and a wall of locked
-   * cards is not a list.
+   * There was a third — recaps you had not unlocked — and removing it is what
+   * made this screen simple. It held untracked shows, shows with no season
+   * finished, and muted shows, none of which the viewer could open, and all
+   * of which had to be labelled and filtered around. 070 stops returning them.
+   *
+   * What is left needs one expander, not a filter: everything visible by
+   * default is openable, and the single collapsed group has a name that
+   * explains itself.
+   *
+   * The split is deliberately NOT re-derived here — the server computes it
+   * next to the ordering it has to agree with.
    */
-  const [active, dormant] = useMemo(() => {
+  const [active, spent] = useMemo(() => {
     const a: RecapListEntry[] = [];
-    const d: RecapListEntry[] = [];
-    for (const r of recaps) {
-      (r.maxSeason > 0 && r.watchStatus !== 'watched' ? a : d).push(r);
-    }
-    return [a, d];
+    const s: RecapListEntry[] = [];
+    for (const r of recaps) (r.tier === 2 ? s : a).push(r);
+    return [a, s];
   }, [recaps]);
 
-  const [showDormant, setShowDormant] = useState(false);
+  const [showSpent, setShowSpent] = useState(false);
 
   useEffect(() => {
     if (recapsQ.error) silentCatch('recap:list')(recapsQ.error);
@@ -76,8 +79,12 @@ export default function RecapScreen() {
   // next season airs — never at the moment you catch up. So fetching quietly
   // here means the data is on the device long before anyone asks for it, and
   // the server-side season cap costs nothing in felt speed.
+  //
+  // Spent shows are excluded: they sit behind a collapsed control and are
+  // opened rarely, so warming them is bandwidth spent on the least likely tap
+  // on the screen. They still fetch on demand.
   useEffect(() => {
-    for (const entry of recaps) void prefetchRecap(entry);
+    for (const entry of recaps) if (entry.tier !== 2) void prefetchRecap(entry);
   }, [recaps]);
 
   const open = (slug: string, range: SeasonRange) =>
@@ -117,35 +124,36 @@ export default function RecapScreen() {
           />
         ))}
 
-        {dormant.length > 0 && (
-          <>
-            <Pressable
-              style={styles.moreRow}
-              onPress={() => setShowDormant(v => !v)}
-              hitSlop={6}
-            >
-              <Text style={styles.moreText}>
-                {showDormant ? 'Hide' : `${dormant.length} more`}
-              </Text>
-              <FontAwesome
-                name={showDormant ? 'chevron-up' : 'chevron-down'}
-                size={11}
-                color={theme.textDim}
-              />
-            </Pressable>
-
-            {showDormant &&
-              dormant.map(item => (
-                <RecapCard
-                  key={item.slug}
-                  item={item}
-                  styles={styles}
-                  theme={theme}
-                  onOpen={range => open(item.slug, range)}
-                />
-              ))}
-          </>
+        {/* One control, named for what is behind it. "Finished" is doing the
+            work a sub-heading had to do in the two-section version — with a
+            single group there is nothing to disambiguate it against. */}
+        {spent.length > 0 && (
+          <Pressable
+            style={({ pressed }) => [styles.moreRow, pressed && styles.morePressed]}
+            onPress={() => setShowSpent(v => !v)}
+            hitSlop={6}
+          >
+            <Text style={styles.moreText}>
+              {showSpent ? 'Hide finished' : `${spent.length} finished`}
+            </Text>
+            <FontAwesome
+              name={showSpent ? 'chevron-up' : 'chevron-down'}
+              size={10}
+              color={theme.textDim}
+            />
+          </Pressable>
         )}
+
+        {showSpent &&
+          spent.map(item => (
+            <RecapCard
+              key={item.slug}
+              item={item}
+              styles={styles}
+              theme={theme}
+              onOpen={range => open(item.slug, range)}
+            />
+          ))}
 
         {!recapsQ.isLoading && !recapsQ.isError && (
           <View style={styles.note}>
@@ -162,11 +170,13 @@ export default function RecapScreen() {
 }
 
 /**
- * Why a card has nothing to offer yet.
+ * Why a card has nothing to offer.
  *
- * Stated plainly rather than hiding the card: a recap for a show you haven't
- * started is just a spoiler, but "we have this, finish a season and it opens"
- * is useful information and a reason to add the show.
+ * A fallback, not a normal state. Since 070 the server does not return
+ * unopenable recaps, so this should not render — but the list is cached, and
+ * a show muted on another device can sit in that cache until the next fetch.
+ * A card that explains itself beats one that silently does nothing when
+ * tapped.
  */
 function lockedReason(item: RecapListEntry): string {
   if (item.watchStatus === 'muted') return 'Muted';
@@ -308,13 +318,27 @@ const createStyles = (theme: Theme) =>
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'center',
-      gap: 7,
-      paddingVertical: 14,
+      gap: 8,
+      // Hugs its text instead of spanning the list, so it reads as a control
+      // rather than a row. alignSelf beats a width, which would have to be
+      // re-guessed every time the label or the count's digit width changes.
+      alignSelf: 'center',
+      paddingVertical: 9,
+      paddingHorizontal: 16,
+      borderRadius: 999,
+      borderWidth: StyleSheet.hairlineWidth,
+      borderColor: theme.border,
+      backgroundColor: theme.bgCard,
+      marginVertical: 4,
+    },
+    morePressed: {
+      opacity: 0.6,
     },
     moreText: {
       fontSize: 13,
       fontFamily: 'DMSans_500Medium',
       color: theme.textDim,
+      fontVariant: ['tabular-nums'],
     },
     seasonBadge: {
       position: 'absolute',

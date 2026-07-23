@@ -100,6 +100,23 @@ const tokens = s =>
 function composer(data, castLinks) {
   const keyArt = data.backdrop ?? data.backdrops?.[0] ?? data.poster;
 
+  // Whether this is an animated show, which changes what a valid portrait IS.
+  //
+  // For live action a TMDB actor headshot is a poor-but-real fallback: it is
+  // still the person. For animation it is a category error — the voice actor's
+  // face has no relation to the drawn character, so Steven Yeun appears on
+  // Mark Grayson's card. There is no "close enough" version of that, so an
+  // animated show must NEVER fall back to a profile photo; the only valid
+  // portrait is the character art itself (TVMaze), and its absence means key
+  // art, not a headshot.
+  //
+  // Detected from both the TVMaze type and the genres because neither is
+  // complete alone: anime is typed 'Scripted' by TVMaze but genre-tagged
+  // 'Anime', and some Western cartoons carry the type but not the genre.
+  const animated =
+    data.showType === 'Animation' ||
+    (data.genres ?? []).some(g => /animation|anime/i.test(g));
+
   /**
    * Explicit links, resolved once by scripts/link-cast.mjs and frozen into the
    * spine. These are the pairs no string comparison can reach, because the
@@ -211,9 +228,14 @@ function composer(data, castLinks) {
    * headshots that frequently bear no resemblance to the role, which is
    * exactly wrong when the card's whole job is "remind me who this is".
    * TVMaze carries in-costume stills for part of the cast; those win.
+   *
+   * On animated shows the actor fallback is dropped entirely: a voice actor's
+   * face is never the character, so a missing character image resolves to key
+   * art rather than a headshot. See `animated` above.
    */
   const portraitOf = name => {
     const row = castRowFor(name);
+    if (animated) return row?.inCharacter ?? null;
     return row?.inCharacter ?? row?.profile ?? null;
   };
 

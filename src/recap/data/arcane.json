@@ -1,0 +1,917 @@
+{
+  "slug": "arcane",
+  "tmdbId": 94605,
+  "tvmazeId": 55138,
+  "matchedBy": "imdb_id",
+  "title": "Arcane",
+  "overview": "Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.",
+  "firstAirDate": "2021-11-06",
+  "network": "Netflix",
+  "poster": "https://image.tmdb.org/t/p/w780/abf8tHznhSvl9BAElD2cQeRr7do.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/original/q8eejQcg1bAqImEV8jh8RtBD4uH.jpg",
+  "backdrops": [
+    "https://image.tmdb.org/t/p/original/q8eejQcg1bAqImEV8jh8RtBD4uH.jpg",
+    "https://image.tmdb.org/t/p/original/sYXLeu5usz6yEz0k00FYvtEdodD.jpg",
+    "https://image.tmdb.org/t/p/original/4ACkRHJCMXdNUUBem3Z0n1CclKf.jpg",
+    "https://image.tmdb.org/t/p/original/rkB4LyZHo1NHXFEDHl9vSD9r1lI.jpg",
+    "https://image.tmdb.org/t/p/original/wQEW3xLrQAThu1GvqpsKQyejrYS.jpg",
+    "https://image.tmdb.org/t/p/original/cJ0vEnEGWZDv2a5SRRRGxtRTlPm.jpg",
+    "https://image.tmdb.org/t/p/original/phXzMrKMoC4acN0yteNgV83JYFx.jpg",
+    "https://image.tmdb.org/t/p/original/h3lxWQgiyWxgV5wFxfKFkA8y0Aq.jpg",
+    "https://image.tmdb.org/t/p/original/5cvnxEHT3e39DvT6ARw4GNCFrB0.jpg",
+    "https://image.tmdb.org/t/p/original/7QsmXum7IVYFfxiNe878Kgh9YVf.jpg",
+    "https://image.tmdb.org/t/p/original/fELr878XFIuLtkKZvTbm9M5vTiO.jpg",
+    "https://image.tmdb.org/t/p/original/jKQfvU5TX1AI5Mr5fWejn5h6CQN.jpg"
+  ],
+  "throughSeason": 2,
+  "totalSeasons": 2,
+  "showType": "Animation",
+  "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+  ],
+  "status": "Ended",
+  "runtime": 41,
+  "language": "English",
+  "seasons": [
+    {
+      "season": 1,
+      "name": "Season 1",
+      "airDate": "2021-11-06",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Welcome to the Playground",
+          "overview": "Orphaned sisters Vi and Powder bring trouble to Zaun's underground streets in the wake of a heist in posh Piltover.",
+          "plot": "Zaunite sisters Vi and Powder find their parents dead in the aftermath of a battle on the Bridge of Progress. They are taken in by Vander, the leader of the failed rebellion. Years later, Vi, Powder, and their adopted brothers, Mylo and Claggor, break into a Piltover penthouse. Powder steals a set of magical crystals but accidentally shatters one, causing an explosion that destroys part of the building. Fleeing back to Zaun, the siblings encounter Deckard and his thugs; while they beat them in a fistfight, Powder is chased and loses the loot. Vander, now a respected community leader in Zaun, reprimands the children for their carelessness and attempts to resolve matters with Grayson, Sheriff of Piltover's enforcers, and her subordinate Marcus. Vi berates Mylo for calling Powder a \"jinx\" and consoles her sister. Somewhere in Zaun, crime lord Silco extracts information from Deckard and works with the scientist Singed to test a volatile mutagen, shimmer, on a rat.",
+          "airDate": "2021-11-06",
+          "still": "https://image.tmdb.org/t/p/original/g7dMkFJvJECDYoL0TRzGQCfF3xD.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/g7dMkFJvJECDYoL0TRzGQCfF3xD.jpg",
+            "https://image.tmdb.org/t/p/original/uPdGDBBsQg54RpWsCzqmHmd5gFm.jpg",
+            "https://image.tmdb.org/t/p/original/8pxvTczjWU6qd9HFg1P7h51Urjj.jpg",
+            "https://image.tmdb.org/t/p/original/qCMvMOhTO5dnV92ytOU3f0S6gXr.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Some Mysteries Are Better Left Unsolved",
+          "overview": "Idealistic inventor Jayce attempts to harness magic through science—despite his mentor's warnings. Criminal kingpin Silco tests a powerful substance.",
+          "plot": "The stolen crystals are revealed to belong to Jayce Talis, a student at Piltover's academy. Piltover's ruling council has him testify about his unsanctioned experiments; Jayce recounts how arcane magic saved his life as a child and believes it can revolutionize Piltover. However, the academy expels him when he reveals the magical nature of the experiments, and his research is ordered destroyed. On the verge of suicide, his beliefs are renewed when Viktor, the assistant of Professor Heimerdinger, offers to help him. In Zaun, Marcus pressures Vander to reveal the true culprits of the robbery, while the Zaunites pressure him to fight back against the enforcers. To protect the children, Vander remains neutral, causing some to question his leadership. Vi decides to turn herself in. Elsewhere, Silco manipulates Deckard into swallowing a vial of shimmer.",
+          "airDate": "2021-11-06",
+          "still": "https://image.tmdb.org/t/p/original/1uubdoW7nPtpYS6T59COLEKDB7A.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/1uubdoW7nPtpYS6T59COLEKDB7A.jpg",
+            "https://image.tmdb.org/t/p/original/49HmMAu69lbBFhApVE7JaULEbwE.jpg",
+            "https://image.tmdb.org/t/p/original/fiOCXRtNaq7uYPXIbbT9g62IHZq.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "The Base Violence Necessary for Change",
+          "overview": "An epic showdown between old rivals results in a fateful moment for Zaun. Jayce and Viktor risk it all for their research.",
+          "plot": "Vander stops Vi and offers himself to Grayson instead. Silco intervenes and captures Vander after a heavily mutated Deckard massacres Grayson and her men, sparing only Marcus. Vi, Mylo, and Claggor set out on a rescue mission, leaving Powder behind. In Piltover, Jayce and Viktor secretly experiment with the crystals under the discretion of councilor Mel Medarda and eventually invent Hextech. A flashback reveals that Vander once betrayed Silco and attempted to drown him. In Zaun, the siblings reach Vander but are cut off by Silco. Vi fights off Silco's thugs but is badly beaten by Deckard. Desperate to help, Powder causes an explosion with the stolen crystals, accidentally killing Mylo and Claggor. A wounded Vander takes shimmer to kill Deckard and save Vi but sacrifices himself in the process. After learning Powder was responsible for the explosion, Vi lashes out, striking her and calling her a \"jinx\" before walking away. Feeling guilty, she attempts to return but is ambushed and captured by Marcus. Silco embraces the distraught Powder and assures her, “We'll show them all\".",
+          "airDate": "2021-11-06",
+          "still": "https://image.tmdb.org/t/p/original/zCc7AEH53aH8r61F5f9DkIQGeZC.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/zCc7AEH53aH8r61F5f9DkIQGeZC.jpg",
+            "https://image.tmdb.org/t/p/original/8bbCa2TtAMeWuJTEWcFzy6wHH1w.jpg",
+            "https://image.tmdb.org/t/p/original/rWgfZJ9F0bUxvSW6Ak2KfboXUih.jpg",
+            "https://image.tmdb.org/t/p/original/b8gsId3L2ipuDdsTKEyycgZ4dja.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Happy Progress Day!",
+          "overview": "With Piltover prospering from their tech, Jayce and Viktor weigh their next move. A familiar face re-emerges from Zaun to wreak havoc.",
+          "plot": "Several years later, Piltover prospers with Jayce's Hextech technology and celebrates its 200th anniversary on Progress Day. Jayce initially plans to unveil a gemstone-powered device he and Viktor developed but decides against it after Heimerdinger warns of its potential dangers. Powder, now an unstable teenager going by Jinx, smuggles shimmer for Silco, whom she sees as a surrogate father. During one operation, the Firelights, a rivaling Zaunite gang, interfere; Jinx mistakes a Firelight for Vi and has a violent breakdown. Caitlyn, an enforcer and Jayce's childhood friend, investigates the incident. Hoping to regain Silco's approval, Jinx steals Jayce's gemstone and triggers an explosion that kills six enforcers. In response, Jayce is granted a seat on Piltover's council to help protect the city. Seeking answers, Caitlyn travels to Stillwater Prison and encounters Vi, now an adult, imprisoned by Marcus.",
+          "airDate": "2021-11-13",
+          "still": "https://image.tmdb.org/t/p/original/b0EGdWDOFxbhaGwlJ11vO2h0az6.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/b0EGdWDOFxbhaGwlJ11vO2h0az6.jpg",
+            "https://image.tmdb.org/t/p/original/7CYgTZUqI80HeJgN686sYW3f9y2.jpg",
+            "https://image.tmdb.org/t/p/original/ujtz5sodazJZkwxKLXVnGT4Bzcv.jpg",
+            "https://image.tmdb.org/t/p/original/fgI8zscpcsI1WaAd7kr05ECeSNy.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Everybody Wants to Be My Enemy",
+          "overview": "Rogue enforcer Caitlyn tours the undercity to track down Silco. Jayce puts a target on his back trying to root out Piltover corruption.",
+          "plot": "Caitlyn releases Vi from prison to assist her in tracking down Silco. Marcus secretly works with Silco to facilitate shimmer smuggling while framing the Firelights for the Progress Day bombing. Still traumatized by her family's deaths, Jinx refuses to work on the gemstone. In response, Silco brings her to the river where Vander once tried to drown him and performs a symbolic \"baptism\" to convince her to embrace being Jinx. In Piltover, Mel begins a romantic relationship with Jayce while helping him navigate the political landscape he now finds himself in as a councilor. Viktor grows increasingly desperate to cure his worsening illness through Hextech. Vi tracks down Sevika, Silco's second-in-command, who reveals Jinx's allegiance to Silco. Distracted, Vi is stabbed by Sevika but is saved by Caitlyn, allowing them to escape. Jinx successfully refines the gemstone and constructs a device similar to Jayce's to harness its power. Sevika reports Vi's return to Silco.",
+          "airDate": "2021-11-13",
+          "still": "https://image.tmdb.org/t/p/original/72Ti7nTKEAPgx4VSggb1ksl31rm.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/72Ti7nTKEAPgx4VSggb1ksl31rm.jpg",
+            "https://image.tmdb.org/t/p/original/yPzc1kz2wg3mQSmDFYQzfWfxSeB.jpg",
+            "https://image.tmdb.org/t/p/original/2yCz7eEWyrIS2DqYG8ykosKx89M.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "When These Walls Come Tumbling Down",
+          "overview": "An eager protégé undermines his mentor on the council as a magical tech rapidly evolves. With authorities in pursuit, Jinx must face her past.",
+          "plot": "After Viktor collapses in the lab, he and Jayce begin to study the \"Hexcore\", a revolutionary Hextech device capable of interacting with organic matter and potentially curing diseases. Heimerdinger deems it too dangerous and orders it destroyed, prompting Jayce to orchestrate his removal from the council. Alone, Viktor seeks out Singed, his former mentor, for help in perfecting the Hexcore. Silco orders Marcus to kill Vi and Caitlyn before they can return to Piltover. Jayce orders a bridge blockade for Piltover's protection. Jinx interrogates Sevika and learns of Vi's return. Vi and Caitlyn take refuge in a safehouse as Vi recovers from her fight with Sevika, but Silco locates them after bribing local addicts with shimmer. After escaping, the pair spot a blue flare—one Vi gave Jinx before their ill-fated mission to rescue Vander. The sisters reunite, but Caitlyn's presence triggers Jinx's mistrust. The Firelights then intervene, steal the gemstone, and abduct Caitlyn and Vi, leaving Jinx behind, screaming in anguish.",
+          "airDate": "2021-11-13",
+          "still": "https://image.tmdb.org/t/p/original/sPpQYLgoSZ8UXai20CSEABG9rFz.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/sPpQYLgoSZ8UXai20CSEABG9rFz.jpg",
+            "https://image.tmdb.org/t/p/original/q3QBWBO2RvkmZNpg38I1P3KXgIc.jpg",
+            "https://image.tmdb.org/t/p/original/eZpWfPUGrjBCWlNfjKGdqKVZpKP.jpg",
+            "https://image.tmdb.org/t/p/original/wpNg63YkoWXyE6yONIuwH6lV9MI.jpg",
+            "https://image.tmdb.org/t/p/original/9imUyzKnw5oPE75HTLoXXODOR9O.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "The Boy Savior",
+          "overview": "Caitlyn and Vi meet an ally in Zaun’s streets and head into a frenzied battle with a common foe. Viktor makes a dire decision.",
+          "plot": "The Firelights' leader is revealed to be Ekko, Vi and Powder's childhood friend. After Vander's death, Silco seized control of Zaun and made the populace dependent on shimmer; the Firelights have been leading efforts to thwart him and rehabilitate addicts. Ekko warns Vi that the Powder they knew is gone and only Jinx remains, though Vi refuses to believe him. Singed provides Viktor with a variant of shimmer to enable the Hexcore to modify his deteriorating body, which Viktor hides from Jayce after the latter unintentionally insults his Zaun origins. Jayce's blockade fuels tensions between the two cities. Caitlyn convinces Ekko to return the gemstone to Piltover while Vi leaves to find Jinx. At the blockade, Marcus stops Ekko and Caitlyn and prepares to kill the latter after shooting Ekko. Seeing this, Vi runs back to help, but Jinx, envious of Caitlyn, unleashes explosives which kill Marcus and his enforcers. Ekko fights Jinx as Vi and an injured Caitlyn flee to Piltover. Ekko nearly defeats Jinx but hesitates to deliver the final blow, allowing her to detonate an explosive near them.",
+          "airDate": "2021-11-20",
+          "still": "https://image.tmdb.org/t/p/original/ieYvkXKqOuIYcBps7COg8w6rJyN.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ieYvkXKqOuIYcBps7COg8w6rJyN.jpg",
+            "https://image.tmdb.org/t/p/original/3HVZjh2IL3f9UPLp9AmjGd06aUW.jpg",
+            "https://image.tmdb.org/t/p/original/8Jt8RN8BuEYT85OBzZPHGdnBLos.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Oil and Water",
+          "overview": "Disowned heir Mel and her visiting mother trade combat tactics. Caitlyn and Vi forge an unlikely alliance. Jinx undergoes a startling change.",
+          "plot": "Silco finds a heavily injured Jinx in the aftermath of the explosion and realizes she has recovered the gemstone. He brings her to Singed for treatment, during which Jinx hallucinates that Vi and Caitlyn are the ones operating the painful procedure. Singed injects Jinx with shimmer, causing her eyes to glow purple. Ambessa, Mel's mother and a Noxian warlord, arrives in Piltover after the assassination of Mel's brother to prepare her for the brewing war with Zaun. Heimerdinger, now exiled, meets an injured Ekko. Viktor succeeds in healing his body through the Hexcore and is able to run for the first time, but further experimentation accidentally kills his assistant and childhood friend, Sky. Frustrated by the council's inaction against Silco, Vi leaves Caitlyn and partners with Jayce to dismantle Silco's shimmer factories. Armed with Hextech weapons, they defeat shimmer-enhanced soldiers, but Jayce accidentally kills a child worker during the fight. Caitlyn is kidnapped by Jinx.",
+          "airDate": "2021-11-20",
+          "still": "https://image.tmdb.org/t/p/original/vYIBscxveNMkxFNTcPZ6YoF6fdU.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/vYIBscxveNMkxFNTcPZ6YoF6fdU.jpg",
+            "https://image.tmdb.org/t/p/original/pIcWuzmDMidtKYuXZ5k4AGvBPzR.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "The Monster You Created",
+          "overview": "Perilously close to war, the leaders of Piltover and Zaun reach an ultimatum. But a fateful standoff changes both cities forever.",
+          "plot": "The death of the child, son of chem-baroness Renni, forces Jayce to realize the potential cost of a war between Piltover and Zaun. He brokers a peace treaty with Silco, offering Zaun's independence in exchange for Jinx. Ekko reveals the Firelights' hideout to Heimerdinger. Stricken with guilt over Sky's death, Viktor has Jayce promise to destroy the Hexcore. Silco laments choosing between Zaun's freedom and Jinx, who overhears him. After beating Sevika in a fight, Vi is abducted by Jinx and awakens restrained alongside Caitlyn and Silco in the warehouse where Vander died. Jinx hands Vi a pistol and forces her to choose between Caitlyn and herself. Vi refuses and instead appeals to their childhood, causing Jinx to suffer a traumatic breakdown. Silco breaks free and fires at Vi, but misses. Jinx inadvertently shoots him, and with his dying breath, Silco reaffirms his fatherly love for her. Devastated, Jinx finally embraces her new identity. She weaponizes the gemstone into a rocket launcher and fires at the Piltover council just as they approve Zaun's independence.",
+          "airDate": "2021-11-20",
+          "still": "https://image.tmdb.org/t/p/original/3mSWRynTvvE2IYJ6sI47m8V77Jq.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/3mSWRynTvvE2IYJ6sI47m8V77Jq.jpg",
+            "https://image.tmdb.org/t/p/original/whYSErvez8kncpTmTRBsRd1Pg5i.jpg",
+            "https://image.tmdb.org/t/p/original/qyI4TCODAglv9iOh2Giq2oqezsR.jpg",
+            "https://image.tmdb.org/t/p/original/dbnGqpGWUjLcTVQxr5k1V3no8BB.jpg",
+            "https://image.tmdb.org/t/p/original/q78NR0ZX3iXKhC85Vbv2j63xZfn.jpg",
+            "https://image.tmdb.org/t/p/original/6wKuLPYO6T12Pcce2R7uSCwu6xS.jpg",
+            "https://image.tmdb.org/t/p/original/1532BDZwKCmtKe5wBL62aLH6um5.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 2,
+      "name": "Season 2",
+      "airDate": "2024-11-09",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Heavy Is the Crown",
+          "overview": "Vi and Caitlyn wrestle with how best to respond in the wake of a terrible tragedy that claims lives — and escalates tensions between the twin cities.",
+          "plot": "Jayce and Mel survive Jinx's rocket assault alongside councilors Shoola and Salo, while the remainder of the Council—including Cassandra, Caitlyn's mother—are killed. Salo is left crippled and Viktor is gravely wounded, prompting Jayce to renege on his promise to destroy the Hexcore and instead fuse it with Viktor to save his life. Ambessa pushes the Council toward military retaliation against Zaun, though Mel opposes the use of Hextech weaponry. Vi declines Caitlyn's offer to join the enforcers but attends a memorial for the fallen councilors. The event is ambushed by Renni and her followers in revenge for Jayce killing her son; the enforcers are unable to hold them back until Ambessa and her Noxian forces arrive, killing the attackers. Salo calls for all-out war with Zaun. Proposing an alternative strategy, Caitlyn forms a specialized unit armed with Jayce's Hextech weapons, led by herself, Vi, and enforcers Maddie, Lorris, and Steb, to capture Jinx, eliminate the remaining Chem-Barons, and shut down shimmer production at its source.",
+          "airDate": "2024-11-09",
+          "still": "https://image.tmdb.org/t/p/original/AKzTyLJkQEuftVNIuh0gcJCbDl.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/AKzTyLJkQEuftVNIuh0gcJCbDl.jpg",
+            "https://image.tmdb.org/t/p/original/2ei8DPkJAuFKKbrjV0dMjxIpZEi.jpg",
+            "https://image.tmdb.org/t/p/original/cFTrUyJz22Bm47QdZFSBU3TsnCf.jpg",
+            "https://image.tmdb.org/t/p/original/6vbJLS5OvJelei1kJ8g3V2b0PO8.jpg",
+            "https://image.tmdb.org/t/p/original/ocpZ3uGuKurd4la9Wik8XWsFdec.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Watch It All Burn",
+          "overview": "With Piltover ready for war, the Undercity weighs its options. Jinx lies low and plots her next move. A pivotal conversation takes place.",
+          "plot": "Following Silco and Renni's deaths, the Chem-Barons clash for power over Zaun despite Sevika's calls for unity. Smeech, one of the Barons, proposes surrendering Jinx to Piltover to end hostilities, but Sevika refuses. Elsewhere, Caitlyn's team raids Jinx's hideout, forcing her to flee. During her escape, Jinx rescues a young orphan named Isha from her attackers. Later, Smeech is killed by the two and Sevika after a failed assassination attempt on Jinx. In Piltover, Viktor awakes from his coma and, realizing Jayce broke his promise, parts ways with him. Returning to Zaun, he finds that the Hexcore has given him magical abilities after he heals Huck, a shimmer addict, and inspires a cult-like following. Meanwhile, the Firelights' tree, vital for their sustenance, begins to show signs of magical corruption, prompting Ekko and Heimerdinger to infiltrate the Academy and consult Jayce.",
+          "airDate": "2024-11-09",
+          "still": "https://image.tmdb.org/t/p/original/z2MSNefctJYAYGdPJQUcxRcZWTh.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/z2MSNefctJYAYGdPJQUcxRcZWTh.jpg",
+            "https://image.tmdb.org/t/p/original/yDpaib3Oh7ZAHdH82XVhOUYPab4.jpg",
+            "https://image.tmdb.org/t/p/original/kjCFB26JRyR5HlNO7w3fsd1qKD1.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Finally Got the Name Right",
+          "overview": "Caitlyn doubles down on her hunt for Jinx. Ambessa accepts a fateful meeting. Changes in Zaun lead to a shocking discovery.",
+          "plot": "As Caitlyn's task force continues their mission, Vi grows concerned by her aggression. Ambessa thwarts an assassination attempt on herself by the Black Rose, a cabal of Noxian sorcerers, prompting them to abduct Mel. Meanwhile, Jayce brings Ekko and Heimerdinger to the Hex Vault, where Piltover's Hextech is managed, and they discover a volatile arcane anomaly dubbed a \"wild rune\". Vi convinces Caitlyn to break from the task force and pursue Jinx alone. They are ambushed by Jinx and Sevika; in the skirmish, Vi stops Caitlyn from executing Jinx when Isha intercedes. The three escape and trigger an explosion that ruptures Zaun's air ducts, unleashing toxic gases into Piltover. As a result, Caitlyn severs ties with Vi, and Ambessa convinces the Piltovans to declare martial law, positioning Caitlyn as commander-in-chief—unaware that Ambessa herself orchestrated the memorial attack. Elsewhere, Singed is revealed to have created a human-wolf hybrid.",
+          "airDate": "2024-11-09",
+          "still": "https://image.tmdb.org/t/p/original/yviHRrcS5YcojBvWMLBLv5ZSUG6.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/yviHRrcS5YcojBvWMLBLv5ZSUG6.jpg",
+            "https://image.tmdb.org/t/p/original/zu2OCxZIJq3gDtXfcUc68mJJyiD.jpg",
+            "https://image.tmdb.org/t/p/original/lWgYKBRrxycvA5qZY23cvMn0xrm.jpg",
+            "https://image.tmdb.org/t/p/original/yXD0EtrlnupXne4R9XHFPkGMxJr.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Paint the Town Blue",
+          "overview": "As rumors of Jinx's return swirl, Ambessa pursues her target with renewed enthusiasm. Jinx and Sevika go undercover and into the belly of the beast.",
+          "plot": "Some time after the declaration of martial law, a joint Piltovan-Noxian force occupies Zaun, Jinx has gone into hiding with Isha, Caitlyn has entered a relationship with Maddie, and Jayce, Ekko, and Heimerdinger remain missing since their encounter with the wild rune. Caitlyn grows suspicious of Ambessa, who has been secretly conducting Hextech research aimed at combating the Black Rose, albeit to no success. Sevika spurs Jinx, who is revered by the Zaunites as a hero, to lead a revolt. Although Jinx refuses, Isha is captured during a rally by enforcers led by Ambessa's lieutenant, Rictus, prompting her and Sevika to infiltrate Stillwater Hold to rescue her. Singed is also detained but leaves a blood trail for his human-wolf hybrid to follow. The creature breaks into the prison and slaughters guards and inmates alike before encountering Jinx and Sevika; Jinx engages the creature while Sevika escapes with Isha, but is eventually overpowered. As the creature prepares to kill her, it hesitates upon recognizing her as Powder.",
+          "airDate": "2024-11-16",
+          "still": "https://image.tmdb.org/t/p/original/ktXtr0O2WF10Z2r89Xjds4owCXX.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ktXtr0O2WF10Z2r89Xjds4owCXX.jpg",
+            "https://image.tmdb.org/t/p/original/66ZXA49SlSLv6OBUsXhUjeDVyca.jpg",
+            "https://image.tmdb.org/t/p/original/9ZBydQSIxaVCR7Tz3nkvmLpOszL.jpg",
+            "https://image.tmdb.org/t/p/original/Alri0N9YEeG3KkUeGIPPCbYBhjN.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Blisters and Bedrock",
+          "overview": "Vi awakens to surprising news. An unsettling reunion isn't what it seems. Caitlyn uncovers the origins of Shimmer.",
+          "plot": "Recognizing the creature as Vander, Jinx seeks out Vi, who has become a pit fighter after her fallout with Caitlyn, and brings her to an abandoned mine, where the creature initially attacks them before ultimately recognizing them. Meanwhile, Ambessa enlists Singed to track Vander. Caitlyn identifies Singed as Corin Reveck, a disgraced Piltovan academic whose experiments aim to cure his comatose daughter Orianna. Elsewhere, Mel is imprisoned by a shadowed Black Rose sorceress and reunites with her brother Kino, who is believed to be dead. She learns that Ambessa's illegitimate child is the true target of her captors before realizing Kino is an illusion, and unleashes her latent magical abilities. At the Hex Vault, Jayce escapes the wild rune and encounters Salo, recently healed by Viktor, while retrieving a Hexgate core. Traumatized by the experience, Jayce vows to destroy Hextech and kills Salo.",
+          "airDate": "2024-11-16",
+          "still": "https://image.tmdb.org/t/p/original/3mhMhwHlZQQiB2otufCLZteRPMZ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/3mhMhwHlZQQiB2otufCLZteRPMZ.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "The Message Hidden Within the Pattern",
+          "overview": "Healing comes from a familiar face — in an unfamiliar place. A stunning betrayal threatens to change countless lives.",
+          "plot": "Viktor, accompanied by Sky's spirit, investigates the wild rune phenomenon after witnessing Salo's murder. Jinx, Vi, and Isha bring Vander to Viktor's sanctuary in hopes for a recovery. Over several days, Viktor gradually restores Vander's humanity. Meanwhile, with Singed's help, Ambessa and Caitlyn track Vander to the sanctuary. Singed attempts to persuade Viktor to surrender Vander, but Viktor refuses, recognizing Singed's true motive is to save his daughter. While following Singed back to a Noxian camp, Vi is captured by Caitlyn. Ambessa orders Caitlyn and Singed to undo Viktor's work, but Vi and Caitlyn reveal themselves to be allied; together, they subdue Ambessa and Singed. Haunted by his experience in the wild rune, Jayce infiltrates the sanctuary and kills Viktor, triggering a violent backlash from those Viktor healed, including Vander, who becomes uncontrollably savage and kills Rictus. Ambessa and her forces attack the sanctuary; in an act of sacrifice, Isha overloads Jinx's pistol with Hextech gems to destroy Vander and several Noxian soldiers, leaving Jinx devastated.",
+          "airDate": "2024-11-16",
+          "still": "https://image.tmdb.org/t/p/original/A6A6HWu0TjMRcNW31glNuZvVfxp.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/A6A6HWu0TjMRcNW31glNuZvVfxp.jpg",
+            "https://image.tmdb.org/t/p/original/pH90gh1yf3gtfpFhJEATj5vTlUh.jpg",
+            "https://image.tmdb.org/t/p/original/fKqT2t4FMUC170bbxI0RuypwXfg.jpg",
+            "https://image.tmdb.org/t/p/original/iRj7h5bykrWcoin2s1YN7uDNoUt.jpg",
+            "https://image.tmdb.org/t/p/original/3oxMDExwyuXRToLOgMYhpbSquc3.jpg",
+            "https://image.tmdb.org/t/p/original/8wACK9wixdLL9rY4OjzIkebxgV0.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Pretend Like It's the First Time",
+          "overview": "A moment of darkness, a moment of light — and a vision of What Could Have Been.",
+          "plot": "Following their encounter with the wild rune, Ekko and Heimerdinger find themselves in a parallel universe where Hextech was never invented, Mylo, Claggor, and Benzo are still alive, and Vander and Silco are on good terms, though Vi died during Jayce's apartment robbery. To return home, the two work with this universe's Powder, who never became Jinx, to recreate the wild rune and channel it into a time-reversal device. During this time, Ekko falls in love with Powder but ultimately decides to return to his own universe. Despite the device proving unstable, Heimerdinger successfully returns Ekko at the cost of vanishing himself, his fate unknown. Meanwhile, Jayce is transported to a post-apocalyptic future where Hextech has destroyed Piltover and reunites with the hooded mage who saved him as a child. Learning this future is a result of Viktor's actions, Jayce promises to stop him before being sent back by the mage, leading to the events at the sanctuary.",
+          "airDate": "2024-11-23",
+          "still": "https://image.tmdb.org/t/p/original/sgKSyfB7uor4hSzSsWMEUnMC5SA.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/sgKSyfB7uor4hSzSsWMEUnMC5SA.jpg",
+            "https://image.tmdb.org/t/p/original/fpJM81fBe19Iw24bE6wP1RRAHbE.jpg",
+            "https://image.tmdb.org/t/p/original/v0krf95CBeMnwMGaakIxNBZKuf0.jpg",
+            "https://image.tmdb.org/t/p/original/mRGcJ8r06SSxvpZqsFXk5FJausL.jpg",
+            "https://image.tmdb.org/t/p/original/2DpHvlhBVYwnncHEPwXJajZSxjs.jpg",
+            "https://image.tmdb.org/t/p/original/3mPtcfFFjeJpWdd8qQZUuyRMlV3.jpg",
+            "https://image.tmdb.org/t/p/original/54Gd7Y6rw8to8O0WsoS7HJ2DoQA.jpg",
+            "https://image.tmdb.org/t/p/original/qqVTy8334LmzwcNpg5J0be0p3uc.jpg",
+            "https://image.tmdb.org/t/p/original/1dq3PgYC1VZmOKIqf4EIS6cp1cW.jpg",
+            "https://image.tmdb.org/t/p/original/101EuxhHZd01eA2sGOlTVZnbKNq.jpg",
+            "https://image.tmdb.org/t/p/original/iSqKyVnage7U9NasuVeCp0LDRvN.jpg",
+            "https://image.tmdb.org/t/p/original/8Asxbf4BH57fVx2LoVrfY060N4A.jpg",
+            "https://image.tmdb.org/t/p/original/v8cHmXPTj2GTFdiLfKBwmHip1RJ.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Killing Is a Cycle",
+          "overview": "A brewing storm fuels a series of startling transformations. Elsewhere, the spark of rebellion still burns.",
+          "plot": "Following the sanctuary attack, Jinx is arrested and Singed uses Vander's remains to save Viktor. Vi confronts Caitlyn, who then visits Jinx and admits her exhaustion with hatred; Jinx responds that she was unaware of Cassandra's presence during the rocket strike. Now fully awakened to her magical abilities, Mel escapes the prison and reunites with Jayce, revealing she had shielded him during Jinx's rocket assault, but Jayce accuses her of manipulating both Viktor and himself. An emissary from Viktor arrives to request access to the Hexgate anomaly for the completion of Viktor's transformation. Spurned, Viktor allies with Ambessa to launch an attack on Piltover. Meanwhile, Singed destroys what remains of Vander to fully restore Viktor. Vi releases Jinx, who then imprisons her, stating that Vi deserves peace. Caitlyn later releases Vi and reveals she had anticipated Jinx's release, and the two have sex. As Ambessa reveals Viktor's amassed forces, Jayce calls for Piltover to prepare its defense.",
+          "airDate": "2024-11-23",
+          "still": "https://image.tmdb.org/t/p/original/vqoFpOXDGEEsgkD10QhopOQYoN3.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/vqoFpOXDGEEsgkD10QhopOQYoN3.jpg",
+            "https://image.tmdb.org/t/p/original/qspn6A3mmrJ4JFYC4EzAz59h29C.jpg",
+            "https://image.tmdb.org/t/p/original/6ZbXhUvwWEO2F91lTqRJQzLNrN1.jpg",
+            "https://image.tmdb.org/t/p/original/boaMjDitcN3uA7OhF199Wmkgvv3.jpg",
+            "https://image.tmdb.org/t/p/original/beIoCagWaah4vDDV0NRUFPjNoZs.jpg",
+            "https://image.tmdb.org/t/p/original/4g9pdfXMBRufXDmRUjB336cOwyQ.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "The Dirt Under Your Nails",
+          "overview": "Magic. Science. Power. Revenge. Destinies clash in an epic final chapter, igniting an all-out war.",
+          "plot": "As Noxian forces attack, Piltover's defenders hold the line as Jayce dismantles the Hex Vault. However, Maddie, revealed to be a spy, sabotages the mission. Reinforcements arrive from Zaun, led by Jinx, who had been dissuaded from suicide by Ekko, but the attack is revealed to be a diversion while Viktor infiltrates the Vault. Vander, now fully stripped of his humanity, engages Vi and Jinx. Meanwhile, Mel kills Maddie and Caitlyn disarms Ambessa's magical protection, triggering the arrival of the Black Rose sorceress, who kills Ambessa. Viktor gains control of the wild rune and subdues nearly all opposition except for Ekko, who disrupts the rune's influence using his time-reversal device and frees Jayce. Jayce convinces Viktor to abandon his plan by revealing his encounter with the hooded mage, revealed to be Viktor's remorseful future self. Together, they destroy the wild rune, freeing everyone from its control, but vanish in the process. Vander however, remains feral, and attacks Vi, forcing Jinx to seemingly sacrifice herself to save her sister. In the aftermath, Sevika joins the Council as Zaun's representative, Mel departs for Noxus, Singed partially cures his daughter, and Vi and Caitlyn ponder their future.",
+          "airDate": "2024-11-23",
+          "still": "https://image.tmdb.org/t/p/original/7wYoQZAdbB6e3CFDDYvxQY1sM7.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/7wYoQZAdbB6e3CFDDYvxQY1sM7.jpg",
+            "https://image.tmdb.org/t/p/original/3c5CVxaooy9HmJ15OMyqBOKS8sm.jpg",
+            "https://image.tmdb.org/t/p/original/785Z5TIGWe3Lb6zK5nwRQtCuYJ8.jpg",
+            "https://image.tmdb.org/t/p/original/10ujDQPJhW0I7egTk2HcxlHRKdb.jpg",
+            "https://image.tmdb.org/t/p/original/h4JxhJmFgTXLtdRWCF6gfB31SCv.jpg",
+            "https://image.tmdb.org/t/p/original/f6UCxDKE5o5fYWZv2bWRpv7O81b.jpg",
+            "https://image.tmdb.org/t/p/original/5Qn3dSIVhrUsikWrjCktQSdTy0U.jpg",
+            "https://image.tmdb.org/t/p/original/xstncZV4QnBGMyZOup87fzDnnHr.jpg",
+            "https://image.tmdb.org/t/p/original/uJ3KP2O3dExLyUxk5wM7Kr24J6r.jpg",
+            "https://image.tmdb.org/t/p/original/mRgFNhhS4HkCu90wbxG3fa179m6.jpg",
+            "https://image.tmdb.org/t/p/original/mMRsmUfhl7BFSxUG07HDtsdI8Pz.jpg",
+            "https://image.tmdb.org/t/p/original/bMyQN4odIQcOLEdNPqSLzFUEUhR.jpg",
+            "https://image.tmdb.org/t/p/original/7nYOo1xh2me7Xi7HKDbG4kOFD2K.jpg",
+            "https://image.tmdb.org/t/p/original/zY8yxpVtVCIcemmXtPUcmNUhUF2.jpg",
+            "https://image.tmdb.org/t/p/original/sHgiBouWvMo0mMn1H9XuBqjnyq0.jpg",
+            "https://image.tmdb.org/t/p/original/u9h4mizMNJjbI8w5MkhHF3wMw2U.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "cast": [
+    {
+      "name": "Hailee Steinfeld",
+      "character": "Vi (voice)",
+      "episodeCount": 18,
+      "profile": "https://image.tmdb.org/t/p/original/4K2dzM3odGiVZOQOD6RjVxNq2ZQ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ella Purnell",
+      "character": "Jinx (voice)",
+      "episodeCount": 18,
+      "profile": "https://image.tmdb.org/t/p/original/jqrYg35GHuMGwGqEVUthqTLQnay.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374574.jpg"
+    },
+    {
+      "name": "Kevin Alejandro",
+      "character": "Jayce (voice)",
+      "episodeCount": 17,
+      "profile": "https://image.tmdb.org/t/p/original/bh4aQqP7kJzL2Ls9tj5OmhsBlqi.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374577.jpg"
+    },
+    {
+      "name": "Jason Spisak",
+      "character": "Silco (voice)",
+      "episodeCount": 14,
+      "profile": "https://image.tmdb.org/t/p/original/yWxJDXNcocccr1LkEuVXapVdcXS.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374584.jpg"
+    },
+    {
+      "name": "Toks Olagundoye",
+      "character": "Mel Medarda (voice)",
+      "episodeCount": 14,
+      "profile": "https://image.tmdb.org/t/p/original/2tKnfTA0gh6QnTcHb18hj8o70uG.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374579.jpg"
+    },
+    {
+      "name": "Harry Lloyd",
+      "character": "Viktor (voice)",
+      "episodeCount": 14,
+      "profile": "https://image.tmdb.org/t/p/original/qZSf6OzRpDaZdOCX6pynSRp6jVV.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374578.jpg"
+    },
+    {
+      "name": "Katie Leung",
+      "character": "Caitlyn (voice)",
+      "episodeCount": 14,
+      "profile": "https://image.tmdb.org/t/p/original/9gztOAk27dpZVspSJpb27ek7LlT.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374576.jpg"
+    },
+    {
+      "name": "JB Blanc",
+      "character": "Vander (voice)",
+      "episodeCount": 13,
+      "profile": "https://image.tmdb.org/t/p/original/fHLyXboPlBDo1aoAl085YqaPjO8.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374585.jpg"
+    },
+    {
+      "name": "Brett Tucker",
+      "character": "Singed (voice)",
+      "episodeCount": 12,
+      "profile": "https://image.tmdb.org/t/p/original/6IUQyy2pA8PRXX1MEx088JH6pcu.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374583.jpg"
+    },
+    {
+      "name": "Amirah Vann",
+      "character": "Sevika (voice)",
+      "episodeCount": 11,
+      "profile": "https://image.tmdb.org/t/p/original/fkPvdG6gA0ibs6V0DTGhcHx7sbV.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374586.jpg"
+    },
+    {
+      "name": "Josh Keaton",
+      "character": "Salo (voice)",
+      "episodeCount": 11,
+      "profile": "https://image.tmdb.org/t/p/original/9ss2EXbN0VarF1tM2Qotwxy6fJs.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mia Sinclair Jenness",
+      "character": "Powder (voice)",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/3eCX6PqGf6a3j1kJy2KAPGj9nR2.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/403/1007704.jpg"
+    },
+    {
+      "name": "Reed Shannon",
+      "character": "Ekko (voice)",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/xPrV7wpwCDPGm8yb0RMAqGo8A6k.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374581.jpg"
+    },
+    {
+      "name": "Remy Hii",
+      "character": "Marcus (voice)",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/nCXWaFzPNgkr5cwoHkmkqIsQsXJ.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374587.jpg"
+    },
+    {
+      "name": "Ellen Thomas",
+      "character": "Ambessa Medarda (voice)",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/e6v4bPKptR3XgbcbfbqgXDfVJrL.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374582.jpg"
+    },
+    {
+      "name": "Mick Wingert",
+      "character": "Heimerdinger (voice)",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/2Apga68BihekhCSPHNk5pXqC5Gq.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374580.jpg"
+    },
+    {
+      "name": "Dave B. Mitchell",
+      "character": "Hoskel (voice)",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/r2EI55tU7v2UZw61cSQzrFrbvdn.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Abigail Marlowe",
+      "character": "Mrs. Kiramman / Renni (voice)",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/2hsCcJ7UFJ1Rw66mv8KQMlvsYy2.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374590.jpg"
+    },
+    {
+      "name": "Mara Junot",
+      "character": "Shoola (voice)",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/oeleO9LWLaY4H3YvcNymeXC1TuK.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374589.jpg"
+    },
+    {
+      "name": "Yuri Lowenthal",
+      "character": "Mylo (voice)",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/aLgXm0kbbIC8I5OBmnsK8TgVKwy.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/403/1007706.jpg"
+    },
+    {
+      "name": "Roger Craig Smith",
+      "character": "Claggor (voice)",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/6oE356GbRHAf91Llw7LDpvsAf5L.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Erica Lindbeck",
+      "character": "Elora (voice)",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/l5ISBt8S8Upct0fDgaEPuELp4zE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kimberly Brooks",
+      "character": "Sky (voice)",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/iPlCk1VQ8fnAtsMow6HlCZoQc0w.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Robin Atkin Downes",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/qb4xPIJGiKyiQ2MhSDQzFWxN0jS.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Katy Townsend",
+      "character": "Maddie (voice)",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/shYpqFt9wEXfkBAj0TAFXLlBlng.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Bill Lobley",
+      "character": "Huck (voice)",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/msmF5gIzSMBZLifofoun58zUgpF.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/553/1383748.jpg"
+    },
+    {
+      "name": "Lucy Lowe",
+      "character": "Isha (voice)",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/xIjzPkbLTkysqoF4CP7YIkgBOlV.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374591.jpg"
+    },
+    {
+      "name": "Terri Douglas",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/6yRCc5oKalchZuRvVJJbEDNmLEd.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Arthur Ortiz",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/26L5ZNu9uV9onUB04RbEeKwB085.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jonathan Lipow",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/mSy3SCQYg4QP1BU86w56MRmBbqD.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Shohreh Aghdashloo",
+      "character": "Grayson (voice)",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/7josGC8QO9V6V8AuFdaS2tjUF8W.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374588.jpg"
+    },
+    {
+      "name": "Fred Tatasciore",
+      "character": "Benzo (voice)",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/xodxYKRC9mdvgquTdqpmYldliJ3.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Earl Baylon",
+      "character": "Loris (voice)",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/m4uqcwo4GvSsN2DWYdTORh5wJ7x.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Stewart Scudamore",
+      "character": "Rictus (voice)",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/2B2dsUSg4qTd0IuGC91SKAFv6M1.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Marcella Lentz-Pope",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/vSzzdPYyGtZGj4RqKsDGdXZN6E0.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Miles Brown",
+      "character": "Young Ekko (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/friWD1FQ2exfFuKs4INOdS0Upr9.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374581.jpg"
+    },
+    {
+      "name": "MIYAVI",
+      "character": "Finn (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/htylnHN8qLf8xbav0PCx9htTexj.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/545/1364534.jpg"
+    },
+    {
+      "name": "Ashley Holliday Tavares",
+      "character": "Gert (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/2txviQnztRylSonuhioDVAwQjfP.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Minnie Driver",
+      "character": "Illusionary Sorceress (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/2uwaHwpoutbXMuYY5v2dhWU0hml.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Joe Zieja",
+      "character": "Old Timey Commentator (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/htS8KWXwXaWTrpTjh8o5N8e72ZF.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Shelby Young",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/oh4VeJpkORXoGJdIohNpXJyO3kt.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Piotr Michael",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/A1ph4jVLA1sQmpYOSZ3X0DdQvQs.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "David Boat",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/tuuqOfuwPGLqICofgPhHceIDhOX.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kari Wahlgren",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/kc0BOnSdzCfq8w9qoNVEm5K12x1.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Ralph",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/nPIUFKUHlSUvQ9NtkktRMmIdNaJ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kimberly Bailey",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/6es4CpmmlA7j6VCxpVvlSTfvi76.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jason Linere-White",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/pAFtUbLVa2uhnHvosjlW4c0QvQg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ashley Peldon",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/l9Wl2VTPuWf9TqNRU7XnQz85qHq.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Molly Harris",
+      "character": "Young Caitlyn (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/sJ6LJl75paSDDtxtdBPrBQB4UDA.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374576.jpg"
+    },
+    {
+      "name": "Salli Saffioti",
+      "character": "Amara (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/awF13TyorW4Rp5rq10p5XL0Po3m.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lex Lang",
+      "character": "Tattooed Leader (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/hrgjiwtrnI6meAg2Q1eTGpyTrDX.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Robbie Daymond",
+      "character": "Scar (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/1Wu13TUN1FiTOx6K7nIDQo63SAX.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Eve Lindley",
+      "character": "Lest (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/44JHeA9pJemiKFO5gbaxs7DSQDZ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Keston John",
+      "character": "Kino (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/zEqkvuCDDgiErHg3XNyoG5TulUg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jeannie Tirado",
+      "character": "Felicia (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/7Mu1azELbyw94pHNqZFloWp8FBI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Shondalia White",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/mC8kxaTtfaRmD1tHVa1ovQzdHjz.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Chantelle Barry",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/eX64Aqi0LgO0MkzaaiHIk8hpufm.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Scott Menville",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/iLoApH8LbyJSKFmdgWxNR314GGa.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mark Sussman",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/3AV531gRXjmLg6WPx90aMLrr2HK.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Andrew Morgado",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/or0uFYnXsFs5td9GYRukUN56sRy.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Krizia Bajos",
+      "character": "Ximena (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/hwnM4tl3pFx5nF3AbSLRkvxVJaE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Faustino Duran",
+      "character": "Young Jayce (voice)",
+      "episodeCount": 1,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374577.jpg"
+    },
+    {
+      "name": "Mira Furlan",
+      "character": "Babette (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/230eF35kgW0Jo2II1LmGPlRuw8a.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Edan Hayhurst",
+      "character": "Young Viktor (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/36ZO34WhXbFChobD1hxdYhQY2tV.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374578.jpg"
+    },
+    {
+      "name": "Imogen Faires",
+      "character": "Young Mel (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/eSQgALHSkeWhM0YXMTLJyuHYNzI.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374579.jpg"
+    },
+    {
+      "name": "Lenny Citrano",
+      "character": "Smeech (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/jCyuD3zJ5VuSq9Wcnib4aGijVB7.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/545/1364535.jpg"
+    },
+    {
+      "name": "Debi Derryberry",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/aCVgHnvGBw7ssZA9kl1Pnr5pJjU.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "David Michie",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/87z5A1ylR4I3jB8lzrLgfILYdYu.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jessica DiCicco",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/1Cp0PFtup0mlsecGyfImzd4LDiL.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Arif S. Kinchen",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/rY16iqdy5lJIyEMoL941NdzUlEr.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Helen Sadler",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/p0plAmQNO6KCNRECPKji8hiDK4e.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Matt Lowe",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/u137BVOu2worxWBIWNkwW35b60X.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kaitlyn Robrock",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/1joOQrgyU9ap9W1cvimh01XmKcO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Julie Nathanson",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/sWAQkAZcs8GnsLg6nQdWf4uI9M9.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Debra Wilson",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/3anRgUtqohXRNM6HtwGl1ZFgCS8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Richard Miro",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/hURgk0ShAqhREXbEfTDHgMW9stB.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "John Eric Bentley",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/2r2ybtn1qDCl3JlKFYklODelvW8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jim Pirri",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/NwiYr74p08v6WOrZIatyZppAgI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Devika Parikh",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/y1v6x3PkJVhFtX8rTFC3ZBa6ZL9.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Daniel Booko",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/2yE71pippnnBm7otcxMmOGxODZd.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Clay Savage",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/tcfDLxCS2488MtdDTrgFmk1HuR2.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Adam Wylie",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/g59pfDt3xNnPmvYkOoYFXykXW5O.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Scott Whyte",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/cTsWZRSgWtkitBMwpikTr11kdYC.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kirk Thornton",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/pGzgUKchroJyBMf5uGOqmVZD6zX.jpg",
+      "inCharacter": null
+    }
+  ],
+  "generatedAt": "2026-07-23T19:54:38.207Z"
+}

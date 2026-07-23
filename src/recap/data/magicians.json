@@ -1,0 +1,2740 @@
+{
+  "slug": "magicians",
+  "tmdbId": 64432,
+  "tvmazeId": 3083,
+  "matchedBy": "imdb_id",
+  "title": "The Magicians",
+  "overview": "Brakebills University is a secret institution specializing in magic. There, amidst an unorthodox education of spellcasting, a group of twenty-something friends soon discover that a magical fantasy world they read about as children is all too real— and poses grave danger to humanity.",
+  "firstAirDate": "2015-12-16",
+  "network": "Syfy",
+  "poster": "https://image.tmdb.org/t/p/w780/A66dZN98BPEYeFQAhNdNCIXa57d.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/original/qb9vehNFxTpPrazhD7JJ6QtEtCv.jpg",
+  "backdrops": [
+    "https://image.tmdb.org/t/p/original/qb9vehNFxTpPrazhD7JJ6QtEtCv.jpg",
+    "https://image.tmdb.org/t/p/original/jL0fovOk2tec7IjFLcHywI90gyO.jpg",
+    "https://image.tmdb.org/t/p/original/hAHRfhcQwxie3WpjJC7wjIOOomt.jpg",
+    "https://image.tmdb.org/t/p/original/wcfErhzLmmeutxAMpbHlR0Naa2q.jpg",
+    "https://image.tmdb.org/t/p/original/gsOFaubt4K6DFVE1OJQZzayZtlj.jpg",
+    "https://image.tmdb.org/t/p/original/iiUNXrISpcPPP6QtkdH11DKDcOy.jpg",
+    "https://image.tmdb.org/t/p/original/skgzUTQVrhuGK3bixvqtBMeo0vy.jpg",
+    "https://image.tmdb.org/t/p/original/ikE6kaK5VnbN6aKsQUfH3BvwKlA.jpg",
+    "https://image.tmdb.org/t/p/original/c6wRj3xP1CgEVcBXYihKRsuF436.jpg",
+    "https://image.tmdb.org/t/p/original/kMRCLaaWZZ5qbgNmg3p7PfqxWak.jpg",
+    "https://image.tmdb.org/t/p/original/d1CNlWoK4N6sWO6fGEtt1F3Qhmm.jpg",
+    "https://image.tmdb.org/t/p/original/65MwH0BxpfnMwyWaBGAqVA2K8tj.jpg"
+  ],
+  "throughSeason": 5,
+  "totalSeasons": 5,
+  "showType": "Scripted",
+  "genres": [
+    "Drama",
+    "Adventure",
+    "Fantasy"
+  ],
+  "status": "Ended",
+  "runtime": 60,
+  "language": "English",
+  "seasons": [
+    {
+      "season": 1,
+      "name": "Season 1",
+      "airDate": "2015-12-16",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Unauthorized Magic",
+          "overview": "A group of twentysomethings studying magic in New York discover a real-life fantasy world that poses a great threat to humanity in this drama adapted from Lev Grossman's book series.",
+          "plot": null,
+          "airDate": "2015-12-16",
+          "still": "https://image.tmdb.org/t/p/original/w2CcAiftwM24VchlGgR8RIgSKrD.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/w2CcAiftwM24VchlGgR8RIgSKrD.jpg",
+            "https://image.tmdb.org/t/p/original/bIpRxBk0lstQdOP0puph2PpAG0K.jpg",
+            "https://image.tmdb.org/t/p/original/lWHsOw40BbuE5itotJsWasKTrJr.jpg",
+            "https://image.tmdb.org/t/p/original/bApNnAWSfVjbgVcAt0TWsHETsxy.jpg",
+            "https://image.tmdb.org/t/p/original/2XcKjSWPdrv1GYADgyA27W7hWqg.jpg",
+            "https://image.tmdb.org/t/p/original/1EZ8s3n9RXXimEajhBEgDeIJPuW.jpg",
+            "https://image.tmdb.org/t/p/original/daDa7nWw5RftqsnShUPnz91O39e.jpg",
+            "https://image.tmdb.org/t/p/original/8bG1STz3EspDbaoK3G4jiKuDpvr.jpg",
+            "https://image.tmdb.org/t/p/original/oCLv3OxHncFq3H2HV8ZmIcB9fVl.jpg",
+            "https://image.tmdb.org/t/p/original/nJbpOspOZYS02rkNj4QybfFaywJ.jpg",
+            "https://image.tmdb.org/t/p/original/glGLr1r0nWB6pqEJY5KxIYECqJs.jpg",
+            "https://image.tmdb.org/t/p/original/sEirhUgwpdArXoGcjeOa5iLjH8b.jpg",
+            "https://image.tmdb.org/t/p/original/qIYcwDahLWNKvvBDTDXWW828lzt.jpg",
+            "https://image.tmdb.org/t/p/original/iNZ2SA3dNwK4wTa8MtArRlyQhxG.jpg",
+            "https://image.tmdb.org/t/p/original/cDCVNhCBRZCTkPF5y3HEKk2ivl8.jpg",
+            "https://image.tmdb.org/t/p/original/lG6VN7p6DNM7knYZedomoIiJ6Rv.jpg",
+            "https://image.tmdb.org/t/p/original/sZI80EhtsTpSkde5cpaPW5Iiq8b.jpg",
+            "https://image.tmdb.org/t/p/original/50XwLLXkycnn5HExCBfSCYLGtHo.jpg",
+            "https://image.tmdb.org/t/p/original/sSzgN8gp6uWbgc1HoS2Z6BGV3o8.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "The Source of Magic",
+          "overview": "The Brakebills students struggle to deal with the aftermath of a catastrophe that befalls the university. Back in Brooklyn, Julia makes her first foray into the mysterious world of Hedge Witches.",
+          "plot": null,
+          "airDate": "2016-01-25",
+          "still": "https://image.tmdb.org/t/p/original/vHptMasnfh9JztiVIFFXSO0u8Rs.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/vHptMasnfh9JztiVIFFXSO0u8Rs.jpg",
+            "https://image.tmdb.org/t/p/original/mHQweHANK1SBUbIymzKSdQxVrd.jpg",
+            "https://image.tmdb.org/t/p/original/nJDqhkdmE7lbAZzE4QXsnXLhIkO.jpg",
+            "https://image.tmdb.org/t/p/original/wHS8q1vmTtWgq0B8iWIIpjKXwl3.jpg",
+            "https://image.tmdb.org/t/p/original/77JKYRSeEqQFq87Zdo5GUo9n9kj.jpg",
+            "https://image.tmdb.org/t/p/original/gwEUawYcTPPwJ4WxmGG903D05O2.jpg",
+            "https://image.tmdb.org/t/p/original/1YSI175pYnrvCvqEIeMsim8Z5Qt.jpg",
+            "https://image.tmdb.org/t/p/original/vzcgoj0KeWE24efbgBAhzogg9qi.jpg",
+            "https://image.tmdb.org/t/p/original/2APIR3nJRVrQrknrXEphLJGjM1v.jpg",
+            "https://image.tmdb.org/t/p/original/rna6z9p8GTscGe8dGq5RDmIfw3l.jpg",
+            "https://image.tmdb.org/t/p/original/iLQveNcJYLwtimJ4Xo25FmVqNkG.jpg",
+            "https://image.tmdb.org/t/p/original/2buXfo0Z8NpFKhxXbTHTC2f1Wp2.jpg",
+            "https://image.tmdb.org/t/p/original/i0uAMqBhmXEi5Gau52zPMkhqAcw.jpg",
+            "https://image.tmdb.org/t/p/original/9zqrNmTiugvj0WrrrHEzN7VYzjO.jpg",
+            "https://image.tmdb.org/t/p/original/aLpMmA2HXPVKLU74gMQ03qrE5Le.jpg",
+            "https://image.tmdb.org/t/p/original/nfMKQLSdhDKdYMokWjeRrtnFySo.jpg",
+            "https://image.tmdb.org/t/p/original/oGsTnph3bpIOEKWUOenoSIV3hKk.jpg",
+            "https://image.tmdb.org/t/p/original/yftwjtTFc9EauXOXv28s0a0uBLk.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Consequences of Advanced Spellcasting",
+          "overview": "Alice ends up risking everything to discover the truth behind her brother's disappearance. Quentin and Julia are involved in a volatile reunion.",
+          "plot": null,
+          "airDate": "2016-02-01",
+          "still": "https://image.tmdb.org/t/p/original/cmXfSff9b0lTQwzMrSSRkttMhxZ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/cmXfSff9b0lTQwzMrSSRkttMhxZ.jpg",
+            "https://image.tmdb.org/t/p/original/vGcuhbbOxsEnTCJYqiRTTqig0iu.jpg",
+            "https://image.tmdb.org/t/p/original/m8GDEhHsSjCzS2n5pui6aXNgzNq.jpg",
+            "https://image.tmdb.org/t/p/original/cttuONYsWWD7Ao2Vj4pvFQvRdoj.jpg",
+            "https://image.tmdb.org/t/p/original/ichzXjfhZzToEtjDHVxErFT5321.jpg",
+            "https://image.tmdb.org/t/p/original/7hEiTasY37FalwKzR2IMwfkOWaS.jpg",
+            "https://image.tmdb.org/t/p/original/1i549yZlu6Rv8pcuANtMQsUflHA.jpg",
+            "https://image.tmdb.org/t/p/original/nF9DfClO1A8QwmfBPRdrQmY97JA.jpg",
+            "https://image.tmdb.org/t/p/original/k4ZSIFPxGb4OKqA1U73pDZYuR43.jpg",
+            "https://image.tmdb.org/t/p/original/mLeRt1nKUhjZBEbNzW3kG71L9JB.jpg",
+            "https://image.tmdb.org/t/p/original/iFyxiw7dQxEFmRFptZTttgoqvvv.jpg",
+            "https://image.tmdb.org/t/p/original/vTQecbjPgs4EaFHo8Y2isSZNl9G.jpg",
+            "https://image.tmdb.org/t/p/original/klIul2DA4yaRjh7hdUvzdhTcnvU.jpg",
+            "https://image.tmdb.org/t/p/original/rYNXbv7YRCSLmnRqoI5RXVz27Dv.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "The World in the Walls",
+          "overview": "Quentin panics when he wakes up in a mental hospital. Meanwhile, upset over her fight with Quentin, Julia commits herself to learning more powerful spells.",
+          "plot": null,
+          "airDate": "2016-02-08",
+          "still": "https://image.tmdb.org/t/p/original/zDRrlJYVgBkMZkMhTPuNZeAr43k.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/zDRrlJYVgBkMZkMhTPuNZeAr43k.jpg",
+            "https://image.tmdb.org/t/p/original/svE7VSRMFzVo1RiywFBUOLiq3kz.jpg",
+            "https://image.tmdb.org/t/p/original/tP4dmp1csoQitJev8prKM7jdTOO.jpg",
+            "https://image.tmdb.org/t/p/original/8n7y6lwy8MdugFOhpdjFCwskbBK.jpg",
+            "https://image.tmdb.org/t/p/original/lXAQqTefXaUKyqRBXm3Pi1bJhTX.jpg",
+            "https://image.tmdb.org/t/p/original/dW5c2VJi5JEXKC6eJA4UYJUfstd.jpg",
+            "https://image.tmdb.org/t/p/original/dDgE9uuGTd0YP7KLuWtbUtX8UJP.jpg",
+            "https://image.tmdb.org/t/p/original/sZ2TksgxQfQ8dZpATUflmTCEutx.jpg",
+            "https://image.tmdb.org/t/p/original/rBDWNk6w1USnSZ7svcc4731bFUq.jpg",
+            "https://image.tmdb.org/t/p/original/bocSZXsnQH6AwGmaXu1Aztevsh.jpg",
+            "https://image.tmdb.org/t/p/original/b2LVpHg39KlPMx0THZEgzcSw8PT.jpg",
+            "https://image.tmdb.org/t/p/original/bMpl90durjSksfNKEgCFWUmfnlH.jpg",
+            "https://image.tmdb.org/t/p/original/gZrfWniU3Qsvzv9P9SVc9yAY9Vm.jpg",
+            "https://image.tmdb.org/t/p/original/ikgVUppNAxL4AIeEW8hRZ4iq9ZS.jpg",
+            "https://image.tmdb.org/t/p/original/xKpwu5MC0lTtrDRTpZ8oHjLXPQ9.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Mendings, Major and Minor",
+          "overview": "The students each deal with a personal matter that keeps them from focusing on the upcoming Welter's Tournament.",
+          "plot": null,
+          "airDate": "2016-02-15",
+          "still": "https://image.tmdb.org/t/p/original/tYiyJhIWsqC4QD0rCctQ8bUhGl7.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/tYiyJhIWsqC4QD0rCctQ8bUhGl7.jpg",
+            "https://image.tmdb.org/t/p/original/2uTJi7A84OgL8uKJ7w5GurYaASb.jpg",
+            "https://image.tmdb.org/t/p/original/e4OHRgw2VoB3SCm5SolAYzBaNjQ.jpg",
+            "https://image.tmdb.org/t/p/original/8Rk1ShwIhMMHqXcmtjgqHfJ2zZ5.jpg",
+            "https://image.tmdb.org/t/p/original/tFveM5maQmTHTdZR0p0W2GcxvfQ.jpg",
+            "https://image.tmdb.org/t/p/original/gI41dkWE6mHNWlpoLhDWbrKHarf.jpg",
+            "https://image.tmdb.org/t/p/original/vphdIwiECQgzdx01uy1XdVVsxUu.jpg",
+            "https://image.tmdb.org/t/p/original/mt0TT9h1yOB0Q3SKO4kG1ZMsCER.jpg",
+            "https://image.tmdb.org/t/p/original/gR2dOBGO233GmuPNUQMdFLhbg5P.jpg",
+            "https://image.tmdb.org/t/p/original/mHElppl5hXQL8ZZNxNjv8nfQSqk.jpg",
+            "https://image.tmdb.org/t/p/original/8huFT7jshlRlX3k8lPWrmNJgOji.jpg",
+            "https://image.tmdb.org/t/p/original/aFOKK4D6RHCfmLWwwVsFvWOJsOw.jpg",
+            "https://image.tmdb.org/t/p/original/mxh4sRd5hv1pLi7fs8B6GxdE2qX.jpg",
+            "https://image.tmdb.org/t/p/original/lDr5p9b42oWReY8sJej4qBbruFA.jpg",
+            "https://image.tmdb.org/t/p/original/tjKtt9Bh2JJWBOJMxoXwyV6DhiW.jpg",
+            "https://image.tmdb.org/t/p/original/gtdiNh031AcBXcfkI9DiTzqocwW.jpg",
+            "https://image.tmdb.org/t/p/original/4ZY522z0G1SClpWPz6Mjel0Lc57.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Impractical Applications",
+          "overview": "The first-year students face something called \"The Trials,\" a series of unconventional and emotional tests, which result in expulsion from Brakebills for those who fail.",
+          "plot": null,
+          "airDate": "2016-02-22",
+          "still": "https://image.tmdb.org/t/p/original/7U8O2BSRKmtDbNAmQDcQ3zdcsJQ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/7U8O2BSRKmtDbNAmQDcQ3zdcsJQ.jpg",
+            "https://image.tmdb.org/t/p/original/hqBZMkt3tYxASYI8RZm4NDTj4uP.jpg",
+            "https://image.tmdb.org/t/p/original/7CTSbl5DZG0hU8QOjq4g2AAM4l6.jpg",
+            "https://image.tmdb.org/t/p/original/bxIKYXk12ae25hELVNQRRWqFBqT.jpg",
+            "https://image.tmdb.org/t/p/original/xOdmnrZNxONroY3zrg8YtCU5PDD.jpg",
+            "https://image.tmdb.org/t/p/original/xBHgEbXDWvmxw6YKOLH9MRlHmQp.jpg",
+            "https://image.tmdb.org/t/p/original/aTWFeEUcjOGcrj3clMkEr3JTqNW.jpg",
+            "https://image.tmdb.org/t/p/original/lqh65X8EfVdHTTyL1QIqSLzEPYf.jpg",
+            "https://image.tmdb.org/t/p/original/lCedPR1enJVaUGsKNv4xj5dzwaF.jpg",
+            "https://image.tmdb.org/t/p/original/64OCUKEaEd4Y89WK0lWdNaDG7bZ.jpg",
+            "https://image.tmdb.org/t/p/original/1ck9k2YHQxVPzSuu1EhiDOz8esJ.jpg",
+            "https://image.tmdb.org/t/p/original/bvMGkfqrNkSzQ0CvwHtiiVjCT4K.jpg",
+            "https://image.tmdb.org/t/p/original/kSgPXLhPncf4Jj3r0xDk8wjLUd5.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "The Mayakovsky Circumstance",
+          "overview": "An uncompromising professor pushes boundaries both in magic and in the personal lives of his first-year students. Meanwhile, Julia must decide whether she's ready to accept help and what that means for her future as a Magician.",
+          "plot": null,
+          "airDate": "2016-02-29",
+          "still": "https://image.tmdb.org/t/p/original/bkYIyqRkHMe8A6mLggopiTgjbF0.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/bkYIyqRkHMe8A6mLggopiTgjbF0.jpg",
+            "https://image.tmdb.org/t/p/original/gwQPCydJiYmLgzVucGdkuqetnue.jpg",
+            "https://image.tmdb.org/t/p/original/hIH2svPCNed3zdcZAxl9bFFpn8f.jpg",
+            "https://image.tmdb.org/t/p/original/wj7GW9S2JWtuHprJqmQ5sTwZM2z.jpg",
+            "https://image.tmdb.org/t/p/original/sPcQ2KmZr8ov2oNDxq58ut7d0gM.jpg",
+            "https://image.tmdb.org/t/p/original/56lUoFGNzW5uvjVZDUh7YcLdOU2.jpg",
+            "https://image.tmdb.org/t/p/original/yaLIVng6KGImG66xCDrWoshRGQF.jpg",
+            "https://image.tmdb.org/t/p/original/jDO9EDsOdZ0mFMrtLA5SA0GtK4V.jpg",
+            "https://image.tmdb.org/t/p/original/dyE4VkV0VSiyj0KcedJ3dLIO6NX.jpg",
+            "https://image.tmdb.org/t/p/original/hyNuAn8jnvlOOnW1kkGEVwf8P7y.jpg",
+            "https://image.tmdb.org/t/p/original/zNcox77MwChqCCPeQarAbP8vL5c.jpg",
+            "https://image.tmdb.org/t/p/original/hDSi0tj2swVTKcIqVRIrioOgpDD.jpg",
+            "https://image.tmdb.org/t/p/original/hkY4SrKgAIpvYicDPHHKQg0qgJI.jpg",
+            "https://image.tmdb.org/t/p/original/fAU9EtIluMcyDMf410ENJoLArqg.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "The Strangled Heart",
+          "overview": "Brakebills is thrown into chaos when Penny is violently attacked by someone who was considered a friend. Quentin tries to find a connection to the Beast. Julia considers giving up magic for good after entering a rehab facility.",
+          "plot": null,
+          "airDate": "2016-03-07",
+          "still": "https://image.tmdb.org/t/p/original/y9DJP9j5uO4XCbHg5dUsr6X0SpX.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/y9DJP9j5uO4XCbHg5dUsr6X0SpX.jpg",
+            "https://image.tmdb.org/t/p/original/aapl7XoM5ORZf1FRgBLm2i4mhZI.jpg",
+            "https://image.tmdb.org/t/p/original/6WH5ejXAAwxJLb0KMQoUSxrh3cY.jpg",
+            "https://image.tmdb.org/t/p/original/cgRRDHp89Y0Z3h3LWCqc8u0jJFl.jpg",
+            "https://image.tmdb.org/t/p/original/2QYZ6Xt3g3SvjxIkKIjawlAKAuu.jpg",
+            "https://image.tmdb.org/t/p/original/qpbK5FQnJPwx6A0YJN2CfgCWSyG.jpg",
+            "https://image.tmdb.org/t/p/original/m9wuhV0r1klKta71WDu0LiA5gDv.jpg",
+            "https://image.tmdb.org/t/p/original/mnlSLaiXhGzYmhNMhAHacgRJ0RM.jpg",
+            "https://image.tmdb.org/t/p/original/reI2Gg0JUe82Z0YYHx630GGVNZT.jpg",
+            "https://image.tmdb.org/t/p/original/874Pqr6CF4wXn8TeW2HAQEbL8Sa.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "The Writing Room",
+          "overview": "Quentin, Alice, Eliot, and Penny travel to England in search of a missing magic button. Julia searches for real meaning in her magic.",
+          "plot": null,
+          "airDate": "2016-03-14",
+          "still": "https://image.tmdb.org/t/p/original/8SEuSmHnO7Glwj5Q709D6LhQ3ol.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/8SEuSmHnO7Glwj5Q709D6LhQ3ol.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Homecoming",
+          "overview": "Penny travels to the world of The Neitherlands, and Quentin and Alice work together to save him. Julia joins an eclectic group of magicians.",
+          "plot": null,
+          "airDate": "2016-03-21",
+          "still": "https://image.tmdb.org/t/p/original/apLj2cHJjcyPnLIYsxVI52kAk1W.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/apLj2cHJjcyPnLIYsxVI52kAk1W.jpg"
+          ]
+        },
+        {
+          "episode": 11,
+          "name": "Remedial Battle Magic",
+          "overview": "Quentin and the others learn battle magic and prepare for a showdown in Fillory. Julia and Kady take on a mission with the Free Traders.",
+          "plot": null,
+          "airDate": "2016-03-28",
+          "still": "https://image.tmdb.org/t/p/original/lpCQkLJiPaBb8KU4GiHNGZtWHgL.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/lpCQkLJiPaBb8KU4GiHNGZtWHgL.jpg"
+          ]
+        },
+        {
+          "episode": 12,
+          "name": "Thirty-Nine Graves",
+          "overview": "The students wake up to foggy memories and regret after a night of drinking; Penny reminds everyone that their lives depend on getting to The Neitherlands.",
+          "plot": null,
+          "airDate": "2016-04-04",
+          "still": "https://image.tmdb.org/t/p/original/nobbyDzpzXDSHX9sdg00FU8YHK5.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/nobbyDzpzXDSHX9sdg00FU8YHK5.jpg",
+            "https://image.tmdb.org/t/p/original/nJFhPjPslWfUvFTiSqqkZ5tmos0.jpg"
+          ]
+        },
+        {
+          "episode": 13,
+          "name": "Have You Brought Me Little Cakes?",
+          "overview": "Quentin and Julia arrive in Fillory and try to catch up with the group, who are more than 70 years ahead of them, in the search for The Beast.",
+          "plot": null,
+          "airDate": "2016-04-11",
+          "still": "https://image.tmdb.org/t/p/original/nGSMOHUQsJcBpnxFfzkhW5eUhYg.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/nGSMOHUQsJcBpnxFfzkhW5eUhYg.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 2,
+      "name": "Season 2",
+      "airDate": "2017-01-25",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Knight of Crowns",
+          "overview": "In the aftermath of their clash with The Beast, Quentin and his friends scramble for a new plan. Julia and The Beast strike a dangerous deal.",
+          "plot": null,
+          "airDate": "2017-01-25",
+          "still": "https://image.tmdb.org/t/p/original/jC1PzqWF3nkypiNwKFkrmmmFoWV.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/jC1PzqWF3nkypiNwKFkrmmmFoWV.jpg",
+            "https://image.tmdb.org/t/p/original/o1nYmyn29aqwcuABv0YZxOmoehV.jpg",
+            "https://image.tmdb.org/t/p/original/90bLChlrciv7SjOZUBJ91i9CeXx.jpg",
+            "https://image.tmdb.org/t/p/original/vbCPZwxGSVyHhSquEDavo0eHPaP.jpg",
+            "https://image.tmdb.org/t/p/original/zfayodOcoFNI3qL7jeEsviqdnZk.jpg",
+            "https://image.tmdb.org/t/p/original/kJlE5NFZRnEKW62Sx74TEC7zmbs.jpg",
+            "https://image.tmdb.org/t/p/original/8HtQR8rBPFo7gs7SQkbidfhiIUu.jpg",
+            "https://image.tmdb.org/t/p/original/rIWALUlZxxe39iCkmgyl7w4GM0Z.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Hotel Spa Potions",
+          "overview": "Quentin, Alice, Penny and Margo seek a new weapon; Eliot struggles with being king. Julia and The Beast find an unexpected ally.",
+          "plot": null,
+          "airDate": "2017-02-01",
+          "still": "https://image.tmdb.org/t/p/original/3uwef1LHrLoDLI7nRpJ0gV1la17.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/3uwef1LHrLoDLI7nRpJ0gV1la17.jpg",
+            "https://image.tmdb.org/t/p/original/jkXPctZx3eNRCVFfJ5I7b1PzxyO.jpg",
+            "https://image.tmdb.org/t/p/original/owAnhyAc389l6oWkI9SUwp3Q4ZK.jpg",
+            "https://image.tmdb.org/t/p/original/l0AJJ2cdxDXT3SIcwVrAfvikrec.jpg",
+            "https://image.tmdb.org/t/p/original/nmAuTVqnSiZP0Djt4utCKhQ31MV.jpg",
+            "https://image.tmdb.org/t/p/original/gfOVyGo80G1obpJAqSnIXG3i4jD.jpg",
+            "https://image.tmdb.org/t/p/original/wsgKPdIDtjbzLQyZot55rnDpapz.jpg",
+            "https://image.tmdb.org/t/p/original/iRV3Jmk12wZBLSordjpRUVZJEwW.jpg",
+            "https://image.tmdb.org/t/p/original/uEL2JKwisMWqXiTCXoPo70CykgX.jpg",
+            "https://image.tmdb.org/t/p/original/9cyuu6cUxdaigRP5NNGfEO22LA2.jpg",
+            "https://image.tmdb.org/t/p/original/51QTq8IaZ02TcPigsmJYMuuEPj8.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Divine Elimination",
+          "overview": "Quentin and friends prepare to face The Beast again. Julia conspires with The Beast and their new ally to lure and trap Reynard.",
+          "plot": null,
+          "airDate": "2017-02-08",
+          "still": "https://image.tmdb.org/t/p/original/qGVwCZCWY1y7vt5VIaXDuLwJ7wh.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/qGVwCZCWY1y7vt5VIaXDuLwJ7wh.jpg",
+            "https://image.tmdb.org/t/p/original/w93yDDG6e9iLiycwX2jKR04GbUT.jpg",
+            "https://image.tmdb.org/t/p/original/4NZ8mGMFLGOCFcbkvgb8WNpnNfb.jpg",
+            "https://image.tmdb.org/t/p/original/lQfuwBAnhq4DJErCDKRCfTBzY4F.jpg",
+            "https://image.tmdb.org/t/p/original/mXec0YiMUtamUZajEJTqjITjn3m.jpg",
+            "https://image.tmdb.org/t/p/original/nmRPMbRJ8pJocR8JbMBwTUopmOT.jpg",
+            "https://image.tmdb.org/t/p/original/j5cKOskUG8V1fdKIJe6btV8YYzj.jpg",
+            "https://image.tmdb.org/t/p/original/1kCF2M9Pc2aTPPuG0Bvg2yCtZY6.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "The Flying Forest",
+          "overview": "Quentin and Penny embark on a quest. Margo works on a way to help Eliot. Julia seeks an old friend's help.",
+          "plot": null,
+          "airDate": "2017-02-15",
+          "still": "https://image.tmdb.org/t/p/original/ffuh6SIDgFIWs70nEelLx9mRqcK.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ffuh6SIDgFIWs70nEelLx9mRqcK.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Cheat Day",
+          "overview": "Quentin adjusts to his new life; Penny seeks help from an unexpected source; Eliot and Margo contend with the dangers of ruling; Julia and Kady discover another consequence of Reynard's attack.",
+          "plot": null,
+          "airDate": "2017-02-22",
+          "still": "https://image.tmdb.org/t/p/original/bFMjDXcOYRQZoDjSbtRVyAhX3Gd.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/bFMjDXcOYRQZoDjSbtRVyAhX3Gd.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "The Cock Barrens",
+          "overview": "Quentin attempts to summon Alice's spirit while Julia and Kady follow leads to rid them of Reynard and his unborn child. In Fillory, Eliot and Margo find that they have enemies from outside their kingdom as well as within.",
+          "plot": null,
+          "airDate": "2017-03-01",
+          "still": "https://image.tmdb.org/t/p/original/gNxsLmYAsA2yfVLGk9rP9PhQr9l.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/gNxsLmYAsA2yfVLGk9rP9PhQr9l.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Plan B",
+          "overview": "Julia and Kady enlist Quentin, Margo, Eliot, and Penny for a magical heist.",
+          "plot": null,
+          "airDate": "2017-03-08",
+          "still": "https://image.tmdb.org/t/p/original/bVW8rxoRdbRzsMBcArPZBqsWkdn.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/bVW8rxoRdbRzsMBcArPZBqsWkdn.jpg",
+            "https://image.tmdb.org/t/p/original/bnLC0d1LHzoFl3bqEqJDlxKa84U.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Word As Bond",
+          "overview": "Margo feels the pressure of ruling; Julia's friends question her behavior; Quentin faces the repercussions of the deal he made; Penny finds a way to help Kady.",
+          "plot": null,
+          "airDate": "2017-03-15",
+          "still": "https://image.tmdb.org/t/p/original/a75mMST75tzSs7jtjfGz0yhdyrA.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/a75mMST75tzSs7jtjfGz0yhdyrA.jpg",
+            "https://image.tmdb.org/t/p/original/py0mRP1BuLwUwhZFskymUIXzJGn.jpg",
+            "https://image.tmdb.org/t/p/original/zA3M9exBvCrdL1PZc74cPbHFiCi.jpg",
+            "https://image.tmdb.org/t/p/original/pUDWC7pK1F6v47wRKHYhsEDQXHo.jpg",
+            "https://image.tmdb.org/t/p/original/kSjE5UNo6RZD9ORSsVrzy3y7oEI.jpg",
+            "https://image.tmdb.org/t/p/original/dje3CsHkA0OhePVs61QkNhtAAm8.jpg",
+            "https://image.tmdb.org/t/p/original/hnhZ1uXy7GWhJQrSXuBOG43vfQh.jpg",
+            "https://image.tmdb.org/t/p/original/ys4htJ1gnxw4gZzsKRP3yAeu35y.jpg",
+            "https://image.tmdb.org/t/p/original/vuQxm9otNK6wRINDM7BXB22KJCz.jpg",
+            "https://image.tmdb.org/t/p/original/jfUZpaSSiYCcTExaz0PWcqbJycj.jpg",
+            "https://image.tmdb.org/t/p/original/zMSND25X6NA6mbXMBaYqe8d97G0.jpg",
+            "https://image.tmdb.org/t/p/original/f8ybl45h4K3I6uRO6dcHmVIGrgW.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Lesser Evils",
+          "overview": "Quentin nears what could be a dead end to his problem; Eliot risks his life for his kingdom, and Margo makes a costly bargain to protect him; Julia, Kady and Penny find a possible ally.",
+          "plot": null,
+          "airDate": "2017-03-22",
+          "still": "https://image.tmdb.org/t/p/original/2fuGjdj8uCZlw2QBhu2nKlRDrE5.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/2fuGjdj8uCZlw2QBhu2nKlRDrE5.jpg",
+            "https://image.tmdb.org/t/p/original/4ObQuR5eryzk5psbrJlVItSl1lA.jpg",
+            "https://image.tmdb.org/t/p/original/Ad6w4PRKMLneCyc5zw1UOHvsD1V.jpg",
+            "https://image.tmdb.org/t/p/original/n4u7hlsT5zpqAd0B1BYHqBsvLJU.jpg",
+            "https://image.tmdb.org/t/p/original/pPoLv8S7Dd22pRspFLrl2MXwIf9.jpg",
+            "https://image.tmdb.org/t/p/original/M3d9uBLM5DXYOjgB3Ci8PUbC5B.jpg",
+            "https://image.tmdb.org/t/p/original/ejXdSmK628rObz5SAwQMwYB7Gcl.jpg",
+            "https://image.tmdb.org/t/p/original/lrYtXi94RdQjQHHjMamnRTBRTFy.jpg",
+            "https://image.tmdb.org/t/p/original/7zelB40MlY31UdW2jFKOvCewpMw.jpg",
+            "https://image.tmdb.org/t/p/original/odJVdHEq12i9SKBmiT76zOByrHr.jpg",
+            "https://image.tmdb.org/t/p/original/hVEqpu23lLeK2NNtM1hFOonlyw5.jpg",
+            "https://image.tmdb.org/t/p/original/c3l47mVzK8bH7q8o108b9TCM5kv.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "The Girl Who Told Time",
+          "overview": "Quentin helps Julia with her search; Eliot attempts to win over his people as Margo tries to keep a devastating secret; Penny and Kady become caught between two magical factions.",
+          "plot": null,
+          "airDate": "2017-03-29",
+          "still": "https://image.tmdb.org/t/p/original/1lJ95aaSkkUWEdGL3Y60YrD3ELE.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/1lJ95aaSkkUWEdGL3Y60YrD3ELE.jpg",
+            "https://image.tmdb.org/t/p/original/cmTJheBIN903SMwRmy2pw0Sq66F.jpg",
+            "https://image.tmdb.org/t/p/original/q44KPQfGsp7mUfIj38P4pWM2ilE.jpg",
+            "https://image.tmdb.org/t/p/original/sNIDe0ogbur0LQfzLNEZUqj42ko.jpg",
+            "https://image.tmdb.org/t/p/original/5HcxW20XrwQezdWxQrtsym6kY0a.jpg",
+            "https://image.tmdb.org/t/p/original/prGXCmKL9figvkTUCZSEEqDnURf.jpg",
+            "https://image.tmdb.org/t/p/original/ndRhZnUly0Os1EMc5NLkslaEyvZ.jpg",
+            "https://image.tmdb.org/t/p/original/y94ECSUihg9DTWaFWNEwM26B7HV.jpg",
+            "https://image.tmdb.org/t/p/original/p3lzi2xnkE8wIviK9Pia2tm5Icb.jpg",
+            "https://image.tmdb.org/t/p/original/jGLspGN155BUcEH7znDzRmu7rMV.jpg",
+            "https://image.tmdb.org/t/p/original/mvr4l0Cwu4AJRDpvyU9hh07PHeu.jpg",
+            "https://image.tmdb.org/t/p/original/wldUWHBnah55HvTlPwjZeUo3h0O.jpg",
+            "https://image.tmdb.org/t/p/original/vhXinQOd7Kzg0lxeWJKzw2rSzQq.jpg",
+            "https://image.tmdb.org/t/p/original/8xwWUf2MeyURiUj74bBjht2eMod.jpg",
+            "https://image.tmdb.org/t/p/original/8Iz5hslV1c2AZCe49UC3VvLAzpT.jpg"
+          ]
+        },
+        {
+          "episode": 11,
+          "name": "The Rattening",
+          "overview": "Quentin and Julia undertake a difficult journey; Eliot faces mounting catastrophes in Fillory; Margo attempts to fix the bad deal she made; Penny finds a new ally.",
+          "plot": null,
+          "airDate": "2017-04-05",
+          "still": "https://image.tmdb.org/t/p/original/pWHMFvNGRJkK8CvH4hGYN4LykF.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/pWHMFvNGRJkK8CvH4hGYN4LykF.jpg",
+            "https://image.tmdb.org/t/p/original/xbxo9TZgPXMfxnmW54fLQNqpyaG.jpg",
+            "https://image.tmdb.org/t/p/original/gGrduwAkBVMyLLpcitnSn443vqI.jpg",
+            "https://image.tmdb.org/t/p/original/iRZFKmZmBlsmPTlSLyVKJqyo1wq.jpg",
+            "https://image.tmdb.org/t/p/original/5aEx7xPc78Fh2AmtSOTY4gIa9AF.jpg",
+            "https://image.tmdb.org/t/p/original/4Ze05rUP5Dgt7nq5a8drJxGso5N.jpg",
+            "https://image.tmdb.org/t/p/original/gjoeh8z6wy9oxvj3h5OidKt9ect.jpg",
+            "https://image.tmdb.org/t/p/original/mjgVj7Vr6KPLxUpnDNbdHEvIT8.jpg",
+            "https://image.tmdb.org/t/p/original/7qeFT3v6wGslPXdwu17wqsPDQES.jpg",
+            "https://image.tmdb.org/t/p/original/byKs2k9LoRxoQ9H1sDttGMOXELc.jpg",
+            "https://image.tmdb.org/t/p/original/t3ZIqmvniFzqGdLTcNHY30Q0VXq.jpg",
+            "https://image.tmdb.org/t/p/original/aHPADUBl4n4S8DtJ3dNVqPryAke.jpg"
+          ]
+        },
+        {
+          "episode": 12,
+          "name": "Ramifications",
+          "overview": "Julia, Kady and Penny each make sacrifices to finally face Reynard; Quentin and Eliot learn a disturbing truth about Fillory",
+          "plot": null,
+          "airDate": "2017-04-12",
+          "still": "https://image.tmdb.org/t/p/original/vKwSvcmtT7yiq62KDwx2HmgAURg.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/vKwSvcmtT7yiq62KDwx2HmgAURg.jpg",
+            "https://image.tmdb.org/t/p/original/gnxraDQ95pggVCgOJ1mLrlyVZA2.jpg",
+            "https://image.tmdb.org/t/p/original/zAtr8BDrwwUS5zpPQDu8XDagsuu.jpg",
+            "https://image.tmdb.org/t/p/original/8dIwMT2o9m8abHA5YKzNtBfJMPf.jpg",
+            "https://image.tmdb.org/t/p/original/oSSpF6g6o3Tr3Ro5JcyjQDVTXv.jpg",
+            "https://image.tmdb.org/t/p/original/pjDGqUEtxhXrKVGBOktGtn80BWF.jpg",
+            "https://image.tmdb.org/t/p/original/aNd1350NSkPNmkfwJi34IHnxaOc.jpg",
+            "https://image.tmdb.org/t/p/original/yTAy9aJ8ImDx9XU5GFzrVxxYUwF.jpg",
+            "https://image.tmdb.org/t/p/original/3k27SO9NS673j1vCz3v7uMdUSQ5.jpg",
+            "https://image.tmdb.org/t/p/original/yd6JEpkInHOIuY7l7x5S8yKwyS0.jpg",
+            "https://image.tmdb.org/t/p/original/oDifxK2R0poayYzvM9aqUZsVdSy.jpg",
+            "https://image.tmdb.org/t/p/original/vj4AJSiTMe1eE7Dgw8R5fMOYd7v.jpg",
+            "https://image.tmdb.org/t/p/original/GgakR1dXpccwPqNwfYLxfLxTGu.jpg",
+            "https://image.tmdb.org/t/p/original/aozCm3BGhEyZ7IYkYb57ARBJWgR.jpg",
+            "https://image.tmdb.org/t/p/original/tXa3CvQaV97FG2aj7AKK45yEuef.jpg",
+            "https://image.tmdb.org/t/p/original/2Ziym4Yaw635fLhtqYYD84WfAUh.jpg",
+            "https://image.tmdb.org/t/p/original/7k0Gk380rUkUZoLpjqKSf0h5NVd.jpg"
+          ]
+        },
+        {
+          "episode": 13,
+          "name": "We Have Brought You Little Cakes",
+          "overview": "Quentin, Eliot, Julia and Margo enact a risky plan to protect Fillory; Penny questions fate, and Kady makes a deal to help him.",
+          "plot": null,
+          "airDate": "2017-04-19",
+          "still": "https://image.tmdb.org/t/p/original/nyLBLaRYU56aOqcpBbb4sFJOAzE.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/nyLBLaRYU56aOqcpBbb4sFJOAzE.jpg",
+            "https://image.tmdb.org/t/p/original/ulQcN2fAI5k1mAPKiNIvsWUsHsr.jpg",
+            "https://image.tmdb.org/t/p/original/AawKKU3qvhgmVoDZiP8EdtSCcan.jpg",
+            "https://image.tmdb.org/t/p/original/74H2SZr9VtNXzBC6RD7xzeJp8Wd.jpg",
+            "https://image.tmdb.org/t/p/original/9WTmMjK3JTjwlx9wB66Xj4M9XHH.jpg",
+            "https://image.tmdb.org/t/p/original/rhwykmF5M5cE6SzgxIBXbGGSNR8.jpg",
+            "https://image.tmdb.org/t/p/original/cAcZ85AupTAKpz1iLzYp0GkTPTF.jpg",
+            "https://image.tmdb.org/t/p/original/8ECIbR5XfvGx2O0rPd0iVVVG1mF.jpg",
+            "https://image.tmdb.org/t/p/original/qXvOdTNIxAnrgU0Kvw9b8XtARKW.jpg",
+            "https://image.tmdb.org/t/p/original/p4kUqwiQOvWHmnLZMD12X6EyM5o.jpg",
+            "https://image.tmdb.org/t/p/original/mO7DEdp7pq1Ean4JqWry62Bmc0A.jpg",
+            "https://image.tmdb.org/t/p/original/9d2EhOuDRLj2R9ya0lJLqXMXfjA.jpg",
+            "https://image.tmdb.org/t/p/original/GXhItJ3XYOCheKOndYQGPZjKfT.jpg",
+            "https://image.tmdb.org/t/p/original/4Cc4uMcfQsvNiGzFzfn5vrH0mB.jpg",
+            "https://image.tmdb.org/t/p/original/mxuGCSKAmXfs32NIQvGa1VL7qDj.jpg",
+            "https://image.tmdb.org/t/p/original/bm9a3iajxzFPdZYe5mjiUMQ9Qr8.jpg",
+            "https://image.tmdb.org/t/p/original/1RsXXrSbn2EktkbIZfOCVOZKGfu.jpg",
+            "https://image.tmdb.org/t/p/original/kgGX9glXu2ZRbakubegs6vuRhHZ.jpg",
+            "https://image.tmdb.org/t/p/original/tdDeex5IAFD4d6IenWnyeXAmm2y.jpg",
+            "https://image.tmdb.org/t/p/original/zz6s3MYJE1k5uIqOTTmZEcN7Jhd.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 3,
+      "name": "Season 3",
+      "airDate": "2018-01-10",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "The Tales of the Seven Keys",
+          "overview": "Quentin and Julia attempt to bring magic back. Julia explores her small, but significant gift. Eliot and Margo chafe under the fairy occupation. Kady searches for a way to heal Penny.",
+          "plot": null,
+          "airDate": "2018-01-10",
+          "still": "https://image.tmdb.org/t/p/original/2FX70XLb2Y7Fu3jFRMHOlt9hxav.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/2FX70XLb2Y7Fu3jFRMHOlt9hxav.jpg",
+            "https://image.tmdb.org/t/p/original/gc1R8sYvFU4mER21lFPBHddKKyq.jpg",
+            "https://image.tmdb.org/t/p/original/wOEBMwOunvUmYVPwtLVKzUrphmS.jpg",
+            "https://image.tmdb.org/t/p/original/9QV8BwUnYE6HTpUNawG0gFbJZfm.jpg",
+            "https://image.tmdb.org/t/p/original/yQgPhPa7e2RvOe6CmCV7teTE4TL.jpg",
+            "https://image.tmdb.org/t/p/original/iR6g8W7eHdFv7DWrdXmSUjU12Au.jpg",
+            "https://image.tmdb.org/t/p/original/inNlN3iBb1rTxjhvHUFI9fpwP3L.jpg",
+            "https://image.tmdb.org/t/p/original/vQ3WJYpjAQ2UhNGrjEENvlPhDsq.jpg",
+            "https://image.tmdb.org/t/p/original/eIk939cuVmr7QbYEiInBodC6OFB.jpg",
+            "https://image.tmdb.org/t/p/original/fcmv7NRzTDVnzORx8aB4Cl25Syu.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Heroes and Morons",
+          "overview": "Eliot embarks on a quest. Alice runs from a monster. Quentin, Kady, and Josh continue their search for magic.",
+          "plot": null,
+          "airDate": "2018-01-17",
+          "still": "https://image.tmdb.org/t/p/original/rXFqcDjKvDBCo4SKJ8J4BEoAon.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/rXFqcDjKvDBCo4SKJ8J4BEoAon.jpg",
+            "https://image.tmdb.org/t/p/original/qSU3cMvtbL960DwDqYoMwuxTtCN.jpg",
+            "https://image.tmdb.org/t/p/original/2wcSHsw6VWNi5tDGbEmf5D6jOrr.jpg",
+            "https://image.tmdb.org/t/p/original/jawWT6V94r37sBFT4dkfliFKis.jpg",
+            "https://image.tmdb.org/t/p/original/2QvHz80tGGFIIi9n1O3o7asFbMr.jpg",
+            "https://image.tmdb.org/t/p/original/r8Kz65S3pfeB21WnvHA8ZV8k82J.jpg",
+            "https://image.tmdb.org/t/p/original/dMMY2BR11BHo5qLQZkB9kgHCy13.jpg",
+            "https://image.tmdb.org/t/p/original/kX4jRjnccXoEMUh63OoKIFcH6zn.jpg",
+            "https://image.tmdb.org/t/p/original/wMRCiNTzrvDYk7wTHsa2nq0HRFP.jpg",
+            "https://image.tmdb.org/t/p/original/AaLIk36CDnuHxdc9B89OXjvglYx.jpg",
+            "https://image.tmdb.org/t/p/original/1M4d0GUQ094B0fwHcF09rNnn1W1.jpg",
+            "https://image.tmdb.org/t/p/original/3VhpIZIMlfpEsL1lMyyq233Iryy.jpg",
+            "https://image.tmdb.org/t/p/original/AgUseqJ2c4epngzdh10wl22XnCU.jpg",
+            "https://image.tmdb.org/t/p/original/gznp0AGSwi4ISBIVIjoyNrwVAQj.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "The Losses of Magic",
+          "overview": "Alice and Quentin visit her parents as Kady and Julia explore new methods to heal Penny.",
+          "plot": null,
+          "airDate": "2018-01-24",
+          "still": "https://image.tmdb.org/t/p/original/zlphdtxuqhaOecgDSCrm6bZx1LF.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/zlphdtxuqhaOecgDSCrm6bZx1LF.jpg",
+            "https://image.tmdb.org/t/p/original/dm8vTwXEEGXVykVPXeib3omEG5h.jpg",
+            "https://image.tmdb.org/t/p/original/zDxJ2Kh23mcstlvHP9MMNxa1CS4.jpg",
+            "https://image.tmdb.org/t/p/original/nIITAM73c35qFtl0fCATu12m9eA.jpg",
+            "https://image.tmdb.org/t/p/original/oZx5QVuSb0DXPXbIfN4LfeNKUal.jpg",
+            "https://image.tmdb.org/t/p/original/9x6lS6KiMEozEBV49MKUkgR1HK4.jpg",
+            "https://image.tmdb.org/t/p/original/3etllgvEYfvCw30MzOivPN2ZYjH.jpg",
+            "https://image.tmdb.org/t/p/original/dC4XWDXyhh4QesiirpHyPFhgb6n.jpg",
+            "https://image.tmdb.org/t/p/original/iaAKchMLSQHvtT8H9LArcgS2lYt.jpg",
+            "https://image.tmdb.org/t/p/original/2S6dlp40nmAE7osCbCvCKsxosQe.jpg",
+            "https://image.tmdb.org/t/p/original/s88n19ZT0H7369oKVteoWKeKrZ1.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Be the Penny",
+          "overview": "As Eliot is hunted, Quentin and Julia discover a powerful secret tied to the history of Brakebills.",
+          "plot": null,
+          "airDate": "2018-01-31",
+          "still": "https://image.tmdb.org/t/p/original/i1Ea8SjfkmRoyVrm2VBzmTU3qFE.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/i1Ea8SjfkmRoyVrm2VBzmTU3qFE.jpg",
+            "https://image.tmdb.org/t/p/original/8ekeS9Ta3GbNKsXeYrealXHButa.jpg",
+            "https://image.tmdb.org/t/p/original/vxz5gBgcjvgUzs5r7keScevVJK5.jpg",
+            "https://image.tmdb.org/t/p/original/9aa5BHgUsq47eXYiqRSPexK4IlF.jpg",
+            "https://image.tmdb.org/t/p/original/5oI6GdLvl0XmIvTYEl01FaAQWYO.jpg",
+            "https://image.tmdb.org/t/p/original/9fTkEDlnTDP8wYqJ3Imp1HqB8aQ.jpg",
+            "https://image.tmdb.org/t/p/original/vJpDPNWSXpSllNOKoK3StoLWNej.jpg",
+            "https://image.tmdb.org/t/p/original/fTLb9kA6zSUPYq1JBKEHdeKYzVF.jpg",
+            "https://image.tmdb.org/t/p/original/fqgRCEVMW3JyLbj92K6NVUjaOlb.jpg",
+            "https://image.tmdb.org/t/p/original/xkbhaYcsrmRBkUFZQLRj8MJ9bf9.jpg",
+            "https://image.tmdb.org/t/p/original/7hEk31HApsPshxLBrmYk1kkqV8Y.jpg",
+            "https://image.tmdb.org/t/p/original/zvvyz40uNivI2A1qgMJHEQHYti5.jpg",
+            "https://image.tmdb.org/t/p/original/sUOVMgwlXDmwSF5GHOhhUfPV97j.jpg",
+            "https://image.tmdb.org/t/p/original/glzSFyU6Nvk6NBXd4hRIygAA5Zx.jpg",
+            "https://image.tmdb.org/t/p/original/oWRUiwZLXkdQ7CjOztpElOionkG.jpg",
+            "https://image.tmdb.org/t/p/original/zSBlve2utMXZ4nw7FKpr8T7d3Dr.jpg",
+            "https://image.tmdb.org/t/p/original/k8r6Ji4rkWVLsgcgg3NN1szmJGM.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "A Life in the Day",
+          "overview": "Julia helps Alice navigate a personal crisis; Quentin and Eliot go on an adventure.",
+          "plot": null,
+          "airDate": "2018-02-07",
+          "still": "https://image.tmdb.org/t/p/original/r1QImljqy1aGjQ9GAptSgjbyWm8.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/r1QImljqy1aGjQ9GAptSgjbyWm8.jpg",
+            "https://image.tmdb.org/t/p/original/bAvS4bW5KbGR7qs7bXwuP5RP9Xa.jpg",
+            "https://image.tmdb.org/t/p/original/vI5JIFkoGBNHAgmPs4eCSK8ztru.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Do You Like Teeth?",
+          "overview": "Quentin faces his most formidable foe yet; Julia helps Alice with a dangerous endeavor.",
+          "plot": null,
+          "airDate": "2018-02-14",
+          "still": "https://image.tmdb.org/t/p/original/bAvS4bW5KbGR7qs7bXwuP5RP9Xa.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/bAvS4bW5KbGR7qs7bXwuP5RP9Xa.jpg",
+            "https://image.tmdb.org/t/p/original/r56DGXgTYvKUAFQIi54wW6NEOoD.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Poached Eggs",
+          "overview": "Margo makes a bold stand against the Fairy Queen. Quentin and Penny try to retrieve a lost item.",
+          "plot": null,
+          "airDate": "2018-02-21",
+          "still": "https://image.tmdb.org/t/p/original/8omEG2VoMqDNi5buHsIcIlinPPH.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/8omEG2VoMqDNi5buHsIcIlinPPH.jpg",
+            "https://image.tmdb.org/t/p/original/jnYBPVoWSxRr5s1DTVUoZbfzGgQ.jpg",
+            "https://image.tmdb.org/t/p/original/8PrWZUJ2f55UmwdI5IjrYAb8FYV.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Six Short Stories About Magic",
+          "overview": "Julia and Fen investigate a dangerous group of Magicians as Eliot and Margo's reign is challenged.",
+          "plot": null,
+          "airDate": "2018-02-28",
+          "still": "https://image.tmdb.org/t/p/original/o8dHDExyCX04mFpWComu3KDHrPC.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/o8dHDExyCX04mFpWComu3KDHrPC.jpg",
+            "https://image.tmdb.org/t/p/original/ePdv4RPGRMFbO8pyaZDEj9v9dbr.jpg",
+            "https://image.tmdb.org/t/p/original/5owyMMKL8Lj3PsRSoTCPpsIom1m.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "All That Josh",
+          "overview": "Quentin, Kady and Alice try to convince an old friend to return home.",
+          "plot": null,
+          "airDate": "2018-03-07",
+          "still": "https://image.tmdb.org/t/p/original/6BcxIEpgF7XmTiFk6ed6br0vGdA.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/6BcxIEpgF7XmTiFk6ed6br0vGdA.jpg",
+            "https://image.tmdb.org/t/p/original/j6w42mpg4Anyye6wrvZu3D2NXZD.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "The Art of the Deal",
+          "overview": "Quentin and Alice search the castle for an important object while Julia and Fen work with an enemy.",
+          "plot": null,
+          "airDate": "2018-03-14",
+          "still": "https://image.tmdb.org/t/p/original/nxRxJAJAsariCKLh9cmGhCSWx8J.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/nxRxJAJAsariCKLh9cmGhCSWx8J.jpg",
+            "https://image.tmdb.org/t/p/original/pc95ahR6yWyWo5uiQz055MoG5db.jpg"
+          ]
+        },
+        {
+          "episode": 11,
+          "name": "Twenty-Three",
+          "overview": "The group strategizes as Josh and Julia travel to a familiar place and are given a chance to help.",
+          "plot": null,
+          "airDate": "2018-03-21",
+          "still": "https://image.tmdb.org/t/p/original/2oe7XD6KfRsi7qRlgx3pl1Zsodi.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/2oe7XD6KfRsi7qRlgx3pl1Zsodi.jpg",
+            "https://image.tmdb.org/t/p/original/hRoKSlncG7Klc6LyNL5wBatawpF.jpg",
+            "https://image.tmdb.org/t/p/original/gS7hV8FYvtNmQFv2TmsGE3FzKmE.jpg",
+            "https://image.tmdb.org/t/p/original/C4AqV2XGEYvGfrojvTmjHx8W8f.jpg",
+            "https://image.tmdb.org/t/p/original/cWe9ek8EKb5aYEidZh9KDKvqeDT.jpg"
+          ]
+        },
+        {
+          "episode": 12,
+          "name": "The Fillorian Candidate",
+          "overview": "The political situation in Fillory comes to a head. Julia makes amends and Alice makes a confession.",
+          "plot": null,
+          "airDate": "2018-03-28",
+          "still": "https://image.tmdb.org/t/p/original/if0kTPKVD9v9QtAKqpv0obTk2oU.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/if0kTPKVD9v9QtAKqpv0obTk2oU.jpg",
+            "https://image.tmdb.org/t/p/original/sVnEr02JaDnck6GxmA20dybTJ0u.jpg",
+            "https://image.tmdb.org/t/p/original/mhCd8jOInJW7DvCnlGaU5XsBjpv.jpg",
+            "https://image.tmdb.org/t/p/original/eWwf5nzv2tMd3lmwPfTKRp0Frwx.jpg"
+          ]
+        },
+        {
+          "episode": 13,
+          "name": "Will You Play with Me?",
+          "overview": "The group finds what they’re looking for and attempt once and for all to get magic back.",
+          "plot": null,
+          "airDate": "2018-04-04",
+          "still": "https://image.tmdb.org/t/p/original/tUgHB4P4xCgcdOjYTNzwMJjPL3E.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/tUgHB4P4xCgcdOjYTNzwMJjPL3E.jpg",
+            "https://image.tmdb.org/t/p/original/sZvgWM9IyRnPDXmECltzr60WW9r.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 4,
+      "name": "Season 4",
+      "airDate": "2019-01-23",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "A Flock of Lost Birds",
+          "overview": "Brian takes a friend out for ice cream; Sam is one week away from retirement.",
+          "plot": null,
+          "airDate": "2019-01-23",
+          "still": "https://image.tmdb.org/t/p/original/uBZTbT7jUiCJGpJXxZeC9NViKOz.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/uBZTbT7jUiCJGpJXxZeC9NViKOz.jpg",
+            "https://image.tmdb.org/t/p/original/pg4Csw8q7cz4kDR51UKLmsc0C5t.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Lost, Found, Fucked",
+          "overview": "Dean Fogg gets a new suit.",
+          "plot": null,
+          "airDate": "2019-01-30",
+          "still": "https://image.tmdb.org/t/p/original/zrpBJmInoBIWllfSNX3t2FhsA2s.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/zrpBJmInoBIWllfSNX3t2FhsA2s.jpg",
+            "https://image.tmdb.org/t/p/original/yAEHn2SVveIhXbZsfyJCpYLATng.jpg",
+            "https://image.tmdb.org/t/p/original/fM39RXNL6SStmFOpgS7P8OB77x8.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "The Bad News Bear",
+          "overview": "Kady gets a puppy. Quentin meets a snake.",
+          "plot": null,
+          "airDate": "2019-02-06",
+          "still": "https://image.tmdb.org/t/p/original/5IIHQsl59gpvpu5QCy4venVqQmS.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/5IIHQsl59gpvpu5QCy4venVqQmS.jpg",
+            "https://image.tmdb.org/t/p/original/b0GdoQHTarsTZX8EMRjjE4js7T2.jpg",
+            "https://image.tmdb.org/t/p/original/bFql7YGLFjtlJOk5xWPil7u3gt2.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Marry, F..., Kill",
+          "overview": "Josh gives Margo a muffin. Julia drinks Schnapps.",
+          "plot": null,
+          "airDate": "2019-02-13",
+          "still": "https://image.tmdb.org/t/p/original/uQTHvXfjQxhf2E4a4GzYOKV1qnC.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/uQTHvXfjQxhf2E4a4GzYOKV1qnC.jpg",
+            "https://image.tmdb.org/t/p/original/39HGrd65sx57pP0OCpJaVUBegJH.jpg",
+            "https://image.tmdb.org/t/p/original/dbG3LPxAuAO4868OoqnJw76wLWv.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Escape from the Happy Place",
+          "overview": "There are some flashbacks while Alice and Quentin confront a dog.",
+          "plot": null,
+          "airDate": "2019-02-20",
+          "still": "https://image.tmdb.org/t/p/original/bA7MScXrTJFo3yzjKhWe2gdWPEv.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/bA7MScXrTJFo3yzjKhWe2gdWPEv.jpg",
+            "https://image.tmdb.org/t/p/original/bgQxzw1yX7UcZtjnVyWJk3nBZ30.jpg",
+            "https://image.tmdb.org/t/p/original/vhWUNwaivHv968uKFFCWh4yLwJx.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "A Timeline and Place",
+          "overview": "Quentin and Julia play Pictionary while Margo drinks some weird milk.",
+          "plot": null,
+          "airDate": "2019-02-27",
+          "still": "https://image.tmdb.org/t/p/original/saEJBL6xIie8lfufwwyhyMvklE0.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/saEJBL6xIie8lfufwwyhyMvklE0.jpg",
+            "https://image.tmdb.org/t/p/original/ulcaQ70RAYaiYXFBHHu2gntM3WL.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "The Side Effect",
+          "overview": "Kady goes to the flea market. What's Zelda been up to? This one's about Fen, you guys.",
+          "plot": null,
+          "airDate": "2019-03-06",
+          "still": "https://image.tmdb.org/t/p/original/2irJjSE7hqxToPauYoGgEJZN4Ro.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/2irJjSE7hqxToPauYoGgEJZN4Ro.jpg",
+            "https://image.tmdb.org/t/p/original/toLJtTLXFRSNXoqLIPjkTykiEAT.jpg",
+            "https://image.tmdb.org/t/p/original/owlSnZGDS0BNcHbtRF87bd3eb8N.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Home Improvement",
+          "overview": "Penny licks an egg. Alice is jealous of a flower.",
+          "plot": null,
+          "airDate": "2019-03-13",
+          "still": "https://image.tmdb.org/t/p/original/19o1BLeX5bH6I0IrtWDwtVLpJn6.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/19o1BLeX5bH6I0IrtWDwtVLpJn6.jpg",
+            "https://image.tmdb.org/t/p/original/hsV8owPjev63IzrO07NXXDwXXXB.jpg",
+            "https://image.tmdb.org/t/p/original/dhIWHwhwoC8dGqx37MkDAznRilw.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "The Serpent",
+          "overview": "Quentin eats a quesadilla. Kady and Zelda share a smoke.",
+          "plot": null,
+          "airDate": "2019-03-20",
+          "still": "https://image.tmdb.org/t/p/original/gdoB9Y6qiPs9sYj7sN5VDwsEFks.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/gdoB9Y6qiPs9sYj7sN5VDwsEFks.jpg",
+            "https://image.tmdb.org/t/p/original/n7cNLfkioQst62cbrhQmuJXzwIG.jpg",
+            "https://image.tmdb.org/t/p/original/bXrhBxFh91pfVU8rRiYnoFfyTDP.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "All That Hard, Glossy Armor",
+          "overview": "Margo hits her step count.",
+          "plot": null,
+          "airDate": "2019-03-27",
+          "still": "https://image.tmdb.org/t/p/original/p80pGMsT6Cw2Z1vhwyybRb09CJ6.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/p80pGMsT6Cw2Z1vhwyybRb09CJ6.jpg",
+            "https://image.tmdb.org/t/p/original/uVxoWzEZ9GWDqHk9RhQ7sZ0GfCf.jpg"
+          ]
+        },
+        {
+          "episode": 11,
+          "name": "The 4-1-1",
+          "overview": "The gang talks to a book. Tick threatens to drink some water.",
+          "plot": null,
+          "airDate": "2019-04-03",
+          "still": "https://image.tmdb.org/t/p/original/1jc8hACjknOVyqHvgWhJdkU6Rod.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/1jc8hACjknOVyqHvgWhJdkU6Rod.jpg",
+            "https://image.tmdb.org/t/p/original/pwvVPf99L3Y9m2w7q8FeXH3xICy.jpg",
+            "https://image.tmdb.org/t/p/original/bPkHdywNLWJ09NM860byCCCoB8M.jpg",
+            "https://image.tmdb.org/t/p/original/iiKO6Kx6Dtp4UUrZ4XnQ5R8Xm1x.jpg",
+            "https://image.tmdb.org/t/p/original/vuzDltn6dbmXpsfDVkvwJUwftNL.jpg",
+            "https://image.tmdb.org/t/p/original/3LhxaWRrWFaSI7JUzGEy0EacjZo.jpg"
+          ]
+        },
+        {
+          "episode": 12,
+          "name": "The Secret Sea",
+          "overview": "Quentin yells at a plant. Margo stares at a fish.",
+          "plot": null,
+          "airDate": "2019-04-10",
+          "still": "https://image.tmdb.org/t/p/original/trNkEhoNLlJ4QX2Cv5V8v2BJzXb.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/trNkEhoNLlJ4QX2Cv5V8v2BJzXb.jpg",
+            "https://image.tmdb.org/t/p/original/awovTF5jEAqvhVyG3YnH98V9L7g.jpg",
+            "https://image.tmdb.org/t/p/original/lupcyuq8KXFZxx94s6ts9ocUjeQ.jpg",
+            "https://image.tmdb.org/t/p/original/ecAuNBLopLXGW8CB4ZitpRfmbsZ.jpg"
+          ]
+        },
+        {
+          "episode": 13,
+          "name": "No Better to Be Safe than Sorry",
+          "overview": "Quentin and Josh get cake; Quentin reflects on his actions.",
+          "plot": null,
+          "airDate": "2019-04-17",
+          "still": "https://image.tmdb.org/t/p/original/n6KiCvF3iyXwTtqKSm0oH05PUl2.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/n6KiCvF3iyXwTtqKSm0oH05PUl2.jpg",
+            "https://image.tmdb.org/t/p/original/eXfAl9ybYaYyTWxTvlfSYs9Kqqr.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 5,
+      "name": "Season 5",
+      "airDate": "2020-01-15",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Do Something Crazy",
+          "overview": "Penny and Julia go stargazing. Eliot and Margo forget a sandwich.",
+          "plot": null,
+          "airDate": "2020-01-15",
+          "still": "https://image.tmdb.org/t/p/original/oskVQO65Reo49KyNVbOw4nSgxS.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/oskVQO65Reo49KyNVbOw4nSgxS.jpg",
+            "https://image.tmdb.org/t/p/original/g3aYU1tyBLNGgA7RN614Cfs8LAi.jpg",
+            "https://image.tmdb.org/t/p/original/3xlRDTTmNnQKMRrZBOrTHkcJw6t.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "The Wrath of the Time Bees",
+          "overview": "Alice didn't buy enough tacos. Fen's got 3 bars.",
+          "plot": null,
+          "airDate": "2020-01-22",
+          "still": "https://image.tmdb.org/t/p/original/i7bnQeNvExCUtKqaZ6Czuy8wVxM.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/i7bnQeNvExCUtKqaZ6Czuy8wVxM.jpg",
+            "https://image.tmdb.org/t/p/original/da3jBs837lgOeuV7zwjlCJ3KCB6.jpg",
+            "https://image.tmdb.org/t/p/original/sv6I48KFGwz2xYXmki7lxTg8Tf1.jpg",
+            "https://image.tmdb.org/t/p/original/1b7gjavvhya5LOjllgcRU9wMTRr.jpg",
+            "https://image.tmdb.org/t/p/original/rFjPgzDEptsgjfbBj9GpW0zkeNC.jpg",
+            "https://image.tmdb.org/t/p/original/nrUEJxSCFvJ5r03YYMtVmCi51VQ.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "The Mountain of Ghosts",
+          "overview": "Eliot and Alice go for a hike. Fen gets a haircut.",
+          "plot": null,
+          "airDate": "2020-01-29",
+          "still": "https://image.tmdb.org/t/p/original/pwMvdVkSzzdVSMklX7vtx0SEfz0.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/pwMvdVkSzzdVSMklX7vtx0SEfz0.jpg",
+            "https://image.tmdb.org/t/p/original/2eZIriCSbcUqViMNqc8waS63HdK.jpg",
+            "https://image.tmdb.org/t/p/original/isrJK7lK37TlkgzTBTudTIfF09F.jpg",
+            "https://image.tmdb.org/t/p/original/55PRILAlrs91zVzUtJXKLbPA6lZ.jpg",
+            "https://image.tmdb.org/t/p/original/bkd24h9JAKY6b7Bqx5Dk3WVIyjj.jpg",
+            "https://image.tmdb.org/t/p/original/pUjZSMOiKIgY4w9jG3NxiqdBGFa.jpg",
+            "https://image.tmdb.org/t/p/original/qlC8w5qISfbjiVB2I522wdnqjj2.jpg",
+            "https://image.tmdb.org/t/p/original/hzFZlpUHrJX0KtdJwF3Oioy0zy4.jpg",
+            "https://image.tmdb.org/t/p/original/yLUxABJXwZlqbogIaumEupsRxQ7.jpg",
+            "https://image.tmdb.org/t/p/original/aV0ac9wT6nVrmFIw1xEgycjbnzL.jpg",
+            "https://image.tmdb.org/t/p/original/3WaAGbA9cYNGCAje6G5rnhwoXfs.jpg",
+            "https://image.tmdb.org/t/p/original/vZ4OSgAmk6Cem1ZiAFFAlLC11AT.jpg",
+            "https://image.tmdb.org/t/p/original/176fD059NLpv6lURQ2m5TQmxrIr.jpg",
+            "https://image.tmdb.org/t/p/original/wFpecbgXNAQFSlfs3CHiVADoB9O.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Magicians Anonymous",
+          "overview": "Julia lends a book to some lady. Fogg finds a sock.",
+          "plot": null,
+          "airDate": "2020-02-05",
+          "still": "https://image.tmdb.org/t/p/original/ujxpSniGlYpgcJw4sGqLEpcOKg3.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ujxpSniGlYpgcJw4sGqLEpcOKg3.jpg",
+            "https://image.tmdb.org/t/p/original/q6v4aGYKmXSokQeF1ydOsX5zYdq.jpg",
+            "https://image.tmdb.org/t/p/original/aTsx93MShljWi1GYvIyzxHXA2EJ.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Apocalypse? Now?!",
+          "overview": "Zelda has come up with a plan to stop the Apocalypse, but they all have to work together to make that happen. This proves to be more exhausting and challenging than they had hoped. When they are almost successful, something unexpected happens.",
+          "plot": null,
+          "airDate": "2020-02-12",
+          "still": "https://image.tmdb.org/t/p/original/AgLmMcjnpgiEKSMphCMqvJNK5wk.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/AgLmMcjnpgiEKSMphCMqvJNK5wk.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Oops!...I Did It Again",
+          "overview": "With their mistake from the last episode, the apocalypse is imminent. Eliot and Margo try all they can think of to prevent this, but nothing works. While Eliot sinks deeper and deeper in self-despair, Margo comes close to the solution. But in the end, it's not Margo's idea that saves the day!",
+          "plot": null,
+          "airDate": "2020-02-12",
+          "still": "https://image.tmdb.org/t/p/original/fIuJgZItFuvmspSrbVYLCXuSgp0.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/fIuJgZItFuvmspSrbVYLCXuSgp0.jpg",
+            "https://image.tmdb.org/t/p/original/nmmft8BbIRFFlwjbabMKWgKBtof.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Acting Dean",
+          "overview": "While Penny struggles to keep everything at Brakebills under control, Eliot and Margo investigate the stolen gold of the Dark King of Fillory. This leads them to discover a very disturbing secret.",
+          "plot": null,
+          "airDate": "2020-02-19",
+          "still": "https://image.tmdb.org/t/p/original/x3gJcQoWAVXs6Cw4i6O2SK6KqVf.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/x3gJcQoWAVXs6Cw4i6O2SK6KqVf.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Garden Variety Homicide",
+          "overview": "Josh returns from his nephew's bar mitzvah. Margo and Eliot share a mojito.",
+          "plot": null,
+          "airDate": "2020-02-26",
+          "still": "https://image.tmdb.org/t/p/original/3uwTMFtYG0PawSxWHDlC37nKSg2.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/3uwTMFtYG0PawSxWHDlC37nKSg2.jpg",
+            "https://image.tmdb.org/t/p/original/pj9Xj6k5HMkkj8AWpcfT1iIgczN.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Cello Squirrel Daffodil",
+          "overview": "Penny only wears vintage. Alice rejects a sandwich. Julia does a thing.",
+          "plot": null,
+          "airDate": "2020-03-04",
+          "still": "https://image.tmdb.org/t/p/original/dRCtunfXAm29n62HxwcQv08Xt8.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dRCtunfXAm29n62HxwcQv08Xt8.jpg",
+            "https://image.tmdb.org/t/p/original/4KgHbrBW9d5K6QbsG7fnZpXDOHh.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Purgatory",
+          "overview": "Margo learns to project. Josh goes to the spa.",
+          "plot": null,
+          "airDate": "2020-03-11",
+          "still": "https://image.tmdb.org/t/p/original/gK4vWcOYnjGPvSRB6v2vKMZDnWm.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/gK4vWcOYnjGPvSRB6v2vKMZDnWm.jpg",
+            "https://image.tmdb.org/t/p/original/A7INpmljmHllrAGurafULEnxA7Q.jpg"
+          ]
+        },
+        {
+          "episode": 11,
+          "name": "Be the Hyman",
+          "overview": "Slap fight! Josh eats a pickle. Dreams are weird.",
+          "plot": null,
+          "airDate": "2020-03-18",
+          "still": "https://image.tmdb.org/t/p/original/jJityBL6bW2PQ9rNg8Xdzz79fZ8.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/jJityBL6bW2PQ9rNg8Xdzz79fZ8.jpg"
+          ]
+        },
+        {
+          "episode": 12,
+          "name": "The Balls",
+          "overview": "Margo sees a purse she hates. Alice writes a letter. We couldn't get Prince.",
+          "plot": null,
+          "airDate": "2020-03-25",
+          "still": "https://image.tmdb.org/t/p/original/jGjzdpfGXg8oiOn9k477o2SayfK.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/jGjzdpfGXg8oiOn9k477o2SayfK.jpg",
+            "https://image.tmdb.org/t/p/original/4DXiOH8XHQqvT6sqOsLv0Rcy9TF.jpg"
+          ]
+        },
+        {
+          "episode": 13,
+          "name": "Fillory and Further",
+          "overview": "Christmas comes early.",
+          "plot": null,
+          "airDate": "2020-04-01",
+          "still": "https://image.tmdb.org/t/p/original/9YkvoxzozW6sebLy5bAUSl2a9C7.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/9YkvoxzozW6sebLy5bAUSl2a9C7.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "cast": [
+    {
+      "name": "Olivia Taylor Dudley",
+      "character": "Alice Quinn",
+      "episodeCount": 65,
+      "profile": "https://image.tmdb.org/t/p/original/dcYv3aYSMNbGcYHehUjeEg1UwqY.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/180/450383.jpg"
+    },
+    {
+      "name": "Arjun Gupta",
+      "character": "William \"Penny\" Adiyodi",
+      "episodeCount": 65,
+      "profile": "https://image.tmdb.org/t/p/original/9ERbuk0fcUsE9Smgd8hkSDGYwJg.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/142/356671.jpg"
+    },
+    {
+      "name": "Stella Maeve",
+      "character": "Julia Wicker",
+      "episodeCount": 65,
+      "profile": "https://image.tmdb.org/t/p/original/mfQAwrchoRBH6F6LDvAw36SEHum.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/180/450387.jpg"
+    },
+    {
+      "name": "Hale Appleman",
+      "character": "Eliot Waugh",
+      "episodeCount": 65,
+      "profile": "https://image.tmdb.org/t/p/original/yVoVmU3WpeXuIBcXrLxkKslFa71.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/142/356672.jpg"
+    },
+    {
+      "name": "Summer Bishil",
+      "character": "Margo Hanson",
+      "episodeCount": 65,
+      "profile": "https://image.tmdb.org/t/p/original/TAN5tk54w5JDtz03gg3BWwOR1C.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/180/450385.jpg"
+    },
+    {
+      "name": "Jason Ralph",
+      "character": "Quentin Coldwater",
+      "episodeCount": 52,
+      "profile": "https://image.tmdb.org/t/p/original/vAKwnP7UWsykPO8wW3V8wQdEWQL.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/180/450382.jpg"
+    },
+    {
+      "name": "Jade Tailor",
+      "character": "Kady Orloff-Diaz",
+      "episodeCount": 51,
+      "profile": "https://image.tmdb.org/t/p/original/iMmDndDNSFnwX2XyZbsGytFZ57z.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/180/450388.jpg"
+    },
+    {
+      "name": "Rick Worthy",
+      "character": "Dean Fogg",
+      "episodeCount": 44,
+      "profile": "https://image.tmdb.org/t/p/original/xPDc6GA14A5R2BNa1P5xuDmUnPo.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/180/450389.jpg"
+    },
+    {
+      "name": "Trevor Einhorn",
+      "character": "Josh Hoberman",
+      "episodeCount": 33,
+      "profile": "https://image.tmdb.org/t/p/original/iBGsqVGoSigFjTd4qzMC6K8gHxU.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/180/450391.jpg"
+    },
+    {
+      "name": "Brittany Curran",
+      "character": "Fen",
+      "episodeCount": 32,
+      "profile": "https://image.tmdb.org/t/p/original/agORPIfUB8V93aCnHj7zbOIYlg9.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/180/450390.jpg"
+    },
+    {
+      "name": "Rizwan Manji",
+      "character": "Tick Pickwick",
+      "episodeCount": 22,
+      "profile": "https://image.tmdb.org/t/p/original/mBsLE1sDCWZXR9PWV8xptTpxkQc.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mageina Tovah",
+      "character": "The Librarian",
+      "episodeCount": 17,
+      "profile": "https://image.tmdb.org/t/p/original/AiGQaF7tpr2m1jU0sZm0kZOQI7h.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sergio Osuna",
+      "character": "Rafe",
+      "episodeCount": 16,
+      "profile": "https://image.tmdb.org/t/p/original/ajCLJJqgaAENJmEzHrIPrJrZxIH.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mackenzie Astin",
+      "character": "Richard",
+      "episodeCount": 15,
+      "profile": "https://image.tmdb.org/t/p/original/2cE08v6N7OyWH8OqenYelQ2dEWy.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kacey Rohl",
+      "character": "Marina Andrieski",
+      "episodeCount": 14,
+      "profile": "https://image.tmdb.org/t/p/original/q8GJEM0Efuz2LLeEIdXQFOAHNRL.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Oliver Bell",
+      "character": "George",
+      "episodeCount": 13,
+      "profile": "https://image.tmdb.org/t/p/original/jricXh8yQBWPPOKWnzVsmTRGq3c.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Hannah Henney",
+      "character": "Dancer (uncredited)",
+      "episodeCount": 13,
+      "profile": "https://image.tmdb.org/t/p/original/7UrORCSwEthYIkPT5huxyRyXnyN.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "David Call",
+      "character": "Pete",
+      "episodeCount": 13,
+      "profile": "https://image.tmdb.org/t/p/original/lcfAlaiVRjpmb5OXtrso0eH8br.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Keegan Connor Tracy",
+      "character": "Professor Lipson",
+      "episodeCount": 12,
+      "profile": "https://image.tmdb.org/t/p/original/lP5rlqK8YIqobtFghURPbNdN5zw.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Adam DiMarco",
+      "character": "Todd",
+      "episodeCount": 12,
+      "profile": "https://image.tmdb.org/t/p/original/eYEgtlwO7aelRf8PqCh50YEAZU2.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Charles Mesure",
+      "character": "The Beast",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/W8bCZfLDHaI3ptn75WeVLYVtdk.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Zahf Paroo",
+      "character": "Gillen",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/ejjvDERgLhZnKhP0QRBtBZiAyeS.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Candis Cayne",
+      "character": "Fairy Queen",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/s0JDLERtTEWiNKe9VrU69iKdf8J.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Esmé Bianco",
+      "character": "Eliza",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/3SV97kbZMdUmm6PvSGokM4pvLd4.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Miranda Edwards",
+      "character": "Heloise",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/kO4QCcUMxlLgviH3Fcnuf4Y0ZvM.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Marlee Matlin",
+      "character": "Harriet",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/1iV3yA07kdj7RFj2yyzwO2T6M8o.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Harvey Guillén",
+      "character": "Benedict Pickwick",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/yiNBonobPwqMVweB02JWufzp2l9.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Daniel Nemes",
+      "character": "Gavin",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/phtSIB7J8LOyr0dl9BZbrhUE9g1.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rose Liston",
+      "character": "Jane Chatwin",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/3764tBTejvMkHOcdcMjJzXPxmdr.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Hannah Levien",
+      "character": "Victoria",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/5tc5j0MFVvK6UC7FQKPzwLG7kUq.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Anne Dudek",
+      "character": "Prof. Pearl Sunderland",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/gzMd0P43hGoqgQah53vjcK4lOsh.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Bobbi Charlton",
+      "character": "Silver",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/rROgFZnhqTc2Hy13TFUsxD0wYmD.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Fiona Hogan",
+      "character": "Menolly",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/x5l6bARorJJcG366LnsN9ir9UQO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Garcelle Beauvais",
+      "character": "Our Lady Underground",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/9KVgliXqMzKFfEsGdsuTkOby7d4.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Arlen Escarpeta",
+      "character": "Prince Ess",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/yQHVE1Nm8MAJ2r3MzZ7XflRjKb8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Madeleine Arthur",
+      "character": "Fray",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/gVjGKDGVLLzvn7VivEjuIRG2ale.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jaime Ray Newman",
+      "character": "Irene McAllistair",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/2NZqIILL9BW8fSveWDGBDLoMYN8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Charles Shaughnessy",
+      "character": "Christopher Plover",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/dTgLchpZE68noJYkgKa43QijGnL.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Riann Steele",
+      "character": "Plum Chatwin",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/px4glR9GEEI5pnKvXbpDrg1YY7C.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Cassidy",
+      "character": "James",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/utrJ8tUzkFnLMsw6bQL2LUgytC0.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jesse Reid",
+      "character": "Bender",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/ksGY0uTfVnwpj3cldn5mOtR0uTr.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nikolai Witschl",
+      "character": "Ominous Fairy",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/sU6VZJsc2avH6l1AjTTalDEp0Qd.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dominic Burgess",
+      "character": "Ember",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/ncqFGuh7Og4G2qTyliJiJErsMKe.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Felicia Day",
+      "character": "Poppy",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/wnggOc7HCXvjOGMbqxTftQbX6t5.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Judith Hoag",
+      "character": "Stephanie Quinn",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/q80JiST8vL8Uomgn86lBVoAtafk.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tom Wright",
+      "character": "Santa",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/lJ4L5fdXBeNr528gBB4eMTdvfd4.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jewel Staite",
+      "character": "Phyllis",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/ztxDIZvuPreUixO6ZPxwkCg2UlO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Leonard Roberts",
+      "character": "King Idri of Loria",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/z4hGl1GBHb40C5BrYBB8hxjNyT5.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Trezzo Mahoro",
+      "character": "Ralphie",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/il163LKprDtU2IA7ZaTKjD1dz4d.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Edwin Perez",
+      "character": "Eugenio",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/3GhHGH37AM7jOzVv62ofFxzkWGi.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Abby Miller",
+      "character": "Emily Greenstreet",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/3vczgnFlWgFaIk8axiGKYCPv09G.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brían F. O'Byrne",
+      "character": "Mayakovsky",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/9obqr2sZ0cf4z2ZsZoaHslSx45V.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tom Amandes",
+      "character": "Daniel Quinn",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/aDvaQEPNWKjjyVWG0zl3ZwEWirf.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Katie Findlay",
+      "character": "Eve",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/lDXpgm8iFyWHyYBO9SGrbiSEhJg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nicholas Croucher",
+      "character": "Martin Chatwin",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/yXA4IVtSZelOj5KU6UvU6TMPX8P.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Christopher Gorham",
+      "character": "Senator John Gaines",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/dKFXHJ3KBJaeQ50udMdBEC0VFvI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Imogen Tear",
+      "character": "Shade Julia",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/sRCsoVEJ3Nh9p2YO2Q7T6jcGEhq.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Roan Curtis",
+      "character": "Sylvia",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/9UXVOFccWt6lqWjebLXqAzOtJLQ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Spencer Garrett",
+      "character": "Ted Coldwater",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/jJWISea4PvC9Mv5kWONAMKhEK7j.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dina Meyer",
+      "character": "Stone Queen",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/1AQEXem8soBEKjjDhE0mOyXtjCG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ryan McDonald",
+      "character": "Bacchus",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/vqqU8iLd5xWVokCGhixyCkAlACG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jolene Purdy",
+      "character": "Shoshana",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/hq66UInEJuDjS3M4aCqgTFEcIzA.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "West Duchovny",
+      "character": "Whitley",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/vOjIviEIUwpfEfcp0vUMM7Kqecp.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brian Markinson",
+      "character": "Everett",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/26fa857UrEU4aCMHVQbpvNOGuKv.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Camryn Manheim",
+      "character": "Sheila",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/bySF7FYpeaK6StkERBUFIc3ghiX.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tembi Locke",
+      "character": "Dr. Jennifer London",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/oe9bXpFmv9udogSzy6Lk6HlwplJ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Anthony Marble",
+      "character": "The Beast",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/1dkH6gSICsz2NBiQ14ghGbTBkj6.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Hiro Kanagawa",
+      "character": "Professor March",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/dyWOPJmZTfy3r3R5eDY2d7yf8Ze.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sachin Sahel",
+      "character": "Surendra",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/lieLuEGNqGeyxetkX68sUP4jkpl.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "M.C. Gainey",
+      "character": "Stanley",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/nM82se0lOFbOhhj3J6tRFcdEydO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Amy Pietz",
+      "character": "Hannah",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/yt9SEBl3gd29YZoDl2qCGOs0mhN.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Amitai Marmorstein",
+      "character": "Rick",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/Anhoqg3uEdllj9QGN7ahpaaOL5c.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jesse Luken",
+      "character": "Mike McCormick",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/AteY6dMT2yJXNR2mJWQ0uafWulT.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kavandeep Hayre",
+      "character": "Raymond",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/sM94qaSyuue6rkNzpYjru0mWXky.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Daniella Evangelista",
+      "character": "Fillorian Mother",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/8zJVK8vwMQxbw75t0aKll42H8rc.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rhys Ward",
+      "character": "Bayler",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/hJl07C6QvCL2qArHYggus1nYw55.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jason Burkart",
+      "character": "Stinkmonster",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/mpnyAPpkDG2PxhZCwJmMqb6oNjr.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jamie Harris",
+      "character": "Friar Joseph",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/iqc9RropHWLe2wLCgUHtZZDJ7w.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Samuel Roukin",
+      "character": "Fairy Ambassador",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/rO6MJgFD5rBBeDQABN9b0YZwg4J.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ava Telek",
+      "character": "Shade Alice",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/Iu8tRPqfzVxzMVxhCR0TztY9T2.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nico Evers-Swindell",
+      "character": "Nigel",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/kGqkhCXGAgZjYqSXTrZawqF6rcW.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Roger Cross",
+      "character": "Admiral Lacker",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/gLbHM7JH2nWCeEzSjzAYBUOSkT8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "David James Lewis",
+      "character": "Dr. Walton",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/fq0AvkgikNrqTYUxY2WLFcOrbtN.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Chris Britton",
+      "character": "Demon",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/aglAvk5ctIPWVWsGHX5T41Cna2V.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nicholas Coombe",
+      "character": "Prince Fomar",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/xPMrDfsLmzSuR20tsSnwmu1gvrq.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dustin Ingram",
+      "character": "Hyman Cooper",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/4jH3kSG3JCcjWtbIQYkGmU1Cugc.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Anja Savcic",
+      "character": "Skye",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/nWl0Hgw8y35bXXl9VaorAmYjhBY.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tarun Keram",
+      "character": "Hansel",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/6u102CBNiRMagE0YaI1KbcpFEYx.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Agam Darshi",
+      "character": "Janet",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/rJoqe224bDWl03fnSqrUPt9QfLn.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Spencer Daniels",
+      "character": "Nameless",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/yFePed7zzGyvdoU1c3XdilsHw1r.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Emily Althaus",
+      "character": "Kimber D'Antoni",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/2X4Ig3KrvHy9An4mQoZtU3yZaCe.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Leanne Lapp",
+      "character": "Sam Cunningham",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/5jc6IiBfmNJ9UzT6M64zMOLvIPK.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mitch Ainley",
+      "character": "Lance Morrison",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/23u37HEoWB6n5TSTGPIKD2Qv0oS.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Madisen Beaty",
+      "character": "Iris",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/918cRrEML3EmKeRnrckcX39p6hU.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Aaron Jennings",
+      "character": "Hamish Bax",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/j0oggE0CrJp0cY2OAR4bbt93XuS.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Summer Fontana",
+      "character": "Fillory Kid #1",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/xIpQs0UniKYIC1NXRhsssekA971.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ben Esler",
+      "character": "Charlie Quinn",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/tTU99OhfhefHvOg4GlIZZdKVY0V.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Amanda Brooks",
+      "character": "Prof. Bigby",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/x8WndbTvjbG6Z4QeDv0Knh8jLvS.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Wayne Péré",
+      "character": "Professor Van Der Weghe",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/lwXHBf6Iy627B7wLgzIy43NKzRi.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Laura Fraser",
+      "character": "Female Professor",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/4aD3xDLA22CIf6jdK0IAs75h8pp.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Seth Meriwether",
+      "character": "Martin Chatwin",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/c2SlCLZWrw91tE1ZGuswx2W1Byj.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ryan Beil",
+      "character": "Robert",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/p5eaQJt1irdzhZ3AeeaArGXWSIp.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jagen Johnson",
+      "character": "Quentin's Roommate",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/88wpTeB0tuWkqeUieXjkajwtN5J.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/180/450382.jpg"
+    },
+    {
+      "name": "Denise Crosby",
+      "character": "Genji",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/1Eoo8o3xRGflJ9kHxg1eFVwAwQa.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Patricia Isaac",
+      "character": "Doctor Meers",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/coyXEuD66wLJloHpCOqUcQcvD9Y.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Megan Peta Hill",
+      "character": "Natural Student",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/1ZUxkw817g62QhjMg5SxNLplnM6.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jessica Harmon",
+      "character": "Mackenzie",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/wMHwn4zy2Esd5p4u2uDhGR5PSLy.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lee Majdoub",
+      "character": "The Djinn",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/vpF3R2YRCGHseGevmDAhftmOPkO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Carmen Moore",
+      "character": "Homicide Detective",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/cPUNFyRPEbgNpBfEVYKWNZtoGML.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nesta Cooper",
+      "character": "Gretchen",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/rmHzFvZ1rDf9C0cULfsvz1WMRL9.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rebecca Tilney",
+      "character": "Prudence Plover",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/zBffmph3coo5VFXrh0VFKE8lIrH.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Oliver Rice",
+      "character": "Hugh",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/8H0kGdzDUzgWoP7oqbR2FVydB42.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jonathan Scarfe",
+      "character": "Joe",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/vVkvdi33vVCc2nkGbqXqCzQFl34.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Marco Grazzini",
+      "character": "Margo's Ex-Boyfriend",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/ml42pjzKn7sjNR5FkpEn5cTjIdZ.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/180/450385.jpg"
+    },
+    {
+      "name": "Cardi Wong",
+      "character": "Pizza Guy",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/zOzUBSR1yPia5YyQbuJLrL34aZD.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Byron Noble",
+      "character": "Roman Slave",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/bf7MdtbMLcx9TX0UMOu57EE7E6f.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Colin Cunningham",
+      "character": "Bjorn",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/5ooKQ9tpLZDtDc5dHeREdvAWAOJ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Arturo del Puerto",
+      "character": "Servant of Our Lady Underground",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/tALGmngyUUtxyeQtMSy7KyzjdYc.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tony Giroux",
+      "character": "Hooded Agent",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/jUmPyQSYKnqt5NElRTtOiSPXmuc.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ryan Robbins",
+      "character": "Knifemaker's Son",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/kZrq5a760JU1kHuxQ7Q8YCgsOr6.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Laci J. Mailey",
+      "character": "Fen",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/rJdLd3U15ywK6K42gVvUh1U1ouA.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/180/450390.jpg"
+    },
+    {
+      "name": "Primo Allon",
+      "character": "Dint",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/gL9VXWgAyZEuXpmKoj3ExFPAdUS.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Karin Konoval",
+      "character": "Kitchen Witch",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/5e8YyNQjWre2UbExYBlJ7zva934.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "J.P. Manoux",
+      "character": "River Watcher",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/wPHAqAPpZDB78jmZf8HTVuRfeAG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kevin McNulty",
+      "character": "Knight of Crowns",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/jaXuLA5zYPVzfG8wLtnD2O4aveA.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Christine Lippa",
+      "character": "Barbara",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/aoqG75XQOdkrKpAWKfDBFnwDK4A.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Daniel Martin",
+      "character": "Farmer",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/cYQgTBUAkN1yJ7jm3sKjag7cgLu.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lauren K. Robek",
+      "character": "Arleen",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/iqcerFwPYnWjoTu3jgs38PDUuqJ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Emma Dumont",
+      "character": "The White Lady",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/ewbPhI5SRsOFFkHFaIO6Fk24Zfn.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alessandro Juliani",
+      "character": "Sawbones",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/f8pVEpYsRU30EsMoWcBsTkUN9e0.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Bellina Logan",
+      "character": "Nurse",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/mZvxOK0l7zIRf8jEkcfEpqyJgR5.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sunita Prasad",
+      "character": "Lia",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/5D3vNDlHOeixwRg1Bk45YlJUtsl.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michelle Harrison",
+      "character": "Dr. Higgins",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/4NNuBCS6I4USJT45xSN9R7vwXFI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dustin Schwartz",
+      "character": "Ardian",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/9ppTgt2XuJYyBJvV48al6SHmvjY.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lee Garlington",
+      "character": "Dana",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/8hkdeBX6K2QUsH1kuVGfSyTiZod.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michelle Azar",
+      "character": "Goldie",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/hILSES74wsD9NZqd4IvGzFvyWO8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tora Kim",
+      "character": "Moon",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/9ZgKdwiipjfJznPNxACfO8lVgMz.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kathleen Duborg",
+      "character": "Rhona",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/y2ydKXs8ORtwKsbq1gPXfcvvnGG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Vivian Lanko",
+      "character": "Becky",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/yb5faUXSXqd3XFgkdPBWuAqhGhm.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Greg Delmage",
+      "character": "Adam",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/463FEM06aviR8gMbrMGD1kiAHjt.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alison Wandzura",
+      "character": "Susie",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/mUMjgYaj2KDWWakqab0qNEDjkAX.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Grey Damon",
+      "character": "Dryad",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/11VZxFWr64Wj2AlKsV60UutntGx.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Farrah Aviva",
+      "character": "Healer Tara",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/5R8la1L4HPIkSFdy38FcHPVSVaJ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Bracken Hanke",
+      "character": "The Anglerbeast",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/lFYRc70gQHvvy4DkYjD4UtHUap6.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brendan Taylor",
+      "character": "Howard",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/3Nmo4lADHhCENtR6im3orE4eC5j.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jeff Gulka",
+      "character": "Timid Servant",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/7GJLvrSUZ82Lj0UuyJ3A698QFuY.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Pippa Mackie",
+      "character": "Receptionist",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/vJ8kKchKkcBCweRUKXuELFSv5rF.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alexie Gilmore",
+      "character": "Cindy Gaines",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/1Ev9eTuu8bL6t8xzfqchZm4wSfI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Graeme McComb",
+      "character": "The Concierge",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/93KiqyNdWQd5Jt6ktrV27kyXWLx.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Liam Hughes",
+      "character": "Eugene",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/1lZLJ9Xi1cyWOoqKXgD5dBPjgmV.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Fred Keating",
+      "character": "Cowden",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/j3XjPgQoLY45QDSjYlPB6Vk25Wb.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Marc Senior",
+      "character": "Bellhop",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/gQHF5QWA8ErteAbZHbsokIE98GA.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ingrid Oliver",
+      "character": "Dragon (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/mHlw4Zn1OFqShcVe3bBnCgIF7cI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kurtis Maguire",
+      "character": "Plumber of the Gods",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/xp0wG9kugoq3oCi2Eau0dVmxQBu.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Faran Tahir",
+      "character": "The Great Cock of the Darkling Woods",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/dMsD7h6KiZ5dM0f9MegXUOKnqb0.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Julian Richings",
+      "character": "Asteroth",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/6aXnbVDNlYXKFOUK7CZ2lboAlxE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Markian Tarasiuk",
+      "character": "Prince Micah",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/Zh7nUBYCeTyDyXNYeHJFVyWo1J.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Robert Corness",
+      "character": "Puzzler",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/o1VblcnA1YQe7M8WweMHhUgT6xf.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Stephanie Nogueras",
+      "character": "Young Harriet",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/3qy9QmI7fvdpPh5yBYVfiNEO54x.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Bola Omodara",
+      "character": "Zan",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/cb8ARzjKQdXpD8CJapqadVXYz9t.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sean Owen Roberts",
+      "character": "Brooklyn Vampire",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/ykpWkvdUJZ7kkhpsrBuzEQUohIG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Aaron Paul Stewart",
+      "character": "Rambo",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/2rDEXAjJj9LTLi337qdpVlqLXKx.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Wolsey Brooks",
+      "character": "Palace Guard",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/jE1VyWrAPZcsTh5bXvmNQE38wBK.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Haig Sutherland",
+      "character": "Father Poe",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/o6wu1HoDk1xnqPHZorW7OmERhnj.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alex Duncan",
+      "character": "Shara",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/l0ESJT5wM66HeoRdBIYIG40l6e1.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Robert Rozen",
+      "character": "Cal",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/wnWoeqGdt8bUKU2LglmtiPdMypk.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Andres Joseph",
+      "character": "Donovan",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/oqVXsqI6vUgl2qaJgtR4ZOtbrgG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Celia Reid",
+      "character": "Maggie",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/aHA4qMj73Eai0e6gIz3S1eqOF5Z.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mik Byskov",
+      "character": "Naru",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/v5q9uLHkmXkm7GsYiEVFcLBHbp3.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Patrick Sabongui",
+      "character": "Bingle",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/yI8xBqEi5IAeyoEgGcdbcyEc9vO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Daniella Alonso",
+      "character": "Pirate King",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/ipFtnG5kvkMY1HcLOSFONDIEXqn.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jason Simpson",
+      "character": "Hoop",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/nicxmXmjjQUMiiuwrnGwkBYobcZ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Kopsa",
+      "character": "Emmett Morrison",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/eGoaXyQMd9mfAkhc6PqMhFxef5m.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Ryan",
+      "character": "Eliot's Father",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/hIkltezEMy9MowuOfpcXS4KK1yU.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/142/356672.jpg"
+    },
+    {
+      "name": "Arthur MacKinnon",
+      "character": "Rupert Chatwin",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/q2nOR2ewrifDquXw7M2xUZ1AixY.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Matt Afonso",
+      "character": "Bodi",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/ablveEqxMPabmpE7KnKCtEsMWZU.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jason Vaisvila",
+      "character": "Shep",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/dqpggQjCznI4wRAWjrKptaAW4FH.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kylee Bush",
+      "character": "Arielle",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/hgZ8l9HreQioqaAEhmD1GyLbBMV.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Darien Martin",
+      "character": "Lunk",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/ikQEhFZUBkrIt868hT0lbTsnLME.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Latonya Williams",
+      "character": "Handmaid",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/hkwpYfbp1IqCQ1SrdhSs1NnHYMU.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sebastian Billingsley-Rodriguez",
+      "character": "Rupert - Age 5",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/xhPHlfkz0RgoUGDfMpvz2SCYMlf.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tim Donadt",
+      "character": "Rupert - Age 20",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/wDxfDaD3dmj9DzBoWUDo4iN1vSp.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Benjamin Wilkinson",
+      "character": "The Incubus",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/pH1Qm2477XTybMUzRMzyl5mdrH1.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sera Gamble",
+      "character": "Water Dragon (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/twgr4lp83L8x6T9xx51rFHFxnqZ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Birkett Turton",
+      "character": "Vince",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/dsmW4TgzKUcLpWyE3hhZ8POmjS2.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mackenzie Murdock",
+      "character": "Orderly",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/dhss45FRLXbAJnvoQSC158hbSDg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "William Vaughan",
+      "character": "Underworld Park Ranger",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/3Y8j1sV1ysM01HtSTyTAhNWMIRg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Melanie Chan",
+      "character": "Maribel",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/ljPTpTA2e3jeKEt4Qa76eWX7r7.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michaela McManus",
+      "character": "Callie",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/4BfCVZlnaGeMUNO9WeRMyZjX45x.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alexandra Metz",
+      "character": "Ora",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/q6U7AigI9FzlfCxFwzxR6TPNGrS.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Georgie Daburas",
+      "character": "Prometheus",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/h4eJCXgXb36Tc6s0wqWZFxB7Mav.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Zach Cherry",
+      "character": "Frankie",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/fT3Wv8ef0Vn0daHWAObCp2Bd4Y.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Deborah Ramsay",
+      "character": "Beatrice McAllister",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/g3uzjAPJrPVtwtmRxn9VbuNpEAn.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Arden Myrin",
+      "character": "Helen",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/zJ0CqYNRWIcfZedYjYj1oRiBUov.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Joanna Going",
+      "character": "Quentin's Mother",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/cqYMJFlkkAc2n1FTGaOmom4IFFL.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/180/450382.jpg"
+    },
+    {
+      "name": "Kasha Kropinski",
+      "character": "Enid",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/egBLtfpm8smgTxqFYBJOvLVB34s.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Miranda Frigon",
+      "character": "Lady Pike",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/44VovG3Gm0NGyHAhgyKla4RcHnw.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dean Marshall",
+      "character": "Cyrus",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/che3C6ZnOAGQimCgXWIZwnf56iW.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Olivia Norman",
+      "character": "Baba Yaga/Bailey",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/d5D27qaYY2L5QSAcSmNrbjj1Tn5.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Gabrielle Miller",
+      "character": "Carol",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/vrN08aTTNmMG0VBXQ0Oc7Eb9ifT.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Gethin Anthony",
+      "character": "Enyalius",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/sIjeLMgUTnXFy1fPjWYykAxN2XX.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rukiya Bernard",
+      "character": "Ru",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/1xnSniYd3y84qt6lqLvDIzGT4x0.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Elyse Maloway",
+      "character": "Berry",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/3KlOIoCbPozNP5mWrqLlzVutbjT.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Yaani King Mondschein",
+      "character": "Kira",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/jpdu5ko9yVcVdXyzJc2hmis0IIo.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Luca Padovan",
+      "character": "Young Quentin (Golem)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/4LotI2IGryLZc4UncPJngIx2ZT1.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/180/450382.jpg"
+    },
+    {
+      "name": "Cassandra Naud",
+      "character": "Partier #5 (uncredited)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/Fw2FlUQGmFC0DGLGEBATXfswHh.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Thabo Ketshabetswe",
+      "character": "Guard #1",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/yz7UtoD2of4APMUo3dkFMd2Qymc.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Chris Brochu",
+      "character": "Derek",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/kk6KTA0kjeyGGX650IwmCuWmZgu.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Clare Carey",
+      "character": "The Foremost Woman",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/uNOlaCeXkwneCpxoUj27LUggDHu.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kim Ormiston",
+      "character": "Psychic Girl #1",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/hTY8SqulWwea7zGtSnoVpvAvM11.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alexandra Lucchesi",
+      "character": "Rainbow Girl",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/26X02HYpYte0NIm5ocOPzssPG6n.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Krystal Tomlin",
+      "character": "Physical Kid",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/iC7Dfy6R9EcO5SBvTSwiOaX2ylB.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Fei Ren",
+      "character": "Orgy Girl #1",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/jukcIX4bNi95T8dCiRtyOnPduMH.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Keisha Haines",
+      "character": "Orgy Girl #2",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/cQI89TdaMf7mnahjTzh2GlUpOS3.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lorraine Colond",
+      "character": "Moonbrained Hedge Witch",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/6tPbMISwsM9wZQhbR1p2iZpFZCC.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Madeleine Kelders",
+      "character": "Nurse",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/oUA4iwr6mtgCkvVVt3M99fEoOgK.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Fraser Aitcheson",
+      "character": "Stunt Royal Guad",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/j0fou5tZvXHe3GcVr24UnYQLg6S.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sebastian Kroon",
+      "character": "Lee",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/rClPldpiU4FvxvoPC9r7wuWpAlF.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Shayan Bayat",
+      "character": "Halal Vendor",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/rjhB608csfRza4lczXHjiVjC41Q.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Charlie Kerr",
+      "character": "Dmitri",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/csAqkJSDHCz8QZupfhvmDDqJHib.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rowan Schlosberg",
+      "character": "Narrator / Play Actor - Ember",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/tTzFAtoN7hp0u8KEx5xUarzd9h2.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "April Cameron",
+      "character": "Pree",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/vijBJMDS1Rsb6XNcyAuAnzQPGB.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jerry Yang",
+      "character": "Play Actor - Eliot / Taker #2 / Guard",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/jsiBdVyeYxXAvyr05ratP2Xj4vE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Breann Grainger",
+      "character": "Play Actor - Margo / Taker",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/fe8zcap2lLEHLZl10M4cJCouqqC.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Eliza Norbury",
+      "character": "Play Actor - Alice / Fen",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/tNM6JGO7iiPhtpclFZwnNR2qtKS.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/180/450390.jpg"
+    },
+    {
+      "name": "Nicco Del Rio",
+      "character": "Fairy",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/c9UyLuVDwwrInDQt2BiDWRXKTOw.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Devan Chandler Long",
+      "character": "The Foremost",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/qPZeVZqH1z7n5LVKVdzwXbAHe6s.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Riley Jade Berglund",
+      "character": "Physical Kid",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/hX3cKDHJMSZW28DaUozLcXiSi1g.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jack Kehler",
+      "character": "Clock Dwarf",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/5vPBJw92OKtD5pNO0TTPZvvxooV.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Fraser Simpson",
+      "character": "Play Actor - Quentin - Josh",
+      "episodeCount": 1,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/180/450382.jpg"
+    }
+  ],
+  "generatedAt": "2026-07-23T19:50:50.888Z"
+}

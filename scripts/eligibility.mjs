@@ -13,6 +13,34 @@
 const SEASON_COVERAGE_BAR = 0.8;
 
 /**
+ * A season's episode summaries need this MEDIAN length, in characters, to
+ * ground a recap.
+ *
+ * Coverage counts presence, not substance: an episode with 85 characters of
+ * plot passes the coverage bar identically to one with 1,100, and a stub
+ * article — one line per episode — can clear 80% coverage while saying almost
+ * nothing. That is the exact failure mode for non-English shows, whose English
+ * Wikipedia articles are often present but threadbare, and a thin summary does
+ * not produce a thin recap, it produces a confident wrong one from the model's
+ * own memory.
+ *
+ * Measured, not guessed. Across the validation set the thinnest legitimate
+ * season medians 452 characters (The Walking Dead, an eleven-season show on a
+ * cramped list page); everything else sits 550–1,280. A stub row is 150–250.
+ * 400 falls in the empty gap between them — below every real show with margin,
+ * far above any stub. Median rather than mean so a couple of rich episodes
+ * cannot mask a season of one-liners.
+ */
+const SEASON_RICHNESS_BAR = 400;
+
+const median = xs => {
+  if (!xs.length) return 0;
+  const s = [...xs].sort((a, b) => a - b);
+  const m = Math.floor(s.length / 2);
+  return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
+};
+
+/**
  * Cast continuity below this means episodes share no characters — a
  * per-episode anthology, which has no spine to build.
  *
@@ -46,8 +74,15 @@ export function evaluate(data) {
 
   const perSeason = data.seasons.map(s => {
     const total = s.episodes.length;
-    const withPlot = s.episodes.filter(e => e.plot && e.plot.length > 80).length;
-    return { season: s.season, total, withPlot, coverage: total ? withPlot / total : 0 };
+    const summarised = s.episodes.filter(e => e.plot && e.plot.length > 80);
+    const withPlot = summarised.length;
+    return {
+      season: s.season,
+      total,
+      withPlot,
+      coverage: total ? withPlot / total : 0,
+      richness: median(summarised.map(e => e.plot.length)),
+    };
   });
 
   /**
@@ -65,7 +100,8 @@ export function evaluate(data) {
    */
   let usableThrough = 0;
   for (const s of perSeason) {
-    if (s.season === usableThrough + 1 && s.coverage >= SEASON_COVERAGE_BAR) usableThrough = s.season;
+    const good = s.coverage >= SEASON_COVERAGE_BAR && s.richness >= SEASON_RICHNESS_BAR;
+    if (s.season === usableThrough + 1 && good) usableThrough = s.season;
     else break;
   }
 
@@ -121,15 +157,24 @@ export function evaluate(data) {
   // predictor of a bad recap and it is knowable before spending a call.
   if (usableThrough === 0) {
     const s1 = perSeason[0];
-    reasons.push(
-      `season 1 coverage ${Math.round((s1?.coverage ?? 0) * 100)}% (need ${SEASON_COVERAGE_BAR * 100}%)`,
-    );
+    // Name whichever bar S1 actually missed. A stub article fails on richness
+    // while reading 100% coverage, and reporting only coverage there sends
+    // someone hunting for missing episodes that are all present.
+    const cov = Math.round((s1?.coverage ?? 0) * 100);
+    const rich = Math.round(s1?.richness ?? 0);
+    if ((s1?.coverage ?? 0) < SEASON_COVERAGE_BAR) {
+      reasons.push(`season 1 coverage ${cov}% (need ${SEASON_COVERAGE_BAR * 100}%)`);
+    } else {
+      reasons.push(
+        `season 1 summaries too thin — median ${rich} chars (need ${SEASON_RICHNESS_BAR}); article is present but not detailed enough to ground a recap`,
+      );
+    }
   } else if (usableThrough < data.seasons.length) {
     const dropped = perSeason
       .filter(s => s.season > usableThrough)
-      .map(s => `S${s.season} ${s.withPlot}/${s.total}`)
+      .map(s => `S${s.season} ${s.withPlot}/${s.total}ep ${Math.round(s.richness)}ch`)
       .join(', ');
-    warnings.push(`bounded to S1-S${usableThrough}; thin coverage beyond: ${dropped}`);
+    warnings.push(`bounded to S1-S${usableThrough}; thin beyond: ${dropped}`);
   }
 
   // --- scale ---------------------------------------------------------------

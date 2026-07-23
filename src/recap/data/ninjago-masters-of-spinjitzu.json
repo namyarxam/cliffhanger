@@ -1,0 +1,3552 @@
+{
+  "slug": "ninjago-masters-of-spinjitzu",
+  "tmdbId": 38693,
+  "tvmazeId": 18374,
+  "matchedBy": "imdb_id",
+  "title": "Ninjago: Masters of Spinjitzu",
+  "overview": "When the fate of their world, Ninjago, is challenged by great threats, it's up to the ninja: Kai, Jay, Cole, Zane, Lloyd and Nya to save the world.",
+  "firstAirDate": "2012-01-11",
+  "network": "YTV",
+  "poster": "https://image.tmdb.org/t/p/w780/wz6ZqlyndVpdRayZi1gbYHWcqFi.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/original/ptEtIr3rVuAJpmbwaLJJqND6HVq.jpg",
+  "backdrops": [
+    "https://image.tmdb.org/t/p/original/ptEtIr3rVuAJpmbwaLJJqND6HVq.jpg",
+    "https://image.tmdb.org/t/p/original/RUBG86JQ81CV6DMm0RKdGln2Kr.jpg",
+    "https://image.tmdb.org/t/p/original/flychdbFnPuxl4SjMeODR8RmuKr.jpg",
+    "https://image.tmdb.org/t/p/original/98JE69qUmGLwiR18VDyox9x0vM1.jpg",
+    "https://image.tmdb.org/t/p/original/6hAAq3GUWMwD0yJpvBBnpJpCs3d.jpg",
+    "https://image.tmdb.org/t/p/original/74TsWFrt793JbhaP6HA27aZcJH6.jpg",
+    "https://image.tmdb.org/t/p/original/f9F18wcmmlo5PGJu9HgcNaMBTIo.jpg",
+    "https://image.tmdb.org/t/p/original/dwElGn1paIAKDZlCGVmOjRPJNlT.jpg",
+    "https://image.tmdb.org/t/p/original/4dMF2OxWUIRybQFqt0yUlWSCAcD.jpg",
+    "https://image.tmdb.org/t/p/original/51zdsotKKrQL3OWqpewV5z2oXr3.jpg",
+    "https://image.tmdb.org/t/p/original/dlsJ7vbjCevRo3ArZ3vzE4CtISo.jpg",
+    "https://image.tmdb.org/t/p/original/msyFOd2iu4uazd4su42919S21Wm.jpg"
+  ],
+  "throughSeason": 16,
+  "totalSeasons": 16,
+  "showType": "Animation",
+  "genres": [
+    "Action",
+    "Adventure",
+    "Children"
+  ],
+  "status": "Ended",
+  "runtime": 30,
+  "language": "English",
+  "seasons": [
+    {
+      "season": 1,
+      "name": "Rise of the Snakes",
+      "airDate": "2012-01-11",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Rise of the Snakes",
+          "overview": "The ninjas are snapped out of their post-hero complacency when Lord Garmadon's son Lloyd shows up and tries to pick up where his father left off.",
+          "plot": null,
+          "airDate": "2012-01-11",
+          "still": "https://image.tmdb.org/t/p/original/12e0EA0VEXfIXlWtSc0UcVm0geX.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/12e0EA0VEXfIXlWtSc0UcVm0geX.jpg",
+            "https://image.tmdb.org/t/p/original/9shVuO2CUO3tsuATFKfKcj7rrc8.jpg",
+            "https://image.tmdb.org/t/p/original/j0h4fNj0MDFg0m3JIdPPrqnj2TG.jpg",
+            "https://image.tmdb.org/t/p/original/5kOsyKvMOBwq2NfUTY8PDn6b0xK.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Home",
+          "overview": "Back in training mode with the looming threat of Lloyd and the Hypnobrai, Zane wanders after a Falcon and lands himself in a heap of trouble.",
+          "plot": null,
+          "airDate": "2012-01-18",
+          "still": "https://image.tmdb.org/t/p/original/xJHNy0u6wuxeU3KNUthcjyaG8aM.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xJHNy0u6wuxeU3KNUthcjyaG8aM.jpg",
+            "https://image.tmdb.org/t/p/original/wt5gXZRztNSVDhdVm4ORlbLLqNs.jpg",
+            "https://image.tmdb.org/t/p/original/2LUmvkiX9yPFPo3BocFWKiol4yF.jpg",
+            "https://image.tmdb.org/t/p/original/e8rh2qCo43b8pRCkEqbXcavPAQa.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Snakebit",
+          "overview": "Lloyd unlocks a second tribe, the Fangpyres, to help him regain control. The ninjas take action when the Fangpyres attack Jay's family's village.",
+          "plot": null,
+          "airDate": "2012-01-25",
+          "still": "https://image.tmdb.org/t/p/original/nusv2wGJhkDZrbc7zuNLJO2M4R9.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/nusv2wGJhkDZrbc7zuNLJO2M4R9.jpg",
+            "https://image.tmdb.org/t/p/original/l2fMgU9YRnqrvA5tJvZa2lNaNoR.jpg",
+            "https://image.tmdb.org/t/p/original/sEdXu29dMeg2NjDlapYO9QGsykZ.jpg",
+            "https://image.tmdb.org/t/p/original/dLj2Nylx6ox8waK6b3G1vPxPaKQ.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Never Trust a Snake",
+          "overview": "After the Fangpyres join forces with the Hypnobrai, Lloyd awakens Pythor -- the last remaining snake of the Anacondrai tribe.",
+          "plot": null,
+          "airDate": "2012-02-01",
+          "still": "https://image.tmdb.org/t/p/original/rDifdsObEprhs3XYFEvvuqsB2xf.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/rDifdsObEprhs3XYFEvvuqsB2xf.jpg",
+            "https://image.tmdb.org/t/p/original/24jn3rYwsmEEvyV8adzRo7GDDxJ.jpg",
+            "https://image.tmdb.org/t/p/original/nm3noVytR5IZTm9IMtSkROKXIOl.jpg",
+            "https://image.tmdb.org/t/p/original/zblfUnCy2o5VfoV1sy5PhjBvHqI.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Can of Worms",
+          "overview": "Lloyd moves in and tries to help out but just gets in the way. Pythor awakens the Venomari and the Constrictai, and an all-out snake war breaks out.",
+          "plot": null,
+          "airDate": "2012-02-08",
+          "still": "https://image.tmdb.org/t/p/original/7DLVwMywDeHX5dWdmQhIsYIdyNZ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/7DLVwMywDeHX5dWdmQhIsYIdyNZ.jpg",
+            "https://image.tmdb.org/t/p/original/2DuXsDGdsFbI5EX8Dd2SNXUFi0h.jpg",
+            "https://image.tmdb.org/t/p/original/iTKMFjRjm7V6NZszfhxISmlI8MA.jpg",
+            "https://image.tmdb.org/t/p/original/wbQiELIfkBjOyjqfn5gI3WDStS4.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "The Snake King",
+          "overview": "Pythor declares himself the destined leader who'll reawaken The Great Devourer, an ancient beast that can't be killed and will consume all of Ninjago.",
+          "plot": null,
+          "airDate": "2012-02-15",
+          "still": "https://image.tmdb.org/t/p/original/mENRLMKPNQ1rGLUIYmtRhntwWgd.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/mENRLMKPNQ1rGLUIYmtRhntwWgd.jpg",
+            "https://image.tmdb.org/t/p/original/yYKIbxGdqUnQqe9Dg6A5h5BSlN1.jpg",
+            "https://image.tmdb.org/t/p/original/eawK6rdAIb5XCMHEocwJdxDwDYo.jpg",
+            "https://image.tmdb.org/t/p/original/dBpHioWfbyAUb77cDoTdQwUfql8.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Tick Tock",
+          "overview": "When the four ninjas follow the mysterious falcon into the woods, they stumble upon a hidden workshop where Zane learns the secret about his past.",
+          "plot": null,
+          "airDate": "2012-02-22",
+          "still": "https://image.tmdb.org/t/p/original/ic4ObccYfusH93PvQkxufxaHaGC.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ic4ObccYfusH93PvQkxufxaHaGC.jpg",
+            "https://image.tmdb.org/t/p/original/glKW31GDf1gyf8OZLpjDJTptJZy.jpg",
+            "https://image.tmdb.org/t/p/original/7S3HOj5iWorNahnuDMgDyWe3sSq.jpg",
+            "https://image.tmdb.org/t/p/original/s80GEs8umm6MlUI7KKq8MDfdPYU.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Once Bitten, Twice Shy",
+          "overview": "Jay and Nya must cut short their first date in Mega-Monster Amusement Park as the Serpentine are on their way to retrieve one of four fang blades.",
+          "plot": null,
+          "airDate": "2012-03-07",
+          "still": "https://image.tmdb.org/t/p/original/zDMH0n7hgTiC6jEt2XYO9x5gljU.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/zDMH0n7hgTiC6jEt2XYO9x5gljU.jpg",
+            "https://image.tmdb.org/t/p/original/kcf3TF2YLwNAbWJJVi1A78LIc1x.jpg",
+            "https://image.tmdb.org/t/p/original/vJ6nVMEpeUZGLKp3hiZBeNtdZ9d.jpg",
+            "https://image.tmdb.org/t/p/original/kpR2bdwZ9NcAKCc369P2lcJjbdw.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "The Royal Blacksmiths",
+          "overview": "The ninjas go undercover as a dance troupe and enter a talent contest in their quest to win the Blade Cup, where one of the fang blades is hidden.",
+          "plot": null,
+          "airDate": "2012-03-14",
+          "still": "https://image.tmdb.org/t/p/original/6zpW2IxzNKT8mTYC92Oy5fNMXNp.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/6zpW2IxzNKT8mTYC92Oy5fNMXNp.jpg",
+            "https://image.tmdb.org/t/p/original/736Q4bIuFipOJlaIPidjMDvmxsl.jpg",
+            "https://image.tmdb.org/t/p/original/lV5Sk89icFdfAlbw7dZJvWGPs3F.jpg",
+            "https://image.tmdb.org/t/p/original/paNiP5BDtInwwWc4QyB19aFEbr6.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "The Green Ninja",
+          "overview": "The ninjas are suspicious when their archenemy Lord Garmadon moves in to help search for his missing son, but they realize they have to work together.",
+          "plot": null,
+          "airDate": "2012-03-21",
+          "still": "https://image.tmdb.org/t/p/original/x1ZNMjDuj4GLN1tIA9khsEvss8P.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/x1ZNMjDuj4GLN1tIA9khsEvss8P.jpg",
+            "https://image.tmdb.org/t/p/original/rFxEz2U0RwAj3G8cxeV8LeTcdQS.jpg",
+            "https://image.tmdb.org/t/p/original/2ebgcKH9ZoWhWqJCKWFjbmqpMYs.jpg",
+            "https://image.tmdb.org/t/p/original/s7ud1Siq0EWdtBQmwt2K1tCwsfk.jpg"
+          ]
+        },
+        {
+          "episode": 11,
+          "name": "All of Nothing",
+          "overview": "The ninjas try to infiltrate the Serpentines' inner sanctum and walk into a trap. When Lloyd's rescue mission fails, only Lord Garmadon can help.",
+          "plot": null,
+          "airDate": "2012-03-28",
+          "still": "https://image.tmdb.org/t/p/original/lwDVY1ohJROpW4A6pawlxkiBjOl.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/lwDVY1ohJROpW4A6pawlxkiBjOl.jpg",
+            "https://image.tmdb.org/t/p/original/n3L6xgYYznFuPQf7JP0M25Ldk1P.jpg",
+            "https://image.tmdb.org/t/p/original/q8WMOd57D9pcPpVG9jNXaYdcqca.jpg",
+            "https://image.tmdb.org/t/p/original/q98I6exPZM58ddp9kvvSKDmqrol.jpg"
+          ]
+        },
+        {
+          "episode": 12,
+          "name": "The Rise of the Great Devourer",
+          "overview": "The ninjas hastily journey to the lost city of Ouroboros to try to stop Pythor from awakening The Great Devourer, but it's a race against time.",
+          "plot": null,
+          "airDate": "2012-04-04",
+          "still": "https://image.tmdb.org/t/p/original/9G4KAx5klUV0THKGBewp4qYqJBe.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/9G4KAx5klUV0THKGBewp4qYqJBe.jpg",
+            "https://image.tmdb.org/t/p/original/4hwjh4igXs13Wr2Mkj8gQgBFHhf.jpg",
+            "https://image.tmdb.org/t/p/original/4DXhsB0d0CkPTakBAyaXM3Ccq73.jpg",
+            "https://image.tmdb.org/t/p/original/4dN6POb4ucXZsiiBZhjbR53uwDT.jpg"
+          ]
+        },
+        {
+          "episode": 13,
+          "name": "Day of the Great Devourer",
+          "overview": "Disaster threatens as the ninjas must fight to defeat the all-consuming Great Devourer in a desperate attempt to save Ninjago.",
+          "plot": null,
+          "airDate": "2012-04-11",
+          "still": "https://image.tmdb.org/t/p/original/9lfQlvE8HXG4iDRXwe0Oig9Ucop.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/9lfQlvE8HXG4iDRXwe0Oig9Ucop.jpg",
+            "https://image.tmdb.org/t/p/original/6r6WOi3sE2QMMueHRpjl2nIjptL.jpg",
+            "https://image.tmdb.org/t/p/original/cN2Nvte6jRVXOu8qB6Qq3k2yKR2.jpg",
+            "https://image.tmdb.org/t/p/original/daJ4CqlDEpMc3pr5icWyVNQonru.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 2,
+      "name": "Legacy of the Green Ninja",
+      "airDate": "2012-07-18",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Darkness Shall Rise",
+          "overview": "Just as the rebuilding effort in Ninjago begins, the four ninjas realize Lord Garmadon has forged the ninjas' lost Golden Weapons into a mega-weapon.",
+          "plot": null,
+          "airDate": "2012-07-18",
+          "still": "https://image.tmdb.org/t/p/original/oWNOyTbbr9GXQwhzbA57w454oTf.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/oWNOyTbbr9GXQwhzbA57w454oTf.jpg",
+            "https://image.tmdb.org/t/p/original/jjtClNz0HPeIbO8FXrnJlaFHa6J.jpg",
+            "https://image.tmdb.org/t/p/original/13xQiW0jdbLwE3caCkQmYLikRWW.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Pirates vs. Ninja",
+          "overview": "When Garmadon accidentally brings to life the ruthless Captain Soto and his pirates, it's up to the ninjas to stop them from plundering Ninjago City.",
+          "plot": null,
+          "airDate": "2012-07-25",
+          "still": "https://image.tmdb.org/t/p/original/wTnmJvk5Q4hYaCz10lxqlnzj219.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/wTnmJvk5Q4hYaCz10lxqlnzj219.jpg",
+            "https://image.tmdb.org/t/p/original/90XD04TJIcMjnt1AHit84isbybs.jpg",
+            "https://image.tmdb.org/t/p/original/2YB6Q8onJS8xR9SNcDHfH0wCa3u.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Double Trouble",
+          "overview": "When our heroes are invited back to Darkly's Boarding School, they discover it's a trap set up by Lord Garmadon and his evil replica ninjas.",
+          "plot": null,
+          "airDate": "2012-08-01",
+          "still": "https://image.tmdb.org/t/p/original/dYUCet2fjce77IGDOMBxJz0toVi.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dYUCet2fjce77IGDOMBxJz0toVi.jpg",
+            "https://image.tmdb.org/t/p/original/fCFwLPgYN0RhQk7xidZug9KaQvI.jpg",
+            "https://image.tmdb.org/t/p/original/ugEnMpisfIrZVqGo1Vg2c0NAi90.jpg",
+            "https://image.tmdb.org/t/p/original/2JGAM9MHVd5h841dJ9E9cp2jLyz.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Ninjaball Run",
+          "overview": "When the ninjas learn Dareth's Mojo Dojo is to be destroyed, they enter the annual NinjaBall Run to win a cash prize that will help save the dojo.",
+          "plot": null,
+          "airDate": "2012-08-08",
+          "still": "https://image.tmdb.org/t/p/original/jzI6q0jQ0LObU5UbeW90v4EkcYJ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/jzI6q0jQ0LObU5UbeW90v4EkcYJ.jpg",
+            "https://image.tmdb.org/t/p/original/rZU8169SxiYihR1XCArLJPToAOo.jpg",
+            "https://image.tmdb.org/t/p/original/vEhMWiF8ERPFf7lBnCv4vcrlSa8.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Child’s Play",
+          "overview": "When the ninjas prevent Garmadon from using his mega-weapon to bring to life a fossilized monster, they're turned into kids and need Lloyd's help.",
+          "plot": null,
+          "airDate": "2012-08-15",
+          "still": "https://image.tmdb.org/t/p/original/l0CYYubf7abSjpbzgvdpNF3PrOe.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/l0CYYubf7abSjpbzgvdpNF3PrOe.jpg",
+            "https://image.tmdb.org/t/p/original/kaNycmpwdNOZkLdORR8ZR7eobHo.jpg",
+            "https://image.tmdb.org/t/p/original/3lkUldonUmxodEV5t8C7A34z7Q5.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Wrong Place, Wrong Time",
+          "overview": "When Garmadon travels back in time to undo the past and rid the future of ninjas, the ninjas follow him and try to stop him using the Golden Weapons.",
+          "plot": null,
+          "airDate": "2012-08-22",
+          "still": "https://image.tmdb.org/t/p/original/4eVuTDfcmov7F3lcQ7Q03i7js4m.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/4eVuTDfcmov7F3lcQ7Q03i7js4m.jpg",
+            "https://image.tmdb.org/t/p/original/dtV5uJRrgmc5RD0KFvftfRFj4CP.jpg",
+            "https://image.tmdb.org/t/p/original/spLE4vf3qaALV3NpnMkCFRC37nV.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "The Stone Army",
+          "overview": "The ninjas face off with an exhibit of a stone samurai warrior that the toxic venom from the Great Devourer has brought to life.",
+          "plot": null,
+          "airDate": "2012-10-03",
+          "still": "https://image.tmdb.org/t/p/original/mOiAx3wWJlbcWSymOyQbVYIMuLI.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/mOiAx3wWJlbcWSymOyQbVYIMuLI.jpg",
+            "https://image.tmdb.org/t/p/original/ds32jdIvPpriX3DlkIITy3pOzVl.jpg",
+            "https://image.tmdb.org/t/p/original/evPrzR0lRx4Cac1Bx0wcdtN55g8.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "The Day Ninjago Stood Still",
+          "overview": "The ninjas try to flee from the Stone Army, which has been brought to life by the Devourer's toxic venom. Garmadon tries to seize control of the army.",
+          "plot": null,
+          "airDate": "2012-10-10",
+          "still": "https://image.tmdb.org/t/p/original/snwPb9NTPzlAxmoCu73d5DsS2yB.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/snwPb9NTPzlAxmoCu73d5DsS2yB.jpg",
+            "https://image.tmdb.org/t/p/original/lBX1YQRkveFhUFRhajJ5HVFFdT2.jpg",
+            "https://image.tmdb.org/t/p/original/9Mzu09tLENIh9MaiIZ6dQvZqu8g.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "The Last Voyage",
+          "overview": "The ninjas, Lloyd, Sensei Wu and Misako journey to the Dark Island to find a Temple of Light that can restore the ninjas' elemental powers.",
+          "plot": null,
+          "airDate": "2012-10-17",
+          "still": "https://image.tmdb.org/t/p/original/f06a94EwEezwrcozptuU3BgYbNj.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/f06a94EwEezwrcozptuU3BgYbNj.jpg",
+            "https://image.tmdb.org/t/p/original/k6cKmjCvGsCYGpiifdOY6Cveptf.jpg",
+            "https://image.tmdb.org/t/p/original/uPt0P4ZwTBJG67hVwisOGsGNGgT.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Island of Darkness",
+          "overview": "After fighting off the Stone Army, the ninjas arrive at the Temple of Light and harness their pure elemental powers, concentrating them onto Lloyd.",
+          "plot": null,
+          "airDate": "2012-10-24",
+          "still": "https://image.tmdb.org/t/p/original/quaxsGzi97D67Y8HKpnxR3d9ks2.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/quaxsGzi97D67Y8HKpnxR3d9ks2.jpg",
+            "https://image.tmdb.org/t/p/original/wuz2VB8VImU7VufLkGcXjBfslRb.jpg",
+            "https://image.tmdb.org/t/p/original/wo5q0p6nLVT9bJ3OuSL59NFCC2f.jpg"
+          ]
+        },
+        {
+          "episode": 11,
+          "name": "The Last Hope",
+          "overview": "The ninjas try to return Garmadon's Helmet of Darkness to its perch at the Celestial Clock to prevent the final battle between Lloyd and his father.",
+          "plot": null,
+          "airDate": "2012-11-07",
+          "still": "https://image.tmdb.org/t/p/original/iapU6GKS7A07CKj6mBiTjA3SRoa.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/iapU6GKS7A07CKj6mBiTjA3SRoa.jpg",
+            "https://image.tmdb.org/t/p/original/AtuPnPKSnyquBdNXmiRQJs6bDL7.jpg",
+            "https://image.tmdb.org/t/p/original/xM8iEarXbp7vp2ZRWWW9l0DKOEe.jpg",
+            "https://image.tmdb.org/t/p/original/ebCEaPLZW8Dftc6PC4h8ebPC8Dy.jpg",
+            "https://image.tmdb.org/t/p/original/ktEZejN2DjSiokJ0BZHntol1SKP.jpg"
+          ]
+        },
+        {
+          "episode": 12,
+          "name": "Return of the Overlord",
+          "overview": "Garmadon uses his new super-weapon to turn Jamanakai Village evil, unsettling the balance and allowing the spirit of the Overlord to possess his body.",
+          "plot": null,
+          "airDate": "2012-11-14",
+          "still": "https://image.tmdb.org/t/p/original/kWNFBuIIADOOiilQTLTg5r0pn46.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/kWNFBuIIADOOiilQTLTg5r0pn46.jpg",
+            "https://image.tmdb.org/t/p/original/mZYMThiylCbcVyLkqzv77rg8zNq.jpg",
+            "https://image.tmdb.org/t/p/original/iq8enDwBtsyFKXMfFjJIpPykQAh.jpg"
+          ]
+        },
+        {
+          "episode": 13,
+          "name": "Rise Of The Spinjitzu Master",
+          "overview": "A great darkness has fallen upon Ninjago as Garmadon's super-weapon has turned it evil, but the ninjas discover light is more powerful than dark.",
+          "plot": null,
+          "airDate": "2012-11-21",
+          "still": "https://image.tmdb.org/t/p/original/40Fc3oYDk06c9xtQUb8Ooeaf5jv.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/40Fc3oYDk06c9xtQUb8Ooeaf5jv.jpg",
+            "https://image.tmdb.org/t/p/original/cY3up5UD97xUbn6wYd1T56pHRSM.jpg",
+            "https://image.tmdb.org/t/p/original/cYnQmwXtBx50N1NdefcykFV5Gn5.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 3,
+      "name": "Rebooted",
+      "airDate": "2014-01-29",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "The Surge",
+          "overview": "In the wake of Overlord's defeat, Ninjago City is reborn and the ninjas teach at Sensei Wu's academy. But the peace doesn't last long.",
+          "plot": null,
+          "airDate": "2014-01-29",
+          "still": "https://image.tmdb.org/t/p/original/gXoUseOiSM6Dk6jXrrgU3uZxNyB.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/gXoUseOiSM6Dk6jXrrgU3uZxNyB.jpg",
+            "https://image.tmdb.org/t/p/original/2qy0SIjUR86K82l4pQIoyk1dbR.jpg",
+            "https://image.tmdb.org/t/p/original/jiDcnXVVrBX9hT73Z5uv63N7TaG.jpg",
+            "https://image.tmdb.org/t/p/original/jLLFczIH5yaVqQl2d0OzWHObOyD.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "The Art of the Silent Fist",
+          "overview": "After being pursued to Sensei Garmadon's monastery by the Nindroids, the ninjas sneak back into Ninjago City under the guise of a circus train.",
+          "plot": null,
+          "airDate": "2014-01-29",
+          "still": "https://image.tmdb.org/t/p/original/5QLHXcrqoT4h7XIGNfS350rYDOX.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/5QLHXcrqoT4h7XIGNfS350rYDOX.jpg",
+            "https://image.tmdb.org/t/p/original/ecrHcSSDTTkbziBWHubFOlWrV0v.jpg",
+            "https://image.tmdb.org/t/p/original/n0peTKmZHmKKejRDNTZYsOUCxVH.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Blackout",
+          "overview": "Zane gives up half his power to save P.I.X.A.L. just as foes attack from all sides. Meanwhile, Lloyd and his father travel to Hiroshi's Labyrinth.",
+          "plot": null,
+          "airDate": "2014-04-16",
+          "still": "https://image.tmdb.org/t/p/original/tRszaUdiC3vX8MTwgJTpzgQecqt.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/tRszaUdiC3vX8MTwgJTpzgQecqt.jpg",
+            "https://image.tmdb.org/t/p/original/aqTqQvighQ95Lv06ILC4UTpKlTH.jpg",
+            "https://image.tmdb.org/t/p/original/syqIk6FCRC2lpIUnfFA1Efn57rU.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "The Curse of the Golden Master",
+          "overview": "Underneath Ninjago City, the ninjas discover secrets about the Serpentine when they fight alongside them against the Nindroids.",
+          "plot": null,
+          "airDate": "2014-04-16",
+          "still": "https://image.tmdb.org/t/p/original/mplQBgudG3z7aMMvIJgZ5GWavsZ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/mplQBgudG3z7aMMvIJgZ5GWavsZ.jpg",
+            "https://image.tmdb.org/t/p/original/tUxxXkOnFgEf2Hicy6BdNykFyDo.jpg",
+            "https://image.tmdb.org/t/p/original/vuEvEgKtazeCHz1TKCWqSf9Rixo.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Enter the Digiverse",
+          "overview": "The ninjas venture into the Digiverse to confront the Digital Overlord. Meanwhile, Pythor and Wu lead a Nindroid attack on Borg Tower.",
+          "plot": null,
+          "airDate": "2014-07-13",
+          "still": "https://image.tmdb.org/t/p/original/2xEal5J9e4Lp1yPcef1M5lFdOVw.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/2xEal5J9e4Lp1yPcef1M5lFdOVw.jpg",
+            "https://image.tmdb.org/t/p/original/kt8rzY2Bc8yknUqspS7OXcuiIk7.jpg",
+            "https://image.tmdb.org/t/p/original/dgpkdcIo7A3rZn99omokXSV9hRz.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Codename: Arcturus",
+          "overview": "Pythor and the Nindroids free the Digital Overlord. Meanwhile, Wu and Garmadon stumble upon Pythor's top-secret scheme, Project Arcturus.",
+          "plot": null,
+          "airDate": "2014-07-13",
+          "still": "https://image.tmdb.org/t/p/original/klohqSm2kGceUJXdskdXR1CnhgV.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/klohqSm2kGceUJXdskdXR1CnhgV.jpg",
+            "https://image.tmdb.org/t/p/original/ecEzQ533sQSaT8x3sXFICGvsxlI.jpg",
+            "https://image.tmdb.org/t/p/original/vH7FkapQEGumCvBmKod9LhjCgww.jpg",
+            "https://image.tmdb.org/t/p/original/4oeIGcb4ruzLPVDX6mhgKDmjpOB.jpg",
+            "https://image.tmdb.org/t/p/original/mDiB3FWtB1w2eG2pIaZVWPGCKh7.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "The Void",
+          "overview": "After battling Nindroids on the outside of the Arcturus ship, the ninjas hang on as the craft takes the battle into the heart of a comet.",
+          "plot": null,
+          "airDate": "2014-11-26",
+          "still": "https://image.tmdb.org/t/p/original/qqatW6ZjHrrxWjsjeWL7bhelRpn.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/qqatW6ZjHrrxWjsjeWL7bhelRpn.jpg",
+            "https://image.tmdb.org/t/p/original/fALV2AyWkZ1uCnySEFe2M9KvDgx.jpg",
+            "https://image.tmdb.org/t/p/original/egTgaoYWQNHu9uJEo9HaJHUCBSg.jpg",
+            "https://image.tmdb.org/t/p/original/uQkPHUxiI1qa98pRd5cUinhMylU.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "The Titanium Ninja",
+          "overview": "The Nindroids use the Golden Weapons to transform the Overlord into the Golden Master. In the ruins of Ninjago, the ninjas prepare their final stand.",
+          "plot": null,
+          "airDate": "2014-11-26",
+          "still": "https://image.tmdb.org/t/p/original/4S17RCTrXIeqaILM4KfSloFBLjK.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/4S17RCTrXIeqaILM4KfSloFBLjK.jpg",
+            "https://image.tmdb.org/t/p/original/8lIxSXh8nZ2gKnyzQ1YAJfLO0q6.jpg",
+            "https://image.tmdb.org/t/p/original/hM29rCS44uQI3B1nzxMERBs5h6b.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 4,
+      "name": "Tournament of Elements",
+      "airDate": "2015-02-23",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "The Invitation",
+          "overview": "After discovering that Zane may still be alive, the ninjas learn that they must compete in a Tournament of Champions if they wish to see him again.",
+          "plot": null,
+          "airDate": "2015-02-23",
+          "still": "https://image.tmdb.org/t/p/original/tYQJupG6699qOek5InWhcB4MTff.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/tYQJupG6699qOek5InWhcB4MTff.jpg",
+            "https://image.tmdb.org/t/p/original/248QnqNM1HKpEt4NaKoqHfQBPSl.jpg",
+            "https://image.tmdb.org/t/p/original/529uufk1V81TfKF4DQnBk9QoE0U.jpg",
+            "https://image.tmdb.org/t/p/original/1iSVdc8ufH4ITxXnVnocMRfZ2bp.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Only One Can Remain",
+          "overview": "The team learns about Jade Blades and other secrets of the Tournament of Champions. Karlof is eliminated from the competition.",
+          "plot": null,
+          "airDate": "2015-03-02",
+          "still": "https://image.tmdb.org/t/p/original/3cdzl2oPc0yjCcMGp6Y8Wd7ksf7.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/3cdzl2oPc0yjCcMGp6Y8Wd7ksf7.jpg",
+            "https://image.tmdb.org/t/p/original/tUCgEqFGoYIgcadu62rklI9N1sK.jpg",
+            "https://image.tmdb.org/t/p/original/gSjIdslaGEbyUM02EXfUQEYrAm9.jpg",
+            "https://image.tmdb.org/t/p/original/gs3jaCwKULwi3YG4aD5MmtXvItT.jpg",
+            "https://image.tmdb.org/t/p/original/zf2IK8Wj6vrlX3exPrgPAIwsTgV.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Versus",
+          "overview": "The contests begin, and soon Cole is forced to battle with Jay. Zane regains his memory with help from P.I.X.A.L.",
+          "plot": null,
+          "airDate": "2015-03-09",
+          "still": "https://image.tmdb.org/t/p/original/17XeMtmwekcirgabdhBUNtvzmRq.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/17XeMtmwekcirgabdhBUNtvzmRq.jpg",
+            "https://image.tmdb.org/t/p/original/mIP3tKliwKdMEowGWYv0PlEwTEN.jpg",
+            "https://image.tmdb.org/t/p/original/3uvMtMzuJthN7uZ1kYrw2jjguLK.jpg",
+            "https://image.tmdb.org/t/p/original/2fDf3mFM6eMy6HDKL1J2MEiSKFu.jpg",
+            "https://image.tmdb.org/t/p/original/u3WOJoHtEucDKrvFlH5fhuO3QdZ.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Ninja Roll",
+          "overview": "The remaining Elemental Masters compete in a roller skating competition. Cole, Karlof and other eliminations must work in Chen's noodle factory.",
+          "plot": null,
+          "airDate": "2015-03-16",
+          "still": "https://image.tmdb.org/t/p/original/A4B6y1kLdBhdd1wjZRQsBz3JFat.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/A4B6y1kLdBhdd1wjZRQsBz3JFat.jpg",
+            "https://image.tmdb.org/t/p/original/l46LgB5LyT99x0xfFN0CEgdhPDa.jpg",
+            "https://image.tmdb.org/t/p/original/hFZfjLCxMuh3NGxdoimugq4FYyd.jpg",
+            "https://image.tmdb.org/t/p/original/nsgi0vs7hISyamX8BIskeYg50JR.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Spy For a Spy",
+          "overview": "The ninjas form an alliance with the Elemental Masters after revealing Chen's plan. Cole and Zane break out of the noodle factory.",
+          "plot": null,
+          "airDate": "2015-03-23",
+          "still": "https://image.tmdb.org/t/p/original/vOf5su0bdA1vVL8qyDEt70bIh3i.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/vOf5su0bdA1vVL8qyDEt70bIh3i.jpg",
+            "https://image.tmdb.org/t/p/original/fTOhI2OEES9wRBhJG7gXGo786tu.jpg",
+            "https://image.tmdb.org/t/p/original/cIbOfs9pwxDbHHh6VmtupewhQqI.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Spellbound",
+          "overview": "Lloyd and Garmadon learn of the great battle that once took place between Chen, the Anacondrai and the Elemental Masters for control of Ninjago.",
+          "plot": null,
+          "airDate": "2015-03-30",
+          "still": "https://image.tmdb.org/t/p/original/lfxypfPk4vrkMbmjUraF72tJtFo.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/lfxypfPk4vrkMbmjUraF72tJtFo.jpg",
+            "https://image.tmdb.org/t/p/original/uH58G9luD3K3R33jCIxYR1Rqw81.jpg",
+            "https://image.tmdb.org/t/p/original/tcGDlOQZeVORY7J6q8s6ngd6iPB.jpg",
+            "https://image.tmdb.org/t/p/original/icxkMwmHpZrL9aXL3PgOyLbTNCr.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "The Forgotten Element",
+          "overview": "It appears that all is lost when Chen drains the powers of the Elemental Masters and vanquishes Lloyd in battle to take control of his as well.",
+          "plot": null,
+          "airDate": "2015-03-31",
+          "still": "https://image.tmdb.org/t/p/original/w00of5ZzI1UBl9s3bjYzErC0Pgo.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/w00of5ZzI1UBl9s3bjYzErC0Pgo.jpg",
+            "https://image.tmdb.org/t/p/original/mCjsFJ1BeIbvVtPkcM8fl6tNnVP.jpg",
+            "https://image.tmdb.org/t/p/original/aG2hrqv1FU2gn552TwCBubv2ITH.jpg",
+            "https://image.tmdb.org/t/p/original/eP7o1BDfzyyN8hFrfCb35yM8pRT.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "The Day of the Dragon",
+          "overview": "Chen and his army invade Ninjago City, but the masters have escaped the noodle factory and follow close behind. Garmadon narrowly escapes banishment.",
+          "plot": null,
+          "airDate": "2015-04-01",
+          "still": "https://image.tmdb.org/t/p/original/6Z8CLi1bbGvPFd7OwOyjx3r6pJR.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/6Z8CLi1bbGvPFd7OwOyjx3r6pJR.jpg",
+            "https://image.tmdb.org/t/p/original/zPliv9NzHFK6m6qOz6JNiHvGCEs.jpg",
+            "https://image.tmdb.org/t/p/original/2O65fEcnVj4RYnWVzVvUBfmy6r3.jpg",
+            "https://image.tmdb.org/t/p/original/dWSG4m60Ro4rwqW0jmfqrBvibW2.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "The Greatest Fear of All",
+          "overview": "Master Chen uses a spell to turn himself and his troops into fierce Anacondrai, but the ninjas visit Ninjago City's jail to recruit an unusual ally.",
+          "plot": null,
+          "airDate": "2015-04-02",
+          "still": "https://image.tmdb.org/t/p/original/hOa6ZXgGBW5sxtMJp6Zn7ldXhZB.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/hOa6ZXgGBW5sxtMJp6Zn7ldXhZB.jpg",
+            "https://image.tmdb.org/t/p/original/zDDIGYrNIEPsjWpavI81jbOJg2N.jpg",
+            "https://image.tmdb.org/t/p/original/6Vqzz1SYubk0Lh7aVMX5pUeuK1z.jpg",
+            "https://image.tmdb.org/t/p/original/cu9PXBdhPVq6GqFK7JxjBYzHE5P.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "The Corridor of Elders",
+          "overview": "The final confrontation between the ninjas and the Anacondrai unfolds, but a great sacrifice must be made if the heroes are to save the day.",
+          "plot": null,
+          "airDate": "2015-04-03",
+          "still": "https://image.tmdb.org/t/p/original/6Fe7yGyiE4izjqels3esV2jtIog.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/6Fe7yGyiE4izjqels3esV2jtIog.jpg",
+            "https://image.tmdb.org/t/p/original/pWJ2bPmuyzKGwzXrjEA8B3iQkOl.jpg",
+            "https://image.tmdb.org/t/p/original/6ZQNxxaHCge8GuPOeqYaltC7yCM.jpg",
+            "https://image.tmdb.org/t/p/original/eHyoIV0cz51OckBHEq2Rt7tYK6y.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 5,
+      "name": "Possession",
+      "airDate": "2015-06-29",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Winds of Change",
+          "overview": "Morro possesses Lloyd and uses him to infiltrate the tea shop and attack the other ninja, who have mysteriously lost their powers.",
+          "plot": null,
+          "airDate": "2015-06-29",
+          "still": "https://image.tmdb.org/t/p/original/ifnOJNLa58qZIwTmL2IUIMpOROy.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ifnOJNLa58qZIwTmL2IUIMpOROy.jpg",
+            "https://image.tmdb.org/t/p/original/iB2IZk10WgeQnXFzicT5wY6nQZ0.jpg",
+            "https://image.tmdb.org/t/p/original/dsXvsYiSTCgAxUZJ20vXQplJst2.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Ghost Story",
+          "overview": "After learning that Wu's staff holds a clue to the First Spinjitu Master's tomb, the ninja go to Stiix to retrieve the stolen Airjitzu scrolls.",
+          "plot": null,
+          "airDate": "2015-06-30",
+          "still": "https://image.tmdb.org/t/p/original/cYMhaBsMYH4JdVJqEoYDb1VvaHQ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/cYMhaBsMYH4JdVJqEoYDb1VvaHQ.jpg",
+            "https://image.tmdb.org/t/p/original/nmleN4WoKEDYpb8d7zNLvq2tRtA.jpg",
+            "https://image.tmdb.org/t/p/original/o52n5GBB0gTbcyQjm0SYsYUVcsE.jpg",
+            "https://image.tmdb.org/t/p/original/9Pb8bofzoDdM1920PqwbCUN2kxM.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Stiix & Stones",
+          "overview": "While Wu trains Nya in her new water powers, the ninja plot to steal the Airjitzu scrolls from Ronin but find that they must first fight Morro.",
+          "plot": null,
+          "airDate": "2015-07-01",
+          "still": "https://image.tmdb.org/t/p/original/60qES7GuuEPfMKQVPAC6SPFWprz.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/60qES7GuuEPfMKQVPAC6SPFWprz.jpg",
+            "https://image.tmdb.org/t/p/original/ay1YLIIckQsMZTfcsFULOE9agPY.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "The Temple on Haunted Hill",
+          "overview": "The ninja go to Sensei Yang's dangerous haunted temple to learn Airjitzu, and Nya quits her training but must use her powers to elude Morro's ghosts.",
+          "plot": null,
+          "airDate": "2015-07-02",
+          "still": "https://image.tmdb.org/t/p/original/nkMYpwVnG2a3HHWhGVKNyQb5GcR.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/nkMYpwVnG2a3HHWhGVKNyQb5GcR.jpg",
+            "https://image.tmdb.org/t/p/original/kevPkUbrB8CpjOMDPxNl3bDYjaU.jpg",
+            "https://image.tmdb.org/t/p/original/g6M03bko3JHB483ZImuDN5a3TTT.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Peak-a-Boo",
+          "overview": "Using their new Airjitzu powers, the ninja race to climb a perilous mountain to find the Sword of Sanctuary before Morro can claim it.",
+          "plot": null,
+          "airDate": "2015-07-03",
+          "still": "https://image.tmdb.org/t/p/original/m1dK9Kcip5mzTCcq5sSqjFM5tVy.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/m1dK9Kcip5mzTCcq5sSqjFM5tVy.jpg",
+            "https://image.tmdb.org/t/p/original/dR4KNxZKktlK2eSMGEutQpo12Id.jpg",
+            "https://image.tmdb.org/t/p/original/5a5LZpXh5NyA6VvNLDLsCxNPnye.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Kingdom Come",
+          "overview": "After being betrayed in the Cloud Kingdom, the ninja battle Morro for the Sword of Sanctuary and learn he is ultimately after the Realm Crystal.",
+          "plot": null,
+          "airDate": "2015-07-06",
+          "still": "https://image.tmdb.org/t/p/original/vHvyhnvVUIvFJYs8pJl6o51PqMv.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/vHvyhnvVUIvFJYs8pJl6o51PqMv.jpg",
+            "https://image.tmdb.org/t/p/original/w9pDmxt8gSzWptZv7gXBETLpQ0S.jpg",
+            "https://image.tmdb.org/t/p/original/qz3kTgiNs1p24zn0H64kH3Nm0Xx.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "The Crooked Path",
+          "overview": "As the ninja close in on their final clue to the location of the First Spinjitzu Master's tomb, Ronin steals the Sword of Sanctuary to give to Morro.",
+          "plot": null,
+          "airDate": "2015-07-07",
+          "still": "https://image.tmdb.org/t/p/original/1gFpfgxGsvjulw4ptrHa0hHmtCR.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/1gFpfgxGsvjulw4ptrHa0hHmtCR.jpg",
+            "https://image.tmdb.org/t/p/original/q9PyvjhsjZHDl5zTqhaFhia76zj.jpg",
+            "https://image.tmdb.org/t/p/original/cFCNKU5hMjyMCtiLUugPxXT4KnY.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Grave Danger",
+          "overview": "The ninja journey to the First Spinjitzu Master's tomb to claim the powerful Realm Crystal, but they must navigate a series of traps -- and Morro.",
+          "plot": null,
+          "airDate": "2015-07-08",
+          "still": "https://image.tmdb.org/t/p/original/dfYUn3p8dPNfe0zTavuW6IbTvB8.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dfYUn3p8dPNfe0zTavuW6IbTvB8.jpg",
+            "https://image.tmdb.org/t/p/original/qR7bvFz1DAkpRIR7RQFLrF8VlLP.jpg",
+            "https://image.tmdb.org/t/p/original/3QvN3Xw5EpUaxcBFCEwCMoaAlqc.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Curseworld (1)",
+          "overview": "As the ninja race to keep Morro from releasing the Preeminent, Morro uses the Realm Crystal to summon an army of ghosts from the Cursed Realm.",
+          "plot": null,
+          "airDate": "2015-07-09",
+          "still": "https://image.tmdb.org/t/p/original/iAEQQwJ1K4sJWXTrq4gNIwTeiOc.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/iAEQQwJ1K4sJWXTrq4gNIwTeiOc.jpg",
+            "https://image.tmdb.org/t/p/original/kayhb8jAdSeoNvst4MvxEi4W7QN.jpg",
+            "https://image.tmdb.org/t/p/original/tFz9wveFJjg33RXArDIvV9qDbcd.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Curseworld (2)",
+          "overview": "While the ninja try to protect Stiix, Lloyd encounters his father in the Cursed Realm, and Nya unlocks her true potential to take on the Preeminent.",
+          "plot": null,
+          "airDate": "2015-07-10",
+          "still": "https://image.tmdb.org/t/p/original/ephILmetSWNEGFQFcDvOccrrkhd.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ephILmetSWNEGFQFcDvOccrrkhd.jpg",
+            "https://image.tmdb.org/t/p/original/5ElPbHLpLcZSMz4v1cxv5wIHId4.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 6,
+      "name": "Skybound",
+      "airDate": "2016-06-09",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Infamous",
+          "overview": "The ninjas find themselves going from famous heroes to hunted villains when someone impersonates them and commits crimes all over Ninjago City.",
+          "plot": null,
+          "airDate": "2016-06-09",
+          "still": "https://image.tmdb.org/t/p/original/peZPscli0iIIz2e9NfhNOIzhbww.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/peZPscli0iIIz2e9NfhNOIzhbww.jpg",
+            "https://image.tmdb.org/t/p/original/wHGGIv5NsLSl6CIcsZ1I9mdKRWl.jpg",
+            "https://image.tmdb.org/t/p/original/aKaST5ESEwJZ3ojaVrHId8FoMKD.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Public Enemy Number One",
+          "overview": "While Nadakhan schemes to steal the Realm Crystal, the fugitive ninjas are pursued by Ronin, who has been hired by the police to track them down.",
+          "plot": null,
+          "airDate": "2016-06-16",
+          "still": "https://image.tmdb.org/t/p/original/haK0MuNj3rE15HdzZbeNtgX6RR9.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/haK0MuNj3rE15HdzZbeNtgX6RR9.jpg",
+            "https://image.tmdb.org/t/p/original/dI5vFG6hoTajxilLDg8TBG37J9g.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Enkrypted",
+          "overview": "Falsely imprisoned, the ninjas meet a fellow captive who knows of a rare venom that can stop a Djinn like Nadakhan, but it's only found on one island.",
+          "plot": null,
+          "airDate": "2016-06-23",
+          "still": "https://image.tmdb.org/t/p/original/sWpyNjVLxVZekZ7q5e5TXjjHFrZ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/sWpyNjVLxVZekZ7q5e5TXjjHFrZ.jpg",
+            "https://image.tmdb.org/t/p/original/k96vXkheUR0wSbYXS1Zr7zMAfzA.jpg",
+            "https://image.tmdb.org/t/p/original/7XTRpfOEyjvjzI1UwB3TOjpcxub.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Misfortune Rising",
+          "overview": "Nadakhan talks Jay into making a wish to win over Nya, first mate Flintlocke accidentally destroys the Realm Crystal, and Cole steals Soto's map.",
+          "plot": null,
+          "airDate": "2016-06-30",
+          "still": "https://image.tmdb.org/t/p/original/aylqvBOfiJj3v1i9D8tqRQlFQbD.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/aylqvBOfiJj3v1i9D8tqRQlFQbD.jpg",
+            "https://image.tmdb.org/t/p/original/g1Aponmtdv22NZWSbeKVbtvo6Em.jpg",
+            "https://image.tmdb.org/t/p/original/2PRpd1qDzl0uPgyl6GhSIgyVxy5.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "On a Wish and a Prayer",
+          "overview": "As large areas of Ninjago City vanish, the ninjas head to Tiger Widow Island, where Jay collects the precious venom with Nadakhan in hot pursuit.",
+          "plot": null,
+          "airDate": "2016-07-11",
+          "still": "https://image.tmdb.org/t/p/original/x3wm1o0y9MgROMvJS2F8KgsZRJr.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/x3wm1o0y9MgROMvJS2F8KgsZRJr.jpg",
+            "https://image.tmdb.org/t/p/original/yrNgEllHQtLkkhOHDHMX12Ca681.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "My Dinner with Nadakhan",
+          "overview": "Marooned on Tiger Widow Island, Lloyd, Cole and Nya try to escape on a raft, while a captured Jay battles Nadakhan's crewmates for their amusement.",
+          "plot": null,
+          "airDate": "2016-07-12",
+          "still": "https://image.tmdb.org/t/p/original/oSQ7RY9Ph7IDpDlMU18ewNfkpRX.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/oSQ7RY9Ph7IDpDlMU18ewNfkpRX.jpg",
+            "https://image.tmdb.org/t/p/original/7DqN3s1CpHGENLjM0LDkMJAcOUT.jpg",
+            "https://image.tmdb.org/t/p/original/2rf83FcneemesL69IN9EqG7Egib.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Wishmasters",
+          "overview": "After lessons in how to talk like pirates, the ninjas infiltrate Nadakhan's ship on a mission to slip him the venom and rescue Jay from captivity.",
+          "plot": null,
+          "airDate": "2016-07-13",
+          "still": "https://image.tmdb.org/t/p/original/ljbboYytaQ5BqOKWfWC6ScuSCBW.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ljbboYytaQ5BqOKWfWC6ScuSCBW.jpg",
+            "https://image.tmdb.org/t/p/original/c7yYMC0vXL3ad2066nOrfOU1bO0.jpg",
+            "https://image.tmdb.org/t/p/original/q2EX5Feq8j2GtBTBySowveXfI8k.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "The Last Resort",
+          "overview": "Flintlocke leads a mutiny, believing Nadakhan will abandon his crew once he has the power of infinite wishes, but the Djinn prevails and captures Nya.",
+          "plot": null,
+          "airDate": "2016-07-14",
+          "still": "https://image.tmdb.org/t/p/original/803yVCe6TsppqzNH6c95AAmucBK.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/803yVCe6TsppqzNH6c95AAmucBK.jpg",
+            "https://image.tmdb.org/t/p/original/lWy92h8trJwhe789vF6eZ0h92WU.jpg",
+            "https://image.tmdb.org/t/p/original/jtuz3reWpcCnPuxXqSILqIwvC4r.jpg",
+            "https://image.tmdb.org/t/p/original/i5czkgqFnPpbKYJSZ3sSLLXKJyw.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Operation Land Ho!",
+          "overview": "While Nya is forced to rehearse for her wedding to Nadakhan at the Djinn Temple, Jay recruits a new team for a mission to rescue his friends.",
+          "plot": null,
+          "airDate": "2016-07-15",
+          "still": "https://image.tmdb.org/t/p/original/rOTHmumoidEMbsuXV8wUzsGbKZf.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/rOTHmumoidEMbsuXV8wUzsGbKZf.jpg",
+            "https://image.tmdb.org/t/p/original/jU2QT32KczqUAGjgTEVgt29biHJ.jpg",
+            "https://image.tmdb.org/t/p/original/pKEt4BabVH27c9b2hUQlF1mREIa.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "The Way Back",
+          "overview": "Nadakhan marries Nya and gains the power of infinite wishes, but Flintlocke and Dogshank join the ninjas to fight the Djinn in an epic final showdown.",
+          "plot": null,
+          "airDate": "2016-07-15",
+          "still": "https://image.tmdb.org/t/p/original/tjMvdgcz1DXxtydOZevuZtuxXsR.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/tjMvdgcz1DXxtydOZevuZtuxXsR.jpg",
+            "https://image.tmdb.org/t/p/original/3eZu2iRWYyzZCCuQkVwwe2PG4FJ.jpg",
+            "https://image.tmdb.org/t/p/original/wyDwooCF2WrlVh4smj9Nl4DG5oP.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 7,
+      "name": "Hands of Time",
+      "airDate": "2017-05-15",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "The Hands of Time",
+          "overview": "Master Wu engages in a fight left unfinished decades ago against Acronix, one of the twin Hands of Time. The ninjas try to rescue him.",
+          "plot": null,
+          "airDate": "2017-05-15",
+          "still": "https://image.tmdb.org/t/p/original/5tTZApYzi7fXwVrOjshyKBvXZue.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/5tTZApYzi7fXwVrOjshyKBvXZue.jpg",
+            "https://image.tmdb.org/t/p/original/nwVz1jo5GJY81YpLUyvlME7P2x8.jpg",
+            "https://image.tmdb.org/t/p/original/xdNrid4AVmEFxDWbQ4Gu0BlDnkH.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "The Hatching",
+          "overview": "The ninjas learn more about fallen Elemental Masters, Krux and Acronix, and discover they have a new enemy.",
+          "plot": null,
+          "airDate": "2017-05-16",
+          "still": "https://image.tmdb.org/t/p/original/oT4LguVDZRhsZgpkL0pm3GKzajW.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/oT4LguVDZRhsZgpkL0pm3GKzajW.jpg",
+            "https://image.tmdb.org/t/p/original/8LxMlLR7Y5Mkwz3X0qujzlLtqFD.jpg",
+            "https://image.tmdb.org/t/p/original/gwbniraNLYxpDeDOS6fZDuk9tsj.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "A Time of Traitors",
+          "overview": "Kai uses a Vermillion Warrior helmet to uncover information about Krux, while Lloyd struggles as a master-in-training and Nya tries to reboot Zane.",
+          "plot": null,
+          "airDate": "2017-05-17",
+          "still": "https://image.tmdb.org/t/p/original/73F84i0emWv8jAmOlPantgH2zkt.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/73F84i0emWv8jAmOlPantgH2zkt.jpg",
+            "https://image.tmdb.org/t/p/original/h00SL7pnc1tp1zQHDM9VPZqrznc.jpg",
+            "https://image.tmdb.org/t/p/original/3jGENhGz9TSpNfI2amfwibUxFtz.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Scavengers",
+          "overview": "The Vermillion Warriors mysteriously steal items made of metal while Lloyd comes to realize that filling Master Wu's shoes is a daunting task.",
+          "plot": null,
+          "airDate": "2017-05-18",
+          "still": "https://image.tmdb.org/t/p/original/qlE09704s3TEUJVUKmEGiFilE4d.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/qlE09704s3TEUJVUKmEGiFilE4d.jpg",
+            "https://image.tmdb.org/t/p/original/AawWIslM3RhKrb7J7ehvUMpl3CW.jpg",
+            "https://image.tmdb.org/t/p/original/i0B5jl9KSSSv9Ie3dzUOqcD6yUD.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "A Line in the Sand",
+          "overview": "The ninjas fight to save an amusement park while Jay defends his family home from the Vermillion Warriors -- until the Emerald Time Blade arrives.",
+          "plot": null,
+          "airDate": "2017-05-19",
+          "still": "https://image.tmdb.org/t/p/original/3eDdmOTJwuXSUwpi3IL7tHSlko6.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/3eDdmOTJwuXSUwpi3IL7tHSlko6.jpg",
+            "https://image.tmdb.org/t/p/original/jOWI0UuTigKSDNMNaGKoRGkajRx.jpg",
+            "https://image.tmdb.org/t/p/original/6oDNiHuylhhyQb3BGqBFXoZKi8A.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "The Attack",
+          "overview": "The team enjoys a victory and retrieves the Emerald Time Blade, but the celebration is short-lived.",
+          "plot": null,
+          "airDate": "2017-05-22",
+          "still": "https://image.tmdb.org/t/p/original/dHZiUfLVEu34lOR0KBhbnAeeFCs.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dHZiUfLVEu34lOR0KBhbnAeeFCs.jpg",
+            "https://image.tmdb.org/t/p/original/zwb9WpJNbjxIKkKsKEk9ROLHeS3.jpg",
+            "https://image.tmdb.org/t/p/original/1PwepgyQsz934n6JD9JFM1BTBim.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Secrets Discovered",
+          "overview": "While the rest of the ninjas try to find and rescue Master Wu, Nya confronts the Samurai X imposter and Kai seeks the truth about his parents.",
+          "plot": null,
+          "airDate": "2017-05-23",
+          "still": "https://image.tmdb.org/t/p/original/8EJv0yrgblEFJMFfoSQaTs4xZrj.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/8EJv0yrgblEFJMFfoSQaTs4xZrj.jpg",
+            "https://image.tmdb.org/t/p/original/1xVUJvgzqxrwrbwo3Cnr4ArlvdX.jpg",
+            "https://image.tmdb.org/t/p/original/yymgLqnfJdhTbrktoxCvHpkxZkX.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Pause and Effect",
+          "overview": "Kai discovers both of his parents are being held captive. Meanwhile, a third Time Blade appears.",
+          "plot": null,
+          "airDate": "2017-05-24",
+          "still": "https://image.tmdb.org/t/p/original/fW4xLnDOSHfL9ovYyoUhHesFSmb.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/fW4xLnDOSHfL9ovYyoUhHesFSmb.jpg",
+            "https://image.tmdb.org/t/p/original/bBvbV80C4fYsO7yf5fM2l3dFue4.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Out of the Fire and Into the Boiling Sea",
+          "overview": "The Hands of Time force Kai and Nya into retrieving the fourth Time Blade from the Boiling Sea.",
+          "plot": null,
+          "airDate": "2017-05-25",
+          "still": "https://image.tmdb.org/t/p/original/2uderuDdPa5bXFHEeq4CRXf7Up2.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/2uderuDdPa5bXFHEeq4CRXf7Up2.jpg",
+            "https://image.tmdb.org/t/p/original/fqHNGNQN8LUsD54smrVMirA9RVS.jpg",
+            "https://image.tmdb.org/t/p/original/8PWh1QRjyGWKWXKPlZg2hDFkEqI.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Lost in Time",
+          "overview": "Kai and Nya time travel to the past, where they must help the Elemental Masters prevent the Hands of Time from changing Ninjago history.",
+          "plot": null,
+          "airDate": "2017-05-26",
+          "still": "https://image.tmdb.org/t/p/original/iojE81Wgc6VRS3gOQoW07OV2Lox.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/iojE81Wgc6VRS3gOQoW07OV2Lox.jpg",
+            "https://image.tmdb.org/t/p/original/nsnxBbrtEe1mbMM9T7cdLb7HFmM.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 8,
+      "name": "Sons of Garmadon",
+      "airDate": "2018-04-16",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "The Mask of Deception",
+          "overview": "After he loses the Mask of Deception to a new villain, Lloyd reunites the scattered ninjas.",
+          "plot": null,
+          "airDate": "2018-04-16",
+          "still": "https://image.tmdb.org/t/p/original/cPDs8YGOYMxouWEuvGYScwav8UK.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/cPDs8YGOYMxouWEuvGYScwav8UK.jpg",
+            "https://image.tmdb.org/t/p/original/7mJI8JlXgzD8iS67qesXIoE745a.jpg",
+            "https://image.tmdb.org/t/p/original/24kNtgx3l1gR0K7UZg2jvfzu0Yc.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "The Jade Princess",
+          "overview": "Lloyd befriends the spirited Princess Harumi, but an explosive attack by the Sons of Garmadon results in another relic lost and her parents missing.",
+          "plot": null,
+          "airDate": "2018-04-23",
+          "still": "https://image.tmdb.org/t/p/original/r7AOSAGy0T2fPTQcX3DoixoYHoy.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/r7AOSAGy0T2fPTQcX3DoixoYHoy.jpg",
+            "https://image.tmdb.org/t/p/original/zfKD9RUEHbX1cGqC2b4oECot8ZM.jpg",
+            "https://image.tmdb.org/t/p/original/7ujEMewNDksl5CYmguWpJDab11N.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "The Oni and the Dragon",
+          "overview": "The ninjas seek the Sons of Garmadon by interrogating a captured gang member and going undercover at a karaoke bar.",
+          "plot": null,
+          "airDate": "2018-04-30",
+          "still": "https://image.tmdb.org/t/p/original/nwIwl0jnMfJaBAlOCKKQXcaQyXt.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/nwIwl0jnMfJaBAlOCKKQXcaQyXt.jpg",
+            "https://image.tmdb.org/t/p/original/g1JtbYU6KgiVgWzqD8tJomKTD8Y.jpg",
+            "https://image.tmdb.org/t/p/original/yzUxTC5bG6djfithhfVocR8BeUC.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Snake Jaguar",
+          "overview": "Zane is taken to the Sons of Garmadon's secret base, where he learns about their unseen leader. Meanwhile, Lloyd discovers the gang's true purpose.",
+          "plot": null,
+          "airDate": "2018-05-07",
+          "still": "https://image.tmdb.org/t/p/original/dr4ifu6gSpiHe2kRUjgPTisLkmF.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dr4ifu6gSpiHe2kRUjgPTisLkmF.jpg",
+            "https://image.tmdb.org/t/p/original/hb1aFhBqEeXJoUXqYfBMPWwVhwf.jpg",
+            "https://image.tmdb.org/t/p/original/xAlyHWtXbEJp3jmOQT3ZtyHADNP.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Dead Man's Squall",
+          "overview": "Zane and Mr. E meet in an epic face-off as the ninjas' ship embarks on a rocky journey to find the third Oni mask.",
+          "plot": null,
+          "airDate": "2018-05-14",
+          "still": "https://image.tmdb.org/t/p/original/ttHHXzhUUQaRCoyPsWcSGMolcWn.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ttHHXzhUUQaRCoyPsWcSGMolcWn.jpg",
+            "https://image.tmdb.org/t/p/original/nCDBjwX7SsokmYf4Hr3qiI33iTH.jpg",
+            "https://image.tmdb.org/t/p/original/qla7OydgevZWJfBcXP6XgOdy0EX.jpg",
+            "https://image.tmdb.org/t/p/original/fahGgqzhM6QQ9KBwbzASpxAlwjl.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "The Quiet One",
+          "overview": "Separated by the crash, the ninjas try to get to the Oni mask before the Sons of Garmadon.",
+          "plot": null,
+          "airDate": "2018-05-21",
+          "still": "https://image.tmdb.org/t/p/original/b3zyjMVEBZWvean9nGx04rprvNj.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/b3zyjMVEBZWvean9nGx04rprvNj.jpg",
+            "https://image.tmdb.org/t/p/original/ueiC1pu6hSLWO3Cx81NTHB6dXZy.jpg",
+            "https://image.tmdb.org/t/p/original/io0H4Vb63gW08jJvrEF8SmEnPov.jpg",
+            "https://image.tmdb.org/t/p/original/zGPAt23uZDFyEmlnUYuUJbOcmKG.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Game of Masks",
+          "overview": "A flashback reveals the truth about the Quiet One's identity as Harumi and Lloyd venture deeper into the Oni Temple seeking the third mask.",
+          "plot": null,
+          "airDate": "2018-05-22",
+          "still": "https://image.tmdb.org/t/p/original/9fPItVmlgKIj6dTUmTIDDJ6puxh.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/9fPItVmlgKIj6dTUmTIDDJ6puxh.jpg",
+            "https://image.tmdb.org/t/p/original/kPzvqhvkpfau9CogWHVJRS2qF8D.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Dread on Arrival",
+          "overview": "Lloyd awakens a prisoner of the Quiet One, who plans to resurrect Lord Garmadon with another hostage.",
+          "plot": null,
+          "airDate": "2018-05-23",
+          "still": "https://image.tmdb.org/t/p/original/q71V8oFcbBhB3kAhpSnqFS7zUhy.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/q71V8oFcbBhB3kAhpSnqFS7zUhy.jpg",
+            "https://image.tmdb.org/t/p/original/xjnx0KQztQ5hACr5B3d0yjYZP8j.jpg",
+            "https://image.tmdb.org/t/p/original/xkwWYWPkiG5Mtf5lnUCa4LU2Ekj.jpg",
+            "https://image.tmdb.org/t/p/original/2QvCundts9Rrf5w6KIU79uuEatw.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "True Potential",
+          "overview": "The ninjas celebrate at Laughy's until they learn Garmadon has broken Harumi out of prison.",
+          "plot": null,
+          "airDate": "2018-05-24",
+          "still": "https://image.tmdb.org/t/p/original/jyQzVd7x74DXPzOsstCgWzTenJP.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/jyQzVd7x74DXPzOsstCgWzTenJP.jpg",
+            "https://image.tmdb.org/t/p/original/9gVlIYuDNWZU4hIfhSz4y9f67JA.jpg",
+            "https://image.tmdb.org/t/p/original/u4ROnW1NaTQsnXxcEJ11CzbqsD0.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Big Trouble, Little Ninjago",
+          "overview": "Mystake heals Lloyd's injuries but his survival comes with a heavy price. Garmadon conjures up a destructive giant to display his powers.",
+          "plot": null,
+          "airDate": "2018-05-25",
+          "still": "https://image.tmdb.org/t/p/original/1nn903C5MFbNTqYs98hTL5Vycrl.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/1nn903C5MFbNTqYs98hTL5Vycrl.jpg",
+            "https://image.tmdb.org/t/p/original/wMXzsm3j9NyzafMP2gPg9ktSgCF.jpg",
+            "https://image.tmdb.org/t/p/original/eLF0uE4oEh6DP0ysplN9P10NCXA.jpg",
+            "https://image.tmdb.org/t/p/original/wIIODP1R3v9cUoP02v06j7SHKOE.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 9,
+      "name": "Hunted",
+      "airDate": "2018-09-03",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Firstbourne",
+          "overview": "Lloyd hides from the occupying forces of Emperor Garmadon and Harumi, while Young Wu and the ninjas are marooned in the Realm of Oni and Dragon.",
+          "plot": null,
+          "airDate": "2018-09-03",
+          "still": "https://image.tmdb.org/t/p/original/3hAfo5etS9iHeFYjJSLWt0EDYRd.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/3hAfo5etS9iHeFYjJSLWt0EDYRd.jpg",
+            "https://image.tmdb.org/t/p/original/xoIwSu8XYXPmt2p9DKJb2PyJ0R8.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Iron & Stone",
+          "overview": "Iron Baron banishes Jay, Kai and Zane to doom in an arena against a dragon. In Ninjago, Lloyd assembles a rebel group of Elemental Fighters.",
+          "plot": null,
+          "airDate": "2018-09-04",
+          "still": "https://image.tmdb.org/t/p/original/vhOwohpv01sUSPF2Q7P0NxvZCz0.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/vhOwohpv01sUSPF2Q7P0NxvZCz0.jpg",
+            "https://image.tmdb.org/t/p/original/uLYcIL02x2KuL6i4puqnZuqHjVO.jpg",
+            "https://image.tmdb.org/t/p/original/ioEhS8vACBWX9RuDAkFCpRicxbt.jpg",
+            "https://image.tmdb.org/t/p/original/jknt2MvcVb7GDy3BJE8vGAjUe77.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Radio Free Ninjago",
+          "overview": "The ninjas are caged and used as bait to lure a dragon. Lloyd and his resistance fighters hijack a TV station to broadcast a message of hope.",
+          "plot": null,
+          "airDate": "2018-09-05",
+          "still": "https://image.tmdb.org/t/p/original/hLMz0Zc5dtjZ3nSWbScnqio2v6m.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/hLMz0Zc5dtjZ3nSWbScnqio2v6m.jpg",
+            "https://image.tmdb.org/t/p/original/oBynmD8sdmtZgGno37gCuWR3DNb.jpg",
+            "https://image.tmdb.org/t/p/original/4r3avFRs51UblTBYUTzmlqhrRkS.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "How to Build a Dragon",
+          "overview": "The enslaved ninjas gather materials so that Cole and Wu can build a dragon decoy. The Sons of Garmadon strike back at Lloyd's rebels.",
+          "plot": null,
+          "airDate": "2018-09-06",
+          "still": "https://image.tmdb.org/t/p/original/1PvKCzLXgf41stzdchL3CaatuV2.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/1PvKCzLXgf41stzdchL3CaatuV2.jpg",
+            "https://image.tmdb.org/t/p/original/86VtyVPvycjukchGTOcTC4bguzg.jpg",
+            "https://image.tmdb.org/t/p/original/sLGKUlXwaDobELmDD737Lm2Tj0M.jpg",
+            "https://image.tmdb.org/t/p/original/ma0qma3qsjXg8tQ24FUb7mmhyyi.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "The Gilded Path",
+          "overview": "Lloyd and some of the resistance fighters are on the brink of capture in Nya's vehicle. In the Realm of Oni and Dragon, the ninjas and Wu go on the run.",
+          "plot": null,
+          "airDate": "2018-09-07",
+          "still": "https://image.tmdb.org/t/p/original/97GmLpZ60dSrFgj59XCwI8xKnMG.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/97GmLpZ60dSrFgj59XCwI8xKnMG.jpg",
+            "https://image.tmdb.org/t/p/original/7diznIHevdYLfPlAG0cFeuUKhvm.jpg",
+            "https://image.tmdb.org/t/p/original/eugyKdQdftzyEWJ00eAYJK2yjJD.jpg",
+            "https://image.tmdb.org/t/p/original/vQaqYeZDKvGibgFCpvt20GUyQrs.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Two Lies, One Truth",
+          "overview": "Mystake reveals her true nature and past, while Wu leads the search for Firstbourne.",
+          "plot": null,
+          "airDate": "2018-09-10",
+          "still": "https://image.tmdb.org/t/p/original/jgUtTjsCrlABZh8P6uquvO265bK.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/jgUtTjsCrlABZh8P6uquvO265bK.jpg",
+            "https://image.tmdb.org/t/p/original/kp6uTiYjsg1nO71C7Xxx2em1wUR.jpg",
+            "https://image.tmdb.org/t/p/original/cEOPACDlW0uvP1ai4sQ1bykiBT4.jpg",
+            "https://image.tmdb.org/t/p/original/aEbKrmQsysnVuZUFWECUipHC0ne.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "The Weakest Link",
+          "overview": "Wu's identity is revealed while Lloyd and his comrades come up with a new plan involving Harumi.",
+          "plot": null,
+          "airDate": "2018-09-11",
+          "still": "https://image.tmdb.org/t/p/original/xpQQfVhkwlRaC7LZe4cECi6MMQn.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xpQQfVhkwlRaC7LZe4cECi6MMQn.jpg",
+            "https://image.tmdb.org/t/p/original/yBMgMdwzr8XoT0JTrEBV5xBpByd.jpg",
+            "https://image.tmdb.org/t/p/original/1km80KNkiPCsknXu79IlIgXunJV.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Saving Faith",
+          "overview": "When Wu is captured and electro-shocked, his memories suddenly return. Lloyd uses stolen powers to try and seize the Oni Titan.",
+          "plot": null,
+          "airDate": "2018-09-12",
+          "still": "https://image.tmdb.org/t/p/original/bEWEqKmuD7BMBXylebeDB2d6KCX.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/bEWEqKmuD7BMBXylebeDB2d6KCX.jpg",
+            "https://image.tmdb.org/t/p/original/a3lLpdDRfoOeCBaXQtmIlYx7kiY.jpg",
+            "https://image.tmdb.org/t/p/original/jKT8tPuCG8RI45hRExeudVfsqAX.jpg",
+            "https://image.tmdb.org/t/p/original/rW6ylpApDDTxuMlqYWs5IepOGSh.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Lessons for a Master",
+          "overview": "An angry Garmadon looks to regain control while Wu and Iron Baron land in Firstbourne's nest.",
+          "plot": null,
+          "airDate": "2018-09-13",
+          "still": "https://image.tmdb.org/t/p/original/v2fbmkd6DW0rsO8uKo9EYCOZDMy.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/v2fbmkd6DW0rsO8uKo9EYCOZDMy.jpg",
+            "https://image.tmdb.org/t/p/original/cNzb9NWYiRf4MHyEDDymupIYkd2.jpg",
+            "https://image.tmdb.org/t/p/original/353mY89y71SxUINDEAsa52UEyFn.jpg",
+            "https://image.tmdb.org/t/p/original/dlPGdWWhiEs4oxl89FN9tgxqrN3.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Green Destiny",
+          "overview": "The ninjas return to Ninjago and head to battle just as a terrible attack is underway while Master Wu and Lloyd confront Lord Garmadon.",
+          "plot": null,
+          "airDate": "2018-09-14",
+          "still": "https://image.tmdb.org/t/p/original/7gHqqtEqrOO7V1ibctKMsgzTwcY.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/7gHqqtEqrOO7V1ibctKMsgzTwcY.jpg",
+            "https://image.tmdb.org/t/p/original/e9VP2CLDEutOtqoTjnEDQauJZ2u.jpg",
+            "https://image.tmdb.org/t/p/original/n6igRBwxcTrFU7YR1SxPWnUXaIZ.jpg",
+            "https://image.tmdb.org/t/p/original/9Z1mjtTCRJ3xvWevDhg1DXHOsLs.jpg",
+            "https://image.tmdb.org/t/p/original/43UkEtjWFrwsOjesyLmsKYXfSPJ.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 10,
+      "name": "March of the Oni",
+      "airDate": "2019-01-19",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "The Darkness Comes",
+          "overview": "Faith arrives with news of an invasion, forcing Lloyd to consider making Lord Garmadon an ally.",
+          "plot": null,
+          "airDate": "2019-01-19",
+          "still": "https://image.tmdb.org/t/p/original/n9nQsx75aGxP6M1BG1uEVZhrrrL.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/n9nQsx75aGxP6M1BG1uEVZhrrrL.jpg",
+            "https://image.tmdb.org/t/p/original/rKPm88LmzLOb4nUUQYTLwundNzU.jpg",
+            "https://image.tmdb.org/t/p/original/efFxEUHJFvALdtZz1g4EnXTvaTr.jpg",
+            "https://image.tmdb.org/t/p/original/4EhPXCQKjHzb52oY8ilSii5LpGb.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Into the Breach",
+          "overview": "Despite their grave doubts, the ninjas free Lord Garmadon from Kryptarium Prison so that he and Lloyd can enter the cloud of darkness.",
+          "plot": null,
+          "airDate": "2019-01-26",
+          "still": "https://image.tmdb.org/t/p/original/yB9PnEcE7n4CAsa5J5EqOH2RBZG.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/yB9PnEcE7n4CAsa5J5EqOH2RBZG.jpg",
+            "https://image.tmdb.org/t/p/original/ktLIoQAa22ufrzPzJST8bp6S4sU.jpg",
+            "https://image.tmdb.org/t/p/original/M4s6eh5p4HUxlSyOyHlesUiWNG.jpg",
+            "https://image.tmdb.org/t/p/original/fK47qvrf6HhPpv7r9oVaTescQrF.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "The Fall",
+          "overview": "The team pays a terrible price when they attempt to rescue Lloyd and Lord Garmadon, who discover the Oni's weakness while battling the Omega.",
+          "plot": null,
+          "airDate": "2019-02-02",
+          "still": "https://image.tmdb.org/t/p/original/wLH83xVbMzEZcudSaF1SEC3w791.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/wLH83xVbMzEZcudSaF1SEC3w791.jpg",
+            "https://image.tmdb.org/t/p/original/fNK9RgS3AhZxtNIJxNadePBnonv.jpg",
+            "https://image.tmdb.org/t/p/original/v8EIGmt3ziyxcM0gKb2Yc7JLMb9.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Endings",
+          "overview": "The ninjas race back to the Monastery of Spinjitzu, where they must combine their powers and make their last stand against the Oni.",
+          "plot": null,
+          "airDate": "2019-02-09",
+          "still": "https://image.tmdb.org/t/p/original/j1I6yJbyQdwwK5ZpbwJv7kmWG3m.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/j1I6yJbyQdwwK5ZpbwJv7kmWG3m.jpg",
+            "https://image.tmdb.org/t/p/original/ivHlAa8BhThWNQ1d2DCVjtQfvi6.jpg",
+            "https://image.tmdb.org/t/p/original/cQnDwWLjTMrgJ7cyqfdsO6ux7kQ.jpg",
+            "https://image.tmdb.org/t/p/original/l6guopFvvkq33eGbhXVY0RG2Vdy.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 11,
+      "name": "Secrets of the Forbidden Spinjitzu",
+      "airDate": "2019-06-22",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Wasted True Potential",
+          "overview": "In the wake of a previous victory, the ninjas go soft — leaving Master Wu to remind them of who they truly are.",
+          "plot": null,
+          "airDate": "2019-06-22",
+          "still": "https://image.tmdb.org/t/p/original/h2Kkpn7HhJ6UdpmKYZD1k9y2MFN.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/h2Kkpn7HhJ6UdpmKYZD1k9y2MFN.jpg",
+            "https://image.tmdb.org/t/p/original/yMN9IzRNOngpin7Y9UBt603ArlE.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Questing For Quests",
+          "overview": "The ninjas search for a quest to reignite their Spinjitzu training; unfortunately, Ninjago City is enjoying a period of rare tranquility.",
+          "plot": null,
+          "airDate": "2019-06-22",
+          "still": "https://image.tmdb.org/t/p/original/fs5IrHZ6TPSgzIf1G6VLwgiqigP.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/fs5IrHZ6TPSgzIf1G6VLwgiqigP.jpg",
+            "https://image.tmdb.org/t/p/original/cBlah8GF13S1rVL7MxHqis7dmuN.jpg",
+            "https://image.tmdb.org/t/p/original/yMN9IzRNOngpin7Y9UBt603ArlE.jpg",
+            "https://image.tmdb.org/t/p/original/fIQHRsp8n0K7DFZsHObFZsu1OEU.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "A Rocky Start",
+          "overview": "The ninjas take a road trip through the Desert of Doom, a region supposedly inhabited by a giant scarab beetle.",
+          "plot": null,
+          "airDate": "2019-06-29",
+          "still": "https://image.tmdb.org/t/p/original/kcQwOJqsWxQG7N9Jkodr7NkHSSf.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/kcQwOJqsWxQG7N9Jkodr7NkHSSf.jpg",
+            "https://image.tmdb.org/t/p/original/woDcL6irykWdlTdq6iTGrTyOwz8.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "The Belly of The Beast",
+          "overview": "To repair the Land-Bounty, the ninjas must retrieve a critical engine component that has been swallowed by a giant scarab beetle.",
+          "plot": null,
+          "airDate": "2019-06-29",
+          "still": "https://image.tmdb.org/t/p/original/itfxrye6KIlHLr9QaoTuzhxusB8.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/itfxrye6KIlHLr9QaoTuzhxusB8.jpg",
+            "https://image.tmdb.org/t/p/original/9RLBXvDE1zASqs4qjmiKCuRBIZQ.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Boobytraps and How to Survive Them",
+          "overview": "The ninjas team up with a reluctant Clutch Powers to enter a mysterious pyramid, where they inadvertently unleash an ancient evil.",
+          "plot": null,
+          "airDate": "2019-07-06",
+          "still": "https://image.tmdb.org/t/p/original/xd4FsNKLdXKAExPsXOFI4Tsw9dE.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xd4FsNKLdXKAExPsXOFI4Tsw9dE.jpg",
+            "https://image.tmdb.org/t/p/original/biJ1H4KNg7yKuoImR9oCyEtt1oA.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "The News Never Sleeps",
+          "overview": "Lil' Nelson takes a job as a paper carrier, which is difficult in a city overrun by scorching Pyro Vipers and a Serpentine sorceress.",
+          "plot": null,
+          "airDate": "2019-07-06",
+          "still": "https://image.tmdb.org/t/p/original/gfsL09kY2Ena7SsxqzZX5oOiQ8G.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/gfsL09kY2Ena7SsxqzZX5oOiQ8G.jpg",
+            "https://image.tmdb.org/t/p/original/k6JMQGO6F7J1vWc0pijZCgLfgpu.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Ninja vs Lava",
+          "overview": "The ninjas find themselves trapped in a pyramid and must escape encroaching lava to warn Ninjago City of a new Serpentine invasion.",
+          "plot": null,
+          "airDate": "2019-07-13",
+          "still": "https://image.tmdb.org/t/p/original/dNcALhba36RX3NZkI716ExEt6sF.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dNcALhba36RX3NZkI716ExEt6sF.jpg",
+            "https://image.tmdb.org/t/p/original/oP1BKedYqBXjw6jwm0ue3Yul7rr.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Snaketastrophy",
+          "overview": "Gayle Gossip and her cameraperson deliver a live newscast of the Serpentine attack on Ninjago City",
+          "plot": null,
+          "airDate": "2019-07-13",
+          "still": "https://image.tmdb.org/t/p/original/z8V8g1TLsGfCwUzaL6JGmAlPkiw.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/z8V8g1TLsGfCwUzaL6JGmAlPkiw.jpg",
+            "https://image.tmdb.org/t/p/original/aG2sroLn2QB8hBY6kK0stULqRrX.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Powerless",
+          "overview": "The ninjas rush to the Ninjago Museum of History to recover a dangerous scroll before it falls into the hands of the Serpentine Sorceress, Aspheera.",
+          "plot": null,
+          "airDate": "2019-07-20",
+          "still": "https://image.tmdb.org/t/p/original/ryJxK8HSUW9PBJ2rsRnvUp1YoFs.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ryJxK8HSUW9PBJ2rsRnvUp1YoFs.jpg",
+            "https://image.tmdb.org/t/p/original/aGSDWZi7pXh4gdJIS2GBnFjbu42.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Ancient History",
+          "overview": "While Aspheera pursues revenge on the \"Treacherous Deceiver\" who betrayed her, the ninjas make a startling discovery.",
+          "plot": null,
+          "airDate": "2019-07-20",
+          "still": "https://image.tmdb.org/t/p/original/piGrp3DfOUq6GpY6SIu6sU4yxwW.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/piGrp3DfOUq6GpY6SIu6sU4yxwW.jpg",
+            "https://image.tmdb.org/t/p/original/iiKzWIKjd2nUfn58s8975mCATOY.jpg"
+          ]
+        },
+        {
+          "episode": 11,
+          "name": "Never Trust a Human",
+          "overview": "Master Wu recounts a tale from his childhood, when he and Young Garmadon met Aspheera and taught her the secrets of Spinjitzu",
+          "plot": null,
+          "airDate": "2019-07-27",
+          "still": "https://image.tmdb.org/t/p/original/9JuIRQ6BemaJNsv5gKQRCnmuce0.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/9JuIRQ6BemaJNsv5gKQRCnmuce0.jpg",
+            "https://image.tmdb.org/t/p/original/y4pd1Usg7V6fywLD2G6VAdVYJ0E.jpg"
+          ]
+        },
+        {
+          "episode": 12,
+          "name": "Under Siege",
+          "overview": "Having learned the identity of the \"Treacherous Deceiver,\" the ninjas find themselves under siege at the Monastery.",
+          "plot": null,
+          "airDate": "2019-07-27",
+          "still": "https://image.tmdb.org/t/p/original/fvsSTKCGxCyjanliRSKzVLo2qBa.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/fvsSTKCGxCyjanliRSKzVLo2qBa.jpg",
+            "https://image.tmdb.org/t/p/original/2gGksXSp3bGd3gDGjzOmoeF6lOl.jpg"
+          ]
+        },
+        {
+          "episode": 13,
+          "name": "The Explorers Club",
+          "overview": "Having learned the identity of the \"Treacherous One,\" the ninjas find themselves under siege at the Monastery.",
+          "plot": null,
+          "airDate": "2019-08-03",
+          "still": "https://image.tmdb.org/t/p/original/b1xQMDfKV0fl8HS1X1jKKGpHMTV.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/b1xQMDfKV0fl8HS1X1jKKGpHMTV.jpg",
+            "https://image.tmdb.org/t/p/original/zN7GBaCFZbWnloooOHjvZqElYpY.jpg"
+          ]
+        },
+        {
+          "episode": 14,
+          "name": "Vengeance is Mine!",
+          "overview": "Aspheera arrives at the monastery of Spinjitzu and confronts Master Wu, forcing one of the ninjas to make a heroic sacrifice.",
+          "plot": null,
+          "airDate": "2019-08-03",
+          "still": "https://image.tmdb.org/t/p/original/hwLc3XCQ3HCGDs52aq4tl1zFSkv.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/hwLc3XCQ3HCGDs52aq4tl1zFSkv.jpg",
+            "https://image.tmdb.org/t/p/original/2mShy3AQXfQKhmXgOxmcqEAAC1Z.jpg"
+          ]
+        },
+        {
+          "episode": 15,
+          "name": "A Cold Goodbye",
+          "overview": "Master Wu prepares to go on a rescue mission, but Lloyd and the other ninjas take matters into their own hands.",
+          "plot": null,
+          "airDate": "2019-08-10",
+          "still": "https://image.tmdb.org/t/p/original/zW5R4D6KlhkRBLSMOt7vHneMPCq.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/zW5R4D6KlhkRBLSMOt7vHneMPCq.jpg",
+            "https://image.tmdb.org/t/p/original/zpgbyjjyf1F3oPPrOgMSMaPS1eG.jpg"
+          ]
+        },
+        {
+          "episode": 16,
+          "name": "The Never-Realm",
+          "overview": "The ninjas arrive in the Never-Realm, where they quickly find themselves overwhelmed; luckily, a tribe of ice fishers help them out.",
+          "plot": null,
+          "airDate": "2019-08-17",
+          "still": "https://image.tmdb.org/t/p/original/gF5gBQSkK8PeSWexjdWYFb5l7UC.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/gF5gBQSkK8PeSWexjdWYFb5l7UC.jpg",
+            "https://image.tmdb.org/t/p/original/cxQ4oH87Nm559c0OC1gFAbqQwaP.jpg"
+          ]
+        },
+        {
+          "episode": 17,
+          "name": "Fire Maker",
+          "overview": "The Ice Emperor learns of the ninjas' arrival and sends his Blizzard Samurai warriors to destroy them and the villagers who sheltered them.",
+          "plot": null,
+          "airDate": "2019-08-24",
+          "still": "https://image.tmdb.org/t/p/original/adcyvuNy7v3dmkkaD4W1Iq0pqBr.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/adcyvuNy7v3dmkkaD4W1Iq0pqBr.jpg",
+            "https://image.tmdb.org/t/p/original/g1BYG87pzTz0wfhsltZSoFoKMTL.jpg"
+          ]
+        },
+        {
+          "episode": 18,
+          "name": "An Unlikely Ally",
+          "overview": "Lloyd runs afoul of the Ice Emperor's Blizzard Samurai but is rescued by a strange wolf. Soon, they develop an unlikely friendship.",
+          "plot": null,
+          "airDate": "2019-08-24",
+          "still": "https://image.tmdb.org/t/p/original/nQGbyQdFLqIdOh0qJ0pbtEuuZiy.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/nQGbyQdFLqIdOh0qJ0pbtEuuZiy.jpg",
+            "https://image.tmdb.org/t/p/original/tyURSWu2wQzDtfY21ruXugWVZ7k.jpg"
+          ]
+        },
+        {
+          "episode": 19,
+          "name": "The Absolute Worst",
+          "overview": "Back in Ninjago City, three criminals learn that the ninjas are away and break out of Kryptarium Prison after lights out.",
+          "plot": null,
+          "airDate": "2019-09-07",
+          "still": "https://image.tmdb.org/t/p/original/vxHXDOIo6T408R50uckh8D4bvOY.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/vxHXDOIo6T408R50uckh8D4bvOY.jpg",
+            "https://image.tmdb.org/t/p/original/hFz6iGZvRoDasLlr0gI9jeoabPM.jpg"
+          ]
+        },
+        {
+          "episode": 20,
+          "name": "The Message",
+          "overview": "Lloyd and his wolf companion find a cave with the mech inside and a message from Zane that provides a clue to his fate.",
+          "plot": null,
+          "airDate": "2019-09-07",
+          "still": "https://image.tmdb.org/t/p/original/1S70MpLBgyIh6TIfGSETaQNboVc.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/1S70MpLBgyIh6TIfGSETaQNboVc.jpg",
+            "https://image.tmdb.org/t/p/original/i1gBFBDPiCX4HzO5nxyy3YmfEP1.jpg"
+          ]
+        },
+        {
+          "episode": 21,
+          "name": "The Traveler's Tree",
+          "overview": "Cole embarks on a dangerous quest to the top of a nearby mountain in hopes of finding the legendary Traveler's Tree.",
+          "plot": null,
+          "airDate": "2019-09-14",
+          "still": "https://image.tmdb.org/t/p/original/A3bKr91JwYPpjznirrIjcIrK7g2.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/A3bKr91JwYPpjznirrIjcIrK7g2.jpg",
+            "https://image.tmdb.org/t/p/original/epLc4an4HoyUnharMB1dqgDUmKr.jpg"
+          ]
+        },
+        {
+          "episode": 22,
+          "name": "Krag's Lament",
+          "overview": "Cole awakens inside an icy cavern belonging to a legendary beast and attempts to escape, only to discover a surprising truth.",
+          "plot": null,
+          "airDate": "2019-09-14",
+          "still": "https://image.tmdb.org/t/p/original/hcRovrG9i7IWA4Hgr7HZFoNnDTh.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/hcRovrG9i7IWA4Hgr7HZFoNnDTh.jpg",
+            "https://image.tmdb.org/t/p/original/nnbqjusscKzNhgRygaks3i3MZz7.jpg"
+          ]
+        },
+        {
+          "episode": 23,
+          "name": "Secret of the Wolf",
+          "overview": "The Ice Emperor summons an enormous ice behemoth to attack Lloyd and his wolf friend — and unexpectedly reveals a secret.",
+          "plot": null,
+          "airDate": "2019-09-21",
+          "still": "https://image.tmdb.org/t/p/original/4kYbNhmMeqAZO5JpwM7N5hbvkXO.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/4kYbNhmMeqAZO5JpwM7N5hbvkXO.jpg",
+            "https://image.tmdb.org/t/p/original/2kiWATimCMFbhKbo8YR9SlzIgl5.jpg"
+          ]
+        },
+        {
+          "episode": 24,
+          "name": "The Last of the Formlings",
+          "overview": "Akita tells the story of the Choosing and how she and her twin brother, Kataru, went into the wilds to discover their animal forms.",
+          "plot": null,
+          "airDate": "2019-09-21",
+          "still": "https://image.tmdb.org/t/p/original/5zAxZwb3gY4qFmr1Xc8IE3eFNvT.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/5zAxZwb3gY4qFmr1Xc8IE3eFNvT.jpg",
+            "https://image.tmdb.org/t/p/original/jicSE4cTYVSwQdlFHIMEa15lTra.jpg",
+            "https://image.tmdb.org/t/p/original/rbe5O8dHloznfLkPINUN6hzPeY9.jpg"
+          ]
+        },
+        {
+          "episode": 25,
+          "name": "My Enemy, My Friend",
+          "overview": "The Ice Emperor's terrible Ice Dragon strikes again and lays waste to the Ice Fisher's village, forcing the ninjas to go after Lloyd.",
+          "plot": null,
+          "airDate": "2019-09-28",
+          "still": "https://image.tmdb.org/t/p/original/9wk5lUNgrjzIxyKxiBWUbsZ4BJm.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/9wk5lUNgrjzIxyKxiBWUbsZ4BJm.jpg",
+            "https://image.tmdb.org/t/p/original/yEW0uvwIbo9569I25bh3WPrpWo4.jpg",
+            "https://image.tmdb.org/t/p/original/qpdKAhyaK6PjbUgLJwPEkrDCbYt.jpg"
+          ]
+        },
+        {
+          "episode": 26,
+          "name": "The Kaiju Protocol",
+          "overview": "Back in Ninjago City, Wu and Pixal attempt to locate the Never-Realm and accidentally unleash a dreaded creature from the Departed Realm.",
+          "plot": null,
+          "airDate": "2019-10-05",
+          "still": "https://image.tmdb.org/t/p/original/vwb22mqyiWVRjqSf7sdn1DJnGMe.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/vwb22mqyiWVRjqSf7sdn1DJnGMe.jpg",
+            "https://image.tmdb.org/t/p/original/jUMWcBrlKSe5PN3jq9BQJww9bfC.jpg"
+          ]
+        },
+        {
+          "episode": 27,
+          "name": "Corruption",
+          "overview": "At a castle in the mountains, Vex witnesses Zane's arrival in the Never-Realm and seizes the opportunity to gain control of him.",
+          "plot": null,
+          "airDate": "2019-10-12",
+          "still": "https://image.tmdb.org/t/p/original/wBNs6DTO9AIku96sHBDL82WJcdH.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/wBNs6DTO9AIku96sHBDL82WJcdH.jpg",
+            "https://image.tmdb.org/t/p/original/Mub0hWW3t5e28bbkEb5cfKUF8I.jpg"
+          ]
+        },
+        {
+          "episode": 28,
+          "name": "A Fragile Hope",
+          "overview": "Having discovered the terrible truth of Zane's fate, Lloyd finds himself imprisoned and alone in the clutches of the Ice Emperor.",
+          "plot": null,
+          "airDate": "2019-10-19",
+          "still": "https://image.tmdb.org/t/p/original/ylCJE2D8MZgwJcuAJ5dplAmlXft.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ylCJE2D8MZgwJcuAJ5dplAmlXft.jpg",
+            "https://image.tmdb.org/t/p/original/zzZIK9SRwBibvbJFki5a2zs40e6.jpg"
+          ]
+        },
+        {
+          "episode": 29,
+          "name": "Once and For All",
+          "overview": "Nya, Jay, Cole and Kai face off against the Ice Emperor's dreaded dragon, while Lloyd and his newfound allies confront the Ice Emperor himself.",
+          "plot": null,
+          "airDate": "2019-10-26",
+          "still": "https://image.tmdb.org/t/p/original/1xLyK7wE5UrYlzikDshe5RtcDz3.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/1xLyK7wE5UrYlzikDshe5RtcDz3.jpg",
+            "https://image.tmdb.org/t/p/original/txDNLGifXYtuP3iieyA9YVozuha.jpg"
+          ]
+        },
+        {
+          "episode": 30,
+          "name": "Awakenings",
+          "overview": "In the dramatic conclusion of the Never-Realm saga, the power of friendship battles the corrupting pull of the Scroll of Forbidden Spinjitzu.",
+          "plot": null,
+          "airDate": "2019-11-02",
+          "still": "https://image.tmdb.org/t/p/original/m22286kJyBflGxe6h9xcCHUHFEZ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/m22286kJyBflGxe6h9xcCHUHFEZ.jpg",
+            "https://image.tmdb.org/t/p/original/luioxSnFdOPStP8l5aKvqvzRZ2a.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 12,
+      "name": "Prime Empire",
+      "airDate": "2020-07-19",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Would You Like to Enter Prime Empire?",
+          "overview": "While investigating a heist, the ninjas discover a legendary unreleased arcade game that suddenly takes control of all the other games in Ninjago.",
+          "plot": null,
+          "airDate": "2020-07-19",
+          "still": "https://image.tmdb.org/t/p/original/piMRYUKZD4SuyjcTOfEVpHGola9.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/piMRYUKZD4SuyjcTOfEVpHGola9.jpg",
+            "https://image.tmdb.org/t/p/original/bcGXFPpPJ8WwapzDiCGUenNBqwG.jpg",
+            "https://image.tmdb.org/t/p/original/6PYve9E7Rpfzl3044EK546NpBq7.jpg",
+            "https://image.tmdb.org/t/p/original/96yhh3OQ1NYKzfXNfWHYLdTz88s.jpg",
+            "https://image.tmdb.org/t/p/original/sAWrIVG1zhuuEA63jJzsn3rRNGS.jpg",
+            "https://image.tmdb.org/t/p/original/nZxFvkCdbTZdVFfZKVgu2Ztywhe.jpg",
+            "https://image.tmdb.org/t/p/original/nWJSx0H2FLvm9JoDQt7azx4DpeD.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Dyer Island",
+          "overview": "When the ninjas connect Jay's disappearance to Prime Empire, they head to Dyer Island to seek answers from the game's designer, the elusive Milton Dyer.",
+          "plot": null,
+          "airDate": "2020-07-19",
+          "still": "https://image.tmdb.org/t/p/original/eOciuRb2ZPZwRVmwBNW8olekcqk.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/eOciuRb2ZPZwRVmwBNW8olekcqk.jpg",
+            "https://image.tmdb.org/t/p/original/8ZJCFjXiN8Cmn66SmqNkejNeHGC.jpg",
+            "https://image.tmdb.org/t/p/original/gby8KMno9bHIW1xZu3LGmuhMwid.jpg",
+            "https://image.tmdb.org/t/p/original/lRx57ov11pT990i8GOokfZpTVU1.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Level Thirteen",
+          "overview": "Cyrus Borg discovers a shocking secret about Prime Empire, while the ninja battle an escaped Mechanic in their attempt to reach Level Thirteen.",
+          "plot": null,
+          "airDate": "2020-07-19",
+          "still": "https://image.tmdb.org/t/p/original/o9bEBE3DURvu5bDfPTOp6fGGaXe.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/o9bEBE3DURvu5bDfPTOp6fGGaXe.jpg",
+            "https://image.tmdb.org/t/p/original/uUlPrfRTxgTJYwGoSED8VGYVs2G.jpg",
+            "https://image.tmdb.org/t/p/original/pyTCy4K0Gxr6BjyeK0gG2PyW9jd.jpg",
+            "https://image.tmdb.org/t/p/original/8mKfLWKLTomkR0wnuLAIgw2in0b.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Superstar Rockin´ Jay",
+          "overview": "Now inside the Prime Empire game, the ninjas find themselves in unfamiliar territory as they try to find Jay and evade an army of Red Visors.",
+          "plot": null,
+          "airDate": "2020-07-19",
+          "still": "https://image.tmdb.org/t/p/original/mRn2268Y61O1tH1OtHkdVEq2I55.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/mRn2268Y61O1tH1OtHkdVEq2I55.jpg",
+            "https://image.tmdb.org/t/p/original/jNpzOYtasKqnKYnhGBIMPX4TlLL.jpg",
+            "https://image.tmdb.org/t/p/original/yeKJl0VGKv8ekAytf11BPP4RGZf.jpg",
+            "https://image.tmdb.org/t/p/original/ydKE4B4OE3AxCNltE0nABtNcbSR.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "I am Okino",
+          "overview": "Inside one of the game zones, a samurai named Okino faces a crisis of faith when he repeatedly fails to lead a series of masters to victory.",
+          "plot": null,
+          "airDate": "2020-07-26",
+          "still": "https://image.tmdb.org/t/p/original/lFER4QJKsDgLI4xVk95a1iy9Snu.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/lFER4QJKsDgLI4xVk95a1iy9Snu.jpg",
+            "https://image.tmdb.org/t/p/original/rWwiKs6HhPSlyJ97wizBE8BvHj1.jpg",
+            "https://image.tmdb.org/t/p/original/qHYbqFQsmRuRvPDPyhb6kkA572D.jpg",
+            "https://image.tmdb.org/t/p/original/yty8hnIyZ26q0ScxF9jZUX4Znf.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "The Glitch",
+          "overview": "In order to stop Unagami, the ninjas must obtain three Key-tanas, the first of which is hidden in one of Prime Empire's most dangerous game environments.",
+          "plot": null,
+          "airDate": "2020-07-26",
+          "still": "https://image.tmdb.org/t/p/original/trVbhJHjr8ZlEX6CDjr10tdtnQL.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/trVbhJHjr8ZlEX6CDjr10tdtnQL.jpg",
+            "https://image.tmdb.org/t/p/original/sAWl4FLPhuoDebSk0AlJIDnBjHm.jpg",
+            "https://image.tmdb.org/t/p/original/o282cafAm4uILgadCYoKUnTxmqS.jpg",
+            "https://image.tmdb.org/t/p/original/8PgEu3DJeKjOsrUWTeMazZoWDRJ.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "The Cliffs of Hysteria",
+          "overview": "While trying to cheer Okino up, the ninjas arrive at the Cliffs of Hysteria and must figure out how to climb them.",
+          "plot": null,
+          "airDate": "2020-08-02",
+          "still": "https://image.tmdb.org/t/p/original/ybHFB8zJMkpBFTYZcgGKEl9hUAH.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ybHFB8zJMkpBFTYZcgGKEl9hUAH.jpg",
+            "https://image.tmdb.org/t/p/original/VvVhjbQTLL4op2XJVfOUnia5AH.jpg",
+            "https://image.tmdb.org/t/p/original/o2pnraYoJLtOipLGBP4DQ3ZTMzr.jpg",
+            "https://image.tmdb.org/t/p/original/ms3ulwuuR13QY171mtwFd8rWYR2.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "The Maze of the Red Dragon",
+          "overview": "Still in the game zone Terra Karana, the samurai guide Okino has to chose between helping the ninjas or obeying the orders of his master, Unagami.",
+          "plot": null,
+          "airDate": "2020-08-02",
+          "still": "https://image.tmdb.org/t/p/original/xU41RPtt9vSaiNtI4Y5uKA2jHW2.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xU41RPtt9vSaiNtI4Y5uKA2jHW2.jpg",
+            "https://image.tmdb.org/t/p/original/sdwQJN7vHJs5ihIMVDwlTIzmYsJ.jpg",
+            "https://image.tmdb.org/t/p/original/wmt3MM5XEIdT2Liv8r5eVcA6Xfv.jpg",
+            "https://image.tmdb.org/t/p/original/x3Lg4LpK5lqY1U1owxdDY2vsrGn.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "One Step Forward, Two Steps Back",
+          "overview": "The ninjas learn that the only way to acquire the second Key-tana is by winning a race in Terra Technica — and must find racing cars in unexpected ways.",
+          "plot": null,
+          "airDate": "2020-08-09",
+          "still": "https://image.tmdb.org/t/p/original/omOTaGtxHmDFjqTNCM4yWeLSlY1.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/omOTaGtxHmDFjqTNCM4yWeLSlY1.jpg",
+            "https://image.tmdb.org/t/p/original/3OPCSy237INlhK9DdtlnmgdqFXc.jpg",
+            "https://image.tmdb.org/t/p/original/iX6pFGG5Doh4TVUXbRfPFqu2rQo.jpg",
+            "https://image.tmdb.org/t/p/original/vz63KZ11YyowjRs5PRATfgslbBh.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Racer Seven",
+          "overview": "As the ninjas prepare for the brutal Speedway Five-Billion race, Lloyd meets a race driver named Seven — who may hold the key to victory.",
+          "plot": null,
+          "airDate": "2020-08-09",
+          "still": "https://image.tmdb.org/t/p/original/lAh02krq8BEUk40Tj8jObuLCWL3.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/lAh02krq8BEUk40Tj8jObuLCWL3.jpg",
+            "https://image.tmdb.org/t/p/original/lgjSDWb4yuEVV8AvAHkVOH5pZE0.jpg",
+            "https://image.tmdb.org/t/p/original/ghGX2t0GBGalR5VYSZCTEYp1xYZ.jpg",
+            "https://image.tmdb.org/t/p/original/9JBYRmRbAQweNB0PnMxR9keM4WF.jpg"
+          ]
+        },
+        {
+          "episode": 11,
+          "name": "The Speedway Five-Billion",
+          "overview": "Unagami's soldiers, the Red Visors, finally discover the secret location of Scott's garage — where they stage an attack against the ninjas.",
+          "plot": null,
+          "airDate": "2020-08-16",
+          "still": "https://image.tmdb.org/t/p/original/pjGnt9JWR6S1i1kN1q5Az4VLK2e.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/pjGnt9JWR6S1i1kN1q5Az4VLK2e.jpg",
+            "https://image.tmdb.org/t/p/original/6GmHJ6kXvSnrDo1m49sCgP8UjJe.jpg",
+            "https://image.tmdb.org/t/p/original/55IbHQngyWZSj1fBxYLiB21qbO2.jpg"
+          ]
+        },
+        {
+          "episode": 12,
+          "name": "Stop, Drop and Side Scroll",
+          "overview": "The ninjas barely have time to mourn the loss of their fallen friends before being thrust into the chaos of Terra Domina.",
+          "plot": null,
+          "airDate": "2020-08-16",
+          "still": "https://image.tmdb.org/t/p/original/crOZE9RdCu2TadIhLyQRDUGh6jz.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/crOZE9RdCu2TadIhLyQRDUGh6jz.jpg",
+            "https://image.tmdb.org/t/p/original/3yPNfKDZNIMMKDjN4NjOWXu9jhr.jpg",
+            "https://image.tmdb.org/t/p/original/mk9xU0JqMIhEfjxJqfZ0HT0sagG.jpg"
+          ]
+        },
+        {
+          "episode": 13,
+          "name": "Ninjago Confidential",
+          "overview": "Back in Ninjago City, Zane and Pixal hit the mean streets to track down Milton Dyer, only to discover that things are not what they seem.",
+          "plot": null,
+          "airDate": "2020-08-23",
+          "still": "https://image.tmdb.org/t/p/original/v3fVKMFRdmFLCldX22GlDefLXZX.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/v3fVKMFRdmFLCldX22GlDefLXZX.jpg",
+            "https://image.tmdb.org/t/p/original/4ki63lSI7K1hhyRI3lbfvBHDkRF.jpg",
+            "https://image.tmdb.org/t/p/original/zK0z0j3I26BZBswuZpc3TsOKKHh.jpg"
+          ]
+        },
+        {
+          "episode": 14,
+          "name": "The Prodigal Father",
+          "overview": "Zane, kidnapped by the Mechanic, faces Unagami while Pixal questions Milton Dyer for information on how to shut down Prime Empire.",
+          "plot": null,
+          "airDate": "2020-08-23",
+          "still": "https://image.tmdb.org/t/p/original/8J95nkLMQnlV8pPKj1WCWzLIebr.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/8J95nkLMQnlV8pPKj1WCWzLIebr.jpg",
+            "https://image.tmdb.org/t/p/original/fMQX2X1Tsb0Bjq340tp06g3fOnl.jpg",
+            "https://image.tmdb.org/t/p/original/2qu3cFoDvblvBPAWdeCiqxa3haA.jpg"
+          ]
+        },
+        {
+          "episode": 15,
+          "name": "The Temple of Madness",
+          "overview": "Jay must stand alone against Unagami in the end-game. But Unagami has a bigger battle in facing the truth about his own identity.",
+          "plot": null,
+          "airDate": "2020-08-30",
+          "still": "https://image.tmdb.org/t/p/original/sIRPml1cFFDshdfDTqCFqLx4bxo.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/sIRPml1cFFDshdfDTqCFqLx4bxo.jpg",
+            "https://image.tmdb.org/t/p/original/ubhkR8JoXi9CxRZb5vSuQkPXGL9.jpg",
+            "https://image.tmdb.org/t/p/original/jkgu0SwPWesM4OkVqNSgKEmY1CX.jpg"
+          ]
+        },
+        {
+          "episode": 16,
+          "name": "Game Over",
+          "overview": "When Unagami breaks into the real world and terrorizes Ninjago, Jay, Zane and Pixal attempt to prevent disaster by reuniting him with his creator.",
+          "plot": null,
+          "airDate": "2020-08-30",
+          "still": "https://image.tmdb.org/t/p/original/iLhoMKxKHCOfu2sLihhSXxKJNv3.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/iLhoMKxKHCOfu2sLihhSXxKJNv3.jpg",
+            "https://image.tmdb.org/t/p/original/xRyg3dATf40xd2oO6NcdtjVneJB.jpg",
+            "https://image.tmdb.org/t/p/original/oAvl9tjx13OPnTMAIEj2hfPVrxQ.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 13,
+      "name": "Master of the Mountain",
+      "airDate": "2020-07-06",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Shintaro",
+          "overview": "The ninjas travel to attend the birthday party of Princess Vania, in the distant Kingdom of Shintaro, and bring along Master Wu.",
+          "plot": null,
+          "airDate": "2020-07-06",
+          "still": "https://image.tmdb.org/t/p/original/1ibBpHf1sykPgUoBtqmZatsjdIU.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/1ibBpHf1sykPgUoBtqmZatsjdIU.jpg",
+            "https://image.tmdb.org/t/p/original/6lvt0sxItlfDvT4GZjk4MSqMnAB.jpg",
+            "https://image.tmdb.org/t/p/original/pE0lVOjIWMwb7pOTX2tSTpKf43Q.jpg",
+            "https://image.tmdb.org/t/p/original/7C6ZKKjeCbPZKnvVdXR4QhvUjZO.jpg",
+            "https://image.tmdb.org/t/p/original/31VTBm5DtNUDRZme9odWMJyYGnE.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Into the Dark",
+          "overview": "The ninjas are welcomed to Shintaro, where Cole and Princess Vania investigate a mysterious visitor and explore a secret underground mine.",
+          "plot": null,
+          "airDate": "2020-07-06",
+          "still": "https://image.tmdb.org/t/p/original/7351iFKAc8SBxTJAGI7OAbvTeGl.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/7351iFKAc8SBxTJAGI7OAbvTeGl.jpg",
+            "https://image.tmdb.org/t/p/original/vToUsKWOmmLBJA7Zgk0ldQkQRYH.jpg",
+            "https://image.tmdb.org/t/p/original/oIUkgrWmMKTxbovMhxKObjxTYvo.jpg",
+            "https://image.tmdb.org/t/p/original/wA7T9fAtjmnZ6rheRq5Jcucs8J1.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "The Worst Rescue Ever",
+          "overview": "The ninjas attempt to rescue Cole, but the bickering of his fellow prisoners alerts the Skull Sorcerer, and soon the ninjas are prisoners too.",
+          "plot": null,
+          "airDate": "2020-07-07",
+          "still": "https://image.tmdb.org/t/p/original/lqPCH8xq3eF7DWpZ0FU6tjNNdDj.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/lqPCH8xq3eF7DWpZ0FU6tjNNdDj.jpg",
+            "https://image.tmdb.org/t/p/original/817KrZEB9N4ZMTLzElEybBim3aG.jpg",
+            "https://image.tmdb.org/t/p/original/gCIaEbNv6V8bABocTvDOD6CHN2U.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "The Two Blades",
+          "overview": "In order to escape the Skull Sorcerer's chain gang, the ninja must convince the Munce and Geckles to put aside their distrust and work together.",
+          "plot": null,
+          "airDate": "2020-07-08",
+          "still": "https://image.tmdb.org/t/p/original/uq4LKHs8Am46exB70pr6Hoc5jUt.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/uq4LKHs8Am46exB70pr6Hoc5jUt.jpg",
+            "https://image.tmdb.org/t/p/original/zPEdXhHjd2xwZT52sx6EdJIoMR5.jpg",
+            "https://image.tmdb.org/t/p/original/1gixdmajNul7EBvA9AWCYO4E73O.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Queen of the Munce",
+          "overview": "Separated from the others, Nya, Jay and Lloyd follow a Munce named Murt deep into the mountains, where they meet the Munce Queen.",
+          "plot": null,
+          "airDate": "2020-07-09",
+          "still": "https://image.tmdb.org/t/p/original/qx9iPCpD9GwM8nBdluRJXQr95r3.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/qx9iPCpD9GwM8nBdluRJXQr95r3.jpg",
+            "https://image.tmdb.org/t/p/original/hEilppImqwxFIkEg8olG1TO7G6j.jpg",
+            "https://image.tmdb.org/t/p/original/rBN8fWaqYA2bqZYXjEeNqODsFow.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Trial By Mino",
+          "overview": "Kai and Zane discover a party of Geckles, who suspect them of working with the Skull Sorcerer and bring them to their leader, Chancellor Gulch.",
+          "plot": null,
+          "airDate": "2020-07-10",
+          "still": "https://image.tmdb.org/t/p/original/1LfsCOy6XoWwwkT3oBp4wDFaIwd.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/1LfsCOy6XoWwwkT3oBp4wDFaIwd.jpg",
+            "https://image.tmdb.org/t/p/original/pMBXrxmbB2PsYw5lDLCYhNsD34l.jpg",
+            "https://image.tmdb.org/t/p/original/mxj3WwlnTLMIhwEzo2Iko92kb8p.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "The Skull Sorcerer",
+          "overview": "Cole must trust his instincts and make the right choices to find his way to the surface and alert King Vangelis of the dangerous Skull Sorcerer.",
+          "plot": null,
+          "airDate": "2020-07-13",
+          "still": "https://image.tmdb.org/t/p/original/jdyXjJelQpQKeyU1pqRN3M4xCGt.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/jdyXjJelQpQKeyU1pqRN3M4xCGt.jpg",
+            "https://image.tmdb.org/t/p/original/klNkSRMX7YUb8zrqXzc6ZKFA72p.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "The Real Fall",
+          "overview": "Princess Vania tries to catch the falling Master Wu and Cole. But with too much weight on her wings, they find themselves plunging into the mountain.",
+          "plot": null,
+          "airDate": "2020-07-14",
+          "still": "https://image.tmdb.org/t/p/original/dGK2PnDusmviGlanqjRS7yKODg2.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dGK2PnDusmviGlanqjRS7yKODg2.jpg",
+            "https://image.tmdb.org/t/p/original/7JAgbDAF0qimn33PuAwKheYogx7.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Dungeon Party!",
+          "overview": "Having survived their fall into the mountain, Cole, Wu and Princess Vania befriend a motley group of survivors called the Lowly.",
+          "plot": null,
+          "airDate": "2020-07-15",
+          "still": "https://image.tmdb.org/t/p/original/czMNU4hM5RgbdtEum94CHItGBcx.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/czMNU4hM5RgbdtEum94CHItGBcx.jpg",
+            "https://image.tmdb.org/t/p/original/wpxzPMZG2ZLkU0ycQdgyMOwceeM.jpg",
+            "https://image.tmdb.org/t/p/original/yKw9MMCAe2blv5foIRm0HA2sBY9.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Dungeon Crawl!",
+          "overview": "Cole leads the Lowly, Princess Vania and Master Wu in a series of fruitless efforts to find a way out of the inescapable Rock-Bottom.",
+          "plot": null,
+          "airDate": "2020-07-16",
+          "still": "https://image.tmdb.org/t/p/original/wpxzPMZG2ZLkU0ycQdgyMOwceeM.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/wpxzPMZG2ZLkU0ycQdgyMOwceeM.jpg",
+            "https://image.tmdb.org/t/p/original/v61qOd5tvgmXj60HG8PuOtEM3V8.jpg"
+          ]
+        },
+        {
+          "episode": 11,
+          "name": "Grief-Bringer",
+          "overview": "Nya and Kai attempt to bring the Munce and Geckles together in an effort to defeat their mutual enemy, the Skull Sorcerer.",
+          "plot": null,
+          "airDate": "2020-07-17",
+          "still": "https://image.tmdb.org/t/p/original/mUJCeiBbUB3WKIKEnVVzggKWYFg.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/mUJCeiBbUB3WKIKEnVVzggKWYFg.jpg",
+            "https://image.tmdb.org/t/p/original/iRZiHQ9Lbzz1SThfbmU4KDucpT9.jpg"
+          ]
+        },
+        {
+          "episode": 12,
+          "name": "Masters Never Quit",
+          "overview": "Pursued by a magma monster, Cole, Princess Vania, Wu & the Lowly arrive at a mysterious temple deep in Shintaro Mountain.",
+          "plot": null,
+          "airDate": "2020-07-20",
+          "still": "https://image.tmdb.org/t/p/original/madAzxM87AD3L2JmnJ4OKx3g5Lh.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/madAzxM87AD3L2JmnJ4OKx3g5Lh.jpg",
+            "https://image.tmdb.org/t/p/original/qxJqqleikUGOmevy3jpJTz3A0j2.jpg",
+            "https://image.tmdb.org/t/p/original/n9Po9rrn3MxmSTsRM8NXGRScELz.jpg"
+          ]
+        },
+        {
+          "episode": 13,
+          "name": "The Darkest Hour",
+          "overview": "The ninjas, the Munce and the Geckles take refuge in the Geckle Strong-Cave after they're all forced to flee by the Grief-Bringer's arrival.",
+          "plot": null,
+          "airDate": "2020-07-21",
+          "still": "https://image.tmdb.org/t/p/original/9So1rCiaQyaqe30bUlnqwfpf6OT.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/9So1rCiaQyaqe30bUlnqwfpf6OT.jpg",
+            "https://image.tmdb.org/t/p/original/jS7xhzcdxOjLuzE40JvnckbNrqR.jpg",
+            "https://image.tmdb.org/t/p/original/qbt7haJMpZFsPTXqrlFeEP8wKSv.jpg"
+          ]
+        },
+        {
+          "episode": 14,
+          "name": "The Ascent",
+          "overview": "Cole, the Lowly, Princess Vania and Wu learn that the stone-mech is powered by Elemental Earth energy and use it to blast their way out of the mountain.",
+          "plot": null,
+          "airDate": "2020-07-22",
+          "still": "https://image.tmdb.org/t/p/original/dJXUhIGGNmuRJqp1UV6Pa7ojizH.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dJXUhIGGNmuRJqp1UV6Pa7ojizH.jpg",
+            "https://image.tmdb.org/t/p/original/tTTMKxSVV3JQPIvUCBEuTOAcZ6.jpg",
+            "https://image.tmdb.org/t/p/original/oTrHTK3TdRWe41B1I0aWatsTv0p.jpg"
+          ]
+        },
+        {
+          "episode": 15,
+          "name": "The Upply Strike Back!",
+          "overview": "Cole and the Upply arrive at the Skull Sorcerer's Keep and find the ninjas locked into cages and the Geckles and Munce back at work in the chain gang.",
+          "plot": null,
+          "airDate": "2020-07-23",
+          "still": "https://image.tmdb.org/t/p/original/lOVJxquhvMKkhT9NCt5p795OWrh.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/lOVJxquhvMKkhT9NCt5p795OWrh.jpg",
+            "https://image.tmdb.org/t/p/original/c2mFxPAxUhwXkTgazQzH6ksDaau.jpg",
+            "https://image.tmdb.org/t/p/original/eO7rDeCsr1Drd9vDrmtUf8ALP8e.jpg"
+          ]
+        },
+        {
+          "episode": 16,
+          "name": "The Son of Lilly",
+          "overview": "As Cole and the Skull Sorcerer face off, the Geckles and Munce storm the Keep. Plundar frees the ninjas from their cages so they can join the battle.",
+          "plot": null,
+          "airDate": "2020-07-24",
+          "still": "https://image.tmdb.org/t/p/original/m0wG6H7skWeEPe7dDNq8FFbudjj.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/m0wG6H7skWeEPe7dDNq8FFbudjj.jpg",
+            "https://image.tmdb.org/t/p/original/wsQUl4Hd2ebXqzLt6J1vlSsGiHi.jpg",
+            "https://image.tmdb.org/t/p/original/p0Qql6Gc4ES6RBZltebzI3sYQ4b.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 14,
+      "name": "The Island",
+      "airDate": "2021-03-07",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Uncharted",
+          "overview": "The ninjas launch a rescue mission after learning that Master Wu, Misako, and Clutch Powers have gone missing on an expedition to an uncharted island.",
+          "plot": null,
+          "airDate": "2021-03-07",
+          "still": "https://image.tmdb.org/t/p/original/drQL4WBWX4SlYGf5izxgM2W6Kzn.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/drQL4WBWX4SlYGf5izxgM2W6Kzn.jpg",
+            "https://image.tmdb.org/t/p/original/gVq2GBj5OERMHWaqR6YRwtI8fUG.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "The Keepers of the Amulet",
+          "overview": "The ninjas search the island, where they find a friendly dragon and power-absorbing stone statues ready to attack!",
+          "plot": null,
+          "airDate": "2021-03-07",
+          "still": "https://image.tmdb.org/t/p/original/A5zl1nM91Df63rWhGEYjh1hkl8S.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/A5zl1nM91Df63rWhGEYjh1hkl8S.jpg",
+            "https://image.tmdb.org/t/p/original/qPIc57WuCiD6TiisD8jMKKQCYtm.jpg",
+            "https://image.tmdb.org/t/p/original/u5abwFgOIez8NoHIW4PChH31Fdt.jpg",
+            "https://image.tmdb.org/t/p/original/233mf4L6hM3aLnSTmAadlKjcx34.jpg",
+            "https://image.tmdb.org/t/p/original/4jvTKdh9RbOv57zG4YJCI6pPLhD.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "The Gift of Jay",
+          "overview": "The leader of the Keepers orders Nya, Kai, Zane, and Cole into a prison. But Jay is brought to a luxurious hut with amazing food!",
+          "plot": null,
+          "airDate": "2021-03-14",
+          "still": "https://image.tmdb.org/t/p/original/24YghX8mSllb89UKdf04f5LAl9J.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/24YghX8mSllb89UKdf04f5LAl9J.jpg",
+            "https://image.tmdb.org/t/p/original/k0cN8WuTTujr1dl3C1Hskxgc6uZ.jpg",
+            "https://image.tmdb.org/t/p/original/gpe9qvLaav0NrXw8x6VeD0spSAB.jpg",
+            "https://image.tmdb.org/t/p/original/j2NB9jt89Xj1p3Rm5V6PMPycqLi.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "The Tooth of Wojira",
+          "overview": "The ninjas try to save their friend after breaking free of their bonds. Jay finds himself in a cavern of treasure, where the real villain is revealed.",
+          "plot": null,
+          "airDate": "2021-03-14",
+          "still": "https://image.tmdb.org/t/p/original/wZtu1ahiztUlPPGIJ9T3Xxw7qRF.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/wZtu1ahiztUlPPGIJ9T3Xxw7qRF.jpg",
+            "https://image.tmdb.org/t/p/original/1Gvb9Va52sWXNTdomwOuObUUoyZ.jpg",
+            "https://image.tmdb.org/t/p/original/yE7B5RfONGZtAJpskvU8H80zYqE.jpg",
+            "https://image.tmdb.org/t/p/original/fu0MnZBGo62b7C90UGDWZiS7PPs.jpg",
+            "https://image.tmdb.org/t/p/original/xV6AnFHwNu6uOkpORmHwuBlFtJU.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 15,
+      "name": "Seabound",
+      "airDate": "2021-04-04",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "A Big Splash",
+          "overview": "The ninjas ambush a new villain named Miss Demeanor. Nya creates a water cyclone to stop her but loses control of it, threatening a nearby village.",
+          "plot": null,
+          "airDate": "2021-04-04",
+          "still": "https://image.tmdb.org/t/p/original/ysCv9rs4sfwHqxbrGoeeYgmUwn2.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ysCv9rs4sfwHqxbrGoeeYgmUwn2.jpg",
+            "https://image.tmdb.org/t/p/original/3NWGRI7NSjmAURlIfls5rkQxsvK.jpg",
+            "https://image.tmdb.org/t/p/original/dt0TGZ6aFXvlioMQfF3mNwba7we.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "The Call of the Deep",
+          "overview": "Maya attempts to take charge of Nya's life to solve her problems. Zane and Pixal respond to a distress call at sea.",
+          "plot": null,
+          "airDate": "2021-04-04",
+          "still": "https://image.tmdb.org/t/p/original/b5hAbjKzKN0jNeV0Rz78HrCQVht.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/b5hAbjKzKN0jNeV0Rz78HrCQVht.jpg",
+            "https://image.tmdb.org/t/p/original/1FMEkKXusaLTqTFyrORFYKBAMWs.jpg",
+            "https://image.tmdb.org/t/p/original/gvtcdjdQ6um63ixiOd951KijPgK.jpg",
+            "https://image.tmdb.org/t/p/original/sRx1gi8VrSyk8xOk0TPbcIX9g2a.jpg",
+            "https://image.tmdb.org/t/p/original/4EOHD4kA74w3lRfNuzWgpo6GXNT.jpg",
+            "https://image.tmdb.org/t/p/original/ktoXOTeWkJ4GRV5AmroeBe5cEbx.jpg",
+            "https://image.tmdb.org/t/p/original/8ag1rCSFGgZmZccCjdLjWEIdrZm.jpg",
+            "https://image.tmdb.org/t/p/original/tuDGUSq0E3Em4BB0tD5XvKHykAC.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Unsinkable",
+          "overview": "Nya, Jay, Zane, Pixal and Lloyd board a new submarine, the Hydro Bounty, and set off to find the source of the energy signal disrupting Nya's powers.",
+          "plot": null,
+          "airDate": "2021-04-11",
+          "still": "https://image.tmdb.org/t/p/original/jlYF37jpzexFGYxgIYcJj6EDMIg.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/jlYF37jpzexFGYxgIYcJj6EDMIg.jpg",
+            "https://image.tmdb.org/t/p/original/e8vpIK7k3VenRqNAPCwu2N71Cbm.jpg",
+            "https://image.tmdb.org/t/p/original/ujUkVIAIybhPlWVlSMWjupw1McY.jpg",
+            "https://image.tmdb.org/t/p/original/aLwSIBVQanZhYd3wgnhg9ozguvP.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Five Thousand Fathoms Down",
+          "overview": "Nya and Maya use underwater suits to travel to an ancient temple after they realize its power source is the only way to get the Hydro Bounty running.",
+          "plot": null,
+          "airDate": "2021-04-11",
+          "still": "https://image.tmdb.org/t/p/original/llh5C2GsM1qcPDtg1dAi0HHfuck.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/llh5C2GsM1qcPDtg1dAi0HHfuck.jpg",
+            "https://image.tmdb.org/t/p/original/1zDduiKovfEja7xArablrFxdMIZ.jpg",
+            "https://image.tmdb.org/t/p/original/wXx9BWjSar9ezYwv9RZFfvW04GV.jpg",
+            "https://image.tmdb.org/t/p/original/om5pHkjzO7U0KcmK4XklkcgUWlt.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "The Wrath of Kalmaar",
+          "overview": "Nya and Maya attempt to get out of a tough predicament. Meanwhile, Jay risks his life while trying to restore power to the Hydro Bounty.",
+          "plot": null,
+          "airDate": "2021-04-18",
+          "still": "https://image.tmdb.org/t/p/original/nhB8BqultXfRWR8I1zvVkZVWxgx.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/nhB8BqultXfRWR8I1zvVkZVWxgx.jpg",
+            "https://image.tmdb.org/t/p/original/gYrrngnPEbVl1J0bWeDIfivmBKr.jpg",
+            "https://image.tmdb.org/t/p/original/u3823xBP4hecMBWFRJPHHfTXefN.jpg",
+            "https://image.tmdb.org/t/p/original/arcdEiXJw7cYYP0toWiK2TlzYgz.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Long Live the King",
+          "overview": "After Nya and Maya's rescue, the ninjas are escorted to Merlopia to face King Trimaar. However, a betrayal turns the ninjas into fugitives.",
+          "plot": null,
+          "airDate": "2021-04-18",
+          "still": "https://image.tmdb.org/t/p/original/ihA1zY8G8U10vrQbXnnhslmXPQE.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ihA1zY8G8U10vrQbXnnhslmXPQE.jpg",
+            "https://image.tmdb.org/t/p/original/rYhAReTaxcLT2IBLDjFhHnwJuU0.jpg",
+            "https://image.tmdb.org/t/p/original/fhMekoCGGnLdKz53KFvck9tB62o.jpg",
+            "https://image.tmdb.org/t/p/original/yem4JrALRGbgetflC1DABvW6igW.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Escape from Merlopia",
+          "overview": "The ninjas survive the palace flooding — but are pursued by ripper sharks. Benthomaar comes to help and leads them to the hangar bay.",
+          "plot": null,
+          "airDate": "2021-04-25",
+          "still": "https://image.tmdb.org/t/p/original/w5NZO7I3buWDGfnvdlVpg7TYu1C.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/w5NZO7I3buWDGfnvdlVpg7TYu1C.jpg",
+            "https://image.tmdb.org/t/p/original/u1g2EtH0rniG0e3bhM7UbGo4Ods.jpg",
+            "https://image.tmdb.org/t/p/original/4NwcRTbdaU7O5nFgQHltEgejmpJ.jpg",
+            "https://image.tmdb.org/t/p/original/bcv1chKcBQPzuBzhS1QwCphvwxF.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "The Tale of Benthomaar",
+          "overview": "A flashback tells the tale of Benthomaar, revealing how King Trimaar finds him as a baby and raises Benthomaar as his own.",
+          "plot": null,
+          "airDate": "2021-04-25",
+          "still": "https://image.tmdb.org/t/p/original/stKR4oiU8XncHGAWVCMSbxIqBih.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/stKR4oiU8XncHGAWVCMSbxIqBih.jpg",
+            "https://image.tmdb.org/t/p/original/ld924UxAV75rHfi8KjCpKKbqBzQ.jpg",
+            "https://image.tmdb.org/t/p/original/fq6c5CpcB7mjNBBTrzqA99HbfKl.jpg",
+            "https://image.tmdb.org/t/p/original/hCJIGMUl7DyzwwgZlGOh1smj5tr.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "The Storm Amulet",
+          "overview": "The ninjas return to the island of the Keepers and ask their leader to keep an amulet safe in Ninjago City — but they make a surprising discovery.",
+          "plot": null,
+          "airDate": "2021-05-02",
+          "still": "https://image.tmdb.org/t/p/original/c2XI1pTC9mSeMYdnqvHaSI1Ew3o.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/c2XI1pTC9mSeMYdnqvHaSI1Ew3o.jpg",
+            "https://image.tmdb.org/t/p/original/xJkt4wiOr3ju2ZAvyNXMbloEPLM.jpg",
+            "https://image.tmdb.org/t/p/original/jNYHijxwOolJYyC7LLHWeFtxoLz.jpg",
+            "https://image.tmdb.org/t/p/original/zEkBOXVITSsgEvMq9hxzxP5r5Y5.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Riddle of the Sphinx",
+          "overview": "Kai, Ray, Cole, Wu, and Misako receive Nya's warning and rush to the Explorer's Club. Benthomaar encourages Nya to use her power in a surprising new way.",
+          "plot": null,
+          "airDate": "2021-05-02",
+          "still": "https://image.tmdb.org/t/p/original/8V6dODwuw0p2m7TWqkz6VPqpOZs.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/8V6dODwuw0p2m7TWqkz6VPqpOZs.jpg",
+            "https://image.tmdb.org/t/p/original/pxC7wnf782WB6rQcqZ8xgrPOC6J.jpg",
+            "https://image.tmdb.org/t/p/original/o2ryha9DPhHGLdeBdFmuwpQb42w.jpg",
+            "https://image.tmdb.org/t/p/original/qyhyV89B62eosuOL3kK3ygxwSMC.jpg"
+          ]
+        },
+        {
+          "episode": 11,
+          "name": "Papergirl",
+          "overview": "As Kalmaar and the ninjas wage a battle in Ninjago City, the storm amulet ends up in the possession of a determined paper girl.",
+          "plot": null,
+          "airDate": "2021-05-09",
+          "still": "https://image.tmdb.org/t/p/original/aJqSljvifUMs1CzUP59o9ZxoCZZ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/aJqSljvifUMs1CzUP59o9ZxoCZZ.jpg",
+            "https://image.tmdb.org/t/p/original/mUIQUGw6Zw28AOrR7YUbUzO6b.jpg",
+            "https://image.tmdb.org/t/p/original/b0ynueOA9Yj4c7DP3hkvGrKbMrw.jpg",
+            "https://image.tmdb.org/t/p/original/fAxIsVXrtsKuPt4rht3nNhLxg7W.jpg",
+            "https://image.tmdb.org/t/p/original/wgQoyStdGogk4vCEntuZyNV5dfh.jpg"
+          ]
+        },
+        {
+          "episode": 12,
+          "name": "Master of the Sea",
+          "overview": "Benthomaar tells Nya the tale of Nyad. Meanwhile, Master Wu, Kai, Cole, Ray, and Misako try to keep Kalmaar from taking off with the storm amulet.",
+          "plot": null,
+          "airDate": "2021-05-09",
+          "still": "https://image.tmdb.org/t/p/original/vLGUF3oSpIAngsGleCPBPg9lWmD.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/vLGUF3oSpIAngsGleCPBPg9lWmD.jpg",
+            "https://image.tmdb.org/t/p/original/kfM5R8mVcVTNq0WnrAFcrZVHQu5.jpg",
+            "https://image.tmdb.org/t/p/original/wQrTetJlz3hDOjGyKpkl709652s.jpg",
+            "https://image.tmdb.org/t/p/original/erlcBZQKGkuCRG1Vwh6mINbUzNA.jpg",
+            "https://image.tmdb.org/t/p/original/oC87iLXbkMO3fCKxZXfXlxOSvVR.jpg"
+          ]
+        },
+        {
+          "episode": 13,
+          "name": "The Calm Before the Storm",
+          "overview": "The doomsday serpent, Wojira, rises from the sea. In Ninjago City, Glutinous emerges from the water with a dire warning.",
+          "plot": null,
+          "airDate": "2021-05-16",
+          "still": "https://image.tmdb.org/t/p/original/8DTwc06vhKPDkrHEEulhzjBEFeV.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/8DTwc06vhKPDkrHEEulhzjBEFeV.jpg",
+            "https://image.tmdb.org/t/p/original/opojOD1QgXLlaPpBaRIvcCkYLSQ.jpg",
+            "https://image.tmdb.org/t/p/original/aKvd8blFhykmXHm0gxwDxy0G4cc.jpg",
+            "https://image.tmdb.org/t/p/original/iOC040f3B0tyI6pT0eZDz8W4xvE.jpg",
+            "https://image.tmdb.org/t/p/original/dom3cpKAR8X3RdOGTjXUjHsHvLr.jpg"
+          ]
+        },
+        {
+          "episode": 14,
+          "name": "Assault on Ninjago City",
+          "overview": "The ninjas leap into action after Kalmaar and Wojira arrive in Ninjago City, bringing a tsunami that floods the entire city.",
+          "plot": null,
+          "airDate": "2021-05-16",
+          "still": "https://image.tmdb.org/t/p/original/tjSRKVnYuWI88Jmh5VBpgM50CD2.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/tjSRKVnYuWI88Jmh5VBpgM50CD2.jpg",
+            "https://image.tmdb.org/t/p/original/tGDEmxmUJb4zQCSP5zNezscFsqh.jpg",
+            "https://image.tmdb.org/t/p/original/89uOJYEthQ13elFXGRxHdVrXnAc.jpg",
+            "https://image.tmdb.org/t/p/original/7x7iWy9hchXG5eAzx2ad27E9CGm.jpg",
+            "https://image.tmdb.org/t/p/original/uj3oYqph1DGDRntf7MVef4GzfY3.jpg"
+          ]
+        },
+        {
+          "episode": 15,
+          "name": "Nyad",
+          "overview": "Overpowered by Wojira, the ninjas retreat to the NGTV building to regroup. Nya might make a decision that she may never be able to come back from.",
+          "plot": null,
+          "airDate": "2021-05-23",
+          "still": "https://image.tmdb.org/t/p/original/c8GRAQWWxn8fxGTsiP3csgfhs9L.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/c8GRAQWWxn8fxGTsiP3csgfhs9L.jpg",
+            "https://image.tmdb.org/t/p/original/fGSjiqGxFbkwUsv7WzMLNqxmufD.jpg",
+            "https://image.tmdb.org/t/p/original/zoiI0RYxqpxbuwfq7W7UVVvPJbr.jpg",
+            "https://image.tmdb.org/t/p/original/n8H9OeaNhCCk18yy3mOlCRNxEKu.jpg",
+            "https://image.tmdb.org/t/p/original/tvk3Do6HW47ufw9QmDpcYaKZwJa.jpg"
+          ]
+        },
+        {
+          "episode": 16,
+          "name": "The Turn of the Tide",
+          "overview": "Kalmaar's temper proves too much for Wojira to handle during battle while the ninjas try to help Nya fulfill her destiny.",
+          "plot": null,
+          "airDate": "2021-05-23",
+          "still": "https://image.tmdb.org/t/p/original/h0kzGYgOOgt3OtPRAF9xeOPsYjB.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/h0kzGYgOOgt3OtPRAF9xeOPsYjB.jpg",
+            "https://image.tmdb.org/t/p/original/jyjtFrUE0DELfTPo6VKdvAc7FCu.jpg",
+            "https://image.tmdb.org/t/p/original/hOAVCdcrlrdOqJPTaNyL2gqolpQ.jpg",
+            "https://image.tmdb.org/t/p/original/gZ1InjYeRR2CPYWh2Prkbh76T86.jpg"
+          ]
+        },
+        {
+          "episode": 17,
+          "name": "Episode 17",
+          "overview": "This episode does not exist.",
+          "plot": null,
+          "airDate": null,
+          "still": null,
+          "stills": []
+        }
+      ]
+    },
+    {
+      "season": 16,
+      "name": "Crystalized",
+      "airDate": "2022-05-20",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Farewell The Sea",
+          "overview": "A group calling themselves the \"New Ninja\" tries to stop a vengestone smuggling mission while the ninjas attempt to deal with Nya's disappearance.",
+          "plot": null,
+          "airDate": "2022-05-20",
+          "still": "https://image.tmdb.org/t/p/original/bVMaFvUDyLZ3EIbGidyomsHHrbr.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/bVMaFvUDyLZ3EIbGidyomsHHrbr.jpg",
+            "https://image.tmdb.org/t/p/original/wEkkuODuQ5v8pP2SGOZ10qJRvqo.jpg",
+            "https://image.tmdb.org/t/p/original/dvAbdOOn8AW0OSrz9FwB44Gz6lR.jpg",
+            "https://image.tmdb.org/t/p/original/yNOw1X4TF7g1LXVbkTM3ss1C3eU.jpg",
+            "https://image.tmdb.org/t/p/original/br70bHy4J32PzaZT5pEOCdWl94M.jpg",
+            "https://image.tmdb.org/t/p/original/8eRXNiOCCCquCflmtz9rpxlgaR9.jpg",
+            "https://image.tmdb.org/t/p/original/kJNi5opgB7fviIq5DUnzdyiaub5.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "The Call of Home",
+          "overview": "On a ship out at sea, a sailor falls into the water during a perilous storm. To the crew's surprise, he's quickly placed back on board.",
+          "plot": null,
+          "airDate": "2022-05-20",
+          "still": "https://image.tmdb.org/t/p/original/kn3qX0cefcJpenx63G4G4nppCG4.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/kn3qX0cefcJpenx63G4G4nppCG4.jpg",
+            "https://image.tmdb.org/t/p/original/rBeJgkrFVe5rOgveKR12DmV5Sml.jpg",
+            "https://image.tmdb.org/t/p/original/2g6E7QecKiKX2Ki0mjB520SmRfj.jpg",
+            "https://image.tmdb.org/t/p/original/pIg5qXu4JCLt9sWBiFqkkBjv5i5.jpg",
+            "https://image.tmdb.org/t/p/original/13b0ruOgfQBgjDmOmthhWXthDIO.jpg",
+            "https://image.tmdb.org/t/p/original/pbzkvz2QariFsXtS4nAo46H84rO.jpg",
+            "https://image.tmdb.org/t/p/original/sFSweTok96ysz3QWrORwy2jnt59.jpg",
+            "https://image.tmdb.org/t/p/original/cZ0eFMPLpLsl8mY5Ue23NNobIVy.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "The Shape of Nya",
+          "overview": "The ninjas' investigation into the vengestone smuggling mission leads them to an abandoned subway line — where they run into the New Ninja.",
+          "plot": null,
+          "airDate": "2022-05-20",
+          "still": "https://image.tmdb.org/t/p/original/5GIF36i2XzSellB8DS1y2MWlpK8.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/5GIF36i2XzSellB8DS1y2MWlpK8.jpg",
+            "https://image.tmdb.org/t/p/original/k05FXf0T6tDtsevMwF7aHFN9jpu.jpg",
+            "https://image.tmdb.org/t/p/original/HQFR5yjZczJy9HKuV75KYkE1W2.jpg",
+            "https://image.tmdb.org/t/p/original/lSqCFH8aHhP9NOQioN7jjurTrIC.jpg",
+            "https://image.tmdb.org/t/p/original/iudmSyhVzCVAQ0H3IqC6qs6bQXm.jpg",
+            "https://image.tmdb.org/t/p/original/8LVxd371HkA48vs0FMhTTF8Wzf4.jpg",
+            "https://image.tmdb.org/t/p/original/6yJBV67SpXl576U9sjcouHJQO9p.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "A Mayor Problem",
+          "overview": "The ninjas visit the mayor with an unusual appeal: to request the release of one of their worst enemies from Kryptarium Prison!",
+          "plot": null,
+          "airDate": "2022-05-20",
+          "still": "https://image.tmdb.org/t/p/original/6IrvZwTqd78FWkopJCtOLMF4XjV.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/6IrvZwTqd78FWkopJCtOLMF4XjV.jpg",
+            "https://image.tmdb.org/t/p/original/dT7D3aBWanCYFknUfiDIctFF8n9.jpg",
+            "https://image.tmdb.org/t/p/original/zqmhNUF6bJZhT2DY9kk3HqhtznR.jpg",
+            "https://image.tmdb.org/t/p/original/eUGraGRSaUwRdUg41VSHC8kqfn6.jpg",
+            "https://image.tmdb.org/t/p/original/2SFDYo5Bsiw8oUxn4HImWXbvS3o.jpg",
+            "https://image.tmdb.org/t/p/original/p8tHbbGS8mBeFZ6FbxdkwfINbbn.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Public Enemies 1, 2, 3, 4 and 5!",
+          "overview": "In a strange twist of fate, the ninjas successfully break Aspheera out of prison. But to save Nya, they'll also need to steal back Aspheera's staff.",
+          "plot": null,
+          "airDate": "2022-05-20",
+          "still": "https://image.tmdb.org/t/p/original/tx8QObXfylAJw9dGW1VPe93ZaE5.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/tx8QObXfylAJw9dGW1VPe93ZaE5.jpg",
+            "https://image.tmdb.org/t/p/original/2sgItfprjE02h6pSkQLT7MOk95T.jpg",
+            "https://image.tmdb.org/t/p/original/jQxrm06C469EM21W4oHheO0BrPA.jpg",
+            "https://image.tmdb.org/t/p/original/qG0FjVnrKz8e6jwGjCfrRH50yfG.jpg",
+            "https://image.tmdb.org/t/p/original/fWIw8G1JMUhqAHS11OxdeYScYDr.jpg",
+            "https://image.tmdb.org/t/p/original/gI7E16qTMlELVZRaNeImBCkZogJ.jpg",
+            "https://image.tmdb.org/t/p/original/uIZQsNSM0GR5Cy6wfuVFp3e2FFZ.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "A Painful Promise",
+          "overview": "As they wait in the monastery for the ninjas to return, Aspheera and Master Wu compete in a series of tests of strength and cunning.",
+          "plot": null,
+          "airDate": "2022-05-20",
+          "still": "https://image.tmdb.org/t/p/original/yTqT70ZZnGyey07bHNHQ5EfiLES.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/yTqT70ZZnGyey07bHNHQ5EfiLES.jpg",
+            "https://image.tmdb.org/t/p/original/hPMVslFKABHerxsWUWYdwzFy7Nj.jpg",
+            "https://image.tmdb.org/t/p/original/5xpEyGRTyjQp1Abp7gbXXouE2P7.jpg",
+            "https://image.tmdb.org/t/p/original/u3mNsHLEPjdRG4svm4S0nV8gEWE.jpg",
+            "https://image.tmdb.org/t/p/original/qyJq2gi3LCZATb6w5Or03xeNwAm.jpg",
+            "https://image.tmdb.org/t/p/original/g6LljMkvNMj1lBcTr8bexpmjmSa.jpg",
+            "https://image.tmdb.org/t/p/original/5KcdMzkF5RLgFtdT4fuBEOaiRGy.jpg",
+            "https://image.tmdb.org/t/p/original/dPXLqhkW4Za7vHB6O736EB8tjXn.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Ninjago City vs Ninja",
+          "overview": "After freeing Aspheera to save Nya, the ninjas land up in Kryptarium Prison, where they are surrounded by their old enemies.",
+          "plot": null,
+          "airDate": "2022-05-20",
+          "still": "https://image.tmdb.org/t/p/original/q4rN2doj4bOBuz3Ixy1iRBQQUAa.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/q4rN2doj4bOBuz3Ixy1iRBQQUAa.jpg",
+            "https://image.tmdb.org/t/p/original/j6eOVlqBSOCwCEGv4txAEwzZ5dq.jpg",
+            "https://image.tmdb.org/t/p/original/gT9bkwSW6ZAQ7BT4yxzUfY5QYuw.jpg",
+            "https://image.tmdb.org/t/p/original/lma3NQ5EDbOmgaJEMHxpjYb8oD3.jpg",
+            "https://image.tmdb.org/t/p/original/8TB99GUvMwboKvMg5Y1kVdqFFUV.jpg",
+            "https://image.tmdb.org/t/p/original/1oaowOlJEsf0Z6rmhAA6AARWNzk.jpg",
+            "https://image.tmdb.org/t/p/original/lbgUtV3saz47FzWuaXLUgZLuGlV.jpg",
+            "https://image.tmdb.org/t/p/original/7ezIe3L2tvjOy8pyBygrWjOJrTr.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Kryptarium Prison Blues",
+          "overview": "Crystal spiders continue to recruit villains to join the council of the mysterious Crystal King. Nya is reminded of her days as Samurai X.",
+          "plot": null,
+          "airDate": "2022-05-20",
+          "still": "https://image.tmdb.org/t/p/original/weLZhaNjM3fO352Ay6ZI1ug8ipX.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/weLZhaNjM3fO352Ay6ZI1ug8ipX.jpg",
+            "https://image.tmdb.org/t/p/original/7Xh7tzVrM4Ep3FVOAj805E2agzc.jpg",
+            "https://image.tmdb.org/t/p/original/5dcvtcLVfIDl6tOZDen1AkcF40Y.jpg",
+            "https://image.tmdb.org/t/p/original/8Tb31FVkb0KGhlOZtuLyyJEexbp.jpg",
+            "https://image.tmdb.org/t/p/original/6vNnXsp5jafUFqb0MADqv2TksLV.jpg",
+            "https://image.tmdb.org/t/p/original/57Z22waurt3EfTNMjsukBHv3iFQ.jpg",
+            "https://image.tmdb.org/t/p/original/w8kDjh9OeH6NO3wXRBadewKjsYi.jpg",
+            "https://image.tmdb.org/t/p/original/PIkYtR22FcIFYmh3s79yRqivtq.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Hounddog McBrag",
+          "overview": "While the ninjas are tasked with prison labor in the desert, Nya and Dareth intercept the bus and help them escape.",
+          "plot": null,
+          "airDate": "2022-05-20",
+          "still": "https://image.tmdb.org/t/p/original/5qeA7cbTiEtL3wr3gG81YV2yQWC.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/5qeA7cbTiEtL3wr3gG81YV2yQWC.jpg",
+            "https://image.tmdb.org/t/p/original/yZjnpTC8E5UoGyfhs2FZuy8luCX.jpg",
+            "https://image.tmdb.org/t/p/original/gWk29L28yznBUpyZkmGRf7iWP12.jpg",
+            "https://image.tmdb.org/t/p/original/8LtRH5Rg9WLWSdxWOptNziA9LMt.jpg",
+            "https://image.tmdb.org/t/p/original/25HpZo6IAwFV3k8nQVPl5FxsLaD.jpg",
+            "https://image.tmdb.org/t/p/original/1ab0aED96RdzHD4YsirLhNlfXDg.jpg",
+            "https://image.tmdb.org/t/p/original/1pIMaQ3SruM0YwT4DY4MNLAqbK.jpg",
+            "https://image.tmdb.org/t/p/original/4KzPSL4yFDrIbuPng3lUsTpcRKf.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "The Benefit of Grief",
+          "overview": "After splitting up with the others, Zane, Kai and Dareth make their way through the desert and catch a ride with a girl who ran away from home.",
+          "plot": null,
+          "airDate": "2022-05-20",
+          "still": "https://image.tmdb.org/t/p/original/bqX9KIf16kI6rq4GCHpu4xU8Xh8.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/bqX9KIf16kI6rq4GCHpu4xU8Xh8.jpg",
+            "https://image.tmdb.org/t/p/original/4SrJq1dQr12rbgpLYyJHw4KmBm9.jpg",
+            "https://image.tmdb.org/t/p/original/fE3lEKD792ISTOVbdAoXP6bA59i.jpg",
+            "https://image.tmdb.org/t/p/original/otVjBF3ciO9LcrhUtXnzBt97VG0.jpg",
+            "https://image.tmdb.org/t/p/original/4H21V124rmHl0CMX7hrxXl6TqXx.jpg",
+            "https://image.tmdb.org/t/p/original/fdZfAAsF866f5BDdSM5OYVXVsqT.jpg",
+            "https://image.tmdb.org/t/p/original/93EuxVUjFTVns58ztTwIoKjLkRb.jpg",
+            "https://image.tmdb.org/t/p/original/iR4RDNHDd2Z8mwl6qPUBOKfkpLH.jpg"
+          ]
+        },
+        {
+          "episode": 11,
+          "name": "The Fifth Villain",
+          "overview": "The ninjas reunite at Twitchy's and try to figure out which villains have already joined the Crystal King's council — and who will be next.",
+          "plot": null,
+          "airDate": "2022-05-20",
+          "still": "https://image.tmdb.org/t/p/original/9luV4OfArsgPR5ka4C4ZvQk6nQB.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/9luV4OfArsgPR5ka4C4ZvQk6nQB.jpg",
+            "https://image.tmdb.org/t/p/original/x53mUe0qCAVVGjuv09u9y6VygmE.jpg",
+            "https://image.tmdb.org/t/p/original/fD6GPTxokPp6GVLf9lyR8lR4fEb.jpg",
+            "https://image.tmdb.org/t/p/original/p030NbDdlGrz6LmpAGKMruUWoK3.jpg",
+            "https://image.tmdb.org/t/p/original/6j4S4khe3ZAyA94Gs52HHlNcrjJ.jpg",
+            "https://image.tmdb.org/t/p/original/tmpVJOJcOHwOIJhWhDry2dtdYcT.jpg",
+            "https://image.tmdb.org/t/p/original/2tC3JfccSXJcSpL7v63ozMUGEjq.jpg",
+            "https://image.tmdb.org/t/p/original/zuSqONG5N9ck3fJGAvsuucR0ylV.jpg"
+          ]
+        },
+        {
+          "episode": 12,
+          "name": "The Council of the Crystal King",
+          "overview": "The ninjas try to track an undercover Lloyd as a crystal spider leads him under Ninjago City — and straight to the council of the Crystal King.",
+          "plot": null,
+          "airDate": "2022-05-20",
+          "still": "https://image.tmdb.org/t/p/original/iezmqExGBw0izL0fX2NJVbHorUB.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/iezmqExGBw0izL0fX2NJVbHorUB.jpg",
+            "https://image.tmdb.org/t/p/original/58QBVHvCYisrSIHQ0RjbXTXLfSL.jpg",
+            "https://image.tmdb.org/t/p/original/trJEN3kylUdwjKbyRUDFhpEQK62.jpg",
+            "https://image.tmdb.org/t/p/original/fnUw8wAe4SlD3H4ZC72yn2Nm50f.jpg",
+            "https://image.tmdb.org/t/p/original/bqGvyOLYWVYDaRtjq4F17HS8KfG.jpg",
+            "https://image.tmdb.org/t/p/original/jHthI4BcvGqDbmslRlC2asJWZpu.jpg",
+            "https://image.tmdb.org/t/p/original/8Ofshka60qigsAUJVvcajSzyDyv.jpg",
+            "https://image.tmdb.org/t/p/original/zUhuvUQlpSJeiuuQEWTesLQRAsX.jpg"
+          ]
+        },
+        {
+          "episode": 13,
+          "name": "A Sinister Shadow",
+          "overview": "Harumi tells the story of how she went from the princess of Ninjago to the leader of the council of villains.",
+          "plot": null,
+          "airDate": "2022-10-01",
+          "still": "https://image.tmdb.org/t/p/original/xvEw6sVxYy1YvRl3nMkYiOZguu0.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xvEw6sVxYy1YvRl3nMkYiOZguu0.jpg",
+            "https://image.tmdb.org/t/p/original/ggUCaduU0YXCN2FvEgU5JTAvM3l.jpg",
+            "https://image.tmdb.org/t/p/original/3wyL9PsMg6YaybZGhQojiE1adcI.jpg",
+            "https://image.tmdb.org/t/p/original/d0z5tnmdcrHtIhbTLCS8bJxBSxw.jpg",
+            "https://image.tmdb.org/t/p/original/qYVw5JXuv0DXgnopuNs9XQgheSL.jpg",
+            "https://image.tmdb.org/t/p/original/2vSqwhQeJUiHeZ8xlfnt1SBZODZ.jpg",
+            "https://image.tmdb.org/t/p/original/6siZYRi5wQzeRVy4vdqsgdOKB4Y.jpg",
+            "https://image.tmdb.org/t/p/original/6cccmvHm9lJNtudut37FwDfRiF5.jpg",
+            "https://image.tmdb.org/t/p/original/24U5lRrtd7N5FM6cKzkZBEu6kGR.jpg",
+            "https://image.tmdb.org/t/p/original/lRMA1TEaTFgTvLtHjmNRZotI8Ze.jpg"
+          ]
+        },
+        {
+          "episode": 14,
+          "name": "The Spider's Design",
+          "overview": "Federal Marshal Hounddog McBrag knocks on Master Wu's door. Beneath Ninjago City, the ninjas search for Lloyd — who tries to reason with his captor.",
+          "plot": null,
+          "airDate": "2022-10-01",
+          "still": "https://image.tmdb.org/t/p/original/aoQh6F4wx9LSYuYIPr4sIPwLFUF.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/aoQh6F4wx9LSYuYIPr4sIPwLFUF.jpg",
+            "https://image.tmdb.org/t/p/original/mkpo1uzaz5ZGATIrcaowSMMiCit.jpg",
+            "https://image.tmdb.org/t/p/original/hpHKplTwvTUV8ytz3svLG1wRj1P.jpg",
+            "https://image.tmdb.org/t/p/original/6eNoz08B9C3ngwUpIb1ihyePSBl.jpg",
+            "https://image.tmdb.org/t/p/original/7vhV9Ta3KsXEF7TJoBn87JqdeuU.jpg",
+            "https://image.tmdb.org/t/p/original/wIYB8IzH6lFiamdlXY7CHdaPgeZ.jpg",
+            "https://image.tmdb.org/t/p/original/xcoNGcB7GrsUe9kbym885kwQyHe.jpg",
+            "https://image.tmdb.org/t/p/original/5mwhic862lSPNZH5O93PLebWmf.jpg",
+            "https://image.tmdb.org/t/p/original/wPfIwnTEpujoByt78K3vefXzdmp.jpg"
+          ]
+        },
+        {
+          "episode": 15,
+          "name": "The Fall of the Monastery",
+          "overview": "The ninjas are trapped in an old subway car in a collapsed underground tunnel. Master Wu and gang defend the Weapons of Spinjitzu.",
+          "plot": null,
+          "airDate": "2022-10-01",
+          "still": "https://image.tmdb.org/t/p/original/2IxbzNoB33Cqkw0xwklfVdKHX02.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/2IxbzNoB33Cqkw0xwklfVdKHX02.jpg",
+            "https://image.tmdb.org/t/p/original/gApihsLe23jzBSyXH3Y3dkXW9RJ.jpg",
+            "https://image.tmdb.org/t/p/original/dpCrVGVx7AOySCLQOAEeN3UKbnh.jpg",
+            "https://image.tmdb.org/t/p/original/ayPOEELyWPIRg2XMQAR3ClRj2L3.jpg",
+            "https://image.tmdb.org/t/p/original/dmMzWSX3Ukeo6Tl10WqvvkH2PgP.jpg",
+            "https://image.tmdb.org/t/p/original/6fILdb4f0sJ01cakyCJt1nOsyQb.jpg",
+            "https://image.tmdb.org/t/p/original/qH4sgi9m8y6vgXtiKRzQy56gsFk.jpg",
+            "https://image.tmdb.org/t/p/original/vGYKMJwn3T4jHcOouAJbCdnojyD.jpg",
+            "https://image.tmdb.org/t/p/original/9n4KpjUqFF7ClRBkB7soeIUfmF1.jpg"
+          ]
+        },
+        {
+          "episode": 16,
+          "name": "Darkness Within",
+          "overview": "As Lloyd awakens to terrible news from Harumi, the ninjas wait underground for Nya and the gang to rescue them. But will help arrive in time?",
+          "plot": null,
+          "airDate": "2022-10-01",
+          "still": "https://image.tmdb.org/t/p/original/h0JkEiQDHYetG0HzExxz6JJaEpN.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/h0JkEiQDHYetG0HzExxz6JJaEpN.jpg",
+            "https://image.tmdb.org/t/p/original/BlI1w05chib4zzXnFtpD4UiOCn.jpg",
+            "https://image.tmdb.org/t/p/original/c4HU5fn9WiIHk6RmJCRjMtDERgx.jpg",
+            "https://image.tmdb.org/t/p/original/aZAb2aXaR6oHPcnMIjpC1n6oYLA.jpg",
+            "https://image.tmdb.org/t/p/original/qvH64R4sbeiyNmvucxdFa3NhsFv.jpg",
+            "https://image.tmdb.org/t/p/original/maHxxuHX6zOedY4hG5sf3cBq9bD.jpg",
+            "https://image.tmdb.org/t/p/original/fhUXLmvY8Yc3bf5TqlPNsk1dDJm.jpg",
+            "https://image.tmdb.org/t/p/original/iaGfGCfgOMi84krL6XD1TZ8JkPk.jpg",
+            "https://image.tmdb.org/t/p/original/dQGeoAUbjv89QsZ7QHBIh9ijjVZ.jpg"
+          ]
+        },
+        {
+          "episode": 17,
+          "name": "The Coming of the King",
+          "overview": "The council of villains resurrects a powerful old foe. Lloyd watches in horror — and later, makes a daring escape attempt.",
+          "plot": null,
+          "airDate": "2022-10-01",
+          "still": "https://image.tmdb.org/t/p/original/kFG8UL8y4WBWUdMNbC6607jxuMS.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/kFG8UL8y4WBWUdMNbC6607jxuMS.jpg",
+            "https://image.tmdb.org/t/p/original/ggbkJxH3tOyIo6IL5ySB8TcrhWx.jpg",
+            "https://image.tmdb.org/t/p/original/a1t6DndHgGJ9qJXPpjF4xex6sZa.jpg",
+            "https://image.tmdb.org/t/p/original/yNxSIBoBG0ZaP6BAXkWlSx3MuXI.jpg",
+            "https://image.tmdb.org/t/p/original/3Ro6OH1FMetHQFDwxrFuHnUQ1Aq.jpg",
+            "https://image.tmdb.org/t/p/original/fWs0MY77fgAntZJivPUCDy5ttRE.jpg",
+            "https://image.tmdb.org/t/p/original/kxcJRRxVQQHUUJkFG3SiAy1ugdw.jpg",
+            "https://image.tmdb.org/t/p/original/itUAKRINNy9P06LVYa4hEfwUDsB.jpg"
+          ]
+        },
+        {
+          "episode": 18,
+          "name": "Return to Primeval's Eye",
+          "overview": "Master Wu and the ninjas plot a heist at the police impound lot to take back the Bounty. In Primeval's Eye, Lloyd and Harumi traverse the jungle.",
+          "plot": null,
+          "airDate": "2022-10-01",
+          "still": "https://image.tmdb.org/t/p/original/wMrHviYdPbsXI6nYfu1RWdywxJp.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/wMrHviYdPbsXI6nYfu1RWdywxJp.jpg",
+            "https://image.tmdb.org/t/p/original/dVT65uMBoc6zEGx2EX4QN9KQ0I1.jpg",
+            "https://image.tmdb.org/t/p/original/34PsyxklYKRptzUk4cmkFZkltk6.jpg",
+            "https://image.tmdb.org/t/p/original/zPtsa55TuioeRp784X4s5044MjI.jpg",
+            "https://image.tmdb.org/t/p/original/ubZiVt6N0kA5rUQGxn0YgbFAb99.jpg",
+            "https://image.tmdb.org/t/p/original/lsNPnsffurwIT2XOjqJCfs6K4gv.jpg",
+            "https://image.tmdb.org/t/p/original/oFBc5rdCRLvEzrnCq2ZxvTrT4El.jpg",
+            "https://image.tmdb.org/t/p/original/6UfL0PxDBSm7P2wQQmS38EyflyN.jpg"
+          ]
+        },
+        {
+          "episode": 19,
+          "name": "Crystastrophe",
+          "overview": "The Overlord realizes that an attempt to destroy the ninjas could unleash their powers and thinks of a new plan. Lloyd and Master Wu chase a lead.",
+          "plot": null,
+          "airDate": "2022-10-01",
+          "still": "https://image.tmdb.org/t/p/original/pOo1wu8VoLLTjNeBiLLg9ySxlbV.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/pOo1wu8VoLLTjNeBiLLg9ySxlbV.jpg",
+            "https://image.tmdb.org/t/p/original/8FM7Y1Bx3DelSpqvR6GzpICCcMU.jpg",
+            "https://image.tmdb.org/t/p/original/kJAItahcTCex9Gsid4YKeJSspp.jpg",
+            "https://image.tmdb.org/t/p/original/nzLu9hwvbSFihw7Rb4wgFkwQeJA.jpg",
+            "https://image.tmdb.org/t/p/original/eyXnSGnQXhzhUAfPvHp0avQQ2Xv.jpg",
+            "https://image.tmdb.org/t/p/original/rMgz9fxIj8hveUgQOufo80VV7pg.jpg",
+            "https://image.tmdb.org/t/p/original/sMPxeAPB54K3auPgfuh6EoaQG55.jpg",
+            "https://image.tmdb.org/t/p/original/dVT65uMBoc6zEGx2EX4QN9KQ0I1.jpg",
+            "https://image.tmdb.org/t/p/original/x1kBT5sqY8VsmkW8xyAQN0I39ME.jpg",
+            "https://image.tmdb.org/t/p/original/j29pyxPGNQZy6ojElnvdvhELm5d.jpg"
+          ]
+        },
+        {
+          "episode": 20,
+          "name": "Christofern",
+          "overview": "At the home of Vinny of NGTV News, Lloyd and Master Wu discover a most unexpected houseguest and listen to his curious tale.",
+          "plot": null,
+          "airDate": "2022-10-01",
+          "still": "https://image.tmdb.org/t/p/original/dE9RsaZIFISvXzEdbWNbFrCbBjG.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dE9RsaZIFISvXzEdbWNbFrCbBjG.jpg",
+            "https://image.tmdb.org/t/p/original/kSF8yFsowZO8HAQWbYSv4xo4SZ3.jpg",
+            "https://image.tmdb.org/t/p/original/acPJB8B5CZb1Em59TBPqVc1s2Z8.jpg",
+            "https://image.tmdb.org/t/p/original/iJCC9Eoyg5wr4i5qsiVapaqhxtz.jpg",
+            "https://image.tmdb.org/t/p/original/aqFglDnmj6gSVta8uv7U0Wj5Lg6.jpg",
+            "https://image.tmdb.org/t/p/original/upIXcD5Eusz1Zw500Vul3XDsDyS.jpg",
+            "https://image.tmdb.org/t/p/original/wwSjqDGyDIku4GBLMldR2hTfsEq.jpg",
+            "https://image.tmdb.org/t/p/original/c5DQvIsrRf70qmRzE97eNlIojMr.jpg"
+          ]
+        },
+        {
+          "episode": 21,
+          "name": "A Lesson in Anger",
+          "overview": "As the ninjas battle the seemingly invincible Vengestone army, Master Wu and Lloyd outline a possible path to victory.",
+          "plot": null,
+          "airDate": "2022-10-01",
+          "still": "https://image.tmdb.org/t/p/original/w0SyAvCNxRKhSCCGih8sYRyVEc7.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/w0SyAvCNxRKhSCCGih8sYRyVEc7.jpg",
+            "https://image.tmdb.org/t/p/original/kateI1Za6RHHBb5AzMjZMDzS1XA.jpg",
+            "https://image.tmdb.org/t/p/original/tq7mA8HYhc9IXN4vrv9vIQl6SVw.jpg",
+            "https://image.tmdb.org/t/p/original/qAvze40ncDDxMUMZuG0Uc8zzVat.jpg",
+            "https://image.tmdb.org/t/p/original/gWvFzwgjCZ74utw9rHL1i2ufmuD.jpg",
+            "https://image.tmdb.org/t/p/original/3RZedVP2Nz2ktptBZpXaprJLwYU.jpg",
+            "https://image.tmdb.org/t/p/original/qTFWfjqso9yHuAyIkspa7qvsF7E.jpg",
+            "https://image.tmdb.org/t/p/original/5WzUYuFMFhb61t3xuQFlHStafi0.jpg"
+          ]
+        },
+        {
+          "episode": 22,
+          "name": "Brave But Foolish",
+          "overview": "Pixal makes some modifications to the ninjas' vehicles, and they head out into battle. But the Overlord has been holding back.",
+          "plot": null,
+          "airDate": "2022-10-01",
+          "still": "https://image.tmdb.org/t/p/original/6H9cXxyCdd0ulLoNcLrPimU5lJM.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/6H9cXxyCdd0ulLoNcLrPimU5lJM.jpg",
+            "https://image.tmdb.org/t/p/original/bLZ9SwjYLqQSXcieWe5mrJH7jnw.jpg",
+            "https://image.tmdb.org/t/p/original/byuZr2PjOx0dSuuXhCazNPxazBs.jpg",
+            "https://image.tmdb.org/t/p/original/i0BM63wXd7fDVAFug0JxeMqEXcS.jpg",
+            "https://image.tmdb.org/t/p/original/xbriV8vNqc9dEbGZyi9EawOp7BC.jpg",
+            "https://image.tmdb.org/t/p/original/A4uLylRrVWMUvpsvMxY7k0rq7qy.jpg",
+            "https://image.tmdb.org/t/p/original/7Ysn3oKrR020jSdMzHXXGdi4B29.jpg",
+            "https://image.tmdb.org/t/p/original/fEdtkEVEU5wCa0WOFHdWENCV2bJ.jpg"
+          ]
+        },
+        {
+          "episode": 23,
+          "name": "Quittin' Time!",
+          "overview": "As the battle against the Crystal King rages on, Nya is trapped beneath the rubble. The Paperkids spring into action to defend Ninjago City.",
+          "plot": null,
+          "airDate": "2022-10-01",
+          "still": "https://image.tmdb.org/t/p/original/80lcb1CHihkOIry09C67HQJrAKH.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/80lcb1CHihkOIry09C67HQJrAKH.jpg",
+            "https://image.tmdb.org/t/p/original/6NQpCPYe5DdgvOpRh4GImCxNGkU.jpg",
+            "https://image.tmdb.org/t/p/original/1PCdW4eI7c6VRrzlH5YX1u9yJpP.jpg",
+            "https://image.tmdb.org/t/p/original/40yrBrEuNfJZW6PKTb4zcNnohoI.jpg",
+            "https://image.tmdb.org/t/p/original/3OXtmeUMLqgk99YMmcnHcVHMX4t.jpg",
+            "https://image.tmdb.org/t/p/original/rq1Fq9moq7KtsdzLTC3Vy0BENcE.jpg",
+            "https://image.tmdb.org/t/p/original/9ZcDIL4t3lYOYF4LZnN1fvHR1lI.jpg"
+          ]
+        },
+        {
+          "episode": 24,
+          "name": "Return of the Ice Emperor",
+          "overview": "Lloyd saves Hounddog McBrag, Master Wu learns of an ancient prophecy and Pixal and a damaged Zane run into convicts who escaped from Kryptarium Prison.",
+          "plot": null,
+          "airDate": "2022-10-01",
+          "still": "https://image.tmdb.org/t/p/original/3i08XdukQxv8KPjNugWIWcjdYVe.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/3i08XdukQxv8KPjNugWIWcjdYVe.jpg",
+            "https://image.tmdb.org/t/p/original/4mPtloHHQ6u81y9GlmyznkylwSH.jpg",
+            "https://image.tmdb.org/t/p/original/zyGppluBmoXcx9Jc9f1pnI76BLi.jpg",
+            "https://image.tmdb.org/t/p/original/czmZnQlzYfKmzSuQvsE68GxZz0.jpg",
+            "https://image.tmdb.org/t/p/original/cYuurfxdKiXcOERgeU1xqTgsjT.jpg",
+            "https://image.tmdb.org/t/p/original/wF1B0RTkE8vBqGs1DFWKiJl9Cz3.jpg",
+            "https://image.tmdb.org/t/p/original/cQMNHaQK4KH4eKgFXUN4wVs9DfJ.jpg",
+            "https://image.tmdb.org/t/p/original/lMzueJbC3Mnd7LVfXi4MdWSYilD.jpg"
+          ]
+        },
+        {
+          "episode": 25,
+          "name": "Safe Haven",
+          "overview": "Skylor helps Cole and Kai out of a tough spot. After running into Jake at the arcade, they all follow Master Wu's clues to the Paperkids hideout.",
+          "plot": null,
+          "airDate": "2022-10-01",
+          "still": "https://image.tmdb.org/t/p/original/itw78eDz2gzqWmsETFZpsVGwq26.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/itw78eDz2gzqWmsETFZpsVGwq26.jpg",
+            "https://image.tmdb.org/t/p/original/p35tp3S6qIUswzXgeaTW9dwplNh.jpg",
+            "https://image.tmdb.org/t/p/original/naUplU4brIhdRg3rzlmulWfA0m3.jpg",
+            "https://image.tmdb.org/t/p/original/we2iRbo3vfkuU4AIAmZyrZFlhJI.jpg",
+            "https://image.tmdb.org/t/p/original/r7OyUbHo4z6lN0UJBQY5fmUiVch.jpg",
+            "https://image.tmdb.org/t/p/original/q5nx72oMAGla4YA2jMaJu5BXUwx.jpg",
+            "https://image.tmdb.org/t/p/original/P4InFcBR6irnh5Brk3RgY0XGie.jpg",
+            "https://image.tmdb.org/t/p/original/5Au2FWFEY9aQmgZmFR0fefQMeho.jpg"
+          ]
+        },
+        {
+          "episode": 26,
+          "name": "Compatible",
+          "overview": "Kai attempts to define his relationship with Skylor... but his timing might be off. Dr. Borg tells Pixal that Zane is in a coma.",
+          "plot": null,
+          "airDate": "2022-10-01",
+          "still": "https://image.tmdb.org/t/p/original/rgJWAb6GbAyEuKUYImf0UeOnWOk.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/rgJWAb6GbAyEuKUYImf0UeOnWOk.jpg",
+            "https://image.tmdb.org/t/p/original/yPC1tQrDZn2awaoeITO2v2qHloq.jpg",
+            "https://image.tmdb.org/t/p/original/mpsujonJgPFGdhlmROhth6UBwOx.jpg",
+            "https://image.tmdb.org/t/p/original/5DGG5S1F78U81mJzB4SkwitJRuG.jpg",
+            "https://image.tmdb.org/t/p/original/fNIRvwVDMPk4mwigTZMi2MCPq1G.jpg",
+            "https://image.tmdb.org/t/p/original/sj9p06wx8ukzlh1u9kXG017hZPk.jpg",
+            "https://image.tmdb.org/t/p/original/oaB0iekp534BCF3sDMDeuZflQeJ.jpg"
+          ]
+        },
+        {
+          "episode": 27,
+          "name": "Distress Calls",
+          "overview": "The ninjas split up to try and send distress signals to their allies. Lloyd wonders if Garmadon is capable of \"complassion\" after all.",
+          "plot": null,
+          "airDate": "2022-10-01",
+          "still": "https://image.tmdb.org/t/p/original/vcXzHtK1EezKtKpDy5VXZzgOtbk.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/vcXzHtK1EezKtKpDy5VXZzgOtbk.jpg",
+            "https://image.tmdb.org/t/p/original/mpsujonJgPFGdhlmROhth6UBwOx.jpg",
+            "https://image.tmdb.org/t/p/original/xVcf3ybd55z69rJ8mNF5meN1UjH.jpg",
+            "https://image.tmdb.org/t/p/original/oAiv28mMxcq1vrd5wk3piTNr1N2.jpg",
+            "https://image.tmdb.org/t/p/original/vMLZnsYihIvI5I3UhQfsCvvQa5a.jpg",
+            "https://image.tmdb.org/t/p/original/fuBifzbGdklrwjK6QqVsLZ8tNTa.jpg",
+            "https://image.tmdb.org/t/p/original/gf2UqEjPbW7FghUEY07F4bztMCe.jpg",
+            "https://image.tmdb.org/t/p/original/eqYTLUwkdPTcTaDbVgx4sFXJ6Uu.jpg"
+          ]
+        },
+        {
+          "episode": 28,
+          "name": "An Issue of Trust",
+          "overview": "Master Wu explains the Dragon form — but the ninjas don't have much time to figure it out after the Overlord learns their whereabouts.",
+          "plot": null,
+          "airDate": "2022-10-01",
+          "still": "https://image.tmdb.org/t/p/original/sYjiT0l64PrJlo67fsnYtEPSjAT.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/sYjiT0l64PrJlo67fsnYtEPSjAT.jpg",
+            "https://image.tmdb.org/t/p/original/wjwgvTjrI0CZi8xp9ucUDLaLxVN.jpg",
+            "https://image.tmdb.org/t/p/original/nuxnOCNMb238p6epjM5hL6kuWrR.jpg",
+            "https://image.tmdb.org/t/p/original/7wtpsU4p014zOuXGwwLzwzsi3C6.jpg",
+            "https://image.tmdb.org/t/p/original/z1GVfdMc6hyeOKKr75OCnnsaeVI.jpg",
+            "https://image.tmdb.org/t/p/original/oEMAeo3JXVKYXEOb70721spJ3ZM.jpg",
+            "https://image.tmdb.org/t/p/original/n1jqTOUc8IdWcxoGk4qcvTpuuz3.jpg",
+            "https://image.tmdb.org/t/p/original/lTdAhajOnyAtvUyb4PmCXywKUMY.jpg"
+          ]
+        },
+        {
+          "episode": 29,
+          "name": "Dragon Form",
+          "overview": "Lloyd and Garmadon meet the Overlord in an epic showdown. The ninjas get help from their allies to defeat the Vengestone army — but it may be too late.",
+          "plot": null,
+          "airDate": "2022-10-01",
+          "still": "https://image.tmdb.org/t/p/original/tEptBo9G8975lWldigTpSAuckoL.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/tEptBo9G8975lWldigTpSAuckoL.jpg",
+            "https://image.tmdb.org/t/p/original/qR7NcWwOjljckIKKJ7w81tXumAo.jpg",
+            "https://image.tmdb.org/t/p/original/aaYhr7xhsv1fMcfRPVhBwhS5Qqw.jpg",
+            "https://image.tmdb.org/t/p/original/3kJZgcsejbupHyXy7hwQEhOEgN7.jpg",
+            "https://image.tmdb.org/t/p/original/f3C19EdDcZKA6ms8wKl7zS5C22y.jpg",
+            "https://image.tmdb.org/t/p/original/rVzSPm4AjEyRINjWsfx0XHqa8Q2.jpg",
+            "https://image.tmdb.org/t/p/original/nkrXTVzPJCUHNTSrWDaqNIrB9Kk.jpg",
+            "https://image.tmdb.org/t/p/original/tc6ZcyHrZd2kapcAHEkOySmwD0K.jpg"
+          ]
+        },
+        {
+          "episode": 30,
+          "name": "Roots",
+          "overview": "Thanks to the sacrifices made by his loved ones and fellow ninjas, Lloyd taps into a deep, ancient power to vanquish the Overlord.",
+          "plot": null,
+          "airDate": "2022-10-01",
+          "still": "https://image.tmdb.org/t/p/original/ydjo1AgIdC3vhsFIjRAzvq4UXv0.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ydjo1AgIdC3vhsFIjRAzvq4UXv0.jpg",
+            "https://image.tmdb.org/t/p/original/fr0tlrWgepRJqtOoV41zMS9j7XX.jpg",
+            "https://image.tmdb.org/t/p/original/m1V8eQ0hcV92b13OMJdHPeRVDOO.jpg",
+            "https://image.tmdb.org/t/p/original/1FXH6OCSVRnX6suMgEitJFW8lZh.jpg",
+            "https://image.tmdb.org/t/p/original/87u7cXFh4i8xOdhAPnwDw5Cpz10.jpg",
+            "https://image.tmdb.org/t/p/original/boa9Yzl2H8GHedIkX2RD1Rzj16w.jpg",
+            "https://image.tmdb.org/t/p/original/qsZlq6eZreyula752CqsfULRx6W.jpg",
+            "https://image.tmdb.org/t/p/original/41EF4ST0ZTbl0gJsansuvLBiGT7.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "cast": [
+    {
+      "name": "Michael Adamthwaite",
+      "character": "Jay (voice)",
+      "episodeCount": 189,
+      "profile": "https://image.tmdb.org/t/p/original/J9R1DkSkmGDioXJmHIMg5Vt8pb.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kelly Metzger",
+      "character": "Nya (voice)",
+      "episodeCount": 184,
+      "profile": "https://image.tmdb.org/t/p/original/stE2VTi1FefZRtNTCNb0fHunuQy.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Vincent Tong",
+      "character": "Kai (voice)",
+      "episodeCount": 181,
+      "profile": "https://image.tmdb.org/t/p/original/lpgVwZPewejru3WcgQEBMNWm4ze.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brent Miller",
+      "character": "Zane (voice)",
+      "episodeCount": 173,
+      "profile": "https://image.tmdb.org/t/p/original/1ZNgnmIs3A5b2fSGwZhL5mVeMvq.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kirby Morrow",
+      "character": "Cole (voice)",
+      "episodeCount": 158,
+      "profile": "https://image.tmdb.org/t/p/original/nnxjEsC4LxwIfMZ3EXGgpcDfI8v.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Paul Dobson",
+      "character": "Wu (voice)",
+      "episodeCount": 156,
+      "profile": "https://image.tmdb.org/t/p/original/huQqiIHgnswYR9x5V1e46FTYfSI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sam Vincent",
+      "character": "Lloyd (voice)",
+      "episodeCount": 116,
+      "profile": "https://image.tmdb.org/t/p/original/eJadsFcztqQZQIKzL5cMyasi1oa.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jillian Michaels",
+      "character": "Lloyd (voice)",
+      "episodeCount": 79,
+      "profile": "https://image.tmdb.org/t/p/original/hWSO8kpY8rKSD8rBcitRCw1AD9B.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kathleen Barr",
+      "character": "Misako (voice)",
+      "episodeCount": 73,
+      "profile": "https://image.tmdb.org/t/p/original/X2aSMT2oxsk1xzSigV8fIqxTtU.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mark Oliver",
+      "character": "Garmadon (voice)",
+      "episodeCount": 72,
+      "profile": "https://image.tmdb.org/t/p/original/1JsuYa1mJARLdpQ9NEzT1ZNPmXI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ian James Corlett",
+      "character": "Scales (voice)",
+      "episodeCount": 66,
+      "profile": "https://image.tmdb.org/t/p/original/y0p99omSo8CgHWPjv7qXtAQVyzr.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brian Drummond",
+      "character": "Gripe (voice)",
+      "episodeCount": 57,
+      "profile": "https://image.tmdb.org/t/p/original/oNKCHFuMZTASvyayEj3cRXLEjJL.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Scott McNeil",
+      "character": "The Overlord (voice)",
+      "episodeCount": 51,
+      "profile": "https://image.tmdb.org/t/p/original/rjiHH4krrSdipdSUdSUjvODKJM2.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alan Marriott",
+      "character": "Dareth (voice)",
+      "episodeCount": 46,
+      "profile": "https://image.tmdb.org/t/p/original/nY7kD6EAWRocDyFtrf8w1rKZheJ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Andrew Francis",
+      "character": "Cole (voice)",
+      "episodeCount": 44,
+      "profile": "https://image.tmdb.org/t/p/original/lvmgsIzCobciX8vDAX8wyBVDryq.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brian Dobson",
+      "character": "Ronin (voice)",
+      "episodeCount": 35,
+      "profile": "https://image.tmdb.org/t/p/original/3klT2K1UGl1wvmHKuDcSPuUFasV.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Donovan",
+      "character": "Police Commissioner (voice)",
+      "episodeCount": 33,
+      "profile": "https://image.tmdb.org/t/p/original/yutmM2NruR2oCWSESSPu3PG7g11.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Heather Doerksen",
+      "character": "Skylor (voice)",
+      "episodeCount": 32,
+      "profile": "https://image.tmdb.org/t/p/original/jf5agJ6xYVQ4Ozr7zXf0Ov9AOVj.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Britt McKillip",
+      "character": "Harumi (voice)",
+      "episodeCount": 30,
+      "profile": "https://image.tmdb.org/t/p/original/qUa6360myhK6b9jz2XShMkaioLE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Dobson",
+      "character": "Pythor (voice)",
+      "episodeCount": 30,
+      "profile": "https://image.tmdb.org/t/p/original/AjzZvcIWkq6mUC5dIxgGsPCv8bk.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tabitha St. Germain",
+      "character": "Mystake (voice)",
+      "episodeCount": 27,
+      "profile": "https://image.tmdb.org/t/p/original/ljFeqt5uanRHqKTuMumd0iMW69b.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kelly Sheridan",
+      "character": "Gayle Gossip (voice)",
+      "episodeCount": 26,
+      "profile": "https://image.tmdb.org/t/p/original/sxg2oRxwAEWd2Y8baJarjwC1XPA.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lee Tockar",
+      "character": "Cyrus Borg (voice)",
+      "episodeCount": 22,
+      "profile": "https://image.tmdb.org/t/p/original/eloBMEfs9q0ypUzXueVg5qe4CJe.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Deven Mack",
+      "character": "King Vangelis / The Skull Sorcerer (voice)",
+      "episodeCount": 18,
+      "profile": "https://image.tmdb.org/t/p/original/qfFZTN1lgoliBK4uf9aHjejSqZF.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ian Hanlin",
+      "character": "Acronix (voice)",
+      "episodeCount": 18,
+      "profile": "https://image.tmdb.org/t/p/original/o7uOuKMH7FN3kUnvfGW7LAdcZaz.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Maggie O'Hara",
+      "character": "Ultra Violet (voice)",
+      "episodeCount": 16,
+      "profile": "https://image.tmdb.org/t/p/original/xppZvs5dHHYtTJpF0tzP27Z8IhG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "John Novak",
+      "character": "Constrictai General (voice)",
+      "episodeCount": 13,
+      "profile": "https://image.tmdb.org/t/p/original/xh8EyWCDggvZkyAlNGsTvH6KarE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Antonakos",
+      "character": "The Mechanic (voice)",
+      "episodeCount": 13,
+      "profile": "https://image.tmdb.org/t/p/original/gbZJhDTupq1rXRFpZwT2kRqN1tB.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Garry Chalk",
+      "character": "Killow (voice)",
+      "episodeCount": 13,
+      "profile": "https://image.tmdb.org/t/p/original/jESGnBSP0OjFxJejN1OPsjXA9sJ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Doron Bell",
+      "character": "Griffin Turner (voice)",
+      "episodeCount": 13,
+      "profile": "https://image.tmdb.org/t/p/original/7KEWS9XUIJTjoiB53fAAixQ6bN8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Giles Panton",
+      "character": "Kalmaar (voice)",
+      "episodeCount": 13,
+      "profile": "https://image.tmdb.org/t/p/original/ixZb1aUaL7yScZYLgUU9LS2Grwk.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sabrina Pitre",
+      "character": "Vania (voice)",
+      "episodeCount": 12,
+      "profile": "https://image.tmdb.org/t/p/original/upKJvIeRLZc0nars8wET2NwpDnn.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Adrian Petriw",
+      "character": "Fugi-Dove (voice)",
+      "episodeCount": 11,
+      "profile": "https://image.tmdb.org/t/p/original/3jbR14GEKoUCbrs3NVmQw8eWRvu.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Kopsa",
+      "character": "Vex (voice)",
+      "episodeCount": 11,
+      "profile": "https://image.tmdb.org/t/p/original/eGoaXyQMd9mfAkhc6PqMhFxef5m.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Daingerfield",
+      "character": "Krux (voice)",
+      "episodeCount": 11,
+      "profile": "https://image.tmdb.org/t/p/original/jvjsW7Qd7w7WWhtxRqUzuUAZepE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alessandro Juliani",
+      "character": "Kapau (voice)",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/f8pVEpYsRU30EsMoWcBsTkUN9e0.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Gavin Langelo",
+      "character": "Vinny (voice)",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/tBFFnPzif4Fhzkio9Cd2rvBskKq.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mackenzie Gray",
+      "character": "Fangtom (voice)",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/yGU7RTVvI9fR9BpCt5TePYOpx7W.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Richard Newman",
+      "character": "General Cryptor (voice)",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/t7fBQZH581NgM1DCQYPEqzkqZ3D.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dean Redman",
+      "character": "Unagami (voice)",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/7mzn5HzN2tnYypbYGZvgbybb1aE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Colin Murdock",
+      "character": "Ed Walker (voice)",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/6t5LJdFTW7VSu7UYULs22quJIT.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "David Raynolds",
+      "character": "Nelson (voice)",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/1ZrMnOZ7sEnEuDxJJynpjEzvxpd.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nicole Oliver",
+      "character": "Dogshank (voice)",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/plAsVfhTrYaU78JrZbJSQ4uXpX1.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rhona Rees",
+      "character": "Jet Jack (voice)",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/6TBwRGBvWySSAWGHYQRzpQX4emI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mark Hildreth",
+      "character": "Milton Dyer (voice)",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/pHkXbCjIPbUSeOZLV3z6dnj8WVB.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Erin Mathews",
+      "character": "Miss Demeanor (voice)",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/plGRjKUo7Lr9Ua8TpT89gihNPZj.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Bill Newton",
+      "character": "Fred Finely (voice)",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/qVrw91HR7dGFRfcyKuIgdPM58KR.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Shannon Chan-Kent",
+      "character": "Racer Seven (voice)",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/pt8rq0yQXPHxXBDi1xbeVBjfqiD.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ryan Beil",
+      "character": "Teal Ninja (voice)",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/p5eaQJt1irdzhZ3AeeaArGXWSIp.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Andrew McNee",
+      "character": "Chancellor Gulch (voice)",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/2Bv3RDcPTeBsHRmiREhmREbT1db.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Zach LeBlanc",
+      "character": "Omega Oni (voice)",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/8RHcuElV8XlSXNo4b3q11ntEQCa.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Cathy Weseluck",
+      "character": "Patty Keys (voice)",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/jpvwGwZ9eDL6f2WCkbLk06WlObh.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ashleigh Ball",
+      "character": "Young Aspheera (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/ovPv8tKP5ZYUtJ7AsKMvjwecsQT.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nicholas Holmes",
+      "character": "Jake (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/7G7F6Yqk6VXv4xmL6yoMSF6gKyM.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ron Halder",
+      "character": "King Trimaar (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/pewaMyMPCUsB8ki1JDUhcGeE3hO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Peter New",
+      "character": "Groko (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/bT71ieZH2qhgxLNTPyorMlVp3PN.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Travis Turner",
+      "character": "Fuchsia Ninja (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/A8j6zZcdXjTnLJ4l9T9Th8V04fG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Daniel Doheny",
+      "character": "Jimmy (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/wRmWiPx9X2IozM0EZNeOHs2VT18.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ellen Kennedy",
+      "character": "Empress (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/GMbnND7ZOi7J9Dnk2hVI3Rqzlc.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Clay St. Thomas",
+      "character": "Announcer (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/qKfuljzevBblxcu4U2rx2mQlF11.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Andrea Libman",
+      "character": "Nyad (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/6R2ekkbQ7OFsktfasLvXzhd0IJ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Doc Harris",
+      "character": "Old Guard (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/hmdadgz4dRFNqnrT9Ekp45mHuud.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Maryke Hendrikse",
+      "character": "Camille (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/9iMFnpg5VmZvNWJ7Lo9AlvemoMb.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dean Petriw",
+      "character": "Young Garmadon (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/5c3VjxrtmPxqSs3zJC3uoQJgAyV.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jason Simpson",
+      "character": "Criminal #1 (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/nicxmXmjjQUMiiuwrnGwkBYobcZ.jpg",
+      "inCharacter": null
+    }
+  ],
+  "generatedAt": "2026-07-23T19:54:18.055Z"
+}

@@ -1,0 +1,1367 @@
+{
+  "slug": "power",
+  "tmdbId": 54650,
+  "tvmazeId": 299,
+  "matchedBy": "imdb_id",
+  "title": "Power",
+  "overview": "A successful New York entrepreneur lives a double life as the head of a drug empire that serves only the rich and influential, all while wanting to escape the underworld and keep his family safe.",
+  "firstAirDate": "2014-06-07",
+  "network": "STARZ",
+  "poster": "https://image.tmdb.org/t/p/w780/ctftzvyj8b0odco7EoS9VfJhf7K.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/original/gG1UDKgnATgTPwoZzqIDlGvnBe1.jpg",
+  "backdrops": [
+    "https://image.tmdb.org/t/p/original/gG1UDKgnATgTPwoZzqIDlGvnBe1.jpg",
+    "https://image.tmdb.org/t/p/original/D2DL5b9HBAy9jST2ZaDJLNHEsY.jpg",
+    "https://image.tmdb.org/t/p/original/9pR7ysiZqUq4rDKdNdEpVb8uBhi.jpg",
+    "https://image.tmdb.org/t/p/original/3lljOtNLatEjOoyLgVthdFZ0qh.jpg",
+    "https://image.tmdb.org/t/p/original/mbCQwR1JqTOHi6z9SebQGqqaieK.jpg",
+    "https://image.tmdb.org/t/p/original/88ITCrjDGkuWtvfR0dO5UJaiYsj.jpg",
+    "https://image.tmdb.org/t/p/original/9dRQw64CW36HnQoMj9lOPUBCIkb.jpg",
+    "https://image.tmdb.org/t/p/original/vNMFh5wZicP9jXD1q9r5gTR6KsH.jpg",
+    "https://image.tmdb.org/t/p/original/YBP1t7yzQypx9I0WTpp9TAsZgc.jpg",
+    "https://image.tmdb.org/t/p/original/7wdsLEnDryyl1gP3QKPfcpZNuYf.jpg",
+    "https://image.tmdb.org/t/p/original/kmTV2IO6JL7wla6DqHjcUeG6eMk.jpg",
+    "https://image.tmdb.org/t/p/original/aSOpS0o9LwDD9zcZvAIldmel9yv.jpg"
+  ],
+  "throughSeason": 6,
+  "totalSeasons": 6,
+  "showType": "Scripted",
+  "genres": [
+    "Drama",
+    "Crime"
+  ],
+  "status": "Ended",
+  "runtime": 60,
+  "language": "English",
+  "seasons": [
+    {
+      "season": 1,
+      "name": "Season 1",
+      "airDate": "2014-06-07",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Not Exactly How We Planned",
+          "overview": "James \"Ghost\" St. Patrick opens Truth nightclub, hoping its success will let him leave his life as a NYC drug kingpin. But a run-in with a past love and a drug-related attack threaten him.",
+          "plot": null,
+          "airDate": "2014-06-07",
+          "still": "https://image.tmdb.org/t/p/original/cv073jDlAI8A2BWTYlK8nFfhagC.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/cv073jDlAI8A2BWTYlK8nFfhagC.jpg",
+            "https://image.tmdb.org/t/p/original/4kMXJGhoswWR64lJ9uhmxoWyEEz.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Whoever He Is",
+          "overview": "Ghost and Tommy respond to the attacks on the drug business, Ghost's wife Tasha laments his new club career, and Ghost rekindles his relationship with Angela - a US Attorney chasing Ghost's distributor.",
+          "plot": null,
+          "airDate": "2014-06-14",
+          "still": "https://image.tmdb.org/t/p/original/xFv8R7P01bTzO7rd7ipIPp9xFHQ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xFv8R7P01bTzO7rd7ipIPp9xFHQ.jpg",
+            "https://image.tmdb.org/t/p/original/4toU9rXS3NTBGqBuJkd6hDSZIW1.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "This Is Real",
+          "overview": "A model's near-death in Truth jeopardizes the club's future. The rift between Ghost and Tasha over the nightclub widens. Ghost is reminded that pursuing Angela - and a legit life - could endanger his family.",
+          "plot": null,
+          "airDate": "2014-06-21",
+          "still": "https://image.tmdb.org/t/p/original/wWbSCTFe1M48eIutu1dAVWCpZH0.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/wWbSCTFe1M48eIutu1dAVWCpZH0.jpg",
+            "https://image.tmdb.org/t/p/original/4RX1m0OhqhBOOgXQcdl0ibDxq7Y.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Who Are You?",
+          "overview": "Ghost and Tommy plan to gather their network of gang leaders while Angela plans surveillance for the same meeting. The mystery assailant strikes again. Ghost admits to Angela that he's married with children.",
+          "plot": null,
+          "airDate": "2014-06-28",
+          "still": "https://image.tmdb.org/t/p/original/5JqNyr9RLSN6IKxmHTA7URUeWDP.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/5JqNyr9RLSN6IKxmHTA7URUeWDP.jpg",
+            "https://image.tmdb.org/t/p/original/sAXUXyAv0lyDfiuBMdPumJGGV4r.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "I Gotta Go",
+          "overview": "Concerned over Ghost's attitude, Tasha interferes with club business. Ghost and Angela pursue their affair. Tommy dates a club employee. Ghost and Tommy agree that gang leader Ruiz is behind the attacks.",
+          "plot": null,
+          "airDate": "2014-07-12",
+          "still": "https://image.tmdb.org/t/p/original/AoSZ4aKWjbVmT3HgpQIaZDs52MG.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/AoSZ4aKWjbVmT3HgpQIaZDs52MG.jpg",
+            "https://image.tmdb.org/t/p/original/4LNaK9peC6wJ7V6iTeRE6zguAoY.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Who You With?",
+          "overview": "Tommy makes peace with Ruiz while Angela has one of Ruiz's gang wired. Ghost forgets Tasha's birthday. Ghost and Angela confront the reality of their affair. Ghost's driver speaks too candidly to Tasha.",
+          "plot": null,
+          "airDate": "2014-07-19",
+          "still": "https://image.tmdb.org/t/p/original/64TKmmxYtPpTXDbm53DHBIt3MLS.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/64TKmmxYtPpTXDbm53DHBIt3MLS.jpg",
+            "https://image.tmdb.org/t/p/original/x2yvBehVGOlw6cr0CRStRYKE9FG.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Loyalty",
+          "overview": "Tasha sees Angela for the first time. Ghost learns a friend may be behind the hits while Angela races to stop the next attack. Ghost makes a commitment to Angela. The mastermind behind the attacks is revealed.",
+          "plot": null,
+          "airDate": "2014-07-26",
+          "still": "https://image.tmdb.org/t/p/original/84KDPVD7ZiTysm5wPj9KCXxpOX8.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/84KDPVD7ZiTysm5wPj9KCXxpOX8.jpg",
+            "https://image.tmdb.org/t/p/original/wdtBBEhJaOkEh5tCOEYWkvFFyv1.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Best Laid Plans",
+          "overview": "Ghost plans a huge party at Think, hoping to expand out of NYC and the drug world. Pink Sneakers attempts to murder Ghost. Ghost makes a big decision in an attempt to achieve his dream of going legit.",
+          "plot": null,
+          "airDate": "2014-08-02",
+          "still": "https://image.tmdb.org/t/p/original/n7Xltz4KWkirbvAS7PX9FNhZWQ5.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/n7Xltz4KWkirbvAS7PX9FNhZWQ5.jpg",
+            "https://image.tmdb.org/t/p/original/2hT4u68q2fwmGYqn5XTbNJlQz0c.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 2,
+      "name": "Season 2",
+      "airDate": "2015-06-06",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Consequences",
+          "overview": "Ghost picks up the pieces at Truth after the botched murder attempt against him, while recommitting to the drug game. Tommy disappears after learning that Angela's with the feds.",
+          "plot": null,
+          "airDate": "2015-06-06",
+          "still": "https://image.tmdb.org/t/p/original/yCbZ40N4ybiI9locMw8NaCzqOSW.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/yCbZ40N4ybiI9locMw8NaCzqOSW.jpg",
+            "https://image.tmdb.org/t/p/original/3Opez4kmvwvN7wS8alwgOiw9WJZ.jpg",
+            "https://image.tmdb.org/t/p/original/6sr4altB6cMCctqXMX00sn7Nmq2.jpg",
+            "https://image.tmdb.org/t/p/original/eTvNcSlXhQEg4a3qYD5KBt0JIZj.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "No Friends on the Street",
+          "overview": "Tommy agrees to help Ghost expand the drug business under one condition - Ghost uses Angela to discover what she knows about them. Kanan's release from jail is a surprise for Ghost.",
+          "plot": null,
+          "airDate": "2015-06-13",
+          "still": "https://image.tmdb.org/t/p/original/tRlahL9Pi7w503PvGcOFiWsoSLC.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/tRlahL9Pi7w503PvGcOFiWsoSLC.jpg",
+            "https://image.tmdb.org/t/p/original/gAxUzsJBGRjn9LG39t30HSttnYD.jpg",
+            "https://image.tmdb.org/t/p/original/9vLLPeroUROwP1jtnuo9RpqwY9.jpg",
+            "https://image.tmdb.org/t/p/original/8YfNZlRMoHBEyerj0IYo1a5d2v1.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Like We're Any Other Couple",
+          "overview": "Ghost finally takes Angela to Miami. They live the fantasy of being a couple, but the reality of her investigation destroys it. Back in New York, Tommy and Kanan become close.",
+          "plot": null,
+          "airDate": "2015-06-20",
+          "still": "https://image.tmdb.org/t/p/original/tqMBMOaSCe5tZuM8wJFMV6UxaZu.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/tqMBMOaSCe5tZuM8wJFMV6UxaZu.jpg",
+            "https://image.tmdb.org/t/p/original/h5wq2ortLZNWFdyvtmIqqVuBZaM.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "You're the Only Person I Can Trust",
+          "overview": "Ghost fights to retain control over everyone in his life: Tommy, Angela, Tasha and Simon Stern, who is making it impossible for him to win back his club.",
+          "plot": null,
+          "airDate": "2015-06-27",
+          "still": "https://image.tmdb.org/t/p/original/kAnPMdxPrVFNk7BILGJNaDmCZHE.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/kAnPMdxPrVFNk7BILGJNaDmCZHE.jpg",
+            "https://image.tmdb.org/t/p/original/7p2EZV0KJaMCApqCMfPeeVycSAK.jpg",
+            "https://image.tmdb.org/t/p/original/mjSzCXEwbujrqcTqnzcyuiMIuYi.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Who You Are and Who You Want to Be",
+          "overview": "Ghost and Tommy work to sell all of the product in time to pay Lobos, unaware that Holly is being questioned by the FBI. With every passing hour, Angela grows closer to the truth.",
+          "plot": null,
+          "airDate": "2015-07-11",
+          "still": "https://image.tmdb.org/t/p/original/g8qBm5ekQHT8POKU6j88oUlR0ox.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/g8qBm5ekQHT8POKU6j88oUlR0ox.jpg",
+            "https://image.tmdb.org/t/p/original/ah2LmoUnVY6tuni7OGDi2I1YKZZ.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Why Her?",
+          "overview": "After learning that Ghost and Jamie are the same man, Angela looks for proof. A new member joins the drug syndicate. Tasha makes a wife's ultimate sacrifice to protect her future.",
+          "plot": null,
+          "airDate": "2015-07-18",
+          "still": "https://image.tmdb.org/t/p/original/xaVUnz5xXP45ybbAVfjtpLdxNbO.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xaVUnz5xXP45ybbAVfjtpLdxNbO.jpg",
+            "https://image.tmdb.org/t/p/original/ydyxTew20HRn5syPmdR86tUH3Bj.jpg",
+            "https://image.tmdb.org/t/p/original/nDGPiGFGtm12UHfqnKEQAuDzMWe.jpg",
+            "https://image.tmdb.org/t/p/original/hBbVgbE0Dr7IfKg7YjVfiT3WBFX.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "You're Not the Man",
+          "overview": "Tommy's on edge about Holly's disappearance after talking with the feds. Ghost and Tasha work to rein him in. Angela seems to believe Ghost when he explains his actions...or does she?",
+          "plot": null,
+          "airDate": "2015-07-25",
+          "still": "https://image.tmdb.org/t/p/original/y3WCb7fz2ezR7FJ1FtRGQ3gcTqW.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/y3WCb7fz2ezR7FJ1FtRGQ3gcTqW.jpg",
+            "https://image.tmdb.org/t/p/original/a6r2dqZzCzZiqlvkoMmnYOJnEEs.jpg",
+            "https://image.tmdb.org/t/p/original/snu0vz3sYPXHLXCBxlwl4C9jBwm.jpg",
+            "https://image.tmdb.org/t/p/original/tDLgpKITFHR7r5DGTSgn2QLZil2.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Three Moves Ahead",
+          "overview": "Danger closes in on Ghost and Tommy as Lobos fends off a rival drug cartel and the feds. Ghost scrambles to get from underneath Lobos before Angela gets to him first.",
+          "plot": null,
+          "airDate": "2015-08-01",
+          "still": "https://image.tmdb.org/t/p/original/uUT9BSEJYQj82HdonNCXbHm50Sj.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/uUT9BSEJYQj82HdonNCXbHm50Sj.jpg",
+            "https://image.tmdb.org/t/p/original/ywCqxDt7pHZwvb7JT897YHZwcp8.jpg",
+            "https://image.tmdb.org/t/p/original/jAiC88aiddDm5QPTrRm3QEzrJFd.jpg",
+            "https://image.tmdb.org/t/p/original/pdqIK79tY3sxlivVW7uUvgOAgeo.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Time's Up",
+          "overview": "Tommy's locked up as Angela and the feds push him to flip on Lobos or spend his life in jail. Ghost works to do the right thing - but the consequences of his actions are steep.",
+          "plot": null,
+          "airDate": "2015-08-08",
+          "still": "https://image.tmdb.org/t/p/original/xdPhHb3isr9gPTDLLxnd7kP3Iqx.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xdPhHb3isr9gPTDLLxnd7kP3Iqx.jpg",
+            "https://image.tmdb.org/t/p/original/zKNe4i7bZJIadODLPaY3WrQMKCv.jpg",
+            "https://image.tmdb.org/t/p/original/pITwm7bS8pa725tzz36lPWTKf1A.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Ghost Is Dead",
+          "overview": "Bodies from Ghost's organization are dropping left and right, each death inching closer to Ghost and Tommy. Both the threat of Kanan and Angela's investigation are just as lethal.",
+          "plot": null,
+          "airDate": "2015-08-15",
+          "still": "https://image.tmdb.org/t/p/original/hHaGdaIzVv222g64GIw7eZL0bK2.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/hHaGdaIzVv222g64GIw7eZL0bK2.jpg",
+            "https://image.tmdb.org/t/p/original/usUbKHkcpQ6T4ntguYPGRWodaqT.jpg",
+            "https://image.tmdb.org/t/p/original/dK1kwF5BquSwnybuxIHDdQPcJiT.jpg",
+            "https://image.tmdb.org/t/p/original/qzIkjWhOXwjNCcQOYLP6DDULq6H.jpg",
+            "https://image.tmdb.org/t/p/original/8mAHA5lQXOP6xfJsYTmbHagBkOk.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 3,
+      "name": "Season 3",
+      "airDate": "2016-07-17",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Call Me James",
+          "overview": "Out of the drug game, James is ready to leave \"Ghost\" behind. Angela must decide between love and honor. Tasha reels from the death of Shawn. Tommy is forced to make some bold moves.",
+          "plot": null,
+          "airDate": "2016-07-17",
+          "still": "https://image.tmdb.org/t/p/original/9zr1VAG6OVIccLxtKMCTTkS5wv4.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/9zr1VAG6OVIccLxtKMCTTkS5wv4.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "It's Never Over",
+          "overview": "Ghost scrambles to tie up loose ends while he deals with new nightlife competition. Tommy confronts Tasha, as she and Angela must learn to coexist. Tommy gains an advisor in his returned love, Holly.",
+          "plot": null,
+          "airDate": "2016-07-24",
+          "still": "https://image.tmdb.org/t/p/original/3panbhDLJWVj75WV1UNOyBtDYRN.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/3panbhDLJWVj75WV1UNOyBtDYRN.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "I Got This on Lock",
+          "overview": "Ghost is presented with an opportunity that could take the clubs to the next level, all while looking over his shoulder. Tommy reunites with Tasha in a scheme, while he also tries to keep a contact under control.",
+          "plot": null,
+          "airDate": "2016-07-31",
+          "still": "https://image.tmdb.org/t/p/original/qkevRqYmqqF5m4xKjfReYqplC3S.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/qkevRqYmqqF5m4xKjfReYqplC3S.jpg",
+            "https://image.tmdb.org/t/p/original/r8LRanaDe0yEuODcOyDSNELn7Rh.jpg",
+            "https://image.tmdb.org/t/p/original/b2Qff7PuM08AU8UJvy6fxCFV7bI.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Don't Worry, Baby",
+          "overview": "As the opportunity to expand the clubs evolves, Ghost is spread even thinner between Angela, the kids, business, and Tommy. Tommy struggles with a decision, Kanan gets back into the life, and Angela faces doubts.",
+          "plot": null,
+          "airDate": "2016-08-07",
+          "still": "https://image.tmdb.org/t/p/original/eDu9z1sJEW7k4O9Uto3VbcQmTRK.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/eDu9z1sJEW7k4O9Uto3VbcQmTRK.jpg",
+            "https://image.tmdb.org/t/p/original/by63OYg1leGsZzbOh18i1SgY8GF.jpg",
+            "https://image.tmdb.org/t/p/original/bHWopGZvjs0E2l5Pgnr3kx49RIh.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Help Me",
+          "overview": "Tommy searches for who made the attempt on his life. Greg leans on Ruiz to give up the true \"Ghost\", while Angela does all she can to keep them away. Proctor informs Ghost he may have a new problem.",
+          "plot": null,
+          "airDate": "2016-08-14",
+          "still": "https://image.tmdb.org/t/p/original/jEkxse3mHY2tiV6gb1IGXbzZCf4.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/jEkxse3mHY2tiV6gb1IGXbzZCf4.jpg",
+            "https://image.tmdb.org/t/p/original/tYiVrDarxm1TfFlciGHle7e8LDf.jpg",
+            "https://image.tmdb.org/t/p/original/j9wuiIpJGDsOVBEiMl4W2qlprZr.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "The Right Decision",
+          "overview": "Tommy and Ghost reunite to take out a dangerous foe, enlisting Tasha in a plan to escape detection by Angela and her team. While Tommy soldiers forward, Ghost loses control at a crucial moment.",
+          "plot": null,
+          "airDate": "2016-08-21",
+          "still": "https://image.tmdb.org/t/p/original/wTcneh422F8hSEqPrwihHi6lt2L.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/wTcneh422F8hSEqPrwihHi6lt2L.jpg",
+            "https://image.tmdb.org/t/p/original/pWTXA3J8BVwZKfBTAGUCb4Rrosl.jpg",
+            "https://image.tmdb.org/t/p/original/1TM0HbsMYiltwOEgUJrbH3rSa93.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Don't Go",
+          "overview": "Angela reels after her breakup, but must face some difficult questions at work. Ghost must scramble to not lose the club deal, while he and Tommy are forced back into the game. Dre learns the meaning of the La Arana card.",
+          "plot": null,
+          "airDate": "2016-08-28",
+          "still": "https://image.tmdb.org/t/p/original/bJjAl2RPJD8fAFFmHWeFult59KL.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/bJjAl2RPJD8fAFFmHWeFult59KL.jpg",
+            "https://image.tmdb.org/t/p/original/rX7odn83KSWJQwHAGPkfTljOBFh.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Trust Me",
+          "overview": "Mike and Angela hunt for the mole. Angela gets a lead, while she must solidify Tommy's alibi. Tasha receives a warning as Tariq makes a dangerous new friend. Milan issues an edict to push a new product.",
+          "plot": null,
+          "airDate": "2016-09-04",
+          "still": "https://image.tmdb.org/t/p/original/OfypxqAnwVhPWU6gYNCHd26hYk.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/OfypxqAnwVhPWU6gYNCHd26hYk.jpg",
+            "https://image.tmdb.org/t/p/original/phsEf5kJmWMV5kez1mlloF40Yu3.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "I Call the Shots",
+          "overview": "Angela takes action to find the mole, while Ghost makes a move to regain the club deal. Ghost and Tasha fall into a familiar role while Kanan has a dark influence on Tariq. Milan warns Tommy of the price of betrayal.",
+          "plot": null,
+          "airDate": "2016-09-18",
+          "still": "https://image.tmdb.org/t/p/original/xJd3zDR4jYOlu8bpdIGxFI5eIMm.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xJd3zDR4jYOlu8bpdIGxFI5eIMm.jpg",
+            "https://image.tmdb.org/t/p/original/quJIi3LknPadTXBsuLBw3aTowq9.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "In My Best Interest",
+          "overview": "Ghost races to retrieve evidence, while he throws the party of his career. Tasha forms an unlikely alliance in an attempt to save her family. But will Tommy make a move that will change everyone's life forever?",
+          "plot": null,
+          "airDate": "2016-09-25",
+          "still": "https://image.tmdb.org/t/p/original/5fAoKUkB0gYdOTs7Zw0A1bf1YCs.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/5fAoKUkB0gYdOTs7Zw0A1bf1YCs.jpg",
+            "https://image.tmdb.org/t/p/original/kOonnUJTdloMQsvhhQOOKjRWBIL.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 4,
+      "name": "Season 4",
+      "airDate": "2017-06-25",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "When I Get Out",
+          "overview": "Having been arrested for the murder of Agent Knox, Ghost faces threats from all angles. The Feds begin to build their case and Tasha scrambles to get bail. Tommy navigates his new role and enlists help in recovering Tariq.",
+          "plot": null,
+          "airDate": "2017-06-25",
+          "still": "https://image.tmdb.org/t/p/original/hiLwF72RJFWw2R3W2KQyd5TaHXK.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/hiLwF72RJFWw2R3W2KQyd5TaHXK.jpg",
+            "https://image.tmdb.org/t/p/original/eEyFHBgD6nt62WZRwVTMOvdLgtb.jpg",
+            "https://image.tmdb.org/t/p/original/sYuc8W5B71ME4cAHhY2TEPDAjSE.jpg",
+            "https://image.tmdb.org/t/p/original/5k1C8C4i7AWmH9GRHF7sOfEkFvS.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Things Are Going To Get Worse",
+          "overview": "Proctor works to protect his client as Ghost faces harassment. The team discusses their strategy for taking down St. Patrick. Tommy struggles to let go of his old duties. Tasha talks to the kids about what's going on.",
+          "plot": null,
+          "airDate": "2017-07-02",
+          "still": "https://image.tmdb.org/t/p/original/ml73DkrvKVzD23iK15SXoe8Md9F.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ml73DkrvKVzD23iK15SXoe8Md9F.jpg",
+            "https://image.tmdb.org/t/p/original/g0rS0nJLklUeFyysy9JSaQQS2NL.jpg",
+            "https://image.tmdb.org/t/p/original/qZs4eHzBucfqgEaLzBSWbEeSEcX.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "The Kind of Man You Are",
+          "overview": "The prosecutors turn up the heat, forcing Tommy to execute a plan that diverts their attention. Teresi learns information about Ghost and begins a blackmail scheme. And in his father's absence, Tariq seeks out Kanan.",
+          "plot": null,
+          "airDate": "2017-07-09",
+          "still": "https://image.tmdb.org/t/p/original/uzDtEwIYxpBIPvzIQvR8bkZIQXF.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/uzDtEwIYxpBIPvzIQvR8bkZIQXF.jpg",
+            "https://image.tmdb.org/t/p/original/9IeVCdovJo9G9HMkSEG1BIeyOAY.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "We're in This Together",
+          "overview": "Mak brings Angela back onto the prosecution team and gives her a task that brings her face-to-face with Tasha. Julio struggles to manage the primeras below him and Tommy's behavior. Tariq continues running with Kanan.",
+          "plot": null,
+          "airDate": "2017-07-16",
+          "still": "https://image.tmdb.org/t/p/original/gCVSdXTDDaHNzSHo0PjfUEJHwZp.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/gCVSdXTDDaHNzSHo0PjfUEJHwZp.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Don't Thank Me",
+          "overview": "With tensions high, Silver warns Ghost that Tasha may have to testify. Meanwhile, now aware of Ghost's innocence, Angela struggles to find a way to stop the prosecution. And Teresi sets a plan in motion to eliminate Ghost.",
+          "plot": null,
+          "airDate": "2017-07-23",
+          "still": "https://image.tmdb.org/t/p/original/1my8v6C16CBnsUQo85yX9rEBGyk.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/1my8v6C16CBnsUQo85yX9rEBGyk.jpg",
+            "https://image.tmdb.org/t/p/original/d4efCkPCKMAxnGaxWE3uZPqW97C.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "New Man",
+          "overview": "Returning to Truth - Ghost finds himself trapped in a new business venture. Tommy escapes to Chicago for a meeting that takes a turn. And with Ghost released, Jukebox and Kanan revisit their plan to kidnap Tariq.",
+          "plot": null,
+          "airDate": "2017-07-30",
+          "still": "https://image.tmdb.org/t/p/original/iJhu8tjZHIeSZdmuFZVFufIoHcz.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/iJhu8tjZHIeSZdmuFZVFufIoHcz.jpg",
+            "https://image.tmdb.org/t/p/original/k45mutGSW2yI1FAHGMlrlBeyhiq.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "You Lied to My Face",
+          "overview": "As Ghost moves forward with his new business, the St. Patrick family is thrust into the public eye. Tasha seeks out Silver and their relationship deepens. When Tommy returns, Dre talks himself into a promotion.",
+          "plot": null,
+          "airDate": "2017-08-06",
+          "still": "https://image.tmdb.org/t/p/original/1LiqaGsjr2zmFsizX6Cvpn0lOoP.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/1LiqaGsjr2zmFsizX6Cvpn0lOoP.jpg",
+            "https://image.tmdb.org/t/p/original/upxYNcUMIenpEYfWNNKDyr5DPGE.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "It's Done",
+          "overview": "When Ghost sees the location for the business is in a gang-infested, he re-teams with Tommy to clean it up. As Tommy threatens war, his organization starts to destabilize. And, unhappy, Tariq looks to some old friends.",
+          "plot": null,
+          "airDate": "2017-08-13",
+          "still": "https://image.tmdb.org/t/p/original/fsPzcTC9EBqbxgEfzIeSVgxYxW.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/fsPzcTC9EBqbxgEfzIeSVgxYxW.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "That Ain't Me",
+          "overview": "When Ghost realizes he's getting screwed, he starts playing dirty. After meeting the boss, Angela explores other options. Tommy gets proof that paints Kate in a new light. And with people after him, Tariq hatches a plan.",
+          "plot": null,
+          "airDate": "2017-08-20",
+          "still": "https://image.tmdb.org/t/p/original/q9xOJDE0S7pfI56ywPcOrPLKFY5.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/q9xOJDE0S7pfI56ywPcOrPLKFY5.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "You Can't Fix This",
+          "overview": "When tragedy befalls the St. Patrick family, Ghost and Tommy seek retribution. Tasha tries to keep things together at home. Meanwhile, Angela uses her own skills resources to figure out what Ghost is hiding.",
+          "plot": null,
+          "airDate": "2017-09-03",
+          "still": "https://image.tmdb.org/t/p/original/kZL6fhTMb1fImzFN9PFOe4j97LH.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/kZL6fhTMb1fImzFN9PFOe4j97LH.jpg",
+            "https://image.tmdb.org/t/p/original/fSXpQbFTiqCV7kcL1c16kNVeKwh.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 5,
+      "name": "Season 5",
+      "airDate": "2018-07-01",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Everyone Is Implicated",
+          "overview": "James \"Ghost\" St. Patrick forms a dangerous alliance with his brother-in-arms, Tommy, and his mortal enemy, Kanan; Angela is implicated in murder and turns to an unlikely ally; Tasha enlists LaKeisha to protect Tariq.",
+          "plot": null,
+          "airDate": "2018-07-01",
+          "still": "https://image.tmdb.org/t/p/original/i7vJDnDgIZJFfMameOfiDVjOxkx.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/i7vJDnDgIZJFfMameOfiDVjOxkx.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Damage Control",
+          "overview": "The St. Patrick family grieves Raina while the AUSA's office discusses taking down \"Ghost\" and ending Angela's career. Councilman Tate exploits Raina's death. Dre maintains order within his organization.",
+          "plot": null,
+          "airDate": "2018-07-08",
+          "still": "https://image.tmdb.org/t/p/original/zGmW5i1uNmfqKbWNiXLw7nxznqd.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/zGmW5i1uNmfqKbWNiXLw7nxznqd.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Are We On The Same Team?",
+          "overview": "Ghost and Tasha butt heads on how to grieve. Angela pursues the Jimenez Cartel while Kanan goes after Dre's organization. Tommy confides in LaKeisha about his relationship with Teresi, complicating everyone's lives.",
+          "plot": null,
+          "airDate": "2018-07-15",
+          "still": "https://image.tmdb.org/t/p/original/ebXFSWZ2H1wc57Xar8qgOdfUGlE.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ebXFSWZ2H1wc57Xar8qgOdfUGlE.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Second Chances",
+          "overview": "Tensions run high when Jason returns. Ghost warns Tommy about Teresi while he hatches a plan with Kanan to rid Tommy of his new family. Angela gets closer to arresting the Jimenez Cartel. Kanan forms an unlikely alliance.",
+          "plot": null,
+          "airDate": "2018-07-22",
+          "still": "https://image.tmdb.org/t/p/original/gMyxX425dC2A0ZZkOeYIQXet5VS.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/gMyxX425dC2A0ZZkOeYIQXet5VS.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Happy Birthday",
+          "overview": "The St. Patricks celebrate Tariq's birthday without Raina. Ghost is on the outs with Tate and learns Dre is ready to replace him in the legitimate world. Kanan drops Tariq at school, bonding over their mistrust of Ghost.",
+          "plot": null,
+          "airDate": "2018-07-29",
+          "still": "https://image.tmdb.org/t/p/original/mAeYx2dzA7mHMKzuELaWmOozxfk.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/mAeYx2dzA7mHMKzuELaWmOozxfk.jpg",
+            "https://image.tmdb.org/t/p/original/7Elt8nNSGd7edpmAc43ZWxHhnZQ.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "A Changed Man?",
+          "overview": "After his spiritual awakening with Rev. Macedon, Ghost confesses his sins to Angela. Angela preps Tasha for Federal questioning and Ghost must break his business deal with Tommy when Truth is audited by the IRS.",
+          "plot": null,
+          "airDate": "2018-08-05",
+          "still": "https://image.tmdb.org/t/p/original/bqtn0dVRxIXa9aYeDkD5hZlKya0.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/bqtn0dVRxIXa9aYeDkD5hZlKya0.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "The Devil Inside",
+          "overview": "Ghost, Tommy and Kanan move forward with their task to kill the heads of the Jimenez Cartel. Donovan warns Angela that her own office is after her. LaKeisha lets slip that Teresi is Tommy's father.",
+          "plot": null,
+          "airDate": "2018-08-12",
+          "still": "https://image.tmdb.org/t/p/original/a4vgs5Zh45eJUI3tWtaKQbcRLUq.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/a4vgs5Zh45eJUI3tWtaKQbcRLUq.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "A Friend of the Family",
+          "overview": "The AUSA turns up the heat on Ghost and implicates his inner circle in on a RICO; Ghost and Tommy plan to frame Dre for the murder of Raymond Jones, Raina's killer; Angela and Tasha enact a plan of their own.",
+          "plot": null,
+          "airDate": "2018-08-26",
+          "still": "https://image.tmdb.org/t/p/original/cJfFZX6xg8OrUyMT7eVS75G1qUc.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/cJfFZX6xg8OrUyMT7eVS75G1qUc.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "There's a Snitch Among Us",
+          "overview": "When Angela's arrest of Jimenez gives her a solid win, she discovers plans that would undercut her career; Ghost tasks Tommy in killing a snitch, changing all of their lives; Tariq accepts the consequences of his choices.",
+          "plot": null,
+          "airDate": "2018-09-02",
+          "still": "https://image.tmdb.org/t/p/original/4Pb0eQsoD1V8s1mfaXoxGlZARtH.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/4Pb0eQsoD1V8s1mfaXoxGlZARtH.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "When This Is Over",
+          "overview": "When the RICO case comes crashing down, Angela breaks ranks to form her own A-team. LaKeisha takes a stand of her own while “Ghost”, Tommy, Tasha, and Angela race against the clock to prove their innocence...but to what end?",
+          "plot": null,
+          "airDate": "2018-09-09",
+          "still": "https://image.tmdb.org/t/p/original/5aDEab3U3ZqkEBAOujhT5MAzCSY.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/5aDEab3U3ZqkEBAOujhT5MAzCSY.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 6,
+      "name": "Season 6",
+      "airDate": "2019-08-25",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Murderers",
+          "overview": "Ghost seeks vengeance due to the ill will of Tommy Egan. Tasha vows to get even with Ghost for the murder of Terry Silver. Tariq and Tommy mourn an old friend. The AUSA's Office is under new leadership.",
+          "plot": null,
+          "airDate": "2019-08-25",
+          "still": "https://image.tmdb.org/t/p/original/smGXsIeARhwjibMbMWPAkQEjhPX.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/smGXsIeARhwjibMbMWPAkQEjhPX.jpg",
+            "https://image.tmdb.org/t/p/original/f9N5PFIPwu3VjPejkC4tANCnV4C.jpg",
+            "https://image.tmdb.org/t/p/original/uNE49EpFtHzSlNXWQO2xHU1XUo4.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Whose Side Are You On?",
+          "overview": "Tommy lays low after his mustang is riddled with bullets. Tensions run high with Ghost and Jason. Tommy enlists LaKeisha to help with his business. Tasha confronts Ghost about Terry Silver.",
+          "plot": null,
+          "airDate": "2019-09-01",
+          "still": "https://image.tmdb.org/t/p/original/kiV1JkkV4132thm76y9SXKCPwux.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/kiV1JkkV4132thm76y9SXKCPwux.jpg",
+            "https://image.tmdb.org/t/p/original/vasfum1APzjlfVISz08ci3T73pE.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Forgot About Dre",
+          "overview": "Dre remains in Fed custody. Jason tasks Tommy and Ghost to kidnap Alicia Jiminez. Tommy teaches LaKeisha the drug game. Tariq's business begins to flourish. Tasha has a business plan of her own.",
+          "plot": null,
+          "airDate": "2019-09-08",
+          "still": "https://image.tmdb.org/t/p/original/9B13C8XIsEKmMpYKpYoOjyiIumb.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/9B13C8XIsEKmMpYKpYoOjyiIumb.jpg",
+            "https://image.tmdb.org/t/p/original/c17OVoLIKIpe1K4B6wYHsXms3i6.jpg",
+            "https://image.tmdb.org/t/p/original/psalz2mVIpkDBstfR0qihGzjPEh.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Why Is Tommy Still Alive?",
+          "overview": "Tasha sparks a new flame. Ghost utilizes his resources in an attempt to kill Tommy. Tariq's in over his head with the Italians and Dre forms an unlikely alliance. Proctor hatches a plan to gain custody of his daughter.",
+          "plot": null,
+          "airDate": "2019-09-15",
+          "still": "https://image.tmdb.org/t/p/original/gRDGd6U3QvFOAOodIVStblfWY8I.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/gRDGd6U3QvFOAOodIVStblfWY8I.jpg",
+            "https://image.tmdb.org/t/p/original/cZhNfvdjI5IS2rqMlQUMMt6h8W0.jpg",
+            "https://image.tmdb.org/t/p/original/b3wY8vp8rMqADnqHBb4VrVX3Cp3.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "King's Gambit",
+          "overview": "Tasha revisits old habits when she begins to recruit soldiers for her new empire. Tariq pulls a ruse on Vincent. Proctor warns Tommy about a snitch. Ghost plans to take care of the snitch on his own terms.",
+          "plot": null,
+          "airDate": "2019-09-22",
+          "still": "https://image.tmdb.org/t/p/original/jxFZlBgFMxIdqG0rYc8hD7SfP04.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/jxFZlBgFMxIdqG0rYc8hD7SfP04.jpg",
+            "https://image.tmdb.org/t/p/original/iH3vDvuCkVQgsURokKHsvuZ3Vrs.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Inside Man",
+          "overview": "After being duped by Tariq, Vincent holds Tariq hostage. Ghost and Tommy call a temporary truce in order to face a common enemy. Tasha puts her differences to the side and turns to an unlikely ally for help.",
+          "plot": null,
+          "airDate": "2019-09-29",
+          "still": "https://image.tmdb.org/t/p/original/lMhiPFsd8VWwNJgZnRYFonZrac5.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/lMhiPFsd8VWwNJgZnRYFonZrac5.jpg",
+            "https://image.tmdb.org/t/p/original/cZRi5iMUIUTSOOtAF2Ibkebr69G.jpg",
+            "https://image.tmdb.org/t/p/original/wuQAc0y4EcoNaeMAdNvHT0giyUB.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Like Father, Like Son",
+          "overview": "As the St. Patrick family is reunited, Ghost and Tasha butt heads on how to raise Tariq. LaKeisha creates new enemies within Tommy's organization. Jason tasks Ghost and Tommy to work together.",
+          "plot": null,
+          "airDate": "2019-10-06",
+          "still": "https://image.tmdb.org/t/p/original/AlUg0dKuU9qMgt3W74olTTy8ohQ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/AlUg0dKuU9qMgt3W74olTTy8ohQ.jpg",
+            "https://image.tmdb.org/t/p/original/1jyCLSUtcsjoWPFZqxDqButI0Kz.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Deal With the Devil",
+          "overview": "The Feds turn the heat up on Tommy and scare LaKeisha into cooperating. Ghost discontinues a relationship with an ally. Tasha confronts a snitch, which hits a little too close to home.",
+          "plot": null,
+          "airDate": "2019-10-13",
+          "still": "https://image.tmdb.org/t/p/original/udCWtYInJW8s43YPdpV4diTWVZ9.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/udCWtYInJW8s43YPdpV4diTWVZ9.jpg",
+            "https://image.tmdb.org/t/p/original/j3Zv5NceLW3BUv2br17vVJ2U0i8.jpg",
+            "https://image.tmdb.org/t/p/original/7a7fNHnO3L7H7xYE7s8PbRjjJhe.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Scorched Earth",
+          "overview": "As Ghost and Tommy move forward with their plan to kill Jason, Tommy enacts a plan of his own. Dre uses a ruse to force Tommy's organization to rebel against him. Tommy battles the kin of one of his past victims.",
+          "plot": null,
+          "airDate": "2019-10-27",
+          "still": "https://image.tmdb.org/t/p/original/dmiQ1fqrvmFRGL40t4PpITukahM.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dmiQ1fqrvmFRGL40t4PpITukahM.jpg",
+            "https://image.tmdb.org/t/p/original/7kUjz1KqYvl8sRui9vIQHvWLbUb.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "No One Can Stop Me",
+          "overview": "Ghost is on top of the world. Meanwhile the Feds work to prove St. Patrick is guilty for the murder of Terry Silver. But when Ghost makes a political move, it triggers resentment from his many enemies.",
+          "plot": null,
+          "airDate": "2019-11-03",
+          "still": "https://image.tmdb.org/t/p/original/xZrnPBqp1DgnWBn7SoCxD1DPSK0.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xZrnPBqp1DgnWBn7SoCxD1DPSK0.jpg",
+            "https://image.tmdb.org/t/p/original/y572lMXkVy4JxgIN9KxnlJinUyo.jpg",
+            "https://image.tmdb.org/t/p/original/32EUWroIp2SdPF7XU8eBETpZemJ.jpg"
+          ]
+        },
+        {
+          "episode": 11,
+          "name": "Still DRE",
+          "overview": "After being framed by Ghost for the murder of Jason Micic, Dre plans on leaving New York, but first he needs to take care of unfinished business.",
+          "plot": null,
+          "airDate": "2020-01-05",
+          "still": "https://image.tmdb.org/t/p/original/j6avAAWdWo1eOJUjTcmJgRW1hbL.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/j6avAAWdWo1eOJUjTcmJgRW1hbL.jpg",
+            "https://image.tmdb.org/t/p/original/dw9rEvHUthkErxoY1M7gEWU1IIL.jpg",
+            "https://image.tmdb.org/t/p/original/vS8arLw7sC3lS5OMUd7YoKrbldC.jpg"
+          ]
+        },
+        {
+          "episode": 12,
+          "name": "He Always Wins",
+          "overview": "Paz, still grieving Angela's death, seeks allies in the pursuit of justice-or vengeance. She forms an alliance with Warner. They hatch a plan to arrest Ghost for the murder of Angela. But things don't go as planned.",
+          "plot": null,
+          "airDate": "2020-01-12",
+          "still": "https://image.tmdb.org/t/p/original/zGI80XuXHFPPRf1x5tzSYJjyjHA.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/zGI80XuXHFPPRf1x5tzSYJjyjHA.jpg",
+            "https://image.tmdb.org/t/p/original/hrkdspUtwyFVkW3LYnGr9tGe6cw.jpg"
+          ]
+        },
+        {
+          "episode": 13,
+          "name": "It's All Your Fault",
+          "overview": "Tommy is on a path to avenge LaKeisha's murder; Elisa Marie investigates what's on the USB stick given to her by her father; Tommy must destroy the evidence, and he may need Ghost's help to retrieve it.",
+          "plot": null,
+          "airDate": "2020-01-19",
+          "still": "https://image.tmdb.org/t/p/original/cXeyrUhGZVYe3D1QSqTiZtf7LPr.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/cXeyrUhGZVYe3D1QSqTiZtf7LPr.jpg",
+            "https://image.tmdb.org/t/p/original/qdkSjYT9oQDjQeuqxB11AenUBXI.jpg",
+            "https://image.tmdb.org/t/p/original/xGkNYr9UCfrO8Wzp24mUXEDhott.jpg"
+          ]
+        },
+        {
+          "episode": 14,
+          "name": "Reversal of Fortune",
+          "overview": "Tensions run high when Tate tasks Dre to kill Ghost. Tate's hatred toward St. Patrick motivates him to lie during a Federal questioning. The Feds are in striking distance of convicting St. Patrick for Silver's murder.",
+          "plot": null,
+          "airDate": "2020-01-26",
+          "still": "https://image.tmdb.org/t/p/original/9IiETUktmiccpO4xPeq5voga7zK.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/9IiETUktmiccpO4xPeq5voga7zK.jpg",
+            "https://image.tmdb.org/t/p/original/dWlg7gjLGwcjpbJEuokNqOSuBaZ.jpg"
+          ]
+        },
+        {
+          "episode": 15,
+          "name": "Exactly How We Planned",
+          "overview": "When Ghost is announced as Lt. Governor it gives him a solid win and makes him one step closer to a fully legitimate world. He soon discovers one of his many enemies carrying out a plan that changes his life forever.",
+          "plot": null,
+          "airDate": "2020-02-09",
+          "still": "https://image.tmdb.org/t/p/original/A9ntIVQY6bwLnmEEIkCWa6H2T9u.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/A9ntIVQY6bwLnmEEIkCWa6H2T9u.jpg",
+            "https://image.tmdb.org/t/p/original/jB2fDjVAyZBDetX3IZIx6dFiCRN.jpg",
+            "https://image.tmdb.org/t/p/original/8vGztPcl6KXUaUaivwueyWKRuMW.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "cast": [
+    {
+      "name": "Omari Hardwick",
+      "character": "James 'Ghost' St. Patrick",
+      "episodeCount": 63,
+      "profile": "https://image.tmdb.org/t/p/original/acUogRPe6eyhiK33EavBk3SWGlB.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/29/72945.jpg"
+    },
+    {
+      "name": "Joseph Sikora",
+      "character": "Tommy Egan",
+      "episodeCount": 63,
+      "profile": "https://image.tmdb.org/t/p/original/lCsWDvqKYz1UFGRYN5chg5izZAu.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/168/420896.jpg"
+    },
+    {
+      "name": "Naturi Naughton",
+      "character": "Tasha St. Patrick",
+      "episodeCount": 63,
+      "profile": "https://image.tmdb.org/t/p/original/7MAE01ucdjtV1lSeHB39BYayl3N.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/29/72944.jpg"
+    },
+    {
+      "name": "Shane Johnson",
+      "character": "Cooper Saxe",
+      "episodeCount": 63,
+      "profile": "https://image.tmdb.org/t/p/original/jR35Lz3sciBc40mYVwhepEE8f4S.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/70/177016.jpg"
+    },
+    {
+      "name": "Lela Loren",
+      "character": "Angela Valdes",
+      "episodeCount": 63,
+      "profile": "https://image.tmdb.org/t/p/original/1MROHIj3FQ6Apcz5qeEDWqlJpdu.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/29/72956.jpg"
+    },
+    {
+      "name": "Rotimi",
+      "character": "Dre",
+      "episodeCount": 55,
+      "profile": "https://image.tmdb.org/t/p/original/ePmhlQgPcxNeM64w7ql4JVJVBRH.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/29/72962.jpg"
+    },
+    {
+      "name": "Jerry Ferrara",
+      "character": "Joseph \"Joe\" Proctor",
+      "episodeCount": 55,
+      "profile": "https://image.tmdb.org/t/p/original/yGziAkYkdtBmYolQg7MNkK5XP7J.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/129/324151.jpg"
+    },
+    {
+      "name": "Michael Rainey Jr.",
+      "character": "Tariq St. Patrick",
+      "episodeCount": 53,
+      "profile": "https://image.tmdb.org/t/p/original/5U6wNx2LAggfwK6gi6OYL3rGOvl.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/218/547157.jpg"
+    },
+    {
+      "name": "La La Anthony",
+      "character": "Lakeisha Grant",
+      "episodeCount": 49,
+      "profile": "https://image.tmdb.org/t/p/original/jOgM5iL969numQ0UiMtrW2XBzKw.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/129/324152.jpg"
+    },
+    {
+      "name": "50 Cent",
+      "character": "Kanan",
+      "episodeCount": 41,
+      "profile": "https://image.tmdb.org/t/p/original/7VfwFIwBxy7qBUErosWRDQOovl9.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/29/72958.jpg"
+    },
+    {
+      "name": "Donshea Hopkins",
+      "character": "Raina St. Patrick",
+      "episodeCount": 40,
+      "profile": "https://image.tmdb.org/t/p/original/r6QcjfpRjlkTtxbv1rBzMt41BUx.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Matt Cedeño",
+      "character": "Diego \"Cristobal\" Martinez",
+      "episodeCount": 40,
+      "profile": "https://image.tmdb.org/t/p/original/5VjAGcCMczq2lYR6q4CEjc0hIDB.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "J.R. Ramirez",
+      "character": "Julio",
+      "episodeCount": 38,
+      "profile": "https://image.tmdb.org/t/p/original/nNSMr1fuFjRFTu6QcxPCZGkyyI9.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/29/72950.jpg"
+    },
+    {
+      "name": "Luis Antonio Ramos",
+      "character": "Ruiz",
+      "episodeCount": 38,
+      "profile": "https://image.tmdb.org/t/p/original/AgRQTwDiw5a3bELMIMjUCaMlk5T.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/29/72955.jpg"
+    },
+    {
+      "name": "Larenz Tate",
+      "character": "Rashad Tate",
+      "episodeCount": 35,
+      "profile": "https://image.tmdb.org/t/p/original/6BWajF1sbuwsvXHmdQDxP5MfZ5R.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael J. Ferguson",
+      "character": "Francis \"2-Bit\" Johnson",
+      "episodeCount": 34,
+      "profile": "https://image.tmdb.org/t/p/original/e39J4kd9wo7IcAogLGxkiftVOsx.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "David Fumero",
+      "character": "Miguel \"Mike\" Sandoval",
+      "episodeCount": 30,
+      "profile": "https://image.tmdb.org/t/p/original/wF8JKkBKw2fAOTfMitizZaxxFQH.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/29/72959.jpg"
+    },
+    {
+      "name": "Lucy Walters",
+      "character": "Holly",
+      "episodeCount": 28,
+      "profile": "https://image.tmdb.org/t/p/original/u5YcKnwWdAudCRHnWltkuEQ469T.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/29/72954.jpg"
+    },
+    {
+      "name": "Andy Bean",
+      "character": "Greg Knox",
+      "episodeCount": 28,
+      "profile": "https://image.tmdb.org/t/p/original/4BiltJsO0KO7E9Mgyj8wMekbEBA.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/29/72951.jpg"
+    },
+    {
+      "name": "Adam Huss",
+      "character": "Josh Kantos",
+      "episodeCount": 28,
+      "profile": "https://image.tmdb.org/t/p/original/4cBTh35FwL8pyXr0FMeYCZIZLLQ.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/29/72949.jpg"
+    },
+    {
+      "name": "Greg Serano",
+      "character": "Juan Julio Medina",
+      "episodeCount": 28,
+      "profile": "https://image.tmdb.org/t/p/original/bqKA6wmh7j4HVTm0FfsYCOBGTKo.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/29/72973.jpg"
+    },
+    {
+      "name": "Brandon Victor Dixon",
+      "character": "Deleterious \"Terry\" Silver",
+      "episodeCount": 20,
+      "profile": "https://image.tmdb.org/t/p/original/xDw28KKvIygAp5KMMYvLVwA6ytw.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/129/324150.jpg"
+    },
+    {
+      "name": "Sinqua Walls",
+      "character": "Shawn Stark",
+      "episodeCount": 18,
+      "profile": "https://image.tmdb.org/t/p/original/oxty0W4Ga1pBbUz5abanxAXfJmC.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/29/72948.jpg"
+    },
+    {
+      "name": "Victor Garber",
+      "character": "Simon Stern",
+      "episodeCount": 16,
+      "profile": "https://image.tmdb.org/t/p/original/FdhXl8qxsKgj22Ip99SRM9jUx1.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Monique Gabriela Curnen",
+      "character": "Blanca Rodriguez",
+      "episodeCount": 15,
+      "profile": "https://image.tmdb.org/t/p/original/lJgLQs7cfM49m8VzVviwxIByz76.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Cynthia Addai-Robinson",
+      "character": "Ramona Garrity",
+      "episodeCount": 15,
+      "profile": "https://image.tmdb.org/t/p/original/fgXXRWLRDprVH9Bf2et0zRLk7HQ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Elizabeth Rodriguez",
+      "character": "Paz Valdes",
+      "episodeCount": 15,
+      "profile": "https://image.tmdb.org/t/p/original/9f851DP7NHAOKvvlZdXxYigDYbl.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sung Kang",
+      "character": "John Mak",
+      "episodeCount": 11,
+      "profile": "https://image.tmdb.org/t/p/original/ox4ti0WmpJoN19n3iYJ2T2vHP5f.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Charlie Murphy",
+      "character": "Marshal Williams",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/9Njuxc67Jks0j8GmDm8KUV3ldse.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Callan Mulvey",
+      "character": "Dean / Milan",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/wJ8P1yNVmkx1PS1mc6Pi48tphfG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Vinicius Zorin-Machado",
+      "character": "Nomar Arcielo",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/tBNRr4wV9UgVxQKoeqztJimg9gN.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Leslie Lopez",
+      "character": "Pink Sneakers",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/kwFwR248EBua1VEGTEdEG4OVSjf.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kathrine Narducci",
+      "character": "Frankie",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/bOxhHtEtmhdfVmnL0KyG4SPDlwJ.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/29/72964.jpg"
+    },
+    {
+      "name": "Kelcy Griffin",
+      "character": "Dominique",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/qA7PUW3qwFVmW7gAvhE1UgdqaWC.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sheena Sakai",
+      "character": "Soo",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/9DlZ6muclVqMKW5cEgl6tx3DG1L.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Maria Rivera",
+      "character": "Maria Suarez",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/n05sEfP5O31Tlbza1RxLbYUmQgF.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Anika Noni Rose",
+      "character": "LaVerne \"Jukebox\" Ganner",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/d7aLtuNXBqVtqNnZl8wXsFV4ML5.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Holmes Lindsay IV",
+      "character": "Trigger",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/seez6Vw4IJMz66C3KcU5ZrAI413.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alix Lapri",
+      "character": "Effie",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/vULJGspMOIFMSgOW2EF99JpPhJ1.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Andrea-Rachel Parker",
+      "character": "Destiny",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/vT9FARk4GUKWxiLI33K7iV38X45.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Gianni Paolo",
+      "character": "Brayden",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/wf1boiYyi7EkYqdzOJMHnnoodnY.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sonya Walger",
+      "character": "Madeline Stern",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/bHGtm29qlx6OYsgwOq84xd6MRpF.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Matthew Leone",
+      "character": "Nicola",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/4yUyaZxaAj49iFSYzQmXmD7pT2G.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brandi Denise",
+      "character": "Epiphany",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/nWo3UYdcgpcqbVJTz2KBWK5DtpO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Shannon Thornton",
+      "character": "Quinn Phillips",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/1WLFeO8z4vylQiUkW2jHvt1vQJb.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Candace Neolani Maxwell",
+      "character": "Cassandra Haynes",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/zsWwRQ6dLjWZCfTpFevAzmmDUHf.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mattea Conforti",
+      "character": "Elisa Marie",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/7d7X5ZgdHYAZ04oHTRocuKM3e39.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "William Sadler",
+      "character": "Tony Teresi",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/rWeb2kjYCA7V9MC9kRwRpm57YoY.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Natalie Paul",
+      "character": "Candie",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/n2Y50W48jJ9mEiOvTORSpunpFci.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Emma Ishta",
+      "character": "Bella",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/rp2tLiGuGzjB0HIfTKtXT4QIsZ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Manny Montana",
+      "character": "Miguel",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/EUoD5EalyUDHZtRZCnosRqhMi.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Curtiss Cook Jr.",
+      "character": "Wookie",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/oZg5T64gHnKoo1sMsmljtBRx7WD.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Chelsea Watts",
+      "character": "Francesca",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/d5ir2722EsdTmIGAGQzoyLNQPei.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Candace M. Smith",
+      "character": "Ghost's assistant lawyer",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/vJFeoYU9eiuG0k67ihBYFqWBnTk.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/29/72945.jpg"
+    },
+    {
+      "name": "Ariel Kim",
+      "character": "Resident",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/j0f89u8DxLxIqqynlcQ4eAkDRqm.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Gaston",
+      "character": "Judge Tapper",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/lXhqiW4J1n9bnbfwz0Kdf2sjGLU.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rayan Lawrence",
+      "character": "Detective Claremont",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/bWHqlPSWZKrrC1RpEaXeHKeFeFg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ethan Cutkosky",
+      "character": "Young Tommy",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/fHa86X7KypnIB1koWXTTyErpRuI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Debi Mazar",
+      "character": "Dolores",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/cU3LhqOjXzOqpGCSDFj5otlZreu.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lahmard J. Tate",
+      "character": "Kamaal Tate",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/tsJ0DoZK6dakzgNpcQMQUKx6GFf.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Cedric the Entertainer",
+      "character": "Croop",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/s6UrY5uofyxXsU5PydWBoLFReK0.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kendrick Lamar",
+      "character": "Laces",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/wc8e0NRsknvVerfMAwiDlxWIdnS.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mark Feuerstein",
+      "character": "Steven Ott",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/1XsbDSx7hqhaY9Sjjx86iTp43S0.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Amyrh Harris",
+      "character": "Cousin #2",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/vRTKpRzM8t5Kw1f4kou90wHqLk.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brandon Michael Hall",
+      "character": "Carter",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/aKWiTsuHNA3JcEp9f8OvGJ5EqWQ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tasha Smith",
+      "character": "Jarita",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/viJnHL3BjQ5oqisXklQWGlh29Hx.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Annie Pisapia",
+      "character": "Pedestrian",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/rvJf4TCZiMfZElx6Os8Y0PW8M4h.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lisa Howard",
+      "character": "Teacher",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/gqK5YqZtd8rtki5psQkainvWDlT.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Kaplan",
+      "character": "Jeff Ferguson",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/AcNzh7cxLmuqR85RzYlIK8I716M.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rachel Annette Helson",
+      "character": "Sarah",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/m565JsAdJoCnGJdUP0LBCFpMDeK.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kaitlin Mesh",
+      "character": "Meghan",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/uXr3glTAC3QXiHxnDLK71lpJNP8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Beverly Sade",
+      "character": "Kanan's Party Date",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/fIy3GL74Gb01uqmsQSJ12DTEOmt.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/29/72958.jpg"
+    },
+    {
+      "name": "Michelangelo Milano",
+      "character": "Dominic",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/tPNi0JfJDfyKWRT9ysGJqL4IhaP.jpg",
+      "inCharacter": null
+    }
+  ],
+  "generatedAt": "2026-07-23T19:52:25.098Z"
+}

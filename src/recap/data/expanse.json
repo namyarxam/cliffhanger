@@ -1560,7 +1560,7 @@
     },
     {
       "name": "José Zúñiga",
-      "character": "Bull - Tycho Chief of Ops",
+      "character": "Bull",
       "episodeCount": 10,
       "profile": "https://image.tmdb.org/t/p/original/r6nFkJkMHP9tFDohwfav9Bf2rCR.jpg",
       "inCharacter": null
@@ -1763,10 +1763,10 @@
     },
     {
       "name": "Chai Valladares",
-      "character": "Aide Diaz",
+      "character": "Avasarala's Aide",
       "episodeCount": 6,
       "profile": "https://image.tmdb.org/t/p/original/sjaK9AgywMhSgSW5bfVG93NOAUH.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/375/939743.jpg"
     },
     {
       "name": "Jay Hernandez",
@@ -2344,7 +2344,7 @@
     },
     {
       "name": "Alli Chung",
-      "character": "Sam Rosenberg",
+      "character": "Samantha Rosenberg",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/hnIbzI49yAJTnzC0IFhG0wYeasQ.jpg",
       "inCharacter": null
@@ -2365,7 +2365,7 @@
     },
     {
       "name": "Eli Martyr",
-      "character": "CPM #15",
+      "character": "Onudo",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/z9ZCWgP4bRMzxsUiKN82tSMgMM2.jpg",
       "inCharacter": null
@@ -2397,13 +2397,6 @@
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/yZhIkToTvU0OYobs4ue6qTQkp0C.jpg",
       "inCharacter": null
-    },
-    {
-      "name": "Tommy Chang",
-      "character": "Mao Guard #1",
-      "episodeCount": 2,
-      "profile": null,
-      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/375/939740.jpg"
     },
     {
       "name": "Adam Bogen",
@@ -2519,7 +2512,7 @@
     },
     {
       "name": "Supinder Wraich",
-      "character": "Talissa",
+      "character": "Talissa Kamal",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/k36CZd7azIkRNqZinGIvMYLl3tP.jpg",
       "inCharacter": null
@@ -2854,5 +2847,5 @@
       "inCharacter": null
     }
   ],
-  "generatedAt": "2026-07-23T07:24:17.283Z"
+  "generatedAt": "2026-07-23T18:50:30.134Z"
 }

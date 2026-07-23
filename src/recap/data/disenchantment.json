@@ -1,0 +1,815 @@
+{
+  "slug": "disenchantment",
+  "tmdbId": 73021,
+  "tvmazeId": 30715,
+  "matchedBy": "imdb_id",
+  "title": "Disenchantment",
+  "overview": "Set in a ruined medieval city called Dreamland, Disenchantment follows the grubby adventures of a hard-drinking princess, her feisty elf companion and her personal demon.",
+  "firstAirDate": "2018-08-17",
+  "network": "Netflix",
+  "poster": "https://image.tmdb.org/t/p/w780/1WynayCqKRzrl4cFZR8NOfiDwd6.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/original/hHEqDPbO6z4Xje5tOf3Wm1mdMtI.jpg",
+  "backdrops": [
+    "https://image.tmdb.org/t/p/original/hHEqDPbO6z4Xje5tOf3Wm1mdMtI.jpg",
+    "https://image.tmdb.org/t/p/original/rgNyEmhnUYPyebNb9UOYV72H8nq.jpg",
+    "https://image.tmdb.org/t/p/original/o5gpmFNNTPGTfgrvxWjTnps3ysj.jpg",
+    "https://image.tmdb.org/t/p/original/xA4Rje3t8WB4YOP7lIvHMF3PjTN.jpg",
+    "https://image.tmdb.org/t/p/original/16FgcTOMb9RfKATOFGHJSVSWwz2.jpg",
+    "https://image.tmdb.org/t/p/original/bJ66fFue9RP3yjZcYK3uf8QqspL.jpg",
+    "https://image.tmdb.org/t/p/original/fKNw1NqO33VzvfQ3uyByGAS0EAl.jpg",
+    "https://image.tmdb.org/t/p/original/wEKjHnH5cq1ncj7486wLCR0AYy3.jpg",
+    "https://image.tmdb.org/t/p/original/u3JqZQicvaiSPnhaaj5G8wH4teg.jpg",
+    "https://image.tmdb.org/t/p/original/ucVRYtCYGRl4D3N23xLc1QRvZpV.jpg",
+    "https://image.tmdb.org/t/p/original/sOyKCyEAmwYUFejxhsfb6VvQVG1.jpg",
+    "https://image.tmdb.org/t/p/original/j3FqE57tOuXIt1I1VsmChWwRuUg.jpg"
+  ],
+  "throughSeason": 3,
+  "totalSeasons": 3,
+  "showType": "Animation",
+  "genres": [
+    "Comedy",
+    "Adventure",
+    "Fantasy"
+  ],
+  "status": "Ended",
+  "runtime": 28,
+  "language": "English",
+  "seasons": [
+    {
+      "season": 1,
+      "name": "Season 1",
+      "airDate": "2018-08-17",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "A Princess, an Elf, and a Demon Walk Into a Bar",
+          "overview": "Princess Bean already has the wedding day blues when a mysterious figure arrives, claiming he's her personal demon. Elfo hates his happy homeland.",
+          "plot": "Princess Tiabeanie \"Bean\" is the roughhousing princess of Dreamland, unhappily destined to marry Prince Guysbert, son of the incestuous king and queen of Bentwood. Looking through her wedding gifts, Bean finds a demon named Luci who was sent by two dark mages hoping to turn Bean to evil. Luci ends up being a fun-loving troublemaker who sympathizes with Bean's predicament as she feels that the marriage is simply a grab for more power by her father King Zøg. Meanwhile, Elfo, an optimistic elf, disillusioned with his candy-making happy life, breaks the \"Jolly Code\" and leaves the safety of Elfwood - much to the consternation of his people. Elfo arrives in time to witness Bean turn down Guysbert who unfortunately impales himself on a sword. Bean, Elfo, and Luci escape while Prince Merkimer, next in line to marry Bean, and his men chase after her. The group is directed by a fairy to the Wishmaster, who turns out to be the Washmaster, and hopelessly surrounded, they fall backwards off a cliff.",
+          "airDate": "2018-08-17",
+          "still": "https://image.tmdb.org/t/p/original/8DKJdiCbf4TrN8v24Hc0S49iyPs.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/8DKJdiCbf4TrN8v24Hc0S49iyPs.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "For Whom the Pig Oinks",
+          "overview": "How to get rid of an unwanted fiancé? Bean's plan involves a party barge and mermaids. King Zøg tries to make Elfo's blood into an immortality potion.",
+          "plot": "Bean, Elfo, and Luci are \"rescued\" by Merkimer who takes them back to Dreamland. Elfo is taken in by Sorcerio who wants to use his blood to create more magic and so Zøg can gain the elixir of life. At Luci's suggestion, Bean approaches Merkimer with the idea of having a bachelor party before the marriage. She also discovers Zøg and Sorcerio's plan to drain Elfo of his blood so they use pig's blood to fool them. At the bachelor party, the entire crew travels to mermaid island in the hopes that Merkimer will be killed by the mermaids. He is instead taken in by walruses who save them from murderous Borcs, though they turn out to be the allied Bozaks. Bean ultimately loses hope; however, a thirsty Merkimer discovers the \"elf blood\" which is mostly pig's blood and Elfo convinces him to drink it transforming him into a pig. Bean, fed up, denounces the marriage and Zøg finally agrees with his daughter. This upsets the king of Bentwood and he and Zøg settle things in a fistfight with Bean, Elfo, and Luci happily watching.",
+          "airDate": "2018-08-17",
+          "still": "https://image.tmdb.org/t/p/original/6sGEEpZ7oXE0FxWiWl6TDBVraBP.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/6sGEEpZ7oXE0FxWiWl6TDBVraBP.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "The Princess of Darkness",
+          "overview": "Sorcerio declares that demonic possession is behind Bean's drunken exploits -- and things look dicey for Luci when the king hires an eerie exorcist.",
+          "plot": "While under the influence of Queen Oona's snake root intoxicant, Bean, Elfo, and Luci run into a gang of gender-aware thieves who convince Bean to join them. At Luci's urging, Bean breaks into her ancestors' resting place and steals their valuables, but the thieves betray them and they get caught. At the suggestion of Odval, Zøg's vizier, they decide to hire an exorcist named Big Jo to remove a demon from Bean, unaware of the fact that Luci, whom everyone thinks is a cat, is Bean's personal demon. Big Jo manages to seal away Luci and leaves. While Bean feels clean and at peace with herself, Elfo convinces her that they need to get Luci back and learn that he, along with several other demons will be tossed into a volcano. Bean and Elfo get back at the thieves by getting their valuables and manage to reach Big Jo who they end up dismembering and toss into the volcano. When they successfully free Luci, Elfo accidentally causes Big Jo's carriage to roll down the mountain which crashes and frees all the other demons into the world.",
+          "airDate": "2018-08-17",
+          "still": "https://image.tmdb.org/t/p/original/9BEM13YVtGaqTZOAVevRzwlVAmY.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/9BEM13YVtGaqTZOAVevRzwlVAmY.jpg",
+            "https://image.tmdb.org/t/p/original/kYqZiBsw3GkMAYDC1XIfyOaUO0r.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Castle Party Massacre",
+          "overview": "With the king away, Bean throws a wild party while Odval and Sorcerio gather their secret society for a ritual. But the night takes a surprising turn.",
+          "plot": "Due to her status as a princess, as well as her reputation, Bean is frustrated by the fact that she cannot have a real relationship with anyone. Zøg ends up drinking poisoned fountain water and is taken by Oona to her people's spa where an employee named Chazzzzz begins to torture Zøg with his stories. Meanwhile, the residents at the castle throw a party. While Bean seeks to use this to hook up with someone, Elfo wants to use the opportunity to tell his true feelings to her. The party is suddenly overrun by Vikings where their leader, Sven, ends up catching the interest of Bean, angering Elfo. When Bean and Sven are about to make out, Elfo interrupts them and accidentally reveals that Bean is the princess. Sven then reveals his true intent to take over Dreamland and have Bean rule by his side. The trio trick Sven into drinking the poisoned fountain and get rid of him and his Vikings. They manage to clean up the party in time for Zøg to arrive, but he finds severed body parts in the chimney angering him. Bean, Elfo, and Luci calmly watch the sunrise mutually.",
+          "airDate": "2018-08-17",
+          "still": "https://image.tmdb.org/t/p/original/40QwVzwXsEo7GnocfBb32AvbG1W.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/40QwVzwXsEo7GnocfBb32AvbG1W.jpg",
+            "https://image.tmdb.org/t/p/original/fKepxtJsMzOE31T7jbHbrbO1sNX.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Faster, Princess! Kill! Kill!",
+          "overview": "Banished from the castle by Zøg, Bean tries to work but has trouble keeping a job. Elfo encounters a bizarre pair of siblings living in a candy house.",
+          "plot": "Following the party, Zøg sends Bean to a convent to become a nun. She immediately gets kicked out and Zøg insults her for being a \"good-for-nothing.\" She meets up with her maid Bunty, her husband Stan and their numerous children. To earn her living, Bean decides to take a job as an apprentice to Stan, who is an executioner and torturer. Elfo stays with Bunty who babies him so much that he flees to the woods. Bean meets Gwen, a cackling witch with whom she sympathizes. When it comes time to execute her, Bean cannot bring herself to do it and leaves the kingdom. She and Luci find Elfo's foot prints when he ran into the woods, follow them and find that he has entered a candy house which is now owned by a cannibalistic Hansel and Gretel. Bean and Luci rescue Elfo and Bean ends up killing the siblings with a candy ax, albeit in self defense. Gwen is cured from a curse and leaves pardoned, while also mentioning that her twin sister was in the attic of the house which blew up so they instead tell her to travel and never return. Zøg tells Bean that he is proud of her, though she threatens to kill him if he continues to make fun of her buck teeth.",
+          "airDate": "2018-08-17",
+          "still": "https://image.tmdb.org/t/p/original/jG0WaW3xMvqrYcrZOCamywfAFGG.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/jG0WaW3xMvqrYcrZOCamywfAFGG.jpg",
+            "https://image.tmdb.org/t/p/original/elEEvNQe7KtpGHyS99uJpHceVUv.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Swamp and Circumstance",
+          "overview": "Bean tries her hand at diplomacy after Zøg makes her ambassador to Dankmire, Oona's kingdom and an important ally for Dreamland.",
+          "plot": "Bean once again sneaks off with Elfo and Luci for more debauchery. Zøg feeling that he does not give Bean enough to do, decides to make her an ambassador while the family goes on their trip to Dankmire, the homeland of Oona and her son Derek. When they get there, the group puts up with the customs of the Dankmirians who for years were at war with the Dreamlanders due to a canal that was built (which the Dankmirians were forced to pay for). Both sides claimed ownership of the canal and the fighting stopped once Zøg married Oona. Impressed with Bean handling the situation, Zøg asks for her to give a speech at a banquet. Overcome with the stress of thinking of what to say, Luci spikes Bean's drink and she shows up drunk at the banquet where she humiliates herself and her family and offends the Dankmirians who chase them out of their land. Oona makes it back safely, but Zøg and Derek are captured by hillbillies and Bean, Elfo, and Luci rescue them. Zøg finally admits that he is proud of Bean and allows her to go to Hay Man, an event that he initially disallowed her to attend.",
+          "airDate": "2018-08-17",
+          "still": "https://image.tmdb.org/t/p/original/lj2NhGoCwevrGchPqPRohQNZq4a.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/lj2NhGoCwevrGchPqPRohQNZq4a.jpg",
+            "https://image.tmdb.org/t/p/original/j7N853oEsicWRm14dLmb7Tmp0ii.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Love's Tender Rampage",
+          "overview": "Elfo lies to hide his feelings for Bean, but things get complicated when she tries to help him by sending the knights on a quest.",
+          "plot": "While passed out drunk, Bean, Elfo, and Luci are picked up by the plague patrol who toss them into a pit. As they are about to be burned alive, Elfo tries to kiss Bean, but she rebuffs him. They manage to get out and Elfo claims that he was not trying to kiss her because he already has a girlfriend who Elfo claims is tall, has red hair and one eye. The trio head to a drug den and while in a state of intoxication, Bean claims to have seen Elfo's girlfriend. She sends the royal guard to go and find her and they bring back a giantess who they later learn is named Tess. Tess is upset over having been taken from her home, but she agrees to go along with Elfo's charade so that she can get a real working eye from him. Elfo ends up using a crystal ball and Tess is suddenly able to see the truth in everyone. This results in Elfo telling Bean the truth and a fire causes a mob to chase the three and Tess. They use the drug den to turn the mob away and Tess leaves with Bean and Elfo finally kissing, albeit while in another intoxicated state.",
+          "airDate": "2018-08-17",
+          "still": "https://image.tmdb.org/t/p/original/oANmmxY2oxRXSux9smrOxAva1OW.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/oANmmxY2oxRXSux9smrOxAva1OW.jpg",
+            "https://image.tmdb.org/t/p/original/kfCF5LZjVmg6JimfbErLFyd4rxy.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "The Limits of Immortality",
+          "overview": "Elfo's been kidnapped! Bean, Luci, Sorcerio and the knights search for him, along with a magical pendant needed to complete the immortality potion.",
+          "plot": "During a parade, Elfo is kidnapped by someone and Bean approaches Zøg with a quest to find him. Coincidentally, Sorcerio finds a book in Gwen's burned down candy house and figures out that the secret to the elixir of life is tied to a vial called the Eternity Pendant and decides to come along with Bean and Luci on their quest. They meet Gwen who leads them to her ex-husband Malfus who had taken the elixir of life, but has become a hermit in a cave. He directs the group to the \"edge of the world\" where they run into a female griffin, with a masculine appearance, who informs them about the vial. Big Jo is revealed to be Elfo's kidnapper as he can locate the vial and soon kidnaps Bean and Luci as leverage. They find the Lost City of Cremorrah out in the middle of a desert and manage to locate the vial while Big Jo and his assistant Porky are distracted by a knight. The trio escape by burying Big Jo in the city as it fills with sand. Meanwhile, the mages who sent Luci, named the Enchantress and Cloyd, congratulate Bean as they prepare for Dreamland's fall.",
+          "airDate": "2018-08-17",
+          "still": "https://image.tmdb.org/t/p/original/6QoLruXaiPYBtAq0gTII9EityFl.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/6QoLruXaiPYBtAq0gTII9EityFl.jpg",
+            "https://image.tmdb.org/t/p/original/bf7s9xSKrMKtB5cCmcYhC6z7mJY.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "To Thine Own Elf Be True",
+          "overview": "After he learns a surprising secret about himself, Elfo heads home to Elfwood in search of the truth.",
+          "plot": "The trio return from their adventure with the pendant and try to use Elfo's blood to bring people back to life. However, the pendant still does not work. An expert is brought in and reveals that Elfo is not a true elf, angering Zøg who kicks him out of Dreamland. Odval allows Bean and Luci to go and find Elfo so that he and the knights can follow. Bean and Luci find Elfo who decides to take them to Elfwood where he is reunited with his kin. While Bean and Luci mingle with the elves, Elfo learns from his father that he is half-elf, with his other half a mystery due to being interrupted by the arrival of Zøg's men. Bean, Elfo, Luci and the elves fight off the knights and seal Elfwood away before the rest of the troops can arrive, but the victory is short lived when an arrow fatally pierces Elfo. Zøg reveals that he did not want the elixir for himself but to revive Bean's mother, Dagmar, who was turned to stone by a poison meant for him but was switched by a young Bean. Having gotten some genuine elf blood on her handkerchief after she was trying to help an elf in Elfwood, Bean heavy-heartedly chooses to use the pendant on Dagmar over Elfo.",
+          "airDate": "2018-08-17",
+          "still": "https://image.tmdb.org/t/p/original/dNBGxA5uJpbbaUuH3EOUPzKYpVA.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dNBGxA5uJpbbaUuH3EOUPzKYpVA.jpg",
+            "https://image.tmdb.org/t/p/original/A73wgfLstgA3U41dtAb94DAwEUZ.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Dreamland Falls",
+          "overview": "As Dreamland celebrates an unexpected arrival while saying goodbye to a friend, everyday life is thrown into disarray.",
+          "plot": "Dagmar is reintroduced to the kingdom as everyone rejoices including an ecstatic Zøg. Oona immediately takes a disliking towards Dagmar and reasserts her position. The entire kingdom holds a funeral for Elfo; however, Dagmar and Oona get into a fight resulting in Elfo's corpse falling into the ocean. Oona flees and makes a deal of some kind with Odval while Zøg keeps Derek \"safe\" in the tower. Dagmar attempts to spend the day with Bean proclaiming she has a destiny to fulfill. Zøg reveals more about himself to Luci, such as how he became king when the previous king, Zøg's older brother Yøg was poisoned. Luci uses the crystal ball that Tess returned to see things that happened in the past. The kingdom's residents one by one turn to stone and Dagmar takes Bean to a secret library while Luci reveals to Zøg that Dagmar tried to poison him all those years ago. Dagmar releases more of the poison upon all of Dreamland, turning everyone to stone except Zøg and Derek. Luci is captured by an unseen figure, we don't know who it is (only that it's someone from Dagmar's team), just it's not Dagmar herself, because at the same time Dagmar with Bean escapes on a boat with creatures. In a post-credits scene, Elfo's corpse washes onto shore and is retrieved by mysterious figures.",
+          "airDate": "2018-08-17",
+          "still": "https://image.tmdb.org/t/p/original/sD79oEF8BDzKOZlFy0m9MAbOwdo.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/sD79oEF8BDzKOZlFy0m9MAbOwdo.jpg",
+            "https://image.tmdb.org/t/p/original/omcG1WseYtMi1IlbUl6dZobj3yA.jpg"
+          ]
+        },
+        {
+          "episode": 11,
+          "name": "The Disenchantress",
+          "overview": "Bean travels with Dagmar to her homeland, Maru, where she rescues an old friend and learns of a mysterious prophecy she's expected to fulfill.",
+          "plot": null,
+          "airDate": "2019-09-20",
+          "still": "https://image.tmdb.org/t/p/original/4iKsTBBDA1e2YLBSCCCjBp1YEW4.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/4iKsTBBDA1e2YLBSCCCjBp1YEW4.jpg"
+          ]
+        },
+        {
+          "episode": 12,
+          "name": "Stairway to Hell",
+          "overview": "Bean and Luci concoct a plan to resurrect Elfo. But he'll have to meet them in hell -- if he can get there. Zøg discovers a friend in frozen Dreamland.",
+          "plot": null,
+          "airDate": "2019-09-20",
+          "still": "https://image.tmdb.org/t/p/original/vkv4gpMY59sgPqVgV5ItoZ0NkO0.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/vkv4gpMY59sgPqVgV5ItoZ0NkO0.jpg"
+          ]
+        },
+        {
+          "episode": 13,
+          "name": "The Very Thing",
+          "overview": "Bean and her friends return to Dreamland but don't receive a warm welcome from Zøg. Oona inspires a lackluster band of pirates who rescue her at sea.",
+          "plot": null,
+          "airDate": "2019-09-20",
+          "still": "https://image.tmdb.org/t/p/original/kq0vUaMF0OZs2TciMt6T286qg6J.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/kq0vUaMF0OZs2TciMt6T286qg6J.jpg"
+          ]
+        },
+        {
+          "episode": 14,
+          "name": "The Lonely Heart Is a Hunter",
+          "overview": "Bean dreams about her mother and finds mystical Maruvian symbols around the castle. Zøg falls for an unusual woman he meets in the Enchanted Forest.",
+          "plot": null,
+          "airDate": "2019-09-20",
+          "still": "https://image.tmdb.org/t/p/original/cu1jF1sFvZEZZr7fYOICWZhS2EP.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/cu1jF1sFvZEZZr7fYOICWZhS2EP.jpg"
+          ]
+        },
+        {
+          "episode": 15,
+          "name": "Our Bodies, Our Elves",
+          "overview": "With a health crisis in Elf Alley, Bean and Elfo make a dangerous journey to find an ancient cure while Luci scams sick elves at his new clinic.",
+          "plot": null,
+          "airDate": "2019-09-20",
+          "still": "https://image.tmdb.org/t/p/original/sYjbbHWrfg02hsWXNBkao1Diipj.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/sYjbbHWrfg02hsWXNBkao1Diipj.jpg"
+          ]
+        },
+        {
+          "episode": 16,
+          "name": "The Dreamland Job",
+          "overview": "Learning that the elves are starving because of Zøg's excessive taxes, Bean plans a heist with a passing band of circus performers to recover the money.",
+          "plot": null,
+          "airDate": "2019-09-20",
+          "still": "https://image.tmdb.org/t/p/original/7ncG8gXt8UCSH5nY8ldudoyzy4z.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/7ncG8gXt8UCSH5nY8ldudoyzy4z.jpg"
+          ]
+        },
+        {
+          "episode": 17,
+          "name": "Love's Slimy Embrace",
+          "overview": "Despondent because Bean dislikes him and his mother's away, Derek makes friends with a slimy sea creature. Zøg tries to contract a rich man's disease.",
+          "plot": null,
+          "airDate": "2019-09-20",
+          "still": "https://image.tmdb.org/t/p/original/cVNgIX4EMK3ymaC8YRCBjNRsn5N.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/cVNgIX4EMK3ymaC8YRCBjNRsn5N.jpg"
+          ]
+        },
+        {
+          "episode": 18,
+          "name": "In Her Own Write",
+          "overview": "While Zøg refuses to face his feelings about Dagmar's betrayal, Bean writes to deal with her pain. But she faces obstacles to sharing her work.",
+          "plot": null,
+          "airDate": "2019-09-20",
+          "still": "https://image.tmdb.org/t/p/original/5qbxXtw345Y4mcW4o88AGQwixLZ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/5qbxXtw345Y4mcW4o88AGQwixLZ.jpg"
+          ]
+        },
+        {
+          "episode": 19,
+          "name": "The Electric Princess",
+          "overview": "When a scientific man appears in Dreamland, he's regarded with suspicion. But Bean helps him escape and travels with him to a wondrous steampunk city.",
+          "plot": null,
+          "airDate": "2019-09-20",
+          "still": "https://image.tmdb.org/t/p/original/wnnpAGpPeufmpUuImh0xJo7yy7y.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/wnnpAGpPeufmpUuImh0xJo7yy7y.jpg"
+          ]
+        },
+        {
+          "episode": 20,
+          "name": "Tiabeanie Falls",
+          "overview": "With King Zøg incapacitated, Odval makes a power play, assisted by the Arch Druidess. Luci and Elfo try to help Bean.",
+          "plot": null,
+          "airDate": "2019-09-20",
+          "still": "https://image.tmdb.org/t/p/original/u6XunkNVwv9xS6ZXYEQeoItNIpr.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/u6XunkNVwv9xS6ZXYEQeoItNIpr.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 2,
+      "name": "Season 2",
+      "airDate": "2021-01-15",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Subterranean Homesick Blues",
+          "overview": "Bean, Elfo and Luci become trapped in an underground world full of eerie little creatures — and Queen Dagmar. Zøg tries to thwart a plot against him.",
+          "plot": "Zøg wonders what is left of Dreamland. Oona gets on Dagmar's boat to warn Bean, but is incapacitated by Dagmar. She is kicked off, but grabs Dagmar's eternity pendant, and rests at the bottom of the sea tied to an anchor. Bean and Dagmar arrive at Maru where the Enchantress (Becky) and Cloyd are. They are actually Dagmar's siblings with Jerry, their servant, as their younger brother. Dagmar tells Bean that Zøg did not want her to come because their family has a history of being murderous and crazy; something Bean believes could be true for her. She slowly becomes suspicious of Becky and Cloyd and with the help of Jerry discovers a sinister plot. She is horrified to discover that Dagmar was the one who turned the kingdom to stone and that she was born, solely to fulfill a satanic prophecy. Bean finds Luci in the basement where Dagmar, Cloyd and Becky chase them. Bean accidentally blows up the basement as she and Luci escape. Using a spying flame, they discover that Elfo is in Heaven and tell him to literally go to Hell so they can meet him. Luci opens a stairway to Hell and Dagmar arrives to wrestle with Bean before she is knocked out by Jerry who slowly dies from an earlier injury. Bean and Luci begin their descent.",
+          "airDate": "2021-01-15",
+          "still": "https://image.tmdb.org/t/p/original/t9z63sz5vKtDfbmMGVruLGA3HUF.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/t9z63sz5vKtDfbmMGVruLGA3HUF.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "You're the Bean",
+          "overview": "As Zøg attempts to escape a harrowing situation, Derek discovers a book that implies his family is cursed. Bean hatches a plan to escape from Trøgtown.",
+          "plot": "Zøg encounters Merkimer, still in pig form, and they decide to hang out. The Bozaks arrive, and, while looting the castle, kidnap Merkimer. Zøg regains his courage and strength to slay the Bozaks. Meanwhile, Elfo is in Heaven when he gets Bean and Luci's message. He tries to anger God, but God only finds his insults amusing rather than offensive. After insulting Jerry, who ended up in Heaven, God angrily sends Elfo to Hell. Bean and Luci arrive in Hell and discover that Elfo made it too, but has been sent somewhere to be tortured. While searching the archives, they are confronted by Asmodium, Luci's superior. Luci reveals he tricked Bean and Elfo into coming to Hell, and Asmodium rewards him with a promotion. Bean and Elfo end up being tortured together, watching a loop of when Bean chose to revive her mother instead of Elfo. Elfo is enraged and heartbroken that Bean chose her mother, while Bean tells him it was the worst mistake of her life. As they insult each other and Luci, Luci arrives to break them out, as he needed the wings from his promotion to escape from Hell. The trio is confronted by Asmodium, and Luci once again sells out his friends. Asmodium makes Luci into a higher level demon, and Luci uses his newfound powers to save his friends – despite Asmodium warning him that he will lose his immortality. The three friends escape Hell through a volcano, and Luci loses his wings. They immediately find Elfo's body and Bean puts his soul back in to revive him. The three friends happily hug each other while God and Jerry look on from Heaven.",
+          "airDate": "2021-01-15",
+          "still": "https://image.tmdb.org/t/p/original/gHXQr4PY4uduu6IQzloEiKl4hW9.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/gHXQr4PY4uduu6IQzloEiKl4hW9.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Beanie Get Your Gun",
+          "overview": "Zøg's acting strange, and Bean investigates to learn why. Meanwhile, a despondent Derek finds some surprising mentors in the Enchanted Forest.",
+          "plot": "Bean, Elfo and Luci realize that they are on mermaid island. After spending the night, as well as getting a spa treatment, the three leave on a boat left on the island. They head out where Elfo is still upset over being left for dead in favor of Dagmar, but he pushes those feelings aside in the meantime. They finally arrive at Dreamland where Zøg, believing that Bean betrayed him, begins tossing rocks at them, though they manage to get on land. Oona is rescued by pirates who do nothing as their captain is uninterested. She urges them to attack a nearby vessel and learns that the captain is an elf named Leavo. Bean finally manages to get through to Zøg and Oona and pirates arrive demanding treasure. In return they will give them the pendant. Zøg sends Elfo down to the dungeon with Leavo to knock him out, but Leavo discovers something that intrigues him and Elfo reveals Zøg's plan. Leavo decides to help them anyway and he gathers the rest of the elves to use their blood to revive the citizens of Dreamland. Zøg and Oona decide to get a divorce and Derek, who has been stuck in a tower this whole time, takes it well. Oona decides to be the new pirate captain and leaves Dreamland and Zøg on good terms.",
+          "airDate": "2021-01-15",
+          "still": "https://image.tmdb.org/t/p/original/9DVPTWkGZa59EEbs7dSmX0hIvic.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/9DVPTWkGZa59EEbs7dSmX0hIvic.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Steamland Confidential",
+          "overview": "After traveling to Steamland, Elfo enthralls the denizens of an upscale explorers' club while Bean infiltrates a factory in search of the Arch Druidess.",
+          "plot": "Bean keeps having dreams about Dagmar visiting her and playing a music box that sits on her shelf. Infuriating her, she proceeds to look for clues and finds Maruvian symbols scattered throughout the castle. She ends up in a cavern, but after hearing the music box, she runs away scared and breaks and tosses her own box. The elves have moved into their own section of Dreamland where Elfo is reunited with Kissy. She hooks up with Luci, much to Elfo's chagrin and he spends the whole time trying to convince Luci that Kissy does not care about him. Eventually, she breaks up with Luci after realizing that she loves herself more than him and the numerous other dates she has had. Zøg is sad over his love life and decides to go hunting, where he encounters Ursula, a selkie who transforms from a bear to a human. He hits it off with her due to her wild and savage ways. Despite Odval's disapproval, Zøg welcomes her to Dreamland and they spend a day together and have sex. When Ursula desires to go back to the forest, Zøg keeps her bear coat, but sees how unhappy she is and returns it, though she thanks him and waves goodbye. Later at night, Bean sleeps, but awakens to a newly rebuilt music box.",
+          "airDate": "2021-01-15",
+          "still": "https://image.tmdb.org/t/p/original/dFT9d6QWjim5QLnJsKKSZgjnIeq.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dFT9d6QWjim5QLnJsKKSZgjnIeq.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Freak Out!",
+          "overview": "Bean flees when she discovers more about Alva's intentions — and as his lightbulb-headed robots chase her through Steamland, she searches for Elfo.",
+          "plot": "On Wash Day, the elves in Dreamland get sick after ingesting the dirty leftover water. They hold a meeting where Pops, Elfo's father, tells them of the Legenberry Tree that can cure any ailment, but is in the possession of the ogres. They get a volunteer in the form of \"Handsome\" Wade Brody Jr. and Elfo and Bean join him while Luci stays behind to \"nurse\" the elves back to health. While traveling through the jungle, Elfo learns that Wade is a phony and has been stealing tall tales from a book. He abandons them when they get attacked by vines. Elfo and Bean find the ogre village, but they get captured and discover that Wade has been killed. Elfo manages to take out numerous ogres and rescues Bean. When they find the tree, the ogre queen arrives and secretly helps them collect the berries for them and gives them a secret passage to escape. As they leave, the queen ponders on Elfo's name. Elfo and Bean make it back and use the berries to heal all the elves, with Pops revealing that he stole Elfo's college fund.",
+          "airDate": "2021-01-15",
+          "still": "https://image.tmdb.org/t/p/original/zZNNwHPYekQIzv0rABc7MJSLhAc.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/zZNNwHPYekQIzv0rABc7MJSLhAc.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Last Splash",
+          "overview": "On their return trip to Dreamland via steamboat, lovelorn Elfo winds up in an unusual relationship while Bean gets close to Mora the mermaid.",
+          "plot": "After being paraded through town in a shame barrel, Bean angrily resents Zøg and his bossiness, especially when he has begun overtaxing the elves. Overhearing her, an elf named Grifto offers his services to steal from him. Owning a circus, they plan to steal from Zøg's now full money vault and return all of the gold to the elves. Meanwhile, Luci takes control of the bar they frequent by and renames it Luci's Inferno. Bean convinces Zøg to have the elf circus perform for them and by doing so, allows her, Elfo and the others to sneak down and steal the gold. During the performance, Zøg admits that he was wrong to tax the elves and plans on giving back the money. When Bean goes to tell Grifto, he and his circus betray her and Elfo by revealing that they are, in fact, trolls, stealing for themselves. Bean and Elfo chase down the trolls, but are too late. Luckily, Luci caught on to their plan and switched the gold out with chocolate coins. As Bean, Elfo and Luci return the gold, Zøg bathes in the elves praise of him.",
+          "airDate": "2021-01-15",
+          "still": "https://image.tmdb.org/t/p/original/nKlMw5PDUbEZ46N40v096Iw96Yl.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/nKlMw5PDUbEZ46N40v096Iw96Yl.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Bad Moon Rising",
+          "overview": "Bean overhears Odval and the council plotting against Zøg, so she joins forces with Oona to undermine their plan while Elfo and Luci raise an army.",
+          "plot": "Another night of boredom leads Zøg to invite his friend, the Duke, over for dinner. To get out of his hair, Bean, Elfo and Luci head down to the bar. Derek follows them as he is lonely, but Bean tells him to leave as she does not like having him around. Bean has always had some animosity towards her half-brother due to him being Zøg's successor and considers him a loser. Derek solemnly heads to the beach where he finds a small one eyed octopus whom he names Slimy. Zøg learns that the Duke has gout. He claims that when a royal gets gout that means they are successful. Zøg has Luci feed him many unhealthy things to get the disease, leading to another visit from the Duke who reveals that he had his foot amputated. After four days of caring, Slimy has grown in size and has begun killing people after witnessing Derek playing with Elfo. He drags Derek away and Bean and Elfo race to rescue him. They manage to secure Derek and escape the monster island. Afterwards, Derek is amazed that Bean rescued him even though she said she hated him.",
+          "airDate": "2021-01-15",
+          "still": "https://image.tmdb.org/t/p/original/7GSIr1rIT88EkQTNuOvj0shgXzc.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/7GSIr1rIT88EkQTNuOvj0shgXzc.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Hey, Pig Spender",
+          "overview": "After trying to help Prince Merkimer lift the curse that turned him into a pig, Bean asks his parents for resources to thwart the threat from Steamland.",
+          "plot": "Bean continues to have nightmares about Dagmar. She learns through Zøg that the reason the kingdom is called Dreamland is because the castle contains mysterious powers that affect your dreams and nightmares and that she needs to overcome them. Bean goes out at night and comes across The Jittery, a café. Miri, an employee, convinces Bean to literally write her feelings down. With support from Luci, Bean begins writing, but gets inspiration from Merkimer and Elfo to make it a play instead. After completing it, she is shocked to learn that women are not allowed to perform in plays. Merkimer sells the script himself, but takes credit as author. He pays Bean, but she is still upset about the credit. Odval and the Druidess inform Zøg about the play and he decides to see it. Bean stops by the Jittery and decides to give a spoken word account about her life. Zøg dislikes the play and leaves in anger, but stops by the café to listen to Bean. They both come to terms with Dagmar's betrayal of them and the head home together.",
+          "airDate": "2021-01-15",
+          "still": "https://image.tmdb.org/t/p/original/9PKrG9Dx4vY8hI2ITUQ6Inp4uz9.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/9PKrG9Dx4vY8hI2ITUQ6Inp4uz9.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "The Madness of King Zøg",
+          "overview": "As a mysterious cloud of green smoke moves toward Dreamland and Zøg becomes more unstable than ever, Bean finds a unique way to communicate with him.",
+          "plot": "While out in Elf Alley, a dragon appears and begins setting fire to the town. Bean and the knights race after it with the former firing an arrow. The dragon turns out to be a giant mechanized air ship flown by a man named Skybert Gunderson. Skybert is captured and, due to the kingdom's basic understanding of science, believe he is an enchanter and imprison him. Curious, Bean breaks into the prison and helps him build a radio to contact his allies. They escape in his submarine and head back to Steamland, his home. Upon reaching his home, Skybert tells Bean to stay, but she leaves and explores Steamland and its many oddities. She arrives at Skybert's workplace and discovers that he and his coworkers have been planning to overthrow Zøg. Bean escapes in one of the sky vehicles and fights Skybert; knocking him out and taking his bag. She makes it back to Dreamland where she tells Zøg about the plot, but while arguing over a \"dragon whistle\", actually a gun, it goes off and shoots Zøg. As he falls over, Bean rushes to his side and cries over his body.",
+          "airDate": "2021-01-15",
+          "still": "https://image.tmdb.org/t/p/original/i9EX5Tr2WHG4MYzIVnAhzZ1tHki.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/i9EX5Tr2WHG4MYzIVnAhzZ1tHki.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Bean Falls Down",
+          "overview": "Bean's having a stressful day! First, an old nemesis arrives, acting suspiciously contrite. Then, vicious ogres invade and won't leave without Elfo.",
+          "plot": "As Zøg is taken away to be treated, poorly, Odval and the Druidess pin the blame of his \"assassination\" on Bean. Derek is crowned king, but Odval is the acting regent. As everyone tries to get Bean to confess to being a witch, Odval makes his move on taking over the kingdom. Derek goes to a sick Zøg for advice, who tells him to listen to his gut. At the trial, Luci acts as Bean's attorney and the witnesses all point out some way Bean had affected them. Elfo tries to explain about how Bean went to Hell to save him, but his poor explanation further pushes everyone to believe she is a witch. Derek tries to reach a decision later. Stan the Executioner frees Bean, Elfo and Luci from prison and the three go to see Zøg to remove the bullet. They are captured and set to be burned at the stake. Derek cannot bring himself to do it, so Odval does. As Luci explains that he lost his immortality, they fall through the ground and end up in a catacomb. They are found by subterraneans, called Trøgs, and Dagmar who still has the music box as she greets Bean and her friends.",
+          "airDate": "2021-01-15",
+          "still": "https://image.tmdb.org/t/p/original/cZaLP0yvcojPdXbXBsws7oDjljY.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/cZaLP0yvcojPdXbXBsws7oDjljY.jpg"
+          ]
+        },
+        {
+          "episode": 11,
+          "name": "Love Is Hell",
+          "overview": "In hell, Bean resists Dagmar's attempts to force her to marry Satan. Meanwhile, Luci plots to flee heaven and Elfo tries to escape from the ogres.",
+          "plot": null,
+          "airDate": "2022-02-09",
+          "still": "https://image.tmdb.org/t/p/original/6Hzn9S5xD1mcllVYiflos7sKUeA.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/6Hzn9S5xD1mcllVYiflos7sKUeA.jpg",
+            "https://image.tmdb.org/t/p/original/g6OCiZo2rDn38sdBK60MhwHvCWe.jpg"
+          ]
+        },
+        {
+          "episode": 12,
+          "name": "The Good, The Bad, and the Bum-Bum",
+          "overview": "Bean, Jerry and Luci commandeer an airship from Alva. Held captive by the ogres, Elfo discovers an entire family history he knew nothing about.",
+          "plot": null,
+          "airDate": "2022-02-09",
+          "still": "https://image.tmdb.org/t/p/original/dlnTWLTWQbniI0xHpvIJkj9BJcN.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dlnTWLTWQbniI0xHpvIJkj9BJcN.jpg",
+            "https://image.tmdb.org/t/p/original/pvqVMQhed4ttmAs8Ofjp1He1FHR.jpg"
+          ]
+        },
+        {
+          "episode": 13,
+          "name": "The Cabinet of Dr. Chazzzzz",
+          "overview": "Zøg is institutionalized with Chazzzzz, while Vip and Vap launch an epic rescue. Bean doesn't get the warm reception she expects at Dreamland.",
+          "plot": null,
+          "airDate": "2022-02-09",
+          "still": "https://image.tmdb.org/t/p/original/7GJhVjcjqed5mgnHoErd4piLDIV.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/7GJhVjcjqed5mgnHoErd4piLDIV.jpg",
+            "https://image.tmdb.org/t/p/original/kmmpbgWs5wTOXXREH3JNpYvXsYF.jpg"
+          ]
+        },
+        {
+          "episode": 14,
+          "name": "Goon Baby Goon",
+          "overview": "Bean and her friends are reunited with Zøg and discover that Becky and Cloyd have seized Dreamland, secretly transforming its citizens into goons.",
+          "plot": null,
+          "airDate": "2022-02-09",
+          "still": "https://image.tmdb.org/t/p/original/onSD7dyzPlXA3BDFt9aAMGKKZTe.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/onSD7dyzPlXA3BDFt9aAMGKKZTe.jpg",
+            "https://image.tmdb.org/t/p/original/q9Kfx3L18NuUiGeXWuK5qllrXig.jpg"
+          ]
+        },
+        {
+          "episode": 15,
+          "name": "The Pitter-Patter of Little Feet",
+          "overview": "After Sorcerio brings Freckles to life, the wooden puppet sets out to undermine Zøg with a comedy roast and an alliance with Becky and Cloyd",
+          "plot": null,
+          "airDate": "2022-02-09",
+          "still": "https://image.tmdb.org/t/p/original/x4I5q7AH6hNtJR0j9A2HvWTMu2F.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/x4I5q7AH6hNtJR0j9A2HvWTMu2F.jpg",
+            "https://image.tmdb.org/t/p/original/qaveNFZlUnWM68tDpCNPswgi31E.jpg"
+          ]
+        },
+        {
+          "episode": 16,
+          "name": "What to Expect When You're Expecting Parasites",
+          "overview": "Zøg, Bean and her friends plunge into the ocean, where they find a submerged castle inhabited by Sea Trøgs guarding a treasure linked to the Elves.",
+          "plot": null,
+          "airDate": "2022-02-09",
+          "still": "https://image.tmdb.org/t/p/original/bCgzCPZACirzpM147qwbvNJUnIM.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/bCgzCPZACirzpM147qwbvNJUnIM.jpg",
+            "https://image.tmdb.org/t/p/original/7DNj5sTdMLb9FH4lvNj6ol6RHfs.jpg"
+          ]
+        },
+        {
+          "episode": 17,
+          "name": "The Unbearable Lightning of Bean",
+          "overview": "Lonely Zøg searches the forest for his true love, Ursula the Bear, who's got a secret. Elfo, Luci and Bean stumble upon the site of an ancient battle.",
+          "plot": null,
+          "airDate": "2022-02-09",
+          "still": "https://image.tmdb.org/t/p/original/rqFiIWz8bbWT2a0rfkwdJx9rDEo.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/rqFiIWz8bbWT2a0rfkwdJx9rDEo.jpg",
+            "https://image.tmdb.org/t/p/original/AkBFhUivH662qaDM6tqB09FwGE0.jpg",
+            "https://image.tmdb.org/t/p/original/lx56LWGNMO7QaNQgiVAKY5j7JOk.jpg"
+          ]
+        },
+        {
+          "episode": 18,
+          "name": "Spy Vs. Spy Vs. Spy",
+          "overview": "Ordered to spy on the elves, Elfo is captured and forced to spy on the Trøgs - who see through his disguise and return him to spy on the humans.",
+          "plot": null,
+          "airDate": "2022-02-09",
+          "still": "https://image.tmdb.org/t/p/original/cyc7UGyvATNAb5tSlHMrjfr5kjR.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/cyc7UGyvATNAb5tSlHMrjfr5kjR.jpg",
+            "https://image.tmdb.org/t/p/original/c8y2O0RQDk87vyCbOpu5cDJzet7.jpg"
+          ]
+        },
+        {
+          "episode": 19,
+          "name": "The Goo-Bye Girl",
+          "overview": "Freckles manipulates Derek and Bear Boy into confronting some bullies. The secret of the goo is out but who will drink it to become the savior?",
+          "plot": null,
+          "airDate": "2022-02-09",
+          "still": "https://image.tmdb.org/t/p/original/eHpHQpbhNp0sT9GwwodkbrbJ3WD.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/eHpHQpbhNp0sT9GwwodkbrbJ3WD.jpg",
+            "https://image.tmdb.org/t/p/original/zEGciTk7Beh7Sz5maRs6Kal8SG6.jpg"
+          ]
+        },
+        {
+          "episode": 20,
+          "name": "Bean Falls Apart",
+          "overview": "In her dreams, Bean confronts her inner \"Bad Bean\" but the evil doppelgänger conceals a sinister plot. Derek, Bear Boy and Freckles get captured.",
+          "plot": null,
+          "airDate": "2022-02-09",
+          "still": "https://image.tmdb.org/t/p/original/w3GKFNA7KaJCi91aRrfvWPTLPLW.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/w3GKFNA7KaJCi91aRrfvWPTLPLW.jpg",
+            "https://image.tmdb.org/t/p/original/pHFlBCddmz4msfMzk4DoFGfI365.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 3,
+      "name": "Season 3",
+      "airDate": "2023-09-01",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Heads or Tails",
+          "overview": "Queen Dagmar interrogates the Dreamland townsfolk to find out who's hiding Bean's body. Meanwhile, Luci reconnects with his estranged father.",
+          "plot": "Dagmar welcomes Bean, Elfo and Luci to the home of the Trøgs. While Bean tries to leave with Luci and Elfo, the complex tunnels prevent her and she reluctantly decides to stay. She further wonders what her mother is doing and Elfo starts a romantic relationship with a Trøg named Trixie. Zøg begins to recover from his injuries, but Odval and the Arch Druidess inform Pendergast to kill him if he fully does, despite his reluctance. The villains want to use Derek to enforce their own laws, but at the suggestion of Merkimer, he decides to make up his own rules, much to their consternation. Using the tunnels, Elfo is able to sneak into the castle and inform Zøg that Bean is alive. Bean learns that her father still lives and happily embraces Dagmar. Later that night, Bean continues to search the caverns and discovers that Dagmar has been feasting on the brains of the Trøgs while they are still alive. Zøg plans with Pendergast to have his body shipped away in a coffin. However, the Arch Druidess finds out, kills Pendergast, and buries Zøg alive.",
+          "airDate": "2023-09-01",
+          "still": "https://image.tmdb.org/t/p/original/dOp8ANYJfwnJ0HjFAgVLPG6Sd9R.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dOp8ANYJfwnJ0HjFAgVLPG6Sd9R.jpg",
+            "https://image.tmdb.org/t/p/original/g1myyQuR8JJpHyVKrywu8eHNfD.jpg",
+            "https://image.tmdb.org/t/p/original/xdvJBtpzEgLMjB57CGdnzvRR4uP.jpg",
+            "https://image.tmdb.org/t/p/original/wvEHXrCVg2Zid9QsqbqwjaUM7UL.jpg",
+            "https://image.tmdb.org/t/p/original/pptXm3ZRq57gYaBFwyjQLNpxlDu.jpg",
+            "https://image.tmdb.org/t/p/original/6UFCNPtL5ctLPjUFsaawvTCPvRT.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Fish Out of Water",
+          "overview": "While Bean and the crew try to find a place to dispose of the body, King Zøg battles cops, robots and an angry mob to rescue his three sons.",
+          "plot": "After Dagmar's secret is discovered, Bean, Elfo and Luci end up in a dungeon where they encounter the pirate Leavo, who is now a prisoner. After the trio escape with the help of Trixy, a plan is devised to take advantage of Bean's resemblance to her mother. She dresses in Dagmar's clothes and attempt to gain the Trog's help while Elfo distracts Dagmar as a masseuse. But the ruse is discovered, although Bean is able to convince the Trogs that Dagmar is the impostor. At the same time, Zøg futilely tries to escape his coffin, before being seized by a group of grave-robbing Trogs and escaping into the caves, finding Bean and the others. Unfortunately, Bean blows her cover embracing him, and they soon try to escape Dagmar's grasp once again. In doing so, they create a light symbol that marks them as \"the saviors\", and Bean orders the Trogs to throw Dagmar out, although she escapes, and the others leave the caves. Meanwhile, on the surface, a walrus has been placed as a decoy for Zøg, and Derek decides to make up his own decrees against the wishes of Odval and the archdruidess. While hiding in his room, Derek finds a book with a secret history of the kings of Dreamland, but with the last few pages torn out, and is found by Odval. Later that night, Odval and the Arch Druidess observe Bean and company climbing out of the caves.",
+          "airDate": "2023-09-01",
+          "still": "https://image.tmdb.org/t/p/original/trPzZLacK9EL3S2umjrBvHkrGrw.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/trPzZLacK9EL3S2umjrBvHkrGrw.jpg",
+            "https://image.tmdb.org/t/p/original/2U5GnIO5rlWsKQRv1aLj5GFs019.jpg",
+            "https://image.tmdb.org/t/p/original/dNanbaQMWT0VMELvk0HirIF4RjF.jpg",
+            "https://image.tmdb.org/t/p/original/6nnkAZFMTdMAXMwi5PeKCdyeMGL.jpg",
+            "https://image.tmdb.org/t/p/original/rfZ3eoD00ntihpaJLO2DrlynNEj.jpg",
+            "https://image.tmdb.org/t/p/original/u8G3HTaN7VCe5KaU08fRQvlXQlG.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Electric Ladyland",
+          "overview": "After Malfus foretells an ominous prophecy, Bean and Mora travel to Steamland to reconnect with Zøg — but first they must decode a cryptic message.",
+          "plot": "Derek welcomes Bean and Zøg back into Dreamland. He pardons Bean, and relinquishes the crown back to Zøg. Zøg’s erratic behavior raises some concern, and Bean tries to investigate its cause. Meanwhile, Derek gets locked out of the castle and tries to make some friends. He ends up being taken advantage of due to his gullibility, until he meets fairy Sagatha. Sagatha and her fairy friends teach Derek some wisdom and street smarts, after which Derek proposes to Sagatha. Bean finds Pendergast’s headless body in his own locker. There is a gunshot through his armor, which prompts Bean to reach into the armour, subsequently pulling out a bullet. Bean searches the castle for the gun, with the help of the crystal ball and Ms. Moonpence. She hides the gun in her room after locating it in Odval’s globe. Derek returns to Dreamland, and a wedding is held for him and Sagatha after receiving Zøg’s blessing. During the ceremony, a sharp-eyed Derek notices the gun hidden in the Arch Druidess’ sleeve, and halts the wedding. The Arch Druidess escapes on a motorcycle, but accidentally drops a roadmap to Steamland.",
+          "airDate": "2023-09-01",
+          "still": "https://image.tmdb.org/t/p/original/eZz6ziFCYGJX3uo3lcUop3PNsuh.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/eZz6ziFCYGJX3uo3lcUop3PNsuh.jpg",
+            "https://image.tmdb.org/t/p/original/mFDYC2IFiE8dvQL3B8qYaVppOtg.jpg",
+            "https://image.tmdb.org/t/p/original/w3LXMAxODjQyZCwPKXT4KOAhDvb.jpg",
+            "https://image.tmdb.org/t/p/original/rAxxMfPLMY0PM2iL5UITEaxF4hh.jpg",
+            "https://image.tmdb.org/t/p/original/AkCnMwXybsGaj6HBtbNIc0FjO0e.jpg",
+            "https://image.tmdb.org/t/p/original/jcdwgwOse6Ebdrnv1UgE66lJzB8.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "I Hear Your Noggin, But You Can't Come In",
+          "overview": "Zøg, Bean and Mora search for a way into the Freak Show to free Derek, Bear Boy and Freckles. Then, Elfo and the crew elude a persistent Bad Bean.",
+          "plot": "Bean and Elfo go after the Arch Druidess, while Luci stays with Zøg (who is having a mental breakdown) in Dreamland. When they arrive in Steamland Bean infiltrates the Gunderson factory to find the Arch Druidess, and Elfo is taken into an upscale explorers club impressing everybody with tales about his past adventures when a strange man notices a pin on the clothing he stole. At the factory Bean meets a man named Gordy while working there. In the end she realizes that Gordy is actually Alva Gunderson the founder of the company, and he wants to make a deal because of some sort of magic that is powerful and in Dreamland. He is the one who sent his brother Skybert to Dreamland in part two, and hired the Arch Druidess to lure Bean to Steamland, though he denies any knowledge of the Arch Druidess' acts of murder and has her taken away, but not before she warns Bean not to trust Alva. At the prestigious club, the other patrons are impressed by Elfo, until a man who owns a freak show comes in and takes Elfo for his collection.",
+          "airDate": "2023-09-01",
+          "still": "https://image.tmdb.org/t/p/original/5SiXu5VUEud5v9Jj2flntiXQ3tw.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/5SiXu5VUEud5v9Jj2flntiXQ3tw.jpg",
+            "https://image.tmdb.org/t/p/original/53B7erSpG2l4jHY2A4W1aVqShrx.jpg",
+            "https://image.tmdb.org/t/p/original/hky023wxY3ycEZn0hnmGfsFISBT.jpg",
+            "https://image.tmdb.org/t/p/original/fUnQZGkEYcUpgmtia5HLTE6Rra7.jpg",
+            "https://image.tmdb.org/t/p/original/aQBbiPkQ2YSbaG3Wi2XwehWaQTV.jpg",
+            "https://image.tmdb.org/t/p/original/xqDeVJocn2oRB2v13eOkL1CSamb.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Who Shot Elfo?",
+          "overview": "Tormented by the mystery of his death, Elfo takes an ill-advised trip to figure out who shot him. Meanwhile, Luci hides Bad Bean's head from Satan.",
+          "plot": "Bean wakes up the next morning and gets mail from Alva, and it opens up to reveal an image of the two of them kissing on a bridge. She runs away and he does everything he can to get her back. She then tries to find Elfo, who is held captured at the freak show and falls in love with his neighbor, a headless psychic named Edith. Bean eventually finds Elfo and busts everyone else out. As Elfo goes to free Edith the owner appears and begins to strangle him, but is knocked out by Edith who actually has a body. She tells Elfo that they can't be together as a curse placed on her causes anyone who falls in love with her to meet a horrible fate. On the pier there are tons of robots who corner Bean and Elfo and Bean screams at them that she has no magic and in that moment lightning shoots from her fingers and takes out the whole place. Zøg continues to act more crazy.",
+          "airDate": "2023-09-01",
+          "still": "https://image.tmdb.org/t/p/original/eLB5wYpRn0Fpr2Pqu5Js2iDFBWC.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/eLB5wYpRn0Fpr2Pqu5Js2iDFBWC.jpg",
+            "https://image.tmdb.org/t/p/original/lvKHWPTsxzS2EZ5fcPRXgVd2mSs.jpg",
+            "https://image.tmdb.org/t/p/original/fGWkgAZiaR4QdxDUtGTxbIykkPE.jpg",
+            "https://image.tmdb.org/t/p/original/1ly5dDV0KzVm10x3niMornfMVc4.jpg",
+            "https://image.tmdb.org/t/p/original/3lJi4QKA9cvS6ZmT3M9VbxZNGbt.jpg",
+            "https://image.tmdb.org/t/p/original/rrclRtPoMGplALhKgopJscTMRat.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "The Stience of Homemade Lightning",
+          "overview": "In the forgotten city of Maru, Bean meets the Queen of the Crones, who encourages her to harness her new special power. Later, Elfo falls for a friend.",
+          "plot": "Elfo and Bean are about to escape, but Elfo reminds Bean of one remaining member of the freak show: Mora. They rescue her from her tank and barely escape on a steamboat, with the help of Mora. Along the way, Elfo begins a strange relationship with the steamboat, while Bean opens up about her feelings for other people with Mora, the mermaid, as they grow closer to one another. They crash land on Mermaid Island, where Mora introduces Bean to her family, and they have a romantic night together. The following day, Bean wakes up and since she does not find Mora's necklace around her neck, believes that everything that happened the day before was a dream, and walks across the beach with Elfo. The final shot of the episode shows the necklace washing up on shore, confirming that the experience with Mora was real.",
+          "airDate": "2023-09-01",
+          "still": "https://image.tmdb.org/t/p/original/iWrPd3iqsms9W7Vzjx1lfMl3Dgy.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/iWrPd3iqsms9W7Vzjx1lfMl3Dgy.jpg",
+            "https://image.tmdb.org/t/p/original/nW6HlUuoaQ3x2B0oiCJhMrQEnBZ.jpg",
+            "https://image.tmdb.org/t/p/original/rgYnIMYkClvMau1djPgYl7ETgJm.jpg",
+            "https://image.tmdb.org/t/p/original/rmEiGkMPwLKGy0ali9PPNnqE6qH.jpg",
+            "https://image.tmdb.org/t/p/original/d3Tqg9w9n3GP2T0cMBNi4fHplqn.jpg",
+            "https://image.tmdb.org/t/p/original/tKXjyc8buL37hw0HchaxFUbCnXR.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Gimme Gimme Shock Treatment",
+          "overview": "As the townsfolk prepare for war, Bean and Zøg land in the Twinkletown Asylum, where the princess makes a stunning realization about her destiny.",
+          "plot": "Bean returns to Dreamland, distraught over her time with Mora, still believing it was a hallucination, but looking back at it lovingly. Oona, who has returned to Dreamland to attend Derek's wedding-gone-wrong, comforts her and secretly believes her that the mermaid encounter was real. Bean later overhears Odval and the other members of the royal council plotting against Zøg, as they did with his brother Yøg, so she tells Oona of her recent discoveries (who is devastated as Yøg was the love of her life) and the two team up in an effort to undermine their scheme, while telling Luci and Elfo to raise an army to protect the kingdom. Luci and Elfo trains the nearly incompetent townsfolk to become well-trained soldiers, but the army is dispersed after seeing Elfo perform a ritual with Trixy and the trogs on the full moon, in which they spank their bare butts at it. Oona and Bean's plan backfires and they are revealed as who they really are, and when Zøg comes down to the basement, he sees them naked and spying on Odval and further descends into a downward spiral, which was the council's plan all along.",
+          "airDate": "2023-09-01",
+          "still": "https://image.tmdb.org/t/p/original/5vSU24zr0XB1Zjqvbgap54UpCAj.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/5vSU24zr0XB1Zjqvbgap54UpCAj.jpg",
+            "https://image.tmdb.org/t/p/original/6pdX7kMPdvlxxmmUNTKH1enMHzH.jpg",
+            "https://image.tmdb.org/t/p/original/szMnkRBlQGNZMDfpKlMwcke78HE.jpg",
+            "https://image.tmdb.org/t/p/original/b2iMkfti5rZskaZ7F2sOd8PXv5i.jpg",
+            "https://image.tmdb.org/t/p/original/yZ4ZAkMmU9C9IKbuu9K4qPtHoyx.jpg",
+            "https://image.tmdb.org/t/p/original/al9A7Ac7Xpo1GcLT0NShgwzdGGM.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "The Battle of Falling Water",
+          "overview": "A battle between the Dreamland army and Dagmar's forces may spell disaster for Princess Bean, unless she can defeat her greatest foe: herself.",
+          "plot": "Prince Merkimer begins to feel depressed since his body and a pig's body were switched in the beginning of season one. Meanwhile, a terrifying monster covered in leaves and mud begins to terrorize the poorer villagers on the outskirts of Dreamland. Bean arrives to investigate, and discovers that it is Merkimer's body, with the brain of a pig. They pretend that it is Merkimer with pig Merkimer talking for it, and return him to his parents in Bentwood, hoping to gain money and weapons. But Merkimer decides to revalue as his status as prince, but is saddened to learn that no one, not even his parents cared about him. Human Merkimer reveals that he has developed intelligence and taken-over Bentwood and tries to drown Bean, Lucy and Elfo in money after Pig Merkimer joins him. Pig Merkimer feels bad and saves them, kills human Merkimer, and the four return to Dreamland with the money that Elfo swallowed and arrows shot at them.",
+          "airDate": "2023-09-01",
+          "still": "https://image.tmdb.org/t/p/original/mNNs90J8qhTkOGmdULdqazyBnZo.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/mNNs90J8qhTkOGmdULdqazyBnZo.jpg",
+            "https://image.tmdb.org/t/p/original/qNpFYpR9LgnQWJvVIc391YzxHDT.jpg",
+            "https://image.tmdb.org/t/p/original/hoYuLIG7CL4P2omV9mhboQkOHnd.jpg",
+            "https://image.tmdb.org/t/p/original/knOHLa8s6euMbPukbrrclwtCVn1.jpg",
+            "https://image.tmdb.org/t/p/original/dD2uT2oyACOTTacJGyq4QBYCORa.jpg",
+            "https://image.tmdb.org/t/p/original/1YUHOTmaOhl82PeRGn5mfLCTk2p.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Darkness Falls",
+          "overview": "With the Crystal Caverns magic flowing throughout the kingdom, only Bean can stop power from falling into the wrong hands — if she can quit moping first.",
+          "plot": "Zøg is locked up in the castle's insane asylum, and begins to speak gibberish. Bean convinces Odval to let her speak to her father, and she is able to get through to him, but later, after a visit from the ghost of Dagmar, he escapes and wanders about the city, confused. Bean follows after him, and eventually finds him wandering into a shop, where he purchases a ventriloquist dummy. He begins speaking in riddles and insults through the dummy, and only Bean can truly understand what he is saying. When a cloud of green smoke can be seen clearing a nearby mountain range, the kingdom begins to worry. Bean speaks to Zøg for advice and he prepares her for the coming attack. However, Zøg's condition still seems to be worsening. Elfo admits that he thinks that Bean is just imagining that what the dummy is saying are actually clues, and that Bean is running the kingdom by herself. After speaking to Zøg one last time, Bean realizes that even he knows about how bad his insanity has gotten, and he requests to be sent away so he can get better. Bean sends him to an unknown location with Chazzzzz.",
+          "airDate": "2023-09-01",
+          "still": "https://image.tmdb.org/t/p/original/mgzk3BMPdIGt2kCTgKweO9kIpph.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/mgzk3BMPdIGt2kCTgKweO9kIpph.jpg",
+            "https://image.tmdb.org/t/p/original/iPpctoxev4dck1UbAhCxUwfBf7f.jpg",
+            "https://image.tmdb.org/t/p/original/xYs6t6GYmgRLzeFW2Suwf2yZipU.jpg",
+            "https://image.tmdb.org/t/p/original/cR8CN823iJ3DL5cpG9CkGyCf518.jpg",
+            "https://image.tmdb.org/t/p/original/r1QbLZiSMBbyqGoJsJie9bfl3EQ.jpg",
+            "https://image.tmdb.org/t/p/original/zBUZzkNKPv337I6ySb2mAxI6b4e.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Goodbye Bean",
+          "overview": "With the fate of Dreamland hanging in the balance, a mother battles her daughter for beauty, power and immortality. But living forever comes at a price.",
+          "plot": "Princess Bean is crowned queen after Zøg is deemed unfit to be king and is taken away for treatment with Chazzzzz. The mysterious green smoke reaches the castle, and turns out to be Big Jo and his lesser-known assistant, Porky, who want to make amends for what they did to Bean, Elfo, and Luci. Bean is untrusting of the exorcist, even though he claims to have changed, and locks him in a dungeon, much to the annoyance of Odval, who wanted to work with Big Jo. Soon after, ogres arrive wanting Elfo, who blinded their prince, but against the wishes of everyone else, she doesn't let them have Elfo and instead fends them off by dumping all the alcohol in the kingdom onto them. Bean, Elfo, and Luci realize that the entire horde of ogres are too much for them to handle alone and hide in the secret library. Elfo, realizing that the ogres will soon come and kill him (and the rest of the kingdom and Bean, as well), sacrifices himself—much to Bean's horror—to the ogres, who take him away instead of killing him. Dagmar arrives in a secret elevator that connects to the secret library, Luci tries to save her but is decapitated by the elevator doors and dies. Dagmar takes Bean to Hell to marry a mysterious man who resembles Satan. Luci wakes up to find himself in Heaven with Jerry and God, much to his dismay.",
+          "airDate": "2023-09-01",
+          "still": "https://image.tmdb.org/t/p/original/iBHAmS2HDnaYSQQDJXcskPJh5Ka.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/iBHAmS2HDnaYSQQDJXcskPJh5Ka.jpg",
+            "https://image.tmdb.org/t/p/original/rQMbwoTK4NAjZAWZYhxxnlucJ5J.jpg",
+            "https://image.tmdb.org/t/p/original/xj96OKUpWYGggSg5bybaFoRRKDq.jpg",
+            "https://image.tmdb.org/t/p/original/aHyQkNIED50xa0xt2mMWVqunuEG.jpg",
+            "https://image.tmdb.org/t/p/original/17ZOQqSc18silDib40YSISQuDcL.jpg",
+            "https://image.tmdb.org/t/p/original/mOnUWeGGAggU8zvfinnS7krGVBD.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "cast": [
+    {
+      "name": "Abbi Jacobson",
+      "character": "Princess Bean (voice)",
+      "episodeCount": 50,
+      "profile": "https://image.tmdb.org/t/p/original/tYTlv2MmiOjPfkOE9ywGAaqllbv.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/545/1364011.jpg"
+    },
+    {
+      "name": "Lucy Montgomery",
+      "character": "Bunty (voice)",
+      "episodeCount": 50,
+      "profile": "https://image.tmdb.org/t/p/original/xF6lY41BTfOgatqvroTsHLy2wes.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/213/534182.jpg"
+    },
+    {
+      "name": "Nat Faxon",
+      "character": "Elfo (voice)",
+      "episodeCount": 50,
+      "profile": "https://image.tmdb.org/t/p/original/i7bsT8ewAjCr7zByWOyCnbrT0x9.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/545/1364012.jpg"
+    },
+    {
+      "name": "Tress MacNeille",
+      "character": "Queen Oona / Prince Derek (voice)",
+      "episodeCount": 50,
+      "profile": "https://image.tmdb.org/t/p/original/gI2LsgByvSffQY34vabVnPmrHzw.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/545/1364016.jpg"
+    },
+    {
+      "name": "David Herman",
+      "character": "The Herald (voice)",
+      "episodeCount": 50,
+      "profile": "https://image.tmdb.org/t/p/original/wexIWmxk2uigMRLJ1WXYHroODuU.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/213/534181.jpg"
+    },
+    {
+      "name": "Maurice LaMarche",
+      "character": "Odval (voice)",
+      "episodeCount": 50,
+      "profile": "https://image.tmdb.org/t/p/original/qCiL3EYAhLcNo0rNj5pczWo9MwG.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/213/534180.jpg"
+    },
+    {
+      "name": "Billy West",
+      "character": "Sorcerio (voice)",
+      "episodeCount": 50,
+      "profile": "https://image.tmdb.org/t/p/original/iNQtBsgV4wr3z5CEEFhR5U4Yedk.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/213/534183.jpg"
+    },
+    {
+      "name": "Eric André",
+      "character": "Luci (voice)",
+      "episodeCount": 50,
+      "profile": "https://image.tmdb.org/t/p/original/e9XlcFnZQiBSQ1vISQVyTOrkIaq.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/545/1364013.jpg"
+    },
+    {
+      "name": "John DiMaggio",
+      "character": "King Zøg (voice)",
+      "episodeCount": 50,
+      "profile": "https://image.tmdb.org/t/p/original/qcbQe71nSlULDsP1OxTqltEKFbl.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Noel Fielding",
+      "character": "Stan the Executioner (voice)",
+      "episodeCount": 50,
+      "profile": "https://image.tmdb.org/t/p/original/1s5hoRdVVQJOX1OAetGfYvfZZrZ.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/213/534216.jpg"
+    },
+    {
+      "name": "Rich Fulcher",
+      "character": "(voice)",
+      "episodeCount": 47,
+      "profile": "https://image.tmdb.org/t/p/original/kL4mcqgTrysG9VzzaAZO7UFdrdd.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Matt Berry",
+      "character": "Prince Merkimer (voice)",
+      "episodeCount": 20,
+      "profile": "https://image.tmdb.org/t/p/original/1UCAuXgzQfeANlLnZFVSuq0OFhR.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/586/1465293.jpg"
+    },
+    {
+      "name": "Meredith Hagner",
+      "character": "Mora (voice)",
+      "episodeCount": 13,
+      "profile": "https://image.tmdb.org/t/p/original/cRXnuFmhZ1FpuuixGaslHZ0B5op.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/545/1364098.jpg"
+    },
+    {
+      "name": "Richard Ayoade",
+      "character": "Alva Gunderson (voice)",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/qHKoy9kP4bsv4G9EkvU4FMUmYkS.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/545/1364097.jpg"
+    },
+    {
+      "name": "Phil LaMarr",
+      "character": "God (voice)",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/xP2kNlsmXtzXq0geutflO4K9mSE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lauren Tom",
+      "character": "Trixy (voice)",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/fTKFspRRQ275AkzvtPERLZnXe0n.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Meredith Pyle",
+      "character": "Elf / Whistler (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/6NKJztwsowBialCvMNxsby6whnp.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/213/534196.jpg"
+    },
+    {
+      "name": "Mark Mothersbaugh",
+      "character": "(voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/AlC27GcWoXfAbP7IbncQyVPXITK.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "LC Powell",
+      "character": "Elf (voice)",
+      "episodeCount": 1,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/213/534196.jpg"
+    }
+  ],
+  "generatedAt": "2026-07-23T19:59:52.551Z"
+}

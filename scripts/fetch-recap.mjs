@@ -191,6 +191,45 @@ const cleanWiki = s =>
     .replace(/\s+/g, ' ')
     .trim();
 
+/**
+ * Wikipedia's canonical title for a show, resolved by search rather than
+ * guessed from the name we hold.
+ *
+ * The name we get from TMDB is styled for a marquee, not for a URL: TMDB
+ * stores "INVINCIBLE", "FROM", "ONE PIECE" in caps, and Wikipedia is
+ * case-sensitive after the first character, so "INVINCIBLE season 1" is a
+ * missing page while "Invincible season 1" is a 44k-character episode list.
+ * That single mismatch reported 0% coverage on shows with complete summaries.
+ *
+ * Guessing the casing does not work — title-casing fixes "INVINCIBLE" but
+ * breaks "BoJack Horseman" into "Bojack". So we ask Wikipedia what it actually
+ * calls the article, and strip the "(… TV series)" disambiguator back to a
+ * base name that the per-season and list-page patterns can be built from with
+ * correct casing. A wrong search hit is caught downstream by the same
+ * character-verification gate that guards every other candidate.
+ *
+ * Returns the base name (disambiguator removed), or null if search finds
+ * nothing — in which case the caller falls back to the raw name it was given.
+ */
+async function resolveWikiTitle(showName, year) {
+  const q = year ? `${showName} ${year} television series` : `${showName} television series`;
+  const url =
+    `https://en.wikipedia.org/w/api.php?action=query&list=search&format=json` +
+    `&srsearch=${encodeURIComponent(q)}&srlimit=5`;
+  const json = await getJSON(url, { headers: { 'User-Agent': WIKI_UA } }, 'Wikipedia search').catch(
+    () => null,
+  );
+  const hits = json?.query?.search ?? [];
+  if (!hits.length) return null;
+
+  // Prefer a hit that is plainly a TV article; fall back to the top result.
+  const pick =
+    hits.find(h => /\((\d{4} )?(American |British )?TV series\)/i.test(h.title)) ?? hits[0];
+  // Strip the parenthetical disambiguator: "Invincible (2021 TV series)" and
+  // "From (American TV series)" both reduce to the base the patterns need.
+  return pick.title.replace(/\s*\((?:\d{4} )?(?:American |British )?TV series\)\s*$/i, '').trim();
+}
+
 async function fetchWikipediaSummaries(showName, maxSeason, verify = null) {
   // Longer-running shows split their episodes onto a dedicated list page
   // ("List of The Expanse episodes") and leave the main article with none, so
@@ -217,20 +256,27 @@ async function fetchWikipediaSummaries(showName, maxSeason, verify = null) {
   // right stills — and then grounded the entire recap in a different
   // programme's plot.
   const year = verify?.year ?? null;
+
+  // The name Wikipedia actually uses, resolved by search, with the raw name as
+  // a fallback. Every pattern below is built from BOTH so a stylized-caps title
+  // ("INVINCIBLE") still reaches its correctly-cased article ("Invincible")
+  // while a name search-resolution gets wrong is still covered by the original.
+  const wikiName = (await resolveWikiTitle(showName, year)) ?? showName;
+  const bases = [...new Set([wikiName, showName])];
+  if (wikiName !== showName) console.log(`  Wikipedia title resolved: "${showName}" → "${wikiName}"`);
+
   const candidates = [
-    ...(year
-      ? [
-          `${showName} (${year} TV series)`,
-          `List of ${showName} (${year} TV series) episodes`,
-          `${showName} (American TV series)`,
-        ]
-      : []),
-    `List of ${showName} episodes`,
-    `${showName} (TV series)`,
-    showName,
-    // Per-season articles, merged. Requested regardless of which season the
-    // caller asked for, then hard-filtered downstream like every other source.
-    ...Array.from({ length: maxSeason }, (_, i) => `${showName} season ${i + 1}`),
+    ...bases.flatMap(b => [
+      ...(year
+        ? [`${b} (${year} TV series)`, `List of ${b} (${year} TV series) episodes`, `${b} (American TV series)`]
+        : []),
+      `List of ${b} episodes`,
+      `${b} (TV series)`,
+      b,
+      // Per-season articles, merged. Requested regardless of which season the
+      // caller asked for, then hard-filtered downstream like every other source.
+      ...Array.from({ length: maxSeason }, (_, i) => `${b} season ${i + 1}`),
+    ]),
   ];
 
   const merged = new Map();

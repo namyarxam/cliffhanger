@@ -1,0 +1,1116 @@
+{
+  "slug": "dragon-prince",
+  "tmdbId": 81046,
+  "tvmazeId": 37675,
+  "matchedBy": "imdb_id",
+  "title": "The Dragon Prince",
+  "overview": "An extraordinary discovery inspires two human princes and an elven assassin to team up on an epic quest to bring peace to their warring lands.",
+  "firstAirDate": "2018-09-14",
+  "network": "Netflix",
+  "poster": "https://image.tmdb.org/t/p/w780/d7PIRa6ez7ZEl9D4JUrnSsmcnVD.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/original/sD3OAmfxHRXWmZFROjRRL3HcPXj.jpg",
+  "backdrops": [
+    "https://image.tmdb.org/t/p/original/sD3OAmfxHRXWmZFROjRRL3HcPXj.jpg",
+    "https://image.tmdb.org/t/p/original/wu6krz32WumVFms7dhvwk49NEdr.jpg",
+    "https://image.tmdb.org/t/p/original/swz6CFaHAtbSFxeMKjR1xaun1U6.jpg",
+    "https://image.tmdb.org/t/p/original/e05euGmBM0RmiPKXncujH7DxdLO.jpg",
+    "https://image.tmdb.org/t/p/original/xHgCMMJbQsoGaAieNSvgxQIsG89.jpg",
+    "https://image.tmdb.org/t/p/original/cClIm0R3kvPvACmcxcVwXY0n5qz.jpg",
+    "https://image.tmdb.org/t/p/original/nX08xqWJ8CX694Nm5oOUiJcNMva.jpg",
+    "https://image.tmdb.org/t/p/original/aIBNxPCyo4yZcK3waGDYvDyXiiV.jpg",
+    "https://image.tmdb.org/t/p/original/bPYJNJyawLzee0YgFQy0uz3vqb7.jpg",
+    "https://image.tmdb.org/t/p/original/xemKrJUA030GxCgoaXBm7Qzwyws.jpg",
+    "https://image.tmdb.org/t/p/original/oElAsA3PYr678FAbJpduGNWIqT8.jpg",
+    "https://image.tmdb.org/t/p/original/8g1RGeVfKjxU4jKj7XpLCz489cE.jpg"
+  ],
+  "throughSeason": 7,
+  "totalSeasons": 7,
+  "showType": "Animation",
+  "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+  ],
+  "status": "Ended",
+  "runtime": 28,
+  "language": "English",
+  "seasons": [
+    {
+      "season": 1,
+      "name": "Book 1: Moon",
+      "airDate": "2018-09-14",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Echoes of Thunder",
+          "overview": "As the human kingdom of Katolis braces for an attack by Moonshadow elves, King Harrow makes plans to send sons Callum and Ezran away to a safe place.",
+          "plot": "A prologue explains the setting: Long ago, humans used dark magic and were driven off by dragons and elves. Now, humans have killed the dragon king and his egg, and war is imminent. Elven assassins assemble to kill the human king Harrow and his heir Ezran. The youngest among them, Rayla, is disavowed after she shows mercy to a guard.",
+          "airDate": "2018-09-14",
+          "still": "https://image.tmdb.org/t/p/original/7edKFWqUIRbK6AtaHKIkwIuWhtL.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/7edKFWqUIRbK6AtaHKIkwIuWhtL.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "What Is Done",
+          "overview": "Determined to make up for her mistake, Rayla sneaks into the castle and corners Callum. Lord Viren offers the king a way to survive the attack.",
+          "plot": "Harrow rejects his advisor Viren's plan to foil the assassins by swapping the king's soul into another body. Rayla infiltrates the castle on her own, intent on killing Harrow and Ezran, but relents after Ezran shows her the dragon king's egg, which was believed to be destroyed.",
+          "airDate": "2018-09-14",
+          "still": "https://image.tmdb.org/t/p/original/9lhqWx6cNoOcdbpjLxbVkEcgLhx.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/9lhqWx6cNoOcdbpjLxbVkEcgLhx.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Moonrise",
+          "overview": "With night falling, Rayla and the princes race to share what they've found and stop the attack. But first they'll have to get past Claudia.",
+          "plot": "Rayla, Ezran and his half-brother Callum decide to return the egg to the dragons to prevent war, but they can convince neither Viren's daughter, the mage Claudia, nor the leader of the assassins, Runaan, of their plan. They are forced to flee with the egg as the other assassins begin their assault. The assassins are defeated, and Runaan is captured, but not before they kill King Harrow.",
+          "airDate": "2018-09-14",
+          "still": "https://image.tmdb.org/t/p/original/uBvvjFKNvESJsiVnJPSxEgpHMvr.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/uBvvjFKNvESJsiVnJPSxEgpHMvr.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Bloodthirsty",
+          "overview": "Excited about his newfound powers, Callum convinces the others to travel to the Banther Lodge for a magic cube. Katolis prepares to crown a new king.",
+          "plot": "King Harrow is cremated and Viren, appointing himself Lord Protector, declares war on the elves. Callum develops his magic talents, using a rare primal stone of sky magic that he stole from Claudia. The three fugitives arrive at the royal winter lodge, where General Amaya, Ezran and Callum's aunt, catches up with them. Rayla's presence incites conflict, and the three flee again.",
+          "airDate": "2018-09-14",
+          "still": "https://image.tmdb.org/t/p/original/bQgfV0aGcTmHLBW0bXJ0vuOT0sI.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/bQgfV0aGcTmHLBW0bXJ0vuOT0sI.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "An Empty Throne",
+          "overview": "Callum struggles to control his magic, General Amaya clashes with Lord Viren, and a trip down the river takes a hair-raising turn.",
+          "plot": "The fugitives continue their journey to the elven lands. Beset by a river monster, Callum electrocutes it with magic. Rayla admits she's trying to redeem her parents, who fled instead of protecting the dragon king. Amaya refuses to let Viren assume the throne, but after she leaves for the border garrison, Viren imprisons her deputy Gren.",
+          "airDate": "2018-09-14",
+          "still": "https://image.tmdb.org/t/p/original/bfNBduxL6WpQR5YhiiaNLogMNAC.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/bfNBduxL6WpQR5YhiiaNLogMNAC.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Through the Ice",
+          "overview": "After a run-in with a soldier, Rayla leads the princes to high ground. Viren gives Soren and Claudia secret orders as they set out on their mission.",
+          "plot": "Rayla fights off Corvus, one of Amaya's trackers searching for the boys. As the fugitives cross the mountains, she reveals that her ritual assassin's armband will eventually cut off her hand if Ezran doesn't die. The egg falls into icy water and loses its luster. Viren orders his son Soren to find and kill the princes, so that Viren can seize the throne.",
+          "airDate": "2018-09-14",
+          "still": "https://image.tmdb.org/t/p/original/gQLFhtafB9hLvFtC8ieeOngRBpT.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/gQLFhtafB9hLvFtC8ieeOngRBpT.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "The Dagger and the Wolf",
+          "overview": "In a nearby village, Callum and Ezran seek help for the egg while Rayla hunts down a magic blade. Claudia collects ingredients for a tracking spell.",
+          "plot": "Disguised as a human, Rayla tries to cut off her armband with a human's magic blade, but fails. The boys seek help for the egg, and the young girl Ellis tells them of a healer who saved Ellis's wolf companion Ava. Soren and Claudia set out to find the princes.",
+          "airDate": "2018-09-14",
+          "still": "https://image.tmdb.org/t/p/original/kSxDkn8k3O2wfbRZr40Al44cxu8.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/kSxDkn8k3O2wfbRZr40Al44cxu8.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Cursed Caldera",
+          "overview": "Ellis leads the friends to the Cursed Caldera but warns it's crawling with nasty monsters. Viren tries to force Runaan to talk.",
+          "plot": "Chased out of town, the fugitives and Ellis seek out the healer atop the Cursed Caldera. A monster leech chases them up a rock, but working together, they manage to defeat it. Viren fails to extract information about his magic mirror from the captive Runaan, and traps his essence in a coin with dark magic.",
+          "airDate": "2018-09-14",
+          "still": "https://image.tmdb.org/t/p/original/bWKMLLBNewR7khgLjwsxx9UWKRB.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/bWKMLLBNewR7khgLjwsxx9UWKRB.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Wonderstorm",
+          "overview": "Ezran, Callum and Rayla each put their special talents to use as they make their way up the mountain in a desperate bid to save the egg.",
+          "plot": "The fugitives are set upon by a giant spider, but Ezran recognizes it as an illusion. The \"healer\" is revealed as Lujanne, an elven illusionist. Callum sacrifices his primal stone to save the egg by hatching it as it can only be born in the center, or the eye, of a storm. The baby dragon Azymondias (\"Zym\") emerges, chewing off Rayla's constricting armband. Using dark magic, Claudia and Soren locate the fugitives' position, which their gloating father notices.",
+          "airDate": "2018-09-14",
+          "still": "https://image.tmdb.org/t/p/original/f3CVwjdMCXgumXaHLEUw6jZNxCl.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/f3CVwjdMCXgumXaHLEUw6jZNxCl.jpg",
+            "https://image.tmdb.org/t/p/original/n7kEMO6C9iRr7DG9JNrO5kLJ0Mo.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 2,
+      "name": "Book 2: Sky",
+      "airDate": "2019-02-15",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "A Secret and a Spark",
+          "overview": "Before marching on toward Xadia, Callum begs Lujanne for a magic lesson, and Ezran tries to teach the dragon prince to fly. But danger is closing in.",
+          "plot": "The High Council opposes Viren's intention to call on the Pentarchy, a summit of all five human kingdoms, so he steals the king's seal in order to be able to do so. Rayla, Callum, Crown Prince Ezran and Ellis recuperate with Lujanne. Lujanne shows Callum the mystical place from which she and her fellow Moonshadow Elves draw their true strength, the Moon Nexus, and tells him that, as a human, he is incapable of performing primal magic on his own, but Callum refuses to give up becoming a primal mage. Under Crown Prince Ezran's tutelage, Zym tries and fails to fly. On patrol, Rayla is ambushed by Claudia and Soren.",
+          "airDate": "2019-02-15",
+          "still": "https://image.tmdb.org/t/p/original/a9vJDa32PtW0SSN6ci7zwlsYEYC.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/a9vJDa32PtW0SSN6ci7zwlsYEYC.jpg",
+            "https://image.tmdb.org/t/p/original/ftaefq44Fe7OtdSRyJMmkZlaWR2.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Half Moon Lies",
+          "overview": "After a fierce showdown with Rayla, Soren and Claudia argue about the best way to deal with the princes. Rayla worries she's kept a secret too long.",
+          "plot": "Viren interrogates his magic mirror but learns nothing. Callum stops the fight between Rayla and Soren. Claudia and Soren attempt to persuade the princes to return with them. On Viren's orders, Soren attempts to engineer an \"accident\" for Ezran but fails because of Rayla. Callum, though seized by his crush on Claudia, rejects her offer to learn dark magic. On a moonlit date, they almost kiss until Claudia reveals that Harrow has died.",
+          "airDate": "2019-02-15",
+          "still": "https://image.tmdb.org/t/p/original/3MXqcvLR6LUsfIEQOxV60L7ARcm.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/3MXqcvLR6LUsfIEQOxV60L7ARcm.jpg",
+            "https://image.tmdb.org/t/p/original/6rK3fPNCXTrWIuqH0WqD2N3aC07.jpg",
+            "https://image.tmdb.org/t/p/original/bKRJvBNhDVDSxChYQiuMpiB477H.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Smoke and Mirrors",
+          "overview": "Callum searches for a way to tell Ezran the sad news, and Rayla sets a trap for Claudia and Soren. Viren watches a mysterious figure in the mirror.",
+          "plot": "Viren views a mysterious elf's room through his mirror. Callum can't bring himself to tell Ezran that his father is dead. Claudia gives Callum a sealed letter from Harrow. She and Soren join the fugitives on their mission, but turn on them and attack. An intervention by Amaya's scout Corvus allows them to escape on Lujanne's phoenix Phoe-Phoe, albeit without Ellis. Soren and Claudia capture Corvus and accuse him of treason as Callum, Ezran and Rayla continue their journey.",
+          "airDate": "2019-02-15",
+          "still": "https://image.tmdb.org/t/p/original/71CfuyjXjFh7T4WGKuR0c4j0vDm.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/71CfuyjXjFh7T4WGKuR0c4j0vDm.jpg",
+            "https://image.tmdb.org/t/p/original/bZbnHQOh2KSwNbdNHV4oZyb8YvV.jpg",
+            "https://image.tmdb.org/t/p/original/xTq18kf9nVi6iQe3k7GvHGtdRpH.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Voyage of the Ruthless",
+          "overview": "After saying goodbye to Phoe-Phoe, the gang teams up with a pirate to cross a bay, where Callum tries to forge a connection with the sky arcanum.",
+          "plot": "Amaya leads a patrol across the border, barely escaping a trap set by Sunfire Elves. The mysterious elf in the mirror notices Viren, and shows him a magical ritual; Viren does not finish the ritual, saying he needs time to think. Callum's group embarks on an ocean crossing on the blind Captain Villads's ship. Callum attempts to reconnect to sky magic, and Zym is struck by lightning.",
+          "airDate": "2019-02-15",
+          "still": "https://image.tmdb.org/t/p/original/2YAFijn8YSWJsCURDAAt4h7p44A.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/2YAFijn8YSWJsCURDAAt4h7p44A.jpg",
+            "https://image.tmdb.org/t/p/original/utDF1tj1DqTOBZl42DOtHpQtA27.jpg",
+            "https://image.tmdb.org/t/p/original/vO4N3DzCRfLgIBn39pLEH2anke0.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Breaking the Seal",
+          "overview": "At the summit of the five kingdoms, Viren fights to win the support of a young queen. Flashbacks reveal a key moment from King Harrow's reign.",
+          "plot": "At the summit, Viren asks for a military alliance against the elves. To convince young Queen Aanya of Duren and the other, half-undecided kingdoms, Viren recounts how Harrow strove to be a just king. He helped Duren in a famine, even though his own people had no food to spare. To allow Viren's dark magic to feed both kingdoms, Harrow undertook a quest to slay a Xadian magma titan.",
+          "airDate": "2019-02-15",
+          "still": "https://image.tmdb.org/t/p/original/8IIfQONVWgY7G5Rl2ZMabOqr85c.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/8IIfQONVWgY7G5Rl2ZMabOqr85c.jpg",
+            "https://image.tmdb.org/t/p/original/gVfjTyFExVaFdaSCk0Cad0XfQRW.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Heart of a Titan",
+          "overview": "The attack on the Magma Titan has devastating consequences for two kingdoms. In his letter, Harrow shares a lie, a secret and a wish for the princes.",
+          "plot": "Viren continues to recount how he, Harrow, Harrow's wife Sarai, Amaya, and Duren's queens – Aanya's mothers – defeated the Titan. But the Dragon King caught up with them, and the three queens and mothers sacrificed themselves to cover the retreat and save Viren. Nonetheless, Aanya rejects Viren's request for military help. Callum reads Harrow's last letter, in which he implores Callum to read history as a narrative of love instead of strength, and informs him about the magical relic he carries: the Key of Aaravos, ancient elven grandmaster of all magic.",
+          "airDate": "2019-02-15",
+          "still": "https://image.tmdb.org/t/p/original/mCFuiZanRCcblOJ6f7twew1q9F2.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/mCFuiZanRCcblOJ6f7twew1q9F2.jpg",
+            "https://image.tmdb.org/t/p/original/jvMUY29iqKQhQ8j8UqRbtNBuJF6.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Fire and Fury",
+          "overview": "When Soren picks a fight with a dragon, chaos breaks out -- and Rayla faces a difficult decision. A defeated Viren returns to the figure in the mirror.",
+          "plot": "Claudia, Soren and the captive Corvus arrive at a town. Soren provokes a dragon into attacking the settlement, but Claudia's magic drives her off. Nearby, Ezran, Callum and Rayla watch the humans chaining up the wounded dragon. Rayla intervenes and, aided by Callum using dark magic, helps the dragon escape.",
+          "airDate": "2019-02-15",
+          "still": "https://image.tmdb.org/t/p/original/aizm5TYfFfcB6WZBmjzeeRBVlmg.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/aizm5TYfFfcB6WZBmjzeeRBVlmg.jpg",
+            "https://image.tmdb.org/t/p/original/9V49xuGluMDLk50jSKuHmBFXb9H.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "The Book of Destiny",
+          "overview": "Callum pays a price for dabbling in dark magic. Claudia searches desperately for a way to help Soren, and Ezran makes a heartbreaking discovery.",
+          "plot": "Corvus catches up to the fugitives, hailing Ezran as king, who thus realizes that Harrow is dead. Traumatized from his use of dark magic, Callum is seized by fever dreams. The elf in the mirror reveals himself to Viren as Aaravos.",
+          "airDate": "2019-02-15",
+          "still": "https://image.tmdb.org/t/p/original/6X1ggQsZrlOeJxbDXAyT8yb5ST3.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/6X1ggQsZrlOeJxbDXAyT8yb5ST3.jpg",
+            "https://image.tmdb.org/t/p/original/dXWAfA5kKlsBGt5jWH2MtmunCbs.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Breathe",
+          "overview": "After using his gift to help Claudia, Ezran makes an important decision about the quest. Callum wakes up with a new understanding of primal magic.",
+          "plot": "Ezran joins Claudia in town, revealing that he can talk to animals, helps her get a cure for Soren, and decides to assume his responsibility as king in Katolis. A vision of his mother helps Callum connect to the sky arcanum, one of the six sources of primal magic. The council has Viren arrested, but not before – with Aaravos's help – he creates shadow creatures to scare the other kingdoms into an alliance. Rayla, Callum and Zym continue their trek into Xadia, but encounter an obstacle in the archdragon Sol Regem.",
+          "airDate": "2019-02-15",
+          "still": "https://image.tmdb.org/t/p/original/zRJghrSCDvDs3NJFTPnVWZuI3PS.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/zRJghrSCDvDs3NJFTPnVWZuI3PS.jpg",
+            "https://image.tmdb.org/t/p/original/t8Bk7zIGzr4xYJQHMQRdkoKD7SY.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 3,
+      "name": "Book 3: Sun",
+      "airDate": "2019-11-22",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Sol Regem",
+          "overview": "To cross into Xadia, Rayla and Callum must find a way past a fearsome dragon who was blinded in a battle with a human.",
+          "plot": "Long ago, Sol Regem, ex-King of the Dragons, killed Ziard, the first human to use dark magic, when the latter refused to abandon the practice; Sol Regem was blinded in the fight. In the present, unable to persuade Sol Regem to let them pass, Callum and Rayla manage to outwit him. While destroying the only accessway across the Breach, Amaya is captured by the Sunfire Elves after saving the life of Janai, their leader. Ezran returns home and assumes the throne of Katolis.",
+          "airDate": "2019-11-22",
+          "still": "https://image.tmdb.org/t/p/original/94441IqeqJ99P0clCjvke7U5hO1.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/94441IqeqJ99P0clCjvke7U5hO1.jpg",
+            "https://image.tmdb.org/t/p/original/3wayXERiMxhH892pu3LcnpmCTb9.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "The Crown",
+          "overview": "At his first High Council meeting, King Ezran faces a flurry of difficult decisions. Rayla guides Callum through a wonderland of magical creatures.",
+          "plot": "Ezran faces the first challenges of his new reign as the other kingdoms, led by Prince Kasef of Neolandia, call for war against Xadia after the attacks of Viren's shadow assassins have resulted in deaths and injuries of important people. Claudia and Soren are arrested as traitors upon arriving home. Despite his youth and inexperience, Ezran decides to bear the burden of kingship, refuses to go to war, and pardons Claudia and Soren.",
+          "airDate": "2019-11-22",
+          "still": "https://image.tmdb.org/t/p/original/dF4zJ1xvXvzhManC375767d9iSw.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dF4zJ1xvXvzhManC375767d9iSw.jpg",
+            "https://image.tmdb.org/t/p/original/fs69goq4y0JED63wOMpe5rn9BAl.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Ghost",
+          "overview": "Rayla returns home to an alarming discovery, the Sunfire elves decide Amaya's fate, and Claudia confronts her father.",
+          "plot": "Rayla takes Callum to her home village, only to discover that she has been made a \"ghost\", a magically cursed outcast, for abandoning her mission of assassination. They manage to make contact with Ethari, Runaan's husband, who aids them in their efforts to reach Zubeia, Zym's mother. After Ezran reveals to his court that Zym has survived, Councilman Saleer conspires with Prince Kasef. Claudia and Soren confront their father about his order for Soren to kill the princes (which Viren denies having given, at Aaravos's advice). Janai persuades her sister, Queen Khessa of the Sunfire Elves, not to execute Amaya.",
+          "airDate": "2019-11-22",
+          "still": "https://image.tmdb.org/t/p/original/zdDoJE5aq9skehUToWPzS5bthuU.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/zdDoJE5aq9skehUToWPzS5bthuU.jpg",
+            "https://image.tmdb.org/t/p/original/oHRveG628NjMKY5j3ehtEznA2Rm.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "The Midnight Desert",
+          "overview": "A mysterious stranger offers Rayla, Callum and Zym a ride across the Midnight Desert. With Katolis in danger, Ezran makes a startling announcement.",
+          "plot": "Ethari's message to Zubeia is intercepted by the roguish Skywing Elf Nyx, who then offers to guide Rayla and Callum through the Midnight Desert, only to steal Zym when the two have an intimate moment. Aaravos enables Viren to make visual contact with him. Kasef and Saleer manipulate Ezran into abdicating and surrendering himself in order to spare his subjects from a war with Neolandia, and Viren is released.",
+          "airDate": "2019-11-22",
+          "still": "https://image.tmdb.org/t/p/original/yo9XED6y6fW68a6qJ6V4JgCxLM1.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/yo9XED6y6fW68a6qJ6V4JgCxLM1.jpg",
+            "https://image.tmdb.org/t/p/original/csPJIvRAk7WJBAsSz5nDoqk46c7.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Heroes and Masterminds",
+          "overview": "Rayla and Callum race across the desert to find Nyx. As Katolis prepares for war, Ezran gets help from an unlikely source.",
+          "plot": "Viren crowns himself King of Katolis, but Opeli, Corvus, Barius and part of the army desert rather than participate in his war against Xadia. Soren helps Ezran and the loyalists escape the castle, and with Lujanne's assistance they send Ezran back to Xadia. Callum and Rayla catch up with Nyx, retrieve Zym from her, and finally confess their growing feelings for each other.",
+          "airDate": "2019-11-22",
+          "still": "https://image.tmdb.org/t/p/original/t52HGuCGe8Pjrl9sYzd7kPWWCah.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/t52HGuCGe8Pjrl9sYzd7kPWWCah.jpg",
+            "https://image.tmdb.org/t/p/original/skv5CsULYQ2RS3U9VGR80MJYMQU.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Thunderfall",
+          "overview": "On the march to Xadia, Viren reveals how Avizandum, the Dragon King, met his end. Phoe-Phoe takes Ezran on an epic journey.",
+          "plot": "Viren leads the human kingdoms to war against Xadia. During the march, Viren tells Aaravos how he and King Harrow slew the dragon king Avizandum in revenge for Sarai's death by turning him to stone with a cursed spear; in turn, Aaravos reveals that he was imprisoned by Avizandum. Ezran rejoins Callum and Rayla at the foot of the Storm Spire, the Dragon King's lair and the Sky nexus.",
+          "airDate": "2019-11-22",
+          "still": "https://image.tmdb.org/t/p/original/7ywS13DvUiuQypBLlylu5AXcYpA.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/7ywS13DvUiuQypBLlylu5AXcYpA.jpg",
+            "https://image.tmdb.org/t/p/original/vaDWycxdrAaIbx8HX40vxJya72A.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Hearts of Cinder",
+          "overview": "As Team Zym begins the steep climb up to the Dragon Queen's lair, Viren and Aaravos play a nasty trick on the Sunfire elves.",
+          "plot": "Aaravos persuades Viren to infiltrate the Sunfire Elf court as a prisoner, allowing him to drain their power focus, the Sunforge, and kill the Sunfire Queen. Viren then infuses the human armies with that power, turning them into inhuman hulks; frightened by the changes in his father, Soren abandons him. Ezran's group reaches the peak of the Storm Spire, where they meet Zubeia's guardian, the Skywing Elf Ibis.",
+          "airDate": "2019-11-22",
+          "still": "https://image.tmdb.org/t/p/original/xMDhGEHCNZh9nDU80RcGp7VkRvE.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xMDhGEHCNZh9nDU80RcGp7VkRvE.jpg",
+            "https://image.tmdb.org/t/p/original/sne7Dlyk0ndFnfWdKMpeXCJkj5L.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Dragonguard",
+          "overview": "With Viren's glowing army closing in on the Storm Spire, Rayla, Callum and friends must decide whether to flee to safety or stay and fight.",
+          "plot": "Zubeia has gone comatose in her grief over losing her mate and her son. Soren travels to the Storm Spire and warns Callum's group about Viren's invasion. Ibis urges Callum to leave and keep Zym safe, but Rayla decides to stay and protect the Dragon Queen as an act of redemption for her parents. Using moon magic, Callum learns that Rayla's parents actually stayed and fought until overpowered, and convinced Viren not to destroy Zym's egg, thus saving the Dragon Prince. Joined by Amaya, Janai and the remnants of the Sunfire Elves' army, the friends prepare to make their stand against Viren.",
+          "airDate": "2019-11-22",
+          "still": "https://image.tmdb.org/t/p/original/x8eYMGqwzwx3sAe66DIPZyFeuCw.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/x8eYMGqwzwx3sAe66DIPZyFeuCw.jpg",
+            "https://image.tmdb.org/t/p/original/wRYhcdOqJE7LWTtO8f256T6aRCK.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "The Final Battle",
+          "overview": "Determined to save the Dragon Prince at any cost, the friends brace for a fiery showdown with Viren -- who still has a few surprises up his sleeve.",
+          "plot": "Viren's army arrives at the Storm Spire, where elves, humans and dragons unite to oppose him. The army of Duren and the Katolian deserters arrive and join on Xadia's side, turning the tide of the battle. Viren uses the distraction to slip into the Dragon King's lair and drain Zym's essence; to save him, Rayla throws herself and Viren off the pinnacle. Callum leaps after them, developing the ability to fly and saving Rayla, while Viren falls to his death. Queen Zubeia reawakens and rejoices in seeing her infant son very much alive, and elves and humans united in friendship and trust. However, Viren is resurrected by Claudia, and Aaravos has built a cocoon to metamorphose.",
+          "airDate": "2019-11-22",
+          "still": "https://image.tmdb.org/t/p/original/vR96TB3ctxg35CrnYq7tZlegGET.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/vR96TB3ctxg35CrnYq7tZlegGET.jpg",
+            "https://image.tmdb.org/t/p/original/ezRx4bmFntnebNrAuiFflYCRApM.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 4,
+      "name": "Book 4: Earth",
+      "airDate": "2022-11-03",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Rebirthday",
+          "overview": "Two years later, Claudia finally completes her resurrection spell, Ezran plans a surprise for Katolis, and Janai takes Amaya on a secret mission.",
+          "plot": "Claudia tells her father that in the two years since the Battle at the Storm Spire, she worked with Aaravos to revive Viren and began dating an Earthblood Elf named Terry. However, she reveals that the resurrection spell will only last thirty days and that Aaravos would be needed in-person to make it permanent, requiring that they break the Startouch Elf out of his prison. In Katolis, King Ezran makes plans for Queen Zubeia and Prince Zym's visit. Callum, now the High Mage in place of Viren, celebrates his seventeen birthday, though it's marred by memories of Rayla leaving him on that very day two years ago to find Viren and seek vengeance for her parents disappearance. At a refugee camp for the Sunfire elves of Lux Aurea, Queen Janai proposes to General Amaya.",
+          "airDate": "2022-11-03",
+          "still": "https://image.tmdb.org/t/p/original/7Ze4elMC8Lfl3nso03Bl4p31aSM.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/7Ze4elMC8Lfl3nso03Bl4p31aSM.jpg",
+            "https://image.tmdb.org/t/p/original/dnXhAU3NcqqdBlfqp3B91uaGeWd.jpg",
+            "https://image.tmdb.org/t/p/original/r2tdh15A6rZzlOU4rkS536B3d0r.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Fallen Stars",
+          "overview": "Facing another journey up the steep Storm Spire, Viren panics. Janai's brother pushes back against her plans. Callum attempts to decode the mirror.",
+          "plot": "To free Aaravos, Viren, Claudia and Terry must retrieve Viren's staff from the tip of the Storm Spire, but due to his death trauma, Viren is struck with severe acrophobia. He expresses doubt about the plan and a desire to live out his remaining thirty days of life to the fullest, yet is dismissed by Claudia, who continues on alone. Terry and Viren bond while resting on the trail. Karim worries about the impact Janai and Amaya's upcoming marriage might have on the Sunfire Empire's cultural pride. Callum finishes translating the runes on Viren's mirror when Rayla unexpectedly returns.",
+          "airDate": "2022-11-03",
+          "still": "https://image.tmdb.org/t/p/original/xxXm9Nz76SxqLD0uyWJebDX0pZK.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xxXm9Nz76SxqLD0uyWJebDX0pZK.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Breathtaking",
+          "overview": "An unexpected visitor leaves Callum reeling. Soren puts on a show to welcome the dragons — while in Xadia, his sister searches their lair.",
+          "plot": "Callum and Rayla's reunion is awkward because of Callum's resentment for her vanishing on him without explanation. Queen Zubeia and Prince Zym arrive in Katolis, but their welcome is darkened by lingering resentments from the humans, whereupon Ezran delivers an empathic speech against the vicious circle of hatred. Claudia finds the Storm Spire's secret treasure vault and the staff, but is challenged by Ibis. Terry fatally stabs Ibis from behind, allowing Claudia to claim the staff. With his last strength, the dying Ibis sends a warning to Queen Zubeia that \"the Fallen Star\" has returned.",
+          "airDate": "2022-11-03",
+          "still": "https://image.tmdb.org/t/p/original/j1E61ECw1akuMti1DcVpw5AkZNH.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/j1E61ECw1akuMti1DcVpw5AkZNH.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Through the Looking Glass",
+          "overview": "The story of Aaravos's dark past comes to light. Claudia prepares to open the chrysalis. The tension between humans and Sunfire elves boils over.",
+          "plot": "In the face of this new crisis, Zubeia returns with Zym to the Storm Spire, with Ezran, Callum, Rayla, and Soren joining her along with the mirror Viren stole from Avizandum. Zubeia reveals that for centuries, Aaravos had secretly pulled the strings behind every major conflict in Xadia by seducing people fascinated by magic, until a human girl, the archdragons and elven archmages worked together to intern him in a magical prison with six component keys and keep him trapped for eternity. As they observe Aaravos through the mirror, Aaravos takes control of Callum, using him to taunt the others before he shatters the pane. Simultaneously, Claudia uses her magic to break open the cocoon, freeing a mute Elf homunculus. In the Lux Aurea refugee camp, a Katolian architect named Lucia is badly injured by a Sunfire Elf after she callously extinguishes a fire he lit for a religious ritual.",
+          "airDate": "2022-11-03",
+          "still": "https://image.tmdb.org/t/p/original/xbgx8fzMZsSZF7CXltouOrts1BK.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xbgx8fzMZsSZF7CXltouOrts1BK.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "The Great Gates",
+          "overview": "While Ezran and team set out on a quest to visit the Archdragon of Earth, Claudia and Viren try to communicate with the mysterious being.",
+          "plot": "After discovering what Claudia did, Ezran's party (sans Zym) and Zubeia depart for Umber Tor, the residence of archdragon Rex Igneous, to collect the first key to Aaravos' prison before Claudia. Upon arriving at Umber Tor, they find the gate blocked by rubble, but the door guards direct them to a secret entrance within the Drakewood, deep within the Uncharted Forest. Rayla and Soren separate from the others to look for the entrance, but when they come upon an Earthblood Elf bullying a drake, Soren impulsively intervenes on the beast's behalf, only to be captured and thrown into a pit alongside the Drakewood. Aaravos' homunculus (named Sir Sparklepuff by Claudia) guides Viren, Claudia and Terry to Umber Tor.",
+          "airDate": "2022-11-03",
+          "still": "https://image.tmdb.org/t/p/original/7t7SJsyjcgRU0q6CddmrHUZGx2i.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/7t7SJsyjcgRU0q6CddmrHUZGx2i.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "The Drakewood",
+          "overview": "Zym helps the friends search the forest for a missing Soren. In the Sunfire elves' camp, Queen Janai calls a tribunal to decide the architect's fate.",
+          "plot": "Just as Ezran, Callum and Rayla realize Soren is missing, they are joined by Zym, who has run away. While trying to help them find Soren, Zym is brought down by the Elven Riders of the Drakewood; while the others save him, they befriend a young Earthblood Elf named N'than. He leads them to the pit, also the secret entrance to Rex Igneous' lair. Janai is forced to bring the incident with Lucia before a tribunal. Lucia is found guilty, but instead of executing her, Janai decrees that she must use her talents to construct a shrine to ensure the Sunfire Elf rites can be conducted without endangering the camp. Believing that she is losing her racial identity, Karim decides to turn against his sister. Soren turns out to be alive and has befriended the drake, but as he tries to rejoin his friends, he encounters his younger sister Claudia.",
+          "airDate": "2022-11-03",
+          "still": "https://image.tmdb.org/t/p/original/yQ2IU2HU2WlyECmiue0KaZgn1E5.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/yQ2IU2HU2WlyECmiue0KaZgn1E5.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Beneath the Surface",
+          "overview": "As N'than guides the heroes through the treacherous Path of Despair, Soren tries to convince Claudia to change her ways.",
+          "plot": "N'than guides Callum, Ezran, Rayla, and Zym through the hazards of the underground passages. During a rest, Callum and Rayla use the chance for a talk, and fearful of hurting his loved ones, Callum asks Rayla to kill him if Aaravos takes control of him again. Rayla encourages him to have confidence in himself. Soren captures Claudia and tries to reason with her, arguing over the evolving relationships between humans, elves, and dragons. Soren is then in turn captured by Viren and Terry.",
+          "airDate": "2022-11-03",
+          "still": "https://image.tmdb.org/t/p/original/ejeW9PYcAS7x3BwP6fgZN70c9Gf.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ejeW9PYcAS7x3BwP6fgZN70c9Gf.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Rex Igneous",
+          "overview": "At last, the friends come face to face with the mighty dragon — only to discover he's expecting gifts. Karim hatches a plot to dethrone the queen.",
+          "plot": "Ezran, Callum, Rayla, Zym and N'than enter Rex Igneous' lair. They meet the short-tempered Archdragon of Earth and gradually convince him of their good intentions. When Igneous admits that he does not know where Aaravos's prison is, Callum realizes that the information is contained on a map somewhere in the lair. Just then, Claudia appears and puts them all but Zym to sleep with dark magic. Janai privately discusses with Amaya what she wants to do with her life, which renews her resolve to become a queen worthy of her people. Karim decides to accelerate his plans by challenging Janai to an illegal and outdated blood duel for rulership over Lux Aurea.",
+          "airDate": "2022-11-03",
+          "still": "https://image.tmdb.org/t/p/original/dW8smo7jrOySQKWF5lGXBPZHJdq.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dW8smo7jrOySQKWF5lGXBPZHJdq.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Escape from Umber Tor",
+          "overview": "Dark spells, dirty tricks and a very unusual map ignite a fiery confrontation in Rex Igneous's lair. Janai squares off against her brother.",
+          "plot": "Janai reluctantly accepts Karim's challenge and beats him, and Karim is arrested when he refuses to accept his defeat. Claudia, Viren and Terry find a map leading to Aaravos' prison engraved on Rex Igneous' fang. As they recover it, Soren and Zym wake Rayla, who succeeds in rousing Rex Igneous. Enraged, the archdragon attacks them all, forcing them to flee. When Rayla takes Terry hostage, Claudia reveals that Runaan and her parents, Lain and Tiadrin, were trapped in cursed coins by her father. Claudia assures Terry's safety by pretending to give Rayla the coins. The dejected Terry points out Claudia's cruelty, and she reluctantly gives Rayla the real coins. The companions just barely escape Igneous' wrath with Zubeia's help and are happily reunited, but Viren once again falls under the sway of dark magic when he casts a spell using his staff.",
+          "airDate": "2022-11-03",
+          "still": "https://image.tmdb.org/t/p/original/gXizQL9Oqf9fbep8WeBsyiHhAgN.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/gXizQL9Oqf9fbep8WeBsyiHhAgN.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 5,
+      "name": "Book 5: Ocean",
+      "airDate": "2023-07-22",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Domina Profundis",
+          "overview": "While Ezran awaits an audience with the Archdragon of the Ocean, Rayla hunts for answers about her parents, and Callum hits a roadblock in his research.",
+          "plot": "Ezran makes contact with Domina Profundis, the Archdragon of the ocean, to ask her about the location of Aaravos' prison. At the same time, Callum, unable to research anything about Aaravos, resolves to go to Lux Aurea's library for information on the First Elves. Rayla breaks into Viren's old lair in hopes of finding a way to free her loved ones from the cursed coins, but only finds Runaan's bow. For his actions, Karim is banished from the Sunfire Elf domain. Having used magic for the first time since his revival, Viren has fallen into a coma.",
+          "airDate": "2023-07-22",
+          "still": "https://image.tmdb.org/t/p/original/l1kG1OVPla3zp7F752qGZQiR0Gk.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/l1kG1OVPla3zp7F752qGZQiR0Gk.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Old Wounds",
+          "overview": "Worried by Claudia's relentless pace, Terry dreams up a creative solution. Rayla and Callum set out for Lux Aurea. Ezran prepares to address the dragons.",
+          "plot": "Claudia becomes exhausted trying to transport her comatose father, prompting Terry to build a raft to help them travel. Plagued by nightmares, Viren is confronted with his innate doubts about the righteousness of his past deeds and their consequences for his loved ones. Callum and Rayla arrive in Xadia, only to be attacked by a dark magic-tainted banther.",
+          "airDate": "2023-07-22",
+          "still": "https://image.tmdb.org/t/p/original/xFoyATwfBYUGH65yb06hLtm49el.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xFoyATwfBYUGH65yb06hLtm49el.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Nightmares and Revelations",
+          "overview": "Callum and Rayla arrive in Xadia to find royal wedding planning in full swing. Claudia and Terry make their way down the river while Viren sleeps on.",
+          "plot": "Ezran and Zubeia hold a gathering of dragons and request their help to find Viren and Claudia. Facing her upcoming wedding with Amaya, Janai has nightmares of the time when Aaravos killed her sister. When Callum and Rayla arrive and explain their quest, Janai forbids them entry to Lux Aurea because Viren's attack infused the city with dark magic, making it uninhabitable. Despite this, Callum, Rayla, Amaya, Gren and Kazi decide (with Janai's blessing) to find the library. Karim finds himself joined by Pharos, the former high priest of his people, who joins his cause. Viren finally wakes from his coma, though he enters a catatonic state.",
+          "airDate": "2023-07-22",
+          "still": "https://image.tmdb.org/t/p/original/hI0Z0mXNZz4YGuN4fif8HhhAbJA.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/hI0Z0mXNZz4YGuN4fif8HhhAbJA.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "The Great Bookery",
+          "overview": "As Callum scours Lux Aurea's library for lore of the Startouch elves, Amaya clears the air with Rayla. Karim meets a powerful potential ally.",
+          "plot": "Karim and Pharos make their way to the lair of Sol Regem and try to gain his help against the humans in Xadia, which he refuses. Callum, Rayla and their friends enter the library, with only hours until sundown and the emergence of the shadow creatures infesting the city. They find a poem describing the Nova Blade, which is purportedly capable of killing a Startouch Elf and Rayla tells Callum about her quest to free her parents and Runaan from the cursed coins. When Callum delays their departure to retrieve a spell to remove the curse, he, Rayla and Amaya are trapped in the library by a pack of shadow banthers. Ezran, Zym, Soren and Corvus arrive on Zubeia's back to rescue them, but Zubeia is infected with dark magic by a shadow banther's bite, and the others are forced to leave Amaya and Corvus behind in a secure shelter.",
+          "airDate": "2023-07-22",
+          "still": "https://image.tmdb.org/t/p/original/oAlWQ0HDLi3nfAhgQEzZDN57F5Z.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/oAlWQ0HDLi3nfAhgQEzZDN57F5Z.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Archmage Akiyu",
+          "overview": "Ezran convinces the group to look for an eccentric ocean mage with critical information. Karim calls in a debt. Claudia tries to communicate with Viren.",
+          "plot": "Ezran reveals that Domina Profundis has told him to find Akiyu, a Tidebound Elf archmage who built Aaravos' prison, and Callum shares his discovery of the Nova Blade's location in a tower called Starscraper. They decide to seek out Akiyu first, but Zubeia keeps her injury secret from all but Soren. After they survive Akiyu's attempt to kill them, the archmage tells them how the prison was crafted and how the Jailer, the human mage who devised it, allowed Akiyu to live in exchange for keeping its location secret. Upon learning that Viren and Claudia possess the map to the prison, Akiyu shows Callum's group the way. In order to heal Sol Regem's sight, Karim decides he must steal a Sun Seed from Janai and recruits Kim'dael, a rogue Moonshadow Elf mage whose now-extinct order made use of dark magic and who was forced into a life debt by Karim's ancestor Queen Aditi.",
+          "airDate": "2023-07-22",
+          "still": "https://image.tmdb.org/t/p/original/iY8F8FCAAGwdvfNY9eA4DRtd2v4.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/iY8F8FCAAGwdvfNY9eA4DRtd2v4.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Bait and Switch",
+          "overview": "In search of seaworthy transportation, Rayla leads the way to an unsavory port town run by a cunning elf. Claudia takes a stand.",
+          "plot": "Due to her infection incapacitating her, Zubeia fails to pick up Callum's group, who are forced to use another way to the prison's location in the Sea of the Castout. They travel to Scumport, a pirates' trade hub, to find a boat, and encounter their old acquaintances Villads and Nyx. However, before their departure, Ezran decides to liberate three young Glow Toads from Finnegrin, Scumport's most notorious pirate captain. During their own journey downriver, Claudia's group is attacked by one of the dragons searching for them, forcing her to intimidate it with dark magic.",
+          "airDate": "2023-07-22",
+          "still": "https://image.tmdb.org/t/p/original/32BNDFlCAeQH4GNxWpDqLXTvJm4.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/32BNDFlCAeQH4GNxWpDqLXTvJm4.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Sea Legs",
+          "overview": "The Ruthless sails into dangerous waters, with Finnegrin in hot pursuit. Queen Janai and her guards face a deadly infiltrator seeking the Sun Seed.",
+          "plot": "During their journey, Callum's group is chased by Finnegrin. Despite their best efforts, Finnegrin's ship, which is a giant hermit crab, easily catches up with them, and they are captured. Kim'dael sneaks into the Sunfire Elf camp but finds the Sun Seed gone and kidnaps Janai, just before Amaya and Corvus return from the library.",
+          "airDate": "2023-07-22",
+          "still": "https://image.tmdb.org/t/p/original/93EFLtLNCewVtIl0tFoRCsYcZVq.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/93EFLtLNCewVtIl0tFoRCsYcZVq.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Finnegrin's Wake",
+          "overview": "Held captive aboard the Sea Legs, Callum and his crew must dig deep to win their freedom. Janai faces her brother once again.",
+          "plot": "Believing he can use dark magic, Finnegrin tortures Callum to get the very spell that petrified Avizandum in order to kill Domina Profundis. When Callum refuses and attacks him, Finnegrin plans to use Bait to attract a sea leviathan and feed Rayla to it to push Callum into resorting to dark magic. Callum rescues Rayla and forms a connection to the ocean arcanum; and Elmer, Finnegrin's golem bodyguard, is persuaded by Soren to feed Finnegrin to the leviathan. Pharos returns to the Sunfire Elf camp to deliver Karim's demand for the Sun Seed in exchange for Janai. Disguised as Miyana, who is supposed to act as the deliverer, Amaya rides to Karim's meeting place and attacks him. Kim'dael takes Janai hostage to make Karim release her, which, however, he cannot do while his sister is queen. Kim'dael retreats and Karim and Pharos flee as well.",
+          "airDate": "2023-07-22",
+          "still": "https://image.tmdb.org/t/p/original/g8sq4khz7sDBmY9SfRwoKuz0gws.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/g8sq4khz7sDBmY9SfRwoKuz0gws.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Infantis Sanguine",
+          "overview": "While Zubeia fights for her life and Viren arrives at a crossroads, the race toward Aaravos' prison leads those who seek him deep beneath the waves.",
+          "plot": "Callum's group reaches the Sea of the Castout, and with the help of his recently developed ocean magic, Callum and Ezran descend underwater to reach Aaravos' prison. They are intercepted by Claudia in pentapus form, who loses a leg to Rayla and is forced to retreat, and they retrieve a giant pearl that contains Aaravos' prison. With only hours left to live, Viren awakens from his catatonia and is contacted by Aaravos, who tells him that he must kill the Being in order to be returned to life permanently. Viren refuses and quietly goes off into the forest to die. Janai and Amaya learn that Miyana has betrayed them and delivered the Sun Seed and an army of loyalists to Karim. Zubeia nearly succumbs to her infection, but is treated by a stranger calling himself \"the Mushroom Mage\".",
+          "airDate": "2023-07-22",
+          "still": "https://image.tmdb.org/t/p/original/jrUIRVrhtCCMqeRbzwJUaCVR5D3.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/jrUIRVrhtCCMqeRbzwJUaCVR5D3.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 6,
+      "name": "Book 6: Stars",
+      "airDate": "2024-07-26",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Startouched",
+          "overview": "A shocking reversal leaves Claudia grief-stricken. Home in Katolis, Callum, Rayla and Ezran debate what to do with the Pearl that imprisons Aaravos.",
+          "plot": "Terry finds Viren, who is surprisingly alive. Viren rejoins Claudia, only to find that she completed the ritual by sacrificing The Being to bring him back. Aghast at what Claudia has sacrificed for his sake, and determined to seek redemption, Viren leaves her and Terry, against Claudia's pleas. In Katolis, the royal council discusses what to do with the pearl containing Aaravos' prison; Callum suggests that they destroy it, while Ezran suggests they keep it safe in Katolis. That night, Callum briefly falls under Aaravos' direct control. Determined to end his threat, and after creating a decoy pearl, he, accompanied by Rayla, Stella, and Sneezles, leaves Katolis to travel to the Starscraper to find out how to destroy the pearl, while Soren, Zym, Pyrrah, and Hat set off to look for the still-missing Zubeia.",
+          "airDate": "2024-07-26",
+          "still": "https://image.tmdb.org/t/p/original/A6O313iozkUedAvvvb1eafXbGyN.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/A6O313iozkUedAvvvb1eafXbGyN.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Love, War and Mushrooms",
+          "overview": "Soren travels to Xadia, where he and Corvus follow a mysterious trail into the woods. Janai faces her frustrations — and her future.",
+          "plot": "Soren's group travels to Lux Aurea to ask Corvus for help in tracking down Zubeia. They encounter Mukho, the Mushroom Mage, who leads them to the dragon queen. While Zubeia is happy to see her son, she is unable to join him yet, as her infection needs more time to heal. Janai is consumed by her anger and self-doubt triggered by Miyana's betrayal until Amaya succeeds in restoring her confidence. While Karim rallies his followers to fight for his idea of the supremacy of Sunfire Elf culture, Janai calls to her remaining people and their human allies for trust and unity and plans to move up her wedding with Amaya.",
+          "airDate": "2024-07-26",
+          "still": "https://image.tmdb.org/t/p/original/hNtTZm6SzV0qbbZvROkFrIRB5cV.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/hNtTZm6SzV0qbbZvROkFrIRB5cV.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "The Frozen Ship",
+          "overview": "On their journey to the Starscraper, Rayla and Callum spend a chilly night at an unusual campsite. Terry offers Claudia some comfort.",
+          "plot": "Despondent over her father's departure, Claudia entrusts herself fully to Terry's care, and he fashions her a wooden prosthetic leg. To reach the Starscraper, Callum and Rayla must cross a vast frozen lake. They come upon a wrecked ship trapped in the ice, and while Rayla explores it, she finds the diary of its captain, Esmerelda Skall, in which she wrote about her regrets over not confessing her feelings to the love of her life. Callum and Rayla are forced to spend the night inside the wreck; as they begin opening up to each other, Callum confesses his use of dark magic aboard the Sea Legs. During their resulting argument, a fire is accidentally triggered and the ship sinks beneath the ice, forcing Callum and Rayla to abandon it. Callum elicits a promise from Rayla that she must kill him if Aaravos takes him over. Meanwhile, Viren arrives in Katolis and surrenders himself.",
+          "airDate": "2024-07-26",
+          "still": "https://image.tmdb.org/t/p/original/6GwvvAtMJy2tAZzyrn70iSzYvI8.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/6GwvvAtMJy2tAZzyrn70iSzYvI8.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "The Starscraper",
+          "overview": "The Celestial Elves greet Callum and Rayla with a puzzling prophecy. Karim presents a gift to Sol Regem. Soren returns home to a surprise.",
+          "plot": "Callum and Rayla arrive at and gain entry to the Starscraper, where the Elder of the Celestial Elves tells them that Startouch Elves, manifestations of the stars themselves, cannot be killed permanently and the Nova Blade only destroys their mortal vessels, which is the reason Aaravos was imprisoned and not eliminated. However, Callum and Rayla learn that they are the \"Chosen Two\", central figures to a prophecy promising the Celestial Elves the ability to see the light of the stars, which is sacred to them, by killing an ice behemoth who shrouds the sky above the Starscraper with a perpetual ice storm. Claudia is beginning to feel torn about either freeing Aaravos or turning away from dark magic and decides to meet with her father to try and reconcile with him and come to a decision. Karim brings the Sun Seed to Sol Regem, who agrees to help him once his wings are healed instead of his eyes. Upon returning to Katolis, Soren learns of his father's return.",
+          "airDate": "2024-07-26",
+          "still": "https://image.tmdb.org/t/p/original/1m1e1WMoOzzpF8K0Yhn4rbuesKw.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/1m1e1WMoOzzpF8K0Yhn4rbuesKw.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Moonless Night",
+          "overview": "To prove themselves as the Chosen Two, Rayla and Callum set out to end the storms swirling around the Starscraper. Viren tries to right past wrongs.",
+          "plot": "Soren visits his father in the dungeon, where Viren expresses his sincere regrets but is ignored by his son. Despite Rayla's skepticism, Callum decides to help the Celestial Elves. As they confront the ice behemoth, Rayla realizes that the creature is Esmeray, the former companion of the late Archdragon Luna Tenebris and that it creates ice storms in its grief over losing her. Rayla calms the creature, ending the storm and fulfilling the prophecy; in return, the grateful Celestial Elves gift them with the Corona of the Heavens, embedded with three rare quasar diamonds, which would enable Rayla to free her parents and Ruunan from their imprisonment. Kosmo, one of the elves, receives the gift of prophecy, but upon beholding Callum, he sees darkness consuming him in the future. In his prison, Aaravos feels content that he can use either Callum or Viren to ensure his release.",
+          "airDate": "2024-07-26",
+          "still": "https://image.tmdb.org/t/p/original/izTe8g0qp4nytNOpYr5Bm245Iu.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/izTe8g0qp4nytNOpYr5Bm245Iu.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Moment of Truth",
+          "overview": "Memories of Soren's childhood weigh heavily on Viren. Kosmo uses his new powers to help Callum see his true self clearly.",
+          "plot": "Kosmo discovers that the pearl Rayla and Callum have been carrying is its decoy counterpart, likely switched with its original due to Aaravos' influence over Callum. After viewing a future where Callum sinks into utter depression over his failure, Kosmo decides to withhold the truth. With the guidance of Kosmo and his sister Astrid, Callum undergoes a ritual to help him suppress the dark corruption by letting him find his innermost truth. This prompts him to forgive Rayla for her two-year absence, and they reaffirm their love. In Katolis, Viren writes a letter to Soren, confessing how he decided to use dark magic to save his son, who was deathly sick in his childhood; how he betrayed and cursed his former mentor Kpp'Ar to gain this power; and how his deeds broke their family apart. But upon seeing Soren, he destroys his confession, deciding that this truth would cause even more harm between them.",
+          "airDate": "2024-07-26",
+          "still": "https://image.tmdb.org/t/p/original/pmPgAl6BgpVXS4HqAJnHMHdk3wg.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/pmPgAl6BgpVXS4HqAJnHMHdk3wg.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "The Red Wedding",
+          "overview": "Sol Regem emerges from his long exile — on Janai and Amaya's wedding day. Hoping to make peace with Karim, Ezran rides into danger.",
+          "plot": "Taking their leave from the Starscraper, Callum and Rayla travel through the air back to the Moon Nexus to enable the release of Rayla's parents. Just as Janai and Amaya prepare for their wedding, Karim and his renegade army march on Lux Aurea. Ezran, Corvus, and Aanya, who have attended the wedding, try to negotiate, but Karim imprisons them once they realize Sol Regem's role in his plans. With Zym and Aanya's help, Ezran escapes but fails to warm Amaya and Janai in time. As the battle between Janai and Karim's armies commences, a confident Karim assumes an easy victory with Sol Regem on his side, but the archdragon never arrives and Karim's army is quickly overwhelmed. Instead of helping Karim, Sol Regem flies off to attack the human realms, starting with Katolis.",
+          "airDate": "2024-07-26",
+          "still": "https://image.tmdb.org/t/p/original/yTiQvjOEvBZsEtK2fEkxAKGETsu.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/yTiQvjOEvBZsEtK2fEkxAKGETsu.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "We All Fall Down",
+          "overview": "Callum and Rayla head to the Moon Nexus. When Katolis faces a devastating attack, Soren turns to an unlikely source for help.",
+          "plot": "With Pharos riding him, Sol Regem assaults the capital of Katolis, and Soren orders an evacuation of the city and frees his father from the dungeon so he can help defend their people. Despite his reluctance to use dark magic once more, Viren uses a spell to shield the people from Sol Regem's fire, sacrificing his own life to empower it. After the destruction of Katolis, as Sol Regem lies dying from his injuries sustained in the attack, Aaravos possesses Pharos and mocks him, revealing that he previously tricked the archdragon into killing his own mate to exploit his rage. Enraged by the deception, Sol Regem devours Pharos but then chokes on his body. Claudia and Terry arrive at Katolis, and as Claudia weeps over her father's body, Aaravos reaches out to her and tells her she can honor her father by casting the spell to free Aaravos from his prison. Callum and Rayla arrive at the Moon Nexus, where they meet up with Lujanne and Allen; Lujanne determines that one of the quasar diamonds they received is a fake, severely limiting Rayla's choices of whom she can release from the cursed coins.",
+          "airDate": "2024-07-26",
+          "still": "https://image.tmdb.org/t/p/original/iI9pipuyRMqC4vErZggHliVAyeS.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/iI9pipuyRMqC4vErZggHliVAyeS.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Stardust",
+          "overview": "A visit to the spirit realm forces Rayla to make a heartbreaking choice. Aaravos shares a story from his past with Claudia.",
+          "plot": "At the Moon Nexus, Rayla descends into the spirit world to find her family. After encountering and telling her parents how their sacrifice saved the Dragon Prince, Tiadrin and Lain give Rayla their blessings and peacefully pass on into the afterlife. Rayla then recovers Ruunan's fragmented soul and brings him back to the living world, where Callum frees him from the cursed coin. Both Callum and Ezran then learn about the attack on Katolis. Claudia's first attempt to release Aaravos fails because she needs love to empower it. Aaravos tells her and Terry about his beloved daughter Leola and how she was sentenced to death by the Startouch Elf council for unintentionally teaching humans about magic and thus disrupting the cosmic order. Heartbroken, Aaravos decided to stay alive in order to exact revenge. Moved by the tale, Claudia successfully casts the spell, freeing Aaravos and restoring his mortal form.",
+          "airDate": "2024-07-26",
+          "still": "https://image.tmdb.org/t/p/original/rFph6V9ttF2Y20LH0oIiNl68Zii.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/rFph6V9ttF2Y20LH0oIiNl68Zii.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 7,
+      "name": "Book 7: Dark",
+      "airDate": "2024-12-19",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Death Alive",
+          "overview": "Atop the Starscraper, Kosmo receives an ominous prophecy about the fate of Xadia. As Callum returns to a devastated Katolis, Aaravos hatches a new plot.",
+          "plot": "Newly freed, Aaravos tells Claudia that Viren's soul may be trapped in the In-Between, a spiritual plane between life and death, and can be brought back through the Moon Nexus with the help of a primal moonstone. To create such a stone, Aaravos tasks Claudia with retrieving an ingredient from the Garden of Innocence, a unicorn graveyard, and disguises himself as a human to move around undetected. Callum heads to the ruins of Katolis and reunites with Ezran, Zym, Soren, Corvus, and Aanya. Ezran sends Callum and Corvus to the Valley of the Graves, where they find Sol Regem's remains and the disguised Aaravos, but do not recognize him. Desperate to reunite with Ethari, Rayla and Runaan leave the Moon Nexus for Katolis, but upon arriving, an enraged Ezran orders Runaan's arrest for his father's murder. At the Starscraper, Kosmo receives a vision of Aaravos' return and his plan to release the spirits of the dead into the world. After the Elder refuses to warn Callum and Rayla, Astrid removes her blindfold and sets out on her own. Before she leaves, Kosmo promises to tell her everything he saw in his vision of the future.",
+          "airDate": "2024-12-19",
+          "still": "https://image.tmdb.org/t/p/original/x9gEPRHaJrC98pGbu8umsCgafwX.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/x9gEPRHaJrC98pGbu8umsCgafwX.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "True Heart",
+          "overview": "Tensions rise as Ezran grapples with rebuilding Katolis and deciding Runaan's punishment. Meanwhile, Claudia, Aaravos and Terry search for a hidden map.",
+          "plot": "The survivors from the destruction of Katolis relocate to the winter lodge, where Ezran decides to prioritize bolstering his nation's defenses before starting reconstruction. When Callum's attempts to plead with Ezran to spare Runaan fail, Rayla instead frees him, only to be caught by Soren. Callum reluctantly turns against his brother and leaves to accompany Rayla and Runaan to their home at the Silvergrove. To find the map to the Garden of Innocence, Claudia leads Aaravos and Terry to the Puzzle House, the abandoned abode of Viren's mentor Kpp'Ar. They find the map but discover that only someone with a true heart, like Terry, can read it.",
+          "airDate": "2024-12-19",
+          "still": "https://image.tmdb.org/t/p/original/u07UmlSHSRtRAAvqFpBwjkNw1kI.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/u07UmlSHSRtRAAvqFpBwjkNw1kI.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "The Glittering Bones",
+          "overview": "Terry leads the group to the Garden of Innocents, where Aaravos and Claudia craft a primal stone. In Lux Aurea, Janai faces a tough decision about Karim.",
+          "plot": "In Lux Aurea, Karim's defeated loyalists are tried for treachery, but are pardoned by Janai and Amaya. Miyana is discovered to be carrying Karim's child, and Janai decides to spare her, but orders Karim's execution after he shows no remorse for his actions. To help Ezran overcome his growing bitterness towards Callum and Rayla, Aanya tells him the story of the historical Mage Wars, that led to magic almost completely disappearing from the human kingdoms. She then brings him to a secret trove of explosive fire rubies in Duren, which she intends to gift to Katolis to build defensive weaponry. Claudia, Aaravos, and Terry find the secret entrance to the Garden of Innocence, where Claudia reluctantly keeps the details of Aaravos' plan a secret from Terry. Claudia reanimates a unicorn skeleton and uses it to construct the primal moonstone while Aaravos has Terry collect a pair of Shimmercrow feathers to give the moonstone wings so it can follow the moon and soak up its power.",
+          "airDate": "2024-12-19",
+          "still": "https://image.tmdb.org/t/p/original/pLoryfmkMSRcCk43pBRwsed6fjh.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/pLoryfmkMSRcCk43pBRwsed6fjh.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Unfinished Business",
+          "overview": "After an emotional reunion, Rayla undergoes a ritual to reverse her banishment. Terry has a heartbreaking realization about Claudia.",
+          "plot": "Callum, Rayla, and Runaan reach the Silvergrove, where Runaan reunites with his husband. To undo her banishment, Rayla presents herself to Lyrennus, the keeper of the Well of the Forgotten. In a ritual, Rayla is judged by the spirits of the deceased assassins, who grant their forgiveness, but Lyrennus still blames her for his son's death. Rayla makes Lyrennus realize that vengeance won't bring him solace, and he ends her banishment. To help open the way to the In-Between, Aaravos kills a mother Shimmercrow, making Terry realize the manipulation and deception behind his actions. Aaravos reveals to Terry the information that Claudia is keeping from him, and Terry confronts her before ending their relationship. While Claudia begins to doubt that bringing her father back is worth the price, Terry leaves and takes in the now-orphaned Shimmercrow hatchlings.",
+          "airDate": "2024-12-19",
+          "still": "https://image.tmdb.org/t/p/original/qyALhZG36CiE5pmDi5eV1HfPMor.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/qyALhZG36CiE5pmDi5eV1HfPMor.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Sticky Fingers",
+          "overview": "Desperate to stop Claudia, Terry exposes Aaravos' terrible plans. Amaya appeals to Karim one last time, while Callum and Rayla share a peaceful moment.",
+          "plot": "Terry travels to the winter lodge and informs Ezran and the Katolian High Council about Aaravos' liberation and his plan to release the spirits trapped within the In-Between and to corrupt the sun at Lux Aurea to let them roam unfettered. To help convince Claudia to stop aiding Aaravos, Terry suggests finding her and Soren's estranged mother Lissa, despite Soren's reservations. Amaya visits the incarcerated Karim to convince him to relent, but Karim continues to express his hatred of humans. He is later visited by Miyana, who begs Karim to stay alive for their future child. To celebrate Rayla's redemption, Rayla and her fathers invite Callum to a feast at the Silvergrove. While they prepare, Callum supervises three mischievous elf children who tease Callum about his relationship with Rayla. After the feast, Callum plans to settle down with Rayla in the Silvergrove until Astrid arrives to inform them that Aaravos is free.",
+          "airDate": "2024-12-19",
+          "still": "https://image.tmdb.org/t/p/original/Aas8BZKxxzAoR5ctUt4PwX81tBQ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/Aas8BZKxxzAoR5ctUt4PwX81tBQ.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Inversion",
+          "overview": "In a last-ditch effort to change Claudia's mind, Soren surprises her with someone familial. Back at the Silvergrove, Callum battles his inner darkness.",
+          "plot": "Astrid's tale about Aaravos' escape devastates Callum, who blames himself for unintentionally enabling it. He is confronted by a manifestation of his corrupted self, who tries to entice him into using dark magic to help his loved ones. As Aaravos and Claudia travel to the Moon Nexus, Claudia admits that she believes that her father may not be in the In-Between, while Aaravos confesses that all he wants is to disrupt the cosmic order as vengeance for his daughter's death. They are intercepted by Soren, Terry, Aanya, and Lujanne, who has assumed Lissa's appearance; but Claudia sees through the disguise, stabs the elf, and immobilizes the others. Unhindered, she inverts the Moon Nexus, releasing the spirits trapped in the In-Between into the living world, with Ziard and The Being among them. Aaravos returns to the Valley of the Graves, where he is met by Ezran, Zym, and the army of Katolis, who bombard him with fire rubies and restrain him.",
+          "airDate": "2024-12-19",
+          "still": "https://image.tmdb.org/t/p/original/tGmFGSAlkSfE6Rv8WlPxgOCXbwM.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/tGmFGSAlkSfE6Rv8WlPxgOCXbwM.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "The Titan and the King",
+          "overview": "While Callum and his friends race to stop Aaravos from bringing about Eternal Night, the trapped Startouch elf gives Ezran a grim history lesson.",
+          "plot": "Unaware that Aaravos has been captured, Callum sends Ezran a message informing him of Aaravos' plan of corrupting the Sun Orb of Lux Aurea to bring about an eternal night. Callum and his friends set out to rally their Xadian friends and the remaining Archdragons to imprison Aaravos again. Joined by Soren, Corvus, Terry, and Aanya, whom Callum sent for Zubeia, Ezran sends the former three to find the dragon queen while he and Aanya remain to guard Aaravos. Janai asks Karim, who is the only mage able to do this, to destroy the Sun Orb. Callum and Runaan find Akiyu dead, slain by Claudia, who engages Callum in a duel of magic before escaping. As Ezran confronts him, Aaravos stalls him until the sun sets and a horde of shades arrives to attack the Katolians and free him. Meanwhile, the shade of Ziard frees Avizandum's spirit from its petrified body.",
+          "airDate": "2024-12-19",
+          "still": "https://image.tmdb.org/t/p/original/d4Ob0VU83awmxtZ0aP4t4GE7Csl.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/d4Ob0VU83awmxtZ0aP4t4GE7Csl.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Dying Light",
+          "overview": "A shocking betrayal turns the tide in Aaravos' favor. With Eternal Night upon them, Callum and his allies rally in a desperate final stand.",
+          "plot": "Janai, Amaya, Karim, and Astrid race to the Sun Orb, but instead of destroying it, Karim betrays his sister again. As he pleads with Aaravos to help him restore elven dominance in Xadia, Aaravos kills him instead, seizes the Orb, and eclipses the sun. He is engaged by Zubeia, Rex Igneous, and Domina Profundis, but summons Avizandum's shade to his defense, who kills Igneous. Tipped off by a tale Aaravos told him, Ezran finds the Nova Blade on the statue of the Orphan Queen's grave. Callum, Rayla, and their friends gather in Lux Aurea, but without a new pearl, Callum decides to use dark magic and Viren's cursed coin to capture Aaravos, and then have himself killed by Runaan before Aaravos can corrupt him.",
+          "airDate": "2024-12-19",
+          "still": "https://image.tmdb.org/t/p/original/AmCpAGBkncmzsNNpcEr4JU62gcG.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/AmCpAGBkncmzsNNpcEr4JU62gcG.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Nova",
+          "overview": "As the final battle reaches its climax, Callum chooses to embrace his destiny. Claudia's interference forces Rayla to make a heart-wrenching decision.",
+          "plot": "With the Nova Blade in hand, Ezran and Zym hurry to Lux Aurea. Callum invokes his spell while Ezran prepares to strike Aaravos; but before either one can reach him, Zubeia's appeals to Avizandum restore the Dragon King to his former self. As he is overwhelmed by The Being and the Archdragons, Aaravos sends Claudia to the Stormspire, where Soren and Corvus fight her, forcing her to retreat in a moment of self-doubt. The Sun Orb is destroyed, and before the sun's light destroys Avizandum, the Archdragons sacrifice themselves to slay Aaravos' mortal form. In the aftermath of the battle, the humans and elves erect the new city of Evrkynd at the former Breach as a symbol of their newfound union, and begin preparations for Aaravos' return in mortal form in seven years. Ezran pardons Runaan, but when the assassin recounts King Harrow's last moments, his tale reveals that Harrow's soul was transferred into his pet bird Pip just before his death, prompting an immediate search for him. Now in exile, Claudia awaits Aaravos' return.",
+          "airDate": "2024-12-19",
+          "still": "https://image.tmdb.org/t/p/original/qzFTdAb6ZEt4gJj57hE4X4lJvhN.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/qzFTdAb6ZEt4gJj57hE4X4lJvhN.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "cast": [
+    {
+      "name": "Paula Burrows",
+      "character": "Rayla (voice)",
+      "episodeCount": 80,
+      "profile": "https://image.tmdb.org/t/p/original/ptn5uGezXeKIuyPqymsIZeLuDrM.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/470/1176465.jpg"
+    },
+    {
+      "name": "Jack De Sena",
+      "character": "Callum (voice)",
+      "episodeCount": 63,
+      "profile": "https://image.tmdb.org/t/p/original/i9VlMsPol6XIicnRZRiwmYSyE4P.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/470/1176464.jpg"
+    },
+    {
+      "name": "Sasha Rojen",
+      "character": "Ezran (voice)",
+      "episodeCount": 63,
+      "profile": "https://image.tmdb.org/t/p/original/ApgWvcK2c0kONDgN7SKdUqfXeLf.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/470/1176466.jpg"
+    },
+    {
+      "name": "Jesse Inocalla",
+      "character": "Soren (voice)",
+      "episodeCount": 57,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/470/1176451.jpg"
+    },
+    {
+      "name": "Racquel Belmonte",
+      "character": "Claudia (voice)",
+      "episodeCount": 54,
+      "profile": "https://image.tmdb.org/t/p/original/tc3nFIRbtn6fcSHMHq9xTfrOKwD.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/470/1176449.jpg"
+    },
+    {
+      "name": "Jason Simpson",
+      "character": "Viren (voice)",
+      "episodeCount": 49,
+      "profile": "https://image.tmdb.org/t/p/original/nicxmXmjjQUMiiuwrnGwkBYobcZ.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/470/1176450.jpg"
+    },
+    {
+      "name": "Luc Roderique",
+      "character": "Harrow (voice)",
+      "episodeCount": 40,
+      "profile": "https://image.tmdb.org/t/p/original/jeAxcgvhKGTsiGyNnNTfG2qpK1S.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/470/1176453.jpg"
+    },
+    {
+      "name": "Omari Newton",
+      "character": "Corvus (voice)",
+      "episodeCount": 31,
+      "profile": "https://image.tmdb.org/t/p/original/sm5maXokSm3X3ctZzb7htowLXNU.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jonathan Holmes",
+      "character": "Runaan (voice)",
+      "episodeCount": 28,
+      "profile": "https://image.tmdb.org/t/p/original/giErOv0CzwiNfW8YKwiiDKA7cma.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/470/1176454.jpg"
+    },
+    {
+      "name": "Erik Dellums",
+      "character": "Aaravos (voice)",
+      "episodeCount": 28,
+      "profile": "https://image.tmdb.org/t/p/original/sXkvaZ071a1envYTChDYQlcAo0H.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Adrian Petriw",
+      "character": "Gren (voice)",
+      "episodeCount": 25,
+      "profile": "https://image.tmdb.org/t/p/original/3jbR14GEKoUCbrs3NVmQw8eWRvu.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nicole Oliver",
+      "character": "Zubeia (voice)",
+      "episodeCount": 13,
+      "profile": "https://image.tmdb.org/t/p/original/plAsVfhTrYaU78JrZbJSQ4uXpX1.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Vincent Tong",
+      "character": "Kasef (voice)",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/lpgVwZPewejru3WcgQEBMNWm4ze.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Vincent Gale",
+      "character": "Ethari (voice)",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/48TVmEf0ck1t5tiXcQjBUyJYWrt.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Peter Kelamis",
+      "character": "Villads (voice)",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/nV0lHILeENtQ8PbGa3E5Mrx607a.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Cecilly Day",
+      "character": "Miyana (voice)",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/rlmriW02Gs7wcuFz3Zk4nFZvGa6.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ian James Corlett",
+      "character": "Ibis (voice)",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/y0p99omSo8CgHWPjv7qXtAQVyzr.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rhona Rees",
+      "character": "Nyx (voice)",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/6TBwRGBvWySSAWGHYQRzpQX4emI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Adrian Hough",
+      "character": "Sol Regem (voice)",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/58REQAaSAbiAnCptqrhx6bDhTQc.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dylan Schombing",
+      "character": "N'Than (voice)",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/xHKHvkqlJjVv0WwStPEj0Ph91Qc.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ben Cotton",
+      "character": "Rex Igneous (voice)",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/gn8KZSkxZs0c95ARpjXvxBtwwlX.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Deven Mack",
+      "character": "Pharos (voice)",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/qfFZTN1lgoliBK4uf9aHjejSqZF.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sam Vincent",
+      "character": "Fen (voice)",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/eJadsFcztqQZQIKzL5cMyasi1oa.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ana Sani",
+      "character": "Lucia (voice)",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/yrwfD0G1acsaJLKJn6ctTlXqlvO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mark Gibbon",
+      "character": "The Elder (voice)",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/uzUzA4zoiPXIfYLQhBkoVqGsssG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tariq Leslie",
+      "character": "Finnegrin (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/Fb7GLsSNUL9FOs2Gl1iMZFiFvZ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Laara Sadiq",
+      "character": "Kim'Dael (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/l7MkydwslaXo1EmYrRpJARnaFKs.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Anand Rajaram",
+      "character": "Mukho (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/ujrfVMvnPh6kT16bPWIO7tf0yqH.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Bill Newton",
+      "character": "Warlon (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/qVrw91HR7dGFRfcyKuIgdPM58KR.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mark Hildreth",
+      "character": "Chert (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/pHkXbCjIPbUSeOZLV3z6dnj8WVB.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jennifer Hale",
+      "character": "Domina Profundis (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/oNQCrdiSm0mABCcE5YaHwuZQK8X.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Greg Rogers",
+      "character": "Kpp'Ar (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/kH2SBMPLE5zQnxSWy8Vi9WEFZnT.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lawrence Ehasz",
+      "character": "Toddler Soren (voice)",
+      "episodeCount": 2,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/470/1176451.jpg"
+    },
+    {
+      "name": "Tyrone Savage",
+      "character": "Lain (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/qr46UwG3NnPsdIK51hrZeNcOGfW.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dave 'Squatch' Ward",
+      "character": "Elmer (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/6HdzKgX15C2B7D5tyAt8ce64KIv.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Patricia Isaac",
+      "character": "Neha (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/coyXEuD66wLJloHpCOqUcQcvD9Y.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kazumi Evans",
+      "character": "Sarai (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/kYetwOsDrFRWDtTsQswNVPgVV4N.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brian Drummond",
+      "character": "Stern One (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/oNKCHFuMZTASvyayEj3cRXLEjJL.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brenda Crichlow",
+      "character": "Khessa (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/2zdDHbJaTdNDTQQowVSsR3qb751.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Julie Lemieux",
+      "character": "Akiyu (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/tBhc82xjYHrnx0HDTz2STBfA5Vz.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ian Hanlin",
+      "character": "Crewman (voice) / Shanty Singer (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/o7uOuKMH7FN3kUnvfGW7LAdcZaz.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lee Majdoub",
+      "character": "Lyrennus (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/vpF3R2YRCGHseGevmDAhftmOPkO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Stephanie Izsak",
+      "character": "Lissa (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/lQi2AP1x86hskz231Mr18UrduEy.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dante Basco",
+      "character": "Zym (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/2bfQho7MEo4wAQTmC687FkXUoKU.jpg",
+      "inCharacter": null
+    }
+  ],
+  "generatedAt": "2026-07-23T19:54:22.061Z"
+}

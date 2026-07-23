@@ -1,0 +1,981 @@
+{
+  "slug": "owl-house",
+  "tmdbId": 92685,
+  "tvmazeId": 35073,
+  "matchedBy": "imdb_id",
+  "title": "The Owl House",
+  "overview": "Luz, a self-assured teenage human girl, accidentally stumbles upon a portal to a magical new world where she befriends a rebellious witch, Eda, and an adorably tiny warrior, King.",
+  "firstAirDate": "2020-01-10",
+  "network": "Disney Channel",
+  "poster": "https://image.tmdb.org/t/p/w780/rhzwpJBhi2WkfihXndS1xUdQlzB.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/original/bGqKaVROpz7pWUNuBxgU8hbcXYn.jpg",
+  "backdrops": [
+    "https://image.tmdb.org/t/p/original/bGqKaVROpz7pWUNuBxgU8hbcXYn.jpg",
+    "https://image.tmdb.org/t/p/original/cHyY5z4txdVyGtYMvBJhCqCcJso.jpg",
+    "https://image.tmdb.org/t/p/original/xjDTMEMZwg8iams5J2OySYrgWNm.jpg",
+    "https://image.tmdb.org/t/p/original/9w19NtSnlRAKsxPsXrSRQolDzTH.jpg",
+    "https://image.tmdb.org/t/p/original/uAsbMpQT4ZhLB0m4aqJ05LOk3nZ.jpg",
+    "https://image.tmdb.org/t/p/original/9XbpBIhnnUXXk3aSY7IGAWwoszI.jpg",
+    "https://image.tmdb.org/t/p/original/ho75AeoQVfYpA0EF6tOWpCl3a0b.jpg",
+    "https://image.tmdb.org/t/p/original/nId77TAkg8Q5UD4UMo0JbrWswyY.jpg",
+    "https://image.tmdb.org/t/p/original/ntTB6n3wAzmQo7Jnd6G27UIaqpo.jpg",
+    "https://image.tmdb.org/t/p/original/kbVxPSgAk1KjFJDp65qCbetJWPe.jpg",
+    "https://image.tmdb.org/t/p/original/mfJaxLH7Z8MyotsJmr0zuRhfmnI.jpg",
+    "https://image.tmdb.org/t/p/original/nJjGz058NybzHEDMjj9K5FoV5qd.jpg"
+  ],
+  "throughSeason": 3,
+  "totalSeasons": 3,
+  "showType": "Animation",
+  "genres": [
+    "Comedy",
+    "Children",
+    "Fantasy"
+  ],
+  "status": "Ended",
+  "runtime": 29,
+  "language": "English",
+  "seasons": [
+    {
+      "season": 1,
+      "name": "Season 1",
+      "airDate": "2020-01-10",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "A Lying Witch and a Warden",
+          "overview": "Luz, a self-assured teenage girl, accidentally stumbles upon a portal to a magical world where she befriends a rebellious witch, Eda, and an adorably tiny warrior, King. In order to get home, Luz must help them with a mission.",
+          "plot": "After her overactive imagination gets her in trouble at school, Luz Noceda is forced to go to Reality Check Camp. While waiting to be picked up, an owl takes her favorite book and she chases it through a portal that transports her to the Boiling Isles, a magical realm in another dimension. She meets Eda, a fugitive witch who sells human items. Eda takes Luz to her home, the Owl House, where she introduces her to King, the self-proclaimed king of demons. Eda promises to take Luz back home if she helps them get King's crown back from Warden Wrath at his prison, the Conformatorium. They successfully break-in, and Luz discovers that the \"crown\" is a kid's meal crown. Wrath captures them with the intent to ask Eda out on a date, but she refuses. A fight breaks out with Luz releasing the prisoners and together they defeat Wrath and escape. Luz, enthused by the Boiling Isles, decides to stay with Eda to become a witch instead of going to camp, which Eda reluctantly agrees to. As Luz settles in for the night, she texts her mother, informing her that she is going to like it at \"camp\".",
+          "airDate": "2020-01-10",
+          "still": "https://image.tmdb.org/t/p/original/kEfbI5ds6vMcIzCjL2dcA2qtzMG.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/kEfbI5ds6vMcIzCjL2dcA2qtzMG.jpg",
+            "https://image.tmdb.org/t/p/original/2AK52fiPx5DmEl9bLNID2i43kzd.jpg",
+            "https://image.tmdb.org/t/p/original/cWZV4mjusmwdSYEgFiWuV6SlaQc.jpg",
+            "https://image.tmdb.org/t/p/original/fkEuXSHzEi99KMrqPRhxGModBAl.jpg",
+            "https://image.tmdb.org/t/p/original/hvTrRv3T5NMwdo3Pk8kxqp99O96.jpg",
+            "https://image.tmdb.org/t/p/original/mS3o1oTMrO0uKugWuKfnpNCphFY.jpg",
+            "https://image.tmdb.org/t/p/original/ybok518Jxsma7lCkuFK1uphjOcL.jpg",
+            "https://image.tmdb.org/t/p/original/uB82bc2TrG35Oqv4FBv63ONE5hJ.jpg",
+            "https://image.tmdb.org/t/p/original/19LTGGTTge4o7b57Citup7cIL1s.jpg",
+            "https://image.tmdb.org/t/p/original/gLmN0ZQhkOzWNwXxNYUuJhClDSt.jpg",
+            "https://image.tmdb.org/t/p/original/stQNKAB9lVLCJPAYe0yJF4jDezF.jpg",
+            "https://image.tmdb.org/t/p/original/xOeO4O8485uJgs4eDwH4jzkmQyt.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Witches Before Wizards",
+          "overview": "When an ancient wizard gives Luz a map for a mystical quest, she wonders if she is actually a Chosen One.",
+          "plot": "Luz prepares herself to be a witch's apprentice but is disappointed when Eda instead just tasks her with delivering her potions to various customers. King goes with her as Luz is quick to learn that Bonesborough, a town on the Boiling Isles, is full of creatures that do not care for humans. Luz and King come across the castle of a wizard named Adegast, who leads Luz to believe she is the \"chosen one\" to retrieve a magic staff. When Luz shows the map given to her by Adegast to Eda and King, they laugh at her. She leaves on her own just as Eda becomes suspicious and discovers the whole quest to be a ruse. Luz goes on her quest making allies while Eda and King follow behind. Eventually, Adegast is revealed to be a puppeteer demon who used Luz to capture Eda. He tries to manipulate Luz with his illusions, but she breaks free. Adegast is defeated and Eda eats him. Afterward, Eda tells Luz that she must make her destiny and shows her the surprising beauty of the Boiling Isles.",
+          "airDate": "2020-01-17",
+          "still": "https://image.tmdb.org/t/p/original/tKNM7a7kDx0Esjf4EMaqYYZcrTb.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/tKNM7a7kDx0Esjf4EMaqYYZcrTb.jpg",
+            "https://image.tmdb.org/t/p/original/daficZYEp62v8G35XcugoeD4Urq.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "I Was a Teenage Abomination",
+          "overview": "Luz sneaks into the local magic school to help a friend and makes a new enemy in the process.",
+          "plot": "Luz is dissatisfied with Eda's \"training\", but perks up upon learning about a school that teaches magic called \"Hexside School of Magic and Demonics\", something Eda opposes, as she dropped out. Luz meets Willow Park, a young witch who is picked on by top student Amity Blight for her inability to create abominations. Luz pretends to be Willow's abomination so she can get a passing grade, and also meets Gus Porter, a human-obsessed student. Luz successfully fools the class' teacher with her disguise. Meanwhile, Eda and King make a bet to see who makes the better teacher with King winning due to Luz having gone missing. However, King's \"student\", a slug named Prince Jr., attacks them forcing King to rely on Eda once again. Amity realizes Luz is not an abomination and calls Principal Bump to examine her through dissection. Gus creates a diversion and a chase ensues, where Willow shows her skill at plant magic. Willow is exonerated as an astonished Bump reassigns her to the plant courses. However, Gus informs Luz that she is banned from Hexside. Gus and Willow offer to teach Luz what they learned, but she happily accepts Eda as her teacher instead.",
+          "airDate": "2020-01-24",
+          "still": "https://image.tmdb.org/t/p/original/xjjNErkJKfMET0m3a58hUW0VebZ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xjjNErkJKfMET0m3a58hUW0VebZ.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "The Intruder",
+          "overview": "Luz and King have to defend the Owl House from a mysterious intruder.",
+          "plot": "King tries to teach Luz about demons, but when a boiling rainstorm rolls in, Luz takes the opportunity to make Eda teach her some magic. Though unsure if humans are capable of performing magic, Eda tries showing Luz how to create light, only to pass out from exhaustion. King tells Luz that Eda keeps a bottle of elixir in her room, believing it can give her magic. Before she drinks it, a monstrous demon breaks into the house and begins stalking Luz and King. The two discover that the elixir was to prevent a curse from taking hold of Eda, who is the monster chasing them. While hiding from the transformed Eda, Luz learns to create light by drawing specialized glyphs. Using her newly learned light spell, and King's knowledge of demons, the two manage to stun Eda and give her the elixir, turning her back to normal. Eda explains that she was cursed when she was younger, and it causes her to occasionally transform into an \"owl beast\", hence her nickname \"The Owl Lady\". Later, Eda has a brief nightmare of the figure who cursed her but cannot recall who it is.",
+          "airDate": "2020-01-31",
+          "still": "https://image.tmdb.org/t/p/original/qtQmnJI0PlZhNv4LmABtsvo4zhe.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/qtQmnJI0PlZhNv4LmABtsvo4zhe.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Covention",
+          "overview": "Luz's lesson about witch covens goes awry when she finds herself thrust into a witch's duel.",
+          "plot": "The annual \"Covention\" is held at Bonesborough, an event where young witches can learn about covens which specialize in different categories of magic before choosing one. Eda expresses opposition, citing its restrictive nature of only performing one kind of magic upon joining. Luz and Eda come across the high-ranking Emperor's Coven and learn that its leader is Eda's sister Lilith. Luz runs into Amity, who blames her for getting her in trouble at Hexside and mocks Luz's dream of becoming a witch. Out of anger, Luz challenges Amity to a Witches' Duel to prove that humans can be witches. Amity offers Luz to stop studying magic if she loses, and Amity makes an Everlasting Oath on those conditions. Eda sets magic traps to help Luz, but when King falls into the arena, he accidentally sets off one of the traps, exposing Eda's cheating. However, Eda discovers a power glyph hidden by Lilith on Amity's neck, showing she had also cheated. While the sisters start another duel, Amity runs off embarrassed and Luz follows her to apologize. The two reach a state of understanding and Amity reverses the Everlasting Oath. Lilith gets a call from the Emperor's assistant, Kikimora, who reminds her to focus on capturing Eda, as she promised the Emperor.",
+          "airDate": "2020-02-07",
+          "still": "https://image.tmdb.org/t/p/original/6m56up9yXs1VzwJvytDDsb6g8xx.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/6m56up9yXs1VzwJvytDDsb6g8xx.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Hooty's Moving Hassle",
+          "overview": "When Luz, Willow and Gus accidentally animate the Owl House, the house runs amok around Bonesborough.",
+          "plot": "Eda tries to restock on elixir, but her usual supplier has run out, so she instead plans to visit the Night Market. Meanwhile, Luz discovers that Willow and Gus were not invited to a \"Moonlight Conjuring\" by Amity and her friends, so she brings them to the Owl House to host their own, despite Eda forbidding it. The three inadvertently make the house grow legs, which they can control the movement of. Eda and King meet a supplier, Tibbles Grimhammer, and Eda challenges him to Hexes hold 'em to pay for the elixir. Eda loses, and Tibbles reveals his plans to hand her over to the Emperor's Coven and keep King as a servant. Luz, Willow, and Gus head to Amity's house to upstage her, but a team of demon hunters captures the Owl House. Willow apologizes to Luz, admitting she used to be friends with Amity and wanted to prove her worth to her. The kids defeat the hunters while inadvertently destroying Tibbles' stand, allowing Eda and King to escape with the elixir. Eda is impressed at the actions of Luz and her friends, though she reprimands them by cleaning the house.",
+          "airDate": "2020-02-21",
+          "still": "https://image.tmdb.org/t/p/original/sVl7QHKedKuzFrn17Y3pzee9POg.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/sVl7QHKedKuzFrn17Y3pzee9POg.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Lost in Language",
+          "overview": "While checking out the library, Luz's pranks lead to unintended consequences.",
+          "plot": "While at the library, Luz runs into Amity, who harshly rebuffs Luz's attempts at friendship. Luz also meets Amity's older siblings, Emira and Edric, who take a liking to her. After messing with the library staff, Amity has the three of them thrown out. The siblings then invite Luz to break into the library with them after dark. They break in as the Wailing Star flies over the library, which magically brings the books' contents to life. The siblings then break into Amity's secret hideout, wanting to steal her diary as payback for earlier. Luz refuses to help them, but she unintentionally comes across the diary. Amity catches them in the act and, misinterpreting the situation, deems Luz a bully. Luz goes after Amity to explain herself, but they are both forced to fight an altered version of a children's book character until the star's magic wears off. Luz lets Amity borrow one of her books as a way to make amends. Amity accepts, and likewise apologizes for her prior behavior. Meanwhile, Eda and King babysit the Bat Queen's children. Luz returns to find the two asleep as the Bat Queen comes to pick up her kids.",
+          "airDate": "2020-02-28",
+          "still": "https://image.tmdb.org/t/p/original/9HtiUwaGwLetriE6Nkl2IDKLJ53.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/9HtiUwaGwLetriE6Nkl2IDKLJ53.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Once Upon a Swap",
+          "overview": "A simple disagreement leads to a complex situation when Eda, King, and Luz triple-down on a wager.",
+          "plot": "Luz thinks Eda has it easy with magic to solve all her problems, King thinks Luz has it easy only dealing with teen drama, and Eda thinks King has it easy by being adorable. They resolve to spend the day body-swapped, with the one proven wrong having to clean Hooty. Eda (as King) enjoys being given free things but is captured by two elderly cat café owners. King (as Luz) convinces a group of teenagers to run amok all over town. One of the teens, Boscha, challenges King to a race, destroying the teens' hangout. They chase King into the café, where he too is captured. Luz (as Eda) makes a profit selling human items but gets arrested. At the police station, Lilith (believing Luz is Eda) tries to convince her to join the Emperor's Coven, but Luz escapes and runs into Eda and King. Surrounded by all the people chasing them, Eda swaps their bodies back, before then swapping those of all their pursuers. They return home, having learned their lesson, but because Eda and King refuse to help out, Luz ends up with cleaning duty, much to her annoyance.",
+          "airDate": "2020-03-06",
+          "still": "https://image.tmdb.org/t/p/original/njBeAFDISUF6EyJYE5vLkU9uHCj.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/njBeAFDISUF6EyJYE5vLkU9uHCj.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Something Ventured, Someone Framed",
+          "overview": "When Gus sneaks Luz into Hexside School to present at the Human Appreciation Society, Luz sees a side of the school she didn't expect.",
+          "plot": "When a new member of Hexside's Human Appreciation Society, Mattholomule, challenges Gus' leadership, Gus invites Luz to the society, lying about her ban being lifted. Mattholomule has Luz taken to detention, which is a giant pit with worm creatures that entrap and brainwash students into good behavior. Feeling guilty, Gus gets himself and Mattholomule detained as well, where the three of them work together to get out alive. Meanwhile, Eda reluctantly visits Principal Bump about enrolling Luz into Hexside, after thinking over her desire to attend magic school. Bump agrees to Eda's surprise, believing the school could learn from having a human exchange student, on the condition that Eda fixes every prank she pulled when she attended Hexside. She succeeds, and after Gus takes the blame for the destruction of the detention room, Luz is officially enrolled in Hexside. Gus is then removed from the society as president and member altogether, being replaced with Mattholomule. Bump promises Eda to not tell the Emperor's Coven about Luz.",
+          "airDate": "2020-03-13",
+          "still": "https://image.tmdb.org/t/p/original/5yOFbC97OLd3Ul2WzZ6hmpkudB9.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/5yOFbC97OLd3Ul2WzZ6hmpkudB9.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Escape of the Palisman",
+          "overview": "When an adventure with Eda's staff goes awry, Luz and her friends have to earn the staff back from a mysterious forest creature, or lose the staff forever.",
+          "plot": "When Eda begins feeling the effects of her curse, she decides to take a rest. Luz meets up with Willow and Gus to go see a grudgby match. They miss the bus, so Luz decides to use Eda's staff to fly there. They crash into a tree, resulting in Owlbert, the staff's \"palisman\", cracking his head and running away. The kids run into the Bat Queen, protecting Owlbert, who gives Luz a series of trials to win his trust back. Meanwhile, King finds Eda in her owl beast form, but more docile. He uses her to get revenge on some children at the park, but this alerts animal control, who take Eda away. He tries to use the elixir on her, but it has no immediate effect. However, King manages to make Eda laugh, snapping her back to normal, and the two escape. Luz completes the tasks, but the Bat Queen refuses to give up Owlbert. Luz realizes that the Bat Queen was once a palisman, and has been protecting other palismen. Realizing that Owlbert trusts Luz now, the Queen lets him go. As everyone heads home, Eda realizes that the elixir is becoming less effective.",
+          "airDate": "2020-03-20",
+          "still": "https://image.tmdb.org/t/p/original/xZcZeYCwtQlqvalrUx8ebobptCb.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xZcZeYCwtQlqvalrUx8ebobptCb.jpg"
+          ]
+        },
+        {
+          "episode": 11,
+          "name": "Sense and Insensitivity",
+          "overview": "When King becomes a bestselling author, he learns a valuable lesson in reading the fine print.",
+          "plot": "The Book Fair has come to Bonesborough and Luz is excited. When she discovers that a book-writing contest is being held, she enters it with King joining. Meanwhile, Eda discovers that Lilith is searching for the Bloom of Eternal Youth for the Emperor. When Lilith calls her aged and weak because of her curse, Eda obtains a map to look for the Bloom and prove her wrong. Luz tries writing a romantic fantasy while King just wants to add violence to it. King takes over the book and refuses to listen to Luz's ideas. A publisher named Piniet reads his manuscript and makes King famous overnight. When King has to write his second book, however, he attempts to get Luz to help him, but she refuses. Piniet kidnaps Luz and forces her and King to write the book. King finally learns to compromise with Luz and they escape after burning Piniet's contract. Eda and Lilith race to the Bloom only to find that it was a trap by the market seller who gave Eda the map. After beating him up, Eda politely turns down Lilith's offer to join the Emperor's Coven and Lilith apologizes for her insults.",
+          "airDate": "2020-07-11",
+          "still": "https://image.tmdb.org/t/p/original/mznwKwYC56ziP4IfVxwACmv1qjz.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/mznwKwYC56ziP4IfVxwACmv1qjz.jpg"
+          ]
+        },
+        {
+          "episode": 12,
+          "name": "Adventures in the Elements",
+          "overview": "Luz needs to learn a new spell, so Eda takes her to the most magical place on the island to train.",
+          "plot": "Luz is excited to join Hexside. However, Amity informs her that to share the same classes with her, she needs to know at least two spells. Luz convinces Eda to teach her a second spell and she takes her to The Knee, a snowy tundra on the Boiling Isles, to train. To Luz's shock, Amity is there as well being trained by Emira and Edric to make up for the library incident. Meanwhile, King uses a life-giving potion to create an army of stuffed dolls. They turn on him and he ends up recruiting Hooty to destroy them. Dissatisfied with Eda's teaching style and wanting to impress Amity and her siblings, Luz steals Amity's training wand. She ends up angering the Slitherbeast, a snow monster that captures Eda, Emira, and Edric. Upset, Amity puts Luz in a cage to protect her while she tries to rescue them. Luz, being forced to wait, has an epiphany and learns ice magic, which she uses to escape. Working together, Luz and Amity fight the Slitherbeast and Eda puts the monster to sleep. Luz and Eda return home to find the mess King and Hooty created while they were away.",
+          "airDate": "2020-07-18",
+          "still": "https://image.tmdb.org/t/p/original/d5HlnIfVfkS6uE2KMAbcOQ7U7Nw.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/d5HlnIfVfkS6uE2KMAbcOQ7U7Nw.jpg"
+          ]
+        },
+        {
+          "episode": 13,
+          "name": "The First Day",
+          "overview": "During Luz’s first day of Magic School, curiosity gets the best of her, and she finds herself thrown into the Delinquent Track, where she’s not allowed to learn magic.",
+          "plot": "Luz attends her first day at Hexside, but is upset to discover she can only choose one type of magic to learn. She has trouble deciding, so Principal Bump enrolls her in the Potions Track. When Luz gets caught with a crystal ball used by the Oracle Track, she is sent to detention. Wanting to escape, Luz is brought by her fellow detentionees, Viney, Jerbo, and Barkus, to their secret hideout, a room filled with magical shortcuts to all parts of the school. They use these shortcuts to listen in on other classes, learning how to combine multiple types of magic. At the same time, a visiting school inspector is revealed to be an impostor; they are a magic-draining basilisk. Luz asks the detentionees for their help to defeat it, and they use their mixed magic skills to subdue the beast. This convinces Bump to allow them all to learn mixed magic. Meanwhile, King follows Luz to school and takes over a class. Bump later discovers King posing as a teacher and chases him out of the school.",
+          "airDate": "2020-07-25",
+          "still": "https://image.tmdb.org/t/p/original/nKT8KC2nHm9TjkNxa5NVKMk8tb0.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/nKT8KC2nHm9TjkNxa5NVKMk8tb0.jpg"
+          ]
+        },
+        {
+          "episode": 14,
+          "name": "Really Small Problems",
+          "overview": "King confides in a carnival fortuneteller who makes his dream come true, but it comes at a cost.",
+          "plot": "When Hexside is closed because of a pixie infestation, Eda receives an invitation to a pop-up carnival. While there the gang runs into Tibbles, who now owns a miniature circus called the \"Tent of Tiny Terrors\". King and Luz run into Willow and Gus, who were also invited to the carnival by Tibbles. Jealous and feeling left out by the other three, King is tricked by Tibbles into shrinking Willow and Gus with a potion. Luz finds out about it and confronts King, but they end up shrinking themselves after fighting over the potion. King and the children are captured by Tibbles and put in his tent where they are chased by his miniature beasts. Realizing that all of this is his fault, King tricks Tibbles into restoring everyone to normal size. Eda drives Tibbles away and Luz, King, Willow, and Gus all have fun together at the carnival for a few more hours.",
+          "airDate": "2020-08-01",
+          "still": "https://image.tmdb.org/t/p/original/coNfbXixxC8FWfifnqo5A9oQPRW.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/coNfbXixxC8FWfifnqo5A9oQPRW.jpg"
+          ]
+        },
+        {
+          "episode": 15,
+          "name": "Understanding Willow",
+          "overview": "Luz, Willow and Amity take a trip down memory lane.",
+          "plot": "Luz and Willow attend photo class, which takes people's memories and places them into photos. Amity spots a photo of her and Willow when they were friends and burns it to hide their former friendship, only for it to spread to the other photos, rendering Willow catatonic. Luz and Gus discover Amity's actions and take Willow to Eda, who sends Luz and Amity into Willow's mind to fix her memories. Meanwhile, Eda and King compete to be interviewed by Gus for his journalism class, but Gus ultimately chooses Hooty. While restoring Willow's memories, Luz and Amity discover that Willow's inner self is damaging memories with Amity in them. Willow begins destroying the memory of Amity, ending her friendship with her. However, Amity reveals that her parents blackmailed her into ending their friendship by threatening to bar Willow from Hexside and forced Amity to associate with Boscha and her gang. After reconciling with Willow, Amity and Luz are able to restore her memories. In the real world, Amity and Willow start to rekindle their friendship and the former discards Skara's invite to her party, ending her forced association with Boscha and her gang.",
+          "airDate": "2020-08-01",
+          "still": "https://image.tmdb.org/t/p/original/7RPMM8szfkrnq0x7SUNfhOhqTX3.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/7RPMM8szfkrnq0x7SUNfhOhqTX3.jpg"
+          ]
+        },
+        {
+          "episode": 16,
+          "name": "Enchanting Grom Fright",
+          "overview": "Luz experiences Grom, Hexside’s version of Prom, and it’s not what she expects.",
+          "plot": "Luz learns that Hexside has its own version of Prom called \"Grom\", in which one student is chosen to fight the shape-shifting fear demon Grometheus, who lives under Hexside. Amity is selected as Grom Queen, but Luz, seeing how worried Amity is, steps up to replace her. Meanwhile, Gus invites King to be his co-emcee at Grom, but King is revealed to have stage fright. Once at Grom, Luz begins battling Grometheus, who takes on the appearance of her greatest fear: her mother discovering she lied and never went to camp. While Grometheus chases Luz, King overcomes his fear and directs the students toward the fight. Amity steps in to help Luz, and Amity's greatest fear is shown to be Luz rejecting her. Luz and Amity defeat Grometheus together and are carried back to the party by the students as Co-Grom Queens. Back home, Luz, who has been avoiding texting her mother, finally finds the courage to text her back. In the Human Realm, it is shown someone is impersonating Luz and sending letters to her mother.",
+          "airDate": "2020-08-08",
+          "still": "https://image.tmdb.org/t/p/original/75yEv76Ch61xKQRP7CrHMdjaGpF.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/75yEv76Ch61xKQRP7CrHMdjaGpF.jpg",
+            "https://image.tmdb.org/t/p/original/sdr5lbfnYNhAWQOkDGdFNaByULu.jpg",
+            "https://image.tmdb.org/t/p/original/vNQ2qZoBdGzZdGE3jkIlC7NqlER.jpg",
+            "https://image.tmdb.org/t/p/original/8uBSYWRajVOkQ7I3PDbhkkFzAin.jpg"
+          ]
+        },
+        {
+          "episode": 17,
+          "name": "Wing It Like Witches",
+          "overview": "Not your average underdog story.",
+          "plot": "Willow experiences a confidence boost that earns the support of her classmates after she and Amity rekindled their friendship. This annoys Boscha, the grudgby team captain, who looks down on and bullies Willow. Luz and Gus try to defend her but are also bullied. Thinking to beat her at her own game, Luz challenges Boscha to a grudgby match on Willow's behalf. Luz asks Amity to join their team, but she flusteredly refuses. Meanwhile, Lilith arrives at the Owl House to arrest Eda. Eda agrees to comply only if Lilith beats her in a grudgby match. Eda wins but sympathetically gives Lilith her ring, telling her to report back that Eda put up a fight. Luz pushes Willow and Gus in training too far and they quit. Amity reveals to Luz that she was the team captain before Boscha, but accidentally hurt her fellow players by pushing them too hard, so quit. Learning from this, Luz forfeits to Boscha. When Boscha attacks Luz, Amity convinces Willow and Gus to return, and they have a proper grudgby match. Willow's team narrowly loses, but Boscha's teammates congratulate Willow for the fun game, frustrating Boscha.",
+          "airDate": "2020-08-15",
+          "still": "https://image.tmdb.org/t/p/original/dxJM3UuJTQwGrhF6KOtDQamRwPv.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dxJM3UuJTQwGrhF6KOtDQamRwPv.jpg"
+          ]
+        },
+        {
+          "episode": 18,
+          "name": "Agony of a Witch",
+          "overview": "On a school field trip to the mysterious Emperor’s Castle, Luz strays from the group and into danger.",
+          "plot": "Luz discovers that Eda's curse has been worsening, requiring increasingly more elixir to restrain. At school, Luz learns that they are taking a field trip to the Emperor's castle. She decides to go after learning the castle holds powerful magic relics, including a healing hat that might be able to cure Eda. While on the tour, Luz sneaks off, seeing Lilith being threatened by Emperor Belos with banishment from the Emperor's Coven if she fails to capture Eda. Willow and Gus learn of Luz's plan and help her break into the relics room. However, they are discovered by Lilith, who holds Luz hostage to lure out Eda. Eda and Lilith have a fight outside the castle, during which Lilith accidentally reveals that she was the one who cursed Eda. With Luz's life on the line, Eda uses up her magic, causing her to transform fully into her owl beast form. Lilith takes Eda away to Belos before telling Luz to return to her world. A defeated Luz returns to the Owl House and breaks down in tears as King and Hooty comfort her.",
+          "airDate": "2020-08-22",
+          "still": "https://image.tmdb.org/t/p/original/rAIBtTkoTqIADXUbXWzw4ItXVmt.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/rAIBtTkoTqIADXUbXWzw4ItXVmt.jpg"
+          ]
+        },
+        {
+          "episode": 19,
+          "name": "Young Blood, Old Souls",
+          "overview": "Luz’s skills as a witch are put to the test when she attempts the impossible.",
+          "plot": "Rather than cure Eda as he had promised, Emperor Belos sends her to be petrified, much to Lilith's horror. Luz and King break into the Conformatorium to rescue Eda, who tells them that Belos wants the portal to the human world and that Luz needs to return home and destroy it. As Eda is taken away to be petrified, Luz fights with Lilith. Lilith admits that cursing Eda was a terrible mistake (originally being unaware of the curse's true effect or permanence), and gives Luz Eda's staff. Luz and Lilith go to save Eda, but are ambushed by Belos, who has Lilith and King sent to be petrified as well. Luz fights Belos but, being overpowered, destroys the portal to stop him. She rescues Eda and they escape with King and Lilith. Lilith uses her magic to share Eda's curse, resulting in Eda returning to normal, but both her and Lilith's magic are weakened. Afterward, Luz makes a video talking to her mother, promising that she will find a way home. Belos sends a member of the Emperor's Coven, the Golden Guard, to spy on the Owl House, while he begins reconstructing the portal.",
+          "airDate": "2020-08-29",
+          "still": "https://image.tmdb.org/t/p/original/wTVV2dnPwsohtuW59yP29drCO5T.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/wTVV2dnPwsohtuW59yP29drCO5T.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 2,
+      "name": "Season 2",
+      "airDate": "2021-06-12",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Separate Tides",
+          "overview": "Luz feels guilty about Eda losing her powers, so she sets sail in search of a lucrative bounty to help the Owl House.",
+          "plot": "Luz feels guilty for Eda and Lilith's loss of magical powers and subsequent financial troubles. To earn more money for the group, she joins an ocean crew to hunt for a Selkidomus, alongside King. King discovers the ship belongs to the Emperor's Coven and is captured by the Golden Guard. When a thief steals the reward for capturing the Selkidomus, Luz gives chase. She discovers Eda as the thief but also knocks the money into the sea. The Golden Guard reveals himself, demanding that the two kill the Selkidomus, or else he will harm King. Eda convinces Luz to stop blaming herself for recent events, explaining how her life is better with Luz in it. The two then work together to fake the creature's killing, which convinces the Golden Guard to leave. The Selkidomus rewards the two with valuable \"selkigris\". Meanwhile, Lilith wants to make things up to Eda by creating a scrying potion for her. She acquires one of the ingredients with Hooty's help, and the two become friends. When Luz, Eda, and King return, Lilith completes the potion, allowing them to spy on Emperor Belos' castle. Unbeknownst to them, Belos is aware of being spied on.",
+          "airDate": "2021-06-12",
+          "still": "https://image.tmdb.org/t/p/original/7zf59thEp0D6659kUTWjb9gufjK.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/7zf59thEp0D6659kUTWjb9gufjK.jpg",
+            "https://image.tmdb.org/t/p/original/8VWU318tzDF0a9Cc2d6ylXjZ1Hl.jpg",
+            "https://image.tmdb.org/t/p/original/oCi0v3g2FJfqYbnC31dlibdQY3c.jpg",
+            "https://image.tmdb.org/t/p/original/3JRW07mbyY5OJPQbIDtBwPqD8oP.jpg",
+            "https://image.tmdb.org/t/p/original/ofFMcykNV4eMSkfSN9IjwoHR3Dp.jpg",
+            "https://image.tmdb.org/t/p/original/CEXL4nw1S3GUddziup6zvM1Ybz.jpg",
+            "https://image.tmdb.org/t/p/original/wdWxPQxntCxkjyE4JipZw9Y1Mux.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Escaping Expulsion",
+          "overview": "When Amity's parents get Luz, Willow and Gus expelled from Hexside, Luz strikes a dangerous deal with them to get back into school.",
+          "plot": "Luz returns to school, reuniting with Amity, Willow, and Gus. However, Luz, Willow, and Gus are suddenly expelled from Hexside by Principal Bump at the request of Amity's parents, Odalia and Alador Blight, who believe they are a bad influence on Amity. Luz decides to strike a deal with the Blights: If she helps demonstrate their abomination-based weapons to investors, they will allow Luz and her friends to return to Hexside. However, the showcase turns life-threatening as one of the products, the unstoppable robotic \"Abomaton\", tries to kill Luz. Amity, Willow, and Gus break into Blight Industries to save Luz. Amity finally stands up to her mother, threatening to destroy the Abomaton unless Odalia allows her friends back into Hexside. Odalia reluctantly relents. Meanwhile, Eda and Lilith spend their day mastering Luz's glyph magic. However, Eda's haste to skip the basics and try glyph combos causes one of her spells to go awry, endangering King. With Lilith's help, they save King and figure out how to properly combine glyphs into new spells. Later, the Golden Guard purchases all of the Blight's Abomatons for the Emperor.",
+          "airDate": "2021-06-19",
+          "still": "https://image.tmdb.org/t/p/original/2e89qkqvkMMZRl9PpynQcnTGF4J.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/2e89qkqvkMMZRl9PpynQcnTGF4J.jpg",
+            "https://image.tmdb.org/t/p/original/xyeXHeFdJCJPaNqcBWmX1m2WeQV.jpg",
+            "https://image.tmdb.org/t/p/original/tT6Ggj9AKMPzQbMcrgg64vLLlYR.jpg",
+            "https://image.tmdb.org/t/p/original/lrJsydeurNdCfpCSeWEReZZsL19.jpg",
+            "https://image.tmdb.org/t/p/original/l96BXYoIbATUu8KOAu4e6tyXaEL.jpg",
+            "https://image.tmdb.org/t/p/original/kyuqybQPCg8dt1kuDQc38Dyp1zY.jpg",
+            "https://image.tmdb.org/t/p/original/7TiUFmoNJ0ffkFQUVZVm94NnpPv.jpg",
+            "https://image.tmdb.org/t/p/original/oLjL7CDcYDIwQgvbAV0etJI1vIg.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Echoes of the Past",
+          "overview": "King's delusions of grandeur lead Luz, Lilith, and Hooty to a dangerous new island.",
+          "plot": "Lilith doubts King's claim of being the literal king of demons. To prove her wrong, King takes Lilith, Luz, and Hooty to the island where Eda found him. On the island, they enter a tower that the King claims was his castle. They explore the structure but are suddenly attacked by a strange creature, with Eda arriving to rescue them. Eda then tells King the truth, that he was never actually the king of demons; this was merely a fantasy an infant King created, which Eda played along with to make him happy. King is devastated by this revelation, but Luz believes the top of the tower may hold answers to King's true origin. The group evades the creature and reaches the top, discovering the egg King hatched from. King regains his memory of hatching, and of someone calling him \"son\". He also realizes the creature is trying to protect him, and that he can control it. Back home, Luz promises to do everything she can to help King find his father.",
+          "airDate": "2021-06-26",
+          "still": "https://image.tmdb.org/t/p/original/lp0ONZ8dr3ebxRiWaKxnd9sUBzg.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/lp0ONZ8dr3ebxRiWaKxnd9sUBzg.jpg",
+            "https://image.tmdb.org/t/p/original/tq9FZyGedlBOZX2tgmaDA9PUh9A.jpg",
+            "https://image.tmdb.org/t/p/original/hXNVAGWGR1dh7VW9ZbXLOW7mP1a.jpg",
+            "https://image.tmdb.org/t/p/original/nW0iwhKoUH9DFsAJUUBROabkDDm.jpg",
+            "https://image.tmdb.org/t/p/original/lhiH6TsFOQfBjuCRacNYnRgmbMK.jpg",
+            "https://image.tmdb.org/t/p/original/o84W1KkY5HdZYeeX69yDBrQHLnu.jpg",
+            "https://image.tmdb.org/t/p/original/7SquV2nwr9V327LoGn8jtY7FfUK.jpg",
+            "https://image.tmdb.org/t/p/original/zCvnIRaiDyO8mNhZd7WxNtVtjuy.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Keeping Up A-fear-ances",
+          "overview": "Eda gets an unwelcome visit from a family member who puts a strain on everyone in the Owl House.",
+          "plot": "Eda's mother Gwendolyn arrives at the Owl House offering a supposed cure for Eda's curse. However, Eda turns her down, as Gwen comes yearly with no success. Convinced she is trying to help, Luz goes with Gwen to see Wortlop, a magic healer, who gives her a book of cures. They lead Eda into the woods, using the book's questionable methods to help her. Meanwhile, Lilith sulks over how Gwen never paid attention to her. When the curse begins taking hold, Lilith finds the elixirs missing and fully transforms. Luz realizes Wortlop's book is a scam, and that Gwen, convinced of Wortlop's methods, had taken the elixirs. Eda transforms as well and starts fighting Lilith's cursed form. Gwen returns to Wortlop but discovers he was a team of disguised con artists. Realizing her error, she helps Luz and King administer the elixir to Eda and Lilith. Eda and Lilith make up with Gwen, with Lilith deciding to move back in with her. Gwen tells Luz that she is not the first human on the Boiling Isles, and says to find more information at the library. Back in the Human Realm, a doppelgänger of Luz is living with an oblivious Camila.",
+          "airDate": "2021-07-03",
+          "still": "https://image.tmdb.org/t/p/original/gppzZBsQwldVkkca60DwC8oCzls.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/gppzZBsQwldVkkca60DwC8oCzls.jpg",
+            "https://image.tmdb.org/t/p/original/hrZX63aXFfAOftYD57swZvXTj63.jpg",
+            "https://image.tmdb.org/t/p/original/e7srrq3PUDwTpaSrDUqad7yms7L.jpg",
+            "https://image.tmdb.org/t/p/original/7XjqXbFKTk1LoM2lq3G9JpCk409.jpg",
+            "https://image.tmdb.org/t/p/original/w9yUsibnBhUdQNyapS0cJxAr1J.jpg",
+            "https://image.tmdb.org/t/p/original/kpH5CzxifRxm28qTKhSZtXW4vNz.jpg",
+            "https://image.tmdb.org/t/p/original/irf7HzHUSPDuYIpfmmokdj6u0Mm.jpg",
+            "https://image.tmdb.org/t/p/original/xUUI37YileWnoGECYjBg9hYEWDT.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Through the Looking Glass Ruins",
+          "overview": "Gus tries to impress a group of cool kids from Glandus High, while Luz and Amity journey into the most dangerous section of the library.",
+          "plot": "Gus begins to doubt his skills as an illusionist. When he meets a gang of students from Glandus High, including Mattholomule, they invite him to the Looking Glass Ruins to collect Galderstones which can empower magic. However, Gus discovers that the ruins are an illusionist graveyard and its guardian turns out to be an eccentric illusionist. The Glandus students trap Gus and the keeper to steal the stones, but a guilt-ridden Mattholomule helps free them and they scare the gang away, befriending Gus in the process. Meanwhile, Luz meets up with Amity to enter the forbidden section of the library to learn more about Philip Wittebane, the first human on the Boiling Isles. They locate Philip's journal, but find its contents devoured by a mouse. This angers Luz, which alerts Malphas, the master librarian, who then fires Amity. Amity confides in Edric and Emira about her feelings for Luz and they re-dye her hair lilac. Luz manages to get Amity's job back and Amity shows her that the mouse, dubbed an Echo Mouse, can replay the contents of what it has eaten. As Luz thanks Amity, she receives a kiss on the cheek from her, which flusters them both.",
+          "airDate": "2021-07-10",
+          "still": "https://image.tmdb.org/t/p/original/o4HbUxMwvcWKYIZIIHgBDZScoHY.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/o4HbUxMwvcWKYIZIIHgBDZScoHY.jpg",
+            "https://image.tmdb.org/t/p/original/8Y7VGNrBbEZkyTSUGqStvf71C4B.jpg",
+            "https://image.tmdb.org/t/p/original/aXvGRbX0J6citE0dO8GDNqjU8cs.jpg",
+            "https://image.tmdb.org/t/p/original/gsJZF1k3jkWDjgTFjqgmr7voRAG.jpg",
+            "https://image.tmdb.org/t/p/original/nAlIc7Z4MQwjfRYE7ly8TlWVAPT.jpg",
+            "https://image.tmdb.org/t/p/original/8cqyRGHZRitJDADr96oWcyFg0PV.jpg",
+            "https://image.tmdb.org/t/p/original/oSJw1Ew8eWjUjDManz0w2jzgB3q.jpg",
+            "https://image.tmdb.org/t/p/original/cAsxlc4a6OBRwMReVbTflWwBnao.jpg",
+            "https://image.tmdb.org/t/p/original/oiVA3lrt0vPqh0o3cFOVMMum8MN.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Hunting Palismen",
+          "overview": "It’s Palisman Pairing Day at Hexside, but Luz doesn’t match with a Palisman of her own and soon finds herself on an unexpected journey with a foe.",
+          "plot": "Emperor Belos, suffering from an unspecified ailment, asks the Golden Guard, his nephew, to find him more palismen to keep it at bay. At Hexside, it is Palisman Pairing Day, but Luz does not match with any of the palismen due to her uncertain goals for the future. Unsatisfied, Luz returns late that night, only to find the Golden Guard stealing the palismen nest. They fight but are soon attacked by a dragon. Luz discovers that the dragon was sent by Kikimora to get rid of the Golden Guard, so she decides to help him. The two bond over their lack of magic as they create a fog that would put Kikimora to sleep and attempt to rescue the nest from her. The Golden Guard considers double-crossing Luz, but she speaks to his better judgment, and he reveals his real name as \"Hunter\". Hunter battles a drowsy Kikimora while Luz takes off on the dragon to return the nest. Afterward, Eda and King give Luz some \"palistrom\" wood for her to carve her own palisman. Meanwhile, one of the palismen, a cardinal named Flapjack, appears to Hunter in his room, having chosen to be his palisman.",
+          "airDate": "2021-07-17",
+          "still": "https://image.tmdb.org/t/p/original/FC8aDIOdISZKhH4FeP3JdYsGfQ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/FC8aDIOdISZKhH4FeP3JdYsGfQ.jpg",
+            "https://image.tmdb.org/t/p/original/zTRaErRGsb4czJEVaxAYO0Q4XyE.jpg",
+            "https://image.tmdb.org/t/p/original/st5154C92pbZlybPjBC7QVPVfir.jpg",
+            "https://image.tmdb.org/t/p/original/2Vss3CrugnZJizuZi0HYgJRx0Gl.jpg",
+            "https://image.tmdb.org/t/p/original/cyc2fpNndxcy1tYu254kgRbCdy5.jpg",
+            "https://image.tmdb.org/t/p/original/ilqySuPJr97OmKzzsyVtrmudZYK.jpg",
+            "https://image.tmdb.org/t/p/original/qpP7DtzGofM4vtHhneGf6nkzxsk.jpg",
+            "https://image.tmdb.org/t/p/original/o72nAzDgJ0f215j2x9jcZ5WRgZH.jpg",
+            "https://image.tmdb.org/t/p/original/er2qKryF30OamxnJkPlcdzbyVnl.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Eda's Requiem",
+          "overview": "A special witch from Eda’s past enlists her in a rebellion against the Emperor.",
+          "plot": "Eda feels sad because Luz and even King will leave her soon to return to their respective families. As she sulks in town, she meets a secret rebel group called the Bards Against the Throne (or BATS for short), led by Raine Whispers, the newly appointed head of the Bard Coven and Eda's ex-partner. While helping the BATS save coven-less witches, Raine learns that Eda's curse causes things to shrivel and die around her when she plays her mandolin. One of the BATS' missions turns out to be a trap set by coven heads Eberwolf and Darius, so Eda and Raine decide to use Eda's cursed magic to stop them, even if it costs their own lives. Upon learning that Eda has Luz and King, Raine forces her to run back to them. Eda helps King to stream a message to his father while he reveals that he has legally changed his name to King Clawthorne. Raine gets captured by Kikimora. Instead of a punishment, she puts Raine into a deep slumber since every coven head is crucial in Emperor Belos' plan.",
+          "airDate": "2021-07-24",
+          "still": "https://image.tmdb.org/t/p/original/hPIJNgr2qQo1ZwcqjwyivcHWIJO.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/hPIJNgr2qQo1ZwcqjwyivcHWIJO.jpg",
+            "https://image.tmdb.org/t/p/original/fAeZdVGJP0Pjwh5IEqH0UuHFT1N.jpg",
+            "https://image.tmdb.org/t/p/original/xFQVOs4YmkiiLZ1yQMLMgenjzJu.jpg",
+            "https://image.tmdb.org/t/p/original/LcT8vy30LhXkcCxV38K1O1aKGt.jpg",
+            "https://image.tmdb.org/t/p/original/tnOBcD5PSmi2FQndvBVN8aLKbhk.jpg",
+            "https://image.tmdb.org/t/p/original/mctHx9tlRu3GYEA84IU09VIEHmD.jpg",
+            "https://image.tmdb.org/t/p/original/5NGMh5iaDYFm5qvPwnauNrmhlDg.jpg",
+            "https://image.tmdb.org/t/p/original/ghp8Dt4kHAk2SRxGy3L5rPTKy4B.jpg",
+            "https://image.tmdb.org/t/p/original/avArMVb7je7TqsBvG38KIVh8ZL8.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Knock, Knock, Knockin' on Hooty's Door",
+          "overview": "Hooty tries to help King, Eda and Luz with their problems, but it doesn’t go as planned.",
+          "plot": "King is having trouble trying to figure out what kind of demon he is, Eda is nervous about being powerless, and Luz is uncertain how to ask Amity out. Hooty takes it upon himself to help them all. He puts King through a series of tests, but cannot determine what he is. Angered, King unleashes a previously unknown ability, a powerful \"echo blast\". Hooty puts Eda to sleep, causing her to relive traumatic memories of how she accidentally mauled her father as the Owlbeast and of Raine breaking-up with her for not being honest about her curse. She decides to try working with her curse and awakens to a new harpy-like form. Hooty kidnaps Amity and puts her and Luz through a tunnel of love. Fearing the display will turn Amity away, Luz desperately tries hiding the tunnel's romantic messages, although this causes Amity to believe Luz is uninterested in her. Believing he has failed, Hooty panics, causing havoc across the house. Contrarily, Eda and King are happy with their new developments and hold Hooty back long enough for Luz and Amity to ask each other out. With things better, Hooty writes a letter to Lilith and encounters a stranger, resembling King, who asks him to deliver a letter to King. However, Hooty unthinkingly eats it.",
+          "airDate": "2021-07-31",
+          "still": "https://image.tmdb.org/t/p/original/mp5SrOs7HLORbUKiRrxPWDJRJzf.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/mp5SrOs7HLORbUKiRrxPWDJRJzf.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Eclipse Lake",
+          "overview": "When Luz gets sick with the Common Mold, it's up to Amity to find an important ingredient for the portal door - but Amity's not the only one on its trail.",
+          "plot": "While Luz recovers from a mild illness, the Echo Mouse reveals that Titan's Blood — a key element to travel between worlds — can be found at Eclipse Lake. Eda, King, and Amity go off to find it. They run into Hunter, also on a mission for the blood to prove himself to Emperor Belos, and they hold him captive. Upon entering a cave, they find Kikimora on a search as well with the Emperor's guards. Hunter escapes, leaving the group behind to get captured by the guards. Eda transforms into her harpy form to take out the guards, while Amity and King go after Hunter. They discover the lake is dried up, but Amity and Hunter both realize that the original portal key has Titan's Blood in it. A fight over it ensues, ending with Hunter threatening Luz's life. Amity gives up the key, but secretly cracks it in her hand and gets some of the blood on her glove. The group returns to the Owl House, where Luz expresses her joy for Amity's safety, while Hunter begins to bond with Flapjack on his way home.",
+          "airDate": "2021-08-07",
+          "still": "https://image.tmdb.org/t/p/original/cNEuVNfIMr7u423qaAuGUko686q.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/cNEuVNfIMr7u423qaAuGUko686q.jpg",
+            "https://image.tmdb.org/t/p/original/ok6GPJQ7eI0KJPDDzyeArAYqkCz.jpg",
+            "https://image.tmdb.org/t/p/original/7kWiVvKm7FKfAD8QrN8MFzWxdMm.jpg",
+            "https://image.tmdb.org/t/p/original/uyLQ2Eij6FOvnmZ4n36B92TIl50.jpg",
+            "https://image.tmdb.org/t/p/original/mmW4ClXQxOk8PWJcSG0l8kFdkgB.jpg",
+            "https://image.tmdb.org/t/p/original/cfahPDZV5KDY4tfIBjitpHKETcT.jpg",
+            "https://image.tmdb.org/t/p/original/cxYhcZd8hbuaxi8xnFB7uXSgT9I.jpg",
+            "https://image.tmdb.org/t/p/original/xbWdj8DLzeMbgwloRo3zRrpqb3T.jpg",
+            "https://image.tmdb.org/t/p/original/Ak6q1zOdS0ZcrnCc2aH6YF1PItk.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Yesterday's Lie",
+          "overview": "Luz thinks she's found a way back home. But is she ready for what she'll find on the other side?",
+          "plot": "Luz manages to create a new portal. However, this portal is defective, only allowing Luz to interact with the Human Realm through reflections. She discovers her doppelganger, who turns out to be a shapeshifting basilisk named Vee who was experimented on by the Emperor's Coven. She ran away from the Boiling Isles and decided to live Luz's life because Camila was so kind to her. Because she needs magic to disguise herself, Luz tries to help her by guiding her to the local museum, where they learn that its curator, Jacob Hopkins, has been trying to hunt demons for years. He captures Vee, so Luz reaches out to her mother, telling her the whole truth and asking her for help. Camila is incredulous at first but soon understands the situation, frees Vee, and locks up Jacob. She allows Vee to live with her, but worries for Luz and becomes deeply upset after finding out that staying on the Boiling Isles was Luz's own choice. As Luz is pulled back through the quickly destabilizing portal, Camila asks her to promise to never leave her again, which Luz does with mixed feelings.",
+          "airDate": "2021-08-14",
+          "still": "https://image.tmdb.org/t/p/original/jfJLwdXAJInpcjsmnwsPTnIvfYB.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/jfJLwdXAJInpcjsmnwsPTnIvfYB.jpg",
+            "https://image.tmdb.org/t/p/original/o9zy0GW4WTIiAJ96rj3RP3g4MdD.jpg",
+            "https://image.tmdb.org/t/p/original/lMBRCauP9oPTnraYkAp4xd5sPBa.jpg",
+            "https://image.tmdb.org/t/p/original/tsv9GRtJ9OZNkmhz9or5etUNNwl.jpg",
+            "https://image.tmdb.org/t/p/original/8z18k3gELQmzss1Li5BjNguBH8E.jpg",
+            "https://image.tmdb.org/t/p/original/iEgj42l6NQzQ1q4NhmlFHI4Dyhu.jpg",
+            "https://image.tmdb.org/t/p/original/yWxttDXrPpy0Gm8gftSJTS3KO42.jpg",
+            "https://image.tmdb.org/t/p/original/7YtVXfrbhU5UnHYnCoJw1kBbDsK.jpg",
+            "https://image.tmdb.org/t/p/original/38YdyJnPTKsSjxKfjKvXEXaqRRv.jpg"
+          ]
+        },
+        {
+          "episode": 11,
+          "name": "Follies at the Coven Day Parade",
+          "overview": "In the aftermath of her trip home, Luz takes on daring rescue missions during the Coven Day parade.",
+          "plot": "As the people of Bonesborough prepare for the annual Coven Day Parade, Luz discovers that Kikimora has a hard time choosing between visiting her family or attending the parade. Seeing the similarity with her situation, Luz decides to help her under the guise of reuniting Eda with Raine. During the parade, King and Hooty distract the guards while Luz \"kidnaps\" Kikimora and Eda takes Raine. However, Raine, now under the influence of Plant Coven leader Terra Snapdragon, has seemingly forgotten their previous encounter and forces Eda to go away. Amity aids Luz in helping Kikimora, but Terra entices her with a long-coveted promotion causing Kikimora to switch sides. Terra reveals that it was just a test, so Kikimora could prove her loyalty and she passed. Afterwards, Luz finally tells Amity what happened between her and her mother. As they regroup with Eda, King, and Hooty, Emperor Belos ends the parade with an announcement about the Day of Unity and reveals his face to the public for the first time.",
+          "airDate": "2022-03-19",
+          "still": "https://image.tmdb.org/t/p/original/lJ4MOenTCWn1YJvhlZNJMWXAiGQ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/lJ4MOenTCWn1YJvhlZNJMWXAiGQ.jpg"
+          ]
+        },
+        {
+          "episode": 12,
+          "name": "Elsewhere and Elsewhen",
+          "overview": "Luz is desperate for more information about Philip Wittebane, the creator of the portal door. With Lilith's help, she sets off on a journey for the ages.",
+          "plot": "After learning from Eda about mythical puddles that allow people to travel through time, Luz sees this as an opportunity to meet Philip Wittebane and ask him about the portal door. She seeks Lilith for help and together, they find the time pools rather easily. One of the pools takes them back to the \"Deadwardian Era\" where they meet Philip. They join him on a journey inside the Titan's head, searching for someone called \"The Collector\". However, Philip only wants to use them as \"sacrifices\" to get past a large prehistoric creature and makes off with a moon-shaped mirror. Luz and Lilith manage to calm the creature and after confronting Philip, Lilith punches him in the face. Meanwhile, Eda tries to avoid meeting her father, Dell, whom she has not seen since she injured him in her owlbeast form, both half-blinding him and forcing him to give up being a palisman-carver. Eventually, they sit down to talk and Dell tells Eda to try to forgive herself. Back in the past, Philip is revealed to be a younger Emperor Belos.",
+          "airDate": "2022-03-26",
+          "still": "https://image.tmdb.org/t/p/original/4HaT8QcZUYwY7gNeV9SyG7lGTAt.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/4HaT8QcZUYwY7gNeV9SyG7lGTAt.jpg"
+          ]
+        },
+        {
+          "episode": 13,
+          "name": "Any Sport in a Storm",
+          "overview": "Hunter goes uncover at Hexside for his most important mission yet. Willow becomes determined to succeed at an exciting new sport.",
+          "plot": "Hunter wants to prove that he is worthy of the Golden Guard sigil, so Darius tasks him to find recruits for the Emperor's Coven. Disguising himself as a Potions Track student named Caleb, Hunter goes to Hexside and joins Willow's Flyer Derby team which includes Gus, Skara, and Viney. After participating in a friendly game, Hunter befriends them and soon regrets his intention to force them to join the Emperor's Coven. He saves them from Darius who reveals the Coven does not need any recruits, but he is proud of Hunter for finally making friends around his age. Meanwhile, Luz and Amity try to uncover the mystery behind the author of The Good Witch Azura books, having both believed the author came from their respective realms. They discover that Tibbles runs a scamming business selling human junk and that he replaced the original author's photo with a witch in an attempt to make more profit out of the books. Luz is slightly disappointed by the discovery, but Amity says she had fun coming up with various theories and they decide to start a writing club.",
+          "airDate": "2022-04-02",
+          "still": "https://image.tmdb.org/t/p/original/3RG2v8xR6thzhFkbTHD5lFqR1rW.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/3RG2v8xR6thzhFkbTHD5lFqR1rW.jpg"
+          ]
+        },
+        {
+          "episode": 14,
+          "name": "Reaching Out",
+          "overview": "Amity wants to prove herself to her father, and Luz thinks she's found the perfect way to do it: Underground Witch Duels.",
+          "plot": "Amity enters the Bonesborough Brawl to prove herself to her father. Luz decides to help her win the championship by participating as well. During the duels, Amity notices that Luz acts surprisingly strange, but Luz refuses to tell why. Meanwhile, Eda tries to get information from Warden Wrath about the Day of Unity, so she makes a blabber potion with Edric's help. To get faster results, Edric alters the potion's recipe, accidentally causing Wrath to turn into a giant monster. When he attacks the participants, everyone works together to defeat him, including Alador who originally came to drag Amity away from the Brawl. After they turn Wrath back to normal, he answers Eda's questions while Amity tells Alador that she does not want to join a coven anymore. For the first time, Alador listens to her and respects her decision. Later, Luz confesses to Amity that today is the anniversary of her father's death and she was upset that she cannot be with her mother on this day. To make her feel better, Amity picks some flowers and they float them away on a balloon into the starry night.",
+          "airDate": "2022-04-09",
+          "still": "https://image.tmdb.org/t/p/original/blM6aa5SDobWdVozNHTl2wHk2un.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/blM6aa5SDobWdVozNHTl2wHk2un.jpg"
+          ]
+        },
+        {
+          "episode": 15,
+          "name": "Them's the Breaks, Kid",
+          "overview": "Eda tells a story from her teen years: the day she met Raine Whispers.",
+          "plot": "Eda tells Luz the story of how she met Raine. When she was a teenager, Hexside's former principal Faust sent her to a training program to represent the school, promising to let her stay in Hexside if she comes back with a blue ribbon. At the event, Eda met Raine and the two became friends while working together to pass all the exercises. However, the host Terra Snapdragon has found the whole event disappointing and decided to bring up a new challenge, trapping every young witch inside a hedge maze in a game of Covens vs. Wilds. Eda and Raine were the only ones who confronted Terra about the pointlessness of the challenge, making her impressed. Despite Eda losing the game, Terra insured that she stay in Hexside. Raine was also transferred to Hexside due to losing the scholarship in their previous school. As Eda finishes the story, she wonders how Raine is doing now under Terra's control. At the same time, Raine is revealed to have been faking their obedience to Terra and is cooperating with Darius to stop Belos' plan.",
+          "airDate": "2022-04-16",
+          "still": "https://image.tmdb.org/t/p/original/2Yszs1VhKTl3aD4mSoJnad7VP5O.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/2Yszs1VhKTl3aD4mSoJnad7VP5O.jpg"
+          ]
+        },
+        {
+          "episode": 16,
+          "name": "Hollow Mind",
+          "overview": "A magical mishap transports Luz and Hunter into a new mindscape - and this one is a twisted nightmare.",
+          "plot": "Luz and Hunter become trapped inside Belos' mind after unwittingly intervening with Raine and Darius' plan to invade it. There, they encounter a mysterious, monstrous figure, which they flee from. Passing through Belos' memories, the two see firsthand how he manipulated the inhabitants of the Boiling Isles into believing that wild magic is dangerous. They also learn that Belos is working with the Collector and that the Day of Unity is about killing all witches and demons by draining their magic away. The monstrous figure, revealed to be the souls of all the palismen Belos had consumed to keep himself alive, is trapped and subdued by Belos' inner self. He reveals himself as Philip Wittebane as well as a witch-hunter and admits that Hunter is not his nephew, but a Grimwalker, who is a recreated replica of an old friend of his. As he prepares to kill them, Eda and King complete a spell that brings Luz and Hunter back into the real world. Fearing what Belos might do to him, Hunter tearfully runs away while Luz feels guilty as she realizes that all the events that have transpired were indirectly caused by her.",
+          "airDate": "2022-04-23",
+          "still": "https://image.tmdb.org/t/p/original/i77nZVjoWnkxqI4oe8AIppFSaGS.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/i77nZVjoWnkxqI4oe8AIppFSaGS.jpg"
+          ]
+        },
+        {
+          "episode": 17,
+          "name": "Edge of the World",
+          "overview": "King's quest to uncover his past leads to shocking revelations and horrifying truths.",
+          "plot": "Luz tells Eda, King, and Hooty what she saw in Belos' mind as Lilith arrives to help. Hooty coughs up the letter addressed to King who happily believes that it is from his people and that they can be their new allies. Luz, King, and Hooty take a boat to another island situated on a finger from another Titan. Using a stone within the letter, they get transported to a village, where the residents look like King, calling themself Titan Trappers. Tarak, the sender of the letter shows them around and offers to train King in Titan trapping while Luz and Hooty meet the elder Bill. To their shock, they realize that the people are disguised witches and that King himself is a Titan. Once Bill learns this, the village prepares to sacrifice King to the being they worship, the Grand Huntsman, but Luz and Hooty rescue King and tell him the truth. They escape and destroy the portal to the village. As they head back home, the Owl House gets attacked by the Emperor's guards.",
+          "airDate": "2022-04-30",
+          "still": "https://image.tmdb.org/t/p/original/yZrFdVt3EWWvyMYW6j13eGPhTYk.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/yZrFdVt3EWWvyMYW6j13eGPhTYk.jpg"
+          ]
+        },
+        {
+          "episode": 18,
+          "name": "Labyrinth Runners",
+          "overview": "When the Emperor's coven comes to Hexside, Gus teams up with an unlikely ally.",
+          "plot": "Gus discovers that Hunter is hiding in Hexside while the Emperor's Coven comes to the school to forcibly have the students join a coven for the Day of Unity. To prevent this, Gus casts a spell that covers the whole school in a series of illusions influenced by his memories. Wandering through the illusions, Gus bonds with Hunter and helps him escape from the Coven guards who are looking for him at Belos' order. Adrian Graye, the head of the Illusion Coven, captures Gus to end the spell, but Gus creates an illusion bubble that causes Graye and the Coven guards to see their worst fears. Amity, Willow, and the rest of the students fight the guards off while Hunter talks with Gus, also affected by his fears, and finally reveals to him why he left the Emperor's Coven. The illusions then dispel and the defeated Coven guards leave. Afterward, Hunter tells everyone in Hexside what the Day of Unity is really about.",
+          "airDate": "2022-05-07",
+          "still": "https://image.tmdb.org/t/p/original/chyVsq0LFqHgZev4OUqBC0udh1n.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/chyVsq0LFqHgZev4OUqBC0udh1n.jpg"
+          ]
+        },
+        {
+          "episode": 19,
+          "name": "O Titan, Where Art Thou",
+          "overview": "Eda and Luz scramble to face the day of unity. King faces his true identity.",
+          "plot": "Returning from the Titan Trappers, Luz, King, and Hooty discover the emptied Owl House and that Eda and Lilith have escaped to The Knee. After they tell them that King is a Titan, Lilith begins to treat him like a god, making King feel uncomfortable. He meets Steve, a former Emperor's Coven guard and the two travel around the Boiling Isles, helping various people on the way. During this, King makes peace with who he is and now has a clear vision of who he wants to be. Meanwhile, Eda is concerned about the Day of Unity and wants to guarantee Luz and King's safety. Overhearing her plan about sending them away from the Isles, Luz gets furious believing Eda is underestimating her. They get into a fight but soon are captured by Coven guards. As they're taken away Eda then confesses to Luz she dosen't how to stop Belos. To their surprise, they are taken to Raine and Darius' secret hideout, joined by Lilith, Hooty, King, and Steve. They learn about their rebellion, called Covens Against the Throne (or CATS for short), and that they have a plan against Belos. As the group discusses the plan, Eda encourages Luz to finally start to carve her palisman.",
+          "airDate": "2022-05-14",
+          "still": "https://image.tmdb.org/t/p/original/qw5CCkgLehCLERqVA7hPAEahor8.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/qw5CCkgLehCLERqVA7hPAEahor8.jpg"
+          ]
+        },
+        {
+          "episode": 20,
+          "name": "Clouds on the Horizon",
+          "overview": "Everyone on the Isles prepares to celebrate the Day of Unity.",
+          "plot": "One day before the Day of Unity, Eda is branded with the bard coven sigil as part of the CATS' plan to corrupt Belos' draining spell with her curse while disguised as Raine. Meanwhile, Luz and King go to the Blight Manor to save the grounded Blight children with the help of Willow, Gus, and Hunter. Luz happily reunites with Amity and the two share their first kiss. Then they all infiltrate the Blight Industries factory to warn Odalia and Alador and stop the production of the Abomatons. They get captured and Odalia reveals that she already knew about the truth behind the Day of Unity, not caring what happens as long as she is rewarded with a life of royalty in the Human Realm. An outraged Alador stands up to her upon learning this and destroys the factory. Kikimora captures \"Hunter\" during the struggle, unaware that Gus used a spell to swap Luz and Hunter's appearances at Luz's request. Luz allows herself to be taken to Belos after learning that he is aware of the sabotage plan.",
+          "airDate": "2022-05-21",
+          "still": "https://image.tmdb.org/t/p/original/fbVRemh6AKOGOXiSy9GpzVisSht.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/fbVRemh6AKOGOXiSy9GpzVisSht.jpg"
+          ]
+        },
+        {
+          "episode": 21,
+          "name": "King's Tide",
+          "overview": "The Day of Unity begins.",
+          "plot": "As the Day of Unity commences, Eda's attempt to take Raine's place among the other Coven Heads fails due to Belos' precautions. The draining spell activates and everyone's magic begins to drain away. Luz is taken before Belos who prepares to leave the Demon Realm through the reconstructed portal. He offers Luz to take her with him in exchange to be his modern-day guide in the Human Realm, but Luz brands him with a coven sigil to force him to stop the draining spell. Enraged, Belos transforms into his palismen-type monster form and fights Luz as King, Amity, Willow, Gus, and Hunter arrive to help her. King learns from Kikimora that only the Collector can stop the draining spell, so King frees the being from his prison, promising to be his playmate afterward. The Collector seemingly destroys Belos before stopping the draining spell, only to proceed to reshape the Boiling Isles so he can play with the residents. King pushes Luz and her friends through the portal into safety, unknowingly followed by a piece of Belos. The portal collapses, causing them to be helplessly stuck in the Human Realm. Luz finally reunites with her mother.",
+          "airDate": "2022-05-28",
+          "still": "https://image.tmdb.org/t/p/original/4MQ19CyzxM5azSOgtX96iLx2gS7.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/4MQ19CyzxM5azSOgtX96iLx2gS7.jpg",
+            "https://image.tmdb.org/t/p/original/uNSlfrdH8WmsxtFPIRdHqiqc1IQ.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 3,
+      "name": "Season 3",
+      "airDate": "2022-10-15",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Thanks to Them",
+          "overview": "After months of trying, Luz and her friends make a daring attempt to return to the Demon Realm.",
+          "plot": "Luz and her friends spend the next few months in the Human Realm, trying to find a way back to the Boiling Isles. One day, Amity, Willow, Gus, Hunter, and Vee eventually discover a scroll in the floorboard of the abandoned house and learn that it is a map of a place where Titan's Blood is being kept. Meanwhile, Hunter continues to have visions of Belos and is unknowingly possessed by him. At the town's annual Halloween Festival, the group learns that Philip Wittebane had a brother named Caleb who met and fell in love with a witch named Evelyn. Posing as Hunter, Belos tricks Luz into helping him find the Titan's Blood as Camila and Luz's friends arrive to help Hunter and Luz. Hunter overcomes Belos' control but becomes seriously injured as a result. Belos opens a portal to the Demon Realm and escapes, while Flapjack sacrifices himself to revive Hunter. After that, Luz explains to others about how she helped Belos meet the Collector, so the group intends to stop Belos. Camila announces that she will join them as well while Vee stays behind to keep up appearances.",
+          "airDate": "2022-10-15",
+          "still": "https://image.tmdb.org/t/p/original/hJDR4hosdiyyCsZrsyl0nWRXrp0.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/hJDR4hosdiyyCsZrsyl0nWRXrp0.jpg",
+            "https://image.tmdb.org/t/p/original/pnm8n5lowe1H2JzFZSc4qNBujdN.jpg",
+            "https://image.tmdb.org/t/p/original/hjcft5iiozH7Tl02QB9LU8dxAhB.jpg",
+            "https://image.tmdb.org/t/p/original/4mhlKnS3AaiKoDbYkwIogA8NCPE.jpg",
+            "https://image.tmdb.org/t/p/original/vN0Z1W066ujrUpUgPaVQASaOZ7L.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "For the Future",
+          "overview": "Luz and her friends race against Belos to confront the Collector and save the Boiling Isles.",
+          "plot": "Luz and the group arrive in the Boiling Isles to discover that the Collector has turned the residents into puppets for his games, with the exception of King, Eda, Odalia, and Lilith. King does not want to hurt the Collector due to his childish innocence, but Belos takes over Raine's puppet to manipulate the Collector into thinking that everyone is against him. Luz, Camila, and their friends run into the surviving Hexside students who have turned the school into a new society. However, Boscha rules the school with an iron fist and refuses to help the gang. It is later revealed that a disguised Kikimora has influenced Boscha who is still angered at Amity for leaving their friend group. Hunter and Gus aid Willow, helping her to express her suppressed feelings, while Camila helps Luz overcome her anxiety. After convincing the whole school including Boscha to battle Kikimora, the entire group goes to the Collector's castle via the teleportation spell as Luz's palisman finally hatches into a \"snake shifter\" which she calls Stringbean, much to everyone's delight.",
+          "airDate": "2023-01-21",
+          "still": "https://image.tmdb.org/t/p/original/2mpB9RMSFL1bPlm4snkKiFei9nQ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/2mpB9RMSFL1bPlm4snkKiFei9nQ.jpg",
+            "https://image.tmdb.org/t/p/original/8f6036Bw0PMsIl3mKeFEcoIAPSr.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Watching and Dreaming",
+          "overview": "The fate of the Boiling Isles rests on the shoulders of a human, a cursed witch and a little King.",
+          "plot": "The Collector captures Luz, Eda, and King to force them to play his games, while Belos takes over the Titan's heart to use its powers to destroy the Boiling Isles. After befriending the Collector, Luz tries to protect him from Belos' blasts but is killed and sent to an in-between dimension where she meets King's father, the Titan. He imbues Luz with his remaining powers to return and stop Belos, while Camila and Luz's friends escape from their trapped puppet forms and protect the residents with the Collector's help. Luz successfully removes Belos from the Titan's heart who tries to feign reformation, but is stomped out of existence by Eda, Raine, and King. Everyone is happily reunited, but Luz discovers that due to the Titan finally passing on, the glyphs no longer work. Four years later, Luz has graduated high school and has been accepted into a college at the Boiling Isles, where life has changed for the better for everyone. Luz returns and is surprised by a belated quinceañera, with King revealing that he can empower his own glyphs now, and a light show is presented by the Collector.",
+          "airDate": "2023-04-08",
+          "still": "https://image.tmdb.org/t/p/original/1NRYnIEMmkgrkDsFgMfLrpVS1uh.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/1NRYnIEMmkgrkDsFgMfLrpVS1uh.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "cast": [
+    {
+      "name": "Sarah-Nicole Robles",
+      "character": "Luz (voice)",
+      "episodeCount": 43,
+      "profile": "https://image.tmdb.org/t/p/original/wfk8MRawUfhSpD4v6zwC3EuikIu.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/455/1139359.jpg"
+    },
+    {
+      "name": "Wendie Malick",
+      "character": "Eda (voice)",
+      "episodeCount": 43,
+      "profile": "https://image.tmdb.org/t/p/original/4yDh5iu4Qyib35aXfo7SStFpnNC.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/455/1139362.jpg"
+    },
+    {
+      "name": "Alex Hirsch",
+      "character": "King / Hooty (voice)",
+      "episodeCount": 43,
+      "profile": "https://image.tmdb.org/t/p/original/jQwmmz7ujRiKGSOHZoTBGiFI3J3.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/455/1139367.jpg"
+    },
+    {
+      "name": "Issac Ryan Brown",
+      "character": "Gus (voice)",
+      "episodeCount": 24,
+      "profile": "https://image.tmdb.org/t/p/original/xyS9AOh0YZsCEzlLkE5DHQhUhZa.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/455/1139365.jpg"
+    },
+    {
+      "name": "Mae Whitman",
+      "character": "Amity (voice)",
+      "episodeCount": 24,
+      "profile": "https://image.tmdb.org/t/p/original/oy89WyETM8T3Z4aRJb2EnmqZ7A3.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/455/1139366.jpg"
+    },
+    {
+      "name": "Tati Gabrielle",
+      "character": "Willow (voice)",
+      "episodeCount": 23,
+      "profile": "https://image.tmdb.org/t/p/original/txZTL1HkPVxliTilbjlwR51VIt6.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/455/1139364.jpg"
+    },
+    {
+      "name": "Cissy Jones",
+      "character": "Lilith (voice)",
+      "episodeCount": 17,
+      "profile": "https://image.tmdb.org/t/p/original/2PVc39eQL0RgF0MSJ4vruDbQviL.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/455/1139369.jpg"
+    },
+    {
+      "name": "Eden Riegel",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 14,
+      "profile": "https://image.tmdb.org/t/p/original/lY2IJ2hy19pgmP2LDAzRispWi37.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Grey DeLisle",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/vrUHaXe1pG56yZkgH7Hs3LGRLTT.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Arin Hanson",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/ffFSd162CTUKhs4xryOGYxHvAMD.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Bumper Robinson",
+      "character": "Principal Bump (voice)",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/9KU72zZXIfsGAPgHmhlJmTYvor9.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Zeno Robinson",
+      "character": "Hunter (voice)",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/PyoUSDPm4AiGcp6W2WTBD2zSMt.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/455/1139368.jpg"
+    },
+    {
+      "name": "Dee Bradley Baker",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/9oFnToDZWp0I484s7Ua1EzNQQ2m.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Matthew Rhys",
+      "character": "Emperor Belos (voice)",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/8uktKexgPn0tsW3dsXVNqkqiNh7.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dana Terrace",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/elrWI5mhbrcPCCzlckWA2eO3Bkv.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kimberly Brooks",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/iPlCk1VQ8fnAtsMow6HlCZoQc0w.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "JB Blanc",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/fHLyXboPlBDo1aoAl085YqaPjO8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ryan O'Flanagan",
+      "character": "Edric (voice)",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/ozFYAtM4S4RM90ptPUiLSgb13Kh.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mela Lee",
+      "character": "Kikimora (voice)",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/wMv6cbT1ycQB0Bw5GwdFUxElz6u.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Fred Tatasciore",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/xodxYKRC9mdvgquTdqpmYldliJ3.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Elizabeth Grullón",
+      "character": "Camila (voice)",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/r6jInKY2TA3MnD4qrWueZoClHTO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kevin Michael Richardson",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/xXt9Nh7RAT5bOen66TaXreNYmCl.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "André Sogliuzzo",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/lrebAFDCMthLuq6Oyzraac8MzQL.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jake Green",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/3bfUpMgBCJw1Serr18Qm8tDJQvE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Roger Craig Smith",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/6oE356GbRHAf91Llw7LDpvsAf5L.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Erica Lindbeck",
+      "character": "Emira (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/l5ISBt8S8Upct0fDgaEPuELp4zE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Keith Ferguson",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/8EvTlmOhP34EZFEGsznqjbr4o4q.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Isabella Rossellini",
+      "character": "Bat Queen (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/ebcTowZoBZCDxaWd5ZrL2ZR5mQ3.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Parvesh Cheena",
+      "character": "Tibbles (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/8N9EwDfLezI8b3v7ELW4aTCSixV.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Shannon McKain",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/uLdeorHZiH9Jvy72XxJfDRIncm8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jorge Diaz",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/gt6c8DRRnAJyHECoVZwEy6x9rpd.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Gary Anthony Williams",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/96BbiV8rQOeGyoDxgrepRd6lUjm.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michaela Dietz",
+      "character": "Vee (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/yma1aG1ehl71K19f7zt4igMpByd.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Fryda Wolff",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/lNguoarMjClvJZd6CM6tJaroAY4.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Robin Atkin Downes",
+      "character": "Adegast / Centaur (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/qb4xPIJGiKyiQ2MhSDQzFWxN0jS.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Billy Kametz",
+      "character": "Nevareth (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/pX0nGRkvQIzkVXBJmoP2dVv9TI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Noah Galvin",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/wKGpfo1BHeNMvFVGVJjGqOgiaMh.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ally Maki",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/jLeL0NSbV1j0snQugmFGzXhFbmv.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "April Stewart",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/qmPAms01P6ZHp5wjQW2XkymwjCx.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kari Wahlgren",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/kc0BOnSdzCfq8w9qoNVEm5K12x1.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rachael MacFarlane",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/AnLEvMh9pl94uJOO2MnZFQB44b4.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jim Pirri",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/NwiYr74p08v6WOrZIatyZppAgI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Abigail Zoe Lewis",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/oDpDWt8PBjyyQxc639CW2BJDSsv.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Natalie Palamides",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/xNKhcjuB1yGDeJviZhhPlvV57Mv.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lily Sanfelippo",
+      "character": "Additional Voices (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/cbHIRjyzzFlbabaz6C0BQWNZCa2.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alex Lawther",
+      "character": "Philip Wittebane (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/zZZP8VrYIYXBZfoRxSYeAd4phsO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Peter Gallagher",
+      "character": "Del Clawthorne (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/vD6q6Ja6bAhbfqlXS4ybCtyXtdA.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jorge Diaz",
+      "character": "Matt Tholomule (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/2Lm2hKqt0GuHi7AqBkb8PT04JBe.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Avi Roque",
+      "character": "Raine Whispers (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/kXPuwSGoe4ZSV3Y1dLyODVhcEi9.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Steve Blum",
+      "character": "Salty (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/cpO0muunoigq1WHegeOEI1AIQAo.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Blu del Barrio",
+      "character": "Teen Raine Whispers (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/nwbX8tJ5VcDxhl2eJr3ikA6jiNS.jpg",
+      "inCharacter": null
+    }
+  ],
+  "generatedAt": "2026-07-23T19:57:20.634Z"
+}

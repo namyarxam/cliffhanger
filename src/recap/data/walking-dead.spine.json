@@ -41,7 +41,7 @@
         },
         {
           "label": "S1 · East again",
-          "text": "The group escapes as the CDC self-destructs and turn toward Fort Benning. Shane is fraying, Lori sits between two men, and Rick carries a secret he won't share.",
+          "text": "The group escapes as the CDC self-destructs and moves on. Shane is fraying, Lori sits between two men, and Rick carries a secret he won't share.",
           "anchorEpisode": 6,
           "whyLoadBearing": "Closes S1 with all three S2 threads live: no home, Shane splitting, Rick withholding.",
           "needsVerify": false
@@ -58,7 +58,7 @@
       "characters": [
         {
           "name": "Rick Grimes",
-          "line": "Former sheriff's deputy who woke from a coma into the apocalypse; now reluctant leader of a group heading for Fort Benning, carrying Jenner's secret."
+          "line": "Former sheriff's deputy who woke from a coma into the apocalypse; now reluctant leader of the group, carrying Jenner's secret."
         },
         {
           "name": "Lori Grimes",
@@ -312,7 +312,7 @@
         },
         {
           "label": "S4 · The tracks",
-          "text": "Signs to a place called Terminus draw the splintered groups along the railroad. Abraham, Rosita and Eugene find Glenn — Eugene claims he can cure the plague in Washington.",
+          "text": "Signs to a place called Terminus draw the splintered groups along the railroad. Abraham, Rosita and Eugene find Glenn — Eugene claims he can stop the walker outbreak in Washington.",
           "anchorEpisode": 15,
           "whyLoadBearing": "Introduces Abraham's crew and the destination that pulls everyone into one boxcar.",
           "needsVerify": false
@@ -326,7 +326,7 @@
         },
         {
           "label": "S4 · Terminus",
-          "text": "Terminus turns out to be a cannibal trap. Rick's group is herded into a boxcar with the other survivors; Rick vows their captors have picked the wrong people to mess with.",
+          "text": "Terminus turns out to be a trap. Rick's group is herded into a boxcar with the other survivors; Rick vows their captors have picked the wrong people to mess with.",
           "anchorEpisode": 16,
           "whyLoadBearing": "The set-piece the whole S5 premiere resolves; everyone's location is defined by it.",
           "needsVerify": false
@@ -355,7 +355,7 @@
         },
         {
           "name": "The Governor",
-          "line": "Took over a new group and murdered its leader Martinez; attacked the prison with a tank, beheaded Hershel, and was killed by Michonne and Rick."
+          "line": "Took over a new group and murdered its leader Martinez; attacked the prison with a tank, beheaded Hershel, and was mortally stabbed by Michonne before Lilly executed him."
         },
         {
           "name": "Tyreese",
@@ -363,7 +363,7 @@
         },
         {
           "name": "Abraham Ford",
-          "line": "Ex-soldier travelling with Rosita and Eugene, escorting the self-proclaimed scientist toward Washington to cure the plague; found Glenn on the tracks to Terminus."
+          "line": "Ex-soldier travelling with Rosita and Eugene, escorting the self-proclaimed scientist toward Washington to stop the walker outbreak; found Glenn on the tracks to Terminus."
         }
       ]
     },
@@ -385,7 +385,7 @@
         },
         {
           "label": "S5 · Eugene's lie",
-          "text": "Eugene admits his cure story is a lie he told to keep Abraham alive; Abraham beats him unconscious and the mission to Washington collapses.",
+          "text": "Eugene admits his cure story is a lie he told to secure Abraham's protection; Abraham beats him unconscious and the mission to Washington collapses.",
           "anchorEpisode": 5,
           "whyLoadBearing": "Kills the season's stated goal and forces everyone to just try to survive again.",
           "needsVerify": false
@@ -430,7 +430,7 @@
       "characters": [
         {
           "name": "Rick Grimes",
-          "line": "Reunited with his people at Alexandria; a step from execution when Deanna orders him to kill Pete instead, just as Morgan arrives at the gate."
+          "line": "Reunited with his people at Alexandria; a step from exile when Deanna orders him to kill Pete instead, just as Morgan arrives at the gate."
         },
         {
           "name": "Daryl Dixon",
@@ -584,7 +584,7 @@
         },
         {
           "label": "S7 · Sasha's plan",
-          "text": "Rick tours Hilltop, Kingdom and the Scavengers stitching an alliance; Sasha volunteers to be smuggled into Alexandria as an assassin and swallows Eugene's poison instead.",
+          "text": "Rick tours Hilltop, Kingdom and the Scavengers stitching an alliance; Sasha breaks into the Sanctuary to kill Negan, is captured, and swallows Eugene's poison in her coffin.",
           "anchorEpisode": 16,
           "whyLoadBearing": "Assembles the coalition and closes Sasha's arc as a sacrificial decoy.",
           "needsVerify": false
@@ -598,7 +598,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Rick's coalition — Alexandria, Hilltop, Kingdom, Oceanside — is now openly at war with Negan. Eugene is inside the Sanctuary as a defector, and Sasha has just died as a decoy.",
+        "text": "Rick's coalition — Alexandria, Hilltop, Kingdom — is now openly at war with Negan. Eugene is inside the Sanctuary as a defector, and Sasha has just died as a decoy.",
         "questions": [
           "Can four small communities actually beat the Saviors?",
           "Whose side is Eugene really on now?",
@@ -654,14 +654,14 @@
         },
         {
           "label": "S8 · Carl's bite",
-          "text": "Negan escapes the Sanctuary using a walker suit. Alexandria burns; while getting Siddiq to safety, Carl reveals to Rick that he was bitten during their journey home.",
+          "text": "Eugene's plan lets Negan and the Saviors escape the Sanctuary. Alexandria burns; while getting Siddiq to safety, Carl reveals to Rick that he was bitten during their journey home.",
           "anchorEpisode": 8,
           "whyLoadBearing": "The bombshell that reframes the whole season around Carl's coming death.",
           "needsVerify": false
         },
         {
           "label": "S8 · Carl's letter",
-          "text": "Carl dies pleading with Rick to build a future that includes Negan. Ezekiel and Carol retake the Kingdom from the Saviors, killing their occupier Gavin.",
+          "text": "Carl dies pleading with Rick to build a future that includes Negan. Morgan and Carol retake the Kingdom from the Saviors; Henry kills their occupier Gavin.",
           "anchorEpisode": 9,
           "whyLoadBearing": "Removes Rick's son and plants the ideological seed that decides the finale.",
           "needsVerify": false
@@ -711,7 +711,7 @@
         },
         {
           "name": "Ezekiel",
-          "line": "Lost his fighters and his tiger Shiva; retook the Kingdom from the Saviors with Carol at his side."
+          "line": "Lost his fighters and his tiger Shiva; rescued by Morgan and Carol as they retook the Kingdom from the Saviors."
         },
         {
           "name": "Carl Grimes",
@@ -833,7 +833,7 @@
         },
         {
           "label": "S10 · Spies exposed",
-          "text": "Whisperer spy Dante poisons Alexandria's water and strangles Siddiq; Gabriel later murders him in his cell. Gamma, Alpha's other spy, defects when Carol shows her Lydia is alive.",
+          "text": "Gamma poisons Alexandria's water; Whisperer spy Dante strangles Siddiq and is later murdered in his cell by Gabriel. Gamma defects when Carol shows her Lydia is alive.",
           "anchorEpisode": 8,
           "whyLoadBearing": "Ends the infiltration arc and swaps Gamma over to Rick's people.",
           "needsVerify": false
@@ -1012,7 +1012,7 @@
         },
         {
           "name": "Eugene Porter",
-          "line": "Fell in love with Stephanie inside the Commonwealth; recorded Sebastian's confession, was framed for his death, and helped ignite the rebellion."
+          "line": "Fell in love with Stephanie inside the Commonwealth; helped Max play her recording of Sebastian publicly, was framed for his death, and helped ignite the rebellion."
         },
         {
           "name": "Pamela Milton",
@@ -1047,5 +1047,6 @@
       "actor": "Pollyanna McIntosh",
       "character": "Jadis"
     }
-  }
+  },
+  "repairedAt": "2026-07-23T18:26:31.541Z"
 }
