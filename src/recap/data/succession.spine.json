@@ -1,0 +1,354 @@
+{
+  "slug": "succession",
+  "generatedFor": "Succession",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Logan's stroke",
+          "text": "At his 80th birthday Logan refuses to step down and hands his third wife Marcia two trust votes, then collapses from a stroke on the helicopter home.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the succession war, Marcia's swing power, and the medical fragility that hangs over every season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Debt and Stewy",
+          "text": "As acting CEO, Kendall discovers Logan hid $3B of debt and brings in college friend Stewy for a bailout — but Stewy is already meeting secretly with Sandy Furness.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Plants Stewy and Sandy as the external raiders who drive the takeover plot and remain shareholders for years.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Cruises cover-up",
+          "text": "Tom inherits Parks and Cruises and finds a cover-up of assaults and deaths. He has Greg shred the documents; Greg secretly keeps copies.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Greg's retained files are the ammunition that ends the season-two war and reshapes Waystar.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The failed coup",
+          "text": "Kendall, Roman, Frank and Gerri organise a board vote to oust Logan. Logan refuses to leave the room, berates each member, and fires everyone who voted against him.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Establishes Logan's willingness to torch the board and defines Kendall's humiliation for the rest of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Shiv and Gil",
+          "text": "Shiv works Democrat Gil Eavis's presidential campaign and begins an affair with fixer Nate. She quietly trades the cruises secret to Gil for a truce with ATN.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Locks Shiv into a political identity opposed to Waystar and makes her a keeper of the scandal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The bear hug",
+          "text": "Frozen out of Waystar, Kendall allies with Stewy and Sandy on a hostile takeover, timed to launch on the day of Shiv's wedding while Logan is abroad.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The takeover attempt is what Logan spends the finale disarming, and the trigger for the accident that follows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Doddy's death",
+          "text": "At the wedding Kendall's car goes into a lake, killing a young waiter. Logan promises to make the case disappear if Kendall drops the takeover — Kendall breaks in his arms.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "This is the leash. Every S2 decision Kendall makes is because Logan owns his freedom.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Kendall has been neutralised by Logan's cover-up of a young man's death; the hostile takeover is dead and he is back in the fold on his father's terms. But Greg still has secret copies of the cruises documents, and Stewy and Sandy still own a stake in the company.",
+        "questions": [
+          "How long can Logan hold Doddy's death over Kendall before it stops working?",
+          "Will the cruises cover-up stay buried, or resurface through Greg or Shiv?",
+          "What do Stewy and Sandy do with their Waystar stake now that Kendall has folded?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Logan Roy",
+          "line": "Waystar RoyCo's aging CEO, back in power after crushing an internal coup and now holding a cover-up over his son's head."
+        },
+        {
+          "name": "Kendall Roy",
+          "line": "Second son and failed rebel, back in rehab and effectively owned by his father after a fatal car crash on the night of Shiv's wedding."
+        },
+        {
+          "name": "Shiv Roy",
+          "line": "Democratic political operative newly married to Tom, on cool terms with Logan after her affair with Nate and her flirtation with Gil Eavis."
+        },
+        {
+          "name": "Tom Wambsgans",
+          "line": "Shiv's new husband and head of Parks and Cruises, sitting on a scandal he now knows Greg has kept the evidence for."
+        },
+        {
+          "name": "Roman Roy",
+          "line": "Waystar COO who blinked during the boardroom coup, back inside Logan's favour and dating Tom's bachelor-party fling Tabitha."
+        },
+        {
+          "name": "Greg Hirsch",
+          "line": "Great-nephew clinging to a junior Waystar job, quietly holding photocopies of the cruises cover-up he was ordered to destroy."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Successor in secret",
+          "text": "Pulled from rehab, Kendall issues a statement backing off. At the Hamptons, Logan privately offers Shiv the CEO role and warns her the handover will take three years.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Shiv's private promotion is the promise Logan spends the season quietly walking back and Shiv spends it defending.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Boar on the floor",
+          "text": "Blocked from expanding, Logan sets his sights on Pierce Global Media. On a hunting weekend he hazes his team with 'Boar on the Floor' hunting the leaker — it was Roman.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Establishes the PGM pursuit that drives half the season and Roman's continued willingness to work against Logan on the side.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Roman and Gerri",
+          "text": "Chastened, Roman enters Waystar's management programme under Gerri Kellman's mentorship. A phone scolding accidentally arouses him, opening a covert sexting dynamic.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The Roman–Gerri relationship becomes a central power line of the following seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Shiv jumps the gun",
+          "text": "At the Pierces' estate Shiv blurts out she is Logan's chosen heir. Nan Pierce nearly kills the deal; only cousin Naomi and Kendall talk her back into selling.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Publicly stakes Shiv's claim and introduces Naomi Pierce, Kendall's future companion.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The scandal breaks",
+          "text": "At the Argestes conference, New York Magazine breaks the cruises story. Nan cancels the PGM deal; Rhea Jarrell defects to Waystar and Shiv suspects she is angling for CEO.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Turns the season from an acquisition arc into a scandal-management arc and sets up the successor bake-off between Shiv and Rhea.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Blood sacrifice",
+          "text": "Waystar testifies before the Senate; Kendall and Tom flounder; Rhea walks away from the CEO offer. Logan tells the family a scapegoat is needed to appease shareholders.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Frames the finale as an execution: someone in the family is about to be publicly sacrificed.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Kendall turns",
+          "text": "On the yacht Logan picks Kendall to fall, calling him 'no killer.' At the press conference Kendall blames Logan directly, brandishing Greg's retained cruises papers.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The public rupture that reorganises every alliance and every power line for the next season.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Kendall has just declared open war on his father live on television, wielding the documents Greg secretly kept from season one. Logan, watching the broadcast, smiles — nobody yet knows whether he is proud, wounded, or already three moves ahead.",
+        "questions": [
+          "Can Logan survive a public accusation of criminal cover-up from his own son?",
+          "Are Greg's documents actually enough to bring Waystar down, or just enough to bloody it?",
+          "What does Logan's smile mean — is Kendall's move the trap he wanted, or the one thing he did not see coming?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Logan Roy",
+          "line": "Waystar's CEO watching his own son name him as an accomplice on live television, smiling in a way nobody in the family can read."
+        },
+        {
+          "name": "Kendall Roy",
+          "line": "Back inside Waystar as Logan's chosen fall-guy, who has just refused the role and burned his father in public instead."
+        },
+        {
+          "name": "Shiv Roy",
+          "line": "Promised the CEO chair in private and passed over in public for Rhea Jarrell; increasingly resented by Tom for hiding it."
+        },
+        {
+          "name": "Tom Wambsgans",
+          "line": "ATN Chair of Global Broadcast News, publicly humiliated at the Senate hearing and privately blackmailed by Greg into promoting him."
+        },
+        {
+          "name": "Roman Roy",
+          "line": "Rebuilding credibility inside Waystar via the management programme, running a covert erotic phone-and-text dynamic with Gerri Kellman."
+        },
+        {
+          "name": "Greg Hirsch",
+          "line": "Junior Waystar fixer who kept illicit copies of the cruises documents and has just handed them to Kendall for the press conference."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Camps chosen",
+          "text": "Logan flees to Sarajevo to dodge extradition; Kendall bunkers at Rava's apartment. Roman, Shiv and Connor refuse to join him because he demands to be sole CEO.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Freezes Kendall alone against the rest of the family, the shape the whole season fights inside.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Gerri as caretaker",
+          "text": "Logan names Gerri interim CEO. Shiv is handed the President of Domestic Operations title to keep her aligned; Waystar's PR machine opens fire on Kendall's stability.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Sets up Gerri's fragile CEOship and Shiv's consolation-prize resentment, both of which come apart later.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The FBI raid",
+          "text": "Kendall's town hall stunt collapses when Shiv publishes an open letter attacking his mental state. The FBI raid Waystar; investor Josh Aaronson loses faith in Logan too.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The moment Kendall stops being a credible existential threat and Logan's position starts looking legally cornered instead.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Shareholder détente",
+          "text": "As Logan grows incoherent from a UTI, Shiv and Sandi Furness broker a settlement that gives each side a board seat — Waystar keeps control without going to a vote.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Neutralises Stewy and Sandy as the season-one raiders and hands the family space to fight each other instead.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Mencken chosen",
+          "text": "With the President stepping down, Logan backs fascist candidate Jeryd Mencken at the Future Freedom Summit over Shiv's protests, banking on him to bury the DOJ probe.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Introduces Mencken as the political actor whose election becomes the crucible of the following season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Matsson arrives",
+          "text": "At Kendall's 40th, Logan tries to buy his son out for $2B and Kendall breaks down. Roman quietly opens talks with GoJo's Lukas Matsson about a merger of equals.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "First real appearance of Matsson, who becomes the antagonist of the endgame; also Roman's private courtship of him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Tuscany betrayal",
+          "text": "In Tuscany the siblings finally unite to block the GoJo sale — only to learn Logan has renegotiated the divorce so their veto is gone. Tom has already tipped Logan off.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Two of the biggest hinges of the next season: Caroline's rewrite disarms the children and Tom's betrayal poisons his marriage.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Roy siblings have finally teamed up to stop their father, only to learn Caroline has quietly signed away their veto rights. Logan is free to sell Waystar to Matsson, and Tom has already sold Shiv out for a promotion she does not yet know about.",
+        "questions": [
+          "Can the siblings block the GoJo acquisition now that their leverage is gone?",
+          "How long until Shiv discovers Tom's betrayal, and what does it do to their marriage?",
+          "Will Logan actually sell to Matsson, or sabotage the deal at the last minute the way he always does?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Logan Roy",
+          "line": "Waystar's CEO closing on the GoJo sale, having just outflanked his own children by rewriting his divorce with Caroline."
+        },
+        {
+          "name": "Kendall Roy",
+          "line": "Refused the $2B buyout, then confessed to his siblings that he killed a boy on the night of Shiv's wedding — and was met, for once, with support."
+        },
+        {
+          "name": "Shiv Roy",
+          "line": "Cut out of the succession by both Logan and the GoJo talks; secretly betrayed by her husband and freshly allied with her brothers."
+        },
+        {
+          "name": "Roman Roy",
+          "line": "The child Logan trusted most in the GoJo negotiation, embarrassed by the misfired dick-pic to his father and now standing with his siblings."
+        },
+        {
+          "name": "Tom Wambsgans",
+          "line": "Terrified enough of prison to have tipped Logan off about the siblings' revolt, having asked Greg to rise with him under a new regime."
+        },
+        {
+          "name": "Lukas Matsson",
+          "line": "GoJo's CEO, now the buyer Logan has agreed to sell to, with Logan exiting on a settlement he has personally negotiated."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Pierce, again",
+          "text": "Six months on, the siblings outbid Logan for Pierce with a $10B offer, humiliating him. Shiv tells Tom she wants a painless divorce; Logan starts remaking ATN himself.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Shows the siblings functioning as an independent bloc and formalises the Shiv–Tom breakup that hovers over everything after.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Logan dies",
+          "text": "Flying to Sweden to close the GoJo deal, Logan collapses on his plane and dies. The siblings receive the news mid-flight to Connor's wedding.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The central event of the series: Waystar's animating force disappears and the succession fight becomes real for the first time.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Co-CEOs",
+          "text": "A document in Logan's safe names Kendall his successor. Kendall and Roman are installed as co-CEOs; Shiv, now pregnant, is sidelined and starts talking to Matsson.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Splits the siblings again on the same succession line as season one and puts Shiv into Matsson's orbit.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Matsson goes around them",
+          "text": "In Norway the brothers try to blow up the GoJo deal by demanding an unreasonable price. Matsson bypasses them with $192 a share directly to the Waystar board.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Establishes that the board, not the family, will decide the sale — the game the finale is played on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Living+ and the fraud",
+          "text": "Kendall's Living+ launch spikes Waystar's stock and revives his ambition. The siblings then discover Matsson has grossly inflated GoJo's India subscriber numbers.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Gives Kendall a live counter-story to the GoJo sale and the siblings a weapon to detonate it with.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · America decides",
+          "text": "On election night a vote centre is firebombed; Roman pressures Tom into having ATN prematurely call Wisconsin for Mencken, and ATN declares him president.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Turns Mencken into the president Shiv can trade with for regulatory approval on the GoJo deal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The final vote",
+          "text": "Shiv brokers a Mencken–Matsson deal expecting to be named CEO. Matsson picks Tom; Shiv still sides with Matsson at the board, killing Kendall's bid.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The final failure of every sibling — the show's closing statement about who they were always going to be.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Waystar has been sold to GoJo; Tom is the new CEO, chosen by Matsson because he will obey. Kendall has lost everything he was raised to inherit, Shiv has voted for the man who beat her out of the chair, and Roman has accepted that none of them were ever going to be Logan.",
+        "questions": [
+          "Can Kendall live at all with never becoming what his father demanded of him?",
+          "What is a marriage between Shiv and the CEO Matsson picked over her?",
+          "What kind of country do Mencken and Matsson build now that ATN handed them both power?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Kendall Roy",
+          "line": "Defeated in the final board vote, alienated from his siblings, and left with the identity his father spent a lifetime denying him."
+        },
+        {
+          "name": "Shiv Roy",
+          "line": "Pregnant, married again in name to the CEO Matsson chose over her, and the sibling whose vote handed Waystar to GoJo."
+        },
+        {
+          "name": "Roman Roy",
+          "line": "Physically beaten by rioters after his father's funeral, publicly broken at the eulogy, and openly accepting that he was never a real successor."
+        },
+        {
+          "name": "Tom Wambsgans",
+          "line": "New CEO of the GoJo-owned Waystar, installed by Matsson because he will do as he is told, back with Shiv on brittle terms."
+        },
+        {
+          "name": "Lukas Matsson",
+          "line": "GoJo's founder and now the owner of Waystar, with his chosen puppet in the CEO chair and a détente with the new president in hand."
+        },
+        {
+          "name": "Jeryd Mencken",
+          "line": "Fascist President-elect of the United States, elected on the back of ATN's premature Wisconsin call and Waystar's political muscle."
+        }
+      ]
+    }
+  }
+}

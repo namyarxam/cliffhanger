@@ -1,0 +1,180 @@
+{
+  "slug": "andor",
+  "generatedFor": "Andor",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Two dead Corpos",
+          "text": "Cassian kills two Pre-Mor officers in a Morlana One brawl. Deputy Syril Karn defies orders to bury the case and traces him to his home on Ferrix.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Cassian as hunted and introduces Syril, whose obsession with him drives him toward the ISB and Dedra.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Luthen collects him",
+          "text": "Rebel handler Luthen Rael reaches Cassian first, pulls him off Ferrix under Syril's nose, and hires him for a payroll robbery on Aldhani.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The moment Cassian enters Luthen's orbit — the relationship that defines every S2 mission.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Aldhani heist",
+          "text": "The Aldhani heist empties an Imperial sector's payroll but kills most of the crew. Cassian walks away with Nemik's manifesto as the Empire clamps down galaxy-wide.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The rebellion's first real strike; triggers ISB expansion and the surveillance state that shapes S2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Ferrix pays the price",
+          "text": "ISB analyst Dedra Meero abducts and tortures Bix for the name behind Aldhani. Cassian, unrelated, is swept up on Niamos and shipped to Narkina 5 prison.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Establishes Dedra as the hunter of 'Axis' and lands the torture that becomes Bix's S2 PTSD.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Mothma's ledger",
+          "text": "On Coruscant, Mon Mothma bankrolls Luthen's network in secret. To hide the trail, she agrees to promise her daughter Leida to a Chandrilan banker's son.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The arranged marriage that opens S2; frames Mothma's political cover as personal cost.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Narkina 5 breakout",
+          "text": "Learning prisoners are killed rather than released, Cassian leads a mass Narkina 5 breakout. He returns to Ferrix to find Maarva dead and Bix in ISB custody.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Radicalises Cassian firsthand and pulls him back to Ferrix, where the show's political turn happens.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Rix Road turns",
+          "text": "Maarva's recorded funeral speech triggers a Ferrix uprising. Cassian frees Bix and boards Luthen's ship to serve; Syril, still hunting, saves Dedra in the riot.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Cassian's full commitment plus the Syril–Dedra collision — both are the launchpad for S2.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Cassian has just handed himself to Luthen's rebellion. Bix flees Ferrix broken by torture, Mon Mothma is trading her daughter's future for cover, and the ISB now knows there is a network — 'Axis' — to hunt.",
+        "questions": [
+          "Can Cassian survive as a full operative under Luthen?",
+          "What happens to Bix, offworld and unraveling from Gorst's torture?",
+          "Now that Syril has crossed paths with Dedra, what does that put in motion?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Cassian Andor",
+          "line": "Fugitive who has just placed himself under Luthen's command, willing to serve the Rebellion."
+        },
+        {
+          "name": "Luthen Rael",
+          "line": "Rebel spymaster running his network from a Coruscant antiques shop, now openly sponsoring Cassian."
+        },
+        {
+          "name": "Mon Mothma",
+          "line": "Imperial senator secretly funding Luthen; has agreed to marry off her thirteen-year-old daughter Leida to cover the missing money."
+        },
+        {
+          "name": "Dedra Meero",
+          "line": "ISB supervisor who has identified an unknown handler she calls 'Axis' and holds authority over Ferrix."
+        },
+        {
+          "name": "Syril Karn",
+          "line": "Disgraced ex-Corpo obsessed with Cassian, now working a menial Coruscant desk job; saved Dedra during the Ferrix riot."
+        },
+        {
+          "name": "Bix Caleen",
+          "line": "Ferrix mechanic tortured by Dr. Gorst; fleeing offworld with Brasso, Wilmon and B2EMO."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · One year on",
+          "text": "A year past Ferrix, Cassian runs missions for Luthen while Bix hides on Mina-Rau, unraveling from Gorst's torture.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the time-jump rhythm and shows the personal cost carrying over from S1.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Krennic seeds Ghorman",
+          "text": "Orson Krennic quietly launches a plan to strip-mine Ghorman for a secret weapons project, assigning Dedra to fabricate a Ghorman insurgency as pretext.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The engine of the whole season — every later Ghorman beat traces to this decision.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Leida's wedding, Tay's death",
+          "text": "Mon Mothma marries off her daughter Leida to a Chandrilan banker's son. When her old friend Tay threatens to expose her rebel funding, Luthen has him killed.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Pays off the S1 marriage arrangement and shows how far Luthen will go, straining his bond with Mothma.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ghorman infiltration",
+          "text": "Syril, now Dedra's partner, infiltrates the Ghorman rebels. A botched heist kills Cinta; Bix, back in the fight, tortures Gorst with his own device.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Puts Syril inside the trap he doesn't yet see and marks Bix's return to action after S1's damage.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Palmo massacre",
+          "text": "The Empire orchestrates a massacre in Palmo's square. Realising he has been used, Syril confronts Dedra, then dies in the square after recognising Cassian mid-assassination.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The season's political crisis and the collapse of the Syril–Dedra axis that has run since S1.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Mothma flees, Bix leaves",
+          "text": "Mon Mothma condemns Palpatine on the Senate floor. Cassian smuggles her to Yavin with a captured KX droid — reprogrammed as K-2SO. Bix slips away to keep him fighting.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Cements the open Rebellion, delivers K-2SO to Cassian, and severs the Cassian–Bix relationship.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Axis falls, Kafrene",
+          "text": "Dedra corners Luthen as Axis; Kleya finishes him and passes his intel to Yavin. Cassian flies to Kafrene to meet Saw's informant; Bix waits offworld with their child.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Closes the Luthen chapter, hands the shadow war to Kleya and Yavin, and points Cassian directly at what comes next.",
+          "needsVerify": true
+        }
+      ],
+      "cliffhanger": {
+        "text": "Luthen is dead but his final intelligence has surfaced an Imperial superweapon. Cassian is flying to Kafrene to meet Saw Gerrera's informant while Bix, hidden offworld, is raising their child.",
+        "questions": [
+          "What is the informant on Kafrene about to tell Cassian?",
+          "With Luthen gone, who now steers the Rebellion's shadow war?",
+          "Will Cassian ever meet the child Bix is raising in his absence?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Cassian Andor",
+          "line": "Rebel operative flying to Kafrene to collect intelligence on an Imperial superweapon."
+        },
+        {
+          "name": "Bix Caleen",
+          "line": "In hiding on Mina-Rau, raising Cassian's child alone while he stays in the fight."
+        },
+        {
+          "name": "Mon Mothma",
+          "line": "Political face of the open Rebellion on Yavin IV after denouncing Palpatine in the Senate."
+        },
+        {
+          "name": "Kleya Marki",
+          "line": "Sole surviving member of Luthen's cell, now integrating into the Yavin leadership after killing him herself."
+        },
+        {
+          "name": "Dedra Meero",
+          "line": "Fallen ISB supervisor, imprisoned in a Narkina-style labor camp for her overreach on Ghorman."
+        },
+        {
+          "name": "K-2SO",
+          "line": "Reprogrammed Imperial KX security droid now serving as Cassian's partner."
+        }
+      ]
+    }
+  }
+}

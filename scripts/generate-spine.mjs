@@ -50,11 +50,28 @@ const BEAT_TARGET = 150;
 
 // ---------------------------------------------------------------- claude cli
 
-function askClaude(prompt) {
+function askClaude(prompt, model = null) {
   return new Promise((res, rej) => {
     // Prompt goes over stdin, not argv — these prompts embed full synopses and
     // would blow past ARG_MAX (and mangle quoting) as a shell argument.
-    const child = spawn('claude', ['-p'], { cwd: ROOT, stdio: ['pipe', 'pipe', 'pipe'] });
+    // Model is left to the CLI default unless asked. This work is grounded
+    // summarisation against a rigid output spec — the facts come from
+    // Wikipedia and the only judgement is which events are load-bearing — so
+    // it is a reasonable candidate for a cheaper tier. Whether that holds is
+    // an empirical question, hence the flag.
+    //
+    // --tools "" disables the whole built-in set, which is required rather
+    // than tidy. With tools available the CLI can decide to do the job
+    // differently than asked: generating Dark Matter, it went off and tried to
+    // WRITE the spine file itself, then returned the prose sentence "Wrote the
+    // Dark Matter spine to ... pending your approval" instead of JSON. The
+    // file was never actually created, so it reported success for work it had
+    // not done. One sporadic silent failure in eighteen shows is a batch-
+    // breaking rate at any real scale. This call wants a pure function:
+    // prompt in, JSON out, no side effects.
+    const args = ['-p', '--tools', ''];
+    if (model) args.push('--model', model);
+    const child = spawn('claude', args, { cwd: ROOT, stdio: ['pipe', 'pipe', 'pipe'] });
     let out = '';
     let err = '';
     child.stdout.on('data', d => (out += d));
@@ -269,6 +286,7 @@ async function main() {
   const argv = process.argv.slice(2);
   const slug = argv[argv.indexOf('--slug') + 1] || 'silo';
   const wholeShow = argv.includes('--whole-show');
+  const model = argv.indexOf('--model') >= 0 ? argv[argv.indexOf('--model') + 1] : null;
   const outArg = argv.indexOf('--out');
   const outName = outArg >= 0 ? argv[outArg + 1] : `${slug}.spine.json`;
 
@@ -290,14 +308,14 @@ async function main() {
   }
   console.log(
     `\n▸ Generating spine for "${show.title}" (${show.seasons.length} seasons fetched)` +
-      `${wholeShow ? ' — whole-show mode, 1 call' : ''}\n`,
+      `${wholeShow ? ' — whole-show mode, 1 call' : ''}${model ? ` — model ${model}` : ''}\n`,
   );
 
   const out = { slug, generatedFor: show.title, seasons: {} };
 
   if (wholeShow) {
     process.stdout.write('  all seasons … ');
-    const parsed = extractJSON(await askClaude(buildWholeShowPrompt(show)));
+    const parsed = extractJSON(await askClaude(buildWholeShowPrompt(show), model));
     for (const season of show.seasons) {
       const entry = parsed.seasons?.[String(season.season)];
       if (!entry) {
@@ -315,7 +333,7 @@ async function main() {
       const prior = show.seasons.filter(s => s.season < season.season).map(s => s.season);
       process.stdout.write(`  S${season.season} … `);
       const parsed = validateSeason(
-        extractJSON(await askClaude(buildPrompt(show, season, prior))),
+        extractJSON(await askClaude(buildPrompt(show, season, prior), model)),
         season,
         `S${season.season}`,
       );

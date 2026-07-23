@@ -1,0 +1,180 @@
+{
+  "slug": "squid-game",
+  "generatedFor": "Squid Game",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The card",
+          "text": "Gi-hun, a broke gambler estranged from his daughter, takes a stranger's card after a subway ddakji game and wakes in a dorm with 455 other debtors.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Gi-hun's debt-driven consent and the recruiter as the games' only known thread to the outside world.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Red Light",
+          "text": "The first game turns lethal; Gi-hun survives and allies with Sang-woo, elderly Il-nam, migrant Ali, and pickpocket Sae-byeok.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Names the five relationships that will define every moral choice Gi-hun makes for the rest of the run.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Vote and return",
+          "text": "The players vote to end the games and go home, but debt drags almost everyone back — the games run on consent, not capture.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets up the vote mechanic that becomes central to season 2 and frames Gi-hun's later crusade as an argument, not a rescue.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The infiltrator",
+          "text": "Detective Jun-ho slips in disguised as a pink guard, discovers the games have run 30 years, and finds his missing brother won the 2015 iteration.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Plants the brother reveal and gives the outside world one witness who has seen the island from within.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Marbles",
+          "text": "Gi-hun tricks Il-nam, who lets him win anyway; Sang-woo cons Ali into forfeiting and dies. Winning now means killing your friends.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "This is the moral break Gi-hun never recovers from and the reason he refuses to spend the prize money.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Brother in the mask",
+          "text": "Sang-woo kills Sae-byeok on the last night. Jun-ho reaches the Front Man, learns he is his brother In-ho, and is shot off a cliff into the sea.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Fixes the season's central antagonist as In-ho and leaves Jun-ho's fate open — both engines of season 2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Turn back",
+          "text": "Gi-hun wins after Sang-woo takes his own life; a dying Il-nam admits he built the games for bored VIPs. A year later Gi-hun spots the Recruiter and abandons his flight home.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The choice at the jet bridge is the whole premise of season 2 — Gi-hun stays to end the games instead of seeing his daughter.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Gi-hun has walked away from his flight to his daughter and picked a fight with the Front Man by phone, with no way in besides the Recruiter and no idea Jun-ho survived.",
+        "questions": [
+          "How does Gi-hun reach the games with no address, no ally, and only a phone line?",
+          "Did Jun-ho survive the fall into the sea?",
+          "What will In-ho do to the man now hunting his operation?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Seong Gi-hun",
+          "line": "Winner of the games, refusing to touch the prize money out of guilt and hunting the Front Man instead of flying to his daughter."
+        },
+        {
+          "name": "Hwang In-ho (Front Man)",
+          "line": "The masked overseer of the games, secretly a former 2015 winner and Jun-ho's older brother."
+        },
+        {
+          "name": "Hwang Jun-ho",
+          "line": "Detective who infiltrated the island as a guard; shot by In-ho and fallen into the sea, fate unknown."
+        },
+        {
+          "name": "The Recruiter (Salesman)",
+          "line": "The suited stranger who plays ddakji with debtors on subway platforms — the only visible link between the games and the outside world."
+        },
+        {
+          "name": "Oh Il-nam",
+          "line": "Elderly Player 001, revealed as the games' founder and a bored billionaire; dies at home after his final wager with Gi-hun."
+        },
+        {
+          "name": "Kang Cheol",
+          "line": "Sae-byeok's little brother, taken in by Sang-woo's grieving mother and supported quietly by Gi-hun's untouched prize money."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Two years later",
+          "text": "Gi-hun runs a hotel-fort operation with ex-loan sharks to hunt the Recruiter, while Jun-ho, secretly alive, searches for the island by boat with Captain Park.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Resets both hunts and introduces Park, the mole who will quietly undo Jun-ho's search from underneath him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Roulette and surrender",
+          "text": "They corner the Recruiter, who forces Gi-hun into Russian roulette and dies — the only outside thread is severed, so Gi-hun surrenders himself as a player wearing a tracker.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Explains why Gi-hun is back inside the arena at all and why his outside team is now blind and searching for a signal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Two moles",
+          "text": "In-ho enters the dorm as Player 001, feigning friendship with Gi-hun to steer him from within; on the water, Captain Park is quietly In-ho's man.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The season's core betrayal architecture — everyone Gi-hun and Jun-ho trust most is In-ho — and it's still hidden at season's end.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The vote rule",
+          "text": "A new rule lets players vote after each round to end the games. Gi-hun reveals he is a former winner and pleads to stop; In-ho's swing vote keeps them running.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Makes Gi-hun's crusade a political one — he has to persuade a majority — and hands In-ho the mechanism to sabotage him from inside.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · No-eul in pink",
+          "text": "North Korean defector Kang No-eul joins the pink guards to earn her daughter's rescue, then starts mercy-killing wounded players to sabotage the guards' organ-harvesting racket.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Opens a second front inside the facility — a guard actively working against the operation, with her own hostage-daughter clock.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The uprising",
+          "text": "After Mingle, Gi-hun convinces the losing-vote players to seize the guards' guns and march on the control room. Half his allies die on the way as ammunition runs out.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The season's active choice — Gi-hun stops arguing and starts a war — and it fails in real time, leaving him captured.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Mask back on",
+          "text": "In-ho fakes his death mid-battle, puts the Front Man's mask back on, and executes Gi-hun's oldest friend Jung-bae in front of him while Park sabotages Jun-ho's approach from the sea.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "This is where season 2 ends: the rebellion crushed, In-ho openly against Gi-hun, and Jun-ho still trusting his own captor.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Gi-hun's uprising has collapsed with his allies dead around him and the Front Man's mask back on. Jun-ho is closer to the island than ever, still unaware his captain works for his brother.",
+        "questions": [
+          "What is left of Gi-hun after being forced to watch Jung-bae die at In-ho's hand?",
+          "How long before Jun-ho sees through Captain Park?",
+          "Can any of the surviving players hold together now that In-ho is openly hunting them?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Seong Gi-hun",
+          "line": "Back inside the arena as a player; his uprising crushed, his oldest friend just executed in front of him, and the Front Man's gun still on him."
+        },
+        {
+          "name": "Hwang In-ho (Front Man)",
+          "line": "Entered the games alongside Gi-hun as Player 001 to control him from within, then re-donned the mask to put down the rebellion himself."
+        },
+        {
+          "name": "Hwang Jun-ho",
+          "line": "Alive and closer to the island than ever, leading a mercenary boat crew — and still trusting the captain feeding his position back to his brother."
+        },
+        {
+          "name": "Captain Park",
+          "line": "Jun-ho's rescuer and boatman, secretly the Front Man's man on the water; already sabotaging the search and killing to keep the island hidden."
+        },
+        {
+          "name": "Kang No-eul",
+          "line": "A pink-jumpsuit guard and North Korean defector; quietly disrupting the guards' organ-trade racket while chasing the money to smuggle her daughter out."
+        },
+        {
+          "name": "Cho Hyun-ju",
+          "line": "Player 120, a trans former special-forces soldier; a surviving ally of Gi-hun's who anchored the six-legged game and now stands with him inside the dorm."
+        }
+      ]
+    }
+  }
+}

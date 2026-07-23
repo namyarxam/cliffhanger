@@ -1,0 +1,956 @@
+{
+  "slug": "walking-dead",
+  "generatedFor": "The Walking Dead",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Rick wakes",
+          "text": "Rick wakes from a coma into a walker apocalypse, meets a widowed Morgan, and drives to Atlanta hunting for his wife Lori and son Carl.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Rick's motivation and the world in one line — the engine of the whole show.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Atlanta rescue",
+          "text": "Atlanta is a walker trap. Glenn rescues Rick from a tank; they escape a rooftop stand-off, but leave the volatile Merle Dixon cuffed and abandoned.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces Glenn as Rick's first ally and sets up Daryl's grudge over Merle that colours S2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Camp reunion",
+          "text": "At a quarry camp outside the city Rick reunites with Lori and Carl — and finds his old partner Shane, who had told Lori that Rick was dead and moved on with her.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The Rick–Shane–Lori triangle is the entire spine of S2; this is where it starts.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Camp overrun",
+          "text": "A walker attack overruns the camp, killing Andrea's sister Amy and biting Jim. Rick pushes the group toward the CDC, believing science offers a cure.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Kills the illusion the camp is safe and sets Rick's authority over Shane's caution.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The CDC",
+          "text": "At the CDC the last scientist, Jenner, proves the disease is incurable and rigs the building to detonate. Rick argues them out and Jenner whispers a secret to him.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The whispered secret — everyone is infected — becomes the S2 finale's bombshell.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · East again",
+          "text": "The group escapes as the CDC self-destructs and turn toward Fort Benning. Shane is fraying, Lori sits between two men, and Rick carries a secret he won't share.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Closes S1 with all three S2 threads live: no home, Shane splitting, Rick withholding.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The group is homeless again, driving east with no plan while Shane and Rick circle each other over Lori. Rick alone knows Jenner's secret, and hasn't told anyone.",
+        "questions": [
+          "What did Jenner whisper to Rick at the CDC?",
+          "Can Rick and Shane share a group, or will one destroy the other?",
+          "Where can the group possibly go from here?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Rick Grimes",
+          "line": "Former deputy sheriff, reunited with his family, uneasy leader carrying Jenner's secret about the infection."
+        },
+        {
+          "name": "Lori Grimes",
+          "line": "Rick's wife, torn after her affair with Shane while she believed Rick dead."
+        },
+        {
+          "name": "Shane Walsh",
+          "line": "Rick's best friend and former partner, resentful that his protector role has been usurped."
+        },
+        {
+          "name": "Carl Grimes",
+          "line": "Rick and Lori's young son, physically safe but exposed to the group's fault lines."
+        },
+        {
+          "name": "Daryl Dixon",
+          "line": "Hunter and outsider, furious that the group left his brother Merle handcuffed on an Atlanta rooftop."
+        },
+        {
+          "name": "Glenn Rhee",
+          "line": "Former pizza delivery driver turned scout, the man who pulled Rick out of Atlanta and into the group."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Sophia missing",
+          "text": "On the road to Fort Benning a herd separates Carol's daughter Sophia from the group. During the search Otis accidentally shoots Carl, who is rushed to Hershel's farm.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Two open searches — Sophia and Carl's life — anchor the whole season on the farm.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The barn's secret",
+          "text": "Shane sacrifices Otis as bait to save Carl. Hershel heals the boy but hides a barn of walkers, including his own family, believing the disease is curable.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Establishes Shane's first murder and the season's central lie about the barn.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Lori is pregnant",
+          "text": "Lori discovers she is pregnant with Shane's child; Rick learns the truth and quietly accepts it. Shane hears too, and starts treating her and Carl as his to protect.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Puts the S1 triangle on a hard timer that ends only when one of them dies.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Sophia in the barn",
+          "text": "Shane forces open the barn and guns the walkers down. The last one out is Sophia; Rick steps forward and puts her down himself, shattering what's left of the group's hope.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Ends the season's hopeful mode and re-centres it on the Rick–Shane conflict.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Rick kills Shane",
+          "text": "A captured stranger, Randall, exposes a violent gang nearby. Shane murders him and lures Rick into the woods to kill him — Rick stabs Shane first, and Carl shoots his corpse.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Resolves S1's central conflict and creates the resentment that will drive Lori and Carl in S3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The farm falls",
+          "text": "The gunshot draws a huge herd that overruns Hershel's farm. On the highway Rick reveals Jenner's secret: everyone is infected. He then declares himself the group's dictator.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Costs the group its home and inaugurates the authoritarian Rick who runs S3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Hooded stranger",
+          "text": "Separated in the panic, Andrea is saved by a hooded woman with a sword and two chained walkers. In the distance, the group sees a prison.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Debuts Michonne — a season away from becoming a lead — and points at the prison.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The group is homeless again with a fractured leader, a pregnant Lori, and a prison on the horizon they might have to fight for. Andrea is missing and in a stranger's hands.",
+        "questions": [
+          "Can the group survive Rick's descent into dictator?",
+          "Who is the hooded woman who rescued Andrea?",
+          "Will they take the prison — and what lives inside it?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Rick Grimes",
+          "line": "Killed his best friend and openly took autocratic control; no one is sure they still trust him."
+        },
+        {
+          "name": "Lori Grimes",
+          "line": "Pregnant with Shane's baby and now blames Rick for killing him."
+        },
+        {
+          "name": "Carl Grimes",
+          "line": "Shot his father's reanimated best friend; his childhood is visibly ending."
+        },
+        {
+          "name": "Daryl Dixon",
+          "line": "Now Rick's most reliable lieutenant, quietly caring for Carol after Sophia."
+        },
+        {
+          "name": "Hershel Greene",
+          "line": "Lost his farm and his illusions about a cure, joining Rick's group as its elder conscience."
+        },
+        {
+          "name": "Andrea",
+          "line": "Separated from the group and rescued by a mysterious hooded stranger with a katana."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Take the prison",
+          "text": "After a hard winter the group takes the prison, clearing walkers block by block. Hershel is bitten and Rick amputates his leg in time; five convicts are found inside.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the season's base and reintroduces the group as hardened.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Woodbury",
+          "text": "Andrea is nursed by her hooded rescuer, Michonne. Merle Dixon — alive — captures them for Woodbury, a clean town run by the charismatic, secretly psychopathic Governor.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces the season's antagonist and rival society, and revives Merle.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Lori dies",
+          "text": "Walkers breach the prison. T-Dog dies; Lori goes into labour and Maggie cuts the baby out to save her, killing Lori. Carl shoots his mother to keep her from turning.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Kills Lori and finishes the ‘innocent child' version of Carl; Rick unravels from here.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Sides drawn",
+          "text": "Michonne finds the Governor's undead daughter and trophy heads; he exiles her and she finds the prison. Merle captures Glenn and Maggie for the Governor to torture.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Pushes Michonne to Rick's side and starts open war between the two towns.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Raid on Woodbury",
+          "text": "Rick's team raids Woodbury to rescue Glenn and Maggie. Michonne kills the Governor's daughter and takes his eye; Andrea stays behind, still believing in him.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Michonne locks in with the group; Andrea's misplaced loyalty becomes fatal soon.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Merle's end",
+          "text": "The Governor attacks the prison and later takes Andrea prisoner. Merle sabotages his men and dies; Daryl finds his brother reanimated and puts him down himself.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "Closes Daryl's S1 grievance and clears the deck for his role as Rick's second.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The town he built",
+          "text": "The Governor's soldiers refuse to slaughter the prison; he massacres them himself and flees. Rick finds a suicidal Andrea too late, then welcomes the Woodbury refugees home.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "Leaves the Governor alive as an S4 threat and doubles the prison's civilian dependents.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The prison is safer than ever with Woodbury's citizens absorbed, but the Governor is loose with a small crew, humiliated and vengeful. Rick has stepped back from sole command.",
+        "questions": [
+          "Where has the Governor gone, and will he come back for the prison?",
+          "Can Rick raise a healthy Judith while stepping down from leadership?",
+          "Is Carl still salvageable after everything he's had to do?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Rick Grimes",
+          "line": "Grieving Lori, briefly unhinged and now sharing power with a council after resigning as dictator."
+        },
+        {
+          "name": "Carl Grimes",
+          "line": "Killed his own mother and executed a surrendering enemy; Rick fears what he's becoming."
+        },
+        {
+          "name": "Daryl Dixon",
+          "line": "Rick's second in command, lost Merle for good and now firmly anchored to the group."
+        },
+        {
+          "name": "Michonne",
+          "line": "Katana-wielding drifter who has chosen Rick's group, bonded to Carl and baby Judith."
+        },
+        {
+          "name": "Hershel Greene",
+          "line": "A one-legged elder who acts as Rick's moral counterweight."
+        },
+        {
+          "name": "The Governor",
+          "line": "Psychopathic warlord who murdered his own army and vanished with a small crew, still alive."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · The plague",
+          "text": "Months into a peaceful prison run by a council, an aggressive flu strain kills survivors. Carol quietly murders two infected friends to try to stop the spread.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets up Carol's exile and the erosion of council-run peace.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Carol exiled",
+          "text": "Rick confronts Carol on a supply run and exiles her from the prison, keeping the reason from Tyreese — whose girlfriend she killed.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Removes Carol from the prison so she survives its fall and can reunite with Tyreese.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · New Governor",
+          "text": "In flashback the exiled Governor takes over a new group, murdering their leader Martinez, and turns them toward the prison as a home for the family he's adopted.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Explains why the Governor comes back and reframes him as a father, not just a warlord.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Prison falls",
+          "text": "The Governor attacks with a tank, beheads Hershel, and Michonne fatally stabs him mid-brawl. The prison falls; the group scatters in every direction into the wilderness.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Kills off the season antagonist but destroys the group's home and separates everyone.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The tracks",
+          "text": "Signs to a place called Terminus draw the splintered groups along the railroad. Abraham, Rosita and Eugene find Glenn — Eugene claims he can cure the plague in Washington.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "Introduces Abraham's crew and the destination that pulls everyone into one boxcar.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Look at the flowers",
+          "text": "Carol, Tyreese and baby Judith travel with two sisters. Lizzie kills Mika to prove walkers are harmless; Carol quietly executes her and confesses to Tyreese about Karen.",
+          "anchorEpisode": 14,
+          "whyLoadBearing": "Bonds Carol to Tyreese and keeps Judith alive off-screen through the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Terminus",
+          "text": "Terminus turns out to be a cannibal trap. Rick's group is herded into a boxcar with the other survivors; Rick vows their captors have picked the wrong people to mess with.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "The set-piece the whole S5 premiere resolves; everyone's location is defined by it.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Rick's group is locked inside a Terminus boxcar. Carol, Tyreese and Judith are still on the road. Beth was kidnapped by a car with a white cross on its window.",
+        "questions": [
+          "Can Rick fight his way out of Terminus with his people intact?",
+          "Who took Beth, and is she alive?",
+          "Is Eugene's promise of a cure in Washington real?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Rick Grimes",
+          "line": "Stripped of the prison and locked in a boxcar; the paternal farmer he tried to be is gone."
+        },
+        {
+          "name": "Carl Grimes",
+          "line": "Watched Rick tear a man's throat out with his teeth to save him; his father is the group's leader again."
+        },
+        {
+          "name": "Daryl Dixon",
+          "line": "Captured with Rick after nearly being pulled into a violent scavenger crew called the Claimers."
+        },
+        {
+          "name": "Michonne",
+          "line": "Travelled with Rick and Carl the whole way from the prison; effectively family now."
+        },
+        {
+          "name": "Carol Peletier",
+          "line": "Killed a child to save the rest; en route to Terminus with Tyreese and baby Judith."
+        },
+        {
+          "name": "Abraham Ford",
+          "line": "Ex-soldier convinced Eugene holds the key to curing the plague, now trapped with everyone else."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Terminus burns",
+          "text": "Carol destroys Terminus with a walker herd, freeing Rick's group. Ex-Terminus survivors ambush them later and cannibalise Bob before Rick's group can wipe them out.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Reunites the boxcar cast and closes the Terminus arc so the season can move to Alexandria.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Grady",
+          "text": "Beth is being held at Grady Memorial by a corrupt hospital cop, Dawn. A prisoner swap goes wrong: Beth is shot dead and Daryl kills Dawn in front of everyone.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Closes the S4 Beth thread and gives Daryl a grief that Aaron picks up on later.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Eugene's lie",
+          "text": "Eugene admits his cure story is a lie he told to keep Abraham alive; Abraham beats him unconscious and the mission to Washington collapses.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Kills the season's stated goal and forces everyone to just try to survive again.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Aaron",
+          "text": "Tyreese dies from a bite on a doomed run. Starving and grieving, the group is found on the road by Aaron, a scout for a walled community called Alexandria.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Delivers the group to the setting the rest of the series is built around.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Alexandria",
+          "text": "Alexandria is real: safe walls, running water, a leader named Deanna. Rick, Carol and Daryl decide the residents are too soft to survive and quietly plan for control.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Frames Rick's group as hostile occupiers from day one — the S6 pattern.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Pete",
+          "text": "A run for solar panels goes wrong; Noah is torn apart when a panicked townsman named Nicholas sacrifices him. Rick confronts town surgeon Pete over abusing his wife Jessie.",
+          "anchorEpisode": 14,
+          "whyLoadBearing": "Sets up Rick's public rift with Alexandria and gets him ready to kill Pete openly.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Morgan returns",
+          "text": "At a town meeting to exile Rick, Pete kills Deanna's husband. Deanna orders Rick to execute Pete — just as Daryl and Aaron return with a wanderer from Rick's past, Morgan.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "Grants Rick amnesty for the killing and re-plants Morgan for his S6 pacifism arc.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Rick has publicly killed a townsman with Alexandria watching, and Deanna has sanctioned it. A pack called the Wolves has already been marking houses beyond the walls.",
+        "questions": [
+          "Can Rick's group and Alexandria actually become one community?",
+          "What are the Wolves preparing for?",
+          "Has Morgan's philosophy of no killing survived the road?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Rick Grimes",
+          "line": "Alexandria's constable, publicly executed the town surgeon and no longer pretending to hide it."
+        },
+        {
+          "name": "Daryl Dixon",
+          "line": "Aaron's recruitment partner outside the walls, spending most of his time in the woods."
+        },
+        {
+          "name": "Michonne",
+          "line": "Constable alongside Rick, chose Alexandria as the group's home."
+        },
+        {
+          "name": "Carol Peletier",
+          "line": "Alexandria's soft-spoken sweet-old-lady mask covers the operator holding the armoury keys."
+        },
+        {
+          "name": "Morgan Jones",
+          "line": "Rick's first ally from the pilot, arrived at Alexandria having tracked him across the country."
+        },
+        {
+          "name": "Deanna Monroe",
+          "line": "Alexandria's founder, grief-stricken by her husband's death and forced to admit Rick was right."
+        }
+      ]
+    },
+    "6": {
+      "beats": [
+        {
+          "label": "S6 · The quarry",
+          "text": "A herd of thousands trapped in a quarry is a slow-motion threat; Rick's plan to walk them away is upset when a horn from Alexandria pulls half of them back to the town.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the season's central danger and shows Rick's outsider plan can't get clean execution.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Wolves",
+          "text": "The Wolves invade Alexandria while it's undefended. Carol massacres them in the streets and Morgan secretly imprisons the one Wolf he can't bring himself to kill.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Widens the Carol–Morgan split over killing that will pay off in S6 mid and S7.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Alexandria falls",
+          "text": "The abandoned herd reaches Alexandria and the walls give way. Ron shoots at Rick and blinds Carl's eye by mistake; the group makes a last stand until Daryl arrives with fire.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Cements Rick's group as Alexandria's actual leadership and marks Carl permanently.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Hilltop",
+          "text": "Two months on, a stranger named Jesus leads Rick to Hilltop, a farming colony being extorted by a mysterious group called the Saviors. Maggie brokers a deal: kill them for food.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Introduces Jesus, Hilltop, the Saviors and Negan's name — the S7 world.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Pre-emptive kill",
+          "text": "Rick's crew slaughters sleeping Saviors in their beds. Carol quietly starts to unravel from what she's done; Maggie and Carol are then captured by Savior women in retaliation.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Rick's confidence peaks just before the season punishes it — the S7 humbling begins here.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Boxed in",
+          "text": "Every route to a pregnant, sick Maggie's doctor at Hilltop is blocked. The group is captured, one by one, and forced to their knees before the RV headlights of the Saviors' leader.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "Puts Rick's group on their knees — the position the S7 premiere resumes from.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Lucille",
+          "text": "Negan, holding a barbed-wire bat named Lucille, tells the kneeling group he's picking one of them to teach the rest a lesson. He swings — the victim is not shown.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "The literal cliffhanger; withholding the victim is the S6→S7 hook.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Rick's group kneels in a clearing; Negan has just bludgeoned one of them to death, but the audience does not know who. Everyone Rick loves is watching.",
+        "questions": [
+          "Who did Negan kill?",
+          "Can Rick's group possibly beat a Savior force this large and organised?",
+          "What deal will Rick have to make to save the survivors?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Rick Grimes",
+          "line": "Alexandria's undisputed leader, defeated for the first time and kneeling in the dirt."
+        },
+        {
+          "name": "Carl Grimes",
+          "line": "Blinded in one eye during the fall of Alexandria's wall."
+        },
+        {
+          "name": "Michonne",
+          "line": "Rick's partner in every sense now, kneeling next to him."
+        },
+        {
+          "name": "Daryl Dixon",
+          "line": "Shot in the shoulder by the Savior Dwight and kneeling with the rest."
+        },
+        {
+          "name": "Maggie Rhee",
+          "line": "Pregnant, gravely ill and in the line-up when Negan arrived."
+        },
+        {
+          "name": "Negan",
+          "line": "Swaggering leader of the Saviors, holding a barbed-wire bat named Lucille."
+        }
+      ]
+    },
+    "7": {
+      "beats": [
+        {
+          "label": "S7 · Two swings",
+          "text": "Negan kills Abraham. When Daryl punches him, Negan kills Glenn too and drags Daryl away as a prisoner. Rick is broken into public submission.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Answers S6's cliffhanger and defines the terms for the rest of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · The Kingdom",
+          "text": "Carol and Morgan reach the Kingdom, a walled community with a tiger, ruled by a theatrical King Ezekiel who is also secretly paying tribute to the Saviors.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces the third community and the ally Rick will need to raise an army.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Submission",
+          "text": "The Saviors take Alexandria's furniture, weapons and pride. Rick renounces leadership and tells everyone to obey; only Rosita and Eugene start crafting a bullet for revenge.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Shows how deep the loss went and starts the slow rebuild toward war.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Escape and Oceanside",
+          "text": "Tara stumbles onto Oceanside, an all-female community hiding from the Saviors, and swears silence. Daryl escapes the Sanctuary with help from Jesus and a mystery insider.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Plants two future allies (Oceanside, mystery insider) and returns Daryl to the fight.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Rick decides",
+          "text": "Negan guts Spencer in Alexandria's street; Rosita's revenge shot misses and Arat kills Olivia. Rick sees the price of submission and finally chooses to fight.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Turns the season from resistance to open coalition-building.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Sasha's plan",
+          "text": "Rick tours Hilltop, Kingdom and the Scavengers stitching an alliance; Sasha volunteers to be smuggled into Alexandria as an assassin and swallows Eugene's poison instead.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "Assembles the coalition and closes Sasha's arc as a sacrificial decoy.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · War begins",
+          "text": "The Scavengers double-cross Rick at the gates. As the Saviors close in, Kingdom and Hilltop fighters ride in — the war for the whole region has begun.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "Locks in the four-community alliance and starts All-Out War.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Rick's coalition — Alexandria, Hilltop, Kingdom, Oceanside — is now openly at war with Negan. Eugene is inside the Sanctuary as a defector, and Sasha has just died as a decoy.",
+        "questions": [
+          "Can four small communities actually beat the Saviors?",
+          "Whose side is Eugene really on now?",
+          "Who is the mystery insider that helped Daryl escape — and will they help again?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Rick Grimes",
+          "line": "Back on his feet, leading an open war against Negan across three communities."
+        },
+        {
+          "name": "Maggie Rhee",
+          "line": "Hilltop's real leader in all but name; still carrying Glenn's child."
+        },
+        {
+          "name": "Daryl Dixon",
+          "line": "Negan's escaped prisoner, hiding at Hilltop and burning to kill Dwight."
+        },
+        {
+          "name": "Ezekiel",
+          "line": "King of the Kingdom, publicly joining Rick's war after years of quiet tribute."
+        },
+        {
+          "name": "Carol Peletier",
+          "line": "Drawn back into the fight after nearly retiring into isolation."
+        },
+        {
+          "name": "Negan",
+          "line": "Overlord of the Sanctuary, now aware Rick has united the region against him."
+        }
+      ]
+    },
+    "8": {
+      "beats": [
+        {
+          "label": "S8 · The siege",
+          "text": "Rick's alliance attacks the Sanctuary, tears its fences down and floods it with walkers. Gabriel ends up trapped inside a trailer with Negan alone.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Opens All-Out War and locks Negan and Gabriel together for the season's slow midpoint.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · The cost",
+          "text": "Attacks on Savior satellite outposts cost lives on both sides. Aaron's partner Eric is killed and Ezekiel loses his fighters, his tiger Shiva, and his confidence.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Shows the war grinding down Rick's allies and ends the Kingdom's fairy-tale mode.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Carl's bite",
+          "text": "Negan escapes the Sanctuary using a walker suit. Alexandria burns; while getting Siddiq to safety, Carl reveals to Rick that he was bitten during their journey home.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The bombshell that reframes the whole season around Carl's coming death.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Carl's letter",
+          "text": "Carl dies pleading with Rick to build a future that includes Negan. Ezekiel and Carol retake the Kingdom from the Saviors, killing their occupier Gavin.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Removes Rick's son and plants the ideological seed that decides the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Simon overreaches",
+          "text": "Simon massacres the Scavengers alone against Negan's orders; a captured Negan learns of it, and Dwight is exposed as Rick's mole inside the Sanctuary.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Isolates Negan from his lieutenants and pushes the Saviors toward internal collapse.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Tainted bullets",
+          "text": "Negan taints Savior weapons with walker blood. The bloody Hilltop battle turns the surviving Saviors, including Alden, against their own leadership.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Shifts the balance of power and creates the ex-Saviors who will live at the Sanctuary in S9.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Rick spares Negan",
+          "text": "Eugene sabotages the ammunition. In the final battle Rick cuts Negan's throat but has him saved and imprisoned; a furious Maggie vows to move against Rick for it.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "The decision the whole show pivots on: Negan alive, Maggie broken with Rick.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The war is over and Rick has kept Negan alive in a cell. Maggie, Jesus and Daryl are quietly planning to overrule Rick, and the communities have to rebuild from scratch.",
+        "questions": [
+          "Can peace with the Saviors' survivors last with Negan alive?",
+          "How long before Maggie makes her move against Rick?",
+          "What kind of society do these communities become once the fighting stops?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Rick Grimes",
+          "line": "Won the war and spared Negan to honour his dying son; has now lost Maggie as an ally."
+        },
+        {
+          "name": "Maggie Rhee",
+          "line": "Keeping Hilltop under her authority; secretly building a coalition to move against Rick."
+        },
+        {
+          "name": "Michonne",
+          "line": "Rick's partner and the person who delivered Carl's letter to him."
+        },
+        {
+          "name": "Daryl Dixon",
+          "line": "Fought the war beside Rick and did not object when Rick spared Negan."
+        },
+        {
+          "name": "Negan",
+          "line": "Stripped of the Saviors and locked in a cell in Alexandria, alive."
+        },
+        {
+          "name": "Ezekiel",
+          "line": "The Kingdom broken by the war but its king restored, together with Carol."
+        }
+      ]
+    },
+    "9": {
+      "beats": [
+        {
+          "label": "S9 · Rebuilding",
+          "text": "Eighteen months on, the communities are rebuilding. Rick and Michonne beg a chilly Maggie for help for the starving Sanctuary; she has Gregory hanged for trying to kill her.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the new peacetime dynamic and shows Maggie is not moving on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S9 · The bridge",
+          "text": "A bridge project unites the groups but bitter Saviors go missing; Oceanside is quietly killing them. Anne — formerly Jadis — is trading people to a helicopter-borne group.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces the helicopter allies and the fault line that pulls Rick off the board.",
+          "needsVerify": false
+        },
+        {
+          "label": "S9 · Rick impaled",
+          "text": "Rick delays Maggie's plan to execute Negan; she sees his life is worse than death and spares him. Rick then herds walkers on horseback, is thrown, and impaled on rebar.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Removes Negan as a target from Maggie and puts Rick in a life-or-death corner.",
+          "needsVerify": false
+        },
+        {
+          "label": "S9 · Rick vanishes",
+          "text": "Rick blows the bridge to kill the herd. Everyone believes he died; Anne finds him alive and flies him away in her allies' helicopter to a place no one else knows about.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Writes Rick out and installs Michonne as Alexandria's leader for the second half.",
+          "needsVerify": false
+        },
+        {
+          "label": "S9 · Time jump",
+          "text": "Six years later Michonne rules Alexandria in isolation. She takes in Magna's group; young Judith is a fighter. A walker whispers and stabs Jesus through the chest.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Redefines the show's cast and unveils the Whisperer premise in one beat.",
+          "needsVerify": false
+        },
+        {
+          "label": "S9 · Alpha and Lydia",
+          "text": "The Whisperers are people wearing walker skins, led by the abusive Alpha. Her daughter Lydia defects to Daryl and Henry, and Carol's stepson Henry is soon captured too.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Introduces the Alpha–Lydia axis that everything in S10 keys off of.",
+          "needsVerify": false
+        },
+        {
+          "label": "S9 · The pikes",
+          "text": "Alpha stakes a border with the severed heads of Enid, Tara, Henry and seven others of Rick's people. A blizzard hits, and a stranger's voice comes over the radio.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "The season's atrocity, the war it demands in S10, and the S10 radio thread all in one image.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "A whole line of Rick's people are on pikes, the Kingdom is abandoned to a blizzard, and someone unknown is transmitting on the radio for anyone still alive to answer.",
+        "questions": [
+          "Who is the voice on the radio?",
+          "Can the communities survive Alpha's border without provoking her again?",
+          "What will Rick's daughter Judith grow up to be?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Michonne",
+          "line": "Hardened leader of Alexandria; her isolationism has cost the community allies."
+        },
+        {
+          "name": "Daryl Dixon",
+          "line": "Lives in the woods alone; has taken responsibility for Lydia after Henry's death."
+        },
+        {
+          "name": "Carol Peletier",
+          "line": "Divorced Ezekiel after Henry's death and moved back to Alexandria with Daryl and Lydia."
+        },
+        {
+          "name": "Judith Grimes",
+          "line": "Rick's daughter, now a small child who fights walkers competently at Michonne's side."
+        },
+        {
+          "name": "Negan",
+          "line": "The model prisoner of Alexandria who saved Judith's life during the blizzard."
+        },
+        {
+          "name": "Alpha",
+          "line": "Matriarch of the Whisperers, drew a bloody border no one may cross."
+        }
+      ]
+    },
+    "10": {
+      "beats": [
+        {
+          "label": "S10 · Border tensions",
+          "text": "Months of quiet end when a Soviet satellite crashes in Whisperer territory. Carol is fixated on killing Alpha, who is watching Alexandria from the trees.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the season's driver: Carol's revenge is going to force everyone's hand.",
+          "needsVerify": false
+        },
+        {
+          "label": "S10 · Spies exposed",
+          "text": "Whisperer spy Dante poisons Alexandria's water and strangles Siddiq; Gabriel later murders him in his cell. Gamma, Alpha's other spy, defects when Carol shows her Lydia is alive.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Ends the infiltration arc and swaps Gamma over to Rick's people.",
+          "needsVerify": false
+        },
+        {
+          "label": "S10 · The cave",
+          "text": "Carol chases Alpha's horde into a cave and traps Connie and Magna inside a dynamite blast. Beta invades Alexandria through a secret tunnel, and Alpha recovers stronger than ever.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Costs Connie, humbles Carol, and forces her to a more extreme plan.",
+          "needsVerify": false
+        },
+        {
+          "label": "S10 · Alpha's head",
+          "text": "Carol secretly frees Negan and sends him to kill Alpha from inside the Whisperer camp. Alpha burns Hilltop to the ground; Negan slits her throat and brings Carol the head.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Removes the season's antagonist and repositions Negan as an uneasy ally.",
+          "needsVerify": false
+        },
+        {
+          "label": "S10 · Rick is alive",
+          "text": "Michonne travels with a stranger, Virgil, to a naval base that turns out to be a trap. She escapes and finds evidence that Rick Grimes may still be alive.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Puts Rick back on the board as a live storyline for the first time since S9.",
+          "needsVerify": false
+        },
+        {
+          "label": "S10 · Beta's stand",
+          "text": "Michonne leaves the group to search for Rick. Beta leads the leaderless horde to Alexandria; the group flees to a hospital, then Beta is killed by Daryl and the herd is destroyed.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "Closes the Whisperer war and removes Michonne from the day-to-day cast.",
+          "needsVerify": false
+        },
+        {
+          "label": "S10 · New threats",
+          "text": "Eugene's radio contact Stephanie promises to meet him; on the road his group is captured by uniformed soldiers of a rich, hidden society. Maggie returns, her home destroyed by Reapers.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "Plants the two S11 antagonists — the Commonwealth and the Reapers — and brings Maggie back.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Michonne is gone chasing evidence that Rick lives. Eugene's group is a hostage of a rich, uniformed society. Maggie has returned with a new group being hunted by an unknown enemy called the Reapers.",
+        "questions": [
+          "Who are the well-armed soldiers holding Eugene?",
+          "Who are the Reapers, and why are they hunting Maggie?",
+          "Where is Rick, and will Michonne actually find him?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Daryl Dixon",
+          "line": "De facto leader of the survivors, holding the group together during Michonne's absence."
+        },
+        {
+          "name": "Carol Peletier",
+          "line": "Freed Negan to do her killing for her; still not at peace with herself."
+        },
+        {
+          "name": "Negan",
+          "line": "Killed Alpha and returned to Alexandria without full trust; buried the last piece of Lucille."
+        },
+        {
+          "name": "Maggie Rhee",
+          "line": "Returned with her son Hershel, on the run from a violent group called the Reapers."
+        },
+        {
+          "name": "Eugene Porter",
+          "line": "Captured by armed soldiers of an unrevealed community he'd been chasing for a year."
+        },
+        {
+          "name": "Judith Grimes",
+          "line": "Rick and Michonne's daughter, now certain her father is alive."
+        }
+      ]
+    },
+    "11": {
+      "beats": [
+        {
+          "label": "S11 · Meridian",
+          "text": "Alexandria is starving. Maggie leads a team back to her old base Meridian for food; Negan abandons her mid-escape, and the Reapers ambush them in the woods.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Opens the season on the food crisis and reignites the Maggie–Negan rift.",
+          "needsVerify": false
+        },
+        {
+          "label": "S11 · The Commonwealth",
+          "text": "Eugene's group learns the soldiers work for the Commonwealth, a wealthy city of tens of thousands run by Governor Pamela Milton, with a rigid class system.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Reveals the last major society and its class fault line — the engine of the back half.",
+          "needsVerify": false
+        },
+        {
+          "label": "S11 · Reapers and reunion",
+          "text": "The Reapers, led by Pope, are Daryl's ex-partner Leah's crew. Maggie's team uses walkers to sack Meridian; six months on, Maggie leads Hilltop while Daryl wears Commonwealth armour.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Closes the Reapers arc and jumps the show into the Commonwealth era.",
+          "needsVerify": false
+        },
+        {
+          "label": "S11 · Lance's coup",
+          "text": "Deputy Governor Lance Hornsby quietly seizes Alexandria, Hilltop and Oceanside as Commonwealth vassals when Maggie refuses to submit. Carol kills him after he betrays them.",
+          "anchorEpisode": 20,
+          "whyLoadBearing": "Converts the Commonwealth from ally to occupier and sets up the citywide fight.",
+          "needsVerify": false
+        },
+        {
+          "label": "S11 · Sebastian exposed",
+          "text": "Eugene records the Governor's spoiled son Sebastian confessing to killing Commonwealth workers. Sebastian dies to a walker during the reveal, and Eugene is arrested for his murder.",
+          "anchorEpisode": 18,
+          "whyLoadBearing": "Cracks Pamela's regime open and sets Eugene's public trial as the rallying point.",
+          "needsVerify": false
+        },
+        {
+          "label": "S11 · The rebellion",
+          "text": "To crush a growing rebellion Pamela lures a variant-walker herd into her own city. Mercer defects to the coalition; Judith is shot by Pamela, and the alliance saves the Commonwealth.",
+          "anchorEpisode": 23,
+          "whyLoadBearing": "Delivers the final overthrow and locks in Pamela's defeat.",
+          "needsVerify": false
+        },
+        {
+          "label": "S11 · Endings",
+          "text": "Rosita dies of a walker bite. A year later Ezekiel governs the Commonwealth. Daryl and Michonne separately hunt for Rick, who has been forced to surrender to the CRM on Bloodsworth Island.",
+          "anchorEpisode": 24,
+          "whyLoadBearing": "Closes the community arc and re-opens the Rick–Michonne thread as the series' last mystery.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Commonwealth is under new leadership, but the story's oldest thread — Rick's fate — is open again. Rick is a captive of the CRM, and Daryl and Michonne are separately hunting for him.",
+        "questions": [
+          "Will Michonne or Daryl reach Rick first?",
+          "What is the CRM, and why has it kept Rick this long?",
+          "Can the united communities hold together without Rick, Michonne or Daryl?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Daryl Dixon",
+          "line": "Has just left the united communities to search for Rick on his own."
+        },
+        {
+          "name": "Maggie Rhee",
+          "line": "Rebuilding Hilltop and slowly starting to move past her hatred of Negan."
+        },
+        {
+          "name": "Negan",
+          "line": "Married to Annie and a father, forgiven by no one but trying."
+        },
+        {
+          "name": "Ezekiel",
+          "line": "Governor of the Commonwealth, uniting the region under fair rule."
+        },
+        {
+          "name": "Michonne",
+          "line": "Still searching for Rick, now certain he is alive somewhere."
+        },
+        {
+          "name": "Rick Grimes",
+          "line": "Alive but captive of the CRM, writing to Michonne from Bloodsworth Island."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,441 @@
+{
+  "slug": "the-bear",
+  "generatedFor": "The Bear",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Coming home",
+          "text": "Carmy returns from New York fine dining to run The Beef after brother Michael's suicide, inheriting a hostile crew led by Michael's best friend Richie.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the entire premise: Carmy's return, Michael's death, and the Richie antagonism that drives every future season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Sydney arrives",
+          "text": "He hires CIA-trained Sydney as sous-chef and imposes a brigade system, but their clash of rigor and instinct nearly breaks the kitchen.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Sydney is Carmy's future partner; her arrival and their creative tension is the spine of every subsequent season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The debt",
+          "text": "A health inspector rates The Beef a C; Carmy learns Michael owed $300,000 to family friend Uncle Cicero and refuses his offer to buy the shop.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Cicero's money is the financial engine of the show — every future clock and ultimatum starts here.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Al-Anon and Marcus",
+          "text": "Al-Anon meetings help Carmy grieve as Marcus becomes obsessed with pastry and Sydney slowly earns the crew's respect through service.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Marcus's pastry ambition and Carmy's grief work are threads that carry through every subsequent season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Review, resignation",
+          "text": "A rave review of Sydney's rogue risotto triggers a preorder rush; Carmy explodes, Sydney stabs Richie by accident and walks out.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The rift that makes Carmy's later apology and partnership offer meaningful, and proves the dish that will define Sydney.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Richie arrested",
+          "text": "Richie is arrested for aggravated assault after a brawl at a bachelor party The Beef is hosting.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Marks the low point of Richie's arc and sets the stage for his transformation in season two.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Money in the cans",
+          "text": "Michael's letter guides Carmy to hundred-dollar bills hidden in tomato cans; he closes The Beef to open a new restaurant called The Bear.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The pivot that changes the entire premise going forward — from managing a sandwich shop to building a fine-dining restaurant.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Beef is closing but The Bear doesn't yet exist. Michael's hidden money buys Carmy a chance he isn't remotely prepared to take; Sydney has just come back, and Richie is facing a felony.",
+        "questions": [
+          "Can Carmy actually build a fine-dining restaurant out of The Beef's crew?",
+          "Will Sydney get real ownership in what she helps create?",
+          "What happens to Richie now that he's facing an aggravated assault charge?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Carmen \"Carmy\" Berzatto",
+          "line": "James Beard-winning chef who has come home to run The Beef after his brother's suicide."
+        },
+        {
+          "name": "Sydney Adamu",
+          "line": "CIA-trained sous-chef who quit in frustration and came back — now Carmy's most talented ally."
+        },
+        {
+          "name": "Richie Jerimovich",
+          "line": "Michael's best friend and The Beef's old guard, freshly arrested and facing aggravated assault."
+        },
+        {
+          "name": "Natalie \"Sugar\" Berzatto",
+          "line": "Carmy's sister, back in his life to help untangle the restaurant's finances."
+        },
+        {
+          "name": "Jimmy \"Uncle Cicero\" Kalinowski",
+          "line": "Family friend owed $300,000 who briefly offered to buy the restaurant outright."
+        },
+        {
+          "name": "Marcus",
+          "line": "The Beef's baker turned obsessive pastry chef under Carmy's mentorship."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · The 18-month loan",
+          "text": "Carmy and Sydney plan to convert The Beef into The Bear; Cicero lends $500,000 on an 18-month clock — miss it and he takes the property.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The loan is the financial stakes that season three inherits and season four's countdown clock accelerates.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Everyone goes to school",
+          "text": "Marcus flies to Copenhagen and trains under pastry chef Luca while Tina and Ebra go to culinary school; the crew starts becoming professionals.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Introduces Luca and the education arcs (Tina, Ebra) that pay off across every following season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Fishes",
+          "text": "A Christmas flashback lays bare the Berzatto family: their volatile mother Donna drives her car into the house at the end of dinner.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Establishes Donna and the family trauma that drives Carmy's psychology and Natalie's arc going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Claire",
+          "text": "Carmy reconnects with childhood friend Claire and falls into a relationship, pulling him away from the build as Sydney feels increasingly sidelined.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Sets up the Claire relationship and Sydney's growing sense that Carmy is not a reliable partner.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Forks",
+          "text": "Sent to shadow at Ever, Richie is humbled by fine dining and returns transformed, finally believing he belongs in this new restaurant.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Richie's transformation reshapes the entire front of house — every subsequent season depends on this new Richie.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The walk-in",
+          "text": "On family-and-friends night Carmy is trapped in the walk-in and rants that Claire ruined his focus, not realising she overhears every word.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The rupture that Carmy spends the next two seasons trying to apologize for, and the moment Richie decisively turns on him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Losses in the wings",
+          "text": "Sydney has a panic attack but is comforted by her father; Marcus misses calls that his mother has died back home in Chicago.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Both threads open the next season — Sydney's father as her anchor, and Marcus's grief as the tone-setter of season three.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Bear has opened, but its first service has broken Carmy's relationship with Claire and detonated his relationship with Richie. Marcus doesn't yet know his mother has died, and Cicero's 18-month loan clock is ticking.",
+        "questions": [
+          "Can The Bear actually operate as a real restaurant, or was this a preview of ongoing chaos?",
+          "Is Carmy's relationship with Claire — and with Richie — salvageable after the walk-in?",
+          "Can they possibly earn back Cicero's half-million before the loan comes due?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Carmen \"Carmy\" Berzatto",
+          "line": "Head chef of the newly renamed The Bear, having just torpedoed his relationship with Claire from inside a walk-in."
+        },
+        {
+          "name": "Sydney Adamu",
+          "line": "Sous-chef and Carmy's de facto partner, freshly panicked and comforted by her father in the aftermath."
+        },
+        {
+          "name": "Richie Jerimovich",
+          "line": "Transformed by his week at Ever into an eager front-of-house lead, now furious at Carmy for what he heard through the fridge door."
+        },
+        {
+          "name": "Natalie \"Sugar\" Berzatto",
+          "line": "Pregnant project manager who kept the build alive against every setback."
+        },
+        {
+          "name": "Marcus",
+          "line": "Copenhagen-trained pastry chef who doesn't yet know his mother has died back in Chicago."
+        },
+        {
+          "name": "Jimmy \"Uncle Cicero\" Kalinowski",
+          "line": "Owed $500,000 more; contractually owns the property if the loan defaults in 18 months."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Non-negotiables",
+          "text": "Carmy imposes a daily-changing menu and rigid 'non-negotiables' that Sydney warns will break the kitchen and the budget.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The policy that drives the financial crisis and Sydney's growing doubts, both of which carry directly into season four.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Grief and blows",
+          "text": "Marcus's mother dies just as the first month of service collapses into chaos and Carmy and Richie come to blows in the kitchen.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Shows the human cost of Carmy's non-negotiables and the depth of the Carmy–Richie rift.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ever closes, Adam calls",
+          "text": "Ever's Chef Terry abruptly closes the restaurant; Ever's Adam Shapiro secretly visits The Bear and offers Sydney her own kitchen elsewhere.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Introduces Adam Shapiro's rival offer, which sits over every one of Sydney's decisions from here forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The unsigned deal",
+          "text": "Sydney stalls on Carmy's unequal partnership agreement, especially once she learns Adam's offer is more generous.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Sydney's unsigned contract is the pivot the entire next season turns on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ice chips",
+          "text": "Natalie goes into labor and reluctantly calls Donna, who arrives at the hospital and begins to genuinely reconcile with her daughter.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Donna's reappearance in the family reopens the door Carmy will eventually have to walk through.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Confronting Fields",
+          "text": "At Ever's closing dinner Carmy confronts David Fields and accuses him of destroying his self-worth; Fields shrugs it off entirely.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Shows Carmy trying and failing to close the wound behind his whole persona — the reason he later walks away from cooking.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The review lands",
+          "text": "Cicero has warned a bad Tribune review ends everything; the review lands on Carmy's phone with missed calls stacking beneath it.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The literal cliffhanger — the Tribune review's verdict is what defines the opening of season four.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Tribune review sits unread on Carmy's phone alongside frantic messages from Cicero. Sydney is holding Adam Shapiro's offer without ever signing Carmy's contract, and The Bear's future is one notification away from being decided for them.",
+        "questions": [
+          "Is the review good or bad — and if it's bad, does Cicero pull the plug?",
+          "Will Sydney stay at The Bear or take Adam's offer of her own kitchen?",
+          "Can Carmy repair anything — with Claire, Richie, or himself — before the walls close in?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Carmen \"Carmy\" Berzatto",
+          "line": "Head chef unraveling under his own non-negotiables, still ducking Claire, still at war with Richie."
+        },
+        {
+          "name": "Sydney Adamu",
+          "line": "Chef de cuisine with an unsigned partnership contract and a competing job offer from Adam Shapiro."
+        },
+        {
+          "name": "Richie Jerimovich",
+          "line": "Now-integral front-of-house lead, still resentful of Carmy despite the earlier apology."
+        },
+        {
+          "name": "Natalie \"Sugar\" Berzatto",
+          "line": "New mother, tentatively reconciling with Donna after their reunion in the hospital."
+        },
+        {
+          "name": "Marcus",
+          "line": "Grieving his mother's death while pouring himself further into pastry to cope."
+        },
+        {
+          "name": "Jimmy \"Uncle Cicero\" Kalinowski",
+          "line": "Creditor threatening to pull out entirely if the Tribune review is unkind."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · The clock",
+          "text": "The mixed Tribune review pushes Cicero to install a countdown clock: two months to turn profitable, or he shuts The Bear down.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The season's central deadline; every decision from here is measured against the clock ticking on the kitchen wall.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Simplify",
+          "text": "Carmy and Sydney simplify the menu and slash costs while Richie recruits Ever's veterans to run the front of house.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Marks Carmy's first real course correction and shows Richie taking real leadership of the room.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Luca returns, Ebra plans",
+          "text": "Luca returns to Chicago as a stage to help Marcus, and Ebra begins planning to franchise the profitable Beef sandwich window.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Two threads that reshape the restaurant's structure and pay off directly in the following season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Apology to Claire",
+          "text": "Carmy visits Claire at home to finally apologise for the walk-in rant and admits his fears, cracking open a reconciliation.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Reopens the Claire door and marks Carmy's first genuine act of vulnerability of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Under the table",
+          "text": "At Tiff's wedding the family huddles under a table sharing fears; Carmy learns Lee had befriended Michael and Donna is really trying to change.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The emotional pivot of the season — the Berzattos finally speaking honestly, unlocking Carmy's decision to walk away.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Written out",
+          "text": "Carmy secretly rewrites the partnership agreement, removing himself and handing ownership to Sydney, Natalie and Cicero.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The private decision that becomes the season-ending bombshell and the entire premise of season five.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Goodbye",
+          "text": "Confronted by Sydney, Carmy reconciles with Richie and tells her she's the reason The Bear works before announcing he is retiring from cooking.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The season's final act rewrites the leadership of the restaurant — season five is directly a response to this moment.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Cicero's countdown clock has reached zero. Carmy has quit not just The Bear but cooking entirely, quietly handing the restaurant to Sydney, Natalie and Cicero — with Sydney made lead partner while she still holds an unrevealed offer from Adam Shapiro.",
+        "questions": [
+          "Can Sydney run The Bear without Carmy — and does she even want to?",
+          "With the countdown expired, is the restaurant already dead on the numbers?",
+          "Who is Carmy when he isn't a chef?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Carmen \"Carmy\" Berzatto",
+          "line": "Just quit cooking entirely, having quietly written himself out of the ownership of The Bear."
+        },
+        {
+          "name": "Sydney Adamu",
+          "line": "The Bear's new lead partner, still secretly holding Adam Shapiro's rival offer."
+        },
+        {
+          "name": "Richie Jerimovich",
+          "line": "Now a partner at The Bear, reconciled with Carmy and a proud co-parent to Eva."
+        },
+        {
+          "name": "Natalie \"Sugar\" Berzatto",
+          "line": "Business co-owner and new mother, reconciled with Donna at Tiff's wedding."
+        },
+        {
+          "name": "Marcus",
+          "line": "Named among Food & Wine's Best New Chefs while still grieving his mother."
+        },
+        {
+          "name": "Jimmy \"Uncle Cicero\" Kalinowski",
+          "line": "Creditor whose two-month countdown clock has just expired."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Storm and handover",
+          "text": "A brutal storm floods the restaurant and cripples supplies as Carmy quietly puts Sydney in charge and asks her to keep his exit private.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Frames the season's stakes — Sydney is running the kitchen under a natural disaster and a secret at the same time.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Truth spills",
+          "text": "Cicero reveals he has lost most of his money and must sell the building; Sydney inadvertently outs Carmy's retirement to the entire team.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Ends every version of secrecy the season opened with and forces the restaurant to run with everything on the table.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Sydney takes command",
+          "text": "Sydney rebuilds the service plan, rallies the crew and takes real command of the kitchen for the first time.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The transition that the entire show has been building to — Sydney fully in charge of the kitchen.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Marcus's father",
+          "text": "Marcus's estranged father comes for dinner; Marcus and Luca serve him a caramel dessert hidden inside a candle that leaves him in tears.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Marcus's grief arc, running since season two, resolves in a moment of genuine reconciliation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The wrong Michelin",
+          "text": "A guest the team thinks is the Michelin inspector is impressed by Sydney's Coca-Cola short-rib substitution; service ends in celebration.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The service that puts Sydney's improvisational leadership on the plate and shows the crew what she can do.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Two stars",
+          "text": "Weeks later the real Michelin representative calls: The Bear has earned two stars; Carmy quietly interviews for an architecture firm internship.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The validation the entire run of the show has been chasing arrives in the same breath as Carmy's new career.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Everyone scatters",
+          "text": "Ebra launches the Beef franchise and the crew celebrates Eva's birthday at The Bear as Richie flies to Japan with Jess as his partner.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Closing image: the chosen family together for one last moment before they scatter into their own futures.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Bear has two Michelin stars but is only barely staying open. Carmy is interviewing at an architecture firm, Sydney runs the kitchen, Richie has boarded a plane to Japan with Jess, and Ebra is building a franchise around the sandwich window that started it all.",
+        "questions": [
+          "Can Sydney sustain a two-star kitchen without Carmy behind her long-term?",
+          "Does Carmy really become an architect, or does he circle back to the stove?",
+          "What is The Bear now that its people are scattering into their own futures?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Carmen \"Carmy\" Berzatto",
+          "line": "Retired from cooking and interviewing to become an architecture-firm intern."
+        },
+        {
+          "name": "Sydney Adamu",
+          "line": "Head chef of a two-Michelin-star restaurant she now runs without Carmy."
+        },
+        {
+          "name": "Richie Jerimovich",
+          "line": "Partner at The Bear, on a plane to Japan with Jess as his new partner."
+        },
+        {
+          "name": "Natalie \"Sugar\" Berzatto",
+          "line": "Co-owner keeping the restaurant's finances afloat with a newborn at home."
+        },
+        {
+          "name": "Marcus",
+          "line": "Pastry chef of a Michelin-starred kitchen, reconciled with his father through the caramel dessert."
+        },
+        {
+          "name": "Ebraheim",
+          "line": "Formerly the Beef window lead, now franchising it with Albert as his business partner."
+        }
+      ]
+    }
+  }
+}

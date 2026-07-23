@@ -1,0 +1,180 @@
+{
+  "slug": "last-of-us",
+  "generatedFor": "The Last of Us",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Sarah",
+          "text": "In 2003, a fungal pandemic tears through overnight. Joel flees Austin with brother Tommy and daughter Sarah, but a soldier shoots Sarah dead in his arms.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The founding wound that governs every choice Joel makes about Ellie for the rest of the series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Smuggling Ellie",
+          "text": "Twenty years later, Joel smuggles in the Boston QZ. He and Tess take a Firefly job escorting a teenage girl, Ellie, whose bite never turns — she is immune.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the whole premise: Ellie's immunity is the cure, and Joel is the man being paid to deliver her.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Tess's last order",
+          "text": "At the drop point the Fireflies are dead, and Tess reveals she is bitten. She stays to blow the building and makes Joel finish Ellie's cure mission west.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Binds Joel to the mission by promise rather than pay — the reason he keeps going past every off-ramp.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Bill and Frank",
+          "text": "Joel takes Ellie to his allies Bill and Frank in Lincoln, only to find them dead by choice. He inherits their truck and commits to seeing Ellie through.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Bill's letter and Frank's death model the love-and-protect posture Joel adopts toward Ellie for the rest of the road.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Jackson",
+          "text": "In Jackson, Joel finds Tommy alive and nearly hands Ellie off, fearing he cannot protect her. Ellie confronts him, and he chooses to be her guardian west.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Introduces Tommy, Maria and the Jackson settlement — the home Ellie and Joel return to, and where Season 2 opens.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Baby girl",
+          "text": "Trapped alone, Ellie kills a cannibal preacher who tried to rape her. Joel finds her broken and calls her 'baby girl,' cementing them as father and daughter.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Formalises the father–daughter bond and gives Ellie the first trauma that makes her capable of the killing Season 2 will demand.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The lie",
+          "text": "At Salt Lake, Joel kills the Fireflies and Marlene to save Ellie from a fatal cure surgery, then lies to her that no cure was possible.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The single event Season 2 is built on: the massacre creates Abby's revenge, and the lie poisons Joel and Ellie's relationship.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Joel has buried humanity's cure to keep Ellie alive and lied to her face; Ellie has accepted the answer for now. They ride back to Jackson as father and daughter, with every Firefly Joel killed leaving families who don't yet know his name.",
+        "questions": [
+          "How long can Joel's lie hold once Ellie starts testing it?",
+          "What will the families of the slaughtered Fireflies do when they find him?",
+          "Can Ellie ever settle into a normal life knowing her immunity meant something?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Joel Miller",
+          "line": "Hardened smuggler who chose Ellie over humanity's cure and lied to her about it to keep her at his side."
+        },
+        {
+          "name": "Ellie",
+          "line": "Immune fourteen-year-old who has accepted Joel's story, unaware he massacred the Fireflies to prevent the surgery."
+        },
+        {
+          "name": "Tommy",
+          "line": "Joel's estranged brother, now settled in Jackson with his pregnant partner Maria; the safe harbour Joel is riding back toward."
+        },
+        {
+          "name": "Maria",
+          "line": "Tommy's pregnant partner and a leader in the Jackson settlement, the community that gives Joel and Ellie a home."
+        },
+        {
+          "name": "Marlene",
+          "line": "Firefly leader and Ellie's guardian since infancy; killed by Joel at the hospital rather than allowed to raise an alarm."
+        },
+        {
+          "name": "Sarah",
+          "line": "Joel's daughter, shot dead by a soldier in the first hours of the outbreak; the loss that shapes his refusal to lose Ellie."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Five years on",
+          "text": "In Jackson, Joel and Ellie are estranged; she suspects his cure story is a lie. Joel sees a therapist, Gail, but withholds what he did at the hospital.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the fractured relationship the season will keep circling back to and the therapy room where the truth finally leaks out.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Abby kills Joel",
+          "text": "Strangers led by Abby track Joel to Jackson as a horde overruns the town. Joel saves Abby in the woods; she reveals he killed her father and beats him to death.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The engine of the whole season and the payoff for Season 1's massacre: Joel's death and the name Abby.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The road to Seattle",
+          "text": "With Jackson refusing to strike back, Ellie leaves alone with Dina to hunt Abby's crew in Seattle — the Washington Liberation Front, or WLF.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Turns the season into a revenge quest and puts Ellie into the Seattle war between the WLF and the Seraphites.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Immunity and pregnancy",
+          "text": "In Seattle Ellie takes a bite to save Dina and reveals she is immune. Dina confesses she is pregnant with Jesse's child and vows to see the revenge through.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Two secrets that reshape the mission: Ellie's immunity is now known to Dina, and there is a baby to weigh against every next kill.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Joel's confession",
+          "text": "A flashback shows that just before his death, Joel confessed the massacre to Ellie. She doubted she could forgive him but pledged to try.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The emotional through-line for everything Ellie does after: she is avenging a man she was in the middle of trying to forgive.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Nora, Owen, Mel",
+          "text": "Ellie tortures Nora for Abby's hideout, then shoots Owen and accidentally kills his pregnant partner Mel. Her revenge starts to mirror what she came to avenge.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Ellie crosses lines she cannot uncross, breaking the moral case for her hunt and setting up her collapse in the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ambush at the theater",
+          "text": "Abby ambushes them at the theater, killing Jesse and wounding Tommy, then holds Ellie at gunpoint. The show cuts three days back to Abby's morning.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The literal cliffhanger and the perspective handoff — Season 3 walks in through Abby's door, not Ellie's.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ellie's revenge tour has cost Jesse's life, Tommy's wounds and her own conscience, and Abby has her at gunpoint in the theater as a shot rings out. The show then rewinds three days to Abby's morning, signalling a full switch of perspective.",
+        "questions": [
+          "Whose gun fired at the theater, and who did it hit?",
+          "Why did Isaac summon Abby, and what does the WLF want next?",
+          "Can Ellie and Dina still build a life together after what Ellie has done in Seattle?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Ellie",
+          "line": "Grieving Joel and hunting Abby; has killed Nora, Owen and pregnant Mel, and is on her knees at the theater with a gun in her face."
+        },
+        {
+          "name": "Abby",
+          "line": "Daughter of the Firefly doctor Joel killed; beat Joel to death with a golf club and has just ambushed Ellie's group at the theater."
+        },
+        {
+          "name": "Dina",
+          "line": "Ellie's partner, pregnant with Jesse's child, wounded by a Seraphite arrow and waiting at the theater when Abby arrives."
+        },
+        {
+          "name": "Tommy",
+          "line": "Rode to Seattle to bring Ellie home; wounded by Abby in the theater ambush and out of the fight."
+        },
+        {
+          "name": "Isaac",
+          "line": "Ex-FEDRA officer turned WLF leader running Seattle; escalating a war against the Seraphites and has just summoned Abby."
+        },
+        {
+          "name": "Joel Miller",
+          "line": "Dead by Abby's hand, but the confession he finally gave Ellie is what she is still carrying through every kill."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "slug": "severance",
+  "generatedFor": "Severance",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The severed floor",
+          "text": "Mark is promoted to lead Lumon's Macrodata Refinement after coworker Petey vanishes. His new hire Helly wakes severed and learns her outie won't let her quit.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the four-person MDR unit and the severance premise the whole series hinges on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Petey's map",
+          "text": "Outside work, Petey finds Mark and reveals he reversed severance. He dies from the procedure days later, leaving Mark a hand-drawn map of Lumon's hidden hallways.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Plants reintegration as a real option and hands the innies the map they use to explore.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Helly's refusal",
+          "text": "After Helly's outie records a video refusing her personhood, Helly hangs herself in an elevator. She survives, and the innies grasp that no one outside is coming to save them.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The moment the innies stop hoping for rescue from their outies and start plotting for themselves.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Departments align",
+          "text": "Irving grows close to Burt in Optics & Design; MDR realises Lumon has pitted the departments against each other. Together they begin mapping the severed floor.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Turns four isolated workers into a coordinated resistance and gives Irving a stake outside his own team.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The contingency",
+          "text": "Dylan discovers Lumon can wake innies inside their outies' lives—the 'overtime contingency'—and volunteers to trigger it so the others can warn the outside world.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The mechanism the finale runs on; only Dylan knows how to fire it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Gemma is alive",
+          "text": "Reassembling a torn photo, Mark discovers his supposedly-dead wife Gemma is alive inside Lumon as wellness counsellor Ms. Casey.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The revelation that becomes Mark's entire engine going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Gala uprising",
+          "text": "Dylan triggers the contingency. Helly hijacks a Lumon gala to reveal she is CEO Jame Eagan's daughter; Mark tells Devon 'she's alive' before being pulled back inside.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Simultaneously exposes severance publicly and identifies Helly as Lumon royalty—both facts drive S2.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Dylan is tackled mid-contingency. Mark, Helly and Irving are yanked back inside Lumon before they can act on what they've just learned about their outies' lives.",
+        "questions": [
+          "Will Mark's outie find Gemma before Lumon can hide her?",
+          "What does Lumon do to a team whose innies just exposed severance on live television?",
+          "Can the innies remember any of the outside world when they resume shift?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Mark Scout",
+          "line": "MDR department head whose innie has just discovered his supposedly-dead wife Gemma is alive inside Lumon as Ms. Casey."
+        },
+        {
+          "name": "Helly R. / Helena Eagan",
+          "line": "MDR refiner whose outie is Lumon CEO Jame Eagan's daughter; her innie has just denounced severance to a hostile press."
+        },
+        {
+          "name": "Irving B.",
+          "line": "MDR refiner mid-contingency at Burt's house, learning the man he loves already has a partner outside.",
+          "note": "outie is a solitary painter of a dark corridor"
+        },
+        {
+          "name": "Dylan G.",
+          "line": "MDR refiner running the contingency from Lumon's security office, seconds from being tackled by Milchick.",
+          "note": "recently learned his outie has a son"
+        },
+        {
+          "name": "Harmony Cobel",
+          "line": "Mark's severed-floor manager and secret neighbour 'Mrs. Selvig', just suspended by Lumon's board and racing to silence Helly at the gala."
+        },
+        {
+          "name": "Gemma Scout / Ms. Casey",
+          "line": "Mark's wife, believed dead by his outie, alive on Lumon's testing floor as the wellness counsellor and just sent back downstairs by Cobel."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Return under new management",
+          "text": "Five months later, Mark wakes on a rebuilt severed floor now run by Milchick. His team returns to work, but Helena has secretly replaced her innie to spy on them.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Resets the board: new floor manager, new deputy, and an unseen imposter inside MDR.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Reintegration",
+          "text": "Outside, Reghabi confirms to Mark that Gemma is alive on Lumon's testing floor. He agrees to a dangerous reintegration procedure to bridge his two selves.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Commits Mark's outie to the rescue and reactivates reintegration as a live mechanism.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Irving unmasks Helena",
+          "text": "On an outdoor retreat, Irving forces Helena to confess she is not Helly by drowning her at a waterfall. Milchick fires him and ends his innie for good.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Removes Irving from the board, restores real Helly, and confirms Lumon's willingness to erase people.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The testing floor",
+          "text": "Innie Mark and Helly fall together while outie Mark's reintegration begins. Flashbacks reveal Gemma held on the testing floor, cycling through rooms that torture her innies.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Fuses the two Marks emotionally, and shows the reader the prison the finale must break.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Cobel's secret",
+          "text": "Cobel returns to her ether-ruined hometown and recovers old sketches proving she—not Lumon—invented severance. Devon calls her for help with Mark's collapse.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Recasts Cobel from antagonist to wild card and puts the technology's true origin in her hands.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Cold Harbor is Gemma",
+          "text": "Cobel warns that finishing the Cold Harbor file will kill Gemma. Mark's outie records a video begging his innie to complete it, then rescue her from the testing floor.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Sets the terms of the finale: complete the file, lose your existence, save the wife you've never met.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Mark chooses Helly",
+          "text": "Mark rescues Gemma from the testing floor and pushes her through Lumon's exit, then turns back for Helly. The two flee deeper into Lumon as alarms blare.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The season's central choice: innie Mark refuses the rescue his outie designed him for.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Gemma is finally outside, but Mark has abandoned her to run with Helly. Cold Harbor is broken, Drummond is dead, and Lumon's alarms are ringing over Jame Eagan, Milchick and a defiant MDR.",
+        "questions": [
+          "Will Gemma reach an outie husband who barely knows her anymore?",
+          "How does Lumon punish—or use—a floor that just torched its most important project?",
+          "What does Cobel do next, now that severance's true inventor is loose and allied with Devon?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Mark Scout",
+          "line": "Reintegrating between his two selves; his innie has just chosen Helly over Gemma and is loose inside Lumon."
+        },
+        {
+          "name": "Helly R.",
+          "line": "Back in control of her body after Helena's imposture; running through Lumon with Mark as alarms sound."
+        },
+        {
+          "name": "Gemma Scout",
+          "line": "Freed from the testing floor and standing outside the severed door for the first time in years, separated from the husband she remembers."
+        },
+        {
+          "name": "Harmony Cobel",
+          "line": "The true inventor of severance, exiled from Lumon and now openly working with Devon to bring the company down."
+        },
+        {
+          "name": "Seth Milchick",
+          "line": "Severed-floor manager whose kindness reforms have collapsed; his star refiner just completed Cold Harbor and immediately betrayed Lumon."
+        },
+        {
+          "name": "Helena Eagan",
+          "line": "The face of Lumon's severance push, her ORTBO impersonation exposed and her father Jame Eagan watching Cold Harbor come apart in real time."
+        }
+      ]
+    }
+  }
+}

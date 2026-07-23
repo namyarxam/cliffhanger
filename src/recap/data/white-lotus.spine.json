@@ -1,0 +1,267 @@
+{
+  "slug": "white-lotus",
+  "generatedFor": "The White Lotus",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Arrivals in Maui",
+          "text": "Guests arrive at the White Lotus Maui; honeymooner Shane fixates on a booking error and starts an escalating war with hotel manager Armond.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the resort, the manager, and the customer-complaint feud that will end in Armond's death.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Tanya dangles a business",
+          "text": "Grieving heiress Tanya asks spa manager Belinda for a massage, then dangles a wellness-business partnership Belinda begins to plan her life around.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces the Tanya–Belinda dynamic that defines Tanya's cruelty and gives Belinda a stake worth losing.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Armond relapses",
+          "text": "Armond, five years sober, relapses on drugs left behind by teen guest Paula and starts using with staff, unravelling as Shane keeps demanding his boss.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The relapse is the mechanism the Shane feud can now push toward catastrophe.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Quinn drifts to the beach",
+          "text": "Mark's crumbling marriage plays out at dinners; young Quinn escapes each night to the beach, bonds with local canoeists, and starts imagining another life.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Sets up Quinn's decision to walk off the plane home, the family's only real ending.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The safe robbery",
+          "text": "Paula gives local worker Kai the Mossbachers' safe code; the robbery fails, Kai is arrested, and Rachel privately decides she married the wrong man.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Closes the Paula/Kai thread and hardens Rachel's crisis before her final reversal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Tanya picks Greg",
+          "text": "Tanya pursues fellow guest Greg instead, cancels on Belinda, and hands her cash rather than the business she'd promised.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The single most load-bearing beat for the next season: this is where Tanya and Greg become a couple.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Departures",
+          "text": "Fired for the sex scandal, drunk Armond defecates in Shane's suitcase and dies on Shane's pineapple knife; at the airport Rachel tells Shane she is happy after all.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Resolves the body in the cargo hold and the Shane–Rachel arc, closing the Maui week.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Armond is in the cargo hold and Shane doesn't yet know he killed him. Rachel has chosen the marriage. Tanya has abandoned Belinda and boarded a new life with Greg.",
+        "questions": [
+          "Will Tanya's whirlwind with Greg outlast the plane ride home?",
+          "Can Rachel actually live with the choice she just walked back to?",
+          "Will Belinda ever build the wellness life Tanya briefly promised?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Tanya McQuoid",
+          "line": "Grieving heiress who came to scatter her mother's ashes; leaves the resort paired with fellow guest Greg after ditching Belinda."
+        },
+        {
+          "name": "Greg",
+          "line": "Sport fisherman Tanya met poolside; her sudden new partner heading off the island with her."
+        },
+        {
+          "name": "Shane Patton",
+          "line": "Entitled honeymooner who fatally stabbed the hotel manager mid-prank; boarding the flight home not knowing he's a killer."
+        },
+        {
+          "name": "Rachel Patton",
+          "line": "Newlywed journalist who spent the trip realising she was a trophy wife and then talked herself back into the marriage."
+        },
+        {
+          "name": "Belinda Lindsey",
+          "line": "Spa manager left with a cash tip and no partner; the wellness business she had started imagining is quietly dead."
+        },
+        {
+          "name": "Quinn Mossbacher",
+          "line": "Youngest Mossbacher; walked out of the airport to stay in Hawaii and paddle with the local canoeists."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Marriage on the rocks",
+          "text": "Tanya arrives in Sicily with distant husband Greg and her assistant Portia; furious to see Portia, Greg orders Tanya to keep her out of sight.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up the Greg–Tanya rupture that everything in the season is quietly a consequence of.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Two couples, one villa",
+          "text": "Ethan and Harper vacation with his abrasive college friend Cameron and glossy wife Daphne; Harper immediately reads them as fake and Cameron as trouble.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Anchors the parallel arc about desire and infidelity that runs alongside the Tanya plot.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Lucia and the Di Grassos",
+          "text": "Middle-aged Dominic hires local escort Lucia; his earnest son Albie meets her separately and falls for her while grandfather Bert quietly leers.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces the three-generation Di Grasso thread and the con Albie is being softly walked into.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Greg leaves, Quentin arrives",
+          "text": "Greg abruptly flies home for 'work'; a tarot reader tells Tanya he loves someone else, and wealthy English expat Quentin folds her into his Palermo circle.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "This is the pivot: Greg out of frame is Greg setting the trap; Quentin arriving is the trap.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Cameron and Lucia",
+          "text": "Cameron secretly sleeps with Lucia on a boys' night; Ethan hides it until Harper forces the truth, and he attacks Cameron, reigniting both marriages.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The Spiller–Sullivan arc's whole payoff in one beat, kept compact because it resolves inside the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The photograph",
+          "text": "Tanya spots a photo of a young Quentin with a young Greg and realises the entire group was hired by her husband to kill her for the fortune.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The recognition moment that turns the whole season retroactively into a murder plot.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Yacht and beach",
+          "text": "Tanya shoots her way off Quentin's yacht but drowns escaping; on land, Lucia scams Albie's father out of €50,000 with a fake pimp and vanishes clean.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Delivers the body, the inheritance flowing to Greg, and the season's other big con in one closer.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Tanya is dead in the Ionian Sea, Greg has quietly inherited her fortune, and no one on the outside knows he arranged the hit.",
+        "questions": [
+          "Will anyone ever tie Greg to Tanya's death?",
+          "What does Greg do with a fortune this large and this untouched?",
+          "Do the fragments Portia holds ever add up to evidence?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Tanya McQuoid",
+          "line": "Dead; drowned trying to escape the yacht after killing the crew her husband hired to kill her."
+        },
+        {
+          "name": "Greg Hunt",
+          "line": "Tanya's widower and sole heir; the whole plot ran through him and no one has connected it back."
+        },
+        {
+          "name": "Portia",
+          "line": "Tanya's assistant, alive and rattled; senses something was very wrong at Quentin's but can't articulate what."
+        },
+        {
+          "name": "Harper Spiller",
+          "line": "Ethan's wife; the marriage survived Cameron and came back into passion after weeks of suspicion."
+        },
+        {
+          "name": "Ethan Spiller",
+          "line": "Wealthy tech founder; reconciled with Harper after nearly drowning Cameron in the surf."
+        },
+        {
+          "name": "Albie Di Grasso",
+          "line": "Earnest Stanford grad; wired Lucia €50,000 of his father's money believing he was saving her."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Rick hunts Jim",
+          "text": "Guests arrive at White Lotus Ko Samui; Rick brings young girlfriend Chelsea and immediately starts probing owner Jim Hollinger, who he believes killed his father.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Plants the revenge that will drive the season's climax and eventually kill three people.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Timothy's ruin arrives",
+          "text": "Wealthy Ratliff patriarch Timothy learns his business partner has flipped in a money-laundering case; prison is coming and every asset will be frozen.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Establishes the financial collapse the entire Ratliff arc reacts to.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Belinda spots Greg",
+          "text": "Belinda, visiting from White Lotus Maui, spots Tanya's widower Greg at the resort using a fake name — the man she now suspects had Tanya killed.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Reconnects the anthology across three seasons and lights the fuse on the Greg–Belinda leverage arc.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The stolen gun",
+          "text": "Timothy steals guard Gaitok's gun and repeatedly rehearses killing himself and his family to spare them the coming humiliation.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The gun and the fantasy set up both Gaitok's arc and the near-poisoning at the end.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The yacht night",
+          "text": "On a molly night on Greg's yacht, girlfriend Chloe pulls Ratliff sons Saxon and Lochlan into an incestuous threesome none of them will speak of.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The event that reshapes both brothers privately and gives Greg's world its hold on the family.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The hotel shootout",
+          "text": "Jim confronts Rick at the hotel and insults his mother; Rick shoots Jim dead, then learns Jim was his father. Chelsea dies in the shootout and Gaitok obediently kills Rick.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Delivers the season's body count and, crucially, Gaitok's decisive kill that reshapes him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Five million to leave",
+          "text": "Belinda takes $5M in hush money from Greg and leaves for a new life with her son; Timothy tells his family everything is about to change.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The two live threads walking off the island — Belinda's payday and the Ratliffs' impending collapse.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Belinda leaves Thailand rich on Greg's terms. Timothy has finally told his family the truth. Rick, Chelsea and Jim are dead in the villa that started it all.",
+        "questions": [
+          "Does Belinda finally build the wellness life Tanya once dangled?",
+          "How long can Greg keep buying his way out of Tanya's death?",
+          "What happens to the Ratliffs when Timothy's crimes catch up in earnest?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Belinda Lindsey",
+          "line": "Maui spa manager who took $5M from Greg and is finally leaving to build her own life with her son Zion."
+        },
+        {
+          "name": "Greg Hunt",
+          "line": "Tanya's widower, exposed to Belinda but quickly paid off; still evading investigators, still hiding in plain sight."
+        },
+        {
+          "name": "Timothy Ratliff",
+          "line": "Patriarch facing imminent arrest and total financial ruin; has just told his family everything on the last night."
+        },
+        {
+          "name": "Victoria Ratliff",
+          "line": "Matriarch who spent the trip cushioned by lorazepam; now walking into a life she has no idea how to live."
+        },
+        {
+          "name": "Gaitok",
+          "line": "Pacifist security guard who shot Rick on Sritala's order; promoted to her personal bodyguard as a reward."
+        },
+        {
+          "name": "Lochlan Ratliff",
+          "line": "Youngest Ratliff; survived Timothy's aborted poisoning by accidentally drinking the leftovers, revived in his father's arms."
+        }
+      ]
+    }
+  }
+}

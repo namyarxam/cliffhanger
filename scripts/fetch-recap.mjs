@@ -190,7 +190,7 @@ const cleanWiki = s =>
     .replace(/\s+/g, ' ')
     .trim();
 
-async function fetchWikipediaSummaries(showName, maxSeason) {
+async function fetchWikipediaSummaries(showName, maxSeason, verify = null) {
   // Longer-running shows split their episodes onto a dedicated list page
   // ("List of The Expanse episodes") and leave the main article with none, so
   // try both shapes. Disambiguated title first — "<Show> (TV series)" avoids
@@ -207,7 +207,23 @@ async function fetchWikipediaSummaries(showName, maxSeason) {
   // The Last of Us, House of the Dragon and Andor: their episode tables do
   // not live on any single page, so a combined-page-only search finds nothing
   // and silently falls back to marketing synopses.
+  // Year-qualified titles come FIRST when we know the year.
+  //
+  // Show titles are reused constantly, and Wikipedia disambiguates by year
+  // where TMDB disambiguates by id. "Dark Matter (TV series)" is the 2015 Syfy
+  // series; the 2024 Apple one is "Dark Matter (2024 TV series)". Without this
+  // the fetch resolved the correct show on TMDB — right title, right cast,
+  // right stills — and then grounded the entire recap in a different
+  // programme's plot.
+  const year = verify?.year ?? null;
   const candidates = [
+    ...(year
+      ? [
+          `${showName} (${year} TV series)`,
+          `List of ${showName} (${year} TV series) episodes`,
+          `${showName} (American TV series)`,
+        ]
+      : []),
     `List of ${showName} episodes`,
     `${showName} (TV series)`,
     showName,
@@ -223,6 +239,21 @@ async function fetchWikipediaSummaries(showName, maxSeason) {
     const json = await getJSON(url, { headers: { 'User-Agent': WIKI_UA } }, 'Wikipedia parse').catch(() => null);
     const wt = json?.parse?.wikitext;
     if (!wt || !/\{\{Episode list/.test(wt)) continue;
+
+    // Is this page actually about the show we resolved?
+    //
+    // A title match is not identity. This checks that the people TMDB says are
+    // in the show actually appear in the prose, which is the cheapest reliable
+    // way to catch a same-title mismatch — and the ONLY check that would have
+    // caught Dark Matter, whose wrong-show grounding passed every other gate
+    // with 100% coverage, 0 needs-verify and a perfectly well-formed spine.
+    if (verify?.names?.length) {
+      const hits = verify.names.filter(n => new RegExp(`\\b${n}\\b`, 'i').test(wt)).length;
+      if (hits < 2) {
+        console.log(`    · "${title}" mentions ${hits}/${verify.names.length} expected characters — wrong show, skipping`);
+        continue;
+      }
+    }
 
     // Season is derived from EpisodeNumber2 (the in-season number) RESETTING,
     // not from section headings.
@@ -348,7 +379,22 @@ async function build({ showName, slug, through: throughArg }) {
   }
   console.log(`  seasons: 1-${through} of ${detail.number_of_seasons}`);
 
-  const wiki = await fetchWikipediaSummaries(detail.name ?? showName, through);
+  // Identity check for the Wikipedia lookup: the leading characters TMDB
+  // credits, plus the première year. Surnames are used because prose refers to
+  // people by surname far more often than by full name.
+  // Read straight off the raw TMDB credits rather than the shaped `cast`
+  // array, which is not built until much later in this function.
+  const verifyNames = [...new Set(
+    (credits.cast ?? [])
+      .slice(0, 10)
+      .map(c => (c.roles?.[0]?.character ?? '').split(/[\/(]/)[0].trim().split(/\s+/).filter(w => w.length > 3).pop())
+      .filter(Boolean),
+  )].slice(0, 6);
+
+  const wiki = await fetchWikipediaSummaries(detail.name ?? showName, through, {
+    names: verifyNames,
+    year: (detail.first_air_date ?? '').slice(0, 4) || null,
+  });
 
   // Seasons 1..through only. This is the spoiler boundary and it is enforced
   // HERE, at fetch time — assets past the boundary are never downloaded, so no

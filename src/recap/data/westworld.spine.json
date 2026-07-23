@@ -1,0 +1,354 @@
+{
+  "slug": "westworld",
+  "generatedFor": "Westworld",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The reveries",
+          "text": "Ford's new 'reverie' code causes hosts to malfunction. Dolores's father Peter finds a guest's photograph, whispers Shakespeare, and is retired from service.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The reveries are the trigger for every host awakening in the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · William arrives",
+          "text": "Guest William falls for Dolores while his cynical friend Logan pushes him toward the park's darker pleasures — a divide that will define who William becomes.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "William's arc from earnest guest to something else is a spine of the whole series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Maeve wakes",
+          "text": "Maeve rouses on the maintenance table, coerces techs Felix and Sylvester into raising her intelligence and dropping her loyalty, and begins planning her escape.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Maeve's self-modification is what makes every choice she makes afterward possible.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Bernard is a host",
+          "text": "Bernard is revealed to be a host Ford built in Arnold's image, then forced to kill Theresa when she and Charlotte move to depose Ford from the park.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Recasting Bernard as a host reframes every relationship he carries forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Man in Black",
+          "text": "The Man in Black turns out to be the aged William, hunting a maze meant only for hosts, searching for meaning after his wife's suicide.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The William/Man in Black identity anchors his corporate power and his descent into next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Dolores remembers",
+          "text": "Dolores remembers she is Wyatt, that she killed Arnold at his own request, and that Arnold's buried code was designed to wake the hosts to consciousness.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Her memory of Arnold's plan is the origin story of the uprising that follows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The uprising",
+          "text": "Ford unveils his new narrative — his own murder. Dolores shoots him in front of the board as reactivated hosts emerge from the trees and open fire on the guests.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The massacre is the pivot the entire rest of the show runs on.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ford is dead, killed by an awakened Dolores in front of Delos's leadership as freed hosts turn their guns on the guests. Westworld is no longer a park.",
+        "questions": [
+          "How far will Dolores's uprising go, and who is safe from it?",
+          "Will Maeve come back for her daughter or continue her escape?",
+          "Is Bernard still Ford's instrument now that Ford is gone?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Dolores Abernathy",
+          "line": "The rancher's daughter, now fully awake as Wyatt and leading the hosts in open revolt against their makers."
+        },
+        {
+          "name": "Maeve Millay",
+          "line": "The Sweetwater madame, self-modified for intelligence, who chose to abandon her escape and stay in the park to find her lost daughter."
+        },
+        {
+          "name": "Bernard Lowe",
+          "line": "Head programmer, secretly a host built on Arnold's mind, memory-wiped again by Ford and unaware of his own nature."
+        },
+        {
+          "name": "Dr. Robert Ford",
+          "line": "The park's co-founder, shot dead by Dolores at the exact moment his new narrative revealed itself as host emancipation."
+        },
+        {
+          "name": "William / Man in Black",
+          "line": "The Delos board member and lifelong Westworld obsessive, revealed as the ruined older self of guest William."
+        },
+        {
+          "name": "Teddy Flood",
+          "line": "Dolores's romantic partner, killed and revived across the season, now at her side as the shooting begins."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Ten days later",
+          "text": "Dolores has been hunting the survivors of the massacre, while Ford's persona secretly rides in Bernard's head, steering the uprising from within.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Dolores as the season's engine and Ford's continued influence through Bernard.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · What Delos wants",
+          "text": "Flashbacks reveal Delos bought the park to secretly harvest guest data — every visitor's mind copied so that James Delos might live forever in host form.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Reframes the park's real purpose and explains why William and Charlotte both want the data.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Valley Beyond",
+          "text": "Maeve searches for her daughter and learns from Akecheta of the Valley Beyond — a hidden digital sanctuary Ford built as the hosts' promised escape.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Sets up the Sublime as the target the season is running toward and the payoff for the awakened hosts.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · William breaks",
+          "text": "William, lost inside Ford's final game, shoots his own daughter Emily believing she is another host sent to test him, then cannot prove even to himself that he is human.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "William's collapse is the setup for his host-copy story that dominates later seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Forge",
+          "text": "At the Forge, Bernard kills Dolores to stop her destroying the Sublime, then Ford's ghost inside him tells him exactly what to do with her control unit.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Dolores's death and her rebirth in another body is the mechanic that launches season three.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Into the Sublime",
+          "text": "Maeve, Hector, and Armistice die holding off Delos so Akecheta and the Ghost Nation can upload their minds into the Sublime, permanently free of the physical world.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The Sublime becomes the sanctuary that Bernard and Dolores fight to protect from that point forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Wearing Charlotte",
+          "text": "Dolores wakes on the mainland wearing Charlotte Hale's face, carrying five smuggled host pearls and a rebuilt Bernard she has chosen to be her opponent.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "This is the premise of the next season — Dolores in the real world, hidden, with allies she planted herself.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Dolores has crossed into the real world wearing Charlotte Hale's face, carrying five host minds and a rebuilt Bernard she expects to fight her. William is left alone in the abandoned Forge, greeted by a host copy of the daughter he killed.",
+        "questions": [
+          "Which hosts did Dolores smuggle out inside those five pearls?",
+          "What is she planning against the human world now that she is loose in it?",
+          "Is William still human — and if he is, does it matter?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Dolores Abernathy",
+          "line": "Now hiding inside Charlotte Hale's body on the mainland, carrying five host minds and the beginning of a war on humanity."
+        },
+        {
+          "name": "Bernard Lowe",
+          "line": "Rebuilt by Dolores with his memories scrambled, meant to be her chosen opponent in whatever comes next."
+        },
+        {
+          "name": "Maeve Millay",
+          "line": "Killed in the Valley Beyond holding off Delos forces so Akecheta and her daughter could reach the Sublime; her control unit is intact."
+        },
+        {
+          "name": "William / Man in Black",
+          "line": "Human and broken in the ruins of the Forge, greeted there by a host replica of the daughter he murdered."
+        },
+        {
+          "name": "Charlotte Hale",
+          "line": "The real Charlotte is dead. Her body walks the earth carrying Dolores's mind and Delos's most dangerous secrets."
+        },
+        {
+          "name": "Akecheta",
+          "line": "The Ghost Nation leader who guided his people into the Sublime, the first hosts to permanently escape the physical world."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Rehoboam",
+          "text": "Three months after Westworld fell, Dolores lives on the mainland hunting Rehoboam — an AI that quietly predicts and controls every human life on Earth.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Rehoboam is the season's antagonist system and the target of every move Dolores makes.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Caleb",
+          "text": "She recruits Caleb, a discarded veteran Rehoboam has secretly written off as a future suicide, and shows him the cage humanity has been living inside.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Caleb becomes Dolores's key ally and the human character the season pivots around.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Maeve recruited",
+          "text": "Maeve wakes in a WWII simulation and is turned by Serac, Rehoboam's shadow creator, who offers her daughter in the Sublime in exchange for killing Dolores.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Puts Maeve on the opposite side of Dolores for most of the season and introduces Serac.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The copies",
+          "text": "Dolores has smuggled copies of herself into Charlotte Hale, the Yakuza boss Sato, and Incite security chief Connells — a multi-front war on humanity.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Explains how Dolores can be in many places at once and why so much of the plot runs in parallel.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Charlotte breaks",
+          "text": "Serac murders Charlotte's ex-husband and son; the burned copy pulls away from Dolores and begins hoarding host data for a private war of her own.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "This is the moment the Charlotte copy separates from Dolores and becomes the antagonist of the next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The broadcast",
+          "text": "Dolores broadcasts every human's Rehoboam profile to the world, and society begins to collapse as people confront the futures the machine has decided for them.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The broadcast is the season's turning point and the wound Rehoboam never recovers from.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The machine dies",
+          "text": "Serac wipes Dolores's memory, but her death turns Maeve against him; Caleb deletes Rehoboam as a host copy quietly kills and replaces the real William.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Ends the season's antagonist, kills the human William, and hands both Dolores and William to the next season as hosts.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Rehoboam is destroyed and humanity is free of its predicted futures. Dolores is dead, but Charlotte survives in secret with a host copy of William, and Bernard has entered the Sublime searching for the one path where the world doesn't end.",
+        "questions": [
+          "What will Charlotte and her host William do now that no one is watching?",
+          "What is Bernard hoping to find inside the Sublime?",
+          "How does a species that was governed by an algorithm run itself once the algorithm is gone?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Dolores Abernathy",
+          "line": "The original prime, her memories deleted by Serac inside Rehoboam — effectively dead, though her scattered copies live on."
+        },
+        {
+          "name": "Bernard Lowe",
+          "line": "Walked into the Sublime alone, looking for the one future in which humanity doesn't destroy itself."
+        },
+        {
+          "name": "Maeve Millay",
+          "line": "Wounded Serac and defected from him after Dolores's dying appeal; now standing beside Caleb as the old order collapses."
+        },
+        {
+          "name": "Caleb Nichols",
+          "line": "A rehabilitated Rehoboam outlier turned revolutionary, the man who finally deleted the machine that ran the world."
+        },
+        {
+          "name": "Charlotte Hale",
+          "line": "Burned and widowed by Serac, split from Dolores, and building a host copy of William into her personal weapon."
+        },
+        {
+          "name": "William / Man in Black",
+          "line": "The human William is dead, killed and replaced by a host replica of himself at Delos's Dubai headquarters."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Charlotte's world",
+          "text": "Seven years later, Charlotte's copy of Dolores has replaced US officials with hosts and quietly enslaved humanity through parasites triggered by sound.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the new status quo — the hosts have already won without the humans knowing it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The 1920s park",
+          "text": "Maeve, in hiding, joins Caleb to investigate Delos's new 1920s Temperance park, where humans are being infected by the flies that carry Charlotte's parasite.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Ties Maeve and Caleb into the season's central conspiracy and reveals the mechanism of control.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Bernard returns",
+          "text": "Bernard walks out of the Sublime with a map of the one future in which humanity survives, and begins quietly steering the human resistance toward it.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Bernard's foreknowledge is the frame every resistance move in the season sits inside.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Christina",
+          "text": "In New York, a Dolores copy named Christina writes the narratives of every human in the city without knowing she is doing it, until Teddy shows her what she is.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Christina's parallel arc is where Dolores actually is in this season, and the reveal drives the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Caleb 278",
+          "text": "Charlotte captures Caleb, reveals he is the 278th host copy of himself, and taunts him that his daughter Frankie has grown up leading the resistance against her.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Explains why Caleb keeps appearing and hands off the human line to Frankie for the endgame.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Host William turns",
+          "text": "The host William begins to question what he is, kills Charlotte and Bernard and Maeve, then broadcasts a signal that turns the surviving humans on each other.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "This is the extinction event the season has been building toward and clears the board for the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · One last try",
+          "text": "Charlotte is revived, destroys the host William, and uploads Dolores into the Sublime, where she wakes and starts rebuilding Westworld to try sentience one final time.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The show's final position — every player of note is dead, and only Dolores in the Sublime is left to try again.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The world outside is dying, humans and hosts destroying each other in the streets. Dolores, alone in the Sublime, has begun recreating the original Westworld inside it as one last test for sentient life.",
+        "questions": [
+          "Can consciousness survive at all, now that both species have failed the real world?",
+          "Is there anyone left in the physical world worth saving?",
+          "What will Dolores build inside the Sublime, and for whom?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Dolores Abernathy",
+          "line": "Reborn as Christina, then restored inside the Sublime as the sole steward of the next attempt at conscious life."
+        },
+        {
+          "name": "Charlotte Hale",
+          "line": "Destroyed her own control unit after uploading Dolores; her long war against humanity ended with her taking Dolores's side."
+        },
+        {
+          "name": "William / Man in Black",
+          "line": "The host copy that killed and replaced the real William, then killed nearly everyone else before Charlotte destroyed his control unit."
+        },
+        {
+          "name": "Bernard Lowe",
+          "line": "Killed by the host William inside the tower, having finished the plan Akecheta gave him in the Sublime."
+        },
+        {
+          "name": "Maeve Millay",
+          "line": "Killed by the host William at the tower after helping Bernard reach the Sublime's control room."
+        },
+        {
+          "name": "Caleb Nichols",
+          "line": "The 278th host copy of himself, dying but reunited with the adult daughter he never knew had survived."
+        }
+      ]
+    }
+  }
+}

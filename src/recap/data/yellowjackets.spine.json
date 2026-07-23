@@ -1,0 +1,267 @@
+{
+  "slug": "yellowjackets",
+  "generatedFor": "Yellowjackets",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Plane goes down",
+          "text": "The Yellowjackets' plane crashes en route to Nationals, stranding survivors deep in the wilderness. Misty secretly destroys the emergency beacon.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Establishes the survival premise and Misty's first act of sabotage, which locks the entire series-long isolation into place.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Cabin and rifle",
+          "text": "The survivors find an abandoned cabin with a rifle and a dead occupant in the attic. Natalie and Travis emerge as the group's hunters.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Locks in the setting for everything that follows and the hunter/spiritual power structure the group will fight over for two more seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Shauna's secret",
+          "text": "Shauna confesses to Taissa that she is pregnant with Jeff, her best friend Jackie's boyfriend, whom she slept with the night before the crash.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Sets up both the pregnancy that drives S2's central storyline and the Jackie/Shauna rupture that ends S1.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Lottie's visions",
+          "text": "Off her schizophrenia medication, Lottie's visions grow stronger and she gathers followers, including Van and eventually Travis.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Introduces the wilderness mysticism that will drive every group decision in S2 and structure Lottie's adult cult in the present.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Doomcoming",
+          "text": "The team unknowingly eats hallucinogenic mushrooms at Doomcoming and hunts Travis; Lottie orders Shauna to slit his throat but Natalie stops her.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The first time the group crosses into ritual violence — the template for every wilderness sacrifice that follows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Jackie freezes",
+          "text": "Jackie confronts Shauna over Jeff and is banished to sleep outside; the first snow arrives and she freezes to death by morning.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Jackie's corpse becomes the object Shauna cannot let go of in S2, and the first meal the starving team is driven to eat.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Adult fallout",
+          "text": "In 2021, Shauna kills Adam after learning her husband Jeff was the blackmailer, and a masked group kidnaps a newly-sober Natalie.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Delivers the two present-day threads S2 opens on: the Adam cover-up and Natalie's captivity at Lottie's compound.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Jackie's corpse sits frozen at the cabin door as winter closes in. In 2021, Adam's body has been dumped, but a masked group has just kidnapped Natalie.",
+        "questions": [
+          "Who took Natalie, and what do they want from the survivors?",
+          "How will the starving group make it through winter without Jackie?",
+          "Can Shauna and her friends keep Adam's murder buried?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Shauna Sadecki",
+          "line": "Pregnant with Jeff's baby in the wilderness; in 2021, a suburban wife who has just killed her lover Adam and pulled her friends into the cover-up."
+        },
+        {
+          "name": "Taissa Turner",
+          "line": "Just won her state senate race, but her sleepwalking 'lady in the tree' self is building altars in her own basement without her knowledge."
+        },
+        {
+          "name": "Natalie Scatorccio",
+          "line": "The wilderness team's hunter alongside Travis; a newly-sober adult who has just been abducted by an unknown masked group."
+        },
+        {
+          "name": "Misty Quigley",
+          "line": "The team's ostracized medic who destroyed the beacon; as an adult, has just poisoned the fake reporter Jessica after the group agreed to pay her off."
+        },
+        {
+          "name": "Lottie Matthews",
+          "line": "Emerging as the wilderness team's spiritual leader after her medication ran out and her visions took hold; ordered the ritual hunt of Travis."
+        },
+        {
+          "name": "Travis Martinez",
+          "line": "A hunter alongside Natalie whom the team tried to sacrifice at Doomcoming; found dead in 2021 in a staged suicide the women suspect is murder."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Eating Jackie",
+          "text": "Two months into winter, a starving Shauna talks to Jackie's frozen corpse; the team ends up cooking and eating her body after a botched cremation.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The first act of cannibalism reframes what the group is capable of and licenses every hunt that follows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Javi returns",
+          "text": "Van and Taissa track Taissa's fugue-drawn symbols to a disoriented Javi, who has survived alone in the woods since Doomcoming.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Javi's return quietly sets up the sacrifice that ends the winter and breaks Travis for the rest of the series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Shauna's stillborn",
+          "text": "Shauna gives birth alone and the baby does not survive. Convinced the team ate him, she beats Lottie unconscious as the group looks on.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Shauna's grief and rage begin the shift in her from wife-and-mother to the person who will lead the team in S3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The card draw",
+          "text": "With starvation setting in, the team draws cards to pick a sacrifice; Natalie draws the Queen of Hearts but escapes into the woods.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Formalizes the ritualized hunt system that governs every later killing, including the S2 finale and Mari's death.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Javi drowns",
+          "text": "Chasing Natalie across the frozen lake, Javi falls through the ice and the team lets him drown, taking his death as the sacrifice they needed.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Confirms the group will let people die rather than break the hunt, and gives Travis the grief that shapes his adult death.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Cabin burns",
+          "text": "Lottie hands leadership to Natalie; that night the cabin is set on fire, leaving the survivors homeless as spring approaches.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Removes the physical anchor of the first two seasons and sets up the S3 arson trial that convicts Ben.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ritual at the compound",
+          "text": "In the present, the women meet at Lottie's compound; a botched ritual ends with Natalie taking a fentanyl injection meant for Lottie and dying in Misty's arms.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Kills off Natalie in the present timeline, reshaping the adult-Misty and adult-Shauna storylines that dominate S3.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The cabin is a smoking ruin as spring nears, leaving the team without shelter under Natalie's uneasy leadership. In the present, Natalie is dead, Lottie has been committed, and the Adam investigation has been buried by framing Kevyn.",
+        "questions": [
+          "Who set fire to the cabin?",
+          "Where is Coach Ben, and what will the team do to him if they find him?",
+          "What did Lottie mean when she said the wilderness is pleased and will reward them?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Shauna Sadecki",
+          "line": "Grieving her stillborn son in the wilderness after beating Lottie; in the present, being investigated for Adam's disappearance."
+        },
+        {
+          "name": "Natalie Scatorccio",
+          "line": "Just named leader of the wilderness team after Javi's death; killed as an adult by a fentanyl injection meant for Lottie."
+        },
+        {
+          "name": "Taissa Turner",
+          "line": "Now aware of her fugue self; separated from Simone and briefly reunited with old girlfriend Van, who has just told her she is terminally ill."
+        },
+        {
+          "name": "Misty Quigley",
+          "line": "Ostracized in the woods after pushing Crystal off a cliff; teamed in the present with Citizen Detective Walter and cradling a dying Natalie."
+        },
+        {
+          "name": "Lottie Matthews",
+          "line": "Ceded her spiritual leadership to Natalie after Shauna's beating; in the present, being committed to psychiatric care after a shot from Callie."
+        },
+        {
+          "name": "Ben Scott",
+          "line": "The team's one-legged coach, horrified by the cannibalism and increasingly at odds with the group; missing after the cabin fire and widely presumed the arsonist."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Spring under Natalie",
+          "text": "By late spring, Natalie's leadership has stabilized the team, but Ben has secretly survived alone in the woods, setting traps.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the season's status quo and the hidden Ben whose discovery drives the middle of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Shauna and Melissa",
+          "text": "Shauna's rift with Mari and the team deepens after her stillborn; she begins a secret affair with JV player Melissa after Melissa finds the baby's grave.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces the Shauna–Melissa bond that becomes the season's central adult-timeline mystery.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ben on trial",
+          "text": "The team captures Ben, tries him for burning the cabin, and finds him guilty; Melissa slashes his Achilles so he cannot run.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Formalizes the group's descent into judicial violence and forces Natalie into the choice that costs her the leadership.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Natalie kills Ben",
+          "text": "Unable to watch Ben suffer, Natalie mercy-kills him; the enraged team removes her as leader and installs Shauna in her place.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The power transfer that makes Shauna the wilderness antagonist for the rest of the season and rewrites the group's dynamic.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Scientists arrive",
+          "text": "Three adult scientists stumble on the camp; Lottie kills Edwin on sight and Shauna refuses to let Hannah and Kodiak leave.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Brings the outside world within reach for the first time since the crash and hands Natalie the phone that ends the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Adult Melissa found",
+          "text": "In the present, a cassette threat leads adult Shauna to Melissa, now married into Hannah's family; the confrontation ends with Melissa stabbing Van to death.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Resolves the season's adult mystery, kills off Van, and drives Taissa into her final act of ritual mourning.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The satellite phone",
+          "text": "Mari dies in a rigged hunt as cover for Natalie to reach a cliff with the scientists' satellite phone; a man's voice answers on the other end.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The season's central cliffhanger — the first two-way contact with the outside world since the crash.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "A man's voice answers Natalie's satellite call as Mari's body is butchered. In the present, Van is dead, Callie has confessed to killing Lottie and fled with Jeff, and Shauna sits alone in her empty house resolving to reclaim her power.",
+        "questions": [
+          "Who answered Natalie's call, and will they actually rescue the team?",
+          "Can Misty and Taissa reconcile with the leader Shauna has become?",
+          "Will Callie and Jeff ever come back, or is Shauna truly on her own?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Shauna Sadecki",
+          "line": "The wilderness team's brutal new leader; in the present, alone in her house after Jeff and Callie flee, resolving to claim back her power."
+        },
+        {
+          "name": "Natalie Scatorccio",
+          "line": "Ousted as leader after mercy-killing Ben, but has secretly reached the outside world on the scientists' satellite phone."
+        },
+        {
+          "name": "Taissa Turner",
+          "line": "Just buried Van and carved out her heart to eat, betting the wilderness will keep sparing lives around her the way it saved Van earlier this year."
+        },
+        {
+          "name": "Misty Quigley",
+          "line": "Still grieving Natalie and estranged from Walter; has just extracted a confession from Callie that Callie killed Lottie."
+        },
+        {
+          "name": "Callie Sadecki",
+          "line": "Shauna's teenage daughter, who killed Lottie in a moment of rage after Shauna threw her out and has now fled with Jeff, cutting Shauna off."
+        },
+        {
+          "name": "Melissa",
+          "line": "Shauna's teen wilderness lover; as an adult, living under a new name married to Hannah's daughter, and has just stabbed Van to death."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,521 @@
+{
+  "slug": "better-call-saul",
+  "generatedFor": "Better Call Saul",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Wrong car",
+          "text": "Jimmy tries to poach the Kettlemans with a staged accident; his hires hit the wrong car and pull him into Tuco Salamanca's orbit at gunpoint.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "First contact with the cartel world Jimmy will keep circling back into.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · In the game",
+          "text": "Nacho, watching Jimmy talk Tuco down, offers to steal the Kettlemans' embezzled cash and tells him to call when he's 'in the game'.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Plants the Jimmy–Nacho line that reroutes both their lives.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The right thing",
+          "text": "Jimmy tracks the Kettlemans hiding with the cash; with Mike he takes it back and forces Craig into a plea, choosing the right thing over the money.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Establishes the choice Jimmy will spend the rest of the season regretting.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Sandpiper",
+          "text": "A billboard stunt against HHM brings Jimmy elder clients, and at Sandpiper Crossing he finds a fraud too big to run alone — he brings it to Chuck.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Sandpiper becomes the payday and pressure point driving Jimmy for years.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Chuck's line",
+          "text": "Chuck breaks his EHS to phone Howard and cut Jimmy out of the case, admitting he never wanted Jimmy to be a lawyer at all.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The betrayal that sets the McGill feud engine for the whole series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Never again",
+          "text": "A week of Cicero cons with Marco ends when Marco dies mid-con; Jimmy skips his Davis & Main offer and tells Mike he won't do the right thing again.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The verbal commitment that turns Jimmy toward Saul.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Jimmy has walked away from his one shot at legitimacy and told Mike he's done doing the right thing. Chuck, whose contempt he now sees clearly, is still the name partner in a firm that will keep freezing him out.",
+        "questions": [
+          "Does Jimmy actually turn down Davis & Main, or come back for it?",
+          "How does Jimmy square his new outlook with Kim, who's still betting on HHM?",
+          "Now that Jimmy knows Chuck sabotaged him, what does the McGill feud become?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jimmy McGill",
+          "line": "Public defender turned elder-law lawyer, just walked away from a Santa Fe job offer and stopped pretending to be a good man."
+        },
+        {
+          "name": "Chuck McGill",
+          "line": "HHM name partner, mostly housebound with EHS, and quietly the reason Jimmy's legal career keeps stalling."
+        },
+        {
+          "name": "Kim Wexler",
+          "line": "HHM associate who wouldn't leave for Jimmy's partnership pitch, presently punished in the document review pit."
+        },
+        {
+          "name": "Mike Ehrmantraut",
+          "line": "Courthouse parking attendant and ex-Philly cop, now taking small bodyguard jobs on the edge of the cartel world."
+        },
+        {
+          "name": "Howard Hamlin",
+          "line": "HHM managing partner, publicly wearing Chuck's freeze-out of Jimmy as if it were his own decision."
+        },
+        {
+          "name": "Nacho Varga",
+          "line": "Mid-level Salamanca lieutenant who's clocked Jimmy as a criminal he can call on when needed."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Bad fit",
+          "text": "Jimmy joins Davis & Main, hates the suit, and airs an unapproved TV ad that puts Kim in the line of fire back at HHM.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Sets up the mutual sabotage-by-Slippin'-Jimmy that will detonate both their firm positions.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Kim's Mesa Verde",
+          "text": "Kim lands Mesa Verde on her own but Howard keeps her in document review; she cons a mark with Jimmy and starts imagining a life outside HHM.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Kim's first taste of leaving; the client that will define her career and Jimmy's next move.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Wexler-McGill",
+          "text": "Both walk: Jimmy engineers his own firing to keep his signing bonus, Kim leaves with Mesa Verde, and they share a converted dentists' office.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Establishes the shared practice and the entangled finances that drive the season's crime.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Doctored pages",
+          "text": "Chuck sinks Kim's Mesa Verde pitch with faint praise; Jimmy retaliates by swapping page numbers in Chuck's filing so the bank runs back to Kim.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The felony at the center of the season — the one Chuck will spend everything to prove.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Working for Hector",
+          "text": "Mike goads Tuco into a beating that jails him, then takes $50,000 from Hector Salamanca to lie that the gun was his — his first paid job for the family.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Mike is now on Hector's payroll and inside the Salamancas' reach, setting up the truck job that follows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Don't",
+          "text": "Mike ambushes a Salamanca truck for $250,000; when he lines up a rifle shot on Hector, a car horn and a note reading 'Don't' stop him cold.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Introduces the invisible hand — the season-defining question Mike will chase into next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The tape",
+          "text": "Chuck stages a fall at the copy store to lure Jimmy into confessing to the tampering — and secretly records every word.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The evidence Chuck will weaponize; the trap Jimmy is walking into blind.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Chuck has Jimmy on tape admitting to a felony he thinks was a private moment of comfort. Mike, aiming at Hector to end the Salamanca problem, has just been silently overruled by someone else in the game.",
+        "questions": [
+          "How does Chuck plan to use a confession Jimmy doesn't know exists?",
+          "Who is watching Mike, and why do they want Hector alive?",
+          "Can Kim and Jimmy's shared practice — built on the Mesa Verde swap — survive what Chuck knows?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jimmy McGill",
+          "line": "Half of Wexler-McGill, out of Davis & Main, just confessed on tape to a felony he doesn't know was recorded."
+        },
+        {
+          "name": "Kim Wexler",
+          "line": "Solo attorney for Mesa Verde and Jimmy's practice partner, unaware the 'correct' paperwork she resubmitted was Jimmy's forgery."
+        },
+        {
+          "name": "Chuck McGill",
+          "line": "Mostly homebound but working outdoors enough to entrap Jimmy; holds the taped confession and plans to use it."
+        },
+        {
+          "name": "Howard Hamlin",
+          "line": "HHM's public face, just lost Kim and Mesa Verde, unaware Jimmy is at the root of it."
+        },
+        {
+          "name": "Mike Ehrmantraut",
+          "line": "Salamanca-adjacent problem-solver, stole $250,000 from Hector's truck, and just met an unseen adversary who spared his life."
+        },
+        {
+          "name": "Nacho Varga",
+          "line": "Split the truck money with Mike, dangerously close to Hector, still hiding side deals from the family."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Los Pollos",
+          "text": "Mike tails his mystery surveillance to Los Pollos Hermanos; manager Gus Fring meets him with a deal — don't kill Hector, help disrupt him.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces Gus and locks Mike into his orbit, the pivot that reshapes everyone's storyline going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The trap",
+          "text": "Chuck plays Jimmy's confession for Howard and a hired PI, then baits Jimmy into breaking in to destroy the tape while witnesses watch.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The move that turns the McGill feud into an official proceeding.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Chicanery",
+          "text": "At Jimmy's bar hearing, Kim plants Chuck's phone battery on him; Chuck's rant on the stand exposes his EHS as psychological and finishes his career.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The public destruction of Chuck — the wound that drives him into his last months.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Saul is born",
+          "text": "Jimmy's one-year law suspension births 'Saul Goodman' hustling TV airtime; Kim, covering everything alone, burns out and totals her car.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The alias appears for the first time as a business, and Kim's collapse sets up her retreat next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The pill swap",
+          "text": "Nacho, sick of Hector's threats against his father, swaps Hector's nitro for placebos; Hector strokes at a meeting with Gus, and Gus lets him live.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Removes Hector as a functioning boss and hands Gus a permanent hook into Nacho.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Chuck alone",
+          "text": "Chuck is forced out of HHM and turns his EHS on his own house; Jimmy comes to make peace, and Chuck refuses him.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The last brotherly conversation, and the moment Jimmy's guilt is locked in.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Lantern",
+          "text": "Jimmy sabotages his own Sandpiper payday to rehabilitate Irene. That night Chuck knocks over a lantern and burns his house down with himself inside.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The season's twin acts of self-destruction — the fire is the psychic center of everything that follows.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Chuck has just killed himself, and only Jimmy will understand his own share of the blame. Gus now quietly owns Nacho, and a bedridden Hector has been left alive for a reason nobody outside Gus's head knows.",
+        "questions": [
+          "How does Jimmy carry — or refuse to carry — the guilt of Chuck's death?",
+          "What is Gus building with the pieces of Hector's operation?",
+          "With Kim recovering and Jimmy suspended, what is left of their practice together?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jimmy McGill",
+          "line": "Suspended for a year, hustling TV airtime as 'Saul Goodman', doesn't yet know Chuck is dead."
+        },
+        {
+          "name": "Kim Wexler",
+          "line": "Recovering from a serious car crash caused by overwork, still Mesa Verde's outside counsel."
+        },
+        {
+          "name": "Howard Hamlin",
+          "line": "The last McGill left at HHM, having just paid Chuck the first installment of his buyout."
+        },
+        {
+          "name": "Mike Ehrmantraut",
+          "line": "In an uneasy alliance with Gus Fring, taking money to hurt Hector without killing him."
+        },
+        {
+          "name": "Gus Fring",
+          "line": "The 'man behind the note', running his empire from behind Los Pollos and controlling Nacho through the pill swap he witnessed."
+        },
+        {
+          "name": "Nacho Varga",
+          "line": "Trapped by Gus's knowledge, still working the Salamanca street operation for a Hector who cannot speak or move."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Eerily fine",
+          "text": "Chuck's death is ruled an accident; Jimmy lets Howard take the blame and comes back from the funeral eerily fine, while Kim rages at Howard on his behalf.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the lie at the center of Jimmy and Kim's marriage-to-be — she's fighting Chuck's ghost blind.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Hector's cage",
+          "text": "Gus quietly nurses Hector through his stroke, then dismisses the doctor mid-recovery, trapping Hector's mind inside a body that cannot speak.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The choice that keeps Hector alive as a symbol of Gus's revenge, feeding every Salamanca move to come.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Gus owns Nacho",
+          "text": "Nacho becomes Gus's mole: after Arturo is killed and Nacho is shot in a staged attack, Gus tells him he knows about the pill swap and now owns him.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Nacho's position for the rest of the series — the inside man who cannot leave.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Schweikart",
+          "text": "Kim joins Schweikart & Cokely so she can keep Mesa Verde and take pro bono defense work; over months she thrives, and she and Jimmy quietly drift.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Kim's career finds its shape while Jimmy's leaves the room — the gap that lets Saul be born unopposed.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The lab",
+          "text": "Mike takes a Madrigal security cover and, under Gus, oversees German engineer Werner Ziegler secretly excavating the underground meth lab.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The lab that will drive the cartel plot into next season begins to exist.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Lalo arrives, Werner dies",
+          "text": "Werner slips away to see his wife; Lalo Salamanca — Hector's charming nephew, freshly arrived — tricks lab details out of him, and Mike is ordered to shoot Werner.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Introduces the next season's antagonist and the wound that reshapes Mike's loyalty to Gus.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Saul Goodman, s'all good",
+          "text": "Jimmy fakes remorse for Chuck to win reinstatement, then tells Kim he will practice as 'Saul Goodman' — an announcement that stops her cold.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The moment the alias becomes the man; the shock Kim will still be metabolizing next season.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Jimmy has legally become 'Saul Goodman', and Kim just realized the man she loves has replaced himself with an alias. Lalo Salamanca has arrived in Albuquerque already suspicious of Werner's death and everything around Gus's operation.",
+        "questions": [
+          "How much of Jimmy is left inside Saul Goodman?",
+          "What will Lalo see when he starts pulling on the threads of Gus's operation?",
+          "Can Kim keep working alongside a man who no longer wants his own name?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jimmy McGill",
+          "line": "Reinstated but electing to do business as 'Saul Goodman'; refuses to grieve Chuck or answer for what he did to him."
+        },
+        {
+          "name": "Kim Wexler",
+          "line": "Schweikart & Cokely partner running Mesa Verde and building a pro bono defense practice, blindsided by Jimmy's Saul announcement."
+        },
+        {
+          "name": "Mike Ehrmantraut",
+          "line": "Gus's field lieutenant on the superlab, just executed Werner Ziegler on Gus's orders."
+        },
+        {
+          "name": "Gus Fring",
+          "line": "Quietly building the superlab, using Nacho as his eyes inside a Salamanca crew now run by Lalo."
+        },
+        {
+          "name": "Lalo Salamanca",
+          "line": "Hector's smart, curious nephew, freshly running the family in Albuquerque and already sniffing at Werner's death."
+        },
+        {
+          "name": "Nacho Varga",
+          "line": "Senior in the Salamanca org and Gus's mole, now sitting under Lalo, who watches everything."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Lalo's lawyer",
+          "text": "Jimmy hangs the Saul Goodman shingle; Nacho, forced by Gus, delivers Saul to Lalo Salamanca as a lawyer the family can use.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The introduction that pulls Saul from petty grift into cartel-scale exposure.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The Domingo play",
+          "text": "As Saul, Jimmy engineers a plea that flips Domingo into a DEA informant naming Gus's dead drops — Lalo's move, which Gus quietly permits to protect Nacho.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The first move in the Lalo vs Gus war and the first sign Gus knows Lalo is dangerous.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The Acker con",
+          "text": "Kim rejects Mesa Verde's plan to bulldoze Everett Acker's land; she and Jimmy team up as Saul to extort Kevin Wachtell into a settlement.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Kim discovers she likes running cons with Jimmy — the psychological turn behind her Howard proposal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The wedding",
+          "text": "Rattled and thrilled by the con, Kim proposes marriage; she and Jimmy wed for spousal privilege as much as anything.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Legally binds them and cements the shared-crime path Kim is now on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Bagman",
+          "text": "Lalo is jailed for the Fred killing; Saul carries $7M cash across the desert to bail him out, is ambushed, and only survives because Mike is sent to shoot the ambushers.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The trauma that changes Jimmy for good and puts Kim on notice about what Saul work really is.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Kim faces Lalo",
+          "text": "Lalo comes to Kim's apartment to test their story; Kim faces him down. Convinced enough to leave, Lalo drives for Mexico while Gus arranges a hit on his Chihuahua estate.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Kim's decisive moment against Lalo, and the setup for the hit that appears to end him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The open gate",
+          "text": "Nacho opens Lalo's back gate and flees; Lalo kills every attacker but one and forces him to report Lalo dead. Kim tells Jimmy she wants to destroy Howard.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The season's two live wires for next year — a vengeful Lalo the world thinks is gone, and Kim's Howard plan.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Lalo is alive and reported dead — free to plan a return against Gus. Kim has quit her firm and pitched a con to destroy Howard Hamlin's reputation that Jimmy is not sure he wants to run.",
+        "questions": [
+          "When Lalo reappears, who does he come for first?",
+          "Can Nacho survive the fallout of Lalo's 'death'?",
+          "How far will Kim go against Howard, and what will it cost them?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jimmy 'Saul Goodman' McGill",
+          "line": "Full-time criminal lawyer, married to Kim, just survived the desert as Lalo's bail bagman."
+        },
+        {
+          "name": "Kim Wexler",
+          "line": "Quit Schweikart & Cokely for a pro bono public-defender load; the one who proposed destroying Howard."
+        },
+        {
+          "name": "Mike Ehrmantraut",
+          "line": "Gus's most senior field lieutenant, saved Jimmy in the desert on Gus's orders."
+        },
+        {
+          "name": "Gus Fring",
+          "line": "Running Salamanca smuggling routes on paper for the cartel and believes Lalo is dead."
+        },
+        {
+          "name": "Lalo Salamanca",
+          "line": "Reported dead but hidden and alive, certain Gus tried to kill him and hunting for proof."
+        },
+        {
+          "name": "Nacho Varga",
+          "line": "Opened Lalo's gate for the assassins and fled, now hunted by the Salamancas."
+        }
+      ]
+    },
+    "6": {
+      "beats": [
+        {
+          "label": "S6 · Nacho's exit",
+          "text": "Nacho, trapped between Gus and the Salamancas, surrenders in exchange for his father's safety and shoots himself in front of Hector to protect them both.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Closes Nacho's arc and removes Gus's inside man, forcing him into the open against Lalo.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · The Howard con",
+          "text": "Jimmy and Kim run their long con on Howard: fake cocaine, a drugged photo shoot, and an actor impersonating the Sandpiper mediator to force a low settlement.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The season's moral engine — the cruelty that Kim will finally have to face herself over.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Lalo in Germany",
+          "text": "Lalo pieces together Gus's superlab from Werner's widow and crew in Germany, then quietly stakes out the laundry above it.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The return of the season's antagonist with the proof he needs against Gus.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Howard dies",
+          "text": "Lalo baits Gus into pulling security off Jimmy and Kim; Howard walks in on their argument and Lalo shoots him dead in their apartment.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The catastrophe that ends Kim's tolerance of her own choices.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Lalo dies",
+          "text": "Gus lures Lalo into the unfinished lab and kills him with a hidden gun; Mike buries Lalo and Howard together under the lab floor.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Closes the cartel war and hides Howard's death under the lab that will define the world beyond this show.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Kim leaves",
+          "text": "Kim writes an affidavit for Cheryl Hamlin, gives up her law license, and leaves Jimmy — who dives fully into being Saul Goodman.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The break that produces the Saul of the Cadillac and the mansion.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Gene falls",
+          "text": "Years later, 'Gene' in Omaha is unmasked by Marion via her Life Alert; extradited, Saul discards a plea to bring Kim to court and confesses, including his role in Chuck's death.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The final choice — Jimmy reclaims his name and pays the price on purpose.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Jimmy is serving 86 years and has reclaimed both his name and the blame for Chuck. Kim, having confessed her own role, walks free but ruined. The last image is the two of them sharing a cigarette through the prison fence.",
+        "questions": [
+          "What does a life outside the law look like for Kim now?",
+          "Does Jimmy find any peace as the man Chuck once told him he could be?",
+          "Who is left to hold the world Gus built once the story ends?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jimmy McGill",
+          "line": "Inmate serving 86 years, has abandoned 'Saul' and admitted his role in Chuck's death and Walt's empire."
+        },
+        {
+          "name": "Kim Wexler",
+          "line": "Living quietly in Florida, has told Cheryl Hamlin the truth and given up the law."
+        },
+        {
+          "name": "Mike Ehrmantraut",
+          "line": "Gus's chief enforcer, cleaned up Lalo, Howard, and Nacho's deaths in ways that hold up."
+        },
+        {
+          "name": "Gus Fring",
+          "line": "The sole remaining major player in New Mexico now that Lalo is dead, with the superlab intact and operational."
+        },
+        {
+          "name": "Howard Hamlin",
+          "line": "Murdered by Lalo at Jimmy and Kim's apartment, publicly remembered as an addict who killed himself."
+        },
+        {
+          "name": "Marion",
+          "line": "Jeff's elderly mother in Omaha, the one who saw through 'Gene' and turned him in."
+        }
+      ]
+    }
+  }
+}
