@@ -191,6 +191,25 @@ const cleanWiki = s =>
     .replace(/\s+/g, ' ')
     .trim();
 
+// Rendered-HTML equivalent of cleanWiki: strip reference markers and all tags,
+// then decode the entities Wikipedia's HTML uses. Reference superscripts go
+// first so their bracketed numbers do not survive as "[14]" in the prose.
+const cleanHtml = s =>
+  s
+    .replace(/<sup[^>]*>[\s\S]*?<\/sup>/g, '')
+    .replace(/<style[^>]*>[\s\S]*?<\/style>/g, '')
+    .replace(/<[^>]+>/g, '')
+    .replace(/&#160;|&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&quot;/g, '"')
+    .replace(/&#0?39;|&apos;/g, "'")
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
+    .replace(/\[\d+\]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+
 /**
  * Wikipedia's canonical title for a show, resolved by search rather than
  * guessed from the name we hold.
@@ -275,17 +294,36 @@ async function fetchWikipediaSummaries(showName, maxSeason, verify = null) {
       b,
       // Per-season articles, merged. Requested regardless of which season the
       // caller asked for, then hard-filtered downstream like every other source.
+      // Three real-world spellings: bare ("Invincible season 1"), parenthesised
+      // ("The Handmaid's Tale (season 1)"), and British ("Downton Abbey
+      // (series 1)"). Each is a different article for a different set of shows,
+      // so all three are tried; the combined list above usually wins first and
+      // short-circuits them.
       ...Array.from({ length: maxSeason }, (_, i) => `${b} season ${i + 1}`),
+      ...Array.from({ length: maxSeason }, (_, i) => `${b} (season ${i + 1})`),
+      ...Array.from({ length: maxSeason }, (_, i) => `${b} (series ${i + 1})`),
     ]),
   ];
 
   const merged = new Map();
 
   for (const title of candidates) {
-    const url = `https://en.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(title)}&prop=wikitext&format=json&formatversion=2&redirects=1`;
+    // RENDERED HTML, not raw wikitext.
+    //
+    // The wikitext of an episode table has no single shape: episodes may be
+    // separate {{Episode list/sublist}} calls (Invincible), one transcluded
+    // block (Lost), multi-part entries with EpisodeNumber2_1/_2 (Lost's
+    // pilot), or {{Episode table}} rows. A regex tuned to one silently returns
+    // nothing on the others, which read downstream as "0% coverage" and got
+    // Lost, 24, The Handmaid's Tale and Downton Abbey rejected despite full
+    // summaries. All of those render to ONE consistent HTML structure:
+    // <tr class="vevent …"> carrying the episode numbers, then
+    // <td class="description"> carrying the summary. Parsing the rendered
+    // output normalises every layout to that structure.
+    const url = `https://en.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(title)}&prop=text&format=json&formatversion=2&redirects=1`;
     const json = await getJSON(url, { headers: { 'User-Agent': WIKI_UA } }, 'Wikipedia parse').catch(() => null);
-    const wt = json?.parse?.wikitext;
-    if (!wt || !/\{\{Episode list/.test(wt)) continue;
+    const html = json?.parse?.text;
+    if (!html || !/class="description"/.test(html)) continue;
 
     // Is this page actually about the show we resolved?
     //
@@ -294,48 +332,61 @@ async function fetchWikipediaSummaries(showName, maxSeason, verify = null) {
     // way to catch a same-title mismatch — and the ONLY check that would have
     // caught Dark Matter, whose wrong-show grounding passed every other gate
     // with 100% coverage, 0 needs-verify and a perfectly well-formed spine.
-    if (verify?.names?.length) {
-      const hits = verify.names.filter(n => new RegExp(`\\b${n}\\b`, 'i').test(wt)).length;
-      if (hits < 2) {
-        console.log(`    · "${title}" mentions ${hits}/${verify.names.length} expected characters — wrong show, skipping`);
+    // Run against the visible text, which is what the summaries are made of.
+    const plain = cleanHtml(html);
+    if (verify?.characters?.length) {
+      const esc = t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const present = verify.characters.filter(toks =>
+        toks.some(t => new RegExp(`\\b${esc(t)}\\b`, 'i').test(plain)),
+      ).length;
+      if (present < 2) {
+        console.log(`    · "${title}" mentions ${present}/${verify.characters.length} expected characters — wrong show, skipping`);
         continue;
       }
     }
 
-    // Season is derived from EpisodeNumber2 (the in-season number) RESETTING,
-    // not from section headings.
-    //
-    // Headings are unreliable: The Expanse's list page emits "Season 1..6" for
-    // the episodes and then a second "Season 1..3" run for a later section, so
-    // a heading-based scan silently reassigns episodes to the wrong season. In
-    // a recap, mislabelling a season is a spoiler bug. Episode numbering is
-    // structural and resets exactly once per season, which makes it a far
-    // sturdier signal.
-    // Which season this page describes, when the page IS a single season.
-    // A per-season article restarts episode numbering at 1 with no way to tell
-    // from the numbering alone which season it belongs to, so it is taken from
-    // the title. Combined pages fall back to the resetting-counter logic.
-    const titleSeason = title.match(/ season (\d+)$/i);
+    // Season comes from the title for a per-season/British-series article,
+    // whose episode numbering restarts at 1 with no way to tell which season it
+    // is from the numbers alone. Combined list pages (pageSeason null) fall back
+    // to the resetting-counter logic below — the in-season number dropping is
+    // the season boundary, which is sturdier than section headings (The
+    // Expanse's list page repeats "Season 1..6" then "Season 1..3").
+    const titleSeason = title.match(/[ (](?:season|series)\s+(\d+)\)?$/i);
     const pageSeason = titleSeason ? Number(titleSeason[1]) : null;
 
+    // Walk episode header rows and description cells in document order. A header
+    // row (a vevent row that carries the title cell) sets the current in-season
+    // number; the next description cell is that episode's summary. Empty vevent
+    // spacer rows carry no title cell and are ignored, so they cannot desync
+    // the pairing.
     const out = new Map();
     let season = pageSeason ?? 1;
     let prevEp = 0;
-    for (const m of wt.matchAll(/\{\{Episode list[\s\S]*?\n\}\}/g)) {
-      const num = m[0].match(/\|\s*EpisodeNumber2\s*=\s*(\d+)/);
-      const sum = m[0].match(/ShortSummary\s*=\s*([\s\S]*?)(?=\n\s*\||\n\}\})/);
-      if (!num) continue;
-      const ep = Number(num[1]);
-      // On a per-season page every episode belongs to that season, so the
-      // reset heuristic must not fire — a page covering S3 would otherwise
-      // relabel its own episodes as S4 partway through.
-      if (pageSeason === null && ep <= prevEp) season += 1;
-      prevEp = ep;
-      // The gate. Anything past the boundary never enters the dataset.
-      if (season > maxSeason) continue;
-      if (!sum) continue;
-      const text = cleanWiki(sum[1]);
-      if (text.length > 80) out.set(`${season}x${ep}`, text);
+    let curEp = null;
+    const tokenRe =
+      /<tr class="vevent[^"]*"[^>]*>([\s\S]*?)<\/tr>|<td class="description"[^>]*>([\s\S]*?)<\/td>/g;
+    for (const m of html.matchAll(tokenRe)) {
+      if (m[1] !== undefined) {
+        // A header row: take the in-season episode number. The leading numeric
+        // cells before the title are [overall] or [overall, in-season]; the
+        // last of them is the in-season number that matches TMDB.
+        if (!/class="summary"/.test(m[1])) continue;
+        const lead = m[1].split(/<td class="summary"/)[0];
+        const nums = [...lead.matchAll(/<t[hd][^>]*>\s*(\d+)\s*<\/t[hd]>/g)].map(x => Number(x[1]));
+        curEp = nums.length ? nums[nums.length - 1] : null;
+      } else if (m[2] !== undefined && curEp != null) {
+        // On a per-season page every episode belongs to that season, so the
+        // reset heuristic must not fire — a page covering S3 would otherwise
+        // relabel its own episodes as S4 partway through.
+        if (pageSeason === null && curEp <= prevEp) season += 1;
+        prevEp = curEp;
+        const ep = curEp;
+        curEp = null;
+        // The gate. Anything past the boundary never enters the dataset.
+        if (season > maxSeason) continue;
+        const text = cleanHtml(m[2]);
+        if (text.length > 80) out.set(`${season}x${ep}`, text);
+      }
     }
 
     if (out.size > 0) {
@@ -435,17 +486,25 @@ async function build({ showName, slug, through: throughArg }) {
   // Identity check for the Wikipedia lookup: the leading characters TMDB
   // credits, plus the première year. Surnames are used because prose refers to
   // people by surname far more often than by full name.
-  // Read straight off the raw TMDB credits rather than the shaped `cast`
-  // array, which is not built until much later in this function.
-  const verifyNames = [...new Set(
-    (credits.cast ?? [])
-      .slice(0, 10)
-      .map(c => (c.roles?.[0]?.character ?? '').split(/[\/(]/)[0].trim().split(/\s+/).filter(w => w.length > 3).pop())
-      .filter(Boolean),
-  )].slice(0, 6);
+  // One token-set per top character, for the wrong-show check. Keeping BOTH
+  // the given and family name (not just the surname) matters because episode
+  // summaries name people however the show does: The Handmaid's Tale's prose is
+  // all "June" and "Offred" and almost never "Osborne", so a surname-only check
+  // saw zero of its characters and rejected a page with 66 real summaries. A
+  // character counts as present if ANY of its name tokens appears.
+  const verifyCharacters = (credits.cast ?? [])
+    .slice(0, 12)
+    .map(c =>
+      (c.roles?.[0]?.character ?? '')
+        .split(/[\/(]/)[0]
+        .split(/\s+/)
+        .filter(w => w.length > 3),
+    )
+    .filter(toks => toks.length)
+    .slice(0, 8);
 
   const wiki = await fetchWikipediaSummaries(detail.name ?? showName, through, {
-    names: verifyNames,
+    characters: verifyCharacters,
     year: (detail.first_air_date ?? '').slice(0, 4) || null,
   });
 
