@@ -64,28 +64,24 @@
       },
       "characters": [
         {
-          "name": "Seong Gi-hun",
-          "line": "Winner of the games, refusing to touch the prize money out of guilt and hunting the Front Man instead of flying to his daughter."
+          "name": "Sang-woo",
+          "line": "Gi-hun's childhood friend, a disgraced investment banker on the run for embezzlement who becomes ruthless in the games, betrays Ali, murders Sae-byeok, and takes his own life in the final round."
         },
         {
-          "name": "Hwang In-ho (Front Man)",
-          "line": "The masked overseer of the games, secretly a former 2015 winner and Jun-ho's older brother."
+          "name": "Sae-byeok",
+          "line": "A North Korean defector and pickpocket playing to buy her mother out of the North and rescue her younger brother, killed by Sang-woo on the final night."
         },
         {
-          "name": "Hwang Jun-ho",
-          "line": "Detective who infiltrated the island as a guard; shot by In-ho and fallen into the sea, fate unknown."
+          "name": "Ali",
+          "line": "A Pakistani migrant worker owed unpaid wages who befriends Gi-hun's group, conned out of his marbles by Sang-woo and eliminated."
         },
         {
-          "name": "The Recruiter (Salesman)",
-          "line": "The suited stranger who plays ddakji with debtors on subway platforms — the only visible link between the games and the outside world."
+          "name": "Jun-ho",
+          "line": "A detective who infiltrates the island disguised as a pink guard searching for his missing brother, only to discover the Front Man is that brother In-ho, who shoots him off a cliff into the sea."
         },
         {
-          "name": "Oh Il-nam",
-          "line": "Elderly Player 001, revealed as the games' founder and a bored billionaire; dies at home after his final wager with Gi-hun."
-        },
-        {
-          "name": "Kang Cheol",
-          "line": "Sae-byeok's little brother, taken in by Sang-woo's grieving mother and supported quietly by Gi-hun's untouched prize money."
+          "name": "The Recruiter",
+          "line": "The sharp-suited salesman who lures debtors into the games via ddakji in subway stations, spotted by Gi-hun again a year after his win."
         }
       ]
     },
@@ -151,30 +147,27 @@
       },
       "characters": [
         {
-          "name": "Seong Gi-hun",
-          "line": "Back inside the arena as a player; his uprising crushed, his oldest friend just executed in front of him, and the Front Man's gun still on him."
-        },
-        {
-          "name": "Hwang In-ho (Front Man)",
-          "line": "Entered the games alongside Gi-hun as Player 001 to control him from within, then re-donned the mask to put down the rebellion himself."
-        },
-        {
-          "name": "Hwang Jun-ho",
-          "line": "Alive and closer to the island than ever, leading a mercenary boat crew — and still trusting the captain feeding his position back to his brother."
-        },
-        {
           "name": "Captain Park",
-          "line": "Jun-ho's rescuer and boatman, secretly the Front Man's man on the water; already sabotaging the search and killing to keep the island hidden."
+          "line": "The boat captain Jun-ho hires to hunt the island, secretly loyal to the Front Man and sabotaging the search from within."
         },
         {
           "name": "Kang No-eul",
-          "line": "A pink-jumpsuit guard and North Korean defector; quietly disrupting the guards' organ-trade racket while chasing the money to smuggle her daughter out."
+          "line": "A North Korean defector who takes a job as a pink guard to earn her daughter's rescue, then begins mercy-killing wounded players to disrupt the guards' organ-harvesting side racket."
         },
         {
-          "name": "Cho Hyun-ju",
-          "line": "Player 120, a trans former special-forces soldier; a surviving ally of Gi-hun's who anchored the six-legged game and now stands with him inside the dorm."
+          "name": "The Recruiter",
+          "line": "The salesman Gi-hun hunts down; cornered, he forces Gi-hun into a game of Russian roulette and dies, severing Gi-hun's only lead to the games from the outside."
+        },
+        {
+          "name": "Jun-ho",
+          "line": "The detective, secretly alive after being shot off the cliff, circling the archipelago by boat with Captain Park in search of the island, unaware his guide answers to his brother."
         }
       ]
     }
-  }
+  },
+  "notPeople": [
+    "jun",
+    "sae",
+    "sang"
+  ]
 }

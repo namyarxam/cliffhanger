@@ -28,8 +28,28 @@ const NOT_A_PERSON = new Set([
   'Even', 'Back', 'Away', 'Together', 'Their', 'Have', 'Been', 'Will', 'Would', 'Could',
 ]);
 
+/**
+ * Matchable name tokens from a character card.
+ *
+ * Must agree exactly with how names are pulled out of beats below, or the two
+ * sides never meet. Three cases broke the naive version, all found by the
+ * validation set:
+ *
+ *   Carmen "Carmy" Berzatto   the beats say "Carmy" — the QUOTED NICKNAME is
+ *                             the name actually used, and stripping it left
+ *                             nothing to match on
+ *   Lucerys 'Luke' Velaryon   same, single quotes
+ *   Sang-woo, Jun-ho          hyphenated Korean names matched nothing at all,
+ *                             so every Squid Game card read as padding
+ *
+ * So quotes are peeled rather than treated as part of the word, and hyphens
+ * and apostrophes are part of a name rather than boundaries.
+ */
 const surnamesOf = name =>
-  name.split(/\s+/).filter(w => /^[A-Z][a-z]{2,}$/.test(w));
+  name
+    .split(/\s+/)
+    .map(w => w.replace(/^["'\u2018\u2019\u201c\u201d]+|["'\u2018\u2019\u201c\u201d.,]+$/g, ''))
+    .filter(w => /^[A-Z][\w'\u2019-]{2,}$/.test(w));
 
 /**
  * @returns {{ uncarded: Array<{name:string,beats:number}>, unused: string[] }}
@@ -46,7 +66,8 @@ export function coherence(entry, ignore = new Set()) {
     // Count each name once per beat: "Ned ... Ned ... Ned" in one beat is one
     // beat's worth of evidence, not three.
     const seen = new Set();
-    for (const m of b.text.matchAll(/\b[A-Z][a-z]{2,}\b/g)) {
+    // Hyphens are part of the name, not a boundary — "Sang-woo" is one token.
+    for (const m of b.text.matchAll(/\b[A-Z][a-z]{2,}(?:-[a-z]+)*\b/g)) {
       if (NOT_A_PERSON.has(m[0])) continue;
       const w = m[0].toLowerCase();
       if (seen.has(w)) continue;

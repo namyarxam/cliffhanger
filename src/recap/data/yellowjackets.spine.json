@@ -65,27 +65,35 @@
       "characters": [
         {
           "name": "Shauna Sadecki",
-          "line": "Pregnant with Jeff's baby in the wilderness; in 2021, a suburban wife who has just killed her lover Adam and pulled her friends into the cover-up."
-        },
-        {
-          "name": "Taissa Turner",
-          "line": "Just won her state senate race, but her sleepwalking 'lady in the tree' self is building altars in her own basement without her knowledge."
+          "line": "Yellowjackets midfielder secretly pregnant by her best friend's boyfriend; in 2021 she kills her lover Adam after discovering her husband was blackmailing her."
         },
         {
           "name": "Natalie Scatorccio",
-          "line": "The wilderness team's hunter alongside Travis; a newly-sober adult who has just been abducted by an unknown masked group."
-        },
-        {
-          "name": "Misty Quigley",
-          "line": "The team's ostracized medic who destroyed the beacon; as an adult, has just poisoned the fake reporter Jessica after the group agreed to pay her off."
+          "line": "The team's reluctant hunter who stops Lottie from sacrificing Travis; in 2021 she is kidnapped by a masked group on the day she gets sober."
         },
         {
           "name": "Lottie Matthews",
-          "line": "Emerging as the wilderness team's spiritual leader after her medication ran out and her visions took hold; ordered the ritual hunt of Travis."
+          "line": "Off her schizophrenia meds, her visions have made her the wilderness's spiritual leader, with Van and Travis among her followers."
+        },
+        {
+          "name": "Misty Quigley",
+          "line": "The team's equipment manager who secretly destroyed the emergency beacon to keep the group stranded and needing her."
+        },
+        {
+          "name": "Jackie Taylor",
+          "line": "Team captain and Shauna's best friend; after confronting Shauna over Jeff she is banished from the cabin and freezes to death in the first snow."
+        },
+        {
+          "name": "Taissa Turner",
+          "line": "Team co-captain and Shauna's confidant about the pregnancy, skeptical of Lottie's growing cult."
         },
         {
           "name": "Travis Martinez",
-          "line": "A hunter alongside Natalie whom the team tried to sacrifice at Doomcoming; found dead in 2021 in a staged suicide the women suspect is murder."
+          "line": "The coach's son and co-hunter with Natalie; hunted at Doomcoming and saved by Natalie when Lottie ordered his throat cut."
+        },
+        {
+          "name": "Jeff Sadecki",
+          "line": "Jackie's boyfriend who slept with Shauna the night before the crash; in 2021 he is revealed as the blackmailer targeting adult Shauna."
         }
       ]
     },
@@ -152,27 +160,27 @@
       "characters": [
         {
           "name": "Shauna Sadecki",
-          "line": "Grieving her stillborn son in the wilderness after beating Lottie; in the present, being investigated for Adam's disappearance."
+          "line": "Talks to Jackie's frozen corpse through the winter, loses her baby alone, and beats Lottie unconscious believing the team ate him."
         },
         {
           "name": "Natalie Scatorccio",
-          "line": "Just named leader of the wilderness team after Javi's death; killed as an adult by a fentanyl injection meant for Lottie."
-        },
-        {
-          "name": "Taissa Turner",
-          "line": "Now aware of her fugue self; separated from Simone and briefly reunited with old girlfriend Van, who has just told her she is terminally ill."
-        },
-        {
-          "name": "Misty Quigley",
-          "line": "Ostracized in the woods after pushing Crystal off a cliff; teamed in the present with Citizen Detective Walter and cradling a dying Natalie."
+          "line": "Draws the Queen of Hearts in the sacrifice lottery but survives when Javi drowns instead; Lottie hands her leadership of the group. In the present she dies from a fentanyl injection meant for Lottie."
         },
         {
           "name": "Lottie Matthews",
-          "line": "Ceded her spiritual leadership to Natalie after Shauna's beating; in the present, being committed to psychiatric care after a shot from Callie."
+          "line": "Beaten by Shauna and stripped of leadership in the wilderness; in the present she runs the compound where the botched ritual kills Natalie."
         },
         {
-          "name": "Ben Scott",
-          "line": "The team's one-legged coach, horrified by the cannibalism and increasingly at odds with the group; missing after the cabin fire and widely presumed the arsonist."
+          "name": "Taissa Turner",
+          "line": "Her sleepwalking fugue draws symbols that lead her and Van to find Javi alive in the woods."
+        },
+        {
+          "name": "Misty Quigley",
+          "line": "Cradles a dying Natalie in her arms at Lottie's compound after the ritual goes wrong."
+        },
+        {
+          "name": "Javi Martinez",
+          "line": "Travis's younger brother, found alive after months alone in the woods, drowns under the ice as the team lets him die for the sacrifice."
         }
       ]
     },
@@ -239,29 +247,30 @@
       "characters": [
         {
           "name": "Shauna Sadecki",
-          "line": "The wilderness team's brutal new leader; in the present, alone in her house after Jeff and Callie flee, resolving to claim back her power."
+          "line": "Grieving her stillborn, she begins a secret affair with Melissa and is installed as the group's new leader after Natalie mercy-kills Ben; in the present a cassette leads her to confront Melissa, who stabs Van to death."
         },
         {
           "name": "Natalie Scatorccio",
-          "line": "Ousted as leader after mercy-killing Ben, but has secretly reached the outside world on the scientists' satellite phone."
-        },
-        {
-          "name": "Taissa Turner",
-          "line": "Just buried Van and carved out her heart to eat, betting the wilderness will keep sparing lives around her the way it saved Van earlier this year."
-        },
-        {
-          "name": "Misty Quigley",
-          "line": "Still grieving Natalie and estranged from Walter; has just extracted a confession from Callie that Callie killed Lottie."
-        },
-        {
-          "name": "Callie Sadecki",
-          "line": "Shauna's teenage daughter, who killed Lottie in a moment of rage after Shauna threw her out and has now fled with Jeff, cutting Shauna off."
+          "line": "Her stabilizing leadership ends when she mercy-kills Ben and the team deposes her; she reaches a cliff with the satellite phone and hears a man's voice answer."
         },
         {
           "name": "Melissa",
-          "line": "Shauna's teen wilderness lover; as an adult, living under a new name married to Hannah's daughter, and has just stabbed Van to death."
+          "line": "JV player who begins a secret affair with Shauna and slashes Ben's Achilles at his trial; in the present she is married into Hannah's family and stabs Van to death when confronted."
+        },
+        {
+          "name": "Ben Scott",
+          "line": "The assistant coach who secretly survived alone in the woods setting traps; captured, tried for burning the cabin, and mercy-killed by Natalie."
+        },
+        {
+          "name": "Mari",
+          "line": "Shauna's rival in camp whose rift deepens after the stillborn; dies in a rigged hunt staged as cover for Natalie's run to the satellite phone."
+        },
+        {
+          "name": "Hannah",
+          "line": "One of three adult scientists who stumble on the camp; Shauna refuses to let her leave after Lottie kills her colleague Edwin."
         }
       ]
     }
-  }
+  },
+  "notPeople": []
 }

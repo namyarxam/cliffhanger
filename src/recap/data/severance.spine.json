@@ -65,29 +65,27 @@
       "characters": [
         {
           "name": "Mark Scout",
-          "line": "MDR department head whose innie has just discovered his supposedly-dead wife Gemma is alive inside Lumon as Ms. Casey."
+          "line": "Grieving widower who leads Lumon's Macrodata Refinement as a severed employee, now aware his 'dead' wife Gemma is alive inside the company."
         },
         {
           "name": "Helly R. / Helena Eagan",
-          "line": "MDR refiner whose outie is Lumon CEO Jame Eagan's daughter; her innie has just denounced severance to a hostile press."
-        },
-        {
-          "name": "Irving B.",
-          "line": "MDR refiner mid-contingency at Burt's house, learning the man he loves already has a partner outside.",
-          "note": "outie is a solitary painter of a dark corridor"
-        },
-        {
-          "name": "Dylan G.",
-          "line": "MDR refiner running the contingency from Lumon's security office, seconds from being tackled by Milchick.",
-          "note": "recently learned his outie has a son"
-        },
-        {
-          "name": "Harmony Cobel",
-          "line": "Mark's severed-floor manager and secret neighbour 'Mrs. Selvig', just suspended by Lumon's board and racing to silence Helly at the gala."
+          "line": "New MDR hire whose outie is revealed to be Jame Eagan's daughter and Lumon heir; her innie hijacks a company gala to expose the severed workers' captivity."
         },
         {
           "name": "Gemma Scout / Ms. Casey",
-          "line": "Mark's wife, believed dead by his outie, alive on Lumon's testing floor as the wellness counsellor and just sent back downstairs by Cobel."
+          "line": "Mark's wife, presumed dead but secretly held inside Lumon working as the severed floor's placid wellness counsellor."
+        },
+        {
+          "name": "Irving B.",
+          "line": "Devout MDR veteran who falls for Burt in Optics & Design and helps map the severed floor after realising Lumon pits departments against each other."
+        },
+        {
+          "name": "Dylan G.",
+          "line": "MDR refiner who discovers the 'overtime contingency' and triggers it on himself so his coworkers can broadcast the truth from inside their outies' lives."
+        },
+        {
+          "name": "Petey",
+          "line": "Mark's former MDR chief who reversed his own severance, made contact with outie Mark, and died from the procedure after leaving him a map of Lumon's hidden halls."
         }
       ]
     },
@@ -154,29 +152,32 @@
       "characters": [
         {
           "name": "Mark Scout",
-          "line": "Reintegrating between his two selves; his innie has just chosen Helly over Gemma and is loose inside Lumon."
+          "line": "Undergoes reintegration to bridge his two selves, then uses his innie to finish the Cold Harbor file, rescue Gemma from the testing floor, and flee back into Lumon with Helly."
         },
         {
           "name": "Helly R.",
-          "line": "Back in control of her body after Helena's imposture; running through Lumon with Mark as alarms sound."
-        },
-        {
-          "name": "Gemma Scout",
-          "line": "Freed from the testing floor and standing outside the severed door for the first time in years, separated from the husband she remembers."
-        },
-        {
-          "name": "Harmony Cobel",
-          "line": "The true inventor of severance, exiled from Lumon and now openly working with Devon to bring the company down."
-        },
-        {
-          "name": "Seth Milchick",
-          "line": "Severed-floor manager whose kindness reforms have collapsed; his star refiner just completed Cold Harbor and immediately betrayed Lumon."
+          "line": "Returns to MDR unaware her outie Helena has been impersonating her; after Irving exposes the swap, she reunites with innie Mark and disappears deeper into Lumon at his side."
         },
         {
           "name": "Helena Eagan",
-          "line": "The face of Lumon's severance push, her ORTBO impersonation exposed and her father Jame Eagan watching Cold Harbor come apart in real time."
+          "line": "Lumon heir who secretly replaced her innie to spy on MDR, until Irving forces her to confess by nearly drowning her on the company retreat."
+        },
+        {
+          "name": "Gemma Scout",
+          "line": "Held on Lumon's testing floor cycling through rooms that torture her innies, until Mark pushes her through the severed floor's exit to freedom."
+        },
+        {
+          "name": "Harmony Cobel",
+          "line": "Ousted former MDR manager who returns to her hometown, recovers proof that she invented severance, and warns Devon that completing Cold Harbor will kill Gemma."
+        },
+        {
+          "name": "Seth Milchick",
+          "line": "Now running the rebuilt severed floor, he manages the returning MDR team and terminates Irving's innie after the retreat exposure."
         }
       ]
     }
-  }
+  },
+  "notPeople": [
+    "lumon"
+  ]
 }

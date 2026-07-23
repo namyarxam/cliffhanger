@@ -65,27 +65,35 @@
       "characters": [
         {
           "name": "Logan Roy",
-          "line": "Waystar RoyCo's aging CEO, back in power after crushing an internal coup and now holding a cover-up over his son's head."
+          "line": "Ruthless founder-CEO of Waystar Royco who has just crushed his children's boardroom coup and holds a fatal car-crash cover-up over Kendall's head."
         },
         {
           "name": "Kendall Roy",
-          "line": "Second son and failed rebel, back in rehab and effectively owned by his father after a fatal car crash on the night of Shiv's wedding."
+          "line": "Logan's number-one son and would-be successor, broken after his takeover bid collapses when his father shields him from the wedding-night death of a waiter."
         },
         {
           "name": "Shiv Roy",
-          "line": "Democratic political operative newly married to Tom, on cool terms with Logan after her affair with Nate and her flirtation with Gil Eavis."
-        },
-        {
-          "name": "Tom Wambsgans",
-          "line": "Shiv's new husband and head of Parks and Cruises, sitting on a scandal he now knows Greg has kept the evidence for."
+          "line": "Logan's only daughter, a Democratic political operative working for Gil Eavis and having an affair with fixer Nate, newly married to Tom."
         },
         {
           "name": "Roman Roy",
-          "line": "Waystar COO who blinked during the boardroom coup, back inside Logan's favour and dating Tom's bachelor-party fling Tabitha."
+          "line": "Logan's mercurial youngest son, initially siding with Kendall's coup before flipping back to their father."
+        },
+        {
+          "name": "Tom Wambsgans",
+          "line": "Shiv's ambitious new husband, running Waystar's Parks and Cruises division and sitting on a cover-up he had Greg shred."
         },
         {
           "name": "Greg Hirsch",
-          "line": "Great-nephew clinging to a junior Waystar job, quietly holding photocopies of the cruises cover-up he was ordered to destroy."
+          "line": "Logan's naive grandnephew who took a Waystar job under Tom and secretly kept copies of the cruises documents."
+        },
+        {
+          "name": "Stewy Hosseini",
+          "line": "Kendall's smooth college friend and private-equity partner who bailed Waystar out and is now backing a hostile takeover with Sandy."
+        },
+        {
+          "name": "Sandy Furness",
+          "line": "Logan's oldest rival, a media mogul quietly maneuvering with Stewy to seize Waystar from the outside."
         }
       ]
     },
@@ -152,27 +160,35 @@
       "characters": [
         {
           "name": "Logan Roy",
-          "line": "Waystar's CEO watching his own son name him as an accomplice on live television, smiling in a way nobody in the family can read."
+          "line": "Waystar's embattled patriarch, hunting a leaker inside his own team and forced to offer up Kendall as a public scapegoat for the cruises scandal."
         },
         {
           "name": "Kendall Roy",
-          "line": "Back inside Waystar as Logan's chosen fall-guy, who has just refused the role and burned his father in public instead."
+          "line": "Logan's hollowed-out son, pulled from rehab as his father's mouthpiece before turning on him at a press conference with Greg's retained documents."
         },
         {
           "name": "Shiv Roy",
-          "line": "Promised the CEO chair in private and passed over in public for Rhea Jarrell; increasingly resented by Tom for hiding it."
-        },
-        {
-          "name": "Tom Wambsgans",
-          "line": "ATN Chair of Global Broadcast News, publicly humiliated at the Senate hearing and privately blackmailed by Greg into promoting him."
+          "line": "Privately promised the CEO role by Logan, now a Waystar insider who blew her own secret by blurting it out at the Pierces'."
         },
         {
           "name": "Roman Roy",
-          "line": "Rebuilding credibility inside Waystar via the management programme, running a covert erotic phone-and-text dynamic with Gerri Kellman."
+          "line": "The exposed leaker, chastened into Waystar's management programme under Gerri, with a covert sexting dynamic developing between them."
+        },
+        {
+          "name": "Tom Wambsgans",
+          "line": "Shiv's husband, floundering alongside Kendall at the Senate hearings and increasingly bitter about his wife's ambitions."
         },
         {
           "name": "Greg Hirsch",
-          "line": "Junior Waystar fixer who kept illicit copies of the cruises documents and has just handed them to Kendall for the press conference."
+          "line": "Tom's underling turned unlikely kingmaker, whose stash of cruises paperwork just handed Kendall his weapon against Logan."
+        },
+        {
+          "name": "Nan Pierce",
+          "line": "Matriarch of the rival Pierce family, who nearly killed the PGM deal and then cancelled it once the cruises story broke."
+        },
+        {
+          "name": "Rhea Jarrell",
+          "line": "Pierce's CEO who defected to Waystar and was briefly Logan's chosen successor before walking away from the poisoned CEO offer."
         }
       ]
     },
@@ -239,27 +255,27 @@
       "characters": [
         {
           "name": "Logan Roy",
-          "line": "Waystar's CEO closing on the GoJo sale, having just outflanked his own children by rewriting his divorce with Caroline."
+          "line": "Cornered by the DOJ, holed up abroad and increasingly incoherent from a UTI, betting on Mencken and using the divorce to strip his children of their veto."
         },
         {
           "name": "Kendall Roy",
-          "line": "Refused the $2B buyout, then confessed to his siblings that he killed a boy on the night of Shiv's wedding — and was met, for once, with support."
+          "line": "The public accuser turned pariah, whose town hall stunt collapsed and who broke down when Logan tried to buy him out for $2B at his 40th."
         },
         {
           "name": "Shiv Roy",
-          "line": "Cut out of the succession by both Logan and the GoJo talks; secretly betrayed by her husband and freshly allied with her brothers."
+          "line": "Given the President of Domestic Operations title to keep her in line, she brokered the Furness settlement and lost her siblings' block when Tom betrayed her."
         },
         {
           "name": "Roman Roy",
-          "line": "The child Logan trusted most in the GoJo negotiation, embarrassed by the misfired dick-pic to his father and now standing with his siblings."
+          "line": "Logan's favoured son this season, opening back-channel talks with Matsson about a GoJo merger while joining his siblings' failed veto."
         },
         {
           "name": "Tom Wambsgans",
-          "line": "Terrified enough of prison to have tipped Logan off about the siblings' revolt, having asked Greg to rise with him under a new regime."
+          "line": "Sensing Shiv's marriage and family power are collapsing, he tipped Logan off about the siblings' Tuscany veto to save himself."
         },
         {
           "name": "Lukas Matsson",
-          "line": "GoJo's CEO, now the buyer Logan has agreed to sell to, with Logan exiting on a settlement he has personally negotiated."
+          "line": "The provocative Swedish CEO of streaming rival GoJo, courted by Roman for a merger of equals that would swallow Waystar."
         }
       ]
     },
@@ -325,30 +341,38 @@
       },
       "characters": [
         {
+          "name": "Logan Roy",
+          "line": "Reduced to remaking ATN himself after the siblings outbid him for Pierce, he dies suddenly on his plane en route to close the GoJo deal."
+        },
+        {
           "name": "Kendall Roy",
-          "line": "Defeated in the final board vote, alienated from his siblings, and left with the identity his father spent a lifetime denying him."
+          "line": "Named Logan's successor in a document from the safe and installed as co-CEO, his Living+ launch reignited his ambition before Shiv's board vote killed his bid."
         },
         {
           "name": "Shiv Roy",
-          "line": "Pregnant, married again in name to the CEO Matsson chose over her, and the sibling whose vote handed Waystar to GoJo."
+          "line": "Pregnant, sidelined and divorcing Tom, she brokered the Mencken–Matsson deal expecting the CEO job and sided with Matsson when he passed her over for her husband."
         },
         {
           "name": "Roman Roy",
-          "line": "Physically beaten by rioters after his father's funeral, publicly broken at the eulogy, and openly accepting that he was never a real successor."
+          "line": "Co-CEO alongside Kendall, he pressured Tom into calling Wisconsin for Mencken on ATN and unraveled emotionally at Logan's funeral."
         },
         {
           "name": "Tom Wambsgans",
-          "line": "New CEO of the GoJo-owned Waystar, installed by Matsson because he will do as he is told, back with Shiv on brittle terms."
+          "line": "The ATN boss who called the election for Mencken on Roman's orders and, in the final vote, was picked by Matsson as the American CEO of the merged company."
         },
         {
           "name": "Lukas Matsson",
-          "line": "GoJo's founder and now the owner of Waystar, with his chosen puppet in the CEO chair and a détente with the new president in hand."
+          "line": "GoJo's CEO who bypassed the brothers with a $192-a-share offer directly to the board and ultimately installed Tom as his pliant American face."
         },
         {
           "name": "Jeryd Mencken",
-          "line": "Fascist President-elect of the United States, elected on the back of ATN's premature Wisconsin call and Waystar's political muscle."
+          "line": "The far-right presidential candidate Logan backed, prematurely declared president by ATN on election night and cutting a CEO deal with Matsson in return."
         }
       ]
     }
-  }
+  },
+  "notPeople": [
+    "president",
+    "waystar"
+  ]
 }

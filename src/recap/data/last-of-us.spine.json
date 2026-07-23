@@ -65,27 +65,31 @@
       "characters": [
         {
           "name": "Joel Miller",
-          "line": "Hardened smuggler who chose Ellie over humanity's cure and lied to her about it to keep her at his side."
+          "line": "A hardened smuggler who lost his daughter on outbreak night and, after escorting Ellie across the country, slaughtered the Fireflies to save her and lied that a cure was impossible."
         },
         {
           "name": "Ellie",
-          "line": "Immune fourteen-year-old who has accepted Joel's story, unaware he massacred the Fireflies to prevent the surgery."
+          "line": "A teenage girl immune to the infection whose cure mission ended when Joel killed her doctors; she doesn't know he lied and now lives with him in Jackson."
+        },
+        {
+          "name": "Tess",
+          "line": "Joel's smuggling partner in the Boston QZ who took the Firefly escort job, was bitten at the drop point, and sacrificed herself so Joel would finish it."
         },
         {
           "name": "Tommy",
-          "line": "Joel's estranged brother, now settled in Jackson with his pregnant partner Maria; the safe harbour Joel is riding back toward."
-        },
-        {
-          "name": "Maria",
-          "line": "Tommy's pregnant partner and a leader in the Jackson settlement, the community that gives Joel and Ellie a home."
+          "line": "Joel's younger brother, who fled Austin with him on outbreak night and has since built a life in the Jackson settlement, where Joel and Ellie find him alive."
         },
         {
           "name": "Marlene",
-          "line": "Firefly leader and Ellie's guardian since infancy; killed by Joel at the hospital rather than allowed to raise an alarm."
+          "line": "The Firefly leader who entrusted Ellie to Joel; at Salt Lake she authorized the fatal surgery to extract a cure and was shot by Joel to keep Ellie alive."
+        },
+        {
+          "name": "Fireflies",
+          "line": "The militia trying to engineer a cure from Ellie; Joel wiped out their Salt Lake surgical team, effectively ending their shot at a vaccine."
         },
         {
           "name": "Sarah",
-          "line": "Joel's daughter, shot dead by a soldier in the first hours of the outbreak; the loss that shapes his refusal to lose Ellie."
+          "line": "Joel's daughter, shot dead in his arms by a soldier on the first night of the outbreak in Austin — the loss that shaped everything Joel does after."
         }
       ]
     },
@@ -152,29 +156,33 @@
       "characters": [
         {
           "name": "Ellie",
-          "line": "Grieving Joel and hunting Abby; has killed Nora, Owen and pregnant Mel, and is on her knees at the theater with a gun in her face."
+          "line": "Now nineteen and estranged from Joel over his hospital lie, she watched Abby beat him to death and is deep in a Seattle revenge hunt that is starting to horrify her."
         },
         {
           "name": "Abby",
-          "line": "Daughter of the Firefly doctor Joel killed; beat Joel to death with a golf club and has just ambushed Ellie's group at the theater."
-        },
-        {
-          "name": "Dina",
-          "line": "Ellie's partner, pregnant with Jesse's child, wounded by a Seraphite arrow and waiting at the theater when Abby arrives."
-        },
-        {
-          "name": "Tommy",
-          "line": "Rode to Seattle to bring Ellie home; wounded by Abby in the theater ambush and out of the fight."
-        },
-        {
-          "name": "Isaac",
-          "line": "Ex-FEDRA officer turned WLF leader running Seattle; escalating a war against the Seraphites and has just summoned Abby."
+          "line": "The daughter of the Firefly surgeon Joel killed; she tracked him to Jackson, executed him in front of Ellie, and has just ambushed Ellie and Jesse at the theater."
         },
         {
           "name": "Joel Miller",
-          "line": "Dead by Abby's hand, but the confession he finally gave Ellie is what she is still carrying through every kill."
+          "line": "Living in Jackson and quietly seeing a therapist about what he did at the hospital; killed by Abby in the woods after saving her from the horde."
+        },
+        {
+          "name": "Dina",
+          "line": "Ellie's girlfriend and partner on the Seattle revenge trip, now pregnant with Jesse's child and committed to seeing the hunt for Abby through."
+        },
+        {
+          "name": "Jesse",
+          "line": "A Jackson friend and the father of Dina's baby, who followed the pair to Seattle to bring them home and was shot dead by Abby at the theater."
+        },
+        {
+          "name": "Tommy",
+          "line": "Joel's brother and a Jackson leader who refused to sanction a retaliation strike but joined Ellie in Seattle; wounded by Abby in the theater ambush."
         }
       ]
     }
-  }
+  },
+  "notPeople": [
+    "jackson",
+    "seattle"
+  ]
 }

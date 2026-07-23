@@ -65,27 +65,15 @@
       "characters": [
         {
           "name": "Deborah Vance",
-          "line": "Legendary Vegas comedian who has just secured the late-night host job that will consume her next chapter, at the cost of her sister Kathy's trust."
+          "line": "Legendary Vegas headliner who has just landed the late-night host job she has wanted her whole career, but only by lying to Ava about who could have been head writer."
         },
         {
           "name": "Ava Daniels",
-          "line": "25-year-old TV writer who has traded her ex Ruby and an old writing offer for Deborah, and just blackmailed her way into head writer."
+          "line": "Young comedy writer back in Deborah's orbit as her lead writer, who has just discovered the lie and is blackmailing Deborah over her affair with Bob Lipka to force her way into the head writer role."
         },
         {
-          "name": "Jimmy Lusaque",
-          "line": "Deborah's exhausted manager, who steered her to the late-night gig and just promoted his ex-assistant Kayla to co-manager."
-        },
-        {
-          "name": "Kayla Schaeffer",
-          "line": "Freshly minted co-manager after quitting and reconciling with Jimmy, still learning what her ambition costs everyone around her."
-        },
-        {
-          "name": "Marcus",
-          "line": "Deborah's steady COO, offered a QVC opportunity that could pull him out of her orbit for the first time."
-        },
-        {
-          "name": "DJ Vance",
-          "line": "Deborah's estranged daughter, whose biting public roast set exposed how much damage the ambition has done to her family."
+          "name": "Bob Lipka",
+          "line": "Media CEO whose network controls the vacant late-night slot; courted by Deborah on the golf course and now secretly sleeping with her."
         }
       ]
     },
@@ -152,27 +140,19 @@
       "characters": [
         {
           "name": "Deborah Vance",
-          "line": "Host of the #1 late-night show, reconciled with Ava, and just weaponized her old affair with Bob Lipka to fire the exec who kept boxing her in."
+          "line": "New late-night host whose show has climbed to #1 after a bruising launch, still locked in a volatile creative partnership with Ava."
         },
         {
           "name": "Ava Daniels",
-          "line": "Head writer, closer to Deborah than ever after nearly walking away for good; her personal life is a mess but the work is thriving."
-        },
-        {
-          "name": "Jimmy Lusaque",
-          "line": "Still Deborah's manager, quietly hurt that she and Ava reconciled without telling him, and losing top clients like Clive to Latitude."
-        },
-        {
-          "name": "Kayla Schaeffer",
-          "line": "Co-manager who has sold her first show and hired her own assistant Randi; increasingly the one holding the office together."
+          "line": "Head writer who spent the season being punished for her blackmail, quit over the Ruby stunt, and was coaxed back on the beach to help steer the show in a new direction."
         },
         {
           "name": "Winnie",
-          "line": "Network exec on the show who kept forcing the fight to be about the work, just fired at Deborah's request after a single call to Bob."
+          "line": "Network executive who brokered the Deborah–Ava truce and championed a spin-off, and has just been fired after Deborah complained about her to Bob Lipka."
         },
         {
           "name": "Bob Lipka",
-          "line": "Media CEO and Deborah's old affair, who just proved he will do her bidding — and now knows he can."
+          "line": "Media CEO and Deborah's former lover, still powerful enough at the network that a single call from her ends Winnie's career."
         }
       ]
     },
@@ -263,5 +243,8 @@
         }
       ]
     }
-  }
+  },
+  "notPeople": [
+    "she"
+  ]
 }

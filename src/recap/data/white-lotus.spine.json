@@ -64,28 +64,36 @@
       },
       "characters": [
         {
-          "name": "Tanya McQuoid",
-          "line": "Grieving heiress who came to scatter her mother's ashes; leaves the resort paired with fellow guest Greg after ditching Belinda."
-        },
-        {
-          "name": "Greg",
-          "line": "Sport fisherman Tanya met poolside; her sudden new partner heading off the island with her."
+          "name": "Armond",
+          "line": "The White Lotus Maui manager whose relapse and feud with Shane end with him dying on Shane's pineapple knife after defecating in his suitcase."
         },
         {
           "name": "Shane Patton",
-          "line": "Entitled honeymooner who fatally stabbed the hotel manager mid-prank; boarding the flight home not knowing he's a killer."
+          "line": "Entitled honeymooner whose war with Armond over a room booking ends with him fatally stabbing the manager, oblivious that his wife is leaving him in spirit."
         },
         {
           "name": "Rachel Patton",
-          "line": "Newlywed journalist who spent the trip realising she was a trophy wife and then talked herself back into the marriage."
+          "line": "Shane's new wife, who privately realises she married the wrong man but tells him at the airport that she is happy after all."
+        },
+        {
+          "name": "Tanya McQuoid",
+          "line": "Grieving heiress scattering her mother's ashes, who dangled a wellness business at Belinda before dropping her for fellow guest Greg."
         },
         {
           "name": "Belinda Lindsey",
-          "line": "Spa manager left with a cash tip and no partner; the wellness business she had started imagining is quietly dead."
+          "line": "The Maui spa manager who reorganised her life around Tanya's promised partnership and was handed a cash brush-off instead."
+        },
+        {
+          "name": "Greg",
+          "line": "A fellow guest Tanya latches onto mid-stay, leaving with her as her new partner."
+        },
+        {
+          "name": "Paula",
+          "line": "Teen guest whose drugs trigger Armond's relapse and who gives local worker Kai the Mossbachers' safe code, botching the robbery."
         },
         {
           "name": "Quinn Mossbacher",
-          "line": "Youngest Mossbacher; walked out of the airport to stay in Hawaii and paddle with the local canoeists."
+          "line": "The family's youngest, who escapes each night to the beach, bonds with local canoeists, and starts imagining a life away from his parents."
         }
       ]
     },
@@ -152,27 +160,39 @@
       "characters": [
         {
           "name": "Tanya McQuoid",
-          "line": "Dead; drowned trying to escape the yacht after killing the crew her husband hired to kill her."
+          "line": "Arrives in Sicily with distant husband Greg, realises the Palermo circle around her was hired to kill her for her fortune, shoots her way off the yacht and drowns escaping."
         },
         {
           "name": "Greg Hunt",
-          "line": "Tanya's widower and sole heir; the whole plot ran through him and no one has connected it back."
+          "line": "Tanya's husband, who flies home for 'work' after orchestrating the plot on her life with his old friend Quentin."
+        },
+        {
+          "name": "Quentin",
+          "line": "Wealthy English expat who folds Tanya into his Palermo circle; a photo reveals he has known Greg for decades and is part of the plot to kill her."
         },
         {
           "name": "Portia",
-          "line": "Tanya's assistant, alive and rattled; senses something was very wrong at Quentin's but can't articulate what."
+          "line": "Tanya's young assistant, whose presence infuriates Greg and who is ordered kept out of sight for the trip."
         },
         {
           "name": "Harper Spiller",
-          "line": "Ethan's wife; the marriage survived Cameron and came back into passion after weeks of suspicion."
+          "line": "Ethan's sharp wife, who reads Cameron and Daphne as fake from the start and forces Ethan to admit Cameron's infidelity, reigniting their marriage."
         },
         {
           "name": "Ethan Spiller",
-          "line": "Wealthy tech founder; reconciled with Harper after nearly drowning Cameron in the surf."
+          "line": "Harper's husband, who hides Cameron's boat-night infidelity until she pries it out of him and attacks Cameron over it."
+        },
+        {
+          "name": "Cameron",
+          "line": "Ethan's abrasive college friend, whose secret hook-up with Lucia on a boys' night blows up both marriages when Ethan finally hits him."
+        },
+        {
+          "name": "Lucia",
+          "line": "Local escort hired by Dominic, courted by his son Albie, who sleeps with Cameron and scams Albie's father out of €50,000 with a fake pimp before vanishing."
         },
         {
           "name": "Albie Di Grasso",
-          "line": "Earnest Stanford grad; wired Lucia €50,000 of his father's money believing he was saving her."
+          "line": "Dominic's earnest son, who falls for Lucia and is conned into wiring her €50,000 through a fake pimp."
         }
       ]
     },
@@ -238,30 +258,42 @@
       },
       "characters": [
         {
-          "name": "Belinda Lindsey",
-          "line": "Maui spa manager who took $5M from Greg and is finally leaving to build her own life with her son Zion."
+          "name": "Rick",
+          "line": "Guest who believes owner Jim Hollinger killed his father; after Jim insults his mother he shoots Jim dead, learns Jim WAS his father, and is killed by Gaitok in the shootout."
         },
         {
-          "name": "Greg Hunt",
-          "line": "Tanya's widower, exposed to Belinda but quickly paid off; still evading investigators, still hiding in plain sight."
+          "name": "Chelsea",
+          "line": "Rick's young girlfriend, caught in the shootout at the hotel and killed alongside him."
+        },
+        {
+          "name": "Jim Hollinger",
+          "line": "Owner of White Lotus Ko Samui and, unknown to Rick, his biological father; shot dead by Rick after confronting him at the resort."
         },
         {
           "name": "Timothy Ratliff",
-          "line": "Patriarch facing imminent arrest and total financial ruin; has just told his family everything on the last night."
+          "line": "Wealthy patriarch facing prison and total asset seizure in a money-laundering case, who steals Gaitok's gun and rehearses killing his family before pulling back and warning them everything is about to change."
         },
         {
-          "name": "Victoria Ratliff",
-          "line": "Matriarch who spent the trip cushioned by lorazepam; now walking into a life she has no idea how to live."
+          "name": "Belinda Lindsey",
+          "line": "Visiting from Maui, she recognises Tanya's widower Greg using a fake name and accepts $5M in hush money to leave for a new life with her son."
+        },
+        {
+          "name": "Greg Hunt",
+          "line": "Living at Ko Samui under a fake name after Tanya's death, exposed by Belinda and buying her silence for $5M."
         },
         {
           "name": "Gaitok",
-          "line": "Pacifist security guard who shot Rick on Sritala's order; promoted to her personal bodyguard as a reward."
+          "line": "Resort guard whose gun Timothy briefly steals, and who obediently shoots Rick dead after the Hollinger shootout."
         },
         {
           "name": "Lochlan Ratliff",
-          "line": "Youngest Ratliff; survived Timothy's aborted poisoning by accidentally drinking the leftovers, revived in his father's arms."
+          "line": "Ratliff son pulled with his brother Saxon into an incestuous threesome with Chloe on Greg's yacht, an event none of them will speak of."
         }
       ]
     }
-  }
+  },
+  "notPeople": [
+    "lotus",
+    "white"
+  ]
 }

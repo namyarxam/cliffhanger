@@ -65,27 +65,31 @@
       "characters": [
         {
           "name": "Boyd Stevens",
-          "line": "Town sheriff and leader; hides early-onset Parkinson's; just fell into a locked shaft after being pushed into a farway tree."
+          "line": "Town sheriff hiding early-onset Parkinson's, dropped into a locked shaft beneath a lighthouse he found in the woods with Sara."
         },
         {
           "name": "Tabitha Matthews",
-          "line": "The Matthews mother; dug into the basement and found the underground; currently trapped in a cavern with Victor."
+          "line": "Mother of the trapped Matthews family who dug into the basement and fell into a cavern with Victor, learning the creatures sleep underground."
         },
         {
           "name": "Jim Matthews",
-          "line": "The Matthews father; built the town's radio tower and heard a voice on it that named him and warned him off Tabitha's dig."
+          "line": "Tabitha's husband, now being addressed by name by a strange voice on the town's newly-working radio."
         },
         {
           "name": "Sara Myers",
-          "line": "Follows voices in her head; opened the clinic door and killed Nathan; just pushed Boyd into the farway tree at the lighthouse."
+          "line": "Woman whose voices drove her to open the clinic door for the creatures; she stabbed Nathan trying to kill Ethan and was hidden by Father Khatri."
+        },
+        {
+          "name": "Father Khatri",
+          "line": "Town priest who sheltered Sara after her attack, killed when the Colony House swarm overran the town."
+        },
+        {
+          "name": "Ethan Matthews",
+          "line": "The Matthews' young son, targeted by a voice-driven Sara who tried to kill him."
         },
         {
           "name": "Victor",
-          "line": "The longest-surviving resident, brought here as a child; now guiding Tabitha through the tunnels beneath the town."
-        },
-        {
-          "name": "Jade Herrera",
-          "line": "Bus-crash arrival; keeps seeing a strange symbol in the trees and is starting to think the town wants to be understood."
+          "line": "Longtime resident found living in the cavern beneath Tabitha's basement, who explained the creatures sleep underground."
         }
       ]
     },
@@ -152,27 +156,35 @@
       "characters": [
         {
           "name": "Boyd Stevens",
-          "line": "Sheriff again; killed the smiley-faced creature with the parasites but is haunted by having opened a dungeon door that let something worse into the town."
+          "line": "Sheriff who was dropped into the dungeon, received wormlike parasites from a chained man named Martin, and passed them into a creature — later told by Sara he was the one who let a new entity loose."
+        },
+        {
+          "name": "Sara Myers",
+          "line": "Resurfaced at the church and is now held at the sheriff station by Kenny, who quit as deputy after learning she killed his father."
         },
         {
           "name": "Tabitha Matthews",
-          "line": "The Matthews mother; just woke in a Maine hospital days after the Boy in White threw her from the lighthouse tower."
+          "line": "Sent by Victor up a tree that transported her to the lighthouse tower, where the Boy in White shoved her out a window; she woke in a hospital in Maine."
         },
         {
-          "name": "Jim Matthews",
-          "line": "Built the radio tower and is the one the voice on the radio actually spoke to; still in the town, waiting for Tabitha."
+          "name": "Kristi",
+          "line": "Town doctor and Marielle's ex, whose autopsy of the smiley-faced creature found it dry inside except for bile."
+        },
+        {
+          "name": "Marielle",
+          "line": "Kristi's ex who arrived on the bus and later fell into a coma while an unseen entity tortured her, waking when Boyd smashed the music box."
+        },
+        {
+          "name": "Randall",
+          "line": "Troublemaker who arrived on the bus and was killed by cicadas when the music box awakened something from the dungeon."
         },
         {
           "name": "Victor",
-          "line": "Now close to Sara and the Matthews; the only resident who has always known the tower is where the children are kept."
-        },
-        {
-          "name": "Jade Herrera",
-          "line": "Bus-crash arrival now certain the symbol he keeps seeing in trees is a message; found the notebook that names Victor's childhood."
+          "line": "The resident who sent Tabitha up the tree to the lighthouse tower."
         },
         {
           "name": "Fatima Boyle",
-          "line": "Newly married to Ellis and just found out she is pregnant, despite being told she could not have children."
+          "line": "Colony House resident who married Ellis this season."
         }
       ]
     },
@@ -239,27 +251,35 @@
       "characters": [
         {
           "name": "Boyd Stevens",
-          "line": "Sheriff still; Parkinson's now visibly progressing; witnessed a creature being reborn beneath the town."
+          "line": "Chained in a barn and forced to watch creatures torture Tian-Chen to death; later found a hatch beneath the town and watched Smiley being reborn."
         },
         {
           "name": "Tabitha Matthews",
-          "line": "Back in the town after her Maine detour; revealed as Miranda's reincarnation, and widowed as of tonight."
+          "line": "Woken in a Maine hospital, she tracked Victor's address to Henry Kavanaugh and learned from the bottle-tree memories that she is Miranda's reincarnation."
+        },
+        {
+          "name": "Jim Matthews",
+          "line": "Unravelling from phone calls from a voice claiming to be his dead son Thomas, killed at season's end when the Man in Yellow ripped his throat out."
         },
         {
           "name": "Jade Herrera",
-          "line": "Revealed as the reincarnation of Miranda's partner Christopher; his obsession with the symbol was buried memory."
+          "line": "Revealed by the bottle-tree memories to be the reincarnation of Christopher, Miranda's counterpart."
         },
         {
           "name": "Fatima Boyle",
-          "line": "Gave birth to something the Kimono Woman took; visibly changing and hungry for blood."
+          "line": "Her strange pregnancy left her craving blood and rotten vegetables; she stabbed Tillie, was trapped and fed by Elgin, and gave birth with the Kimono Woman's help."
         },
         {
           "name": "Victor",
-          "line": "Reunited with his father Henry after forty years; carries the guilt of telling Miranda about the bottle tree that killed her."
+          "line": "Miranda's son, whose father Henry Kavanaugh Tabitha found still alive in Maine keeping Miranda's paintings of the town."
         },
         {
-          "name": "Julie Matthews",
-          "line": "Watched the Man in Yellow appear and kill her father Jim; now living inside what her mother's past life set in motion."
+          "name": "Miranda",
+          "line": "Victor's mother and painter of the town, whose reincarnation is Tabitha — revealed through the bottle-tree memories."
+        },
+        {
+          "name": "Kimono Woman",
+          "line": "Apparition who appeared in visions to Elgin and Marielle, helped deliver Fatima's baby, then vanished with the amniotic sac."
         }
       ]
     },
@@ -326,29 +346,38 @@
       "characters": [
         {
           "name": "Boyd Stevens",
-          "line": "Failing physically; committed to Jade's plan; alive but out of ideas now that every talisman is gone."
-        },
-        {
-          "name": "Tabitha Matthews",
-          "line": "Retrieved the sacrificed children's bones from the caves; still carrying Miranda's mission."
-        },
-        {
-          "name": "Jade Herrera",
-          "line": "Architect of the plan to save the children; nearly killed getting the bones out of the tunnels."
+          "line": "Convinced by Jade and Tabitha's plan, he led the crew that uprooted the bottle tree above the sacrificed children's chamber, plunging the town into darkness."
         },
         {
           "name": "Julie Matthews",
-          "line": "The story-walker; can visit earlier moments in the town's history as long as someone anchors her in the present."
-        },
-        {
-          "name": "Victor",
-          "line": "Nearly killed by his father Henry earlier tonight; the only person alive who has met the Man in Yellow before."
+          "line": "Warned by the Man in Yellow that the past cannot be changed, she discovered she can 'story-walk' back to earlier moments as long as someone anchors her in the present."
         },
         {
           "name": "Sophia / Man in Yellow",
-          "line": "The antagonist, embedded among the townspeople as a bus passenger; tonight she stripped away every defense the town had."
+          "line": "Crashed into town disguised as a passenger alongside a pastor, killed Elgin, gathered the town's talismans and hurled them into a farway tree."
+        },
+        {
+          "name": "Tabitha Matthews",
+          "line": "Miranda's reincarnation, who convinced Boyd to uproot the bottle tree above the sacrificed children's chamber."
+        },
+        {
+          "name": "Jade Herrera",
+          "line": "Christopher's reincarnation, who together with Tabitha convinced Boyd to uproot the bottle tree."
+        },
+        {
+          "name": "Victor",
+          "line": "Set out with Ethan for the Lake of Tears; warned by the Boy in White against the bottle-tree plan."
+        },
+        {
+          "name": "Fatima Boyle",
+          "line": "Marked like the creatures and briefly controlling Smiley, she fully turned creature and dragged Boyd's group to safety when the bottle tree came down."
+        },
+        {
+          "name": "Smiley",
+          "line": "The reborn creature, briefly controlled by Fatima, who slipped into the clinic on a fallen talisman and fatally wounded Marielle."
         }
       ]
     }
-  }
+  },
+  "notPeople": []
 }

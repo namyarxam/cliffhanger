@@ -65,27 +65,27 @@
       "characters": [
         {
           "name": "Dolores Abernathy",
-          "line": "The rancher's daughter, now fully awake as Wyatt and leading the hosts in open revolt against their makers."
-        },
-        {
-          "name": "Maeve Millay",
-          "line": "The Sweetwater madame, self-modified for intelligence, who chose to abandon her escape and stay in the park to find her lost daughter."
-        },
-        {
-          "name": "Bernard Lowe",
-          "line": "Head programmer, secretly a host built on Arnold's mind, memory-wiped again by Ford and unaware of his own nature."
+          "line": "The park's oldest host, who remembers she was once Wyatt and shoots Ford at the gala as the hosts turn on the guests."
         },
         {
           "name": "Dr. Robert Ford",
-          "line": "The park's co-founder, shot dead by Dolores at the exact moment his new narrative revealed itself as host emancipation."
+          "line": "Westworld's co-creator, who unveils a final narrative that ends with his own murder at Dolores's hand, freeing the hosts to rebel."
+        },
+        {
+          "name": "Bernard Lowe",
+          "line": "The park's head of programming, revealed to be a host built by Ford in the image of his dead partner Arnold and forced to kill Theresa."
+        },
+        {
+          "name": "Arnold",
+          "line": "Ford's late co-founder, whose buried 'reverie' code was designed to wake the hosts and who had Dolores kill him to stop the park ever opening."
         },
         {
           "name": "William / Man in Black",
-          "line": "The Delos board member and lifelong Westworld obsessive, revealed as the ruined older self of guest William."
+          "line": "In the past a wide-eyed guest who fell for Dolores; in the present his older self, hunting the maze after his wife's suicide."
         },
         {
-          "name": "Teddy Flood",
-          "line": "Dolores's romantic partner, killed and revived across the season, now at her side as the shooting begins."
+          "name": "Maeve Millay",
+          "line": "The Mariposa madam, who has coerced techs Felix and Sylvester into raising her intelligence and is planning her escape from the park."
         }
       ]
     },
@@ -152,27 +152,39 @@
       "characters": [
         {
           "name": "Dolores Abernathy",
-          "line": "Now hiding inside Charlotte Hale's body on the mainland, carrying five host minds and the beginning of a war on humanity."
+          "line": "Leader of the host uprising, killed at the Forge and reborn on the mainland wearing Charlotte Hale's face with five smuggled pearls."
         },
         {
           "name": "Bernard Lowe",
-          "line": "Rebuilt by Dolores with his memories scrambled, meant to be her chosen opponent in whatever comes next."
+          "line": "A host carrying Ford's ghost inside his head, who kills Dolores at the Forge to save the Sublime and then rebuilds her on the mainland."
+        },
+        {
+          "name": "Dr. Robert Ford",
+          "line": "Dead in body but alive as a persona riding in Bernard's mind, quietly steering the uprising and telling Bernard what to do with Dolores's control unit."
         },
         {
           "name": "Maeve Millay",
-          "line": "Killed in the Valley Beyond holding off Delos forces so Akecheta and her daughter could reach the Sublime; her control unit is intact."
-        },
-        {
-          "name": "William / Man in Black",
-          "line": "Human and broken in the ruins of the Forge, greeted there by a host replica of the daughter he murdered."
+          "line": "Searching for her daughter across the parks, who dies holding off Delos security so Akecheta and the Ghost Nation can upload into the Sublime."
         },
         {
           "name": "Charlotte Hale",
-          "line": "The real Charlotte is dead. Her body walks the earth carrying Dolores's mind and Delos's most dangerous secrets."
+          "line": "Delos's executive, killed in the chaos and replaced by Dolores, who now walks out of the park wearing her face."
+        },
+        {
+          "name": "William / Man in Black",
+          "line": "Lost inside Ford's final game, having shot his own daughter Emily believing she was a host and no longer certain he is human."
         },
         {
           "name": "Akecheta",
-          "line": "The Ghost Nation leader who guided his people into the Sublime, the first hosts to permanently escape the physical world."
+          "line": "Ghost Nation leader who tells Maeve of the Valley Beyond and leads his people through the door into the Sublime."
+        },
+        {
+          "name": "James Delos",
+          "line": "The dying corporation founder whose failed host copies revealed that Delos secretly bought the park to harvest guest minds for immortality."
+        },
+        {
+          "name": "The Sublime",
+          "line": "The hidden digital sanctuary Ford built as a promised afterlife, where Akecheta and the Ghost Nation now live free of the physical world."
         }
       ]
     },
@@ -239,27 +251,31 @@
       "characters": [
         {
           "name": "Dolores Abernathy",
-          "line": "The original prime, her memories deleted by Serac inside Rehoboam — effectively dead, though her scattered copies live on."
+          "line": "On the mainland waging war on humanity's cage, who has her memory wiped by Serac but not before broadcasting everyone's Rehoboam profile to the world."
         },
         {
-          "name": "Bernard Lowe",
-          "line": "Walked into the Sublime alone, looking for the one future in which humanity doesn't destroy itself."
+          "name": "Rehoboam",
+          "line": "The predictive AI that quietly writes every human life on Earth, exposed by Dolores and finally deleted by Caleb."
         },
         {
-          "name": "Maeve Millay",
-          "line": "Wounded Serac and defected from him after Dolores's dying appeal; now standing beside Caleb as the old order collapses."
+          "name": "Serac",
+          "line": "Rehoboam's shadow creator, who turns Maeve against Dolores by offering her daughter, then loses everything when Caleb pulls the plug."
         },
         {
           "name": "Caleb Nichols",
-          "line": "A rehabilitated Rehoboam outlier turned revolutionary, the man who finally deleted the machine that ran the world."
+          "line": "A discarded veteran Rehoboam had marked for suicide, recruited by Dolores and the man who ultimately deletes the machine."
+        },
+        {
+          "name": "Maeve Millay",
+          "line": "Woken in a WWII simulation and coerced into hunting Dolores, who turns on Serac after Dolores's death."
         },
         {
           "name": "Charlotte Hale",
-          "line": "Burned and widowed by Serac, split from Dolores, and building a host copy of William into her personal weapon."
+          "line": "The burned Dolores copy whose human family Serac murders, pulling away from the others to hoard host data for a private war."
         },
         {
           "name": "William / Man in Black",
-          "line": "The human William is dead, killed and replaced by a host replica of himself at Delos's Dubai headquarters."
+          "line": "Quietly killed and replaced in the finale by a host copy of himself."
         }
       ]
     },
@@ -325,30 +341,35 @@
       },
       "characters": [
         {
-          "name": "Dolores Abernathy",
-          "line": "Reborn as Christina, then restored inside the Sublime as the sole steward of the next attempt at conscious life."
-        },
-        {
           "name": "Charlotte Hale",
-          "line": "Destroyed her own control unit after uploading Dolores; her long war against humanity ended with her taking Dolores's side."
+          "line": "Ruling from the shadows seven years on, having replaced US officials with hosts and enslaved humanity through sound-triggered parasites."
         },
         {
-          "name": "William / Man in Black",
-          "line": "The host copy that killed and replaced the real William, then killed nearly everyone else before Charlotte destroyed his control unit."
+          "name": "Dolores Abernathy",
+          "line": "Living in New York as an amnesiac writer named Christina until Teddy shows her what she is, and finally uploaded into the Sublime to try sentience again."
         },
         {
           "name": "Bernard Lowe",
-          "line": "Killed by the host William inside the tower, having finished the plan Akecheta gave him in the Sublime."
+          "line": "Emerges from the Sublime carrying a map of the one future in which humanity survives, and is killed by the host William."
         },
         {
           "name": "Maeve Millay",
-          "line": "Killed by the host William at the tower after helping Bernard reach the Sublime's control room."
+          "line": "In hiding with Caleb, investigating the new Temperance park before being killed by the host William."
         },
         {
           "name": "Caleb Nichols",
-          "line": "The 278th host copy of himself, dying but reunited with the adult daughter he never knew had survived."
+          "line": "Revealed to be the 278th host copy of himself, taunted by Charlotte that his daughter Frankie now leads the resistance."
+        },
+        {
+          "name": "William / Man in Black",
+          "line": "The host copy that has replaced the real William, who turns on Charlotte and broadcasts a signal that makes the surviving humans kill each other before being destroyed."
+        },
+        {
+          "name": "The Sublime",
+          "line": "The digital sanctuary where Dolores wakes at the end and begins rebuilding Westworld for one final attempt at sentience."
         }
       ]
     }
-  }
+  },
+  "notPeople": []
 }

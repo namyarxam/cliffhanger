@@ -65,29 +65,31 @@
       "characters": [
         {
           "name": "Juliette Nichols",
-          "line": "Engineer turned sheriff who just survived her own cleaning; last seen walking away from her Silo toward a ruined city, unaware anyone inside might learn she lived."
+          "line": "Mechanical engineer turned sheriff who is sent out to clean, survives the toxic air, and discovers dozens of other silos ringing a ruined city."
         },
         {
           "name": "Bernard Holland",
-          "line": "Head of IT and the Silo's true ruler; ordered the murders of Jahns and Marnes, has the hard drive, and believes he has finally silenced Juliette."
+          "line": "Head of IT and the Silo's true ruler, who ordered Jahns and Marnes killed, seized George's hard drive, and condemned Juliette to cleaning."
         },
         {
-          "name": "Robert Sims",
-          "line": "Bernard's Judicial enforcer, running the hidden camera network and cleaning up anyone — including his own people — who gets close to the secret."
+          "name": "Holston Becker",
+          "line": "Former sheriff who, after his wife Allison walked out, investigated George's death, chose to go outside himself, and named Juliette his successor before dying."
+        },
+        {
+          "name": "George Wilkins",
+          "line": "Juliette's lover, a Flamekeeper whose suspicious death and forbidden hard drive set her investigation in motion."
+        },
+        {
+          "name": "Mayor Ruth Jahns",
+          "line": "The Silo's mayor who backed Juliette's appointment as sheriff and was poisoned on Bernard's orders."
+        },
+        {
+          "name": "Deputy Sam Marnes",
+          "line": "Longtime deputy and Jahns's companion, murdered soon after her poisoning as part of Bernard's purge."
         },
         {
           "name": "Paul Billings",
-          "line": "Juliette's deputy, secretly carrying the disqualifying 'Syndrome'; now positioned to be made sheriff in her place under Bernard's protection.",
-          "note": "Kept one page of the children's book after burning the rest — sympathies unclear."
-        },
-        {
-          "name": "Lukas Kyle",
-          "line": "The cafeteria stargazer who grew close to Juliette; sentenced by Bernard to the mines for helping her with the hard drive.",
-          "note": "Knows enough to be dangerous to Bernard if he ever gets out."
-        },
-        {
-          "name": "Martha Walker",
-          "line": "Juliette's agoraphobic mentor in Mechanical who quietly swapped the heat tape on Juliette's suit — the single act that kept her alive on the way out."
+          "line": "Judicial-aligned deputy installed alongside Juliette after Marnes's death."
         }
       ]
     },
@@ -154,29 +156,30 @@
       "characters": [
         {
           "name": "Juliette Nichols",
-          "line": "Engineer-turned-sheriff who survived her cleaning; back inside Silo 18 in a firefighter suit and locked in the incinerator with Bernard."
+          "line": "Survived her cleaning and crossed into abandoned Silo 17, where she fixed Solo's flooded pump, uncovered the poison-line safeguard, and returned to Silo 18 to confront Bernard in the incinerator."
         },
         {
           "name": "Bernard Holland",
-          "line": "Silo 18's mayor and head of IT; his cover-ups have collapsed and he is trapped in the incinerator with the woman he tried to kill."
+          "line": "Head of Silo 18 who hid Juliette's survival, poisoned Meadows to frame Mechanical, lost Lukas as his shadow, and ended up locked in the incinerator with Juliette."
         },
         {
           "name": "Lukas Kyle",
-          "line": "Bernard's former shadow, who decoded Quinn's letter, saw the Legacy and the fifty silos, and resigned rather than inherit the lie."
+          "line": "Bernard's shadow who decoded the 140-year-old letter, discovered the Legacy vault and the fifty silos, and resigned after learning the truth."
         },
         {
           "name": "Solo (Jimmy)",
-          "line": "The lone adult who has lived inside Silo 17's vault since the rebellion of his childhood, now allied with Juliette and the five young survivors."
+          "line": "The man locked in Silo 17's vault who told Juliette that fifty silos exist and was hiding five young survivors he had lied about."
         },
         {
           "name": "Knox",
-          "line": "Head of Mechanical and de facto leader of the rebellion; has broken Bernard's blockade and pushed the fight ten floors up."
-        },
-        {
-          "name": "Robert Sims",
-          "line": "Former head of Judicial Security, promoted to Bernard's IT shadow at the last moment; his wife Camille is the one the Legacy accepted, not him."
+          "line": "Mechanical leader framed alongside Shirley for Meadows's murder, helping push his department into open revolt against Bernard."
         }
       ]
     }
-  }
+  },
+  "notPeople": [
+    "mechanical",
+    "she",
+    "silo"
+  ]
 }

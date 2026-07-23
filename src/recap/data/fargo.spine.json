@@ -64,28 +64,28 @@
       },
       "characters": [
         {
-          "name": "Molly Solverson",
-          "line": "Bemidji deputy who broke the case; married to Gus, pregnant, and being handed the chief's job Bill Oswalt is stepping out of."
-        },
-        {
-          "name": "Gus Grimly",
-          "line": "Former Duluth cop turned mailman who shot Malvo in the face at his cabin; now Molly's husband."
-        },
-        {
           "name": "Lester Nygaard",
-          "line": "Insurance salesman turned killer, dead after falling through thin ice in Montana while fleeing arrest."
+          "line": "Meek Bemidji insurance salesman turned killer who murdered his wife Pearl, framed his brother, remarried into success, and drowned fleeing Molly through a Montana lake's ice."
         },
         {
           "name": "Lorne Malvo",
-          "line": "The amoral drifter who set the whole season in motion, killed by Gus in his own cabin."
+          "line": "Chameleonic hitman who nudged Lester into murder, massacred a Fargo crime crew, and was finally cornered and shot dead by Gus at a lakeside cabin."
         },
         {
-          "name": "Mr. Wrench",
-          "line": "Deaf hitman freed from his handcuffs by Malvo with an implicit charge to hunt him down; still at large."
+          "name": "Molly Solverson",
+          "line": "Bemidji deputy who was right about Lester from day one and, despite Bill's obstruction, closed the case with Malvo's tapes as her evidence."
+        },
+        {
+          "name": "Gus Grimly",
+          "line": "Duluth cop turned Bemidji mailman who once let Malvo go at a traffic stop and redeemed himself by killing him, now married to Molly."
         },
         {
           "name": "Bill Oswalt",
-          "line": "Bemidji chief who spent the season shielding Lester from Molly's suspicions; ready to hand the office back to her."
+          "line": "Bemidji's new chief after Vern's murder, a decent man out of his depth who spent the year shielding Lester and dismissing Molly's theories."
+        },
+        {
+          "name": "Pearl Nygaard",
+          "line": "Lester's belittling wife, bludgeoned to death with a hammer in their basement in the fit of rage that set the whole season in motion."
         }
       ]
     },
@@ -152,27 +152,47 @@
       "characters": [
         {
           "name": "Lou Solverson",
-          "line": "Minnesota state trooper who survived the Sioux Falls massacre and drove Peggy home; young Molly's father."
+          "line": "Minnesota state trooper and Vietnam vet who walked out of the Sioux Falls massacre alive and arrested Peggy for her part in the Waffle Hut chain of killings."
         },
         {
           "name": "Peggy Blumquist",
-          "line": "Hairdresser under arrest for her part in the killings, her husband dead beside her in the meat locker."
+          "line": "Waitress with self-actualisation dreams whose hit-and-run on Rye triggered the war; taken into custody by Lou after Ed's death in the meat locker."
         },
         {
           "name": "Hanzee Dent",
-          "line": "The Gerhardt tracker who wiped out his own employers and has just taken a new identity in a public park."
+          "line": "The Gerhardts' Native tracker who turned on the family, killed Dodd himself, engineered the Sioux Falls bloodbath, and vanished into a new identity."
         },
         {
           "name": "Mike Milligan",
-          "line": "Kansas City hitman rewarded with a suit and an office after taking credit for the Gerhardt war."
+          "line": "Kansas City's philosophical enforcer who outlasted the Gerhardt war only to be 'rewarded' with a corporate desk job and a haircut."
         },
         {
           "name": "Hank Larsson",
-          "line": "Lou's sheriff father-in-law, wounded at the motel and recovering; still nursing his private project of a universal language."
+          "line": "Peggy's father-in-law and the local sheriff, wounded but alive at Sioux Falls and one of the few witnesses left standing beside Lou."
         },
         {
           "name": "Betsy Solverson",
-          "line": "Lou's wife, out from under the worst of her cancer treatment and back with her family, no one able to explain the UFO."
+          "line": "Lou's wife and Hank's daughter, quietly dying of cancer at home while the men chase the Gerhardts across the plains."
+        },
+        {
+          "name": "Dodd Gerhardt",
+          "line": "Floyd's cruel eldest son and heir apparent, captured by Ed and then executed in a cabin by his own tracker Hanzee."
+        },
+        {
+          "name": "Bear Gerhardt",
+          "line": "Dodd's brawnier, more principled younger brother, who shot his niece Simone for the KC leak and was gunned down at the Sioux Falls motel."
+        },
+        {
+          "name": "Rye Gerhardt",
+          "line": "The reckless youngest Gerhardt whose Waffle Hut shooting and death under Peggy's wheels lit the fuse for the entire season."
+        },
+        {
+          "name": "Otto Gerhardt",
+          "line": "Stroke-crippled patriarch of the Fargo crime family, executed at the family farm during the Kansas City assault."
+        },
+        {
+          "name": "Floyd Gerhardt",
+          "line": "Otto's wife who took over the family, refused the KC buyout, and was killed alongside Bear in Hanzee's Sioux Falls trap."
         }
       ]
     },
@@ -239,27 +259,31 @@
       "characters": [
         {
           "name": "Gloria Burgle",
-          "line": "Former Eden Valley chief now with DHS, sitting across from Varga in the closing interview."
+          "line": "Eden Valley police chief who lost her department in a merger, and by year's end sits across from a captured Varga at a DHS desk in St. Paul."
         },
         {
           "name": "V.M. Varga",
-          "line": "Captured white-collar predator who insists on his own imminent release."
+          "line": "Rotting-toothed multinational loan shark who devoured Emmit's parking-lot empire, slipped Nikki's ambush up an elevator shaft, and is in DHS custody insisting he'll walk out the door."
         },
         {
           "name": "Emmit Stussy",
-          "line": "Dead — stabbed by Wrench at his own dinner table after a probation-only guilty plea."
+          "line": "The Parking Lot King of Minnesota whose accidental killing of Ray and entanglement with Varga cost him everything, and who is shot dead at his own dinner table five years later by Mr. Wrench."
         },
         {
           "name": "Nikki Swango",
-          "line": "Dead — killed in a mutual shootout with a patrol officer minutes after finally confronting Emmit."
+          "line": "Ray's bridge-champion parolee girlfriend who turned avenger, robbed Varga's money drop, and died in a mutual shootout with a state trooper."
         },
         {
           "name": "Mr. Wrench",
-          "line": "Deaf hitman still at large, having finished Nikki's business by killing Emmit."
+          "line": "Deaf hitman befriended by Nikki on the prison bus, sole survivor of their raid on Varga, who returns years later to execute Emmit for her."
         },
         {
-          "name": "Winnie Lopez",
-          "line": "The St. Cloud officer who believed Gloria the whole way through and told her she does exist."
+          "name": "Ray Stussy",
+          "line": "Emmit's parole-officer brother whose petty grudge over a stamp escalated until Emmit killed him with a shard of glass in their apartment."
+        },
+        {
+          "name": "Ennis Stussy",
+          "line": "Gloria's elderly stepfather, mistakenly murdered in his own home by Maurice LeFay in the burglary that opens the season."
         }
       ]
     },
@@ -326,27 +350,43 @@
       "characters": [
         {
           "name": "Loy Cannon",
-          "line": "Dead on his front step, his empire absorbed by the Italians in the peace deal that was supposed to save it."
+          "line": "Head of the Black Cannon Limited in 1950 Kansas City, who lost his son Satchel to the truce and is stabbed to death on his own doorstep by Zelmare."
         },
         {
           "name": "Satchel Cannon",
-          "line": "Loy's surviving son, home from his exile just in time to see his father murdered; grows up to become Mike Milligan."
+          "line": "Loy's young son given to the Faddas under the truce, saved by Rabbi Milligan and left walking alone toward Kansas City after the tornado kills his protector."
         },
         {
           "name": "Ebal Violante",
-          "line": "The new Kansas City boss who executed Josto and has consolidated Italian and Black operations under corporate control."
+          "line": "The Faddas' quiet consigliere who executes Josto and takes the family into a modernised, corporate criminal era under the national commission."
         },
         {
           "name": "Ethelrida Pearl Smutny",
-          "line": "The mixed-race student whose evidence brought Oraetta down and won her family's funeral home back from Loy."
+          "line": "Bright teenage daughter of the Black funeral-parlour Smutnys whose fugitive aunt Zelmare's robbery of Loy shattered the fragile peace between the two families."
         },
         {
           "name": "Josto Fadda",
-          "line": "Executed by his own family after Oraetta testified he was behind his father's murder."
+          "line": "Volatile new Fadda don who ordered Satchel's death, was outmaneuvered by his own brother and consigliere, and shot dead in a field by Ebal."
         },
         {
           "name": "Oraetta Mayflower",
-          "line": "The killer nurse who murdered Donatello; executed alongside Josto after Violante turned her."
+          "line": "Serial-killer nurse who murdered patriarch Donatello with morphine and, exposed by Ethelrida, is dispatched by Josto's remaining loyalists."
+        },
+        {
+          "name": "Donatello Fadda",
+          "line": "Sardinian patriarch of the Fadda Family whose death by Oraetta's hand at the season's start triggered the succession fight between Josto and Gaetano."
+        },
+        {
+          "name": "Gaetano Fadda",
+          "line": "Josto's brutal older brother freshly arrived from Italy, who reconciled with Josto against Loy and was killed in a freak accidental shooting."
+        },
+        {
+          "name": "Zelmare Roulette",
+          "line": "Ethelrida's fugitive aunt whose robbery of Loy escalated the war and who, at the very end, walks up to Loy's porch and stabs him dead."
+        },
+        {
+          "name": "Rabbi Milligan",
+          "line": "Irishman raised by the Faddas after an earlier truce swap, who killed Satchel's assassin, fled with the boy, and died sheltering him from a tornado."
         }
       ]
     },
@@ -413,29 +453,40 @@
       "characters": [
         {
           "name": "Dorothy 'Dot' Lyon",
-          "line": "The former Nadine Tillman, safely home with Wayne and Scotty after outlasting Roy's kidnapping and his ranch."
+          "line": "Suburban Minnesota housewife who is really Roy's escaped wife Nadine, survives kidnap, barn, and manhunt to return home and, a year on, disarms Ole Munch with a biscuit."
         },
         {
           "name": "Roy Tillman",
-          "line": "Imprisoned constitutional sheriff, now being systematically tormented by inmates Lorraine has quietly paid off."
+          "line": "Constitutional sheriff of Stark County, North Dakota and Dot's abusive first husband, captured after the FBI raid on his ranch and rotting in a federal prison."
         },
         {
           "name": "Lorraine Lyon",
-          "line": "Debt-collection tycoon and Dot's mother-in-law, running Roy's punishment and having reconciled herself to Dot's past."
+          "line": "Wayne's steely debt-collection billionaire mother who at first dismissed Dot, then used federal muscle to break Roy and now quietly orchestrates his prison torment."
         },
         {
           "name": "Ole Munch",
-          "line": "Centuries-old sin-eater, freed from his cursed hunger by the biscuit Dot handed him at her kitchen table."
+          "line": "Ancient Welsh 'sin eater' hired to abduct Dot, wounded by her and later by Gator, who comes to her house for retribution and leaves freed of his old curse."
         },
         {
           "name": "Gator Tillman",
-          "line": "Roy's son, blinded by Munch and abandoned by his father; on his way toward reconciling with Dot."
+          "line": "Roy's cruel deputy son who kidnapped Dot from the hospital and ends the season blinded by Munch and taken into custody with his father's empire in ruins."
         },
         {
           "name": "Indira Olmstead",
-          "line": "The deputy who first believed Dot, now head of Lorraine's security team and finally out from under her own debts."
+          "line": "Local Scandia deputy whose case file on Dot convinced Lorraine of the danger, and who leaves policing to work as Lorraine's in-house investigator."
+        },
+        {
+          "name": "Wayne Lyon",
+          "line": "Dot's kind, oblivious Kia-salesman husband whose phone call from the ranch gives Lorraine the coordinates she needs for the raid."
         }
       ]
     }
-  }
+  },
+  "notPeople": [
+    "city",
+    "dot",
+    "faddas",
+    "gerhardts",
+    "kansas"
+  ]
 }

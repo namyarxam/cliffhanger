@@ -65,27 +65,31 @@
       "characters": [
         {
           "name": "Jim Holden",
-          "line": "Acting captain of the salvaged frigate Rocinante, marked man for his broadcast, in an uneasy alliance with Fred Johnson."
+          "line": "Former XO of the Canterbury, now reluctant captain of the captured Martian frigate Rocinante, harbouring the sample of an alien 'protomolecule' he found on Eros."
         },
         {
           "name": "Joe Miller",
-          "line": "Fired Ceres detective still chasing Julie Mao's ghost, now aboard the Rocinante and poisoned by radiation from Eros."
-        },
-        {
-          "name": "Naomi Nagata",
-          "line": "The Rocinante's engineer and the crew's quiet moral centre, growing closer to Holden."
+          "line": "Disgraced Ceres detective who followed the Julie Mao case to Eros and watched it become ground zero for a protomolecule outbreak deliberately unleashed on the station's poor."
         },
         {
           "name": "Chrisjen Avasarala",
-          "line": "Senior UN deputy who has identified a hidden faction inside her own government and is working it alone."
+          "line": "UN deputy undersecretary in New York who has quietly concluded a third party — not Mars — is driving the war and that her own boss Errinwright is shielding them."
         },
         {
-          "name": "Fred Johnson",
-          "line": "Tycho Station chief and unofficial OPA power, sheltering Holden's crew in exchange for their testimony against the conspirators."
+          "name": "Julie Mao",
+          "line": "OPA-sympathising heiress whose disappearance drew Miller into the case; found dead on Eros, her body the first human host of the protomolecule."
         },
         {
           "name": "Jules-Pierre Mao",
-          "line": "Julie's father, secret architect of the protomolecule program and financier of the Eros experiment."
+          "line": "Ruthless Earth industrialist and Julie's father, secretly bankrolling the protomolecule experiment that turned Eros into a living incubator."
+        },
+        {
+          "name": "Fred Johnson",
+          "line": "Former UN colonel turned OPA leader at Tycho Station, now sheltering Holden's crew and the Rocinante in exchange for a foothold in the crisis."
+        },
+        {
+          "name": "Sadavir Errinwright",
+          "line": "UN Undersecretary above Avasarala, revealed to be protecting the black program behind the protomolecule attacks."
         }
       ]
     },
@@ -151,28 +155,32 @@
       },
       "characters": [
         {
-          "name": "Jim Holden",
-          "line": "Rocinante captain, harder after Eros, struggling to keep the crew together after Naomi's confession."
-        },
-        {
-          "name": "Naomi Nagata",
-          "line": "Rocinante engineer whose secret cache of protomolecule has just detonated the crew's trust in her."
-        },
-        {
           "name": "Chrisjen Avasarala",
-          "line": "Senior UN deputy who has openly turned on Errinwright and is now hunting Mao's hybrid program with Bobbie's help."
+          "line": "UN power broker who has openly turned on Errinwright's faction and, after Bobbie's testimony, is convinced Jules-Pierre Mao is selling a protomolecule weapon to both governments."
         },
         {
           "name": "Bobbie Draper",
-          "line": "Former MCRN gunnery sergeant, defected to Avasarala on Earth after being ordered to lie about the Ganymede hybrid."
+          "line": "MCRN gunnery sergeant, sole survivor of a Ganymede squad wiped out by a protomolecule hybrid, who has defected to Earth and become Avasarala's protector."
         },
         {
-          "name": "Sadavir Errinwright",
-          "line": "UN Undersecretary and Mao's Earth partner; known to Avasarala as a traitor but still in office and untouched."
+          "name": "Naomi Nagata",
+          "line": "Rocinante's Belter engineer, now revealed to have secretly handed a sample of the protomolecule to Fred Johnson so the Belt would not be left defenceless."
+        },
+        {
+          "name": "Joe Miller",
+          "line": "Broken ex-detective who executes the protomolecule project's lead scientist Dresden, then rides a bomb into Eros and, with a hybrid Julie, steers the station into Venus."
+        },
+        {
+          "name": "Julie Mao",
+          "line": "Now a protomolecule-hybrid consciousness inside Eros; Miller talks her into diverting the station away from Earth and crashing them both into Venus."
+        },
+        {
+          "name": "Fred Johnson",
+          "line": "OPA leader at Tycho whose alliance with the Rocinante fractures after Miller's kill on Thoth, and who is quietly holding Naomi's protomolecule sample as Belt leverage."
         },
         {
           "name": "Jules-Pierre Mao",
-          "line": "Fugitive protomolecule financier, still producing hybrids from kidnapped Ganymede children in a hidden lab on Io."
+          "line": "Fugitive industrialist peddling a protomolecule weapon to both Earth and Mars, whose attempted ambush of Avasarala aboard his yacht is broken by Bobbie's power armour."
         }
       ]
     },
@@ -239,27 +247,39 @@
       "characters": [
         {
           "name": "Jim Holden",
-          "line": "Rocinante captain, unwilling messenger of the Ring; Miller is finally gone from his head."
+          "line": "Rocinante captain drawn toward the newly-formed Ring by visions of Miller; after touching the alien core he alone knows the protomolecule's makers were themselves annihilated."
         },
         {
           "name": "Naomi Nagata",
-          "line": "Rocinante engineer who briefly commanded the Behemoth before choosing to return to her crew."
+          "line": "Rocinante engineer serving alongside Drummer aboard the OPA's converted Behemoth as the Belt takes its place beside Earth and Mars at the Ring."
         },
         {
           "name": "Chrisjen Avasarala",
-          "line": "Senior UN official vindicated after exposing Errinwright, now urging caution over the gates against a growing expansionist mood."
+          "line": "Vindicated UN leader who, with Pastor Anna's leaked confession, has finally seen Errinwright arrested and peace restored between Earth and Mars."
         },
         {
           "name": "Bobbie Draper",
-          "line": "Reinstated Martian marine who has again shed the uniform to formally join the Rocinante crew."
+          "line": "Martian marine attached to Avasarala's circle, present at Io when Nguyen's hybrid warheads are stopped and Mao is captured."
         },
         {
           "name": "Klaes Ashford",
-          "line": "Former pirate turned OPA commander, chastened after his attempt to destroy the Ring was overridden by Holden."
+          "line": "Belter captain aboard the Behemoth who tries to destroy the Ring to save humanity, only to be overruled when Holden calms the station."
         },
         {
           "name": "Camina Drummer",
-          "line": "OPA captain of the Behemoth, now walking on mechanical legs and allied with Naomi and Ashford after surviving the slow zone."
+          "line": "OPA officer captaining the Behemoth at the Ring, standing with Naomi as the Belt claims its seat among the powers."
+        },
+        {
+          "name": "Jules-Pierre Mao",
+          "line": "Captured at Io after Admiral Nguyen's hybrid-warhead gambit collapses, ending his private protomolecule war."
+        },
+        {
+          "name": "Sadavir Errinwright",
+          "line": "Exposed by Pastor Anna's leaked confession and arrested by the UN, ending his campaign to frame Avasarala and force war with Mars."
+        },
+        {
+          "name": "Fred Johnson",
+          "line": "OPA leader who downs Nguyen's remaining ships at Io and is recognised, alongside Dawes, as the legitimate government of the Belt."
         }
       ]
     },
@@ -326,29 +346,50 @@
       "characters": [
         {
           "name": "Jim Holden",
-          "line": "Rocinante captain returning from Ilus, finally free of Miller and carrying proof that the new worlds are not safe."
+          "line": "Avasarala's envoy on the new-frontier world of Ilus, guided by a Miller-construct to reactivate an alien machine that unleashes cascading disasters on the settlers."
         },
         {
           "name": "Naomi Nagata",
-          "line": "Rocinante engineer whose ex-lover Marco Inaros and long-lost son Filip are now active enemies of everyone she loves."
+          "line": "Rocinante engineer struggling with Ilus's gravity, now confronted on the Belt side by the reappearance of her ex-lover Marco Inaros and their son Filip."
         },
         {
           "name": "Chrisjen Avasarala",
-          "line": "Defeated UN Secretary General on her way to Luna, estranged from her husband Arjun and out of formal power."
+          "line": "UN Secretary-General who loses her re-election to Nancy Gao just as Marco Inaros's stealth asteroids race toward Earth."
         },
         {
           "name": "Bobbie Draper",
-          "line": "Avasarala's Mars asset, freshly signed on after uncovering the pipeline of Martian stealth tech and weapons flowing to the Belt."
+          "line": "Ex-marine unable to find honest work on Mars, now embedded in Esai Martin's smuggling ring and uncovering that Martian military hardware is being funnelled to the Belt."
         },
         {
           "name": "Marco Inaros",
-          "line": "Radical OPA faction leader, Naomi's ex and father of her son, who has just launched cloaked asteroids at an unsuspecting Earth."
+          "line": "Belter warlord and Naomi's ex-lover, acquitted after hijacking a UN colony ship and now launching stealth-coated asteroids at Earth."
         },
         {
           "name": "Camina Drummer",
-          "line": "Former Medina Station commander who resigned in disgust after Fred Johnson gave Earth the intel on Marco's location."
+          "line": "OPA peacekeeper who captured Inaros only to see Belt politics set him free, then lost her partner Ashford to his crew."
+        },
+        {
+          "name": "Joe Miller",
+          "line": "Protomolecule-driven construct guiding Holden on Ilus, who pushes a proxy body through an alien artefact to shut down every process on the planet and is gone for good."
+        },
+        {
+          "name": "Klaes Ashford",
+          "line": "OPA peacekeeper who hunted Marco Inaros to the edge of the Belt and was killed there by Naomi's son Filip."
         }
       ]
     }
-  }
+  },
+  "notPeople": [
+    "belt",
+    "canterbury",
+    "earth",
+    "eros",
+    "ilus",
+    "mars",
+    "martian",
+    "ring",
+    "rocinante",
+    "station",
+    "venus"
+  ]
 }

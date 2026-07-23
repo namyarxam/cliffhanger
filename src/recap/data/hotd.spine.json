@@ -65,27 +65,35 @@
       "characters": [
         {
           "name": "Rhaenyra Targaryen",
-          "line": "Named heir by her father and now declared the true queen on Dragonstone; her son Luke has just been killed."
-        },
-        {
-          "name": "Daemon Targaryen",
-          "line": "Rhaenyra's uncle and secret husband; commands a dragon and pushes hard for immediate war."
-        },
-        {
-          "name": "Alicent Hightower",
-          "line": "Dowager queen and mother of the crowned Aegon II; convinced her dying husband named her son heir."
+          "line": "Viserys's named heir, now proclaimed queen on Dragonstone after Aegon's usurpation and grieving her son Luke, killed by Aemond and Vhagar."
         },
         {
           "name": "Aegon II Targaryen",
-          "line": "Crowned king by his grandfather's coup though he never sought the throne; dissolute and easily led."
+          "line": "Alicent's eldest son, crowned king in King's Landing by Otto and the Small Council on the strength of Viserys's misheard deathbed words."
+        },
+        {
+          "name": "Alicent Hightower",
+          "line": "Otto's daughter turned queen, convinced Viserys named her son Aegon heir and now the emotional engine of the Greens."
+        },
+        {
+          "name": "Daemon Targaryen",
+          "line": "Rhaenyra's uncle and secret husband, her fiercest sword on Dragonstone as the realm splits into war."
         },
         {
           "name": "Aemond Targaryen",
-          "line": "One-eyed prince who rides the largest dragon in the world, Vhagar; has just killed Luke against his own command."
+          "line": "Alicent's one-eyed second son, rider of the enormous Vhagar and the killer of Rhaenyra's son Luke over Storm's End."
         },
         {
           "name": "Otto Hightower",
-          "line": "Hand of the King and architect of the Green coup; committed to keeping his grandson Aegon on the Iron Throne."
+          "line": "Alicent's father and Hand of the King, the political architect of Aegon II's coronation."
+        },
+        {
+          "name": "King Viserys I Targaryen",
+          "line": "The ailing king who named Rhaenyra his heir and, on his deathbed, muttered a prophecy that Alicent fatally misunderstood as endorsing their son Aegon."
+        },
+        {
+          "name": "Lucerys 'Luke' Velaryon",
+          "line": "Rhaenyra's middle son, sent to treat with the Baratheons at Storm's End and swallowed with his dragon by Aemond's Vhagar."
         }
       ]
     },
@@ -152,29 +160,36 @@
       "characters": [
         {
           "name": "Rhaenyra Targaryen",
-          "line": "The Black Queen at Dragonstone; commands four war-dragons and will accept no peace short of Aegon's death."
-        },
-        {
-          "name": "Daemon Targaryen",
-          "line": "Holds Harrenhal after prophetic visions turned him from his own ambition, but has failed to raise the Riverlands for his wife."
+          "line": "The self-proclaimed queen on Dragonstone, recruiting Targaryen bastards as dragonriders and demanding Aegon's death after her secret peace talks with Alicent collapse."
         },
         {
           "name": "Aegon II Targaryen",
-          "line": "Comatose and severely burned after Rook's Rest; his throne is held by his brother in his absence."
+          "line": "The Greens' king, left comatose and disfigured after Rook's Rest with his brother Aemond ruling as regent in his place."
         },
         {
           "name": "Aemond Targaryen",
-          "line": "Prince Regent while Aegon lies broken; the sole Green dragon-rider of consequence, on Vhagar."
+          "line": "Rider of Vhagar, killer of Rhaenys at Rook's Rest and now regent of the Seven Kingdoms in Aegon's incapacity."
         },
         {
           "name": "Alicent Hightower",
-          "line": "Dismissed from her son's council; has secretly offered to hand King's Landing to Rhaenyra if her family is spared."
+          "line": "The dowager queen, sidelined at court and driven to slip to Dragonstone offering to hand over King's Landing if her family is spared."
+        },
+        {
+          "name": "Daemon Targaryen",
+          "line": "Rhaenyra's consort, bogged down at Harrenhal and unmanned by prophetic visions fed to him by the witch Alys Rivers."
         },
         {
           "name": "Ser Criston Cole",
-          "line": "Hand of the King and Aemond's chosen commander, marching an army on Daemon's Harrenhal."
+          "line": "The new Hand of the King, installed after Otto's dismissal and prosecuting Aegon's war with far greater cruelty."
         }
       ]
     }
-  }
+  },
+  "notPeople": [
+    "dragonstone",
+    "king",
+    "landing",
+    "luke",
+    "vhagar"
+  ]
 }
