@@ -235,18 +235,22 @@ export function buildFrames(entry: RecapListEntry, seasons: RecapSeason[]): Reca
     },
   ];
 
-  if (entry.overview) {
-    open.push({
-      act: 'open',
-      kind: 'beat',
-      image: keyArt,
-      dim: 0.45,
-      season: 0,
-      label: 'The premise',
-      // Orients someone who has forgotten not just the plot but the setup.
-      text: entry.overview,
-    });
-  }
+  // No premise frame.
+  //
+  // It used to sit here, carrying the show's TMDB logline. Three things were
+  // wrong with it. It was the only frame grounded in marketing copy — the
+  // source deliberately rejected everywhere else for being vague exactly where
+  // a recap must be specific ("seeds of division sow friction across the
+  // realm"). It ran two to three times the length of any beat, at the very
+  // position where a reader decides whether to continue. And it addressed
+  // someone who has never seen the show, which the season cap makes
+  // impossible: a recap is only ever offered for seasons the viewer has
+  // FINISHED.
+  //
+  // The mismatch is sharpest on a later-season recap, where the logline
+  // re-sets up a conflict the viewer watched resolve seasons ago instead of
+  // saying where things stand now. The character cards do that job, specific
+  // to the boundary being recapped.
 
   const players: RecapFrame[] = boundary.characters.map(c => ({
     act: 'players',
