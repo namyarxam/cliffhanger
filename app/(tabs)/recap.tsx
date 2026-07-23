@@ -264,7 +264,15 @@ function RecapCard({
           // page stops scrolling.
           directionalLockEnabled
         >
-          <Text style={styles.chipLabel}>Earlier</Text>
+          {/* The Recap tab's own icon, reused. "Earlier" as a word read as
+              stray UI copy next to a row of season pills; the same glyph the
+              tab is marked with says "further back" without adding a label. */}
+          <FontAwesome
+            name="history"
+            size={13}
+            color={theme.textFaint}
+            style={styles.chipLabelIcon}
+          />
           {earlier.map(r => (
             <Pressable
               key={rangeLabel(r)}
@@ -391,10 +399,7 @@ const createStyles = (theme: Theme) =>
       paddingHorizontal: 14,
       paddingVertical: 12,
     },
-    chipLabel: {
-      fontSize: 12,
-      fontFamily: 'DMSans_500Medium',
-      color: theme.textDim,
+    chipLabelIcon: {
       marginRight: 2,
     },
     chip: {
