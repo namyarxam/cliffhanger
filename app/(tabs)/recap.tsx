@@ -10,7 +10,7 @@
 // recap directly rather than selecting-then-confirming, which would add a tap
 // for no information gain. The play button starts the full span.
 
-import { useEffect, useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { View, Text, StyleSheet, Pressable, ScrollView, ActivityIndicator } from 'react-native';
 import { Image } from 'expo-image';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -42,6 +42,31 @@ export default function RecapScreen() {
     enabled: !!userId,
   });
   const recaps = recapsQ.data ?? [];
+
+  /**
+   * Two tiers: what's worth recapping now, and everything else.
+   *
+   * A recap earns a full card when it is both available and still ahead of
+   * you — you have finished a season and there is more show to come. Once a
+   * show is finished, or you have not started it, the recap still exists but
+   * the moment for it does not, so it goes below the fold rather than
+   * competing for attention with the ones that are actually useful.
+   *
+   * Collapsed rather than hidden because the ratio only gets worse as the
+   * library grows: at 100 shows a typical viewer has a handful of live ones
+   * and everything else is either finished or untracked, and a wall of locked
+   * cards is not a list.
+   */
+  const [active, dormant] = useMemo(() => {
+    const a: RecapListEntry[] = [];
+    const d: RecapListEntry[] = [];
+    for (const r of recaps) {
+      (r.maxSeason > 0 && r.watchStatus !== 'watched' ? a : d).push(r);
+    }
+    return [a, d];
+  }, [recaps]);
+
+  const [showDormant, setShowDormant] = useState(false);
 
   useEffect(() => {
     if (recapsQ.error) silentCatch('recap:list')(recapsQ.error);
@@ -89,7 +114,7 @@ export default function RecapScreen() {
           </View>
         )}
 
-        {recaps.map(item => (
+        {active.map(item => (
           <RecapCard
             key={item.slug}
             item={item}
@@ -98,6 +123,36 @@ export default function RecapScreen() {
             onOpen={range => open(item.slug, range)}
           />
         ))}
+
+        {dormant.length > 0 && (
+          <>
+            <Pressable
+              style={styles.moreRow}
+              onPress={() => setShowDormant(v => !v)}
+              hitSlop={6}
+            >
+              <Text style={styles.moreText}>
+                {showDormant ? 'Hide' : `${dormant.length} more`}
+              </Text>
+              <FontAwesome
+                name={showDormant ? 'chevron-up' : 'chevron-down'}
+                size={11}
+                color={theme.textDim}
+              />
+            </Pressable>
+
+            {showDormant &&
+              dormant.map(item => (
+                <RecapCard
+                  key={item.slug}
+                  item={item}
+                  styles={styles}
+                  theme={theme}
+                  onOpen={range => open(item.slug, range)}
+                />
+              ))}
+          </>
+        )}
 
         {!recapsQ.isLoading && !recapsQ.isError && (
           <View style={styles.note}>
@@ -188,7 +243,18 @@ function RecapCard({
         </View>
       </Pressable>
 
-      <View style={styles.chipRow}>
+      {/* Horizontal scroll because the chip count is unbounded: an eight-season
+          show offers nine ranges, which overflows the screen edge and would
+          otherwise simply be unreachable. */}
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        contentContainerStyle={styles.chipRow}
+        // The row sits inside a vertically scrolling list; without this a
+        // near-vertical drag starting on a chip gets captured here and the
+        // page stops scrolling.
+        directionalLockEnabled
+      >
         <Text style={styles.chipLabel}>{locked ? '' : 'Recap'}</Text>
         {ranges.map(r => (
           <Pressable
@@ -200,7 +266,7 @@ function RecapCard({
             <Text style={styles.chipText}>{rangeLabel(r)}</Text>
           </Pressable>
         ))}
-      </View>
+      </ScrollView>
     </View>
   );
 }
@@ -235,6 +301,18 @@ const createStyles = (theme: Theme) =>
       // Guarantees the scroll view has at least a full screen of content box,
       // so alwaysBounceVertical has something to bounce.
       flexGrow: 1,
+    },
+    moreRow: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: 7,
+      paddingVertical: 14,
+    },
+    moreText: {
+      fontSize: 13,
+      fontFamily: 'DMSans_500Medium',
+      color: theme.textDim,
     },
     stateBox: {
       paddingVertical: 40,
