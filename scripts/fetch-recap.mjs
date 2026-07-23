@@ -76,8 +76,30 @@ function resolveAuth(env) {
 
 // ---------------------------------------------------------------- http
 
-async function getJSON(url, init, label) {
+// Wikipedia's API policy requires a descriptive User-Agent identifying the
+// client and a contact address. Requests without one are not merely
+// discouraged — they are rate-limited to the point of 429ing under any real
+// volume, which is silent here because a failed lookup degrades to the TMDB
+// synopsis rather than throwing. The result was every show in a batch coming
+// back with 0% plot coverage and being rejected as "thin", when in fact
+// nothing had been read at all.
+const WIKI_UA = 'CliffhangerRecapBot/1.0 (https://cliffhangerapp.com; cliffhanger.support@gmail.com)';
+
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+async function getJSON(url, init, label, attempt = 0) {
   const res = await fetch(url, init);
+
+  // Back off and retry on rate limiting. Grounding quality depends entirely on
+  // these lookups landing, so a 429 must not be allowed to degrade quietly
+  // into a worse recap.
+  if (res.status === 429 && attempt < 4) {
+    const wait = Number(res.headers.get('retry-after')) * 1000 || 1500 * 2 ** attempt;
+    console.log(`    · ${label} rate-limited, retrying in ${Math.round(wait / 1000)}s`);
+    await sleep(wait);
+    return getJSON(url, init, label, attempt + 1);
+  }
+
   if (!res.ok) {
     const body = await res.text().catch(() => '');
     throw new Error(`${label} failed ${res.status}: ${body.slice(0, 200)}`);
@@ -173,15 +195,32 @@ async function fetchWikipediaSummaries(showName, maxSeason) {
   // ("List of The Expanse episodes") and leave the main article with none, so
   // try both shapes. Disambiguated title first — "<Show> (TV series)" avoids
   // landing on an unrelated article for generic show names.
+  // Where a show keeps its episode summaries varies, and getting this wrong
+  // looks identical to a show with no coverage. Three layouts in the wild:
+  //
+  //   1. One combined list        "List of <Show> episodes"   (The Expanse)
+  //   2. On the main article      "<Show> (TV series)"        (Silo)
+  //   3. One article PER SEASON   "<Show> season 1", ...      (most recent
+  //                                                            HBO/prestige)
+  //
+  // Layout 3 is why the first batch run reported 0% coverage for Succession,
+  // The Last of Us, House of the Dragon and Andor: their episode tables do
+  // not live on any single page, so a combined-page-only search finds nothing
+  // and silently falls back to marketing synopses.
   const candidates = [
-    `${showName} (TV series)`,
     `List of ${showName} episodes`,
+    `${showName} (TV series)`,
     showName,
+    // Per-season articles, merged. Requested regardless of which season the
+    // caller asked for, then hard-filtered downstream like every other source.
+    ...Array.from({ length: maxSeason }, (_, i) => `${showName} season ${i + 1}`),
   ];
 
+  const merged = new Map();
+
   for (const title of candidates) {
-    const url = `https://en.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(title)}&prop=wikitext&format=json&formatversion=2`;
-    const json = await getJSON(url, {}, 'Wikipedia parse').catch(() => null);
+    const url = `https://en.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(title)}&prop=wikitext&format=json&formatversion=2&redirects=1`;
+    const json = await getJSON(url, { headers: { 'User-Agent': WIKI_UA } }, 'Wikipedia parse').catch(() => null);
     const wt = json?.parse?.wikitext;
     if (!wt || !/\{\{Episode list/.test(wt)) continue;
 
@@ -194,15 +233,25 @@ async function fetchWikipediaSummaries(showName, maxSeason) {
     // a recap, mislabelling a season is a spoiler bug. Episode numbering is
     // structural and resets exactly once per season, which makes it a far
     // sturdier signal.
+    // Which season this page describes, when the page IS a single season.
+    // A per-season article restarts episode numbering at 1 with no way to tell
+    // from the numbering alone which season it belongs to, so it is taken from
+    // the title. Combined pages fall back to the resetting-counter logic.
+    const titleSeason = title.match(/ season (\d+)$/i);
+    const pageSeason = titleSeason ? Number(titleSeason[1]) : null;
+
     const out = new Map();
-    let season = 1;
+    let season = pageSeason ?? 1;
     let prevEp = 0;
     for (const m of wt.matchAll(/\{\{Episode list[\s\S]*?\n\}\}/g)) {
       const num = m[0].match(/\|\s*EpisodeNumber2\s*=\s*(\d+)/);
       const sum = m[0].match(/ShortSummary\s*=\s*([\s\S]*?)(?=\n\s*\||\n\}\})/);
       if (!num) continue;
       const ep = Number(num[1]);
-      if (ep <= prevEp) season += 1; // numbering restarted → new season
+      // On a per-season page every episode belongs to that season, so the
+      // reset heuristic must not fire — a page covering S3 would otherwise
+      // relabel its own episodes as S4 partway through.
+      if (pageSeason === null && ep <= prevEp) season += 1;
       prevEp = ep;
       // The gate. Anything past the boundary never enters the dataset.
       if (season > maxSeason) continue;
@@ -219,27 +268,45 @@ async function fetchWikipediaSummaries(showName, maxSeason) {
       }, {});
       console.log(
         `  Wikipedia "${title}": ${out.size} summaries ` +
-          `(${Object.entries(perSeason).map(([s, n]) => `S${s}:${n}`).join(' ')}) — seasons 1-${maxSeason} only`,
+          `(${Object.entries(perSeason).map(([s, n]) => `S${s}:${n}`).join(' ')})`,
       );
-      return out;
+      // Merged rather than returned, because per-season layouts spread one
+      // show across several pages. First writer wins, so a combined list (tried
+      // first, and usually better maintained) is never overwritten by a
+      // per-season article covering the same episode.
+      for (const [k, v] of out) if (!merged.has(k)) merged.set(k, v);
     }
+
+    // A combined page that already covered everything makes the per-season
+    // requests pointless — skip them rather than hammer Wikipedia for nothing.
+    if (pageSeason === null && seasonsCovered(merged) >= maxSeason) break;
   }
-  console.warn('  ⚠ no Wikipedia summaries found — falling back to official synopses only');
-  return new Map();
+
+  if (merged.size === 0) {
+    console.warn('  ⚠ no Wikipedia summaries found — falling back to official synopses only');
+  } else {
+    console.log(`  Wikipedia total: ${merged.size} summaries across ${seasonsCovered(merged)} season(s), seasons 1-${maxSeason} only`);
+  }
+  return merged;
+}
+
+/** How many distinct seasons a summary map covers. */
+function seasonsCovered(map) {
+  return new Set([...map.keys()].map(k => Number(k.split('x')[0]))).size;
 }
 
 // ---------------------------------------------------------------- build
 
-async function build({ showName, slug, through }) {
+async function build({ showName, slug, through: throughArg }) {
   const env = await loadEnv();
   const auth = resolveAuth(env);
-  console.log(`\n▸ Building recap dataset for "${showName}" (through S${through})`);
+  console.log(`\n▸ Building recap dataset for "${showName}" (through S${throughArg})`);
   console.log(`  auth: ${auth.mode}`);
 
   const tmdb = makeTmdb(auth);
   const { tmdbId, tvmazeId, matchedBy } = await resolveShow(tmdb, showName);
 
-  const [detail, images, credits, tvmazeCast] = await Promise.all([
+  const [detail, images, credits, tvmazeCast, tvmazeShow] = await Promise.all([
     tmdb(`/tv/${tmdbId}`),
     tmdb(`/tv/${tmdbId}/images`),
     tmdb(`/tv/${tmdbId}/aggregate_credits`),
@@ -250,6 +317,11 @@ async function build({ showName, slug, through }) {
     // remember. TVMaze character images are in-costume stills from the show.
     // Coverage is partial, so it's a preference, not a replacement.
     getJSON(`https://api.tvmaze.com/shows/${tvmazeId}/cast`, {}, 'TVMaze cast').catch(() => []),
+    // Structural signals for eligibility: type ('Scripted' vs Reality/Talk/
+    // Documentary), genres (carries 'Anthology'), status ('Ended' vs
+    // 'Running'), and runtime. None of this affects the recap's content — it
+    // decides whether the show should have one at all.
+    getJSON(`https://api.tvmaze.com/shows/${tvmazeId}`, {}, 'TVMaze show').catch(() => null),
   ]);
 
   // Keyed by lowercased character name for lookup against the TMDB roles.
@@ -259,6 +331,22 @@ async function build({ showName, slug, through }) {
     const img = c.character?.image?.original;
     if (name && img && !characterImages.has(name)) characterImages.set(name, img);
   }
+
+  // Resolve the boundary now that the real season count is known.
+  //
+  // 'all' means every aired season and is for building a full dataset. That is
+  // safe because the SERVING boundary is enforced per-viewer in the database
+  // (recap_max_season), not by what we happen to have fetched. A numeric
+  // --through is still honoured and still clamped, for the case where the
+  // dataset itself must not contain a season — including when whoever is
+  // reviewing the output has not watched that far.
+  const through = throughArg === 'all'
+    ? detail.number_of_seasons
+    : Math.min(Number(throughArg), detail.number_of_seasons);
+  if (!Number.isFinite(through) || through < 1) {
+    throw new Error(`could not resolve a season range (--through ${throughArg}, show has ${detail.number_of_seasons})`);
+  }
+  console.log(`  seasons: 1-${through} of ${detail.number_of_seasons}`);
 
   const wiki = await fetchWikipediaSummaries(detail.name ?? showName, through);
 
@@ -350,6 +438,14 @@ async function build({ showName, slug, through }) {
     backdrops,
     throughSeason: through,
     totalSeasons: detail.number_of_seasons,
+    // Recorded, not acted on here. scripts/eligibility.mjs turns these into a
+    // verdict; keeping the raw signals means the rules can change without
+    // re-fetching every show.
+    showType: tvmazeShow?.type ?? null,
+    genres: tvmazeShow?.genres ?? [],
+    status: tvmazeShow?.status ?? detail.status ?? null,
+    runtime: tvmazeShow?.averageRuntime ?? detail.episode_run_time?.[0] ?? null,
+    language: tvmazeShow?.language ?? detail.original_language ?? null,
     seasons,
     cast,
     generatedAt: new Date().toISOString(),
@@ -378,7 +474,8 @@ const arg = (name, fallback) => {
 build({
   showName: arg('show', 'Silo'),
   slug: arg('slug', 'silo'),
-  through: Number(arg('through', '2')),
+  // 'all' is the default for batch work; a number bounds the dataset itself.
+  through: arg('through', 'all'),
 }).catch(err => {
   console.error(`\n✗ ${err.message}\n`);
   process.exit(1);

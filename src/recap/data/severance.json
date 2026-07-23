@@ -1,0 +1,655 @@
+{
+  "slug": "severance",
+  "tmdbId": 95396,
+  "tvmazeId": 44933,
+  "matchedBy": "imdb_id",
+  "title": "Severance",
+  "overview": "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives. When a mysterious colleague appears outside of work, it begins a journey to discover the truth about their jobs.",
+  "firstAirDate": "2022-02-17",
+  "network": "Apple TV",
+  "poster": "https://image.tmdb.org/t/p/w780/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/original/ixgFmf1X59PUZam2qbAfskx2gQr.jpg",
+  "backdrops": [
+    "https://image.tmdb.org/t/p/original/ixgFmf1X59PUZam2qbAfskx2gQr.jpg",
+    "https://image.tmdb.org/t/p/original/r9KaBE7i4ovg8uSppQrCp6ZdPD9.jpg",
+    "https://image.tmdb.org/t/p/original/npD65vPa4vvn1ZHpp3o05A5vdKT.jpg",
+    "https://image.tmdb.org/t/p/original/8MtMFngDWvIdRo34rz3ao0BGBAe.jpg",
+    "https://image.tmdb.org/t/p/original/5OsiT39OiZNdD0v2LiAcI2TpSYj.jpg",
+    "https://image.tmdb.org/t/p/original/nNt41AqlnyLMgtiyfiVuS2O8ES9.jpg",
+    "https://image.tmdb.org/t/p/original/nFWN7E5n170YN8SdxekuDEv0qTE.jpg",
+    "https://image.tmdb.org/t/p/original/kcehRTOk6xwmcCqKBbbwB68Eo5z.jpg",
+    "https://image.tmdb.org/t/p/original/8hQA04JLNolV9xfvMkaYg3Hg08w.jpg",
+    "https://image.tmdb.org/t/p/original/k90HW0I203WXKZIDwt8RXGDYYmV.jpg",
+    "https://image.tmdb.org/t/p/original/dWTkHxSUPK84Zuw9nZ0X3CDweYf.jpg",
+    "https://image.tmdb.org/t/p/original/ysrfOKkeU2LzltOhSe2RbaYwMoH.jpg"
+  ],
+  "throughSeason": 3,
+  "totalSeasons": 3,
+  "showType": "Scripted",
+  "genres": [
+    "Drama",
+    "Science-Fiction",
+    "Mystery"
+  ],
+  "status": "Running",
+  "runtime": 49,
+  "language": "English",
+  "seasons": [
+    {
+      "season": 1,
+      "name": "Season 1",
+      "airDate": "2022-02-17",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Good News About Hell",
+          "overview": "Mark is promoted to lead a team who've had their memories surgically divided between their work and personal lives.",
+          "plot": "Mark Scout, who works in Lumon Industries' Macrodata Refinement (MDR) department, discovers he is being promoted to department head in light of his coworker Petey's sudden departure. His first task is to orient Helly, the replacement, who wakes up in a conference room with no memory of who or where she is. After being given an orientation and learning her name, she demands to—and is allowed to—leave, but finds she is unable. She watches a video explaining that she has undergone the \"severance\" procedure, which split her memories to create a version of herself that will only exist inside the workplace. The \"outside\" version of Mark, a former professor grieving his wife Gemma's death and living in the Lumon-subsidized town of Kier, encounters Petey, who claims to have reversed his supposedly-permanent severance. Mark returns home and interacts with his neighbor, \"Mrs.Selvig\", unaware that she is his senior manager Harmony Cobel.",
+          "airDate": "2022-02-17",
+          "still": "https://image.tmdb.org/t/p/original/sP3GZe9j7BY3CAyZGFuZxxnGpN1.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/sP3GZe9j7BY3CAyZGFuZxxnGpN1.jpg",
+            "https://image.tmdb.org/t/p/original/8Ppx99arhViF65p9R12oSI8ie2h.jpg",
+            "https://image.tmdb.org/t/p/original/ficJLNOH4L1CR4bYE38F8lsPdtX.jpg",
+            "https://image.tmdb.org/t/p/original/dfipFwIiWrKNzpOKejxUMKnUVTD.jpg",
+            "https://image.tmdb.org/t/p/original/U4ord8x6ZS3FancHubtTULNpOf.jpg",
+            "https://image.tmdb.org/t/p/original/k56CRF90i345jAEGnEdUeASnBgp.jpg",
+            "https://image.tmdb.org/t/p/original/5OVPgjoysI0yxGedmwOD8ge2iHw.jpg",
+            "https://image.tmdb.org/t/p/original/xYNpnrTPEBksGsMtismUuluntWq.jpg",
+            "https://image.tmdb.org/t/p/original/vK5xpx3abNIWYjSgUZuIlMQZ0sS.jpg",
+            "https://image.tmdb.org/t/p/original/1b0OO7MG2Z2mGtOIyggQfKV6G0J.jpg",
+            "https://image.tmdb.org/t/p/original/zlkBamd4VURbbQtjY5LMkcbNEDm.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Half Loop",
+          "overview": "The team train new hire Helly on macrodata refinement. Mark takes a day off to meet with a mysterious former colleague.",
+          "plot": "The previous day, Helly undergoes the severance procedure as a new employee, implanting a microchip inside her brain. At the office, the severed (or \"innie\") Helly is introduced to her coworkers, Dylan and Irving, and is instructed that her job is to sort encrypted numbers into categories. During a welcome party headed by deputy floor manager Seth Milchick, Helly attempts to escape by writing her outside self (or \"outie\") a resignation note, but the elevator shuts down due to Lumon's built-in \"code detectors\", which prevent unauthorized communication between selves. Mark claims responsibility and is put into the \"break room\" as punishment. Irving hallucinates a black liquid covering his desk and is administered a \"wellness check\" with counselor Ms.Casey. At the wellness center, Irving meets Burt, head of the Optics & Design (O&D) department. Outside, Petey explains he has \"reintegration sickness\" from reversing his severance. Petey tells Mark the purpose of the break room, which is used for mentally wearing down disobedient employees. Mark gives Petey shelter in his house. While taking a shower, Petey hallucinates and collapses.",
+          "airDate": "2022-02-17",
+          "still": "https://image.tmdb.org/t/p/original/wIQP0P2tyE7VRIN3xR8Efq7UgKt.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/wIQP0P2tyE7VRIN3xR8Efq7UgKt.jpg",
+            "https://image.tmdb.org/t/p/original/kvnyls1KdlHLxxefg4SODDXMfxp.jpg",
+            "https://image.tmdb.org/t/p/original/xsGg0dG6J2madTgoybSnNxVGP9B.jpg",
+            "https://image.tmdb.org/t/p/original/X4lxAdaHoauNcaGf8hV097EIXi.jpg",
+            "https://image.tmdb.org/t/p/original/sc7du9eaQGXbpxAxvAdHNt8pi1.jpg",
+            "https://image.tmdb.org/t/p/original/7YgP9ppx2IND87AcwYMTYGhIUvd.jpg",
+            "https://image.tmdb.org/t/p/original/aopod0amNyciNFcbihqOULvqIQR.jpg",
+            "https://image.tmdb.org/t/p/original/9kTePdqiKXBxdxPQSdbAHgpOIAZ.jpg",
+            "https://image.tmdb.org/t/p/original/t9bQL5Bq4XtUyAXwpv0xGdxf5yQ.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "In Perpetuity",
+          "overview": "Mark takes the team on a field trip, but Helly continues to rebel. A deteriorating Petey struggles to tell Mark about Lumon’s misdeeds.",
+          "plot": "Petey tells Mark that mysterious benefactors helped him undergo the reintegration procedure. While Mark is at work, his sister, Devon, and brother-in-law, Ricken, deliver the latter's self-help book, The You You Are, to his doorstep, which Cobel steals and takes to Lumon to check for hidden messages. As she searches Mark's house, Petey recognizes her and flees, suffering more hallucinations and eventually collapsing at a convenience store. At the office, Helly learns her resignation request sent to her outie has been denied. Mark thwarts her various attempts to smuggle other messages to her outie. To help Helly understand why she is working at Lumon, Irving suggests they show her the office's Perpetuity Wing, which documents the history of Lumon's founder, Kier Eagan, and his succeeding dynasty. After attempting another escape, Helly is taken to the break room, where Milchick forces her to repeatedly recite an apologetic passage. Near his shift's end, Mark finds a hand-drawn map of Lumon's hallways, left for him by Petey. After work, Mark follows ambulance traffic to the convenience store and witnesses Petey being carried away by paramedics. Mark rushes home to hide evidence of Petey's stay, but is interrupted when Petey's abandoned cell phone rings.",
+          "airDate": "2022-02-24",
+          "still": "https://image.tmdb.org/t/p/original/hMpY4wpHlwMf42aDM25bU9fau5f.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/hMpY4wpHlwMf42aDM25bU9fau5f.jpg",
+            "https://image.tmdb.org/t/p/original/yezUFOqLt0U3haSYc5gIBzfsPvo.jpg",
+            "https://image.tmdb.org/t/p/original/6gUaEC5oX0lPvQfu34qrWFLb5vL.jpg",
+            "https://image.tmdb.org/t/p/original/ye9LUQm5kwWjnKir8SC52kHhW7O.jpg",
+            "https://image.tmdb.org/t/p/original/rhPKOr5Ax2v7452LqxajFz5T7iI.jpg",
+            "https://image.tmdb.org/t/p/original/vB8r4uYnhH1QsqpDmYkFLnDrPih.jpg",
+            "https://image.tmdb.org/t/p/original/u1hyKB1Kv0CzNhxBArqIPt5lpSJ.jpg",
+            "https://image.tmdb.org/t/p/original/qUJYISRZeOmMHzWT6Btt12CXi18.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "The You You Are",
+          "overview": "Irving finds an intriguing book at work. Helly aggressively pursues a meeting with her Outie. Mark attends a funeral with Ms. Selvig.",
+          "plot": "Mark stashes away Petey's phone, noticing several missed calls from the same blocked number. The next day, Irving visits O&D, where he grows closer to Burt. He discovers Ricken's book, left behind by Milchick. Mark keeps the book, despite promising to give it to management. Helly returns from the break room after being forced to apologize over a thousand times. Mark shreds Petey's map after it is found by Helly. Helly finds a paper cutter and threatens self-mutilation unless she is granted a recorded resignation request. However, her outie sends back a recording, firmly denying both the request and her innie's personhood. Later that night, Mark receives a news notification reporting that Petey has died. Mark and Cobel (as Mrs.Selvig) attend the funeral, during which Cobel secretly extracts Petey's severance chip. Irving discovers that O&D actually has at least seven employees, working in a massive unlabelled back room. Helly smuggles out an extension cord and hangs herself in an elevator.",
+          "airDate": "2022-03-03",
+          "still": "https://image.tmdb.org/t/p/original/dzQJeDznS0I4spAqTImiLH9p252.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dzQJeDznS0I4spAqTImiLH9p252.jpg",
+            "https://image.tmdb.org/t/p/original/4wTk208D686C8wyakg6DrwBkbM3.jpg",
+            "https://image.tmdb.org/t/p/original/Al8CUnVtHkLGsHDIiqLiX59vBeV.jpg",
+            "https://image.tmdb.org/t/p/original/oANJiud8iOwBbZwD0u3CeMPBKUm.jpg",
+            "https://image.tmdb.org/t/p/original/dMQ51CSZp6kqXZwowLznKJQX6yX.jpg",
+            "https://image.tmdb.org/t/p/original/qPj5s36Cw6EH9s9rAzZVlAn7j7m.jpg",
+            "https://image.tmdb.org/t/p/original/z2DvTHTpklvypM9llY3oqGouZWn.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "The Grim Barbarity of Optics and Design",
+          "overview": "Irving and Dylan confront Burt about his lies. Mark and Helly discover a strange new department.",
+          "plot": "Helly is injured by her suicide attempt, but ultimately survives; she returns to work three days later. Mark continues to read Ricken's book, which carries strong anti-establishment sentiments. Outside work, Mark visits Devon and Ricken at a birthing lodge, where Devon gives birth. When Helly returns, Cobel orders Ms.Casey to watch her closely, but Mark sneaks Helly out of MDR and reveals he has been recreating Petey's map. When Mark tries to convince Helly to help with recreating the map, she initially refuses, but eventually agrees. Burt admits to Irving and Dylan that he lied about the size of O&D due to MDR being seen as untrustworthy; they realize Lumon is pitting the departments against one another. Burt takes the two to O&D's back room and introduces them to his employees as friends.",
+          "airDate": "2022-03-10",
+          "still": "https://image.tmdb.org/t/p/original/oy4BZotFbNX5YoPkWuWF3kcdMVw.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/oy4BZotFbNX5YoPkWuWF3kcdMVw.jpg",
+            "https://image.tmdb.org/t/p/original/nq5RLC2yftolIMOnkcJJVL8chHH.jpg",
+            "https://image.tmdb.org/t/p/original/4692mGEVPQnHPIZ0j4tSg5fQ9FX.jpg",
+            "https://image.tmdb.org/t/p/original/v4lEYOP0QZnj5pfqRtEYaArvKMc.jpg",
+            "https://image.tmdb.org/t/p/original/zVHNe24vvF4HPGCffw3r2gHFQpe.jpg",
+            "https://image.tmdb.org/t/p/original/8IPC55YZWkR1anTtpSt3FbiFoV5.jpg",
+            "https://image.tmdb.org/t/p/original/emPalIKsikgb9dAYhOdG8Hx1Vvt.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Hide and Seek",
+          "overview": "The team angers Cobel by forming an alliance.",
+          "plot": "Lumon security chief Doug Graner informs Cobel that he has identified ex-employee Reghabi as responsible for Petey's reintegration. Irving and Burt admit their feelings to one another, but Irving admits he is not ready to commit to a relationship. Mark has Irving introduce MDR to O&D, where he calls for the departments to work together to uncover Lumon's secrets. However, Milchick finds them and sends Mark to the break room. Milchick later briefly awakens Dylan's innie inside his outie's home to locate a card Dylan stole from O&D, leading Dylan's innie to discover he has a son. Cobel (as Mrs.Selvig) gets close to Devon and Ricken by acting as their lactation consultant. Mark goes on a date with Alexa, Devon's midwife, to a concert by Petey's daughter's punk-rock band, and sings along to an anti-Lumon protest song. Later, Mark finally answers Petey's phone and is contacted by Reghabi to meet at a nearby university. Cobel orders a keycard-locked door to be installed at the entrance to MDR.",
+          "airDate": "2022-03-17",
+          "still": "https://image.tmdb.org/t/p/original/3fQp0pUtgDkqqyEbXY8KKCZPMU7.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/3fQp0pUtgDkqqyEbXY8KKCZPMU7.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Defiant Jazz",
+          "overview": "Mark and the team encounter new security measures from Cobel.",
+          "plot": "While Mark is meeting with Reghabi, Graner enters the building, following a tip from campus security. Reghabi kills Graner and gives Mark his access card, telling him to take it to his innie. Milchick engages in a \"Music Dance Experience\" with the department, as a prize for Helly. Dylan refuses to participate and eventually attacks Milchick, enraged that he cannot know more about his child. After Milchick leaves, Dylan tells the rest of MDR about Lumon's ability to wake them up outside the severed floor, known as the \"overtime contingency\". The MDR team uses Graner's card to regain access to the hallways. Mark and Helly scheme to find the security office; inside, they find out how the overtime contingency is activated. Dylan offers to stay behind after-hours to wake the others up on the outside. Irving departs to O&D, worried about Burt's safety. Upon arrival, he discovers that Burt is retiring, and openly berates the non-severed Milchick for exploiting the severed employees. After work, Alexa visits a drunken Mark, who scares her off after ripping up a photo of Gemma. After she leaves, Mark reassembles the photo, revealing it to be Ms.Casey.",
+          "airDate": "2022-03-24",
+          "still": "https://image.tmdb.org/t/p/original/gHoKlbC2esqq3SXm0ZCcl3bzpFZ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/gHoKlbC2esqq3SXm0ZCcl3bzpFZ.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "What's for Dinner?",
+          "overview": "The team prepares a plan. Mark attends Devon and Ricken’s party.",
+          "plot": "Irving's outie lives alone in an apartment, where he paints identical images of a dark corridor. Helly reaches 100% on her data refinement file, thereby meeting MDR's quota for the quarter. After a final wellness session with Mark, Ms.Casey is ordered by Cobel to be sent back down to the \"testing floor\", whose entrance matches Irving's paintings. While MDR celebrates making its quota, Cobel is suspended by Lumon's board for withholding knowledge of Helly's suicide attempt, and her avocational activities as \"Mrs.Selvig\". The MDR team prepares for Dylan to remotely awaken them on the outside. Helly kisses Mark before departing. Mark's outie attends Ricken's book-reading party and tells \"Mrs.Selvig\" that he plans to quit Lumon. She encourages him to do so. Dylan receives a \"waffle party\" as a reward for meeting quota, in which he dons a Kier Eagan mask and sits within a replica of Kier's bedroom in the Perpetuity Wing while ritualistic and seductive dances are performed in front of him. Dylan leaves midway to access the security office and activates the overtime contingency to awaken Mark, Irving, and Helly's innies in the outside world.",
+          "airDate": "2022-03-31",
+          "still": "https://image.tmdb.org/t/p/original/8Gv9ELume0jo7gz7R2h4tPmVLsD.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/8Gv9ELume0jo7gz7R2h4tPmVLsD.jpg",
+            "https://image.tmdb.org/t/p/original/hmfoVewhL4AxkU6ffUyn9OVsFxD.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "The We We Are",
+          "overview": "The team discovers troubling revelations.",
+          "plot": "Mark's innie awakens in Devon's home and finds himself hugging Mrs.Selvig. While excusing himself to find Devon, he calls Cobel by name, alerting her that the overtime contingency has been activated. Cobel calls Milchick to warn him. Mark privately reveals to Devon that he is his innie; Devon tells him of Gemma's death and learns that Mrs.Selvig is Mark's boss. Irving wakes up in his apartment, discovering his outie's paintings, and finds a map and employee directory which he uses to locate Burt. Helly wakes up at a Lumon gala, where she learns that her outie is Helena―the daughter of Lumon CEO Jame Eagan―who underwent severance as a publicity stunt. Cobel races to the gala and attempts to stop Helly from making a scheduled speech. Helly gets onstage and tells the crowd of the innies' subjugation and torment. Irving arrives at Burt's house only to find Burt is already in a relationship. Mark finds a photo showing Ms.Casey to be Gemma. He rushes to tell Devon, but is only able to say \"she's alive\" before Milchick tackles Dylan, deactivating the overtime contingency and reverting the three to their outies.",
+          "airDate": "2022-04-07",
+          "still": "https://image.tmdb.org/t/p/original/dzx8D2B0ELncXuCNwtPCags43Q.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dzx8D2B0ELncXuCNwtPCags43Q.jpg",
+            "https://image.tmdb.org/t/p/original/7UHgW5gUVqnAxUvQq7Yu5tLdaMe.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 2,
+      "name": "Season 2",
+      "airDate": "2025-01-16",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Hello, Ms. Cobel",
+          "overview": "Mark returns to work under different circumstances. Secrets from the Outie world come to light.",
+          "plot": "Mark reawakens on the severed floor in a panic, finding Ms.Casey's wellness room decommissioned, and his whole team replaced. Milchick, now running the severed floor, introduces Mark to new deputy manager MissHuang—a child—and informs him that five months have passed since the \"Macrodat Uprising\", which made Mark's team the faces of \"severance reform\". Milchick says that while Mark's outie asked to return to Lumon, the other three refused. Mark sabotages his new team as a distraction to reach Lumon's board and request the other innies' return. The next time Mark wakes up on the severed floor, he reunites with Dylan, Irving, and Helly. The four are taken to a renovated Break Room, where Milchick promises better working conditions and offers the innies a choice to leave permanently or stay. Mark informs the group what he learned while outside, while Helly lies about her outie's identity. A distraught Irving nearly leaves over his heartbreak at Burt having a partner, but Dylan convinces him to stay. Milchick privately shows Dylan blueprints for an outie family visitation suite. Having all chosen to stay, the team resumes its work.",
+          "airDate": "2025-01-16",
+          "still": "https://image.tmdb.org/t/p/original/a97vNY8Knu45FLQib0uQZ2VReLy.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/a97vNY8Knu45FLQib0uQZ2VReLy.jpg",
+            "https://image.tmdb.org/t/p/original/kKyt4kDN9gRudxQywamFRpDOcJX.jpg",
+            "https://image.tmdb.org/t/p/original/tx47PrKPL61eFberTwa3qjc1IVi.jpg",
+            "https://image.tmdb.org/t/p/original/91VaMjZDDxPe7PqhHPVeDvVdezu.jpg",
+            "https://image.tmdb.org/t/p/original/iei8ZoocJootPUcDhK7gqvCLYOP.jpg",
+            "https://image.tmdb.org/t/p/original/te5d6HqW9LD4p69W0C6GbkLOAMT.jpg",
+            "https://image.tmdb.org/t/p/original/vLdwhW5e1f9r0ekoRVLVsubUyja.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Goodbye, Mrs. Selvig",
+          "overview": "Mark contemplates the meaning of a message.",
+          "plot": "Following the Overtime Contingency, Milchick is tasked with damage control and fires both Irving and Dylan; Irving lies to Milchick about his whereabouts that night. Helena, accompanied by security chief Mr.Drummond, meets with Cobel and offers her a promotion as a reward for her loyalty, but Cobel is insulted at not being offered her old job back. Helena films an apology video passing off her outburst at the gala as the result of intoxication. Milchick attempts to convince Mark to return to work, but Mark decides to quit, much to the dismay of Devon, who is concerned that Gemma is alive. Dylan attempts to find a new job but is discriminated against for being severed. Helena insists that Mark must return to work to finish his latest file, \"Cold Harbor\"; Milchick convinces him to return by offering him a hefty pay raise and promises that the happiness his innie receives will trickle back to him. After hearing Mark's plea to the board, Milchick rehires Dylan and Irving, while the board decides to send Helena back to work. Mark runs into Cobel while returning home and demands answers about Gemma, but she angrily drives off.",
+          "airDate": "2025-01-23",
+          "still": "https://image.tmdb.org/t/p/original/wjlSkqMoLngSO6fv2Ajt2CIeCSi.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/wjlSkqMoLngSO6fv2Ajt2CIeCSi.jpg",
+            "https://image.tmdb.org/t/p/original/f2JCzYw69zOChUrE5SKGpTs6SoY.jpg",
+            "https://image.tmdb.org/t/p/original/daBbkjPEV0jayGMAEZeEny5Bf7n.jpg",
+            "https://image.tmdb.org/t/p/original/jpiXqMbyW6KhbNaa2oMU10szIfy.jpg",
+            "https://image.tmdb.org/t/p/original/eAxhwqQY69OGWvTnZrDSATAFJfy.jpg",
+            "https://image.tmdb.org/t/p/original/5InXatN4buu3faiQVtx9CSDuidU.jpg",
+            "https://image.tmdb.org/t/p/original/3e2DXM5pgwh1t1t7o4KkDRdX9hf.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Who Is Alive?",
+          "overview": "Mark, Helly, Irving, and Dylan search for answers.",
+          "plot": "Mark and Helly go to hand out missing-persons posters of Ms.Casey across the severed floor. The two stumble upon the Mammalians Nurturable department, led by a woman named Lorne; though initially hostile, the Mammalians promise not to hinder MDR's search for Ms.Casey. Irving takes a missing poster to O&D, where he runs into Felicia, who identifies his sketch of the dark hallway from his outie's paintings as the \"Exports Hall\". Dylan is granted a visitation with his outie's wife, Gretchen. Natalie approaches Ricken to discuss adapting The You You Are for innies. Cobel agrees to rejoin Lumon on the condition that she is rehired as Floor Manager. Helena instead suggests an impromptu meeting with the board, prompting a spooked Cobel to drive off. Mark and Devon attempt to burn an afterimage into his retinas to communicate with his innie; Reghabi interrupts Mark, telling him his strategy will not work, and that reintegration is the only way to send messages in and out of Lumon. Mark agrees to the procedure after Reghabi confirms his wife is alive. As they begin conducting the process in Mark's basement, Mark flashes between the present and his orientation on the severed floor.",
+          "airDate": "2025-01-30",
+          "still": "https://image.tmdb.org/t/p/original/j4AUAq1XJOBmfXsLphZzsCz6pZs.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/j4AUAq1XJOBmfXsLphZzsCz6pZs.jpg",
+            "https://image.tmdb.org/t/p/original/7vALTwwcqqwYU2u3WpQGo4nwWuO.jpg",
+            "https://image.tmdb.org/t/p/original/YAj6NDZaqnakgwPChenp22GcI8.jpg",
+            "https://image.tmdb.org/t/p/original/e7zJAljtx56xaWxS2B92b8XHNvB.jpg",
+            "https://image.tmdb.org/t/p/original/uvouLgl7VCw0ljtuamtyf8p3o1r.jpg",
+            "https://image.tmdb.org/t/p/original/pvlTKQVEfTDWdEGNratBLoNj8FO.jpg",
+            "https://image.tmdb.org/t/p/original/as95SQVDT65uPkPYRH5JQvUqrhP.jpg",
+            "https://image.tmdb.org/t/p/original/nTRzjZ4MbSXDdTwiTrdLlnueAst.jpg",
+            "https://image.tmdb.org/t/p/original/oJ4BI9XakYqtHHjWxiLSJBRHByT.jpg",
+            "https://image.tmdb.org/t/p/original/rtmJ9TJL8i2W3hUiacaRTm61Iw6.jpg",
+            "https://image.tmdb.org/t/p/original/d9OYaNZlafTY03JWVgLPT1xhICN.jpg",
+            "https://image.tmdb.org/t/p/original/hxVJyGKjFHrNfbW5gEJgBoosXVX.jpg",
+            "https://image.tmdb.org/t/p/original/rc1PGBTmfwcT0DXqD9s3nKxLejB.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Woe's Hollow",
+          "overview": "The team participates in a group activity.",
+          "plot": "MDR find themselves in the outside world on a frozen lake. A prerecorded message from Milchick informs them that they are on an \"Outdoor Retreat and Team-Building Occurrence\" (ORTBO), and directs them to find the previously unrevealed fourth appendix to the Lumon handbook, written by Kier Eagan, by following the directions of strange doppelgängers of themselves. Upon taking the appendix to Woe's Hollow, a waterfall, they are greeted by Milchick and MissHuang, who have set up a campsite. Helly is confronted by Irving about her suspicious account of her time during the Overtime Contingency. She retorts by claiming Irving is bitter about Burt's retirement, causing Irving to storm off. Helly and Mark have sex, after which Mark briefly hallucinates Gemma's head on Helly's body. Irving sleeps outside, experiencing strange dreams. The next morning, Irving again confronts Helly. To force her to admit she is a mole, he yells for Milchick and begins drowning Helly in Woe's Hollow. She finally relents and orders Milchick to revert her to her innie, revealing her to have been Helena undercover as Helly ever since MDR's return to work. Milchick then fires Irving and reverts him to his outie.",
+          "airDate": "2025-02-06",
+          "still": "https://image.tmdb.org/t/p/original/mioOOhTaShLd1MPKsmfirbe9AwI.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/mioOOhTaShLd1MPKsmfirbe9AwI.jpg",
+            "https://image.tmdb.org/t/p/original/zjJZYqVKlK1J2nnwRjb79QiCPRP.jpg",
+            "https://image.tmdb.org/t/p/original/zHjAQZdSyFbE3qiC8qdCxOJMlRh.jpg",
+            "https://image.tmdb.org/t/p/original/adVByH57TMAk8d2XsOBjS22NDtd.jpg",
+            "https://image.tmdb.org/t/p/original/qa8R9uQOHHwxlgjB6XB2aIKEtJc.jpg",
+            "https://image.tmdb.org/t/p/original/mU5tEDOgxsJHTCPWYoSjiHWzo7y.jpg",
+            "https://image.tmdb.org/t/p/original/rte2nIwpWyRmu6fgADMaFc6DMe0.jpg",
+            "https://image.tmdb.org/t/p/original/yhhPfSwVbcdLd8HWd5anPUC6Gsf.jpg",
+            "https://image.tmdb.org/t/p/original/yxiRT8ggHitjBUaZATgQlQmf0EK.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Trojan's Horse",
+          "overview": "Tensions emerge after the team suffers a loss.",
+          "plot": "Following the ORTBO, a reluctant Helena is compelled to let her innie go back to working on the severed floor until Mark completes the Cold Harbor file. Milchick fulfills Dylan's demand for a funeral for Irving. During the ceremony, Dylan realizes that Irving's final words to him reference a Break Room poster. Behind it, he discovers a card with directions to the Exports Hall, but quickly hides it again. Helly learns that Ms.Casey is Mark's outie's wife, and Mark tells her he cannot trust her. Milchick undergoes his first performance review as department head, where Drummond admonishes his failed kindness reforms, demanding that the innies be treated \"as what they really are\". Milchick confronts Mark, revealing he knows that Mark and Helena had sex during the retreat. Ricken begins work on the Lumon edition of The You You Are, laden with company propaganda, to Devon's dismay. Irving's outie notices Burt watching him. Burt admits he has been following him since the Overtime Contingency and theorizes that they were romantically involved on the severed floor. He invites Irving to dinner with his husband, Fields. Mark, in a sudden flash to the severed floor while at home, sees Gemma alive as Ms.Casey.",
+          "airDate": "2025-02-13",
+          "still": "https://image.tmdb.org/t/p/original/csATq6CUnvyMY26cTKy3YmlmOyK.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/csATq6CUnvyMY26cTKy3YmlmOyK.jpg",
+            "https://image.tmdb.org/t/p/original/7Gw2DWAbhsBREKFbM2S0h5sD0tL.jpg",
+            "https://image.tmdb.org/t/p/original/hB4u0p6tbod4Wqs6bYEtVb826xM.jpg",
+            "https://image.tmdb.org/t/p/original/1OlFvytCW8d1yqMtP5fFSDJbHCo.jpg",
+            "https://image.tmdb.org/t/p/original/8rC9Ua9si3rTZex1bZWJeTY0BrL.jpg",
+            "https://image.tmdb.org/t/p/original/cEgrYdtGRWsWcp4oMAIQthMo2Aj.jpg",
+            "https://image.tmdb.org/t/p/original/8EsThZRKdkEpEdXxY91yuzFlm22.jpg",
+            "https://image.tmdb.org/t/p/original/2Bg5Bo27d9He0A4XHxytbUMvIrb.jpg",
+            "https://image.tmdb.org/t/p/original/9M29H6MtmLNwRG2vHL6hmy3sDCh.jpg",
+            "https://image.tmdb.org/t/p/original/sAavV18TjyhZGFFjlxMjUnqKDoz.jpg",
+            "https://image.tmdb.org/t/p/original/th4CwnMtEMnYvB0zIrIlFHVaIA1.jpg",
+            "https://image.tmdb.org/t/p/original/tcCiWFW0EXlG1MVSlSQKJoIpX5z.jpg",
+            "https://image.tmdb.org/t/p/original/oAF04GVNpNlwBKYqc14DU6zwIWD.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Attila",
+          "overview": "Bonds are tested. Mark continues on his path of discovery.",
+          "plot": "Dylan informs Mark and Helly about his discovery of Irving's instructions to reach the Exports Hall. Milchick takes time off to address the infractions in his performance review, leaving MissHuang in charge. Mark confesses to Helly that he and Helena had sex during the ORTBO. Feeling that Helena stole this experience from her, Helly initiates sex with Mark. Gretchen visits Dylan's innie again and the two kiss. She later lies to outie Dylan that the visitation was cancelled. Burt and Fields have Irving for dinner, and an awkward conversation unfolds. Meanwhile, Drummond breaks into Irving's apartment and discovers his directory of Lumon employees. Reghabi tells Mark they must accelerate the reintegration process by surgically \"flooding\" his severance chip, despite the risk of hemorrhage. Mark initially refuses but later encounters Helena at a restaurant; he leaves shortly after and decides to proceed with the procedure. While talking to Devon right after the procedure, Mark suffers a seizure and collapses.",
+          "airDate": "2025-02-20",
+          "still": "https://image.tmdb.org/t/p/original/4J8HXT1FIjnLJiNt6xwR0TnmLcX.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/4J8HXT1FIjnLJiNt6xwR0TnmLcX.jpg",
+            "https://image.tmdb.org/t/p/original/vASEjvdBdGkulC0chOrjjjn9CAu.jpg",
+            "https://image.tmdb.org/t/p/original/l9CC3onLMDBDKxs6Ie0yIWI8VmC.jpg",
+            "https://image.tmdb.org/t/p/original/cTXE7YxW8HpS5SjWB82WD7EO5HU.jpg",
+            "https://image.tmdb.org/t/p/original/7VKHhUqL3OzgH03vb91pdnWU9xX.jpg",
+            "https://image.tmdb.org/t/p/original/hXLjb4NX1qhiECqYrV4xnnmg3OC.jpg",
+            "https://image.tmdb.org/t/p/original/zwRYHVbsAD1sx1BRl6pdrR3WaPY.jpg",
+            "https://image.tmdb.org/t/p/original/lFR971pxYogUcCKFeJiTikkl9Mi.jpg",
+            "https://image.tmdb.org/t/p/original/vgd4JbMXLwoNr5lSQW5ejC9Is5o.jpg",
+            "https://image.tmdb.org/t/p/original/y0xEFe97sIFSxcp47PD6UqW8sf7.jpg",
+            "https://image.tmdb.org/t/p/original/et1FfcwQPPlPppL6HXmjvRdEB8R.jpg",
+            "https://image.tmdb.org/t/p/original/zOJRZtZx6H4iyM0vZW7DBJ74cjs.jpg",
+            "https://image.tmdb.org/t/p/original/4scDF6g3dE4Pv9f1pq7vWkI2ZqV.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Chikhai Bardo",
+          "overview": "An old romance intersects with a deadly present threat.",
+          "plot": "In flashbacks, Mark and Gemma meet at a blood drive. The two go on to have a loving marriage which is eventually marred by difficulties conceiving a child. After a miscarriage, Gemma and Mark visit a fertility clinic run by Lumon. In the present, Gemma lives on the testing floor at Lumon, where every day she visits multiple rooms (which share the names of the MDR files) that awaken a separate innie forced to endure a certain unpleasant experience, overseen by Dr.Mauer. After she leaves the rooms, Mauer interviews her about her memories and emotions from the experiences. Meanwhile, as Mark lies unconscious, Reghabi confirms to Devon that Gemma is alive, and tells her Mark is voluntarily reintegrating. Reghabi leaves when Devon suggests calling Cobel for help. On the testing floor, when Gemma tells Mauer she wants to leave, he lies by saying that Mark remarried and had a child. Gemma knocks Mauer unconscious and steals his keycard. She attempts to escape via the elevator to the severed floor, but reverts to Ms.Casey, and Milchick redirects her back down the elevator. Mark awakens with Devon beside him, still recalling memories of Gemma.",
+          "airDate": "2025-02-27",
+          "still": "https://image.tmdb.org/t/p/original/dmzBzYcEtjOYJO46p7kyRmYrHZu.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dmzBzYcEtjOYJO46p7kyRmYrHZu.jpg",
+            "https://image.tmdb.org/t/p/original/jJ2v9HCzwR28QV7Mir8pVHC13K0.jpg",
+            "https://image.tmdb.org/t/p/original/TvmP8feIm1Q2TOqSIrDZVMnaVA.jpg",
+            "https://image.tmdb.org/t/p/original/3RCsua6CrtpPlqwlzbOkzPcfwct.jpg",
+            "https://image.tmdb.org/t/p/original/6GBrWbR9svJgDWKgHTOpmFrnvBw.jpg",
+            "https://image.tmdb.org/t/p/original/ihItsgNJBRzYmy7BRrRVvCQhvOt.jpg",
+            "https://image.tmdb.org/t/p/original/sbL2bEB9vyjxvwKRvp4Bz6glxtY.jpg",
+            "https://image.tmdb.org/t/p/original/tAmiacxw2JPFIvjpNBgkBU5qDEb.jpg",
+            "https://image.tmdb.org/t/p/original/ddIYGVlZbVqGwx97hwK8KAUmf2D.jpg",
+            "https://image.tmdb.org/t/p/original/t7mL5CA8Lhm7kVWudu0JzWN8ucT.jpg",
+            "https://image.tmdb.org/t/p/original/6IGdbdaDpfmO8Rm3E8x6OM583mF.jpg",
+            "https://image.tmdb.org/t/p/original/xlpv1LKO4XQ4C03piXMj9yxWzgX.jpg",
+            "https://image.tmdb.org/t/p/original/8rHR3SntrIe73ncr03DslmR3QD5.jpg",
+            "https://image.tmdb.org/t/p/original/fb4udES82kuJ53yhEySIl9Cx73E.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Sweet Vitriol",
+          "overview": "Discoveries are made.",
+          "plot": "Cobel arrives in Salt's Neck, the seaside town she grew up in. The Lumon ether factory that once supported it has closed, and much of the population is addicted to ether. Harmony visits a restaurant to find her old friend Hampton, an ether dealer, who secretly drives her to her mother's house. Harmony's mother Charlotte died after a long illness while Harmony was at a Lumon boarding school, leaving Harmony's aunt Sissy, a Lumon devotee, in charge of the home. Harmony barges into the house against Sissy's protests and falls asleep crying on Charlotte's old bed. Hampton finds her and they take ether. In the outdoor storeroom, Harmony finds her yearbook and her sketches of the severance procedure and chip, proving she was in fact the true inventor. Sissy attempts to burn the pages, but Harmony saves them and drives off in Hampton's truck as a car approaches the house. She answers a phone call from Devon who informs her about Mark's reintegration.",
+          "airDate": "2025-03-06",
+          "still": "https://image.tmdb.org/t/p/original/piWjCKARsSkmr9kMKHZ5ynengj3.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/piWjCKARsSkmr9kMKHZ5ynengj3.jpg",
+            "https://image.tmdb.org/t/p/original/ix2tZ0USDpCCenyaFNwXCx8ZgAg.jpg",
+            "https://image.tmdb.org/t/p/original/gWk7eEiVf5zklEEvkrfUSnhNjFU.jpg",
+            "https://image.tmdb.org/t/p/original/ysvhnWcIpLu6NnuKuiEp77Drc1a.jpg",
+            "https://image.tmdb.org/t/p/original/pCnGWQpnlfBn7BJJOmkXxXY3gFR.jpg",
+            "https://image.tmdb.org/t/p/original/mrfXvNkfqAjfQw9kn5FNeq11FD8.jpg",
+            "https://image.tmdb.org/t/p/original/zwTg60fKZtejfjn53FoQYXB5QZq.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "The After Hours",
+          "overview": "Mark and Devon team with an ally. Helly investigates further.",
+          "plot": "On the day of the Cold Harbor file's expected completion, Mark and Devon meet Cobel, who says Gemma will die after the file is completed. Mark calls in sick, promising Milchick he will come to work the next day. Gretchen confesses to outie Dylan about her romance with his innie, so he threatens to quit. She confides in innie Dylan about their fight and tearfully says goodbye. Heartbroken, Dylan submits a resignation form. Burt, who worked for Lumon transporting persons of interest, breaks into Irving's apartment and drives him to a train station. He buys Irving a ticket and says to never return. They share their feelings for each other, and Burt sees Irving off. MissHuang completes her stint as deputy manager, and Milchick sends her away. Helly recovers the Exports Hall directions card and memorizes it, but Jame Eagan arrives at MDR. At night, Cobel and Devon sneak Mark into a severed cabin at the same birthing lodge where Devon had her child. Mark's innie then awakens in the cabin.",
+          "airDate": "2025-03-13",
+          "still": "https://image.tmdb.org/t/p/original/2RJaWjY4dD5s7jpdo2aGeSLmtI3.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/2RJaWjY4dD5s7jpdo2aGeSLmtI3.jpg",
+            "https://image.tmdb.org/t/p/original/r6uk8h36P7fnpvCuRKsasO1miyS.jpg",
+            "https://image.tmdb.org/t/p/original/ekPDN3cmyjTirxzW1S1Ej66FJSS.jpg",
+            "https://image.tmdb.org/t/p/original/31hR1MJhp2KxIFNXpYfeHvDxEpR.jpg",
+            "https://image.tmdb.org/t/p/original/otffrnfRUTNyVSnUZ1lrqFI5h2a.jpg",
+            "https://image.tmdb.org/t/p/original/rMyj6vJ4K81Nr2gsaZ6TtpQSHNW.jpg",
+            "https://image.tmdb.org/t/p/original/pVMm4uzDGBUHJpVIjl2XIlP1m5W.jpg",
+            "https://image.tmdb.org/t/p/original/er2Mvs6yDCSDjoG8Iz2UUT64QNO.jpg",
+            "https://image.tmdb.org/t/p/original/c2tWlYGtU2fGP0TjFpGFTCcbVK.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Cold Harbor",
+          "overview": "Mark forms a shaky alliance in an all-or-nothing play, while the team makes a dangerous last stand.",
+          "plot": "Through video recordings, Mark's outie asks his innie to rescue Gemma from the testing floor after he completes the Cold Harbor file; otherwise, Gemma will die. Mark's innie storms off after he realizes he is being asked to sacrifice himself and Helly. Dylan returns to read a letter from his outie deferring his resignation request. Mark arrives on the severed floor, completes Cold Harbor, and receives a celebration from Milchick and a marching band. Helly and Dylan trap Milchick in the MDR bathroom while Mark searches for the hallway to the testing floor. In the Cold Harbor room, Gemma is tasked with disassembling a crib; she responds without emotion, to Dr.Mauer's and Jame Eagan's delight. Drummond summons Lorne to sacrifice a goat, but discovers Mark attempting to break into the Exports Hall. He tries to kill Mark but is subdued by Lorne. Mark takes Drummond hostage, but accidentally kills him in the testing floor elevator during the transition to his outie. Mark finds Gemma and they escape to the severed floor, reverting to their innies. Mark guides Gemma through the exit door but chooses to return to Helly; the two run through the hallways as an emergency alarm blares.",
+          "airDate": "2025-03-20",
+          "still": "https://image.tmdb.org/t/p/original/gXUvGwpZxrpqMRouxM7yI28lgNa.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/gXUvGwpZxrpqMRouxM7yI28lgNa.jpg",
+            "https://image.tmdb.org/t/p/original/1FhuOQo7aBclaOE2WenXmZMCDYn.jpg",
+            "https://image.tmdb.org/t/p/original/1Gr7tpcaIzCpq9U5ttOqDDXRfSQ.jpg",
+            "https://image.tmdb.org/t/p/original/2f5gQFIiQ264IP28wq1iWcNu1fU.jpg",
+            "https://image.tmdb.org/t/p/original/pzDkVtAMOu9ABsqLsM1Mh8DyLzJ.jpg",
+            "https://image.tmdb.org/t/p/original/dHI3y9FhjZkLiU64cqSdp3eArUO.jpg",
+            "https://image.tmdb.org/t/p/original/cvQadHUOxsS2yvW4LMaVIBr0nNE.jpg",
+            "https://image.tmdb.org/t/p/original/6wQ3lniifyDeL5N2ULFWRFkBEdK.jpg",
+            "https://image.tmdb.org/t/p/original/tCui9mEGMGwdadbjn6XRAAjyiVR.jpg",
+            "https://image.tmdb.org/t/p/original/rRZ4LmJP77Z1il0ybxHD515fEJi.jpg",
+            "https://image.tmdb.org/t/p/original/9ojJMO8MtQA5qLk3MWqHAYgm1Sp.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 3,
+      "name": "Season 3",
+      "airDate": null,
+      "episodes": []
+    }
+  ],
+  "cast": [
+    {
+      "name": "Adam Scott",
+      "character": "Mark Scout",
+      "episodeCount": 19,
+      "profile": "https://image.tmdb.org/t/p/original/b82C29R6fGiPoqIglQ4lzS6q2YX.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/407/1018894.jpg"
+    },
+    {
+      "name": "Britt Lower",
+      "character": "Helly Riggs",
+      "episodeCount": 19,
+      "profile": "https://image.tmdb.org/t/p/original/5XIcTMDSyj7hRICQAcnY9U83ujF.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/628/1570381.jpg"
+    },
+    {
+      "name": "Tramell Tillman",
+      "character": "Seth Milchick",
+      "episodeCount": 19,
+      "profile": "https://image.tmdb.org/t/p/original/bEA15zMnkcXlRroYjKrFUWiiK7y.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/628/1570378.jpg"
+    },
+    {
+      "name": "Zach Cherry",
+      "character": "Dylan George",
+      "episodeCount": 19,
+      "profile": "https://image.tmdb.org/t/p/original/fT3Wv8ef0Vn0daHWAObCp2Bd4Y.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/628/1570380.jpg"
+    },
+    {
+      "name": "Jen Tullock",
+      "character": "Devon Scout-Hale",
+      "episodeCount": 19,
+      "profile": "https://image.tmdb.org/t/p/original/n8SF2SEuJLRGrY3BNHgXdgMfGAK.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/628/1570382.jpg"
+    },
+    {
+      "name": "Dichen Lachman",
+      "character": "Ms. Casey",
+      "episodeCount": 19,
+      "profile": "https://image.tmdb.org/t/p/original/yLrpMHBNtuUAu3M9EjaYHnn5EEY.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/555/1389775.jpg"
+    },
+    {
+      "name": "John Turturro",
+      "character": "Irving Bailiff",
+      "episodeCount": 19,
+      "profile": "https://image.tmdb.org/t/p/original/6O9W9cJW0kCqMzYeLupV9oH0ftn.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/555/1389790.jpg"
+    },
+    {
+      "name": "Christopher Walken",
+      "character": "Burt Goodman",
+      "episodeCount": 19,
+      "profile": "https://image.tmdb.org/t/p/original/ApgDL7nudR9T2GpjCG4vESgymO2.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/555/1389791.jpg"
+    },
+    {
+      "name": "Patricia Arquette",
+      "character": "Harmony Cobel",
+      "episodeCount": 19,
+      "profile": "https://image.tmdb.org/t/p/original/jeThSouMatiuRiLkjDvSBLHpmq0.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Chernus",
+      "character": "Ricken Hale",
+      "episodeCount": 13,
+      "profile": "https://image.tmdb.org/t/p/original/Df2ZE3P9BiXawPtewinxLPNAu2.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sarah Bock",
+      "character": "Eustice Huang",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/LasHm2Geh7htM53btbYty29ddo.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sydney Cole Alexander",
+      "character": "Natalie Kalen",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/yenCGtAl6GsRD6ofelurkSvfmHS.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Cumpsty",
+      "character": "Doug Graner",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/gNcS8eLp9aXnXuGFAQZVwD8qkVb.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Claudia Robinson",
+      "character": "Felicia",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/cJGZcLdasJg1SudShOyy1zWS6bM.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Karen Aldridge",
+      "character": "Asal Regabhi",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/9hBfSIawa72L0MPt81ZBzlIYeug.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Siberry",
+      "character": "Jame Eagan",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/2ZS6V1fNO8Pt208XlNBUynkhebp.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mark Kenneth Smaltz",
+      "character": "Judd",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/lJY3lZdpUBZSiv13gHisVSZv3UM.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ólafur Darri Ólafsson",
+      "character": "Mr. Drummond",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/5ZlxkgsiKh9d4fWzR23sDf8d3HO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rachel Addington",
+      "character": "Elizabeth",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/4WSxfcmtiy1nAtX2P48ae3Z5cxc.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Yul Vazquez",
+      "character": "Peter 'Petey' Kilmer",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/chAxqgeJVoRoQukw7zRYgtlo4KI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Merritt Wever",
+      "character": "Gretchen George",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/ldd1WntzQ72DVuNLoko8yMFHH7j.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nikki M. James",
+      "character": "Alexa",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/1UrvslAV9FOF82Hh9A96kgfVaT1.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Donald Webber Jr.",
+      "character": "Patton",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/ayDvwq0Li3Lk3l1PkREKz02i1nU.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Grace Rex",
+      "character": "Rebeck",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/g6BiwPLVnSdlpAin52eLHHcMQ37.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Robby Benson",
+      "character": "Dr. Mauer",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/rYcDiM9LrStdlcb80N3WAR2CsHX.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Anthoula Katsimatides",
+      "character": "Florence",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/2pCQoHgzo45ToYrhYZz17wfGJt7.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Marc Geller",
+      "character": "Kier Eagan (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/rwvfPImLE3Q7H1nCnEjsWLDhSph.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Cassidy Layton",
+      "character": "June Kilmer",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/4GTGAK1KXGRO6MWQboUZEn1ftoZ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ethan Flower",
+      "character": "Angelo Arteta",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/sDAMzhge9Dv8zVpVW0wlE9XyCnH.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Bob Balaban",
+      "character": "Mark Wilkins",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/qceORed11dvRnxQjVGexPvgF5Xu.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alia Shawkat",
+      "character": "Gwendolyn Y.",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/aUc0hlILKfDKhlKnWQliGjkQL9a.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Stefano Carannante",
+      "character": "Dario Rossi",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/2PhRhFAB4wNMhv7atXekpBYASxF.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Adam Jepsen",
+      "character": "Man in Hallway",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/6m0oiZId45Fc7e4UJVArMIVA9E6.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Gwendoline Christie",
+      "character": "Lorne",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/kmlv5i02n3zKryBr2W3kSeWVKTD.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sandra Bernhard",
+      "character": "Cecily",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/3S93MgFQtXH4eO3oCxx1BA13nBj.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jeff McCarthy",
+      "character": "Nature Documentary Voice (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/1xyUKIybgVk3raZ054iOO1lhlWE.jpg",
+      "inCharacter": null
+    }
+  ],
+  "generatedAt": "2026-07-23T03:59:11.770Z"
+}

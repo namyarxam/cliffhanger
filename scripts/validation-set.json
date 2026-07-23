@@ -1,0 +1,32 @@
+{
+  "note": "Step 2 validation set. Each entry probes a specific way the pipeline could break, not just 'another show'. Silo and The Expanse — the only shows validated so far — are the easiest possible case: prestige serialised sci-fi, dense Wikipedia coverage, 10-13 episode seasons, clean causal plots. Everything below is chosen to break that assumption somewhere.",
+  "shows": [
+    { "slug": "severance",       "show": "Severance",              "probe": "control",       "why": "serialised prestige drama; should just work" },
+    { "slug": "succession",      "show": "Succession",             "probe": "control",       "why": "dialogue-driven, low plot-event density" },
+    { "slug": "last-of-us",      "show": "The Last of Us",         "probe": "control",       "why": "adaptation; Wikipedia coverage is heavy" },
+    { "slug": "hotd",            "show": "House of the Dragon",    "probe": "control",       "why": "large ensemble, time jumps within seasons" },
+    { "slug": "andor",           "show": "Andor",                  "probe": "control",       "why": "multi-strand arcs that converge late" },
+
+    { "slug": "the-bear",        "show": "The Bear",               "probe": "comedy",        "why": "value is tone; does a causal spine read as sterile" },
+    { "slug": "hacks",           "show": "Hacks",                  "probe": "comedy",        "why": "character comedy with a real season arc" },
+
+    { "slug": "white-lotus",     "show": "The White Lotus",        "probe": "anthology",     "why": "season anthology; cross-season range is meaningless" },
+    { "slug": "fargo",           "show": "Fargo",                  "probe": "anthology",     "why": "pure season anthology, no shared cast" },
+    { "slug": "black-mirror",    "show": "Black Mirror",           "probe": "anthology",     "why": "EPISODE anthology — expected to be REJECTED" },
+
+    { "slug": "better-call-saul","show": "Better Call Saul",       "probe": "long",          "why": "6 seasons; first real test past 4" },
+    { "slug": "game-of-thrones", "show": "Game of Thrones",        "probe": "long",          "why": "8 seasons, huge cast; does 6 characters suffice" },
+    { "slug": "walking-dead",    "show": "The Walking Dead",       "probe": "long",          "why": "11 seasons / ~177 episodes; whole-show input may not fit" },
+
+    { "slug": "dark",            "show": "Dark",                   "probe": "non-english",   "why": "German; also non-linear time, hostile to chronological beats" },
+    { "slug": "squid-game",      "show": "Squid Game",             "probe": "non-english",   "why": "Korean; transliterated names vs cast matching" },
+
+    { "slug": "westworld",       "show": "Westworld",              "probe": "timeline",      "why": "concealed timelines; a chronological spine may mislead" },
+    { "slug": "yellowjackets",   "show": "Yellowjackets",          "probe": "timeline",      "why": "dual timeline, two casts per character" },
+
+    { "slug": "from",            "show": "From",                   "probe": "thin",          "why": "mid-tier network; tests whether coverage predicts quality" },
+    { "slug": "dark-matter",     "show": "Dark Matter",            "probe": "thin",          "why": "recent Apple series, likely sparse summaries" },
+
+    { "slug": "chernobyl",       "show": "Chernobyl",              "probe": "miniseries",    "why": "no season 2 exists — expected to be REJECTED" }
+  ]
+}

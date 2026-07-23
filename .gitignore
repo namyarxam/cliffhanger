@@ -47,3 +47,6 @@ supabase/.temp/
 # generated native folders
 /ios
 /android
+
+# Recap batch checkpoints — machine state, rewritten on every run
+src/recap/data/_batch-state.json

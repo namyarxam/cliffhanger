@@ -1,0 +1,1268 @@
+{
+  "slug": "succession",
+  "tmdbId": 76331,
+  "tvmazeId": 23470,
+  "matchedBy": "imdb_id",
+  "title": "Succession",
+  "overview": "Follow the lives of the Roy family as they contemplate their future once their aging father begins to step back from the media and entertainment conglomerate they control.",
+  "firstAirDate": "2018-06-03",
+  "network": "HBO",
+  "poster": "https://image.tmdb.org/t/p/w780/z0XiwdrCQ9yVIr4O0pxzaAYRxdW.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/original/bcdUYUFk8GdpZJPiSAas9UeocLH.jpg",
+  "backdrops": [
+    "https://image.tmdb.org/t/p/original/bcdUYUFk8GdpZJPiSAas9UeocLH.jpg",
+    "https://image.tmdb.org/t/p/original/zZ3Cv1lz61V9OXXvtCPVtCFTVP7.jpg",
+    "https://image.tmdb.org/t/p/original/d87JXX3DLkRJMfm5StCmmnmhHuX.jpg",
+    "https://image.tmdb.org/t/p/original/pvxlTSiM7VsbxdSYLrnKrN1OIUZ.jpg",
+    "https://image.tmdb.org/t/p/original/8BcQ49alz5CQABR0oiBKpQtQSro.jpg",
+    "https://image.tmdb.org/t/p/original/brC6qt6QLcWhVl1wsDp1dX9Lim.jpg",
+    "https://image.tmdb.org/t/p/original/u12ZNqhfgxYkjP16KWostx75w9r.jpg",
+    "https://image.tmdb.org/t/p/original/d2tAqGQzuP3gYwrVavrnK06xnO4.jpg",
+    "https://image.tmdb.org/t/p/original/79XfWK8A9OCHLlgljzxFDWw1htv.jpg",
+    "https://image.tmdb.org/t/p/original/3i2CTysCF2ZGX4fsg4kGTxCtsjX.jpg",
+    "https://image.tmdb.org/t/p/original/diinR50oaJYZWQDZ45HZ4VgUBXI.jpg",
+    "https://image.tmdb.org/t/p/original/kExkOcvDptfHPATQbmbYds9tAZv.jpg"
+  ],
+  "throughSeason": 4,
+  "totalSeasons": 4,
+  "showType": "Scripted",
+  "genres": [
+    "Drama",
+    "Family"
+  ],
+  "status": "Ended",
+  "runtime": 63,
+  "language": "English",
+  "seasons": [
+    {
+      "season": 1,
+      "name": "Season 1",
+      "airDate": "2018-06-03",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Celebration",
+          "overview": "On his 80th birthday, media magnate Logan Roy, whose imminent retirement was thought to be a given, shocks his family by announcing he's staying on indefinitely as CEO of Waystar/Royco. The news shatters his son Kendall, the heir apparent who's in the midst of negotiating the purchase of a digital-media venture founded by a slick operator named Lawrence.",
+          "plot": "The Roy family prepare to celebrate the 80th birthday of Logan Roy, CEO of the family-owned media conglomerate Waystar RoyCo. Logan's second-oldest son Kendall believes he will be the company heir following his father's retirement, but Logan announces that he will not be stepping down as CEO. He presents his children with papers giving his third wife, Marcia, two votes on the trust to decide his successor upon his death. During the family's traditional softball game, Logan fires his longtime COO Frank Vernon, and agrees to give a new position to his estranged great-nephew Greg Hirsch, who was fired from Waystar's management training program. Kendall leaves the game to secure Waystar's acquisition of the media startup Vaulter. On the helicopter ride back to New York City, Logan and his children Roman, Shiv, and Connor argue over the terms of the agreement, but Logan suddenly collapses from a hemorrhagic stroke and is rushed to the hospital. Kendall receives word of Logan's stroke from Lawrence Yee, Vaulter's CEO and Kendall's rival, immediately after securing the acquisition deal, and rushes to the hospital.",
+          "airDate": "2018-06-03",
+          "still": "https://image.tmdb.org/t/p/original/rIg9xLwoIGvgMaPlLbioQ08aKVd.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/rIg9xLwoIGvgMaPlLbioQ08aKVd.jpg",
+            "https://image.tmdb.org/t/p/original/7lgYRAZXtv91dRksRrpIgqrUtwJ.jpg",
+            "https://image.tmdb.org/t/p/original/9r1kC6EvzMdg3BkEqBhfM3QgJVG.jpg",
+            "https://image.tmdb.org/t/p/original/50WJP3sYh2TBCEuUuBDjA5LCBeJ.jpg",
+            "https://image.tmdb.org/t/p/original/r9cxpatmIkSGIgt8T4en3vqbRRv.jpg",
+            "https://image.tmdb.org/t/p/original/h5i8wcpxyAuW5HRndDNzE8sELHc.jpg",
+            "https://image.tmdb.org/t/p/original/e6MxrahbQ8FDPyUUzbqR8rkD4Uc.jpg",
+            "https://image.tmdb.org/t/p/original/xl3mJWyQDOzEZzVNTKs9yh0IAV5.jpg",
+            "https://image.tmdb.org/t/p/original/6Rv3HKPU7fSqBIAHt4CWwBFhtEv.jpg",
+            "https://image.tmdb.org/t/p/original/hrizOCdA2b7BscNJFbOlgahwOOT.jpg",
+            "https://image.tmdb.org/t/p/original/Aiv87759mNUc35Icmk6CJHUfrC.jpg",
+            "https://image.tmdb.org/t/p/original/tDz6zMlJ9LPy8dDmut4dBFhbRA9.jpg",
+            "https://image.tmdb.org/t/p/original/vSWykIVFfkeUxJECOfDo3U1DGsf.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Sh*t Show at the F**k Factory",
+          "overview": "Logan's incapacitation sets off a heated succession debate among his children, as the Board rushes to inform the media about leadership contingencies before the stock market opens. Greg is tasked to retrieve some important items from the Roy apartment. Kendall makes an impassioned final plea to keep Waystar/Royco in the family, and receives some sobering news.",
+          "plot": "The Roy children are in disagreement over who should take control of Waystar in the wake of Logan's incapacitation: Roman and Connor want to sign the papers out of respect for their father's wishes, whereas Kendall believes he should become CEO, and Shiv is opposed based on doubts about Marcia's role in the company. Marcia sends Greg to retrieve Logan's items from his apartment. Roman asks Greg to bring the trust change papers, but Shiv instructs the opposite; Greg ultimately decides not to bring the papers. Shiv's boyfriend Tom Wambsgans proposes to her at the hospital, and she accepts. It is eventually agreed that Kendall should become acting CEO of Waystar with Roman as COO. Waystar's general counsel, Gerri Kellman, informs Kendall that Logan is $3 billion in debt due to his expansion into parks. Logan wakes up in his hospital bed.",
+          "airDate": "2018-06-10",
+          "still": "https://image.tmdb.org/t/p/original/pI4ua90GNgDxriiSMY6Px1BjekO.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/pI4ua90GNgDxriiSMY6Px1BjekO.jpg",
+            "https://image.tmdb.org/t/p/original/qONaPYPbsQRNHpOHm5qw3hSKC7N.jpg",
+            "https://image.tmdb.org/t/p/original/ii2EJNOxpSraR8icuYHGbO4avAU.jpg",
+            "https://image.tmdb.org/t/p/original/rmDVcoZhp8PJzU4TbingKxzkaOl.jpg",
+            "https://image.tmdb.org/t/p/original/y9yDAzM2MFeFl7FDqVWlVRalT8W.jpg",
+            "https://image.tmdb.org/t/p/original/cR2wZMAT1LuiErUfoDxaLL3aZDj.jpg",
+            "https://image.tmdb.org/t/p/original/wGCExapb427SdSB3issHk2oe9os.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Lifeboats",
+          "overview": "With Waystar's stock plunging to dangerous lows, Kendall is confronted with a major crisis involving a secret bank debt. Upset with Marcia for pulling rank in the Roy apartment, Shiv decides to enlist an old paramour to conduct a background check on Logan's third wife. Kendall and Roman attend their first big meeting in their new roles, as do Tom and Greg.",
+          "plot": "Kendall learns that one of the creditors to Waystar's family holding company is entitled to demand full repayment for Logan's $3 billion debt if Waystar's stock falls below $130 per share. After a failed attempt to negotiate with the bank, Kendall enlists the aid of Stewy Hosseini, his friend from college who is now a private equity investor. Stewy agrees to inject $4 billion into Waystar in return for stock and a seat on the company's board. However, Greg later spots Stewy meeting with Sandy Furness, Logan's enemy who wants to take control of Waystar. Kendall is also trying to repair his marriage with his estranged wife Rava, but after a night together, she confirms she has already hired a divorce lawyer. Shiv asks Nate Sofrelli, a fellow political fixer and former boyfriend, to run a background check on Marcia. Kendall visits a recovering Logan to inform him that Waystar's stock has fallen below $130, but that his efforts have staved off a greater financial decline. Logan nonetheless disapproves.",
+          "airDate": "2018-06-17",
+          "still": "https://image.tmdb.org/t/p/original/5znXaotuoGAY2rtPw8WWjbcsyyI.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/5znXaotuoGAY2rtPw8WWjbcsyyI.jpg",
+            "https://image.tmdb.org/t/p/original/kffGID9slMPYsPFEitqvBuFAsaB.jpg",
+            "https://image.tmdb.org/t/p/original/s3JM8ePjpqZH6JsIuPolYJfKhic.jpg",
+            "https://image.tmdb.org/t/p/original/6gVKWobnCJAnRQ31Gsczast9MFn.jpg",
+            "https://image.tmdb.org/t/p/original/8nnacAhUR4t5FMOC4iPPL4R1Bc0.jpg",
+            "https://image.tmdb.org/t/p/original/8tePMya0TUGhBN7qEMez7bdXwBf.jpg",
+            "https://image.tmdb.org/t/p/original/8ZvCZkb6eXOuL8N0eof25bwe7H7.jpg",
+            "https://image.tmdb.org/t/p/original/edOoefEx7HBZPGBYr06CC8dyLaC.jpg",
+            "https://image.tmdb.org/t/p/original/29rnaLcwmCiGFz5TuNiknbkWXGI.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Sad Sack Wasp Trap",
+          "overview": "With the company’s annual foundation gala fundraiser approaching, and his dad out of the picture, Kendall polishes up his speech while enlisting an on-air personality from the Waystar’s ATV Networks to accompany him. Shiv tries to minimize damage from a sordid photo that threatens a client's political future. Tom inherits a “virus” from his predecessor.",
+          "plot": "The Roys prepare for the company's annual foundation gala. Frank is rehired to mentor Roman in his position as COO. Upon starting his new role as the head of the Waystar's Parks and Cruises division, Tom is given secret documents confirming a massive cover-up of crimes committed on the company's cruises, including sexual assault and potential murder. Panicked, he confides this information to Greg. At the charity gala, Connor notices changes in the transcript of Kendall's speech, leading him to mistakenly believe that Kendall plans to announce Logan's retirement. He tells Logan, who opts to make a speech in Kendall's place announcing that he is returning to his role as CEO. Tom plans to go public about the cruises scandal, but Gerri advises against it during the gala. Tom angrily accuses Greg of snitching to Gerri about the scandal, which Greg denies. However, Gerri later thanks Greg in private, confirming that he did disclose the information to her.",
+          "airDate": "2018-06-24",
+          "still": "https://image.tmdb.org/t/p/original/mZk2zOCxFBM7w0gXdG2ikqKw61J.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/mZk2zOCxFBM7w0gXdG2ikqKw61J.jpg",
+            "https://image.tmdb.org/t/p/original/145Os0X7gilqJcNEdAyzKlvaD0S.jpg",
+            "https://image.tmdb.org/t/p/original/plyUF06hMmhAl6o1hDsGVsAMJ4G.jpg",
+            "https://image.tmdb.org/t/p/original/zY63UQdqTcVOhgu6prLTXDkDxjD.jpg",
+            "https://image.tmdb.org/t/p/original/bsynuqb9VyEG1UW3YKiEQpLtzFQ.jpg",
+            "https://image.tmdb.org/t/p/original/euYe7G2ZflbaXvJAfM6zjJLZT1A.jpg",
+            "https://image.tmdb.org/t/p/original/6BsMQtjsPsuuAHuBvbfBBUGK8q1.jpg",
+            "https://image.tmdb.org/t/p/original/zTpX6dZ07ICu99ONWEs0AnsUihj.jpg",
+            "https://image.tmdb.org/t/p/original/5xRFjcg2vzcJ3JYfUxZKAtlBt3n.jpg",
+            "https://image.tmdb.org/t/p/original/zgKVW24TwqYvSMAHAYWwrqa9O7K.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "I Went to Market",
+          "overview": "After hearing Logan’s plan to expand in to local TV, Kendall begins to plot a vote of no confidence against his father. Greg drives his ornery grandfather Ewan from Canada to New York for a Thanksgiving reunion with Logan. Tom grows increasingly concerned about the terms of his prenuptial agreement with Shiv, and recruits Greg for a clandestine task.",
+          "plot": "Marcia invites Logan's estranged brother Ewan to Thanksgiving, and Greg travels to Canada to pick Ewan up. Logan wants to aggressively acquire more local news stations for Waystar, against the advice of his children and counsel. Kendall plots to hold a vote of no confidence against his father amidst his erratic behavior. Tom sends Greg to shred company documents pertaining to the cruises scandal, but Greg secretly makes copies. During dinner, an argument erupts between Logan and Ewan over the company and family's values, and Ewan storms out. As he leaves, Kendall suggests the possibility of a company takeover to Ewan, who is on Waystar's board. Ewan refuses to conspire against his own brother and quickly returns to the feast, warning Greg not to trust the Roys. The dinner falls apart after Logan strikes Kendall's son Iverson during a game. Logan's behavior convinces Gerri to support Kendall in his vote of no confidence.",
+          "airDate": "2018-07-01",
+          "still": "https://image.tmdb.org/t/p/original/s51pU8QMDODpHQfQuvpJnSyr0NL.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/s51pU8QMDODpHQfQuvpJnSyr0NL.jpg",
+            "https://image.tmdb.org/t/p/original/dd8ZZn12dVM8B36ZIY2lwUV7JA5.jpg",
+            "https://image.tmdb.org/t/p/original/sGQMtilCxRTWFrlU94uiZ7APhTx.jpg",
+            "https://image.tmdb.org/t/p/original/6AWdPuNVL9MOcTpGc6pXRNHKUSc.jpg",
+            "https://image.tmdb.org/t/p/original/m68wkArYjhNHgunXR8dz1Mp7D1D.jpg",
+            "https://image.tmdb.org/t/p/original/iqTZZmawZjkqYZUJwNAiWjkiHFb.jpg",
+            "https://image.tmdb.org/t/p/original/m40uZyt2ZXeUodUxjtnsW7wOUH2.jpg",
+            "https://image.tmdb.org/t/p/original/zZLpNIPtbRxZvXgAH11dFN352yR.jpg",
+            "https://image.tmdb.org/t/p/original/gtR3ME1VYl9JdR67sGS4MPyjYrk.jpg",
+            "https://image.tmdb.org/t/p/original/zUig9tzuORjLWWMY7LL7HKwJptl.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Which Side Are You On?",
+          "overview": "With the vote of no confidence against Logan approaching, Roman attempts to sway a neutral board member, while Kendall frantically shores up his “yea” votes. Logan arrives in Washington to meet with the president, but worries he's been snubbed after a last-minute cancellation. After successfully thwarting a potential scandal, Tom introduces Greg to fine dining.",
+          "plot": "Kendall, Roman, Frank and Gerri work together to amass a majority vote in favor of removing Logan from his position as CEO. Roman is able to sway Lawrence to their side. Logan travels to Washington, D.C. for a meeting with the President, but the meeting is cancelled last-minute amid concerns regarding a terror threat. Greg is advised by Ewan to stay out of the no-confidence vote, but Greg later discloses his knowledge of the vote to Tom. On the day of the vote, Kendall flies to Long Island to visit an ailing board member at her home to convince her to vote with him, but is unable to take a helicopter back to Manhattan due to a lockdown over the terror threat. He is thereby delayed in his arrival to the vote while stuck in traffic, and Frank begins the vote without him. However, a furious Logan refuses to leave the room during the vote and instead berates several board members (including Roman) to side with him, and fires everyone who voted against him, including Kendall and Frank.",
+          "airDate": "2018-07-08",
+          "still": "https://image.tmdb.org/t/p/original/fDs0vCCDJPDR1lMyly0hrn4Dahr.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/fDs0vCCDJPDR1lMyly0hrn4Dahr.jpg",
+            "https://image.tmdb.org/t/p/original/dyPeimsqrC38YIhRoKRZRbQDmEj.jpg",
+            "https://image.tmdb.org/t/p/original/lIapN0daORwFYQrtzkvGwkMghtu.jpg",
+            "https://image.tmdb.org/t/p/original/ro24NXNb2W0wvXQnONUpiUJZEqH.jpg",
+            "https://image.tmdb.org/t/p/original/r50eekB4SdrZMJp0doD0ZDeESdR.jpg",
+            "https://image.tmdb.org/t/p/original/h0EsPNB4RVF3VFvZKx4W8M2c7JI.jpg",
+            "https://image.tmdb.org/t/p/original/2ujLUw1uv4kyu3HnSbl5os8g05N.jpg",
+            "https://image.tmdb.org/t/p/original/kJwcdVDE8XbDs1YvREWxle67ksZ.jpg",
+            "https://image.tmdb.org/t/p/original/x4YazyD9LIM4CHdyPkleDJldrfO.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Austerlitz",
+          "overview": "In an effort to fix his public image, Logan agrees to a family therapy session at Connor’s New Mexico ranch that Logan intends to double as a publicity stunt. While lying low, Kendall spends some time with the locals and finds his sobriety tested. Shiv considers putting herself in a precarious situation when Nate pushes her to join a potential presidential candidate’s team.",
+          "plot": "Kendall has cut off communications with his family and is suing Logan for firing him from Waystar. Tabloids falsely suggest that Kendall, a recovering addict, has relapsed. Logan attempts to repair his public image by holding a weekend family therapy session at Austerlitz, Connor's ranch in New Mexico, which Kendall chooses not to attend. After a fruitless initial session, Shiv leaves to meet with Senator Gil Eavis, a Democratic presidential candidate and Logan's public rival, after Nate persuades her to join him in working on Gil's campaign. Afterwards, she and Nate have a sexual encounter in her car. Kendall eventually does arrive in New Mexico, but chooses to join some locals on a cocaine and methamphetamine binge. Roman brings him back to the ranch, where an argument erupts between Logan and the rest of the family. Logan insults Tom and berates Shiv for meeting with Gil, causing her to leave crying. He also admits to planting the tabloid allegations about Kendall's drug use prior to his actual relapse. The argument nearly turns violent when Kendall dismisses Logan's stories of the abuse he suffered as a child at the hands of his uncle. The next morning, Logan is seen privately swimming, his back covered in severe scarring, attesting to his abuse.",
+          "airDate": "2018-07-15",
+          "still": "https://image.tmdb.org/t/p/original/kQjdw7YCB43DqBuddZTHs59HE2B.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/kQjdw7YCB43DqBuddZTHs59HE2B.jpg",
+            "https://image.tmdb.org/t/p/original/dslAOeJ24kRqsLGfrUkENlnl3sG.jpg",
+            "https://image.tmdb.org/t/p/original/oEgjPY5k7hoHYMNmaVzPZzgenJA.jpg",
+            "https://image.tmdb.org/t/p/original/4WAfzr8RzXdLncWjwFwOCH7E7A1.jpg",
+            "https://image.tmdb.org/t/p/original/mdEv2J1JaZctmGxPyOvVGM60NQ7.jpg",
+            "https://image.tmdb.org/t/p/original/7BDWmNH2Q4I8sGKakXlHZ2y33an.jpg",
+            "https://image.tmdb.org/t/p/original/5zBB4NLX3Y0FLJ6THnRYLttZQU.jpg",
+            "https://image.tmdb.org/t/p/original/tL10WLdcA5io2L6Jkx34DGvx4BT.jpg",
+            "https://image.tmdb.org/t/p/original/gf8s7GiDQyvVdybQe88NATzrxMt.jpg",
+            "https://image.tmdb.org/t/p/original/sxA6NQ4mcCBuueij3toxrgZs5Zc.jpg",
+            "https://image.tmdb.org/t/p/original/n7JxRZ0Z4bUvO6zR3J1BXbCFbvg.jpg",
+            "https://image.tmdb.org/t/p/original/6jsUAptrA3HPLDEFZCIyHoMroal.jpg",
+            "https://image.tmdb.org/t/p/original/cF6k5h2ct906wbG6Ekyd3Vzgzc0.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Prague",
+          "overview": "Tom has a bachelor’s party to remember. Kendall eyes a new business opportunity with a pair of idealistic entrepreneurs. Roman looks to land a deal for local TV stations with his father’s longtime nemesis. Logan tasks Greg to act as Kendall’s babysitter during Tom’s party. Shiv and Gil get ambushed during a TV interview on a Waystar network.",
+          "plot": "Roman is put in charge of planning Tom's bachelor party. Though he initially wants to host it in Prague, Stewy invites him to a secret underground party held inside an abandoned New York railway station where powerful business and media figures mingle. Logan tasks Greg with ensuring Kendall's safety amid his renewed drug abuse. Tom is initially drawn to the party's unhinged, sexual atmosphere, but he becomes doubtful about his relationship with Shiv, unaware of her ongoing affair with Nate. He is eventually goaded by Roman into having sex with a woman at the party. Shiv meets Logan for dinner, where he implies that he knows of her affair. Shiv, perceiving this as a veiled threat, refuses to stop working for Gil. Marcia later calls Shiv to say that Logan will not be attending Shiv and Tom's wedding. At the party, Kendall meets with Stewy and Sandy, who want to buy out his share in Waystar for half a billion dollars. A vengeful Kendall instead proposes a hostile takeover that will grant them a controlling interest in the company and name him CEO.",
+          "airDate": "2018-07-22",
+          "still": "https://image.tmdb.org/t/p/original/sbpFHOXksHfmVHJIcgypVTg1GTp.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/sbpFHOXksHfmVHJIcgypVTg1GTp.jpg",
+            "https://image.tmdb.org/t/p/original/vGdRJqoT9KVujjz6b6lg449fIa9.jpg",
+            "https://image.tmdb.org/t/p/original/7iO4Ui5tkuxie6mfqhCOFd2XVYm.jpg",
+            "https://image.tmdb.org/t/p/original/d10pq76tkhz0tpUhxQO5WhG6ROl.jpg",
+            "https://image.tmdb.org/t/p/original/pD5W7w3y17bW75k1olvXIv4YD5h.jpg",
+            "https://image.tmdb.org/t/p/original/58e0B6VEZ6UAsDAmBLD4pClbdnU.jpg",
+            "https://image.tmdb.org/t/p/original/u178KSdPdix73fCveg8aAYSieGM.jpg",
+            "https://image.tmdb.org/t/p/original/sWdkGH4dDsJ43sZE3v87IhJJJJn.jpg",
+            "https://image.tmdb.org/t/p/original/35ED5btbWaI2La7swFcTcpAsbhS.jpg",
+            "https://image.tmdb.org/t/p/original/dP6wShpktKTv67jxkTaH47ovAG9.jpg",
+            "https://image.tmdb.org/t/p/original/rVDuT53Sz8lzVGvy9aY9DqotZuS.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Pre-Nuptial",
+          "overview": "The Roys assemble at an English castle to prepare for Shiv and Tom’s wedding. The children reunite with their mother Caroline, who is every bit as acerbic as Logan. As guests mingle and clash, Kendall learns from Stewy and Sandy that their plot for a hostile takeover of Waystar has been fast-tracked in order to catch Logan off guard.",
+          "plot": "The Roys gather at an English castle in preparation for Shiv and Tom's wedding. Shiv believes Logan will not be present, but Logan chooses to attend to avoid bad publicity. Kendall, Roman and Shiv reunite with their mother Caroline, Logan's second wife. Tom is surprised to find that Tabitha, the woman who performed fellatio on him at his bachelor party, is now dating Roman. Nate meets Tom and hints at his history with Shiv. Tom confronts Shiv about her infidelity, but she denies it and instead asks to know the details of the cruises scandal, hoping to use it as political ammunition for Gil. Greg later spots Shiv and Nate together, but when he attempts to relay his suspicions to Tom the following morning, Tom attacks him and warns him not to bring it up again. Shiv tells Gerri that she will let the cruises scandal remain secret as long as ATN – Waystar's right-leaning news network – stops slandering Gil over his wife's suicide. Gil and Logan agree to a truce on these terms. Kendall is told by Stewy and Sandy that their takeover of Waystar has been moved up to the day of Shiv's wedding because the story is about to come out and because they will have more leverage while Logan is out of the country.",
+          "airDate": "2018-07-29",
+          "still": "https://image.tmdb.org/t/p/original/jksAOYiFfomjezjIR561oxqId8u.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/jksAOYiFfomjezjIR561oxqId8u.jpg",
+            "https://image.tmdb.org/t/p/original/7cTDFhAW8uudfOpvewwNQGc7oQq.jpg",
+            "https://image.tmdb.org/t/p/original/pevpBJVPVdCWFTgs64G90ZlzbT.jpg",
+            "https://image.tmdb.org/t/p/original/gxfFm5U7ZQjOpFZCCn0O9AuWE5g.jpg",
+            "https://image.tmdb.org/t/p/original/gpPC7Ex3oaHAKv37uotAxxXlyot.jpg",
+            "https://image.tmdb.org/t/p/original/9vRqDy9jEE1LuyedzHyGgLomj0X.jpg",
+            "https://image.tmdb.org/t/p/original/q9cq7n7yUUQwwZumAV1hSFuvNiG.jpg",
+            "https://image.tmdb.org/t/p/original/8ccXRtxrrwGtSSZvdNRwKAZKwii.jpg",
+            "https://image.tmdb.org/t/p/original/3waF5Jndouh4VdqardhB4Qqj6mv.jpg",
+            "https://image.tmdb.org/t/p/original/l5yIgrW7hOdQGylD1HneGBtLcXZ.jpg",
+            "https://image.tmdb.org/t/p/original/efPBdAYeutuv3AKUeH8CCFHAbwo.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Nobody Is Ever Missing",
+          "overview": "Amidst the revelry of Tom and Shiv's wedding, Logan and his team find themselves in defense mode as word of the Waystar takeover bid spreads. Kendall finds an escape outlet as the situation becomes supercharged, while Tom parlays his new wife's candor into the removal of an unwanted guest. Season One Finale.",
+          "plot": "Kendall serves Logan with his planned takeover bid. A furious Logan kicks him out, but begins scrambling to get ahead of the situation with his lawyers immediately afterwards. During the wedding, the siblings are infuriated to learn from Logan about Kendall's takeover plans. Shiv admits her infidelity to Tom and suggests that she is better suited for a non-monogamous relationship. Tom forgives her and later ejects Nate from the wedding. Outside the castle, Kendall does drugs with Andrew \"Doddy\" Dodds, a young waiter whom Logan had fired from the staff, and the two drive off in search of cocaine. They swerve to avoid a deer, and the car lands in the water. Unable to save Doddy, Kendall flees the scene and returns to the wedding in shock. The police investigate the following morning, and Logan tells Kendall that he will make the case go away if Kendall calls off the takeover and attends rehab. Kendall obliges and breaks down crying in his father's arms.",
+          "airDate": "2018-08-05",
+          "still": "https://image.tmdb.org/t/p/original/QFrxZg56jttjbRAgC83eNGoXLl.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/QFrxZg56jttjbRAgC83eNGoXLl.jpg",
+            "https://image.tmdb.org/t/p/original/ldb9PgbI6O7bT0AUIn9vIgFc4wN.jpg",
+            "https://image.tmdb.org/t/p/original/yP8ZKlGleSHi9p08ypOhNHnhdfU.jpg",
+            "https://image.tmdb.org/t/p/original/urF24rSptdM9XXlQCR5xBOcvdHI.jpg",
+            "https://image.tmdb.org/t/p/original/ndUXdYTXZN3MkMrp3ShFrxWyTeU.jpg",
+            "https://image.tmdb.org/t/p/original/5uMJG1dxdzW0Sq2Eh4P5mFjZW7i.jpg",
+            "https://image.tmdb.org/t/p/original/nZaJZK5gKxOW8jR29MEloaTsNnK.jpg",
+            "https://image.tmdb.org/t/p/original/YVcJrzZcPdQ1cr7ZvSwgEJhaBJ.jpg",
+            "https://image.tmdb.org/t/p/original/54X9LS0jWBNadfgwbLQt1VvLCyB.jpg",
+            "https://image.tmdb.org/t/p/original/8zks9lYPPgFm7eYO8hbCkvgF8Uu.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 2,
+      "name": "Season 2",
+      "airDate": "2019-08-11",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "The Summer Palace",
+          "overview": "Kendall tries to make amends with his dad for his takeover attempt betrayal. Logan receives some unvarnished advice from his banker about the next best move for Waystar Royco. As Tom maneuvers for a new position in the company, Shiv tries to determine whether Logan is playing mind games regarding his successor.",
+          "plot": "48 hours after Shiv and Tom's wedding, Kendall is pulled out of a rehab facility in Iceland to give a public statement regarding his decision to back off from his role in the hostile takeover. Logan's financial adviser Jamie Laird suggests that he sell the company and name his successor. Despite going to rehab, Kendall continues to indulge his cocaine addiction and receives his deliveries from Greg. The Roys assemble for lunch at the family's summer home in the Hamptons. Logan is unable to extract an honest opinion from his children about whether he should sell the company; he has each of his children individually meet him in his office, and offers Shiv the role of CEO during their meeting. Shiv is eager for the opportunity, but does not disclose it to Tom, only telling him that he has been promoted to ATN's Chair of Global Broadcast News. That night, Logan flies Kendall to a meeting with Stewy and Sandy, who refuse to come to a compromise.",
+          "airDate": "2019-08-11",
+          "still": "https://image.tmdb.org/t/p/original/5MY4RFK1qlbFUSh9thmf6vbE8bE.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/5MY4RFK1qlbFUSh9thmf6vbE8bE.jpg",
+            "https://image.tmdb.org/t/p/original/k777sr0RcK6I8CAlrcGtuYyWUTU.jpg",
+            "https://image.tmdb.org/t/p/original/kbmZQhzaUti0CVnwDab8feT3Ozl.jpg",
+            "https://image.tmdb.org/t/p/original/t9soteByKOqqPBlA6sUj3IjWITU.jpg",
+            "https://image.tmdb.org/t/p/original/u683dW96e2nRp8aBnnOAuf1ZPIN.jpg",
+            "https://image.tmdb.org/t/p/original/1bQKtyMFzuagrTMBnrlx2E8Osnt.jpg",
+            "https://image.tmdb.org/t/p/original/rRTAwUWwHsoRmecy5UhR9njbwJP.jpg",
+            "https://image.tmdb.org/t/p/original/qErw4A32dSCc5pmnu5P9YBIps63.jpg",
+            "https://image.tmdb.org/t/p/original/rlvRKCIUEgZrPpEWEAMu7ZZV0FC.jpg",
+            "https://image.tmdb.org/t/p/original/jObtQYNw938nr0zdqwoeDTYUb0p.jpg",
+            "https://image.tmdb.org/t/p/original/r2p6yOJLfwv5nl6uqFKxUY2WgL2.jpg",
+            "https://image.tmdb.org/t/p/original/97RISv0R5cwjn2QahNKGlBC2fK8.jpg",
+            "https://image.tmdb.org/t/p/original/edK8MBWYesSkFTtwqT72JSf1PH3.jpg",
+            "https://image.tmdb.org/t/p/original/mRnVBB6lZtSeikMwqO6Id2e612r.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Vaulter",
+          "overview": "Roman and Kendall do a “routine health check” of a new media brand to help Vaulter to determine the future of the company. Tom tasks Greg with sniffing out waste at ATN, as Greg wonders if the divisive media outlet is the right fit for him. Connor and Willa host a soiree to mark their return to New York. Shiv brings Tom in the loop about her future at Waystar and with Gil’s campaign.",
+          "plot": "Gil tells Shiv he'd name her chief of staff if he won the presidential election. Connor and Willa return to New York, where Connor prepares to announce his own bid for President. Logan suggests to Shiv that it would take three years for her to fully integrate into her CEO role. Tom tasks Greg with rooting out inefficiencies in ATN's operations, despite Greg's reluctance to work for the network. Logan has Kendall and Roman review Vaulter's performance; Kendall wants to keep the company, but Roman reports to Logan that its business is failing and that its employees want to unionize. Logan sides with Roman and tasks Kendall with closing down Vaulter. Shiv tells Tom that Logan offered her the role of CEO, which puts Tom's ambitions to inherit the company in jeopardy; Shiv assures him that his inheritance is safe. Shiv later quits Gil's campaign. Kendall terminates Vaulter's staff, flatly telling Lawrence that he is doing so on his father's orders.",
+          "airDate": "2019-08-18",
+          "still": "https://image.tmdb.org/t/p/original/26veg1bj8b4WfkJuRLKrLw3a26l.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/26veg1bj8b4WfkJuRLKrLw3a26l.jpg",
+            "https://image.tmdb.org/t/p/original/wVwNIU7hQB0a7fv0h2eBjUvnGF8.jpg",
+            "https://image.tmdb.org/t/p/original/8CFkeu77HHtsEMRFcGX96IpmBcX.jpg",
+            "https://image.tmdb.org/t/p/original/2b7dW6RXozlQuMKPTyygYs0Blxm.jpg",
+            "https://image.tmdb.org/t/p/original/l5XDdKAGfNN37gTnCVlEV7Q3Na3.jpg",
+            "https://image.tmdb.org/t/p/original/1BA4tIAaqAqnaoprnPBkC8X0SAu.jpg",
+            "https://image.tmdb.org/t/p/original/q8HsNaG8N4rUDnlU5R14fBVjE4H.jpg",
+            "https://image.tmdb.org/t/p/original/3tazuIMAqASaX2Cd6DwjoiXkwO3.jpg",
+            "https://image.tmdb.org/t/p/original/2vP5WZRyba8SXYWiUxBrLvX6qEc.jpg",
+            "https://image.tmdb.org/t/p/original/12khqYH1AdpPXHR2EBO9nZ11iEn.jpg",
+            "https://image.tmdb.org/t/p/original/8ZSbBY1uBQ1LmRquQAm7zryCiD5.jpg",
+            "https://image.tmdb.org/t/p/original/jtgu5gTDcQtfqULmYjAnUBROnZ9.jpg",
+            "https://image.tmdb.org/t/p/original/ot62LUe1RXH4ABUWcfUrPDY5CNe.jpg",
+            "https://image.tmdb.org/t/p/original/1Ivi7jvA7jx3wS43ocG9lASxjXU.jpg",
+            "https://image.tmdb.org/t/p/original/eRrB34qCaoo1zUMhlbTbaUM9iYU.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Hunting",
+          "overview": "Logan informs his management team of his plan to make another attempt to acquire a rival media company. Greg worries his meeting with a Logan biographer puts his standing with the family at risk. Connor's presidential announcement irritates Logan.",
+          "plot": "Logan plans to acquire rival media giant Pierce Global Media (PGM), against the counsel of his peers and family, and rehires Frank due to his friendship with the head of its board. The family departs on a hunting retreat in Hungary. On the way, Logan is furious to learn that someone disclosed information on him to author Michelle Pantsil, who is writing an unauthorized biography on him. While hunting, Greg confides to Tom that he met with Pantsil, and begs him to keep it a secret. Connor announces his presidential bid on a platform against taxation. Shiv has a one-night stand while Tom is away. During dinner, Logan finds out that PGM is already aware of his plans, and subjects Greg, Tom and Karl to a vicious hazing ritual called \"Boar on the Floor\" until the source comes forth. Kendall finds out that it was Roman who privately reached out to the Pierces. The next morning, Logan learns that Mo, a recently deceased board member, talked to Pantsil, absolving Greg of suspicion. Frank informs Logan that PGM's CEO is interested in a meeting. Logan tells Shiv it is time to bring her into the company.",
+          "airDate": "2019-08-25",
+          "still": "https://image.tmdb.org/t/p/original/38TozU08psibnQGljsUOUyK2NsN.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/38TozU08psibnQGljsUOUyK2NsN.jpg",
+            "https://image.tmdb.org/t/p/original/slDGudAXfY0Z9rkUTnzxEb7SDBf.jpg",
+            "https://image.tmdb.org/t/p/original/qMjwLcGWDi3dAG6s5Iq4379OEfg.jpg",
+            "https://image.tmdb.org/t/p/original/42hwzGDFf4Xl8potYs9I8SIQSUU.jpg",
+            "https://image.tmdb.org/t/p/original/4g74r46K4OkXSuc4WH7HedMAU1u.jpg",
+            "https://image.tmdb.org/t/p/original/cVB00R33PbZs794vrYQ3uFV3Z4W.jpg",
+            "https://image.tmdb.org/t/p/original/v7LYWlNASOSmHcygT4Jd1Gde01w.jpg",
+            "https://image.tmdb.org/t/p/original/f41lgkMHtmgYDBjhg27nUHu6w6z.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Safe Room",
+          "overview": "Roman begins a six-week management training program. Connor and Willa attend the funeral of a family friend with a complicated past. Logan and Kendall arrange a covert meeting with PGM CEO Rhea Jarrell. Controversy surrounds a star anchor.",
+          "plot": "Logan and Kendall meet with Rhea Jarrell, CEO of PGM, who relays the Pierce family's disinterest in selling their company. Tom investigates ATN anchor Mark Ravenhead, an alleged Nazi sympathizer, but their meeting is cut short by the sound of a gunshot. The building's occupants are ushered into panic rooms, where Kendall and Logan sway Rhea with a $24 billion offer for PGM, which she agrees to pass on to the Pierces. The source of the gunshot is found to have been an ATN employee who committed suicide in his office. Greg reveals to Tom that he kept copies of the cruises documents and blackmails him into giving him a promotion. Connor and Willa attend Mo (real name Lester McClintock)'s funeral; Pantsil is present and presses Connor on his association with Lester, a known sexual predator, but Willa helps rewrite Connor's eulogy to avoid him being entrapped by Pantsil. Roman, following Gerri's advice on how to earn his father's respect, enrolls in Waystar's management training program. He later finds himself sexually aroused when Gerri scolds him over the phone. Kendall tearfully confides to Shiv his belief that his loyalty to Logan is all he is worth.",
+          "airDate": "2019-09-01",
+          "still": "https://image.tmdb.org/t/p/original/5mRxmdvG3GKqDhJe90LFv9zuRce.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/5mRxmdvG3GKqDhJe90LFv9zuRce.jpg",
+            "https://image.tmdb.org/t/p/original/p7mQW0FfD9zD1sW8i5mUvBZKjRr.jpg",
+            "https://image.tmdb.org/t/p/original/yVxDSs6Ar6NR0R4oYQ3PjY9THqt.jpg",
+            "https://image.tmdb.org/t/p/original/hYhJ0W2QoRy0Hju2GMoIgLTwbQB.jpg",
+            "https://image.tmdb.org/t/p/original/tpJv81JpdmFlyVGMXmRlDgqeLjt.jpg",
+            "https://image.tmdb.org/t/p/original/ckPiN4N6wEcGNBqyEKtxcI5QHDg.jpg",
+            "https://image.tmdb.org/t/p/original/mgj9LGwEhykxuJ2CtV1lnK1W5YH.jpg",
+            "https://image.tmdb.org/t/p/original/efrI07mYARHzG7JfDipTedwP9zM.jpg",
+            "https://image.tmdb.org/t/p/original/4oNcD7KxSHhVIp1PMa2KmUo6TUG.jpg",
+            "https://image.tmdb.org/t/p/original/xx1OE004ks7Vihlxuke720sCQew.jpg",
+            "https://image.tmdb.org/t/p/original/dKWVu8U5fg5UZiRQQJjN151DoKG.jpg",
+            "https://image.tmdb.org/t/p/original/mMKqOhWdSnHDo3cfjAXoogs8RJm.jpg",
+            "https://image.tmdb.org/t/p/original/8Bz8vb32Jsup2D3QpSNvkZ1pGN2.jpg",
+            "https://image.tmdb.org/t/p/original/s44d5l7SfNyCL1hPZ2ZHb81wnOl.jpg",
+            "https://image.tmdb.org/t/p/original/zaSnsgxTQJoayHWNR5aoKfypyi0.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Tern Haven",
+          "overview": "Logan attempts to solidify his buyout of PGM at a weekend retreat at the Pierce family home, where Shiv, Roman and Connor veer from their carefully orchestrated roles. As the Pierces question whether an alliance with Waystar Royco will tarnish their legacy, Kendall makes his case to Naomi Pierce during a drug-filled night.",
+          "plot": "The Roys spend a weekend with the Pierces at their family estate. Conversations between the families become increasingly tense and culminate when matriarch Nan Pierce asks Logan during dinner who will replace him as CEO. Logan refuses to name his successor, and an indignant Shiv stuns the room by announcing she has been chosen. Kendall indulges in drugs and sex with Nan's cousin Naomi, a fellow recovering addict. She admits she despises the Roys and Waystar for running tabloids on her during her troubled past, and that she came to ensure that the acquisition fails. However, Kendall convinces her that the money from the deal could free her from the entanglements of a family business. The following morning, Nan (on Naomi's advice) agrees to sell PGM to the Roys on the condition that Shiv be named Logan's successor on the day of the merger. Logan refuses and calls off the deal. However, he receives a call soon after saying the Pierces have changed their mind. The Roys celebrate at Logan's home.",
+          "airDate": "2019-09-08",
+          "still": "https://image.tmdb.org/t/p/original/sH2UndwXxYpjGyKzi7BJyFszZiK.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/sH2UndwXxYpjGyKzi7BJyFszZiK.jpg",
+            "https://image.tmdb.org/t/p/original/6dPWDfcTwz5mHAQ9HxcrgLfLxTp.jpg",
+            "https://image.tmdb.org/t/p/original/3IrM7D6mhbwXorFZGPLaU6pQlao.jpg",
+            "https://image.tmdb.org/t/p/original/fItPZeZSoGA8mUaXfevzBvdoRB0.jpg",
+            "https://image.tmdb.org/t/p/original/iCQgQXoWboojBVA0x2uFZheGvww.jpg",
+            "https://image.tmdb.org/t/p/original/7KJocZQacUYmps9QawkWapAXZti.jpg",
+            "https://image.tmdb.org/t/p/original/smerRfqHjf4tlfocunvfx40BsGR.jpg",
+            "https://image.tmdb.org/t/p/original/2NeYo7eGKZEGZRQcBxGN5r4Gqup.jpg",
+            "https://image.tmdb.org/t/p/original/3bouJ9I99gDAa1L5mVgdeV2DeCz.jpg",
+            "https://image.tmdb.org/t/p/original/deieWWKdGhTkHkEbSyZ9kDDocvF.jpg",
+            "https://image.tmdb.org/t/p/original/prFIBCBRgjKO1VsPD0rhGNKaVgw.jpg",
+            "https://image.tmdb.org/t/p/original/quVX5OARLOGB1ZxxYhDNtiATmkW.jpg",
+            "https://image.tmdb.org/t/p/original/d8b8LRUXwbZKfb76ZEIXckJmusb.jpg",
+            "https://image.tmdb.org/t/p/original/25Bhj3ARs09zUZkVR1VFBMY2WSn.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Argestes",
+          "overview": "As Logan looks to finalize a deal to buy the Pierce family's papers and TV stations at a media & banking retreat, a threat to the deal arises from an unexpected quarter. Tom worries about ATN's new slogan after learning some distressing news from Greg. Kendall, Shiv and Roman fail to see eye to eye on how to handle damage control ahead of a panel featuring the Roys.",
+          "plot": "The Roys attend Argestes, an international business conference, where they plan to finalize their agreement with the Pierces. However, they learn that New York Magazine has received a tip on the cruise line scandal and plans to publish an exposé within the next 36 to 48 hours. Despite the Roys' attempts to block the story's publication, it goes online the following morning while Logan and Kendall meet with Nan and Rhea. Shiv meets privately with Rhea, who admits that she wants the Waystar–PGM acquisition to succeed regardless of the scandal. Roman attempts to secure an investment from Azerbaijani aristocrat Eduard Asgarov, who agrees to provide his family's money if Waystar runs propaganda on behalf of his home country. Kendall, Roman and Shiv take the stage for a scheduled panel discussion, where Shiv shocks the audience when she makes comments seemingly suggesting that Logan should step down from the company. An argument ensues after the event, during which Logan strikes Roman. Nan decides to call off the acquisition and fires Rhea for conspiring with Logan.",
+          "airDate": "2019-09-15",
+          "still": "https://image.tmdb.org/t/p/original/jHqhN4OJIeYOY5m1wGjQkryK5L6.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/jHqhN4OJIeYOY5m1wGjQkryK5L6.jpg",
+            "https://image.tmdb.org/t/p/original/91VTxpaeCu67sGQvtKCF8FEbno2.jpg",
+            "https://image.tmdb.org/t/p/original/rJMdtWkHE3qOTZ5Mx89CSXmrKTU.jpg",
+            "https://image.tmdb.org/t/p/original/ogQmR5gQn9vCQDvkECzNnwdvwmn.jpg",
+            "https://image.tmdb.org/t/p/original/XCTsCM9ynvIzKScikGV7vWjexr.jpg",
+            "https://image.tmdb.org/t/p/original/sz8y4dUGwwTYBfHbhP2Qn0J4Eg0.jpg",
+            "https://image.tmdb.org/t/p/original/kotPWDDOFS4QyvDm47lN7su1MzX.jpg",
+            "https://image.tmdb.org/t/p/original/8Kn21k4gYU2e77IWGMdJFQtb6Mf.jpg",
+            "https://image.tmdb.org/t/p/original/w2adlysWSiQItfm4oQfx9zEjt6C.jpg",
+            "https://image.tmdb.org/t/p/original/i9AybpHS6ovTaipDWyXE6yyYvlu.jpg",
+            "https://image.tmdb.org/t/p/original/6dQPylaTBqzilIBgJ0dDUGvv7I3.jpg",
+            "https://image.tmdb.org/t/p/original/a3dU6ImzK8Bse6uJuI2ZMvoklfI.jpg",
+            "https://image.tmdb.org/t/p/original/vuJxiMiYh3S01F4FixA4wzZ568Y.jpg",
+            "https://image.tmdb.org/t/p/original/7HJYEmI8uIRBcySjQoI7RWqEahZ.jpg",
+            "https://image.tmdb.org/t/p/original/oevUEF08gFapuANd6MJSSlgqAsd.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Return",
+          "overview": "The Roys head to the UK, where Roman and Shiv try to strike a deal with their mother and Logan and Kendall face the consequences of their last visit.",
+          "plot": "Sandy and Stewy launch a public smear campaign against Waystar in the wake of the cruises scandal. Logan, Kendall and Roman travel to London to secure shareholder support from Caroline. Logan invites Rhea along to aid in strategy, and the two spend the night together. Shiv arrives in London and meets with Rhea, who proposes that Shiv become CEO of PGM; Shiv is not opposed to the idea, but remains suspicious of Rhea's motives. Shiv and Roman meet Caroline, who agrees to vote her shares with the family for a payout of 20 million dollars and her children visiting her every Christmas. Sandy and Stewy run tabloids suggesting that Doddy's death was a suicide triggered by Logan's bullying. Logan has Kendall come along to visit Doddy's family to sort out the situation; Kendall is thoroughly shaken, and revisits the house that night to secretly deliver cash to the family. He attempts to confide his guilt to Caroline, but she neglects to make herself available. Tom faces an internal investigation into the cruises incidents. He forces Greg to burn the latter's copies of the documents, though Greg covertly recovers some of them. Logan accuses Shiv of disloyalty for considering the PGM position; Shiv begins to suspect that Rhea may be plotting to take over the company.",
+          "airDate": "2019-09-22",
+          "still": "https://image.tmdb.org/t/p/original/v8GvkMkiVFz1HxdjI4SEtXehnfN.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/v8GvkMkiVFz1HxdjI4SEtXehnfN.jpg",
+            "https://image.tmdb.org/t/p/original/oCtLlUkk3OxKRfILkxkSapKOTO9.jpg",
+            "https://image.tmdb.org/t/p/original/q5fCmnKjxUs7yR2bzlO8A4A7LYa.jpg",
+            "https://image.tmdb.org/t/p/original/rwuJCtbkktE6H0hfTlFjnwvKb6d.jpg",
+            "https://image.tmdb.org/t/p/original/lSMGoIh7w3eqyhyuhxXMywtLwQC.jpg",
+            "https://image.tmdb.org/t/p/original/mCoS8O2BanPC9ma1cU5GMf8lzsH.jpg",
+            "https://image.tmdb.org/t/p/original/kb3NJlW2MrvNBmWdSZ32d1BxbeH.jpg",
+            "https://image.tmdb.org/t/p/original/9OWnOnalptNzgjPJ3Zq6hUeWwmh.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Dundee",
+          "overview": "The entire Roy clan travels to Logan's hometown of Dundee, Scotland, for a celebration of Logan's 50 years in the business. Kendall becomes enamored with Jennifer, an actress in Willa's play. A former employee proves difficult to silence.",
+          "plot": "Rhea organizes a celebration for Logan's 50th anniversary at Waystar in his hometown of Dundee, Scotland. Shiv, now intensely suspicious of Rhea, schemes with her siblings to sabotage Rhea's chances of being named Logan's successor. Though they play along in hazing Rhea, none of the other Roy children are genuinely opposed to having her take over as CEO. Ewan arrives in Dundee and warns Greg that he will relinquish his $250 million inheritance unless the latter stops working for Logan. Gerri and other company advisors inform Shiv that a whistleblower plans to go public with details of the cruises incidents and is refusing to take a payout. Realizing that Rhea will bear the burden of the scandal as CEO, Shiv gives Logan her approval to name Rhea as his successor, which he does during a speech prior to his plaque unveiling ceremony. Marcia, feeling betrayed, leaves the event. Ewan confronts his brother at the ceremony and warns him that he will face a reckoning.",
+          "airDate": "2019-09-29",
+          "still": "https://image.tmdb.org/t/p/original/35KiM5VxvYEddEu312aL6ABBeBy.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/35KiM5VxvYEddEu312aL6ABBeBy.jpg",
+            "https://image.tmdb.org/t/p/original/5vNArTBgDWV73Ip10pepploDssl.jpg",
+            "https://image.tmdb.org/t/p/original/btSUQgKYx5aWBj5kRrz4eNbovqa.jpg",
+            "https://image.tmdb.org/t/p/original/pqBRpqqQYnuoWzuCtqNt0xKbBHH.jpg",
+            "https://image.tmdb.org/t/p/original/3G1qiTz80iunr62HVEkTdzwLays.jpg",
+            "https://image.tmdb.org/t/p/original/jQy4cTYm4YLnEP1U1os9x32huVh.jpg",
+            "https://image.tmdb.org/t/p/original/korNhnN0CsYcvhWteRJ0aTSpFPR.jpg",
+            "https://image.tmdb.org/t/p/original/d7SATsWizoatkEaZHphvDCHScKc.jpg",
+            "https://image.tmdb.org/t/p/original/kb38UM4uuFfLNnyT3ZbAW2Hvp6S.jpg",
+            "https://image.tmdb.org/t/p/original/92PzdDhhpXgO9hP7uLfrYOHmSiP.jpg",
+            "https://image.tmdb.org/t/p/original/5mciFL17D2QdrnMahMgzBmBc3o7.jpg",
+            "https://image.tmdb.org/t/p/original/lv37928CcN4iFJBGhw9LmPIaJ12.jpg",
+            "https://image.tmdb.org/t/p/original/vHWlM8jzTKXo6h6ljnE1ZQ0YdUy.jpg",
+            "https://image.tmdb.org/t/p/original/mChNkKefg9acsdrcvlGwUv7aGKY.jpg",
+            "https://image.tmdb.org/t/p/original/shEaWcI1O0NgmTVlfA9xM8ejDbW.jpg",
+            "https://image.tmdb.org/t/p/original/aiSUSKNnIXQp1pRieNrzVedzgIi.jpg",
+            "https://image.tmdb.org/t/p/original/1xukWvxiCRg305Q0xfiwxWhTtHt.jpg",
+            "https://image.tmdb.org/t/p/original/290Ch2aQg57o6t0N1sXBKKZb2GT.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "DC",
+          "overview": "Logan, Kendall, Gerri and Tom testify before Congress. Shiv speaks candidly to Kira, a victim who is set to be a key witness. In Turkey, Roman's business pitch takes a chilling turn.",
+          "plot": "The company whistleblower gives a televised interview implicating Gerri, Tom, and Kendall in the cover-up of the crimes committed aboard the company cruise lines. Gil compels the Roys to testify before the Senate. Tom is the first to be called to the stand alongside Gerri and performs disastrously. Shiv attempts to leverage her past connection to Gil and learns that he has a new witness. Shiv meets with the woman, Kira, and talks her out of testifying by warning her that her allegations will follow her for the rest of her life. Logan sends Roman along with Karl and Laird to secure funding from Eduard's family so Waystar can go private; Eduard introduces them to his father in Turkey, but the pitch meeting is cut short when an anti-corruption militia holds the building's occupants hostage. Logan and Kendall testify; Logan attempts to deflect blame onto Kendall for overseeing the cover-up during his tenure as acting CEO, but Kendall delivers a sharp rebuke to Gil. After the hearing, Rhea tells Logan she no longer wants to be CEO. Logan tells Shiv that a \"blood sacrifice\" will have to be made to appease the company's shareholders.",
+          "airDate": "2019-10-06",
+          "still": "https://image.tmdb.org/t/p/original/qz3eifkfIkha66P4zbqrVnuu4SU.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/qz3eifkfIkha66P4zbqrVnuu4SU.jpg",
+            "https://image.tmdb.org/t/p/original/aXxsqQw55wEUSLocPvbiHQsOApy.jpg",
+            "https://image.tmdb.org/t/p/original/hOk6ClPz0BOFdaWS72cKZ5ISVGJ.jpg",
+            "https://image.tmdb.org/t/p/original/pa47BXQqCcPUYXx5escAbqNAOej.jpg",
+            "https://image.tmdb.org/t/p/original/1XjfED79x5Mrpg9qcmPvbzH3ftR.jpg",
+            "https://image.tmdb.org/t/p/original/kwAoj6FX12uA7oP3noyB8v9uPan.jpg",
+            "https://image.tmdb.org/t/p/original/qBCd2HqjQrRDJTzUb5FVfBzLhEF.jpg",
+            "https://image.tmdb.org/t/p/original/sDbyErAPpyBBxOMft9FGXUsizvK.jpg",
+            "https://image.tmdb.org/t/p/original/sxDzUWuWgdNqzINvQGK6mX5J6bU.jpg",
+            "https://image.tmdb.org/t/p/original/g51NSTSzpmAsWPyx1TZqiXhldjI.jpg",
+            "https://image.tmdb.org/t/p/original/4601sYtjT8BEaUoliPcZjVlEIIm.jpg",
+            "https://image.tmdb.org/t/p/original/rb3uR4mV9jNMl1zkqH1FjRozZ0m.jpg",
+            "https://image.tmdb.org/t/p/original/uQQ2MmPcROQicmIRY1PWZNY38Rm.jpg",
+            "https://image.tmdb.org/t/p/original/pNcB16N7uXaQ4kvyCGfR9fOhUU7.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "This Is Not for Tears",
+          "overview": "Logan weighs whether a member of the family, or a top lieutenant, will need to be sacrificed to salvage the company's tarnished reputation. Roman shares his hesitations about a new source of financing, as Kendall suggests a familiar alternative. Season Two Finale.",
+          "plot": "Logan is advised by Waystar shareholders to take the blame for the cruises incidents. The Roys spend a holiday on their yacht in the Mediterranean, where they debate over who should be the company's public scapegoat. Roman, Karl and Laird return from Turkey apparently having closed the financing deal with Eduard's family, though Roman admits to Logan that it is likely illegitimate. Logan and Kendall unsuccessfully attempt to convince Stewy to back Waystar's privatization. Tom admits to Shiv that he is unhappy with their relationship. Shaken, Shiv pleads with Logan not to have Tom take the fall for the scandal. Logan ultimately chooses Kendall; during a private conversation, Kendall asks Logan if he ever saw him fit to run the company, but Logan tells his son that he doesn't see him as a \"killer\". The next morning, Kendall and Greg are flown back to New York for a press conference, where the former is set to accept responsibility for the company's handling of the crimes. However, Kendall suddenly deviates from his prepared remarks and instead blames Logan, announcing that his father was well aware of the misconduct and personally oversaw the ensuing legal settlements. Greg is present at the conference with the probative documents. Logan, who is watching a telecast of Kendall's statement, smiles enigmatically.",
+          "airDate": "2019-10-13",
+          "still": "https://image.tmdb.org/t/p/original/9zH4Q67w0qvtXeD3cTMaiVKFuj6.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/9zH4Q67w0qvtXeD3cTMaiVKFuj6.jpg",
+            "https://image.tmdb.org/t/p/original/8HpBLD5q4kxdxbk4KGx9JXPFum3.jpg",
+            "https://image.tmdb.org/t/p/original/g00IPSvokHQ82fkWsbMWCQhUY7G.jpg",
+            "https://image.tmdb.org/t/p/original/jH0E7IxqgC2jYj6TGj0D5yHictU.jpg",
+            "https://image.tmdb.org/t/p/original/2sdEchyN2zbxksYVPqTT2w2ebjm.jpg",
+            "https://image.tmdb.org/t/p/original/qYhAvmNOoHs2rGvj2livtiZEfgw.jpg",
+            "https://image.tmdb.org/t/p/original/7EWhC7B7TLbBoRIgKdUXOi5xtR.jpg",
+            "https://image.tmdb.org/t/p/original/qHJ75TTtIKCNQN1LBmBW6jTwjWH.jpg",
+            "https://image.tmdb.org/t/p/original/hBzi5CSk07YURLhZHtJNNFhcNSb.jpg",
+            "https://image.tmdb.org/t/p/original/uRIIj5dOAkCkwsT8hD754H601XA.jpg",
+            "https://image.tmdb.org/t/p/original/2MWPmRwCdgtvuETPAQ9h07aX1h5.jpg",
+            "https://image.tmdb.org/t/p/original/2a03hb9cF18ar78GQ5iXKJLPVN3.jpg",
+            "https://image.tmdb.org/t/p/original/coOfDFNW9FBoQSER0vcQlOiLQYR.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 3,
+      "name": "Season 3",
+      "airDate": "2021-10-17",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Secession",
+          "overview": "Following his bombshell presser, a righteous Kendall scrambles to find a base of operations, while Logan's team searches for safe harbor.",
+          "plot": "Picking up immediately after Kendall's press conference, Logan decides to split his inner circle into two teams: he, Tom, Karl, Frank and Hugo station themselves in Sarajevo to avoid being extradited to the U.S., while Roman, Gerri and Shiv are sent back to New York. Logan informs his team that he intends to temporarily step back as CEO; the family and company management debate who should take his place as a figurehead. Kendall, meanwhile, sets up a temporary base of operations at Rava's apartment, and hires two PR consultants to help steward his public image. He unsuccessfully attempts to sway more of Waystar's senior cadre to his side. Shiv attempts to acquire representation for Waystar from Lisa Arthur, a high-profile New York attorney and personal friend, but realizes Kendall has already hired her. In light of Shiv's perceived failure, Gerri is named interim CEO.",
+          "airDate": "2021-10-17",
+          "still": "https://image.tmdb.org/t/p/original/130ZyGzoPXdAG3ZQp5FfVcsrqIW.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/130ZyGzoPXdAG3ZQp5FfVcsrqIW.jpg",
+            "https://image.tmdb.org/t/p/original/yXL37lmPhwTRg71CvMjkK9C8vZM.jpg",
+            "https://image.tmdb.org/t/p/original/x0mEQ6dl7MOnC2j2hp30kJvWGO9.jpg",
+            "https://image.tmdb.org/t/p/original/5DjVqeIYYVWE2AEI4d7AGUkZziD.jpg",
+            "https://image.tmdb.org/t/p/original/98QBJXCQw0x1EPXAF6EEfSwyeUa.jpg",
+            "https://image.tmdb.org/t/p/original/3dvFQilpspBED25FIVCdh11OcEg.jpg",
+            "https://image.tmdb.org/t/p/original/8d9yf7dyG6iV6U1VtLNP3abselQ.jpg",
+            "https://image.tmdb.org/t/p/original/obfl2dK6KP8N9QQZWEAMyjG6FBP.jpg",
+            "https://image.tmdb.org/t/p/original/vkdF91X5cOS1FgbFbTRfhFkExgi.jpg",
+            "https://image.tmdb.org/t/p/original/zWUFHwul6iJdjGHfhESmVbvFoWM.jpg",
+            "https://image.tmdb.org/t/p/original/iPeo2fIVhlSAtneomAnzln6vRyB.jpg",
+            "https://image.tmdb.org/t/p/original/hZJwPWorDJarkRwqISEOpiI1g34.jpg",
+            "https://image.tmdb.org/t/p/original/sjseweVc6mByNT2wgPvIebwWmLh.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Mass in Time of War",
+          "overview": "Kendall tries to get his siblings, as well as Stewy and Sandi, on his side. Fearing his legal situation, Greg asks Ewan for help.",
+          "plot": "Shiv, Roman, and Connor covertly meet with Kendall, who refuses to compromise and attempts to persuade his siblings to join him. However, the discussion falls apart when Kendall declares that he will be CEO under their new arrangement. Seeing no personal benefit from siding with Kendall, the three siblings ultimately decide to remain aligned with Logan. Kendall additionally meets with Stewy and Sandi Furness (Sandy's daughter) to propose a partnership ahead of the company's shareholder meeting, but they remain skeptical. Greg obtains legal representation from Ewan's attorney. Logan has Marcia flown in to Sarajevo after his legal team advises that the two publicly appear reconciled. Marcia, disgruntled over Logan's infidelity, demands several assurances from the company to ensure her cooperation. Logan returns to New York and names Shiv President of Domestic Operations at Waystar, assuring her she is under Gerri's protection.",
+          "airDate": "2021-10-24",
+          "still": "https://image.tmdb.org/t/p/original/w9QosoYHuWPe7mdNHc1NjcSEcfa.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/w9QosoYHuWPe7mdNHc1NjcSEcfa.jpg",
+            "https://image.tmdb.org/t/p/original/rhAdN37rvh4lDjfHLG8zr4AH8M3.jpg",
+            "https://image.tmdb.org/t/p/original/sEE8zEDU68U7hiKcoEzhk4IB6fp.jpg",
+            "https://image.tmdb.org/t/p/original/i8XEjQlE1rhLxZb1knjxkNQtrXf.jpg",
+            "https://image.tmdb.org/t/p/original/sHAmCbanixJ4bUDD5LgjxUPw9Rh.jpg",
+            "https://image.tmdb.org/t/p/original/r1PHH0vVxOfYb1WktrR0G7fffUm.jpg",
+            "https://image.tmdb.org/t/p/original/aOf8SJXS0RZ6FCBpFxWgyFBv48G.jpg",
+            "https://image.tmdb.org/t/p/original/tm7hAunzMdKjOCrslRn5zqVLeci.jpg",
+            "https://image.tmdb.org/t/p/original/lVBCZYKODuKgfRNUff9NZW6yPRZ.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "The Disruption",
+          "overview": "With the DOJ at the door, Logan summons his arsenal, while Tom makes a potentially life changing offer. Kendall becomes obsessed with his own takedown.",
+          "plot": "Both Kendall and Logan take steps to boost their respective public profiles. Logan refuses to cooperate with the Department of Justice's impending investigation, and attempts to pressure White House aide Michelle-Anne Vanderhoven into granting him favors from the President. Tom offers to take the fall by allowing himself to be incarcerated. Kendall sabotages Shiv's speech at a company town hall intended to allay employee grievances by having his assistants blast Nirvana's \"Rape Me\" from a speaker; an irate Shiv retaliates by publishing an open letter questioning Kendall's mental state, invoking his addiction issues and poor relationship with his children. Kendall prepares to make an appearance on a late-night comedy show that has been disparaging him, but backs out at the last minute after Shiv's letter goes online, deeply shaken by its contents. The FBI raid Waystar's offices, forcing Logan to cooperate.",
+          "airDate": "2021-10-31",
+          "still": "https://image.tmdb.org/t/p/original/kNr0xiy8PSVUTff7feUD5nj0pqF.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/kNr0xiy8PSVUTff7feUD5nj0pqF.jpg",
+            "https://image.tmdb.org/t/p/original/89Xdgg6HS6JOkiBl4kyIBCzgDm5.jpg",
+            "https://image.tmdb.org/t/p/original/bDpCR2yeEfw9U4h3i1XAOQp846O.jpg",
+            "https://image.tmdb.org/t/p/original/nhDi4kayaUYmjQaZwHKzsDi5qIr.jpg",
+            "https://image.tmdb.org/t/p/original/zARXsAi1FIwyNRnPsckQkTBZViD.jpg",
+            "https://image.tmdb.org/t/p/original/erd61qJ2nQCuhCkifl1ebCQ0Ov5.jpg",
+            "https://image.tmdb.org/t/p/original/46OoWkJ6SPALCs1nGbRehEgPxq0.jpg",
+            "https://image.tmdb.org/t/p/original/dd1MEWHJBmOWRx8fEirxtF1Fu6G.jpg",
+            "https://image.tmdb.org/t/p/original/e2DRlSgzBQzQESX5te4PzaFqPn8.jpg",
+            "https://image.tmdb.org/t/p/original/suiidYyp1tytAzwpmNbYostDRa5.jpg",
+            "https://image.tmdb.org/t/p/original/3fWRUtjNwljo9zVt6OFyEWeMIhV.jpg",
+            "https://image.tmdb.org/t/p/original/eGhkAdX39woOkN2eM0NhG3MYe9d.jpg",
+            "https://image.tmdb.org/t/p/original/jReywzJ3BrakHjH2MNsNJRQxkYU.jpg",
+            "https://image.tmdb.org/t/p/original/uZRuDrNjrKVoxdzboh5StM1vXE0.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Lion in the Meadow",
+          "overview": "Logan and Kendall have their first meeting together with Josh, a major investor worried about their family feud.",
+          "plot": "On Logan's orders, Shiv gets ATN to cover the White House more critically, in hopes of pressuring the President into curtailing the DOJ investigation. However, she finds that she is receiving little respect or support either from within the company or from Logan. Tom begins to unravel over his growing fear of going to prison. Greg informs him he has signed a joint defense agreement with Waystar after meeting with Logan. Shareholder Josh Aaronson requests a meeting with Logan and Kendall, worried that their conflict will endanger his investment, and leads them on a walk around his private island to hear each side's arguments. However, Kendall and Logan fail to present a united front, and Logan suffers from exhaustion on the walk back to Josh's mansion, refusing help until he nearly collapses. Kendall is later informed that Josh has lost confidence in Waystar's current leadership, and witnesses him meeting with Stewy.",
+          "airDate": "2021-11-07",
+          "still": "https://image.tmdb.org/t/p/original/mP4pvN58nyBsFhUGPjW18os7zRU.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/mP4pvN58nyBsFhUGPjW18os7zRU.jpg",
+            "https://image.tmdb.org/t/p/original/z7DRt6d84RN8xHD5i0rGGufhHR6.jpg",
+            "https://image.tmdb.org/t/p/original/nHJauBlXCjMAkgjYx6zqhW3REix.jpg",
+            "https://image.tmdb.org/t/p/original/w62ehEQCKo2raRDE26DFACih8K4.jpg",
+            "https://image.tmdb.org/t/p/original/tGPrKmf6nY0m0GrUrymCmzk5iqu.jpg",
+            "https://image.tmdb.org/t/p/original/dCfZ18PY6jfMzgUhy0rI8sDGyHj.jpg",
+            "https://image.tmdb.org/t/p/original/3YswkwFTiKeFQbzV6jMECl3gm3X.jpg",
+            "https://image.tmdb.org/t/p/original/91gsE8sUoKcpG2G4RrQmceozyrw.jpg",
+            "https://image.tmdb.org/t/p/original/clxHyWn7dX227sO9j1vE2NAx5xw.jpg",
+            "https://image.tmdb.org/t/p/original/324C4xjGCAC9fC6hHKSxlKkMsH5.jpg",
+            "https://image.tmdb.org/t/p/original/h3d8eBfpjY7fK6bGxiuMm8X7wsq.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Retired Janitors of Idaho",
+          "overview": "Kendall and the Waystar team find themselves working together at the annual shareholders' meeting, where Logan's health takes a turn.",
+          "plot": "At the Waystar RoyCo annual shareholder meeting, both Kendall and Logan's factions attempt to broker a settlement with Stewy and Sandi (largely negotiating on behalf of her ailing father), realizing that going to a vote would almost certainly deprive the Roys of their majority stake in the company. Logan, who is suffering from a urinary tract infection, initially refuses Sandy's terms, but becomes increasingly incoherent, forcing the other children and senior management to negotiate on his behalf. The vote is stalled while Shiv and Sandi manage to reach a deal offering either side an additional board seat; the two sides agree on the terms without waiting for an incapacitated Logan to approve. Ewan decides to donate his entire estate to Greenpeace, leaving Greg with no inheritance. The President calls the Roys to announce that he will not be seeking a second term amid the blowback from ATN's attacks, jeopardizing Waystar's political survival.",
+          "airDate": "2021-11-14",
+          "still": "https://image.tmdb.org/t/p/original/rRBERiQvUcpWgj9wJ6ZU8DZCIQJ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/rRBERiQvUcpWgj9wJ6ZU8DZCIQJ.jpg",
+            "https://image.tmdb.org/t/p/original/oeQNaGRQ3cNGiXNcns6I8n4Lzdb.jpg",
+            "https://image.tmdb.org/t/p/original/jluARtK6vQsuLzXAzRojGoPcW2i.jpg",
+            "https://image.tmdb.org/t/p/original/lryfISbPAN91L35ns6zg2YM9bns.jpg",
+            "https://image.tmdb.org/t/p/original/yvqxMx1eo6Q5xFW8j9SawWEoiiG.jpg",
+            "https://image.tmdb.org/t/p/original/wVYoBxr33CE69XveCZSBcEmEhXh.jpg",
+            "https://image.tmdb.org/t/p/original/8slsuBgtYsbINyAJJTFkGYNjDot.jpg",
+            "https://image.tmdb.org/t/p/original/bx68NgQJpWuzAecetBjStZLfWb4.jpg",
+            "https://image.tmdb.org/t/p/original/73mpX4s7WRiVSKpLXzQssLpcla9.jpg",
+            "https://image.tmdb.org/t/p/original/fnPknziAQJFXFQlsQI7joATTbzi.jpg",
+            "https://image.tmdb.org/t/p/original/bbhHSUOKoTgxIg5H8eNoOPsXCcX.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "What It Takes",
+          "overview": "Logan and team head to Virginia for a conservative political conference, where Roman finds out surprising news about his mother.",
+          "plot": "Kendall's testimony to the DOJ regarding the cruises scandal goes poorly, and Lisa warns that the documents he has retrieved are insufficient legal ammunition against Waystar. An unsatisfied Kendall dispenses with Lisa's services and hires new attorneys. Meanwhile, the rest of the Roys travel to Richmond, Virginia to attend the Future Freedom Summit, a conservative political fundraiser, to pick a new presidential candidate in the upcoming election. While there, Roman learns that his mother is getting married in Tuscany to British CEO Peter Munion. Kendall arrives in Virginia and privately meets with Tom in an attempt to sway him to his side, but Tom refuses, believing Kendall will once again lose to his father. Among the presidential candidates, Roman takes a liking to Jeryd Mencken, a controversial figure with fascist leanings, who he believes will significantly boost ATN's ratings. Logan decides to back Mencken despite Shiv's protests.",
+          "airDate": "2021-11-21",
+          "still": "https://image.tmdb.org/t/p/original/5hGlKWPhF0GbfvgwttY5C7uwgn5.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/5hGlKWPhF0GbfvgwttY5C7uwgn5.jpg",
+            "https://image.tmdb.org/t/p/original/xeS6vKMy6PWaQzugGlIRsen0poF.jpg",
+            "https://image.tmdb.org/t/p/original/8lM2gZCzccROzlI2cTMYvjhj5Xk.jpg",
+            "https://image.tmdb.org/t/p/original/bLiXLtEzlaE5GPgCxIsqERXtwtt.jpg",
+            "https://image.tmdb.org/t/p/original/oA3g6ZiIHT3xlEkWHxArmGkNvK0.jpg",
+            "https://image.tmdb.org/t/p/original/6yKwKgjcVJH9LFxbqXPZpIMuJY6.jpg",
+            "https://image.tmdb.org/t/p/original/qMexdjMf4GGiU8FwKzLGzc8fXI7.jpg",
+            "https://image.tmdb.org/t/p/original/m3gj6oEED0ssLUjNLBvD1dcfT20.jpg",
+            "https://image.tmdb.org/t/p/original/ggecrMkxmqSALGCguV8FTcLhjrC.jpg",
+            "https://image.tmdb.org/t/p/original/6L1qo5NSEdkV6vcyVzWormkdlWB.jpg",
+            "https://image.tmdb.org/t/p/original/uER6oAAjo4ODhpuEqPQVcgtRTgj.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Too Much Birthday",
+          "overview": "At Kendall's lavish birthday bash, Shiv and Roman try to arrange a meeting with Lukas Matsson, a tech mogul who recently snubbed Logan.",
+          "plot": "The company receives word that the DOJ investigation is weakening and will likely end in a settlement. Tom is deeply relieved to be avoiding prison time. Logan, who has been working to acquire streaming giant GoJo, learns that its CEO, Lukas Matsson, declined to meet him personally. Shiv and Roman attend Kendall's lavish 40th birthday party to negotiate with Matsson, who is in attendance. Roman delivers his and Logan's gift to Kendall: an offer to buy out his shares in Waystar for $2 billion. Shiv is angered when she learns she has been excluded as a beneficiary. Roman meets with Matsson alone and proposes that Waystar buy GoJo without Matsson ever having to report directly to Logan; Matsson expresses guarded interest. Kendall, feeling hurt by the buyout offer and embarrassed with the hollow excess of the party, has an emotional breakdown while searching for his children's gift and has Naomi take him home.",
+          "airDate": "2021-11-28",
+          "still": "https://image.tmdb.org/t/p/original/uqvLgaO1MgdfrZK47Nb0nw5ehvE.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/uqvLgaO1MgdfrZK47Nb0nw5ehvE.jpg",
+            "https://image.tmdb.org/t/p/original/w14KW3U1P3bCutbbJCJpYRiN6lp.jpg",
+            "https://image.tmdb.org/t/p/original/5dx9rQJIb6AvxNZpRCx5WJlrqnz.jpg",
+            "https://image.tmdb.org/t/p/original/vjyhr72IxwJz4mCNUHPxe8BN95a.jpg",
+            "https://image.tmdb.org/t/p/original/vFHOqX8byeKvcBpkDMzJiYdCskF.jpg",
+            "https://image.tmdb.org/t/p/original/fpTClwVqDTMR6JPowETh1HneqXG.jpg",
+            "https://image.tmdb.org/t/p/original/tKuHe9lWibSRhgHZtx9ERY6uGRU.jpg",
+            "https://image.tmdb.org/t/p/original/3ff3kYrdckSWWjy6MrvAOeIlTAu.jpg",
+            "https://image.tmdb.org/t/p/original/sn3ughva8JKXxavQs5LbxwlB8r6.jpg",
+            "https://image.tmdb.org/t/p/original/qs52poQ1xZfcIqffwvbFX3abYmd.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Chiantishire",
+          "overview": "At a luxe family wedding in Italy, Roman airs suspicions, Gerri draws a line, and the Waystar team grows concerned about rogue tweets.",
+          "plot": "The Roys travel to Tuscany for Caroline's wedding. Kendall demands a sit-down with Logan over dinner, where he requests taking the $2 billion buyout to permanently uncouple himself from his \"evil\" father, but Logan refuses. Caroline admits to Shiv she never wanted children and encourages Shiv not to bear one of her own; out of spite, Shiv asks to have a child with Tom, but tells him before sex that she does not love him, later passing it off as foreplay. GoJo's stock price soars after Matsson sends a tweet suggesting he has received major financing; Roman goes to meet him and discovers that Matsson is interested in a merger of equals with Waystar rather than an acquisition. Logan accepts the renewed terms, but Waystar's meeting with GoJo's bankers is derailed when Roman mistakenly sends a photo of his penis to Logan instead of Gerri. Kendall drunkenly floats facedown in his pool, and slowly lets his head sink into the water.",
+          "airDate": "2021-12-05",
+          "still": "https://image.tmdb.org/t/p/original/cPTzIDuP4nFrmYTOsR30bLh1V8a.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/cPTzIDuP4nFrmYTOsR30bLh1V8a.jpg",
+            "https://image.tmdb.org/t/p/original/gsyCZvSAQLW75qeLupfaWWU1rHT.jpg",
+            "https://image.tmdb.org/t/p/original/nmWO0rmnLdGCe5Ru39XRW2hKAZR.jpg",
+            "https://image.tmdb.org/t/p/original/pQDfaOvqY1jhi9LcA8Ug3uQcXT4.jpg",
+            "https://image.tmdb.org/t/p/original/b9dVWOedLHNibBSaM9UdKYaB1ZF.jpg",
+            "https://image.tmdb.org/t/p/original/qdPxryLqvz7JiiT0lPkT29pzzLm.jpg",
+            "https://image.tmdb.org/t/p/original/jWcUouIKZaKttZqmAbcrWby7TpI.jpg",
+            "https://image.tmdb.org/t/p/original/k4mhYfCo9EHV4xcOJMD53KQEZSk.jpg",
+            "https://image.tmdb.org/t/p/original/iUMKScTMm21Ho6tq85mvLqmxUP8.jpg",
+            "https://image.tmdb.org/t/p/original/56WMvcfw2FFdlIUphHwGzyfUNrm.jpg",
+            "https://image.tmdb.org/t/p/original/qVXdkiA8NGScHbJ5nYrwYjZnu3l.jpg",
+            "https://image.tmdb.org/t/p/original/1cfZ9ewUEmarSpdh4yDpBU6i8qI.jpg",
+            "https://image.tmdb.org/t/p/original/6jkxwpapzA35ZDyoEikNK46a9VR.jpg",
+            "https://image.tmdb.org/t/p/original/8el3oHNBBiCNyo9GRlXXMfVENYR.jpg",
+            "https://image.tmdb.org/t/p/original/pKHOmd3xnYFLmtc0TbYWKX6ft7B.jpg",
+            "https://image.tmdb.org/t/p/original/9ZhnkWZVMolerxKadGuQaAsLL0r.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "All the Bells Say",
+          "overview": "Matsson's vision for the GoJo-Waystar relationship leads Shiv and Roman to manage the fallout, while Logan weighs his options.",
+          "plot": "Kendall is saved from drowning in his pool. GoJo's market capitalization overtakes Waystar's; Logan and Roman go to meet Matsson, who proposes that GoJo acquire Waystar with him as CEO while Logan exits with a settlement. Roman is sent back to attend Caroline's wedding, where he and Shiv discover that Logan has decided to sell the company without their input, jeopardizing the children's chances of succeeding him. They tell Kendall, who breaks down and tearfully admits his involvement in Doddy's death, only to be met with support from them to his surprise. The three recall a clause in Logan and Caroline's divorce settlement granting the children veto power over any change in company control, and decide to face their father together. On the way, Shiv informs Tom, who cryptically offers Greg a chance at significant ascension within the company. Upon being confronted by his children, Logan informs them that he and Caroline have renegotiated their divorce agreement, effectively depriving the children of company control. Tom is revealed to have tipped off Logan about the Roy siblings’ revolt.",
+          "airDate": "2021-12-12",
+          "still": "https://image.tmdb.org/t/p/original/wTrGxtBRxcIg4ixccODsN9acJqg.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/wTrGxtBRxcIg4ixccODsN9acJqg.jpg",
+            "https://image.tmdb.org/t/p/original/eqkAvMmfeBminpC0QVygFpNnQ3j.jpg",
+            "https://image.tmdb.org/t/p/original/6VaPqQZ4BSYPOC7ALkeXyTPhZsH.jpg",
+            "https://image.tmdb.org/t/p/original/uOSUIptVieduWJPonDimWFQbBpd.jpg",
+            "https://image.tmdb.org/t/p/original/jLxVadu1fk8h9s4jnrVowP22VvR.jpg",
+            "https://image.tmdb.org/t/p/original/fhUc15a3tqbFDDhZ7d452Qzh3ZM.jpg",
+            "https://image.tmdb.org/t/p/original/xDEvFPSGtz8lUiB3RMLNRXpxxF7.jpg",
+            "https://image.tmdb.org/t/p/original/8pQm05qItvin54s6dBO3Oatce3m.jpg",
+            "https://image.tmdb.org/t/p/original/zrjGKkpHFHUn27rLv8qXFjUiMAp.jpg",
+            "https://image.tmdb.org/t/p/original/me1vCG67o2Osj4YbJHhtFyVAsw2.jpg",
+            "https://image.tmdb.org/t/p/original/6eOMcbLfxR7ld6w5EltiQmCquEX.jpg",
+            "https://image.tmdb.org/t/p/original/lyQGsTSFl2yl730xRvqLFBQpVD4.jpg",
+            "https://image.tmdb.org/t/p/original/l9p4Z9V3WQu78m1KH4tRVjd0kGw.jpg",
+            "https://image.tmdb.org/t/p/original/gpGg6kqQtcWFmLTuSYl7Lor7nCq.jpg",
+            "https://image.tmdb.org/t/p/original/1575ylUSJr1eTtc61kS1BYxUva5.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 4,
+      "name": "Season 4",
+      "airDate": "2023-03-26",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "The Munsters",
+          "overview": "As Kendall, Shiv, and Roman hone their pitch for potential investors in LA, a call from Tom shifts the siblings' focus towards one of their dad's long-coveted companies. Back in NY, Greg's uninvited plus-one raises questions at Logan's birthday party, Connor considers throwing a gargantuan sum at his campaign, and Tom seeks assurances from Logan.",
+          "plot": "Six months after the events in Tuscany and 48 hours before the GoJo acquisition, Logan celebrates his birthday in New York while Kendall, Shiv, and Roman are in Los Angeles to propose a new media startup to investors. The siblings learn Logan is attempting to purchase PGM again and decide to launch a rival bid. They meet with Nan and Naomi at the Pierces' California estate; Nan is indecisive about the competing offers from Waystar and the siblings, which in turn sparks a bidding war between the factions. The siblings ultimately sway Nan with a $10 billion offer, which Logan is forced to concede. Shiv returns to New York and finds Tom at the apartment they no longer share due to a trial separation. While Tom wants to discuss the breakdown of their marriage, Shiv tells him she wants to divorce him as painlessly as possible.",
+          "airDate": "2023-03-26",
+          "still": "https://image.tmdb.org/t/p/original/6sPirsptcGhKK8Lzy0o0Tx9s5Mf.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/6sPirsptcGhKK8Lzy0o0Tx9s5Mf.jpg",
+            "https://image.tmdb.org/t/p/original/rDxewuY851eoIPb9ZXXnTK9hFhF.jpg",
+            "https://image.tmdb.org/t/p/original/A6taT3Zq0M5JGpjgZ2Tavjgdd9i.jpg",
+            "https://image.tmdb.org/t/p/original/fBqJkovN3Ldun1kpLbaXQCocsad.jpg",
+            "https://image.tmdb.org/t/p/original/ncPQnc6xwm4VFRWpkNgXcIVxPf9.jpg",
+            "https://image.tmdb.org/t/p/original/1mzIvxsESZKsC9yrxSM4TvmiVT4.jpg",
+            "https://image.tmdb.org/t/p/original/dqXfgOgr9vHxQL2kNSMQ5RjBNHW.jpg",
+            "https://image.tmdb.org/t/p/original/AsxOUSTofjnrlq8pbRgrofuQXYF.jpg",
+            "https://image.tmdb.org/t/p/original/cvbyqnIJZKvFef7edBhN5jJdCeV.jpg",
+            "https://image.tmdb.org/t/p/original/kiB3J8ClRbw9oIzPN4OtuAijzS7.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Rehearsal",
+          "overview": "After Shiv discovers that Tom is following Logan’s playbook, she, Kendall, and Roman consider backing Sandi and Stewy’s aggressive play on the Matsson deal. Meanwhile, Logan gives an impromptu pep talk to the ATN newsroom… and outsources a tricky conversation with Kerry. Later, Connor tries to make the most of his rehearsal dinner when Willa goes AWOL.",
+          "plot": "Logan, who gets to keep control of ATN per the terms of the GoJo sale, visits the newsroom to announce his plans to radically revamp its vision. Stewy and Sandi tell the siblings they want to veto the GoJo acquisition at Waystar's upcoming board meeting to negotiate a price increase. All but Shiv dismiss their proposal and go to spend time with Connor, but Matsson privately calls Kendall to say he will call off the acquisition if pushed on price; Kendall suddenly becomes interested in Stewy and Sandi's offer. Logan meets with his children at a karaoke bar to convince them to allow the GoJo sale to go through, but Kendall and Shiv refuse to make peace with their father. Roman, growing weary of his siblings' desire to spite Logan, visits him at his home, where Logan asks his help in negotiating with Matsson, and offers him a position as head of ATN.",
+          "airDate": "2023-04-02",
+          "still": "https://image.tmdb.org/t/p/original/hB04cP1MJkcv6JdUnYF9fHankHb.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/hB04cP1MJkcv6JdUnYF9fHankHb.jpg",
+            "https://image.tmdb.org/t/p/original/uSRuin2gyKhEA4QmYQP4UmPDAhX.jpg",
+            "https://image.tmdb.org/t/p/original/gavaCpRv1Mx1VkIYmqAxOaLcYy9.jpg",
+            "https://image.tmdb.org/t/p/original/6YinZuY133cTAJZnnDwfLuE8lM7.jpg",
+            "https://image.tmdb.org/t/p/original/c8PgXwouD5N3g3LNP3cei0aRqHH.jpg",
+            "https://image.tmdb.org/t/p/original/e0Kb6w91RN5HrsUi5OcsKbS9qNH.jpg",
+            "https://image.tmdb.org/t/p/original/j1vOBTttrsfFPSbOzgG4TUs9RaP.jpg",
+            "https://image.tmdb.org/t/p/original/etU5bWby68GFUX2cOi8pCb0TWHs.jpg",
+            "https://image.tmdb.org/t/p/original/zDZcuSXS9NstBOirVmhUmrMNgwb.jpg",
+            "https://image.tmdb.org/t/p/original/cHokwScxJxF3pCeO8cWDGd8wAEJ.jpg",
+            "https://image.tmdb.org/t/p/original/c8s9hSu5VRLjtPQ39HW6ckCXtvk.jpg",
+            "https://image.tmdb.org/t/p/original/qlyGOsiZVIn8wt6r6LcaK9bFMIi.jpg",
+            "https://image.tmdb.org/t/p/original/7yvX3FWHNANhiZtnr2EUgl44wId.jpg",
+            "https://image.tmdb.org/t/p/original/8UcaNN4xo1XStWRTb8TuZmRG61r.jpg",
+            "https://image.tmdb.org/t/p/original/nnEA4e4KyP5t8Lf7KwZfWqhspXy.jpg",
+            "https://image.tmdb.org/t/p/original/sTrykbsVczrwmiilMwlQwZXXm0l.jpg",
+            "https://image.tmdb.org/t/p/original/8QDn8YLfm3r2DmTlffefRA59HFi.jpg",
+            "https://image.tmdb.org/t/p/original/7DDLG4yTDqSKgIVmIims6up2E4K.jpg",
+            "https://image.tmdb.org/t/p/original/vxj1GyZixjxM4JLgwPcDcxZpV4S.jpg",
+            "https://image.tmdb.org/t/p/original/yzGa0vmqO9tecjobo7HrDVojaUS.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Connor's Wedding",
+          "overview": "Before heading to Europe to meet with Matsson face-to-face, Logan tasks Roman with implementing an unsavory first step in his strategic refocus. Meanwhile, Connor fixates on minutia at his wedding.",
+          "plot": "On the day of Connor and Willa's wedding in New York, Logan departs for Sweden with Tom and the rest of his senior cadre (except Gerri and Hugo) to negotiate with Matsson. He decides to fire Gerri for her perceived mishandling of the fallout from the cruises scandal, and tasks a reluctant Roman with delivering her the news at the wedding. However, the siblings soon receive word from Tom that Logan collapsed onboard the plane and is unresponsive. It gradually becomes clear that Logan will not survive; his plane is turned around and he is pronounced dead upon landing. The devastated siblings are forced to coordinate a response alongside the rest of Waystar's executives. Connor and Willa go through with their wedding in a small ceremony, while Kendall, Shiv and Roman travel to Teterboro Airport to receive their father's body and issue a statement announcing his death to the press.",
+          "airDate": "2023-04-09",
+          "still": "https://image.tmdb.org/t/p/original/kHLvBvTf1ffWhDeivWcRVHQMWPx.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/kHLvBvTf1ffWhDeivWcRVHQMWPx.jpg",
+            "https://image.tmdb.org/t/p/original/enyCR8jTTgpAvYtENKm8xZX20NH.jpg",
+            "https://image.tmdb.org/t/p/original/aP2bS2PgtkJkfeimvBnz4xu9tM8.jpg",
+            "https://image.tmdb.org/t/p/original/3tIOUYTmGaGN1tptT1lxjvlC3f1.jpg",
+            "https://image.tmdb.org/t/p/original/pvznd4DLZtDhK9GoXRqErmuLFbU.jpg",
+            "https://image.tmdb.org/t/p/original/vIwPBDIiTTZSASPpnpUhDgwCsXM.jpg",
+            "https://image.tmdb.org/t/p/original/tphh4wvLKfaaIUIqx87CXss48NB.jpg",
+            "https://image.tmdb.org/t/p/original/wp3yIRXjGZJWuleKvh29v5OvPGJ.jpg",
+            "https://image.tmdb.org/t/p/original/8R8NR62mRf5P5VBv5qybd1IFTJq.jpg",
+            "https://image.tmdb.org/t/p/original/1GaKPvsLQHMy4mPzNOck4QOYtYy.jpg",
+            "https://image.tmdb.org/t/p/original/jbR9NxImqr9WeUM50KO8mLZ7XEs.jpg",
+            "https://image.tmdb.org/t/p/original/mbYdElzbiRR4aw88dPHjSRP0ArF.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Honeymoon States",
+          "overview": "As Roman, Kendall and Shiv navigate a misstep with Matsson, the Waystar team discusses a pivotal recommendation to the board ahead of the GoJo sale. Angling for position, Kendall seeks support from Stewy and Hugo.",
+          "plot": "Shiv is revealed to be pregnant. Logan's family and close associates gather at his apartment for his wake. Hugo approaches Kendall and informs him of a potential insider trading scandal involving his daughter. Frank finds an undated document in Logan's safe naming Kendall as his successor upon his death. Kendall is taken aback by the news while the others debate the document's legitimacy. Since the company's succession plan formally dictated that leadership be passed on to the COO – a title Roman currently holds – Kendall and Roman decide to run the company as co-CEOs. The brothers promise to involve Shiv in all operational decisions, but she feels dejected regardless. Given Kendall's past controversies, Hugo and Karolina propose a PR campaign questioning Logan's judgment leading up to his death, which Roman shuts down. Kendall, however, privately leverages Hugo to go through with the strategy.",
+          "airDate": "2023-04-16",
+          "still": "https://image.tmdb.org/t/p/original/sPrLwDsnPO5vXldhsPmkfRKGcoQ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/sPrLwDsnPO5vXldhsPmkfRKGcoQ.jpg",
+            "https://image.tmdb.org/t/p/original/wwCVbA0E5CDQZrfNWlVSnUhFVbR.jpg",
+            "https://image.tmdb.org/t/p/original/5Ia5Z8cMEmZldbMS5AFLhW03ik7.jpg",
+            "https://image.tmdb.org/t/p/original/m1uJvArYlW0FJqraVnL46uppsEk.jpg",
+            "https://image.tmdb.org/t/p/original/vJ8rj8Ovu3yHABVwixV3GQz8ADt.jpg",
+            "https://image.tmdb.org/t/p/original/vWSOnXMqB54OFT2Q482wyY75mx6.jpg",
+            "https://image.tmdb.org/t/p/original/bMMkuZJrzGQrA8hnmoOzlLy756q.jpg",
+            "https://image.tmdb.org/t/p/original/a01Gp2ZehMC3yZEs6tKaCdfI1ga.jpg",
+            "https://image.tmdb.org/t/p/original/5GUOR5Z0VyZU2mqg1nb5raYClaY.jpg",
+            "https://image.tmdb.org/t/p/original/bJ3r8hA8iF92rVi9mngJlaxG9HO.jpg",
+            "https://image.tmdb.org/t/p/original/vlvvfLPQdl6GLKEVD2ncGEShf49.jpg",
+            "https://image.tmdb.org/t/p/original/sbM0fE5TqKOrlRgv8OkhqSp4mRC.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Kill List",
+          "overview": "After being summoned to Norway for a GoJo team-building retreat, Waystar's old guard grows increasingly concerned over the trip's true purpose. Later, when Matsson makes a play for ATN, Shiv, Kendall and Roman consider whether to fight for Logan's crown jewel.",
+          "plot": "With Kendall and Roman now running the company, the Roys fly to Norway for GoJo's annual retreat, where they are hoping to finalize the sale to Matsson with a floor of $144 per share. Matsson, however, wishes to absorb ATN into the acquisition as well, which the brothers oppose. Matsson also privately confides to Shiv that he is trying to avoid a potential harassment scandal involving his head of PR, with whom he was romantically linked. Kendall and Roman eventually decide to torpedo the sale by indirectly convincing Matsson to call it off himself. However, Roman lashes out at Matsson during their next meeting for not giving them time to grieve their father, and openly calls off the deal. Matsson then bypasses the brothers and makes an offer directly to Waystar's senior management for $192 per share, which they pass on to the board, though all the senior management except Gerri, Karolina, and Tom are to be fired.",
+          "airDate": "2023-04-23",
+          "still": "https://image.tmdb.org/t/p/original/vLWQ8jgLzJU17qi7iK87W35hU4V.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/vLWQ8jgLzJU17qi7iK87W35hU4V.jpg",
+            "https://image.tmdb.org/t/p/original/klsgNgg8JOEXXCfXnZZ9lCe5nFP.jpg",
+            "https://image.tmdb.org/t/p/original/1jO3JIcgbrQfApvaKt5AWthCjlY.jpg",
+            "https://image.tmdb.org/t/p/original/rcMyjjgCPRuyEBGNHApdhcIZeA5.jpg",
+            "https://image.tmdb.org/t/p/original/yGmZV4nPyJvuR5gS4ooqGboPq1Q.jpg",
+            "https://image.tmdb.org/t/p/original/58PdBfKKnU2qk1rtg7MNsArvhTD.jpg",
+            "https://image.tmdb.org/t/p/original/5V6NIOIhwYfVhrdrbnbCZWDEl9t.jpg",
+            "https://image.tmdb.org/t/p/original/tuyVdFHBBHPBmINtWkZClkdjLKy.jpg",
+            "https://image.tmdb.org/t/p/original/csfC2mAJ4226e4XfhbkKpEUWONN.jpg",
+            "https://image.tmdb.org/t/p/original/qOXi0FJUBFClSo97C9fef6pEjtE.jpg",
+            "https://image.tmdb.org/t/p/original/ikLsZv13AZqjFySfFyLwZknIr61.jpg",
+            "https://image.tmdb.org/t/p/original/yFeasdl1AvLt7XnsCmOqPptg3Zj.jpg",
+            "https://image.tmdb.org/t/p/original/8kjWN0ZHfM85ooDM5CzkVtyhnsa.jpg",
+            "https://image.tmdb.org/t/p/original/jeOaj0xbFBSszIaa00M68S7i84H.jpg",
+            "https://image.tmdb.org/t/p/original/grNAnAlX2mjoNIez8H9iZ9gMzt1.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Living+",
+          "overview": "Ahead of a crucial new product launch on Investor Day, Shiv weighs a business proposal from Matsson, while Kendall and Roman call an impromptu meeting to flip the script on their latest interaction with the tech billionaire. Later, the brothers each try to match Logan’s tempestuous style, with varying results.",
+          "plot": "The Roys return to Los Angeles for Waystar's Investor Day, where they plan to launch \"Living+\", a luxury assisted living community that Logan had proposed prior to his death. Matsson dislikes the idea and unsuccessfully tries to convince Shiv to call it off, telling her about his hostile negotiation with Kendall and Roman in Norway. Shiv confronts her brothers, who admit they dislike the GoJo deal. Roman impulsively fires the head of Waystar's film studio in light of their latest film's troubled production, and later fires Gerri as well when she reprimands him for it. Shiv and Tom begin to reconnect romantically. Kendall prepares an outlandish presentation for the Living+ product launch, hoping to attract enough investment interest to render the GoJo acquisition untenable. Despite Shiv and Roman's concerns (and Matsson's attempts to sabotage him), he delivers his speech successfully, giving Waystar stock a major boost.",
+          "airDate": "2023-04-30",
+          "still": "https://image.tmdb.org/t/p/original/9Ut45xIXiKhupEEIlPoKnhb69Kh.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/9Ut45xIXiKhupEEIlPoKnhb69Kh.jpg",
+            "https://image.tmdb.org/t/p/original/cg3e28FXy4OdO7EJMJWmcffVgUZ.jpg",
+            "https://image.tmdb.org/t/p/original/kIAB9T3ZkskfazloTtTNLBAt4vp.jpg",
+            "https://image.tmdb.org/t/p/original/9OIYO77IH5utBNsuc93OLLyjqZG.jpg",
+            "https://image.tmdb.org/t/p/original/gukZRJDVVLytvmw1yBrRBp6t999.jpg",
+            "https://image.tmdb.org/t/p/original/amy498UqmzeLodqb8hMBENO2hQx.jpg",
+            "https://image.tmdb.org/t/p/original/7058U8aWWWm2guAZdW4nsU3ZM3j.jpg",
+            "https://image.tmdb.org/t/p/original/h7TaBOZYLfuNBc0cqaCfefpyhIj.jpg",
+            "https://image.tmdb.org/t/p/original/kcKpnjO27yejdKNUaLCqc2o6OEm.jpg",
+            "https://image.tmdb.org/t/p/original/7gMCdZYGSkEIfLPzOPtQyNViaUS.jpg",
+            "https://image.tmdb.org/t/p/original/ualeKhx70Bnd3EKBdIFTirLM5vp.jpg",
+            "https://image.tmdb.org/t/p/original/cRabpnzUfsgbp8WrGvwmOYuAqsi.jpg",
+            "https://image.tmdb.org/t/p/original/tyeP6yFe6hrsB2Wptl1RPsUQ30P.jpg",
+            "https://image.tmdb.org/t/p/original/8udNfxmmXL14xVH5tRCNy23iCvW.jpg",
+            "https://image.tmdb.org/t/p/original/cyRwKB9ZW3kvWxzbMw02ovdzLj4.jpg",
+            "https://image.tmdb.org/t/p/original/y9XGtm11700xjSiYi3dlhzXg25a.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Tailgate Party",
+          "overview": "Hoping to work the angles on the GoJo deal, Kendall and Roman ask Shiv to invite a political insider to Logan’s annual pre-election day party. Later, Connor considers whether to adjust his ambitions after receiving intel from the Mencken team, while Kendall and Roman catch wind of a potentially fortuitous scandal.",
+          "plot": "The night before the presidential election, the Roys host their traditional party for political insiders at Shiv and Tom's apartment. Kendall and Roman hope to build an antitrust case against the GoJo acquisition, but Shiv – who wants to preserve the deal – invites Matsson to the party in hopes of thwarting her brothers. However, the siblings later learn that Matsson has grossly inflated GoJo's subscriber numbers in India, which could create a fatal scandal for the company. Roman unsuccessfully attempts to convince Connor to drop out of the presidential race after his polling numbers draw support away from Mencken. Gerri refuses Roman's request to return to Waystar, having negotiated a hefty severance agreement. Tom is incensed by rumors of his firing circulating at the party, leading to a vicious argument with Shiv about their marriage. Kendall proposes to Frank that Waystar buy GoJo with him as sole CEO.",
+          "airDate": "2023-05-07",
+          "still": "https://image.tmdb.org/t/p/original/AequFivGIhmbcFeKWG5tjve8amq.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/AequFivGIhmbcFeKWG5tjve8amq.jpg",
+            "https://image.tmdb.org/t/p/original/u5ZMUsDTvwXWsUUpOR1muCZguel.jpg",
+            "https://image.tmdb.org/t/p/original/afQlP75hN9cPGjBp0ouWoGWeUFs.jpg",
+            "https://image.tmdb.org/t/p/original/wK08WaFkksu0bfrvm6ySjtqe4lU.jpg",
+            "https://image.tmdb.org/t/p/original/bJE2hsuY0yJMsDLZtDapHsG54Jq.jpg",
+            "https://image.tmdb.org/t/p/original/tJrUNshGUua6TJwSblytEPLkukZ.jpg",
+            "https://image.tmdb.org/t/p/original/uFUdXv2L9jZ7nsqIv7RC0jnyCvF.jpg",
+            "https://image.tmdb.org/t/p/original/mUIfOQNxfiHYA3whSLnA7fksCO0.jpg",
+            "https://image.tmdb.org/t/p/original/rIXP7ceKhd0WcUhymtgiaHNIoNI.jpg",
+            "https://image.tmdb.org/t/p/original/cPTNniiiVxnRoCvMnGddVt3ooRY.jpg",
+            "https://image.tmdb.org/t/p/original/1AtttKEPWELVlagCPPMTB7nGkiB.jpg",
+            "https://image.tmdb.org/t/p/original/8LiLfAnkujJvpYmRjQAO5ivASNT.jpg",
+            "https://image.tmdb.org/t/p/original/eSkK9vAQ5L4T7CcaFF5F2br6Qgw.jpg",
+            "https://image.tmdb.org/t/p/original/Aa1dIqWIKp4wvRRwrWlWqKqXvZZ.jpg",
+            "https://image.tmdb.org/t/p/original/1oA7unloImlDlqg8zJF47muKSdH.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "America Decides",
+          "overview": "On election night, Tom tries to manage an increasingly chaotic newsroom, while Kendall, Shiv, and Roman spar over the consequences of the result – for themselves, the company, and the country.",
+          "plot": "On election night, the siblings are torn over the candidates: Roman supports Mencken as he will advance Waystar's agenda – including blocking the GoJo deal – while Kendall is uncomfortable with Mencken due to blowback from his extreme politics affecting his daughter Sophie. Shiv, meanwhile, remains aligned with Matsson. Shiv finally tells Tom she is pregnant with his child, but Tom reacts skeptically. A vote center in Milwaukee is firebombed, destroying thousands of ballots that would have likely gone to Democratic candidate Daniel Jiménez; Roman uses the situation to pressure Tom into having ATN prematurely call Wisconsin for Mencken, while Connor concedes to Mencken as well. Kendall ponders backing Jiménez for his family's sake, but learns from Greg that Shiv is working with Matsson; hurt by his sister's betrayal, he throws in his support for Mencken. After Mencken wins Arizona, ATN calls the election in his favor.",
+          "airDate": "2023-05-14",
+          "still": "https://image.tmdb.org/t/p/original/cWDU2UZmZZDiQkA7eKR8AQyAIV3.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/cWDU2UZmZZDiQkA7eKR8AQyAIV3.jpg",
+            "https://image.tmdb.org/t/p/original/jw1TEWzkpa1ciAbQ7fUOHRXcZwi.jpg",
+            "https://image.tmdb.org/t/p/original/uc4tTX4H8Y1CybPEUiSx3Wn10qM.jpg",
+            "https://image.tmdb.org/t/p/original/bGsmxJLPpoWcSxmp7OJotqnCwVd.jpg",
+            "https://image.tmdb.org/t/p/original/yVEaypd1V0U4sEFYqxaP3YjG8PT.jpg",
+            "https://image.tmdb.org/t/p/original/wUaP6Nn0mMdjYfpZMk7fcYvSIiW.jpg",
+            "https://image.tmdb.org/t/p/original/acXHfeJp300oT5Gl6hU0pTgIAqd.jpg",
+            "https://image.tmdb.org/t/p/original/gP2Vj3Xn7NbJIXnNYuD8JS1XQmC.jpg",
+            "https://image.tmdb.org/t/p/original/tsz2JSUoYBRnvChnNaqw0ZimHb5.jpg",
+            "https://image.tmdb.org/t/p/original/jeOnbq7T70gp2hWWqLjY6WyOFx.jpg",
+            "https://image.tmdb.org/t/p/original/4yhxVOcqb0KOkl3tEqwckPCsPBG.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Church and State",
+          "overview": "As the family girds themselves for an emotional funeral, Kendall finds himself at odds with Rava… and inopportune news from Jess. Later, Shiv tries to reposition herself within a new political landscape, as Kendall rallies supporters to his side.",
+          "plot": "The Roys arrive at Logan's funeral amidst street protests that have broken out following the announcement of Mencken's win. Shiv advises Matsson to publicize his bogus subscriber counts in India while the news cycle is occupied with the election, and tells her brothers about her pregnancy. Ewan gives a charged eulogy lending insight into Logan's troubled childhood while condemning his brother's corrupt influence. Roman is unable to deliver his speech and breaks down crying, prompting Kendall to give one in his place. Shiv brokers a deal between Matsson and Mencken to allow the GoJo deal to go through in exchange for naming an American CEO, which she hopes will be her. Upon learning this, Kendall enlists Roman and Hugo to join him against Shiv at the final board vote on the acquisition. Roman, overwhelmed with the funeral and ashamed at letting his deal with Mencken backfire, walks into a crowd of rioters and gets assaulted.",
+          "airDate": "2023-05-21",
+          "still": "https://image.tmdb.org/t/p/original/javcZZhlgHQVLARHL5IDqkUo1g5.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/javcZZhlgHQVLARHL5IDqkUo1g5.jpg",
+            "https://image.tmdb.org/t/p/original/aRlJ64Bb2mItzi55nvBj7f2N2in.jpg",
+            "https://image.tmdb.org/t/p/original/5gyXyRl4uS9C9iMZLrWoPktr0Z5.jpg",
+            "https://image.tmdb.org/t/p/original/sCedo5xiq8jIBE7n6B1dCOudCns.jpg",
+            "https://image.tmdb.org/t/p/original/d9n8HTIIEFe0GLd67YBQYlfqvzQ.jpg",
+            "https://image.tmdb.org/t/p/original/1op6a9wgjgLJKcp5WJ2xTnh7gQs.jpg",
+            "https://image.tmdb.org/t/p/original/abAC6hFe3h4h2rXiJ6N97gR4k2y.jpg",
+            "https://image.tmdb.org/t/p/original/zMw5Og2TcjtiDmIvSSWluP8dubO.jpg",
+            "https://image.tmdb.org/t/p/original/bHZ5hQ8E3gn6gmGs6J1O75tIoqT.jpg",
+            "https://image.tmdb.org/t/p/original/gHHZ8VUo69Qz9ivia9kcyKvWjIK.jpg",
+            "https://image.tmdb.org/t/p/original/rqkpX7NnQvITH8p5USFVvZgc7Xy.jpg",
+            "https://image.tmdb.org/t/p/original/2FrqGjQ0S4d8JKWzmT63I4kC1Au.jpg",
+            "https://image.tmdb.org/t/p/original/jU0zRBqCn7qFOP1goo0wVoHovt9.jpg",
+            "https://image.tmdb.org/t/p/original/5V71xMrN4m2UJpFdfqLUM2aMGzT.jpg",
+            "https://image.tmdb.org/t/p/original/1fmDCMPNkfycpoieXRy6ZX6PCyk.jpg",
+            "https://image.tmdb.org/t/p/original/jgTBeUPZ65BAun4cbxoSdFQE4se.jpg",
+            "https://image.tmdb.org/t/p/original/x2Lcj4nzKNzxIRkCtVRAXderH3k.jpg",
+            "https://image.tmdb.org/t/p/original/bzz4hD1iCvgK5ep17wmHhkHDES9.jpg",
+            "https://image.tmdb.org/t/p/original/5Y9UhfzhRy5HCtKU0TemTRnzqMW.jpg",
+            "https://image.tmdb.org/t/p/original/1i3GGxR7gWQJfLXDJuKqcacO2fh.jpg",
+            "https://image.tmdb.org/t/p/original/nmxa66qGsoiRrDu2d6GF0SLN8UG.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "With Open Eyes",
+          "overview": "Ahead of the final board vote on the Waystar-GoJo deal, Kendall and Shiv try to shore up their opposing interests...and get a fix on the whereabouts of a physically and emotionally bruised Roman.",
+          "plot": "Kendall scrambles to secure board votes to block the GoJo deal. He and Shiv visit Caroline's estate in Barbados, where Roman is recovering from his wounds. Matsson interviews Tom and offers him the CEO position, believing he will be more obedient than Shiv; Greg tips off the siblings that Shiv will not be Matsson's CEO. The siblings then agree to let Kendall take over, forming a voting bloc. Upon their return to New York, Shiv learns Tom has been chosen as CEO; the siblings race to sway the board. The board comes to a 6–6 tie over selling to GoJo, with only Shiv's vote left; Shiv, however, has second thoughts about Kendall's competence, and votes in favor of the deal despite Kendall's protests. Tom is appointed CEO with Shiv by his side; Roman accepts that he and his siblings were never worthy successors; a devastated Kendall contemplates his future.",
+          "airDate": "2023-05-28",
+          "still": "https://image.tmdb.org/t/p/original/fEWGXc9Ymd4YYJJTk3QPKJxndyJ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/fEWGXc9Ymd4YYJJTk3QPKJxndyJ.jpg",
+            "https://image.tmdb.org/t/p/original/wwa4WFrOfCSOT5ozJIgZhJA47Os.jpg",
+            "https://image.tmdb.org/t/p/original/1RCAOUjHxPX2jnFEJnkQTubAIMp.jpg",
+            "https://image.tmdb.org/t/p/original/bX0gDuqBTLBC5qEkOJhgbVSTTmF.jpg",
+            "https://image.tmdb.org/t/p/original/nPfDnlyYa0CNZQ9U9l8cIJEV2ZA.jpg",
+            "https://image.tmdb.org/t/p/original/qD4iGDyw8dm9XN6QrRv5aShsb1V.jpg",
+            "https://image.tmdb.org/t/p/original/qN0plkwGCA96PgJwqTf6w7aPqBC.jpg",
+            "https://image.tmdb.org/t/p/original/xBK3Wmn8yb3DkU202ncOchjRzl1.jpg",
+            "https://image.tmdb.org/t/p/original/kZeAW1bKkevLHvvmoDep6OLh2cr.jpg",
+            "https://image.tmdb.org/t/p/original/6W3xCRh3Lt0hl6OE1ceZ5YCN9d7.jpg",
+            "https://image.tmdb.org/t/p/original/e4gF1yx1kTb9YbtTnrOirhEL3qC.jpg",
+            "https://image.tmdb.org/t/p/original/sBBguRYUWt1BF7nZdra4MGwowA0.jpg",
+            "https://image.tmdb.org/t/p/original/rMmj7Unt80bQv5HmDOSKefYm0WV.jpg",
+            "https://image.tmdb.org/t/p/original/qXNIt2jC3V3Ex8AnnlaXEea2xUo.jpg",
+            "https://image.tmdb.org/t/p/original/aVs9YPKpgpMRR5m0kcnvvSX3pr7.jpg",
+            "https://image.tmdb.org/t/p/original/lDRmJ3lFWQlRZjEZK9tfbQlWHNJ.jpg",
+            "https://image.tmdb.org/t/p/original/ibeYPR2QTeyqU1rla8rl2tMe0v5.jpg",
+            "https://image.tmdb.org/t/p/original/jLQt8JvGXNdzGar7yvLOyIINcCg.jpg",
+            "https://image.tmdb.org/t/p/original/zrkv5IiaHxVvwCpzcw5A7KvRJlA.jpg",
+            "https://image.tmdb.org/t/p/original/hiAURkDg2LfD8a56ZD45ti6zvIe.jpg",
+            "https://image.tmdb.org/t/p/original/9vQxZhZMQuCYeYrD683l9YYGrF8.jpg",
+            "https://image.tmdb.org/t/p/original/aGDMwADc9RFqA5MCCHkKjhGvECq.jpg",
+            "https://image.tmdb.org/t/p/original/jTwInhV1KVPAYbevrf8seWs62OD.jpg",
+            "https://image.tmdb.org/t/p/original/vPM7UrRje9LzqKAUUHImAvt7G5F.jpg",
+            "https://image.tmdb.org/t/p/original/76sLudkYqpQ0l4BKMOi5UguXuJ9.jpg",
+            "https://image.tmdb.org/t/p/original/iwTKosmM86bgD6YOdxwOjtPKjuW.jpg",
+            "https://image.tmdb.org/t/p/original/oX8K9Sjcw2YBkvJaQFsrgoIi5ZJ.jpg",
+            "https://image.tmdb.org/t/p/original/1u0eNnp8iI8AviMwHDBPbMcBbzD.jpg",
+            "https://image.tmdb.org/t/p/original/jL4tl7NsFQvkt9Z04b8oAqr5aQC.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "cast": [
+    {
+      "name": "Jeremy Strong",
+      "character": "Kendall Roy",
+      "episodeCount": 39,
+      "profile": "https://image.tmdb.org/t/p/original/jcMhXWICSi4QjQttJVhFSiKVvpF.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/158/397192.jpg"
+    },
+    {
+      "name": "Kieran Culkin",
+      "character": "Roman Roy",
+      "episodeCount": 39,
+      "profile": "https://image.tmdb.org/t/p/original/b5EC4nziLhBRX4GOcYx2BdS3FTt.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/158/397194.jpg"
+    },
+    {
+      "name": "Sarah Snook",
+      "character": "Siobhan 'Shiv' Roy",
+      "episodeCount": 39,
+      "profile": "https://image.tmdb.org/t/p/original/w9xv72oaTISLgeT381fU4Jor9GV.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brian Cox",
+      "character": "Logan Roy",
+      "episodeCount": 39,
+      "profile": "https://image.tmdb.org/t/p/original/scSjbFCTRngXlkJRoKptM5kQGw7.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/158/397191.jpg"
+    },
+    {
+      "name": "Matthew Macfadyen",
+      "character": "Tom Wambsgans",
+      "episodeCount": 39,
+      "profile": "https://image.tmdb.org/t/p/original/sFaIfkykJdftwrc3BdEfpdg2mYW.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/158/397197.jpg"
+    },
+    {
+      "name": "Alan Ruck",
+      "character": "Connor Roy",
+      "episodeCount": 39,
+      "profile": "https://image.tmdb.org/t/p/original/hj7CuWinT12hMKjRhSO4XEMVq7w.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/158/397195.jpg"
+    },
+    {
+      "name": "Nicholas Braun",
+      "character": "Greg Hirsch",
+      "episodeCount": 39,
+      "profile": "https://image.tmdb.org/t/p/original/b2I6bZptuld3pjlVkYIy4DtMKGg.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/158/397198.jpg"
+    },
+    {
+      "name": "Peter Friedman",
+      "character": "Frank Vernon",
+      "episodeCount": 39,
+      "profile": "https://image.tmdb.org/t/p/original/3pyU0yQsRIqSZw1fYapFRXJ3EHp.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/158/397200.jpg"
+    },
+    {
+      "name": "J. Smith-Cameron",
+      "character": "Gerri Kellman",
+      "episodeCount": 38,
+      "profile": "https://image.tmdb.org/t/p/original/7MBc2xJA3BpW3SnDQsww87IA0Tr.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/208/521734.jpg"
+    },
+    {
+      "name": "Scott Nicholson",
+      "character": "Colin",
+      "episodeCount": 36,
+      "profile": "https://image.tmdb.org/t/p/original/csAnB3jHved9q8hFLayCWWUG4rL.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dagmara Dominczyk",
+      "character": "Karolina Novotney",
+      "episodeCount": 34,
+      "profile": "https://image.tmdb.org/t/p/original/i1f78OP3G6pksgCcu6AxPgZYEmv.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/161/403462.jpg"
+    },
+    {
+      "name": "Justine Lupe",
+      "character": "Willa Ferreyra",
+      "episodeCount": 32,
+      "profile": "https://image.tmdb.org/t/p/original/9lHrHYBUJPXX1rnxczFIcBZLXw8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "David Rasche",
+      "character": "Karl Muller",
+      "episodeCount": 31,
+      "profile": "https://image.tmdb.org/t/p/original/bWPhfa4m8pXVneP1gf37xvuMUCA.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Hiam Abbass",
+      "character": "Marcia Roy",
+      "episodeCount": 26,
+      "profile": "https://image.tmdb.org/t/p/original/hkzC5aJKTiuCchBpybaHDVngYZW.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Arian Moayed",
+      "character": "Stewy Hosseini",
+      "episodeCount": 25,
+      "profile": "https://image.tmdb.org/t/p/original/hYBqwt0HelUqgKSd1VDUAyvfDME.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Juliana Canfield",
+      "character": "Jess Jordan",
+      "episodeCount": 25,
+      "profile": "https://image.tmdb.org/t/p/original/7CgzSH27t08DNuNaMKXLOjXSDeg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Fisher Stevens",
+      "character": "Hugo Baker",
+      "episodeCount": 24,
+      "profile": "https://image.tmdb.org/t/p/original/wWC6wbLV56RJGtyytMmmGvi054t.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rob Yang",
+      "character": "Lawrence Yee",
+      "episodeCount": 20,
+      "profile": "https://image.tmdb.org/t/p/original/rijNHjy45mhXw6TIhLesuDs4BY4.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/158/397203.jpg"
+    },
+    {
+      "name": "Natalie Gold",
+      "character": "Rava Roy",
+      "episodeCount": 15,
+      "profile": "https://image.tmdb.org/t/p/original/x6x5kpWUUJ15In9SHeWeNRcYy3y.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/158/397199.jpg"
+    },
+    {
+      "name": "Zoë Winters",
+      "character": "Kerry Castellabate",
+      "episodeCount": 15,
+      "profile": "https://image.tmdb.org/t/p/original/3Ej5luqqvdD3hZXAzFZbdRxj7CQ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ashley Zukerman",
+      "character": "Nate Sofrelli",
+      "episodeCount": 12,
+      "profile": "https://image.tmdb.org/t/p/original/tKT5ybCjMOV4whEQ6jy8ZQnrP7C.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Larry Pine",
+      "character": "Sandy Furness",
+      "episodeCount": 11,
+      "profile": "https://image.tmdb.org/t/p/original/nsMlfqaSRFarvn5K8EcCyKZjPeB.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Swayam Bhatia",
+      "character": "Sophie Roy",
+      "episodeCount": 11,
+      "profile": "https://image.tmdb.org/t/p/original/bls6jlbG5pvIo8OKPQNvWwwdpgk.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alexander Skarsgård",
+      "character": "Lukas Matsson",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/6VNNddrSrIVgdzhXr4Zg89gmOzY.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Quentin Morales",
+      "character": "Iverson Roy",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/uG1GfHGGeyTEyTpWVCLEo3lrNkV.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Patch Darragh",
+      "character": "Ray",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/pLYaRnY2l61DphIUYZvLSlZZfGJ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dasha Nekrasova",
+      "character": "Comfrey Pellits",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/iEWg6G96sOtzRphRlJCVjw7TQOt.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Caitlin FitzGerald",
+      "character": "Tabitha Hayes",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/zwtbLjCsThiD4MlnELnYKzUKCqZ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jeannie Berlin",
+      "character": "Cyd Peach",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/sT1o2nVecNUgysnHV7g6KYTciXb.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Annabelle Dexter-Jones",
+      "character": "Naomi Pierce",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/xym6SQjEQzuP35Fed3Y3gbzSgDI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brian Hotaling",
+      "character": "Mark",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/jiykv10BLcwCdJYnouO3KX0XVAR.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Eric Bogosian",
+      "character": "Gil Eavis",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/lUtLCWoLh18UFVOHBFr1VpUpoYJ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Zack Robidas",
+      "character": "Mark Ravenhead",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/gzX7oZOA0kgNsWzwU7M7SljRFPp.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "James Cromwell",
+      "character": "Ewan Roy",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/vpNQQbM5PtxsYmVm4oh79SGFyUK.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Harriet Walter",
+      "character": "Lady Caroline Collingwood",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/vH8JrqdHaoFeGos44XeKTNuQMKE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Hope Davis",
+      "character": "Sandi Furness",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/dJb76YQDFmfJ6ptlvBvx0ZBP44C.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Holly Hunter",
+      "character": "Rhea Jarrell",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/kC7KX03VAWvogOCuwKbMo4V6TuU.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/444/1111484.jpg"
+    },
+    {
+      "name": "Danny Huston",
+      "character": "Jamie Laird",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/mNz9t7MNANopavbLgcsZMMQBJ0u.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jihae",
+      "character": "Berry Schneider",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/aRHd8OWGcrb55s1KKbWgvXd3zBd.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Christine Spang",
+      "character": "Lucy",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/yCQExCAVGgvRwfei49LU7Zude45.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Justin Kirk",
+      "character": "Jeryd Mencken",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/7zRJN1qkaGPhUoGoIEtZDsDY9e6.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "KeiLyn Durrel Jones",
+      "character": "Remi",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/4wDO3Zt9KJg9CARCEgjuVdhWa8x.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jóhannes Haukur Jóhannesson",
+      "character": "Oskar Gudjohnsen",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/oqZftP0WS1rD5NFpR7vLp6JU52I.jpg",
+      "inCharacter": null
+    }
+  ],
+  "generatedAt": "2026-07-23T04:01:09.427Z"
+}
