@@ -29,7 +29,7 @@ import ShowCard from '@/src/components/ShowCard';
 import FeaturedCarousel from '@/src/components/FeaturedCarousel';
 import type { FeaturedItem } from '@/src/components/FeaturedCarousel';
 import type { ShowSummary } from '@/src/lib/types';
-import { qk } from '@/src/lib/queryKeys';
+import { qk, invalidateProgress } from '@/src/lib/queryKeys';
 import { silentCatch } from '@/src/lib/errorLog';
 
 // Top Rated reveals the 90-show pool one page at a time as the user
@@ -204,7 +204,7 @@ export default function SearchScreen() {
       // Refresh user_shows so My Shows / Profile reflect the new muted row,
       // and invalidate the explore caches so the next-ranked entry can
       // backfill the freed slot (Top Rated has 90 in the pool, displays 15).
-      queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
+      invalidateProgress(queryClient, userId);
       queryClient.invalidateQueries({ queryKey: qk.popular(userId) });
       queryClient.invalidateQueries({ queryKey: qk.airingThisWeek(userId) });
       queryClient.invalidateQueries({ queryKey: qk.topRated(userId) });

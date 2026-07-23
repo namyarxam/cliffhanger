@@ -9,7 +9,7 @@ import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { getUserShows } from '@/src/lib/watchlist';
 import WatchlistCard from '@/src/components/WatchlistCard';
-import { qk } from '@/src/lib/queryKeys';
+import { qk, invalidateProgress } from '@/src/lib/queryKeys';
 
 export default function WatchedScreen() {
   const theme = useTheme();
@@ -35,7 +35,7 @@ export default function WatchedScreen() {
 
   useFocusEffect(useCallback(() => {
     if (!userId) return;
-    queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
+    invalidateProgress(queryClient, userId);
   }, [userId, queryClient]));
 
   return (

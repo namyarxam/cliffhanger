@@ -1,6 +1,6 @@
 import { useState, useCallback, useRef, useMemo, useEffect } from 'react';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
-import { qk } from '@/src/lib/queryKeys';
+import { qk, invalidateProgress } from '@/src/lib/queryKeys';
 import {
   View,
   Text,
@@ -102,7 +102,7 @@ export default function ProfileScreen() {
       queryClient.invalidateQueries({ queryKey: qk.friends(userId) });
       queryClient.invalidateQueries({ queryKey: qk.pendingRequests(userId) });
       queryClient.invalidateQueries({ queryKey: qk.lists(userId) });
-      queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
+      invalidateProgress(queryClient, userId);
       queryClient.invalidateQueries({ queryKey: qk.displayList(userId) });
     }, [userId, queryClient])
   );

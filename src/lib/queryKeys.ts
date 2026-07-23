@@ -6,7 +6,7 @@
  * surgical writes/invalidations.
  *
  * Pattern:
- *   queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) })
+ *   invalidateProgress(queryClient, userId)   // see the bottom of this file
  *   queryClient.setQueryData(qk.userShow(userId, showId), updater)
  *
  * Keys are user-scoped wherever data is per-user — never share a cache
@@ -61,3 +61,36 @@ export const qk = {
   // Moderation
   blocked: (userId: string | undefined) => ['blocked', userId] as const,
 };
+
+/**
+ * Invalidate everything derived from a user's watch progress.
+ *
+ * Changing progress or a show's status feeds more queries than it looks:
+ * the watchlist itself, the next-episode and airing-today lookups, watched
+ * counts, and the recap list, which carries a per-viewer season cap.
+ *
+ * This exists because that last one was missed. Thirteen separate call sites
+ * invalidated the watchlist by hand and none of them knew about recaps, so
+ * finishing a season left the Recap tab showing the old cap — for up to
+ * thirty seconds by staleTime, and indefinitely in practice, because a tab
+ * screen stays mounted and never refetches on a tab switch.
+ *
+ * Adding a fourteenth site is not the failure mode worth guarding against.
+ * Adding a fifteenth QUERY is: one place to declare the dependency means the
+ * next one cannot be forgotten at twelve of the callers.
+ */
+export function invalidateProgress(
+  queryClient: { invalidateQueries: (o: { queryKey: readonly unknown[] }) => unknown },
+  userId: string | undefined,
+) {
+  if (!userId) return;
+  for (const key of [
+    qk.userShows.all(userId),
+    qk.nextEpisodes(userId),
+    qk.airingToday(userId),
+    qk.watchedCounts(userId),
+    qk.recaps(userId),
+  ]) {
+    queryClient.invalidateQueries({ queryKey: key });
+  }
+}

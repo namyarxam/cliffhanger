@@ -12,7 +12,7 @@ import { getUserShows, rateShow, updateShowStatus } from '@/src/lib/watchlist';
 import RatingSelector, { getUserRatingColor } from '@/src/components/RatingSelector';
 import type { UserShow } from '@/src/lib/types';
 import { silentCatch } from '@/src/lib/errorLog';
-import { qk } from '@/src/lib/queryKeys';
+import { qk, invalidateProgress } from '@/src/lib/queryKeys';
 
 export default function MutedScreen() {
   const theme = useTheme();
@@ -36,7 +36,7 @@ export default function MutedScreen() {
 
   useFocusEffect(useCallback(() => {
     if (!userId) return;
-    queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
+    invalidateProgress(queryClient, userId);
   }, [userId, queryClient]));
 
   const handleRate = async (showId: string, rating: number) => {

@@ -12,7 +12,7 @@ import { useRouter } from 'expo-router';
 import { useFocusEffect } from 'expo-router';
 import { useCoachmark } from '@/src/tutorial/useCoachmark';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
-import { qk } from '@/src/lib/queryKeys';
+import { qk, invalidateProgress } from '@/src/lib/queryKeys';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
@@ -281,7 +281,7 @@ export default function MyShowsScreen() {
         );
       }),
     );
-    queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
+    invalidateProgress(queryClient, userId);
     queryClient.invalidateQueries({ queryKey: qk.nextEpisodes(userId) });
   }, [userId, queryClient]);
 
@@ -300,7 +300,7 @@ export default function MyShowsScreen() {
   useFocusEffect(
     useCallback(() => {
       if (!userId) return;
-      queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
+      invalidateProgress(queryClient, userId);
       queryClient.invalidateQueries({ queryKey: qk.nextEpisodes(userId) });
       queryClient.invalidateQueries({ queryKey: qk.airingToday(userId) });
       queryClient.invalidateQueries({ queryKey: qk.returnAnnouncements(userId) });
@@ -348,12 +348,12 @@ export default function MyShowsScreen() {
       // letting it refetch handles the "no more next episodes → caught_up=true"
       // transition without us re-implementing it here.
       queryClient.invalidateQueries({ queryKey: qk.nextEpisodes(userId) });
-      queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
+      invalidateProgress(queryClient, userId);
       queryClient.invalidateQueries({ queryKey: qk.watchedCounts(userId) });
     } catch (e) {
       silentCatch('myShows:markNext')(e);
       // Rollback the optimistic write by refetching from server.
-      queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
+      invalidateProgress(queryClient, userId);
       queryClient.invalidateQueries({ queryKey: qk.nextEpisodes(userId) });
     }
   }, [userId, queryClient]);
@@ -401,7 +401,7 @@ export default function MyShowsScreen() {
       // already in the DB — that's what reveals the inline RatingSelector
       // and surfaces the rating prompt.
       await updateShowStatus(userId, showId, 'watched');
-      queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
+      invalidateProgress(queryClient, userId);
       // Per-show userShow cache lives at qk.userShow(userId, showId). Without
       // this invalidation the show-detail page rehydrates from a pre-watched
       // cache entry, status doesn't read 'watched', and the rating prompt
@@ -410,7 +410,7 @@ export default function MyShowsScreen() {
       router.push(`/show/${showId}?from=/`);
     } catch (e) {
       silentCatch('myShows:markWatched')(e);
-      queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
+      invalidateProgress(queryClient, userId);
     }
   }, [userId, router, queryClient]);
 
@@ -706,7 +706,7 @@ export default function MyShowsScreen() {
           map.delete(showId);
           return { nextEpisodes: map };
         });
-        queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
+        invalidateProgress(queryClient, userId);
         queryClient.invalidateQueries({ queryKey: qk.nextEpisodes(userId) });
         queryClient.invalidateQueries({ queryKey: qk.watchedCounts(userId) });
       }}

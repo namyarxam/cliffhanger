@@ -14,7 +14,7 @@ import {
 } from '@/src/lib/watchlist';
 import { addListItem, removeListItem } from '@/src/lib/lists';
 import { silentCatch } from '@/src/lib/errorLog';
-import { qk } from '@/src/lib/queryKeys';
+import { qk, invalidateProgress } from '@/src/lib/queryKeys';
 import type { ShowFull, Season, WatchStatus, UserShow } from '@/src/lib/types';
 
 // Walk back one episode within a season, or to the last episode of the prior
@@ -52,7 +52,7 @@ export function useShowActions(deps: ShowActionsDeps) {
   // that write through to the shared cache.
   const invalidateMyShows = useCallback(() => {
     if (!userId) return;
-    queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
+    invalidateProgress(queryClient, userId);
     queryClient.invalidateQueries({ queryKey: qk.nextEpisodes(userId) });
     queryClient.invalidateQueries({ queryKey: qk.watchedCounts(userId) });
     queryClient.invalidateQueries({ queryKey: qk.airingToday(userId) });
