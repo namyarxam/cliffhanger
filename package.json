@@ -7,7 +7,11 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "recap:spines": "node scripts/batch-recaps.mjs --manifest scripts/batch-manifest.json --stage spine",
+    "recap:audit": "node scripts/batch-recaps.mjs --manifest scripts/batch-manifest.json",
+    "recap:progress": "node scripts/batch-progress.mjs",
+    "recap:report": "node scripts/batch-recaps.mjs --manifest scripts/batch-manifest.json --report"
   },
   "dependencies": {
     "@expo-google-fonts/dm-sans": "^0.4.2",
