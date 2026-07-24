@@ -92,6 +92,26 @@ const EPISODE_ANTHOLOGY = 0.15;
  */
 const ANTHOLOGY = 0.75;
 
+/**
+ * A show with more total episodes than this is too big for a v1 recap,
+ * regardless of how much of it we cover.
+ *
+ * This is separate from the USABLE cap. That one counts what we can generate,
+ * so a show with sparse Wikipedia coverage slips under it while being enormous:
+ * Naruto Shippūden has ~500 episodes, only its first ~32 summarised, so it
+ * bounds to 32 usable and passes a cap meant to exclude exactly this kind of
+ * show. Judging the WHOLE size catches it — 500 is 500 whether or not we
+ * covered it.
+ *
+ * Deliberately NOT a coverage fraction. Fraction conflates "genuinely huge"
+ * (Naruto) with "normal show we happened to under-fetch" (The Wire, 60
+ * episodes, bounded to season 1 by a fetcher gap) — and rejecting the latter
+ * hides a fetcher bug behind a content rule. Total size is only ever about the
+ * show. Set above Lost (121) and below 24 (204), so the marquee long-but-
+ * finite shows survive and the hundred-episode sagas do not.
+ */
+const TOTAL_EPISODE_CAP = 150;
+
 export function evaluate(data) {
   const reasons = [];
   const warnings = [];
@@ -208,6 +228,17 @@ export function evaluate(data) {
   if (usableEpisodes > EPISODE_CAP) {
     reasons.push(
       `${usableEpisodes} usable episodes — over the ${EPISODE_CAP}-episode cap for v1; too large to ground well in one pass`,
+    );
+  }
+
+  // --- whole-show size ------------------------------------------------------
+  //
+  // Too big to recap at all for v1, however little of it we hold. Catches the
+  // hundred-episode sagas the usable cap misses when their coverage is thin.
+  // See TOTAL_EPISODE_CAP.
+  if (totalEpisodes > TOTAL_EPISODE_CAP) {
+    reasons.push(
+      `${totalEpisodes} total episodes — over the ${TOTAL_EPISODE_CAP}-episode show-size cap for v1`,
     );
   }
 
