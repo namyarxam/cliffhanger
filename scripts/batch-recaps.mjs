@@ -206,6 +206,14 @@ async function main() {
 
   let worked = 0;
 
+  // Consecutive spine failures. The usage limit makes `claude -p` exit non-zero
+  // with NO output — no "usage limit" text to match — so a purely text-based
+  // rate-limit check misses it and the loop marches through the whole manifest
+  // marking every remaining show spine-failed. A run that hit the limit did
+  // exactly that to 171 shows. This counter is the backstop: several failures
+  // in a row are systemic (limit, or claude broken), not one bad show.
+  let consecutiveSpineFailures = 0;
+
   for (const show of manifest.shows) {
     if (only && show.slug !== only) continue;
     if (worked >= limit) {
@@ -272,19 +280,32 @@ async function main() {
       ]);
       const text = r.out + r.err;
       if (r.code !== 0) {
-        if (isRateLimited(text)) {
-          console.log('\n▪ usage limit reached — stopping cleanly. Re-run later to resume.\n');
+        // The limit exits claude non-zero with an empty message. Either the
+        // explicit rate-limit text OR a bare "claude exited N:" with nothing
+        // after it is the signal to stop cleanly rather than fail the show.
+        const emptyExit = /claude exited \d+:\s*$/.test(text.trim());
+        if (isRateLimited(text) || emptyExit) {
+          console.log('\n▪ generation unavailable (usage limit or empty exit) — stopping cleanly. Re-run to resume.\n');
           await saveState(state);
           printReport(manifest, state);
           return;
         }
+        consecutiveSpineFailures++;
         const msg = text.trim().split('\n').pop() ?? 'spine failed';
         console.log(`  ✗ spine failed: ${msg.slice(0, 160)}`);
         e.spine = false;
         e.errors.push(`spine: ${msg.slice(0, 200)}`);
         await saveState(state);
+        // Backstop for failure shapes the checks above do not name: several in
+        // a row are systemic, so stop instead of burning the manifest.
+        if (consecutiveSpineFailures >= 3) {
+          console.log(`\n▪ ${consecutiveSpineFailures} spine failures in a row — stopping; looks systemic, not per-show. Re-run to resume.\n`);
+          printReport(manifest, state);
+          return;
+        }
         continue;
       }
+      consecutiveSpineFailures = 0;
       e.spine = true;
       worked++;
       await saveState(state);
