@@ -723,7 +723,12 @@
           "airDate": "2014-03-10",
           "still": "https://image.tmdb.org/t/p/original/9TNXra1BYcYykgl1jF4mYevmh8F.jpg",
           "stills": [
-            "https://image.tmdb.org/t/p/original/9TNXra1BYcYykgl1jF4mYevmh8F.jpg"
+            "https://image.tmdb.org/t/p/original/9TNXra1BYcYykgl1jF4mYevmh8F.jpg",
+            "https://image.tmdb.org/t/p/original/iX2fp5C8DZuX8AeKDZU64b93akQ.jpg",
+            "https://image.tmdb.org/t/p/original/7oKTbcLbs6MSG1wOToq6vVmv2vW.jpg",
+            "https://image.tmdb.org/t/p/original/zpPVQ9lAkzePFomksyCwABkaFyZ.jpg",
+            "https://image.tmdb.org/t/p/original/seIkAvSrqr3tG71sHkL0Ygy3IJi.jpg",
+            "https://image.tmdb.org/t/p/original/7nEnu78kLcrrbdRVkA06ZktDI12.jpg"
           ]
         },
         {
@@ -1415,7 +1420,8 @@
           "airDate": "2017-09-10",
           "still": "https://image.tmdb.org/t/p/original/pijWj2iUfjY0oWiOk580O6ND0iD.jpg",
           "stills": [
-            "https://image.tmdb.org/t/p/original/pijWj2iUfjY0oWiOk580O6ND0iD.jpg"
+            "https://image.tmdb.org/t/p/original/pijWj2iUfjY0oWiOk580O6ND0iD.jpg",
+            "https://image.tmdb.org/t/p/original/vFOtVG3MkUPaFZCl2xSMKhrPeq.jpg"
           ]
         },
         {
@@ -2101,7 +2107,7 @@
     },
     {
       "name": "Patrick Gorman",
-      "character": "Tolbert",
+      "character": "Elias Stilinski",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/emmEX5N1ckdPKMSjpDCqtSG6AQE.jpg",
       "inCharacter": null
@@ -2157,7 +2163,7 @@
     },
     {
       "name": "Mieko Hillman",
-      "character": "Tara Graeme",
+      "character": "Deputy Tara Graeme",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/uP5RsbjiyymSgcHFHLBlZrLBQYI.jpg",
       "inCharacter": null
@@ -2192,7 +2198,7 @@
     },
     {
       "name": "Joseph Boyd",
-      "character": "Richmond/Hunter",
+      "character": "Richmond",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/cEb93357h6BE4X5heNGJARBkhaq.jpg",
       "inCharacter": null
@@ -2674,5 +2680,5 @@
       "inCharacter": null
     }
   ],
-  "generatedAt": "2026-07-23T19:22:16.731Z"
+  "generatedAt": "2026-07-23T23:58:40.411Z"
 }

@@ -770,7 +770,7 @@
     },
     {
       "name": "Richard Ayoade",
-      "character": "Alva Gunderson (voice)",
+      "character": "Alva Gunderson / Gordy (voice)",
       "episodeCount": 10,
       "profile": "https://image.tmdb.org/t/p/original/qHKoy9kP4bsv4G9EkvU4FMUmYkS.jpg",
       "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/545/1364097.jpg"
@@ -791,10 +791,10 @@
     },
     {
       "name": "Meredith Pyle",
-      "character": "Elf / Whistler (voice)",
+      "character": "Nun (voice)",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/6NKJztwsowBialCvMNxsby6whnp.jpg",
-      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/213/534196.jpg"
+      "inCharacter": null
     },
     {
       "name": "Mark Mothersbaugh",
@@ -811,5 +811,5 @@
       "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/213/534196.jpg"
     }
   ],
-  "generatedAt": "2026-07-23T19:59:52.551Z"
+  "generatedAt": "2026-07-24T00:01:24.702Z"
 }

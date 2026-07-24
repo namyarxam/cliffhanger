@@ -1479,7 +1479,7 @@
           "episode": 7,
           "name": "Full Disclosure",
           "overview": "Harvey learns the scope of Alex's involvement with the prison case; Mike tries to keep the case alive; Lipschitz forces Louis out of his comfort zone; Donna tries to balance work and life.",
-          "plot": "In flashbacks to the Pearson Hardman days, it's revealed how Alex arranged for himself and Harvey to get junior partner positions at Bratton Gould, following Harvey's displeasure over Louis becoming junior partner ahead of him. Alex assures Tommy Bratton that Harvey's arrival is a \"done deal,\" but Jessica ultimately convinces Harvey to stay, causing problems for Alex. Harvey apologizes to Alex and promises a favor if he ever needs it. Alex is given unwinnable cases for several years and his only way back is to become part of an unholy alliance between Bratton, Masterson Construction, and Reform Corp. an alliance that Mike has just discovered in the present day. Mike asks Anita Gibbs to take over the Masterson case now that the civil case has been dropped, but Gibbs sees too many conflicts. In the past, it is also revealed that it was Jessica who got Louis to start seeing Dr. Lipschitz, while Donna is dumped by Mark (guest star Jay Harrington), her boyfriend of six months, when it becomes clear she will follow Harvey wherever he goes. In the present, Alex reveals all to Mike, including how his life could be in danger if Masterson is prosecuted, while Harvey reveals the same to Donna.",
+          "plot": "In flashbacks to the Pearson Hardman days, it's revealed how Alex arranged for himself and Harvey to get junior partner positions at Bratton Gould, following Harvey's displeasure over Louis becoming junior partner ahead of him. Alex assures Tommy Bratton that Harvey's arrival is a \"done deal,\" but Jessica ultimately convinces Harvey to stay, causing problems for Alex. Harvey apologizes to Alex and promises a favor if he ever needs it. Alex is given unwinnable cases for several years and his only way back is to become part of an unholy alliance between Bratton, Masterson Construction, and Reform Corp. – an alliance that Mike has just discovered in the present day. Mike asks Anita Gibbs to take over the Masterson case now that the civil case has been dropped, but Gibbs sees too many conflicts. In the past, it is also revealed that it was Jessica who got Louis to start seeing Dr. Lipschitz, while Donna is dumped by Mark (guest star Jay Harrington), her boyfriend of six months, when it becomes clear she will follow Harvey wherever he goes. In the present, Alex reveals all to Mike, including how his life could be in danger if Masterson is prosecuted, while Harvey reveals the same to Donna.",
           "airDate": "2017-08-23",
           "still": "https://image.tmdb.org/t/p/original/tGbcJL68jSrGnXv50sqVwLMx408.jpg",
           "stills": [
@@ -2936,7 +2936,7 @@
     },
     {
       "name": "Harvey Atkin",
-      "character": "Judge Palermo",
+      "character": "Judge N. Palermo",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/4mPAx1XpJwPAeaVOaabM1AHSapZ.jpg",
       "inCharacter": null
@@ -2957,7 +2957,7 @@
     },
     {
       "name": "Matthew MacFadzean",
-      "character": "Nick",
+      "character": "Nick Howell",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/oop7xCyqSdfFCiewc2uRwMlmCdh.jpg",
       "inCharacter": null
@@ -2971,7 +2971,7 @@
     },
     {
       "name": "Bobby Manning",
-      "character": "Mo / Mugger",
+      "character": "Man",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/vgM9HnMQIgkN7empGTUccXNXEHR.jpg",
       "inCharacter": null
@@ -3034,7 +3034,7 @@
     },
     {
       "name": "Donald Burda",
-      "character": "Judge Renee Aubuchon (uncredited)",
+      "character": "Judge Renee Aubuchon",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/A36n7y6pEyRielzZ2cyDb5kNqt3.jpg",
       "inCharacter": null
@@ -3089,6 +3089,13 @@
       "inCharacter": null
     },
     {
+      "name": "Callum Holland",
+      "character": "Young Mike Ross",
+      "episodeCount": 2,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/0/2433.jpg"
+    },
+    {
       "name": "Jay Harrington",
       "character": "Mark Meadows",
       "episodeCount": 2,
@@ -3097,7 +3104,7 @@
     },
     {
       "name": "Lisa Chandler",
-      "character": "Female Jogger (uncredited)",
+      "character": "Jogging Woman #2",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/eak6gzmQkFwTGhbYyEykpKaZP4l.jpg",
       "inCharacter": null
@@ -3125,7 +3132,7 @@
     },
     {
       "name": "Jorge Molina",
-      "character": "Judge Rudolf Montoya",
+      "character": "Judge Rudolph Montoya",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/qxLI6m5If2u78RCsIltmNCxhRit.jpg",
       "inCharacter": null
@@ -3174,7 +3181,7 @@
     },
     {
       "name": "Nick Alachiotis",
-      "character": "Stunt Coordinator",
+      "character": "Boxing Coach (uncredited)",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/xaf3rahwlFrHj8Bww7Tuh6sRoxw.jpg",
       "inCharacter": null
@@ -3691,5 +3698,5 @@
       "inCharacter": null
     }
   ],
-  "generatedAt": "2026-07-23T18:34:00.460Z"
+  "generatedAt": "2026-07-23T23:58:21.630Z"
 }

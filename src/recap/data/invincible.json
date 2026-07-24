@@ -23,7 +23,7 @@
     "https://image.tmdb.org/t/p/original/uQXpF1PRAhbLq5SxSm7Siejt5Ci.jpg",
     "https://image.tmdb.org/t/p/original/7hqjEH9zSXKmerOVTJXHhLLGDTs.jpg"
   ],
-  "throughSeason": 4,
+  "throughSeason": 5,
   "totalSeasons": 5,
   "showType": "Animation",
   "genres": [
@@ -500,6 +500,12 @@
           ]
         }
       ]
+    },
+    {
+      "season": 5,
+      "name": "Season 5",
+      "airDate": null,
+      "episodes": []
     }
   ],
   "cast": [
@@ -1267,5 +1273,5 @@
       "inCharacter": null
     }
   ],
-  "generatedAt": "2026-07-23T21:48:42.135Z"
+  "generatedAt": "2026-07-23T23:57:00.728Z"
 }

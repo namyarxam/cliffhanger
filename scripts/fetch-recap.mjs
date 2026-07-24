@@ -406,9 +406,12 @@ async function fetchWikipediaSummaries(showName, maxSeason, verify = null) {
       for (const [k, v] of out) if (!merged.has(k)) merged.set(k, v);
     }
 
-    // A combined page that already covered everything makes the per-season
-    // requests pointless — skip them rather than hammer Wikipedia for nothing.
-    if (pageSeason === null && seasonsCovered(merged) >= maxSeason) break;
+    // Once every season is covered, the remaining candidates are pointless —
+    // stop rather than hammer Wikipedia for pages we will discard. This fires
+    // for ANY page type: after the bare "Show season N" pages cover a series
+    // there is no reason to also try "(season N)" and "(series N)", which
+    // roughly tripled the request count and drew rate-limit errors.
+    if (seasonsCovered(merged) >= maxSeason) break;
   }
 
   if (merged.size === 0) {

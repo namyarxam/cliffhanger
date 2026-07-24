@@ -635,7 +635,7 @@
           "episode": 48,
           "name": "The Return",
           "overview": "Peridot and her new partner, Jasper, arrive on Earth.",
-          "plot": "In this non-canon crossover episode, Uncle Grandpa arrives to aid Steven in unlocking the power of his gem. *Notes: The events of the crossover specials take place during the second season of Uncle Grandpa.",
+          "plot": "In this non-canon crossover episode, Uncle Grandpa arrives to aid Steven in unlocking the power of his gem. Notes: The events of the crossover specials take place during the second season of Uncle Grandpa.",
           "airDate": "2015-03-12",
           "still": "https://image.tmdb.org/t/p/original/Zy7xkhZS95lex1TW19Bz5xhxJe.jpg",
           "stills": [
@@ -1320,7 +1320,7 @@
           "episode": 20,
           "name": "Bismuth",
           "overview": "Steven discovers something the Gems thought was lost to the past inside of Lion's mane.",
-          "plot": null,
+          "plot": "Bismuth, one of the original Crystal Gems, is accidentally freed by Steven from a bubble inside Lion's mane. She is welcomed back with open arms by Pearl and Garnet, while Amethyst quickly warms up to her company. However, Steven soon notices that Bismuth's outlook on the rebellion is radically different from the other Gems' when she shows eagerness to re-ignite the Gem War with an unethical secret weapon.",
           "airDate": "2016-08-04",
           "still": "https://image.tmdb.org/t/p/original/5EUi0NOe18xKHvazQi3hfLqbcRa.jpg",
           "stills": [
@@ -1479,7 +1479,7 @@
           "episode": 8,
           "name": "Gem Harvest",
           "overview": "In this double episode Steven’s autumn visit to the barn brings a new stranger into his life.",
-          "plot": null,
+          "plot": "When Steven visits Lapis and Peridot at the barn, they get an unexpected visit from Greg's grumpy cousin Andy. To get to know his uncle and make him feel at home, Steven attempts to host a family dinner with Andy, Greg, and the Gems.",
           "airDate": "2016-11-17",
           "still": "https://image.tmdb.org/t/p/original/fU2W5ERSVA74V2PnW2SxYiyyK2z.jpg",
           "stills": [
@@ -1970,7 +1970,7 @@
           "episode": 23,
           "name": "Reunited",
           "overview": "The wedding of Ruby and Sapphire, with the Gems and several Beach City citizens in attendance, goes without a hitch and Garnet reforms.",
-          "plot": null,
+          "plot": "The wedding of Ruby and Sapphire, with the Gems and several Beach City citizens in attendance, goes without a hitch and Garnet reforms. However, during the reception, Blue and Yellow Diamond arrive and awaken the Cluster. While the Crystal Gems, with the Cluster's support, fight the Diamonds, Steven tries to get them to listen to the truth about Pink Diamond.This episode was nominated for an Emmy Award for Outstanding Short-Form Animation.",
           "airDate": "2018-07-06",
           "still": "https://image.tmdb.org/t/p/original/t8DPEJeRVZk3bA9eFss3d9u1UDr.jpg",
           "stills": [
@@ -2235,7 +2235,7 @@
     },
     {
       "name": "Chris Jai Alex",
-      "character": "Narrator (voice)",
+      "character": "Arcade Game / Video Game / Vending Machine (voice)",
       "episodeCount": 7,
       "profile": "https://image.tmdb.org/t/p/original/tNdDu6VPOoDw6CU6Lq1D9PYpLnY.jpg",
       "inCharacter": null
@@ -2326,7 +2326,7 @@
     },
     {
       "name": "Andrew Kishino",
-      "character": "Kevin / Derrick (voice)",
+      "character": "Kevin (voice)",
       "episodeCount": 3,
       "profile": "https://image.tmdb.org/t/p/original/f0qUMbSqsdANjSfsxOFeRyO22OB.jpg",
       "inCharacter": null
@@ -2368,14 +2368,14 @@
     },
     {
       "name": "Eric Bauza",
-      "character": "Ricky / Hotel Butler (voice)",
+      "character": "Belly Bag / Narrator (voice)",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/afOlsVPQxbtkom604MeCemjlwEV.jpg",
       "inCharacter": null
     },
     {
       "name": "Amy Sedaris",
-      "character": "Defense Zircon / Prosecuting Zircon (voice)",
+      "character": "Defense Zircon (voice)",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/iQClumvSfTHgysxSofFmcLXmkCc.jpg",
       "inCharacter": null
@@ -2389,7 +2389,7 @@
     },
     {
       "name": "Nicki Minaj",
-      "character": "Sugilite (voice) (archive sound)",
+      "character": "Sugilite (voice)",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/qHpoIDzxxs5qzYlWUKHJXdEce3r.jpg",
       "inCharacter": null
@@ -2500,5 +2500,5 @@
       "inCharacter": null
     }
   ],
-  "generatedAt": "2026-07-23T19:52:49.359Z"
+  "generatedAt": "2026-07-23T23:59:21.272Z"
 }
