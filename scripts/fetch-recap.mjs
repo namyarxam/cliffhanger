@@ -406,12 +406,29 @@ async function fetchWikipediaSummaries(showName, maxSeason, verify = null) {
       for (const [k, v] of out) if (!merged.has(k)) merged.set(k, v);
     }
 
-    // Once every season is covered, the remaining candidates are pointless —
-    // stop rather than hammer Wikipedia for pages we will discard. This fires
-    // for ANY page type: after the bare "Show season N" pages cover a series
-    // there is no reason to also try "(season N)" and "(series N)", which
-    // roughly tripled the request count and drew rate-limit errors.
-    if (seasonsCovered(merged) >= maxSeason) break;
+    // Stop once EVERY season is genuinely covered — not merely touched. A
+    // combined list page often scatters a few summaries across all seasons
+    // (Heroes: ~10 of 78); stopping there would skip the rich per-season pages
+    // and ship 13% coverage. Checking each season against its expected episode
+    // count (from TMDB) catches that: Heroes' season 1 reaches 100% while
+    // season 2 sits at 9%, so the loop keeps going to the season-2 page.
+    // Averaging would have hidden this — one rich season masks four thin ones.
+    // When TMDB has no size for a season, fall back to a plain floor.
+    const per = {};
+    for (const k of merged.keys()) {
+      const s = Number(k.split('x')[0]);
+      per[s] = (per[s] ?? 0) + 1;
+    }
+    let complete = true;
+    for (let s = 1; s <= maxSeason; s++) {
+      const expected = verify?.seasonSizes?.[s] ?? 0;
+      const have = per[s] ?? 0;
+      if (expected ? have < expected * 0.8 : have < 6) {
+        complete = false;
+        break;
+      }
+    }
+    if (complete) break;
   }
 
   if (merged.size === 0) {
@@ -506,9 +523,18 @@ async function build({ showName, slug, through: throughArg }) {
     .filter(toks => toks.length)
     .slice(0, 8);
 
+  // Expected episode count per season, so the fetch loop can tell "every
+  // season has SOME coverage" (a thin combined list) from "every season is
+  // actually covered" and know when it is safe to stop.
+  const seasonSizes = {};
+  for (const s of detail.seasons ?? []) {
+    if (s.season_number > 0) seasonSizes[s.season_number] = s.episode_count ?? 0;
+  }
+
   const wiki = await fetchWikipediaSummaries(detail.name ?? showName, through, {
     characters: verifyCharacters,
     year: (detail.first_air_date ?? '').slice(0, 4) || null,
+    seasonSizes,
   });
 
   // Seasons 1..through only. This is the spoiler boundary and it is enforced
