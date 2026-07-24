@@ -24,14 +24,19 @@ const SEASON_COVERAGE_BAR = 0.8;
  * not produce a thin recap, it produces a confident wrong one from the model's
  * own memory.
  *
- * Measured, not guessed. Across the validation set the thinnest legitimate
- * season medians 452 characters (The Walking Dead, an eleven-season show on a
- * cramped list page); everything else sits 550–1,280. A stub row is 150–250.
- * 400 falls in the empty gap between them — below every real show with margin,
- * far above any stub. Median rather than mean so a couple of rich episodes
- * cannot mask a season of one-liners.
+ * Measured, not guessed, and recalibrated once the set grew past the original
+ * twenty. That small set showed a clean gap under Walking Dead (452) with
+ * nothing between 250 and 450, which put the bar at 400. At scale the real
+ * distribution has two clusters with an empty band between them: genuinely
+ * thin articles at 140–339 (Steven Universe 144, The Mandalorian 235) and
+ * concise-but-complete ones at 392–398 (Heroes, How I Met Your Mother, Sex and
+ * the City) — full episode coverage, just tersely written. The band from 339
+ * to 392 is empty, so 375 sits in it: it clears the terse-but-complete shows,
+ * whose summaries still run two sentences an episode, and rejects the stubs.
+ * Median rather than mean so a couple of rich episodes cannot mask a season of
+ * one-liners.
  */
-const SEASON_RICHNESS_BAR = 400;
+const SEASON_RICHNESS_BAR = 375;
 
 const median = xs => {
   if (!xs.length) return 0;
