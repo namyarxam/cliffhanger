@@ -38,6 +38,25 @@ const SEASON_COVERAGE_BAR = 0.8;
  */
 const SEASON_RICHNESS_BAR = 375;
 
+/**
+ * Usable episodes above this reject the show for v1.
+ *
+ * Two limits land on the same number. Quality: whole-show grounding degrades
+ * as episode count climbs, and it shows in the audit — The Flash at 184
+ * episodes drew 15 high-severity flags, the worst of any show, and The Walking
+ * Dead at 177 could not be repaired to clean. A recap that long is also
+ * unwieldy as a product; nobody returns to a 200-episode show needing one
+ * artefact to cover it. Capacity: the whole-show call cannot hold much more
+ * than this, which is why those shows generate badly in the first place.
+ *
+ * 120 rather than 100 keeps the shows that sit just over — Lost (118),
+ * Outlander (101), This Is Us (105) — which are strong recap candidates, while
+ * still cutting the genuinely huge ones (Smallville 216, 24 at 204, the
+ * CW-verse). A hard reject, not a bound: bounding a long show to its early
+ * seasons drops exactly the recent ones a returning viewer came back for.
+ */
+const EPISODE_CAP = 120;
+
 const median = xs => {
   if (!xs.length) return 0;
   const s = [...xs].sort((a, b) => a - b);
@@ -184,10 +203,12 @@ export function evaluate(data) {
 
   // --- scale ---------------------------------------------------------------
   //
-  // Not a rejection. A show this size cannot go through whole-show generation
-  // in one call and needs chunking into season groups.
-  if (usableEpisodes > 120) {
-    warnings.push(`${usableEpisodes} episodes — too large for a single whole-show call, needs chunking`);
+  // A hard cap for v1: too large to generate well in one call and too long to
+  // recap usefully. See EPISODE_CAP.
+  if (usableEpisodes > EPISODE_CAP) {
+    reasons.push(
+      `${usableEpisodes} usable episodes — over the ${EPISODE_CAP}-episode cap for v1; too large to ground well in one pass`,
+    );
   }
 
   // Comedy is NOT auto-rejected. Sitcoms genuinely do not need recaps, but
