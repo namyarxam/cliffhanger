@@ -35,6 +35,14 @@ const manifest = new Set(
   JSON.parse(readFileSync(resolve(ROOT, 'scripts/batch-manifest.json'), 'utf8')).shows.map(s => s.slug),
 );
 
+// Only repair shows at or below this flag count, and go best-first (fewest
+// flags first). Shippable-shows-per-token is maximised by clearing the cheap
+// 1-2-flag shows — one repair, near-certain to reach clean — before spending
+// on the heavy tail, which costs many times more and often will not clear.
+// `--max-high N` bounds the bucket (default: all). Default run: --max-high 2.
+const argIdx = process.argv.indexOf('--max-high');
+const MAX_HIGH = argIdx >= 0 ? Number(process.argv[argIdx + 1]) : Infinity;
+
 const contentHigh = slug => {
   try {
     const a = JSON.parse(readFileSync(resolve(DATA, `${slug}.audit.json`), 'utf8'));
@@ -44,6 +52,20 @@ const contentHigh = slug => {
     return h;
   } catch {
     return -1;
+  }
+};
+
+// Seasons that carry a high flag — the only ones repair changes, so the only
+// ones that need re-auditing. Re-checking the untouched seasons was the biggest
+// wasted cost of the pass.
+const flaggedSeasons = slug => {
+  try {
+    const a = JSON.parse(readFileSync(resolve(DATA, `${slug}.audit.json`), 'utf8'));
+    return a.results
+      .filter(r => (r.flags ?? []).some(f => f.severity === 'high'))
+      .map(r => r.season);
+  } catch {
+    return [];
   }
 };
 
@@ -80,16 +102,21 @@ async function main() {
     .map(f => f.replace('.audit.json', ''))
     .filter(slug => manifest.has(slug))
     .map(slug => ({ slug, high: contentHigh(slug), rounds: state[slug]?.rounds ?? 0 }))
-    .filter(w => w.high > 0 && w.rounds < MAX_ROUNDS)
-    .sort((a, b) => b.high - a.high);
+    .filter(w => w.high > 0 && w.high <= MAX_HIGH && w.rounds < MAX_ROUNDS)
+    .sort((a, b) => a.high - b.high); // best-first: cheapest, highest-yield first
 
-  console.log(`\nrepair pass: ${work.length} shows with content-high flags and rounds left\n`);
+  console.log(
+    `\nrepair pass: ${work.length} shows (≤${MAX_HIGH === Infinity ? '∞' : MAX_HIGH} high), best-first\n`,
+  );
   let repaired = 0,
     cleared = 0;
 
   for (const w of work) {
     const before = w.high;
     process.stdout.write(`  ${w.slug.padEnd(28)} ${before} high (round ${w.rounds + 1}) … `);
+
+    // Only the flagged seasons will change, so only they need re-auditing.
+    const seasons = flaggedSeasons(w.slug);
 
     const rep = await run('repair-flags.mjs', ['--slug', w.slug, '--high-only']);
     if (isRateLimited(rep.out)) {
@@ -101,7 +128,9 @@ async function main() {
       continue;
     }
 
-    const aud = await run('audit-spine.mjs', ['--slug', w.slug]);
+    const auditArgs = ['--slug', w.slug];
+    if (seasons.length) auditArgs.push('--season', seasons.join(','));
+    const aud = await run('audit-spine.mjs', auditArgs);
     // Two independent cap signals — either halts before we record or overwrite.
     const after = contentHigh(w.slug);
     if (isRateLimited(aud.out) || after === -1) {

@@ -280,9 +280,17 @@ async function auditShow(slug, opts) {
   const show = JSON.parse(await readFile(resolve(DATA, `${slug}.json`), 'utf8'));
   const spine = JSON.parse(await readFile(resolve(DATA, `${slug}.spine.json`), 'utf8'));
 
+  // `--season` accepts a comma-separated list (e.g. 2,3) so a repair can
+  // re-audit ONLY the seasons it changed instead of the whole show — the
+  // re-audit of untouched seasons was the dominant wasted cost of the repair
+  // pass. Results for the other seasons are preserved by the merge at write.
+  const allSeasons = Object.keys(spine.seasons).map(Number).sort((a, b) => a - b);
   const wanted = opts.season
-    ? [Number(opts.season)]
-    : Object.keys(spine.seasons).map(Number).sort((a, b) => a - b);
+    ? String(opts.season)
+        .split(',')
+        .map(Number)
+        .filter(n => allSeasons.includes(n))
+    : allSeasons;
 
   const results = (
     await mapLimit(wanted, opts.concurrency, async s => {
@@ -294,7 +302,9 @@ async function auditShow(slug, opts) {
     })
   ).filter(Boolean);
 
-  const portraits = auditPortraits(show, spine, wanted);
+  // Portraits are deterministic and free (no model call), so always compute
+  // them over the whole show even on a partial re-audit.
+  const portraits = auditPortraits(show, spine, allSeasons);
   const all = [
     ...results.flatMap(r => (r.flags ?? []).map(f => ({ ...f, season: r.season }))),
     ...portraits,
@@ -330,21 +340,33 @@ async function auditShow(slug, opts) {
   // resume guard still knows the show needs doing.
   const allErrored = results.length > 0 && results.every(r => r.error);
   const path = resolve(DATA, `${slug}.audit.json`);
-  let priorComplete = false;
-  if (allErrored && existsSync(path)) {
+  let prior = null;
+  if (existsSync(path)) {
     try {
-      const prior = JSON.parse(await readFile(path, 'utf8'));
-      priorComplete = (prior.results ?? []).length > 0 && !(prior.results ?? []).some(r => r.error);
+      prior = JSON.parse(await readFile(path, 'utf8'));
     } catch {
-      /* unreadable prior — fall through and overwrite */
+      /* unreadable prior — treat as absent */
     }
   }
+  const priorComplete = prior && (prior.results ?? []).length > 0 && !(prior.results ?? []).some(r => r.error);
+
   if (allErrored && priorComplete) {
     console.log(`${head} usage limit — kept prior audit, not overwritten`);
   } else {
+    // Merge a PARTIAL re-audit into the prior complete audit: keep the seasons
+    // we did not touch, replace the ones we did. Without this, re-auditing one
+    // season with --season would drop every other season's results.
+    let merged = results;
+    const isPartial = wanted.length < allSeasons.length;
+    if (isPartial && priorComplete) {
+      const done = new Set(wanted);
+      merged = [...prior.results.filter(r => !done.has(r.season)), ...results].sort(
+        (a, b) => a.season - b.season,
+      );
+    }
     await writeFile(
       path,
-      JSON.stringify({ slug, auditedAt: new Date().toISOString(), results, portraits }, null, 2),
+      JSON.stringify({ slug, auditedAt: new Date().toISOString(), results: merged, portraits }, null, 2),
     );
   }
 
