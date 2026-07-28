@@ -1,0 +1,394 @@
+{
+  "slug": "preacher",
+  "generatedFor": "Preacher",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Genesis finds Jesse",
+          "text": "An entity that has killed religious leaders across the globe crosses into small-town Texas preacher Jesse Custer, whose faith has already collapsed.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the supernatural premise and the specific vessel — everything else in the show follows from this fusion.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Tulip and Cassidy",
+          "text": "Jesse's outlaw ex Tulip and a hard-drinking Irish vampire named Cassidy both crash back into his life, and neither of them leaves.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the two people who will be at Jesse's side for the entire series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Voice",
+          "text": "Jesse discovers he can command anyone with his voice; angels Fiore and DeBlanc reveal it is Genesis, an unholy child Heaven wants back.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Names the power, sets Heaven against Jesse, and gives him the tool that drives every conflict.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Reforming Annville",
+          "text": "Jesse doubles down on saving his town, converting the atheist meat-baron Odin Quincannon in front of his whole congregation.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Shows Jesse choosing to use the Voice on his flock — the hubris that will unravel the whole town.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Eugene to Hell",
+          "text": "Angry at a boy pleading to have his forgiveness revoked, Jesse tells Eugene to 'go to Hell,' and the shy churchgoer instantly vanishes.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Sends Eugene to Hell, launching the entire Hell subplot that runs through the next two seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · God is missing",
+          "text": "Jesse calls Heaven from the church and forces the answering God to speak; it turns out to be an imposter — the real Almighty has abandoned His throne.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The reveal that reframes the whole show. Everything from here is the quest to find God.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Annville falls, hunt begins",
+          "text": "Annville destroys itself in a methane-plant disaster as faith collapses; the trio hits the road to find God, unaware Heaven's unkillable cowboy is now behind them.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Ends the small-town chapter, launches the road trip, and introduces the Saint of Killers as pursuer.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Annville is a smoking crater and Jesse, Tulip and Cassidy have taken off in search of a missing God. On the same road behind them, Heaven has just unleashed an immortal Old West gunslinger to bring Genesis back by any means.",
+        "questions": [
+          "Where has God gone, and can He actually be found?",
+          "How do you outrun something that literally cannot die?",
+          "Is Eugene ever getting out of Hell?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jesse Custer",
+          "line": "A small-town Texas preacher who now carries Genesis, a power that lets him command anyone with his voice."
+        },
+        {
+          "name": "Tulip O'Hare",
+          "line": "Jesse's outlaw ex from his old criminal life, back at his side and armed."
+        },
+        {
+          "name": "Cassidy",
+          "line": "A hard-drinking Irish vampire who befriended Jesse and knows Genesis for what it is."
+        },
+        {
+          "name": "Eugene 'Arseface' Root",
+          "line": "A shy disfigured churchgoer accidentally sent to Hell by Jesse's Voice and still stranded there."
+        },
+        {
+          "name": "The Saint of Killers",
+          "line": "An unkillable Old West gunfighter Heaven has hired to reclaim Genesis by killing Jesse."
+        },
+        {
+          "name": "Fiore",
+          "line": "The last surviving of two Heaven-sent angels who came for Genesis, alone since his partner DeBlanc was killed."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · The Saint on their trail",
+          "text": "The trio hit the road hunting God; the Saint of Killers picks up their trail, and Jesse discovers Genesis does not work on him.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the pursuit dynamic for the season: Jesse's one weapon is useless against the one thing chasing him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Fiore chooses death",
+          "text": "Cassidy tracks angel Fiore to a casino stunt act; Jesse tells him to 'find peace,' and Fiore has the Saint of Killers finally kill him.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Removes Fiore, the only friendly Heaven contact, and confirms the Saint's contract on Jesse still stands.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Enter the Grail",
+          "text": "Searching New Orleans jazz bars for God, Jesse instead draws the attention of Herr Starr, an operative of a shadow Christian order called the Grail.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces the season's true antagonists, who will drive the plot from here to the end of the series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Soul for a swamp grave",
+          "text": "Tulip's estranged husband Viktor is killed by the Saint; Jesse traps the cowboy in an armored truck by feeding him one percent of his own soul.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Explains why the Saint disappears mid-season and that a piece of Jesse's soul is now literally elsewhere.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Hitler in Hell",
+          "text": "In Hell, Eugene bonds with a meek Adolf Hitler, who quietly offers to help him find a hidden way out.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Establishes the Eugene–Hitler alliance that shapes the entire Hell subplot going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Humperdoo and the Messiah offer",
+          "text": "Herr Starr reveals the Grail is grooming an inbred Christ descendant named Humperdoo as Messiah, and pitches Jesse as a replacement.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Introduces Humperdoo and the Grail's Apocalypse machinery — the plot engine for the rest of the show.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Tulip shot",
+          "text": "The Grail betrays Jesse: they release the Saint and agent Featherstone shoots Tulip dead. Jesse refuses to let Cassidy turn her, and races her body to his estranged Louisiana family.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Tulip's death and the family Jesse ran from are the entire premise of the season that follows.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Tulip is dead in Jesse's arms as he arrives, for the first time in years, at Angelville — the Louisiana home of the family he ran from. The Grail has taken over his life, the Saint is loose again, and the only person who might bring Tulip back is the grandmother he once escaped.",
+        "questions": [
+          "Can Jesse's grandmother really bring Tulip back?",
+          "What will she demand from Jesse in return?",
+          "Now that the Grail owns Jesse, can he still hunt God?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jesse Custer",
+          "line": "Now missing one percent of his soul, hunted by the Saint, on the hook to the Grail, and holding his dead girlfriend."
+        },
+        {
+          "name": "Tulip O'Hare",
+          "line": "Shot dead by the Grail as Jesse races her body to the Louisiana relatives he never told her about."
+        },
+        {
+          "name": "Cassidy",
+          "line": "Alongside Jesse and heartbroken over Tulip; his loyalties are visibly cracking."
+        },
+        {
+          "name": "Herr Starr",
+          "line": "Ruthless, ambitious Grail operative who wants to install Jesse as the Voice of a new Messiah."
+        },
+        {
+          "name": "Lara Featherstone",
+          "line": "Grail agent who spent the season embedded next door to the trio, and the one who pulled the trigger on Tulip."
+        },
+        {
+          "name": "Humperdoo",
+          "line": "The Grail's actual Messiah — an inbred, mute Christ descendant kept hidden at their headquarters."
+        },
+        {
+          "name": "The Saint of Killers",
+          "line": "Freed from his swamp prison by the Grail and back on the hunt for Jesse."
+        },
+        {
+          "name": "Eugene 'Arseface' Root",
+          "line": "Still trapped in Hell, now allied with a quietly manipulative Adolf Hitler planning an escape."
+        },
+        {
+          "name": "Adolf Hitler",
+          "line": "A meek prisoner in Hell coaching Eugene toward a hidden 'hole' out."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · A debt to Gran'ma",
+          "text": "Marie L'Angelle, Jesse's voodoo grandmother, brings Tulip back through blood magic and binds Jesse to a debt he cannot walk away from.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The blood compact is the leash that keeps Jesse in Angelville and off the God quest for most of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · God in a dog suit",
+          "text": "On the road, Tulip meets God Himself walking around in a man-dog costume, who tells her she is a small piece of His larger plan.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Confirms God is on Earth, in disguise, orchestrating events — the shape of the final quest.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Cassidy and the Children of Blood",
+          "text": "Sent wounded to New Orleans, Cassidy falls in with Eccarius, a real vampire who runs a cult of blood-drinking humans.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Separates Cassidy from Jesse and Tulip; his entanglement here is what leaves him vulnerable to the Grail.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The Saint takes Eugene",
+          "text": "Freshly returned from Hell, Eugene is adopted straight from an orphanage by the Saint of Killers, who plans to use him as bait for Jesse.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Puts Eugene in the Saint's hands and gives the Saint a personal motivator that persists into the next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Genesis stolen and returned",
+          "text": "The Grail rips Genesis from Jesse into a Humperdoo clone; Jesse fights it back into himself and releases all the clones so the real Messiah is hidden.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Explains why Jesse still has his power, why the Grail's Apocalypse plan is stalled, and where Humperdoo went.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Angelville burns",
+          "text": "Jesse kills Jody, torches the Tombs, and forces Gran'ma to release him and Tulip from her spells before she dies of it.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Frees Jesse from the family that has constrained him all season and puts him back on the offensive.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Cassidy taken, Hitler crowned",
+          "text": "The Grail drags Cassidy to their Masada headquarters, while in Hell Hitler seizes the devil's throne after Satan's death.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The two setups the next season opens on: rescue Cassidy from Masada; Hitler now runs Hell.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Jesse and Tulip are free of Angelville with Jesse's powers restored, but Cassidy has been captured by the Grail and is being tortured at Masada. Meanwhile God is loose on Earth working an unknown plan, and Hitler is now the devil.",
+        "questions": [
+          "Can Jesse and Tulip rescue Cassidy from Masada?",
+          "What is God's actual plan on Earth?",
+          "With Hitler on Satan's throne, is there anywhere left that isn't compromised?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jesse Custer",
+          "line": "Free at last of the Louisiana family he ran from, powers restored, and ready to hunt God again."
+        },
+        {
+          "name": "Tulip O'Hare",
+          "line": "Alive again by voodoo, back with Jesse, and marked by God as somehow part of His plan."
+        },
+        {
+          "name": "Cassidy",
+          "line": "Captured by the Grail after finally standing up to Eccarius' cult and being dragged to Masada."
+        },
+        {
+          "name": "Herr Starr",
+          "line": "The Grail's new Allfather, plotting Apocalypse with Humperdoo as the coming Messiah."
+        },
+        {
+          "name": "Lara Featherstone",
+          "line": "Ruthless Grail agent who has escaped with a fortune in stolen souls."
+        },
+        {
+          "name": "Humperdoo",
+          "line": "The inbred Christ-descendant Messiah, now hidden among many identical clones after Jesse freed them."
+        },
+        {
+          "name": "The Saint of Killers",
+          "line": "Roaming with Eugene in tow, still hunting Jesse across the country."
+        },
+        {
+          "name": "Eugene 'Arseface' Root",
+          "line": "Rescued from Hell, now effectively a hostage of the Saint of Killers."
+        },
+        {
+          "name": "Adolf Hitler",
+          "line": "Escaped from Hell and now sitting on the devil's throne after Satan's death."
+        },
+        {
+          "name": "God",
+          "line": "Walking Earth in a man-dog costume, telling Tulip she is part of a grand plan He will not explain."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Masada and a split",
+          "text": "The trio reunite at Masada to free Cassidy, but Cassidy refuses to leave; Jesse then quietly departs alone for Australia, following a dream.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Splits the three principals for most of the season and sets up Jesse's Australia arc.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · God's Apocalypse plan",
+          "text": "God is secretly directing Herr Starr to trigger Apocalypse so Humperdoo can rule; Jesse chases visions of an atomic blast across the outback.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Reveals the true stakes — God Himself wants the world ended — and the countdown driving the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Cassidy escapes, enter Jesus",
+          "text": "Cassidy escapes Masada with an outcast Archangel; Tulip infiltrates the fortress and teams up with an unwilling Jesus of Nazareth to find him.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Puts Cassidy back in play and gives Tulip an ally who will not endorse God's coming Apocalypse.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · God takes an eye",
+          "text": "God finally meets Jesse in the outback, bites out one of his eyes, invites him to watch the Apocalypse, and sends him back to his friends.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The first direct confrontation of the show's core question, and it turns Jesse fully against God.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Apocalypse aborted",
+          "text": "The reunited trio storm Masada; Cassidy shoots Humperdoo mid-tap-dance, aborting Armageddon at the last possible second.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The plot climax: Humperdoo dies and the Grail's world-ending machinery is broken.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Jesse walks away",
+          "text": "Two years later, Jesse tracks God down at the Alamo, tells Him the world is better without Him, and walks away, releasing Genesis for good.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Jesse's personal ending — refusing the crusade the whole show has been about and choosing his family.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The Saint on the throne",
+          "text": "The Saint of Killers kills God and takes His throne; forty years later, Cassidy meets Jesse's daughter Lucy at their graves and walks into the sun.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The literal end of the show — God is dead, Jesse and Tulip lived, Cassidy chose peace.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The story is over. God is dead on His own throne, Apocalypse was averted at the last second, Jesse and Tulip lived long enough to raise a daughter, and Cassidy finally chose the sunlight.",
+        "questions": [
+          "What kind of world does Lucy inherit with no God at all?",
+          "Was Jesse right that people are better off alone?",
+          "Did any of the suffering the show catalogued actually mean something?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jesse Custer",
+          "line": "Told God to His face the world was better without Him, then lived out a quiet life with Tulip and their daughter."
+        },
+        {
+          "name": "Tulip O'Hare",
+          "line": "Married Jesse quietly after Apocalypse was cancelled and raised their daughter Lucy."
+        },
+        {
+          "name": "Cassidy",
+          "line": "Sacrificed his obsession with Tulip to shoot Humperdoo; forty years later, chose to walk into the sun."
+        },
+        {
+          "name": "The Saint of Killers",
+          "line": "Killed God, took the throne of Heaven, and is finally at rest."
+        },
+        {
+          "name": "God",
+          "line": "Dead — killed on His own throne by the Saint after Jesse rejected Him."
+        },
+        {
+          "name": "Humperdoo",
+          "line": "Shot dead by Cassidy in the middle of his tap-dance, aborting the Apocalypse."
+        },
+        {
+          "name": "Herr Starr",
+          "line": "Mutilated, humiliated, and left with an Apocalypse cancelled around him."
+        },
+        {
+          "name": "Eugene 'Arseface' Root",
+          "line": "Freed at last from the Saint and became a street-singing star."
+        },
+        {
+          "name": "Lucy Custer",
+          "line": "Jesse and Tulip's daughter, who inherits a world with no God in it."
+        }
+      ]
+    }
+  }
+}

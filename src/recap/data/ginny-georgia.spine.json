@@ -1,0 +1,317 @@
+{
+  "slug": "ginny-georgia",
+  "generatedFor": "Ginny & Georgia",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · A fresh start built on a murder",
+          "text": "Georgia moves her kids to Wellsbury after Kenny's death, which flashbacks reveal she caused by poisoning his smoothie with wolfsbane.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the founding lie the whole series turns on: Georgia is a killer who has run somewhere respectable.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Broke and skimming",
+          "text": "She takes a job with Mayor Paul, opens credit cards in Austin's name, and skims town funds while Kenny's ex-wife blocks his contested inheritance.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The embezzlement and identity fraud are the ordinary crimes that will finally give her enemies traction.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Ginny finds her people, and Marcus",
+          "text": "Ginny joins the MANG friend group and dates Hunter, but secretly loses her virginity to Max's twin Marcus and hides that she burns herself with a lighter.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets up the two threads that dominate S2: the self-harm Marcus alone knows about, and the betrayal that will break the friend group.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A PI with a hunch",
+          "text": "Kenny's ex-wife hires PI Gabriel Cordova, who romances Georgia's sister Maddie for intel and pieces together that wolfsbane killed Kenny.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Introduces the outsider who will chase Georgia through both remaining seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A proposal, an affair, a friendship in flames",
+          "text": "Paul proposes just as Georgia sleeps with Zion again; she says yes. Marcus tells Ginny he loves her, they have sex, and Max finds his phone.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Locks Georgia into the mayor's fiancée role and detonates the friend group Ginny built the season around.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Fireworks and a missing body",
+          "text": "Cynthia finds proof Georgia embezzled, Gabriel exhumes Kenny to find the body gone, and Georgia calmly burns him into Paul's election fireworks.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Every enemy she'll face in S2 now has ammunition, and the show has confirmed for the audience exactly what she's capable of.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Ginny runs",
+          "text": "Warned by Gabriel that her mother may be dangerous, Ginny finds Georgia's gun and Austin's forged letters, and takes Austin away on Marcus's motorcycle.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The season ends with Georgia's greatest achievement — the family — already walking out the door.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Paul has just won re-election, unaware his new fiancée has embezzled from him, burned her dead husband into his fireworks, and had her children flee on the back of a motorcycle. Cynthia has proof of the money, Gabriel has proof of the murder, and Ginny is somewhere on the road with Austin.",
+        "questions": [
+          "Where does Ginny take Austin, and does she come back?",
+          "What does Gabriel do now that he knows Georgia poisoned Kenny?",
+          "Can Georgia's engagement survive Cynthia's evidence surfacing?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Georgia Miller",
+          "line": "Charming single mother and mayoral aide, con artist with a violent past, quietly a serial killer and now engaged to Paul."
+        },
+        {
+          "name": "Ginny Miller",
+          "line": "Georgia's biracial 15-year-old daughter, self-harming in secret, who has just discovered her mother's gun and fled with her brother."
+        },
+        {
+          "name": "Austin Miller",
+          "line": "Georgia's 9-year-old son; his father Gil is in prison and every letter from him was written by Georgia."
+        },
+        {
+          "name": "Paul Randolph",
+          "line": "Wellsbury's newly re-elected mayor, engaged to Georgia and still believing he understands who she is."
+        },
+        {
+          "name": "Zion Miller",
+          "line": "Ginny's biological father, an itinerant photographer who slept with Georgia again this season before backing away for her sake."
+        },
+        {
+          "name": "Marcus Baker",
+          "line": "Max's depressive twin brother, secretly in love with Ginny; their affair has just imploded the friend group."
+        },
+        {
+          "name": "Max Baker",
+          "line": "Ginny's best friend, who has just learned that both her brother and Ginny lied to her all year."
+        },
+        {
+          "name": "Cynthia Fuller",
+          "line": "Paul's mayoral rival with a comatose husband, holding fresh proof that Georgia embezzled from the town.",
+          "note": "Introduced late; will drive S2's murder plot."
+        },
+        {
+          "name": "Gabriel Cordova",
+          "line": "The PI hired to investigate Georgia, now certain she poisoned Kenny and has warned Ginny she may be dangerous."
+        },
+        {
+          "name": "Joe",
+          "line": "Owner of Blue Farm café; has been quietly in love with Georgia since a chance meeting when they were teenagers, which she does not remember."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Ginny comes back to keep a secret",
+          "text": "Ginny and Austin have been with Zion for two weeks; she agrees to therapy but moves back home only to stop Zion telling Georgia about her self-harm.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the season's terms: Ginny is home, in therapy, and holding the leverage of her own harm against her mother.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ginny tells Marcus what Georgia did",
+          "text": "Ginny confides in Marcus that Georgia killed Kenny; he keeps the secret. Georgia moves Paul in and reconciles with Ginny after an angry showdown.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Marcus becomes the second person alive who knows, quietly binding him and Ginny for the rest of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Gil comes home",
+          "text": "Austin's father Gil is released from prison and pushes his way back into Austin's life, and flashbacks reveal how badly he once beat Georgia.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The abusive ex-husband is now in the frame, and the audience knows why Georgia is terrified even while she plays it cool.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Marcus and Ginny go public, and Georgia reads the notebook",
+          "text": "Marcus's depression deepens as he officially dates Ginny; Georgia reads Ginny's notebook and finds both the self-harm and a poem casting her as a monster.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Georgia can no longer pretend she doesn't know; Ginny can no longer pretend Georgia doesn't see her.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Anthony, and Austin pulls a trigger",
+          "text": "Gabriel tells Ginny about Anthony Green, Georgia's dead first husband; when Gil attacks Georgia soon after, Austin shoots him with a gun he found in the house.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Ginny learns her mother has a bigger body count than she knew, and Austin becomes complicit in violence for the first time.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · A pillow over Tom's face",
+          "text": "Georgia suffocates Cynthia's dying husband Tom, unaware Austin is watching. Marcus, ashamed of his depression, breaks up with Ginny.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The murder the trial hangs on, with the only witness being her own son — and Ginny loses the one relationship holding her steady.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Married, then arrested",
+          "text": "Georgia marries Paul after finally confessing her past to him, but Nick learns the truth from Gabriel and Georgia is arrested for Tom's murder mid-first-dance.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The season closes on the exact tableau S3 opens on: a mayor's wife in handcuffs, a bewildered child, and no one sure who tipped the police.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Georgia has been arrested at her own wedding reception for the murder of Tom Fuller. Austin, the only person who actually saw it happen, insists he told no one — meaning somebody else has moved against her, and Paul has been married to her for a matter of hours.",
+        "questions": [
+          "If Austin didn't talk, who did?",
+          "Does Paul stand by his wife now that he knows what she is?",
+          "Can Georgia beat a murder charge when her ten-year-old is the sole eyewitness?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Georgia Miller",
+          "line": "Newly Mrs. Randolph, arrested for Tom's murder minutes after her first dance."
+        },
+        {
+          "name": "Ginny Miller",
+          "line": "In therapy for self-harm, recently dumped by Marcus, and now the child of a woman in handcuffs."
+        },
+        {
+          "name": "Austin Miller",
+          "line": "Shot Gil in self-defence, watched Georgia smother Tom, and is still carrying both secrets."
+        },
+        {
+          "name": "Paul Randolph",
+          "line": "Mayor of Wellsbury who married Georgia hours before her arrest, having only just learned her real history."
+        },
+        {
+          "name": "Marcus Baker",
+          "line": "Ended things with Ginny, telling her his depression means he cannot be with anyone; is drinking more and hiding it."
+        },
+        {
+          "name": "Cynthia Fuller",
+          "line": "Newly widowed, and the woman whose husband Georgia has just been charged with killing."
+        },
+        {
+          "name": "Gabriel Cordova",
+          "line": "The PI who dated Nick to get closer to Georgia, and who has just handed the police everything he has on her."
+        },
+        {
+          "name": "Zion Miller",
+          "line": "Ginny's father, back in Boston, still hovering as the safe alternative to Georgia's chaos."
+        },
+        {
+          "name": "Gil Timmins",
+          "line": "Austin's father — physically abusive to Georgia, freshly shot by his own son, and quietly plotting his next move."
+        },
+        {
+          "name": "Joe",
+          "line": "Blue Farm's owner; briefly slept with Cynthia, still in love with Georgia, and one of very few people rooting for her."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · House arrest and a confession",
+          "text": "Georgia pleads not guilty and is placed on house arrest; she confesses all three murders to Ginny and admits she has no plan for beating the trial.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Ginny now knows the whole ledger, and the season's tension is whether she'll fight for her mother anyway.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ginny pulls away, and hides",
+          "text": "Ginny warns Austin to say nothing about what he saw, tells Georgia she needs space, and quietly dates a poetry-class boy under a fake name.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The season's Ginny arc — hiding from her own life — starts here, and Austin is locked into the lie that will end the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Marcus falls apart",
+          "text": "Spiralling into drinking, Marcus tells Ginny he no longer loves her, vandalises a teacher's classroom, and is suspended as his depression takes over.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The one relationship Ginny relied on collapses just as she needs it most, isolating her for the pregnancy to come.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Gabriel on the stand, CPS at the door",
+          "text": "Gabriel publicly accuses Georgia of serial murder from the witness box, and Zion and Gil use the fallout to file for custody and bring CPS to the house.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The trial goes national and the kids are actively being pulled away from Georgia by their own fathers.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Pregnancy and abortion",
+          "text": "Ginny discovers she is pregnant; Georgia and Marcus quietly get her through an abortion, and she breaks up with the father for how little he showed up.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "It's the beat that pushes Ginny back to Georgia and produces the pregnancy test Georgia weaponises next.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · A fake pregnancy, and Paul is done",
+          "text": "Paul moves to divorce Georgia, so she lies she is pregnant using Ginny's test; when he learns the truth he tells her the family is better off without her.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The marriage that was Georgia's whole plan is quietly finished, even if the paperwork isn't.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Georgia runs, Austin lies",
+          "text": "Georgia sleeps with Joe and flees on Marcus's bike before turning herself in; on the stand Austin shocks the courtroom by naming Gil as Tom's killer.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The season ends with Georgia's fate hanging on a lie told by a ten-year-old — the fulcrum the next season opens on.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The trial is nearing its verdict with Austin's perjury as the most dramatic testimony the jury has heard — Georgia's freedom now depends on a lie her ten-year-old son has just told under oath, framing his own abusive father.",
+        "questions": [
+          "Will the jury believe Austin's story that Gil killed Tom?",
+          "Can Ginny live with letting her brother perjure himself to save Georgia?",
+          "Where does Georgia's marriage to Paul stand after everything he has said?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Georgia Miller",
+          "line": "On trial for Tom's murder, back in custody after a brief attempt to run, defended by her ex's new girlfriend."
+        },
+        {
+          "name": "Ginny Miller",
+          "line": "Coordinated Georgia's defence with Simone, had an abortion mid-season, and is now single and back at her mother's side."
+        },
+        {
+          "name": "Austin Miller",
+          "line": "Just committed perjury on the witness stand to save Georgia by pinning Tom's murder on Gil."
+        },
+        {
+          "name": "Paul Randolph",
+          "line": "Publicly still Georgia's husband, privately finished with her after her fake-pregnancy lie."
+        },
+        {
+          "name": "Marcus Baker",
+          "line": "Broken up with Ginny, drinking heavily, and now with his family aware of the depression he tried to hide."
+        },
+        {
+          "name": "Zion Miller",
+          "line": "Ginny's father; called CPS on Georgia, took Ginny to her abortion, and is dating Simone."
+        },
+        {
+          "name": "Gil Timmins",
+          "line": "Austin's father — abusive, still trying to seize custody, and now falsely accused of murder in open court."
+        },
+        {
+          "name": "Joe",
+          "line": "Blue Farm's owner; slept with Georgia once, still visits her in prison, still in love with her."
+        },
+        {
+          "name": "Gabriel Cordova",
+          "line": "The PI whose stand testimony finally made Georgia's alleged body count public knowledge."
+        },
+        {
+          "name": "Simone",
+          "line": "Zion's girlfriend and a lawyer, now leading Georgia's defence at Ginny's request.",
+          "note": "Newly introduced this season; the trial rides on her."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,580 @@
+{
+  "slug": "sons-of-anarchy",
+  "generatedFor": "Sons of Anarchy",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · John Teller's ghost",
+          "text": "Jax finds his dead father's memoirs in a storage locker, discovering John's dream of a legitimate club Clay betrayed. He starts questioning SAMCRO's violent path.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The manuscript is the seed of every Jax-vs-Clay conflict that follows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Tara returns, Kohn dies",
+          "text": "Jax rekindles with surgeon Tara, whose stalker ex-ATF agent Kohn attacks her; Jax executes him in her bedroom and they bury the body together.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Locks Tara into the club's secrets and cements her as Jax's partner.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Mayans war, IRA guns",
+          "text": "The Mayans burn SAMCRO's arms warehouse and try to kill Clay; SAMCRO rebuilds via IRA connection Cameron Hayes and forces a bloody peace with Alvarez.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Establishes the gun-running lifeblood and the Irish pipeline that drives future seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Opie under suspicion",
+          "text": "Opie rejoins the club and helps kill a witness; ATF Agent Stahl frames him as a rat by planting bugs the club discovers, convincing Clay he must die.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The frame-up is the direct cause of the season's defining tragedy.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Donna killed by mistake",
+          "text": "Clay orders Tig to murder Opie; Tig shoots up the wrong truck and kills Opie's wife Donna instead. Only Clay and Tig know the truth.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The secret sin that will poison every relationship in the club for years.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Jax reads the manuscript",
+          "text": "Grieving Donna, Jax finally reads his father's journal and sees Clay's version of the club for what it is. His quiet split from his stepfather begins.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Sets the ideological war that defines season 2 onward.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Donna is dead by Clay's order, a secret only Clay and Tig share. Jax buries his father's ghost alongside her, walking into a fight with Clay that neither has yet named.",
+        "questions": [
+          "Will Opie ever learn who really killed his wife?",
+          "Can Jax reshape SAMCRO the way his father wanted?",
+          "How long can Clay keep Donna's murder buried?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jax Teller",
+          "line": "SAMCRO's VP, quietly radicalised by his dead father's memoirs and pulling away from Clay's old-school violence."
+        },
+        {
+          "name": "Clay Morrow",
+          "line": "President of SAMCRO and Jax's stepfather, willing to kill a brother's wife to keep control of the club."
+        },
+        {
+          "name": "Gemma Teller-Morrow",
+          "line": "Clay's wife and Jax's mother, the club's matriarch, actively steering Jax back toward Clay and away from Tara."
+        },
+        {
+          "name": "Tara Knowles",
+          "line": "Charming's returning surgeon and Jax's old flame, now an accomplice in Kohn's killing and back in the life she once fled."
+        },
+        {
+          "name": "Opie Winston",
+          "line": "Freshly-widowed SAMCRO member who never learned Donna was killed on Clay's orders, meant for him."
+        },
+        {
+          "name": "Tig Trager",
+          "line": "Clay's loyal enforcer who pulled the trigger on Donna and carries the guilt alone with Clay."
+        },
+        {
+          "name": "Agent June Stahl",
+          "line": "ATF agent whose framing of Opie caused Donna's death; still hunting SAMCRO and the IRA."
+        },
+        {
+          "name": "Wayne Unser",
+          "line": "Dying, crooked Charming police chief on SAMCRO's payroll, delaying retirement to keep the club protected."
+        },
+        {
+          "name": "Cameron Hayes",
+          "line": "SAMCRO's IRA gun connection out of Belfast, indebted to the club after they saved his life."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Zobelle arrives",
+          "text": "White-separatist Ethan Zobelle moves on Charming, and his enforcer A.J. Weston kidnaps and gang-rapes Gemma to force SAMCRO out of black gun sales.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The season's central threat and the wound that reshapes Gemma.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Gemma's secret",
+          "text": "Gemma hides the assault from Clay and Jax, telling only Tara and Unser, and quietly plots her own revenge against Weston and Zobelle's daughter Polly.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Her silence drives the club's paranoia and the season's late detonation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Clay and Jax at war",
+          "text": "Zobelle plays the club against itself; Clay and Jax split openly, Jax briefly going nomad before Gemma finally reveals the rape to reunite them.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Cements the succession fight that defines every remaining season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Opie learns the truth",
+          "text": "A guilt-ridden, mushroom-addled Tig confesses to killing Donna; Opie chooses to stay in the club after Jax convinces him Clay can be changed from within.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Closes season 1's biggest secret while binding Opie to Jax's reform project.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Stahl's double-cross",
+          "text": "Agent Stahl turns Chibs against the IRA, murders informant Edmond Hayes, and frames Gemma for the killing, sending her on the run as a fugitive.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Puts Gemma outside the law and sets up the club's collision with the Irish.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Cameron takes Abel",
+          "text": "Believing SAMCRO killed his son, Cameron Hayes stabs prospect Half-Sack dead, ties Tara up, and abducts infant Abel to Belfast.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The direct engine of the entire following season.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Abel is gone, Half-Sack is dead, Tara is bound in her own home, and Gemma is a fugitive wanted for a murder she did not commit. Cameron is somewhere in the wind with Jax's son.",
+        "questions": [
+          "Can SAMCRO track Cameron before Abel disappears for good?",
+          "How does Gemma clear her name for Edmond's murder?",
+          "What does Jax do when he learns his son was taken as revenge?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jax Teller",
+          "line": "VP whose infant son has just been kidnapped, freshly reconciled with Clay after briefly quitting the club."
+        },
+        {
+          "name": "Clay Morrow",
+          "line": "President weakened by advancing arthritis and Zobelle's war, still holding the gavel but no longer unchallenged."
+        },
+        {
+          "name": "Gemma Teller-Morrow",
+          "line": "On the run from a murder Stahl framed her for, carrying the untreated trauma of her rape."
+        },
+        {
+          "name": "Tara Knowles",
+          "line": "Jax's partner, Abel's stand-in mother, and now a witness to Half-Sack's murder and the baby's abduction."
+        },
+        {
+          "name": "Opie Winston",
+          "line": "Knows Clay ordered Donna's death and Tig pulled the trigger; chose to stay in the club to change it from inside."
+        },
+        {
+          "name": "Chibs Telford",
+          "line": "Scottish member outed as an ATF informant to save his ex-wife Fiona and daughter Kerrianne from Jimmy O'Phelan."
+        },
+        {
+          "name": "Cameron Hayes",
+          "line": "IRA gunrunner whose son Edmond was killed by Stahl; blames SAMCRO and has taken Abel in revenge."
+        },
+        {
+          "name": "Agent June Stahl",
+          "line": "ATF agent who murdered Edmond, framed Gemma, and remains the club's most dangerous federal enemy."
+        },
+        {
+          "name": "Jimmy O'Phelan",
+          "line": "IRA leader who runs the Belfast pipeline; now knows SAMCRO has an informant in its ranks."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Half-Sack's funeral",
+          "text": "SAMCRO buries Half-Sack; unknown gunmen open fire, killing a child and running down Deputy Chief David Hale. Charming's protector is gone.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Removes Hale as a check on the club and destabilises Charming's power.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Belfast trail",
+          "text": "Jax learns Cameron reached Ireland and hands Abel to IRA boss Jimmy O'Phelan, who ships the baby to an illegal Catholic orphanage. Gemma is still a wanted fugitive.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Sets the season's central rescue mission and the Belfast setting.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Deal with Stahl",
+          "text": "To clear Gemma and get to Belfast legally, Jax secretly turns informant for Agent Stahl, promising her the IRA in exchange for reduced club charges.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The lie under everything Jax does the rest of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Salazar takes Tara",
+          "text": "Mayan splinter Hector Salazar, blackmailing Jacob Hale over Lumpy's death, kidnaps Tara and hospital administrator Margaret for ransom.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Forces Jax to choose between saving his son and saving his partner.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Trinity is a sister",
+          "text": "In Belfast Jax kisses Trinity Ashby before Gemma and Maureen reveal she is John Teller's daughter — proof John had a whole Irish life SAMCRO hid from him.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Cracks open the John Teller mythology that fuels Jax's break from Clay.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Setup and slaughter",
+          "text": "SAMCRO recover Abel and kill Jimmy O'Phelan for Father Kellan, then let Stahl arrest them — but Jax's deal with her is coming to a head.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Kills the season's federal antagonist and locks the club into a 14-month prison sentence.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Abel is home and Jax's secret deal with Stahl has come to a head — and Tara has discovered more about the Teller family history than she could have ever imagined.",
+        "questions": [
+          "What will Tara do with the truth about John Teller's death?",
+          "How does the club run — and change — while Jax and Clay are locked up?",
+          "Can Jax still walk away from SAMCRO the way his father wanted?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jax Teller",
+          "line": "Just recovered Abel; heading to prison having secretly betrayed the club to save it."
+        },
+        {
+          "name": "Clay Morrow",
+          "line": "President whose arthritis is worsening and whose grip is loosening, unaware his stepson brokered a federal deal behind his back."
+        },
+        {
+          "name": "Gemma Teller-Morrow",
+          "line": "Cleared of Edmond's murder and back in Charming, now carrying the secret that Trinity Ashby is her husband's daughter."
+        },
+        {
+          "name": "Tara Knowles",
+          "line": "Nearly killed by Salazar; has discovered more about the Teller family history than she could have ever imagined."
+        },
+        {
+          "name": "Opie Winston",
+          "line": "Together with porn star Lyla; his role in the finale's reckoning with Stahl is still playing out."
+        },
+        {
+          "name": "Wayne Unser",
+          "line": "Ex-police chief still dying of cancer, loyal to Gemma and increasingly the club's off-the-books fixer."
+        },
+        {
+          "name": "Father Kellan Ashby",
+          "line": "Belfast IRA-tied priest who returned Abel to Jax after SAMCRO killed Jimmy O'Phelan for him."
+        },
+        {
+          "name": "Maureen Ashby",
+          "line": "John Teller's Belfast lover, mother of Trinity, and the person who slipped John's real letters into Jax's bag."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Out and in bed with the cartel",
+          "text": "SAMCRO leave prison to find a new sheriff, a hostile U.S. Attorney Lin Potter, and a Galindo cartel offer to run guns and cocaine. Jax's swing vote passes it.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The drug decision splits the club and drives every death that follows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Jax's exit deal",
+          "text": "Jax agrees to Clay's cartel plan only on condition Clay lets him leave SAMCRO with Tara when he retires. Tara accepts the ring and starts planning Oregon.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets Jax's endgame and Tara's escape plan, both threatened by Clay.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The letters resurface",
+          "text": "Piney reads John Teller's letters and threatens Clay: get out of the cartel deal or the club will see them. Clay begins hunting the papers.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The letters become the leverage that drives Clay to murder.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Juice compromised",
+          "text": "Potter's team blackmails Juice over a hidden Black father; he steals cocaine for them, shoots brother Miles to cover it, and tries and fails to hang himself.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Turns Juice into a permanent secret rat, priming future seasons of blackmail.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Clay kills Piney",
+          "text": "Clay murders Piney at his cabin to bury the letters and stages it as a cartel hit. He then orders a cartel hit on Tara, whom he believes has copies.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The two crimes that make Jax's vengeance inevitable.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Hand and gavel",
+          "text": "The hit on Tara maims her hand, ending her surgical career; Opie finds Piney's body and Unser names Clay. Opie shoots Clay but does not kill him.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Trades Clay's power for Jax's, and traps Tara in Charming.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Cartel is CIA, Jax is king",
+          "text": "The Galindo cartel's true intentions are revealed, and Potter's RICO case takes an unusual turn. Clay survives, hands Jax the gavel, and Jax accepts the presidency.",
+          "anchorEpisode": 14,
+          "whyLoadBearing": "Ends the season on the exact inversion Jax spent it fighting: he is now Clay.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Jax is SAMCRO's new president, tied to the Galindo cartel whose true intentions have just been revealed, with Tara injured and trapped beside him. Clay is stripped of the gavel but still breathing — and Jax knows he killed Piney and ordered Tara's shooting.",
+        "questions": [
+          "Will Jax kill Clay, or use him?",
+          "Can Tara survive a life she can no longer surgeon her way out of?",
+          "What does the CIA-backed cartel want from SAMCRO next?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jax Teller",
+          "line": "The new President of SAMCRO, deep in bed with the Galindo cartel and knowing Clay killed Piney and ordered Tara's shooting."
+        },
+        {
+          "name": "Clay Morrow",
+          "line": "Deposed and shot but alive, exposed as Piney's killer to Jax and Gemma, arthritis-crippled and out of options."
+        },
+        {
+          "name": "Tara Knowles",
+          "line": "Engaged to Jax with a shattered hand that ends her surgical career; carries John Teller's letters and the last plan to leave."
+        },
+        {
+          "name": "Gemma Teller-Morrow",
+          "line": "Now knows Clay murdered Piney and beat her; has pivoted her loyalty to Jax and Tara."
+        },
+        {
+          "name": "Opie Winston",
+          "line": "Widower, father, and the man who put a bullet in Clay for Piney's murder — no longer trusts anyone at the table but Jax."
+        },
+        {
+          "name": "Juice Ortiz",
+          "line": "Secretly turned informant for Potter, killed brother Miles to cover it, and tried to kill himself. Chibs alone knows he's fragile, not why."
+        },
+        {
+          "name": "Bobby Munson",
+          "line": "New Vice President under Jax, having lost his bid against Clay earlier in the season."
+        },
+        {
+          "name": "Wayne Unser",
+          "line": "Retired, cancer-ridden, and the man who identified Clay as Piney's killer to Opie."
+        },
+        {
+          "name": "Romeo Parada",
+          "line": "Galindo cartel liaison whose true intentions are revealed at season's end, reshaping SAMCRO's guns-and-drugs deal and Potter's RICO case."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Pope and Tig's daughter",
+          "text": "Oakland kingpin Damon Pope has Tig's daughter Dawn burned alive in front of him as vengeance for Pope's own daughter, killed in season 4's drive-by.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces Pope, the season's central threat and the reason Tig owes Jax his life.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Nero and the escort deal",
+          "text": "Jax meets Latino ex-gangster and pimp Nero Padilla, whose brothel becomes SAMCRO's hideout and new business; Nero also becomes Gemma's serious partner.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Nero is the season's moral counterweight and Gemma's redemption route.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Opie dies in county",
+          "text": "In county lockup Pope demands one Son dead; Opie takes the beating meant for Jax and is killed with a pipe by inmates. Jax loses his best friend.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The season's emotional pivot and the loss that darkens Jax completely.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Clay's Nomad plot exposed",
+          "text": "Clay orchestrates a wave of home invasions in Charming to reclaim power; Jax uncovers it, and after Gemma's DUI crash injures the boys, Tara banishes her.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Isolates both Gemma and Clay and hands Jax his final case against Clay.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Juice flips again",
+          "text": "Under Clay's pressure Juice confesses every hidden sin; Jax then flips him back, offering redemption if he helps trap Clay.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Puts Juice permanently under Jax's thumb heading into season 6.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Tara arrested",
+          "text": "Tara visits imprisoned Otto to make him recant his RICO testimony; he beats her to death a nurse and Tara is arrested for conspiracy to murder.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The federal case that will define Tara's endgame.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Jax frames Clay for Pope",
+          "text": "Jax and Tig murder Pope, frame Clay for the killing, and cut a new deal with Pope's lieutenant August Marks. Bobby drops his VP patch in disgust.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Removes Pope, jails Clay, and shows Jax has fully become the man he swore he wouldn't.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Clay is in prison framed for Pope's murder, Tara is under arrest facing federal charges, and Bobby has walked away from the table. Jax has consolidated power by lying to everyone who trusts him.",
+        "questions": [
+          "Can Tara stay out of prison — and stay loyal to Jax?",
+          "How does Clay strike back from inside?",
+          "How far can Jax push before Bobby, Nero, or Gemma break with him?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jax Teller",
+          "line": "President who murdered Pope and framed Clay; deep in gunrunning with the Irish and moving toward August Marks."
+        },
+        {
+          "name": "Tara Knowles-Teller",
+          "line": "Newly married to Jax and under arrest for conspiring in Otto's nurse-killing; increasingly desperate to get her boys out of Charming."
+        },
+        {
+          "name": "Clay Morrow",
+          "line": "Stripped of everything and jailed for a murder Jax pinned on him; wants a transfer to Ireland with the Irish."
+        },
+        {
+          "name": "Gemma Teller-Morrow",
+          "line": "Banished from Tara's kids after a DUI crash that hospitalised them; drawing closer to Nero and Jax."
+        },
+        {
+          "name": "Nero Padilla",
+          "line": "Ex-gangster pimp turned SAMCRO business partner and Gemma's boyfriend; the season's most decent adult."
+        },
+        {
+          "name": "Bobby Munson",
+          "line": "Threw his VP patch on the table after Jax killed Pope; still in the club but no longer at Jax's right hand."
+        },
+        {
+          "name": "Juice Ortiz",
+          "line": "Confessed every secret to Clay then flipped for Jax; owned by whoever is currently threatening him."
+        },
+        {
+          "name": "Chibs Telford",
+          "line": "Jax's new right hand at the table after Bobby's demotion."
+        },
+        {
+          "name": "August Marks",
+          "line": "Damon Pope's polished lieutenant, now SAMCRO's new Oakland partner in guns and money."
+        }
+      ]
+    },
+    "6": {
+      "beats": [
+        {
+          "label": "S6 · The school shooting",
+          "text": "A boy shoots up a Catholic school with a KG-9 traced to SAMCRO's Irish supply. DA Tyne Patterson and ex-cop Lee Toric take aim at the club.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The season's inciting crime and the reason Jax tries to end guns.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Otto kills Toric",
+          "text": "Toric coerces Clay into slipping Otto a shiv to attack him; instead Otto kills Toric in the prison infirmary, and the guards then kill Otto.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Removes the season's federal wildcard and buys Jax time with Patterson.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Tara's fake pregnancy",
+          "text": "Tara secretly arranges with attorney Lowen for Wendy to gain custody of the boys if she is imprisoned, and fakes a pregnancy and miscarriage to frame Gemma.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The escape plan whose exposure detonates the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Jax offers up the Irish",
+          "text": "To buy the club immunity Jax pledges Patterson the IRA's Galen O'Shay within ten days. Clay is broken out of prison transfer by the Irish in the process.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Ends SAMCRO's gun business and turns Clay loose one last time.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Jax kills Clay",
+          "text": "Jax delivers Clay to Patterson's ambush and finally kills him himself, satisfying the debts for Piney, John Teller, and Tara's shattered hand.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Closes the Clay arc that has run since season 1.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Tara's deal",
+          "text": "Furious after catching Jax with madam Colette, Tara secretly agrees to testify against SAMCRO to Patterson in exchange for her and the boys' freedom.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The choice that puts her in Gemma's crosshairs.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Gemma with a carving fork",
+          "text": "Unser tells Gemma Tara has made a deal; Gemma finds Tara at the sink with the boys upstairs and kills her with a kitchen fork as Juice watches.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The single act that will define every remaining season.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Tara is dead on the kitchen floor, killed by Gemma over a betrayal Jax never learned about. Only Gemma and Juice know what happened, and Jax is about to walk in.",
+        "questions": [
+          "What does Jax do when he finds Tara's body?",
+          "How long can Gemma and Juice keep the truth from him?",
+          "Who does Jax blame — and who dies for it?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jax Teller",
+          "line": "President who has killed Clay, ended the gun business, and is about to walk in on his murdered wife."
+        },
+        {
+          "name": "Tara Knowles-Teller",
+          "line": "Dead in her own kitchen, killed by Gemma minutes after securing a deal that would have taken her boys out of Charming."
+        },
+        {
+          "name": "Gemma Teller-Morrow",
+          "line": "Tara's killer, acting on Unser's word and a lifetime of jealousy; believes she was protecting her family."
+        },
+        {
+          "name": "Nero Padilla",
+          "line": "Gemma's partner and Jax's steadying friend; has just heard about Juice's role in Darvany's death."
+        },
+        {
+          "name": "Juice Ortiz",
+          "line": "The only witness to Tara's murder besides Gemma; already broken, now silenced by another secret."
+        },
+        {
+          "name": "Wayne Unser",
+          "line": "The man who told Gemma about Tara's deal minutes before Gemma killed her; unaware of what he set in motion."
+        },
+        {
+          "name": "Wendy Case",
+          "line": "Newly clean, secretly named as the boys' guardian in Tara's arrangement."
+        },
+        {
+          "name": "Tyne Patterson",
+          "line": "District Attorney who lost her star witness the night Gemma killed her; the deal for the club is now dead."
+        },
+        {
+          "name": "August Marks",
+          "line": "Pope's successor, now SAMCRO's Oakland partner after Jax delivered the gun business."
+        },
+        {
+          "name": "Bobby Munson",
+          "line": "Back at the table as Jax's Vice President after helping run the club during the crisis."
+        }
+      ]
+    }
+  },
+  "repairedAt": "2026-07-27T06:05:36.829Z"
+}

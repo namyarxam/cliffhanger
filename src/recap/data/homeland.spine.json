@@ -1,0 +1,767 @@
+{
+  "slug": "homeland",
+  "generatedFor": "Homeland",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The turned POW",
+          "text": "Warned by an Iraqi asset that an American POW is now al-Qaeda's, Carrie sees Marine Brody rescued after 8 years and illegally surveils him, sure he is the traitor.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the central premise: Carrie vs Brody, and the illegal surveillance that will define her career.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Inside his head",
+          "text": "After her warrant expires, Carrie approaches Brody at a veterans' meeting; they begin an affair while she keeps hunting for proof he is Nazir's man.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The affair is the mechanism by which Carrie later gets the truth, and the reason she is discredited.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The cabin confession",
+          "text": "At her cabin, Brody admits converting to Islam and beating fellow POW Walker to death for Nazir, but denies turning—just as Saul learns Walker is alive and is the real mole.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The show's core misdirect: Carrie is right about Walker but wrong that it clears Brody.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Issa",
+          "text": "Flashbacks reveal Brody grew to love Nazir's son Issa as his own, until a drone strike ordered by VP Walden killed the boy, radicalising Brody against the U.S.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The Issa motive drives everything Brody does for the rest of the series, including killing Walden in season 2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The vest",
+          "text": "Brody wears a suicide vest to a bunker holding Walden and half the Cabinet, but relents at the last second when his daughter Dana calls and begs him to come home.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Brody's choice to stand down defines his arc: he is committed but not lost, and Dana is the reason.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The White House mole",
+          "text": "Brody kills Walker on Nazir's order and pledges to serve as al-Qaeda's mole inside Washington by running for Congress with Walden's blessing.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "This is the setup for season 2: Brody, congressman-elect, is still Nazir's man and no one at the CIA knows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The tell",
+          "text": "Moments before shock therapy begins, Carrie remembers Brody murmured 'Issa' in his sleep at the cabin, realising the two were connected—and no one else knows.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Carrie exits the season with the one memory that ties Brody to Nazir, about to be erased.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Brody is congressman-elect and al-Qaeda's freshly-installed mole; he has killed Walker for Nazir and answers to him. Carrie, discredited and off medication, is going under for ECT holding the only clue anyone has.",
+        "questions": [
+          "Will Carrie remember the Issa connection after her treatment?",
+          "What will al-Qaeda ask its congressman to do next?",
+          "Can Saul be reached if Carrie herself no longer trusts her memory?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Carrie Mathison",
+          "line": "CIA counterterrorism officer, secretly bipolar, suspended after her affair with Brody was exposed, about to undergo ECT."
+        },
+        {
+          "name": "Nicholas Brody",
+          "line": "Rescued Marine and freshly-elected congressman, secretly al-Qaeda's mole inside Washington after backing out of the suicide vest."
+        },
+        {
+          "name": "Saul Berenson",
+          "line": "Carrie's mentor at the CIA; believes Brody is no longer a suspect but trusts Carrie's instincts more than the paperwork."
+        },
+        {
+          "name": "Abu Nazir",
+          "line": "Al-Qaeda leader who turned Brody through love for his son Issa; still at large, still Brody's handler."
+        },
+        {
+          "name": "Vice President William Walden",
+          "line": "Ordered the drone strike that killed Issa; publicly denied civilian casualties; the man Brody is sworn to bring down."
+        },
+        {
+          "name": "Jessica Brody",
+          "line": "Brody's wife; had an affair with his friend Mike Faber during his captivity; unaware he is Muslim or a traitor."
+        },
+        {
+          "name": "Dana Brody",
+          "line": "Brody's teenage daughter, unknowingly the reason her father stepped away from the vest."
+        },
+        {
+          "name": "David Estes",
+          "line": "CIA counterterrorism deputy director; suspended Carrie after Brody exposed her surveillance."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · The confession tape",
+          "text": "Six months out of the CIA, Carrie retrieves a memory card in Beirut; the file is Brody's suicide-vest confession, vindicating her illegal surveillance.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Restores Carrie's credibility and puts Brody back in the crosshairs.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Brody flipped",
+          "text": "Confronted with the tape, Brody confesses and agrees to work for the CIA against Nazir, naming his handler Roya Hammad and his contacts.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Reframes Brody from target to asset; the entire season's ops depend on this flip.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The pacemaker",
+          "text": "Nazir kidnaps Carrie and forces Brody to hand him VP Walden's pacemaker code; the resulting heart attack lets Brody watch the man who killed Issa die.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Brody finally answers Issa and eliminates Walden — closes a season-one thread while opening chaos in the succession.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Nazir cornered",
+          "text": "Freed, Carrie hunts Nazir to the mill where he held her; he is killed in a chase, and everyone believes al-Qaeda's plot has died with him.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The 'end' of Nazir sets up the false calm before Langley — and Brody's release from his handler.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Quinn's other job",
+          "text": "Saul discovers analyst Peter Quinn reports to black-ops veteran Dar Adal and was placed on Brody's detail to assassinate him — a hit ordered by Estes.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Introduces the Dar/Quinn axis inside the CIA that runs through every subsequent season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Langley",
+          "text": "At Walden's memorial, Brody's car detonates outside CIA headquarters, killing over 200 including Estes and half the Cabinet; his old confession video is released to frame him.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The bombing wipes out the leadership and sends Brody on the run — the entire premise of season 3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Across the border",
+          "text": "Carrie smuggles a stunned Brody into Canada with fake passports, then returns to a devastated Langley and to Saul, who has just been named Acting Director.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Sets the season 3 board: Brody hidden abroad, Carrie alone with the truth, Saul running the Agency.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Langley is in ruins with 200 dead and its leadership gone. Brody, framed for a bombing he did not commit, is loose in Canada. Saul has inherited the Agency, and whoever engineered the attack is unknown.",
+        "questions": [
+          "Who actually set off the Langley bomb?",
+          "Can Carrie clear Brody's name before someone catches or kills him?",
+          "What does the CIA look like now that Estes and half the leadership are gone?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Carrie Mathison",
+          "line": "Reinstated at the CIA, in a real relationship with Brody, and the only person who can prove he did not bomb Langley."
+        },
+        {
+          "name": "Nicholas Brody",
+          "line": "Congressman turned CIA asset who killed VP Walden by proxy; framed for the Langley bombing and on the run in Canada."
+        },
+        {
+          "name": "Saul Berenson",
+          "line": "Newly Acting CIA Director after Langley wiped out the leadership; increasingly wary of Dar Adal's black ops."
+        },
+        {
+          "name": "Peter Quinn",
+          "line": "Black-ops officer working for Dar Adal; ordered to kill Brody but relented for Carrie's sake."
+        },
+        {
+          "name": "Dar Adal",
+          "line": "Black-ops veteran running his own program inside the CIA; his relationship with Estes exposed by Saul."
+        },
+        {
+          "name": "Abu Nazir",
+          "line": "Killed by police at the mill, but not before setting the Langley plot in motion offscreen."
+        },
+        {
+          "name": "David Estes",
+          "line": "CIA deputy director; killed in the Langley bombing; had ordered Brody's assassination to cover his own role in the Issa strike."
+        },
+        {
+          "name": "Roya Hammad",
+          "line": "Brody's al-Qaeda handler and White House correspondent, arrested during the failed homecoming plot."
+        },
+        {
+          "name": "Vice President William Walden",
+          "line": "Killed by induced heart attack — the Issa strike finally answered."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · The bipolar reveal",
+          "text": "Testifying about Langley, Saul outs Carrie's bipolar disorder to Congress; she is committed to a psych ward and severed from the CIA.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Her humiliation is the setup for the entire season's long-con; the audience is meant to believe it too.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · It was a play",
+          "text": "Once released, Carrie is courted by lawyers fronting for Langley's Iranian financier — and reveals to Saul the breakdown was staged to bait him.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Reframes everything before it; establishes Carrie and Saul are still working in lockstep.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Javadi",
+          "text": "The bait works: Carrie meets Majid Javadi, the Iranian who funded the Langley attack; Saul flips him and sends him back to Tehran as a CIA asset.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Javadi becomes the vehicle for the season's Iran regime-change play and the person who clears Brody.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Brody in Caracas",
+          "text": "Saul finds Brody hiding in a Caracas slum, wrecked by heroin and cleared by Javadi of any role in Langley; he is brought home and dried out for one final job.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Reintroduces Brody after his season-long absence and puts him on the path to Iran.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The Iran plan",
+          "text": "Carrie convinces Brody to accept: defect to Iran, assassinate Revolutionary Guard chief Akbari, and clear the way for Javadi to inherit the position.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The mission structure the finale pays off; the reason Brody is sent to his death.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The hanging",
+          "text": "Brody kills Akbari in Tehran, but Senator Lockhart leaks his location and Javadi's men capture him; Carrie watches him publicly hanged, unable to save him.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Ends the Brody story and defines Carrie's grief going into her next posting.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The star",
+          "text": "Four months later Carrie, now Istanbul station chief and mother to Brody's baby, is refused a memorial star for him at Langley and draws one on the wall herself.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Sets Carrie's new location, family situation, and unresolved relationship with the CIA that opens season 4.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Brody is dead and Carrie has his daughter and a station-chief posting in Istanbul. Saul has been pushed out of the CIA by Lockhart, but his Iran regime-change gamble is quietly working.",
+        "questions": [
+          "Can Carrie be a mother and a station chief at the same time?",
+          "What becomes of Javadi's rise in Tehran now that Saul is gone?",
+          "What kind of CIA is Carrie about to run a foreign station for?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Carrie Mathison",
+          "line": "New Istanbul station chief and single mother to Brody's infant daughter; still grieving him and estranged from Lockhart's CIA."
+        },
+        {
+          "name": "Saul Berenson",
+          "line": "Fired as CIA director after Lockhart took the job; has moved into the private sector."
+        },
+        {
+          "name": "Nicholas Brody",
+          "line": "Hanged in Tehran after killing Akbari for the CIA; posthumously cleared of Langley by Javadi but not publicly."
+        },
+        {
+          "name": "Peter Quinn",
+          "line": "Black-ops officer now firmly in Carrie and Saul's circle; falsely confessed to Javadi's family murders to protect the op."
+        },
+        {
+          "name": "Dar Adal",
+          "line": "Still inside the CIA; sided with Saul against Lockhart during the Javadi extraction, but their alliance is uneasy."
+        },
+        {
+          "name": "Senator Andrew Lockhart",
+          "line": "The new CIA Director; pushed Saul out, distrusts covert operations, and nearly ended the Iran play by leaking Brody."
+        },
+        {
+          "name": "Majid Javadi",
+          "line": "Iranian Revolutionary Guard official turned CIA asset by Saul; now positioned to rise in Tehran's intelligence hierarchy."
+        },
+        {
+          "name": "Fara Sherazi",
+          "line": "Young Iranian-American analyst who helped trace the Langley money; now on Saul's team."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · The Drone Queen",
+          "text": "Now Kabul station chief, Carrie orders a drone strike on Taliban leader Haqqani; the target seemingly dies but the missile hits a wedding, killing 40 civilians.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Carrie's new job, the guilt that follows her, and the Haqqani thread that runs the whole season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Sandy",
+          "text": "Sent to Islamabad to handle the fallout, Carrie watches station chief Sandy Bachman get beaten to death by a mob after his identity is leaked to Pakistani press.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The killing creates the Islamabad vacancy Carrie fills and exposes ISI hostility inside the embassy.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Aayan",
+          "text": "Carrie takes Sandy's post and works Aayan — a young survivor of the wedding strike and Haqqani's nephew — eventually seducing him to draw the uncle out of hiding.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The Aayan op is the mechanism that surfaces Haqqani and later exposes him alive.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Haqqani alive",
+          "text": "Aayan is tracked to a remote meet; Haqqani, very much alive, executes the boy for leading in a drone and drags a captive Saul into view to guarantee the strike is aborted.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Reveals Haqqani survived the strike and puts Saul in his hands — the fulcrum of the second half of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The embassy",
+          "text": "A negotiated prisoner exchange collapses into a full assault on the U.S. embassy; Haqqani kills Fara and dozens of staff and escapes with the CIA's Pakistan asset list.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Fara dies, Islamabad falls, and the asset list is gone — the operational catastrophe of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The deal",
+          "text": "Quinn goes rogue to kill Haqqani; Carrie tries the same in the street, but ISI colonel Aasar Khan stops her when she sees Dar Adal riding in Haqqani's car.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Reveals Dar has cut a private deal with the man who just sacked the embassy.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Saul in on it",
+          "text": "Home for her father's funeral, Carrie discovers Dar traded Haqqani off the kill list and Saul quietly agreed; a rejected Quinn accepts a black-ops job in Syria.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Fractures Carrie from Saul and sends Quinn abroad — the two departures that launch season 5.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Haqqani is off the CIA's kill list, protected by Dar and quietly Saul. Quinn has vanished into Syria believing Carrie rejected him. Islamabad station has been gutted and the U.S. asset list is in Taliban hands.",
+        "questions": [
+          "Can Carrie work under a Saul who has crossed the same line as Dar?",
+          "Where does Quinn resurface after Syria?",
+          "What is left of the CIA's Pakistan network with the asset list compromised?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Carrie Mathison",
+          "line": "Former Kabul and Islamabad station chief, back in the U.S. mourning her father and estranged from Saul."
+        },
+        {
+          "name": "Saul Berenson",
+          "line": "Held captive by Haqqani and returned; quietly signed on to Dar's Haqqani deal in exchange for a path back to director."
+        },
+        {
+          "name": "Peter Quinn",
+          "line": "Traumatised black-ops officer; rebuffed by Carrie, he has left for a high-risk mission in Syria with Dar's people."
+        },
+        {
+          "name": "Dar Adal",
+          "line": "Cut a deal with Haqqani to keep him off the kill list; effectively controls the direction of both Saul and Quinn."
+        },
+        {
+          "name": "Haissam Haqqani",
+          "line": "Taliban leader once presumed dead; sacked the U.S. embassy, murdered Fara, stole the CIA's asset list, and is now off the kill list."
+        },
+        {
+          "name": "Tasneem Qureishi",
+          "line": "ISI operative who blackmailed Dennis Boyd and coordinated the embassy attack; still inside Pakistani intelligence."
+        },
+        {
+          "name": "Aasar Khan",
+          "line": "ISI colonel who spared Carrie during her drugged breakdown and quietly warned her about Dar's deal."
+        },
+        {
+          "name": "Fara Sherazi",
+          "line": "Executed by Haqqani during the embassy assault."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Berlin",
+          "text": "Two years on, Carrie has left the CIA and works security for the Düring Foundation in Berlin, still estranged from Saul after derailing his bid for director.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Resets Carrie's location, employer and relationship with Saul before the plot arrives.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The leak",
+          "text": "A leaked CIA document proves Berlin station is illegally spying on German citizens, forcing Saul and station chief Allison Carr to publicly wind the program down.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The leak is the entry point into the season's Russian conspiracy and puts Allison under pressure.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The hit on Carrie",
+          "text": "Quinn is now Saul's Berlin assassin; his next assigned target is Carrie, and when he confronts her the two turn together to trace whoever ordered the kill.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Reunites Carrie and Quinn as a team and launches the season's central investigation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Allison the mole",
+          "text": "Allison is exposed as a longtime SVR asset, blackmailed in Baghdad in 2005; she has been steering Saul — and sleeping with him — for the entire season.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The season's core betrayal; explains Saul's blind spots and the Russians' reach inside the CIA.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Quinn undercover",
+          "text": "Wounded and hiding, Quinn is nursed by a Syrian jihadist cell in Berlin and works his way inside, discovering they are prepping a sarin attack on the city.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Sets up the sarin thread and Quinn's exposure.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Sarin",
+          "text": "The jihadists test the sarin on Quinn himself; Carrie tracks the cell to a subway tunnel and shoots their leader dead before the attack can happen.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The action climax; also the moment Quinn is poisoned in a way that will follow him into the next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Quinn on life support",
+          "text": "Allison is intercepted and killed as the SVR tries to extract her; Quinn survives the sarin but a brain hemorrhage leaves him barely alive, with Carrie keeping vigil at his bed.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The Russian plot ends; Quinn's condition defines the state Carrie enters season 6 in.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Quinn lies in a coma from a brain hemorrhage after the sarin attack. Carrie has ended things with Jonas and is holding a farewell letter from Quinn she has not opened. Saul is publicly whole but privately gutted.",
+        "questions": [
+          "Does Quinn survive, and in what condition?",
+          "Will Carrie ever return to the intelligence world?",
+          "What does the Berlin scandal cost Saul in the long run?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Carrie Mathison",
+          "line": "Left the CIA, works for the Düring Foundation in Berlin; single mother to Franny; keeping vigil at Quinn's bedside."
+        },
+        {
+          "name": "Saul Berenson",
+          "line": "Still in the CIA, publicly recovering but privately gutted by Allison's betrayal."
+        },
+        {
+          "name": "Peter Quinn",
+          "line": "Nearly killed by sarin, then by a brain hemorrhage; in a coma with survival uncertain."
+        },
+        {
+          "name": "Dar Adal",
+          "line": "Suspected Saul over the Berlin leaks; delivered Quinn's farewell letter to Carrie."
+        },
+        {
+          "name": "Allison Carr",
+          "line": "Berlin station chief and Saul's lover, exposed as a decade-old SVR asset; killed by Saul's team during her extraction."
+        },
+        {
+          "name": "Ivan Krupin",
+          "line": "SVR handler who ran Allison; now in U.S. custody."
+        },
+        {
+          "name": "Astrid",
+          "line": "German intelligence officer, Quinn's ex-lover, who helped Carrie find him."
+        }
+      ]
+    },
+    "6": {
+      "beats": [
+        {
+          "label": "S6 · New York",
+          "text": "Three months on, Carrie runs a New York nonprofit defending Muslim clients and shelters a recovering Quinn; her latest case is Sekou Bah, a young Muslim jailed by the FBI.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "New setting, new work, and the case that becomes the season's inciting bomb.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Keane",
+          "text": "President-elect Elizabeth Keane arrives skeptical of the CIA after her son died in Iraq; Dar Adal quietly builds a cabal to undermine her before inauguration.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the political antagonist and the shadow conspiracy against her that drives every plot after.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Sekou",
+          "text": "Carrie forces Sekou's release, but a bomb in his delivery van kills him hours later; Quinn's paranoid surveillance ties the plot to a house across from Carrie's.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The van bomb is Dar's opening move against Keane; Quinn's fixation on the neighbour becomes the season's investigative thread.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Javadi returns",
+          "text": "Javadi confirms to Keane that Iran is not running a parallel nuclear program — the intel Dar fed her was fabricated to keep her from disarming the CIA.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Exposes the false-flag pretext for Dar's whole conspiracy and puts Keane on his trail.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · The assassin next door",
+          "text": "The neighbour is Dar's contract killer, sent to spy on Carrie and murder her allies including Astrid; Quinn hunts him down and kills him before he can finish Carrie.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Confirms Dar was watching Carrie and eliminates a mid-tier antagonist as the plot escalates.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Quinn dies",
+          "text": "A bomb plot lures Keane into the open; Quinn drives Carrie and the president-elect through a firing squad of Dar's soldiers and dies at the wheel saving them.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Closes Quinn's story and cements the debt Keane owes Carrie going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · The purge",
+          "text": "Six weeks later President Keane is arresting hundreds of intelligence officials in retaliation; Saul is among them, and Carrie sees the woman she installed has turned.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Flips Keane from ally to threat and sets the exact conflict of season 7.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Keane has survived assassination and taken office, but Carrie watches her jail Saul and hundreds of other officials without cause. Quinn is dead. The alliance that put Keane in power has just broken.",
+        "questions": [
+          "How far will Keane's purge of the intelligence community go?",
+          "Can Carrie work against a president she personally saved?",
+          "Who is left inside government to stop her?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Carrie Mathison",
+          "line": "Running a New York nonprofit for Muslim clients; former Keane advisor now watching the president turn authoritarian."
+        },
+        {
+          "name": "Saul Berenson",
+          "line": "Cleared Dar Adal's conspiracy for Keane; now among the hundreds she has had arrested."
+        },
+        {
+          "name": "Peter Quinn",
+          "line": "Died shielding Keane from Dar's assassins."
+        },
+        {
+          "name": "Elizabeth Keane",
+          "line": "The new U.S. President; nearly assassinated by Dar's cabal; now purging the intelligence community that failed her."
+        },
+        {
+          "name": "Dar Adal",
+          "line": "Architect of the false Iran intelligence and the plot against Keane; among those imprisoned after the assassination attempt."
+        },
+        {
+          "name": "David Wellington",
+          "line": "Keane's chief of staff and loyal enforcer of the new administration."
+        },
+        {
+          "name": "Brett O'Keefe",
+          "line": "Right-wing agitator who ran a government-funded troll farm for Dar; now a fugitive."
+        },
+        {
+          "name": "Max",
+          "line": "Loyal tech operative to Carrie; infiltrated O'Keefe's troll farm and gathered the evidence that broke Dar."
+        }
+      ]
+    },
+    "7": {
+      "beats": [
+        {
+          "label": "S7 · The 200",
+          "text": "Carrie is out of the White House and in D.C., fighting to free the 200 officials Keane has jailed; her FBI contact Dante Allen refuses to testify against the president.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets Carrie's opposition to Keane and introduces Dante, whose betrayal turns the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · McClendon murdered",
+          "text": "General McClendon, mastermind of the plot to kill Keane, dies of poisoning in prison; Carrie and Saul both suspect the White House had him killed.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The killing is the false trail into Russian meddling and the pretext for the 25th-Amendment push.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Simone",
+          "text": "The trail leads to Simone Martin, girlfriend of Keane's chief of staff Wellington, who resembles the courier who arranged the McClendon hit.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Simone is the Russians' plant, and this beat frames the whole investigation as Wellington's fall.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Not Wellington",
+          "text": "Saul realises the McClendon plot was Russian: a viral smear campaign and Kremlin disinformation triggered a deadly Ohio militia standoff meant to bring Keane down.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Reframes the season from domestic to foreign — Russia, not Dar, is now the enemy.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Dante the plant",
+          "text": "Dante himself is the Russian plant, steering Carrie at the innocent Wellington; Carrie's team poisons him into a confession, but he dies before he can testify.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Destroys the one witness who could prove the plot and pushes the story to Moscow.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · The 25th",
+          "text": "The Cabinet invokes the 25th Amendment on Keane; Carrie, having lost custody of Franny to Maggie, joins Saul on a Moscow op to seize Simone and prove Russia's plot.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Carrie sheds her personal life and commits to the mission that will end with her captured.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Carrie taken",
+          "text": "Simone testifies and Keane is briefly reinstated before resigning; but Carrie is captured by Russian handler Yevgeny Gromov, and seven months later Saul gets her back in severe delirium.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Introduces Yevgeny as Carrie's handler and delivers the broken state she opens season 8 in.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Keane has resigned despite being reinstated. Carrie has been returned from a Russian black site after seven months without medication, in bipolar delirium, unable to remember what she gave up in that cell.",
+        "questions": [
+          "What did Carrie hand over in Russian captivity that she cannot remember?",
+          "Can she ever be trusted at the CIA again?",
+          "What does Yevgeny do with a handler-agent bond he has already built?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Carrie Mathison",
+          "line": "Just released from a Russian black site in severe bipolar delirium after months without medication; her memory of captivity is fragmentary."
+        },
+        {
+          "name": "Saul Berenson",
+          "line": "National Security Advisor who negotiated Carrie's release; ran the Moscow op that saved Keane's presidency."
+        },
+        {
+          "name": "Elizabeth Keane",
+          "line": "Resigned as president despite being reinstated after the 25th Amendment vote; her administration is over."
+        },
+        {
+          "name": "David Wellington",
+          "line": "Keane's chief of staff, cleared of the McClendon plot; unwittingly played by his lover."
+        },
+        {
+          "name": "Simone Martin",
+          "line": "Russian asset extracted from Moscow; testified against the Kremlin operation and implicated Senator Paley."
+        },
+        {
+          "name": "Yevgeny Gromov",
+          "line": "Russian intelligence officer who ran the sabotage of the Keane presidency and now controls Carrie."
+        },
+        {
+          "name": "Maggie Mathison",
+          "line": "Carrie's sister; won full custody of Franny after Carrie's breakdown at the hospital."
+        }
+      ]
+    },
+    "8": {
+      "beats": [
+        {
+          "label": "S8 · After Moscow",
+          "text": "Recovering in Germany, Carrie fails a polygraph and cannot remember most of her Russian captivity; the CIA suspects she was turned.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the trust question that follows Carrie through every subsequent decision.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Back to Kabul",
+          "text": "Saul brings her onto his Afghan peace deal, but in Kabul Carrie spots Yevgeny Gromov leaving the Afghan vice-president's office — her handler has beaten her there.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Puts Carrie and Yevgeny back in the same city and signals Russia is undermining the peace deal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Haqqani agrees",
+          "text": "Saul meets with Taliban leader Haqqani, who agrees to the peace deal; the ISI, wanting the war to continue, ambushes the convoy and Haqqani barely survives.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets up Haqqani as the peace partner the season needs to protect — and shows the ISI trying to kill him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · The crash",
+          "text": "President Warner flies in to announce peace; his helicopter crashes with President Daoud aboard, and the CIA blames Haqqani despite the flight recorder showing mechanical failure.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The inciting catastrophe; every remaining beat is downstream of who is blamed for it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Jalal",
+          "text": "Haqqani is publicly executed for a crash he did not cause; his son Jalal takes over the Taliban, murders Carrie's tech Max, and pushes Pakistan and America toward war.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Removes the peace partner, installs the antagonist, and raises the stakes to nuclear.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · The trade",
+          "text": "To stop the war, Carrie hands Yevgeny the name of Saul's deep Kremlin asset in exchange for the flight recorder; the asset kills herself and nuclear war is averted.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Carrie's most morally weighted choice in the series: she betrays Saul to save the region.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Moscow",
+          "text": "Two years later Carrie lives openly in Moscow with Yevgeny and has published a book denouncing America — but Saul finds a hidden note inside proving she is his new Russian asset.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The series' final reveal: Carrie has become Saul's replacement for the asset she gave up.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The war is averted and Anna is dead. Carrie lives openly with Yevgeny in Moscow, publicly a defector — but privately Saul's new Russian asset, filing intelligence through Anna's own tradecraft.",
+        "questions": [
+          "Can Carrie sustain the double life she has chosen?",
+          "What does Yevgeny do the moment he sees the same note Saul did?",
+          "Who else in Moscow is left she can trust?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Carrie Mathison",
+          "line": "Publicly a Russian defector living with Yevgeny in Moscow; secretly Saul's new asset inside the Kremlin."
+        },
+        {
+          "name": "Saul Berenson",
+          "line": "Aging CIA veteran who has just discovered Carrie has replaced Anna as his source in Moscow."
+        },
+        {
+          "name": "Yevgeny Gromov",
+          "line": "Russian intelligence officer, Carrie's handler and now her partner in Moscow; unaware she is running him."
+        },
+        {
+          "name": "Haissam Haqqani",
+          "line": "Executed by firing squad for a helicopter crash he did not cause."
+        },
+        {
+          "name": "Jalal Haqqani",
+          "line": "Younger, more radical Taliban leader who killed Max and now runs his father's organisation."
+        },
+        {
+          "name": "Tasneem Qureishi",
+          "line": "ISI head who sabotaged the peace deal and shielded Jalal from capture."
+        },
+        {
+          "name": "Abdul Qadir G'ulom",
+          "line": "Afghan strongman who inherited the presidency after the crash and used it to purge the Taliban."
+        },
+        {
+          "name": "Max Piotrowski",
+          "line": "Carrie's longtime tech operative, executed by Jalal on camera.",
+          "note": "Introduced much earlier in the series but killed here."
+        },
+        {
+          "name": "Anna Pomerantseva",
+          "line": "GRU translator revealed as Saul's decades-long Kremlin asset; killed herself to avoid capture."
+        }
+      ]
+    }
+  }
+}

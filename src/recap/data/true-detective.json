@@ -1,0 +1,2087 @@
+{
+  "slug": "true-detective",
+  "tmdbId": 46648,
+  "tvmazeId": 5,
+  "matchedBy": "imdb_id",
+  "title": "True Detective",
+  "overview": "An American anthology police detective series utilizing multiple timelines in which investigations seem to unearth personal and professional secrets of those involved, both within or outside the law.",
+  "firstAirDate": "2014-01-12",
+  "network": "HBO",
+  "poster": "https://image.tmdb.org/t/p/w780/dC7jkj2g1aU8sxKqM6D4g44xA6w.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/original/v8YFr8BbU9qsO8PYIulzTeM6Qk.jpg",
+  "backdrops": [
+    "https://image.tmdb.org/t/p/original/v8YFr8BbU9qsO8PYIulzTeM6Qk.jpg",
+    "https://image.tmdb.org/t/p/original/bRNTmuc1ZtEulhbhGo6230Y3doU.jpg",
+    "https://image.tmdb.org/t/p/original/bPLRjO2pcBx0WL73WUPzuNzQ3YN.jpg",
+    "https://image.tmdb.org/t/p/original/qezjDPeSfjJWhCFnqJPBrl08srT.jpg",
+    "https://image.tmdb.org/t/p/original/2lc2sMBIK5emiMMcXBPBV23nRR6.jpg",
+    "https://image.tmdb.org/t/p/original/siA2d4PNn4JVFZAwfIYx4pnKCaK.jpg",
+    "https://image.tmdb.org/t/p/original/82qpvU7AzT9D8oC02fIceb5KAz8.jpg",
+    "https://image.tmdb.org/t/p/original/2Ahm0YjLNQKuzSf9LOkHrXk8qIE.jpg",
+    "https://image.tmdb.org/t/p/original/e3nq2DcnHj250o1bLClF3hExoIm.jpg",
+    "https://image.tmdb.org/t/p/original/AlAQWHypzNcdImOZLSysIMAnu2y.jpg",
+    "https://image.tmdb.org/t/p/original/2eTVMkEMXmJd6Yjda3AcN20UVld.jpg",
+    "https://image.tmdb.org/t/p/original/rhU4piSrTbyNCW2VpZyZOQfuukk.jpg"
+  ],
+  "throughSeason": 4,
+  "totalSeasons": 4,
+  "showType": "Scripted",
+  "genres": [
+    "Drama",
+    "Crime",
+    "Thriller"
+  ],
+  "status": "Running",
+  "runtime": 63,
+  "language": "English",
+  "seasons": [
+    {
+      "season": 1,
+      "name": "Season 1",
+      "airDate": "2014-01-12",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "The Long Bright Dark",
+          "overview": "Former Louisiana State CID partners Martin Hart and Rustin Cohle give separate statements to a pair of investigators about the murder of a prostitute, Dora Lange, 17 years earlier. As they look back, details of the crime, replete with occult overtones, are accompanied by insights into the detectives’ volatile partnership and personal lives.",
+          "plot": "Vermilion Parish, Louisiana, January 3, 1995. State homicide detectives Martin \"Marty\" Hart and Rustin \"Rust\" Cohle investigate the murder of 28-year-old Dora Lange, whose body was found in a sugar cane field outside Erath. Her corpse has been staged against a tree as if in prayer, with her head crowned with deer antlers and her body surrounded by twig latticeworks resembling Cajun bird traps. At the insistence of his wife Maggie, Marty invites Rust to dinner. Rust arrives drunk but opens up to Maggie about the death of his daughter. Their investigation leads them to Lange's ex-husband Charlie, who tells them that during his last phone call with her, she talked about meeting a king. While interviewing neighbors in Erath, Marty and Rust come across the five-year-old missing-persons case of a child named Marie Fontenot. They also hear of a report of a child being chased through the woods by a \"green-eared spaghetti monster\". While following up on Fontenot's disappearance, they discover another twig latticework, ostensibly placed in recent times, inside her dilapidated playhouse. In May 2012, Marty and Rust are separately interviewed about the Lange investigation by detectives Thomas Papania and Maynard Gilbough. Marty and Rust have not spoken since an altercation in 2002. The crime scene of a recently slain woman closely resembles the Lange murder scene, suggesting that despite Rust and Marty's apparent solving of the case in 1995, the real killer may remain at large.",
+          "airDate": "2014-01-12",
+          "still": "https://image.tmdb.org/t/p/original/lnludtHZ9CUbXvyFk1ZnoOsXp6o.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/lnludtHZ9CUbXvyFk1ZnoOsXp6o.jpg",
+            "https://image.tmdb.org/t/p/original/hmPd6IkdJTDOXJzmO8Gjc7d0Fnt.jpg",
+            "https://image.tmdb.org/t/p/original/wwc6lrQx4f9SK0bJNZQgCoYBHAx.jpg",
+            "https://image.tmdb.org/t/p/original/rKML4LuvtoTFF2fsVvXv9KIovFm.jpg",
+            "https://image.tmdb.org/t/p/original/oJaCVFU8jlEmQev5zZrtn2txZyx.jpg",
+            "https://image.tmdb.org/t/p/original/pxeDEc9RqBNO3li2k5ACew25baZ.jpg",
+            "https://image.tmdb.org/t/p/original/8FPK29rxeoDqoTkhXSip6u1CO4T.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Seeing Things",
+          "overview": "Under pressure to land a suspect in the Lange murder, Quesada warns Hart and Cohle that they might be replaced by three detectives from a new task force. The pair lobbies for extra time to follow up on a lead that takes them from a rural cathouse to an incinerated church. With his marriage to Maggie already strained by work, Hart finds respite away from home.",
+          "plot": "In 1995, Marty is having an affair with a younger colleague. Animosity between Rust and Marty flares after Rust implies knowledge of this affair. Reverend Billy Lee Tuttle, a celebrated evangelist and cousin of the Louisiana governor, pushes the creation of a police task force focusing on \"anti-Christian crimes\". The task force wants to take over Lange's case. Marty and Rust's superior agree to give them a little bit more time before handing it over. Marty and Rust's investigation leads them to The Ranch – a remote rural brothel employing runaway girls. One of Dora's friends at The Ranch hands them Lange's diary, which contains repeated references to \"Carcosa\" and a \"Yellow King\". Based on forensic evidence, Rust speculates that Dora's killer hooked her on increasing amounts of meth and LSD to elicit hallucinations. In the wreckage of a burnt-out church Lange attended, they find a wall painting depicting a human figure wearing deer antlers. In 2012, Rust reflects on his daughter's death in a car accident, which led to the collapse of his marriage and his spending four years as an undercover narcotics investigator. His undercover career ended with a lethal gunfight, after which he was admitted to a psychiatric institution. On release, Rust requested a job in homicide and was sent to Louisiana, partnered with Marty. Rust reveals that he experiences brief, intermittent episodes of visual hallucinations caused by years of drug use while working as an undercover officer. Shots from 1995 show that Rust occasionally hallucinates when he is with Marty, but he does not discuss them. Marty is now divorced from Maggie for reasons unrevealed.",
+          "airDate": "2014-01-19",
+          "still": "https://image.tmdb.org/t/p/original/65QvyYynb2taf3kq3Py6yuRApSC.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/65QvyYynb2taf3kq3Py6yuRApSC.jpg",
+            "https://image.tmdb.org/t/p/original/htrlCoORtTr7DB8BmwPkafHG3Ps.jpg",
+            "https://image.tmdb.org/t/p/original/qp27i964h6JGyMAAhV5AFhGjyGW.jpg",
+            "https://image.tmdb.org/t/p/original/wJktgRRI53VmbXCOLNFrePv9x62.jpg",
+            "https://image.tmdb.org/t/p/original/685N1LGxxgG7zG5NzcSYqs8D0Mj.jpg",
+            "https://image.tmdb.org/t/p/original/wl4ceXYEU75cZH4HXe70P1NbGx5.jpg",
+            "https://image.tmdb.org/t/p/original/qcBh26CVED0hEmh3COpjYbz3SPG.jpg",
+            "https://image.tmdb.org/t/p/original/zMMG818pZZvP9Fme0NBDB7yqbUV.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "The Locked Room",
+          "overview": "A hidden image at the burned-out church leads Cohle and Hart to Joel Theriot, a tent-revival minister whose parishioners finger a scarred “tall man” seen with Dora Lange. Brought in for interrogation, a sex offender matching the description is quickly dismissed by Cohle, despite offering a confession. Hart gets sidetracked after Maggie sets Cohle up with a friend at a C&W bar. Looking to establish a pattern of murder, Cohle pores over old case files, finding a connection with a woman assumed to have drowned years earlier.",
+          "plot": "1995. Marty and Rust speak with pastor Joel Theriot and learn that Lange was sometimes seen at church with a tall man with distinctive facial scarring. Their investigation continues in the face of pressure to turn the case over to Tuttle's new task force. Marty enters a jealous rage when he discovers his mistress Lisa with another man. While researching old investigations, Rust identifies symbols similar to the Lange case in the death of Rianne Olivier, which had been classed accidental. Marty and Rust visit Light of the Way Academy, a religious school run by Tuttle that Olivier attended, but find it abandoned save for a groundsman mowing the lawn, whom Rust questions. They learn that Olivier's boyfriend Reggie Ledoux is an ex-con who was a cellmate of Dora Lange's ex-husband, Charlie. The detectives put out an APB on Ledoux. 2012. The interviews continue, revealing Marty's self-serving moral views and Rust's nihilistic views of humanity.",
+          "airDate": "2014-01-26",
+          "still": "https://image.tmdb.org/t/p/original/9Icv5WubrQ0Cs7nEUxQ4WtD86Zm.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/9Icv5WubrQ0Cs7nEUxQ4WtD86Zm.jpg",
+            "https://image.tmdb.org/t/p/original/l41mF28P7aMiafCHEr5o7XpayId.jpg",
+            "https://image.tmdb.org/t/p/original/bOruKcYh7t3lvaxEISYnODU9TEv.jpg",
+            "https://image.tmdb.org/t/p/original/vt8h1uIWAMaykJt7sHVGy2rVmHg.jpg",
+            "https://image.tmdb.org/t/p/original/y3ofqMwMUP3AfNS4b7D0307eZqv.jpg",
+            "https://image.tmdb.org/t/p/original/tHQtYamZM5hRlLd1V8A1OPOAukP.jpg",
+            "https://image.tmdb.org/t/p/original/ml6vwXeTuQkN4qUKZyuZ8PNDShS.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Who Goes There?",
+          "overview": "Hart and Cohle hunt for their newly identified suspect, Reggie Ledoux, a meth cooker who shared a cell with Dora Lange's husband and recently skipped parole. As Hart's personal life collapses around him, Cohle immerses himself in an old criminal identity from his narco days, contacting an East-Texas biker gang known to deal with their primary suspect.",
+          "plot": "In 1995, Charlie Lange admits he showed pictures of Dora to Ledoux. Marty tracks down an associate of Ledoux and learns that Ledoux only sells the meth he makes to one client: the Iron Crusaders, a biker gang of East Texas. Rust has connections in the Crusaders from his days undercover. He decides to take leave days to infiltrate the Crusaders, telling his superiors that he needs to visit his dying father. Lisa reveals Marty's affair to Maggie, who asks Marty to leave the house, devastating him. Rust convinces Marty to help him as he infiltrates the Iron Crusaders. Rust's contact Ginger promises access to the gang's meth supply in exchange for Rust's (who is known to the gang as \"Crash\") help robbing a rival gang. The robbery goes badly. Rust kidnaps Ginger and barely escapes with Marty. In 2012, Marty and Rust do not tell Papania and Gilbough about their escapade with the Iron Crusaders. They each maintain the story of Rust taking leave to visit his father in Alaska.",
+          "airDate": "2014-02-09",
+          "still": "https://image.tmdb.org/t/p/original/rxIdNZxiGOsw4AYmnWnBxlRr3uX.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/rxIdNZxiGOsw4AYmnWnBxlRr3uX.jpg",
+            "https://image.tmdb.org/t/p/original/ojMdG3FhruXBsqJNs3trR31GIgc.jpg",
+            "https://image.tmdb.org/t/p/original/g6tQ0VJjrO8XiO6UvtL1dfJQczQ.jpg",
+            "https://image.tmdb.org/t/p/original/uKBk70aq3QLOYLHusQOOhQTqUrb.jpg",
+            "https://image.tmdb.org/t/p/original/wqHpa3wSxM9pENe5OUaFjmHTrHI.jpg",
+            "https://image.tmdb.org/t/p/original/zbRpiBSRwUeDQ176Gqivgybatzt.jpg",
+            "https://image.tmdb.org/t/p/original/m2YEEbRBnr7uRPngUvC7UBVUQRC.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "The Secret Fate of All Life",
+          "overview": "A violent denouement in the forest clears the Dora Lange case and turns Cohle and Hart into local heroes. Each man settles into a healthier rhythm of living as Hart returns to his family, and Cohle starts a relationship while gaining a reputation as a closer in interrogations. As time passes and his daughters grow older, Hart faces new tensions and temptations, and Cohle learns from a double-murder suspect that there could be much more to an old case than he'd once thought. In 2012, Gilbough and Papania put their cards on the table, presenting new intelligence that threatens Cohle and causes Hart to reassess everything he thought he knew about his former partner.",
+          "plot": "In 1995, Ginger brings Rust to Dewall Ledoux, Reggie's cousin and meth-cooking partner. Dewall refuses to do business with Rust but unwittingly leads him and Marty to their meth lab hidden in the bayou. Marty apprehends Reggie Ledoux, who makes cryptic statements about \"Carcosa\". Before Rust was able to question Reggie, Marty kills him in a rage after discovering two kidnapped and abused children in the compound. Dewall tries to flee but sets off a booby trap. Marty and Rust plant evidence to make it look as though a shootout has taken place, a scenario they report to a police investigation. They are hailed as heroes at the police station and in the press and they receive commendations and promotions. By 2002, Marty and Maggie have reconciled and Rust is dating again. While Rust is consulting on a police interrogation, the prisoner asks for a plea bargain in exchange for information about Dora Lange's killer, who he claims is still at large and killing. He mentions the \"Yellow King\", which gets Rust's attention. The prisoner kills himself in his cell before Rust can investigate his claims. Rust returns to the Dora Lange murder site and discovers that the same tree is now adorned with twig sculptures and a large wreath of vines and roots, all of them surreptitiously placed recently just like the twig sculpture in Marie Fontenot's playhouse found years earlier. Rust also returns to Light of the Way Academy, where he finds more twig sculptures and dark imagery on the walls. In 2012, both Marty and Rust do not tell Papania and Gilbough about what really happened the night they rescued the children and killed Reggie and Dewall Ledoux; they repeat the same report from 1995. Papania and Gilbough tell Marty they suspect that Rust, who they allege conveniently led Marty to every clue or lead in the case, has been orchestrating the killings. Rust is also a person of interest in Rev. Billy Lee Tuttle's suspicious death two years earlier, which was around the time Rust returned to Louisiana. Rust walks out of his interview after the detectives accuse him.",
+          "airDate": "2014-02-16",
+          "still": "https://image.tmdb.org/t/p/original/9DaqmdXaS6Yd5ubBx9WFrSSTaQG.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/9DaqmdXaS6Yd5ubBx9WFrSSTaQG.jpg",
+            "https://image.tmdb.org/t/p/original/5rsNeL1oUdEJoXW3Mlz3Z8gYoEy.jpg",
+            "https://image.tmdb.org/t/p/original/6YtH2KI1tSFkdOBdEBZPEGOylJF.jpg",
+            "https://image.tmdb.org/t/p/original/8nWKR5NiRKfFE1vBgvPcl4G6Trj.jpg",
+            "https://image.tmdb.org/t/p/original/6pxDyamt2I9xp3k6mqIihYS5W6A.jpg",
+            "https://image.tmdb.org/t/p/original/2oJGslKLeJaut2UpDJlnlI9oMLO.jpg",
+            "https://image.tmdb.org/t/p/original/9eMWM8d39nXdxD2sOWqD2m5WtuR.jpg",
+            "https://image.tmdb.org/t/p/original/8mpIlfMJllnxjFyySiSr3JzjC7n.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Haunted Houses",
+          "overview": "Maggie reveals Cohle's activities in 2002, when his relationship with Hart fractured and he quit the force.",
+          "plot": "In 2002, Rust links missing persons to Tuttle-funded schools. A former pastor in Tuttle's ministries claims Tuttle covered up child molestation. Ledoux's surviving victim, now in residential care with regressive catatonia, tells Rust about a third attacker—a giant man with scars—and begins screaming when Rust asks her about the man's face. Tuttle complains to the police department following a tense meeting with Rust, who has been warned to stop investigating and is suspended. While shopping at a local T-Mobile branch, Marty is recognized by store employee Beth, who happens to be the former underage prostitute who had kept Dora Lange's diary in The Ranch back in 1995. They start an affair soon after. After Maggie discovers the new affair, she tempts a drunk Rust and has sex with him. After she tells Marty about it, he and Rust fight in the police station parking lot. Rust quits the police force immediately after the fight. In 2012, Papania and Gilbough interview Maggie who, now married to a wealthier man, deflects their questions. Marty walks out of his interview in response to Papania and Gilbough's accusations against Rust. Separated by rage and jealousy in 2002, Rust seeks out Marty and they agree to reunite and talk.",
+          "airDate": "2014-02-23",
+          "still": "https://image.tmdb.org/t/p/original/d37mf5zqg4qmjhW12YfJ2bKkJPs.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/d37mf5zqg4qmjhW12YfJ2bKkJPs.jpg",
+            "https://image.tmdb.org/t/p/original/95FGOYyU21pV0u4XYXUFA85aum8.jpg",
+            "https://image.tmdb.org/t/p/original/gduS9Lln0DzGfJm68rUyuN6Abb6.jpg",
+            "https://image.tmdb.org/t/p/original/yb45ZWU07quKaOxQQ5jCioZOik2.jpg",
+            "https://image.tmdb.org/t/p/original/qiRGhQrahc9LQuGvh05VJEnBE9L.jpg",
+            "https://image.tmdb.org/t/p/original/wxcHzsJ92630YUeTBrNr0xEqcbx.jpg",
+            "https://image.tmdb.org/t/p/original/w8QEUo4xqTu7MNUFpbCXVeLwNm8.jpg",
+            "https://image.tmdb.org/t/p/original/pgOs5ouoHWTzFPxjazpyzdblq1v.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "After You've Gone",
+          "overview": "Hart and Cohle call a truce to investigate a series of disappearances that may be related to the Dora Lange murder and the Tuttle family.",
+          "plot": "In 2012, Rust presents Marty with evidence of a cult (bearing similarities to Courir de Mardi Gras) he believes is responsible for the disappearance of dozens of women and children along the coast in Louisiana. Among the evidence is a videotape, which Rust stole from a safe in Rev. Tuttle's home, of men in costumes and masks ritualistically raping and murdering Marie Fontenot (the missing-child case briefly investigated in 1995). Rust denies killing Tuttle, speculating that others did it to prevent Tuttle from being blackmailed over the tape. Marty, shaken from watching the videotape, agrees to join the investigation. They learn that Tuttle had an illegitimate half-brother with the surname Childress, whose son had scars on his face. They also learn that their former colleague Steve Geraci was ordered by his boss Ted Childress—then sheriff of Vermilion Parish—to cut short his investigation of Fontenot's disappearance. Marty and Rust accost Geraci to coerce the details from him, threatening him if he should try to go to the authorities or have them arrested. Gilbough and Papania ask the same groundsman Rust encountered at Light of the Way Academy in 1995 for directions to the burnt-out church. They drive off without noticing the lower part of his face is heavily scarred.",
+          "airDate": "2014-03-02",
+          "still": "https://image.tmdb.org/t/p/original/fBZavNX8J85wloziKtdmbB0u1RJ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/fBZavNX8J85wloziKtdmbB0u1RJ.jpg",
+            "https://image.tmdb.org/t/p/original/cj7WwlFJ9oo4D4iK91s7ZygZixS.jpg",
+            "https://image.tmdb.org/t/p/original/zO2XgM2UtISHRz0mxr5zYRkk5yQ.jpg",
+            "https://image.tmdb.org/t/p/original/nHMfXeVNto5uV7T3kXUHA1ikRwl.jpg",
+            "https://image.tmdb.org/t/p/original/h04asaABP3UzZXJMAiWkSCNzLOB.jpg",
+            "https://image.tmdb.org/t/p/original/sGkYmmKlHP3pbqGXvKe9SRwyKQi.jpg",
+            "https://image.tmdb.org/t/p/original/tzvEZP3IK3dFxRs5IDh6zeCkUXZ.jpg",
+            "https://image.tmdb.org/t/p/original/utCSTpY7EYGYOOFpX1SqYNAfXyt.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Form and Void",
+          "overview": "An overlooked detail provides Hart and Cohle with an important new lead in their 17-year-old case.",
+          "plot": "In 2012, the \"man with the scars\" is shown living in a large house in squalor with a female relative with whom he has an incestuous relationship. Later, he goes to work painting a school and watches children on the playground. Marty and Rust extract details from Geraci by showing him the Fontenot tape. Marty thinks the \"green-eared spaghetti monster\" may have been the scarred man covered in green paint after painting a house in Dora Lange's neighborhood in 1995. They trace the paint job to a small business owned by William Childress that employed a man with facial scars. They visit William Childress's home and Rust pursues the scarred man, Errol Childress, through a labyrinth of trees and tunnels that Errol identifies as Carcosa, meaning \"The Yellow King\" is not an actual deity, but a role Errol has assigned to himself. Rust hallucinates a cosmic vortex, but is attacked by Errol, who reveals himself to be the serial killer, and \"The Yellow King\". Errol stabs Rust, but Marty arrives and saves him. Rust and Marty fight Errol, with the latter overpowering them both. However, Errol's sadism causes him to focus on slowly prolonging Marty's death instead of killing him straight away, allowing Rust to reload his gun and shoot Errol in the head, saving Marty and killing \"The Yellow King\". While Marty and Rust recover in the hospital, Papania and Gilbough connect Errol to dozens of missing-person cases and murders, including Dora Lange's, finding several bodies buried in the yard. The Tuttles escape prosecution, but are publicly disgraced. Marty breaks down in tears when Maggie and their daughters visit him. The two detectives reflect on the universal battle between light and dark. Following his near-death experience, Rust expresses a new optimism about the fate of the universe in the final line of the season.",
+          "airDate": "2014-03-09",
+          "still": "https://image.tmdb.org/t/p/original/larzfSafxyBkcAZfNd0MSaGLRHK.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/larzfSafxyBkcAZfNd0MSaGLRHK.jpg",
+            "https://image.tmdb.org/t/p/original/zsSbVtxlmnzQ2agUS6VpLVVHHbf.jpg",
+            "https://image.tmdb.org/t/p/original/2otZo6tmYiwe3pI0MiWPJTxTArf.jpg",
+            "https://image.tmdb.org/t/p/original/nC76XldOcU6CJR0tOWvPfjaGfA4.jpg",
+            "https://image.tmdb.org/t/p/original/yd1R7LXFjoBMFgIvy1v6Nq174tv.jpg",
+            "https://image.tmdb.org/t/p/original/5kdk6re9DJdJi6ygKmHUBNwyGud.jpg",
+            "https://image.tmdb.org/t/p/original/sGP9yCVFjYfChpzWcR059u1lnpv.jpg",
+            "https://image.tmdb.org/t/p/original/n1FWUF1WcYW9l00hVZlLyVUzQ4G.jpg",
+            "https://image.tmdb.org/t/p/original/6E6toaYtQt24tm5vIejzq0vcwSL.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 2,
+      "name": "Season 2",
+      "airDate": "2015-06-21",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "The Western Book of the Dead",
+          "overview": "The disappearance of a city manager disrupts a lucrative land scheme and ignites an investigation involving three police officers and a career criminal who is moving into legitimate business.",
+          "plot": "In the fictional industrial town of Vinci in California, city manager Ben Caspere disappears before he can present plans for his development of a high-speed rail line, leaving his criminal partner Frank Semyon to pitch to Russian businessman Osip Agronov, who refuses to go through with anything until Caspere is present. Corrupt and volatile detective Ray Velcoro is tasked by Semyon with finding Caspere, finding evidence in his house of a kidnapping. Highway Patrol officer and veteran Paul Woodrugh is falsely accused of sexual misconduct by an actress he pulled over, leading him to be put on paid leave temporarily. After his girlfriend Emily inquires about the scars on his body, he abruptly leaves and speeds dangerously down a dark highway until he comes across Caspere's corpse on a bench, his eyes burned out with hydrochloric acid.",
+          "airDate": "2015-06-21",
+          "still": "https://image.tmdb.org/t/p/original/hVvWMZgSpos5nY0xLBtfLGGxsN6.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/hVvWMZgSpos5nY0xLBtfLGGxsN6.jpg",
+            "https://image.tmdb.org/t/p/original/wSna4JbdO1U4Gy52FIeJ3USRefX.jpg",
+            "https://image.tmdb.org/t/p/original/ck03m25eWq0FMw3FVms2glwRWLL.jpg",
+            "https://image.tmdb.org/t/p/original/bswUKbwieSi6EvUQpwa6O21IFON.jpg",
+            "https://image.tmdb.org/t/p/original/rF505XJ0ZcUOkweDCvffAT3w2z9.jpg",
+            "https://image.tmdb.org/t/p/original/yQNkpxckEIQhLg9nhCoxjiXAS9Z.jpg",
+            "https://image.tmdb.org/t/p/original/b0PJ4uLlQroI9OTd3yvXqE4b0Z5.jpg",
+            "https://image.tmdb.org/t/p/original/8EBSJgjpB3kXmHTeuUXbhrpoR25.jpg",
+            "https://image.tmdb.org/t/p/original/1GCcc6t97eSRO7OD6A0fg8PRjb6.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Night Finds You",
+          "overview": "Ben Caspar's autopsy reveals the gruesome details of his demise, and Ray and Ani wonder if it has anything to do with his fondness for prostitutes. Meanwhile, Frank looks into what might have happened to his missing fortune.",
+          "plot": "Velcoro, detective Teague Dixon, and Ventura County detective Antigone \"Ani\" Bezzerides are tasked with finding Caspere's killer, while Woodrugh joins them in hopes that helping will speed his misconduct investigation along. Velcoro's ex-wife Gena Brune learns that he attacked his son Chad's bully's father, and demands full custody. She threatens to get a paternity test, Chad being a possible product of rape and Velcoro being fearful of finding out who the real father is. Emily leaves Woodrugh after he continually refuses to discuss his past. Semyon learns that the money Caspere used in the rail deal was embezzled, losing Semyon most of his money. He learns from a prostitute that Caspere had a house where he would take women to have sex, and he passes this information to Velcoro. Velcoro finds Caspere's blood in the house and a camera recording the living room, but is shot in the chest with rubber bullets by a crow-masked assailant before he can investigate further.",
+          "airDate": "2015-06-28",
+          "still": "https://image.tmdb.org/t/p/original/emZ2bLfqyJHWMqx97BitVPIQ2SL.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/emZ2bLfqyJHWMqx97BitVPIQ2SL.jpg",
+            "https://image.tmdb.org/t/p/original/dQHk6tIM3HBVfho6KkrqWfqMpYo.jpg",
+            "https://image.tmdb.org/t/p/original/eejP9Sa6zfxxkwhDGO77J1VSR1F.jpg",
+            "https://image.tmdb.org/t/p/original/w5a4R6MM2WmFbKvtn1pI0i2EPbf.jpg",
+            "https://image.tmdb.org/t/p/original/cKPOOL2JAS1gbrwyXWErIfmKu1B.jpg",
+            "https://image.tmdb.org/t/p/original/kAx6vzSmgqF2CmlRp4BMBdWFM49.jpg",
+            "https://image.tmdb.org/t/p/original/awcguTsmJ6odf85sHRiZV3iNARs.jpg",
+            "https://image.tmdb.org/t/p/original/yOijRJeD8WerqgRqgrj8O5TWRkn.jpg",
+            "https://image.tmdb.org/t/p/original/7yFu6rC9iFqE7Cnf8zotYMa2lP9.jpg",
+            "https://image.tmdb.org/t/p/original/fAiU92FsHZBAlph7D5Bv4vb5VXp.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Maybe Tomorrow",
+          "overview": "The repercussions from Caspar's murder are felt by Frank and the Vinci Mayor's office. Ray and Ani are involved in a close call with the killer.",
+          "plot": "Velcoro regains consciousness to find the camera's drive stolen. Bezzerides and Woodrugh visit the mansion of Vinci mayor Austin Chessani, hoping to find a link between him and Caspere, and meet his delinquent son Tony. A car that may have been carrying Caspere on the night of his murder, stolen from a film set, is picked up on traffic cameras. As Bezzerides and Velcoro question an employee of the production company who recently quit, the nearby car is set on fire by another masked individual. Woodrugh crosses paths with Miguel Glib, an old friend of his from his former job at a private security firm, but he violently rejects him when he references a sexual encounter they almost had. Stan, one of Semyon's men, is found dead, his eyes burned out like Caspere's.",
+          "airDate": "2015-07-05",
+          "still": "https://image.tmdb.org/t/p/original/tswWVWWhMiPTtmF3uUmvvPy4UXR.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/tswWVWWhMiPTtmF3uUmvvPy4UXR.jpg",
+            "https://image.tmdb.org/t/p/original/utuGZ9Xgl706Ak2Fkq2yCu4O5ur.jpg",
+            "https://image.tmdb.org/t/p/original/cDbrc3RCqCuOudQCVAiQaW7Oxy1.jpg",
+            "https://image.tmdb.org/t/p/original/hAWi1GEV10UXVTwKUG68983sAME.jpg",
+            "https://image.tmdb.org/t/p/original/e9ZxMldIZyIOuTTUDj1NQKX8lJY.jpg",
+            "https://image.tmdb.org/t/p/original/oxCwA7bhs01JUYw1sAKQf8nyefr.jpg",
+            "https://image.tmdb.org/t/p/original/xvj3Q1O2jCjvkYPwsuPMvcs5tRB.jpg",
+            "https://image.tmdb.org/t/p/original/xLkHD19kdXt6KbEd3fZkjA1np5G.jpg",
+            "https://image.tmdb.org/t/p/original/yHTXKuMrha3d7cpAF4UiwmhxPkn.jpg",
+            "https://image.tmdb.org/t/p/original/xuFIQwKpuPLNpcznBv7fNXFtEJj.jpg",
+            "https://image.tmdb.org/t/p/original/pcElwu3xz74jgafv8Hrm5sMVd6t.jpg",
+            "https://image.tmdb.org/t/p/original/xn4ceLpxgobhvvAgEWWGCZeQ46S.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Down Will Come",
+          "overview": "The detail works a pawn-shop lead to close in on a suspect in the Caspere case. Frank revisits his past to pay for his present. Velcoro, Bezzerides and Woodrugh struggle to keep the case straight in the face of corruption.",
+          "plot": "Semyon begins to cut deals with drug suppliers to start making back the money Caspere stole. Velcoro gives Chad his grandfather's police badge. Bezzerides is placed on temporary leave after being accused of sexual harassment by a male coworker. Woodrugh awakens in bed with Miguel, leaving quickly. He later meets with Emily, who reveals she is pregnant, and he impulsively proposes to her. Having investigated nearby pawnshops, he learns that prostitute Irina Rulfo stole items from Caspere's house and tried to sell them. The police conduct a raid on her pimp Ledo Amarilla's meth lab, which escalates into a lengthy shootout that kills dozens of officers, criminals, and bystanders, Dixon amongst them. Amarilla is killed after he takes and kills a hostage, leaving Velcoro, Bezzerides, and Woodrugh as the only survivors.",
+          "airDate": "2015-07-12",
+          "still": "https://image.tmdb.org/t/p/original/1apWvj8wnkOJ2X8yD2v5xKpk0Sb.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/1apWvj8wnkOJ2X8yD2v5xKpk0Sb.jpg",
+            "https://image.tmdb.org/t/p/original/nHwnnfneFgxNtBwFzXiu1668ZAn.jpg",
+            "https://image.tmdb.org/t/p/original/xpCCioq5r7wGm5yflVXXgASGlLv.jpg",
+            "https://image.tmdb.org/t/p/original/9jc2G3LOCbdpDYledyda8vY5gMN.jpg",
+            "https://image.tmdb.org/t/p/original/40croBi5GMTyJPDnTDLh8ENCh0r.jpg",
+            "https://image.tmdb.org/t/p/original/5FoRLnJChsZ9jlGEx3cVR4B9pdy.jpg",
+            "https://image.tmdb.org/t/p/original/y0NJW25hQkEkioQPtwWMFq1aEgX.jpg",
+            "https://image.tmdb.org/t/p/original/yJyyOs0BJmP5YRCesCgLqDbVLrK.jpg",
+            "https://image.tmdb.org/t/p/original/tTeP6334GArhDdTC3BEWEN81WLt.jpg",
+            "https://image.tmdb.org/t/p/original/tswWVWWhMiPTtmF3uUmvvPy4UXR.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Other Lives",
+          "overview": "Ray and Frank contemplate new life choices. Ani and Paul follow a lead up the coast. ",
+          "plot": "Two months later, Amarilla is blamed for Caspere's murder, Velcoro works full-time for Semyon, Bezzerides is stuck in the evidence room, and Woodrugh settles his investigation but is unwillingly promoted to insurance fraud detective. After learning that attorney general Richard Geldof is planning to run for governor, his colleague Katherine Davis assembles the three and requests they look into Rulfo, suspecting that Caspere's true killer was covered up. Semyon orders Velcoro to tail Blake Churchman, one of his men that he is suspicious of, and Velcoro observes him picking up girls from Caspere's psychiatrist, Irving Pitlor, and delivering them to Agronov and Tony. He tortures Pitlor, who admits that Tony and Caspere bought the women for their \"parties.\" Woodrugh investigates diamonds found in Caspere's safety deposit box, learning that Dixon had also been looking for them. While searching for missing woman Vera Machiado, Bezzerides investigates the last place she called from and finds a shed nearby with blood on the floor. Velcoro learns that Semyon lied to him about the identity of Brune's rapist, the murder of the man he thought was responsible being the event that corrupted him. He goes to Semyon's house and demands to talk to him.",
+          "airDate": "2015-07-19",
+          "still": "https://image.tmdb.org/t/p/original/vrny7HHQiifh8CDIBUdzfEi3FCk.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/vrny7HHQiifh8CDIBUdzfEi3FCk.jpg",
+            "https://image.tmdb.org/t/p/original/qNq39lt81ETw0K0eU2dcGWgv44t.jpg",
+            "https://image.tmdb.org/t/p/original/yhYprx0lWLyrkvCLL6tAJI7GR6f.jpg",
+            "https://image.tmdb.org/t/p/original/nsN59Nt3nwI7Uwc9jJu7vjxXEXa.jpg",
+            "https://image.tmdb.org/t/p/original/sq6cDVRLCwmNhJIyr2FP6bWmfSO.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Church in Ruins",
+          "overview": "Desperate to locate a missing woman with intel about Caspere, Frank meets with Mexican drug dealers; Ani infiltrates an exclusive inner circle, with Ray and Paul keeping close tabs. ",
+          "plot": "Semyon convinces Velcoro that he got bad information and never meant to mislead him. Velcoro visits the real rapist in prison and promises to kill him if he does not get a life sentence. After an awkward, supervised visit with Chad, he breaks his two months of sobriety and calls Brune, promising her full custody so long as she never tests for Chad's true parentage. Semyon deals with the Mexican cartel for Rulfo's location and learns that she was hired by a police officer to steal from Caspere, but the cartel kills her for working with the police before she can give up a name. Woodrugh learns that the diamonds were stolen during the 1992 Los Angeles riots from a couple, the Ostermans, whose children were left orphaned by the robbers. Bezzerides poses as her ex-prostitute sister to infiltrate one of Tony's parties, where she sees both Geldof and Vinci chief of police William Holloway. She is forced to take powerful MDMA and hallucinates a man leading her into his car. She encounters Machiado and kills a guard to help her escape. Woodrugh steals documents from Agronov's office that prove he is colluding with Tony after observing him meeting with businessman Jacob McCandless, where he overhears them confirming they set up Semyon to lose his shares. They all escape with Velcoro.",
+          "airDate": "2015-07-26",
+          "still": "https://image.tmdb.org/t/p/original/eP2I0I4Dq67mr1xEQY1hgshA5TM.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/eP2I0I4Dq67mr1xEQY1hgshA5TM.jpg",
+            "https://image.tmdb.org/t/p/original/e2GoBpEMxsbKVct6SaCpvo4En3T.jpg",
+            "https://image.tmdb.org/t/p/original/eVfNH9xQlJtHy0XdUHv5EMJmqDQ.jpg",
+            "https://image.tmdb.org/t/p/original/uxqRw7XU8cVDUhuO3AFntfq8g5W.jpg",
+            "https://image.tmdb.org/t/p/original/eAMbMvBu1v0kwtafYpatpxB6QKK.jpg",
+            "https://image.tmdb.org/t/p/original/fI3iMZoVUWTfi24I1IEuNqoE6Eh.jpg",
+            "https://image.tmdb.org/t/p/original/xbHGxlmKW3L4RyT9BZJETjviNBn.jpg",
+            "https://image.tmdb.org/t/p/original/h6ot8SQUyQriDKeCy2Z5KCul7Jq.jpg",
+            "https://image.tmdb.org/t/p/original/qWTeqDotb28gG3ng59sbk7cfNUo.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Black Maps and Motel Rooms",
+          "overview": "Ray, Ani and Paul take precautionary measures to elude detection and untangle a dark mystery; Frank deals with the fallout of his betrayal.",
+          "plot": "Velcoro swaps information with Semyon and goes to talk to Davis, only to find her dead in her car. Semyon tortures Churchman until he admits that Agronov plans to replace Semyon and that he was working with him, he killed Stan when he was seen talking to Agronov, Agronov is planning a deal with McCandless the next day, and he intentionally gave Semyon bad information regarding Brune's rapist. Semyon kills him, tells his wife Jordan to go underground, and burns down his casino after Agronov announces his plans to take it over. Woodrugh researches the 1992 robbery and discovers that Holloway, Dixon, Caspere, and Lieutenant Kevin Burris were all involved, and that the shootout with Amarilla was orchestrated to get Dixon killed. Bezzerides learns from Machiado that Caspere's favorite prostitute planned to blackmail him over the robbery, and so she was killed in the shed. Velcoro realizes that the Osterman daughter, Laura, was Caspere's secretary under an assumed name. He and Bezzerides confess their mutual attraction and have sex. Woodrugh is blackmailed with pictures of him with Miguel and goes to the ordered meeting spot, learning that Miguel was still working for the security firm, which is now working exclusively for McCandless. Holloway, Woodrugh's blackmailer, demands the documents, but he manages to kill all of the security guards and escape, only to be killed by Burris as he exits the building.",
+          "airDate": "2015-08-02",
+          "still": "https://image.tmdb.org/t/p/original/pRNEDISAPtetUZn6jSWUfuJYTRQ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/pRNEDISAPtetUZn6jSWUfuJYTRQ.jpg",
+            "https://image.tmdb.org/t/p/original/6KoV6cTUyDRm12k2tyQv5m7vP43.jpg",
+            "https://image.tmdb.org/t/p/original/a50alacRPu7p8hcjrGk1kE6J3XK.jpg",
+            "https://image.tmdb.org/t/p/original/wgtdE0PkEMIUTzWicfsJ2XpkeJt.jpg",
+            "https://image.tmdb.org/t/p/original/wy5Ap2A322LBNJrSBnIKhgkv9Rh.jpg",
+            "https://image.tmdb.org/t/p/original/3fDJLy9Lh4wuwBqf1BvfAzmkM2j.jpg",
+            "https://image.tmdb.org/t/p/original/ay56fdHOm5QmUiPVOHQof86Ajvj.jpg",
+            "https://image.tmdb.org/t/p/original/t0OU8pbmzEK3Yg3V5KER0klv5M9.jpg",
+            "https://image.tmdb.org/t/p/original/feI8vmWoQkNS81WKV4EtVvmmxel.jpg",
+            "https://image.tmdb.org/t/p/original/vsY2gZW3tqJqXbC5xXiQ9z2fki8.jpg",
+            "https://image.tmdb.org/t/p/original/2053rfhyXi2TCzQpRekeyaktazE.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Omega Station",
+          "overview": "Frank, Ray and Ani weigh their options as Caspere's killer and the scope of corruption is revealed.",
+          "plot": "Semyon finds Chessani dead in his home. Velcoro and Bezzerides recount their respective formative traumas, his being killing who he thought was Brune's rapist and hers being kidnapped as a child by the man she hallucinated. They realize that Laura's brother Lenny worked on the set the car that transported Caspere was stolen from, and bust into Laura's house to find her restrained, along with Lenny's crow mask. She explains that Lenny accidentally killed Caspere while torturing him for information, and that he has set a meeting with Holloway. Velcoro intercepts Lenny and convinces him to record Holloway confessing to his corruption, but he loses his cool when Holloway reveals that Laura was Caspere's daughter, getting them both killed by Holloway's backup. To get enough money so they can all escape to Venezuela, Velcoro and Semyon kill everyone at Agronov and McCandless' meeting and take their money. As Bezzerides finds Pitlor dead, Velcoro observes Chad at school, carrying the badge. He returns to his car to find it fitted with a transponder, and chooses to drive into the woods rather than risk Bezzerides' life. He attempts to send a final message to Chad before he is killed by Burris, but his phone's poor signal prevents it from going through. The cartel takes Semyon out to the desert and stab him for violating their deal by destroying his casino. He attempts to walk back to civilization but bleeds to death. Some time later, Velcoro is blamed for Davis and Woodrugh's murders, Brune gets a paternity test that confirms Velcoro as Chad's father, Tony becomes mayor, Woodrugh has a highway named in his honor, and Bezzerides lives in Venezuela with her and Velcoro's son, as well as Jordan. They meet with a journalist Velcoro previously attacked for Semyon and give him files that expose the corruption in Vinci.",
+          "airDate": "2015-08-09",
+          "still": "https://image.tmdb.org/t/p/original/vTfGacGuZJSyocSlfYeMa1uFHtv.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/vTfGacGuZJSyocSlfYeMa1uFHtv.jpg",
+            "https://image.tmdb.org/t/p/original/rZu7EsncmBgXpm9CblnodDB34A6.jpg",
+            "https://image.tmdb.org/t/p/original/jrF8TX0ysB3UaGM2AOz76sUnEl6.jpg",
+            "https://image.tmdb.org/t/p/original/75aMGfYntuJDpnqkyoN4VT9qodc.jpg",
+            "https://image.tmdb.org/t/p/original/gVrntShf2rrD3xwNE22BqrNob4u.jpg",
+            "https://image.tmdb.org/t/p/original/u51Sp3CgWBr9ju4MNPYoUmLOXPh.jpg",
+            "https://image.tmdb.org/t/p/original/a85b0CpJPcv3E8UTlMELfy3EAuJ.jpg",
+            "https://image.tmdb.org/t/p/original/reP2ilv2ntYLXCE0t2b8cYpCdyq.jpg",
+            "https://image.tmdb.org/t/p/original/fTpWK4THHgcTLxYmVkUd5p7bAU2.jpg",
+            "https://image.tmdb.org/t/p/original/nsG3yNlwd79q5KhXK6sxW2JaXke.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 3,
+      "name": "Season 3",
+      "airDate": "2019-01-13",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "The Great War and Modern Memory",
+          "overview": "The disappearance of a young Arkansas boy and his sister in 1980 triggers vivid memories and enduring questions for retired detective Wayne Hays, who worked the case 35 years before with partner Roland West. What started as a routine case becomes a long journey to dissect and make sense of the crime.",
+          "plot": "The narrative alternates between three time periods: 1980, 1990, and 2015. In 1980, Will and Julie Purcell tell their father they are going to a playground to meet a friend, but do not return. Arkansas State Police Detective Wayne Hays and his partner Roland West organize a search. Hays is a Vietnam veteran who worked as a tracker. The Purcells' parents, Tom and Lucy, do not have a happy marriage. Hays and West search their house and find Playboy magazines under Will's mattress, and a hole in Will's closet looking into Julie's room. They learn that Lucy's cousin had previously stayed in Will's room while Will slept on the couch. Hays meets Will's English teacher, Amelia Reardon. Using his tracking skills, he finds Will's body in a cave, with his fingers interlinked as if in prayer. In 1990, the unsolved case is reopened. Hays is informed that Julie Purcell is still alive; her fingerprints were found in a pharmacy after a burglary. In 2015, Amelia is dead and Hays is being interviewed for a true crime television program.",
+          "airDate": "2019-01-13",
+          "still": "https://image.tmdb.org/t/p/original/69kaprzlFWYW3Mucs3iVVgkWVV9.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/69kaprzlFWYW3Mucs3iVVgkWVV9.jpg",
+            "https://image.tmdb.org/t/p/original/vHNTSEQuBsdEbD64lHFMMplYWA5.jpg",
+            "https://image.tmdb.org/t/p/original/pJSjYUN0om8ch5dBj9G0rZ1dGiu.jpg",
+            "https://image.tmdb.org/t/p/original/p4pFGpZzpt73Y3zl2zDQCoyIZQQ.jpg",
+            "https://image.tmdb.org/t/p/original/eNJd3bgrIZMWwCIZROR9NUC0kho.jpg",
+            "https://image.tmdb.org/t/p/original/bgonU4ysrmoC4liqX6tAeO6rsDf.jpg",
+            "https://image.tmdb.org/t/p/original/6TuZ7nDOP6roFuWm4uPc3Bc6JVq.jpg",
+            "https://image.tmdb.org/t/p/original/wu3jRoDgCVWLTEHQlN5QuasOh0G.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Kiss Tomorrow Goodbye",
+          "overview": "Hays looks back at the aftermath of the 1980 Purcell case in West Finger, Arkansas, including possible evidence left behind at the Devil's Den. As attention focuses on two conspicuous suspects--Brett Woodard, a solitary vet and trash collector, and Ted LaGrange, an ex-con with a penchant for children--the parents of the missing kids, Tom and Lucy Purcell, receive a cryptic note.",
+          "plot": "In 1980, Hays and West interview native American Brett Woodard, a local trash salvager and former military veteran, about what he saw on the day of the disappearance as well as what they found when they went into his house, questioning him about his family and background. Tom's parents suggest that Tom might not have been Julie's father. Hays and West try to find the source of some chaff dolls found near Will Purcell's body. A student reports that Julie Purcell was given one while trick-or-treating on Halloween. The Purcells receive an anonymous note telling them not to look for Julie. In 1990, Hays and Amelia are married. Amelia has written a book about the Purcell case.",
+          "airDate": "2019-01-13",
+          "still": "https://image.tmdb.org/t/p/original/y288eNTTYo21xRxwMe5hjYD0Za5.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/y288eNTTYo21xRxwMe5hjYD0Za5.jpg",
+            "https://image.tmdb.org/t/p/original/ii8xB1KyiYOKsTPU4xmwz9v8BUv.jpg",
+            "https://image.tmdb.org/t/p/original/hDfyOhLTvgPHaJFe2PQqu4adfJM.jpg",
+            "https://image.tmdb.org/t/p/original/cyE86pfKRVlAlHZgDscbmaBOr89.jpg",
+            "https://image.tmdb.org/t/p/original/q1yDn3BuHZABH2QuqFMzlxXJnEU.jpg",
+            "https://image.tmdb.org/t/p/original/fZ9AngJa7TvYkyV0EWHCvriUb32.jpg",
+            "https://image.tmdb.org/t/p/original/wOg0tT6BjUV4zofUJPgmzxrlU8n.jpg",
+            "https://image.tmdb.org/t/p/original/awUmUtkGnHyGTC0GIPBKNcjKacQ.jpg",
+            "https://image.tmdb.org/t/p/original/gprThWZTtn3w63k9L9WOnQeEkzD.jpg",
+            "https://image.tmdb.org/t/p/original/17MxWnOXPLcMffPQSOMThWTU7Am.jpg",
+            "https://image.tmdb.org/t/p/original/g3IKr4w95C8EIVhzuiYXbjiUixT.jpg",
+            "https://image.tmdb.org/t/p/original/4nlz3DWLwsJ7s8ckFP0O7AgEzpS.jpg",
+            "https://image.tmdb.org/t/p/original/xx5J9rQOkaRjCaaUZgSRcFZeqvG.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "The Big Never",
+          "overview": "Hays recalls his early romance with Amelia, as well as cracks in their relationship that surfaced after they married and had children. Ten years after the Purcell crimes, new evidence emerges, giving him a second chance to vindicate himself and the investigation.",
+          "plot": "In 1980, Hays wonders why the Purcell children lied about intending to meet a friend, Ronnie Boyle. They pretended they saw him regularly. Hays and West interview a farmer, who claims he has already spoken to the police. He reports seeing the Purcell children regularly going into the woods. He reports seeing a brown car with a black man and a white woman. Hays and West find the children had a Hoyt Foods bag. Hoyt Foods is a chicken processing plant where Lucy worked. It funds a children's charity which is offering a reward for information about the children's disappearance. A group of locals chase down Woodard in their vehicles and is beaten because they believe he is responsible for the children's disappearance. At the Purcell house, Hays finds a photo album containing a photograph of Will taken at his first communion, with his fingers interlaced and his eyes closed. In 1990, Amelia talks with law enforcement officers to discover more details about Julie Purcell's fingerprints at the pharmacy. West asks Hays to join his reopened investigation into the case. In 2015, Hays has dementia, causing memory loss and hallucinations. He continues being interviewed for the television program. The interviewer, Elisa, asks why the brown sedan was never mentioned in the police report.",
+          "airDate": "2019-01-20",
+          "still": "https://image.tmdb.org/t/p/original/y6XAeDjuvITdzxBJfxUOf6vPr2P.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/y6XAeDjuvITdzxBJfxUOf6vPr2P.jpg",
+            "https://image.tmdb.org/t/p/original/sOtOJPrY04l8mm2Qk5DHu3bgMCV.jpg",
+            "https://image.tmdb.org/t/p/original/kHTmz987xqzbDeEhewbRqS8F51m.jpg",
+            "https://image.tmdb.org/t/p/original/8pwewtptRX228pe8onMEjPIrINk.jpg",
+            "https://image.tmdb.org/t/p/original/fJXCQGfXy2OZy0GUzjIvEeIvfvU.jpg",
+            "https://image.tmdb.org/t/p/original/cmq7vBNotscOIW5aBQwCP6GjriQ.jpg",
+            "https://image.tmdb.org/t/p/original/f6KcSQBuh4nFhpUDNYW9pyWckQ5.jpg",
+            "https://image.tmdb.org/t/p/original/yWpRziTDtr4edlC5pped6laglyR.jpg",
+            "https://image.tmdb.org/t/p/original/1Fv2kv1GkOohod6S4gAGhLeBSYm.jpg",
+            "https://image.tmdb.org/t/p/original/v8vODhaTAVTh5wcizsPjOzYDtac.jpg",
+            "https://image.tmdb.org/t/p/original/xS3NAaq7FbtsHZsfnPRsvJdHU6E.jpg",
+            "https://image.tmdb.org/t/p/original/83NCaejtBN46aL14flyKWgYr4GY.jpg",
+            "https://image.tmdb.org/t/p/original/hA2SPPgQFtSUrRIpF086ixxmzK1.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "The Hour and the Day",
+          "overview": "Hays and West see a possible connection between the local church and the Purcell crimes. As the detectives search for one suspect and round up another for interrogation, Woodard is targeted by a vigilante group.",
+          "plot": "In 1980, Hays and West interview the Catholic priest about Will Purcell's communion photograph. The priest takes photos of all first communicants, but Will is the only one who has his eyes closed. The priest tells Hays and West that the Purcell children were excited about seeing an aunt; they respond that the children did not have an aunt. The priest reports that the chaff dolls are made by a female parishioner. She in turn tells them that a black man with a milky eye bought several at a recent fair, saying they were for his nieces and nephews. They find a man matching this description, who is uncooperative. He says he attends the Presbyterian church, not the Catholic one. The priest is unusually keen to hear Hays' confession. The fingerprints of Freddy Burns, a local teenager, are found on Will Purcell's bicycle. Hays and West interrogate him and threaten him with prison rape. Amelia visits Lucy Purcell to give her the children's school projects. Lucy cries \"I have done a terrible thing\", but becomes angry when Amelia says she can talk in confidence to Wayne Hays. Locals see Brett Woodard talking to children, and chase him to his house, where he sets tripwires and Claymore mines, and distributes rifles around his house. In 1990, Hays finds footage of Julie Purcell from the pharmacy CCTV. West reports that Lucy Purcell died of a drug overdose in 1988 in Las Vegas. In 2015, Elisa shows Hays a photograph of the skeleton of Dan O'Brien, Lucy Purcell's cousin, who went missing around 1987. Hays sees a car outside his house; is someone watching him, or is he hallucinating?",
+          "airDate": "2019-01-27",
+          "still": "https://image.tmdb.org/t/p/original/rqTEBDu8bOhq0mBlaD5abOUwuPy.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/rqTEBDu8bOhq0mBlaD5abOUwuPy.jpg",
+            "https://image.tmdb.org/t/p/original/mnmcJMx7oIPKiZcZwi0r7WNFlfA.jpg",
+            "https://image.tmdb.org/t/p/original/cTnMGSuneDBYg6vMpALouQJqcpT.jpg",
+            "https://image.tmdb.org/t/p/original/tSk8uLuSEdlYO23xRUfNmkkqUPZ.jpg",
+            "https://image.tmdb.org/t/p/original/qiSKomABaCVvgXFWxnzXxcTmnCt.jpg",
+            "https://image.tmdb.org/t/p/original/ooq0WPJm7ldUP5YT9vT2MPNcg24.jpg",
+            "https://image.tmdb.org/t/p/original/2yng8RAKg7v9Oe5P7qKq06wEtrD.jpg",
+            "https://image.tmdb.org/t/p/original/ip14jjc8wbehSsVFWJcKvTw594R.jpg",
+            "https://image.tmdb.org/t/p/original/vwuzKrYstv1F1hbsj4NdCJXtc1o.jpg",
+            "https://image.tmdb.org/t/p/original/AoEKNsy1jYqjoB0HgCAIKqbplYB.jpg",
+            "https://image.tmdb.org/t/p/original/didKl12bOWVYcB0D9AhsYdUEMkS.jpg",
+            "https://image.tmdb.org/t/p/original/s0gU6f6gqcuFabFy3Wam0Yvf6ZK.jpg",
+            "https://image.tmdb.org/t/p/original/1Buyx99v5m6XOGp3uYTYfrUptP0.jpg",
+            "https://image.tmdb.org/t/p/original/bThjhAtOHXcDopiNzi2lbtcpDko.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "If You Have Ghosts",
+          "overview": "Wayne finds himself in a no-win situation as new clues emerge in the Purcell case. Roland wrestles with how to keep evidence secure as lawyers demand a new investigation. Amelia finds her relationship with Wayne imperiled by her writing aspirations and his jealousy.",
+          "plot": "In 1980, the police arrive just as locals attack Brett Woodard's house. Claymore mines go off, killing some of the locals. Woodard shoots locals and policemen. Hays tells Woodard to drop his rifle, but Woodard commits suicide by cop. In 1990, Wayne Hays and Amelia's marriage is suffering because of her book about the Purcell case. After Woodard's death, the disappearance of Will and Julie Purcell was attributed to him. Will Purcell's bookbag was found under Woodard's porch. Hays realizes that it must have been planted there afterwards, because it was undamaged by the Claymore mine explosion. However, West's superiors wanted him to blame Woodard; West cannot show this information to them without them shutting down his task force. Tom Purcell makes a televised appeal for Julie Purcell to come forward. A woman indirectly claiming to be Julie Purcell calls the police hotline, saying that \"Julie Purcell\" is not her real name, and telling \"the man from TV, acting like my father\" to leave her alone. She asks \"Where's my brother?\" Hays and West visit Freddy Burns, who tells them that Will was looking for his sister on the night they went missing. Burns says Will wanted to know where \"they\" went; Julie was not alone. The fingerprints found on Will and Julie's toys have gone missing from the case file. Hays and West interview someone who recognized Julie Purcell from the CCTV footage. He says she called herself \"Mary July\", was confused about what year it was, and said she was a \"secret princess\" from \"the pink rooms\". In 2015, Elisa tells Hays that one of the officers who processed the Woodard house in 1980, Harris James, went missing in 1990. Hays finally reads Amelia's book. From Amelia's description of her visit to Lucy Purcell, he realizes that Lucy Purcell sent the note in 1980 (episode 2). He again sees a car outside, parked across the street. Hays visits West. West is angry at Hays but Hays does not remember why; he apologizes. West promises to help Hays \"stir some shit up\" before his condition grows to an extent he is no longer able to function to solve the case.",
+          "airDate": "2019-02-03",
+          "still": "https://image.tmdb.org/t/p/original/5vAXu7Fgly2O7KEXQ3AOXtaQ6VX.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/5vAXu7Fgly2O7KEXQ3AOXtaQ6VX.jpg",
+            "https://image.tmdb.org/t/p/original/eFtEt0gfhPzoFp5iezZhjx6H0Qx.jpg",
+            "https://image.tmdb.org/t/p/original/fTlCbFBfU0Mw2OedRwQOpBSdiVQ.jpg",
+            "https://image.tmdb.org/t/p/original/2ZsqZxs24KI15c1H6Iiui60K0Y0.jpg",
+            "https://image.tmdb.org/t/p/original/mGXTmqyAl7GoOTQPjMUfK5Ymz4d.jpg",
+            "https://image.tmdb.org/t/p/original/tUysUqDo80Y331Fwz62iqJ0nKwU.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Hunters in the Dark",
+          "overview": "Wayne and Roland revisit discrepancies in the Purcell case that were hidden or forgotten over the years. Among those being reevaluated is Tom Purcell, as well as Lucy Purcell’s cousin, Dan O’Brien. The glitter of Amelia’s book release is tarnished by a voice from the past.",
+          "plot": "In 1990, Hays and West search Tom Purcell's house, finding evidence indicating he is a closeted homosexual. They find that Harris James has been working at Hoyt Foods as head of security since May 1981, on a large salary. Hays revisits the abandoned Purcell house, and speculates that the \"peep hole\" was actually for passing notes. Dan O'Brien contacts Hays and West, asking for money in exchange for information. Tom Purcell overhears other detectives discussing O'Brien, and tracks him down. He beats O'Brien, who says he knows who has been giving Lucy money for the last 10 years, to keep her quiet. Amelia gives a public reading of her finished book in a bookshop. A black man with a milky eye asks her if she knows where Julie is. Later, Tom Purcell breaks into the Hoyt mansion, and is watched by someone on CCTV. He enters the basement, and behind a security door, finds a pink room. Harris James approaches him from behind.",
+          "airDate": "2019-02-10",
+          "still": "https://image.tmdb.org/t/p/original/uyte3ROivDzGLz6Cpvbf6h6mkeR.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/uyte3ROivDzGLz6Cpvbf6h6mkeR.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "The Final Country",
+          "overview": "Following up on new leads, Wayne and Roland track down a man who left the police force in the midst of the Purcell investigation. Meanwhile, Amelia visits Lucy Purcell’s best friend in hopes of gaining insights into the whereabouts of the mysterious one-eyed man.",
+          "plot": "In 1990, Tom Purcell's body is found, staged to look like a suicide. Dan O'Brien has gone missing when Hays and West try to ask him about it. The case is closed. Amelia interviews a friend of Lucy's, who has a photograph of Will and Julie trick-or-treating on Halloween, with the chaff doll. In the background are two adults dressed as ghosts; one black and one white. Amelia discovers that Dan O'Brien met a black man with one eye in a bar that Lucy used to work at. Hays examines Lucy's phone records and finds that she made several calls to Harris James before she died. James then flew to Las Vegas; the implication is that he murdered her. Hays persuades West to confront James, but he attacks them and they shoot him dead. They bury his body; West is angry at Hays. That night, Hays burns his clothes and refuses to tell his wife why. The next day, Edward Hoyt calls Hays, demanding to discuss \"the events of last night\". Hays gets into Hoyt's car, which drives away. In 2015, Elisa suggests that one or both of the Purcell parents sold their children to a child sex ring, who were able to evade capture through high-level government connections. Elisa says the black man with one eye was called \"Watts\", and suspects he was a \"procurer\" for the child sex ring. Hays and West interview a former housekeeper of the Hoyt family, who reveals that Mr. Hoyt had a daughter, \"Miss Isabel\", who lost her husband and daughter in a car wreck in 1977, and was then involved in one herself. She lived in the basement, and only a black man with one eye, \"Mr. June\", was allowed to attend to her. Hays confronts the car outside his house. It drives off, but not before West photographs its license plate.",
+          "airDate": "2019-02-17",
+          "still": "https://image.tmdb.org/t/p/original/7zybgu1RorDGIHktVV4GNyeoinm.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/7zybgu1RorDGIHktVV4GNyeoinm.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Now Am Found",
+          "overview": "Wayne struggles to hold on to his memories, and his grip on reality, as the truth behind the Purcell case is finally revealed.",
+          "plot": "In 1980, Amelia has written an article criticizing the case's conclusions. Wayne Hays' superiors try to force him to write a statement repudiating her article, but he refuses and is demoted. He tries to break up with Amelia, but then decides to marry her. In 1990, Edward Hoyt threatens Hays, saying he has footage of Harris James' car being followed by Hays' car leaving the Hoyt Foods plant, and a GPS tracker on Harris James. Amelia and Hays argue and he resigns from the Arkansas State Police force. He becomes head of campus security at the University of Arkansas, and Amelia becomes a lecturer at the same university. In 2015, Hays and West break into the abandoned Hoyt house, and find the pink room in the basement. They interview the wife of Harris James, who says she was visited by a black man with one eye, called Junius. They track down Junius Watts, who was in the car outside Hays' house. He admits he was trying to summon the courage to talk to Hays. He explains what happened with the Purcell children. A grief-stricken Isabel Hoyt saw Julie Purcell at a Hoyt Foods company picnic, and, perceiving Julie to have a strong resemblance to her late daughter, wanted to see her again. Watts paid Lucy Purcell to allow Julie to play with Isabel regularly in the woods, under the supervision of Watts and Will Purcell. However, Isabel stopped taking her lithium medication and tried to take Julie. Will tried to stop her and Isabel pushed him causing him to hit his head on a rock. Harris James paid Lucy to allow Isabel to keep Julie. Isabel gave Julie lithium to keep her happy. As Julie grew up, she started asking questions and Watts helped her escape, but she went missing. She supposedly caught HIV while on the road, then stayed at a convent for some years. A woman at the convent shows Hays and West \"Mary July\"'s gravestone. Later, while reading a passage from Amelia's book, Hays realizes that the convent groundskeeper was a classmate of Julie's before she disappeared, suspecting that the groundskeeper's daughter, Lucy, is Julie's daughter and Julie is alive. Hays drives to their house, but when he arrives he cannot remember why he is there. He finds the daughter with her mother. The family offer Hays water, he recollects as he drinks it. Hays is then picked up by Henry and reunites with Rebecca, who drives him home. Henry keeps a note with the address. Hays relaxes with his family and West, watching his grandchildren ride their bikes and reflecting on his decision in 1980 to start a family of his own.",
+          "airDate": "2019-02-24",
+          "still": "https://image.tmdb.org/t/p/original/6RFGeFsZrlDd2TllfmTGksPUoo0.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/6RFGeFsZrlDd2TllfmTGksPUoo0.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 4,
+      "name": "Night Country",
+      "airDate": "2024-01-14",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Night Country: Part 1",
+          "overview": "When eight researchers at Tsalal Station vanish without a trace, Danvers orders a search. After handling a workplace dispute, Navarro tries to convince a skeptical Danvers that the men's disappearance is connected to the murder of a local activist.",
+          "plot": "In the remote town of Ennis, Alaska, eight scientists working at the Tsalal Research Station disappear, with a woman's severed tongue left at the scene. Local police chief Liz Danvers deduces that the tongue belonged to an Indigenous woman. Alaskan Native trooper Evangeline Navarro believes the victim to be Annie Kowtok, an Iñupiaq woman who was stabbed to death and her tongue cut out after protesting against the construction of a local mine; the case remains unsolved after six years, which Navarro blames on Danvers. Danvers uncovers photographic evidence of a relationship between Annie and Raymond Clark, one of the missing researchers, and returns to Tsalal, where she finds Navarro also inspecting the facility. The two argue over Annie's case until they are summoned to a frozen lake. Rose Aguineau, a woman living on the edge of town, has discovered the naked bodies of the researchers, frozen in a solid mass, with their clothes carefully folded on the snow.",
+          "airDate": "2024-01-14",
+          "still": "https://image.tmdb.org/t/p/original/xPa4lsWn8dVkgju3zTjby2cyqHG.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xPa4lsWn8dVkgju3zTjby2cyqHG.jpg",
+            "https://image.tmdb.org/t/p/original/l9yxdLX4ve9w1SYlapvz1ezywit.jpg",
+            "https://image.tmdb.org/t/p/original/sjSxSLKYqJs6o5bX5ezMyZfvYRq.jpg",
+            "https://image.tmdb.org/t/p/original/uSzVatwhdz2UYN6oOV0Cnefjss2.jpg",
+            "https://image.tmdb.org/t/p/original/eLbt6sWR8qgBELC5DqQs5vaXDS1.jpg",
+            "https://image.tmdb.org/t/p/original/89yedc233pMWdrQKmD8ajTIYgDn.jpg",
+            "https://image.tmdb.org/t/p/original/lQavGmCQ8ur8X8WfZAUjBaip0eN.jpg",
+            "https://image.tmdb.org/t/p/original/vQaHQwiGnb5INIZ3PZ4QjoBmT7d.jpg",
+            "https://image.tmdb.org/t/p/original/lcIRM9s5WHosHgVtFI08AEXiY6J.jpg",
+            "https://image.tmdb.org/t/p/original/uplbisfiOA61MDLPym3GywD0RH6.jpg",
+            "https://image.tmdb.org/t/p/original/lVIAgiTIm9g2odIlTiA7CGt9fjp.jpg",
+            "https://image.tmdb.org/t/p/original/riVylH4cilfSXV3EzBXaASoe5Qh.jpg",
+            "https://image.tmdb.org/t/p/original/sDH4krXrq0dpPP77A2qtr0GtsTC.jpg",
+            "https://image.tmdb.org/t/p/original/35rNHLtku773yBLdMO66ymmzx5M.jpg",
+            "https://image.tmdb.org/t/p/original/6w2YOQdeTvOGjO4d7r0RIY3MrFa.jpg",
+            "https://image.tmdb.org/t/p/original/9sv9ngV35Cw9QYkGezCuWy2xp2n.jpg",
+            "https://image.tmdb.org/t/p/original/5NJrePETkPEDqqkLx6skwwrtFZf.jpg",
+            "https://image.tmdb.org/t/p/original/wNGSPARVT1Six1qeaB8QggdiOxw.jpg",
+            "https://image.tmdb.org/t/p/original/gqIe6BteYDL4rYZcVrNkBrvh45k.jpg",
+            "https://image.tmdb.org/t/p/original/sSicwLZJQ40ICQ3xHl7tYemhCjF.jpg",
+            "https://image.tmdb.org/t/p/original/1vKefUHZOzC7pxyw34QCgwyUxg9.jpg",
+            "https://image.tmdb.org/t/p/original/ncQq1A6muRMxd4W1XqsXz7ZtiHf.jpg",
+            "https://image.tmdb.org/t/p/original/a0LPkksd8Pg3FSzNXiPlGVVto81.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Night Country: Part 2",
+          "overview": "As Danvers and Prior learn more about Tsalal – and find an unlikely location for the physical evidence – Captain Connelly threatens to move the case to Anchorage. Later, Navarro and Danvers find a connection between one of the Tsalal men and Annie.",
+          "plot": "As authorities check on the corpses, Danvers discovers that the bodies have strange injuries, with burnt eyes, self-inflicted bite marks and ruptured ear drums. She also notices a spiral symbol on one victim's forehead but does not understand what it means. Danvers is suspicious as her superior Ted Connelly seems to want to hurry to close the case without a proper investigation. As they try to remove the bodies from the ice, one of the officers accidentally breaks a victim's arm off at the elbow. To the group's shock, the victim is still alive and screams in pain. They realize that Raymond Clark is not among the frozen corpses.",
+          "airDate": "2024-01-21",
+          "still": "https://image.tmdb.org/t/p/original/oasmeDFjzqFMyT7n9XTkONMmR0N.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/oasmeDFjzqFMyT7n9XTkONMmR0N.jpg",
+            "https://image.tmdb.org/t/p/original/yCA3T0uOq7GLdk33QSidaNdEL7H.jpg",
+            "https://image.tmdb.org/t/p/original/3LihvG17RE8vi7BUpuS31dkehzH.jpg",
+            "https://image.tmdb.org/t/p/original/mHKMCQ58jOR4LDdW1zm0dLvYk11.jpg",
+            "https://image.tmdb.org/t/p/original/w9lqzTcC90ZKjjc1PQm1qdRoKdT.jpg",
+            "https://image.tmdb.org/t/p/original/z2DPIo0Ft0PQmeMy70mqm0vDqS5.jpg",
+            "https://image.tmdb.org/t/p/original/es4pB1CVaHj3fAas5RLEQQEPPjk.jpg",
+            "https://image.tmdb.org/t/p/original/nB1xaibCess7Bh8UcoX47zVj4X4.jpg",
+            "https://image.tmdb.org/t/p/original/w0NzhCpXU9YFQHhG20MWnbe34tC.jpg",
+            "https://image.tmdb.org/t/p/original/36OAU83Q8b25cniLW0hJKVeQuBJ.jpg",
+            "https://image.tmdb.org/t/p/original/mTNM0LEJCg7iiHBxIrh6gYUpAQS.jpg",
+            "https://image.tmdb.org/t/p/original/pC2gur6ERTc5L02c8o2izbpgE1c.jpg",
+            "https://image.tmdb.org/t/p/original/83bhAbcY2XRcIFrqEfHMweE8y96.jpg",
+            "https://image.tmdb.org/t/p/original/yp9WkmHiF2xz7LwSvNhx23mZ0KA.jpg",
+            "https://image.tmdb.org/t/p/original/e687fIC9jIaeoJN6mM60wuSnADp.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Night Country: Part 3",
+          "overview": "While Hank leads the search for Clark, Prior asks Danvers about the murder-suicide case that drove a wedge between her and Navarro. Then, Navarro and Danvers seek out a local hairdresser for insight on Annie -- which leads to a tip.",
+          "plot": "The frozen scientist dies without providing helpful information. While incompetent Deputy Hank Prior leads the search for Clark, his earnest son Deputy Peter Prior asks his mentor Chief Danvers about the murder-suicide case that drove a wedge between her and Navarro. Navarro and Danvers seek out a local hairdresser for insight on Annie -- which leads to a tip. Navarro's relationships with her on-again, off-again boyfriend and her beloved schizophrenic sister Julia are explored.",
+          "airDate": "2024-01-28",
+          "still": "https://image.tmdb.org/t/p/original/nqrpahxwrfMzAHx0kIxIxuKT9JH.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/nqrpahxwrfMzAHx0kIxIxuKT9JH.jpg",
+            "https://image.tmdb.org/t/p/original/w71b402hqKHWLfBFVqo9fYQZJgx.jpg",
+            "https://image.tmdb.org/t/p/original/qEApxyYAtrM3EtVHErCxogPLqdm.jpg",
+            "https://image.tmdb.org/t/p/original/5ZwKZiOQqJmJiNjrWli8PiBtdw8.jpg",
+            "https://image.tmdb.org/t/p/original/4xruBSvQbPfO1erdHO9yJsJmYtk.jpg",
+            "https://image.tmdb.org/t/p/original/gRhxKg26cI8owwQe99QKIm9Y9GV.jpg",
+            "https://image.tmdb.org/t/p/original/620wuv3IekwEmv2IsEtIhQwFCLO.jpg",
+            "https://image.tmdb.org/t/p/original/zbVZQL1P2fvBA8BNlmbWw6u5c0M.jpg",
+            "https://image.tmdb.org/t/p/original/wuoxbiB7cFb13fog8HESstGsZln.jpg",
+            "https://image.tmdb.org/t/p/original/vX18tOsWlT0TtasA6nz5jmG6gH7.jpg",
+            "https://image.tmdb.org/t/p/original/qLUxuGeGF1rEiEUMPL6btxH6Moh.jpg",
+            "https://image.tmdb.org/t/p/original/mvbRab6JdFTS26HZf9EGbkBCMBb.jpg",
+            "https://image.tmdb.org/t/p/original/gQaZzdjuvFonLO5f4qYeFS6lRvV.jpg",
+            "https://image.tmdb.org/t/p/original/o9wCmw1ceuDpW36FgKZFQmlHKwA.jpg",
+            "https://image.tmdb.org/t/p/original/3k7tC8F2omigExikIdpbCLp7J1D.jpg",
+            "https://image.tmdb.org/t/p/original/hOG5UiyFNNsge4xdDS1Yg7s3z4M.jpg",
+            "https://image.tmdb.org/t/p/original/4aaYCwozEAfwKnHohUaI76JFVaG.jpg",
+            "https://image.tmdb.org/t/p/original/rJJlCbd0vi5qu3nxj2QZbgU7VE3.jpg",
+            "https://image.tmdb.org/t/p/original/6ozOiMaw0XMjINdqS5cTQWwcf5e.jpg",
+            "https://image.tmdb.org/t/p/original/g6fzCu32t06tiXpCniFqFDHwhet.jpg",
+            "https://image.tmdb.org/t/p/original/jSjbzL3j51bvzEFjNHatfdZssCE.jpg",
+            "https://image.tmdb.org/t/p/original/q26crpq5lSYF2OSBZND0la1t3Dn.jpg",
+            "https://image.tmdb.org/t/p/original/nYRJLxb2TBvCZGJXqo7jMs5shD1.jpg",
+            "https://image.tmdb.org/t/p/original/jLDCcIjn6p0FLuzLARgpLWWpojW.jpg",
+            "https://image.tmdb.org/t/p/original/mIbXY3Kbuptuskl11BibN763Aj9.jpg",
+            "https://image.tmdb.org/t/p/original/nirbWFZ5bm3piMmgBgUHE7P8xPA.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Night Country: Part 4",
+          "overview": "When Julia's mental health struggles resurface, Navarro brings her to a local facility, promising that this time will be better. Later, Danvers and Navarro confirm the location of Annie's murder, and Danvers levies a harsh punishment on Leah.",
+          "plot": "When Julia's mental health struggles worsen, Navarro brings her to a local facility, promising that this time will be better. Plagued by terrifying visions of the dead, Julia walks out into the ocean and dies by suicide. Later, Navarro has visions of her sister which she cannot distinguish from reality. Danvers and Navarro confirm the location of Annie's murder. Danvers struggles in her relationship with her Iñupiaq stepdaughter Leah, who wants to explore her Native heritage, despite Danvers' disapproval. Peter Prior's relationships with his father and young wife Kayla are severely strained as he knows Hank is corrupt and he has little time to spend at home, leaving his wife alone with their baby.",
+          "airDate": "2024-02-04",
+          "still": "https://image.tmdb.org/t/p/original/tVGXg2x5PIOZFlBzBXbpgT07kr0.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/tVGXg2x5PIOZFlBzBXbpgT07kr0.jpg",
+            "https://image.tmdb.org/t/p/original/pyMPr476b7eZKkoFHFluFwdyQKH.jpg",
+            "https://image.tmdb.org/t/p/original/xSKHrgAluMRr5NBMLCm5S3WXHRC.jpg",
+            "https://image.tmdb.org/t/p/original/z0qYf58soC2h2Ks9leOfHp3ops5.jpg",
+            "https://image.tmdb.org/t/p/original/ulmSda90DIDt1lr2eJswhNdtQKl.jpg",
+            "https://image.tmdb.org/t/p/original/m5pCPeaAsCdxSdz1W4wD8eMVCwt.jpg",
+            "https://image.tmdb.org/t/p/original/ptQOQ5xRs9Pz8suysNxHq4bkFS9.jpg",
+            "https://image.tmdb.org/t/p/original/pjiDAGJco2a7Cx2cwDTY7xoERl8.jpg",
+            "https://image.tmdb.org/t/p/original/9djqOffz8hLr4cqRKZjsRv2bM8s.jpg",
+            "https://image.tmdb.org/t/p/original/pU3XR0tSpEoBfzck8amBwhSxXe8.jpg",
+            "https://image.tmdb.org/t/p/original/ujmmjN1jgx8kp2Wm3F3JxRGOEs3.jpg",
+            "https://image.tmdb.org/t/p/original/mbDdFbhdl2MpkvPTkb6deIPzLGv.jpg",
+            "https://image.tmdb.org/t/p/original/eN9P4nUWtzpyAIvb3JgWnEtTAdv.jpg",
+            "https://image.tmdb.org/t/p/original/gQzsJ06ECnZnOYXFC1oE6YZKgof.jpg",
+            "https://image.tmdb.org/t/p/original/4ulBeiL9AqwwAlN1JHAf55LtU96.jpg",
+            "https://image.tmdb.org/t/p/original/qPKcQacdbUsH7ky1LskYxpo0ZGj.jpg",
+            "https://image.tmdb.org/t/p/original/gYw1FscVoGO2odPUHynwwN1aZ7B.jpg",
+            "https://image.tmdb.org/t/p/original/8CnjAA2KQxVIOjQZvMEm11QIlxC.jpg",
+            "https://image.tmdb.org/t/p/original/vQtFhCoN7JAXz3bHGd0AzyE6ZyR.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Night Country: Part 5",
+          "overview": "As Prior digs into the links between Tsalal and mining company Silver Sky, Navarro rescues Leah from a local protest that has turned violent. At a meeting with Silver Sky exec Kate McKitterick, Danvers is warned not to pursue the case any further.",
+          "plot": "As Peter digs into the links between Tsalal and mining company Silver Sky, Navarro rescues Leah from a local protest that has turned violent. At a meeting with Silver Sky executive Kate McKitterick and Ted Connelly, Danvers is warned not to pursue the case any further. Danvers' suspicions about her supervisor are confirmed, so she brings a potential witness, Otis Heiss, to her home to keep him away from Connelly. Hank is sent to murder Heiss and turns his gun on Danvers but Peter shoots his father before he can murder Danvers too. Peter is left behind to conceal the killings while Danvers and Navarro rush to find ice caves that hold evidence of Annie's murder.",
+          "airDate": "2024-02-11",
+          "still": "https://image.tmdb.org/t/p/original/lzoP47WoFLNDQJbmkHHeFlUOTRC.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/lzoP47WoFLNDQJbmkHHeFlUOTRC.jpg",
+            "https://image.tmdb.org/t/p/original/sPJhTPnnQ0u1o9PIqT872tylnk2.jpg",
+            "https://image.tmdb.org/t/p/original/cua6f54ElwlwAnvwrjvTKkJcVJ5.jpg",
+            "https://image.tmdb.org/t/p/original/yB0eClz3JHiVeJAeVs6e48pKRQ5.jpg",
+            "https://image.tmdb.org/t/p/original/ppogVMtgrnoUe9wST5bEuF5pzi2.jpg",
+            "https://image.tmdb.org/t/p/original/viE2HKvngIkehAOZ4uHADpPN2Hy.jpg",
+            "https://image.tmdb.org/t/p/original/wMc1vRdUYgzjElJQ6xgI6ZHH79U.jpg",
+            "https://image.tmdb.org/t/p/original/9aHvLFvSLXFeCzY57hhDmPAMyRV.jpg",
+            "https://image.tmdb.org/t/p/original/vQasuLePANCl8JrdLss4BJHG89S.jpg",
+            "https://image.tmdb.org/t/p/original/cHAtpd4albka3DBnuTuyf0mpR8Y.jpg",
+            "https://image.tmdb.org/t/p/original/fw2QyU5EO2fOY2QcmdzNNDPsLaF.jpg",
+            "https://image.tmdb.org/t/p/original/5hKq5sPvJzIXYJYnjfsatLGKgIX.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Night Country: Part 6",
+          "overview": "In the midst of a brutal storm, Danvers and Navarro find themselves stuck at Tsalal with no electricity or means of contact. As the truth about what happened to Annie and the Tsalal men unfolds, Navarro and Danvers each confront the demons from their past.",
+          "plot": "Danvers and Navarro find the hidden underground lab where Annie was murdered, connected by tunnels to the Tsalal scientific facility. They capture missing scientist Raymond Clark, Annie's former lover. Clark confesses Annie discovered the facility's bogus pollution data and destroyed their secret research. All the other scientists took part in stabbing Annie, but it was Clark who finally smothered her to death. Clark dies by suicide before he can provide more evidence. Peter disposes of Hank's body with Rose's help. Danvers falls through ice into the ocean below, but Navarro saves her. Danvers and Navarro find evidence linking a Tsalal cleaning lady and Indigenous women workers from the local crab factory to the researchers' attack. The women admit that they discovered the secret lab and avenged Annie's killing by forcing the researchers out into the cold. Danvers and Navarro close the case, citing natural causes for the researchers' deaths. Danvers leaks a video left to her by Navarro in which Clark exposes the Silver Sky mine's pollution. Months later, Danvers is questioned about Otis Heiss's murder, with Hank as the prime suspect. When they ask her about Navarro's whereabouts, Danvers claims she has no idea where she is.",
+          "airDate": "2024-02-18",
+          "still": "https://image.tmdb.org/t/p/original/24TSb2DLvvIhSw7dUs3UaCdtA2z.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/24TSb2DLvvIhSw7dUs3UaCdtA2z.jpg",
+            "https://image.tmdb.org/t/p/original/lwwqvyzfDKlFupaoZwoYS1JHlwZ.jpg",
+            "https://image.tmdb.org/t/p/original/dCLx4wYXD7z61PK4JrVEyKH2jDv.jpg",
+            "https://image.tmdb.org/t/p/original/nZG0zD8LeKY6N5Z9gN62rlommeq.jpg",
+            "https://image.tmdb.org/t/p/original/d0zmNe1lRkRQte73YKzi5VmsHqr.jpg",
+            "https://image.tmdb.org/t/p/original/cwwN1EeLPvZI3npjv4irfxppwxA.jpg",
+            "https://image.tmdb.org/t/p/original/hrFGSz949L8bDZeAZ1Gk8Tgwyh6.jpg",
+            "https://image.tmdb.org/t/p/original/Wjt4LwxaDU8jqrLbwSDGG6N5bg.jpg",
+            "https://image.tmdb.org/t/p/original/ylm9OWsQUGy6ZUZTs6xF7TdHy6H.jpg",
+            "https://image.tmdb.org/t/p/original/AexxMlLenjnOuZviCiRpgUIMOwU.jpg",
+            "https://image.tmdb.org/t/p/original/1hcci4IdSNPwoKnZecVzn1emod6.jpg",
+            "https://image.tmdb.org/t/p/original/l2Ck4jIaHRkded9tQkBKoeojM7I.jpg",
+            "https://image.tmdb.org/t/p/original/hnbBAwaSbzVP1wzbfLJUchqKKWf.jpg",
+            "https://image.tmdb.org/t/p/original/ddGcyDqq0NMfIDA3zb9UQdlcF4Q.jpg",
+            "https://image.tmdb.org/t/p/original/9ufjos9JbhbyxyrFqMROFgJMI2G.jpg",
+            "https://image.tmdb.org/t/p/original/9FivWHz8l5X35ybvSJsKDkrPjlR.jpg",
+            "https://image.tmdb.org/t/p/original/kOzbvTdvrNmlpseeEnyzWYG2tfE.jpg",
+            "https://image.tmdb.org/t/p/original/rm3pFowK3ORV5z9I5yFnC5ApqGM.jpg",
+            "https://image.tmdb.org/t/p/original/wRyqMLIO23Re1CQT2DagdSj6PI.jpg",
+            "https://image.tmdb.org/t/p/original/mECaD3mQOlZvsK8KTksEBn9N2RZ.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "cast": [
+    {
+      "name": "Matthew McConaughey",
+      "character": "Rust Cohle",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/lCySuYjhXix3FzQdS4oceDDrXKI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Colin Farrell",
+      "character": "Ray Velcoro",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/5FdalJbrbZ5UCsED5rFrXpvbqJa.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/11/27778.jpg"
+    },
+    {
+      "name": "Mahershala Ali",
+      "character": "Wayne Hays",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/9ZmSejm5lnUVY5IJ1iNx2QEjnHb.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/166/415581.jpg"
+    },
+    {
+      "name": "Woody Harrelson",
+      "character": "Martin Hart",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/igxYDQBbTEdAqaJxaW6ffqswmUU.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/0/1585.jpg"
+    },
+    {
+      "name": "Vince Vaughn",
+      "character": "Frank Semyon",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/qImHvsd7SFJh46Ujx50xUfkeMNz.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/11/27775.jpg"
+    },
+    {
+      "name": "Stephen Dorff",
+      "character": "Roland West",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/bhlM1xNzBvc8jTw42YloUKlGTCL.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/173/433866.jpg"
+    },
+    {
+      "name": "Michelle Monaghan",
+      "character": "Maggie Hart",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/uK1qhSzKd9gkDh3p1H5e2PWMYyH.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/0/62.jpg"
+    },
+    {
+      "name": "Rachel McAdams",
+      "character": "Antigone 'Ani' Bezzerides",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/2DPh6KoNg0p57vvGc6N468zr3ct.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/11/27777.jpg"
+    },
+    {
+      "name": "Carmen Ejogo",
+      "character": "Amelia Reardon",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/b2qi5NxOwoxK67LPz0MjVwjRcFp.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/180/450264.jpg"
+    },
+    {
+      "name": "Michael Potts",
+      "character": "Maynard Gilbough",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/3fgLuZkPH6F4RDjWeWt1s9bjy3v.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/0/1587.jpg"
+    },
+    {
+      "name": "Taylor Kitsch",
+      "character": "Paul Woodrugh",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/pTFkwvE2URbbftiaofexfolhkH9.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/11/27776.jpg"
+    },
+    {
+      "name": "Scoot McNairy",
+      "character": "Tom Purcell",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/oP2LJEqupxVZ2XdEW1lN5Q5LF3M.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/180/450247.jpg"
+    },
+    {
+      "name": "Tory Kittles",
+      "character": "Thomas Papania",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/8NubsD32UAPhPflJuEBqtTa5vWR.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/0/63.jpg"
+    },
+    {
+      "name": "Kelly Reilly",
+      "character": "Jordan Semyon",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/l8aQsryOQvxgX6SdZ4XtzU8KEXn.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/14/35463.jpg"
+    },
+    {
+      "name": "Ray Fisher",
+      "character": "Henry Hays",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/310snvA05xDOQZDn2fJSp242GHw.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/180/450248.jpg"
+    },
+    {
+      "name": "Chris Kerson",
+      "character": "Nails",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/4IktQBREhdw3Ldep3SiJVitgs6O.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ritchie Coster",
+      "character": "Mayor Austin Chessani",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/s0QLFPGEbZkyKBqpbM4upC2jMgk.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Christopher James Baker",
+      "character": "Blake Churchman",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/bxGk5Zoo0LX6bJUOCjtKimZYihn.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Afemo Omilami",
+      "character": "Police Chief Holloway",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/usW1GHq20ZEX3rpei1HpeXfSpiP.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "James Frain",
+      "character": "Lieutenant Kevin Burris",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/1KnxsxRbVZkh5bdY3gA8v4YKhKR.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Abigail Spencer",
+      "character": "Gena Brune",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/uf96FDHVoFMwoiP5He4SPLCmwri.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jodie Foster",
+      "character": "Liz Danvers",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/5emVgsLFlU6SmeBIFsF2Y7aqwtG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kali Reis",
+      "character": "Evangeline Navarro",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/ruLDXHnKA4aHEQCcFGDAJ7bLTdt.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Fiona Shaw",
+      "character": "Rose Aguineau",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/8X7fZybxtwh2nTvYk6kjRYo9RIY.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Finn Bennett",
+      "character": "Peter Prior",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/p4ya77nmLlhS2cyPKUZi9zVD4Mu.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Isabella Star LaBlanc",
+      "character": "Leah Danvers",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/zaixiRA7LYodEssWh7zIAKfNP5P.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "John Hawkes",
+      "character": "Hank Prior",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/c0mDB6TApVcJ3LLM1gicjyUeD5A.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dana Gourrier",
+      "character": "Cathleen",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/v3krc3R7LKMsHJEm8esPqEa7CR.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Madison Wolfe",
+      "character": "Audrey Hart",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/ir4dNcm1mmTuK4knqT8XivkwJPo.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "J.D. Evermore",
+      "character": "Detective Lutz",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/bTLrDTIj9DNnYP8afZXPTo31CJA.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Andy Mackenzie",
+      "character": "Ivar",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/q8qdAq4xuBlcW4P5FinpRHexk9T.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Irby",
+      "character": "Detective Elvis Ilinca",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/9cX8pKujyAlOyqGSAgvKNdA3qRj.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Timothy V. Murphy",
+      "character": "Osip Agronov",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/4WMz4UUMeexgP1ddfC2j7pqf8hU.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Yara Martinez",
+      "character": "Felicia",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/h7FcuyLMJ96EMqzcyjzrS5cYg34.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Adria Arjona",
+      "character": "Emily",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/jEhooOqKM7XXQqOfnHUxz3T1It.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alain Uy",
+      "character": "Ernst Bodine",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/jpU5gY52HM2gc2BoZp6fFTZSjJg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jon Lindstrom",
+      "character": "Jacob McCandless",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/tofGx1IJEqsGpakqLnhSjE31nL0.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sarah Gadon",
+      "character": "Elisa Montgomery",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/9ip4v5DR8wSy9qnbClUkgwgeIgP.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Anna Lambe",
+      "character": "Kayla Prior",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/cKm5ZnAOVc6nD8KAgSDMJdZclYH.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Joel Montgrand",
+      "character": "Eddie Qavvik",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/2cxC7nq7FFsHHUfNbznYdIlgRKm.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kevin Dunn",
+      "character": "Major Ken Quesada",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/7dqLQjMNCQnuxQJQwQ5Ozz16LBq.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Joe Chrest",
+      "character": "Detective Demma",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/7mcsJGnqRoVPTtxAUZEKt2dZnlw.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dane Rhodes",
+      "character": "Detective Favre",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/dJ1DLOEKcFmZyAV3bg4Q1lbhtgE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "W. Earl Brown",
+      "character": "Detective Teague Dixon",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/oBHcJc65nUmopx6lVc9ZvYYARZz.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Leven Rambin",
+      "character": "Athena Bezzerides",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/vjXXg3QCtFIxvLl1Aa0fTHFhA3d.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lera Lynn",
+      "character": "Singer",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/AgiZoK0EOThMVcEMnzSoRwJMaKv.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Hyatt",
+      "character": "Katherine Davis",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/zXJ1mV2NlZuWYgTj8eTuUFhCgp5.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mamie Gummer",
+      "character": "Lucy Purcell",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/iVSSYF6BldRkb2qedkbFo6MvRjv.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Angunnguaq Larsen",
+      "character": "Dominic Pitka",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/wHVSsi8L56h9mJAbrHspw9bMlp5.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Þorsteinn Bachmann",
+      "character": "Anders Lund",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/gsKXHCvOKHOaSHXfH7UniUpRNQH.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Davíð Þór Katrínarson",
+      "character": "Officer Cooper",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/wfett7Ic8oPB4JjByKvKPQJCDZf.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tony Molina Jr.",
+      "character": "Detective",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/sZZocBuNqhK8TqqGvvSCW9Rjgzh.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Meghan Wolfe",
+      "character": "Maisie Hart",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/qLV8Evewmt5OTtrBl0Aleu8kFq.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "C.S. Lee",
+      "character": "Richard Geldof",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/cjqzZKv7iCDk2o5Wp2TlhxuQi52.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lolita Davidovich",
+      "character": "Cynthia Woodrugh",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/vQlk518qlef94XXJqtrkIqS3izo.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Vinicius Zorin-Machado",
+      "character": "Tony Chessani",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/tBNRr4wV9UgVxQKoeqztJimg9gN.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Trevor Larcom",
+      "character": "Chad Velcoro",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/vLl25GWOfGQDhLPF11Kz6nSY3q6.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Matt Battaglia",
+      "character": "Commander Floyd Heschmeyer",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/zM83khRe7aVWrNTDxSJlyU23u46.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Solomon Shiv",
+      "character": "Michael Bulgari",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/xOsgnUiPBjRGIeMw9nAb4k5IJJd.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rhys Wakefield",
+      "character": "Freddy Burns",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/wqg6qaNkYUMviXz7irNWJGDdeZB.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Greyeyes",
+      "character": "Brett Woodard",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/jy45vhkNT0s7gtf1dRIfFL77YWg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alexandra Daddario",
+      "character": "Lisa Tragnetti",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/raekYhYazR6L4c7PZNnEeP4ZkAD.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Diane E. Benson",
+      "character": "Beatrice 'Bee' Malee",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/sNRFYssZ3cuD8Kbci7prbbWvT4R.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Aka Niviâna",
+      "character": "Julia Navarro",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/sEYrErzlxjla3CbOn82hVeWjmLG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kathryn Wilder",
+      "character": "Blair Hartman",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/4vXOwKOkbR6rDkwMKhzRcTo3mWW.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Grace Anderson",
+      "character": "Lulu",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/vQEHnz8OTgnBMUr3x04xKmdusyf.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nivi Pedersen",
+      "character": "Annie Kowtok",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/WAcJWhdAsn9HjrWtXnCn6Kfo4a.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Erin Moriarty",
+      "character": "Audrey Hart",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/2tFblvjBRUYwcVT1V1i79Ppd6wG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Glenn Fleshler",
+      "character": "Errol Childress",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/x1Cef2yPZS7bJTwxI7DX3q0HNcv.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Harney",
+      "character": "Steve Geraci",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/j64sglNnGc5fAHPEkJ1TmKOITQP.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Don Yesso",
+      "character": "Commander Speece",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/m93AeciV1iGX5siORbhB94njyRn.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "David Morse",
+      "character": "Eliot Bezzerides",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/A6zGbkFjM3uajIakgsSeNTmSKqY.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rick Springfield",
+      "character": "Dr. Irving Pitlor",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/rQeUcfwR1M8n51mRROeYLHHY7Gc.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alex Fernandez",
+      "character": "James O'Neal",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/viex7DzblV3vWKqmkjHO8sN3vIv.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Arthur Darbinyan",
+      "character": "Leonid",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/iwl8jHiDFWDGMDN6VWSmPZh4Ktb.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Agnes Albright",
+      "character": "Veronica Chessani",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/39laAb3lRSVQv4NtXzIwuowuFry.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Emily Rios",
+      "character": "Betty Chessani",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/h8d9eg0wpyXcvJlunpZklh2asVY.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Gabriel Luna",
+      "character": "Miguel Gilb",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/bIPORtYxTJPEUJIThbZrpqf4A11.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jack Topalian",
+      "character": "Armin",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/4MBcynysA0OLX263lq3N0qGpXjO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Christian Campbell",
+      "character": "Richard Brune",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/vRZvOyWcbiIJai5hGZRFDG7222F.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Courtney Halverson",
+      "character": "Erica Jonson",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/q0ZHXK8AYBsYfkBLV9zJ7Gr5ryT.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Carla Vila",
+      "character": "Danielle Delvayo",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/amY9drkYuaGFD0vgpVonpqv7wld.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ronnie Gene Blevins",
+      "character": "Stan",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/28O4ALimfSVQgMOvkstDJpzHKDc.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jackson Beals",
+      "character": "Detective Mark Daughtry",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/qe8DeGh7Ebb7aqetkQQtlEqw77F.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jim Klock",
+      "character": "Detective Ted Bertrand",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/uP9BqJHWhtLmJ2UEmwSiRp4jpp6.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Garrett Kruithof",
+      "character": "Detective Jimmy Dufrene",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/r9vZEkHFbiLtcC946EbeaOoCPlV.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Josh Hopkins",
+      "character": "Jim Dobkins",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/ch8uh6RM55dmrAZdt8ByktQifg6.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jon Tenney",
+      "character": "Alan Jones",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/ktb1RA23pHJKMdcFenQ2cosnCkp.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brandon Flynn",
+      "character": "Ryan Peters",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/2fir5bwu0nNB4FiQZYY5J9tWZqC.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Emily Nelson",
+      "character": "Margaret",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/p8kjoG3f4ZpYPbE2miVnt1A6m23.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Richard Meehan",
+      "character": "Frankie Boyle",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/wEB2rjqYNWLZDsjfza3ETYoeIJ2.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Corbin Pitts",
+      "character": "Mike Ardoin",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/kL87wIiTEpHfz5HOIRcNle33TgU.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brett Cullen",
+      "character": "Gerald Kindt",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/4P6TsRcnr9MRbXlCdHitulGM5LT.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tim Griffin",
+      "character": "Special Agent Burt Diller",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/sJKlW3W5rUyxdR8eslf7ScSe3yw.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tim van Eyken",
+      "character": "Ralph Emerson",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/3HHWFfmHOfn2egSbO3Hi65Re5s3.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "John Albasiny",
+      "character": "Anton Kotov",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/wmYCFZGvhaAiepRXXT72uSRGlsO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nicholas Goh",
+      "character": "Li Jie",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/csqUpPzAhNeEu0WFlAcKPQbHxmL.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Adam Burton",
+      "character": "Lucas Merens",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/7ZFMks3hRrpRolNFbJ58Gm8q7MR.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jeff Mirza",
+      "character": "Veer Mehta",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/xgRKoMFBQGavRT65OBMxcABVe1G.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Owen McDonnell",
+      "character": "Raymond Clark",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/766kgsmbiG5hnpTkm8OjNXI89WV.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Edward Fletcher",
+      "character": "Chuck Mosley",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/4PzQWgLttNH8z2MNXpAbAfI32vL.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dan Cade",
+      "character": "Trooper Wilson",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/b5xIVO8A5HE9UXHPiyB61lVtcP1.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Eloise Thomas",
+      "character": "Sheri Gillard",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/pOwQ0YS7sAZ48qRaSmBn2tpK2hH.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dervla Kirwan",
+      "character": "Kate McKitterick",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/6ZReeKzRaWMDzlfRbJcqelAfPZ6.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "David Shackelford",
+      "character": "Kenny",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/INcN4Mn945EaIBGCXZbKa1C6Me.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "June Thiele",
+      "character": "Nurse",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/wBs7DZUbJozTKK8oxTxnHsey0z8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tanya Tagaq",
+      "character": "Doula",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/r3oP3qJUKUAdLnRN1z2j8j0nXiX.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Varna Marianne Nielsen",
+      "character": "Doula",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/kHuD7FlMC6HNGC2HayzHdqWlHZa.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kasper Leisner",
+      "character": "William Wheeler",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/2mSqjCIXNm4QRb2brY9biTVJlMa.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Christopher Eccleston",
+      "character": "Captain Ted Connelly",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/v6ezjezzDo6xP2wlONO5ZzBciwl.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brighton Sharbino",
+      "character": "Maisie Hart",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/cSICGAUsjWFn0GkRm7luAtJxq3Y.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jay O. Sanders",
+      "character": "Billy Lee Tuttle",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/z8btmLryEZlLkBah2XhZFydmty4.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lili Simmons",
+      "character": "Beth",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/b03CjNTgZmSAKr9LnVVw0PFgqTH.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Christopher Berry",
+      "character": "Guy Francis",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/8y2HybPVLxUabwnMPjdBREbitKZ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Johnny McPhail",
+      "character": "Robert Doumain",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/oRQCdrbRQC5IJ2NXpSN365gl0Hm.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Miranda Rae Mayo",
+      "character": "Vera Machiado",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/dvCagUBHBNGwsozC8KS3tFPtCcj.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brad Carter",
+      "character": "Charlie Lange",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/xdQINDoQK3nx5ndIJnYU3qKRM4Y.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alyshia Ochse",
+      "character": "Lucy",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/6gI5qlYJrWZkAqt167B5BNq9M6W.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Molly Hagan",
+      "character": "Mrs. Harris",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/m5pL170dlh7ex4lTESAK5kKARde.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ashley Hinshaw",
+      "character": "Lacey Lindel",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/19Bk7dlNSZlewFS0BLP3yINBrHU.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Pedro Miguel Arce",
+      "character": "Danny Santos",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/rcFX6qJiODEgMUzwuEVWMcdskg4.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Fred Ward",
+      "character": "Eddie Velcoro",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/t3tZduAwP1LMR8Vc13HZ39wKJ1q.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Chet Grissom",
+      "character": "Bart Sallis",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/yTfrcarwGM9H8F47VA2Z0sXATCF.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Weronika Rosati",
+      "character": "Agnes",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/6GUOUPkpY5UODU6srmYGL9l0fI0.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Luke Edwards",
+      "character": "Lenny Tyler",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/cZcUHl6jojQJiviybrDV5iX8K9Z.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Stevin Knight",
+      "character": "Dan Howser",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/9xfddjQX0RCT1xWoKwbeifxFFmn.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Riley Smith",
+      "character": "Steve Mercer",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/cBLhhvqOQY8g95RaymVbd2Bd6py.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jamison Jones",
+      "character": "Will Davidson",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/5Z7txx8ZhHuJLGjUeqo00vOlOKs.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Anjul Nigam",
+      "character": "Ventura County Medical Examiner",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/7WEVpmmU7NtgWKhg3muHW4D32NH.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ronny Cox",
+      "character": "Catalast Executive",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/cKkVkqft2RacSDhsKxO8nMFgeAd.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Shea Whigham",
+      "character": "Joel Theriot",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/d3caK3l4UfbnzOxv95wLoFLZzMO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Charles Halford",
+      "character": "Reggie Ledoux",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/mrCy6dA5AHqczA4aJX4drCQ3tjC.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Joseph Sikora",
+      "character": "Ginger",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/lCsWDvqKYz1UFGRYN5chg5izZAu.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Broderick",
+      "character": "Special Agent John Bowen",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/2MaElb6nAwm6OTryXot6Ip2LJTp.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kennedi Lynn Butler",
+      "character": "Young Becca Hays",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/xBfC6qHnJ4DL2XmETdBrgfUCswT.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Isaiah C. Morgan",
+      "character": "Young Henry Hays",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/6TKMu9g8ZGS3dbpd5P4eWDGEn2M.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/180/450248.jpg"
+    },
+    {
+      "name": "Nick Basta",
+      "character": "James Boyle",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/dNxd3V2RRDx0P4eMV4YqndcBTnJ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brian Oerly",
+      "character": "Eddie",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/xWepx6pF2kEc90FBhOoq05bLqCu.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Gareth Williams",
+      "character": "Police Chief Warren",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/yzPjk1qze7A3eqFCXdTGz6vGGzQ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Bea Santos",
+      "character": "21 Year Old Lucy Purcell",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/OdkauzwhAU5VVFgUW01PahvW1K.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sola Bamis",
+      "character": "Heather Hays",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/7hr47LMyBPHSmrGF8INNJMlqeYR.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "BoJesse Christopher",
+      "character": "Detective Richard Kitting",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/z6OQYBH4nl6JSabTX21tkg6gyZ8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Deborah Ayorinde",
+      "character": "Becca Hays",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/hTbuFZSSEk5nWD3XxsSzQQ47CPb.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jaiden McLeod",
+      "character": "Wayne's Grandson",
+      "episodeCount": 2,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/166/415581.jpg"
+    },
+    {
+      "name": "Aron Már Ólafsson",
+      "character": "Ace",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/sVayMbyDhvuA2mM3hAXHImUHLxX.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Erling Eliasson",
+      "character": "Dead Travis",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/kvGuSNqmNHYMo2QS6xUuT5oU8FO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Donnie Keshawarz",
+      "character": "Adam Bryce",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/89LuTk2ALDUDa4WfYn9bzjOzjYP.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Svend Hardenberg",
+      "character": "Jake Peterson",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/x4QMH2VWvisnLorHdpnz7zfuGo5.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Klaus Tange",
+      "character": "Otis Heiss",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/ipxyyO67vLQKtVJOBJMfsocBF8X.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Elizabeth Reaser",
+      "character": "Laurie Spencer",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/nqWRrjsCAY542gtrGCn7NZWHatW.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Paul Ben-Victor",
+      "character": "Major Leroy Salter",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/l7aHF2lKW6VLLFOvMIsVfkCDl1z.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kerry Cahill",
+      "character": "Nurse",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/96AGPQUbKi9Zc6GFNJXbIjpLhkg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Azure Parsons",
+      "character": "Charmaine Boudreaux",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/yyfGKT6KDXHf8j2WL2ZddVpqpHg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tim Bell",
+      "character": "CID Clerk",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/uVwy0aJxDksh2eXO2d2Im5h9I1w.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dave Davis",
+      "character": "Toby",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/9cPhpNYacn5Lc8bUIWX44Lj5K0z.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jay Huguley",
+      "character": "Jimmy Ledoux",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/pe6L583qCepA5KYPGj2RL72X50U.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kelsey Scott",
+      "character": "Fiona Jackson",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/k7on2GZnLft1b0umFl7cQydVBDe.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Carol Sutton",
+      "character": "Miss Delores",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/5kQkv64ubSeFbs2i831mvnh3o2Q.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ann Dowd",
+      "character": "Betty Childress",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/zo44U71uiMNVW1HSiOa5F9MpqIq.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kurt Krause",
+      "character": "Chad",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/1JDehRtxcrUa6ABZeZbY3x6tXzT.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Terry Moore",
+      "character": "Lilly Hill",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/znkj4uTUkNpJucQcW4z4juqf6b6.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rachel Wulff",
+      "character": "News Reporter",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/zq8dYX0Wgy0AanLGQG6KXKIh1OL.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Clarke Peters",
+      "character": "Minister",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/ouDHDpocxXgXrosF3vShAEkOjHL.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Charleigh Harmon Stelly",
+      "character": "Anette",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/tmnzRCnISYfq4B5cIicq6Yx1WtF.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Davi Jay",
+      "character": "Gordon DiCillo",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/2kdp8yFfVPLi56PYqDm9xAQcM3S.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jason Kirkpatrick",
+      "character": "Deputy",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/vketB9Udug89v6aEV9fV40BhU5v.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ron Clinton Smith",
+      "character": "Sheriff Tate",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/hiqwRqgl9Y5bN22xMsXmAGOwHhD.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Wanetah Walmsley",
+      "character": "Marie Fontenot",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/rjkTACZM6IBE0FMsjbfJ4iETfRG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rex Baker",
+      "character": "Narcotics Officer",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/vFLzAOlH4Ntvri6KdWd8VRw64KW.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kenneth Kynt Bryan",
+      "character": "Transsexual Hooker",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/o7YOTJZeXD8xFTGnzdEka15RfSX.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Divine Prince Ty Emmecca",
+      "character": "Gay Prostitute",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/qULeWCcfXUT7PnZIDG7wnf8nRys.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Will Koberg",
+      "character": "Trooper",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/61TN72lNFDTGLAA61EjDLjmCN4V.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lola Phillips",
+      "character": "Neighborhood Kid",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/jwOyQtDITDZmxzaBcoW5fIivudU.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Cooper Roth",
+      "character": "Aspen Conroy",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/zwWlML5B2MrJWslZy9ftovHqMmJ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Joseph Gatt",
+      "character": "Bogden",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/ufXNVj0gOpGOB6uUnNuTIzk5rpb.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sharon Landry",
+      "character": "Linda",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/uABdE5wKu3c2KkqaJw6IcYXool9.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Bree Williamson",
+      "character": "Jennifer",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/ho68bDjFcGc7paHP9zePzXSmACP.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "December Ensminger",
+      "character": "Kelly Reider",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/jhkkdTCFzPGV2HMirVnO3EJ1GRH.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alex Rich",
+      "character": "Tyler",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/e0qryVy26f3i1a88vvkTx44Q9CE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nic Pizzolatto",
+      "character": "Bartender",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/fzBUlNWTyZVsmMBeURqWBk5Gwlo.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Graziadei",
+      "character": "Dan O’Brien",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/cVLdj0tltcDRkIU88ENYOc5kYtp.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Shawn-Caulin Young",
+      "character": "Ted LaGrange",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/nM1xjkGwzwjCziW47idHTCOApiI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Natalie Canerday",
+      "character": "Louise Purcell",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/o1oaQCQknPps42QNsnFs9E0Jjrm.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "David Jensen",
+      "character": "Roy Purcell",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/eMKoRn7Xz7Z7JEfBLkZA5pV2k5t.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Papajohn",
+      "character": "Vice Cop",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/hdTJBfIXfvRdlD1p8y6rra207UP.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jennifer Pierce Mathus",
+      "character": "Daycare Matron",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/vM5f6DyZJ8lnkq9bT7o7QEPpYKq.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alyson Courtney",
+      "character": "TV Anchor (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/3p31wLLr6Mo3xbQY2ydODUzDsSO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lawrence Turner",
+      "character": "Foreman",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/dQKjluBSgfnVaFObJnpzSwyaCRF.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Keith Hudson",
+      "character": "Ernest",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/s4m9nHJRaOYeQkYdh5pLt5bqmx5.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Josh Whites",
+      "character": "Joe",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/pJAN0zyuX7lwW97uYDmAe081DHA.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Julia Lashae",
+      "character": "Woman #1",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/5EwcUY1CGo6V9oWqA7su4h0mgP3.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Marcus Lyle Brown",
+      "character": "Doctor",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/zHsqlROpMRsvtW70bgbkSEqakCd.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Lee Osorio",
+      "character": "Sallisaw Police Detective",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/vZboVn9SKsOAY4qkSQXwbBm9u7E.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Becki Davis",
+      "character": "Mary",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/19pPOaVu077VsXsdNHkay5Pzds3.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brian Brown",
+      "character": "Man #3",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/hNRfCRKG80AyrdhA1jf4jMdLr5d.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Anthony Molinari",
+      "character": "Man in the Truck",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/8Gl1b5Y7QLrdv5vvOwAmJk29joM.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Melanie Haynes",
+      "character": "Manager",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/xrkiTTh9KTikz3hWouk6YAGeECF.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Phelps",
+      "character": "Bartender",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/eWRl8VNCovRlx1eAnlAJm8MMkKA.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jon Arthur",
+      "character": "Detective (uncredited)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/l4v7HMpzlfEgFWuXD05JlGL7FgQ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Rooker",
+      "character": "Edward Hoyt",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/ngOuHNIAGrKyY1O7F0f9C5Q9ONg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Steven Williams",
+      "character": "Junius",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/nOsMJ7zPykxlPkjgoMrk677BaqQ.jpg",
+      "inCharacter": null
+    }
+  ],
+  "generatedAt": "2026-07-25T15:51:10.578Z"
+}

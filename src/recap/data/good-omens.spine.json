@@ -1,0 +1,271 @@
+{
+  "slug": "good-omens",
+  "generatedFor": "Good Omens",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The wrong baby",
+          "text": "Crowley delivers the baby Antichrist to a Satanic convent for a diplomat's family, but a mix-up sends the real boy home with the Youngs, an English family who name him Adam.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The switched identity is the engine of the whole season; without it the hunt makes no sense.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Arrangement",
+          "text": "After 6,000 years fond of Earth, angel Aziraphale and demon Crowley agree to jointly raise the diplomat's son Warlock as neutral, believing him to be the Antichrist.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the central alliance and their shared goal of stopping Armageddon.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The hound finds Adam",
+          "text": "At Warlock's 11th birthday the hellhound fails to appear; the real hound finds Adam in Tadfield, who names him 'Dog' and unwittingly starts Armageddon.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Reveals the mistake, triggers the countdown, and puts Adam and his powers on the board.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The prophecy hunt",
+          "text": "Anathema uses ancestor Agnes Nutter's book to hunt the Antichrist near Tadfield; Aziraphale gets the book and works out that Adam is the boy, but hides this from Crowley.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Aziraphale's concealment fractures the Arrangement and sets up the split just as both sides close in.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Both sides turn",
+          "text": "Angels confront Aziraphale for consorting with Crowley; he is discorporated when his bookshop ignites. Hell learns Crowley lied about the Antichrist and comes for him too.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Heaven and Hell openly break with them, forcing the pair to act as renegades rather than agents.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Adam refuses",
+          "text": "At Tadfield airbase Adam grows into his powers, defeats the Four Horsemen with his friends, and rejects Satan and Heaven's war, restoring the world before Armageddon completes.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The apocalypse is called off by the Antichrist himself, resetting the board and defying the Great Plan.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The body swap",
+          "text": "A final prophecy warned them: Aziraphale and Crowley trade bodies to survive Heaven's hellfire and Hell's holy water. Both sides retreat, and the pair toast the world at the Ritz.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Their survival scares off both sides, leaving them unsupervised on Earth for the first time — the setup for S2.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Armageddon has been called off and both Heaven and Hell have quietly withdrawn, afraid of what Aziraphale and Crowley have become. For the first time in six thousand years the pair belong to no side but each other.",
+        "questions": [
+          "How long will Heaven and Hell actually leave them alone?",
+          "With the Great Plan defied, does either side already have a next move?",
+          "Now that Aziraphale and Crowley have openly chosen Earth over their kinds, what does that make them to one another?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Aziraphale",
+          "line": "The angel of the Eastern Gate, a Soho bookseller who has openly defied Heaven to save the world and now lives beyond its reach."
+        },
+        {
+          "name": "Crowley",
+          "line": "The demon who tempted Eve; prefers Earth to Hell, has been exposed as a liar to his side, and is now left alone alongside Aziraphale."
+        },
+        {
+          "name": "Adam Young",
+          "line": "The Antichrist, restored to a normal 11-year-old in Tadfield after renouncing Satan and undoing Armageddon."
+        },
+        {
+          "name": "Anathema Device",
+          "line": "Occultist descendant of Agnes Nutter who has run out of prophecies and is free of the family burden for the first time."
+        },
+        {
+          "name": "Gabriel",
+          "line": "The Archangel who ran Armageddon for Heaven; furious at Aziraphale's defection and still very much in charge upstairs."
+        },
+        {
+          "name": "Beelzebub",
+          "line": "The Prince of Hell who commanded the demonic side; retreated when the apocalypse collapsed, sharing Gabriel's humiliation."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Naked Gabriel",
+          "text": "Archangel Gabriel arrives naked at Aziraphale's bookshop with no memory and a fly in a cardboard box. Both Heaven and Hell begin hunting for him.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The mystery of Gabriel's amnesia and the fly is the season's entire spine.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The joint miracle",
+          "text": "To hide Gabriel, Aziraphale and Crowley perform a miracle so powerful it trips Heaven's alarm and brings Michael, Uriel and Saraqael down to the bookshop.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Their instinct to protect Gabriel is what actually exposes them and forces the season's cover story.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Nina and Maggie cover",
+          "text": "Aziraphale tells Michael the miracle was to make cafe owner Nina and record-shop owner Maggie fall in love, so Crowley starts scheming to actually match them and validate the lie.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets the romantic sub-plot as a smokescreen and gives Crowley the emotional experiment that later informs his own choice.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Hell closes in",
+          "text": "Beelzebub offers to drop Hell's case against Crowley if he gives up Gabriel's location. The demon Shax, hunting for Gabriel herself, deduces he is at the bookshop.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Turns Hell from a distant threat into an active siege force and puts Crowley under real pressure.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Siege at the ball",
+          "text": "During Aziraphale's Regency-style ball, Shax and seventy demons surround the bookshop; Aziraphale refuses to surrender Gabriel and accidentally declares war on Hell.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The confrontation forces Aziraphale to pick a side and pushes the plot into the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Gabriel's secret",
+          "text": "Crowley discovers Gabriel refused to run a second Armageddon and was memory-wiped for it. The fly restores his mind and he flees Heaven with Beelzebub, his hidden lover.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Explains the whole mystery and, more importantly, shows Aziraphale and Crowley a template for walking away together.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Metatron's offer",
+          "text": "The Metatron gives Aziraphale Gabriel's old post to run a Second Coming. Aziraphale accepts; Crowley kisses him, is refused, and Aziraphale leaves for Heaven alone.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Sends the two apart in opposite directions and launches the Second Coming plot that opens S3.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Aziraphale has gone back to Heaven, promoted by the Metatron to organise a Second Coming and convinced he can reform the institution from within. Crowley is on Earth alone for the first time in six thousand years, rejected after finally confessing.",
+        "questions": [
+          "Is Aziraphale being trusted by Heaven, or handled by it?",
+          "What does Crowley do now that he has said the thing and been left behind?",
+          "With the Metatron himself running a Second Coming, is Earth actually safe?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Aziraphale",
+          "line": "Has accepted the Metatron's offer and returned to Heaven to steer the Second Coming, choosing the institution over Crowley."
+        },
+        {
+          "name": "Crowley",
+          "line": "Confessed with a kiss, was refused, and stays on Earth alone — still barred from Hell's ranks, still fond of humans."
+        },
+        {
+          "name": "The Metatron",
+          "line": "The voice of God, now personally handling Aziraphale and set on staging the Second Coming through him."
+        },
+        {
+          "name": "Michael",
+          "line": "Senior Archangel who investigated Aziraphale over the miracle; still suspicious of him and now the effective ranking angel below the Metatron."
+        },
+        {
+          "name": "Muriel",
+          "line": "Junior angel sent to spy on the bookshop; now knows more of Earth than most in Heaven and is fond of Aziraphale."
+        },
+        {
+          "name": "Gabriel",
+          "line": "No longer an Archangel; abandoned Heaven and vanished with Beelzebub after his memories returned."
+        },
+        {
+          "name": "Beelzebub",
+          "line": "Quit Hell for Gabriel, leaving the demon hierarchy in flux."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Staging the Second Coming",
+          "text": "Aziraphale sets the Second Coming in motion from Heaven and assigns Sandalphon to watch the resurrected Jesus.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The plan itself is the pretext for everything that follows; naming Jesus and Sandalphon here matters when both are attacked.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Disappearances",
+          "text": "The Metatron vanishes without warning, Jesus is lost in the chaos, and the Book of Life goes missing. Heaven has no one running it and no way to find them.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Turns the season from a Second Coming story into a mystery about who is dismantling Heaven from inside.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Reunion on Earth",
+          "text": "Aziraphale comes back to Earth to search for Jesus, finds Crowley, and the two reconcile. Together they win Crowley's Bentley back from crime boss Brian Cameron.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Repairs the split that ended S2 and puts the pair on the same side again for the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Michael unmasked",
+          "text": "Sandalphon is murdered; Uriel confronts Michael, who reveals she is behind the disappearances. Michael burns Uriel's page from the Book of Life, erasing her from existence.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Names the season's villain and reveals the Book of Life as a weapon that unmakes people utterly.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The world unwritten",
+          "text": "Michael keeps burning pages of the Book of Life. People, continents, Hell itself and even Jesus are erased, leaving reality shrinking around Aziraphale and Crowley.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Escalates the stakes past Armageddon: not death but non-existence, from which nothing can be undone.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Forgiveness and self-erasure",
+          "text": "Crowley and Aziraphale find Michael and Aziraphale forgives her. Overcome by guilt she burns her own page, leaving only the pair, God and Satan in what remains.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Ends the antagonist arc without a fight and clears the room for the choice about what comes next.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · A new universe",
+          "text": "They ask God for a universe without Heaven or Hell. God remakes everything; in the new world Professor Anthony Crowley meets bookseller Asa Fell, and years later they live married in the South Downs.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The show's final state: the pair as ordinary humans together, with the celestial machinery gone.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The old universe has been erased at their request and remade without angels, demons, Heaven, Hell or God. In the new world, Aziraphale and Crowley live as Asa Fell and Anthony Crowley, married in a cottage in the South Downs, with no visible memory of what came before.",
+        "questions": [
+          "Does any part of Fell and Crowley remember the world they gave up?",
+          "Is anything of the old universe — God, Satan, the people they knew — actually preserved?",
+          "Is there anything beyond this new universe, as Fell suspects when he asks?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Asa Fell (Aziraphale)",
+          "line": "In the remade universe a human bookseller, married to Anthony Crowley and quietly wondering whether anything lies beyond this world."
+        },
+        {
+          "name": "Anthony Crowley (Crowley)",
+          "line": "In the remade universe a human professor, married to Asa Fell in the South Downs and content that he already has everything he ever wanted."
+        },
+        {
+          "name": "The Metatron",
+          "line": "The voice of God who was running the Second Coming; vanished at the start of the season and never seen again."
+        },
+        {
+          "name": "Michael",
+          "line": "The Archangel who was secretly dismantling reality with the Book of Life; after being forgiven, she burned her own page and erased herself."
+        },
+        {
+          "name": "Uriel",
+          "line": "Archangel who confronted Michael over the disappearances; erased when Michael burned her page from the Book of Life."
+        },
+        {
+          "name": "Sandalphon",
+          "line": "Archangel assigned by Aziraphale to guard the resurrected Jesus; murdered early in the season, the first sign something was very wrong in Heaven."
+        }
+      ]
+    }
+  }
+}

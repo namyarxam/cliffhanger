@@ -1,0 +1,311 @@
+{
+  "slug": "the-newsroom",
+  "generatedFor": "The Newsroom",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Will Snaps",
+          "text": "Will's Northwestern rant goes viral. His EP quits with most of the staff, and Charlie replaces him with Mac — Will's ex — to build the show around what Will just said.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the whole premise: a public rant forces a private reunion with the ex who broke him, and everything after is downstream of that pairing.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · News Night 2.0",
+          "text": "Mac's News Night 2.0 launches into Deepwater Horizon coverage. She promotes Maggie, drafts Sloan for economics, and installs Jim as her number two.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Establishes the newsroom line-up — Jim, Maggie, Sloan — that every later triangle and crisis runs through.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Affair Slips Out",
+          "text": "Mac accidentally tells the newsroom she cheated on Will years ago. Their working truce holds, but any chance of repairing the relationship stalls.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The cheating is the reason Will and Mac cannot reconcile; keeping it live is what makes the eventual S2 proposal land.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Jim, Maggie, Don",
+          "text": "Mac pushes Jim toward Maggie despite Maggie dating Don. Jim's feelings deepen and Maggie films a confession to him, which someone posts online.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The leaked video is the trigger for the S2 Don–Maggie breakup and for Jim fleeing to the Romney bus.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Tea Party Crusade",
+          "text": "Will builds a nightly crusade against the Tea Party and the Koch brothers, drawing viewers back but making corporate enemies of AWM CEO Leona Lansing.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "This posture, and Leona's resulting hatred, is what drives both the S1 finale showdown and S2's 'American Taliban' fallout.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Bin Laden, High",
+          "text": "Will reports the killing of bin Laden while high on marijuana cookies eaten at his own party — a career-ending detail if it ever leaks.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Loads the gun that TMI aims at Will in the finale; the resolution of that threat defines the season's ending balance of power.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Showdown",
+          "text": "Leona demands Will's firing; he, Mac and Charlie refuse. TMI has the bin Laden story, but they got it by hacking Mac's voicemail, killing the threat.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The team wins the immediate corporate fight but not the war — Leona and Reese are still overhead going into S2.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "News Night has survived Leona's attempt to end it, but Will and Mac are still not reconciled, and Maggie's on-camera confession of love for Jim has just leaked online while she is still dating Don.",
+        "questions": [
+          "Can Will and Mac ever move past her infidelity?",
+          "What happens to Maggie and Don once the video reaches them?",
+          "Will Leona and Reese let this crusade continue much longer?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Will McAvoy",
+          "line": "ACN's 8pm anchor, publicly transformed since the Northwestern rant, and at open war with the parent company that pays him."
+        },
+        {
+          "name": "MacKenzie McHale",
+          "line": "News Night's new EP and Will's ex; the affair she had years ago is now newsroom knowledge and their reconciliation is stalled."
+        },
+        {
+          "name": "Charlie Skinner",
+          "line": "ACN's news-division president; whiskey-drinking mentor who hired Mac and shields the show from Leona and Reese."
+        },
+        {
+          "name": "Jim Harper",
+          "line": "Mac's senior producer, quietly in love with Maggie, and the one steering News Night's day-to-day journalism."
+        },
+        {
+          "name": "Maggie Jordan",
+          "line": "Promoted from Will's assistant to associate producer; dating Don, but her filmed confession of feelings for Jim is now online."
+        },
+        {
+          "name": "Don Keefer",
+          "line": "Former News Night EP, now runs ACN's 10pm show; dating Maggie, and about to find out about the video."
+        },
+        {
+          "name": "Sloan Sabbith",
+          "line": "ACN's economics anchor, drafted onto News Night for a nightly segment; sharp, blunt, still socially on the outside."
+        },
+        {
+          "name": "Neal Sampat",
+          "line": "News Night's web producer; harmless obsessive whom Mac and Will trust for niche digital instincts."
+        },
+        {
+          "name": "Leona Lansing",
+          "line": "AWM CEO whose attempt to have Will fired just failed; still holds the leash and still hates the show."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · The American Taliban",
+          "text": "Will calls the Tea Party 'the American Taliban' and gets condemned on the House floor. Charlie pulls him off the 9/11 anniversary broadcast.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Frames the season's political vulnerability and the reason Jim exits for the Romney bus, opening the seat Jerry will fill.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Jerry Arrives",
+          "text": "Jim escapes to the Romney campaign bus, and Mac calls in DC producer Jerry Dantana to replace him. Jerry brings a tip about a black-ops mission called Genoa.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces both the man who will fabricate the story and the story itself — the entire season is downstream of this one hire.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Maggie in Uganda",
+          "text": "Maggie takes a PR trip to a Ugandan orphanage. A boy named Daniel is shot dead while she carries him; she comes home drinking, and cuts and dyes her hair.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The Uganda trauma is the reason Maggie is unraveling on screen and unreliable as a witness — a state that carries directly into S3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Building Genoa",
+          "text": "The team lines up sources for the Genoa story, but Jerry secretly edits General Stomtonovich's interview to fabricate on-camera confirmation that sarin was used.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The edit is the exact moment the story becomes a lie; every ACN character's later reputation problem starts here.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Retraction",
+          "text": "Genoa airs. Discrepancies surface, Mac catches Jerry's edit and fires him, and every original source falls apart. The story was false.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The retraction is the credibility hit ACN will spend all of S3 trying to walk off; it also sets up Jerry's lawsuit.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Resignations Refused",
+          "text": "Will, Mac and Charlie try to resign; Leona and Reese refuse to accept. Jerry sues for wrongful termination, naming Don as well.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The trio stays in place — that's the reason S3 has the same command structure — and Jerry's lawsuit is the outstanding legal threat.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Election Night",
+          "text": "On election night Will proposes to Mac and she says yes. Sloan and Don finally get together. The team is bruised but intact heading into a lawsuit.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Locks the two central couples in place; S3's marriage, pregnancy and Don–Sloan domesticity all follow from this night.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "ACN has retracted Genoa, kept its senior staff, and paired off Will–Mac and Don–Sloan, but the retraction has gutted the network's credibility and Jerry Dantana is suing.",
+        "questions": [
+          "Can ACN's journalism survive the loss of viewer trust?",
+          "Will Maggie ever recover from Uganda?",
+          "How badly does Jerry's lawsuit hurt Don and the network?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Will McAvoy",
+          "line": "Anchor of the retracted Genoa broadcast; newly engaged to Mac and personally battered by his father's death."
+        },
+        {
+          "name": "MacKenzie McHale",
+          "line": "EP and now Will's fiancée; the one who caught Jerry's edit, and the person who has to steer ACN through the fallout."
+        },
+        {
+          "name": "Charlie Skinner",
+          "line": "News-division president; his own fake-manifest source helped ACN believe Genoa, and he wears that mistake."
+        },
+        {
+          "name": "Jim Harper",
+          "line": "Back from covering the Romney campaign; now dating reporter Hallie Shea, still senior producer at News Night."
+        },
+        {
+          "name": "Maggie Jordan",
+          "line": "Traumatised after Uganda — cropped red hair, drinking hard, split from Don, showing the strain on screen."
+        },
+        {
+          "name": "Don Keefer",
+          "line": "10pm producer; split from Maggie, quietly together with Sloan, and now personally named in Jerry's lawsuit."
+        },
+        {
+          "name": "Sloan Sabbith",
+          "line": "ACN economics anchor now with Don; survived a nude-photo leak by tracking down and punching her ex."
+        },
+        {
+          "name": "Jerry Dantana",
+          "line": "Former DC-bureau producer who faked the Genoa edit; now fired and suing ACN for wrongful termination."
+        },
+        {
+          "name": "Hallie Shea",
+          "line": "Reporter Jim met on the Romney bus and is now dating; based in Washington."
+        },
+        {
+          "name": "Leona Lansing",
+          "line": "AWM CEO who refused to let Will, Mac and Charlie resign after Genoa — she still controls their fate."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Boston",
+          "text": "Covering the Boston Marathon bombing, ACN plays it cautious after Genoa. Maggie steps in for a sick Elliot and reports well, restoring some of her standing.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Shows ACN operating under the shadow of its own retraction and marks Maggie's turn away from her S2 collapse.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Neal's Source",
+          "text": "Neal is sent leaked classified documents and, coaching the source on how to send more, unwittingly commits espionage. The FBI comes for ACN's computers.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "This is the spine of the season's legal jeopardy — everything from Will's jail time to Neal's exile flows from this one leak.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Hostile Takeover",
+          "text": "Reese's half-siblings move on AWM. Leona buys them out, but to save the company she agrees to sell ACN to libertarian billionaire Lucas Pruit.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Installs the new owner whose values reshape ACN in the back half of the season, and whose clash with Charlie proves fatal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Contempt",
+          "text": "Neal flees to Venezuela. Will refuses to name Neal's source, is held in contempt and jailed. Before going in, he and Mac marry at the courthouse.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Puts Will offstage during the newsroom's biggest changes and formalises the Will–Mac partnership that anchors the ending.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Pruit and Charlie",
+          "text": "Pruit pushes celebrity-stalking apps and user-generated content. Sloan trashes the app on air; Charlie clashes with Don over an ambush interview and dies of a heart attack.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Charlie's death is the pivot the whole finale turns on — the vacancy at the top of the news division is what promotes Mac.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Mac Runs the Network",
+          "text": "At Charlie's funeral, Leona persuades Pruit to appoint Mac network president. Mac makes Jim News Night's EP; Don stays with the 10pm show.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The new command structure — Mac up, Jim in her old chair — is the state the show ends in.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Maggie, Jim, a Baby",
+          "text": "Maggie takes a DC field-producer job, and she and Jim finally admit their feelings. Mac tells Will she is pregnant.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Resolves the show's longest-running triangle and locks in the personal futures of the two central couples.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Charlie is dead, ACN belongs to Lucas Pruit, and Mac is now running the network with Jim in her old EP chair. Will is out of jail, married to Mac, and expecting a baby; Maggie is heading to DC.",
+        "questions": [
+          "Can Mac protect News Night's mission from inside Pruit's regime?",
+          "Will Jim and Maggie survive a long-distance relationship?",
+          "What kind of news network does ACN become under Pruit?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Will McAvoy",
+          "line": "Free after a contempt-of-court jail stint; married to Mac and about to become a father."
+        },
+        {
+          "name": "MacKenzie McHale",
+          "line": "ACN's newly appointed network president; married to Will and pregnant."
+        },
+        {
+          "name": "Charlie Skinner",
+          "line": "Recently deceased news-division president; his heart attack at work opened the seat Mac was elevated into."
+        },
+        {
+          "name": "Jim Harper",
+          "line": "The new EP of News Night; finally together with Maggie, though she is moving to DC."
+        },
+        {
+          "name": "Maggie Jordan",
+          "line": "Taking a field-producer job in Washington; recovered from Uganda and, at last, with Jim."
+        },
+        {
+          "name": "Don Keefer",
+          "line": "Stayed on the 10pm show rather than take the EP job; still with Sloan."
+        },
+        {
+          "name": "Sloan Sabbith",
+          "line": "On-air economist, with Don, and the person who publicly killed Pruit's celebrity-stalking app on the show."
+        },
+        {
+          "name": "Neal Sampat",
+          "line": "Back from a stint hiding in Venezuela; rebuilding ACN Digital in the newsroom."
+        },
+        {
+          "name": "Lucas Pruit",
+          "line": "ACN's new owner: young, libertarian, and pushing user-generated content and stalking apps against the newsroom's will."
+        },
+        {
+          "name": "Leona Lansing",
+          "line": "Former AWM CEO who sold ACN to Pruit to fend off her half-nephews' hostile takeover; still a power broker overhead."
+        }
+      ]
+    }
+  }
+}

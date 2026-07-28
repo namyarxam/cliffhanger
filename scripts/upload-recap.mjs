@@ -35,6 +35,7 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createClient } from '@supabase/supabase-js';
 import { evaluate } from './eligibility.mjs';
+import { tokens } from './name-match.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = resolve(ROOT, 'src/recap/data');
@@ -76,26 +77,11 @@ async function loadEnv() {
 
 // ---------------------------------------------------------------- matching
 
-// Rank, title and honorific words that are never the name. Stripped from both
-// sides before matching, since the spine writes "Rhaenyra Targaryen" while the
-// cast list says "Princess Rhaenyra Targaryen".
-const TITLES = new Set([
-  'sheriff', 'deputy', 'judge', 'mayor', 'dr', 'doctor', 'mr', 'mrs', 'ms',
-  'captain', 'cap', 'chief', 'admiral', 'secretary', 'sergeant', 'sgt', 'lt',
-  'colonel', 'commander', 'general', 'major', 'officer', 'detective', 'agent',
-  'professor', 'father', 'sister', 'brother', 'aunt', 'uncle',
-  // Fantasy and period titles — House of the Dragon and Game of Thrones are
-  // almost entirely titles.
-  'king', 'queen', 'prince', 'princess', 'lord', 'lady', 'ser', 'sir', 'maester',
-  'grand', 'septa', 'septon', 'khal', 'khaleesi', 'archmaester', 'the',
-]);
-
-const tokens = s =>
-  s
-    .toLowerCase()
-    // Quoted nicknames are names too — Corlys 'The Sea Snake' Velaryon.
-    .split(/[^a-z]+/)
-    .filter(t => t.length > 2 && !TITLES.has(t));
+// Tokeniser is shared with fetch-recap and audit-spine via name-match.mjs, so
+// the three stages agree on who a name resolves to. It used to be forked here,
+// which is how a fix to short names and "(voice)" role qualifiers reached the
+// fetch-time linking but not this composition step — Vi ended up with a still
+// on disk and no still on her card.
 
 function composer(data, castLinks) {
   const keyArt = data.backdrop ?? data.backdrops?.[0] ?? data.poster;

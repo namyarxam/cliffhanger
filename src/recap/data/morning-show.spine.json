@@ -1,0 +1,317 @@
+{
+  "slug": "morning-show",
+  "generatedFor": "The Morning Show",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Alex is coaxed back",
+          "text": "Cory begs Alex to return to TMS to save its ratings; she refuses him in Maine, then a psychic reading pushes her to call him back.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Every subsequent beat depends on Alex being back inside UBA where the Mitch and Maggie storylines can catch her.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The book bomb",
+          "text": "Alex learns Maggie Brener's book will expose her affair with Mitch, so she flies to Italy to demand he publicly deny it.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Sets up her fateful Italy trip and the Mitch reunion that closes his story.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Mitch drives off the cliff",
+          "text": "Alex and Mitch quarantine together and part on tender terms; hours later, crushed by his public image, Mitch drives off a cliff.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Removes Mitch from the board and hands Alex a secret trip that will destroy her when it leaks.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Memorial footage leaks",
+          "text": "UBA breaks Mitch's death on-air. Leaked footage of Alex at his memorial goes viral, sending her into hiding as the backlash mounts.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Turns Alex from prodigal returnee into pariah — the ledger her next two seasons keep trying to balance.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Bradley outed",
+          "text": "Bradley falls for guest anchor Laura Peterson but is outed on-air by Cory; her addict brother Hal keeps spiraling through her life.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Establishes the Laura relationship and the Hal problem that both detonate the next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Done apologizing",
+          "text": "Alex catches COVID; from her sickbed she goes on TMS and tells the country she is done apologizing for who she is.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Resets Alex publicly and gives the show its post-Mitch voice for her.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Cory says it out loud",
+          "text": "Cory helps Bradley find Hal and confesses he loves her. Daniel quits UBA to care for his grandfather as the country locks down.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Plants the Cory-Bradley current the entire next season runs on, and clears Daniel off the board.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Alex is sick with COVID and openly refusing to apologize for who she is on national television. Bradley has walked off the show to find her missing brother, moments after Cory told her he is in love with her.",
+        "questions": [
+          "Can Alex come back from the Mitch memorial fallout or is her career over?",
+          "What does Bradley do with Cory's confession once Hal is safe?",
+          "Does UBA survive without Mitch, without Daniel, and possibly without Alex?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Alex Levy",
+          "line": "TMS anchor coaxed back from a Maine sabbatical, ending the season quarantined with COVID and publicly defiant after her Mitch affair was aired."
+        },
+        {
+          "name": "Bradley Jackson",
+          "line": "TMS co-host outed as bisexual on-air; has taken leave to find her missing addict brother Hal."
+        },
+        {
+          "name": "Cory Ellison",
+          "line": "UBA network chief who staked his job on getting Alex back and just confessed his love to Bradley while helping her hunt for Hal."
+        },
+        {
+          "name": "Chip Black",
+          "line": "Alex's re-hired executive producer, cleaning up the Mitch fallout he never fully escaped."
+        },
+        {
+          "name": "Mitch Kessler",
+          "line": "Disgraced former co-anchor who drove off a cliff in Italy in an apparent suicide after Alex left him."
+        },
+        {
+          "name": "Laura Peterson",
+          "line": "NBN anchor whose brief romance with Bradley detonated when Cory outed them live on TMS."
+        },
+        {
+          "name": "Hal Jackson",
+          "line": "Bradley's addict brother, finally located in a COVID hospital ward after a bender through her life."
+        },
+        {
+          "name": "Stella Bak",
+          "line": "UBA's new news division president, brought in to modernise a network in freefall."
+        },
+        {
+          "name": "Mia Jordan",
+          "line": "TMS producer, still bruised by the documentary that surfaced her past with Mitch."
+        },
+        {
+          "name": "Yanko Flores",
+          "line": "TMS weather anchor, suspended after a viral street fight during the COVID panic."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Paul Marks arrives",
+          "text": "Two years on, Bradley has the evening news and Alex still hosts TMS. Both are drawn into billionaire Paul Marks' secret bid to buy UBA.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the antagonist whose acquisition drives every conflict in the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The hack",
+          "text": "UBA is hit by a massive hack; leaked emails oust racist board chair Cybil, and Paul walks from the deal calling the network too toxic.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The hack is the season's engine — every private thing that surfaces later comes from it, and Cybil's ouster reshapes the board.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Alex and Paul, Stella promised the throne",
+          "text": "Alex begins a secret affair with Paul, who returns to close the deal — and privately promises Stella she will replace Cory as CEO.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Locks in the two personal betrayals — Alex sleeping with the buyer, Stella agreeing to knife Cory — that decide the endgame.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Hal cover-up",
+          "text": "A flashback reveals Bradley filmed Hal assaulting a Capitol officer on Jan 6, then had Cory help her hide the footage from the FBI.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Plants the secret Paul later weaponises against Bradley and Cory, and the crime Bradley eventually turns herself in for.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The kiss photo leaks",
+          "text": "The Vault leaks a photo of Alex kissing Paul, prompting her to fire Chip over the fallout. Laura uncovers the Hal cover-up.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Blows both couples' cover, ejects Chip from Alex's orbit, and starts Laura's break with Bradley.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Bradley walks off-air",
+          "text": "Cybil buys a majority stake to block Paul. Bradley, spooked by his surveillance, resigns on-air mid-Ukraine broadcast.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Removes Bradley from her seat and sets up the FBI cooperation that ends the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Paul is exposed",
+          "text": "Alex reveals Paul faked the hack to hide a rocket failure, killing his deal. Bradley cooperates with the FBI to turn Hal in.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Ends the acquisition, ends Bradley's cover-up, and defines who owes what to whom going into the merger era.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Alex has just killed Paul's UBA takeover by threatening to expose that he faked the hack to hide a rocket failure. Bradley has resigned on-air and is walking into an FBI interview to turn her brother in for the Jan 6 assault she once covered up.",
+        "questions": [
+          "Does UBA survive on the alternative NBN merger Alex just brokered?",
+          "What happens to Bradley and Hal now that she has handed him over?",
+          "Can Cory's name recover from Paul's planted grooming story?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Alex Levy",
+          "line": "TMS anchor whose affair with Paul was leaked; now armed with proof he faked UBA's hack and prepared to use it."
+        },
+        {
+          "name": "Bradley Jackson",
+          "line": "Just resigned from the evening news on-air; cooperating with the FBI to turn her brother Hal in."
+        },
+        {
+          "name": "Cory Ellison",
+          "line": "UBA CEO whose reputation was destroyed when Paul planted a story that he groomed Bradley."
+        },
+        {
+          "name": "Paul Marks",
+          "line": "Billionaire tech founder whose takeover of UBA has just collapsed after Alex exposed his rocket cover-up."
+        },
+        {
+          "name": "Chip Black",
+          "line": "Alex's former executive producer, fired by her after the leaked-photo fight and then instrumental in unmasking Paul."
+        },
+        {
+          "name": "Stella Bak",
+          "line": "UBA news president who was secretly promised Paul's CEO seat before helping to torch his deal."
+        },
+        {
+          "name": "Laura Peterson",
+          "line": "Bradley's ex; her network NBN is now the alt merger partner keeping UBA alive."
+        },
+        {
+          "name": "Cybil",
+          "line": "Ousted board chair who returned as majority shareholder to block Paul's acquisition.",
+          "note": "surname not given in source"
+        },
+        {
+          "name": "Hal Jackson",
+          "line": "Bradley's brother, being handed to the FBI for the Jan 6 assault she once covered up for him."
+        },
+        {
+          "name": "Mia Jordan",
+          "line": "TMS producer, now with war correspondent Andre and freshly reminded of her past with Mitch by the documentary."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · The defection and the deepfake",
+          "text": "Two years later, UBA and NBN have merged. Alex helps an Iranian fencer defect on-air; a leaked deepfake threatens to burn her for it.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The deepfake plant is the first move by the season's real antagonist and hangs over every UBN decision that follows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Bradley returns with a plan",
+          "text": "Bradley comes back to TMS on FBI parole with a hidden agenda: an anonymous source claims UBA buried a chemical-plant poisoning story.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Launches the Wolf River investigation that becomes the season's spine.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Cory blackmails his way back in",
+          "text": "Cory, exiled to producing films, catches Stella in an affair with a board member's husband and blackmails her for an overall deal at UBN.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Puts Cory back inside the network and starts the Stella affair that later blows up on stage.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Sleeping with the target",
+          "text": "Bradley and Chip trace the cover-up toward a whistleblower in Belarus; Bradley starts sleeping with Cory while investigating him.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Fuses the Wolf River thread with the Cory-Bradley relationship and sets up the Belarus trip.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Stella's chatbot betrays her",
+          "text": "Stella's personal AI chatbot leaks her affair to the audience during UBN's launch event; humiliated, she resigns as CEO and leaves the country.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Opens the CEO seat that the rest of the season fights over.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Cory's mother did it",
+          "text": "Cory learns his own mother brokered the Wolf River cover-up to buy him his UBA job — tying him to the very story Bradley is chasing.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Forces Cory to choose between his mother's memory and helping Alex end Celine, which is the season's final pivot.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Alex resigns, Celine falls",
+          "text": "Blackmailed, Alex resigns on-air. She and Cory then expose Celine's Wolf River cover-up live, forcing her exit as Bradley is freed from Belarus.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Simultaneously ejects Alex from TMS, destroys the season's antagonist, and leaves UBN leaderless.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Alex has resigned from TMS but she and Cory have exposed Celine's Wolf River cover-up on live television, forcing Celine out of UBN. Bradley has been freed from a Belarus prison and the network is looking for its next interim CEO.",
+        "questions": [
+          "Who takes UBN now that Celine has fled and Stella is gone?",
+          "Where do Alex and Bradley land without a show to anchor?",
+          "Does the Cory-Alex alliance survive now that the enemy who forced it is gone?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Alex Levy",
+          "line": "Just resigned from TMS on-air, then publicly broke Celine's Wolf River cover-up alongside Cory."
+        },
+        {
+          "name": "Bradley Jackson",
+          "line": "Freed from a Belarus prison after chasing the story that got her detained; her broadcasting career in ruins."
+        },
+        {
+          "name": "Cory Ellison",
+          "line": "The man who handed Alex the EPA report that ended Celine; back in orbit at UBN but still shadowed by his own past cover-up."
+        },
+        {
+          "name": "Paul Marks",
+          "line": "Alex's ex, now with a new girlfriend, who briefly helped negotiate Bradley's release before Celine sabotaged the deal."
+        },
+        {
+          "name": "Celine Dumont",
+          "line": "UBN board member who orchestrated Alex's deepfake and inherited the Wolf River cover-up; fled to France after being exposed."
+        },
+        {
+          "name": "Stella Bak",
+          "line": "Former UBN CEO, humiliated when her AI chatbot leaked her affair on stage; now in Naples alone."
+        },
+        {
+          "name": "Chip Black",
+          "line": "Alex's producer and Bradley's Wolf River co-investigator."
+        },
+        {
+          "name": "Mia Jordan",
+          "line": "TMS producer who traced the deepfake back to Celine and passed the finding to Alex."
+        },
+        {
+          "name": "Martin Levy",
+          "line": "Alex's estranged law-professor father who advised her to sue Celine after she was pushed out."
+        },
+        {
+          "name": "Ben",
+          "line": "UBN's new head of news who defied Celine and ran Alex's exposé on TMS.",
+          "note": "surname not given in source"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,810 @@
+{
+  "slug": "outlander",
+  "generatedFor": "Outlander",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Through the stones",
+          "text": "In 1945, WWII nurse Claire touches a stone at Craigh na Dun and wakes in 1743, rescued from Frank's brutal ancestor Black Jack Randall by Highlander Jamie Fraser.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the whole premise: two timelines, two men, and the enemy who will drive the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Guest at Castle Leoch",
+          "text": "At Castle Leoch she is suspected as a spy but earns her place as healer under laird Colum MacKenzie, and hears a folk tale that the stones can send her home.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Establishes her captivity, her cover, and the first hope that time travel is real and reversible.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · On the road with Dougal",
+          "text": "Riding with Colum's brother Dougal she learns he is raising funds for the doomed Jacobite rising, and Black Jack Randall recaptures her at Fort William.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Reveals the political stakes and puts her back in Randall's hands, forcing the marriage.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The wedding",
+          "text": "To keep Claire out of English hands, Dougal makes her marry Jamie so she becomes Scottish by law; despite loving Frank, she falls for Jamie for real.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The show's central love story is built here — everything else in the series flows from this bond.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Witch trial",
+          "text": "Convicted of witchcraft with secret time-traveller Geillis Duncan, Claire is saved when Geillis takes the blame; at the stones she chooses Jamie over 1945.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Confirms Claire's active choice to stay in the past, and plants Geillis as a 1968 traveller.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Wentworth",
+          "text": "Jamie is captured at Wentworth Prison and broken by Black Jack Randall through rape and torture; Murtagh rescues him but his mind is shattered.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "The trauma that defines Jamie's psychology going into S2 and haunts him for seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Sailing for France",
+          "text": "They flee for France so Claire can try to prevent the coming Battle of Culloden — and she tells a broken Jamie she is carrying his child.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "Sets the entire S2 mission (stop Culloden) and the pregnancy that drives it.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "A shattered Jamie and a pregnant Claire sail for France, hoping to derail Prince Charles Stuart's rebellion before it can lead to Culloden.",
+        "questions": [
+          "Can Jamie recover from what Randall did to him?",
+          "Can two people really change the course of history?",
+          "What happens to the child Claire is carrying?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Claire Randall Fraser",
+          "line": "1945 combat nurse thrown to 1743; now Jamie's wife, pregnant, bound for France to try to stop Culloden."
+        },
+        {
+          "name": "Jamie Fraser",
+          "line": "Young Highland warrior with a price on his head; Claire's second husband, traumatised after Wentworth."
+        },
+        {
+          "name": "Frank Randall",
+          "line": "Claire's 20th-century husband, still searching for her at the stones in 1946."
+        },
+        {
+          "name": "Captain Jonathan \"Black Jack\" Randall",
+          "line": "Sadistic English dragoon and Frank's ancestor, left for dead by Murtagh at Wentworth."
+        },
+        {
+          "name": "Dougal MacKenzie",
+          "line": "Clan MacKenzie war chief, secretly raising funds for the Jacobite cause."
+        },
+        {
+          "name": "Colum MacKenzie",
+          "line": "Ailing laird of Castle Leoch, trying to keep his clan out of the coming rebellion."
+        },
+        {
+          "name": "Murtagh Fitzgibbons Fraser",
+          "line": "Jamie's grim godfather; engineered the Wentworth rescue and sails to France with them."
+        },
+        {
+          "name": "Geillis Duncan",
+          "line": "Fellow time-traveller from 1968; burned as a witch, pregnant with Dougal's child."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Return to 1948",
+          "text": "Framed around 1948: Claire has come back through the stones to Frank, pregnant with Jamie's child, and vows a new life raising the baby as their own.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The whole season is a flashback bracketed by this return; establishes she does make it home.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Paris plot",
+          "text": "Back in 1744 Paris, Claire and Jamie court Prince Charles Stuart, Versailles and the Duke of Sandringham, trying to sabotage the Jacobite rebellion from within.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Establishes the season's central mission and the political world they must manipulate.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Randall lives",
+          "text": "Claire discovers Black Jack Randall is alive and hides it from Jamie; Jamie takes in a Parisian pickpocket boy named Fergus and adopts him.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Reactivates the Randall wound and introduces Fergus, who becomes family from here on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The dinner party",
+          "text": "A dinner staged to discredit Charles collapses in scandal; en route Mary Hawkins is raped, and Jamie later duels Randall despite his promise to Claire.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The pivot that costs them everything in Paris and puts Jamie in the Bastille.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Faith",
+          "text": "A pregnant Claire collapses at the duel; their daughter Faith is stillborn, and Claire sleeps with Louis XV to buy Jamie's freedom before they leave Paris.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The season's emotional low point; Faith's name and fate matter far later.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Prestonpans and Dougal",
+          "text": "Back in Scotland Jamie is dragged into the doomed rising, wins Prestonpans, and finally kills Dougal to keep secret a last plot to stop Prince Charles.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Ends the Scottish uprising arc and removes Dougal for good; the Prince has slipped their grip.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Eve of Culloden",
+          "text": "On the eve of Culloden Jamie sends a pregnant Claire back through the stones; in 1968 she learns from Roger that Jamie survived the battle.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Splits the timelines for the next season and gives Claire (and the audience) a reason to go back.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Twenty years on, Claire knows Jamie lived through Culloden but not where or when to find him now; Brianna has just learned Frank is not her father, and Geillis Duncan has already vanished into the stones ahead of them.",
+        "questions": [
+          "Where in history has Jamie ended up?",
+          "Will Brianna help her mother find him?",
+          "What did Geillis go back to do?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Claire Fraser",
+          "line": "In 1968 Inverness, twenty years widowed from Frank, chasing a trail that says Jamie survived Culloden."
+        },
+        {
+          "name": "Jamie Fraser",
+          "line": "Sent Claire home before Culloden; survived the battle, whereabouts unknown from 1746 onward."
+        },
+        {
+          "name": "Brianna Randall",
+          "line": "Twenty-year-old daughter of Claire and Jamie; only now learning her real father is a Highlander from the 1700s."
+        },
+        {
+          "name": "Roger Wakefield",
+          "line": "Reverend Wakefield's grown ward, the historian who tracked Jamie's survival and shows Claire the proof."
+        },
+        {
+          "name": "Frank Randall",
+          "line": "Raised Brianna as his own daughter; now dead."
+        },
+        {
+          "name": "Fergus",
+          "line": "French orphan Jamie adopted in Paris; the closest thing Jamie has to a son during Culloden."
+        },
+        {
+          "name": "Faith Fraser",
+          "line": "Claire and Jamie's daughter, stillborn in Paris and buried there."
+        },
+        {
+          "name": "Geillis Duncan / Gillian Edgars",
+          "line": "1968 activist revealed as the same time-traveller from S1; already stepped back through the stones."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Boston without Jamie",
+          "text": "In 1948 Boston, Claire raises Jamie's daughter Brianna with Frank; their marriage strains under Jamie's ghost until Frank dies in a car crash years later.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Closes out the 20th-century marriage and frees Claire to eventually return.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Twenty years on the run",
+          "text": "Jamie survives Culloden after killing Randall, spared by Lord Melton; he lives as a Lallybroch outlaw for years, then surrenders so his family can claim the reward.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Explains the gap and how Jamie enters English custody, which sets up Ardsmuir.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ardsmuir and Helwater",
+          "text": "At Ardsmuir Jamie befriends the young English governor Lord John Grey; paroled to Helwater, he fathers a secret son William with the doomed Geneva Dunsany.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Introduces Lord John and William, who become permanent fixtures.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Back through the stones",
+          "text": "In 1968, Brianna, Roger and Claire find Jamie's trail in an Edinburgh print shop; Claire steps back through the stones for good.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The reunion the season has been building to and Claire's final one-way trip.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Reunion and Laoghaire",
+          "text": "Reunited with Jamie, Claire meets grown Fergus and nephew Young Ian, then discovers at Lallybroch that Jamie has taken Laoghaire as a second wife.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Introduces Young Ian and reactivates Laoghaire, both of whom drive later plots.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Chase to Jamaica",
+          "text": "Young Ian is kidnapped from Silky Isle to Jamaica; Jamie and Claire pursue on the Artemis and reach Kingston, where Governor Lord John hosts them at a ball.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Puts everyone on the boat that will wreck them onto a new continent.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Shipwrecked in Georgia",
+          "text": "They rescue Ian from Geillis Duncan, who dies at Claire's hand; escaping by sea they are shipwrecked and wash up on the shore of colonial Georgia.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Kills off Geillis and relocates the entire show to the American colonies.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Claire and Jamie are alive but stranded on a beach in British America, with no ship, no plan, and enemies both English and colonial still hunting Jamie.",
+        "questions": [
+          "How do they build a life here?",
+          "Who else in the Colonies knows Jamie is a wanted man?",
+          "What becomes of Young Ian after everything he has just seen?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Claire Fraser",
+          "line": "Reunited with Jamie for good, now washed up in the American colonies after fleeing Jamaica."
+        },
+        {
+          "name": "Jamie Fraser",
+          "line": "Former Edinburgh printer and smuggler; wanted for treason and murder in the British Empire."
+        },
+        {
+          "name": "Brianna Randall Fraser",
+          "line": "Their daughter, left behind in 1968 knowing her true father."
+        },
+        {
+          "name": "Roger Wakefield MacKenzie",
+          "line": "Historian in 1968; in love with Brianna and the only other person who knows Claire is gone."
+        },
+        {
+          "name": "Lord John Grey",
+          "line": "Former Ardsmuir governor, now Governor of Jamaica; Jamie's closest friend and William's guardian."
+        },
+        {
+          "name": "William Ransom",
+          "line": "Jamie's secret son by Geneva Dunsany, being raised as an English earl by Lord John and Isobel."
+        },
+        {
+          "name": "Young Ian Murray",
+          "line": "Jenny's teenage son, rescued from Geillis in Jamaica; now in the Colonies with Jamie and Claire."
+        },
+        {
+          "name": "Fergus Fraser",
+          "line": "Grown adopted son of Jamie, married to Laoghaire's daughter Marsali."
+        },
+        {
+          "name": "Laoghaire MacKenzie",
+          "line": "Jamie's second wife by law; still living, still owed alimony."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Meeting Stephen Bonnet",
+          "text": "Stranded in North Carolina, Jamie and Claire help escaped pirate Stephen Bonnet flee the noose — who then robs them of Geillis's gemstones and Claire's wedding ring.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces Bonnet, the season's antagonist, and plants the ring that later exposes him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Fraser's Ridge",
+          "text": "At his aunt Jocasta's plantation River Run, Jamie refuses to inherit her slaves; they settle Fraser's Ridge in Cherokee country on land granted by Governor Tryon.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Establishes the Ridge as the new home base and Jamie's debt to Tryon.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Murtagh reappears",
+          "text": "Jamie is reunited with Murtagh, now a blacksmith and secret leader of the Regulator movement against Tryon's colonial government.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Sets up the collision course between Jamie's oath to Tryon and his loyalty to Murtagh.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Brianna comes back",
+          "text": "In 1970 Brianna discovers her parents will die in a fire and travels back through the stones without telling Roger; he follows on Bonnet's ship.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Brings the 20th-century family into the 18th century for good, and puts Roger under Bonnet's control.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Wilmington",
+          "text": "In Wilmington Stephen Bonnet brutally rapes Brianna; Roger arrives but is misidentified as the attacker, beaten senseless by Jamie, and sold to the Mohawk.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The wound at the centre of the rest of the season and Brianna's pregnancy.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Rescue from the Mohawk",
+          "text": "Jamie, Claire and Young Ian track Roger to the Mohawk; Ian offers himself in Roger's place so Roger can return to a pregnant Brianna.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Trades one family member for another and leaves Young Ian with the Mohawk going into S5.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Tryon's letter",
+          "text": "Roger accepts Brianna's child as his own; then Governor Tryon orders Jamie to hunt down and kill the Regulator leader — his own godfather Murtagh.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The impossible order that opens the next season.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Jamie has been ordered by the man who granted him his land to hunt down and kill his own godfather, while Young Ian remains a captive of the Mohawk.",
+        "questions": [
+          "Can Jamie refuse Tryon without losing Fraser's Ridge?",
+          "Whose child is Brianna carrying — Roger's or Bonnet's?",
+          "Will Young Ian ever come home?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jamie Fraser",
+          "line": "Laird of Fraser's Ridge in North Carolina, sworn to Tryon under threat and now ordered against Murtagh."
+        },
+        {
+          "name": "Claire Fraser",
+          "line": "Rebuilding as healer on the frontier, reunited with the daughter she had not seen for twenty years."
+        },
+        {
+          "name": "Brianna Fraser MacKenzie",
+          "line": "New mother of a son of uncertain paternity after Bonnet's assault."
+        },
+        {
+          "name": "Roger MacKenzie",
+          "line": "Returned from the Mohawk to a pregnant Brianna; has accepted the child as his own."
+        },
+        {
+          "name": "Young Ian Murray",
+          "line": "Given to the Mohawk in Roger's place; being adopted into the tribe."
+        },
+        {
+          "name": "Lord John Grey",
+          "line": "Visited the Ridge with young William; Jamie's oldest friend and William's guardian."
+        },
+        {
+          "name": "William Ransom",
+          "line": "A young English heir growing into himself, still unaware Jamie is his father."
+        },
+        {
+          "name": "Murtagh Fitzgibbons",
+          "line": "Jamie's godfather and Regulator leader; the man Tryon has just ordered Jamie to kill."
+        },
+        {
+          "name": "Stephen Bonnet",
+          "line": "Escaped pirate, thief, and Brianna's rapist; still at large with Claire's wedding ring."
+        },
+        {
+          "name": "Jocasta Cameron",
+          "line": "Jamie's blind aunt at River Run, matriarch of the plantation and sponsor to Brianna."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Cunningham and the book",
+          "text": "On Fraser's Ridge, ex-Tory Captain Cunningham arrives with trader Hiram Crombie; Jamie reads Frank Randall's book warning of his own death at the Battle of Kings Mountain.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Names the season's antagonist and its fixed-date threat to Jamie's life.",
+          "needsVerify": true
+        },
+        {
+          "label": "S5 · Fergus's parentage",
+          "text": "Percival Beauchamp arrives to reveal Fergus's true parentage — son of the Comte St Germain — and offers to hand him the Comte's Paris estate.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Sets up Fergus's later inheritance and Marsali's post-Fergus survival.",
+          "needsVerify": true
+        },
+        {
+          "label": "S5 · Cunningham exposed",
+          "text": "Cunningham is unmasked as a British spy recruiting loyalists on Jamie's land; when he attacks Jamie, Buck MacKenzie shoots him and leaves him paralysed.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Breaks Cunningham's plot but binds Jamie to the militia leader Cleveland who came to help.",
+          "needsVerify": true
+        },
+        {
+          "label": "S5 · Fire and Faith",
+          "text": "Fergus dies in a print-shop fire; a lace square and an old song tie the orphan Fanny to Claire's daughter Faith, hinting Faith did not die in Paris.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Kills off Fergus and cracks open the season's biggest mystery about Claire's stillborn child.",
+          "needsVerify": true
+        },
+        {
+          "label": "S5 · William reconciles",
+          "text": "William and Jamie reconcile in the forest; William confronts Amaranthus over her role in faking his cousin Ben's death, and finds Ben alive as a Continental turncoat.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Repairs the father-son wound and opens the Ben Grey / Amaranthus triangle for later.",
+          "needsVerify": true
+        },
+        {
+          "label": "S5 · Rescuing Lord John",
+          "text": "Captain Richardson kidnaps Lord John; the family free him and Richardson is revealed as a fellow time-traveller trying to keep the Colonies British — John kills him.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Confirms other travellers with agendas exist, and puts Jamie and John back on the same side.",
+          "needsVerify": true
+        },
+        {
+          "label": "S5 · Marriage of convenience",
+          "text": "Jamie is reported drowned at sea and Lord John marries Claire to save her from the gallows — then Jamie returns alive, and William stumbles onto the truth of his birth.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Triangulates Jamie, Claire and John, and finally puts William's real parentage in the open.",
+          "needsVerify": true
+        }
+      ],
+      "cliffhanger": {
+        "text": "Jamie is now a Continental Brigadier General under Washington and has escaped British arrest by taking Lord John hostage; William knows the truth of his birth and is furious; Kings Mountain is still coming.",
+        "questions": [
+          "Can Jamie survive the battle Frank's book says will kill him?",
+          "Will William ever forgive Jamie and Claire?",
+          "What becomes of Lord John, now a Continental prisoner condemned for the Paoli Massacre?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jamie Fraser",
+          "line": "Laird of Fraser's Ridge and new Continental Brigadier General, warned by Frank's book of his death at Kings Mountain."
+        },
+        {
+          "name": "Claire Fraser",
+          "line": "Healer on the Ridge; briefly Lady John Grey while Jamie was presumed lost at sea."
+        },
+        {
+          "name": "William Ransom",
+          "line": "British officer and Jamie's illegitimate son, now aware of his true parentage and estranged."
+        },
+        {
+          "name": "Lord John Grey",
+          "line": "Jamie's oldest friend and William's stepfather; married Claire to save her, now a Continental prisoner condemned to hang."
+        },
+        {
+          "name": "Amaranthus Cowden Grey",
+          "line": "William's cousin-in-law; secretly orchestrated Ben's faked death, now entangled with William."
+        },
+        {
+          "name": "Ben Grey",
+          "line": "John's nephew, faked his own death and turned coat to the Continental Army."
+        },
+        {
+          "name": "Fanny Pocock",
+          "line": "Young girl the Frasers took in; her keepsake and song hint she may be Claire's granddaughter through the surviving Faith."
+        },
+        {
+          "name": "Buck MacKenzie",
+          "line": "Roger's 18th-century ancestor; shot Cunningham to save Jamie's life."
+        },
+        {
+          "name": "Brianna & Roger MacKenzie",
+          "line": "Roger fights with Marion's Patriots; Brianna forges a Hall rifle for the coming battle and is again pregnant."
+        }
+      ]
+    },
+    "6": {
+      "beats": [
+        {
+          "label": "S6 · Cunningham comes to the Ridge",
+          "text": "Ex-Tory Captain Cunningham arrives on Fraser's Ridge with trader Hiram Crombie; Jamie reads Frank Randall's book warning of his own death at Kings Mountain.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the season's antagonist and Jamie's fixed-date fate.",
+          "needsVerify": true
+        },
+        {
+          "label": "S6 · Cunningham's prophecy",
+          "text": "Cunningham prophecies at Lodge that he has seven years from Saratoga to live; William hunts down what really happened to his cousin Ben in Continental custody.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets Cunningham's zealotry in motion and opens the Ben Grey mystery.",
+          "needsVerify": true
+        },
+        {
+          "label": "S6 · Spy unmasked, Fergus's father named",
+          "text": "Jamie unmasks Cunningham as a British spy sent by Cornwallis; Percival Beauchamp reveals Fergus is the Comte St Germain's son with a Paris estate waiting.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Names both antagonists' plans and Fergus's hidden inheritance.",
+          "needsVerify": true
+        },
+        {
+          "label": "S6 · Buck saves Jamie",
+          "text": "Cunningham attacks Jamie on the Ridge; Buck MacKenzie shoots Cunningham and leaves him paralysed, and Ben Grey is discovered alive as a Continental turncoat.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Breaks Cunningham's rebellion and opens the Ben / Amaranthus / William triangle.",
+          "needsVerify": true
+        },
+        {
+          "label": "S6 · Mercy on the Ridge",
+          "text": "Rather than kill his betrayers, Jamie evicts them and later grants their wives new tenancy contracts; Ian is granted his son by his former Mohawk wife.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Defines Jamie's rule and adds Ian's new child to the household.",
+          "needsVerify": true
+        },
+        {
+          "label": "S6 · Fire and Faith",
+          "text": "Fergus dies in a print-shop fire; a lace square and an old song tie the orphan Fanny to Claire's stillborn daughter Faith, hinting Faith did not die in Paris.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Kills off Fergus and opens the season's biggest mystery about Claire's lost child.",
+          "needsVerify": true
+        },
+        {
+          "label": "S6 · John taken",
+          "text": "William and Jamie reconcile in the forest as father and son; back in Savannah, Captain Richardson knocks Lord John unconscious while Percy Wainwright watches.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Closes the William arc and hands off the John kidnap as the season's cliffhanger.",
+          "needsVerify": true
+        }
+      ],
+      "cliffhanger": {
+        "text": "Lord John has just been knocked out and taken by Captain Richardson; Jamie is preparing for the battle Frank's book says will kill him; and the hint that Faith survived Paris hangs unresolved.",
+        "questions": [
+          "Where is Lord John and why did Richardson take him?",
+          "Is Claire's daughter Faith really alive?",
+          "Can Jamie escape his fate at Kings Mountain?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jamie Fraser",
+          "line": "Laird of Fraser's Ridge, freshly reconciled with William, marching toward the battle Frank's book says will kill him."
+        },
+        {
+          "name": "Claire Fraser",
+          "line": "Healer on the Ridge, sitting with the unbearable possibility that her Paris child Faith may have lived."
+        },
+        {
+          "name": "William Ransom",
+          "line": "British officer and Jamie's illegitimate son; now reconciled with his real father."
+        },
+        {
+          "name": "Lord John Grey",
+          "line": "William's stepfather and Jamie's oldest friend; just kidnapped by Captain Richardson."
+        },
+        {
+          "name": "Amaranthus Cowden Grey",
+          "line": "William's cousin-in-law; orchestrated Ben's faked death, drawing William closer."
+        },
+        {
+          "name": "Ben Grey",
+          "line": "John's nephew; faked his death and turned Continental."
+        },
+        {
+          "name": "Fanny Pocock",
+          "line": "Orphan taken in by the Frasers; her keepsake and song hint she may be Faith's daughter."
+        },
+        {
+          "name": "Buck MacKenzie",
+          "line": "Roger's 18th-century ancestor; shot Cunningham to save Jamie."
+        },
+        {
+          "name": "Marsali Fraser",
+          "line": "Fergus's widow after the print-shop fire; deciding how to keep her family alive."
+        },
+        {
+          "name": "Roger & Brianna MacKenzie",
+          "line": "Roger seeking ordination while fighting with Marion's Patriots; Brianna building rifles and now pregnant again."
+        }
+      ]
+    },
+    "7": {
+      "beats": [
+        {
+          "label": "S7 · Wilmington rescue",
+          "text": "In Wilmington Jamie and Ian break Claire out of jail after Tom Christie takes the blame for a killing she committed; Roger begins training for the ministry.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Resolves Claire's arrest through Christie's sacrifice and starts Roger's ministerial path.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Amanda and the Ridge",
+          "text": "Baby Amanda is born with a fatal heart defect; Roger and Brianna must take the children back through the stones, and Fraser's Ridge burns down soon after.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Splits the family across centuries again and destroys the home base.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Ticonderoga and Rachel",
+          "text": "Jamie is conscripted into the Continental Army at Fort Ticonderoga, opposing his own cousin Brigadier Simon Fraser; Ian falls for Quaker healer Rachel Hunter.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Puts the family in the Revolution and introduces Rachel, Ian's future.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Rob takes Jemmy",
+          "text": "In 1980 Rob Cameron kidnaps Jemmy through the standing stones to hunt Jamie's hidden gold; Roger and his ancestor Buck follow, but land in 1739.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Puts the 20th-century family in mortal danger and strands Roger in the wrong century.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Saratoga",
+          "text": "At Saratoga Jamie is ordered to shoot his cousin Simon; another rifleman fires first, and Jamie escorts the body home to Lallybroch as Ian's father lies dying.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Ends the Continental fighting arc and brings Jamie back to Scotland at exactly the right moment.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Presumed dead",
+          "text": "Jamie's ship is reported lost at sea; Lord John marries Claire to save her from hanging — then Jamie returns alive, and William stumbles onto the truth of his birth.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The season's central emotional pivot and William's discovery.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Monmouth and Faith",
+          "text": "Now a Continental General, Jamie fights at Monmouth where Claire is shot; Fanny then sings a song only Claire's stillborn daughter Faith could have taught her.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "Nearly kills Claire and cracks open the mystery of whether Faith lived.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Claire is recovering from a battle wound; Roger has finally reunited with Brianna and the children in 1739; Rachel is pregnant with Ian's child; and Fanny's song has left Claire believing her Paris daughter Faith may be alive.",
+        "questions": [
+          "Is Faith really alive?",
+          "How will Roger and Brianna get themselves and the children back to their own time?",
+          "What kind of general will Jamie become in a war he now helps lead?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jamie Fraser",
+          "line": "Continental Brigadier General under Washington, reunited with his family after being presumed drowned."
+        },
+        {
+          "name": "Claire Fraser",
+          "line": "Healer at the front line; wounded at Monmouth and now weighing evidence that Faith may have survived."
+        },
+        {
+          "name": "Brianna Fraser MacKenzie",
+          "line": "Mother of Jemmy and Amanda; travelled back to 1739 to reunite with Roger."
+        },
+        {
+          "name": "Roger MacKenzie",
+          "line": "Trainee minister; stuck in 1739 with Buck after chasing Rob and Jemmy through the stones."
+        },
+        {
+          "name": "Lord John Grey",
+          "line": "Jamie's oldest friend; briefly married Claire to save her from the gallows, and slept with her while Jamie was thought dead."
+        },
+        {
+          "name": "William Ransom",
+          "line": "Jamie's illegitimate son; has learned the truth of his birth and left in fury."
+        },
+        {
+          "name": "Young Ian Murray",
+          "line": "Newly married to Rachel Hunter; expecting a child."
+        },
+        {
+          "name": "Rachel Hunter",
+          "line": "Quaker healer; Ian's wife and pregnant with his child."
+        },
+        {
+          "name": "Fanny Pocock",
+          "line": "Frasers' young ward; her song may make her Claire's granddaughter through Faith."
+        },
+        {
+          "name": "Rob Cameron",
+          "line": "20th-century antagonist; escaped captivity at Lallybroch and is still hunting Jamie's gold."
+        },
+        {
+          "name": "Buck MacKenzie",
+          "line": "Roger's 18th-century ancestor; stranded in 1739 with him."
+        }
+      ]
+    },
+    "8": {
+      "beats": [
+        {
+          "label": "S8 · Cunningham arrives",
+          "text": "Ex-Tory Captain Cunningham arrives on Fraser's Ridge with trader Crombie; Jamie reads Frank Randall's book warning of his own death at the coming Battle of Kings Mountain.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the season's antagonist and Jamie's fixed-date threat.",
+          "needsVerify": true
+        },
+        {
+          "label": "S8 · Fergus's parentage revealed",
+          "text": "Percival Beauchamp reveals Fergus is the son of the Comte St Germain, with a Paris estate held in trust for him.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Plants the inheritance Marsali will fall back on later in the season.",
+          "needsVerify": true
+        },
+        {
+          "label": "S8 · Cunningham unmasked",
+          "text": "Cunningham is exposed as a British spy sent by Cornwallis; when he attacks Jamie, Buck MacKenzie shoots him and leaves him paralysed.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Neutralises Cunningham but binds Jamie in debt to militia leader Cleveland.",
+          "needsVerify": true
+        },
+        {
+          "label": "S8 · Ben is alive",
+          "text": "Ben Grey is discovered alive as a Continental turncoat; Amaranthus is revealed as the one who orchestrated his faked death and grows close to William.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Opens the Ben / Amaranthus / William triangle that carries the rest of the season.",
+          "needsVerify": true
+        },
+        {
+          "label": "S8 · Fire and Faith",
+          "text": "Fergus dies in a print-shop fire; a lace square and an old song tie the orphan Fanny to Claire's stillborn Faith, hinting Faith survived Paris.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Kills off Fergus and cracks open the Faith mystery.",
+          "needsVerify": true
+        },
+        {
+          "label": "S8 · Father and son, then John taken",
+          "text": "William and Jamie reconcile in the forest as father and son; back in Savannah, Captain Richardson knocks Lord John unconscious and takes him prisoner.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Repairs the William arc while stealing away Lord John.",
+          "needsVerify": true
+        },
+        {
+          "label": "S8 · Richardson unmasked, Jamie lost",
+          "text": "The family free John and reveal Richardson as a time-traveller trying to keep the Colonies British — John kills him; then Jamie's ship is reported lost at sea.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Confirms other travellers with agendas and hands off the Jamie-presumed-dead cliffhanger.",
+          "needsVerify": true
+        }
+      ],
+      "cliffhanger": {
+        "text": "Jamie is believed drowned on the Euterpe; Claire faces the gallows for espionage and Lord John has just proposed marriage to save her; and Buck is stranded in 1739 in Geillis Duncan's care as Dougal MacKenzie approaches with clues to Roger's own father.",
+        "questions": [
+          "Is Jamie really dead?",
+          "Will Claire accept Lord John's proposal to save herself?",
+          "Why is Buck in 1739 with Geillis and Dougal, and how does this reach back to Roger?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jamie Fraser",
+          "line": "Laird of Fraser's Ridge; reported drowned at sea aboard the Euterpe as the season ends."
+        },
+        {
+          "name": "Claire Fraser",
+          "line": "Ridge healer; facing hanging for espionage in Philadelphia, with Lord John's proposal her only escape."
+        },
+        {
+          "name": "William Ransom",
+          "line": "Jamie's illegitimate son; reconciled with his father in the forest before Jamie sailed."
+        },
+        {
+          "name": "Lord John Grey",
+          "line": "William's stepfather; just proposed marriage to save Claire from the gallows."
+        },
+        {
+          "name": "Amaranthus Cowden Grey",
+          "line": "William's cousin-in-law; secretly orchestrated Ben's faked death and is entangled with William."
+        },
+        {
+          "name": "Ben Grey",
+          "line": "John's nephew; faked his death and turned Continental."
+        },
+        {
+          "name": "Fanny Pocock",
+          "line": "Frasers' young ward; keepsake and song hint she may be Claire's granddaughter through Faith."
+        },
+        {
+          "name": "Buck MacKenzie",
+          "line": "Roger's 18th-century ancestor; stranded in 1739 in Geillis Duncan's care."
+        },
+        {
+          "name": "Marsali Fraser",
+          "line": "Fergus's widow after the fire; signing for the St Germain estate to keep her family alive."
+        },
+        {
+          "name": "Rachel & Ian Murray",
+          "line": "Newly married Quaker healer and Jamie's nephew, starting their life together on the war's edge."
+        }
+      ]
+    }
+  }
+}

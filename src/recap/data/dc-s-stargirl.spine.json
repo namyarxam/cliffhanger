@@ -1,0 +1,315 @@
+{
+  "slug": "dc-s-stargirl",
+  "generatedFor": "DC's Stargirl",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The staff picks her",
+          "text": "After finding the Cosmic Staff in his basement, Courtney forces stepdad Pat to admit he was Starman's sidekick, and takes up the JSA legacy as Stargirl.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the premise, the Courtney-Pat partnership, and why she wears the costume.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A new JSA",
+          "text": "She recruits classmates Yolanda, Rick, and Beth as the new Wildcat, Hourman, and Doctor Mid-Nite, over Pat's objections that they aren't ready.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The team the rest of the series revolves around is assembled here.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Blue Valley is a front",
+          "text": "The team discovers Blue Valley is an ISA front and their neighbour Jordan Mahkent is Icicle, running a mind-control scheme called Project: New America.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Names the season's villain and stakes; every subsequent choice hinges on it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Brainwave and his son",
+          "text": "Henry Jr.'s telepathy awakens and he defects to the JSA, but his father Brainwave buries him alive — and Yolanda kills Brainwave in return.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Yolanda's kill is the wound that drives her S2 arc; Henry Jr.'s death seals her isolation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Barbara picks a side",
+          "text": "Barbara uncovers Pat and Courtney's secret and Jordan's plan to kill 25 million Americans, then commits to fighting the ISA with her family.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Turns the household from cover to co-conspirators; Barbara becomes an active player from here on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The ISA falls",
+          "text": "In the final showdown Dragon King and Brainwave fall; Mike rams Icicle with a truck, shattering him into ice shards.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "How Icicle is 'killed' is exactly the detail that lets him come back later; Mike's rescue is his origin as a player.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Two loose threads",
+          "text": "Weeks later Cindy retrieves William Zarick's black diamond containing Eclipso, while a very-much-alive Sylvester Pemberton turns up in California asking after Pat.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "These are the two engines of S2 — the demon and the returning Starman — planted in the closing minutes.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The ISA is broken and Blue Valley has a moment of peace, but Cindy Burman has quietly claimed a black diamond housing a demon called Eclipso, and a man calling himself Starman has arrived in California looking for Pat.",
+        "questions": [
+          "Is Sylvester really Starman, and what has he been doing for a decade?",
+          "What is Eclipso and what does Cindy plan to do with him?",
+          "Can a family barely holding together survive another Blue Valley threat?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Courtney Whitmore / Stargirl",
+          "line": "The teenager who inherited the Cosmic Staff and rebuilt the JSA from her classmates."
+        },
+        {
+          "name": "Pat Dugan / S.T.R.I.P.E.",
+          "line": "Courtney's stepfather, Starman's old sidekick, now piloting a homemade mech as her partner."
+        },
+        {
+          "name": "Barbara Whitmore",
+          "line": "Courtney's mother, works for the American Dream, now fully read in and fighting alongside them."
+        },
+        {
+          "name": "Mike Dugan",
+          "line": "Pat's son from his first marriage; jealous outsider who ended up killing Icicle with a truck."
+        },
+        {
+          "name": "Yolanda Montez / Wildcat",
+          "line": "First recruit, kicked out by her Catholic mother; killed Brainwave and is quietly wrecked by it."
+        },
+        {
+          "name": "Rick Tyler / Hourman",
+          "line": "Hourman's abandoned son; angry, powered by his father's hourglass, still hunting Solomon Grundy."
+        },
+        {
+          "name": "Beth Chapel / Doctor Mid-Nite",
+          "line": "The team's brain, paired with the AI ghost of Charles McNider inside her inherited goggles."
+        },
+        {
+          "name": "Cindy Burman / Shiv",
+          "line": "Dragon King's cybernetic daughter, defeated but at large; has secretly taken possession of Eclipso."
+        },
+        {
+          "name": "Cameron Mahkent",
+          "line": "Courtney's classmate and crush; still has no idea his father Jordan was Icicle or that he's dead."
+        },
+        {
+          "name": "Sylvester Pemberton / Starman",
+          "line": "The original Cosmic Staff bearer, thought killed in the JSA massacre, has just surfaced in California."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Six quiet months",
+          "text": "Six months after the ISA fell, Courtney's JSA patrol a peaceful Blue Valley while Cindy, now bonded to the Eclipso black diamond, quietly recruits a teen Injustice Unlimited.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the season's clock: the heroes think they've won, the real threat is already growing next to them.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Jennie arrives",
+          "text": "Jennie-Lynn Scott arrives claiming to be Green Lantern's daughter, trains briefly with Pat, then leaves to search for her missing twin brother Todd.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces Jennie and the Todd thread that Helix and Shade later pull on; her power will matter again.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Cindy loses the leash",
+          "text": "Cindy loses control of Eclipso, who murders her stepmother, consumes recruit Isaac, absorbs Cindy herself, and takes on the form of the demonic boy Bruce Gordon.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Flips Cindy from villain to victim and turns Eclipso into a walking, talking antagonist for the rest of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The team fractures",
+          "text": "Eclipso attacks the JSA with visions: Yolanda's guilt over killing Brainwave drives her to quit, and a hallucinating Rick nearly beats his uncle to death and is jailed.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The team enters the finale with two members out — the shape of their friendships going into S3 is defined here.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Shade betrays them",
+          "text": "Antique dealer Richard Swift, alias the Shade, tricks the team into repairing the black diamond, then uses it to drag Courtney into the Shadowlands.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Establishes Shade's ambiguity — he'll return as a rescuer and remain in Blue Valley long-term.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Toast",
+          "text": "Courtney escapes with old JSA doctor McNider and a chastened Cindy; the reunited team plus Sylvester and Thunderbolt trap Eclipso as a slice of toast.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Resolves the demon plot and, crucially, cements Cindy inside the JSA and Sylvester back in the mentor slot.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Neighbours and watchers",
+          "text": "Cameron discovers his grandparents share his father's ice powers, the Crocks move in next door to the Dugans, and Helix's Nurse Love flags the JSA to Mister Bones.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "All three closing hooks — the Mahkent bloodline, the Crock neighbours, and Helix — drive S3 directly.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Eclipso is beaten and Sylvester is back at the JSA's side, but the Crocks are on the front lawn as neighbours, Cameron is finding out he's an Icicle by blood, and the Helix Institute has decided the Blue Valley heroes are worth a visit.",
+        "questions": [
+          "Can the JSA really live next door to Crusher, Paula, and Cindy without it going wrong?",
+          "What does Helix want with a small-town team of teen heroes?",
+          "Will Cameron follow the Mahkent family's cold legacy or push back against it?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Courtney Whitmore / Stargirl",
+          "line": "Still leading the JSA and now dating Cameron Mahkent, who has no idea she killed his father."
+        },
+        {
+          "name": "Pat Dugan / S.T.R.I.P.E.",
+          "line": "Family patriarch and mentor to two overlapping teams of heroes."
+        },
+        {
+          "name": "Sylvester Pemberton / Starman",
+          "line": "The original Starman, physiology altered by the staff, formally back inside the JSA as coach."
+        },
+        {
+          "name": "Cindy Burman",
+          "line": "Redeemed after Eclipso used her as a puppet; grudgingly welcomed into the JSA."
+        },
+        {
+          "name": "Cameron Mahkent",
+          "line": "Courtney's boyfriend; artist grieving his father; has just learned his grandparents have ice powers."
+        },
+        {
+          "name": "Barbara Whitmore",
+          "line": "Fully integrated into the fight and running interference at the American Dream."
+        },
+        {
+          "name": "Yolanda Montez",
+          "line": "Quit the JSA and refused the Wildcat mantle; still living apart from her mother."
+        },
+        {
+          "name": "Rick Tyler / Hourman",
+          "line": "Out of jail and back on the team, but visibly addicted to the hourglass and increasingly volatile."
+        },
+        {
+          "name": "Beth Chapel / Doctor Mid-Nite",
+          "line": "Confident field member with Chuck restored and her parents reconciled."
+        },
+        {
+          "name": "Crusher and Paula Crock",
+          "line": "Sportsmaster and Tigress, reformed for their daughter Artemis's sake, now the Dugans' next-door neighbours."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Sharing the staff",
+          "text": "Sylvester Pemberton agrees to share the Cosmic Staff with Courtney, while a reformed Steven Sharpe, the old Gambler, returns to Blue Valley trying to atone.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The share-the-staff arrangement and Sharpe's return are the two setups the rest of the season pays off.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · A body and cameras",
+          "text": "Sharpe is stabbed to death and the JSA find surveillance cameras hidden throughout town; suspicion falls on Cindy, discovered standing over the corpse.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The murder is the season's spine and the cameras are the first clue toward the real killer.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The team frays",
+          "text": "Courtney secretly trains boyfriend Cameron in his ice powers, Rick removes his hourglass limiter and grows addicted, and Yolanda's mother throws her out for lying.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Every JSA member is compromised before the finale; explains why Sylvester exploits Rick and why trust is so brittle.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Helix, and Todd",
+          "text": "Shade takes Courtney and Pat to the Helix Institute, where Jennie reunites with her shadow-powered brother Todd while Nurse Love and Mister Bones size up the JSA.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Pays off the Jennie thread and cleanly establishes Helix as a lurking force outside Blue Valley.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The Mahkent bloodline",
+          "text": "A skin cell clears Cindy but the camera signal traces to the Mahkent house, revealing Cameron's grandparents Lily and Sofus share his family's cryokinetic powers.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Reframes the season: the Mahkents were the local threat all along, and Cameron is caught between sides.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Icicle returns",
+          "text": "Jordan Mahkent, slowly reconstituted after Mike shattered him, freezes the Crocks to death and offers the JSA an alliance against a giant albino gorilla Ultra-Humanite.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The murder that fuels Artemis's arc, plus the alliance that makes the true reveal possible.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Sylvester was never Sylvester",
+          "text": "Sylvester is exposed as the Ultra-Humanite wearing his body — the real killer of Sharpe and mastermind behind it all; the JSA damages his brain and shatters Jordan again.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The single biggest reversal of the show; recontextualises every mentor moment from the moment Sylvester returned.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ten years later, Sylvester's real mind has been restored, Rick and Beth are engaged, the Seven Soldiers have been freed, and Jay Garrick tells the Shade the JSA is needed again for adventures still to come.",
+        "questions": [
+          "What crisis brings Jay Garrick to Shade's door after a decade of peace?",
+          "What does an older, wider JSA look like with Courtney no longer the newest hero on the team?",
+          "What becomes of Solomon Grundy, quietly reawakened at season's end?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Courtney Whitmore / Stargirl",
+          "line": "Still Stargirl and back with Cameron; shares the staff with Sylvester until his true identity is exposed."
+        },
+        {
+          "name": "Pat Dugan / S.T.R.I.P.E.",
+          "line": "Nearly killed by his oldest friend's stolen body; keeps the real Sylvester's brain on life support."
+        },
+        {
+          "name": "Sylvester Pemberton / Starman",
+          "line": "His body spent the season occupied by the Ultra-Humanite; his real mind is only restored years later."
+        },
+        {
+          "name": "Cameron Mahkent",
+          "line": "Learned Courtney killed his father, saw his grandmother die, and left Blue Valley with his grandfather Sofus."
+        },
+        {
+          "name": "Cindy Burman",
+          "line": "Fully accepted into the JSA after being framed for Sharpe's murder."
+        },
+        {
+          "name": "Beth Chapel / Doctor Mid-Nite",
+          "line": "Grown into her role and now engaged to Rick, with her parents finally acting as her sidekicks."
+        },
+        {
+          "name": "Rick Tyler / Hourman",
+          "line": "Broke his hourglass addiction after nearly killing his uncle; engaged to Beth."
+        },
+        {
+          "name": "Artemis Crock",
+          "line": "Orphaned by Jordan Mahkent and joined the JSA; three months later hunted him to Copenhagen and burned him alive."
+        },
+        {
+          "name": "Yolanda Montez",
+          "line": "Rejoined the JSA during the crisis and is considering finally telling her mother the truth."
+        },
+        {
+          "name": "Richard Swift / Shade",
+          "line": "Stayed in Blue Valley as a JSA museum guide, and is the one Jay Garrick approaches when the call comes."
+        }
+      ]
+    }
+  }
+}

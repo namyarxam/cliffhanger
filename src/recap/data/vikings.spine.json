@@ -1,0 +1,608 @@
+{
+  "slug": "vikings",
+  "generatedFor": "Vikings",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The first raid west",
+          "text": "Ragnar defies Earl Haraldson, sails Floki's new longship west with Rollo, and sacks the Lindisfarne monastery, taking the monk Athelstan captive.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Establishes the show's core engine: western raids, the ship that made them possible, and Athelstan as Ragnar's bridge to Christian England.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Blood at the Thing",
+          "text": "A second Wessex raid ends with Lagertha killing the earl's brother Knut for attempted rape; Ragnar takes the blame at the Thing and is acquitted.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Opens the open war between Ragnar and Haraldson that drives the back half of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Ragnar becomes Earl",
+          "text": "Haraldson attacks Ragnar's family. After hiding at Floki's, Ragnar challenges the earl to single combat, kills him, and becomes Earl of Kattegat.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The power shift that recasts Ragnar from farmer to ruler for every season that follows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Aelle's ransom",
+          "text": "Ragnar raids Northumbria and ransoms King Aelle's brother for gold; Rollo submits to a false baptism to seal the deal. Aelle pays but swears vengeance.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Introduces Aelle as an enemy who will nurse this grudge for years.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Sworn to Horik",
+          "text": "Sworn to King Horik, Ragnar negotiates with Jarl Borg over disputed land; back home, Lagertha miscarries and plague takes their daughter Gyda.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Places Ragnar inside the Horik–Borg political triangle and hollows out his marriage.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Rollo's secret pact",
+          "text": "The talks fail and Rollo, jealous and passed over, secretly agrees to fight for Jarl Borg against his own brother.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The betrayal that opens season 2 on a battlefield.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Aslaug on the road",
+          "text": "Riding home, Ragnar is seduced by Princess Aslaug, who then reveals she is carrying his child.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Introduces the second wife whose sons will define the rest of the show.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ragnar sails home from a failed embassy carrying two secrets: Rollo has promised his sword to Jarl Borg, and Princess Aslaug is on her way to Kattegat pregnant with his child. Lagertha still does not know Aslaug exists.",
+        "questions": [
+          "Will Rollo actually raise arms against his own brother?",
+          "How does Lagertha react when Aslaug arrives?",
+          "Can Ragnar hold Kattegat when the Horik–Borg quarrel becomes open war?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Ragnar Lothbrok",
+          "line": "Farmer turned Earl of Kattegat after killing Haraldson; sworn to King Horik and returning home with a second pregnancy hanging over him."
+        },
+        {
+          "name": "Lagertha",
+          "line": "Ragnar's shield-maiden wife; has lost their daughter Gyda to plague and miscarried a son while ruling in his stead."
+        },
+        {
+          "name": "Rollo",
+          "line": "Ragnar's older brother, jealous and passed over; has just secretly agreed to fight for Jarl Borg against him."
+        },
+        {
+          "name": "Bjorn",
+          "line": "Ragnar and Lagertha's teenage son, on the cusp of manhood and increasingly at his father's side."
+        },
+        {
+          "name": "Athelstan",
+          "line": "The English monk Ragnar took at Lindisfarne, now his household confidant; wavering between Christ and the Norse gods."
+        },
+        {
+          "name": "Floki",
+          "line": "Ragnar's eccentric shipwright and closest friend; devout in the old gods and openly contemptuous of Christians."
+        },
+        {
+          "name": "King Horik",
+          "line": "Danish king to whom Ragnar has just sworn allegiance; embroiled in a land dispute with Jarl Borg."
+        },
+        {
+          "name": "Jarl Borg",
+          "line": "Götaland lord in dispute with Horik over land; now Rollo's secret ally against Ragnar."
+        },
+        {
+          "name": "Aslaug",
+          "line": "Princess who seduced Ragnar; carrying his child and travelling toward Kattegat, unaware that Lagertha waits there."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Lagertha leaves",
+          "text": "Rollo surrenders to Ragnar in battle; a bribed lawspeaker acquits him. Ragnar takes Aslaug as second wife and Lagertha leaves Kattegat with Bjorn.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Splits the household in two and sets up Lagertha's independent power base.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Return to England",
+          "text": "Four years on, Ragnar has three more sons. Persuaded by Horik to break his pact with Borg, he sails for England and meets King Ecbert of Wessex.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces Ecbert, the political mirror who defines the western arc for years.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Athelstan crucified",
+          "text": "Athelstan stays behind with Horik, is captured and crucified by the Saxons; King Ecbert saves him from the cross and takes him into his court.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Turns Athelstan into a two-way translator and Ecbert's confidant on Norse thought.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Kattegat sacked",
+          "text": "Jarl Borg sacks Kattegat while the men are gone; Rollo evacuates Aslaug and the boys. Ragnar returns, joined by Lagertha's warriors, and routs Borg.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Puts Lagertha and Ragnar back on the same battlefield and sets up Borg's execution.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ivar born, Borg killed",
+          "text": "Aslaug bears Ivar, born with malformed legs; Ragnar wants him exposed but Aslaug refuses. Later Ragnar performs the blood eagle on the captured Jarl Borg.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Introduces Ivar the Boneless, whose survival breaks Norse custom and defines the family for the rest of the show.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Horik's plot",
+          "text": "Horik orders Siggy and Floki to help murder Ragnar's family. Both secretly stay loyal to Ragnar and feed the plan back to him.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Reveals Floki's true allegiance and sets the trap that ends Horik.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ragnar takes the crown",
+          "text": "Horik attacks Kattegat, but the trap is turned on him. Ragnar kills Horik and becomes king; Athelstan returns holding both faiths at once.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Elevates Ragnar to king and cements the tension in Athelstan that will detonate next season.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ragnar is now king of Kattegat with two wives' worth of sons, including Ivar, kept alive against Norse custom. Athelstan is back at his side but praying to both Christ and Odin.",
+        "questions": [
+          "Can Ragnar rule when he never wanted the crown?",
+          "What kind of man will Ivar the Boneless become?",
+          "How long can Athelstan hold two faiths at once before someone forces him to pick?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Ragnar Lothbrok",
+          "line": "Now King of Kattegat after killing Horik; father to five sons across two wives, with expansion west still on his mind."
+        },
+        {
+          "name": "Aslaug",
+          "line": "Ragnar's second wife and queen; mother of Ubbe, Hvitserk, Sigurd, and newborn Ivar the Boneless."
+        },
+        {
+          "name": "Lagertha",
+          "line": "Ragnar's first wife, now Earl of Hedeby after killing her abusive second husband Sigvard."
+        },
+        {
+          "name": "Bjorn",
+          "line": "Grown warrior called Ironside for coming through battle unscathed; back at Ragnar's side in Kattegat."
+        },
+        {
+          "name": "Rollo",
+          "line": "Forgiven again by Ragnar, still restless and passed over; sleeping with Siggy."
+        },
+        {
+          "name": "Athelstan",
+          "line": "Returned to Kattegat from Ecbert's court holding both Christian and Norse belief openly."
+        },
+        {
+          "name": "Floki",
+          "line": "Fiercely loyal to Ragnar but hates Athelstan and everything Christian; growing suspicious of the king."
+        },
+        {
+          "name": "King Ecbert",
+          "line": "Cunning king of Wessex who wants Norse settlers on his land and mines Athelstan for pagan knowledge."
+        },
+        {
+          "name": "Ivar the Boneless",
+          "line": "Ragnar's youngest son, born with malformed legs and kept alive by Aslaug against Norse custom."
+        },
+        {
+          "name": "Siggy",
+          "line": "Widow of Earl Haraldson and Rollo's lover; secretly loyal to Ragnar despite Horik's threats."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Fighting for Wessex",
+          "text": "Ragnar returns to Wessex to claim Ecbert's promised land, but must first fight for Princess Kwenthrith; Kalf uses his absence to usurp Lagertha's earldom.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets Ragnar against a Christian cause and strips Lagertha of her power base in the same episode.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Harbard in Kattegat",
+          "text": "The wanderer Harbard beds Aslaug and eases Ivar's pain; Siggy drowns pulling Aslaug's sons from thin ice while Harbard revives them.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Removes Siggy, shakes Aslaug's marriage, and plants the doubt about Ivar that shapes his upbringing.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Floki kills Athelstan",
+          "text": "Athelstan is reborn as a Christian; Floki, taking it as a sign from the gods, murders him at prayer. Ragnar buries him in silent grief.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The show's most consequential murder: it rewires Ragnar and Floki for years.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ecbert's massacre",
+          "text": "Ecbert secretly orders his son Aethelwulf to massacre the Norse settlers, then feigns outrage in front of his own nobles.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The debt Ecbert secretly owes Ragnar, which drives their final meeting.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The walls of Paris",
+          "text": "Ragnar leads a huge fleet against Paris; the first assaults fail badly and wound him near-fatally. Princess Gisla rallies the defenders with the Oriflamme.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Establishes Paris and the Frankish court that will become Rollo's home.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The coffin trick",
+          "text": "Ragnar fakes conversion and death to be smuggled inside the gates in a coffin; the Vikings briefly take Paris, then sail home with tribute.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Ends the raid on a technical victory that leaves Ragnar physically broken.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Rollo stays behind",
+          "text": "Rollo accepts land, a duchy, and Emperor Charles's daughter Gisla in exchange for defending Paris against future Viking raids.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The definitive break: Rollo will meet Ragnar again on the wrong side of a battlefield.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ragnar sails home broken, knowing Floki murdered Athelstan and saying nothing about it. His brother Rollo has taken Frankish titles and Princess Gisla in exchange for keeping the Northmen out of Paris.",
+        "questions": [
+          "What will Ragnar do to Floki now that he knows?",
+          "Will Rollo actually fight his own people for the Franks?",
+          "How does a king lead an army after being this thoroughly broken?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Ragnar Lothbrok",
+          "line": "King of Kattegat; broken and grieving after Paris, and privately certain that Floki killed Athelstan."
+        },
+        {
+          "name": "Aslaug",
+          "line": "Queen of Kattegat; slept with the wanderer Harbard and let Siggy drown pulling her sons from the ice."
+        },
+        {
+          "name": "Lagertha",
+          "line": "Stripped of Hedeby by her lieutenant Kalf; back at Ragnar's side as a raider and Ecbert's occasional lover."
+        },
+        {
+          "name": "Bjorn",
+          "line": "Grown warrior and new father; more sure-footed and increasingly stepping into his father's role."
+        },
+        {
+          "name": "Rollo",
+          "line": "Now Duke of Normandy, sworn to Emperor Charles and married to Gisla, tasked with defending Paris against his own."
+        },
+        {
+          "name": "Floki",
+          "line": "Killed Athelstan believing it was the gods' will; senses Ragnar has guessed and dreads what comes next."
+        },
+        {
+          "name": "King Ecbert",
+          "line": "King of Wessex; secretly ordered the massacre of the Norse settlers and is sleeping with his son's wife Judith."
+        },
+        {
+          "name": "Kalf",
+          "line": "Lagertha's former lieutenant who usurped Hedeby in her absence; now fighting on the Paris expedition."
+        },
+        {
+          "name": "Judith",
+          "line": "Princess of Northumbria married to Aethelwulf; bore Athelstan's son Alfred and lost an ear as public punishment."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Rollo becomes a Frank",
+          "text": "Rollo turns on the Vikings camped outside Paris and massacres them, then cuts his hair and pledges to Emperor Charles; Gisla slowly warms to him.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Completes Rollo's defection so that his return in season 4 is as an enemy, not a brother.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Ragnar's addiction",
+          "text": "Ragnar grows secretly addicted to slave girl Yidu's medicine; Bjorn proves himself alone in the wilderness; Lagertha kills Kalf and retakes Hedeby.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Hollowed-out Ragnar plus a battle-tested Bjorn plus Lagertha back in power: the shape of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Paris fails, Ragnar vanishes",
+          "text": "Ragnar's second Paris raid ends in disaster when Rollo defeats him in battle; humiliated, Ragnar disappears from Kattegat for ten years.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The long absence that lets the sons grow up and Aslaug rule alone.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Ragnar and Ivar sail together",
+          "text": "Ragnar returns and dares his adult sons to kill him; only Ivar the Boneless agrees to sail with him back to England to face Ecbert.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The Ragnar–Ivar journey that shapes the eldest surviving Lothbrok forever.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Lagertha takes Kattegat",
+          "text": "Lagertha attacks Kattegat, murders Aslaug, seizes the throne, and imprisons Ubbe and Sigurd, splitting the Lothbrok family for good.",
+          "anchorEpisode": 14,
+          "whyLoadBearing": "The unforgivable act that gives the sons a second grievance beyond Ragnar's death.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The snake pit",
+          "text": "In Wessex, Ecbert hands Ragnar to King Aelle, who tortures him and drops him into a snake pit; Ragnar dies telling his sons to seek vengeance.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "The death that reorganises the show around the sons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The great heathen army",
+          "text": "The great army lands in Northumbria and blood-eagles Aelle. Ivar kills Sigurd in a drunken argument, splitting the brothers before the war is even done.",
+          "anchorEpisode": 20,
+          "whyLoadBearing": "First strike of Ragnar's revenge, and the first crack in the sons' alliance.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ragnar is dead in a snake pit and his sons have crossed the sea with the great heathen army to punish everyone who wronged him. Ivar has just killed his brother Sigurd in front of the whole camp; Lagertha rules Kattegat over Aslaug's grave.",
+        "questions": [
+          "Can the brothers stay together long enough to finish Ragnar's revenge?",
+          "Will Ivar ever answer for killing Sigurd?",
+          "Who ends up on the throne of Kattegat now that Lagertha holds it?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Ragnar Lothbrok",
+          "line": "Dead; tortured by King Aelle in Northumbria and dropped into a snake pit, sending his sons across the sea for vengeance."
+        },
+        {
+          "name": "Ivar the Boneless",
+          "line": "Ragnar's cripple son who fights from a chariot; just killed his own brother Sigurd and emerging as the army's most dangerous mind."
+        },
+        {
+          "name": "Bjorn",
+          "line": "Ragnar's eldest son, now the senior Lothbrok; increasingly drawn to raiding the Mediterranean rather than avenging his father in England."
+        },
+        {
+          "name": "Ubbe",
+          "line": "Ragnar's eldest son by Aslaug; married to the freed slave Margrethe, whom he shares with Hvitserk."
+        },
+        {
+          "name": "Hvitserk",
+          "line": "Ragnar's second son by Aslaug; drifting between his brothers with no fixed allegiance."
+        },
+        {
+          "name": "Lagertha",
+          "line": "Queen of Kattegat, having killed Aslaug and seized the throne; still Bjorn's mother and no longer anyone's ally."
+        },
+        {
+          "name": "Floki",
+          "line": "Buried his infant daughter, reconciled with Ragnar, and fought at his side to the end; now grieving both."
+        },
+        {
+          "name": "Rollo",
+          "line": "Duke of Normandy who defeated Ragnar at Paris; now fully assimilated as a Frank with Gisla and a family."
+        },
+        {
+          "name": "King Ecbert",
+          "line": "King of Wessex and Mercia; handed Ragnar over to Aelle knowing it would kill him, then wept over the choice."
+        },
+        {
+          "name": "Bishop Heahmund",
+          "line": "Warrior-bishop of Sherborne, just introduced; equally ruthless in battle and in bed, and about to enter the Northumbrian war."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Ivar seizes the army",
+          "text": "Ivar seizes command of the great army in York, humiliating Ubbe; Hvitserk defects to Ivar as Ubbe returns to Kattegat with Lagertha.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The split among Ragnar's sons that drives the rest of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Floki's Iceland",
+          "text": "Floki reaches Iceland believing it Asgard and returns to recruit settlers; the colony he founds fractures almost immediately along family lines.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Removes Floki from the Norwegian board and plants a story that only pays off within the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Kattegat falls to Ivar",
+          "text": "Ivar allies with King Harald Finehair, invades Kattegat and drives Lagertha out; she, Bjorn, and Ubbe flee across the sea to shelter with Alfred in Wessex.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Puts Ivar on the throne of his father's city and pushes the exiled Lothbroks into Christendom.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Alfred crowned",
+          "text": "In Wessex, Aethelwulf dies suddenly; Judith persuades Aethelred to abdicate and the young, pious Alfred is crowned king.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Establishes Alfred as the Christian counterweight the Vikings will keep running into.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Ivar the god",
+          "text": "Ivar marries Freydis and declares himself a god, executing dissenters and murdering the Seer; when Freydis bears a deformed son, he exposes the child.",
+          "anchorEpisode": 14,
+          "whyLoadBearing": "Turns Ivar into the tyrant everyone else must combine to remove.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The coalition forms",
+          "text": "Bjorn, Ubbe, and Harald ally against Ivar; on the battlefield, Harald kills his own brother Halfdan in the melee.",
+          "anchorEpisode": 20,
+          "whyLoadBearing": "Removes Halfdan and swings Harald into position to matter later.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Kattegat retaken",
+          "text": "Freydis reveals Ivar's crimes and a hidden entrance; the coalition takes Kattegat and Ivar flees east with a handful of followers.",
+          "anchorEpisode": 20,
+          "whyLoadBearing": "Sets up season 6: exiled Ivar heading to a place we haven't seen and Bjorn holding the crown.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ivar has been driven out of Kattegat and fled east with a handful of loyalists; Bjorn is king. The Seer, before Ivar killed him, warned Bjorn that the war is not over.",
+        "questions": [
+          "Where does Ivar go now, and what does he do when he gets there?",
+          "Can Bjorn hold the kingdom he has just won?",
+          "Whose blade finally finishes Ivar?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Ivar the Boneless",
+          "line": "Deposed god-king who has just fled east with a handful of loyalists after ruling Kattegat as a tyrant."
+        },
+        {
+          "name": "Bjorn",
+          "line": "New king of Kattegat; married to shield-maiden Gunnhild and the slave-born Ingrid."
+        },
+        {
+          "name": "Ubbe",
+          "line": "Reconciled with Bjorn and Lagertha; briefly baptised in Wessex, and now bound to Torvi rather than Margrethe."
+        },
+        {
+          "name": "Hvitserk",
+          "line": "Defected to Ivar, then defected back and helped take Kattegat; drinking heavily and openly unstable."
+        },
+        {
+          "name": "Lagertha",
+          "line": "Broken by the loss of Kattegat; her hair has turned white and she has stepped back from power."
+        },
+        {
+          "name": "Floki",
+          "line": "Founded a colony in Iceland that fractured into murder; has vanished into a cave believing he found the gods' door."
+        },
+        {
+          "name": "King Harald Finehair",
+          "line": "Ambitious would-be king of Norway; defeated with Ivar but ended the season allied to Bjorn."
+        },
+        {
+          "name": "Alfred",
+          "line": "Young king of Wessex; pious, cautious, and now sheltering the Norse who fled to him."
+        },
+        {
+          "name": "Gunnhild",
+          "line": "Bjorn's shield-maiden first wife, respected in her own right in Kattegat."
+        },
+        {
+          "name": "Torvi",
+          "line": "Mother to several children by earlier partners; now Ubbe's partner."
+        }
+      ]
+    },
+    "6": {
+      "beats": [
+        {
+          "label": "S6 · Ivar in Kievan Rus",
+          "text": "Ivar reaches Kievan Rus and enters an uneasy partnership with Prince Oleg the Prophet; he bonds with the boy heir Igor and quietly plots against Oleg.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Ivar's whole season lives in Kiev; the alliance with Oleg is the engine.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Harald king of Norway",
+          "text": "Bjorn sails to free Harald from Olaf's captivity; at the election Olaf calls, Harald wins the crown of All Norway and turns on Bjorn.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Reshapes Norwegian power and puts Bjorn on the run in his own country.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Lagertha's last stand",
+          "text": "The outlaw White Hair's bandits raid Lagertha's village and kill her grandson Hali; Lagertha kills White Hair in single combat but is fatally wounded.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Sets up the murder that follows and closes Lagertha's warrior life.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Hvitserk kills Lagertha",
+          "text": "Hvitserk, drunk and hallucinating Ivar as a serpent, stabs Lagertha to death; her funeral draws the surviving brothers back to Kattegat.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Kills the show's oldest character and reforms Ragnar's sons around her grave.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · The Rus at Kattegat",
+          "text": "Oleg invades Norway with Ivar and Hvitserk; Bjorn is cut down at the beach but rallies the coalition one last time and the Rus are shattered at Kattegat.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Bjorn's death and the last great defence of Kattegat under the old gods.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Ubbe sails west",
+          "text": "Ubbe, Torvi, and Kjetill sail past a failing Iceland to a new land where the natives lead them to Floki, alive and at peace.",
+          "anchorEpisode": 20,
+          "whyLoadBearing": "Closes Floki's arc and gives one Lothbrok line an ending far from war.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · The last battle",
+          "text": "Harald dies raiding Alfred's Wessex; in the same battle Ivar willingly lets a Saxon kill him, and Hvitserk is baptised as Alfred's godson.",
+          "anchorEpisode": 20,
+          "whyLoadBearing": "Closes the sons' story: the Viking age gives way to Christian England.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ragnar's line is spent: Bjorn buried in Kattegat, Ivar dying willingly on a Wessex field, Hvitserk baptised as Alfred's godson under the name Athelstan, and only Ubbe still building anything, in a new land across the ocean where he has found Floki alive.",
+        "questions": [
+          "Has the age of the Vikings ended, or only moved?",
+          "What do Ubbe's people build in this new land?",
+          "Was any of it worth what Ragnar's line paid?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Ubbe",
+          "line": "Sole Lothbrok still building anything; leader of the Norse settlement in a new land west of the sea, with Floki alongside him."
+        },
+        {
+          "name": "Hvitserk",
+          "line": "Baptised in Wessex as Alfred's godson under the name Athelstan, after burying Ivar."
+        },
+        {
+          "name": "Ivar the Boneless",
+          "line": "Dead; let a Saxon soldier stab him on the Wessex battlefield after telling Hvitserk his whole life led to that moment."
+        },
+        {
+          "name": "Bjorn",
+          "line": "Dead; fell at Kattegat rallying the Norwegian coalition one final time against the Rus, and buried in a mound above the town."
+        },
+        {
+          "name": "Harald Finehair",
+          "line": "Dead; killed by a bishop in the Wessex mist during his final raid, after briefly being crowned king of All Norway."
+        },
+        {
+          "name": "Lagertha",
+          "line": "Dead; killed by Hvitserk in a hallucinatory delusion after seeing off the outlaws who murdered her grandson."
+        },
+        {
+          "name": "Floki",
+          "line": "Alive and at peace in the new land, having wandered west from Iceland years earlier and made contact with its people."
+        },
+        {
+          "name": "Alfred",
+          "line": "King of Wessex; beat Ivar in the field and took Hvitserk as his baptised godson, ending the war on his terms."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "slug": "sandman",
+  "generatedFor": "The Sandman",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Dream caged",
+          "text": "An occultist means to trap Death but catches Dream instead in 1916, stealing his helm, sand, and ruby; sleeping sickness spreads worldwide for the century he is held silent.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The whole show pivots on this — every S1 quest is about undoing this theft, and Dream's diminished state colours his S2 choices.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Free but weakened",
+          "text": "Dream escapes in 2021 to find his Dreaming in ruins; the Fates place his sand with an exorcist, his helm with a demon in Hell, and his ruby with the witch's son John Dee.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets the three-quest structure of S1 and establishes that the Endless can be weakened, which matters when siblings later test him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Lucifer's vow",
+          "text": "Retrieving his sand, then beating Lucifer in Hell for the helm by invoking hope, Dream humiliates the King of Hell in her own court; she swears to one day destroy him.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Lucifer's grudge is the pretext for the whole opening arc of S2 — without it, her abdication trap makes no sense.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The ruby broken",
+          "text": "Escaped from his asylum, John Dee reclaims the ruby, forces truth on a diner of strangers until they murder each other, then shatters it — its power flooding back to Dream.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Closes the totem trilogy and, more importantly, restores Dream to full power just as his aimlessness begins.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A sister, a friend",
+          "text": "Aimless with his quest done, Dream walks with Death and relearns his duty, then reunites with Hob Gadling — the immortal he meets once a century — and calls him a friend at last.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The turn from ruler-as-function to ruler-with-attachments; every S2 death matters because of the person Dream became here.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Desire's family trap",
+          "text": "Rose Walker's Vortex power threatens the Dreaming; her great-grandmother Unity dies in her place, and Dream sees Desire seeded the bloodline to make him spill his own kin's blood.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Establishes Desire's ongoing enmity and the family-blood prohibition that becomes the exact trigger the Kindly Ones need in S2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A child claimed, a son mourned",
+          "text": "Lyta Hall conceives a dream-born son whom Dream claims for the Dreaming; separately, Dream frees his imprisoned ex-wife Calliope, and the two mourn their long-dead son Orpheus.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Plants the two people S2 hinges on: Lyta's child, and the son Dream has not seen in centuries.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Dream has his tools and his purpose back, but Lucifer means to destroy him for the humiliation in Hell, Desire's family-blood scheme has been exposed and left unpunished, and Lyta Hall's dream-born son now belongs to the Dreaming.",
+        "questions": [
+          "How will Lucifer make good on her vow to destroy Dream?",
+          "What will Desire try next now that the Vortex plot has failed?",
+          "Who is the child Dream has claimed, and what does he want with him?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Dream (Morpheus)",
+          "line": "The King of Dreams, freed after a century imprisoned and restored to full power; his time among mortals has begun to soften him."
+        },
+        {
+          "name": "Death",
+          "line": "Dream's older sister and the compassionate psychopomp who reminded him his duties are worth doing."
+        },
+        {
+          "name": "Desire",
+          "line": "Dream's shape-shifting sibling and rival, whose long scheme to make him kill his own kin has just been exposed — and gone unpunished."
+        },
+        {
+          "name": "Lucifer Morningstar",
+          "line": "Ruler of Hell, humiliated by Dream in her own court and openly vowing to one day destroy him."
+        },
+        {
+          "name": "Lyta Hall",
+          "line": "Grieving widow whose dreamt reunion with her dead husband left her with a dream-born son that Dream has claimed for his realm."
+        },
+        {
+          "name": "Lucienne",
+          "line": "The Dreaming's librarian and Dream's most trusted advisor, who held the realm together while he was imprisoned."
+        },
+        {
+          "name": "Hob Gadling",
+          "line": "The immortal Englishman who has met Dream every hundred years since 1389; Dream has finally, openly called him a friend."
+        },
+        {
+          "name": "Calliope",
+          "line": "The Muse and Dream's estranged ex-wife, newly freed from years of captivity by a mortal, still grieving their long-dead son Orpheus."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Nada, remembered",
+          "text": "Called to a family gathering, Dream is shamed for having condemned his mortal lover Nada to Hell after their affair ended; he resolves to descend and free her.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The stated motive for going to Hell, and the guilt that keeps Dream off-balance through every subsequent decision.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Lucifer's revenge",
+          "text": "Reaching Hell, Dream finds Lucifer abdicating and handing him the empty realm as revenge, forcing him to arbitrate among gods, angels, fae, and demons who all claim the key.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Turns the personal grudge from S1 into the geopolitical crisis that dominates the season's first act.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The key given away",
+          "text": "Dream gives Hell to Heaven's angels, defeats the demon holding Nada's soul, and accepts the fae Nuala into his court; Nada chooses mortal rebirth over staying with him.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Resolves Nada, resets Hell's ownership, and quietly installs Nuala — three moves whose consequences ripple through the rest of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Delirium's plea",
+          "text": "Delirium asks Dream to help find their long-absent brother Destruction; Dream agrees, half-hoping to meet Nada, but old contacts they seek die before they can be reached.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Kicks off the road quest that reunites Dream with his son and, through the deaths, cracks his relationship with his youngest sister.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · A son, a brother, a blade",
+          "text": "The trail leads through Dream's son Orpheus to Destruction, who refuses to return; on the way home Dream, at Orpheus's own long plea, ends his son's cursed immortal life.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The single hinge of the season — every remaining beat exists because Dream spilled family blood here.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Kindly Ones invited in",
+          "text": "Spilling family blood summons the Kindly Ones; when Loki and Puck steal Lyta's son Daniel and fake his death, grief-mad Lyta calls the Furies down on Dream in vengeance.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Explains why Dream cannot fight what's coming — the punishment is triggered by a mother's grief he himself caused.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Dream steps outside his walls",
+          "text": "With the Dreaming being torn apart, Dream walks outside its bounds and takes Death's hand; Daniel wakes as an adult in his place, the new Dream of the Endless.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The succession itself — the King of Dreams is replaced, and everything about the realm going forward is measured against Daniel.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Dream is gone; the child Daniel now sits on the throne, tasked with the same eternal role but carrying a mortal memory of mercy. The Endless are one short, the Kindly Ones warn that fate binds even them, and Destruction remains outside his family's reach.",
+        "questions": [
+          "What kind of Dream will Daniel become — softer than his predecessor, or reshaped by the role?",
+          "Will Destruction ever be drawn back, or is his abdication permanent?",
+          "Can any of the Endless escape the fate the Kindly Ones say is written for them all?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Daniel",
+          "line": "The child born of the Dreaming to Lyta Hall, now grown into the new Dream of the Endless in place of his predecessor."
+        },
+        {
+          "name": "Lucienne",
+          "line": "Librarian of the Dreaming, now made prime minister by Daniel to steady the realm through its succession."
+        },
+        {
+          "name": "Death",
+          "line": "Dream's older sister; the one who walked her brother out of the Dreaming when he chose to end."
+        },
+        {
+          "name": "Desire",
+          "line": "Dream's shape-shifting sibling, chastened at the funeral but unpunished — still the family's wild card."
+        },
+        {
+          "name": "Delirium",
+          "line": "The youngest Endless, briefly steadied by her quest with Dream and left grieving him at its end."
+        },
+        {
+          "name": "Destruction",
+          "line": "The Endless who abandoned his post centuries ago; he remains missing, refusing any pull back to family duty."
+        },
+        {
+          "name": "Lucifer Morningstar",
+          "line": "Formerly the ruler of Hell; abdicated, free of both the realm and her grudge, and at peace with Dream by his end."
+        },
+        {
+          "name": "Lyta Hall",
+          "line": "Reunited with Daniel after being manipulated into calling the Kindly Ones on Dream; she has made her peace with the new Dream."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,414 @@
+{
+  "slug": "umbrella-academy",
+  "generatedFor": "The Umbrella Academy",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Funeral summons",
+          "text": "Estranged siblings reunite for their father Reginald Hargreeves' funeral; Number Five reappears from the future warning the world will end in eight days.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the family, the ticking clock, and Five as the plot engine — every S2 opening beat assumes the reader knows Five is the time-traveller with a doomsday deadline.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Assassins and Vietnam",
+          "text": "Commission killers Hazel and Cha-Cha hunt Five and abduct Klaus, whose escape via briefcase strands him in Vietnam, where he falls for a soldier named Dave.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Dave is the emotional anchor Klaus chases in S2's Dallas timeline; without this the S2 paint-store scene is meaningless.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Five's employer, Five's target",
+          "text": "Five's Commission past is revealed — he was the Handler's top assassin. From a prosthetic eye he identifies Harold Jenkins as the man who triggers the apocalypse.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The Commission and the Handler become S2's central antagonist infrastructure; the audience needs to know Five walked out on them.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Leonard wakes the violin",
+          "text": "Harold Jenkins, posing as violin student Leonard, manipulates Vanya off her medication; her long-suppressed reality-warping powers begin to surface.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Vanya's powers are the single fact that drives every subsequent season's apocalypse math — this is where they exit dormancy.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The diary and the throat",
+          "text": "Vanya kills Leonard after finding Reginald's diary and learning her father hid her powers her whole life; in a rage she then slashes Allison's throat.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Explains why Allison is mute at the start of S2 and why the sibling trust in Vanya is broken going into the finale — and into every rebuild after.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The chamber and the break",
+          "text": "Luther locks Vanya in the mansion's isolation chamber to contain her. She breaks free, destroys the mansion, and kills Pogo and Grace on her way out.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The cage is the decision that tips her from unstable to catastrophic — the moment the family loses her rather than saves her.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Moon breaks, siblings jump",
+          "text": "At the Icarus Theatre, Vanya's unleashed energy shatters the moon and ends the world; Five time-jumps the siblings into the past to try the ending again.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "This is the exact launchpad into S2 — the reader must arrive knowing why they land scattered in the past and why 'this time fix Vanya' is the plan.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The moon has been shattered by Vanya's power and the world has ended. Five has yanked the siblings into the past mid-apocalypse to try again — but nobody knows where or when they landed, or whether they can control Vanya before she does it a second time.",
+        "questions": [
+          "Where and when did each sibling land after the jump?",
+          "Can Vanya be reached before her powers detonate again?",
+          "With the Commission still hunting Five, is the past any safer than the future?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Number Five",
+          "line": "58-year-old man in a 13-year-old body, ex-Commission assassin, and the only reason anyone in the family knows the apocalypse is coming."
+        },
+        {
+          "name": "Luther (Number One)",
+          "line": "Team leader whose body was ape-transformed by a serum after a botched mission; in love with Allison and the one who chose to cage Vanya."
+        },
+        {
+          "name": "Diego (Number Two)",
+          "line": "Knife-throwing vigilante estranged from the family, still grieving Detective Patch and freshly cleared of her murder."
+        },
+        {
+          "name": "Allison (Number Three)",
+          "line": "Reality-bending 'rumor' powers, now mute after Vanya slashed her throat; she used Reginald's request to convince Vanya she was ordinary as a child."
+        },
+        {
+          "name": "Klaus (Number Four)",
+          "line": "Medium who talks to the dead; sober-ish and freshly traumatised by losing Dave in a Vietnam tour he took via briefcase."
+        },
+        {
+          "name": "Vanya (Number Seven)",
+          "line": "Believed powerless her whole life; is actually the most powerful of them and just caused the apocalypse she was medicated to prevent."
+        },
+        {
+          "name": "Ben (Number Six)",
+          "line": "The dead brother; a ghost tethered to Klaus and only visible to him."
+        },
+        {
+          "name": "The Handler",
+          "line": "Commission executive who ran Five as her hitman; shot by Hazel at the bowling alley when her offer to Hazel turned out to be a lie."
+        },
+        {
+          "name": "Hazel",
+          "line": "Ex-Commission killer who defected for the doughnut waitress Agnes; helped clear Diego and escaped into the past with her."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Scattered across Dallas",
+          "text": "The time jump strands the siblings across Dallas between 1960 and 1963; Five arrives days before a Soviet nuclear doomsday he must stop.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The scattered-family, ticking-clock, wrong-decade premise is what every subsequent beat depends on and what S3's return has to undo.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · New lives in the wrong decade",
+          "text": "Siblings settle into new lives: Vanya nannies Sissy's son Harlan, Allison marries activist Ray, Klaus leads a cult, Luther guards Jack Ruby, Diego is committed.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Harlan and Sissy in particular are load-bearing for later — Harlan is where Vanya's power residue ends up.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Handler and her daughter",
+          "text": "The Handler survived Hazel's bullet and returns to power; she plants her adoptive daughter Lila — secretly another of the '43' children — on Diego to shadow Five.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces Lila, whose survival at S2's end sets up her role in every later season, and re-installs the Handler as the season's antagonist.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Reginald unmasks",
+          "text": "Reginald is in Dallas convening the shadowy Majestic 12; after JFK still dies he peels off his human face, revealing himself as an alien, and kills them all.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Reginald being alive in 1963 and being non-human are both facts that fundamentally reshape how the family reads him from here on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Vanya remembers, JFK doesn't die",
+          "text": "FBI torture cracks Vanya's memory and unleashes an explosion that stops JFK's assassination — starting World War III as the second apocalypse in ten days.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Second apocalypse, same cause. This is the beat that proves 'fix Vanya' was the wrong plan.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ben goes",
+          "text": "Ben possesses Klaus's body to reach Vanya from inside her mind and calm her, averting the apocalypse — and is then finally pulled to the afterlife.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The dead brother leaving is the emotional pivot of the season and the reason the S3 opening reveal of a living Ben lands so hard.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Home is wrong",
+          "text": "Axel kills the Handler; Vanya reclaims her powers, leaving Harlan a residue. Herb sends them home to a 2019 where Reginald raised the Sparrow Academy — and Ben is alive.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "This is the entire launchpad into S3: altered timeline, a rival Academy, and a living Ben. Also plants the Harlan residue that becomes S3's paradox.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The siblings finally make it back to 2019 — except it isn't theirs. Reginald raised a completely different team called the Sparrow Academy, Ben is alive and hostile, and the family they knew here has been erased.",
+        "questions": [
+          "What did the siblings' return trigger in this altered timeline?",
+          "Who are these seven Sparrows, and why did Reginald prefer them?",
+          "If Ben is alive here, does he remember the brothers standing in front of him?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Number Five",
+          "line": "Still 13-bodied, now the closest thing the Commission has to a defector; brought the siblings home into a timeline he didn't intend."
+        },
+        {
+          "name": "Luther",
+          "line": "Ape-bodied bodyguard turned romantic; his S1 grudge against Vanya has thawed and he's the one who first sees this timeline is wrong."
+        },
+        {
+          "name": "Diego",
+          "line": "Just left Lila, whom he loved and who turned out to be Commission; also learned Reginald is an alien and is looking for a fight."
+        },
+        {
+          "name": "Allison",
+          "line": "Voice has healed; leaves behind a civil-rights husband Ray and returns to 2019 alone, capable of using her rumor powers again."
+        },
+        {
+          "name": "Klaus",
+          "line": "No longer a ghost's chaperone — Ben has moved on. Left behind Dave, the cult he built, and Axel who joined it."
+        },
+        {
+          "name": "Vanya",
+          "line": "Powers back, memory intact, and now aware she caused two apocalypses; walked away from Sissy and Harlan to keep them safe."
+        },
+        {
+          "name": "Reginald Hargreeves",
+          "line": "Alive in 2019 in this timeline; revealed to be an alien and has raised a different set of children in the family's absence."
+        },
+        {
+          "name": "Lila",
+          "line": "Handler's adoptive daughter and one of the 43 special children; mimics any power near her, and escaped Dallas alive after learning her mother had her parents killed."
+        },
+        {
+          "name": "Harlan Cooper",
+          "line": "Sissy's son; Vanya's powers were transferred into him and then reclaimed, but she left him with a residue she couldn't fully take back."
+        },
+        {
+          "name": "Ben",
+          "line": "As a ghost, finally departed for the afterlife after possessing Klaus to save Vanya — but is alive and hostile as a Sparrow in the 2019 they've just landed in."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Wrong timeline, wrong siblings",
+          "text": "The Umbrella siblings crash into the Sparrow Academy timeline, lose the fight, and shelter at Hotel Obsidian; Sparrow leader Marcus is disintegrated by an emerging Kugelblitz.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes both this season's rival family and the physical apocalypse (the Kugelblitz) that is going to consume reality until the reset.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Viktor, and no Claire",
+          "text": "Vanya comes out as transgender and takes the name Viktor. Allison learns her daughter Claire has been erased from this timeline and begins to spiral.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Viktor's identity carries forward, and Allison's spiral over Claire is the single motivation behind the season-ending betrayal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · A paradox eating the world",
+          "text": "The Kugelblitz begins deleting people and matter; Five ties it to a grandfather paradox — the siblings' mothers all died before pregnancy in this timeline.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The stakes for the whole season are now concrete: their existence itself is the apocalypse this time.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Harlan, and revenge",
+          "text": "Harlan resurfaces as Lester Pocket and confesses his outburst on Sissy's death killed the mothers and caused the paradox; Allison murders him for erasing Claire.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The paradox's origin closes and Allison crosses a moral line — the crossing is what makes her S3 finale deal with Reginald plausible.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Klaus is immortal",
+          "text": "Klaus dies and revives repeatedly, learning he simply cannot stay dead; he starts bonding with the medicated Sparrow-timeline Reginald.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Klaus's immortality is a hard fact the reader needs walking into S4 — his S4 predicament assumes it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · A reset behind seven bells",
+          "text": "Reginald reveals Hotel Obsidian hides a portal to Hotel Oblivion and a universe reset button behind seven bells; he murders Luther to force the group to cross.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "This is the season's plot mechanism and Reginald's true agenda — everything the finale does is a reaction to it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Reset, and a stranger's world",
+          "text": "Allison — secretly in her own deal with Reginald — axe-kills him and hits the reset. The universe reboots powerless, Sloane vanished, and a new Reginald ruling with a revived Abigail.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The launchpad into S4: no powers, Reginald in charge of the world, and Abigail alive. Every S4 opening beat depends on this state.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Allison's secret deal with Reginald has rebooted the universe. The siblings are alive and scattered but stripped of their powers, Luther's body is human again, Sloane is missing, and a new Reginald is running the city with a resurrected wife nobody has met before. In a mid-credits shot, Ben rides a Seoul subway to a destination he hasn't explained.",
+        "questions": [
+          "What are the new Reginald and Abigail actually building in the city they now control?",
+          "Where is Sloane, and can Luther find her without powers to search with?",
+          "Where is Ben going, and does he remember either family?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Number Five",
+          "line": "Arm regrown by the reset; still 13-bodied and now the only one who knows Allison cut a private deal with Reginald at the end."
+        },
+        {
+          "name": "Luther",
+          "line": "Human body restored by the reset; married Sloane during the season and lost her when the universe rebooted."
+        },
+        {
+          "name": "Diego",
+          "line": "With Lila again and about to be a father; his son Stan turned out to be a borrowed nephew Lila used to test him."
+        },
+        {
+          "name": "Allison",
+          "line": "Reunited with Claire and Ray thanks to her secret deal with Reginald; the family doesn't yet know the price was Luther's life."
+        },
+        {
+          "name": "Klaus",
+          "line": "Discovered he is immortal — no matter how he dies he comes back — and finally reconciled a little with Reginald."
+        },
+        {
+          "name": "Viktor",
+          "line": "Formerly Vanya; transitioned this season and now grieving Harlan, whom Allison killed for causing the paradox."
+        },
+        {
+          "name": "Lila",
+          "line": "Back with Diego and pregnant with his child; can still mimic any power near her, though the reset has taken powers off the table for now."
+        },
+        {
+          "name": "Ben",
+          "line": "Was the leader of the Sparrow Academy this timeline; alive after the reset and last seen riding a Seoul subway alone."
+        },
+        {
+          "name": "Reginald Hargreeves",
+          "line": "The reset-timeline version, now openly ruling the city with his revived wife — no longer an eccentric benefactor, a sovereign."
+        },
+        {
+          "name": "Abigail Hargreeves",
+          "line": "Reginald's alien wife, resurrected by the reset button; the reason he engineered the whole thing."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Six years, no powers",
+          "text": "Six years after the reset the siblings live powerless, ordinary lives; Ben is just out of prison for a crypto scam and the family is barely in touch.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the depowered, dispersed baseline — every reunion and every returning power in this season is measured against it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Keepers and a missing girl",
+          "text": "Five, now CIA, is investigating the Keepers — people who remember the erased timelines — when Sy Grossman asks Viktor to find his missing daughter Jennifer.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The Keepers and Jennifer are the two threads the season's plot rides on; the reader needs both entered together.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Ben spikes the sake",
+          "text": "Ben secretly laces the family's sake with marigold, restoring everyone's powers overnight — except Klaus, who abstained and stays powerless.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The powers return by Ben's hand, not choice, which will matter as Ben's role in the finale unfolds.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Jennifer, and the Cleanse",
+          "text": "They rescue Jennifer; Reginald and Abigail reveal Ben carries marigold and Jennifer carries durango, and when the two elements meet they trigger the reality-ending 'Cleanse'.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "This is the season's central threat named and explained — it's the apocalypse the finale is built around.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Fusion, and Abigail's confession",
+          "text": "Ben and Jennifer sleep together and begin fusing into the Cleanse; Abigail admits she engineered this because her resurrection was never meant to happen.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The 'why' behind Reginald's whole reset scheme falls apart in one sentence — the antagonist becomes complicit in her own erasure.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The marigold made everything",
+          "text": "Five learns from parallel versions of himself that Reginald's 1989 marigold experiment created every timeline and caused every apocalypse the family ever lived through.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Reframes the entire series in a single beat and hands the siblings the case for stepping into the Cleanse themselves.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · One timeline",
+          "text": "Lila saves her family and Claire; the siblings surrender to the Cleanse, dissolving the multiverse to leave a single timeline — where marigold blooms beneath a giant sycamore.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The finale. The cost of ending the cycle is the siblings themselves, and the closing image asks whether the cycle is really over.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The siblings have stepped into the Cleanse and let it consume them and Ben, collapsing every timeline into one. A cluster of real marigold flowers has blossomed beneath a giant sycamore in the surviving world, generating pollen that looks a lot like the elixir that started everything.",
+        "questions": [
+          "Are the Umbrella siblings truly gone, or does their sacrifice preserve them somewhere?",
+          "What does the marigold blooming beneath the sycamore mean for this one remaining world?",
+          "Could the cycle of marigold-born children begin again in this timeline?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Number Five",
+          "line": "CIA agent chasing the Keepers; the sibling who works out the marigold is the source of every timeline and every apocalypse."
+        },
+        {
+          "name": "Luther",
+          "line": "Powerless and working as a stripper at season start; got his powers back briefly before the family agreed to end them for good."
+        },
+        {
+          "name": "Diego",
+          "line": "Out-of-shape delivery driver married to Lila with kids; wanted to be CIA and instead becomes one of the siblings who steps into the Cleanse."
+        },
+        {
+          "name": "Allison",
+          "line": "Was doing commercials and raising Claire in peace after the reset; walks into the Cleanse alongside her siblings."
+        },
+        {
+          "name": "Klaus",
+          "line": "Sober germaphobe who never regained his powers this season; was tortured by his old dealer Quinn for being immortal before the finale."
+        },
+        {
+          "name": "Viktor",
+          "line": "Runs a bar far from everyone; the sibling Sy Grossman approached about finding Jennifer, and the one who most tried to save Ben."
+        },
+        {
+          "name": "Lila",
+          "line": "Diego's wife and mother of his children; saved her family and Claire before joining the siblings in the Cleanse."
+        },
+        {
+          "name": "Ben",
+          "line": "Fused with Jennifer into the Cleanse; the marigold-durango pair that would have erased everything until the siblings absorbed it with them."
+        },
+        {
+          "name": "Reginald and Abigail Hargreeves",
+          "line": "The reset couple who built this timeline for themselves; Abigail turned out to be the one steering things toward the Cleanse to undo her own resurrection."
+        },
+        {
+          "name": "Jean and Gene Thibedeau",
+          "line": "The Keepers Five was investigating — cultists who remembered the erased timelines and had built their group around Jennifer."
+        }
+      ]
+    }
+  }
+}

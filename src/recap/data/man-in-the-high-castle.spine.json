@@ -1,0 +1,382 @@
+{
+  "slug": "man-in-the-high-castle",
+  "generatedFor": "The Man in the High Castle",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Trudy's film",
+          "text": "Trudy is shot delivering a film that shows the Allies winning WWII, impossible in this Nazi-Japanese 1962. Juliana runs it to the Neutral Zone in her sister's place.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up the entire premise, the films, and Juliana's mission that drives every subsequent season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Frank's family",
+          "text": "The Japanese Kempeitai gas Frank Frink's sister and her nephews to pressure him about Juliana. He returns to work broken and starts secretly building a gun.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Frank's radicalisation from bystander to Resistance bomber begins here; his S2 arc is unintelligible without it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Joe the spy",
+          "text": "In the Neutral Zone, Juliana meets truck driver Joe Blake and grows close to him. Joe is secretly SS, sent by John Smith to intercept the film.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The Juliana-Joe axis and Joe's dual loyalty are the emotional engine of the next two seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Tagomi's peace",
+          "text": "Trade Minister Tagomi and Nazi defector Wegener slip nuclear weapon plans to Japan to balance the coming war. Wegener is arrested returning through New York.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Establishes Tagomi as the show's peacemaker and the underlying Reich-Japan nuclear standoff.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Thomas's illness",
+          "text": "Smith learns his son Thomas has a hereditary muscular dystrophy that Nazi law demands be euthanised. He begins hiding the diagnosis, willing to defy the Reich to save him.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The single secret that defines Smith's family arc for the rest of the series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Heydrich's coup",
+          "text": "Reinhard Heydrich, having orchestrated Smith's assassination, coerces Wegener into killing Hitler. Wegener shoots himself at Hitler's castle, and Smith arrests Heydrich as a traitor.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Removes Wegener, cements Smith's position with Hitler, and leaves the Reich succession question wide open.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A door opens",
+          "text": "Juliana learns Joe is a Nazi and flees him. Alone in Union Square, Tagomi meditates and opens his eyes in an alternate 1962 where the Allies won.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The parallel-worlds concept enters the show. Every future season rides on this reveal.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Tagomi has crossed by meditation into an alternate 1962 where the Allies won and the Cuban Missile Crisis is unfolding. Juliana has escaped Joe knowing he is SS, and a frail Hitler still rules a Reich Heydrich almost seized.",
+        "questions": [
+          "How did Tagomi cross into another world, and can he return?",
+          "Can Juliana and Frank survive in San Francisco now that Joe is exposed?",
+          "With Heydrich broken and Hitler failing, who is really next in line for the Reich?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Juliana Crain",
+          "line": "Young San Franciscan who took up her murdered sister Trudy's mission of smuggling the anti-Nazi films; now in the Neutral Zone and aware Joe has betrayed her."
+        },
+        {
+          "name": "Joe Blake",
+          "line": "The truck driver Juliana fell for in Canon City, now returned to New York exposed as an SS agent reporting to John Smith."
+        },
+        {
+          "name": "Frank Frink",
+          "line": "Juliana's boyfriend in San Francisco, broken by the Kempeitai's murder of his sister and her children and quietly building a gun."
+        },
+        {
+          "name": "John Smith",
+          "line": "SS Obergruppenführer in New York who has just crushed Heydrich's coup and is hiding his son's illegal muscular dystrophy diagnosis from the Reich."
+        },
+        {
+          "name": "Nobusuke Tagomi",
+          "line": "Trade Minister in the Japanese Pacific States, a secret peacemaker who has just meditated his way into an alternate 1962."
+        },
+        {
+          "name": "Inspector Takeshi Kido",
+          "line": "Kempeitai chief in San Francisco who hunts Juliana and the films and let Ed take the fall for the Crown Prince shooting."
+        },
+        {
+          "name": "Hawthorne Abendsen",
+          "line": "The Man in the High Castle, the unseen figure distributing the impossible films of an Allied victory."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Juliana defects",
+          "text": "Hunted by both the Kempeitai and her own Resistance, Juliana defects to the Nazi embassy. Smith secretly brings her to New York and installs her near his own family.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Puts Juliana inside the Reich, next to Helen and Thomas, which drives every relationship for the rest of the series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Adler killed",
+          "text": "Dr. Adler threatens to expose Thomas's illness. Smith murders him in his home; the doctor's widow grows suspicious and begins looking into her husband's death.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The killing becomes the leverage Hoover and Rockwell will hold over Smith later, and pulls Helen into complicity.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Joe's origin",
+          "text": "Joe travels to Berlin and meets his father, Reichsminister Heusmann. He learns he is a Lebensborn, an experiment in Nazi racial purity, and stays to embrace it.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Joe crosses over from conflicted spy to committed Nazi; his father Heusmann's rise depends on this reunion.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Frank bombs back",
+          "text": "After a new wave of Kempeitai massacres, Frank joins the Resistance and helps plant bombs against the Japanese. Ed, unbeknownst to him, is a Kempeitai informer buying their lives.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Completes Frank's transformation into an active insurgent and sets up the Kempeitai bombing that ends the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Tagomi crosses again",
+          "text": "Tagomi returns to the alt-world where his dead wife lives, then steals a film of the Bikini Atoll hydrogen bomb test to bring back to his own reality.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Confirms Tagomi as a repeat traveler and gives Smith the evidence he later uses to stop the war.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Heusmann's coup",
+          "text": "Hitler dies. Heusmann becomes Chancellor and frames Japan for the killing to justify war. Smith exposes the coup to Himmler using Tagomi's bomb film.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Reshapes the Reich: Hitler dead, Himmler ascendant, Smith his hero, Heusmann and Joe arrested.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Thomas walks in",
+          "text": "Inspired by his father's public honor, Thomas turns himself in for euthanasia. In the Neutral Zone, Abendsen tells a broken Juliana that Trudy is somehow alive.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The two griefs the next season is built on: Smith's dead son and the impossible fact that Juliana's dead sister is not dead.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Hitler is dead and Himmler now rules the Reich, publicly praising Smith for uncovering Heusmann's plot. Thomas has volunteered himself into euthanasia, and Abendsen has told Juliana that Trudy is alive somewhere.",
+        "questions": [
+          "How can Trudy be alive after Juliana saw her shot?",
+          "What will Himmler do with Joe now that his father has been branded a traitor?",
+          "Did Frank survive the Kempeitai bombing?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Juliana Crain",
+          "line": "Now in the Neutral Zone after her Nazi defection, told by Abendsen that Trudy is somehow alive and that her mission is not finished."
+        },
+        {
+          "name": "John Smith",
+          "line": "Celebrated Reich hero after exposing Heusmann and the favourite of new Reichsführer Himmler, but privately gutted by his son's death."
+        },
+        {
+          "name": "Helen Smith",
+          "line": "Smith's wife, complicit in hiding Thomas's illness and shattered by his voluntary euthanasia."
+        },
+        {
+          "name": "Joe Blake",
+          "line": "Committed Nazi after embracing his Lebensborn heritage in Berlin, arrested alongside his father when Heusmann's coup collapses."
+        },
+        {
+          "name": "Frank Frink",
+          "line": "Full Resistance bomber; his fate after the Kempeitai HQ bombing that killed Onoda is unshown."
+        },
+        {
+          "name": "Nobusuke Tagomi",
+          "line": "Back in his own world with the H-bomb film that stopped the war, now holding Abendsen's remaining films."
+        },
+        {
+          "name": "Inspector Takeshi Kido",
+          "line": "Survived the Kempeitai bombing that killed General Onoda, still the Empire's chief investigator in San Francisco."
+        },
+        {
+          "name": "Hawthorne Abendsen",
+          "line": "The Man in the High Castle in hiding, who has just revealed to Juliana that Trudy lives."
+        },
+        {
+          "name": "Heinrich Himmler",
+          "line": "New Reichsführer of the Reich after Hitler's death, publicly anointing Smith as his indispensable American."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Joe reborn",
+          "text": "Held and tortured in Berlin, Joe is forced by Himmler to execute his own father to prove loyalty. He is then posted to San Francisco as a Nazi diplomat and assassin.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Joe returns to the story as a weapon aimed at Tagomi and Juliana; his brainwashing is the frame for their reunion.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Trudy alive",
+          "text": "A Trudy appears alive at the Abendsens', but from a parallel world. Juliana realises Tagomi crossed between worlds to prevent the war, and that so can she.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The travelers concept moves from Tagomi's mystical outlier to the show's central mechanism; Juliana becomes a potential traveler herself.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Nebenwelt",
+          "text": "The Nazi 'Nebenwelt' project is quietly building a physical portal to invade parallel worlds. Juliana slashes Joe's throat, steals the plans, and flees to the Neutral Zone.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Introduces the portal itself and closes out Joe. Everything in the next season is either building the portal or trying to stop it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Smith's rise",
+          "text": "Reichsmarschall Rockwell tries to bring Smith down over Thomas's illness. Hoover switches sides at the last moment; Rockwell is exiled and killed, and Smith takes his rank.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Puts Smith at the very top of the North American Reich, positioning him for his direct clash with Himmler in the next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Thomas across worlds",
+          "text": "In Hitler's private film archive, Smith discovers Thomas alive in an alternate world. The vision of his living son begins to consume him.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The private obsession that drives Smith to cross worlds himself and to defy Himmler in the next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Frank executed",
+          "text": "Frank Frink, alive at a Catholic enclave and the anonymous artist behind the resistance's Rising Sun symbol, is finally tracked down and executed by Kido.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Removes Frank and hardens Kido's arc; the Rising Sun banner Ed hangs from Coit Tower becomes the resistance's rallying flag.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Jahr Null",
+          "text": "Himmler declares Jahr Null and razes the Statue of Liberty; a sniper wounds him during the ceremony. Juliana travels to an alt-world in front of Smith, who shoots her as she disappears.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The season ends with the portal proved to work, Juliana on the other side wounded, and Himmler weakened.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Nebenwelt portal is operational and Juliana has just crossed into a parallel world with Smith's bullet in her body. Frank is dead, Himmler lies wounded from a Resistance sniper, and Abendsen is Smith's prisoner.",
+        "questions": [
+          "Can Juliana survive the crossing and find any allies in the alt-world?",
+          "What will Smith do with a working portal and the vision of a living Thomas on the other side of it?",
+          "With Himmler wounded and Smith Reichsmarschall, who really controls the Reich now?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Juliana Crain",
+          "line": "Just crossed into an alt-world with a bullet from Smith, carrying the knowledge that the Nazis are building a portal to invade every reality."
+        },
+        {
+          "name": "John Smith",
+          "line": "Reichsmarschall of the North American Reich, publicly loyal to Himmler and privately obsessed with the alt-world where Thomas is still alive."
+        },
+        {
+          "name": "Helen Smith",
+          "line": "Smith's wife, unraveling after Thomas's death; killed Mrs. Adler in self-defence and drinking heavily in secret."
+        },
+        {
+          "name": "Inspector Takeshi Kido",
+          "line": "Executed Frank Frink personally, estranged from his traumatised veteran son Toru."
+        },
+        {
+          "name": "Nobusuke Tagomi",
+          "line": "Trade Minister still working for peace, now aware of Nebenwelt and of Juliana's mission to stop it."
+        },
+        {
+          "name": "Wyatt Price",
+          "line": "Irish-American smuggler turned Resistance leader who has fallen in with Juliana and hates the Nazis for what they did to his family."
+        },
+        {
+          "name": "Hawthorne Abendsen",
+          "line": "The Man in the High Castle, captured by Smith along with his wife."
+        },
+        {
+          "name": "Heinrich Himmler",
+          "line": "Reichsführer, wounded by a Resistance sniper during Jahr Null."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Juliana in alt-world",
+          "text": "Juliana survives the crossing and works as an aikido teacher in a peaceful alt-1962. She befriends the alt-Smith family, including the living Thomas.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Anchors the alt-world thread and gives Smith and Juliana their eventual head-on collision.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Tagomi assassinated",
+          "text": "In the Pacific States, Trade Minister Tagomi is assassinated by one of Kido's own captains on General Yamori's orders. The Emperor's plan for peace collapses.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Removes the show's peacemaker and sets Kido on a collision course with his own chain of command.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · BCR alliance",
+          "text": "Wyatt allies the Resistance with the Black Communist Rebellion. Their attack on a JPS auction kills General Masuda and two Japanese defence ministers.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Transforms the Resistance into an organised insurgency capable of driving Japan out.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Smith crosses over",
+          "text": "Smith uses the portal to reach the alt-world and reunites with Thomas. He is devastated when Thomas signs up for the Marines and the war in Vietnam.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Turns Smith's obsession into action and secretly costs him Helen, who finds his films.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Japan withdraws",
+          "text": "Kido arrests General Yamori for Tagomi's murder. With the war unwinnable and the Emperor's patience gone, Japan orders total withdrawal from the Pacific States.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Ends the Japanese occupation, hands the west to the BCR, and gives Smith his pretext to annex everything.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Smith kills Himmler",
+          "text": "Summoned to Berlin by a suspicious Himmler, Smith murders him in his chambers. With Goertzmann, he becomes Reichsführer of an autonomous North American Reich.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Smith is now unchecked, planning to exterminate fourteen million people in the Pacific States.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The portal opens",
+          "text": "Helen dies in a Resistance bombing; cornered by Juliana, Smith kills himself. The Nebenwelt portal opens uncontrollably and thousands from other worlds walk through.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The end of Smith, the end of the invasion, and the beginning of something the show never explains.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Smith is dead, the American invasion of the Pacific States is halted, and the Nebenwelt portal stands wide open with people from countless other realities pouring into this one. Abendsen has walked through it to another life.",
+        "questions": [
+          "What worlds have these arrivals come from, and what do they want here?",
+          "Can a Pacific States freed from Japan hold together under the Black Communist Rebellion?",
+          "With the portal open and unguarded, who now controls the traffic between worlds?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Juliana Crain",
+          "line": "Crossed back from the alt-world to stop Smith, and was the one who cornered him at the end."
+        },
+        {
+          "name": "John Smith",
+          "line": "Killed Himmler to become Reichsführer of an autonomous North American Reich, then killed himself when Juliana finally caught him."
+        },
+        {
+          "name": "Helen Smith",
+          "line": "Turned on her husband after learning of his plan to exterminate the Pacific States; killed by a Resistance bomb meant for him."
+        },
+        {
+          "name": "Nobusuke Tagomi",
+          "line": "Assassinated in the season premiere by one of Kido's captains, on General Yamori's orders."
+        },
+        {
+          "name": "Inspector Takeshi Kido",
+          "line": "Arrested his own superior for Tagomi's murder and stayed behind when Japan withdrew, indebted to the Yakuza for his son's life."
+        },
+        {
+          "name": "Wyatt Price",
+          "line": "Resistance leader who brought the BCR into the fight and helped end the Japanese occupation."
+        },
+        {
+          "name": "Hawthorne Abendsen",
+          "line": "The Man in the High Castle, who walked through the open portal into another life."
+        }
+      ]
+    }
+  }
+}

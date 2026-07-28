@@ -1,0 +1,101 @@
+{
+  "slug": "legend-of-korra",
+  "generatedFor": "The Legend of Korra",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Korra runs to Republic City",
+          "text": "Seventeen-year-old Avatar Korra, master of three elements but unable to airbend, flees her White Lotus compound for Republic City to train under Tenzin, Aang's son.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Korra's core problem — airbending block — and her arrival in the city where every following event happens.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Amon reveals his power",
+          "text": "At an anti-bender Equalist rally, the masked leader Amon permanently strips gangsters of their bending, a power no one thought possible outside the Avatar.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces the season's antagonist and the threat that reframes every bender's stakes.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The duel that breaks her",
+          "text": "Korra challenges Amon alone and is captured. He spares her bending to avoid making a martyr, but the encounter leaves her genuinely terrified for the first time in her life.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "First crack in Korra's confidence — the psychological weight she carries through the rest of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Hiroshi Sato exposed",
+          "text": "Industrialist Hiroshi Sato is revealed as the Equalists' weapons supplier, arming them with mecha-tanks. His daughter Asami sides against him and joins Korra's group on Air Temple Island.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Turns the Equalists from a movement into a military force and locks in the friend group.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Tarrlok's secret",
+          "text": "Councilman Tarrlok abducts Korra and reveals himself as a bloodbender and the son of the criminal Yakone. Amon soon finds him and takes his bending too.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Sets up the family reveal that ends the season and shows Amon turning on his own allies.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Republic City falls",
+          "text": "Equalist airships bomb the city and capture the council. Lin Beifong is stripped of her bending shielding Tenzin's family; General Iroh's relief fleet is destroyed on arrival.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The city is lost — the state Korra must reverse in the finale, and the scale of Amon's win.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Amon unmasked, Korra restored",
+          "text": "Korra exposes Amon as Tarrlok's waterbending brother Noatak and airbends for the first time. He strips her other three elements, but Aang's spirit restores her and unlocks the Avatar State.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Resolves the season's villain and Korra's airbending block, but leaves her spiritual connection newly opened.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Amon is dead, the Equalist uprising broken, and Korra is a fully realised Avatar for the first time — airbending mastered, bending restored, Aang's spirit having reached her directly. She has her power back, but she has never lived as the Avatar the world expects her to be.",
+        "questions": [
+          "Now that she can contact Aang, what will Korra do with a spiritual connection she has never used?",
+          "With Mako choosing Korra over Asami, where does that leave the group's friendships?",
+          "Who steps into the power vacuum in Republic City with the council gone and Lin Beifong's force gutted?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Korra",
+          "line": "The seventeen-year-old Avatar from the Southern Water Tribe, headstrong and physical, now able to bend all four elements after Aang restored what Amon took."
+        },
+        {
+          "name": "Tenzin",
+          "line": "Aang and Katara's son, the only airbending master and Korra's mentor, a councilman and father of four young airbending children."
+        },
+        {
+          "name": "Mako",
+          "line": "Firebending pro-bender, orphaned older brother to Bolin, ended the season with Korra after breaking things off with Asami."
+        },
+        {
+          "name": "Bolin",
+          "line": "Earthbending pro-bender and Mako's easygoing younger brother, part of Korra's inner circle."
+        },
+        {
+          "name": "Asami Sato",
+          "line": "Non-bender heiress and skilled driver who turned on her Equalist father Hiroshi; recently displaced from her home and dumped by Mako."
+        },
+        {
+          "name": "Lin Beifong",
+          "line": "Toph's daughter and former metalbending police chief, stripped of her bending by Amon while protecting Tenzin's family — bending later restored by Korra."
+        },
+        {
+          "name": "Amon / Noatak",
+          "line": "The Equalist leader, revealed as Tarrlok's waterbending brother; presumed dead after Tarrlok blew up their escape boat."
+        },
+        {
+          "name": "Hiroshi Sato",
+          "line": "Asami's father and the industrialist who armed the Equalists with mecha-tanks and airships; defeated and captured in the finale."
+        }
+      ]
+    }
+  }
+}

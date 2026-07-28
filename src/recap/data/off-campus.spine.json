@@ -1,0 +1,105 @@
+{
+  "slug": "off-campus",
+  "generatedFor": "Off Campus",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The deal",
+          "text": "Hockey captain Garrett, failing philosophy, recruits top student Hannah to tutor him. They agree to fake-date so she can catch her crush Justin's eye.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The premise that everything else grows from — the arrangement that puts these two in each other's orbit.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Her secret",
+          "text": "Drunk one night, Hannah asks Garrett to help her have an orgasm. She then reveals she was raped by a hockey player in high school and struggles with intimacy.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Reframes their arrangement into real trust and sets up the antagonist who returns later in the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Real feelings",
+          "text": "Garrett falls for Hannah, but she tells him their deal worked and Justin likes her. Realising it's Garrett she wants, she sings to him at the rink and they become a real couple.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The fake relationship becomes real — the emotional foundation the rest of the season tests.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Garrett's father",
+          "text": "At Thanksgiving, Garrett sees his father Phil abusing his new fiancée the way he abused Garrett's late mother. He confides in Hannah his fear of becoming Phil.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Establishes Garrett's core wound and why hockey — Phil's project — sits so uneasily on him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Allie and Dean",
+          "text": "Newly single Allie starts secretly hooking up with Dean, insisting it stay casual to spare her ex Sean. Sean walks in on her and realises she's already moved on.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The B-couple thread whose unresolved terms carry directly into the next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The rapist on the ice",
+          "text": "Playing rival Aaron Delaney — Hannah's rapist, unknown to Garrett — Garrett beats him bloody after Aaron insults her. Hannah, furious he fought for her, breaks up with him.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The rupture that tests whether the relationship is built on more than the deal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Reconciliation, new arrival",
+          "text": "Hannah performs a song about her trauma; Garrett apologises and they reunite. Meanwhile John recruits Hunter to replace suspended Garrett — and Hunter immediately clashes with Dean.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Closes the main romance and plants Hunter, whose arrival reshapes the group going forward.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Hannah and Garrett are together and honest with each other for the first time. Allie is quietly sleeping with Dean while sleeping with other men to keep it casual — and the new Hawks recruit Hunter, who she also slept with, has walked into their lives with a grudge against Dean.",
+        "questions": [
+          "Can Allie keep her thing with Dean casual now that Hunter is on the team?",
+          "What happened between Hunter and Dean's younger sister?",
+          "Will Garrett stay with hockey now that he's playing for himself and not Phil?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Hannah Wells",
+          "line": "Music major and Garrett's girlfriend; a survivor of assault who has just written a song about it and started to reclaim her body."
+        },
+        {
+          "name": "Garrett Graham",
+          "line": "Bruins-drafted Hawks captain and Hannah's boyfriend, learning to want hockey for himself rather than for his abusive father."
+        },
+        {
+          "name": "Allie Hayworth",
+          "line": "Hannah's roommate, freshly out of a long relationship with Sean and secretly sleeping with Dean while insisting it stay casual."
+        },
+        {
+          "name": "Dean Di Laurentis",
+          "line": "Wealthy Hawks player quietly hung up on Allie despite her rules, and now feuding with new recruit Hunter."
+        },
+        {
+          "name": "John Logan",
+          "line": "Garrett's best friend and the Hawks' new captain after Garrett stepped down; the one who brought Hunter onto the team."
+        },
+        {
+          "name": "Hunter Davenport",
+          "line": "New Hawks recruit who slept with Allie once at a bar and holds a serious, unexplained grudge against Dean over Dean's younger sister."
+        },
+        {
+          "name": "Phil Graham",
+          "line": "Garrett's father, revealed as the man who beat Garrett's late mother and is now abusing his new fiancée Cindy."
+        },
+        {
+          "name": "Justin Kohl",
+          "line": "Hannah's original crush; nudged her toward realising it was Garrett she wanted and now out of the romantic picture."
+        },
+        {
+          "name": "Tucker",
+          "line": "Hawks teammate in Garrett and Logan's inner circle."
+        }
+      ]
+    }
+  }
+}

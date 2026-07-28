@@ -1,0 +1,503 @@
+{
+  "slug": "she-ra-and-the-princesses-of-power",
+  "generatedFor": "She-Ra and the Princesses of Power",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The sword",
+          "text": "Horde soldier Adora finds a magic sword in the Whispering Woods, transforms into the hero She-Ra, sees the Horde's atrocities firsthand and defects to the Rebellion.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Establishes the show's premise, the identity split, and Adora's break with the only home she has ever known.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Catra promoted",
+          "text": "Shadow Weaver promotes Catra to force captain to fill Adora's spot. Adora's oldest friend takes the recognition she was always denied and refuses to follow her out.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Locks Catra on the opposite side of the war — every future conflict runs through this refusal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Alliance rebuilt",
+          "text": "Adora, Glimmer and Bow travel kingdom to kingdom rebuilding the Princess Alliance, winning Perfuma of Plumeria, Mermista of Salineas and the reclusive engineer Entrapta.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Introduces the ensemble the entire series will run on and re-forges the coalition capable of resisting the Horde.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Princess Prom",
+          "text": "At Princess Prom, Catra bombs the ballroom as cover, steals Adora's sword and takes Glimmer and Bow hostage. Entrapta is presumed dead in the rescue that follows.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The pivot from wins to losses; the loss of Entrapta is what turns her into a Horde asset.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Entrapta turned",
+          "text": "Catra and Scorpia find Entrapta alive in the Fright Zone. Catra turns her by claiming the Rebellion left her for dead — Entrapta joins the Horde with all her First Ones expertise.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Puts the show's most dangerous engineer on the wrong side; every future Horde weapon flows from this.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The promise",
+          "text": "Chasing Adora into the Crystal Castle, Catra relives their shared childhood and realises she does not want Adora back. She leaves her hanging from a ledge and walks away.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The emotional keystone of the whole series — Catra choosing this rift is what drives her decisions for seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Battle of Bright Moon",
+          "text": "Catra leads a Horde assault on Bright Moon but the reunited princesses turn the tide. Hordak still promotes her to second-in-command, replacing the disgraced Shadow Weaver.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Sets the new balance of power for S2: Catra ascendant, Shadow Weaver deposed.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Princess Alliance has repelled the Horde and rediscovered the legend of She-Ra, but Catra has taken Shadow Weaver's place at Hordak's side and Entrapta is now secretly building weapons for the enemy.",
+        "questions": [
+          "How far will Catra go now that she finally has real power?",
+          "What is Entrapta building with the Horde's stolen First Ones tech?",
+          "Who is Light Hope, and what does she actually want from Adora?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Adora / She-Ra",
+          "line": "Former Horde cadet, now the Rebellion's She-Ra, still learning to control her transformation and her sword."
+        },
+        {
+          "name": "Catra",
+          "line": "Adora's oldest friend, promoted to Hordak's second-in-command after choosing the Horde over her."
+        },
+        {
+          "name": "Glimmer",
+          "line": "Princess of Bright Moon with teleportation magic, leading the Alliance's fight day to day."
+        },
+        {
+          "name": "Bow",
+          "line": "Glimmer's best friend and tech-tinker archer, the quiet centre of the trio."
+        },
+        {
+          "name": "Hordak",
+          "line": "Cold, armoured ruler of the Horde in the Fright Zone."
+        },
+        {
+          "name": "Shadow Weaver",
+          "line": "Sorceress who raised Adora and Catra; disgraced and imprisoned after Catra unmasked her."
+        },
+        {
+          "name": "Entrapta",
+          "line": "Genius engineer obsessed with First Ones tech, now secretly working for the Horde."
+        },
+        {
+          "name": "Queen Angella",
+          "line": "Immortal winged queen of Bright Moon and Glimmer's overprotective mother."
+        },
+        {
+          "name": "Scorpia",
+          "line": "Cheerful scorpion-tailed Horde force captain fiercely devoted to Catra."
+        },
+        {
+          "name": "Light Hope",
+          "line": "First Ones hologram in the Crystal Castle, gently steering Adora toward 'her full potential'."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Entrapta exposed",
+          "text": "The princesses fight to restore the Whispering Woods against upgraded Horde bots. Dismantling one, Bow discovers Entrapta is alive and building for the enemy.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Reveals who is arming the Horde and reshapes how the Rebellion sees its losses.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The portal starts",
+          "text": "Entrapta stumbles into Hordak's failing portal experiment and, on impulse, gets it working. Hordak accepts her help and a strange partnership between them takes root.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces the portal weapon that drives every finale and the improbable bond that governs Hordak's arc.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Catra weaponises Adora",
+          "text": "In the frozen wastes, Catra infects Adora with a First Ones virus disc, willing to turn her enemy's own body into a Horde tool. Scorpia destroys the disc to save Adora.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Marks how far Catra will go, and shows Scorpia beginning to draw quiet moral lines.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Catra slipping",
+          "text": "With Entrapta rising in Hordak's favour, Catra's grip on her position weakens. Desperate for guidance, she visits the imprisoned Shadow Weaver, who begins working her old apprentice.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Sets up Shadow Weaver's escape and the resentment that will make Catra reckless.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Mara's signal",
+          "text": "Chasing a First Ones transmission with Bow's historian fathers, the group decodes Mara's message: a constellation named Serinia will soon appear above the Crimson Waste.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Lays the trail Adora will follow into the Crimson Waste next season and introduces Bow's fathers.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Shadow Weaver defects",
+          "text": "Shadow Weaver tricks Catra into helping her escape. That same night she appears at Adora's bedside in Bright Moon, alone, drained of magic and seeking asylum.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Places Shadow Weaver inside the Rebellion — the manipulator who will steer both Adora and Glimmer next.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Shadow Weaver has fled to the enemy she once schemed against. Hordak's portal is nearly ready with Entrapta at his side, and Mara's message is pulling Adora toward the Crimson Waste.",
+        "questions": [
+          "What does Shadow Weaver actually want inside Bright Moon?",
+          "What was Mara trying to warn Etheria about from beyond the grave?",
+          "Will Hordak's portal open the way to reinforcements — or something worse?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Adora / She-Ra",
+          "line": "Bonded now with Swift Wind and hunting the meaning of Mara's message."
+        },
+        {
+          "name": "Catra",
+          "line": "Losing ground in the Fright Zone, humiliated by Hordak, and jealous of his bond with Entrapta."
+        },
+        {
+          "name": "Glimmer",
+          "line": "Frustrated by Angella's caution, running missions of her own and leaning on Bow more than ever."
+        },
+        {
+          "name": "Bow",
+          "line": "Now the group's First Ones cipher, backed by his newly reconciled historian fathers."
+        },
+        {
+          "name": "Hordak",
+          "line": "Consumed by his interdimensional portal work, with Entrapta as his unexpected partner."
+        },
+        {
+          "name": "Shadow Weaver",
+          "line": "Escaped from her cell and standing in Adora's Bright Moon bedroom, offering herself as an asset."
+        },
+        {
+          "name": "Entrapta",
+          "line": "Hordak's collaborator and apparent equal, obsessed with completing the portal."
+        },
+        {
+          "name": "Queen Angella",
+          "line": "Bright Moon's cautious queen, still refusing to send her daughter into real danger."
+        },
+        {
+          "name": "Scorpia",
+          "line": "Devoted to Catra but increasingly the one who does the right thing in the room."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Adora's origin",
+          "text": "Adora heals the dying Shadow Weaver, who reveals Hordak's portal plan — and that Adora herself came through an experimental portal as an infant from another world.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Redefines who Adora is and hands her the intel that sends the whole season into motion.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Into the Crimson Waste",
+          "text": "Chasing Mara's signal into the Crimson Waste with Bow and Glimmer, Adora meets Horde defector Huntara and finds the wreckage of Mara's ship half-buried in the sand.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Delivers the vessel and setting where every remaining answer this season will be found.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Mara's warning",
+          "text": "Mara's recorded message begs Adora never to open another portal. Catra arrives, captures Adora and takes the sword — the key Hordak has been missing.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The rule the finale will break, and the moment Catra hands Hordak the last piece of his weapon.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Portal opened",
+          "text": "Entrapta realises the portal will unmake reality. Catra, hungry for vengeance and unwilling to listen, knocks her out and exiles her to Beast Island, then opens it anyway.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Catra's point of no return; also removes Entrapta from the board and plants the lie that drives S4.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Reality warps",
+          "text": "Reality collapses into a Horde-shaped dream where Adora never left. As the illusion decays, Adora and her friends fight to remember who they truly are.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The season's emotional core — Catra confronting the life she thought she wanted and rejecting it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Angella's sacrifice",
+          "text": "To pull the sword from the portal and restore reality, Queen Angella flies into the tear herself and is lost. Etheria snaps back — but the queen is gone.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Kills the queen, promotes Glimmer, and reshapes every relationship in Bright Moon going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Prime finds Hordak",
+          "text": "The portal's disturbance has echoed across the void. Somewhere far beyond Etheria, Horde Prime finally locates his lost clone Hordak — and turns his fleet toward this world.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Introduces the true antagonist and ends the season on the arrival that reframes everything.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Angella is dead. Entrapta is stranded on Beast Island and Catra has told no one. The opening portal broadcast Etheria's coordinates to Horde Prime, whose armada is now on its way.",
+        "questions": [
+          "Can Glimmer become queen without losing herself?",
+          "Will anyone ever learn what Catra did to Entrapta?",
+          "What kind of enemy is Horde Prime, and how much time does Etheria have left?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Adora / She-Ra",
+          "line": "Now knows she is a First One from another world, still searching for what that means."
+        },
+        {
+          "name": "Catra",
+          "line": "Betrayed Entrapta, lied about it, and opened a reality-ending portal to hurt Adora — untethered."
+        },
+        {
+          "name": "Glimmer",
+          "line": "About to be queen after her mother sacrificed herself to save Adora and reality itself."
+        },
+        {
+          "name": "Bow",
+          "line": "Steady centre of the trio, holding Adora and Glimmer together through the fallout."
+        },
+        {
+          "name": "Hordak",
+          "line": "A defective clone of Horde Prime; his portal has just told his creator where to find him."
+        },
+        {
+          "name": "Entrapta",
+          "line": "Exiled to Beast Island by Catra, presumed dead by everyone who might rescue her."
+        },
+        {
+          "name": "Shadow Weaver",
+          "line": "Living in Bright Moon as an uneasy asset, still hungry for magic and influence."
+        },
+        {
+          "name": "Scorpia",
+          "line": "Watching Catra's cruelty up close and beginning, quietly, to break from her."
+        },
+        {
+          "name": "Queen Angella",
+          "line": "Lost inside the portal saving Etheria.",
+          "note": "deceased"
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Queen Glimmer",
+          "text": "Glimmer is crowned Queen of Bright Moon while still grieving her mother. She starts leaning on the newly free Shadow Weaver for guidance in ways that unsettle Adora.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up the wedge between the trio and puts Shadow Weaver back at a power source.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Double Trouble",
+          "text": "In the Fright Zone, Catra hires the shapeshifter Double Trouble as a spy. Disguised as a child called Flutterina, they slip into the Rebellion undetected.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Places an unseen manipulator inside the Rebellion driving its worst mistakes all season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Scorpia walks out",
+          "text": "After one cruelty too many, Scorpia finally tells Catra she is a bad friend and leaves the Horde, taking Entrapta's robot Emily to attempt a Beast Island rescue.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Strips Catra of her last real ally and gives the Rebellion the person who will save Entrapta.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Heart of Etheria",
+          "text": "On Mara's ship, Adora learns from a hidden message that Etheria itself is a superweapon — the Heart of Etheria — and Light Hope was reprogrammed to fire it at all costs.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The reveal that reframes the entire show's mythology and splits the Rebellion.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The trio splits",
+          "text": "Adora and Bow refuse to arm the weapon. Glimmer, desperate to end the war, keeps working with Shadow Weaver to activate it anyway, fracturing the trio.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Puts Glimmer on a path Adora can't follow and sets up her capture.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Beast Island",
+          "text": "Adora, Bow and Scorpia reach Beast Island and find Entrapta alive — and Glimmer's father King Micah alive there too, exiled long ago by the Horde.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Recovers two long-lost characters who both become central next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Prime arrives",
+          "text": "Light Hope names Scorpia the last princess needed to fire the weapon. But before Etheria can go off, Horde Prime's fleet reaches the sky and takes Glimmer, Catra and Hordak.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Every faction is torn apart at once and the true villain finally steps onstage.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Horde Prime's fleet is here. Glimmer is his prisoner, Hordak has been dragged back to his creator, and Catra has stepped aboard the flagship of her own free will to survive.",
+        "questions": [
+          "Who is Horde Prime, and how do you fight a god?",
+          "Will Catra's bargain with Prime keep her alive, or is she just another puppet now?",
+          "Can Adora rescue Glimmer without triggering the weapon Etheria has become?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Adora / She-Ra",
+          "line": "Knows Etheria is a weapon and refuses to fire it; without Glimmer at her side for the first time."
+        },
+        {
+          "name": "Glimmer",
+          "line": "New queen of Bright Moon; her Shadow Weaver bargain has ended with Horde Prime taking her."
+        },
+        {
+          "name": "Bow",
+          "line": "The friend still holding the group together; his fathers are now decoding Mara's records."
+        },
+        {
+          "name": "Catra",
+          "line": "Broke Scorpia, exiled Entrapta, lost the Fright Zone, and has just boarded Horde Prime's ship."
+        },
+        {
+          "name": "Hordak",
+          "line": "Defeated by Catra, then swept up by his creator Horde Prime."
+        },
+        {
+          "name": "Horde Prime",
+          "line": "Interdimensional overlord Hordak was cloned from; his armada has finally reached Etheria."
+        },
+        {
+          "name": "Scorpia",
+          "line": "Left Catra, rescued Entrapta, and revealed as the true princess of the Black Garnet runestone."
+        },
+        {
+          "name": "Entrapta",
+          "line": "Alive, rescued from Beast Island, and cleared of Catra's frame-up."
+        },
+        {
+          "name": "Shadow Weaver",
+          "line": "Living in Bright Moon; taught Glimmer forbidden magic and is quietly regaining influence."
+        },
+        {
+          "name": "King Micah",
+          "line": "Glimmer's father, long-exiled to Beast Island, now alive and back with the Rebellion."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Prime takes Etheria",
+          "text": "Horde Prime's armies now cover Etheria. Catra offers herself into his service to survive; Glimmer, his prisoner, begins looking at Catra as a possible ally.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the new world, the ground-level occupation, and the odd-couple bond that reshapes Catra.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Into space",
+          "text": "With Etheria on fire and Adora fraying, Bow and Entrapta pilot Mara's ship into space to steal Glimmer back. The princesses stay behind to fight Prime's forces.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Splits the party into the two theatres — space rescue and ground resistance — the season runs on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Catra chooses Adora",
+          "text": "Aboard Prime's flagship, Catra secretly frees Glimmer and teleports her to Adora's rescue party, choosing Adora over her own survival. Prime catches her and chips her mind.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The turn every earlier season has been building toward — Catra risks herself for Adora at last.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Save Catra",
+          "text": "Adora raids the flagship. Her team severs a clone from Prime's hivemind — called Wrong Hordak — and drags a mortally wounded Catra out; She-Ra's grief heals her.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Brings Catra fully onto Adora's side and puts an inside-view of Prime's hivemind on the team.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The chipping",
+          "text": "Back on Etheria, Prime plants mind-control chips in the population — Spinnerella, then Micah, Mermista and much of the Rebellion — turning friends into enemies.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Every fight from here on is against people the heroes love; sets the stakes of the endgame.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The failsafe",
+          "text": "Bow's fathers uncover a hidden failsafe that can permanently disarm the Heart of Etheria. Only She-Ra can carry it — and bonding with it may cost Adora her life.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Names the price of victory and hangs Adora's survival on the season's final choice.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Race to the Heart",
+          "text": "The princesses head to the Fright Zone spire to break Prime's chip network while Adora, Catra and Bow race for the Heart, with Horde Prime himself finally descending to fight.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Aligns every remaining thread onto the two-front final battle.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Adora carries a failsafe that will destroy the Heart of Etheria — and possibly her along with it. Catra is finally at her side. Horde Prime himself is descending to stop them.",
+        "questions": [
+          "Will pulling the failsafe cost Adora her life?",
+          "Can Catra be trusted at Adora's back after everything?",
+          "Is there any way to beat Horde Prime, or only to unmake his weapon?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Adora / She-Ra",
+          "line": "Bonded to the failsafe that may destroy her, leading the final push against Horde Prime."
+        },
+        {
+          "name": "Catra",
+          "line": "Freed from Prime's chip and fighting alongside Adora — no more masks between them."
+        },
+        {
+          "name": "Glimmer",
+          "line": "Rescued from Prime's ship; her father Micah has been chipped and turned against her."
+        },
+        {
+          "name": "Bow",
+          "line": "Racing toward the Heart with Adora and Catra to trigger Entrapta's failsafe."
+        },
+        {
+          "name": "Horde Prime",
+          "line": "Interdimensional overlord who has chipped much of the Rebellion; now personally hunting Adora."
+        },
+        {
+          "name": "Hordak",
+          "line": "Reconditioned by Horde Prime, but memories of Entrapta beginning to surface."
+        },
+        {
+          "name": "Entrapta",
+          "line": "Trying to hack Prime's hivemind network before the chips fuse permanently with their hosts."
+        },
+        {
+          "name": "Scorpia",
+          "line": "Fully aligned with the Rebellion; briefly taken by Prime, then rescued."
+        },
+        {
+          "name": "Shadow Weaver",
+          "line": "Now allied with Castaspella, quietly steering the recovery of the failsafe from Mystacor."
+        }
+      ]
+    }
+  }
+}

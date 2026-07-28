@@ -1,0 +1,1890 @@
+{
+  "slug": "star-trek-strange-new-worlds",
+  "tmdbId": 103516,
+  "tvmazeId": 48090,
+  "matchedBy": "imdb_id",
+  "title": "Star Trek: Strange New Worlds",
+  "overview": "Follow Captain Christopher Pike, Science Officer Spock and Number One in the years before Captain Kirk boarded the U.S.S. Enterprise, as they explore new worlds around the galaxy.",
+  "firstAirDate": "2022-05-05",
+  "network": "Paramount+",
+  "poster": "https://image.tmdb.org/t/p/w780/w6KapI2JvrCkOPmQhkwYPJNjqeo.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/original/fZJs6xgU9dqIg9phIXjZAZOInzy.jpg",
+  "backdrops": [
+    "https://image.tmdb.org/t/p/original/fZJs6xgU9dqIg9phIXjZAZOInzy.jpg",
+    "https://image.tmdb.org/t/p/original/627K48naKH2Y3Rz47Ydra4qktdI.jpg",
+    "https://image.tmdb.org/t/p/original/rzAzvWJoZSwVSswvWsKx1lqT63m.jpg",
+    "https://image.tmdb.org/t/p/original/dgL8B0mqBqghnODi80E616RzlFV.jpg",
+    "https://image.tmdb.org/t/p/original/16BlPR8Qd1GGTLrr6y3Jd9MN8Dg.jpg",
+    "https://image.tmdb.org/t/p/original/bbu1NuhpsAMvjmC0C31DCGd2jTS.jpg",
+    "https://image.tmdb.org/t/p/original/yQ4eboUY4UBCJqSJEDjbO1vTxxg.jpg",
+    "https://image.tmdb.org/t/p/original/1JNTLNT7mxFwZRPy4EzPr0rd1jr.jpg",
+    "https://image.tmdb.org/t/p/original/AeUgVnlwbDNAYmBklenDPKBHXjt.jpg",
+    "https://image.tmdb.org/t/p/original/bmIo45GLaJJZ9W0cJUXLHl4cUw.jpg",
+    "https://image.tmdb.org/t/p/original/8sXvPyNVziwfmozYsI5N6bwybBk.jpg",
+    "https://image.tmdb.org/t/p/original/uhO9Khc0rEhQNntaTLhgeyBAfDP.jpg"
+  ],
+  "throughSeason": 4,
+  "totalSeasons": 4,
+  "showType": "Scripted",
+  "genres": [
+    "Action",
+    "Adventure",
+    "Science-Fiction"
+  ],
+  "status": "Running",
+  "runtime": 53,
+  "language": "English",
+  "seasons": [
+    {
+      "season": 1,
+      "name": "Season 1",
+      "airDate": "2022-05-05",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Strange New Worlds",
+          "overview": "When one of Pike’s officers goes missing while on a secret mission for Starfleet, Pike has to come out of self-imposed exile. He must navigate how to rescue his officer, while struggling with what to do with the vision of the future he’s been given.",
+          "plot": "In the 23rd century, Starfleet Admiral Robert April recalls Captain Christopher Pike of the starship USS Enterprise from shore leave after Pike's first officer, Una Chin-Riley (referred to as \"Number One\"), goes missing during a first contact mission. Pike is reluctant to return to space and confides in Vulcan science officer Spock—who has just become engaged to T'Pring—that he saw a vision of his own paralysis during their mission with the USS Discovery. They travel to the planet Kiley 279, which is in a similar state to 21st century Earth and on the brink of civil war. They have reverse-engineered a weapon from starship warp drives after witnessing the Discovery mission in nearby space. Pike and his crew rescue Number One from captivity and break Starfleet's General Order One by interfering in the society to convince them not to use the weapon. They avoid repercussions because of the top secret nature of the Discovery mission but Starfleet doubles-down on the rule by renaming it the Prime Directive. Pike recommits to his role and captains the Enterprise on a new five-year mission of exploration.",
+          "airDate": "2022-05-05",
+          "still": "https://image.tmdb.org/t/p/original/iU2g0Ms11BZKX6i1KxHJUfnmCXf.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/iU2g0Ms11BZKX6i1KxHJUfnmCXf.jpg",
+            "https://image.tmdb.org/t/p/original/bjUqtYZG4rzkhec0j0OKRYEAg4w.jpg",
+            "https://image.tmdb.org/t/p/original/66nSdgL2WIfs0T3efAv6i7j3biy.jpg",
+            "https://image.tmdb.org/t/p/original/pi2OwtWcOsepsfFeooKHb7f12OS.jpg",
+            "https://image.tmdb.org/t/p/original/chWq8FmXekN9L4YGk8n69Y0qIVc.jpg",
+            "https://image.tmdb.org/t/p/original/l3PTUIIz83ADTk4vYTSQwmNGpi2.jpg",
+            "https://image.tmdb.org/t/p/original/nKiVv8Ql3lf643Bp8OnM9ChSYw1.jpg",
+            "https://image.tmdb.org/t/p/original/ehufFrHjfe6hjYtFcuqx3I0GZTG.jpg",
+            "https://image.tmdb.org/t/p/original/4KjVfh2IV5VN7ovFNuGQTrFyYLW.jpg",
+            "https://image.tmdb.org/t/p/original/qjlFXeEu9ij0brPN2O3UbYKncCW.jpg",
+            "https://image.tmdb.org/t/p/original/ajMt3twhrt3tdG3angzU7Uc5Hlg.jpg",
+            "https://image.tmdb.org/t/p/original/l7Vg8LWwEfB22qgcnnM4n4I3045.jpg",
+            "https://image.tmdb.org/t/p/original/vHwlLWTTneOCZmZrkJq3woTow27.jpg",
+            "https://image.tmdb.org/t/p/original/12ApTJa3EgZ9YJ87t7451t4ab5j.jpg",
+            "https://image.tmdb.org/t/p/original/jNTLU7AJ9YcwCtqkuETA4gXvrsR.jpg",
+            "https://image.tmdb.org/t/p/original/sFWGvy09Fr9e33mA0kReXCJnVRC.jpg",
+            "https://image.tmdb.org/t/p/original/oD2SNt8jo4zgNkWObkcHNlkLKb1.jpg",
+            "https://image.tmdb.org/t/p/original/k9PDlN20GYh32CIMBtnwYr5LIZ6.jpg",
+            "https://image.tmdb.org/t/p/original/tr8iO2XDJSrs1YQVYQDcZcD0c1s.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Children of the Comet",
+          "overview": "While on a survey mission, the U.S.S. Enterprise discovers a comet is going to strike an inhabited planet. They try to re-route the comet, only to find that an ancient alien relic buried on the comet’s icy surface is somehow stopping them. As the away team try to unlock the relic’s secrets, Pike and Number One deal with a group of zealots who want to prevent the U.S.S. Enterprise from interfering.",
+          "plot": "Cadet Nyota Uhura is invited to a meal with other crewmembers in Pike's quarters, where she reveals that she is unsure about her future in Starfleet because she only joined as a way to escape from the pain of her parents' deaths. The Enterprise crew attempt to alter the course of a comet that is set to kill all of the inhabitants of a desolate planet, but it has a force field that prevents this. Uhura joins a team that transports to the comet's surface and discovers that it responds to music. A starship of \"shepherds\", who are escorting the comet, position themselves between it and the Enterprise; they believe it is a being called M'hanit who is an ancient arbiter of life. Enterprise distracts them to allow Spock to alter the comet's course and, as it passes by the planet, it releases water vapor into the atmosphere that will improve the conditions for life. Uhura decodes music from the comet which indicates that it had expected this interference, and Pike ponders the origins of the comet and whether this was more than coincidence. He also considers the lives of the cadets that he is destined to save by sacrificing himself.",
+          "airDate": "2022-05-12",
+          "still": "https://image.tmdb.org/t/p/original/HIVV4a2UE6CRlWIYGWl6zpN5TJ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/HIVV4a2UE6CRlWIYGWl6zpN5TJ.jpg",
+            "https://image.tmdb.org/t/p/original/2uMjXRxnlge1aY4T3OZvU6BK1NO.jpg",
+            "https://image.tmdb.org/t/p/original/laSLxGDrt2f60LBO1zprFheq4lA.jpg",
+            "https://image.tmdb.org/t/p/original/9wcun8shPZldUosYdEKRajYiks6.jpg",
+            "https://image.tmdb.org/t/p/original/nFHFUN8oHQjoQ6lQWL7T2FQpHSm.jpg",
+            "https://image.tmdb.org/t/p/original/1ZHde299Et1MykKetXKU1x4nuBX.jpg",
+            "https://image.tmdb.org/t/p/original/joLqhjfCiokM3pD4JWDCGtSE2UM.jpg",
+            "https://image.tmdb.org/t/p/original/9zaXlHOTQwrcmHD46gYXK2y9dwC.jpg",
+            "https://image.tmdb.org/t/p/original/nCeTam9vm3eAMvod4m4BREz3tej.jpg",
+            "https://image.tmdb.org/t/p/original/mg0qS8WJ0Nl9jMSVFcxBBiDyFKw.jpg",
+            "https://image.tmdb.org/t/p/original/pUkeeGrWEabErttePyWsscDcQ61.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Ghosts of Illyria",
+          "overview": "The U.S.S. Enterprise encounters a contagion that ravages the ship. One by one, the entire crew is incapacitated except for Number One, Una Chin-Riley, who must now confront a secret she’s been hiding as she races to find a cure.",
+          "plot": "The Enterprise investigates the disappearance of a colony of Illyrians, who are banned by the Federation due to their genetic engineering. As an ion storm approaches, members of the away team return to the ship after unknowingly contracting a virus that addicts them to light. Number One is immune because she is an Illyrian, which she reveals so a cure can be synthesized from her blood. Trapped by the storm, Pike and Spock determine that the colonists were attempting to reverse their genetic modifications so they could join the Federation. They may have created the virus and transformed into plasma-like beings. The pair are protected from the storm by those beings and return to the Enterprise once everyone is cured. Number One attempts to resign, but Pike refuses. She wonders whether he would have shown more prejudice if she had not helped save the crew. Number One learns that the virus got through the ship's filter because chief medical officer Dr. Joseph M'Benga is using an outdated transporter. This holds his daughter Rukiya in stasis until he can cure her rare disease.",
+          "airDate": "2022-05-19",
+          "still": "https://image.tmdb.org/t/p/original/cuBwdj9rc1EhqGHSC13rqx8R4c3.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/cuBwdj9rc1EhqGHSC13rqx8R4c3.jpg",
+            "https://image.tmdb.org/t/p/original/wSAaJ6iBhKlfPOoEYKsgrZltVN8.jpg",
+            "https://image.tmdb.org/t/p/original/9GA3A9MRcQWwJMtyBgrdYPMM4GM.jpg",
+            "https://image.tmdb.org/t/p/original/n3XshAoUz1RzcXiXih8YEkEdelc.jpg",
+            "https://image.tmdb.org/t/p/original/ljrG5LqSCbFKECoY3JW2oR8vzmU.jpg",
+            "https://image.tmdb.org/t/p/original/eT1YSmT8qz5wPMllFq8ZSYhJync.jpg",
+            "https://image.tmdb.org/t/p/original/iLMIB2pBbZgfuMWKXm9LLRxQyQE.jpg",
+            "https://image.tmdb.org/t/p/original/fwTOIGaCrvErhqZxDNKRGNdtnGd.jpg",
+            "https://image.tmdb.org/t/p/original/9PkZtTFRU0dhWv05ZFiE9Hi1hRO.jpg",
+            "https://image.tmdb.org/t/p/original/veIt4XQfGm7DVc0KwT27LU9L9OH.jpg",
+            "https://image.tmdb.org/t/p/original/rBX7g38M4F4OYtgq1azikgsysiR.jpg",
+            "https://image.tmdb.org/t/p/original/ypVizUNZYJMA4bXcv6DMT4zVgNt.jpg",
+            "https://image.tmdb.org/t/p/original/pRjcVIOJ9NQ22dgqeKoiiwwCUKU.jpg",
+            "https://image.tmdb.org/t/p/original/dHSvOTYTF4c3FmnxK3ULNQKCbpT.jpg",
+            "https://image.tmdb.org/t/p/original/4VZKHK96Km3Dn6DdiDHf4V35Wh3.jpg",
+            "https://image.tmdb.org/t/p/original/w19b93F3rVovUSfcqWiP97cjIda.jpg",
+            "https://image.tmdb.org/t/p/original/nTQcWIBxWulwrbt8wynMLSeRVnz.jpg",
+            "https://image.tmdb.org/t/p/original/8bgU8VZjmoCK1rNouDvRcUwiDi1.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Memento Mori",
+          "overview": "While on a routine supply mission to a colony planet, the U.S.S. Enterprise comes under an attack from an unknown malevolent force. Pike brings all his heart and experience to bear in facing the crisis, but the security officer warns him that the enemy cannot be dealt with by conventional Starfleet means.",
+          "plot": "The Enterprise attempts to deliver a nuclear-powered air filter to a Federation colony, but finds many of the colonists dead. Security chief La'An Noonien-Singh helps evacuate the survivors and recognizes the situation as a Gorn trap; she was the only survivor of a Gorn attack in her childhood. A Gorn ship attacks and does significant damage to the Enterprise. M'Benga and nurse Christine Chapel resort to 21st-century medicine to treat the wounded when their equipment goes offline. The crew lure the Gorn ship into the atmosphere of a brown dwarf near a black hole, where both ships' sensors and shields are useless. Spock figures out a way to track the Gorn ship and they destroy it, but three more Gorn ships arrive. One is crushed by the pressure of the brown dwarf's atmosphere. Spock mind melds with Noonien-Singh to learn about the Gorn's communication system and they use this to trick one ship to fire on the other. Enterprise then warps around the black hole, temporarily disappearing, and ejects the destabilizing air filter which explodes and convinces the remaining Gorn ship that the Enterprise is destroyed.",
+          "airDate": "2022-05-26",
+          "still": "https://image.tmdb.org/t/p/original/mQGJK4sxx3hUzYz46m94u10Jsy9.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/mQGJK4sxx3hUzYz46m94u10Jsy9.jpg",
+            "https://image.tmdb.org/t/p/original/bPDnuvROazAlAHoE0Q04wWHyk9u.jpg",
+            "https://image.tmdb.org/t/p/original/sftGGlFVFXMDdwUPbtQcDUguLfK.jpg",
+            "https://image.tmdb.org/t/p/original/ir8pzXXnmMjIsrMS5DZ9nzPbHXS.jpg",
+            "https://image.tmdb.org/t/p/original/2GfnwGjYSUi2Bv9SYz7wgbpylws.jpg",
+            "https://image.tmdb.org/t/p/original/eSUNLD6v1UjTB64EkiyIeNaJyxj.jpg",
+            "https://image.tmdb.org/t/p/original/biQjqhp4JW1IBFNcd3P0DTolbRI.jpg",
+            "https://image.tmdb.org/t/p/original/r7xCdsahH4rTL0oL9jm1FT4pjdo.jpg",
+            "https://image.tmdb.org/t/p/original/gKnmhG8jDbqFEfY4oPQQu57yso.jpg",
+            "https://image.tmdb.org/t/p/original/dePa3AayDrsqcpRXdDfoL6Yb1gD.jpg",
+            "https://image.tmdb.org/t/p/original/9wOWfAeSt2KEvy0827LVsgyy80D.jpg",
+            "https://image.tmdb.org/t/p/original/y9OGUFFnw3psC0OaZnZQ7TLPkQL.jpg",
+            "https://image.tmdb.org/t/p/original/8CdYW9zwbNPBLtGEf2YihaDZBAU.jpg",
+            "https://image.tmdb.org/t/p/original/pFBgSKaWyX6yhVQSgIHgZYGa7Yp.jpg",
+            "https://image.tmdb.org/t/p/original/hIIiNhSjRh06h0Nie8mToolXnWB.jpg",
+            "https://image.tmdb.org/t/p/original/dla7BzuUx5Y4kNbM6ZBs1iX0Yyt.jpg",
+            "https://image.tmdb.org/t/p/original/qUhw6NH3TY7hGWfeDqM47NjTJiH.jpg",
+            "https://image.tmdb.org/t/p/original/oWmptZ1MoMU8kAQNKubwFyuRo5z.jpg",
+            "https://image.tmdb.org/t/p/original/XJnxucPFholISeXzAlYEdhc6T9.jpg",
+            "https://image.tmdb.org/t/p/original/fP2HHEQ5XYyo2rS5Im0BKeqYrSZ.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Spock Amok",
+          "overview": "It’s a comedy of manners when Spock has a personal visit in the middle of Spock and Captain Pike’s crucial negotiations with an unusual alien species.",
+          "plot": "The crew go on shore leave while the Enterprise undergoes repairs at Starbase One. Number One and Noonien-Singh apprehend two ensigns conducting an unauthorized spacewalk as part of a game played by lower-ranked crew members called \"Enterprise Bingo\". Learning that they have reputations as \"fun-killers\", the pair try the game themselves. The half-human Spock has grown concerned that T'Pring thinks he is becoming too human. He plans to spend his shore leave with her but April interrupts to ask Pike and Spock for help negotiating with the R'ongovians, who are considering allying with the Federation, Klingons, or Romulans. After discussing his relationship with Chapel, Spock undertakes a special mind meld ceremony with T'Pring so they can understand each other better. This accidentally causes them to switch katras, effectively swapping bodies. Spock attempts to carry out T'Pring's work convincing lapsed Vulcans to return to logic while T'Pring helps Pike succeed with the negotiations. M'Benga and Chapel later switch Spock and T'Pring's katras back to their proper bodies.",
+          "airDate": "2022-06-02",
+          "still": "https://image.tmdb.org/t/p/original/imnMP7fetdx9QAc2yTBZxhNQsPX.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/imnMP7fetdx9QAc2yTBZxhNQsPX.jpg",
+            "https://image.tmdb.org/t/p/original/coWkPr1gwU1JVPD2cyyXEopp6tr.jpg",
+            "https://image.tmdb.org/t/p/original/glA2l7JgkPHEAlRSfSWGPD4jD30.jpg",
+            "https://image.tmdb.org/t/p/original/mMFht6SLJ8qoaKgChEJhFnp0Uxf.jpg",
+            "https://image.tmdb.org/t/p/original/kb2jnzHSXtWcnGCBlAvwSnHYTC1.jpg",
+            "https://image.tmdb.org/t/p/original/nDND6GxeMZVMvMui1DFdZRxYlC.jpg",
+            "https://image.tmdb.org/t/p/original/ksoqoSOuxYqQizurEnlvJdDXyu2.jpg",
+            "https://image.tmdb.org/t/p/original/iAP5xSbOmQcAucsI9jZMH0f0sRt.jpg",
+            "https://image.tmdb.org/t/p/original/mZjuotRbf0444ipFQwvrp6eHBQs.jpg",
+            "https://image.tmdb.org/t/p/original/pTYWL14wgNKkIx8qnpNEG8ZgZxC.jpg",
+            "https://image.tmdb.org/t/p/original/2lV0CgIULQ3I1ysoBuYbNweSaGQ.jpg",
+            "https://image.tmdb.org/t/p/original/l4n5F42Uw9BzL8i5pEKChGKOZGI.jpg",
+            "https://image.tmdb.org/t/p/original/vxUkzu07LBlp89lgL9bmQ2AmrZ1.jpg",
+            "https://image.tmdb.org/t/p/original/w4Q4QtOTtIRLzn6aaHtWVu1d2F8.jpg",
+            "https://image.tmdb.org/t/p/original/lTdMXqCUEs3IZCaDDYZ3rbORpi9.jpg",
+            "https://image.tmdb.org/t/p/original/kRetxnUgyrmgh1p2J98CzOsD4Ls.jpg",
+            "https://image.tmdb.org/t/p/original/chpjHEyxbDVGtRkJWWbfdCkP41z.jpg",
+            "https://image.tmdb.org/t/p/original/hjDTEvemz9r75lfFH4wJmKPe4FT.jpg",
+            "https://image.tmdb.org/t/p/original/pUzGG3pd6vjTb3vXTbiKFRGh91l.jpg",
+            "https://image.tmdb.org/t/p/original/1RRvlrgDd6NdsPqw65VjYrn9fFA.jpg",
+            "https://image.tmdb.org/t/p/original/neDOM00qxQ38KfzLGFQ1r087kyD.jpg",
+            "https://image.tmdb.org/t/p/original/ancGmWsW8FPwdO00wwvMkcAleSJ.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Lift Us Where Suffering Cannot Reach",
+          "overview": "A threat to an idyllic planet reunites Captain Pike with the lost love of his life. To protect her and a scientific holy child from a conspiracy, Pike offers his help and is forced to face unresolved feelings of his past.",
+          "plot": "While en route to the planet Majalis, the Enterprise receives a distress call from a shuttlecraft under attack from a warship. Enterprise destroys the warship and the shuttlecraft personnel are transported aboard: a boy called the \"First Servant\"; his father and physician Gamal; and Alora, a leader on Majalis who is an old flame of Pike's. Pike agrees to return them to Majalis. Gamal attempts to fake his son's death to keep him from returning to the planet, but is thwarted and the boy goes to Majalis with Pike and Alora for his \"ascension ceremony\". Pike is allowed to witness the ceremony, where the corpse of the previous First Servant is removed from a machine and the new First Servant is connected in his place. Pike is horrified by this but unable to stop it, and Alora explains that Majalis can only remain a paradise-like society if a child is sacrificed to the machine. Majalis's rebellious colony objects to this practice and Gamal had joined them to save his son. Gamal helps M'Benga work on a treatment for Rukiya's condition and then leaves Enterprise to join the colony, hoping to save future First Servants.",
+          "airDate": "2022-06-09",
+          "still": "https://image.tmdb.org/t/p/original/tQjLSGjSmutnJH8PifNUbTC3ySz.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/tQjLSGjSmutnJH8PifNUbTC3ySz.jpg",
+            "https://image.tmdb.org/t/p/original/lWfHmU1sT5hiJNQoDDABPiLLXMt.jpg",
+            "https://image.tmdb.org/t/p/original/lUCF8nMZo4OfJdoI6TVss2ZYVvg.jpg",
+            "https://image.tmdb.org/t/p/original/3MtaQm92zFCl4USkKsIulZ4vH2e.jpg",
+            "https://image.tmdb.org/t/p/original/jKP6JpdcoVXhZkgW92aJgcF8Pj8.jpg",
+            "https://image.tmdb.org/t/p/original/wN4hvRSzhCczXfcKMwmP69N2pEV.jpg",
+            "https://image.tmdb.org/t/p/original/fCjDSJqgXnqafSEsWjZk42Vyr05.jpg",
+            "https://image.tmdb.org/t/p/original/86gQGDA6Crdf5TuGD5OIilJFzFQ.jpg",
+            "https://image.tmdb.org/t/p/original/2TNdp40cXfWGXo57JURCyY3ssph.jpg",
+            "https://image.tmdb.org/t/p/original/aSoAQ3oo1uYmloQeF7tXxLhKDTS.jpg",
+            "https://image.tmdb.org/t/p/original/7hyVIxXmRq0YIo9C2i3pwKu2XYI.jpg",
+            "https://image.tmdb.org/t/p/original/xWYOWf1YvoZHsGABP8BQbrxvDgy.jpg",
+            "https://image.tmdb.org/t/p/original/x5uOK5BwQFrTIKAl5VkmgUZTssx.jpg",
+            "https://image.tmdb.org/t/p/original/mTf26PuMq7sLV9feyBKnQ3liWG2.jpg",
+            "https://image.tmdb.org/t/p/original/qXPUEvKjMYbbu3GGnXkYQG3vuK1.jpg",
+            "https://image.tmdb.org/t/p/original/gAIsiBHllcPYnqxvH0ECXDVHxd3.jpg",
+            "https://image.tmdb.org/t/p/original/cEBNp9vtJ43Bwm5Pl4DJdmHwXyS.jpg",
+            "https://image.tmdb.org/t/p/original/bohkpXavuH91qKyV7Osqodo73kt.jpg",
+            "https://image.tmdb.org/t/p/original/f57f60phSrLDLQVNH84k8GhS3hD.jpg",
+            "https://image.tmdb.org/t/p/original/ipc3gTkvdnLCy4NIPKW91kXHcHU.jpg",
+            "https://image.tmdb.org/t/p/original/9TrgI3j1OL1NEfvmBPkQtUfVYMF.jpg",
+            "https://image.tmdb.org/t/p/original/p7tdWrd6BrzpSpTLLyjRU1UWnS6.jpg",
+            "https://image.tmdb.org/t/p/original/1NRrgg8UckgqdfqU1QCNxzl3E1S.jpg",
+            "https://image.tmdb.org/t/p/original/awBM5DLQJFCqtTklmXlZ8SzDHPq.jpg",
+            "https://image.tmdb.org/t/p/original/vEY1CifP57WC4VUVKE1SLtMqq64.jpg",
+            "https://image.tmdb.org/t/p/original/4g5nrLFzJwl3afIawkpjiUHvKHD.jpg",
+            "https://image.tmdb.org/t/p/original/2qALKt4yJy58xLy0oFsKQApIOm0.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "The Serene Squall",
+          "overview": "While on a dangerous humanitarian mission, the crew of the U.S.S. Enterprise stumbles into a harrowing game of leverage with the quadrant’s deadliest space pirate.",
+          "plot": "Starfleet Counselor Aspen travels with the Enterprise to a far-flung colony under attack from the Serene Squall, a rogue ship of space pirates. Pike and a boarding party transport over to the Serene Squall at the same time as its crew boards Enterprise. Pike uses his culinary skills and some manipulative tactics to encourage a mutiny on the Serene Squall, allowing him and his boarding party to gain control of the ship. Aspen reveals themself as Angel, the Serene Squall's captain. They contact T'Pring and give her an ultimatum: release Angel's lover, a Vulcan prisoner that T'Pring is attempting to rehabilitate, or Spock dies. T'Pring chooses to hand the prisoner over, but Spock stops her by pretending to break their engagement, claiming to have an affair with Chapel. Angel tries to fire on T'Pring's ship, but Pike and the boarding party use remote access codes to lock Enterprise's controls. Angel flees and the pirates surrender. Spock reassures T'Pring of his love for her and tells Chapel that their friendship is strictly platonic. He also reveals to Chapel that Angel's lover is his half-brother Sybok.",
+          "airDate": "2022-06-16",
+          "still": "https://image.tmdb.org/t/p/original/momEFknzpISRl6pBr3nuT7MAEy.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/momEFknzpISRl6pBr3nuT7MAEy.jpg",
+            "https://image.tmdb.org/t/p/original/mMekLIQxcnaUYZOXid5XtPUIoEg.jpg",
+            "https://image.tmdb.org/t/p/original/vhojQbrZmwVdPDtXSEpfiCet8aG.jpg",
+            "https://image.tmdb.org/t/p/original/oWrckulAsdXdKwf3mcUQ83KdC8b.jpg",
+            "https://image.tmdb.org/t/p/original/AjXxhSdd2bcjuRCs3yyy8b5ZMV1.jpg",
+            "https://image.tmdb.org/t/p/original/rIlzxVcrC0msmExlTomgnPXV6I6.jpg",
+            "https://image.tmdb.org/t/p/original/bzaOosPFtmpLVNKHjc6eCKeYa26.jpg",
+            "https://image.tmdb.org/t/p/original/pZGx9EfQzv1nsROuv1AgdEqLPbA.jpg",
+            "https://image.tmdb.org/t/p/original/qsWHo6fyjhHfDUDqglajgJKHxWd.jpg",
+            "https://image.tmdb.org/t/p/original/zsNItFwFZIDCFIWSavn2RLBhzte.jpg",
+            "https://image.tmdb.org/t/p/original/u3DCpv9ofsI0JlH3iCzOfpIEoB7.jpg",
+            "https://image.tmdb.org/t/p/original/b9CQ2GiqMsRA6cbJSLoySZBVl3M.jpg",
+            "https://image.tmdb.org/t/p/original/4DNuTZTPaGWvnF25vmI1skwqHG1.jpg",
+            "https://image.tmdb.org/t/p/original/vzzYt22TwIKIMkFHfhlAzM9cwgk.jpg",
+            "https://image.tmdb.org/t/p/original/pQHCpwHTDttFMJ6OVU6mlLIGWUi.jpg",
+            "https://image.tmdb.org/t/p/original/5CkSFaTzcdgu4b6QRrY7DtDp70I.jpg",
+            "https://image.tmdb.org/t/p/original/vZPKUoAJA1XIUGjJ3sVcxHhR7rd.jpg",
+            "https://image.tmdb.org/t/p/original/lDiSWxQKU8As3HOvTtkVK0Dh6Y2.jpg",
+            "https://image.tmdb.org/t/p/original/dmD4tYd7OlpHKnVjKVQjAmaeMZd.jpg",
+            "https://image.tmdb.org/t/p/original/zrHMZWwWArKZy4AEaIks5td0XFt.jpg",
+            "https://image.tmdb.org/t/p/original/2mHIQB2tqGYzWKwDF4T92DQSINS.jpg",
+            "https://image.tmdb.org/t/p/original/3vL4lIF2A36ZuWBWjTEbVcYpy6v.jpg",
+            "https://image.tmdb.org/t/p/original/wQIw2y8TYLW1zCBfun5mwRqAWTD.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "The Elysian Kingdom",
+          "overview": "The U.S.S. Enterprise becomes stuck in a nebula that is home to an alien consciousness that traps the crew in a fairy tale.",
+          "plot": "The Enterprise is surveying a nebula when its warp drive fails, causing the crew to black out. M'Benga awakens to find the Enterprise's interior dressed as the high fantasy setting of Rukiya's favorite book and the crew unwittingly acting out its events in character. Chief engineer Hemmer is the only other crew member aware of the situation, thanks to his telepathic abilities, and they discover that the nebula has its own consciousness comparable to a Boltzmann brain. They find Rukiya and learn the nebula had detected her loneliness and created the fantasy to entertain her. It also cured her disease, but this will not last if they leave the nebula. The nebula offers to preserve Rukiya by converting her into an energy being within the nebula, which M'Benga reluctantly agrees to. He then sees a vision of Rukiya as a grown woman having experienced a life of adventures with the nebula, whom she calls Debra after her mother. Debra releases the Enterprise, restoring its warp drive and interior design. No one other than M'Benga can remember the fantasy reality. He tells Number One about Rukiya's fate.",
+          "airDate": "2022-06-23",
+          "still": "https://image.tmdb.org/t/p/original/uVFtQkSMwjuGoWf4Luu1q4fxS8o.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/uVFtQkSMwjuGoWf4Luu1q4fxS8o.jpg",
+            "https://image.tmdb.org/t/p/original/jYB2wf0RNvN57IcBWxCFINt4DIL.jpg",
+            "https://image.tmdb.org/t/p/original/duER0YQPqR8R4cbkNJGRixjEEy5.jpg",
+            "https://image.tmdb.org/t/p/original/lVZKewNt4jowk18QM9IfWCoYfeD.jpg",
+            "https://image.tmdb.org/t/p/original/7PXXV3FZ1KLzVYPKttztaoyAQye.jpg",
+            "https://image.tmdb.org/t/p/original/yvPPV480SvLEz3EiHFinBC8QP2f.jpg",
+            "https://image.tmdb.org/t/p/original/2ZZnPbF8gzIw4KgzApjk2bAdbz7.jpg",
+            "https://image.tmdb.org/t/p/original/zQZAi9ETtMmuCZyXwvgNmG8W8Gi.jpg",
+            "https://image.tmdb.org/t/p/original/lKJYkS9emv1HsnKFncm0u0lIdaH.jpg",
+            "https://image.tmdb.org/t/p/original/kXaTdxxHY3ltuTTMXjidUF7xLRS.jpg",
+            "https://image.tmdb.org/t/p/original/sSlfzdcqpauyR0gAioQun7133F7.jpg",
+            "https://image.tmdb.org/t/p/original/vGlxzvGaiq5bTrJWahAcwN2IErz.jpg",
+            "https://image.tmdb.org/t/p/original/nbd7hBSXsPuY9yUelers5RN9Bgg.jpg",
+            "https://image.tmdb.org/t/p/original/bhNQUbpC0LpWL7KoNDtt9ikD0ur.jpg",
+            "https://image.tmdb.org/t/p/original/vob3VqhD3uG94RsdQGKOvFV13ae.jpg",
+            "https://image.tmdb.org/t/p/original/5Ajw1TTi8rMj3HKGZrP2YUafdYz.jpg",
+            "https://image.tmdb.org/t/p/original/mI6HowVnjG6H3WKgZ2FWM9cwLIS.jpg",
+            "https://image.tmdb.org/t/p/original/wdxOYaby2Fxbpv2aGbj9uvxFXB4.jpg",
+            "https://image.tmdb.org/t/p/original/unJsTycaxtj1QC1zdihoZJ32Ikn.jpg",
+            "https://image.tmdb.org/t/p/original/yCns6cDTihrB5Adas8618cfXAZl.jpg",
+            "https://image.tmdb.org/t/p/original/w3B85dD2bPjEgx0pnwmsIkVXHCa.jpg",
+            "https://image.tmdb.org/t/p/original/bhVf6Ef42zZz005yiO2WNLgcmyw.jpg",
+            "https://image.tmdb.org/t/p/original/jIfxONppY1Qrlxcv0dsDgtAIL3H.jpg",
+            "https://image.tmdb.org/t/p/original/k9P92GRF06fROS1DIMa5xNPIqD2.jpg",
+            "https://image.tmdb.org/t/p/original/qkJkS4CMQmNKkv9rQ28vqnU8WRH.jpg",
+            "https://image.tmdb.org/t/p/original/m62iKr3q5BuQgwb4XkdAxzhRnCh.jpg",
+            "https://image.tmdb.org/t/p/original/7vw5TybNdk42muUmLmoqGlRWjLq.jpg",
+            "https://image.tmdb.org/t/p/original/tREGyFh3lBavwCsdihmTSFYktOK.jpg",
+            "https://image.tmdb.org/t/p/original/tCj2qOUHKzmwUzkZTIeCRqWNBuX.jpg",
+            "https://image.tmdb.org/t/p/original/l7hkZSyqkEa0d93iQn1A9B0T1K6.jpg",
+            "https://image.tmdb.org/t/p/original/3cIemYQHzs0Vunq1b1hqgxPSI9s.jpg",
+            "https://image.tmdb.org/t/p/original/5csY8U03AA3NY1vO8EsjceuK9ER.jpg",
+            "https://image.tmdb.org/t/p/original/bEys6rF0S76qWm4IELspxqR1GDC.jpg",
+            "https://image.tmdb.org/t/p/original/x8OYgBcwXRDu1oOI8LUa9mbVGOS.jpg",
+            "https://image.tmdb.org/t/p/original/z9gQ9KpkEEuOZDNtSaVmdLu1dX0.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "All Those Who Wander",
+          "overview": "The U.S.S. Enterprise crew comes face-to-face with their demons – and scary monsters too – when their landing party is stranded on a barren planet with a ravenous enemy.",
+          "plot": "The Enterprise is en route to space station Deep Space K–Seven when it receives another priority assignment to investigate the missing USS Peregrine. While the Enterprise continues to K–Seven, Pike leads an away team to an ice planet where they find the grounded Peregrine. Hemmer and Uhura restore the ship's systems while Pike learns that it was carrying three refugees and one was infected with Gorn eggs. These hatched, and the hatchlings burst from his body and attacked the crew. Pike's team finds the other two refugees, who are the only survivors. One of them, Buckley, is also infected with Gorn eggs and the hatchlings burst out. They attack the team but they also fight each other until only the strongest hatchling is left. The team form a plan to kill the hatchling using cold temperatures from the ship's environment controls, but not before Hemmer is infected. He encourages Uhura to remain in Starfleet before throwing himself from the ship so he, and the Gorn inside him, will die in the cold. After the crew mourn, Noonien-Singh takes a leave of absence to help the last refugee find her family.",
+          "airDate": "2022-06-30",
+          "still": "https://image.tmdb.org/t/p/original/nqvyeP8J7wKdel1xtPstvQ92rb5.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/nqvyeP8J7wKdel1xtPstvQ92rb5.jpg",
+            "https://image.tmdb.org/t/p/original/mYso3xRNXdWRhHi2fk0tvDllI8S.jpg",
+            "https://image.tmdb.org/t/p/original/qTPyjJNuD37Jaao0qvNifQSWcxx.jpg",
+            "https://image.tmdb.org/t/p/original/xishUfrAYRWMOUBGZWTMIz3LPUy.jpg",
+            "https://image.tmdb.org/t/p/original/bioXJiaO7yeMvjwNkczv2rv8SH1.jpg",
+            "https://image.tmdb.org/t/p/original/wDaZ4PaAR15rAPjuNqIUdSrNEcb.jpg",
+            "https://image.tmdb.org/t/p/original/dLmgjVCUhtXbtz8UROldHgpaiX0.jpg",
+            "https://image.tmdb.org/t/p/original/baWKXHOjqFIWmQqF44xg4H9XpNM.jpg",
+            "https://image.tmdb.org/t/p/original/f4xFrRgXbjhMm0ZplJnML3nJTdV.jpg",
+            "https://image.tmdb.org/t/p/original/ub6FTJl4ledgqfWQqn8BKw8W31z.jpg",
+            "https://image.tmdb.org/t/p/original/qXpxhz0DcU9SqjWJ6ahxTRES5ko.jpg",
+            "https://image.tmdb.org/t/p/original/tSnPQbmMle2SHIl8rfKK7MMX17V.jpg",
+            "https://image.tmdb.org/t/p/original/137DHzQ1R9JQggYB2c4tK2NlVlM.jpg",
+            "https://image.tmdb.org/t/p/original/yzc9ANKYp6AqcsN24iVytk7j5Fd.jpg",
+            "https://image.tmdb.org/t/p/original/c4Im2i8SVXwt8uBsmWl3JnbrJgh.jpg",
+            "https://image.tmdb.org/t/p/original/3C483zrPtK8Jpjgo3TQRcuDe2ki.jpg",
+            "https://image.tmdb.org/t/p/original/aKHOa5zhxN15ADvn9lgXbkKYexe.jpg",
+            "https://image.tmdb.org/t/p/original/gtvQ56KTV1Sq35PO5825cqahTeA.jpg",
+            "https://image.tmdb.org/t/p/original/WnNJrPcooSeeaqbkTQbtC9vuUd.jpg",
+            "https://image.tmdb.org/t/p/original/iYXyRf3wpTEWJrLiwqq0VvZpWap.jpg",
+            "https://image.tmdb.org/t/p/original/AbKdmMIjEkWpTpPigowj606toUh.jpg",
+            "https://image.tmdb.org/t/p/original/s5XHumWoHEkihSPnEIKSZLm2Eq6.jpg",
+            "https://image.tmdb.org/t/p/original/zzhHhSrUZRmK9T98XioteNtBL1g.jpg",
+            "https://image.tmdb.org/t/p/original/ymlU2OHLHY40zvt2TyJWVu02357.jpg",
+            "https://image.tmdb.org/t/p/original/6fHaSMfsXDMuAjr3UqLkUPL40MQ.jpg",
+            "https://image.tmdb.org/t/p/original/ijk1dwMUEpYVybFKimh9qp2pJFF.jpg",
+            "https://image.tmdb.org/t/p/original/At9Vy3ERJXRhKg37xMtfXudmYyS.jpg",
+            "https://image.tmdb.org/t/p/original/szhNQ7GHBMwr945QSYxP03haSwo.jpg",
+            "https://image.tmdb.org/t/p/original/uvwFLYx38H2YGy84u26lyqw1RYv.jpg",
+            "https://image.tmdb.org/t/p/original/hIXaS09CnCiWubTexsEGzAIk72M.jpg",
+            "https://image.tmdb.org/t/p/original/jFfYMKHIkgru7ehcOwZE6hMgBTL.jpg",
+            "https://image.tmdb.org/t/p/original/dDeMXhM2aTwMqPlWLWfCR3lRg6G.jpg",
+            "https://image.tmdb.org/t/p/original/8nK5X6HXoRdN4al9LKfcLJf5wXV.jpg",
+            "https://image.tmdb.org/t/p/original/1y67Q7KsB6JdwDTYtMueS9WNcXl.jpg",
+            "https://image.tmdb.org/t/p/original/8BTVEpl4vN0GcLGyskYDpEAFd2y.jpg",
+            "https://image.tmdb.org/t/p/original/mA9aa81J9obbnb5hr4BM8fQApGS.jpg",
+            "https://image.tmdb.org/t/p/original/yDSYc4oeEV4JbhGE7heiIKEyA9b.jpg",
+            "https://image.tmdb.org/t/p/original/bBaXNln3twHhSEECABCpdN1l2ZI.jpg",
+            "https://image.tmdb.org/t/p/original/8ZSwwGu6oVVq4Dc1ZlTXaAtV5E2.jpg",
+            "https://image.tmdb.org/t/p/original/pwHWuTgpFqhCkJbR8IyD2ZWDu3w.jpg",
+            "https://image.tmdb.org/t/p/original/3gfsDtRMKaU0CP13V8k1YeAwjma.jpg",
+            "https://image.tmdb.org/t/p/original/ovpq0oPmMTeQaqs9eOoPVSIrA4Y.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "A Quality of Mercy",
+          "overview": "Just as Captain Pike thinks he's figured out how to escape his fate, he's visited by his future self, who shows him the consequences of his actions.",
+          "plot": "While the Enterprise and the USS Cayuga provide supplies to an outpost near the Romulan Neutral Zone, Pike meets one of the future cadets for whom he will sacrifice himself. He decides to send warnings to them to prevent the accident from happening. Pike is then visited by an older version of himself from a future where the accident does not happen. He reveals the consequences of this decision: seven years in the future, the Enterprise sees a Romulan Bird of Prey starship destroy the outpost. They track it with the USS Farragut, commanded by Captain James T. Kirk who suggests an aggressive approach. Pike insists on negotiating and the Romulan commander agrees to a ceasefire, but his sub-commander disagrees and summons an armada of Romulan warships. The Enterprise is damaged, Spock is severely injured, and the Romulans declare war on the Federation. In his own time, Pike accepts that his fate is necessary to save Spock and prevent war. His peace is interrupted by Captain Batel of the Cayuga, who boards the Enterprise and arrests Number One for being an Illyrian.",
+          "airDate": "2022-07-07",
+          "still": "https://image.tmdb.org/t/p/original/dInKNSozbQFAa1i3Xxd1NcorPLc.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dInKNSozbQFAa1i3Xxd1NcorPLc.jpg",
+            "https://image.tmdb.org/t/p/original/laFUzJPQVkIgJODMTSbPtSp8yNM.jpg",
+            "https://image.tmdb.org/t/p/original/b9G7m9cfnzjtrBxVx9DMHWfGdZV.jpg",
+            "https://image.tmdb.org/t/p/original/nWsChrdYR44uM5zRFdg5wp1HjW3.jpg",
+            "https://image.tmdb.org/t/p/original/qcZDQp2MRCF6HTvCdhOIm5ssap2.jpg",
+            "https://image.tmdb.org/t/p/original/vqJHpgwWRIwfvidX3QdlvAmwVbF.jpg",
+            "https://image.tmdb.org/t/p/original/bgUEP4B2oRey4brszOK4glFFORl.jpg",
+            "https://image.tmdb.org/t/p/original/v1kEbIlgq8AB5Y61P4ZmsyEHEP7.jpg",
+            "https://image.tmdb.org/t/p/original/pnmvPMjenAeoyTm8TkK4jWqAuh6.jpg",
+            "https://image.tmdb.org/t/p/original/tkXnUBdn9pDESFV2d0JhhHA8UE2.jpg",
+            "https://image.tmdb.org/t/p/original/xfJBQzk5r8dh6ovLpw1erIhnp1i.jpg",
+            "https://image.tmdb.org/t/p/original/1EqFtqAUVKLPEfPkCcWGwrAjy1H.jpg",
+            "https://image.tmdb.org/t/p/original/A62f62YjD1l9myoBGW4HGXNTuPl.jpg",
+            "https://image.tmdb.org/t/p/original/6lGmSZ3zRF5FvLHSasOoRwgsvCa.jpg",
+            "https://image.tmdb.org/t/p/original/u4ku33PlwS8XRWLr1bt1wlUIsxf.jpg",
+            "https://image.tmdb.org/t/p/original/st53pS4dYsloRAOVcfb9C0dG9nj.jpg",
+            "https://image.tmdb.org/t/p/original/ibJyiPlm8lqfC9ZmKKXIKENL9Q2.jpg",
+            "https://image.tmdb.org/t/p/original/4E52wfqQmXSuhUAptPGrNnIZKbi.jpg",
+            "https://image.tmdb.org/t/p/original/2LwA6f4UrDCXd8fuIbg1tesL1sp.jpg",
+            "https://image.tmdb.org/t/p/original/S63ZlFPI0lzeYGvh2S0g3jgswL.jpg",
+            "https://image.tmdb.org/t/p/original/vu4a8sZY6TPlVQhcTT6DQs36Imo.jpg",
+            "https://image.tmdb.org/t/p/original/omBzRNWDBCXcE4ss6pkqQG4p3GF.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 2,
+      "name": "Season 2",
+      "airDate": "2023-06-15",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "The Broken Circle",
+          "overview": "A distress call from Lt. Noonien-Singh compels Spock to disobey orders and take the U.S.S. Enterprise and its crew into disputed space, risking renewed hostilities with the Klingons in a bid to aid their shipmate.",
+          "plot": "While undergoing upgrades under the supervision of long-lived engineer Pelia, the starship USS Enterprise receives a distress call from security chief La'An Noonien-Singh on the mining planet Cajitar IV. With first officer Una Chin-Riley / Number One arrested and Captain Christopher Pike recruiting her defense counsel, Vulcan science officer Spock disobeys Admiral Robert April and steals the Enterprise. Spock and the crew find La'An on Cajitar IV and she explains that a cabal of ex-Starfleet and Klingon soldiers are plotting to restart the recently ended Klingon–Federation war. Dr. Joseph M'Benga and nurse Christine Chapel are captured and taken to a ship that has been cobbled together from Starfleet technology. The cabal plans to use it to fire on a Klingon ship and frame Starfleet. M'Benga and Chapel fight their way off the false flag ship just as Spock orders its destruction, saving the arriving Klingons. Spock bonds with the Klingon captain over drinks, impressing Pelia. April reprimands Spock, but is privately grateful that war with the Klingons was avoided considering the impending threat of the Gorn.",
+          "airDate": "2023-06-15",
+          "still": "https://image.tmdb.org/t/p/original/laHGPCjO9wJx52pIPvqMBt2Is9g.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/laHGPCjO9wJx52pIPvqMBt2Is9g.jpg",
+            "https://image.tmdb.org/t/p/original/zOKZl3C5tDFu4ji1QqWI4qxC7sF.jpg",
+            "https://image.tmdb.org/t/p/original/pF5GEUQxEPbel99d4OhEI4YiR2V.jpg",
+            "https://image.tmdb.org/t/p/original/kgBogRCN76EgQSVN6ur1xnlZaoR.jpg",
+            "https://image.tmdb.org/t/p/original/dHLLhMP9g0LVAOfTXRgoAPS0e1O.jpg",
+            "https://image.tmdb.org/t/p/original/2iQ25WHNeI4pRX68JlSbP1RU8YD.jpg",
+            "https://image.tmdb.org/t/p/original/bSpzGArq3krwQ765K09W0ihjvS8.jpg",
+            "https://image.tmdb.org/t/p/original/wE9haDVE7uVGo0BliiJqFIbBLS3.jpg",
+            "https://image.tmdb.org/t/p/original/lzfcmSZ9N4owcPBEfY51wwxEHdv.jpg",
+            "https://image.tmdb.org/t/p/original/1k1a8b3NFnt1QiXZiOAumPtfeE2.jpg",
+            "https://image.tmdb.org/t/p/original/uihK371hpeVRjbNj94GzwoXnXos.jpg",
+            "https://image.tmdb.org/t/p/original/vzs5BXPlDHHRiwdTo3S9ZsvyZs2.jpg",
+            "https://image.tmdb.org/t/p/original/aSGE52a1uVuaxu1SZql6WTd8Waw.jpg",
+            "https://image.tmdb.org/t/p/original/oqKgizoY10zF0mvkuFn2M0V8nKk.jpg",
+            "https://image.tmdb.org/t/p/original/3siAM0sJiV2I6h4x2XHyNaryNOB.jpg",
+            "https://image.tmdb.org/t/p/original/ypJsmr9qByEbrInSHNjZkXOyDYF.jpg",
+            "https://image.tmdb.org/t/p/original/pJZ9fXfr6joGD3nmuytYcDB6t3X.jpg",
+            "https://image.tmdb.org/t/p/original/t01rOhSRLr95uFtMpQsvNjiiv47.jpg",
+            "https://image.tmdb.org/t/p/original/cMgCOVyVxxQj49gIfCobKPrqKpi.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Ad Astra per Aspera",
+          "overview": "Commander Una faces court-martial along with possible imprisonment and dishonorable dismissal from Starfleet, and her defense is in the hands of a lawyer who’s also a childhood friend with whom she had a terrible falling out.",
+          "plot": "Pike recruits Illyrian civil rights attorney Neera Ketoul as defense counsel for Number One. The prosecution, led by Pike's girlfriend Captain Marie Batel, easily builds a case that Number One violated Starfleet's anti–genetic modification laws by hiding her identity as a genetically modified Illyrian; Ketoul argues that the law is unjust and inconsistently applied, and points out that Admiral April has violated the Prime Directive when he believed it was the right thing to do. La'An—a descendant of the genetically modified warlord Khan Noonien Singh—investigates how Starfleet learned of Number One's status, worried that the information was taken from her own personal logs. Number One testifies about the oppression and marginalization Illyrians faced in her childhood, explains that she joined Starfleet because she believed it celebrated diversity, and reveals that she provided her own genetic status to Starfleet once it was known to the crew. Ketoul argues that Number One can be construed to have been seeking asylum when she joined Starfleet; the judges accept this interpretation and acquit Number One.",
+          "airDate": "2023-06-22",
+          "still": "https://image.tmdb.org/t/p/original/xmDChudvEB7eq7DlKlljjrqUiFg.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xmDChudvEB7eq7DlKlljjrqUiFg.jpg",
+            "https://image.tmdb.org/t/p/original/fteZIJpZh00dLeljolLHqwG2ipy.jpg",
+            "https://image.tmdb.org/t/p/original/nl32UFFkFTCP5Fi5ZLITOvDbQ0P.jpg",
+            "https://image.tmdb.org/t/p/original/pEqTkHqHkHwfylWQaNeWMPGe3na.jpg",
+            "https://image.tmdb.org/t/p/original/w2uIPrXhDPyInjIPXmV4RLfVZ6I.jpg",
+            "https://image.tmdb.org/t/p/original/aHNwAW4t32njMjBdZnMruMzNJt2.jpg",
+            "https://image.tmdb.org/t/p/original/1GfBXkZ3Qe4obYR1Lrs5vuOAgwf.jpg",
+            "https://image.tmdb.org/t/p/original/nSrcdpmWnFMyeg2LfaCIklFGwt3.jpg",
+            "https://image.tmdb.org/t/p/original/4vP1raateuQe7oQap2HzgdNMHhU.jpg",
+            "https://image.tmdb.org/t/p/original/tR1ZHhlQEPLvWBYtc5z79jxfrws.jpg",
+            "https://image.tmdb.org/t/p/original/5nbz6GGR6esXhFlXUjewbvj6yFM.jpg",
+            "https://image.tmdb.org/t/p/original/xGWvJvP6wLlXQD8ZjOoGZfGEmUw.jpg",
+            "https://image.tmdb.org/t/p/original/e4p8aQfm2U6Fi4paLcJDyo4RGpb.jpg",
+            "https://image.tmdb.org/t/p/original/c8veHnNExS3qht86VeZ9fTNnQFx.jpg",
+            "https://image.tmdb.org/t/p/original/AiKrEpITrRbdwLBS8YebTft5RU0.jpg",
+            "https://image.tmdb.org/t/p/original/kpQZ2Wm4Zlw3arrWhbH9m1SX5R7.jpg",
+            "https://image.tmdb.org/t/p/original/ff2Zh5WzqwoJIhwhIEh2hTiILTJ.jpg",
+            "https://image.tmdb.org/t/p/original/1s8XqqmFszSi4wz28U7545ewDiw.jpg",
+            "https://image.tmdb.org/t/p/original/tqJxuMpXbUrgo6DWIcz8sw5iQcv.jpg",
+            "https://image.tmdb.org/t/p/original/rNbDInfIaKVjD3C7WH5fveB1pK8.jpg",
+            "https://image.tmdb.org/t/p/original/cMR0gUmsr7h0tGBg48X91kI2aKN.jpg",
+            "https://image.tmdb.org/t/p/original/gHpnrDWjdHtvsJb4DfzbWxjNAhH.jpg",
+            "https://image.tmdb.org/t/p/original/mKlGfCOk7Yz2DIErHMdyGz7niH4.jpg",
+            "https://image.tmdb.org/t/p/original/qArG3XDSlKr6HZzQR5KR6lO29hE.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Tomorrow and Tomorrow and Tomorrow",
+          "overview": "La'an travels back in time to twenty-first-century Earth to prevent an attack which will alter humanity’s future history—and bring her face to face with her own contentious legacy.",
+          "plot": "A mysterious wounded man appears on the Enterprise, gives a time travel device to La'An, and dies. La'An finds herself in an alternate timeline where Earth is ravaged by war and the Enterprise is captained by James T. Kirk. The device transports her and Kirk to 2020s Toronto, where the pair form a romantic bond. They search for the point of divergence that caused the alternate timeline with help from a younger Pelia, and find a eugenics lab where a young Khan Noonien Singh is being raised. A Romulan time traveler named Sera intends to change human history by killing Khan and preventing the Eugenics Wars, which would keep humanity from the path that led to unity and the Federation. Sera kills Kirk and fights La'An, who kills Sera and saves Khan. La'An returns to the Enterprise in her own timeline and is thanked by a time-traveling investigator from the future, a colleague of the mysterious man, who confiscates the time travel device and swears La'An to secrecy. La'An contacts her timeline's Kirk, but he has no memory of her. She keeps a 20th-century watch that they used to find the eugenics lab.",
+          "airDate": "2023-06-29",
+          "still": "https://image.tmdb.org/t/p/original/f4FRVjwKKwM37g55Y32ule1wvIh.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/f4FRVjwKKwM37g55Y32ule1wvIh.jpg",
+            "https://image.tmdb.org/t/p/original/ciTQOXuovlgY1G7W6IkaSFub4oS.jpg",
+            "https://image.tmdb.org/t/p/original/21NFw9zjGt9NzQDXFhiHxSUo537.jpg",
+            "https://image.tmdb.org/t/p/original/sguw4n60vmJFC0yqplXtu85GZ6k.jpg",
+            "https://image.tmdb.org/t/p/original/9DSGp1iCFgwKR8zXYwvnsSvzG13.jpg",
+            "https://image.tmdb.org/t/p/original/AmG86eq7BhhWaySBn7HCsyayazV.jpg",
+            "https://image.tmdb.org/t/p/original/1h3alIIbTG1wqSVA1D4KrTzUxfP.jpg",
+            "https://image.tmdb.org/t/p/original/cFJDmpkIWQJAeYn3sGITbsWSxlv.jpg",
+            "https://image.tmdb.org/t/p/original/mpHV1KVP4XB9YAsWFWqK0fRyKhb.jpg",
+            "https://image.tmdb.org/t/p/original/pmsFoSRQwonFX9XnG5jIfDFpbke.jpg",
+            "https://image.tmdb.org/t/p/original/ukLke4sF2hmCP0cfqsCJfwEDeRA.jpg",
+            "https://image.tmdb.org/t/p/original/AmuSAcmpHWBu5ph1dfCIdv3TdYa.jpg",
+            "https://image.tmdb.org/t/p/original/rLJcxIZSUmgOqDcVEq6iWu55SRM.jpg",
+            "https://image.tmdb.org/t/p/original/1e83rvsV8TmMwqVh9XNHxpEaiTC.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Among the Lotus Eaters",
+          "overview": "Returning to a planet that dredges up tragic memories, Captain Pike and his landing party find themselves forgetting everything, including their own identities as he confronts a ghost from his past.",
+          "plot": "Pike upsets Batel by suggesting that their relationship has harmed her career. The Enterprise is sent to the planet Rigel VII, the site of an earlier unsuccessful mission. Asteroids surrounding the planet emit radiation that makes people forget who they are. Pike, La'An, and M'Benga discover that Zac Nguyen, a yeoman presumed dead on the previous mission, has become a despotic ruler; he enforces a caste system where laborers lose their memories every night but he and his guards do not. The away team lose their memories and become laborers. Hearing a legend that their memories are stored in Nguyen's castle, Pike fights his way inside, defeats Nguyen, and learns that the castle itself blocks the radiation. The crew on the Enterprise also lose their memories, but pilot Erica Ortegas learns what her job is from the ship's computer and instinctively navigates away from the asteroids. The away team recover their memories and return to the Enterprise. They pull the main asteroid out of orbit, ridding Rigel VII of the radiation and restoring the laborers' memories. Pike apologizes to Batel and they resume their relationship.",
+          "airDate": "2023-07-06",
+          "still": "https://image.tmdb.org/t/p/original/jJi2VGuS0tyXKtuqgCjsNIOztUY.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/jJi2VGuS0tyXKtuqgCjsNIOztUY.jpg",
+            "https://image.tmdb.org/t/p/original/u7FlCBuLPtcFSYiAiULq7OW7eTh.jpg",
+            "https://image.tmdb.org/t/p/original/sEqMpLNJbCP6Rr8X2eTxl0Jsq1w.jpg",
+            "https://image.tmdb.org/t/p/original/alb6lNdYx1Otpc5ePsSr2QkB7aG.jpg",
+            "https://image.tmdb.org/t/p/original/sqVywPrePDiWEP023TM1LUVTDID.jpg",
+            "https://image.tmdb.org/t/p/original/lWC0IecBER35shQEKQpt31skkgw.jpg",
+            "https://image.tmdb.org/t/p/original/2GfJPJnDYweLEHIjDHWJw2d8lN6.jpg",
+            "https://image.tmdb.org/t/p/original/xr4gCELpiNryDp7TkJmdox6QUGo.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Charades",
+          "overview": "A shuttle accident leads to Spock's Vulcan DNA being removed by aliens, making him fully human and completely unprepared to face T'Pring's family during an important ceremonial dinner.",
+          "plot": "Spock and Chapel are nearly killed when they encounter a portal created by a higher-dimensional race, the Kerkhovians, who heal Chapel but accidentally reconfigure Spock's half-human, half-Vulcan physiology to that of a full-blooded human. This happens as Spock is preparing for an engagement ritual with his fiancée T'Pring and her bigoted parents T'Pril and Sevek. Spock's human mother Amanda Grayson boards the Enterprise to help Spock prepare. Spock does not tell T'Pring of his condition, hoping not to worry her, and relies on the crew to help disguise himself as Vulcan and stall the ritual until a cure is found. Chapel convinces the Kerkhovians to return Spock to normal by confessing to them her feelings for him. Spock is able to complete the ritual, which ends with him making a telepathic connection to his mother that shows him how difficult it is for a human to love a Vulcan. Spock then reveals the ruse to call out T'Pril's bigotry. Offended that Spock hid his condition from her, T'Pring asks to take a break from their relationship. Spock later admits to Chapel that he also has feelings for her and they kiss.",
+          "airDate": "2023-07-13",
+          "still": "https://image.tmdb.org/t/p/original/An9V1HboTzyLOCzEBygUHZiEmRG.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/An9V1HboTzyLOCzEBygUHZiEmRG.jpg",
+            "https://image.tmdb.org/t/p/original/oZFP98MzGIbAnisaNtmuMzkqk7A.jpg",
+            "https://image.tmdb.org/t/p/original/oX448GIjqn45QQzA5u6owerfjyM.jpg",
+            "https://image.tmdb.org/t/p/original/epj3AGjYIvkpC3DYunSHOGlxqjt.jpg",
+            "https://image.tmdb.org/t/p/original/6MPMD2bobdyKH0sgeglPxgOg6j6.jpg",
+            "https://image.tmdb.org/t/p/original/4fx9dypTjzhWY3ddmZCBmCpVgWg.jpg",
+            "https://image.tmdb.org/t/p/original/yymTe0zrZitw48QRH4SKaE7q0Mq.jpg",
+            "https://image.tmdb.org/t/p/original/fdP3fjd6KdbMui29OOm1FVrKfDp.jpg",
+            "https://image.tmdb.org/t/p/original/40MyoqOjNi7CotfC21xctl6EkGE.jpg",
+            "https://image.tmdb.org/t/p/original/rhsX6XkvpgWeKBYj8yB4CwSrDY4.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Lost in Translation",
+          "overview": "Uhura seems to be the only one who can hear a strange sound. When the noise triggers terrifying hallucinations, she enlists an unlikely assistant to help her track down the source.",
+          "plot": "The Enterprise joins the USS Farragut to repair a deuterium refinery. Ensign Nyota Uhura begins experiencing hallucinations of strange noises and frightening images, including the deaths of her parents and of former Enterprise engineer Hemmer. Pelia discovers that the refinery has been sabotaged. Saul Ramon, the officer responsible for the sabotage, is taken to sickbay; he exhibits symptoms similar to Uhura's. Ramon escapes sickbay and attempts to sabotage the Enterprise. Uhura pursues him and unsuccessfully attempts to calm him down; James Kirk, visiting from the Farragut, rescues her before Ramon is blown into space by an explosion. Uhura discusses her hallucinations with Kirk and he helps her realize that she needs to confront her grief about her parents and Hemmer rather than ignoring it. With the help of Kirk and his brother Sam, a xenoanthropologist, Uhura realizes that her hallucinations are messages from aliens who live in the deuterium and are being killed by the refinery. She reports her theory to Pike and he orders the refinery destroyed. Uhura later introduces James Kirk to Spock.",
+          "airDate": "2023-07-20",
+          "still": "https://image.tmdb.org/t/p/original/wvAbW0YLMeOHjUIdd7N8euPBc4f.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/wvAbW0YLMeOHjUIdd7N8euPBc4f.jpg",
+            "https://image.tmdb.org/t/p/original/aqRVXuSXzG7A7VQuad1rc1Anvqf.jpg",
+            "https://image.tmdb.org/t/p/original/qCKAs7SaQmW6xcTZfIb8L3yyEwy.jpg",
+            "https://image.tmdb.org/t/p/original/sY0tT2ObTl0sYSVlXD9rBVvOx45.jpg",
+            "https://image.tmdb.org/t/p/original/48Y9lAOZzKXTNcb3ZmGA2N6jKVZ.jpg",
+            "https://image.tmdb.org/t/p/original/A2Dq5lYEHJS4azQlfUhwFICnAUj.jpg",
+            "https://image.tmdb.org/t/p/original/cVGnTlkckI7Z7UPWRvMsOPkT6KX.jpg",
+            "https://image.tmdb.org/t/p/original/2KL97QTvkmVlczi0TPrTS81rYSp.jpg",
+            "https://image.tmdb.org/t/p/original/kBLJHGbP74ZZ8wFl8NGmCgUpBWr.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Those Old Scientists",
+          "overview": "An accident while investigating a time portal sends Ensign Brad Boimler through time from the twenty-fourth century, and Captain Pike and his crew must get him back where he belongs before he can somehow alter the timeline.",
+          "plot": "In the 24th century, Ensign Brad Boimler of the USS Cerritos is assigned to investigate an ancient portal. The portal, which is powered by the rare substance horonium, sends him back in time 120 years where he is taken aboard the Enterprise. Boimler struggles to contain his excitement at meeting his heroes and also to prevent polluting the timeline with his knowledge of the future. The portal is stolen by an Orion ship and Pike trades grain supplies to retrieve it. They attempt to return Boimler to the future with the last remaining horonium, but Ensign Beckett Mariner comes through the portal instead in a rescue attempt. Spock and Boimler unsuccessfully try to synthesize horonium so they can use the portal again while Mariner and Uhura work to translate engravings on the portal. Boimler realizes that horonium from the hull of the previous starship Enterprise was incorporated into Pike's Enterprise. They use this to send Boimler and Mariner back to their own time, while the Orions agree to accept credit for discovering the portal in exchange for allowing the Enterprise to continue peacefully.Note : This episode is a crossover with Star Trek: Lower Decks.",
+          "airDate": "2023-07-22",
+          "still": "https://image.tmdb.org/t/p/original/cUXmAvXYhi7zBIzoFgIzbxmf6QI.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/cUXmAvXYhi7zBIzoFgIzbxmf6QI.jpg",
+            "https://image.tmdb.org/t/p/original/3UYN2L3hNy5wy6rs3dXHnMuYVlg.jpg",
+            "https://image.tmdb.org/t/p/original/rmcX1sAliZifIQ3jP0NwflZAFGW.jpg",
+            "https://image.tmdb.org/t/p/original/kQBnKy70lr7vgph8xX29xt1zhYX.jpg",
+            "https://image.tmdb.org/t/p/original/ryKKHLTSW8xwoSAvrNueOh7cdA7.jpg",
+            "https://image.tmdb.org/t/p/original/6DwABxZ3TSgmJ5axgdnJ1Dv6yJl.jpg",
+            "https://image.tmdb.org/t/p/original/xe3K3YpPbeA3njQtiNSy1IMk1ia.jpg",
+            "https://image.tmdb.org/t/p/original/bcjcDCpLh9UPtE9FwyqORS7ErsM.jpg",
+            "https://image.tmdb.org/t/p/original/f4tMhOHn3dqi8gxx6DBx11JEGRg.jpg",
+            "https://image.tmdb.org/t/p/original/1gmK5tyft0nobKGd9DHmefppYAG.jpg",
+            "https://image.tmdb.org/t/p/original/rPH3gu85mDHrNmyb4otwuilYvzv.jpg",
+            "https://image.tmdb.org/t/p/original/1lAnqJILxNNK2AG1eqei23LiA4A.jpg",
+            "https://image.tmdb.org/t/p/original/5qj2Je1Q1Cp3nbABMf36yAFeepQ.jpg",
+            "https://image.tmdb.org/t/p/original/9i5V2080KsIajlPRu0gQvdQKkj2.jpg",
+            "https://image.tmdb.org/t/p/original/dDFMZ9AFbj1KjmsgY1FoFRDaXLF.jpg",
+            "https://image.tmdb.org/t/p/original/bbnI8T1UewLmLblCIgv5blXoroM.jpg",
+            "https://image.tmdb.org/t/p/original/hIXwsqL7GdXUISkM21ISxjL88eN.jpg",
+            "https://image.tmdb.org/t/p/original/y6y3Na8j7fsC4ndcXgmLs75uoTP.jpg",
+            "https://image.tmdb.org/t/p/original/cd9VNZqhvow9iNKHQa7gjhNQ6KD.jpg",
+            "https://image.tmdb.org/t/p/original/bmW6XhdY8ZMPEZUjlT8STvm3QxJ.jpg",
+            "https://image.tmdb.org/t/p/original/ilMcMXRHAZwg2ID1iOc0Qeb7B8A.jpg",
+            "https://image.tmdb.org/t/p/original/z7o2wze8VYdOLKw5EeP8dzXr3yH.jpg",
+            "https://image.tmdb.org/t/p/original/mY3DBGa6iGRBfOkyph0HOmOfxWg.jpg",
+            "https://image.tmdb.org/t/p/original/o6zio3xIkKe4WJDc45jL1CG7XAL.jpg",
+            "https://image.tmdb.org/t/p/original/k6iJxkIj3xT2agsVV0xgkivLRXr.jpg",
+            "https://image.tmdb.org/t/p/original/9HNgVMLsfNLLFSMN1AosxVaKq4l.jpg",
+            "https://image.tmdb.org/t/p/original/jEVEbulQT7m8bAb99EtsJiaymhn.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Under the Cloak of War",
+          "overview": "Captain Pike and his crew welcome a Klingon defector aboard the U.S.S. Enterprise, but his presence triggers the revelation of some shocking secrets.",
+          "plot": "The Enterprise hosts Ambassador Dak'Rah, a Klingon general who defected to the Federation and is said to have killed his own officers when he learned that they had ordered attacks on civilians while fighting on the moon of J'Gal. Veterans of the Federation–Klingon war, including Ortegas, M'Benga, and Chapel, are uncomfortable with his presence. M'Benga and Chapel served at a field hospital on J'Gal and witnessed the brutality of the Klingon forces under Dak'Rah's command. Dak'Rah invites M'Benga to join his campaign for peace, citing the symbolic power of a partnership between two men who were on opposing sides at J'Gal, and offers to help M'Benga find healing from the trauma he experienced. M'Benga rejects Dak'Rah's offer and eventually reveals that he knows it was Dak'Rah who ordered the attacks on civilians. It was M'Benga who killed the Klingon officers whose deaths Dak'Rah is taking credit for. A fight breaks out and M'Benga kills Dak'Rah with the same dagger with which he killed his officers. M'Benga tells Pike that he did not intend to kill Dak'Rah but he does not regret it.",
+          "airDate": "2023-07-27",
+          "still": "https://image.tmdb.org/t/p/original/6UHcQZJjC5StPGkzq6sZAsBLGqx.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/6UHcQZJjC5StPGkzq6sZAsBLGqx.jpg",
+            "https://image.tmdb.org/t/p/original/dD0EHbUPMWCiG917XttoC7vvN5F.jpg",
+            "https://image.tmdb.org/t/p/original/935F4WjcXRHqrjBG6hm3EaOEipE.jpg",
+            "https://image.tmdb.org/t/p/original/tuhzse0eW9y7BnDhtYRJBjhxIR5.jpg",
+            "https://image.tmdb.org/t/p/original/4Isoj6SUqoF0MK24Zc8HQ5F2vuB.jpg",
+            "https://image.tmdb.org/t/p/original/64Q9ilcyd38HSpzMbSfANNhT5gl.jpg",
+            "https://image.tmdb.org/t/p/original/1zd0Llr1058lZhEzhDGpCoCmpWX.jpg",
+            "https://image.tmdb.org/t/p/original/5xDBgZAI9d4nstW5on6e9IFyaDs.jpg",
+            "https://image.tmdb.org/t/p/original/bz9HxkwWtzFiI1bTdzDEMzTFfs5.jpg",
+            "https://image.tmdb.org/t/p/original/hngOHsz9WmXQWz9G6J1mlSoZrUv.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Subspace Rhapsody",
+          "overview": "An accident with an experimental quantum probability field causes everyone on the U.S.S. Enterprise to break uncontrollably into song, but the real danger is that the field is expanding and beginning to impact other ships—allies and enemies alike.",
+          "plot": "James Kirk, recently promoted to executive officer of the Farragut, visits the Enterprise to shadow Number One. While conducting communications experiments, Uhura broadcasts a recording of the song \"Anything Goes\" into a mysterious \"subspace fold\". It produces an \"improbability field\" that causes the Enterprise crew to begin singing about their feelings like characters in a musical film. Pike has an argument with Batel, in song, in front of the crew. Chapel wins a prestigious research fellowship and reveals in song that she prioritizes it over her relationship with Spock. La'An confesses her feelings for Kirk before the musical can force her to, but he is already in a relationship with Carol Marcus. An affected Klingon ship intends to blow up the fold, but experiments reveal this will destroy all starships in the fleet. Uhura determines that singing an upbeat grand finale will provide enough energy to close the improbability field before the Klingons arrive; she encourages the Enterprise crew to sing about the fulfillment they find in working together and exploring, and when the song concludes the improbability field dissipates.",
+          "airDate": "2023-08-03",
+          "still": "https://image.tmdb.org/t/p/original/a7Cu3KpMBkCh8Tgxgja87WgFE6u.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/a7Cu3KpMBkCh8Tgxgja87WgFE6u.jpg",
+            "https://image.tmdb.org/t/p/original/rCxzQpIfgdgccK6SXERNVF6JFnn.jpg",
+            "https://image.tmdb.org/t/p/original/silXyPIJc5DeTLDEAdgfhHAjAOS.jpg",
+            "https://image.tmdb.org/t/p/original/ruI9FpC0TVSZgn8Tx44PT3rfZ9k.jpg",
+            "https://image.tmdb.org/t/p/original/dDHNzb1vC7guQUmTkqotXJzOERE.jpg",
+            "https://image.tmdb.org/t/p/original/m3j5KM4aqGRIniGVvIEpvkp4tRW.jpg",
+            "https://image.tmdb.org/t/p/original/m1pQsKf0JRxS3hu42opArqONneH.jpg",
+            "https://image.tmdb.org/t/p/original/jD7FNahP0NBZAkd5VoZaFN771PB.jpg",
+            "https://image.tmdb.org/t/p/original/9cFzw7yxLHVpoNsQ3Gu6phJtE7o.jpg",
+            "https://image.tmdb.org/t/p/original/sgm5VLNuvP57JzlUrbZQmvPb835.jpg",
+            "https://image.tmdb.org/t/p/original/8klNGW88Wz6IRDhiXDR3iSTyaD9.jpg",
+            "https://image.tmdb.org/t/p/original/krxqj1LQazsQA0jK9LH9GmBQCXx.jpg",
+            "https://image.tmdb.org/t/p/original/gJlFmfmmCj8fodJJcoFTOTyUUQY.jpg",
+            "https://image.tmdb.org/t/p/original/rLpzvwiSfTnlNlv3klBp5FAkna8.jpg",
+            "https://image.tmdb.org/t/p/original/iWPiPsTNzxp1tQcRhCJdVVN8ldA.jpg",
+            "https://image.tmdb.org/t/p/original/yvd74nmxh0XxXfPpbrm1Z0NxNay.jpg",
+            "https://image.tmdb.org/t/p/original/oREgD9C6jgpd7SNDc0nMRF0LQpW.jpg",
+            "https://image.tmdb.org/t/p/original/mKY2s91XR1iiLjSvxZdWHM370QT.jpg",
+            "https://image.tmdb.org/t/p/original/85w5b4KCjFbjOz0kj3w69MvQOqC.jpg",
+            "https://image.tmdb.org/t/p/original/pvTQs3UymmKS2hPAWE6ZThxwICP.jpg",
+            "https://image.tmdb.org/t/p/original/cspSXt3EMEInWKTH4SUVImIhtlI.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Hegemony (1)",
+          "overview": "When the U.S.S. Enterprise investigates an attack on a colony at the edge of Federation space, Captain Pike and his crew face the return of a formidable enemy.",
+          "plot": "Batel's ship, the USS Cayuga, is ambushed by the Gorn while resupplying the human colony Parnassus Beta. Chapel is aboard the Cayuga, en route to her fellowship, and survives the attack. The Enterprise arrives to find the wreckage of the Cayuga and a Gorn device jamming communications and transporters. April orders them not to cross into Gorn-claimed space, but Pike secretly leads Ortegas, La'An, M'Benga, and Sam Kirk to the surface. They find Batel and other survivors, including Starfleet engineer Montgomery Scott who has built a device that imitates Gorn transponders. Pike learns that Batel is infected with Gorn eggs. Following a strategy suggested by Uhura and Pelia, Spock installs rockets on the Cayuga's wreckage so they can crash it into the jammer. He kills an attacking Gorn with help from Chapel. The jammer is destroyed, allowing the Enterprise to transport up Pike, Scott, and Batel. The latter is taken straight to medical. The Gorn capture La'An, M'Benga, Ortegas, Sam, and the other survivors. Pike is forced to decide whether to follow orders and retreat or stay to rescue his captured crew.",
+          "airDate": "2023-08-10",
+          "still": "https://image.tmdb.org/t/p/original/rwqAAZjadCcmzfpLFvScBmzl274.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/rwqAAZjadCcmzfpLFvScBmzl274.jpg",
+            "https://image.tmdb.org/t/p/original/rR9AFu9aTzdGWHntwaoeVFmwVtU.jpg",
+            "https://image.tmdb.org/t/p/original/6saul9xiyswO5gSx1MvLqmluO5D.jpg",
+            "https://image.tmdb.org/t/p/original/hsu83r1vqamvJJqO0dAthSJnpfB.jpg",
+            "https://image.tmdb.org/t/p/original/w4IzVVoFhu8nnyY3ei4iUsB3t0x.jpg",
+            "https://image.tmdb.org/t/p/original/s2l73Vg8f2wvI0H2FoM0MWjYDZC.jpg",
+            "https://image.tmdb.org/t/p/original/e0HUDy4N8uuKJoAv20YHipw8L4O.jpg",
+            "https://image.tmdb.org/t/p/original/pWj7wtQPO4kZuSA4rRO4UcZKQPG.jpg",
+            "https://image.tmdb.org/t/p/original/12TbUyUDhLzL7pNu6GqCLnWpxGL.jpg",
+            "https://image.tmdb.org/t/p/original/2e7LxFoTfTTQerdXNdGUjlJTv8v.jpg",
+            "https://image.tmdb.org/t/p/original/moORoRKnVtapR8VxYNGtWrKyoiP.jpg",
+            "https://image.tmdb.org/t/p/original/w9qSsWDX1eI7ylgEsaO5QfcM55.jpg",
+            "https://image.tmdb.org/t/p/original/mqNQMXojIxC5C0hpi0hr89DWj9d.jpg",
+            "https://image.tmdb.org/t/p/original/7RIH06WJb6uV3MFz1MKD4qRyO2b.jpg",
+            "https://image.tmdb.org/t/p/original/qpGkPo0dSM8e5pNmweNpLePJW4J.jpg",
+            "https://image.tmdb.org/t/p/original/crcb4QO7hN0abMPQ07K4COhxeUf.jpg",
+            "https://image.tmdb.org/t/p/original/9FT0mDdIP3eu5iWBt5vVkuOSZOa.jpg",
+            "https://image.tmdb.org/t/p/original/nmbvtkI4q8net0SuqwKc8OcaWXI.jpg",
+            "https://image.tmdb.org/t/p/original/eUHS9yT385XHZqwWbPjJzbnAqec.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 3,
+      "name": "Season 3",
+      "airDate": "2025-07-17",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Hegemony (2)",
+          "overview": "Pike leads a risky rescue behind enemy lines as the landing party flees a deadly enemy.",
+          "plot": "Captain Christopher Pike and the crew of the USS Enterprise plant a tracker on a Gorn ship that captured security chief La'An Noonien-Singh, Dr. Joseph M'Benga, pilot Erica Ortegas, xenoanthropologist Sam Kirk, and many human colonists. Despite orders from Starfleet to stay in Federation space, Admiral Robert April allows the Enterprise to follow the tracker. Using engineer Montgomery \"Scotty\" Scott's Gorn transponder device to go undetected, they find an uncharted binary star system which hides the Gorn homeworld and a large invasion force. Using the Gorn's sensitivity to stellar activity, they trigger a long hibernation cycle by creating an artificial coronal mass ejection. La'An, M'Benga, Ortegas, and Sam escape with transporter codes for the colonists, enabling the Enterprise to rescue them. Ortegas is wounded during the escape, and the Enterprise suffers extensive damage. Meanwhile, Vulcan science officer Spock and nurse Christine Chapel neutralize the Gorn eggs inside Pike's girlfriend, Captain Marie Batel, using first officer Una Chin-Riley / Number One's augmented Illyrian blood.",
+          "airDate": "2025-07-17",
+          "still": "https://image.tmdb.org/t/p/original/opluRsQk2CN6b3jopZoJCvrP7Cm.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/opluRsQk2CN6b3jopZoJCvrP7Cm.jpg",
+            "https://image.tmdb.org/t/p/original/otBES9swlLpgJ2cyOMDitUldBhK.jpg",
+            "https://image.tmdb.org/t/p/original/gRK06rryQcFeR80sUiFHpvivYMB.jpg",
+            "https://image.tmdb.org/t/p/original/1fd93W5jKa8H33PKcU6KkBNGE0F.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Wedding Bell Blues",
+          "overview": "At a Federation celebration, an uninvited guest disrupts Spock and the crew's reflections.",
+          "plot": "Three months after the Gorn conflict, the Enterprise has been repaired at Starbase One and the crew prepare to celebrate the Federation's 100th anniversary. Following her research fellowship with archaeologist Dr. Roger Korby, Chapel rejoins the crew and brings Korby as her new romantic partner, disappointing Spock who hoped to rekindle his relationship with her. Spock is given a drink by an unfamiliar Vulcan bartender, and the next day he wakes up in a different reality where the crew are preparing to celebrate his and Chapel's wedding. The same unfamiliar being now appears as an Andorian wedding planner. Korby is aware of the change and confronts Spock, who regains his memories after punching Korby. At the wedding ceremony, Chapel regains her memories after Spock recites a poem that Korby once read to her. They confront the wedding planner, who is revealed to be a child-like extradimensional being and is reprimanded by his father. The beings leave and reality returns to normal. The crew celebrate, except for Ortegas who is emotionally scarred from her experience with the Gorn.",
+          "airDate": "2025-07-17",
+          "still": "https://image.tmdb.org/t/p/original/9r9pBXDtdgVtp5x0VLlSgilhwgG.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/9r9pBXDtdgVtp5x0VLlSgilhwgG.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Shuttle to Kenfori",
+          "overview": "Pike and M'Benga enter Klingon space for Batel's cure as M'Benga's past returns on a deadly world.",
+          "plot": "The Gorn DNA in Batel's body reactivates and her only chance of survival is a rare Chimera flower on the planet Kenfori, which is contested by the Federation and Klingons. Pike and M'Benga take a shuttle to the planet while the Enterprise hides nearby. They find the flower, which has transformed a group of scientists into zombies. When a Klingon ship arrives, Number One decides to approach the planet slowly to avoid detection. Ortegas moves faster than ordered, alerting the Klingons to their presence and forcing a riskier approach. Pike and M'Benga are tracked by Bytha, the daughter of Klingon ambassador Dak'Rah, who seeks to kill M'Benga to restore her family's honor. M'Benga confesses to murdering Dak'Rah and defeats Bytha in a duel, but spares her life. She sacrifices herself to allow M'Benga and Pike to escape from the zombies. Later, Number One reprimands Ortegas for her insubordination and relieves her of duty for two weeks. Pike is horrified to learn that Batel and M'Benga plan to use the flower to turn Batel into a human-Gorn hybrid, which he reluctantly accepts is her decision.",
+          "airDate": "2025-07-24",
+          "still": "https://image.tmdb.org/t/p/original/IF8eXYDYglz6W52FCozVCiySn3.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/IF8eXYDYglz6W52FCozVCiySn3.jpg",
+            "https://image.tmdb.org/t/p/original/s3Hjbci0sta9vCqtDlEbgwr1lGX.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "A Space Adventure Hour",
+          "overview": "La'An tests a prototype holodeck with a fictional case only she can solve.",
+          "plot": "La'An is tasked with testing the \"holodeck\", a new holographic simulator, and asks the computer to create a murder mystery for her to solve. It generates a scenario featuring the cast and crew of a 1960s science fiction series called The Last Frontier, using the likenesses of people who have boarded the Enterprise. As the story gets more involved, La'An asks for Spock's help. Scotty attempts to singlehandedly balance the large amount of power required to run the holodeck with the ship's other needs, barely allowing it to escape damage from a collapsing neutron star. When La'An is trapped and the holodeck's safety protocols fail, Scotty sends a message explaining that she must solve the mystery to end the simulation. La'An, who has grown close to Spock during dance lessons over recent months, realizes that the Spock she is with is a hologram and the murderer. The simulation ends, and La'An recommends holodecks not be approved for general use until the technology is improved. Number One encourages Scotty to ask for help in the future. During another dance lesson, La'An and the real Spock kiss.",
+          "airDate": "2025-07-31",
+          "still": "https://image.tmdb.org/t/p/original/uH8ElDr6YZPXIVXmcl8QyMv5fCO.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/uH8ElDr6YZPXIVXmcl8QyMv5fCO.jpg",
+            "https://image.tmdb.org/t/p/original/lUGhPjMqi5tfElYkq6RJ4JpX6ln.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Through the Lens of Time",
+          "overview": "Chapel and Korby's quest leads the Enterprise to ancient ruins hiding a dark secret.",
+          "plot": "Junior medical officer Dana Gamble and Ortegas's documentarian brother Beto join an archaeological expedition led by Chapel and Korby, exploring an ancient building that Korby believes may hold the secret to immortality. When Gamble picks up a glowing orb, it explodes and destroys his eyes. He is transported back to the Enterprise while the rest of the away team, joined by Spock and La'An, are trapped in the building. M'Benga fails to restore Gamble's eyes and scans indicate that he is brain-dead, despite appearing to be conscious. The away team discovers that the building is a prison for the Vezda, extradimensional parasitic beings. They navigate the building's unusual metaphysical properties to escape. Batel, seemingly triggered by her Gorn DNA, recognizes Gamble as being possessed by a Vezda and attacks him. Gamble is apprehended by security and placed in the brig. He kills his guard, escapes, and takes Scotty, Sam Kirk, and chief engineer Pelia hostage to try to take control of the ship and free the other Vezda. Pelia kills him and Scotty traps the Vezda spirit in the transporter pattern buffer.",
+          "airDate": "2025-08-07",
+          "still": "https://image.tmdb.org/t/p/original/8wU3xRdYMMWoV6yurDEr9XHw190.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/8wU3xRdYMMWoV6yurDEr9XHw190.jpg",
+            "https://image.tmdb.org/t/p/original/wZ1ayLqsRkEplhoNumtEhq0fdxs.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "The Sehlat Who Ate Its Tail",
+          "overview": "Kirk's first day as captain turns disastrous when a Scavenger Ship seizes the Enterprise.",
+          "plot": "The USS Farragut is attacked by a large scavenger ship and much of the crew is injured, including Captain V'Rel. The Enterprise arrives to help, with Spock, Chapel, Scotty, and communications officer Nyota Uhura joining acting captain James T. Kirk as his temporary command crew. The Enterprise is captured by the scavengers and the Farragut pursues them. The scavenger ship begins draining the Enterprise's power and cuts off communications; the crew use wired phones from the 20th century and manual controls to get around this, while Pike and La'An disconnect them from the scavenger ship and kill some of the scavengers. Kirk struggles with the pressure of command, but with support from the others he devises a plan to trick the scavengers into temporarily disabling their own ship. As the Enterprise escapes, the Farragut fires into the scavenger ship and destroys it. Both crews are shocked to discover that the scavengers are humans, the descendants of 21st-century scientists who left Earth in the aftermath of World War III. Kirk is haunted by his command decisions and receives advice from Pike.",
+          "airDate": "2025-08-14",
+          "still": "https://image.tmdb.org/t/p/original/wfbnUqpIQWnDq4U1i0X2WKchimt.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/wfbnUqpIQWnDq4U1i0X2WKchimt.jpg",
+            "https://image.tmdb.org/t/p/original/ccA0bKcshPOQyZWX8gY1sMEzW9P.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "What Is Starfleet?",
+          "overview": "While aiding a war-torn planet, Pike and crew face scrutiny from a probing journalist.",
+          "plot": "Beto films a documentary about Starfleet while the Enterprise aids the non-Federation planet Lutani VII in its war with neighboring planet Kasar. The Enterprise is ordered to transport a Jikaru, a creature that was altered by the Lutani into a weapon, to the war zone. Beto is aggressive in his questioning of the crew, aiming to portray Starfleet in a negative light. The mission is complicated when a ship of Lutani scientists, who regret the creature's alterations, attack the Jikaru and allow it to escape from the Enterprise. Spock is left in a coma after attempting to communicate with the Jikaru telepathically. Uhura connects with the creature, learning that it is suffering and wishes to be euthanized. Honoring the Jikaru's request, the Enterprise leads it into a star and the Federation offers to protect the Jikaru homeworld so its children will not be similarly altered by the Lutani. Uhura suggests to Beto that he blames Starfleet for his estranged relationship with Ortegas and the injuries she suffered fighting the Gorn. With a new perspective, Beto's documentary ultimately praises Starfleet and its personnel.",
+          "airDate": "2025-08-21",
+          "still": "https://image.tmdb.org/t/p/original/3s5WG0w3zQpKJeJdAUepWaFNBIU.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/3s5WG0w3zQpKJeJdAUepWaFNBIU.jpg",
+            "https://image.tmdb.org/t/p/original/a2zu5uqnVvdYRhh9H8tEmBZlY1k.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Four-and-a-Half Vulcans",
+          "overview": "After a mission turns crew members into Vulcans, trouble arises when they try to revert to human.",
+          "plot": "Pike, Chapel, Uhura, and La'An are transformed into Vulcans for a mission, after which they decide to remain Vulcan. Pike becomes obsessed with efficiency and neatness; Uhura manipulates Beto into accepting a mind meld to improve their compatibility for a potential relationship; Chapel ends all of her friendships and her relationship with Korby to focus on work; and La'An develops Romulan tendencies, becoming a sinister warmonger. At a meeting regarding Batel's request to return from medical leave to her job with the Starfleet Judicial Department, Pike tells Vice Admiral Pasalk that her return would be illogical, and Batel loses her temper with both. Scotty and James Kirk, on leave from the Farragut, become friends while working together to stop La'An. With the help of Number One's Vulcan ex-boyfriend Doug, Spock connects with the four crewmembers' katras (spiritual essence) and persuades them to change back. They make amends for their actions. To Batel's surprise, Pasalk offers her a promotion to head of the Judicial Department following his impending retirement, having been impressed by her outburst.",
+          "airDate": "2025-08-28",
+          "still": "https://image.tmdb.org/t/p/original/jTI3PI3cEqJJX5jvik1kmu1qLxs.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/jTI3PI3cEqJJX5jvik1kmu1qLxs.jpg",
+            "https://image.tmdb.org/t/p/original/t6qUh2lRbD807Z28h8ZaeX1FeFv.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Terrarium",
+          "overview": "Stranded on a toxic moon, Ortegas must defy her deepest beliefs to survive.",
+          "plot": "While flying a shuttle for a mission, Ortegas is pulled through a wormhole and crashes on a barren moon orbiting a gas giant. She is protected from the moon's dangers by a stranded Gorn pilot and, despite Ortegas's initial mistrust, the pair become friends as they survive together and bond over their similarities. The Enterprise has an urgent assignment to deliver vaccines to a colony, limiting the time they can spend searching for Ortegas. Uhura proposes they take the Enterprise partially into the wormhole to find her, and exaggerates the mission's probability of success to convince Pike. Ortegas and the Gorn ignite the moon's atmosphere to signal the Enterprise. Upon transporting down to rescue Ortegas, La'An mistakes the Gorn for an enemy and kills her. An enigmatic being called a Metron appears to Ortegas and explains that they brought her and the Gorn together to see if peace between humans and Gorn is possible. Because of La'An's violent reaction, they believe further study is required. The Metron erases Ortegas's memories of their conversation, but she remembers and mourns for her new friend.",
+          "airDate": "2025-09-04",
+          "still": "https://image.tmdb.org/t/p/original/AbgG3jb8kSEWxJvHYotQmGpSPQP.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/AbgG3jb8kSEWxJvHYotQmGpSPQP.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "New Life and New Civilizations",
+          "overview": "When an ancient evil resurfaces, Pike faces a life-altering choice to stop it.",
+          "plot": "As Batel prepares to leave the Enterprise to take up her new role, the crew discover that the Vezda has escaped from the transporter pattern buffer in a reconstruction of Gamble's body. Korby finds Gamble at a doorway to the Vezda prison and the Enterprise goes to rescue him. This is a trap to lure out M'Benga, as he and Gamble need to be together to open the doorway. The crew learn that the unique combination of DNA inside Batel matches the biology of the Beholder statue that guards the prison. To open the doorway without M'Benga and Gamble, the crew devise a plan to simultaneously fire on it from the Enterprise and the Farragut; Spock performs a mind meld with James Kirk so the two can perfectly sync their actions. Pike and Batel enter the prison and confront Gamble, who destroys the Beholder and frees the other Vezda. Using her emerging power, Batel creates an illusion in which she and Pike live a full and happy life together. She then traps all the Vezda in the prison and becomes the Beholder. Pike struggles to move on without Batel as the Enterprise sets out to explore uncharted planets.",
+          "airDate": "2025-09-11",
+          "still": "https://image.tmdb.org/t/p/original/orhTTIshYMwHRcsLmgmePXo0cHg.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/orhTTIshYMwHRcsLmgmePXo0cHg.jpg",
+            "https://image.tmdb.org/t/p/original/cwDXCHTUZkqC5i8IbHkOMdN82zO.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 4,
+      "name": "Season 4",
+      "airDate": "2026-07-23",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Valles Marineris",
+          "overview": "Pike leads the crew into a stellar storm, sending the Enterprise back 65 million years.",
+          "plot": "Captain Christopher Pike is offered a promotion to Commodore. The USS Enterprise is caught in a solar storm which sends them back 65 million years to the Cretaceous period on Earth, where crew members encounter dinosaurs. The Enterprise is captured by Martians who are at war with the Dol'drm, an insect-like species from a planet between Mars and Jupiter. Pike offers to help end the conflict peacefully, but their leader Cassell learns that Mars is a barren wasteland in the future and decides to use the Enterprise's antimatter fuel cell as a weapon. The crew race to stop Cassell from using it against the Dol'drm planet, but Pike makes a last minute decision not to interfere. The planet is destroyed, creating the asteroid belt and shifting Mars's orbit enough to cause its eventual wasteland state. A fragment from the explosion becomes the Chichxulub asteroid that causes the dinosaurs' extinction. The Enterprise uses the explosion's energy to return to their own time, where Pike declines the promotion and instead has first officer Una Chin-Riley / Number One promoted to Commander.",
+          "airDate": "2026-07-23",
+          "still": "https://image.tmdb.org/t/p/original/dkplcEqCZV5nNmsUm12CimwDqjy.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dkplcEqCZV5nNmsUm12CimwDqjy.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Griffin Incident",
+          "overview": "",
+          "plot": null,
+          "airDate": "2026-07-30",
+          "still": null,
+          "stills": []
+        },
+        {
+          "episode": 3,
+          "name": "Episode 3",
+          "overview": "",
+          "plot": null,
+          "airDate": "2026-08-06",
+          "still": null,
+          "stills": []
+        },
+        {
+          "episode": 4,
+          "name": "Episode 4",
+          "overview": "",
+          "plot": null,
+          "airDate": "2026-08-13",
+          "still": null,
+          "stills": []
+        },
+        {
+          "episode": 5,
+          "name": "Episode 5",
+          "overview": "",
+          "plot": null,
+          "airDate": "2026-08-20",
+          "still": null,
+          "stills": []
+        },
+        {
+          "episode": 6,
+          "name": "Episode 6",
+          "overview": "",
+          "plot": null,
+          "airDate": "2026-08-27",
+          "still": null,
+          "stills": []
+        },
+        {
+          "episode": 7,
+          "name": "Episode 7",
+          "overview": "",
+          "plot": null,
+          "airDate": "2026-09-03",
+          "still": null,
+          "stills": []
+        },
+        {
+          "episode": 8,
+          "name": "Episode 8",
+          "overview": "",
+          "plot": null,
+          "airDate": "2026-09-10",
+          "still": null,
+          "stills": []
+        },
+        {
+          "episode": 9,
+          "name": "Episode 9",
+          "overview": "",
+          "plot": null,
+          "airDate": "2026-09-17",
+          "still": null,
+          "stills": []
+        },
+        {
+          "episode": 10,
+          "name": "Episode 10",
+          "overview": "",
+          "plot": null,
+          "airDate": "2026-09-24",
+          "still": null,
+          "stills": []
+        }
+      ]
+    }
+  ],
+  "cast": [
+    {
+      "name": "Anson Mount",
+      "character": "Captain Christopher Pike",
+      "episodeCount": 40,
+      "profile": "https://image.tmdb.org/t/p/original/A4YBdwnzJKRcZXfodjT4UalHOK9.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180833.jpg"
+    },
+    {
+      "name": "Ethan Peck",
+      "character": "Spock",
+      "episodeCount": 40,
+      "profile": "https://image.tmdb.org/t/p/original/9KaxSgpbx9Zj827xXLML3bWknNV.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180834.jpg"
+    },
+    {
+      "name": "Jess Bush",
+      "character": "Christine Chapel",
+      "episodeCount": 40,
+      "profile": "https://image.tmdb.org/t/p/original/qAsdLipL5Gd54IHd813lN5HQFwn.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180839.jpg"
+    },
+    {
+      "name": "Christina Chong",
+      "character": "La'An Noonien-Singh",
+      "episodeCount": 40,
+      "profile": "https://image.tmdb.org/t/p/original/quzkaUEarfiHHpG0IeYgyJgZ6EL.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180836.jpg"
+    },
+    {
+      "name": "Celia Rose Gooding",
+      "character": "Nyota Uhura",
+      "episodeCount": 40,
+      "profile": "https://image.tmdb.org/t/p/original/vIk0g2FnDGmBGEAX7veFCOg0hM1.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180838.jpg"
+    },
+    {
+      "name": "Melissa Navia",
+      "character": "Erica Ortegas",
+      "episodeCount": 40,
+      "profile": "https://image.tmdb.org/t/p/original/b8qF20FtJby02fGAeWSp9XJDHbw.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180837.jpg"
+    },
+    {
+      "name": "Babs Olusanmokun",
+      "character": "Dr. Joseph M'Benga",
+      "episodeCount": 40,
+      "profile": "https://image.tmdb.org/t/p/original/bqycmpUrpISeLzQniiYwAZ5X1RN.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180840.jpg"
+    },
+    {
+      "name": "Rebecca Romijn",
+      "character": "Una Chin-Riley",
+      "episodeCount": 40,
+      "profile": "https://image.tmdb.org/t/p/original/doqFBHNbNhoLF9RX9SYPqwu1mvd.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180835.jpg"
+    },
+    {
+      "name": "Alex Kapp Horner",
+      "character": "USS Enterprise Computer (voice)",
+      "episodeCount": 15,
+      "profile": "https://image.tmdb.org/t/p/original/qpVxC6GgYaTg6iyPWV93u0i4JKK.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dan Jeannotte",
+      "character": "George Samuel 'Sam' Kirk",
+      "episodeCount": 13,
+      "profile": "https://image.tmdb.org/t/p/original/j8njXZcmImI9xGqbGY5gZiRq8wC.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Melanie Scrofano",
+      "character": "Captain Marie Batel",
+      "episodeCount": 13,
+      "profile": "https://image.tmdb.org/t/p/original/qEb6GF67ZGuxwq3FWfjJLqz32ep.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rong Fu",
+      "character": "Jenna Mitchell",
+      "episodeCount": 13,
+      "profile": "https://image.tmdb.org/t/p/original/cm6lDVMrP0Hw2Vh6aYMhrdJO5dB.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Bruce Horak",
+      "character": "Hemmer",
+      "episodeCount": 12,
+      "profile": "https://image.tmdb.org/t/p/original/iDZTHDIN3iAzOzARUORo5xF8MUM.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/406/1015062.jpg"
+    },
+    {
+      "name": "Martin Quinn",
+      "character": "Lieutenant Montgomery Scott",
+      "episodeCount": 11,
+      "profile": "https://image.tmdb.org/t/p/original/pkLdyDbcPpWuFWaWB5lniFw9zx6.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180511.jpg"
+    },
+    {
+      "name": "Carol Kane",
+      "character": "Commander Pelia",
+      "episodeCount": 11,
+      "profile": "https://image.tmdb.org/t/p/original/dm3Ci8XuVYZBqqlYtaLgth94VUe.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Paul Wesley",
+      "character": "James T. Kirk",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/hBQ8yYZpjRNDbzfR0r83VTmPooJ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "André Dae Kim",
+      "character": "Chief Kyle",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/khUMPN88OaEgBoOQQoMjxfFE6f8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Adrian Holmes",
+      "character": "Admiral Robert April",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/aKtB0wGk4PTzNTZ4HKagUfDwcWr.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Chris Myers",
+      "character": "Ensign Dana Gamble",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/uPwK37TwB5vL8Cthh0M8atqYNbH.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180838.jpg"
+    },
+    {
+      "name": "Gia Sandhu",
+      "character": "T'Pring",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/1l5Nh5xWVTQru1PmkeCVxS9Zb6v.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jennifer Hui",
+      "character": "Ensign Christina",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/9XaZlt11uZSD9jqbucFoAwY8V5i.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180838.jpg"
+    },
+    {
+      "name": "Noah Lamanna",
+      "character": "Chief Jay",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/dow9JUm2DP3GCsR1q9WIaydDQGN.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Cillian O'Sullivan",
+      "character": "Dr. Roger Korby",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/8uazSJXtTzvtCDYNeLouHQGhyIc.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Shawn Ahmed",
+      "character": "Ensign Shankar",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/gjLCf0RRpqznqzPHTEM7g3atPFm.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180838.jpg"
+    },
+    {
+      "name": "Emma Ho",
+      "character": "Oriana",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/mUVxoj09thSFpHhHD6xzam7XyNm.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Cameron Roberts",
+      "character": "Manu",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/3ikgis1dL57wLwaJ9YgFRf95J6x.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Myles Dobson",
+      "character": "Young Vulcan Bartender",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/x9jXUuLUAnYhwEbqoqeXu9FM1Op.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ron Kennell",
+      "character": "Vasso",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/tjenFDHhjKbAxCNrwJA0UoRGBAo.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Graeme Somerville",
+      "character": "Vice Admiral Pasalk",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/iETuafM5V0jQUKREtS5YdelHzrU.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kira Guloien",
+      "character": "Agonyan",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/nNYMOuN3KNdiu9KBogLtDVgsw3j.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Warren Scherer",
+      "character": "Gorn",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/n5adsl2FnbJHWMcBerwZvYvCTfi.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Zoe Doyle",
+      "character": "Captain V'Rel",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/l4VYUzj9UFj4vBIb3hQil2NmaCi.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ava Cheung",
+      "character": "Young La'an",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/9cS8YdJ3Qhids5b822Kay5LRURl.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Samantha Smith",
+      "character": "Eldredth Leader",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/y6uj2uevovSjjZP1yPBd7qEBSdC.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Peter Bou-Ghannam",
+      "character": "Palion Leader",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/gRwIsx2Mskxox6TKDPsnMnz4Jdr.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Marienne Castro",
+      "character": "Shuttle Pilot",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/87D7ejECuAnrMQbIyDj3blWEsJH.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Bessie Cheng",
+      "character": "Eldredth Aide #2",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/wYA8M7BYKXmrPCU3dsF6JWAZPkt.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Joseph Daly",
+      "character": "Eldredth Aide #1",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/3u2Cpzxblv9BbVI9tVMw4fjr9CD.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Chandra Galasso",
+      "character": "Lieutenant",
+      "episodeCount": 1,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180834.jpg"
+    },
+    {
+      "name": "Etan Muskat",
+      "character": "Starfleet Scientist #2",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/cE2ivBP1Uw0TXt7fmucTH7TvEdl.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Daniel Pagett",
+      "character": "Kiley Scientist #2",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/6gFr8GWzym91YTg1QsHXEQz1Yhi.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rachel Sellan",
+      "character": "Woman in Elevator",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/1T4h8GPtXa2B3NWqzJ90whLZGvK.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Thom Marriott",
+      "character": "Shepherd Captain",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/q2rgBpQ3IxkjeSPT5wfdGjKiwa0.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Andre Colquhoun",
+      "character": "Probasco",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/mavTTW3Htte2Z0uqTQEsLd6b4Bd.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Daniel Gravelle",
+      "character": "Ensign Lance",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/3XkcadJGGlosvT9v9TCQGRwPhxB.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180838.jpg"
+    },
+    {
+      "name": "Curtis Legault",
+      "character": "Carter",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/urZ0rWSIeirthS3pzOEyyW5D0i3.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Angela Besharah",
+      "character": "Thandie",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/5lY6aCGSRAK6SnMarfyL2W3wiU5.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kaylee Harwood",
+      "character": "Lt. Parker",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/c7AKpm9N7Z9W97XEeIqmpy0AGHV.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Atticus Mitchell",
+      "character": "Ensign Todd",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/o10hi8HtjwdbNJWd4wRTUNAvlBz.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180838.jpg"
+    },
+    {
+      "name": "Oscar Moreno",
+      "character": "Crewman Zuniga",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/6hwHD62h47EMpXnTg7Mx2hcoQcc.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sophia Webster",
+      "character": "Fig",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/goyzSX9Dgds3GqN5segTWQVplpw.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alden Adair",
+      "character": "Barjan T'Or",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/tn1Lt2jxuuGOhcdygpcX2lmgmPL.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Graham Parkhurst",
+      "character": "Lieutenant Dever",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/Hr9oWie8dwZamkwOB67GiEpHGa.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180834.jpg"
+    },
+    {
+      "name": "Carlisle J. Williams",
+      "character": "Brax",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/4DrS0Ce9GybYw43zVcTlJVSO4Sa.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Torri Webster",
+      "character": "Ensign Zier",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/64j7u2rZ3imH7IVvwOJO876lvtS.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180838.jpg"
+    },
+    {
+      "name": "Lindy Booth",
+      "character": "Alora",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/5vT2mIIGTM7XQx4utAyRjW1aRPW.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ian Ho",
+      "character": "First Servant",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/t8hDCgib6IFBu69tI6E1kYB2wPf.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Husein Madhavji",
+      "character": "Elder Gamal",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/caymkgrMYxUXroA8O32brMAHzI4.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Adam Maros",
+      "character": "Kier",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/oOyl9te4CxQghw0p4yIOZPfU0n2.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Antonette Rudder",
+      "character": "Aide",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/raRNjbT9IM6BZwX2aR9qm2ApUwg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Stephen Sparks",
+      "character": "Majalan Official",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/pfXSlljdg5nPOGbN3GMCZa000G7.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jesse James Keitel",
+      "character": "Dr. Aspen",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/aZkcKRQEmrKhG83bQkkWjdn2Ftj.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Hough",
+      "character": "Remy",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/84S2dFgyumUYQ6PDFRMuw8AFYsB.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Roderick McNeil",
+      "character": "Stonn",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/knCluSNSB9YzwO0oCG85FwrAtnT.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sophia Walker",
+      "character": "Fran",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/7zty9GbUssZD8vhjJzNLFoT4HyM.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Makambe Simamba",
+      "character": "Adult Rukiya",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/5UbdC9VBkuKoShdTkGm4mS9On53.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jessica Danecker",
+      "character": "Cadet Chia",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/qSXJkB2RRJbpbTzLUUPSFw0vFzC.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ted Kellogg",
+      "character": "Ensign / Lieutenant Duke",
+      "episodeCount": 1,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180838.jpg"
+    },
+    {
+      "name": "Mathieu Bourassa",
+      "character": "Romulan Subcommander",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/uD3dC1ZqfDRUmmK076LBtzHwF7C.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ali Hassan",
+      "character": "Commander Hansen Al-Salah",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/kSH6qqy9BvDy1VR9TXlb3Jbk1en.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Matthew MacFadzean",
+      "character": "Romulan Commander",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/oop7xCyqSdfFCiewc2uRwMlmCdh.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Chris River",
+      "character": "Maat Al-Salah",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/pUhxsCkXxS5JTOVhSFH4SQqKqTK.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Megha Sandhu",
+      "character": "Bride",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/sx7Pr99gX62GepPFj4XEskEN1Xv.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Carolyn Scott",
+      "character": "Praetor",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/686HuwIXPsUgnAd5rh19BNnMCai.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Matthew Wolf",
+      "character": "Engineer (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/x3Lrc41VrY5wf0KsJNCUvyCjHhc.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/406/1015062.jpg"
+    },
+    {
+      "name": "Liza Seneca",
+      "character": "Capt. Alice Gavin",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/v9B0nnUfTD4v8rNGzh99IabznPv.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tawny Newsome",
+      "character": "Ensign Beckett Mariner",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/pMZ5cB05M6UGtU4I5xI0tpMYXka.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180838.jpg"
+    },
+    {
+      "name": "Jack Quaid",
+      "character": "Ensign Brad Boimler",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/320qW5yEbxpmyxQ3evmClJbtKag.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180838.jpg"
+    },
+    {
+      "name": "Abbas Wahab",
+      "character": "Ror'Queg",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/2VWT9ysNepS6ZxJbtePS7hlgqYP.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Yetide Badaki",
+      "character": "Neera Ketoul",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/gNqftV18TpX1lz8YIVmwYLd0dt0.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Izad Etemadi",
+      "character": "Burly Inspector",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/cAEfix7yMHgTdsh28qnn7jqQCG1.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Andrew Jackson",
+      "character": "Captain D'Chok",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/3IxKK9psQUZdkgakt00hyvYfiJx.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kyle Kass",
+      "character": "Kr'Dogh",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/hqrKa40TZJxzaHgyxIHJYVIKGnX.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ci Hang Ma",
+      "character": "Livian",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/3JKjqDkO1ifoSfovCyo4XkNu6do.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tiffany Martin",
+      "character": "Senior Chief",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/wkaswf4TCPjYVzLqLG0OAcLC3il.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jamillah Ross",
+      "character": "Lukata",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/h82NrZnDKpzCfAaHyCfs8ODsyhb.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Samer Salem",
+      "character": "Inspector Gilan",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/pfxFWXTau3vZF4MHQMN8TMDOpKG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Hannah Spear",
+      "character": "Jen",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/xBsaXZXGLs2UoSONNvVm7VrVNtQ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alex Spencer",
+      "character": "Greynax",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/dbthJumLbtaPmgIKgbfXSpgwnjF.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nicolas Van Burek",
+      "character": "Klingon Extremist",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/ttIKylc0Ok75g9tES1h9lEvyZhH.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Laura Wilson",
+      "character": "Stell",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/kkSJknYSS0ZQOCj6hRdVW7jFLaI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Russell Yuen",
+      "character": "Commodore Tafune",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/yFYpcN2YxJLCFr9p7kaOwunN1Cb.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jim Annan",
+      "character": "Una's Father",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/bQZl2u7F058GacYWYFl3A0AlyHp.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180835.jpg"
+    },
+    {
+      "name": "Anna Claire Beitel",
+      "character": "Young Girl / Young Una",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/vM8WUSXmk7fI3yPxlF3vFZTKHLN.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Catherine Black",
+      "character": "Una's Mother",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/2b83HslBqBgVZje3xR30DkIelQN.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180835.jpg"
+    },
+    {
+      "name": "Eugene Clark",
+      "character": "Vulcan Judge",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/nvxp3SnQ49RxxtLm63xU1LGEJOb.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nicky Guadagni",
+      "character": "Admiral Javas",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/qJCelkMEFOa86LC0xTPF8m9p5Rf.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Beth Hornby",
+      "character": "Guard",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/nRXfQ8sOrWlQFpHNL79Q5i0o38.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Iain Stewart",
+      "character": "Jag Defender",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/cVHkX1KgJQbmk3uMCEVuAWVlD4s.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "David Benjamin Tomlinson",
+      "character": "Tellarite Judge",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/lFVOI5UoOBuYwuwIv8Wy1gye5uw.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kimberly-Ann Truong",
+      "character": "Illyrian Assistant",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/z7Kiyn2sqSnH4i5FF0LvFTVG2ck.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Adelaide Kane",
+      "character": "Sera",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/oqU4ho8m8WPPyabD6RC2GH1PPBP.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Luke Marty",
+      "character": "Police Officer",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/6s6Pd5bbsWW6jCgLavdDUT5qN7Y.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sean Meldrum",
+      "character": "Denobulan Cadet",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/NiXGH6tf0fx8EdOlgv4CJ4BpVI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Brian Quintero",
+      "character": "Store Security Guard",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/nAnfn7NHjpjle2fHvFajzAwqsiL.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Desmond Sivan",
+      "character": "Young Khan",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/5RcdRTQFHZyJAwrY5XYnuuhOBq7.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mish Tam",
+      "character": "Chess Player #2",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/OtzqI84oqR48wkNKT4en6bXcza.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Allison Wilson-Forbes",
+      "character": "Agent Ymalay",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/oQTLLYtqoCBHBlfKKGQKtHRp7UY.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Reed Birney",
+      "character": "Luq",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/dfLgNLUt6Xs2MJJTi6B1iWdXjU6.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "David Huynh",
+      "character": "Yeoman Zac Nguyen / High Lord Zacarias",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/lz0K10la6bNbpUDvMy41fR1Gijl.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Emeka Menakaya",
+      "character": "Tiko",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/x4rq9whFeSJma7yhAVKy73b8hDT.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Simon Northwood",
+      "character": "Rak",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/zaBu1bUHJAZZt11TbdPRjfYLpMw.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mia Kirshner",
+      "character": "Amanda Grayson",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/7fSYUVxf84JdZ2aRJ9Lm28Ls6IK.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ellora Patnaik",
+      "character": "T'Pril",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/wOcnPVZ0VDwnsc7wkPBeXDvi1jz.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Benyaer",
+      "character": "Sevet",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/rN6CNG1XqFTf88rUO64RDlLLwO4.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Anjuli Cain",
+      "character": "Yellow / Blue (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/ddPjb6NGXICu9jfIK3ZWwhEHV3h.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ryan Taerk",
+      "character": "Durik",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/dEy5lRPvtQBi8yeKH4py8ffItSR.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Reventar",
+      "character": "Saul Ramon",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/bHln3DHgD6UnIRFb4pAVGklISYU.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Noël Wells",
+      "character": "Ensign D'Vana Tendi (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/uH5VVl1glyuMJJBXCqg2CLwWhVR.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180838.jpg"
+    },
+    {
+      "name": "Eugene Cordero",
+      "character": "Ensign Sam Rutherford (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/waruLSR8lXBjhAFL0J6ihuVY62d.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180838.jpg"
+    },
+    {
+      "name": "Jerry O'Connell",
+      "character": "Commander Jack Ransom (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/siMZhO5SIUc6K5sTKyVJRXmkoiG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Greg Bryk",
+      "character": "Captain Harr Caras",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/1I3SxKFvQSam6KOMT4j5f0nFxRg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Robert Wisdom",
+      "character": "Dak'Reh",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/5fd8CwnL2YpWyq2G9WooejgnKiX.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Clint Howard",
+      "character": "Commander Buck Martinez",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/qC7AgKmcBFk76ojTYELeirw1viQ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ryan Allen",
+      "character": "Polk",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/99O5NjoOmO4uCmTYaQhipj1qMNx.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kyle Gatehouse",
+      "character": "Lieutenant Va'Al Trask",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/sSyo8IKwF7SJLN4N9JIwULTlVC9.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180834.jpg"
+    },
+    {
+      "name": "Jose Gutierrez-Solana",
+      "character": "Ensign Alvarado",
+      "episodeCount": 1,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180838.jpg"
+    },
+    {
+      "name": "Brendan Jeffers",
+      "character": "Ensign Inman",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/7DtB9yQ7NOZzBdS7mX6L3VPACpB.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180838.jpg"
+    },
+    {
+      "name": "Vanessa Smythe",
+      "character": "Harper",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/aORxfHO9pQ52bN2c4QgCwVZjoXj.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Matt Jensen",
+      "character": "Ensign Appel",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/ZQZEo87JwubWVenr8XpF5m8JBt.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180838.jpg"
+    },
+    {
+      "name": "Matia Jackett",
+      "character": "Nurse Bo",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/vSa8hT777ZRM8wcn6hwdDy4fM5S.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180839.jpg"
+    },
+    {
+      "name": "John de Lancie",
+      "character": "Alien Parent (voice)",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/e9GsjWaW9fabT22ceLzesJhUgzd.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rhys Darby",
+      "character": "Trelane",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/65Zy72IsUjopCkRt0s55Tk68GIm.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Christine Horn",
+      "character": "Bytha",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/vbb7lhZ3cZcVg3X5wr2wkV5NZYs.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ishan Davé",
+      "character": "Lt. Scannell",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/2hfkRAKAaHdWi4yrQwrZOvA2rKR.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "David MacInnis",
+      "character": "Rex",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/sIqdonn5NvUvJoWQbTWO7NDCgE3.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ish Morris",
+      "character": "N'Jal",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/i6lWvQ5z6I8K0d4K6LY8sTbWSuf.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Linnea Currie-Roberts",
+      "character": "Medical Ensign",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/tfURbyynzY1nfYw6RVE9c90kRFK.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Joanne Leach",
+      "character": "Ensign Maurer",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/aJxmrzVGdrSlBzvnrOXu0DHSc6o.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/472/1180838.jpg"
+    },
+    {
+      "name": "Shaun Majumder",
+      "character": "Dr. Trunn Voor",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/gN8CiUKDxsm9WlR8UYKmvXuQLqC.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Steffi DiDomenicantonio",
+      "character": "Dr. Gyud",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/vC3bhYiw0msN1ZWDOXbqnIbzNyq.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Patton Oswalt",
+      "character": "Doug",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/ljQvjbPmcIAl205Lb2Mu4CW8WO7.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Michael Hanrahan",
+      "character": "Abna",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/sPUBuKRKJjpXfZloX4dJg1z2IDz.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Anna Mirodin",
+      "character": "Juliet",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/1P2Hw3KNCEEhjTFvIPn3T5wjEzX.jpg",
+      "inCharacter": null
+    }
+  ],
+  "generatedAt": "2026-07-25T16:46:27.305Z"
+}

@@ -1,0 +1,393 @@
+{
+  "slug": "bridgerton",
+  "generatedFor": "Bridgerton",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The bargain",
+          "text": "Simon Basset returns to London for his father's funeral and, to deflect matchmakers while boosting Daphne, agrees to a fake courtship with her.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up the entire fake-to-real romance and the Anthony/Simon friendship that fuels the season's conflict.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The duel",
+          "text": "Anthony catches Simon kissing Daphne in a hedge maze and challenges him to a duel; Daphne intervenes and forces the pair into a real marriage.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The pivot from ruse to actual marriage; every S1 conflict downstream is a consequence of this forced union.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The secret vow",
+          "text": "Simon has secretly sworn never to sire an heir to spite his dying father, and hides this from Daphne by withdrawing on their wedding night.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The hidden vow is the emotional engine of the back half of the season and the source of the marital rift.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The betrayal",
+          "text": "Daphne discovers Simon's vow, confronts him mid-tryst, and their marriage fractures over his refusal to give her a child.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The rupture that must be healed for the season to close and establishes trust as their central issue.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Marina exposed",
+          "text": "Marina Thompson, secretly pregnant, traps Colin into a proposal; Penelope exposes her in Whistledown, and Marina leaves London to marry the dead father's brother.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Explains why Colin leaves the country heartbroken and shows Penelope wielding Whistledown against her own crush's happiness.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Reconciliation and resolve",
+          "text": "Simon relents and accepts fatherhood; the Hastings welcome a son while Anthony resolves to marry practically, without love.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Closes the Simon/Daphne arc and plants Anthony's loveless-match mission that drives him going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The pen unmasked",
+          "text": "The final page reveals to the audience alone what no character knows: Penelope Featherington has been Lady Whistledown from the start.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The show's central secret. Every future Whistledown scene depends on the viewer holding this knowledge.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Anthony has vowed to marry practically and without love, Eloise is still hunting Lady Whistledown, and — unknown to any character — Penelope Featherington holds the pen.",
+        "questions": [
+          "Who will Anthony choose for a match he does not love?",
+          "How long can Penelope keep her secret from Eloise?",
+          "Will the Queen ever unmask Whistledown?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Daphne Basset",
+          "line": "The eldest Bridgerton daughter, now Duchess of Hastings, reconciled with Simon and mother to their newborn son."
+        },
+        {
+          "name": "Simon Basset",
+          "line": "Duke of Hastings, released from his vow after breaking with his dying father's legacy, now a husband and father."
+        },
+        {
+          "name": "Anthony Bridgerton",
+          "line": "Viscount and head of the family, has ended his affair with Siena and resolved to find a wife without love.",
+          "note": "Central to the next season."
+        },
+        {
+          "name": "Penelope Featherington",
+          "line": "Quiet Featherington daughter, quietly in love with Colin, and secretly the author of Lady Whistledown.",
+          "note": "Her double life is the show's core secret."
+        },
+        {
+          "name": "Eloise Bridgerton",
+          "line": "Sharp-tongued second Bridgerton daughter, obsessed with unmasking Whistledown and dreading her own debut."
+        },
+        {
+          "name": "Colin Bridgerton",
+          "line": "Bridgerton brother, freshly humiliated by Marina's deception, leaving London to travel abroad."
+        },
+        {
+          "name": "Violet Bridgerton",
+          "line": "Widowed Bridgerton matriarch, gently steering her eight children through the marriage mart."
+        },
+        {
+          "name": "Queen Charlotte",
+          "line": "London's arbiter, humiliated by Whistledown and increasingly obsessed with unmasking her."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · The wound",
+          "text": "Colin returns from travel transformed; Penelope overhears him dismiss her, and the wound sparks her makeover and severs their friendship.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The rupture that turns their childhood friendship into the season's slow-burn romance.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Flirting lessons",
+          "text": "To help Penelope find a husband, Colin offers her flirting lessons; the arrangement, blabbed to the ton by Eloise, deepens into real feelings.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The mechanism that pushes Colin from friend to suitor and folds Eloise back into Penelope's orbit.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The carriage proposal",
+          "text": "As Lord Debling nears a proposal to Penelope, Colin realises his own feelings, interrupts the courtship, and proposes to her himself in his carriage.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Puts the couple on track for marriage and creates the ticking clock for the Whistledown reveal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Cressida's lie",
+          "text": "To escape being married off to an old lord, Cressida Cowper publicly claims to be Lady Whistledown; Penelope refuses to let the lie stand.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Forces Penelope's hand and sets up the queen's £5,000 bounty, blackmail, and public reveal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Discovery at the press",
+          "text": "Colin follows Penelope to a printers, discovers she is Whistledown, and the betrayal poisons their engagement days before the wedding.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The private revelation that turns their marriage into a fragile alliance rather than a love match.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Blackmail and confession",
+          "text": "Cressida blackmails Penelope for £10,000; Penelope publicly confesses her identity at a ball, wins the Queen's mercy, and reconciles with Colin.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The season's climax — retires Whistledown publicly, disarms the blackmailer, and lands the marriage.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Scattering",
+          "text": "Francesca marries John Stirling and leaves for Scotland with Eloise and his cousin Michaela, while Benedict decides commitment is not yet what he wants.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Redistributes the Bridgertons — Francesca to Scotland with Michaela and Benedict left uncommitted — the setup for what follows.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Penelope has publicly retired as Whistledown into a happy marriage, but the family is scattering — Francesca off to Scotland with Michaela, Eloise with them — and Benedict, the eldest single Bridgerton, remains uncommitted.",
+        "questions": [
+          "Who will finally settle Benedict?",
+          "What stirred in Francesca when Michaela arrived?",
+          "With Anthony still in India, who steadies Bridgerton House?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Penelope Bridgerton",
+          "line": "Formerly Featherington; her Whistledown identity is now public, she has the Queen's pardon, and she has married Colin."
+        },
+        {
+          "name": "Colin Bridgerton",
+          "line": "Bridgerton brother settled at last, married to Penelope after reconciling over her secret."
+        },
+        {
+          "name": "Benedict Bridgerton",
+          "line": "The eldest still-single Bridgerton, freshly out of a throuple with Lady Tilley Arnold and her friend Paul, and uninterested in commitment."
+        },
+        {
+          "name": "Violet Bridgerton",
+          "line": "Bridgerton matriarch, quietly drawn to Lady Danbury's brother Marcus Anderson."
+        },
+        {
+          "name": "Eloise Bridgerton",
+          "line": "Bridgerton daughter, one of the few who knows Penelope is Whistledown, leaving with Francesca for Scotland."
+        },
+        {
+          "name": "Francesca Stirling",
+          "line": "Née Bridgerton, newly married to John Stirling, moving to Scotland — and audibly stirred by his cousin Michaela."
+        },
+        {
+          "name": "Lady Danbury",
+          "line": "Society mentor and matchmaker, newly reunited with her long-estranged brother Marcus Anderson."
+        },
+        {
+          "name": "Queen Charlotte",
+          "line": "Knows Penelope's identity and chose to pardon her rather than punish her."
+        },
+        {
+          "name": "Cressida Cowper",
+          "line": "Publicly disgraced after her Whistledown lie collapsed; cut off by her father over the failed match."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · The eldest single Bridgerton",
+          "text": "Eloise, Francesca, and John return from Scotland; Anthony and Kate remain in India; Violet pressures Benedict, the last unwed son at home, to settle.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the season's premise: Benedict is the target, most of the family is offscreen or absent.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The masked stranger",
+          "text": "At Violet's masquerade, Benedict is captivated by a masked woman in silver who dances and kisses him, then flees at midnight leaving only a glove.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The Cinderella hook that drives the whole season — the glove, the hunt, and the identity puzzle all start here.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Sophie's secret",
+          "text": "She is Sophie Baek, the earl's illegitimate daughter enslaved by her stepmother Araminta; her escape from the ball unravels when Araminta pieces it together.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Reveals to the viewer why Sophie can never accept a suitor openly and sets Araminta as the season's antagonist.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The maid in the house",
+          "text": "Violet hires Sophie as her daughters' maid; Benedict recognises her but she refuses his offer to become his mistress.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Forces the two into proximity and defines the class barrier the season is stress-testing.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ended by a brother",
+          "text": "Benedict confesses love and proposes; overhearing Anthony rage against the match, Sophie ends the affair and prepares to sail for the Americas.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The renunciation that forces the final act — Sophie's flight is what triggers Araminta's revenge.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · John dies",
+          "text": "Francesca learns she is not pregnant with John's child, and John then dies suddenly in his sleep, gutting the family and Michaela alike.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Kills off a spouse and reshuffles Francesca's story; the death is the pivot for everything Bridgerton after this.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Trial and rearrangement",
+          "text": "The Bridgertons expose Araminta's theft of Sophie's dowry and legitimise her as a Gun cousin; she and Benedict marry as Violet refuses Marcus and Michaela abruptly leaves.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Resolves the central romance while opening three launchpad threads for what comes next: Violet alone, Francesca alone, Michaela gone.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Benedict has married Sophie against every rule of the ton; Michaela has fled London the moment John was buried; and a new Lady Whistledown has taken up the pen.",
+        "questions": [
+          "Where has Michaela gone, and does Francesca understand why she left?",
+          "Who is writing as the new Lady Whistledown?",
+          "Now that Violet has refused Marcus, will she claim a life of her own?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Benedict Bridgerton",
+          "line": "Married Sophie in defiance of every rule the ton keeps, no longer the wandering middle son."
+        },
+        {
+          "name": "Sophie Baek Bridgerton",
+          "line": "Formerly a lady's maid, now legitimised as a Gun cousin and married to Benedict; the Cinderella hidden in plain sight."
+        },
+        {
+          "name": "Violet Bridgerton",
+          "line": "Bridgerton matriarch, refused Marcus's proposal and stepping back from being wife and mother to find her own life."
+        },
+        {
+          "name": "Francesca Stirling",
+          "line": "Bridgerton daughter, widowed and childless, stunned by John's death and Michaela's sudden departure."
+        },
+        {
+          "name": "Eloise Bridgerton",
+          "line": "Back in London, guardian of the family's private secrets after her stint in Scotland."
+        },
+        {
+          "name": "Hyacinth Bridgerton",
+          "line": "Youngest Bridgerton sister, nearing her own debut and rattled by John's death."
+        },
+        {
+          "name": "Lady Araminta Gun",
+          "line": "Sophie's cruel stepmother, publicly exposed as an embezzler of Sophie's dowry, forced to legitimise her to avoid prison."
+        },
+        {
+          "name": "Queen Charlotte",
+          "line": "Weary of matchmaking, granted Lady Danbury leave, and watching to see who has taken up the Whistledown pen."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · The eldest single Bridgerton",
+          "text": "Eloise, Francesca, and John return from Scotland; Anthony and Kate remain in India; Violet pressures Benedict, the last unwed son at home, to settle.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Opens the season by putting Benedict in the crosshairs while most of the family is offscreen.",
+          "needsVerify": true
+        },
+        {
+          "label": "S4 · The masked stranger",
+          "text": "At Violet's masquerade, Benedict is captivated by a masked woman in silver who dances and kisses him, then flees at midnight leaving only a glove.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The hook — the whole season is a hunt for the woman behind the glove.",
+          "needsVerify": true
+        },
+        {
+          "label": "S4 · Sophie's secret",
+          "text": "She is Sophie Baek, the earl's illegitimate daughter enslaved by her stepmother Araminta; her escape from the ball unravels when Araminta pieces it together.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Names the season's antagonist and explains why Sophie cannot simply say yes.",
+          "needsVerify": true
+        },
+        {
+          "label": "S4 · The maid in the house",
+          "text": "Violet hires Sophie as her daughters' maid; Benedict recognises her but she refuses his offer to become his mistress.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Sets the class barrier the pair must break — and hardens Sophie against a life on his terms.",
+          "needsVerify": true
+        },
+        {
+          "label": "S4 · Ended by a brother",
+          "text": "Benedict confesses love and proposes; overhearing Anthony rage against the match, Sophie ends the affair and plans to sail for the Americas.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The renunciation that triggers Araminta's final move against Sophie.",
+          "needsVerify": true
+        },
+        {
+          "label": "S4 · John dies",
+          "text": "Francesca learns she is not pregnant with John's child, and John then dies suddenly in his sleep, gutting the family and Michaela alike.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Widows Francesca and reshuffles the Bridgerton household.",
+          "needsVerify": true
+        },
+        {
+          "label": "S4 · Trial and rearrangement",
+          "text": "The Bridgertons expose Araminta's theft of Sophie's dowry and legitimise her as a Gun cousin; she and Benedict marry as Violet refuses Marcus and Michaela abruptly leaves.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Lands the romance and leaves Violet, Francesca, and the Whistledown seat all in transition.",
+          "needsVerify": true
+        }
+      ],
+      "cliffhanger": {
+        "text": "Benedict and Sophie are married against the ton's rules; Michaela has vanished the moment John was buried; and a new Lady Whistledown has taken up the pen.",
+        "questions": [
+          "Where has Michaela gone, and does Francesca understand why she left?",
+          "Who is writing as the new Lady Whistledown?",
+          "Now that Violet has refused Marcus, will she claim a life of her own?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Benedict Bridgerton",
+          "line": "Married Sophie in defiance of every rule the ton keeps, no longer the wandering middle son.",
+          "note": "Source data for this season duplicates Season 3 — verify before publishing."
+        },
+        {
+          "name": "Sophie Baek Bridgerton",
+          "line": "Formerly a lady's maid, now legitimised as a Gun cousin and married to Benedict."
+        },
+        {
+          "name": "Violet Bridgerton",
+          "line": "Bridgerton matriarch, refused Marcus's proposal and stepping back to find her own life."
+        },
+        {
+          "name": "Francesca Stirling",
+          "line": "Widowed and childless, stunned by John's death and Michaela's sudden departure."
+        },
+        {
+          "name": "Eloise Bridgerton",
+          "line": "Back in London, guardian of the family's private secrets."
+        },
+        {
+          "name": "Hyacinth Bridgerton",
+          "line": "Youngest Bridgerton sister, nearing her own debut."
+        },
+        {
+          "name": "Lady Araminta Gun",
+          "line": "Sophie's stepmother, publicly exposed as an embezzler of Sophie's dowry."
+        },
+        {
+          "name": "Queen Charlotte",
+          "line": "Weary of matchmaking and watching to see who has taken up the Whistledown pen."
+        }
+      ]
+    }
+  }
+}

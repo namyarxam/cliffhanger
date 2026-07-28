@@ -1,0 +1,565 @@
+{
+  "slug": "bojack-horseman",
+  "generatedFor": "BoJack Horseman",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Ghostwriter",
+          "text": "BoJack, a washed-up 90s sitcom horse, is assigned ghostwriter Diane Nguyen and they connect at a party — until he learns she's engaged to his rival Mr. Peanutbutter.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up the BoJack / Diane / Mr. Peanutbutter triangle that drives the whole series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Sarah Lynn moves in",
+          "text": "Former child costar Sarah Lynn crashes with him and manipulates him into playing family. He realises he's the destructive one, but she leaves before he can help.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "First real look at the mentor-damage BoJack did to Sarah Lynn; the relationship pays off later.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Hollywood D",
+          "text": "Falling for Diane, BoJack drunkenly steals the Hollywood 'D' as a gesture. Mr. Peanutbutter proposes first, and BoJack talks her into deleting his heartfelt voicemail.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The moment Diane becomes inaccessible; his romantic isolation starts here.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Herb's deathbed",
+          "text": "BoJack visits dying Herb Kazzaz to apologise for letting the network fire him decades ago. Herb refuses forgiveness and calls him a coward.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Cements BoJack's self-loathing and the unfinished business with Herb that echoes into S2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · 'Am I a good person?'",
+          "text": "Shattered on the drive home, BoJack kisses Diane; she pushes him off. He later begs her to tell him he's a good person, and she says nothing.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The question the whole show is built around, asked out loud for the first time.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Secretariat greenlit",
+          "text": "Diane's honest book becomes a hit and wins BoJack a Golden Globe. His dream role as Secretariat is finally greenlit — with Diane hired onto the writing team.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Puts BoJack in Secretariat and Diane back inside his orbit — the S2 setting.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "BoJack has finally landed the role he's chased his whole life, and Diane is on the film with him. But he asked her whether he's a good person and she wouldn't answer, and Herb is dying without ever having forgiven him.",
+        "questions": [
+          "Can BoJack be the man he thinks Secretariat was?",
+          "Where does Diane stand with him now they're on the same crew?",
+          "What will Herb's death do to him when it comes?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "BoJack Horseman",
+          "line": "Washed-up 90s sitcom horse, newly cast as Secretariat; asked Diane if he's a good person and got silence."
+        },
+        {
+          "name": "Diane Nguyen",
+          "line": "Ghostwrote BoJack's hit memoir and married Mr. Peanutbutter; now on the Secretariat writing team."
+        },
+        {
+          "name": "Mr. Peanutbutter",
+          "line": "BoJack's dopey Labrador sitcom rival, freshly married to Diane."
+        },
+        {
+          "name": "Princess Carolyn",
+          "line": "BoJack's Persian-cat agent and ex, forty and exhausted, running his career."
+        },
+        {
+          "name": "Todd Chavez",
+          "line": "BoJack's slacker roommate; BoJack quietly sabotaged his rock opera and Todd hasn't fully forgiven him."
+        },
+        {
+          "name": "Herb Kazzaz",
+          "line": "Dying creator of Horsin' Around; refused BoJack's apology for staying silent when the network fired him."
+        },
+        {
+          "name": "Sarah Lynn",
+          "line": "Adult pop star and BoJack's former child costar, addicted and damaged by the man who raised her on camera."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · 'You were born broken'",
+          "text": "BoJack starts Secretariat with forced positivity, but a call from his mother Beatrice apologising for birthing him 'broken' cracks the mask on the first day of shooting.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Beatrice enters the present-day story; the mother wound that anchors S4 begins here.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Herb dies",
+          "text": "Herb Kazzaz dies of cancer; the ex-Horsin' Around cast learn he wrote a scathing tell-all memoir Henry Winkler destroyed to protect his legacy.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Closes Herb's storyline but leaves the guilt permanent; his memory recurs in later seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Wanda & Cordovia",
+          "text": "Diane leaves for Cordovia on a philanthropy trip to escape her marriage. BoJack starts dating Wanda Pierce, an owl TV exec fresh out of a thirty-year coma.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Wanda shows BoJack's pattern with women; Cordovia removes Diane so she can come back changed.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The shot",
+          "text": "On set, director Kelsey Jannings coaxes the film's key emotional shot out of him — then is fired for it and replaced by a more compliant director.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Establishes Kelsey as an ally BoJack loses; she returns as a recurring beat later.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Wanda walks out",
+          "text": "Diane secretly returns disillusioned and hides at BoJack's house. The new director trivialises Secretariat; BoJack lashes out and Wanda finally leaves him.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Diane installing in BoJack's house begins the intimacy that fractures her marriage.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · New Mexico",
+          "text": "He drives to old flame Charlotte Carson in New Mexico, bonds with her teenage daughter Penny, and tries to sleep with her; Charlotte catches them and banishes him forever.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The seed of the scandal that eventually detonates his career — planted quietly, before anyone else knows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Replaced by CGI",
+          "text": "Home again, BoJack finds Secretariat has digitally replaced him; publicist Ana Spanakopita takes over his Oscar push; a jogger tells him it 'gets easier — you gotta do it every day'.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Ana and the Oscar campaign are the frame for all of S3; the jogger becomes the season's aspirational mantra.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "BoJack's face has been wiped out of his dream role, he's alone again after driving Wanda off, and Charlotte has banished him for what he almost did to her daughter. A polished publicist is now running his life toward an Oscar.",
+        "questions": [
+          "Will Ana actually deliver him an Oscar, or is he being used?",
+          "Can New Mexico stay buried?",
+          "Does the jogger's mantra work for someone like him?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "BoJack Horseman",
+          "line": "Digitally replaced in his own dream role; pinning his hopes on a new publicist and an Oscar he has no case for; secretly rattled by what happened in New Mexico."
+        },
+        {
+          "name": "Diane Nguyen",
+          "line": "Snuck back from Cordovia disillusioned; back with Mr. Peanutbutter, now ghostwriting tweets for Princess Carolyn."
+        },
+        {
+          "name": "Mr. Peanutbutter",
+          "line": "Hosting J.D. Salinger's celebrity quiz show; now knows Diane and BoJack once kissed."
+        },
+        {
+          "name": "Princess Carolyn",
+          "line": "Left her old firm to start her own agency; briefly dated Rutabaga Rabitowitz before he went back to his wife."
+        },
+        {
+          "name": "Todd Chavez",
+          "line": "Was stranded on an improv cruise ship until BoJack rescued him at the last minute."
+        },
+        {
+          "name": "Ana Spanakopita",
+          "line": "Steely new publicist running BoJack's Oscar campaign, sleeping with him on the side."
+        },
+        {
+          "name": "Charlotte Carson",
+          "line": "BoJack's old friend and near-love in New Mexico; caught him about to sleep with her teenage daughter and banished him for good."
+        },
+        {
+          "name": "Kelsey Jannings",
+          "line": "Director fired mid-Secretariat for coaxing a real performance out of BoJack; owes him nothing."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Oscar campaign",
+          "text": "Secretariat premieres to acclaim on a New York tour; publicist Ana Spanakopita drives BoJack's Oscar campaign and becomes his lover.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The Oscar chase is the frame around every choice BoJack makes this season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Sextina's abortion",
+          "text": "Diane has a private abortion, then accidentally tweets it from pop star Sextina Aquafina's account; Sextina rides it into a viral cause célèbre.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Pushes Diane's writing career toward feminism, which sets up her S4 political role.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Bradley's pitch",
+          "text": "Grown-up Horsin' Around costar Bradley Hitler-Smith pitches BoJack a sequel show; Ana rudely rejects it for him so he doesn't have to decide.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Sets up the sitcom lifeline BoJack falls back on when everything else collapses.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · 'It's you'",
+          "text": "Ana is exposed as coldly transactional; on nominations day BoJack learns he was never nominated, and Todd finally confronts him for sleeping with Emily — 'it's you'.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The season's thematic axis: BoJack is finally told the problem is himself, by the one friend who never says it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Sarah Lynn overdoses",
+          "text": "BoJack drags a sober Sarah Lynn onto a nine-city bender to make amends. He visits Penny at Oberlin and re-traumatises her; Sarah Lynn overdoses in his arms at the planetarium.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Sarah Lynn's death is the guilt BoJack carries into every following season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Todd & the governor",
+          "text": "Guilt-stricken, BoJack agrees to Bradley's show. Ex-wife Katrina courts Mr. Peanutbutter to run for governor; Todd realises he may be asexual, and accidentally becomes a millionaire.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Both S4 launchpads in one beat: Mr. Peanutbutter's political run and Todd's new life.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Wild horses",
+          "text": "BoJack drives his Tesla into the desert and lets go of the wheel — then sees a herd of wild horses running alongside him and watches them in awe.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The near-suicide ending sets the tone for BoJack's disappearance at the start of S4.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Sarah Lynn is dead in BoJack's arms and nobody knows he was there. He tried to end his life on a desert highway and stopped only when he saw a herd of wild horses running alongside his car.",
+        "questions": [
+          "Where does BoJack go from here — the wheel, or the horses?",
+          "Will Sarah Lynn's death ever come back on him?",
+          "What does Mr. Peanutbutter's governor's run do to his marriage with Diane?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "BoJack Horseman",
+          "line": "Nominated then not; killed Sarah Lynn by accident and told no one; drove into the desert to die before wild horses stopped him."
+        },
+        {
+          "name": "Diane Nguyen",
+          "line": "Now writes for a feminist website run by Ralph's sister after her Sextina abortion story landed; still married to Mr. Peanutbutter."
+        },
+        {
+          "name": "Mr. Peanutbutter",
+          "line": "Out of work since the game show ended; his ex-wife Katrina wants him to run for governor of California."
+        },
+        {
+          "name": "Princess Carolyn",
+          "line": "Runs her own management firm with quiet assistant Judah Mannowdog; happily settling in with Ralph."
+        },
+        {
+          "name": "Todd Chavez",
+          "line": "Suddenly a millionaire from selling his cab company; just came out to himself as possibly asexual."
+        },
+        {
+          "name": "Sarah Lynn",
+          "line": "Dead of an overdose in BoJack's arms at the planetarium; won a posthumous Oscar."
+        },
+        {
+          "name": "Katrina",
+          "line": "Mr. Peanutbutter's first wife, sharp-elbowed, now steering him toward the governor's race."
+        },
+        {
+          "name": "Ralph Stilton",
+          "line": "Princess Carolyn's warm mouse boyfriend, keen to start a family with her."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Peanutbutter for governor",
+          "text": "BoJack has vanished. In his absence Mr. Peanutbutter stumbles into running for governor of California against incumbent Woodchuck Coodchuck-Berkowitz.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The gubernatorial race dominates the season and drags Diane into a political voice.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Michigan lake house",
+          "text": "BoJack retreats to his mother's derelict Michigan lake house, befriends a grief-stricken dragonfly named Eddie, then tears the house down and drives home.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces the Sugarman family history that the season will excavate in the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Hollyhock arrives",
+          "text": "A teenage horse named Hollyhock turns up at his door claiming to be his daughter; a DNA test agrees. She wants him to help find her mother.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Redefines BoJack's family life and becomes the emotional through-line of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Beatrice moves in",
+          "text": "To keep Hollyhock around, BoJack takes in his dementia-stricken mother Beatrice. She mostly can't recognise him and calls him by his dead uncle's name.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Living with Beatrice is what makes the finale flashback reveal possible.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The diet pills",
+          "text": "Hollyhock overdoses; BoJack discovers Beatrice has been secretly spiking her coffee with weight-loss pills, and dumps his mother in a shabby nursing home.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The crisis that forces the truth about Hollyhock's mother into the open.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Not his daughter",
+          "text": "Driving there, Beatrice's memories fill in the picture: Hollyhock is BoJack's father Butterscotch's daughter by the family's old maid Henrietta. She is BoJack's sister, not his daughter.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The identity reveal reshapes BoJack's understanding of his father and gives him the one relative he can love without damage.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Philbert greenlit",
+          "text": "Princess Carolyn miscarries again and hides it from Ralph; her new dark-detective show Philbert is greenlit with BoJack starring; Hollyhock leaves happy to meet her mother.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Philbert becomes the S5 workplace; Princess Carolyn's private grief is left unresolved.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "BoJack finally has a sibling he can love, but he's put his mother in a bad nursing home and about to lead a TV show designed to reflect his worst traits. Princess Carolyn is quietly grieving another lost pregnancy Ralph doesn't know about.",
+        "questions": [
+          "Will Philbert give BoJack a fresh start, or a mirror he can't look away from?",
+          "Can Princess Carolyn ever have the child she wants?",
+          "Is Diane still Diane in the house Mr. Peanutbutter built for her?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "BoJack Horseman",
+          "line": "Back from the desert with a sister he never knew about; about to star in a show that scares him because it looks like him."
+        },
+        {
+          "name": "Diane Nguyen",
+          "line": "In a house she didn't want, working for a feminist blog, quietly unhappy in her marriage."
+        },
+        {
+          "name": "Mr. Peanutbutter",
+          "line": "Lost the governor's race; back to fumbling for a next career."
+        },
+        {
+          "name": "Princess Carolyn",
+          "line": "Just miscarried again and is hiding it from Ralph; producing Philbert with her firm."
+        },
+        {
+          "name": "Todd Chavez",
+          "line": "Comfortable in his asexuality; dating asexual axolotl Yolanda Buenaventura."
+        },
+        {
+          "name": "Hollyhock",
+          "line": "Revealed as BoJack's half-sister, not his daughter; just left for the airport to meet her birth mother Henrietta."
+        },
+        {
+          "name": "Beatrice Horseman",
+          "line": "BoJack's mother; dementia-stricken and just been dumped in a shabby nursing home."
+        },
+        {
+          "name": "Flip McVicker",
+          "line": "Neurotic screenwriter who pitched Philbert; about to steer BoJack's next show."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Philbert & Gina",
+          "text": "BoJack stars in Philbert, a dark detective drama that mirrors his worst traits; he starts sleeping with his costar Gina Cazador in secret.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Philbert is the season's setting, and the Gina relationship is what gets weaponised at the end.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Divorce",
+          "text": "Diane returns from a solo trip to Hanoi to find her divorce with Mr. Peanutbutter already finalised, and him already dating young waitress Pickles Aplenty.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Ends the Diane / Mr. Peanutbutter marriage that has framed the show since S1.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The recording",
+          "text": "Ex-publicist Ana Spanakopita quietly hands Diane a recording of BoJack drunkenly confessing he almost slept with underage Penny Carson in New Mexico.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The loaded gun the season places on the mantelpiece and eventually fires.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Free churro",
+          "text": "Beatrice dies. BoJack delivers a rambling half-hour eulogy at the wrong funeral parlour, unable to grieve a mother who never gave him what he needed.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Removes BoJack's oldest excuse for his damage and leaves him alone with it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Painkillers",
+          "text": "His prescription-painkiller habit deepens after a stunt injury; Hollyhock throws his stash out and BoJack drives into oncoming traffic. Two months on he's still hiding it from Gina.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The addiction underlies every choice he makes for the rest of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Strangling Gina",
+          "text": "At the Philbert premiere Diane confronts him about Penny and he admits it. Later on set, high and lost in the role, he actually strangles Gina before Mr. Peanutbutter pulls him off.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The on-screen manifestation of everything BoJack has been hiding; the point of no return.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Diane drives him to rehab",
+          "text": "Instead of writing an exposé, Diane drives BoJack to a rehab clinic and waves him inside. Mr. Peanutbutter proposes to Pickles; Princess Carolyn adopts a newborn porcupine.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Rehab is the S6 setting; three other characters land in their S6 positions in the same episode.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "BoJack has assaulted his costar on camera, and Diane has walked him into rehab rather than write about him. Mr. Peanutbutter is engaged to a woman he already cheated on; Princess Carolyn has a baby daughter she barely knows how to hold.",
+        "questions": [
+          "Can rehab actually change him?",
+          "Will Sarah Lynn's death finally surface, now that Penny nearly did?",
+          "Does Diane get to walk away from being his moral anchor?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "BoJack Horseman",
+          "line": "Just walked into rehab under Diane's escort; strangled his own costar on set and his career is hanging by a thread."
+        },
+        {
+          "name": "Diane Nguyen",
+          "line": "Divorced from Mr. Peanutbutter; heard the Penny recording and drove BoJack to rehab instead of writing the story."
+        },
+        {
+          "name": "Mr. Peanutbutter",
+          "line": "Just proposed to Pickles after being caught cheating with Diane; played a Philbert costar."
+        },
+        {
+          "name": "Princess Carolyn",
+          "line": "Adopted a newborn porcupine daughter alone; Philbert cancelled after BoJack's meltdown."
+        },
+        {
+          "name": "Todd Chavez",
+          "line": "Ousted his own accidental sex-robot creation Henry Fondle as CEO of WhatTimeIsItRightNow.com after it committed harassment."
+        },
+        {
+          "name": "Gina Cazador",
+          "line": "Philbert costar and ex-lover of BoJack; won't press charges over the strangling because it would end her rising career."
+        },
+        {
+          "name": "Pickles Aplenty",
+          "line": "Mr. Peanutbutter's new fiancée; young, hurt by his affair, agreed to marry him anyway."
+        },
+        {
+          "name": "Hollyhock",
+          "line": "BoJack's half-sister; last seen worried about his pills before leaving for Wesleyan."
+        }
+      ]
+    },
+    "6": {
+      "beats": [
+        {
+          "label": "S6 · Rehab",
+          "text": "BoJack does six months in rehab; learning Sarah Lynn was once a patient there is what finally makes him engage. He glimpses how alcohol has shaped his whole life.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The therapy work sets up his fragile new self at the start of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Grey hair",
+          "text": "He leaves clean, lets his dyed mane go grey, and takes a job teaching drama at Wesleyan to be near his sister Hollyhock.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "His last stab at a normal life before it collapses.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Diane in Chicago",
+          "text": "Diane travels with cameraman Guy and moves in with him in Chicago. On antidepressants she can't write her essay collection, so she quietly writes a girl detective novel instead.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Diane building a life away from BoJack is the mirror he doesn't get.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Reporters",
+          "text": "Journalists Paige Sinclair and Maximillian Banks investigate Sarah Lynn's overdose and trace it back to a bender with BoJack.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The mechanism that finally drags Sarah Lynn's death into public view.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Braxby exposes him",
+          "text": "BoJack lies through a soft first TV interview; a second one exposes that he waited seventeen minutes to call an ambulance while Sarah Lynn died. He becomes nationally hated.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The interview ends the rebuilt life he'd just started assembling.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Drowning dream",
+          "text": "Fired from Wesleyan and disowned by Hollyhock in a letter, BoJack breaks his sobriety, breaks into his old house, and nearly drowns in the pool — dreaming of dinner with the dead.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "The show's climax: BoJack faces the people he lost, and comes back.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Prison rooftop",
+          "text": "Sentenced to prison for breaking and entering, he's released for one night for Princess Carolyn's wedding to Judah. On a roof with Diane, she tells him the point is that it's hard and you keep living.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "The last conversation of the series — the closing word on what a life like his can be.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "BoJack is alive, sober, and serving fourteen months in prison. The people he hurt have built lives around his absence. He sat on a roof with Diane one last time and admitted the point of life is that it's hard and you just keep going.",
+        "questions": [
+          "What does BoJack do with the time he has left?",
+          "Is prison what he needed, or another cage?",
+          "Can any of these people ever really be in the same room again?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "BoJack Horseman",
+          "line": "Serving fourteen months for breaking and entering; grey and mostly clean; released for one night for a wedding on the roof with Diane."
+        },
+        {
+          "name": "Diane Nguyen",
+          "line": "Married cameraman Guy in Houston, published her girl detective novel, had her final rooftop conversation with BoJack."
+        },
+        {
+          "name": "Mr. Peanutbutter",
+          "line": "In therapy for the first time; single after Pickles left him for Joey Pogo; wrote a memoir."
+        },
+        {
+          "name": "Princess Carolyn",
+          "line": "Married Judah Mannowdog; raising her daughter Ruthie; still running the firm."
+        },
+        {
+          "name": "Todd Chavez",
+          "line": "Living with girlfriend Maude in a new apartment; finally reconnected with his mother Helen."
+        },
+        {
+          "name": "Hollyhock",
+          "line": "Cut BoJack off with a letter he only opened at his lowest point."
+        },
+        {
+          "name": "Pickles Aplenty",
+          "line": "Left Mr. Peanutbutter for pop star Joey Pogo after the Diane affair surfaced."
+        },
+        {
+          "name": "Guy",
+          "line": "Diane's bison cameraman turned husband; brought his son Sonny into her life."
+        }
+      ]
+    }
+  }
+}

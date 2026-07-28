@@ -1,0 +1,307 @@
+{
+  "slug": "locke-key",
+  "generatedFor": "Locke & Key",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Keyhouse",
+          "text": "After Rendell's murder, Nina moves the kids into Keyhouse. Bode hears whispers, finds magical keys, and meets a woman in the well calling herself Echo.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the show's engine: Bode as the keys' listener, and the antagonist waiting in the well.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Echo escapes",
+          "text": "Bode hands Echo the Anywhere Key; she escapes the well, adopts human form, and starts hunting the other keys — using Sam in prison as her weapon.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The antagonist is loose in the world with a puppet, framing the season's threat.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Inside their heads",
+          "text": "Kinsey and Tyler learn the keys' powers by walking inside each other's minds. Kinsey buries the manifestation of her fear to remake herself; Tyler falls for classmate Jackie.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Kinsey's personality shift and the Tyler–Jackie thread drive most of season 2's emotional beats.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Hostage at Keyhouse",
+          "text": "Sam takes the Lockes hostage demanding the Head Key. Dodge stabs him, seizes every key she can find, and reveals that only the Lockes are able to refuse her.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Sets the rule that shapes every future conflict: keys must be given willingly, and only by a Locke.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Black Door truth",
+          "text": "Ellie reveals Rendell's friends opened the Black Door and a demon took her boyfriend Lucas. She later used the Echo Key trying to bring him back — and got Dodge instead.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The mythology behind Dodge and the Black Door — the frame every later demon storyline is built on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Omega in the urn",
+          "text": "Rendell hid the Omega Key inside his own head; Nina's grief-drunk rage smashes his urn and drops it into the family's hands right when Dodge needs it most.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The Omega Key opens the Black Door — the object every side is now fighting over.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Wrong body through the door",
+          "text": "The Lockes throw Dodge through the Black Door — but she disguised Ellie in her own form, so Ellie went instead. Dodge is now Kinsey's boyfriend Gabe, and Eden is possessed too.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The entire premise of season 2: Dodge is inside the family's trust as Gabe, and Ellie is stranded on the other side.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Lockes think they've won. Dodge is actually living inside Kinsey's new boyfriend Gabe, Eden was also possessed at the Black Door, and Ellie — Rufus's mother — was sent through it in Dodge's disguised form.",
+        "questions": [
+          "How long can Dodge play Gabe before Kinsey sees through her?",
+          "What can Dodge do now she has a Locke on her arm and the family's trust?",
+          "Is Ellie still alive on the far side of the Black Door?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Kinsey Locke",
+          "line": "Middle child; used the keys to bury her own fear and remake herself socially; now dating Gabe, unaware he is Dodge."
+        },
+        {
+          "name": "Gabe",
+          "line": "The sweet new boyfriend Kinsey met at school; secretly Dodge inhabiting a new body."
+        },
+        {
+          "name": "Bode Locke",
+          "line": "Youngest son; the one who hears the keys and keeps finding them — the family's magical ear."
+        },
+        {
+          "name": "Tyler Locke",
+          "line": "Eldest son; blames himself for his father's death and is falling for classmate Jackie."
+        },
+        {
+          "name": "Nina Locke",
+          "line": "Widowed mother who forgets magic as adults do; has started drinking to cope with everything she can't explain."
+        },
+        {
+          "name": "Duncan Locke",
+          "line": "Rendell's younger brother; his memories of the keys' magic were wiped by his brother's friends when he was a boy."
+        },
+        {
+          "name": "Ellie",
+          "line": "Rendell's old friend and Rufus's mother; thrown through the Black Door in Dodge's disguised form."
+        },
+        {
+          "name": "Eden Hawkins",
+          "line": "A mean-girl classmate hit by a demon bullet at the Black Door; now serves Dodge alongside Gabe."
+        },
+        {
+          "name": "Jackie",
+          "line": "Tyler's girlfriend; almost 18, the age at which Locke lore says adults forget the magic."
+        },
+        {
+          "name": "Erin Voss",
+          "line": "Last of Rendell's living friends; catatonic in a psychiatric hospital, trapped inside her own mind."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · New arrivals",
+          "text": "Duncan moves into Keyhouse for the summer. Bode befriends new classmate Jamie, whose father Josh is a history teacher Nina meets while renovating Matheson Academy.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the Bennetts and puts Nina in a workplace romance — the domestic scaffolding of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Whispering Iron",
+          "text": "Gabe and Eden collect Whispering Iron from the sea caves to forge their own key, while Gabe hides his true nature from Kinsey behind their new relationship.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets up how keys are actually made and puts Dodge on the path to the Demon Key that drives the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Freeing Erin, freeing Duncan",
+          "text": "Tyler and Kinsey free the long-frozen Erin from inside her own head; she reveals a Memory Key exists and helps restore Duncan's lost memories.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Duncan getting his magic memories back is what makes the season's key-forging arms race possible.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Gabe is Dodge",
+          "text": "Kinsey and Scot slip inside Eden's mind and discover she's a demon and Gabe is Dodge. Erin tries to face Dodge alone and Gabe strangles her.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The season's central deception finally breaks, and Erin's death makes the stakes lethal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Demon Key vs Alpha Key",
+          "text": "Gabe forces Duncan to forge the Demon Key, which turns humans into demon soldiers. Tyler counters by crafting the Alpha Key, which can unmake them.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The Alpha Key is the only weapon that ever works on a demon — it defines the endgame of this season and the next.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Jackie dies",
+          "text": "Jackie forgets the magic despite Tyler's efforts, and Gabe turns her into a demon. Tyler uses the Alpha Key to free her, and she dies in his arms. Ellie returns from the Black Door.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Jackie's death is what breaks Tyler away from the family; Ellie's return closes the Black Door loop from season 1.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Gideon rises",
+          "text": "The Lockes kill Dodge with the Alpha Key. Tyler leaves for Montana, choosing to forget. Eden uses the Echo Key to summon Gideon, a worse demon who escapes with the Anywhere Key.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Dodge is dead but a bigger demon is loose in the world — the entire premise of season 3.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Dodge is dead, but Eden summoned an older, worse demon named Gideon at the well and got thrown down it for her trouble. Gideon is loose in Matheson with the Anywhere Key, and Tyler — grieving Jackie — has moved to Montana refusing to remember any of it.",
+        "questions": [
+          "What does Gideon want, and how much bigger a threat is he than Dodge was?",
+          "Can the Lockes fight demons without Tyler, who has chosen to forget?",
+          "Is Ellie truly back to herself after months trapped beyond the Black Door?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Gideon",
+          "line": "The demon Eden summoned at the well; a 1775 British captain in echo form, far more powerful than Dodge and loose with the Anywhere Key."
+        },
+        {
+          "name": "Kinsey Locke",
+          "line": "Killed Dodge with her friends; back on uncertain terms with Scot after months of being dated by a demon."
+        },
+        {
+          "name": "Bode Locke",
+          "line": "Still the keys' listener; closest friends with new classmate Jamie, whose dad is dating his mother."
+        },
+        {
+          "name": "Tyler Locke",
+          "line": "Helped forge the Alpha Key, lost Jackie to it, and left for Montana refusing to have his magic memories restored."
+        },
+        {
+          "name": "Nina Locke",
+          "line": "Sober, renovating Matheson Academy, and now dating the school's history teacher Josh."
+        },
+        {
+          "name": "Duncan Locke",
+          "line": "Memories restored; the only living Locke who can forge new keys, coerced into making the Demon Key for Gabe."
+        },
+        {
+          "name": "Ellie",
+          "line": "Returned from beyond the Black Door and reunited with Rufus, her true form restored."
+        },
+        {
+          "name": "Josh Bennett",
+          "line": "Matheson history teacher and Nina's new partner; a descendant of a Revolutionary War soldier who fought at Keyhouse."
+        },
+        {
+          "name": "Jamie Bennett",
+          "line": "Josh's daughter; Bode's best friend and confidante about the keys."
+        },
+        {
+          "name": "Scot Cavendish",
+          "line": "Kinsey's Savini Squad friend; leaving for film school in England."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Snow Globe demons",
+          "text": "Ellie returns to Matheson. Bode finds a Snow Globe Key hidden in a miniature Keyhouse, freeing two demons trapped inside — who promptly join Gideon in the woods.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Gideon starts building an army, and a new key sets up how the season's mechanics work.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Wedding crashers",
+          "text": "Duncan and Brian marry at Keyhouse. Gideon and two revived echo-soldiers, James and Samuel, crash the reception hunting keys, and only seize the Plant Key.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Establishes Gideon's echo army and pulls Tyler home to fight; the wedding is the last quiet moment.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Dodge in Bode's body",
+          "text": "Bode finds the Timeshift Key and accidentally drags past-Dodge into the present. She realises she can take keys from his hands and possesses his body, leaving Bode a ghost.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The season's core reversal: the villain the family already killed is walking around wearing their youngest.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Dodge inside the family",
+          "text": "Wearing Bode's face, Dodge moves through the family unnoticed and locates the keys in the Harlequin chest. Tyler returns from Montana and asks Kinsey to restore his memories.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Dodge weaponises the family's trust; Tyler getting his memories back puts him back in the fight.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Bode is erased",
+          "text": "Nina finds Bode's real body. The Lockes chain Dodge, who admits Gideon plans to merge both worlds. The Timeshift Key then expires, yanking Dodge back and erasing Bode's body.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The stakes and villain's motive both crystallise here, and Bode is stranded with no body to return to.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Bode reborn",
+          "text": "Bode as a ghost teams up with Sam Lesser's spirit, who's been aiding the family in penance. He possesses a bird, and Kinsey uses the Animal Key to return him to boy form.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Bode gets a body back and Sam is redeemed — clearing the deck for the finale confrontation with Gideon.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The last key, the last portal",
+          "text": "Gideon stabs Gordie Shaw for the final key, hidden in his mind. The Lockes enter Gordie's head to grab it; Sam stays to fight Gideon and dies trapped when Gordie flatlines.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Every remaining key is now in play and Gideon opens his portal — the setup for the show's endgame.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Kinsey stabs Gideon with the Alpha Key and Nina shoves him into his own portal. The Lockes throw the keys through to seal it, first using the Memory Key so they'll never forget the magic. Yet whispering can still be heard at Keyhouse.",
+        "questions": [
+          "Whose whispering still stirs in Keyhouse — and what keys remain to be found?",
+          "Can the Lockes stay away from magic when they alone in the world remember it?",
+          "What life will each of them build now that the fight is over?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Kinsey Locke",
+          "line": "Killed Gideon with the Alpha Key; going overseas for college to be near Scot."
+        },
+        {
+          "name": "Bode Locke",
+          "line": "Restored to his own body after weeks as a ghost; has finally accepted Josh into the family."
+        },
+        {
+          "name": "Tyler Locke",
+          "line": "Got his magic memories back and returned to Montana, but promised to stay in closer touch."
+        },
+        {
+          "name": "Nina Locke",
+          "line": "Together with Josh; the one who shoved Gideon through his own portal."
+        },
+        {
+          "name": "Duncan Locke",
+          "line": "Happily married to Brian, memories intact."
+        },
+        {
+          "name": "Ellie",
+          "line": "Back to coaching at Matheson Academy and reunited with Rufus."
+        },
+        {
+          "name": "Josh Bennett",
+          "line": "Fully in Nina and Bode's life."
+        },
+        {
+          "name": "Scot Cavendish",
+          "line": "Kinsey's boyfriend, home from film school."
+        }
+      ]
+    }
+  }
+}

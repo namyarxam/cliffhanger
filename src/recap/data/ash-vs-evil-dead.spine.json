@@ -1,0 +1,267 @@
+{
+  "slug": "ash-vs-evil-dead",
+  "generatedFor": "Ash vs Evil Dead",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Ash reawakens the curse",
+          "text": "Working a dead-end retail job, Ash gets stoned and reads from the Necronomicon during a hookup, unwittingly unleashing the Deadite plague on his town again.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up the entire premise: the plague only exists because Ash reopened the book, and every following character is responding to what he restarted.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Two hunters close in",
+          "text": "State detective Amanda Fisher hunts Ash for the killings, while a mysterious woman named Ruby — who claims she wrote the book — quietly tracks him too.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces both of the season's outside players. Ruby becomes the ongoing antagonist; Amanda becomes the ally whose death anchors the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A team forms",
+          "text": "Coworkers Pablo and Kelly force Ash to fight after his own neighbor turns; a Deadite wearing Kelly's mother's face soon confirms the horror is already spreading.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Establishes the core trio that carries every future season and gives Kelly a personal loss that binds her to the fight.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Brujo's answer",
+          "text": "Pablo's shaman uncle gives Ash a vision — he must bury the Necronomicon at the original cabin. The Brujo dies exorcising a demon from a possessed Kelly.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Sets the season's destination (the cabin) and hands Pablo the Santa Muerte medallion that begins his own supernatural arc.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Amanda dies at the cabin",
+          "text": "Amanda finally believes Ash and joins the group. At the cabin, an evil duplicate of Ash impales her on a deer mount before the real Ash can save her.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Removes Ash's institutional ally and shows the cabin itself weaponising his own image against him, priming the finale reveal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Ruby's true face",
+          "text": "Ruby reveals she wrote the Necronomicon. Rather than destroy it, she rips off its face and fuses it to Pablo, using him to unleash the evil worldwide.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Flips Ruby from cleaner to architect and marks Pablo with the book — the single event that redefines every relationship going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The deal",
+          "text": "Ash accepts Ruby's truce — she may release the spirits she claims to control if she leaves him alone. He drives to Florida as sinkholes open across the Earth.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "This is the compromise the whole next season detonates. Ash walks away with the world already breaking, on a promise from someone who has lied about everything.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ash has fled toward retirement in Florida, having bargained with Ruby — the true author of the Necronomicon — to let her release an evil she promises she can control. Sinkholes are already tearing open around the world.",
+        "questions": [
+          "Can Ruby actually control what she's unleashed?",
+          "What has she done to Pablo now that the book's face is bonded to him?",
+          "How long before Ash is forced to fight again?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Ash Williams",
+          "line": "Aging Deadite fighter reluctantly back in the game after triggering the curse himself; now living on a Florida beach in denial."
+        },
+        {
+          "name": "Pablo Simon Bolivar",
+          "line": "Loyal coworker and nephew of the Brujo, marked by the Necronomicon — its severed face is now fused to him."
+        },
+        {
+          "name": "Kelly Maxwell",
+          "line": "Hardened coworker who lost her mother to a Deadite and was briefly possessed by Eligos; fully committed to Ash's fight."
+        },
+        {
+          "name": "Ruby Knowby",
+          "line": "Revealed as the author of the Necronomicon; brokered a truce with Ash so she could release the evil she claims to command."
+        },
+        {
+          "name": "Amanda Fisher",
+          "line": "State detective who finally allied with Ash at the cabin and was killed there by his evil duplicate."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Retirement broken",
+          "text": "Deadites attack Ash's Florida retirement, forcing him and the gang back to his hometown of Elk Grove, where his father Brock openly resents his cowardice.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the season in the place Ash spent decades running from and introduces his father, whose approval and death shape everything he does here.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Uneasy alliance with Ruby",
+          "text": "They find Ruby wounded and hunted by her own demon children. She reveals the real threat is her ex-husband Baal, and grudgingly allies with Ash.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Flips Ruby from villain to ally and names the season's actual antagonist — every subsequent choice hinges on trusting her enough to fight him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Baal wears skin",
+          "text": "Baal arrives on Earth killing to wear people's flesh. He can now pose as anyone in the group and turns Elk Grove's own townspeople against Ash.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Establishes Baal's core threat — no one in the room can be trusted — which drives the paranoia of every subsequent episode.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Pablo becomes the vessel",
+          "text": "The spell to banish Baal begins emerging on Pablo's skin. Ruby admits birthing her children cost her immortality, making Pablo their one real shot.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Puts Pablo at the centre of the endgame and forecasts that beating Baal will cost him — the causal setup for his death in the finale run.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Asylum trap, Pablo cut in half",
+          "text": "Baal traps Ash inside an asylum illusion trying to break him. Ash plays along and springs a trap — but Baal slashes Pablo in half as he is banished.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The banishment costs Pablo his life, which is the sole motive for the time-travel gamble that reshapes the season's ending.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Time travel goes wrong",
+          "text": "To resurrect Pablo, the gang travels to 1982 to stop young Ash finding the Necronomicon — and lands in a corrupted alternate timeline instead.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The alternate timeline is what lets a second Ruby exist to survive the finale, so this beat is the mechanism behind the closing shot.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Hero, with a catch",
+          "text": "Ash kills Baal, Pablo revives, and Elk Grove hails Ash as a hero — but an alternate Ruby has slipped through, and the Necronomicon is picked up by a stranger.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Closes Baal, resurrects Pablo, and seeds the two threats — surviving Ruby and the found book — that reopen the story in the next season.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Elk Grove finally reveres Ash as its hero, but an alternate-timeline Ruby watches him from afar and the Necronomicon has been picked up by an unknown traveler at the ruins of the cabin.",
+        "questions": [
+          "What does this surviving Ruby want now that her original was killed?",
+          "Who has the book, and how far will they let it spread?",
+          "Can Ash actually live as a hero in the town that ran him out?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Ash Williams",
+          "line": "Finally hailed a hero by his hometown after decades of blame; still the only person who knows how to fight the evil."
+        },
+        {
+          "name": "Pablo Simon Bolivar",
+          "line": "Cut in half by Baal and brought back through the timeline swap; devoted to Ash and increasingly tuned to the supernatural."
+        },
+        {
+          "name": "Kelly Maxwell",
+          "line": "Hardened field fighter who has grown closest to Ruby-as-ally over the season and lost more of her old life along the way."
+        },
+        {
+          "name": "Ruby Knowby",
+          "line": "The alternate-timeline Ruby who slipped through the swap and now watches Ash from afar; the original was killed by her past self."
+        },
+        {
+          "name": "Brock Williams",
+          "line": "Ash's estranged father, killed mid-season by the possessed Delta after finally coming to accept his son."
+        },
+        {
+          "name": "Baal",
+          "line": "Ruby's ex-husband and a shape-wearing skin demon; banished back to hell by Pablo's spell."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · The daughter he never knew",
+          "text": "Ash learns his former lover Candace bore him a daughter, Brandy. He races to save her from a Deadite ambush, but Candace is decapitated in front of her.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the person the whole season is built around; Brandy's grief and distrust of Ash is the emotional axis every antagonist manipulates.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ruby's mirror-image spawn",
+          "text": "Ruby impregnates herself with Ash's blood and births a spawn made in his image, planning to use it to poison Brandy against her real father.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets up the specific weapon Ruby will use on Brandy — a fake Ash — which pays off in the school dance turn against him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Knights of Sumeria and the Rift",
+          "text": "An ancient order — the Knights of Sumeria — arrive hunting the book. They reveal that a Rift can be opened to the Deadlands, the realm between our world and Hell.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The Rift is the season's central mechanism: it's how Ash later crosses over to retrieve Kelly and Brandy, and how the Dark Ones eventually arrive.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Pablo becomes the Brujo",
+          "text": "Brandy stabs the possessed Pablo with the Kandarian Dagger; he passes through the afterlife and returns as the new Brujo, spiritually bound to the Necronomicon.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Pablo's new bond to the book is what lets him read the Sumerian text, open the Rift, and see events remotely — every plan hereafter depends on it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Kelly killed, body hijacked",
+          "text": "Ruby kills Kelly with the Kandarian Dagger and installs the imprisoned sorceress Kaya inside her body to sabotage Ash from within his own group.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Kelly's death drives the Rift rescue in the finale and Kaya-in-Kelly is the traitor inside the group for the final act.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Brandy dies for Ash",
+          "text": "At the school dance Ruby's Ash-clone terrorises Brandy into doubting her father. When Ruby hurls the dagger at Ash, Brandy leaps in front of it and dies.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Brandy's death is the second body needed to justify Ash crossing the Rift and directly triggers his descent into the Deadlands.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Kandar rises, Ash wakes in the future",
+          "text": "The Dark Ones claim Ruby's soul and summon Kandar the Destroyer. Ash slays it with the Kandarian Dagger and wakes years later in a postapocalyptic future.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Removes Ruby as an antagonist and delivers the time jump that resets Ash's world and premise — the entire launchpad for anything that comes next.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ash saved the world by killing Kandar the Destroyer, but woke injured and alone in a postapocalyptic future — met by a stranger named Lexx and a heavily modified Delta 88, with no sign of Brandy, Kelly, or Pablo.",
+        "questions": [
+          "What happened to the world while Ash was out?",
+          "Where are Brandy, Kelly, and Pablo now?",
+          "Who is Lexx, and why has she come for him?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Ash Williams",
+          "line": "Killed Kandar with the Kandarian Dagger and woke in a wrecked future with a new augmented right hand."
+        },
+        {
+          "name": "Brandy",
+          "line": "Ash's daughter; died at the school dance protecting him, was brought back through the Rift, and evacuated with the survivors."
+        },
+        {
+          "name": "Kelly Maxwell",
+          "line": "Killed by Ruby and revived through the Rift; survives the finale evacuation, though her body was briefly worn by the sorceress Kaya."
+        },
+        {
+          "name": "Pablo Simon Bolivar",
+          "line": "The new Brujo, spiritually bound to the Necronomicon and able to see through its eyes; survived the finale."
+        },
+        {
+          "name": "Ruby Knowby",
+          "line": "The alternate-timeline Ruby; scheming with Kaya until the Dark Ones arrived and claimed both their souls."
+        },
+        {
+          "name": "The Dark Ones",
+          "line": "Ancient masters of the Necronomicon who reclaimed the book and summoned Kandar the Destroyer before Ash cut him down."
+        },
+        {
+          "name": "Lexx",
+          "line": "Augmented woman from the postapocalyptic future who found the injured Ash and is now driving him out to explain what has happened."
+        }
+      ]
+    }
+  }
+}

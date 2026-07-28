@@ -32,11 +32,24 @@ export const TITLES = new Set([
 ]);
 
 /** Name tokens, lowercased, titles and short words removed. */
-export const tokens = s =>
-  String(s ?? '')
+export const tokens = s => {
+  const cleaned = String(s ?? '')
     .toLowerCase()
+    // Drop parenthetical role qualifiers before tokenising. TMDB credits voice
+    // roles as "Vi (voice)", so without this every animated character shares
+    // the token "voice" — owned by the whole cast, it identifies nobody, and it
+    // is the only surviving token for a short name like "Vi" once the length
+    // filter runs. Also covers "(uncredited)", "(as Foo)", etc.
+    .replace(/\([^)]*\)/g, ' ')
     .split(/[^a-z]+/)
-    .filter(t => t.length > 2 && !TITLES.has(t));
+    .filter(Boolean);
+  const kept = cleaned.filter(t => t.length > 2 && !TITLES.has(t));
+  // Never strip a name down to nothing. A genuinely short name — "Vi", "Bo",
+  // "CJ" — is all a card has to match on, and dropping its only token means it
+  // can never match anything. Fall back to the un-length-filtered tokens so the
+  // short name survives, without loosening the length rule for normal names.
+  return kept.length ? kept : cleaned.filter(t => !TITLES.has(t));
+};
 
 
 /**

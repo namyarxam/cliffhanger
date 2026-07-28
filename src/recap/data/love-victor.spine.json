@@ -1,0 +1,315 @@
+{
+  "slug": "love-victor",
+  "generatedFor": "Love, Victor",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · New kid, old secret",
+          "text": "Victor moves from Texas to Atlanta and starts messaging Simon Spier for advice on figuring out his sexuality while pretending to fit in at Creekwood High.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the show's premise and the Simon lifeline that frames every later choice.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Dating Mia",
+          "text": "To seem normal, Victor asks Mia out and they become the school's new couple, even as his crush on out classmate and coworker Benji quietly deepens.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Sets up the love triangle that drives every relationship beat this season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The affair reveal",
+          "text": "Victor and Pilar discover their mother Isabel had an affair with Armando's old boss, and learn the family only moved to Atlanta to rebuild after it.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Reframes the parents' marriage as fragile and explains the household tension that persists.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The motel kiss",
+          "text": "Stranded overnight on a work trip, Victor kisses Benji, who pushes him away because of his boyfriend Derek but tells him not to hate himself for it.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "First physical acknowledgment of Victor's sexuality; the secret that ends the Mia relationship.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Out to Felix, gone to New York",
+          "text": "Victor comes out to Felix and secretly visits Simon in New York, where he meets an accepting queer community and stops running from who he is.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The internal turn that makes coming out to everyone else possible.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Spring Fling fallout",
+          "text": "Benji and Derek break up and Benji kisses Victor, but Mia sees it; she confronts Victor at Spring Fling and their relationship ends in front of the school.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Blows up the cover story and forces Victor into honesty at home.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Coming out at home",
+          "text": "Armando and Isabel announce they are separating, and in the same moment Victor tells his parents he is gay.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The cliffhanger event: the entire family enters the next season mid-reaction.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Victor comes out to his parents on the same night they announce their separation, with no idea how either of them will respond. Benji is newly single and waiting, Mia is heartbroken, and the family is fractured.",
+        "questions": [
+          "How will Isabel and Armando react to Victor being gay?",
+          "Can Victor and Benji actually be together now that both are free?",
+          "Is there any way back to friendship with Mia after being publicly humiliated?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Victor Salazar",
+          "line": "Junior transfer from Texas who has just come out to his parents after a year of pretending to date Mia while falling for Benji."
+        },
+        {
+          "name": "Benji Campbell",
+          "line": "Openly gay Brasstown coworker who broke up with his boyfriend Derek and confessed feelings for Victor."
+        },
+        {
+          "name": "Mia Brooks",
+          "line": "Victor's ex-girlfriend, blindsided by the Benji kiss and now aware the whole relationship was cover."
+        },
+        {
+          "name": "Felix Weston",
+          "line": "Victor's neighbour and best friend, the first person he came out to; now publicly dating Lake."
+        },
+        {
+          "name": "Pilar Salazar",
+          "line": "Victor's younger sister; discovered the affair with him and knows about the Benji situation."
+        },
+        {
+          "name": "Isabel Salazar",
+          "line": "Victor's devout mother, whose past affair caused the move and who has just heard her son is gay."
+        },
+        {
+          "name": "Armando Salazar",
+          "line": "Victor's father, newly separated from Isabel and warned earlier that his younger son Adrian might also be gay."
+        },
+        {
+          "name": "Simon Spier",
+          "line": "Victor's off-screen mentor via DMs, the reason Victor has survived the year emotionally intact."
+        },
+        {
+          "name": "Lake Meriwether",
+          "line": "Mia's best friend, now publicly dating Felix after a season of hiding it."
+        },
+        {
+          "name": "Andrew",
+          "line": "Basketball teammate who bullied Victor early but has fallen for Mia; a wild card as she becomes single."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Isabel can't accept it",
+          "text": "Armando moves out and grows supportive of Victor and Benji, but devout Isabel keeps freezing them out, making Victor's home life the season's central wound.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The mother-son rift is the engine of every family beat this season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Publicly out, publicly together",
+          "text": "After defending Mia from a slut-shaming rumor, Victor comes out at school and he and Benji share their first public kiss in the hallway.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Ends Victor's closet arc and reframes the season around what being out actually costs.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Quits the team, loses the anchor",
+          "text": "Teammates want Victor out of the locker room and Andrew fails to back him, so Victor quits basketball, cutting himself off from his main social footing.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Sets up Andrew's guilt arc and Victor's drift, both of which reshape friendships.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Sex cabin, saying it back",
+          "text": "At Benji's family cabin Victor tells Benji he loves him and they have sex for the first time; Felix and Lake also sleep together.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Emotional peak of the Victor-Benji relationship, which frames how badly the later fractures land.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Rahim arrives",
+          "text": "Pilar's friend Rahim comes to Victor for coming-out advice; Isabel unexpectedly helps him, and Victor and Rahim bond as gay teens of colour.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Introduces the third point of the triangle that dominates the finale and beyond.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Caught, outed, cracked open",
+          "text": "Isabel walks in on Victor and Benji having sex; in the fight Benji outs Victor to little brother Adrian, and Victor asks Benji to leave.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The break that pushes Benji and Victor into 'a break' and pushes Isabel into finally choosing her son.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Wedding, the choice",
+          "text": "Isabel quits her homophobic church for Victor; at Mia's father's wedding Rahim kisses Victor and asks him to choose, and Victor walks off to pick one of them.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The literal cliffhanger the next season resolves.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Victor has thanked Simon and hung up, ready to run to whichever boy he has chosen — Benji, who is fragile and pulling away, or Rahim, who has just kissed him. The audience is not told which.",
+        "questions": [
+          "Which boy does Victor actually run to?",
+          "Can Benji stay sober now that he and Victor are 'on a break'?",
+          "Have Armando and Isabel really rebuilt enough to give their marriage another try?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Victor Salazar",
+          "line": "Out at school and running from a wedding toward either Benji or Rahim, no longer leaning on Simon."
+        },
+        {
+          "name": "Benji Campbell",
+          "line": "Victor's boyfriend of the year, a recovering alcoholic whose year-long sobriety Victor only just learned about, currently on a break from Victor."
+        },
+        {
+          "name": "Rahim",
+          "line": "Pilar's friend and newly out gay Muslim classmate who has just kissed Victor and asked him to choose."
+        },
+        {
+          "name": "Isabel Salazar",
+          "line": "Has quit her church and finally, actively accepts Victor; she and Armando have agreed to try their marriage again."
+        },
+        {
+          "name": "Armando Salazar",
+          "line": "Back with Isabel after months apart; the supportive parent throughout Victor's coming out."
+        },
+        {
+          "name": "Pilar Salazar",
+          "line": "Just kissed Felix, who is living with the Salazars after his mother was committed."
+        },
+        {
+          "name": "Felix Weston",
+          "line": "Broke up with Lake after his mother's mental health crisis; now living with Victor's family and tangled up with Pilar."
+        },
+        {
+          "name": "Lake Meriwether",
+          "line": "Dumped by Felix; heading to Mia's father's wedding uncertain of where she stands."
+        },
+        {
+          "name": "Mia Brooks",
+          "line": "In a real relationship with Andrew; has skipped her father's wedding to sneak off and meet her estranged mother."
+        },
+        {
+          "name": "Andrew",
+          "line": "Mia's boyfriend after making amends with Victor; on the road with her to find her mother."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Chose Benji, then lost him",
+          "text": "Victor reveals he ran to Benji, but Benji admits he has been drinking again and checks into rehab, then returns and breaks up with Victor for his own recovery.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Resets Victor as single and sets Benji's sobriety as the wall between them all season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Nick, the rebound",
+          "text": "Isabel and Armando set Victor up at an LGBT-friendly church with Nick, and Victor's rebound becomes a real, if lopsided, hookup relationship.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Nick is the season's decoy love interest and the reason Benji thinks Victor has moved on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Lucas is Benji",
+          "text": "Under a fake dating-app persona 'Diego', Victor matches with 'Lucas' and shows up to find Benji; Benji's father then asks Victor to stay away, blaming him for Benji's relapses.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Confirms the pull is mutual and installs the father as the obstacle keeping them apart.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Pilar and Felix collapse",
+          "text": "After Pilar's parents forbid the relationship and Felix sides with them rather than push back, Pilar breaks up with him, feeling chosen last.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Frees Felix to drift toward Lake, which sets up the season's other big romantic pivot.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Mia's leaving, Lake's leaving",
+          "text": "Mia decides to move to California to be with her father and new baby brother, and Lake breaks up with Lucy, who is graduating early and moving to Portland.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Removes two of the core friend group from Creekwood as of the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Brave speech, clean slate",
+          "text": "Accepting a bravery award, Victor gives a speech about being scared and doing it anyway; it makes clear he still loves Benji, so Nick ends things.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Wipes the board of Nick and drives every finale pairing.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ferris wheel, together",
+          "text": "Mia commits to long-distance with Andrew, Lake reunites with Lucy, Lake and Felix kiss but choose to stay friends, and Benji comes back for Victor on the Ferris wheel.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The series' final resting position for every relationship.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The season and series end with Victor and Benji reunited on the Ferris wheel where the show began, and every friend paired off or moving on to a new city.",
+        "questions": [
+          "Can Benji stay sober with Victor back in his life?",
+          "Will Mia and Andrew survive the distance between Creekwood and California?",
+          "What happens to Felix and Pilar now that Lake has chosen only friendship?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Victor Salazar",
+          "line": "Reunited with Benji at the Ferris wheel after a full season of breakup, a rebound with Nick, and a bravery award he almost turned down."
+        },
+        {
+          "name": "Benji Campbell",
+          "line": "Post-rehab and back with Victor after nearly leaving for boarding school; sobriety is still fragile."
+        },
+        {
+          "name": "Nick",
+          "line": "Victor's church setup turned hookup turned brief boyfriend; ended it once he saw Victor still loved Benji, now with closeted classmate Liam."
+        },
+        {
+          "name": "Rahim",
+          "line": "Victor's friend and Benji's calculus tutor this season; now dating a waiter named Connor after refusing to hide again."
+        },
+        {
+          "name": "Mia Brooks",
+          "line": "Moving to California to be with her father and baby brother, doing long-distance with Andrew."
+        },
+        {
+          "name": "Andrew",
+          "line": "Mia's boyfriend, committed to long-distance after she leaves Creekwood."
+        },
+        {
+          "name": "Felix Weston",
+          "line": "Broke up with Pilar after failing to stand up to her parents; kissed Lake but they chose to stay friends."
+        },
+        {
+          "name": "Pilar Salazar",
+          "line": "Ended things with Felix over his deference to her family; single going into the future."
+        },
+        {
+          "name": "Lake Meriwether",
+          "line": "Back together with Lucy, who will move into Lake's mother's extra condo after graduation."
+        },
+        {
+          "name": "Isabel and Armando Salazar",
+          "line": "Fully back together, starting their own company, and now the parents who actively set Victor up with other gay boys."
+        }
+      ]
+    }
+  }
+}

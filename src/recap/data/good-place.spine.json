@@ -1,0 +1,386 @@
+{
+  "slug": "good-place",
+  "generatedFor": "The Good Place",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Wrong Eleanor",
+          "text": "Eleanor wakes in an afterlife utopia told she was a heroic lawyer, but confesses to her soulmate Chidi she is really a selfish saleswoman here by mistake.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The premise the whole series rests on: an unqualified human hiding in heaven.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Ethics lessons and glitches",
+          "text": "Chidi reluctantly begins teaching her to be good; her presence keeps causing neighborhood glitches — trash storms, sinkholes — that architect Michael investigates.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets up the teacher-student bond and the surface-level mystery Michael is chasing.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Jianyu is Jason",
+          "text": "Their silent-monk neighbor Jianyu turns out to be Jason, a Florida DJ also placed here by error, and Chidi is dragged into hiding two frauds from Michael and Tahani.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Establishes the true foursome and doubles the deception Chidi has to manage.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Eleanor confesses to save Michael",
+          "text": "When Michael blames himself for the failures and announces a suicidal 'retirement,' Eleanor confesses she is the real problem to spare him.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Her first genuine selfless act and the beat that turns the investigation into a trial.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Bad Place demands her",
+          "text": "Bad Place demon Trevor arrives to collect Eleanor; Michael refuses, declares war, and buys time by appealing to an Eternal Judge for a hearing.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Introduces the Bad Place as an active adversary and the Judge as the ultimate authority.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The twist",
+          "text": "Facing judgement, the four humans realise they have been torturing each other by design — this is the Bad Place, and Michael is the demon running it.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The reveal that inverts everything the reader remembers about season 1.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Reboot and a note",
+          "text": "Exposed, Michael talks his boss Shawn into a second attempt; Eleanor scrawls 'Find Chidi' on a scrap and hides it in Janet before her memory is wiped.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The single thread of truth carrying into season 2 — everything else is reset.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The neighborhood has been reset and every human memory wiped. All that survives of the truth is a scrap of paper Janet hands Eleanor reading 'Find Chidi.'",
+        "questions": [
+          "Can Eleanor find her way to the truth again without knowing what she is looking for?",
+          "Will Michael's second attempt hold together longer than the first?",
+          "What does Shawn do if he catches Michael cheating?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Eleanor Shellstrop",
+          "line": "Selfish Arizona saleswoman placed in heaven by mistake; just wiped and rebooted for another try."
+        },
+        {
+          "name": "Chidi Anagonye",
+          "line": "Indecisive Senegalese ethics professor and her assigned soulmate; has secretly been teaching her to be good."
+        },
+        {
+          "name": "Michael",
+          "line": "Revealed to be a Bad Place demon; he designed this false heaven as an experimental torture chamber."
+        },
+        {
+          "name": "Janet",
+          "line": "The neighborhood's cheerful assistant, not a demon; briefly gained emotions and married Jason before a reboot."
+        },
+        {
+          "name": "Jason Mendoza",
+          "line": "A Florida drug dealer and amateur DJ who posed as a silent monk; also here by mistake."
+        },
+        {
+          "name": "Tahani Al-Jamil",
+          "line": "Glamorous British socialite tortured by her rivalry with her sister Kamilah; was the fake soulmate assigned to Jason."
+        },
+        {
+          "name": "Shawn",
+          "line": "Michael's Bad Place boss, who approved the original experiment and has just granted a reboot."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Reboots fail",
+          "text": "Michael reboots the neighborhood, but Eleanor's hidden note leads her back to Chidi within days; the ruse collapses again almost immediately.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Establishes that Michael cannot outsmart the humans no matter how he tweaks the setup.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · 800 attempts, all secret",
+          "text": "After hundreds of failed reboots, Michael secretly rolls the neighborhood back without telling Shawn, who has forbidden any more attempts.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Puts Michael in personal danger and gives the humans centuries of unremembered history together.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Alliance with the demon",
+          "text": "Cornered by a mutiny from actor-demon Vicky, Michael proposes an alliance with the humans: play along in exchange for his help escaping.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Flips the core relationship of the show — the tormentor becomes a partner.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · A demon learns ethics",
+          "text": "Chidi teaches Michael ethics and the demon slowly grows a conscience; Janet, evolving too, builds and then deletes a rebound boyfriend named Derek.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Michael's moral awakening is what powers everything he does from here on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Escape through the Bad Place",
+          "text": "Michael fakes the humans' torture and smuggles them out, then leads them into Bad Place headquarters to steal badges for the Judge's portal.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The plan that puts the group in front of a neutral judge — the only authority above Shawn.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Michael's sacrifice, humans' failure",
+          "text": "One badge short, Michael sacrifices his own escape and pushes Eleanor through; before Judge Gen, all four humans fail her personal-growth tests.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Confirms Michael's transformation and puts the humans one ruling away from hell.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The rescue at the door",
+          "text": "Just as Gen is about to send them to hell, Michael and Janet burst into her chambers — the last card left to play for the humans' fate.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The exact cliffhanger the reader is walking back into.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The four humans have failed Judge Gen's tests and are seconds from being sent to the Bad Place. Michael and Janet just arrived — with no obvious card left to play.",
+        "questions": [
+          "What deal, if any, can Michael offer the Judge now?",
+          "Do the humans get one more chance to become good?",
+          "Is Shawn still hunting them, and does he know about Michael's escape?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Eleanor Shellstrop",
+          "line": "Has lived hundreds of forgotten reboots at Michael's side; leads the group and has fallen for Chidi all over again."
+        },
+        {
+          "name": "Chidi Anagonye",
+          "line": "The ethics teacher whose lessons converted a demon; failed the Judge's decisiveness test moments ago."
+        },
+        {
+          "name": "Michael",
+          "line": "A reformed demon and honorary human; sacrificed his own escape to push Eleanor through the portal."
+        },
+        {
+          "name": "Janet",
+          "line": "Evolving far past her programming; built and then deleted a boyfriend, Derek, and still cares for Jason."
+        },
+        {
+          "name": "Jason Mendoza",
+          "line": "Memory-restored, briefly married Tahani; failed the Judge's impulse-control test."
+        },
+        {
+          "name": "Tahani Al-Jamil",
+          "line": "Past her sister obsession; failed her test when she couldn't stop caring what her parents thought of her."
+        },
+        {
+          "name": "Judge Gen",
+          "line": "The neutral Eternal Judge who has just ruled the four failed and belong in the Bad Place."
+        },
+        {
+          "name": "Shawn",
+          "line": "The Bad Place boss who has captured Michael and now knows the false neighborhood was a fraud."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Sent back to Earth",
+          "text": "Michael convinces Judge Gen to send the four back to the moment before their deaths on Earth so they can earn heaven honestly this time.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Resets the show's whole setting from afterlife to Earth.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Nudged together in Australia",
+          "text": "Watching from afar as they backslide, Michael breaks the rules and steers all four into meeting again around Chidi's near-death study in Australia.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The group re-forms on Earth — the whole season's plotting depends on this reunion.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Experiment shut down",
+          "text": "Bad Place spies interfere and Judge Gen shuts the experiment down; Michael and Janet flee to Earth rather than accept retirement and deactivation.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Puts Michael and Janet on Earth as fugitives — the setup for the rest of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The Soul Squad",
+          "text": "Michael and Janet confess everything to the humans, dooming their afterlife scores; the six form a 'Soul Squad' to help other people earn the Good Place instead.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The mission that binds the group for the middle of the season and reintroduces their friendship.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Killed again, in love again",
+          "text": "Ambushed by demons in Canada, Janet's void kills the humans on Earth; inside it Chidi's kiss confirms Eleanor's rediscovered love for him.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Puts the group back in the afterlife and locks in the Eleanor–Chidi relationship that season 4 turns on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Nobody has qualified in centuries",
+          "text": "In Accounting they learn no one has qualified for the Good Place in 521 years — modern life has made every choice too tangled for anyone to score well.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The season's diagnosis and the moral argument that reshapes the afterlife itself.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · A new experiment, with Chidi inside it",
+          "text": "Gen agrees to a new experiment: Michael will design a neighborhood for four humans chosen by Shawn, with Chidi's memory erased so he can be the fourth subject.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The exact premise the reader is walking into for season 4.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "A fresh experimental neighborhood has just gone live with four new human subjects. Michael, its architect, is folding under his first-ever panic attack as the first subject wakes.",
+        "questions": [
+          "Can Michael hold together long enough to run the test?",
+          "How badly has Shawn rigged the four humans Bad Place picked?",
+          "Will a memory-wiped Chidi ever find his way back to Eleanor?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Eleanor Shellstrop",
+          "line": "Ran the Soul Squad on Earth, is in love with Chidi again, and is about to lose him to a memory wipe."
+        },
+        {
+          "name": "Chidi Anagonye",
+          "line": "Has just agreed to have his memory erased so he can be secretly guided through the new experiment."
+        },
+        {
+          "name": "Michael",
+          "line": "Designed and will secretly steer the new neighborhood; the strain triggered his first-ever panic attack."
+        },
+        {
+          "name": "Janet",
+          "line": "Powers restored, now dating Jason; the group's fixer whenever demons attack."
+        },
+        {
+          "name": "Jason Mendoza",
+          "line": "Newly dating Janet; still Florida to his bones but a little more thoughtful after everything."
+        },
+        {
+          "name": "Tahani Al-Jamil",
+          "line": "Reconciled with her sister Kamilah and past her fame chase; a full member of the Soul Squad."
+        },
+        {
+          "name": "Judge Gen",
+          "line": "Approved the new experiment; sceptical but persuadable that humans can be more than their point totals."
+        },
+        {
+          "name": "Shawn",
+          "line": "The Bad Place boss who gets to pick the four test subjects, motivated to see them fail."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · The new neighborhood",
+          "text": "The new experiment begins with entitled bro Brent, lonely gossip John, and a 'Linda' who turns out to be a spy demon planted by Shawn.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the humans Michael's afterlife theory has to prove itself on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Chidi drafted",
+          "text": "As punishment for Bad Place tampering, the Judge drafts Chidi as the fourth subject with his memory wiped, so Eleanor must welcome the man she loves as a stranger.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The emotional backbone of the season — Eleanor separated from Chidi while standing next to him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Bad Janet inside the walls",
+          "text": "A second infiltrator, Bad Janet in disguise, sabotages the neighborhood; Michael and Jason breach the Bad Place to rescue the real Janet.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Explains why the experiment nearly fails midway and returns the real Janet to the group.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Proof from an apology",
+          "text": "When Simone deduces the setup, Michael reveals it is the Bad Place — and Brent's tiny last-second apology to Chidi becomes the year's proof that humans can change.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The pivot from experiment to argument: this is what Michael takes to the Judge.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Every Janet",
+          "text": "The Judge rules the points system broken and moves to erase all of humanity; Janet hides the reset button and every Janet in existence arrives to back her up.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The stakes escalate to species-level and Janet becomes humanity's improbable saviour.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · A new afterlife",
+          "text": "To save the deal, Michael restores Chidi's memories; Chidi reunites with Eleanor and helps design a new afterlife of rebootable moral tests that Shawn finally accepts.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The problem the whole series posed gets its structural solution.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The door",
+          "text": "The four finally reach the real Good Place, find its eternity has drained residents of joy, and install a door that lets any soul choose to end.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The show's final answer — meaning requires an ending — and the mechanism the finale runs on.",
+          "needsVerify": true
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Good Place has been rebuilt into a system where souls can finally leave, and the group has begun saying goodbye to each other one by one at the door.",
+        "questions": [
+          "Who steps through the door first, and who lingers?",
+          "Does anything wait on the other side, or is it truly an ending?",
+          "What becomes of Michael, the demon who wanted to be human?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Eleanor Shellstrop",
+          "line": "Led the experiment and helped design the new afterlife with Chidi; now lives in the real Good Place with him."
+        },
+        {
+          "name": "Chidi Anagonye",
+          "line": "Memory restored and reunited with Eleanor; co-designed the new afterlife's system of moral reboots."
+        },
+        {
+          "name": "Michael",
+          "line": "Architect of the new afterlife, still working with the Joint Council to smooth out the kinks."
+        },
+        {
+          "name": "Janet",
+          "line": "Hid the reset button and rallied every Janet to save humanity; still the being holding the Good Place together."
+        },
+        {
+          "name": "Jason Mendoza",
+          "line": "Back together with Janet; among the humans preparing to move on through the door."
+        },
+        {
+          "name": "Tahani Al-Jamil",
+          "line": "Grown into leadership across the seasons; among those parting from the group as the finale plays out."
+        },
+        {
+          "name": "Judge Gen",
+          "line": "Presided over the ruling that scrapped the points system; accepted the new one in place of erasing humanity."
+        },
+        {
+          "name": "Shawn",
+          "line": "Accepted the new system once Michael pointed out the old one bored him more than it satisfied him."
+        },
+        {
+          "name": "Brent Norwalk",
+          "line": "The entitled test subject whose tiny final apology to Chidi was the experiment's proof of concept."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "slug": "yellowstone",
+  "generatedFor": "Yellowstone",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Blood on the border",
+          "text": "John Dutton's cattle stray onto reservation land and the confrontation kills his eldest son Lee. Estranged daughter Beth returns from Utah as the family closes ranks.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the ranch-vs-reservation war, opens the succession hole Lee's death leaves, and puts Beth back on the board where she stays.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Covering the bodies",
+          "text": "To shield third son Kayce from a murder charge, John has Lee's body cremated and orders his enforcer Rip to kill the medical examiner who signed the autopsy.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Shows how far John will go and locks Kayce to the family through a shared crime; the reader needs this to read Kayce's later choices.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The patriarch is dying",
+          "text": "John's colon-cancer surgery is quietly revealed, and tribal chief Thomas Rainwater warns him openly that the day he dies, the reservation will take the ranch back.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Puts a clock on the whole show and names the man who inherits the war whenever that clock runs out.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Enemies join hands",
+          "text": "Developer Dan Jenkins and Chief Rainwater partner against the Duttons, running a coordinated legal and financial squeeze designed to bleed John off his land.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The alliance is the engine of the season's plot against John; the reader needs to know these two are working together.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Kayce comes home alone",
+          "text": "After Monica is hospitalised with a brain injury and separates from him, Kayce moves into the ranch bunkhouse, pulling the son John needs most back inside the fence.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The domestic split delivers Kayce to John, which is the family reshuffle the next season inherits.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Jamie turns",
+          "text": "Cut off financially and pushed to abandon his attorney-general run, Jamie sits for a newspaper interview about his father, crossing a line the family will not forgive.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "This is the quiet betrayal that reframes Jamie for everything after; nothing else in season 1 sets up more.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The rope at the tree",
+          "text": "Rip, Kayce and Jimmy hang Dan Jenkins by the neck until he names every conspirator, exposing the full plot against the ranch.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Ends the season with John finally knowing who all his enemies are, and Jenkins alive and owned by the Duttons rather than dead.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Jenkins has been strung up until he coughed the names of every player moving against the Yellowstone, and Jamie has just handed a reporter the story of his own father without anyone in the family knowing yet. John has Kayce and Rip back inside the fence, but he is dying, and the men trying to take the ranch now know who each other are.",
+        "questions": [
+          "What will John do now that Jenkins has named every conspirator against him?",
+          "How does the family react when Jamie's interview about his father reaches print?",
+          "How long can John hide his cancer from the enemies now openly waiting for him to die?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "John Dutton",
+          "line": "Patriarch of the Yellowstone, secretly fighting colon cancer while at war with a developer, a reservation, and, increasingly, one of his own sons."
+        },
+        {
+          "name": "Beth Dutton",
+          "line": "John's daughter, back from a finance career in Utah and running the family's counter-attack to dismantle Jenkins from the inside."
+        },
+        {
+          "name": "Kayce Dutton",
+          "line": "John's third son and an ex-serviceman, separated from Monica after her injury and now living in the ranch bunkhouse."
+        },
+        {
+          "name": "Jamie Dutton",
+          "line": "John's middle son and the family's lawyer, cut off by his father over his political ambitions and has just given a reporter an interview about him."
+        },
+        {
+          "name": "Rip Wheeler",
+          "line": "John's enforcer and Beth's on-off partner; the man who does the killings, buries the bodies, and answers only to John."
+        },
+        {
+          "name": "Monica Long Dutton",
+          "line": "Kayce's wife, a reservation schoolteacher recovering from brain surgery who has moved out on her own with their son Tate."
+        },
+        {
+          "name": "Thomas Rainwater",
+          "line": "New chief of the Broken Rock reservation, openly promising to take the Yellowstone back the day John dies and now partnered with Jenkins."
+        },
+        {
+          "name": "Dan Jenkins",
+          "line": "Real-estate developer squeezing the ranch financially, currently alive but broken after Rip hung him from a tree to name every co-conspirator."
+        }
+      ]
+    }
+  }
+}

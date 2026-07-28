@@ -1,0 +1,299 @@
+{
+  "slug": "lost-in-space",
+  "generatedFor": "Lost in Space",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Crash on an unknown planet",
+          "text": "Fleeing a doomed Earth, the Robinsons crash on an unknown planet after their colony ship is attacked. Will finds a dismembered alien Robot and bonds with it.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the premise and Will's bond with Robot — the relationship the whole series turns on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The impostor doctor",
+          "text": "Con artist June Harris murders and takes over Dr. Zachary Smith's identity, blending in with the survivors and quietly manipulating those closest to Will.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Every later Smith betrayal begins with this stolen identity.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The planet is dying",
+          "text": "Maureen discovers the sun orbits a black hole and the planet will soon be uninhabitable. The colonists must find fuel and launch before it becomes lethal.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The deadline that forces every subsequent decision this season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Robot attacked the Resolute",
+          "text": "Will mentally connects with the alien ship and learns his Robot led the attack that killed 27 crew aboard the Resolute. The truth eventually goes public.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Establishes the family's moral debt and why the Resolute will want Robot destroyed.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Robot walks off the cliff",
+          "text": "Smith manipulates a traumatised Angela into shooting Robot, triggering an attack mode that injures John. A devastated Will orders Robot to walk off a cliff.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Ends Will's bond with Robot for most of the season and opens the door for Smith to seize control.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Smith seizes Robot",
+          "text": "Smith knocks out Maureen mid-launch, causing John and Don's Jupiter to explode in the sky. She then abducts Maureen and binds the reactivated Robot to her own commands.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Puts Smith in charge of the most dangerous asset on the planet and sets up the miraculous rescue.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Flung into 'Danger'",
+          "text": "A second alien robot comes for the engine; Will's Robot remembers their bond and hurls both into space. The engine flings the reunited family into an unknown system Will calls 'Danger'.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Delivers the entire cast into next season's premise — stranded far from the Resolute with the engine active.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Robinsons are back together on Jupiter 2, but the alien engine has hurled them to an unknown star system Will recognises as 'Danger'. Smith is caged; Robot is lost in space.",
+        "questions": [
+          "Where has the engine taken them, and can they find their way back to the Resolute?",
+          "Is Will's Robot gone for good, or can they find each other again?",
+          "How long can Smith stay caged before the family needs her?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Will Robinson",
+          "line": "Youngest child, bonded deeply with the alien Robot and carrying the guilt for the lives lost in its attack."
+        },
+        {
+          "name": "Maureen Robinson",
+          "line": "Engineer mother and family strategist; she cracked the black hole and now distrusts the caged Smith."
+        },
+        {
+          "name": "John Robinson",
+          "line": "Father and ex-military; long absent from the family but reconciling with Maureen."
+        },
+        {
+          "name": "Judy Robinson",
+          "line": "Eldest daughter, teenaged doctor and John's stepdaughter, growing close to Don."
+        },
+        {
+          "name": "Penny Robinson",
+          "line": "Middle child who feels overshadowed but proved resourceful under pressure."
+        },
+        {
+          "name": "Dr. Smith / June Harris",
+          "line": "Escaped con artist wearing a dead man's identity; caged aboard Jupiter 2 and still working every angle."
+        },
+        {
+          "name": "Don West",
+          "line": "Resolute crewman and occasional smuggler; suspicious of Smith and drawn to Judy."
+        },
+        {
+          "name": "The Robot",
+          "line": "Alien machine Will befriended; last seen throwing itself into space with the second robot to save him."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Sailing off an ocean planet",
+          "text": "Seven months later, on a lethal ocean planet, the family sail Jupiter 2 across the water to escape. Smith reveals she sabotaged the food supply to force the launch.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Explains why they leave voluntarily and keeps Smith's villainy live at the start of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · 'Zoe' Smith is born",
+          "text": "They reach the abandoned Resolute; Smith wipes her records and steals the real Dr. Smith's identity, becoming therapist 'Zoe' Smith with a clean slate.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Sets up the Resolute as the season's arena and Smith's most durable disguise yet.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Christmas Star truth",
+          "text": "Adler reveals the Resolute was built around an alien engine that fell to Earth long ago. Only a robot can pilot it, and a crippled Scarecrow has been tortured into every mission.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Origin of everything the robots want back; recontextualises the whole premise.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · SAR's trap",
+          "text": "The Second Alien Robot impersonates Will's Robot to lure them into a trap. Adler kills SAR, but Will finds the real Robot changed and increasingly loyal to its own kind.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Introduces SAR as the true antagonist and begins Robot's drift away from Will.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The mutiny fails",
+          "text": "Hastings, the mission's true director, plans to abandon the surface colonists once the engine is secured. The Robinsons' mutiny collapses when Smith arrives too late to warn Maureen.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Establishes the internal enemy and plants ambiguity about whether Smith really tried.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Robot chooses his own",
+          "text": "Robot ignores Will's plea and frees the dying Scarecrow instead. The children smuggle Scarecrow back to its home planet, but Robot is captured to fly the Resolute.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Robot picks his own kind over Will — the emotional pivot that carries into next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ninety-seven children through the rift",
+          "text": "Judy captains a Jupiter of 97 children through a rift piloted by Robot. Instead of Alpha Centauri they arrive at an unknown system and find the long-lost Fortuna — commanded by Judy's biological father, Grant Kelly.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Delivers next season's premise: kids stranded, Robinsons scattered, Grant Kelly waiting.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The children's Jupiter has arrived not at Alpha Centauri but at an unknown system, staring at the derelict Fortuna — the ship of Judy's biological father, missing for twenty years. Robinsons, Don, Smith and Robot are scattered across the escape.",
+        "questions": [
+          "Is Grant Kelly alive aboard the Fortuna after all these years?",
+          "Can the children still reach Alpha Centauri from wherever this is?",
+          "Are Smith and Scarecrow really dead, and where are the Robinsons now?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Will Robinson",
+          "line": "Losing his hold on Robot, who now sides with his own kind; on the children's Jupiter with Judy."
+        },
+        {
+          "name": "Judy Robinson",
+          "line": "Captaining the Jupiter carrying 97 children through the rift; about to face the father she has never met."
+        },
+        {
+          "name": "Maureen Robinson",
+          "line": "The Robinsons' engineer and strategist; scattered from the children after the failed mutiny."
+        },
+        {
+          "name": "John Robinson",
+          "line": "Fully re-committed to the family, working shoulder-to-shoulder with Maureen."
+        },
+        {
+          "name": "Penny Robinson",
+          "line": "Author of the in-family book 'Lost in Space' and Smith's most persistent skeptic."
+        },
+        {
+          "name": "Don West",
+          "line": "Colonist ally, briefly arrested for smuggling, now with the Robinsons on Jupiter 2."
+        },
+        {
+          "name": "Dr. Smith / 'Zoe' Smith",
+          "line": "Has fully assumed Dr. Zachary Smith's identity; apparently sacrificed herself battling the invading robots."
+        },
+        {
+          "name": "The Robot",
+          "line": "Captured by the Resolute forces and forced to pilot the children's Jupiter through the rift."
+        },
+        {
+          "name": "Grant Kelly",
+          "line": "Judy's biological father, commander of the vanished Fortuna, glimpsed at the end of the season."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Waking Grant Kelly",
+          "text": "The children's Jupiter crashes on a planet under constant meteor bombardment. Judy finds the Fortuna lander and wakes Grant Kelly, her biological father, from stasis.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Reintroduces Grant as an active character and puts Judy face-to-face with him for the first time.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Robot hides the titanium",
+          "text": "A year passes; the children scavenge titanium to repair the Jupiter's engine. Robot secretly discards it to keep Will grounded and safe from the robots hunting him.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Explains why the children have been stranded so long despite doing everything right.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Scarecrow bridges the family",
+          "text": "Scarecrow, restored inside the Robinsons' Jupiter, links with Robot and lets John and Maureen speak with Will and Penny. Elsewhere, robots are rebuilding SAR.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Restores contact between the split families and puts SAR's return on the table.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Reunion and a decoy course",
+          "text": "Grant flies the children through the asteroid field to reunite with the Robinsons. To hide Alpha Centauri, John lures SAR onto a collision course with a dead planet.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Reunites the cast and diverts SAR from the colony, setting up the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · SAR stabs Will",
+          "text": "Will meets SAR alone with the alien skull, learning the robots killed their own creators to break free. SAR stabs Will; Judy freezes him in cryostasis to survive the trip.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Reframes SAR's war as robot liberation and puts Will in the state he arrives at Alpha Centauri in.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The shield falls",
+          "text": "They reach Alpha Centauri. A defensive shield secretly installed by Hastings is sabotaged by robot infiltrators, and Hastings is murdered before he can hand over the codes.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Puts the colony under direct siege with its defences down, driving the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Robot ends the war",
+          "text": "Robot dies on his home world saving Will; his consciousness later takes over SAR's body when SAR tries to absorb it. The war ends and Will leaves with the transformed Robot to explore.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Closes the war, the Smith arc, and Will and Robot's story in a single sequence.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Alpha Centauri is safe, the war with the robots is over, and the Robinsons have settled into new lives. Will and the transformed Robot have set out together to explore beyond the colony.",
+        "questions": [
+          "What is out there for Will and Robot to find beyond Alpha Centauri?",
+          "Will Smith reappear in the family's life once she is released?",
+          "Can the peace between humans and the freed robots hold?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Will Robinson",
+          "line": "Now living with a mechanical heart; has left Alpha Centauri with the transformed Robot to explore."
+        },
+        {
+          "name": "The Robot",
+          "line": "Sacrificed his own body to save Will and now inhabits SAR's, journeying out with Will."
+        },
+        {
+          "name": "Maureen Robinson",
+          "line": "Building the Solidarity, a new expedition ship, from a peaceful Alpha Centauri."
+        },
+        {
+          "name": "John Robinson",
+          "line": "Enjoying quiet family life after the war, alongside Maureen."
+        },
+        {
+          "name": "Judy Robinson",
+          "line": "Practising medicine on Alpha Centauri and reconciled with her biological father Grant."
+        },
+        {
+          "name": "Penny Robinson",
+          "line": "A working writer, romantically involved with Vijay Dhar."
+        },
+        {
+          "name": "Don West",
+          "line": "Settled on Alpha Centauri after the war ends."
+        },
+        {
+          "name": "Grant Kelly",
+          "line": "Judy's biological father, now a close friend of the whole Robinson family."
+        },
+        {
+          "name": "Dr. Smith",
+          "line": "Confessed her crimes in full and imprisoned on Alpha Centauri; Maureen has told her to seek out the family once she is released."
+        }
+      ]
+    }
+  }
+}

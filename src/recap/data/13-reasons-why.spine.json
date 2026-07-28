@@ -1,0 +1,414 @@
+{
+  "slug": "13-reasons-why",
+  "generatedFor": "13 Reasons Why",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The tapes arrive",
+          "text": "Clay finds cassettes on his doorstep from Hannah Baker, his classmate and crush who recently killed herself. Each tape names one person who helped destroy her.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Frames the whole series conceit; every subsequent event traces back to this delivery.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A chain of betrayals",
+          "text": "The tapes chain through betrayals — a leaked photo, a hot-or-not list, a stolen kiss, a public humiliation — that turned Hannah into the school's rumour magnet.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Establishes the ensemble's guilt without spending a beat on each subject.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Jessica's party",
+          "text": "Hannah witnesses Bryce Walker rape an unconscious Jessica at a party. Justin, Jessica's boyfriend, knows and lets it slide, keeping her from the truth.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "This assault drives the Season 2 trial and Justin's arc for the rest of the series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Hannah's last day",
+          "text": "Bryce rapes Hannah too. She records Mr. Porter dismissing her cry for help, mails the tapes to Justin, and takes her own life at home.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The origin of the tapes and Porter's culpability, both central to Season 2's testimony.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Clay's confession trap",
+          "text": "Clay records Bryce confessing to Hannah's rape and hands the full set of tapes to Mr. Porter. Tony copies them onto a flash drive for Hannah's parents.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Puts the evidence on the record and hands the Bakers their weapon for trial.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The lawsuit and Alex",
+          "text": "Depositions begin in the Bakers' lawsuit. Alex is found shot in the head, and Jessica finally tells her father Bryce raped her.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Opens the Season 2 courtroom while removing Alex's memory of the tapes.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Tyler goes dark",
+          "text": "Tyler, isolated after his own testimony, stockpiles ammunition and rifles in his bedroom as the trial closes in on everyone named on the tapes.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Sets up the entire Tyler-shooting throughline that dominates the Season 2 finale.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Bakers' trial has just begun and everything is in motion at once: Alex is bleeding out in critical condition, Jessica has finally named her rapist to her cop father, and Tyler is quietly assembling an arsenal.",
+        "questions": [
+          "Will the tapes and Bryce's recorded confession actually surface in court?",
+          "Will Alex survive, and if he does, does he still remember any of it?",
+          "What is Tyler planning to do with those guns?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Clay Jensen",
+          "line": "Received Hannah's tapes and traced every betrayal to its source; came away with a secret recording of her rapist confessing."
+        },
+        {
+          "name": "Hannah Baker",
+          "line": "Recently-deceased classmate whose recorded voice narrates the season; Clay was quietly in love with her."
+        },
+        {
+          "name": "Bryce Walker",
+          "line": "Wealthy athlete who raped both Jessica and Hannah; Clay tricked him into admitting the second one on tape."
+        },
+        {
+          "name": "Justin Foley",
+          "line": "Jessica's boyfriend; knew Bryce raped her and buried it; homeless after his mother's boyfriend threw him out."
+        },
+        {
+          "name": "Jessica Davis",
+          "line": "Assaulted by Bryce while unconscious at her own party; has just told her father the truth."
+        },
+        {
+          "name": "Alex Standall",
+          "line": "Shot himself in the head under the weight of his part in Hannah's death; in critical condition at the hospital."
+        },
+        {
+          "name": "Tyler Down",
+          "line": "Outcast school photographer publicly humiliated by Clay; now stockpiling weapons in his bedroom."
+        },
+        {
+          "name": "Tony Padilla",
+          "line": "Hannah's confidant and keeper of the tapes; walked Clay through every one of them."
+        },
+        {
+          "name": "Kevin Porter",
+          "line": "School counselor who dismissed Hannah's rape disclosure hours before her suicide."
+        },
+        {
+          "name": "Olivia Baker",
+          "line": "Hannah's grieving mother; suing the school district over the bullying that killed her daughter."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · The trial opens",
+          "text": "Five months on, the Bakers' lawsuit against Liberty High reaches trial, and each person named on the tapes takes the stand.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The framing device for the entire season and the arena where every character's version of Hannah collides.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Clubhouse",
+          "text": "Someone slips Clay Polaroids from 'The Clubhouse' — a shed where Bryce and his friends have been drugging and raping girls for years.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Reframes Bryce from lone predator to head of a system, seeding the wider indictment that follows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Bringing Justin home",
+          "text": "Clay finds Justin homeless and heroin-addicted in Oakland and moves him into his own bedroom. Justin sobers up and testifies that Bryce raped Jessica.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Cements Clay and Justin as brothers in fact before the adoption, and delivers the trial's key witness.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The verdict",
+          "text": "The jury clears the school. Bryce is convicted of Jessica's assault but sentenced to three months' probation; Justin gets six, and the Jensens adopt him.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Bryce walking free with a slap on the wrist is the single fact that ignites everything in Season 3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Monty rapes Tyler",
+          "text": "Monty rapes Tyler with a broom in a school bathroom to punish him for testifying against the jocks.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The assault that breaks Tyler and drives the finale, and the Monty crime that ends him in Season 3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Tyler at the dance",
+          "text": "Broken by the assault, Tyler arrives at the school dance with a rifle intending a mass shooting. Clay talks him down and sends him away with Tony.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The near-atrocity the whole group will spend Season 3 hiding.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Holding the rifle",
+          "text": "Clay is left standing outside the school holding Tyler's rifle as police sirens close in. From this moment on, the group co-owns Tyler's secret.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The cliffhanger image and the pact that binds everyone in Season 3.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Tyler has just attempted a school shooting that Clay defused, and Clay is standing outside the school holding the rifle as sirens approach. Bryce is walking free on probation and, quietly, Chloë is carrying his baby.",
+        "questions": [
+          "Can Clay and Tony really keep the truth about Tyler from the police?",
+          "What does Bryce do now that he has been convicted and cast out by his own crew?",
+          "How long can Chloë hide the pregnancy from Bryce and everyone else?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Clay Jensen",
+          "line": "Testified at trial and now holds Tyler's secret; adopted brother of Justin as the season closes."
+        },
+        {
+          "name": "Justin Foley",
+          "line": "Sober after Clay rescued him from Oakland; testified against Bryce and has been adopted by the Jensens."
+        },
+        {
+          "name": "Jessica Davis",
+          "line": "Won her assault case against Bryce; kissed Alex at the dance and then had an intimate moment with Justin."
+        },
+        {
+          "name": "Alex Standall",
+          "line": "Survived his suicide attempt and walking again; no memory of the tapes and still in love with Jessica."
+        },
+        {
+          "name": "Bryce Walker",
+          "line": "Convicted rapist with three months' probation; abandoned by every friend he had."
+        },
+        {
+          "name": "Tyler Down",
+          "line": "Raped by Monty, then talked down at the dance; Tony has just driven him away from the school."
+        },
+        {
+          "name": "Tony Padilla",
+          "line": "Spirited Tyler out before the police could see the rifle; another secret to guard."
+        },
+        {
+          "name": "Monty de la Cruz",
+          "line": "Football enforcer; raped Tyler with a broom in the bathroom as revenge for his testimony."
+        },
+        {
+          "name": "Chloë Rice",
+          "line": "Bryce's ex-girlfriend; secretly pregnant with his child."
+        },
+        {
+          "name": "Nora Walker",
+          "line": "Bryce's mother; heard him confess to raping Hannah and quietly withdrew from him."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Ani arrives",
+          "text": "New student Ani Achola arrives at Liberty and befriends Clay's circle. She has secretly been Bryce's lover, giving her access no one else has.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the season's POV and the only bridge between the Walker household and the group.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Bryce tries to atone",
+          "text": "Exiled from his old crew and abandoned by his father, Bryce tries to make amends — with Tony, whose family his father had deported, and with Jessica, who rejects him.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Establishes the changed Bryce the murder investigation is really about, and why so many people had motive.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Homecoming night",
+          "text": "At Homecoming, Jessica's survivor group stages a protest that erupts into a brawl. That night, Bryce ends up alone at the pier, waiting for Jessica.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Places every player at the location where Bryce dies and sets the timeline the mystery inverts around.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Zach's beating",
+          "text": "Zach finds Bryce first at the pier and beats him savagely over Chloë's abortion. He throws Bryce's phone in the river and leaves him for dead, then reconciles with Chloë.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The false answer — Zach believes he did it — that misdirects the group and the audience.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Alex kills Bryce",
+          "text": "Alex and Jessica arrive next at the pier. Bryce threatens Zach again from the ground; Alex pushes the injured Bryce into the river, where he drowns.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The actual killing; the secret the show will spend Season 4 protecting.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Framing Monty",
+          "text": "Monty is jailed for Tyler's rape and killed inside. Ani gives Sheriff Diaz a story that pins Bryce's murder on the dead Monty; the group closes ranks around Alex.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The lie the whole group is now bound to defend, and the injustice Winston will hunt in Season 4.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The cover-up sticks",
+          "text": "Alex's father, Deputy Standall, quietly realises his son killed Bryce and destroys the evidence. Downstream, a fisherman hauls up Tyler's stashed bag of guns.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "A father protecting his son locks the cover-up in place, while the guns loose end sets Season 4's opening in motion.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The group has framed the dead Monty for Bryce's murder, and Alex's own cop father is quietly protecting his son by destroying evidence. But Winston, Monty's secret lover, knows Monty was with him that night — and a fisherman has just dredged up Tyler's bag of guns from the river.",
+        "questions": [
+          "Will Winston unravel the cover-up once he realises Monty was framed?",
+          "Where do those guns lead the police once they trace them back to Tyler?",
+          "How long can Alex live with what he did before he breaks?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Clay Jensen",
+          "line": "Prime suspect in Bryce's murder for most of the season; now dating Ani after the cover-up settled."
+        },
+        {
+          "name": "Alex Standall",
+          "line": "Killed Bryce by shoving him into the river; his father is protecting him from the consequences."
+        },
+        {
+          "name": "Ani Achola",
+          "line": "New student and Bryce's secret former lover; fed Sheriff Diaz the story that framed the dead Monty."
+        },
+        {
+          "name": "Winston Williams",
+          "line": "The boy Monty was sleeping with the night Bryce died; knows for certain Monty didn't do it."
+        },
+        {
+          "name": "Justin Foley",
+          "line": "Got sober, then quietly relapsed on Bryce's oxycodone; back together with Jessica and still living with the Jensens."
+        },
+        {
+          "name": "Jessica Davis",
+          "line": "Student body president leading a sexual-assault survivors' group; at the pier the night Bryce died."
+        },
+        {
+          "name": "Zach Dempsey",
+          "line": "Football captain who beat Bryce badly at the pier and left believing he'd killed him."
+        },
+        {
+          "name": "Tyler Down",
+          "line": "Recovering from Monty's assault; the illegal weapons he never gave up have just surfaced in the river."
+        },
+        {
+          "name": "Monty de la Cruz",
+          "line": "Arrested for raping Tyler and killed in jail; posthumously framed for Bryce's murder."
+        },
+        {
+          "name": "Deputy Bill Standall",
+          "line": "Alex's father; realised his son killed Bryce and destroyed the evidence to protect him."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Winston at Liberty",
+          "text": "Six months on, Clay is unraveling under guilt and Monty-hallucinations. Winston, Monty's secret lover, has transferred to Liberty determined to prove Monty was innocent.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the season's opposing forces: Clay's disintegration and Winston's investigation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Justin comes home",
+          "text": "Justin returns from rehab clean but pulls back from Jessica to protect his sobriety, moving in fully as Clay's adopted brother.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Cements the Jensen family unit whose grief will define the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Surveillance state",
+          "text": "Someone hacks Clay's phone and torments the group with anonymous threats. Liberty tightens into a surveillance state — cameras, drills, resource officers.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The atmosphere that finishes off Clay's nerves and forces the group into the season's confessions.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The shooter drill",
+          "text": "A staged 'live shooter' drill destroys Clay's grip on reality. He steals an officer's gun, is knocked out, and wakes up in a psychiatric ward.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The breaking point that reveals to everyone how far gone Clay is.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Alex tells Winston",
+          "text": "Alex, drawn to boys, dates Winston briefly before falling for Charlie. He confesses he killed Bryce; Winston loves him too much to turn him in.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Closes the Bryce mystery for good, on love rather than justice.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Justin dies",
+          "text": "Justin collapses at prom. Undiagnosed HIV from his years of drug-fueled sex work has progressed to AIDS; he dies days later, shattering Clay and the Jensens.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The loss the series ends on and the wound Clay walks off campus carrying.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Graduation and burial",
+          "text": "The group graduates. Deputy Standall closes Bryce's case for good, and the surviving tape-holders bury Hannah's cassettes together to let her — and Justin — go.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The series' actual ending: the survivors putting the whole story into the ground.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The story closes with Justin dead of AIDS, Bryce's murder officially unsolved, and everyone graduating from Liberty scarred but intact. Alex is a killer no court will ever know about, and the group carries the weight together.",
+        "questions": [
+          "Can Alex live the rest of his life with what he did?",
+          "Will Winston's silence about Bryce's real killer really hold?",
+          "Does Clay finally learn to live after Hannah, Bryce, and Justin?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Clay Jensen",
+          "line": "Graduated and heading to Brown; leaves on a road trip with Tony trying to learn how to live with everything."
+        },
+        {
+          "name": "Justin Foley",
+          "line": "Dead from AIDS contracted during his years of drug use and sex work."
+        },
+        {
+          "name": "Alex Standall",
+          "line": "Bryce's killer; dating Charlie by season's end; only Winston knows what he did."
+        },
+        {
+          "name": "Winston Williams",
+          "line": "Chose love over justice for Monty; keeping Alex's secret to the grave."
+        },
+        {
+          "name": "Jessica Davis",
+          "line": "Graduated; the last person with Justin as he died."
+        },
+        {
+          "name": "Tyler Down",
+          "line": "Recovered and secretly a police informant catching gun dealers."
+        },
+        {
+          "name": "Tony Padilla",
+          "line": "Reunited with his father, heading to college, road-tripping with Clay."
+        },
+        {
+          "name": "Ani Achola",
+          "line": "Rewrote Clay's admissions essay to get him into Brown; still with him."
+        },
+        {
+          "name": "Charlie St. George",
+          "line": "Bisexual football captain; Alex's boyfriend by the end."
+        }
+      ]
+    }
+  }
+}

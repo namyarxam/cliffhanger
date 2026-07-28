@@ -1,0 +1,211 @@
+{
+  "slug": "bad-sisters",
+  "generatedFor": "Bad Sisters",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The Claffins arrive",
+          "text": "JP is dead; insurance brothers Matt and Tom Claffin arrive at his funeral and must prove foul play or their family firm collapses.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up the dual timeline the whole season runs on: past = the sisters' plotting, present = the investigation closing in.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The cabin",
+          "text": "In flashback, the Garvey sisters despise JP for controlling their sister Grace; Eva and Bibi begin plotting, but their attempt to blow up his cabin fails.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Establishes the core pact — Eva and Bibi as the first conspirators — and the pattern of failed attempts that shapes the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Ursula joins",
+          "text": "JP catches Ursula's affair and tricks a nude photo out of her; she joins the plot and poisons his liver, but Grace feeds it to the dog instead.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Shows JP's blackmail habit that fractures Ursula's marriage — the crack that widens in S2 when she is divorced.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Becka joins",
+          "text": "JP publicly humiliates Becka after promising to fund her business; she joins as the fourth conspirator, and paintball, drugging and drowning attempts all fail.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Unites all four sisters as active plotters — the shared culpability that binds them for the rest of the series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The freezer",
+          "text": "Becka finds JP's dead father George frozen in the family basement and later traps JP's mother Minna in the same freezer; JP dumps George's body in the pond.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The pond dump is the live wire for S2 — George's remains resurface and reopen the whole investigation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Grace kills JP",
+          "text": "JP confesses to Grace that he once raped and impregnated Eva; a devastated Grace strangles him, and neighbour Roger helps her stage an ATV accident.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The actual killing — and Roger's complicity — is the secret every S2 beat is built on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Matt burns the evidence",
+          "text": "Matt uncovers the truth but burns the evidence when the sisters drop the insurance claim; Grace and Blánaid move in with Eva.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Closes the S1 case and cements the fragile equilibrium — a secret that only a handful of people know — that S2 immediately shatters.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Grace has killed JP and moved in with Eva; her sisters, Roger and Matt all share the secret, and JP's father George lies undiscovered in the pond behind the house.",
+        "questions": [
+          "How long can the sisters live with what Grace did before someone breaks?",
+          "What happens when George's body eventually surfaces?",
+          "Can Roger carry this secret without falling apart?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Grace Garvey",
+          "line": "JP's widow, who strangled him after he confessed to raping Eva; now living with Eva alongside her daughter Blánaid."
+        },
+        {
+          "name": "Eva Garvey",
+          "line": "Eldest sister and ringleader of the plot; secretly raped and briefly impregnated by JP a decade ago."
+        },
+        {
+          "name": "Ursula Garvey",
+          "line": "Middle sister and nurse whose affair with Ben was exposed by JP's blackmail, dragging her into the plot."
+        },
+        {
+          "name": "Bibi Garvey",
+          "line": "One-eyed sister married to Nora; JP blinded her years ago in a deliberate car crash."
+        },
+        {
+          "name": "Becka Garvey",
+          "line": "Youngest sister and massage therapist; slept with Matt Claffin without knowing he was investigating the family."
+        },
+        {
+          "name": "Blánaid",
+          "line": "Grace and JP's teenage daughter, now orphaned of a father and living with Eva.",
+          "note": "pronounced BLAW-nid"
+        },
+        {
+          "name": "John Paul Williams",
+          "line": "The sisters' abusive, controlling brother-in-law — now dead by Grace's hand.",
+          "note": "referred to as JP"
+        },
+        {
+          "name": "Roger Muldoon",
+          "line": "The Garveys' kindly, church-going neighbour who helped Grace stage JP's death as an ATV accident."
+        },
+        {
+          "name": "Matt Claffin",
+          "line": "Insurance investigator who fell for Becka, worked out how JP really died, and burned the evidence to protect her."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Two years on",
+          "text": "Two years after JP's death, Grace is about to marry Ian; the discovery of JP's father George in the pond reopens the police investigation.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The trigger that pulls the whole S1 secret back into the open and starts every domino of S2 falling.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ian vanishes",
+          "text": "Panicking, Grace tells Ian how JP really died; the next morning Ian has vanished, his phone hidden in Grace's bathroom alongside bloodied clothes.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Puts Grace at the centre of a fresh suspected murder and is the pressure that kills her the next day.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Grace dies",
+          "text": "As the detectives close in on her contradictions, Grace flees and is killed in a car crash; Ian resurfaces at her funeral to be questioned.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Removes the season's protagonist and reframes everything after around what Grace left behind — Blánaid, the secret, and Ian.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Angelica blackmails",
+          "text": "Roger's sanctimonious sister Angelica arrives, extracts the JP secret from a grieving Ursula, and starts blackmailing the sisters over what Grace did.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces the season's live antagonist and puts the sisters' freedom in a single outsider's hands.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Overboard",
+          "text": "Scattering Grace's ashes at sea, the sisters knock Angelica overboard and flee thinking her drowned; she is later found alive but with no memory of the fall.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Adds a second attempted killing to their ledger and puts them back in Detective Houlihan's sights.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ian is Cormac",
+          "text": "Eva discovers Ian is really Cormac — a disgraced, abusive ex-cop — and he has cleaned out Blánaid's inheritance and just picked her up from school.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Reframes the whole season: the sisters were fighting the wrong threat, and Blánaid is now in the actual danger.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The cliff",
+          "text": "Angelica bludgeons Ian and the sisters try to dump the body, but he tumbles off a cliff still alive; Houlihan learns his history and quietly sides with them.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Ends the season with Ian alive, Angelica arrested, and the lead detective on the sisters' side — an entirely new balance of power.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ian is alive in hospital, warned by the retiring Loftus to disappear and return Blánaid's money; Angelica sits in Houlihan's custody, and Houlihan has chosen to shield the sisters from the police force she still works for.",
+        "questions": [
+          "Will Ian actually leave Blánaid and the sisters alone, or come back for them?",
+          "Can Houlihan protect the sisters without her career or her ethics collapsing?",
+          "What will Angelica tell the police now she is the one in custody?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Eva Garvey",
+          "line": "Eldest surviving Garvey, now guardian to Blánaid and quietly sleeping with Grace's husband Ian."
+        },
+        {
+          "name": "Ursula Garvey",
+          "line": "Divorced from Donal; her grief-loose tongue gave Angelica the blackmail material that drives the season."
+        },
+        {
+          "name": "Bibi Garvey",
+          "line": "Trying for another child with her wife Nora, and increasingly suspicious of Eva's involvement with Ian."
+        },
+        {
+          "name": "Becka Garvey",
+          "line": "Youngest sister, pregnant by Joe and briefly re-entangled with Matt Claffin during Grace's funeral."
+        },
+        {
+          "name": "Blánaid",
+          "line": "Grace's teenage daughter, orphaned by her mother's crash and now the person Ian is really after."
+        },
+        {
+          "name": "Grace Garvey",
+          "line": "JP's widow and the sister who killed him; dies fleeing the police in the second episode."
+        },
+        {
+          "name": "Roger Muldoon",
+          "line": "The neighbour who helped Grace stage JP's death, still tormented by guilt and blindsided by his own sister's arrival."
+        },
+        {
+          "name": "Angelica Muldoon",
+          "line": "Roger's pious, meddling sister; blackmailed the Garveys, was left for dead at sea, and is now in police custody after bludgeoning Ian."
+        },
+        {
+          "name": "Ian / Cormac",
+          "line": "Grace's charming new husband, exposed as a disgraced abusive ex-cop from Tyrone; alive in hospital after his fall from a cliff.",
+          "note": "known to the sisters as Ian, real name Cormac"
+        },
+        {
+          "name": "Detective Houlihan",
+          "line": "The investigator who has quietly chosen to shield the sisters after realising Ian is the real danger."
+        }
+      ]
+    }
+  }
+}

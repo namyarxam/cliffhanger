@@ -1,0 +1,367 @@
+{
+  "slug": "tom-clancy-s-jack-ryan",
+  "generatedFor": "Tom Clancy's Jack Ryan",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The analyst",
+          "text": "CIA financial analyst Jack Ryan traces $9 million in suspicious transfers to a rising Yemeni terrorist named Suleiman, and his new boss James Greer drags him into the field.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Jack, Greer, and the pattern of a desk analyst pulled into operations that defines the series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Suleiman revealed",
+          "text": "A Yemen interrogation collapses when the base is attacked; the bodyguard the CIA had in custody is freed and turns out to be Suleiman himself.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The moment Jack realises the CIA has misread the target — the inciting misjudgement that sets the season in motion.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Hanin defects",
+          "text": "Suleiman's wife Hanin flees his compound with her daughters, refusing to raise them under his rule; her escape becomes the CIA's only reliable route into him.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Hanin's defection is the intelligence lever that lets Jack and Greer close the loop on Suleiman for the rest of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Paris sarin",
+          "text": "Suleiman consolidates control by ousting an ISIS leader and taking hostage doctors, while his French cell releases sarin at a Paris priest's funeral.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Proves the operational reach of his network in Europe and raises the stakes of stopping him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Impersonating Ali",
+          "text": "Jack kills Suleiman's brother Ali in France, then poses as him online to confirm Hanin has fled; he and Greer extract her and her daughters from Turkey.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Ties the two threads together — Ali's death, the deception, and Hanin secured — into the endgame against Suleiman.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Ebola bait",
+          "text": "A JSOC raid frees the hostage doctors but Suleiman has already infected them with weaponised Ebola and slipped away with his son Samir toward the US.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The rescue is a trap: the doctors are the delivery vector for the real attack, forcing Jack from Europe to Washington.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Washington attack",
+          "text": "Suleiman tries to release cesium into a DC hospital to kill President Pickett; Jack chases and shoots him at a train station before he can trigger the device.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Resolves the season's threat, kills the antagonist, and reshapes the CIA chessboard — Jack takes T-FAD, Greer heads to Moscow.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Suleiman network is dismantled and Samir is returned to Hanin. Greer is promoted to deputy station chief in Moscow, Jack replaces him running T-FAD, and Cathy is left knowing Jack has lied to her about who he is.",
+        "questions": [
+          "Can Jack and Cathy rebuild anything after she learns he is CIA?",
+          "What will Jack do with T-FAD now that he is the one running it?",
+          "What does Moscow put in front of Greer next?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jack Ryan",
+          "line": "Former Marine turned CIA financial analyst who broke the Suleiman case and now leads the Terror, Finance and Arms Division."
+        },
+        {
+          "name": "James Greer",
+          "line": "Jack's blunt, veteran boss with a burned past in Karachi, newly promoted to deputy station chief in Moscow."
+        },
+        {
+          "name": "Cathy Mueller",
+          "line": "Infectious-disease doctor dating Jack; she has just discovered he works for the CIA and is furious he lied.",
+          "note": "Investigated the Ebola case that exposed Suleiman's biological plot."
+        },
+        {
+          "name": "Mousa Bin Suleiman",
+          "line": "French-raised jihadist who built a European cell and attacked the US with cesium and Ebola; killed by Jack in DC."
+        },
+        {
+          "name": "Hanin",
+          "line": "Suleiman's estranged wife, now in US custody with her daughters and son Samir after her defection broke the case."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Caracas trip",
+          "text": "Jack tracks suspicious Venezuelan transactions and flies to Caracas with Senator Jamie Moreno to confront President Nicolás Reyes over a suspected nuclear shipment.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the season's political frame: a US investigation into Reyes wrapped inside a diplomatic visit.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Moreno killed",
+          "text": "A hired assassin, Max Schenkel, ambushes the convoy and kills Moreno; Reyes denies involvement while the paid-off head of security is hunted down.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The killing traps Jack in Venezuela and turns the investigation from cargo to conspiracy.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The team forms",
+          "text": "Greer arrives in Caracas under a heart-condition cloud and joins Jack and station chief Mike November to prove Reyes was behind the assassination.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Establishes Mike November as a core teammate and puts Greer's health on the board.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · London ambush",
+          "text": "Jack and German agent Harry Baumann corner Max in London; Harry executes his former lover Max to bury the trail back to whoever hired him.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Cuts off the cleanest lead to Reyes and forces Jack back into Venezuela for the confrontation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Embassy defied",
+          "text": "Reyes shuts the US Embassy and orders everyone out; Jack, Greer and Mike refuse to leave, and Greer is betrayed and taken prisoner.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Turns the season from investigation into rescue and makes Reyes's position openly hostile.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The jungle camp",
+          "text": "Jack rescues Greer from the palace and films a jungle prison camp of Reyes's executed opponents; he leaks the footage to news agencies worldwide.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The single act that turns the country against Reyes and reframes Jack's mission as regime accountability.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Bonalde wins",
+          "text": "Reyes shuts down the polls and declares victory, but the leaked footage triggers riots that storm the palace and Gloria Bonalde is confirmed as the new president.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Closes the Venezuela arc; Reyes is out, Bonalde is in, and the team walks away intact.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Reyes is toppled, Bonalde is Venezuela's new president, and Jack, Greer and Mike fly out cleanly. Greer's heart condition is still hanging over him and the team has been forged into a unit that operates well past the letter of its orders.",
+        "questions": [
+          "Can Greer keep working in the field with his heart failing?",
+          "Where do Jack and this team point themselves next?",
+          "How much longer will the CIA tolerate Jack ignoring recall orders?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jack Ryan",
+          "line": "Head of T-FAD, increasingly willing to defy his own chain of command to see a case through."
+        },
+        {
+          "name": "James Greer",
+          "line": "Now Jack's field partner in Venezuela, quietly managing a serious heart condition that could end his operational career."
+        },
+        {
+          "name": "Mike November",
+          "line": "CIA station chief in Caracas who threw in with Jack and Greer against orders; a reliable operator on the ground."
+        },
+        {
+          "name": "Nicolás Reyes",
+          "line": "Deposed president of Venezuela, exposed as the man behind Moreno's assassination and the jungle killings."
+        },
+        {
+          "name": "Gloria Bonalde",
+          "line": "Opposition candidate who won the presidency after Reyes tried to steal it; the new face of the government the US will now deal with."
+        },
+        {
+          "name": "Senator Jamie Moreno",
+          "line": "US senator assassinated in Caracas alongside Jack; his killing is what pinned Jack to the country in the first place."
+        },
+        {
+          "name": "Max Schenkel",
+          "line": "Cold, professional assassin killed in London by Harry; the paid gun who murdered Moreno."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Sokol reactivates",
+          "text": "In Prague, Russian defence minister Popov is shot dead at a soccer match; Jack's asset Zoya warns him the Soviet-era Sokol nuclear plan has been reactivated.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Opens the season on two synchronised shocks — an assassination and a live nuclear conspiracy Jack alone believes in.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Framed and flees",
+          "text": "A retrieval mission on a Greek beach collapses: the defecting scientist Yuri is killed and Jack is framed for shooting a Greek officer, forcing him underground.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Turns Jack into a fugitive for most of the season, which shapes every subsequent decision.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Covered from inside",
+          "text": "Jack goes on the run across Europe with Mike November, while Greer and Rome station chief Elizabeth Wright quietly cover for him against CIA orders.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces Wright as the ally willing to shield Jack — the relationship that carries into her rise afterwards.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Luka's real side",
+          "text": "Russian veteran Luka Goncharov reveals himself as an ally: a rogue faction, not the Russian government, is driving Sokol to trigger a Soviet revival.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The season's central pivot — the enemy is a clique inside Moscow, and Luka is inside it working against it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Alena taken",
+          "text": "Czech President Alena Kovac is kidnapped by her own security chief on orders of her father Petr; her rescue exposes Petr as one of the rogue conspirators.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Makes the Czech president a first-hand target of the plot and puts her personally in the fight against it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Tunnel bomb",
+          "text": "Jack diverts a nuclear-armed Russian truck into a NATO tunnel and buries the device, blocking the trigger for war but not the coup driving it.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Neutralises the physical weapon and forces the story to Moscow for the political finish.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Coup collapses",
+          "text": "In Moscow, Luka baits Defence Minister Petrov into confessing on tape; President Surikov orders arrests and Petrov is shot by Kremlin security.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Ends the coup, clears Jack, and elevates Wright — the state of play the next season inherits.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Sokol coup is broken, war is averted, and Jack and Greer receive the Intelligence Star from Wright. Luka Goncharov, the Russian who made it all possible, is taken away and, it is implied, quietly killed for his part.",
+        "questions": [
+          "Is Luka actually dead, or was he protected in some way we cannot see?",
+          "What position does Wright's win put her in next?",
+          "What will Jack, now cleared and decorated, be asked to do with that standing?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jack Ryan",
+          "line": "Cleared of the frame-up and awarded the Intelligence Star; the CIA's proven point man for high-stakes off-book operations."
+        },
+        {
+          "name": "James Greer",
+          "line": "Also decorated for Sokol; still Jack's closest partner and increasingly the political shield around his work."
+        },
+        {
+          "name": "Elizabeth Wright",
+          "line": "Rome station chief who backed Jack through the fugitive months and earned the White House's confidence for it."
+        },
+        {
+          "name": "Mike November",
+          "line": "Jack's on-the-ground partner throughout the run across Europe and into Russia; now a fixture of the team."
+        },
+        {
+          "name": "Luka Goncharov",
+          "line": "Veteran Russian officer who worked from inside the rogue faction to destroy it, taken away in Moscow after the coup collapsed."
+        },
+        {
+          "name": "Alena Kovac",
+          "line": "President of the Czech Republic who disowned her conspirator father and helped carry the plot's exposure to Moscow."
+        },
+        {
+          "name": "Petr Kovac",
+          "line": "Alena's father, exposed as the deserter behind the Sokol massacre and a leader of the rogue faction; left to die by his daughter."
+        },
+        {
+          "name": "Alexei Petrov",
+          "line": "Russian defence minister who led the attempted coup; shot dead by Kremlin security when Surikov ordered the arrests."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Wright and Jack in charge",
+          "text": "Wright is now CIA Director with Jack as her acting Deputy; the president of Nigeria has been assassinated and Jack suspects former director Miller was behind it.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the season's power configuration and points suspicion inward at the CIA's own recent past.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Chavez arrives",
+          "text": "Domingo Chavez, a Marquez cartel cousin, breaks into Jack's home and demands he restore funding to nine covert operations Miller ran through a black program called Pluto.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces Chavez and Pluto in one move — the two pieces the rest of the season is built around.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Miller silenced",
+          "text": "Miller is found dead in a staged suicide; Jack pieces together that Pluto ran through the Marquez cartel, now allying with an Asian outfit called the Silver Lotus Triad.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Kills the man who could explain everything and locks the shape of the enemy — cartel plus triad, with a CIA program inside it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Off the books",
+          "text": "Jack resigns as Deputy and goes off-book with Chavez and Mike to raid the cartel in Mexico; interrogations point them to a black-market hub in Dubrovnik run by Olafsky.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Puts Jack outside the CIA where the rest of the season plays out, and moves the map from Mexico to Europe to Asia.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Zeyara exposed",
+          "text": "In Dubrovnik the team steals mysterious 'triggers'; the buyer is philanthropist Zeyara Lemos, close to Wright and Cathy, who is secretly running the triad's operations.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Names the real antagonist and plants her inside Wright's and Cathy's personal circle, raising the stakes at home.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Myanmar",
+          "text": "In Myanmar, undercover triad man Chao Fah helps them destroy the trigger stockpile but is killed; Zeyara captures and tortures Jack before Chavez rescues him and kills her.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Physically removes the antagonist and shifts the finale to stopping what she has already set in motion.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Henshaw exposed",
+          "text": "The team defuses Zeyara's bombs at the US border and Jack exposes Senator Henshaw as her inside man in Washington, closing the loop on the Miller-era conspiracy.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Resolves the season's central conspiracy back at the political level where it started with the Nigerian assassination.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Zeyara–triad–cartel network is broken, the bombs are stopped at the border, and Miller's Pluto program is publicly tied to a sitting US senator. Wright is confirmed CIA Director and Jack is again inside the building.",
+        "questions": [
+          "How deep does the political fallout from Henshaw's exposure actually run?",
+          "What becomes of Chavez once his usefulness to Jack is over?",
+          "Can Jack and Cathy hold together after she was used as bait to get to him?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jack Ryan",
+          "line": "Returned to the CIA after exposing the Miller-era conspiracy from outside it; Wright's proven right hand."
+        },
+        {
+          "name": "Elizabeth Wright",
+          "line": "Confirmed CIA Director, publicly cleared of any tie to Zeyara and stronger for having survived Miller's shadow."
+        },
+        {
+          "name": "James Greer",
+          "line": "Still Jack's inside partner at Langley; survived an assassination attempt tied to the Pluto cover-up."
+        },
+        {
+          "name": "Mike November",
+          "line": "Jack's off-book operator through Mexico, Croatia and Myanmar; the constant on the team's field side."
+        },
+        {
+          "name": "Domingo Chavez",
+          "line": "Ex-Pluto operative and Marquez cousin who forced Jack into the case and ended it by killing Zeyara; now unattached and alive."
+        },
+        {
+          "name": "Cathy Mueller",
+          "line": "Back in Jack's life; lured to Myanmar by Zeyara as leverage and escaped."
+        },
+        {
+          "name": "Zeyara Lemos",
+          "line": "Philanthropist front for the Silver Lotus Triad; killed by Chavez in Myanmar after torturing Jack."
+        }
+      ]
+    }
+  }
+}

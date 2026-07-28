@@ -1,0 +1,279 @@
+{
+  "slug": "siren",
+  "generatedFor": "Siren",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · A mermaid on the road",
+          "text": "Ben finds a naked stranger, Ryn, wandering into Bristol Cove; she is a mermaid searching for her sister Donna, taken by the military.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Ryn's identity, her bond with Ben and Maddie, and the driving mystery of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The military's secret",
+          "text": "Ben and Maddie trace a strange sonic device and realise the government is experimenting on captured merpeople using stem cells from Donna.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets up the military-versus-merpeople conflict that shapes every later season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Donna comes back angry",
+          "text": "Donna escapes the base and returns to town, but torture has left her wanting humans dead, opening a rift with the more cautious Ryn.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Introduces the human-hating faction inside the mermaid world.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Sean McClure is killed",
+          "text": "Xander's father Sean is dragged under and killed by merpeople at sea, turning grieving Xander into someone hunting them for revenge.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Xander's grievance against mermaids drives his stance for the next two seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Ryn is marked for death",
+          "text": "The alpha Katrina and the warrior Levi arrive to kill Ryn under an old law meant to prevent a human-mermaid child from ever being born.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Names the taboo around hybrids that Ryn will later break.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Donna dies in the streets",
+          "text": "Merpeople and townspeople clash openly; Xander shoots Donna dead, and the song she and Ryn have sung is already poisoning Ben's mind.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The song's damage to Ben becomes the throughline for his addiction arc next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Helen's secret, Ryn's exit",
+          "text": "Helen reveals she is one-eighth mermaid, descended from Charles Pownall's mermaid; Ryn leaves town so her song stops destroying Ben.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Opens the hybrid bloodline story and resets Ben and Maddie without Ryn as season 2 begins.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ryn has fled back to the sea to spare Ben from her song's damage, but the song is still lodged in his head and the town now knows something at sea is killing its own.",
+        "questions": [
+          "Will Ryn return to Ben and Maddie, or stay away for their sake?",
+          "How much longer can Ben resist the pull of the siren song?",
+          "What will the military do now that a mermaid has escaped their grasp?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Ryn",
+          "line": "Mermaid who came ashore to save her sister Donna; has left town believing her song is harming Ben."
+        },
+        {
+          "name": "Ben Powell",
+          "line": "Marine biologist who took Ryn in; addicted to her song and still hearing it after she has gone."
+        },
+        {
+          "name": "Maddie Bishop",
+          "line": "Ben's girlfriend and Ryn's closest human ally; the sheriff's daughter, quietly rattled by how deep Ben's bond with Ryn goes."
+        },
+        {
+          "name": "Helen Hawkins",
+          "line": "Bristol Cove shopkeeper just revealed as a Pownall-line hybrid, one-eighth mermaid herself."
+        },
+        {
+          "name": "Xander McClure",
+          "line": "North Star fisherman whose father Sean was killed at sea; shot Donna dead and now knows mermaids are real."
+        },
+        {
+          "name": "Sheriff Dale Bishop",
+          "line": "Maddie's father, trying to explain a crime wave the town council will not accept was caused by mermaids."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · The pack comes ashore",
+          "text": "A mermaid pack led by Katrina arrives on land and must be taught to pass as human, while Ben treats his addiction to Ryn's song like a drug.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Reframes the show around merpeople living among people, and Ben's compromised state.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The hybrids exist",
+          "text": "Helen follows a DNA trail to a hidden community of mermaid-human hybrids — Rick, Beth, Bryan and Leena — living quietly for generations.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Introduces the hybrid faction that becomes central to the Hope storyline.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ted's oil company",
+          "text": "Ted Pownall is exposed as an executive of the oil company whose drilling and sonic tests are poisoning the merpeople's waters.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Puts Ben in direct conflict with his father and gives the season its antagonist.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The rig goes down",
+          "text": "Merpeople and humans sabotage the drilling rig together; Sarge is mortally wounded and the North Star burns to the waterline.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Costs Xander his livelihood and Helen her merman love, resetting both of them.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ryn cures Elaine",
+          "text": "Ryn's stem cells cure Elaine Pownall's paralysis but destabilise Ryn, and scans show her song has left dark lesions in Ben's and Maddie's brains.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Establishes stem-cell power and the physical toll of the song, both critical next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ben lets Ian drown",
+          "text": "Reporter Ian films Ryn and prepares to expose the merpeople; when his car crashes into the sea, Ben chooses to leave him to die and lies to Maddie.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "Ben's guilt over this killing shadows every choice he makes in season 3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · A hybrid pregnancy",
+          "text": "With merpeople no longer able to conceive in the sea, Ryn's embryo is fertilised by Bryan and implanted in his mate Leena to be carried on land.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "Sets up the pregnancy that produces Hope, the emotional core of season 3.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ryn's child is growing inside the hybrid Leena, Ben is now a killer keeping that secret from Maddie, and Ted Pownall is haunted by memories he cannot yet let himself believe.",
+        "questions": [
+          "Will Maddie discover what Ben did to Ian?",
+          "Will the hybrid pregnancy actually produce a viable child?",
+          "How long until Ted Pownall faces what he saw the night of his boat accident?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Ryn",
+          "line": "Living among humans, dangerously unstable from her time on land; her embryo is now being carried by a hybrid."
+        },
+        {
+          "name": "Ben Powell",
+          "line": "Junkie for Ryn's song and now a killer, hiding from Maddie that he let Ian drown."
+        },
+        {
+          "name": "Maddie Bishop",
+          "line": "Brain-scarred by the song but still Ryn's protector; does not know what Ben did in the water."
+        },
+        {
+          "name": "Helen Hawkins",
+          "line": "Bridge between the mermaids and the hybrid community she has just discovered."
+        },
+        {
+          "name": "Xander McClure",
+          "line": "Boat destroyed, love Nicole gone shifty, working as a bartender and warier of merpeople than ever."
+        },
+        {
+          "name": "Ted Pownall",
+          "line": "Ben's father and oil-company man, tormented by half-buried memories of seeing a mermaid years ago."
+        },
+        {
+          "name": "Elaine Pownall",
+          "line": "Cured of her paralysis by Ryn's stem cells and now aware of what her family has been hiding."
+        },
+        {
+          "name": "Bryan and Leena",
+          "line": "Hybrid couple who agreed to carry Ryn and Bryan's embryo when merpeople could no longer conceive at sea."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Tia arrives",
+          "text": "A tyrannical mermaid, Tia, comes down from the northern seas intending to unite every mer-colony and wipe out humanity for stealing her song.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Names the season's antagonist and the existential stakes for the town.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ben injects himself",
+          "text": "Desperate to keep up with the mermaids, Ben injects himself with stem cells from a dead mermaid and becomes superhumanly fast, strong and hard to kill.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The stem cells are the mechanism of Ben's eventual transformation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Hope is born",
+          "text": "Ryn and Cami confront the hybrids and Bryan is killed in the struggle; Leena gives birth to Ryn's daughter Hope, then dies moments later.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Hope's existence and Ryn's motherhood reframe every choice from this point on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Robb the merman",
+          "text": "Maddie learns her new boyfriend Robb is himself a merman from an Alaskan colony, unlocking a potential army against Tia.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Sets up the outside colony that ultimately tips the final battle.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ben starts to change",
+          "text": "After too long underwater, Ben begins physically transforming into a merman; he chooses to purge the stem cells and remain human with Ryn.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Names the choice Ben ultimately fails to keep, driving the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The song poisons the town",
+          "text": "Tia broadcasts a weaponised siren song by phone; Ted Pownall is among the townspeople it kills before Robb's colony delivers a cure.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Kills Ted and demonstrates the scale of Tia's threat before the final fight.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ryn wins, Ben vanishes",
+          "text": "Ryn kills Tia and is bowed to as alpha of every colony, but Ben has finished transforming and swum away into open ocean, presumed dead by everyone else.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Locks in the two open threads a returning viewer would need to remember.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ryn is alpha of all merpeople and raising Hope on the coast, but Ben is alive underwater as a merman and swimming somewhere no one knows. Maddie believes him dead and is leaving with Robb.",
+        "questions": [
+          "Where is Ben going, and will he ever come back to Ryn and Hope?",
+          "Can Ryn actually hold every mer-colony together as alpha?",
+          "Will Maddie learn Ben is alive, and what will that do to her new life with Robb?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Ryn",
+          "line": "Alpha of all merpeople colonies, mother to Hope, waiting on a rock in the sea for Ben to return."
+        },
+        {
+          "name": "Ben Powell",
+          "line": "Fully transformed into a merman by his own stem-cell injections; alive but swimming to parts unknown."
+        },
+        {
+          "name": "Maddie Bishop",
+          "line": "Believes Ben is dead; leaving town with Robb to work on his ocean-cleanup project."
+        },
+        {
+          "name": "Hope",
+          "line": "Ryn and Ben's daughter, growing fast in the way merpeople children do, being raised between land and sea."
+        },
+        {
+          "name": "Robb Wellens",
+          "line": "Merman from an Alaskan colony, Maddie's partner and the ally who turned the final battle."
+        },
+        {
+          "name": "Helen Hawkins",
+          "line": "Hybrid elder and steady anchor for the hybrid community after the war."
+        },
+        {
+          "name": "Xander McClure",
+          "line": "The new sheriff of Bristol Cove after Dale Bishop's death, cured of the song."
+        }
+      ]
+    }
+  }
+}

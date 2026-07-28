@@ -1,0 +1,101 @@
+{
+  "slug": "naruto-shippuden",
+  "generatedFor": "Naruto Shippūden",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Jinchūriki revealed",
+          "text": "After failing his Academy graduation, Naruto is tricked into stealing a forbidden scroll and learns he carries the Nine-Tails fox that devastated Konoha twelve years ago.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Naruto's dual identity — hero-in-training and demon vessel — that drives every conflict from here on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Team 7 forms",
+          "text": "Assigned to Team 7 with rival Sasuke and crush Sakura under Jōnin Kakashi, Naruto passes a test designed to fail them by showing they'll defy orders for each other.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Locks in the Naruto/Sasuke/Sakura/Kakashi unit whose bonds and fractures are the show's spine.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Land of Waves",
+          "text": "Escorting a bridge builder home, Team 7 clashes with Rogue Ninja Zabuza and his ice-wielding apprentice Haku, both hired by the tyrant Gatō to kill their client.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "First real mission establishes the Rogue Ninja pattern and the ideology — tools vs. bonds — Naruto will carry forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Sharingan awakens",
+          "text": "Trapped in Haku's ice mirrors, Sasuke shields Naruto from a killing blow and awakens the Uchiha Sharingan; Naruto's grief taps the Nine-Tails' chakra for the first time.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "Both signature powers — Sasuke's Sharingan and Naruto's fox-chakra — surface here and define every fight after.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Chūnin Exams begin",
+          "text": "Back in Konoha, Team 7 is nominated for the Chūnin Exams and meets the Sand siblings — including the unsettling Gaara, whose own brother is terrified of him.",
+          "anchorEpisode": 20,
+          "whyLoadBearing": "Introduces Gaara and the Sand Village, whose intentions are the axis of the coming exam arc.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Orochimaru's mark",
+          "text": "In the Forest of Death, the rogue Sannin Orochimaru — disguised as a Grass Genin — attacks Sasuke, brands him with a cursed mark, and promises he'll come back for its power.",
+          "anchorEpisode": 30,
+          "whyLoadBearing": "The mark is the seed of Sasuke's defection arc; Orochimaru's infiltration reframes the exam as a strike on Konoha itself.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Sakura's stand",
+          "text": "With Sasuke unconscious from the mark and Naruto sealed by Orochimaru, Sakura cuts her hair to break a Sound Genin's grip; Ino, Shikamaru and Chōji arrive to back her up.",
+          "anchorEpisode": 32,
+          "whyLoadBearing": "Confirms Sakura as a fighter and puts Ino-Shika-Chō in the field, redrawing rookie alliances mid-exam.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Team 7 is stranded deep in the Forest of Death mid-exam. Sasuke carries an unknown cursed mark placed by a legendary rogue ninja who has openly claimed him, Naruto's chakra is sealed, and the Sound trio pressing them has just been met head-on by Ino, Shikamaru and Chōji.",
+        "questions": [
+          "What does Orochimaru's cursed mark do to Sasuke, and how far will he chase its power?",
+          "Can Team 7 collect both scrolls and reach the tower before the exam runs out?",
+          "What is Gaara really — and what happens when the exam turns to open combat?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Naruto Uzumaki",
+          "line": "Genin of Team 7 and jinchūriki of the Nine-Tailed Fox; orphan raised in ridicule who has declared he'll become Hokage."
+        },
+        {
+          "name": "Sasuke Uchiha",
+          "line": "Naruto's rival on Team 7 and sole survivor of a clan massacre; awakened his Sharingan in the Land of Waves and now bears Orochimaru's cursed mark."
+        },
+        {
+          "name": "Sakura Haruno",
+          "line": "Third member of Team 7 and longtime Sasuke fangirl; just cut her hair in the Forest of Death to defend both unconscious teammates alone."
+        },
+        {
+          "name": "Kakashi Hatake",
+          "line": "Team 7's Jōnin sensei, a copy-ninja whose left eye is a transplanted Sharingan; deceptively lazy demeanour hides an elite reputation."
+        },
+        {
+          "name": "Gaara",
+          "line": "Sand Village Genin at the Chūnin Exams; disturbingly calm, disturbingly violent, and even his older brother Kankurō won't cross him."
+        },
+        {
+          "name": "Orochimaru",
+          "line": "Rogue Sannin and Anko's former teacher; infiltrated the exam disguised as a Grass Genin to brand Sasuke and mark him as his own."
+        },
+        {
+          "name": "Kabuto Yakushi",
+          "line": "Suspiciously helpful veteran Chūnin candidate handing out detailed intel on every rookie in the room, including the Sand siblings and Rock Lee."
+        },
+        {
+          "name": "Hiruzen Sarutobi",
+          "line": "Third Hokage; approved Team 7's entry into the exams without knowing his former student Orochimaru had already targeted Sasuke."
+        }
+      ]
+    }
+  }
+}

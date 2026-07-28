@@ -1,0 +1,705 @@
+{
+  "slug": "parenthood",
+  "generatedFor": "Parenthood",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Sarah moves home",
+          "text": "Single mother Sarah moves back to Berkeley with teens Amber and Drew; her siblings and parents make room in their orderly adult lives.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the premise and Sarah's family unit that anchors every later storyline.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Max's diagnosis",
+          "text": "Adam and Kristina learn their young son Max has Asperger's; they share it with the siblings but hide it from Max himself, and Adam quietly becomes the family's fixer.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The secret from Max is a ticking bomb that detonates in S2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Jabbar arrives",
+          "text": "Crosby's ex Jasmine reappears with five-year-old Jabbar; a paternity test confirms Crosby is the father, dragging the commitment-phobe into fatherhood.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the Jasmine/Jabbar dynamic that defines Crosby's entire arc.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Zeek's affair",
+          "text": "Sarah discovers Zeek had an affair and secretly lost the family's money; Camille throws him out but eventually accepts his public plea to come home.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Fractures the parents' marriage — the foundation everyone else stands on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Cousins collide",
+          "text": "Amber sleeps with Haddie's ex-boyfriend Steve, blowing up the cousins' friendship and forcing Sarah and Kristina into a bitter argument over parenting.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Cements the Sarah/Kristina friction and Amber's role as the disruptive teen.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Jasmine's contract",
+          "text": "Jasmine wins a New York dance contract and moves with Jabbar; Crosby is left in Berkeley deciding whether to uproot his life for his son.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "S2 opens with Crosby stranded and Jabbar in New York — the beat that sets that up.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Amber runs, Zeek returns",
+          "text": "Amber runs away after being blamed for the family's rifts; Sarah, Kristina and Haddie find her together, and Zeek publicly wins Camille back with the family watching.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Resets both the parents' marriage and the sisters-in-law rift heading into S2.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Braverman family has absorbed Sarah's chaos and forgiven Zeek's affair, but Crosby is standing on a dock deciding whether to follow his newly discovered son across the country, and Max still doesn't know why school is so hard for him.",
+        "questions": [
+          "Will Crosby actually move to New York with Jasmine and Jabbar, or lose them?",
+          "When will Adam and Kristina tell Max the truth about his diagnosis?",
+          "Can Zeek's marriage survive the affair he was just barely forgiven for?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Sarah Braverman",
+          "line": "Recently divorced mother of Amber and Drew, just moved home to Berkeley to restart her life at forty."
+        },
+        {
+          "name": "Adam Braverman",
+          "line": "Sarah's steady older brother, married to Kristina; the family's reflexive fixer with a demanding job."
+        },
+        {
+          "name": "Kristina Braverman",
+          "line": "Adam's wife and mother to teen Haddie and young Max, learning to advocate after Max's Asperger's diagnosis."
+        },
+        {
+          "name": "Max Braverman",
+          "line": "Adam and Kristina's young son, newly diagnosed with Asperger's — the family knows, he doesn't."
+        },
+        {
+          "name": "Haddie Braverman",
+          "line": "Adam and Kristina's teenage daughter, freshly hurt after her cousin Amber slept with her ex-boyfriend Steve."
+        },
+        {
+          "name": "Crosby Braverman",
+          "line": "Sarah's commitment-phobic younger brother, blindsided by fatherhood after learning about Jabbar."
+        },
+        {
+          "name": "Jasmine Trussell",
+          "line": "Crosby's ex and Jabbar's mother, a dancer just moving to New York for a company contract."
+        },
+        {
+          "name": "Julia Braverman-Graham",
+          "line": "The youngest sibling, a corporate lawyer married to stay-at-home Joel and mother to daughter Sydney."
+        },
+        {
+          "name": "Joel Graham",
+          "line": "Julia's stay-at-home husband, the calm counterweight to her ambition."
+        },
+        {
+          "name": "Amber Holt",
+          "line": "Sarah's rebellious teenage daughter, just reconciled with her mother after running away."
+        },
+        {
+          "name": "Zeek Braverman",
+          "line": "Patriarch just publicly forgiven for an affair and for losing the family's money in bad investments."
+        },
+        {
+          "name": "Camille Braverman",
+          "line": "Matriarch who took Zeek back after his affair; quietly rediscovering her painting on her own terms."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Sarah at Adam's job",
+          "text": "Adam pitches Sarah's shoe-tracker idea to his boss Gordon and hires her at the company; her later affair with Gordon costs Adam his job when Gordon sells the company.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up Adam's unemployment that drives S3's Luncheonette purchase.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Crosby proposes",
+          "text": "Crosby wins Jasmine back after her European tour and proposes to her on Halloween night while trick-or-treating with Jabbar.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The engagement he then destroys is the whole spine of Crosby's second half.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Haddie and Alex",
+          "text": "Haddie falls for Alex, an older recovering alcoholic who volunteers at a food bank; her parents forbid it and she moves out to her grandparents' in protest.",
+          "anchorEpisode": 14,
+          "whyLoadBearing": "Haddie's first real independence and the wedge that puts Alex in the family circle.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Sarah writes a play",
+          "text": "Sarah begins a stage play about her ex Seth with the help of Mark, who advises her on the writing.",
+          "anchorEpisode": 18,
+          "whyLoadBearing": "Introduces Mark Cyr, Sarah's main partner through S3, and her writing life.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Julia can't conceive",
+          "text": "Julia and Joel try for a second child and learn Julia is unlikely to get pregnant due to scarring; she begins to think about adoption.",
+          "anchorEpisode": 19,
+          "whyLoadBearing": "Directly seeds Julia's Zoe/adoption arc that dominates S3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Crosby wrecks it",
+          "text": "Crosby sleeps with Max's aide Gaby the night of Max's birthday; the confrontation blows up his engagement, and Max overhears the fight and learns he has Asperger's.",
+          "anchorEpisode": 17,
+          "whyLoadBearing": "Fires two long-buried storylines at once: Crosby's betrayal of Jasmine and Max's diagnosis reveal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Crash and pregnancy",
+          "text": "Amber, rejected from every college, gets high and is T-boned in a coworker's car; at the hospital Adam is finally fired and Kristina reveals she is pregnant with their third child.",
+          "anchorEpisode": 22,
+          "whyLoadBearing": "The triple hit — Amber's near-death, Adam's unemployment, Kristina's pregnancy — that launches S3.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Adam is out of a job with a fourth mouth on the way, Crosby has blown up his engagement to Jasmine, and Amber has just survived a crash caused by her own spiral — while Max, for the first time, knows what's wrong with him.",
+        "questions": [
+          "What will Adam do for money now with a third child coming?",
+          "Can Crosby ever earn back Jasmine's trust after cheating with Gaby?",
+          "Will Amber straighten out, or is she starting to become her father?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Sarah Braverman",
+          "line": "Writer with a produced play about her ex, after a burned affair with Adam's boss."
+        },
+        {
+          "name": "Adam Braverman",
+          "line": "Freshly fired from the company he brought Sarah into, expecting a third child with Kristina."
+        },
+        {
+          "name": "Kristina Braverman",
+          "line": "Pregnant with a daughter after months of overwork and parenting Max through his Asperger's revelation."
+        },
+        {
+          "name": "Max Braverman",
+          "line": "Now knows he has Asperger's after overhearing Adam and Crosby's fight; still working out what it means."
+        },
+        {
+          "name": "Haddie Braverman",
+          "line": "Living at her grandparents' after Adam and Kristina forbade her relationship with Alex."
+        },
+        {
+          "name": "Crosby Braverman",
+          "line": "Single again after cheating on Jasmine with Max's aide Gaby, estranged from the woman he was about to marry."
+        },
+        {
+          "name": "Jasmine Trussell",
+          "line": "Broke off her engagement to Crosby after his affair; raising Jabbar alone back in Berkeley."
+        },
+        {
+          "name": "Julia Braverman-Graham",
+          "line": "Just learned she cannot easily conceive a second child; starting to consider adoption with Joel."
+        },
+        {
+          "name": "Joel Graham",
+          "line": "Julia's husband, quietly supporting her through the fertility grief."
+        },
+        {
+          "name": "Amber Holt",
+          "line": "Just survived a serious car crash after spiraling from college rejections and drug use."
+        },
+        {
+          "name": "Zeek Braverman",
+          "line": "His marriage is stable but tested when he grows jealous of Camille's art teacher."
+        },
+        {
+          "name": "Camille Braverman",
+          "line": "Painting seriously again and rebuilding her marriage on her own terms."
+        },
+        {
+          "name": "Mark Cyr",
+          "line": "Mark — advises Sarah on her writing when she begins a story about Seth."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · The Luncheonette",
+          "text": "Adam and Crosby pool their money to buy the Luncheonette recording studio, staking Adam's family finances on Crosby's flakier ambitions.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The business that defines both brothers for the rest of the series begins here.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Nora arrives",
+          "text": "Kristina goes into labor while Adam is chasing a first big client; Crosby helps deliver Nora, and Kristina throws herself back into supermom mode.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Nora's birth and Adam's absence during it colors the rest of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Sarah and Mark, again",
+          "text": "Sarah refuses Mark's push for a baby and briefly reconnects with sober ex Seth; Mark returns at the season's finale to propose to her.",
+          "anchorEpisode": 18,
+          "whyLoadBearing": "Where Sarah's relationships stand — and Mark's still-open proposal — heading into S4.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Zoe changes her mind",
+          "text": "Julia latches onto Zoe, a pregnant coworker, and secures her promise to adopt the baby; Zoe reneges at the hospital and keeps her son.",
+          "anchorEpisode": 17,
+          "whyLoadBearing": "The failed adoption that leaves Julia and Joel primed to accept Victor.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Rachel's kiss",
+          "text": "The Luncheonette's new receptionist Rachel kisses Adam; he confesses to Kristina, while a lonely Crosby's own drunken slip with Jasmine rekindles their romance.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Resets both marriages — Adam's honesty stabilizes his, Crosby's slip restarts his engagement path.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Amber and Bob Little",
+          "text": "Amber's job on candidate Bob Little's mayoral campaign turns into a real relationship Kristina personally shuts down in his hotel room.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "Establishes Bob Little, whom Kristina will run against in S5.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Wedding and Victor",
+          "text": "Crosby and Jasmine finally marry in the Bravermans' backyard; the same evening, a case worker introduces Julia and Joel to a preteen foster boy named Victor.",
+          "anchorEpisode": 18,
+          "whyLoadBearing": "Two long-set-up families gain their new members — the twin engines of S4.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Crosby and Jasmine are married, Adam and Crosby own a functioning studio, and Sarah has a fresh proposal from Mark — while Julia and Joel have just invited a preteen boy neither of them knows into their living room.",
+        "questions": [
+          "Can Julia and Joel actually parent Victor, a ten-year-old who never chose them?",
+          "Will Sarah accept Mark's second proposal after refusing to have his baby?",
+          "Can the Luncheonette pay Adam's bills with two young kids and a newborn at home?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Sarah Braverman",
+          "line": "Just received a marriage proposal from Mark at Crosby's wedding; hasn't answered yet."
+        },
+        {
+          "name": "Adam Braverman",
+          "line": "Co-owner of the Luncheonette recording studio and new father to baby Nora."
+        },
+        {
+          "name": "Kristina Braverman",
+          "line": "Mother of Nora, back in full supermom mode with three kids."
+        },
+        {
+          "name": "Max Braverman",
+          "line": "Attending mainstream public school and slowly making friends despite social bumps."
+        },
+        {
+          "name": "Crosby Braverman",
+          "line": "Newlywed to Jasmine and Luncheonette co-owner — the family man he never was in his twenties."
+        },
+        {
+          "name": "Jasmine Trussell",
+          "line": "Now Jasmine Braverman; married to Crosby after forgiving his infidelity, running their household with Jabbar."
+        },
+        {
+          "name": "Julia Braverman-Graham",
+          "line": "About to parent a preteen foster boy after a failed private adoption devastated her."
+        },
+        {
+          "name": "Joel Graham",
+          "line": "Julia's steady husband, immediately ready to take Victor in as their son."
+        },
+        {
+          "name": "Amber Holt",
+          "line": "Back on her feet after the crash, working on the Bob Little campaign until Kristina ended her affair with him."
+        },
+        {
+          "name": "Zeek Braverman",
+          "line": "The family's patriarch, still solidly with Camille, taking on younger vets as new causes."
+        },
+        {
+          "name": "Camille Braverman",
+          "line": "Painting, running the family home, and pushing Zeek to grow up alongside her."
+        },
+        {
+          "name": "Mark Cyr",
+          "line": "Sarah's English-teacher partner, who just proposed to her at Crosby's wedding."
+        },
+        {
+          "name": "Victor Graham",
+          "line": "The ten-year-old foster child whose mother is incarcerated, just met Julia and Joel at their door."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Kristina's diagnosis",
+          "text": "During a routine mammogram Kristina is diagnosed with breast cancer, days after driving Haddie to Cornell for her freshman year.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The season's central storyline and the reason every other plotline reshapes.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Julia quits, Victor struggles",
+          "text": "Overwhelmed at her law firm, Julia has a breakdown and quits, becoming stay-at-home mother to Victor, who is failing to fit in at school or at home.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Julia losing her career identity while parenting Victor drives everything for her in S5.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Hank enters",
+          "text": "Sarah takes a photography assistant job with the gruff Hank Rizzoli; despite still being engaged to Mark, she starts becoming central to Hank's life and his daughter Ruby's.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Introduces Hank, who becomes Sarah's long-term partner from here forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Amber and Ryan",
+          "text": "Amber falls for Ryan, a young Afghanistan veteran Zeek befriends at the VA; his PTSD strains them, but by year's end they reconcile.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Introduces Ryan, whose instability becomes Amber's whole S5.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The septic shock",
+          "text": "Kristina goes into septic shock and records a farewell video for the family before pulling through; months later she rings the chemo bell cancer-free.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The near-death and the recovery both drive Kristina's restless energy in S5.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Sarah picks Hank",
+          "text": "Mark ends the engagement and Sarah picks Hank — just as Hank moves to Minnesota to be near his daughter Ruby.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "S5 opens with Sarah in a long-distance relationship this beat creates.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Victor and Aida",
+          "text": "Julia and Joel officially adopt Victor at a family ceremony; the same finale, Jasmine reveals to Crosby that she is pregnant with their second child.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "Two more kids formally join the Bravermans, reshaping both households for S5.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Kristina has beaten cancer, Victor is legally Julia and Joel's son, and Sarah has chosen Hank — who has just moved states to be near his daughter. Amber and Ryan are back together, but he is still fighting a war in his head.",
+        "questions": [
+          "Can Sarah and Hank actually make it work across state lines?",
+          "Is Ryan stable enough for Amber to build a life with?",
+          "Now that Victor is theirs, can Julia find any meaning outside her old career?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Sarah Braverman",
+          "line": "In a fresh long-distance relationship with Hank after Mark ended their engagement."
+        },
+        {
+          "name": "Hank Rizzoli",
+          "line": "Sarah's gruff photographer partner, just moved to Minnesota to be close to his daughter Ruby."
+        },
+        {
+          "name": "Adam Braverman",
+          "line": "Kristina's caregiver through cancer, still co-running the Luncheonette with Crosby."
+        },
+        {
+          "name": "Kristina Braverman",
+          "line": "Newly cancer-free after a scare that put her in septic shock; restless with what to do next."
+        },
+        {
+          "name": "Max Braverman",
+          "line": "Still at his mainstream public school, more opinionated and independent as he grows up."
+        },
+        {
+          "name": "Crosby Braverman",
+          "line": "Married to Jasmine and about to become a father for the second time."
+        },
+        {
+          "name": "Jasmine Braverman",
+          "line": "Just told Crosby she is pregnant with their daughter."
+        },
+        {
+          "name": "Julia Braverman-Graham",
+          "line": "Stay-at-home mother to Victor and Sydney after quitting her law firm in a breakdown."
+        },
+        {
+          "name": "Joel Graham",
+          "line": "Working a full-time construction job; distance quietly growing between him and Julia."
+        },
+        {
+          "name": "Victor Graham",
+          "line": "Julia and Joel's newly adopted son, still cautious about trusting a family that chose him."
+        },
+        {
+          "name": "Amber Holt",
+          "line": "Reconciled with Ryan after a rocky year, both trying to make his PTSD survivable."
+        },
+        {
+          "name": "Ryan York",
+          "line": "Young Afghanistan veteran with PTSD, Amber's partner; back in therapy at year's end."
+        },
+        {
+          "name": "Zeek Braverman",
+          "line": "Patriarch increasingly aware of his own limits, mentoring vets like Ryan at the VA."
+        },
+        {
+          "name": "Camille Braverman",
+          "line": "A steady maternal presence in the family, stepping in to support Kristina through her illness."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Ryan proposes",
+          "text": "Ryan comes home on leave from Kandahar and impulsively proposes to Amber; the family swallows its doubts and helps her plan the wedding.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The engagement is the frame the whole Amber/Ryan collapse hangs on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Kristina runs for mayor",
+          "text": "Restless post-cancer, Kristina runs for mayor against Bob Little; she loses on election night but resolves instead to open a school for kids like Max.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The Chambers Academy plan she starts here becomes S6's central project.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Julia and Joel split",
+          "text": "Joel throws himself into work with architect Peet as Julia unravels at home; Ed kisses her, and Joel moves out.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The separation that dominates the back half of the show.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Ryan unravels",
+          "text": "Ryan is arrested for a drunken bar fight and re-enlists in the Army; a shattered Amber goes to visit her sober father Seth for the first time in years.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Ryan's re-enlistment and Amber's turn to Seth reshape her entire trajectory.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The house is sold",
+          "text": "Camille joins an Italian art class alone and Zeek finally agrees to sell the Braverman family home to fulfill her long-deferred wishes.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "Losing the physical center of every previous season sets the tone for S6.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Hank confronts himself",
+          "text": "Suspecting he may be on the spectrum himself, Hank consults Max's specialist and uses what he learns to reconcile with Sarah for good.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Cements Sarah and Hank as a durable couple for S6's finale wedding.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The crash and the test",
+          "text": "Ryan is nearly killed in a car crash near his new base; Amber drives to San Diego with Hank, and afterwards is seen buying a pregnancy test.",
+          "anchorEpisode": 22,
+          "whyLoadBearing": "The hospital, the pregnancy, and Ryan's absence together power the S6 premiere.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ryan is broken in a hospital bed halfway across the country, Amber is holding a pregnancy test, Julia and Joel are separated and both have strayed, and the family home has been sold — the center of everything has come apart.",
+        "questions": [
+          "Will Ryan survive his crash, and can Amber raise a baby alone if he does?",
+          "Can Julia and Joel find their way back after both have strayed?",
+          "Where does this family gather now that the house they grew up in is gone?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Sarah Braverman",
+          "line": "Fully committed to Hank after his own reckoning with himself brought them back together."
+        },
+        {
+          "name": "Hank Rizzoli",
+          "line": "Sarah's partner, back in Berkeley for good and learning to name his own struggles with intimacy."
+        },
+        {
+          "name": "Adam Braverman",
+          "line": "Expanding the Luncheonette into a record label and preparing to help Kristina build a school for kids like Max."
+        },
+        {
+          "name": "Kristina Braverman",
+          "line": "Lost the mayoral race but pivoted to launching Chambers Academy; fully cancer-free."
+        },
+        {
+          "name": "Max Braverman",
+          "line": "Attending public middle school, still socially struggling and about to move to Chambers."
+        },
+        {
+          "name": "Crosby Braverman",
+          "line": "Father of two now, juggling the baby and Jabbar while running the Luncheonette's new label."
+        },
+        {
+          "name": "Jasmine Braverman",
+          "line": "Mother to Jabbar and newborn Aida, adjusting to life with a new baby."
+        },
+        {
+          "name": "Julia Braverman-Graham",
+          "line": "Separated from Joel; briefly slept with Max's teacher Evan Knight before cutting it off, still in love with Joel."
+        },
+        {
+          "name": "Joel Graham",
+          "line": "Living apart from Julia, working closely with architect Peet, refusing to attend marriage counseling."
+        },
+        {
+          "name": "Amber Holt",
+          "line": "Pregnant with Ryan's baby after their engagement collapsed and his crash landed him in surgery."
+        },
+        {
+          "name": "Ryan York",
+          "line": "Recovering from a car crash near his base; unstable, absent, and now a father-to-be."
+        },
+        {
+          "name": "Victor Graham",
+          "line": "Held back a grade this year and adjusting to Julia and Joel's split."
+        },
+        {
+          "name": "Zeek Braverman",
+          "line": "Has just sold the family home to give Camille the life she's asked for; slower physically but at peace."
+        },
+        {
+          "name": "Camille Braverman",
+          "line": "Preparing to move into a small Victorian with Zeek after finally winning the argument about their future."
+        }
+      ]
+    },
+    "6": {
+      "beats": [
+        {
+          "label": "S6 · Zeek in Vegas",
+          "text": "Zeek collapses in a Vegas casino during a birthday trip and is diagnosed with heart failure; he refuses risky surgery until Amber's pregnancy news changes his mind.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Opens the season's whole thread — Zeek's mortality and whether he'll survive to meet his great-grandchild.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Amber chooses alone",
+          "text": "Amber visits Ryan in Wyoming, sees his ongoing substance abuse, and quietly decides she will raise their son without him.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Sets Amber's path as a single mother, the emotional counterweight to Zeek's decline.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Julia and Joel repair",
+          "text": "Joel apologizes for giving up on their marriage and asks Julia back; the two rebuild slowly while Sydney and Victor struggle between two homes.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Restoring the family's other pillar marriage before Zeek's death makes the finale bearable.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Chambers Academy opens",
+          "text": "Kristina opens Chambers Academy as headmistress; her hardest case is Max, whose first crush on classmate Dylan ends in a public humiliation.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The school and Max's coming of age are the season's optimistic through-line.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Second heart attack",
+          "text": "Zeek has a second heart attack and this time refuses further surgery, choosing to spend his remaining time with Camille; Amber gives birth to a boy she names Zeek.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Zeek's decision and his namesake grandson set up the finale's dual arc.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · A wedding, a funeral",
+          "text": "Sarah moves her wedding up so a weakened Zeek can walk her down the aisle to Hank; days later Zeek dies peacefully in his sleep beside Camille.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The show's emotional summit — Sarah settled, and Zeek's arc closed.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Ashes on the field",
+          "text": "The Bravermans scatter Zeek's ashes on a baseball field and, exactly as he asked, play a game together in his memory as the family walks off the diamond.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The series' closing image and the family's collective goodbye.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Zeek is gone, but the family he built is intact and moving on — Julia and Joel back together, Amber holding a son named for her grandfather, Sarah married, Chambers Academy growing, and Camille preparing to travel the world Zeek never got to see.",
+        "questions": [
+          "Can the Bravermans hold together without Zeek at the center?",
+          "What will Camille do with the years and freedom she still has?",
+          "Will the boy Amber named for his grandfather carry any of what Zeek was?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Sarah Braverman",
+          "line": "Now Hank's wife after a wedding Zeek walked her down the aisle for."
+        },
+        {
+          "name": "Hank Rizzoli",
+          "line": "Sarah's husband and a steady father to his daughter Ruby."
+        },
+        {
+          "name": "Adam Braverman",
+          "line": "Newly headmaster of a growing Chambers Academy network after Kristina stepped back."
+        },
+        {
+          "name": "Kristina Braverman",
+          "line": "Founded Chambers Academy and is now handing the day-to-day to Adam as it scales."
+        },
+        {
+          "name": "Max Braverman",
+          "line": "Graduated from Chambers Academy, more socially assured than the boy who couldn't stand a school hallway."
+        },
+        {
+          "name": "Crosby Braverman",
+          "line": "Reopened the Luncheonette with Amber as his new partner after Adam stepped away for the school."
+        },
+        {
+          "name": "Jasmine Braverman",
+          "line": "Crosby's wife and mother of their children; anchored the family through the Luncheonette's near-shutdown."
+        },
+        {
+          "name": "Julia Braverman-Graham",
+          "line": "Fully reconciled with Joel and about to adopt another child from Victor's biological mother."
+        },
+        {
+          "name": "Joel Graham",
+          "line": "Back home with Julia and the kids after their long separation."
+        },
+        {
+          "name": "Amber Holt",
+          "line": "Mother to baby Zeek and Crosby's new business partner at the Luncheonette."
+        },
+        {
+          "name": "Ryan York",
+          "line": "Alive after his crash and living with his mother in Wyoming; visits his son from a distance."
+        },
+        {
+          "name": "Victor Graham",
+          "line": "Settling into a stable home now that Julia and Joel are back together."
+        },
+        {
+          "name": "Zeek Braverman",
+          "line": "Died peacefully in his sleep after choosing his time with Camille over another surgery; his ashes scattered on a baseball field."
+        },
+        {
+          "name": "Camille Braverman",
+          "line": "A widow honoring Zeek's plans for them by finally taking the trip to France he'd promised her."
+        }
+      ]
+    }
+  },
+  "repairedAt": "2026-07-27T06:50:36.239Z"
+}

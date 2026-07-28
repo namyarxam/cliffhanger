@@ -1,0 +1,201 @@
+{
+  "slug": "paradise",
+  "generatedFor": "Paradise",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The president is dead",
+          "text": "Agent Xavier Collins finds President Bradford murdered in his residence; the idyllic town of Paradise proves to be a domed bunker inside a Colorado mountain.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes both the murder mystery frame and the show's central twist that must be understood before any investigation makes sense.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Sinatra",
+          "text": "Collins suspects billionaire Samantha Redmond, who built and secretly rules the bunker, and enlists agents Robinson and Pace against her, unaware Driscoll is Redmond's mole.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Names the season's real antagonist and the sides that will drive every subsequent conflict, including Driscoll's hidden allegiance.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Pace silenced",
+          "text": "Pace learns Redmond had him kill surface scientists to hide that Earth is still habitable; before he can tell Collins the truth, Driscoll poisons him on Redmond's orders.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Reveals both the founding lie of Paradise and Driscoll's willingness to kill for Redmond, seeding Collins' break from the regime.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Day",
+          "text": "Flashbacks reveal Bradford triggered a secret EMP to stop a nuclear war but left Collins' wife Teri outside; his guilt drove him to plan exposing Redmond's lies before his death.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Explains the disaster, why Teri is missing, and what Bradford was about to do — the specific act that made someone want him dead.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Message on the dome",
+          "text": "Collins' children hack Bradford's tablet and project 'They're lying to you' onto the artificial sky; Collins and Robinson arm rebels while Redmond retreats to a private bunker.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The population now knows something is wrong, and the open uprising is the pivot from covert investigation to civil war.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The killer unmasked",
+          "text": "Trent, a wronged construction worker who snuck in under a false identity, is unmasked as Bradford's killer and suicides; Driscoll then shoots Redmond non-lethally to bury the truth.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Resolves the murder while leaving Redmond alive and Driscoll's role uncontested, keeping every S2 power thread live.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Collins flies out",
+          "text": "Learning Teri's Atlanta message means she survived, Collins pilots a plane out of the bunker to find her, leaving his children behind in Robinson's care.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Physically launches the whole S2 setting: Collins outside, family split across the sealed door, Robinson holding the line inside.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The murder is solved but the bigger lie — that the world outside is livable and that survivors were abandoned — is now half-exposed. Collins has flown out to find Teri; Redmond is wounded but alive, and Driscoll walks free.",
+        "questions": [
+          "Can Collins find Teri alive after nearly two years without power?",
+          "What other survivors exist outside the bunker, and how will they react to Paradise?",
+          "With Redmond down and Driscoll unexposed, who really controls the bunker now?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Xavier Collins",
+          "line": "Secret Service agent whose wife was stranded outside; leaves Paradise at season's end to search for her."
+        },
+        {
+          "name": "Samantha Redmond",
+          "line": "Billionaire who built and secretly rules the bunker; shot non-lethally by her own agent and left in a coma.",
+          "note": "Nicknamed 'Sinatra'"
+        },
+        {
+          "name": "Jane Driscoll",
+          "line": "Secret Service agent secretly loyal to Redmond; poisoned Pace and shot Redmond to frame Collins and protect the conspiracy."
+        },
+        {
+          "name": "Nicole Robinson",
+          "line": "Secret Service agent and Bradford's former lover, now Collins' ally and guardian of his children inside the bunker."
+        },
+        {
+          "name": "Dr. Torabi",
+          "line": "Paradise's mental health chief, quietly aligned with Collins against Redmond."
+        },
+        {
+          "name": "Teri Collins",
+          "line": "Xavier's wife, believed dead since the disaster; a recorded message from Atlanta proves she survived."
+        },
+        {
+          "name": "Presley Collins",
+          "line": "Xavier's teenage daughter, who used Bradford's tablet to expose the regime on the dome; remains in Paradise."
+        },
+        {
+          "name": "Jeremy Bradford",
+          "line": "The murdered president's son, publicly resentful of a bunker built only for billionaires; helped Presley leak the truth."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Sunlight returns",
+          "text": "Twenty-three months after the disaster, sunlight breaks through the ash; Graceland guide Annie Clay, pregnant by a departed survivor named Link, finds Collins crashed nearby in Arkansas.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Opens up the world outside, introduces Annie and Link, and puts Collins in a stranger's hands rather than back on his own mission.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Redmond takes it back",
+          "text": "In the bunker, President Baines assumes control and jails dissenters including Jeremy, but Redmond wakes from her coma and has Driscoll assassinate him, restoring the conspiracy's grip.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Reversal of S1's ending: the exposé failed, Redmond is back in power, and Driscoll's role as her killer is now open inside the bunker.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · A holy charge",
+          "text": "Annie makes Collins promise to reunite her newborn daughter with Link before dying in childbirth; Collins carries the baby toward Atlanta, still searching for Teri.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Binds Collins to Link before they ever meet, and sets the emotional stakes he'll carry through the rest of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Atlanta",
+          "text": "In Atlanta, Collins finds Teri living with Gary, a mailman turned survivalist; she reveals she joined a Colorado-bound militia willingly, not by force as Gary had claimed.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Reunites the Collins family and reframes the militia — Link's people — as something Teri chose, not something she needs rescuing from.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Alex",
+          "text": "The militia's target, dubbed 'Alex,' turns out to be an AI Redmond secretly built; Link and Collins share visions and nosebleeds around each other, signs of Alex's manipulation of time itself.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Redefines the show's stakes from political conspiracy to something science-fictional, and links Link and Collins as more than strangers.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The doors open",
+          "text": "Jeremy, Robinson and the bunker's architect sabotage the oxygen supply to force Paradise's doors open; the cooling systems explode, killing the architect, and Torabi orders full evacuation.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Ends the bunker as a place: everything and everyone leaves. Removes the S1 setting from the board.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Denver",
+          "text": "Redmond reveals Link is her supposedly-dead son Dylan, then sacrifices herself sealing the reactors' blast inside; Torabi sends Collins to find Alex, buried beneath Denver Airport.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Closes Redmond's arc, gives Link his true identity, and points Collins at the specific destination the next chapter of the show is built around.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Paradise is evacuated and Redmond is dead, but the militia now occupies the ruined bunker and Collins has been sent by a time-manipulating AI to reach a second facility beneath Denver Airport. Link has just learned he is Redmond's son and met his newborn daughter, while Driscoll's body has vanished from Torabi's shower.",
+        "questions": [
+          "What does Alex want from Collins, and why did the AI specifically summon him?",
+          "How will Link handle being Redmond's son Dylan and a father in the same moment?",
+          "If Driscoll's body is gone, is she actually dead?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Xavier Collins",
+          "line": "Reunited with Teri and their son, guardian of Annie's newborn, now travelling to Denver on Alex's summons."
+        },
+        {
+          "name": "Teri Collins",
+          "line": "Alive after nearly two years outside; reunited with Xavier and revealed to have joined Link's Colorado-bound militia by choice."
+        },
+        {
+          "name": "Link",
+          "line": "Militia leader and father of Annie's baby, revealed at season's end to be Samantha Redmond's supposedly-dead son Dylan."
+        },
+        {
+          "name": "Samantha Redmond",
+          "line": "Died sealing the bunker's reactors' explosion inside, after confirming Link is her son and pointing Collins toward Alex."
+        },
+        {
+          "name": "Dr. Torabi",
+          "line": "The surviving authority who ordered Paradise's evacuation and directed Collins to Alex beneath Denver Airport."
+        },
+        {
+          "name": "Alex",
+          "line": "A time-manipulating quantum AI Redmond secretly built in a bunker 100 miles from Paradise, now waiting for Collins."
+        },
+        {
+          "name": "Nicole Robinson",
+          "line": "Freed from prison during the oxygen sabotage; escaped the bunker with the militia's help."
+        },
+        {
+          "name": "Jeremy Bradford",
+          "line": "Imprisoned by Baines, helped force the bunker doors open from inside, and was rescued during the evacuation."
+        },
+        {
+          "name": "Presley Collins",
+          "line": "Xavier's daughter, trapped alongside Redmond's daughter Hadley during the sabotage; rescued by Collins and Link."
+        }
+      ]
+    }
+  }
+}

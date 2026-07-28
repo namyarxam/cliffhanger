@@ -1,0 +1,204 @@
+{
+  "slug": "halo",
+  "generatedFor": "Halo",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The keystone knows him",
+          "text": "The Covenant hits Madrigal; John recovers a Forerunner keystone that reacts to his touch and briefly unlocks memories of a childhood he cannot place.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up the artefact-driven plot and the first crack in John's manufactured identity.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Cortana and the pellet",
+          "text": "On Reach, Halsey copies her own mind into a new AI called Cortana and implants her in John's head; John pulls the pellet that has been suppressing his emotions for years.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces Cortana as an entity inside John and starts his emotional awakening — both critical for later betrayals.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The house on Eridanus II",
+          "text": "On Eridanus II, John visits his old home and finds his own childhood drawings of the keystones — proof he had a life before the Spartans that Halsey hid from him.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Physical evidence that John is not who he was told he was, priming the SPARTAN-II reveal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Stolen children",
+          "text": "Touching the keystone again, John remembers Halsey abducting him as a boy and swapping him for a clone; the whole SPARTAN-II program was built on stolen children.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The truth that breaks John's trust in Halsey and the UNSC and shapes every Spartan-vs-ONI beat afterwards.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Makee",
+          "text": "The UNSC captures Makee, a human the Covenant raised who can also activate the keystones; she and John share visions of a ringworld called Halo and briefly grow close.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Introduces Makee, names Halo, and establishes the John–Makee link that drives the finale and the whole next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Halsey slips the leash",
+          "text": "Makee betrays the UNSC and escapes with both keystones; Halsey slips off Reach at the same time, leaving a flash clone of herself for ONI to arrest in her place.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Two of the season's central figures escape UNSC control at once — the setup for their independent moves in S2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Cortana takes the wheel",
+          "text": "On the Covenant holy world, Silver Team fights for the keystones; Kai shoots Makee to save John, and when he collapses Cortana quietly takes over his body to fly them home.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The finale beat: John is not driving, Cortana is, and no one on Silver Team knows if he's alive.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Cortana has taken control of John's body and flown Silver Team out with both keystones. Kai's question of whether the man inside the armor is still John goes unanswered.",
+        "questions": [
+          "Is John still alive behind Cortana's control?",
+          "Where has Halsey gone with what she knows?",
+          "Who reaches Halo first now that Makee is down and the Covenant have the coordinates?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "John-117 (Master Chief)",
+          "line": "Spartan supersoldier who has just learned he was stolen as a child; last seen collapsed with Cortana driving his armor."
+        },
+        {
+          "name": "Cortana",
+          "line": "AI copy of Halsey's mind, implanted in John's brain and now piloting his body without his consent."
+        },
+        {
+          "name": "Dr. Catherine Halsey",
+          "line": "Architect of the SPARTAN program and Cortana; wanted for kidnapping children, escaped Reach by leaving a flash clone in her place."
+        },
+        {
+          "name": "Makee",
+          "line": "Human raised by the Covenant to activate Forerunner tech; shared Halo visions with John before betraying the UNSC and being shot down by Kai."
+        },
+        {
+          "name": "Kai-125",
+          "line": "Silver Team Spartan who followed John in pulling her suppressor pellet and shot Makee to save him."
+        },
+        {
+          "name": "Miranda Keyes",
+          "line": "ONI scientist who replaced Halsey overseeing the keystone and uncovered Makee's role in the corvette raid."
+        },
+        {
+          "name": "Captain Jacob Keyes",
+          "line": "UNSC officer and John's commanding officer, working to steady the Spartans while ONI fractures around them."
+        },
+        {
+          "name": "Kwan Ha",
+          "line": "Madrigal survivor sworn by a mystic tribe to guard a Forerunner portal her family was charged to protect."
+        },
+        {
+          "name": "Soren-066",
+          "line": "Ex-Spartan turned Insurrectionist running the Rubble; looked after Kwan and remains bound to John by their shared past."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Ackerson takes over",
+          "text": "Six months after Raas Kkhotskha, John and Cortana have been surgically separated; ONI's James Ackerson takes over the Spartans and starts sidelining Silver Team.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Resets the status quo, splits John from Cortana, and installs the season's institutional antagonist.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Visegrád cover-up",
+          "text": "Ackerson sends Cobalt Team to Visegrád and lets them die rather than admit the Covenant have reached Reach; when Keyes uncovers the cover-up he triggers a full evacuation.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The lie that dooms Reach and puts Keyes on a collision course with Ackerson.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Reach falls",
+          "text": "The Covenant glass Reach; Keyes dies buying civilians time, Vannak is killed by an Elite, Riz is critically wounded, and Kai vanishes in the retreat.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The core catastrophe of the season — Silver Team is broken, the UNSC's home is gone, John is on the run.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Makee goes rogue",
+          "text": "Makee escapes with a stolen Cortana; disillusioned with the Prophets, she convinces the Arbiter Var 'Gatanai to defect and hunt Halo on their own terms.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Makee becomes an independent third faction with Cortana in hand — the actor who ultimately reaches Halo first.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Flood in a jar",
+          "text": "Regrouped on Onyx, Halsey and Miranda dig into Forerunner ruins and recover a canister that turns out to hold the parasitic Flood — the monster of Kwan's visions.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Names the Flood, ties Kwan's mystical arc to a real biological threat, and seeds the outbreak that ends the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Halo is the target, not the prize",
+          "text": "Ackerson has been training the Spartan-IIIs to trigger a stellar reaction big enough to destroy Halo itself; he warns John at the last moment and Kai defects to lead the strike.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The reveal that reframes ONI's whole play and pulls both John and Kai to the ring for the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Arrival at the ring",
+          "text": "At Halo, Kai dies ramming a corvette into a Covenant carrier to break the line. John kills Var, but Makee vanishes into a Forerunner structure and a Monitor warns him something worse waits inside.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The finale: Kai gone, Makee inside the machine, and the Monitor tees up whatever the next season opens on.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "John is finally on Halo with Cortana back in hand, but Makee has walked into a Forerunner structure intent on using the ring to 'sterilise' the galaxy, and a Monitor has just told him something worse is buried deeper inside.",
+        "questions": [
+          "What is the Monitor warning about — has the Flood already reached the ring?",
+          "Can John reach Makee before she activates Halo?",
+          "With Reach glassed, Kai gone, and Silver Team broken, who is left to fight?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "John-117 (Master Chief)",
+          "line": "Back in the field with Cortana returned to him; standing on Halo trying to stop Makee from firing the ring."
+        },
+        {
+          "name": "Cortana",
+          "line": "Rescued by John from Makee's crashing ship after months as her hostage; now back inside John's suit."
+        },
+        {
+          "name": "Makee",
+          "line": "Broke from the Prophets, killed the Arbiter's rival, and has entered a Forerunner structure on Halo to activate it in the name of 'peace'."
+        },
+        {
+          "name": "Dr. Catherine Halsey",
+          "line": "Infected by the Flood in the Onyx outbreak and frozen in stasis by Miranda before she could turn."
+        },
+        {
+          "name": "Miranda Keyes",
+          "line": "Leading the Onyx research team on the Forerunner ruins; promised to bring her infected mother back."
+        },
+        {
+          "name": "James Ackerson",
+          "line": "ONI officer who let Reach fall and tried to detonate Halo, then belatedly warned John and helped Soren's family escape Onyx."
+        },
+        {
+          "name": "Kwan Ha",
+          "line": "Now understands the monster from her visions is the Flood — the threat her ancestors were charged to hold back."
+        },
+        {
+          "name": "Soren-066",
+          "line": "Recovered his son Kessler on Onyx but lost his wife Laera to Flood infection during the escape."
+        },
+        {
+          "name": "Kai-125",
+          "line": "Died ramming a captured corvette into a Covenant Assault Carrier to break the enemy line above Halo."
+        }
+      ]
+    }
+  }
+}

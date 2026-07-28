@@ -1,0 +1,289 @@
+{
+  "slug": "foundation",
+  "generatedFor": "Foundation",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Seldon Exiled",
+          "text": "Hari Seldon predicts the Empire's fall; Emperor Cleon XII exiles him and prodigy Gaal Dornick to Terminus to build a Foundation that will shorten the coming dark age.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the Foundation project and Gaal's role — every later thread flows from this trial.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Raych's Betrayal",
+          "text": "En route to Terminus, Seldon's adopted son Raych murders him and jettisons a horrified Gaal in a cryo pod, breaking her from the mission before the colony arrives.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Splits Gaal from the Foundation and creates the two-strand structure that runs the rest of the series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Salvor vs Phara",
+          "text": "Thirty years on, Terminus warden Salvor Hardin repels an Anacreon invasion led by Phara Keaen, who seeks revenge for the Empire's neutron bombing of her homeworld.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Introduces Salvor as the Foundation's guardian and the Periphery crisis that forces the first alliance.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A Dynasty Rots",
+          "text": "On Trantor, religious dissent and Brother Dawn's genetic anomalies expose the cloned dynasty's decay; an ancient conspiracy is revealed to have corrupted Cleon I's DNA long ago.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The genetic sabotage means every future Cleon is compromised — the core weakness driving Empire's decline.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Gaal Meets Digital Hari",
+          "text": "Gaal wakes decades later on an automated ship; a digital Hari reveals his death was staged and the plan needs a hidden Second Foundation and her prescience to lead it.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Names the Second Foundation and Gaal's prescience, both of which the next season is built around.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Foundation Alliance",
+          "text": "Salvor unites Terminus with Anacreon and Thespis using the salvaged warship Invictus; a second digital Seldon emerges from the Vault, confirming the alliance was always his plan.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Ends the First Crisis and gives the Foundation a secret power base the Empire believes is dead.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Mother and Daughter",
+          "text": "Demerzel kills Brother Dawn against Day's orders, revealing her loyalty is to the dynasty over any single Cleon; on Synnax, Gaal wakes her long-frozen daughter Salvor.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Demerzel is now the real power on Trantor, and Gaal+Salvor together set up the whole S2 Ignis arc.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Foundation has survived its first crisis, but Hari's plan needs a Second Foundation that Gaal was meant to lead. Gaal and the daughter she never knew, Salvor, are together on Synnax with the Prime Radiant, while on Trantor a Cleon dynasty already sabotaged from within rules an Empire it can no longer see clearly.",
+        "questions": [
+          "Will Gaal and Salvor find their way to the Second Foundation Hari intended?",
+          "Now that Demerzel serves the dynasty over any sitting Emperor, who really rules Trantor?",
+          "How long can the Foundation's secret alliance with Anacreon and Thespis stay hidden from the Empire?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Gaal Dornick",
+          "line": "The mathematical prodigy who confirmed psychohistory at Seldon's trial; woke after 34 years to find him dead and herself a fugitive, now on Synnax with the Prime Radiant."
+        },
+        {
+          "name": "Hari Seldon",
+          "line": "Creator of psychohistory; killed on the voyage, but two digital copies of him survive — one that spoke to Gaal on the Raven, one enshrined in the Vault on Terminus."
+        },
+        {
+          "name": "Salvor Hardin",
+          "line": "Warden of Terminus who bested Phara and opened the Vault; discovered she is Gaal and Raych's daughter and now leaves to find her mother.",
+          "note": "Her prescient visions are inherited from her parents."
+        },
+        {
+          "name": "Brother Day (Cleon XIII)",
+          "line": "The current Emperor; won his fight with the Luminists but has just learned his own bloodline was sabotaged generations ago."
+        },
+        {
+          "name": "Brother Dusk",
+          "line": "The elder Cleon whose old failures seeded much of this crisis; survives the season but with his authority weakened."
+        },
+        {
+          "name": "Demerzel",
+          "line": "The Empire's ancient robot chamberlain, bound to the Cleon dynasty above any individual Cleon; killed Brother Dawn against Day's explicit wishes."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Day's Marriage Plot",
+          "text": "Brother Day (Cleon XVII) survives a Blind Angels assassination attempt and courts Queen Sareth of the Cloud Dominion to end the failing genetic dynasty and produce natural heirs.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up the Sareth/Dawn thread, the Cleon succession crisis, and Demerzel's endgame with the dynasty.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Mule Appears",
+          "text": "On Synnax, Gaal and Salvor revive Hari's digital ghost; Gaal glimpses 150 years ahead and meets a Mentalic called the Mule — with Salvor dead beside her.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "First look at the Mule, who is the entire threat of season 3, and the vision Gaal spends the season trying to unwrite.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Riose and Mallow",
+          "text": "Empire recruits imprisoned General Bel Riose to investigate the silent Foundation; on the frontier, con man Hober Mallow becomes Vault Seldon's off-book agent.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Both men become the season's opposing frontier agents; Mallow's line matters again generations later.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ignis Trap",
+          "text": "Hari's organic body is restored on Oona's World; on Ignis, Mentalic leader Tellem Bond captures them and moves to transfer her own psyche into Gaal's body.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Ignis becomes the Second Foundation's site and Tellem's threat forces Gaal to confront her prescience.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Dawn's Heir",
+          "text": "On Trantor, Sareth and Brother Dawn conceive an heir in secret; Sareth uncovers Demerzel's robotic nature, while Cleon I lures Dusk and Rue into a hidden chamber.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The natural-born heir and the exposure of Demerzel drive the Trantor finale and its aftermath.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Terminus Falls",
+          "text": "Day crashes the Invictus onto Terminus in a singularity; General Riose refuses to burn the allied worlds and helps She-Bends-Light collide the Imperial fleet with itself.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The Foundation's homeworld is destroyed and the Imperial fleet gutted — the balance of power tips for the next century.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Sleep for the Mule",
+          "text": "Demerzel kills Dusk, takes the Prime Radiant, and decants new Cleons; Salvor dies stopping Tellem, so Gaal and Hari cryo-sleep to ready the Second Foundation for the Mule.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Directly sets up the 152-year jump: Demerzel alone on Trantor, Gaal asleep, Salvor gone, Mule inbound.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Terminus is destroyed but its people have been pulled inside Hari's Vault. Salvor is dead, Gaal and Hari are asleep, and Demerzel now rules Trantor alone through a fresh set of Cleons and the Prime Radiant. Sareth and Dawn have fled with an unborn heir, and 152 years ahead, a Mentalic called the Mule has just registered Gaal's existence.",
+        "questions": [
+          "Will Gaal and Hari train a Second Foundation strong enough to stop the Mule?",
+          "What will Demerzel do with an Empire no living Cleon can check?",
+          "What becomes of Sareth, Dawn, and their child outside the dynasty's reach?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Gaal Dornick",
+          "line": "Now Hari's partner in building the Second Foundation on Ignis; enters cryo-sleep to wake annually and train Mentalics for the Mule she has foreseen."
+        },
+        {
+          "name": "Hari Seldon",
+          "line": "His consciousness restored to an organic body by the enigmatic Kalle; goes into cryo-sleep with Gaal after Tellem is defeated."
+        },
+        {
+          "name": "Salvor Hardin",
+          "line": "Killed by the Mentalic Josiah in the finale; her death is the proof Gaal needed that the foreseen future can be changed."
+        },
+        {
+          "name": "Demerzel",
+          "line": "Killed Dusk against her will, decanted new Cleons, and seized the Prime Radiant — she now effectively rules the Empire alone."
+        },
+        {
+          "name": "Queen Sareth",
+          "line": "Escaped Trantor pregnant with Brother Dawn's child; heir to the Cloud Dominion and now a rival claim to the Empire itself."
+        },
+        {
+          "name": "Brother Dawn",
+          "line": "The last living Cleon of his cohort; fled Trantor with Sareth to raise their natural-born heir outside the dynasty."
+        },
+        {
+          "name": "Hober Mallow",
+          "line": "Foundation's rogue agent recruited by Vault Seldon; survived the fall of Terminus, taken into the Vault with its people."
+        },
+        {
+          "name": "The Mule",
+          "line": "A powerful Mentalic 152 years in the future who, at season's close, has become aware of Gaal across time."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · The Mule Rises",
+          "text": "152 years later, the Foundation controls the Outer Reach; a Mentalic warlord called the Mule takes over the independent planet Kalgan through mind control.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Frames the jump forward and names the antagonist the season, and the finale reveal, hinge on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Gaal and Dawn",
+          "text": "Gaal wakes on Ignis and secretly aligns with Brother Dawn (Cleon XXV), who wants to blockade Kalgan; on Trantor, Brother Day ignores the crisis for hedonism.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The secret Empire-Foundation channel through Dawn is the political spine of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Mallows Flee",
+          "text": "Foundation captain Han Pritcher tracks the Mule alone; Toran and Bayta Mallow flee the Mule's court with his balladeer, Magnifico Giganticus.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces every figure central to the finale — Pritcher, the Mallows, and Magnifico.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Demerzel's Confession",
+          "text": "Demerzel confesses that she staged the Star Bridge attack three centuries ago, framing Anacreon and Thespis to keep Hari alive and preserve the Foundation.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Recasts the whole series' inciting incident and clarifies Demerzel's true allegiance heading into the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Mule Takes Terminus",
+          "text": "The Mule destroys Kalgan and the Imperial fleet; Dawn is thrown out of an airlock, and the Mule then storms and captures New Terminus.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The Foundation falls, Empire's fleet is gutted, and Dawn is dead — the board is cleared for the endgame.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Novacula Fires",
+          "text": "Day flees to Mycogen, learns of the ancient robot Daneel, and seizes a robot head; on Trantor, Dusk fires his Novacula, erasing the Council, Cloud Dominion, and Maiden.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The robot head is the object the finale hinges on, and the Novacula wipes out the last balancing powers.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Bayta Revealed",
+          "text": "Bayta Mallow is the true Mule, briefly held by Magnifico's music. Dusk takes the Prime Radiant, kills Day, becomes Brother Darkness; a robot head signals Kalle on Earth's Moon.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Every question the next season opens on lives here: the real Mule's identity, Dusk sole ruler, robots on the Moon.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Mule is not the man Gaal killed — she is Bayta Mallow, still alive and still hunting Gaal. Trantor now belongs to Dusk alone, ruling as Brother Darkness with the Prime Radiant. And a robot head recovered on Mycogen has just sent a clasping signal to Kalle, hidden with other robots on Earth's Moon.",
+        "questions": [
+          "Now that the real Mule is Bayta, how does Gaal stop a Mentalic who has already outmatched her?",
+          "What will Dusk do as sole ruler of Empire with psychohistory in his hands?",
+          "Who are the robots hiding on Earth's Moon, and what does their signal to Kalle mean?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Gaal Dornick",
+          "line": "Escaped the orbital station after killing a Mule cypher; now knows the real Mule is Bayta Mallow and has to start the hunt over."
+        },
+        {
+          "name": "Bayta Mallow",
+          "line": "Revealed as the actual Mule — the Mentalic threat has been hiding inside the Foundation's own escapee this whole time.",
+          "note": "Was subdued only by Magnifico's visi-sonar music."
+        },
+        {
+          "name": "Toran Mallow",
+          "line": "Bayta's husband and fellow Foundation exile; unaware his wife is the enemy they have been running from."
+        },
+        {
+          "name": "Magnifico Giganticus",
+          "line": "The Mule's former balladeer whose visi-sonar music is the only known thing that can hold Bayta back."
+        },
+        {
+          "name": "Brother Darkness (Cleon XXIII)",
+          "line": "The former Dusk, now sole ruler; murdered Day, took the Prime Radiant, and believes Seldon's fall of Empire meant his own rise."
+        },
+        {
+          "name": "Hari Seldon (Vault)",
+          "line": "Still active in the Vault; helped Gaal reach the Mule after she falsely promised him a physical body he now knows he will never get."
+        },
+        {
+          "name": "Han Pritcher",
+          "line": "Foundation captain and Mule hunter; under Bayta's control at the finale after she used him to shoot Gaal."
+        },
+        {
+          "name": "Preem Palver",
+          "line": "Leader of the Second Foundation, now revealed to have been hiding on Trantor itself, welcoming Kalle's book into their keeping."
+        },
+        {
+          "name": "Kalle",
+          "line": "The mysterious woman who once gave Hari an organic body; revealed as a robot hiding on Earth's Moon and receiving the signal from Day's relic."
+        }
+      ]
+    }
+  }
+}

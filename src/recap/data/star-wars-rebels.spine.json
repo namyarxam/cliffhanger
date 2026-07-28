@@ -1,0 +1,208 @@
+{
+  "slug": "star-wars-rebels",
+  "generatedFor": "Star Wars Rebels",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Boy with the Force",
+          "text": "Street-smart orphan Ezra falls in with the Ghost crew mid-heist and instinctively Force-pushes Agent Kallus off Zeb — nobody, including Ezra, knew he could do that.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Establishes the show's premise: a hidden Jedi cell that just found a second Force-user by accident. Every arc after this depends on it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A master by default",
+          "text": "Kanan tries to hand Ezra off to Jedi Master Luminara, but her cell holds only her corpse — Inquisitor bait. Kanan grudgingly takes Ezra as his own apprentice.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Cements the Kanan/Ezra teacher-student bond that carries the rest of the series and confirms an Inquisitor is actively hunting Jedi survivors.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Empire notices",
+          "text": "Ezra infiltrates the Imperial Academy for kyber crystals and outperforms every cadet. The Inquisitor takes note — the Empire now knows there are two Jedi on Lothal.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Turns the Inquisitor's hunt from opportunistic to targeted at Ezra specifically, and plants the kyber crystal Ezra will build his lightsaber around.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Fate of the parents",
+          "text": "Ezra learns his parents were arrested for making anti-Empire broadcasts. Rescuing a wounded Kanan, he taps the dark side against the Inquisitor for the first time.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Introduces the parents thread that resolves in S2 and the dark-side temptation that becomes Kanan's ongoing worry about his apprentice.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Yoda and a lightsaber",
+          "text": "Inside a hidden Jedi temple on Lothal, Ezra hears the disembodied voice of Master Yoda and is guided to a kyber crystal. He emerges with his own lightsaber.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Ezra is now armed as a Jedi apprentice in his own right, and the temple + Yoda channel becomes the Force spine of season 2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · No public voice",
+          "text": "Exiled senator Gall Trayvis is exposed as an Imperial spy who used rebel-sympathy broadcasts to unmask dissidents. There is no public voice the crew can trust.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Sets up the finale's decision to broadcast themselves rather than trust a proxy, and establishes there is no organised rebellion yet — only isolated cells.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Broadcast and capture",
+          "text": "The crew seizes Lothal's comms tower so Ezra can broadcast a call to rebellion across the sector. Kanan stays behind to hold off Tarkin's forces and is captured.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "This is the season-ending cliffhanger and the moment the cell steps from local nuisance to public rebel voice — the fact the next season has to answer.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Kanan is a prisoner of Grand Moff Tarkin. A call to rebellion has gone out across the sector for the first time, and the Inquisitor is still hunting the crew's remaining Jedi.",
+        "questions": [
+          "Can the crew break Kanan out before Tarkin makes an example of him?",
+          "Will Ezra's broadcast actually reach other cells or die on Lothal?",
+          "Who is Fulcrum, the informant secretly guiding Hera?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Ezra Bridger",
+          "line": "Fifteen-year-old Lothal orphan and newly minted Jedi apprentice with his own lightsaber, still haunted by his parents' unknown fate."
+        },
+        {
+          "name": "Kanan Jarrus",
+          "line": "Cowboy-style Jedi who survived Order 66 in hiding; captured by Tarkin after choosing his crew's escape over his own."
+        },
+        {
+          "name": "Hera Syndulla",
+          "line": "Twi'lek pilot and captain of the Ghost, the cell's de facto commander, secretly reporting to a mysterious informant called Fulcrum."
+        },
+        {
+          "name": "Sabine Wren",
+          "line": "Mandalorian graffiti artist and explosives expert on the crew, whose past she keeps to herself."
+        },
+        {
+          "name": "Garazeb \"Zeb\" Orrelios",
+          "line": "Lasat muscle and one of the few survivors of an Imperial genocide of his species."
+        },
+        {
+          "name": "Chopper",
+          "line": "Cantankerous astromech and Hera's mechanic, an ex-Clone Wars veteran."
+        },
+        {
+          "name": "Agent Kallus",
+          "line": "ISB agent leading the manhunt for the crew; personally killed a Lasat Honor Guardsman and carries his Bo-Rifle."
+        },
+        {
+          "name": "The Inquisitor",
+          "line": "Sith-trained Jedi hunter dispatched by Darth Vader to end Kanan and Ezra."
+        },
+        {
+          "name": "Grand Moff Tarkin",
+          "line": "Senior Imperial governor personally arrived on Lothal to break the cell, now holding Kanan."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Vader's opening blow",
+          "text": "Darth Vader personally attacks and nearly wipes out the rebel cell Phoenix Squadron. Ahsoka sends the Ghost crew into hiding to recruit an old Republic war hero.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces Vader as a personal, present threat rather than a distant name, and forces the alliance with the clones that reshapes the cell.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Clones aboard",
+          "text": "The hero is Captain Rex, hiding with two brother clones. Kanan cannot forgive Order 66, but a joint stand against Kallus's walkers earns them a place in the fight.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Adds Rex as a permanent ally and closes Kanan's oldest wound against the men who killed his master — the moral arc of the season's opening block.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · New hunters",
+          "text": "Two new Inquisitors, Fifth Brother and Seventh Sister, replace the fallen one and begin snatching Force-sensitive infants to prevent any new Jedi rising.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Doubles the hunter threat and shows the Empire is now trying to strangle the Jedi at the cradle — the pressure that pushes the crew toward Malachor.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Parents laid to rest",
+          "text": "On Lothal, escaped prisoner Ryder Azadi confirms Ezra's parents died in a prison break his broadcast inspired. He can finally grieve them.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Closes the S1 parents thread and frees Ezra to be defined by his choices rather than his loss, while adding Azadi as a Lothal-side ally.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The rebellion widens",
+          "text": "Bail Organa sends Princess Leia to hand over cruisers under cover, and Sabine — revealed as House Vizsla — beats Fenn Rau to win Mandalorian safe passage.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The cell is no longer isolated — it now has Alderaanian ships, a Mandalorian route, and Sabine's own backstory is on the table for the first time.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Kallus, cracking",
+          "text": "Stranded with Zeb on an icy moon, Kallus confesses he never agreed with the Lasat genocide and won his Bo-Rifle honourably. He returns to the Empire visibly shaken.",
+          "anchorEpisode": 17,
+          "whyLoadBearing": "The first visible fracture in the villain who has hunted the crew since S1 — a quiet setup with major payoff in the seasons ahead.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Find Malachor",
+          "text": "At the Lothal Jedi temple, Kanan is knighted and Ahsoka accepts that Vader is her old master Anakin. Yoda tells Ezra to find Malachor as Vader arrives to hunt them.",
+          "anchorEpisode": 18,
+          "whyLoadBearing": "This is the entire launchpad into season 3: a Sith destination, a Jedi Knight, an apprentice who now knows the truth about Vader, and Vader closing in.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The crew is racing toward Malachor, an unknown Sith world, on Yoda's cryptic instruction. Vader is personally hunting them, and Ahsoka now knows the man behind the mask is her old master Anakin Skywalker.",
+        "questions": [
+          "What is on Malachor that Yoda thinks can help against the Inquisitors?",
+          "Can Ahsoka face Vader now that she knows who he was?",
+          "How far has Kallus's loyalty already drifted from the Empire?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Ezra Bridger",
+          "line": "Apprentice Jedi, an orphan in earnest now that his parents are confirmed dead, being pulled toward Malachor by Yoda's instruction."
+        },
+        {
+          "name": "Kanan Jarrus",
+          "line": "Officially knighted as a Jedi Knight by the shade of the former Grand Inquisitor, and quietly worried about the darkness he sees in Ezra."
+        },
+        {
+          "name": "Ahsoka Tano",
+          "line": "Former Jedi and Anakin Skywalker's old apprentice, now openly directing the Ghost's missions and carrying the weight of what Anakin has become."
+        },
+        {
+          "name": "Hera Syndulla",
+          "line": "Ghost captain, commanding a growing wing of the rebel fleet and reconciled with her father, Twi'lek resistance leader Cham Syndulla."
+        },
+        {
+          "name": "Sabine Wren",
+          "line": "Mandalorian of House Vizsla whose past as bounty hunter Ketsu Onyo's partner is now known to the crew."
+        },
+        {
+          "name": "Garazeb \"Zeb\" Orrelios",
+          "line": "Lasat crewman, grounded after leading two elder Lasats through a black-hole cluster to the hidden homeworld Lira San."
+        },
+        {
+          "name": "Captain Rex",
+          "line": "Veteran clone commander freshly aligned with the rebellion after Kanan finally trusted him, riding with the Ghost crew."
+        },
+        {
+          "name": "Darth Vader",
+          "line": "Sith Lord personally hunting the cell, now known to Ahsoka — and the audience — to be the fallen Anakin Skywalker."
+        },
+        {
+          "name": "Fifth Brother & Seventh Sister",
+          "line": "Replacement Inquisitors who target Force-sensitive infants as well as trained Jedi, keeping the crew under constant pressure."
+        },
+        {
+          "name": "Agent Kallus",
+          "line": "ISB officer whose loyalty is quietly fracturing after his icy-moon ordeal with Zeb; sitting alone in his quarters, deep in thought."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "slug": "dexter-resurrection",
+  "generatedFor": "Dexter: Resurrection",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The Code",
+          "text": "Dexter Morgan is a Miami Metro blood-spatter analyst who moonlights as a serial killer, hunting only killers by a Code his adoptive cop father Harry taught him.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the premise every future season is built on: Dexter's dual life and the moral framework Harry gave him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Ice Truck Killer",
+          "text": "A killer dubbed the Ice Truck Killer leaves bloodless, dismembered women across Miami and begins taunting Dexter personally with mutilated dolls and staged clues.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces the season antagonist whose personal fixation on Dexter drives every later beat.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Debra makes Homicide",
+          "text": "Dexter's sister Debra rides the Ice Truck Killer case into a Homicide promotion under Lieutenant LaGuerta, working alongside Angel Batista and hostile Sergeant Doakes.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Places Debra permanently inside the investigation she will spend the rest of the show inside.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Childhood sites",
+          "text": "The Ice Truck Killer starts staging body parts at sites from Dexter's childhood, and long-buried memories of an early trauma begin surfacing against his will.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Opens the season's central mystery — a suppressed childhood event Dexter does not yet understand — which is still unresolved at the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Debra's boyfriend",
+          "text": "Debra falls for Rudy, a warm prosthetics expert helping the case; unknown to her or Dexter, Rudy IS the Ice Truck Killer, using her to get close to Dexter.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The season's core dramatic-irony reveal to the audience — Debra is in bed with the man hunting her brother.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Paul framed, not killed",
+          "text": "When Rita's abusive ex Paul comes back into her life, Dexter frames him back into prison rather than killing him — bending his Code to keep her home intact.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Marks the first time Dexter adapts the Code for the people he loves, and clears the Rita household of Paul going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Rudy closes in",
+          "text": "Dexter discovers a biological father, Joe Driscoll, whose last visitor was a cable repairman — Rudy — who is now openly circling Dexter's awakening childhood trauma.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Ties Rudy directly to Dexter's blood family and sets the collision course the season ends mid-flight on.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Rudy — secretly the Ice Truck Killer — has infiltrated Dexter's life through Debra and killed his biological father, all to force Dexter to remember something buried in their shared past. Dexter's memories are only beginning to break the surface.",
+        "questions": [
+          "What childhood trauma is the Ice Truck Killer dragging Dexter towards?",
+          "Who is Rudy really, and what does he want from Dexter?",
+          "Will Debra recognise the killer she is falling in love with before it is too late?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Dexter Morgan",
+          "line": "Miami Metro blood-spatter analyst who secretly kills other killers by his late father Harry's Code; being personally hunted by the Ice Truck Killer."
+        },
+        {
+          "name": "Debra Morgan",
+          "line": "Dexter's foul-mouthed sister, newly promoted from Vice to Homicide on the strength of the Ice Truck Killer case, and dating Rudy."
+        },
+        {
+          "name": "Rudy",
+          "line": "A warm, gentle prosthetics expert helping the investigation and dating Debra — revealed to the audience as the Ice Truck Killer, targeting Dexter through his family."
+        },
+        {
+          "name": "Rita Bennett",
+          "line": "Dexter's fragile girlfriend, a hotel receptionist raising two kids, now freed from her abusive ex Paul after Dexter frames him back into prison."
+        },
+        {
+          "name": "Sergeant James Doakes",
+          "line": "Homicide's hostile enforcer with an instinctive dislike of Dexter; currently under Internal Affairs scrutiny after shooting a fleeing suspect during the Guerrero case."
+        },
+        {
+          "name": "Angel Batista",
+          "line": "Homicide detective and one of Dexter's few friends on the squad, recently stabbed while chasing an amputee-fetish lead on the Ice Truck Killer."
+        },
+        {
+          "name": "Lieutenant María LaGuerta",
+          "line": "Ambitious head of Miami Metro Homicide running the Ice Truck Killer investigation, and Debra's boss."
+        },
+        {
+          "name": "Harry Morgan",
+          "line": "Dexter's late adoptive father, a Miami cop who saw Dexter's darkness in childhood and gave him the Code — kill only killers — that Dexter still lives by; appears in flashback."
+        }
+      ]
+    }
+  }
+}

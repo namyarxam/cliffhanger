@@ -1,0 +1,574 @@
+{
+  "slug": "justified",
+  "generatedFor": "Justified",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Exiled to Harlan",
+          "text": "Raylan kills a cartel enforcer in Miami on a public deadline and is exiled to Kentucky. Art assigns him to his home county of Harlan to look at old friend Boyd Crowder.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the premise — Raylan is here because he cannot stop shooting people.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Ava kills Bowman",
+          "text": "Boyd's brother Bowman is killed by his abused wife Ava. Raylan shoots Boyd during a hostage standoff, and Ava becomes the state's witness against him.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up the Ava–Raylan–Boyd triangle that carries the whole series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Boyd finds religion",
+          "text": "Boyd emerges from prison preaching, building a camp of ex-cons and burning meth labs. Raylan doesn't believe a word of it, but nothing he tries makes the act crack.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Boyd's faith arc is the season's spine; sets up the shock of him renouncing it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Bo comes home",
+          "text": "Boyd's lawyer uses Raylan's affair with Ava to force his early release. Ava is out but marked: Boyd's father Bo Crowder is coming home from prison to collect.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Raises the season's central threat — Bo Crowder returning to Harlan.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Arlo turns",
+          "text": "Arlo, secretly running Bo's operation while wearing an immunity wire, tips Bo off and lures Raylan into an ambush. Raylan shoots his own father first.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The father-son betrayal reframes every Arlo scene going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Bo destroys Boyd's flock",
+          "text": "Bo executes every man in Boyd's camp and kidnaps Ava to draw Raylan out. Boyd, faith broken, joins Raylan to hunt his own father.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Ends Boyd's preacher arc — he now has nothing left to be.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Empty gun at the cabin",
+          "text": "At Bo's cabin the cartel takes Bo down. Boyd calls Raylan the only friend he has left and drives away. Raylan raises an empty gun after him and lets him go.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The moment Raylan chooses Boyd over the badge; frames every future confrontation.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Boyd walks free with Raylan's silent blessing, stripped of his father, brother, and faith. Ava is a widow sleeping with Raylan; Arlo is a father who tried to have him killed.",
+        "questions": [
+          "Who does Boyd become without God, family, or a flock to shape him?",
+          "Can Ava build a life outside Harlan when the Crowder name still owns her?",
+          "Will Raylan ever put Arlo away, now that he knows what his father is capable of?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Raylan Givens",
+          "line": "Deputy US Marshal exiled from Miami to Lexington; angry, fast to draw, sleeping with both his ex-wife and Ava."
+        },
+        {
+          "name": "Boyd Crowder",
+          "line": "Ex-white-supremacist, ex-preacher; brother, father, and every man in his camp now dead. Utterly alone."
+        },
+        {
+          "name": "Ava Crowder",
+          "line": "Bowman's killer and Raylan's lover, widowed and refusing to leave Harlan even with parole allowing it."
+        },
+        {
+          "name": "Arlo Givens",
+          "line": "Raylan's criminal father; ran Bo's business, wore a wire, then set Raylan up to be shot."
+        },
+        {
+          "name": "Winona Hawkins",
+          "line": "Raylan's court-reporter ex-wife, married to Gary but back in Raylan's bed.",
+          "note": "Her husband Gary is in debt to the Dixie Mafia."
+        },
+        {
+          "name": "Art Mullen",
+          "line": "Lexington chief deputy marshal who keeps giving Raylan the second chance Raylan keeps testing."
+        },
+        {
+          "name": "Wynn Duffy",
+          "line": "Dixie Mafia lieutenant Raylan tangled with over Gary's debt; walked away holding a grudge."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Mags takes Loretta",
+          "text": "Raylan draws marijuana grower Walt McCready into police protection. Bennett matriarch Mags poisons him for it and takes his teenage daughter Loretta as her own.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the Bennetts and Loretta; every season-two thread runs off this murder.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Boyd tries straight",
+          "text": "Boyd takes honest work at Black Pike Coal. When white supremacists try to force him back into crime, he turns their own bomb on them and keeps his job.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Shows Boyd choosing legitimacy — makes his eventual return to crime a real fall.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Coal war",
+          "text": "Boyd works his way onto Black Pike's security payroll while secretly helping Mags corner the mine: Arlo's own house sits on the land the company needs.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Puts Boyd, Arlo, and the Bennetts on a collision course over the same acres.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Coover down the shaft",
+          "text": "Loretta spots her father's watch on Coover Bennett and calls Raylan. Raylan throws Coover into the mineshaft where the Bennetts dumped Walt's body.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Kills Mags's favourite son and severs Loretta from the family that raised her.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Gary's hit on Raylan",
+          "text": "Gary hires hitmen through Wynn Duffy to kill Raylan. Raylan drags Gary to Duffy hoping he'll be shot; Winona chooses Raylan again and tells him she's pregnant.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Locks Winona to Raylan by a child, and puts Duffy on the map as an actual threat.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Dickie kills Helen",
+          "text": "Boyd and Arlo rob Dickie Bennett's marijuana crop. Dickie retaliates by breaking into Arlo's house and killing Helen, the only person keeping Arlo tethered.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Removes Arlo's last anchor and gives Raylan a personal reason to want Dickie dead.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Mags takes her own moonshine",
+          "text": "Loretta corners Mags at gunpoint; Raylan talks her down. Mags shakes his hand, drinks her own poisoned moonshine, and dies with the Bennett empire in her grave.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Ends the Bennetts as a power and leaves a vacuum that outside players will fill.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Mags is dead by her own hand, the Bennett empire in ruins, and Dickie survives in prison plotting revenge. Winona carries Raylan's child, and Arlo, broken by Helen's murder, has no reason left to steady himself.",
+        "questions": [
+          "Can Raylan actually be a father to a child, given a job he can't set down?",
+          "What does Boyd want to build now that both the Bennetts and Bo Crowder are gone?",
+          "Who fills the Harlan power vacuum before Boyd does?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Raylan Givens",
+          "line": "Deputy marshal caught between the Bennett-versus-Black-Pike war and news that he is going to be a father."
+        },
+        {
+          "name": "Boyd Crowder",
+          "line": "Freshly back to crime after killing his old flock; running with his cousin Johnny and Devil Lennox, in Ava's house and bed."
+        },
+        {
+          "name": "Ava Crowder",
+          "line": "Bowman's widow, now Boyd's partner in life and beginning to be in business."
+        },
+        {
+          "name": "Winona Hawkins",
+          "line": "Pregnant with Raylan's child and recommitted to him, but still afraid of what his job costs."
+        },
+        {
+          "name": "Arlo Givens",
+          "line": "Raylan's father, unravelling in the empty house Helen was murdered in."
+        },
+        {
+          "name": "Dickie Bennett",
+          "line": "Mags's disowned son, imprisoned and marked by Raylan; the only Bennett still standing."
+        },
+        {
+          "name": "Loretta McCready",
+          "line": "Teenage orphan raised into and out of the Bennett household; hunted Mags with a gun and let Raylan take her."
+        },
+        {
+          "name": "Wynn Duffy",
+          "line": "Dixie Mafia lieutenant whose employers just tried to kill Raylan through Gary — and lost."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Boyd's prison hit",
+          "text": "Boyd deliberately gets himself arrested to kill Dickie for shooting Ava. Dickie survives and reveals that Mags's fortune sits with Ellstin Limehouse of Noble's Holler.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces Limehouse and puts Mags's money in play as the season's engine.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Quarles arrives",
+          "text": "Detroit lieutenant Robert Quarles is exiled to Kentucky and starts eating Harlan's rackets, muscling in on both Boyd and the Dixie Mafia at once.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up the season's main antagonist and reframes Boyd's expansion as a war.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ava takes Audrey's",
+          "text": "Ava kills her old pimp Delroy while defending Ellen May, and Boyd hands her control of Delroy's brothel Audrey's. His lover is now his partner.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Ava becomes an operator, and Ellen May becomes a witness who knows too much.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Boyd owns the sheriff",
+          "text": "Boyd backs miner Shelby Parlow for Harlan sheriff to unseat Quarles's puppet Napier. When the badge lands on Shelby, Boyd effectively owns the county's law.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Cements Boyd's grip on Harlan and puts a friendly badge on his side.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Winona walks out",
+          "text": "Winona returns the stolen money to a courthouse evidence locker; tired of trying to change Raylan, she walks out on him while still carrying his child.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Puts Raylan's family out of arm's reach, so the job is again the only thing he has.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Quarles unravels",
+          "text": "Cut off by Detroit and hooked on oxy, Quarles kills Gary, frames Raylan, and finally forces a showdown that ends with Limehouse cleaving his arm off with a cleaver.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Removes Quarles and confirms Limehouse as an untouchable neutral power.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Arlo chooses Boyd",
+          "text": "Arlo, mentally slipping, kills a state trooper he mistakes for Raylan, then confesses to a second murder to save Boyd. Raylan sees which son his father chose.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Reframes the whole Arlo–Boyd–Raylan triangle; Boyd is his father's son now.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Quarles is dead, Arlo is in prison confessing to protect Boyd, and Winona has walked out with Raylan's unborn child. Boyd controls Harlan through Shelby's badge and Ava's brothel.",
+        "questions": [
+          "What kind of father can Raylan be from Kentucky to a family living in another state?",
+          "How far will Boyd's grip on Harlan reach now that Detroit and the Dixie Mafia have both folded?",
+          "Whose son does Arlo actually think he is trying to save — Raylan, or Boyd?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Raylan Givens",
+          "line": "Deputy marshal, separated from Winona, coming apart around the edges after his father took the fall for Boyd."
+        },
+        {
+          "name": "Boyd Crowder",
+          "line": "Runs Harlan through Ava's brothel and a sheriff of his own making; expanding without a rival left."
+        },
+        {
+          "name": "Ava Crowder",
+          "line": "Boyd's partner in bed and business; killed Delroy herself and now manages the whores who saw it."
+        },
+        {
+          "name": "Winona Hawkins",
+          "line": "Gone from Raylan and pregnant with his child, having asked him not to come looking."
+        },
+        {
+          "name": "Arlo Givens",
+          "line": "In prison for a murder he committed and one he probably didn't, having chosen Boyd over Raylan as his son."
+        },
+        {
+          "name": "Ellstin Limehouse",
+          "line": "Noble's Holler patriarch; holds Mags's money and the leverage he cut off Quarles's arm with."
+        },
+        {
+          "name": "Wynn Duffy",
+          "line": "Dixie Mafia lieutenant left standing after Quarles's fall; now the region's only Detroit contact."
+        },
+        {
+          "name": "Ellen May",
+          "line": "Prostitute at Audrey's who witnessed Delroy's death and cannot keep her mouth shut about it."
+        },
+        {
+          "name": "Shelby Parlow",
+          "line": "New Harlan sheriff; wears Boyd's badge but is quieter and more decent than the man who bought him."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · The bag in the wall",
+          "text": "A bag is found hidden in Arlo Givens's abandoned house. The marshals trace its contents to Drew Thompson, a legendary Kentucky fugitive presumed dead since 1983.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up the season-long mystery that pulls in Arlo, Boyd, and Detroit.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Boyd builds an empire",
+          "text": "Boyd, engaged to Ava, hires ex-MP Colt Rhodes as muscle and expands across Harlan. Ava wants Ellen May killed to bury the last witness to Delroy's murder.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Puts Ava's freedom on a clock and introduces Colt, Boyd's most dangerous lieutenant yet.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Arlo dies for Boyd",
+          "text": "Detroit sends Nick Augustine after Thompson, who can identify Theo Tonin as a killer. Arlo is stabbed to death in prison rather than give the name up.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Removes Arlo, and confirms he'd rather die than sell Boyd.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Shelby is Drew",
+          "text": "Sheriff Shelby Parlow turns out to be Drew Thompson. He and Ellen May, whose testimony could sink Ava, go on the run together.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Reframes the whole Harlan sheriff arc and puts the two loose witnesses together.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Ellen May in WITSEC",
+          "text": "Raylan gets Thompson and Ellen May into federal witness protection. Ava tries to reach Ellen May first and fails; the Delroy murder is now a case waiting on a witness.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Ellen May survives, meaning Ava can be prosecuted whenever the marshals want.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Detroit collapses",
+          "text": "Raylan quietly lets Detroit's Nick Augustine be killed on Kentucky soil. Theo Tonin retires, Wynn Duffy inherits the region, and offers Boyd a heroin distribution deal.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Puts Boyd into heroin — the business that will run the next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Ava is arrested",
+          "text": "Ava is arrested burying Delroy's body, a sheriff's trap fed by Boyd's own sister. Boyd loses his fiancée on the day his heroin pipeline opens.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Ends the season with Ava in custody as Boyd starts his biggest venture yet.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ava is jailed for murder and facing a long sentence. Arlo is dead in prison. Boyd is engaged to a woman he cannot reach and about to move heroin for Wynn Duffy.",
+        "questions": [
+          "Can Ava survive prison long enough for Boyd to get her out?",
+          "What does Boyd, now handling Detroit's heroin, do with a pipeline that big?",
+          "With Arlo buried, who does Raylan point his anger at next?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Raylan Givens",
+          "line": "Deputy marshal; let Augustine be killed to close the case and concealed his role from his boss."
+        },
+        {
+          "name": "Boyd Crowder",
+          "line": "Engaged, expanding, and stepping into heroin distribution for Duffy on Detroit's behalf."
+        },
+        {
+          "name": "Ava Crowder",
+          "line": "Arrested for Delroy's murder in a sting set by Boyd's own sister; heading to state prison."
+        },
+        {
+          "name": "Wynn Duffy",
+          "line": "Region's Detroit contact after Augustine's death; new heroin partner to Boyd."
+        },
+        {
+          "name": "Colt Rhodes",
+          "line": "Boyd's ex-military enforcer and functioning addict, hunted now for Mark's murder."
+        },
+        {
+          "name": "Ellstin Limehouse",
+          "line": "Ellstin Limehouse captured Thompson and Ellen May and sold Thompson to Boyd, pulling Noble's Holler into the chase."
+        },
+        {
+          "name": "Winona Hawkins",
+          "line": "At a house Raylan visits in the finale, targeted by Picker's men scoping the place out."
+        },
+        {
+          "name": "Ellen May",
+          "line": "The Delroy witness who kept her mouth open long enough to reach WITSEC."
+        },
+        {
+          "name": "Art Mullen",
+          "line": "Chief deputy who has just been told of Augustine's death, with Raylan admitting no part in it."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · The Crowes come north",
+          "text": "Dewey Crowe's Florida cousins Daryl, Danny, and Wendy arrive in Harlan with young Kendal, muscling into Boyd's operation while Dewey buys Audrey's off the marshals.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the season's new family antagonist and reactivates Dewey.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Ava sent down",
+          "text": "Ava's release collapses when a guard plants a shiv on her; she is transferred to state prison, where survival means running heroin for gang leader Judith.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Locks Ava away from Boyd and forces her deeper into criminal debt.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Boyd kills Johnny",
+          "text": "Boyd goes to Mexico to buy a direct cartel heroin pipeline, only for cousin Johnny Crowder to outbid him and set him up to die. Boyd kills Johnny himself instead.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Closes the last Crowder family betrayal and locks Boyd to the cartel personally.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Colt murders Mark",
+          "text": "Raylan uses social worker Alison to take Kendal Crowe into state custody, and Daryl marks him as an enemy for it.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Turns Tim into a driver and severs Boyd from his most useful lieutenant.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Art through the door",
+          "text": "Daryl Crowe shoots Art through a hotel door aimed at Raylan. Kendal falsely confesses, claiming revenge for Danny, and Raylan swears he will end Daryl for it.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Puts Art in a hospital bed and gives Raylan a personal war with Daryl.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Ava breaks with Boyd",
+          "text": "Ava kills Judith to survive prison, then breaks off her engagement to Boyd, finally seeing what the life he built for her has made her into.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Cracks the Ava–Boyd partnership; sets up the informant turn to come.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Wendy shoots Daryl",
+          "text": "Wendy tricks Daryl into confessing to Art's shooting on tape, then shoots him herself. Ava is released — and put back in the field as the marshals' RICO informant on Boyd.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Closes the Crowe arc and opens the next season's central deception in a single move.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ava has been quietly released to inform on Boyd, who has no idea. Raylan's transfer to Miami is approved — but he is staying for one last case, the RICO case being built around the man who dug coal with him.",
+        "questions": [
+          "How long can Ava keep the informant secret from a man who reads her better than anyone?",
+          "Can the marshals actually take Boyd down before he catches on?",
+          "Will Raylan really leave Harlan when it's over?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Raylan Givens",
+          "line": "Miami transfer approved and delayed; staying to finish Boyd through Ava."
+        },
+        {
+          "name": "Boyd Crowder",
+          "line": "Runs Kentucky's only direct-cartel heroin pipeline; engaged to a fiancée who is now the marshals' informant."
+        },
+        {
+          "name": "Ava Crowder",
+          "line": "Freshly out of prison after killing to survive it; secretly wired against Boyd to stay out."
+        },
+        {
+          "name": "Wynn Duffy",
+          "line": "Boyd's partner in Detroit's heroin trade; now co-running the pipeline with Katherine Hale."
+        },
+        {
+          "name": "Katherine Hale",
+          "line": "Widow of Duffy's old mentor Grady Hale; came out of retirement to muscle back in on the money."
+        },
+        {
+          "name": "Art Mullen",
+          "line": "Chief deputy, recently shot; named Rachel as his successor and knows Raylan let a mob boss die."
+        },
+        {
+          "name": "Winona Hawkins",
+          "line": "In Florida with Raylan's daughter Willa, waiting to see if Raylan actually moves south."
+        },
+        {
+          "name": "Loretta McCready",
+          "line": "Now grown, growing marijuana on the last of Mags's operation and back in Raylan's orbit."
+        },
+        {
+          "name": "Ellstin Limehouse",
+          "line": "Still holds Noble's Holler as neutral ground while everyone else eats each other."
+        }
+      ]
+    },
+    "6": {
+      "beats": [
+        {
+          "label": "S6 · Markham buys Harlan",
+          "text": "Former Dixie Mafia head Avery Markham returns to Harlan to buy up land for a legal marijuana empire, sending his crew — Ty Walker, Choo-Choo, and Seabass — in ahead.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the season's antagonist and a real deadline for Boyd and Loretta both.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Ava on the wire",
+          "text": "Ava lives with Boyd and reports every move to Raylan, pinned between the man she loves and the marshals holding her freedom.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The season's engine; every scene between Ava and Boyd is played twice.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · The vault under Pizza Portal",
+          "text": "Boyd learns Markham has stored millions in a vault beneath a Pizza Portal restaurant. He recruits Ava's uncle Zachariah to tunnel underneath and rob it.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Sets the target Boyd will chase all season and gives Zachariah his lever against a Crowder.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Katherine's grudge",
+          "text": "Katherine Hale accepts Markham's marriage proposal while quietly plotting his death, believing he sold out her late husband Grady. The real informant was Duffy, and the marshals turn him.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Puts Katherine on Boyd's side of the vault and flips Duffy into a witness.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Loretta swings the county",
+          "text": "Loretta McCready, having quietly bought Bennett land out from under Markham, humiliates him at his own recruitment party and swings Harlan behind her.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Loretta reappears as a real player; makes clear Markham cannot buy the county cleanly.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Ava shoots Boyd",
+          "text": "When the heist collapses and Boyd is nearly left to die in the shaft, he crawls back to Ava — who shoots him, takes the money, and drives off alone.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The Ava–Boyd relationship pays out; she chooses herself over both men in her life.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Four years on",
+          "text": "Raylan lets Boyd be arrested rather than kill him, and Markham dies. Four years later, Raylan finds Ava alive with a young son, and lies to Boyd in prison that she died in a crash.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The show's closing chord: Raylan chooses mercy for both of them, on a lie.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Boyd preaches to a prison congregation, believing Ava dead. Ava lives quietly in California with Boyd's son. Raylan is back in Miami with Winona and Willa, separated but present — the debt he and Boyd carry from a Harlan coal mine closed with the truth withheld.",
+        "questions": [
+          "Does Boyd ever discover Raylan lied about Ava?",
+          "What life can Ava build for a Crowder son whose father must never find him?",
+          "Was letting Boyd live, and letting him believe Ava is dead, a mercy or a debt paid?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Raylan Givens",
+          "line": "Deputy marshal in Miami; separated from Winona, an actual father to Willa, and the man who chose not to shoot Boyd."
+        },
+        {
+          "name": "Boyd Crowder",
+          "line": "Serving life as a prison preacher, told by Raylan that the woman he loved is dead — and believing it."
+        },
+        {
+          "name": "Ava Crowder",
+          "line": "Alive in hiding in California with Boyd's young son; found by Raylan, hidden by Raylan."
+        },
+        {
+          "name": "Winona Hawkins",
+          "line": "Separated from Raylan but co-parenting Willa; the family he moved south to have."
+        },
+        {
+          "name": "Art Mullen",
+          "line": "Chief deputy who closed the RICO case on Boyd and let Raylan go south."
+        }
+      ]
+    }
+  },
+  "repairedAt": "2026-07-27T06:03:21.428Z"
+}

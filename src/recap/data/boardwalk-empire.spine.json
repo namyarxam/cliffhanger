@@ -1,0 +1,518 @@
+{
+  "slug": "boardwalk-empire",
+  "generatedFor": "Boardwalk Empire",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Prohibition begins",
+          "text": "Jan 1920: Prohibition begins. Nucky partners with Rothstein and Luciano to bootleg, using protégé Jimmy Darmody — who secretly hijacks the first shipment.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the empire, the partners, and the first betrayal that seeds Jimmy's arc.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Margaret becomes his",
+          "text": "Margaret Schroeder's abusive husband is quietly killed by Nucky's men; pregnant and grateful, she becomes his mistress despite Agent Van Alden's obsessive interest.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Establishes the triangle that drives Margaret's leverage over Nucky and Van Alden's fixation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Chalky comes in",
+          "text": "Nucky brings in Chalky White to run distribution through Atlantic City's Black wards, extending his empire beyond the boardwalk.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Establishes the Nucky–Chalky alliance that carries the whole series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Jimmy in Chicago",
+          "text": "Jimmy flees to Chicago with Rothstein hunting him, apprenticing under Johnny Torrio and Al Capone and returning a harder, more ambitious rival to his old mentor.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Turns Jimmy from apprentice into credible successor and installs the Chicago link.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The D'Alessio war",
+          "text": "Rothstein backs the D'Alessio brothers in a bootlegging war on Nucky's operation; Jimmy returns home to help crush them and reclaim his place.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The war that reunites Jimmy with Nucky and sets the debt Jimmy feels he is owed.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Election and choice",
+          "text": "Nucky rigs the mayoral election and keeps power; Margaret nearly leaves him after learning his hand in her husband's death, then chooses him anyway.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Locks Margaret in as Nucky's partner and shows Nucky still holds the city — right before he doesn't.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The coup forms",
+          "text": "Passed over and resentful, Jimmy secretly allies with Eli and the aging Commodore in a coup to take Atlantic City from Nucky.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The exact setup S2 opens on. Nothing else in S1 matters more for the recap.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Nucky sits atop Atlantic City with Margaret at his side, unaware that his surrogate son, his own brother, and his aging mentor have just conspired to remove him.",
+        "questions": [
+          "Can Jimmy actually go through with betraying the man who raised him?",
+          "How much of Nucky's operation survives an inside attack from his own sheriff?",
+          "What does Margaret choose when Nucky's world starts to break?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Enoch \"Nucky\" Thompson",
+          "line": "Atlantic County treasurer and dominant bootlegger, oblivious that his own brother has just joined a coup against him."
+        },
+        {
+          "name": "Jimmy Darmody",
+          "line": "Nucky's WWI-veteran former protégé, now the reluctant frontman of the plot to unseat him."
+        },
+        {
+          "name": "Margaret Schroeder",
+          "line": "Widowed Irish immigrant turned Nucky's mistress after his men killed her abusive husband."
+        },
+        {
+          "name": "Eli Thompson",
+          "line": "Atlantic City sheriff and Nucky's resentful younger brother, secretly conspiring with Jimmy and the Commodore."
+        },
+        {
+          "name": "Louis \"the Commodore\" Kaestner",
+          "line": "Nucky's aging former mentor and the elder patriarch bankrolling the coup."
+        },
+        {
+          "name": "Chalky White",
+          "line": "Boss of Atlantic City's Black wards; Nucky's key distribution partner."
+        },
+        {
+          "name": "Nelson Van Alden",
+          "line": "Fanatical Prohibition agent building a case against Nucky and dangerously fixated on Margaret."
+        },
+        {
+          "name": "Gillian Darmody",
+          "line": "Jimmy's mother, who has an affair with Luciano this season."
+        },
+        {
+          "name": "Arnold Rothstein",
+          "line": "New York's crime kingpin, alternately Nucky's supplier and his enemy; just quietly bankrolled the war against him."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · The coup breaks",
+          "text": "Jan 1921: Jimmy, Eli and the Commodore's coup opens with a Klan attack on Chalky's warehouse and Nucky's arrest for election fraud as key allies defect.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Payoff of S1's cliffhanger and the frame for the whole season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Jimmy in charge",
+          "text": "The Commodore is felled by a stroke, forcing Jimmy to lead; his erratic command alienates his partners as Nucky imports IRA gunman Owen Sleater as muscle.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Shifts the coup's power to Jimmy and introduces Owen, who becomes Nucky's right hand and Margaret's lover.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Van Alden unravels",
+          "text": "Van Alden's obsessions destroy him: mistress Lucy births his child, a discovery ends his career, and he flees into the Midwest.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Writes Van Alden out of the boardwalk story and sends him to the Midwest for his S3 reinvention.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Hit on Nucky",
+          "text": "Jimmy's crew tries to assassinate Nucky and fail; a wounded Nucky consults Rothstein and Torrio and returns hungry for revenge.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The point at which Nucky decides Jimmy must die, and locks in Rothstein/Torrio as brokers.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Whiskey and vows",
+          "text": "Nucky floods Atlantic City with Irish whiskey from an IRA arms deal, cracking the coup, then marries Margaret so she cannot testify against him.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Breaks the war economically and puts the political marriage on the board.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Angela dies, Jimmy folds",
+          "text": "Philadelphia butcher Manny Horvitz murders Jimmy's wife Angela in revenge; a broken Jimmy reconciles with Nucky and offers himself as the man to take the fall.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The emotional collapse that lets Nucky reel Jimmy in — and marks Manny for Richard's S3 opener.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Nucky pulls the trigger",
+          "text": "Nucky accepts Jimmy's surrender and then shoots him at the war memorial; Margaret quietly signs Nucky's promised land over to the Catholic Church.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The season's defining act and Margaret's secret betrayal, both of which frame S3.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Nucky has beaten the case, killed his surrogate son, and married Margaret to bury the evidence. He does not yet know she has quietly signed his most valuable land over to the Church.",
+        "questions": [
+          "What happens when Nucky discovers Margaret has given his fortune away?",
+          "Who steps into the enemy slot that Jimmy just vacated?",
+          "Can Nucky live with what he just did to the boy he raised?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Enoch \"Nucky\" Thompson",
+          "line": "Cleared, remarried, and back in undisputed control of Atlantic City after killing Jimmy himself."
+        },
+        {
+          "name": "Margaret Thompson",
+          "line": "Nucky's new wife, who has secretly deeded his most valuable land to the Catholic Church."
+        },
+        {
+          "name": "Eli Thompson",
+          "line": "Broken by the coup and now in prison for the manslaughter of a deputy."
+        },
+        {
+          "name": "Gillian Darmody",
+          "line": "Jimmy's mother, who has murdered the Commodore."
+        },
+        {
+          "name": "Richard Harrow",
+          "line": "Jimmy's disfigured sniper best friend."
+        },
+        {
+          "name": "Chalky White",
+          "line": "Back running his end of Atlantic City after leading a labour strike Nucky needed broken."
+        },
+        {
+          "name": "Nelson Van Alden",
+          "line": "A fugitive after a discovery ended his career, fleeing to the Midwest with his baby and nanny Sigrid."
+        },
+        {
+          "name": "Charles \"Lucky\" Luciano & Meyer Lansky",
+          "line": "Rothstein's rising young men, now brokering a heroin operation of their own."
+        },
+        {
+          "name": "Owen Sleater",
+          "line": "Nucky's IRA-trained enforcer, secretly sleeping with Margaret."
+        },
+        {
+          "name": "Manny Horvitz",
+          "line": "Philadelphia butcher-gangster who killed Angela in a revenge feud with Jimmy; still alive and hunted."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Rosetti insulted",
+          "text": "NYE 1922: hot-tempered New York mobster Gyp Rosetti storms out of Nucky's party after learning Rothstein has locked up Nucky's supply as an exclusive.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The inciting slight that fuels the entire season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Tabor Heights",
+          "text": "Rosetti seizes the coast-road town of Tabor Heights and blockades Nucky's convoys, choking off his profitable New York business.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The chokehold that turns the feud into open war.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Mueller in Chicago",
+          "text": "On the run, Van Alden reinvents himself as Chicago iron salesman George Mueller and is pulled into Al Capone's feud with Dean O'Banion.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Reboots Van Alden as a Chicago henchman — his role for the rest of the series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Owen dies",
+          "text": "Margaret rekindles her affair with Owen Sleater and falls pregnant; before they can run away together, Masseria's men kill Owen and dump his body at her door.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The moment that ends Margaret's belief in her life with Nucky.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Bomb on the boards",
+          "text": "A Rosetti bombing on the boardwalk kills Nucky's showgirl Billie Kent; a concussed Nucky retreats into hiding as his empire wobbles.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The blast that forces Nucky underground and clears the board for Rosetti's invasion.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The invasion",
+          "text": "Rosetti and Masseria invade Atlantic City; Nucky flees to a lumberyard war camp, and Eli fetches Al Capone up from Chicago as reinforcement.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The rout that puts Nucky at his lowest and rebonds him with Eli and Chalky.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Nucky alone",
+          "text": "Nucky's alliance of Chalky, Capone and a turned Rothstein routs Masseria and has Rosetti killed on a beach; Margaret walks out on him for good.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The win — and the loss that leaves Nucky isolated at the top going into S4.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Nucky has crushed Rosetti and reclaimed Atlantic City, but Margaret has walked out, Owen and Billie are dead, and his victory feels anonymous and hollow.",
+        "questions": [
+          "Can Nucky rule Atlantic City without anyone close enough to warn him?",
+          "What does Gillian do now that she has lost the house, Tommy and her power?",
+          "Who fills the void as Luciano and Lansky push into heroin with Masseria?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Enoch \"Nucky\" Thompson",
+          "line": "Won the war, kept the city, and lost Margaret; ruling alone from behind a hotel-room door."
+        },
+        {
+          "name": "Margaret Thompson",
+          "line": "Has left Nucky after Owen's death and is finally out from under him."
+        },
+        {
+          "name": "Eli Thompson",
+          "line": "Freed from prison mid-season and back at Nucky's side, forgiven at last."
+        },
+        {
+          "name": "Gillian Darmody",
+          "line": "Defeated matriarch — she has lost the Commodore's estate, Tommy, and any real power."
+        },
+        {
+          "name": "Richard Harrow",
+          "line": "Handed Tommy to Julia Sagorsky and ended his own hope of a life with her."
+        },
+        {
+          "name": "Chalky White",
+          "line": "Now running the Onyx Club as Nucky's most trusted lieutenant in Atlantic City."
+        },
+        {
+          "name": "Nelson Van Alden / George Mueller",
+          "line": "Living undercover as a Chicago iron salesman, hooked into Capone's world."
+        },
+        {
+          "name": "Al Capone",
+          "line": "Given a larger role in the Chicago outfit by Torrio, and now a debt-owed Nucky ally."
+        },
+        {
+          "name": "Luciano & Lansky",
+          "line": "Broken with Rothstein, now aligned with Joe Masseria and running a heroin operation."
+        },
+        {
+          "name": "Arnold Rothstein",
+          "line": "Humiliated by Nucky's political trick that dispossessed him of his distillery play."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Nucky in retreat",
+          "text": "Feb 1924: chastened by the Rosetti war, Nucky rules from a hotel suite, sends loyal Eddie Kessler to run day-to-day business, and Chalky quietly runs the Onyx.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets Nucky's post-war withdrawal and Eddie's expanded role — needed for Eddie's arc later this season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Narcisse arrives",
+          "text": "Harlem kingpin Valentin Narcisse blackmails Chalky over one of his men's killing and begins pushing heroin into Chalky's territory.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces the season's antagonist and the wedge splitting Chalky from Nucky.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Cuba plan",
+          "text": "Nucky takes Tampa barkeep Sally Wheet as his lover and plans a Cuban-rum future for after Prohibition, bringing Meyer Lansky in as his Florida partner.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Sets Nucky's exit strategy from bootlegging and installs Sally, who becomes his lieutenant.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Eddie broken",
+          "text": "Undercover federal agent \"Knox\" cracks Eddie into betraying Nucky's ring; a ruined Eddie throws himself from his window, and Knox turns his sights on Eli.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The federal noose tightens and the target pivots from Eddie to Eli — the crux of the whole plot.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Eli turned",
+          "text": "Nucky's nephew Willie accidentally kills a college rival; Nucky buries it, but Knox uses the cover-up to blackmail a fracturing Eli into informing on his brother.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The moment Eli becomes an informant — the private treason the finale hinges on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Chalky and Daughter",
+          "text": "Chalky falls for Narcisse's plant, singer Daughter Maitland; the war that follows costs Chalky the Onyx as Narcisse begins circling his daughter Maybelle.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The Chalky/Narcisse arc that dictates Chalky's whole future after this season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Richard falls",
+          "text": "Richard's sniper shot at Narcisse instead kills Maybelle; Richard dies alone under the pier, Eli beats Knox to death, and Nucky exiles Eli to Chicago.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The tragedy that removes Richard, breaks Chalky, and sends Eli to Van Alden — the exact state S5 opens in.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Chalky is a fugitive with his daughter dead and Narcisse still breathing — now Hoover's informant. Eli is on his way to Chicago, and Nucky's future lies in Cuban rum, not the boardwalk.",
+        "questions": [
+          "Will Chalky get his revenge on Narcisse, or die trying?",
+          "What does Eli's life look like living under Al Capone alongside Van Alden?",
+          "Can Nucky make the leap from bootlegger to legitimate liquor mogul when repeal comes?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Enoch \"Nucky\" Thompson",
+          "line": "Survived the federal net and Chalky's war; planning a Cuban-rum future after learning his own brother has been turned against him."
+        },
+        {
+          "name": "Eli Thompson",
+          "line": "An informant turned killer — beat a federal agent to death and been exiled by Nucky to Chicago."
+        },
+        {
+          "name": "Chalky White",
+          "line": "A fugitive with the Onyx gone and his daughter Maybelle dead, hunted by a still-alive Narcisse."
+        },
+        {
+          "name": "Valentin Narcisse",
+          "line": "Harlem kingpin who broke Chalky; now walking free as Hoover's informant against Marcus Garvey."
+        },
+        {
+          "name": "Willie Thompson",
+          "line": "Eli's ambitious son, Nucky's new political protégé after Nucky covered up his college killing."
+        },
+        {
+          "name": "Nelson Van Alden / George Mueller",
+          "line": "Reluctant Capone enforcer in Chicago — and the man Eli is about to arrive next to."
+        },
+        {
+          "name": "Luciano & Lansky",
+          "line": "Masseria's heroin partners; Lansky is also Nucky's Cuba-rum partner going forward."
+        },
+        {
+          "name": "Margaret Thompson",
+          "line": "Living alone in New York, working at a brokerage under Rothstein's shadow."
+        },
+        {
+          "name": "Gillian Darmody",
+          "line": "Imprisoned after a Pinkerton posing as her fiancé conned her into confessing to Roger's murder."
+        },
+        {
+          "name": "Sally Wheet",
+          "line": "Nucky's Tampa barkeep-lover, running his Cuban rum interests on the ground."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · 1931, seven years on",
+          "text": "1931: an older Nucky is in Cuba wooing Bacardi for post-Prohibition; in New York, Luciano has his boss Joe Masseria assassinated at lunch to end the mob war.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the time jump and Luciano's move for total power — the frame of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The boy Nucky",
+          "text": "Flashbacks trace a young Nucky rising as the Commodore's fixer, marrying Mabel Jeffries, and first meeting a young street girl named Gillian.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The backstory the finale turns on — how Nucky gave Gillian to the Commodore in the first place.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Old faces return",
+          "text": "Chalky escapes a prison chain gang and returns to Atlantic City hunting Narcisse; Eli, now a Chicago drunk, works with Van Alden as Capone's debt collectors.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Puts Chalky back on the board and shows where Eli and Van Alden have landed.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Warned by Tonino",
+          "text": "Nucky meets New York boss Salvatore Maranzano; turncoat Tonino warns him Luciano is coming, so Nucky has Tonino killed and dumped at Lansky's door.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Confirms Nucky knows Luciano wants him dead — and shows the era of gentleman's agreements is over.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Sally and Chalky die",
+          "text": "Sally is shot dead at a Cuban roadblock; Chalky trades himself to Narcisse to free his lover Daughter Maitland and their child, and is executed.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The two losses that strip Nucky and Chalky's storylines to their endings.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Cashing out",
+          "text": "Nucky loses Atlantic City to Luciano and Lansky and cashes out through a Mayflower stock scheme run by Margaret with Joseph Kennedy; he orders Maranzano's murder as payment.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "How Nucky exits both the underworld and the boardwalk — and delivers Luciano's last obstacle.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Killed on the boards",
+          "text": "Preparing to leave for good, Nucky is shot dead on the boardwalk by Gillian's grandson Tommy Darmody, avenging the family Nucky helped destroy.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The finale's closing act — the flashbacks make it the only possible ending.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Nucky is dead on the boardwalk, killed by the boy his own past created. Luciano's Commission rules the underworld, Capone is bound for prison on tax charges, and the era of the boardwalk kings is over.",
+        "questions": [
+          "What becomes of the fortune Nucky spent his life building?",
+          "How does Gillian, lobotomised in her asylum, live with what she asked Nucky to do?",
+          "Was the boy Nucky handed over to the Commodore always going to grow up to kill him?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Enoch \"Nucky\" Thompson",
+          "line": "Dead on the boardwalk, shot by Jimmy's grown son in payment for a childhood betrayal of Gillian."
+        },
+        {
+          "name": "Charles \"Lucky\" Luciano",
+          "line": "Master of the underworld — Masseria and Maranzano both dead on his orders, the new Commission his to run."
+        },
+        {
+          "name": "Meyer Lansky",
+          "line": "Luciano's partner in the new national syndicate, and the man now holding Atlantic City."
+        },
+        {
+          "name": "Eli Thompson",
+          "line": "Alive; presumed dead by Capone, freed by the feds, sent home to his family by Nucky."
+        },
+        {
+          "name": "Nelson Van Alden / George Mueller",
+          "line": "Shot dead by federal agent Mike D'Angelo before he could reveal the sting on Capone."
+        },
+        {
+          "name": "Al Capone",
+          "line": "Arrested for tax evasion after his ledgers are seized; already saying goodbye to his son."
+        },
+        {
+          "name": "Chalky White",
+          "line": "Executed by Narcisse's men after willingly trading himself for Daughter Maitland's freedom."
+        },
+        {
+          "name": "Valentin Narcisse",
+          "line": "Assassinated in front of his church by Bugsy Siegel on Luciano's order."
+        },
+        {
+          "name": "Margaret Thompson",
+          "line": "Cashed out Nucky and Kennedy on the Mayflower stock; still standing when the empire falls."
+        },
+        {
+          "name": "Gillian Darmody",
+          "line": "Lobotomised in the asylum after being surgically \"treated\" for her feigned insanity."
+        }
+      ]
+    }
+  },
+  "repairedAt": "2026-07-27T05:59:47.984Z"
+}

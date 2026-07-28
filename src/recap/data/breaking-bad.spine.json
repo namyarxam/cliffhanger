@@ -1,0 +1,489 @@
+{
+  "slug": "breaking-bad",
+  "generatedFor": "Breaking Bad",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · A death sentence",
+          "text": "On his 50th birthday, high school chemistry teacher Walt is diagnosed with Stage 3 lung cancer and told he has roughly two years to live.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the two-year clock and the money problem that motivates every choice Walt makes going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The partnership",
+          "text": "On a DEA ride-along, Walt sees his ex-student Jesse escape a meth raid; he tracks Jesse down and proposes they cook together.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The core pairing the whole series runs on begins here and never truly ends.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · First blood",
+          "text": "Their first cook is pure, but distributors Emilio and Krazy-8 recognize Walt from the raid; he gasses them, then later strangles the surviving Krazy-8 with a bike lock.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Walt crosses the line from cook to killer, discovering he can do it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Cancer, out in the open",
+          "text": "Walt tells the family about his diagnosis; Hank vows to protect them, while Skyler quietly begins cataloguing Walt's lies and unexplained absences.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Skyler's suspicion is the fuse that will detonate their marriage; Hank's protectiveness sets up the family-vs-DEA collision.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Tuco",
+          "text": "To scale up, Skinny Pete introduces Jesse to volatile distributor Tuco Salamanca; Tuco beats Jesse half to death and walks off with the meth.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Introduces the psychopath who defines the season-two opener.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Heisenberg is born",
+          "text": "Walt walks into Tuco's hideout, blows out a wall with a fake bag of meth, and demands payment; the impressed Tuco agrees to a much bigger order.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Walt performs 'Heisenberg' for the first time and binds himself to a dealer he cannot control.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Yoked to a psychopath",
+          "text": "Delivering four pounds to Tuco, Walt and Jesse watch him savagely beat his own henchman No-Doze over a small remark, and drive off.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Ends the season with Walt trapped in business with a man who will kill anyone at any moment — the launchpad for S2's kidnapping.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Walt and Jesse have just watched Tuco beat his own man bloody for nothing. They are now his suppliers, at his mercy, and he is escalating.",
+        "questions": [
+          "How long before Tuco turns that violence on Walt and Jesse?",
+          "How much longer can Skyler ignore what her husband is hiding?",
+          "Will Hank keep chasing the new blue meth cook without ever suspecting the cook is Walt?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Walter White",
+          "line": "High school chemistry teacher with terminal lung cancer, secretly cooking crystal meth to leave his family money."
+        },
+        {
+          "name": "Jesse Pinkman",
+          "line": "Walt's ex-student and a small-time dealer, now his cook partner and the face of their operation on the street."
+        },
+        {
+          "name": "Skyler White",
+          "line": "Walt's pregnant wife, growing suspicious of his second phone, missing hours, and thin excuses."
+        },
+        {
+          "name": "Hank Schrader",
+          "line": "Walt's DEA brother-in-law, hunting the new high-purity blue meth cook without any idea who it is."
+        },
+        {
+          "name": "Tuco Salamanca",
+          "line": "Psychotic drug distributor now moving Walt's product, unpredictable and violent."
+        },
+        {
+          "name": "Walter White Jr.",
+          "line": "Walt and Skyler's teenage son with cerebral palsy, hero-worshipping his father."
+        },
+        {
+          "name": "Marie Schrader",
+          "line": "Skyler's sister and Hank's wife, meddlesome and prone to kleptomania."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · The end of Tuco",
+          "text": "Tuco kidnaps Walt and Jesse to his uncle Hector's desert hideout, meaning to move them to Mexico; Jesse shoots him and Hank finishes him off.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Removes Tuco, brings Hank into the killing side of the case, and quietly plants Hector for later.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Fugue and the task force",
+          "text": "Walt covers his absence by faking a 'fugue state'; Hank is promoted to a regional Heisenberg task force but starts suffering panic attacks after killing Tuco.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Both men now carry hidden damage from the desert, and Hank is officially on Heisenberg's trail.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Saul Goodman",
+          "text": "When Badger is arrested, Walt and Jesse hire shady strip-mall lawyer Saul Goodman; he becomes their permanent fixer and money-launderer.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Introduces the lawyer who runs every scheme from here on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Jane, and heroin",
+          "text": "Jesse falls for his new landlord Jane, a recovering addict; he tells her about the meth, and she relapses, introducing him to heroin.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Sets up the blackmail that becomes the season's moral turning point.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Enter Gus",
+          "text": "Saul introduces them to fast-food owner Gustavo Fring, a soft-spoken, high-volume buyer who warns Walt never to trust an addict.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Introduces the man who becomes Walt's boss and eventual enemy for the next two seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Watching Jane die",
+          "text": "Jane discovers Jesse's cash and blackmails Walt for his cut; that night, Walt watches her choke on her own vomit and does not intervene.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The private sin that will silently drive every Walt-Jesse scene until it eventually comes out.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Skyler leaves; the sky falls",
+          "text": "Skyler pieces together Walt's second phone and his lies about visiting his mother, and leaves him; Jane's grieving father, an air traffic controller, causes a mid-air collision that scatters debris over Walt's neighborhood.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Both of Walt's worlds collapse simultaneously — his family and his moral cover — going into S3.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Skyler has walked out with the kids after uncovering Walt's lies. Jane is dead by Walt's inaction, Jesse is in rehab, and burning wreckage from a plane crash indirectly caused by Walt is scattered across his back yard.",
+        "questions": [
+          "Now that Skyler knows Walt lied, how far will she go to find out why?",
+          "Can Jesse survive the guilt of Jane's death without knowing Walt let her die?",
+          "How long until Hank's Heisenberg task force turns the trail toward the man across his own dinner table?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Walter White",
+          "line": "Cancer in remission and cooking for a new distributor, having just watched his girlfriend's daughter die and his wife walk out."
+        },
+        {
+          "name": "Jesse Pinkman",
+          "line": "In rehab and grieving; his girlfriend Jane overdosed on heroin the night Walt was standing over her."
+        },
+        {
+          "name": "Skyler White",
+          "line": "Has just left Walt with newborn Holly and Walt Jr., certain he's lied about everything but not yet sure what he's actually doing."
+        },
+        {
+          "name": "Hank Schrader",
+          "line": "On the DEA's Heisenberg task force, still shaken by killing Tuco and quietly falling apart."
+        },
+        {
+          "name": "Saul Goodman",
+          "line": "Sleazy strip-mall criminal lawyer, now Walt and Jesse's fixer, launderer, and go-to problem-solver."
+        },
+        {
+          "name": "Gustavo Fring",
+          "line": "Los Pollos Hermanos owner secretly running a Southwest meth distribution empire, cautious and patient, and Walt's new buyer."
+        },
+        {
+          "name": "Marie Schrader",
+          "line": "Skyler's sister; her only real ally as Skyler flees the marriage."
+        },
+        {
+          "name": "Walter White Jr.",
+          "line": "Teenage son, siding with his mother against a father he cannot understand."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · The Cousins arrive",
+          "text": "Skyler files for divorce; Tuco's twin cousins Leonel and Marco cross the border to kill Walt, and Gus stalls them to protect his supplier.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces the hitmen and the fact that Gus is now silently managing Walt's survival.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Skyler in the fold",
+          "text": "Skyler forces the truth out of Walt — that he cooks meth — and retaliates by sleeping with her boss Ted; Walt calmly moves back into the house anyway.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Skyler now knows everything, choosing complicity over exposure, which reshapes the household for the rest of the show.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The superlab and Gale",
+          "text": "Gus lures Walt back with a state-of-the-art underground lab and a new junior chemist, Gale Boetticher; Jesse begins cooking his own inferior product on the side.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Introduces Gale, whose murder ends the season and drives the next one.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Hank on the RV",
+          "text": "Hank chases the RV to Jesse; Walt has it crushed just in time, and a humiliated Hank beats Jesse into a hospital bed, then loses his badge for it.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Hank is now an unarmed civilian just as the assassins pivot toward him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The Cousins meet Hank",
+          "text": "Gus quietly redirects the Cousins away from Walt and onto Hank; a parking-lot shootout leaves both hitmen dead and Hank partially paralyzed.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Gus has now weaponized Walt's family to buy himself a cook, and Hank is a wounded man with a grudge.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Walt sees the trap",
+          "text": "Realizing Gus is training Gale as his replacement — and will kill him the moment Gale can cook alone — Walt fires Gale and reinstates Jesse to make himself irreplaceable.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Frames the endgame: Walt understands he is expendable and must act first.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · 'Do it'",
+          "text": "About to be executed by Mike, Walt phones Jesse and orders him to kill Gale first; Jesse tearfully raises his gun at Gale's door and fires.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The season ends with Jesse crossing the line from user to killer and Walt in open war with Gus.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Jesse has just shot Gale on Walt's orders, buying Walt's life by making himself and Walt the only cooks Gus has left. War with Gus is now inevitable.",
+        "questions": [
+          "How will Gus retaliate against the man who just eliminated his replacement chemist?",
+          "Can Jesse live with pulling the trigger on someone innocent?",
+          "With Hank crippled and off the job, is the Heisenberg investigation over — or about to get personal?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Walter White",
+          "line": "Separated from his family, working in Gus's superlab, and has just ordered a murder to buy himself a stay of execution."
+        },
+        {
+          "name": "Jesse Pinkman",
+          "line": "Back in the lab, freshly the killer of two street dealers and now of Gale, dating a recovering addict named Andrea."
+        },
+        {
+          "name": "Skyler White",
+          "line": "Now knows everything, sleeping with her boss Ted, and beginning to help launder Walt's money instead of stopping him."
+        },
+        {
+          "name": "Hank Schrader",
+          "line": "Partially paralyzed after killing the Cousins; convinced his real target — Heisenberg — is still out there."
+        },
+        {
+          "name": "Gustavo Fring",
+          "line": "Walt's employer and quiet enemy; methodical, patient, and now aware Walt has murdered his backup chemist."
+        },
+        {
+          "name": "Mike Ehrmantraut",
+          "line": "Gus's ex-cop cleaner and enforcer; the man who nearly executed Walt tonight."
+        },
+        {
+          "name": "Saul Goodman",
+          "line": "Walt and Jesse's lawyer and fixer, brokering every meeting with Gus."
+        },
+        {
+          "name": "Marie Schrader",
+          "line": "Nursing a bitter, humiliated Hank through his paralysis."
+        },
+        {
+          "name": "Andrea Cantillo",
+          "line": "Jesse's girlfriend, a recovering addict raising her young son Brock."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · The box cutter",
+          "text": "Gus calmly slits his tech Victor's throat in front of Walt and Jesse as a warning, then puts them back to work; Walt secretly buys a revolver to strike first.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the season's core question: Walt and Gus are now openly rivals, only one gets to live.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Peeling Jesse off",
+          "text": "Gus separates Walt from Jesse and grooms Jesse through errands with Mike and a staged shotgun robbery Jesse 'thwarts', slowly making him loyal.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Jesse becomes the swing vote — whichever man he trusts, wins.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Hank closes in",
+          "text": "Hank finds a Los Pollos Hermanos napkin in Gale's things, tying Gus to the lab, and coerces Walt into planting a GPS tracker on Gus's car.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The DEA is now onto Gus, cornering him just as Walt is trying to kill him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Poison in Mexico",
+          "text": "Gus flies Jesse south to teach the cartel his recipe, then poisons cartel leader Don Eladio's whole table with tequila; Gus almost dies himself.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Wipes the cartel and leaves a weakened, alone Gus who now only needs to eliminate Walt.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The crawl space",
+          "text": "Gus fires Walt in the desert and threatens to murder his family; Walt tries to disappear them, only to find Skyler has given his escape money to Ted.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Walt is out of options, out of money, and out of time — the point where he chooses to poison a child.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Poisoning Brock",
+          "text": "Walt secretly poisons Andrea's young son Brock and blames it on Gus; a horrified Jesse switches sides and agrees to help Walt kill him.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The manipulation that swings Jesse back and the moral floor Walt drops through.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Face off",
+          "text": "Walt straps a bomb to old Hector Salamanca's wheelchair; when Gus visits to kill him, Hector detonates it, killing them both, and Walt razes the superlab.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Gus is dead, the lab is gone, and Walt is now the top of the food chain.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Walt has killed Gus and told Skyler he 'won'. But Jesse still doesn't know who really poisoned Brock, Hank never bought that Gus was the whole story, and a potted lily of the valley sits quietly in Walt's back yard.",
+        "questions": [
+          "What happens when Jesse learns Walt poisoned an innocent child to move him?",
+          "Who fills the vacuum Gus's death left in the Southwest meth trade?",
+          "How long before Hank looks past Gus to the man in his own family?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Walter White",
+          "line": "Has murdered Gus and poisoned a child to do it; now the last cook standing and increasingly convinced of his own untouchability."
+        },
+        {
+          "name": "Jesse Pinkman",
+          "line": "Helped Walt kill Gus, still believes Gus poisoned Brock, and does not know his partner put the toxin in the boy's juice."
+        },
+        {
+          "name": "Skyler White",
+          "line": "Laundering through the new car wash; her ex-lover Ted was terrified into signing a check and is now paralyzed after fleeing Saul's men."
+        },
+        {
+          "name": "Hank Schrader",
+          "line": "Publicly closed the Fring case, privately never believed the fast-food owner acted alone."
+        },
+        {
+          "name": "Mike Ehrmantraut",
+          "line": "Gus's enforcer, wounded from the Mexican trip and now without an employer."
+        },
+        {
+          "name": "Saul Goodman",
+          "line": "Still Walt's lawyer, more openly frightened of him than of the DEA."
+        },
+        {
+          "name": "Marie Schrader",
+          "line": "Caring for Hank and cheering his renewed appetite for the Heisenberg case."
+        },
+        {
+          "name": "Andrea Cantillo",
+          "line": "Jesse's girlfriend; her son Brock has recovered, and she still does not know who poisoned him or why."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Empire on his terms",
+          "text": "Walt wipes the last lab evidence with a giant magnet and moves back home; a terrified Skyler tells him she is quietly waiting for his cancer to return.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Marks the switch from surviving Gus to running an empire, with Skyler now a hostage in her own house.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · A new business",
+          "text": "Walt partners with Mike and Madrigal executive Lydia Rodarte-Quayle for methylamine, and cooks out of tented pest-fumigation houses with a new hand, Todd.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces Lydia and Todd, the two people who will define the show's endgame.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The train and the boy",
+          "text": "To siphon a trainload of methylamine they run an intricate heist; Todd, unprompted, shoots a boy who witnessed it, and Mike and Jesse decide they're out.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The moment Walt's crew fractures — and Jesse's exit door opens.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Killing Mike, killing the witnesses",
+          "text": "Walt refuses to give up the methylamine and shoots Mike in a fit of pride; he then gets the informant names from Lydia and has Todd's uncle Jack Welker slaughter Mike's men in prison.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Walt has now killed his most competent ally and enlisted white-supremacist muscle he can't control.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Leaves of Grass",
+          "text": "Walt retires wealthier than Skyler can count; at a family barbecue, Hank finds Gale's inscription in Walt's Whitman book and realizes his brother-in-law is Heisenberg.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The mid-season pivot: the person hunting Walt is finally the person across the dinner table.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Ozymandias",
+          "text": "Jesse learns Walt poisoned Brock and turns informant; a desert trap collapses into a shootout, and Jack executes Hank and takes Jesse hostage as Walt watches.",
+          "anchorEpisode": 14,
+          "whyLoadBearing": "The entire life Walt built for his family dies here, in one hour, by his own hand.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Felina",
+          "text": "Exiled in New Hampshire, Walt returns to Albuquerque, poisons Lydia, mows down Jack's gang with a rigged M60 in the trunk of his car, frees Jesse, and dies in the meth lab.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "The closing beat — every open thread from the empire finally cut.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Walt lies dead in an Aryan Brotherhood meth lab, having killed Jack's crew to free Jesse, who drives off into the night. Skyler is destitute and holding the coordinates to Hank's grave as her only bargaining chip.",
+        "questions": [
+          "What kind of life can Jesse build after everything Walt did to him?",
+          "Can Skyler and the children ever be free of the name Heisenberg?",
+          "Is Walter White remembered as a monster, a genius, or both?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Walter White",
+          "line": "Dead in the meth lab, having killed Jack Welker's crew, poisoned Lydia, and freed Jesse in a final trip home."
+        },
+        {
+          "name": "Jesse Pinkman",
+          "line": "Freed by Walt after months of enslavement, driving away in Todd's stolen car after strangling his tormentor."
+        },
+        {
+          "name": "Skyler White",
+          "line": "Broke and living in a rented apartment; holds the coordinates to Hank's body as her only leverage for a plea deal."
+        },
+        {
+          "name": "Hank Schrader",
+          "line": "Dead — executed by Jack in the desert after finally proving Walt was Heisenberg."
+        },
+        {
+          "name": "Marie Schrader",
+          "line": "Widowed by Walt's choices, and the person who forced Skyler to finally break with him."
+        },
+        {
+          "name": "Saul Goodman",
+          "line": "Fled Albuquerque with a new identity through the same disappearance-broker Walt used."
+        },
+        {
+          "name": "Mike Ehrmantraut",
+          "line": "Dead — shot by Walt on the riverbank over a list of names Walt could have gotten elsewhere."
+        },
+        {
+          "name": "Lydia Rodarte-Quayle",
+          "line": "Dying of ricin poisoning after Walt slipped it into her stevia at their last meeting."
+        },
+        {
+          "name": "Jack Welker",
+          "line": "Dead — shot in the head by Walt at the compound after murdering Hank and enslaving Jesse."
+        },
+        {
+          "name": "Todd Alquist",
+          "line": "Dead — strangled by Jesse with the chain Todd had used to hold him captive."
+        }
+      ]
+    }
+  }
+}

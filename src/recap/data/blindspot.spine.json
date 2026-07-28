@@ -1,0 +1,486 @@
+{
+  "slug": "blindspot",
+  "generatedFor": "Blindspot",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Times Square",
+          "text": "A woman is dumped in Times Square covered in fresh tattoos and no memory of who she is; one of them is FBI agent Kurt Weller's name across her back.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the premise the whole series turns on: an amnesiac Jane, tattoos as cases, Weller inexplicably named.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Taylor Shaw",
+          "text": "Each tattoo turns out to be a crime the team is meant to solve, and DNA seems to prove Jane is Taylor Shaw, Weller's childhood friend who vanished 25 years ago.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Establishes the false Taylor Shaw identity that shapes Weller's every choice with Jane until the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Operation Daylight",
+          "text": "One tattoo forces AD Mayfair to admit Operation Daylight, her illegal NSA surveillance program run through informant Saúl Guerrero — every tattoo points back to her secrets.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Reframes the tattoos: they aren't random crimes, they're a targeted attack on Mayfair. This is the season's real plot.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Jane did this to herself",
+          "text": "Oscar, the man with the tree tattoo, tells Jane she volunteered for the memory wipe herself, part of a plan she designed to bring Mayfair down.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The central twist: Jane is not a victim but the architect. Every later season depends on the reader holding this.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Mayfair killed",
+          "text": "Mayfair is framed for murder and, when she breaks house arrest to find who set her up, she reaches Oscar's hideout — where he kills her before she can name Jane.",
+          "anchorEpisode": 22,
+          "whyLoadBearing": "The plan lands: Mayfair is silenced, the team is left blaming an unknown enemy, and Jane's role stays hidden.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Weller's father, Taylor's bones",
+          "text": "Weller inherits Mayfair's job. Then his dying father confesses to killing the real Taylor Shaw, and Weller digs up her bones at the family campsite.",
+          "anchorEpisode": 23,
+          "whyLoadBearing": "Destroys the one thing tying Weller and Jane together — she is not Taylor — right as the season closes.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Shepherd, and the arrest",
+          "text": "Jane hunts down Oscar, kills him after he names Shepherd as the group's leader, and returns to her safe house to find Weller waiting to arrest her.",
+          "anchorEpisode": 23,
+          "whyLoadBearing": "Names the next-season antagonist and puts Jane in FBI custody with Weller now believing everything she said was a lie.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Weller has just arrested Jane, now revealed to be neither Taylor Shaw nor an innocent Jane Doe but a planted agent for a conspiracy she designed herself, led by an unknown figure named Shepherd.",
+        "questions": [
+          "If Jane isn't Taylor Shaw, who is she really?",
+          "What is Shepherd's group actually trying to do?",
+          "Can Weller ever work with Jane again after everything she pretended to remember?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jane Doe",
+          "line": "The amnesiac at the centre of the tattoos, now exposed as a planted inside agent for Shepherd's conspiracy and under arrest."
+        },
+        {
+          "name": "Kurt Weller",
+          "line": "FBI Assistant Director promoted after Mayfair's murder; the man whose name is on Jane's back and who has just arrested her."
+        },
+        {
+          "name": "Patterson",
+          "line": "FBI tech lead who decodes every tattoo; her boyfriend David was murdered mid-season for solving one he shouldn't have."
+        },
+        {
+          "name": "Tasha Zapata",
+          "line": "Team agent quietly paid by CIA Deputy Carter for intel on Jane; still carrying that guilt after his death.",
+          "note": "Her buried debt to Carter drives later trust issues on the team."
+        },
+        {
+          "name": "Edgar Reade",
+          "line": "Team agent whose relationship with Weller's sister was broken by threats from Carter's people; now openly suspicious of Jane."
+        },
+        {
+          "name": "Bethany Mayfair",
+          "line": "The FBI Assistant Director whose illegal Operation Daylight was the true target of Jane's tattoos; killed by Oscar to protect Jane's cover."
+        },
+        {
+          "name": "Oscar",
+          "line": "Jane's pre-wipe fiancé and Shepherd's handler on her; killed by Jane after telling her Shepherd runs the group."
+        },
+        {
+          "name": "Shepherd",
+          "line": "Unseen mastermind of the group that gave Jane the tattoos, named only in the finale."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Jane as triple agent",
+          "text": "After three months of CIA torture, Jane is recruited by NSA agent Nas Kamal as a triple agent; the team plays along to avenge Mayfair by infiltrating her handlers.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the whole season's premise and repositions the team from Jane's targets to Jane's uneasy partners.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Remi, Sandstorm, Roman",
+          "text": "Shepherd is Jane's adoptive mother and their group is Sandstorm; Jane's real name is Remi, and the brother she doesn't remember, Roman, is at her side.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces Roman and the Sandstorm family — the load-bearing relationships for the next two seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ripples, and a baby coming",
+          "text": "Nas warns every tattoo Sandstorm planted was meant to do harm; meanwhile Weller learns his ex Allie is pregnant with his child, adding stakes outside the FBI.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Reframes the tattoo cases morally and plants Weller's daughter Bethany, who anchors his home life going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Borden the mole",
+          "text": "Dr Borden, the team's own therapist, is exposed as Sandstorm's mole after his wife died in a US drone strike; he captures and tortures Patterson before escaping.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The intimate betrayal that leaves Patterson traumatised for seasons and confirms Sandstorm has been inside the team all along.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Jane wipes Roman",
+          "text": "When Shepherd orders Roman to kill Jane, he refuses and both flee; Jane erases his memory to give him the same second chance she had, then returns him to the team.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The single act that defines Jane and Roman's whole future relationship — his amnesia is her gift and, later, her sin.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · COGS revealed",
+          "text": "Weller learns Shepherd's phase two is to trigger a national attack that activates COGS, a secret continuity-of-government cell into which he had been quietly recruited years ago.",
+          "anchorEpisode": 21,
+          "whyLoadBearing": "Names the endgame and reveals Weller himself was chosen years ago to inherit the country Shepherd plans to burn.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Attack foiled, then a two-year gap",
+          "text": "Sandstorm nearly drops a nuclear satellite on DC; the team stops it and Shepherd is captured. Two years later Jane has fled to a mountaintop, and Weller arrives wearing a wedding ring.",
+          "anchorEpisode": 22,
+          "whyLoadBearing": "Closes the Sandstorm arc and hands the reader the exact tableau that opens Season 3.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Two years after Sandstorm's defeat, Jane has left Weller and the FBI to live with monks in the mountains. Weller arrives wearing a wedding ring, telling her Patterson, Reade and Zapata have all vanished — and a box only they can open lights her tattoos back up.",
+        "questions": [
+          "Why did Jane leave Weller and the team after apparently reuniting with them?",
+          "If Weller is wearing a wedding ring, who did he marry?",
+          "What happened to Patterson, Reade and Zapata during the two years apart?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jane Doe / Remi",
+          "line": "Real name Remi, Shepherd's adopted daughter and a former Sandstorm operative; broke with Shepherd, saved Roman, then walked away from Weller for two years."
+        },
+        {
+          "name": "Kurt Weller",
+          "line": "FBI leader who has a daughter, Bethany, with Allie; in the time-jump he is wearing a wedding ring and seeking Jane out for help."
+        },
+        {
+          "name": "Patterson",
+          "line": "Team tech lead who survived Borden's torture and helped defeat Sandstorm; now missing during the two-year gap."
+        },
+        {
+          "name": "Tasha Zapata",
+          "line": "Team agent who chose the FBI over an AUSA recruitment offer; also missing during the two-year gap."
+        },
+        {
+          "name": "Edgar Reade",
+          "line": "Team agent who worked through repressed childhood abuse this year; also missing during the two-year gap."
+        },
+        {
+          "name": "Roman",
+          "line": "Jane's brother, Shepherd's other operative; refused to kill Jane, had his memory wiped by her, and escaped alive at season's end."
+        },
+        {
+          "name": "Shepherd",
+          "line": "Sandstorm's leader, real name Ellen Briggs, captured at season's end; her phase two would have wiped out the federal government."
+        },
+        {
+          "name": "Allie",
+          "line": "Weller's ex who gave birth to their daughter Bethany during the season."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · New tattoos, old team",
+          "text": "Jane and Weller are married with a Colorado family until a bounty forces them into hiding; the reunited team hunts Roman, who has covered Jane in new bioluminescent tattoos.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Resets the premise for the new season: Roman is now the sender of the tattoos, and the team is chasing him instead of Sandstorm.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Berlin held over Weller",
+          "text": "Roman corners Weller and threatens to reveal 'what happened in Berlin' — a secret from Weller's two-year search for Jane — unless he does what Roman wants.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up the season-long wedge Roman wields between Weller and Jane, resolved at the halfway point.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Hirst is Crawford's",
+          "text": "The tattoos steer the team to FBI Director Hirst, who murdered Patterson's colleague Stuart to hide her real employer: billionaire Hank Crawford.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Names the season's true villain and shows the FBI itself has been compromised at the top on his behalf.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Berlin, and Avery",
+          "text": "The team takes Hirst down; then Weller finally confesses to Jane that in Berlin he accidentally shot her biological daughter Avery.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The marriage's near-breaking point and the introduction of Avery as a person, not just a name.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Avery is alive",
+          "text": "Patterson proves Roman staged the shooting and Avery is still alive; the FBI rescues her from Berlin, and Roman's real target is confirmed to be Crawford, not the team.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Reframes the whole season: Roman is aiming the tattoos at Crawford and using the team as his instrument.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Roman falls for Blake",
+          "text": "Roman infiltrates Crawford's inner circle as Tom Jakeman, falls for Crawford's daughter Blake, and double-crosses the FBI at a gala to protect his new life with her.",
+          "anchorEpisode": 17,
+          "whyLoadBearing": "Roman's shift from ally-of-convenience to active enemy of the team, driven by love rather than ideology.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Crawford dies, Remi wakes",
+          "text": "Jane kills Crawford; Blake shoots Roman on discovering his identity, and he dies in Jane's arms. Zapata flies off with Blake, and ZIP poisoning drags Jane's Remi personality back.",
+          "anchorEpisode": 22,
+          "whyLoadBearing": "Every next-season setup in a single beat: Roman dead, Zapata absorbed into Blake's world, Jane replaced from within by Remi.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Roman dies leaving Jane his ZIP-cure clues, but the poisoning has already erased her — she wakes in the hospital married to Weller and secretly restored to her old Remi persona, delighted to be positioned to burn the team down. Zapata has flown off with Blake Crawford promising to 'change the world'.",
+        "questions": [
+          "How long can Remi hide who she really is from Weller and the team?",
+          "Can she find Roman's ZIP cure before the poisoning kills her?",
+          "What is Zapata actually doing with Blake Crawford now?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jane / Remi",
+          "line": "In the finale reverts fully to her Remi persona while still married to Weller and embedded on the team; secretly plans to destroy both."
+        },
+        {
+          "name": "Kurt Weller",
+          "line": "Jane's husband, still leading the team; confessed to accidentally shooting Jane's daughter Avery in Berlin, though she survived."
+        },
+        {
+          "name": "Patterson",
+          "line": "Tech lead now running tattoo work with Rich; the one who unmasked Director Hirst as Stuart's killer."
+        },
+        {
+          "name": "Tasha Zapata",
+          "line": "Formerly CIA; at the finale abandons the FBI to fly off with Blake Crawford on some unspecified mission to 'change the world'."
+        },
+        {
+          "name": "Edgar Reade",
+          "line": "Head of the New York FBI office; began a relationship with Zapata that she has just broken off."
+        },
+        {
+          "name": "Roman",
+          "line": "Jane's brother, this season's engine; fell for Blake, was shot by her, and died in Jane's arms leaving her the ZIP-cure clues."
+        },
+        {
+          "name": "Rich Dotcom",
+          "line": "Reformed hacker now working for the FBI on the team, paired most closely with Patterson."
+        },
+        {
+          "name": "Avery",
+          "line": "Jane's teenage biological daughter, thought dead but recovered from Berlin; moves in with Jane and Weller near season's end."
+        },
+        {
+          "name": "Blake Crawford",
+          "line": "Hank Crawford's daughter and Roman's lover; shot Roman on discovering his identity and flies off with Zapata."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Remi in secret",
+          "text": "Jane is now Remi in hiding, hallucinating Roman as she works from inside the FBI to bring it down while quietly hunting a cure for the ZIP poisoning killing her.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The season's engine: an inside enemy the team doesn't know is there, running out of time to both kill them and save herself.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Madeline seizes HCI",
+          "text": "In Zurich, Madeline Burke poisons Blake and the rest of the HCI Global board to take over Crawford's company; she spares Zapata and keeps her as a useful asset.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the season's real antagonist and disposes of Blake, redirecting Zapata's whole cover onto Madeline.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Zapata's double game",
+          "text": "Zapata is secretly undercover for the CIA inside Madeline's HCI Global; she has to kill to keep the cover, and when the Agency nearly burns her, Reade takes over as her secret handler.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Turns Zapata's arc into the season's second front and ties her back to the team through Reade specifically.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Weller catches on",
+          "text": "Weller notices Jane's lies, tracks her to Sandstorm's old operative Violet, and realises the woman he married is no longer Jane — she is Remi, working to free Shepherd.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The inside enemy is uncovered by her husband, setting up the confrontation that ends the Remi arc.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Jane restored",
+          "text": "Weller sedates Remi and Patterson's experimental treatment brings Jane back; she wakes and shoots Shepherd dead in her own apartment.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Closes both the Remi thread and the entire Shepherd storyline that has run since Season 2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Cured, and together",
+          "text": "Roman's data caches lead to a scientist whose stem cells cure Jane's ZIP poisoning; Zapata's cover holds and she and Reade quietly become a couple.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Clears the personal wreckage so Season 4's back half can be about Madeline unopposed.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Madeline burns them down",
+          "text": "Madeline seizes the story, brands the team as rogue for the Helios attack she caused, and calls a drone strike on their Icelandic cottage — with everyone but Jane inside.",
+          "anchorEpisode": 22,
+          "whyLoadBearing": "Every next-season condition: team framed, Madeline in control of the FBI's narrative, drone strike leaves the rest of the team's fates open.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Madeline Burke has framed the team as terrorists, unleashed the Helios attack that has blacked out the Eastern Seaboard, and just called a drone strike on the Icelandic cottage sheltering Weller, Patterson and Zapata — with only Jane outside when it hits.",
+        "questions": [
+          "Who from the team survived the drone strike?",
+          "Can Madeline be exposed while she controls the FBI and the story?",
+          "What is the full plan behind Helios and the power grid attack?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jane Doe",
+          "line": "Cured of ZIP and restored to herself after months trapped as Remi; the only member of the team not inside the cottage when the drone hits."
+        },
+        {
+          "name": "Kurt Weller",
+          "line": "FBI head who was first to see Remi in Jane and who lured her back for the cure; branded rogue and inside the cottage at the strike."
+        },
+        {
+          "name": "Patterson",
+          "line": "Tech lead whose experimental treatment restored Jane; still paired with Rich on decoding Roman's clues."
+        },
+        {
+          "name": "Tasha Zapata",
+          "line": "CIA plant inside Madeline's HCI Global; her cover has held even as she and Reade have secretly become a couple."
+        },
+        {
+          "name": "Edgar Reade",
+          "line": "Team agent and Zapata's secret CIA handler; now in a real, quiet relationship with her by the finale."
+        },
+        {
+          "name": "Rich Dotcom",
+          "line": "FBI teammate; back in New York and not in the cottage when the drone strike lands."
+        },
+        {
+          "name": "Madeline Burke",
+          "line": "HCI Global's ruthless new CEO; has captured the FBI's story, launched the Helios grid attack, and ordered the drone strike on the team."
+        },
+        {
+          "name": "Matthew Weitz",
+          "line": "FBI Director being blackmailed by Madeline's fixer Richard Shirley into playing along with the persecution of the team."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Two months on, scattered",
+          "text": "Two months after the drone strike, Jane, Weller, Patterson and Zapata are in hiding, Rich is in CIA custody, and Reade is presumed dead in the blast.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the season's starting condition: a broken, hunted team missing one dead member and one imprisoned member.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Break Rich out",
+          "text": "A tattoo displayed in Times Square tells them Rich is about to be transferred; with terrorist Sho Akhtar's help they break him out and put the team back together.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The reset that lets the season actually run: five of six team members back in one bunker, working the case again.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Madeline owns the FBI",
+          "text": "Madeline recruits terrorist Ivy Sands and her group Dabbur Zhan to hunt the team, and coerces Weitz into cooperation by murdering one of his junior agents in front of him.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces Ivy — the season's on-the-ground antagonist — and shows Madeline now controls the FBI itself through fear.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Ten ZIP bombs",
+          "text": "Using intel Jane recalls from her Sandstorm days, the team learn Madeline has ten bombs staged across the world armed with weaponised ZIP that will erase whole cities' memories.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Sets the stakes and the ticking clock the rest of the season runs on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Bunker falls, Patterson 'dies'",
+          "text": "Interpol tips Madeline to the bunker; Dabbur Zhan storms it, Patterson triggers thermite and appears to die inside, and the team is dragged back to New York as accused terrorists.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The season's low point: hiding place gone, one member seemingly dead, the others captured and paraded as criminals.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Patterson alive, Madeline dead",
+          "text": "Patterson escapes through the ducts and leaks Madeline's crimes; cornered on her private jet, Madeline drinks poisoned champagne, dying proud of what she did.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Removes the season's boss and clears the team's names, leaving only Ivy and the bombs to resolve.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Times Square, one last time",
+          "text": "Ivy releases the last ZIP canister and Jane seals herself in the airlock to save Weller. She wakes cured and arrests Ivy in Times Square — while the finale keeps cutting back to Jane in a body bag.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The series' final beat: everyone's happy futures intercut with Jane possibly dying, deliberately leaving the ending unresolved.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The last ZIP bomb is disarmed in Times Square, Ivy is arrested, and the team walk into apparently happy futures — Jane and Weller fostering children, Patterson and Rich adventuring, Zapata raising her and Reade's daughter — but the finale keeps cutting to Jane being zipped into a body bag on the same Times Square block she was first found on, leaving whether any of the ending is real deliberately open.",
+        "questions": [
+          "Did Jane survive the ZIP release in the airlock, or is the ending only her dying vision?",
+          "Are the futures shown for Weller, Patterson, Rich and Zapata real, or Jane's imagined gift to them?",
+          "Is the whole Times Square rescue what happened, or a memory circling back to where she began?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jane Doe",
+          "line": "Leads the fugitive team from the bunker and, at the end, seals herself in the Times Square airlock to save Weller — her fate deliberately left ambiguous."
+        },
+        {
+          "name": "Kurt Weller",
+          "line": "Jane's husband and the team's leader after Reade's death; spared by Jane's sacrifice in the final ZIP release."
+        },
+        {
+          "name": "Patterson",
+          "line": "Tech lead who faked her own death by thermite in the bunker, then reappeared to leak Madeline's crimes and clear the team."
+        },
+        {
+          "name": "Tasha Zapata",
+          "line": "Pregnant with Reade's child throughout the season; personally arrests Ivy in the finale."
+        },
+        {
+          "name": "Rich Dotcom",
+          "line": "Freed from CIA custody in the opener; helps disarm the final Times Square bomb."
+        },
+        {
+          "name": "Madeline Burke",
+          "line": "HCI Global CEO who captured the FBI's story and armed the ZIP bombs; suicides on her private jet mid-season, still proud of her attacks."
+        },
+        {
+          "name": "Ivy Sands",
+          "line": "Dabbur Zhan leader hired by Madeline to hunt the team and detonate the ZIP bombs; the season's on-the-ground antagonist after Madeline's death, arrested in the finale."
+        },
+        {
+          "name": "Matthew Weitz",
+          "line": "FBI Director who was redeemed and then killed helping the team escape Madeline mid-season."
+        }
+      ]
+    }
+  }
+}

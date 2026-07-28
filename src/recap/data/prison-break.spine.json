@@ -1,0 +1,501 @@
+{
+  "slug": "prison-break",
+  "generatedFor": "Prison Break",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The frame",
+          "text": "Michael Scofield gets himself sent to Fox River, where brother Lincoln awaits execution for killing the Vice President's brother — a murder he didn't commit.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The premise. Everything for years is downstream of a frame job Lincoln didn't do.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The tattoo crew",
+          "text": "His full-body tattoo hides the prison blueprints. Michael assembles a reluctant crew — Sucre, Abruzzi, T-Bag, Westmoreland, Franklin — around a route to the infirmary roof.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Names the men who become the Fox River Eight — the manhunt that opens the next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Company",
+          "text": "Outside, Veronica Donovan investigates. Secret Service agent Kellerman kills witnesses on orders from VP Reynolds, whose 'dead' brother Steadman is alive in a Montana mansion.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Establishes the conspiracy — Reynolds, Kellerman, live-Steadman — that drives the outside plot for years.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Sara",
+          "text": "Prison doctor Sara Tancredi, a recovering addict, grows close to Michael and becomes his path through the infirmary. Her governor father refuses to intervene for Lincoln.",
+          "anchorEpisode": 20,
+          "whyLoadBearing": "Introduces the relationship that defines Michael's outside life and the wedge the Company will pull on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Aldo returns",
+          "text": "Lincoln's execution stops at the chair after his presumed-dead father Aldo — a Company defector — surfaces to say Lincoln was framed to punish him.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "Aldo is the source of the tape and the Company backstory that season two hinges on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Reynolds ascends",
+          "text": "The President dies of an apparent heart attack and Reynolds is sworn in. Veronica finds Steadman alive in his Montana mansion and is killed there.",
+          "anchorEpisode": 22,
+          "whyLoadBearing": "Reynolds now holds the office the Company installed her in — the political prize the tape will threaten.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The escape",
+          "text": "Sara leaves the infirmary door open; eight men climb out. T-Bag, handcuffed to Michael, has his hand severed to free him; the crew scatters as police mobilise.",
+          "anchorEpisode": 22,
+          "whyLoadBearing": "The moment that becomes the FBI manhunt of season two, and the reason T-Bag reappears one-handed.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Eight escapees are loose in Illinois. Sara has collapsed on morphine alone in her apartment, Reynolds sits in the Oval Office, and Aldo Burrows is out there hunted by the Company that once employed him.",
+        "questions": [
+          "Can the brothers stay ahead of a nationwide manhunt?",
+          "Will anyone survive long enough to prove Steadman is alive?",
+          "Whose side is Aldo really on?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Michael Scofield",
+          "line": "Engineer and mastermind of the escape; loose in Illinois with his brother and the tattoo now on his back."
+        },
+        {
+          "name": "Lincoln Burrows",
+          "line": "Michael's brother, spared the chair by the frame beginning to crack; running with him."
+        },
+        {
+          "name": "Sara Tancredi",
+          "line": "Fox River doctor who left the infirmary door open; last seen unconscious from a morphine overdose in her apartment."
+        },
+        {
+          "name": "Fernando Sucre",
+          "line": "Michael's cellmate; escaped, desperate to reach his pregnant fiancée Maricruz."
+        },
+        {
+          "name": "Theodore 'T-Bag' Bagwell",
+          "line": "Escaped Fox River rapist carrying his own severed hand after being handcuffed to Michael."
+        },
+        {
+          "name": "Aldo Burrows",
+          "line": "Michael and Lincoln's presumed-dead father, a Company defector who resurfaced to help them."
+        },
+        {
+          "name": "Paul Kellerman",
+          "line": "Secret Service assassin working the frame-up; killed his partner Hale and is still hunting the brothers."
+        },
+        {
+          "name": "Caroline Reynolds",
+          "line": "Sworn in as President after her predecessor's engineered 'heart attack'; her brother Terrence Steadman is alive in a Montana mansion."
+        },
+        {
+          "name": "L.J. Burrows",
+          "line": "Lincoln's teenage son, framed for his mother's murder and in custody in Arizona."
+        },
+        {
+          "name": "Brad Bellick",
+          "line": "Fox River's guard captain, humiliated by the escape and chasing federal bounties on the Eight."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Mahone",
+          "text": "FBI agent Alexander Mahone leads the hunt for the Fox River Eight — and quietly kills each one he catches, hiding a Company paycheque and a body in his own garden.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces Mahone, the season's central antagonist and a Company asset going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Utah",
+          "text": "Chasing Westmoreland's buried five million, the escapees converge on a Tooele suburb. Abruzzi and Apolskis are killed by Mahone; T-Bag makes off with the money.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Trims the Eight down and puts the money in T-Bag's hands, which sets up his standalone arc in Panama.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Sara's father",
+          "text": "Governor Tancredi is killed and staged as suicide, leaving Sara a key to a Chicago club and coded messages Michael has been sending her from the road.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The murder pulls Sara off the sidelines and into the fugitive plot; the key drives the endgame.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Aldo's tape",
+          "text": "Aldo tells Lincoln a tape of Reynolds and Steadman would end the frame-up, then dies to Mahone. Kellerman, cast out by the Company, turns and helps the brothers.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Names the evidence that dominates the second half of the season and flips Kellerman from hunter to ally.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The tape airs",
+          "text": "In Montana they take the surgically altered Steadman; he shoots himself. The tape reaches Reynolds; she resigns, but Company blackmail keeps the brothers fugitives.",
+          "anchorEpisode": 14,
+          "whyLoadBearing": "The political frame collapses, yet the Company itself doesn't — which is why the fugitive story continues.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Panama",
+          "text": "Kellerman testifies for Sara, exonerating Lincoln alone. Cornered in Panama, Michael takes Sara hostage and is sent to Sona; Sara vanishes before Lincoln can reach her.",
+          "anchorEpisode": 22,
+          "whyLoadBearing": "Gets Michael into Sona (all of season three) and puts Sara off the board (the season three hostage play).",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Company's plan",
+          "text": "Mahone is framed with drugs Michael planted and thrown into Sona alongside him. Kellerman's prison transport is ambushed by masked men. The General says this was the plan.",
+          "anchorEpisode": 22,
+          "whyLoadBearing": "Puts Mahone inside Sona for season three and names the General, the new face of the Company.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Michael and Mahone are locked inside a lawless Panamanian prison the Company wanted them in. Sara is missing, L.J. is captured with Aldo's ally in tow, and the General is watching everything unfold to plan.",
+        "questions": [
+          "Why did the Company want Michael inside Sona?",
+          "Is Sara alive, and who has her?",
+          "Did Kellerman's masked rescuers save him or finish him?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Michael Scofield",
+          "line": "Now inside Sona in Panama, thrown there as part of a Company plan he doesn't yet understand."
+        },
+        {
+          "name": "Lincoln Burrows",
+          "line": "The only Fox River escapee exonerated in court, but with L.J. captured again and Sara missing."
+        },
+        {
+          "name": "Sara Tancredi",
+          "line": "Cleared thanks to Kellerman's testimony, then abducted by the Company and vanished."
+        },
+        {
+          "name": "Alexander Mahone",
+          "line": "FBI hunter and secret Company asset; framed with drugs Michael planted and thrown into Sona with him."
+        },
+        {
+          "name": "Fernando Sucre",
+          "line": "Free in Mexico with Maricruz, but the Westmoreland money is gone and Bellick tracked him there."
+        },
+        {
+          "name": "Theodore 'T-Bag' Bagwell",
+          "line": "Jailed in Panama, still fixated on Susan Hollander and her family."
+        },
+        {
+          "name": "Brad Bellick",
+          "line": "Jailed in the US for Geary's murder, then imprisoned in Panama after chasing Sucre for the money."
+        },
+        {
+          "name": "Paul Kellerman",
+          "line": "Flipped and testified for Sara; his prison transport was ambushed by masked men, fate unclear."
+        },
+        {
+          "name": "The General",
+          "line": "Head of the Company after Kim; the man calling the shots on the brothers now."
+        },
+        {
+          "name": "L.J. Burrows",
+          "line": "Freed briefly by Aldo's people, captured again by the Company."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Sona",
+          "text": "Michael, Mahone, T-Bag and Bellick land in Sona, a Panamanian prison run entirely by its inmates under their king Lechero — and no one has ever broken out.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the location, the power structure and the impossibility that the entire season pushes against.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The demand",
+          "text": "Company operative Gretchen Morgan is holding Sara and L.J. Michael has one week to break out inmate James Whistler or they die.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The clock and the leverage that force Michael to run someone else's escape instead of his own.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Outside",
+          "text": "Lincoln, aided by Whistler's fiancée Sofia Lugo, negotiates with Gretchen while Michael builds a Sona escape crew around Whistler, Mahone and Bellick.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Establishes Sofia as Lincoln's constant and Gretchen as the season's real face of the Company.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The box",
+          "text": "A box arrives with what appears to be Sara's severed head. Lincoln hides the truth from Michael, who eventually learns it and nearly kills Whistler before pressing on for L.J.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Ends the season with Sara presumed dead and Michael grieving — the driver of his S4 opening moves.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · T-Bag rises",
+          "text": "Bagwell works Lechero's court from the inside, sowing distrust with the henchman Sammy and edging closer to the throne of Sona.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Positions T-Bag to inherit Sona and later carry Whistler's book onto the outside plot.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Out and captured",
+          "text": "Four escape under the fence in a rainstorm. Bellick is captured and beaten into betraying the tunnel, and Sucre is tortured and thrown into Sona in his place.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Explains why Sucre and Bellick are trapped in Panama when the next season opens.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The exchange",
+          "text": "L.J. and Sofia are traded for Whistler at a Panama museum; Gretchen escapes the crossfire. Michael vows to hunt her for Sara. Bagwell kills Lechero and inherits Sona.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Sends Michael into S4 hunting Gretchen; leaves Whistler loose with the Company and T-Bag as king of Sona.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Michael has L.J. and Sofia back but not Sara, and he thinks she is dead. Whistler is loose with the Company, Gretchen has slipped away, and Sucre and Bellick are rotting in a Sona now ruled by T-Bag.",
+        "questions": [
+          "Can Michael reach Gretchen before the Company reaches him?",
+          "What is Whistler's Company really after?",
+          "Is there any way out of Sona for the men still inside it?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Michael Scofield",
+          "line": "Escaped Sona; grieving Sara and hunting Gretchen for her death."
+        },
+        {
+          "name": "Lincoln Burrows",
+          "line": "Free in Panama with L.J. and Sofia recovered; hiding from Michael that he saw Sara's head."
+        },
+        {
+          "name": "Sara Tancredi",
+          "line": "Presumed dead all season after a severed head was delivered to Lincoln."
+        },
+        {
+          "name": "Alexander Mahone",
+          "line": "Escaped Sona in Michael's crew but attached himself to Whistler and the Company."
+        },
+        {
+          "name": "Fernando Sucre",
+          "line": "Thrown into Sona in Bellick's place after the escape, tortured for the plan."
+        },
+        {
+          "name": "Theodore 'T-Bag' Bagwell",
+          "line": "New king of Sona after killing Lechero, still carrying Whistler's book."
+        },
+        {
+          "name": "Brad Bellick",
+          "line": "Badly beaten Sona inmate, the man who broke under torture and gave up the tunnel."
+        },
+        {
+          "name": "James Whistler",
+          "line": "Company asset Michael was forced to break out; now loose on the outside with Mahone."
+        },
+        {
+          "name": "Gretchen Morgan",
+          "line": "Company operative who ran the hostage play from Panama; escaped the museum crossfire."
+        },
+        {
+          "name": "The General",
+          "line": "Head of the Company, escalating pressure from above."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Sara alive",
+          "text": "Whistler is killed early. Michael finds Sara alive at Gretchen's; DHS agent Donald Self offers the crew immunity if they steal Scylla, the Company's black book, from its six cardholders.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Resets the premise: Sara lives, the crew reunites as a team, and the target for the season is named.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Hunting cards",
+          "text": "The team hunts the six cards. Mahone's son is murdered by Company hitman Wyatt, whom Mahone tortures and kills. Bellick dies rescuing Sucre from a flooded pipe.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Two personal beats that shape the group going forward — Mahone's grief and the loss of Bellick.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Vault and betrayal",
+          "text": "The team steals Scylla from the General's vault — then Self betrays them, vanishes with Scylla, and begins selling it on his own.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The heist finishes and the actual antagonist for the back half — Self, then Christina — is set up.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Michael's illness",
+          "text": "Michael collapses from hypothalamus hamartoma, the disease that killed his mother. To pay for surgery, Lincoln trades Scylla back to the General; Sara is pregnant.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "The illness explains the flash-forward grave, and Sara's pregnancy plants the son who anchors the next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Christina",
+          "text": "Michael wakes to learn his mother Christina is alive, a Company operative running her own play to sell Scylla to India, and trying to turn the brothers against each other.",
+          "anchorEpisode": 17,
+          "whyLoadBearing": "Christina is the season's real antagonist; her play drives the final act to the bomb.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Endgame",
+          "text": "Michael fakes a Scylla handover with a bomb that ends Christina's play. Sara shoots Christina dead. Kellerman resurfaces alive and finally delivers real immunity for Scylla.",
+          "anchorEpisode": 22,
+          "whyLoadBearing": "Resolves the Company and the mother; brings Kellerman back into the story alive for the future.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Four years later",
+          "text": "The General is sentenced to death and T-Bag is arrested. Four years later, Sara, Lincoln, Sucre, Franklin and Mahone visit Michael's grave.",
+          "anchorEpisode": 22,
+          "whyLoadBearing": "The flash-forward is the show's ostensible ending — the state of play the revival must reopen.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Company is broken and the crew are free with real immunity. Four years on, they stand at Michael's grave; Sara is raising his son alone, T-Bag is back inside a US prison, and the General waits for the needle.",
+        "questions": [
+          "Is Michael really dead, or is the grave another sleight of hand?",
+          "If he is alive, why did he leave Sara and their son behind?",
+          "Who else knows the truth of what happened after the immunity papers were signed?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Michael Scofield",
+          "line": "Presumed dead four years on, with a headstone bearing his name."
+        },
+        {
+          "name": "Lincoln Burrows",
+          "line": "Free with full immunity; visits his brother's grave each year."
+        },
+        {
+          "name": "Sara Tancredi",
+          "line": "Married Michael before his death; raising their son alone."
+        },
+        {
+          "name": "Alexander Mahone",
+          "line": "Free with immunity; killed his son's murderer Wyatt personally."
+        },
+        {
+          "name": "Fernando Sucre",
+          "line": "Free with immunity, out of the fight."
+        },
+        {
+          "name": "Theodore 'T-Bag' Bagwell",
+          "line": "Arrested at the end of the Scylla mess and back in a US prison."
+        },
+        {
+          "name": "Paul Kellerman",
+          "line": "Resurfaced alive and delivered the immunity papers that ended it."
+        },
+        {
+          "name": "Benjamin 'C-Note' Franklin",
+          "line": "Resurfaced with Sucre to help the crew take down Christina and the General."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · The photo",
+          "text": "T-Bag receives a photo of Michael alive in a Yemen prison. Lincoln and C-Note fly to Sana'a; Sara, remarried to Jacob and raising son Mike, cannot believe it.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The premise of the revival: Michael is not dead, and the family he left behind now includes another husband.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Kaniel Outis",
+          "text": "In Ogygia, Michael is going by 'Kaniel Outis' and denies knowing Lincoln. He smuggles coded messages asking for a local contact to set up an escape as ISIL closes on Sana'a.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Explains why Michael has an ISIL-linked terrorist identity and why he can't just walk out of Yemen.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Poseidon",
+          "text": "Sara realises Michael is alive; Kellerman is killed investigating. T-Bag traces the killers to Sara's husband Jacob, a rogue CIA operative running an off-book cell.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Ties the Yemen frame to Jacob and kills Kellerman — the man who delivered the last season's immunity.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The deal",
+          "text": "Michael tells Lincoln the truth: rogue agent 'Poseidon' faked his death in exchange for real exonerations and tied Sara's safety to compliance. Poseidon is Jacob.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Answers the grave, the missing years, and names the man Michael has to bring down to come home.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Out of Yemen",
+          "text": "Michael's cellmate Sid dies covering the escape. The crew reaches Marseille and then the US as Sara races to secure their son Mike from Jacob.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Moves the fight from Yemen back to the US and puts the son at the centre of the endgame.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The trap",
+          "text": "Michael stages a trap to expose Jacob's murder of a CIA official. Whip — Michael's ally and T-Bag's son — is killed; Jacob and Michael are both arrested.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The confrontation that finally breaks Jacob's cover and costs T-Bag the son he never had.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Home",
+          "text": "Michael is exonerated and his real name restored. Jacob is sent to Fox River, cellmated with T-Bag, who attacks him. Michael goes home to Sara and Mike.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The show's second ending — Michael home, Poseidon caged with the man whose son he killed.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Michael is home with Sara and their son, his real name restored. Jacob and T-Bag share a cell at Fox River, and the man who took years from the Scofields is locked in with the man who has every reason to end him.",
+        "questions": [
+          "Can T-Bag stay content once his vengeance on Jacob is done?",
+          "Will the CIA leave alone a man who beat one of their own operatives?",
+          "Is the Scofield family really safe from the shadows that took Michael once?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Michael Scofield",
+          "line": "Restored to his real identity, home with Sara and Mike after seven years away."
+        },
+        {
+          "name": "Lincoln Burrows",
+          "line": "Free, and the brother who never stopped believing the photo."
+        },
+        {
+          "name": "Sara Scofield",
+          "line": "Reunited with Michael and raising their son Mike; her second marriage ended in a jail cell."
+        },
+        {
+          "name": "Mike Scofield",
+          "line": "Michael and Sara's young son, meeting his father for the first time."
+        },
+        {
+          "name": "Theodore 'T-Bag' Bagwell",
+          "line": "Sent back to Fox River, now cellmate to Jacob after Whip's death."
+        },
+        {
+          "name": "Jacob Ness",
+          "line": "Sara's second husband, revealed as the rogue CIA agent Poseidon and jailed with T-Bag."
+        },
+        {
+          "name": "Benjamin 'C-Note' Franklin",
+          "line": "Michael's key ally in the Yemen rescue; back in the US with the family."
+        }
+      ]
+    }
+  }
+}

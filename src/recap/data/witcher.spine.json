@@ -1,0 +1,443 @@
+{
+  "slug": "witcher",
+  "generatedFor": "The Witcher",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Blaviken",
+          "text": "Geralt refuses to choose between mage Stregobor and cursed princess Renfri; he kills Renfri to stop her massacre, and her dying words name a girl in the forest as his destiny.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the destiny thread that binds Geralt to Ciri, the show's central premise.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Yennefer remade",
+          "text": "Yennefer, a quarter-elf hunchback, undergoes agonising transformation for beauty at Aretuza — costing her fertility — and takes an advisor's post at the court of Aedirn.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Establishes Yennefer, her lost fertility, and the price of her power — all of which drive her later choices.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Law of Surprise",
+          "text": "At Pavetta's betrothal, cursed Duny claims her via the Law of Surprise; grateful for Geralt's help, he owes him whatever he does not yet know he has — Pavetta's unborn child, Ciri.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The invocation that ties Ciri to Geralt as a Child of Surprise, the legal-magical bond the show turns on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The djinn wish",
+          "text": "Chasing a djinn, Geralt secretly wishes his fate bound to Yennefer's to save her life; she leaves him once she realises she cannot tell what she feels from what he wished for.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Locks the Geralt–Yennefer bond as a destiny question, the wound they carry into every later season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Cintra falls",
+          "text": "Nilfgaard sacks Cintra; Queen Calanthe kills herself and Ciri flees into the countryside, hunted across the wreckage by the Nilfgaardian officer Cahir for her latent power.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Displaces Ciri and puts Nilfgaard on her trail — the pursuit that will drive every remaining season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Brotherhood splits",
+          "text": "Ordered to stay neutral by the Brotherhood, Tissaia, Yennefer, Vilgefortz and a small band of mages defy the vote and ride to Sodden Hill to hold the North's last line.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Marks the fracture inside the Brotherhood and introduces Vilgefortz as a champion of the North — a mask he will keep for two more seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Sodden and reunion",
+          "text": "At Sodden, Yennefer unleashes a wall of fire that annihilates Nilfgaard's army and vanishes; Geralt, wounded, finally finds Ciri in the woods and she asks who Yennefer is.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Ends the season with the three leads' fates locked together — Ciri found, Yen presumed lost — the exact posture S2 opens in.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Geralt has Ciri at last, but Yennefer has vanished after burning Nilfgaard's army at Sodden and the North has only just held. Nilfgaard's hunt for Ciri has barely begun.",
+        "questions": [
+          "Is Yennefer alive after Sodden Hill?",
+          "Why does Nilfgaard want Ciri so badly?",
+          "What powers keep detonating out of Ciri when she panics?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Geralt of Rivia",
+          "line": "A Witcher who spent decades avoiding destiny; he now has Ciri, the Child of Surprise he tried to refuse.",
+          "note": ""
+        },
+        {
+          "name": "Cirilla \"Ciri\" of Cintra",
+          "line": "Cintran princess orphaned by Nilfgaard's invasion; carries a latent power that erupts when she is threatened.",
+          "note": ""
+        },
+        {
+          "name": "Yennefer of Vengerberg",
+          "line": "Powerful sorceress and Geralt's on-and-off lover; disappeared after unleashing a wave of fire that broke Nilfgaard at Sodden.",
+          "note": ""
+        },
+        {
+          "name": "Jaskier",
+          "line": "Bard and Geralt's travelling companion; abandoned on a mountainside after Geralt blamed him for his misfortunes.",
+          "note": ""
+        },
+        {
+          "name": "Tissaia de Vries",
+          "line": "Rectoress of Aretuza and Yennefer's mentor; broke Brotherhood neutrality to lead the mages at Sodden.",
+          "note": ""
+        },
+        {
+          "name": "Vilgefortz",
+          "line": "Ambitious young sorcerer who rallied the mages against Nilfgaard; survived Sodden and is now a Northern hero.",
+          "note": ""
+        },
+        {
+          "name": "Cahir",
+          "line": "Nilfgaardian officer obsessed with capturing Ciri; still on her trail after the fall of Cintra.",
+          "note": ""
+        },
+        {
+          "name": "Fringilla Vigo",
+          "line": "Nilfgaardian mage sent in Yennefer's place; commanded the losing army at Sodden and answers for the defeat.",
+          "note": ""
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Kaer Morhen",
+          "text": "Geralt brings Ciri to his witcher home Kaer Morhen; a monstrous transformation forces him to kill his brother Eskel, and he agrees to train Ciri to fight.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Establishes Ciri's new home and Geralt's shift from reluctant protector to active teacher.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Deathless bargain",
+          "text": "Stripped of her magic after Sodden and secretly imprisoned, Yennefer accepts the Deathless Mother's bargain — deliver Ciri, and her power will return.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets Yennefer against Ciri and creates the betrayal the season turns on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Elder blood",
+          "text": "Vesemir discovers Ciri carries the long-lost Elder blood, coveted as mutagen for new witchers; the fire-mage Rience begins hunting her for an unseen master.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Reveals what Ciri actually is and introduces Rience — the visible end of a conspiracy that runs into S3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Elves and a murdered baby",
+          "text": "Nilfgaard shelters the elves under sorceress Francesca, who bears the first elven child in decades; Emhyr then murders the baby to drive the grieving elves onto the warpath.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Opens the elven alliance with Nilfgaard and Francesca's grief-fuelled hunt for Ciri as the elves' saviour.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The betrayal breaks",
+          "text": "Yennefer reunites with Geralt and Ciri and tries to hand Ciri to Voleth Meir, but relents at the last moment; her pain lets the demon possess Ciri instead.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Ends Yennefer's arc of betrayal and directly triggers the season's climax.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Kaer Morhen bleeds",
+          "text": "Possessed, Ciri kills several witchers before Yennefer offers her own body as a host; Ciri teleports the three into another world, where the Wild Hunt reaches for her.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "New enemy on the horizon and confirmation that Ciri's power crosses worlds.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Emhyr revealed",
+          "text": "In Cintra, Emperor Emhyr is unmasked as Duny — Ciri's own father — and Tissaia quietly tells the sorcerer Vilgefortz that Ciri carries the Elder blood.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The double reveal that arms S3: Nilfgaard's obsession is paternal, and Vilgefortz now knows the prize.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ciri, Geralt and Yennefer are together on the road with a bounty on Ciri's head from the North, Nilfgaard, the elves, Rience's master and the Wild Hunt. Emhyr wants his daughter back and Vilgefortz now knows exactly what she is.",
+        "questions": [
+          "Who is Rience's mysterious master?",
+          "Why does Emperor Emhyr want the daughter he abandoned?",
+          "What does the Wild Hunt intend to do with Ciri?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Geralt of Rivia",
+          "line": "Openly Ciri's guardian; leaving Kaer Morhen with her because every faction on the Continent now wants her.",
+          "note": ""
+        },
+        {
+          "name": "Cirilla \"Ciri\" of Cintra",
+          "line": "Confirmed Elder-blood heir; briefly possessed by the Deathless Mother, and can teleport across worlds under strain.",
+          "note": ""
+        },
+        {
+          "name": "Yennefer of Vengerberg",
+          "line": "Magic restored; forgiven by Geralt and Ciri after nearly trading Ciri away, and back at their side.",
+          "note": ""
+        },
+        {
+          "name": "Emhyr var Emreis",
+          "line": "White Flame of Nilfgaard, revealed as Ciri's father Duny; personally directing the hunt for her.",
+          "note": ""
+        },
+        {
+          "name": "Vilgefortz",
+          "line": "Still trusted as a Northern hero, but now secretly knows Ciri carries the Elder blood.",
+          "note": ""
+        },
+        {
+          "name": "Rience",
+          "line": "Fire mage hunting Ciri for an unnamed master; still at large after Kaer Morhen.",
+          "note": ""
+        },
+        {
+          "name": "Francesca Findabair",
+          "line": "Elven sorceress whose newborn Emhyr murdered; now searching for Ciri as the prophesied elven saviour.",
+          "note": ""
+        },
+        {
+          "name": "Tissaia de Vries",
+          "line": "Aretuza's rectoress; unwittingly handed Vilgefortz the secret of Ciri's blood.",
+          "note": ""
+        },
+        {
+          "name": "Dijkstra and Philippa Eilhart",
+          "line": "Redania's spymaster and court mage; running a rival intelligence campaign to seize Ciri for King Vizimir.",
+          "note": ""
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Rience's master",
+          "text": "After six months in hiding, Geralt, Yennefer and Ciri realise fire-mage Rience serves an unseen sorcerer, and set out for Aretuza to unmask him.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Frames the season's investigation and sends the trio to the school where everything will detonate.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The conclave",
+          "text": "Yennefer convenes a conclave to unite the North against Nilfgaard; she and Geralt uncover evidence pointing at Stregobor, only to realise the real culprit is Vilgefortz.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The whodunnit pivot of the season — the villain the audience thought was a Northern hero.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Thanedd Coup",
+          "text": "Vilgefortz opens the school to Nilfgaardian and Scoia'tael forces; Aretuza is torn apart, and Geralt is broken in a duel with Vilgefortz while Ciri flees to the tower of Tor Lara.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The battle that shatters the Brotherhood, cripples Geralt, and separates Ciri from her family.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ciri in Korath",
+          "text": "Fleeing through a monolith at Tor Lara, Ciri lands in the Korath desert and survives alone on visions of the burned princess Falka, until bounty hunters find her.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Physically strands Ciri far from Geralt and plants the Falka identity she will take up next.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Redanian coup",
+          "text": "Philippa has King Vizimir assassinated and crowns Radovid, ending Dijkstra's grip on the throne; Jaskier, briefly Radovid's lover, is used and discarded.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Rearranges the Northern power players Geralt and Ciri will run into for the rest of the show.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Tissaia's end",
+          "text": "The remaining sorceresses vow to hunt Vilgefortz; Tissaia, guilt-crushed by his betrayal and the ruin of Aretuza, takes her own life.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Kills off the woman who held the Brotherhood together and clears the ground for Yennefer's Lodge.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ciri becomes Falka",
+          "text": "Emhyr's court welcomes a fake Ciri; the real Ciri, freed by an outlaw gang called the Rats, tells them her name is 'Falka' as Geralt heals in Brokilon and rides to find her.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Ends the season with three separate Ciris in play — the fake, the runaway 'Falka', and the daughter Emhyr still expects.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Brotherhood is destroyed, Vilgefortz has escaped, and Ciri is riding with the Rats under a stolen name while Geralt recovers alone in Brokilon. Emhyr is holding a fake daughter and does not yet know it.",
+        "questions": [
+          "How long before Emhyr realises his 'Ciri' is an impostor?",
+          "How far will Ciri fall while calling herself Falka?",
+          "Can the surviving sorceresses stop Vilgefortz before he reaches Ciri?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Geralt of Rivia",
+          "line": "Grievously wounded by Vilgefortz; recovering in Brokilon and setting out to find Ciri.",
+          "note": ""
+        },
+        {
+          "name": "Cirilla \"Ciri\" of Cintra",
+          "line": "Riding with the outlaw Rats under the name 'Falka'; hardening into someone Geralt would not recognise.",
+          "note": ""
+        },
+        {
+          "name": "Yennefer of Vengerberg",
+          "line": "Leader-in-waiting of a new Lodge of Sorceresses formed from Aretuza's survivors, hunting Vilgefortz.",
+          "note": ""
+        },
+        {
+          "name": "Vilgefortz",
+          "line": "Exposed as the mastermind behind Rience and the missing elf-blooded students; at large and pursuing Ciri.",
+          "note": ""
+        },
+        {
+          "name": "Emhyr var Emreis",
+          "line": "Emperor of Nilfgaard; unknowingly hosting a doppelgänger of Ciri while planning to marry the real one.",
+          "note": ""
+        },
+        {
+          "name": "Philippa Eilhart",
+          "line": "Kingmaker of Redania; has murdered Vizimir and installed Radovid to run the country from behind the throne.",
+          "note": ""
+        },
+        {
+          "name": "Radovid",
+          "line": "New King of Redania; broke with his lover Jaskier to take the crown.",
+          "note": ""
+        },
+        {
+          "name": "Dijkstra",
+          "line": "Displaced Redanian spymaster; sidelined by Philippa's coup and looking for leverage back into power.",
+          "note": ""
+        },
+        {
+          "name": "Jaskier",
+          "line": "Heartbroken by Radovid's betrayal; back at Geralt's side for the search.",
+          "note": ""
+        },
+        {
+          "name": "Cahir",
+          "line": "Changed sides in the chaos of Thanedd; helped Geralt and Ciri escape and is no longer Nilfgaard's man.",
+          "note": ""
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · A fellowship south",
+          "text": "Geralt, Jaskier and archer Milva head for Nilfgaard to save Ciri, gathering the dwarf Zoltan, the vampire barber-surgeon Regis and, uneasily, Cahir along the way.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Assembles the party that will carry the season's road-plot toward Ciri.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Ciri with the Rats",
+          "text": "Now calling herself Falka, Ciri bonds with the outlaw Rats and their lover Mistle; her growing savagery draws the notice of the bounty hunter Leo Bonhart.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets up Ciri's descent and puts Bonhart — the season's real threat to her — on her trail.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The Lodge forms",
+          "text": "Yennefer gathers Philippa, Fringilla and Francesca at the castle of Montecalvo to form a lodge of mages against Vilgefortz, who tortures Fringilla for their plans.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Creates the political-magical body opposing Vilgefortz and stages the coming siege.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Redania breaks apart",
+          "text": "Dijkstra tortures Geralt to force Jaskier to break with Radovid; Radovid, now his own king, exiles Dijkstra rather than remain his puppet.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Splits every Redanian player from every other, leaving no unified northern power to help against Vilgefortz.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Emhyr is Duny",
+          "text": "Round a campfire Cahir reveals Emperor Emhyr's true face — the cursed Duny — and Geralt realises Emhyr means to marry his own daughter Ciri to fulfil a prophecy.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Geralt finally understands the full horror driving Nilfgaard's hunt; it reshapes his mission from rescue to interdiction.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Montecalvo holds",
+          "text": "The Lodge repels Vilgefortz's assault on Montecalvo and destroys his mage legion, but Vesemir and Margarita die in the fighting and Vilgefortz himself escapes.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Breaks Vilgefortz's army without breaking Vilgefortz and kills the last father figure Geralt has.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Bonhart takes Ciri",
+          "text": "Bonhart butchers the Rats and captures Ciri; Emhyr, desperate to secure the prophecy, unleashes a monster to hunt Geralt down before he can reach her.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Locks in the final position — Ciri a prisoner, Geralt hunted — that the next season must resolve.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ciri is Bonhart's captive with the Rats slaughtered around her; Geralt's fellowship is closing on Nilfgaard while a monster of Emhyr's making hunts him. Vilgefortz has lost his army but not his obsession, and no one has reached Ciri yet.",
+        "questions": [
+          "Will Bonhart deliver Ciri to Vilgefortz or to Emhyr?",
+          "Can Geralt survive Emhyr's monster long enough to reach her?",
+          "Now that Emhyr's prophecy demands his own daughter, will the Lodge move against him too?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Geralt of Rivia",
+          "line": "Knighted in Rivia; leading his fellowship south with Emhyr's monster on his trail.",
+          "note": ""
+        },
+        {
+          "name": "Cirilla \"Ciri\" of Cintra",
+          "line": "Prisoner of the bounty hunter Bonhart after the Rats were massacred around her.",
+          "note": ""
+        },
+        {
+          "name": "Yennefer of Vengerberg",
+          "line": "Founding voice of the Lodge; broke Vilgefortz's army at Montecalvo and is still hunting him.",
+          "note": ""
+        },
+        {
+          "name": "Emhyr var Emreis",
+          "line": "Nilfgaard's emperor and Ciri's father; will marry her to fulfil the prophecy and has set a monster on Geralt.",
+          "note": ""
+        },
+        {
+          "name": "Vilgefortz",
+          "line": "Fled Montecalvo alive but shorn of his legion; still fixated on Ciri.",
+          "note": ""
+        },
+        {
+          "name": "Leo Bonhart",
+          "line": "Feared bounty hunter who slaughtered the Rats and now owns Ciri as his captive.",
+          "note": ""
+        },
+        {
+          "name": "Cahir",
+          "line": "Fully integrated into Geralt's fellowship; the man who exposed Emhyr's true face.",
+          "note": ""
+        },
+        {
+          "name": "Jaskier",
+          "line": "Travelling with Geralt again after Dijkstra tortured him into breaking with Radovid.",
+          "note": ""
+        },
+        {
+          "name": "Milva and Regis",
+          "line": "Archer and vampire barber-surgeon who joined Geralt's road party; Milva is recovering from a miscarriage.",
+          "note": ""
+        },
+        {
+          "name": "Philippa, Dijkstra and Radovid",
+          "line": "Redania's three factions, now scattered — Radovid on the throne alone, Philippa in the Lodge, Dijkstra exiled.",
+          "note": ""
+        }
+      ]
+    }
+  }
+}

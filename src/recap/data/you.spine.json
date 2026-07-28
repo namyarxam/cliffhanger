@@ -1,0 +1,418 @@
+{
+  "slug": "you",
+  "generatedFor": "You",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Fixation on Beck",
+          "text": "Bookstore manager Joe becomes fixated on aspiring writer Beck, steals her phone to track her every move, and kills her boyfriend Benji to clear the way.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Joe's core MO — surveillance, elimination — that every future season replays with a new target.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Peach sees him",
+          "text": "Beck's friend Peach sees through Joe. He murders her during a fight and stages a suicide note on her laptop, satisfying the police.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Confirms Joe will kill anyone who threatens the illusion, not just romantic rivals.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Breakup and reunion",
+          "text": "Beck breaks up with Joe after catching him following her; months later she pursues him back, but his ex Karen warns her Joe has a dangerous past.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Plants the seed of Beck's doubt that leads directly to her investigation of Candace and the discovery of the box.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The box in the ceiling",
+          "text": "Beck investigates missing ex Candace. Joe talks his way out, but Beck finds his hidden box of trophies — her old phone, Benji's, Peach's — in the bathroom ceiling.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The single discovery that flips the relationship from courtship to captivity.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Vault and betrayal",
+          "text": "Joe locks Beck in the bookstore's plexiglass book vault. She pretends to forgive him to trick him inside, but he escapes and kills her.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Introduces the cage as recurring set piece and shows Joe will kill the woman he loves rather than lose control.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Frame Nicky, enter Candace",
+          "text": "Joe frames therapist Dr. Nicky for all his murders using Beck's own writing. Four months later, Candace walks into the bookstore, very much alive.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Candace's return is the entire engine of Season 2 — Joe flees New York because of her.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Joe has literally gotten away with everything: Beck is dead, Dr. Nicky is imprisoned for his crimes, and the bookstore is his again. Then Candace — the ex he assaulted and thought dead — appears with a promise of unfinished business.",
+        "questions": [
+          "What does Candace want from him — exposure, revenge, or something else?",
+          "Can she prove any of it after all this time?",
+          "Will Joe try to run, or eliminate her the way he did Beck?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Joe Goldberg",
+          "line": "Bookstore manager who murders anyone he decides threatens his fantasy; has just killed his girlfriend Beck and pinned every body on her therapist."
+        },
+        {
+          "name": "Guinevere Beck",
+          "line": "The aspiring writer Joe stalked and dated; discovered his trophy box, tried to outsmart him from inside the vault, and was killed by him."
+        },
+        {
+          "name": "Dr. Nicky",
+          "line": "Beck's therapist and briefly her lover; now imprisoned for all of Joe's murders, framed by evidence pulled from Beck's own writing."
+        },
+        {
+          "name": "Candace Stone",
+          "line": "Joe's ex-girlfriend, whom he once assaulted and buried alive; returned to the bookstore at season's end promising to make him suffer."
+        },
+        {
+          "name": "Paco",
+          "line": "Joe's teenage neighbor whom Joe protected by killing his abusive stepfather Ron; has moved to California with his mother."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Joe becomes Will",
+          "text": "Fleeing Candace, Joe steals the identity 'Will' in Los Angeles and takes a job at the Anavrin grocery, where he becomes fixated on kitchen chef Love Quinn.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Resets the pattern in a new city with a new woman and a new alias — the template every later season repeats.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The real Will in the vault",
+          "text": "The real Will, locked in a rented storage vault, helps Joe navigate LA. Joe kills debt collector Jasper and disposes of him through the Anavrin meat grinder.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces the LA cage that becomes the season's crime scene and shows Joe's violence has followed him west.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Henderson and Ellie",
+          "text": "Joe grows close to Love and her needy twin Forty. He also stalks predatory comedian Henderson to protect his teen neighbor Ellie, and accidentally kills him in a fall.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Sets up the Ellie/Delilah storyline and Forty's dependence on Joe, both of which drive the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Candace as Amy",
+          "text": "Candace resurfaces dating Forty under the alias Amy. Love investigates and briefly breaks it off with Joe, but he convinces her Candace is the obsessed liar.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Closes the Candace thread while forcing Love to actively defend Joe — the first hint her loyalty runs past normal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Delilah in the cage",
+          "text": "Joe kidnaps his neighbor Delilah after she finds his storage vault. During a drug-fueled writing bender with Forty, someone kills her inside the cage.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The mystery of who killed Delilah is the door through which Love's true nature is revealed.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Love is the mirror",
+          "text": "Love reveals SHE killed Delilah — and Forty's old au pair. She is Joe's mirror, and pregnant. He plans to kill her until she reveals the baby.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The season's inversion: Joe has finally found someone as violent as he is, and it traps him in the marriage that defines Season 3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Suburbia and the new neighbor",
+          "text": "Forty threatens Joe with a gun and is shot dead by police. Joe and Love marry, move to suburban Madre Linda, and Joe is already spying on the neighbor's wife.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The final shot literally sets up Season 3 — the neighbor is Natalie, the season's first murder.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Joe is married to a woman as dangerous as he is, expecting a child, and locked into suburban domesticity in Madre Linda. He is already stalking the woman next door.",
+        "questions": [
+          "Can Joe keep his obsessive pattern hidden from someone who kills the same way he does?",
+          "Will Love murder again the moment she senses she's losing him?",
+          "Who is the neighbor Joe is already watching over the fence?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Joe Goldberg",
+          "line": "Living as 'Will' in LA, newly married to Love and about to be a father; trapped by a partner whose violence matches his and already fixated on someone new."
+        },
+        {
+          "name": "Love Quinn",
+          "line": "Wealthy Quinn heiress and chef; killed Delilah and Forty's old au pair to protect the men she loves, and matches Joe's darkness beat for beat."
+        },
+        {
+          "name": "Forty Quinn",
+          "line": "Love's addict twin and aspiring writer; shot dead by police after trying to kill Joe to save Love from him."
+        },
+        {
+          "name": "Candace Stone",
+          "line": "Joe's ex who came to LA seeking revenge; murdered by Love in the storage unit after cornering Joe with the truth."
+        },
+        {
+          "name": "Ellie Alves",
+          "line": "Joe's teen neighbor whose sister Delilah he tried to protect; sent away with money before Child Protective Services could take her."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Natalie dies",
+          "text": "New parents Joe and Love clash over baby Henry. Joe fixates on neighbor Natalie; Love kills her after finding Joe's box of stalking trophies from her.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the season's core dynamic — Joe stalks, Love kills — and starts the body count Joe will end up pinning on her.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Framing Gil",
+          "text": "The couple bury Natalie under a construction site, then frame vaccine-refusing neighbor Gil for her murder after Love bludgeons him unconscious too.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Buys the couple the six-month peace during which Joe's next obsession begins.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Marienne and Theo",
+          "text": "Joe grows obsessed with Marienne, the town librarian and a recovering addict. Love notices and rebounds with Theo, her neighbor Matthew's teenage stepson.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Introduces Marienne, the woman Joe will chase across two continents.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ryan and the Conrads",
+          "text": "Joe murders Marienne's abusive ex Ryan to help her custody case. Love traps swinger neighbors Sherry and Cary in the bakery cage after they overhear too much.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Both actions box the couple in and force the confrontation that ends the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Theo pieces it together",
+          "text": "Theo cracks Matthew's secret surveillance of the neighborhood and pieces together Love's role in Natalie's death. Love beats him half to death in the bakery.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The evidence trail that eventually clears Joe's escape depends on Theo, not any character Joe controls.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Love dies of her own poison",
+          "text": "Love paralyzes Joe with aconite and summons Marienne to be murdered, but Joe — immune, having dosed himself — injects Love with the same poison and kills her.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The inversion that ends the marriage; Joe survives because he prepared for exactly this betrayal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Fire, Henry, Paris",
+          "text": "Joe stages a house fire, frames Love for every Madre Linda murder, leaves baby Henry with coworker Dante, and flees to Paris under a new identity to find Marienne.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Literally sets up Season 4 — Joe is now a legally-dead man in Europe hunting Marienne.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Joe has burned his life in Madre Linda to the ground and cast Love as the sole villain of it. He has abandoned his infant son and gone to Paris chasing Marienne, who fled him in fear the moment she learned who he really was.",
+        "questions": [
+          "Will Joe find Marienne in Europe?",
+          "Has anyone connected the Madre Linda fire to Joe rather than Love?",
+          "Can he ever be a father to Henry again after choosing this?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Joe Goldberg",
+          "line": "Killed Love, framed her for his crimes, faked his own death; abandoned baby Henry and traveled to Paris under a new identity to hunt Marienne."
+        },
+        {
+          "name": "Love Quinn-Goldberg",
+          "line": "Joe's murdered wife, now posthumously blamed for every body in Madre Linda by his forged suicide note."
+        },
+        {
+          "name": "Marienne Bellamy",
+          "line": "The librarian Joe fell for; learned he killed her ex Ryan, fled Madre Linda in terror, and is somewhere in Europe unaware Joe is coming for her."
+        },
+        {
+          "name": "Henry Goldberg",
+          "line": "Joe and Love's infant son, left with Joe's Anavrin coworker Dante and his husband to be raised by them."
+        },
+        {
+          "name": "Matthew Engler",
+          "line": "Tech mogul whose wife Natalie was killed by Love; now reconciling with his stepson Theo, who survived the attack."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Jonathan Moore in London",
+          "text": "In London, Joe tracks down Marienne but lets her go. He assumes a new identity as Professor 'Jonathan Moore' and stalks Kate Galvin, an art curator across the courtyard.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Resets the pattern one more time; establishes Kate, who becomes his S5 partner and eventual undoing.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Malcolm and the texts",
+          "text": "Kate's boyfriend Malcolm is murdered in Joe's flat. Assuming he blacked out and did it, Joe disposes of the body — then an anonymous killer starts texting him.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Kicks off the season's whodunit and the false premise Joe operates under until the reveal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Eat-the-Rich Killer",
+          "text": "The 'Eat-the-Rich Killer' picks off Kate's wealthy Oxford friends. Joe frames a stalker for Simon's murder and starts genuinely falling for Kate.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Ends the public whodunit and lets the season pivot to the interior mystery of who's actually killing.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Hunting Rhys",
+          "text": "The killer demands Joe murder Kate's father Tom Lockwood. Joe tracks the killer to author Rhys Montrose's countryside cottage and tortures him for Marienne's location.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The action Joe takes to protect Marienne is what leads to the reveal that she never left him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Rhys was never real",
+          "text": "Rhys is a hallucination — Joe himself is the killer, and blacked out kidnapping Marienne into a London cage where she has been starving for weeks.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The season's central reveal: Joe has stopped being able to tell his own violence from someone else's.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Marienne's overdose",
+          "text": "Joe promises to free Marienne, but she fakes a fatal overdose to escape. Believing her dead, Joe attempts suicide by jumping off a bridge and survives.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Marienne's fake death is the only reason she's alive to expose him in S5; his survival is the reason he stops fighting his nature.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Back to New York with Kate",
+          "text": "Joe kills Lockwood, frames student Nadia for the murders, and returns to NYC with Kate — now a billionaire heir — who rebrands him publicly as Love's escaped victim.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Directly sets up S5: Joe as a public figure, married to Kate, backed by her fortune, with Nadia rotting in a UK prison.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Joe has stopped fighting his nature. He is back in New York with Kate — now one of the most powerful women in the country — and a rebuilt public image as the man Love Quinn tortured.",
+        "questions": [
+          "Can Kate's fortune keep the truth buried forever?",
+          "Will Marienne, Nadia, or anyone else from his past ever surface to expose him?",
+          "What happens the next time Joe fixates on someone new?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Joe Goldberg",
+          "line": "Has abandoned his 'good man' self-image and embraced his violence; publicly Kate's partner in NYC, sold to the world as Love's escaped victim."
+        },
+        {
+          "name": "Kate Galvin",
+          "line": "Inherited her father Tom Lockwood's fortune after Joe killed him; covered up Joe's involvement in Rhys' death and now runs the family business."
+        },
+        {
+          "name": "Marienne Bellamy",
+          "line": "Escaped Joe's London cage by faking her death; back in Paris with her daughter Juliette, and the only person alive who knows Joe is not dead."
+        },
+        {
+          "name": "Nadia Farran",
+          "line": "Joe's English student who found Marienne and tried to save her; framed by Joe for her boyfriend Edward's murder and imprisoned in the UK."
+        },
+        {
+          "name": "Rhys Montrose",
+          "line": "London mayoral candidate whom Joe hallucinated as the Eat-the-Rich Killer to disown his own crimes; the real Rhys was murdered by Joe at a rural cottage."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Joe the celebrity",
+          "text": "Three years after London, Joe lives publicly as Kate's partner in NYC, has Henry back, and hires a mysterious young woman named Bronte at Mooney's bookstore.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the status quo the season will dismantle and introduces Bronte, who turns out to be the season's Trojan horse.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Killing Bob for Kate",
+          "text": "Kate's half-sister Reagan schemes to unseat her as CEO with her mentor Bob. Joe kills Bob and stages his suicide to protect Kate.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Confirms Joe has fully reverted; the murder that gives Reagan the motive to dig into Kate and Joe.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Wrong twin in the cage",
+          "text": "Joe attempts to kidnap Reagan but takes her identical twin Maddie by mistake. He coaches Maddie to impersonate Reagan and kill her sister from inside the cage.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Creates the Maddie-as-Reagan deception that Kate later uses to catch Joe, and the leverage Joe holds over Maddie.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Kate turns",
+          "text": "Joe and Bronte begin an affair. Kate investigates Joe's past, discovers his crimes and Marienne's disappearance, and moves to divorce him.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The moment Joe loses his last protector; Kate goes from co-conspirator to executioner.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Bronte's real name",
+          "text": "Bronte reveals she's a former Beck student who joined a vigilante group investigating Joe. She develops real feelings and covers for him after he kills their leader Clayton.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The season's central twist and the origin of Bronte's divided loyalty that decides the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The trap and Marienne alive",
+          "text": "Kate teams with imprisoned Nadia to trap Joe in his own cage. They reveal Marienne is alive, but Joe frees himself with a hidden key, shoots Kate, and records everything anyway.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The confrontation where every woman Joe wronged converges; sets up the lake and the shooting.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Bronte shoots him",
+          "text": "Bronte lures Joe to a lake, shoots him in the genitals, and calls the police. Joe is sentenced to life in prison; Kate, Marienne, Nadia and Henry rebuild without him.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The series' final resolution: Joe caged for real, his victims free of him — but Joe still reading fan mail thinking he's the wronged one.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The show is over. Joe is imprisoned for life, his victims have rebuilt their lives without him, and he sits in his cell reading fan mail from strangers who think society is the real problem.",
+        "questions": [
+          "Do Joe's admirers in the outside world prove him right that the culture made him?",
+          "Will Henry ever escape being the son of Joe Goldberg?",
+          "Can Bronte reclaim Beck's book from the man who stole her voice?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Joe Goldberg",
+          "line": "Convicted and sentenced to life after his entire body count was exposed; in prison reading fan letters, still convinced society is the problem, not him."
+        },
+        {
+          "name": "Kate Galvin",
+          "line": "Survived Joe's shooting, recorded his full confession, dissolved her father's company into a non-profit, and helps raise Henry alongside Marienne."
+        },
+        {
+          "name": "Bronte / Louise",
+          "line": "Guinevere Beck's former student, who infiltrated Joe's life to expose him; shot him at the lake and later rewrites Beck's book to remove his additions."
+        },
+        {
+          "name": "Marienne Bellamy",
+          "line": "Alive; came to New York for the trap, then returned to a life with her daughter Juliette and helps raise Henry with Kate."
+        },
+        {
+          "name": "Nadia Farran",
+          "line": "Freed from UK prison after Kate cleared her name; now teaches writing."
+        },
+        {
+          "name": "Henry Goldberg",
+          "line": "Joe's now-school-age son; publicly disowns Joe on a call from Will, and is being raised by Kate."
+        }
+      ]
+    }
+  }
+}

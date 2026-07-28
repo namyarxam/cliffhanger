@@ -1,0 +1,212 @@
+{
+  "slug": "the-pitt",
+  "generatedFor": "The Pitt",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Shift change",
+          "text": "Attending Robby starts a shift with new residents Santos and Mel, and students Whitaker and Javadi, relieving overnight attending Abbot.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the ensemble the reader must recognise before anything else lands.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Adamson under the surface",
+          "text": "As pressure mounts, Robby has flashbacks to the COVID pandemic and the death of his mentor Adamson in the Pitt, a loss he has never processed.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Robby's unresolved grief is the fuse that eventually ignites his S2 sabbatical.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Langdon exposed",
+          "text": "Santos suspects senior resident Langdon of stealing patient sedatives; Robby confirms it, finds stolen doses in his locker, and sends him home in disgrace.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "This is the exact wound S2 opens on when Langdon returns from rehab.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Collins miscarries",
+          "text": "Senior resident Collins, secretly early in pregnancy, miscarries in the bathroom mid-shift and immediately returns to work, telling only Dana.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Collins's private grief becomes the hidden weight she carries into the aftermath.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Pitt Fest shooting",
+          "text": "A mass shooting at Pitt Fest overwhelms the ER; the hospital activates its mass casualty protocols as wave after wave of victims arrive.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The event that shatters everyone and reshapes the emotional baseline going into S2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Leah dies, Robby breaks",
+          "text": "Jake, the son of Robby's ex, arrives with girlfriend Leah, who dies despite Robby's efforts; Robby collapses in a panic attack over Leah and Adamson.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The specific loss that pushes Robby's suicidal ideation over the edge — the origin of the S2 sabbatical.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Shift ends bloodied",
+          "text": "McKay is arrested for smashing her ankle monitor, Dana tells Robby she may quit, and Abbot finds Robby on the roof and talks him back down.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "The closing state of the staff — every thread the reader must carry into S2's opening.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Robby is off the roof but hollow. The shift ended with Langdon sent home for theft, McKay arrested, Dana ready to quit, and the ER staggering out of a mass shooting that killed Jake's girlfriend Leah.",
+        "questions": [
+          "Will Robby come back to work, or step away for good?",
+          "Can Langdon salvage his career and his sobriety after being exposed?",
+          "Will Dana actually quit after Doug's assault?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Dr. Michael \"Robby\" Robinavitch",
+          "line": "Day-shift attending; a 15-hour shift ending in a mass shooting has cracked open unresolved COVID-era grief, and Abbot has just talked him off the roof."
+        },
+        {
+          "name": "Dr. Jack Abbot",
+          "line": "Overnight attending and Robby's counterpart; wears a prosthetic leg from military service, and stayed to help when the shooting hit."
+        },
+        {
+          "name": "Dr. Frank Langdon",
+          "line": "Senior resident exposed as an opioid thief; sent home by Robby, his career and sobriety in question."
+        },
+        {
+          "name": "Dr. Trinity Santos",
+          "line": "Brash, first-year resident who blew the whistle on Langdon; competent but constantly clashing with colleagues."
+        },
+        {
+          "name": "Dr. Mel King",
+          "line": "Quiet first-year resident who grew into a confident doctor over the shift, and picks up her autistic sister Becca as it ends."
+        },
+        {
+          "name": "Dr. Cassie McKay",
+          "line": "Resident wearing a court-ordered ankle monitor; disabled it to work through the shooting, and was arrested for it as the shift closed."
+        },
+        {
+          "name": "Dr. Heather Collins",
+          "line": "Senior resident who lost her early pregnancy in a bathroom mid-shift and returned to work without telling most of the team."
+        },
+        {
+          "name": "Dr. Samira Mohan",
+          "line": "Resident whose patient-first pace Robby criticised, then defended; cried in the bathroom as the adrenaline wore off."
+        },
+        {
+          "name": "Dana Evans",
+          "line": "Charge nurse punched by an angry patient in the ambulance bay; kept working, but told Robby she may not come back."
+        },
+        {
+          "name": "Dennis Whitaker",
+          "line": "Fourth-year medical student secretly squatting in a hospital room; Santos invited him to move into her apartment."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Last shift before sabbatical",
+          "text": "On July 4, Robby begins his last shift before a planned three-month sabbatical, handing the department to interim attending Al-Hashimi as Langdon returns from rehab.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets every major running thread: Robby's exit, Al-Hashimi in charge, Langdon's return.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Langdon on triage, Santos unmoved",
+          "text": "Robby keeps Langdon on triage and withholds trust; Santos rejects Langdon's apology and demands he publicly admit to stealing hospital drugs.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The unresolved S1 exposure now defines Langdon's slow, incomplete rehabilitation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ransomware shuts the ER down",
+          "text": "A regional ransomware attack takes the hospital's computers offline mid-shift, forcing the staff onto paper charts and a hand-updated whiteboard.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Operational spine of the middle stretch — every subsequent case runs under this handicap.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Waterslide mass casualty",
+          "text": "A nearby waterslide collapse sends a mass-casualty wave into an already-strained ER; Al-Hashimi saves a child with an emergency slash tracheotomy.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Second MCI in two seasons — the specific event that starts breaking Al-Hashimi's composure.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · ICE seizes a patient",
+          "text": "ICE agents seize an injured detainee from the ER, arresting nurse Jesse when he tries to intervene and sending other patients fleeing in terror.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Jesse's arrest and the fallout for undocumented patients is a thread left open at shift's end.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Duke's aneurysm, Santos's scalpels",
+          "text": "Robby's friend Duke arrives with an aortic aneurysm; Dana and McKay warn Robby his sabbatical looks suicidal, while Santos quietly pockets scalpel kits.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The moment Robby's suicidal plan becomes explicit — and Santos's self-harm risk surfaces.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Seizures, a baby, a safer trip",
+          "text": "Al-Hashimi confesses her seizures have returned and is pulled off shift; Robby cradles an abandoned baby and accepts Abbot's advice to take a safer trip.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "Closes Robby's arc without resolving it and pulls Al-Hashimi out of the driver's seat.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Robby is finally leaving, but on a safer trip after Abbot pulled him back from the edge. Santos is hiding scalpel kits, Dana may lose her license, Langdon is only halfway rehabilitated, and Al-Hashimi has been forced off shift by returning seizures.",
+        "questions": [
+          "How far will Santos's self-harm spiral go?",
+          "Will Dana keep her nursing license after the off-protocol Versed?",
+          "Can Al-Hashimi return to practice, and who runs the ER if she cannot?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Dr. Michael \"Robby\" Robinavitch",
+          "line": "Day attending finally taking his delayed sabbatical on a safer trip; his suicidal ideation was named but is not resolved."
+        },
+        {
+          "name": "Dr. Jack Abbot",
+          "line": "Night attending and SWAT medic; talked Robby down a second time, urging him to accept help."
+        },
+        {
+          "name": "Dr. Baran Al-Hashimi",
+          "line": "Interim senior attending whose seizure disorder returned mid-shift; pulled off duty pending disclosure and treatment."
+        },
+        {
+          "name": "Dr. Frank Langdon",
+          "line": "Senior resident back from rehab; kept on triage, cold-shouldered by Santos and Al-Hashimi, slowly rebuilding after saving a spinal case."
+        },
+        {
+          "name": "Dr. Trinity Santos",
+          "line": "Second-year resident increasingly isolated and abrasive; pocketed scalpel kits at shift's end, a possible relapse into self-harm."
+        },
+        {
+          "name": "Dr. Mel King",
+          "line": "Resident whose malpractice deposition over the Flynn spinal tap went well; grappling with her sister Becca's growing independence."
+        },
+        {
+          "name": "Dr. Cassie McKay",
+          "line": "Resident continuing her sobriety alongside Langdon; lost her patient Roxie to cancer and warned Robby he seems to be courting death."
+        },
+        {
+          "name": "Dr. Samira Mohan",
+          "line": "Resident shattered by patient Orlando's condition, which Robby speculated was a suicide attempt; unsure about her future."
+        },
+        {
+          "name": "Dana Evans",
+          "line": "Charge nurse still on duty; subdued a violent patient with off-protocol Versed, putting her nursing license at risk."
+        },
+        {
+          "name": "Dennis Whitaker",
+          "line": "Fourth-year medical student housesitting for Robby during the sabbatical; left with Amy Miller as the shift ended."
+        }
+      ]
+    }
+  }
+}

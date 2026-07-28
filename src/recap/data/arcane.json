@@ -329,7 +329,7 @@
       "character": "Vi (voice)",
       "episodeCount": 18,
       "profile": "https://image.tmdb.org/t/p/original/4K2dzM3odGiVZOQOD6RjVxNq2ZQ.jpg",
-      "inCharacter": null
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374575.jpg"
     },
     {
       "name": "Ella Purnell",
@@ -574,7 +574,7 @@
       "character": "Young Ekko (voice)",
       "episodeCount": 3,
       "profile": "https://image.tmdb.org/t/p/original/friWD1FQ2exfFuKs4INOdS0Upr9.jpg",
-      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374581.jpg"
+      "inCharacter": null
     },
     {
       "name": "MIYAVI",
@@ -599,7 +599,7 @@
     },
     {
       "name": "Joe Zieja",
-      "character": "Old Timey Commentator (voice)",
+      "character": "Punk (voice)",
       "episodeCount": 3,
       "profile": "https://image.tmdb.org/t/p/original/htS8KWXwXaWTrpTjh8o5N8e72ZF.jpg",
       "inCharacter": null
@@ -665,7 +665,7 @@
       "character": "Young Caitlyn (voice)",
       "episodeCount": 2,
       "profile": "https://image.tmdb.org/t/p/original/sJ6LJl75paSDDtxtdBPrBQB4UDA.jpg",
-      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374576.jpg"
+      "inCharacter": null
     },
     {
       "name": "Salli Saffioti",
@@ -752,13 +752,6 @@
       "inCharacter": null
     },
     {
-      "name": "Faustino Duran",
-      "character": "Young Jayce (voice)",
-      "episodeCount": 1,
-      "profile": null,
-      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374577.jpg"
-    },
-    {
       "name": "Mira Furlan",
       "character": "Babette (voice)",
       "episodeCount": 1,
@@ -770,14 +763,14 @@
       "character": "Young Viktor (voice)",
       "episodeCount": 1,
       "profile": "https://image.tmdb.org/t/p/original/36ZO34WhXbFChobD1hxdYhQY2tV.jpg",
-      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374578.jpg"
+      "inCharacter": null
     },
     {
       "name": "Imogen Faires",
       "character": "Young Mel (voice)",
       "episodeCount": 1,
       "profile": "https://image.tmdb.org/t/p/original/eSQgALHSkeWhM0YXMTLJyuHYNzI.jpg",
-      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374579.jpg"
+      "inCharacter": null
     },
     {
       "name": "Lenny Citrano",
@@ -913,5 +906,5 @@
       "inCharacter": null
     }
   ],
-  "generatedAt": "2026-07-23T19:54:38.207Z"
+  "generatedAt": "2026-07-25T14:26:12.955Z"
 }

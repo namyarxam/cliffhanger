@@ -1,0 +1,454 @@
+{
+  "slug": "only-murders-in-the-building",
+  "generatedFor": "Only Murders in the Building",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Three strangers, one podcast",
+          "text": "Charles, Oliver and Mabel meet in an Arconia elevator with Tim Kono; hours later Tim is dead. Police call it suicide, so the three start a podcast to prove otherwise.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the trio, the podcast conceit and the Arconia as a crime scene - the frame everything else hangs on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Mabel's hidden history",
+          "text": "Mabel is revealed to have known Tim since childhood; a decade earlier her friend Zoe died on the Arconia roof, and Tim's silence about a second attacker broke them apart.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Recasts Mabel as personally tied to the victim and to the building's past, motivating why she cannot walk away from any of it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The sponsor is 'Angel'",
+          "text": "Podcast sponsor Teddy Dimas is exposed as 'Angel', the black-market fence Tim was trying to bring down, drawing his son Theo into the case too.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "First suspect flip; wires the Dimases into both the Tim case and Zoe's long-ago death.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Zoe's real killer",
+          "text": "Flashbacks show Theo accidentally pushed Zoe from the Arconia roof, and Teddy silenced Tim to bury it. But Tim's autopsy proves poisoning, clearing the Dimases of his murder.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Resolves the ten-year-old wound while proving the actual killer is still at large, forcing the trio back to square one.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Jan the bassoonist",
+          "text": "Charles's girlfriend Jan - Tim's spurned lover - is unmasked as the killer; she poisons Charles and tries to gas the Arconia before Mabel knocks her out.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Closes the Tim Kono case and hands Charles his first serious romantic wound, leaving the trio poised to celebrate.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Framed over Bunny's body",
+          "text": "A text lures the trio out; they run back and find Mabel kneeling over board president Bunny Folger, stabbed dead. All three are arrested as the Arconia watches.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The launchpad: someone has framed the trio for exactly the kind of murder they solve, resetting them from investigators to prime suspects.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Tim Kono case is closed, but the trio is walked out of the Arconia in handcuffs, framed for the murder of board president Bunny Folger by an unseen enemy.",
+        "questions": [
+          "Who murdered Bunny and set the trio up to take the fall?",
+          "What did Bunny know or possess that got her killed?",
+          "Can the trio clear their own names while their podcast rivals brand them murderers?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Charles-Haden Savage",
+          "line": "Misanthropic semi-retired star of the 90s cop show Brazzos; the trio's straight man, freshly heartbroken after nearly being poisoned by his girlfriend."
+        },
+        {
+          "name": "Oliver Putnam",
+          "line": "Broke, theatrical Broadway director whose podcast turned his tenancy into a bidding war and reopened his shaky bond with adult son Will."
+        },
+        {
+          "name": "Mabel Mora",
+          "line": "Young artist renovating her aunt's Arconia apartment; the guarded one whose childhood ties to Tim broke the case wide open."
+        },
+        {
+          "name": "Bunny Folger",
+          "line": "Arconia board president who spent the year trying to evict Oliver, stabbed dead in her apartment on the trio's celebration night."
+        },
+        {
+          "name": "Cinda Canning",
+          "line": "Star true-crime podcaster the trio idolised; she mocked their show on Fallon and now hunts them as her next subject."
+        },
+        {
+          "name": "Detective Williams",
+          "line": "NYPD detective on maternity leave, quietly rooting for the trio and slipping them evidence when the official case closed."
+        },
+        {
+          "name": "Teddy Dimas",
+          "line": "Deli mogul and podcast sponsor, exposed as jewellery fence 'Angel' but cleared of Tim's murder."
+        },
+        {
+          "name": "Theo Dimas",
+          "line": "Teddy's deaf son, who accidentally killed Zoe on the Arconia roof a decade ago and was silenced by his father ever since."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Cleared but hunted",
+          "text": "The trio is released for lack of evidence, but rival podcaster Cinda Canning launches a series casting them as guilty, forcing them to solve Bunny's murder themselves.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the season's central pressure and reroutes the trio from suspects to their own investigators.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The stolen painting",
+          "text": "Bunny gasped 'Savage' and '14' before dying. The trio finds a painting missing from her apartment hanging on Charles's own wall, tying his family to her past.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Anchors the whole mystery in Charles's father's history and gives every subsequent lead a physical MacGuffin.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Mabel and Alice",
+          "text": "Mabel is pulled into a downtown art scene by gallerist Alice, sparking a romance the others soon suspect could tie Alice to Bunny's murder.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Puts Mabel's judgement on trial with her friends and gives Mabel her first real life outside the Arconia.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Bunny's last day",
+          "text": "Flashbacks show Bunny reversed her retirement, blocking successor Nina Lin's plans; the trio realises a simple kindness could have saved her that night.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Turns Bunny from cardboard obstacle into a person the trio actually failed, colouring every choice they make from here.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Kreps unmasked",
+          "text": "Mabel is stabbed on the subway; during a citywide blackout she spots glitter on Detective Kreps - the very cop leading the investigation - and realises he was her attacker.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Reveals the police itself has been compromised, pushing the trio to trap the mastermind alone.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The mastermind",
+          "text": "The trio stages a fake reveal to trap the real killer: Cinda's assistant Poppy is Becky Butler, subject of Cinda's own hit podcast, who killed Bunny to make herself famous.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Closes the Bunny case and humiliates Cinda without destroying her, leaving her as an ongoing professional shadow.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · One year on, another body",
+          "text": "One year later, the case closed, Oliver directs a Broadway play whose lead actor Ben Glenroy suddenly collapses onstage on opening night.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The launchpad: the trio's lives look settled just long enough for a new corpse to drop in Oliver's own theatre.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The trio has cleared its name and Oliver has staged the Broadway comeback of his life. On opening night, his leading man collapses onstage in front of a full house.",
+        "questions": [
+          "Is Ben Glenroy dead - and if so, who wanted him gone?",
+          "What darkness lay hidden inside the cast and crew of Death Rattle?",
+          "Can Oliver's shot at a Broadway comeback survive its own leading man?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Charles-Haden Savage",
+          "line": "Ex-Brazzos actor, done with Jan and drifting toward his next chapter; still the trio's anxious straight man."
+        },
+        {
+          "name": "Oliver Putnam",
+          "line": "Broadway director whose new play has just handed him his comeback; freshly aware that son Will is biologically Teddy Dimas's, not his."
+        },
+        {
+          "name": "Mabel Mora",
+          "line": "Emerging artist and podcaster, cautiously reconciled with girlfriend Alice; still finding footing outside the Arconia."
+        },
+        {
+          "name": "Cinda Canning",
+          "line": "Publicly disgraced when her assistant turned out to be the killer she built a career on; still the trio's professional nemesis."
+        },
+        {
+          "name": "Detective Williams",
+          "line": "NYPD ally, back from maternity leave and openly on the trio's side inside the department."
+        },
+        {
+          "name": "Ben Glenroy",
+          "line": "Difficult star of Oliver's Broadway play who collapsed onstage on opening night after months of feuding with the cast."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Ben dies twice",
+          "text": "Ben Glenroy collapses onstage from apparent food poisoning, revives at the after-party, then plummets down the Arconia elevator shaft to his death that same night.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes both mysteries at once - who poisoned him and who threw him down the shaft - and drops the body in the trio's own building.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Oliver, Loretta and the musical",
+          "text": "Oliver reworks the doomed play into a musical, Death Rattle Dazzle, and falls in love with actress Loretta Durkin - then finds a scrapbook of Ben clippings hidden in her flat.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Sets Oliver's most serious romance against the case's central suspicion, entangling his heart with his investigation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Charles's white room",
+          "text": "Charles keeps blacking out during his patter song; in one lapse he accidentally proposes to girlfriend Joy, who then breaks up with him over the mess.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Leaves Charles single again and rattled by his own mind at exactly the moment he most needs to trust himself.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Mabel goes solo",
+          "text": "Newly homeless and drifting from Oliver, Mabel investigates with Ben's documentarian Tobert and briefly starts her own podcast season without the others.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Fractures the trio and introduces Tobert as Mabel's romantic and professional partner going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Loretta confesses to save her son",
+          "text": "Cornered as prime suspect, Loretta confesses to Ben's murder to protect Dickie - Ben's brother-manager, revealed as her secret biological son.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Explodes the Loretta suspicion arc and gives Oliver the woman he loves willingly walking into prison for her child.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The real killers",
+          "text": "On opening night the trio corners producers Donna and her son Cliff; Cliff confesses he pushed Ben down the elevator shaft to save his mother's investment.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Closes the Ben Glenroy case and frees Loretta, letting the trio believe their lives are theirs again.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Sazz is shot",
+          "text": "Charles's oldest friend Sazz Pataki arrives to celebrate, tells him they need to talk first - and is shot dead by an unseen sniper inside his own apartment.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The launchpad: kills the person closest to Charles with a bullet that may have been meant for him, before he even knows she's dead.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Ben Glenroy case is closed and Oliver's musical is a hit. Then Charles's best friend Sazz is killed by a sniper's bullet fired into his apartment - meant, it seems, for him.",
+        "questions": [
+          "Who wanted Sazz dead, and was the bullet actually meant for Charles?",
+          "What was Sazz about to tell him before she was killed?",
+          "Can the trio hunt her killer without tipping the killer off that they know?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Charles-Haden Savage",
+          "line": "Ex-Brazzos actor and podcaster, single after his blackout proposal; unknowingly the target of a sniper in his own home."
+        },
+        {
+          "name": "Oliver Putnam",
+          "line": "Broadway director whose musical just triumphed; deeply in love with Loretta Durkin and finally at ease with his life."
+        },
+        {
+          "name": "Mabel Mora",
+          "line": "Podcaster and artist reconciled with the trio; dating documentarian Tobert and rebuilding after losing her apartment."
+        },
+        {
+          "name": "Loretta Durkin",
+          "line": "Actress and Oliver's partner, revealed as the birth mother of Ben's brother Dickie; briefly confessed to the murder to protect him."
+        },
+        {
+          "name": "Sazz Pataki",
+          "line": "Charles's oldest friend and stunt double for decades; just shot dead in his living room with something urgent left unsaid."
+        },
+        {
+          "name": "Detective Williams",
+          "line": "NYPD ally, still the trio's back channel into the department."
+        },
+        {
+          "name": "Tobert",
+          "line": "Ben Glenroy's former documentarian, now Mabel's boyfriend and podcast collaborator."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Ashes in the incinerator",
+          "text": "The trio flies to LA for a film adaptation, unaware Sazz is dead. They return to find her ashes in the Arconia incinerator and a bullet hole through Charles's window.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Locates the crime scene in Charles's own home and confirms the killer knew exactly where to shoot from.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The West Tower",
+          "text": "Convinced the sniper fired from across the courtyard, the trio befriends the West Tower residents and breaks into the apartment of an absent Professor Dudenoff.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Opens the season's whole geographic and human puzzle - the mysterious neighbours and the missing landlord - as the first false lead.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Hollywood shadows",
+          "text": "Eugene Levy, Zach Galifianakis and Eva Longoria arrive to shadow the trio for the film; producer Bev Melon reveals Sazz feared something on the production itself.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Plants the movie set as the real crime scene and gives the actors licence to embed themselves in the investigation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Dudenoff was already dead",
+          "text": "Cornered, the West Tower residents confess they are illegal tenants of Dudenoff, who quietly killed himself and asked them to hide it - erasing the trio's best lead.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Collapses the season's biggest suspect pool and forces the trio to look back at the film crew they had dismissed.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Marshall is Rex Bailey",
+          "text": "Ron Howard identifies Sazz's dangerous protégé as Rex Bailey; Mabel realises the film's screenwriter Marshall is Rex, who stole Sazz's own script and killed her to bury it.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Names the killer and gives the murder its motive - envy of Sazz's second act as a writer.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Jan finishes it",
+          "text": "Rex almost kills the trio inside the Arconia before Jan, escaped from prison, shoots him dead from Charles's window - avenging Sazz.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Closes the Sazz case with an old ghost of Charles's own doing the killing, and puts Jan back behind bars.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Wedding, then Lester",
+          "text": "Oliver marries Loretta; mob widow Sofia Caccimelio tries to hire the trio to find her missing husband - hours before they discover doorman Lester drowned in the Arconia fountain.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The launchpad: hands the trio a new client they refuse and a new body they can't, both hinting the Arconia itself is the crime.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Sazz is avenged and Oliver is finally married. The next morning the trio finds Lester, the Arconia's doorman of thirty years, drowned in the courtyard fountain.",
+        "questions": [
+          "What Arconia secret got Lester killed?",
+          "How does mob widow Sofia Caccimelio - and her missing husband - connect to their building?",
+          "Can the trio investigate the death of one of their own without becoming the next?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Charles-Haden Savage",
+          "line": "Ex-Brazzos actor still mourning Sazz; the film adaptation forced him to reckon with what she meant to him."
+        },
+        {
+          "name": "Oliver Putnam",
+          "line": "Broadway director, now married to Loretta and buoyantly starting a life with her in New York."
+        },
+        {
+          "name": "Mabel Mora",
+          "line": "Podcaster and investigator, still apartment-less and living increasingly out of the case."
+        },
+        {
+          "name": "Loretta Durkin",
+          "line": "Actress; now Oliver's wife after a quiet Arconia wedding."
+        },
+        {
+          "name": "Lester",
+          "line": "Beloved Arconia doorman of three decades; found dead in the courtyard fountain the morning after Oliver's wedding."
+        },
+        {
+          "name": "Sofia Caccimelio",
+          "line": "Mob widow whose husband Nicky has vanished; tried to hire the trio at the wedding, hinting the Arconia itself was involved."
+        },
+        {
+          "name": "Detective Williams",
+          "line": "NYPD ally who quietly helped work Sazz's murder around the FBI's official case."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · A finger, not Lester's",
+          "text": "The trio finds a severed finger at Lester's funeral; Charles checks the body in the coffin and all ten fingers are intact, so the finger belongs to someone else entirely.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Confirms Lester's death was not accidental and hands the trio the physical clue that drives the entire season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The mobster and the casino",
+          "text": "Wedding photos link Lester to missing mobster Nicky Caccimelio. Sofia leads the trio to a secret casino under the Arconia; Nicky's body soon surfaces at her family's dry cleaner.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Roots the whole mystery underneath the trio's own building and makes Sofia their reluctant partner rather than a client.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Three billionaires",
+          "text": "The trio traces the poker room to billionaires Jay Pflug, Bash Steed and Camila White, who buy their podcast's distributor and use it to muzzle the investigation.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Sets the season's opposition - not one killer but a cartel of very rich people with a legal weapon aimed at the podcast.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Camila's Arconia play",
+          "text": "Camila is exposed as Nicky's lover and has been quietly buying up Arconia apartments to convert the whole building into New York's first casino, evicting the residents.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Raises the stakes from a murder to the loss of the Arconia itself, uniting the residents around the trio.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Lester's confession",
+          "text": "The Arconia's new robot doorman replays Lester's last words: he killed Nicky by accident to stop the casino, and had Randall plant the severed finger as a clue.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Rewrites Lester from murder victim to reluctant killer and reframes his death as retaliation for that killing.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Mayor Tillman exposed",
+          "text": "The finger belongs to Mayor Tillman, exposed as Sofia's secret lover; he killed Lester to bury the affair. He and the three billionaires are arrested and the Arconia is saved.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Closes both the Nicky and Lester cases in one confession and restores the building - the season's real prize.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Cinda at the gates",
+          "text": "Months later the trio listens to a new Cinda Canning podcast, then finds Cinda herself collapsing dead-eyed at the Arconia gates.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The launchpad: turns the trio's oldest professional enemy into their next possible victim on their own doorstep.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Arconia is saved and the mayor is in prison. Then the trio finds their long-time rival Cinda Canning dying at the building's front gates.",
+        "questions": [
+          "Who attacked Cinda, and does she survive?",
+          "Why did she come to the Arconia after years of enmity?",
+          "Is her final podcast a taunt, a confession, or the bait for the next case?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Charles-Haden Savage",
+          "line": "Ex-Brazzos actor and podcaster; slept with mob widow Sofia mid-case and is quietly ageing into his last chapter."
+        },
+        {
+          "name": "Oliver Putnam",
+          "line": "Broadway director married to Loretta, still directing the trio's investigations as if they were plays."
+        },
+        {
+          "name": "Mabel Mora",
+          "line": "Podcaster and investigator, freshly reconciled with her long-estranged childhood friend Althea."
+        },
+        {
+          "name": "Loretta Durkin",
+          "line": "Oliver's wife; her Los Angeles apartment burned down, bringing her back to New York for good."
+        },
+        {
+          "name": "Cinda Canning",
+          "line": "True-crime podcast queen and professional rival of the trio; found dying at the Arconia gates in the season's final beat."
+        },
+        {
+          "name": "Sofia Caccimelio",
+          "line": "Widow of murdered mobster Nicky; inherits his fortune and departs for a new life with Lester's widow Lorraine."
+        },
+        {
+          "name": "Detective Williams",
+          "line": "NYPD ally who helped the trio thread the casino case around the corrupt mayor's office."
+        }
+      ]
+    }
+  }
+}

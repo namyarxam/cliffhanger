@@ -1,0 +1,109 @@
+{
+  "slug": "heroes",
+  "generatedFor": "Heroes",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Powers awaken",
+          "text": "Ordinary people worldwide awaken to abilities. Nurse Peter dreams of exploding above New York; office worker Hiro teleports from Tokyo; and a serial killer is stalking the powered.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the world, the two POV heroes who carry the finale, and the unseen threat that everything else orbits.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Save the cheerleader",
+          "text": "A future Hiro appears to Peter with a warning: save the cheerleader, save the world. Peter rescues Claire—an indestructible teen—from the killer Sylar at her Homecoming.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Locks Peter, Claire, and Sylar into one causal chain and sets the season's mission statement.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Sylar unmasked",
+          "text": "The killer is Gabriel Gray, a watchmaker who murders the powered to cut out and steal their abilities. Briefly caged by the Company, he breaks free.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Gives the antagonist a name, method, and freedom heading into the back half.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Bennet's double life",
+          "text": "Claire's father Bennet is exposed as a Company operative, given her as an infant on the condition he return her once her powers surfaced. He chooses her over the Company.",
+          "anchorEpisode": 17,
+          "whyLoadBearing": "Turns a villain into an ally and reframes the whole season's surveillance thread as a father protecting his daughter.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Linderman's design",
+          "text": "The Vegas kingpin Linderman is orchestrating everything: rig Nathan's election, then let Peter's atomic blast level New York and reshape society. A painting shows Nathan as future President.",
+          "anchorEpisode": 19,
+          "whyLoadBearing": "Reveals the season's engine—the explosion isn't an accident, it's a plan—and pulls Nathan's political arc into the main plot.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The ruined future",
+          "text": "Hiro and Ando jump five years forward to a New York in ashes, ruled by Sylar wearing Nathan's face and hunting the powered as terrorists. Hiro returns convinced he must kill Sylar.",
+          "anchorEpisode": 20,
+          "whyLoadBearing": "Shows what losing costs, and commits Hiro to the swordsman path that drives the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Above Manhattan",
+          "text": "Peter absorbs Ted's radiation and becomes the walking bomb the visions foretold. Hiro impales Sylar and vanishes to feudal Japan; Nathan flies Peter high above the city to detonate.",
+          "anchorEpisode": 23,
+          "whyLoadBearing": "Converges every thread—Peter's power, Hiro's oath, Nathan's flight, Linderman's design—into the final image the reader is walking back into.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Peter is airborne in Nathan's arms, seconds from detonating over Manhattan. Sylar lies impaled but unseen, and Hiro has disappeared into 1671 Japan.",
+        "questions": [
+          "Can Nathan carry his brother high enough for either of them to survive?",
+          "Is Sylar actually dead, or did he crawl away from the sword?",
+          "How does Hiro find his way home from feudal Japan?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Peter Petrelli",
+          "line": "The nurse who absorbs any ability he stands near; airborne over Manhattan, radioactive and moments from detonating."
+        },
+        {
+          "name": "Nathan Petrelli",
+          "line": "Peter's brother, a newly elected congressman who can fly; flying his exploding sibling up and away from the city."
+        },
+        {
+          "name": "Hiro Nakamura",
+          "line": "Tokyo office worker who can freeze time and teleport; vanished to 1671 Japan after impaling Sylar with a katana."
+        },
+        {
+          "name": "Sylar (Gabriel Gray)",
+          "line": "The season's killer, a watchmaker who takes other heroes' powers by cutting into their heads; run through and left behind at Kirby Plaza."
+        },
+        {
+          "name": "Claire Bennet",
+          "line": "The indestructible cheerleader Peter was sent to save; now living with her biological grandmother Angela after Bennet sent her into hiding."
+        },
+        {
+          "name": "Noah Bennet",
+          "line": "Claire's adoptive father, the Company operative who broke with them to keep her safe."
+        },
+        {
+          "name": "Mohinder Suresh",
+          "line": "Geneticist continuing his late father's hunt for the powered; now caring for the orphaned tracker Molly."
+        },
+        {
+          "name": "Matt Parkman",
+          "line": "Telepathic ex-cop who joined the heroes; left bleeding out from four bullets in the final confrontation."
+        },
+        {
+          "name": "Niki Sanders",
+          "line": "Former host of the murderous alter-ego Jessica; reunited with husband D.L. and son Micah after Linderman's death."
+        },
+        {
+          "name": "Ando Masahashi",
+          "line": "Hiro's best friend and translator; sent home to Japan for safety before Hiro faced Sylar alone."
+        }
+      ]
+    }
+  }
+}

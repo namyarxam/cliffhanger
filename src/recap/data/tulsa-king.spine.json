@@ -1,0 +1,311 @@
+{
+  "slug": "tulsa-king",
+  "generatedFor": "Tulsa King",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Exiled to Tulsa",
+          "text": "Released after 25 years of loyal silence, Invernizzi capo Dwight Manfredi is exiled to Tulsa. He extorts a weed dispensary owner, Bodhi, and hires cabbie Tyson as his driver.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the whole premise: why he's in Tulsa, what he first grabs, and the two locals who become the crew.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A new crew, a wrong bed",
+          "text": "Dwight partners with dealer Bodhi and bar owner Mitch to launder cash and sell nitrous. His one-night stand from a hotel bar turns out to be ATF agent Stacy Beale.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces the Bodhi/Mitch operation and plants the Stacy relationship that becomes the season's trap.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The failed hit",
+          "text": "Ranch hand Armand tries to shoot Dwight, then confesses the Invernizzis tried to have him killed in prison. Dwight spares him and takes a monthly cut.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "First proof that New York wants him dead, and it recruits Armand — who is central next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Brooklyn payback",
+          "text": "At his brother's funeral Dwight learns his daughter Tina was raped by Chickie's soldier Nico during his sentence. He beats Nico to death in front of Chickie and Vince.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Publicly humiliates Chickie in his own city; the beat that guarantees the New York war is personal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The old king dies",
+          "text": "Biker boss Waltrip presses Dwight for a cut and strangles ATF informant Roxy. In New York, Chickie drowns his ailing father Pete in the bathtub and takes over the family.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The mob succession that reshapes S2 — Chickie is now boss, not son — plus the Waltrip pressure that boils over next.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Waltrip falls, Goodie stays",
+          "text": "Dwight kills Waltrip in a shootout at Mitch's bar. When Chickie flies to Tulsa to plan revenge, Dwight faces him down and keeps Chickie's soldier Goodie as his own.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Closes the biker plot inside the season and, more importantly, defects Goodie — Dwight's number two going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The million-dollar trap",
+          "text": "Months later Dwight has opened his casino and reconciled with Tina. Outside the opening, Stacy has him arrested for bribery — evidence, the million-dollar flash drive he gave her.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The cliffhanger itself: the personal betrayal and the federal charge that S2 opens on.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Dwight is in handcuffs outside his own casino, betrayed by the ATF agent he slept with, using the flash drive he gave her as evidence. Back in New York, Chickie now runs the Invernizzi family and wants him dead.",
+        "questions": [
+          "Can Dwight beat a federal bribery charge without the family above him to shield him?",
+          "What will boss Chickie do now that Dwight has openly humiliated him in his own city?",
+          "Is Stacy done with him, or is the arrest just the next round?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Dwight \"The General\" Manfredi",
+          "line": "Invernizzi capo exiled to Tulsa; built a small weed and casino operation before being arrested for bribery at the casino opening."
+        },
+        {
+          "name": "Tyson Mitchell",
+          "line": "The young Tulsa cabbie Dwight recruited as his driver, now a hooked-in soldier wearing Pete Invernizzi's old ring."
+        },
+        {
+          "name": "Bodhi (Lawrence Geigerman)",
+          "line": "Dispensary owner Dwight extorted; laundry man, hacker, and reluctant partner in the weed racket."
+        },
+        {
+          "name": "Mitch Keller",
+          "line": "Ex-con owner of the Bred 2 Buck; Dwight's most trusted local and co-owner of the new casino."
+        },
+        {
+          "name": "Stacy Beale",
+          "line": "ATF agent who slept with Dwight, warned him off, then arrested him with the flash drive he had given her."
+        },
+        {
+          "name": "Armand Truisi",
+          "line": "Former New York wiseguy hiding in Tulsa; Dwight spared him and now takes a monthly cut."
+        },
+        {
+          "name": "Goodie Carangi",
+          "line": "Long-serving Invernizzi soldier who defected during Chickie's Tulsa visit and is now Dwight's number two."
+        },
+        {
+          "name": "Chickie Invernizzi",
+          "line": "Pete's son who drowned his father in the bath to take the family; publicly humiliated by Dwight and wants him dead."
+        },
+        {
+          "name": "Tina Manfredi",
+          "line": "Dwight's estranged daughter in New York, reconciled with him after Nico's death."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Bail and a new enemy",
+          "text": "Tina posts $300,000 bail and Dwight takes on Mitch's cousin Bigfoot as his bodyguard. Weed baron Cal Thresher summons Kansas City boss Bill Bevilaqua to push Dwight out of Tulsa.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the two figures — Thresher and Bevilaqua — whose alliance drives the whole season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Not guilty",
+          "text": "Representing himself, Dwight uses his affair with Stacy to argue the flash drive was a gift, not a bribe. He is acquitted and openly claims Tulsa as his own.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Closes the season's opening threat and frees Dwight to fight two fronts at once.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The failed ambush",
+          "text": "Chickie has Goodie lure Dwight into a hit set up by Bevilaqua's man Carl. Goodie stabs Carl instead, and the corpse on Bevilaqua's doorstep begins the Kansas City war.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Proves Goodie's loyalty and locks in the KC war that dominates the rest of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Armand flips",
+          "text": "Broke and divorced, Armand takes Thresher's cash and starts feeding him intel on Dwight. On tribal land, Dwight partners with elder Medhat to build a solar and weed farm.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Plants the traitor inside the crew and establishes the tribal-land operation Thresher will target.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Navigator bomb",
+          "text": "Thresher's Chinese partner Ming rigs a bomb in Tyson's father's new SUV meant for Dwight, and it maims the old man. Tyson retaliates on Bevilaqua's man Vic, escalating the war.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The escalation that misdirects Dwight onto Bevilaqua and exposes the real hand — Ming — behind the moves.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ming exposed, Ming dead",
+          "text": "Bevilaqua's men kill Jimmy the Creek at the weed shop. Margaret reveals Ming set the bomb, not Bevilaqua — and Dwight allies with Bevilaqua to ambush and kill Ming.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The pivot that turns Bevilaqua from enemy to partner and sets up the S3 status quo.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Coup and abduction",
+          "text": "Vince learns Chickie drowned his own father and deposes him. Bevilaqua then shoots Chickie for Dwight — but masked gunmen ambush Dwight at Margaret's ranch and drag him away.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Removes the season's two overhangs (Chickie in New York, Ming in Tulsa) and drops the abduction hook S3 opens on.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Dwight has crushed Ming, cleared Chickie out of New York with Bevilaqua's help, and been handed peace on his own terms — only to be seized at gunpoint by unknown masked men at Margaret's ranch. The FBI has just opened a file on him.",
+        "questions": [
+          "Who took Dwight and what do they want with him?",
+          "With Vince now running the family in New York, is the Invernizzi threat over or just changing shape?",
+          "Can the alliance with Bevilaqua hold without Chickie or Ming as a common enemy?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Dwight \"The General\" Manfredi",
+          "line": "Tulsa boss running a weed farm, casino, and car dealership; just abducted at gunpoint at his lover's ranch."
+        },
+        {
+          "name": "Tyson Mitchell",
+          "line": "Dwight's driver-turned-soldier; his father was crippled by the Navigator bomb and Tyson triggered the war with Kansas City."
+        },
+        {
+          "name": "Bodhi (Lawrence Geigerman)",
+          "line": "Weed shop and books man; Dwight's laundry, hacker, and grow partner."
+        },
+        {
+          "name": "Mitch Keller",
+          "line": "Bred 2 Buck owner and Dwight's most trusted local; just bought Donnie's car dealership."
+        },
+        {
+          "name": "Bigfoot",
+          "line": "Mitch's giant cousin and Dwight's bodyguard, hired at the start of the season."
+        },
+        {
+          "name": "Goodie Carangi",
+          "line": "Old Invernizzi soldier fully in Dwight's camp; killed Carl to prove it and is now his consigliere."
+        },
+        {
+          "name": "Armand Truisi",
+          "line": "Dwight's crew member who was bought by Thresher then flipped back — Dwight used him to lure Ming and forgave him."
+        },
+        {
+          "name": "Margaret Devereaux",
+          "line": "Horse rancher and Dwight's lover; sold 49% of her ranch to Thresher and helped Dwight see Ming as the real enemy."
+        },
+        {
+          "name": "Bill Bevilaqua",
+          "line": "Kansas City mob boss; from rival to reluctant partner, shot Chickie for Dwight in exchange for 50% of the weed farm."
+        },
+        {
+          "name": "Cal Thresher",
+          "line": "Weed baron whose empire Ming stole from him; still in Tulsa, still hostile, still Margaret's part-owner."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · The FBI's leash",
+          "text": "The abductor turns out to be FBI Agent Musso. He tells Dwight he now works for him — help entrap suspected terrorist Dexter Deacon, or the whole Tulsa crew goes down.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The season's controlling relationship: everything Dwight does is now shadowed by the fed holding evidence over him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · New York wants in",
+          "text": "In New York, senior mafioso Ray Renzetti offers Dwight a promotion and, when refused, demands a cut of Tulsa. Dwight refuses him too.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Renzetti — the New York threat that replaces Chickie and pays off in the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The bourbon war",
+          "text": "Cleo Montague brings Mitch into her father's distillery, hiding a $150M cache of 50-year bourbon. Rival Jeremiah Dunmire has Theodore murdered, and Dwight takes over the operation.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Names the season's prize and its main antagonist; without this, the rest of S3 is unmotivated.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Cole steals the 50",
+          "text": "The Dunmires strike back: Cole abducts Tyson at a strip club and beats him until he gives up where the 50-year bourbon is hidden. Dwight recovers it in a hostage swap.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The first full round of the Dunmire feud and Tyson's most punishing beat of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Distillery shut, Armand dead",
+          "text": "Dunmire uses AG Sackrider to shut down the distillery, and Bevilaqua — suspecting Dwight is now a fed — is arrested by federal agents. Armand, undone by guilt, kills himself.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The mid-season collapse: Dwight loses his legal cover, his mob ally, and the man he'd already forgiven once.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Bomb at the campaign launch",
+          "text": "Dwight uses a rigged gambling debt to blackmail Sackrider into restoring the licence. Deacon flips to Dunmire and bombs Thresher's campaign gala; Dwight evacuates it in time.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Reopens the distillery, closes the Deacon plot, and forces Dwight to save Thresher's political run in the process.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Dunmire burns, licence in hand",
+          "text": "Renzetti's hitman Russell defects to Dwight rather than kill him. Dunmire kidnaps Joanne; Dwight rescues her and burns Dunmire alive, and Musso hands him a federal liquor licence.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Resolves Dunmire and Musso, and leaves Renzetti — now double-crossed — as the live threat going forward.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Dwight has killed Dunmire, freed Joanne, and walked away with a federal liquor licence and the intel Musso wanted. But Ray Renzetti in New York now knows the hitman he sent has switched sides, and Bevilaqua is still in a cell over Dwight's FBI arrangement.",
+        "questions": [
+          "What will Renzetti do now that his hitman Russell has openly defected to Dwight?",
+          "With Deacon dead and buried in a Montague crypt, will Musso really leave Dwight alone or come back for more?",
+          "Can Bevilaqua, once freed, forgive the arrest that came out of Dwight working for a fed?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Dwight \"The General\" Manfredi",
+          "line": "Tulsa boss now running a legally licensed distillery; still on Musso's leash and still refusing to answer to New York."
+        },
+        {
+          "name": "Tyson Mitchell",
+          "line": "Dwight's lieutenant; abducted and beaten by Cole for the bourbon's location, now selling ecstasy on the side with Spence."
+        },
+        {
+          "name": "Bodhi (Lawrence Geigerman)",
+          "line": "Weed store manager; also cooks the ecstasy Tyson moves through the club."
+        },
+        {
+          "name": "Mitch Keller",
+          "line": "Bar owner and Dwight's right hand; together with Cleo Montague, running the bourbon operation."
+        },
+        {
+          "name": "Bigfoot",
+          "line": "Dwight's bodyguard; accidentally killed the corrupt inspector Leery during the distillery launch."
+        },
+        {
+          "name": "Goodie Carangi",
+          "line": "Old-school consigliere; still Dwight's number two on the mob side."
+        },
+        {
+          "name": "Joanne Manfredi",
+          "line": "Dwight's sister; runs the weed store and was just rescued from Dunmire's men."
+        },
+        {
+          "name": "Margaret Devereaux",
+          "line": "Dwight's on-and-off partner, now working openly on Thresher's gubernatorial campaign."
+        },
+        {
+          "name": "Agent Musso",
+          "line": "FBI handler who abducted Dwight, ran him against Deacon, and paid him off with a federal liquor licence."
+        },
+        {
+          "name": "Ray Renzetti",
+          "line": "Senior New York mafioso who wants a piece of Tulsa and just failed to have Dwight killed."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,489 @@
+{
+  "slug": "izombie",
+  "generatedFor": "iZombie",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Boat Party",
+          "text": "A boat party turns Liv Moore into a zombie; she abandons her medical career and her engagement to Major, and hides at the Seattle morgue for a steady brain supply.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the entire premise — Liv's cover, her losses, and why she works homicide cases.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Ravi Allies",
+          "text": "Her boss Ravi discovers her secret, becomes her one confidant, and starts hunting a cure using tainted Utopium recovered from the boat party.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Ravi's cure work is the engine of every future season; his loyalty is the show's spine.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Blaine's Empire",
+          "text": "Blaine DeBeers — the zombie who turned Liv — builds a brain-dealing empire, killing and turning people to keep it stocked.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Introduces the show's main antagonist and the brain-market economy that persists for years.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Lowell Dies",
+          "text": "Liv falls for fellow zombie Lowell; when Lowell tries to assassinate Blaine on her behalf, Blaine shoots him dead in front of her.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Hardens Liv against Blaine and ends her one shot at a same-kind relationship until Major.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Major Committed",
+          "text": "Chasing the missing kids Blaine has been turning, Major is dismissed as insane and committed; another patient hands him proof zombies exist.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Pushes Major from grief into becoming a zombie hunter — his S2 role starts here.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Max Rager Exposed",
+          "text": "A reporter's murder leads Liv to Max Rager: their drink mixed with tainted Utopium at the boat party is what created zombies, and CEO Vaughn Du Clark knows it.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Names the real villain, makes Vaughn the S2 boss, and sets Liv's blood on his kill list.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Finale",
+          "text": "Liv turns dying Major into a zombie to save him, then cures him with Ravi's last dose; she cures Blaine too, and Peyton flees after seeing Liv feral.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Resets every core relationship for S2: Blaine cured, Major cured, Peyton gone, cure supply exhausted.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Blaine's brain empire is a burning ruin and both he and Major are human again, but Peyton has fled after seeing Liv feed, and Max Rager knows exactly what Liv is.",
+        "questions": [
+          "Will Peyton ever forgive Liv and come home?",
+          "Can Ravi remake the cure with no tainted Utopium left?",
+          "How does Vaughn Du Clark come for Liv now that he knows?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Liv Moore",
+          "line": "Former medical resident turned zombie; works at the morgue as Clive's 'psychic' case consultant."
+        },
+        {
+          "name": "Ravi",
+          "line": "Medical examiner and Liv's only ally; quietly building a zombie cure."
+        },
+        {
+          "name": "Clive Babineaux",
+          "line": "Homicide detective who partners with Liv on cases; still does not know she is a zombie."
+        },
+        {
+          "name": "Major",
+          "line": "Liv's ex-fiancé; briefly zombified then cured, now hardened after learning zombies are real."
+        },
+        {
+          "name": "Blaine DeBeers",
+          "line": "The zombie who turned Liv; ran the brain empire, now human after Liv cured him and his shop was destroyed."
+        },
+        {
+          "name": "Peyton",
+          "line": "Liv's best friend and Seattle ADA; discovered Liv is a zombie and abandoned her in horror."
+        },
+        {
+          "name": "Vaughn Du Clark",
+          "line": "Max Rager CEO; knows his drink plus Utopium is the source of the zombie plague and wants Liv silenced."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Three Months On",
+          "text": "Blaine now runs a funeral home fronting a brain-and-Utopium business, while Vaughn blackmails Major into being Max Rager's private zombie killer.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the new equilibrium: Blaine as merchant, Major as hunter, both leashed to Vaughn.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Peyton Returns",
+          "text": "Peyton returns to lead a task force against Utopium kingpin Mr. Boss; Blaine turns informant against Boss and the two grow close.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Restarts Peyton's story, plants the Blaine/Peyton romance, and lights the Boss/Blaine war fuse.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Gilda the Spy",
+          "text": "Vaughn's daughter Rita infiltrates Liv's life posing as roommate 'Gilda' and secretly sleeps with Major to keep tabs on both of them.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Explains how Max Rager stays a step ahead all season and poisons Liv/Major's relationship.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Cure and Freezer",
+          "text": "Ravi cracks a working cure that only lasts unless boosted; Major secretly freezes the zombies Vaughn orders him to kill rather than killing them.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Explains why the 'missing persons' pile up (the Chaos Killer case) and why cured zombies later revert.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Blaine Killed and Cured",
+          "text": "Mr. Boss murders Blaine, who resurrects as a zombie; Ravi's new emergency cure works but wipes his memory.",
+          "anchorEpisode": 14,
+          "whyLoadBearing": "Sets up Blaine's amnesiac reinvention with Peyton and the cure's dangerous side effects.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Chaos Killer Arrested",
+          "text": "FBI agent Dale Bozzio identifies Major as the 'Chaos Killer' behind Seattle's missing-persons cases and arrests him; Liv reveals herself to Clive to get Major released.",
+          "anchorEpisode": 18,
+          "whyLoadBearing": "Breaks the biggest secret of the show: Clive now knows, permanently changing every case.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Vivian's Zombie Army",
+          "text": "At Vaughn's party, tainted Utopium and Super Max trigger a mass outbreak; Vaughn dies, and Vivian Stoll's arriving mercenary company turns out to be an all-zombie army.",
+          "anchorEpisode": 19,
+          "whyLoadBearing": "Introduces Fillmore-Graves and the zombie-haven plan that drives all of S3.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "A mass zombie outbreak just tore through Max Rager, and Vivian Stoll's arriving mercenaries have revealed themselves as an all-zombie army planning to make Seattle a zombie haven.",
+        "questions": [
+          "What does Vivian Stoll actually intend to do with a city full of zombies?",
+          "Now that Peyton, Clive, and Major all know Liv's secret, how long before the world does?",
+          "Can amnesiac Blaine be trusted with anything, and what happens when he remembers?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Liv Moore",
+          "line": "Zombie morgue consultant; has now revealed herself to Clive to save Major."
+        },
+        {
+          "name": "Ravi",
+          "line": "Has a temporary cure but no supply of tainted Utopium to make more."
+        },
+        {
+          "name": "Clive Babineaux",
+          "line": "Finally knows Liv is a zombie; ally in on the whole secret."
+        },
+        {
+          "name": "Major",
+          "line": "Exposed as the Chaos Killer, freed after Liv outed herself to Clive; still human and estranged from Liv."
+        },
+        {
+          "name": "Blaine DeBeers",
+          "line": "Killed by Mr. Boss, resurrected as a zombie, then took Ravi's emergency cure; now human with heavy memory loss."
+        },
+        {
+          "name": "Peyton",
+          "line": "Seattle ADA leading the anti-Utopium task force; now knows about zombies and is romantically drawn to Blaine."
+        },
+        {
+          "name": "Vivian Stoll",
+          "line": "New owner of Max Rager; leader of the Fillmore-Graves zombie mercenary company."
+        },
+        {
+          "name": "Dale Bozzio",
+          "line": "FBI agent, Clive's girlfriend, and the one who cracked the Chaos Killer case."
+        },
+        {
+          "name": "Mr. Boss",
+          "line": "Utopium kingpin who murdered Blaine over informant leaks; still at large and hunting his rivals."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Fillmore-Graves Drills",
+          "text": "Vivian bombs Max Rager to bury the outbreak evidence, and her Fillmore-Graves company drills as a zombie army preparing for 'Discovery Day'.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Frames the season's central question: when and how zombies go public.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Harley Kills Wally",
+          "text": "Anti-zombie militant Harley Johns starts hunting zombies; his group murders Clive's neighbours, a family whose son Wally has just turned.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces the human-side threat and the Wally case that drives Clive's whole season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Temporary Cure",
+          "text": "Ravi confirms the cure only works briefly — zombies revert without booster shots — and starts developing a proper vaccine.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Explains why cures keep failing and sets up his self-experiment at season's end.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Blaine's Lie",
+          "text": "Blaine confesses his amnesia was faked to win Peyton; she pulls away, gutted, and their relationship collapses.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Ends Blaine's redemption arc and returns him to the merchant/villain lane he occupies afterward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Chase Takes Over",
+          "text": "Vivian is assassinated in a helicopter explosion; her brother-in-law Chase Graves takes command of Fillmore-Graves and races toward Discovery Day.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Swaps out the S2-era zombie leader for the harder-line commander who runs the next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Carey Gold's Plot",
+          "text": "Clive and Liv trace Wally's murder and a lethal flu outbreak to FG exec Carey Gold, who engineered both to force Discovery Day; Chase kills her but keeps her plan.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Solves every season mystery in one beat and locks Chase into shipping the endgame anyway.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Discovery Day",
+          "text": "Fake flu vaccines turn thousands into zombies; on-air weatherman Johnny Frost — now zombie — reveals zombies to the world; Ravi tests his vaccine by having Liv scratch him.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Zombies going public is the single hinge point of the show — every later season is post-Discovery.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Zombies are public knowledge, Fillmore-Graves is mediating a fragile new peace, and Ravi has just been scratched by Liv to test whether his experimental vaccine actually holds.",
+        "questions": [
+          "Did Ravi's vaccine work, or is he about to turn?",
+          "How will humans and zombies actually share Seattle now the secret is out?",
+          "What is Chase Graves' long-term plan now that he has to run a city, not fake a war?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Liv Moore",
+          "line": "Still a zombie working at the morgue; now solving cases in a world that knows zombies exist."
+        },
+        {
+          "name": "Ravi",
+          "line": "Just injected his experimental vaccine and had Liv scratch him to test it."
+        },
+        {
+          "name": "Clive Babineaux",
+          "line": "Homicide detective; devastated by the Wally murder and dating FBI agent Dale, who was turned zombie by the fake vaccine."
+        },
+        {
+          "name": "Major",
+          "line": "Took Ravi's cure and became human, then voluntarily turned zombie again to rejoin Fillmore-Graves."
+        },
+        {
+          "name": "Blaine DeBeers",
+          "line": "Human, memories fully back, running his funeral-home brain business; abandoned by Peyton after his lie came out."
+        },
+        {
+          "name": "Peyton",
+          "line": "Chief of staff to zombie Mayor Baracus; still tied into the city's zombie politics."
+        },
+        {
+          "name": "Chase Graves",
+          "line": "Vivian's brother-in-law, now commander of Fillmore-Graves; killed Carey Gold but executed her Discovery Day plan anyway."
+        },
+        {
+          "name": "Dale Bozzio",
+          "line": "FBI agent, Clive's girlfriend, turned zombie by the FG flu vaccine."
+        },
+        {
+          "name": "Angus DeBeers",
+          "line": "Blaine's estranged zombie father; imprisoned by Blaine at the bottom of a well."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · The Wall",
+          "text": "The US Government walls off 'New Seattle' under Chase Graves; Liv joins Mama Leone's underground railroad smuggling humans in and out.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the closed-city status quo and Liv's smuggler role that becomes her identity all season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Brother Love Rises",
+          "text": "Angus escapes Blaine's well, kills a priest and takes his robes, then builds a violent zombie cult under the name 'Brother Love'.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the fanatic faction whose mass exodus triggers the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Renegade Executed",
+          "text": "Chase captures and publicly executes Mama Leone; Liv secretly takes over as the new Renegade, with filmmaker Levon documenting her work.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Turns Liv into the season's symbolic leader and puts her on Chase's kill list.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The Nuke Plot",
+          "text": "Major, running FG's teen zombie unit, is infiltrated by anti-zombie agent Russ Roche, part of an outside plot to nuke Seattle.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Sets up the existential nuke threat that shadows the finale and continues past it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Isobel's Cure",
+          "text": "Isobel — a young zombie Liv smuggled in, dying of Freylich Syndrome — dies; Ravi tests her postmortem brain and discovers it contains a true zombie cure.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "First real cure of the series; every future political and medical fight orbits it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Major Kills Chase",
+          "text": "As Chase prepares to execute Liv and Levon at a public execution, Major breaks in, kills Chase, and takes command of Fillmore-Graves.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Puts Major in charge of the zombie military — his role for the rest of the show.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Massacre and Deal",
+          "text": "Brother Love leads a thousand zombies over the wall to slaughter by the US Army; the government cuts brain shipments, forcing Major to strike a smuggling deal with Blaine.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Creates the brain-supply crisis and the Blaine/Major alliance that defines the next season.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Official brain shipments to New Seattle are dead. Major now runs Fillmore-Graves and is secretly buying smuggled brains from Blaine to keep zombies fed, while Liv, publicly outed as Renegade, keeps her humans-through-the-wall operation running.",
+        "questions": [
+          "How long can Major hide Blaine's smuggled brain supply from a starving city?",
+          "Now that Ravi has a real cure, who gets it, and does that make zombies safer or more hunted?",
+          "Is the government done considering the nuclear option, or is that threat still coming?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Liv Moore",
+          "line": "Publicly known as Renegade; runs the human-smuggling operation and is a symbol of resistance."
+        },
+        {
+          "name": "Major",
+          "line": "New commander of Fillmore-Graves after killing Chase; secretly dependent on Blaine to feed the city."
+        },
+        {
+          "name": "Ravi",
+          "line": "Has a true zombie cure at last — from Isobel's brain — but relapses into zombie form 72 hours a month as a side effect of his own vaccine."
+        },
+        {
+          "name": "Clive Babineaux",
+          "line": "Homicide detective; just married Dale, who Liv cured with the first dose of Isobel's brain."
+        },
+        {
+          "name": "Blaine DeBeers",
+          "line": "Brain-market kingpin of New Seattle; has just cut a deal with Major to smuggle brains into the walled city."
+        },
+        {
+          "name": "Peyton",
+          "line": "Left New Seattle for Washington DC as acting mayor, disowned by her family."
+        },
+        {
+          "name": "Dale Bozzio",
+          "line": "Cured by Liv on her wedding day to Clive; human again."
+        },
+        {
+          "name": "Don E",
+          "line": "Blaine's chief lieutenant, running the Scratching Post and Blaine's operations day-to-day."
+        },
+        {
+          "name": "Levon Patch",
+          "line": "Filmmaker and Liv's boyfriend; falsely confessed to being Renegade to save her."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Blaine Controls the Supply",
+          "text": "Blaine's smuggling deal with Major makes him the sole supplier of brains to New Seattle, while anti-zombie extremists — the 'Dead Enders' — begin suicide attacks on FG checkpoints.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Locks in the season's power geometry: Blaine on top, FG under attack, war brewing.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The Cure Race",
+          "text": "CDC scientist Charli, sent to help Ravi, reveals she has also discovered the cure — but warns that mass-producing it means Freylich teens get harvested for their brains.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the Freylich harvest concept that Blaine builds his season plot around.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Supremacists and Enzo",
+          "text": "Fillmore-Graves splinters: Commander Enzo defects to zombie supremacists led by Liv's estranged father Martin, who created the original zombifying formula.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Names the season's zombie-side antagonists and ties them personally to Liv.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Freylich Harvest",
+          "text": "Blaine starts contracting Freylich teens for their postmortem brains, imprisons journalist Al when she exposes him, and murders Don E's girlfriend Darcy.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Locks in Blaine's villainy and plants the personal grievance that gets him killed.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Peyton's Show Saves Seattle",
+          "text": "As Washington debates nuking Seattle, a US committee chair sees her grandson watching Peyton's zombie-friendly kids' show and casts the deciding vote to keep brain shipments coming.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Removes the nuclear threat and sets up the Zombie Island resolution.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Blaine in the Well",
+          "text": "Peyton, shot fighting Blaine's operation, is turned zombie by Blaine to save her life; on learning Blaine killed Darcy, Don E and Liv push him into the same well he trapped his father in.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Removes the show's oldest antagonist and completes his father-parallel arc.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Ten Years Later",
+          "text": "Major fakes taking the cure on camera to end the human-zombie war. A decade later, he and Liv raise children on Zombie Island and offer the cure — and their pseudo-immortality — to their old friends.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Series resolution: coexistence is achieved and the core group choose their own version of forever.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The war is over: Blaine is dead, Enzo is dead, the cure is real, and ten years on Liv and Major have found a way for their found family to stay together on Zombie Island.",
+        "questions": [
+          "Does human-zombie coexistence actually hold once the founding leaders are gone?",
+          "Will Peyton, Ravi, Clive and Dale take Liv and Major up on the offer of pseudo-immortality?",
+          "What happens to the Freylich kids now that their brains remain the world's only source of the cure?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Liv Moore",
+          "line": "Zombie; raising children with Major on Zombie Island a decade after the war ended."
+        },
+        {
+          "name": "Major",
+          "line": "Still a zombie — his on-camera 'cure' was Max Rager — living with Liv on Zombie Island."
+        },
+        {
+          "name": "Ravi",
+          "line": "Human, mass-producing the cure and now leading the CDC."
+        },
+        {
+          "name": "Clive Babineaux",
+          "line": "Human; married to Dale and raising Michelle's son with her in San Francisco."
+        },
+        {
+          "name": "Peyton",
+          "line": "Turned zombie by Blaine to save her life; now an attorney in Atlanta."
+        },
+        {
+          "name": "Dale Bozzio",
+          "line": "Cured, married to Clive, raising their adopted son."
+        },
+        {
+          "name": "Don E",
+          "line": "Blaine's former lieutenant; killed Blaine for murdering Darcy and inherited what remained of his business."
+        },
+        {
+          "name": "Blaine DeBeers",
+          "line": "Dead — pushed by Don E and Liv into the well he used on his father."
+        }
+      ]
+    }
+  }
+}

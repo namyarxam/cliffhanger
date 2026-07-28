@@ -1,0 +1,793 @@
+{
+  "slug": "my-hero-academia",
+  "generatedFor": "My Hero Academia",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The Sludge Villain",
+          "text": "Quirkless dreamer Izuku Midoriya meets his idol All Might mid-arrest of a sludge villain; the escaped villain later attacks Izuku's childhood bully Bakugo.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the accidental encounter that puts Izuku on All Might's radar.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A Quirk Passed Down",
+          "text": "All Might reveals his true frail form and shrinking daily power limit, then chooses Izuku as heir of his Quirk One For All after seeing him charge in to save Bakugo.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The transfer of One For All is the show's entire premise going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Class 1-A",
+          "text": "After months of secret training, Izuku scrapes into U.A. High's hero course under teacher Aizawa and joins Class 1-A alongside a furious Bakugo.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Establishes the school setting and roster the entire series lives in.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Battle Trial",
+          "text": "In the first Hero Battle, Izuku outwits Bakugo with One For All and declares he is no longer the powerless 'Deku' Bakugo bullied for years.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Locks in the Izuku–Bakugo rivalry that drives most of Izuku's arc.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · USJ Attack",
+          "text": "During field training, the newly formed League of Villains ambush Class 1-A; their leader Shigaraki unleashes a Multi-Quirk monster called Nomu built to kill All Might.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Introduces the League, Shigaraki and the Nomu weapon that structures the show's threat.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · All Might's Toll",
+          "text": "All Might barely defeats Nomu, but Izuku's counterattack lets him force Shigaraki to retreat; the fight burns most of All Might's remaining power, cutting him to an hour a day.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Marks the visible beginning of All Might's decline that the whole series pivots on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Master Watches",
+          "text": "Shigaraki confers with an unseen master and vows the fight with heroes has only started; a shadowed figure stares down at the city.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Plants the ultimate villain hiding behind Shigaraki.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The League has been repelled but not caught, All Might's power is nearly spent, and Shigaraki is being coached by an unseen master with plans far bigger than one school raid.",
+        "questions": [
+          "Who is Shigaraki's master, and how much bigger is his plan than USJ?",
+          "How long can All Might keep pretending he can still be the Symbol of Peace?",
+          "Can Izuku ever use One For All without shattering his own bones?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Izuku Midoriya (Deku)",
+          "line": "Formerly Quirkless boy secretly gifted All Might's power; new Class 1-A student who breaks his body every time he uses it."
+        },
+        {
+          "name": "All Might",
+          "line": "World's #1 hero and Symbol of Peace, hiding a fatal wound and a shrinking time limit; secretly Izuku's mentor."
+        },
+        {
+          "name": "Katsuki Bakugo",
+          "line": "Izuku's explosive childhood bully, now his rival in Class 1-A and furious that 'Deku' suddenly has a Quirk."
+        },
+        {
+          "name": "Shota Aizawa (Eraser Head)",
+          "line": "Class 1-A's exhausted, strict homeroom teacher whose Quirk temporarily erases others' powers."
+        },
+        {
+          "name": "Ochaco Uraraka",
+          "line": "Cheerful anti-gravity classmate; Izuku's first real friend and the source of his hero name 'Deku'."
+        },
+        {
+          "name": "Tenya Ida",
+          "line": "Class 1-A's earnest engine-legged rule-keeper from a family of pro heroes."
+        },
+        {
+          "name": "Tomura Shigaraki",
+          "line": "Man-child leader of the League of Villains; his touch decays anything and he wants All Might dead."
+        },
+        {
+          "name": "Kurogiri",
+          "line": "Shigaraki's warp-gate lieutenant; the cautious, practical brains of the League."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Todoroki's Reason",
+          "text": "At U.A.'s Sports Festival, classmate Shoto Todoroki tells Izuku he refuses to use his fire half because his father Endeavor abused his mother to breed him as All Might's replacement.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Sets up the Todoroki family trauma that fuels multiple future arcs.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Fire Unleashed",
+          "text": "Izuku forces Todoroki to accept his fire in their bout; Bakugo still wins the tournament and has to be dragged to accept the trophy.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Todoroki begins healing while Bakugo's chip on his shoulder deepens.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ida's Vengeance",
+          "text": "Ida learns his hero brother Ingenium has been crippled by Hero Killer Stain, and during hero internships he secretly hunts Stain for revenge.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Sends the Hosu arc in motion and reshapes Ida.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Stain's Message",
+          "text": "In Hosu City, Izuku, Todoroki and Ida barely defeat Stain, whose ideology of purging fake heroes then goes viral and radicalises villains across Japan.",
+          "anchorEpisode": 17,
+          "whyLoadBearing": "Stain's ideology, not Stain himself, becomes the League's recruitment tool.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · All For One Named",
+          "text": "Gran Torino trains Izuku into Full Cowl, and All Might finally names his true enemy: All For One, the mastermind who created the League.",
+          "anchorEpisode": 20,
+          "whyLoadBearing": "Introduces the series-long villain by name and the framework of good vs evil Quirks.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Mall Encounter",
+          "text": "Shigaraki confronts Izuku at a shopping mall to test society's warmth, then walks away untouched; the League begins recruiting new members inspired by Stain.",
+          "anchorEpisode": 25,
+          "whyLoadBearing": "Personal target set on Izuku and shows Stain's ideology fuelling recruitment.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Groomed Heir",
+          "text": "All For One tells his followers he will personally groom Shigaraki as his successor; summer vacation begins with the League growing quietly stronger.",
+          "anchorEpisode": 25,
+          "whyLoadBearing": "Explicitly names the succession plan the villain arc will follow.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Stain's captured, but his 'purge fake heroes' creed is spreading fast, the League is recruiting off it, and Shigaraki is being groomed to lead them just as Class 1-A break for summer camp.",
+        "questions": [
+          "How does All For One plan to build Shigaraki up before All Might is fully spent?",
+          "What will the emboldened League do with all these new Stain-inspired recruits?",
+          "Can Izuku master Full Cowl before Shigaraki comes for him personally?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Shoto Todoroki",
+          "line": "Half-hot/half-cold classmate; publicly accepted his fire in the tournament but privately still estranged from his father."
+        },
+        {
+          "name": "Endeavor",
+          "line": "#2 pro hero and Shoto's abusive father; consumed by never having overtaken All Might."
+        },
+        {
+          "name": "Tenya Ida",
+          "line": "Class 1-A rep still carrying the weight of his crippled brother Ingenium's hero name and Stain's lesson about vengeance."
+        },
+        {
+          "name": "Hero Killer Stain",
+          "line": "Captured but iconic villain whose 'purge fake heroes' ideology is radicalising the underworld."
+        },
+        {
+          "name": "Gran Torino",
+          "line": "All Might's tiny, senile-seeming former teacher and a lethal veteran now training Izuku."
+        },
+        {
+          "name": "All For One",
+          "line": "All Might's ancient nemesis; alive, hidden, and now openly mentoring Shigaraki as his heir."
+        },
+        {
+          "name": "Izuku Midoriya (Deku)",
+          "line": "Controls Full Cowl at low percentages; publicly known as 'Deku' and the target of Shigaraki's curiosity."
+        },
+        {
+          "name": "Katsuki Bakugo",
+          "line": "Sports Festival champion; still resents Izuku but now respects him as a genuine rival."
+        },
+        {
+          "name": "All Might",
+          "line": "Down to about an hour of hero form per day; publicly still the Symbol of Peace and Class 1-A's teacher."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Camp Ambush",
+          "text": "The League attacks Class 1-A's summer training camp; Izuku defeats Muscular to save a boy named Kota, but the villains capture Bakugo for their recruitment pitch.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Launches the Kamino arc and puts Bakugo in Shigaraki's hands.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Rescue at Kamino",
+          "text": "Izuku leads a covert student rescue squad into Kamino Ward while pro heroes hit the League's hideout in parallel.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The two-pronged raid triggers the confrontation with All For One.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Shigaraki's Blood",
+          "text": "All Might faces All For One in public; the villain reveals Shigaraki is the grandson of All Might's own mentor, whom All For One killed and then quietly groomed the orphan.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Ties Shigaraki personally to All Might's lineage and to Nana's line.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Symbol Retires",
+          "text": "All Might musters one last 'United States of Smash' to beat All For One, then publicly points at Izuku and burns out; the Symbol of Peace is retired on live TV.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Removes hero society's central pillar — every future season plays out in the vacuum.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Dorm Life",
+          "text": "Society reels and villains grow bolder; Class 1-A moves into new on-campus dorms so U.A. can protect them and quietly hunt an internal traitor.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "New living setup for the rest of the series and quietly seeds a traitor hunt.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Bakugo Learns",
+          "text": "Izuku and Bakugo brawl in private; Bakugo pieces together that One For All is All Might's power and swears silence, becoming Izuku's uneasy rival-ally.",
+          "anchorEpisode": 23,
+          "whyLoadBearing": "Bakugo becomes the second person alive who knows the secret.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Overhaul Arrives",
+          "text": "Big Three top student Mirio starts mentoring Class 1-A, while yakuza boss Overhaul quietly approaches Shigaraki with an alliance offer.",
+          "anchorEpisode": 25,
+          "whyLoadBearing": "Sets up both the Mirio-as-candidate thread and the Overhaul arc.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "All Might is finished as a fighter and All For One is imprisoned in Tartarus, but Shigaraki now inherits the League with his master's blessing, Endeavor has been thrust into the #1 slot he isn't ready for, and yakuza Overhaul is knocking on the League's door.",
+        "questions": [
+          "What deal is Overhaul offering Shigaraki, and who profits?",
+          "Can Endeavor actually fill the role of Symbol of Peace?",
+          "How long before someone else works out that Izuku carries All Might's power?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Izuku Midoriya (Deku)",
+          "line": "Publicly gestured to as All Might's heir; now trains under a powerless All Might inside the new dorms."
+        },
+        {
+          "name": "All Might",
+          "line": "Fully burnt out and permanently in his frail form; still teaches at U.A. and coaches Izuku from the sidelines."
+        },
+        {
+          "name": "Katsuki Bakugo",
+          "line": "Rescued from the League and now the only classmate who knows One For All is All Might's Quirk."
+        },
+        {
+          "name": "Tomura Shigaraki",
+          "line": "Ascending League leader; publicly outed as the grandson of All Might's mentor and Nomu-master."
+        },
+        {
+          "name": "All For One",
+          "line": "Defeated and imprisoned in Tartarus, gleeful that Shigaraki will now evolve without his teacher."
+        },
+        {
+          "name": "Endeavor",
+          "line": "Reluctantly declared the new #1 hero after All Might's retirement, under crushing public expectation."
+        },
+        {
+          "name": "Mirio Togata",
+          "line": "Bright Big Three intern permeating through walls; now leading Class 1-A's work-study mentorship."
+        },
+        {
+          "name": "Overhaul (Kai Chisaki)",
+          "line": "Ambitious yakuza boss with a Quirk that atomises anything he touches; just approached the League with a proposition."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Eri's Bullets",
+          "text": "Overhaul is revealed to be developing bullets that permanently destroy Quirks, using the blood of his ward Eri whose own Quirk rewinds living things.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Establishes both the season's ticking bomb and Eri as a permanent tool for Izuku.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Nighteye's Doubt",
+          "text": "Izuku interns with Sir Nighteye, All Might's estranged former sidekick, who foresees All Might dying gruesomely and openly doubts Izuku is worthy of One For All.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Puts fatalistic pressure on Izuku and introduces the Foresight Quirk.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Mirio Falls",
+          "text": "Heroes raid the Shie Hassaikai to save Eri; Mirio takes a Quirk-destroying bullet meant for her and permanently loses his Permeation power.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Removes the show's stated 'safer heir' from the board and shows the bullets work.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Overhaul Defeated",
+          "text": "Izuku channels Eri's Rewind to fight at 100% and beats Overhaul; Sir Nighteye dies telling Mirio he'll still be the finest hero, defying his own Foresight.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Reframes the show's rules — fate can be overwritten — and kills Nighteye.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Bullets Stolen",
+          "text": "The League ambushes Overhaul's police transport, permanently destroys his hands and steals the last of his Quirk-destroying bullets.",
+          "anchorEpisode": 14,
+          "whyLoadBearing": "Transfers the season's ticking weapon into Shigaraki's arsenal for later.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Festival Save",
+          "text": "During U.A.'s school festival Izuku secretly beats loner villain Gentle Criminal so the show can go on; the concert makes Eri smile for the first time in her life.",
+          "anchorEpisode": 23,
+          "whyLoadBearing": "Cements Eri's rescue emotionally and quietly places Gentle in the world.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · New Era, New Dreams",
+          "text": "Endeavor and new #2 hero Hawks barely defeat an intelligent High-End Nomu; Izuku begins dreaming of the previous holders of One For All.",
+          "anchorEpisode": 25,
+          "whyLoadBearing": "Introduces Hawks, cements Endeavor's new era, and opens the OFA vestige door.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Overhaul is beaten but the League walked off with his Quirk-destroying bullets, Mirio is Quirkless, Nighteye is dead, and Izuku has started hearing past holders of One For All in his sleep just as Hawks joins the top ranks.",
+        "questions": [
+          "What are the vestiges inside One For All trying to tell Izuku?",
+          "What will Shigaraki do with the Quirk-destroying bullets?",
+          "How does Hawks fit into whatever the League is quietly planning next?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Sir Nighteye",
+          "line": "Dead but pivotal; his fatalistic Foresight vision of All Might's death still hangs over Izuku and All Might."
+        },
+        {
+          "name": "Eri",
+          "line": "Rewind-Quirk girl rescued from Overhaul; U.A. ward, still learning to control her power without hurting people."
+        },
+        {
+          "name": "Mirio Togata (Lemillion)",
+          "line": "Now permanently Quirkless after taking Overhaul's bullet for Eri; still training as a hero."
+        },
+        {
+          "name": "Overhaul (Kai Chisaki)",
+          "line": "Defeated and imprisoned; then mutilated by the League, who took his last bullets."
+        },
+        {
+          "name": "Endeavor",
+          "line": "Newly minted #1 hero visibly changing after his brutal High-End fight; the public still doesn't trust him."
+        },
+        {
+          "name": "Hawks",
+          "line": "Winged, charismatic new #2 hero with unusual freedom of movement and unclear motives."
+        },
+        {
+          "name": "Izuku Midoriya (Deku)",
+          "line": "Now dreams of past One For All holders — the Quirk has started speaking back."
+        },
+        {
+          "name": "Tomura Shigaraki",
+          "line": "Off-screen much of the season but has quietly gained Overhaul's Quirk-destroying bullets."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Blackwhip Awakens",
+          "text": "During joint training between Classes 1-A and 1-B, Izuku involuntarily manifests a second Quirk called Blackwhip and learns past holders' powers are surfacing in him.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Establishes the stockpile model — Izuku will keep unlocking predecessors' Quirks.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Endeavor Agency",
+          "text": "Izuku, Bakugo and Shoto intern at Endeavor's agency; the flame hero tries — badly — to atone with his broken family while Hawks slips him a coded warning of an incoming attack.",
+          "anchorEpisode": 17,
+          "whyLoadBearing": "Confirms Hawks is a mole and Endeavor's family reckoning has begun.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Shirakumo's Face",
+          "text": "Aizawa and Present Mic learn the League's warp villain Kurogiri was made from the corpse of their dead school friend Oboro Shirakumo.",
+          "anchorEpisode": 19,
+          "whyLoadBearing": "Personal stake in Kurogiri and a hook for later rescue attempts.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Deika Levelled",
+          "text": "The League clashes with the Meta Liberation Army in Deika City; Shigaraki awakens a Decay so evolved it flattens the entire city.",
+          "anchorEpisode": 22,
+          "whyLoadBearing": "Shows Shigaraki's raw new power level going into the war arc.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Tenko's Past",
+          "text": "Flashbacks reveal Shigaraki was once Tenko Shimura, whose Quirk killed his abusive family; All For One found the traumatised child and slowly groomed him as his heir.",
+          "anchorEpisode": 23,
+          "whyLoadBearing": "Turns Shigaraki from monster into a person Izuku can later try to reach.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Paranormal Liberation Front",
+          "text": "The Meta Liberation Army submits and merges with the League into the Paranormal Liberation Front, over 100,000 strong, with Hawks embedded as an undercover spy.",
+          "anchorEpisode": 24,
+          "whyLoadBearing": "Creates the villain army that fights the coming war and confirms Hawks' role.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Weapon Rebuilt",
+          "text": "Dr. Garaki begins physically upgrading Shigaraki's body to surpass All For One and eventually take One For All; All Might warns Izuku the Quirk is now dangerously strong.",
+          "anchorEpisode": 25,
+          "whyLoadBearing": "Sets the countdown and the target of the next season's raid.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Shigaraki's Decay has evolved to city-wide range, his body is being rebuilt to weaponise it, and the League has just absorbed the 100,000-strong MLA into the Paranormal Liberation Front — with Hawks the only hero close enough to watch it happen.",
+        "questions": [
+          "When Shigaraki wakes up complete, who can possibly stop him?",
+          "How long can Hawks keep his cover before Dabi sees through him?",
+          "Can Izuku master enough predecessor Quirks in time?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Tomura Shigaraki",
+          "line": "Now leads the Paranormal Liberation Front; his Decay is city-scale and his body is being physically upgraded by Dr. Garaki."
+        },
+        {
+          "name": "Hawks",
+          "line": "Deep-cover mole inside the PLF for the Hero Public Safety Commission; playing a lethal double game."
+        },
+        {
+          "name": "Endeavor",
+          "line": "Trying and failing to be a father while training Izuku, Bakugo and Shoto at his agency."
+        },
+        {
+          "name": "Dabi",
+          "line": "Blue-flame PLF lieutenant obsessed with Endeavor personally; increasingly free-agent within the League."
+        },
+        {
+          "name": "Dr. Kyudai Garaki",
+          "line": "All For One's ancient scientist crony; the man rebuilding Shigaraki's body in secret."
+        },
+        {
+          "name": "Izuku Midoriya (Deku)",
+          "line": "Has unlocked Blackwhip and is starting to communicate with past One For All users in dreams."
+        },
+        {
+          "name": "All For One",
+          "line": "Physically imprisoned in Tartarus, where he is unsettled by hearing the voice of his long-dead brother."
+        },
+        {
+          "name": "Re-Destro",
+          "line": "Former MLA leader who bowed to Shigaraki; now a lieutenant of the merged Paranormal Liberation Front."
+        }
+      ]
+    },
+    "6": {
+      "beats": [
+        {
+          "label": "S6 · The Raid",
+          "text": "Heroes preemptively raid the PLF and Jaku hospital using Hawks' intel; Shigaraki awakens early but incomplete, and his uncontrolled Decay erases whole city blocks.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Launches the war and shows the raid's success has produced a walking apocalypse.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Dabi's Confession",
+          "text": "Cornered in battle, Dabi live-streams a confession that he is Toya Todoroki — Endeavor's supposedly dead firstborn — shattering hero society's faith in its new #1.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Publicly destroys Endeavor's image and reframes the Todoroki family conflict.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · League Escapes",
+          "text": "All For One's vestige seizes Shigaraki's body mid-battle to escape; Bakugo is critically wounded, Aizawa cuts off his own leg to stop a Quirk-destroying bullet, and the League slips away.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Confirms All For One is inside Shigaraki and puts key heroes out of the fight.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Tartarus Falls",
+          "text": "Shigaraki, controlled by All For One's mind, storms Tartarus, frees All For One's real body and lets out every high-security convict in Japan.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "Introduces the second All For One body and unleashes jailbreakers Izuku will hunt.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Deku Runs",
+          "text": "Izuku leaves U.A. to hunt villains alone in Gran Torino's cape, taking down Muscular and Lady Nagant himself and growing gaunt and monstrous in the process.",
+          "anchorEpisode": 19,
+          "whyLoadBearing": "Sets up Class 1-A's intervention and Izuku's physical/mental state going into the war.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · U.A. Fortress",
+          "text": "Class 1-A chases Izuku down, Bakugo formally apologises for years of bullying, and Ochaco rallies frightened civilians to let him rest inside a fortified U.A. refugee bunker.",
+          "anchorEpisode": 24,
+          "whyLoadBearing": "Reunites the class, resolves Bakugo/Izuku, and turns U.A. into the civilian shelter.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Three Days",
+          "text": "All Might learns Shigaraki's body will finalise in just three days; America's #1 hero Star and Stripe defies orders and flies to Japan alone to help her master's successor.",
+          "anchorEpisode": 25,
+          "whyLoadBearing": "Sets the countdown to war and introduces Star and Stripe.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The League escaped with an All For One who now inhabits both his original body and Shigaraki's, every Tartarus convict is loose, Dabi has publicly outed himself as Endeavor's son, and Class 1-A has three days to prepare for the final war — with an American hero flying in alone to help.",
+        "questions": [
+          "Can Star and Stripe actually slow Shigaraki before his body finalises?",
+          "Who is the U.A. traitor that made all this possible?",
+          "How does Endeavor face Toya on the battlefield after Dabi's broadcast?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Izuku Midoriya (Deku)",
+          "line": "Physically ravaged from solo hero work; back at U.A. in Gran Torino's cape, resting for the final battle."
+        },
+        {
+          "name": "Tomura Shigaraki",
+          "line": "Body still incomplete; his consciousness has been overwritten mid-fight by All For One's vestige."
+        },
+        {
+          "name": "All For One",
+          "line": "Freed from Tartarus; his original body and his hijacked Shigaraki body are both now loose in Japan."
+        },
+        {
+          "name": "Katsuki Bakugo",
+          "line": "Recovered from Shigaraki's stab wound and formally apologised to Izuku; now the hero 'Dynamight'."
+        },
+        {
+          "name": "Dabi (Toya Todoroki)",
+          "line": "Escaped with the League; his live-streamed confession has broken Endeavor and hero society's morale."
+        },
+        {
+          "name": "Endeavor",
+          "line": "Publicly disgraced by Dabi's reveal; barely holding together as the crumbling #1 hero."
+        },
+        {
+          "name": "Hawks",
+          "line": "Injured after Dabi tried to burn him alive; his cover is blown and he's now openly with the heroes."
+        },
+        {
+          "name": "All Might",
+          "line": "Retired but drives the strategy against All For One; treats himself as expendable intelligence."
+        },
+        {
+          "name": "Ochaco Uraraka",
+          "line": "Emotional voice of Class 1-A; publicly convinced frightened civilians to shelter Izuku inside U.A."
+        }
+      ]
+    },
+    "7": {
+      "beats": [
+        {
+          "label": "S7 · Star and Stripe",
+          "text": "America's #1 hero Star and Stripe rams Shigaraki with her reality-rewriting New Order Quirk before dying; her vestige destroys several of his stolen Quirks from within.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Weakens Shigaraki's arsenal and buys the heroes time.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · The Traitor",
+          "text": "Toru Hagakure catches Yuga Aoyama passing intel to All For One; Aoyama tearfully agrees to become bait to lure the villains into an open final war.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Resolves the traitor mystery and triggers the war on the heroes' terms.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Split Battlefields",
+          "text": "Warp gates split the fight nationwide: Deku vs Shigaraki over U.A., Shoto vs Dabi in Kamino, Endeavor and Hawks vs All For One in Gunga, Ochaco vs Toga on an island.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The season's structure — parallel duels with no cross-support.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Dabi Frozen",
+          "text": "Shoto beats his brother Dabi with a new fusion Ultimate Move; the Todoroki family gathers to freeze Dabi solid before he can self-immolate a city.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Removes the Dabi threat and reunites the Todorokis around a barely-alive Toya.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Bakugo Falls",
+          "text": "Bakugo takes a point-blank punch to the heart from Shigaraki while protecting Class 1-A; the ninja hero Edgeshot threads himself into Bakugo's body to try to restart his heart.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Bakugo's status as apparently dead is the hook every subsequent beat pulls on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Toga's Choice",
+          "text": "After Ochaco reaches Toga through her grief for Twice, Toga transfuses her own blood into a fatally wounded Ochaco; Toga dies smiling and the Double swarm collapses.",
+          "anchorEpisode": 21,
+          "whyLoadBearing": "Closes the Toga arc and leaves Ochaco alive but changed.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · All Might Alone",
+          "text": "Shigaraki's true self devours All For One's vestige and reasserts control of the body; All Might faces the rewinding villain alone in an armored suit.",
+          "anchorEpisode": 21,
+          "whyLoadBearing": "Locks in the S8 cliffhanger — All Might vs All For One, Shigaraki fully gone.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "All Might is standing bloody but defiant against an All For One who keeps rewinding younger, Bakugo lies dead-in-appearance with Edgeshot inside him trying to repair his heart, Deku is locked in a grinding fight against a Shigaraki whose true self has retaken the body while All For One's rewinding form races to reunite with him, and Toga is gone.",
+        "questions": [
+          "Will Edgeshot's blood-thread surgery actually revive Bakugo?",
+          "Can All Might trade blows with All For One long enough to run out the Rewind?",
+          "Is there anything of Shigaraki left after All For One's vestige devoured the boy inside him?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Izuku Midoriya (Deku)",
+          "line": "Locked in a grinding fight against a fully hijacked Shigaraki body; briefly touched the boy inside."
+        },
+        {
+          "name": "Katsuki Bakugo",
+          "line": "Apparently killed by Shigaraki; Edgeshot is threaded into his body trying to restart his heart."
+        },
+        {
+          "name": "All Might",
+          "line": "Battered but standing between All For One and Shigaraki, buying time in a support-item armored suit."
+        },
+        {
+          "name": "Shigaraki (All For One-controlled)",
+          "line": "By the end of the season Shigaraki's own personality has re-emerged and is in control of the body, no longer All For One."
+        },
+        {
+          "name": "All For One (original body)",
+          "line": "Rewinding physically younger with a stolen Rewind copy; on his way to reunite with Shigaraki's body."
+        },
+        {
+          "name": "Ochaco Uraraka",
+          "line": "Critically hurt but alive after Toga saved her life with her own blood."
+        },
+        {
+          "name": "Dabi (Toya Todoroki)",
+          "line": "Defeated and frozen solid by Shoto; the Todoroki family reconciled around him in the process."
+        },
+        {
+          "name": "Endeavor",
+          "line": "Publicly reckoning with Toya at long last; lost an arm and still trying to finish the fight."
+        },
+        {
+          "name": "Shoto Todoroki",
+          "line": "Ended his brother's fire with Great Glacial Aegir; free to help anywhere else on the battlefield."
+        }
+      ]
+    },
+    "8": {
+      "beats": [
+        {
+          "label": "S8 · Bakugo Returns",
+          "text": "Edgeshot revives Bakugo from inside his body; the returning Bakugo rips All Might out of All For One's hands and takes over the fight himself.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Resolves the S7 cliffhanger and hands Bakugo the villain personally.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · All For One Erased",
+          "text": "Bakugo destroys All For One's rewinding body with a massive explosion; All For One vanishes as a wailing infant erased from existence.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Kills the original All For One body permanently.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Mt. Fuji",
+          "text": "At Mt. Fuji, Shigaraki tries to detonate the mountain; Deku follows and forcibly transfers past One For All Quirks into him to destroy his soul from within.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Sets the terms of the final fight — Izuku will empty One For All into Shigaraki.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Heroes Rally",
+          "text": "Aizawa returns commanding a repaired Kurogiri's warp gates; every hero and every Class 1-A student swarms Shigaraki so Deku can strike at his soul.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Turns the finale into a genuine collective effort, not a solo battle.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Tenko Freed",
+          "text": "Deku reaches the crying child Tenko one last time; All For One's vestige devours the boy, but Shigaraki chooses to help destroy his master from within.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Emotional core of the finale — Izuku saves the child even if not the villain.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Symbol Passed",
+          "text": "Deku's last One For All punch kills All For One and Shigaraki together; the Quirk is spent, and Deku is Quirkless again.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The show's central power is gone; Izuku returns to where he started.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Eight Years Later",
+          "text": "Eight years on, Class 1-A are pros; teacher-Izuku suits up in an armored rig built by his old classmates and Melissa Shield, returning to hero duty as a Quirkless hero.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Closes the loop — the Quirkless boy who wanted to be a hero, ends as one.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "All For One is erased and Shigaraki died at peace with Izuku, but hero society is rebuilding around the crater they left, Spinner is writing a book so Shigaraki won't be forgotten, and Izuku is stepping back into the fight as a Quirkless hero in an armored suit.",
+        "questions": [
+          "Can hero society genuinely rebuild after so much destruction and lost faith?",
+          "Will the world let Izuku hero without a Quirk, using only support tech?",
+          "Will anyone learn from Shigaraki's story in time to save the next abandoned child?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Izuku Midoriya (Deku)",
+          "line": "Now a Quirkless U.A. teacher stepping back into hero duty in an armored suit built by his old classmates."
+        },
+        {
+          "name": "Katsuki Bakugo",
+          "line": "Revived by Edgeshot; permanently scarred but a top pro hero and Izuku's steadfast rival."
+        },
+        {
+          "name": "All Might",
+          "line": "Fully retired teacher; has passed everything he was on to Izuku and the next generation."
+        },
+        {
+          "name": "Tomura Shigaraki / Tenko Shimura",
+          "line": "Died at peace with Izuku after helping destroy his master; his last smile changed how Izuku sees the fight."
+        },
+        {
+          "name": "Endeavor",
+          "line": "Crippled, publicly retired, still visiting his dying son Toya daily to try to atone."
+        },
+        {
+          "name": "Shoto Todoroki",
+          "line": "Reconciled with what remains of his family; his brother Toya is kept alive on life support."
+        },
+        {
+          "name": "Ochaco Uraraka",
+          "line": "Pro hero still quietly grieving Toga; broke down to Izuku about it in the aftermath."
+        },
+        {
+          "name": "Spinner",
+          "line": "Writing a memoir of the League so Shigaraki won't be forgotten by history."
+        }
+      ]
+    }
+  },
+  "castLinks": {
+    "Ochaco Uraraka": {
+      "actor": "Ayane Sakura",
+      "character": "Ochako Uraraka (voice)"
+    },
+    "Hero Killer Stain": {
+      "actor": "Go Inoue",
+      "character": "Stain (voice)"
+    },
+    "Re-Destro": {
+      "actor": "Hiroaki Hirata",
+      "character": "Rikiya Yotsubashi (voice)"
+    }
+  },
+  "repairedAt": "2026-07-24T12:19:03.990Z"
+}

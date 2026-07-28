@@ -1,0 +1,608 @@
+{
+  "slug": "cobra-kai",
+  "generatedFor": "Cobra Kai",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Broken man reopens the dojo",
+          "text": "Broken, alcoholic Johnny Lawrence saves teen neighbor Miguel from bullies and, spurned by his stepfather, reopens the Cobra Kai dojo to train him.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The engine of the entire series — every subsequent conflict flows from Cobra Kai being reborn.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Daniel back on the mat",
+          "text": "Daniel LaRusso, now a car mogul without Miyagi, learns Cobra Kai is back and starts working karate back into his life to preserve balance.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Establishes Daniel as counterweight and sets up Miyagi-Do's eventual return.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Robby infiltrates LaRusso",
+          "text": "Johnny's abandoned son Robby takes a job at LaRusso Auto to spite him, but instead bonds with Daniel and starts secretly learning Miyagi-Do.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The father-swap that defines Robby's arc for years and detonates the S1 finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Miguel goes viral",
+          "text": "Miguel, transformed by training, humiliates Kyler at school; the viral fight fills Cobra Kai with students, including bullied outcast Eli, remade as Hawk.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Turns Cobra Kai from a two-man project into a movement and introduces Hawk.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Both fatherhoods blow up",
+          "text": "Johnny appeals his way past Cobra Kai's tournament ban, then discovers Robby is Daniel's student and attacks him, blowing up both fatherhoods at once.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The reveal that turns Johnny–Daniel cold war hot and cements the two dojos' collision.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A cheap-shot championship",
+          "text": "At the All Valley finals, Miguel wins by exploiting Robby's dislocated shoulder — a dishonorable move that shows Johnny his methods have corrupted the boy.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Johnny's crisis of faith in his own teaching, which Kreese will exploit next.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The old sensei returns",
+          "text": "As Johnny sits alone in his empty dojo, his own old sensei John Kreese appears from the past, praising him for bringing Cobra Kai back.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The final image of the season and the door through which S2's entire threat walks in.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Johnny thought he could rebuild Cobra Kai his own way, but his students have already learned to fight dirty and his estranged son now trains under Daniel. And the man who created the original Cobra Kai has just walked back into his dojo.",
+        "questions": [
+          "Will Kreese pull Johnny back into old habits or be turned away?",
+          "Can Johnny undo the ruthlessness he's already instilled in Miguel?",
+          "Where does this leave Robby, caught between the father who left him and the mentor who took him in?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Johnny Lawrence",
+          "line": "Once-golden Cobra Kai champion, now scraping by; found purpose training Miguel but has just realized he has poisoned him."
+        },
+        {
+          "name": "Daniel LaRusso",
+          "line": "Successful car dealer trying to honor Mr. Miyagi; alarmed by Cobra Kai's return, and now quietly training Robby as his own student."
+        },
+        {
+          "name": "Miguel Diaz",
+          "line": "Formerly bullied teen turned Cobra Kai star; won the All Valley with a cheap shot he does not yet see as one."
+        },
+        {
+          "name": "Sam LaRusso",
+          "line": "Daniel's daughter; broke up with Miguel after his violence at the party and is drifting back toward Miyagi-Do."
+        },
+        {
+          "name": "Robby Keene",
+          "line": "Johnny's son, abandoned as a boy; embraced by Daniel and just wrecked his father with a public reveal of who trained him."
+        },
+        {
+          "name": "John Kreese",
+          "line": "Johnny's brutal original sensei from the 1980s; presumed long gone, but has just reappeared inside the Cobra Kai dojo.",
+          "note": "Original Karate Kid antagonist."
+        },
+        {
+          "name": "Hawk (Eli Moskowitz)",
+          "line": "Bullied outcast remade by Cobra Kai; now Miguel's most aggressive follower."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Kreese slips inside",
+          "text": "Kreese talks his way back into Cobra Kai as assistant sensei, then quietly begins pushing the students to fight harder and dirtier while Johnny isn't looking.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The infection that drives every disaster in the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Miyagi-Do opens its gates",
+          "text": "Daniel opens Miyagi-Do to counter Cobra Kai, taking in Robby and Sam; the two dojos and their kids become open rivals at school.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Structural: makes Cobra Kai vs. Miyagi-Do a schoolwide conflict, not a private feud.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Two couples, one collision",
+          "text": "Miguel and new student Tory begin dating while Sam starts a romance with Robby, setting the two couples on a collision course.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Introduces Tory and stacks the personal wiring that detonates in the school brawl.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Johnny expels Kreese",
+          "text": "Johnny finally sees Kreese corrupting his students and throws him out, choosing to teach mercy and honor instead.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Establishes Johnny's shift toward mercy — the very thing his students will punish him for.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The PA and the powder keg",
+          "text": "At a party Sam drunkenly kisses Miguel; Tory outs it over the school PA the next morning and ignites an all-out brawl between the two dojos.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The trigger for the season's central catastrophe.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The kick off the balcony",
+          "text": "Miguel shows Robby mercy in the fight; Robby retaliates with a kick that sends Miguel off a balcony, hospitalizing him on life support.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The moment that shapes every character's next year of choices.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Kreese gets his dojo",
+          "text": "Blaming Johnny for teaching mercy, the surviving Cobra Kai students walk to Kreese, who now owns the dojo outright as Johnny abandons everything he built.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Kreese enters S3 as sole owner and Johnny as broken; the entire S3 status quo.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Miguel lies in a coma on life support, Johnny has thrown away his phone and disappeared into himself, Robby is on the run for what he did, and Cobra Kai belongs entirely to Kreese.",
+        "questions": [
+          "Will Miguel walk again, and can Johnny face him if he does?",
+          "Where does Robby go now that he has crippled another kid and betrayed everyone who trusted him?",
+          "How does Daniel hold his family together with Amanda demanding he drop karate for good?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Johnny Lawrence",
+          "line": "Broken by Miguel's paralysis; has quit karate and disappeared, unaware his old girlfriend Ali has just messaged him."
+        },
+        {
+          "name": "Daniel LaRusso",
+          "line": "Ran Miyagi-Do openly against Cobra Kai; Amanda has ordered him to shut it down after the brawl on his conscience."
+        },
+        {
+          "name": "John Kreese",
+          "line": "Sole owner of Cobra Kai after outmaneuvering Johnny and the landlord; training the students his way with no interference."
+        },
+        {
+          "name": "Miguel Diaz",
+          "line": "In a coma on life support after Robby's kick; his last coherent choice was to spare his rival."
+        },
+        {
+          "name": "Robby Keene",
+          "line": "Fled after paralyzing Miguel; a fugitive, cut off from both his father and Daniel."
+        },
+        {
+          "name": "Sam LaRusso",
+          "line": "Beat Tory in the school brawl using Miyagi-Do; carrying guilt over the kiss that set the whole thing off."
+        },
+        {
+          "name": "Tory Nichols",
+          "line": "Miguel's girlfriend, hardened by a hard home life; publicly humiliated Sam and fought her through the hallways."
+        },
+        {
+          "name": "Hawk (Eli Moskowitz)",
+          "line": "Kreese's most fervent convert; vandalized Miyagi-Do and severed his friendship with Demetri."
+        },
+        {
+          "name": "Carmen Diaz",
+          "line": "Miguel's mother; broke up with Johnny after her son was paralyzed on his watch."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · A boy wakes paralyzed",
+          "text": "Miguel wakes paralyzed from the coma; guilt-ridden Johnny devotes himself to his rehabilitation while an arrested Robby freezes out both his fathers.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets Johnny's redemption arc and Robby's slide toward Kreese in one image.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Daniel finds Okinawa",
+          "text": "Daniel travels to Okinawa, reconnects with Kumiko and his old rival Chozen, and returns with a pressure-point technique to defend Miyagi-Do.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Reintroduces Chozen (crucial for future seasons) and gives Daniel the weapon that ends the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Kreese recruits the lost",
+          "text": "Kreese aggressively grows Cobra Kai, targeting kids with unstable homes like Tory, and turns the newly abandoned Robby into his newest devoted student.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Robby joining Kreese is the season's key allegiance shift — inverts every prior dynamic.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · An alliance is born",
+          "text": "Miguel walks again through Johnny's help; he and Sam finally piece together an alliance between Eagle Fang, Johnny's breakaway dojo, and Miyagi-Do.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Names Eagle Fang and unites the two dojos — the launching pad for everything after.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Home invasion at Christmas",
+          "text": "Cobra Kai attacks the LaRusso home on Christmas; the allied kids beat them off, Sam conquers her fear of Tory, and Hawk flips sides mid-fight.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Resolves Sam's trauma and moves Hawk out of Cobra Kai for good.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Fathers finally allied",
+          "text": "Johnny fights Kreese to end it; Kreese chokes him and Daniel arrives to win with the Miyagi pressure-point strike, forcing a wager on the coming All Valley.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The pact that puts Johnny and Daniel on the same side for S4.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · One phone call",
+          "text": "Beaten and desperate, Kreese picks up the phone and calls Terry Silver — an old Cobra Kai brother of his that Daniel knows only too well.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The single loudest line into the next season — Silver's return is S4's entire threat.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Johnny and Daniel are finally training together, bound by a tournament bet that will decide Cobra Kai's fate. But Kreese has just called in reinforcements from a past Daniel barely survived once.",
+        "questions": [
+          "Who is the man Kreese called, and what does he want from Cobra Kai?",
+          "Can an Eagle Fang and Miyagi-Do alliance actually hold with Johnny and Daniel teaching side by side?",
+          "Where does Robby land, now firmly on Kreese's side and freshly humiliated by his own father?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Johnny Lawrence",
+          "line": "Founded his own breakaway dojo, Eagle Fang; back with Carmen, and now training alongside Daniel toward the All Valley."
+        },
+        {
+          "name": "Daniel LaRusso",
+          "line": "Learned the pressure-point technique in Okinawa; running Miyagi-Do openly again with Johnny as his partner."
+        },
+        {
+          "name": "John Kreese",
+          "line": "Owns Cobra Kai and has moulded Robby and Tory into loyal soldiers; has just phoned Terry Silver for help."
+        },
+        {
+          "name": "Miguel Diaz",
+          "line": "Walking again after months of rehab; back together with Sam and captaining the joint dojos with her."
+        },
+        {
+          "name": "Sam LaRusso",
+          "line": "Overcame the panic attacks that plagued her since the school brawl; a leader of Miyagi-Do."
+        },
+        {
+          "name": "Robby Keene",
+          "line": "Furious at both fathers after his release from juvie; has thrown in with Kreese and defended him against Johnny."
+        },
+        {
+          "name": "Tory Nichols",
+          "line": "Kreese's rescued star student, her landlord problems solved by his intervention."
+        },
+        {
+          "name": "Hawk (Eli Moskowitz)",
+          "line": "Switched sides mid-battle at the LaRusso house and reconciled with Demetri."
+        },
+        {
+          "name": "Amanda LaRusso",
+          "line": "Publicly slapped Kreese at his dojo; still uneasy about the karate war swallowing her family."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Uneasy alliance",
+          "text": "Eagle Fang and Miyagi-Do try training together under Johnny and Daniel, but their opposite styles keep colliding as they prepare for the All Valley.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the season's central instability — the alliance is fragile and will crack.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Silver comes back",
+          "text": "Kreese calls Terry Silver back from a peaceful retirement; after visiting the old dojo, Silver decides to rejoin Cobra Kai and reawakens his old ruthlessness.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Reintroduces Silver, the season's real antagonist and the villain of S5.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · A new recruit for Cobra Kai",
+          "text": "New middle-schooler Kenny Payne, bullied by Daniel's son Anthony, seeks out Cobra Kai and is taken under Robby's wing.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces Kenny, whose arc runs through the rest of the series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Match Point splits the dojos",
+          "text": "Silver and Kreese train Cobra Kai to exploit weaknesses, while a sensei duel between Johnny and Daniel ends in a tie and splits the joint dojo apart.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Fractures the S3 alliance and returns everyone to their corners for the tournament.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · A championship bought",
+          "text": "At the All Valley Cobra Kai wins the girls' final with Tory beating Sam — and Tory catches Silver bribing the referee as she walks out.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Plants the secret Tory carries into S5, the lever that eventually brings Silver down.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Silver frames Kreese",
+          "text": "With Cobra Kai crowned champions, Silver frames Kreese for beating Stingray and takes sole control of the dojo, announcing plans to franchise it.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Kreese in prison and Silver in charge is the entire S5 status quo.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Two exits at once",
+          "text": "Miguel leaves for Mexico to find his biological father; Daniel, realizing he can't beat Silver alone, calls Chozen from Okinawa for help.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Sets up S5's opening rescue mission and reintroduces Chozen as an active ally.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Kreese sits in a jail cell for a crime Silver committed. Silver owns Cobra Kai outright and is about to take it national. Miguel is on a bus to Mexico chasing a father he has never met, and Daniel is calling in his oldest ally from overseas.",
+        "questions": [
+          "What kind of father is Miguel about to walk into, and who brings him home?",
+          "Can Daniel and Chozen together stop Silver before Cobra Kai stops being a Valley problem?",
+          "Does Kreese stay locked up quietly, or find a way out?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Johnny Lawrence",
+          "line": "Runs Eagle Fang, split from Daniel by the failed sensei duel; his relationship with Carmen went public and hurt Miguel."
+        },
+        {
+          "name": "Daniel LaRusso",
+          "line": "Reconciled with Johnny after the tournament; has just phoned Chozen for backup against Silver."
+        },
+        {
+          "name": "Terry Silver",
+          "line": "Cobra Kai's most dangerous mind, lured back by Kreese; now sole owner and about to franchise the dojo nationally."
+        },
+        {
+          "name": "John Kreese",
+          "line": "Framed by Silver for the Stingray beating and arrested; sits in prison as his own dojo slips out of his hands."
+        },
+        {
+          "name": "Miguel Diaz",
+          "line": "Walked out of his semi-final and has left for Mexico to track down his estranged biological father."
+        },
+        {
+          "name": "Robby Keene",
+          "line": "Cobra Kai's model student under Silver's influence; mentored the young Kenny Payne into the fold."
+        },
+        {
+          "name": "Tory Nichols",
+          "line": "Cobra Kai's female champion; the only person to have seen Silver bribe the referee for her win."
+        },
+        {
+          "name": "Sam LaRusso",
+          "line": "Miyagi-Do's female captain, defeated by Tory in the All Valley final and carrying the loss."
+        },
+        {
+          "name": "Hawk (Eli Moskowitz)",
+          "line": "Reclaimed his real name Eli and rejoined Miyagi-Do; won the boys' final over Robby."
+        },
+        {
+          "name": "Kenny Payne",
+          "line": "A bullied middle-schooler turned Cobra Kai student under Robby's guidance."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Silver takes the Valley",
+          "text": "Silver expands Cobra Kai across the Valley, buying up rival dojos, while Daniel honors their bet and shuts Miyagi-Do down.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the season's imbalance — Silver ascendant, Daniel legally silenced.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Chozen goes undercover",
+          "text": "Chozen arrives from Okinawa and poses as a rival sensei to spy on Silver, but Silver spots him and the fight against him turns personal.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Puts Chozen inside the action and outs Daniel's counteroffensive to Silver.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · A father not worth finding",
+          "text": "Johnny and Robby find Miguel in Mexico; his biological father turns out to be a dangerous stranger, and Miguel comes home ready to move on.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Closes Miguel's paternal search and re-centers him for the season's conflicts.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Silver breaks Daniel",
+          "text": "Silver ambushes Daniel at Stingray's mansion and beats him brutally; only Amanda's return from Ohio and her cousin's stories snap Daniel back into the fight.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Silver's assault plus Amanda's return refuel Daniel's resolve for the endgame.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Cobra Kai goes global",
+          "text": "Silver brings in Master Kim's granddaughter Kim Da-Eun and Korean senseis, then reveals his true prize: entering Cobra Kai in the worldwide Sekai Taikai.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Names the Sekai Taikai and Kim Da-Eun — both structural to S6.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Silver undone on camera",
+          "text": "Disgusted after Silver bribed her All Valley win, Tory helps the students expose him on video; Silver is arrested after Daniel beats him with the crane kick.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Removes Silver from the board and pays off Tory's season-long secret.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Kreese is not in his cell",
+          "text": "As the dojos celebrate, the story reveals Kreese faked his death in prison and walked out, unknown to any of the victors.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The final image; Kreese loose without Silver is the shape of S6.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Cobra Kai is publicly disgraced, Silver is in a cell, Carmen is carrying Johnny's child, and the two dojos have won. But Kreese, presumed dead in prison, has walked free without anyone knowing.",
+        "questions": [
+          "Where does Kreese resurface, and what does he do without Cobra Kai to lead?",
+          "With Silver defeated, do the students still have a fight left to prepare for at the Sekai Taikai?",
+          "How does Johnny handle becoming a father again with a baby on the way?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Johnny Lawrence",
+          "line": "Expecting a baby with Carmen; reconciled with Robby and Miguel and finally out from under Silver."
+        },
+        {
+          "name": "Daniel LaRusso",
+          "line": "Beat Silver in single combat with the crane kick; rebuilding after nearly quitting karate for good."
+        },
+        {
+          "name": "Terry Silver",
+          "line": "Cobra Kai's mastermind, now arrested after Tory's video of her confrontation with him was uploaded to the students."
+        },
+        {
+          "name": "John Kreese",
+          "line": "Presumed murdered in prison but secretly alive and free; whereabouts unknown to anyone in the Valley."
+        },
+        {
+          "name": "Miguel Diaz",
+          "line": "Back from Mexico; his father is a dangerous stranger he wants nothing more from, and he is back together with Sam."
+        },
+        {
+          "name": "Robby Keene",
+          "line": "Reconciled with both Johnny and Daniel and returned to Miyagi-Do; back together with Tory."
+        },
+        {
+          "name": "Tory Nichols",
+          "line": "The one who took Silver down from inside; back with Robby and out of Cobra Kai."
+        },
+        {
+          "name": "Sam LaRusso",
+          "line": "Reunited with Miguel and central to the Miyagi-Fangs raid that broke Cobra Kai open."
+        },
+        {
+          "name": "Chozen Toguchi",
+          "line": "Daniel's Okinawan ally; wounded fighting Silver at his mansion but alive."
+        },
+        {
+          "name": "Carmen Diaz",
+          "line": "Pregnant with Johnny's child, the news that finally fully committed him to family."
+        }
+      ]
+    },
+    "6": {
+      "beats": [
+        {
+          "label": "S6 · Kreese seizes a new dojo",
+          "text": "As Miyagi-Do prepares for the Sekai Taikai, Kreese arrives in Korea, wins Master Kim's blessing, and takes over the Kim dojo as the new Cobra Kai.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Rebuilds Cobra Kai as an international threat and puts Kreese back in charge of it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Miyagi's hidden past",
+          "text": "Daniel discovers Mr. Miyagi had a hidden past — a chest suggesting his mentor once fought in the Sekai Taikai and may have killed an opponent.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Fractures Daniel's belief in Miyagi-Do and drives his crisis through the finals.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Barcelona and the Iron Dragons",
+          "text": "In Barcelona, Miyagi-Do meets rivals from around the world — including the elite Iron Dragons and their sensei Wolf, secretly financed by Silver from hiding.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Introduces the real opposition and Silver's hidden hand behind it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Tory back to Cobra Kai",
+          "text": "Tory's mother dies right before the trip; grieving, she rejoins Cobra Kai and finds herself facing her old teammates across the tournament floor.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Reshuffles allegiances at the exact moment the tournament matters most.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Death at the tournament",
+          "text": "During the Tournament of Champions a mass brawl erupts; Kwon of Cobra Kai grabs Kreese's blade and dies impaled on it, halting the tournament in disgrace.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The moment that suspends the tournament and forces a full reset in the Valley.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Johnny reclaims Cobra Kai",
+          "text": "The tournament resumes back in the Valley; Kreese cedes Cobra Kai to Johnny, and Miguel and Tory become its captains under him.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Closes the series-long ownership fight over Cobra Kai in Johnny's favor.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · The old villains die together",
+          "text": "Silver tries to strangle Kreese on his yacht; Kreese blows them both up, and Cobra Kai wins the Sekai Taikai when Johnny beats Wolf in the deciding fight.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "Ends both antagonists and the tournament that framed the entire final arc.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Kreese and Silver are dead, Cobra Kai has won the Sekai Taikai as Johnny's dojo, and he and Daniel are finally training the next generation of students together, in one combined style. The war Johnny reopened in season 1 is over.",
+        "questions": [
+          "Can the combined Miyagi-Do and Cobra Kai style hold together with Johnny and Daniel finally on the same side?",
+          "What does each of the students — Miguel, Sam, Robby, Tory — do with the life the tournament left them?",
+          "With every old rival gone, is karate itself still what defines who these people are?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Johnny Lawrence",
+          "line": "Married Carmen and had a daughter, Laura; reclaimed Cobra Kai from Kreese and won the Sekai Taikai as its sensei."
+        },
+        {
+          "name": "Daniel LaRusso",
+          "line": "Made peace with Mr. Miyagi's hidden past; training students alongside Johnny in a combined style."
+        },
+        {
+          "name": "John Kreese",
+          "line": "Died on Silver's yacht, taking Silver with him in a deliberate explosion."
+        },
+        {
+          "name": "Terry Silver",
+          "line": "Died on his yacht after a final fight with Kreese, his last plot against Daniel undone."
+        },
+        {
+          "name": "Miguel Diaz",
+          "line": "Cobra Kai's new male captain; beat the Iron Dragons in the finals after Wolf ordered his back broken."
+        },
+        {
+          "name": "Robby Keene",
+          "line": "Lost to Axel in the semi-finals after his knee was broken; reconciled with Tory."
+        },
+        {
+          "name": "Tory Nichols",
+          "line": "Cobra Kai's female champion of the Sekai Taikai after decisively knocking out Zara."
+        },
+        {
+          "name": "Sam LaRusso",
+          "line": "Refused to fight her final against Tory, choosing not to fight rather than to fight for its own sake."
+        },
+        {
+          "name": "Chozen Toguchi",
+          "line": "Went to Korea to reunite with Kim Da-Eun after finally moving on from Kumiko."
+        }
+      ]
+    }
+  },
+  "castLinks": {
+    "Sam LaRusso": {
+      "actor": "Mary Mouser",
+      "character": "Samantha LaRusso"
+    }
+  },
+  "repairedAt": "2026-07-24T11:40:14.964Z"
+}

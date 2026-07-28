@@ -1,0 +1,303 @@
+{
+  "slug": "anne-with-an-e",
+  "generatedFor": "Anne with an E",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · A girl by mistake",
+          "text": "Expecting a boy to help on the farm, Matthew and Marilla instead receive Anne, a chatterbox orphan; Marilla only agrees to a one-week trial.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up the entire premise: Anne is here on sufferance, not by right.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The brooch and the train",
+          "text": "When Marilla's brooch goes missing she accuses Anne, who lies to avoid banishment; Marilla sends her back, then finds the brooch and sends Matthew racing to fetch her.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "First real test of the trial that clarifies both Cuthberts want her.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A Cuthbert and a bosom friend",
+          "text": "Anne signs the family Bible as a Cuthbert after Marilla begs forgiveness, and Diana Barry becomes her bosom friend despite the townspeople's cold reception.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Locks in her two anchors — family and Diana — that carry every later arc.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Carrots and a slate",
+          "text": "Gilbert Blythe calls Anne 'carrots' and she cracks a slate over his head; she quits school until saving the Gillis household from fire earns her a warm welcome back.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Opens the Gilbert antagonism the whole series' romance is built on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Cordial and puff sleeves",
+          "text": "Anne accidentally serves Diana wine at tea and Mrs Barry forbids the friendship; the girls swear eternal loyalty, and Matthew buys Anne her longed-for puff-sleeved dress.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The Barrys' disapproval and Matthew's tenderness both echo through later seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The farm nearly lost",
+          "text": "Matthew's crop money sinks with a ship and he mortgages Green Gables; the bank moves to call the loan and a despairing Matthew nearly takes his own life.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Establishes Matthew's fragility and Green Gables' precariousness going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Boarders at Christmas",
+          "text": "Anne sells services and heirlooms in Charlottetown, Josephine hides money in a gifted book, and the Cuthberts take in boarders Nate and Dunlop to save the farm.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The two 'boarders' are the season-two con — introducing them here is the whole point of season one's closer.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Green Gables is saved for now, with Anne officially a Cuthbert and two smiling strangers, Nate and Dunlop, sleeping under the roof. Gilbert has left Avonlea for the sea after his father's death.",
+        "questions": [
+          "What do the two boarders really want in Avonlea?",
+          "Can the Cuthberts hold onto the farm past this winter?",
+          "Will Gilbert ever come home from sea?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Anne Shirley-Cuthbert",
+          "line": "Thirteen-year-old orphan whose imagination, temper and fierce heart have won Green Gables; now officially a Cuthbert."
+        },
+        {
+          "name": "Marilla Cuthbert",
+          "line": "Stern, unmarried older sister who has slowly softened into Anne's mother in all but blood."
+        },
+        {
+          "name": "Matthew Cuthbert",
+          "line": "Marilla's shy, heart-weakened brother who has loved Anne without reservation from the day she stepped off the train."
+        },
+        {
+          "name": "Diana Barry",
+          "line": "Anne's sweet, well-off best friend and sworn bosom companion, watched over by strict parents."
+        },
+        {
+          "name": "Gilbert Blythe",
+          "line": "Anne's clever classmate, orphaned by his father's death and now working ships far from Avonlea after their reluctant truce."
+        },
+        {
+          "name": "Rachel Lynde",
+          "line": "Marilla's opinionated neighbour and confidante, a fixture of Avonlea gossip."
+        },
+        {
+          "name": "Josephine Barry",
+          "line": "Diana's wealthy Charlottetown great-aunt, who has recognised Anne as a kindred spirit and quietly bankrolled Green Gables' rescue."
+        },
+        {
+          "name": "Nate and Dunlop",
+          "line": "The two smooth-talking boarders the Cuthberts have just taken in to make ends meet."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Gold that isn't there",
+          "text": "The boarders Nate and Dunlop convince Avonlea there is gold in the soil; Anne exposes the con but Nate escapes with the Barrys' savings.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Resolves the S1 cliffhanger and cements Anne as the town's moral compass.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Matthew chooses Anne",
+          "text": "Anne poses as Matthew in love letters to his old flame Jeannie; caught out, Matthew tells Jeannie he means to spend his remaining years raising Anne instead.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Publicly names Anne as Matthew's life's work — the frame for his declining health onward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Gilbert brings Bash home",
+          "text": "Gilbert returns to Avonlea from sea with Bash, a Trinidadian friend from the steamer, to work the Blythe farm together.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Puts Gilbert back in Anne's orbit and installs Bash as the show's new emotional centre.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Bash and Mary",
+          "text": "Refused a doctor for a toothache in Avonlea, Bash finds welcome in The Bog and falls for Mary; the two marry in a joyful celebration.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The Bash–Mary marriage is the whole scaffold that season three then dismantles.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Cole comes out; Prissy walks",
+          "text": "Cole confides to Anne and Josephine that he is gay; witnessing Mr Phillips's cruelty toward Cole, Priscilla Andrews leaves him at the altar.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Cole's identity and the Phillips scandal both trigger the changes that follow.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Saving Miss Stacy",
+          "text": "Modern new teacher Miss Stacy is nearly ousted by the Progressive Mothers; Anne, Gilbert and Marilla speak in her defence and the town votes her back.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Miss Stacy is the engine of every ambition the students carry into next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Cole leaves for Charlottetown",
+          "text": "Billy and his gang destroy Anne's forest playhouse and Cole's sculptures, and Cole leaves Avonlea to live with Josephine in Charlottetown.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Puts Cole and Josephine together in the city, which is where Anne's search will run.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Bash and Mary have just married and Miss Stacy has kept her post, while Gilbert is back in Avonlea and openly cordial with Anne. Cole has fled bullying for a new life with Josephine in Charlottetown.",
+        "questions": [
+          "Now that Anne and Gilbert are on speaking terms, what happens the first time either of them admits more?",
+          "Can Bash and Mary carve out a safe life for a mixed-race family in Avonlea?",
+          "Will Miss Stacy's modern teaching last long enough to send this class beyond Avonlea?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Anne Shirley-Cuthbert",
+          "line": "Fifteen, settled at Green Gables, a ringleader among the schoolchildren and quietly aware of Gilbert."
+        },
+        {
+          "name": "Marilla Cuthbert",
+          "line": "Anne's guardian and mother in all but blood, increasingly willing to defy Avonlea for her."
+        },
+        {
+          "name": "Matthew Cuthbert",
+          "line": "Anne's devoted father-figure, physically fragile since his heart attack and openly living for her."
+        },
+        {
+          "name": "Gilbert Blythe",
+          "line": "Back in Avonlea from sea, running the Blythe farm with Bash and set on becoming a doctor."
+        },
+        {
+          "name": "Diana Barry",
+          "line": "Anne's best friend, still hemmed in by her parents' propriety but starting to want a life of her own."
+        },
+        {
+          "name": "Bash",
+          "line": "Gilbert's Trinidadian friend and business partner, newly married to Mary and settling in Avonlea despite the town's racism."
+        },
+        {
+          "name": "Mary",
+          "line": "Bash's wife, a strong-willed woman from The Bog who has just joined the Blythe farm."
+        },
+        {
+          "name": "Miss Muriel Stacy",
+          "line": "Avonlea's modern new teacher, whom the town has just voted to keep despite the Progressive Mothers."
+        },
+        {
+          "name": "Cole",
+          "line": "Anne's sensitive artist friend from school, now openly gay to those he trusts and living with Josephine in Charlottetown."
+        },
+        {
+          "name": "Josephine Barry",
+          "line": "Diana's great-aunt, Anne's mentor and now Cole's guardian at her Charlottetown house."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Anne wants her lineage",
+          "text": "Approaching sixteen, Anne longs to know her lineage; Matthew and Marilla reluctantly let her return to the orphanage to search for records of her parents.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Reframes Anne's arc for the season from 'belonging' to 'origin.'",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Delphine and Elijah",
+          "text": "Bash and Mary welcome baby Delphine; Mary's estranged son Elijah visits, gets drunk, and steals from Gilbert before storming off.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces Delphine and Elijah, both central to the season's Bash-and-Mary story.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Winifred Rose",
+          "text": "Gilbert meets Winifred Rose in Charlottetown; her wealthy father offers to fund his medical studies in Paris if he marries her.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Puts the concrete obstacle in front of any Anne–Gilbert future.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Mary dies",
+          "text": "Mary contracts sepsis from an infected cut and dies, leaving Bash alone with Delphine as Marilla and the community rally around him.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The season's hinge — every remaining Bash beat runs off this loss.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ka'kwet taken back",
+          "text": "Anne's new Mi'kmaq friend Ka'kwet is sent to a residential school that proves brutal; she escapes home, but authorities forcibly drag her back.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The season's other open wound and the only fully unresolved thread at the end.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The letter Anne rips up",
+          "text": "Gilbert asks Anne outright if she wants him before proposing; she freezes, then rips up his letter of love unread and he leaves to marry Winifred.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The season's central romantic misfire that the finale must undo.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Kiss, and Bertha's name",
+          "text": "Gilbert breaks it off with Winifred and finally kisses Anne; they part for Queen's and Toronto, as Matthew and Marilla uncover her mother's name — Bertha.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Resolves the romance thread and the parentage thread in a single closing beat.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Anne and Gilbert have declared their love and promised to write, but she is off to Queen's College and he to the University of Toronto for medicine. Ka'kwet remains locked inside the residential school, her parents barred from taking her home.",
+        "questions": [
+          "Can Anne and Gilbert's new love survive years apart at different universities?",
+          "Will Ka'kwet ever escape a school her family cannot enter?",
+          "Is a reformed Elijah truly changed, or will he betray Bash's trust again?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Anne Shirley-Cuthbert",
+          "line": "Sixteen, in love with Gilbert, about to leave Green Gables for Queen's College, and finally holding her mother's name."
+        },
+        {
+          "name": "Marilla Cuthbert",
+          "line": "Anne's guardian, deeply attached to baby Delphine and quietly grieving the daughter she's about to send away."
+        },
+        {
+          "name": "Matthew Cuthbert",
+          "line": "Anne's father-figure, now openly championing her search for her origins over Marilla's caution."
+        },
+        {
+          "name": "Gilbert Blythe",
+          "line": "Anne's declared love, having broken with Winifred; heading to the University of Toronto to become a doctor."
+        },
+        {
+          "name": "Diana Barry",
+          "line": "Anne's best friend, accepted to Queen's after her parents relented, and briefly close with Jerry."
+        },
+        {
+          "name": "Bash",
+          "line": "Widowed by Mary's death, raising baby Delphine at the Blythe farm with help from Marilla and his mother Hazel."
+        },
+        {
+          "name": "Elijah",
+          "line": "Mary's estranged son, reformed and welcomed back into the household after his earlier theft from Gilbert."
+        },
+        {
+          "name": "Ka'kwet",
+          "line": "Anne's Mi'kmaq friend, still imprisoned in the residential school her parents cannot legally reach."
+        },
+        {
+          "name": "Miss Muriel Stacy",
+          "line": "Avonlea's teacher, who prepared Anne, Diana and the rest for the Queens entrance exams they've now passed."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "slug": "end-of-the-f-ing-world",
+  "generatedFor": "The End of the F***ing World",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Plan to kill her",
+          "text": "James, sure he is a psychopath, picks new schoolmate Alyssa as his next kill; when she begs him to run away, he agrees, planning to murder her later.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the false premise the whole season is quietly dismantling.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Road turns dangerous",
+          "text": "The stolen Mercedes crashes and their money runs out; a predatory driver, Martin, gropes James in a bathroom, and Alyssa quietly blackmails him for his wallet.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "First time Alyssa protects James — the dynamic starts inverting.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · He can't do it",
+          "text": "They squat in author Clive Koch's empty house; watching Alyssa sleep, James finds he cannot bring the knife down and realises he is in love with her.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The private turning point of James's arc — the psychopath story ends here.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The killing",
+          "text": "Koch comes home and tries to rape Alyssa; James stabs him dead. They flee the scene, leaving behind the knife, Topher's wallet, and Koch's tapes of past victims.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The crime the police chase for the rest of the season, and the evidence trail they follow.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The detectives close in",
+          "text": "DCs Noon and Darego pick up the trail; Koch's mother hands over her son's tapes of past victims, opening a self-defence angle that could reduce the charge to manslaughter.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Sets up the legal question of what actually awaits them if caught, and the split between the two detectives.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Father betrays her",
+          "text": "Alyssa finds her long-absent father Leslie, a drug dealer with a secret second son; recognising the pair from a TV reward notice, he secretly calls 999 pretending to help.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Closes Alyssa's search for her father as a wound rather than a homecoming, and triggers the beach endgame.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Beach and a gunshot",
+          "text": "Cornered on the beach, Alyssa knocks Noon out and grabs the shotgun; James takes it off her, knocks her down to pin everything on himself, and runs — a single shot cracks.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The unresolved image the next season opens on: Alyssa on the sand, James's fate a gunshot.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "James sprints across the beach with Leslie's shotgun, drawing armed police away from Alyssa so she cannot be charged. A single gunshot fires as the screen cuts to black; whether he is alive is left unsaid.",
+        "questions": [
+          "Is James alive?",
+          "With James gone, will Alyssa still face charges over Koch's death?",
+          "Can DC Noon's self-defence argument survive her partner Darego pushing for manslaughter?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "James",
+          "line": "17, once convinced he was a psychopath; killed Clive Koch to save Alyssa, realised he loved her, and drew armed police onto himself so she could escape."
+        },
+        {
+          "name": "Alyssa",
+          "line": "17, restless runaway from a hostile stepfather; the one who dragged James on the road, came to genuinely love him, and knocked out DC Noon to buy him a chance."
+        },
+        {
+          "name": "DC Eunice Noon",
+          "line": "The sympathetic detective who worked out Koch's killing was self-defence and tried to bring the pair in gently; last seen knocked unconscious on the beach."
+        },
+        {
+          "name": "DC Teri Darego",
+          "line": "Noon's by-the-book partner, who sees only the crime and not the context, pushing hard for a manslaughter charge regardless."
+        },
+        {
+          "name": "Leslie",
+          "line": "Alyssa's estranged father, a small-time drug dealer with an abandoned second son; feigned a welcome then dialled 999 the moment he recognised the reward money."
+        },
+        {
+          "name": "Gwen",
+          "line": "Alyssa's mother, cowed by her husband Tony; only now learning from police that her daughter is a murder suspect on the run.",
+          "note": "May be who Alyssa turns to if she goes home."
+        },
+        {
+          "name": "Phil",
+          "line": "James's gentle, oblivious father; devastated by the theft of his Mercedes and the news that his son is wanted."
+        }
+      ]
+    }
+  }
+}

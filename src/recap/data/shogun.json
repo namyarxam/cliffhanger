@@ -1,0 +1,726 @@
+{
+  "slug": "shogun",
+  "tmdbId": 126308,
+  "tvmazeId": 37336,
+  "matchedBy": "imdb_id",
+  "title": "Shōgun",
+  "overview": "In Japan in the year 1600, at the dawn of a century-defining civil war, Lord Yoshii Toranaga is fighting for his life as his enemies on the Council of Regents unite against him, when a mysterious European ship is found marooned in a nearby fishing village.",
+  "firstAirDate": "2024-02-27",
+  "network": "FX",
+  "poster": "https://image.tmdb.org/t/p/w780/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/original/bwSmgmd90hCWwqOKQYTEraeOZhJ.jpg",
+  "backdrops": [
+    "https://image.tmdb.org/t/p/original/bwSmgmd90hCWwqOKQYTEraeOZhJ.jpg",
+    "https://image.tmdb.org/t/p/original/5zmiBoMzeeVdQ62no55JOJMY498.jpg",
+    "https://image.tmdb.org/t/p/original/vZc0Ss00VrT9WIkd5FplYGNllbn.jpg",
+    "https://image.tmdb.org/t/p/original/tZcZqfy1HgDZe2Fpnt32AgE8nif.jpg",
+    "https://image.tmdb.org/t/p/original/qauHZuVYmpbjw456y3BHcmZy8nO.jpg",
+    "https://image.tmdb.org/t/p/original/hJPkcUc4ON7RchgDIkO0k6K10Zu.jpg",
+    "https://image.tmdb.org/t/p/original/uTMPik0DzzDhq6bM9joKn0OD503.jpg",
+    "https://image.tmdb.org/t/p/original/l03OoBosXTHuvE3Ikq69KiBFg4O.jpg",
+    "https://image.tmdb.org/t/p/original/lIncEYlQff01XEw83k8aIwthrNw.jpg",
+    "https://image.tmdb.org/t/p/original/vr1njg1TGQEXUSJm1ChVpy05p8p.jpg",
+    "https://image.tmdb.org/t/p/original/grZVpOCkH8sQ0v4Ou8sXFJh6Dpl.jpg",
+    "https://image.tmdb.org/t/p/original/hVtuVCAxahkHdfsKkRhPsuYFior.jpg"
+  ],
+  "throughSeason": 1,
+  "totalSeasons": 1,
+  "showType": "Scripted",
+  "genres": [
+    "Drama",
+    "Adventure",
+    "History"
+  ],
+  "status": "Running",
+  "runtime": 59,
+  "language": "English",
+  "seasons": [
+    {
+      "season": 1,
+      "name": "Season 1",
+      "airDate": "2024-02-27",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Anjin",
+          "overview": "Destinies converge in Japan after a barbarian ship washes ashore in a poor fishing village. Meanwhile, in Osaka, Lord Toranaga finds himself outplayed by his enemies.",
+          "plot": "In 1600, the Taikō has recently died, leaving the rule split among five equal regents, who protect the Taikō's adolescent heir, Yaechiyo, at Osaka Castle. The Dutch trading ship Erasmus and its starving crew arrive at Ajiro on the Izu Peninsula, in the southern domains of Edo; the survivors, including English pilot John Blackthorne, are taken prisoner by local samurai. The entrenched Portuguese traders and the Catholic Church's Jesuit order are the political and religious rivals of the Protestant Blackthorne. The local Jesuit priest attempts to have Blackthorne executed, claiming him to be a pirate, but the fief's ruler, Kashigi Yabushige, dismisses the request and plans to use the Erasmus and its weapons to his benefit. At Osaka Castle, four regents, led by Lord Ishido Kazunari, initiate the process to impeach and thereby condemn to death the fifth regent, Yoshii Toranaga. Following a spy's report, Toranaga's general, Toda Hiromatsu, confiscates the Erasmus and its cargo before bringing Blackthorne to Osaka. En route, Blackthorne takes command of the ship during a storm when the Spanish navigator Rodrigues is washed overboard, and Rodrigues is saved by Blackthorne and Yabushige. Blackthorne is then taken to Osaka Castle, where he meets Toranaga and Lady Toda Mariko.",
+          "airDate": "2024-02-27",
+          "still": "https://image.tmdb.org/t/p/original/8uib4EWHrAnhUg08pFLAnoo50rf.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/8uib4EWHrAnhUg08pFLAnoo50rf.jpg",
+            "https://image.tmdb.org/t/p/original/i7Avc8JssEMbSKagHORI1xOcws0.jpg",
+            "https://image.tmdb.org/t/p/original/dUk8VrR2gMgUk7fL36dlP2ELHHU.jpg",
+            "https://image.tmdb.org/t/p/original/cK5bnO5LeBimz6oibtnLCnOmUSJ.jpg",
+            "https://image.tmdb.org/t/p/original/j0MWgyonk1svG0llZuX8uoq59V4.jpg",
+            "https://image.tmdb.org/t/p/original/ifF3Zfv0vwO2UtloEfDcG2a8hK.jpg",
+            "https://image.tmdb.org/t/p/original/1vJAnYg8D2yisoZYRrhvdshzdoN.jpg",
+            "https://image.tmdb.org/t/p/original/k9jstCsaK2HV4SjqXYS1cBEroCD.jpg",
+            "https://image.tmdb.org/t/p/original/b3EqbFk0DD2nqz7JCHxYO3y9uq3.jpg",
+            "https://image.tmdb.org/t/p/original/3tKAu4kXC81D5zXuVOdBKWkxCRv.jpg",
+            "https://image.tmdb.org/t/p/original/7Dn0HL4dd7yJJFmzLGqN5kGqaQ4.jpg",
+            "https://image.tmdb.org/t/p/original/uCQuuEAI90U9A4s9cXYMRTRrTca.jpg",
+            "https://image.tmdb.org/t/p/original/jCAP4atTmaTwtAzEhOg19OmPZGr.jpg",
+            "https://image.tmdb.org/t/p/original/kNhNWmCfUmIH8Hav3r9wXjxgqou.jpg",
+            "https://image.tmdb.org/t/p/original/plp2QNJN7jgjorJyU2tmAxbDa1Q.jpg",
+            "https://image.tmdb.org/t/p/original/xcCFbQv6ryqRyLWlNOGZDIz6rBA.jpg",
+            "https://image.tmdb.org/t/p/original/bEnqOrf7bZ5NklQeeJhrmokH3KO.jpg",
+            "https://image.tmdb.org/t/p/original/wFdoltvNQ7v0sM2zqZHfATmpaGO.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Servants of Two Masters",
+          "overview": "Blackthorne's arrival in Osaka stirs up a hornet's nest of rivalries. Mariko is trapped between her cause and her faith when she must translate for the barbarian in Lord Toranaga's custody.",
+          "plot": "In 1598, the Taikō, on his deathbed, privately informs Toranaga of his intention to form a council of regents to succeed him, but warns that it will likely result in civil war. In 1600, Blackthorne's confiscated journals are given to the Jesuits by Rodrigues. Blackthorne meets with Toranaga, with Mariko and the Jesuit priest Martin Alvito as interpreters, but is interrupted by Ishido. Toranaga feigns disinterest and has Blackthorne imprisoned, hoping to use his presence to sow division between Ishido and the Christian regents. In prison, Blackthorne meets a friar who informs him that the Portuguese Black Ship has been taking profits from the silk trade back to Europe using a secret military base in Macao. The Christian regents inform Ishido that they will only vote on Toranaga's impeachment if Blackthorne is executed, and Yabushige convinces Ishido that Blackthorne could be useful. Yabushige and his samurai stage a bandit attack and rescue Blackthorne from execution. At Blackthorne's second meeting, with Mariko interpreting, he explains that Portugal and Spain have divided the world among themselves and intend to replace all non-Catholic governments. That night, a shinobi attempts to assassinate Blackthorne but is killed by Toranaga, who had secretly switched their rooms.",
+          "airDate": "2024-02-27",
+          "still": "https://image.tmdb.org/t/p/original/gUglbYu9EjhpVoxzBWHsXVQYpQX.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/gUglbYu9EjhpVoxzBWHsXVQYpQX.jpg",
+            "https://image.tmdb.org/t/p/original/Y6KFhwabAYONwCBzHnXDelK2U4.jpg",
+            "https://image.tmdb.org/t/p/original/2U4DMQt7a06Ep5tA1kAgTroXK0j.jpg",
+            "https://image.tmdb.org/t/p/original/1mLF9Xm3RqMUby8xKGKX92ZHZxq.jpg",
+            "https://image.tmdb.org/t/p/original/ct8Lwo81k5gZCpjyHWQQCqc7fTz.jpg",
+            "https://image.tmdb.org/t/p/original/vzvLBzshY8woRcgPoCzzXc8Klga.jpg",
+            "https://image.tmdb.org/t/p/original/Aezwp3EZfxieq4tHUY2qDOxIfjk.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Tomorrow Is Tomorrow",
+          "overview": "After Blackthorne survives a brazen assassination attempt, Toranaga realizes he must ferry his allies out of Osaka or risk certain defeat.",
+          "plot": "Toranaga instructs Yabushige to move Blackthorne to Ajiro along with Toranaga's wife Kiri. Ferreira, captain-general of the Black Ship, disregards the Jesuits' concerns and plans to sail without Toranaga's permission. At Osaka Castle, Ishido inspects Yabushige's caravan under the guise of paying respects. Blackthorne and Mariko witness Toranaga secretly changing places with Kiri in her litter. Mariko explains that they will be killed if this is discovered, and Blackthorne creates a distraction, enabling them to leave the castle. Regent Kiyama's men later attack the caravan and discover Toranaga. Toranaga's party escapes to a galley as Mariko's husband Toda \"Buntaro\" Hirokatsu stays behind to stall pursuit. The harbor is blocked by Kiyama's men and Toranaga boards the Black Ship, striking a deal with the Portuguese in exchange for safe passage. Ferreira requires Blackthorne to be left behind, but he daringly follows in the galley and rejoins once both ships have broken the blockade. At sea, Toranaga makes Blackthorne a hatamoto and asks him to teach Western tactics to a new regiment. In Osaka, Hiromatsu informs the regents that Toranaga has resigned, leaving them without a quorum to vote on impeachment.",
+          "airDate": "2024-03-05",
+          "still": "https://image.tmdb.org/t/p/original/uXMdeoIltO85372VLX85abAC109.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/uXMdeoIltO85372VLX85abAC109.jpg",
+            "https://image.tmdb.org/t/p/original/sn2oReXgRylgDvXyTBXzxucJaNZ.jpg",
+            "https://image.tmdb.org/t/p/original/ea7ZFWIwRC4EgPDFtHMTj1syq3b.jpg",
+            "https://image.tmdb.org/t/p/original/tH6EFi1JSOy1GoGcK7ZXXQiH8hj.jpg",
+            "https://image.tmdb.org/t/p/original/u7ReAPYjrpCgCcZYtPGMExtXViC.jpg",
+            "https://image.tmdb.org/t/p/original/9xwX81aUuS3bXYh1R8nsSgrzi7X.jpg",
+            "https://image.tmdb.org/t/p/original/h9dw6yGALhP6mwwNWYcarn7kWxy.jpg",
+            "https://image.tmdb.org/t/p/original/xElOXks1obLvzajoIiVE1HVDjY8.jpg",
+            "https://image.tmdb.org/t/p/original/mTZZfBm9jeHOEmPrYG1FVKBx0yI.jpg",
+            "https://image.tmdb.org/t/p/original/pC5O7x0yGAlvWctIZTtOFStE8UN.jpg",
+            "https://image.tmdb.org/t/p/original/2K2IynNKKojDwaCzclkSK4Fu4d6.jpg",
+            "https://image.tmdb.org/t/p/original/c5CErGYRQxYtoNqFemA81bZI8AM.jpg",
+            "https://image.tmdb.org/t/p/original/dmfY2RMguytgjsxuRjKX2gEV9G8.jpg",
+            "https://image.tmdb.org/t/p/original/vTrcR6gwCVkkYOlEIblQbgxBtCb.jpg",
+            "https://image.tmdb.org/t/p/original/k9cZKYyqqfUlr44aH2nPWijV5K0.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "The Eightfold Fence",
+          "overview": "Blackthorne and Mariko test their new alliance as they train Toranaga's gun regiment for war. Yabushige must navigate his past promises to Ishido when an old friend comes to the village.",
+          "plot": "Toranaga inspects Yabushige's army in Ajiro and departs for Edo. Mariko informs Blackthorne that his crew are in Edo and that they and the Erasmus now belong to Toranaga. Blackthorne is given a home, a good salary, and Usami Fuji, Hiromatsu's granddaughter, as his consort in exchange for training Yabushige's army for six months. Yabushige's nephew, Kashigi Omi, suggests to Yabushige that, in Toranaga's absence, Yabushige can offer the confiscated weapons from the Erasmus to Ishido. Ishido's retainer, Nebara Jozen, arrives and tells Yabushige to return to Osaka and pledge his loyalty to the remaining regents. Knowing that this will likely end in his death, Yabushige invites Jozen to stay the night and witness a demonstration of the cannons the next day. At dinner, Blackthorne gives Fuji one of his guns as a token of gratitude and she gives him her late father's swords. Mariko sneaks into Blackthorne's room at night and sleeps with him, later pretending that she and Fuji had hired a courtesan. The next day, during the demonstration, Toranaga's son Nagakado takes matters into his own hands and kills Jozen and his retinue with chain shots from the cannons, much to Yabushige's chagrin. The episode is dedicated to the memory of technical advisor and cannon expert Larry Beckett.",
+          "airDate": "2024-03-12",
+          "still": "https://image.tmdb.org/t/p/original/kF8DfadGNPJi3fMZEZgiFRaoRH9.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/kF8DfadGNPJi3fMZEZgiFRaoRH9.jpg",
+            "https://image.tmdb.org/t/p/original/kfl3NgDWIDOCR0nXOevBoZw5p9v.jpg",
+            "https://image.tmdb.org/t/p/original/z70XqOoqLvQP83smqj9swBjkEQk.jpg",
+            "https://image.tmdb.org/t/p/original/iu1qaNbEWOdssF98rulXTeaEGH.jpg",
+            "https://image.tmdb.org/t/p/original/zPaQjrKP3YWXdbsldOfso5uOzpS.jpg",
+            "https://image.tmdb.org/t/p/original/5hc9CKM5efks18IqsZeDkEcYGTg.jpg",
+            "https://image.tmdb.org/t/p/original/ihiCym8WfwvGMgGfCUM0DgoO5AM.jpg",
+            "https://image.tmdb.org/t/p/original/729onUhtV5xAGCZ1DSxvWgwdqgW.jpg",
+            "https://image.tmdb.org/t/p/original/tMQT7YVB5YeIEGM5XUTVaXUtafs.jpg",
+            "https://image.tmdb.org/t/p/original/d5HTXR81vY8wdlQg0Uo8e3GK3Aj.jpg",
+            "https://image.tmdb.org/t/p/original/94n34On1pnrzNn66middkBPhUiN.jpg",
+            "https://image.tmdb.org/t/p/original/zuPRFx3GETbFt5BLrw9jIWxgOuq.jpg",
+            "https://image.tmdb.org/t/p/original/jeN5P14hcfVzVxDfkcxzSJ8XorA.jpg",
+            "https://image.tmdb.org/t/p/original/ydY5H0gepHLRXwgYdv7U04JVCFq.jpg",
+            "https://image.tmdb.org/t/p/original/8DQXPIkl66LVKXtZHB3EXXMqUiq.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Broken to the Fist",
+          "overview": "Blackthorne and Mariko struggle to contain the secret that could get them both killed. Yabushige searches for the spy who has betrayed his intentions to Lord Toranaga.",
+          "plot": "Toranaga returns to Ajiro with his army. Learning that Nagakado killed Jozen, he takes away his command of the cannon regiment, giving it to Omi. Buntaro returns from Osaka and moves in with Blackthorne and Mariko. During dinner, Blackthorne and Buntaro engage in a sake drinking binge. A drunken Buntaro forces Mariko to tell Blackthorne about her father, Akechi Jinsai, who murdered the predecessor of the Taikō. He was forced to execute his family before committing seppuku. Mariko was already married to Buntaro and for this reason was spared the same fate as her family.Later that night, Mariko is assaulted by Buntaro. Blackthorne confronts him outside, but Buntaro lays down his sword and apologizes for disturbing his home. Blackthorne later asks Toranaga for permission to permanently leave Japan, but after an earthquake buries Toranaga in a landslide, Blackthorne saves him. The following day, Muraji manages to convince Yabushige and Omi that the gardener Uejiro, who had been executed for disobeying an order from Blackthorne, was the spy they were searching for. In Osaka, the remaining regents attempt to decide who will take Toranaga's place on the council, but Ochiba soon arrives and reunites with her son Yaechiyo before telling Ishido that the council will now listen to her.",
+          "airDate": "2024-03-19",
+          "still": "https://image.tmdb.org/t/p/original/5N5isVZvgdYeGsASiUgQJzHW6Ll.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/5N5isVZvgdYeGsASiUgQJzHW6Ll.jpg",
+            "https://image.tmdb.org/t/p/original/oo6P3vjQoSNZRLyst1mJB3bOKUE.jpg",
+            "https://image.tmdb.org/t/p/original/t43qPUYu26e5gn7VQ4WyPbvc0nE.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Ladies of the Willow World",
+          "overview": "Lady Ochiba returns to Osaka in order to accelerate the Regents' campaign against Toranaga. In Ajiro, Toranaga tests Mariko's loyalty to his cause.",
+          "plot": "In 1578, Mariko is living at the home of warlord Kuroda Nobuhisa. She becomes friends with his daughter, the future Ochiba, and witnesses Nobuhisa executing her father's allies. In 1600, Toranaga bestows Blackthorne with an admiralty and a fief, and Blackthorne's request to leave Japan is denied. Toranaga reveals to Mariko that Jinsai wanted her to continue his work of protecting Japan. At Osaka Castle, the remaining three regents and their families have been taken hostage by Ochiba and Ishido, under the pretense that there is a plot to kill Yaechiyo. Hiromatsu escapes but must leave the others behind. Ochiba believes Toranaga plotted her father's death, and she and Ishido offer Ito, an influential warlord, a seat on the council. Regent Sugiyama refuses to confirm Ito and tries to flee Osaka with his family but Ishido and his men kill them. Hiromatsu reaches Ajiro and informs Toranaga of the situation in Osaka. Toranaga's war council wants to use his secret Crimson Sky plan to defeat Ishido. Toranaga refuses, understanding that this will most likely make him the new shōgun. When news of Sugiyama's death reaches Ajiro, Toranaga realizes that his impeachment is inevitable and invokes Crimson Sky to protect Yaechiyo and limit future bloodshed.",
+          "airDate": "2024-03-26",
+          "still": "https://image.tmdb.org/t/p/original/15qoHmtC3zKQtZulccXs2GAMnKq.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/15qoHmtC3zKQtZulccXs2GAMnKq.jpg",
+            "https://image.tmdb.org/t/p/original/yNmcp9gzJoLXoutXfJVLdaJJfeG.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "A Stick of Time",
+          "overview": "Outplayed by new alliances in Osaka, Toranaga is forced to carve out a new deal with a long lost family member.",
+          "plot": "In 1554, a young Toranaga achieves his first victory in a battle against the warlord Mizoguchi, who commits seppuku. In 1600, Toranaga meets his estranged half-brother, Saeki Nobutatsu, to discuss terms of merging their two armies to invade Osaka as part of Crimson Sky. Saeki reveals he has been offered the fifth regency in place of Sugiyama, and Toranaga must either surrender to the council in Osaka or face imminent war. Saeki also informs Yabushige that his general has been executed, ending his chance of successfully playing both sides. Toranaga refuses Buntaro's request to kill Blackthorne, and Mariko's request to be allowed to die. Toranaga informs Saeki of his intention to surrender and declares there will be no Crimson Sky, despite protests from Nagakado and Yabushige. Kiku and Nagakado conspire to kill Saeki at Ajiro's teahouse. Saeki attempts to flee the ambush but trips into the teahouse's pond. However, as Nagakado attempts to kill Saeki, the former slips and fatally hits his head on a rock.",
+          "airDate": "2024-04-02",
+          "still": "https://image.tmdb.org/t/p/original/s5yGuWq058n3urFKDIwjyNOzgCD.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/s5yGuWq058n3urFKDIwjyNOzgCD.jpg",
+            "https://image.tmdb.org/t/p/original/4LLhNnctk9SprfPB1gzgzttuVMg.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "The Abyss of Life",
+          "overview": "Toranaga's defeated clan moves to Edo and awaits their fate. Blackthorne must decide who he fights for - the lord who has turned his back on him, or the ambition that brought him to Japan in the first place.",
+          "plot": "Toranaga and his army travel to Edo to prepare for Nagakado's funeral and 49 days of mourning. Ishido proposes marriage to Ochiba to strengthen their alliance. Alvito suggests to Toranaga that he should ally with Ochiba and overthrow Ishido, but Toranaga tells the priest to inform Ishido that he will formally surrender. Buntaro and Mariko have a tea ceremony, where he proposes that they commit suicide to protest Toranaga's surrender, but Mariko refuses. Blackthorne visits his former shipmates, and Salamon confronts him about his piloting decisions that brought them to Japan. Blackthorne then offers his services to Yabushige, who initially refuses. Daiyoin, the wife of the late Taikō, suffers a stroke and begs Ochiba to end her hostilities and release the hostages before dying. Toranaga's vassals sign their names to a formal letter of surrender, but Hiromatsu commits seppuku in defiance. Toranaga reveals to Mariko that Hiromatsu committed suicide to make his enemies believe his defeat was real. Yabushige is thus convinced and accepts Blackthorne's services. Toranaga asks Mariko to travel on his behalf to Osaka. The next morning, at the resting place of his son, Toranaga thanks Nagakado and Hiromatsu and vows not to waste the time they bought him.",
+          "airDate": "2024-04-09",
+          "still": "https://image.tmdb.org/t/p/original/jX99BvnOAF2bNjQvNHtMmCxmUOa.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/jX99BvnOAF2bNjQvNHtMmCxmUOa.jpg",
+            "https://image.tmdb.org/t/p/original/yxRo6pevZrYRedlQ9fFt8OFUUk0.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Crimson Sky",
+          "overview": "Mariko arrives in Osaka for the fight of her life. Blackthorne and Yabushige scramble to save their own heads as their options dwindle.",
+          "plot": "Blackthorne, Mariko, and Yabushige arrive in Osaka to surrender to Ishido on Toranaga's behalf. Yabushige requests that Ishido spare his life in exchange for his servitude but is denied. Mariko demands to leave the city with Toranaga's family at his request, but during her attempt to leave, the guards overpower her, so she announces that she will take her own life at sunset. Ochiba meets with Mariko in secret and recounts their childhood together in an attempt to make her surrender peacefully, but she refuses. Mariko soon prepares to commit seppuku, with Blackthorne agreeing to be her second, but Ishido stops her and grants her permission to leave. Later that night, Blackthorne and Mariko profess their love for each other. Ishido agrees to spare Yabushige who allows an army of shinobi to infiltrate the castle, but Blackthorne prevents them from kidnapping Mariko. Amid the chaos, Blackthorne, Mariko, Yabushige, and Toranaga's consorts lock themselves in a storehouse. After the shinobi set up explosives to blow open the door, Mariko willingly stands in front of it to defy Ishido and, to Blackthorne's horror, is killed by the explosion.",
+          "airDate": "2024-04-16",
+          "still": "https://image.tmdb.org/t/p/original/tAoNG2uBLRYJZKJOq9k9Xvb0voT.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/tAoNG2uBLRYJZKJOq9k9Xvb0voT.jpg",
+            "https://image.tmdb.org/t/p/original/bU64VMWLoW4pb5a8IrEOOT6zEs6.jpg",
+            "https://image.tmdb.org/t/p/original/42TSxe94uTHUoxGZ1xXRA8fsPIg.jpg",
+            "https://image.tmdb.org/t/p/original/uDzJZTSafUHqPcKsh42iaeoQt9z.jpg",
+            "https://image.tmdb.org/t/p/original/fZOiWt4ngdn7bwv8RmWzL8QmpT0.jpg",
+            "https://image.tmdb.org/t/p/original/dgsHeELVzQnE7uePDKcm3FvALpT.jpg",
+            "https://image.tmdb.org/t/p/original/jXCHI9GQizAyTWKSYrSaNysv3Qk.jpg",
+            "https://image.tmdb.org/t/p/original/puyP7keIQyI0qXexVYj7qayoWNK.jpg",
+            "https://image.tmdb.org/t/p/original/xkl0eEvvLrmPJ0ExjIiKv82x2ep.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "A Dream of a Dream",
+          "overview": "In the wake of a tragic death, Blackthorne finally considers the true nature of Toranaga's plan.",
+          "plot": "In the aftermath of the assault on Osaka Castle, Mariko is buried and the Council unanimously votes to declare war on Toranaga. Blackthorne leaves Osaka with Yabushige and Toranaga's consorts, having learned from Alvito that Mariko persuaded the Church to spare his life. Upon arriving in Ajiro, they discover that the Erasmus has been destroyed and Toranaga's men ruthlessly hunt for suspected traitors. Yabushige is arrested and confesses to having aided Ishido; Toranaga orders Yabushige to commit seppuku the following day. Blackthorne reunites with Fuji who informs him that she has been relieved of her duties and plans to become a nun. The next day, Blackthorne implores Toranaga to spare Ajiro and threatens to commit seppuku, but Toranaga stops him and orders the construction of a fleet of ships. Toranaga later confesses to Yabushige that he ordered the destruction of the Erasmus to keep Blackthorne from leaving Japan and that Mariko's death helped convince Ochiba to withdraw her support from Ishido ahead of the future Battle of Sekigahara. After Toranaga refuses to divulge the entirety of his plan, Yabushige carries out his sentence and commits seppuku. With the help of Buntaro and the villagers, Blackthorne begins efforts to salvage the Erasmus as Toranaga observes from afar.",
+          "airDate": "2024-04-23",
+          "still": "https://image.tmdb.org/t/p/original/dIXtG4MafmmjzNhU7ANJZByGmvr.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dIXtG4MafmmjzNhU7ANJZByGmvr.jpg",
+            "https://image.tmdb.org/t/p/original/dxrQLSujOEjku3rl0tprSeIz80T.jpg",
+            "https://image.tmdb.org/t/p/original/k4eQgPS2OB78Ipnu0OFT1mUnl4Y.jpg",
+            "https://image.tmdb.org/t/p/original/jmYJIiixBfsuiWRYwPbfaYEILVx.jpg",
+            "https://image.tmdb.org/t/p/original/A4RLYGdG6IPXpjtY0aM02kQmiOE.jpg",
+            "https://image.tmdb.org/t/p/original/m1W48OcQSJAThYNWl9HLfb735Q5.jpg",
+            "https://image.tmdb.org/t/p/original/pXWeYGuwnbBOvUOucAKuVlSTkdi.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "cast": [
+    {
+      "name": "Hiroyuki Sanada",
+      "character": "Yoshii Toranaga",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/SOwDxhGnRccP2lAtssQ7TxCzOe.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/491/1228890.jpg"
+    },
+    {
+      "name": "Cosmo Jarvis",
+      "character": "John Blackthorne",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/1kgghZ558CxZCJip5ufO6BAqUGp.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/491/1228891.jpg"
+    },
+    {
+      "name": "Anna Sawai",
+      "character": "Toda Mariko",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/6uFaCOupDTPRnTiedveTUvjOikC.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/491/1228892.jpg"
+    },
+    {
+      "name": "Tadanobu Asano",
+      "character": "Kashigi Yabushige",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/3CBpfGRcPq1jEeYr51TiOiNbZzT.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/491/1228893.jpg"
+    },
+    {
+      "name": "Takehiro Hira",
+      "character": "Ishido Kazunari",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/f8UK7xqwkfpIZiECcDgc0AErkj6.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/491/1228894.jpg"
+    },
+    {
+      "name": "Tommy Bastow",
+      "character": "Father Martin Alvito",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/dIQcrDm9dZqc98Ca6Em67x5ivba.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/506/1265593.jpg"
+    },
+    {
+      "name": "Fumi Nikaido",
+      "character": "Ochiba No Kata / Ruri",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/tqxgrZdOpx2FuTJYlhago4fttI3.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/491/1228899.jpg"
+    },
+    {
+      "name": "Yuki Kedoin",
+      "character": "Takemaru",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/ireujt2ysSmgFxaSHfKaTdUE9xh.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Akiko Kobayashi",
+      "character": "Setsu",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/fvCXXrLSMggck0cy5b7hY5zCoYx.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Yuki Kura",
+      "character": "Yoshii Nagakado",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/dPTlgkUvQXPfc1yZLXSsdF5gOQM.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/491/1228890.jpg"
+    },
+    {
+      "name": "Saeko Kimura",
+      "character": "Mariko's Lady in Waiting #2",
+      "episodeCount": 8,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/491/1228892.jpg"
+    },
+    {
+      "name": "Eushin Lee",
+      "character": "Yabushige's Green Kosho #2",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/9Ktss9lOkaH3zaVaKbLCcjNgmWp.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/491/1228893.jpg"
+    },
+    {
+      "name": "Hiroto Kanai",
+      "character": "Kashigi Omi",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/66NCVnp1pxmVizEEMOE6tESSwwo.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/491/1228893.jpg"
+    },
+    {
+      "name": "Moeka Hoshi",
+      "character": "Usami Fuji",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/w8cDBVeJmr2oG2TkryCWcjF2pf7.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Hiromoto Ida",
+      "character": "Kiyama Ukon Sadanaga",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/pj45frLPiIqNNtp1J7ZNr9R2uNR.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Takeshi Kurokawa",
+      "character": "Ohno Harunobu",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/AiMTdYXMZ038mRV1izzfWQN4GfW.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Shinnosuke Abe",
+      "character": "Toda 'Buntaro' Hirokatsu",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/oa8PhjIOahozCiMA8zMCd9ZC9SS.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/491/1228892.jpg"
+    },
+    {
+      "name": "Yutaro Oka",
+      "character": "Toranaga's Brown Kosho #1",
+      "episodeCount": 7,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/491/1228890.jpg"
+    },
+    {
+      "name": "Jodai Suzuki",
+      "character": "Toranaga's Brown Kosho #2",
+      "episodeCount": 7,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/491/1228890.jpg"
+    },
+    {
+      "name": "Tokuma Nishioka",
+      "character": "Toda Hiromatsu",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/ficsdIO9qozn1XRGnUn51M8nvEM.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/491/1228892.jpg"
+    },
+    {
+      "name": "Sen Mars",
+      "character": "Nakamura Yaechiyo",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/sIJTwC6YNAXAhrmchcwUeW61gHc.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mako Fujimoto",
+      "character": "Shizu No Kata",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/fcnDknjgHLAWMO34b4eU3BbfazR.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kengo Hashimoto",
+      "character": "Ishido's Gray Kosho #1",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/2LbyET9fxEn4y21xq3r7wOULVeR.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/491/1228894.jpg"
+    },
+    {
+      "name": "Daiki Yoshizaki",
+      "character": "Ishido's Gray Kosho #2",
+      "episodeCount": 6,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/491/1228894.jpg"
+    },
+    {
+      "name": "Emi Kamito",
+      "character": "Chiyo",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/ogbLg7HjZMrLNmvIhG0vrSzVzUs.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Yasunari Takeshima",
+      "character": "Muraji / Tonomoto Akinao",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/eRgcIYgj4cdAKpteB43zK2awCDh.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ако",
+      "character": "Daiyoin / Lady Iyo",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/w014qaRLlH8AXfLGagsAwAQazB3.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Toshi Toda",
+      "character": "Sugiyama Josui",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/74UmEu6NOr7pNRbC1PbVKusUCsz.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Yuka Kouri",
+      "character": "Kiku",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/uTKvkl3BYeiIPUvKfdL3QDaeM5.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Yoriko Doguchi",
+      "character": "Kiri no Kata",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/lDPz4mMS01DuHQdr3esdtt8lLw9.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nobuya Shimamoto",
+      "character": "Nebara Jozen",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/ocn3uQD9E01BTe3bQkeN9r0KE8M.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Paulino Nunes",
+      "character": "Father Dell'Acqua",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/kLL1Q84BRmvRKYBUMFCNR36M7Qo.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nestor Carbonell",
+      "character": "Rodrigues",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/4Xn03t2qDEMR2ecM7BtLwpvs3J0.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Hiro Kanagawa",
+      "character": "Igarashi Yoshimoto",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/dyWOPJmZTfy3r3R5eDY2d7yf8Ze.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Manami Hara",
+      "character": "Kashigi Saki",
+      "episodeCount": 3,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/491/1228893.jpg"
+    },
+    {
+      "name": "Yutaka Takeuchi",
+      "character": "Akechi Jinsai",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/z8jCaZnVGWrex0FTgmOHdiQSf28.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Louis Ferreira",
+      "character": "Captain-General Ferreira",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/7xUTd7N6XbB3uWvob12qpmGzPzA.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Yuua Yamanaka",
+      "character": "Toda Ryuji",
+      "episodeCount": 3,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/491/1228892.jpg"
+    },
+    {
+      "name": "Yukari Komatsu",
+      "character": "Housekeeper Yuki",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/6nGO0uM8Xo42xuL3vnXNzMumGi5.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Eisuke Sasai",
+      "character": "Ito",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/wodKYG7zTWCVtQfWp4PlQS1vtuF.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Yuko Miyamoto",
+      "character": "Gin",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/fRRCm3s3t47Zo4GHqGewzMg7GVb.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dakota Daulby",
+      "character": "Salamon",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/bCnWyROlUsso35FBqtQYZOnPgj4.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Yukijiro Hotaru",
+      "character": "Nakamura Hidetoshi / The Taikō",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/y7njnXkFqKAc1Lv4kGCaxcxX5ux.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Yuki Takao",
+      "character": "Usami Tadayoshi",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/i6WZYK5uHmq0JVGTefgUNzaGjJE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Junichi Tajiri",
+      "character": "Uejirou",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/gBTKdTc2lfZXlhHbdKrZJcJ5l1d.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ryuta Kato",
+      "character": "Sumiyoshi Tabito",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/su1AdAS2UXSbx0jfwMruL4z0my6.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rintaro Sawamoto",
+      "character": "Male Cook",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/9ZeEtiTwErwbF5Ytbg1CPpIgurz.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Eita Okuno",
+      "character": "Saeki Nobutatsu",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/fgtXphm3vU3MYulHbmTTObJQQON.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ned Dennehy",
+      "character": "Captain of the Erasmus",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/gSEtkD9YwYnIPbnagDc797kMVJ2.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Paul Moniz de Sa",
+      "character": "Father Sebastio",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/zBpvfgFPswSxiBfQ2smtcjaweTg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kaiden Berge",
+      "character": "Delirious Man",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/6FaxjMghHWO1Wry5RHlotl2q6OM.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Roger LeBlanc",
+      "character": "Roper",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/oibutfRfSsyHGqbU524iBjCLpBM.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nelson Leis",
+      "character": "Hendrik",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/olMl35MmkOmOp17CC3519wG30D7.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Hikaru Morita",
+      "character": "Young Green Samurai",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/wy98IfGnR8zExTTr79UTtHxAlLk.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Joaquim de Almeida",
+      "character": "Domingo",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/muXJn8kTEPxJaetkgCyS8RPEzTC.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Gerardo Barcala",
+      "character": "Portuguese Priest",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/6zYh9lZn9aYmrKp5IzpQx5qw2uu.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kasey Ryne Mazak",
+      "character": "Prison Guard",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/pVC3OtRyUV6JPFwsoGtBkD4VNsJ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Gabriel Prevost",
+      "character": "Gray Guard",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/nZzF2VZ81cO1n5hrfj0KMHbeYZ3.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Eijiro Ozaki",
+      "character": "Kuroda Nobuhisa",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/a0xPwQwRkVl7HwH831lgVvhASS1.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Takaaki Hirakawa",
+      "character": "Mizoguchi",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/uPND79a1vpmKhuXuRUjKrZqxnCW.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Yoshi Amao",
+      "character": "Sera",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/m4sYj0w3nXWM8LPakhKeXTYj0F.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Haruka Igarashi",
+      "character": "Yohii Rin",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/aBnTDBvnEqSRdHkiCUhkumNX8z8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Hitoshi Masaki",
+      "character": "Samurai General Tomono",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/fkL9JassrAD0kOLLCuCKPbomoZg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Shintaro Kanaoya",
+      "character": "Christian Acolyte",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/7t3uJYv6x637mX4pgqwCqr6rmHT.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Tamara Kiyama",
+      "character": "Young Maid",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/euQevee2zuLnO4RKSBkBJUvzdh1.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Sho Oyamada",
+      "character": "Yoshisufa",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/zst40bse7ZsOeu0JcKHn77sUsOu.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Hiroo Minami",
+      "character": "MIyai",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/idi5Kq5yyNYsCNMFsvhK4us9ohU.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Yuta Takenaka",
+      "character": "Northern Samurai",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/36kGGXODint5SGMHqXQQLAU8W63.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Azriel Dalman",
+      "character": "Percy",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/GxsR9LJFBJZeeDqMpqViMTLvcm.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "John JJ Miller",
+      "character": "Nigel",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/mIspjuApIl8i46CcwK7ggylHPNk.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kevan Ohtsji",
+      "character": "Red Officer #1",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/wif0qBL0gbAvTOz181vmjNsTaWR.jpg",
+      "inCharacter": null
+    }
+  ],
+  "generatedAt": "2026-07-25T15:28:54.739Z"
+}

@@ -1,0 +1,188 @@
+{
+  "slug": "pen15",
+  "generatedFor": "PEN15",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · UGIS",
+          "text": "Maya learns Brandt and Dustin faked their crushes on her — a prank crowning her UGIS, Ugliest Girl in School. She confronts Brandt without swinging.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Maya's core wound and Brandt as the boy whose dance confession will drive the S2 opener.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Ojiichan is watching",
+          "text": "Maya discovers masturbation and lets it fill her days. Her mother's warning that Ojiichan is always watching turns the discovery into private shame.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The habit and the shame around her body come back late in S2 when Ume walks in on her.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Posh",
+          "text": "Cast as Posh Spice then told she can't be, Maya absorbs racist taunts while Anna, too scared for her reputation, fails to step in. A rift opens.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Fixes Maya as the show's outsider and marks Anna's pattern of freezing when social cost is real.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Flymiamibro22",
+          "text": "In an AIM singles chatroom Maya begins flirting with a stranger, Flymiamibro22. He becomes her one private romance while everything at school hurts.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Sets up the mystery whose reveal at the dance — Sam — hijacks the last beat of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Anna and Brendan",
+          "text": "Anna's first romance is with awkward Brendan. It builds through the fall concert, peaks at a Wild Things kiss, and she ends it when tension outweighs thrill.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Brendan is the boyfriend Maya has to confront on Anna's behalf at the S2 pool party.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Home falls apart",
+          "text": "Anna is sent to Maya's while her parents attend a marriage retreat that confirms the split. Maya gets her first period; jealousy and grief blow the friendship open.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The divorce this reveals is the state Anna lives inside for all of S2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Dance",
+          "text": "At the fall dance they reconcile. Brandt admits his cruel crush on Maya was real, and Sam confesses he was Flymiamibro22 the whole time — she is not flattered.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The two revelations Maya carries out of the dance are exactly what S2 opens trying to defuse.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Friendship patched at the dance — but the boys have detonated. Sam is her secret AIM crush, Brandt's cruelty was a crush too, and Anna's home is splitting in half.",
+        "questions": [
+          "Can Maya forgive Sam for hiding as Flymiamibro22, or does the lie outweigh what he now wants?",
+          "What does Anna do when the divorce is real and she has to pick a parent?",
+          "Was Brandt's dance confession the start of something, or just another swerve?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Maya Ishii-Peters",
+          "line": "Thirteen, Japanese-American, cast as UGIS on day one and ending the year as an outsider with a private, growing crush on her rival Sam."
+        },
+        {
+          "name": "Anna Kone",
+          "line": "Maya's best friend, whose seventh grade is shaped less by school than by her parents' quiet collapse into divorce."
+        },
+        {
+          "name": "Sam",
+          "line": "Maya's neighbour and musical rival — and the boy behind Flymiamibro22, a fact he finally told her at the dance."
+        },
+        {
+          "name": "Brandt",
+          "line": "Popular boy who ran the UGIS prank, then admitted at the dance that his crush on Maya was real."
+        },
+        {
+          "name": "Brendan",
+          "line": "Anna's awkward first boyfriend, dumped after Wild Things when the physical stuff felt worse than none of it."
+        },
+        {
+          "name": "Curtis Kone",
+          "line": "Anna's father — one half of the marriage that has now openly ended."
+        },
+        {
+          "name": "Yuki Ishii-Peters",
+          "line": "Maya's Japanese mother, the one who told her Ojiichan is always watching."
+        },
+        {
+          "name": "Shuji Ishii-Peters",
+          "line": "Maya's older brother — fight instructor, phone-owning golden child of the house."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Pool party",
+          "text": "At Alex's pool party they try to unwind the dance mess with Sam, Brendan and Brandt, but only tangle it further. Word spreads that they are desperate sluts.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The pool party is exit velocity from S1's revelations, and the 'sluts' label sets the social floor for the year.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Wrestling",
+          "text": "Joining wrestling to be near Brandt, the girls quit after overhearing the boys' cruelty. Sam drifts into the popular crowd and stops answering his real friends.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "This is the version of Sam Maya deals with all season — the boy who chose the room she can't get into.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Witches",
+          "text": "Anna's parents fight until she flees to the woods. She and Maya invent witch powers to feel in control — until Brandt uses one to tell Maya he hates her.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The Wiccany game is Anna coping with a home coming apart in real time; Brandt's line closes the door S1 left open.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Maura",
+          "text": "Rich, manipulative Maura buys them the 'Best Best Friends' title, then hosts a sleepover that isolates Maya. Her constant boasting turns out to be lies.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The first outsider let inside the friendship, and the template for how they get burned when they let one in.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Play",
+          "text": "Opposite Gabe in the school play, Maya panics when he ducks the kiss and he ends things — he is realising he's gay. Anna's dad tells her he is moving out.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Curtis officially moves out here, and Gabe is another boy who wanted Maya without wanting her.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Florida",
+          "text": "Curtis drives the girls to Florida, where boys stand them up and Anna drinks herself into a rough confrontation with her dad. Feeling ugly starts to feel like fact.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "This is where the season's body-image dread stops being a joke and lodges, and where Curtis stops being the fun parent.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Home",
+          "text": "They meet older boys Derrick and Steve. At Derrick's house Maya gives a hated first blowjob, both boys get dumped, Sam gives Maya her first kiss, and Anna quietly falls for Shuji.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "Sam finally becomes a real thing, and Shuji quietly becomes the next problem the friendship has to survive.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The older-boyfriend experiment collapsed in a single night at Derrick's. Sam has become the boy Maya kissed for real, and Shuji has become the boy Anna cannot stop watching.",
+        "questions": [
+          "Does Maya want Sam back now the AIM lie is stale and the kiss is fresh?",
+          "What happens when Anna's crush on Maya's older brother stops staying in her head?",
+          "With Curtis moved out, which parent does Anna choose to live with?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Maya Ishii-Peters",
+          "line": "Still the outsider, still in love with Sam — and now the girl who gave a first blowjob she hated and took a first kiss she wanted."
+        },
+        {
+          "name": "Anna Kone",
+          "line": "Living her parents' divorce in real time, and ending the season with a quiet, complicated crush on Maya's older brother."
+        },
+        {
+          "name": "Sam",
+          "line": "Spent the year drifting into Brandt's popular crowd, then ended it by kissing Maya — the only piece of him she wanted."
+        },
+        {
+          "name": "Shuji Ishii-Peters",
+          "line": "Maya's older brother — the harmless family fixture Anna suddenly cannot stop looking at."
+        },
+        {
+          "name": "Curtis Kone",
+          "line": "Anna's dad, who moved out mid-season and took the girls to Florida; still trying, awkwardly, to be the fun parent."
+        },
+        {
+          "name": "Yuki Ishii-Peters",
+          "line": "Maya's mother, whose reunion this year with her ex-husband reminded her how much she loves the children she has."
+        }
+      ]
+    }
+  }
+}

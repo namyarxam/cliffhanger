@@ -1,0 +1,208 @@
+{
+  "slug": "wednesday",
+  "generatedFor": "Wednesday",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Sent to Nevermore",
+          "text": "After trying to kill Pugsley's bullies gets her expelled, Wednesday is shipped to Nevermore, her parents' outcast alma mater, where she meets roommate Enid and rival Bianca.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the setting, the core social cast, and Wednesday's involuntary presence at the school.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A monster and a cover-up",
+          "text": "A woodland monster kills Rowan mid-attack on Wednesday; Principal Weems shapeshifts into him to bury the death, confirming to Wednesday that Nevermore is hiding something.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets the whole season in motion: the monster mystery and the school's active complicity in it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Crackstone and Goody",
+          "text": "Wednesday uncovers the town's founder Joseph Crackstone, who executed outcasts, and her psychic ancestor Goody, who escaped him — a bloodline feud still running under Jericho.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The Crackstone/Addams feud is the ideological engine driving the villain's endgame.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Gates family lives",
+          "text": "Her parents are cleared of an old Nevermore murder, exposing that the Gates family — long thought extinct — has been trying to wipe out outcasts for generations.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Identifies the true faction behind the killings and sets up the season's real antagonist.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Tyler is the Hyde",
+          "text": "Uncle Fester tells her the monster is a Hyde, bound to a master. After a vision during their kiss, Wednesday realises the Hyde is her sweet normie boyfriend Tyler.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Names the monster and reveals the boyfriend-turned-monster who will still be alive at season's end.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Thornhill is Laurel Gates",
+          "text": "Teacher Ms Thornhill is unmasked as Laurel Gates, who used Tyler to harvest body parts and Wednesday's blood to resurrect Crackstone. He kills Weems and stabs Wednesday.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The master reveal, the death of the principal, and the ritual that pays off every earlier thread.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Enid wolfs out",
+          "text": "Enid finally transforms into a werewolf and takes down Tyler; Wednesday kills Crackstone. Tyler is jailed, Weems is dead, and Wednesday leaves as Nevermore closes.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Closes the plot but leaves the Hyde alive, the werewolf awakened, and the school shuttered — all live threads.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Nevermore is closed for the semester. Tyler sits in custody as the Hyde, Weems is dead by Laurel Gates's hand, and Enid has finally triggered her werewolf transformation.",
+        "questions": [
+          "What happens to Nevermore, and to Wednesday, when it reopens?",
+          "Is Tyler safely locked away, or still a weapon someone can point?",
+          "Who else knew what Laurel Gates was really doing at the school?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Wednesday Addams",
+          "line": "The psychic Addams teen who unmasked the Hyde plot at Nevermore, killed the resurrected Crackstone, and is leaving school as it shuts."
+        },
+        {
+          "name": "Enid Sinclair",
+          "line": "Wednesday's pastel roommate, a werewolf who could not transform until the finale, when she wolfed out to save Wednesday from Tyler."
+        },
+        {
+          "name": "Tyler Galpin",
+          "line": "Wednesday's normie boyfriend turned out to be the Hyde, manipulated by Laurel Gates; now detained after Enid defeated him."
+        },
+        {
+          "name": "Larissa Weems",
+          "line": "Nevermore's shapeshifting principal, who covered up Rowan's death to protect the school and was killed by Laurel Gates."
+        },
+        {
+          "name": "Bianca Barclay",
+          "line": "Nevermore's siren queen bee and Wednesday's frenemy, who fought alongside her to bring down Crackstone in the final battle."
+        },
+        {
+          "name": "Morticia Addams",
+          "line": "Wednesday's mother, a Nevermore alumna whose old accidental killing of Garrett Gates seeded the whole Gates-family vendetta."
+        },
+        {
+          "name": "Gomez Addams",
+          "line": "Wednesday's father, briefly jailed for Morticia's decades-old crime before being cleared once the Gates cover-up unravelled."
+        },
+        {
+          "name": "Uncle Fester",
+          "line": "Wednesday's fugitive uncle, who arrived to identify the creature as a Hyde and explain the master-and-monster arrangement."
+        },
+        {
+          "name": "Sheriff Donovan Galpin",
+          "line": "Jericho's sheriff and Tyler's father — sceptical of Wednesday all season, and never told that his own son was the Hyde."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Return, stalker, warning",
+          "text": "Wednesday returns to Nevermore under new principal Barry Dort. A stalker steals her manuscript, and she collapses with a vision of Enid in a crow-filled graveyard.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Plants Enid's foretold death and the new principal, both of which drive the entire season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Galpin dies, powers fail",
+          "text": "Sheriff Galpin is killed by a murder of crows and Wednesday's psychic visions abruptly stop. Her hunt for the culprit drags her toward Willow Hill Psychiatric Hospital.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Kills the Jericho lawman and points the investigation at the institution that hides the season's real conspiracy.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · LOIS and Isaac Night",
+          "text": "Willow Hill hides LOIS: a program siphoning outcast powers into normies. Pugsley's zombie pet Slurp turns out to be Isaac Night, a supposedly dead student regenerating.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Names the conspiracy, exposes the villain, and connects the Pugsley-zombie subplot to the main threat.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Tyler's mother the Hyde",
+          "text": "Tyler is freed, kills Laurel Gates, and reunites with his mother Françoise — herself a Hyde and Isaac's sister. He throws Wednesday from a window, nearly killing her.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Removes the S1 villain, expands the Hyde bloodline into a family unit, and nearly kills the protagonist.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Weems' warning, Enid rising",
+          "text": "Comatose, Wednesday is warned by Weems' spirit that an Addams will die. She and Enid body-swap, and Enid begins transforming without full moons, edging toward alpha.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Sets the finale's death stakes and begins Enid's slide toward the alpha state that ends the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Dort turned to stone",
+          "text": "Principal Dort is exposed as the cult leader who trafficked Bianca and was using her siren voice to shake down families. Ajax turns him to stone at the gala.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Removes the season's authority figure, frees Bianca from her long compulsion, and clears the board for the Isaac finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Thing kills Isaac",
+          "text": "Isaac kidnaps Pugsley for the Addams electricity that would cure Françoise. Thing — Isaac's own severed hand — turns on him, killing him, but Françoise dies in the fight.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Resolves the Isaac plot, rewrites Thing's identity, and leaves Tyler orphaned and dangerous going into S3.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Nevermore has closed again. Enid has run north as an alpha werewolf, Tyler has been taken in by Isadora Capri's secret pack of Hydes, and Grandmama Frump's captive daughter Ophelia is writing 'Wednesday Must Die' in blood on her cell wall.",
+        "questions": [
+          "Can Enid come back from full alpha, and what has she become out there?",
+          "What is Capri's pack of Hydes actually for, and does it want Wednesday?",
+          "Why has Grandmama Frump been hiding a psychic Addams aunt who wants Wednesday dead?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Wednesday Addams",
+          "line": "Survived being hurled from a window and has her psychic visions back, but is haunted by Weems' warning that an Addams will die."
+        },
+        {
+          "name": "Enid Sinclair",
+          "line": "Now a full werewolf who risked becoming a permanent alpha to dig Wednesday out of a grave, then fled north alone."
+        },
+        {
+          "name": "Tyler Galpin",
+          "line": "Broken out of Willow Hill, lost his mother Françoise, and has been recruited into Isadora Capri's secret pack of Hydes."
+        },
+        {
+          "name": "Aunt Ophelia",
+          "line": "Morticia's deranged psychic sister, kept locked away by Grandmama and now writing 'Wednesday Must Die' in blood on her cell wall."
+        },
+        {
+          "name": "Hester Frump",
+          "line": "Wednesday's imperious Grandmama, coerced into funding Nevermore and secretly keeping her daughter Ophelia caged at her estate."
+        },
+        {
+          "name": "Isadora Capri",
+          "line": "Nevermore's part-Hyde music professor who taught Wednesday to control Hydes and quietly enlisted Tyler into her pack."
+        },
+        {
+          "name": "Pugsley Addams",
+          "line": "Wednesday's younger brother, a first-year Nevermore student, briefly kidnapped for the Addams electrical powers Isaac needed."
+        },
+        {
+          "name": "Morticia Addams",
+          "line": "Took Goody Addams's book from Wednesday and burned it, and is at open war with her mother Hester over the family."
+        },
+        {
+          "name": "Bianca Barclay",
+          "line": "Freed at last from Dort's siren-suppressing pendant, and no longer being used to extort Nevermore's wealthy parents."
+        },
+        {
+          "name": "Thing",
+          "line": "The Addams family's sentient hand, revealed as Isaac Night's original severed hand, which tore free and killed him in the finale."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "slug": "mindhunter",
+  "generatedFor": "MINDHUNTER",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · A hostage dies on his watch",
+          "text": "FBI negotiator Holden Ford loses a hostage-taker to suicide in Pennsylvania and is bumped to teaching, where he becomes obsessed with what makes killers tick.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Ford's founding wound and the intellectual itch that drives every choice he makes from here.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Tench pulls him into the road",
+          "text": "Bill Tench, head of behavioral science, takes Ford on the FBI's road school circuit, and a brutal Sacramento rape-murder convinces them they need a new framework.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up the Ford–Tench partnership and the field cases that will justify the interviews.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Kemper opens the door",
+          "text": "Ford talks his way in to see Edmund Kemper alone in California, and the co-ed killer's articulate self-analysis convinces him prisons hold a research goldmine.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The first interview is the origin of the whole method; Kemper remains Ford's touchstone all season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A unit in the basement",
+          "text": "Assistant Director Shepard exiles the interviews to the FBI basement, but Ford and Tench recruit Boston academic Wendy Carr and secure $385,000 in grant money to formalise the study.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Turns a rogue side project into an institutional unit — the shape the show now runs on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The method solves a case",
+          "text": "Applying Kemper's psychology to a Sacramento killing and a Georgia child murder, the team helps break Dwight Taylor's confession and coaches police into cornering Darrell Gene Devier.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Proves profiling works in the field, which is the leverage Ford will overplay.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Ford's mouth gets away from him",
+          "text": "Ford brags to police after the Devier confession, an unredacted Richard Speck tape reaches the OPR via Gregg Smith, and Carr flies to Georgia to contain the damage.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "This is the misconduct trail that walks straight into season two's power shift.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Kemper puts his arms around him",
+          "text": "Summoned to a hospital after Kemper's suicide attempt, Ford is embraced by the killer, flees, and collapses in the corridor in a panic attack as Debbie leaves him.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Leaves Ford medically and personally broken — the state season two opens on.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ford is face-down in a Californian hospital corridor mid-panic-attack, the OPR is holding the Speck tape, and in Kansas an ADT serviceman is burning his sadistic drawings of women.",
+        "questions": [
+          "Will the OPR misconduct inquiry end Ford's career or the whole unit?",
+          "Can Ford keep working after breaking down in front of Kemper?",
+          "Who is the Kansas man building trophies in the dark?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Holden Ford",
+          "line": "FBI agent whose interviews built the unit and whose bragging then endangered it; ends the season alone and having a panic attack on a hospital floor."
+        },
+        {
+          "name": "Bill Tench",
+          "line": "Head of behavioral science and Ford's road partner; the steady hand covering for Ford's overreach while quietly worrying about his nonverbal son Brian."
+        },
+        {
+          "name": "Wendy Carr",
+          "line": "Boston academic who left tenure and a closeted relationship to join the unit full-time; now the study's methodological conscience and Ford's minder in Georgia."
+        },
+        {
+          "name": "Edmund Kemper",
+          "line": "The co-ed killer whose candour launched the method; ends the season having survived a suicide attempt and physically pulled Ford into an embrace.",
+          "note": "Kemper remains the archetype Ford measures every new subject against."
+        },
+        {
+          "name": "Debbie Mitford",
+          "line": "Sociology grad student who dated Ford through the season; broke up with him after his jealousy and interrogation-style questioning drove her away."
+        },
+        {
+          "name": "Gregg Smith",
+          "line": "New BSU hire who secretly mailed the unedited Speck tape to the OPR, planting the misconduct case inside the unit."
+        },
+        {
+          "name": "The ADT serviceman",
+          "line": "A married Wichita installer with a wife and infant daughter, seen practising knots and burning drawings — a killer the audience knows about but the FBI does not."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · New boss, clean slate",
+          "text": "Ford wakes in hospital with a diagnosed panic disorder; Shepard is forced out over Ford's misconduct and replacement Ted Gunn kills the OPR inquiry and backs the unit.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Wipes the season one scandal and hands the BSU the institutional cover it never had before.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · BTK becomes the case",
+          "text": "Tench opens the Wichita file, and a Berkowitz interview confirms the strangler is a copycat student of other killers — a live, uncaught subject the unit is now hunting.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Names BTK as the show's long arc and reframes the interviews as active investigation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · A body in Nancy's listing",
+          "text": "A toddler is found tied to a cross in a house Tench's wife Nancy is showing, and the Tenches slowly realise their adopted son Brian was present at the killing.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The domestic collapse that pulls Tench off the road and out of the marriage by season's end.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Atlanta and a black profile",
+          "text": "Three mothers ask Ford to look at their murdered children; his profile of a black serial offender is politically toxic in Atlanta and the FBI is initially pushed out.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Sets up the case that consumes the rest of the season and tests whether the method survives politics.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Manson, then Tex",
+          "text": "Ford and Tench see Manson, who denies everything; Tench flies home and Ford stays alone with Tex Watson, whose account of being remade by Manson vindicates the influence model.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The intellectual centrepiece of the season and the last time Tench and Ford are aligned before Atlanta.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Watch the bridges",
+          "text": "Back in Atlanta, Ford predicts the killer will dump victims in rivers; Jim Barney has the bridges watched and a suspect is caught at a dump site.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The one operational win of the case, and the sole basis on which Wayne Williams is later charged.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Two charges, and the rest closed",
+          "text": "Wayne Williams is charged with two murders; APD closes the remaining child cases against Ford's objections, Nancy moves out with Brian, and BTK is shown gloating over his trophies.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Every major thread ends unresolved and worse than it began — the exact state season three inherits.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Williams is charged for two killings while the other Atlanta families get no answers, Tench comes home to an empty house, and BTK is still free in Wichita surrounded by his trophies.",
+        "questions": [
+          "Did they actually catch the right man in Atlanta, or just the one they could charge?",
+          "Is Tench's marriage over, and does he blame the job?",
+          "How much longer can BTK operate uncaught while the unit chases other cases?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Holden Ford",
+          "line": "Managing a panic disorder and working under Gunn's protection; publicly credited for Atlanta but privately certain most of the murders remain unsolved."
+        },
+        {
+          "name": "Bill Tench",
+          "line": "Split between Atlanta and a collapsing home life; ends the season alone in the house after Nancy takes Brian and leaves."
+        },
+        {
+          "name": "Wendy Carr",
+          "line": "Pulled off interviews by Gunn and restricted to analysis; ended her relationship with bartender Kay after overhearing Kay deny her to an ex-husband."
+        },
+        {
+          "name": "Ted Gunn",
+          "line": "New Assistant Director who champions the BSU, killed the OPR case, and steers the unit toward operational work — but reins Carr in when it suits him."
+        },
+        {
+          "name": "Nancy Tench",
+          "line": "Realtor whose listing became a crime scene; after Brian's involvement in the toddler's death surfaced, she moved out with him without warning Bill."
+        },
+        {
+          "name": "Brian Tench",
+          "line": "The Tenches' adopted son; present at the toddler's killing, now age-regressing at home and the reason Nancy leaves."
+        },
+        {
+          "name": "Jim Barney",
+          "line": "Black FBI agent on the Atlanta case whose bridge-surveillance idea produced the only suspect the task force could actually charge."
+        },
+        {
+          "name": "Wayne Williams",
+          "line": "The man arrested at a river dump site and charged with two of the Atlanta murders; the rest of the child cases were closed on his arrest without further evidence."
+        },
+        {
+          "name": "The BTK Strangler",
+          "line": "The Wichita ADT serviceman, still uncaught and unidentified by the FBI, last seen surrounded by driver's licences and photographs taken from his victims."
+        }
+      ]
+    }
+  }
+}

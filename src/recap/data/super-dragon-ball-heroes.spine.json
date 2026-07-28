@@ -1,0 +1,205 @@
+{
+  "slug": "super-dragon-ball-heroes",
+  "generatedFor": "Super Dragon Ball Heroes",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Prison Planet call",
+          "text": "Fu appears at Beerus' planet claiming Trunks is held on his 'Prison Planet' experiment. Goku, Vegeta and Future Mai travel there to free him.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Fu as the arc's architect and the mission that pulls the cast off Beerus' world.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Xeno alliance and the barrier",
+          "text": "They meet Xeno Goku of the Time Patrol and learn a barrier locks them in until they gather Dragon Balls scattered on the planet.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the Time Patrol Saiyans as reluctant allies and the rule that keeps the fights on-planet.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Cumber unleashed",
+          "text": "Fu releases Cumber, an evil Saiyan whose aura drives Goku berserk. Golden Cooler snaps him out, and Future Mai passes over the Supreme Kai's Potara earrings.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Cumber is the season's opposition and the reason the Saiyans reach for fusion; Cooler's presence sets up his later reprisal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Vegito vs. Golden Great Ape",
+          "text": "Goku and Vegeta fuse into Vegito to fight Cumber, but he becomes a Golden Great Ape; the strain defuses them without a winner.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Shows that even fused Blue Kaio-ken cannot close out Cumber, forcing the Xeno pair into the fight.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Xeno Vegito breaks the shield",
+          "text": "Xeno Goku and Xeno Vegeta arrive as Super Saiyan 4s, fuse into Xeno Vegito, and subdue Cumber with a Kamehameha that breaks the Prison Planet's shield.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The shield's collapse is what lets the villains eventually leave; the fusion is why Cumber survives to be collected.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Ultra Instinct returns",
+          "text": "Goku reawakens Ultra Instinct and finally beats Cumber. Xeno Goku teleports the others to safety, leaving Goku alone as the planet collapses.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Sets Goku's Ultra Instinct as the yardstick going forward and isolates him for the cliffhanger.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Zamasu returns",
+          "text": "Five figures appear. One is Fusion Zamasu, presumed dead. They take the unconscious Cumber and vanish, stranding Goku as the planet explodes.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Reveals the season was a setup for a larger conspiracy and defines every open thread of season 2.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Fu's Prison Planet is destroyed and Goku is stranded on top of it. Fusion Zamasu, supposedly gone, has just arrived with four unknown allies and made off with Cumber.",
+        "questions": [
+          "Who are the four figures standing with Zamasu?",
+          "How is Fusion Zamasu alive and one-eyed?",
+          "What does his group want with Cumber?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Goku",
+          "line": "Reawakened Ultra Instinct in the final fight; last seen alone on the collapsing Prison Planet."
+        },
+        {
+          "name": "Vegeta",
+          "line": "Fused with Goku as Vegito during the arc; teleported to safety by Xeno Goku."
+        },
+        {
+          "name": "Future Trunks",
+          "line": "Freed from Fu's cell after being the bait; back with the group and unhurt."
+        },
+        {
+          "name": "Future Mai",
+          "line": "Brought word of Trunks' capture and delivered the Supreme Kai's Potara earrings that enabled Vegito."
+        },
+        {
+          "name": "Fu",
+          "line": "Cosmic experimenter who staged the whole arc; enraged after his lab was destroyed and still at large.",
+          "note": "Real architect behind every event."
+        },
+        {
+          "name": "Cumber",
+          "line": "The 'evil Saiyan' whose aura corrupts other Saiyans; unconscious and now in Zamasu's group's custody."
+        },
+        {
+          "name": "Fusion Zamasu",
+          "line": "Immortal god thought destroyed; returns with an eyepatch, leading a mysterious five-strong faction."
+        },
+        {
+          "name": "Xeno Goku & Xeno Vegeta",
+          "line": "Time Patrol counterparts from another timeline; fought as Super Saiyan 4s and Xeno Vegito before returning home."
+        },
+        {
+          "name": "Cooler",
+          "line": "Reappeared as Golden Cooler and chased Fu through his escape portal off the Prison Planet."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Universe 6 invaded",
+          "text": "Back on Beerus' planet, U6's Supreme Kai begs for help. Tuffle siblings Oren and Kamin, escapees from Fu's planet, are ravaging his universe.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Opens the multi-universe war and introduces the first two members of Hearts' gang.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Hearts and the Universe Seed",
+          "text": "Their leader Hearts reveals a 'Universe Seed' and a plan to kill the Omni-King and every god. Zamasu, alive and eyepatched, stands with him.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Names the main villain, states the season-long stakes, and confirms who was with Zamasu in the S1 cliffhanger.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Goku returns, Universe 11 falls",
+          "text": "Goku returns from the Grand Minister with new control of Ultra Instinct as Hearts' gang tears through Universe 11, wounding Jiren and moving on.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Puts Goku back in play, shows Jiren cannot solo the villains, and sets up Universe 11's later assist.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Lagss and Meta Cooler",
+          "text": "A fifth villain, Lagss, emerges from a Universe Seed crystal. In Universe 3, a robotic Meta Cooler sent by Fu subdues Cumber before overheating and fleeing.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Completes Hearts' roster, removes Cumber from the board, and shows Fu is still steering events from the sidelines.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Kamioren empowered and broken",
+          "text": "On Earth, Oren and Kamin fuse into Kamioren, whom Hearts empowers with the Universe Seed. Goku masters Ultra Instinct and shatters them.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Establishes what the Universe Seed can do and why Hearts will turn it on himself next.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Godslayer Hearts erases Zamasu",
+          "text": "Hearts absorbs the Seed himself and gains godslayer power. When Zamasu tries to resume his war on mortals, Hearts obliterates him without effort.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Closes the Zamasu thread from S1, defines Hearts' end-form, and sets the ceiling Gogeta must clear.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Gogeta finishes Hearts, Fu waits",
+          "text": "Goku and Vegeta fuse into Gogeta and, with Jiren and Hit, break Hearts' meteor and kill him. Elsewhere, Fu smiles and readies his next experiment.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Resolves the visible arc but explicitly hands the story to Fu, who is the actual continuing thread.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Hearts is dead and his gang is scattered, but the true architect of everything since the Prison Planet, Fu, watches from a hidden lab and declares that his next experiment is about to begin.",
+        "questions": [
+          "What is Fu's next experiment?",
+          "Why has he been orchestrating these universe-spanning battles?",
+          "Which universe or fighter is his next target?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Goku",
+          "line": "Mastered Ultra Instinct in the fight with Kamioren and fused with Vegeta as Gogeta to finish Hearts."
+        },
+        {
+          "name": "Vegeta",
+          "line": "Reached his evolved Super Saiyan Blue in Universe 11; fused with Goku via the Fusion Dance into Gogeta."
+        },
+        {
+          "name": "Future Trunks",
+          "line": "Fought alongside the Saiyans throughout the invasion; back on Earth after Hearts' defeat."
+        },
+        {
+          "name": "Fu",
+          "line": "Revealed as the true hand behind both arcs; watching from a new lab and announcing his next experiment is ready."
+        },
+        {
+          "name": "Hearts",
+          "line": "Leader of the Core Area invaders; absorbed the Universe Seed as an 'Ultimate Godslayer' before Gogeta killed him."
+        },
+        {
+          "name": "Jiren",
+          "line": "Universe 11's strongest, dispatched by his Supreme Kai; helped Gogeta shatter Hearts' meteor."
+        },
+        {
+          "name": "Hit",
+          "line": "Universe 6's assassin, dispatched by his Supreme Kai; joined Jiren in the final assist on the meteor."
+        },
+        {
+          "name": "Grand Minister",
+          "line": "Trained Goku in Ultra Instinct between arcs and observed the final battle; sensed Zamasu's death and Hearts' rise."
+        },
+        {
+          "name": "Fusion Zamasu",
+          "line": "Rejoined Hearts to resume his purge of mortals; erased by Hearts once the Universe Seed was fully absorbed."
+        }
+      ]
+    }
+  }
+}

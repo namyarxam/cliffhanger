@@ -1,0 +1,101 @@
+{
+  "slug": "broadchurch",
+  "generatedFor": "Broadchurch",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · A boy on the beach",
+          "text": "Eleven-year-old Danny Latimer is found dead below the Broadchurch cliffs. New DI Alec Hardy — hired over local DS Ellie Miller — leads the murder inquiry.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the crime, the town, and the Hardy–Miller partnership that anchors everything after.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Mark's lies",
+          "text": "Danny's father Mark lies about his whereabouts; his prints turn up in Danny's blood in a clifftop hut, and Beth learns his real alibi was an affair with Becca Fisher.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Puts Mark at the top of the suspect list and detonates the Latimer marriage — the family arc that carries into next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Every neighbour a suspect",
+          "text": "Suspicion moves house to house — Jack Marshall's old conviction, Susan Wright's secrets, Paul Coates's drinking, Nigel Carter's temper. Every neighbour is a possibility.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The paranoia engine of the season: no one in Broadchurch is above suspicion, which is what the killer will hide behind.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The town turns on Jack",
+          "text": "Journalist Karen White pushes Olly to publish Jack's history; a mob forms, his car is vandalised, and Jack kills himself. Coates accuses the town of failing an innocent man.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The moral scar of the season — the community destroyed the wrong man, and the guilt of it defines Broadchurch afterwards.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The boat and the phone",
+          "text": "Forensics link Danny to the burnt boat; Susan reveals her son Nigel dumped the body on the beach. His alibi holds, but Danny's missing smartphone is suddenly switched on nearby.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Physical evidence narrows the case from the whole town to a single household — the last step before the killer is exposed.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The signal to Ellie's house",
+          "text": "Hardy traces the phone signal to the Miller house. Interviewing Ellie's son Tom, he learns Tom and Danny had fallen out — but the phone was never Tom's.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The moment the investigation crosses the line into Ellie's own home, setting up the reveal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Joe confesses",
+          "text": "Ellie's husband Joe confesses to grooming Danny at the summer house and strangling him when Danny threatened to tell. Ellie attacks Joe in the cell and moves out with her sons.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The reveal that reframes the whole season and detonates Ellie's life — every thread going forward hangs off this.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Joe Miller is in a cell awaiting trial for Danny's murder, having confessed to strangling the boy after grooming him. Ellie's marriage has collapsed, the Latimers are staring down a court case, and Hardy is leaving Broadchurch with the earlier Sandbrook killings still unsolved.",
+        "questions": [
+          "Will Joe's confession actually hold up in court?",
+          "Can Ellie stay in Broadchurch — or in the police — after what her husband did?",
+          "What really happened to the girls at Sandbrook?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Alec Hardy",
+          "line": "DI who solved Danny's murder; seriously ill, disgraced by his failed Sandbrook case, and planning to leave Broadchurch."
+        },
+        {
+          "name": "Ellie Miller",
+          "line": "DS whose own husband turned out to be the killer; has taken her sons out of the family home and into a hotel."
+        },
+        {
+          "name": "Joe Miller",
+          "line": "Ellie's husband; confessed to grooming Danny and strangling him when the boy threatened to tell, now in custody."
+        },
+        {
+          "name": "Beth Latimer",
+          "line": "Danny's mother; pregnant with a new baby and in fragile reconciliation with Mark after his affair."
+        },
+        {
+          "name": "Mark Latimer",
+          "line": "Danny's father; grieving, publicly exposed as an adulterer, trying to hold his family together."
+        },
+        {
+          "name": "Tom Miller",
+          "line": "Ellie's older son and Danny's former friend; wiped messages and files off his phone the day Danny died."
+        },
+        {
+          "name": "Karen White",
+          "line": "National reporter who came to Broadchurch chasing Hardy's downfall and stayed to cover Danny's case."
+        },
+        {
+          "name": "Paul Coates",
+          "line": "Town priest with a drinking history who conducted Danny's funeral and named the town's guilt over Jack."
+        }
+      ]
+    }
+  }
+}

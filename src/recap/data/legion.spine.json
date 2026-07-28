@@ -1,0 +1,304 @@
+{
+  "slug": "legion",
+  "generatedFor": "Legion",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The kiss at Clockworks",
+          "text": "At Clockworks Psychiatric Hospital, David kisses fellow patient Syd goodbye; they swap bodies and her uncontrolled use of his powers kills his friend Lenny.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes David, Syd, the body-swap rule, and the first proof that David's 'illness' is something else.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Summerland extraction",
+          "text": "Melanie Bird's mutant team Summerland breaks David out of Division 3 and tells him his lifelong schizophrenia has really been his mutant powers manifesting.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Defines the two sides — Summerland and Division 3 — that persist into S2, and reframes David's diagnosis as the show's central lie.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The memories are wrong",
+          "text": "Guided memory work reveals David's past has been falsified — his childhood friend was really a man named Benny, not Lenny — and something has been hiding inside his mind for years.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The turn from 'David is unwell' to 'David is occupied' — every later beat sits on this recognition.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Shadow King",
+          "text": "Cary finds a parasite in David that emerges wearing Lenny's face and admits it has puppeted him since childhood; Oliver names it Amahl Farouk, the Shadow King.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Names the antagonist who drives the next two seasons and reveals Lenny was never David's friend.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The adoption secret",
+          "text": "Farouk reveals David's biological father hid him via adoption to protect him from the Shadow King, who found him anyway.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Plants the mysterious powerful father whose identity S3 will finally deliver.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Farouk walled off",
+          "text": "Using Cary's device the team walls Farouk off inside David's mind; David wakes lucid for the first time and singlehandedly overpowers a Division 3 raid on Summerland.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "First time we see David functional, and Division 3 begins negotiating with him rather than hunting him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Farouk escapes, orb takes David",
+          "text": "During Farouk's extraction he leaps into Oliver's body and escapes into the world; moments later a strange floating orb appears and abducts David from Summerland.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Both cliffhangers that S2 opens on — Farouk loose in Oliver, David missing.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "David has just been freed from years of possession, but Farouk has escaped inside Oliver's body — and before David can catch his breath, a floating orb appears and carries him away.",
+        "questions": [
+          "Who sent the orb, and where has David been taken?",
+          "Can Summerland reach Farouk before he rebuilds his full power?",
+          "What is Farouk planning now that he finally has a mutant body of his own?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "David Haller",
+          "line": "A profoundly powerful mutant misdiagnosed as schizophrenic for most of his life; newly aware of his abilities but abducted by a mysterious orb the moment he was freed of Farouk."
+        },
+        {
+          "name": "Sydney 'Syd' Barrett",
+          "line": "David's girlfriend, a mutant who cannot be touched without swapping into another person's body; the emotional anchor who kept fighting for him through the possession."
+        },
+        {
+          "name": "Amahl Farouk / Shadow King",
+          "line": "An ancient parasitic mutant who lived inside David since childhood; now escaped into Oliver's body and free in the world for the first time in decades."
+        },
+        {
+          "name": "Lenny Busker",
+          "line": "David's supposed drug-addicted friend from Clockworks whose form Farouk wore inside his head; her original body is dead."
+        },
+        {
+          "name": "Oliver Bird",
+          "line": "Melanie's telepath husband, rescued from twenty years lost on the astral plane only to be immediately hijacked by Farouk as his getaway vehicle."
+        },
+        {
+          "name": "Melanie Bird",
+          "line": "Founder of the Summerland mutant sanctuary and the woman who convinced David he was not sick; she has now lost Oliver a second time."
+        },
+        {
+          "name": "Cary Loudermilk",
+          "line": "Summerland's scientist and the one who identified Farouk as a parasite; shares his body with Kerry, a warrior who emerges when action is needed.",
+          "note": "Cary/Kerry body-sharing is important for later seasons."
+        },
+        {
+          "name": "Ptonomy Wallace",
+          "line": "The Summerland memory mutant with perfect recall who guides David through his own past and can walk inside other people's minds."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · A missing year",
+          "text": "A year after the orb, David reappears claiming only hours have passed; Summerland and Division 3 now work together to stop Farouk from digging up his original buried body.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Resets the board — the two sides are allies now, and the whole season is a race for Farouk's body.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Future Syd's ultimatum",
+          "text": "David is secretly contacted by a future version of Syd who warns that killing Farouk brings a plague that ends humanity, and orders him to help Farouk instead.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Motivates every choice David makes this season and is the excuse he clings to even after it looks like villainy.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The double game",
+          "text": "David and present Syd covertly aid Farouk in searching for his body while trying to hide their double game from the rest of the team.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets up the trust collapse that drives the finale — every later reveal is a debt from this deception.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Lenny in Amy's body",
+          "text": "Farouk murders David's sister Amy and reincarnates Lenny inside her body using stolen DNA; Lenny surrenders to Division 3 and tells David what was done.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Amy's death breaks the deal with Farouk and returns Lenny to the story as a real person for the first time.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The desert race",
+          "text": "Vowing revenge for Amy, David races Farouk to a shifting desert where his body is buried; Ptonomy dies to a Farouk-planted delusion and is preserved in the Vermillion Mainframe.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Ptonomy's transfer into the Mainframe is the form he takes going forward, and the race is the season's spine.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Farouk restored, David victorious",
+          "text": "Farouk reunites with his true body and full power; David defeats him only after Lenny activates the Choke, but Syd now knows David will one day cause the apocalypse.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Both the ostensible win and the moment the team fractures — Syd chooses to act on the future she was shown.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · David the villain",
+          "text": "When Syd tries to shoot him, David rewrites her memory and sleeps with her; confronted at Farouk's trial, David escapes with Lenny while a jailed Farouk quietly restores Syd's memory.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The full inversion — David becomes the antagonist S3 opens hunting, and Syd's restored memory is what motivates her.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "David has been exposed as a monster who assaulted Syd and fled with Lenny into hiding; Farouk sits arrested at the peak of his restored power, and the team he abandoned is left to hunt the man they trained.",
+        "questions": [
+          "Where has David gone, and what will he do next?",
+          "Now that Syd remembers everything, will she be the one to bring him in?",
+          "Is Farouk still the greater danger, or is the future Syd warned about already unstoppable?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "David Haller",
+          "line": "Now trained in his powers but revealed as a manipulator who rewrote Syd's mind and assaulted her; fled with Lenny after his team turned on him."
+        },
+        {
+          "name": "Sydney Barrett",
+          "line": "David's ex-girlfriend and victim; Farouk restored her memories so she now knows exactly what David did and what he will become."
+        },
+        {
+          "name": "Amahl Farouk / Shadow King",
+          "line": "Reunited with his original body and at full strength, but captured by Division 3 at the moment of his triumph."
+        },
+        {
+          "name": "Lenny Busker",
+          "line": "Alive again inside David's dead sister Amy's body — a corpse infused with her old DNA and consciousness by Farouk; escaped alongside David."
+        },
+        {
+          "name": "Oliver Bird",
+          "line": "Freed from Farouk during the desert fight; three years later he is living happily with Melanie inside the astral plane."
+        },
+        {
+          "name": "Melanie Bird",
+          "line": "Nearly broken by Oliver's second loss and briefly Farouk's puppet through her grief; now reunited with Oliver in the astral plane."
+        },
+        {
+          "name": "Cary Loudermilk",
+          "line": "The team's scientist, still sharing his body with Kerry; helped build the Choke that finally beat Farouk and now knows David is a monster."
+        },
+        {
+          "name": "Kerry Loudermilk",
+          "line": "The warrior who lives inside Cary and emerges for combat; killed the desert minotaur guarding Farouk's body."
+        },
+        {
+          "name": "Ptonomy Wallace",
+          "line": "Summerland's memory mutant; his body died to a Farouk delusion and his consciousness was preserved inside the Vermillion Mainframe that houses Division 3's leader."
+        },
+        {
+          "name": "Clark Debussy",
+          "line": "The Division 3 field officer, burned from David's first escape; now leads the ground pursuit of David alongside the mutants he once hunted."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Switch finds the cult",
+          "text": "A young mutant nicknamed Switch, whose doorways can travel through time, is drawn to David's remote desert cult; in every timeline she witnesses, Syd tracks David down and kills him.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the new arrival who makes the season possible and establishes that killing David is Syd's default outcome.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Cary supercharges Switch",
+          "text": "David captures Cary and mind-controls him into enhancing Switch's powers, aiming to travel back and stop Farouk from ever possessing him as a baby.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Establishes David's entire plan and shows how far his coercion has escalated — his own former allies are now tools.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The Xavier house",
+          "text": "In 1960s Morocco and at home with his parents, David watches helplessly as Charles and Gabrielle Xavier fail to stop past-Farouk from possessing baby David.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Delivers the show's biggest reveal — David is Charles Xavier's son — and sets up the truce that ends the show.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Time cracks, Lenny breaks",
+          "text": "Time destabilises and time demons torture everyone through their worst memories; Lenny, sickened by David's villainy and her own, slits her throat before Cary escapes with Switch.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Loses Lenny for good and introduces the demons that will menace both sides of the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The airship massacre",
+          "text": "David boards Division 3's airship, throws Clark into space, wipes Syd's memory of who he is, recaptures Switch, and drags her back to erase Farouk himself.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "David's point-of-no-return act and the moment the team formally becomes his pursuers across time.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Syd reborn",
+          "text": "Syd's stolen mind is reborn as a baby in the astral plane and raised to adulthood by Oliver and Melanie; grown, she returns to her body and follows David through time.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Reintroduces Syd as a whole person against David and pays off Oliver and Melanie's retirement from S2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The truce that erases them",
+          "text": "Present Farouk sides with David; Charles brokers a truce with both Farouks that spares David but erases the David and Syd of this timeline so a healed one can begin.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The show's ending — the characters we followed dissolve to give a rewritten baby David a chance.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Charles's truce with both Farouks spares his son but unwinds the future David and Syd had lived through; the timeline resets and the two of them fade away, hoping the new versions of themselves will find a better life.",
+        "questions": [
+          "Will the new David grow up free of Farouk's shadow?",
+          "Can the peace between Charles and both Farouks actually hold once the old timeline is gone?",
+          "What becomes of the friends left behind in the world David unmade?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "David Haller",
+          "line": "The David we followed through three seasons: apocalypse-maker, cult leader, and Charles Xavier's son, erased along with his future when the truce rewrote the timeline."
+        },
+        {
+          "name": "Sydney Barrett",
+          "line": "David's ex who lived a second childhood in the astral plane before returning to hunt him; erased with David when the timeline reset."
+        },
+        {
+          "name": "Switch",
+          "line": "A young mutant whose doorways travel through time; her father revealed she can command the time demons and elevated her to a higher plane."
+        },
+        {
+          "name": "Amahl Farouk / Shadow King",
+          "line": "Now split between his past and present selves; the present-day one struck a truce with Charles Xavier to spare David and end the war."
+        },
+        {
+          "name": "Charles Xavier",
+          "line": "David's telepath father, a war veteran and builder of Cerebro; brokered the truce between David and the Farouks and reunited with his wife."
+        },
+        {
+          "name": "Gabrielle Xavier",
+          "line": "David's mother, a Holocaust survivor tormented by Farouk during her pregnancy with David; reconciled with Charles at the end."
+        },
+        {
+          "name": "Lenny Busker",
+          "line": "Ravaged by David's cult and the time demons, she took her own life in front of David after finally naming him a villain."
+        },
+        {
+          "name": "Cary Loudermilk",
+          "line": "Broke free of David's mind control, hid Switch, and led the team into the past; now permanently separated from Kerry after transferring her wounds to himself."
+        },
+        {
+          "name": "Kerry Loudermilk",
+          "line": "Physically separated from Cary and aged rapidly by their split; reunited with him after the fight, no longer sharing one body."
+        }
+      ]
+    }
+  }
+}

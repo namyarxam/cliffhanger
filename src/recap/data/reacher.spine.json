@@ -1,0 +1,292 @@
+{
+  "slug": "reacher",
+  "generatedFor": "Reacher",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Arrested on arrival",
+          "text": "Drifter Jack Reacher is arrested for murder the moment he arrives in Margrave, Georgia; the dead man turns out to be his estranged brother Joe.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Reacher's premise and the personal stake that keeps him in one town for an entire season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A town owned",
+          "text": "Detective Finlay and Officer Roscoe help Reacher expose a conspiracy: businessman Kliner owns the police chief and the mayor, and Joe was investigating him.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces Reacher's two allies for the season and names the enemy he is up against.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · What Joe was chasing",
+          "text": "Joe was a Secret Service agent tracking counterfeit dollars; his colleague Molly Beth brings his files to Atlanta but is killed seconds before Reacher reaches her.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Explains why the conspiracy is worth killing over and why the trail keeps going cold on Reacher.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Neagley steps in",
+          "text": "Reacher calls in old Army investigator Frances Neagley; together they trace the scheme to Kliner Industries, but Kliner is murdered before they can confront him.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "First appearance of Neagley, the one ally who keeps recurring, and it removes the man Reacher thought was in charge.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The son and the fed",
+          "text": "Kliner's son KJ takes over, revealing he killed both his father and Joe; FBI agent Picard is also on the take, and takes Roscoe, Finlay and the Hubbles hostage.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Names Joe's real killer and pulls the last trusted authority figure out from under Reacher.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Warehouse in flames",
+          "text": "Reacher, Neagley, Finlay and banker Hubble storm KJ's warehouse: Roscoe kills Mayor Teale, Finlay kills Picard, and Reacher drowns KJ in bleach chemicals.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Closes out the season's conspiracy and confirms Joe is avenged.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Reacher moves on",
+          "text": "Reacher buries Joe's medal where he died and walks out of Margrave alone; Roscoe stays to rebuild the town, and Finlay heads back to Boston.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Sets Reacher's default state — alone, on the road — that the next season has to pull him out of.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Kliner's counterfeiting empire is ash, Joe's medal is buried in the dirt where he fell, and Reacher walks out of Margrave with nothing but his toothbrush and a debt he considers paid.",
+        "questions": [
+          "Where does the road take Reacher after Margrave?",
+          "Will Roscoe take Reacher's suggestion to run for mayor and rebuild the town?",
+          "Do any of these people stay in Reacher's life once he leaves, or was this a one-time crossing?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jack Reacher",
+          "line": "Ex-Army MP turned drifter, freshly out of Margrave with his brother finally avenged."
+        },
+        {
+          "name": "Frances Neagley",
+          "line": "Reacher's old Army investigator, now a PI he trusts unconditionally; the one ally he keeps in his life."
+        },
+        {
+          "name": "Oscar Finlay",
+          "line": "The Margrave detective who cracked the case with Reacher; heading back to Boston to start over after losing his wife.",
+          "note": "Widower, not divorced — a detail he only tells Reacher late in the season."
+        },
+        {
+          "name": "Roscoe Conklin",
+          "line": "The Margrave officer who sided with Reacher from day one; stays behind to rebuild the town after kissing him goodbye."
+        },
+        {
+          "name": "Joe Reacher",
+          "line": "Reacher's older brother and a Secret Service investigator, murdered in Margrave for chasing the counterfeit ring."
+        },
+        {
+          "name": "Kliner Sr.",
+          "line": "The Margrave businessman running the counterfeit operation; killed mid-season by his own son."
+        },
+        {
+          "name": "KJ Kliner",
+          "line": "Kliner's son — the real killer of Joe and of his own father; drowned by Reacher in the warehouse assault."
+        },
+        {
+          "name": "Picard",
+          "line": "FBI agent Finlay trusted with the Hubbles' safety, revealed as a conspirator and killed by Finlay in the final raid."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Code on a receipt",
+          "text": "Reacher's ATM receipt carries a military emergency code from Neagley; teammate Calvin Franz was thrown from a helicopter over the Catskills.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The inciting call that pulls Reacher off the road and names the murder he has to answer for.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The team reassembles",
+          "text": "Reacher's old Special Investigations unit reassembles in New York — Neagley, David O'Donnell, Karla Dixon — and find teammate Tony Swan missing, his dog dead of dehydration.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the ensemble the whole season runs on and plants the Swan mystery that pays off at the end.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · More of them dead",
+          "text": "Two more teammates, Sanchez and Orozco, turn up dead in the Catskills; the trail leads to defense contractor New Age Technologies.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Confirms someone is hunting the whole unit and points the investigation at the corporate villain.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Little Wing",
+          "text": "New Age's classified 'Little Wing' program builds heat-seeking missiles; head of security Shane Langston is selling 650 of them to terrorist broker A.M.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Names the real conspiracy and the man Reacher will personally kill for it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Russo pays for it",
+          "text": "NYPD detective Guy Russo joins the team but dies saving whistleblower Marlo Burns and her daughter from Langston's hitmen.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The season's emotional cost — a cop who trusted them and paid for it, whose death Reacher makes personal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Out of the chopper",
+          "text": "Reacher throws Langston from a helicopter as promised, avenging Franz; Langston had murdered Swan months earlier for refusing to join the scheme.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Closes both the Franz and Swan threads and delivers the promised kill.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · $65 million and gone",
+          "text": "The team destroys New Age's remaining engineers with a Little Wing missile, splits $65 million between themselves and their fallen teammates' families, and disbands.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Resets Reacher to his default drifter state, but now with a fortune he never wanted, and returns the recurring cast to the wings.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The unit's killers are dead, Little Wing is buried by Homeland Security, and every surviving investigator walks away with roughly eight million dollars they never asked for. Reacher goes back on the road alone.",
+        "questions": [
+          "Will Reacher, Neagley, Dixon and O'Donnell ever regroup, or was this a one-time reunion?",
+          "What does a man with a toothbrush and no address do with a fortune?",
+          "Whose call pulls Reacher off the highway next?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jack Reacher",
+          "line": "Still the drifter, now sitting on a share of $65 million he has no use for and no home to spend it in."
+        },
+        {
+          "name": "Frances Neagley",
+          "line": "The one person Reacher answers when called; back to her own PI work in Chicago."
+        },
+        {
+          "name": "Karla Dixon",
+          "line": "Financial-crimes investigator from the old unit and Reacher's brief romantic interest this season; alive and back to her life."
+        },
+        {
+          "name": "David O'Donnell",
+          "line": "The third surviving investigator — family man, favours a switchblade — back to his wife and kids."
+        },
+        {
+          "name": "Calvin Franz",
+          "line": "The murdered teammate whose death started everything; his family gets a share of the money."
+        },
+        {
+          "name": "Tony Swan",
+          "line": "The teammate framed as the traitor, revealed at the end to have been Langston's first kill for refusing to help."
+        },
+        {
+          "name": "Shane Langston",
+          "line": "Ex-NYPD, head of security at New Age, the man behind every death this season; thrown from a helicopter by Reacher."
+        },
+        {
+          "name": "Guy Russo",
+          "line": "NYPD detective who joined the team late and died saving a witness's child; the ally the show made you like before killing."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · A staged kidnapping",
+          "text": "Reacher saves teenager Richard Beck from kidnappers — a setup by DEA agent Susan Duffy, who wants Reacher inside Beck's operation to find missing agent Teresa Daniels.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up the undercover premise and the cover story that has to hold for the entire season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The ghost in the driveway",
+          "text": "Reacher infiltrates the Beck estate in Maine, confirms Teresa was held there, and recognises Beck's boss as Colonel Francis Quinn — the man Reacher shot years ago and thought was dead.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The reveal that turns a paycheck DEA job into personal business.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · What Quinn did to Kohl",
+          "text": "A flashback explains it: Quinn murdered Reacher's Army partner Dominique Kohl during a state-secrets sting, and Reacher shot Quinn in the head — but Quinn survived with amnesia.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The debt driving Reacher's whole season, and the reason Quinn does not recognise him now.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Becoming number two",
+          "text": "Reacher kills Beck's henchmen Doll and Duke, faking a shootout to earn Beck's trust as his second — while Quinn keeps meeting him face to face without a clue who he is.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "How Reacher gets inside the operation without Quinn spotting him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Blown cover",
+          "text": "Richard clocks Reacher as a mole after catching him kiss Duffy; Quinn punishes Beck by cutting off his ear and sends Paulie to hunt Reacher through the woods.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The turn that ends the undercover phase and forces the endgame.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · What Quinn is selling",
+          "text": "Reacher, Neagley and Duffy discover Quinn is selling the weapons to Yemeni terrorists; the exchange is set for Beck's own house.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Raises the stakes and locates the final confrontation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Debt paid",
+          "text": "In the assault, Beck dies confronting Quinn with a broken toy gun; Reacher trades the Yemenis' money to Russian gangster Taktarov for Quinn, then executes him — avenging Kohl.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Closes the season's central debt and empties out the Beck household.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Quinn is finally, actually dead; Teresa is home with her grandmother, Duffy has resigned from the DEA, and Richard has taken his father's leftover money and vanished. Reacher rides off on Beck's motorcycle, alone again.",
+        "questions": [
+          "With Quinn buried, does anything from Reacher's Army past still have a hold on him?",
+          "What does Susan Duffy, now out of the DEA, do next?",
+          "Where does the road take Reacher this time?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jack Reacher",
+          "line": "The drifter, one long-standing debt shorter after finally putting Quinn in the ground; back on the road."
+        },
+        {
+          "name": "Frances Neagley",
+          "line": "Working the case from the outside, feeding Reacher intel and taking hits meant for him; still his one steady contact."
+        },
+        {
+          "name": "Susan Duffy",
+          "line": "The DEA agent who ran the undercover op and slept with Reacher along the way; resigns from the agency after Teresa is recovered."
+        },
+        {
+          "name": "Zachary Beck",
+          "line": "Carpet-import front man for Quinn's arms trafficking; killed by Quinn while trying to protect his son."
+        },
+        {
+          "name": "Richard Beck",
+          "line": "Beck's teenage son — one ear amputated by his father's boss — takes his father's remaining money and disappears."
+        },
+        {
+          "name": "Francis Xavier Quinn",
+          "line": "The Army officer Reacher tried to kill years ago, running arms out of Maine until Reacher finally executes him."
+        },
+        {
+          "name": "Teresa Daniels",
+          "line": "The DEA agent held captive at the Beck estate; returned safely to her grandmother."
+        },
+        {
+          "name": "Dominique Kohl",
+          "line": "Reacher's Army partner, murdered by Quinn in the flashback — the reason Reacher never let Quinn go."
+        }
+      ]
+    }
+  }
+}

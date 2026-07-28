@@ -1,0 +1,426 @@
+{
+  "slug": "superman-lois",
+  "generatedFor": "Superman & Lois",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Coming home",
+          "text": "Clark loses his job and mother on the same day; when the twins survive a fatal barn fall, the family moves back to Smallville so any powered son has space to grow.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the show's whole premise — the Kents as a family, not a franchise — and puts everyone on the map for the rest of the series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The powered twin",
+          "text": "Jordan turns out to be the powered twin; Clark reveals he is Superman to both boys and begins Jordan's training at the Fortress with Jor-El's hologram.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The Jordan-has-powers, Jonathan-does-not split defines the family dynamic and Jonathan's later resentment arcs.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The DOD arsenal",
+          "text": "A masked 'Captain Luthor' hunts Superman with Kryptonite, forcing Sam to reveal to his son-in-law that he has been stockpiling a whole anti-Superman arsenal.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces Project 7734, the Kryptonite weapons cache that returns in later seasons as a permanent leash on Superman.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Irons unmasked",
+          "text": "Captain Luthor is unmasked as John Henry Irons from a parallel Earth whose Superman went evil and killed his Lois, his wife.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Introduces Irons, who becomes a permanent co-protagonist, and plants his complicated relationship with a Lois who is not his.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Edge is Tal-Rho",
+          "text": "Morgan Edge is revealed as Tal-Rho, Clark's Kryptonian half-brother, mining Smallville's X-Kryptonite to implant Kryptonian minds into locals, Kyle included.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The season antagonist reveal, and the event that shatters the Cushings — Kyle's near-loss anchors the marriage strain that runs into next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Tal-Rho caged",
+          "text": "Superman and John Henry Irons defeat Tal-Rho and reverse the possessions, restoring Kyle and the rest; Tal-Rho is imprisoned at the DOD.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "Closes the season plot, but leaves Tal-Rho alive and accessible — a chess piece the next season pulls off the board and uses.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Natalie arrives",
+          "text": "Irons plans to leave, but a pod delivers his daughter Natalie from his dead Earth; she meets a Lois with her mother's face but not her mother.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "Natalie becomes a Season 2+ core character; the whole Irons subplot pivots on this arrival.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Tal-Rho is caged and the Subjekts reversed, but a Kryptonian death-arsenal now exists in DOD hands and Irons's daughter Natalie has just stepped out of an escape pod into a family she has never met.",
+        "questions": [
+          "Can Natalie build a life with a father she thought she'd lost and a Lois who is not her mother?",
+          "What does Kyle and Lana's marriage look like now that she knows how close he came to being lost forever?",
+          "Now that Project 7734's Kryptonite weapons exist, who gets to decide when they are used?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Clark Kent / Superman",
+          "line": "Now living openly in Smallville as an assistant coach; his sons, Lana, and Sam all know his secret."
+        },
+        {
+          "name": "Lois Lane",
+          "line": "His wife; quit the Daily Planet and now writes for the Smallville Gazette."
+        },
+        {
+          "name": "Jordan Kent",
+          "line": "The anxious younger twin who inherited Clark's powers and is learning to control them."
+        },
+        {
+          "name": "Jonathan Kent",
+          "line": "The older twin, football player, no powers — quietly aware of the imbalance."
+        },
+        {
+          "name": "Lana Lang Cushing",
+          "line": "Clark's high school ex and the family's closest local friend; helped bring Edge down."
+        },
+        {
+          "name": "Kyle Cushing",
+          "line": "Lana's husband and the town's fire chief; was briefly a Kryptonian Subjekt, restored but shaken."
+        },
+        {
+          "name": "Sarah Cushing",
+          "line": "Their teenage daughter, tentatively together with Jordan."
+        },
+        {
+          "name": "General Sam Lane",
+          "line": "Lois's father; head of the DOD, keeper of the Kryptonite arsenal built to kill Superman if he ever turns."
+        },
+        {
+          "name": "John Henry Irons",
+          "line": "Widower engineer from a parallel Earth whose Superman went evil; chose to stay on this one."
+        },
+        {
+          "name": "Natalie Irons",
+          "line": "His daughter, just arrived from that dead Earth in an escape pod."
+        },
+        {
+          "name": "Tal-Rho / Morgan Edge",
+          "line": "Clark's Kryptonian half-brother; his plan to resurrect Krypton failed and he is held at the DOD."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Visions and a rival",
+          "text": "Three months on, Superman starts having debilitating visions; a new DOD chief, Anderson, fields his own super-team because Clark refuses to put America first.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up both the mystery driving the season and the antagonist within the DOD who will eventually go rogue.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Bizarro",
+          "text": "The visions come from Bizarro, a scarred Superman from an 'Inverse World' sent to kill cult leader Ally Allston before her plan destroys both worlds.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Reveals the season's real threat and the two-worlds mechanic that drives everything to follow.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · X-K and Lucy",
+          "text": "Lois's estranged sister Lucy resurfaces as Ally's devoted follower; Jonathan buys X-Kryptonite from his girlfriend Candice and secretly starts using it for powers.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Two threads that shape Jonathan's arc and Lois's family for the rest of the show; the X-K story rewires who he is going into next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Kyle's affair",
+          "text": "Kyle's past affair with Tonya spills out at Sarah's quinceañera, blowing up his marriage with Lana just as her mayoral campaign accelerates.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The single event that ends the Cushing marriage; the fallout is a load-bearing piece of every subsequent season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Worlds merging",
+          "text": "Ally opens a portal to the Inverse World and merges with her doppelgänger, gaining power to fuse both worlds; a corrupted Anderson dies helping her get there.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The season's crisis point and Anderson's exit; sets up the final act and clears a slot at the DOD.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Lana knows",
+          "text": "Lana wins the election, and Clark trusts her enough to reveal that he is Superman; Jordan flies for the first time intercepting the inverse Jonathan mid-attack.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Two permanent power-ups — Lana as mayor and Superman-aware ally, Jordan as flight-capable — that reshape the rest of the show.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Mannheim named",
+          "text": "Tal-Rho helps Superman split the merged Allys and separate the worlds; a visitor warns Irons that Bruno Mannheim killed this Earth's version of him.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "The seed line that launches the entire next season — the first mention of Bruno Mannheim.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ally is caged and the worlds separated, but a visitor has just told John Henry Irons that this Earth's version of him was murdered by a Metropolis crime boss named Bruno Mannheim.",
+        "questions": [
+          "Who is Bruno Mannheim and what did he want with the other John Henry Irons?",
+          "Can Jonathan stay clean now that he has tasted having powers?",
+          "Where do Kyle and Lana land, together or apart, after her election and their split?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Clark Kent / Superman",
+          "line": "Restored to his role after Bizarro; has now revealed his identity to Lana at Lois's urging."
+        },
+        {
+          "name": "Lois Lane",
+          "line": "Half-owner of the Gazette; reconciled with sister Lucy and has told Chrissy that Clark is Superman."
+        },
+        {
+          "name": "Jordan Kent",
+          "line": "The powered twin; has just flown for the first time and is training privately with Sam."
+        },
+        {
+          "name": "Jonathan Kent",
+          "line": "No powers of his own; took X-Kryptonite for a stretch, now clean but grounded and on probation."
+        },
+        {
+          "name": "Lana Lang",
+          "line": "Newly elected mayor of Smallville; separated from Kyle, and knows Clark's secret."
+        },
+        {
+          "name": "Kyle Cushing",
+          "line": "Fire chief; moved out of the family home after his affair with Tonya was exposed."
+        },
+        {
+          "name": "Sarah Cushing",
+          "line": "Back together with Jordan; navigating her parents' split and her own queerness."
+        },
+        {
+          "name": "General Sam Lane",
+          "line": "Retired from the DOD after Anderson's tenure; still Lois's father and Jordan's mentor."
+        },
+        {
+          "name": "John Henry Irons",
+          "line": "Hero of Smallville alongside Superman; just learned Bruno Mannheim killed this Earth's version of him."
+        },
+        {
+          "name": "Natalie Irons",
+          "line": "Adjusted to this Earth; enrolled at Smallville High and close with the twins."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Divorce, and a masked killer",
+          "text": "Lana and Kyle finalise their divorce, and a masked figure begins killing Bruno Mannheim's enemies; Clark confronts Bruno, who claims he helps the people Superman does not.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Opens the season's two threads at once: the Cushing family's new shape and Mannheim as a rival civic saviour, not just a crime boss.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Lois's cancer",
+          "text": "Lois is diagnosed with inflammatory breast cancer and begins chemo; the family and Smallville have to reckon with the fact that Superman cannot save her.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The season's emotional spine; every subplot bends around it and it carries permanent weight into the next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Peia and the blood",
+          "text": "The masked figure is Bruno's wife Peia, a powered killer now dying herself; Bruno steals doses of Superman's blood from the DOD to try to cure her.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Recasts Bruno as a husband trying to save his wife, not a mustache-twirl villain — and sets up the Kryptonian-blood infrastructure Lex inherits.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Natalie and Matteo",
+          "text": "Natalie starts dating a boy named Matteo, not knowing he is the Mannheims' son; John retaliates against Bruno's escalations, drawing the family into open war.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The parallel-family collision that carries Natalie's arc for the season and shapes her heartbreak going into next.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Lex out",
+          "text": "Bruno framed Lex Luthor years ago for the murder that let him take Metropolis; Peia dies before she can confess, and Lex walks out of prison.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The single biggest S4 launcher — the show's largest villain is now free and holds a personal grudge against Lois specifically.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Doomsday",
+          "text": "Lex targets the Bizarro corpse Bruno stole, killing and reviving it until it becomes a monster loyal to him — Doomsday.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Introduces the creature that opens the next season and kills Superman with it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · On the moon",
+          "text": "Kyle proposes to Chrissy at the meteor shower; Lex unleashes Doomsday, and after a brutal fight Superman and the creature crash on the moon, charging each other.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The literal cliffhanger and also fixes the Kyle-Chrissy engagement that structures next season's B plot.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Lex Luthor is out of prison and vowing revenge on the family who put him there; on the moon, Superman and a Doomsday built from Bizarro's corpse are hurtling at each other in a fight nobody has won yet.",
+        "questions": [
+          "Can Superman beat a creature designed to come back stronger every time he kills it?",
+          "What does Lex do to the Kents once he stops circling and strikes?",
+          "Who else in Smallville is close to figuring out who Superman really is?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Clark Kent / Superman",
+          "line": "Hurtling at Doomsday on the moon; his identity intact but his family openly targeted."
+        },
+        {
+          "name": "Lois Lane",
+          "line": "Post-mastectomy and cancer-free; her article on Boss Moxie is now the reason Lex is out."
+        },
+        {
+          "name": "Jordan Kent",
+          "line": "Publicly cheered as Smallville's teen hero after saving the town from a tornado on camera."
+        },
+        {
+          "name": "Jonathan Kent",
+          "line": "Working at the firehouse under Kyle; no powers, quietly overshadowed again."
+        },
+        {
+          "name": "Lana Lang",
+          "line": "Mayor of Smallville; now dating John Henry Irons after her divorce from Kyle."
+        },
+        {
+          "name": "Kyle Cushing",
+          "line": "Fire chief; engaged to Chrissy Beppo, who is pregnant with his child."
+        },
+        {
+          "name": "Chrissy Beppo",
+          "line": "Lois's Gazette partner; pregnant and newly engaged to Kyle."
+        },
+        {
+          "name": "Sam Lane",
+          "line": "Back at the DOD after retirement; Jordan's mentor and Lois's father."
+        },
+        {
+          "name": "John Henry Irons",
+          "line": "Dating Lana; his war with Bruno is over now that Bruno is in prison."
+        },
+        {
+          "name": "Natalie Irons",
+          "line": "Just broke up with Matteo after learning he is a Mannheim; adjusting to Sam's mentorship."
+        },
+        {
+          "name": "Lex Luthor",
+          "line": "Just released from Stryker's; has weaponised the Bizarro corpse into Doomsday and is coming for Lois."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Superman dies",
+          "text": "Doomsday kills Superman; Lex extracts his heart, and Jordan smuggles Clark's body to the Fortress in the hope of reviving him.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The event the entire final season hangs from; the family is now the front line while Clark is out.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Sam's heart",
+          "text": "Lex sends Doomsday after Sam Lane; Sam dies, but John transplants his heart into Clark and a resurrection serum brings Clark back with weakened powers.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Removes Sam permanently and reshapes Clark for the rest of the season — he is Superman again but fading.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The phone call",
+          "text": "Lex plays Lois's old panicked phone call for Jordan, revealing she chose Jonathan over him; the twins fracture, then reconcile as Jonathan's own powers manifest.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The single event that permanently rebalances the twins — Jonathan finally has powers and the Kents finally face what favouritism cost them.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Elizabeth's refusal",
+          "text": "Lex's estranged pregnant daughter Elizabeth refuses to let him back into her life, hardening his resolve to destroy the Kents.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Kills off the possibility that anyone can talk Lex down; from here he only accelerates.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Coming out",
+          "text": "Under relentless Luthor pressure, Clark goes to Jimmy Olsen at the Daily Planet and publicly reveals that he is Superman.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The show's biggest permanent status change — the mask comes off — and closes the two-lives premise the whole series ran on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Doomsday down, Lex jailed",
+          "text": "Doomsday, reminded of his Inverse-world family, sacrifices himself to end the fight; Lex is exposed live on camera and jailed for life.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Resolves the season and the series-long villain arc in one beat.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · After",
+          "text": "A year on, John marries Lana and Kyle marries Chrissy; Superman keeps saving the world with his sons for decades, then Lois dies, and years later Clark dies reunited with her.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The series' actual ending: a flash across the whole rest of the family's life so the reader knows how it all lands.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The war with Luthor is over. Doomsday died sacrificing himself, Lex is buried in Stryker's for life, and Superman has told the world his name — then the show flashes across decades until Lois dies of returning cancer and, years later, Clark dies reunited with her.",
+        "questions": [
+          "What kind of world does Superman leave behind when he finally puts down the cape?",
+          "Do the Kent twins carry his mantle after he is gone?",
+          "What becomes of the Irons family in the long years after their surrogate family is gone?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Clark Kent / Superman",
+          "line": "Alive, revealed to the world, weakened but victorious; the immediate crisis is finally over."
+        },
+        {
+          "name": "Lois Lane",
+          "line": "Cancer-free; her family is intact and Lex is behind her."
+        },
+        {
+          "name": "Jordan Kent",
+          "line": "A public hero alongside his father; helped save Smallville from Doomsday."
+        },
+        {
+          "name": "Jonathan Kent",
+          "line": "Now powered too, finally in step with his brother."
+        },
+        {
+          "name": "Lana Lang",
+          "line": "About to marry John Henry Irons; still mayor of a town that knows everything."
+        },
+        {
+          "name": "Kyle Cushing",
+          "line": "Rebuilding a life with Chrissy; a second child on the way."
+        },
+        {
+          "name": "Chrissy Beppo",
+          "line": "Pregnant with her second child; about to marry Kyle."
+        },
+        {
+          "name": "John Henry Irons",
+          "line": "Marrying Lana; still Steel."
+        },
+        {
+          "name": "Natalie Irons",
+          "line": "A powered hero in her own right, and now part of a larger family."
+        },
+        {
+          "name": "Lex Luthor",
+          "line": "Publicly exposed and locked in Stryker's Prison for life."
+        }
+      ]
+    }
+  }
+}

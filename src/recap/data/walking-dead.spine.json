@@ -128,7 +128,7 @@
         },
         {
           "label": "S2 · Hooded stranger",
-          "text": "Separated in the panic, Andrea is saved by a hooded woman with a sword and two chained walkers. In the distance, the group sees a prison.",
+          "text": "Separated in the panic, Andrea is met by a mysterious hooded woman. In the distance, the group sees a prison.",
           "anchorEpisode": 13,
           "whyLoadBearing": "Debuts Michonne — a season away from becoming a lead — and points at the prison.",
           "needsVerify": false
@@ -173,7 +173,7 @@
         },
         {
           "name": "Andrea",
-          "line": "Grieving, harder-edged survivor separated from the group during the farm's fall; rescued in the woods by a hooded stranger with a sword and two chained walkers."
+          "line": "Grieving, harder-edged survivor separated from the group during the farm's fall; met in the woods by a mysterious hooded stranger."
         }
       ]
     },
@@ -541,7 +541,7 @@
         },
         {
           "name": "Carol Peletier",
-          "line": "Massacred the Wolves in the streets during their invasion of Alexandria, and is quietly beginning to unravel from what she has done."
+          "line": "Fought her way to the armory during the Wolves' invasion of Alexandria and armed the survivors, and is quietly beginning to unravel from what she has done."
         }
       ]
     },
@@ -689,7 +689,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "The war is over and Rick has kept Negan alive in a cell. Maggie, Jesus and Daryl are quietly planning to overrule Rick, and the communities have to rebuild from scratch.",
+        "text": "The war is over and Rick has kept Negan alive in a cell. Maggie vows to move against Rick in the future, and the communities have to rebuild from scratch.",
         "questions": [
           "Can peace with the Saviors' survivors last with Negan alive?",
           "How long before Maggie makes her move against Rick?",
@@ -897,7 +897,7 @@
         },
         {
           "name": "Alpha",
-          "line": "Leader of the Whisperers, watching Alexandria from the trees; burned Hilltop to the ground before Negan slit her throat inside her own camp."
+          "line": "Leader of the Whisperers, watching Alexandria from the trees; burned Hilltop to the ground before Negan slit her throat in a cabin after luring her there."
         },
         {
           "name": "Maggie Rhee",
@@ -957,7 +957,7 @@
         },
         {
           "label": "S11 · Sebastian exposed",
-          "text": "Eugene records the Governor's spoiled son Sebastian confessing to killing Commonwealth workers. Sebastian dies to a walker during the reveal, and Eugene is arrested for his murder.",
+          "text": "Max records the Governor's spoiled son Sebastian ranting that Commonwealth citizens are weak. Sebastian dies to a walker during the reveal, and Eugene is arrested for his murder.",
           "anchorEpisode": 18,
           "whyLoadBearing": "Cracks Pamela's regime open and sets Eugene's public trial as the rallying point.",
           "needsVerify": false
@@ -1048,5 +1048,5 @@
       "character": "Jadis"
     }
   },
-  "repairedAt": "2026-07-23T18:26:31.541Z"
+  "repairedAt": "2026-07-24T03:09:51.102Z"
 }

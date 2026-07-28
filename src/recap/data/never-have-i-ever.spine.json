@@ -1,0 +1,394 @@
+{
+  "slug": "never-have-i-ever",
+  "generatedFor": "Never Have I Ever",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Reinvention plan",
+          "text": "A year after her father's death left her briefly paralysed, Devi decides sophomore year will be different and asks classmate Paxton for casual sex.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the grief-driven reinvention that powers every choice she makes.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Kamala's arrangement",
+          "text": "Devi's cousin Kamala learns her marriage is being arranged and secretly breaks up with her American boyfriend Steve to please the family.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets up the arranged-marriage thread that runs the length of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Friendship fractures",
+          "text": "Devi's lie about sleeping with Paxton spreads at Model UN, and her selfishness eventually drives Eleanor and Fabiola to freeze her out.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The isolation forces her toward the boys and toward confronting her grief.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Fabiola comes out",
+          "text": "Fabiola realises she is a lesbian, tells Eleanor, and accidentally outs herself at Ben's party before her mother embraces her.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Locks in a core identity beat carried through every later season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Two boys, one kiss",
+          "text": "Ben tries to kiss a drunk Devi at his party; later Paxton drives her home and kisses her for real, planting the season's central triangle.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The Ben/Paxton/Devi triangle is the engine of the next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Mother's ultimatum",
+          "text": "Paxton accidentally reveals Devi's lies to Nalini, who announces she is moving them to India; Devi runs away and hides at Ben's house.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Turns family conflict into the crisis that forces Devi to face her grief.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Ashes and a kiss",
+          "text": "Ben drives Devi to Malibu to scatter her father's ashes with Nalini; grateful, she kisses him, while Paxton waits at her door with a message.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "She reconciles with her mother and ends the season wanted by both boys.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Devi has just kissed Ben in his car after finally grieving her father with her mother, only to come home and find Paxton on her doorstep leaving her a message. Both boys are choosing her at the same moment.",
+        "questions": [
+          "Will Devi choose Ben, Paxton, or try to have both?",
+          "Can Kamala go through with an arranged marriage now that Steve is out of the picture?",
+          "Will Devi and Nalini's fragile peace hold once the grief crisis passes?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Devi Vishwakumar",
+          "line": "Indian-American sophomore rebuilding her life after her father's sudden death and her own temporary paralysis."
+        },
+        {
+          "name": "Nalini Vishwakumar",
+          "line": "Devi's strict widowed mother, a dermatologist who nearly moved them back to India before scattering Mohan's ashes together."
+        },
+        {
+          "name": "Paxton Hall-Yoshida",
+          "line": "The school heartthrob who agreed to sleep with Devi, became her friend, and has now decided he wants more."
+        },
+        {
+          "name": "Ben Gross",
+          "line": "Devi's academic rival turned unexpected ally, who took her in when she ran from home and just kissed her."
+        },
+        {
+          "name": "Eleanor Wong",
+          "line": "Devi's theatrical best friend, reeling from her actress mother abandoning her a second time."
+        },
+        {
+          "name": "Fabiola Torres",
+          "line": "Devi's robotics-star best friend, newly out as a lesbian and supported by her mother."
+        },
+        {
+          "name": "Kamala",
+          "line": "Devi's beautiful cousin, torn between secret boyfriend Steve and an impending arranged marriage."
+        },
+        {
+          "name": "Dr. Jamie Ryan",
+          "line": "Devi's therapist, the one person who keeps naming the grief driving Devi's behaviour."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Dating both boys",
+          "text": "Told to choose between Paxton and Ben, Devi instead dates them at the same time, planning to skip town for India before the truth catches up.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The two-timing premise sets up the party disaster that reshapes both relationships.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Party, crash, breakup",
+          "text": "At Devi's rager Ben exposes the double life; Paxton storms out, is hit by a car, and blames Devi as their romance collapses into resentful tutoring.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The accident ends Paxton's swimming path and remakes his relationship with Devi.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Aneesa arrives",
+          "text": "New Indian classmate Aneesa befriends Devi and starts dating Ben, and a jealous Devi spreads a rumour that Aneesa is anorexic.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Introduces Aneesa and triggers Devi's worst act of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Suspension and apology",
+          "text": "Devi frames other girls, confesses, gets suspended, and has to beg Aneesa's mother to keep her at school after Nalini intervenes.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Devi's mother becoming her ally is the turn the season pivots on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Nalini and Chris",
+          "text": "Nalini, mentored through single parenting by rival dermatologist Chris Jackson, kisses him and Devi catches them in his car.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Nalini's first move past Mohan reframes the mother-daughter dynamic.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Kamala stands up",
+          "text": "Snubbed from her lab's paper, Kamala puts her name on it and confronts sexist Evan, then flees the family dinner rather than accept Prashant's proposal.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Ends the arranged-marriage arc and points Kamala toward Manish.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Winter dance choice",
+          "text": "Devi breaks up with Paxton after he refuses her invite, but he arrives at the dance as her boyfriend and they go public, leaving Ben watching from the sidelines.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Sets the couple the next season immediately begins to dismantle.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Devi and Paxton are finally, publicly together while a devastated Ben looks on. Kamala has walked out on her arranged engagement to sing karaoke with Manish, and Nalini has quietly stepped back from Chris.",
+        "questions": [
+          "Can Devi actually handle being Paxton's girlfriend once the fantasy meets reality?",
+          "Where does Ben go now that both Devi and Aneesa are gone?",
+          "Will Kamala's family accept her walking away from Prashant?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Devi Vishwakumar",
+          "line": "Newly public girlfriend of Paxton after a season of two-timing, sabotage, and one apology that saved her friendship with Aneesa."
+        },
+        {
+          "name": "Paxton Hall-Yoshida",
+          "line": "Recovered from the car accident and now dating Devi openly, his college swimming path derailed and academics still shaky."
+        },
+        {
+          "name": "Ben Gross",
+          "line": "Newly single after Aneesa, watching Devi choose Paxton and increasingly aware of what he feels for her."
+        },
+        {
+          "name": "Aneesa Qureshi",
+          "line": "The new Indian classmate Devi wronged and won back, still at Sherman Oaks thanks to Nalini."
+        },
+        {
+          "name": "Nalini Vishwakumar",
+          "line": "Softening: now Devi's advocate, briefly involved with Chris Jackson before pulling back for her daughter's sake."
+        },
+        {
+          "name": "Kamala",
+          "line": "Has abandoned Prashant's proposal for Manish, defying her grandmother's expectations."
+        },
+        {
+          "name": "Fabiola Torres",
+          "line": "Officially with Eve, crowned Cricket Queen and Queen at the winter dance."
+        },
+        {
+          "name": "Eleanor Wong",
+          "line": "Newly single after Malcolm cheated on her, closer than ever to Devi and Fabiola."
+        },
+        {
+          "name": "Nirmala",
+          "line": "Devi's traditional grandmother, disappointed that Kamala fled Prashant's proposal."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Slut-shamed",
+          "text": "Now officially dating Paxton, Devi is mocked at school for being out of his league and pressures herself over sex before deciding she is not ready.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Frames the insecurity that ends the Paxton relationship.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Paxton breaks up",
+          "text": "Convinced Devi does not love herself, Paxton ends things on Valentine's Day; Aneesa also breaks up with Ben, suspecting he still wants Devi.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Clears the board of the previous season's couples for what comes next.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Des enters",
+          "text": "Nalini's new friend Rhyah introduces Devi to her son Des, a wealthy Indian boy Devi is instantly drawn to and Nalini approves of.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Des is the season's central boyfriend and Rhyah is the antagonist he answers to.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ben's collapse",
+          "text": "Pushing himself for Columbia, Ben lands in hospital with a stress-induced impaction; recovering, he mentors Paxton and encourages Devi to date Des.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Ben's turn from rival to friend is what makes the finale gesture believable.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Rhyah pulls the plug",
+          "text": "After Devi has a public anxiety attack, Rhyah calls her \"crazy\" and orders Des to break up with her; Nalini cuts Rhyah off in fury.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Ends the Des arc and cements Nalini firmly as Devi's protector.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Shrubland offer",
+          "text": "Devi is accepted to an elite Colorado boarding school; she visits, wants to go, then chooses to stay in Sherman Oaks with her mother.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The decision that keeps the entire cast in one place for senior year.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The free boink",
+          "text": "Ben jokingly gives Devi a pass for \"one free boink\"; after learning Fabiola has had sex, Devi shows up at his door and cashes it in.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Directly sets up the awkward aftermath that opens the next season.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Devi has decided to stay at Sherman Oaks for senior year and just walked into Ben's bedroom to have sex with him using the joke pass he gave her. Paxton has graduated toward Arizona State and Fabiola has begun dating Addison.",
+        "questions": [
+          "Will Devi and Ben survive what just happened between them?",
+          "Can Devi still get into a top college now that she has turned down Shrubland?",
+          "How will Paxton's actual college life compare to the popularity he leaves behind?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Devi Vishwakumar",
+          "line": "Senior-year-bound at Sherman Oaks after turning down a boarding-school escape, and has just slept with Ben on a dare-pass."
+        },
+        {
+          "name": "Ben Gross",
+          "line": "Softer after his hospital scare, now the friend Devi trusts and the boy she just spent the night with."
+        },
+        {
+          "name": "Paxton Hall-Yoshida",
+          "line": "Graduating for Arizona State, having thanked Devi in his commencement speech for helping him get there."
+        },
+        {
+          "name": "Nalini Vishwakumar",
+          "line": "Fiercely in Devi's corner, having ended her friendship with Rhyah and quietly given up Chris."
+        },
+        {
+          "name": "Fabiola Torres",
+          "line": "Newly with genderqueer classmate Addison after breaking up with Aneesa, no longer the group's sole virgin."
+        },
+        {
+          "name": "Eleanor Wong",
+          "line": "Still dating Trent and delighted that he is repeating senior year so they stay together."
+        },
+        {
+          "name": "Kamala",
+          "line": "Living on her own and dating Manish, having stood up to the family to be with him."
+        },
+        {
+          "name": "Nirmala",
+          "line": "Grandmother whose disapproval of Manish has softened after he brought Devi's cheating to her attention."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Morning after",
+          "text": "Ben and Devi's night together goes badly; he ignores her all summer and by senior year is dating a new girl, Margot, while Devi and Margot openly feud.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The estrangement is the emotional throughline the finale finally undoes.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Ethan and the car",
+          "text": "Devi's car is vandalised; she wrongly accuses Margot and only later learns Eleanor's crush Ethan did it, straining her friendship with Eleanor.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Fuels the Ben rift and produces the bad-boy detour that costs Devi a chance at Princeton.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Princeton fumble",
+          "text": "At the college fair Devi impresses Princeton rep Akshara, but her new boyfriend Ethan steals Akshara's wallet on their date.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The specific slip that puts Princeton out of reach for most of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Deferred, then rejected",
+          "text": "Fabiola is admitted to Princeton and Devi is deferred; by spring Devi has been rejected everywhere except a Princeton waitlist and lies about it to her friends.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The crisis Devi's final essay and her mother's support must resolve.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Paxton finds his path",
+          "text": "Miserable at ASU, Paxton returns to Sherman Oaks as a coach, mentors nervous swimmer Eric, and begins dating substitute teacher Lindsay.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Resolves Paxton's arc and removes him cleanly from Devi's romantic life.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Ben's confession",
+          "text": "Devi and Ben start flirting again; a stoned Ben brings her flowers, but she finds out he has been texting Margot and pulls back just as Princeton waitlists her.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Sets up the essay and the airport-style reunion that closes the show.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Princeton and Ben",
+          "text": "Devi writes a supplemental essay about her father, gets into Princeton, and at Nirmala's wedding Ben flies back from New York; they say I love you and sleep together.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The dual resolution the entire series has been building toward.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The series ends resolved rather than open. Devi leaves for Princeton with Ben as her boyfriend at nearby Columbia, Fabiola heads to Howard, Eleanor stays in LA acting with Trent, Kamala takes the Baltimore job with Manish, Paxton teaches at ASU, and Nalini quietly dates Andres.",
+        "questions": [
+          "Can Devi and Ben's long-planned relationship actually survive being at different universities?",
+          "Will Nalini let herself have a real life with Andres now that Devi is gone?",
+          "What becomes of the friendship between Devi, Fabiola and Eleanor once they are on three different coasts?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Devi Vishwakumar",
+          "line": "Princeton-bound valedictorian, finally together with Ben after a year of estrangement and one rescued essay."
+        },
+        {
+          "name": "Ben Gross",
+          "line": "Columbia-bound and interning in New York, back with Devi after finally saying he loves her."
+        },
+        {
+          "name": "Nalini Vishwakumar",
+          "line": "Now Devi's full ally, dating Andres and letting herself move past Mohan."
+        },
+        {
+          "name": "Paxton Hall-Yoshida",
+          "line": "Left ASU to teach at Sherman Oaks, dating Lindsay, and now returning to college for a teaching degree."
+        },
+        {
+          "name": "Fabiola Torres",
+          "line": "Chose Howard over Princeton for its robotics program, reshaped the club to welcome girls along the way."
+        },
+        {
+          "name": "Eleanor Wong",
+          "line": "Graduated a semester early, back with Trent, and pivoting from acting to directing her own films."
+        },
+        {
+          "name": "Kamala",
+          "line": "Took the Baltimore research job her advisor offered and moved there with Manish."
+        },
+        {
+          "name": "Nirmala",
+          "line": "Married her boyfriend Len in a traditional ceremony, once Kamala's suspicions about him were put to rest."
+        },
+        {
+          "name": "Margot",
+          "line": "Ben's now-ex girlfriend and the daughter of Nalini's new partner Andres, at peace with Devi by the end."
+        }
+      ]
+    }
+  }
+}

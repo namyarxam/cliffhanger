@@ -1,0 +1,193 @@
+{
+  "slug": "the-four-seasons",
+  "generatedFor": "The Four Seasons",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Anniversary weekend",
+          "text": "At the spring lake house 25th anniversary, Nick tells the men he plans to leave Anne; oblivious, she stages a vow renewal, and the kiln explodes mid-ceremony.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets up the divorce that reshapes every other relationship in the show.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Ginny arrives",
+          "text": "By summer Nick has left Anne for Ginny, a much younger girlfriend; Anne quietly turns up at the same island and Nick asks Ginny to be his official girlfriend.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Introduces Ginny, whose pregnancy anchors the entire following season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Danny's hidden heart",
+          "text": "Danny hides his heart condition and angioplasty from Claude, then keeps smoking through recovery; when Claude finds the cigarettes at college weekend, he throws him out.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Establishes Danny's mortality anxiety and Claude's outlook, both driving choices later.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Jack kisses Anne",
+          "text": "At the college family weekend, Nick's daughter Lila stages a resentful play about him; a drunk Jack later confesses to Kate that he kissed Anne.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The fissure in Kate and Jack's marriage that couples therapy is meant to repair.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Nick dies",
+          "text": "On the New Year's ski trip Anne arrives with a new boyfriend and Kate accuses Jack of cheating; a call comes through that Nick has been killed in a car accident.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The event the entire next season is a response to.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The funeral",
+          "text": "At Nick's funeral Anne cannot deliver her eulogy and Ginny storms off; Anne finds her, apologises, and promises that Nick was truly happy with her.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "First real bond between Anne and Ginny — the axis of the next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Ginny is pregnant",
+          "text": "Toasting Nick at the lake house, Kate and Jack recommit to their marriage, and Anne reveals that Ginny is pregnant with Nick's baby.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The pregnancy is the pivot the next season opens on.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Nick is dead, the friend group has agreed to keep travelling in his honour, and Ginny — the young girlfriend he left Anne for — is pregnant with his child.",
+        "questions": [
+          "Can the six of them stay a group without Nick at the centre?",
+          "How will Anne cope with her ex-husband's child arriving in the world?",
+          "Will Kate and Jack's promise to work on their marriage actually hold?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Nick",
+          "line": "Married to Anne for 25 years; left her for the much younger Ginny; killed in a car accident on New Year's Eve."
+        },
+        {
+          "name": "Anne",
+          "line": "Nick's ex-wife, blindsided first by his exit and then by his death; only just starting to imagine a life alone."
+        },
+        {
+          "name": "Ginny",
+          "line": "Nick's much younger girlfriend, freshly bereaved and, unbeknownst to most, pregnant with his baby."
+        },
+        {
+          "name": "Jack",
+          "line": "Kate's husband; struggled all year to hold Nick's secrets and drunkenly kissed Anne before confessing to Kate."
+        },
+        {
+          "name": "Kate",
+          "line": "Jack's wife; grew distant from him across the year but agreed at the funeral to go to couples therapy."
+        },
+        {
+          "name": "Danny",
+          "line": "Married to Claude in an open marriage; hid a heart condition and kept smoking; Nick's death has genuinely rattled him."
+        },
+        {
+          "name": "Claude",
+          "line": "Danny's husband; ready to insist on living now rather than later, and pushing Danny to actually change."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Scattering Nick",
+          "text": "In spring the group hikes upstate to spread Nick's ashes; a heavily pregnant Ginny reveals that she and Anne face legal trouble because Nick's divorce never finalised.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Nick's absence, Ginny's pregnancy and the Anne–Ginny bond frame the whole season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Motel confessions",
+          "text": "Trapped in a motel by a gunman, secrets spill: Anne's boat is gone, Kate faked her marathon; by morning Ginny is moving in with Anne, and Danny and Claude decide to try for a baby.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Locks in the two households of the season and the kids plotline.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Shore, baby, Mark",
+          "text": "Down the shore with baby Gino, Anne quietly has a one-night stand with a widower named Mark; Kate, high on Jack's vape, admits she has always been miserable.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Anne's first move past Nick, and Kate finally naming her unhappiness aloud.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · No baby after all",
+          "text": "After finally starting surrogacy, Danny and Claude spend a night on the beach listening to Kate's therapist's audiobook and decide together that they will not have a baby.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Closes the kids plot and clears the runway for their move.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Thanksgiving falls apart",
+          "text": "At Thanksgiving Danny drops that he and Claude are moving to Italy; Jack, unravelling, kicks the turkey and wrecks his ankle, and Anne finally kicks Ginny and Gino out.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The friendships and living arrangements everyone had at the start of the season all break at once.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Why Anne left",
+          "text": "A COVID flashback shows the origin of the split: Nick admits kissing another woman during lockdown, and Anne, alone in the yard, quietly decides she is done.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Recasts Nick and Anne's whole marriage retroactively; the emotional anchor of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Italy and a knock at the door",
+          "text": "In Italy, Danny's mother is hospitalised and he and Claude decide to move to Philadelphia to care for her; Anne stays on to house-sit, and a neighbour knocks on the door.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Resets everyone's geography and introduces the man on Anne's doorstep as the season ends.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Danny and Claude are giving up Italy to move in with Danny's mother in Philadelphia; Anne is house-sitting alone in their Italian home when a neighbour comes to the door.",
+        "questions": [
+          "Who is the neighbour who has just knocked on Anne's door?",
+          "Can Kate and Jack's marriage survive her honesty and his sense of failure?",
+          "What kind of life does Anne actually want now that she is untethered from Nick, Ginny and the group?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Anne",
+          "line": "Nick's widow; took Ginny and Gino in, kicked them out, and is now alone in Italy house-sitting for Danny and Claude."
+        },
+        {
+          "name": "Ginny",
+          "line": "Mother to Nick's son Gino; briefly lived with Anne and has just been pushed back out on her own."
+        },
+        {
+          "name": "Kate",
+          "line": "Openly miserable in her marriage but still running Jack's marathon for him; trying to launch a B&B business he resents."
+        },
+        {
+          "name": "Jack",
+          "line": "Sees himself as a failure; broke his ankle at Thanksgiving, missed his marathon, and is drifting without direction."
+        },
+        {
+          "name": "Danny",
+          "line": "Left for Italy with Claude, then reversed course after his mother was hospitalised; heading to Philadelphia to be her carer."
+        },
+        {
+          "name": "Claude",
+          "line": "Followed Danny to Italy, agreed against a baby, and is now following him back to Philadelphia to move in with his mother-in-law."
+        },
+        {
+          "name": "Mark Brett",
+          "line": "The widower Anne slept with at the shore; has a girlfriend and told Anne to stop texting him after she sent an accidental nude."
+        },
+        {
+          "name": "Italian neighbour",
+          "line": "The stranger who arrives at Danny and Claude's door once the others have left, meeting Anne for the first time.",
+          "note": "Unnamed in the season; introduced only in the final beat."
+        }
+      ]
+    }
+  }
+}

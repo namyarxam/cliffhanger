@@ -1,0 +1,200 @@
+{
+  "slug": "peacemaker",
+  "generatedFor": "Peacemaker",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Project Butterfly",
+          "text": "Fresh out of hospital, Chris is press-ganged into Amanda Waller's black-ops squad Project Butterfly, joining handler Clemson Murn, agents Harcourt and Economos, and rookie Leota Adebayo.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the team that becomes the 11th Street Kids and the Waller apparatus Chris is chained to.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Waller's planted daughter",
+          "text": "Waller privately orders Adebayo — her own daughter, planted on the team — to hide a forged diary in Chris's trailer that will later be used to frame him.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Sets up the betrayal that fractures the team and Adebayo's eventual public exposure of Waller.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The targets are aliens",
+          "text": "The team's first target, Senator Goff, is revealed to be a Butterfly — a parasitic alien piloting a human host. Thousands more have quietly infiltrated Earth's elite.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Reframes the whole mission from political hit-squad to secret alien invasion, the stakes of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Murn is a defector",
+          "text": "Adebayo discovers that handler Murn is himself a Butterfly — a lone dissenter against his own species' invasion; Harcourt and Economos agree to hide this from Waller.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The moment the team stops working for Waller and starts working for each other.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Chris framed as a killer",
+          "text": "Adebayo plants the diary; possessed police use it to publicly brand Chris a serial killer, and his supremacist father Auggie leads his Aryan Empire out to hunt him down.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Turns Chris into a fugitive and forces the final confrontation with Auggie.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Chris kills his father",
+          "text": "Cornered by his suited father, Chris shoots Auggie dead — ending the man who trained him to kill and once made him accidentally shoot his own brother as a child.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Auggie is the wound at the centre of Chris; his death defines Chris's emotional state going into season 2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Cow dies, Waller exposed",
+          "text": "The team destroys the Butterflies' food source and starves the invasion; Adebayo then leaks Waller's black-ops program to the press, clearing Chris's name publicly.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Ends the Butterfly plot and legally frees Chris, while breaking Waller's grip on the team.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The invasion is over and Chris's name is clear, but he goes home alone with only Eagly and the last living Butterfly in a jar — having just killed his father, still hallucinating him standing in the room.",
+        "questions": [
+          "Now that Waller's black ops are burned publicly, what happens to A.R.G.U.S. and the team it ran?",
+          "Can Chris live with killing Auggie, or will his father keep dictating him from inside his own head?",
+          "He helped save the world in secret — does he ever get to become the hero he keeps pretending to be?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Chris Smith / Peacemaker",
+          "line": "The vainglorious mercenary who kills for peace, publicly cleared but privately hollowed out by having shot his own father."
+        },
+        {
+          "name": "Leota Adebayo",
+          "line": "The rookie who was planted on the team by her mother Waller, betrayed Chris, then chose him over her and blew the whole program open."
+        },
+        {
+          "name": "Emilia Harcourt",
+          "line": "The closed-off A.R.G.U.S. field agent now leading the team after Murn's death, quietly softening toward Chris but keeping him at arm's length."
+        },
+        {
+          "name": "Adrian Chase / Vigilante",
+          "line": "Chris's masked best friend, a diner employee who kills prolifically and is uncomplicatedly devoted to him."
+        },
+        {
+          "name": "John Economos",
+          "line": "The team's tech operator who framed Auggie for Chris's kills and grew from Waller's toady into one of Chris's real friends."
+        },
+        {
+          "name": "Auggie Smith / White Dragon",
+          "line": "Chris's late father: an Aryan Empire leader who trained Chris to be a killing machine and is now dead by Chris's hand."
+        },
+        {
+          "name": "Amanda Waller",
+          "line": "The A.R.G.U.S. director who ran Project Butterfly off the books and was just publicly outed by her own daughter."
+        },
+        {
+          "name": "Eagly",
+          "line": "Chris's bald eagle: genuine friend, lethal weapon, and the only living thing he has never disappointed."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Nobody wants Peacemaker",
+          "text": "Six months on, the Justice Gang has refused Chris, Waller's fallout has blacklisted Harcourt, and A.R.G.U.S.'s new director Rick Flag Sr. is quietly hunting the man who killed his son.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Chris's civilian dead-end and the season's antagonist, whose grievance drives every A.R.G.U.S. move.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · A door to another life",
+          "text": "In his storage room's Quantum Unfolding Chamber, Chris finds a door to a parallel Earth where Auggie is a beloved superhero and his dead brother Keith is alive.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The QUC portal is the season's engine; it also gives Chris the family he lost and the temptation to abandon this life for it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Peacemaker-2 dies",
+          "text": "His alternate self attacks him in the QUC and dies in his arms; Chris and Adrian bury the body while Chris keeps slipping back to the alt-world he never had.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Puts a corpse in play A.R.G.U.S. can chase and locks Chris into the alt-world obsession that isolates him from the team.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · A.R.G.U.S. comes for the portal",
+          "text": "Flag Sr. sends a strike team to seize the QUC; Economos tips Chris off, Eagly savages the agents, and Chris moves the portal to a remote cabin in Settlers' Hill.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Flag now knows the portal exists and wants it, setting up the season's endgame trade.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Harcourt turns him in",
+          "text": "Flag offers Harcourt her career back to lure Chris out; she does it and lets him be beaten in custody, then can't stomach it and quietly gets him bailed out.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The moment their relationship is honest — she chose him over her career, which is what makes their season-end coupling land.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Nazi Earth",
+          "text": "The Kids chase Chris through the portal and discover the alt-world is a white-supremacist utopia; Adrian kills Auggie-2, Chris spares a wounded Keith, and they collapse the door behind them.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Ends the alt-world temptation for good and lets Chris finally reject the fantasy of Auggie as a good father.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Checkmate, then Salvation",
+          "text": "A.R.G.U.S. weaponises the portal into a metahuman prison dimension called Salvation. The Kids form their own agency Checkmate — and then Flag Sr. abducts Chris and strands him inside it.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The two things that define season 3's opening state: the team Chris finally has, and the cage he is finally in.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "One week into finally dating Harcourt and launching Checkmate with his chosen family, Chris is snatched by Rick Flag Sr. and dumped into Salvation — a dimension A.R.G.U.S. built specifically to hold people like him.",
+        "questions": [
+          "Can Checkmate find and reach Chris in Salvation, or is he stranded there indefinitely?",
+          "What does A.R.G.U.S. do now that Flag Sr. controls an entire dimension full of metahuman prisoners?",
+          "Does Harcourt fight for the relationship she finally committed to, or does losing him a week in break her?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Chris Smith / Peacemaker",
+          "line": "Just finally in a real life — girlfriend, chosen family, a job of his own — and now trapped alone in the Salvation prison dimension."
+        },
+        {
+          "name": "Emilia Harcourt",
+          "line": "Quit A.R.G.U.S. and openly committed to Chris one week before Flag took him; a founding partner of Checkmate."
+        },
+        {
+          "name": "Leota Adebayo",
+          "line": "Chris's closest friend and moral compass, now co-running Checkmate and the person most likely to organise a rescue."
+        },
+        {
+          "name": "Adrian Chase / Vigilante",
+          "line": "Killed Auggie-2 without hesitation to protect Chris; still uncomplicatedly devoted and lives at Chris's side."
+        },
+        {
+          "name": "Rick Flag Sr.",
+          "line": "A.R.G.U.S. director who wanted Chris dead for killing his son, took the portal from him, and has now buried him alive in Salvation."
+        },
+        {
+          "name": "Sasha Bordeaux",
+          "line": "Senior A.R.G.U.S. agent who quit in disgust over the Salvation prison plan and defected to co-found Checkmate."
+        },
+        {
+          "name": "John Economos",
+          "line": "Broke his A.R.G.U.S. cover to warn Chris about the raid; a founding member of Checkmate."
+        },
+        {
+          "name": "Judomaster",
+          "line": "The S1 antagonist, freed and turned by the Kids; helped rescue Adebayo from the alt-world and now works for Checkmate."
+        },
+        {
+          "name": "Eagly",
+          "line": "Still Chris's bald eagle — now revealed as a 'Prime Eagle' able to summon a swarm, and currently with the Kids while Chris is gone."
+        }
+      ]
+    }
+  }
+}

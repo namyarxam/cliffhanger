@@ -39,9 +39,11 @@
  */
 
 import { readFile, writeFile, readdir } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 import { spawn } from 'node:child_process';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { bestMatch, tokenOwners } from './name-match.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = resolve(ROOT, 'src/recap/data');
@@ -207,6 +209,73 @@ async function auditSeason(show, spine, seasonNo, opts) {
 
 const SEV = { high: '!!', low: ' ·' };
 
+/**
+ * Portrait resolution, checked deterministically — no model call.
+ *
+ * The season audit above reads the SPINE TEXT against the source and is blind
+ * to whether a card will actually render a face: that is a string match against
+ * the cast list, and a card that matches nothing falls back silently to key
+ * art. Arcane audited clean while Vi — a lead — had no portrait, because the
+ * shared tokeniser dropped her two-letter name and the "(voice)" role qualifier
+ * left every animated character sharing one useless token.
+ *
+ * So this runs the SAME resolution the uploader composes with — the shared
+ * name-match, the explicit castLinks layer, and the animated rule that a voice
+ * actor's headshot is never a valid portrait — and flags any card that would
+ * ship on key art. Kept out of the LLM `results` (and the .audit.json `results`
+ * key repair-flags reads) because a missing photo is not a text defect and
+ * cannot be repaired by rewriting a sentence.
+ */
+function auditPortraits(show, spine, seasons) {
+  // Same two-signal detection as the uploader: anime is typed 'Scripted' but
+  // genre-tagged 'Anime', some cartoons carry the type but not the genre.
+  const animated =
+    show.showType === 'Animation' ||
+    (show.genres ?? []).some(g => /animation|anime/i.test(g));
+
+  const cast = (show.cast ?? []).filter(c => c.character);
+  const owners = tokenOwners(cast.map(c => c.character));
+  // bestMatch scores on `name` and `weight`; carry the row so we can read its
+  // images back. Weight is episode count, exactly as the uploader ranks.
+  const candidates = cast.map(c => ({ name: c.character, weight: c.episodeCount ?? 0, row: c }));
+  const links = spine.castLinks ?? {};
+
+  const rowFor = name => {
+    // Explicit links win, same as compositing — "The Governor" is credited
+    // Philip Blake, a pairing no string match can reach.
+    const link = links[name];
+    if (link) {
+      const hit = cast.find(c => c.name === link.actor && c.character === link.character);
+      if (hit) return hit;
+    }
+    return bestMatch(name, candidates, owners)?.row ?? null;
+  };
+
+  const flags = [];
+  for (const s of seasons) {
+    const chars = spine.seasons[String(s)]?.characters ?? [];
+    chars.forEach((c, i) => {
+      const row = rowFor(c.name);
+      // Mirror portraitOf: animation refuses the profile headshot entirely.
+      const portrait = row ? (animated ? row.inCharacter ?? null : row.inCharacter ?? row.profile ?? null) : null;
+      if (portrait) return;
+      flags.push({
+        season: s,
+        id: `C${i + 1}`,
+        type: 'portrait',
+        severity: 'high',
+        claim: `${c.name} — card renders on key art, no portrait`,
+        evidence: !row
+          ? `no cast member resolves from "${c.name}"`
+          : animated
+            ? `matched "${row.character}" but it has no in-character still, and a voice actor's headshot is never used on an animated card`
+            : `matched "${row.character}" but it carries no usable image`,
+      });
+    });
+  }
+  return flags;
+}
+
 async function auditShow(slug, opts) {
   const show = JSON.parse(await readFile(resolve(DATA, `${slug}.json`), 'utf8'));
   const spine = JSON.parse(await readFile(resolve(DATA, `${slug}.spine.json`), 'utf8'));
@@ -225,7 +294,11 @@ async function auditShow(slug, opts) {
     })
   ).filter(Boolean);
 
-  const all = results.flatMap(r => (r.flags ?? []).map(f => ({ ...f, season: r.season })));
+  const portraits = auditPortraits(show, spine, wanted);
+  const all = [
+    ...results.flatMap(r => (r.flags ?? []).map(f => ({ ...f, season: r.season }))),
+    ...portraits,
+  ];
   const high = all.filter(f => f.severity === 'high');
   const shown = opts.highOnly ? high : all;
 
@@ -248,16 +321,38 @@ async function auditShow(slug, opts) {
 
   // Written whether or not anything was flagged: a clean report is the record
   // that this season was checked, which is the thing a later reader wants.
-  await writeFile(
-    resolve(DATA, `${slug}.audit.json`),
-    JSON.stringify({ slug, auditedAt: new Date().toISOString(), results }, null, 2),
-  );
+  //
+  // AIRTIGHT WRITE. A run cut off by the usage limit produces all-errored
+  // results, and blindly writing them once clobbered ~150 good audits when a
+  // repair pass re-audited on a dead quota. So an all-errored result never
+  // overwrites an existing COMPLETE audit — the good one is kept. The errored
+  // version is written only when there is nothing good to protect, so the
+  // resume guard still knows the show needs doing.
+  const allErrored = results.length > 0 && results.every(r => r.error);
+  const path = resolve(DATA, `${slug}.audit.json`);
+  let priorComplete = false;
+  if (allErrored && existsSync(path)) {
+    try {
+      const prior = JSON.parse(await readFile(path, 'utf8'));
+      priorComplete = (prior.results ?? []).length > 0 && !(prior.results ?? []).some(r => r.error);
+    } catch {
+      /* unreadable prior — fall through and overwrite */
+    }
+  }
+  if (allErrored && priorComplete) {
+    console.log(`${head} usage limit — kept prior audit, not overwritten`);
+  } else {
+    await writeFile(
+      path,
+      JSON.stringify({ slug, auditedAt: new Date().toISOString(), results, portraits }, null, 2),
+    );
+  }
 
-  return { slug, high: high.length, low: all.length - high.length };
+  return { slug, high: high.length, low: all.length - high.length, errored: allErrored };
 }
 
 async function main() {
-  const slugs = process.argv.includes('--all')
+  let slugs = process.argv.includes('--all')
     ? (await readdir(DATA))
         .filter(f => f.endsWith('.spine.json') && !f.includes('bak'))
         .map(f => f.replace('.spine.json', ''))
@@ -267,6 +362,34 @@ async function main() {
   if (!slugs.length) {
     console.error('\n✗ pass --slug <name> or --all\n');
     process.exit(1);
+  }
+
+  // Resume support: an --all sweep is expensive and gets cut off by usage
+  // limits, so skip shows already audited. A single --slug always runs, so
+  // re-auditing one on purpose still works; --force redoes all.
+  //
+  // "Already audited" means a COMPLETE audit, not merely a file on disk. A run
+  // cut off by the usage limit still writes an audit.json — every season in it
+  // carries an `error` instead of flags — and skipping on existence alone would
+  // freeze those partial results in place forever. So an audit with any errored
+  // season is treated as unfinished and re-run.
+  if (process.argv.includes('--all') && !process.argv.includes('--force')) {
+    const done = await Promise.all(
+      slugs.map(async s => {
+        const p = resolve(DATA, `${s}.audit.json`);
+        if (!existsSync(p)) return false;
+        try {
+          const a = JSON.parse(await readFile(p, 'utf8'));
+          return (a.results ?? []).length > 0 && !(a.results ?? []).some(r => r.error);
+        } catch {
+          return false; // unreadable/corrupt — redo it
+        }
+      }),
+    );
+    const before = slugs.length;
+    slugs = slugs.filter((_, i) => !done[i]);
+    const skipped = before - slugs.length;
+    if (skipped) console.log(`  (resuming — ${skipped} complete, ${slugs.length} to go; --force to redo)`);
   }
 
   const opts = {
@@ -279,11 +402,23 @@ async function main() {
 
   console.log('');
   const totals = [];
+  // Circuit breaker: once the usage limit is hit every remaining show comes
+  // back all-errored. Stop after a few in a row rather than marching the whole
+  // list making rejected calls. Combined with the airtight write above, a
+  // capped sweep neither wastes the run nor damages any existing audit.
+  let consecErrored = 0;
   for (const slug of slugs) {
     try {
-      totals.push(await auditShow(slug, opts));
+      const r = await auditShow(slug, opts);
+      totals.push(r);
+      consecErrored = r.errored ? consecErrored + 1 : 0;
     } catch (e) {
       console.log(`  ${slug.padEnd(18)} ✗ ${e.message}`);
+      consecErrored++;
+    }
+    if (consecErrored >= 3) {
+      console.log(`\n  usage limit — ${consecErrored} consecutive errored, stopping cleanly\n`);
+      break;
     }
   }
 

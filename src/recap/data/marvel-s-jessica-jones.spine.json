@@ -1,0 +1,263 @@
+{
+  "slug": "marvel-s-jessica-jones",
+  "generatedFor": "Marvel's Jessica Jones",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Kilgrave returns",
+          "text": "Jessica takes a missing-persons case that leads back to Kilgrave, the mind-controller she thought dead. Under his command, Hope Shlottman kills her parents.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Kilgrave is alive and Jessica's PTSD is now an active problem, not backstory.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Luke Cage",
+          "text": "Jessica sleeps with bar owner Luke Cage and discovers he shares her powers, but she hides that she has been surveilling him and why.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Plants the deception that later blows up their relationship and seeds Cage's role in the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · First capture fails",
+          "text": "Jessica sources a surgical anaesthetic that neutralises Kilgrave's powers and stages a snatch, but his hired guards escape with him before Hope can be freed.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Shows Kilgrave now has money and manpower, forcing Jessica into a longer, riskier plan.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Reva",
+          "text": "Cage learns Jessica killed his wife Reva under Kilgrave's orders, then slept with him while hiding it. He walks out, unable to forgive her.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Removes Jessica's only ally with matching powers just as the fight escalates; establishes the guilt she carries.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The origin",
+          "text": "Jessica captures Kilgrave and forces his experimenting parents to face him. His mother tries to kill him; he makes her die instead, and he escapes.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Establishes Kilgrave's abilities came from a lab, not luck — the first hint of the shadow-science world S2 belongs to.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · IGH surfaces",
+          "text": "Cop Will Simpson takes IGH combat pills from Dr Kozlov and kills Detective Clemons. Trish traces the drug back to IGH — the firm that paid for Jessica's care.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The single most important S1 beat for S2: names IGH and links it to Jessica's own origin.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Snapped neck",
+          "text": "Hope kills herself so Jessica can act without saving her. Kilgrave takes Trish hostage to test his hold; Jessica breaks his neck and is publicly hailed a hero.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Ends Kilgrave's arc and sets Jessica up as a reluctant public vigilante entering S2.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Kilgrave is dead but IGH is not. Trish has just found that the shadow company paid for Jessica's care after her family's fatal accident, and Simpson has been quietly retrieved by Dr Kozlov.",
+        "questions": [
+          "What is IGH and what did they do to Jessica as a child?",
+          "Where is Simpson now, and what will IGH make of him?",
+          "Will Jessica accept the hero label the city has given her?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jessica Jones",
+          "line": "Super-strong PI and heavy drinker who has just killed Kilgrave and is now publicly known around New York as a vigilante."
+        },
+        {
+          "name": "Trish Walker",
+          "line": "Jessica's adopted sister and radio host; hospitalised after using Simpson's IGH combat pills and now certain IGH is worth investigating."
+        },
+        {
+          "name": "Kilgrave",
+          "line": "British mind-controller who tormented and violated Jessica for months; killed by her in the finale but embedded in her memory."
+        },
+        {
+          "name": "Jeri Hogarth",
+          "line": "Ruthless attorney who bailed Jessica out; her estranged wife Wendy was killed under Kilgrave's control and she is now single."
+        },
+        {
+          "name": "Malcolm Ducasse",
+          "line": "Jessica's neighbour; Kilgrave hooked him on heroin as a spy, but he is now sober and helping Jessica out of Alias Investigations."
+        },
+        {
+          "name": "Will Simpson",
+          "line": "Ex-special-forces cop and Trish's on-off boyfriend, dependent on IGH combat drugs and taken away by Dr Kozlov after Trish beat him unconscious."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Vigilante life",
+          "text": "Jessica is now the city's known super-PI. Trish pushes her to investigate IGH, the firm that gave her powers; Jessica resists until a case forces her back to it.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the season's central pressure: Trish wants the IGH story, Jessica does not.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Whizzer",
+          "text": "A super-speedster who calls himself Whizzer dies fleeing an unseen killer. His medication leads Jessica to an abandoned building she remembers being experimented on in.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "First proof there are other IGH survivors and someone is killing them.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Simpson dies, Malus surfaces",
+          "text": "The killer works through IGH's staff and doctors. Simpson resurfaces to warn Trish and is murdered; the trail leads to Dr Karl Malus, living with the powered killer.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Closes Simpson's S1 thread and names Malus, the scientist behind everything Jessica and Trish become.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Alisa lives",
+          "text": "The killer is Jessica's mother Alisa, kept alive and altered by IGH. Her strength and rage-fits are Malus' unfinished work; Jessica bonds with her, then turns her in.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The season's central revelation and the emotional load Jessica carries into S3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Trish wants powers",
+          "text": "Hooked on Simpson's IGH combat pills, Trish quits her radio show and demands Malus give her real abilities. Jessica interrupts the procedure partway through.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The single most load-bearing S2 beat for S3: Trish gets a partial dose of what made Jessica.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Escape and Playland",
+          "text": "Alisa breaks out of prison after Malus dies and kidnaps Jessica for a run to the border. Trish follows them to the Playland amusement park and shoots Alisa dead.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The act that fractures the sisters and drives every choice Jessica and Trish make in S3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The blame",
+          "text": "Jessica takes public blame for Alisa's killing to keep Trish free but cannot forgive her. Trish's reflexes are now heightened; Malcolm leaves to work for Hogarth and Cheng.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Sets the exact estrangement, powers, and staffing that S3 opens on.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Trish has killed Jessica's newly-found mother Alisa, and Jessica has taken the blame to protect her. Trish's own body is reacting to Malus' half-finished procedure — her reflexes are quickening — and the sisters are barely speaking.",
+        "questions": [
+          "How far will Trish push the abilities she now knows she has?",
+          "Can Jessica ever forgive her for killing Alisa?",
+          "What does Hogarth become now that she has ALS, her own firm, and no partner?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jessica Jones",
+          "line": "PI who let the city think she killed her own mother to shield Trish; tentatively building a normal life with her landlord and boyfriend Oscar."
+        },
+        {
+          "name": "Trish Walker",
+          "line": "Jessica's sister and ex-radio host, secretly enhanced with quickened reflexes after Malus' aborted procedure; the person who actually killed Alisa Jones."
+        },
+        {
+          "name": "Malcolm Ducasse",
+          "line": "Left Jessica's employ for rival PI Pryce Cheng under Jeri Hogarth; sober, ambitious, and no longer answering to her."
+        },
+        {
+          "name": "Jeri Hogarth",
+          "line": "Diagnosed with ALS; blackmailed her way out of her old firm to start her own after her partners tried to force her out."
+        },
+        {
+          "name": "Oscar Arocho",
+          "line": "Skilled forger, single father to Vido, and Jessica's boyfriend and building superintendent."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Hellcat in the shadows",
+          "text": "Jessica now takes cases openly. Trish, hiding the enhanced abilities left by Malus' procedure, secretly trains and operates as a masked vigilante on the city's streets.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the parallel Jessica and Trish are now on: same work, wildly different rules.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Sallinger's knife",
+          "text": "A masked man nearly kills Jessica with a stab wound that removes her spleen. She traces the attack to Gregory Sallinger, a meticulous serial killer who despises 'frauds' like her.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the season's antagonist and the mortality shock that reshapes Jessica's caution.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Erik the empath",
+          "text": "Erik Gelden, an empath who feels others' guilt as pain, becomes Jessica's ally after Sallinger tortures him for what he knows. Sallinger evades arrest for lack of evidence.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Introduces Erik as Jessica's new partner and shows the law cannot touch Sallinger — the setup for what Trish will do.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The blackmail",
+          "text": "Sallinger blackmails Jessica with a photo of Trish attacking him. To protect her sister, Jessica destroys the forensic evidence linking Sallinger to a past murder.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The compromise that lets Sallinger walk free and gives Trish permission to escalate.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Trish starts killing",
+          "text": "Trish and Erik begin killing suspects together. Sallinger murders Trish's mother Dorothy in retaliation, hardening Trish from vigilante into executioner.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The moral point of no return for Trish and the death that removes her last brake.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Sallinger dies wrong",
+          "text": "Jessica traps Sallinger with a taped confession, but Trish murders him after his arrest and injures bystanders escaping. Jessica accepts she has to stop her sister.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The exact moment Jessica stops protecting Trish and becomes the person hunting her.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The Raft",
+          "text": "Jessica leaks Trish's identity to the news, defeats her, and hands her to the Raft. Alone and hearing Kilgrave in her head, she chooses to stay in New York anyway.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The final rupture between the sisters and Jessica's own decision to remain a hero rather than run.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Jessica has publicly unmasked her sister Trish as the killer 'Hellcat' and sent her to the Raft. She almost fled the country afterwards but stayed after hearing Kilgrave's voice in her head telling her to abandon everyone.",
+        "questions": [
+          "Can Jessica live with turning Trish in?",
+          "Will Trish ever forgive her from inside the Raft?",
+          "Who is Jessica without a sister to protect?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jessica Jones",
+          "line": "PI who has just handed her sister to the Raft; chose to stay in New York and keep helping people rather than run from what she did."
+        },
+        {
+          "name": "Trish Walker",
+          "line": "Sent to the Raft after murdering Sallinger as the masked vigilante Hellcat; publicly unmasked by Jessica in a news leak."
+        },
+        {
+          "name": "Malcolm Ducasse",
+          "line": "Now runs Alias Investigations after Jessica hands him the keys and the sign; in a relationship with Erik's sister Brianna."
+        },
+        {
+          "name": "Jeri Hogarth",
+          "line": "ALS-stricken lawyer, alone again after her ex-lover Kith left her over her manipulations; still practising, still fixing things dirty."
+        },
+        {
+          "name": "Erik Gelden",
+          "line": "Empath who helped Jessica track Sallinger; joining Detective Costa as a consultant for the NYPD."
+        },
+        {
+          "name": "Gregory Sallinger",
+          "line": "Meticulous serial killer who murdered Trish's mother Dorothy and was killed by Trish after arrest; the catalyst for the sisters' final break."
+        }
+      ]
+    }
+  }
+}

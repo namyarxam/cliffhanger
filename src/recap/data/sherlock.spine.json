@@ -1,0 +1,374 @@
+{
+  "slug": "sherlock",
+  "generatedFor": "Sherlock",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Baker Street begins",
+          "text": "Army doctor John Watson, back from Afghanistan, is introduced to consulting detective Sherlock Holmes, and the two immediately move into 221B Baker Street together.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the central partnership every later season leans on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The cabbie's game",
+          "text": "A serial killer cabbie is forcing victims to pick between two pills; John shoots him through a window to save Sherlock, cementing their partnership in blood.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Shows John's willingness to kill for Sherlock, the moral core of their bond.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A name in the dark",
+          "text": "The dying cabbie names his sponsor: Moriarty. Sherlock now knows an unseen hand has been arranging his cases from the start.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "First mention of the season's true antagonist, seeded before he appears.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Mycroft in the shadows",
+          "text": "Sherlock's older brother Mycroft, a quietly powerful government figure, tries to buy John as an informant on Sherlock and is refused.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces Mycroft's ongoing role as state-adjacent handler and John's loyalty test.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Chinese cipher",
+          "text": "A smuggling ring is chased down over a stolen artefact, and their captured leader is executed by a sniper on the orders of someone she calls only 'M'.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Confirms Moriarty is running a global network, not just one killer.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Bombs and puzzles",
+          "text": "A tormentor straps strangers into bomb vests and forces Sherlock to solve linked cases against a clock, weaponising innocents to test him.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Establishes Moriarty's method: turning Sherlock's genius against him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Poolside standoff",
+          "text": "Jim Moriarty finally shows his face at a swimming pool, rigs John with explosives, and leaves Sherlock aiming a gun at the bomb between them.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The season closes mid-standoff; this is the exact frame season 2 resumes on.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Sherlock and Moriarty face each other at a poolside, John wired with explosives between them, Sherlock's gun trained on the bomb. Nobody has moved.",
+        "questions": [
+          "Does anyone walk out of that pool alive?",
+          "What did Moriarty actually want from meeting Sherlock in person?",
+          "How far does his network already reach into Sherlock's life?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Sherlock Holmes",
+          "line": "London's only consulting detective, brilliant and abrasive, now aware someone named Moriarty has been feeding him cases."
+        },
+        {
+          "name": "John Watson",
+          "line": "Ex-army doctor and Sherlock's flatmate, steady where Sherlock is chaotic, and willing to kill for him."
+        },
+        {
+          "name": "Jim Moriarty",
+          "line": "A giggling, unstable criminal consultant who runs a global network and has just walked out of a standoff with Sherlock."
+        },
+        {
+          "name": "Mycroft Holmes",
+          "line": "Sherlock's older brother; a quiet, powerful figure inside the British government who watches over him from a distance."
+        },
+        {
+          "name": "DI Greg Lestrade",
+          "line": "The Scotland Yard detective who tolerates Sherlock's insults because he keeps closing impossible cases."
+        },
+        {
+          "name": "Mrs Hudson",
+          "line": "The Baker Street landlady, maternal and unfazed by the traffic through her front door."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Moriarty walks away",
+          "text": "A phone call at the pool pulls Moriarty out of the standoff. He lets Sherlock and John live, but promises he still intends to burn Sherlock.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Resolves the season 1 cliffhanger and sets the countdown for the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Woman",
+          "text": "Dominatrix Irene Adler holds a phone full of state-level blackmail. Sherlock is drawn to her, is outplayed by her, and quietly rescues her from execution.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "First serious hint Sherlock can be reached emotionally, and Moriarty exploits her data.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Moriarty as puppeteer",
+          "text": "Adler funnels a decoded British counter-terror plan straight to Moriarty, who uses it to sink the operation, proving he sits above every case Sherlock touches.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Confirms Moriarty's reach into state secrets ahead of his direct assault.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The hound on Dartmoor",
+          "text": "A military hallucinogen tied to a scrapped project turns out to be behind the Baskerville 'hound'. The scientist responsible flees into a minefield and dies.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "A self-contained case that shows Sherlock's own mind is not immune to fear.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The three-city heist",
+          "text": "Moriarty simultaneously breaks into the Tower of London, the Bank of England and Pentonville Prison, then walks into court and buys his acquittal by threatening the jury.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Opens the finale by putting Moriarty untouchably above the law.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The frame job",
+          "text": "Moriarty spends weeks manufacturing evidence that Sherlock is a fraud who invents his own cases, poisoning his reputation with press and police alike.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Explains why Sherlock cannot simply be publicly alive again after the fall.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The rooftop fall",
+          "text": "On a hospital roof Moriarty shoots himself to lock the trap; snipers will kill John, Mrs Hudson and Lestrade unless Sherlock jumps. Sherlock phones John, confesses to fraud, and steps off.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The season-closing image; every relationship in season 3 is defined by it.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "John and the world believe Sherlock is dead; his reputation is destroyed and Moriarty is dead on the same roof. Only a few people know Sherlock is somehow still alive.",
+        "questions": [
+          "How did Sherlock survive the fall?",
+          "How does John find out, and how does he react?",
+          "With Moriarty gone, whose network is still hunting Sherlock?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Sherlock Holmes",
+          "line": "Publicly disgraced, presumed dead after jumping from a hospital roof to save his friends' lives."
+        },
+        {
+          "name": "John Watson",
+          "line": "In genuine mourning, believing his best friend threw himself off a building after confessing to being a fraud."
+        },
+        {
+          "name": "Jim Moriarty",
+          "line": "Dead by his own hand on the rooftop, having engineered Sherlock's ruin and apparent suicide before pulling the trigger."
+        },
+        {
+          "name": "Mycroft Holmes",
+          "line": "Quietly holding the truth of Sherlock's survival and, presumably, orchestrating whatever comes next."
+        },
+        {
+          "name": "Irene Adler",
+          "line": "Reported killed abroad but secretly extracted by Sherlock; the one person to have unsettled him."
+        },
+        {
+          "name": "Mrs Hudson",
+          "line": "One of the three people Moriarty's snipers had trained on the moment Sherlock jumped."
+        },
+        {
+          "name": "DI Greg Lestrade",
+          "line": "The third sniper target; forced by the Moriarty frame-up to publicly doubt Sherlock."
+        },
+        {
+          "name": "Molly Hooper",
+          "line": "The Bart's pathologist whose quiet help Sherlock asked for in the hours before the fall."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Sherlock returns",
+          "text": "Two years after the fall, a cleared Sherlock walks back into London with Mycroft's blessing. John has moved on, is engaged to Mary Morstan, and is furious.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Resets the central partnership and introduces Mary, who drives the rest of the series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Mary in the fold",
+          "text": "John is abducted by an unrelated terror cell and rescued by Sherlock and Mary together, and the three of them stop a Guy Fawkes plot to blow up Parliament.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Fuses Mary into the Baker Street unit as a working partner, not just John's fiancée.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The wedding",
+          "text": "At John and Mary's wedding Sherlock delivers a best man's speech that doubles as case-solving, unmasks a would-be killer among the guests, and reveals Mary is pregnant.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Locks in the new domestic status quo and the coming child.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Magnussen",
+          "text": "Media magnate Charles Augustus Magnussen surfaces as the 'Napoleon of blackmail', holding leverage on every person of importance in the West, entirely inside his own head.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The season villain; his knowledge is the reason Sherlock ends up committing murder.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Mary shoots Sherlock",
+          "text": "Investigating Magnussen, Sherlock finds Mary in his office and she shoots him, almost fatally. She is a former assassin being blackmailed over her real identity.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Detonates the marriage plot and drives the murder that closes the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · A murder for John",
+          "text": "Magnussen keeps no files: everything is memorised. To free John and Mary from his hold, Sherlock shoots him dead in front of Mycroft and armed witnesses.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Explains Sherlock's exile at the end of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Did you miss me?",
+          "text": "As Sherlock's plane leaves for a suicidal foreign assignment, every screen in Britain hijacks to Moriarty's face asking 'Did you miss me?' Mycroft turns the plane around.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The exact question season 4 opens on: is Moriarty back, and how?",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Sherlock has murdered Magnussen and is being pulled back from exile because Moriarty's face is broadcasting nationwide asking whether he was missed. Mary's assassin past is out, and she and John are expecting a child.",
+        "questions": [
+          "Is Moriarty really alive, or is someone using his face?",
+          "Can John and Mary's marriage survive what he now knows about her?",
+          "How does Sherlock avoid paying the legal price for killing Magnussen?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Sherlock Holmes",
+          "line": "Back in London, publicly rehabilitated, and now a murderer who has just killed Magnussen in front of witnesses to protect John's family."
+        },
+        {
+          "name": "John Watson",
+          "line": "Married to Mary, about to be a father, and reeling from the discovery that his wife is a former assassin."
+        },
+        {
+          "name": "Mary Morstan",
+          "line": "John's pregnant wife and a retired covert operative under an assumed identity; loyal to John but demonstrably dangerous."
+        },
+        {
+          "name": "Jim Moriarty",
+          "line": "Dead as far as anyone saw, but his face has just seized every screen in Britain and nobody knows why."
+        },
+        {
+          "name": "Mycroft Holmes",
+          "line": "Just recalled Sherlock's exile flight; caught between protecting his brother and the state that wanted him gone."
+        },
+        {
+          "name": "Mrs Hudson",
+          "line": "Still the anchor at 221B, quietly folding Mary into the household."
+        },
+        {
+          "name": "Molly Hooper",
+          "line": "One of the small circle Sherlock trusted during his two dead years."
+        },
+        {
+          "name": "DI Greg Lestrade",
+          "line": "The one senior officer who continues to trust Sherlock even after Magnussen's death."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · The Thatcher busts",
+          "text": "A string of smashed Margaret Thatcher busts leads Sherlock into Mary's covert past, where a former teammate believes she betrayed him and comes hunting.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up the trap that kills Mary and fractures Sherlock and John.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Mary takes the bullet",
+          "text": "The real traitor turns out to be a Parliamentary secretary, who fires at Sherlock. Mary steps in front of the shot and dies. John blames Sherlock and cuts him off.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The event the rest of the season is metabolising.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Sherlock unravels",
+          "text": "Grief-stricken and back on drugs, Sherlock can no longer tell his thoughts from reality. Mary has left him a posthumous task: 'Save John' by putting himself in danger.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Explains Sherlock's chaotic behaviour and reroutes him toward John.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The Culverton Smith trap",
+          "text": "Sherlock provokes serial killer Culverton Smith into confessing at a hospital bedside, letting John save his life at the last moment and dragging the two men back together.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Repairs the John–Sherlock partnership before the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The therapist is family",
+          "text": "John's kindly therapist is revealed to be Eurus Holmes, a secret sister Mycroft has hidden for years. She has been manipulating both men in disguise and shoots John.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces the season's real antagonist as a member of Sherlock's own family.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Sherrinford",
+          "text": "Eurus has already compromised the maximum-security asylum meant to hold her. She takes over Sherrinford, bombs Baker Street, and forces Sherlock, John and Mycroft into her games.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The season-defining reveal about the Holmes family.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Redbeard and the reset",
+          "text": "Eurus is exposed as the reason Sherlock's childhood friend 'Redbeard' died. Sherlock reaches her with compassion instead of a puzzle, she stands down, and the trio return to a rebuilt 221B.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Closes out the season's core reveal and resets the status quo.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Mary is dead, Eurus is subdued and back in confinement, and Sherlock and John are back at a rebuilt Baker Street with Mary's daughter and a message from Mary telling them to stay together.",
+        "questions": [
+          "Can John raise his daughter alongside Sherlock and keep his own footing?",
+          "Is Eurus truly contained, or will the Holmes family have to open that door again?",
+          "What does a Baker Street defined by loss, not by Moriarty, actually look like day to day?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Sherlock Holmes",
+          "line": "Newly clean, holding Mary's dying instruction to 'save John' as his compass, and freshly reconciled with a sister he did not remember."
+        },
+        {
+          "name": "John Watson",
+          "line": "A widower and single father to Mary's daughter, back at Baker Street with Sherlock after nearly severing the friendship."
+        },
+        {
+          "name": "Mary Watson",
+          "line": "Killed taking a bullet meant for Sherlock; her recorded messages still shape what Sherlock and John do."
+        },
+        {
+          "name": "Eurus Holmes",
+          "line": "Sherlock's brilliant, dangerous younger sister, now back in Sherrinford after a Holmes-family reckoning."
+        },
+        {
+          "name": "Mycroft Holmes",
+          "line": "Exposed as the brother who quietly buried Eurus's existence for decades, and forced by Sherlock to reopen it."
+        },
+        {
+          "name": "Mrs Hudson",
+          "line": "Still holding Baker Street together while Sherlock and John rebuild it around Mary's absence."
+        },
+        {
+          "name": "DI Greg Lestrade",
+          "line": "Sherlock's constant at Scotland Yard, the outside professional relationship that has survived every reset."
+        }
+      ]
+    }
+  }
+}

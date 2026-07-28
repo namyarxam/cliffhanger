@@ -1,0 +1,789 @@
+{
+  "slug": "fear-the-walking-dead",
+  "generatedFor": "Fear the Walking Dead",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Calvin returns",
+          "text": "Nick wakes in a squat with his girlfriend eating a corpse and is hit by a car. His family calls it delusion until his dealer Calvin returns as a walker who won't die.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the outbreak in Los Angeles and locks the Clark/Manawa families together.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Barbershop refuge",
+          "text": "LA erupts. The Clark and Manawa families take refuge at Daniel Salazar's barbershop during riots; the National Guard arrives and quarantines their block.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces the Salazars as permanent members of the group and sets the military occupation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Safe Zone lies",
+          "text": "Under quarantine, Madison finds that guardsmen have killed uninfected civilians. Daniel warns her that anyone taken 'to the hospital' is being executed.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Turns the military from protectors into the season's real threat.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Griselda dies",
+          "text": "Soldiers take feverish Nick and wounded Griselda for medical care; nurse Liza volunteers along. Griselda dies at the hospital and Liza shoots her brain.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Splits the group and forces a rescue mission; kills Ofelia's mother.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Cobalt",
+          "text": "Daniel tortures the soldier Adams and learns 'Cobalt': at dawn every remaining civilian will be executed and the guardsmen evacuated.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Sets the deadline that triggers the base raid and everything that follows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Strand and the Abigail",
+          "text": "The group raids the base to rescue their own, freeing detainees and meeting Victor Strand, who leads them to his oceanside mansion and his yacht Abigail.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Adds Strand — a lifelong fixture — and gives the group the boat that becomes next season's world.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Liza on the beach",
+          "text": "On the sand Liza reveals she was bitten in the escape. Travis shoots her before she turns, and Chris will not forgive him for it.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Detonates the Travis/Chris relationship that drives the whole next season.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The families are on Strand's yacht with Los Angeles burning behind them. Travis has just shot Liza on the beach after her bite, and no one aboard knows Strand or where he plans to take them.",
+        "questions": [
+          "Where is Strand actually taking the Abigail?",
+          "Can Chris live with his father having killed his mother?",
+          "Is any part of the mainland world still holding together?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Madison Clark",
+          "line": "Schoolteacher and mother of Nick and Alicia; increasingly the group's decisive core."
+        },
+        {
+          "name": "Travis Manawa",
+          "line": "Madison's fiancé and a teacher; just shot his ex-wife Liza to spare her turning."
+        },
+        {
+          "name": "Nick Clark",
+          "line": "Madison's recovering-addict son and the first to witness a walker."
+        },
+        {
+          "name": "Alicia Clark",
+          "line": "Madison's teen daughter, hardening fast under the collapse."
+        },
+        {
+          "name": "Chris Manawa",
+          "line": "Travis's grieving son; blames his father for killing his mother."
+        },
+        {
+          "name": "Daniel Salazar",
+          "line": "Salvadoran barber with a torturer's past; the most brutal pragmatist in the group."
+        },
+        {
+          "name": "Ofelia Salazar",
+          "line": "Daniel's daughter, still processing her mother Griselda's death at the hospital."
+        },
+        {
+          "name": "Victor Strand",
+          "line": "Wealthy stranger who bribed their way out of the base and owns the yacht Abigail."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Aboard the Abigail",
+          "text": "The group flees LA aboard Strand's yacht as the military bombs the city. Strand refuses to help other survivors and secretly steers south toward Mexico.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Locks the season's setting and marks Strand as the man with a hidden destination.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Chris unravels",
+          "text": "Chris shoots a captive he claims was turning, then stands frozen when Madison is attacked by a walker. Alicia sees it and Madison starts to fear him.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Splits the Manawas from the Clarks and launches Travis's doomed rescue of his son.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Celia's compound",
+          "text": "The group reaches Celia's Baja compound. She keeps her turned family in the cellar and preaches the dead as a beginning, drawing Nick into her orbit.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Introduces Nick's fascination with walkers, the mindset that pushes him away from Madison.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Daniel burns it down",
+          "text": "Strand kills bitten Thomas. Daniel, haunted by visions of the people he's killed, sets the compound ablaze and stays inside. Nick refuses to leave with the group.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Fractures the group entirely and appears to kill Daniel — the season's biggest structural change.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Chris is killed",
+          "text": "Travis chases runaway Chris across Mexico. Chris falls in with three violent American tourists and helps kill a farmer; Travis leaves him, and the tourists later murder him.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Removes Chris and primes Travis's rampage that closes the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Colonia and hotel",
+          "text": "Nick reaches Tijuana's Colonia, run by Alejandro who claims immunity to bites; Nick and scout Luciana pair off. Madison, Alicia and Strand take shelter in Elena's hotel.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Sets up the two locations and Nick's new partner Luciana, whose flight north ends the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Travis snaps, Nick runs north",
+          "text": "Learning what happened to Chris, Travis beats his killers to death and gets the family exiled from the hotel. Nick and Luciana lead the Colonia across the border and are captured by armed men.",
+          "anchorEpisode": 14,
+          "whyLoadBearing": "Two endings in one: Travis without a son and Nick in hostile hands set up all of Season 3.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Travis, Madison and Alicia are following Alejandro's dying instructions toward the border to look for Nick, who has just been captured with Luciana by an unidentified armed group. Strand has stayed behind at the hotel, and Daniel is presumed dead in the compound fire.",
+        "questions": [
+          "Who has taken Nick and Luciana?",
+          "Can Madison reach her son before he's killed?",
+          "What survives of the group now scattered across Mexico?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Madison Clark",
+          "line": "Matriarch willing to burn every bridge left to find Nick."
+        },
+        {
+          "name": "Travis Manawa",
+          "line": "Broken by Chris's death; just beat two men to death at the hotel."
+        },
+        {
+          "name": "Alicia Clark",
+          "line": "Now a seasoned killer; had to shoot a hotel survivor to save Travis."
+        },
+        {
+          "name": "Nick Clark",
+          "line": "Left the family for Luciana's Colonia and has just been captured leading them north."
+        },
+        {
+          "name": "Luciana Galvez",
+          "line": "Colonia scout and Nick's partner; captured with him at the border."
+        },
+        {
+          "name": "Victor Strand",
+          "line": "Stayed at the Mexican hotel with manager Elena after helping the Clarks escape."
+        },
+        {
+          "name": "Ofelia Salazar",
+          "line": "Slipped away from the group and made it across the American border alone."
+        },
+        {
+          "name": "Daniel Salazar",
+          "line": "Vanished in the compound fire — presumed dead but nobody has confirmed it."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Travis dies, ranch arrival",
+          "text": "Travis, Madison and Alicia are captured by an armed group and their escape helicopter is shot down, killing Travis. The Clarks end up at Broke Jaw Ranch with wounded Troy Otto.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Kills the last Manawa and hands the Clarks a new home and antagonist family.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ranch and native land",
+          "text": "Broke Jaw is a survivalist compound run by Jeremiah Otto. Nick bonds with unstable Troy while native leader Qaletaqa Walker claims the ranch as his people's stolen land.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Frames the season-long conflict between the Ottos, the Clarks and Walker's tribe.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Daniel alive at the dam",
+          "text": "Daniel is found alive at the Gonzalez Dam, working under Lola who controls the region's water. Strand tracks him down and pleads for help.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Brings Daniel back into the story and introduces the dam, the season's second theatre.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Nick kills Jeremiah",
+          "text": "Walker's people poison the ranch militia via Ofelia. Nick kills Jeremiah — who once murdered Walker's father — and stages it as suicide to buy peace.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Ends the ranch's founder and puts Nick in a role he can't undo.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Troy's herd, the pantry",
+          "text": "Exiled Troy returns leading a herd to destroy the ranch out of spite. Jake dies, and Alicia is forced to euthanize the survivors trapped without air in the pantry.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Ends the ranch as a home and pushes Alicia away from Madison.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Alicia and Ofelia break away",
+          "text": "Ofelia is bitten and dies during the retreat, breaking Daniel. Alicia tells Madison she is leaving to find her own way, done with her mother's ruthlessness.",
+          "anchorEpisode": 14,
+          "whyLoadBearing": "Establishes the estrangement between Madison and Alicia carried into the time jump.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The dam blows",
+          "text": "The outlaw Proctors take the dam. Strand shoots Daniel in the face and Madison seemingly kills Troy in front of Nick. Nick detonates the dam and Madison swims to shore alone.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "Scatters every principal to a different corner of Texas — the whole premise of Season 4.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The dam is destroyed and the group is scattered. Madison swims to shore alone with no sign of Nick, Alicia, Strand or Daniel, and no home left to return to.",
+        "questions": [
+          "Can Madison find her children again after the dam?",
+          "Did Daniel really survive Strand's bullet to the face?",
+          "Where in a collapsing Texas will any of them land?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Madison Clark",
+          "line": "Ruthless matriarch who just killed Troy; swam to shore alone after the dam."
+        },
+        {
+          "name": "Nick Clark",
+          "line": "Escaped downstream with Daniel; drifting further from his mother."
+        },
+        {
+          "name": "Alicia Clark",
+          "line": "Escaped by boat with Madison and Strand; wants a life apart from Madison."
+        },
+        {
+          "name": "Victor Strand",
+          "line": "Shot Daniel in the face working for the Proctors; escaped with the Clarks."
+        },
+        {
+          "name": "Daniel Salazar",
+          "line": "Survived Strand's gunshot and slipped away; his whereabouts are unknown."
+        },
+        {
+          "name": "Luciana Galvez",
+          "line": "Left the ranch quietly early in the season; unaccounted for."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Morgan heads west",
+          "text": "Morgan Jones leaves his community in Virginia and drifts to Texas, meeting loner John Dorie and journalist Althea. Their trio is ambushed by Alicia, Nick, Strand and Luciana.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the three characters who become the show's new spine.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The stadium",
+          "text": "Flashbacks: Madison has built a community at the Dell Diamond baseball stadium. A young girl, Charlie, has been spying for a scavenger crew called the Vultures.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Explains what Madison has been doing and plants Charlie, whose act detonates the whole season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Charlie kills Nick",
+          "text": "During a supply-run confrontation with the Vultures, Nick tries to kill their scavenger Ennis for revenge. Charlie shoots Nick dead, devastating Alicia.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Ends Nick and gives the present-day storyline its engine of vengeance.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Naomi is Laura",
+          "text": "The Clarks bury Nick and set out for revenge on the Vultures. They discover John's lost love Laura is Naomi, a woman rescued by Madison at the stadium.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Ties the two present-day parties together and gives John his reunion.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Madison burns the stadium",
+          "text": "Vultures unleash trucks of walkers on the stadium. Madison lures the horde inside and sets the field alight, sacrificing herself so her children and their friends can escape.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Kills Madison and reframes every previous flashback as her long goodbye.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Alicia lays down revenge",
+          "text": "Morgan convinces Alicia to stop hunting the Vultures, and John reunites with June. The group commits to helping strangers instead of killing them.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Consolidates the two crews into Morgan's group under a shared mission.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Martha and the factory",
+          "text": "Grief-stricken Martha targets the group as 'weak' and poisons their water. Morgan saves them and they resolve to continue the Polar Bear's work from a Texas denim factory.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "Gives the group both a philosophy and a base — the setup Season 5 attacks.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Madison and Nick are dead. Alicia, Strand and Luciana have folded into Morgan's crew and are operating out of a denim factory in Texas, dedicated to leaving supplies for anyone who needs them.",
+        "questions": [
+          "Can the group live up to Madison's vision?",
+          "Where is Alicia headed now that both her family and her revenge are gone?",
+          "Who else is watching what they're building?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Alicia Clark",
+          "line": "Orphaned and past her revenge; taking Morgan's lead on helping strangers."
+        },
+        {
+          "name": "Victor Strand",
+          "line": "Working out of the Texas denim factory with the rest of the merged group."
+        },
+        {
+          "name": "Luciana Galvez",
+          "line": "Reunited with Alicia and Strand; part of the denim-factory crew."
+        },
+        {
+          "name": "Morgan Jones",
+          "line": "Veteran from Alexandria; the moral centre insisting they help everyone."
+        },
+        {
+          "name": "John Dorie",
+          "line": "Ex-lawman and dead-eye shot; finally reunited with the woman he calls Laura."
+        },
+        {
+          "name": "June",
+          "line": "Nurse formerly known as Naomi and Laura; John's partner and the group's medic."
+        },
+        {
+          "name": "Althea Szewczyk-Przygocki",
+          "line": "Journalist with a SWAT van, recording every survivor's story on tape."
+        },
+        {
+          "name": "Charlie",
+          "line": "The child who killed Nick, forgiven and folded into the group."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Logan takes the factory",
+          "text": "The group tries to help a man named Logan; their plane crashes with Luciana badly injured. Logan is Clayton's old partner and seizes the denim factory for himself.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Strips the group of their home and sets the season's opening antagonist.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Radiation zone and Grace",
+          "text": "In the crash zone they meet children left behind by a power-plant meltdown and Grace, the plant's former manager, dying of radiation sickness.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces Grace and the environmental threat that shapes the back half of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Dwight arrives",
+          "text": "Dwight, a face from Morgan's Virginia past, arrives in Texas searching for his lost wife Sherry. He joins the group and helps hunt Logan's crew.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Adds Dwight as a full-time member and plants Sherry as an open thread.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Daniel found, plant melts down",
+          "text": "Strand tracks down Daniel Salazar, alive in a warehouse; Daniel joins them. The plant finally melts down and the group escapes by plane.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Restores Daniel to the ensemble and closes the radiation storyline.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Enter Virginia",
+          "text": "The group forms a caravan on Clayton's mission of leaving supplies for strangers. Virginia's mounted Pioneers ambush the last oil field and gun Logan down for it.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Trades one antagonist for the far larger one who dominates the rest of the season and the next.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Humbug's Gulch",
+          "text": "Facing a herd at Humbug's Gulch, Morgan reluctantly calls Virginia for help. She splits the group across her Pioneer settlements to keep them from resisting.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "Breaks the group up — the state Season 6 begins in.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Virginia shoots Morgan",
+          "text": "Alone with Morgan, Virginia shoots him and leaves him to die as walkers close in. Morgan broadcasts a message urging his friends to 'just live'.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "Season-ending open question that dictates the entire opening of the next.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Morgan has been shot and left to die by Virginia. The rest of the group is separated across Pioneer settlements under her rule, and a pregnant Grace is with them.",
+        "questions": [
+          "Will Morgan survive Virginia's bullet?",
+          "Can the scattered group ever be reunited?",
+          "What has Virginia done with the friends she's taken?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Morgan Jones",
+          "line": "Shot and dying, left in a walker-choked town by Virginia."
+        },
+        {
+          "name": "Alicia Clark",
+          "line": "Exposed to radiation during the escape; unsure how badly it will affect her."
+        },
+        {
+          "name": "Victor Strand",
+          "line": "Split off to a different Pioneer settlement, separated from the group."
+        },
+        {
+          "name": "June",
+          "line": "Recently married John; forcibly separated from him by Virginia."
+        },
+        {
+          "name": "John Dorie",
+          "line": "Sent to a different Pioneer settlement, apart from June."
+        },
+        {
+          "name": "Althea Szewczyk-Przygocki",
+          "line": "Still guarding what she learned about the mysterious helicopter group."
+        },
+        {
+          "name": "Dwight",
+          "line": "New to the group; still following notes across the country in search of Sherry."
+        },
+        {
+          "name": "Grace",
+          "line": "Former nuclear-plant manager, pregnant, believed to be dying of radiation."
+        },
+        {
+          "name": "Daniel Salazar",
+          "line": "Rejoined the group and reunited with Alicia at Humbug's Gulch."
+        },
+        {
+          "name": "Virginia",
+          "line": "Ruthless leader of the Pioneers; controls the group and just shot Morgan."
+        }
+      ]
+    },
+    "6": {
+      "beats": [
+        {
+          "label": "S6 · Morgan alive, the key",
+          "text": "Weeks later, Morgan has survived Virginia's bullet and killed the bounty hunter Emile, taking his axe and a mysterious key. He warns Virginia she is dealing with someone new.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Resurrects Morgan as an insurgent and plants the key that becomes the season's engine.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Inside Virginia's ranks",
+          "text": "Split across Pioneer settlements, the group schemes against Virginia. Strand impresses her and rises through her ranks; Daniel plays at amnesia to gather intelligence.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets up the internal conspiracy and Strand's collaborator role.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Sherry and Grace",
+          "text": "Dwight is finally reunited with Sherry, now leading anti-Pioneer outlaws. Morgan and Grace reunite and fall in love while she carries the child she is expecting.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Closes Dwight's arc into a partnership and gives Morgan a family stake.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · John Dorie dies",
+          "text": "Virginia's younger sister Dakota is revealed as the killer of ranger Cameron. She shoots John Dorie; John dies of the wound and a walker attack, and June puts him down.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Kills a series lead and turns June from ally into avenger.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · June kills Virginia",
+          "text": "The group overthrows Virginia and Morgan spares her. June enters her cell and kills her in revenge for John.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Closes the Pioneer arc and vacates the antagonist seat for what comes next.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Teddy and the submarine",
+          "text": "A doomsday cult led by Theodore 'Teddy' Maddox attacks the settlements to seize Morgan's key. Alicia is captured, and Teddy reveals the key opens a nuclear submarine.",
+          "anchorEpisode": 14,
+          "whyLoadBearing": "Installs the season's real antagonist and the weapon that reshapes the world.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · The blasts",
+          "text": "Teddy launches one missile carrying ten warheads targeted on Texas. The group scatters — Al calls in a CRM helicopter to airlift some out as the blasts detonate.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "Ends the world of the show as it existed and sets every plot for the next season.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Nuclear warheads have detonated across Texas. Morgan and Grace are hiding under a vehicle with baby Mo; Alicia is locked in Teddy's bunker; Strand is sheltered elsewhere; and Daniel is being airlifted out with the others.",
+        "questions": [
+          "Who actually survived the blasts?",
+          "Will Morgan and Grace ever reunite with their old friends?",
+          "What kind of world will emerge from the ashes?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Morgan Jones",
+          "line": "Hiding under a vehicle with Grace and baby Mo as the blasts fall."
+        },
+        {
+          "name": "Grace",
+          "line": "Gave birth to a stillborn Athena; adopted mother to baby Mo."
+        },
+        {
+          "name": "Alicia Clark",
+          "line": "Locked in Teddy's bunker beneath an old resort hotel."
+        },
+        {
+          "name": "Victor Strand",
+          "line": "Sheltered with the historian Howard, embracing 'a new beginning'."
+        },
+        {
+          "name": "Daniel Salazar",
+          "line": "Airlifted out by a CRM helicopter with the rest of the rescued group."
+        },
+        {
+          "name": "June",
+          "line": "Widowed by John's death; killed Virginia herself and now on the run."
+        },
+        {
+          "name": "Dwight",
+          "line": "Finally reunited with Sherry after years of hunting for her."
+        },
+        {
+          "name": "Sherry",
+          "line": "Dwight's wife; had been leading anti-Pioneer outlaws before the reunion."
+        },
+        {
+          "name": "Althea Szewczyk-Przygocki",
+          "line": "Revealed her CRM contact and called in the helicopter rescue."
+        }
+      ]
+    },
+    "7": {
+      "beats": [
+        {
+          "label": "S7 · The Tower",
+          "text": "Strand has built a fortress kingdom called the Tower, drawing walker herds as a defensive moat. He throws a young survivor off the roof to sever any ties that could weaken him.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Strand as this season's tyrant and the physical setting the season revolves around.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Morgan, Grace and the sub",
+          "text": "Morgan and Grace scrape by inside the beached submarine with baby Mo. Josiah, twin of the bounty hunter Emile, hunts Morgan for revenge before being turned into an ally.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Frames Morgan's fugitive storyline and closes an old debt for space this season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · John Sr. and June",
+          "text": "John Dorie's estranged father John Sr. and June emerge from their bunker after an attack and are taken to the Tower against their will.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces John Sr. so his death in this same season lands, and pulls June into Strand's orbit.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Alicia's war",
+          "text": "Alicia surfaces leading the doomsday cult's abandoned people; she is dying from a bite she couldn't amputate in time. She and Strand declare war on each other.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Puts the season's two poles opposite each other and puts a clock on Alicia.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · John Sr. dies for Mo",
+          "text": "John Sr. carries baby Mo to Morgan through the walker moat, is bitten in the crossing, and sacrifices himself so Morgan and Mo survive. June is widowed again.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Frees Mo from the Tower and hardens June into a full opponent of Strand.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · The Tower burns",
+          "text": "Alicia's army storms the Tower; Strand imprisons her then turns on her, but their fight accidentally sets the building ablaze. Alicia broadcasts a call for survivors before collapsing.",
+          "anchorEpisode": 14,
+          "whyLoadBearing": "Destroys the season's central location and ends Strand's kingdom.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Madison alive",
+          "text": "Alicia's infection unexpectedly heals; she stays behind alone to help others. Morgan drifts ashore in Louisiana with baby Mo and encounters Madison Clark, alive after all these years.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "The show-changing reveal the next season is built on.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Morgan has met Madison alive on a Louisiana beach and both are being taken blindfolded to the mysterious PADRE, which has just seized baby Mo. Alicia is quietly alive but hidden from everyone she loves.",
+        "questions": [
+          "What is PADRE and why does it want children?",
+          "Will Madison learn that Alicia is still alive?",
+          "Can Morgan get Mo back from wherever she has been taken?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Morgan Jones",
+          "line": "Just discovered Madison alive; on his way to PADRE under a blindfold."
+        },
+        {
+          "name": "Madison Clark",
+          "line": "Alive after years apart, working as a Collector for PADRE and believing her children dead."
+        },
+        {
+          "name": "Alicia Clark",
+          "line": "Healed of her infection; returning alone to the Tower ruins to keep helping people."
+        },
+        {
+          "name": "Victor Strand",
+          "line": "Lost his Tower and was found on the beach by Alicia, rejoining the group before they set sail."
+        },
+        {
+          "name": "June",
+          "line": "Widowed a second time by John Sr.'s death; still part of the group."
+        },
+        {
+          "name": "Dwight",
+          "line": "Expecting a child with Sherry and pulling away from anyone he might get killed."
+        },
+        {
+          "name": "Sherry",
+          "line": "Pregnant with Dwight's child."
+        },
+        {
+          "name": "Daniel Salazar",
+          "line": "Snapped out of his delusions about Ofelia and agrees to look after the dying Charlie."
+        },
+        {
+          "name": "Mo",
+          "line": "Morgan's adopted baby daughter, seized by PADRE Collectors on the beach."
+        }
+      ]
+    },
+    "8": {
+      "beats": [
+        {
+          "label": "S8 · PADRE and Wren",
+          "text": "Morgan and Madison rescue Mo from PADRE. Seven years on, Madison is imprisoned there and Mo has been brainwashed into a Prefect named Wren who doesn't know Morgan.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the seven-year jump and the state of the two children the season is fought over.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Who PADRE really is",
+          "text": "June, forced to research radiation-based bite cures, discovers PADRE is run by General Krennick's children Ben and Shrike, who take kids to spare them the pain of losing parents.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Reveals the antagonist behind the operation and the ideology the season attacks.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Grace dies",
+          "text": "Morgan returns to Georgia and finally puts down his zombified son Duane. Grace is bitten during the mission and dies; a shattered Mo goes back to PADRE willingly.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Kills Grace and pushes Morgan into the breakdown that fuels the assault on PADRE.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Assault on PADRE",
+          "text": "Morgan spirals, then leads an assault on PADRE. Ben euthanises a dying Shrike and is banished; Morgan buries Grace and leaves for Alexandria with Mo.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Closes the PADRE conflict and sends Morgan out of the story.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Anton and Troy Otto",
+          "text": "Madison finds Strand living peacefully as 'Anton', hotelier with a husband and adopted son. Troy Otto, alive and one-eyed, returns to take PADRE and claims to have killed Alicia.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Rehabilitates Strand and installs the final-arc antagonist.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Charlie's sacrifice",
+          "text": "Reunited with Luciana and a cured Charlie, Madison learns Charlie killed Nick. Charlie sacrifices herself to protect PADRE from Troy; Madison, blaming herself, leaves.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Confronts and closes the Nick storyline and drives Madison out on her own for the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Madison and Alicia reunite",
+          "text": "Troy leads a herd at PADRE; Madison kills him. She then seemingly sacrifices herself to destroy the herd, survives, and reunites with the living Alicia to head home to Los Angeles.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Delivers the ending — the two Clarks alive together for the first time since Season 3.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Madison, Alicia and Troy's daughter Tracy set out for Los Angeles to rebuild, keeping their survival secret from almost everyone. PADRE has been renamed MADRE in Madison's honour and the rest of the group have scattered to build their own communities.",
+        "questions": [
+          "Can the Clarks rebuild Los Angeles from ruins?",
+          "What will Tracy learn about who she really is?",
+          "Will their paths ever cross their old friends again?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Madison Clark",
+          "line": "Alive after another sham sacrifice; heading to Los Angeles with Alicia and Tracy."
+        },
+        {
+          "name": "Alicia Clark",
+          "line": "Alive after years in hiding; reunited with her mother for the trip home."
+        },
+        {
+          "name": "Morgan Jones",
+          "line": "Returned to Alexandria with Mo, at peace after burying Grace and Duane."
+        },
+        {
+          "name": "Mo",
+          "line": "Morgan's adopted daughter, freed from PADRE's brainwashing."
+        },
+        {
+          "name": "Victor Strand",
+          "line": "Rebuilt as 'Anton', a peaceful hotelier with a husband, Frank, and son, Klaus."
+        },
+        {
+          "name": "Daniel Salazar",
+          "line": "Finally at peace with Strand and reunited with his cat, Skidmark."
+        },
+        {
+          "name": "June",
+          "line": "Heading back to John Sr.'s cabin to provide medical care, with Odessa in tow."
+        },
+        {
+          "name": "Dwight",
+          "line": "Rebuilding the Sanctuary with Sherry as a home for lost parents."
+        },
+        {
+          "name": "Sherry",
+          "line": "Rebuilding the Sanctuary alongside Dwight."
+        },
+        {
+          "name": "Tracy",
+          "line": "Troy Otto's daughter; now under Madison and Alicia's care despite the family history."
+        }
+      ]
+    }
+  },
+  "castLinks": {
+    "Mo": {
+      "actor": "Zoey Merchant",
+      "character": "Mo Jones-Mukherjee"
+    }
+  },
+  "repairedAt": "2026-07-24T12:33:01.175Z"
+}

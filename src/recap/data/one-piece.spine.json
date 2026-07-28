@@ -1,0 +1,203 @@
+{
+  "slug": "one-piece",
+  "generatedFor": "ONE PIECE",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The rubber boy sets sail",
+          "text": "Luffy, a boy who ate the Gum-Gum Fruit and became rubber, leaves his home village to become King of the Pirates, carrying a straw hat lent to him by the pirate Shanks.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Establishes Luffy's power, his dream, and the debt to Shanks that drives everything he does.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · First recruit at the Marine base",
+          "text": "Luffy frees the bounty hunter Roronoa Zoro from execution at a corrupt Marine base and Zoro joins his crew, the first swordsman under the straw hat.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Zoro is Luffy's right hand for every season that follows; this is where the crew actually starts.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Coby joins the Marines",
+          "text": "To free Coby to enlist, Luffy stages a public beating so the Marines see him as an enemy, and the two friends part as future pirate and future Marine.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Sets up the recurring Luffy-versus-Marines dynamic and Coby's parallel arc.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The thief who hates pirates",
+          "text": "Nami, a navigator stealing a Grand Line map from the pirate Buggy, uses Luffy as a decoy and betrays him, but cannot bring herself to kill him when Buggy demands it.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Introduces Nami and the reluctant alliance that becomes the crew's next core relationship.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Buggy the Clown falls",
+          "text": "Zoro learns that Buggy's Chop-Chop Fruit makes him uncuttable, but Luffy blasts the clown out of town after Buggy damages the straw hat Shanks entrusted to him.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "First real Devil Fruit duel, and the moment that shows the hat is Luffy's untouchable line.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Nami throws in with the pirates",
+          "text": "After Luffy avenges a dog whose shop is burned by Buggy's crew, Nami agrees to work alongside the Straw Hats, still refusing to call herself one of them.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Explains why Nami is on the ship at the start of the next season despite still hating pirates.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A town saved, a crew afloat",
+          "text": "The townspeople turn on Luffy once they realise he is a pirate, and the three sail on toward the Grand Line with a stolen map and no fourth member yet.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Sets the state the crew is in as they aim for the Grand Line, where season 2 opens.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Luffy, Zoro and Nami have a map to the Grand Line and a shaky partnership, but no ship worthy of the trip, no navigator's tools for its impossible weather, and a growing list of enemies who now know their faces.",
+        "questions": [
+          "Will Nami stay with a pirate crew she keeps insisting she has not joined?",
+          "How can three people survive the Grand Line without more crew and better gear?",
+          "What happens when Coby, now bound for the Marines, meets Luffy again?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Monkey D. Luffy",
+          "line": "Rubber-bodied would-be King of the Pirates, wearing the straw hat Shanks lent him and captaining a crew of three."
+        },
+        {
+          "name": "Roronoa Zoro",
+          "line": "Three-sword swordsman and former bounty hunter, the first to swear himself to Luffy's crew."
+        },
+        {
+          "name": "Nami",
+          "line": "Master navigator and thief who despises pirates but is riding with Luffy after he saved a village from Buggy."
+        },
+        {
+          "name": "Shanks",
+          "line": "The red-haired pirate whose arm was bitten off saving young Luffy, and whose straw hat Luffy carries as a promise to return.",
+          "note": "Appears only in flashback but is the emotional anchor of the hat."
+        },
+        {
+          "name": "Coby",
+          "line": "Luffy's timid friend, now enlisted as a Marine after Luffy publicly cut ties with him so he could join."
+        },
+        {
+          "name": "Buggy the Clown",
+          "line": "Pirate captain with the Chop-Chop Fruit, humiliated and blasted out of Orange Town but very much alive and holding a grudge."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Into the Grand Line",
+          "text": "The now-larger Straw Hat crew rides down Reverse Mountain into the Grand Line and is swallowed whole by Laboon, a giant whale waiting fifty years for pirates who never came back.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Marks the shift from East Blue to the Grand Line, the world the rest of the show lives in.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · A log pose and a promise",
+          "text": "Whale-keeper Crocus explains that Grand Line navigation needs a log pose, gives them one, and Luffy vows to return one day to finish his draw with Laboon.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Establishes how travel works from here on and plants a promise that hangs over the whole voyage.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Whiskey Peak is a trap",
+          "text": "The welcoming town of Whiskey Peak turns out to be a nest of bounty hunters working for the secret organisation Baroque Works, and Zoro cuts through a hundred of them alone.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces Baroque Works, the antagonist framework driving the rest of the season and beyond.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Vivi's true name",
+          "text": "Two of the town's frontier agents are revealed as traitors: Igaram and Miss Wednesday, who is really Nefertari Vivi, crown princess of Alabasta.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The princess-in-disguise is the new passenger whose home country becomes the next arc.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The warlord behind it all",
+          "text": "Vivi reveals that Baroque Works' hidden boss Mr. 0 is Sir Crocodile, one of the Seven Warlords of the Sea, and that he is engineering a rebellion inside Alabasta.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Names the villain the crew is now sailing toward and raises the stakes to nation-scale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Marked by Miss All-Sunday",
+          "text": "Baroque Works spies photograph Luffy, Zoro and Nami as top targets, and Mr. 0's partner Miss All-Sunday boards their ship to test them with an eternal pose that Luffy contemptuously crushes.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Puts the crew on Crocodile's personal list and introduces the enigmatic Miss All-Sunday.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Coby and Helmeppo choose the Navy",
+          "text": "Coby and Helmeppo, taken under Vice-Admiral Garp's wing at Marine headquarters, secretly train through the nights, and Garp hides that they are friends with the newly wanted Straw Hat Luffy.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Keeps Coby's parallel Marine arc alive and quietly names Garp, who ties in later.",
+          "needsVerify": true
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Straw Hats are sailing for Alabasta with its exiled princess aboard, knowing that the country's civil war is being manufactured by a Warlord of the Sea who has already put a target on their backs.",
+        "questions": [
+          "Can a handful of pirates topple a Warlord who is impersonating a king?",
+          "Whose side is Miss All-Sunday actually on, and why did she offer them safe passage?",
+          "How much longer can Coby's friendship with Luffy stay hidden inside Marine headquarters?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Monkey D. Luffy",
+          "line": "Straw Hat captain now in the Grand Line, sworn to deliver Vivi home and take her country back from Crocodile."
+        },
+        {
+          "name": "Roronoa Zoro",
+          "line": "First mate wielding two new swords from Loguetown, strong enough to cut down a town of bounty hunters by himself."
+        },
+        {
+          "name": "Nami",
+          "line": "Crew navigator learning to read the Grand Line's chaotic weather with a log pose, and shaking down clients along the way."
+        },
+        {
+          "name": "Nefertari Vivi",
+          "line": "Crown princess of Alabasta who infiltrated Baroque Works as Miss Wednesday and is now begging the Straw Hats to save her country."
+        },
+        {
+          "name": "Sir Crocodile / Mr. 0",
+          "line": "Warlord of the Sea secretly running Baroque Works and stoking a rebellion against Alabasta's throne."
+        },
+        {
+          "name": "Miss All-Sunday",
+          "line": "Crocodile's calm, unreadable partner, who knows the crew is hunting him and gave them a pose to reach him anyway."
+        },
+        {
+          "name": "Crocus",
+          "line": "Old lighthouse keeper and doctor to the whale Laboon, who gave the crew their first log pose and once sailed with Gol D. Roger."
+        },
+        {
+          "name": "Coby",
+          "line": "Now a Marine oddjobber training in secret at headquarters under Vice-Admiral Garp, determined to earn a real rank."
+        },
+        {
+          "name": "Monkey D. Garp",
+          "line": "Vice-Admiral who has taken Coby and Helmeppo under his wing and quietly knows they are friends with the wanted Luffy."
+        }
+      ]
+    }
+  },
+  "castLinks": {
+    "Coby": {
+      "actor": "Morgan Davies",
+      "character": "Koby"
+    },
+    "Sir Crocodile / Mr. 0": {
+      "actor": "Joe Manganiello",
+      "character": "Mr. 0"
+    }
+  }
+}

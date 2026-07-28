@@ -1,0 +1,192 @@
+{
+  "slug": "lioness",
+  "generatedFor": "Lioness",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The recruit",
+          "text": "Joe recruits Cruz Manuelos, a Force Recon Marine, into the CIA's Lioness program to infiltrate Aaliyah, daughter of terrorist financier Amrohi.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up the operator, the target, and the whole premise of the season and series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Inside the circle",
+          "text": "Cruz endures brutal SERE training, then successfully befriends Aaliyah in Chesapeake and is folded into her private social world.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Establishes that Cruz is inside Aaliyah's life — the position everything later depends on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Kyle's Texas mess",
+          "text": "Kyle borrows Joe's QRF for an off-books cartel extraction that goes public, drawing scrutiny from Westfield and DHS onto the Lioness team.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces Kyle as Joe's dangerous freelancer and puts Westfield's control over the QRF on the table.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Cleaning it up",
+          "text": "The team kills an Al-Qaeda cell in San Antonio to bury the fallout; Neal notices a scratch on Joe's face and starts guessing what she really does.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The domestic crack in Joe's marriage opens here and stays open for the rest of the series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Hamptons weekend",
+          "text": "Cruz spends a weekend alone with Aaliyah that ends in a kiss. Joe forces her to compartmentalise and stay on mission toward the Mallorca wedding.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The mission becomes emotionally impossible for Cruz here; everything at the wedding is powered by this compromise.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Made at the wedding",
+          "text": "At Aaliyah's wedding in Mallorca, Ehsan uses facial recognition on an old track photo to expose Cruz as a Marine just as she meets Amrohi alone.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The blown cover and the accidental encounter with the target are the hinge the whole finale turns on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Cruz walks away",
+          "text": "Cruz kills Ehsan and Amrohi with a kitchen knife, fights Joe during extraction, and severs ties, condemning the program for making the next generation of terrorists.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Defines Cruz's state going into next season and Joe's reason to reconsider her whole role.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Amrohi mission succeeded and destroyed Cruz. She has cut Joe off, Joe is questioning the Lioness program, and Neal is quietly certain his wife kills people for a living.",
+        "questions": [
+          "Will Cruz ever work with Joe again after what Mallorca cost her?",
+          "Can Joe keep running Lioness now that she doubts what it does?",
+          "How long can Joe's marriage to Neal survive what he now suspects?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Joe McNamara",
+          "line": "CIA Lioness station chief; ran Cruz's op to a bloody success and is now reconsidering her role in the program."
+        },
+        {
+          "name": "Cruz Manuelos",
+          "line": "Marine-turned-Lioness who killed Amrohi and his son-in-law with a knife, severed ties with Joe, and denounced the mission."
+        },
+        {
+          "name": "Aaliyah Amrohi",
+          "line": "Amrohi's daughter and Cruz's target, in one night widowed of Ehsan and orphaned of her father by the woman she loved."
+        },
+        {
+          "name": "Kaitlyn Meade",
+          "line": "Senior CIA supervisor over Lioness, married to financier Errol, who weighed and approved the kill on Amrohi."
+        },
+        {
+          "name": "Byron Westfield",
+          "line": "CIA Deputy Director of Operations who owns Joe's QRF and pushed the White House to authorise Amrohi's assassination."
+        },
+        {
+          "name": "Kyle McManus",
+          "line": "CIA operator whose off-books Texas extraction created the fallout Joe's team then had to clean up in San Antonio."
+        },
+        {
+          "name": "Neal McNamara",
+          "line": "Joe's husband and paediatric oncologist, increasingly disturbed by what he now believes she does on deployment."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Hernandez taken",
+          "text": "Los Tigres cartel abducts Congresswoman Hernandez in Texas; the CIA extracts her and identifies China's MSS as the hand steering the cartel.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the season's target (Los Tigres) and the geopolitical frame (China via Mexico) in one move.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The niece",
+          "text": "Joe recruits Army pilot Josephina Carrillo, niece of cartel head Alvaro, to infiltrate her estranged father Pablo, a lawyer laundering for the family.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces the new Lioness and the family lever the whole plan depends on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Cruz shadows Carrillo",
+          "text": "Cruz returns as a Delta Force SFC to shadow Carrillo, whose loyalty Joe distrusts after she's caught lying about speaking Spanish and her family ties.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Brings Cruz back onto the team and establishes the guarded partnership at the season's centre.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The trafficked children",
+          "text": "A warehouse raid uncovers cartel sex trafficking; Joe defies orders to intercept the children at the border and the operation ends in a suicide bombing.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Establishes Joe openly defying Westfield and Meade, and the personal cost that sets up her injury.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Joe's goodbye call",
+          "text": "Carrillo turns Pablo, but Joe is quietly shot in the op and, believing she is dying, calls Neal from the plane to say goodbye before Walter Reed saves her.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The near-death and the phone call are what force Joe and Neal back toward each other by the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Pablo takes the cartel",
+          "text": "Meade flips Pablo entirely: he executes his brother Alvaro at the Monterrey compound and inherits Los Tigres as a US-controlled asset, delivering the MSS agent.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Installs a CIA-owned cartel boss in Mexico — the biggest board change of the season, still live going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Iran strike",
+          "text": "Cruz and Carrillo bomb an Iranian convoy of Chinese nuclear scientists; their helicopter is downed and the team is nearly overrun before the 82nd Airborne rescues them.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Closes the season on an act of war against Iran and China that no next season could ignore.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Pablo now runs Los Tigres for the CIA, Chinese scientists and an MSS agent are dead in Iran, and Joe — nearly killed on the border — has come home to Neal, who told her she'll always have a home to return to.",
+        "questions": [
+          "How long will Pablo Carrillo stay a loyal US-controlled cartel boss?",
+          "Will Iran or China retaliate for the convoy strike, and against whom?",
+          "Can Joe keep doing this work after nearly dying and hearing what Neal said?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Joe McNamara",
+          "line": "Still running Lioness; shot during the Pablo operation and welcomed home by Neal after being told she always has one."
+        },
+        {
+          "name": "Cruz Manuelos",
+          "line": "Now a Delta Force SFC pulled back onto the team to shadow Carrillo, and by season's end sleeping with her."
+        },
+        {
+          "name": "Josephina Carrillo",
+          "line": "Former Army pilot turned Lioness who broke her family open so the CIA could install her father atop the cartel."
+        },
+        {
+          "name": "Pablo Carrillo",
+          "line": "Cartel money-launderer flipped by the CIA; killed his brother Alvaro and now runs Los Tigres as a US asset."
+        },
+        {
+          "name": "Kaitlyn Meade",
+          "line": "Senior CIA supervisor who engineered Pablo's turn, absorbed the MSS agent, and kept the White House on-side."
+        },
+        {
+          "name": "Byron Westfield",
+          "line": "CIA Deputy Director of Operations who authorised the Iran convoy strike against Chinese nuclear scientists."
+        },
+        {
+          "name": "Kyle McManus",
+          "line": "CIA operator running interrogations for the team; cleared Gutierrez and remains Joe's closest field partner."
+        },
+        {
+          "name": "Neal McNamara",
+          "line": "Joe's husband, shaken by her goodbye call from the plane, told her she'll always have a home to come back to."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,450 @@
+{
+  "slug": "bates-motel",
+  "generatedFor": "Bates Motel",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · New life, first blood",
+          "text": "Widowed Norma and her 17-year-old son Norman buy a motel in White Pine Bay; on their first night the former owner rapes Norma and they kill him together.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the family, the town, and the founding secret every later season is built on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The town's real business",
+          "text": "Sketches in a guest room lead Norman and Emma to a girl chained in Deputy Shelby's basement. The town, they learn, runs on drug money and trafficking.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Sets up White Pine Bay's corruption, which drives the drug-trade and Ford storylines to come.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Dylan, and Sam's secret",
+          "text": "Norma's older son Dylan arrives and works in the drug trade. He shoots Shelby to save the family, and Norma confides that Norman killed his father Sam during a blackout.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Introduces Dylan as a permanent third pole in the family and plants the killing that anchors Norman's illness.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Romero picks a side",
+          "text": "Sheriff Romero claims Shelby's killing as his own, quietly shielding the Bates. He becomes the one lawman willing to bend the rules for Norma.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Establishes the Romero-Norma alliance that governs every future crisis with the police.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The voice of Mother",
+          "text": "Norman's blackouts worsen and he begins hallucinating Norma giving him orders. A psychologist warns that his mother's grip on him is dangerous.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Names the psychiatric condition that carries the entire series and forces the reader to hold it in mind.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The teacher he doesn't remember",
+          "text": "Bradley rejects Norman; that same night his teacher Miss Watson takes him home. In a Mother-driven trance he slits her throat and runs, remembering nothing.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The murder that opens the entire second season's investigation, and the first time Mother kills.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Norman has slit his English teacher's throat during a blackout, remembers nothing, and walked home to Norma. His family knows he is unravelling but not what he has done.",
+        "questions": [
+          "How much of Miss Watson's murder will Norman ever remember?",
+          "Will Sheriff Romero connect Norman to the killing?",
+          "What is actually happening to Norman during his blackouts?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Norma Louise Bates",
+          "line": "Widowed mother in her forties; bought a rundown motel in White Pine Bay to start over, and is already hiding one murder and learning her town is corrupt."
+        },
+        {
+          "name": "Norman Bates",
+          "line": "Norma's shy 17-year-old son; suffers dissociative blackouts, hears his mother in his head during them, and does not remember the violence he commits."
+        },
+        {
+          "name": "Dylan Massett",
+          "line": "Norma's older son from a previous marriage; showed up uninvited, took work with the town's marijuana growers, and now knows Norman killed their father Sam."
+        },
+        {
+          "name": "Sheriff Alex Romero",
+          "line": "White Pine Bay's sheriff — corrupt in the town's way, principled in his own; has quietly begun covering for the Bates family."
+        },
+        {
+          "name": "Emma Decody",
+          "line": "Norman's classmate with cystic fibrosis; the only friend who takes his fears seriously and has been helping him investigate the sketchbook."
+        },
+        {
+          "name": "Bradley Martin",
+          "line": "Popular classmate Norman fell hard for; slept with him once around her father's death, then told him they were not meant for each other."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Motel thriving, ghost unsolved",
+          "text": "Four months on, the motel is thriving but a new highway bypass threatens it; Norman spends his time at Miss Watson's grave, obsessing over her killer.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the season's two engines: the outside pressure on the motel and Norman circling the murder he committed.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Bradley kills and vanishes",
+          "text": "Bradley learns her father was killed for his affair with Miss Watson; she murders his killer Gil, fakes her suicide, and Dylan gets her out of town.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Removes Bradley from town alive — a fact only Norma and Dylan know, and one that will detonate later.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Caleb, and Dylan's father",
+          "text": "Norma's brother Caleb arrives; Norma reveals to her furious sons that he raped her for years and is Dylan's biological father, blowing the family apart.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces Caleb, reframes Dylan's entire identity, and creates the estrangement Norma will spend seasons trying to repair.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Norman kills again, DNA hits",
+          "text": "Dating Cody, Norman blacks out and kills her abusive father in a scuffle. Sheriff Romero pulls on the thread and matches Norman's DNA to Miss Watson.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Turns Romero from protector into investigator and forces the season toward its polygraph endgame.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Nick Ford's leverage",
+          "text": "Miss Watson's father Nick Ford installs Norma on the town council to fight the bypass, then leverages the favour to demand Dylan kill drug rival Zane.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Bends the drug-war plot into the family plot — Ford is what turns Watson's murder into a threat to all the Bates.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Norman in the box",
+          "text": "When Dylan refuses, Ford has Norman thrown in a hot box in a field. Trapped there, Norman finally remembers slitting Miss Watson's throat during a blackout.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The memory return — Norman now knows what Mother has been doing, which changes his relationship with her forever.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The knowing smile",
+          "text": "Romero and Dylan save Norman as Ford and Zane die. Norman takes a lie-detector on Miss Watson's murder; Mother answers for him, and he passes with a knowing smile.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Season's launch: Norman is legally clear, but he now understands what Mother is and can hide behind her on purpose.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Norman remembers killing Miss Watson but the Mother persona answered on the polygraph and he passed with a smile. His family knows he is dangerously ill; the town's drug hierarchy has been reshuffled around him.",
+        "questions": [
+          "Now that Norman knows what Mother has done, will he tell anyone or hide behind her?",
+          "Can Norma still protect Norman from himself as the blackouts worsen?",
+          "Where does the family stand with Caleb, now that he is out in the open?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Norma Louise Bates",
+          "line": "Newly a White Pine Bay town councillor thanks to Nick Ford; increasingly aware her son is ill but still shielding him from the police."
+        },
+        {
+          "name": "Norman Bates",
+          "line": "Now knows he killed Miss Watson in a blackout; Mother answered the polygraph for him and he passed with a knowing smile at what he can do."
+        },
+        {
+          "name": "Dylan Massett",
+          "line": "Estranged from Norma after learning his uncle Caleb is his biological father; killed Nick Ford inadvertently and is out of the drug trade for now."
+        },
+        {
+          "name": "Sheriff Alex Romero",
+          "line": "Grew closer to Norma across the season; knows Norman's DNA matched Miss Watson's murder and is still, so far, choosing to protect them."
+        },
+        {
+          "name": "Emma Decody",
+          "line": "Now works at the motel, dated a marijuana trimmer, and has grown quietly frustrated at being kept outside the Bates family's secrets."
+        },
+        {
+          "name": "Caleb Calhoun",
+          "line": "Norma's brother, revealed as her lifelong rapist and Dylan's biological father; has left town again after Norma's fury drove him away."
+        },
+        {
+          "name": "Bradley Martin",
+          "line": "Faked her own suicide after murdering Gil; Dylan smuggled her out of White Pine Bay and only he and Norma know she is alive."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · A tighter circle",
+          "text": "Summer over, Norma pulls Norman out of school when Miss Watson's ghost reappears to him. Emma joins them at home, and Norma tightens the family circle.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the season's premise: Norma trying to contain Norman inside the house rather than outside the law.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Annika's USB",
+          "text": "Motel guest Annika Johnson disappears, then bleeds out at Norma's door leaving a USB drive; on it is the drug syndicate's ledger, and Bob Paris wants it back.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces Bob Paris as the season's antagonist and gives Norma the leverage that drags her into the drug plot.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Caleb in Dylan's orbit",
+          "text": "Caleb returns and quietly moves in with Dylan; when Norman finds out, he threatens to tell Norma, straining the fragile bond between the brothers.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Puts Caleb back on the board, setting up the family dinner and the eventual reconciliation Norma will make with him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Norman becomes Mother",
+          "text": "Norman starts hallucinating his mother mid-blackout, cooking breakfast in her robe. Psychology professor James Finnigan, whom Norma consults, warns her son needs real help.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "First time Norman fully assumes Norma physically, not just as a voice — the shift the rest of the series is built on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The trade with Bob",
+          "text": "Norma trades the USB to Bob Paris for the motel's survival, but Bob tortures her psychologist and learns Norman killed his own father Sam.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Puts Norman's founding secret in an enemy's hands and directly triggers Romero's break with Norma.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Romero shoots Bob, breaks with Norma",
+          "text": "With the DEA closing in on Bob's ledger, Romero shoots him dead. He also breaks with Norma over her refusal to admit Norman killed his father.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Removes Bob and ends the Norma-Romero alliance — the shape of that break is what makes their next-season marriage load-bearing.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Bradley returns; Norman kills her",
+          "text": "Bradley reappears in town alive and Norman plans to flee with her. Norma locks him up; he escapes and, as Mother, beats Bradley to death with a rock.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Closes Bradley's arc and gives Norma the proof she needs to try to institutionalise Norman as the next season opens.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Norman has killed Bradley in a Mother-driven blackout and disappeared. Norma has resolved to institutionalise him but has no money, and Romero has broken with her over her lies about Sam's death.",
+        "questions": [
+          "Where has Norman gone, and does he remember what he did to Bradley?",
+          "Can Norma find a way to get Norman into Pineview?",
+          "Will Romero help the Bates again, or is he done with them?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Norma Louise Bates",
+          "line": "Slowly accepting Norman is ill; has broken with Romero over her Sam lies and is trying to find the money to institutionalise her son."
+        },
+        {
+          "name": "Norman Bates",
+          "line": "Blackouts now involve him fully impersonating Norma; has just beaten Bradley to death as Mother and fled into the woods."
+        },
+        {
+          "name": "Dylan Massett",
+          "line": "Running the marijuana farm and quietly falling for Emma, whose lung transplant he helped fund with Caleb's smuggling money."
+        },
+        {
+          "name": "Sheriff Alex Romero",
+          "line": "No longer Norma's friend after learning she covered up Norman killing Sam; shot Bob Paris dead as the DEA closed in on the town's drug trade."
+        },
+        {
+          "name": "Emma Decody",
+          "line": "Recovering from a lung transplant Dylan helped pay for; now romantically involved with him and thinking about a life beyond White Pine Bay."
+        },
+        {
+          "name": "Caleb Calhoun",
+          "line": "Reconciled tentatively with Norma at a family dinner but has left town again after Norman attacked him wearing Norma's persona."
+        },
+        {
+          "name": "Chick Hogan",
+          "line": "A bearded gun-runner living near Dylan's cabin; almost killed on a Canadian arms run this season and now knows Caleb's tie to the Bates."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Norman kills Audrey",
+          "text": "Norman is admitted to a psych ward. That same night, as Mother, he strangles Emma's mother Audrey when she comes to the motel, hiding the body in the motel's pit.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Fresh murder that will haunt the season through the earring and, eventually, drive Dylan out.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · A marriage of convenience",
+          "text": "Desperate to admit Norman to Pineview asylum, Norma marries Sheriff Romero for his insurance. He also fills in the pit as a wedding gift, burying Audrey deeper.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Cements the Norma-Romero bond that gives Norma something to lose — the loss of which powers the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Chick's leverage",
+          "text": "Chick Hogan arrives to fix a window and learns Caleb is Norma's brother and Dylan's father. He threatens to expose everything unless Norma helps his revenge on Caleb.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Puts Norma's oldest shame in an outsider's hands and forces her honesty with Romero — the pivot into the real marriage.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Norma tells Romero the truth",
+          "text": "Cornered by Chick's threats, Norma confesses her incest past to Romero. He stays with her, and their arranged marriage becomes real.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Turns the sham marriage into love — the emotional stakes that make Norma's coming death land.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Norman home; Dylan walks out",
+          "text": "Pineview releases Norman. He rages at Romero's place in the house; Dylan, having found Audrey's earring, breaks with Norma and leaves for Seattle with Emma.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Removes Dylan and Emma from the house so nobody is around when Norman decides to end it, and stages them for their next-season return.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Norma dies",
+          "text": "Alone with a broken Norma, Norman shuts the vents and lights the furnace, poisoning them both. He survives; Norma does not. Romero arrives too late.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The death the entire series has been circling; the launch point for everything that follows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Mother permanently arrives",
+          "text": "Romero is jailed on old perjury charges. Norman digs up Norma's body, brings her home, and finds her at the piano — Mother has permanently arrived.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Sets the exact tableau the next season opens in: Norma dead but Mother installed, Romero jailed and grieving.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Norma is dead, and Norman — now living with her corpse and a full-time Mother hallucination — believes she is still alive. Romero is in jail, having lost the one person he loved to Norman.",
+        "questions": [
+          "How long can Norman keep pretending Norma is alive?",
+          "Who will discover her body first — Dylan, Romero, or the town?",
+          "What will Romero do when he gets out?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Norma Louise Bates",
+          "line": "Married Romero to institutionalise Norman, then died from Norman's carbon-monoxide murder-suicide attempt after breaking with Romero for going behind her back."
+        },
+        {
+          "name": "Norman Bates",
+          "line": "Killed his mother believing they should die together; woke to find her gone, exhumed her body, and now hallucinates her alive at the piano."
+        },
+        {
+          "name": "Dylan Massett",
+          "line": "Broke with Norma after finding Audrey's earring and moved to Seattle with Emma; does not yet know Norma is dead."
+        },
+        {
+          "name": "Emma Decody",
+          "line": "Healthy after her lung transplant and building a life in Seattle with Dylan; her mother's disappearance is still unexplained to her."
+        },
+        {
+          "name": "Sheriff Alex Romero",
+          "line": "Fell in love with Norma for real and married her; now jailed on old perjury tied to Bob Paris and grieving her death, which he blames on Norman."
+        },
+        {
+          "name": "Chick Hogan",
+          "line": "Blackmailed Norma over her past with Caleb then softened; last seen at the Bates house forcing Norman to acknowledge his mother is dead."
+        },
+        {
+          "name": "Caleb Calhoun",
+          "line": "Norma's brother and Dylan's biological father; skipped town with Chick after him and has been out of contact with the family since."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Two years alone with Mother",
+          "text": "Two years after Norma's death, Norman runs the motel alone. He keeps her preserved corpse in the basement and lives with a hallucination of her called Mother.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the premise of the final season: the world thinks Norma killed herself; only Norman knows otherwise.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Romero's revenge from prison",
+          "text": "Serving five years for perjury, Romero sends a hitman for Norman. Norman kills the hitman instead, and Romero swears he will come for Norman himself.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Puts Romero back on collision course with Norman — the manhunt that runs beneath every episode.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Madeleine, the double",
+          "text": "Norman befriends Madeleine Loomis, a local shopkeeper who unnervingly resembles Norma; her husband Sam is cheating on her.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces the Loomises — the couple whose triangle produces the Psycho shower scene when Marion arrives.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Caleb finds the corpse",
+          "text": "Caleb returns and finds Norma's corpse in the basement, refusing to believe her suicide. Norman, as Mother, attacks him, and Caleb dies fleeing into the road.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Kills off Caleb and, crucially, makes Chick a witness to Mother — the leverage he later moves into the house with.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The wrong body in the shower",
+          "text": "Marion Crane checks in on the run with stolen money. Norman spares her but, roused by Mother, stabs her cheating boyfriend Sam Loomis to death in the shower.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The series' Psycho inversion and the murder that finally makes Norman visible to the police.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Confession, and Romero closes in",
+          "text": "Dylan returns and sees his brother's illness; Norman confesses to Sam's murder. Meanwhile escaped Romero kills Chick and forces Norman to lead him to Norma's grave.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Brings all three surviving threads — Dylan, Romero, the police — to a single point above Norma's body.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Mother leaves; Dylan takes the shot",
+          "text": "At the grave, Norman shoots Romero dead. Mother vanishes for good; Norman regresses and invites Dylan to dine with Norma's corpse, forcing Dylan to shoot him.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The series' final beat: Norman gets what he wanted, at Dylan's hand.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Norman dies in Dylan's arms, thanking him for reuniting him with Norma. The motel and house are sold, and Dylan, Emma and their daughter walk away into a quiet life without the family that made them.",
+        "questions": [
+          "Is Dylan really free of the Bates legacy?",
+          "Does Norman finally have the peace with Norma he wanted?",
+          "What becomes of the Bates Motel now?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Norman Bates",
+          "line": "Dead by his brother's hand after Mother finally left him; reunited with Norma the only way he could imagine."
+        },
+        {
+          "name": "Norma Louise Bates",
+          "line": "Long dead; her preserved corpse was the object Norman clung to, and her hallucination the persona that ran him."
+        },
+        {
+          "name": "Dylan Massett",
+          "line": "Forced to shoot his brother to end the killing; sold the motel and house and lives quietly in Seattle with Emma and their daughter."
+        },
+        {
+          "name": "Emma Decody",
+          "line": "Reunited with Dylan after briefly leaving over his loyalty to Norman; learned this season that Norman killed her missing mother."
+        },
+        {
+          "name": "Sheriff Alex Romero",
+          "line": "Escaped prison determined to kill Norman for Norma's death; shot dead by Norman at Norma's graveside."
+        },
+        {
+          "name": "Chick Hogan",
+          "line": "Moved into the Bates house to write a true-crime novel about Norman; killed by Romero when he came for Norman."
+        },
+        {
+          "name": "Madeleine Loomis",
+          "line": "A shopkeeper Norman befriended because she resembled Norma; discovered too late that Norman had murdered her husband Sam."
+        }
+      ]
+    }
+  }
+}

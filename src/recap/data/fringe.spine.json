@@ -1,0 +1,487 @@
+{
+  "slug": "fringe",
+  "generatedFor": "Fringe",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The Pattern begins",
+          "text": "FBI agent Olivia Dunham drafts Walter Bishop and his son Peter to solve a plane full of dissolved corpses, exposing a wave of fringe-science attacks called The Pattern.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the team and the umbrella threat that every later thread hangs from.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · John Scott exposed",
+          "text": "Olivia's partner and lover John Scott is revealed as complicit in the attacks and dies; his memories bleed into her mind, seeding leads and hallucinations she cannot escape.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Olivia's tolerance for supernatural intrusion and gives her the emotional wound she carries into S2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Massive Dynamic",
+          "text": "Walter's old lab partner William Bell runs the corporation Massive Dynamic; his COO Nina Sharp seems tangled in every Pattern case, motives opaque.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces the ambiguous power that will drive most late-season and S4 plotting.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · ZFT and Jones",
+          "text": "A cell led by biochemist David Robert Jones cites a manifesto claiming two universes are at war, and tests Olivia as a candidate weapon.",
+          "anchorEpisode": 14,
+          "whyLoadBearing": "First articulation of the two-universes premise the whole series turns on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Cortexiphan",
+          "text": "Olivia learns Walter and Bell dosed her and other children with a nootropic drug as toddlers, cultivating dormant abilities for a coming war.",
+          "anchorEpisode": 17,
+          "whyLoadBearing": "Explains why Olivia is central to every subsequent crisis and reframes Walter's culpability.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Peter's grave",
+          "text": "After Walter kills Jones by sealing a portal, he weeps alone at a headstone reading Peter Bishop 1978–1985 — the Peter beside him is not his son.",
+          "anchorEpisode": 20,
+          "whyLoadBearing": "Plants the show's core secret; the S2 emotional arc is entirely detonation of this moment.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Meeting Bell",
+          "text": "Nina sends Olivia across to meet Bell; she arrives in his office and realises she is standing inside the still-intact World Trade Center.",
+          "anchorEpisode": 20,
+          "whyLoadBearing": "Confirms the parallel universe exists and opens the door for every crossing to come.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Olivia has crossed to a parallel universe to meet a still-living William Bell in a New York where the Twin Towers still stand — while, back home, Walter has just visited the grave of a Peter Bishop who died as a boy in 1985.",
+        "questions": [
+          "If the Peter buried in that graveyard is Walter's son, who is the Peter working alongside him?",
+          "What does William Bell actually want with Olivia?",
+          "What is the war Walter and Bell were preparing Cortexiphan children to fight?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Olivia Dunham",
+          "line": "FBI Fringe agent and Cortexiphan test subject; just crossed to the parallel universe to meet William Bell."
+        },
+        {
+          "name": "Walter Bishop",
+          "line": "Brilliant, unstable scientist recently freed from an institution; hiding the fact that a Peter Bishop died in 1985."
+        },
+        {
+          "name": "Peter Bishop",
+          "line": "Walter's estranged son and the team's fixer; apparently not the boy Walter buried."
+        },
+        {
+          "name": "William Bell",
+          "line": "Walter's old lab partner and founder of Massive Dynamic; now revealed to be operating in the parallel universe."
+        },
+        {
+          "name": "Nina Sharp",
+          "line": "Massive Dynamic's COO and Bell's proxy on this side; helpful, guarded, and playing her own game."
+        },
+        {
+          "name": "Phillip Broyles",
+          "line": "FBI agent who runs Fringe Division and provides the team its political cover."
+        },
+        {
+          "name": "Astrid Farnsworth",
+          "line": "FBI liaison assigned to Walter's lab; his handler and translator."
+        },
+        {
+          "name": "The Observer",
+          "line": "Bald, unblinking man present at every Fringe event; once saved Walter and young Peter for reasons unstated.",
+          "note": "Also called September later."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Olivia returns, Charlie replaced",
+          "text": "Olivia is thrown home through a windshield with no memory of the crossing; soon after, a shapeshifter from the other side murders and replaces her partner Charlie.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Opens the shapeshifter infiltration that runs the season and establishes the enemy is already inside.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Newton and the machine",
+          "text": "Shapeshifter leader Newton reveals the enemy is assembling a doomsday machine to merge the two universes so only one survives.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Frames every following case as pieces of the same escalating war.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Peter is from over there",
+          "text": "A Cortexiphan test reveals Peter is from the alternate world; Walter admits he stole young Peter to replace his dead son, and Peter walks out.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "The show's central secret finally lands and shatters the family unit.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Walternate's lure",
+          "text": "Peter's biological father, Defense Secretary Walternate, comes for him and convinces him to return to the parallel universe to fulfil a role in the machine.",
+          "anchorEpisode": 21,
+          "whyLoadBearing": "Introduces the season's principal antagonist and gives him the leverage he uses in S3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Over There",
+          "text": "Olivia, Walter and Cortexiphan subjects cross over to bring Peter home; William Bell dies powering their return with his own body.",
+          "anchorEpisode": 23,
+          "whyLoadBearing": "Removes Bell from the board and gets Peter back, setting up the impostor swap.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The switch",
+          "text": "Olivia's alternate captures her and takes her place beside Peter; the real Olivia is left in a cell in the parallel universe under Walternate's watch.",
+          "anchorEpisode": 23,
+          "whyLoadBearing": "The entire S3 premise turns on this substitution being invisible to Peter and Walter.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Olivia who came home from the parallel universe is not Olivia — it is her alternate, Fauxlivia, quietly embedded beside Peter. The real Olivia sits in a detention cell under Walternate's eye.",
+        "questions": [
+          "How long can Fauxlivia keep the impersonation intact around people who know Olivia?",
+          "What does Walternate intend to do with the real Olivia?",
+          "Will Peter or Walter notice the wrong woman came back?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Olivia Dunham",
+          "line": "Captive in the parallel universe under Walternate; her face is being worn by someone else at home."
+        },
+        {
+          "name": "Fauxlivia",
+          "line": "Olivia's parallel counterpart, now embedded in the prime universe as a spy and sleeping beside Peter."
+        },
+        {
+          "name": "Peter Bishop",
+          "line": "Knows he was taken from the other world; came home with Olivia, unaware she is not Olivia."
+        },
+        {
+          "name": "Walter Bishop",
+          "line": "Confessed to stealing Peter and lost Bell across the divide; forgiven but hollowed out."
+        },
+        {
+          "name": "Walternate",
+          "line": "The alternate Walter; Defense Secretary of the parallel US and Peter's biological father, running the doomsday machine program."
+        },
+        {
+          "name": "Nina Sharp",
+          "line": "Still Massive Dynamic's head and still allied with Fringe on this side."
+        },
+        {
+          "name": "Phillip Broyles",
+          "line": "Fringe Division's overseer; unaware of the impostor in his ranks."
+        },
+        {
+          "name": "Astrid Farnsworth",
+          "line": "Walter's lab handler and steady presence."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Two Olivias",
+          "text": "Olivia is brainwashed in the parallel universe to believe she is Fauxlivia; in the prime universe Fauxlivia deceives Peter, even beginning a relationship with him.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the split perspective that structures the whole first half of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Olivia breaks free",
+          "text": "Hallucinations of Peter awaken Olivia's real identity; she escapes across universes and Fauxlivia is exposed and sent home.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Ends the impersonation and creates the wound Olivia and Peter carry through the rest of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The pregnancy",
+          "text": "Olivia struggles to reclaim her life while Fauxlivia is revealed to be pregnant with Peter's child, giving Walternate new leverage over him.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Locks Peter emotionally into the parallel universe and hardens Walternate's hand.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The First People machine",
+          "text": "Both sides assemble a doomsday device supposedly built by an ancient civilization; it reacts to Peter and is designed to require him as its operator.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Frames Peter as the mechanism the whole finale hinges on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Bell inside Olivia",
+          "text": "Walter contacts William Bell's stored consciousness, which possesses Olivia's body until Peter and Walter extract it and it is lost for good.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "Formally closes the door on Bell and returns Olivia to herself before the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Peter enters the machine",
+          "text": "Walternate activates his machine, tearing the prime universe apart; Peter forces himself into the prime version and glimpses fifteen years into the future.",
+          "anchorEpisode": 22,
+          "whyLoadBearing": "The finale's turning point and Peter's decision to reshape rather than choose.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The Bridge, Peter erased",
+          "text": "Peter merges the two machine rooms into a bridge where both universes can negotiate, then vanishes — erased from time, forgotten by both Walters and Olivias.",
+          "anchorEpisode": 22,
+          "whyLoadBearing": "The exact state S4 opens on; without this beat none of S4 reads.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Peter has forced the two universes to sit at the same table but has been written out of time in the process; neither Walter nor either Olivia remembers he ever existed.",
+        "questions": [
+          "Can a person erased from time come back?",
+          "Will the bridge really keep both universes stable, or is it just delaying a collapse?",
+          "What do Walter and Walternate say to each other now that they have to work as one team?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Olivia Dunham",
+          "line": "Home, restored, in a relationship she now no longer remembers — Peter has been erased from her mind along with everyone else's."
+        },
+        {
+          "name": "Peter Bishop",
+          "line": "Erased from time after activating the machine and merging the two universes into a shared bridge."
+        },
+        {
+          "name": "Walter Bishop",
+          "line": "Sole shareholder of Massive Dynamic after Bell's will, and, as of the finale, does not remember his son."
+        },
+        {
+          "name": "Fauxlivia",
+          "line": "Back in her universe and now the mother of Peter's newborn son."
+        },
+        {
+          "name": "Walternate",
+          "line": "Parallel-universe Defense Secretary; his machine plan failed but he still leads the other side across the bridge."
+        },
+        {
+          "name": "Nina Sharp",
+          "line": "Massive Dynamic's head and Olivia's ally and guardian figure."
+        },
+        {
+          "name": "Phillip Broyles",
+          "line": "Runs Fringe on this side; his parallel counterpart was killed to cover Fauxlivia's return home."
+        },
+        {
+          "name": "The Observer / September",
+          "line": "Has been quietly steering events around Peter, and failed to stop his erasure."
+        },
+        {
+          "name": "William Bell",
+          "line": "His stored consciousness briefly returned by possessing Olivia; extracted and, as far as anyone knows, lost."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · A world without Peter",
+          "text": "The bridge holds and both Fringe divisions work together, but Peter has been erased; when he returns, Walter refuses to acknowledge him.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the altered-timeline premise that governs the first half of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Olivia remembers",
+          "text": "Olivia slowly recovers memories of the original timeline, reunites with Peter, and lets those memories overwrite the ones from this altered life.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "Closes the timeline-mismatch arc and puts Peter and Olivia back together for S5's future.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Jones returns, Nina dosing",
+          "text": "David Robert Jones survived Peter's erasure and returns with new shapeshifters; Nina Sharp is secretly dosing Olivia with Cortexiphan for her own ends.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Establishes the season's main threat and the abilities Olivia will need at the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · September's answer",
+          "text": "The Observer September tells Peter he was never truly erased — his love brought him back — and this timeline is now his home.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "Resolves the return question and makes Peter permanent in the altered world.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Bridge shut, worlds parted",
+          "text": "To stop Jones from collapsing both worlds, Walter and Walternate agree to shut down the bridge; Lincoln Lee stays behind and the two universes are separated.",
+          "anchorEpisode": 20,
+          "whyLoadBearing": "Removes the parallel universe as an active setting so S5 can commit to a single one.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Bell revealed",
+          "text": "William Bell is revealed alive and behind the plan, seeking to destroy the universe to remake it; Walter shoots Olivia to stop him and Cortexiphan saves her.",
+          "anchorEpisode": 22,
+          "whyLoadBearing": "Closes Bell as an antagonist and shows the range of Olivia's abilities.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · 2036: Observers rule",
+          "text": "A glimpse of 2036 shows Observers have conquered Earth; the ambered team is thawed by Etta, Peter and Olivia's grown daughter, now in the resistance.",
+          "anchorEpisode": 19,
+          "whyLoadBearing": "The single beat S5 is entirely built on; without it S5's setting comes from nowhere.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The prime universe stands alone again and Bell has been beaten — but twenty-one years on, the Observers have conquered Earth, and the ambered Fringe team is only now waking into an occupied world where Peter and Olivia's grown daughter Etta is fighting the resistance.",
+        "questions": [
+          "What plan did Walter and September devise to fight the Observers?",
+          "What happened between 2015 and 2036 to lose the war so completely?",
+          "Can a handful of resistance fighters do anything against beings who read minds?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Peter Bishop",
+          "line": "Back in the timeline for good, reunited with Olivia and reconciled with Walter."
+        },
+        {
+          "name": "Olivia Dunham",
+          "line": "Restored to herself and alive after Walter's shot, thanks to the Cortexiphan in her body."
+        },
+        {
+          "name": "Walter Bishop",
+          "line": "Accepts Peter as his son again; still tied to a hidden plan with September."
+        },
+        {
+          "name": "Etta",
+          "line": "Peter and Olivia's grown daughter, seen in 2036 fighting the Observer occupation."
+        },
+        {
+          "name": "The Observer / September",
+          "line": "Confirmed Peter is home and is secretly working with Walter on something bigger."
+        },
+        {
+          "name": "Walternate",
+          "line": "Reconciled with Walter across the bridge and now sealed off by its closing."
+        },
+        {
+          "name": "Nina Sharp",
+          "line": "Trusted ally again after the Cortexiphan deception; in 2036 works from the Ministry of Science."
+        },
+        {
+          "name": "Phillip Broyles",
+          "line": "Fringe head; his 2036 counterpart is in the resistance."
+        },
+        {
+          "name": "Astrid Farnsworth",
+          "line": "Walter's lab partner and steady hand."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Un-ambered into occupation",
+          "text": "The team is thawed in 2036 to find Observers ruling Earth; grown-up Etta leads them into the resistance and to a plan Walter once built against the invaders.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Anchors the season's setting and mission.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Walter's mind broken",
+          "text": "Observer captain Windmark's telepathic probe scrambles Walter's memory of the plan; the team must retrace tapes and materials he hid across the world to rebuild it.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Explains the season's episodic structure — each hunt for a hidden piece of Walter's plan.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Etta dies",
+          "text": "As the team collects pieces of the plan, Windmark kills Etta; grief hardens Peter and pushes him toward darker methods.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The emotional pivot of the season and the reason Peter briefly loses himself.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Peter goes Observer",
+          "text": "Peter implants an Observer chip in his own neck to hunt Windmark and starts losing his humanity; Olivia convinces him to remove it before it takes hold.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Resolves Peter's grief arc and returns him to the team in time for the endgame.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Michael and Nina's sacrifice",
+          "text": "The team recovers Michael, an Observer child with emotions; Nina Sharp shoots herself to keep his location secret, and Michael is revealed as central to Walter's plan.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Puts the last piece of the plan on the table and pays out Nina.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · September's plan",
+          "text": "Donald is revealed as a de-powered September, Michael's father; Michael must be sent to 2167 to prove intelligence and emotion can coexist, erasing the Observers' creation.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The mechanism the finale executes — without this the resolution is unreadable.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Timeline rewritten",
+          "text": "The team fights to a wormhole; September dies pushing Michael to 2167, the invasion is undone, and Peter opens an envelope from Walter with only a white tulip inside.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Series-closing state: the timeline is fixed and Walter has paid for it.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The plan works: Michael is delivered to 2167, the Observer invasion never happens, and the family finds itself back in an unspoiled 2015. Walter, who travelled forward with Michael in September's place, is gone — and has sent Peter a drawing of a white tulip as farewell.",
+        "questions": [
+          "Will Peter ever see Walter again?",
+          "Does anyone else remember the war and the daughter that were undone?",
+          "What does the white tulip mean to a Peter who has not lived through the guilt Walter was asking forgiveness for?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Peter Bishop",
+          "line": "Removed his Observer implant in time; back to himself, together with Olivia and Etta in the restored 2015."
+        },
+        {
+          "name": "Olivia Dunham",
+          "line": "Fought through Etta's death and used her Cortexiphan powers at the wormhole to help finish the plan."
+        },
+        {
+          "name": "Walter Bishop",
+          "line": "Took September's place travelling to 2167 with Michael; his farewell to Peter is a drawing of a white tulip."
+        },
+        {
+          "name": "Etta",
+          "line": "Peter and Olivia's daughter and the resistance's guide; killed by Windmark mid-season, restored to the timeline at the end."
+        },
+        {
+          "name": "September / Donald",
+          "line": "A de-powered Observer and Michael's biological father; shot dead pushing Michael into the wormhole to 2167."
+        },
+        {
+          "name": "Michael",
+          "line": "Observer child with emotions; the living proof sent back to prevent the Observers ever being made."
+        },
+        {
+          "name": "Windmark",
+          "line": "Observer captain hunting the team; crushed at the wormhole by Olivia's Cortexiphan powers."
+        },
+        {
+          "name": "Nina Sharp",
+          "line": "Working inside the Ministry of Science; shot herself rather than let Windmark read Michael's location."
+        },
+        {
+          "name": "Phillip Broyles",
+          "line": "The team's mole inside the Observer government, feeding intel to the resistance."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "slug": "under-the-dome",
+  "generatedFor": "Under the Dome",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The dome descends",
+          "text": "An invisible barrier seals Chester's Mill from the outside world; drifter Barbie is trapped inside after burying local reporter Julia's husband, whom he'd just killed over a debt.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the premise, the barrier, and the buried secret that drives Barbie and Julia's relationship all season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Big Jim's empire",
+          "text": "Town councilman Big Jim's propane-for-drugs scheme quietly surfaces; he murders Reverend Coggins to bury it, cementing his role as the town's real threat, not the dome.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Sets Big Jim up as the season's true antagonist — the human evil under the science-fiction shell.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Junior's captive",
+          "text": "Big Jim's unstable son Junior kidnaps waitress Angie McAlister, convinced she cheated with Barbie; Big Jim finds her locked underground but leaves her there to protect his son.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Anchors Angie, Junior, and Big Jim's fatal loyalty to his son; positions Junior for the four-hands arc.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The four hands",
+          "text": "Angie, her brother Joe, newcomer Norrie, and Junior discover a mini-dome housing a glowing egg that responds only when all four of them touch it together.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The mythology engine of the whole show — the four hands and the egg become the dome's central mechanism.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Maxine's arrival",
+          "text": "Big Jim's Rapture-drug partner Maxine is exposed as trapped inside the dome and tries to blackmail him; he kills her and pins the murders on Barbie.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The mechanism that turns the town against Barbie and hands Big Jim total control by the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Barbie framed",
+          "text": "Big Jim rallies Chester's Mill against Barbie and marches him to a public execution, while a black curtain of expanding spots casts the town into darkness.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The state of play at Season 2's cold open — Barbie on trial for his life, Big Jim unchallenged.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Monarch chooses",
+          "text": "The four hands learn Julia is the Monarch; a messenger in Alice's form tells them the dome came to 'protect' them, and Julia hides the egg in the lake before Big Jim can seize it.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Names the Monarch, plants the 'protection' framing the show returns to, and triggers the white-light cliffhanger.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The dome's black curtain has been replaced by blinding white light after Julia hid the egg in the lake, but Barbie still stands at the gallows with Big Jim's frame job intact and the noose around his neck.",
+        "questions": [
+          "Does the white light mean the dome is finally coming down?",
+          "Can the four hands stop Big Jim before Barbie is hanged?",
+          "What did the dome's messenger mean by taking Alice's form to 'protect' Chester's Mill?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "James \"Big Jim\" Rennie",
+          "line": "Town councilman who has quietly killed Coggins, Maxine, and Dodee to bury his propane-for-drugs empire, and has framed Barbie to keep control of Chester's Mill."
+        },
+        {
+          "name": "Dale \"Barbie\" Barbara",
+          "line": "Drifter who killed Julia's husband over a debt and then fell for her; framed by Big Jim for multiple murders and now stands with a noose around his neck."
+        },
+        {
+          "name": "Julia Shumway",
+          "line": "Reporter and Barbie's lover; revealed as the 'Monarch' the dome has been signalling, she chose to hide the egg in the lake rather than trade it for Barbie's life."
+        },
+        {
+          "name": "Junior Rennie",
+          "line": "Big Jim's unstable son; kidnapped Angie out of jealousy but later joined the four hands after his dead mother's painting matched the visions."
+        },
+        {
+          "name": "Angie McAlister",
+          "line": "Waitress Junior held captive; one of the four hands, marked with a monarch-butterfly tattoo that identified her as connected to the dome."
+        },
+        {
+          "name": "Joe McAlister",
+          "line": "Angie's teenage brother; one of the four hands and Norrie's boyfriend."
+        },
+        {
+          "name": "Norrie Calvert-Hill",
+          "line": "Teen visitor stranded when the dome fell; one of the four hands. Her mother Alice died of a heart attack inside the town.",
+          "note": "The dome's messenger takes Alice's form in the finale."
+        },
+        {
+          "name": "Linda Esquivel",
+          "line": "Deputy promoted to sheriff after Duke's death at the barrier; entirely convinced by Big Jim's framing of Barbie and about to carry out the execution."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Execution halted",
+          "text": "As Big Jim moves to hang Barbie, the dome magnetizes and knocks the town unconscious; Sheriff Linda is killed pinned against the barrier by a car, leaving Chester's Mill with no lawful authority.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Resolves the S1 cliffhanger and removes the only official check on Big Jim in one stroke.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Melanie surfaces",
+          "text": "Julia rescues a strange girl, Melanie, who slowly proves to have died in 1988 after finding the meteor and egg with Sam Verdreaux, Lyle, and Junior's supposedly-dead mother Pauline.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces Melanie, Sam, and the meteor backstory that will drive everything through the season and beyond.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Angie killed",
+          "text": "Angie is murdered at the school; Sam is eventually exposed as her killer, believing that killing the four hands will bring the dome down.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Kills one of the four hands, plants Sam as a hidden threat, and drives Junior's arc for the rest of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Zenith exists",
+          "text": "Chasing Sam, Barbie falls into an unmapped chasm and wakes in Zenith outside the dome, discovering his father's company Aktaion Energy has been hunting the egg for years.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Cracks the show open — there is an outside world, and it wants the egg. Introduces Aktaion, Barbie's father, and Hunter.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Pauline returns",
+          "text": "Junior's mother Pauline is found alive in Zenith and slips back into Chester's Mill with Barbie and Sam through a mysterious red door beneath Barbie's childhood home.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Reunites Junior's family, closes the Zenith loop, and sets up Big Jim's collapse.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Big Jim breaks",
+          "text": "Big Jim throws the egg off the cliff to stop Pauline's headaches; she dies anyway, and he snaps — killing Rebecca and Andrea before Junior finally shoots him and flees.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Fully severs Big Jim from his son and the townspeople; leaves him wounded and murderous inside a shrinking dome.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Into the wall",
+          "text": "Barbie crosses a widening chasm without Julia and reaches a wall in the tunnel; when he touches it, the rock crumbles to reveal Melanie alive on the other side.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The direct handoff into Season 3 — townspeople at a threshold, Julia stranded, Big Jim left behind.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Barbie and the townspeople have reached a wall inside the crater tunnel that crumbled to reveal Melanie alive; Julia is stranded on the far side of a widening chasm, and a wounded, murderous Big Jim has been left behind in Chester's Mill.",
+        "questions": [
+          "Where does the passage Melanie has opened actually lead?",
+          "Can Julia rejoin the group, or is she now trapped alone in the tunnels?",
+          "Is this the way out of the dome, or something the dome is drawing them into?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Dale \"Barbie\" Barbara",
+          "line": "Discovered Zenith exists and that Melanie is his sister; now leads the townspeople through the wall Melanie opened in the crater tunnel."
+        },
+        {
+          "name": "Julia Shumway",
+          "line": "Stranded on the far side of a widening chasm as Barbie and the rest press on without her."
+        },
+        {
+          "name": "James \"Big Jim\" Rennie",
+          "line": "Snapped after Pauline's death; murdered Rebecca and Andrea, was shot by Junior, and is left alone and wounded in Chester's Mill."
+        },
+        {
+          "name": "Junior Rennie",
+          "line": "Shot his father to defend Julia and joined the tunnel expedition; still grieving Angie and knows Sam killed her."
+        },
+        {
+          "name": "Melanie Cross",
+          "line": "Girl who died in 1988 after finding the meteor and egg with Sam, Lyle, and Pauline; sealed inside the crater wall and now released as the townspeople reach her."
+        },
+        {
+          "name": "Sam Verdreaux",
+          "line": "Junior's uncle; secretly murdered Angie believing that killing the four hands would bring down the dome, then leapt into the chasm before being pulled back."
+        },
+        {
+          "name": "Joe McAlister",
+          "line": "Still one of the four hands; helped decode the egg's pink-star signals pointing to Zenith."
+        },
+        {
+          "name": "Norrie Calvert-Hill",
+          "line": "One of the four hands; grieving her mother Alice and pushing Joe toward the crater expedition."
+        },
+        {
+          "name": "Hunter May",
+          "line": "Aktaion Energy hacker from Zenith who helped Barbie return inside the dome and stayed with the group."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Pods revealed",
+          "text": "Barbie realises the world outside the tunnel is fake; he, Julia, Junior, Big Jim and the townspeople have all been asleep in interconnected pods for a full year.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The season's foundational reveal — everything the group thought they escaped to is a construct.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The Kinship arrives",
+          "text": "Melanie plugs the egg into a central pod and Christine Price and Eva Sinclair step out — architects of an alien 'Kinship' the pods have been preparing the town to join.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces the season's antagonist and its true form. Christine and Eva drive every plot from here.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Melanie killed, town infected",
+          "text": "Christine kills Melanie once her purpose is served, sets up a counselling practice in Chester's Mill, and quietly converts the townspeople through pod slime and the tunnels below the school.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Closes Melanie's arc and launches the slow-takeover engine — most of the town is Kinship without knowing it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Barbie flips",
+          "text": "Convinced the outside world burned in a meteor firestorm, Barbie joins the Kinship and fathers Eva's baby, until Julia's confession of love breaks the infection.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The child Barbie fathers becomes Dawn, the launch figure of the season's cliffhanger.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Aktaion arrives",
+          "text": "Hektor's Aktaion team breach the dome with a cure and join the Resistance against the Kinship, but Big Jim quickly reads Hektor as the next threat.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Brings the cure that neutralises the Kinship and sets up Big Jim killing Hektor in the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Junior dies as dome falls",
+          "text": "Joe splits the last crystal into seven and the four hands finally bring the dome down; in the fight at the cement factory, Junior attacks his father and Big Jim is forced to shoot his own son dead.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The dome, the show's core object, is gone — and Big Jim has crossed the one line he never had.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Dawn escapes",
+          "text": "Christine transforms Barbie's rapidly-aged daughter Dawn into the new Kinship queen; Dawn kills Christine and vanishes from the cement factory as Big Jim frames Aktaion for everything.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The single loose thread the season leaves open — a Kinship queen at large in the outside world.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "One year after the dome fell, Big Jim is a sitting Congressman selling the sanitised version of events; Hunter, now with the NSA, has finally traced Barbie's daughter Dawn to Omaha, where she is standing over three children about to touch a different egg.",
+        "questions": [
+          "What is Dawn planning with the new egg and these children?",
+          "Who else survived the Kinship, and are they hiding among the freed townspeople?",
+          "Can Chester's Mill's survivors reach Omaha before another dome descends?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Dawn Barbara",
+          "line": "Barbie and Eva's rapidly-aged daughter and the Kinship's new queen; killed Christine, vanished from the cement factory, and has now been located in Omaha with a fresh egg."
+        },
+        {
+          "name": "Dale \"Barbie\" Barbara",
+          "line": "Broke free of the Kinship after Julia's love reached him; reunited with her and about to propose when Big Jim summons them to hunt Dawn."
+        },
+        {
+          "name": "Julia Shumway",
+          "line": "Snapped Barbie out of the Kinship with a confession of love; back at his side and helping run down the Kinship's fallout."
+        },
+        {
+          "name": "James \"Big Jim\" Rennie",
+          "line": "Killed his own son to bring the dome down, pinned everything on Aktaion, and rode the cover story into a seat in Congress."
+        },
+        {
+          "name": "Junior Rennie",
+          "line": "Turned by Christine's pod slime, killed his uncle Sam, and was shot dead by his father during the collapse of the dome at the cement factory."
+        },
+        {
+          "name": "Christine Price",
+          "line": "Alien architect of the Kinship who emerged from the pods, converted most of Chester's Mill, and was killed by Dawn once the new queen took over."
+        },
+        {
+          "name": "Joe McAlister",
+          "line": "Split the crystal that brought the dome down; a year later he is being held in a secure federal facility."
+        },
+        {
+          "name": "Norrie Calvert-Hill",
+          "line": "Enlisted in the Army after the dome fell; now dispatched to bring Joe out of the facility that is holding him."
+        },
+        {
+          "name": "Hunter May",
+          "line": "Working for the NSA a year after the dome fell; the one who has finally traced Dawn to Omaha."
+        }
+      ]
+    }
+  }
+}

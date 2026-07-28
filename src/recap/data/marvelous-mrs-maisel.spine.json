@@ -1,0 +1,493 @@
+{
+  "slug": "marvelous-mrs-maisel",
+  "generatedFor": "The Marvelous Mrs. Maisel",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Joel leaves",
+          "text": "Midge's picture-perfect life ends the night Joel bombs his stand-up set at the Gaslight and confesses he's leaving her for his secretary, Penny Pann.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The inciting collapse; without this, none of the season exists.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Nightgown rant",
+          "text": "Drunk and in her nightgown, Midge storms the Gaslight stage with an obscene rant that leaves the room stunned; she is arrested alongside comedian Lenny Bruce.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The talent reveal and the first meeting with Lenny, an ally she will lean on for years.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Susie signs on",
+          "text": "Gaslight manager Susie Myerson bails Midge out convinced she has found a natural, and slowly wears down Midge's refusal to make comedy a career.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Establishes the partnership that anchors every remaining season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Evicted, moves home",
+          "text": "Moishe reveals he owns Midge and Joel's apartment and is evicting her; Midge moves in with Abe and Rose, hiding her nightly Gaslight sets from them.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Resets Midge into her parents' orbit and creates the secret-life tension that drives S2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Sophie Lennon feud",
+          "text": "Beloved comic Sophie Lennon turns out to be a rich Yale-trained fraud in a fat suit; Midge exposes her onstage and earns the wrath of powerful agent Harry Drake.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Creates the enemy and the industry threat that shapes seasons of manoeuvring.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Blacklist, Lenny helps",
+          "text": "Drake gets Midge blacklisted from New York clubs, so Susie persuades Lenny Bruce to headline the Gaslight and put Midge back onstage.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Shows Susie's willingness to burn favours and cements Lenny as Midge's protector-in-comedy.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Mrs. Maisel",
+          "text": "Joel watches from the shadows as Midge kills her set, punches out a heckler defending her, and claims the name 'Mrs. Maisel' as her own.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The identity moment; also the crack in Joel that will chase reconciliation for two more seasons.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Midge has claimed the stage as 'Mrs. Maisel' at the Gaslight, a triumph Joel witnessed from the shadows. Her career has begun; her marriage, her family life, and her livelihood are all still unresolved.",
+        "questions": [
+          "Can Midge build a real career with Harry Drake's blacklist over her head?",
+          "Will Joel try to win Midge back now that he has seen her onstage?",
+          "How long can Midge keep her double life hidden from Abe and Rose?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Miriam \"Midge\" Maisel",
+          "line": "Recently separated Upper West Side housewife whose drunk Gaslight rant revealed a stand-up talent she is now cautiously chasing."
+        },
+        {
+          "name": "Joel Maisel",
+          "line": "Estranged husband whose affair with Penny Pann has collapsed and who has just secretly witnessed how good Midge really is."
+        },
+        {
+          "name": "Susie Myerson",
+          "line": "Scrappy Gaslight manager turned self-appointed agent, running Midge's career from a tiny apartment with a newly installed phone."
+        },
+        {
+          "name": "Abe Weissman",
+          "line": "Midge's father, a Columbia math professor, furious about the split and unaware his daughter is performing at night."
+        },
+        {
+          "name": "Rose Weissman",
+          "line": "Midge's mother, treating the separation as a crisis to be smoothed over and Midge's late hours as inexplicable."
+        },
+        {
+          "name": "Sophie Lennon",
+          "line": "Beloved fat-suited comic Midge exposed onstage as a rich Yale-trained fraud; now her humiliated enemy."
+        },
+        {
+          "name": "Harry Drake",
+          "line": "Sophie's powerful talent agent; has just blacklisted Midge across New York."
+        },
+        {
+          "name": "Lenny Bruce",
+          "line": "Obscenity-charged comic who keeps crossing Midge's path, an ally when it counts."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Paris ultimatum",
+          "text": "Rose flees to Paris; Midge follows, calls Joel wanting to reconcile, and refuses when he demands she quit stand-up as the price.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The season's opening choice — comedy over Joel — that governs every romantic decision that follows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Susie kidnapped",
+          "text": "Sophie's agent Harry Drake sends thugs Frank and Nicky to abduct Susie; she charms her way out but is warned worse is coming.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "First meeting with Frank and Nicky, whose favour will become a lifelong debt.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Catskills, Benjamin",
+          "text": "At the family's Catskills resort, Midge is matched with eligible doctor Benjamin Ettenberg while Susie sneaks in as staff to book her local gigs.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Introduces Benjamin, the alternate life Midge will eventually reject.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Abe finds out",
+          "text": "Midge unknowingly does a set about her parents' sex life with Abe in the audience, forcing him into a secret that fractures their trust.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The comedy secret cracks; Abe's silent knowledge reshapes the family for the rest of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Reveal, road tour",
+          "text": "On Yom Kippur Midge finally tells the family she is a comic and rushes off to a set; Susie takes her on a bruising road tour that exposes how hard the life is.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Ends the secrecy era and shows Midge the brutal cost of touring, seeding her tour ambitions and doubts.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Truce, proposal",
+          "text": "A telethon showdown ends with Sophie so impressed she asks Susie to also manage her; Benjamin, meanwhile, asks Abe for permission to marry Midge.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Two decisions that will explode next season: Susie's second client and a proposal Midge won't accept.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Shy tour, Joel bed",
+          "text": "Singing star Shy Baldwin hires Midge as his opening act for six months; the night before the tour she quietly ends things with Benjamin and sleeps with Joel.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Sets up S3's tour, cuts Benjamin loose, and reopens Joel — three threads at once.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Midge is about to leave for a six-month tour opening for Shy Baldwin, her family finally knows what she does, and she has just spent the night with the husband she was ready to leave.",
+        "questions": [
+          "Where does Benjamin fit now, believing himself engaged to her?",
+          "Can Midge and Joel really be together while she is a working comic on the road?",
+          "What is Susie taking on by managing Sophie Lennon alongside Midge?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Midge Maisel",
+          "line": "Now openly a working comic, family aware, about to leave for a six-month tour opening for Shy Baldwin."
+        },
+        {
+          "name": "Joel Maisel",
+          "line": "Working at his father's failing garment factory, single again, and back in Midge's bed as the tour begins."
+        },
+        {
+          "name": "Susie Myerson",
+          "line": "Sole manager to Midge and now also to Sophie Lennon after their telethon truce."
+        },
+        {
+          "name": "Abe Weissman",
+          "line": "Restless Bell Labs mathematician who kept and then lost the secret of Midge's act."
+        },
+        {
+          "name": "Rose Weissman",
+          "line": "Just back from a Paris escape and quietly furious about how little of her old life fits her anymore."
+        },
+        {
+          "name": "Benjamin Ettenberg",
+          "line": "The doctor Midge dated; got Abe's blessing to propose and does not yet know she has left with Shy."
+        },
+        {
+          "name": "Shy Baldwin",
+          "line": "Charismatic Black singing star whose tour is Midge's big break."
+        },
+        {
+          "name": "Sophie Lennon",
+          "line": "No longer at war with Midge; now Susie's client."
+        },
+        {
+          "name": "Lenny Bruce",
+          "line": "Warrant-dodging and near broke, a cautionary tale for a comic who tells the truth."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · USO, Benjamin dumped",
+          "text": "Midge and Susie open for Shy at an Army base, kicking off the tour; without warning Benjamin, Midge ends their engagement.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Locks in the tour as the season's spine and forecloses the doctor-husband alternative.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Susie takes Sophie",
+          "text": "Susie signs Sophie Lennon as a second client; Midge fumes until she accepts that one paying client cannot cover them both.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The dual-client tension whose eventual Broadway blow-up will haunt Susie's roster.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Rose cut off",
+          "text": "Denied a board seat because she is a woman, Rose severs her family's trust; broke, the Weissmans move in with Moishe and Shirley in Queens.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Blows up the Weissmans' financial base and forces Rose to invent a new life for herself.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Vegas remarriage",
+          "text": "Midge and Joel remarry drunk in Vegas and immediately agree to divorce, but the night makes clear neither has really let go.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The couple's real state of affairs made explicit; sets tone for their ongoing entanglement.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Joel's club, Mei",
+          "text": "Joel opens a club above a Chinese gambling den and meets sharp translator Mei Lin, drifting from a working relationship into a romantic one.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces Mei, whose pregnancy and departure will define Joel's next two seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Abe the leftist",
+          "text": "Abe quits Columbia, gets a Times piece on blacklisted playwright Asher Friedman, and lands a job as theatre critic at The Village Voice.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Reinvents Abe as a critic-provocateur — the ground for every S4 collision he causes.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Apollo, tarmac firing",
+          "text": "At the Apollo, Midge riffs on Shy's mannerisms without realising she is outing him; on the tarmac to Europe, Reggie fires her and Susie is left behind.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Detonates the tour and drops Midge into the wilderness she starts S4 in.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Midge and Susie are stranded on the tarmac after being fired for Midge nearly outing Shy at the Apollo. She has no tour, no headline slot, and no plan; Susie has a growing gambling problem she hasn't told her about.",
+        "questions": [
+          "How does Midge rebuild after being blacklisted by Shy Baldwin's people?",
+          "Can Susie manage Midge and Sophie while hiding her gambling debts?",
+          "Where does Joel's Chinatown club and life with Mei go from here?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Midge Maisel",
+          "line": "Just fired from Shy's European leg, stranded on the tarmac without a tour, an act, or a plan."
+        },
+        {
+          "name": "Susie Myerson",
+          "line": "Managing Midge and Sophie, secretly gambling Midge's earnings and torching family property to repay them."
+        },
+        {
+          "name": "Joel Maisel",
+          "line": "Successfully running a Chinatown club and in a serious relationship with translator Mei Lin."
+        },
+        {
+          "name": "Mei Lin",
+          "line": "Sharp Chinese-American medical student, translator for Joel's landlords and now his girlfriend."
+        },
+        {
+          "name": "Shy Baldwin",
+          "line": "Closeted singing star whose sexuality Midge nearly outed at the Apollo."
+        },
+        {
+          "name": "Abe Weissman",
+          "line": "Newly quit Columbia; a Village Voice theatre critic with one bombshell blacklist article behind him."
+        },
+        {
+          "name": "Rose Weissman",
+          "line": "Cut off from her family's trust after being denied a board seat; living with the Maisels in Queens."
+        },
+        {
+          "name": "Frank & Nicky",
+          "line": "The mob-connected thugs Susie befriended; useful, dangerous, and permanently in her orbit."
+        },
+        {
+          "name": "Sophie Lennon",
+          "line": "Susie's client, still rebuilding after a Broadway disaster of her own making."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Only headliner",
+          "text": "Publicly humiliated by Shy's team, Midge vows to only headline from here on — a rule that will close every big door Susie tries to open.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Turns Midge's principle into her career ceiling for the whole season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Susie's gambling",
+          "text": "Midge learns Susie gambled away her tour money; Susie repays her with insurance from torching her family home and makes Joel Midge's financial custodian.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Puts Joel between Midge and Susie financially — the wedge that later exposes the mob ties.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Wolford emcee",
+          "text": "Wrongly arrested for prostitution, Midge takes over as emcee at burlesque club the Wolford, steady work at a venue that keeps her off respectable stages.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Locks in the Wolford as Midge's home base and the reputational drag she battles all season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Mei pregnant, Moishe drops",
+          "text": "Mei tells Joel she is pregnant; the night Joel finally tells Moishe about her, his father has a heart attack at the bar.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Two family bombshells timed together; both hang over the following season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Matchmaker war",
+          "text": "Rose's booming matchmaker business draws four rival matchmakers who threaten her and Abe; with Abe backing her, she defiantly refuses to quit.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Sets up the direct S5 conflict over Rose's business and her Tea Room.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Lenny at Carnegie",
+          "text": "Midge and Lenny sleep together the night of his sold-out Carnegie Hall show; he rebukes her for turning down a Copa gig and orders her to stop fearing failure.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The romance lands, and Lenny's ambition speech becomes her operating rule going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Aims at Gordon Ford",
+          "text": "Chastened by Lenny, Midge sets her sights on The Gordon Ford Show as her route back to national television.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Names the target that structures the entire following season.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Midge has set her sights on The Gordon Ford Show as her route to fame, chastened by Lenny's warning to stop fearing failure. Mei is pregnant with Joel's baby and Moishe is recovering from a heart attack.",
+        "questions": [
+          "Can Midge finally break through to national television via Gordon Ford?",
+          "Will Mei and Joel actually build a life together across the family divide?",
+          "Where does Lenny's escalating drug use leave the man Midge just fell for?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Midge Maisel",
+          "line": "Wolford burlesque emcee spurned by Shy's team, chasing Gordon Ford, now sexually and emotionally entangled with Lenny."
+        },
+        {
+          "name": "Susie Myerson",
+          "line": "Managing Midge and Sophie from a mob-provided office; gambling debts settled for now, with Joel watching the books."
+        },
+        {
+          "name": "Joel Maisel",
+          "line": "Successful club owner and Midge's court-appointed financial custodian; expecting a child with Mei."
+        },
+        {
+          "name": "Mei Lin",
+          "line": "Pregnant with Joel's baby and wary of meeting his family."
+        },
+        {
+          "name": "Abe Weissman",
+          "line": "Village Voice critic whose savage Buzz Goldberg review dragged him into fights with Broadway and Rose's rivals."
+        },
+        {
+          "name": "Rose Weissman",
+          "line": "Booming matchmaker with four rival matchmakers threatening her, whom she has just defied."
+        },
+        {
+          "name": "Lenny Bruce",
+          "line": "Fresh off a sold-out Carnegie Hall triumph; drug use is now visible in the picture."
+        },
+        {
+          "name": "Frank & Nicky",
+          "line": "Susie's ever-present mob 'friends' who find her offices and settle her disputes."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Mei ends it",
+          "text": "Mei ends her engagement to Joel and reveals she is no longer pregnant, freeing herself for medical school and leaving Joel unmoored.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Clears the family future Joel had been building toward and refocuses him on Midge and the kids.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Ford writers' room",
+          "text": "Midge is hired as the only woman writing on The Gordon Ford Show; a strict house rule forbids staff from ever appearing on air.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes both the foot in the door and the exact wall she will spend the season trying to climb.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Lifelong mob debt",
+          "text": "Frank and Nicky make clear the favour they did Susie is a lifelong debt; Joel overhears and confronts Susie about her ties to the mob.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The past finally lands on the present — and Joel now carries a secret that will cost him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Matchmaker truce",
+          "text": "After the Tea Room burns, the arrested lead matchmaker Benedetta offers a truce; Rose emerges from the war with her business intact.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Closes out the Rose thread and lets her end the series on solid ground.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Hedy's leverage",
+          "text": "Gordon's wife Hedy corners Susie and reveals a bitter college relationship of theirs, making Susie's route to help Midge quietly humiliating.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The single asset that will get Midge on air is one Susie has to pay for in dignity.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Lenny in freefall",
+          "text": "Midge glimpses a wrecked Lenny leaving for Los Angeles and cannot face him; his warning to seize the spotlight becomes her operating rule.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The romantic thread ends off-camera; his voice keeps directing her choices.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Hijacked, fired",
+          "text": "Coerced into a 'human interest' slot on Gordon's show, Midge hijacks it into a stand-up set that captivates viewers; on air Gordon fawns, off mic he fires her.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The break Midge chased arrives and detonates in the same moment; the series' central bargain in one scene.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Midge has just torn down the fourth wall on The Gordon Ford Show and been fired for it seconds after Gordon offered her a couch spot on air. Fame has arrived; every relationship she leaned on to reach it — Susie, Joel, Lenny, Gordon, Hedy — is compromised.",
+        "questions": [
+          "Can Midge convert one hijacked segment into the career Lenny told her to claim?",
+          "Does Susie survive as Midge's manager now that Joel knows about the mob debts?",
+          "What kind of life is Midge building alone as fame finally arrives?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Midge Maisel",
+          "line": "Fired from The Gordon Ford Show the same moment she stole the segment that made her a star."
+        },
+        {
+          "name": "Susie Myerson",
+          "line": "Manager whose old mob debts have surfaced and whose forgotten college relationship with Hedy is now the price of any favour."
+        },
+        {
+          "name": "Joel Maisel",
+          "line": "Committed to protecting Midge from the mob at any personal cost, long after their marriage ended."
+        },
+        {
+          "name": "Mei Lin",
+          "line": "Left Joel and ended the pregnancy to pursue her medical career."
+        },
+        {
+          "name": "Abe Weissman",
+          "line": "Finally recognises Midge's talent and granddaughter Esther's genius, regretting years of underestimating both."
+        },
+        {
+          "name": "Rose Weissman",
+          "line": "Matchmaking business intact after the matchmakers' truce; back on solid ground."
+        },
+        {
+          "name": "Lenny Bruce",
+          "line": "Drug-addicted and banned from most clubs; his warning to seize the spotlight is Midge's operating rule."
+        },
+        {
+          "name": "Gordon Ford",
+          "line": "Talk-show host whose romantic advances Midge refused and who fired her the instant she stole his show."
+        },
+        {
+          "name": "Hedy Ford",
+          "line": "Gordon's wife and an old flame of Susie's; the reason Midge got on air at all."
+        }
+      ]
+    }
+  }
+}

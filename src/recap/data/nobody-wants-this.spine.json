@@ -1,0 +1,101 @@
+{
+  "slug": "nobody-wants-this",
+  "generatedFor": "Nobody Wants This",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The setup",
+          "text": "Rabbi Noah ends things with his Jewish girlfriend Rebecca. At a dinner party he meets Joanne, an agnostic sex-podcaster, and the chemistry is instant.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the show's central premise and the two leads' starting positions.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Just friends, then not",
+          "text": "Joanne turns up at Noah's synagogue and family orbit. They agree they're only friends over dinner, then kiss anyway, committing to see where it goes.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The moment the flirtation becomes a real relationship the rest of the season pressures.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Made it official",
+          "text": "At a Jewish camp Rabbi Cohen asks Joanne to stay out of sight. Noah chooses her, drives to her Spotify dinner, and asks her to be his girlfriend.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "First open collision between Noah's career and Joanne, and the point they become a couple.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The wife has to be Jewish",
+          "text": "Meeting Joanne's chaotic family, Noah lets slip that any wife of his would have to be Jewish. The relationship now has a stated ceiling neither can ignore.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Names the obstacle that structures every remaining beat and the season's ending.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Head rabbi on offer",
+          "text": "Rabbi Cohen tells Noah he wants him as his successor, but only with a Jewish wife beside him. Noah asks Joanne if she would consider converting.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Turns the abstract Jewish-wife problem into a concrete career-vs-Joanne choice.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Bina draws the line",
+          "text": "Noah's mother Bina meets Joanne at brunch, feigns warmth, then privately tells her she will never end up with Noah. Morgan's lie about Rebecca briefly splits the sisters before Sasha exposes it.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Cements the family opposition Joanne is walking into and clears Morgan back onside for the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Bat mitzvah choice",
+          "text": "At Miriam's bat mitzvah Joanne tells Noah she can't convert and tries to end things so he can take the job. Noah follows her out, agrees she's right, and kisses her anyway.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The season's actual cliffhanger: they've chosen each other with nothing resolved about the job or the conversion.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Joanne has said she can't convert and Noah has chosen her anyway, kissing her outside the bat mitzvah. Nothing about the head-rabbi job, his family, or their fundamentally incompatible lives has actually been settled — they've just decided to keep going.",
+        "questions": [
+          "Can Noah still become head rabbi with an agnostic girlfriend at his side?",
+          "Will Bina and the rest of Noah's world ever accept Joanne as she is?",
+          "How long can this relationship hold together without one of them giving something up?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Noah",
+          "line": "A rabbi in line to succeed his boss as head rabbi, freshly out of a long relationship with Rebecca and now dating Joanne despite everyone telling him not to."
+        },
+        {
+          "name": "Joanne",
+          "line": "Agnostic co-host of a sex-and-relationships podcast who has fallen for Noah but just told him she isn't willing to convert to Judaism for him."
+        },
+        {
+          "name": "Morgan",
+          "line": "Joanne's sister and podcast partner, threatened by the relationship, who lied about Noah and Rebecca before Sasha helped her make it right."
+        },
+        {
+          "name": "Sasha",
+          "line": "Noah's brother, newly promoted at their father's company, quietly bonded with Morgan and acts as the sibling back-channel between the two families."
+        },
+        {
+          "name": "Esther",
+          "line": "Sasha's wife, part of the WAGs group loyal to Rebecca, wary of Joanne and now aware Sasha has been talking to Morgan behind her back."
+        },
+        {
+          "name": "Bina",
+          "line": "Noah's mother, publicly polite to Joanne at brunch but privately told her she will never end up with Noah — the family's hardest no."
+        },
+        {
+          "name": "Rabbi Cohen",
+          "line": "Noah's boss, offering him the head-rabbi succession on the condition that his wife be Jewish."
+        },
+        {
+          "name": "Rebecca",
+          "line": "Noah's Jewish ex-girlfriend, still orbiting his social world, whose conversation with Joanne at the bat mitzvah pushed Joanne to try to end things."
+        }
+      ]
+    }
+  }
+}

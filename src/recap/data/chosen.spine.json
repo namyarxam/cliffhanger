@@ -1,0 +1,517 @@
+{
+  "slug": "chosen",
+  "generatedFor": "The Chosen",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Called by Name",
+          "text": "In Capernaum's Red Quarter, the tormented Mary Magdalene is called by name and healed by a stranger — the first sign this Jesus is who Israel has waited for.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Jesus's identity and Mary as founding follower; the model for every calling that follows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Simon's Debt",
+          "text": "Drowning in tax debt, fisherman Simon informs on fellow Jews to Rome; his brother Andrew disapproves and finds John the Baptizer proclaiming the Messiah has come.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets up Simon's compromised state and Andrew's link to John the Baptizer — the seed of the fishermen's calling.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Nicodemus by Night",
+          "text": "Nicodemus, a respected Pharisee, fails to exorcise Mary, meets Jesus by night, and worships him as Son of God — but cannot bring himself to leave his standing.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Establishes the sympathetic-but-secret Sanhedrin ally, a thread that runs through every later season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The First Nets",
+          "text": "After a fruitless night, Jesus fills Simon's nets; Simon, Andrew, Big James and John drop everything to follow, and tax collector Matthew watches it happen.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The core calling of the fishermen and the miracle that plants Matthew's own calling.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Water into Wine",
+          "text": "At a Cana wedding, Jesus turns water into wine at his mother's urging; merchants Thomas and Ramah agree to meet him again on the road.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "First public sign, and the introduction of Thomas and Ramah who become central in later seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Matthew's Booth",
+          "text": "Jesus calls Matthew from his tax booth, publicly embracing a Roman collaborator; Shmuel begins building a Sanhedrin case against him for it.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Matthew joins and the religious opposition formally organizes — the two threads that drive S2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Well in Samaria",
+          "text": "Insisting on going through Samaria, Jesus tells the woman at Jacob's Well that he is the Messiah; her town believes and his public ministry begins.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Marks the shift from private circle to public ministry — the change of scale that makes everything in S2 possible.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Jesus has openly declared himself Messiah to a Samaritan town, and Simon, Andrew, Matthew, Big James, and John have all thrown their old lives away to follow him. Nicodemus stayed behind in his position, and Shmuel is quietly building a case against Jesus for the Sanhedrin.",
+        "questions": [
+          "How will Rome and the Pharisees respond once the crowds keep growing?",
+          "Will Nicodemus ever step out of the shadows?",
+          "Who else will Jesus gather to himself?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jesus of Nazareth",
+          "line": "The itinerant rabbi who has just publicly declared himself the Messiah in Samaria."
+        },
+        {
+          "name": "Simon",
+          "line": "Capernaum fisherman and first disciple; volatile, in debt to Rome, has left his nets to follow."
+        },
+        {
+          "name": "Andrew",
+          "line": "Simon's earnest brother, once a disciple of John the Baptizer — the first to believe the Messiah has come."
+        },
+        {
+          "name": "Matthew",
+          "line": "Reviled tax collector who walked out of his booth mid-shift when Jesus called him."
+        },
+        {
+          "name": "Mary Magdalene",
+          "line": "A woman Jesus freed from possession by calling her by name; now among his most devoted followers."
+        },
+        {
+          "name": "Big James and John",
+          "line": "Zebedee's fisherman sons, partners of Simon; called at the miraculous catch."
+        },
+        {
+          "name": "Nicodemus",
+          "line": "Senior Pharisee who privately worships Jesus as Son of God but cannot bring himself to leave his standing."
+        },
+        {
+          "name": "Shmuel",
+          "line": "Younger Pharisee already assembling a Sanhedrin case against Jesus for false prophecy."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Sons of Thunder",
+          "text": "Big James and John's arrogance in Samaria — asking Jesus to rain fire on hostile villagers — earns them a rebuke and the nickname 'sons of thunder'.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Names the ambition problem in the inner circle that keeps returning as Jesus tries to reshape them.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Under the Fig Tree",
+          "text": "Philip arrives from John the Baptizer and finds Nathanael grieving under a fig tree; Jesus knows Nathanael before they meet, and Nathanael declares him Son of God.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Two more of the twelve are seated — Philip's presence also cracks Simon's proprietary hold on the group.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Zealot Turns",
+          "text": "Zealot Simon Z, mid-assassination in Jerusalem, sees Jesus heal a paralytic at Bethesda and abandons the plot; the Roman Atticus begins hunting Jesus in earnest.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Adds Simon Z to the twelve and introduces Atticus, the Roman intelligence thread that runs to the end.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · John Imprisoned",
+          "text": "Herod arrests John the Baptizer for condemning his marriage; John hands his ministry to Jesus and Andrew grieves for his old rabbi.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The John the Baptizer clock starts running toward its end — the event that reshapes Jesus's own posture later.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Mary Relapses",
+          "text": "Mary Magdalene, unnerved by a Roman, flees to a tavern; Jesus sends Simon and Matthew together to find her, forcing the two enemies to travel side by side.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Establishes the Simon–Matthew fracture that dominates group dynamics well into S3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Rome's First Grip",
+          "text": "Praetor Quintus briefly arrests Jesus, warns him to stop drawing crowds, and releases him; Rome now knows exactly who he is.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Rome moves from watching to touching — the tolerance that will finally snap in S4.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Enter Judas",
+          "text": "As the disciples prepare Jesus's largest sermon yet on the Korazim Plateau, a young apprentice named Judas helps secure the venue and asks to follow.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The single most important introduction of the season; the reader must recognise Judas before S3.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Jesus is about to step onto the mountain to deliver the largest sermon of his life to thousands, with Romans, Pharisees, and a hostile Sanhedrin faction all watching. John the Baptizer sits in Herod's prison, and a young apprentice named Judas has just introduced himself to the group.",
+        "questions": [
+          "What will Jesus preach to a crowd this size?",
+          "Will John the Baptizer survive Herod's prison?",
+          "What kind of follower is Judas?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jesus",
+          "line": "Now travelling with a growing group, drawing crowds and hardening Roman and Pharisee attention."
+        },
+        {
+          "name": "Simon",
+          "line": "Fisherman-disciple, still openly hostile to Matthew and struggling with what following actually costs."
+        },
+        {
+          "name": "Matthew",
+          "line": "Meticulous ex-tax-collector chronicling every miracle in writing, mentored by Philip."
+        },
+        {
+          "name": "Mary Magdalene",
+          "line": "A follower who briefly relapsed under stress and was welcomed back by Jesus."
+        },
+        {
+          "name": "Philip",
+          "line": "Pragmatic former disciple of John the Baptizer; joined Jesus and now mentors Matthew."
+        },
+        {
+          "name": "Nathanael",
+          "line": "Disillusioned architect called from under his fig tree; declared Jesus Son of God on meeting him."
+        },
+        {
+          "name": "Simon Z",
+          "line": "Former Zealot assassin who abandoned the Fourth Philosophy after Jesus healed a man at Bethesda."
+        },
+        {
+          "name": "Thomas and Ramah",
+          "line": "Engaged wine merchants from Cana, now travelling with the group and preparing to marry."
+        },
+        {
+          "name": "Shmuel",
+          "line": "Pharisee steadily building the Sanhedrin case against Jesus, now backed by Yanni."
+        },
+        {
+          "name": "Atticus",
+          "line": "Roman cohorte urbanae quietly investigating Jesus across regions on behalf of Rome."
+        },
+        {
+          "name": "Judas",
+          "line": "Young apprentice who has just left his mentor Hadad and asked to follow Jesus."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Sermon on the Mount",
+          "text": "Jesus delivers the Sermon on the Mount to thousands on the Korazim Plateau; Judas the apprentice bids his mentor Hadad goodbye and formally joins the group.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The teaching that defines his public message, and Judas moves inside the circle — the fuse of everything later.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The Twelve Sent",
+          "text": "Jesus formally commissions the twelve apostles, sends them out in pairs to preach and heal, and — at Matthew's suggestion — appoints Judas as treasurer of the group.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The twelve are named as an office, and Judas gets the moneybag that will corrode him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Rejected at Nazareth",
+          "text": "In Nazareth Jesus declares Isaiah's Jubilee fulfilled in himself; his hometown drags him to a cliff to kill him, and he walks straight through them.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "First violent rejection from his own people — signals the road no longer goes back to normal life.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Gaius Warms",
+          "text": "Simon and Praetor Gaius fix Capernaum's water crisis together, forging an unlikely friendship between disciple and Roman that quietly turns Gaius toward belief.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The Roman ally seed that pays off decisively in S4; also puts Jairus and Yussif in motion.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Raising Jairus's Daughter",
+          "text": "Bleeding Veronica is healed by touching Jesus's garment; hours later he raises Jairus's twelve-year-old daughter from death behind closed doors.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "First raising of the dead in the show; Jairus's belief later becomes a key inside-Capernaum ally.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Eden's Grief",
+          "text": "Eden confesses to Simon that she miscarried while he was away following Jesus; the marriage fractures, and Simon Z faces down his old zealot comrades.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The domestic cost of discipleship becomes real for Simon — a wound the next season keeps prodding.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · On the Water",
+          "text": "Jesus feeds thousands from a boy's lunch, walks across a storm at night, and pulls a sinking Simon from the water — the twelve see him as more than man.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The disciples' understanding of who Jesus actually is takes a decisive step, priming Peter's confession later.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The disciples have just watched Jesus command the sea itself, but Eden and Simon's marriage is broken, John the Baptizer still languishes in Herod's prison, and the Roman intelligence officer Atticus is now watching every move.",
+        "questions": [
+          "Can Simon and Eden's marriage survive his mission?",
+          "Will Herod release John the Baptizer or kill him?",
+          "How much longer before Rome moves openly against Jesus?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jesus",
+          "line": "Publicly the Messiah to thousands, formally leading his commissioned twelve and increasingly hunted."
+        },
+        {
+          "name": "Simon",
+          "line": "Lead disciple, marriage fractured by Eden's miscarriage, working through a wary friendship with Praetor Gaius."
+        },
+        {
+          "name": "Eden",
+          "line": "Simon's wife; grieving the miscarriage she went through alone while he followed Jesus."
+        },
+        {
+          "name": "Judas Iscariot",
+          "line": "The newest of the twelve, appointed treasurer, keen and business-minded around Jesus's mission."
+        },
+        {
+          "name": "Mary Magdalene",
+          "line": "Steady follower now studying Torah and helping run the group's daily life."
+        },
+        {
+          "name": "Ramah",
+          "line": "Thomas's fiancée, studying Torah alongside Mary Magdalene and travelling with the twelve."
+        },
+        {
+          "name": "Praetor Gaius",
+          "line": "Rome's man in Capernaum, secretly turning toward belief after working with Simon."
+        },
+        {
+          "name": "Jairus",
+          "line": "Capernaum's new synagogue administrator, quietly a believer since Jesus raised his daughter."
+        },
+        {
+          "name": "Shmuel",
+          "line": "Now working from Jerusalem with Shammai's backing, escalating the Sanhedrin case against Jesus."
+        },
+        {
+          "name": "Atticus",
+          "line": "Roman intelligence officer tracking Jesus region by region, weighing him as a political problem."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · John's Head",
+          "text": "At his birthday feast Herod is manipulated into beheading John the Baptizer; Andrew learns from Joanna, and Jesus mourns in sackcloth and ashes.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The John clock finally runs out; the shape of Jesus's grief here sets up his sharper turn toward Jerusalem.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Confession at Caesarea",
+          "text": "At Caesarea Philippi Simon confesses Jesus is the Christ; Jesus renames him Peter and hands him the keys of the Kingdom, elevating him above the twelve.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The turning point of the whole show — Peter is now formally chief, and Jesus's death starts being spoken aloud.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Ramah's Death",
+          "text": "Trying to arrest Jesus in Capernaum, the disgraced Quintus accidentally fatally stabs Ramah; Thomas begs for a miracle Jesus refuses to perform.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Kills a beloved character, breaks Thomas, and radicalises her father Kafni — the last of those matters most for S5.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Gaius Elevated",
+          "text": "Rome demotes Quintus for the killing and promotes Gaius to Praetor; Gaius publicly asks Jesus to heal his dying son, and Jesus does so from afar.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Places a believing Roman in charge of Capernaum right as the plot against Jesus moves to Jerusalem.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Judas Turns",
+          "text": "Judas Iscariot begins skimming from the moneybag and reconnects with his old mentor Hadad, who nudges him toward scheming against Jesus.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Judas's slide from disciple to betrayer becomes concrete — the fuse for S5's whole shape.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Lazarus",
+          "text": "In Bethany Jesus calls Lazarus out of a sealed tomb — his last public sign — and Caiaphas convenes the Sanhedrin to formally plot Jesus's death.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The final sign flips the switch: the religious authorities now openly move to kill him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Triumphal Entry",
+          "text": "Six days before Passover, Mary of Bethany anoints Jesus for burial; Jesus borrows a colt and prepares to ride into Jerusalem to Messiah-shouting crowds.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Sets the exact clock the entirety of S5 runs on — Passover in Jerusalem with a plot already active.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Jesus is riding into Jerusalem to crowds hailing him as Messiah, days before Passover. Caiaphas has already opened a formal Sanhedrin plot to kill him, Judas is skimming and scheming, and Ramah's father Kafni has sworn to move mountains to expose him.",
+        "questions": [
+          "Will Jesus survive Passover in Jerusalem?",
+          "What has Judas actually decided to do?",
+          "Will Rome finally move against him openly?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jesus",
+          "line": "Riding openly into Jerusalem as Messiah; has now foretold his own death three times."
+        },
+        {
+          "name": "Simon Peter",
+          "line": "Renamed by Jesus and handed the keys of the Kingdom; now the acknowledged first among the twelve."
+        },
+        {
+          "name": "Judas Iscariot",
+          "line": "Group treasurer, secretly skimming and back in contact with his manipulator Hadad."
+        },
+        {
+          "name": "Thomas",
+          "line": "Broken by Ramah's death and angry at Jesus for refusing to raise her."
+        },
+        {
+          "name": "Mary Magdalene",
+          "line": "Trusted follower helping run the growing group as it moves toward Jerusalem."
+        },
+        {
+          "name": "Lazarus",
+          "line": "Jesus's friend from Bethany, recently raised from the dead — a walking piece of evidence."
+        },
+        {
+          "name": "Kafni",
+          "line": "Ramah's father, publicly cursing Jesus and vowing revenge for his daughter's death."
+        },
+        {
+          "name": "Caiaphas",
+          "line": "High Priest, now openly leading the Sanhedrin plot to kill Jesus."
+        },
+        {
+          "name": "Pontius Pilate",
+          "line": "The new Roman Governor of Judea, cautious and courted by both Caiaphas and Herod."
+        },
+        {
+          "name": "Praetor Gaius",
+          "line": "Believing Roman now in charge of Capernaum; Jesus healed his son at his public request."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Into Jerusalem",
+          "text": "Jesus enters Jerusalem to crowds hailing him as Messiah; the new Governor Pilate ingratiates himself with Caiaphas as Roman and religious spies close in.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The clock starts. Every faction is now in the same city and watching him openly.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Cleansing the Temple",
+          "text": "Enraged by the Temple marketplace's exploitation of Gentile pilgrims, Jesus whips out the money changers; Judas privately concludes he has gone mad.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The public provocation that gives the leaders their pretext, and the moment Judas gives up on him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Woes and Warnings",
+          "text": "The religious leaders publicly try to trap Jesus into blasphemy; he condemns the Second Temple to destruction and warns the twelve of persecution to come.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Jesus takes off the gloves rhetorically — no retreat is possible from this point.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Kafni Recruited",
+          "text": "Atticus recruits the grieving Kafni, still blaming Jesus for Ramah's death, to inflame the Passover crowd against him in exchange for avoiding arrest.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The mechanism by which the crowd flips against Jesus is put in place; Rome and grief converge into a weapon.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Thirty Silver",
+          "text": "Disillusioned that Jesus will not raise a revolt against Rome, Judas agrees to betray him to Caiaphas and Shmuel for thirty pieces of silver.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The betrayal is now bought and priced; the arrest is only a matter of when.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The Last Supper",
+          "text": "Nicodemus warns Mary Magdalene the leaders are moving; at the Passover meal Jesus washes his disciples' feet and names a betrayer at the table.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The final teaching hours: Eucharist instituted, betrayal spoken aloud, Peter warned of his denial.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Gethsemane",
+          "text": "In the garden Jesus submits alone to his Father's will after asking three times for the cup to pass; Judas leads Temple guards and Kafni to arrest him with a kiss.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The season ends the moment the passion begins — every previous thread now under the arresting soldiers' hands.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Jesus has been arrested at Gethsemane after willingly submitting to his Father — his disciples have scattered, Judas has already kissed him for the guards, and Peter stands on the brink of the denial Jesus foretold at supper.",
+        "questions": [
+          "Will Peter deny Jesus three times as prophesied?",
+          "What will Pilate do with him when Caiaphas hands him over?",
+          "Does anyone still remember Jesus said he would rise?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jesus",
+          "line": "Just arrested at Gethsemane, having submitted alone to his Father's will after asking the cup to pass."
+        },
+        {
+          "name": "Simon Peter",
+          "line": "Leader of the twelve, warned at supper he will deny Jesus three times before dawn."
+        },
+        {
+          "name": "John",
+          "line": "The closest disciple, present in Gethsemane's inner circle and being groomed to witness what comes."
+        },
+        {
+          "name": "Judas Iscariot",
+          "line": "The betrayer, paid thirty pieces of silver and has just identified Jesus to the guards with a kiss."
+        },
+        {
+          "name": "Mary Magdalene",
+          "line": "Devoted follower now warned by Nicodemus that the leaders are moving."
+        },
+        {
+          "name": "Nicodemus",
+          "line": "Publicly chastising Caiaphas in the Sanhedrin and privately confessing his belief to Mary Magdalene and Yussif."
+        },
+        {
+          "name": "Caiaphas",
+          "line": "High Priest driving the plot; convened the emergency Sanhedrin meeting that authorised the arrest."
+        },
+        {
+          "name": "Pontius Pilate",
+          "line": "Roman Governor being courted by Caiaphas and warned by Atticus that the leaders are plotting."
+        },
+        {
+          "name": "Atticus",
+          "line": "Roman intelligence officer who both warned Pilate and struck the deal with Kafni to inflame the crowd."
+        },
+        {
+          "name": "Kafni",
+          "line": "Ramah's father, working with Atticus to turn the Passover crowd against Jesus."
+        }
+      ]
+    }
+  }
+}

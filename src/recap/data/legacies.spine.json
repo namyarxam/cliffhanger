@@ -1,0 +1,406 @@
+{
+  "slug": "legacies",
+  "generatedFor": "Legacies",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · A Human at the School",
+          "text": "Hope helps recruit werewolf Rafael to the Salvatore School; his foster brother Landon resists compulsion, steals a mysterious knife, and flees.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Hope-Landon-Rafael triangle and plants the knife as the first Malivore key that drives the whole season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Monsters at the Door",
+          "text": "Monsters keep arriving to reclaim the knife — it's a key to Malivore, a pit that erases supernaturals from memory. Hope and Landon fall in love anyway.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Names the season's engine and locks in the couple whose fate the rest of the series orbits.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Landon's Origin",
+          "text": "Landon's mother Seylah reveals he was born of Malivore itself, then sacrifices herself back into the pit; a second key surfaces and Alaric hides it.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Ties Landon personally to the antagonist — the setup Clarke will exploit at the finale and Malivore will exploit for seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · MG Kills Landon",
+          "text": "MG loses control feeding on Landon and drains him dry — but Landon resurrects in flame, revealing he's a phoenix.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "First revival is Landon's true nature. MG's guilt over this act haunts him for seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Merge Secret",
+          "text": "Penelope tells Josie the twins are doomed to a fatal Merge, a secret Josie hides from Lizzie as Triad agents move on the school.",
+          "anchorEpisode": 14,
+          "whyLoadBearing": "Plants the Merge — the season 2 climax — and the specific asymmetry that Josie knows and Lizzie doesn't.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Clarke Unmasked",
+          "text": "Clarke reveals himself as Landon's half-brother and Malivore's herald, and throws the final key into the pit to reawaken it.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "Introduces Clarke as a recurring antagonist and forces the finale sacrifice.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Into the Pit",
+          "text": "Hope kills Landon to weaponise her tribrid blood, then drags Clarke into Malivore. Everyone's memory of Hope is erased and Landon resurrects to an empty school.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "The literal opening premise of season 2 — Hope inside Malivore, forgotten, Landon alone.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Hope has sealed Malivore by throwing herself and Clarke into the pit. The world's memory of her is erased, and Landon has resurrected alone into a school and a father figure who don't know she ever existed.",
+        "questions": [
+          "Can Hope escape Malivore, and will anyone remember her if she does?",
+          "What does Landon do now that he knows he's a phoenix and Malivore's son?",
+          "Is the pit truly sealed, or will Clarke find a way to reopen it?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Hope Mikaelson",
+          "line": "Tribrid daughter of Klaus, top student at the Salvatore School; sacrificed herself into Malivore to seal it, erasing everyone's memory of her."
+        },
+        {
+          "name": "Landon Kirby",
+          "line": "Hope's boyfriend, revealed as a phoenix and Malivore's biological son; resurrects alone into a school that doesn't remember her."
+        },
+        {
+          "name": "Alaric Saltzman",
+          "line": "Salvatore School headmaster, widowed father of the twins, and Hope's father figure."
+        },
+        {
+          "name": "Josie Saltzman",
+          "line": "Alaric's daughter and a siphoner witch; knows about the Merge but has hidden it from Lizzie."
+        },
+        {
+          "name": "Lizzie Saltzman",
+          "line": "Alaric's other daughter, siphoner witch, brash and volatile, unaware she's fated to fight Josie to the death."
+        },
+        {
+          "name": "MG",
+          "line": "Vampire student with ripper tendencies; the friend who briefly killed Landon and triggered the phoenix reveal."
+        },
+        {
+          "name": "Rafael",
+          "line": "Werewolf, Landon's foster brother, and alpha of the school pack."
+        },
+        {
+          "name": "Clarke",
+          "line": "Landon's half-brother and Malivore's herald; dragged into the pit alongside Hope."
+        },
+        {
+          "name": "The Necromancer",
+          "line": "Undead spellcaster who raises the dead; last seen closing the Malivore portal from behind."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Forgotten",
+          "text": "Hope escapes Malivore into a world where no one remembers her, finds Landon has moved on with Josie, and hides at Mystic Falls High.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the emotional problem of the season and puts Hope outside the school she belongs to.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The New Headmaster",
+          "text": "The new Salvatore headmaster, Vardemus, is secretly Clarke — resurrected and pushing Josie toward dark magic while plotting a body swap with Hope.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The season-long deception whose exposure resets the school and licenses Josie's dark magic arc.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Lizzie's Invisible Boyfriend",
+          "text": "Lizzie falls for Sebastian, an astral-projected vampire only she can see. Once his body wakes, Alaric secretly disposes of him and lies to Lizzie.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Alaric's willingness to deceive Lizzie to protect her becomes the crack in their trust that widens all season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Memory Restored",
+          "text": "Josie casts a spell restoring everyone's memory of Hope, and Vardemus is unmasked as Clarke. But the dark magic is hollowing Josie out.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Resets the ensemble and puts Josie on the road that ends with Dark Josie.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Golden Arrow",
+          "text": "The Necromancer manipulates a reanimated Rafael into killing Landon with a golden arrow; Lizzie, secretly linked to Landon's life, dies alongside him.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "Turns Rafael into a weapon and forces the resurrection bargain that empties Josie of darkness.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Merge Comes Early",
+          "text": "Dark Josie forces the Merge on the twins' 17th birthday and wins. Alaric bargains her magic to the Necromancer in exchange for resurrecting everyone.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "The Merge — season-one's biggest planted threat — actually happens, and Josie becomes the season's antagonist.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Both Won't Wake",
+          "text": "Hope enters Josie's mind and helps her cast off the darkness into the Necromancer. Both Hope and Landon then fail to wake up.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "The literal opening problem of season 3 — two comas and a Necromancer holding Josie's darkness.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Hope and Landon both fell unconscious after Josie's rescue and neither can be woken. Rafael, reanimated and weaponised by the Necromancer, is loose in the woods, and the Necromancer now carries the dark magic that used to be Josie's.",
+        "questions": [
+          "What is keeping Hope and Landon from waking up?",
+          "What is Rafael now, after being reanimated by the Necromancer?",
+          "What will the Necromancer do with the darkness he stripped from Josie?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Hope Mikaelson",
+          "line": "Escaped Malivore and had everyone's memory of her restored; unconscious alongside Landon after helping Josie."
+        },
+        {
+          "name": "Landon Kirby",
+          "line": "Killed by a reanimated Rafael and resurrected through Alaric's bargain with the Necromancer; still comatose."
+        },
+        {
+          "name": "Alaric Saltzman",
+          "line": "Stepped down as headmaster after Clarke replaced him; has secretly disposed of Sebastian and lied to Lizzie about it."
+        },
+        {
+          "name": "Lizzie Saltzman",
+          "line": "Siphoner witch who learned she was magically linked to Landon's life and lost the Merge to Josie."
+        },
+        {
+          "name": "Josie Saltzman",
+          "line": "Won the early Merge over Lizzie and cast off her dark magic into the Necromancer; still finding her footing."
+        },
+        {
+          "name": "MG",
+          "line": "Vampire student, closest confidant to Lizzie, holds the moral center of the school."
+        },
+        {
+          "name": "Rafael",
+          "line": "Reanimated by the Necromancer and used to shoot Landon with a golden arrow; loose in the woods."
+        },
+        {
+          "name": "Clarke",
+          "line": "Impersonated Vardemus for most of the year; killed by the Necromancer and thrown back into Malivore."
+        },
+        {
+          "name": "The Necromancer",
+          "line": "Antagonist who now carries the dark magic he siphoned out of Josie."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Rafael's Exit",
+          "text": "Hope and Landon wake. To save Rafael from the Necromancer's death-curse, Alaric sends him to live in a prison world with his birth parents.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Writes Rafael out cleanly so the season can pivot to a new problem, and settles his arc.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Landon Melts",
+          "text": "Hope beheads the Necromancer, Alaric returns as headmaster, and the couple settle in — until Landon melts into black goo in Hope's bed and vanishes.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The inciting mystery of the season; the goo is the first clue that this Landon was never right.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · A Muse Named Cleo",
+          "text": "Hope returns to a school that has forgotten her again. New student Cleo, secretly a muse, helps her cope — then a letter from Landon arrives from a prison world.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Introduces Cleo, the season's most important new character, and reopens the door to Landon.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · A Landon Not Quite Landon",
+          "text": "Hope crosses over and pulls Landon out, but he seems off — evasive, unnaturally strong, no phoenix reactions and no allergies.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Sets up the golem reveal by making Landon's wrongness observable to the audience and to Hope.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The Golem and the Hunter",
+          "text": "The returned Landon is a golem Cleo unwittingly created. The real Landon has been the skull-masked hunter stalking Hope from the shadows.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Reveals Cleo's power and returns real Landon — the wedge that eventually breaks the couple.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The Breakup",
+          "text": "The real Landon, scarred by the prison world, breaks up with Hope, convinced they're doomed to destroy each other, and disappears with Cleo.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Removes Hope's grounding relationship right before the finale twist, setting up Hope's collapse in season 4.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Landon Was Malivore",
+          "text": "Alaric finds Landon devouring Cleo. Hope realises this Landon has been Malivore in disguise — and Malivore now demands his friends back.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "The full-season twist and the direct setup for the season 4 rescue-and-transition arc.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Landon everyone welcomed home was actually Malivore wearing his face. Malivore has now revealed himself, taken Cleo, and demands his supernatural children back — and Hope, Alaric and the Super Squad have no plan.",
+        "questions": [
+          "Where is the real Landon, and is he still alive inside Malivore?",
+          "Can Hope defeat Malivore without dying to complete her tribrid transition?",
+          "What does Malivore actually want from Cleo?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Hope Mikaelson",
+          "line": "Awake and functional; still not a full tribrid, and has just lost Landon for the second time."
+        },
+        {
+          "name": "Landon Kirby",
+          "line": "The real one — hardened by the prison world, revealed as the skull-masked hunter — now captured by Malivore."
+        },
+        {
+          "name": "\"Landon\" / Malivore",
+          "line": "The Landon who returned from the prison world was Malivore in disguise the whole time, and has now revealed himself."
+        },
+        {
+          "name": "Alaric Saltzman",
+          "line": "Headmaster again, allied with Hope in the confrontation with Malivore."
+        },
+        {
+          "name": "Lizzie Saltzman",
+          "line": "Dating Mystic Falls High's Ethan; steadier than she has been in years."
+        },
+        {
+          "name": "Josie Saltzman",
+          "line": "Has her magic back and is dating werewolf Finch; healthier than she has ever been."
+        },
+        {
+          "name": "MG",
+          "line": "Vampire student, becoming a genuine hero alongside Kaleb."
+        },
+        {
+          "name": "Cleo",
+          "line": "A muse who once escaped Malivore; has just been taken back by him."
+        },
+        {
+          "name": "Kaleb",
+          "line": "Vampire, dating Cleo, part of MG's new hero mode."
+        },
+        {
+          "name": "Ethan",
+          "line": "Human friend from Mystic Falls High whose memory of the supernatural was erased; asks Lizzie out at season's end."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Humanity Off",
+          "text": "Hope kills Landon to end Malivore, completing her transition into the full tribrid. Devastated, she switches off her humanity and vanishes.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The season's engine — no-humanity Hope drives every plot line until the very end.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Aurora and a Dead Twin",
+          "text": "Aurora, an ancient vampire secretly monitoring the new tribrid, makes her move. Hope kills Lizzie in the fallout, turning her into a heretic sired to Hope.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Introduces the season's human antagonist and gives Lizzie the leverage she uses to save Hope.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The Sleeping Gods",
+          "text": "Two Gods, Ben and Jen, arrive at the school. Their siblings sleep in sarcophagi and Ben holds the only key, kept inside Malivore for safety.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Introduces the season's larger threat and the mythology that will drive the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Two Broken Girls",
+          "text": "Lizzie treats her captive Aurora with unexpected kindness; they bond over shared trauma and escape together, while Hope's humanity slowly returns.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The relationship that both cracks Hope's sire-bond and reroutes Aurora toward her sacrifice.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Ken Awakens",
+          "text": "Ben betrays them: he wakes his father Ken, king of the Gods, hoping Ken will resurrect his dead boyfriend. Ken instead vows to kill Hope and reclaim magic.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "Turns Ben into an ally-turned-enemy and unleashes the antagonist for the final battle.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The Cost of the Battle",
+          "text": "In the final battle Ken triggers the werewolf curses across the school; Jed, MG, Kaleb and Ethan die. Landon, now the Ferryman of Limbo, resurrects them at the cost of his empathy.",
+          "anchorEpisode": 19,
+          "whyLoadBearing": "The deaths and their reversal define Landon's ending and the price of victory.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · A Fury Ends a God",
+          "text": "Cleo, revealed as a Fury, teams with Hope to kill Ken. Alaric hands the school to Caroline and leaves to write its history; Hope welcomes the new class home.",
+          "anchorEpisode": 20,
+          "whyLoadBearing": "Resolves the series — Cleo as the school's future, Alaric's exit, and Hope stepping into her father figure's role.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ken is dead, Landon serves as the Ferryman of Limbo, and Alaric has left to write the definitive history of the supernatural. Hope has put her necklace back on and, alongside Caroline, welcomes a new class of witches, vampires and werewolves to the Salvatore School.",
+        "questions": [
+          "Can Hope find peace as a caretaker after everything her humanity-off self did?",
+          "Will Landon truly be content bound to Limbo as its Ferryman?",
+          "What awaits the next generation of Salvatore students under Hope and Caroline?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Hope Mikaelson",
+          "line": "Full tribrid with her humanity restored; helps Caroline welcome the next class of Salvatore students."
+        },
+        {
+          "name": "Landon Kirby",
+          "line": "Killed by Hope, now permanently bound to Limbo as its Ferryman; content, but no longer capable of empathy."
+        },
+        {
+          "name": "Alaric Saltzman",
+          "line": "Left the school in Caroline's hands to write the history of the supernatural beings he has known."
+        },
+        {
+          "name": "Lizzie Saltzman",
+          "line": "Heretic; chose to stay with MG rather than follow Josie to Belgium."
+        },
+        {
+          "name": "MG",
+          "line": "In love with Lizzie, one of the school's new heroes."
+        },
+        {
+          "name": "Cleo",
+          "line": "Revealed as a Fury; helped Hope kill Ken, and is implied to be the school's future headmaster."
+        },
+        {
+          "name": "Aurora",
+          "line": "Ancient vampire who bonded with Lizzie over shared trauma before sacrificing herself for Hope; given a Viking funeral."
+        },
+        {
+          "name": "Ben",
+          "line": "Former God (Prometheus), now mortal; left the school with Jed after Ken's fall."
+        },
+        {
+          "name": "Ken",
+          "line": "King of the Gods, who tried to reclaim magic and wipe out the school; killed by Hope and Cleo."
+        }
+      ]
+    }
+  }
+}

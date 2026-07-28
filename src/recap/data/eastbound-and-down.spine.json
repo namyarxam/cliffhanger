@@ -1,0 +1,89 @@
+{
+  "slug": "eastbound-and-down",
+  "generatedFor": "Eastbound & Down",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Home in disgrace",
+          "text": "Washed-up MLB pitcher Kenny Powers slinks back to his North Carolina hometown expecting a hero's welcome, and takes a substitute gym teacher job at his old middle school.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the premise — the fall from grace and the reluctant return that frames every relationship this season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · April, engaged",
+          "text": "Kenny discovers his teenage flame April Buchanon teaches at the same school, and is engaged to the principal Terrence Cutler — Kenny's new boss.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the central love triangle and the workplace power dynamic that drives every subsequent conflict.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Stevie in tow",
+          "text": "After a drunken car crash, Kenny pins the blame on adoring music teacher Stevie Janowski and rewards him by taking him on as a devoted personal assistant.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Locks in the Kenny–Stevie dynamic — the sidekick who enables everything Kenny does going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Comeback plan",
+          "text": "Kenny quietly restarts steroids and has Stevie cut a highlight DVD, chasing an MLB return while pretending to April that teaching gym is a temporary detour.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The comeback obsession is the engine of the season and the reason he ultimately leaves town.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Terrence humiliates him",
+          "text": "At a barbecue, a drunk Terrence dismantles Kenny as a has-been in front of April and their friends, and Kenny abandons the comeback in shame.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The lowest point that pushes him toward April and away from baseball — sets up the brief opening with her.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · April chooses Kenny",
+          "text": "With baseball behind him, Kenny finally wins April over from Terrence, and the two prepare to leave town together for a new start.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Makes the ending's betrayal land — she picked him, and he throws that away for the phantom contract.",
+          "needsVerify": true
+        },
+        {
+          "label": "S1 · Contract, then no contract",
+          "text": "A Tampa Bay Rays scout offers Kenny a contract, then calls back to admit he was high on cocaine and had no authority. Kenny dumps April at a gas station and drives off alone rather than face the truth.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The season-ending choice — Kenny abandons April and his hometown chasing a comeback that already collapsed.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Kenny has ditched April at a gas station and driven off into the night, too proud to admit the Tampa deal fell through. Everyone he left behind still believes he is on his way to the majors.",
+        "questions": [
+          "Where does Kenny go when he can't go home and can't go to Tampa?",
+          "What happens to April when she realises she's been abandoned for a lie?",
+          "Can Kenny actually engineer a comeback, or is this the end of baseball for him?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Kenny Powers",
+          "line": "Washed-up MLB pitcher back in his North Carolina hometown as a substitute gym teacher, secretly chasing a comeback and too proud to admit when it fails."
+        },
+        {
+          "name": "April Buchanon",
+          "line": "Kenny's teenage flame, now a teacher at his old school; broke off her engagement to Terrence for Kenny, only to be abandoned at a gas station."
+        },
+        {
+          "name": "Stevie Janowski",
+          "line": "The middle school music teacher turned worshipful personal assistant, willing to take the fall for Kenny's crimes."
+        },
+        {
+          "name": "Terrence Cutler",
+          "line": "The school principal, April's now-ex-fiancé and Kenny's boss, who publicly exposed Kenny as a has-been."
+        },
+        {
+          "name": "Cassie Powers",
+          "line": "Kenny's put-upon sister-in-law, whose house he crashes at and who handles his memorabilia sales."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "slug": "star-trek-strange-new-worlds",
+  "generatedFor": "Star Trek: Strange New Worlds",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Pike takes the chair",
+          "text": "Pike, haunted by a vision of his own future paralysis, reluctantly returns to command the Enterprise on a new five-year mission of exploration.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Pike's private knowledge of his fate — the weight he carries under every command decision the season makes.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Number One's secret",
+          "text": "Number One is revealed as a genetically engineered Illyrian, banned by the Federation; Pike refuses her resignation and helps her hide it.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The lie both are now keeping is the direct fuse for the season-ending arrest and everything the trial will decide next.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Gorn wake up",
+          "text": "A Gorn ambush pushes the ship to its limits and dredges up La'An's childhood trauma, installing the Gorn as a lurking, murderous threat.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Introduces the villain who will define the show's largest continuing conflict and gives La'An her defining wound.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Spock, T'Pring, Chapel",
+          "text": "Spock, engaged to Vulcan T'Pring, keeps stumbling into closeness with nurse Chapel — even faking an affair with her to shield T'Pring from pirates.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The triangle that will drive Spock's personal storyline forward; the fake affair plants a real feeling neither is admitting.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Hemmer's sacrifice",
+          "text": "Engineer Hemmer is infected with Gorn hatchlings and throws himself to his death; his last words push a wavering Uhura to commit to a Starfleet career.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Removes a crewmate and converts Uhura's arc from ambivalent cadet to committed officer for everything that follows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Pike accepts his fate",
+          "text": "A future Pike shows him that dodging his accident triggers Spock's death and war with the Romulans; Pike accepts the paralysis as the price of both.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Locks in Pike's private resolution — he now serves knowing the ending, which colours every choice he makes.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Arrest on the bridge",
+          "text": "Captain Batel of the USS Cayuga boards the Enterprise and arrests Number One for being Illyrian — the secret Pike kept has finally reached Starfleet.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "This is the cliffhanger the next season opens on: Number One in custody, Pike exposed as her protector.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Number One is under arrest for being Illyrian, and Pike quietly carries the certainty that his own paralysis is the price of saving Spock and preventing war.",
+        "questions": [
+          "Can Number One survive a Starfleet trial for hiding what she is?",
+          "How does Pike keep leading the crew now that he knows exactly when disaster comes for him?",
+          "What will the Gorn do after being tricked into thinking the Enterprise was destroyed?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Christopher Pike",
+          "line": "Captain of the Enterprise, privately certain his future holds a paralysing accident that saves lives and prevents war."
+        },
+        {
+          "name": "Una Chin-Riley (Number One)",
+          "line": "First officer just arrested for concealing that she is a genetically engineered Illyrian."
+        },
+        {
+          "name": "Spock",
+          "line": "Vulcan science officer engaged to T'Pring, but visibly closer to nurse Chapel than either will admit aloud."
+        },
+        {
+          "name": "La'An Noonien-Singh",
+          "line": "Security chief and Gorn-massacre survivor, currently on leave escorting a rescued refugee home."
+        },
+        {
+          "name": "Nyota Uhura",
+          "line": "Cadet who has just committed fully to a Starfleet career after Hemmer's dying encouragement."
+        },
+        {
+          "name": "Christine Chapel",
+          "line": "Field-medicine nurse whose bond with Spock has quietly deepened into something neither has yet named."
+        },
+        {
+          "name": "Joseph M'Benga",
+          "line": "Chief medical officer whose terminally ill daughter Rukiya now lives on as an energy being inside a sentient nebula."
+        },
+        {
+          "name": "T'Pring",
+          "line": "Vulcan attorney and Spock's fiancée, working to rehabilitate criminals like the imprisoned Sybok."
+        },
+        {
+          "name": "Marie Batel",
+          "line": "Captain of the USS Cayuga, sent by Starfleet to arrest Number One."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Spock steals the ship",
+          "text": "With Pike off recruiting Number One's defence, Spock disobeys Admiral April and steals the Enterprise to rescue La'An and stop a false-flag war with the Klingons.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Puts Spock in command for the first time, brings Pelia aboard as the new engineer, and closes off a wider war so the season can focus inward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Trial by asylum",
+          "text": "A civil rights attorney argues Number One effectively sought asylum in Starfleet as a persecuted Illyrian; the court acquits her and she returns to duty.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Resolves the season-opening arrest and restores the crew's first officer without breaking Pike or the ship.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · La'An and a broken timeline",
+          "text": "A dying stranger's device sends La'An to an alternate past where she falls for a different James Kirk, saves a young Khan, and returns to a Kirk who does not remember her.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Plants La'An's unrequited feelings for Kirk — a private thread that will shape every scene the two share afterwards.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Spock turned human",
+          "text": "Briefly made fully human by aliens, Spock finally kisses Chapel; T'Pring, wounded by the deception around it, asks for a break from their engagement.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Ends Spock's engagement and opens the Chapel relationship on the record, so the season's remaining Chapel-Spock choices land.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · M'Benga's private war",
+          "text": "Visiting Klingon ambassador Dak'Rah is unmasked by M'Benga as the true author of the J'Gal massacre; M'Benga stabs him dead and tells Pike he does not regret it.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Puts M'Benga on the wrong side of Klingon honour and gives him a killing that no one else knows the truth of — a secret that will follow him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Sing your feelings",
+          "text": "A subspace anomaly makes the crew sing what they're hiding: Chapel picks her new fellowship over Spock, and La'An confesses to Kirk — who is with Carol Marcus.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "In one episode the Chapel-Spock and La'An-Kirk threads are both put on the record and both left unresolved.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Gorn strike",
+          "text": "The Gorn destroy Batel's ship and infect her with eggs; they capture La'An, M'Benga, and Ortegas, and Pike is caught between Starfleet's orders and his crew.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The cliffhanger the next season opens on — Batel dying, half the senior staff in Gorn hands, Pike on the edge of open disobedience.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Cayuga is destroyed, Batel is dying with Gorn eggs inside her, and La'An, M'Benga, Ortegas, and Sam Kirk are Gorn captives. Pike has been ordered to retreat but cannot leave them.",
+        "questions": [
+          "Will Pike defy Starfleet and cross into Gorn space to save his crew?",
+          "Can Spock and Chapel neutralise Batel's Gorn eggs before they hatch?",
+          "What does the Gorn homeworld actually look like, and can anyone come back from it?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Christopher Pike",
+          "line": "Captain forced to choose between Starfleet's order to retreat and rescuing crew captured by the Gorn."
+        },
+        {
+          "name": "Marie Batel",
+          "line": "Pike's girlfriend, captain of the destroyed Cayuga, now aboard the Enterprise and infected with Gorn eggs."
+        },
+        {
+          "name": "Spock",
+          "line": "Science officer, single after T'Pring called for a break, having kissed Chapel just before she left for her fellowship."
+        },
+        {
+          "name": "Christine Chapel",
+          "line": "Left the Enterprise for a prestigious research fellowship, choosing her career over the relationship she had just opened with Spock."
+        },
+        {
+          "name": "Una Chin-Riley (Number One)",
+          "line": "First officer, acquitted at trial and openly serving as a genetically engineered Illyrian."
+        },
+        {
+          "name": "La'An Noonien-Singh",
+          "line": "Security chief carrying a secret love for a James Kirk who does not remember her, plus the knowledge that she saved young Khan."
+        },
+        {
+          "name": "James T. Kirk",
+          "line": "Executive officer of the USS Farragut, in a relationship with Carol Marcus, increasingly a fixture around the Enterprise crew."
+        },
+        {
+          "name": "Joseph M'Benga",
+          "line": "Chief medical officer who has quietly killed Klingon Ambassador Dak'Rah in revenge for the J'Gal massacre."
+        },
+        {
+          "name": "Pelia",
+          "line": "Long-lived new chief engineer of the Enterprise, matter-of-fact about how much history she has seen."
+        },
+        {
+          "name": "Erica Ortegas",
+          "line": "Enterprise pilot, captured by the Gorn during the Cayuga rescue."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Rescue at the Gorn homeworld",
+          "text": "Defying Starfleet, Pike raids the hidden Gorn homeworld and pulls the captured crew out; Number One's Illyrian blood is used to neutralise the eggs inside Batel.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Closes the cliffhanger and saves Batel, but Ortegas comes home traumatised — a wound the season will keep pressing on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Chapel comes back with someone",
+          "text": "Chapel returns to the ship with a new partner, archaeologist Roger Korby, dashing Spock's hopes; an extradimensional child briefly rewrites reality into their wedding before both remember.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Formally shuts the Spock-Chapel door and frees Spock to drift toward someone else later in the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Batel's Gorn bargain",
+          "text": "Dak'Rah's daughter Bytha hunts M'Benga for revenge; he confesses the killing, defeats her in a duel, and Batel chooses to become a human-Gorn hybrid rather than die.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Resolves M'Benga's blood debt and changes what Batel is at a cellular level — the setup for how she saves everyone at the end.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The Vezda in the buffer",
+          "text": "An archaeological expedition unleashes the Vezda, parasitic beings that possess young Dr. Gamble; Scotty traps the surviving spirit inside the transporter pattern buffer.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Introduces the season-long villain and quietly stores it aboard the ship, so its escape drives the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Spock and La'An",
+          "text": "Over months of quiet dance lessons, La'An and Spock grow close; on a broken holodeck she outmanoeuvres a hologram of him, then kisses the real one.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The new pairing that replaces both Spock's engagement and his hopes with Chapel — the relationship the next season inherits.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ortegas and the Gorn she liked",
+          "text": "Marooned with a lone Gorn pilot, Ortegas bonds with her; on rescue La'An shoots the Gorn on sight, and a hidden Metron decides humans and Gorn are not yet ready for peace.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Ortegas is left privately grieving a friend her own crewmate killed, and the Gorn conflict is explicitly extended by an outside power.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Batel becomes the Beholder",
+          "text": "The Vezda escapes and Batel absorbs its prison into herself, becoming its new Beholder; she gives Pike an illusion of a shared life, then is gone as the ship heads into the unknown.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Removes Batel from the board and leaves Pike alone at the start of the exploration mandate that opens the next stretch of the show.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Batel has fused herself with the Vezda prison to save Pike and the ship, and the Enterprise heads back into uncharted space with Pike hollowed out by her loss.",
+        "questions": [
+          "Is any part of Marie Batel still herself inside the Beholder, and can Pike ever reach her?",
+          "Will Spock and La'An's new closeness survive Chapel being back aboard with Korby?",
+          "What does Ortegas do the day she realises La'An shot the friend she was mourning?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Christopher Pike",
+          "line": "Captain grieving Batel as the Enterprise sets out to explore uncharted planets."
+        },
+        {
+          "name": "Marie Batel",
+          "line": "Sacrificed herself to become the Vezda Beholder, trapped in the extradimensional prison to keep the parasites contained."
+        },
+        {
+          "name": "Spock",
+          "line": "Science officer who has quietly kissed La'An after months of dance lessons, and has lost Chapel to Korby for good."
+        },
+        {
+          "name": "Christine Chapel",
+          "line": "Nurse back aboard the Enterprise, now openly partnered with Dr. Roger Korby."
+        },
+        {
+          "name": "La'An Noonien-Singh",
+          "line": "Security chief in a new closeness with Spock, and does not yet know the Gorn she executed on sight was Ortegas's friend."
+        },
+        {
+          "name": "Erica Ortegas",
+          "line": "Pilot still scarred by Gorn captivity and secretly grieving a Gorn friend one of her own crewmates killed."
+        },
+        {
+          "name": "Joseph M'Benga",
+          "line": "Chief medical officer whose blood debt with Dak'Rah's family closed when he killed Bytha in a duel."
+        },
+        {
+          "name": "Una Chin-Riley (Number One)",
+          "line": "First officer whose Illyrian blood was used to save Batel from the Gorn eggs."
+        },
+        {
+          "name": "James T. Kirk",
+          "line": "Increasingly integrated into the Enterprise crew, having commanded her briefly during the scavenger crisis."
+        },
+        {
+          "name": "Roger Korby",
+          "line": "Renowned archaeologist and Chapel's partner, now travelling with the Enterprise."
+        }
+      ]
+    }
+  }
+}

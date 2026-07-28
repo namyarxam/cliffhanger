@@ -1,0 +1,212 @@
+{
+  "slug": "lord-of-the-rings-the-rings-of-power",
+  "generatedFor": "The Lord of the Rings: The Rings of Power",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The hunt continues",
+          "text": "Galadriel jumps ship rather than sail to Valinor's eternal peace, defying Gil-galad's decree ending the war and vowing to keep hunting Sauron alone.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the obsession that will lead her to Sauron and set the whole ring plot in motion.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A king in exile",
+          "text": "Rescued by Númenórean sailors, she befriends Halbrand, a Southlander shipwreck survivor she believes is the lost heir to the Southlands throne.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces the man she trusts and champions — whose identity is the season's central deception.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Númenor sails",
+          "text": "Galadriel convinces Queen Regent Míriel to send Númenor's fleet to the Southlands, breaking centuries of estrangement between Men and Elves.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Ends Númenor's isolation and puts its army on Middle-earth for the first time in an age.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Mordor is made",
+          "text": "Adar's plan works: Waldreg unlocks a dam that floods Orc tunnels beneath Mount Doom, erupting the volcano and scorching the Southlands into Mordor.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The map of Middle-earth changes; Númenor is blinded and radicalised, and the Orcs have a homeland.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Mithril and mistrust",
+          "text": "Elrond discovers Khazad-dûm's secret mithril, which Gil-galad believes can save the fading Elves; when Durin III seals the mine, Elrond smuggles a piece out.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The one ingredient that makes the rings possible, and the rift with the Dwarves it opens.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A wizard in the wild",
+          "text": "Among the Harfoots, Nori shelters the Stranger fallen from a meteor; three robed hunters chase them, and the Stranger learns he is a Wizard bound for Rhûn.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Opens the entirely separate Rhûn plotline and the amnesiac wizard the show will keep circling.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Three rings, one lie",
+          "text": "Recovering in Eregion, Halbrand shapes Celebrimbor's forge; Galadriel unmasks him as Sauron too late — three Elven Rings are already forged.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The rings exist and their maker's ally is the Dark Lord — the secret Galadriel now carries alone.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The three Elven Rings have been forged with Sauron's guidance and no one but Galadriel and Elrond knows it. Sauron has fled Eregion, the Southlands are now Mordor, and Númenor has vowed to return for vengeance.",
+        "questions": [
+          "Are the Elven Rings safe to wear if Sauron helped design them?",
+          "Where has Sauron gone next, and in whose face?",
+          "Will Galadriel confess her part in this before the rings do their work?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Galadriel",
+          "line": "Elven commander who defied Gil-galad to hunt Sauron and unwittingly delivered him to Celebrimbor's forge; now carries that secret."
+        },
+        {
+          "name": "Halbrand / Sauron",
+          "line": "The Dark Lord, wearing the face of a Southlander king to reach Eregion; unmasked by Galadriel and fled toward Mordor."
+        },
+        {
+          "name": "Elrond",
+          "line": "Half-Elf herald who brokered the mithril alliance and worked out Halbrand's identity from lineage records — too late to stop the forging."
+        },
+        {
+          "name": "Celebrimbor",
+          "line": "Elven master-smith of Eregion who forged the three Rings of Power, still unaware that his collaborator was Sauron."
+        },
+        {
+          "name": "Gil-galad",
+          "line": "High King of the Elves, who declared the war over and pushed for the rings to halt his people's fading."
+        },
+        {
+          "name": "Prince Durin IV",
+          "line": "Dwarf prince stripped of royal status for revealing mithril to Elrond; loyal to his friend over his father, King Durin III."
+        },
+        {
+          "name": "Queen Regent Míriel",
+          "line": "Ruler of Númenor, blinded in the eruption at Mount Doom, returning home vowing vengeance against the Orcs."
+        },
+        {
+          "name": "Adar",
+          "line": "Father of the Orcs, who engineered the Mordor eruption to give his children a homeland; captured by Galadriel and taken by the Númenóreans."
+        },
+        {
+          "name": "The Stranger",
+          "line": "Amnesiac Wizard fallen from the sky, who has just banished his three robed hunters and set out east for Rhûn."
+        },
+        {
+          "name": "Nori Brandyfoot",
+          "line": "Harfoot who befriended the Stranger and left her caravan to guide him toward whatever he is meant to become."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · The rings go on",
+          "text": "Elrond flees with the three Elven Rings to Círdan, who calls them true perfection; Gil-galad, Galadriel and Círdan wear them and Elven power is restored.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The Elves commit to using Sauron-touched rings despite Elrond's warning — the choice everything downstream rests on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Annatar walks in",
+          "text": "Sauron returns to Eregion in a new fair form as Annatar, 'Lord of Gifts' sent by the Valar; Celebrimbor does not recognise him and agrees to forge more rings.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The whole Eregion tragedy hinges on Celebrimbor accepting this stranger; his blindness here drives the rest of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Seven for the Dwarves",
+          "text": "Durin III accepts a Dwarven Ring to rebuild Khazad-dûm; it turns him greedy, and his renewed mining reaches toward a Balrog sleeping beneath the mountain.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Shows the rings corrupting on contact and stirs the ancient evil under the Dwarves' city.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Númenor turns",
+          "text": "In Númenor, Ar-Pharazôn seizes the throne after learning Sauron manipulated Míriel; the Faithful are persecuted, Elendil is arrested, and Pelargir taken as a military outpost.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Númenor flips from potential ally to hostile power — a whole front the Elves can no longer count on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Stranger is Gandalf",
+          "text": "Guided by Tom Bombadil, the Stranger finds a wizard's staff and believes he will be called Gandalf; Nori and Poppy join migrating Stoors after their canyon is destroyed.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Names the wizard and rejects the Dark Wizard's offer to supplant Sauron — Gandalf's alignment is now set.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Nine of blood",
+          "text": "Sauron traps Celebrimbor in illusion and forges nine Rings for Men using his own blood in place of mithril; Celebrimbor realises the deception too late to undo it.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The nine now exist and are tainted from birth — the future Nazgûl are on the table.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Eregion falls",
+          "text": "Adar's Orcs besiege Eregion; Sauron kills Celebrimbor and seizes the nine, Adar is murdered by his own Orcs, and Elven survivors flee to a hidden valley to make their stand.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Eregion is lost, the smith is dead, Sauron holds the nine, and Adar — the only other check on him — is gone.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Sauron now holds the nine Rings for Men, Eregion has fallen, and Celebrimbor is dead. The surviving Elves have retreated to a hidden valley, Númenor has slid into open hostility toward the Faithful, and Elendil has fled west with the sword Narsil.",
+        "questions": [
+          "To whom will Sauron give the nine, and what will they become in his service?",
+          "Can the Elves' hidden valley hold when Sauron brings war to it?",
+          "Will Elendil and the Faithful rise against Ar-Pharazôn before he crushes them?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Sauron",
+          "line": "Wore Annatar's face to trick Celebrimbor into forging the nine using his blood; now holds them after sacking Eregion."
+        },
+        {
+          "name": "Galadriel",
+          "line": "Bearer of Nenya; captured by Adar, freed by Arondir, briefly carried the nine before Sauron took them from Elrond."
+        },
+        {
+          "name": "Elrond",
+          "line": "Led the Elven relief force with Gil-galad; wielded Nenya, saw Eregion fall, and now regroups with the survivors."
+        },
+        {
+          "name": "Celebrimbor",
+          "line": "Elven master-smith of Eregion, tricked by Annatar into forging the nine tainted Rings for Men and killed by Sauron."
+        },
+        {
+          "name": "Gil-galad",
+          "line": "High King of the Elves, who now leads the survivors of Eregion in the hidden valley preparing to stand against Sauron."
+        },
+        {
+          "name": "Prince Durin IV",
+          "line": "Newly crowned Dwarf king after his father was killed by the Balrog; sent his army in time to cover the Elves' retreat, not to save Eregion."
+        },
+        {
+          "name": "Ar-Pharazôn",
+          "line": "Usurper king of Númenor who discredited Míriel with proof of Sauron's manipulation and is now cracking down on the Faithful."
+        },
+        {
+          "name": "Míriel",
+          "line": "Deposed queen; survived the trial by abyss and was hailed Queen of the Sea, then discredited and imprisoned with the Faithful."
+        },
+        {
+          "name": "Elendil",
+          "line": "Númenórean captain of the Faithful; refused to swear to Ar-Pharazôn and escaped west with the sword Narsil."
+        },
+        {
+          "name": "Gandalf (the Stranger)",
+          "line": "Wizard who has claimed his staff, remembered his name, and rejected the Dark Wizard's offer to help him supplant Sauron."
+        }
+      ]
+    }
+  }
+}

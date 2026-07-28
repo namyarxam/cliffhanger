@@ -1,0 +1,303 @@
+{
+  "slug": "twin-peaks",
+  "generatedFor": "Twin Peaks",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Laura on the beach",
+          "text": "Laura Palmer's body washes up in Twin Peaks. FBI Agent Dale Cooper arrives, linking her murder to an earlier killing marked with a letter under the fingernail.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the entire premise: the murder, the investigator, and a serial-killer hypothesis.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Double life",
+          "text": "Cooper unearths Laura's double life—cocaine, an affair with James, prostitution ads—while suspects like violent dealer Leo Johnson and shrink Dr. Jacoby emerge.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The gap between public Laura and private Laura is the engine that drives every following thread.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Red Room dream",
+          "text": "In a Red Room dream Cooper meets the spirit BOB, who vows to kill again. Sarah Palmer's waking vision of the same figure suggests he is real, not a figment.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces the supernatural layer that will define the show and names the actual killer.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Maddy and One Eyed Jacks",
+          "text": "Laura's lookalike cousin Maddy Ferguson arrives for the funeral. Audrey Horne goes undercover at One Eyed Jacks, her father Ben's secret casino-brothel.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Sets up the two women whose fates carry S2's most consequential violence and rescue.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Jacques and Leland",
+          "text": "Cooper traces a poker chip to One Eyed Jacks and busts trafficker Jacques Renault. Leland Palmer, unhinged by grief, suffocates Jacques in his hospital bed.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Removes the apparent prime suspect and quietly shows Leland is more dangerous than anyone realises.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The mill deal",
+          "text": "Ben Horne pays Leo to torch the sawmill with Catherine inside for insurance, while Hank Jennings shoots Leo to silence him and take the drug trade back.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Puts Ben, Leo, Catherine and Hank on collision courses that all detonate in the cliffhanger.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Three shots in the dark",
+          "text": "The mill burns with Catherine and Shelly trapped, Audrey is delivered to her own father at One Eyed Jacks, and Cooper is shot in his hotel room by an unseen assailant.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The literal opening frame of S2 — every S2 storyline picks up from one of these three disasters.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Cooper lies bleeding on his hotel floor while the mill burns down around Catherine and Shelly. Laura's real killer is still at large, and Audrey has been trafficked to her own father.",
+        "questions": [
+          "Who shot Cooper, and why?",
+          "If Leo and Jacques were framed, who actually killed Laura Palmer?",
+          "Did anyone survive the mill fire?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Dale Cooper",
+          "line": "Idiosyncratic FBI agent leading the Laura Palmer investigation; shot by an unseen assailant in his hotel room."
+        },
+        {
+          "name": "Harry S. Truman",
+          "line": "The steady Sheriff of Twin Peaks and Cooper's local partner, tied into the town's secret Bookhouse Boys."
+        },
+        {
+          "name": "Laura Palmer",
+          "line": "Homecoming queen whose murder opened the case; secretly addicted, abused, and being pimped through Ben's brothel."
+        },
+        {
+          "name": "Leland Palmer",
+          "line": "Laura's father, visibly cracking with grief and hiding that he suffocated Jacques Renault in revenge."
+        },
+        {
+          "name": "Ben Horne",
+          "line": "Ruthless businessman who owns the Great Northern and the One Eyed Jacks brothel, and just paid to have the sawmill burned."
+        },
+        {
+          "name": "Audrey Horne",
+          "line": "Ben's infatuated teenage daughter; went undercover at One Eyed Jacks and was unknowingly presented to Ben as her first client."
+        },
+        {
+          "name": "Maddy Ferguson",
+          "line": "Laura's brunette cousin, in town for the funeral and staying at the Palmer house — an almost exact Laura lookalike."
+        },
+        {
+          "name": "BOB",
+          "line": "Long-haired malevolent spirit Cooper met in his Red Room dream, and whom Sarah Palmer saw wide awake in her own home."
+        },
+        {
+          "name": "Leo Johnson",
+          "line": "Violent trucker at the centre of the town's cocaine trade; shot by Hank Jennings in his living room as the mill burned."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · A third killer",
+          "text": "Cooper survives the shooting and, aided by a Giant's cryptic clues, deduces that neither Leo nor Jacques killed Laura. A third man, BOB, is still loose.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Resets the investigation from a solved case into a hunt for the supernatural entity the show's actually about.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · MIKE names BOB",
+          "text": "The one-armed shoe salesman is possessed by MIKE, who names BOB as his old partner in murder and places him inside the Great Northern Hotel.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Turns BOB from a dream-figure into a concrete suspect with a location, driving the season toward the Palmers.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Maddy in the living room",
+          "text": "Leland, possessed by BOB, drugs Sarah and murders Maddy in the Palmer living room while Cooper senses at the Roadhouse that 'it is happening again.'",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The season's central act of violence — the moment the audience learns what BOB has been doing inside the Palmer house.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Leland exposed",
+          "text": "Cooper corners Leland at the Sheriff's Station, where BOB abandons him. Dying, Leland confesses to killing Laura; Cooper warns that BOB has simply fled his host.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Closes the Laura case and, in the same breath, opens the door for BOB to roam freely — the setup the whole finale runs on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Windom Earle emerges",
+          "text": "Cooper's insane former FBI partner Windom Earle emerges in the woods, staging real murders as chess moves to bait Cooper into playing his game.",
+          "anchorEpisode": 14,
+          "whyLoadBearing": "Introduces the human antagonist who will drag Cooper into the Black Lodge in the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Annie, the pageant, the bank",
+          "text": "Cooper falls for Annie Blackburn as Earle targets the Miss Twin Peaks winner. Audrey chains herself in protest at the bank as Andrew and Pete open a bomb Eckhardt left.",
+          "anchorEpisode": 21,
+          "whyLoadBearing": "Puts every surviving major character in place for the finale's two simultaneous disasters.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Into the Black Lodge",
+          "text": "Earle abducts Annie into the Black Lodge; Cooper follows and rescues her, but returns possessed by BOB and smashes his head into a mirror, grinning.",
+          "anchorEpisode": 22,
+          "whyLoadBearing": "The cliffhanger the entire revival is built on — the wrong Cooper walks back out.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Cooper has walked out of the Black Lodge with BOB inside him. Audrey lies in the smoke of the bank bombing, Annie is left wounded, and the real Cooper's whereabouts are unknown.",
+        "questions": [
+          "Is the real Cooper trapped in the Black Lodge?",
+          "What will BOB do wearing an FBI agent's face?",
+          "Did Audrey and Annie survive?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Dale Cooper",
+          "line": "Rescued Annie from the Black Lodge but returned to our world possessed by BOB; the real Cooper's fate is unclear."
+        },
+        {
+          "name": "BOB",
+          "line": "The murderous spirit who used Leland to kill Laura and Maddy; after Leland's death he has taken Cooper's body as his new host."
+        },
+        {
+          "name": "Harry S. Truman",
+          "line": "Sheriff of Twin Peaks, grieving Josie's death and now uncertain what has come back from the woods wearing Cooper's face."
+        },
+        {
+          "name": "Leland Palmer",
+          "line": "Laura's father, revealed as BOB's host and Laura's true killer; died in Cooper's arms once BOB abandoned him."
+        },
+        {
+          "name": "Sarah Palmer",
+          "line": "Laura and Leland's widow, prone to visions of BOB; her voice was hijacked to warn Major Briggs that Cooper is 'in the Black Lodge.'"
+        },
+        {
+          "name": "Annie Blackburn",
+          "line": "Norma's ex-nun half-sister and Cooper's new love; abducted into the Lodge by Earle and returned wounded to a hospital."
+        },
+        {
+          "name": "Audrey Horne",
+          "line": "Chained to the vault of the Twin Peaks Savings and Loan when Thomas Eckhardt's bomb detonated, caught in the blast."
+        },
+        {
+          "name": "Ben Horne",
+          "line": "The town's businessman, revealed as Donna Hayward's likely biological father and violently attacked by Doc Hayward for it."
+        },
+        {
+          "name": "Major Garland Briggs",
+          "line": "Air Force officer touched by the White Lodge, bearing three scars behind his ear; the closest thing anyone has to a map of the Lodges."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Two Coopers, 25 years on",
+          "text": "Cooper remains trapped in the Black Lodge. His doppelgänger, still hosting BOB, has manufactured a tulpa named Dougie Jones to dodge his forced return to the Lodge.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the entire premise of the revival and explains why Cooper doesn't just walk out.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Dougie in Las Vegas",
+          "text": "Cooper escapes into Dougie's life in Las Vegas but with total amnesia, drifting near-catatonic through Dougie's family, his workplace, and Dougie's mob debts.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Explains why Cooper is offstage for most of the season — his identity is missing, not just his body.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The case reopens",
+          "text": "In Twin Peaks, Hawk finds Laura's missing diary pages warning the good Cooper is trapped in the Lodge. In Buckhorn, Major Briggs's decapitated body surfaces.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Reconnects Twin Peaks, the FBI's Blue Rose team, and the Buckhorn murders into one investigation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The bomb and the orb",
+          "text": "A 1945 flashback shows the first atomic bomb birthing the evil that made BOB. The Fireman answers by sending an orb bearing Laura Palmer's face down to Earth.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The mythological pivot that reframes Laura as a countermeasure to BOB, not a random victim.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Cooper wakes up",
+          "text": "Electrocuted at home, Cooper suddenly recovers his identity and flies with the Mitchum brothers back to Twin Peaks to confront the doppelgänger who has been living his life.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "Ends the season-long stall and puts Cooper on a collision course with his doppelgänger at the Sheriff's Station.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · BOB destroyed",
+          "text": "At the Sheriff's Station, Lucy shoots the doppelgänger and security guard Freddie smashes BOB's orb with a magic glove, finally killing the demon that murdered Laura Palmer.",
+          "anchorEpisode": 17,
+          "whyLoadBearing": "The confrontation the show has been building toward since 1990 — BOB is gone.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · What year is this?",
+          "text": "Cooper travels back to 1989 to save Laura. In a warped timeline he drives 'Carrie Page,' who resembles her, to the Palmer house; Carrie's scream cuts the power.",
+          "anchorEpisode": 18,
+          "whyLoadBearing": "The final image — Cooper's rescue attempt appears to have unmade the reality he came from.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Cooper stands in the street outside a Palmer house that isn't the Palmer house, holding a screaming woman who may or may not be Laura. He asks, 'What year is this?'",
+        "questions": [
+          "Is Carrie Page actually Laura in a rewritten timeline?",
+          "What year — and what world — is Cooper standing in?",
+          "Did his attempt to save Laura destroy the reality he came from?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Dale Cooper",
+          "line": "The real Cooper, restored after 25 years and now stranded in an unstable alternate reality outside the Palmer house with 'Carrie Page.'"
+        },
+        {
+          "name": "Cooper's doppelgänger",
+          "line": "The BOB-hosting version of Cooper who spent 25 years as a criminal; shot at the Sheriff's Station and returned to the Black Lodge."
+        },
+        {
+          "name": "BOB",
+          "line": "The demon that made Leland kill Laura; his orb was smashed by Freddie Sykes's magic glove, apparently ending him."
+        },
+        {
+          "name": "Laura Palmer / Carrie Page",
+          "line": "The murder victim Cooper tried to rewrite out of existence; may now exist as 'Carrie,' a waitress in Odessa, Texas."
+        },
+        {
+          "name": "Diane Evans",
+          "line": "Cooper's long-lost FBI secretary; the Diane the FBI had been working with was a tulpa, and the real Diane was freed from the eyeless woman Naido."
+        },
+        {
+          "name": "Gordon Cole",
+          "line": "FBI Deputy Director who led the search for Cooper and uncovered a cosmic conspiracy centred on an entity called Judy."
+        },
+        {
+          "name": "Sarah Palmer",
+          "line": "Laura's mother; something ancient and violent lives inside her, revealed when she opened her face to kill a trucker in a roadside bar."
+        },
+        {
+          "name": "Frank Truman",
+          "line": "Harry Truman's brother, holding the Sheriff's Department together during Harry's illness and through the doppelgänger's return."
+        },
+        {
+          "name": "Audrey Horne",
+          "line": "Emerged from what may be a decades-long dissociative state; last seen wide-eyed in a mirror after dancing at the Roadhouse."
+        }
+      ]
+    }
+  }
+}

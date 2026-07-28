@@ -1,0 +1,390 @@
+{
+  "slug": "ozark",
+  "generatedFor": "Ozark",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The Ozark pitch",
+          "text": "Marty's partner is caught skimming from a Mexican cartel. To survive, he pledges boss Del he will launder $500M in the Missouri Ozarks over five years.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The premise of everything that follows in the series — Marty's five-year debt to the cartel.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Langmores appear",
+          "text": "After moving Wendy and the kids to a lakefront town, Marty catches teen local Ruth Langmore stealing his cartel cash and brings her onto his crew rather than fight her.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Establishes Ruth, the show's second lead, and the Langmore family as fixtures of Marty's operation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Snells take hold",
+          "text": "Marty buys the Blue Cat Lodge and a strip club as laundering fronts, but heroin growers Jacob and Darlene Snell force him into their orbit and take $700K of cartel money.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Introduces the Snells, the second power in the Ozarks, who drive every casino negotiation from here on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Petty and the killings",
+          "text": "Undercover FBI agent Roy Petty seduces Ruth's uncle Russ for leverage on Marty; Ruth kills Russ and his brother before they can rob and kill Marty first.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Petty becomes the recurring federal threat, and Ruth's first murders are the beginning of her binding to Marty.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Wendy chooses in",
+          "text": "A flashback reveals Wendy first pushed Marty into cartel work; in the present she learns Marty tracked her affair with a PI but does not walk out.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Reframes Wendy as a willing architect of the family's crime, not a hostage — the engine of every later season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The casino gambit",
+          "text": "With Del threatening to kill the family, Marty pitches a Snell-land casino that would launder cartel money and distribute Snell heroin, and Del agrees.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The casino is the project the whole show now revolves around; born here at the summit.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Darlene kills Del",
+          "text": "Darlene shoots Del over a racist insult, leaving Marty tied to volatile heroin partners with no cartel handler; Wendy and the kids refuse to flee and stay.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Two of season 2's biggest premises in one moment: no cartel liaison (Helen coming), and the family fully committed to the Ozarks.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Del is dead by Darlene's hand at the casino summit, the Snell heroin deal is uneasily alive, and the Byrdes have publicly chosen to stay in the fallout instead of running.",
+        "questions": [
+          "How will the cartel react when they realise Del is missing?",
+          "Can Marty really build a casino on Snell land with Darlene unmanageable?",
+          "What does the FBI do now that Petty has been burned and the Byrdes have not fled?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Marty Byrde",
+          "line": "Chicago financial adviser now laundering for a Mexican cartel out of the Ozarks; owns the Blue Cat Lodge and a strip club as fronts."
+        },
+        {
+          "name": "Wendy Byrde",
+          "line": "Marty's wife and former political operative; her affair is over and she has fully committed to running the operation with him."
+        },
+        {
+          "name": "Ruth Langmore",
+          "line": "Sharp teenage local Marty first caught stealing his cash; now manages the strip club for him and has killed her own uncles to keep the deal."
+        },
+        {
+          "name": "Charlotte Byrde",
+          "line": "Marty and Wendy's teenage daughter; miserable about the move at first, working at the Blue Cat and grudgingly settling in."
+        },
+        {
+          "name": "Jonah Byrde",
+          "line": "Younger son and the fastest student of Marty's laundering craft; secretly armed and quietly stashing money under a fallback name."
+        },
+        {
+          "name": "Jacob and Darlene Snell",
+          "line": "Elderly poppy-growing couple whose heroin dominates the Ozarks; Darlene has just murdered Marty's cartel handler over an insult."
+        },
+        {
+          "name": "Roy Petty",
+          "line": "Undercover FBI agent obsessed with Marty; his lover and informant Russ Langmore is dead by Ruth's hand, exposing his tactics."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Helen and reparations",
+          "text": "Cartel liaison Helen Pierce arrives demanding 'reparations' for Del's death; Jacob kills his own nephew Ash to spare Darlene and preserve the casino deal.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Helen is the season's new cartel presence and stays central; the Snells' first real crack shows here.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Cade returns",
+          "text": "Ruth's father Cade is paroled and pushes her back into crime and away from Marty, using her to hunt for the cartel cash Marty has stashed around town.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Cade's presence is the wedge between Ruth and Marty and the reason Wendy will eventually have him killed.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Buying the senate",
+          "text": "The Byrdes bribe and blackmail state senators to pass the casino bill, with donor Charles Wilkes as their kingmaker after Wendy blocks his advances.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Wendy's political playbook goes live — the mode she will use for the rest of the series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Rachel wired, Ruth tested",
+          "text": "Agent Roy Petty flips Blue Cat owner Rachel into an informant; Marty catches on, and Helen has Ruth waterboarded to test her loyalty, but Ruth holds.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Cements Ruth's loyalty in Helen's eyes and neutralises Petty's inside line; both matter for how season ends.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Mason and the baby",
+          "text": "Pastor Mason Young kidnaps Wendy to force Marty into recovering baby Zeke from state care; Marty rescues the child but then kills Mason afterward.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Marty's first on-screen murder and the arrival of Zeke as a child the Byrdes and Snells will fight over.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Darlene poisons Jacob",
+          "text": "Darlene poisons Jacob when he moves to kill her; with the Snells fractured, the gaming commission finally approves the Byrde casino on their land.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Ends the two-hander at the top of the Snell farm; Darlene alone is a very different problem.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Wendy has Cade killed",
+          "text": "Wendy pays Cade to leave, then has cartel enforcer Nelson ambush him at the roadside; Marty realises Wendy is now the one deciding who lives.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The line Wendy crosses at the end of season two is the entire premise of the Marty/Wendy conflict in season three.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The casino is open under cartel management and the family has chosen to stay, but Wendy has crossed a line without Marty's knowledge and Helen represents a cartel with no more patience for failure.",
+        "questions": [
+          "Now that Wendy is the one having people killed, who really runs the family?",
+          "With the casino live, how much more does the cartel expect the Byrdes to launder?",
+          "What happens to Ruth once she learns her father is dead by Wendy's order?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Marty Byrde",
+          "line": "Runs the casino for the cartel; has just realised his wife had her own father-in-law Cade killed without telling him."
+        },
+        {
+          "name": "Wendy Byrde",
+          "line": "Escalated from PR fixer to power broker; ordered Cade Langmore's death and no longer defers to Marty on cartel matters."
+        },
+        {
+          "name": "Ruth Langmore",
+          "line": "Reluctantly took over Marty's cartel duties when the family tried to flee; her father is dead by Wendy's order but she does not know."
+        },
+        {
+          "name": "Charlotte Byrde",
+          "line": "Tried and failed to legally emancipate from her parents; back home, now knowingly living inside the operation."
+        },
+        {
+          "name": "Jonah Byrde",
+          "line": "Increasingly enmeshed in Marty's laundering, funding a secret alias account off the books."
+        },
+        {
+          "name": "Helen Pierce",
+          "line": "Cartel attorney and the Byrdes' new handler after Del; ruthless, based part-time in the Ozarks with her daughter Erin."
+        },
+        {
+          "name": "Darlene Snell",
+          "line": "Widowed poppy-grower who poisoned Jacob to keep her heroin business; unpredictable and now raising baby Zeke on her own."
+        },
+        {
+          "name": "Wyatt Langmore",
+          "line": "Ruth's cousin, off to college with Marty's help; still convinced the Byrdes are behind his father and uncle's deaths."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Casino running, war in Mexico",
+          "text": "The casino is up and running under Marty and Ruth, while in Mexico a cartel war between Navarro and Lagunas piles pressure on the Byrdes to launder cash faster.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the season's baseline pressure and the war whose end is the season's climax.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ben arrives",
+          "text": "Wendy's bipolar brother Ben arrives for an extended visit and begins sleeping with Ruth, straining the family's careful containment of their cartel life.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces the season's tragic engine; Ben's illness and his bond with Ruth drive every later beat.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Marty kidnapped, Wendy rises",
+          "text": "Wendy pushes an aggressive expansion Marty opposes; the cartel kidnaps Marty for a stretch, and he returns to find Wendy even more openly running the family.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The power flip inside the marriage; Wendy speaks to Navarro directly from here on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Helen turns",
+          "text": "Nervous of the Byrdes' rising influence, Helen has their therapist Sue murdered to erase leverage and quietly tells Navarro the Byrdes are liabilities.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The Byrde/Helen alliance breaks; the rest of the season is a fight over which side Navarro keeps.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ben off his meds",
+          "text": "Ben stops his medication, exposes Helen's work to her daughter Erin, and becomes an open threat to every cartel secret the Byrdes are holding together.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The situation that forces Wendy's hand; without this, no execution.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Wendy calls in the hit on Ben",
+          "text": "Unable to contain Ben, Wendy phones the restaurant where he is hiding; Nelson kills him, and Ruth walks away from Marty's operation on learning what Wendy did.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The break with Ruth is the wound the next season is built on; Wendy's cruelty is now fact.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Baptism, Helen shot",
+          "text": "To prove they outrank Helen, the Byrdes hand the FBI intel that ends the cartel war; at his son's baptism, Navarro has Helen shot in front of them.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The whole cartel structure the Byrdes work through changes: no Helen, direct line to Navarro. Season four opens seconds later.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Helen is dead at the Byrdes' feet and Navarro tells them this promotion is the start of far closer cooperation, while Ruth has cut ties with Marty knowing Wendy killed the man she loved.",
+        "questions": [
+          "What does direct access to Navarro cost the Byrdes?",
+          "Will Ruth stay out of the operation, or find a way to punish Wendy for Ben?",
+          "Can Marty and Wendy hold their marriage together with Wendy now driving every decision?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Marty Byrde",
+          "line": "Running the casino with Ruth; kidnapped by the cartel and returned to a marriage where Wendy has taken the wheel."
+        },
+        {
+          "name": "Wendy Byrde",
+          "line": "The dominant Byrde; had her brother Ben killed to protect the operation and delivered Helen's execution to Navarro's satisfaction."
+        },
+        {
+          "name": "Ruth Langmore",
+          "line": "Fell in love with Wendy's brother Ben; has quit Marty's operation after learning Wendy called in the hit that killed him."
+        },
+        {
+          "name": "Omar Navarro",
+          "line": "Head of the Sinaloa-side cartel and the Byrdes' direct principal now that Helen is dead."
+        },
+        {
+          "name": "Darlene Snell",
+          "line": "Restarted her heroin business with Wyatt as her partner; shot Frank Cosgrove Jr. and still holds baby Zeke."
+        },
+        {
+          "name": "Wyatt Langmore",
+          "line": "Now living with Darlene as her lover, helping run her heroin business; knows Ruth killed his father Russ."
+        },
+        {
+          "name": "Jonah Byrde",
+          "line": "Openly resentful of Wendy over Ben's death; runs a drone and quietly launders for others."
+        },
+        {
+          "name": "Charlotte Byrde",
+          "line": "Similarly alienated from her mother; close to Helen's daughter Erin, who now knows the family's true business."
+        },
+        {
+          "name": "Maya Miller",
+          "line": "FBI agent auditing the Byrdes; incorruptible on paper, but her bosses will trade her scruples for cartel intel."
+        },
+        {
+          "name": "Nelson",
+          "line": "Cartel enforcer working out of the Byrde home; the hand behind Cade's, Sue's, Ben's, and Helen's deaths."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Javi at the door",
+          "text": "Season opens with Navarro's ambitious nephew Javi killing Sheriff Nix at Helen's old house, announcing a far more volatile heir standing over the Byrdes.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Javi is the season's core threat; his impulsiveness drives every escalation until Ruth shoots him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Brokering Navarro's exit",
+          "text": "Marty and Wendy broker Navarro's retirement to the FBI — prison time in exchange for cooperation — while Marty flies to Mexico to help run the cartel.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The season's spine deal, and Marty's stint in Mexico is where Camila is set up.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Ruth breaks away",
+          "text": "Ruth partners with Darlene selling heroin to pharma CEO Clare Shaw; Wendy retaliates by pushing Jonah into arrest and getting Zeke removed from Darlene.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The Ruth/Byrde split hardens and pulls Clare Shaw in — the woman who will later give Ruth up to Camila.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · FBI betrays the deal",
+          "text": "At the surrender the FBI double-crosses Navarro and arrests him for real; Marty proposes Javi take his uncle's cooperation deal to keep the plan alive.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Turns Javi from problem into false solution; Navarro is now a prisoner instead of an asset.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Ruth kills Javi",
+          "text": "Javi murders Darlene and Wyatt in revenge for their continued heroin sales; Ruth lures Javi to Chicago and shoots him dead in Clare Shaw's office.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The event that removes the season's chief threat and creates the one that ends it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Camila takes over",
+          "text": "To save the extradition plan, the Byrdes install Javi's mother Camila as cartel head; Camila has Navarro murdered in prison to solidify her own position.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Power passes to the person who will kill Ruth; Navarro is off the board.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Camila kills Ruth; Jonah with a gun",
+          "text": "Camila forces the truth from Clare and shoots Ruth at her trailer; PI Mel returns to the Byrdes with Ben's ashes, and Jonah steps outside with a shotgun.",
+          "anchorEpisode": 14,
+          "whyLoadBearing": "The two closing images: Ruth dead in her home, Mel exposed and Jonah armed on the porch.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Byrdes are home and apparently untouchable — Camila runs the cartel with the FBI's blessing — but private investigator Mel is at their door with Ben's ashes as proof they had him killed, and Jonah has just raised a shotgun as a shot rings out.",
+        "questions": [
+          "Does Jonah pull the trigger, and on whom?",
+          "Can the Byrdes live with everything they did to survive?",
+          "What does Camila expect from them next now that she is the cartel?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Marty Byrde",
+          "line": "Back in the Ozarks after running the cartel from Mexico; he and Wendy are on FBI tape brokering Navarro's deal."
+        },
+        {
+          "name": "Wendy Byrde",
+          "line": "Restored the family and installed Camila at the cartel head; the cost is Ruth dead, Ben dead, and the kids barely tolerating her."
+        },
+        {
+          "name": "Jonah Byrde",
+          "line": "Standing armed on the porch as Mel confronts his parents with Ben's ashes."
+        },
+        {
+          "name": "Charlotte Byrde",
+          "line": "With the family after testifying to keep them together; still watching what Wendy does."
+        },
+        {
+          "name": "Camila Navarro",
+          "line": "Javi's mother and the new head of the cartel with the FBI's blessing; she has just killed her own brother and Ruth Langmore."
+        },
+        {
+          "name": "Mel Sattem",
+          "line": "Former Chicago cop turned private investigator who tracked Ben; reinstated to the force, he stands at the Byrdes' door with the ashes as proof."
+        },
+        {
+          "name": "Clare Shaw",
+          "line": "Pharma CEO who bought Snell heroin and financed Wendy's foundation; broke under Camila's pressure and revealed Ruth killed Javi."
+        },
+        {
+          "name": "Rachel Garrison",
+          "line": "Back from rehab as Ruth's casino partner; killed cartel enforcer Nelson at Ruth's trailer late in the season."
+        }
+      ]
+    }
+  }
+}

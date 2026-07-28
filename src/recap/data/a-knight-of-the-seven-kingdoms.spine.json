@@ -1,0 +1,105 @@
+{
+  "slug": "a-knight-of-the-seven-kingdoms",
+  "generatedFor": "A Knight of the Seven Kingdoms",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · A hedge knight's inheritance",
+          "text": "Dunk buries his mentor Ser Arlan and rides for the Ashford tournament with his horses, sword, and shield, meaning to enter as a knight himself.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Dunk's status, his lie about being knighted, and the tournament that structures the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A bald boy named Egg",
+          "text": "A stable boy calling himself Egg attaches himself to Dunk, who takes him on as squire and dubs himself Ser Duncan the Tall.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The Dunk-and-Egg partnership is the entire series; its formation is the load-bearing event of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Vouched for by a prince",
+          "text": "Prince Baelor Targaryen remembers Arlan and vouches for Dunk, letting him enter the lists and bringing him into the orbit of the royal family.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Baelor's patronage is what puts Dunk in reach of the Targaryens and sets up the trial that follows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Aerion breaks the puppeteer",
+          "text": "Cruel Prince Aerion snaps Tanselle's finger over a dragon puppet; Dunk attacks him, and Egg reveals he is Aerion's brother, Aegon Targaryen.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Unmasks Egg, triggers the trial, and defines Aerion as the enemy at Dunk's back for the rest of the story.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A trial of seven",
+          "text": "Accused of kidnapping Egg, Dunk demands trial by combat; Aerion escalates it to seven against seven, and Baelor himself agrees to fight for Dunk.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Sets the stakes and the field for the season's climax, and puts the heir to the throne on Dunk's side.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Baelor dies for Dunk",
+          "text": "Dunk beats Aerion and wins the trial, but a mace-blow from Maekar has cracked Baelor's skull; the heir to the Iron Throne dies in Dunk's arms.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Kills the realm's best future king and leaves Dunk carrying the guilt that shapes every choice he makes after.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The road with a prince",
+          "text": "Maekar refuses to let Egg squire on the road, but the boy slips away and rides out with Dunk, and the two set course for Dorne together.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Ends the season with Dunk and Egg as the wandering pair the series is named for, with a furious king's son behind them.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Dunk and Egg leave Ashford as hedge knight and runaway prince, bound for Dorne. Behind them, Baelor is dead, Aerion is exiled to the Free Cities to nurse a grudge, and Maekar has just discovered his youngest son is gone.",
+        "questions": [
+          "How long can Egg keep travelling as a common squire before his father drags him back?",
+          "What will Aerion do when he returns from Essos and finds Dunk still at his brother's side?",
+          "Can Dunk earn the knighthood he only claimed, now that a prince has died vouching for him?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Ser Duncan the Tall (Dunk)",
+          "line": "A huge, low-born hedge knight who lied his way into the lists at Ashford and, against all odds, walked out a true sworn sword with a Targaryen prince for a squire."
+        },
+        {
+          "name": "Egg (Aegon Targaryen)",
+          "line": "Maekar's youngest son, shaven-headed and hiding his name, now openly Dunk's squire and riding away from his family against his father's wishes."
+        },
+        {
+          "name": "Prince Maekar Targaryen",
+          "line": "Egg's stern father, whose mace killed his own brother Baelor during the trial and who has just realised his youngest boy has run off with a hedge knight."
+        },
+        {
+          "name": "Prince Aerion Targaryen",
+          "line": "Egg's vicious older brother, humiliated and beaten by Dunk in the trial of seven, packed off to the Free Cities to atone and nursing a hatred of them both."
+        },
+        {
+          "name": "Prince Baelor Targaryen",
+          "line": "The beloved heir to the Iron Throne who vouched for Dunk and died fighting for him in the trial, leaving a hole at the top of the realm."
+        },
+        {
+          "name": "Prince Daeron Targaryen",
+          "line": "Egg's drunken eldest brother, the one who first dreamed of Dunk; refused to fight in the tournament and warned Dunk that Egg must not grow up like Aerion."
+        },
+        {
+          "name": "Ser Raymun Fossoway",
+          "line": "The Fossoway squire Dunk befriended, knighted on the field to fight in the trial, and now a young sworn knight married to the former prostitute Rowan."
+        },
+        {
+          "name": "Ser Lyonel Baratheon",
+          "line": "The Laughing Storm, lord of Storm's End, who feasted Dunk, fought in the trial for him, and stands as his highborn friend in the stormlands."
+        },
+        {
+          "name": "Tanselle",
+          "line": "The Dornish puppeteer Dunk fell for; her broken finger set off the whole trial, and she has fled Ashford back to Dorne — the reason Egg suggests they ride south."
+        }
+      ]
+    }
+  }
+}

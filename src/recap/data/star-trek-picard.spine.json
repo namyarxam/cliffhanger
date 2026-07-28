@@ -1,0 +1,299 @@
+{
+  "slug": "star-trek-picard",
+  "generatedFor": "Star Trek: Picard",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Picard's exile",
+          "text": "Rogue synths attacked Mars during Picard's Romulan rescue effort. Starfleet abandoned the refugees and banned synthetics; Picard resigned in disgust and retired to his vineyard.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Picard's guilt, Starfleet's compromised state, and the synth ban that everything else pivots on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Data's daughter",
+          "text": "A woman named Dahj finds Picard, hunted by Romulan assassins who kill her. He learns she was Data's synthetic daughter, and has a twin, Soji, on a decommissioned Borg Cube.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the mission target and Data's legacy, the personal debt driving Picard out of retirement.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The new crew",
+          "text": "Picard gathers a crew — pilot Rios, ex-officer Raffi, roboticist Jurati, and Romulan warrior Elnor — to find Soji before the assassins do.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "This ensemble persists into the next season; the reader must know who these people are and how they came to serve Picard.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Zhat Vash",
+          "text": "The killers are Zhat Vash, a Romulan cult convinced synthetic life ends all life. Their leader Commodore Oh has infiltrated Starfleet and engineered the Mars attack herself.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Names the antagonist and reveals the synth ban itself was manufactured — reframes Starfleet's failure as sabotage from within.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Jurati's betrayal",
+          "text": "Oh compels Jurati to kill Soji's creator Bruce Maddox and track the crew from within. Guilt breaks Jurati before she can finish the job, and she confesses everything.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Jurati's guilt and the murder of Maddox define who she is at season's end — a repentant killer who chose the crew over her handler.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Coppelius",
+          "text": "On Soji's home planet Coppelius, she begins summoning the very synthetic armada Zhat Vash prophecy feared. Picard talks her down, dying of his terminal illness as he does.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The season's central conflict resolves through persuasion, not force, and costs Picard his life — setting up his transformation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A second life",
+          "text": "Picard's mind is transferred into a synthetic body Maddox had prepared, indistinguishable from his own. The synth ban is lifted, and the crew scatters to new lives.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Picard is now literally what he fought for. Everything about him going forward is coloured by his synthetic body and second chance.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Picard walks out of death in a synthetic body, the synth ban lifted and the Zhat Vash exposed. His crew disperses across the quadrant, each carrying their own unfinished business.",
+        "questions": [
+          "What does Picard do with a second life he never expected?",
+          "Where do Rios, Raffi, Seven, Elnor, and Jurati end up now that the mission is done?",
+          "Is a Federation that once turned on its own really rebuilt, or just papered over?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jean-Luc Picard",
+          "line": "Retired Starfleet admiral, killed on Coppelius and resurrected into a synthetic body indistinguishable from his own."
+        },
+        {
+          "name": "Soji Asha",
+          "line": "Data's synthetic daughter, freed from Romulan captivity and now living among her own kind on Coppelius."
+        },
+        {
+          "name": "Dr. Agnes Jurati",
+          "line": "Daystrom roboticist who murdered Bruce Maddox under Zhat Vash coercion, confessed to the crew, and awaits Starfleet judgment."
+        },
+        {
+          "name": "Chris Rios",
+          "line": "Freelance captain of La Sirena and ex-Starfleet, haunted by a former captain who killed synths on a Federation cover-up."
+        },
+        {
+          "name": "Raffi Musiker",
+          "line": "Ex-Starfleet officer fired after the Mars attack, back in the fight through Picard and estranged from her son Gabriel."
+        },
+        {
+          "name": "Elnor",
+          "line": "Young Romulan warrior of the Qowat Milat, raised in exile after Picard abandoned Vashti and now his sworn protector."
+        },
+        {
+          "name": "Seven of Nine",
+          "line": "Former Borg drone and Fenris Ranger vigilante, allied with Picard after connecting with the reclaimed Borg Cube."
+        },
+        {
+          "name": "Laris",
+          "line": "Picard's Romulan housekeeper and former Tal Shiar operative, running the vineyard alongside her partner Zhaban."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · A life half-lived",
+          "text": "A year and a half after Zhaban's death, Picard gently rejects his housekeeper Laris's advances. Now Starfleet Academy chancellor, he remains unable to open himself to love.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up the season's actual subject — Picard's fear of intimacy — which the Q trial exists to interrogate.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Borg incursion",
+          "text": "An anomaly asks to join the Federation. A Borg Queen emerges and begins assimilating the fleet; Picard triggers self-destruct and wakes in a fascist Confederation timeline.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The inciting break in reality that launches the entire season's plot and reunites the scattered crew.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Q's final trial",
+          "text": "Q reveals this reality is his final test of Picard. The crew captures the alt-Borg Queen and slingshots to 2024 Los Angeles, where a single event apparently ruined the future.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Names the antagonist, the destination, and the mission — the frame the rest of the season hangs on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Crash in 2024",
+          "text": "They crash near Chateau Picard. Elnor dies of his wounds, the Queen fades to a shell, and they must locate the Watcher who guards whatever event will change history.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Elnor's death drives Raffi's arc; the crippled Queen and the search for the Watcher structure the middle stretch.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Renée and Soong",
+          "text": "The Watcher is Tallinn, protecting Picard's ancestor Renée whose Europa mission will change everything. Q recruits geneticist Adam Soong to stop her from ever flying.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Identifies the pivot point of history and the human weapon Q aims at it — the season's central conflict.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · A new Queen",
+          "text": "The dying Queen infects Jurati with nanoprobes. Jurati persuades her to reject assimilation, and the two merge into a new, benevolent Borg Queen who departs for the Delta Quadrant.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Jurati's fate closes her S1 guilt arc and establishes a new kind of Borg — a peaceable faction now watching from afar.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Farewell",
+          "text": "Tallinn dies saving Renée from Soong's attack. A dying Q sends Picard home, and Picard — having learned to accept love — finally asks Laris for a second chance.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Resolves Q, the timeline, and Picard's emotional block; leaves Picard partnered with Laris going into the next chapter.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Picard is home with Elnor alive, Laris waiting, and Q apparently dead. Jurati's benevolent Borg join the Federation as provisional members, watching a newly detected trans-warp conduit.",
+        "questions": [
+          "Can Picard finally live the quiet life he denied himself?",
+          "What is coming through the trans-warp conduit Jurati's Borg have found?",
+          "Where does the scattered crew go now that Q's trial is over?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jean-Luc Picard",
+          "line": "Starfleet Academy chancellor in his synthetic body, finally opening himself to love with Laris."
+        },
+        {
+          "name": "Laris",
+          "line": "Picard's Romulan housekeeper, widowed a year earlier — her advances first rejected, then answered on Picard's return."
+        },
+        {
+          "name": "Chris Rios",
+          "line": "Former captain of the USS Stargazer who chose to remain in 21st-century Earth with clinic doctor Teresa."
+        },
+        {
+          "name": "Dr. Agnes Jurati",
+          "line": "Merged with the dying Borg Queen to become a new, benevolent Borg Queen leading a cooperative collective."
+        },
+        {
+          "name": "Seven of Nine",
+          "line": "Vigilante pilot of La Sirena, her Borg damage healed by the new Queen; back in an on-again bond with Raffi."
+        },
+        {
+          "name": "Raffi Musiker",
+          "line": "Officer aboard the USS Excelsior, mentoring Elnor at the Academy after grieving his death in the alt-timeline."
+        },
+        {
+          "name": "Elnor",
+          "line": "Starfleet Academy cadet under Picard, killed in the alternate timeline but restored when history was set right."
+        },
+        {
+          "name": "Q",
+          "line": "Extra-dimensional being who spent his last power on Picard's trial and apparently died to teach him to let go."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · The distress signal",
+          "text": "Dr. Beverly Crusher sends a distress signal after twenty years' silence. Picard and Riker rescue her adult son Jack, whom Picard belatedly realises is his own child.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Announces the season's premise — Beverly's return, a hidden son, and a threat serious enough to break twenty years of silence.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Vadic's hunt",
+          "text": "A bounty hunter, Vadic, pursues Jack aboard her ship the Shrike. She corners the USS Titan under Captain Shaw; the crew barely escapes into a nebula and are forced to fight back.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces the primary antagonist and traps the ensemble on one ship, focusing the season on Jack as the target.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ro's warning",
+          "text": "Commander Ro Laren reveals Changeling shapeshifters have infiltrated Starfleet's highest levels. She dies detonating her shuttle against a compromised Starfleet ship to save the Titan.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Reframes Vadic's hunt as one front of a much wider conspiracy — the real enemy is inside Starfleet itself.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The old crew",
+          "text": "Picard's Enterprise-D crew regroups. At Daystrom Station they recover a synthetic body carrying Data's mind alongside Lore's, and Geordi restores Data to full consciousness.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Reunites the TNG ensemble and resurrects Data — the emotional core of the finale and the crew who ultimately win the day.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Jack's secret",
+          "text": "Changelings stole Picard's original body to harvest dormant Borg tissue he unknowingly passed to Jack. The crew defeats Vadic aboard the Titan, but the true plan is already unfolding.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Reveals what the Changelings actually want and that Jack is the delivery mechanism — collapses the two mysteries into one.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Frontier Day",
+          "text": "On Frontier Day the Borg Queen uses Jack to assimilate every young Starfleet officer through the transporter network, seizing the fleet. Only Geordi's restored Enterprise-D is free.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The catastrophe the season has been building toward; strips the Federation to nothing and puts the old crew on the only functional ship.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The last generation",
+          "text": "The Enterprise-D destroys the Queen's cube and frees Jack. A year later the Titan is rechristened Enterprise-G under Captain Seven, and a supposedly dead Q quietly appears to Jack.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Closes the Borg threat, hands the future to a new generation, and plants Q's return to Jack as the door the show leaves open.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Borg and Changeling threats are broken and the Enterprise-D crew are back in their places. But Q — thought dead — has appeared to Ensign Jack Crusher, announcing that his trial has just begun.",
+        "questions": [
+          "What trial does Q have in store for Jack?",
+          "Is Q truly dead, or simply moved on to a new subject?",
+          "Can Jack's Borg-touched mind ever be truly free?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jean-Luc Picard",
+          "line": "Retired admiral pulled back into service by Beverly's call, now father to a grown son and reunited with his old crew."
+        },
+        {
+          "name": "Dr. Beverly Crusher",
+          "line": "The Enterprise-D's former CMO, who vanished with Jack for twenty years to keep Picard's enemies away from their child."
+        },
+        {
+          "name": "Jack Crusher",
+          "line": "Picard and Beverly's grown son, marked by dormant Borg tissue inherited from his father, now a Starfleet ensign."
+        },
+        {
+          "name": "William Riker",
+          "line": "Picard's oldest friend and former first officer, briefly commanded the Titan during the Changeling crisis."
+        },
+        {
+          "name": "Deanna Troi",
+          "line": "Riker's wife and Betazoid empath, helped Jack surface the Borg voices calling to him from within."
+        },
+        {
+          "name": "Seven of Nine",
+          "line": "Former Titan first officer, promoted to Captain of the newly rechristened USS Enterprise-G."
+        },
+        {
+          "name": "Raffi Musiker",
+          "line": "Starfleet intelligence officer who uncovered the Changeling plot, now first officer of the Enterprise-G."
+        },
+        {
+          "name": "Worf",
+          "line": "Klingon warrior turned Starfleet intelligence operative, Raffi's handler on the Changeling case."
+        },
+        {
+          "name": "Geordi La Forge",
+          "line": "Commodore in charge of the Starfleet Museum; secretly restored the Enterprise-D and revived Data."
+        },
+        {
+          "name": "Data",
+          "line": "Picard's late android friend, resurrected in a new synthetic body after subsuming his brother Lore."
+        }
+      ]
+    }
+  }
+}

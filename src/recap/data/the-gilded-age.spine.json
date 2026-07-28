@@ -1,0 +1,319 @@
+{
+  "slug": "the-gilded-age",
+  "generatedFor": "The Gilded Age",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Marian arrives",
+          "text": "Orphaned Marian Brook moves in with her rigid aunts Agnes and Ada in New York; Peggy Scott, who helped her on the way, is hired as Agnes's secretary.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the three women in the van Rhijn house and plants Peggy inside it, the frame every later plot runs through.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The empty ballroom",
+          "text": "Across the street, new-money Bertha Russell throws a lavish party and nobody comes. She vows to force old society to accept the Russells whatever it takes.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "This snub is the engine of Bertha's entire arc across the series; her ambition begins here.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · George breaks the aldermen",
+          "text": "Betrayed by aldermen manipulating his railroad stock, George buys everything back and drives them to ruin; Alderman Morris shoots himself, and Anne Morris becomes an enemy.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Sets George's ruthlessness as the show's baseline and installs the first grudge that comes back at him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Marian's secret elopement",
+          "text": "Marian falls for young lawyer Tom Raikes and secretly agrees to elope with him, knowing her aunts would never accept a match with a man of no fortune.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Sets up the romantic bet Marian is making against Agnes, which decides her worldview when it collapses.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Peggy's son is alive",
+          "text": "Agnes's maid exposes Peggy as a mother; the son her father told her had died at birth was actually given away in secret, and Peggy leaves for Philadelphia to search for him.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Reframes every quiet Peggy scene so far and drives her out of the house at season's end.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Tom jilts her",
+          "text": "On the morning they are meant to run away together, Tom abandons Marian for a richer bride, Miss Bingham, and she is left publicly humiliated.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Closes Marian's first romance and defines who she is going into every suitor that follows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Russells' ball",
+          "text": "Mrs. Astor calls on Bertha to protect her daughter Carrie's friendship with Gladys, and the Russells' first grand ball is packed. Bertha has arrived in society.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Bertha's climb from episode one lands here; every S2 fight is fought from this new footing.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Bertha has forced society to bow at the Russells' ball just as Marian is publicly jilted, and Peggy has left New York to find the son she was told had died at birth.",
+        "questions": [
+          "Can Marian recover from Tom's betrayal and trust another suitor?",
+          "Will Peggy find her son alive in Philadelphia?",
+          "Now that Mrs. Astor has bent once, will old society tolerate Bertha in the long run?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Marian Brook",
+          "line": "Orphaned niece newly arrived from Pennsylvania; publicly jilted by Tom Raikes on the day they were to elope."
+        },
+        {
+          "name": "Agnes van Rhijn",
+          "line": "Rigid van Rhijn matriarch who guards old money and polices every suitor who comes near Marian."
+        },
+        {
+          "name": "Ada Brook",
+          "line": "Agnes's gentler spinster sister; still lives under Agnes's roof and by her rules."
+        },
+        {
+          "name": "Peggy Scott",
+          "line": "Black secretary and Globe writer who has left for Philadelphia to find the son she was told had died."
+        },
+        {
+          "name": "Bertha Russell",
+          "line": "Ambitious industrialist's wife who has just forced old society to attend her ball."
+        },
+        {
+          "name": "George Russell",
+          "line": "Ruthless railroad tycoon cleared of the train-crash charges after uncovering the real culprits inside his company."
+        },
+        {
+          "name": "Gladys Russell",
+          "line": "Sheltered debutante only just launched, still entirely under Bertha's control."
+        },
+        {
+          "name": "Larry Russell",
+          "line": "The Russells' easygoing elder son, quietly wanting to become an architect."
+        },
+        {
+          "name": "Oscar van Rhijn",
+          "line": "Agnes's secretly gay son, actively hunting a rich heiress to marry for the family name."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Opera War begins",
+          "text": "Snubbed by Mrs. Astor's Academy of Music, Bertha throws her weight behind the new Metropolitan Opera and starts pulling the nouveau riche into its boxes.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The Opera War is the season's spine and the terms on which Bertha finally overtakes Mrs. Astor.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Turner returns rich",
+          "text": "Bertha's former lady's maid Turner reappears as the wealthy Mrs. Winterton and openly sets out to unseat Bertha in society.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Creates Bertha's peer-level enemy for the whole season and a widow to marry in the one after.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Oscar loses everything",
+          "text": "Chasing an heiress named Maud Beaton, Oscar sinks the van Rhijn fortune into a Chicago-Atlantic railroad deal that turns out to be Mr. Crowther's confidence trick.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Wipes out the van Rhijn money and forces the household dynamic that dominates S3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ada marries and is widowed",
+          "text": "Ada marries Reverend Luke Forte over Agnes's protests; he dies of cancer within months, and Ada discovers he was secretly wealthy enough to save the house.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Ada's inheritance flips the balance of power inside the van Rhijn household at exactly the moment Oscar has bankrupted it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Peggy and Fortune",
+          "text": "Reporting from Tuskegee for T. Thomas Fortune, Peggy kisses her married editor while hiding from a racist mob; she later quits the Globe rather than continue.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Closes the Fortune chapter and leaves Peggy without a job or a suitor going into S3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Gladys promised to the Duke",
+          "text": "To crown the Opera War, Bertha quietly promises Gladys to the impoverished Duke of Buckingham in exchange for his presence in her Met box on opening night.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "This bargain is the exact wound the whole of S3 is built around.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Met wins the night",
+          "text": "On rival opening nights, old society defects to Bertha's Met and Mrs. Astor is beaten; that same evening Larry kisses Marian at her door.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Ends the Opera War in Bertha's favour and launches the Larry-Marian romance the next season pays off.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Bertha has won the Opera War by secretly bartering Gladys to a duke, Ada's surprise inheritance has upended who runs the van Rhijn house, and Larry and Marian have just kissed on the front step.",
+        "questions": [
+          "Will Gladys accept the marriage Bertha has arranged without her?",
+          "Can Agnes bear being second in her own home now that Ada holds the money?",
+          "Can Larry and Marian actually build something from that kiss at the door?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Marian Brook",
+          "line": "Now teaching watercolours; recovering from Tom, and freshly kissed by Larry Russell."
+        },
+        {
+          "name": "Larry Russell",
+          "line": "Newport architect who ended a widow's romance and just kissed Marian at her door."
+        },
+        {
+          "name": "Bertha Russell",
+          "line": "Newly crowned Opera Queen who has secretly promised Gladys to the Duke of Buckingham to win it."
+        },
+        {
+          "name": "George Russell",
+          "line": "Rail and steel magnate who weathered a Pittsburgh strike and secretly funded the Met to install Bertha."
+        },
+        {
+          "name": "Gladys Russell",
+          "line": "Turned Oscar down; still unaware her mother has traded her hand to a duke."
+        },
+        {
+          "name": "Hector, Duke of Buckingham",
+          "line": "Impoverished English peer quietly promised Gladys in exchange for lending Bertha his status."
+        },
+        {
+          "name": "Agnes van Rhijn",
+          "line": "Blindsided as Ada marries and is widowed rich, and as Oscar loses the family fortune."
+        },
+        {
+          "name": "Ada Brook Forte",
+          "line": "Widowed only weeks after marrying Rev. Forte; has just learned he left her secretly wealthy."
+        },
+        {
+          "name": "Oscar van Rhijn",
+          "line": "Nearly ruined by Crowther's railroad con; the van Rhijn money is gone and John Adams is helping him rebuild."
+        },
+        {
+          "name": "Peggy Scott",
+          "line": "Quit the Globe after kissing her married editor T. Thomas Fortune during their trip to Tuskegee."
+        },
+        {
+          "name": "Mrs. Winterton (Turner)",
+          "line": "Bertha's former lady's maid, now a rich wife and Bertha's open rival in society."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Gladys forced to marry",
+          "text": "Gladys secretly engages to Billy Carlton, but Bertha crushes the match and pressures her into marrying the Duke of Buckingham for the title she promised him.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The forced marriage is the fracture line running through every Russell scene of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ada takes over, Agnes chafes",
+          "text": "With Forte's fortune Ada now runs the van Rhijn household; the servants no longer know whose orders count, and Agnes struggles openly with her demotion.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Reshapes the aunts' relationship into a peer-level rivalry that colours every domestic scene.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Peggy meets Dr. Kirkland",
+          "text": "Peggy falls dangerously ill and is treated by Dr. William Kirkland; they grow close, though his snobbish mother rejects Peggy's annulled marriage and tradesman father.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces the Kirklands and the class-inside-the-race conflict that carries Peggy's story.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Marian breaks off Larry",
+          "text": "Larry and Marian become engaged, but Marian breaks it off after hearing Larry visited the Haymarket, believing it a brothel rather than a private club.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The engagement and its rupture are the season's central Marian arc and the wound they reconcile from at the ball.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Clay betrays George",
+          "text": "George fires his secretary Mr. Clay for failing to secure the western railroad land; Clay defects to rival Risley Sage and plants stories to sabotage George's finances.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Sets up who the shooter almost certainly is at season's end.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Bertha saves Gladys in England",
+          "text": "In Sidmouth Castle, Gladys is bullied by the Duke's sister Lady Sarah until Bertha arrives and forces Hector to back his wife as duchess in her own house.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The one moment Bertha's ambition helps rather than hurts Gladys, and the reason Hector eventually sides with her.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The shooting and the split",
+          "text": "A gunman wounds George in his office; he survives the Newport ball but tells Bertha they will live apart, blaming her for what her ambition did to their children.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The season's two closing shocks in one movement and the state the Russells begin next season in.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "George survives a shooting only to tell Bertha they will now live apart, blaming her ambition for what happened to their children. Gladys returns pregnant from England, Peggy is engaged to Dr. Kirkland, and Oscar has just proposed a marriage of convenience to the newly widowed Mrs. Winterton.",
+        "questions": [
+          "Who ordered the hit on George — is it truly Clay and Sage?",
+          "Can Bertha hold society without George beside her?",
+          "Will Peggy's engagement to Dr. Kirkland survive his mother's contempt?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Marian Brook",
+          "line": "Engaged to Larry after breaking it off over a false rumour about the Haymarket, then reconciling at the Newport ball."
+        },
+        {
+          "name": "Larry Russell",
+          "line": "Made $300,000 as Jack Trotter's clock-patent partner; now engaged to Marian."
+        },
+        {
+          "name": "George Russell",
+          "line": "Recovering from a would-be assassin's bullet and moving out of the house he shares with Bertha."
+        },
+        {
+          "name": "Bertha Russell",
+          "line": "Won the ducal match at the cost of her marriage and her children's trust; now living apart from George."
+        },
+        {
+          "name": "Gladys Russell",
+          "line": "Duchess of Buckingham, pregnant, back in New York after a miserable start in England."
+        },
+        {
+          "name": "Hector, Duke of Buckingham",
+          "line": "Belatedly on Gladys's side after Bertha's intervention; sent domineering Lady Sarah away to London."
+        },
+        {
+          "name": "Ada Forte",
+          "line": "Now heads the van Rhijn household on Forte's inheritance; runs suffrage and temperance work."
+        },
+        {
+          "name": "Agnes van Rhijn",
+          "line": "Accepted her demotion at home; joined the New York Heritage Society as its vice president."
+        },
+        {
+          "name": "Peggy Scott",
+          "line": "Engaged to Dr. William Kirkland after his family relented over her annulled marriage."
+        },
+        {
+          "name": "Dr. William Kirkland",
+          "line": "Peggy's Black physician fiancé from a wealthy, socially snobbish Newport family."
+        },
+        {
+          "name": "Oscar van Rhijn",
+          "line": "Grieving John Adams after his death by carriage; has just proposed a marriage of convenience to the widowed Mrs. Winterton."
+        }
+      ]
+    }
+  }
+}

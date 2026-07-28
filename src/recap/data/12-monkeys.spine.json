@@ -1,0 +1,402 @@
+{
+  "slug": "12-monkeys",
+  "generatedFor": "12 Monkeys",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The mission",
+          "text": "In 2043, scientist Katarina Jones sends James Cole back to 2015 to find virologist Cassandra Railly and stop the plague that gutted humanity.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the premise, the two leads, and the time-travel mechanism the rest of the series runs on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Army surfaces",
+          "text": "Chasing the plague's source leads Cole and Cassie to the Army of the 12 Monkeys, a cult served by the Pallid Man and steered by an unseen Witness.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Names the antagonist faction and its shadowy leader, the spine of every future season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Jennifer Goines",
+          "text": "In a psych ward Cole finds Jennifer Goines, unstable heiress to Markridge and one of few who knows the location of her father's Night Room lab.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces Jennifer, who becomes a load-bearing Primary and drives later seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Ramse turns",
+          "text": "Cole's oldest friend Jose Ramse, terrified erasing the plague will erase his son Sam, steals the splinter drug and jumps back to sabotage the mission.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Ramse's defection sets up the season finale and his season-two hostility toward Cole.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Ramse's long game",
+          "text": "Stranded in 1987, Ramse joins the Army under Olivia and spends decades using his memory of Cole's future moves to make sure the plague still happens.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Explains why the Army is always one step ahead and reveals Olivia as a long-term operator.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Aaron's betrayal",
+          "text": "Cassie's partner Aaron Marker sells Cole out to the Army in exchange for her safety, and Cole survives only via a paradox that burns off his time-travel ability.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Removes Cole's splinter capability heading into the finale and marks Aaron as a traitor.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Machine changes hands",
+          "text": "In 2015 Ramse escapes to 2043 as Cassie is shot, so Cole sends her forward for Jones to save; in 2043, Deacon's raiders seize the time machine.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The end state of season 1: Cassie stranded in 2043, Cole trapped in 2015, machine captured.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Cassie, gutshot, has just splintered into 2043 as Deacon's twelve raiders storm the temporal facility and Jones surrenders the machine. Cole is left in 2015 without a way home, and in 1947-vintage secrecy the Army readies twelve mysterious newborns for something 28 years away.",
+        "questions": [
+          "Can Jones save Cassie, and what will she be like on the far side of the trip?",
+          "Who is the Witness the Army keeps invoking, and what does the Army actually want?",
+          "How does Cole get off 2015 now that his ability to splinter is gone?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "James Cole",
+          "line": "Reluctant chrononaut from 2043 sent back to erase the plague; ends the season stranded in 2015 with no splinter ability."
+        },
+        {
+          "name": "Cassandra 'Cassie' Railly",
+          "line": "Virologist who became Cole's partner in 2015 and is now bleeding out in 2043, having been shot escaping the Army."
+        },
+        {
+          "name": "Katarina Jones",
+          "line": "Grief-hardened scientist who built Project Splinter and just handed the time machine to Deacon's raiders to save her people."
+        },
+        {
+          "name": "Jose Ramse",
+          "line": "Cole's best friend turned enemy, who joined the Army in 1987 to preserve his son and has spent decades ensuring the plague still happens."
+        },
+        {
+          "name": "Jennifer Goines",
+          "line": "Mentally fragile Markridge heiress now controlling her father's company; boards a plane at the finale seemingly to release the plague."
+        },
+        {
+          "name": "Aaron Marker",
+          "line": "Cassie's ex-boyfriend and political aide who betrayed Cole to the Army and was apparently killed in a fire soon after."
+        },
+        {
+          "name": "Olivia",
+          "line": "Composed, long-serving Army lieutenant grooming twelve infant 'Messengers' for a plan decades away."
+        },
+        {
+          "name": "The Pallid Man",
+          "line": "The Army's scarred, softly menacing enforcer and Olivia's field arm against Cole and Cassie."
+        },
+        {
+          "name": "Deacon",
+          "line": "West VII warlord who lost the facility in the pilot and, in the finale, leads twelve strangers who seize the time machine."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · The Messengers",
+          "text": "In 2043 the twelve who took the machine reveal themselves as the Messengers and scatter through history; Cassie helps Deacon blow them and the machine up.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Explains who Deacon's group actually was and how the machine ends up gone at the start.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Cassie changes sides",
+          "text": "Cassie splinters back and stops Cole from killing Jennifer, then leaves him in 2016 with Ramse, returning to 2044 hardened and willing to execute her former enemies.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Establishes Cassie's darker post-2043 self, the season's biggest character shift.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Primaries and paradox",
+          "text": "Cole and Cassie learn the Army hunts Primaries — people psychically bound to time like Jennifer — and murders them ritually to trigger paradoxes that shred the timeline.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces Primaries and the Army's actual endgame: destroying time itself.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Jennifer's Hyenas",
+          "text": "In 2016 Jennifer builds the Hyenas, a squad of ex-patients hunting the Army; the Pallid Man lets himself be captured and bombs them all dead.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Jennifer's grief and isolation carry into her role as Primary and mystic later.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Olivia unmade",
+          "text": "In 1961 the team find Nazi scientist Kirschner engineered Olivia herself for the Army; the reveal, plus a later betrayal, makes Olivia abandon her masters.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Olivia's break from the Army sets up her later manipulations from a new position.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Titan and the Red Forest",
+          "text": "Ramse and Cassie mutiny to find Titan, a place linked to the Witness; the storms consume the facility, killing Jones — or so it seems — and the machine.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Titan becomes the central location of the next season and reshapes the whole geography.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Cassie is the Mother",
+          "text": "Cole erases the year he and Cassie lived together in 1957 to stop the final paradox; Cassie is captured into Titan in 2163 and hailed as mother of the Witness.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The season ends with the reveal that reframes everything: the Witness is Cassie's child.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Titan has splintered away to 2163 with a pregnant Cassie inside, where the Army greets her as the mother of the Witness. Cole is chasing after her; Jennifer is stranded in World War I; Ramse has vanished pursuing Olivia and Sam; the facility and Jones are gone.",
+        "questions": [
+          "Who is the father of the Witness, and does Cole already know?",
+          "Can Cole reach Cassie in 2163 before the child is born, and would stopping the birth even be right?",
+          "With the facility and Jones destroyed, is there any way home for anyone scattered across time?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "James Cole",
+          "line": "In love with Cassie and unraveling, having just erased their year together in 1957 and chased her to 2163."
+        },
+        {
+          "name": "Cassandra Railly",
+          "line": "Pregnant captive in Titan in 2163, being told by the Pallid Man that her unborn son is the Witness the Army worships."
+        },
+        {
+          "name": "Katarina Jones",
+          "line": "Project Splinter's founder, believed lost when the temporal storms consumed the facility around her and the machine."
+        },
+        {
+          "name": "Jose Ramse",
+          "line": "Splintered off after Olivia, who has taken his adult son Sam; no longer Cole's enemy but no longer with him either."
+        },
+        {
+          "name": "Jennifer Goines",
+          "line": "Confirmed Primary and Daughters leader, hit by a stray beam and flung into the trenches of World War I."
+        },
+        {
+          "name": "Deacon",
+          "line": "Reformed warlord who died at Titan saving Jennifer during the assault on the Witness's stronghold."
+        },
+        {
+          "name": "Olivia",
+          "line": "Ex-Army leader who learned she was engineered by Nazi scientists and walked away, now operating on her own agenda."
+        },
+        {
+          "name": "The Pallid Man",
+          "line": "Revealed as Olivia's brother and now Titan's chief priest, presenting Cassie to the assembled Army."
+        },
+        {
+          "name": "The Witness",
+          "line": "Titan's masked prophet, whose face Cassie has seen as both Aaron and Cole in visions and who is now confirmed to be her son."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · The birth",
+          "text": "In 2163 Cassie tries to kill herself to prevent the birth; the Horseman Magdalena splinters back to preempt her, and Cassie's son is born and named Athan.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Magdalena's timeline-editing ability and the fact that Athan actually exists.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Cole rescued twice",
+          "text": "A future Cole steers his past self away from Titan toward Jennifer in 1922, where they and Jones kill three Horsemen before Magdalena resets the day.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Reunites the surviving team in 2046 with Jennifer, and gets Cassie out of Titan by finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ramse learns the truth",
+          "text": "Olivia surrenders to Project Splinter and privately tells Ramse the Witness is Cole and Cassie's son, then engineers his 2007 mission to kill Cassie.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Olivia's manipulation from captivity drives Ramse's fatal confrontation with Cole.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ramse's death",
+          "text": "In 2007 Cole realises Ramse's real target is Cassie, and mortally wounds his oldest friend, who dies begging Cole not to undo it with time travel.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Removes Ramse and closes their whole arc; his last request will be tested in season 4.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Meeting their son",
+          "text": "In 1953 Cole and Cassie find young Athan being groomed as a Primary killer for the Army; unable to shoot him, they steal a personal machine and flee with him.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Turns Cole and Cassie into fugitives from Jones and reframes Athan as a person, not a target.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Athan's grief",
+          "text": "Athan's journals show a lifetime jumping through time, then losing the woman he loved in 1891; he decides destroying time is the only way to reach her again.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Provides Athan's motive for the Red Forest plan and humanises the Witness completely.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Olivia is the Witness",
+          "text": "In 1959 Athan tells Olivia she was always the true Witness; she kills him and orders Titan splintered to 2046 to level the temporal facility.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Names the real antagonist and launches the direct assault that opens season 4.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Athan is dead by his mother's hand, and Olivia — revealed as the true Witness the Army was worshipping all along — is bringing Titan into 2046 to destroy Project Splinter. In 2015, young Cole is handed a cryptic note from a mother he was told he never knew.",
+        "questions": [
+          "How does Jones's tiny facility survive Titan splintering in on top of it?",
+          "If Olivia is the Witness, what has the Army actually been building toward, and can it still be stopped?",
+          "Who is Cole's mother, and why is she reaching out to him now through the past?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "James Cole",
+          "line": "Reunited with Cassie in 2046, hardened by killing Ramse and by failing to save the son he barely knew."
+        },
+        {
+          "name": "Cassandra Railly",
+          "line": "Escaped Titan and back with Cole, but split from Jones after refusing to let anyone kill Athan."
+        },
+        {
+          "name": "Katarina Jones",
+          "line": "Running Project Splinter from 2046, willing to hunt Cole and Cassie down when she learns they're protecting the Witness."
+        },
+        {
+          "name": "Jennifer Goines",
+          "line": "Rescued from 1922, back at the facility, and beginning to hear the Primaries again through her visions."
+        },
+        {
+          "name": "Olivia",
+          "line": "Confirmed as the true Witness, who let herself be captured to manipulate Ramse and now commands Titan directly."
+        },
+        {
+          "name": "Athan Cole",
+          "line": "Cole and Cassie's Primary son, raised by the Army as a killer and shot by his own mother in 1959."
+        },
+        {
+          "name": "Jose Ramse",
+          "line": "Dead in 2007, killed by Cole after Olivia tricked him into hunting Cassie; made Cole promise not to reverse it."
+        },
+        {
+          "name": "Deacon",
+          "line": "Loyal to Jones and now her enforcer, tasked with hunting Cole and Cassie across time."
+        },
+        {
+          "name": "Mallick",
+          "line": "Titan enforcer who helped Cassie and Deacon escape and now serves Olivia's inner circle."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Titan attacks",
+          "text": "Titan splinters onto the facility; Whitley and Lasky die, Deacon is left behind, and Jones splinters the whole facility away, absorbing a lethal radiation dose.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Ends the war Titan opened with, at the cost of Jones's life expectancy and a key soldier.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The Primaries' weapon",
+          "text": "A medieval opening and a stolen ouroboros artifact point Cole to the Blackleaf clue: the Primaries built a weapon against the Witness, hidden across centuries.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets up the season-long treasure hunt that will end at Die Glocke in 1491.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Cole's mother",
+          "text": "Cole's childhood story about the weapon came from his own mother, tying his family to the Primaries; Hannah is sent to 2009 to protect a woman named Marion Woods.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Plants the mother mystery that pays off with the Hannah reveal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Deacon returns",
+          "text": "Deacon survives Titan's rubble and appears to defect to Olivia, but he is secretly still Jones's man, feeding Project Splinter access as her captured double agent.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Explains Deacon's dual role through the middle stretch and his eventual death.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The weapon burns",
+          "text": "In 1491 the ouroboros trail leads to Die Glocke, but Olivia kills Deacon and paradoxes the weapon out of reach forever, forcing a different plan.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Closes the weapon arc and forces the final-episode strategy of erasing Cole himself.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Hannah is Cole's mother",
+          "text": "In 2018 Cole and Cassie release the plague to preserve causality; Hannah dies saving Cole and leaves a letter revealing she raised him as Marion Woods.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The show's deepest paradox: the mission's success requires the plague and costs Cole his mother.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Erasing Cole",
+          "text": "In a final battle at Titan, Cassie kills Olivia and Cole loads the Primaries' program to erase himself; a rewritten timeline lets him find Cassie at their farmhouse.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Series conclusion: the causal loop is closed and both leads land in the same life.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The series ends with Cole erased and reinserted into a new timeline where the plague, Project Splinter and the 12 Monkeys never existed. Cassie remembers everything and finds Cole waiting at the farmhouse they once shared in 1957.",
+        "questions": [
+          "Does Cole remember Cassie, or only the life the new timeline gave him?",
+          "In a world without the plague, who did the people they lost — Jennifer, Ramse, Jones — grow up to be?",
+          "Is the loop truly closed, or does time still owe something to the Primaries whose program rewrote it?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "James Cole",
+          "line": "Ends the series erased and then quietly restored, walking back into Cassie's life in the new timeline."
+        },
+        {
+          "name": "Cassandra Railly",
+          "line": "The only person who remembers what happened; finds Cole at their farmhouse after killing Olivia and stopping the Red Forest."
+        },
+        {
+          "name": "Katarina Jones",
+          "line": "Dies at Titan after seeing the mission through, sharing a last conversation with Cole before he activates the program."
+        },
+        {
+          "name": "Jennifer Goines",
+          "line": "Steered the whole team via her Primary visions, and is sent home to her own time after the paradox is averted."
+        },
+        {
+          "name": "Jose Ramse",
+          "line": "Pulled forward from the moment before his death to help Cole assault Titan, then returned to his own time."
+        },
+        {
+          "name": "Olivia",
+          "line": "The Witness, killed by Cassie in the final battle and splintered into the past to become the original plague-corpse."
+        },
+        {
+          "name": "Deacon",
+          "line": "Jones's secret double agent inside the Army, killed by Olivia in 1491 during the fight for the weapon."
+        },
+        {
+          "name": "Hannah Jones",
+          "line": "Katarina's daughter and, in secret, Cole's mother 'Marion Woods'; dies in 2018 shielding him from an Army assassin."
+        },
+        {
+          "name": "Emma / Elliot Jones",
+          "line": "Katarina's ex-husband Elliot and his assistant Emma — Olivia's mother — are killed after their designs help finish Titan."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1440 @@
+{
+  "slug": "la-casa-de-papel",
+  "tmdbId": 71446,
+  "tvmazeId": 27436,
+  "matchedBy": "imdb_id",
+  "title": "Money Heist",
+  "overview": "To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose. Five months of seclusion - memorizing every step, every detail, every probability - culminate in eleven days locked up in the National Coinage and Stamp Factory of Spain, surrounded by police forces and with dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.",
+  "firstAirDate": "2017-05-02",
+  "network": "Netflix",
+  "poster": "https://image.tmdb.org/t/p/w780/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/original/gFZriCkpJYsApPZEF3jhxL4yLzG.jpg",
+  "backdrops": [
+    "https://image.tmdb.org/t/p/original/gFZriCkpJYsApPZEF3jhxL4yLzG.jpg",
+    "https://image.tmdb.org/t/p/original/xGexTKCJDkl12dTW4YCBDXWb1AD.jpg",
+    "https://image.tmdb.org/t/p/original/tNlkKrypFs6QSUjFVQntFISoFv5.jpg",
+    "https://image.tmdb.org/t/p/original/vUeM9CrnuNEFEop1JoxslSJDRGt.jpg",
+    "https://image.tmdb.org/t/p/original/AfX3K8oGdRl4nyGxtonwNIkRDuf.jpg",
+    "https://image.tmdb.org/t/p/original/lcStZT1Gle2ZE5sN6I3ewcFaBY4.jpg",
+    "https://image.tmdb.org/t/p/original/uneEmfKFbyOZsN77JAHXK1cIAmX.jpg",
+    "https://image.tmdb.org/t/p/original/jfl5bCKQSI6oU00NAbJ3kaySDti.jpg",
+    "https://image.tmdb.org/t/p/original/4wXuQxyWcaIQc3gk1xrbXusdXAB.jpg",
+    "https://image.tmdb.org/t/p/original/piB0f2ukhVM2GEWE06Py7onqhWI.jpg",
+    "https://image.tmdb.org/t/p/original/1launrYJgT0X32JX3ltqUr2nCr.jpg",
+    "https://image.tmdb.org/t/p/original/gFRHLjysseRgbZmMUS3e2oNdFQK.jpg"
+  ],
+  "throughSeason": 3,
+  "totalSeasons": 3,
+  "showType": "Scripted",
+  "genres": [
+    "Action",
+    "Crime",
+    "Thriller"
+  ],
+  "status": "Ended",
+  "runtime": 60,
+  "language": "Spanish",
+  "seasons": [
+    {
+      "season": 1,
+      "name": "Season 1",
+      "airDate": "2017-05-02",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Episode 1",
+          "overview": "The Professor recruits a young female robber and seven other criminals for a grand heist, targeting the Royal Mint of Spain.",
+          "plot": "In the aftermath of a failed bank robbery by a woman named \"Tokyo,\" a man called \"the Professor\" saves her from being caught by the police and proposes a heist of drastic proportions. After a brief outline of the planned heist, the Professor artfully guides a group of robbers: Tokyo, Rio, Berlin, Nairobi, Denver, Moscow, Oslo, and Helsinki to invade the Royal Mint of Spain in red jumpsuits and Salvador Dalí masks and take hold of 67 hostages, as part of their plan to print and escape with €2.4 billion. The police investigator Raquel Murillo is put in charge of the case, but she is unaware that the mastermind behind the heist is closer than she could ever have imagined.",
+          "airDate": "2017-05-02",
+          "still": "https://image.tmdb.org/t/p/original/wKpQvdfzsOf7hKWwU0H8sSXZh1T.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/wKpQvdfzsOf7hKWwU0H8sSXZh1T.jpg",
+            "https://image.tmdb.org/t/p/original/mxdCIxCA6DydRcRUpEXLwZHDWXZ.jpg",
+            "https://image.tmdb.org/t/p/original/7ha4rNW2lmJGAxi9lRho0UwynnX.jpg",
+            "https://image.tmdb.org/t/p/original/rEXiJxj2m7iUjNYLL9SsFNZg7zs.jpg",
+            "https://image.tmdb.org/t/p/original/fOZSQdS2PD3PDKGfU0guzvONaA0.jpg",
+            "https://image.tmdb.org/t/p/original/twWMo302bUtyICjmlncToombTl7.jpg",
+            "https://image.tmdb.org/t/p/original/bh2Knyo4Kg48MzrWXN6uU8iacct.jpg",
+            "https://image.tmdb.org/t/p/original/IM7708nrVqqtFbTGgeeeQjAJrM.jpg",
+            "https://image.tmdb.org/t/p/original/fU16RsKAPAmu3ghEWQ7AKFJBD4D.jpg",
+            "https://image.tmdb.org/t/p/original/oGHxjtrsDaHNkHOLHkjza580iXD.jpg",
+            "https://image.tmdb.org/t/p/original/wlZJoLCOtkNnDgU0SnJRHu5zagQ.jpg",
+            "https://image.tmdb.org/t/p/original/mViwMj9fsoj6e6m1YIczughhHrd.jpg",
+            "https://image.tmdb.org/t/p/original/xN69nK1CzcKcNGLRYV4SiV91jBH.jpg",
+            "https://image.tmdb.org/t/p/original/2bSF1NVzUdMIlSx6K9G5cp64htb.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Episode 2",
+          "overview": "Hostage negotiator Raquel makes initial contact with the Professor. Police grab an image of the face of one of the robbers.",
+          "plot": "The robbers begin to print the money while Arturo Román, one of the hostages, starts making escape plans, assisted by his secretary and mistress Mónica Gaztambide, who is pregnant with his child. She is caught with a concealed cell phone and Berlin orders Denver to kill her. Meanwhile, Rio makes a mistake that leads to his and Tokyo's identities being discovered by the police.",
+          "airDate": "2017-05-09",
+          "still": "https://image.tmdb.org/t/p/original/bxrCLKigYre6WfR8GyNJ4u0FBlX.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/bxrCLKigYre6WfR8GyNJ4u0FBlX.jpg",
+            "https://image.tmdb.org/t/p/original/e5sVue90Xd7kbTLrfbArexjpPEz.jpg",
+            "https://image.tmdb.org/t/p/original/rVHvenlB4VcNeX7joIevfgZZBJR.jpg",
+            "https://image.tmdb.org/t/p/original/4rcDhyDk21sYQercrLeNboW1FNz.jpg",
+            "https://image.tmdb.org/t/p/original/h2c49GtEAJvcfhojTPsgK8DCfwo.jpg",
+            "https://image.tmdb.org/t/p/original/u8aRxYCbBrty766tDhpx8ZT65xV.jpg",
+            "https://image.tmdb.org/t/p/original/unWqMtiGnzGa45TlOJXVEYZGJne.jpg",
+            "https://image.tmdb.org/t/p/original/jcDX7Cg8mTtaXcj0RoaaX1a6pL5.jpg",
+            "https://image.tmdb.org/t/p/original/idrx8wzRveanzvX7oVZV3SB5jN3.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "Episode 3",
+          "overview": "Raquel suffers a personal crisis with her ex. The hostages are frightened by the gunshots they overheard. The thieves argue among themselves.",
+          "plot": "Believing that Denver executed Mónica under Berlin's orders, Moscow, Denver's father, is devastated and attempts to turn himself in but is dissuaded by his son. In the meantime, Raquel's relationship with her new friend Salva becomes more intimate, totally oblivious to the fact that it is a pseudonym assumed by the Professor.",
+          "airDate": "2017-05-16",
+          "still": "https://image.tmdb.org/t/p/original/mS4EuitwU6QJuZZcy9ndDGDmgEp.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/mS4EuitwU6QJuZZcy9ndDGDmgEp.jpg",
+            "https://image.tmdb.org/t/p/original/auJHqHrDt4GRlH05PWCQU6IWsDA.jpg",
+            "https://image.tmdb.org/t/p/original/8CUeEvXECN6upEplYvLRwkns8dH.jpg",
+            "https://image.tmdb.org/t/p/original/2BzQIwmW2JW4bJjzunErlxIydyU.jpg",
+            "https://image.tmdb.org/t/p/original/1bCI46zqIN6WBKFPgxN58xAeoA0.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Episode 4",
+          "overview": "The thieves let a medical team enter the Mint, and an undercover policemansneaks in with them. Can the Professor stay one step ahead of Raquel?",
+          "plot": "Raquel sends her police partner Ángel Rubio into the Mint undercover with a medical team that is allowed to treat Arturo, who was mistakenly shot by the police. However, the Professor sees through her move and inserts a bug in Ángel's glasses.",
+          "airDate": "2017-05-23",
+          "still": "https://image.tmdb.org/t/p/original/h1Jt1XUkSdUGf2NM4PK1yN463tN.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/h1Jt1XUkSdUGf2NM4PK1yN463tN.jpg",
+            "https://image.tmdb.org/t/p/original/yjhor5WRJFWI3T6MeZe0gfgCgqH.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Episode 5",
+          "overview": "Rio is disturbed by news he sees on the television. A break in the investigation puts the Professor at risk of being discovered.",
+          "plot": "The Professor runs ahead of the police to get rid of an important piece of evidence that can endanger his plans, their fingerprints in a car at a scrap yard that Helsinki neglected to destroy. Meanwhile, Denver treats Mónica in a secret location after he shot her leg to fake her execution, and they end up becoming closer.",
+          "airDate": "2017-05-30",
+          "still": "https://image.tmdb.org/t/p/original/w0IbY3aetrS01ZV0YySsLK1ypIA.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/w0IbY3aetrS01ZV0YySsLK1ypIA.jpg",
+            "https://image.tmdb.org/t/p/original/6NihvjQBu4wuak8P5OEllPlwRBQ.jpg",
+            "https://image.tmdb.org/t/p/original/i4uvi0zrSui94jdO0CkMoN3DVwY.jpg",
+            "https://image.tmdb.org/t/p/original/zlmXz4EyEIPqzgvUd9nPmugXGpz.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Episode 6",
+          "overview": "Berlin seeks revenge once his identity is revealed in the press. Tokyo catches Alison chatting with Rio and confronts her.",
+          "plot": "As the Professor rushes out of the scrap yard, a man sees him. The Professor threatens to kill the man's family if the facial composite of his description looks like him. Berlin discovers that Denver did not kill Mónica as ordered and believing that his identity was exposed because of him, comes close to executing him for his disobedience.",
+          "airDate": "2017-06-06",
+          "still": "https://image.tmdb.org/t/p/original/rGfZXEba8shIyNViwSuPbGwHenw.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/rGfZXEba8shIyNViwSuPbGwHenw.jpg",
+            "https://image.tmdb.org/t/p/original/hz2nEBW1eVHTBYlmJuHwPvIDjHw.jpg",
+            "https://image.tmdb.org/t/p/original/yz7k5jGOeytSG61X5f8PA9iJrPY.jpg",
+            "https://image.tmdb.org/t/p/original/nw0H0mx9R39Cs9sk3gNRLmS2HLN.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Episode 7",
+          "overview": "Raquel enters the Mint to secure proof of life that all of the hostages are still alive and well. Nairobi gives Alison advice.",
+          "plot": "The robbers initiate a plan to use the hostages to stall the police and gain more time, but Raquel takes the chance to reveal a secret that Berlin has kept from the others—he only has a few months left to live due to a terminal illness. She also makes an attempt to convince Rio to surrender.",
+          "airDate": "2017-06-13",
+          "still": "https://image.tmdb.org/t/p/original/mTcAokdfaHN7DNvU9BrBKQmuEf0.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/mTcAokdfaHN7DNvU9BrBKQmuEf0.jpg",
+            "https://image.tmdb.org/t/p/original/9tkuidt1yvT6cqiOXE05BVTONwE.jpg",
+            "https://image.tmdb.org/t/p/original/4xeUZ3khWWMvof4bicjT1qTXfPq.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Episode 8",
+          "overview": "Arturo formulates an escape plan for a group of hostages. Ángel and Raquel question each other's loyalties. Mónica makes a move on Denver.",
+          "plot": "Raquel loses her trust in Ángel, who is unaware of the bug the robbers planted in his glasses. Arturo prepares another plan to escape, but becomes devastated upon discovering Mónica and Denver's affair. Ángel, who is taken off the case, is in a coma after a car accident while drunk. He had discovered the Professor's identity through fingerprints taken from his cider factory, a front for his hideout.",
+          "airDate": "2017-06-20",
+          "still": "https://image.tmdb.org/t/p/original/1q5agV2ROKY4nIHD0Sv5PyLONyW.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/1q5agV2ROKY4nIHD0Sv5PyLONyW.jpg",
+            "https://image.tmdb.org/t/p/original/fzgAqAeutxJR7WEe1xgbff6qT7y.jpg",
+            "https://image.tmdb.org/t/p/original/6lsBtJa6t53Uc8CrZQSnojXCvZK.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Episode 9",
+          "overview": "The Professor reveals who gave him the idea for the plan. At the Mint, the thieves offer the hostages a decision: money or freedom?",
+          "plot": "Thanks to Arturo's plan, 17 hostages manage to escape, seriously injuring Oslo in the process. Before his car accident, Ángel had left a voice message on Raquel's landline explaining that Salva was the one behind the heist. Raquel's mother, who has Alzheimer's disease, listens to Ángel's message, writes it down, and tries calling Raquel's phone. When Raquel does not answer, she calls Salva for him to pass along the message. The Professor believes he has no choice but to kill Raquel's mother. He goes to her home and poisons her coffee, but cannot go through with it and knocks the cup out of her hand. When she thinks it was her fault, he realizes that she has Alzheimer's disease and simply deletes the message and takes her note. Later, Raquel brings Salva along to Toledo and finds the robbers' villa, where they planned the heist.",
+          "airDate": "2017-06-27",
+          "still": "https://image.tmdb.org/t/p/original/l4ctte6pCdonsB4AW3wAR0Lt7Bg.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/l4ctte6pCdonsB4AW3wAR0Lt7Bg.jpg",
+            "https://image.tmdb.org/t/p/original/rjCDZbD4yQxkrMcB6EHFdWboxEz.jpg",
+            "https://image.tmdb.org/t/p/original/1R8Vr3oEbqkVp4EEfRX1skaxQ06.jpg",
+            "https://image.tmdb.org/t/p/original/rTRm79UzQJoNBDGw6RO4ZdZ95kN.jpg",
+            "https://image.tmdb.org/t/p/original/jfGc6ZB4LfCpTUPxxXjHIbUJsjt.jpg",
+            "https://image.tmdb.org/t/p/original/bgHX6VTGTsukPa5N5hB4bZAojRn.jpg",
+            "https://image.tmdb.org/t/p/original/yGaTfSGY5g1u9Qf43vf5b93ZJpS.jpg",
+            "https://image.tmdb.org/t/p/original/eYDhHEQnPXeqqCvA4qb2LEIbJkq.jpg",
+            "https://image.tmdb.org/t/p/original/yA7UhBkGl3sFhvqfs7xfme1uSAK.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Episode 10",
+          "overview": "As forensic experts comb the Toledocountry house for DNA, the Professor loses control. Inside the Mint, the robbers' nerves reach a breaking point.",
+          "plot": "In a flashback, The Professor sees his father killed by guards during a heist. At the bank, Tamayo asks Denver to make a deal and tell him where the gold is. Denver refuses and is handed over to police outside the bank. Videos of the heist are released online by The Professor's hackers in Pakistan, showing gold being flushed out of the bank, impacting the stock market dramatically, but Tamayo does not agree to strike a deal with The Professor. Police search for the gold in the wrong locations due to fake clues left by Marseille. Sierra tracks down Rafael and Tatiana, who stole the gold bars, and gives them a message from The Professor. The Professor assures Tamayo that the gold will be returned to the bank if he releases a statement saying that the matter has been peacefully resolved. The news of the trucks bringing the gold back helps stabilize the stock market, but Tamayo discovers the blocks are gold-painted brass. The Professor tells Tamayo that the fake gold bars will save the country's economy, giving him an ultimatum to either continue the lie and let them escape, or reveal the blocks are fake which will topple the economy. Tamayo faces the press and lies that The Professor and his team died while Denver will stay in witness protection after \"revealing\" the location of the gold; he also announces that the hostages and gold reserves are safe, restoring confidence in the Spanish economy. The Professor and his team get new identities and use the gold that Sierra carried across the border to Portugal, and the note is revealed to be a promise to give Rafael and Tatiana a cut. The Professor and his team fly off in an army helicopter to an undisclosed location to start their new lives.",
+          "airDate": "2017-10-16",
+          "still": "https://image.tmdb.org/t/p/original/o2ohwlIbzDRVP5XFLTF2VFpDiYD.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/o2ohwlIbzDRVP5XFLTF2VFpDiYD.jpg",
+            "https://image.tmdb.org/t/p/original/1ePgd8OUgBIsuQ03OGz76zwRe9d.jpg",
+            "https://image.tmdb.org/t/p/original/p2lTBVdtT1Bkqmq01tDOB97qvj1.jpg",
+            "https://image.tmdb.org/t/p/original/f0vvu6hY7av4YymbyyKyqpbEELK.jpg",
+            "https://image.tmdb.org/t/p/original/yUNV0U4PZP0uUO8CIWmwR6Muho0.jpg",
+            "https://image.tmdb.org/t/p/original/hy3Zray1Hu2Trs2osw3TbsQarEV.jpg",
+            "https://image.tmdb.org/t/p/original/oIjmDiIaSuIP7IS2XIylnEXZrd7.jpg",
+            "https://image.tmdb.org/t/p/original/pGGLXjx2uvanjKs0l7Ktpq2Mer1.jpg",
+            "https://image.tmdb.org/t/p/original/vW1gjZMe62iLq1h1UOL0sSsj7Yf.jpg",
+            "https://image.tmdb.org/t/p/original/jJsGI7361J72xiv5PGtdUjeuL2G.jpg",
+            "https://image.tmdb.org/t/p/original/tpMQ18LEsrSHQkSWWepq312AHUv.jpg"
+          ]
+        },
+        {
+          "episode": 11,
+          "name": "Episode 11",
+          "overview": "The police interrogate the first robber to be captured. Furious over Berlin's recent actions, Rio takes a stand against him.",
+          "plot": null,
+          "airDate": "2017-10-23",
+          "still": "https://image.tmdb.org/t/p/original/ixduWz2wsNmxJ7gocG5xWkyDjJd.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ixduWz2wsNmxJ7gocG5xWkyDjJd.jpg",
+            "https://image.tmdb.org/t/p/original/iA95Wzc5qZdwVLspsmzuJCCxaE9.jpg",
+            "https://image.tmdb.org/t/p/original/dRU8JUqzUG0lTf7Lt0PLcyJiGsS.jpg",
+            "https://image.tmdb.org/t/p/original/62zLyyQzF6Nef0ESs8gAcyNC8jx.jpg",
+            "https://image.tmdb.org/t/p/original/foumJ5r7uG9n6KDH6meD8IaCEHR.jpg",
+            "https://image.tmdb.org/t/p/original/h9mPDF231kl5pVgWA2FWE5edGUI.jpg",
+            "https://image.tmdb.org/t/p/original/iu3U79Y3zS5DZWFTUJFyi4h32tQ.jpg",
+            "https://image.tmdb.org/t/p/original/raUTk5aNRrByAkL4FCiKyqoA5Kj.jpg",
+            "https://image.tmdb.org/t/p/original/mWqCe10jwoD9CvXC4x5K8zwnJM2.jpg",
+            "https://image.tmdb.org/t/p/original/vbje7ktsM48BDH4h3hz5HcC8pOP.jpg",
+            "https://image.tmdb.org/t/p/original/iRLp3CR2TySmBVkXqdYae0ufwYR.jpg",
+            "https://image.tmdb.org/t/p/original/5HUd9UVTbM7BUXdzBo6jomjAXeB.jpg",
+            "https://image.tmdb.org/t/p/original/gLNSwOZ2vFdZeYvtAHtaajOIAFa.jpg",
+            "https://image.tmdb.org/t/p/original/BJwVCewob1bkN5JtX9J54OSXYE.jpg",
+            "https://image.tmdb.org/t/p/original/jgbwjn9fqLcqvbwNdirxeV3SLcw.jpg",
+            "https://image.tmdb.org/t/p/original/pXJQIge28ssoaScyxq2BIBWgqg2.jpg",
+            "https://image.tmdb.org/t/p/original/1zGPVcaySqHyXJWpj2EByQLuZXw.jpg",
+            "https://image.tmdb.org/t/p/original/dqjd9tqco7DbFA9QjeLmiSLxcOa.jpg",
+            "https://image.tmdb.org/t/p/original/8zAF7LYXEjxh6sxNA20IE484u98.jpg"
+          ]
+        },
+        {
+          "episode": 12,
+          "name": "Episode 12",
+          "overview": "Recognizing their plan isn't working out, the robbers instead aim to win over the public via the press. Raquel sets a trap to capture the Professor.",
+          "plot": null,
+          "airDate": "2017-11-02",
+          "still": "https://image.tmdb.org/t/p/original/AbABGEWs2IkvStrqyeBxbwmMlUV.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/AbABGEWs2IkvStrqyeBxbwmMlUV.jpg",
+            "https://image.tmdb.org/t/p/original/zqhvq1KeXaPittF7zqsWsyLPGGZ.jpg",
+            "https://image.tmdb.org/t/p/original/yc9iceAxWhDIEOxB6wHXiKNgAas.jpg",
+            "https://image.tmdb.org/t/p/original/zPXVOx5xUYGbgyXghIkcbW6EYXp.jpg",
+            "https://image.tmdb.org/t/p/original/egWrOlj6Ms3BAsnKMJ5guDJDE0V.jpg",
+            "https://image.tmdb.org/t/p/original/dcFuQ9jSEEzTPbWgatZsPfF3RPj.jpg",
+            "https://image.tmdb.org/t/p/original/ljO3LmWAF481XToJUI4Pq9g0eHD.jpg",
+            "https://image.tmdb.org/t/p/original/ub9G4XRqM5pFDxtC4AieKMJjrCP.jpg",
+            "https://image.tmdb.org/t/p/original/5nRtHrz6703rbH5yYye30JzsKuv.jpg",
+            "https://image.tmdb.org/t/p/original/V7tq5NQqwqVpFgpq3iRToJ2AzH.jpg",
+            "https://image.tmdb.org/t/p/original/2VmkpVNZ3fRhQCA5iVr8qgD9qey.jpg",
+            "https://image.tmdb.org/t/p/original/sRcdSJLu8ln4U8oHPfWoMynZJPz.jpg",
+            "https://image.tmdb.org/t/p/original/oxBtFz7JBrx6hUXKcTSJ5CnOQbk.jpg",
+            "https://image.tmdb.org/t/p/original/oPiMka9e02Dobj9gX7PHmTx0Dn1.jpg",
+            "https://image.tmdb.org/t/p/original/hTYGLI4stB5regryMZpjeZb143A.jpg",
+            "https://image.tmdb.org/t/p/original/3NXTH4mR5CIdq9JuUsNzp4B5Hlb.jpg"
+          ]
+        },
+        {
+          "episode": 13,
+          "name": "Episode 13",
+          "overview": "Arturo faces harsh consequences for trying to set another escape plan in motion. After making a confession, Moscow loses Denver's trust.",
+          "plot": null,
+          "airDate": "2017-11-09",
+          "still": "https://image.tmdb.org/t/p/original/oy19Zieotq2GK5gjTM7gyYl24wu.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/oy19Zieotq2GK5gjTM7gyYl24wu.jpg",
+            "https://image.tmdb.org/t/p/original/YlXlJz4eNqmLSY760ZplgI4IdH.jpg",
+            "https://image.tmdb.org/t/p/original/hQjEfTEcNq3CQvMCucWExZktH6E.jpg",
+            "https://image.tmdb.org/t/p/original/SpqjMvIsZ5QGJ2lbF9CVMcqmR3.jpg",
+            "https://image.tmdb.org/t/p/original/ejEAxGF4zKoZ57ZdV2J5dPQPK5I.jpg",
+            "https://image.tmdb.org/t/p/original/tQIGuRKaZMcy6H0rkaxcH4ZEua5.jpg",
+            "https://image.tmdb.org/t/p/original/3PiOi0j1yeIeLob9qFWzzYqwzwQ.jpg",
+            "https://image.tmdb.org/t/p/original/67HilAa2y4jYpO5Gy20STgfbt4S.jpg",
+            "https://image.tmdb.org/t/p/original/nBFyCYpjdiYH9UOdlCk8lzeA1XK.jpg",
+            "https://image.tmdb.org/t/p/original/mRXPqre2xNyCnfma5qaMQ0znkBD.jpg",
+            "https://image.tmdb.org/t/p/original/itnZzTvd1N8J7HxFcABYFzgM67W.jpg",
+            "https://image.tmdb.org/t/p/original/6TYwq3WFP5NxxiwqPmCayz6F6oU.jpg",
+            "https://image.tmdb.org/t/p/original/lnSZKcC0HM2zuQSKxMcykmpeHn6.jpg",
+            "https://image.tmdb.org/t/p/original/4PtzpLakufjQzRgxMgbaSk6Hu04.jpg",
+            "https://image.tmdb.org/t/p/original/A5kjFK4mLVkePwngCrd3Hmwjd9j.jpg"
+          ]
+        },
+        {
+          "episode": 14,
+          "name": "Episode 14",
+          "overview": "When Raquel's relationship with the Professor is discovered and she's removed from the case, she decides to conduct her own search for the mastermind.",
+          "plot": null,
+          "airDate": "2017-11-16",
+          "still": "https://image.tmdb.org/t/p/original/hJb0sOE99VNSFmXTeXSiGKUhsz5.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/hJb0sOE99VNSFmXTeXSiGKUhsz5.jpg",
+            "https://image.tmdb.org/t/p/original/uFqd7NyMm3DciW9ce5o7xlKuwXg.jpg",
+            "https://image.tmdb.org/t/p/original/jk68c5PTgKcQwYZv25z2v8GvShT.jpg",
+            "https://image.tmdb.org/t/p/original/7oXoNGwL3TKABdnAjZ8TyHWTiQx.jpg",
+            "https://image.tmdb.org/t/p/original/67KN7Aq0CWMv3A958OR4JaiT1ai.jpg",
+            "https://image.tmdb.org/t/p/original/6UTyjQH0RqsdGKNk0LB1a8gCHHy.jpg",
+            "https://image.tmdb.org/t/p/original/UyDI1USFGA4FtuYoa78k8e9UZb.jpg",
+            "https://image.tmdb.org/t/p/original/jxjSf74nLPtRDs7nWNTsYSq6DDa.jpg",
+            "https://image.tmdb.org/t/p/original/a5yfis16tisPimlI19A7Y3qcWHC.jpg",
+            "https://image.tmdb.org/t/p/original/xCTb6pg4LGwV8DRuiG7KXChQtnE.jpg",
+            "https://image.tmdb.org/t/p/original/ArObwt68m0gZDOZk4X94Bbx74Kp.jpg",
+            "https://image.tmdb.org/t/p/original/hd1VLHOV1LkejSloueMQDIer6be.jpg",
+            "https://image.tmdb.org/t/p/original/sPd3wZFqJfRYOBuYk7Vimfo1HN1.jpg",
+            "https://image.tmdb.org/t/p/original/6dOG4gYLw7Km09Q6MUlD2Vx8AJy.jpg",
+            "https://image.tmdb.org/t/p/original/zmBF7t1F7TvrZQkBpkhueqNQ7g6.jpg"
+          ]
+        },
+        {
+          "episode": 15,
+          "name": "Episode 15",
+          "overview": "As the police enter the Mint, Berlín leads the robbers in a final showdown. Will they escape with the 984 million euros—and with their lives intact?",
+          "plot": null,
+          "airDate": "2017-11-23",
+          "still": "https://image.tmdb.org/t/p/original/rrYS8n8hcEPTMmXIA0SpBW7AKei.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/rrYS8n8hcEPTMmXIA0SpBW7AKei.jpg",
+            "https://image.tmdb.org/t/p/original/h682JuqfVF233AlyKR0QKIwRSaX.jpg",
+            "https://image.tmdb.org/t/p/original/nVaBB2SPQoGYUXl9HdRwhlFKfLE.jpg",
+            "https://image.tmdb.org/t/p/original/u3wsQR8AQslZXE0vToaw3myKmBL.jpg",
+            "https://image.tmdb.org/t/p/original/tDIaPlQ1cACtbDDAHDg6SsZlT0Q.jpg",
+            "https://image.tmdb.org/t/p/original/2RB4MMMZkmKquUTrc6KvGJkwxqT.jpg",
+            "https://image.tmdb.org/t/p/original/2DfPWxvifTGUjPAssxacSUQRBmh.jpg",
+            "https://image.tmdb.org/t/p/original/e3xLQ0u04ezGp1BxxXeQpldjC4L.jpg",
+            "https://image.tmdb.org/t/p/original/8QjlyleSTT8zm9dSCP0dZrLb8fB.jpg",
+            "https://image.tmdb.org/t/p/original/giNgwCLOc3eKxglHX8qoaR32p04.jpg",
+            "https://image.tmdb.org/t/p/original/cNe37XiFodDY7wmYtTueAL7Qoxm.jpg",
+            "https://image.tmdb.org/t/p/original/kAprein8B0vMhhJ1OQLGbLoMaJo.jpg",
+            "https://image.tmdb.org/t/p/original/jPmYeWHPFsqMDJfBCg2046yzB23.jpg",
+            "https://image.tmdb.org/t/p/original/uwkxbCaoCJdi5u5RGl0PJP0F82Z.jpg",
+            "https://image.tmdb.org/t/p/original/gGiYY3swB9UxAjogFarPfIz3VKc.jpg",
+            "https://image.tmdb.org/t/p/original/1P8FRriITAIF6MtHLYZlfjRhuID.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 2,
+      "name": "Season 2",
+      "airDate": "2019-07-19",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "We're Back",
+          "overview": "When Rio is captured, a distraught Tokyo turns to the Professor for help. Armed with a bold new plan, they reunite the team in order to rescue him.",
+          "plot": "A team of police are brought to the discovered villa and search through \"evidence\" planted by the Professor earlier. Raquel's ex-husband Alberto is called in to lead the forensics examination, and finds burned evidence about the Professor in the chimney. In the Mint, Helsinki decides to euthanise his cousin Oslo, which he does so tearfully. Salva rides back to Madrid with Alberto and provokes him into a fight, knocking him out and erasing the evidence. When Alberto awakes, he arrests the Professor and brings him to jail. The Professor uses the bathroom at the prison and beats himself up to make it look like Alberto was the aggressor. He calls Raquel, who helps release him. Meanwhile, the robbers start losing hope after many hours without news from the Professor, and Tokyo begins a mutiny after becoming restless.",
+          "airDate": "2019-07-19",
+          "still": "https://image.tmdb.org/t/p/original/vHrz83swVVJ8iPmK3DcsfIzGxVf.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/vHrz83swVVJ8iPmK3DcsfIzGxVf.jpg",
+            "https://image.tmdb.org/t/p/original/zhonsZivM8W9z7L5ErKg1okKP38.jpg",
+            "https://image.tmdb.org/t/p/original/3TuyNZBAgZtZTXiZUfY6JgVoHmc.jpg",
+            "https://image.tmdb.org/t/p/original/xdOnZlyanpFInHbIpqgNNP9KjuC.jpg",
+            "https://image.tmdb.org/t/p/original/A9LYCotLEMiI6FTbnjZOVJ1jwzh.jpg",
+            "https://image.tmdb.org/t/p/original/fnbWs8N9cnlqCzodK9r5xMXmziq.jpg",
+            "https://image.tmdb.org/t/p/original/yoMNXaKUd5S0Wgxz73s5iH5m7qF.jpg",
+            "https://image.tmdb.org/t/p/original/xiMbvoYx4q8Yltbhsji6el84MC4.jpg",
+            "https://image.tmdb.org/t/p/original/fea6V4DxudZ9rCrAcBgMKkDDD7J.jpg",
+            "https://image.tmdb.org/t/p/original/jTse66azjMASsDBhSoArl8tr1Bf.jpg",
+            "https://image.tmdb.org/t/p/original/atOOAICWycGnlnIL2mJ4TgQi51s.jpg",
+            "https://image.tmdb.org/t/p/original/iGTVLkIiMeJMyCmhDzHbU4Q4jNJ.jpg",
+            "https://image.tmdb.org/t/p/original/gCsOs9Yc3OFOMNtwlpZXl846YUv.jpg",
+            "https://image.tmdb.org/t/p/original/a10KzMXDl1YQjMqTG8qmVEkxDwI.jpg",
+            "https://image.tmdb.org/t/p/original/7EnlREgrWOgYKy0fg1u0sUDkEUq.jpg",
+            "https://image.tmdb.org/t/p/original/idRqT5MbAyZHH4Ala8Ionqg4Sea.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Aikido",
+          "overview": "The Professor recruits Martin to put his brother's plan into action and target the Bank of Spain. First step? Create total chaos.",
+          "plot": "Berlin exacts revenge on Tokyo for her mutiny, in which she played Russian roulette with him — he ties her to a table and rolls her out the front door to the police. Rio wants revenge. Tokyo fakes an injury to buy time, the Professor's number one rule after being captured. During interrogation, she comes face to face with Raquel, who wants the answer to one burning question, “Who is the Professor?”",
+          "airDate": "2019-07-19",
+          "still": "https://image.tmdb.org/t/p/original/wg7nd7r0Iptr2W8kW37OSed1C4q.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/wg7nd7r0Iptr2W8kW37OSed1C4q.jpg",
+            "https://image.tmdb.org/t/p/original/cwFuj35BzUNWSNSoAyOscwpAT2n.jpg",
+            "https://image.tmdb.org/t/p/original/v1q2ozB6VtutAZn9CzkP7DnIfLy.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "48 Meters Underground",
+          "overview": "Tokyo and Nairobi's efforts go drastically awry. The Professor recalls Berlin detailing how they'd steal the gold from the water-logged vault.",
+          "plot": "By the Professor's promise that he will free Tokyo from the police, Rio rejoins the robbers and helps them stop Arturo's latest escape plan. Meanwhile, Raquel sets a trap for the Professor by creating a hoax that Ángel has awakened from his coma, in hopes it will lure him to the hospital to finish him off before he can identify the Professor. The Professor, skeptical of the announcement, posts a fake casting call for clowns at the hospital and dresses up like one, blending in with the crowd while confirming the hoax. Later, while Salva meets with Raquel at a cafe, she sees an orange hair from his clown wig on his jacket. She finally realises that Salva is the Professor.",
+          "airDate": "2019-07-19",
+          "still": "https://image.tmdb.org/t/p/original/aZ9Ipswcn8UzeR15G0gahUCX0eM.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/aZ9Ipswcn8UzeR15G0gahUCX0eM.jpg",
+            "https://image.tmdb.org/t/p/original/spPTaCE4MlUXpcbqIwHbDoxTkAM.jpg",
+            "https://image.tmdb.org/t/p/original/8HzZhmlZ6bVH1wP4w293moPdUJ4.jpg",
+            "https://image.tmdb.org/t/p/original/3GQjLHHztjtqmajZS9A1ODhFvqF.jpg",
+            "https://image.tmdb.org/t/p/original/AndZATJJc3HJbRGmwCkZuUsCICC.jpg",
+            "https://image.tmdb.org/t/p/original/9CZ9vkR9bWexwRFXOGjgeakd4bq.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "It's Dolphin Time",
+          "overview": "Tamayo's breaches of protocol surprise the Professor. Bogota calms Denver's anxieties. With time running out, Palermo initiates the \"Flipper\" plan.",
+          "plot": "Raquel takes the Professor into custody and interrogates him at the villa. The Professor admits that he has fallen in love with her, and she performs a polygraph test on him. Meanwhile, Arturo is punished for his multiple attempts to escape and Moscow reveals a secret to Denver: Moscow left his wife and Denver's mother when he was young because she was a drug addict. Denver is outraged and says he will cut Moscow out of his life. While Tokyo is transported to prison, she is freed by mercenaries sent by the Professor. She rides a motorcycle directly into the Mint, avoiding being shot by police as Moscow opens the door.",
+          "airDate": "2019-07-19",
+          "still": "https://image.tmdb.org/t/p/original/z0EfI5uIhU3i72AvN0BypDJvaCn.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/z0EfI5uIhU3i72AvN0BypDJvaCn.jpg",
+            "https://image.tmdb.org/t/p/original/kN6AZzI5P94A6PjMm36jBp90UDz.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Boom, Boom, Ciao",
+          "overview": "The Professor shocks officials with his latest stunt, but in response, a new inspector rattles Raquel. Palermo and Nairobi get into a heated argument.",
+          "plot": "Moscow is gravely injured by police gunfire and the police refuse to send aid. The robbers rush to finish their escape tunnel. Having escaped from and incapacitated Raquel, the Professor waits for her to wake up. He confronts her, using the fact that he did not escape while she was unconscious as proof of his love. He walks out of the villa held at gunpoint by Raquel, but she is emotionally unable and unwilling to stop him from escaping. Colonel Prieto, Suárez, and Alberto confront Raquel and remove her from the case after they identify the Professor as Salva (Sergio), with whom they believe Raquel is co-operating. With her gun and badge taken away, she steals Ángel's badge and starts to conduct her own investigation by looking through surveillance footage of restaurants to determine the route the Professor took from his hideout. As she leaves, Ángel awakens.",
+          "airDate": "2019-07-19",
+          "still": "https://image.tmdb.org/t/p/original/zZmgnMUdb0WadXK45k3zYjnEhnL.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/zZmgnMUdb0WadXK45k3zYjnEhnL.jpg",
+            "https://image.tmdb.org/t/p/original/xAXtOfwzTGqEgRfh59A3jqwonFq.jpg",
+            "https://image.tmdb.org/t/p/original/mm62JpWMdmEy55fxgPlQnLDKpuh.jpg",
+            "https://image.tmdb.org/t/p/original/aztqhSECq35ebHkUekvkHtR8VSP.jpg",
+            "https://image.tmdb.org/t/p/original/1xTX9sAzRvYbtqb08KjlSt09k2s.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Everything Seemed Insignificant",
+          "overview": "Just as Inspector Sierra orchestrates a plan to sneak a team into the Bank of Spain, the Professor and Raquel lose communication with Palermo.",
+          "plot": "The police, led by Suárez, launch an attack on the Mint to liberate the hostages and capture the robbers. The robbers rush to escape with the €984 million they printed, less than half of their estimate. Raquel finds the Professor's hideout and she is tied up. Raquel and the Professor kiss passionately and he lets her go. Raquel visits Ángel in the hospital, where the police arrest her. At a moral crossroads, she initially refuses to divulge the Professor's hideout, but when Colonel Prieto threatens her with several charges that would cause her to lose custody of her daughter, she relents. As the police race to the hideout, a tactical squad inside the Mint is fought off by Berlin so the rest of the robbers can escape in time, until he is shot multiple times. The remaining robbers, with the addition of Mónica, escape to the Professor's hideout minutes before the police arrive to find it empty. One year later, Raquel has left the force and the robbers' whereabouts are still unknown. When Raquel notices coordinates on a postcard previously given to her by the Professor, she tracks him down in Palawan, Philippines.",
+          "airDate": "2019-07-19",
+          "still": "https://image.tmdb.org/t/p/original/xwC5rYKGxmmgQSyl5CdsZrinc7W.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/xwC5rYKGxmmgQSyl5CdsZrinc7W.jpg",
+            "https://image.tmdb.org/t/p/original/9V5mWCLcM0sQIYPzERhdILph3hp.jpg",
+            "https://image.tmdb.org/t/p/original/t9yeoINMnBRFgIJheWPDYVZJr70.jpg",
+            "https://image.tmdb.org/t/p/original/ozCtduUAI0v76w9TrEuBecmG07K.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "A Quick Vacation",
+          "overview": "Tokyo's happiness turns bittersweet. Angel closes in on a quarreling Raquel and the Professor. Authorities offer a multimillion-dollar reward for tips.",
+          "plot": "Sierra and the Professor evade police and plan to team up for the remainder of the heist. On the other hand, gold starts being pumped out from the bank to a stormwater tank, using the pump that Berlin had stolen in the past, where Benjamin's crew start melting and shaping it into gold bars.",
+          "airDate": "2019-07-19",
+          "still": "https://image.tmdb.org/t/p/original/rdEe6T90dIwwvbY0S7lvMRuiW54.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/rdEe6T90dIwwvbY0S7lvMRuiW54.jpg",
+            "https://image.tmdb.org/t/p/original/iq1cWRAI3vUV9ZFA5PeKWp1fvni.jpg",
+            "https://image.tmdb.org/t/p/original/qUD0YAi2yQ8JGGnEZpdVW0i4mXj.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "Astray",
+          "overview": "Tokyo attempts to drown her sorrows. Sierra uses personal tactics to target a vulnerable Nairobi, while Suarez continues to hunt down Raquel.",
+          "plot": "The Professor's team celebrates the successful transportation of the gold to their secret location, unaware of the fact that police raided that location. Meanwhile Sagasta executes a successful plan to convince Lisbon into assuming that all his team are dead and he is left with only one severely injured soldier, who needs medical attention. Lisbon agrees to allow doctors into the bank while one of Sagasta's soldiers hides and secretly defuses bombs around the entrances of the bank so special forces could easily enter. In a flashback, Berlin's wife, Tatiana, leaves him for his own son, Rafael.",
+          "airDate": "2019-07-19",
+          "still": "https://image.tmdb.org/t/p/original/eCPX3gwiC1I9rklbnpFczLgH1c8.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/eCPX3gwiC1I9rklbnpFczLgH1c8.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Game Over",
+          "overview": "Anger and grief heighten tensions between the group. The Professor, while in mourning, attempts to make a daring and dangerous escape.",
+          "plot": "Police arrest the Professor and Sierra along with Benjamin's crew. The Professor later learns that someone hoodwinked them and stole all the gold in a fake police raid. They inform the team inside the bank about the stolen bars of gold and minutes later special forces storm in and take control of bank. The Professor offers to surrender himself at the bank and ask Benjamin's crew to help Sierra in searching for the stolen gold and start \"Plan Tom Thumb\".",
+          "airDate": "2020-04-03",
+          "still": "https://image.tmdb.org/t/p/original/6M4lJXIRAwWBH9C2cZfm6YjwV9o.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/6M4lJXIRAwWBH9C2cZfm6YjwV9o.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "Berlin's Wedding",
+          "overview": "Palermo shocks the group with his actions. Sierra pressures her subject to take a deal. The Professor remembers his brother's wedding.",
+          "plot": "In a flashback, The Professor sees his father killed by guards during a heist. At the bank, Tamayo asks Denver to make a deal and tell him where the gold is. Denver refuses and is handed over to police outside the bank. Videos of the heist are released online by The Professor's hackers in Pakistan, showing gold being flushed out of the bank, impacting the stock market dramatically, but Tamayo does not agree to strike a deal with The Professor. Police search for the gold in the wrong locations due to fake clues left by Marseille. Sierra tracks down Rafael and Tatiana, who stole the gold bars, and gives them a message from The Professor. The Professor assures Tamayo that the gold will be returned to the bank if he releases a statement saying that the matter has been peacefully resolved. The news of the trucks bringing the gold back helps stabilize the stock market, but Tamayo discovers the blocks are gold-painted brass. The Professor tells Tamayo that the fake gold bars will save the country's economy, giving him an ultimatum to either continue the lie and let them escape, or reveal the blocks are fake which will topple the economy. Tamayo faces the press and lies that The Professor and his team died while Denver will stay in witness protection after \"revealing\" the location of the gold; he also announces that the hostages and gold reserves are safe, restoring confidence in the Spanish economy. The Professor and his team get new identities and use the gold that Sierra carried across the border to Portugal, and the note is revealed to be a promise to give Rafael and Tatiana a cut. The Professor and his team fly off in an army helicopter to an undisclosed location to start their new lives.",
+          "airDate": "2020-04-03",
+          "still": "https://image.tmdb.org/t/p/original/5SBoRUwJd1gEZpdTzE3FE1MfQJM.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/5SBoRUwJd1gEZpdTzE3FE1MfQJM.jpg"
+          ]
+        },
+        {
+          "episode": 11,
+          "name": "Anatomy Lesson",
+          "overview": "The Professor's mole attempts to pass along his message to the person inside the tent. Denver's jealousy toward Mónica and Rio's friendship heightens.",
+          "plot": null,
+          "airDate": "2020-04-03",
+          "still": "https://image.tmdb.org/t/p/original/f8X4FBmSFeZMFQd7eppYzegxNTB.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/f8X4FBmSFeZMFQd7eppYzegxNTB.jpg"
+          ]
+        },
+        {
+          "episode": 12,
+          "name": "Pasodoble",
+          "overview": "In the past, Berlin predicts that Gandía will cause problems for the operation. Sierra's interrogation of Lisboa leads to a personal revelation.",
+          "plot": null,
+          "airDate": "2020-04-03",
+          "still": "https://image.tmdb.org/t/p/original/n2bwgzPiPD834xqmN1PaD2RGQis.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/n2bwgzPiPD834xqmN1PaD2RGQis.jpg"
+          ]
+        },
+        {
+          "episode": 13,
+          "name": "5 Minutes Earlier",
+          "overview": "Denver turns to an undercover source for help. Nairobi attempts to motivate her team as the danger around them intensifies.",
+          "plot": null,
+          "airDate": "2020-04-03",
+          "still": "https://image.tmdb.org/t/p/original/5GeudJkpHc0TuCmF59wah8oWyVj.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/5GeudJkpHc0TuCmF59wah8oWyVj.jpg",
+            "https://image.tmdb.org/t/p/original/xBAGFHDDQnajYgbs9G0JSFbyfwZ.jpg"
+          ]
+        },
+        {
+          "episode": 14,
+          "name": "TKO",
+          "overview": "With Nairobi held hostage, Gandía negotiates with the crew. The Professor desperately seeks a new plan to save his team.",
+          "plot": null,
+          "airDate": "2020-04-03",
+          "still": "https://image.tmdb.org/t/p/original/etw1tw6CoJciWKhsQOqCdYY61sg.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/etw1tw6CoJciWKhsQOqCdYY61sg.jpg"
+          ]
+        },
+        {
+          "episode": 15,
+          "name": "Strike the Tent",
+          "overview": "The group reels following the attack on one of their own. The Professor puts his adjusted plan in motion with the help of new recruits and Palermo.",
+          "plot": null,
+          "airDate": "2020-04-03",
+          "still": "https://image.tmdb.org/t/p/original/8Wux83X2Ff6q1z3bItIuUpuQdlz.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/8Wux83X2Ff6q1z3bItIuUpuQdlz.jpg"
+          ]
+        },
+        {
+          "episode": 16,
+          "name": "The Paris Plan",
+          "overview": "The Professor, Benjamin and the others attempt to free Lisboa. Tokyo's anger threatens her faith in the plan. Sierra takes matters into her own hands.",
+          "plot": null,
+          "airDate": "2020-04-03",
+          "still": "https://image.tmdb.org/t/p/original/tTmzHsIA2tsLYIK9lHTRLvBpZqs.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/tTmzHsIA2tsLYIK9lHTRLvBpZqs.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 3,
+      "name": "Season 3",
+      "airDate": "2021-09-03",
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "The End of the Road",
+          "overview": "The Professor faces off with Sierra as Tamayo raises the stakes of the negotiations by calling the army. In the past, Berlin meets with a family member.",
+          "plot": "Over two years after the heist, Arturo gives a talk to a large crowd condemning the gang as \"terrorists.\" Meanwhile, Tokyo and Rio have relocated to Guna Yala, Panama; Nairobi and Helsinki to La Pampa, Argentina; and Denver, Mónica and her baby to Java, Indonesia. Wanting a change of scenery, Tokyo leaves Rio in Guna Yala for the city. As she leaves, Rio gives her a phone he bought on the black market so that they can communicate. A call from Rio is intercepted by Europol and he is captured, while Tokyo escapes. She calls the Professor using a secure line, and is transported to Thailand where they meet. The Professor, alongside Raquel (now codenamed \"Lisbon\"), reunites the gang to rescue Rio who has been arrested and presumed to be undergoing torture. The Professor enlists three new members, Bogotá, Palermo and Marseille, into the gang and begins planning an assault on the Bank of Spain, from an Italian monastery.",
+          "airDate": "2021-09-03",
+          "still": "https://image.tmdb.org/t/p/original/vsuCslrn4bqNIBAoAr60kjcfKIq.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/vsuCslrn4bqNIBAoAr60kjcfKIq.jpg"
+          ]
+        },
+        {
+          "episode": 2,
+          "name": "Do You Believe in Reincarnation?",
+          "overview": "Arturo seizes an opportunity to fight back while escalating a personal vengeance. Lisbon makes a crucial discovery.",
+          "plot": "The Professor initiates the plan to rob the Bank of Spain using airships to release money across Madrid. The government responds by mobilizing the army, which the robbers use to provide cover and entry into the Bank. In flashbacks, the Professor recruits Palermo, real name Martín Berrote, an experienced thief and former associate to replace Berlin. The Professor and Palermo explain that their strategy for this robbery is based on Aikido, a martial art that uses an enemy's force to create an advantage. As the robbers enter the Bank, public sentiment rallies to their side in the form of mass government protests and riots over the illegal imprisonment of Rio, demanding that he receive a public trial.",
+          "airDate": "2021-09-03",
+          "still": "https://image.tmdb.org/t/p/original/yWlo42n3faN9y6bx6xWfm1qsvYE.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/yWlo42n3faN9y6bx6xWfm1qsvYE.jpg"
+          ]
+        },
+        {
+          "episode": 3,
+          "name": "The Spectacle of Life",
+          "overview": "A betrayaland an emergency both catch Sierra by surprise. Palermo rallies the troops as the army closes in on the gang.",
+          "plot": "While commandeering the Bank, the robbers engage in a series of intense conflicts with guards and government officials. Palermo, the commander in charge, is temporarily blinded by glass shrapnel in the struggle, though he retains command after Nairobi removes it. The robbers locate accomplices among the hostages who were previously planted in the Bank and go to work on opening the vault, which is rigged to flood with water once tampered with. Bogotá uses his expertise in diving and welding to overcome the lock down, granting access to the gold. In flashbacks, Berlin and Palermo explain the plan for breaking into the vault, stating that every step of the plan requires perfection to work with no room for error.",
+          "airDate": "2021-09-03",
+          "still": "https://image.tmdb.org/t/p/original/fHFvxdoZImxQ3zIEWLZjDsRG9Dl.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/fHFvxdoZImxQ3zIEWLZjDsRG9Dl.jpg"
+          ]
+        },
+        {
+          "episode": 4,
+          "name": "Your Place in Heaven",
+          "overview": "With Helsinki's life in danger, the thieves mount a covert counter attack. Years earlier, Berlin and his son conduct their first heist together.",
+          "plot": "The crew begins the next phase of the robbery while the Professor addresses the new government officials from the intelligence directorate. Colonel Luis Tamayo and the heavily pregnant Inspector Alicia Sierra prove to be formidable adversaries, as they quickly realize that they must change their strategies drastically from the first robbery. Sierra tortures Rio for more information and Tamayo plans an assault on the bank with Suárez. The robbers reveal that they know about a second, secret vault behind the gold and attempt to persuade Mario Urbaneja, governor of the Bank, to open it for them. When he refuses, Denver hits him, triggering a seizure; they resuscitate him and use explosives instead.",
+          "airDate": "2021-09-03",
+          "still": "https://image.tmdb.org/t/p/original/z6TR4IsbvZmyLXn72VmPGU1Hu93.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/z6TR4IsbvZmyLXn72VmPGU1Hu93.jpg"
+          ]
+        },
+        {
+          "episode": 5,
+          "name": "Live Many Lives",
+          "overview": "While surrounded by gunfire and trapped in the kitchen, Tokyo reminisces about her first love and her initial encounter with the Professor.",
+          "plot": "A love interest between Palermo and Helsinki is revealed. Given no other option, the robbers detonate the inner vault door inside the flooded main chamber. It works and grants them access to \"the red boxes\"—cases filled with government secrets that were too dangerous to lock anywhere else. Tamayo's assault begins, taking the robbers and the Professor by surprise. To stall for time and prevent bloodshed, Denver runs into the line of fire with a truce flag carrying two of the red cases, which forces Tamayo to stop. He reveals to Sierra the contents of the cases and that the Professor has the advantage—an attack might force the robbers to make the secrets public. However, Sierra is able to unbalance the Professor and Lisbon with psychological taunting. Inside the bank, the team divides when Nairobi and Palermo disagree over the use of force on the unruly restrained guards. Nairobi reveals her love for Helsinki and berates Palermo for not acting on his feelings for Berlin while the latter was alive.",
+          "airDate": "2021-09-03",
+          "still": "https://image.tmdb.org/t/p/original/bDLP0zhFCgJIZuzSyHevh8PJgAm.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/bDLP0zhFCgJIZuzSyHevh8PJgAm.jpg"
+          ]
+        },
+        {
+          "episode": 6,
+          "name": "Escape Valve",
+          "overview": "Sierra takes advantage of the Professor's grief and gains the upper hand. Meanwhile, the team deals with the emotional fallout of their dead friend.",
+          "plot": "In flashbacks, the Professor discusses the plans for the bank with Martín, Andrés, and Andrés' love interest, Tatiana, where he is immediately alarmed at how much she knows. Andrés defends her, stating that he is in love, but the Professor vehemently disagrees, arguing that the first rule of the heist must be to forego personal attachments. In the present, Sierra plans to neutralize the Professor's blackmail leverage by releasing false information to the media. Tamayo agrees and organizes a second breach led by Suárez. The Professor and Lisbon have an argument and lose communication with the team inside the bank, just after learning this. Having relied on mobile transportation and broadcasting, they become stuck when a tree breaks their antenna and the wheels of their RV sink in mud. They narrowly escape detection with the help of some sympathetic local farmers. They then manage to inform the team of the breach 10 minutes before it happens, who defeat, capture, unclothe, and humiliate the breaching team by forcing them to sing \"Bella ciao\" on video. Given no other option, Tamayo and Sierra agree to release Rio in exchange for the breaching team and 40 hostages.",
+          "airDate": "2021-12-03",
+          "still": "https://image.tmdb.org/t/p/original/kyFggNyULzYtXma2MsqDdzrQgXO.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/kyFggNyULzYtXma2MsqDdzrQgXO.jpg"
+          ]
+        },
+        {
+          "episode": 7,
+          "name": "Wishful Thinking",
+          "overview": "Tamayo mounts a manhunt in his neighborhood as his foes hide. In the past, Berlin and Palermo explain how they plan on getting the gold out of the bank.",
+          "plot": "The exchange proceeds smoothly and Rio rejoins the gang. While the hostages are leaving, Arturo, wanting to see Mónica, runs into the Bank of Spain and becomes a hostage. During the reunion, the police and government intelligence team listen in on their conversations, having implanted a listening device inside Rio before releasing him. In flashbacks, the Professor instructs the team, preparing them to detect and remove these devices surgically from Rio, if the time comes. He instructs Tokyo to act normally in spite of the listening device, as he hopes to use their sexual intimacy to convince the police that the listening device is working. Privately, Rio breaks up with Tokyo, believing that she will be better off with someone else. Nairobi then surgically removes the listening device. The police manage to locate the Professor and Lisbon using a drone, forcing them to separate and try to escape on foot; the Professor camouflages himself in a tree, while Lisbon is unable and takes refuge in a barn.",
+          "airDate": "2021-12-03",
+          "still": "https://image.tmdb.org/t/p/original/dycCBXEIZJaLe6LX2tg4AP377V4.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/dycCBXEIZJaLe6LX2tg4AP377V4.jpg"
+          ]
+        },
+        {
+          "episode": 8,
+          "name": "The Elegance Theory",
+          "overview": "Tamayo hunts for the gold as the team races against the clock. Mónica worries she's having a psychotic break. Years earlier, Berlin is deceived.",
+          "plot": "Tokyo gets drunk and insults Rio. In the forest, a massive manhunt begins for the Professor and Lisbon. Lisbon is discovered in the barn by farmers, which begins a Mexican Standoff. The robbers create a diversion to make the police think that they are escaping, drawing resources away from the manhunt. Meanwhile, Sierra brings Nairobi's son, Axel, in front of the bank, luring Nairobi to a window. Sierra gives the green light for a police sniper to shoot, and Nairobi is shot in the chest. As the robbers scramble to aid Nairobi, the police begin the assault. In the forest, Suárez and the Civil Guard find Lisbon and remove the farmers from the barn. At Sierra's orders, Suárez fakes her execution and takes her into custody; the Professor hears the charade over Lisbon's microphone and becomes despondent. Palermo radios the Professor to inform him of the incoming assault and the Professor declares DEFCON 2. Tokyo and Rio destroy the approaching armoured car with RPG-7s.",
+          "airDate": "2021-12-03",
+          "still": "https://image.tmdb.org/t/p/original/gtP4Hja3ktZVOiMAYLkEk9dSuRD.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/gtP4Hja3ktZVOiMAYLkEk9dSuRD.jpg"
+          ]
+        },
+        {
+          "episode": 9,
+          "name": "Pillow Talk",
+          "overview": "The Professor is left reeling after his tactics are used against him, and when it seems like all hope is lost, he makes a bold decision.",
+          "plot": "Police arrest the Professor and Sierra along with Benjamin's crew. The Professor later learns that someone hoodwinked them and stole all the gold in a fake police raid. They inform the team inside the bank about the stolen bars of gold and minutes later special forces storm in and take control of bank. The Professor offers to surrender himself at the bank and ask Benjamin's crew to help Sierra in searching for the stolen gold and start \"Plan Tom Thumb\".",
+          "airDate": "2021-12-03",
+          "still": "https://image.tmdb.org/t/p/original/AtD92LLJiHVjIJqNDaSw1qZeMIb.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/AtD92LLJiHVjIJqNDaSw1qZeMIb.jpg"
+          ]
+        },
+        {
+          "episode": 10,
+          "name": "A Family Tradition",
+          "overview": "With multiple lives on the line and Spain's economy at stake, the Professor and Tamayo engage in one final showdown.",
+          "plot": "In a flashback, The Professor sees his father killed by guards during a heist. At the bank, Tamayo asks Denver to make a deal and tell him where the gold is. Denver refuses and is handed over to police outside the bank. Videos of the heist are released online by The Professor's hackers in Pakistan, showing gold being flushed out of the bank, impacting the stock market dramatically, but Tamayo does not agree to strike a deal with The Professor. Police search for the gold in the wrong locations due to fake clues left by Marseille. Sierra tracks down Rafael and Tatiana, who stole the gold bars, and gives them a message from The Professor. The Professor assures Tamayo that the gold will be returned to the bank if he releases a statement saying that the matter has been peacefully resolved. The news of the trucks bringing the gold back helps stabilize the stock market, but Tamayo discovers the blocks are gold-painted brass. The Professor tells Tamayo that the fake gold bars will save the country's economy, giving him an ultimatum to either continue the lie and let them escape, or reveal the blocks are fake which will topple the economy. Tamayo faces the press and lies that The Professor and his team died while Denver will stay in witness protection after \"revealing\" the location of the gold; he also announces that the hostages and gold reserves are safe, restoring confidence in the Spanish economy. The Professor and his team get new identities and use the gold that Sierra carried across the border to Portugal, and the note is revealed to be a promise to give Rafael and Tatiana a cut. The Professor and his team fly off in an army helicopter to an undisclosed location to start their new lives.",
+          "airDate": "2021-12-03",
+          "still": "https://image.tmdb.org/t/p/original/ilpHAUoDo7xM9YBBD2oFi1q6krQ.jpg",
+          "stills": [
+            "https://image.tmdb.org/t/p/original/ilpHAUoDo7xM9YBBD2oFi1q6krQ.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "cast": [
+    {
+      "name": "Úrsula Corberó",
+      "character": "Tokio",
+      "episodeCount": 41,
+      "profile": "https://image.tmdb.org/t/p/original/cmH8Z459tw9YkR61QfxlCSlZw9P.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/380/951053.jpg"
+    },
+    {
+      "name": "Itziar Ituño",
+      "character": "Raquel Murillo",
+      "episodeCount": 41,
+      "profile": "https://image.tmdb.org/t/p/original/l7XfYka8XxPj0fYjq22lvyxkJ7S.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/380/951044.jpg"
+    },
+    {
+      "name": "Álvaro Morte",
+      "character": "Profesor",
+      "episodeCount": 41,
+      "profile": "https://image.tmdb.org/t/p/original/2TGPhdpRC5wjdFEJqnLYiN5kbwg.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/380/951042.jpg"
+    },
+    {
+      "name": "Pedro Alonso",
+      "character": "Berlín",
+      "episodeCount": 41,
+      "profile": "https://image.tmdb.org/t/p/original/38HeVKeOBztVYrLJOWzAtEZiB02.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/380/951051.jpg"
+    },
+    {
+      "name": "Miguel Herrán",
+      "character": "Río",
+      "episodeCount": 41,
+      "profile": "https://image.tmdb.org/t/p/original/eFNlbsaMODCHys35ZQOkMQNh0Jq.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/380/951045.jpg"
+    },
+    {
+      "name": "Jaime Lorente",
+      "character": "Denver",
+      "episodeCount": 41,
+      "profile": "https://image.tmdb.org/t/p/original/nLaxzU92z14FIbe25sE8jDMIThZ.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/380/951059.jpg"
+    },
+    {
+      "name": "Esther Acebo",
+      "character": "Estocolmo",
+      "episodeCount": 41,
+      "profile": "https://image.tmdb.org/t/p/original/d7N6RWdMQmTI7wL44Ys4uvuSIoQ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Enrique Arce",
+      "character": "Arturo Román",
+      "episodeCount": 41,
+      "profile": "https://image.tmdb.org/t/p/original/1lACQepfukuZ0l6FnUpMO03WxcJ.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/108/270329.jpg"
+    },
+    {
+      "name": "Darko Perić",
+      "character": "Helsinki",
+      "episodeCount": 41,
+      "profile": "https://image.tmdb.org/t/p/original/u3WigKj7tUriLC9Z5XbHuTNk4Wx.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/380/951047.jpg"
+    },
+    {
+      "name": "Alba Flores",
+      "character": "Nairobi",
+      "episodeCount": 31,
+      "profile": "https://image.tmdb.org/t/p/original/vWUZkQKxj63qTNBa8DvEd0CpU64.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/380/951052.jpg"
+    },
+    {
+      "name": "Fernando Soto",
+      "character": "Ángel Rubio",
+      "episodeCount": 29,
+      "profile": "https://image.tmdb.org/t/p/original/9tqHD2lgTyEaINR6OBQHnPfGVT9.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mario de la Rosa",
+      "character": "Suárez",
+      "episodeCount": 28,
+      "profile": "https://image.tmdb.org/t/p/original/2EafPw8ar2K8eWfIsx8d5HByBgE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Najwa Nimri",
+      "character": "Alicia Sierra",
+      "episodeCount": 26,
+      "profile": "https://image.tmdb.org/t/p/original/qwFICDukwvAepZmtd0G5mH1lniU.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/380/951054.jpg"
+    },
+    {
+      "name": "Rodrigo de la Serna",
+      "character": "Palermo",
+      "episodeCount": 26,
+      "profile": "https://image.tmdb.org/t/p/original/hArSCSwj92ItqVMni7D8ehInnU5.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/380/951058.jpg"
+    },
+    {
+      "name": "Hovik Keuchkerian",
+      "character": "Bogotá",
+      "episodeCount": 26,
+      "profile": "https://image.tmdb.org/t/p/original/o5cGKWHlZl4RFROYlT2hD95j0lN.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/380/951063.jpg"
+    },
+    {
+      "name": "Luka Peroš",
+      "character": "Marsella",
+      "episodeCount": 26,
+      "profile": "https://image.tmdb.org/t/p/original/lfh7959EpR9gAvrjObNGXaUg2qF.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/380/951046.jpg"
+    },
+    {
+      "name": "Belén Cuesta",
+      "character": "Manila",
+      "episodeCount": 26,
+      "profile": "https://image.tmdb.org/t/p/original/caDd0J8smaQMvVjgJsDYabe4dzk.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Fernando Cayo",
+      "character": "Luis Tamayo",
+      "episodeCount": 26,
+      "profile": "https://image.tmdb.org/t/p/original/sglfXHNFlzOBBLuRrbDkxghSW4H.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/210/525171.jpg"
+    },
+    {
+      "name": "Paco Tous",
+      "character": "Moscú",
+      "episodeCount": 21,
+      "profile": "https://image.tmdb.org/t/p/original/uDGKTKKv9v2JRutCZJjKwpJVKOs.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/380/951049.jpg"
+    },
+    {
+      "name": "Juan Fernández",
+      "character": "Alfonso Prieto",
+      "episodeCount": 20,
+      "profile": "https://image.tmdb.org/t/p/original/biMQMuVw79qKcWLXHebZmAO9lvj.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kiti Mánver",
+      "character": "Mariví Fuentes",
+      "episodeCount": 18,
+      "profile": "https://image.tmdb.org/t/p/original/1hMLpxmw3HP6yx6LtH0UgMiFGmA.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Olalla Hernández",
+      "character": "Amanda",
+      "episodeCount": 18,
+      "profile": "https://image.tmdb.org/t/p/original/a5PtbDRsMgRBpBxr29Q8obwUnZz.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Carlos Suárez",
+      "character": "Miguel Fernández",
+      "episodeCount": 18,
+      "profile": "https://image.tmdb.org/t/p/original/u5rNLvm41egbGSyRVisFxkzhyPx.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Antonio Romero",
+      "character": "Benito Antoñanzas",
+      "episodeCount": 17,
+      "profile": "https://image.tmdb.org/t/p/original/55YbLYvIjAvkwX7bdT0dHf6wqN0.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Pep Munné",
+      "character": "Mario Urbaneja",
+      "episodeCount": 16,
+      "profile": "https://image.tmdb.org/t/p/original/t6MJozPb86TkMeUmacWCyborQkW.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ahikar Azcona",
+      "character": "Matías Caño",
+      "episodeCount": 16,
+      "profile": "https://image.tmdb.org/t/p/original/pQkKg22fvuhx3rrTc9N6C2eXCvG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Roberto García Ruiz",
+      "character": "Oslo",
+      "episodeCount": 16,
+      "profile": "https://image.tmdb.org/t/p/original/zaEYmC7DhMHgbdPovfmYVZD8spJ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "María Pedraza",
+      "character": "Alison Parker",
+      "episodeCount": 15,
+      "profile": "https://image.tmdb.org/t/p/original/2CMZgfH6xcH0azdueMcK7Py8qBJ.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/108/270328.jpg"
+    },
+    {
+      "name": "Mari Carmen Sánchez",
+      "character": "Paquita",
+      "episodeCount": 15,
+      "profile": "https://image.tmdb.org/t/p/original/ySRvcYRl6K9UdGpXvAmL2uaORG1.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Anna Gras",
+      "character": "Mercedes Colmenar",
+      "episodeCount": 14,
+      "profile": "https://image.tmdb.org/t/p/original/s2Qg33f410HKj19IaM4M2T9R1L.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Clara Alvarado",
+      "character": "Ariadna Cascales",
+      "episodeCount": 12,
+      "profile": "https://image.tmdb.org/t/p/original/9CiG2Hj1vwHw31YO1CkF2a2L0M5.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "José Manuel Poga",
+      "character": "César Gandía",
+      "episodeCount": 11,
+      "profile": "https://image.tmdb.org/t/p/original/baaV0r14Jnit0OZA4jv2BTWb3QO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Cristina Saavedra",
+      "character": "Ella misma",
+      "episodeCount": 11,
+      "profile": "https://image.tmdb.org/t/p/original/jtMSb1wRDxTsxiqcB0PVXzTKWUi.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mikel Bustamante",
+      "character": "Martínez",
+      "episodeCount": 10,
+      "profile": "https://image.tmdb.org/t/p/original/aTzyqha9XMs2ggMvu2c579OtJ96.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Fran Morcillo",
+      "character": "Pablo Ruiz",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/ovPzGuRvMQhB4OrC6lfxlEGLewD.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Miquel García Borda",
+      "character": "Alberto Vicuña",
+      "episodeCount": 9,
+      "profile": "https://image.tmdb.org/t/p/original/cAw6py4F8VjJ0QScGxCTkw6CE99.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Naia Guz Sanchez",
+      "character": "Paula Vicuña",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/7TX9lvcFbfHLi9pV7jRo7qLSBSH.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Diana Gómez",
+      "character": "Tatiana",
+      "episodeCount": 8,
+      "profile": "https://image.tmdb.org/t/p/original/sB06F3ke3Y0R2JXUx94w8khsVku.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ramon Agirre",
+      "character": "Benjamín",
+      "episodeCount": 7,
+      "profile": "https://image.tmdb.org/t/p/original/iDLBCTz6mANvckYPL3KDkUTLfl6.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Xabi Ortuzar",
+      "character": "Gómez",
+      "episodeCount": 6,
+      "profile": "https://image.tmdb.org/t/p/original/y4qLbenSC3bmCU9seyJ8IGZmeD.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "José Manuel Seda",
+      "character": "Sagasta",
+      "episodeCount": 5,
+      "profile": "https://image.tmdb.org/t/p/original/sTkfJeYfoJ8aZzjDXBl969KTGqu.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alberto Amarilla",
+      "character": "Ramiro",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/gv3K3xFqKdd82KyBk4FZzKESHRM.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Agnès Llobet",
+      "character": "Pilar",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/3xAzKeKVbYLYJ6lvMoRRxy2yEMq.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Rafael Rojas",
+      "character": "Jefe de Estado Mayor de la Defensa",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/dSD8aihOuopcCunj176Pl9Iq16B.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Paolo Sanminiatelli",
+      "character": "Giovanni",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/6GbPC3FEM9XyzUzZIrBNqXRT07Y.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mustafa Haidari",
+      "character": "Shakir (voice)",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/ya9C139lPT5rOBLWSi1PVa9Ian3.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Roman Rymar",
+      "character": "El Polaco",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/zJGmESBZi9dOzp3veNyFndHCiAk.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Antonio García Ferreras",
+      "character": "Él mismo",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/vrH0mAxj7MSZxOpRDYDTuA4H5t6.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Patrick Criado",
+      "character": "Rafael de Fonollosa",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/irGL3gnK6EkiL1EsMAEzXkZ58U8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Pedro Pablo Isla",
+      "character": "Jacinto",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/qFwWd4OCvPd1OIvUCx4JhopNRMd.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Pep Tosar",
+      "character": "Sánchez",
+      "episodeCount": 3,
+      "profile": "https://image.tmdb.org/t/p/original/smKTVFGwQxxB7xViCg7pp3TST9R.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Chema Ruiz",
+      "character": "Ministro de Interior",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/zStHsJjfm4J00CRsqyP2brMIJKW.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Dariam Coco",
+      "character": "Amiga de Tokio",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/jhobanaZRtzdMUeNvm5CtApm8tI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Chacha Huang",
+      "character": "Amiga de Tokio",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/mX4V4KQa5p1YXniwSOwdXvsHqAk.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Neymar",
+      "character": "João",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/rSRCt66IreMqjr6IqaaCcOs4G30.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jesús Lloveras",
+      "character": "Adiestrador de Tokio",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/c4qASKR8pxBxSYwLWd937VzkdRw.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Javier Bolea",
+      "character": "Periodista",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/iNX4u07SukORiF0osqYg1gzU2Kx.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Manuel Gancedo",
+      "character": "Cliente bar",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/74HIL5WwKAzSqOQPDT7C1fCqB8P.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Irene Molina",
+      "character": "Periodista",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/redTPq0T0Rz0cH0JqYaLzez4exl.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Déborah Guerrero",
+      "character": "Periodista",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/mdhm8bZbCkXzcfPca3eG5egeaCl.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Edward J. Bentley",
+      "character": "",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/pkKeyHY6grEU2cV7f6RZlFyCboy.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Marina Esteve",
+      "character": "Periodista",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/x8zYBUp1RlexPj6oAN5t2OYW0iA.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Marjorie Glantz",
+      "character": "Periodista",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/oaCwz4loyMRnSzZy8bHhaGz158K.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Maya Murofushi",
+      "character": "Periodista",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/xJ6BCNswvTKgkPWrK83kk5wyCmi.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Xavi Sáez",
+      "character": "Policía",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/y8TEc4i2sdERhtXjYDTT5jnakiI.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Bárbara de Lema",
+      "character": "Periodista",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/p8TbweB5glrrOHFz05hO9ZTA1xM.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mery Cabezuelo",
+      "character": "Periodista",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/3ZGaO72qJOn00U9iBxIVYNqLMhl.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Florencia Nocetti",
+      "character": "Rosario Barremechea",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/eMx98sUREUEUnkr1Vw41FFuKtwc.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Peter Nikolas",
+      "character": "Nikolai Dimitrievich",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/4b8ugGK6TsVvGGjTCqA7MchBYoh.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Óscar Zafra",
+      "character": "Paco Cortés",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/latkUliJh9WcQXucVzChFlw6Z11.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Oti Manzano",
+      "character": "Madre de Río",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/u7CL3lYaXZAjDWkfe8XOkMQ513v.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Elisabet Gelabert",
+      "character": "Mari Carmen",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/3mK2F3fFzXVVBIhGQqRDp0FCUnl.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Miguel Ángel Silvestre",
+      "character": "René",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/ft14HqAFsvk0o2m5rOXrfYUI4KA.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Javier Perdiguero",
+      "character": "Agente Romero",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/9tDPho39gwEPXpmvVtXpeNtxy93.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Praxedes Nieto",
+      "character": "Detenido",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/3gixDSNIZsD3S3hbo17cyeqrqQZ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Erika Bleda",
+      "character": "Presentadora",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/38XBJJe1v3JfuIlHe05E2fa8iwd.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Julia Otero",
+      "character": "Ella misma",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/eQuiMyDKeDcfnmhAGdCzZumAfaO.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Ainhoa Santamaría",
+      "character": "Laura Román",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/rpa4VYRYCxMCGqnSz4slx6O8DkY.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mercedes Pascua",
+      "character": "Ella misma",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/v58n4SmhLzYPdjM4nFiPcSeyWey.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Luis Bermejo",
+      "character": "Compañero de celda de Berlín",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/rl4hG3Ou4N244hq5eKhGLz0gIBL.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Susanna Griso",
+      "character": "Presentadora de Espejo Público",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/AuQvdBHERrOruwRJbLhAZBtoS37.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alfonso Egea",
+      "character": "Self",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/acDlfBpZkEcSc9b3BF3q1NU1Dx3.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nacho Abad",
+      "character": "Self",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/aCgEd9zMiHuzRgfUdZF4OHk2kw8.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jesús Gallo",
+      "character": "Teniente Alcázar",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/5Ep77vJatLLxAxYBaBpqpYE4iXj.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nathalie Portela",
+      "character": "Secretaria de Estado",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/eQUiFavaOxZ7SLe8wWBfzlsqkIz.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "José de Luna",
+      "character": "Perico",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/qJT2chpQAnZkZm0VDAUKYzPi7UJ.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Chema del Barco",
+      "character": "Manolo",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/xDqPC3FvDZclYJnSHmmIJZ9qza7.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Juanma Lara",
+      "character": "Paco",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/wdSbwVDFDt2SsS6nX0nyhYo5h3r.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Joaquín Gómez",
+      "character": "Pedro",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/kBibeuuZiwdiHGT3PwJlWrDPMHn.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Susi Sánchez",
+      "character": "Reni",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/hsOZ4Hyw3Zu2GnariSg28sUixPV.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Federico Pérez Rey",
+      "character": "Bernardo",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/gNUzohRc1a7qXVrTkkmeonLifBg.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Carlos Cabra",
+      "character": "Justino",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/vBpv2mKWjcEn7qUfJDt3DuQ6wcG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Enrique Asenjo",
+      "character": "Arturo",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/wiOM7gboDHj9fqlIZsBSSIaEkdv.jpg",
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/108/270329.jpg"
+    },
+    {
+      "name": "Rodrigo Gibaja",
+      "character": "Axel",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/bGP4znp5jtAffS9AHsUKf6GsZIz.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Roberto Chapu",
+      "character": "Ingeniero",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/nNYbmoJ6zZR0qrpKsJdKY72SjAC.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Toni Salgado",
+      "character": "Policía",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/8ZqdEwtAwzjcOsslOmy4AeX4wYi.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Adelfa Calvo",
+      "character": "Madre de Tokio",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/uC6ZquT9cTTgZfJ1SLMTYZXrU1u.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Néstor Arnas",
+      "character": "Médico",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/q8MquZMavGYRzOC24j7lf3DV62S.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Gonzalo Bouza",
+      "character": "Policía",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/7doEnnzHGZXsyfBSLpYhd2oZtyz.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Pedro Freijeiro",
+      "character": "Policía",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/iN3IxYyifM8MGnzJM0c2rDWgkQq.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Maarten Dannenberg",
+      "character": "Hans",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/pvivKULDeayAAWRXaWaXRw0Vcvf.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Montse Peidró",
+      "character": "Farmacéutica",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/9qQdZzuMZLVDVKS4HttTYIhC7YC.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Leticia Etala",
+      "character": "Agente de policía",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/wObNso37fj0dZ6JEnBs6pCXuDiw.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Cristina Pardo",
+      "character": "Ella misma",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/a0xs5a4QjYcTkDhxgJynQPRzOlG.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Fran Morales",
+      "character": "Policía",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/pZDK8aoKWVaGffiNNr27vc2GFFt.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Pere Brasó",
+      "character": "Agente Pérez",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/ajCYIfizzSwi95NPztJtSgJr4qF.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Mario Mayo",
+      "character": "Policía",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/xzEjSgLCkrwQ1HZ7OY6CbSNM9wM.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Alejandro Bazzano",
+      "character": "Médico ucraniano",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/dOETAQu48p5CfZnYwtabe8Wbk0b.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Gloria García Barquero",
+      "character": "Teniente Lorenzo",
+      "episodeCount": 1,
+      "profile": "https://image.tmdb.org/t/p/original/3GyuLBCp1CL1HgYyephYGObpkfA.jpg",
+      "inCharacter": null
+    }
+  ],
+  "generatedAt": "2026-07-25T15:42:03.229Z"
+}

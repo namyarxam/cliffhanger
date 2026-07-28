@@ -1,0 +1,196 @@
+{
+  "slug": "empire",
+  "generatedFor": "Empire",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The dying king names his heir",
+          "text": "Lucious is diagnosed with ALS and told he has three years; he pits sons Andre, Jamal and Hakeem against each other to name a successor before Empire's IPO.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The show's premise. Every S1 arc keys off this succession contest.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Cookie out, Bunkie down",
+          "text": "Cookie returns after 17 years in prison and forces her way back into the business as Jamal's manager. Lucious silences her cousin Bunkie's blackmail with a bullet.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Cookie is the show's second engine; the Bunkie murder is the crime that will bring Lucious down at season's end.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The cover-up",
+          "text": "Vernon and Andre both uncover the Bunkie murder and help hide it — Vernon paying a false confessor, Andre giving Lucious an alibi that binds him to his father.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Vernon's knowledge is what makes him the FBI's eventual witness; Andre's alibi ties him permanently to Lucious's crime.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · White Party",
+          "text": "At the White Party, Jamal comes out by remixing Lucious's song, and Anika — betrayed after Lucious sleeps with Cookie — walks out and joins rival Billy Beretti.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Jamal's outing frees him to be heir; Anika's defection is the seed of the coalition that will try to seize Empire.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Andre breaks",
+          "text": "Passed over for CEO and cut from the family album, Andre stops taking his bipolar medication and spirals into a breakdown that lands him in a psychiatric hospital.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Explains why Andre ends the season aligned with Cookie's takeover instead of at his father's side.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Jamal heir, Vernon dead",
+          "text": "Lucious names Jamal his heir. Vernon and Andre fight over the cover-up; Rhonda intervenes and accidentally kills Vernon, then tells Andre she is pregnant.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Jamal's promotion triggers the family's takeover plot; Vernon's corpse and Rhonda's pregnancy are the two secrets that will drive early S2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The wrong witness",
+          "text": "Sedated, Lucious confesses Bunkie's murder to Cookie. As the family plots a takeover, he is arrested at his legacy concert — but the FBI's witness is Vernon, not Cookie.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "This is exactly where S2 opens; Lucious's mistaken belief that Cookie turned him in shapes how he treats her from behind bars.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Lucious has been arrested at his legacy concert and blames Cookie for turning him in — unaware his real accuser was Vernon, whose body Andre and Rhonda are hiding after she killed him. Cookie, Andre, Hakeem and Anika are moving to seize Empire while he sits in a cell.",
+        "questions": [
+          "Can Cookie's coalition actually take Empire while Lucious is locked up?",
+          "How long can Andre and Rhonda hide Vernon's body — and her pregnancy?",
+          "What will Lucious do to Cookie when he learns she is not the one who turned him in?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Lucious Lyon",
+          "line": "Empire's founder, just arrested at his own concert for Bunkie's murder; his illness turned out to be treatable and he'd already named Jamal his heir."
+        },
+        {
+          "name": "Cookie Lyon",
+          "line": "His ex-wife, back after 17 years in prison, now leading a hostile takeover of Empire with Andre, Hakeem and Anika."
+        },
+        {
+          "name": "Jamal Lyon",
+          "line": "Their gay middle son who came out at the White Party — Lucious's newly named successor as CEO of Empire."
+        },
+        {
+          "name": "Andre Lyon",
+          "line": "Their bipolar eldest, briefly committed after a breakdown; now out and conspiring with Cookie against his father."
+        },
+        {
+          "name": "Hakeem Lyon",
+          "line": "Their volatile youngest, an Empire rapper, now siding with Cookie in the takeover of the company."
+        },
+        {
+          "name": "Anika Calhoun",
+          "line": "Lucious's spurned ex-fiancée; after catching him with Cookie she defected to rival Billy Beretti and joined the takeover coalition."
+        },
+        {
+          "name": "Rhonda Lyon",
+          "line": "Andre's ambitious wife, now pregnant — she accidentally killed Vernon in a fight and helped hide the body."
+        },
+        {
+          "name": "Vernon Turner",
+          "line": "Empire's fixer who covered up Bunkie's murder for Lucious — and, unknown to anyone, was the FBI's true witness before Rhonda killed him."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Jamal was the mole",
+          "text": "With Lucious jailed, Cookie plots a hostile takeover of Empire with investor Mimi Whiteman. Jamal reveals he was his father's inside man all along, and the coup collapses.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The reveal reorients the whole family: it explains why Cookie fights Empire from outside all season, and why Jamal is estranged from her.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Lyon Dynasty rises, Lucious walks",
+          "text": "Betrayed, Cookie starts rival label Lyon Dynasty with Andre and Hakeem, cutting out Anika. Lawyer Thirsty Rawlings gets Lucious out on bail.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Founds the rival label that structures the first half of the season and introduces Thirsty, Lucious's new fixer.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Vernon surfaces",
+          "text": "Rhonda and Andre are caught moving Vernon's body; grateful, Lucious welcomes Andre back to Empire, and Vernon's discovery clears the murder charges against him.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The Bunkie case that put Lucious in jail collapses here — freeing him to fight for Empire and pulling Andre back to his father's side.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Camilla topples Lucious, Anika drops Rhonda",
+          "text": "Mimi's wife Camilla takes control at the board and ousts Lucious as CEO. That same night, Anika pushes pregnant Rhonda down the stairs and Rhonda loses the baby.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The season's pivot: Lucious loses Empire and Anika commits the crime whose eventual discovery drives the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Hakeem takes the chair",
+          "text": "Hakeem is installed as the new CEO. Lucious confesses to Hakeem that he killed Bunkie and dares him to shoot back; Hakeem refuses.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Hakeem now knows the murder that structures the entire show, and holds a CEO chair his father wants back.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Camilla poisoned",
+          "text": "Hakeem records Camilla admitting she used Mimi. Lucious catches Camilla poisoning Mimi's drink and forces her to drink it herself; he and Cookie return as co-CEOs.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Removes Camilla and installs the co-CEO arrangement the family walks into the next season with.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · ASA bullet, altar deal, balcony",
+          "text": "Freda Gathers shoots Jamal at the ASAs, missing Lucious. Lucious marries pregnant Anika to block her testimony; Rhonda corners her on a balcony and one of them goes over.",
+          "anchorEpisode": 18,
+          "whyLoadBearing": "The finale's three cliffhangers in a single chain — Jamal wounded, a spousal-privilege marriage, and the balcony fall the next season opens on.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "At Hakeem's wedding, Lucious has just married Anika — pregnant with Hakeem's baby — to stop her testifying against him. Rhonda, now certain Anika pushed her down the stairs, cornered her on a balcony, and one of them went over.",
+        "questions": [
+          "Which of them went over the balcony — Rhonda or Anika?",
+          "Will Jamal recover from Freda's stray bullet, and can he hold the family to peace as he demanded?",
+          "Can Lucious and Cookie actually run Empire together as co-CEOs, or will the marriage to Anika detonate everything?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Lucious Lyon",
+          "line": "Empire's founder, back as co-CEO with Cookie after outmaneuvering Camilla; just married Anika at Hakeem's wedding to stop her testifying against him."
+        },
+        {
+          "name": "Cookie Lyon",
+          "line": "Folded her Lyon Dynasty label back into Empire and now sits as co-CEO alongside Lucious."
+        },
+        {
+          "name": "Jamal Lyon",
+          "line": "In hospital after taking Freda Gathers's stray bullet at the ASAs; has demanded the family stop hurting each other."
+        },
+        {
+          "name": "Hakeem Lyon",
+          "line": "Briefly Empire's CEO before Lucious returned; his fiancée Laura walked out of their wedding on learning Anika is expecting his baby."
+        },
+        {
+          "name": "Andre Lyon",
+          "line": "Back at Empire on new bipolar medication; devastated by Rhonda's miscarriage and helpless as she went to confront Anika."
+        },
+        {
+          "name": "Rhonda Lyon",
+          "line": "Lost her baby after Anika shoved her down the stairs; just cornered Anika on a balcony where one of them went over."
+        },
+        {
+          "name": "Anika Calhoun",
+          "line": "Pregnant with Hakeem's baby and freshly married to Lucious; she is the one who pushed Rhonda down the stairs."
+        },
+        {
+          "name": "Freda Gathers",
+          "line": "Empire rapper and daughter of Frank Gathers; shot Jamal at the ASAs while trying to kill Lucious in revenge for her father."
+        }
+      ]
+    }
+  }
+}

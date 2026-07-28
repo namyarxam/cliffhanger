@@ -1,0 +1,196 @@
+{
+  "slug": "your-friends-and-neighbors",
+  "generatedFor": "Your Friends & Neighbors",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Fired and discarded",
+          "text": "Already divorced after Mel's affair with his best friend Nick, hedge fund manager Coop is fired by his boss Jack via a fabricated HR complaint.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The double loss of career and marriage is the pressure that pushes Coop into crime — everything else follows from it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · First theft",
+          "text": "To keep his family's lifestyle afloat without a paycheck, Coop pockets cash at a neighbor's party, then returns the next day to burgle the empty house.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The pattern the whole series is built on: robbing his own social circle to sustain the appearance of belonging to it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Elena and Lu",
+          "text": "Nick's housekeeper Elena catches Coop mid-robbery and proposes they team up, using her network of maids for intel and Lu as their pawnshop fence.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Establishes the crew — Elena, Lu, Coop — that runs the operation from here on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Sam and Paul",
+          "text": "Coop's on-off affair with neighbor Sam sours after a bad art-heist night with dealer Christian, and Coop later finds Sam's ex-husband Paul dead in her house.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Coop's entanglement with Sam and his presence at Paul's death are the ingredients Sam will use to frame him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Arrested at the funeral",
+          "text": "Detective Lin finds bloody evidence and the murder weapon in Coop's car and arrests him at Paul's funeral, in front of the entire neighborhood.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The public collapse of Coop's life — job gone, marriage gone, now branded a killer in front of everyone he knows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Sam framed him",
+          "text": "Coop and Elena find a hidden suicide note proving Sam staged Paul's death to keep his $20M life insurance; Sam is arrested and Coop is cleared.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The reversal that removes Sam from the board and returns Coop to Westmont as a wronged man.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Chooses the thief's life",
+          "text": "Offered his old job back by Jack, Coop instead steals a painting from Jack's mansion, choosing the thief's life over the finance world that discarded him.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The show's declaration of what Coop actually is now. The next season starts from this choice.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Coop has beaten a murder charge and been welcomed back into Westmont — but instead of returning to Jack's firm he's stolen from him and doubled down on the burglaries. Everyone he loves believes he is innocent of everything.",
+        "questions": [
+          "How long can Coop keep the thefts hidden from Mel, his kids, and Barney?",
+          "Where does the escalation end when he's willing to rob his old boss?",
+          "Is Sam finished, or will she come back at him from prison?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Andrew \"Coop\" Cooper",
+          "line": "Fired hedge fund manager turned career burglar; just beat a murder charge and chose the thief's life over returning to finance."
+        },
+        {
+          "name": "Mel Cooper",
+          "line": "Coop's therapist ex-wife; ended her affair with Nick, defended Coop through the trial, and still loves him."
+        },
+        {
+          "name": "Sam Levitt",
+          "line": "The neighbor Coop was sleeping with, now jailed for framing him for the staged 'murder' of her ex-husband Paul to collect a $20M life insurance payout."
+        },
+        {
+          "name": "Nick",
+          "line": "Coop's best friend and former NBA champion; Mel's ex-affair partner who has accepted she still loves Coop."
+        },
+        {
+          "name": "Elena",
+          "line": "Nick's housekeeper turned Coop's full partner in the crew; runs intel through her housekeeper network and drove the getaway car all season."
+        },
+        {
+          "name": "Lu",
+          "line": "Bronx pawnshop owner and the fence for every piece Coop and Elena steal; a hard, dangerous business partner."
+        },
+        {
+          "name": "Jack Bailey",
+          "line": "Coop's former boss who engineered his firing to absorb his accounts; unaware Coop just stole a painting from his mansion."
+        },
+        {
+          "name": "Barney Choi",
+          "line": "Coop's business manager and closest friend outside Westmont; still doesn't know Coop is a thief."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Barney learns and joins",
+          "text": "A back spasm mid-heist forces Coop to call Barney for help, exposing the burglaries; Barney signs on and launders the cash through Nick's gym franchise.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Pulls Barney and Nick's business into the crime — the structure that unravels at the season's end.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ashe arrives",
+          "text": "Shipping billionaire Owen Ashe buys a mansion from the ostracized Sam and pursues her, then catches Coop on hidden camera stealing a rare Wharton book from his home.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces the season's antagonist and the leverage he'll use against Coop.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Blackmailed into Excelsior",
+          "text": "Ashe — sanctioned as a suspected arms dealer — blackmails Coop with the tape into funneling $400M into Jack Bailey's exclusive Excelsior fund on his behalf.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The engine of the season: Coop is now working for the man who has him on tape.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Greece, then Ron",
+          "text": "Coop lands the Excelsior investment on a trip to Greece with Jack, then returns home to find his estranged father Ron has died and meets Ron's secret longtime lover.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Cements the trap and shifts the family — Coop is grieving while Ashe tightens the screws.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The squeeze",
+          "text": "Ashe's lawyer DeMille freezes the cash laundered through Nick's gyms and Ashe demands more investment, tightening his grip on Coop, Barney, and Nick.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The financial choke that makes the confrontation with Ashe inevitable.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ashe dies in the cover-up",
+          "text": "Confronted over the returned investment, a drugged Ashe catches fire and rampages with a gun; Coop, Barney, and Nick then cover up his accidental death by drowning.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The season's climax and the shared secret that binds the three men into next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The evidence and the book",
+          "text": "Weeks later DeMille quietly hands Coop the blackmail tape — Mel witnesses the handoff — and Ashe's sunken car is finally discovered as Mel writes a book about Coop.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Sets three ticking clocks for next season: Mel's suspicion, the police finding Ashe, and Mel's book about him.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ashe is at the bottom of a lake but his car has just surfaced, and Mel has seen DeMille handing Coop something. Nick has fired Barney and blown up his marriage; Elena has cleared her debts by letting a drug dealer rob Nick's mansion; Coop's inner circle is fracturing on every side.",
+        "questions": [
+          "How much of the handoff did Mel piece together, and what goes into her book?",
+          "Will the recovered car lead police to Coop, Barney, or Nick?",
+          "Who really orchestrated Coop's kidnapping — Cricket Birch, or someone else still watching him?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Andrew \"Coop\" Cooper",
+          "line": "Now an established burglar with a New York office; covered up the death of the arms dealer who was blackmailing him and just got the tape back."
+        },
+        {
+          "name": "Mel Cooper",
+          "line": "Reconciled emotionally with Coop and rewriting her book around his ordeals; just witnessed DeMille handing him something she doesn't understand."
+        },
+        {
+          "name": "Sam Levitt",
+          "line": "Rehabilitated in Westmont after community service and a brief romance with Ashe; ended it before helping cover up his death and reconciled with Mel."
+        },
+        {
+          "name": "Nick",
+          "line": "Fronted the gym franchise that laundered the crew's cash; drove the car that killed Ashe, is drowning in guilt, and has just fired Barney."
+        },
+        {
+          "name": "Elena",
+          "line": "Newly a US citizen; distanced from Coop after his silence and settled her family's debt by letting the dealer Félix rob Nick's mansion."
+        },
+        {
+          "name": "Barney Choi",
+          "line": "Coop's business manager and now a knowing partner in the crimes; fired by Nick and separated from his pregnant wife Grace."
+        },
+        {
+          "name": "Owen Ashe",
+          "line": "Sanctioned shipping billionaire and suspected arms dealer who blackmailed Coop; presumed drowned after the cover-up, his car now recovered from the lake."
+        },
+        {
+          "name": "Jack Bailey",
+          "line": "Coop's former boss and Excelsior fund manager; accepted the return of Ashe's investment once Coop warned him of its illegality."
+        }
+      ]
+    }
+  }
+}

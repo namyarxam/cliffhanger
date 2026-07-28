@@ -1,0 +1,203 @@
+{
+  "slug": "avatar-the-last-airbender",
+  "generatedFor": "Avatar: The Last Airbender",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The Avatar wakes",
+          "text": "Siblings Katara and Sokka thaw a boy named Aang from an iceberg. He is the Avatar, missing a hundred years since the Fire Nation wiped out his people.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the premise and the Aang–Katara–Sokka trio the whole series follows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Zuko's chase",
+          "text": "Exiled Prince Zuko hunts Aang to win back his father Ozai's favour, aided by his patient uncle Iroh. He is soon outranked by the ambitious Commander Zhao.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces Zuko's honour quest and the Zhao rivalry that drives the season's finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A mission takes shape",
+          "text": "Kyoshi warns Aang a Fire Nation invasion is coming for the Northern Water Tribe. He resolves to master all four elements, starting with water.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets the season's destination and the four-elements structure the series runs on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Azula rises",
+          "text": "In the Fire Nation, Zuko's younger sister Azula crushes a coup for Ozai and quietly promises Zhao she will keep her brother from ever regaining his honour.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "First appearance of Azula, the season 2 antagonist, and her decision to actively work against Zuko.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Why Zuko was exiled",
+          "text": "Flashbacks reveal Zuko spoke against sacrificing his own soldiers, refused to duel his father, and was scarred and banished. His quest for the Avatar is the price of coming home.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Recontextualises Zuko from villain to tragic figure and seeds his eventual turn.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Siege of the North",
+          "text": "Zhao kills the Moon Spirit to cripple the waterbenders. Princess Yue, whose life the spirit once saved, gives herself back to it to restore the moon, and Iroh kills Zhao.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Resolves the invasion, kills the season's antagonist, and marks Iroh openly breaking with the Fire Nation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The comet is coming",
+          "text": "Katara becomes Aang's waterbending teacher. Azula takes Omashu and captures King Bumi, and Ozai learns Sozin's Comet, which will supercharge every firebender, is returning.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Names the season 2 ticking clock and shows Azula, not Zuko, is now the Fire Nation's forward blade.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The North survives, but at the cost of Yue and the Moon Spirit's balance. Aang still needs earth and fire, and the Fire Nation now knows a comet is coming that will make them unstoppable.",
+        "questions": [
+          "Who will teach Aang earthbending now that Bumi has been captured?",
+          "With Zhao dead and Iroh a traitor, what will Zuko do next?",
+          "Can Aang be ready before Sozin's Comet arrives?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Aang",
+          "line": "The last airbender and the Avatar, thawed after a hundred years, now a waterbender and hunting an earthbending teacher."
+        },
+        {
+          "name": "Katara",
+          "line": "Southern Water Tribe waterbender, Aang's teacher and moral compass, still carrying the memory of her mother's death at Fire Nation hands."
+        },
+        {
+          "name": "Sokka",
+          "line": "Katara's non-bender brother, the group's strategist, grieving Princess Yue after the siege."
+        },
+        {
+          "name": "Zuko",
+          "line": "Exiled Fire Nation prince, scarred and banished by his father, now on the run with Iroh after Zhao tried to kill him.",
+          "note": "Turned against the Fire Nation navy but still wants Aang for himself."
+        },
+        {
+          "name": "Iroh",
+          "line": "Zuko's uncle, a retired general who mourns his dead son and just killed Zhao to save Zuko — effectively a traitor to the Fire Nation."
+        },
+        {
+          "name": "Azula",
+          "line": "Zuko's younger sister, a lightning-generating prodigy and Ozai's favourite, freshly victorious at Omashu and hunting her brother next."
+        },
+        {
+          "name": "Fire Lord Ozai",
+          "line": "Ruler of the Fire Nation, Zuko and Azula's father, now planning a war-ending assault timed to Sozin's Comet."
+        },
+        {
+          "name": "King Bumi",
+          "line": "The mad king of Omashu and Aang's old friend, captured by Azula when she took the city."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Toward Ba Sing Se",
+          "text": "Aang's group escorts refugees toward the walled Earth Kingdom capital Ba Sing Se to warn the Earth King about Sozin's Comet. Bumi refuses rescue and tells Aang to find another earthbending teacher.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the season's destination and the reason Toph, not Bumi, becomes Aang's teacher.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Toph joins",
+          "text": "The blind earthbending prodigy Toph Beifong defies her overprotective family to become Aang's teacher after helping fight off Azula and her friends Mai and Ty Lee.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Completes the core group and introduces Azula's strike team as the season's active threat.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Zuko and Iroh in hiding",
+          "text": "Zuko splits from Iroh, then reunites with him as refugees; Iroh teaches him to redirect lightning. In Ba Sing Se they take work at a tea shop and Iroh is invited into the White Lotus society.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Zuko's slow drift away from the hunt and Iroh's secret allies both matter going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The eclipse plan",
+          "text": "Searching for the Spirit Library, Sokka learns a solar eclipse will strip all firebenders of their power before the comet arrives, giving the group a narrow window to strike the Fire Lord.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The Day of Black Sun is the plan the next season is built around.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · A city run by the Dai Li",
+          "text": "Beneath Ba Sing Se, the cultural minister Long Feng and his Dai Li secret police suppress any talk of the war. Azula infiltrates the city and turns Long Feng into her instrument.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Reveals who actually controls the Earth Kingdom capital and how Azula takes it without a battle.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Zuko's crossroads",
+          "text": "Imprisoned together beneath Lake Laogai, Katara and Zuko find unexpected common ground. Reunited with Azula, Zuko chooses her side and helps her fight Aang and Katara.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Zuko's decision at the crossroads defines his standing at the start of the next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Fall of Ba Sing Se",
+          "text": "Azula strikes Aang down with lightning as he enters the Avatar State. Katara barely revives him with Spirit Oasis water while the Fire Nation walks unopposed into Ba Sing Se, Iroh a prisoner.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The Avatar nearly dies, the last free Earth Kingdom capital falls, and Iroh is captured — the state of the world entering next season.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ba Sing Se has fallen from the inside, Aang is barely alive after Azula's lightning, and Iroh is in a Fire Nation prison. Zuko has chosen Azula over Katara's offer of trust.",
+        "questions": [
+          "Can Aang recover in time to strike during the Day of Black Sun?",
+          "Will Zuko live with the choice he just made in Ba Sing Se?",
+          "With the Earth Kingdom fallen and the comet approaching, who is left to resist the Fire Nation?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Aang",
+          "line": "Struck down by Azula's lightning while entering the Avatar State, revived by Katara but unconscious as the season ends."
+        },
+        {
+          "name": "Katara",
+          "line": "Aang's waterbending teacher and healer, the one who kept him alive with Spirit Oasis water after Azula's strike."
+        },
+        {
+          "name": "Sokka",
+          "line": "Uncovered the eclipse plan that defines the next campaign; briefly reunited with Suki before losing track of her again."
+        },
+        {
+          "name": "Toph Beifong",
+          "line": "Blind earthbending prodigy and Aang's teacher, who invented metalbending to escape her family and rejoin the group."
+        },
+        {
+          "name": "Zuko",
+          "line": "Refugee turned traitor to his uncle — sided with Azula in Ba Sing Se and helped bring the city down.",
+          "note": "Now travelling home with Azula, honour ostensibly restored."
+        },
+        {
+          "name": "Azula",
+          "line": "Took Ba Sing Se without a real battle by turning Long Feng, struck down the Avatar, and now walks out of the city victorious.",
+          "note": "Backed by her friends Mai and Ty Lee."
+        },
+        {
+          "name": "Iroh",
+          "line": "Openly broke with the Fire Nation to defend Aang and Katara, was captured by Azula, and is now a prisoner of his own country."
+        },
+        {
+          "name": "Fire Lord Ozai",
+          "line": "Off-page for most of the season but the war's ultimate target — the man Sokka's eclipse plan is aimed at."
+        },
+        {
+          "name": "Long Feng",
+          "line": "Ba Sing Se's true power behind the Earth King, who tried to use Azula and was used by her instead."
+        }
+      ]
+    }
+  }
+}

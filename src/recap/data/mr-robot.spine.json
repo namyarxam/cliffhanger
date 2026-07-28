@@ -1,0 +1,400 @@
+{
+  "slug": "mr-robot",
+  "generatedFor": "Mr. Robot",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Recruitment",
+          "text": "Elliot Alderson, an anti-social Allsafe engineer, is pulled into Mr. Robot's fsociety collective on a plan to erase all consumer debt held by megacorp E Corp.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the central hack and Elliot's relationship to Mr. Robot — every later season is downstream of both.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Framing Colby",
+          "text": "Elliot's first act with fsociety frames E Corp CTO Terry Colby for the attack; Colby's arrest buys fsociety cover and hands Angela ammunition against E Corp.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces the Angela–E Corp toxic-leak thread that ends with her working inside the company.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Steel Mountain",
+          "text": "Ambitious E Corp exec Tyrell Wellick, passed over for CTO, circles Elliot; when Elliot infiltrates the Steel Mountain backup site, Tyrell catches him and stays silent.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Sets Tyrell's obsessive alliance with Elliot that becomes the Stage 2 engine in S2 and S3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Shayla and Vera",
+          "text": "Elliot's neighbour Shayla is murdered by drug lord Vera after Elliot tips off the police; the cost of Elliot's interventions lands, but the hack keeps moving.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Vera returns years later as the S3 cliffhanger and drives Elliot's most personal S4 arc.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Dark Army in",
+          "text": "Elliot meets Dark Army leader Whiterose, who signs on for the hack; he also learns Darlene is his sister — a fact he had somehow completely forgotten.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Introduces Whiterose as the true antagonist and plants the first hard evidence of Elliot's memory blackouts.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · I am Mr. Robot",
+          "text": "Old family photos reveal Mr. Robot is Elliot's dead father — meaning Elliot has been Mr. Robot the whole time, blacking out and running the operation himself.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The central identity reveal; every subsequent season is Elliot fighting or negotiating with his own alter.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Five/Nine hits",
+          "text": "The hack detonates the global economy; Elliot wakes three days later with no memory of what he did, and Tyrell Wellick has completely vanished.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The launchpad state for S2 — a working world in ruins, a missing collaborator, and a protagonist locked out of his own recent past.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Five/Nine has landed and the world is in chaos. Elliot has no memory of the final days of the plan, Tyrell is gone, and Whiterose is already speaking with E Corp's CEO about who is really responsible.",
+        "questions": [
+          "Where is Tyrell Wellick, and what happened between him and Elliot?",
+          "What did Elliot actually do during the missing days before the hack?",
+          "What is Whiterose really planning now that Five/Nine has landed?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Elliot Alderson",
+          "line": "Socially isolated Allsafe hacker who executed Five/Nine while blacking out; shares his mind with Mr. Robot, an alter based on his dead father."
+        },
+        {
+          "name": "Mr. Robot",
+          "line": "Elliot's dissociative alter, appearing as his late father; the visible leader of fsociety during Elliot's blackouts."
+        },
+        {
+          "name": "Darlene Alderson",
+          "line": "Elliot's estranged sister and fsociety cofounder; his closest partner, though he only just remembered she exists."
+        },
+        {
+          "name": "Tyrell Wellick",
+          "line": "Ambitious, unstable E Corp exec fired days before the hack; last seen alone with Elliot the night of Five/Nine, now missing."
+        },
+        {
+          "name": "Angela Moss",
+          "line": "Elliot's childhood friend, mother killed by E Corp's covered-up toxic leak; has just accepted a job at E Corp to fight it from inside.",
+          "note": "Not fsociety at this point, but her orbit is about to converge."
+        },
+        {
+          "name": "Whiterose",
+          "line": "Elusive leader of the Chinese hacker group Dark Army; a transgender woman obsessed with time who signed on to Five/Nine for her own reasons.",
+          "note": "Also seen at the end conversing with E Corp's CEO in male dress."
+        },
+        {
+          "name": "Phillip Price",
+          "line": "E Corp's imperious CEO; publicly weathering the hack, privately entangled with Whiterose."
+        },
+        {
+          "name": "Joanna Wellick",
+          "line": "Tyrell's coldly strategic wife; just gave birth and is beginning her hunt for her missing husband."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Off the grid",
+          "text": "A month after Five/Nine, Elliot lives a rigid daily routine — later revealed to be a prison sentence — trying to smother Mr. Robot, who refuses to say what happened to Tyrell.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Frames the season's central mystery — Tyrell's fate — and shows Elliot has lost even the option of walking away from his alter.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Darlene runs it",
+          "text": "Darlene leads fsociety in Elliot's absence and extorts E Corp on live television, forcing exec Scott Knowles to burn $5.9 million in cash on camera.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Establishes Darlene as fsociety's operator, the position that turns her into an FBI informant by S3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Enter Dominique",
+          "text": "FBI agent Dominique DiPierro closes in on fsociety; on a Beijing trip she meets Chinese Minister Zhang and survives an ambush that wipes out her team.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Introduces Dominique and reveals Whiterose is Zhang — the two poles the rest of the series turns on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Angela crosses",
+          "text": "Recruited by Darlene, Angela hacks the FBI from inside E Corp's own offices; the would-be corporate reformer is now operationally part of the conspiracy.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Marks Angela's slide from reformer to collaborator, the step before Whiterose personally converts her.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Stage 2",
+          "text": "Released from prison, Elliot finally meets a resurfaced Tyrell — Mr. Robot admits he shot him the night of the hack — and learns Stage 2 will physically blow up E Corp's paper backups.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The season's plan-reveal; every S3 disaster is Stage 2 in motion.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Whiterose takes Angela",
+          "text": "Whiterose abducts Angela and, in one strange conversation, converts her: Angela now believes Whiterose can literally undo the deaths of their parents.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Angela's belief in this promise is what drives her S3 collaboration with Mr. Robot and her S4 death.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Elliot shot",
+          "text": "Elliot tries to abort Stage 2; Tyrell shoots him with Darlene's stolen gun to keep the plan alive, while Trenton, in hiding, claims she has found a way to reverse Five/Nine.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Sets S3's opening state and plants Trenton's undo — the key that unlocks the S3 finale.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Stage 2 is armed, Elliot has just been shot by Tyrell to keep it that way, and Angela is now Whiterose's convert. In the desert, Trenton tells Mobley she has found a way to undo the hack before both are approached by Leon.",
+        "questions": [
+          "Will Elliot survive Tyrell's gunshot in time to stop Stage 2?",
+          "Now that Angela is on Whiterose's side, is there anyone left inside who can pull the plan apart?",
+          "What is the reversal Trenton claims to have found — and will Leon let her live to use it?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Elliot Alderson",
+          "line": "Just shot by Tyrell after realising Stage 2 is real; still trying to shut down the hack he set in motion."
+        },
+        {
+          "name": "Mr. Robot",
+          "line": "Has been running Stage 2 through Tyrell and Angela during Elliot's blackouts; admits he shot Tyrell the night of Five/Nine."
+        },
+        {
+          "name": "Darlene Alderson",
+          "line": "fsociety's operator; killed Susan Jacobs in her own home, currently unaware her brother has been shot."
+        },
+        {
+          "name": "Angela Moss",
+          "line": "Personally converted by Whiterose; secretly working with Mr. Robot in the belief the plan will resurrect their parents."
+        },
+        {
+          "name": "Tyrell Wellick",
+          "line": "Resurfaced after months in hiding, fanatically loyal to Mr. Robot and Whiterose's Stage 2; just pulled the trigger on Elliot."
+        },
+        {
+          "name": "Whiterose / Minister Zhang",
+          "line": "Publicly the Chinese Minister of State Security, privately Dark Army; personally recruited Angela and is driving Stage 2."
+        },
+        {
+          "name": "Phillip Price",
+          "line": "E Corp CEO playing Whiterose's game while advancing his own agenda around a new digital currency, Ecoin."
+        },
+        {
+          "name": "Dominique DiPierro",
+          "line": "FBI agent leading the Five/Nine investigation; the closest law enforcement has come to figuring out either fsociety or Dark Army."
+        },
+        {
+          "name": "Trenton",
+          "line": "fsociety hacker on the run with Mobley in Phoenix; claims she has found a way to reverse Five/Nine, moments before Leon approaches them."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Inside E Corp",
+          "text": "Elliot survives the shooting and takes a job inside E Corp, secretly moving the paper records off-site to sabotage Stage 2 — not realising he is enabling a worse version of it.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The season's central irony and the mechanism by which Stage 2 becomes a mass-casualty attack instead of one building.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Tyrell installed",
+          "text": "Mr. Robot, Angela and Tyrell quietly collaborate with the Dark Army behind Elliot's back; Whiterose has Tyrell installed as E Corp's new CTO, her puppet inside the company.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Locks Tyrell into the corporate role he still holds at the top of S4.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The buildings fall",
+          "text": "On UN vote day, Stage 2 detonates the seventy-one warehouses Elliot rerouted the records to; thousands die and Elliot realises he made the attack far worse.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The event that reframes the series — Elliot's revolution now has a body count and he owns it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Iran frame-up",
+          "text": "To bury the trail, the Dark Army abducts Trenton and Mobley, murders them, and plants evidence framing them as Iranian operatives; Whiterose walks away from Stage 2 unscathed.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Kills two of fsociety and sets Whiterose's untouchable public position that S4 must dismantle.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Trenton's gift",
+          "text": "Broken, Elliot nearly kills himself with morphine, then finds a message Trenton sent before she died: she left the encryption keys to reverse Five/Nine on an FBI server.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The pivot from despair to counter-attack, and the mechanism that makes the finale possible.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Reversal begins",
+          "text": "Darlene, secretly an FBI informant, seduces Dominique to get Elliot into the Bureau; he recovers Trenton's keys and begins reversing Five/Nine with Mr. Robot working alongside him.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Reconciles Elliot and Mr. Robot into a single project — the alliance the whole of S4 runs on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Price is her father",
+          "text": "Ruined by Whiterose, Phillip Price tells Angela he is her real father and begins turning her against Whiterose — while Vera reappears outside Elliot's apartment to confront Darlene.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Sets both S4 openers: Angela loosening from Whiterose, and Vera's return to Elliot's life.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Five/Nine is being reversed and Elliot has vowed to take down Whiterose. Angela, told Price is her real father, is being pulled off Whiterose's side. Outside Elliot's building, Vera has returned and is standing in front of Darlene.",
+        "questions": [
+          "Can Elliot actually undo Five/Nine with Trenton's keys, and what does Whiterose do when she finds out?",
+          "Now that Angela knows Price is her father, will she turn on Whiterose or double down on her promise?",
+          "What does Vera want from Elliot and Darlene after all this time?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Elliot Alderson",
+          "line": "Survived Tyrell's shot; recovered the keys to reverse Five/Nine and, for the first time, working with Mr. Robot instead of against him."
+        },
+        {
+          "name": "Mr. Robot",
+          "line": "Reconciled with Elliot after Stage 2; the two have jointly vowed to take down Whiterose and the elite that let their revolution happen."
+        },
+        {
+          "name": "Darlene Alderson",
+          "line": "Exposed as an FBI informant and now openly working with the Bureau and with Elliot against the Dark Army."
+        },
+        {
+          "name": "Angela Moss",
+          "line": "Still gripped by Whiterose's promise that the dead can be brought back, but has just been told Price is her biological father and is being turned."
+        },
+        {
+          "name": "Tyrell Wellick",
+          "line": "Installed as E Corp CTO, a Dark Army puppet; still worships Elliot and awaits a reunion with his family."
+        },
+        {
+          "name": "Whiterose / Minister Zhang",
+          "line": "Pulled off Stage 2, framed it on Iran, and is preparing to move her secret Washington Township plant to the Congo; wants Elliot dead."
+        },
+        {
+          "name": "Phillip Price",
+          "line": "Ruined and pushed out by Whiterose; just revealed as Angela's real father and now actively working against Whiterose through Elliot."
+        },
+        {
+          "name": "Dominique DiPierro",
+          "line": "FBI agent who has learned the Dark Army had agents inside her own Bureau; newly allied with Darlene and Elliot."
+        },
+        {
+          "name": "Vera",
+          "line": "The drug lord who murdered Shayla in S1, back in New York and now standing in front of Darlene outside Elliot's door."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Angela killed",
+          "text": "Whiterose has Angela executed for refusing to relent and gives Elliot until year's end to live; Elliot allies with the exiled Phillip Price to hunt the Deus Group funding the Dark Army.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Ends Angela's arc, resets the antagonist to Deus and gives the season its explicit deadline.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Cyprus and Tyrell",
+          "text": "Elliot and Darlene, now openly working as a pair, hack Cyprus National Bank to trace the Group's money; Tyrell wanders off into a snowy forest and dies from a gunshot wound.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Closes Tyrell's story and confirms Darlene as Elliot's real partner for the finale run.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Vera and the memory",
+          "text": "Vera resurfaces and takes therapist Krista hostage; forced into a session at gunpoint, Elliot finally remembers his father sexually abused him as a child.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The buried memory that all the alters exist to guard — the piece the finale rests on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Mr. Robot's purpose",
+          "text": "Krista stabs Vera to death, freeing Elliot; he accepts that Mr. Robot has existed his whole life to shield him from the memory of his father, and the two make peace.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Reframes Mr. Robot from antagonist to protector — the frame the finale requires.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Deus exposed",
+          "text": "Darlene publicly exposes and robs the Deus Group live; enraged, Whiterose shoots Price for engineering it, then the FBI raid Whiterose's mansion.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Collapses Whiterose's political cover and drives her to the plant for the final act.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The machine",
+          "text": "At the Washington Township plant, Whiterose activates her machine and kills herself; the reactor melts down and Elliot appears to wake in an alternate world where everyone he loves is happy.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The event the whole series has been building toward, and the setup for the finale's identity reveal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The Mastermind",
+          "text": "The alternate world unravels: the Elliot the viewer has followed all along is a persona called the Mastermind, and the real Elliot has been trapped inside his own mind since childhood.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The final reveal that recontextualises every prior season; the recap has to hand the viewer this bomb.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Whiterose is dead, her machine destroyed, and the persona the viewer has known as Elliot has stepped aside to return control to the real Elliot, who wakes in a hospital with Darlene beside him.",
+        "questions": [
+          "Did Whiterose's machine actually do anything, or was the alternate world purely inside Elliot's mind?",
+          "What life does the real Elliot walk into now, with the Mastermind and Mr. Robot both stood down?",
+          "How much of what Darlene knew about her brother turns out to have been the Mastermind, not him?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Elliot Alderson (the Mastermind)",
+          "line": "The persona the audience has followed since S1; spent the season dismantling Whiterose's Deus Group and, at the end, ceded control back to the real Elliot."
+        },
+        {
+          "name": "Real Elliot",
+          "line": "The original Elliot, trapped inside his own head since childhood; wakes in the hospital in the final scene with Darlene beside him."
+        },
+        {
+          "name": "Mr. Robot",
+          "line": "Revealed as the father-shaped alter created to shield Elliot from memories of his real father's abuse; reconciled with the Mastermind before the end."
+        },
+        {
+          "name": "Darlene Alderson",
+          "line": "Sobered up and became Elliot's operational partner; helped rob the Deus Group and is the person waiting when the real Elliot opens his eyes."
+        },
+        {
+          "name": "Whiterose / Minister Zhang",
+          "line": "Activated her long-promised machine at the Washington Township plant and killed herself when her network collapsed around her."
+        },
+        {
+          "name": "Phillip Price",
+          "line": "Angela's biological father; helped Elliot destroy the Deus Group and was shot by Whiterose in the moment of her defeat."
+        },
+        {
+          "name": "Angela Moss",
+          "line": "Killed by the Dark Army in the season's opening for refusing to bend to Whiterose after Price warned her off."
+        },
+        {
+          "name": "Tyrell Wellick",
+          "line": "Briefly installed as E Corp's CTO figurehead; wandered into a snowy forest with Elliot and died from a gunshot wound to the stomach."
+        },
+        {
+          "name": "Dominique DiPierro",
+          "line": "Blackmailed by a new Dark Army handler through her family; helped Darlene and Elliot at the end and chose, at the airport, not to run."
+        }
+      ]
+    }
+  }
+}

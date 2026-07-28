@@ -1,0 +1,315 @@
+{
+  "slug": "sex-education",
+  "generatedFor": "Sex Education",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The clinic reopens",
+          "text": "Otis, son of sex therapist Jean, teams up with rebellious Maeve to run an underground sex clinic at Moordale after a chlamydia scare shows how badly students need real advice.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the show's premise and the Otis-Maeve partnership at the core of the whole series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Blended families",
+          "text": "Otis starts dating classmate Ola just as her father Jakob confesses his relationship with Otis's mother Jean, and the two families begin awkwardly overlapping.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up the blended household dynamics that dominate S2 when Jakob and Ola move into Jean's house.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Too late",
+          "text": "Otis fumbles intimacy with Ola while burying feelings for Maeve; when Maeve finally confesses hers, Otis lashes out that she has left it too late.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The Otis-Maeve romantic misfire that keeps them circling each other into S2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Adam and Eric",
+          "text": "Expelled from military school, Adam returns and secretly hooks up with Eric — the boy he used to bully — while Eric starts openly dating new student Rahim.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The Adam-Eric bond that drives both characters' arcs into S2 and beyond.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Erin returns",
+          "text": "Maeve's addict mother Erin arrives with her toddler sister Elsie, relapses, and swears never to forgive Maeve after social services take both of them away.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Erin's grievance becomes an active threat again when she kidnaps Elsie in S2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Aimee on the bus",
+          "text": "Aimee is sexually assaulted on the bus and slowly unravels; a shared detention with the other girls turns into a group effort to coax her back on.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Aimee's trauma becomes her main storyline in S2 through Jean's therapy.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Musical night",
+          "text": "Groff pins Jean's therapy notes across school in revenge; at the school musical Adam declares his love for Eric, and Isaac deletes Otis's voicemail confessing his to Maeve.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The unheard voicemail is the specific unresolved lie that detonates early in S2.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Otis has left Maeve a voicemail confessing everything, but Isaac deleted it before she heard it. Maeve believes Otis said nothing on the same night social services took her mother and toddler sister away.",
+        "questions": [
+          "Will Maeve ever discover what Otis actually said in that voicemail?",
+          "Can she survive on her own now that Erin and Elsie are gone?",
+          "Who is Isaac really, if his very first move was to lie to her?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Otis Milburn",
+          "line": "Awkward teen running the school sex clinic; secretly in love with Maeve, unaware his confession voicemail was deleted."
+        },
+        {
+          "name": "Maeve Wiley",
+          "line": "Otis's tough, brilliant clinic partner; social services just took her mother and sister, and she thinks Otis never called."
+        },
+        {
+          "name": "Eric Effiong",
+          "line": "Otis's best friend; publicly chose Adam after Adam's declaration at the musical, leaving Rahim heartbroken."
+        },
+        {
+          "name": "Jean Milburn",
+          "line": "Otis's mother and a sex therapist; kissed Otis's dad Remi in a lapse and lost Jakob over it."
+        },
+        {
+          "name": "Adam Groff",
+          "line": "Former bully back from military school; publicly declared his love for Eric after months of secret hookups."
+        },
+        {
+          "name": "Michael Groff",
+          "line": "Sacked headmaster who exposed Jean's therapy notes around school; his wife has asked for a divorce."
+        },
+        {
+          "name": "Aimee Gibbs",
+          "line": "Maeve's cheerful best friend; sexually assaulted on the bus, slowly recognising how deeply it has affected her."
+        },
+        {
+          "name": "Isaac",
+          "line": "Maeve's new wheelchair-using neighbour who deleted Otis's confession voicemail before she heard it."
+        },
+        {
+          "name": "Erin Wiley",
+          "line": "Maeve's addict mother; just lost custody of Elsie and vowed never to forgive Maeve for the call to social services."
+        },
+        {
+          "name": "Jackson Marchetti",
+          "line": "Head boy who quit swimming after breaking his hand on purpose; found new confidence through the school musical."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Hope arrives",
+          "text": "New head Hope Haddon vows to restore Moordale's reputation, and after Otis tips her off she demolishes the toilets that were housing the sex clinic.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Hope's regime redefines Moordale and directly triggers the school's collapse by season's end.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ruby's I love you",
+          "text": "Otis and Ruby slide from a secret hookup into a real relationship, but when she finally says she loves him he cannot say it back and she ends it.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Ruby's brief taste of Otis is the seed of their reappearance as a couple in S3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Aimee in therapy",
+          "text": "Aimee begins therapy with Jean over her bus assault; a detention with the other girls turns into a group confession that walks her back onto the bus.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Aimee's healing anchors her whole S2 storyline and reshapes her intimacy going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Paternity doubt",
+          "text": "Jean tells Jakob she is pregnant and they try to co-parent, but he finds another man's jewellery in her house and asks for a paternity test.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The paternity uncertainty is what pays off in the shocking cliffhanger read.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Somme kiss",
+          "text": "Isaac confesses he deleted Otis's old voicemail; later, on the Somme trip, Otis and Maeve finally kiss, and Maeve asks for time to think it through.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The kiss finally aligns Otis and Maeve, which is what makes Maeve's departure hurt in S3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Hope falls",
+          "text": "Non-binary newcomer Cal defies Hope's uniform crackdown; Viv secretly films Hope's contempt for students and, on open day, the video ends her career at Moordale.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Explains how Moordale unravels and introduces Cal, who anchors the S3 Cavendish arc.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Everyone scatters",
+          "text": "Aimee talks Maeve into taking the American scholarship; Eric breaks up with Adam despite his poem; the school will be sold; and Jean's paternity result stuns her.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Cascades every relationship into S3's new starting positions in a single beat.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Maeve has flown to America the same day she and Otis finally chose each other, Moordale is being sold out from under everyone, and Jean has just read a paternity result too shocking to share.",
+        "questions": [
+          "Can Otis and Maeve survive an ocean apart just as they finally got together?",
+          "Whose baby is Jean actually raising?",
+          "Where do the sex school's students even go now that it's being sold?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Otis Milburn",
+          "line": "Newly single after failing to say he loved Ruby; finally kissed Maeve on the school trip only for her to fly to America."
+        },
+        {
+          "name": "Maeve Wiley",
+          "line": "Left for the American gifted-writers programme just as she and Otis got together; her mother Erin briefly kidnapped Elsie from care."
+        },
+        {
+          "name": "Eric Effiong",
+          "line": "Broke up with Adam, deciding he needs a partner comfortable being out; kissed a boy in Nigeria and confessed to Adam."
+        },
+        {
+          "name": "Jean Milburn",
+          "line": "Gave birth to a girl and read a paternity test whose result stunned her; Jakob does not know yet."
+        },
+        {
+          "name": "Adam Groff",
+          "line": "Poured his heart into a poem for Eric and finally came out to his mother, only for Eric to end it anyway."
+        },
+        {
+          "name": "Ruby Matthews",
+          "line": "Publicly dumped Otis after he couldn't say I love you; back to her queen bee position at school."
+        },
+        {
+          "name": "Aimee Gibbs",
+          "line": "Slowly recovering from her bus assault through Jean's therapy; still struggling to be intimate with her boyfriend Steve."
+        },
+        {
+          "name": "Cal Bowman",
+          "line": "Newly arrived non-binary student who has repeatedly clashed with Hope over uniform and gender rules."
+        },
+        {
+          "name": "Isaac Goodwin",
+          "line": "Living close to Maeve, finally forgiven for the voicemail; briefly dated her before she chose Otis."
+        },
+        {
+          "name": "Jackson Marchetti",
+          "line": "Demoted as head boy by Hope; befriended Cal but parted amicably after failing to understand their non-binary identity."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Cavendish",
+          "text": "The Moordale students transfer to inclusive Cavendish College while Maeve stays in America, and she and Otis strain to make their long-distance relationship work.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Cavendish is the new physical setting and the long-distance strain is Otis's entire arc.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The rival",
+          "text": "Otis discovers Cavendish already has a popular student therapist, 'O', and they agree to hold an election to decide which clinic survives.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The Otis vs O rivalry is the season's structural spine and shapes Ruby's re-entry.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Otis and Ruby",
+          "text": "Otis and Ruby fall back into secret hookups that harden into dating; she takes him home to meet her disabled father, showing him a side no one else sees.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Their affair permanently changes Ruby and how she relates to Otis after he fails her again.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Erin dies",
+          "text": "Maeve is called home when Erin overdoses; her mother dies, and at the funeral her estranged brother Sean gives a bitter eulogy and disappears again.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Erin's death removes Maeve's family anchor and clears the path for her America decision.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · O is Sarah",
+          "text": "O is unmasked as Sarah, the girl who bullied Ruby at summer camp; Ruby's old bed-wetting video is leaked, and O apologises publicly, revealing she is asexual.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The reveal collapses the season-long enmity and explains Ruby's lasting damage from it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · One night",
+          "text": "Otis and Maeve reunite, sleep together and confess love, but she decides to return to America indefinitely to pursue a writing career.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Sets up the central relationship as mutually loved yet geographically split, unresolved for the next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The reset",
+          "text": "Adam comes out as bisexual, Eric leaves his church over its rejection, Aimee finally kisses Isaac, and Otis makes peace with Jean after his heartbreak.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Every supporting character resets into a new starting position for the next season.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Maeve has flown back to America to write and she and Otis have agreed to suspend contact entirely. Everyone has scattered from Cavendish's ordered world into decisions — coming out, leaving the church, kissing Isaac — that are still fresh.",
+        "questions": [
+          "Can Otis and Maeve really suspend contact indefinitely and survive it?",
+          "Now that Ruby has ended their friendship for good, is that door truly closed?",
+          "What did Maeve write in the note she left behind for Otis?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Otis Milburn",
+          "line": "Heartbroken as Maeve returns to America; reconciled with Jean and back on speaking terms with Eric."
+        },
+        {
+          "name": "Maeve Wiley",
+          "line": "Back in America pursuing a writing career; slept with and confessed love to Otis before choosing to leave again."
+        },
+        {
+          "name": "Eric Effiong",
+          "line": "Left his church after realising it will never accept him; single since breaking up with Adam."
+        },
+        {
+          "name": "Jean Milburn",
+          "line": "Single mother of baby Joy, back on her radio show, with her chaotic sister Joanna staying with her."
+        },
+        {
+          "name": "Ruby Matthews",
+          "line": "Slept with Otis, opened up, was rejected again; ended their friendship and returned to the Coven at Cavendish."
+        },
+        {
+          "name": "Adam Groff",
+          "line": "Came out as bisexual and accepted his parents' reconciliation; asked out by his equestrian classmate Jem."
+        },
+        {
+          "name": "Aimee Gibbs",
+          "line": "Found her voice through art and finally kissed Isaac, with Maeve's blessing to pursue him."
+        },
+        {
+          "name": "Isaac Goodwin",
+          "line": "Now studying at Cavendish; recently confessed feelings with Aimee after Maeve released them both from the triangle."
+        },
+        {
+          "name": "O / Sarah Owen",
+          "line": "Otis's rival therapist, exposed as Ruby's childhood bully; publicly apologised and disclosed she is asexual."
+        },
+        {
+          "name": "Cal Bowman",
+          "line": "Non-binary student who ran away in crisis before Eric and Jackson convinced them they are wanted here."
+        }
+      ]
+    }
+  }
+}

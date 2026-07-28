@@ -1,0 +1,196 @@
+{
+  "slug": "monarch-legacy-of-monsters",
+  "generatedFor": "Monarch: Legacy of Monsters",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Skull Island interlude",
+          "text": "Teens Charlie, Mike, and rescued girl Annie survive a Kraken attack in the South Pacific; the group lures Kong into killing the Kraken and escapes the island.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The Skull Island arc consumes most of the season but doesn't feed S2; compressed to one beat so the reader knows it happened without inflating the character list.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Operation Hourglass, 1962",
+          "text": "Monarch officer Lee Shaw leads an expedition into the Hollow Earth; the tunnel collapses and his team is presumed lost.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Establishes Shaw and the Hollow Earth as core show elements — every later plot pivot orbits this event.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Shaw returns to a changed world",
+          "text": "Shaw survives in Axis Mundi, a timeless realm; he emerges in 1982 to find Bill Randa dead and Monarch abandoning Titan research.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Sets up Axis Mundi as time-bending — the mechanic S2 leans on for Shaw's older/younger-self scenes and Isabel's plan.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Lost after G-Day",
+          "text": "A post-G-Day expedition ends with Cate, May, and Shaw lost in Axis Mundi; Kentaro and Tim survive, and Hiroshi returns from his own absence to lead the search.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Introduces the six people who ARE the show going forward and puts them in the configuration S2 opens on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Keiko, unaged",
+          "text": "In Axis Mundi, Cate is rescued by Keiko Randa — Bill's wife and Hiroshi's mother — trapped since 1962 without ageing.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Keiko's return is the emotional engine of S2 (her son, her lost decades, Bill's vows) — the reader must know she's back.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The signal, and Shaw left behind",
+          "text": "Keiko rigs the old Hourglass lure to signal the surface, drawing Godzilla, who fights an Ion Dragon; the vehicle launches but Shaw falls short.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Explains why Shaw begins S2 stranded again — the entire first S2 beat is Cate defying orders to fetch him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Skull Island reunion",
+          "text": "The rescue team surfaces at an Apex Cybernetics station on Skull Island; the Randas are reunited, but Kong is approaching and Shaw is still below.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Positions everyone exactly where S2 E1 begins: at Apex's station, Kong closing in, Shaw absent.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Randas — Cate, Kentaro, Hiroshi, and long-lost Keiko — are reunited with May and Tim at an Apex Cybernetics station on Skull Island. Shaw is stranded in Axis Mundi again, and Kong is bearing down on the station.",
+        "questions": [
+          "Can Shaw be pulled back from Axis Mundi a second time?",
+          "What does Apex Cybernetics actually want from the Hollow Earth?",
+          "How does Keiko begin a life in a world sixty years past her own?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Cate Randa",
+          "line": "Hiroshi's American-side daughter, a San Francisco teacher scarred by G-Day; she led the investigation that ended in Axis Mundi and came back changed."
+        },
+        {
+          "name": "Kentaro Randa",
+          "line": "Hiroshi's Japanese-side son and Cate's half-brother; he uncovered their father's double life and pushed the search that finally brought everyone home."
+        },
+        {
+          "name": "Keiko Randa",
+          "line": "Founding Monarch scientist, Bill's wife and Hiroshi's mother, trapped in Axis Mundi since 1962 and returned to the surface unaged."
+        },
+        {
+          "name": "Hiroshi Randa",
+          "line": "Cate and Kentaro's father, missing since 2014; returned via Axis Mundi and led the mission that pulled the group out."
+        },
+        {
+          "name": "Lee Shaw",
+          "line": "Monarch officer and Keiko/Bill's closest ally, twice lost in Axis Mundi and presently stranded there again."
+        },
+        {
+          "name": "May",
+          "line": "Cate's hacker friend who joined the Randa investigation from the start and survived Axis Mundi alongside her."
+        },
+        {
+          "name": "Tim",
+          "line": "Monarch analyst who broke with the agency to back the unauthorised rescue and stayed with the group on the way out."
+        },
+        {
+          "name": "Bill Randa",
+          "line": "Deceased founder of Monarch, Keiko's husband; his maps, journals, and Hollow Earth theories are still driving every plot."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · A Titan wakes",
+          "text": "Cate defies Monarch to rescue Shaw from Axis Mundi; the tunnel wakes a hibernating tentacled Titan and a swarm of Scarabs, which surface on Skull Island.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The season's inciting mistake — Cate's refusal to abandon Shaw unleashes Titan X and drives every subsequent event.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Apex moves in, Cate hears the song",
+          "text": "Apex hijacks the response; May goes undercover and learns of neural implants meant to weaponise Titans, while Cate begins hearing Titan X's hypnotic call.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Sets up Apex as the season's institutional antagonist and Cate's mental link to Titan X, which becomes the key to communicating with it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Hiroshi's death",
+          "text": "Apex's implant fails to control Titan X; in the chaos, Hiroshi dies saving Cate, and Kentaro blames her for their father's death.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Fractures the Randa family and becomes the wound Isabel exploits to turn Kentaro — the pivot from family drama to schism.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Isabel recruits Kentaro",
+          "text": "Grieving Kentaro is taken in by Isabel Simmons, an Apex outcast who hints that Axis Mundi's time-bending realm can be used to bring Hiroshi back.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Introduces the season's real antagonist and the ideological hook — reversing loss via Axis Mundi — that carries into S3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The egg and Godzilla",
+          "text": "Shaw lures Godzilla to fight Titan X; Cate discovers Titan X has laid an egg. Isabel's team abducts it, and Titan X flees into the ocean with Godzilla in pursuit.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Reframes Titan X as a mother — the emotional key to the finale — and forces the chase toward Skull Island.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Kong vs. Titan X",
+          "text": "Isabel takes the egg to Skull Island, planning to weaponise Titan X against Kong and use the fight to open a permanent tunnel to Axis Mundi.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Names Isabel's actual endgame — a stable Axis Mundi gateway — which is the through-line for whatever comes next.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Rodan in a Thai volcano",
+          "text": "Returning the egg calms Titan X and ends the fight. Isabel and Kentaro flee to Thailand, where Shaw picks up their trail and finds Rodan sleeping in a volcano.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Resets every character to their S3 starting position: Monarch hunting Kentaro, Shaw alone on their trail, a new Titan on the board.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Cate, May, Keiko, and Tim have rejoined Monarch and are hunting Kentaro. He and Isabel have escaped to Thailand chasing her promise to reach the 2014 version of Hiroshi trapped in Axis Mundi. Shaw is already there, and has just found Rodan waiting inside a volcano.",
+        "questions": [
+          "Can Isabel actually reach the version of Hiroshi still trapped in Axis Mundi?",
+          "What does a permanent tunnel between the surface and Axis Mundi mean for the world above?",
+          "Why is Rodan surfacing now, and is Shaw the one who wakes him?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Cate Randa",
+          "line": "Rejoined Monarch and now hunting her half-brother; carries the guilt of Hiroshi's death and a residual mental link to Titan X."
+        },
+        {
+          "name": "Kentaro Randa",
+          "line": "On the run with Isabel in Thailand, gambling on her claim that Axis Mundi can be used to rescue Hiroshi from 2014."
+        },
+        {
+          "name": "Keiko Randa",
+          "line": "Grieving the son she barely knew; back at Monarch and adjusting to a world sixty years past her own."
+        },
+        {
+          "name": "Lee Shaw",
+          "line": "Recovered from Axis Mundi early in the season; already in Thailand, following Isabel and Kentaro alone, and has just seen Rodan."
+        },
+        {
+          "name": "May",
+          "line": "Went undercover inside Apex, then back to Monarch; her broken friendship with Kentaro is still an open loose end."
+        },
+        {
+          "name": "Tim",
+          "line": "Now leading Monarch's field team, tasked with tracking down Kentaro and stopping Isabel's plan."
+        },
+        {
+          "name": "Isabel Simmons",
+          "line": "Sidelined adopted daughter of the late Apex founder Walter Simmons; plans to open a permanent Axis Mundi tunnel to rewrite the past."
+        },
+        {
+          "name": "Hiroshi Randa",
+          "line": "Killed saving Cate; his death is the wedge between his children and the exact leverage Isabel is using on Kentaro."
+        }
+      ]
+    }
+  }
+}

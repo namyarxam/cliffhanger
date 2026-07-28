@@ -1,0 +1,795 @@
+{
+  "slug": "weeds",
+  "generatedFor": "Weeds",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Widow deals to neighbours",
+          "text": "Widowed suburban mom Nancy Botwin deals weed to affluent Agrestic neighbours to keep her boys afloat, buying wholesale from South Central dealer Heylia James.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the whole premise and Nancy's supply relationship with Heylia.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Andy moves in",
+          "text": "Judah's slacker brother Andy shows up uninvited from Alaska, and quietly becomes the household's stabilising presence and Nancy's closest confidant.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Andy is now core family — every future season depends on him being embedded here.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Enter Conrad",
+          "text": "Through Heylia's nephew Conrad, Nancy discovers a superior product and starts baking edibles, sharpening her from small-time dealer into a real operator.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Conrad's arrival is the wedge that ultimately splits Nancy from Heylia and gives her a partner.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The bakery cover",
+          "text": "Corrupt councilman Doug Wilson helps Nancy open a sham bakery to launder cash, giving her a public-facing front and pulling him deep into her orbit.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Introduces Doug as a recurring accomplice and gives Nancy legitimate cover.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Meeting Peter",
+          "text": "Nancy meets single dad Peter Scottson at a karate tournament and sparks a romance, her first adult connection since Judah's death.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Sets up the romantic entanglement that becomes the season's whole cliffhanger.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Conrad breaks with Heylia",
+          "text": "Conrad splits from Heylia to grow his own signature strain, recruiting Nancy, Andy, Doug and Sanjay into a partnership that finally makes her a producer.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Nancy's promotion from dealer to grower defines her scale for S2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Peter is DEA",
+          "text": "After sleeping with Peter, Nancy spots his DEA badge — the man closest to her is the one who can end her operation.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The cliffhanger; frames every choice in S2.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Nancy has just discovered her new boyfriend Peter is a DEA agent, at the exact moment she's committed to grow her own crop with Conrad.",
+        "questions": [
+          "Will Peter arrest Nancy the moment he realises she's a dealer?",
+          "Can Nancy keep the grow operation hidden from a man sleeping in her bed?",
+          "Will Conrad stay in business with her if he finds out?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Nancy Botwin",
+          "line": "Widowed Agrestic mom who has just started dealing weed and unknowingly slept with a DEA agent."
+        },
+        {
+          "name": "Andy Botwin",
+          "line": "Judah's slacker brother who moved in uninvited and quietly became a second parent to Silas and Shane."
+        },
+        {
+          "name": "Silas Botwin",
+          "line": "Nancy's teenage older son, just found out his mother is a drug dealer and is furious at being lied to."
+        },
+        {
+          "name": "Shane Botwin",
+          "line": "Nancy's younger son, coping with Judah's death through violent, disturbing behaviour."
+        },
+        {
+          "name": "Conrad Shepard",
+          "line": "Heylia's nephew and master grower; Nancy's new business partner behind Heylia's back."
+        },
+        {
+          "name": "Heylia James",
+          "line": "South Central dealer who supplied Nancy; furious that Conrad has broken away with her."
+        },
+        {
+          "name": "Peter Scottson",
+          "line": "Single dad Nancy just slept with, revealed at the end of the season to be a DEA agent."
+        },
+        {
+          "name": "Celia Hodes",
+          "line": "Nancy's neighbour and PTA president, midway through breast cancer treatment and a collapsing marriage."
+        },
+        {
+          "name": "Doug Wilson",
+          "line": "Crooked city councilman who set up Nancy's cover bakery and is now one of her best customers."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Vegas marriage of convenience",
+          "text": "To block Peter from ever testifying against her, Nancy elopes with him in Vegas — a marriage-of-convenience wedding ring around the DEA man's finger.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The spousal-privilege gambit defines every Peter/Nancy scene from here.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · MILF weed",
+          "text": "Nancy and Conrad rent a grow house and cultivate a hybrid Snoop Dogg dubs MILF weed, which quickly makes serious money and puts them on kingpin U-Turn's radar.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "MILF is the crop everyone fights over for the next several seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Silas sabotages the condom",
+          "text": "Silas punctures a condom to trap Megan; her parents force an abortion and she leaves, breaking Silas and ending the relationship.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Explains Silas's bitterness and volatility through the rest of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Celia takes power",
+          "text": "Celia narrowly beats Doug for the Agrestic council seat and launches an anti-drug crusade, planting cameras aimed straight at her old friend Nancy.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Celia becomes a state-backed threat to Nancy's operation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Peter forces the harvest",
+          "text": "Peter wiretaps Nancy admitting the marriage was a con, then confronts her and Conrad at gunpoint demanding one final harvest before he'll disappear.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The crisis that draws all the guns to the grow house.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Heylia hires the hit",
+          "text": "Threatened by Peter's investigation, Heylia quietly hires the Armenian kingpin Kashishian to murder him — a debt Nancy doesn't yet know she owes.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Peter's death is the mechanism that reshuffles S3's power map.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Silas steals the crop",
+          "text": "As Kashishian's men come to collect payment for Peter's murder, Nancy opens the safe and finds the MILF gone — Silas stole it, and Celia has just spotted him with it.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The literal cliffhanger — five guns and the crop missing.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Nancy stands surrounded by five drawn guns — U-Turn wants his cut, Kashishian's men want their fee for Peter, the MILF is missing, and Celia is confronting Silas in her driveway with the entire stolen stash.",
+        "questions": [
+          "Can Nancy talk her way out of five guns with nothing to hand over?",
+          "What does U-Turn do once he learns her teenage son has the MILF?",
+          "Will Celia finally connect Silas to Nancy's operation?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Nancy Botwin",
+          "line": "Married Peter to block his testimony while running a full grow-house operation with Conrad."
+        },
+        {
+          "name": "Silas Botwin",
+          "line": "Broken by Megan's forced abortion and departure; just stole the entire MILF crop from the safe."
+        },
+        {
+          "name": "Shane Botwin",
+          "line": "Just gave a scorched valedictory speech at his elementary school graduation; freshly aware his mother deals."
+        },
+        {
+          "name": "Andy Botwin",
+          "line": "Dodged the reserves via rabbinical school and then quit; now ordered to report for duty."
+        },
+        {
+          "name": "Conrad Shepard",
+          "line": "Nancy's business partner and unrequited lover; furious she married a DEA agent."
+        },
+        {
+          "name": "Heylia James",
+          "line": "Secretly hired the Armenian Kashishian to murder Peter and protect her operation."
+        },
+        {
+          "name": "Celia Hodes",
+          "line": "New Agrestic council member on an anti-drug crusade, sleeping with Doug, exiled by Dean."
+        },
+        {
+          "name": "Doug Wilson",
+          "line": "Lost his council seat to Celia; having an affair with her and kicked out by wife Dana."
+        },
+        {
+          "name": "Peter Scottson",
+          "line": "Nancy's DEA-agent husband; just murdered outside the grow house by Heylia's Armenian hit."
+        },
+        {
+          "name": "U-Turn",
+          "line": "South Central kingpin who has just learned Nancy and Conrad are producing MILF weed."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Weed in the pool",
+          "text": "U-Turn spares Nancy on debt-work, but a livid Celia dumps the entire MILF crop in her pool, wiping out the harvest and Nancy's chance to pay him back.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Puts Nancy permanently in debt to U-Turn — the whole first half of the season runs off this.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Guillermo takes over",
+          "text": "Marvin murders U-Turn during a heart attack and takes over the operation; Nancy pays off her debt with returned heroin after Guillermo routs Marvin.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Guillermo is the man who defines every following season for Nancy.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · A straight job with Groff",
+          "text": "Nancy takes a straight job with slick developer Sullivan Groff, and starts sleeping with him — a brief flirtation with a legitimate life.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Sets up the Celia rivalry that turns lethal by season's end.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Peter's body surfaces",
+          "text": "Peter's body is found in a rainstorm; DEA Captain Roy Till quietly buries the investigation to protect his agency's reputation.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Introduces Till, who becomes Nancy's DEA counterparty later.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Celia's knife point",
+          "text": "Celia catches Nancy in bed with Groff and turns predator — threatening to expose the dealing until Nancy pulls a knife to her throat.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The friendship is now a mutual-destruction pact that carries forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Grow moves to Celia's",
+          "text": "Silas learns to grow under Conrad, and Nancy sleeps with Conrad again, but a fire-marshal visit forces the grow house to relocate — into Celia's new home.",
+          "anchorEpisode": 14,
+          "whyLoadBearing": "Consolidates Silas as a grower and pulls Celia into the operation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Nancy burns Agrestic down",
+          "text": "As Celia rats her out and a wildfire consumes Majestic, Nancy torches her own house to erase evidence and drives south to traffic pot for Guillermo.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "The literal end of the Agrestic era and the launch into cartel life.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Agrestic and Majestic are burning. Nancy has torched her own house, agreed to smuggle for Guillermo, and taken the family somewhere new.",
+        "questions": [
+          "Can a suburban mom survive working for a Mexican cartel?",
+          "Will the DEA link the burned grow house back to her?",
+          "Where do the Botwins land now that Agrestic is ash?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Nancy Botwin",
+          "line": "Just burned down her house and agreed to smuggle pot across the Mexican border for Guillermo."
+        },
+        {
+          "name": "Silas Botwin",
+          "line": "Trained as a grower under Conrad; broke up with Tara after her religious extremism."
+        },
+        {
+          "name": "Shane Botwin",
+          "line": "Deep in denial about Judah's death, talking to him as if he were living in the house."
+        },
+        {
+          "name": "Andy Botwin",
+          "line": "Honorably discharged from the reserves; catering porn shoots and dating biker Denise."
+        },
+        {
+          "name": "Conrad Shepard",
+          "line": "Grower who slept with Nancy again but sees no future with her; staying behind as she flees."
+        },
+        {
+          "name": "Celia Hodes",
+          "line": "Divorced, humiliated, and just now the informant who ratted Nancy out to the DEA."
+        },
+        {
+          "name": "Doug Wilson",
+          "line": "Back on council, addicted to stolen narcotics; on the run after stealing Majestic's Christian cross."
+        },
+        {
+          "name": "Guillermo",
+          "line": "Head of the Mexican gang doing business with U-Turn/Marvin; has just invited Nancy to traffic across the border."
+        },
+        {
+          "name": "Captain Roy Till",
+          "line": "DEA captain who covered up Peter's dirty dealings and is now investigating the MILF grow."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Ren Mar and Bubbie",
+          "text": "The Botwins land in Ren Mar with Andy's father Lenny and dying grandmother Bubbie; Nancy soon confesses she burned down the old house.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the new location and the family's shared knowledge that Nancy destroyed their home.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The maternity-store tunnel",
+          "text": "Guillermo turns Nancy into a border courier, running a maternity store that fronts a hidden tunnel to Mexico for pot, heroin, guns and trafficked women.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The tunnel is the season's entire operational core.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Meeting Esteban",
+          "text": "Guillermo's boss Esteban Reyes — the mayor of Tijuana — takes an interest in Nancy, and their volatile, blood-drawing affair begins.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Introduces the cartel head who defines the next two seasons of Nancy's life.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Celia crashes out",
+          "text": "Till releases Celia to spy on Guillermo; she's captured, spared by Nancy, then hooked on cocaine while guarding the tunnel until Nancy fires her.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Explains Celia's total collapse and why she is exiled from the family in S5.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Shane's darkness hardens",
+          "text": "Shane becomes the most-feared kid at his new school and loses his virginity to two goth girls.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The Shane-as-killer arc that becomes central next season starts here.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Nancy flips to Till",
+          "text": "Unable to stomach the human trafficking, Nancy flips to Captain Till as a DEA informant and helps him raid the maternity store.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "The betrayal that makes Esteban her enemy.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The ultrasound",
+          "text": "Cesar tortures Agent Schlatter into naming Nancy; to save herself from execution, Nancy hands Esteban an ultrasound revealing his unborn son.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The literal cliffhanger — Nancy's life hinges on the pregnancy.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Esteban knows Nancy betrayed him and was going to have her killed — but she is carrying his child. Her survival is now contingent on delivering him a son.",
+        "questions": [
+          "Will Esteban let Nancy live once the child is born?",
+          "How does the DEA respond to one of their own being tortured to death?",
+          "What happens if the baby isn't a boy — or isn't his?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Nancy Botwin",
+          "line": "Running a maternity-store front and drug tunnel for Esteban; pregnant with his son."
+        },
+        {
+          "name": "Silas Botwin",
+          "line": "Growing his own MILF plants in a cheese shop and sleeping with the shop's owner Lisa."
+        },
+        {
+          "name": "Shane Botwin",
+          "line": "Openly violent and sexually active at 13."
+        },
+        {
+          "name": "Andy Botwin",
+          "line": "Newly in love with Nancy; ran a coyote business smuggling immigrants until it collapsed."
+        },
+        {
+          "name": "Doug Wilson",
+          "line": "Fled Agrestic embezzlement to hide in Ren Mar; failed border militia and coyote ventures."
+        },
+        {
+          "name": "Celia Hodes",
+          "line": "Cocaine-addicted, fired informant, kicked out by Nancy and estranged from her own family."
+        },
+        {
+          "name": "Esteban Reyes",
+          "line": "Mayor of Tijuana and cartel boss; Nancy's lover, now aware she betrayed him."
+        },
+        {
+          "name": "Guillermo",
+          "line": "Nancy's handler and rival within Esteban's cartel; wants her dead."
+        },
+        {
+          "name": "Captain Roy Till",
+          "line": "DEA captain who flipped Nancy as an informant against Esteban's cartel."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Spared and reclaimed",
+          "text": "Esteban spares Nancy for the pregnancy but then rapes her to reset the terms — she is now his prisoner, carrying and bound to deliver a son.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets the tone of coerced captivity that runs the whole season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Andy's confession, refused",
+          "text": "Andy confesses his love and begs Nancy to flee to Copenhagen with him; she refuses and moves in with Esteban, breaking Andy for months.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Defines Andy's arc — everything he does from here reacts to this rejection.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Till fed to the cartel",
+          "text": "Nancy hands captured DEA Captain Till to Esteban to be murdered — buying her family's survival by feeding her old handler to the cartel.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Closes out the DEA thread and shows how far Nancy will go now.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Silas, Doug, Celia sell on the side",
+          "text": "Silas and Doug open a legal pot shop; broke Celia squats at Nancy's and bootstraps her own dealing operation alongside a cosmetics gig.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Keeps the peripheral cast active while Nancy is locked in the compound.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Stevie and Pilar's objection",
+          "text": "Nancy delivers Esteban's son Stevie; Esteban proposes marriage but political fixer Pilar Zuazo objects to an American wife tarnishing his run for governor.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Introduces Pilar and the political stakes that drive the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The wedding and the hit that misses",
+          "text": "After Pilar has Nancy shot at — grazing Shane instead — Nancy and Esteban marry anyway, and Nancy secretly asks Guillermo to have Pilar killed.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Escalates Nancy vs Pilar to open warfare.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Croquet mallet",
+          "text": "The Pilar hit fails; poolside at a fundraiser, Pilar boasts she has bought Guillermo and will pick off Silas and Shane — Shane kills her with a croquet mallet.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The literal cliffhanger and Shane's turning point.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Shane has murdered a powerful cartel-tied political fixer poolside at his stepfather's fundraiser. The family is deep in the Reyes compound with her body.",
+        "questions": [
+          "Can Nancy hide Pilar's corpse from Esteban and the cartel?",
+          "What happens if Cesar or Guillermo pieces together who killed her?",
+          "Will Shane collapse under the weight of what he's just done, or harden further?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Nancy Botwin",
+          "line": "Married to Esteban and mother of his newborn son; just watched her middle child kill Pilar."
+        },
+        {
+          "name": "Silas Botwin",
+          "line": "Living in the Reyes compound; ran a pot shop with Doug until police pressure closed it."
+        },
+        {
+          "name": "Shane Botwin",
+          "line": "Just murdered Pilar with a croquet mallet to protect the family from her threats."
+        },
+        {
+          "name": "Andy Botwin",
+          "line": "Recovered from Nancy's rejection and newly engaged to obstetrician Audra."
+        },
+        {
+          "name": "Stevie Ray Botwin",
+          "line": "Nancy and Esteban's newborn son, legally registered under Esteban's name."
+        },
+        {
+          "name": "Esteban Reyes",
+          "line": "Running for governor of Baja California; just remarried Nancy for political optics."
+        },
+        {
+          "name": "Pilar Zuazo",
+          "line": "Political fixer who threatened Nancy's sons — just killed by Shane in the season's final beat."
+        },
+        {
+          "name": "Cesar",
+          "line": "Esteban's former enforcer, revealed as a traitor and shot by Nancy after setting her up to be killed."
+        },
+        {
+          "name": "Doug Wilson",
+          "line": "Ran the pot shop with Silas; feuding with Celia over stolen product."
+        }
+      ]
+    },
+    "6": {
+      "beats": [
+        {
+          "label": "S6 · The Newmans",
+          "text": "Fleeing Pilar's body, the Botwins take on new identities as the Newmans, hide out in Seattle, and try to build a normal life under new names.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Establishes the whole season's premise — fugitives with false papers.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Hash at the hotel",
+          "text": "Nancy scabs at a Seattle hotel and quickly starts dealing hash to guests; the scheme collapses the moment cops boot her van and threaten to trace the family.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Shows Nancy can't stop dealing even in hiding — the pattern that drives every stop.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Cesar and Ignacio close in",
+          "text": "Cesar and Ignacio, feeding Esteban intelligence, use a captive Doug to track the Botwins; the pursuit catches up to them in Seattle.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Puts the cartel on their trail for the rest of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Diner standoff",
+          "text": "In a diner standoff, Shane takes his mother's gun; Ignacio, who has seen the boy's darkness up close, lets the family walk.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Shane's darkness saves them, and Ignacio's mercy defines the pursuit.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · The RV road",
+          "text": "The Newmans plus Doug drift through Montana and Colorado in a beat-up RV, taking odd jobs while Nancy plans one final score to fund escape to Copenhagen.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The Copenhagen plan is what pulls them into the finale trap.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Silas isn't Judah's son",
+          "text": "In Nancy's Dearborn hometown, a DNA test proves Judah wasn't Silas's father — an old flame named Lars is — and Silas decides to stay behind.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Detonates Silas's identity and briefly removes him from the family.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Airport, FBI, confession",
+          "text": "Esteban and Guillermo find Nancy at Detroit airport; to save Stevie and her sons, she has Andy call the FBI and takes the fall for Pilar's murder.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The literal cliffhanger and the sacrifice that resets everything.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Nancy is being arrested by the FBI outside the airport, confessing to Pilar's murder to save her family. Andy, Silas, Shane and Stevie are on a plane to Copenhagen; Esteban and Guillermo have just been caught.",
+        "questions": [
+          "How long will Nancy serve for a murder she didn't commit?",
+          "What becomes of Esteban and Guillermo now that their cover is blown?",
+          "Can the Botwin men build a life abroad without her?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Nancy Botwin",
+          "line": "Just took the fall for Pilar's murder to save her family, in FBI custody outside Detroit airport."
+        },
+        {
+          "name": "Silas Botwin",
+          "line": "Learned Judah wasn't his father but rejoined the family on the plane at the last moment."
+        },
+        {
+          "name": "Shane Botwin",
+          "line": "Hardened killer whose willingness to pull a trigger has become the family's most dangerous asset."
+        },
+        {
+          "name": "Andy Botwin",
+          "line": "Reluctant father-figure to Stevie, now boarding a plane to Copenhagen with the boys."
+        },
+        {
+          "name": "Stevie Ray Botwin",
+          "line": "Nancy's toddler son, on the plane out of the country with Andy and his brothers."
+        },
+        {
+          "name": "Doug Wilson",
+          "line": "Betrayed the family under duress, then joined them on the run through the west and midwest."
+        },
+        {
+          "name": "Esteban Reyes",
+          "line": "Just captured by the FBI at Detroit airport alongside Nancy."
+        },
+        {
+          "name": "Cesar",
+          "line": "Esteban's enforcer who chased the Botwins across the country."
+        },
+        {
+          "name": "Guillermo",
+          "line": "Escaped from a Mexican prison and helped Esteban corner Nancy at the airport."
+        }
+      ]
+    },
+    "7": {
+      "beats": [
+        {
+          "label": "S7 · Paroled to New York",
+          "text": "Three years later, Nancy is paroled from prison to a halfway house in New York — Esteban has been murdered inside and the cartel disbanded.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Resets the geography, timeline and threat landscape for the whole season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Family reconvenes",
+          "text": "The Botwins converge on New York; Andy, Shane, Silas, Doug and Stevie — raised by Nancy's sister Jill — reassemble around their released mother.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces Jill and the custody situation that becomes the season's spine.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Dealing again, custody looming",
+          "text": "Nancy restarts dealing through her prison girlfriend Zoya's brother Demetri, while Jill sues for full custody of Stevie — the son Nancy hasn't raised in years.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The two engines of the season: Nancy relapsing into the trade and losing her son legally.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Back to Heylia",
+          "text": "For a real supply, Nancy crawls back to Heylia — who agrees only if Silas moves in and grows the MILF strain himself.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Reactivates the show's oldest supply relationship and puts Silas in charge of the crop.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Silas declares competition",
+          "text": "Silas partners with rival Emma and — after Nancy has Emma arrested — steals the sales database and declares himself Nancy's competition.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Splits the Botwin operation in two and sets up the reconciliation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Signing Stevie away",
+          "text": "Mother and son reconcile too late: Jill blackmails Nancy into signing over Stevie for good, and Nancy accepts to keep the family free.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The emotional close of Nancy's custody arc.",
+          "needsVerify": false
+        },
+        {
+          "label": "S7 · Sniper in the bushes",
+          "text": "At a family dinner in Connecticut, an unseen sniper lines up on Nancy and shoots her in the head.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The literal cliffhanger.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Nancy has just been shot in the head by an unseen sniper at a Connecticut family dinner. The shooter's identity is unknown.",
+        "questions": [
+          "Who pulled the trigger — Heylia, a cartel remnant, or someone else from her past?",
+          "Will Nancy survive the shot?",
+          "What holds the family together if she doesn't?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Nancy Botwin",
+          "line": "Freshly paroled and back to dealing in New York; just shot in the head by an unseen sniper."
+        },
+        {
+          "name": "Silas Botwin",
+          "line": "Reconciled with Nancy after briefly splitting off with a rival syndicate; running the family business."
+        },
+        {
+          "name": "Shane Botwin",
+          "line": "Training to become an NYPD police officer under detective Ouellette's mentorship."
+        },
+        {
+          "name": "Andy Botwin",
+          "line": "Sharing loose custody duties around Stevie."
+        },
+        {
+          "name": "Stevie Ray Botwin",
+          "line": "Legally in Jill's custody now — Nancy signed him over to protect the family from exposure."
+        },
+        {
+          "name": "Jill Price-Grey",
+          "line": "Nancy's estranged sister who raised Stevie for three years and now has legal custody."
+        },
+        {
+          "name": "Doug Wilson",
+          "line": "CFO of hedge fund Vehement after helping cover for a fraud scheme aimed at pensioners."
+        },
+        {
+          "name": "Heylia James",
+          "line": "Nancy's old supplier again after grovelling; recently threatened Nancy at gunpoint over the crop."
+        },
+        {
+          "name": "Detective Mitch Ouellette",
+          "line": "NYPD investigator mentoring Shane; determined to arrest Nancy."
+        }
+      ]
+    },
+    "8": {
+      "beats": [
+        {
+          "label": "S8 · Coma and pursuit",
+          "text": "Nancy survives the head shot but is put in a medically induced coma; Shane hunts the shooter and Andy quietly resumes sleeping with Jill.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Reopens the season on the S7 cliffhanger and re-triangulates Andy and Jill.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Tim Scottson revealed",
+          "text": "Nancy wakes vowing to go straight; the shooter turns out to be Tim Scottson, Peter's grown son, whom they hand over to the police.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Closes the shooter mystery by dragging in an old debt from S1-S2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Pharma jobs",
+          "text": "Silas and Nancy take legitimate jobs at a pharmaceutical company selling a cannabis-based cancer pill, tempting Nancy back into dealing.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Frames Nancy's central struggle — she cannot stay legitimate for long.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Shane and Doug diverge",
+          "text": "Shane graduates the police academy and dates fellow cadet Angela; Doug builds a fake homeless-shelter con by drugging the hostile poor.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Ends the two peripheral characters at opposite moral poles.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Pills and a phantom pregnancy",
+          "text": "Nancy skims pills from the company to sell with Jill, whose fake pregnancy imploded her relationship with Andy.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Nancy relapses into the trade one last time; Andy-Jill dissolves.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Return to Regrestic",
+          "text": "Back in rebuilt \"Regrestic\", Silas reunites with Megan and confesses to sabotaging the condoms years earlier; the two reconcile.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Closes Silas's oldest wound.",
+          "needsVerify": false
+        },
+        {
+          "label": "S8 · Andy leaves; bar mitzvah",
+          "text": "After a final sexual encounter at the spot Judah died, Andy leaves Nancy for good despite her tearful pleas.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The series closes on Andy's departure and Nancy's attempt at repair.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The series leaves Nancy alone at the spot Judah died, Andy gone for good despite her tearful pleas.",
+        "questions": [
+          "Can Nancy hold what remains of her family together?",
+          "Will she stay out of the trade for good this time?",
+          "What kind of adult will Stevie become in Jill's household?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Nancy Botwin",
+          "line": "Survived being shot, briefly went legitimate; left by Andy after one last encounter at the spot Judah died."
+        },
+        {
+          "name": "Silas Botwin",
+          "line": "Reunited with old girlfriend Megan and growing pot legally at a pharmaceutical company."
+        },
+        {
+          "name": "Shane Botwin",
+          "line": "Graduated the NYPD police academy and dating fellow cadet Angela."
+        },
+        {
+          "name": "Andy Botwin",
+          "line": "Left Nancy for good after a final sexual encounter at the spot Judah died."
+        },
+        {
+          "name": "Stevie Ray Botwin",
+          "line": "Nancy's youngest son with Esteban; still Jill's legal son."
+        },
+        {
+          "name": "Jill Price-Grey",
+          "line": "Faked a pregnancy that ended her thing with Andy; briefly dealt pills alongside Nancy."
+        },
+        {
+          "name": "Doug Wilson",
+          "line": "Running a fake homeless-shelter cult after his charity fraud caught up with him."
+        }
+      ]
+    }
+  },
+  "repairedAt": "2026-07-27T06:57:12.444Z"
+}

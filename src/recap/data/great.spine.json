@@ -1,0 +1,311 @@
+{
+  "slug": "great",
+  "generatedFor": "The Great",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The way in",
+          "text": "Idealistic Catherine arrives to find Peter cruel and vain; when he burns her school, she learns the throne passes to her if he dies heirless — and starts plotting.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Catherine, Peter and the coup premise that drives every subsequent season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Building the circle",
+          "text": "She recruits maid Marial, bureaucrat Orlo and general Velementov, and falls genuinely in love with Leo, the lover Peter assigns her.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces the inner circle whose loyalties and betrayals dominate S2 and S3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Reform fails",
+          "text": "Peter softens after a poisoning and Catherine hopes to reform him — until he burns her pox-inoculating friend Vlad alive with the other infected serfs.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Kills off the 'change him from within' path and locks Catherine into overthrow.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Leo signs on",
+          "text": "At the Swedish peace talks Catherine rescues Peter's diplomacy; Leo learns of the coup from Marial and returns to Moscow committed to it.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Puts Leo inside the plot, setting up his hostage-taking at the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Peter falls for her",
+          "text": "The conspirators kill Count Gorky and endure court-wide torture to keep the plot secret; Peter, now besotted, tells Catherine he loves her.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Peter's love — and Catherine's slow reciprocation — is the engine of S2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The plot cracks",
+          "text": "On her 21st birthday Catherine finds she is pregnant and moves to strike, but Orlo botches killing Archie and a furious Marial betrays the plot to Peter.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Marial's betrayal and the pregnancy define Catherine's stance heading into the coup and S2.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Fire the shot",
+          "text": "Peter unveils Leo as his hostage: call off the coup or Leo dies. Catherine says goodbye to Leo, then signals Velementov to fire anyway.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The cliffhanger itself — Leo's fate and the coup start S2.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Catherine has just fired the starting gun on a coup she cannot recall, knowing Leo is Peter's prisoner and Marial has betrayed her — all while carrying Peter's unborn child.",
+        "questions": [
+          "Is Leo still alive after Catherine gave the signal?",
+          "Will the army and nobles rally to Catherine or to Peter?",
+          "Can Catherine trust anyone in her circle after Marial's turn?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Catherine",
+          "line": "Young empress-in-waiting who has just triggered a coup she can no longer stop, secretly carrying Peter's child."
+        },
+        {
+          "name": "Peter III",
+          "line": "Volatile emperor who has genuinely fallen in love with Catherine and is holding her lover Leo hostage."
+        },
+        {
+          "name": "Marial",
+          "line": "Catherine's demoted-noble maid and closest confidante, who just betrayed the plot to Peter to regain her title."
+        },
+        {
+          "name": "Leo Voronsky",
+          "line": "Catherine's tender lover, gifted to her by Peter and now Peter's prisoner in an unknown state."
+        },
+        {
+          "name": "Orlo",
+          "line": "Bookish bureaucrat conspirator, wounded and hiding after failing to assassinate Archie."
+        },
+        {
+          "name": "General Velementov",
+          "line": "General won to the coup, who just fired the signal shot that launched the uprising."
+        },
+        {
+          "name": "Aunt Elizabeth",
+          "line": "Peter's serene, mystic aunt, fiercely protective of him and the throne he sits on."
+        },
+        {
+          "name": "Archbishop Archie",
+          "line": "Cynical Patriarch of the Russian church, who survived Orlo's attack and now knows Catherine plotted his death."
+        },
+        {
+          "name": "Grigor",
+          "line": "Peter's devoted best friend, quietly wounded by Peter's ongoing affair with Grigor's own wife."
+        },
+        {
+          "name": "Georgina",
+          "line": "Peter's longtime mistress and Grigor's wife, uneasy about losing Peter's favour to Catherine."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Abdication and a bag",
+          "text": "Four months into the standoff Peter surrenders and signs the abdication — then hands Catherine a bag containing Leo's severed head.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Confirms Leo's death and gives Catherine the throne on Peter's terms, setting the season's uneasy footing.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The reformer takes power",
+          "text": "Catherine crowns herself, decrees religious freedom and opens her girls' school, installing Leo's gentle cousin Basil over a fuming Archie.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Catherine's reform agenda and her fight with Archie define the season's political spine.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · She starts wanting him",
+          "text": "Coached by Elizabeth to be a mystery, Peter draws Catherine into his bed; unsettled to want him, she keeps him captive while their marriage warms.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The core relationship pivot: Catherine's grief for Leo bleeds into real desire for Peter.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Serf 'jape' backfires",
+          "text": "A stunt to free the serfs triggers a bloody rebellion; her optimism cracks and Marial executes Lady Svenska in revenge for a murdered servant.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Catherine's first real failure as empress; Marial's killing shows how far the coup has hardened her.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Joanna arrives, and dies",
+          "text": "Catherine's imperious mother Joanna arrives to belittle her and seduce Peter for her own dynastic plot; mid-tryst Joanna falls from a window and dies.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Joanna's death is the secret Peter carries; it becomes the fault line of the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The secret spills",
+          "text": "Peter and Elizabeth hide Joanna's death; Russia goes to war with the Ottomans, and a jilted Marial finally tells Catherine what Peter did.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Puts the war and Catherine's rage into place for the finale's arrests and stabbing.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · She stabs the wrong man",
+          "text": "At Marial's wedding Catherine has the conspirators arrested and stabs Peter in his chambers — only to find she has killed his body double, Pugachev.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The body-double reveal is the cliffhanger itself and the seed of S3's rebellion.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Catherine sits on the throne surrounded by friends she has just arrested, married to a man she has just tried to murder — who is very much alive because he swapped in a body double, Pugachev, whose body now cools on the floor.",
+        "questions": [
+          "Can Catherine and Peter share a throne after she tried to kill him?",
+          "What becomes of Marial, Grigor and the other arrested nobles?",
+          "Will Peter forgive her or retaliate for the attempt on his life?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Catherine",
+          "line": "Empress who has just tried to murder Peter but stabbed his double instead; she and Peter now uneasily embrace."
+        },
+        {
+          "name": "Peter III",
+          "line": "Deposed emperor, deeply in love with Catherine, hiding that he accidentally killed her mother."
+        },
+        {
+          "name": "Marial",
+          "line": "Restored noblewoman just arrested for revealing Peter's crime; she and Catherine are estranged again."
+        },
+        {
+          "name": "Aunt Elizabeth",
+          "line": "Peter's aunt and Catherine's advisor, actively covering up Joanna's death alongside Peter."
+        },
+        {
+          "name": "Archbishop Archie",
+          "line": "Patriarch in an uneasy peace with Catherine after failing to keep his hold on the court."
+        },
+        {
+          "name": "Grigor",
+          "line": "Peter's best friend, arrested at the wedding, torn between loyalty to Peter and his affair with Marial."
+        },
+        {
+          "name": "Georgina",
+          "line": "Peter's exiled ex-mistress, back at court and conspicuously not arrested tonight."
+        },
+        {
+          "name": "Orlo",
+          "line": "Fallen bureaucrat, left court in disgrace after being caught stealing from the treasury for his home region."
+        },
+        {
+          "name": "General Velementov",
+          "line": "General now running Catherine's newly declared Ottoman war."
+        },
+        {
+          "name": "Paul",
+          "line": "Catherine and Peter's newborn son and Russia's heir."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Loyalty at gunpoint",
+          "text": "Catherine, guilt-ridden over Pugachev, tests the freed conspirators by ordering Georgina to shoot first; Georgina kills Tatyana to prove her loyalty.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Shows Catherine trying to be ruthless and resets the court's pecking order around her.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Orlo in the woods",
+          "text": "Enraged that Peter still lives, Orlo disavows Catherine and storms off; hunting in the woods, she unknowingly shoots him dead.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Removes Catherine's oldest conspirator by her own hand — a private wound she'll carry through the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Playing the game",
+          "text": "Coached by Elizabeth and Archie to play the game, Catherine convenes the Nakaz to hear her people, but reform keeps colliding with their fear.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Shows her new pragmatic method — and its limits — and pushes her back toward alliances she distrusts.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Archie builds a fake Peter",
+          "text": "Archie secretly grooms the peasant Pugachev to impersonate Peter and raise a rebellion, planning to 'save' Catherine and regain his hold on her.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The engine of the entire back half: every crisis Catherine faces from here is Archie's design.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Peter through the ice",
+          "text": "Goaded by King Hugo, Peter steals Catherine's army to invade Sweden; on a frozen lake they declare their love, then he plunges through the ice and drowns.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Peter's death removes the show's other lead; every following beat is Catherine coping with the hole.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The fantasy breaks",
+          "text": "Catherine hides Peter's death behind a fantasy that he is off at war, until Elizabeth's vision and Grigor's collapse force her to accept he is gone.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The grief turn that hardens her into the empress she becomes by the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Buried and beheaded",
+          "text": "Marial exposes Archie as Pugachev's puppeteer; Catherine crushes the rebellion, has Archie beheaded and emerges truly in command — while Marial secretly revives him.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Resolves the rebellion and Catherine's arc, and leaves the covert Archie thread live.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Peter is dead, the rebellion is crushed and Catherine finally rules with the confidence of an empress — but Archie has been secretly revived by Marial, Paul is still an infant, and the court around her is thinned and wary.",
+        "questions": [
+          "What happens when Archie's secret survival surfaces?",
+          "Can Catherine raise Paul as her heir without Peter?",
+          "Where do Marial, Grigor and Georgina belong now that Peter is gone?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Catherine",
+          "line": "Empress transformed by grief and rebellion; ruling alone, in command, and no longer trusting easily."
+        },
+        {
+          "name": "Peter III",
+          "line": "Recently dead after falling through ice; his absence now defines the throne and Catherine's next chapter."
+        },
+        {
+          "name": "Aunt Elizabeth",
+          "line": "Peter's aunt and Catherine's mystic advisor, who watched her grow into power and stood down from taking it herself."
+        },
+        {
+          "name": "Marial",
+          "line": "Catherine's friend again, hiding a huge secret: she has just revived the Archbishop Catherine ordered killed."
+        },
+        {
+          "name": "Archbishop Archie",
+          "line": "Officially executed for backing Pugachev's rebellion, secretly alive in Marial's care."
+        },
+        {
+          "name": "Grigor",
+          "line": "Chose Marial over Georgina, still hollowed out by grief for Peter."
+        },
+        {
+          "name": "Georgina",
+          "line": "Tried to marry the infant Paul to seize power; caught by Grigor, sidelined but not punished."
+        },
+        {
+          "name": "Paul",
+          "line": "Infant heir, briefly kidnapped and passed around during the rebellion before being returned to Catherine."
+        },
+        {
+          "name": "Maxim",
+          "line": "Marial's unstable child-husband, who believes he killed Pugachev and has joined Catherine's inner circle."
+        }
+      ]
+    }
+  }
+}

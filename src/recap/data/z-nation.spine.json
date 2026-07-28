@@ -1,0 +1,200 @@
+{
+  "slug": "z-nation",
+  "generatedFor": "Z Nation",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Mission inherited",
+          "text": "Hammond dies escorting Murphy — humanity's only plague survivor — to Sleepy Hollow. Warren, Doc, Mack, Addy and 10K inherit the mission: get him to a California lab.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the premise, the core team, and Murphy as the human cargo the rest of the series revolves around.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Voice from the ice",
+          "text": "From a lone Arctic NSA outpost, sole survivor Citizen Z becomes the team's radio lifeline. They pick up Cassandra, who escaped a cannibal cult that still wants her back.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Installs Citizen Z as the offscreen guide who will drive plot beats going forward, and adds Cassandra to the group.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Garnett falls",
+          "text": "Team lead Garnett takes a bullet meant for Murphy at a cult-overrun compound in Hannibal. Warren steps up and holds the mission together.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Warren becomes the leader the reader needs to recognise; this is where command of the mission passes to her.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Murphy is not just immune",
+          "text": "After biting a saloon brawler who dies but never turns, Murphy realises his bite grants immunity. Soon after, he finds he can command zombies with his mind.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Introduces the powers that turn Murphy from cargo into an unpredictable variable — the engine of every following storyline.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Control over the living",
+          "text": "Kidnapped by drug thieves at a Colorado warehouse, Murphy spits in their canteens and turns them into puppets — his powers now reach living humans too.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Expands his ability from zombies to people, the specific power that becomes weaponised in the season that follows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The wrong doctor",
+          "text": "At Fort Collins the team finds Dr. Merch's lab abandoned. A stranger meets them instead, claiming he will finish the journey with Murphy to California.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The intended handoff to Merch does not happen — the plan the whole season served is already compromised before the finale image.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Nuclear apocalypse",
+          "text": "Murphy walks out of containment without decontaminating, triggering an automated nuclear launch. Warheads streak toward cities worldwide — and Citizen Z's outpost.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Reframes the world for the next season: it is no longer just a zombie apocalypse, and Citizen Z's survival is in doubt.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Murphy's exit from the CDC lab without decontamination has triggered a worldwide nuclear launch. He is leaving with a stranger who claims to be taking him the rest of the way to California, while warheads close in on Citizen Z's Arctic outpost.",
+        "questions": [
+          "Will Citizen Z survive the missile aimed at his outpost?",
+          "Who is the stranger now escorting Murphy, and where is he actually taking him?",
+          "With cities burning, does any facility remain that can turn Murphy's blood into a cure?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Alvin Murphy",
+          "line": "The only known survivor of the zombie vaccine trial; his blood is humanity's shot at a cure, and he has discovered he can command zombies and control humans by biting or spitting on them."
+        },
+        {
+          "name": "Roberta Warren",
+          "line": "Former National Guard, now leader of the escort team after Garnett's death; determined to complete the mission at any cost."
+        },
+        {
+          "name": "Doc",
+          "line": "Middle-aged medic and wisecracker; the group's steady centre."
+        },
+        {
+          "name": "10K",
+          "line": "Young sharpshooter named for the zombie kill count he is chasing; picked up on the road in the first episode."
+        },
+        {
+          "name": "Addy",
+          "line": "Team fighter haunted by having killed her own zombified mother; partnered with Mack."
+        },
+        {
+          "name": "Mack",
+          "line": "Addy's partner; a scrappy survivor who joined the team at Camp Blue Sky."
+        },
+        {
+          "name": "Cassandra",
+          "line": "Rescued from a cannibal cult where she had been used as bait; now part of the group but marked by what she did there."
+        },
+        {
+          "name": "Citizen Z",
+          "line": "Sole occupant of a US NSA listening post in the Arctic, guiding the team by radio; currently in the path of an incoming nuclear strike."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Bounty on Murphy",
+          "text": "Citizen Z survives the strike and issues an on-air bounty for Murphy, drawing hunters to the team in Cheyenne. One of them, Vasquez, forces his way into the group.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Turns Murphy from escorted asset into hunted target and installs Vasquez, who carries a revenge plot through the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Addy shoots Mack",
+          "text": "During a bounty-hunter shootout Mack is bitten in a stairwell. Addy shoots him herself the moment he turns.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Removes one of the original escorts and leaves Addy carrying a fresh loss that colours everything she does next.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · A hybrid daughter",
+          "text": "Murphy fathers a hybrid child with Serena, who dies giving birth. Fearing the team, he bites a couple in an isolated home and leaves the baby with them.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Introduces a child whose existence is important to the final image of the season and marks Murphy's break from the group.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Cassandra dies",
+          "text": "Under Murphy's telepathic pull, Cassandra attacks the team. 10K is forced to shoot her — proof that Murphy's grip on people has turned dangerous.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Shows Murphy weaponising his power against his own allies and removes Cassandra permanently from the group.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Escorpion and Vasquez",
+          "text": "Near the Mexican border the team is taken by La Reina, Queen of the Dead. Vasquez recognises her enforcer Escorpion as the man who murdered his wife and daughter.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Sets up the revenge collision that reshuffles who is with the team by the end of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Fake cure, real puppets",
+          "text": "La Reina's people inject a 'cure' from Murphy's blood that instead makes them his puppets. The team escapes; a repentant Escorpion kills La Reina and joins them.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Reveals Murphy is now the centre of a scheme bigger than the original mission, and swaps Escorpion from enemy to ally.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Taken to Zona",
+          "text": "At the CDC coordinates, Dr. Merch and a submarine crew spirit Murphy off to an island called Zona. 10K is shot and missing; the others are seized by foreign guards.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "Splits the entire ensemble and points the next season at a new destination and a new set of captors.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Murphy is being ferried by Dr. Merch and a submarine crew to a zombie-free island called Zona. 10K lies shot at the abandoned CDC house, and the rest of the team has been captured by unidentified foreign guards. In the final image, Murphy's abandoned daughter hosts a tea party with docile zombies.",
+        "questions": [
+          "Where is Zona, and what do the people running it actually want with Murphy?",
+          "Is 10K still alive after being shot at the CDC house?",
+          "What has Murphy's daughter become, and how far can his hybrid influence spread?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Alvin Murphy",
+          "line": "Increasingly zombie-hybrid and drifting from the team; last seen on a boat to Zona with Dr. Merch, no longer under anyone's control."
+        },
+        {
+          "name": "Roberta Warren",
+          "line": "Still leading what remains of the escort team; just captured by foreign guards on a California beach as Murphy sailed away."
+        },
+        {
+          "name": "Doc",
+          "line": "Medic and voice of reason; captured with Warren."
+        },
+        {
+          "name": "10K",
+          "line": "Shot at the CDC house during the final firefight and left behind; his condition is unknown."
+        },
+        {
+          "name": "Addy",
+          "line": "Still with the group but hardened; killed Mack herself when he turned earlier in the season."
+        },
+        {
+          "name": "Citizen Z",
+          "line": "Survived the nuclear strike on Northern Lights; the transmission he used to guide the team has also been exploited by others hunting Murphy."
+        },
+        {
+          "name": "Vasquez",
+          "line": "Former federal agent turned bounty hunter who hunted Escorpion for killing his family; spared him and walked away from the group before the finale."
+        },
+        {
+          "name": "Escorpion",
+          "line": "La Reina's enforcer and the killer of Vasquez's family; killed La Reina himself and joined the team, repentant, at the season's end."
+        },
+        {
+          "name": "Dr. Merch",
+          "line": "The CDC scientist Murphy was supposed to reach; she now has him and is taking him to Zona under the submarine captain's authority."
+        }
+      ]
+    }
+  }
+}

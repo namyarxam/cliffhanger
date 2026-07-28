@@ -1,0 +1,386 @@
+{
+  "slug": "servant",
+  "generatedFor": "Servant",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · Nanny for a doll",
+          "text": "Leanne arrives to care for baby Jericho, a reborn doll Dorothy treats as real to survive her son's crib death. Sean, alone in his grief, plays along.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the household's central lie and the arrangement Leanne walks into — the premise every later shock depends on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · A real baby in the crib",
+          "text": "Days later, a living infant appears in the crib in the doll's place. Dorothy behaves as if Jericho never died; Sean can't remove the baby or explain how he arrived.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "This is the show's engine — the impossible baby whose origin drives every investigation for three seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Leanne is not Leanne",
+          "text": "Julian's investigation finds the real Leanne Grayson died in a 2007 Wisconsin house fire. He treats the nanny as an imposter running a con on the family.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Sets up the fault line that runs the rest of the series: is Leanne a scam or something else entirely.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Uncle George at the door",
+          "text": "Leanne's unnerving uncle George arrives demanding she leave with him. Sean and Julian now suspect she belongs to something older and stranger than a scam.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "First appearance of the cult through its emissary — George is the recurring pressure on Leanne through S4.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · How Jericho actually died",
+          "text": "Flashbacks reveal Dorothy, sleep-deprived and alone, forgot the baby in a hot car; she then tended his corpse in catatonia for four days until Julian found her.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The trauma the whole show orbits, and the secret Sean and Julian will spend seasons keeping from Dorothy.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · May Markham surfaces",
+          "text": "At Jericho's baptism, Dorothy identifies George's companion as May Markham, leader of a cult supposedly burned to death years earlier.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Names the Church of the Lesser Saints and reframes the story from domestic mystery to cult siege.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Leanne leaves, doll returns",
+          "text": "Cult members appear on the street and spirit Leanne away; upstairs, the living Jericho is once again a reborn doll, which Dorothy finally drops.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The exact state the household is in as S2 opens: baby gone, doll back, Dorothy about to start screaming for her son.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The living Jericho vanishes with Leanne into a cult everyone thought was dead. Dorothy has just accepted that her son is a doll, but not that he is gone.",
+        "questions": [
+          "Where has the real baby been taken, and whose child is he?",
+          "What does the Church of the Lesser Saints actually want with the Turners?",
+          "Will Sean ever tell Dorothy that her real son died months ago in the car?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Dorothy Turner",
+          "line": "Philadelphia TV reporter whose psychotic break lets her treat a reborn doll as her infant son; still has no idea Jericho died in her care."
+        },
+        {
+          "name": "Sean Turner",
+          "line": "Dorothy's chef husband, quietly grieving; plagued by unexplained splinters and losing his senses since Leanne arrived."
+        },
+        {
+          "name": "Julian",
+          "line": "Dorothy's sardonic younger brother and one of the few who know Jericho died; drives the investigation into Leanne."
+        },
+        {
+          "name": "Leanne Grayson",
+          "line": "The devout eighteen-year-old 'nanny' — an identity that belongs to a girl dead since 2007, and the conduit through which a living baby appeared in the crib."
+        },
+        {
+          "name": "Uncle George",
+          "line": "Leanne's unsettling relative and the cult's ambassador; came to bring her home and left with a warning that his wife would return for her."
+        },
+        {
+          "name": "May Markham",
+          "line": "Leader of the Church of the Lesser Saints, believed killed in an ATF fire years ago and now walking around Philadelphia collecting Leanne."
+        },
+        {
+          "name": "Natalie",
+          "line": "Dorothy's kinesiologist friend who prescribed the reborn doll therapy and now knows a real baby was in the house."
+        },
+        {
+          "name": "Tobe",
+          "line": "Sean's sous chef, sweetly infatuated with Leanne and oblivious to the household's secret."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Dorothy calls the cops",
+          "text": "Dorothy reports Jericho's 'kidnapping' to police; Sean and Julian cover with a story that the doll therapy broke her mind, hiding that a real baby was ever there.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Frames the whole season — Dorothy is fighting for a baby everyone else has to pretend was never there.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The pizza trap",
+          "text": "Dorothy chases every lead to Leanne. A pizza-delivery ruse locates her at a mansion caretaking role; Dorothy has Tobe drug the pizza and bring her home.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Dorothy stops being reactive — she is the one who captures Leanne, flipping the power dynamic that opens the back half.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Attic and sinkhole",
+          "text": "Dorothy locks Leanne in the attic and interrogates her nightly. When Leanne escapes, Dorothy buries her in the new basement sinkhole; Sean digs her out, appalled.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Shows how far Dorothy will go and cracks Sean's alignment with her — the fissure Leanne will exploit for the rest of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · George's ransom bargain",
+          "text": "A fake ransom lures Uncle George back to the house. He offers to heal Sean and return Jericho — but only if Leanne is handed to the cult for 'purification.'",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Names the terms of the war: the cult wants Leanne back to kill her, and it's willing to trade the baby to get her.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Leanne turns on George",
+          "text": "Leanne warns Sean that George is lying. She defies him, sleeps with Julian, and hints someone worse than May is coming; a rattled George is hit by a car outside.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Leanne actively picks a side against the cult and forms the Julian bond that carries into S3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Josephine's purification",
+          "text": "Aunt Josephine arrives and locks Leanne in the attic to 'purify' her. Dorothy interrupts with a shovel; Leanne finishes Josephine off with a red-hot dagger.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "First on-screen kill of a cult elder and the first hint that Leanne is more than a runaway — the burnt body stays hidden in the walls.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Jericho returned",
+          "text": "A living Jericho appears in the nursery, cradled by Leanne, who declares the Turners her family and privately vows war on the Church.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Season closes with Leanne installed as protector-in-residence and openly at war with the cult — the exact setup S3 opens on.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Leanne has bought her way into the family with a living child and a body hidden in the basement. She is no longer a captive — she is the Turners' protector, and she has publicly declared war on the Church.",
+        "questions": [
+          "What is Leanne actually capable of, and where does this second Jericho come from?",
+          "How will the Church of the Lesser Saints answer her declaration?",
+          "Can Sean and Julian ever tell Dorothy that her real son died in the car?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Dorothy Turner",
+          "line": "Convinced her baby was kidnapped by the cult; ruthless in pursuit of him and completely unaware she caused his death last summer."
+        },
+        {
+          "name": "Sean Turner",
+          "line": "Wavering between Dorothy and Leanne; his senses have returned and he is quietly moving from atheism to prayer."
+        },
+        {
+          "name": "Julian",
+          "line": "Dorothy's brother, running interference for both women; slept with Leanne during the Christmas week and won't stop thinking about it."
+        },
+        {
+          "name": "Leanne Grayson",
+          "line": "No longer a captive — the household's live-in protector, who killed a cult elder and produced a living baby to buy her place."
+        },
+        {
+          "name": "Uncle George",
+          "line": "Cult emissary rebuffed by the Turners and hit by a car outside the house; his current whereabouts are unclear."
+        },
+        {
+          "name": "Aunt Josephine",
+          "line": "Higher-ranked cult figure sent to ritually 'purify' Leanne; killed with a fiery dagger and burned in the basement."
+        },
+        {
+          "name": "Officer Stephanie Reyes",
+          "line": "First responder from the day Jericho died, now assigned to the 'kidnapping'; visibly skeptical of the Turners' cover story."
+        },
+        {
+          "name": "Tobe",
+          "line": "Sean's sous chef, unknowingly delivered the drugged pizza that captured Leanne; still smitten with her."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Paranoid Leanne",
+          "text": "Three months later, Leanne is paranoid and won't leave the house. An intruder ransacks the bedroom while the Turners are at the beach and steals her ritual dagger.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the season's baseline — Leanne under siege, and puts the dagger in cult hands where it will keep resurfacing.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Jericho isn't hers",
+          "text": "Julian secretly runs DNA on Jericho and confirms the baby is not Dorothy's biological son. Dorothy refuses to believe him; the truth stays trapped.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "First concrete proof the miracle baby is a substitute, seeding the S4 revelation that he belongs to someone else entirely.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Leanne's followers",
+          "text": "Runaways from the Church of the Lesser Saints camp in the park and worship Leanne as a rebel who broke free. Two cult members attack her at a block party.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The cult splits: Leanne now has her own disciples, and the mainline Church escalates to physical assault.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Sean turns to God",
+          "text": "Sean turns devout and invites his pastor Nancy over. Dorothy realises she has no memory of Sean ever leaving for a cooking show; Sean and Julian gaslight her through it.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Sean picks Leanne over Dorothy's sanity — the alliance that makes Dorothy the household's dissident.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Jericho on a string",
+          "text": "When Dorothy tries to send her away, Leanne makes Jericho briefly vanish, proving the baby is her gift and can be revoked. Sean forces Dorothy to let her stay.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Leanne stops pretending — she is openly using the child as leverage, and the family folds.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Isabelle on live TV",
+          "text": "Reporter Isabelle pieces together the truth and confronts Dorothy. On live TV she is killed by a stray bullet at a police standoff; Leanne smiles as she watches.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "First strong hint Leanne can reach out and touch her enemies at a distance — the outside world is no longer safe from her.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Dorothy falls",
+          "text": "Frank brings a psychiatrist Leanne redirects onto Dorothy. Dorothy tries to flee with Jericho, and the rotting banister collapses, dropping her to the floor below.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Ends the season with Dorothy broken at Leanne's feet — the precise physical state and power balance S4 opens on.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Dorothy lies broken at the foot of the stairs, looking up at Leanne cradling Jericho. Leanne is no longer hiding what she can do; she runs the house, and the family knows it.",
+        "questions": [
+          "How badly is Dorothy hurt, and does she remember Leanne let her fall?",
+          "What is Leanne willing to do to the Turners to keep them as her family?",
+          "How will the Church answer the fact that she is now openly powerful?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Leanne Grayson",
+          "line": "Openly supernatural, using Jericho as leverage over Dorothy; hunted by the Church and revered by its defectors in the park."
+        },
+        {
+          "name": "Dorothy Turner",
+          "line": "Paralyzed at the foot of the stairs after Leanne let her fall; still doesn't know her real son died last summer."
+        },
+        {
+          "name": "Sean Turner",
+          "line": "Devout now, siding with Leanne to keep the child; actively gaslighting Dorothy about his missing weeks on the cooking show."
+        },
+        {
+          "name": "Julian",
+          "line": "Sober, dating Veera, still sleeping with Leanne; proved Jericho isn't Dorothy's biologically and no one will act on it."
+        },
+        {
+          "name": "Jericho",
+          "line": "The living toddler installed by Leanne — DNA-confirmed as not Dorothy's biological son."
+        },
+        {
+          "name": "Uncle George",
+          "line": "Alive and recovered, conferring with Roscoe outside the Turner house and calling it 'rotting.'"
+        },
+        {
+          "name": "Isabelle",
+          "line": "Dorothy's rival reporter who worked out the Jericho lie; killed on live TV by a stray bullet before she could publish."
+        },
+        {
+          "name": "Frank",
+          "line": "Dorothy's father, tried to have Leanne committed and instead handed Leanne authority over Dorothy's care."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Pigeons in the driveway",
+          "text": "Dorothy comes home paraplegic and refuses Leanne's help. Cult members ambush Leanne in the driveway; a flock of pigeons descends and drives them off.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "First unambiguous supernatural display — Leanne now commands the natural world, and Dorothy has locked her out of the family.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Bobbie's séance",
+          "text": "Dorothy hires nurses Beverly and Bobbie to keep Leanne away. Bobbie, a medium, holds a séance during which she hears a baby crying that no one else can find.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Independent confirmation that the real Jericho's spirit is still nearby — the moral stakes of the whole show, restated by a stranger.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Neighbors and sinkhole",
+          "text": "The Turners realise the Church has moved cult members onto the block. When they throw a party to smoke them out, Leanne opens a sinkhole in the street with her mind.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The war goes public. Leanne demonstrates telekinetic power in front of witnesses; Sean starts to be genuinely afraid of her.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · George's mundane truth",
+          "text": "George tells Sean and Julian that Leanne is no fallen angel — just a stalker who fixated on Dorothy in 2011, drugged Sean, and passed off a dead addict's baby as Jericho.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The alternative explanation the men choose to believe — and the reason they agree to hand Leanne over.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The handoff, reversed",
+          "text": "Sean and Julian bind Leanne and hand her to George for purification. Leanne kills George with his own fiery dagger and completes the ritual on him instead.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Point of no return: the men betray Leanne, Leanne butchers the cult single-handed, and any pretence of a shared household ends.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Dorothy remembers",
+          "text": "Julian plays Dorothy the voicemail from the day Jericho died and she finally remembers leaving him in the car. Leanne offers Dorothy a life with just her and the baby.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The show's central secret is finally spoken to the person it belongs to — everything after this is Dorothy's choice.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Fire",
+          "text": "Dorothy refuses; there is no baby in the house. Leanne burns the house down and steps into the flames. Reyes tells Julian that the cult resurrected him too.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Ends the series: Leanne walks into her own pyre and the survivors learn the cult's reach was wider than Leanne alone.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Turners walk out of the burnt house without Leanne and without a child. Reyes tells Julian the Church saved his life last Christmas for a reason it hasn't named.",
+        "questions": [
+          "Is Leanne truly dead, or has she returned to whatever she came from?",
+          "What does the Church expect Julian to do with the life it gave back to him?",
+          "Can Dorothy and Sean live with what they now remember about the day Jericho died?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Leanne Grayson",
+          "line": "Openly wielding supernatural power and convinced God has abandoned her; walked into a fire she set after Dorothy refused her as a daughter."
+        },
+        {
+          "name": "Dorothy Turner",
+          "line": "Paraplegic and, at last, remembering that her real son died in her care last summer; refused Leanne's offer of a substitute family."
+        },
+        {
+          "name": "Sean Turner",
+          "line": "Turned on Leanne after her true nature surfaced; stabbed himself during the failed handoff and finished the season out of the burnt house."
+        },
+        {
+          "name": "Julian",
+          "line": "Helped Sean betray Leanne; ends the season told by Reyes that the cult was the one who brought him back from the overdose last Christmas."
+        },
+        {
+          "name": "Uncle George",
+          "line": "Cult leader who ran the purification ritual on Leanne himself; killed by her with his own fiery dagger."
+        },
+        {
+          "name": "Officer Stephanie Reyes",
+          "line": "Revealed as a cult 'chosen sister,' resurrected as a teenager and assigned to watch Leanne the whole time."
+        },
+        {
+          "name": "Bobbie (Roberta)",
+          "line": "Dorothy's medium nurse whose séance confirmed a real Jericho was crying somewhere no one could reach."
+        },
+        {
+          "name": "Beverly",
+          "line": "Dorothy's other live-in nurse; dead of a snakebite at the zoo party according to George's account."
+        }
+      ]
+    }
+  }
+}

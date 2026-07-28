@@ -1,0 +1,410 @@
+{
+  "slug": "high-school-musical-the-musical-the-series",
+  "generatedFor": "High School Musical: The Musical: The Series",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · New year, old ex",
+          "text": "Ricky returns to school to find Nini now dating EJ from summer theater camp; new drama teacher Miss Jenn announces East High will stage High School Musical.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the entire triangle and the season-long production frame.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Cast list, and Gina",
+          "text": "Ricky auditions for Troy to win Nini back; both are cast as leads. Transfer student Gina Porter arrives with dance skills that immediately threaten Nini.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the show's third lead and her ambition for Gabriella.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The phone lie",
+          "text": "EJ has cousin Ashlyn steal Nini's phone and secretly deletes Ricky's voicemail to her — the deception that will eventually cost him the relationship.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The sabotage that drives Nini and EJ's breakup and Ashlyn's alliance shift.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Two homes break",
+          "text": "Ricky's parents announce a separation and his mother plans to move to Chicago; Nini discovers EJ's phone theft and blocks his number, ending things.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Frees Nini from EJ and destabilises Ricky's home life for the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Miss Jenn suspended",
+          "text": "Principal Gutierrez uncovers Miss Jenn's credential lie and suspends her; the cast performs at the school board and wins her reinstatement.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Bonds the cast into an actual team and cements Miss Jenn as their protector.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Fire, Gina moves, Mike",
+          "text": "A fire damages the East High theater and Gina is relocated mid-production for her mother's work; Miss Jenn and Ricky's father Mike quietly grow close.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Removes Gina before the finale and plants the Miss Jenn/Mike thread.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Opening night, and after",
+          "text": "Ricky and Nini reconcile after the show and kiss; a Denver arts school offers Nini a spot starting in a month, and Big Red and Ashlyn kiss backstage.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Every relationship the next season begins from is set in place tonight.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ricky and Nini have finally reconciled — just as she accepts a spot at a Denver arts school starting in a month. Big Red and Ashlyn have just kissed, Miss Jenn is quietly falling for Ricky's dad, and Gina has left again.",
+        "questions": [
+          "Can Ricky and Nini's new relationship survive her leaving for Denver?",
+          "How long can Miss Jenn keep her job now that Gutierrez knows she caused the fire?",
+          "Where does Gina belong after being uprooted a second time?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Ricky Bowen",
+          "line": "Junior playing Troy; just reconciled with Nini after months of scheming to win her back, while his parents split up."
+        },
+        {
+          "name": "Nini Salazar-Roberts",
+          "line": "Cast as Gabriella; broke up with EJ over his lies, back with Ricky, and about to leave for a Denver arts school."
+        },
+        {
+          "name": "EJ Caswell",
+          "line": "Nini's ex who stole her phone and deleted Ricky's voicemail; stepped aside from Troy on opening night as penance."
+        },
+        {
+          "name": "Gina Porter",
+          "line": "Ambitious transfer student and Troy understudy; was moved away mid-run and returned only to dance one number."
+        },
+        {
+          "name": "Miss Jenn",
+          "line": "Drama teacher whose credential lie briefly cost then reclaimed her job; quietly falling for Ricky's father Mike."
+        },
+        {
+          "name": "Ashlyn Caswell",
+          "line": "EJ's cousin, dragged into his scheme early; kissed Big Red backstage after opening night."
+        },
+        {
+          "name": "Big Red",
+          "line": "Ricky's best friend whose secret tap talent impressed Mr. Mazzara; just kissed Ashlyn."
+        },
+        {
+          "name": "Mr. Mazzara",
+          "line": "East High STEM teacher who repeatedly rats out Miss Jenn, then softens; the pair are growing warmer despite themselves."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · New show, old rival",
+          "text": "Miss Jenn learns her ex Zack Roy is directing rival North High's musical; she swaps East High to Beauty and the Beast to compete. Nini leaves for the Denver arts school.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the North High rivalry and removes Nini from the group.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Nini comes home",
+          "text": "Nini feels stifled at the Denver school and returns to East High for good; Miss Jenn writes her a personified enchanted rose role so she can perform.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Puts Nini back in the ensemble but on a different creative path.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Lily and the Rose Song",
+          "text": "New student Lily is rejected by East High and defects to North High; Nini's original Rose Song, secretly filmed by Carlos, goes viral online.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Introduces the season's antagonist and launches Nini's music career.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Ricky and Nini break",
+          "text": "Ricky feels left behind by Nini's rising music career and, with Lily whispering doubts, picks a fight over her lyrics; he and Nini break up for good.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Ends the flagship relationship and clears space for what comes after.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Gina and EJ pull closer",
+          "text": "Gina is forced to stay in Salt Lake and grows close to EJ co-hosting the morning news; at a delayed airport she meets Jack, who tells her to stop guarding herself.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Repositions Gina emotionally and starts her real romance with EJ.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The rigging breaks",
+          "text": "In rehearsal for the Beast's transformation the rope snaps and Ricky falls; on opening night his replacement harness is stolen and hidden by Lily herself.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "The sabotage the audience knows about but Ricky does not — a live grenade into S3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Curtain, and a first kiss",
+          "text": "The cast abandons the competition; Mr. Mazzara accepts Caltech, Ricky gives Lily a second chance, and EJ and Gina finally share their first kiss.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Sends everyone into summer in the exact configuration S3 opens on.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "EJ and Gina have just started something; Ricky is warming to Lily, unaware she stole his harness on show night; Nini is chasing music as 'Nina' and Mr. Mazzara is leaving for Caltech.",
+        "questions": [
+          "When will Ricky discover Lily was the one who sabotaged him?",
+          "Can EJ and Gina's brand-new relationship survive the summer apart?",
+          "How far can Nini push her music career now that she's outside East High?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Ricky Bowen",
+          "line": "Broken up with Nini after their fight over her song; drifting toward Lily and giving her a second chance."
+        },
+        {
+          "name": "Gina Porter",
+          "line": "Stuck at East High for good; grew close to EJ over the season and has just had her first kiss with him."
+        },
+        {
+          "name": "EJ Caswell",
+          "line": "Rejected by Duke, forced to sit with real failure; matured through the season and now newly dating Gina."
+        },
+        {
+          "name": "Nini Salazar-Roberts",
+          "line": "Left the arts school, released The Rose Song under the name Nina, and is being introduced to the music industry through Gina's brother Jamie."
+        },
+        {
+          "name": "Miss Jenn",
+          "line": "Reinstated director; free to pursue Mike after Ricky's blessing, but Mr. Mazzara has also confessed feelings for her."
+        },
+        {
+          "name": "Ashlyn Caswell",
+          "line": "Played Belle opposite Ricky; still with Big Red and writing songs about identity."
+        },
+        {
+          "name": "Big Red",
+          "line": "Aiming at hospitality after his aptitude test; still with Ashlyn."
+        },
+        {
+          "name": "Kourtney",
+          "line": "Rebuilt things with Howie from North High after his role reveal; back together and steady."
+        },
+        {
+          "name": "Lily",
+          "line": "The North High defector who wormed her way into Ricky's ear all season and secretly stole his harness on opening night."
+        },
+        {
+          "name": "Mr. Mazzara",
+          "line": "Accepted the Caltech robotics program on EJ's father's recommendation; confessed his feelings for Miss Jenn on the way out."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Camp Shallow Lake",
+          "text": "The friends head to Camp Shallow Lake for a summer production of Frozen with Corbin Bleu; Ricky ditches Lily after finding his stolen harness in her possession and joins them.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Resolves S2's harness mystery and reunites the group away from East High.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Corbin's real plan",
+          "text": "Corbin only came to film a documentary about the rehearsal; camp director Dewey Wood appoints EJ as musical director. Ricky and Gina agree on a fresh start.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The camera in the room is the season's engine and EJ's new burden.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Nini finds Marvin",
+          "text": "On a road trip her mothers arrange a meeting with Marvin, revealed as her biological father and their old bandmate; Nini decides to move to California to pursue music.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Writes Nini out of the East High orbit before senior year begins.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · EJ drifts, others notice",
+          "text": "EJ struggles as director and grows close to ex-camper Val the choreographer; Ashlyn quietly realises she also has feelings for Val, while Ricky and Gina keep bonding.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Sets every emotional dislocation of the finale into motion at once.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Caught on camera",
+          "text": "The crew push for real drama and Ricky's private confession to Carlos that he has feelings for Gina is recorded without her knowledge, waiting on a documentary edit.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The ticking bomb that goes off at the premiere.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Prom, and a breakup",
+          "text": "At the camp prom Gina breaks up with EJ over his distraction; camp siblings Maddox and Jet reconcile, and Maddox begins to notice Ashlyn in a new light.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Ends Gina and EJ and seeds the Maddox/Ashlyn thread that carries forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The premiere blows up",
+          "text": "The Frozen livestream is a hit; a month later the documentary premiere exposes Ricky's confession — EJ feels betrayed, Ricky and Gina finally kiss, and Big Red is outed as bisexual.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The public reveal that resets every friend-group alliance for S4.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The documentary has just aired. Ricky and Gina have kissed, EJ is blindsided by their hidden feelings, and Ashlyn is processing both her own feelings for another girl at camp and the reveal that Big Red is bisexual.",
+        "questions": [
+          "Where does EJ stand with the group after the on-camera betrayal?",
+          "Can Ricky and Gina take this back to East High as an actual couple?",
+          "Do Ashlyn's new feelings for Maddox pull her away from Big Red?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Gina Porter",
+          "line": "Broke up with EJ at prom; has just kissed Ricky after the documentary aired his hidden feelings."
+        },
+        {
+          "name": "Ricky Bowen",
+          "line": "Anna's Kristoff; his private confession about Gina is now public, blowing up his friendship with EJ."
+        },
+        {
+          "name": "EJ Caswell",
+          "line": "Directed the Frozen show under real pressure and was blindsided at the premiere by Ricky and Gina's feelings."
+        },
+        {
+          "name": "Ashlyn Caswell",
+          "line": "Ensemble at camp; realised she has feelings for Val, and by prom is noticing Maddox too — all while still with Big Red."
+        },
+        {
+          "name": "Big Red",
+          "line": "Skipped camp but arrived for opening night; just outed as bisexual to Ashlyn and the group by the documentary."
+        },
+        {
+          "name": "Kourtney",
+          "line": "Elsa in Frozen; managed her performance anxiety with Alex's help and grew close to Maddox and Ashlyn."
+        },
+        {
+          "name": "Carlos Rodriguez",
+          "line": "Led the improv workshops as fake drama; is the one Ricky confessed his feelings for Gina to on camera."
+        },
+        {
+          "name": "Miss Jenn",
+          "line": "Coached EJ from Salt Lake and gave Ashlyn quiet advice; still East High's drama teacher."
+        },
+        {
+          "name": "Maddox",
+          "line": "Counsellor-in-training and Jet's sister; ended things properly with her ex Madison and is starting to see Ashlyn differently."
+        },
+        {
+          "name": "Jet",
+          "line": "Reserved newcomer at camp, revealed as Maddox's brother; the two have reconciled by the end."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Senior year, secret couple",
+          "text": "Ricky begins senior year secretly dating Gina at her request; Miss Jenn announces East High's musical will be an adaptation of High School Musical 3: Senior Year.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The season opens with the S3 kiss now a hidden relationship — its concealment drives the arc.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · HSM4 comes to East High",
+          "text": "Bart Johnson announces HSM4: The Reunion will be filmed at East High with teen stars Mack and Dani; the drama students are cast as extras and Emmy enrolls as a freshman.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the show-within-a-show and the new characters who reshape the year.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Fake romance, real break",
+          "text": "Director Quinn replaces Dani with Gina after Mack proposes a publicity fake-relationship; Ricky pieces it together and asks Gina for a break.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The season's central conflict between Ricky, Gina and the movie.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Mutual cheating",
+          "text": "Big Red and Ashlyn confess mutual cheating and break up — Big Red with Seb over the summer, Ashlyn a near-kiss with Maddox; Carlos and Seb reunite.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Frees Ashlyn and Big Red into their new pairings and untangles Carlos and Seb.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Reunion in the rain",
+          "text": "Ricky visits EJ at college for perspective; Gina realises she still loves Ricky and they reunite in the rain, just as Principal Gutierrez cancels the musical.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Puts the flagship couple back together and threatens the season's staging.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The program is saved",
+          "text": "The cast reminisces about how they all found each other; Alyson Reed and Bart donate their HSM4 pay to save the program, and Gina is cast in a Romeo and Juliet film in New Zealand.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Rescues the musical while planting the choice Gina will have to make.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Show night, and choices",
+          "text": "Gina demands filming move to Salt Lake so she can stay; Ricky finally tells her he loves her, Ashlyn and Maddox kiss, and Miss Jenn turns down the Wicked tour to keep teaching at East High.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The closing tableau — every principal picks the version of the future they want.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The senior musical is done. Ricky and Gina have said 'I love you' with her film moving to Salt Lake to keep them close; Ashlyn and Maddox are together; Miss Jenn is staying at East High and heading to New Zealand with Mr. Mazzara; EJ is being pushed toward teaching.",
+        "questions": [
+          "What happens to Ricky and Gina once senior year at East High actually ends?",
+          "Does Ashlyn and Maddox's new relationship hold outside of a show week?",
+          "Will EJ take Miss Jenn's advice and become a teacher himself?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Ricky Bowen",
+          "line": "Senior; reunited with Gina after the fake-romance mess and has finally told her he loves her; heading to Salt Lake City College."
+        },
+        {
+          "name": "Gina Porter",
+          "line": "Cast as Juliet opposite Mack; forced the film's production to relocate to Salt Lake so she can stay near Ricky."
+        },
+        {
+          "name": "Ashlyn Caswell",
+          "line": "Broke up with Big Red over their mutual cheating; just kissed Maddox on opening night."
+        },
+        {
+          "name": "EJ Caswell",
+          "line": "Away at college; mentored Ricky through his crisis and is being nudged by Miss Jenn toward teaching."
+        },
+        {
+          "name": "Miss Jenn",
+          "line": "Turned down a national Wicked tour to keep teaching at East High; heading to New Zealand with Mr. Mazzara."
+        },
+        {
+          "name": "Big Red",
+          "line": "Broke up with Ashlyn after the summer cheating with Seb came out; still in the friend group."
+        },
+        {
+          "name": "Kourtney",
+          "line": "Accepted into both Princeton and Lewis; college-bound but still tight with the cast."
+        },
+        {
+          "name": "Carlos Rodriguez",
+          "line": "Reunited with Seb after his cheating confession; still choreographing."
+        },
+        {
+          "name": "Maddox",
+          "line": "At East High as a personal assistant on the movie; now openly with Ashlyn."
+        },
+        {
+          "name": "Mack",
+          "line": "HSM4's teenage male lead who engineered the fake-romance stunt with Gina; heading to New Zealand for Romeo and Juliet."
+        }
+      ]
+    }
+  }
+}

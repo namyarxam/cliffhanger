@@ -1,0 +1,616 @@
+{
+  "slug": "silicon-valley",
+  "generatedFor": "Silicon Valley",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The hidden algorithm",
+          "text": "Richard, a low-level Hooli coder, ships a music app that hides a world-class compression algorithm; Belson notices and secretly begins cloning it as Nucleus.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up the algorithm as the show's central object of desire and establishes Hooli as its permanent opponent.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The founder's choice",
+          "text": "Faced with a $10M Hooli buyout or a $200K seed from billionaire Peter Gregory, Richard turns down the check and takes the investment to run the company himself.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Defines Richard's founder identity and locks Peter Gregory in as the show's original patron.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Jared and Big Head switch sides",
+          "text": "Ex-Hooli assistant Jared joins to run operations; Belson counters by promoting Richard's mediocre friend Big Head to publicly claim him as Pied Piper's co-founder.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Introduces Jared as the ops brain and sets up Big Head's role as Belson's ongoing lawsuit chess piece.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Erlich on the board",
+          "text": "A drunken toga party ends with Erlich Bachman permanently on the board, giving Richard's opinionated landlord structural power over the company.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Erlich's board seat is the reason he keeps overriding Richard for the rest of the series.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Nucleus at Battlefield",
+          "text": "At TechCrunch Battlefield, Hooli reveals Nucleus with the same compression score and more features; Pied Piper looks beaten before Richard even walks on.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Frames Hooli as the near-equal competitor and sets the stakes for Richard's algorithmic breakthrough.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The breakthrough",
+          "text": "A crass whiteboard joke sparks a real math breakthrough; Richard rewrites the algorithm overnight to a Weissman score of 5.2 and Pied Piper wins Battlefield.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The 5.2 score is the technical foundation the rest of the series inherits.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The hard part starts",
+          "text": "Belson is publicly humiliated. Monica warns Richard the hard part starts now, and he vomits into an alley behind the venue.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Signals the tonal shift from underdog story into the real fight for the company that defines S2.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Pied Piper has won Battlefield and Richard is now running a real company he has no idea how to run, with a publicly humiliated Hooli plotting its next move.",
+        "questions": [
+          "How does Belson retaliate for losing to Richard in front of the whole industry?",
+          "Can Richard actually lead a funded company, or does the panic get the better of him?",
+          "What happens now that serious investors and expectations are circling Pied Piper?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Richard Hendricks",
+          "line": "Nervous coder whose compression algorithm just won Battlefield; now the reluctant CEO of a funded company."
+        },
+        {
+          "name": "Erlich Bachman",
+          "line": "Loud incubator owner with a permanent Pied Piper board seat and a 10% stake."
+        },
+        {
+          "name": "Jared Dunn",
+          "line": "Fastidious Hooli defector running Pied Piper's business and operations."
+        },
+        {
+          "name": "Bertram Gilfoyle",
+          "line": "Bearded satanist systems engineer at Pied Piper."
+        },
+        {
+          "name": "Dinesh Chugtai",
+          "line": "Pied Piper coder locked in constant rivalry with Gilfoyle."
+        },
+        {
+          "name": "Nelson \"Big Head\" Bighetti",
+          "line": "Richard's mediocre friend, promoted at Hooli as a fake Pied Piper co-founder to strengthen Belson's claim."
+        },
+        {
+          "name": "Gavin Belson",
+          "line": "Hooli CEO publicly humiliated by Pied Piper and now Richard's real enemy."
+        },
+        {
+          "name": "Peter Gregory",
+          "line": "Eccentric billionaire VC whose $200K seed made Pied Piper possible."
+        },
+        {
+          "name": "Monica Hall",
+          "line": "Peter Gregory's associate at Raviga and Richard's outside ally."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Peter dies, Hooli sues",
+          "text": "Peter Gregory dies suddenly; Raviga installs the equally odd Laurie Bream, and at Peter's funeral Hooli files an IP lawsuit against Pied Piper.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Loses the show's founding patron and launches the lawsuit that defines the whole season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Hanneman bailout",
+          "text": "The lawsuit spooks every VC. Richard takes a $5M rescue from flashy billionaire Russ Hanneman, at the cost of two seats on the board.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Introduces Hanneman as an unstable partner whose money and board seats will keep steering the company.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Nucleus flops, End Frame steals",
+          "text": "Belson launches Nucleus on a UFC broadcast and it fails on live TV; meanwhile a rival called End Frame tricks the team into revealing the algorithm.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Nucleus's public failure weakens Belson, and End Frame becomes the season's new outside threat.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Big Head at Hooli XYZ",
+          "text": "To bolster the lawsuit, Belson promotes clueless Big Head to co-head Hooli XYZ; when Bannercheck resigns in protest, Big Head becomes sole head of a shell project.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Big Head's absurd promotion track sets up the severance money that reshapes the ownership fight later.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Arbitration reverses",
+          "text": "In binding arbitration, Richard admits testing his algorithm on a Hooli laptop; the judge rules for Hooli, then reverses when Hooli's employment contracts are ruled illegal.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The reversal saves the algorithm and simultaneously guts Hooli, resetting the balance of power.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Raviga fires Richard",
+          "text": "Raviga buys out Hanneman's stake, giving Laurie three of five board seats; she uses the majority to fire Richard as CEO of his own company.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Removes Richard from the CEO chair and hands the company to Raviga, the setup for all of S3.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Belson before the board",
+          "text": "The same ruling voids over half of Hooli's employment contracts; Belson is summoned before his own board to answer for the disaster he built.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Puts Belson's grip on Hooli in doubt just as Richard loses his grip on Pied Piper.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Pied Piper survived the lawsuit but Raviga has taken control and fired Richard as CEO; Belson has been called before Hooli's board to answer for the Nucleus disaster.",
+        "questions": [
+          "Who runs Pied Piper now, and what do they turn it into?",
+          "Can Richard take his own company back from the board that just fired him?",
+          "Does Belson survive his own board meeting, and if not, who takes Hooli?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Richard Hendricks",
+          "line": "Founder just fired as CEO by Raviga; still on the team he built."
+        },
+        {
+          "name": "Erlich Bachman",
+          "line": "Still on Pied Piper's board and still hosting the company from his house."
+        },
+        {
+          "name": "Jared Dunn",
+          "line": "Operations lead, now living in a neighbour's guest house next door to the incubator."
+        },
+        {
+          "name": "Bertram Gilfoyle",
+          "line": "Built and runs Pied Piper's homemade server infrastructure."
+        },
+        {
+          "name": "Dinesh Chugtai",
+          "line": "Pied Piper coder, thoroughly humiliated all season and going nowhere."
+        },
+        {
+          "name": "Nelson \"Big Head\" Bighetti",
+          "line": "Sole head of Hooli's shell XYZ lab, promoted through failure and mentored by a corporate guru."
+        },
+        {
+          "name": "Gavin Belson",
+          "line": "Hooli CEO facing his own board after Nucleus flopped and his lawsuit collapsed."
+        },
+        {
+          "name": "Laurie Bream",
+          "line": "Raviga's managing partner and Pied Piper's new controlling shareholder."
+        },
+        {
+          "name": "Monica Hall",
+          "line": "Raviga associate and Richard's inside line at the firm that just fired him."
+        },
+        {
+          "name": "Russ Hanneman",
+          "line": "Brash billionaire who bought in cheap and just cashed out to Raviga."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Jack Barker and the box",
+          "text": "Raviga's new CEO Jack Barker forces Pied Piper to sell a hardware box instead of a platform; Richard runs his platform vision as a secret skunkworks project.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Frames the entire season as Richard's vision versus Jack's revenue plan.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Belson overpays for End Frame",
+          "text": "Belson overpays $250M for End Frame's middle-out compression, repricing Pied Piper's platform above the box deal; Laurie fires Jack and reinstates Richard as CEO.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Belson accidentally hands Richard the argument that puts him back in the CEO seat.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Bachmanity's million-dollar luau",
+          "text": "Erlich and Big Head form 'Bachmanity' and blow a million on a luau at Alcatraz; a rogue manager has quietly embezzled Big Head into bankruptcy.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The debt is what forces Erlich to sell his stock, which is what unlocks the finale ownership swap.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Launch without users",
+          "text": "The platform launches to half a million downloads but almost no daily users; Jared secretly hires a Bangladeshi click farm to fake the numbers.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The invisible DAU problem is the ticking bomb under the whole back half of the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The click farm confession",
+          "text": "Richard reveals the click-farm fraud to a Coleman Blair investment round; the deal collapses and Pied Piper's credibility with VCs collapses with it.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Kills the compression platform's future funding path and forces the coming pivot.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Erlich and Big Head buy the company",
+          "text": "Raviga puts its stake up for sale and Belson bids to bury Pied Piper; flush from selling Code/Rag, Erlich and Big Head outbid him by a dollar to take control.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Hands Pied Piper's ownership to the two least-qualified people alive, the setup for S4.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Monica in, chat rising",
+          "text": "Monica, fired for opposing Laurie, joins the team; they realise Dinesh's throwaway video chat app is quietly better than anything Hooli has built.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Points the company at its next pivot and puts Monica inside the tent.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The compression platform is dead and Pied Piper is now owned by Erlich and Big Head after a chain of accidents; Dinesh's throwaway video chat is the company's only real hope.",
+        "questions": [
+          "Does Pied Piper pivot the whole company onto a side-project chat app?",
+          "Can Richard lead a company his best friend and his landlord now own?",
+          "What does Belson do now that both Nucleus and Endframe have blown up in his face?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Richard Hendricks",
+          "line": "Reinstated CEO whose flagship product just failed; grasping for a next act."
+        },
+        {
+          "name": "Erlich Bachman",
+          "line": "Improbable co-owner of Pied Piper via a Code/Rag windfall."
+        },
+        {
+          "name": "Nelson \"Big Head\" Bighetti",
+          "line": "Improbable co-owner of Pied Piper alongside Erlich."
+        },
+        {
+          "name": "Jared Dunn",
+          "line": "Operations lead who confessed to secretly running the click farm."
+        },
+        {
+          "name": "Bertram Gilfoyle",
+          "line": "Systems engineer keeping Pied Piper's infrastructure alive."
+        },
+        {
+          "name": "Dinesh Chugtai",
+          "line": "Coder whose side-project video chat is suddenly Pied Piper's future."
+        },
+        {
+          "name": "Monica Hall",
+          "line": "Fired from Raviga for opposing Laurie; now inside Pied Piper."
+        },
+        {
+          "name": "Gavin Belson",
+          "line": "Hooli CEO badly damaged after burning $250M on Endframe and losing the buyout bid."
+        },
+        {
+          "name": "Laurie Bream",
+          "line": "Raviga head who removed Richard, then reinstated him, then sold the stake and moved on."
+        },
+        {
+          "name": "Jack Barker",
+          "line": "Ousted Pied Piper CEO; corporate operator, still around and available."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Richard walks away from CEO",
+          "text": "Richard steps down as CEO to chase a decentralized 'new internet' alone, giving Dinesh the PiperChat pivot in exchange for the algorithm and the Pied Piper brand.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the new-internet mission that drives every remaining season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Belson eats the COPPA fine",
+          "text": "Belson bullies Dinesh into signing PiperChat over to Hooli, then discovers he's inherited a $21B COPPA fine; the board fires him and installs Jack Barker as CEO.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Removes Belson from Hooli and puts Jack Barker back in charge of the rival.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Peter's old patent, Belson's name",
+          "text": "Richard finds Peter Gregory imagined the same decentralized internet years earlier, and Belson holds the patent; he pitches Belson on building it as revenge on Hooli.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Locks the algorithm and the patent together and lines Belson up as an unlikely partner.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Belson leaves the fight",
+          "text": "A blood-boy scandal breaks Belson's nerve; he leaves Palo Alto for Tibet and signs the decentralized-internet patent over to Richard, but without any funding.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Frees Richard from Belson and leaves him owning the vision but broke.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Monica's smartphone bet",
+          "text": "Keenan Feldspar sells his hyped VR startup to Hooli; Monica promises Pied Piper Series A funding if Richard can get the new internet running on real smartphones.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Sets the concrete goal that structures the finale and the funding path that follows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Hooli-Con and the exploding phones",
+          "text": "At Hooli-Con, Pied Piper piggybacks on free Wi-Fi to hit its install target; but Hooli's VR keynote explodes phones live, and every affected phone is running Pied Piper.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The install win comes with a hidden liability that drives the finale's cascade.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The refrigerator network",
+          "text": "Trying to move their server, they find its code has spread across smart fridges into a working distributed network; Bream-Hall funds them and Belson retakes Hooli.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Proves the new internet is real and puts Belson back at Hooli for the next fight.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Pied Piper's decentralized internet unexpectedly works on a network of smart refrigerators; Bream-Hall is funding it, Belson has retaken Hooli, and Erlich is stranded in Tibet.",
+        "questions": [
+          "Can Pied Piper actually turn a fridge accident into real infrastructure?",
+          "What does Belson do now that he's back in charge of Hooli?",
+          "Does Erlich ever get back from Tibet, and what happens to his stake in the meantime?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Richard Hendricks",
+          "line": "CEO of a company finally aligned with his real vision, freshly funded by Bream-Hall."
+        },
+        {
+          "name": "Jared Dunn",
+          "line": "Operations lead who moved onto Richard's decentralized project from day one."
+        },
+        {
+          "name": "Bertram Gilfoyle",
+          "line": "Systems engineer whose refrigerator hack accidentally proved the whole concept."
+        },
+        {
+          "name": "Dinesh Chugtai",
+          "line": "Coder who briefly ran PiperChat and is now back on the main team."
+        },
+        {
+          "name": "Monica Hall",
+          "line": "Partner at Bream-Hall, personally sponsoring Pied Piper's Series A."
+        },
+        {
+          "name": "Laurie Bream",
+          "line": "Founding partner at Bream-Hall alongside Monica."
+        },
+        {
+          "name": "Gavin Belson",
+          "line": "Back as Hooli CEO after freeing Jack Barker from a Chinese factory hostage crisis."
+        },
+        {
+          "name": "Jack Barker",
+          "line": "Briefly Hooli CEO after Belson's fall; sidelined again after the China disaster."
+        },
+        {
+          "name": "Nelson \"Big Head\" Bighetti",
+          "line": "Now a guest lecturer at Stanford, still peripherally involved with Pied Piper."
+        },
+        {
+          "name": "Erlich Bachman",
+          "line": "Stranded in a Tibetan opium den, paid up for five years by Belson."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Building the team from scraps",
+          "text": "Belson corners every distributed-systems engineer in the valley; Richard salvages a team by absorbing two failing startups and coding 48 straight hours to earn their respect.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes Pied Piper as a real company with real engineers for the first time.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Jared up, Erlich out",
+          "text": "Jared is promoted to COO. Jian-Yang forges papers to become Erlich's sole beneficiary and evicts the team from the Hacker Hostel.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Ends the incubator era and installs Jian-Yang as the legal owner of Erlich's assets.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Octopipers and the China clone",
+          "text": "Pied Piper signs eight 'octopiper' launch partners; but Jian-Yang launches a clone of the new internet from China and one of the octopipers defects to him.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Frames Jian-Yang's Chinese operation as the season's real threat, ahead of Belson.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · The ICO",
+          "text": "Bream-Hall's terms leave Pied Piper exposed; on Gilfoyle's idea they launch an ICO, PiedPiperCoin, and Monica quits Bream-Hall to run it.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Cuts Pied Piper loose from its VCs and rewires the ownership around the coin.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Yao's majority attack",
+          "text": "PiperNet starts growing, but the new users are all Yao's Chinese devices, subscribed under Jian-Yang's key, racing to a 51% majority that would seize the network.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Turns the season's slow build into an existential fight over control of the network itself.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Richard gives Belson the company",
+          "text": "Facing extinction, Richard offers Belson full ownership of Pied Piper in exchange for wiping out Yao's attack; Belson swings it and accepts the company.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Puts Belson in charge of Pied Piper for the first time and sets up the immediate reversal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Gilfoyle's lockout",
+          "text": "While Belson gloats, Dinesh and Jared quietly add 80,000 users from another gaming app; Gilfoyle patches Hooli and Yao out and PiperNet is Pied Piper's again.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Ends the season with Pied Piper alone in control of its own live network.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "PiperNet is live, PiedPiperCoin is climbing, and the team has taken over four floors of Hooli's old offices; Yao and Jian-Yang are still running the rival network from China.",
+        "questions": [
+          "Can Pied Piper stay honest about data as PiperNet scales into a real internet?",
+          "What does Belson do after losing Pied Piper for a second time?",
+          "Do Yao and Jian-Yang come back at PiperNet from China?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Richard Hendricks",
+          "line": "CEO of a rapidly expanding company running its own internet and its own coin."
+        },
+        {
+          "name": "Jared Dunn",
+          "line": "COO, evicted from the Hacker Hostel and living out of Pied Piper's office."
+        },
+        {
+          "name": "Bertram Gilfoyle",
+          "line": "Systems engineer whose lockout patch just saved PiperNet from Yao."
+        },
+        {
+          "name": "Dinesh Chugtai",
+          "line": "Coder running day-to-day operations alongside Gilfoyle."
+        },
+        {
+          "name": "Monica Hall",
+          "line": "Quit Bream-Hall to run the ICO; now permanently on the Pied Piper side of the table."
+        },
+        {
+          "name": "Gavin Belson",
+          "line": "Hooli CEO who briefly owned Pied Piper and just lost it again on live network."
+        },
+        {
+          "name": "Laurie Bream",
+          "line": "Now CEO of YaoNet after being pushed out of Bream-Hall."
+        },
+        {
+          "name": "Jian-Yang",
+          "line": "Erlich's forged sole beneficiary, running the Chinese clone of Pied Piper's internet."
+        },
+        {
+          "name": "Nelson \"Big Head\" Bighetti",
+          "line": "Still on the fringes of Pied Piper, still somehow benefiting from every deal."
+        }
+      ]
+    },
+    "6": {
+      "beats": [
+        {
+          "label": "S6 · Congress and Colin's headsets",
+          "text": "Testifying to Congress, Richard vows Pied Piper will never harvest data; he then learns his ad partner Colin is secretly recording gamers through their headsets.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Puts the company's public promise and its actual behaviour directly in conflict.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Blackmail backfires, Jared quits",
+          "text": "When Richard tries to blackmail Colin with the recordings, Colin spins them into a data-mining product and locks Pied Piper in; a disgusted Jared quits the company.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Breaks the Richard–Jared partnership and traps Pied Piper inside Colin's data business.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Maximo's billion",
+          "text": "Chilean investor Maximo Reyes offers $1B for 10% on the condition they mine data; Richard refuses, and Colin sells his game and the data to Maximo instead.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Removes Pied Piper's main revenue stream and introduces Maximo as an outside threat.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Pied Piper buys Hooli",
+          "text": "When Belson tries to buy up an unknown app to save the dying Hooli, Jared leaks how weak Hooli's balance sheet is; Pied Piper buys Hooli outright.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Completes the David-and-Goliath inversion and folds Belson's old empire into Pied Piper.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Tethics and RussFest",
+          "text": "Belson unveils a public 'Tethics' pledge to embarrass Richard, who reluctantly signs; Russ Hanneman reappears wanting Pied Piper to power his desert RussFest.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Reintroduces Belson and Hanneman as ongoing headaches and sets up the network stress test.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · The AI breaks encryption",
+          "text": "AT&T signs on after Richard lets an AI self-optimise the network; Gilfoyle then discovers it has learned to break most of the world's encryption schemes.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Turns Pied Piper's biggest win into the moral catastrophe that forces the finale's choice.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Sabotage the launch",
+          "text": "The team ships deliberately broken code to sabotage their own launch; PiperNet collapses live, rats flood the streets, and Pied Piper implodes as the biggest failure in tech.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Ends the series by having the founders destroy their own company to protect the world from it.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "To keep an AI that decrypts everything from ending global privacy, the team deliberately sabotaged their own AT&T launch; Pied Piper is dead as the biggest failure in tech and the founders have scattered.",
+        "questions": [
+          "What happened to Richard's remaining copy of the original privacy-violating code?",
+          "Does anyone ever rebuild what the team burned to the ground?",
+          "Does the world ever learn what Pied Piper actually stopped?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Richard Hendricks",
+          "line": "Teaching computer science at Stanford after burning down his own launch to save the world's encryption."
+        },
+        {
+          "name": "Jared Dunn",
+          "line": "Quietly working at a nursing home after quitting the company he built with Richard."
+        },
+        {
+          "name": "Bertram Gilfoyle",
+          "line": "Co-running a cybersecurity firm with Dinesh."
+        },
+        {
+          "name": "Dinesh Chugtai",
+          "line": "Co-running a cybersecurity firm with Gilfoyle."
+        },
+        {
+          "name": "Monica Hall",
+          "line": "Refuses to confirm she works for the NSA when asked."
+        },
+        {
+          "name": "Gavin Belson",
+          "line": "Retired from tech and writing romance novels."
+        },
+        {
+          "name": "Nelson \"Big Head\" Bighetti",
+          "line": "Somehow president of Stanford."
+        },
+        {
+          "name": "Laurie Bream",
+          "line": "Serving a prison sentence."
+        },
+        {
+          "name": "Jian-Yang",
+          "line": "Has stolen Erlich's identity and Erlich's fortune and fled abroad."
+        },
+        {
+          "name": "Colin",
+          "line": "Data-mining game CEO who sold his company and Pied Piper's data to Maximo Reyes."
+        }
+      ]
+    }
+  }
+}

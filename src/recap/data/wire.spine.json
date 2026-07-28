@@ -1,0 +1,109 @@
+{
+  "slug": "wire",
+  "generatedFor": "The Wire",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · McNulty breaks rank",
+          "text": "After Stringer Bell intimidates a witness into acquitting D'Angelo, detective Jimmy McNulty tells a judge that BPD ignores the Barksdale drug empire, forcing brass to build a detail.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The out-of-turn complaint is the inciting act that creates the detail and defines McNulty's insubordinate relationship with command going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The detail takes shape",
+          "text": "Lieutenant Cedric Daniels is told to run a passive investigation, but Lester Freamon and Prez turn the dumping-ground unit into real police, building toward a wiretap on the Barksdale pagers.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Establishes Daniels, Freamon, Prez and the wiretap methodology that defines how this show does police work from here on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · D'Angelo runs the Pit",
+          "text": "Demoted to the low-rises, D'Angelo Barksdale reluctantly manages young dealers Bodie, Poot and Wallace while his uncle Avon and Stringer keep the real operation insulated above him.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Positions D'Angelo as the soft point in the organisation and introduces the Pit crew whose fates drive the season's moral spine.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Omar's war with Avon",
+          "text": "Stickup man Omar Little robs a Barksdale stash, so Avon has Omar's boyfriend Brandon tortured and killed; Omar retaliates by shooting enforcer Stinkum and agreeing to testify for McNulty.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The Omar-Barksdale blood feud is the season's engine and establishes Omar as a permanent wildcard against the organisation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Wallace can't take it",
+          "text": "Haunted by finding Brandon's body, Wallace goes home to his grandmother; when he drifts back to Baltimore, Stringer orders his death and Bodie and Poot pull the trigger on their friend.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Wallace's murder is the moral hinge that breaks D'Angelo and reframes Stringer and Bodie in every later season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Politics kills the case",
+          "text": "When the detail traces drug money to senator Clay Davis, the investigation is throttled from above; the FBI would rather chase the Barksdales' political corruption than help make street cases.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Sets the show's core thesis — institutions protect themselves — and plants Clay Davis and the political layer for later seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Everyone gets punished",
+          "text": "Avon takes a short sentence and Wee-Bey eats the murders, leaving Stringer running the business; D'Angelo learns Wallace is dead but stays quiet after his mother visits, while McNulty is exiled to the marine unit.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Sets the exact board for season 2: Avon inside, Stringer in charge, D'Angelo bitter but silent, McNulty banished — every launching condition sits here.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Barksdales took a plea and the detail is dissolved. Avon and D'Angelo are in prison, Stringer is running the business from a funeral home, and McNulty has been buried on a police boat for embarrassing the brass.",
+        "questions": [
+          "Can Stringer actually run the operation without Avon on the street?",
+          "Will D'Angelo stay loyal now that he knows Wallace was murdered on Stringer's order?",
+          "Does McNulty ever get back to real police work, or does the department bury him for good?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Jimmy McNulty",
+          "line": "Homicide detective whose complaint started the case; punished for it by reassignment to the marine unit."
+        },
+        {
+          "name": "Stringer Bell",
+          "line": "Avon's underboss and business mind, now running the Barksdale organisation alone from a funeral home front while studying economics at community college."
+        },
+        {
+          "name": "Avon Barksdale",
+          "line": "West Baltimore drug kingpin, imprisoned on a short sentence after pleading out; still expects the empire to be his when he returns."
+        },
+        {
+          "name": "D'Angelo Barksdale",
+          "line": "Avon's nephew, imprisoned for a much longer stretch; knows Stringer had Wallace killed but stayed quiet after his mother Brianna talked him down."
+        },
+        {
+          "name": "Cedric Daniels",
+          "line": "Lieutenant who ran the detail; passed over for promotion after refusing to shut the case down, with a suspicious FBI file hanging over him."
+        },
+        {
+          "name": "Lester Freamon",
+          "line": "Quiet detail veteran revealed as the sharpest investigator in the room; promoted into homicide as the case ends."
+        },
+        {
+          "name": "Kima Greggs",
+          "line": "Narcotics detective shot in the ambush that killed Orlando; survived, back on her feet, romantically partnered off the job."
+        },
+        {
+          "name": "Omar Little",
+          "line": "Shotgun-carrying stickup man at war with the Barksdales; lost his boyfriend Brandon and killed Stinkum in return, now robbing dealers in New York."
+        },
+        {
+          "name": "Bodie Broadus",
+          "line": "Pit corner kid promoted up the ranks; shot Wallace on Stringer's order and carries it."
+        },
+        {
+          "name": "Wee-Bey Brice",
+          "line": "Barksdale enforcer and the organisation's designated fall guy, confessing to a stack of murders including ones he did not commit."
+        }
+      ]
+    }
+  }
+}

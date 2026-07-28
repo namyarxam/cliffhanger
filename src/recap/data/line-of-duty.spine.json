@@ -1,0 +1,524 @@
+{
+  "slug": "line-of-duty",
+  "generatedFor": "Line of Duty",
+  "seasons": {
+    "1": {
+      "beats": [
+        {
+          "label": "S1 · The wrong flat",
+          "text": "Arnott refuses to cover up a botched raid that killed an innocent man, and is recruited to AC-12, an anti-corruption unit under Superintendent Hastings.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the series premise and the three central AC-12 officers in one move.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Gates and Laverty",
+          "text": "AC-12 targets DCI Gates for laddering charges; his mistress Jackie Laverty is secretly laundering money, and Gates covers for her when it starts to unravel.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up the season's main target and the entanglement that pulls Gates into corruption.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Stakeout walked",
+          "text": "Fleming goes undercover on Gates's team. Cottan and Kapoor abandon a stakeout early; the two dealers being watched are executed that night.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "First on-screen sign that Cottan is dirty — the moment the reader must retain going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Laverty murdered",
+          "text": "Masked men murder Laverty in front of Gates and plant his prints on the weapon, forcing him to protect the gang or take the fall.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Explains why a senior officer becomes an OCG puppet; Laverty's body returns as evidence in later seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Follow the money",
+          "text": "AC-12 traces Laverty's cash to Gates's kids' school fees; Fleming's cover is blown when Morton spots her second phone.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "The proof that pins Gates and forces the endgame; also sets up Morton as a piece Cottan will later exploit.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · Hunter arrested",
+          "text": "Gates arrests OCG boss Tommy Hunter, then steps in front of a lorry to spare his family a corruption trial.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Removes Gates and puts Hunter into witness custody — the exact setup for S2's opening ambush.",
+          "needsVerify": false
+        },
+        {
+          "label": "S1 · The Caddy",
+          "text": "Cottan quietly tips arrested Hunter to a bogus terror lead; a flashback reveals Cottan was Hunter's golf caddy — a mole still inside the force.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The season's real reveal: the corrupt officer at the heart of the next two seasons is already embedded.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Gates is dead and Hunter is in police custody, but the mole known only as 'The Caddy' — Cottan — is still serving, and his boss now has plenty to trade.",
+        "questions": [
+          "Will Hunter give up 'The Caddy' to save himself?",
+          "How far will Cottan go to stay hidden inside the force?",
+          "What did the OCG do with Jackie Laverty's body?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Steve Arnott",
+          "line": "DS, freshly moved to AC-12 after refusing to sign off on the wrongful death; principled and outnumbered."
+        },
+        {
+          "name": "Ted Hastings",
+          "line": "Superintendent running AC-12; no-nonsense Northern Irishman, quietly under financial strain."
+        },
+        {
+          "name": "Kate Fleming",
+          "line": "DC, AC-12's best undercover officer; burned out of Gates's team but still trusted."
+        },
+        {
+          "name": "Matthew 'Dot' Cottan",
+          "line": "DC from Gates's old team, secretly Tommy Hunter's mole 'The Caddy', still in a uniform and looking for a way up."
+        },
+        {
+          "name": "Tommy Hunter",
+          "line": "OCG boss, arrested at the golf club and now in witness protection with damaging knowledge on senior police."
+        }
+      ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Convoy ambush",
+          "text": "A prison convoy escorting Tommy Hunter is ambushed; DI Lindsay Denton is the sole officer survivor and immediately the suspect.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Opens the season by killing the S1 witness and framing a woman we later learn was set up.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Trotman falls",
+          "text": "Fleming goes undercover as Denton's clerk; DC Trotman is thrown from a hospital window as an assassin finishes off Hunter in his bed.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Confirms the OCG is willing to kill inside a hospital and permanently silences Hunter, protecting Cottan.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Denton hits back",
+          "text": "Under interrogation Denton accuses AC-12 of misconduct and names DCC Dryden, claiming he set her up after an affair — the case fractures.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Turns the season into a mystery about who is really lying and puts a senior officer squarely in the frame.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Cottan inside AC-12",
+          "text": "Hunter's hidden recordings surface, threatening to expose a corrupt officer he called 'The Caddy'; Cottan is transferred into AC-12 by Dryden.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The mole hunt begins and, in the same breath, the mole is put in charge of running it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Kidnap and escape",
+          "text": "Two bent cops kidnap Denton from a prison transfer; she escapes, pins one to a wall and forces a dying confession that implicates Dryden.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Denton stops looking guilty and starts looking framed — the pivot the season hinges on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · A fake Caddy",
+          "text": "Cottan blackmails his old colleague Morton into naming a dead officer as 'The Caddy', quietly burying the mole hunt from the inside.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Explains why AC-12 will believe the Caddy problem is solved going into S3, and it isn't.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Denton convicted",
+          "text": "Denton is convicted for the ambush; flashbacks reveal she was coerced into handing Hunter over so Cottan's identity would stay hidden.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The viewer knows Denton is a wronged pawn; AC-12 does not — that gap drives her return in S3.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Hunter is dead, Denton is serving life, and Dryden is disgraced — but Cottan has walked deeper into AC-12 with a dead officer taking the blame for his own crimes.",
+        "questions": [
+          "How long can Cottan keep running the search for himself?",
+          "Was Denton really acting alone, or is her framer still in place?",
+          "Who else in the force answers to Hunter's old gang?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Steve Arnott",
+          "line": "DS at AC-12, shaken by Denton's public accusations about a hospital visit and losing his edge."
+        },
+        {
+          "name": "Kate Fleming",
+          "line": "DC, quietly grieving a friend killed in the ambush and starting to distrust her own team."
+        },
+        {
+          "name": "Ted Hastings",
+          "line": "Superintendent, publicly attacked by Denton over his own finances but still leading AC-12."
+        },
+        {
+          "name": "Matthew 'Dot' Cottan",
+          "line": "Now DI at AC-12, still hiding as 'The Caddy'; has just framed a dead officer to end the mole hunt."
+        },
+        {
+          "name": "Lindsay Denton",
+          "line": "Former DI, serving life for conspiracy after being coerced into helping the OCG kill Hunter."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Waldron's list",
+          "text": "Sgt Danny Waldron executes a suspect from a childhood abuse ring, and leaves a sealed list of paedophiles addressed to Arnott.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Frames the season as a cold-case cover-up and plants the McGuffin the OCG will kill to bury.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · List destroyed",
+          "text": "PC Bains, on OCG orders, shoots Waldron; Cottan is first into the flat and destroys the list before AC-12 ever sees it.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Cottan actively sabotaging AC-12's own investigation — the season's true engine.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Sands View",
+          "text": "The trail leads to Sands View boys' home and former Chief Superintendent Patrick Fairbank; a witness's terror at his photo marks him as one of the abusers.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Names a senior officer the show will return to in S6 as a suspect in the wider corruption web.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Denton returns",
+          "text": "Denton wins her appeal on the conspiracy charge and walks free, still carrying what she knows about the Hunter ambush.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Puts a loose end from S2 back in play as a threat to Cottan.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Framing Arnott",
+          "text": "Cottan turns the mole hunt inward and starts painting Arnott as 'The Caddy'; Arnott is suspended as fabricated evidence stacks up.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Cottan's endgame — using AC-12's own machinery to take out its most dangerous investigator.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Denton killed",
+          "text": "Denton finds the abusers' list in Waldron's email drafts and forwards it to Hastings; Cottan murders her in Arnott's stolen car before she can hand it over.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The killing that finally forces Cottan into the open and gives Fleming a case against him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Cottan's dying words",
+          "text": "Fleming, running a covert probe into AC-12, corners Cottan; he steps in front of bullets meant for her and records a dying declaration that convicts Fairbank.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The declaration itself becomes S4's central piece of evidence, and the mole thread ends the way it started — in his own words.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The mole is dead and Fairbank is going down, but Cottan's dying declaration hints at a wider network of corrupt officers, and the OCG that recruited him has never been touched.",
+        "questions": [
+          "How high did Cottan's protection actually reach?",
+          "Who else inside the force was on Hunter's payroll?",
+          "What is on the rest of that dying declaration?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Steve Arnott",
+          "line": "DS at AC-12, cleared and back at work after being framed as 'The Caddy'."
+        },
+        {
+          "name": "Kate Fleming",
+          "line": "Newly promoted DS, the officer who covertly exposed Cottan from inside AC-12."
+        },
+        {
+          "name": "Ted Hastings",
+          "line": "Superintendent, publicly vindicated but shaken by how long his own DI played him."
+        },
+        {
+          "name": "Matthew 'Dot' Cottan",
+          "line": "Dead — exposed as 'The Caddy' and shot saving Fleming; his recorded dying declaration is now evidence."
+        },
+        {
+          "name": "Patrick Fairbank",
+          "line": "Former Chief Superintendent, jailed for the Sands View child abuse cover-up."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Ifield goes to AC-12",
+          "text": "DCI Roz Huntley charges a suspect for a string of murders; forensic Tim Ifield takes his doubts about the case straight to AC-12.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The whistleblower who triggers the season and whose death starts the cover-up.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Ifield killed",
+          "text": "Ifield confronts Huntley at his flat; the fight leaves her seemingly dead, but she wakes as he starts to dismember her and kills him instead.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The central crime of the season and the reason every subsequent forensic result matters.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Fleming undercover",
+          "text": "Fleming embeds on Huntley's team; Huntley swaps her own blood in the forensic samples for Ifield's, erasing her presence at his flat.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The mechanism of the cover-up and Fleming's route into breaking it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Arnott attacked",
+          "text": "A masked assailant throws Arnott down three flights of stairs, tying Huntley's case to the same OCG that once killed Jackie Laverty.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Connects a standalone-looking season back to the show's ongoing corruption arc and puts Arnott on painkillers.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · The 'H' accusation",
+          "text": "ACC Hilton plays Hastings Cottan's dying declaration — the officer who promoted Cottan had a surname beginning with 'H' — and accuses Hastings.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Introduces the 'H' mystery, the spine of the next two seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Hilton exposed",
+          "text": "Cornered, Huntley frames her husband, but AC-12 finds her cache in the woods; she confesses and gives up Hilton as the OCG's inside man.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Resolves the Ifield case and, in the same interview, hands AC-12 a senior 'H' candidate.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Hilton dead",
+          "text": "Hilton is found dead the next day near an old Sands View site. Huntley goes to prison, Hastings is cleared, but 'H' is not settled.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Prevents the season from cleanly closing the corruption thread and hands it to S5 unresolved.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Hilton is dead and Huntley is in prison, but Cottan's dying words insisted there is a senior officer with an 'H' surname inside the force — and Hastings knows he's still on the list.",
+        "questions": [
+          "Was Hilton the only 'H', or is more than one meant?",
+          "How is the Laverty-era OCG still operating a decade on?",
+          "Can Hastings clear himself now that his own team has begun to wonder?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Steve Arnott",
+          "line": "DI at AC-12, badly injured in a stairwell attack and quietly hooked on painkillers."
+        },
+        {
+          "name": "Kate Fleming",
+          "line": "DS, back from another successful undercover, now the officer most trusted inside AC-12."
+        },
+        {
+          "name": "Ted Hastings",
+          "line": "Superintendent, openly suspected of being 'H' after Cottan's dying declaration surfaced."
+        },
+        {
+          "name": "Roz Huntley",
+          "line": "Former DCI, imprisoned for killing Ifield and framing her husband."
+        },
+        {
+          "name": "ACC Derek Hilton",
+          "line": "Found dead the day after Huntley exposed him as the OCG's inside man."
+        },
+        {
+          "name": "Maneet Bindra",
+          "line": "PC at AC-12, blackmailed by Hilton into leaking Cottan's dying declaration."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Convoy hijack",
+          "text": "An OCG led by John Clayton and Lisa McQueen hijacks a police drug convoy and kills the escorting officers; AC-12 suspects a police mole is running the gang.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Reintroduces the OCG at scale and sets up the season's central mole hunt.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Bindra silenced",
+          "text": "PC Bindra, still leaking to protect her cousin after Hilton's death, is exposed inside the OCG and executed.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Closes the Hilton pipeline from S4 and shows the OCG's inside line is still active.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Corbett is UCO",
+          "text": "'Clayton' turns out to be DS John Corbett, a police undercover officer; he tells Arnott he is chasing a top-tier corrupt cop known as 'H'.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Reframes the season and makes 'H' the explicit target for the first time.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Corbett killed",
+          "text": "Corbett attacks Hastings's wife Roisin and tries to free the OCG's trafficked women; McQueen and the gang murder him once they realise he is police.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Removes the season's most sympathetic mover and hands his widow Steph a role that outlives him.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Hastings charged",
+          "text": "Hastings poses as 'H' online to lure the OCG; a search of his hotel room turns up £50,000, and DCS Carmichael charges him with conspiracy to murder Corbett.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The whole season pivots on whether Hastings really is 'H' — the reader needs this to make sense of the next.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Biggeloe exposed",
+          "text": "AC-12 finds that force counsellor Gill Biggeloe steered Corbett into targeting Hastings and answers to the OCG; she is arrested but given immunity.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Names a senior corrupt figure but conspicuously does not close the 'H' question.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Pilkington in uniform",
+          "text": "Hastings admits taking OCG cash and survives with a written warning; meanwhile Ryan Pilkington — Hunter's teenage courier from years back — enrols at the police academy.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Plants the S6 antagonist inside the force in the season's final minute, the single most load-bearing beat.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Biggeloe cell is broken and Hastings has kept his job, but 'H' has not been proven singular, half the bribe money is unaccounted for, and an OCG child from years back is now a serving officer.",
+        "questions": [
+          "Is Biggeloe the only 'H', or is there someone above her?",
+          "Where is the missing £50,000 and who ends up holding it?",
+          "What is a former OCG courier doing at police academy?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Steve Arnott",
+          "line": "DI at AC-12, dependent on painkillers since S4 and privately doubting Hastings."
+        },
+        {
+          "name": "Kate Fleming",
+          "line": "DI, the officer who raised the internal alarm on Hastings and saw it through."
+        },
+        {
+          "name": "Ted Hastings",
+          "line": "Superintendent, cleared but on a final written warning after admitting he took OCG cash."
+        },
+        {
+          "name": "Steph Corbett",
+          "line": "DS Corbett's widow; Hastings has just handed her an envelope, apparently of money."
+        },
+        {
+          "name": "Gill Biggeloe",
+          "line": "Former force counsellor, exposed as an OCG collaborator and granted immunity."
+        },
+        {
+          "name": "Ryan Pilkington",
+          "line": "Former OCG child courier, now a serving police officer through the academy."
+        },
+        {
+          "name": "Patricia Carmichael",
+          "line": "DCS who tried to sink Hastings for conspiracy and lost, but is now on AC-12's watch list."
+        }
+      ]
+    },
+    "6": {
+      "beats": [
+        {
+          "label": "S6 · Operation Lighthouse",
+          "text": "DCI Jo Davidson leads the murder investigation into journalist Gail Vella; Fleming has left AC-12 for MIT and is on her team.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the season's case and the split that separates Fleming from AC-12 for most of it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Wrong man charged",
+          "text": "Davidson steers the team into arresting Terry Boyle for Vella's murder; Arnott and Hastings suspect she is shielding the real killers and open an inquiry into her.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "The wrongful charge triggers everything: the AC-12 probe, the OCG's exposure, the whole spine.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Pilkington strikes",
+          "text": "PC Ryan Pilkington drowns his colleague and tries to kill Boyle in the same crash; Fleming saves Boyle and recognises Pilkington from an old AC-12 file.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Cashes in the S5 planting of Pilkington and links the current OCG all the way back to Hunter's crew.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Davidson's parentage",
+          "text": "Vella was investigating a decades-old police cover-up; DNA testing reveals Davidson is Tommy Hunter's biological daughter, born of incest and coerced ever since.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Explains Davidson's whole behaviour this season and ties her personally to the S1–2 OCG.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Warehouse shootout",
+          "text": "Pilkington and Fleming shoot each other in a disused industrial site; Pilkington dies, Fleming survives, and Davidson accepts witness protection.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Removes the season's on-the-ground OCG enforcer and hands AC-12 its senior witness against them.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Buckells is 'H'",
+          "text": "DSU Ian Buckells — the middling desk officer nobody suspected — is unmasked as the 'Fourth Man', the OCG's top inside asset that Cottan died pointing at.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Answers the 'H' question the show has been asking for three seasons.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · AC-12 dismantled",
+          "text": "Hastings confesses the wilful blindness that let Buckells rise; Chief Constable Osborne uses the scandal to gut AC-12 and blocks any public trial.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The real closing beat: the corrupt system survives by dissolving the unit that exposed it.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Buckells is in custody as the Fourth Man, but the senior officers who let him climb have not been touched, and Osborne is quietly closing down the anti-corruption unit that caught him.",
+        "questions": [
+          "Was Buckells really the top of the chain, or a fall guy for it?",
+          "Can AC-12 survive Osborne's restructure at all?",
+          "How much of the truth will ever be heard in open court?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Ted Hastings",
+          "line": "Superintendent, being pushed into retirement after confessing to the institutional failures that let Buckells rise."
+        },
+        {
+          "name": "Steve Arnott",
+          "line": "DI, still fighting painkiller dependency, saw the Buckells case to the end."
+        },
+        {
+          "name": "Kate Fleming",
+          "line": "DI, briefly assigned to MIT under Davidson, now the most senior officer left in that team."
+        },
+        {
+          "name": "Joanne Davidson",
+          "line": "Former DCI, revealed as Hunter's daughter; rehoused in witness protection with a new identity."
+        },
+        {
+          "name": "Ian Buckells",
+          "line": "DSU, arrested as the 'Fourth Man' / 'H', the OCG's top-level asset inside the police."
+        },
+        {
+          "name": "Chief Constable Philip Osborne",
+          "line": "Senior officer using the corruption scandal to weaken AC-12 and prevent evidence being heard in court."
+        },
+        {
+          "name": "Patricia Carmichael",
+          "line": "DCS who briefly took control of AC-12 during the crisis and steered questioning away from institutional rot."
+        }
+      ]
+    }
+  }
+}
