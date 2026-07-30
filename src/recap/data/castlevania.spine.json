@@ -161,7 +161,7 @@
         },
         {
           "name": "Isaac",
-          "line": "Human forgemaster loyal to Dracula, who saved him by teleporting him to a desert; now alive and plotting revenge on Hector."
+          "line": "Human forgemaster loyal to Dracula, who saved him by teleporting him to a desert; now plotting to create an army for himself."
         }
       ]
     },
@@ -347,7 +347,7 @@
         },
         {
           "name": "Isaac",
-          "line": "Forgemaster; claimed Styria as his own kingdom after killing its ruler."
+          "line": "Forgemaster; claimed Styria as his own kingdom after Carmilla took her own life to deny him the kill."
         },
         {
           "name": "Lenore",
@@ -363,5 +363,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-29T19:00:21.123Z"
 }

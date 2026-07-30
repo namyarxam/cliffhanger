@@ -55,7 +55,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Perry is dead on the stairs at trivia night, and Madeline, Celeste, Jane, Renata and Bonnie have told the police he tripped. Detective Quinlan does not believe them, and only Bonnie knows she pushed him.",
+        "text": "Perry is dead on the stairs at trivia night, and Madeline, Celeste, Jane, Renata and Bonnie have told the police he tripped. Detective Quinlan does not believe them, and all five women know Bonnie pushed him.",
         "questions": [
           "How long can five women hold the same lie together?",
           "Will Detective Quinlan find the crack in the story?",
@@ -176,7 +176,7 @@
         },
         {
           "name": "Renata Klein",
-          "line": "Ruined financially by Gordon's fraud conviction; she has just destroyed his prized train set and walked out of the marriage."
+          "line": "Ruined financially by Gordon's fraud arrest and their bankruptcy hearing; she has just destroyed his prized train set and walked out of the marriage."
         },
         {
           "name": "Mary Louise Wright",
@@ -192,5 +192,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-29T18:59:15.794Z"
 }

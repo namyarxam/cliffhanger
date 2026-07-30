@@ -501,7 +501,7 @@
         },
         {
           "name": "Pontius Pilate",
-          "line": "Roman Governor being courted by Caiaphas and warned by Atticus that the leaders are plotting."
+          "line": "Roman Governor courting Caiaphas and warned by Atticus that the leaders are plotting."
         },
         {
           "name": "Atticus",
@@ -513,5 +513,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-29T19:01:11.960Z"
 }

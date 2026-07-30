@@ -158,7 +158,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Two of the four Conclave dragons are dead, but Thordak still rules occupied Emon and broods over a clutch of unhatched eggs. The green dragon Raishan has revealed herself and is now offering Vox Machina an alliance — with motives entirely her own.",
+        "text": "Umbrasyl is dead, but Thordak still rules occupied Emon and broods over a clutch of unhatched eggs, with Vorugal still at his side. The green dragon Raishan has revealed herself and is now offering Vox Machina an alliance — with motives entirely her own.",
         "questions": [
           "What does Raishan actually want in exchange for her 'help'?",
           "What happens when Thordak's eggs hatch?",
@@ -414,5 +414,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-30T07:20:11.710Z"
 }

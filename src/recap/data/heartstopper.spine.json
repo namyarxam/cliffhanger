@@ -93,7 +93,7 @@
         },
         {
           "name": "Darcy Olsson",
-          "line": "Tara's loud, chaotic girlfriend who hides a difficult home life behind the joker act."
+          "line": "Tara's girlfriend, who calmed her down after homophobic comments at the orchestral concert."
         },
         {
           "name": "Harry Greene",
@@ -299,5 +299,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-28T13:06:31.000Z"
 }

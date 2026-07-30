@@ -109,7 +109,7 @@
         },
         {
           "label": "S2 · Toph joins",
-          "text": "The blind earthbending prodigy Toph Beifong defies her overprotective family to become Aang's teacher after helping fight off Azula and her friends Mai and Ty Lee.",
+          "text": "The blind earthbending prodigy Toph Beifong defies her overprotective family to become Aang's teacher after helping fight off Zuko and Azula.",
           "anchorEpisode": 2,
           "whyLoadBearing": "Completes the core group and introduces Azula's strike team as the season's active threat.",
           "needsVerify": false
@@ -199,5 +199,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-28T12:44:03.130Z"
 }

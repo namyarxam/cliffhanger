@@ -41,7 +41,7 @@
         },
         {
           "label": "S1 · Fulcrum listens",
-          "text": "Fulcrum plants a receiver inside the Buy More trying to find the Intersect, blowing Chuck's civilian identity to a hostile agency.",
+          "text": "Someone plants a receiver inside the Buy More trying to find the Intersect, blowing Chuck's civilian identity to a hostile agency.",
           "anchorEpisode": 13,
           "whyLoadBearing": "Introduces Fulcrum as the season-spanning antagonist and permanently ends the illusion that Chuck's cover is safe.",
           "needsVerify": false
@@ -287,5 +287,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-28T12:55:48.868Z"
 }

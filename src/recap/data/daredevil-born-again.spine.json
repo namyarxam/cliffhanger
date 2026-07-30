@@ -34,7 +34,7 @@
         },
         {
           "label": "S1 · Muse, Daredevil returns",
-          "text": "Serial killer Muse's attacks push Fisk to form the AVTF, an anti-vigilante police unit. When Muse abducts Heather, Matt finally suits back up as Daredevil.",
+          "text": "Serial killer Muse's attacks push Fisk to form the AVTF, an anti-vigilante police unit. When Muse abducts Angela, Matt finally suits back up as Daredevil.",
           "anchorEpisode": 7,
           "whyLoadBearing": "Breaks Matt's year-long retirement and establishes AVTF as Fisk's paramilitary arm.",
           "needsVerify": false
@@ -176,7 +176,7 @@
         },
         {
           "name": "Heather Glenn",
-          "line": "Broken by Muse's earlier assault. Served briefly as Fisk's Mental Health Commissioner, then put on Muse's mask herself."
+          "line": "Broken by Muse's earlier assault. Doing work for Fisk as a therapist, then put on Muse's mask herself."
         },
         {
           "name": "Benjamin \"Dex\" Poindexter",
@@ -196,5 +196,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-29T19:02:34.847Z"
 }

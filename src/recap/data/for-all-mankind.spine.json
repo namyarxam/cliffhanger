@@ -253,7 +253,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Karen and Molly are dead, Danny is broken and exiled on Mars, Kelly is raising a newborn son by the late Alexei, and Margo — NASA's chief engineer — has secretly vanished into the USSR.",
+        "text": "Karen and Molly are dead, Danny is broken and exiled on Mars, Kelly is raising a newborn son by the late Alexei, and Margo — the head of NASA — has secretly vanished into the USSR.",
         "questions": [
           "What has become of Margo living inside the Soviet Union eight years later?",
           "Can Ed, still on Mars, ever be reconciled with what Danny did — and what happens to Danny in exile?",
@@ -497,5 +497,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-28T13:03:09.443Z"
 }

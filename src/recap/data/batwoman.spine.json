@@ -132,7 +132,7 @@
         },
         {
           "label": "S2 · Kate hands off",
-          "text": "Alice and the Bat-team recover Kate as 'Circe'; a Snakebite antidote breaks the hypnosis, and Kate hands the cowl to Ryan and leaves Gotham to find Bruce.",
+          "text": "Alice and the Bat-team recover Kate as 'Circe'; Snakebite triggers a hallucination that lets Kate reassert, and she hands the cowl to Ryan and leaves Gotham to find Bruce.",
           "anchorEpisode": 18,
           "whyLoadBearing": "The formal, in-story handoff. Ryan is Batwoman not by accident anymore; Kate is off the board.",
           "needsVerify": false
@@ -146,7 +146,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Ryan is Gotham's Batwoman with Kate's blessing, but the Crows are gone and Batman's villain trophies — Poison Ivy's plants, Joker's buzzer, Mad Hatter's hat, Killer Croc's tooth and more — are drifting loose in a lawless city.",
+        "text": "Ryan is Gotham's Batwoman with Kate's blessing, but the Crows are gone and Batman's villain trophies — Poison Ivy's plants, Joker's acid-spraying flower, Mad Hatter's hat, Killer Croc's tooth and more — are drifting loose in a lawless city.",
         "questions": [
           "Whose hands will Batman's scattered villain trophies fall into?",
           "Who is the biological mother Alice claims is alive, and why is she telling Ryan now?",
@@ -279,5 +279,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-29T18:57:12.762Z"
 }

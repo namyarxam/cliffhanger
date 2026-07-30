@@ -185,7 +185,7 @@
         },
         {
           "name": "Cardinal MacPhail",
-          "line": "Newly elected head of the Magisterium after his rival's arrest; regards Lyra's death as necessary to prevent a second Fall.",
+          "line": "Head of the Magisterium who cemented his power by arresting his rival for the cardinalate; regards Lyra's death as necessary to prevent a second Fall.",
           "note": "Coulter is quietly blackmailing him."
         },
         {
@@ -289,5 +289,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-28T13:07:57.858Z"
 }

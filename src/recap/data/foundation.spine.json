@@ -177,7 +177,7 @@
         },
         {
           "name": "Hober Mallow",
-          "line": "Foundation's rogue agent recruited by Vault Seldon; survived the fall of Terminus, taken into the Vault with its people."
+          "line": "Foundation's rogue agent recruited by Vault Seldon; ejected into space in a cleaning module by Hober, his pod pulled into the Vault carrying the entire population of Terminus."
         },
         {
           "name": "The Mule",
@@ -285,5 +285,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-28T13:04:47.893Z"
 }
