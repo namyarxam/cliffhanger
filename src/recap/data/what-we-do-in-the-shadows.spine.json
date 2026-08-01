@@ -142,7 +142,7 @@
       "characters": [
         {
           "name": "Guillermo de la Cruz",
-          "line": "Nandor's familiar and secret Van Helsing-lineage hunter; just outed after slaughtering a theatre full of vampires to save the household."
+          "line": "Nandor's familiar and secret vampire killer; just outed after slaughtering a theatre full of vampires to save the household."
         },
         {
           "name": "Nandor the Relentless",
@@ -354,5 +354,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-30T23:25:29.681Z"
 }

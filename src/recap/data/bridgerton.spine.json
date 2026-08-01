@@ -223,7 +223,7 @@
         },
         {
           "label": "S3 · The maid in the house",
-          "text": "Violet hires Sophie as her daughters' maid; Benedict recognises her but she refuses his offer to become his mistress.",
+          "text": "Violet hires Sophie as her daughters' maid; drawn to her, Benedict asks her to become his mistress, but she refuses.",
           "anchorEpisode": 4,
           "whyLoadBearing": "Forces the two into proximity and defines the class barrier the season is stress-testing.",
           "needsVerify": false
@@ -237,7 +237,7 @@
         },
         {
           "label": "S3 · John dies",
-          "text": "Francesca learns she is not pregnant with John's child, and John then dies suddenly in his sleep, gutting the family and Michaela alike.",
+          "text": "John dies suddenly in his sleep, gutting the family and Michaela alike; a physical examination then reveals Francesca is not carrying his child.",
           "anchorEpisode": 6,
           "whyLoadBearing": "Kills off a spouse and reshuffles Francesca's story; the death is the pivot for everything Bridgerton after this.",
           "needsVerify": false
@@ -332,7 +332,7 @@
         },
         {
           "label": "S4 · John dies",
-          "text": "Francesca learns she is not pregnant with John's child, and John then dies suddenly in his sleep, gutting the family and Michaela alike.",
+          "text": "John dies suddenly in his sleep, gutting the family and Michaela alike; a later examination confirms Francesca is not pregnant with his child.",
           "anchorEpisode": 6,
           "whyLoadBearing": "Widows Francesca and reshuffles the Bridgerton household.",
           "needsVerify": true
@@ -389,5 +389,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-01T15:51:29.098Z"
 }

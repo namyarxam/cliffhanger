@@ -216,7 +216,7 @@
         },
         {
           "label": "S3 · Dunbar challenges",
-          "text": "Former special prosecutor Heather Dunbar launches a primary challenge; a relapsed Doug pretends to defect to her camp to spy for Frank.",
+          "text": "Former special prosecutor Heather Dunbar launches a primary challenge; a sidelined Doug crosses over to her camp, even handing her ammunition against Claire.",
           "anchorEpisode": 4,
           "whyLoadBearing": "Sets up the primary race that will pressure Frank for the rest of the season.",
           "needsVerify": false
@@ -429,7 +429,7 @@
         },
         {
           "label": "S5 · Ohio revote stolen",
-          "text": "The Underwoods stage a radioactive-truck threat to crack the Conway ticket, force a revote and win Ohio, delivering Frank his second inauguration.",
+          "text": "Brockhart stages a radioactive-truck threat as a coup attempt, but Frank exposes it; Grant's recording of Conway's plane tirade later delivers Ohio and a second inauguration.",
           "anchorEpisode": 8,
           "whyLoadBearing": "Frank finally has a mandate and a full term to spend on his real endgame.",
           "needsVerify": false
@@ -603,5 +603,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-30T23:38:56.112Z"
 }

@@ -27,7 +27,7 @@
         },
         {
           "label": "S1 · Tagomi's peace",
-          "text": "Trade Minister Tagomi and Nazi defector Wegener slip nuclear weapon plans to Japan to balance the coming war. Wegener is arrested returning through New York.",
+          "text": "Trade Minister Tagomi arranges for Nazi defector Wegener to slip a microfilm to Japan, but the handoff fails. Wegener is arrested returning through New York.",
           "anchorEpisode": 3,
           "whyLoadBearing": "Establishes Tagomi as the show's peacemaker and the underlying Reich-Japan nuclear standoff.",
           "needsVerify": false
@@ -378,5 +378,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-30T23:03:38.355Z"
 }

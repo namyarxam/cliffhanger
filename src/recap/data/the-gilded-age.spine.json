@@ -196,7 +196,7 @@
         },
         {
           "name": "Oscar van Rhijn",
-          "line": "Nearly ruined by Crowther's railroad con; the van Rhijn money is gone and John Adams is helping him rebuild."
+          "line": "Nearly ruined by Crowther's railroad con; the van Rhijn money is gone."
         },
         {
           "name": "Peggy Scott",
@@ -315,5 +315,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-30T23:22:39.880Z"
 }

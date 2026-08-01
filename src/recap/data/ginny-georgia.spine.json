@@ -27,7 +27,7 @@
         },
         {
           "label": "S1 · A PI with a hunch",
-          "text": "Kenny's ex-wife hires PI Gabriel Cordova, who romances Georgia's sister Maddie for intel and pieces together that wolfsbane killed Kenny.",
+          "text": "Kenny's ex-wife hires PI Gabriel Cordova, who pays Georgia's sister Maddie to spy on her and pieces together that wolfsbane killed Kenny.",
           "anchorEpisode": 6,
           "whyLoadBearing": "Introduces the outsider who will chase Georgia through both remaining seasons.",
           "needsVerify": false
@@ -292,7 +292,7 @@
         },
         {
           "name": "Zion Miller",
-          "line": "Ginny's father; called CPS on Georgia, took Ginny to her abortion, and is dating Simone."
+          "line": "Ginny's father; called CPS on Georgia and is dating Simone."
         },
         {
           "name": "Gil Timmins",
@@ -313,5 +313,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-30T23:36:11.202Z"
 }

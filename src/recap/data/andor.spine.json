@@ -34,7 +34,7 @@
         },
         {
           "label": "S1 · Mothma's ledger",
-          "text": "On Coruscant, Mon Mothma bankrolls Luthen's network in secret. To hide the trail, she agrees to promise her daughter Leida to a Chandrilan banker's son.",
+          "text": "On Coruscant, Mon Mothma bankrolls Luthen's network in secret. To hide the trail, she agrees to promise her daughter Leida to a Chandrilan businessman's son.",
           "anchorEpisode": 10,
           "whyLoadBearing": "The arranged marriage that opens S2; frames Mothma's political cover as personal cost.",
           "needsVerify": false
@@ -81,7 +81,7 @@
         },
         {
           "name": "Mon Mothma",
-          "line": "A Chandrilan senator secretly funding Luthen's network, who has agreed to betroth her daughter Leida to a banker's son to launder the money trail."
+          "line": "A Chandrilan senator secretly funding Luthen's network, who has agreed to betroth her daughter Leida to a businessman's son to launder the money trail."
         },
         {
           "name": "Bix Caleen",
@@ -199,5 +199,6 @@
     "ghorman",
     "narkina",
     "yavin"
-  ]
+  ],
+  "repairedAt": "2026-07-30T23:27:14.633Z"
 }

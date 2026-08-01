@@ -257,7 +257,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Freeland is officially free, Odell in a cell and the ASA exposed to Congress. But Henderson is dead, Grace is in a coma, Lynn is quietly still on Green Light, and out in the shadows Lady Eve is rising with a mind-controlled Lala and Proctor's briefcase.",
+        "text": "Freeland is officially free, Odell in a cell and the ASA exposed to Congress. But Henderson is dead, Grace is in a coma, Lynn is quietly still on Green Light, and out in the shadows Lady Eve is rising with a mind-controlled Lala.",
         "questions": [
           "Can Lynn hide her Green Light habit from her family?",
           "Where does Tobias resurface now that the ASA is gone?",
@@ -303,7 +303,7 @@
         },
         {
           "name": "Lala / Latavius",
-          "line": "Resurrected again and mind-controlled by Lady Eve; currently in possession of Proctor's briefcase."
+          "line": "Resurrected again and mind-controlled by Lady Eve."
         }
       ]
     },
@@ -410,5 +410,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-30T23:30:49.766Z"
 }

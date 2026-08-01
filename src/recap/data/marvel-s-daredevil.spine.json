@@ -137,7 +137,7 @@
         },
         {
           "label": "S2 · Fisk pulls strings from prison",
-          "text": "From his cell, Fisk manipulates Castle's escape to weaponize him against rivals, then warns Castle he will kill him the next time they meet.",
+          "text": "From his cell, Fisk manipulates Castle's escape to weaponize him against rivals, but Castle warns Fisk he will kill him the next time they meet.",
           "anchorEpisode": 9,
           "whyLoadBearing": "Shows Fisk building power from inside prison — the setup for how he engineers his own release later.",
           "needsVerify": false
@@ -173,7 +173,7 @@
         },
         {
           "name": "Wilson Fisk",
-          "line": "Imprisoned but running Ryker's from inside; publicly humiliated Matt by baiting Frank Castle into a war on the streets."
+          "line": "Imprisoned but running Ryker's from inside; arranged Frank Castle's escape to weaponize him against his own criminal competitors."
         },
         {
           "name": "Frank Castle",
@@ -280,5 +280,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-30T23:46:02.285Z"
 }

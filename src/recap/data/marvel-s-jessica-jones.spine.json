@@ -204,7 +204,7 @@
         },
         {
           "label": "S3 · Trish starts killing",
-          "text": "Trish and Erik begin killing suspects together. Sallinger murders Trish's mother Dorothy in retaliation, hardening Trish from vigilante into executioner.",
+          "text": "Sallinger murders Trish's mother Dorothy as his next planned kill after Jessica taunts him publicly. Grief hardens Trish from vigilante into executioner, killing alongside Erik.",
           "anchorEpisode": 10,
           "whyLoadBearing": "The moral point of no return for Trish and the death that removes her last brake.",
           "needsVerify": false
@@ -259,5 +259,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-30T23:08:26.948Z"
 }

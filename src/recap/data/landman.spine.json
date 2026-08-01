@@ -55,7 +55,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Monty is dead, Tommy is about to become president of M-Tex, and he owes Gallino his life. Cooper has quietly bought up leases whose value no one yet knows, and Monty's widow Cami is the wildcard who now owns everything.",
+        "text": "Monty is dead, Tommy is about to become president of M-Tex, and he owes Gallino his life. Cooper has quietly bought up leases whose value no one yet knows.",
         "questions": [
           "Will Tommy actually take the presidency of M-Tex, and on whose terms?",
           "How will Gallino cash in the debt Tommy now owes him?",
@@ -85,7 +85,7 @@
         },
         {
           "name": "Cami Miller",
-          "line": "Monty's widow, poised to inherit ownership of M-Tex while Tommy takes the presidency per the will."
+          "line": "Monty's widow."
         },
         {
           "name": "Rebecca Falcone",
@@ -196,5 +196,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-30T23:40:52.760Z"
 }

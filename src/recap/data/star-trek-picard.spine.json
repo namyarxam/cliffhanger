@@ -176,7 +176,7 @@
         },
         {
           "name": "Seven of Nine",
-          "line": "Vigilante pilot of La Sirena, her Borg damage healed by the new Queen; back in an on-again bond with Raffi."
+          "line": "Vigilante pilot of La Sirena, her Borg damage healed by the new Queen."
         },
         {
           "name": "Raffi Musiker",
@@ -295,5 +295,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-30T23:19:05.385Z"
 }

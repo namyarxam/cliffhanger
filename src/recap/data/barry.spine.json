@@ -20,7 +20,7 @@
         },
         {
           "label": "S1 · The airfield goes wrong",
-          "text": "Pressured into more hits, Barry strangles Paco and helps his old marine friend Taylor raid a Bolivian airfield, where Taylor and Vaughn are shot dead.",
+          "text": "Pressured into more hits, Barry strangles Paco and helps his old marine friend Chris raid a Bolivian airfield, where fellow marines Taylor and Vaughn are shot dead.",
           "anchorEpisode": 6,
           "whyLoadBearing": "Escalates Barry's killing and produces the surviving witness — Chris — whose fate is the season's moral pivot.",
           "needsVerify": false
@@ -201,7 +201,7 @@
         },
         {
           "label": "S3 · Fuches turns the families",
-          "text": "Released from prison and posing as a PI, Fuches gives Barry's home address to the grieving families of his victims and sets them loose.",
+          "text": "Back from hiding in Chechnya and posing as a PI, Fuches gives Barry's home address to the grieving families of his victims and sets them loose.",
           "anchorEpisode": 4,
           "whyLoadBearing": "Turns Barry's past kills into a new pursuit — the biker attack and Sharon's poisoning both come out of this.",
           "needsVerify": false
@@ -362,5 +362,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-30T23:29:32.922Z"
 }

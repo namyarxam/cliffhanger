@@ -235,7 +235,7 @@
         },
         {
           "label": "S3 · The Dragon and Hannibal",
-          "text": "Dolarhyde contacts Hannibal for guidance and is fed Will's home address. He attacks Will's wife and son, then bites off and mails Chilton's face to Hannibal.",
+          "text": "Dolarhyde contacts Hannibal for guidance and is fed Will's home address. He attacks Will's wife and son, then bites off Chilton's lips and mails them to Hannibal.",
           "anchorEpisode": 11,
           "whyLoadBearing": "Hannibal is running Dolarhyde the way he once ran Will, and it costs Will's family and Chilton his face.",
           "needsVerify": false
@@ -263,7 +263,7 @@
         },
         {
           "name": "Hannibal Lecter",
-          "line": "Surrendered to Alana's hospital after three years in Europe, then vanished over a cliff with Will after killing the Dragon."
+          "line": "Surrendered to Alana's hospital after roughly a year in Europe, then vanished over a cliff with Will after killing the Dragon."
         },
         {
           "name": "Jack Crawford",
@@ -299,5 +299,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-30T23:37:22.351Z"
 }

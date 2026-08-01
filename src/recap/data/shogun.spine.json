@@ -20,7 +20,7 @@
         },
         {
           "label": "S1 · Hatamoto in Ajiro",
-          "text": "Toranaga names Blackthorne hatamoto to train a musket regiment in Ajiro. Mariko interprets for him, and the two begin a secret affair despite her marriage to Buntaro.",
+          "text": "Toranaga names Blackthorne hatamoto to train a cannon regiment in Ajiro. Mariko interprets for him, and the two begin a secret affair despite her marriage to Buntaro.",
           "anchorEpisode": 4,
           "whyLoadBearing": "Anchors Blackthorne inside Toranaga's household and forges the Mariko relationship whose ending drives the finale.",
           "needsVerify": false
@@ -95,5 +95,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-07-30T23:15:30.719Z"
 }
