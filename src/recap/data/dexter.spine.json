@@ -81,7 +81,7 @@
         },
         {
           "name": "Lieutenant Maria LaGuerta",
-          "line": "Homicide lieutenant, briefly demoted during the Ice Truck manhunt and restored by the finale."
+          "line": "Homicide lieutenant, replaced during the Ice Truck manhunt after Captain Matthews blames her for the department's failure to catch the killer."
         },
         {
           "name": "Angel Batista",
@@ -307,7 +307,7 @@
         },
         {
           "label": "S4 · Arthur is not a role model",
-          "text": "What Dexter first admires in Arthur curdles: Arthur beats his son, terrorises his wife, drowns a boy in a bathtub — his family life is a cage, not a shelter.",
+          "text": "What Dexter first admires in Arthur curdles: Arthur beats his son, terrorises his wife, hunts a ten-year-old boy — his family life is a cage, not a shelter.",
           "anchorEpisode": 10,
           "whyLoadBearing": "Kills Dexter's hope that a killer can also be a father; darkens every domestic beat that follows.",
           "needsVerify": false
@@ -457,7 +457,7 @@
         },
         {
           "name": "Angel Batista",
-          "line": "Homicide detective, married to LaGuerta, running a restaurant on the side."
+          "line": "Homicide detective, married to LaGuerta."
         },
         {
           "name": "Maria LaGuerta",
@@ -758,5 +758,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-01T16:28:28.897Z"
 }

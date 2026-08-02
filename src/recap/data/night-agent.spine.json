@@ -34,7 +34,7 @@
         },
         {
           "label": "S1 · The conspiracy revealed",
-          "text": "Peter and Rose piece together that VP Redfield, Farr and Turn Lake's Gordon Wick orchestrated the Metro bombing to kill Balkan leader Omar Zadar.",
+          "text": "Peter and Rose piece together that VP Redfield and Turn Lake's Gordon Wick orchestrated the Metro bombing to kill Balkan leader Omar Zadar, with Farr joining the cover-up.",
           "anchorEpisode": 9,
           "whyLoadBearing": "Names the full conspiracy and its motive, which sets up the Camp David endgame.",
           "needsVerify": false
@@ -168,7 +168,7 @@
         },
         {
           "name": "Jacob Monroe",
-          "line": "Cold, cancer-stricken secrets broker who now effectively owns the new US President."
+          "line": "Secrets broker who now effectively owns the new US President."
         },
         {
           "name": "Richard Hagan",
@@ -279,5 +279,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-01T16:03:26.434Z"
 }

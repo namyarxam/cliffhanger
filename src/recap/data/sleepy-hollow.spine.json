@@ -286,7 +286,7 @@
         },
         {
           "label": "S4 · The next Witness",
-          "text": "A prophetic dream leads Ichabod to Diana's young daughter Molly: she is the reincarnation of Abbie's soul, the second Witness he was sent to find.",
+          "text": "A prophetic dream leads Ichabod to Diana's young daughter Molly: she is the next Witness, the one he was sent to find.",
           "anchorEpisode": 2,
           "whyLoadBearing": "Closes the S3 cliffhanger and rearranges the Witness pairing around a child and her mother.",
           "needsVerify": false
@@ -346,7 +346,7 @@
         },
         {
           "name": "Molly Thomas",
-          "line": "Diana's young daughter, the reincarnation of Abbie's soul and the second Witness at Ichabod's side."
+          "line": "Diana's young daughter, the next Witness at Ichabod's side."
         },
         {
           "name": "Jenny Mills",
@@ -370,5 +370,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-01T16:08:30.176Z"
 }

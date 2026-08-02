@@ -55,7 +55,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Mapleton has burned the Guilty Remnant to the ground. Kevin, Jill, Tom and Nora stand on the porch with an abandoned baby in Nora's arms, while Laurie, having finally spoken, is nowhere in the picture.",
+        "text": "Mapleton has burned the Guilty Remnant to the ground. Kevin, Jill and Nora stand on the porch with an abandoned baby in Nora's arms, while Laurie, having finally spoken, is nowhere in the picture.",
         "questions": [
           "Whose baby is now in Nora's arms and what does the family do with her?",
           "Will Laurie stay with what's left of the Guilty Remnant after breaking her silence to save Jill?",
@@ -93,7 +93,7 @@
         },
         {
           "name": "Meg Abbott",
-          "line": "Recent Guilty Remnant recruit under Laurie, grieving her mother's death just before the Departure."
+          "line": "Recent Guilty Remnant recruit under Laurie."
         },
         {
           "name": "Kevin Garvey Sr.",
@@ -303,5 +303,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-01T16:12:44.368Z"
 }

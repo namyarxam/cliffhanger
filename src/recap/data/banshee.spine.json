@@ -382,7 +382,7 @@
         },
         {
           "name": "Job",
-          "line": "Rescued, broken by two years of torture, boarding a plane for New York with a bag of Sugar's cash."
+          "line": "Rescued, broken by two years of torture, leaving for New York after gifting Sugar a satchel of cash."
         },
         {
           "name": "Sugar Bates",
@@ -398,9 +398,10 @@
         },
         {
           "name": "Deva Hopewell",
-          "line": "Back at Carrie's; killed a cartel intruder during a raid on the house and is traumatised by it."
+          "line": "Back at Carrie's; killed one of Proctor's hit team during a raid on the house and is traumatised by it."
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-01T16:22:01.326Z"
 }

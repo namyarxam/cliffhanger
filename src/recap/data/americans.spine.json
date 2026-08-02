@@ -338,7 +338,7 @@
         },
         {
           "label": "S4 · William caught",
-          "text": "Stan and the FBI corner William before he can hand off a final lassa fever sample; he infects himself and dies delirious, telling them he wished he'd had a family.",
+          "text": "Stan and the FBI corner William before he can hand off a final sample; he infects himself and dies delirious, telling them he wished he'd had a family.",
           "anchorEpisode": 13,
           "whyLoadBearing": "William's dying description of a spy family is the thread the FBI will pull on later.",
           "needsVerify": false
@@ -366,7 +366,7 @@
         },
         {
           "name": "Elizabeth Jennings",
-          "line": "Recommitted after killing an ex-Nazi collaborator herself; jealous of the bond Philip had built with Martha."
+          "line": "Forced to kill Lisa to protect their cover; jealous of the bond Philip had built with Martha."
         },
         {
           "name": "Paige Jennings",
@@ -390,7 +390,7 @@
         },
         {
           "name": "Oleg Burov",
-          "line": "Back in Moscow investigating food-chain corruption; failed to save Nina, and told Stan about the KGB's biological weapons program."
+          "line": "Back in Moscow after failing to save Nina; told Stan about the KGB's biological weapons program."
         },
         {
           "name": "Arkady Ivanovich",
@@ -608,5 +608,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-01T16:18:52.500Z"
 }

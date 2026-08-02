@@ -156,7 +156,7 @@
       "characters": [
         {
           "name": "Walter White",
-          "line": "Cancer in remission and cooking for a new distributor, having just watched his girlfriend's daughter die and his wife walk out."
+          "line": "Cancer in remission and cooking for a new distributor, having just watched Jesse's girlfriend die and his wife walk out."
         },
         {
           "name": "Jesse Pinkman",
@@ -227,7 +227,7 @@
         },
         {
           "label": "S3 · Walt sees the trap",
-          "text": "Realizing Gus is training Gale as his replacement — and will kill him the moment Gale can cook alone — Walt fires Gale and reinstates Jesse to make himself irreplaceable.",
+          "text": "Facing Jesse's threat to hand him to the DEA over the Hank assault, Walt engineers a fallout with Gale and reinstates Jesse as his partner.",
           "anchorEpisode": 11,
           "whyLoadBearing": "Frames the endgame: Walt understands he is expendable and must act first.",
           "needsVerify": false
@@ -255,7 +255,7 @@
         },
         {
           "name": "Jesse Pinkman",
-          "line": "Back in the lab, freshly the killer of two street dealers and now of Gale, dating a recovering addict named Andrea."
+          "line": "Back in the lab, dating a recovering addict named Andrea, and shaken after Walt gunned down the two street dealers he had drawn on."
         },
         {
           "name": "Skyler White",
@@ -485,5 +485,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-01T16:25:47.358Z"
 }

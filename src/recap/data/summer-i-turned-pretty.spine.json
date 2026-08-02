@@ -227,7 +227,7 @@
         },
         {
           "label": "S3 · The swapped letter",
-          "text": "A letter Susannah wrote for Conrad is accidentally given to Belly instead. Confronted by Jeremiah, Belly admits she still loves Conrad, and the wedding is called off.",
+          "text": "Susannah's letter for Jeremiah is accidentally given to Conrad instead. Confronted by Jeremiah, Belly admits she still loves Conrad, and the wedding is called off.",
           "anchorEpisode": 8,
           "whyLoadBearing": "The single event that ends the marriage and reroutes all three leads.",
           "needsVerify": false
@@ -263,7 +263,7 @@
         },
         {
           "name": "Adam Fisher",
-          "line": "The Fisher boys' father; funded then lost the wedding and cut Jeremiah off financially over it."
+          "line": "The Fisher boys' father; cut Jeremiah off financially after catching him lying about going back to college."
         },
         {
           "name": "Steven Conklin",
@@ -279,5 +279,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-01T16:09:26.399Z"
 }

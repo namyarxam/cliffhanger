@@ -55,7 +55,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "A car bomb has just torn through Hal, Hayford and Ronnie outside a meeting Kate arranged. She is convinced the British prime minister ordered both the attack on his own ship and the bomb outside her embassy.",
+        "text": "A car bomb has just torn through Hal, Hayford and Ronnie at a meeting Kate had forbidden. She is convinced the British prime minister ordered both the attack on his own ship and the bomb outside her embassy.",
         "questions": [
           "Which of the three men caught in the blast is still alive?",
           "Did Trowbridge really hire Lenkov to attack his own carrier?",
@@ -73,7 +73,7 @@
         },
         {
           "name": "Austin Dennison",
-          "line": "British Foreign Secretary and Kate's counterpart, principled where Trowbridge is theatrical; the person she almost slept with in Paris."
+          "line": "British Foreign Secretary and Kate's counterpart, principled where Trowbridge is theatrical; the person she admitted feelings for at Chevening."
         },
         {
           "name": "Nicol Trowbridge",
@@ -295,5 +295,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-01T16:11:46.346Z"
 }

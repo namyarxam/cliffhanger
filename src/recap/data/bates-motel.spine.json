@@ -169,7 +169,7 @@
         },
         {
           "name": "Bradley Martin",
-          "line": "Faked her own suicide after murdering Gil; Dylan smuggled her out of White Pine Bay and only he and Norma know she is alive."
+          "line": "Faked her own suicide after murdering Gil; Dylan smuggled her out of White Pine Bay and only he and Norman know she is alive."
         }
       ]
     },
@@ -268,7 +268,7 @@
       "beats": [
         {
           "label": "S4 · Norman kills Audrey",
-          "text": "Norman is admitted to a psych ward. That same night, as Mother, he strangles Emma's mother Audrey when she comes to the motel, hiding the body in the motel's pit.",
+          "text": "Norman is admitted to a psych ward. That same night, as Mother, he strangles Emma's mother Audrey when she comes to the motel, hiding the body in the basement freezer.",
           "anchorEpisode": 1,
           "whyLoadBearing": "Fresh murder that will haunt the season through the earring and, eventually, drive Dylan out.",
           "needsVerify": false
@@ -446,5 +446,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-01T16:24:24.153Z"
 }

@@ -27,7 +27,7 @@
         },
         {
           "label": "S1 · New Gods pressure Wednesday",
-          "text": "Media and Mr. World frame Wednesday and Shadow for bank robbery, then offer Wednesday an alliance he refuses.",
+          "text": "Wednesday cons a bank's depositors, but he and Shadow are arrested; Media and Mr. World offer Wednesday an alliance he refuses.",
           "anchorEpisode": 5,
           "whyLoadBearing": "Names the New God antagonists and confirms the war is not going to be talked out.",
           "needsVerify": false
@@ -164,7 +164,7 @@
         },
         {
           "name": "Laura Moon",
-          "line": "Now knows Wednesday orchestrated her death, carries Sweeney's corpse, and has resolved to kill Wednesday."
+          "line": "Carries Sweeney's corpse and, upon learning of his death, has resolved to kill Wednesday."
         },
         {
           "name": "Mad Sweeney",
@@ -217,7 +217,7 @@
         },
         {
           "label": "S3 · Bilquis awakens",
-          "text": "Captured for the Shard project, Bilquis awakens to new spiritual powers, reconnects to the African gods, and stops feeding on worshipers.",
+          "text": "Kidnapped in revenge by her latest victim's daughter, Bilquis awakens to new spiritual powers, reconnects to the African gods, and stops feeding on worshipers.",
           "anchorEpisode": 5,
           "whyLoadBearing": "Removes Bilquis from the war's binary sides and positions her as a wildcard who sees Shadow's larger destiny.",
           "needsVerify": false
@@ -287,5 +287,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-01T16:17:36.382Z"
 }

@@ -364,7 +364,7 @@
         },
         {
           "name": "The Observer / September",
-          "line": "Confirmed Peter is home and is secretly working with Walter on something bigger."
+          "line": "Confirmed Peter is home and guides him toward Olivia."
         },
         {
           "name": "Walternate",
@@ -372,11 +372,11 @@
         },
         {
           "name": "Nina Sharp",
-          "line": "Trusted ally again after the Cortexiphan deception; in 2036 works from the Ministry of Science."
+          "line": "Trusted ally again after the Cortexiphan deception."
         },
         {
           "name": "Phillip Broyles",
-          "line": "Fringe head; his 2036 counterpart is in the resistance."
+          "line": "Fringe head."
         },
         {
           "name": "Astrid Farnsworth",
@@ -483,5 +483,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-01T16:31:26.442Z"
 }

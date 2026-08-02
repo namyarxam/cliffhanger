@@ -497,7 +497,7 @@
         },
         {
           "name": "Laurie Bream",
-          "line": "Now CEO of YaoNet after being pushed out of Bream-Hall."
+          "line": "Still running Bream-Hall, though her interim stint as CEO of Eklow Labs ended when Fiona was liquidated."
         },
         {
           "name": "Jian-Yang",
@@ -541,7 +541,7 @@
         },
         {
           "label": "S6 · Tethics and RussFest",
-          "text": "Belson unveils a public 'Tethics' pledge to embarrass Richard, who reluctantly signs; Russ Hanneman reappears wanting Pied Piper to power his desert RussFest.",
+          "text": "Belson unveils a public 'Tethics' pledge to embarrass Richard, who vows to expose his hypocrisy; Russ Hanneman reappears wanting Pied Piper to power his desert RussFest.",
           "anchorEpisode": 5,
           "whyLoadBearing": "Reintroduces Belson and Hanneman as ongoing headaches and sets up the network stress test.",
           "needsVerify": false
@@ -612,5 +612,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-01T16:07:37.840Z"
 }

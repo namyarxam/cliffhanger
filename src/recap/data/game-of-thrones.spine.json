@@ -192,7 +192,7 @@
         },
         {
           "name": "Catelyn Stark",
-          "line": "Robb's mother and counsel, blamed for Renly's death, gaining Brienne's sword but losing her son's trust after his secret marriage."
+          "line": "Robb's mother and counsel, who helped Brienne flee after she was accused of Renly's death, and lost her son's trust by freeing Jaime Lannister."
         },
         {
           "name": "Theon Greyjoy",
@@ -299,7 +299,7 @@
         },
         {
           "name": "Daenerys Targaryen",
-          "line": "Broke Astapor, took the Unsullied and Yunkai, and marches on Meereen as a growing liberator across Essos."
+          "line": "Broke Astapor, took the Unsullied and freed Yunkai, hailed as \"Mhysa\" by the liberated slaves."
         },
         {
           "name": "Cersei Lannister",
@@ -816,5 +816,6 @@
     "wildlings",
     "winterfell"
   ],
-  "castLinks": {}
+  "castLinks": {},
+  "repairedAt": "2026-08-01T16:32:35.663Z"
 }

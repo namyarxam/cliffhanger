@@ -226,7 +226,7 @@
         },
         {
           "label": "S3 · Otis and Ruby",
-          "text": "Otis and Ruby fall back into secret hookups that harden into dating; she takes him home to meet her disabled father, showing him a side no one else sees.",
+          "text": "Otis sleeps with Ruby one night at her house while working on his campaign, then ignores her until she quits as his manager and ends the friendship in tears.",
           "anchorEpisode": 3,
           "whyLoadBearing": "Their affair permanently changes Ruby and how she relates to Otis after he fails her again.",
           "needsVerify": false
@@ -311,5 +311,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-01T16:06:37.835Z"
 }

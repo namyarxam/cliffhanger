@@ -77,7 +77,7 @@
         },
         {
           "name": "Justin Foley",
-          "line": "Jessica's boyfriend; knew Bryce raped her and buried it; homeless after his mother's boyfriend threw him out."
+          "line": "Jessica's boyfriend; knew Bryce raped her and buried it."
         },
         {
           "name": "Jessica Davis",
@@ -247,7 +247,7 @@
         },
         {
           "label": "S3 · Framing Monty",
-          "text": "Monty is jailed for Tyler's rape and killed inside. Ani gives Sheriff Diaz a story that pins Bryce's murder on the dead Monty; the group closes ranks around Alex.",
+          "text": "Monty is jailed for Tyler's rape and killed inside. Ani gives Deputy Standall a story that pins Bryce's murder on the dead Monty; the group closes ranks around Alex.",
           "anchorEpisode": 13,
           "whyLoadBearing": "The lie the whole group is now bound to defend, and the injustice Winston will hunt in Season 4.",
           "needsVerify": false
@@ -279,7 +279,7 @@
         },
         {
           "name": "Ani Achola",
-          "line": "New student and Bryce's secret former lover; fed Sheriff Diaz the story that framed the dead Monty."
+          "line": "New student and Bryce's secret former lover; fed Deputy Standall the story that framed the dead Monty."
         },
         {
           "name": "Winston Williams",
@@ -410,5 +410,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-01T16:16:11.958Z"
 }

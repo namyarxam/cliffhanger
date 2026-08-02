@@ -6,7 +6,7 @@
       "beats": [
         {
           "label": "S1 · Out of the deep woods",
-          "text": "Ten years after Pubba dies of the Sick, Gus leaves Yellowstone to find Birdie in Colorado; poachers snatch him and a gruff loner, Jepperd, saves him.",
+          "text": "A year after Pubba dies of the Sick, Gus leaves Yellowstone to find Birdie in Colorado; poachers snatch him and a gruff loner, Jepperd, saves him.",
           "anchorEpisode": 1,
           "whyLoadBearing": "The road-trip pairing that carries the whole series starts here.",
           "needsVerify": false
@@ -190,7 +190,7 @@
         },
         {
           "name": "Birdie",
-          "line": "Gus's engineered mother; still in Alaska with her research, hunted by Zhang's people."
+          "line": "Gus's engineered mother; still in Alaska with her research, hunted by Gillian Washington's people."
         },
         {
           "name": "Rani Singh",
@@ -297,5 +297,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-01T16:10:37.504Z"
 }

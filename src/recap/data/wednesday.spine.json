@@ -41,7 +41,7 @@
         },
         {
           "label": "S1 · Thornhill is Laurel Gates",
-          "text": "Teacher Ms Thornhill is unmasked as Laurel Gates, who used Tyler to harvest body parts and Wednesday's blood to resurrect Crackstone. He kills Weems and stabs Wednesday.",
+          "text": "Teacher Ms Thornhill is unmasked as Laurel Gates, who used Tyler to harvest body parts and Wednesday's blood to resurrect Crackstone. She kills Weems; Crackstone stabs Wednesday.",
           "anchorEpisode": 8,
           "whyLoadBearing": "The master reveal, the death of the principal, and the ritual that pays off every earlier thread.",
           "needsVerify": false
@@ -204,5 +204,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-01T15:58:58.559Z"
 }

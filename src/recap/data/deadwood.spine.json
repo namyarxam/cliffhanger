@@ -20,7 +20,7 @@
         },
         {
           "label": "S1 · Sofia saved, Alma takes her in",
-          "text": "Al orders the young Metz survivor Sofia killed to bury the Hickok feud, but Doc protects her and Alma eventually takes her in, forcing Al to let the girl live.",
+          "text": "With the Metz killers dead and Sofia no longer a threat to identify them, Al allows her a safe return to Deadwood, where Alma later takes her in.",
           "anchorEpisode": 2,
           "whyLoadBearing": "Sofia is the reason Alma stays in camp, which is the reason her claim stays contested — the trigger for every Alma beat that follows.",
           "needsVerify": false
@@ -196,7 +196,7 @@
         },
         {
           "name": "Doc Cochran",
-          "line": "The camp doctor; pulled Al through his stroke and is now coughing in ways he has not explained."
+          "line": "The camp doctor; pulled Al through his stroke."
         }
       ]
     },
@@ -295,9 +295,10 @@
         },
         {
           "name": "Doc Cochran",
-          "line": "The camp doctor, now openly dying of tuberculosis but refusing Al's request to leave town."
+          "line": "The camp doctor, showing symptoms of tuberculosis and planning to leave town for everyone's safety, though Al demands he stay."
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-01T16:27:06.383Z"
 }

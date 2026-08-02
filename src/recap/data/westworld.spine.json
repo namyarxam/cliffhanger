@@ -121,7 +121,7 @@
         },
         {
           "label": "S2 · The Forge",
-          "text": "At the Forge, Bernard kills Dolores to stop her destroying the Sublime, then Ford's ghost inside him tells him exactly what to do with her control unit.",
+          "text": "At the Forge, Bernard kills Dolores to stop her destroying the Sublime, then Charlotte's murder of Elsie pushes him toward a desperate use for her control unit.",
           "anchorEpisode": 10,
           "whyLoadBearing": "Dolores's death and her rebirth in another body is the mechanic that launches season three.",
           "needsVerify": false
@@ -160,7 +160,7 @@
         },
         {
           "name": "Dr. Robert Ford",
-          "line": "Dead in body but alive as a persona riding in Bernard's mind, quietly steering the uprising and telling Bernard what to do with Dolores's control unit."
+          "line": "Dead in body but alive as a persona riding in Bernard's mind, quietly steering the uprising until Bernard finally deletes him."
         },
         {
           "name": "Maeve Millay",
@@ -377,5 +377,6 @@
       "actor": "Jeffrey Wright",
       "character": "Bernard Lowe"
     }
-  }
+  },
+  "repairedAt": "2026-08-01T16:14:44.379Z"
 }

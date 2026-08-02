@@ -168,7 +168,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "The Day of Unity was stopped only by handing the Boiling Isles to the Collector, a childlike being who now treats its people as toys. Luz, her mother, Eda, King and their friends are stranded in the human realm, and a surviving fragment of Belos has crossed over with them without their knowing.",
+        "text": "The Day of Unity was stopped only by handing the Boiling Isles to the Collector, a childlike being who now treats its people as toys. Luz, Amity, Willow, Gus and Hunter are stranded in the human realm, and a surviving fragment of Belos has crossed over with them without their knowing.",
         "questions": [
           "How does Luz's group get back to the Boiling Isles with the portal destroyed again?",
           "What is the Collector doing to Eda, Raine and everyone left behind?",
@@ -274,7 +274,7 @@
         },
         {
           "label": "S3 · After the Titan",
-          "text": "The Titan passing on takes drawn glyphs with him; four years later, a grown Luz returns from human college to the Isles for a belated quinceañera.",
+          "text": "The Titan passing on takes drawn glyphs with him; four years later, Luz graduates high school and heads to college on the Isles for a belated quinceañera.",
           "anchorEpisode": 3,
           "whyLoadBearing": "The epilogue state — where everyone landed and how the show closes out.",
           "needsVerify": false
@@ -331,5 +331,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-01T16:04:54.692Z"
 }

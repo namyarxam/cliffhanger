@@ -48,7 +48,7 @@
         },
         {
           "label": "S1 · Liza on the beach",
-          "text": "On the sand Liza reveals she was bitten in the escape. Travis shoots her before she turns, and Chris will not forgive him for it.",
+          "text": "On the sand Liza reveals she was bitten in the escape. Travis promises to protect Chris, then shoots her before she turns.",
           "anchorEpisode": 6,
           "whyLoadBearing": "Detonates the Travis/Chris relationship that drives the whole next season.",
           "needsVerify": false
@@ -81,7 +81,7 @@
         },
         {
           "name": "Chris Manawa",
-          "line": "Travis's grieving son; blames his father for killing his mother."
+          "line": "Travis's son, whose mother Liza is shot by Travis on the beach after she reveals she was bitten."
         },
         {
           "name": "Daniel Salazar",
@@ -129,7 +129,7 @@
         },
         {
           "label": "S2 · Chris is killed",
-          "text": "Travis chases runaway Chris across Mexico. Chris falls in with three violent American tourists and helps kill a farmer; Travis leaves him, and the tourists later murder him.",
+          "text": "Travis chases runaway Chris across Mexico. Chris falls in with three violent American tourists and helps kill a farmer; Chris chooses them over Travis and rides off.",
           "anchorEpisode": 10,
           "whyLoadBearing": "Removes Chris and primes Travis's rampage that closes the season.",
           "needsVerify": false
@@ -785,5 +785,5 @@
       "character": "Mo Jones-Mukherjee"
     }
   },
-  "repairedAt": "2026-07-28T13:00:27.145Z"
+  "repairedAt": "2026-08-01T16:29:57.944Z"
 }

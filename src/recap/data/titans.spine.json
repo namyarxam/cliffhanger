@@ -101,7 +101,7 @@
         },
         {
           "name": "Conner (Subject 13)",
-          "line": "A Superman-Luthor hybrid who has just escaped Cadmus with a red-eyed Krypto at his side.",
+          "line": "A man bearing a Superman logo tattoo who has just escaped Cadmus with a red-eyed Labrador at his side.",
           "note": "Post-credits introduction."
         }
       ]
@@ -395,7 +395,7 @@
         },
         {
           "name": "Sebastian Sanger (Brother Blood)",
-          "line": "The prophesied child of the Trigon cult; killed Trigon and was destroyed by Kory."
+          "line": "Rejected at birth by the Trigon cult but later crowned Brother Blood; killed Trigon and was destroyed by Kory."
         },
         {
           "name": "May Bennett (Mother Mayhem)",
@@ -411,5 +411,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-01T16:13:25.429Z"
 }
