@@ -27,7 +27,7 @@
         },
         {
           "label": "S1 · Fabiola comes out",
-          "text": "Fabiola realises she is a lesbian, tells Eleanor, and accidentally outs herself at Ben's party before her mother embraces her.",
+          "text": "Fabiola realises she is a lesbian, comes out to her mother who embraces her, then accidentally outs herself at Ben's party.",
           "anchorEpisode": 8,
           "whyLoadBearing": "Locks in a core identity beat carried through every later season.",
           "needsVerify": false
@@ -271,7 +271,7 @@
         },
         {
           "name": "Nalini Vishwakumar",
-          "line": "Fiercely in Devi's corner, having ended her friendship with Rhyah and quietly given up Chris."
+          "line": "Fiercely in Devi's corner, having ended her friendship with Rhyah."
         },
         {
           "name": "Fabiola Torres",
@@ -344,7 +344,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "The series ends resolved rather than open. Devi leaves for Princeton with Ben as her boyfriend at nearby Columbia, Fabiola heads to Howard, Eleanor stays in LA acting with Trent, Kamala takes the Baltimore job with Manish, Paxton teaches at ASU, and Nalini quietly dates Andres.",
+        "text": "The series ends resolved rather than open. Devi leaves for Princeton with Ben as her boyfriend at nearby Columbia, Fabiola heads to Howard, Eleanor stays in LA acting with Trent, Kamala takes the Baltimore job with Manish, Paxton returns to ASU to pursue teaching, and Nalini quietly dates Andres.",
         "questions": [
           "Can Devi and Ben's long-planned relationship actually survive being at different universities?",
           "Will Nalini let herself have a real life with Andres now that Devi is gone?",
@@ -390,5 +390,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-02T23:49:44.393Z"
 }

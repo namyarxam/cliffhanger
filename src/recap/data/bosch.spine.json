@@ -165,7 +165,7 @@
         },
         {
           "name": "Chief Irving",
-          "line": "Just accepted interim Chief after DA O'Shea forced through his son George's murder investigation; grieving and estranged from Connie."
+          "line": "Just accepted interim Chief after Mayor Ramos offered him the job, on condition his son George's murder investigation is treated fairly; grieving and estranged from Connie."
         },
         {
           "name": "Lt. Grace Billets",
@@ -173,7 +173,7 @@
         },
         {
           "name": "Eleanor Wish",
-          "line": "Bosch's ex-wife; still in Vegas with Maddie, briefly kidnapped by Nash's crew and rescued."
+          "line": "Bosch's ex-wife; still in Vegas with Maddie, briefly kidnapped by Marks' Armenian crew as a trade for Rykov and rescued."
         },
         {
           "name": "Madeline 'Maddie' Bosch",
@@ -404,7 +404,7 @@
         },
         {
           "label": "S5 · Russian Roulette",
-          "text": "Bosch's cover is blown by a leaked news article; he's flown to a desert compound, survives Walsh's Russian roulette, and kills his captors on the return jet.",
+          "text": "Bosch is flown to a desert compound and survives Walsh's Russian roulette; a leaked news article then blows his cover, and he kills his would-be executioners on a second jet.",
           "anchorEpisode": 8,
           "whyLoadBearing": "The season's most violent turn and the beginning of Walsh's personal war on Bosch.",
           "needsVerify": false
@@ -554,7 +554,7 @@
         },
         {
           "name": "Alicia Kent",
-          "line": "Physicist Stanley Kent's widow; convicted of conspiring with FBI agent Maxwell to murder her husband for his money."
+          "line": "Physicist Stanley Kent's widow; convicted of conspiring with FBI agent Maxwell to murder her husband as part of a scheme to trigger their prenup's morals clause and protect her wealth."
         },
         {
           "name": "Agent Maxwell",
@@ -660,5 +660,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:15:16.903Z"
 }

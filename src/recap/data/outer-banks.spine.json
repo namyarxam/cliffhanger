@@ -132,7 +132,7 @@
         },
         {
           "label": "S2 · Coastal Venture",
-          "text": "The Pogues stow away on the Coastal Venture as Rafe hauls the gold and Cross out to sea; the fight ends with the Cross lost overboard and Sarah nearly drowned.",
+          "text": "The Pogues stow away on the Coastal Venture as Rafe hauls the gold and Cross out to sea; the fight ends with Pope forced overboard and Sarah nearly drowned.",
           "anchorEpisode": 10,
           "whyLoadBearing": "Loses the Cross overboard and forces the Pogues off the ship into the ocean.",
           "needsVerify": false
@@ -344,7 +344,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "JJ is dead — murdered by his own biological father Chandler Groff moments after Kiara finally kissed him. Groff has vanished toward Lisbon with the Blue Crown. Sarah is carrying John B's child.",
+        "text": "JJ is dead — murdered by his own biological father Chandler Groff moments after declaring his love for Kiara. Groff has vanished toward Lisbon with the Blue Crown. Sarah is carrying John B's child.",
         "questions": [
           "Will the Pogues track Groff to Lisbon and avenge JJ?",
           "How does Kiara survive losing the boy she just admitted she loved?",
@@ -358,7 +358,7 @@
         },
         {
           "name": "Kiara Carrera",
-          "line": "Confessed her love to JJ moments before Groff murdered him; devastated."
+          "line": "JJ confessed his love to her moments before Groff murdered him; devastated."
         },
         {
           "name": "Chandler Groff",
@@ -386,5 +386,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-02T23:53:45.345Z"
 }

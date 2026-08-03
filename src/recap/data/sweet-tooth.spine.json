@@ -65,7 +65,7 @@
       "characters": [
         {
           "name": "Gus",
-          "line": "Deer hybrid boy, caged at the Preserve, still believing Birdie is his mother waiting for him."
+          "line": "Deer hybrid boy, caged at the Preserve, reeling from learning he was an experiment and had no parents."
         },
         {
           "name": "Tommy Jepperd",
@@ -133,7 +133,7 @@
         },
         {
           "label": "S2 · Sister on the inside",
-          "text": "Becky infiltrates the Last Men and turns Tiger to her side; she finds Wendy at the Preserve but keeps quiet that they are sisters.",
+          "text": "Becky infiltrates the Last Men and turns Tiger to her side; she meets Wendy after the escape but keeps quiet that they are sisters.",
           "anchorEpisode": 4,
           "whyLoadBearing": "Puts Becky in the raid and quietly stages the Wendy reveal.",
           "needsVerify": false
@@ -298,5 +298,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-01T16:10:37.504Z"
+  "repairedAt": "2026-08-02T23:43:04.675Z"
 }

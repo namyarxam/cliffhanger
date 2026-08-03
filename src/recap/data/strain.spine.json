@@ -130,7 +130,7 @@
         },
         {
           "label": "S2 · Quinlan arrives",
-          "text": "An ancient half-human, half-strigoi named Quinlan arrives in New York claiming he was born of the Master and intends to kill his father.",
+          "text": "An ancient half-human, half-strigoi named Quinlan arrives in New York, hunting the Master for personal reasons.",
           "anchorEpisode": 7,
           "whyLoadBearing": "Quinlan becomes the sword arm of the hunters and the only being physically capable of matching the Master in S3-S4.",
           "needsVerify": false
@@ -204,7 +204,7 @@
         },
         {
           "name": "Quinlan",
-          "line": "Millennia-old half-human hybrid, the Master's own son, hunting his father alongside the Ancients."
+          "line": "Millennia-old human-vampire hybrid working with the Ancients to hunt the Master for his own reasons."
         },
         {
           "name": "Justine Feraldo",
@@ -315,7 +315,7 @@
         },
         {
           "name": "Justine Feraldo",
-          "line": "NYC's security director whose Central Park offensive collapsed; last seen holding the line as the city fell."
+          "line": "NYC's security director whose Central Park offensive collapsed; killed in a strigoi street ambush as the city fell."
         }
       ]
     },
@@ -418,5 +418,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:07:07.655Z"
 }

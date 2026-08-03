@@ -150,7 +150,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Leanne has bought her way into the family with a living child and a body hidden in the basement. She is no longer a captive — she is the Turners' protector, and she has publicly declared war on the Church.",
+        "text": "Leanne has bought her way into the family with a living child and a body hidden in the basement. She is no longer a captive — she is the Turners' protector, and alone in her room she has vowed war on the Church.",
         "questions": [
           "What is Leanne actually capable of, and where does this second Jericho come from?",
           "How will the Church of the Lesser Saints answer her declaration?",
@@ -238,7 +238,7 @@
         },
         {
           "label": "S3 · Dorothy falls",
-          "text": "Frank brings a psychiatrist Leanne redirects onto Dorothy. Dorothy tries to flee with Jericho, and the rotting banister collapses, dropping her to the floor below.",
+          "text": "Frank brings a psychiatrist who evaluates Dorothy instead of Leanne. Dorothy tries to flee with Jericho, and the rotting banister collapses, dropping her to the floor below.",
           "anchorEpisode": 10,
           "whyLoadBearing": "Ends the season with Dorothy broken at Leanne's feet — the precise physical state and power balance S4 opens on.",
           "needsVerify": false
@@ -283,7 +283,7 @@
         },
         {
           "name": "Frank",
-          "line": "Dorothy's father, tried to have Leanne committed and instead handed Leanne authority over Dorothy's care."
+          "line": "Dorothy's father, covertly sent a psychiatrist to evaluate Dorothy under the guise of evaluating Leanne, and instead handed Leanne authority over Dorothy's care."
         }
       ]
     },
@@ -382,5 +382,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-02T23:58:57.948Z"
 }

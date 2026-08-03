@@ -101,7 +101,7 @@
         },
         {
           "name": "LJ Folger",
-          "line": "Sadistic First Class teen orphaned by the revolt; now under Pike's roof."
+          "line": "Sadistic First Class teen orphaned by the revolt; evicted from the Folger compartment by Pike, now bonding with Oz."
         },
         {
           "name": "Pike",
@@ -217,7 +217,7 @@
       "beats": [
         {
           "label": "S3 · Six months in the dark",
-          "text": "Six months on, Wilford rules a starving Snowpiercer while Ruth leads a hidden resistance; Layton's pirate train searches for warm ground, in vain.",
+          "text": "Six months on, Wilford rules a starving Big Alice while Ruth leads a hidden resistance; Layton's pirate Snowpiercer searches for warm ground, in vain.",
           "anchorEpisode": 1,
           "whyLoadBearing": "Resets both sides of the story and shows the mission is failing, which is why Layton later grasps at Africa.",
           "needsVerify": false
@@ -366,7 +366,7 @@
         },
         {
           "label": "S4 · Last stop",
-          "text": "Milius attacks New Eden; Alex sabotages the launch, the settlers win the fight, everyone chooses to stay, and flowers begin appearing on the ice.",
+          "text": "Nima attacks New Eden; Alex sabotages the launch, the settlers win the fight, everyone chooses to stay, and flowers begin appearing on the ice.",
           "anchorEpisode": 10,
           "whyLoadBearing": "Resolves the series: the launch is stopped, the community stays, and the planet quietly begins to heal on its own.",
           "needsVerify": false
@@ -423,5 +423,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:03:31.902Z"
 }

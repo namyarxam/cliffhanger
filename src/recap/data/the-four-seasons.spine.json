@@ -85,7 +85,7 @@
         },
         {
           "name": "Danny",
-          "line": "Married to Claude in an open marriage; hid a heart condition and kept smoking; Nick's death has genuinely rattled him."
+          "line": "Married to Claude in an open marriage; hid the timing of his angioplasty and kept smoking; Nick's death has genuinely rattled him."
         },
         {
           "name": "Claude",
@@ -111,7 +111,7 @@
         },
         {
           "label": "S2 · Shore, baby, Mark",
-          "text": "Down the shore with baby Gino, Anne quietly has a one-night stand with a widower named Mark; Kate, high on Jack's vape, admits she has always been miserable.",
+          "text": "Down the shore with baby Gino, Anne quietly has a one-night stand with a beach friend of Jack's named Mark; Kate, high on Jack's vape, admits she has always been miserable.",
           "anchorEpisode": 3,
           "whyLoadBearing": "Anne's first move past Nick, and Kate finally naming her unhappiness aloud.",
           "needsVerify": false
@@ -132,7 +132,7 @@
         },
         {
           "label": "S2 · Why Anne left",
-          "text": "A COVID flashback shows the origin of the split: Nick admits kissing another woman during lockdown, and Anne, alone in the yard, quietly decides she is done.",
+          "text": "A COVID flashback shows the origin of the split: Nick admits a kiss before lockdown that quarantine kept from escalating, and Anne, alone in the yard, quietly decides she is done.",
           "anchorEpisode": 6,
           "whyLoadBearing": "Recasts Nick and Anne's whole marriage retroactively; the emotional anchor of the season.",
           "needsVerify": false
@@ -180,7 +180,7 @@
         },
         {
           "name": "Mark Brett",
-          "line": "The widower Anne slept with at the shore; has a girlfriend and told Anne to stop texting him after she sent an accidental nude."
+          "line": "The beach friend of Jack's Anne slept with at the shore; has a girlfriend and told Anne to stop texting her after she sent an accidental nude."
         },
         {
           "name": "Italian neighbour",
@@ -189,5 +189,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:47:25.412Z"
 }

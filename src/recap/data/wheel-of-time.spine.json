@@ -196,7 +196,7 @@
         },
         {
           "name": "Min Farshaw",
-          "line": "The seer whose visions of Rand's spearing and Mat's hanging keep coming true, now openly with the group."
+          "line": "The seer whose vision of Mat spearing Rand keeps her wary, now openly with the group."
         },
         {
           "name": "Lanfear",
@@ -258,14 +258,14 @@
         },
         {
           "label": "S3 · Lanfear turns, Couladin rides",
-          "text": "Rand rejects Lanfear. She wounds Moiraine, allies with the Forsaken Rahvin, and props Couladin up as a false Dragon. Rand claims his Aiel by summoning rain on the Waste.",
+          "text": "Rand rejects Lanfear. She wounds Moiraine, allies with the Forsaken Rahvin, and props Couladin up as a fake Car'a'carn. Rand claims his Aiel by summoning rain on the Waste.",
           "anchorEpisode": 8,
           "whyLoadBearing": "Lanfear switches from suitor to enemy and a rival Dragon rides against Rand — the two forces that will hunt him next.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "Rand has been named Car'a'carn of the Aiel — but Couladin rides against him as a false Dragon, backed by Lanfear and the Forsaken Rahvin. Elaida rules a White Tower openly hostile to him, and Liandrin holds an artifact that can leash him at Moghedien's word.",
+        "text": "Rand has been named Car'a'carn of the Aiel — but Couladin rides against him as a fake Car'a'carn, backed by Lanfear and the Forsaken Rahvin. Elaida rules a White Tower openly hostile to him, and Liandrin holds an artifact that can leash him at Moghedien's word.",
         "questions": [
           "Can Rand defeat Couladin and Rahvin before his own Aiel are turned against him?",
           "What will Elaida's Tower do to the Dragon they cannot control?",
@@ -319,5 +319,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:10:53.122Z"
 }

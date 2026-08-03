@@ -151,14 +151,14 @@
         },
         {
           "label": "S2 · Gideon rises",
-          "text": "The Lockes kill Dodge with the Alpha Key. Tyler leaves for Montana, choosing to forget. Eden uses the Echo Key to summon Gideon, a worse demon who escapes with the Anywhere Key.",
+          "text": "The Lockes kill Dodge with the Alpha Key. Tyler leaves on a road trip, choosing to forget. Eden uses the Echo Key to summon Gideon, a worse demon who escapes with the Anywhere Key.",
           "anchorEpisode": 10,
           "whyLoadBearing": "Dodge is dead but a bigger demon is loose in the world — the entire premise of season 3.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "Dodge is dead, but Eden summoned an older, worse demon named Gideon at the well and got thrown down it for her trouble. Gideon is loose in Matheson with the Anywhere Key, and Tyler — grieving Jackie — has moved to Montana refusing to remember any of it.",
+        "text": "Dodge is dead, but Eden summoned an older, worse demon named Gideon at the well and got thrown down it for her trouble. Gideon is loose in Matheson with the Anywhere Key, and Tyler — grieving Jackie — has left on a road trip refusing to remember any of it.",
         "questions": [
           "What does Gideon want, and how much bigger a threat is he than Dodge was?",
           "Can the Lockes fight demons without Tyler, who has chosen to forget?",
@@ -180,7 +180,7 @@
         },
         {
           "name": "Tyler Locke",
-          "line": "Helped forge the Alpha Key, lost Jackie to it, and left for Montana refusing to have his magic memories restored."
+          "line": "Helped forge the Alpha Key, lost Jackie to it, and left on a road trip refusing to have his magic memories restored."
         },
         {
           "name": "Nina Locke",
@@ -299,9 +299,10 @@
         },
         {
           "name": "Scot Cavendish",
-          "line": "Kinsey's boyfriend, home from film school."
+          "line": "Kinsey's boyfriend, now overseas."
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:44:33.523Z"
 }

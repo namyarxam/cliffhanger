@@ -172,7 +172,7 @@
         },
         {
           "name": "Jason Mendoza",
-          "line": "Memory-restored, briefly married Tahani; failed the Judge's impulse-control test."
+          "line": "Memory-restored, briefly engaged to Janet with Jason; failed the Judge's impulse-control test."
         },
         {
           "name": "Tahani Al-Jamil",
@@ -234,7 +234,7 @@
         },
         {
           "label": "S3 · A new experiment, with Chidi inside it",
-          "text": "Gen agrees to a new experiment: Michael will design a neighborhood for four humans chosen by Shawn, with Chidi's memory erased so he can be the fourth subject.",
+          "text": "Gen agrees to a new experiment: Michael will design a neighborhood for four moderately \"bad\" humans chosen by Shawn.",
           "anchorEpisode": 12,
           "whyLoadBearing": "The exact premise the reader is walking into for season 4.",
           "needsVerify": false
@@ -251,11 +251,11 @@
       "characters": [
         {
           "name": "Eleanor Shellstrop",
-          "line": "Ran the Soul Squad on Earth, is in love with Chidi again, and is about to lose him to a memory wipe."
+          "line": "Ran the Soul Squad on Earth, is in love with Chidi again, and moves in with him as the new experiment begins."
         },
         {
           "name": "Chidi Anagonye",
-          "line": "Has just agreed to have his memory erased so he can be secretly guided through the new experiment."
+          "line": "Has suggested the experiment be repeated with new subjects, and is moving in with Eleanor as it begins."
         },
         {
           "name": "Michael",
@@ -382,5 +382,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:18:09.989Z"
 }

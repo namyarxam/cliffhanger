@@ -188,7 +188,7 @@
         },
         {
           "label": "S3 · Framed and flees",
-          "text": "A retrieval mission on a Greek beach collapses: the defecting scientist Yuri is killed and Jack is framed for shooting a Greek officer, forcing him underground.",
+          "text": "A retrieval mission on a Greek beach collapses: the defecting scientist Yuri is killed and Jack accidentally shoots a Greek officer, forcing him underground.",
           "anchorEpisode": 1,
           "whyLoadBearing": "Turns Jack into a fugitive for most of the season, which shapes every subsequent decision.",
           "needsVerify": false
@@ -240,7 +240,7 @@
       "characters": [
         {
           "name": "Jack Ryan",
-          "line": "Cleared of the frame-up and awarded the Intelligence Star; the CIA's proven point man for high-stakes off-book operations."
+          "line": "Awarded the Intelligence Star; the CIA's proven point man for high-stakes off-book operations."
         },
         {
           "name": "James Greer",
@@ -325,7 +325,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "The Zeyara–triad–cartel network is broken, the bombs are stopped at the border, and Miller's Pluto program is publicly tied to a sitting US senator. Wright is confirmed CIA Director and Jack is again inside the building.",
+        "text": "The Zeyara–triad–cartel network is broken, the bombs are stopped at the border, and Miller's Pluto program is publicly tied to a sitting US senator. Wright is confirmed CIA Director.",
         "questions": [
           "How deep does the political fallout from Henshaw's exposure actually run?",
           "What becomes of Chavez once his usefulness to Jack is over?",
@@ -335,7 +335,7 @@
       "characters": [
         {
           "name": "Jack Ryan",
-          "line": "Returned to the CIA after exposing the Miller-era conspiracy from outside it; Wright's proven right hand."
+          "line": "Wright's proven right hand, who resigned as acting Deputy Director to pursue the Miller-era conspiracy from outside the CIA."
         },
         {
           "name": "Elizabeth Wright",
@@ -363,5 +363,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:38:10.442Z"
 }

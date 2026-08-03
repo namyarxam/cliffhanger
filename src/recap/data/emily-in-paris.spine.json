@@ -170,7 +170,7 @@
         },
         {
           "name": "Madeline Wheeler",
-          "line": "Emily's newly-postpartum Chicago boss, left running Savoir after her whole French team walked out."
+          "line": "Emily's Chicago boss, left running Savoir after her whole French team walked out."
         },
         {
           "name": "Antoine Lambert",
@@ -200,7 +200,7 @@
         },
         {
           "label": "S3 · Agence Grateau",
-          "text": "After Madeline sabotages the Savoir building to force them out, Emily resigns and joins Sylvie back at their old office as Agence Grateau.",
+          "text": "After Sylvie has the Savoir building sabotaged to force them out, Emily resigns and joins Sylvie back at their old office as Agence Grateau.",
           "anchorEpisode": 3,
           "whyLoadBearing": "The firm every subsequent workplace beat runs through is born here.",
           "needsVerify": false
@@ -281,14 +281,14 @@
       "beats": [
         {
           "label": "S4 · Public breakup",
-          "text": "In front of a stadium crowd Alfie ends things with Emily on the jumbotron; the same morning Camille disappears from her own wedding.",
+          "text": "In front of a stadium crowd Alfie ends things with Emily on the jumbotron; that same day Gabriel tells Emily that Camille has disappeared.",
           "anchorEpisode": 1,
           "whyLoadBearing": "Kicks off the season by removing both of the couples Emily was living between at the S3 finale.",
           "needsVerify": false
         },
         {
           "label": "S4 · Camille found",
-          "text": "Emily finds Camille in Greece with Sofia and brings her home; Camille tells Gabriel their pregnancy makes them a family whatever else is true.",
+          "text": "Emily finds Camille in Greece with Sofia and brings her home; Gabriel tells Camille they are already a family whatever else is true.",
           "anchorEpisode": 2,
           "whyLoadBearing": "Reinstates Camille's hold on Gabriel and the pregnancy claim that governs every one of his decisions this season.",
           "needsVerify": false
@@ -471,5 +471,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:41:23.609Z"
 }

@@ -13,7 +13,7 @@
         },
         {
           "label": "S1 · Blood at the Thing",
-          "text": "A second Wessex raid ends with Lagertha killing the earl's brother Knut for attempted rape; Ragnar takes the blame at the Thing and is acquitted.",
+          "text": "A second Northumbrian raid ends with Lagertha killing the earl's brother Knut for attempted rape; Ragnar takes the blame at the Thing and is acquitted.",
           "anchorEpisode": 4,
           "whyLoadBearing": "Opens the open war between Ragnar and Haraldson that drives the back half of the season.",
           "needsVerify": false
@@ -473,7 +473,7 @@
         },
         {
           "name": "Bjorn",
-          "line": "New king of Kattegat; married to shield-maiden Gunnhild and the slave-born Ingrid."
+          "line": "New king of Kattegat; in a relationship with the shield-maiden Gunnhild."
         },
         {
           "name": "Ubbe",
@@ -548,7 +548,7 @@
         },
         {
           "label": "S6 · Ubbe sails west",
-          "text": "Ubbe, Torvi, and Kjetill sail past a failing Iceland to a new land where the natives lead them to Floki, alive and at peace.",
+          "text": "Ubbe and Torvi sail past a failing Iceland to a new land where the natives lead them to Floki, alive and at peace.",
           "anchorEpisode": 20,
           "whyLoadBearing": "Closes Floki's arc and gives one Lothbrok line an ending far from war.",
           "needsVerify": false
@@ -604,5 +604,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:08:13.616Z"
 }

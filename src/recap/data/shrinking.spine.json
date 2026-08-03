@@ -27,7 +27,7 @@
         },
         {
           "label": "S1 · Jimmy and Gaby",
-          "text": "At a party at his house, a drunk Jimmy sleeps with his colleague Gaby; they call it a one-off, then fall into bed again the night of Brian's wedding to Charlie.",
+          "text": "At a party at his house, a drunk Jimmy sleeps with his colleague Gaby; they call it a one-off, then fall into bed again the night of Nico's art exhibition.",
           "anchorEpisode": 6,
           "whyLoadBearing": "The Jimmy-Gaby affair is the relationship S2 opens on and untangles across its first half.",
           "needsVerify": false
@@ -101,7 +101,7 @@
         },
         {
           "name": "Tia Laird",
-          "line": "Jimmy's wife, killed a year before the series in a car crash caused by a drunk driver; her absence drives every relationship in the family."
+          "line": "Jimmy's wife, killed before the series in a car accident; her absence drives every relationship in the family."
         }
       ]
     },
@@ -200,9 +200,10 @@
         },
         {
           "name": "Julie",
-          "line": "Paul's doctor and now live-in girlfriend, who sold her house and moved in with him after her husband died."
+          "line": "Paul's romantic partner, who moved in with him after her husband died."
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:01:55.146Z"
 }

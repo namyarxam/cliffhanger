@@ -34,7 +34,7 @@
         },
         {
           "label": "S1 · Donna killed by mistake",
-          "text": "Clay orders Tig to murder Opie; Tig shoots up the wrong truck and kills Opie's wife Donna instead. Only Clay and Tig know the truth.",
+          "text": "Clay's solution to fund Bobby's defense leaves SAMCRO exposed, and what should have been Abel's happy homecoming ends in tragedy.",
           "anchorEpisode": 13,
           "whyLoadBearing": "The secret sin that will poison every relationship in the club for years.",
           "needsVerify": false
@@ -48,7 +48,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Donna is dead by Clay's order, a secret only Clay and Tig share. Jax buries his father's ghost alongside her, walking into a fight with Clay that neither has yet named.",
+        "text": "A great tragedy leaves the club reeling. Jax buries his father's ghost, walking into a fight with Clay that neither has yet named.",
         "questions": [
           "Will Opie ever learn who really killed his wife?",
           "Can Jax reshape SAMCRO the way his father wanted?",
@@ -576,5 +576,5 @@
       ]
     }
   },
-  "repairedAt": "2026-07-27T06:05:36.829Z"
+  "repairedAt": "2026-08-03T00:04:56.416Z"
 }

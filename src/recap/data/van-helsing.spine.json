@@ -176,7 +176,7 @@
         },
         {
           "name": "Doc",
-          "line": "Reunited with the group after abandoning Julius; carries a vial of the Dark One's blood Scarlett gave her."
+          "line": "Reunited with the group after abandoning Julius."
         },
         {
           "name": "Julius",
@@ -200,7 +200,7 @@
         },
         {
           "name": "Flesh (Phil)",
-          "line": "With the human Resistance heading for Denver; discovered on Eden that his humanity holds firm."
+          "line": "With Lucky and Mohamad through the season, ending up at Crooked Falls; discovered his humanity holds firm."
         }
       ]
     },
@@ -295,7 +295,7 @@
         },
         {
           "name": "Flesh (Phil)",
-          "line": "Regenerating survivor; broke into Loveland prison with Jolene to find his wife Jennifer."
+          "line": "Regenerating survivor; escaped the prison bus with Jolene and is en route to Loveland to find his wife."
         },
         {
           "name": "Ivory",
@@ -370,7 +370,7 @@
       "characters": [
         {
           "name": "Vanessa Van Helsing",
-          "line": "Sealed inside the Dark Realm with Dracula."
+          "line": "Sealed inside the Dark Realm, having tricked Dracula into being trapped there with her."
         },
         {
           "name": "Jack Van Helsing",
@@ -505,5 +505,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:50:58.437Z"
 }

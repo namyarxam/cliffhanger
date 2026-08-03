@@ -34,7 +34,7 @@
         },
         {
           "label": "S1 · The diary and the throat",
-          "text": "Vanya kills Leonard after finding Reginald's diary and learning her father hid her powers her whole life; in a rage she then slashes Allison's throat.",
+          "text": "Vanya slashes Allison's throat with her power after Allison confesses Reginald had her rumored ordinary; later she finds Reginald's diary and kills Leonard in a rage.",
           "anchorEpisode": 9,
           "whyLoadBearing": "Explains why Allison is mute at the start of S2 and why the sibling trust in Vanya is broken going into the finale — and into every rebuild after.",
           "needsVerify": false
@@ -172,7 +172,7 @@
         },
         {
           "name": "Diego",
-          "line": "Just left Lila, whom he loved and who turned out to be Commission; also learned Reginald is an alien and is looking for a fight."
+          "line": "Just left Lila, whom he loved and who turned out to be Commission."
         },
         {
           "name": "Allison",
@@ -267,7 +267,7 @@
       "characters": [
         {
           "name": "Number Five",
-          "line": "Arm regrown by the reset; still 13-bodied and now the only one who knows Allison cut a private deal with Reginald at the end."
+          "line": "Arm regrown by the reset; still 13-bodied and the one who first exposed Allison's private deal with Reginald."
         },
         {
           "name": "Luther",
@@ -279,7 +279,7 @@
         },
         {
           "name": "Allison",
-          "line": "Reunited with Claire and Ray thanks to her secret deal with Reginald; the family doesn't yet know the price was Luther's life."
+          "line": "Reunited with Claire and Ray thanks to her secret deal with Reginald; by season's end Viktor knows about the deal."
         },
         {
           "name": "Klaus",
@@ -386,7 +386,7 @@
         },
         {
           "name": "Klaus",
-          "line": "Sober germaphobe who never regained his powers this season; was tortured by his old dealer Quinn for being immortal before the finale."
+          "line": "Sober germaphobe who initially skipped the marigold saké but was dosed by Ben to save his life; later tortured by his old dealer Quinn after Quinn discovered his immortality."
         },
         {
           "name": "Viktor",
@@ -410,5 +410,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:48:44.925Z"
 }

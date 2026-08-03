@@ -230,7 +230,7 @@
         },
         {
           "label": "S3 · Peia and the blood",
-          "text": "The masked figure is Bruno's wife Peia, a powered killer now dying herself; Bruno steals doses of Superman's blood from the DOD to try to cure her.",
+          "text": "The masked figure is Bruno's wife Peia, a powered killer now dying herself; Bruno uses the Inverse Superman's body to try to make a cure for her.",
           "anchorEpisode": 7,
           "whyLoadBearing": "Recasts Bruno as a husband trying to save his wife, not a mustache-twirl villain — and sets up the Kryptonian-blood infrastructure Lex inherits.",
           "needsVerify": false
@@ -279,7 +279,7 @@
         },
         {
           "name": "Lois Lane",
-          "line": "Post-mastectomy and cancer-free; her article on Boss Moxie is now the reason Lex is out."
+          "line": "Post-mastectomy and cancer-free; the group's discovery that Bruno framed Lex for Moxie's death is now the reason Lex is out."
         },
         {
           "name": "Jordan Kent",
@@ -351,7 +351,7 @@
         },
         {
           "label": "S4 · Coming out",
-          "text": "Under relentless Luthor pressure, Clark goes to Jimmy Olsen at the Daily Planet and publicly reveals that he is Superman.",
+          "text": "Under relentless Luthor pressure, Clark sits for a Daily Planet interview with Janet Olsen and publicly reveals that he is Superman.",
           "anchorEpisode": 7,
           "whyLoadBearing": "The show's biggest permanent status change — the mask comes off — and closes the two-lives premise the whole series ran on.",
           "needsVerify": false
@@ -422,5 +422,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:30:18.113Z"
 }

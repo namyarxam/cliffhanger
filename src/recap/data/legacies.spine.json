@@ -97,7 +97,7 @@
         },
         {
           "name": "The Necromancer",
-          "line": "Undead spellcaster who raises the dead; last seen closing the Malivore portal from behind."
+          "line": "Undead spellcaster who raises the dead; last seen captured and interrogated by Alaric."
         }
       ]
     },
@@ -253,7 +253,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "The Landon everyone welcomed home was actually Malivore wearing his face. Malivore has now revealed himself, taken Cleo, and demands his supernatural children back — and Hope, Alaric and the Super Squad have no plan.",
+        "text": "The Landon everyone welcomed home was actually Malivore wearing his face. Malivore has now revealed himself and taken Cleo — and when the Super Squad demand their friends back, he replies there is something he wants too.",
         "questions": [
           "Where is the real Landon, and is he still alive inside Malivore?",
           "Can Hope defeat Malivore without dying to complete her tribrid transition?",
@@ -342,7 +342,7 @@
         },
         {
           "label": "S4 · The Cost of the Battle",
-          "text": "In the final battle Ken triggers the werewolf curses across the school; Jed, MG, Kaleb and Ethan die. Landon, now the Ferryman of Limbo, resurrects them at the cost of his empathy.",
+          "text": "In the final battle Ken triggers the werewolf curses across the school; Jed, MG and Kaleb die. Landon, now the Ferryman of Limbo, resurrects them at the cost of his empathy.",
           "anchorEpisode": 19,
           "whyLoadBearing": "The deaths and their reversal define Landon's ending and the price of victory.",
           "needsVerify": false
@@ -402,5 +402,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:22:36.362Z"
 }

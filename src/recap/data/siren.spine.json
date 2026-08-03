@@ -135,14 +135,14 @@
         },
         {
           "label": "S2 · A hybrid pregnancy",
-          "text": "With merpeople no longer able to conceive in the sea, Ryn's embryo is fertilised by Bryan and implanted in his mate Leena to be carried on land.",
+          "text": "With merpeople no longer able to conceive in the sea, Ryn's embryo is fertilised by Bryan and implanted in a surrogate, Meredith, to give Bryan and Leela a child.",
           "anchorEpisode": 16,
           "whyLoadBearing": "Sets up the pregnancy that produces Hope, the emotional core of season 3.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "Ryn's child is growing inside the hybrid Leena, Ben is now a killer keeping that secret from Maddie, and Ted Pownall is haunted by memories he cannot yet let himself believe.",
+        "text": "Ryn's child is growing inside the surrogate Meredith, Ben is now a killer keeping that secret from Maddie, and Ted Pownall is haunted by memories he cannot yet let himself believe.",
         "questions": [
           "Will Maddie discover what Ben did to Ian?",
           "Will the hybrid pregnancy actually produce a viable child?",
@@ -180,7 +180,7 @@
         },
         {
           "name": "Bryan and Leena",
-          "line": "Hybrid couple who agreed to carry Ryn and Bryan's embryo when merpeople could no longer conceive at sea."
+          "line": "Hybrid couple who are given a merperson child via Ryn's embryo, carried by a surrogate when merpeople could no longer conceive at sea."
         }
       ]
     },
@@ -223,7 +223,7 @@
         },
         {
           "label": "S3 · The song poisons the town",
-          "text": "Tia broadcasts a weaponised siren song by phone; Ted Pownall is among the townspeople it kills before Robb's colony delivers a cure.",
+          "text": "Tia broadcasts a weaponised siren song by phone; Maddie's stepfather Dale is among the townspeople it kills before Robb's colony delivers a cure.",
           "anchorEpisode": 10,
           "whyLoadBearing": "Kills Ted and demonstrates the scale of Tia's threat before the final fight.",
           "needsVerify": false
@@ -275,5 +275,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:27:28.800Z"
 }

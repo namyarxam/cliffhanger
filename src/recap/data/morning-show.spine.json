@@ -85,7 +85,7 @@
         },
         {
           "name": "Laura Peterson",
-          "line": "NBN anchor whose brief romance with Bradley detonated when Cory outed them live on TMS."
+          "line": "UBA anchor whose brief romance with Bradley detonated when Cory outed them live on TMS."
         },
         {
           "name": "Hal Jackson",
@@ -97,7 +97,7 @@
         },
         {
           "name": "Mia Jordan",
-          "line": "TMS producer, still bruised by the documentary that surfaced her past with Mitch."
+          "line": "TMS producer."
         },
         {
           "name": "Yanko Flores",
@@ -213,7 +213,7 @@
       "beats": [
         {
           "label": "S3 · The defection and the deepfake",
-          "text": "Two years later, UBA and NBN have merged. Alex helps an Iranian fencer defect on-air; a leaked deepfake threatens to burn her for it.",
+          "text": "Two years later, UBA is now part of the newly-merged UBN network. Alex helps an Iranian fencer defect on-air; a leaked deepfake threatens to burn her for it.",
           "anchorEpisode": 1,
           "whyLoadBearing": "The deepfake plant is the first move by the season's real antagonist and hangs over every UBN decision that follows.",
           "needsVerify": false
@@ -313,5 +313,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-02T23:48:29.460Z"
 }

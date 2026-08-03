@@ -131,14 +131,14 @@
         },
         {
           "label": "S2 · Losses in the wings",
-          "text": "Sydney has a panic attack but is comforted by her father; Marcus misses calls that his mother has died back home in Chicago.",
+          "text": "Sydney has a panic attack but is comforted by her father; Marcus misses calls from his mother's caretaker as a gift from Luca arrives from Copenhagen.",
           "anchorEpisode": 10,
           "whyLoadBearing": "Both threads open the next season — Sydney's father as her anchor, and Marcus's grief as the tone-setter of season three.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "The Bear has opened, but its first service has broken Carmy's relationship with Claire and detonated his relationship with Richie. Marcus doesn't yet know his mother has died, and Cicero's 18-month loan clock is ticking.",
+        "text": "The Bear has opened, but its first service has broken Carmy's relationship with Claire and detonated his relationship with Richie. Marcus's mother's caretaker is calling and he isn't answering, and Cicero's 18-month loan clock is ticking.",
         "questions": [
           "Can The Bear actually operate as a real restaurant, or was this a preview of ongoing chaos?",
           "Is Carmy's relationship with Claire — and with Richie — salvageable after the walk-in?",
@@ -164,7 +164,7 @@
         },
         {
           "name": "Marcus",
-          "line": "Pastry chef who trained in Copenhagen under Luca and returned to Chicago just as calls came that his mother had died back home."
+          "line": "Pastry chef who trained in Copenhagen under Luca and returned to Chicago while his terminally ill mother's caretaker keeps calling."
         },
         {
           "name": "Claire",
@@ -312,7 +312,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Cicero's countdown clock has reached zero. Carmy has quit not just The Bear but cooking entirely, quietly handing the restaurant to Sydney, Natalie and Cicero — with Sydney made lead partner while she still holds an unrevealed offer from Adam Shapiro.",
+        "text": "Cicero's countdown clock has reached zero. Carmy has quit not just The Bear but cooking entirely, quietly handing the restaurant to Sydney, Natalie and Cicero — with Sydney made lead partner after turning down Adam Shapiro's offer to stay.",
         "questions": [
           "Can Sydney run The Bear without Carmy — and does she even want to?",
           "With the countdown expired, is the restaurant already dead on the numbers?",
@@ -433,5 +433,6 @@
     "cicero",
     "ever",
     "michelin"
-  ]
+  ],
+  "repairedAt": "2026-08-03T00:34:23.389Z"
 }

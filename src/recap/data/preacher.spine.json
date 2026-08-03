@@ -168,7 +168,7 @@
         },
         {
           "name": "Lara Featherstone",
-          "line": "Grail agent who spent the season embedded next door to the trio, and the one who pulled the trigger on Tulip."
+          "line": "Grail agent who spent the season embedded next door to the trio, feeding Herr Starr's play against Jesse from inside his life."
         },
         {
           "name": "Humperdoo",
@@ -227,7 +227,7 @@
         },
         {
           "label": "S3 · Angelville burns",
-          "text": "Jesse kills Jody, torches the Tombs, and forces Gran'ma to release him and Tulip from her spells before she dies of it.",
+          "text": "Jesse kills Jody, torches the Tombs, and forces Gran'ma to release him and Tulip from her spells.",
           "anchorEpisode": 10,
           "whyLoadBearing": "Frees Jesse from the family that has constrained him all season and puts him back on the offensive.",
           "needsVerify": false
@@ -263,7 +263,7 @@
         },
         {
           "name": "Herr Starr",
-          "line": "The Grail's new Allfather, plotting Apocalypse with Humperdoo as the coming Messiah."
+          "line": "The Grail's Herr Starr, plotting Apocalypse with Humperdoo as the coming Messiah."
         },
         {
           "name": "Lara Featherstone",
@@ -390,5 +390,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:26:15.746Z"
 }

@@ -13,7 +13,7 @@
         },
         {
           "label": "S1 · Andy moves in",
-          "text": "Judah's slacker brother Andy shows up uninvited from Alaska, and quietly becomes the household's stabilising presence and Nancy's closest confidant.",
+          "text": "Judah's slacker brother Andy shows up uninvited from Alaska, and his chaotic streak nearly gets him thrown out before Nancy grudgingly lets him stay.",
           "anchorEpisode": 4,
           "whyLoadBearing": "Andy is now core family — every future season depends on him being embedded here.",
           "needsVerify": false
@@ -69,7 +69,7 @@
         },
         {
           "name": "Andy Botwin",
-          "line": "Judah's slacker brother who moved in uninvited and quietly became a second parent to Silas and Shane."
+          "line": "Judah's slacker brother who moved in uninvited and drifts through the household causing chaos."
         },
         {
           "name": "Silas Botwin",
@@ -192,7 +192,7 @@
         },
         {
           "name": "Doug Wilson",
-          "line": "Lost his council seat to Celia; having an affair with her and kicked out by wife Dana."
+          "line": "Lost his council seat to Celia; having an affair with her and kicked out by Dean after Celia confessed."
         },
         {
           "name": "Peter Scottson",
@@ -791,5 +791,5 @@
       ]
     }
   },
-  "repairedAt": "2026-07-27T06:57:12.444Z"
+  "repairedAt": "2026-08-03T00:09:47.731Z"
 }

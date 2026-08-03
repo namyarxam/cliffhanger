@@ -34,7 +34,7 @@
         },
         {
           "label": "S1 · The Brawl",
-          "text": "A hallway brawl with the North Bay Norsemen goes viral; the NOSHO tribunal awards Sudbury the forfeit and warns Nat to control her players.",
+          "text": "A hallway brawl with the North Bay Norsemen erupts; the NOSHO tribunal awards Sudbury the forfeit and warns Nat to control her players.",
           "anchorEpisode": 5,
           "whyLoadBearing": "Cements the Bulldogs' outlaw identity and shows the tribunal as a recurring gatekeeper.",
           "needsVerify": false
@@ -73,7 +73,7 @@
         },
         {
           "name": "Sanguinet",
-          "line": "New player-coach; the reason Michaels was originally fired, having slept with Michaels' girlfriend."
+          "line": "New player-coach; slept with Michaels' girlfriend, deepening the rift after Michaels was fired for the loss."
         },
         {
           "name": "Michaels",
@@ -158,7 +158,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "The Bulldogs have finished the regular season undefeated and secured Sudbury as host of the National Senior Tournament. The NOSHO playoffs against the Hunt are next, and Shoresy is finally in something with Laura.",
+        "text": "The Bulldogs have finished the regular season undefeated and secured Sudbury as host of the National Senior Tournament. Shoresy is finally in something with Laura.",
         "questions": [
           "Can Sudbury beat the Hunt when it counts most?",
           "Will Shoresy's punishing pace on his own body catch up with him?",
@@ -481,5 +481,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:00:36.369Z"
 }

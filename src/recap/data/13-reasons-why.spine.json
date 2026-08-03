@@ -55,7 +55,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "The Bakers' trial has just begun and everything is in motion at once: Alex is bleeding out in critical condition, Jessica has finally named her rapist to her cop father, and Tyler is quietly assembling an arsenal.",
+        "text": "The Bakers' trial has just begun and everything is in motion at once: Alex is in critical condition with a gunshot wound, Jessica has finally told her father about her rape, and Tyler is quietly assembling an arsenal.",
         "questions": [
           "Will the tapes and Bryce's recorded confession actually surface in court?",
           "Will Alex survive, and if he does, does he still remember any of it?",
@@ -85,7 +85,7 @@
         },
         {
           "name": "Alex Standall",
-          "line": "Shot himself in the head under the weight of his part in Hannah's death; in critical condition at the hospital."
+          "line": "In critical condition at the hospital with a gunshot wound to the head."
         },
         {
           "name": "Tyler Down",
@@ -299,7 +299,7 @@
         },
         {
           "name": "Tyler Down",
-          "line": "Recovering from Monty's assault; the illegal weapons he never gave up have just surfaced in the river."
+          "line": "Recovering from Monty's assault; the group dumped his weapons in the river at Spring Fling."
         },
         {
           "name": "Monty de la Cruz",
@@ -411,5 +411,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-01T16:16:11.958Z"
+  "repairedAt": "2026-08-02T23:44:06.311Z"
 }

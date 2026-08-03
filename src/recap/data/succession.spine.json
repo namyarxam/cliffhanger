@@ -176,7 +176,7 @@
         },
         {
           "name": "Tom Wambsgans",
-          "line": "Shiv's husband, floundering alongside Kendall at the Senate hearings and increasingly bitter about his wife's ambitions."
+          "line": "Shiv's husband, floundering at the Senate hearings alongside Gerri and increasingly bitter about his wife's ambitions."
         },
         {
           "name": "Greg Hirsch",
@@ -290,7 +290,7 @@
         },
         {
           "label": "S4 · Logan dies",
-          "text": "Flying to Sweden to close the GoJo deal, Logan collapses on his plane and dies. The siblings receive the news mid-flight to Connor's wedding.",
+          "text": "On the day of Connor's wedding in New York, Logan flies to Sweden to close the GoJo deal. He collapses on the plane and dies; the siblings get the news at the wedding.",
           "anchorEpisode": 3,
           "whyLoadBearing": "The central event of the series: Waystar's animating force disappears and the succession fight becomes real for the first time.",
           "needsVerify": false
@@ -374,5 +374,6 @@
   "notPeople": [
     "president",
     "waystar"
-  ]
+  ],
+  "repairedAt": "2026-08-03T00:28:59.255Z"
 }

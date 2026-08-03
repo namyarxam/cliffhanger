@@ -27,7 +27,7 @@
         },
         {
           "label": "S1 · Jim, Maggie, Don",
-          "text": "Mac pushes Jim toward Maggie despite Maggie dating Don. Jim's feelings deepen and Maggie films a confession to him, which someone posts online.",
+          "text": "Mac pushes Jim toward Maggie despite Maggie dating Don, and Jim's feelings deepen.",
           "anchorEpisode": 10,
           "whyLoadBearing": "The leaked video is the trigger for the S2 Don–Maggie breakup and for Jim fleeing to the Romney bus.",
           "needsVerify": false
@@ -55,7 +55,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "News Night has survived Leona's attempt to end it, but Will and Mac are still not reconciled, and Maggie's on-camera confession of love for Jim has just leaked online while she is still dating Don.",
+        "text": "News Night has survived Leona's attempt to end it, but the threat was only defused when it emerged that TMI got its dirt by hacking Mac's voicemail — and Will and Mac are still not reconciled.",
         "questions": [
           "Can Will and Mac ever move past her infidelity?",
           "What happens to Maggie and Don once the video reaches them?",
@@ -81,11 +81,11 @@
         },
         {
           "name": "Maggie Jordan",
-          "line": "Promoted from Will's assistant to associate producer; dating Don, but her filmed confession of feelings for Jim is now online."
+          "line": "Promoted from Will's assistant to associate producer; dating Don."
         },
         {
           "name": "Don Keefer",
-          "line": "Former News Night EP, now runs ACN's 10pm show; dating Maggie, and about to find out about the video."
+          "line": "Former News Night EP, now runs ACN's 10pm show; dating Maggie."
         },
         {
           "name": "Sloan Sabbith",
@@ -307,5 +307,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:35:22.949Z"
 }

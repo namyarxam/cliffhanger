@@ -48,14 +48,14 @@
         },
         {
           "label": "S1 · Lamb killed Partner",
-          "text": "A flashback shows Lamb killed his old friend Charles Partner, then MI5's DG and a Soviet asset, on David Cartwright's orders. Roddy hints Sid Baker may still be alive.",
+          "text": "A flashback shows Lamb killed his old friend Charles Partner, then MI5's DG, on David Cartwright's orders after foreign blackmail. Roddy hints Sid Baker may still be alive.",
           "anchorEpisode": 6,
           "whyLoadBearing": "Opens the Partner/Standish/David past that will drive later seasons; keeps Sid's fate live.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "Slough House survives via mutual blackmail with Taverner rather than any real victory. Sid's records have been quietly erased, hinting she may still be alive somewhere, and Standish has just learned that Lamb personally killed her old friend Charles Partner.",
+        "text": "Slough House survives via mutual blackmail with Taverner rather than any real victory. Sid's records have been quietly erased, hinting she may still be alive somewhere, and Standish has just learned that Lamb gave her old friend Charles Partner the gun he used to kill himself.",
         "questions": [
           "Will Taverner strike back once the blackmail loses its bite?",
           "Is Sid Baker really alive, and where has MI5 hidden her?",
@@ -73,7 +73,7 @@
         },
         {
           "name": "Catherine Standish",
-          "line": "Lamb's clean, recovering-alcoholic assistant who once served Partner and now knows Lamb killed him."
+          "line": "Lamb's clean, recovering-alcoholic assistant who once served Partner and believes Lamb gave him the gun he used to kill himself."
         },
         {
           "name": "Diana Taverner",
@@ -521,5 +521,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:02:55.343Z"
 }

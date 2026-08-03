@@ -192,7 +192,7 @@
         },
         {
           "name": "Yolanda Montez",
-          "line": "Quit the JSA and refused the Wildcat mantle; still living apart from her mother."
+          "line": "Briefly quit the JSA over her guilt about killing Brainwave, but returned by season's end."
         },
         {
           "name": "Rick Tyler / Hourman",
@@ -240,7 +240,7 @@
         },
         {
           "label": "S3 · The Mahkent bloodline",
-          "text": "A skin cell clears Cindy but the camera signal traces to the Mahkent house, revealing Cameron's grandparents Lily and Sofus share his family's cryokinetic powers.",
+          "text": "A skin cell first implicates Cindy, but the camera signal traces to the Mahkent house, revealing Cameron's grandparents Lily and Sofus share his family's cryokinetic powers.",
           "anchorEpisode": 9,
           "whyLoadBearing": "Reframes the season: the Mahkents were the local threat all along, and Cameron is caught between sides.",
           "needsVerify": false
@@ -275,7 +275,7 @@
         },
         {
           "name": "Pat Dugan / S.T.R.I.P.E.",
-          "line": "Nearly killed by his oldest friend's stolen body; keeps the real Sylvester's brain on life support."
+          "line": "Nearly killed by his oldest friend's stolen body; keeps Sylvester's body on life support."
         },
         {
           "name": "Sylvester Pemberton / Starman",
@@ -295,7 +295,7 @@
         },
         {
           "name": "Rick Tyler / Hourman",
-          "line": "Broke his hourglass addiction after nearly killing his uncle; engaged to Beth."
+          "line": "Struggled with hourglass addiction after removing its limiter; apologizes to Beth's family and later gets engaged to her."
         },
         {
           "name": "Artemis Crock",
@@ -311,5 +311,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:16:41.378Z"
 }

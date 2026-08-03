@@ -65,11 +65,11 @@
       "characters": [
         {
           "name": "Alvin Murphy",
-          "line": "The only known survivor of the zombie vaccine trial; his blood is humanity's shot at a cure, and he has discovered he can command zombies and control humans by biting or spitting on them."
+          "line": "Immune to the zombie virus and humanity's shot at a cure; he has discovered he can command zombies and control humans by biting or spitting on them."
         },
         {
           "name": "Roberta Warren",
-          "line": "Former National Guard, now leader of the escort team after Garnett's death; determined to complete the mission at any cost."
+          "line": "Leader of the escort team after Garnett's death; determined to complete the mission at any cost."
         },
         {
           "name": "Doc",
@@ -115,7 +115,7 @@
         },
         {
           "label": "S2 · A hybrid daughter",
-          "text": "Murphy fathers a hybrid child with Serena, who dies giving birth. Fearing the team, he bites a couple in an isolated home and leaves the baby with them.",
+          "text": "Murphy fathers a hybrid child with Serena, who is bitten and shot by Warren after the birth. Fearing the team, he bites a couple in an isolated home and leaves the baby with them.",
           "anchorEpisode": 6,
           "whyLoadBearing": "Introduces a child whose existence is important to the final image of the season and marks Murphy's break from the group.",
           "needsVerify": false
@@ -196,5 +196,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:12:01.905Z"
 }

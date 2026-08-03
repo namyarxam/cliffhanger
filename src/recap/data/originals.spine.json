@@ -148,7 +148,7 @@
         },
         {
           "label": "S2 · Rebekah's borrowed body",
-          "text": "Rebekah's soul is placed in a witch's body to escape a hex. Hope is finally home with Klaus and Hayley — but Hayley must live in the cursed pack, apart from Elijah.",
+          "text": "Kol betrays Rebekah, placing her soul in a witch's body. Hope is finally home with Klaus and Hayley — but Hayley must live in the cursed pack, apart from Elijah.",
           "anchorEpisode": 22,
           "whyLoadBearing": "The state everyone starts Season 3 in: a Rebekah in a stranger, a family reunited but not whole.",
           "needsVerify": false
@@ -165,7 +165,7 @@
       "characters": [
         {
           "name": "Klaus Mikaelson",
-          "line": "Original hybrid, now father to Hope, who has killed both of his parents in the span of a season."
+          "line": "Original hybrid, now father to Hope, who has killed his own father this season to protect her."
         },
         {
           "name": "Elijah Mikaelson",
@@ -224,7 +224,7 @@
         },
         {
           "label": "S3 · The Strix move",
-          "text": "Tristan's ancient vampire society the Strix moves against the Mikaelsons; the family scrambles to break their sirelines before a weapon can wipe them out.",
+          "text": "Tristan's ancient vampire society the Strix moves against the Mikaelsons, plotting to break the sirelines with a weapon that could wipe them out.",
           "anchorEpisode": 4,
           "whyLoadBearing": "Escalates the threat and sets up the sireline break that later isolates Klaus.",
           "needsVerify": false
@@ -513,5 +513,5 @@
       ]
     }
   },
-  "repairedAt": "2026-07-27T06:59:38.451Z"
+  "repairedAt": "2026-08-02T23:51:18.859Z"
 }

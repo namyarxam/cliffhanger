@@ -48,7 +48,7 @@
         },
         {
           "label": "S1 · Three rings, one lie",
-          "text": "Recovering in Eregion, Halbrand shapes Celebrimbor's forge; Galadriel unmasks him as Sauron too late — three Elven Rings are already forged.",
+          "text": "Recovering in Eregion, Halbrand shapes Celebrimbor's forge; Galadriel unmasks him as Sauron but lets the work continue — three Rings of Power are forged.",
           "anchorEpisode": 8,
           "whyLoadBearing": "The rings exist and their maker's ally is the Dark Lord — the secret Galadriel now carries alone.",
           "needsVerify": false
@@ -130,7 +130,7 @@
         },
         {
           "label": "S2 · Númenor turns",
-          "text": "In Númenor, Ar-Pharazôn seizes the throne after learning Sauron manipulated Míriel; the Faithful are persecuted, Elendil is arrested, and Pelargir taken as a military outpost.",
+          "text": "In Númenor, Ar-Pharazôn takes the throne and cracks down on the Faithful; Elendil is arrested, and Pelargir is taken as a military outpost.",
           "anchorEpisode": 8,
           "whyLoadBearing": "Númenor flips from potential ally to hostile power — a whole front the Elves can no longer count on.",
           "needsVerify": false
@@ -172,7 +172,7 @@
         },
         {
           "name": "Galadriel",
-          "line": "Bearer of Nenya; captured by Adar, freed by Arondir, briefly carried the nine before Sauron took them from Elrond."
+          "line": "Bearer of Nenya; captured by Adar, freed by Arondir, briefly carried the nine before Sauron took them from her."
         },
         {
           "name": "Elrond",
@@ -208,5 +208,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-02T23:45:19.635Z"
 }

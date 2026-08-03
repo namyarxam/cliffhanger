@@ -523,14 +523,14 @@
         },
         {
           "label": "S6 · The purge",
-          "text": "Six weeks later President Keane is arresting hundreds of intelligence officials in retaliation; Saul is among them, and Carrie sees the woman she installed has turned.",
+          "text": "Six weeks later President Keane is arresting dozens of intelligence officials in retaliation; Saul is among them, and Carrie sees the woman she installed has turned.",
           "anchorEpisode": 12,
           "whyLoadBearing": "Flips Keane from ally to threat and sets the exact conflict of season 7.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "Keane has survived assassination and taken office, but Carrie watches her jail Saul and hundreds of other officials without cause. Quinn is dead. The alliance that put Keane in power has just broken.",
+        "text": "Keane has survived assassination and taken office, but Carrie watches her jail Saul and dozens of other officials without cause. Quinn is dead. The alliance that put Keane in power has just broken.",
         "questions": [
           "How far will Keane's purge of the intelligence community go?",
           "Can Carrie work against a president she personally saved?",
@@ -544,7 +544,7 @@
         },
         {
           "name": "Saul Berenson",
-          "line": "Cleared Dar Adal's conspiracy for Keane; now among the hundreds she has had arrested."
+          "line": "Cleared Dar Adal's conspiracy for Keane; now among the dozens she has had arrested."
         },
         {
           "name": "Peter Quinn",
@@ -763,5 +763,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:21:29.591Z"
 }

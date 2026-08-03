@@ -55,7 +55,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "The William secret has just cracked open and reset the Pearsons: Randall has walked away from his career, Kevin is heading to LA with Sophie, Kate is chasing music with Toby, and no one has yet said how Jack died.",
+        "text": "The William secret has just cracked open and reset the Pearsons: Randall has walked away from his career, Kevin is heading off to meet Ron Howard, Kate is chasing music with Toby, and no one has yet said how Jack died.",
         "questions": [
           "How did Jack die?",
           "What child will Randall bring into the family?",
@@ -411,7 +411,7 @@
       "beats": [
         {
           "label": "S5 · Turning 40 in lockdown",
-          "text": "The Big Three turn 40 in pandemic lockdown; Kevin is sober and engaged to pregnant Madison, while Rebecca's cognitive decline continues under the trial.",
+          "text": "The Big Three turn 40 in pandemic lockdown; Kevin is sober and engaged to pregnant Madison.",
           "anchorEpisode": 1,
           "whyLoadBearing": "Anchors the season in COVID and sets Kevin/Madison's engagement as the arc to watch.",
           "needsVerify": false
@@ -490,7 +490,7 @@
         },
         {
           "name": "Beth Pearson",
-          "line": "Running her dance studio through the pandemic."
+          "line": "Her dance studio shuts down during the pandemic."
         },
         {
           "name": "Madison",
@@ -617,5 +617,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:36:35.433Z"
 }

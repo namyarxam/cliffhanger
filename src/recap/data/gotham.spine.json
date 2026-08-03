@@ -27,7 +27,7 @@
         },
         {
           "label": "S1 · Barbara breaks",
-          "text": "Barbara Kean's engagement to Gordon collapses under Cobblepot's shadow and her own addiction; she murders her parents and is committed to Arkham.",
+          "text": "Barbara Kean's engagement to Gordon collapses under Cobblepot's shadow and her own addiction; she murders her parents and attacks Lee, who neutralizes her.",
           "anchorEpisode": 21,
           "whyLoadBearing": "The point at which Gordon's ex becomes a Gotham villain in waiting.",
           "needsVerify": false
@@ -89,7 +89,7 @@
         },
         {
           "name": "Barbara Kean",
-          "line": "Gordon's unstable ex-fiancée, freshly committed to Arkham after murdering her parents."
+          "line": "Gordon's unstable ex-fiancée, who murdered her parents and was neutralized by Lee after attacking her."
         },
         {
           "name": "Edward Nygma",
@@ -218,7 +218,7 @@
         },
         {
           "label": "S3 · The Tetch virus",
-          "text": "Jervis Tetch's poisoned blood infects Captain Barnes with a virus that drives its victims into homicidal rage — the season's ticking bomb.",
+          "text": "Alice Tetch's blood infects Captain Barnes with a virus that drives its victims into homicidal rage — the season's ticking bomb.",
           "anchorEpisode": 4,
           "whyLoadBearing": "The weapon the season's real villains will eventually unleash on Gotham.",
           "needsVerify": false
@@ -342,7 +342,7 @@
         },
         {
           "label": "S4 · Enter Jeremiah Valeska",
-          "text": "Jerome Valeska returns, terrorises Gotham, and dies revealing an estranged twin, Jeremiah; his final act doses Jeremiah with fear toxin, birthing a colder maniac.",
+          "text": "Jerome Valeska returns, terrorises Gotham, and dies revealing an estranged twin, Jeremiah; his final act doses Jeremiah with laughing gas, birthing a colder maniac.",
           "anchorEpisode": 18,
           "whyLoadBearing": "Delivers the archnemesis who defines what remains of the show.",
           "needsVerify": false
@@ -431,7 +431,7 @@
         },
         {
           "label": "S5 · Bane and Nyssa revealed",
-          "text": "The chip's puppeteer is Eduardo Dorrance, a soldier turned into venom-boosted Bane by 'Theresa Walker' — Ra's al Ghul's daughter Nyssa, out to punish Gordon.",
+          "text": "The chip's puppeteer is Eduardo Dorrance, a soldier turned into venom-boosted Bane by 'Theresa Walker' — Ra's al Ghul's daughter Nyssa, out to punish Bruce for killing her father.",
           "anchorEpisode": 10,
           "whyLoadBearing": "Names the season's real antagonists and their motive.",
           "needsVerify": false
@@ -505,5 +505,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:42:50.171Z"
 }

@@ -55,7 +55,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "AFC Richmond have been relegated to the Championship despite Ted's culture change; Ted and Rebecca have committed to earning promotion next season and eventually winning the Premier League. Roy's knee has ended his playing career and he has just kissed Keeley for the first time.",
+        "text": "AFC Richmond have been relegated to the Championship despite Ted's culture change; Ted and Rebecca have committed to earning promotion next season and eventually winning the Premier League. Roy has just injured his knee in the final match and kissed Keeley for the first time.",
         "questions": [
           "Can Ted's American methods actually produce results without Roy or Jamie on the pitch?",
           "What does Rupert do next, now that his fiancée Bex owns minority shares and a baby is on the way?",
@@ -73,11 +73,11 @@
         },
         {
           "name": "Rupert Mannion",
-          "line": "Rebecca's charming, ruthless ex-husband, remarried to Bex with a baby coming and still working to hurt Rebecca."
+          "line": "Rebecca's charming, ruthless ex-husband, engaged to Bex with a baby coming and still working to hurt Rebecca."
         },
         {
           "name": "Roy Kent",
-          "line": "Grizzled captain whose knee blew out in the final match, forcing retirement — and who just started dating Keeley."
+          "line": "Grizzled captain who injured his knee in the final match — and who just started dating Keeley."
         },
         {
           "name": "Keeley Jones",
@@ -85,7 +85,7 @@
         },
         {
           "name": "Jamie Tartt",
-          "line": "Arrogant striker Ted benched, returned to Manchester City, and who just scored the goal that relegated Richmond."
+          "line": "Arrogant striker Ted benched, returned to Manchester City, and who just assisted the goal that relegated Richmond."
         },
         {
           "name": "Coach Beard",
@@ -307,5 +307,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:32:57.850Z"
 }

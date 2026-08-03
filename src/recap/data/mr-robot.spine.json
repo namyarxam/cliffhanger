@@ -138,7 +138,7 @@
         },
         {
           "label": "S2 · Whiterose takes Angela",
-          "text": "Whiterose abducts Angela and, in one strange conversation, converts her: Angela now believes Whiterose can literally undo the deaths of their parents.",
+          "text": "Whiterose abducts Angela and, in one strange conversation, converts her: Angela now believes their parents died for a greater good.",
           "anchorEpisode": 11,
           "whyLoadBearing": "Angela's belief in this promise is what drives her S3 collaboration with Mr. Robot and her S4 death.",
           "needsVerify": false
@@ -174,7 +174,7 @@
         },
         {
           "name": "Angela Moss",
-          "line": "Personally converted by Whiterose; secretly working with Mr. Robot in the belief the plan will resurrect their parents."
+          "line": "Personally converted by Whiterose; believes the plan is worth the cost her mother and Elliot's father paid."
         },
         {
           "name": "Tyrell Wellick",
@@ -285,11 +285,11 @@
         },
         {
           "name": "Phillip Price",
-          "line": "Ruined and pushed out by Whiterose; just revealed as Angela's real father and now actively working against Whiterose through Elliot."
+          "line": "Ruined and pushed out by Whiterose; just revealed as Angela's real father and now working to turn her against Whiterose."
         },
         {
           "name": "Dominique DiPierro",
-          "line": "FBI agent who has learned the Dark Army had agents inside her own Bureau; newly allied with Darlene and Elliot."
+          "line": "FBI agent who has learned the Dark Army had agents inside her own Bureau; forced to become its new mole, at peace with Elliot but refusing Darlene's apology."
         },
         {
           "name": "Vera",
@@ -392,9 +392,10 @@
         },
         {
           "name": "Dominique DiPierro",
-          "line": "Blackmailed by a new Dark Army handler through her family; helped Darlene and Elliot at the end and chose, at the airport, not to run."
+          "line": "Blackmailed by a new Dark Army handler through her family; helped Darlene and Elliot at the end and, at the airport, got on the plane for a fresh start."
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:45:57.117Z"
 }

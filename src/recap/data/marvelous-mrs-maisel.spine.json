@@ -143,7 +143,7 @@
         },
         {
           "label": "S2 · Shy tour, Joel bed",
-          "text": "Singing star Shy Baldwin hires Midge as his opening act for six months; the night before the tour she quietly ends things with Benjamin and sleeps with Joel.",
+          "text": "Singing star Shy Baldwin hires Midge as his opening act for six months; after a dejected night out she spends the night with Joel.",
           "anchorEpisode": 10,
           "whyLoadBearing": "Sets up S3's tour, cuts Benjamin loose, and reopens Joel — three threads at once.",
           "needsVerify": false
@@ -180,7 +180,7 @@
         },
         {
           "name": "Benjamin Ettenberg",
-          "line": "The doctor Midge dated; got Abe's blessing to propose and does not yet know she has left with Shy."
+          "line": "The doctor Midge dated; has asked Abe's consent to propose but Abe is still requiring his personal details before agreeing."
         },
         {
           "name": "Shy Baldwin",
@@ -366,7 +366,7 @@
         },
         {
           "name": "Joel Maisel",
-          "line": "Successful club owner and Midge's court-appointed financial custodian; expecting a child with Mei."
+          "line": "Successful club owner who Susie has arranged to handle Midge's finances; expecting a child with Mei."
         },
         {
           "name": "Mei Lin",
@@ -489,5 +489,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-02T23:46:49.409Z"
 }

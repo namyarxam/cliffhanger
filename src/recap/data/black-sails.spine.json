@@ -34,7 +34,7 @@
         },
         {
           "label": "S1 · Billy overboard",
-          "text": "Billy vanishes off the Walrus after confronting the letter; Flint tells the crew he fell, and no one else can prove otherwise.",
+          "text": "Billy vanishes off the Walrus after the letter surfaces, leaving Flint's secret buried with him.",
           "anchorEpisode": 6,
           "whyLoadBearing": "Removes the one man who could expose Flint and leaves an open thread the next season pays off.",
           "needsVerify": false
@@ -55,7 +55,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "The Walrus is wrecked within sight of the Urca gold and a Spanish garrison. Flint has killed his closest friend to keep the hunt alive, and Nassau's fort now flies Vane's colours.",
+        "text": "The Walrus is wrecked within sight of the Urca gold. Flint has killed his closest friend to keep the hunt alive, and Nassau's fort now flies Vane's colours.",
         "questions": [
           "Can Flint's beaten crew take the Spanish gold before the Royal Navy or the garrison acts?",
           "Will Billy Bones surface again, and does he know what Flint actually did?",
@@ -81,7 +81,7 @@
         },
         {
           "name": "Billy Bones",
-          "line": "Flint's loyal first mate, who found the letter, confronted Flint and vanished at sea.",
+          "line": "Flint's loyal first mate, who found the letter and asked Gates to confront Flint before vanishing at sea.",
           "note": "Fate unknown to the crew."
         },
         {
@@ -98,7 +98,7 @@
         },
         {
           "name": "Miranda Barlow",
-          "line": "Flint's mysterious mainland companion, whose letter to a pardon-seeking clergyman began to expose him."
+          "line": "Flint's mysterious mainland companion, whose letter seeking a pardon for his murderous actions began to expose him."
         }
       ]
     },
@@ -148,7 +148,7 @@
         },
         {
           "label": "S2 · Vane saves Flint",
-          "text": "Vane's crew shells Charles Town, breaks Flint out and murders Ashe; the two former enemies sail home while Rackham quietly lands the Urca gold in Nassau.",
+          "text": "Vane's crew shells Charles Town and breaks Flint out; Flint murders Ashe as they fight their way out, while Rackham quietly lands the Urca gold in Nassau.",
           "anchorEpisode": 10,
           "whyLoadBearing": "Forges the Flint/Vane alliance and hands Rackham the reputation that will define the next season's power struggle.",
           "needsVerify": false
@@ -396,5 +396,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:39:44.977Z"
 }

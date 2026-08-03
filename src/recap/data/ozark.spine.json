@@ -81,7 +81,7 @@
         },
         {
           "name": "Jonah Byrde",
-          "line": "Younger son and the fastest student of Marty's laundering craft; secretly armed and quietly stashing money under a fallback name."
+          "line": "Younger son and the fastest student of Marty's laundering craft; taught to shoot by Buddy and armed with a rifle Tuck bought for him in a straw purchase."
         },
         {
           "name": "Jacob and Darlene Snell",
@@ -156,7 +156,7 @@
       "characters": [
         {
           "name": "Marty Byrde",
-          "line": "Runs the casino for the cartel; has just realised his wife had her own father-in-law Cade killed without telling him."
+          "line": "Runs the casino for the cartel; has just realised his wife had Ruth's father Cade killed without telling him."
         },
         {
           "name": "Wendy Byrde",
@@ -184,7 +184,7 @@
         },
         {
           "name": "Wyatt Langmore",
-          "line": "Ruth's cousin, off to college with Marty's help; still convinced the Byrdes are behind his father and uncle's deaths."
+          "line": "Ruth's cousin, off to college with Marty's help; now knows Ruth killed his father and uncle."
         }
       ]
     },
@@ -386,5 +386,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-02T23:57:26.487Z"
 }

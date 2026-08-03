@@ -366,7 +366,7 @@
         },
         {
           "name": "Roger MacKenzie",
-          "line": "Returned from the Mohawk to a pregnant Brianna; has accepted the child as his own."
+          "line": "Returned from the Mohawk to a new mother Brianna; has accepted the child as his own."
         },
         {
           "name": "Young Ian Murray",
@@ -386,7 +386,7 @@
         },
         {
           "name": "Stephen Bonnet",
-          "line": "Escaped pirate, thief, and Brianna's rapist; still at large with Claire's wedding ring."
+          "line": "Escaped pirate, thief, and Brianna's rapist; still at large."
         },
         {
           "name": "Jocasta Cameron",
@@ -600,7 +600,7 @@
       "beats": [
         {
           "label": "S7 · Wilmington rescue",
-          "text": "In Wilmington Jamie and Ian break Claire out of jail after Tom Christie takes the blame for a killing she committed; Roger begins training for the ministry.",
+          "text": "In Wilmington Jamie and Ian arrive to rescue Claire, but Tom Christie's confession resolves her jailing; Roger begins training for the ministry.",
           "anchorEpisode": 1,
           "whyLoadBearing": "Resolves Claire's arrest through Christie's sacrifice and starts Roger's ministerial path.",
           "needsVerify": false
@@ -806,5 +806,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-02T23:55:43.179Z"
 }

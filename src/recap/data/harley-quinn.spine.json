@@ -27,7 +27,7 @@
         },
         {
           "label": "S1 · Bensonhurst",
-          "text": "Beaten and disowned by her own parents over a bounty on her head, Harley returns to Gotham to save Ivy from the Scarecrow.",
+          "text": "After defeating and disowning her own parents over a bounty on her head, Harley returns to Gotham to save Ivy from the Scarecrow.",
           "anchorEpisode": 10,
           "whyLoadBearing": "Cements Ivy, not blood, as Harley's family — the emotional pivot the finale pays off.",
           "needsVerify": false
@@ -300,7 +300,7 @@
         },
         {
           "name": "King Shark",
-          "line": "Widowed son of the late Shark King; co-parenting shark babies with Tabitha after unintentionally killing his brother."
+          "line": "Son of the late Shark King; unintentionally killed his brother Prince Shark in a fight over selling the kingdom to Ocean Master."
         }
       ]
     },
@@ -336,7 +336,7 @@
         },
         {
           "label": "S4 · Six-day apocalypse",
-          "text": "Luthor uses Volcana to punch an ozone hole, plunging Gotham into a six-day apocalypse; Ivy quits the Legion and joins Harley to blow up every corporate villain.",
+          "text": "Luthor uses Volcana to thicken the ozone and block out the Sun, plunging Gotham into a six-day apocalypse; Ivy quits the Legion and joins Harley to blow up every corporate villain.",
           "anchorEpisode": 8,
           "whyLoadBearing": "Ivy's break from the Legion and the destruction of the villain establishment — massive board reset.",
           "needsVerify": false
@@ -510,5 +510,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:19:17.956Z"
 }

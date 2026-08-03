@@ -93,7 +93,7 @@
         },
         {
           "name": "Chester Campbell",
-          "line": "Ulster Special Branch inspector who lost the guns and his prize; now confronting Grace at the platform."
+          "line": "Royal Irish Constabulary chief inspector who lost the guns and his prize; now confronting Grace at the platform."
         }
       ]
     },
@@ -136,7 +136,7 @@
         },
         {
           "label": "S2 · Derby Day",
-          "text": "Ulster Volunteers kidnap Tommy on Churchill's order to be executed; Polly walks into Campbell's office and shoots him dead.",
+          "text": "Campbell's Ulster Volunteers kidnap Tommy to be executed; Polly walks into Campbell's office and shoots him dead.",
           "anchorEpisode": 6,
           "whyLoadBearing": "Removes Campbell and puts Tommy in Churchill's pocket.",
           "needsVerify": false
@@ -422,7 +422,7 @@
         },
         {
           "label": "S5 · Ben Younger",
-          "text": "Ada, secretly pregnant by Colonel Ben Younger, watches him die in a car bomb meant to destroy Tommy's evidence against Mosley.",
+          "text": "Colonel Ben Younger, secretly the father of Ada's unborn child, is killed by a car bomb meant to destroy Tommy's evidence against Mosley.",
           "anchorEpisode": 5,
           "whyLoadBearing": "Signals the Crown will not protect Tommy and leaves Ada carrying Ben's child.",
           "needsVerify": false
@@ -469,7 +469,7 @@
         },
         {
           "name": "Gina Gray",
-          "line": "Michael's American wife, niece of a Boston gang boss, quietly steering Michael toward a takeover."
+          "line": "Michael's American wife, quietly steering Michael toward a takeover."
         },
         {
           "name": "Ada Shelby",
@@ -584,5 +584,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T00:25:09.590Z"
 }
