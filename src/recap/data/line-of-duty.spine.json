@@ -401,7 +401,7 @@
       "characters": [
         {
           "name": "Steve Arnott",
-          "line": "DI at AC-12, dependent on painkillers since S4 and privately doubting Hastings."
+          "line": "DS at AC-12, dependent on painkillers since S4 and privately doubting Hastings."
         },
         {
           "name": "Kate Fleming",
@@ -454,7 +454,7 @@
         },
         {
           "label": "S6 · Davidson's parentage",
-          "text": "Vella was investigating a decades-old police cover-up; DNA testing reveals Davidson is Tommy Hunter's biological daughter, born of incest and coerced ever since.",
+          "text": "Vella was investigating a decades-old police cover-up; DNA testing reveals Davidson is the product of incest within the Hunter family, coerced by the OCG ever since.",
           "anchorEpisode": 5,
           "whyLoadBearing": "Explains Davidson's whole behaviour this season and ties her personally to the S1–2 OCG.",
           "needsVerify": false
@@ -521,5 +521,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-04T02:39:47.863Z"
+  "repairedAt": "2026-08-04T02:49:46.454Z"
 }

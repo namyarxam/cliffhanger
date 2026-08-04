@@ -384,7 +384,7 @@
         },
         {
           "name": "Scorpia",
-          "line": "Left Catra, rescued Entrapta, and revealed as the true princess of the Black Garnet runestone."
+          "line": "Left Catra hoping to rescue Entrapta, and revealed as the true princess of the Black Garnet runestone."
         },
         {
           "name": "Entrapta",
@@ -446,14 +446,14 @@
         },
         {
           "label": "S5 · Race to the Heart",
-          "text": "The princesses head to the Fright Zone spire to break Prime's chip network while Adora, Catra and Bow race for the Heart, with Horde Prime himself finally descending to fight.",
+          "text": "The princesses head to the Fright Zone spire to break Prime's chip network while Adora and Bow race for the Heart, with Horde Prime himself finally descending to fight.",
           "anchorEpisode": 12,
           "whyLoadBearing": "Aligns every remaining thread onto the two-front final battle.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "Adora carries a failsafe that will destroy the Heart of Etheria — and possibly her along with it. Catra is finally at her side. Horde Prime himself is descending to stop them.",
+        "text": "Adora carries a failsafe that will destroy the Heart of Etheria — and possibly her along with it. Catra, unable to bear it, has left. Horde Prime himself is descending to stop them.",
         "questions": [
           "Will pulling the failsafe cost Adora her life?",
           "Can Catra be trusted at Adora's back after everything?",
@@ -500,5 +500,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-04T02:41:29.392Z"
+  "repairedAt": "2026-08-04T02:51:51.657Z"
 }
