@@ -113,6 +113,41 @@ const KIND_RULES = {
   X: `A CLIFFHANGER is one or two sentences naming the unresolved situation the viewer is walking back into. It poses; it does not answer.`,
 };
 
+// A correct rewrite that overruns the ceiling used to be dropped on the floor,
+// which is how a show gets stuck: the beat is never changed, so the next audit
+// raises the identical flag, forever. Succession S2 B6 came back at 181 chars
+// against a 180 ceiling and burned both repair rounds on a one-character miss.
+// The fix is not a bigger ceiling — the ceiling is a layout constraint — it is
+// to hand the overrun back and ask for the same correction in fewer words.
+function buildShortenPrompt(show, seasonNo, overruns) {
+  const list = overruns
+    .map(
+      ({ id, attempt, flag }) => `${id}  (${attempt.length} chars — must be ${BEAT_CHAR_LIMIT} or fewer)
+  TOO LONG     : ${attempt}
+  MUST STILL FIX: ${flag.type} — ${flag.note || flag.claim}`,
+    )
+    .join('\n\n');
+
+  return `These rewritten beats from a recap of ${show.title} season ${seasonNo} are factually correct but too long.
+
+${list}
+
+Compress each to ${BEAT_CHAR_LIMIT} characters or fewer, aiming for about ${BEAT_TARGET}.
+
+- Keep the correction. That is the whole point of the rewrite — do not restore the error to save room.
+- Cut the least load-bearing clause first. Trailing consequence beats the causal link; a name you can drop without confusion beats a verb.
+- Do not introduce anything the previous version did not already say.
+- Keep the same voice and tense.
+
+Return ONLY valid JSON:
+
+{
+  "fixes": {
+${overruns.slice(0, 2).map(o => `    ${JSON.stringify(o.id)}: "shorter text"`).join(',\n')}
+  }
+}`;
+}
+
 function buildPrompt(show, seasonNo, episodes, items) {
   const source = episodes
     .map(e => `[S${seasonNo}E${e.episode}] ${e.name ?? ''}\n${(e.plot || e.overview || '').trim()}`)
@@ -186,21 +221,55 @@ async function repairSeason(show, spine, audit, seasonNo, opts) {
   const parsed = extractJSON(await askClaude(buildPrompt(show, seasonNo, sourced, items), opts.model));
 
   const applied = [];
+  let overruns = [];
   for (const item of items) {
     const next = parsed.fixes?.[item.id];
     if (typeof next !== 'string' || !next.trim()) {
       console.log(`      S${seasonNo} ${item.id} · no replacement returned, left as-is`);
       continue;
     }
-    if (item.id[0] === 'B' && next.length > BEAT_CHAR_LIMIT) {
-      console.log(
-        `      S${seasonNo} ${item.id} ✗ replacement ${next.length} chars > ${BEAT_CHAR_LIMIT}, left as-is`,
-      );
+    // Measure what actually gets stored. The old check measured the raw string
+    // and stored the trimmed one, so a beat could be rejected for whitespace.
+    const text = next.trim();
+    if (item.id[0] === 'B' && text.length > BEAT_CHAR_LIMIT) {
+      overruns.push({ id: item.id, attempt: text, flag: item.flag, item });
       continue;
     }
-    applied.push({ id: item.id, before: item.current, after: next.trim() });
-    item.hit.obj[item.hit.field] = next.trim();
+    applied.push({ id: item.id, before: item.current, after: text });
+    item.hit.obj[item.hit.field] = text;
   }
+
+  // Two compression attempts. Each one is a cheap single call over a handful of
+  // beats, and it is the difference between a show shipping and being dropped.
+  for (let attempt = 1; attempt <= 2 && overruns.length; attempt++) {
+    let shorter;
+    try {
+      shorter = extractJSON(
+        await askClaude(buildShortenPrompt(show, seasonNo, overruns), opts.model),
+      );
+    } catch {
+      break;
+    }
+    const still = [];
+    for (const o of overruns) {
+      const next = shorter.fixes?.[o.id];
+      const text = typeof next === 'string' ? next.trim() : '';
+      if (!text || text.length > BEAT_CHAR_LIMIT) {
+        still.push({ ...o, attempt: text || o.attempt });
+        continue;
+      }
+      console.log(`      S${seasonNo} ${o.id} ✓ shortened to ${text.length} chars`);
+      applied.push({ id: o.id, before: o.item.current, after: text });
+      o.item.hit.obj[o.item.hit.field] = text;
+    }
+    overruns = still;
+  }
+  for (const o of overruns) {
+    console.log(
+      `      S${seasonNo} ${o.id} ✗ still ${o.attempt.length} chars > ${BEAT_CHAR_LIMIT} after 2 tries, left as-is`,
+    );
+  }
+
   return { season: seasonNo, fixed: applied.length, items, applied };
 }
 
