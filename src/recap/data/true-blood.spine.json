@@ -626,7 +626,7 @@
         },
         {
           "label": "S7 · Alcide dies, Bill is infected",
-          "text": "The rescue of Arlene and Holly ends in a shootout: Alcide is killed. Bill later discovers he too is Hep-V positive — infected by drinking from Sookie, who unknowingly carried the virus.",
+          "text": "A shootout with the Hep-V vampires ends in tragedy: Alcide is killed. Bill later discovers he too is Hep-V positive, infected by drinking from Sookie.",
           "anchorEpisode": 3,
           "whyLoadBearing": "Removes Alcide and turns Bill's death into the season's emotional spine.",
           "needsVerify": false
@@ -640,7 +640,7 @@
         },
         {
           "label": "S7 · Bill refuses the cure",
-          "text": "Offered Sarah's blood, Bill turns it down. He asks Jessica to release him and begs Sookie to end him, believing his death will free her to have a normal human life.",
+          "text": "Offered Sarah's blood, Bill turns it down. Jessica asks him to release her from his maker bond, and he begs Sookie to end him so she can live a normal life.",
           "anchorEpisode": 9,
           "whyLoadBearing": "Sets up the finale and closes the Sookie–Bill relationship on Bill's terms.",
           "needsVerify": false
@@ -704,5 +704,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-04T02:32:55.564Z"
+  "repairedAt": "2026-08-04T04:50:14.666Z"
 }

@@ -139,14 +139,14 @@
         },
         {
           "label": "S2 · Tabitha in Maine",
-          "text": "Victor sends Tabitha up a tree that transports her to the lighthouse tower. The Boy in White shoves her out a window — and she wakes in a hospital in Maine.",
+          "text": "Victor sends Tabitha up a tree that transports her to the lighthouse tower. The Boy in White shoves her out a window — and she wakes in a hospital in the outside world.",
           "anchorEpisode": 10,
           "whyLoadBearing": "The outside world is reachable; the whole S3 outside-world thread launches here.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "Tabitha is alive in a Maine hospital, days after the Boy in White shoved her from the lighthouse tower — proof there is a way out, though not one she chose or understands. The music box is destroyed, but the Boy in White told her 'this is the only way.'",
+        "text": "Tabitha is alive in a hospital in the outside world, days after the Boy in White shoved her from the lighthouse tower — proof there is a way out, though not one she chose or understands. The music box is destroyed, but the Boy in White told her 'this is the only way.'",
         "questions": [
           "How did Tabitha reach the outside world, and can she come back?",
           "Who are the children the Boy in White wants freed?",
@@ -164,7 +164,7 @@
         },
         {
           "name": "Tabitha Matthews",
-          "line": "Sent by Victor up a tree that transported her to the lighthouse tower, where the Boy in White shoved her out a window; she woke in a hospital in Maine."
+          "line": "Sent by Victor up a tree that transported her to the lighthouse tower, where the Boy in White shoved her out a window; she woke in a hospital in the outside world."
         },
         {
           "name": "Kristi",
@@ -380,5 +380,5 @@
     }
   },
   "notPeople": [],
-  "repairedAt": "2026-08-04T02:29:14.445Z"
+  "repairedAt": "2026-08-04T04:55:18.541Z"
 }

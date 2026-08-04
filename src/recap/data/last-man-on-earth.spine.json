@@ -65,7 +65,7 @@
       "characters": [
         {
           "name": "Phil \"Tandy\" Miller",
-          "line": "Formerly-average bank employee turned petty, selfish everyman; just banished from Tucson and driving off with his wife Carol."
+          "line": "Petty, selfish everyman; just banished from Tucson and driving off with his wife Carol."
         },
         {
           "name": "Carol Pilbasian",
@@ -101,7 +101,7 @@
       "beats": [
         {
           "label": "S2 · Return to Malibu",
-          "text": "After six months on the road with Carol, Tandy tracks the group to Malibu — where a new survivor, Gordon, drops dead of a heart attack at the sight of him.",
+          "text": "After six months on the road with Carol, Tandy tracks the group to Malibu — where Carol's sudden appearance startles a new survivor, Gordon, into a fatal heart attack.",
           "anchorEpisode": 2,
           "whyLoadBearing": "Reunites the split leads with the ensemble and moves the show to its S2–S3 setting.",
           "needsVerify": false
@@ -390,5 +390,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-01T16:34:03.558Z"
+  "repairedAt": "2026-08-04T04:45:52.425Z"
 }

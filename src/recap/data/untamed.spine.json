@@ -34,7 +34,7 @@
         },
         {
           "label": "S1 · Jill's overdose",
-          "text": "Vasquez flees LA with her son Gael to escape her ex Michael; the fight at Turner's house pushes Jill to attempt suicide with pills traced back to wildlife manager Shane Maguire. Turner beats Maguire publicly and is suspended.",
+          "text": "Vasquez flees LA with son Gael to escape ex Michael; jealousy of her motherhood drives Jill to attempt suicide with pills traced to Maguire. Turner beats him and is suspended.",
           "anchorEpisode": 5,
           "whyLoadBearing": "Puts Vasquez and Gael inside Turner's life and lights the fuse on Maguire, whose exposure unlocks the Caleb truth.",
           "needsVerify": false
@@ -97,5 +97,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-04T04:36:17.563Z"
 }

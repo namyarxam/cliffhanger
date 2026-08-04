@@ -247,7 +247,7 @@
         },
         {
           "label": "S3 · Kubra hunts Alex",
-          "text": "Kubra is acquitted and Alex becomes convinced he has sent an assassin for her; she fixates on paranoid new inmate Lolly as the likely killer.",
+          "text": "Alex becomes convinced Kubra has sent an assassin for her; she fixates on paranoid new inmate Lolly as the likely killer.",
           "anchorEpisode": 11,
           "whyLoadBearing": "The Aydin thread that opens the next season begins here.",
           "needsVerify": false
@@ -608,11 +608,11 @@
         },
         {
           "name": "Cindy",
-          "line": "Betrayed Taystee on the stand to save herself; wracked with guilt as she prepares for release."
+          "line": "Betrayed Taystee on the stand to save herself; wracked with guilt."
         },
         {
           "name": "Red",
-          "line": "Feuded with Frieda after learning she once betrayed Carol; showing the first cracks of forgetfulness."
+          "line": "Feuded with Frieda after learning she once betrayed Carol."
         },
         {
           "name": "Nicky Nichols",
@@ -752,5 +752,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-03T06:48:11.431Z"
+  "repairedAt": "2026-08-04T04:56:52.519Z"
 }

@@ -147,7 +147,7 @@
         },
         {
           "label": "S2 · Naomi's sample, Venus stirs",
-          "text": "Mao's meeting turns into a firefight and he is captured; on Venus the Eros debris starts building something huge, and Naomi confesses she gave a protomolecule sample to Fred Johnson.",
+          "text": "The meeting turns into a firefight; Bobbie rescues Avasarala and Cotyar, Eros debris builds something huge on Venus, and Naomi admits giving Fred Johnson a protomolecule sample.",
           "anchorEpisode": 13,
           "whyLoadBearing": "Three unresolved threads at once: Mao in Avasarala's hands, Venus active, Belters now holding a sample of the weapon.",
           "needsVerify": false
@@ -319,7 +319,7 @@
       "beats": [
         {
           "label": "S4 · Rush to the new worlds",
-          "text": "Belter refugees defy Avasarala's blockade to settle the alien world Ilus; she sends Holden and his crew to broker peace between them and a Martian corporate expedition also landing there.",
+          "text": "Belter refugees defy Avasarala's blockade to settle the alien world Ilus; she sends Holden to broker peace between them and an Earth-Mars corporate expedition also landing there.",
           "anchorEpisode": 1,
           "whyLoadBearing": "Establishes the season's arena and the political tension that Marco will exploit — the Ring worlds are already a fight over who gets them.",
           "needsVerify": false
@@ -406,7 +406,7 @@
         },
         {
           "name": "Klaes Ashford",
-          "line": "OPA peacekeeper, killed by Marco Inaros while trying to bring him in."
+          "line": "OPA peacekeeper, hunting Marco Inaros independently to kill him."
         },
         {
           "name": "Marco Inaros",
@@ -630,5 +630,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-04T02:27:04.262Z"
+  "repairedAt": "2026-08-04T04:53:38.461Z"
 }

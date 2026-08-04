@@ -117,7 +117,7 @@
       "beats": [
         {
           "label": "S2 · Sarah at Adam's job",
-          "text": "Adam pitches Sarah's shoe-tracker idea to his boss Gordon and hires her at the company; her later affair with Gordon costs Adam his job when Gordon sells the company.",
+          "text": "Adam pitches Sarah's shoe-tracker idea to his boss Gordon and hires her at the company; Gordon later sells the company, and the new owner Cory eventually fires Adam.",
           "anchorEpisode": 1,
           "whyLoadBearing": "Sets up Adam's unemployment that drives S3's Luncheonette purchase.",
           "needsVerify": false
@@ -701,5 +701,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-03T06:21:37.263Z"
+  "repairedAt": "2026-08-04T04:28:37.764Z"
 }

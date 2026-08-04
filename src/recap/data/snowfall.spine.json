@@ -177,7 +177,7 @@
         },
         {
           "name": "Alton Williams",
-          "line": "Franklin's father, off the streets and living with Cissy again after being pulled out of jail."
+          "line": "Franklin's father, back living with Cissy after being brought home from the hospital and kept out of jail on an LAPD assault suit."
         },
         {
           "name": "Jerome Saint",
@@ -208,7 +208,7 @@
         },
         {
           "label": "S3 · Alton clocks Teddy",
-          "text": "Alton emerges from homelessness and moves back in with Cissy; he pieces together that Franklin is moving cocaine for a CIA man and is horrified.",
+          "text": "Alton pieces together that Franklin is moving cocaine for a CIA man and is horrified.",
           "anchorEpisode": 2,
           "whyLoadBearing": "The Alton–Teddy collision started here is what gets Alton killed and turns Cissy into an assassin.",
           "needsVerify": false
@@ -268,7 +268,7 @@
         },
         {
           "name": "Gustavo \"El Oso\" Zapata",
-          "line": "Teddy's Mexican side hand, quietly buying houses for his estranged brother Hernan's family."
+          "line": "Teddy's Mexican side hand, quietly buying houses for Hernan and his family."
         },
         {
           "name": "Cissy Saint",
@@ -276,7 +276,7 @@
         },
         {
           "name": "Alton Williams",
-          "line": "Living with Cissy again and now aware Franklin's supplier is CIA — increasingly ready to expose it."
+          "line": "Now aware Franklin's supplier is CIA — increasingly ready to expose it."
         },
         {
           "name": "Jerome Saint",
@@ -598,5 +598,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-04T02:20:46.146Z"
+  "repairedAt": "2026-08-04T04:58:14.944Z"
 }

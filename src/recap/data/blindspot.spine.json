@@ -317,7 +317,7 @@
         },
         {
           "label": "S4 · Weller catches on",
-          "text": "Weller notices Jane's lies, tracks her to Sandstorm's old operative Violet, and realises the woman he married is no longer Jane — she is Remi, working to free Shepherd.",
+          "text": "Weller notices Jane's lies, tracks her to her black-market contact Violet, and realises the woman he married is no longer Jane — she is Remi, working to free Shepherd.",
           "anchorEpisode": 7,
           "whyLoadBearing": "The inside enemy is uncovered by her husband, setting up the confrontation that ends the Remi arc.",
           "needsVerify": false
@@ -412,7 +412,7 @@
         },
         {
           "label": "S5 · Ten ZIP bombs",
-          "text": "Using intel Jane recalls from her Sandstorm days, the team learn Madeline has ten bombs staged across the world armed with weaponised ZIP that will erase whole cities' memories.",
+          "text": "Zapata recalls a bust from her first day at the FBI, and the team learn Madeline has ten bombs staged worldwide armed with ZIP that will erase cities' memories.",
           "anchorEpisode": 4,
           "whyLoadBearing": "Sets the stakes and the ticking clock the rest of the season runs on.",
           "needsVerify": false
@@ -433,7 +433,7 @@
         },
         {
           "label": "S5 · Times Square, one last time",
-          "text": "Ivy releases the last ZIP canister and Jane seals herself in the airlock to save Weller. She wakes cured and arrests Ivy in Times Square — while the finale keeps cutting back to Jane in a body bag.",
+          "text": "Ivy releases the last ZIP canister and Jane seals herself in the airlock to save Weller. She wakes cured and Zapata arrests Ivy in Times Square.",
           "anchorEpisode": 11,
           "whyLoadBearing": "The series' final beat: everyone's happy futures intercut with Jane possibly dying, deliberately leaving the ending unresolved.",
           "needsVerify": false
@@ -483,5 +483,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-04T02:35:36.494Z"
+  "repairedAt": "2026-08-04T04:51:29.633Z"
 }

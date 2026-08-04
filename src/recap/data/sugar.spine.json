@@ -13,7 +13,7 @@
         },
         {
           "label": "S1 · A body and a cover-up",
-          "text": "Sugar finds Clifford Carter dead in Olivia's car and learns from ex-stepmother Melanie that Olivia killed him defending Carmen Vazquez, then vanished into hiding.",
+          "text": "Sugar finds Clifford Carter dead in Olivia's car and learns from Melanie that Olivia killed him in self-defense after finding him with Carmen's body.",
           "anchorEpisode": 3,
           "whyLoadBearing": "Reframes Olivia from addict-runaway to fugitive, and pulls Melanie in as Sugar's only real ally.",
           "needsVerify": false
@@ -97,5 +97,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-04T04:34:26.886Z"
 }

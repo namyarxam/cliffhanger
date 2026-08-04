@@ -243,7 +243,7 @@
         },
         {
           "label": "S3 · Rose caged, Luisa scorned",
-          "text": "Rose is captured and jailed after Rafael helps lure her in; a scorned Luisa vows revenge on him while Anezka plots her own strike on Petra.",
+          "text": "Rose is captured and jailed; after Rafael helps lure Luisa in, a scorned Luisa vows revenge on him while Anezka plots her own strike on Petra.",
           "anchorEpisode": 20,
           "whyLoadBearing": "Luisa's revenge and Rose's imprisonment drive the entire S4 conspiracy.",
           "needsVerify": false
@@ -291,7 +291,7 @@
         },
         {
           "name": "Luisa Alver",
-          "line": "Rafael's sister, plotting revenge after Rafael betrayed her to lure Rose into custody."
+          "line": "Rafael's sister, plotting revenge after Rafael lied about his cancer to lure her back to Miami."
         },
         {
           "name": "Rogelio de la Vega",
@@ -518,5 +518,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-04T02:12:01.716Z"
+  "repairedAt": "2026-08-04T04:43:51.460Z"
 }

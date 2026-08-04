@@ -446,7 +446,7 @@
         },
         {
           "label": "S5 · Race to the Heart",
-          "text": "The princesses head to the Fright Zone spire to break Prime's chip network while Adora and Bow race for the Heart, with Horde Prime himself finally descending to fight.",
+          "text": "Entrapta works to take down Prime's hivemind network before the chips fuse permanently, while Adora bonds with the Mara-era failsafe recovered from Mystacor.",
           "anchorEpisode": 12,
           "whyLoadBearing": "Aligns every remaining thread onto the two-front final battle.",
           "needsVerify": false
@@ -467,7 +467,7 @@
         },
         {
           "name": "Catra",
-          "line": "Freed from Prime's chip and fighting alongside Adora — no more masks between them."
+          "line": "Freed from Prime's chip — but unable to bear the thought of Adora dying for Etheria, she leaves with Melog."
         },
         {
           "name": "Glimmer",
@@ -475,7 +475,7 @@
         },
         {
           "name": "Bow",
-          "line": "Racing toward the Heart with Adora and Catra to deploy the Mara-era failsafe recovered from Mystacor."
+          "line": "Helping recover the Mara-era failsafe from Mystacor so Adora can bond with it as She-Ra."
         },
         {
           "name": "Horde Prime",
@@ -491,7 +491,7 @@
         },
         {
           "name": "Scorpia",
-          "line": "Fully aligned with the Rebellion; briefly taken by Prime, then rescued."
+          "line": "Captured after covering the others' retreat; still chipped and under Prime's control, used to ambush Adora in the Fright Zone."
         },
         {
           "name": "Shadow Weaver",
@@ -500,5 +500,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-04T02:51:51.657Z"
+  "repairedAt": "2026-08-04T05:00:10.091Z"
 }
