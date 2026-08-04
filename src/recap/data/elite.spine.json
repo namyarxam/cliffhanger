@@ -41,7 +41,7 @@
         },
         {
           "label": "S1 · Nano takes the fall",
-          "text": "Police arrest Nano for Marina's murder, leaving the three real killers untouched.",
+          "text": "Police arrest Nano for Marina's murder, leaving the real killer untouched.",
           "anchorEpisode": 8,
           "whyLoadBearing": "Establishes the wrongful arrest and Samuel's mission that opens S2.",
           "needsVerify": false
@@ -248,7 +248,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Polo is dead, ruled a suicide only because everyone lied. Nadia and Lu leave for New York with Malick; Samuel, Guzmán, Rebeka, Ander and Omar return to Las Encinas under a new principal.",
+        "text": "Polo is dead, ruled a suicide only because everyone lied. Nadia and Lu leave for New York with Malick; Samuel, Guzmán, Rebeka, Ander and Omar return to Las Encinas for their final year.",
         "questions": [
           "Will Lu's guilt over killing Polo eventually break the cover-up?",
           "Can Ander's remission hold?",
@@ -282,7 +282,7 @@
         },
         {
           "name": "Valerio Montesinos",
-          "line": "Running the wineries for Carla, still Cayetana's occasional lover."
+          "line": "Running the wineries for Carla."
         },
         {
           "name": "Polo Benavent",
@@ -415,7 +415,7 @@
         },
         {
           "label": "S5 · Ibiza",
-          "text": "In Ibiza three students drug and rape Isadora after Iván and Phillipe pass out trying to stop them; Phillipe convinces Isadora to report the assault.",
+          "text": "In Ibiza Isadora is drugged and assaulted while the three students who filmed her and Iván and Phillipe all fall unconscious; Phillipe convinces her to report it.",
           "anchorEpisode": 7,
           "whyLoadBearing": "The rape and its trial are the driving plot of S6.",
           "needsVerify": false
@@ -550,7 +550,7 @@
         },
         {
           "name": "Mencía Blanco",
-          "line": "With Rebe; refused to defend Benjamin, worried about Sara's abuse."
+          "line": "Refused to defend Benjamin, worried about Sara's abuse."
         },
         {
           "name": "Isadora Artiñán",
@@ -682,5 +682,5 @@
       ]
     }
   },
-  "repairedAt": "2026-07-27T06:52:42.343Z"
+  "repairedAt": "2026-08-03T06:15:43.835Z"
 }

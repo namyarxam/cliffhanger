@@ -115,7 +115,7 @@
         },
         {
           "label": "S2 · Madeline lands",
-          "text": "Emily's Chicago boss Madeline flies in pregnant to audit Savoir, uncovers Sylvie's long affair with client Antoine, and moves to gut the office.",
+          "text": "Emily's Chicago boss Madeline flies in to audit Savoir, uncovers Sylvie's long affair with client Antoine, and moves to gut the office.",
           "anchorEpisode": 9,
           "whyLoadBearing": "Puts a new authority above Sylvie and detonates the leadership crisis that ends the season.",
           "needsVerify": false
@@ -136,7 +136,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Sylvie's team has walked out of Savoir with Pierre Cadault in tow and wants Emily on board rather than back in Chicago with a pregnant Madeline. Meanwhile Gabriel and Camille have moved in together, one floor below Emily and Alfie.",
+        "text": "Sylvie's team has walked out of Savoir with Pierre Cadault in tow and wants Emily on board rather than back in Chicago with Madeline. Meanwhile Gabriel and Camille have moved in together, one floor below Emily and Alfie.",
         "questions": [
           "Does Emily stay in Paris with Sylvie or go home with Madeline?",
           "What happens to Savoir now that its whole staff has quit?",
@@ -162,7 +162,7 @@
         },
         {
           "name": "Alfie",
-          "line": "British banker in Paris, Emily's boyfriend, about to be recalled to London."
+          "line": "British banker in Paris, Emily's boyfriend."
         },
         {
           "name": "Mindy Chen",
@@ -472,5 +472,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-03T00:41:23.609Z"
+  "repairedAt": "2026-08-03T06:13:05.966Z"
 }

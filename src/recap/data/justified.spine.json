@@ -207,7 +207,7 @@
         },
         {
           "label": "S3 · Ava takes Audrey's",
-          "text": "Ava kills her old pimp Delroy while defending Ellen May, and Boyd hands her control of Delroy's brothel Audrey's. His lover is now his partner.",
+          "text": "Ava kills Delroy while defending Ellen May, and Boyd hands her control of Delroy's brothel Audrey's. His lover is now his partner.",
           "anchorEpisode": 9,
           "whyLoadBearing": "Ava becomes an operator, and Ellen May becomes a witness who knows too much.",
           "needsVerify": false
@@ -221,7 +221,7 @@
         },
         {
           "label": "S3 · Winona walks out",
-          "text": "Winona returns the stolen money to a courthouse evidence locker; tired of trying to change Raylan, she walks out on him while still carrying his child.",
+          "text": "Winona returns the stolen money to a courthouse evidence locker; tired of trying to change Raylan, she walks out on him.",
           "anchorEpisode": 8,
           "whyLoadBearing": "Puts Raylan's family out of arm's reach, so the job is again the only thing he has.",
           "needsVerify": false
@@ -242,7 +242,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Quarles is dead, Arlo is in prison confessing to protect Boyd, and Winona has walked out with Raylan's unborn child. Boyd controls Harlan through Shelby's badge and Ava's brothel.",
+        "text": "Quarles is dead, Arlo is in prison confessing to protect Boyd, and Winona has walked out on Raylan. Boyd controls Harlan through Shelby's badge and Ava's brothel.",
         "questions": [
           "What kind of father can Raylan be from Kentucky to a family living in another state?",
           "How far will Boyd's grip on Harlan reach now that Detroit and the Dixie Mafia have both folded?",
@@ -264,7 +264,7 @@
         },
         {
           "name": "Winona Hawkins",
-          "line": "Gone from Raylan and pregnant with his child, having asked him not to come looking."
+          "line": "Gone from Raylan, having asked him not to come looking."
         },
         {
           "name": "Arlo Givens",
@@ -334,7 +334,7 @@
         },
         {
           "label": "S4 · Ava is arrested",
-          "text": "Ava is arrested burying Delroy's body, a sheriff's trap fed by Boyd's own sister. Boyd loses his fiancée on the day his heroin pipeline opens.",
+          "text": "Ava is arrested burying Delroy's body, a sheriff's trap fed by a tip from Cassie St. Cyr. Boyd loses his fiancée on the day his heroin pipeline opens.",
           "anchorEpisode": 13,
           "whyLoadBearing": "Ends the season with Ava in custody as Boyd starts his biggest venture yet.",
           "needsVerify": false
@@ -359,7 +359,7 @@
         },
         {
           "name": "Ava Crowder",
-          "line": "Arrested for Delroy's murder in a sting set by Boyd's own sister; heading to state prison."
+          "line": "Arrested for Delroy's murder in a sting sprung by a tip from Cassie St. Cyr; heading to state prison."
         },
         {
           "name": "Wynn Duffy",
@@ -367,7 +367,7 @@
         },
         {
           "name": "Colt Rhodes",
-          "line": "Boyd's ex-military enforcer and functioning addict, hunted now for Mark's murder."
+          "line": "Boyd's ex-military enforcer and functioning addict, killed by Tim before he can silence Ellen May."
         },
         {
           "name": "Ellstin Limehouse",
@@ -570,5 +570,5 @@
       ]
     }
   },
-  "repairedAt": "2026-07-27T06:03:21.428Z"
+  "repairedAt": "2026-08-03T06:46:03.493Z"
 }

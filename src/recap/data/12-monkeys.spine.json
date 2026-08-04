@@ -112,7 +112,7 @@
         },
         {
           "label": "S2 · Cassie changes sides",
-          "text": "Cassie splinters back and stops Cole from killing Jennifer, then leaves him in 2016 with Ramse, returning to 2044 hardened and willing to execute her former enemies.",
+          "text": "Cole stops Cassie from killing Jennifer, then she splinters to 2044 with Ramse, abandoning him in 2016, returning hardened and willing to execute her former enemies.",
           "anchorEpisode": 2,
           "whyLoadBearing": "Establishes Cassie's darker post-2043 self, the season's biggest character shift.",
           "needsVerify": false
@@ -154,7 +154,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Titan has splintered away to 2163 with a pregnant Cassie inside, where the Army greets her as the mother of the Witness. Cole is chasing after her; Jennifer is stranded in World War I; Ramse has vanished pursuing Olivia and Sam; the facility and Jones are gone.",
+        "text": "Titan has splintered away to 2163 with a pregnant Cassie inside, where the Army greets her as the mother of the Witness. Cole is chasing after her; Jennifer is stranded in World War I; Ramse has vanished pursuing Olivia and Sam; the facility is gone.",
         "questions": [
           "Who is the father of the Witness, and does Cole already know?",
           "Can Cole reach Cassie in 2163 before the child is born, and would stopping the birth even be right?",
@@ -232,7 +232,7 @@
         },
         {
           "label": "S3 · Meeting their son",
-          "text": "In 1953 Cole and Cassie find young Athan being groomed as a Primary killer for the Army; unable to shoot him, they steal a personal machine and flee with him.",
+          "text": "In 1953 Cole and Cassie find young Athan being groomed as a Primary killer for the Army; Athan splinters away with a Horseman, and they steal a personal machine to search for him.",
           "anchorEpisode": 7,
           "whyLoadBearing": "Turns Cole and Cassie into fugitives from Jones and reframes Athan as a person, not a target.",
           "needsVerify": false
@@ -253,7 +253,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Athan is dead by his mother's hand, and Olivia — revealed as the true Witness the Army was worshipping all along — is bringing Titan into 2046 to destroy Project Splinter. In 2015, young Cole is handed a cryptic note from a mother he was told he never knew.",
+        "text": "Athan is dead by Olivia's hand, and Olivia — revealed as the true Witness the Army was worshipping all along — is bringing Titan into 2046 to destroy Project Splinter. In 2015, young Cole is handed a cryptic note from a mother he was told he never knew.",
         "questions": [
           "How does Jones's tiny facility survive Titan splintering in on top of it?",
           "If Olivia is the Witness, what has the Army actually been building toward, and can it still be stopped?",
@@ -283,7 +283,7 @@
         },
         {
           "name": "Athan Cole",
-          "line": "Cole and Cassie's Primary son, raised by the Army as a killer and shot by his own mother in 1959."
+          "line": "Cole and Cassie's Primary son, raised by the Army as a killer, shot by Jones in 1959 and finished off by Olivia."
         },
         {
           "name": "Jose Ramse",
@@ -394,9 +394,10 @@
         },
         {
           "name": "Emma / Elliot Jones",
-          "line": "Katarina's ex-husband Elliot and his assistant Emma — Olivia's mother — are killed after their designs help finish Titan."
+          "line": "Katarina's ex-husband Elliot and his assistant Emma — Olivia's daughter — are killed after their designs help finish Titan."
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T06:29:39.584Z"
 }

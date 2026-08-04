@@ -27,7 +27,7 @@
         },
         {
           "label": "S1 · Lottie's visions",
-          "text": "Off her schizophrenia medication, Lottie's visions grow stronger and she gathers followers, including Van and eventually Travis.",
+          "text": "Off her schizophrenia medication, Lottie's visions grow stronger and she gathers followers, including Van.",
           "anchorEpisode": 5,
           "whyLoadBearing": "Introduces the wilderness mysticism that will drive every group decision in S2 and structure Lottie's adult cult in the present.",
           "needsVerify": false
@@ -48,7 +48,7 @@
         },
         {
           "label": "S1 · Adult fallout",
-          "text": "In 2021, Shauna kills Adam after learning her husband Jeff was the blackmailer, and a masked group kidnaps a newly-sober Natalie.",
+          "text": "In 2021, Shauna kills Adam believing he was digging into her past, then learns her husband Jeff was the blackmailer, and a masked group kidnaps a newly-sober Natalie.",
           "anchorEpisode": 10,
           "whyLoadBearing": "Delivers the two present-day threads S2 opens on: the Adam cover-up and Natalie's captivity at Lottie's compound.",
           "needsVerify": false
@@ -65,7 +65,7 @@
       "characters": [
         {
           "name": "Shauna Sadecki",
-          "line": "Yellowjackets midfielder secretly pregnant by her best friend's boyfriend; in 2021 she kills her lover Adam after discovering her husband was blackmailing her."
+          "line": "Yellowjackets midfielder secretly pregnant by her best friend's boyfriend; in 2021 she kills her lover Adam believing he was digging into her past, then discovers her husband was the blackmailer."
         },
         {
           "name": "Natalie Scatorccio",
@@ -73,7 +73,7 @@
         },
         {
           "name": "Lottie Matthews",
-          "line": "Off her schizophrenia meds, her visions have made her the wilderness's spiritual leader, with Van and Travis among her followers."
+          "line": "Off her schizophrenia meds, her visions have made her the wilderness's spiritual leader, with Van among her followers."
         },
         {
           "name": "Misty Quigley",
@@ -143,7 +143,7 @@
         },
         {
           "label": "S2 · Ritual at the compound",
-          "text": "In the present, the women meet at Lottie's compound; a botched ritual ends with Natalie taking a fentanyl injection meant for Lottie and dying in Misty's arms.",
+          "text": "In the present, the women meet at Lottie's compound; a botched ritual ends with Natalie taking a fentanyl injection meant for Lisa and dying in Misty's arms.",
           "anchorEpisode": 9,
           "whyLoadBearing": "Kills off Natalie in the present timeline, reshaping the adult-Misty and adult-Shauna storylines that dominate S3.",
           "needsVerify": false
@@ -164,7 +164,7 @@
         },
         {
           "name": "Natalie Scatorccio",
-          "line": "Draws the Queen of Hearts in the sacrifice lottery but survives when Javi drowns instead; Lottie hands her leadership of the group. In the present she dies from a fentanyl injection meant for Lottie."
+          "line": "Draws the Queen of Hearts in the sacrifice lottery but survives when Javi drowns instead; Lottie hands her leadership of the group. In the present she dies from a fentanyl injection meant for Lisa."
         },
         {
           "name": "Lottie Matthews",
@@ -273,5 +273,6 @@
     }
   },
   "notPeople": [],
-  "castLinks": {}
+  "castLinks": {},
+  "repairedAt": "2026-08-03T06:26:43.970Z"
 }

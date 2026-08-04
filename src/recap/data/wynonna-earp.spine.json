@@ -136,14 +136,14 @@
         },
         {
           "label": "S2 · Bulshar unsealed",
-          "text": "The Widows destroy the third seal and free Bulshar; Wynonna kills the Widows with a special bullet, and Waverly quietly learns she is not fully Earp.",
+          "text": "Beth obtains the third seal and Bulshar is freed; Wynonna kills the Widows with a special bullet, and Waverly quietly learns she is not fully Earp.",
           "anchorEpisode": 12,
           "whyLoadBearing": "Both the S3 villain and the S3 mystery of Waverly's parentage are set in motion here.",
           "needsVerify": false
         },
         {
           "label": "S2 · Alice and the ring",
-          "text": "Wynonna gives birth to Alice — Doc's daughter — and sends her out of the Triangle for safety, then heads to prison to find her mother. Nicole ends up holding Bulshar's ring.",
+          "text": "Wynonna gives birth to Alice — Doc's daughter — and sends her out of the Triangle for safety, then leaves Purgatory to meet her mother. Nicole ends up holding Bulshar's ring.",
           "anchorEpisode": 12,
           "whyLoadBearing": "Sends the baby offscreen, points Wynonna at Michelle, and plants Bulshar's ring on the wrong finger.",
           "needsVerify": false
@@ -160,11 +160,11 @@
       "characters": [
         {
           "name": "Wynonna Earp",
-          "line": "Heir and new mother; sent baby Alice away and is heading to prison to see her mother."
+          "line": "Heir and new mother; sent baby Alice away and is leaving Purgatory to meet her mother."
         },
         {
           "name": "Waverly Earp",
-          "line": "Wynonna's half-sister; DNA has confirmed she is not fully Earp; her father is a stranger named Julian."
+          "line": "Wynonna's half-sister; DNA has confirmed she is not fully Earp."
         },
         {
           "name": "Doc Holliday",
@@ -235,7 +235,7 @@
         },
         {
           "label": "S3 · The curse breaks",
-          "text": "In the final battle Bulshar reshapes Peacemaker into a flaming sword; Waverly names Wynonna its wielder and she kills him, breaking the curse and vanishing every Revenant.",
+          "text": "In the final battle Bulshar takes Wynonna's blood to break the Earp curse and every Revenant vanishes; Waverly then names Wynonna wielder of the Peacemaker sword and she kills him.",
           "anchorEpisode": 12,
           "whyLoadBearing": "The 200-year premise of the show ends here; S4 starts in the world this creates.",
           "needsVerify": false
@@ -337,7 +337,7 @@
         },
         {
           "label": "S4 · The road out",
-          "text": "Waverly and Nicole marry at the Earp homestead. Wynonna and Doc drive out of Purgatory together, the family curse at last in the past.",
+          "text": "Waverly and Nicole marry at the Earp homestead. Wynonna and Doc drive out of Purgatory together.",
           "anchorEpisode": 12,
           "whyLoadBearing": "Where every character actually stands as the story leaves them.",
           "needsVerify": false
@@ -354,7 +354,7 @@
       "characters": [
         {
           "name": "Wynonna Earp",
-          "line": "Free of the curse; leaves Purgatory with Doc at the end of the season."
+          "line": "Leaves Purgatory with Doc at the end of the season."
         },
         {
           "name": "Waverly Earp",
@@ -382,9 +382,10 @@
         },
         {
           "name": "Contessa",
-          "line": "Doc's vampire wife; still in Purgatory after the Clanton war."
+          "line": "A fellow captive who helps Nicole escape the train and bites a guard."
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T06:54:08.792Z"
 }

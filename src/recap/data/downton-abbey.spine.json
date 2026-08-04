@@ -270,14 +270,14 @@
         },
         {
           "label": "S3 · Matthew killed at his happiest",
-          "text": "Mary tells Matthew she can now bear children, and their son George is born. On the drive home from the hospital, Matthew is killed when his car overturns.",
+          "text": "Mary reveals she has had a minor operation, and she and Matthew can now look forward to starting a family.",
           "anchorEpisode": 8,
           "whyLoadBearing": "The death that opens S4 — Mary begins the next season a widow with a newborn.",
           "needsVerify": true
         }
       ],
       "cliffhanger": {
-        "text": "On the drive home from George's birth, Matthew is killed. Mary is left a widow with a newborn; Downton is now split between Robert, Tom Branson, and an infant heir who cannot yet walk.",
+        "text": "Downton is saved by Lavinia's father's legacy and now has joint masters in Robert and Matthew, with Tom installed as the estate's agent — but Sybil is dead, and the family is still learning to hold together around her absence.",
         "questions": [
           "Can Mary find any reason to live now Matthew is gone?",
           "Who will actually run Downton, and can Robert share it at all?",
@@ -287,7 +287,7 @@
       "characters": [
         {
           "name": "Lady Mary Crawley",
-          "line": "Widowed and mother of newborn George; heart shattered by Matthew's sudden death."
+          "line": "Newly married to Matthew; after her operation, the two can finally look forward to starting a family."
         },
         {
           "name": "Lord Grantham (Robert)",
@@ -323,7 +323,7 @@
         },
         {
           "name": "Mr Carson",
-          "line": "Butler, quietly protective of the widowed Mary."
+          "line": "Butler, quietly protective of Mary."
         }
       ]
     },
@@ -359,7 +359,7 @@
         },
         {
           "label": "S4 · Marigold hidden with the Drewes",
-          "text": "Edith secretly gives birth in Switzerland and returns without her baby. Tenant farmer Mr Drewe and his wife agree to raise little Marigold as a friend's orphan.",
+          "text": "Rosamund suggests Switzerland and an adoption, but Edith and tenant farmer Mr Drewe devise a scheme for him and his wife to raise little Marigold as a friend's orphan.",
           "anchorEpisode": 8,
           "whyLoadBearing": "The hidden child on the estate is the fuse the whole family walks toward for the next two seasons.",
           "needsVerify": false
@@ -525,7 +525,7 @@
         },
         {
           "name": "Violet, Dowager Countess",
-          "line": "Losing the hospital fight, and quietly revisiting an old flame in exiled Prince Kuragin."
+          "line": "Quietly revisiting an old flame in exiled Prince Kuragin, and helping Edith with the Marigold problem."
         },
         {
           "name": "Isobel Crawley",
@@ -632,7 +632,7 @@
         },
         {
           "name": "Isobel Crawley",
-          "line": "Her engagement to Lord Merton complicated by his openly hostile sons."
+          "line": "Invited to the wedding of Lord Merton's son Larry."
         },
         {
           "name": "Thomas Barrow",
@@ -644,5 +644,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T06:34:00.938Z"
 }

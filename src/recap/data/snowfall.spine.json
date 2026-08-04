@@ -102,7 +102,7 @@
       "beats": [
         {
           "label": "S2 · Teddy finds Franklin",
-          "text": "Teddy identifies Franklin as the buyer eating into the Cali supply, kidnaps him to confirm it, and the two agree to a direct cocaine deal.",
+          "text": "With Contra funding cut, Ballard orders Teddy to expand distribution; Teddy pulls Avi's arrest files, gets Franklin's name, and follows him from Jerome's.",
           "anchorEpisode": 1,
           "whyLoadBearing": "Franklin and Teddy formally partner up here — the relationship the whole rest of the show revolves around.",
           "needsVerify": false
@@ -169,7 +169,7 @@
         },
         {
           "name": "Gustavo \"El Oso\" Zapata",
-          "line": "Freed from custody and badly wounded fighting Conejo; Lucia has vanished on him."
+          "line": "Freed from custody and badly wounded fighting Conejo after he attacks Lucia; still her partner at season's end."
         },
         {
           "name": "Cissy Saint",
@@ -189,7 +189,7 @@
         },
         {
           "name": "Leon Simmons",
-          "line": "Recovering from being shot in the back by Lenny; still Franklin's main enforcer."
+          "line": "Still Franklin's main enforcer; spends the season arrested with Avi, kidnapped by Teddy, and locking up Wanda to detox her off crack."
         },
         {
           "name": "Lorena Cardenas",
@@ -284,7 +284,7 @@
         },
         {
           "name": "Louie Jones",
-          "line": "Running her own club and pushing Jerome toward more ambition inside the Family."
+          "line": "Expecting a baby with Jerome and stepping deeper into the Family after making a drop to Manboy for Leon."
         },
         {
           "name": "Leon Simmons",
@@ -311,7 +311,7 @@
         },
         {
           "label": "S4 · Fuentes falls",
-          "text": "Tijuana's new police chief Fuentes has Gustavo's brother Hernan and Nuvia killed; Teddy gets the retaliation sanctioned and Gustavo strangles Fuentes himself.",
+          "text": "Tijuana's new police chief Fuentes has Hernan and Nuvia killed; Teddy gets the retaliation sanctioned and Gustavo strangles Fuentes himself.",
           "anchorEpisode": 3,
           "whyLoadBearing": "Cements Gustavo's dependence on Teddy and secures the Mexico corridor for the rest of the show.",
           "needsVerify": false
@@ -332,7 +332,7 @@
         },
         {
           "label": "S4 · Manboy dies",
-          "text": "Franklin's girlfriend Tanosse is exposed as Manboy's spy on the Family; Franklin lures Manboy into a trap and kills him, then has Jerome execute Skully's wife Khadijah.",
+          "text": "Franklin's girlfriend Tanosse is exposed as Manboy's spy on the Family; Franklin lures Manboy into a trap and kills him, then has Jerome execute Khadijah.",
           "anchorEpisode": 9,
           "whyLoadBearing": "Removes Franklin's largest street rival and ends the season's gang-war arc with Franklin dominant.",
           "needsVerify": false
@@ -399,7 +399,7 @@
         },
         {
           "name": "Terrence \"Skully\" Brown",
-          "line": "Bloods leader who has lost his daughter and his wife; hunts Leon, deeply unstable."
+          "line": "Bloods leader who has lost his daughter; hunts Leon, deeply unstable."
         }
       ]
     },
@@ -435,7 +435,7 @@
         },
         {
           "label": "S5 · Wedding trip",
-          "text": "At Louie and Jerome's wedding, Rubén spikes the punch with LSD; a hallucinating Franklin faces his own monstrousness while Louie confesses she killed Claudia.",
+          "text": "At Louie and Jerome's wedding, Skully spikes the chocolate fountain with LSD; a hallucinating Franklin faces his own monstrousness while Louie confesses she killed Claudia.",
           "anchorEpisode": 8,
           "whyLoadBearing": "The season's emotional peak; forces Franklin to see himself clearly for the first time.",
           "needsVerify": false
@@ -597,5 +597,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T06:49:44.229Z"
 }

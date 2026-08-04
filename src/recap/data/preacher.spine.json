@@ -135,14 +135,14 @@
         },
         {
           "label": "S2 · Tulip shot",
-          "text": "The Grail betrays Jesse: they release the Saint and agent Featherstone shoots Tulip dead. Jesse refuses to let Cassidy turn her, and races her body to his estranged Louisiana family.",
+          "text": "The Grail betrays Jesse: they release the Saint, and a staged Armenian attack leaves Tulip dying. Jesse refuses to let Cassidy turn her into a vampire.",
           "anchorEpisode": 13,
           "whyLoadBearing": "Tulip's death and the family Jesse ran from are the entire premise of the season that follows.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "Tulip is dead in Jesse's arms as he arrives, for the first time in years, at Angelville — the Louisiana home of the family he ran from. The Grail has taken over his life, the Saint is loose again, and the only person who might bring Tulip back is the grandmother he once escaped.",
+        "text": "Tulip is dead in Jesse's arms. The Grail has taken over his life, the Saint is loose again, and Jesse has agreed to become their new Messiah.",
         "questions": [
           "Can Jesse's grandmother really bring Tulip back?",
           "What will she demand from Jesse in return?",
@@ -156,7 +156,7 @@
         },
         {
           "name": "Tulip O'Hare",
-          "line": "Shot dead by the Grail as Jesse races her body to the Louisiana relatives he never told her about."
+          "line": "Shot dead by the Grail; Jesse refuses to let Cassidy turn her into a vampire."
         },
         {
           "name": "Cassidy",
@@ -213,7 +213,7 @@
         },
         {
           "label": "S3 · The Saint takes Eugene",
-          "text": "Freshly returned from Hell, Eugene is adopted straight from an orphanage by the Saint of Killers, who plans to use him as bait for Jesse.",
+          "text": "Freshly returned from Hell, Eugene is adopted straight from an orphanage by the Saint of Killers.",
           "anchorEpisode": 6,
           "whyLoadBearing": "Puts Eugene in the Saint's hands and gives the Saint a personal motivator that persists into the next season.",
           "needsVerify": false
@@ -391,5 +391,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-03T00:26:15.746Z"
+  "repairedAt": "2026-08-03T06:23:10.881Z"
 }

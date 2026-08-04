@@ -34,7 +34,7 @@
         },
         {
           "label": "S1 · Cintra falls",
-          "text": "Nilfgaard sacks Cintra; Queen Calanthe kills herself and Ciri flees into the countryside, hunted across the wreckage by the Nilfgaardian officer Cahir for her latent power.",
+          "text": "Nilfgaard sacks Cintra and breaches the castle; Ciri flees into the countryside, hunted across the wreckage by the Nilfgaardian officer Cahir for her latent power.",
           "anchorEpisode": 7,
           "whyLoadBearing": "Displaces Ciri and puts Nilfgaard on her trail — the pursuit that will drive every remaining season.",
           "needsVerify": false
@@ -90,7 +90,7 @@
         },
         {
           "name": "Vilgefortz",
-          "line": "Ambitious young sorcerer who rallied the mages against Nilfgaard; survived Sodden and is now a Northern hero.",
+          "line": "Ambitious young sorcerer who rallied the mages against Nilfgaard; exposed at Sodden as a Nilfgaardian turncoat after losing to Cahir.",
           "note": ""
         },
         {
@@ -137,7 +137,7 @@
         },
         {
           "label": "S2 · The betrayal breaks",
-          "text": "Yennefer reunites with Geralt and Ciri and tries to hand Ciri to Voleth Meir, but relents at the last moment; her pain lets the demon possess Ciri instead.",
+          "text": "Yennefer reunites with Geralt and Ciri and tries to hand Ciri to Voleth Meir, but relents; Francesca's grief over her murdered baby frees the demon to possess Ciri instead.",
           "anchorEpisode": 7,
           "whyLoadBearing": "Ends Yennefer's arc of betrayal and directly triggers the season's climax.",
           "needsVerify": false
@@ -296,7 +296,7 @@
         },
         {
           "name": "Emhyr var Emreis",
-          "line": "Emperor of Nilfgaard; unknowingly hosting a doppelgänger of Ciri while planning to marry the real one.",
+          "line": "Emperor of Nilfgaard; unknowingly hosting a doppelgänger of Ciri.",
           "note": ""
         },
         {
@@ -337,7 +337,7 @@
         },
         {
           "label": "S4 · Ciri with the Rats",
-          "text": "Now calling herself Falka, Ciri bonds with the outlaw Rats and their lover Mistle; her growing savagery draws the notice of the bounty hunter Leo Bonhart.",
+          "text": "Ciri bonds with the outlaw Rats and their lover Mistle; her growing savagery draws the notice of the bounty hunter Leo Bonhart.",
           "anchorEpisode": 2,
           "whyLoadBearing": "Sets up Ciri's descent and puts Bonhart — the season's real threat to her — on her trail.",
           "needsVerify": false
@@ -424,7 +424,7 @@
         },
         {
           "name": "Jaskier",
-          "line": "Travelling with Geralt again after Dijkstra tortured him into breaking with Radovid.",
+          "line": "Travelling with Geralt again after Dijkstra tortured Geralt into breaking his bond with Radovid.",
           "note": ""
         },
         {
@@ -439,5 +439,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T06:24:47.797Z"
 }

@@ -55,7 +55,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Haniwa is a Trivantian prisoner of Baba's own brother. Maghra sits on a throne beside the sister who tried to kill her children, believing her family dead, while Baba and Kofun approach Edo's capital blind.",
+        "text": "Haniwa is a Trivantian prisoner of Baba's own brother. Maghra sits on a throne beside the sister who tried to kill her children, dispatching the Witchfinder army to find her family, while Baba and Kofun approach Edo's capital blind.",
         "questions": [
           "Can Baba reach Haniwa inside his own brother's stronghold?",
           "What will Maghra do when she learns Sibeth drowned Kanzua herself?",
@@ -147,14 +147,14 @@
         },
         {
           "label": "S2 · Paris dies, Baba leaves, Tormada rises",
-          "text": "Sibeth admits Kofun fathered her child, then murders Paris when she moves against her. Baba slips out of Pennsa alone; in Trivantes, Tormada demonstrates a new weapon.",
+          "text": "Sibeth admits Kofun fathered her child, then murders Paris when she moves against her. Baba slips out of Pennsa alone; in Trivantes, Oloman demonstrates a new weapon.",
           "anchorEpisode": 8,
           "whyLoadBearing": "The exact three-way setup S3 opens on: Sibeth caged with the baby, Baba absent, Tormada armed.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "Maghra rules Paya but her sister is caged under her own roof, pregnant with Kofun's child and untouchable because of it. Baba has walked out into the mountains, and a Trivantian named Tormada has just shown his masters a weapon that no army in this world has ever faced.",
+        "text": "Maghra rules Paya but her sister is caged under her own roof, pregnant with Kofun's child and untouchable because of it. Baba has walked out into the mountains, and a Trivantian named Oloman has just shown his masters a weapon that no army in this world has ever faced.",
         "questions": [
           "What does Maghra do with a sister whose baby is now her family's blood?",
           "Will Kofun claim a child fathered on his aunt under drugs?",
@@ -180,7 +180,7 @@
         },
         {
           "name": "Kofun",
-          "line": "Unknowing father of Sibeth's child; training under Tamacti Jun and unmoored by what the Queen did to him."
+          "line": "Unknowing father of Sibeth's child; training under Toad and unmoored by what the Queen did to him."
         },
         {
           "name": "Tamacti Jun",
@@ -200,7 +200,7 @@
         },
         {
           "name": "Tormada",
-          "line": "Trivantian scientist who has just unveiled an explosive weapon powerful enough to reshape a war."
+          "line": "Trivantian who has just unveiled an explosive weapon powerful enough to reshape a war."
         }
       ]
     },
@@ -250,7 +250,7 @@
         },
         {
           "label": "S3 · Two sacrifices",
-          "text": "Maghra kills Sibeth in her tent as Baba and Ranger blow the last bomb stores — and themselves — apart. Haniwa and Wren leave Pennsa to find other sighted people.",
+          "text": "Maghra kills Sibeth in her tent as Baba sacrifices himself to destroy the last of Tormada's bomb stores. Haniwa and Wren leave Pennsa to find other sighted people.",
           "anchorEpisode": 8,
           "whyLoadBearing": "Closes every open thread: the weapon, the sister, and the marriage — and points the survivors in three different directions.",
           "needsVerify": false
@@ -291,7 +291,7 @@
         },
         {
           "name": "Baba Voss",
-          "line": "Dead; blew himself up with Ranger and the last of Tormada's bomb stores."
+          "line": "Dead; sacrificed himself destroying the last of Tormada's bomb stores."
         },
         {
           "name": "Sibeth Kane",
@@ -307,5 +307,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T06:43:17.428Z"
 }

@@ -150,7 +150,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Murphy is being ferried by Dr. Merch and a submarine crew to a zombie-free island called Zona. 10K lies shot at the abandoned CDC house, and the rest of the team has been captured by unidentified foreign guards. In the final image, Murphy's abandoned daughter hosts a tea party with docile zombies.",
+        "text": "Murphy is being ferried by Dr. Merch and a submarine crew to a zombie-free island called Zona. 10K, taken from the house alongside Murphy, has vanished by the time the team reaches the beach, and the rest of the team has been captured by unidentified foreign guards. In the final image, Murphy's abandoned daughter hosts a tea party with docile zombies.",
         "questions": [
           "Where is Zona, and what do the people running it actually want with Murphy?",
           "Is 10K still alive after being shot at the CDC house?",
@@ -172,7 +172,7 @@
         },
         {
           "name": "10K",
-          "line": "Shot at the CDC house during the final firefight and left behind; his condition is unknown."
+          "line": "Escorted away from the CDC house with Murphy by the submarine crew, then unaccounted for by the time the group reaches the beach."
         },
         {
           "name": "Addy",
@@ -197,5 +197,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-03T00:12:01.905Z"
+  "repairedAt": "2026-08-03T06:12:12.274Z"
 }

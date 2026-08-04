@@ -41,7 +41,7 @@
         },
         {
           "label": "S1 · Reynolds ascends",
-          "text": "The President dies of an apparent heart attack and Reynolds is sworn in. Veronica finds Steadman alive in his Montana mansion and is killed there.",
+          "text": "The President dies of an apparent heart attack and Reynolds is sworn in. Veronica finds Steadman alive in his Montana mansion.",
           "anchorEpisode": 22,
           "whyLoadBearing": "Reynolds now holds the office the Company installed her in — the political prize the tape will threaten.",
           "needsVerify": false
@@ -97,7 +97,7 @@
         },
         {
           "name": "L.J. Burrows",
-          "line": "Lincoln's teenage son, framed for his mother's murder and in custody in Arizona."
+          "line": "Lincoln's teenage son, framed for his mother's murder and arrested after ambushing Kellerman."
         },
         {
           "name": "Brad Bellick",
@@ -158,7 +158,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Michael and Mahone are locked inside a lawless Panamanian prison the Company wanted them in. Sara is missing, L.J. is captured with Aldo's ally in tow, and the General is watching everything unfold to plan.",
+        "text": "Michael and Mahone are locked inside a lawless Panamanian prison the Company wanted them in. Sara is missing, and the General is watching everything unfold to plan.",
         "questions": [
           "Why did the Company want Michael inside Sona?",
           "Is Sara alive, and who has her?",
@@ -172,7 +172,7 @@
         },
         {
           "name": "Lincoln Burrows",
-          "line": "The only Fox River escapee exonerated in court, but with L.J. captured again and Sara missing."
+          "line": "The only Fox River escapee exonerated in court, but with Sara missing."
         },
         {
           "name": "Sara Tancredi",
@@ -184,7 +184,7 @@
         },
         {
           "name": "Fernando Sucre",
-          "line": "Free in Mexico with Maricruz, but the Westmoreland money is gone and Bellick tracked him there."
+          "line": "Still hunting for Maricruz, who Bellick has locked away, with the Westmoreland money gone and Sucre stranded in Panama."
         },
         {
           "name": "Theodore 'T-Bag' Bagwell",
@@ -204,7 +204,7 @@
         },
         {
           "name": "L.J. Burrows",
-          "line": "Freed briefly by Aldo's people, captured again by the Company."
+          "line": "Freed by Aldo's people and taken to safety by Aldo's associate."
         }
       ]
     },
@@ -275,7 +275,7 @@
         },
         {
           "name": "Lincoln Burrows",
-          "line": "Free in Panama with L.J. and Sofia recovered; hiding from Michael that he saw Sara's head."
+          "line": "Free in Panama with L.J. and Sofia recovered after telling Michael the truth about Sara."
         },
         {
           "name": "Sara Tancredi",
@@ -497,5 +497,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T06:40:17.662Z"
 }

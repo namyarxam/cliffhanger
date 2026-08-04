@@ -445,7 +445,7 @@
         },
         {
           "label": "S5 · The coalition forms",
-          "text": "Bjorn, Ubbe, and Harald ally against Ivar; on the battlefield, Harald kills his own brother Halfdan in the melee.",
+          "text": "Bjorn and Ubbe ally with Lagertha against Ivar and Harald; on the battlefield, Harald kills his own brother Halfdan in the melee.",
           "anchorEpisode": 20,
           "whyLoadBearing": "Removes Halfdan and swings Harald into position to matter later.",
           "needsVerify": false
@@ -459,7 +459,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Ivar has been driven out of Kattegat and fled east with a handful of loyalists; Bjorn is king. The Seer, before Ivar killed him, warned Bjorn that the war is not over.",
+        "text": "Ivar has been driven out of Kattegat and fled east with a handful of loyalists; Bjorn is king. In a vision, the Seer warns him that the war is not over.",
         "questions": [
           "Where does Ivar go now, and what does he do when he gets there?",
           "Can Bjorn hold the kingdom he has just won?",
@@ -605,5 +605,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-03T00:08:13.616Z"
+  "repairedAt": "2026-08-03T06:10:29.421Z"
 }

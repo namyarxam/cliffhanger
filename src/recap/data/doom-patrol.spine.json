@@ -55,7 +55,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "The team is tiny at Doom Manor, forced to reckon with the fact that Caulder — their savior — deliberately ruined their lives to gain immortality, and that his hidden teenage daughter Dorothy carries some power he was desperate to protect the world from.",
+        "text": "The team is tiny at Doom Manor, forced to reckon with the fact that Caulder — their savior — deliberately ruined their lives to extend his own life, so that he might protect his hidden daughter Dorothy.",
         "questions": [
           "Why was Caulder so terrified of what Dorothy might do that he built a manor to hide her?",
           "Can the team ever forgive Caulder for orchestrating the accidents that broke them?",
@@ -126,14 +126,14 @@
         },
         {
           "label": "S2 · Roni turns violent",
-          "text": "Vic dates ex-soldier Roni, then finds she was enhanced by the Ant Farm and dying of it; she steals sex-demon 'Uma Jelly' to re-enhance and commits a revenge murder.",
+          "text": "Vic dates ex-soldier Roni, finds she was enhanced by S.T.A.R. Labs and Caulder Robotics and dying of it; she steals Scants 'Uma Jelly' to re-enhance and commits a revenge murder.",
           "anchorEpisode": 8,
           "whyLoadBearing": "Sets up the impossible choice Vic will make about Roni at the start of the next season.",
           "needsVerify": false
         },
         {
           "label": "S2 · Baby Doll and Katy die",
-          "text": "Dorothy accidentally kills Jane's child alter Baby Doll, then invites the Candlemaker into the Underground to slay Katy; Miranda returns as Primary, deposing Jane.",
+          "text": "After Baby Doll and Katy kill her imaginary friend, Dorothy invites the Candlemaker into the Underground to slay them; Miranda returns as Primary, deposing Jane.",
           "anchorEpisode": 5,
           "whyLoadBearing": "The coup that removes Jane from her own body and gives the Candlemaker a foothold in her mind.",
           "needsVerify": false
@@ -188,7 +188,7 @@
         },
         {
           "name": "Dorothy Spinner",
-          "line": "Caulder's daughter, immortal from her mother Slava; the Candlemaker calls to her endlessly, wanting to be summoned."
+          "line": "Caulder's daughter; the Candlemaker calls to her endlessly, wanting to be summoned."
         },
         {
           "name": "The Candlemaker",
@@ -358,7 +358,7 @@
         },
         {
           "name": "Rita Farr",
-          "line": "The team's undisputed leader through the whole crisis; dies of old age and reunites with Malcolm in the afterlife."
+          "line": "Voted out of leadership at the start of the crisis; dies of old age and reunites with Malcolm in the afterlife."
         },
         {
           "name": "Larry Trainor / Negative Man",
@@ -386,5 +386,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T06:32:07.446Z"
 }

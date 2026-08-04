@@ -41,7 +41,7 @@
         },
         {
           "label": "S1 · Red falls",
-          "text": "Bennett reports Red's Neptune's Produce smuggling to Caputo; Red loses her kitchen to Gloria, and Mendez is arrested for statutory rape once Daya's pregnancy shows.",
+          "text": "Bennett reports Red's Neptune's Produce smuggling to Caputo; Red loses her kitchen to Gloria, and Caputo catches Mendez with Daya and puts him on unpaid leave.",
           "anchorEpisode": 12,
           "whyLoadBearing": "Strips Red of her power base, setting up her season-two struggle to rebuild.",
           "needsVerify": false
@@ -303,7 +303,7 @@
         },
         {
           "name": "Charlie Coates",
-          "line": "The rapist CO, who has since apologised and remains on staff at Litchfield."
+          "line": "The rapist CO, still on staff at Litchfield."
         },
         {
           "name": "Daya Diaz",
@@ -505,7 +505,7 @@
         },
         {
           "name": "Nicky Nichols",
-          "line": "Kicked drugs again mid-riot; helped rescue the tortured inmates and is with the bunker group."
+          "line": "Nursed Red as she came down from her drug high; helped rescue the tortured inmates and is with the bunker group."
         },
         {
           "name": "Suzanne 'Crazy Eyes' Warren",
@@ -521,7 +521,7 @@
         },
         {
           "name": "Caputo",
-          "line": "Slept with MCC's Linda, then quit after the negotiations collapsed."
+          "line": "Slept with MCC's Linda; locked in a Porta-Potty, then let out by Taystee to back up the inmates' slave-labor claim to Figueroa."
         },
         {
           "name": "Piscatella",
@@ -558,7 +558,7 @@
         },
         {
           "label": "S6 · Alex and McCullough",
-          "text": "Piper spends weeks fearing Alex died in the pool; Alex resurfaces in gen pop, coerced into CO Hellman's drug trade, and begins a secret affair with CO McCullough.",
+          "text": "Piper spends weeks fearing Alex died in the pool; Alex resurfaces in gen pop, pulled into Badison and Luschek's phone smuggling and later forced to work for Carol.",
           "anchorEpisode": 5,
           "whyLoadBearing": "Reunites Piper and Alex, and starts the affair that reshapes both women.",
           "needsVerify": false
@@ -616,7 +616,7 @@
         },
         {
           "name": "Nicky Nichols",
-          "line": "In minimum security after the trial; bonded with Barbara over addiction before Barbara's death."
+          "line": "Bonded with Barbara over addiction before Barbara's death."
         },
         {
           "name": "Daya Diaz",
@@ -648,7 +648,7 @@
       "beats": [
         {
           "label": "S7 · Life after Litchfield",
-          "text": "Piper flails outside — parole fees, minimum-wage retail, a distant father — while Alex is trapped in CO Hellman's drug trade and CO McCullough's grip in prison.",
+          "text": "Piper flails outside — parole fees, a job at her father's company, a distant father — while Alex is trapped in CO Hellman's drug trade and CO McCullough's grip in prison.",
           "anchorEpisode": 1,
           "whyLoadBearing": "The marriage-across-the-wall thread that carries the season.",
           "needsVerify": false
@@ -752,5 +752,5 @@
       ]
     }
   },
-  "repairedAt": "2026-07-27T06:55:03.770Z"
+  "repairedAt": "2026-08-03T06:48:11.431Z"
 }

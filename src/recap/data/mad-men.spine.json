@@ -34,7 +34,7 @@
         },
         {
           "label": "S1 · Bert shrugs it off",
-          "text": "Pete tells senior partner Bert Cooper that Don is an impostor; Bert waves it away, and Don retaliates by promoting the outsider Duck Phillips over Pete.",
+          "text": "Don promotes the outsider Duck Phillips over Pete as head of accounts; Pete retaliates by telling senior partner Bert Cooper that Don is an impostor, but Bert waves it away.",
           "anchorEpisode": 12,
           "whyLoadBearing": "Shows the secret is survivable inside the firm and sets up Duck as a rival.",
           "needsVerify": false
@@ -93,7 +93,7 @@
         },
         {
           "name": "Salvatore Romano",
-          "line": "Art director, closeted, who turned down a hotel invitation but is straining against his marriage to Kitty."
+          "line": "Art director, closeted, who turned down a hotel invitation, too afraid to follow through on his attraction to men."
         }
       ]
     },
@@ -286,7 +286,7 @@
         },
         {
           "name": "Pete Campbell",
-          "line": "One of the four staffers Don personally poached for the new firm; a father to Trudy's baby now."
+          "line": "One of the four staffers Don personally poached for the new firm."
         },
         {
           "name": "Peggy Olson",
@@ -373,7 +373,7 @@
         },
         {
           "name": "Megan Calvet",
-          "line": "Don's secretary and now fiancée, aspiring writer, wearing the engagement ring Anna once wore."
+          "line": "Don's secretary and now fiancée, aspiring actress, wearing the engagement ring Anna once wore."
         },
         {
           "name": "Betty Francis",
@@ -603,7 +603,7 @@
         },
         {
           "name": "Roger Sterling",
-          "line": "Alienated from his daughter Margaret, who has left her family for a commune; still a partner."
+          "line": "Still a partner."
         },
         {
           "name": "Joan Harris",
@@ -689,7 +689,7 @@
         },
         {
           "name": "Joan Holloway",
-          "line": "Bought out of McCann for half her stake; founding her own production company with Ken."
+          "line": "Bought out of McCann for half her stake; founding her own production company after Ken hires her to produce a Dow film."
         },
         {
           "name": "Roger Sterling",
@@ -713,5 +713,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T06:19:21.805Z"
 }

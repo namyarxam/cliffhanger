@@ -168,7 +168,7 @@
         },
         {
           "name": "Major",
-          "line": "Exposed as the Chaos Killer, freed after Liv outed herself to Clive; still human and estranged from Liv."
+          "line": "Exposed as the Chaos Killer, freed after Liv outed herself to Clive; re-zombified and estranged from Liv."
         },
         {
           "name": "Blaine DeBeers",
@@ -203,14 +203,14 @@
         },
         {
           "label": "S3 · Harley Kills Wally",
-          "text": "Anti-zombie militant Harley Johns starts hunting zombies; his group murders Clive's neighbours, a family whose son Wally has just turned.",
+          "text": "Anti-zombie militant Harley Johns starts hunting zombies after the Max Rager outbreak footage goes public.",
           "anchorEpisode": 2,
           "whyLoadBearing": "Introduces the human-side threat and the Wally case that drives Clive's whole season.",
           "needsVerify": false
         },
         {
           "label": "S3 · Temporary Cure",
-          "text": "Ravi confirms the cure only works briefly — zombies revert without booster shots — and starts developing a proper vaccine.",
+          "text": "Ravi keeps developing his zombie work, worrying the cure's memory-loss side effect could erase Major for good, and later ingests a potential vaccine.",
           "anchorEpisode": 6,
           "whyLoadBearing": "Explains why cures keep failing and sets up his self-experiment at season's end.",
           "needsVerify": false
@@ -263,7 +263,7 @@
         },
         {
           "name": "Clive Babineaux",
-          "line": "Homicide detective; devastated by the Wally murder and dating FBI agent Dale, who was turned zombie by the fake vaccine."
+          "line": "Homicide detective; devastated by the Wally murder and working alongside his ex-girlfriend, FBI agent Dale, on the case."
         },
         {
           "name": "Major",
@@ -283,7 +283,7 @@
         },
         {
           "name": "Dale Bozzio",
-          "line": "FBI agent, Clive's girlfriend, turned zombie by the FG flu vaccine."
+          "line": "FBI agent and Clive's ex-girlfriend, turned zombie by the FG flu vaccine."
         },
         {
           "name": "Angus DeBeers",
@@ -323,7 +323,7 @@
         },
         {
           "label": "S4 · Isobel's Cure",
-          "text": "Isobel — a young zombie Liv smuggled in, dying of Freylich Syndrome — dies; Ravi tests her postmortem brain and discovers it contains a true zombie cure.",
+          "text": "Isobel — a human Liv smuggled in who is scratched repeatedly but mysteriously never turns — dies; Ravi tests her brain and finds it contains a true zombie cure.",
           "anchorEpisode": 12,
           "whyLoadBearing": "First real cure of the series; every future political and medical fight orbits it.",
           "needsVerify": false
@@ -415,7 +415,7 @@
         },
         {
           "label": "S5 · Freylich Harvest",
-          "text": "Blaine starts contracting Freylich teens for their postmortem brains, imprisons journalist Al when she exposes him, and murders Don E's girlfriend Darcy.",
+          "text": "Blaine starts contracting Freylich teens for their postmortem brains, tries to threaten journalist Al after her exposé but is rebuffed, and murders Don E's girlfriend Darcy.",
           "anchorEpisode": 8,
           "whyLoadBearing": "Locks in Blaine's villainy and plants the personal grievance that gets him killed.",
           "needsVerify": false
@@ -485,5 +485,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T06:35:26.654Z"
 }

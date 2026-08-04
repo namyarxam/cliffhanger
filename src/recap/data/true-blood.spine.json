@@ -20,7 +20,7 @@
         },
         {
           "label": "S1 · Sookie and Bill, and Gran",
-          "text": "Sookie and Bill fall into a relationship, and she loses her virginity to him. Days later she comes home to find her grandmother Adele murdered in the kitchen.",
+          "text": "Sookie comes home to find her grandmother Adele murdered in the kitchen. In her grief, she goes to Bill and loses her virginity to him.",
           "anchorEpisode": 6,
           "whyLoadBearing": "Locks in the central romance and removes Sookie's anchor, isolating her.",
           "needsVerify": false
@@ -172,7 +172,7 @@
         },
         {
           "name": "Jason Stackhouse",
-          "line": "Fresh off shooting a mind-controlled Eggs dead; the town believes it was justified, but Jason knows he pulled the trigger on an unarmed man."
+          "line": "Fresh off shooting a mind-controlled Eggs dead as he held Andy at knifepoint; the town believes it was justified, but Jason knows he pulled the trigger."
         },
         {
           "name": "Tara Thornton",
@@ -184,7 +184,7 @@
         },
         {
           "name": "Jessica Hamby",
-          "line": "Baby vampire in a relationship with Hoyt Fortenberry, and has secretly fed on a trucker to death at a gas station."
+          "line": "Baby vampire in a relationship with Hoyt Fortenberry, and has secretly fed on a trucker at a gas station."
         },
         {
           "name": "Steve and Sarah Newlin",
@@ -366,7 +366,7 @@
         },
         {
           "name": "Bill Compton",
-          "line": "King of Louisiana, having killed Nan Flanagan and her guards to keep Sookie's fae heritage secret from the Authority."
+          "line": "King of Louisiana, having dealt Nan Flanagan the True Death to keep Sookie's fae heritage secret from the Authority."
         },
         {
           "name": "Eric Northman",
@@ -394,7 +394,7 @@
         },
         {
           "name": "Lafayette Reynolds",
-          "line": "Grieving Jesús, who died freeing Eric — and possessed at season's end by Marnie's spirit."
+          "line": "Grieving Jesús, who was killed by possessed-Lafayette after severing Marnie from Antonia — and possessed at season's end by Marnie's spirit."
         },
         {
           "name": "Steve Newlin",
@@ -600,7 +600,7 @@
         },
         {
           "name": "Sarah Newlin",
-          "line": "On the run after tainting the state's Tru Blood supply — and, unknown to her enemies, walking around with the Hep-V cure literally in her blood."
+          "line": "On the run after tainting the state's Tru Blood supply."
         },
         {
           "name": "Andy Bellefleur",
@@ -703,5 +703,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T06:52:25.491Z"
 }

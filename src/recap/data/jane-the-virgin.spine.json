@@ -41,7 +41,7 @@
         },
         {
           "label": "S1 · Jane picks Michael",
-          "text": "Jane and Rafael's romance collapses; she reunites with Michael, accepts his proposal, and gives birth to a son named Mateo.",
+          "text": "Jane and Rafael's romance collapses; she remains ambivalent about Michael and gives birth to a son named Mateo.",
           "anchorEpisode": 22,
           "whyLoadBearing": "Sets Jane and Michael's alignment and delivers the baby the whole show revolves around.",
           "needsVerify": false
@@ -192,11 +192,11 @@
         },
         {
           "name": "Rogelio de la Vega",
-          "line": "Jane's telenovela-star father, drunkenly married Xo in Vegas and working through what that means."
+          "line": "Jane's telenovela-star father, navigating his on-again off-again relationship with Xo."
         },
         {
           "name": "Xiomara Villanueva",
-          "line": "Jane's mother, drunkenly married to Rogelio and trying to make the marriage real."
+          "line": "Jane's mother, broken up with Rogelio over the baby issue but still acting like a couple."
         },
         {
           "name": "Alba Villanueva",
@@ -275,7 +275,7 @@
         },
         {
           "name": "Petra Solano",
-          "line": "Running the rebranded Marbella and mother to twins Anna and Elsa; just held at gunpoint by her twin."
+          "line": "Running the rebranded Marbella and mother to twins Anna and Ellie; just held at gunpoint by her twin."
         },
         {
           "name": "Anezka",
@@ -311,7 +311,7 @@
       "beats": [
         {
           "label": "S4 · Anezka, gone for good",
-          "text": "Petra shoves Anezka into the sea to escape her gun; Anezka survives, resurfaces, and eventually hangs herself after Petra outmaneuvers her.",
+          "text": "Petra shoves Anezka into the sea to escape her gun; Anezka survives, resurfaces, and eventually dies in a fall from the balcony after Petra outmaneuvers her.",
           "anchorEpisode": 7,
           "whyLoadBearing": "Closes the twin threat but leaves Petra legally exposed for Anezka's death.",
           "needsVerify": false
@@ -339,28 +339,28 @@
         },
         {
           "label": "S4 · The parents mystery",
-          "text": "Rafael digs for his real biological parents, but Luisa vanishes and Rose starts blackmailing him for the information she has.",
+          "text": "Rafael digs for his real biological parents, but Luisa vanishes and Rose starts blackmailing him to reveal Luisa's location.",
           "anchorEpisode": 13,
           "whyLoadBearing": "Rose's leverage over Rafael is what sets up the finale twist.",
           "needsVerify": false
         },
         {
           "label": "S4 · Xo's cancer",
-          "text": "Xo is diagnosed with breast cancer and endures chemotherapy that costs her energy and eventually her fertility.",
+          "text": "Xo is diagnosed with breast cancer and endures chemotherapy that takes a heavy toll on her health.",
           "anchorEpisode": 13,
           "whyLoadBearing": "Xo's illness is the family's ongoing crisis carrying into S5.",
           "needsVerify": false
         },
         {
           "label": "S4 · The proposal that isn't",
-          "text": "Rafael prepares to propose to Jane, but a call from Rose in prison shakes him — he pulls back at the last moment, hiding what she told him.",
+          "text": "Rafael prepares to propose to Jane, but a call from Rose in prison shakes him — and in a shocking twist, he reveals the reason to Jane.",
           "anchorEpisode": 17,
           "whyLoadBearing": "The exact hook S5 opens on: what Rose said to Rafael.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "Rafael was on the verge of proposing to Jane when a call from Rose in prison stopped him. He has pulled back and won't say why, hiding the news she gave him.",
+        "text": "Rafael was on the verge of proposing to Jane when a call from Rose in prison stopped him. In a shocking twist, he reveals the reason to Jane.",
         "questions": [
           "What did Rose tell Rafael?",
           "Can Rafael and Jane's rekindled relationship survive whatever he's hiding?",
@@ -517,5 +517,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T06:59:29.304Z"
 }

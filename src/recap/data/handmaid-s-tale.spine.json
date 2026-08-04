@@ -90,7 +90,7 @@
         },
         {
           "name": "Janine / Ofwarren",
-          "line": "Fragile handmaid who bore Angela and jumped from a bridge with her; comatose then spared when the handmaids refused to stone her."
+          "line": "Fragile handmaid who bore Angela and handed her to June on a bridge before jumping alone into the icy water; comatose then spared when the handmaids refused to stone her."
         }
       ]
     },
@@ -166,7 +166,7 @@
         },
         {
           "name": "Emily",
-          "line": "Survived the Colonies and killed her new Commander during a Ceremony; handed the wheel of an escape truck with baby Nichole in tow."
+          "line": "Survived the Colonies and saw her new Commander die during a Ceremony; handed the wheel of an escape truck with baby Nichole in tow."
         },
         {
           "name": "Aunt Lydia",
@@ -225,14 +225,14 @@
         },
         {
           "label": "S3 · Winslow and the plane",
-          "text": "June kills High Commander Winslow at Jezebels and leads 52 children onto a plane out of Gilead. She is shot covering their escape but is carried away by handmaids alive.",
+          "text": "June kills High Commander Winslow at Jezebels and leads children onto a plane out of Gilead. She is shot covering their escape but is carried away by handmaids alive.",
           "anchorEpisode": 13,
           "whyLoadBearing": "The centrepiece of the season and the reason June is a wanted fugitive at the start of S4.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "Fifty-two children including baby Nichole are on Canadian soil. Both Waterfords sit in Canadian detention, each having betrayed the other. June is bleeding out in the woods, carried away by her handmaids.",
+        "text": "Children including baby Nichole are on Canadian soil. Both Waterfords sit in Canadian detention, each having betrayed the other. June is bleeding out in the woods, carried away by her handmaids.",
         "questions": [
           "Does June survive her wound?",
           "Will the Waterfords face trial for war crimes?",
@@ -242,7 +242,7 @@
       "characters": [
         {
           "name": "June Osborne",
-          "line": "Handmaid to Commander Lawrence, wounded but alive after leading 52 children out of Gilead on a plane."
+          "line": "Handmaid to Commander Lawrence, wounded but alive after leading children out of Gilead on a plane."
         },
         {
           "name": "Nick Blaine",
@@ -262,7 +262,7 @@
         },
         {
           "name": "Aunt Lydia",
-          "line": "Assaulted by a handmaid mid-season and slow to recover; still central to handmaid discipline."
+          "line": "Threatened at gunpoint by a handmaid mid-season; still central to handmaid discipline."
         },
         {
           "name": "Mark Tuello",
@@ -278,7 +278,7 @@
         },
         {
           "name": "Rita",
-          "line": "Escaped Gilead as the carer of the 52 rescued children, now free in Canada."
+          "line": "Escaped Gilead as the carer of the rescued children, now free in Canada."
         }
       ]
     },
@@ -370,7 +370,7 @@
         },
         {
           "name": "Janine",
-          "line": "Recaptured on the tracks and forced back into handmaid service under Aunt Lydia."
+          "line": "Escapes with June at the train tracks and reaches Chicago, but is recaptured later and placed back in Aunt Lydia's care as a handmaid in training."
         },
         {
           "name": "Esther Keyes",
@@ -454,7 +454,7 @@
         },
         {
           "name": "Commander Wharton",
-          "line": "Powerful traditionalist and Nick's father-in-law; wary of Lawrence's liberal experiment."
+          "line": "Powerful traditionalist commander wary of Lawrence's liberal experiment; executed by Nick after raping Esther."
         },
         {
           "name": "Commander Joseph Lawrence",
@@ -573,5 +573,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T06:57:40.314Z"
 }

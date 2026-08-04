@@ -27,7 +27,7 @@
         },
         {
           "label": "S1 · Boyd's diagnosis",
-          "text": "Boyd privately confesses early-onset Parkinson's to Kristi and starts planning an expedition into the woods with Sara to find a way home.",
+          "text": "Boyd privately confesses early-onset Parkinson's to Kenny and starts planning an expedition into the woods with Sara to find a way home.",
           "anchorEpisode": 6,
           "whyLoadBearing": "Sets Boyd's mortality clock and the trip that ends the season.",
           "needsVerify": false
@@ -125,7 +125,7 @@
         },
         {
           "label": "S2 · The music box",
-          "text": "A music box awakens something from Boyd's dungeon. Cicadas kill Reggie's wife and Randall; Marielle and Julie fall into comas as an unseen entity tortures them.",
+          "text": "A music box awakens something from Boyd's dungeon. Cicadas kill Reggie's wife; Randall, Marielle and Julie fall into comas as an unseen entity tortures them.",
           "anchorEpisode": 9,
           "whyLoadBearing": "New class of threat that talismans cannot stop — Boyd inadvertently loosed it.",
           "needsVerify": false
@@ -176,7 +176,7 @@
         },
         {
           "name": "Randall",
-          "line": "Troublemaker who arrived on the bus and was killed by cicadas when the music box awakened something from the dungeon."
+          "line": "Troublemaker who arrived on the bus; attacked by cicadas and left in a coma until Boyd smashed the music box."
         },
         {
           "name": "Victor",
@@ -220,7 +220,7 @@
         },
         {
           "label": "S3 · The Kimono Woman",
-          "text": "A Kimono Woman starts appearing in visions to Elgin and Marielle. Elgin traps Fatima in a cellar and feeds her his own blood; her pregnancy accelerates.",
+          "text": "A Kimono Woman starts appearing in visions to Elgin and Fatima. Elgin traps Fatima in a cellar and feeds her his own blood; her pregnancy accelerates.",
           "anchorEpisode": 8,
           "whyLoadBearing": "New antagonist figure and the mechanism by which Fatima's transformation completes.",
           "needsVerify": false
@@ -241,7 +241,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Jim is dead. Tabitha and Jade know they are reincarnations of Miranda and Christopher — the pair who failed to save the sacrificed children in a past life. Fatima has given birth and the Kimono Woman has taken the baby.",
+        "text": "Jim is dead. Tabitha and Jade know they are reincarnations of Miranda and Christopher — the pair who failed to save the sacrificed children in a past life. Fatima has given birth and the Kimono Woman has vanished with the amniotic sac.",
         "questions": [
           "Who is the Man in Yellow, and why has he shown himself now?",
           "What can Tabitha and Jade do differently to actually save the children this time?",
@@ -279,7 +279,7 @@
         },
         {
           "name": "Kimono Woman",
-          "line": "Apparition who appeared in visions to Elgin and Marielle, helped deliver Fatima's baby, then vanished with the amniotic sac."
+          "line": "Apparition who appeared in visions to Elgin and Fatima, helped deliver Fatima's baby, then vanished with the amniotic sac."
         }
       ]
     },
@@ -379,5 +379,6 @@
       ]
     }
   },
-  "notPeople": []
+  "notPeople": [],
+  "repairedAt": "2026-08-03T06:17:43.076Z"
 }

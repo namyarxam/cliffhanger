@@ -82,7 +82,7 @@
         },
         {
           "name": "Edgar Reade",
-          "line": "Team agent whose relationship with Weller's sister was broken by threats from Carter's people; now openly suspicious of Jane."
+          "line": "Team agent whose relationship with Weller's sister was broken by threats from a masked man warning him off investigating Carter's death; now openly suspicious of Jane."
         },
         {
           "name": "Bethany Mayfair",
@@ -173,7 +173,7 @@
         },
         {
           "name": "Tasha Zapata",
-          "line": "Team agent who chose the FBI over an AUSA recruitment offer; also missing during the two-year gap."
+          "line": "Team agent; also missing during the two-year gap."
         },
         {
           "name": "Edgar Reade",
@@ -331,7 +331,7 @@
         },
         {
           "label": "S4 · Cured, and together",
-          "text": "Roman's data caches lead to a scientist whose stem cells cure Jane's ZIP poisoning; Zapata's cover holds and she and Reade quietly become a couple.",
+          "text": "Roman's data caches lead to a scientist whose stem cells cure Jane's ZIP poisoning; Zapata's cover holds and Reade takes over as her CIA handler, ending their relationship.",
           "anchorEpisode": 12,
           "whyLoadBearing": "Clears the personal wreckage so Season 4's back half can be about Madeline unopposed.",
           "needsVerify": false
@@ -355,7 +355,7 @@
       "characters": [
         {
           "name": "Jane Doe",
-          "line": "Cured of ZIP and restored to herself after months trapped as Remi; the only member of the team not inside the cottage when the drone hits."
+          "line": "Cured of ZIP and restored to herself after months trapped as Remi; inside the cottage with the rest of the team when the drone hits."
         },
         {
           "name": "Kurt Weller",
@@ -367,11 +367,11 @@
         },
         {
           "name": "Tasha Zapata",
-          "line": "CIA plant inside Madeline's HCI Global; her cover has held even as she and Reade have secretly become a couple."
+          "line": "CIA plant inside Madeline's HCI Global; her cover has held, but Reade has taken over as her handler and ended their relationship."
         },
         {
           "name": "Edgar Reade",
-          "line": "Team agent and Zapata's secret CIA handler; now in a real, quiet relationship with her by the finale."
+          "line": "Team agent and Zapata's secret CIA handler; ended their relationship when he took over handling her by the finale."
         },
         {
           "name": "Rich Dotcom",
@@ -482,5 +482,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T06:44:39.951Z"
 }

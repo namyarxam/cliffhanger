@@ -48,7 +48,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Joe has literally gotten away with everything: Beck is dead, Dr. Nicky is imprisoned for his crimes, and the bookstore is his again. Then Candace — the ex he assaulted and thought dead — appears with a promise of unfinished business.",
+        "text": "Joe has literally gotten away with everything: Beck is dead, Dr. Nicky is imprisoned for his crimes, and the bookstore is his again. Then Candace — the ex no one had heard from since — appears with a promise of unfinished business.",
         "questions": [
           "What does Candace want from him — exposure, revenge, or something else?",
           "Can she prove any of it after all this time?",
@@ -70,7 +70,7 @@
         },
         {
           "name": "Candace Stone",
-          "line": "Joe's ex-girlfriend, whom he once assaulted and buried alive; returned to the bookstore at season's end promising to make him suffer."
+          "line": "Joe's ex-girlfriend, whose lover Elijah he pushed to his death; returned to the bookstore at season's end promising to make him suffer."
         },
         {
           "name": "Paco",
@@ -124,14 +124,14 @@
         },
         {
           "label": "S2 · Suburbia and the new neighbor",
-          "text": "Forty threatens Joe with a gun and is shot dead by police. Joe and Love marry, move to suburban Madre Linda, and Joe is already spying on the neighbor's wife.",
+          "text": "Forty threatens Joe with a gun and is shot dead by police. Joe and Love move into a new house in the suburbs, and Joe is already spying on the neighbor's wife.",
           "anchorEpisode": 10,
           "whyLoadBearing": "The final shot literally sets up Season 3 — the neighbor is Natalie, the season's first murder.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "Joe is married to a woman as dangerous as he is, expecting a child, and locked into suburban domesticity in Madre Linda. He is already stalking the woman next door.",
+        "text": "Joe is with a woman as dangerous as he is, expecting a child, and locked into suburban domesticity in a new house. He is already stalking the woman next door.",
         "questions": [
           "Can Joe keep his obsessive pattern hidden from someone who kills the same way he does?",
           "Will Love murder again the moment she senses she's losing him?",
@@ -141,7 +141,7 @@
       "characters": [
         {
           "name": "Joe Goldberg",
-          "line": "Living as 'Will' in LA, newly married to Love and about to be a father; trapped by a partner whose violence matches his and already fixated on someone new."
+          "line": "Living as 'Will' in LA, settled with Love and about to be a father; trapped by a partner whose violence matches his and already fixated on someone new."
         },
         {
           "name": "Love Quinn",
@@ -193,7 +193,7 @@
         },
         {
           "label": "S3 · Theo pieces it together",
-          "text": "Theo cracks Matthew's secret surveillance of the neighborhood and pieces together Love's role in Natalie's death. Love beats him half to death in the bakery.",
+          "text": "Theo cracks Matthew's secret surveillance of the neighborhood and pieces together Joe's role in Natalie's death. Love beats him half to death in the bakery.",
           "anchorEpisode": 9,
           "whyLoadBearing": "The evidence trail that eventually clears Joe's escape depends on Theo, not any character Joe controls.",
           "needsVerify": false
@@ -414,5 +414,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T06:28:10.264Z"
 }

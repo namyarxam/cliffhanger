@@ -154,7 +154,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Mao is a prisoner but the protomolecule is loose everywhere at once — on Venus, on Tycho with Fred Johnson, and inside living Belter children being kept in stasis on Io. Everyone has a piece and nobody has control.",
+        "text": "Mao is still at large but the protomolecule is loose everywhere at once — on Venus, on Tycho with Fred Johnson, and inside living Belter children being kept in stasis on Io. Everyone has a piece and nobody has control.",
         "questions": [
           "What is the protomolecule building on Venus?",
           "How many other children are being turned into hybrids, and who else is running the programme now that Mao is caught?",
@@ -192,7 +192,7 @@
         },
         {
           "name": "Chrisjen Avasarala",
-          "line": "UN operator who has forced Mao into her custody, but is still working alongside the very colleague who set the conspiracy in motion."
+          "line": "UN operator who has cornered Mao into a face-to-face meeting on his ship, but is still working alongside the very colleague who set the conspiracy in motion."
         },
         {
           "name": "Fred Johnson",
@@ -200,7 +200,7 @@
         },
         {
           "name": "Jules-Pierre Mao",
-          "line": "Protomolecule financier, now Avasarala's prisoner on Earth."
+          "line": "Protomolecule financier, now meeting Avasarala on his own ship outside UN control."
         },
         {
           "name": "Sadavir Errinwright",
@@ -247,7 +247,7 @@
         },
         {
           "label": "S3 · Clarissa's revenge",
-          "text": "On the UN flagship, tech Melba Koh unmasks as Mao's other daughter Clarissa; she frames Holden for a bombing and stows away aboard the OPA warship Behemoth to kill him herself.",
+          "text": "On the UN flagship, tech Melba Koh unmasks as Mao's other daughter Clarissa; she frames Holden for a bombing and later boards the Rocinante to attack Naomi while hunting him.",
           "anchorEpisode": 9,
           "whyLoadBearing": "Introduces Clarissa Mao, whose life-debt to Holden's crew becomes a recurring thread in later seasons.",
           "needsVerify": false
@@ -287,7 +287,7 @@
         },
         {
           "name": "Bobbie Draper",
-          "line": "Ex-MCRN marine, now fully attached to Avasarala's inner circle."
+          "line": "Ex-MCRN marine, reinstated into the Martian fleet and, by season's end, joining the Rocinante crew."
         },
         {
           "name": "Chrisjen Avasarala",
@@ -295,7 +295,7 @@
         },
         {
           "name": "Camina Drummer",
-          "line": "Fred Johnson's second, captaining the OPA warship Behemoth after being crippled and given mechanical legs."
+          "line": "Captained the OPA warship Behemoth until she was crushed freeing herself and Ashford; now on mechanical legs while Ashford holds the captaincy."
         },
         {
           "name": "Klaes Ashford",
@@ -311,7 +311,7 @@
         },
         {
           "name": "Joe Miller",
-          "line": "The dead detective, briefly present as a protomolecule Investigator inside Holden's head until the Ring station absorbed him."
+          "line": "The dead detective, present as a protomolecule Investigator construct inside Holden's head, still speaking with him at season's end."
         }
       ]
     },
@@ -629,5 +629,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T06:55:39.875Z"
 }

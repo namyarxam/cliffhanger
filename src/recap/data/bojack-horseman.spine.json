@@ -169,7 +169,7 @@
         },
         {
           "name": "Ana Spanakopita",
-          "line": "Steely new publicist running BoJack's Oscar campaign, sleeping with him on the side."
+          "line": "New publicist running BoJack's Oscar campaign."
         },
         {
           "name": "Charlotte Carson",
@@ -248,7 +248,7 @@
         },
         {
           "name": "Diane Nguyen",
-          "line": "Now writes for a feminist website run by Ralph's sister after her Sextina abortion story landed; still married to Mr. Peanutbutter."
+          "line": "Now writes for a feminist website run by Ralph's sister after her stand against Hank Hippopopalous; still married to Mr. Peanutbutter."
         },
         {
           "name": "Mr. Peanutbutter",
@@ -264,7 +264,7 @@
         },
         {
           "name": "Sarah Lynn",
-          "line": "Dead of an overdose in BoJack's arms at the planetarium; won a posthumous Oscar."
+          "line": "Dead of an overdose in BoJack's arms at the planetarium; won an Oscar shortly before her death."
         },
         {
           "name": "Katrina",
@@ -442,7 +442,7 @@
         },
         {
           "name": "Mr. Peanutbutter",
-          "line": "Just proposed to Pickles after being caught cheating with Diane; played a Philbert costar."
+          "line": "Just proposed to Pickles to avoid confessing his affair with Diane; played a Philbert costar."
         },
         {
           "name": "Princess Carolyn",
@@ -458,7 +458,7 @@
         },
         {
           "name": "Pickles Aplenty",
-          "line": "Mr. Peanutbutter's new fiancée; young, hurt by his affair, agreed to marry him anyway."
+          "line": "Mr. Peanutbutter's new fiancée; unaware of his affair, accepted his proposal."
         },
         {
           "name": "Hollyhock",
@@ -561,5 +561,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T06:14:23.126Z"
 }

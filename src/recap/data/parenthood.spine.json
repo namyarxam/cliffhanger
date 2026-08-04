@@ -41,7 +41,7 @@
         },
         {
           "label": "S1 · Jasmine's contract",
-          "text": "Jasmine wins a New York dance contract and moves with Jabbar; Crosby is left in Berkeley deciding whether to uproot his life for his son.",
+          "text": "Jasmine wins a New York dance contract and plans to move with Jabbar; Crosby decides he wants to move with them to be present in his son's life.",
           "anchorEpisode": 13,
           "whyLoadBearing": "S2 opens with Crosby stranded and Jabbar in New York — the beat that sets that up.",
           "needsVerify": false
@@ -55,7 +55,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "The Braverman family has absorbed Sarah's chaos and forgiven Zeek's affair, but Crosby is standing on a dock deciding whether to follow his newly discovered son across the country, and Max still doesn't know why school is so hard for him.",
+        "text": "The Braverman family has absorbed Sarah's chaos and forgiven Zeek's affair, Crosby has decided to follow his newly discovered son to New York, and Max still doesn't know why school is so hard for him.",
         "questions": [
           "Will Crosby actually move to New York with Jasmine and Jabbar, or lose them?",
           "When will Adam and Kristina tell Max the truth about his diagnosis?",
@@ -192,7 +192,7 @@
         },
         {
           "name": "Haddie Braverman",
-          "line": "Living at her grandparents' after Adam and Kristina forbade her relationship with Alex."
+          "line": "Reached a mutual agreement with Adam and Kristina over when she can see Alex."
         },
         {
           "name": "Crosby Braverman",
@@ -389,7 +389,7 @@
         },
         {
           "label": "S4 · Victor and Aida",
-          "text": "Julia and Joel officially adopt Victor at a family ceremony; the same finale, Jasmine reveals to Crosby that she is pregnant with their second child.",
+          "text": "Julia and Joel officially adopt Victor at a family ceremony; the same finale, Jasmine reveals to Crosby that she is pregnant.",
           "anchorEpisode": 15,
           "whyLoadBearing": "Two more kids formally join the Bravermans, reshaping both households for S5.",
           "needsVerify": false
@@ -561,11 +561,11 @@
         },
         {
           "name": "Amber Holt",
-          "line": "Pregnant with Ryan's baby after their engagement collapsed and his crash landed him in surgery."
+          "line": "Engagement collapsed after Ryan re-enlisted; visited him in the hospital after his crash and left holding a pregnancy test."
         },
         {
           "name": "Ryan York",
-          "line": "Recovering from a car crash near his base; unstable, absent, and now a father-to-be."
+          "line": "Recovering from a car crash near his base; unstable, absent, and headed to live with his mother in Wyoming."
         },
         {
           "name": "Victor Graham",
@@ -701,5 +701,5 @@
       ]
     }
   },
-  "repairedAt": "2026-07-27T06:50:36.239Z"
+  "repairedAt": "2026-08-03T06:21:37.263Z"
 }

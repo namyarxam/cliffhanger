@@ -82,7 +82,7 @@
         },
         {
           "name": "Teddy Dimas",
-          "line": "Deli mogul and podcast sponsor, exposed as jewellery fence 'Angel' but cleared of Tim's murder."
+          "line": "Oliver's old associate and podcast sponsor, exposed as jewellery fence 'Angel' but cleared of Tim's murder."
         },
         {
           "name": "Theo Dimas",
@@ -173,7 +173,7 @@
         },
         {
           "name": "Ben Glenroy",
-          "line": "Difficult star of Oliver's Broadway play who collapsed onstage on opening night after months of feuding with the cast."
+          "line": "Lead actor of Oliver's Broadway play who collapsed onstage on opening night."
         }
       ]
     },
@@ -216,7 +216,7 @@
         },
         {
           "label": "S3 · The real killers",
-          "text": "On opening night the trio corners producers Donna and her son Cliff; Cliff confesses he pushed Ben down the elevator shaft to save his mother's investment.",
+          "text": "On opening night the trio corners producers Donna and her son Cliff; Cliff confesses he pushed Ben down the elevator shaft, insisting it was an accident.",
           "anchorEpisode": 10,
           "whyLoadBearing": "Closes the Ben Glenroy case and frees Loretta, letting the trio believe their lives are theirs again.",
           "needsVerify": false
@@ -314,7 +314,7 @@
         },
         {
           "label": "S4 · Wedding, then Lester",
-          "text": "Oliver marries Loretta; mob widow Sofia Caccimelio tries to hire the trio to find her missing husband - hours before they discover doorman Lester drowned in the Arconia fountain.",
+          "text": "Oliver marries Loretta; Sofia Caccimelio tries to hire the trio to find her missing husband - hours before they discover doorman Lester drowned in the Arconia fountain.",
           "anchorEpisode": 10,
           "whyLoadBearing": "The launchpad: hands the trio a new client they refuse and a new body they can't, both hinting the Arconia itself is the crime.",
           "needsVerify": false
@@ -351,7 +351,7 @@
         },
         {
           "name": "Sofia Caccimelio",
-          "line": "Mob widow whose husband Nicky has vanished; tried to hire the trio at the wedding, hinting the Arconia itself was involved."
+          "line": "Woman whose husband has vanished; tried to hire the trio at the wedding, hinting the Arconia itself was involved."
         },
         {
           "name": "Detective Williams",
@@ -450,5 +450,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T06:37:51.058Z"
 }

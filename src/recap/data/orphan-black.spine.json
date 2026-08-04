@@ -20,7 +20,7 @@
         },
         {
           "label": "S1 · The killer is one of them",
-          "text": "The Christian assassin hunting the clones turns out to be another clone, feral Ukrainian Helena, who stabs Sarah and vanishes, protected by a group called the Proletheans.",
+          "text": "The Christian assassin hunting the clones turns out to be another clone, feral Ukrainian Helena, whom Sarah stabs before she escapes, protected by a group called the Proletheans.",
           "anchorEpisode": 3,
           "whyLoadBearing": "Names the Prolethean faction and plants Helena as the recurring wildcard sister.",
           "needsVerify": false
@@ -94,7 +94,7 @@
         },
         {
           "name": "Rachel Duncan",
-          "line": "Corporate 'Proclone' raised inside Dyad by the project's founders; wants Sarah and Kira signed and controlled."
+          "line": "A clone high in the Dyad organization; offers Sarah and Kira protection and wants them signed and controlled."
         },
         {
           "name": "Dr. Aldous Leekie",
@@ -213,7 +213,7 @@
         },
         {
           "name": "Marion Bowles",
-          "line": "Dyad executive above Rachel who kept a captive Castor clone in her home and briefed Sarah on the military program."
+          "line": "Dyad executive above Rachel who briefed Sarah on the military program."
         },
         {
           "name": "Mark Rollins",
@@ -221,7 +221,7 @@
         },
         {
           "name": "Kira",
-          "line": "Sarah's daughter, back home, now known to have accelerated healing that makes her uniquely valuable."
+          "line": "Sarah's daughter, back home, whose stem cells and bone marrow make her uniquely valuable to the search for a cure."
         },
         {
           "name": "Art Bell",
@@ -296,7 +296,7 @@
         },
         {
           "name": "Helena",
-          "line": "Escaped the Castor base, killed the Prolethean-cell-turned-Castor scout Rudy, and is now living openly with the sisters, still pregnant."
+          "line": "Escaped the Castor base, killed the Castor scout Rudy, and is now living openly with the sisters, still pregnant."
         },
         {
           "name": "Alison Hendrix",
@@ -423,7 +423,7 @@
         },
         {
           "name": "Kira",
-          "line": "Sarah's daughter, whose accelerated healing has made her the centrepiece of Neolution's endgame; taken hostage with Mrs. S."
+          "line": "Sarah's daughter, who senses her Leda aunts and is taken hostage with Mrs. S at the finale."
         },
         {
           "name": "Mrs. S (Siobhan Sadler)",
@@ -443,7 +443,7 @@
         },
         {
           "name": "Cosima Niehaus",
-          "line": "Cure destroyed by Evie, now working with Susan Duncan on the island using her own eggs and Castor sperm to make a stem-cell cure."
+          "line": "Cure destroyed by Evie, now working with Susan Duncan on the island using Sarah's eggs and Castor sperm to make a stem-cell cure."
         },
         {
           "name": "Delphine Cormier",
@@ -518,7 +518,7 @@
         },
         {
           "label": "S5 · Mrs. S and Ferdinand kill each other",
-          "text": "Delphine, Siobhan and Ferdinand upload Rachel's stolen data to expose Neolution to the world; Ferdinand then attacks Mrs. S in her home and the two of them die together.",
+          "text": "Rachel gives the real data to Siobhan; Delphine and Cosima upload it to expose Neolution to the world; Ferdinand then attacks Mrs. S in her home and the two of them die together.",
           "anchorEpisode": 8,
           "whyLoadBearing": "Removes Mrs. S and Ferdinand and completes the public collapse of Neolution.",
           "needsVerify": false
@@ -558,7 +558,7 @@
         },
         {
           "name": "Donnie Hendrix",
-          "line": "Out of prison and back home, still Alison's partner in everything."
+          "line": "Still Alison's partner in everything."
         },
         {
           "name": "Cosima Niehaus",
@@ -570,7 +570,7 @@
         },
         {
           "name": "Rachel Duncan",
-          "line": "Broke with Neolution, cut out her surveillance eye, handed Sarah the list of all 274 Ledas, and walked away alone but free."
+          "line": "Broke with Neolution, cut out her surveillance eye, handed Felix the list of all 274 Ledas, and walked away alone but free."
         },
         {
           "name": "Felix",
@@ -586,5 +586,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-03T07:01:25.221Z"
 }
