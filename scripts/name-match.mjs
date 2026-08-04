@@ -80,6 +80,25 @@ export function tokenOwners(names) {
 }
 
 /**
+ * Words a recap uses to distinguish two versions of one person — "Real Elliot",
+ * "Young Ned", "Evil Harry". They are never part of the credited name.
+ *
+ * They break the surname rule, which reads the LAST token as the family name:
+ * in "Real Elliot" the identifying token becomes "real" and "elliot" is treated
+ * as a surname, so the card cannot match Elliot at all — and "real" is free to
+ * shorten into "Realty", which put a Virtual Realty Employee's face on Elliot's
+ * card. So a qualifier may never act as a shortened given name, and when it is
+ * the ONLY identifying token the surname slot is opened up so the real name can
+ * match. The token is kept for scoring rather than removed — dropping it made
+ * "Young Ian Murray" match the adult Ian, because the qualifier was the only
+ * thing telling the two apart.
+ */
+const QUALIFIERS = new Set([
+  'real', 'young', 'younger', 'old', 'older', 'future', 'past', 'present',
+  'alternate', 'alternative', 'evil', 'dark', 'baby', 'teen', 'adult', 'new',
+]);
+
+/**
  * Best match for `name` among `candidates`.
  *
  * @param candidates  [{ name, weight }] — weight is how much of the show the
@@ -91,6 +110,7 @@ export function tokenOwners(names) {
  * and reads as unremarkable; a confident wrong match puts another person's
  * face on the card.
  */
+
 export function bestMatch(name, candidates, owners) {
   // Try each identity separately and take the best-scoring result.
   const parts = alternates(name);
@@ -119,16 +139,48 @@ export function bestMatch(name, candidates, owners) {
   // So a match must rest on something other than the last token — a given
   // name, a nickname, a middle name. Single-token names are exempt, having no
   // surname to be confused by.
-  const identifying = want.length > 1 ? new Set(want.slice(0, -1)) : new Set(want);
+  let identifying = want.length > 1 ? new Set(want.slice(0, -1)) : new Set(want);
+  // "Real Elliot" leaves only "real" to identify with, and the one token that
+  // names the person is sitting in the surname slot where nothing may match it.
+  // When every identifying token is a qualifier, let the last token identify.
+  if ([...identifying].every(t => QUALIFIERS.has(t))) identifying = new Set(want);
 
   let best = null;
   let bestScore = 0;
   for (const c of candidates) {
-    const have = new Set(tokens(c.name));
+    const haveTokens = tokens(c.name);
+    const have = new Set(haveTokens);
     const shared = want.filter(w => have.has(w));
-    if (!shared.length) continue;
-    if (!shared.some(w => identifying.has(w))) continue;
-    const rarity = shared.reduce((a, w) => a + 1 / (owners.get(w) ?? 1), 0);
+
+    // A recap calls someone what people call them; the credits use what is on
+    // the birth certificate. "Ben Linus" is credited "Benjamin Linus", "Sam
+    // LaRusso" as "Samantha" — no token is shared, so the card shipped with no
+    // face at all.
+    //
+    // Only a GIVEN name may shorten this way. Matching against the last token
+    // would let "Ben" claim the surname "Benavent", which is how a card gets
+    // somebody else's face — the failure this module exists to prevent. The
+    // two-character gap keeps near-misses ("Ann"/"Anna") from colliding, and a
+    // prefix hit is worth half an exact one so a real name match always wins.
+    // Runs even when the surname already matched exactly: "Ben Linus" shares
+    // "linus" with "Benjamin Linus", but a surname alone is refused, so without
+    // checking the given name here the card is still turned away.
+    const prefixed = [];
+    const lastOf = haveTokens[haveTokens.length - 1];
+    for (const w of want) {
+      if (w.length < 3 || have.has(w) || !identifying.has(w) || QUALIFIERS.has(w)) continue;
+      for (const h of haveTokens) {
+        if (haveTokens.length > 1 && h === lastOf) continue;
+        if (h.length >= w.length + 2 && h.startsWith(w)) { prefixed.push(h); break; }
+      }
+    }
+
+    if (!shared.length && !prefixed.length) continue;
+    // The match must rest on a given name, exact or shortened — never a surname.
+    if (!prefixed.length && !shared.some(w => identifying.has(w))) continue;
+    const rarity =
+      shared.reduce((a, w) => a + 1 / (owners.get(w) ?? 1), 0) +
+      prefixed.reduce((a, h) => a + 0.5 / (owners.get(h) ?? 1), 0);
     // A token carried by more than five entries identifies nobody, however
     // prominent the candidate.
     if (rarity < 0.2) continue;

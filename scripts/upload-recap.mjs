@@ -35,7 +35,7 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createClient } from '@supabase/supabase-js';
 import { evaluate } from './eligibility.mjs';
-import { tokens } from './name-match.mjs';
+import { bestMatch, tokens } from './name-match.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = resolve(ROOT, 'src/recap/data');
@@ -127,6 +127,12 @@ function composer(data, castLinks) {
     }
   }
 
+  // bestMatch scores on `name` and `weight`; carry the row so the winner can be
+  // read back. Same shape audit-spine builds, so both stages score identically.
+  const castCandidates = data.cast
+    .filter(c => c.character)
+    .map(c => ({ name: c.character, weight: c.episodeCount ?? 0, row: c }));
+
   /**
    * Match a spine character name to a cast row.
    *
@@ -173,40 +179,14 @@ function composer(data, castLinks) {
       return null;
     }
 
-    const want = tokens(name);
-    if (!want.length) return null;
-
-    const exact = data.cast.find(c => c.character && tokens(c.character).join(' ') === want.join(' '));
-    if (exact) return exact;
-
-    // A surname alone never identifies anyone — "Helena Eagan" matched "Jame
-    // Eagan", her father, because Helena is credited as Helly Riggs so "eagan"
-    // belonged to one cast member and read as distinctive. A match must share
-    // something other than the last token.
-    const identifying = want.length > 1 ? new Set(want.slice(0, -1)) : new Set(want);
-
-    let best = null;
-    let bestScore = 0;
-    for (const c of data.cast) {
-      if (!c.character) continue;
-      const have = new Set(tokens(c.character));
-      const shared = want.filter(w => have.has(w));
-      if (!shared.length) continue;
-      if (!shared.some(w => identifying.has(w))) continue;
-      // Rarer tokens are worth more: a unique given name outweighs a surname
-      // half the cast carries. A match resting only on "Stark" among eight
-      // Starks scores 0.125 and is refused; "Rhaenyra" scores 1.
-      const rarity = shared.reduce((a, w) => a + 1 / (tokenOwners.get(w) ?? 1), 0);
-      // Floor on rarity alone: a token carried by more than five cast members
-      // identifies nobody, however many episodes the candidate appears in.
-      if (rarity < 0.2) continue;
-      const score = rarity * Math.log1p(c.episodeCount ?? 0);
-      if (score > bestScore) {
-        best = c;
-        bestScore = score;
-      }
-    }
-    return best;
+    // Scoring lives in name-match.mjs, not here.
+    //
+    // This function used to carry its own copy of the algorithm, which is the
+    // fork that module was written to end: audit-spine decided whether a card
+    // would get a portrait using bestMatch, while the upload that actually
+    // ships decided it again with a duplicate. Two copies of a heuristic drift,
+    // and the drift is invisible — the audit passes and the wrong thing ships.
+    return bestMatch(name, castCandidates, tokenOwners)?.row ?? null;
   };
 
   /**
