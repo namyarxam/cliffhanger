@@ -203,7 +203,7 @@
         },
         {
           "label": "S3 · Harley Kills Wally",
-          "text": "Anti-zombie militants start hunting zombies after a Max Rager guard's live radio confession about the outbreak.",
+          "text": "Anti-zombie militants start hunting zombies after a Max Rager guard's live radio confession about the outbreak; Carey Gold murders Wally's family.",
           "anchorEpisode": 2,
           "whyLoadBearing": "Introduces the human-side threat and the Wally case that drives Clive's whole season.",
           "needsVerify": false
@@ -271,7 +271,7 @@
         },
         {
           "name": "Blaine DeBeers",
-          "line": "Zombie again after Mr. Boss's failed hit, running his funeral-home brain business; abandoned by Peyton after his lie came out."
+          "line": "Zombie again after Mr. Boss's failed hit, running the Scratching Post after imprisoning his father in a well; abandoned by Peyton after his lie came out."
         },
         {
           "name": "Peyton",
@@ -486,5 +486,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-04T04:41:56.473Z"
+  "repairedAt": "2026-08-04T05:10:40.137Z"
 }

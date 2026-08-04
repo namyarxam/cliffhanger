@@ -124,7 +124,7 @@
         },
         {
           "label": "S2 · Crosby proposes",
-          "text": "Crosby wins Jasmine back after her European tour and proposes to her on Halloween night while trick-or-treating with Jabbar.",
+          "text": "Crosby wins Jasmine back after she quits the European tour and returns to Berkeley, and proposes to her on Halloween night while trick-or-treating with Jabbar.",
           "anchorEpisode": 6,
           "whyLoadBearing": "The engagement he then destroys is the whole spine of Crosby's second half.",
           "needsVerify": false
@@ -184,7 +184,7 @@
         },
         {
           "name": "Kristina Braverman",
-          "line": "Pregnant with a daughter after months of overwork and parenting Max through his Asperger's revelation."
+          "line": "Pregnant after months of overwork and parenting Max through his Asperger's revelation."
         },
         {
           "name": "Max Braverman",
@@ -701,5 +701,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-04T04:28:37.764Z"
+  "repairedAt": "2026-08-04T05:12:20.997Z"
 }

@@ -208,7 +208,7 @@
         },
         {
           "label": "S3 · Alton clocks Teddy",
-          "text": "Alton pieces together that Franklin is moving cocaine for a CIA man and is horrified.",
+          "text": "Alton pieces together that Franklin is working with Teddy and warns him off.",
           "anchorEpisode": 2,
           "whyLoadBearing": "The Alton–Teddy collision started here is what gets Alton killed and turns Cissy into an assassin.",
           "needsVerify": false
@@ -276,7 +276,7 @@
         },
         {
           "name": "Alton Williams",
-          "line": "Now aware Franklin's supplier is CIA — increasingly ready to expose it."
+          "line": "Now aware Franklin is working with Teddy — wary and warning him off."
         },
         {
           "name": "Jerome Saint",
@@ -598,5 +598,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-04T04:58:14.944Z"
+  "repairedAt": "2026-08-04T05:14:19.535Z"
 }
