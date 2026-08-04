@@ -129,7 +129,7 @@
         },
         {
           "label": "S2 · Wynonna unmade",
-          "text": "An Iron Witch wipes Wynonna out of existence in revenge; Waverly and a resurrected Bobo, who both remember her, break the spell and restore reality.",
+          "text": "An Iron Witch wipes Wynonna out of existence in revenge; Bobo, who remembers her, tells Waverly about the spell so she can break it and restore reality.",
           "anchorEpisode": 11,
           "whyLoadBearing": "Bobo remembering Wynonna cements him as more than a straight villain going forward.",
           "needsVerify": false
@@ -271,7 +271,7 @@
         },
         {
           "name": "Nicole Haught",
-          "line": "New sheriff of Purgatory; engaged to Waverly."
+          "line": "New sheriff of Purgatory."
         },
         {
           "name": "Jeremy Chetri",
@@ -387,5 +387,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-03T06:54:08.792Z"
+  "repairedAt": "2026-08-04T02:22:49.334Z"
 }

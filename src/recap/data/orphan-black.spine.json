@@ -77,7 +77,7 @@
         },
         {
           "name": "Cosima Niehaus",
-          "line": "Scientist clone in a relationship with Delphine, now displaying the same respiratory illness that killed Katja.",
+          "line": "Scientist clone in a relationship with Delphine, now displaying the same respiratory illness Katja had.",
           "note": "Decoded the patent hidden in their DNA."
         },
         {
@@ -374,7 +374,7 @@
         },
         {
           "label": "S4 · Brightborn and Evie Cho",
-          "text": "Sarah, Cosima and Donnie infiltrate the Brightborn fertility clinic and meet Evie Cho, the Neolutionist pushing gene-editing bots as therapy — and euthanising deformed newborns.",
+          "text": "Cosima and Donnie infiltrate the Brightborn fertility clinic and meet Evie Cho, the Neolutionist pushing gene-editing bots as therapy — and euthanising deformed newborns.",
           "anchorEpisode": 5,
           "whyLoadBearing": "Names Evie as the season's antagonist and reveals what Neolution actually wants to sell the world.",
           "needsVerify": false
@@ -587,5 +587,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-03T07:01:25.221Z"
+  "repairedAt": "2026-08-04T02:18:02.573Z"
 }

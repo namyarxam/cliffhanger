@@ -203,7 +203,7 @@
         },
         {
           "label": "S3 · Harley Kills Wally",
-          "text": "Anti-zombie militant Harley Johns starts hunting zombies after the Max Rager outbreak footage goes public.",
+          "text": "Anti-zombie militants start hunting zombies after the Max Rager outbreak footage goes public.",
           "anchorEpisode": 2,
           "whyLoadBearing": "Introduces the human-side threat and the Wally case that drives Clive's whole season.",
           "needsVerify": false
@@ -271,7 +271,7 @@
         },
         {
           "name": "Blaine DeBeers",
-          "line": "Human, memories fully back, running his funeral-home brain business; abandoned by Peyton after his lie came out."
+          "line": "Zombie again after Mr. Boss's failed hit, running his funeral-home brain business; abandoned by Peyton after his lie came out."
         },
         {
           "name": "Peyton",
@@ -316,7 +316,7 @@
         },
         {
           "label": "S4 · The Nuke Plot",
-          "text": "Major, running FG's teen zombie unit, is infiltrated by anti-zombie agent Russ Roche, part of an outside plot to nuke Seattle.",
+          "text": "Major, running FG's teen zombie unit, goes undercover with black-market operator Russ Roche to identify his boss.",
           "anchorEpisode": 9,
           "whyLoadBearing": "Sets up the existential nuke threat that shadows the finale and continues past it.",
           "needsVerify": false
@@ -486,5 +486,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-03T06:35:26.654Z"
+  "repairedAt": "2026-08-04T02:30:37.356Z"
 }

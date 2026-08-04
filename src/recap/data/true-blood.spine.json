@@ -331,7 +331,7 @@
         },
         {
           "label": "S4 · Killing the witch",
-          "text": "At the Moon Goddess Emporium, Jesús is killed harnessing enough power to sever Marnie from Antonia. Bill and Eric storm in and kill Marnie, but her spirit slips into Lafayette's body.",
+          "text": "At the Moon Goddess Emporium, Jesús and Lafayette harness a sacrifice to sever Marnie from Antonia. Bill and Eric storm in and kill Marnie.",
           "anchorEpisode": 11,
           "whyLoadBearing": "Ends the witch war and hands off the season's tail to Marnie-in-Lafayette.",
           "needsVerify": false
@@ -596,7 +596,7 @@
         },
         {
           "name": "Pam Swynford De Beaufort",
-          "line": "Freed from the camp, still Tara's maker, and now off searching for a missing Eric."
+          "line": "Freed from the camp, and still Tara's maker."
         },
         {
           "name": "Sarah Newlin",
@@ -704,5 +704,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-03T06:52:25.491Z"
+  "repairedAt": "2026-08-04T02:32:55.564Z"
 }

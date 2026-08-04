@@ -81,7 +81,7 @@
         },
         {
           "name": "Tommy Hunter",
-          "line": "OCG boss, arrested at the golf club and now in witness protection with damaging knowledge on senior police."
+          "line": "OCG boss, arrested at the golf club."
         }
       ]
     },
@@ -89,7 +89,7 @@
       "beats": [
         {
           "label": "S2 · Convoy ambush",
-          "text": "A prison convoy escorting Tommy Hunter is ambushed; DI Lindsay Denton is the sole officer survivor and immediately the suspect.",
+          "text": "A police convoy escorting protected witness Tommy Hunter is ambushed; DI Lindsay Denton is the sole officer survivor and immediately the suspect.",
           "anchorEpisode": 1,
           "whyLoadBearing": "Opens the season by killing the S1 witness and framing a woman we later learn was set up.",
           "needsVerify": false
@@ -186,7 +186,7 @@
         },
         {
           "label": "S3 · Sands View",
-          "text": "The trail leads to Sands View boys' home and former Chief Superintendent Patrick Fairbank; a witness's terror at his photo marks him as one of the abusers.",
+          "text": "The trail leads to Sands View boys' home and former Vice Chief Superintendent Patrick Fairbank; a witness's terror at his photo marks him as one of the abusers.",
           "anchorEpisode": 4,
           "whyLoadBearing": "Names a senior officer the show will return to in S6 as a suspect in the wider corruption web.",
           "needsVerify": false
@@ -247,7 +247,7 @@
         },
         {
           "name": "Patrick Fairbank",
-          "line": "Former Chief Superintendent, jailed for the Sands View child abuse cover-up."
+          "line": "Former Vice Chief Superintendent, jailed for the Sands View child abuse cover-up."
         }
       ]
     },
@@ -314,7 +314,7 @@
       "characters": [
         {
           "name": "Steve Arnott",
-          "line": "DI at AC-12, badly injured in a stairwell attack and quietly hooked on painkillers."
+          "line": "DI at AC-12, badly injured in a stairwell attack."
         },
         {
           "name": "Kate Fleming",
@@ -334,7 +334,7 @@
         },
         {
           "name": "Maneet Bindra",
-          "line": "PC at AC-12, blackmailed by Hilton into leaking Cottan's dying declaration."
+          "line": "PC at AC-12, leaked Cottan's dying declaration to Hilton."
         }
       ]
     },
@@ -384,7 +384,7 @@
         },
         {
           "label": "S5 · Pilkington in uniform",
-          "text": "Hastings admits taking OCG cash and survives with a written warning; meanwhile Ryan Pilkington — Hunter's teenage courier from years back — enrols at the police academy.",
+          "text": "Hastings survives with a final written warning and continues to lead AC-12; meanwhile Ryan Pilkington — Hunter's teenage courier from years back — enrols at the police academy.",
           "anchorEpisode": 6,
           "whyLoadBearing": "Plants the S6 antagonist inside the force in the season's final minute, the single most load-bearing beat.",
           "needsVerify": false
@@ -409,7 +409,7 @@
         },
         {
           "name": "Ted Hastings",
-          "line": "Superintendent, cleared but on a final written warning after admitting he took OCG cash."
+          "line": "Superintendent, cleared but on a final written warning, continuing to lead AC-12."
         },
         {
           "name": "Steph Corbett",
@@ -461,7 +461,7 @@
         },
         {
           "label": "S6 · Warehouse shootout",
-          "text": "Pilkington and Fleming shoot each other in a disused industrial site; Pilkington dies, Fleming survives, and Davidson accepts witness protection.",
+          "text": "Fleming shoots Pilkington dead in a disused industrial site, and Davidson accepts witness protection.",
           "anchorEpisode": 6,
           "whyLoadBearing": "Removes the season's on-the-ground OCG enforcer and hands AC-12 its senior witness against them.",
           "needsVerify": false
@@ -504,7 +504,7 @@
         },
         {
           "name": "Joanne Davidson",
-          "line": "Former DCI, revealed as Hunter's daughter; rehoused in witness protection with a new identity."
+          "line": "Former DCI, a partial DNA match to Hunter through incest who names Fairbank as her believed father; rehoused in witness protection with a new identity."
         },
         {
           "name": "Ian Buckells",
@@ -520,5 +520,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-04T02:39:47.863Z"
 }

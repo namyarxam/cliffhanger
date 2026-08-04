@@ -97,7 +97,7 @@
       "beats": [
         {
           "label": "S2 · The bus doubles the town",
-          "text": "A bus of stranded travelers is corralled into town: troublemaker Randall, Kristi's ex Marielle, dreamer Elgin, driver Bakta. The population doubles overnight.",
+          "text": "A bus of stranded travelers is corralled into town: troublemaker Randall, Kristi's girlfriend Marielle, dreamer Elgin, driver Bakta. The population doubles overnight.",
           "anchorEpisode": 1,
           "whyLoadBearing": "Half the season's threats and turns come from the new arrivals.",
           "needsVerify": false
@@ -168,11 +168,11 @@
         },
         {
           "name": "Kristi",
-          "line": "Town doctor and Marielle's ex, whose autopsy of the smiley-faced creature found it dry inside except for bile."
+          "line": "Town doctor and Marielle's girlfriend, whose autopsy of the smiley-faced creature found it dry inside except for bile."
         },
         {
           "name": "Marielle",
-          "line": "Kristi's ex who arrived on the bus and later fell into a coma while an unseen entity tortured her, waking when Boyd smashed the music box."
+          "line": "Kristi's girlfriend who arrived on the bus and later fell into a coma while an unseen entity tortured her, waking when Boyd smashed the music box."
         },
         {
           "name": "Randall",
@@ -380,5 +380,5 @@
     }
   },
   "notPeople": [],
-  "repairedAt": "2026-08-03T06:17:43.076Z"
+  "repairedAt": "2026-08-04T02:29:14.445Z"
 }

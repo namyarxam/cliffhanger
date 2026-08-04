@@ -123,7 +123,7 @@
         },
         {
           "label": "S2 · Borden the mole",
-          "text": "Dr Borden, the team's own therapist, is exposed as Sandstorm's mole after his wife died in a US drone strike; he captures and tortures Patterson before escaping.",
+          "text": "Dr Borden, the team's own therapist, is exposed as Sandstorm's mole after his wife died in a US drone strike; he captures Patterson for Shepherd to torture before escaping.",
           "anchorEpisode": 10,
           "whyLoadBearing": "The intimate betrayal that leaves Patterson traumatised for seasons and confirms Sandstorm has been inside the team all along.",
           "needsVerify": false
@@ -165,7 +165,7 @@
         },
         {
           "name": "Kurt Weller",
-          "line": "FBI leader who has a daughter, Bethany, with Allie; in the time-jump he is wearing a wedding ring and seeking Jane out for help."
+          "line": "FBI leader who is expecting a child with Allie; in the time-jump he is wearing a wedding ring and seeking Jane out for help."
         },
         {
           "name": "Patterson",
@@ -189,7 +189,7 @@
         },
         {
           "name": "Allie",
-          "line": "Weller's ex who gave birth to their daughter Bethany during the season."
+          "line": "Weller's ex, pregnant with his child during the season."
         }
       ]
     },
@@ -355,7 +355,7 @@
       "characters": [
         {
           "name": "Jane Doe",
-          "line": "Cured of ZIP and restored to herself after months trapped as Remi; inside the cottage with the rest of the team when the drone hits."
+          "line": "Cured of ZIP and restored to herself after months trapped as Remi; the sole survivor of the drone strike on the cottage, having been the only one outside when it hit."
         },
         {
           "name": "Kurt Weller",
@@ -419,7 +419,7 @@
         },
         {
           "label": "S5 · Bunker falls, Patterson 'dies'",
-          "text": "Interpol tips Madeline to the bunker; Dabbur Zhan storms it, Patterson triggers thermite and appears to die inside, and the team is dragged back to New York as accused terrorists.",
+          "text": "Dabbur Zhan storms the bunker; Patterson triggers thermite and appears to die inside, and the team is dragged back to New York as accused terrorists.",
           "anchorEpisode": 8,
           "whyLoadBearing": "The season's low point: hiding place gone, one member seemingly dead, the others captured and paraded as criminals.",
           "needsVerify": false
@@ -483,5 +483,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-03T06:44:39.951Z"
+  "repairedAt": "2026-08-04T02:35:36.494Z"
 }

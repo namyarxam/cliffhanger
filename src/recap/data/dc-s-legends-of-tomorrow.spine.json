@@ -192,7 +192,7 @@
         },
         {
           "name": "Damien Darhk",
-          "line": "Recruited from 2016 by the Legion; returned to his own time when the Spear was undone."
+          "line": "Recruited from 1987 by the Legion; returned to his own time when the Spear was undone."
         },
         {
           "name": "Eobard Thawne",
@@ -410,7 +410,7 @@
       "beats": [
         {
           "label": "S5 · Encores from Hell",
-          "text": "Following Neron's defeat the Legends are public heroes. Constantine returns to Hell and finds Astra has sent her sixteen damned souls — 'Encores' — back to Earth.",
+          "text": "Following Neron's defeat the Legends are public heroes. Constantine returns to Hell and finds Astra has sent damned souls — 'Encores' — back to Earth.",
           "anchorEpisode": 1,
           "whyLoadBearing": "Ties S4's ending directly to S5's mission and names the antagonist.",
           "needsVerify": false
@@ -438,7 +438,7 @@
         },
         {
           "label": "S5 · Trapped in sitcoms",
-          "text": "The Fates use the Loom to rewrite reality, trapping the Legends inside sitcoms and reality shows. Mona Wu and Gary Green free them, along with the original Zari Tomaz.",
+          "text": "Charlie traps the Legends inside sitcoms and reality shows to hide them from her sisters. Mona Wu and Gary Green free them, along with the original Zari Tomaz.",
           "anchorEpisode": 13,
           "whyLoadBearing": "Brings Zari Tomaz back into play and sets up the finale confrontation.",
           "needsVerify": false
@@ -469,11 +469,11 @@
       "characters": [
         {
           "name": "Sara Lance",
-          "line": "Captain of the Legends; abducted by aliens moments after proposing to Ava."
+          "line": "Captain of the Legends; abducted by aliens in the season's final moments."
         },
         {
           "name": "Ava Sharpe",
-          "line": "Sara's fiancée; about to be left in charge of the ship."
+          "line": "Leader alongside Sara; about to be left in charge of the ship."
         },
         {
           "name": "Nate Heywood",
@@ -523,7 +523,7 @@
         },
         {
           "label": "S6 · Sara is a clone",
-          "text": "Sara meets Bishop — creator of the Ava Sharpe clones. She dies from alien poison; Bishop rebuilds her as a clone fused with alien DNA. She rejoins the team and hides it from Ava.",
+          "text": "Sara meets Bishop — creator of the Ava Sharpe clones. She dies from alien poison; Bishop rebuilds her as a clone fused with alien DNA. She tells Ava and hides it from the team.",
           "anchorEpisode": 7,
           "whyLoadBearing": "A permanent status change for Sara that carries into S7.",
           "needsVerify": false
@@ -612,7 +612,7 @@
       "beats": [
         {
           "label": "S7 · Bullet Blondes",
-          "text": "Stranded in 1925 Odessa without a ship, the Legends fund travel to Gwyn Davies — the forefather of time travel — by robbing banks as 'The Bullet Blondes.'",
+          "text": "Stranded in 1925 Odessa without a ship, the Legends set out for Gwyn Davies — the forefather of time travel — while robbing banks as 'The Bullet Blondes' to lure Hoover away.",
           "anchorEpisode": 1,
           "whyLoadBearing": "Sets the season's premise: no timeship, no toys, working era by era back to a solution.",
           "needsVerify": false
@@ -654,14 +654,14 @@
         },
         {
           "label": "S7 · Depowered, pregnant, arrested",
-          "text": "Nate is permanently depowered saving Gwyn's lost love from World War I. Sara reveals she is pregnant with a hybrid child — and unknown authorities arrest the entire team.",
+          "text": "Nate is permanently depowered saving Gwyn's lost love from World War I. Sara reveals she is pregnant — and unknown authorities arrest the entire team.",
           "anchorEpisode": 13,
           "whyLoadBearing": "All three cliffhangers land at once — this is the door into whatever comes next.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "AI Gideon is dead, Gwyn's love is saved, and the Legends have a Waverider again — but Nate is permanently depowered, Sara is pregnant with an alien-human hybrid, and Mike the Fixer's mysterious superiors have just arrested the entire crew on their own ship.",
+        "text": "AI Gideon is dead, Gwyn's love is saved, and the Legends have a Waverider again — but Nate is permanently depowered, Sara is pregnant with a child inheriting her regenerative abilities, and Mike the Fixer's mysterious superiors have just arrested the entire crew on their own ship.",
         "questions": [
           "Who are Mike's superiors, and what do they want with the Legends?",
           "What kind of child is Sara carrying?",
@@ -671,7 +671,7 @@
       "characters": [
         {
           "name": "Sara Lance",
-          "line": "Captain and Ava's wife; pregnant with an alien-human hybrid child, arrested with the team."
+          "line": "Captain and Ava's wife; pregnant, with her regenerative abilities transferring to the baby, and arrested with the team."
         },
         {
           "name": "Ava Sharpe",
@@ -711,5 +711,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-04T02:37:11.870Z"
 }

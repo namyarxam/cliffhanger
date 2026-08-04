@@ -81,11 +81,11 @@
         },
         {
           "name": "Jane / Crazy Jane",
-          "line": "Primary alter of a woman with 64 super-powered personas born from her father's abuse; her core alter is a mute child named Kay."
+          "line": "Primary alter of a woman with 64 super-powered personas born from her father's abuse."
         },
         {
           "name": "Victor Stone / Cyborg",
-          "line": "Detroit's half-machine superhero, joined the team after learning his father Silas erased memories of the accident that killed his mother."
+          "line": "Detroit's half-machine superhero, joined the team after the Cloverton attack, refusing his father Silas's request to come home."
         },
         {
           "name": "Dorothy Spinner",
@@ -387,5 +387,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-03T06:32:07.446Z"
+  "repairedAt": "2026-08-04T02:24:22.847Z"
 }

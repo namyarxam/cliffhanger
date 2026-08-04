@@ -13,7 +13,7 @@
         },
         {
           "label": "S1 · Catra promoted",
-          "text": "Shadow Weaver promotes Catra to force captain to fill Adora's spot. Adora's oldest friend takes the recognition she was always denied and refuses to follow her out.",
+          "text": "Hordak promotes Catra to force captain to fill Adora's spot. Adora's oldest friend takes the recognition she was always denied and refuses to follow her out.",
           "anchorEpisode": 3,
           "whyLoadBearing": "Locks Catra on the opposite side of the war — every future conflict runs through this refusal.",
           "needsVerify": false
@@ -144,7 +144,7 @@
         },
         {
           "label": "S2 · Shadow Weaver defects",
-          "text": "Shadow Weaver tricks Catra into helping her escape. That same night she appears at Adora's bedside in Bright Moon, alone, drained of magic and seeking asylum.",
+          "text": "Shadow Weaver tricks Catra into helping her escape. That same night she appears at Adora's bedside in Bright Moon.",
           "anchorEpisode": 7,
           "whyLoadBearing": "Places Shadow Weaver inside the Rebellion — the manipulator who will steer both Adora and Glimmer next.",
           "needsVerify": false
@@ -336,21 +336,21 @@
         },
         {
           "label": "S4 · Beast Island",
-          "text": "Adora, Bow and Scorpia reach Beast Island and find Entrapta alive — and Glimmer's father King Micah alive there too, exiled long ago by the Horde.",
+          "text": "Adora, Bow and Swift Wind reach Beast Island and find Entrapta alive — and Glimmer's father King Micah alive there too, exiled long ago by the Horde.",
           "anchorEpisode": 11,
           "whyLoadBearing": "Recovers two long-lost characters who both become central next season.",
           "needsVerify": false
         },
         {
           "label": "S4 · Prime arrives",
-          "text": "Light Hope names Scorpia the last princess needed to fire the weapon. But before Etheria can go off, Horde Prime's fleet reaches the sky and takes Glimmer, Catra and Hordak.",
+          "text": "Light Hope names Scorpia the last princess needed to fire the weapon.",
           "anchorEpisode": 13,
           "whyLoadBearing": "Every faction is torn apart at once and the true villain finally steps onstage.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "Horde Prime's fleet is here. Glimmer is his prisoner, Hordak has been dragged back to his creator, and Catra has stepped aboard the flagship of her own free will to survive.",
+        "text": "Light Hope has named Scorpia the last princess needed to fire the Heart of Etheria — the weapon Mara died to stop, that Glimmer now wants to use.",
         "questions": [
           "Who is Horde Prime, and how do you fight a god?",
           "Will Catra's bargain with Prime keep her alive, or is she just another puppet now?",
@@ -364,19 +364,19 @@
         },
         {
           "name": "Glimmer",
-          "line": "New queen of Bright Moon; her Shadow Weaver bargain has ended with Horde Prime taking her."
+          "line": "New queen of Bright Moon; now learning magic from Shadow Weaver and set on using the Heart to end the Horde."
         },
         {
           "name": "Bow",
-          "line": "The friend still holding the group together; his fathers are now decoding Mara's records."
+          "line": "The friend still holding the group together."
         },
         {
           "name": "Catra",
-          "line": "Broke Scorpia, exiled Entrapta, lost the Fright Zone, and has just boarded Horde Prime's ship."
+          "line": "Broke Scorpia, exiled Entrapta, and hired the shapeshifter Double Trouble to infiltrate the Rebellion."
         },
         {
           "name": "Hordak",
-          "line": "Defeated by Catra, then swept up by his creator Horde Prime."
+          "line": "Forced by Catra to agree to her plans after she removed the crystal from his armor."
         },
         {
           "name": "Horde Prime",
@@ -475,7 +475,7 @@
         },
         {
           "name": "Bow",
-          "line": "Racing toward the Heart with Adora and Catra to trigger Entrapta's failsafe."
+          "line": "Racing toward the Heart with Adora and Catra to deploy the Mara-era failsafe recovered from Mystacor."
         },
         {
           "name": "Horde Prime",
@@ -499,5 +499,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-04T02:41:29.392Z"
 }

@@ -204,7 +204,7 @@
         },
         {
           "label": "S3 · DC and Serena's defection",
-          "text": "In Washington the Waterfords see handmaids fully muzzled shut; Mark Tuello plants a satellite phone on Serena and secures her willingness to defect.",
+          "text": "In Washington the Waterfords see handmaids fully muzzled shut; Mark Tuello fails to turn Serena but slips a satellite phone into her purse so she can reach him later.",
           "anchorEpisode": 6,
           "whyLoadBearing": "The muzzles show Gilead's next stage, and Tuello's phone is the mechanism that puts Fred in Canadian custody.",
           "needsVerify": false
@@ -389,7 +389,7 @@
         },
         {
           "label": "S5 · Nick weds Rose; New Bethlehem",
-          "text": "Nick, now married to Commander Wharton's daughter Rose, drifts back into service; Lawrence pitches New Bethlehem, an enclave meant to lure Gileadean exiles home.",
+          "text": "Nick, now married to Rose, drifts back into service; Lawrence pitches New Bethlehem, an enclave meant to lure Gileadean exiles home.",
           "anchorEpisode": 5,
           "whyLoadBearing": "Places Nick inside the Wharton dynasty and puts New Bethlehem on the table — both central to S6.",
           "needsVerify": false
@@ -446,11 +446,11 @@
         },
         {
           "name": "Nick Blaine",
-          "line": "Now married to Rose Wharton and an active American mole; loves June, plays two sides."
+          "line": "Now married to Rose and an active American mole; loves June, plays two sides."
         },
         {
           "name": "Rose Wharton",
-          "line": "Nick's wife, Commander Wharton's daughter, pregnant; knows Nick still loves June."
+          "line": "Nick's wife, pregnant; knows Nick still loves June."
         },
         {
           "name": "Commander Wharton",
@@ -574,5 +574,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-03T06:57:40.314Z"
+  "repairedAt": "2026-08-04T02:34:06.559Z"
 }

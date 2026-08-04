@@ -81,7 +81,7 @@
         },
         {
           "name": "Bonnie Winterbottom",
-          "line": "Annalise's fiercely loyal junior associate; secretly abused by her father as a child; slept with Asher."
+          "line": "Annalise's fiercely loyal junior associate; slept with Asher."
         },
         {
           "name": "Connor Walsh",
@@ -144,7 +144,7 @@
         },
         {
           "label": "S2 · The Mahoneys and the crash",
-          "text": "Flashbacks reveal Annalise once represented Wes's mother Rose and lost her own baby in a rigged car crash arranged by Frank for the wealthy Mahoney family.",
+          "text": "Flashbacks reveal Annalise once defended Charles Mahoney with Rose as a witness, and lost her own baby in a car crash arranged by Wallace Mahoney after Frank bugged her room.",
           "anchorEpisode": 13,
           "whyLoadBearing": "Ties every character's grief to a single origin event and marks Frank as complicit in Annalise's worst loss.",
           "needsVerify": false
@@ -180,7 +180,7 @@
         },
         {
           "name": "Frank Delfino",
-          "line": "Exposed as the man who arranged the crash that killed Annalise's baby and who strangled Lila for Sam; on the run."
+          "line": "Exposed as the man whose bug on Annalise's room enabled Wallace to arrange the crash that killed her baby, and who strangled Lila for Sam; on the run."
         },
         {
           "name": "Laurel Castillo",
@@ -357,14 +357,14 @@
         },
         {
           "label": "S4 · A living child, a new student",
-          "text": "Nate uncovers evidence Bonnie's supposedly dead baby is alive, and a mysterious new student, Gabriel Maddox, enrols at Middleton with Frank already watching him.",
+          "text": "Nate uncovers evidence of an unnamed child presumed dead but perhaps alive, and a mysterious new student, Gabriel Maddox, enrols at Middleton with Frank already watching him.",
           "anchorEpisode": 15,
           "whyLoadBearing": "Two brand-new mysteries planted in the final minute, both of which will drive what follows.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "Jorge is behind bars but his empire is intact. Bonnie may have a living child she never knew about, and a stranger named Gabriel Maddox has just walked into Middleton with an agenda no one understands.",
+        "text": "Jorge is behind bars but his empire is intact. Nate has found a file hinting an unnamed child presumed dead may still be alive, and a stranger named Gabriel Maddox has just walked into Middleton with an agenda no one understands.",
         "questions": [
           "Who is Gabriel Maddox and what does he want with Annalise?",
           "Is Bonnie's child really alive, and where has he been?",
@@ -386,11 +386,11 @@
         },
         {
           "name": "Bonnie Winterbottom",
-          "line": "Back at the DA's office; still unaware her lost child may be alive."
+          "line": "Back at the DA's office; helped free Asher and continues to work the class action from inside."
         },
         {
           "name": "Nate Lahey",
-          "line": "Combing through the corrupt Denver's files; just found the lead on Bonnie's child."
+          "line": "Combing through the corrupt Denver's files; just found evidence of an unnamed child presumed dead but perhaps alive."
         },
         {
           "name": "Connor Walsh",
@@ -406,7 +406,7 @@
         },
         {
           "name": "Tegan Price",
-          "line": "Sharp Caplan & Gold partner and Annalise's new ally; secretly the 'Jane Doe' who first exposed Jorge."
+          "line": "Sharp Caplan & Gold partner and Annalise's new ally; persuaded to jump ship and help bring Jorge down."
         },
         {
           "name": "Gabriel Maddox",
@@ -460,14 +460,14 @@
         },
         {
           "label": "S5 · Emmett dies, Laurel vanishes",
-          "text": "Annalise clears Emmett of murder charges; he is poisoned dead moments later, and Laurel and baby Christopher disappear from Annalise's apartment.",
+          "text": "Annalise clears Emmett of murder charges; he is later seen collapsed in his office gasping for air, and Laurel and baby Christopher disappear from Annalise's side.",
           "anchorEpisode": 15,
           "whyLoadBearing": "Two catastrophic exits at the finish line, both driving the next chapter of the show.",
           "needsVerify": false
         }
       ],
       "cliffhanger": {
-        "text": "Bonnie and Nate murdered an innocent man to avenge a killing they misread. Emmett is dead by an unknown hand, Laurel has vanished with her son, and the Governor and Castillos are still moving pieces around Annalise.",
+        "text": "Bonnie and Nate murdered an innocent man to avenge a killing they misread. Emmett is on the floor of his office gasping for air, Laurel has vanished with her son, and the Governor and Castillos are still moving pieces around Annalise.",
         "questions": [
           "Where are Laurel and Christopher, and who took them?",
           "Who poisoned Emmett Crawford?",
@@ -481,7 +481,7 @@
         },
         {
           "name": "Bonnie Winterbottom",
-          "line": "Killed an innocent man for revenge she now knows was misplaced; back at Caplan & Gold with Tegan."
+          "line": "Killed an innocent man for revenge she now knows was misplaced; still hiding the truth from Miller's grieving mother."
         },
         {
           "name": "Frank Delfino",
@@ -513,7 +513,7 @@
         },
         {
           "name": "Tegan Price",
-          "line": "Managing partner at Caplan & Gold; Annalise's confidante and secret ally against the Castillos."
+          "line": "Partner at Caplan & Gold alongside the new managing partner Emmett; Annalise's confidante and secret ally against the Castillos."
         }
       ]
     },
@@ -535,7 +535,7 @@
         },
         {
           "label": "S6 · Xavier snapped",
-          "text": "Frank captures Xavier; Nate tortures a confession from him linking Governor Birkhead to Nate Sr.'s killing, then snaps his neck.",
+          "text": "Frank captures and tortures Xavier, who confesses to Nate that he helped murder Nate Sr. for Governor Birkhead; Nate then snaps his neck.",
           "anchorEpisode": 12,
           "whyLoadBearing": "Closes the Nate Sr. thread with a fresh murder and puts the Governor directly on the group's target list.",
           "needsVerify": false
@@ -620,5 +620,6 @@
         }
       ]
     }
-  }
+  },
+  "repairedAt": "2026-08-04T02:43:12.635Z"
 }

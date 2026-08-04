@@ -151,7 +151,7 @@
         }
       ],
       "cliffhanger": {
-        "text": "Franklin is out of jail and knows his supplier is a US intelligence officer — a secret he hasn't disclosed to anyone. The Villanueva cartel is fractured with Lucia missing.",
+        "text": "Franklin is out of jail and knows his supplier is a US intelligence officer — a secret he hasn't disclosed to anyone. Lucia and Gustavo have been released from custody but the DEA hasn't given up the chase.",
         "questions": [
           "What does Franklin do with the knowledge that Teddy is CIA?",
           "Can Cardenas actually live with what she has agreed to for Teddy?",
@@ -222,7 +222,7 @@
         },
         {
           "label": "S3 · Andre dies",
-          "text": "Melody's father, LAPD officer Andre, breaks into Franklin's house and photographs a CIA file that names Teddy; Franklin murders him and stages it as a suicide.",
+          "text": "Melody's father, LAPD officer Andre, breaks into Franklin's house and steals a CIA file that names Teddy; Franklin murders him, stages it as a suicide, and takes the file back.",
           "anchorEpisode": 8,
           "whyLoadBearing": "Franklin killing a friend of his family is the crime Melody eventually confronts him with, and the moral point of no return.",
           "needsVerify": false
@@ -598,5 +598,5 @@
       ]
     }
   },
-  "repairedAt": "2026-08-03T06:49:44.229Z"
+  "repairedAt": "2026-08-04T02:20:46.146Z"
 }
