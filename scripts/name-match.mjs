@@ -99,6 +99,59 @@ const QUALIFIERS = new Set([
 ]);
 
 /**
+ * Nicknames the two sources disagree on, in BOTH directions — the spine writes
+ * "James Holden" where the credits say "Jim", and "Jim Harper" where they say
+ * "James". Prefix matching cannot reach these: "nathan" does not begin with
+ * "nate", and "margaret" shares nothing with "maggie".
+ *
+ * Each row is one person's interchangeable names. Membership in the same row is
+ * treated as a full match, not a half one, because this is a curated list
+ * rather than a guess — the risk is a missing pair, never a wrong pair.
+ */
+const NICKNAME_ROWS = [
+  ['james', 'jim', 'jimmy', 'jamie'], ['margaret', 'maggie', 'meg', 'peggy'],
+  ['joseph', 'joe', 'joey'], ['nathan', 'nate', 'nathaniel'],
+  ['robert', 'rob', 'bob', 'bobby'], ['richard', 'rick', 'dick', 'ricky'],
+  ['william', 'will', 'bill', 'billy', 'liam'], ['michael', 'mike', 'mickey'],
+  ['thomas', 'tom', 'tommy'], ['charles', 'charlie', 'chuck', 'chas'],
+  ['edward', 'ed', 'eddie', 'ted', 'ned'], ['anthony', 'tony'],
+  ['daniel', 'dan', 'danny'], ['david', 'dave', 'davey'],
+  ['christopher', 'chris'], ['matthew', 'matt'], ['andrew', 'andy', 'drew'],
+  ['patrick', 'pat', 'paddy'], ['elizabeth', 'liz', 'beth', 'lizzie', 'eliza'],
+  ['katherine', 'catherine', 'kate', 'katie', 'kathy', 'cathy', 'kat'],
+  ['jennifer', 'jen', 'jenny'], ['jessica', 'jess'], ['rebecca', 'becca', 'becky'],
+  ['alexander', 'alex', 'sasha', 'xander'], ['alexandra', 'alex', 'lexi'],
+  ['nicholas', 'nick', 'nicky'], ['theodore', 'theo', 'teddy'],
+  ['abigail', 'abby'], ['stephen', 'steven', 'steve'], ['peter', 'pete'],
+  ['gregory', 'greg'], ['jonathan', 'jon', 'johnny'], ['john', 'jack', 'johnny'],
+  ['francis', 'frank', 'frankie'], ['vincent', 'vince'], ['raymond', 'ray'],
+  ['lawrence', 'larry'], ['ronald', 'ron', 'ronnie'], ['kenneth', 'ken', 'kenny'],
+  ['eugene', 'gene'], ['walter', 'walt'], ['albert', 'al', 'bert'],
+  ['samuel', 'sam', 'sammy'], ['benjamin', 'ben', 'benny'],
+  ['deborah', 'debra', 'deb', 'debbie'], ['barbara', 'barb', 'babs'],
+  ['susan', 'sue', 'susie'], ['pamela', 'pam'], ['victoria', 'vicky', 'tori'],
+  ['veronica', 'ronnie', 'vee'], ['dorothy', 'dot', 'dottie'],
+  ['eleanor', 'ellie', 'nell'], ['isabella', 'isabel', 'bella', 'izzy'],
+  ['gabriel', 'gabe'], ['zachary', 'zach'], ['joshua', 'josh'],
+  ['timothy', 'tim'], ['philip', 'phillip', 'phil'], ['martin', 'marty'],
+];
+const NICKNAMES = new Map();
+for (let i = 0; i < NICKNAME_ROWS.length; i++) {
+  for (const n of NICKNAME_ROWS[i]) {
+    if (!NICKNAMES.has(n)) NICKNAMES.set(n, new Set());
+    NICKNAMES.get(n).add(i);
+  }
+}
+/** Do two name tokens refer to the same given name? */
+const sameGiven = (a, b) => {
+  if (a === b) return true;
+  const A = NICKNAMES.get(a), B = NICKNAMES.get(b);
+  if (!A || !B) return false;
+  for (const i of A) if (B.has(i)) return true;
+  return false;
+};
+
+/**
  * Best match for `name` among `candidates`.
  *
  * @param candidates  [{ name, weight }] — weight is how much of the show the
@@ -121,7 +174,17 @@ export function bestMatch(name, candidates, owners) {
     }
     return null;
   }
+  // Nicknames and shortened credits are a RESCUE, not a scoring boost.
+  //
+  // Scored alongside everything else they displace correct matches: "Kate Kane"
+  // moved to her stepmother "Catherine Hamilton-Kane" on kate/catherine, and
+  // "Senator Jamie Moreno" moved to "James Greer" on jamie/james. Both were
+  // already matching the right person. Running them only when the strict pass
+  // finds NOBODY means a card that works today cannot be taken away by them.
+  return score(name, candidates, owners, false) ?? score(name, candidates, owners, true);
+}
 
+function score(name, candidates, owners, relaxed) {
   const want = tokens(name);
   if (!want.length) return null;
 
@@ -175,11 +238,36 @@ export function bestMatch(name, candidates, owners) {
       }
     }
 
-    if (!shared.length && !prefixed.length) continue;
-    // The match must rest on a given name, exact or shortened — never a surname.
-    if (!prefixed.length && !shared.some(w => identifying.has(w))) continue;
+    // Nicknames, both directions, on the identifying tokens only.
+    const nicked = [];
+    if (relaxed) {
+      for (const w of want) {
+        if (have.has(w) || !identifying.has(w)) continue;
+        for (const h of haveTokens) {
+          if (haveTokens.length > 1 && h === lastOf) continue;
+          if (sameGiven(w, h)) { nicked.push(h); break; }
+        }
+      }
+    }
+
+    // The credits carry a shorter form of the same name: "Mrs Coulter" for
+    // "Mrs Marisa Coulter", "Eve" for "Atom Eve". Every token the candidate has
+    // is one the card also has, so it cannot be a DIFFERENT person — which is
+    // what the surname rule is guarding against. That rule refuses these
+    // outright, since the only shared token sits in the surname slot.
+    //
+    // Direction matters. "Jame Eagan" is not a subset of "Helena Eagan", so the
+    // father still cannot claim the daughter's card.
+    const subsumed = relaxed && haveTokens.length && haveTokens.every(h => want.includes(h));
+
+    if (!shared.length && !prefixed.length && !nicked.length) continue;
+    // The match must rest on a given name — exact, shortened, or a nickname —
+    // never a surname, unless the credited name is wholly contained in the card.
+    if (!prefixed.length && !nicked.length && !subsumed &&
+        !shared.some(w => identifying.has(w))) continue;
     const rarity =
       shared.reduce((a, w) => a + 1 / (owners.get(w) ?? 1), 0) +
+      nicked.reduce((a, h) => a + 1 / (owners.get(h) ?? 1), 0) +
       prefixed.reduce((a, h) => a + 0.5 / (owners.get(h) ?? 1), 0);
     // A token carried by more than five entries identifies nobody, however
     // prominent the candidate.
