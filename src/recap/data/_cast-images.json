@@ -17,58 +17,58 @@
     "much each missing picture actually costs the recap."
   ],
   "attack-on-titan": {
-    "Levi": "",
-    "Historia Reiss": "",
-    "Reiner Braun": ""
+    "Levi": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/attack-on-titan/levi.jpg",
+    "Historia Reiss": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/attack-on-titan/historia-reiss.png",
+    "Reiner Braun": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/attack-on-titan/reiner-braun.webp"
   },
   "dexter-resurrection": {
-    "Debra Morgan": ""
+    "Debra Morgan": "drop"
   },
   "harley-quinn": {
-    "Kite Man": ""
+    "Kite Man": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/harley-quinn/kite-man.webp"
   },
   "invincible": {
-    "Atom Eve / Samantha Wilkins": "",
-    "Oliver": "",
-    "Cecil Stedman": "",
-    "Allen the Alien": ""
+    "Atom Eve / Samantha Wilkins": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/invincible/atom-eve-samantha-wilkins.jpg",
+    "Oliver": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/invincible/oliver.jpg",
+    "Cecil Stedman": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/invincible/cecil-stedman.jpg",
+    "Allen the Alien": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/invincible/allen-the-alien.jpg"
   },
   "margo-s-got-money-troubles": {
-    "Bodhi": ""
+    "Bodhi": "drop"
   },
   "my-hero-academia": {
-    "Tomura Shigaraki": "",
-    "Endeavor": "",
-    "Hawks": "",
-    "Sir Nighteye": "",
-    "Eri": "",
-    "Overhaul (Kai Chisaki)": ""
+    "Tomura Shigaraki": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/my-hero-academia/tomura-shigaraki.jpg",
+    "Endeavor": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/my-hero-academia/endeavor.jpg",
+    "Hawks": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/my-hero-academia/hawks.webp",
+    "Sir Nighteye": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/my-hero-academia/sir-nighteye.jpg",
+    "Eri": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/my-hero-academia/eri.webp",
+    "Overhaul (Kai Chisaki)": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/my-hero-academia/overhaul-kai-chisaki.jpg"
   },
   "outer-banks": {
-    "Chandler Groff": ""
+    "Chandler Groff": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/outer-banks/chandler-groff.webp"
   },
   "she-ra-and-the-princesses-of-power": {
-    "Adora / She-Ra": "",
-    "Catra": "",
-    "Glimmer": "",
-    "Bow": "",
-    "Hordak": "",
-    "Entrapta": ""
+    "Adora / She-Ra": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/she-ra-and-the-princesses-of-power/adora-she-ra.webp",
+    "Catra": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/she-ra-and-the-princesses-of-power/catra.png",
+    "Glimmer": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/she-ra-and-the-princesses-of-power/glimmer.webp",
+    "Bow": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/she-ra-and-the-princesses-of-power/bow.jpg",
+    "Hordak": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/she-ra-and-the-princesses-of-power/hordak.webp",
+    "Entrapta": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/she-ra-and-the-princesses-of-power/entrapta.webp"
   },
   "star-wars-rebels": {
-    "Ahsoka Tano": ""
+    "Ahsoka Tano": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/star-wars-rebels/ahsoka-tano.jpg"
   },
   "star-wars-the-bad-batch": {
-    "Hunter": "",
-    "Crosshair": "",
-    "Wrecker": "",
-    "Echo": ""
+    "Hunter": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/star-wars-the-bad-batch/hunter.webp",
+    "Crosshair": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/star-wars-the-bad-batch/crosshair.jpg",
+    "Wrecker": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/star-wars-the-bad-batch/wrecker.jpg",
+    "Echo": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/star-wars-the-bad-batch/echo.jpg"
   },
   "super-dragon-ball-heroes": {
-    "Goku": "",
-    "Vegeta": "",
-    "Future Trunks": "",
-    "Hearts": ""
+    "Goku": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/super-dragon-ball-heroes/goku.webp",
+    "Vegeta": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/super-dragon-ball-heroes/vegeta.webp",
+    "Future Trunks": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/super-dragon-ball-heroes/future-trunks.webp",
+    "Hearts": "https://tvzegwqibvncuuiknrxx.supabase.co/storage/v1/object/public/recap-portraits/super-dragon-ball-heroes/hearts.webp"
   },
   "westworld": {
     "Rehoboam": ""

@@ -74,6 +74,17 @@ async function loadCastImages() {
  */
 const MAX_CHARACTER_CARDS = 8;
 
+/**
+ * Sentinel in _cast-images.json meaning "this card should not exist".
+ *
+ * The automatic rule only removes the TRAILING run of unpicturable cards, since
+ * cutting an interior one would leave a hole in an order that is meaningful.
+ * But some characters are simply not worth a card at all, whatever their rank —
+ * a judgement about the show that no signal on our side can make. Writing
+ * "drop" instead of a URL records that decision next to the picture it replaces.
+ */
+const DROP = 'drop';
+
 const DIM = { title: 0.15, premise: 0.45, character: 0.28, characterNoPortrait: 0.55, beat: 0.18, cliffhanger: 0.3 };
 
 // ---------------------------------------------------------------- env
@@ -219,6 +230,7 @@ function composer(data, castLinks, imageOverrides = {}) {
     // row. It is the only route to a face on an animated show TVMaze has no
     // art for, and the escape hatch when a row resolves to the wrong picture.
     const override = imageOverrides[name];
+    if (override === DROP) return null;
     if (override) return override;
     const row = castRowFor(name);
     if (animated) return row?.inCharacter ?? null;
@@ -242,7 +254,9 @@ function composer(data, castLinks, imageOverrides = {}) {
     return chosen;
   };
 
-  return { keyArt, castRowFor, portraitOf, freshStill };
+  const isDropped = name => imageOverrides[name] === DROP;
+
+  return { keyArt, castRowFor, portraitOf, freshStill, isDropped };
 }
 
 /**
@@ -264,7 +278,7 @@ function orderedBeats(seasonEntry) {
 // ---------------------------------------------------------------- compose
 
 function composeShow(data, spine, imageOverrides = {}) {
-  const { keyArt, castRowFor, portraitOf, freshStill } = composer(
+  const { keyArt, castRowFor, portraitOf, freshStill, isDropped } = composer(
     data,
     spine.castLinks ?? {},
     imageOverrides,
@@ -330,7 +344,10 @@ function composeShow(data, spine, imageOverrides = {}) {
     // MAX_CHARACTER_CARDS already relies on. A faceless character ranked ABOVE
     // a pictured one is kept: cutting it would leave a hole in the middle of
     // the order, and it is by construction someone the viewer needs more.
-    const picked = deduped.slice(0, MAX_CHARACTER_CARDS);
+    // An explicit "drop" removes the character before ranking, so it does not
+    // occupy one of the eight slots a real card could have used.
+    const kept = deduped.filter(c => !isDropped(c.name));
+    const picked = kept.slice(0, MAX_CHARACTER_CARDS);
     let end = picked.length;
     while (end > 0 && !portraitOf(picked[end - 1].name)) end--;
 

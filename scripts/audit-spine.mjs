@@ -213,6 +213,10 @@ const SEV = { high: '!!', low: ' ·' };
 // sees, so auditing it is noise; a card it keeps must be judged.
 const MAX_CHARACTER_CARDS = 8;
 
+// Mirrors upload-recap: "drop" in _cast-images.json means the card does not
+// exist, so there is no missing portrait to report.
+const DROP = 'drop';
+
 // Hand-sourced portraits, read once. Missing file is not an error — the
 // override layer is optional and every show still audits without it.
 let CAST_IMAGES = null;
@@ -273,6 +277,7 @@ function auditPortraits(show, spine, seasons) {
   };
 
   const portraitFor = name => {
+    if (overrides[name] === DROP) return null;
     if (overrides[name]) return overrides[name];
     const row = rowFor(name);
     // Mirror portraitOf: animation refuses the profile headshot entirely.
@@ -290,6 +295,7 @@ function auditPortraits(show, spine, seasons) {
     const claimed = new Set();
     const kept = [];
     chars.forEach((c, i) => {
+      if (overrides[c.name] === DROP) return;
       const row = rowFor(c.name);
       const key = row ? `${row.name}|${row.character}` : null;
       if (key && claimed.has(key)) return;

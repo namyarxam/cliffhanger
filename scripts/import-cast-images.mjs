@@ -158,7 +158,14 @@ async function main() {
         failed.push(`${p.slug} / ${p.name} — not a character awaiting a picture (check spelling)`);
         continue;
       }
-      if (overrides[p.slug][p.name]) { continue; }  // already hosted
+      if (overrides[p.slug][p.name]) { continue; }  // already hosted or dropped
+      // "drop" is a decision, not a link — record it and move on.
+      if (/^drop$/i.test(p.url)) {
+        if (!dryRun) overrides[p.slug][p.name] = 'drop';
+        console.log(`  – ${p.slug} / ${p.name}  (dropped, no card)`);
+        ok++;
+        continue;
+      }
       let img;
       try { img = await fetchImage(p.url); }
       catch (e) { failed.push(`${p.slug} / ${p.name} — ${e.message}`); continue; }
