@@ -26,7 +26,7 @@
  *   node scripts/check-cliffhangers.mjs --all --limit 10
  */
 
-import { readFile, writeFile, readdir } from 'node:fs/promises';
+import { readFile, writeFile, readdir, rename } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { spawn } from 'node:child_process';
 import { dirname, resolve } from 'node:path';
@@ -168,15 +168,38 @@ async function main() {
   console.log(`\n  ${jobs.length} cliffhangers to check across ${slugs.length} shows` +
     `${done.size ? ` (${done.size} already done, resuming)` : ''}\n`);
 
-  // Flushed after every result, so a killed run keeps everything it paid for.
+  // Flushed as results land, so a killed run keeps everything it paid for.
+  //
+  // Serialised and atomic, because neither is optional here: six workers can
+  // reach the flush at the same moment, and two concurrent writeFiles to one
+  // path interleave into unparseable JSON — which would throw away the whole
+  // run at the exact moment the file exists to prevent that. Writing to a temp
+  // file and renaming means a crash mid-write leaves the previous good file.
   const collected = [...done.values()];
   let sinceFlush = 0;
-  const flush = async () => {
-    await writeFile(OUT, JSON.stringify({ checkedAt: new Date().toISOString(), results: collected }, null, 2));
+  let writing = Promise.resolve();
+  const flush = () => {
     sinceFlush = 0;
+    writing = writing.then(async () => {
+      const tmp = `${OUT}.tmp`;
+      await writeFile(tmp, JSON.stringify({ checkedAt: new Date().toISOString(), results: collected }, null, 2));
+      await rename(tmp, OUT);
+    }).catch(e => console.error(`  ✗ flush failed: ${e.message}`));
+    return writing;
   };
 
+  /**
+   * Stop cleanly at the usage cap instead of failing 350 jobs in ten seconds.
+   *
+   * Without this the run "completes" with hundreds of errors and reads exactly
+   * like a finished sweep. Errored seasons are never cached, so everything
+   * stopped here is simply retried on the next run.
+   */
+  let consecutiveErrors = 0;
+  let stopped = false;
+
   const results = await mapLimit(jobs, CONCURRENCY, async job => {
+    if (stopped) return { slug: job.slug, season: job.season, error: 'skipped — run stopped' };
     try {
       const parsed = extractJSON(await askClaude(buildPrompt(job.title, job.season, job.eps, job.cliff)));
       const flags = parsed.flags ?? [];
@@ -184,6 +207,7 @@ async function main() {
         console.log(`  ${job.slug} S${job.season} — ${flags.length} flag(s)`);
         for (const f of flags) console.log(`      [${f.kind}] ${f.claim}`);
       }
+      consecutiveErrors = 0;
       const rec = { slug: job.slug, season: job.season, cliff: job.cliff, flags };
       collected.push(rec);
       if (++sinceFlush >= 5) await flush();
@@ -192,6 +216,11 @@ async function main() {
       // A rate-limited or malformed run records an error, never a false clean,
       // so a resume retries it instead of trusting it.
       console.log(`  ${job.slug} S${job.season} — ERROR ${e.message.slice(0, 60)}`);
+      if (++consecutiveErrors >= 8 && !stopped) {
+        stopped = true;
+        console.log(`\n  ✋ 8 failures in a row — assuming the usage cap. Stopping cleanly.`);
+        console.log(`     Nothing is lost: errored seasons are not cached, so re-running resumes here.\n`);
+      }
       const rec = { slug: job.slug, season: job.season, error: e.message };
       collected.push(rec);
       if (++sinceFlush >= 5) await flush();
@@ -200,8 +229,10 @@ async function main() {
   });
 
   await flush();
+  await writing;
   const flagged = collected.filter(r => r.flags?.length);
   const errored = collected.filter(r => r.error);
+  if (stopped) console.log(`\n  STOPPED EARLY at the usage cap — re-run to continue.`);
   console.log(`\n  ${collected.length - errored.length} checked · ${flagged.length} with flags · ${errored.length} errored`);
   console.log(`  written to src/recap/data/_cliffhanger-check.json\n`);
 }
