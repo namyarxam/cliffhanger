@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-08-05T04:48:59.520Z",
+  "results": [
+    {
+      "slug": "banshee",
+      "title": "Banshee",
+      "season": 1,
+      "cliff": "Rabbit is dead by his own daughter's hand, Proctor has become a killer of civilians as well as criminals, and the real Lucas Hood's body has surfaced. His son Jason has already recognised the impostor wearing his father's badge.",
+      "flags": [
+        {
+          "kind": "negation",
+          "claim": "His son Jason has already recognised the impostor wearing his father's badge",
+          "evidence": "In a post-credits scene, Jason Hood, son of the real Lucas Hood, is shown watching a YouTube video of the fight between Mr. Sanchez and the unnamed protagonist as Lucas Hood.",
+          "correction": "Jason is shown watching a video of the impostor, but the source does not state that he has recognised him as an impostor — only that he is watching the footage."
+        }
+      ]
+    },
+    {
+      "slug": "banshee",
+      "title": "Banshee",
+      "season": 2,
+      "cliff": "Rabbit is finally dead, the diamonds were always fake, and Rebecca has crossed the line into killing for Kai. Emmett has been murdered by white supremacists, Deva has just learned Lucas is her real father, and Chayton Littlestone is on his way back to Banshee to avenge Alex Longshadow.",
+      "flags": [
+        {
+          "kind": "status",
+          "claim": "Chayton Littlestone is on his way back to Banshee to avenge Alex Longshadow",
+          "evidence": "He is informed of Longshadow's death and decides to return to Banshee.",
+          "correction": "Chayton decides to return to Banshee upon hearing of Longshadow's death, but the source does not state his motive is to avenge Alex — Chayton leads the Redbones gang that was in conflict with Longshadow's tribal leadership, not allied with him."
+        }
+      ]
+    },
+    {
+      "slug": "banshee",
+      "title": "Banshee",
+      "season": 3,
+      "cliff": "Chayton is dead, but the cost was Siobhan and Gordon, with Job taken alive by unknown hands. Lucas has taken off the badge; Carrie is a widow who has killed her lover's captor; Proctor is free and intrigued by the vacuum Lucas is leaving.",
+      "flags": []
+    },
+    {
+      "slug": "banshee",
+      "title": "Banshee",
+      "season": 4,
+      "cliff": "Rebecca is buried, her killer buried by Kai's own hand. Kai stands alone against six cartel guns; Lucas has left Banshee and Job has left for New York. Agent Dawson has walked away with a file that names Lucas as an impostor.",
+      "flags": []
+    }
+  ]
+}
