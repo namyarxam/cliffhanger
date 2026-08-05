@@ -1,0 +1,68 @@
+# Paste a picture URL after the = on each line. Order is most-important-first.
+#
+# Then run:   node scripts/import-cast-images.mjs --urls
+#
+# The URL is only read once: the importer downloads the image and re-hosts it
+# in our own bucket, because upload-recap freezes the URL into the database and
+# wiki hosts rotate paths and block hotlinking. So a link that works right now is
+# all that is needed - it does not have to keep working.
+#
+# Blank lines are skipped. Partial is fine - fill in five, run it, do more later.
+# Use in-character art, not an actor photo.
+
+# ---- attack-on-titan
+attack-on-titan | Levi = 
+attack-on-titan | Historia Reiss = 
+attack-on-titan | Reiner Braun = 
+
+# ---- dexter-resurrection
+dexter-resurrection | Debra Morgan = 
+
+# ---- harley-quinn
+harley-quinn | Kite Man = 
+
+# ---- invincible
+invincible | Atom Eve / Samantha Wilkins = 
+invincible | Oliver = 
+invincible | Cecil Stedman = 
+invincible | Allen the Alien = 
+
+# ---- margo-s-got-money-troubles
+margo-s-got-money-troubles | Bodhi = 
+
+# ---- my-hero-academia
+my-hero-academia | Tomura Shigaraki = 
+my-hero-academia | Endeavor = 
+my-hero-academia | Hawks = 
+my-hero-academia | Sir Nighteye = 
+my-hero-academia | Eri = 
+my-hero-academia | Overhaul (Kai Chisaki) = 
+
+# ---- outer-banks
+outer-banks | Chandler Groff = 
+
+# ---- she-ra-and-the-princesses-of-power
+she-ra-and-the-princesses-of-power | Adora / She-Ra = 
+she-ra-and-the-princesses-of-power | Catra = 
+she-ra-and-the-princesses-of-power | Glimmer = 
+she-ra-and-the-princesses-of-power | Bow = 
+she-ra-and-the-princesses-of-power | Hordak = 
+she-ra-and-the-princesses-of-power | Entrapta = 
+
+# ---- star-wars-rebels
+star-wars-rebels | Ahsoka Tano = 
+
+# ---- star-wars-the-bad-batch
+star-wars-the-bad-batch | Hunter = 
+star-wars-the-bad-batch | Crosshair = 
+star-wars-the-bad-batch | Wrecker = 
+star-wars-the-bad-batch | Echo = 
+
+# ---- super-dragon-ball-heroes
+super-dragon-ball-heroes | Goku = 
+super-dragon-ball-heroes | Vegeta = 
+super-dragon-ball-heroes | Future Trunks = 
+super-dragon-ball-heroes | Hearts = 
+
+# ---- westworld
+westworld | Rehoboam = 

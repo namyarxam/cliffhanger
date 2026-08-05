@@ -15,6 +15,7 @@
  * filename. This uploads it and writes the URL back.
  *
  * Usage:
+ *   node scripts/import-cast-images.mjs --urls                 # read cast-image-urls.txt
  *   node scripts/import-cast-images.mjs --list                 # what to save, and as what
  *   node scripts/import-cast-images.mjs --dir ~/Desktop/pics   # upload + record
  *   node scripts/import-cast-images.mjs --dir ~/Desktop/pics --dry-run
@@ -30,6 +31,46 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = resolve(ROOT, 'src/recap/data');
 const OVERRIDES = resolve(DATA, '_cast-images.json');
 const BUCKET = 'recap-portraits';
+const URL_LIST = resolve(DATA, 'cast-image-urls.txt');
+
+/**
+ * Pasted URLs, one per line: `slug | Character Name = https://...`
+ *
+ * Read once and then discarded in favour of our own copy. The pasted link only
+ * has to work at this moment — see the header for why we never freeze it.
+ */
+function pastedUrls() {
+  let text;
+  try { text = readFileSync(URL_LIST, 'utf8'); } catch { return []; }
+  const out = [];
+  for (const raw of text.split('\n')) {
+    const line = raw.trim();
+    if (!line || line.startsWith('#')) continue;
+    const eq = line.indexOf('=');
+    if (eq === -1) continue;
+    const left = line.slice(0, eq).trim();
+    const url = line.slice(eq + 1).trim();
+    if (!url) continue;
+    const bar = left.indexOf('|');
+    if (bar === -1) continue;
+    out.push({ slug: left.slice(0, bar).trim(), name: left.slice(bar + 1).trim(), url });
+  }
+  return out;
+}
+
+async function fetchImage(url) {
+  const res = await fetch(url, {
+    redirect: 'follow',
+    // Some wiki CDNs refuse a bare programmatic request.
+    headers: { 'User-Agent': 'Mozilla/5.0', Accept: 'image/*,*/*' },
+  });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const type = (res.headers.get('content-type') ?? '').split(';')[0].trim();
+  if (!type.startsWith('image/')) throw new Error(`not an image (${type || 'unknown type'})`);
+  const buf = Buffer.from(await res.arrayBuffer());
+  if (buf.length < 1024) throw new Error(`suspiciously small (${buf.length} bytes)`);
+  return { buf, type };
+}
 
 const arg = (f, d = null) => {
   const i = process.argv.indexOf(f);
@@ -64,8 +105,9 @@ async function main() {
   const rows = wanted();
   const dir = arg('--dir');
   const dryRun = process.argv.includes('--dry-run');
+  const fromUrls = process.argv.includes('--urls');
 
-  if (process.argv.includes('--list') || !dir) {
+  if (!fromUrls && (process.argv.includes('--list') || !dir)) {
     const todo = rows.filter(r => !r.url);
     console.log(`\nSave one picture per line below, into a single folder.`);
     console.log(`Any of .jpg .jpeg .png .webp — the extension does not matter, the NAME does.\n`);
@@ -99,6 +141,49 @@ async function main() {
       }
       console.log(`  created public bucket "${BUCKET}"`);
     }
+  }
+
+  if (fromUrls) {
+    const pasted = pastedUrls();
+    if (!pasted.length) {
+      console.log(`\n  nothing to do — no URLs filled in yet in ${URL_LIST}\n`);
+      return;
+    }
+    const overrides = JSON.parse(await readFile(OVERRIDES, 'utf8'));
+    const EXT = { 'image/jpeg': '.jpg', 'image/png': '.png', 'image/webp': '.webp', 'image/gif': '.gif' };
+    let ok = 0;
+    const failed = [];
+    for (const p of pasted) {
+      if (!overrides[p.slug] || !(p.name in overrides[p.slug])) {
+        failed.push(`${p.slug} / ${p.name} — not a character awaiting a picture (check spelling)`);
+        continue;
+      }
+      if (overrides[p.slug][p.name]) { continue; }  // already hosted
+      let img;
+      try { img = await fetchImage(p.url); }
+      catch (e) { failed.push(`${p.slug} / ${p.name} — ${e.message}`); continue; }
+      const key2 = `${p.slug}/${slugify(p.name)}${EXT[img.type] ?? '.jpg'}`;
+      if (dryRun) { console.log(`  would host ${p.name} (${(img.buf.length / 1024).toFixed(0)}kb) -> ${key2}`); ok++; continue; }
+      const { error } = await db.storage
+        .from(BUCKET)
+        .upload(key2, img.buf, { contentType: img.type, upsert: true });
+      if (error) { failed.push(`${p.slug} / ${p.name} — upload: ${error.message}`); continue; }
+      const { data } = db.storage.from(BUCKET).getPublicUrl(key2);
+      overrides[p.slug][p.name] = data.publicUrl;
+      console.log(`  ✓ ${p.slug} / ${p.name}  (${(img.buf.length / 1024).toFixed(0)}kb)`);
+      ok++;
+    }
+    if (!dryRun) await writeFile(OVERRIDES, JSON.stringify(overrides, null, 2) + '\n');
+    const remaining = wanted().filter(r => !overrides[r.slug]?.[r.name]).length;
+    console.log(`\n  ${ok} hosted, ${failed.length} failed, ${remaining} still blank.`);
+    for (const f of failed) console.log(`      ✗ ${f}`);
+    if (ok && !dryRun) {
+      const shows = [...new Set(pasted.map(p => p.slug))].filter(s => overrides[s]);
+      console.log(`\n  now re-upload those shows:`);
+      for (const s of shows) console.log(`      node scripts/upload-recap.mjs --slug ${s}`);
+      console.log('');
+    }
+    return;
   }
 
   const files = await readdir(resolve(dir));
