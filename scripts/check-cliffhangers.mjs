@@ -96,7 +96,15 @@ Check every claim it makes about the state of things. Pay particular attention t
 
 Also flag anyone named here whom the source for THIS season never mentions.
 
-Do NOT flag: compression, dramatic phrasing, or a reasonable reading of what the source implies. Only flag what the source actually contradicts or never supports. When you cannot point to specific source text, do not flag it.
+A CONTRADICTION is not the same as an OMISSION, and only contradictions count.
+
+If the text names a year, a place or a detail the source simply does not mention, that is compression — the recap is allowed to be more specific than the summary. Say nothing. Only flag a detail when the source states something INCOMPATIBLE with it.
+
+The one exception is a PERSON the source for this season never mentions at all, which is worth knowing about even without a contradiction. Flag that as unknown_name.
+
+Also do not flag: dramatic phrasing, or a reasonable reading of what the source clearly implies.
+
+The two errors do not cost the same. A missed flag leaves one wrong sentence. A false flag sends someone to re-read a season that was fine, and enough of those make the whole report worth ignoring. If you cannot quote the source text that makes the claim false, do not flag it.
 
 Return ONLY valid JSON. An empty array is a valid and expected answer:
 
