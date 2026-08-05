@@ -16,10 +16,61 @@
     "Run `node scripts/rank-faceless.mjs` for the current worklist, ordered by how",
     "much each missing picture actually costs the recap."
   ],
+  "attack-on-titan": {
+    "Levi": "",
+    "Historia Reiss": "",
+    "Reiner Braun": ""
+  },
+  "dexter-resurrection": {
+    "Debra Morgan": ""
+  },
+  "harley-quinn": {
+    "Kite Man": ""
+  },
   "invincible": {
     "Atom Eve / Samantha Wilkins": "",
     "Oliver": "",
     "Cecil Stedman": "",
     "Allen the Alien": ""
+  },
+  "margo-s-got-money-troubles": {
+    "Bodhi": ""
+  },
+  "my-hero-academia": {
+    "Tomura Shigaraki": "",
+    "Endeavor": "",
+    "Hawks": "",
+    "Sir Nighteye": "",
+    "Eri": "",
+    "Overhaul (Kai Chisaki)": ""
+  },
+  "outer-banks": {
+    "Chandler Groff": ""
+  },
+  "she-ra-and-the-princesses-of-power": {
+    "Adora / She-Ra": "",
+    "Catra": "",
+    "Glimmer": "",
+    "Bow": "",
+    "Hordak": "",
+    "Entrapta": ""
+  },
+  "star-wars-rebels": {
+    "Ahsoka Tano": ""
+  },
+  "star-wars-the-bad-batch": {
+    "Hunter": "",
+    "Crosshair": "",
+    "Wrecker": "",
+    "Echo": ""
+  },
+  "super-dragon-ball-heroes": {
+    "Goku": "",
+    "Vegeta": "",
+    "Future Trunks": "",
+    "Hearts": ""
+  },
+  "westworld": {
+    "Rehoboam": ""
   }
 }
