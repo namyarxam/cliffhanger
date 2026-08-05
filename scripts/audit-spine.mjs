@@ -39,7 +39,7 @@
  */
 
 import { readFile, writeFile, readdir } from 'node:fs/promises';
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { spawn } from 'node:child_process';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -209,6 +209,25 @@ async function auditSeason(show, spine, seasonNo, opts) {
 
 const SEV = { high: '!!', low: ' ·' };
 
+// Must match upload-recap.mjs. A card the uploader drops is a card no viewer
+// sees, so auditing it is noise; a card it keeps must be judged.
+const MAX_CHARACTER_CARDS = 8;
+
+// Hand-sourced portraits, read once. Missing file is not an error — the
+// override layer is optional and every show still audits without it.
+let CAST_IMAGES = null;
+function castImagesFor(slug) {
+  if (CAST_IMAGES === null) {
+    try {
+      CAST_IMAGES = JSON.parse(readFileSync(resolve(DATA, '_cast-images.json'), 'utf8'));
+      delete CAST_IMAGES._readme;
+      for (const show of Object.keys(CAST_IMAGES))
+        for (const [k, v] of Object.entries(CAST_IMAGES[show])) if (!v) delete CAST_IMAGES[show][k];
+    } catch { CAST_IMAGES = {}; }
+  }
+  return CAST_IMAGES[slug] ?? {};
+}
+
 /**
  * Portrait resolution, checked deterministically — no model call.
  *
@@ -240,6 +259,8 @@ function auditPortraits(show, spine, seasons) {
   const candidates = cast.map(c => ({ name: c.character, weight: c.episodeCount ?? 0, row: c }));
   const links = spine.castLinks ?? {};
 
+  const overrides = castImagesFor(spine.slug ?? show.slug);
+
   const rowFor = name => {
     // Explicit links win, same as compositing — "The Governor" is credited
     // Philip Blake, a pairing no string match can reach.
@@ -251,14 +272,37 @@ function auditPortraits(show, spine, seasons) {
     return bestMatch(name, candidates, owners)?.row ?? null;
   };
 
+  const portraitFor = name => {
+    if (overrides[name]) return overrides[name];
+    const row = rowFor(name);
+    // Mirror portraitOf: animation refuses the profile headshot entirely.
+    return row ? (animated ? row.inCharacter ?? null : row.inCharacter ?? row.profile ?? null) : null;
+  };
+
   const flags = [];
   for (const s of seasons) {
     const chars = spine.seasons[String(s)]?.characters ?? [];
+
+    // Only judge the cards that actually SHIP. The uploader dedupes by resolved
+    // cast row, keeps the first MAX_CHARACTER_CARDS, then drops the trailing run
+    // it cannot picture. Auditing the raw list reported faces missing from cards
+    // no viewer will ever see, which is noise that buries the real ones.
+    const claimed = new Set();
+    const kept = [];
     chars.forEach((c, i) => {
       const row = rowFor(c.name);
-      // Mirror portraitOf: animation refuses the profile headshot entirely.
-      const portrait = row ? (animated ? row.inCharacter ?? null : row.inCharacter ?? row.profile ?? null) : null;
-      if (portrait) return;
+      const key = row ? `${row.name}|${row.character}` : null;
+      if (key && claimed.has(key)) return;
+      if (key) claimed.add(key);
+      kept.push({ c, i });
+    });
+    const picked = kept.slice(0, MAX_CHARACTER_CARDS);
+    let end = picked.length;
+    while (end > 0 && !portraitFor(picked[end - 1].c.name)) end--;
+
+    for (const { c, i } of picked.slice(0, end)) {
+      if (portraitFor(c.name)) continue;
+      const row = rowFor(c.name);
       flags.push({
         season: s,
         id: `C${i + 1}`,
@@ -271,7 +315,7 @@ function auditPortraits(show, spine, seasons) {
             ? `matched "${row.character}" but it has no in-character still, and a voice actor's headshot is never used on an animated card`
             : `matched "${row.character}" but it carries no usable image`,
       });
-    });
+    }
   }
   return flags;
 }
@@ -373,6 +417,39 @@ async function auditShow(slug, opts) {
   return { slug, high: high.length, low: all.length - high.length, errored: allErrored };
 }
 
+/**
+ * Recompute only the deterministic portrait check, in place.
+ *
+ * Portrait resolution costs no model call, but it is stored inside the same
+ * file as the LLM season results — so a change to matching, an explicit cast
+ * link, or a hand-sourced override silently invalidates every stored
+ * `portraits` array while the expensive `results` stay perfectly valid.
+ * Re-running the full audit to refresh them would spend a whole pass of the
+ * usage budget re-deriving text findings that did not change.
+ */
+async function refreshPortraits(slugs) {
+  let touched = 0, before = 0, after = 0;
+  for (const slug of slugs) {
+    const path = resolve(DATA, `${slug}.audit.json`);
+    if (!existsSync(path)) continue;
+    let audit, show, spine;
+    try {
+      audit = JSON.parse(await readFile(path, 'utf8'));
+      show = JSON.parse(await readFile(resolve(DATA, `${slug}.json`), 'utf8'));
+      spine = JSON.parse(await readFile(resolve(DATA, `${slug}.spine.json`), 'utf8'));
+    } catch { continue; }
+    const seasons = Object.keys(spine.seasons ?? {}).map(Number).sort((a, b) => a - b);
+    const portraits = auditPortraits(show, spine, seasons);
+    before += (audit.portraits ?? []).filter(p => p.severity === 'high').length;
+    after += portraits.filter(p => p.severity === 'high').length;
+    // results is left exactly as it was — this touches nothing the model produced.
+    await writeFile(path, JSON.stringify({ ...audit, portraits }, null, 2));
+    touched++;
+  }
+  console.log(`\n  refreshed portraits on ${touched} audits (no model calls)`);
+  console.log(`  portrait flags: ${before} -> ${after}\n`);
+}
+
 async function main() {
   let slugs = process.argv.includes('--all')
     ? (await readdir(DATA))
@@ -384,6 +461,11 @@ async function main() {
   if (!slugs.length) {
     console.error('\n✗ pass --slug <name> or --all\n');
     process.exit(1);
+  }
+
+  if (process.argv.includes('--portraits-only')) {
+    await refreshPortraits(slugs);
+    return;
   }
 
   // Resume support: an --all sweep is expensive and gets cut off by usage
