@@ -133,6 +133,23 @@ async function main() {
   const limit = Number(arg('--limit', 0));
   if (limit) slugs = slugs.slice(0, limit);
 
+  /**
+   * Resume support. An 800-call sweep does not survive a usage window, and the
+   * results used to be written only after the last call returned — so a run
+   * killed at 700 threw away 700 calls. Prior results are loaded, already-checked
+   * seasons are skipped, and every result is flushed as it lands.
+   *
+   * An ERRORED season is deliberately not treated as checked: a rate-limited
+   * call must be retried, not frozen in as a clean result.
+   */
+  const OUT = resolve(DATA, '_cliffhanger-check.json');
+  let prior = [];
+  try {
+    prior = JSON.parse(await readFile(OUT, 'utf8')).results ?? [];
+  } catch { /* first run */ }
+  const done = new Map();
+  for (const r of prior) if (!r.error) done.set(`${r.slug}|${r.season}`, r);
+
   const jobs = [];
   for (const slug of slugs) {
     if (!existsSync(resolve(DATA, `${slug}.spine.json`))) continue;
@@ -144,10 +161,20 @@ async function main() {
       const eps = (data.seasons.find(s => s.season === Number(n))?.episodes ?? [])
         .filter(e => (e.plot || e.overview || '').length > 80);
       if (eps.length < 2) continue;
+      if (done.has(`${slug}|${Number(n)}`) && !process.argv.includes('--force')) continue;
       jobs.push({ slug, title: data.title, season: Number(n), eps, cliff });
     }
   }
-  console.log(`\n  ${jobs.length} cliffhangers across ${slugs.length} shows\n`);
+  console.log(`\n  ${jobs.length} cliffhangers to check across ${slugs.length} shows` +
+    `${done.size ? ` (${done.size} already done, resuming)` : ''}\n`);
+
+  // Flushed after every result, so a killed run keeps everything it paid for.
+  const collected = [...done.values()];
+  let sinceFlush = 0;
+  const flush = async () => {
+    await writeFile(OUT, JSON.stringify({ checkedAt: new Date().toISOString(), results: collected }, null, 2));
+    sinceFlush = 0;
+  };
 
   const results = await mapLimit(jobs, CONCURRENCY, async job => {
     try {
@@ -157,21 +184,25 @@ async function main() {
         console.log(`  ${job.slug} S${job.season} — ${flags.length} flag(s)`);
         for (const f of flags) console.log(`      [${f.kind}] ${f.claim}`);
       }
-      return { ...job, eps: undefined, flags };
+      const rec = { slug: job.slug, season: job.season, cliff: job.cliff, flags };
+      collected.push(rec);
+      if (++sinceFlush >= 5) await flush();
+      return rec;
     } catch (e) {
-      // A rate-limited or malformed run records nothing rather than a false clean.
+      // A rate-limited or malformed run records an error, never a false clean,
+      // so a resume retries it instead of trusting it.
       console.log(`  ${job.slug} S${job.season} — ERROR ${e.message.slice(0, 60)}`);
-      return { slug: job.slug, season: job.season, error: e.message };
+      const rec = { slug: job.slug, season: job.season, error: e.message };
+      collected.push(rec);
+      if (++sinceFlush >= 5) await flush();
+      return rec;
     }
   });
 
-  const flagged = results.filter(r => r.flags?.length);
-  const errored = results.filter(r => r.error);
-  await writeFile(
-    resolve(DATA, '_cliffhanger-check.json'),
-    JSON.stringify({ checkedAt: new Date().toISOString(), results }, null, 2),
-  );
-  console.log(`\n  ${results.length - errored.length} checked · ${flagged.length} with flags · ${errored.length} errored`);
+  await flush();
+  const flagged = collected.filter(r => r.flags?.length);
+  const errored = collected.filter(r => r.error);
+  console.log(`\n  ${collected.length - errored.length} checked · ${flagged.length} with flags · ${errored.length} errored`);
   console.log(`  written to src/recap/data/_cliffhanger-check.json\n`);
 }
 
