@@ -587,5 +587,15 @@
       ]
     }
   },
-  "repairedAt": "2026-08-04T02:18:02.573Z"
+  "repairedAt": "2026-08-04T02:18:02.573Z",
+  "castLinks": {
+    "Mrs. S (Siobhan Sadler)": {
+      "actor": "Maria Doyle Kennedy",
+      "character": "Siobhan 'Mrs. S' Sadler"
+    },
+    "Krystal Goderitch": {
+      "actor": "Tatiana Maslany",
+      "character": "Sarah / Cosima / Alison / Helena / Rachel"
+    }
+  }
 }

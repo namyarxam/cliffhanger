@@ -486,5 +486,11 @@
       ]
     }
   },
-  "repairedAt": "2026-08-02T23:37:02.850Z"
+  "repairedAt": "2026-08-02T23:37:02.850Z",
+  "castLinks": {
+    "Gustavo Fring": {
+      "actor": "Giancarlo Esposito",
+      "character": "Gus Fring"
+    }
+  }
 }

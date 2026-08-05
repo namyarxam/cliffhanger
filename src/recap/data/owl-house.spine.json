@@ -332,5 +332,15 @@
       ]
     }
   },
-  "repairedAt": "2026-08-01T16:04:54.692Z"
+  "repairedAt": "2026-08-01T16:04:54.692Z",
+  "castLinks": {
+    "King": {
+      "actor": "Alex Hirsch",
+      "character": "King / Hooty (voice)"
+    },
+    "The Golden Guard": {
+      "actor": "Zeno Robinson",
+      "character": "Hunter (voice)"
+    }
+  }
 }

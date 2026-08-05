@@ -514,5 +514,11 @@
       ]
     }
   },
-  "repairedAt": "2026-07-29T19:01:11.960Z"
+  "repairedAt": "2026-07-29T19:01:11.960Z",
+  "castLinks": {
+    "Nathanael": {
+      "actor": "Austin Reed Alleman",
+      "character": "Nathaniel"
+    }
+  }
 }

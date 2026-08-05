@@ -383,5 +383,11 @@
       ]
     }
   },
-  "repairedAt": "2026-08-02T23:58:57.948Z"
+  "repairedAt": "2026-08-02T23:58:57.948Z",
+  "castLinks": {
+    "Beverly": {
+      "actor": "Denny Dillon",
+      "character": "Bev"
+    }
+  }
 }

@@ -188,5 +188,15 @@
         }
       ]
     }
+  },
+  "castLinks": {
+    "Coby": {
+      "actor": "Morgan Davies",
+      "character": "Koby"
+    },
+    "Sir Crocodile": {
+      "actor": "Joe Manganiello",
+      "character": "Mr. 0"
+    }
   }
 }

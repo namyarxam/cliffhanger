@@ -406,5 +406,11 @@
         }
       ]
     }
+  },
+  "castLinks": {
+    "BJ": {
+      "actor": "Tim Baltz",
+      "character": "Benjamin Jason 'BJ' Barnes"
+    }
   }
 }

@@ -486,5 +486,11 @@
       ]
     }
   },
-  "repairedAt": "2026-08-04T05:10:40.137Z"
+  "repairedAt": "2026-08-04T05:10:40.137Z",
+  "castLinks": {
+    "Major": {
+      "actor": "Robert Buckley",
+      "character": "Major Lilywhite"
+    }
+  }
 }

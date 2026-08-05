@@ -682,5 +682,27 @@
       ]
     }
   },
-  "repairedAt": "2026-08-04T05:04:12.525Z"
+  "repairedAt": "2026-08-04T05:04:12.525Z",
+  "castLinks": {
+    "Polo Benavent": {
+      "actor": "Álvaro Rico",
+      "character": "Leopoldo Benavent Villada"
+    },
+    "Nano García": {
+      "actor": "Jaime Lorente",
+      "character": "Fernando García Domínguez"
+    },
+    "Benjamin Commerford": {
+      "actor": "Diego Martín",
+      "character": "Benjamín Blanco"
+    },
+    "Phillipe of Cantabria": {
+      "actor": "Pol Granch",
+      "character": "Philippe Florian Von Triesenberg"
+    },
+    "Dídac Martos": {
+      "actor": "Álvaro de Juana",
+      "character": "Didac"
+    }
+  }
 }

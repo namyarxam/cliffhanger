@@ -300,5 +300,11 @@
       ]
     }
   },
-  "repairedAt": "2026-08-01T16:27:06.383Z"
+  "repairedAt": "2026-08-01T16:27:06.383Z",
+  "castLinks": {
+    "Doc Cochran": {
+      "actor": "Brad Dourif",
+      "character": "Amos Cochran"
+    }
+  }
 }

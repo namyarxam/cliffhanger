@@ -682,5 +682,11 @@
       ]
     }
   },
-  "repairedAt": "2026-07-30T23:42:54.589Z"
+  "repairedAt": "2026-07-30T23:42:54.589Z",
+  "castLinks": {
+    "'Henry Gale'": {
+      "actor": "Michael Emerson",
+      "character": "Benjamin Linus"
+    }
+  }
 }

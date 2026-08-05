@@ -193,5 +193,15 @@
         }
       ]
     }
+  },
+  "castLinks": {
+    "Ted Gunn": {
+      "actor": "Michael Cerveris",
+      "character": "Assistant Director Gunn"
+    },
+    "The BTK Strangler": {
+      "actor": "Sonny Valicenti",
+      "character": "ADT Serviceman"
+    }
   }
 }

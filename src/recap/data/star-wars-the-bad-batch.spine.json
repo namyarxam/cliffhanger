@@ -303,5 +303,27 @@
         }
       ]
     }
+  },
+  "castLinks": {
+    "Hunter": {
+      "actor": "Dee Bradley Baker",
+      "character": "The Bad Batch (voice)"
+    },
+    "Wrecker": {
+      "actor": "Dee Bradley Baker",
+      "character": "The Bad Batch (voice)"
+    },
+    "Echo": {
+      "actor": "Dee Bradley Baker",
+      "character": "The Bad Batch (voice)"
+    },
+    "Crosshair": {
+      "actor": "Dee Bradley Baker",
+      "character": "The Bad Batch (voice)"
+    },
+    "Captain Rex": {
+      "actor": "Dee Bradley Baker",
+      "character": "The Bad Batch (voice)"
+    }
   }
 }

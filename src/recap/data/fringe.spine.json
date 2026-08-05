@@ -484,5 +484,19 @@
       ]
     }
   },
-  "repairedAt": "2026-08-01T16:31:26.442Z"
+  "repairedAt": "2026-08-01T16:31:26.442Z",
+  "castLinks": {
+    "Fauxlivia": {
+      "actor": "Anna Torv",
+      "character": "Olivia Dunham"
+    },
+    "Walternate": {
+      "actor": "John Noble",
+      "character": "Walter Bishop"
+    },
+    "Etta": {
+      "actor": "Georgina Haig",
+      "character": "Henrietta Bishop"
+    }
+  }
 }

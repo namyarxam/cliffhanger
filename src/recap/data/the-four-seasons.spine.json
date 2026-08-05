@@ -190,5 +190,11 @@
       ]
     }
   },
-  "repairedAt": "2026-08-03T06:07:24.174Z"
+  "repairedAt": "2026-08-03T06:07:24.174Z",
+  "castLinks": {
+    "Italian neighbour": {
+      "actor": "David Tennant",
+      "character": "Gianpiero"
+    }
+  }
 }

@@ -97,5 +97,11 @@
         }
       ]
     }
+  },
+  "castLinks": {
+    "Rudy": {
+      "actor": "Christian Camargo",
+      "character": "Brian Moser"
+    }
   }
 }

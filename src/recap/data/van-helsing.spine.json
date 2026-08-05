@@ -506,5 +506,11 @@
       ]
     }
   },
-  "repairedAt": "2026-08-03T06:09:40.263Z"
+  "repairedAt": "2026-08-03T06:09:40.263Z",
+  "castLinks": {
+    "Dmitri": {
+      "actor": "Paul Johansson",
+      "character": "Dimitri"
+    }
+  }
 }

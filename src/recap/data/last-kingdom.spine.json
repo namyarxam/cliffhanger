@@ -501,5 +501,11 @@
         }
       ]
     }
+  },
+  "castLinks": {
+    "Ælswith": {
+      "actor": "Eliza Butterworth",
+      "character": "Aelswith"
+    }
   }
 }

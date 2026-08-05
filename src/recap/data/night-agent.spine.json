@@ -280,5 +280,15 @@
       ]
     }
   },
-  "repairedAt": "2026-08-01T16:03:26.434Z"
+  "repairedAt": "2026-08-01T16:03:26.434Z",
+  "castLinks": {
+    "Ashley Redfield": {
+      "actor": "Christopher Shyer",
+      "character": "Vice President Redfield"
+    },
+    "The Father": {
+      "actor": "Stephen Moyer",
+      "character": "The Father"
+    }
+  }
 }
