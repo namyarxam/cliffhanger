@@ -96,14 +96,53 @@ function extractJSON(text) {
 }
 
 /** "B3" / "C6" / "X1" → the live object on the spine, or null. */
-function locate(season, id) {
+/** Loose containment test — the audit quotes a claim, not always verbatim. */
+const holds = (field, claim) => {
+  if (!field || !claim) return false;
+  const norm = t => String(t).toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
+  const f = norm(field), c = norm(claim);
+  if (!c) return false;
+  if (f.includes(c)) return true;
+  // Or a strong majority of the claim's words appear in the field.
+  const words = c.split(' ').filter(w => w.length > 3);
+  if (!words.length) return false;
+  return words.filter(w => f.includes(w)).length / words.length >= 0.75;
+};
+
+/**
+ * Find the item a flag points at, AND the field within it that is actually wrong.
+ *
+ * This used to hardcode `text` for a beat and `line` for a character, which made
+ * a whole class of error permanently unrepairable. A beat's LABEL and a
+ * character's NAME both ship to the device, and both were flagged repeatedly —
+ * Downton Abbey S3 was labelled with a death the season never covers, She-Ra S4
+ * with an arrival from S5, Justified S5 with a murder from another season. Every
+ * round, repair rewrote the body underneath a wrong title, the audit re-flagged
+ * the title, and the show burned its retries without one character changing.
+ *
+ * The audit does not say which field it means, so match its quoted claim against
+ * each candidate and repair the one that contains it. Body first, since that is
+ * where most claims live and where a tie should land.
+ */
+function locate(season, id, flag) {
   const kind = id[0];
   const n = Number(id.slice(1)) - 1;
-  if (kind === 'B') return season.beats?.[n] ? { obj: season.beats[n], field: 'text', kind } : null;
-  if (kind === 'C')
-    return season.characters?.[n] ? { obj: season.characters[n], field: 'line', kind } : null;
-  if (kind === 'X')
-    return season.cliffhanger ? { obj: season.cliffhanger, field: 'text', kind } : null;
+  const pick = (obj, fields) => {
+    if (!obj) return null;
+    const hit = fields.find(f => holds(obj[f], flag?.claim));
+    return { obj, field: hit ?? fields[0], kind };
+  };
+  if (kind === 'B') return pick(season.beats?.[n], ['text', 'label']);
+  if (kind === 'C') {
+    const obj = season.characters?.[n];
+    if (!obj) return null;
+    // The audit writes a character claim as "Name — role line", so the line
+    // shares words with the claim even when the NAME is what is wrong. Its own
+    // flag type settles it: wrong_name means the name.
+    if (flag?.type === 'wrong_name') return { obj, field: 'name', kind };
+    return pick(obj, ['line', 'name']);
+  }
+  if (kind === 'X') return pick(season.cliffhanger, ['text']);
   return null;
 }
 
@@ -111,6 +150,8 @@ const KIND_RULES = {
   B: `A BEAT is one caption over a full-screen image. Aim for about ${BEAT_TARGET} characters; ${BEAT_CHAR_LIMIT} is a hard ceiling. It states what happened and why it matters causally — it is a link in a chain, not a highlight.`,
   C: `A CHARACTER LINE is one sentence saying who this person is AT THE END of this season — their position and current situation, not their whole arc.`,
   X: `A CLIFFHANGER is one or two sentences naming the unresolved situation the viewer is walking back into. It poses; it does not answer.`,
+  'B.label': `A BEAT LABEL is the short title above the caption, in the form "S3 · Three or four words". Keep the "S<n> · " prefix exactly as it is. It names what the beat is about using only what THIS season establishes — never a person or event the season's own source does not contain.`,
+  'C.name': `A CHARACTER NAME is how the recap refers to this person, and it is matched against the cast list to choose their photo. Use the name this season's source actually uses. Do not use a name the season never uses, even if it is what they are called later.`,
 };
 
 // A correct rewrite that overruns the ceiling used to be dropped on the floor,
@@ -155,14 +196,19 @@ function buildPrompt(show, seasonNo, episodes, items) {
 
   const list = items
     .map(
-      ({ id, current, flag }) => `${id}
+      ({ id, current, flag, hit }) => `${id}${hit?.field && hit.field !== 'text' ? `  (the ${hit.field.toUpperCase()}, not the body)` : ''}
   CURRENT TEXT : ${current}
   PROBLEM      : ${flag.type} — ${flag.claim}
   SOURCE SAYS  : ${flag.evidence}${flag.note ? `\n  CORRECTION   : ${flag.note}` : ''}`,
     )
     .join('\n\n');
 
-  const kinds = [...new Set(items.map(i => i.id[0]))].map(k => `- ${KIND_RULES[k]}`).join('\n');
+  // Key by kind AND field, so a label repair is told the label's rules.
+  const kinds = [...new Set(items.map(i => {
+    const k = i.id[0];
+    const special = `${k}.${i.hit?.field}`;
+    return KIND_RULES[special] ? special : k;
+  }))].map(k => `- ${KIND_RULES[k]}`).join('\n');
 
   return `Rewrite specific lines in a recap of ${show.title} season ${seasonNo} so they match the source.
 
@@ -207,7 +253,7 @@ async function repairSeason(show, spine, audit, seasonNo, opts) {
   // line, which is worse than not repairing at all.
   const items = [];
   for (const flag of flags) {
-    const hit = locate(season, flag.id);
+    const hit = locate(season, flag.id, flag);
     if (!hit) {
       console.log(`      S${seasonNo} ${flag.id} ✗ not on spine — audit is stale, re-run it`);
       continue;
@@ -231,7 +277,7 @@ async function repairSeason(show, spine, audit, seasonNo, opts) {
     // Measure what actually gets stored. The old check measured the raw string
     // and stored the trimmed one, so a beat could be rejected for whitespace.
     const text = next.trim();
-    if (item.id[0] === 'B' && text.length > BEAT_CHAR_LIMIT) {
+    if (item.id[0] === 'B' && item.hit.field === 'text' && text.length > BEAT_CHAR_LIMIT) {
       overruns.push({ id: item.id, attempt: text, flag: item.flag, item });
       continue;
     }
