@@ -40,6 +40,21 @@ import { bestMatch, tokens } from './name-match.mjs';
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = resolve(ROOT, 'src/recap/data');
 
+// Hand-sourced portraits for cards nothing automatic can picture. Absent or
+// malformed is not fatal — every show still composes, just without overrides.
+async function loadCastImages() {
+  try {
+    const raw = JSON.parse(await readFile(resolve(DATA, '_cast-images.json'), 'utf8'));
+    delete raw._readme;
+    // Blank strings are worklist placeholders, not pictures.
+    for (const show of Object.keys(raw))
+      for (const [k, v] of Object.entries(raw[show])) if (!v) delete raw[show][k];
+    return raw;
+  } catch {
+    return {};
+  }
+}
+
 // Scrim opacity per frame kind. A title card sits over key art and needs
 // almost none; a character card is mostly face and needs just enough to keep
 // the caption legible; a portrait-less card falls back to key art and needs
@@ -83,7 +98,7 @@ async function loadEnv() {
 // fetch-time linking but not this composition step — Vi ended up with a still
 // on disk and no still on her card.
 
-function composer(data, castLinks) {
+function composer(data, castLinks, imageOverrides = {}) {
   const keyArt = data.backdrop ?? data.backdrops?.[0] ?? data.poster;
 
   // Whether this is an animated show, which changes what a valid portrait IS.
@@ -200,6 +215,11 @@ function composer(data, castLinks) {
    * art rather than a headshot. See `animated` above.
    */
   const portraitOf = name => {
+    // A hand-sourced picture outranks everything, including a resolved cast
+    // row. It is the only route to a face on an animated show TVMaze has no
+    // art for, and the escape hatch when a row resolves to the wrong picture.
+    const override = imageOverrides[name];
+    if (override) return override;
     const row = castRowFor(name);
     if (animated) return row?.inCharacter ?? null;
     return row?.inCharacter ?? row?.profile ?? null;
@@ -243,8 +263,12 @@ function orderedBeats(seasonEntry) {
 
 // ---------------------------------------------------------------- compose
 
-function composeShow(data, spine) {
-  const { keyArt, castRowFor, portraitOf, freshStill } = composer(data, spine.castLinks ?? {});
+function composeShow(data, spine, imageOverrides = {}) {
+  const { keyArt, castRowFor, portraitOf, freshStill } = composer(
+    data,
+    spine.castLinks ?? {},
+    imageOverrides,
+  );
 
   const show = {
     slug: data.slug,
@@ -294,7 +318,23 @@ function composeShow(data, spine) {
       deduped.push(c);
     }
 
-    const characters = deduped.slice(0, MAX_CHARACTER_CARDS).map(c => {
+    // Drop the trailing cards we cannot picture.
+    //
+    // A card whose whole job is "remind me who this is" fails that job with no
+    // face on it, and the failure compounds: eight unpicturable characters in a
+    // row rendered eight full-screen frames with the SAME key art behind
+    // different text, which reads as a broken asset rather than a design.
+    //
+    // Only the TRAILING run goes. The list is ordered most-essential-first, so
+    // what falls off the end is the least load-bearing — the same reasoning
+    // MAX_CHARACTER_CARDS already relies on. A faceless character ranked ABOVE
+    // a pictured one is kept: cutting it would leave a hole in the middle of
+    // the order, and it is by construction someone the viewer needs more.
+    const picked = deduped.slice(0, MAX_CHARACTER_CARDS);
+    let end = picked.length;
+    while (end > 0 && !portraitOf(picked[end - 1].name)) end--;
+
+    const characters = picked.slice(0, end).map(c => {
       const portrait = portraitOf(c.name);
       return {
         name: c.name,
@@ -383,6 +423,7 @@ async function main() {
     process.exit(1);
   }
   const db = dryRun ? null : createClient(url, key, { auth: { persistSession: false } });
+  const castImages = await loadCastImages();
 
   for (const slug of slugs) {
     const data = JSON.parse(await readFile(resolve(DATA, `${slug}.json`), 'utf8'));
@@ -399,7 +440,7 @@ async function main() {
       continue;
     }
 
-    const { show, seasons } = composeShow(data, spine);
+    const { show, seasons } = composeShow(data, spine, castImages[slug] ?? {});
 
     report(slug, show, seasons);
 

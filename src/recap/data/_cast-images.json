@@ -1,0 +1,25 @@
+{
+  "_readme": [
+    "Hand-sourced character portraits, for cards the automatic pipeline cannot picture.",
+    "",
+    "Keyed by show slug, then by the character name EXACTLY as the spine writes it",
+    "(the `name` field of a season's characters entry) -- not the credited cast name.",
+    "",
+    "Only needed where TVMaze carries no in-character image AND no actor headshot may",
+    "stand in. That is almost entirely animation: a voice actor's face is not the",
+    "character, so upload-recap refuses the headshot fallback there and the card falls",
+    "back to key art with no face on it.",
+    "",
+    "A URL here wins over everything, including a resolved cast row, so it is also the",
+    "escape hatch for a portrait that resolves to the wrong picture.",
+    "",
+    "Run `node scripts/rank-faceless.mjs` for the current worklist, ordered by how",
+    "much each missing picture actually costs the recap."
+  ],
+  "invincible": {
+    "Atom Eve / Samantha Wilkins": "",
+    "Oliver": "",
+    "Cecil Stedman": "",
+    "Allen the Alien": ""
+  }
+}
