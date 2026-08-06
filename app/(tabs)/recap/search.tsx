@@ -26,6 +26,7 @@ import {
   FlatList,
   ActivityIndicator,
   Keyboard,
+  Alert,
 } from 'react-native';
 import { Image } from 'expo-image';
 import { useRouter } from 'expo-router';
@@ -152,6 +153,13 @@ export default function RecapSearchScreen() {
   );
 }
 
+/**
+ * One search result. Reads as a plain list row: poster, title, one quiet
+ * subtitle, and a COMPACT trailing affordance — never a block button, which
+ * turned a results page into a wall of pills. Ineligible rows grey out with a
+ * small marker instead of explaining themselves inline; tapping one surfaces
+ * the reason as an alert for whoever actually wants it.
+ */
 function ResultRow({
   show,
   state,
@@ -179,6 +187,7 @@ function ResultRow({
   const hasRecap = !!state?.slug;
   const ineligible = recapIneligibleReason(show);
   const declined = state?.declinedReason ?? null;
+  const blocked = !hasRecap && (declined ?? ineligible);
 
   const act = async (fn: () => Promise<void>) => {
     if (!userId || busy) return;
@@ -193,88 +202,83 @@ function ResultRow({
     }
   };
 
-  let body: ReactElement;
-  if (hasRecap && tracked) {
-    body = (
-      <Pressable onPress={onOpenRecapTab} hitSlop={6}>
-        <Text style={styles.stateGood}>
-          Recap available · through S{state!.throughSeason} — it's on your Recap tab
-        </Text>
+  const track = () =>
+    act(async () => {
+      await addShow(userId!, show.id, 'currently_watching', show.title, show.image, show.network);
+      queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
+      queryClient.invalidateQueries({ queryKey: qk.recaps(userId) });
+      onOpenShow(); // set progress there; the recap unlocks with it
+    });
+
+  let subtitle: string | null = null;
+  let trailing: ReactElement | null = null;
+  let onRowPress: (() => void) | undefined;
+
+  if (blocked) {
+    // The reason stays one tap away rather than filling the list.
+    onRowPress = () => Alert.alert(show.title, blocked);
+    trailing = (
+      <View style={styles.trailing}>
+        <FontAwesome name="ban" size={12} color={theme.textFaint} />
+        <Text style={styles.trailingFaint}>{declined ? 'Not a fit' : 'Unscripted'}</Text>
+      </View>
+    );
+  } else if (hasRecap && tracked) {
+    subtitle = `Recap · through S${state!.throughSeason} — on your Recap tab`;
+    onRowPress = onOpenRecapTab;
+    trailing = <FontAwesome name="chevron-right" size={12} color={theme.textFaint} />;
+  } else if (hasRecap) {
+    subtitle = `Recap available · through S${state!.throughSeason}`;
+    onRowPress = track;
+    trailing = (
+      <Pressable disabled={busy} onPress={track} hitSlop={10}>
+        <Text style={styles.trailingAction}>Track</Text>
       </Pressable>
     );
-  } else if (hasRecap) {
-    body = (
-      <View style={styles.actionWrap}>
-        <Text style={styles.stateGood}>Recap available · through S{state!.throughSeason}</Text>
-        <Text style={styles.stateSub}>
-          Recaps unlock as you finish seasons, so they can never spoil you.
-        </Text>
-        <Pressable
-          style={({ pressed }) => [styles.button, pressed && styles.buttonPressed]}
-          disabled={busy}
-          onPress={() =>
-            act(async () => {
-              await addShow(userId!, show.id, 'currently_watching', show.title, show.image, show.network);
-              queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
-              queryClient.invalidateQueries({ queryKey: qk.recaps(userId) });
-              onOpenShow(); // set progress there; the recap unlocks with it
-            })
-          }
-        >
-          <Text style={styles.buttonText}>Track & mark where you are</Text>
-        </Pressable>
-      </View>
-    );
-  } else if (declined) {
-    body = <Text style={styles.stateDim}>{declined}</Text>;
-  } else if (ineligible) {
-    body = <Text style={styles.stateDim}>{ineligible}</Text>;
   } else if (state?.requestedByMe) {
-    body = (
-      <View style={styles.actionWrap}>
-        <Text style={styles.stateGood}>
-          Requested ✓ — we'll notify you when it's ready
-          {state.requests > 1 ? ` · ${state.requests} people want this` : ''}
-        </Text>
-        <Pressable
-          disabled={busy}
-          onPress={() => act(() => withdrawRecapRequest(userId!, show.id))}
-          hitSlop={6}
-        >
-          <Text style={styles.withdraw}>Withdraw request</Text>
-        </Pressable>
-      </View>
+    subtitle = state.requests > 1 ? `${state.requests} people want this` : "We'll notify you when it's ready";
+    trailing = (
+      <Pressable disabled={busy} onPress={() => act(() => withdrawRecapRequest(userId!, show.id))} hitSlop={10}>
+        <View style={styles.trailing}>
+          <FontAwesome name="check" size={11} color={theme.textDim} />
+          <Text style={styles.trailingDim}>Requested</Text>
+        </View>
+      </Pressable>
     );
   } else {
-    body = (
-      <View style={styles.actionWrap}>
-        {state != null && state.requests > 0 && (
-          <Text style={styles.stateSub}>
-            {state.requests} {state.requests === 1 ? 'person has' : 'people have'} requested this
-          </Text>
-        )}
-        <Pressable
-          style={({ pressed }) => [styles.button, pressed && styles.buttonPressed]}
-          disabled={busy || !state}
-          onPress={() => act(() => requestRecap(userId!, show))}
-        >
-          <Text style={styles.buttonText}>Request a recap</Text>
-        </Pressable>
-      </View>
+    if (state != null && state.requests > 0) {
+      subtitle = `${state.requests} ${state.requests === 1 ? 'person wants' : 'people want'} this`;
+    }
+    trailing = (
+      <Pressable disabled={busy || !state} onPress={() => act(() => requestRecap(userId!, show))} hitSlop={10}>
+        <View style={styles.trailing}>
+          <FontAwesome name="plus" size={11} color={theme.accent} />
+          <Text style={styles.trailingAction}>Request</Text>
+        </View>
+      </Pressable>
     );
   }
 
   return (
-    <View style={styles.row}>
+    <Pressable
+      style={[styles.row, blocked && styles.rowBlocked]}
+      onPress={onRowPress}
+      disabled={!onRowPress}
+    >
       <Image source={{ uri: show.image ?? undefined }} style={styles.poster} contentFit="cover" />
       <View style={styles.rowBody}>
         <Text style={styles.rowTitle} numberOfLines={1}>
           {show.title}
           {show.year ? <Text style={styles.rowYear}>  {show.year}</Text> : null}
         </Text>
-        {body}
+        {subtitle != null && (
+          <Text style={styles.rowSubtitle} numberOfLines={1}>
+            {subtitle}
+          </Text>
+        )}
       </View>
-    </View>
+      {trailing}
+    </Pressable>
   );
 }
 
@@ -330,7 +334,11 @@ const createStyles = (theme: Theme) =>
     },
     row: {
       flexDirection: 'row',
+      alignItems: 'center',
       gap: 12,
+    },
+    rowBlocked: {
+      opacity: 0.45,
     },
     poster: {
       width: 52,
@@ -353,43 +361,29 @@ const createStyles = (theme: Theme) =>
       color: theme.textFaint,
       fontSize: 13,
     },
-    actionWrap: {
-      gap: 6,
-      alignItems: 'flex-start',
-    },
-    stateGood: {
-      fontSize: 13,
-      fontFamily: 'DMSans_500Medium',
-      color: theme.accent,
-    },
-    stateSub: {
+    rowSubtitle: {
       fontSize: 12,
       fontFamily: 'DMSans_400Regular',
       color: theme.textDim,
     },
-    stateDim: {
-      fontSize: 13,
-      fontFamily: 'DMSans_400Regular',
-      color: theme.textDim,
-      lineHeight: 18,
+    // The trailing accessory: icon + a word, never a block. Sized so a column
+    // of results reads as a list with quiet affordances, not a wall of pills.
+    trailing: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: 5,
     },
-    button: {
-      paddingHorizontal: 14,
-      paddingVertical: 8,
-      borderRadius: 999,
-      backgroundColor: theme.accentBg,
-      borderWidth: 1,
-      borderColor: theme.accent,
-    },
-    buttonPressed: {
-      opacity: 0.7,
-    },
-    buttonText: {
+    trailingAction: {
       fontSize: 13,
       fontFamily: 'DMSans_700Bold',
       color: theme.accent,
     },
-    withdraw: {
+    trailingDim: {
+      fontSize: 13,
+      fontFamily: 'DMSans_500Medium',
+      color: theme.textDim,
+    },
+    trailingFaint: {
       fontSize: 12,
       fontFamily: 'DMSans_500Medium',
       color: theme.textFaint,
