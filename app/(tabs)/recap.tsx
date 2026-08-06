@@ -5,10 +5,11 @@
 // doesn't feel like a different app. Cards are 16:9 backdrops with the copy
 // sitting on a gradient scrim instead of the usual poster-thumb + text row.
 //
-// Each season is its own recap, so the card carries a row of range chips
-// (S1 / S2 / S1–S2). The chips ARE the entry points — tapping one starts that
-// recap directly rather than selecting-then-confirming, which would add a tap
-// for no information gain. The play button starts the full span.
+// Each season is its own recap. The hero opens the latest finished one — the
+// moment the feature exists for — and every earlier season lives behind one
+// "Earlier seasons" row that opens a bottom sheet (RecapSeasonSheet). The
+// sheet replaced an inline chip rail whose sub-44pt targets hid everything
+// past ~S6 behind a horizontal scroll.
 
 import { useEffect, useMemo, useState } from 'react';
 import { View, Text, StyleSheet, Pressable, ScrollView, ActivityIndicator } from 'react-native';
@@ -24,8 +25,9 @@ import { qk } from '@/src/lib/queryKeys';
 import { silentCatch } from '@/src/lib/errorLog';
 import { listRecaps, offeredRangesFor, prefetchRecap } from '@/src/lib/recaps';
 import type { RecapListEntry } from '@/src/lib/recaps';
-import { rangeLabel, estimateMinutes } from '@/src/recap/types';
+import { estimateMinutes } from '@/src/recap/types';
 import type { SeasonRange } from '@/src/recap/types';
+import RecapSeasonSheet from '@/src/components/RecapSeasonSheet';
 
 export default function RecapScreen() {
   const theme = useTheme();
@@ -68,6 +70,11 @@ export default function RecapScreen() {
   }, [recaps]);
 
   const [showSpent, setShowSpent] = useState(false);
+
+  // The show whose earlier seasons are open in the picker sheet. One sheet
+  // for the screen, not one per card — only one can be open, and hoisting it
+  // keeps a Modal out of every list row.
+  const [picker, setPicker] = useState<RecapListEntry | null>(null);
 
   useEffect(() => {
     if (recapsQ.error) silentCatch('recap:list')(recapsQ.error);
@@ -133,6 +140,7 @@ export default function RecapScreen() {
             styles={styles}
             theme={theme}
             onOpen={range => open(item.slug, range)}
+            onOpenPicker={() => setPicker(item)}
           />
         ))}
 
@@ -164,6 +172,7 @@ export default function RecapScreen() {
               styles={styles}
               theme={theme}
               onOpen={range => open(item.slug, range)}
+              onOpenPicker={() => setPicker(item)}
             />
           ))}
 
@@ -178,6 +187,18 @@ export default function RecapScreen() {
           </Pressable>
         )}
       </ScrollView>
+
+      <RecapSeasonSheet
+        visible={picker != null}
+        title={picker?.title ?? ''}
+        maxSeason={picker?.maxSeason ?? 0}
+        onClose={() => setPicker(null)}
+        onSelect={range => {
+          const slug = picker?.slug;
+          setPicker(null);
+          if (slug) open(slug, range);
+        }}
+      />
     </View>
   );
 }
@@ -202,11 +223,13 @@ function RecapCard({
   styles,
   theme,
   onOpen,
+  onOpenPicker,
 }: {
   item: RecapListEntry;
   styles: ReturnType<typeof createStyles>;
   theme: Theme;
   onOpen: (range: SeasonRange) => void;
+  onOpenPicker: () => void;
 }) {
   // Bounded by the viewer's own progress, not by what we hold. maxSeason is
   // 0 when the show isn't tracked, is muted, or no season has been finished —
@@ -273,40 +296,20 @@ function RecapCard({
         </View>
       </Pressable>
 
-      {/* Earlier seasons only — the latest one is the card itself. Horizontal
-          scroll because the count is unbounded: The Walking Dead offers ten
-          here, which runs past the screen edge and would otherwise be
-          unreachable. */}
+      {/* Earlier seasons only — the latest one is the card itself. A single
+          full-width row into a bottom sheet (RecapSeasonSheet): the count is
+          unbounded (The Walking Dead offers ten), and the sheet's vertical
+          list holds any number of full-size targets where the old chip rail
+          hid everything past the screen edge. */}
       {earlier.length > 0 && (
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={styles.chipRow}
-          // The row sits inside a vertically scrolling list; without this a
-          // near-vertical drag starting on a chip gets captured here and the
-          // page stops scrolling.
-          directionalLockEnabled
+        <Pressable
+          style={({ pressed }) => [styles.earlierRow, pressed && { backgroundColor: theme.accentBg }]}
+          onPress={onOpenPicker}
         >
-          {/* The Recap tab's own icon, reused. "Earlier" as a word read as
-              stray UI copy next to a row of season pills; the same glyph the
-              tab is marked with says "further back" without adding a label. */}
-          <FontAwesome
-            name="history"
-            size={13}
-            color={theme.textFaint}
-            style={styles.chipLabelIcon}
-          />
-          {earlier.map(r => (
-            <Pressable
-              key={rangeLabel(r)}
-              onPress={() => onOpen(r)}
-              style={({ pressed }) => [styles.chip, pressed && { backgroundColor: theme.accentBg }]}
-              hitSlop={4}
-            >
-              <Text style={styles.chipText}>{rangeLabel(r)}</Text>
-            </Pressable>
-          ))}
-        </ScrollView>
+          <FontAwesome name="history" size={13} color={theme.textFaint} />
+          <Text style={styles.earlierText}>Earlier seasons</Text>
+          <FontAwesome name="chevron-right" size={10} color={theme.textFaint} />
+        </Pressable>
       )}
     </View>
   );
@@ -445,28 +448,18 @@ const createStyles = (theme: Theme) =>
       // sits left of its bounding box.
       paddingLeft: 3,
     },
-    chipRow: {
+    earlierRow: {
       flexDirection: 'row',
       alignItems: 'center',
-      gap: 8,
-      paddingHorizontal: 14,
-      paddingVertical: 12,
+      gap: 9,
+      paddingHorizontal: 16,
+      paddingVertical: 13,
     },
-    chipLabelIcon: {
-      marginRight: 2,
-    },
-    chip: {
-      paddingHorizontal: 13,
-      paddingVertical: 7,
-      borderRadius: 999,
-      borderWidth: 1,
-      borderColor: theme.border,
-      backgroundColor: theme.bgDarker,
-    },
-    chipText: {
+    earlierText: {
+      flex: 1,
       fontSize: 13,
-      fontFamily: 'DMSans_700Bold',
-      color: theme.text,
+      fontFamily: 'DMSans_500Medium',
+      color: theme.textDim,
     },
     note: {
       flexDirection: 'row',
