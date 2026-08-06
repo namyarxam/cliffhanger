@@ -116,7 +116,9 @@ export async function searchShows(query: string): Promise<ShowSummary[]> {
   const res = await timeoutFetch(`${TVMAZE_BASE}/search/shows?q=${encodeURIComponent(query)}`);
   if (!res.ok) throw new Error(`Search failed: ${res.status}`);
   const results: TVMazeSearchResult[] = await res.json();
-  return results.map(r => toShowSummary(r.show));
+  // No artwork on TVMaze is a reliable proxy for a junk record — in-development
+  // stubs, regional duplicates, abandoned entries. Hide them everywhere.
+  return results.filter(r => r.show.image?.medium).map(r => toShowSummary(r.show));
 }
 
 export async function fetchCast(showId: string): Promise<CastMember[]> {
