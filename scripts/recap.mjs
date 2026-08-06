@@ -150,6 +150,23 @@ async function add() {
   }
 
   const data = await fetchShow({ showName, slug, through: 'all' }, env);
+
+  // Second duplicate check, by TVMaze id this time. A slug is a naming choice
+  // ("last-of-us" vs "the-last-of-us"); the id is the show. Without this, add
+  // generates a whole duplicate spine before the show_id unique index bounces
+  // it at upload — which is exactly how this check got written.
+  const { data: byId, error: byIdErr } = await db
+    .from('recap_shows')
+    .select('slug, through_season')
+    .eq('show_id', String(data.tvmazeId))
+    .maybeSingle();
+  if (byIdErr) throw new Error(`recap_shows lookup by show_id: ${byIdErr.message}`);
+  if (byId) {
+    throw new Error(
+      `"${data.title}" is already live as "${byId.slug}" (through S${byId.through_season}) — same TVMaze id, different slug. Use: node scripts/recap.mjs extend --slug ${byId.slug}`,
+    );
+  }
+
   const verdict = gateEligibility(data);
 
   const targets = data.seasons.filter(s => s.season <= verdict.generateThrough);
