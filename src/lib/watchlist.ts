@@ -473,20 +473,6 @@ export async function unmarkEpisode(
   if (error) throw error;
 }
 
-export async function toggleShowNotify(
-  userId: string,
-  showId: string,
-  notify: boolean,
-): Promise<void> {
-  const { error } = await supabase
-    .from('user_shows')
-    .update({ notify, updated_at: new Date().toISOString() })
-    .eq('user_id', userId)
-    .eq('show_id', showId);
-
-  if (error) throw error;
-}
-
 export async function rateShow(
   userId: string,
   showId: string,

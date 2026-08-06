@@ -16,7 +16,6 @@ import { Image } from 'expo-image';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
-import { useAuth } from '@/src/providers/AuthProvider';
 
 import { useShowData } from '@/src/hooks/useShowData';
 import { useShowActions } from '@/src/hooks/useShowActions';
@@ -66,10 +65,6 @@ export default function ShowDetailScreen() {
   const styles = useMemo(() => createStyles(theme), [theme]);
   const { id, from } = useLocalSearchParams<{ id: string; from?: string }>();
   const router = useRouter();
-  const { profile } = useAuth();
-  const pushEnabled = profile?.push_new_episodes ?? false;
-  const notifyAll = profile?.notify_all_current ?? false;
-
   const data = useShowData(id);
   const {
     show, loading, error, userId,
@@ -342,28 +337,6 @@ export default function ShowDetailScreen() {
           <View style={styles.heroInfo}>
             <View style={styles.titleRow}>
               <Text style={styles.title}>{show.title}</Text>
-              {userShow && pushEnabled && (
-                <Pressable
-                  hitSlop={12}
-                  onPress={() => {
-                    if (notifyAll) {
-                      Alert.alert(
-                        'Alerts on for all shows',
-                        'You\'re alerted for every show in your Currently Watching list. Turn off "Alert for all shows I\'m watching" in Settings to set per-show.',
-                      );
-                      return;
-                    }
-                    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-                    actions.handleToggleNotify();
-                  }}
-                >
-                  <FontAwesome
-                    name={notifyAll || userShow.notify ? 'bell' : 'bell-o'}
-                    size={16}
-                    color={notifyAll || userShow.notify ? theme.accent : theme.textDim}
-                  />
-                </Pressable>
-              )}
             </View>
             <View style={styles.metaRow}>
               <Text style={styles.meta}>

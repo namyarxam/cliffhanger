@@ -63,6 +63,9 @@ Deno.serve(async (_req) => {
 
     let refreshed = 0;
     let failed = 0;
+    // First failure per run, surfaced in the response — 59 silent failed++
+    // once cost a debugging session. status/message, whichever path failed.
+    let firstError: string | null = null;
 
     for (const showId of showIds) {
       try {
@@ -78,6 +81,7 @@ Deno.serve(async (_req) => {
         const res = await fetch(`${TVMAZE_BASE}/shows/${showId}?embed[]=nextepisode&embed[]=episodes`);
         if (!res.ok) {
           failed++;
+          firstError ??= `tvmaze ${res.status} for show ${showId}`;
         } else {
           const data: TVMazeShowResponse = await res.json();
           const nextEp = data._embedded?.nextepisode;
@@ -119,6 +123,7 @@ Deno.serve(async (_req) => {
 
           if (updateError) {
             failed++;
+            firstError ??= `update ${showId}: ${updateError.message}`;
           } else {
             // Per-user dismissal stamp lives on user_shows; reset for every
             // currently-watching user so they all see the new banner.
@@ -132,8 +137,9 @@ Deno.serve(async (_req) => {
             refreshed++;
           }
         }
-      } catch {
+      } catch (e) {
         failed++;
+        firstError ??= `throw ${showId}: ${e instanceof Error ? e.message : String(e)}`;
       }
       await sleep(REQ_INTERVAL_MS);
     }
@@ -198,7 +204,7 @@ Deno.serve(async (_req) => {
     }
 
     return new Response(
-      JSON.stringify({ ok: true, total: showIds.length, refreshed, failed, pushedBadges }),
+      JSON.stringify({ ok: true, total: showIds.length, refreshed, failed, firstError, pushedBadges }),
       { headers: { 'Content-Type': 'application/json' } },
     );
   } catch (error) {

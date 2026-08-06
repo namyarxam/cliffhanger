@@ -14,7 +14,7 @@ import { useThemeControl } from '@/src/providers/ThemeProvider';
 import { THEME_LABELS, THEME_DESCRIPTIONS, type Theme, type ThemeName } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { supabase } from '@/src/lib/supabase';
-import { registerForPushNotifications, unregisterPushNotifications } from '@/src/lib/notifications';
+import { registerForPushNotifications } from '@/src/lib/notifications';
 import { silentCatch } from '@/src/lib/errorLog';
 import Constants from 'expo-constants';
 
@@ -27,8 +27,6 @@ export default function SettingsScreen() {
   const styles = useMemo(() => createStyles(theme), [theme]);
   const router = useRouter();
   const { user, refreshProfile, signOut, resetCoachmarks } = useAuth();
-  const [pushNewEpisodes, setPushNewEpisodes] = useState(false);
-  const [notifyAllCurrent, setNotifyAllCurrent] = useState(false);
   const [pushFriendRequests, setPushFriendRequests] = useState(true);
   const [showPosters, setShowPosters] = useState(true);
   const [hideRatings, setHideRatings] = useState(false);
@@ -37,15 +35,13 @@ export default function SettingsScreen() {
     if (!user?.id) return;
     supabase
       .from('profiles')
-      .select('push_new_episodes, notify_all_current, push_friend_requests, show_posters_in_list, hide_ratings')
+      .select('push_friend_requests, show_posters_in_list, hide_ratings')
       .eq('id', user.id)
       .single()
       .then(({ data, error }) => {
         if (error) { silentCatch('settings:loadProfile')(error); return; }
         if (data) {
-          setPushNewEpisodes(data.push_new_episodes);
-          setNotifyAllCurrent(data.notify_all_current);
-          setPushFriendRequests(data.push_friend_requests ?? true);
+                    setPushFriendRequests(data.push_friend_requests ?? true);
           setShowPosters(data.show_posters_in_list);
           setHideRatings(data.hide_ratings);
         }
@@ -63,35 +59,6 @@ export default function SettingsScreen() {
     await refreshProfile();
     return true;
   }, [user?.id, refreshProfile]);
-
-  const handleTogglePush = useCallback(async () => {
-    if (!user?.id) return;
-    const newValue = !pushNewEpisodes;
-
-    if (newValue) {
-      const token = await registerForPushNotifications(user.id);
-      if (!token) {
-        Alert.alert(
-          'Notifications Disabled',
-          'Please enable notifications for Cliffhanger in your device settings.',
-        );
-        return;
-      }
-    } else {
-      await unregisterPushNotifications(user.id);
-    }
-
-    setPushNewEpisodes(newValue);
-    const ok = await updateProfile('push_new_episodes', newValue);
-    if (!ok) setPushNewEpisodes(!newValue);
-  }, [user?.id, pushNewEpisodes, updateProfile]);
-
-  const handleToggleNotifyAll = useCallback(async () => {
-    const newValue = !notifyAllCurrent;
-    setNotifyAllCurrent(newValue);
-    const ok = await updateProfile('notify_all_current', newValue);
-    if (!ok) setNotifyAllCurrent(!newValue);
-  }, [notifyAllCurrent, updateProfile]);
 
   const handleToggleFriendRequests = useCallback(async () => {
     if (!user?.id) return;
@@ -178,41 +145,20 @@ export default function SettingsScreen() {
       {/* Notifications section */}
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Notifications</Text>
-        <Pressable style={styles.settingRow} onPress={handleTogglePush}>
+        {/* Premiere alerts are automatic — no toggle. The one push about
+            airings is "your show is coming back", sent the week a new season
+            of a tracked show premieres. The row states the behavior so the
+            section doesn't imply pushes are off. Escape hatch is the OS
+            notification settings, like any other app. */}
+        <View style={styles.settingRow}>
           <View style={styles.settingInfo}>
-            <View style={styles.settingLabelRow}>
-              <Text style={styles.settingLabel}>New Episode Alerts</Text>
-              <View style={styles.betaBadge}>
-                <Text style={styles.betaBadgeText}>BETA</Text>
-              </View>
-            </View>
+            <Text style={styles.settingLabel}>Season Premieres</Text>
             <Text style={styles.settingHint}>
-              Master switch for all episode notifications
+              When a show you track comes back, we'll notify you the week of
+              the premiere. Automatic for all tracked shows.
             </Text>
           </View>
-          <View style={[styles.toggleTrack, pushNewEpisodes && styles.toggleTrackOn]}>
-            <View style={[styles.toggleThumb, pushNewEpisodes && styles.toggleThumbOn]} />
-          </View>
-        </Pressable>
-        <Text style={styles.settingNote}>
-          Notifications are in early beta.
-        </Text>
-
-        <Pressable style={styles.settingRow} onPress={handleToggleNotifyAll} disabled={!pushNewEpisodes}>
-          <View style={[styles.settingInfo, !pushNewEpisodes && { opacity: 0.4 }]}>
-            <Text style={styles.settingLabel}>Alert for all shows I'm watching</Text>
-            <Text style={styles.settingHint}>
-              Automatically alert for every show in your Currently Watching list. Disables per-show bells while on.
-            </Text>
-          </View>
-          <View style={[
-            styles.toggleTrack,
-            notifyAllCurrent && pushNewEpisodes && styles.toggleTrackOn,
-            !pushNewEpisodes && { opacity: 0.4 },
-          ]}>
-            <View style={[styles.toggleThumb, notifyAllCurrent && pushNewEpisodes && styles.toggleThumbOn]} />
-          </View>
-        </Pressable>
+        </View>
 
         <View style={styles.settingGap} />
 

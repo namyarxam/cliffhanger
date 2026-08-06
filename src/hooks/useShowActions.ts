@@ -7,7 +7,6 @@ import {
   removeShow,
   markExactlyUpTo,
   rateShow,
-  toggleShowNotify,
   getLastAiredEpisode,
   buildEpisodeSet,
   countAiredEpisodes,
@@ -371,19 +370,6 @@ export function useShowActions(deps: ShowActionsDeps) {
     }
   }, [userId, id, show, userShow, setUserShow, setWatchedEps, refetchWatchedEps, invalidateMyShows, queryClient]);
 
-  const handleToggleNotify = useCallback(async () => {
-    if (!userId || !id || !userShow) return;
-    const newValue = !userShow.notify;
-    setUserShow(prev => prev ? { ...prev, notify: newValue } : null);
-    try {
-      await toggleShowNotify(userId, id, newValue);
-      invalidateMyShows();
-    } catch (e) {
-      setUserShow(prev => prev ? { ...prev, notify: !newValue } : null);
-      silentCatch('show:toggleNotify')(e);
-    }
-  }, [userId, id, userShow, setUserShow, invalidateMyShows]);
-
   return {
     handleAddToList,
     handleRemoveFromList,
@@ -392,6 +378,5 @@ export function useShowActions(deps: ShowActionsDeps) {
     handleCatchUp,
     handleRate,
     handleEpisodeTap,
-    handleToggleNotify,
   };
 }

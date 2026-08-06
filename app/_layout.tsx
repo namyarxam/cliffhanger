@@ -194,10 +194,13 @@ function AuthGate() {
   // exists.
   useEffect(() => {
     const route = (data: unknown) => {
-      const d = data as { type?: string } | null;
+      const d = data as { type?: string; show_id?: string } | null;
       if (!d) return;
       if (d.type === 'friend_request') {
         router.push('/(tabs)/friends');
+      } else if (d.type === 'show_premiere' && d.show_id) {
+        // "Your show is back" lands you on that show.
+        router.push(`/(tabs)/show/${d.show_id}`);
       }
     };
     // Cold-launch case: the OS opened the app via notification tap.
