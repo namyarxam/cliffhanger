@@ -52,3 +52,6 @@ supabase/.temp/
 # and the recaps themselves live in Supabase; this only needs to exist again if
 # something is rebuilt to write here.
 src/recap/data/
+
+# Recap pipeline working artifacts (fetch datasets, spines, verify cache, contact sheets)
+scripts/recap-work/
