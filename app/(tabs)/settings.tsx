@@ -16,6 +16,7 @@ import { useAuth } from '@/src/providers/AuthProvider';
 import { supabase } from '@/src/lib/supabase';
 import { registerForPushNotifications, unregisterPushNotifications } from '@/src/lib/notifications';
 import { silentCatch } from '@/src/lib/errorLog';
+import Constants from 'expo-constants';
 
 const PRIVACY_URL = 'https://cliffhangerapp.com/privacy';
 
@@ -340,11 +341,24 @@ export default function SettingsScreen() {
         <Text style={styles.sectionTitle}>About</Text>
         <View style={styles.aboutRow}>
           <Text style={styles.aboutLabel}>Version</Text>
-          <Text style={styles.aboutValue}>1.0.0</Text>
+          {/* Read from app.json rather than typed here — the hardcoded string
+              said 1.0.0 for two releases after the app shipped 1.0.2. */}
+          <Text style={styles.aboutValue}>{Constants.expoConfig?.version ?? '—'}</Text>
         </View>
         <View style={styles.aboutRow}>
           <Text style={styles.aboutLabel}>Data</Text>
           <Text style={styles.aboutValue}>Powered by TVMaze</Text>
+        </View>
+        {/* Required by TMDB's terms of use: recap artwork and stills are served
+            from their CDN, and the wording of the disclaimer is theirs, not ours. */}
+        <View style={styles.aboutRow}>
+          <Text style={styles.aboutLabel}>Recap art</Text>
+          <Text style={styles.aboutValue}>Images by TMDB</Text>
+        </View>
+        <View style={styles.aboutAttribution}>
+          <Text style={styles.aboutAttributionText}>
+            This product uses the TMDB API but is not endorsed or certified by TMDB.
+          </Text>
         </View>
         <Pressable
           style={({ pressed }) => [styles.aboutRow, pressed && { opacity: 0.7 }]}
@@ -360,6 +374,17 @@ export default function SettingsScreen() {
 }
 
 const createStyles = (theme: Theme) => StyleSheet.create({
+  aboutAttribution: {
+    paddingHorizontal: 16,
+    paddingTop: 4,
+    paddingBottom: 12,
+  },
+  aboutAttributionText: {
+    fontFamily: 'DMSans_400Regular',
+    fontSize: 12,
+    lineHeight: 17,
+    color: theme.textDim,
+  },
   container: {
     flex: 1,
     backgroundColor: theme.bg,
