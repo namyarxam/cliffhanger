@@ -137,6 +137,7 @@ export default function TabLayout() {
       <Tabs.Screen name="recap" options={{ title: 'Recap' }} />
       <Tabs.Screen name="profile" options={{ title: 'Profile' }} />
       <Tabs.Screen name="recap/[id]" options={{ href: null, headerShown: false }} />
+      <Tabs.Screen name="recap/search" options={{ href: null, title: 'Find a recap' }} />
       <Tabs.Screen name="settings" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="friends" options={{ href: null, headerShown: false }} />
       <Tabs.Screen name="show/[id]" options={{ href: null, headerShown: false }} />

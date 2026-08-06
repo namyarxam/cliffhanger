@@ -42,6 +42,8 @@ import { verifyAndRepair } from './recap-lib/verify.mjs';
 import { composeShow, reportComposition, loadCastImages } from './recap-lib/compose.mjs';
 import { makeDb, existingSeasons, uploadShow, assertShipped } from './recap-lib/upload.mjs';
 import { writeContactSheet } from './recap-lib/contact-sheet.mjs';
+import { buildQueue, printQueue } from './recap-lib/queue.mjs';
+import { notifyRequesters, declineShow } from './recap-lib/notify.mjs';
 
 // ---------------------------------------------------------------- cli
 
@@ -111,6 +113,9 @@ async function doUpload(env, show, seasons) {
   const db = makeDb(env);
   await uploadShow(db, show, seasons);
   await assertShipped(db, show.slug, seasons.map(s => s.season));
+  // Only after the write is PROVEN — a push about a recap that didn't land
+  // would be worse than no push.
+  await notifyRequesters(db, env, show);
 }
 
 function requireCleanAudit(report) {
@@ -289,12 +294,42 @@ async function status() {
   console.log('');
 }
 
+async function queue() {
+  const env = await loadEnv();
+  const db = makeDb(env);
+  console.log('\n▸ Building the queue (all free — TVMaze + Wikipedia + database reads)');
+  const result = await buildQueue(db, { probe: !flag('no-probe') });
+  if (flag('json')) {
+    console.log(JSON.stringify(result.stale, null, 2));
+    return;
+  }
+  printQueue(result);
+}
+
+async function decline() {
+  const showId = arg('show-id');
+  const title = arg('title');
+  const publicReason = arg('public');
+  if (!showId || !title || !publicReason) {
+    throw new Error(
+      'decline needs --show-id <tvmaze id> --title "Show" --public "sentence the app shows" [--reason "internal note"]',
+    );
+  }
+  const env = await loadEnv();
+  await declineShow(makeDb(env), {
+    showId,
+    title,
+    reason: arg('reason', publicReason),
+    publicReason,
+  });
+}
+
 // ---------------------------------------------------------------- main
 
-const commands = { add, extend, ship, status };
+const commands = { add, extend, ship, status, queue, decline };
 const run = commands[command];
 if (!run) {
-  console.error(`\nusage: node scripts/recap.mjs <add|extend|ship|status> [options]\n`);
+  console.error(`\nusage: node scripts/recap.mjs <add|extend|ship|status|queue> [options]\n`);
   process.exit(1);
 }
 run().catch(err => {

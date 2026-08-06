@@ -109,7 +109,7 @@ async function resolveWikiTitle(showName, year) {
   return pick.title.replace(/\s*\((?:\d{4} )?(?:American |British )?TV series\)\s*$/i, '').trim();
 }
 
-async function fetchWikipediaSummaries(showName, maxSeason, verify = null) {
+export async function fetchWikipediaSummaries(showName, maxSeason, verify = null) {
   // Where a show keeps its episode summaries varies, and getting this wrong
   // looks identical to a show with no coverage. Three layouts in the wild:
   //   1. One combined list        "List of <Show> episodes"

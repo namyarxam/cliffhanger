@@ -29,6 +29,10 @@ export interface ShowSummary {
   network: string | null;
   status: string | null; // "Running", "Ended", etc.
   summary: string | null;
+  // TVMaze programme type ("Scripted", "Reality", "Animation", …). Optional
+  // because most call sites predate it; populated by search so the Recap
+  // request screen can gate non-scripted shows client-side.
+  type?: string | null;
 }
 
 export interface ShowCastMember {

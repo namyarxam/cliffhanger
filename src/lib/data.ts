@@ -71,6 +71,7 @@ function toShowSummary(show: TVMazeShow): ShowSummary {
     network: show.network?.name ?? show.webChannel?.name ?? null,
     status: show.status,
     summary: show.summary ? stripHtml(show.summary) : null,
+    type: show.type ?? null,
   };
 }
 

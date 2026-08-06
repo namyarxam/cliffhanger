@@ -99,6 +99,18 @@ export default function RecapScreen() {
         // the surface always feels live rather than locked.
         alwaysBounceVertical
       >
+        {/* The one door to everything not on this screen: shows with recaps
+            you aren't tracking yet, and shows with no recap to request. All
+            recap surface area lives inside this tab by design. */}
+        <Pressable
+          style={({ pressed }) => [styles.searchPill, pressed && styles.morePressed]}
+          onPress={() => router.push('/recap/search')}
+          hitSlop={4}
+        >
+          <FontAwesome name="search" size={13} color={theme.textDim} />
+          <Text style={styles.searchPillText}>Find or request a recap</Text>
+        </Pressable>
+
         {recapsQ.isLoading && (
           <View style={styles.stateBox}>
             <ActivityIndicator color={theme.textDim} />
@@ -156,13 +168,14 @@ export default function RecapScreen() {
           ))}
 
         {!recapsQ.isLoading && !recapsQ.isError && (
-          <View style={styles.note}>
+          <Pressable style={styles.note} onPress={() => router.push('/recap/search')} hitSlop={6}>
             <FontAwesome name="info-circle" size={13} color={theme.textFaint} />
             <Text style={styles.noteText}>
-              More shows coming. Recaps only ever cover seasons you've finished,
-              so they can't spoil what's ahead of you.
+              Recaps only ever cover seasons you've finished, so they can't
+              spoil what's ahead of you. Missing a show?{' '}
+              <Text style={{ color: theme.accent }}>Find or request it.</Text>
             </Text>
-          </View>
+          </Pressable>
         )}
       </ScrollView>
     </View>
@@ -313,6 +326,22 @@ const createStyles = (theme: Theme) =>
       // Guarantees the scroll view has at least a full screen of content box,
       // so alwaysBounceVertical has something to bounce.
       flexGrow: 1,
+    },
+    searchPill: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: 9,
+      paddingVertical: 10,
+      paddingHorizontal: 14,
+      borderRadius: 12,
+      borderWidth: StyleSheet.hairlineWidth,
+      borderColor: theme.border,
+      backgroundColor: theme.bgCard,
+    },
+    searchPillText: {
+      fontSize: 13,
+      fontFamily: 'DMSans_500Medium',
+      color: theme.textDim,
     },
     moreRow: {
       flexDirection: 'row',
