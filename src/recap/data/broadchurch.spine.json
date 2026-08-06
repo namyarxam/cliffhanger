@@ -96,6 +96,109 @@
           "line": "Town priest with a drinking history who conducted Danny's funeral and named the town's guilt over Jack."
         }
       ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Not Guilty",
+          "text": "Joe Miller stuns Broadchurch by pleading not guilty to Danny's murder, forcing a trial the town thought it had been spared.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "The plea is the engine of the entire season; without it there is no trial and no fallout.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Rival Silks",
+          "text": "The Latimers recruit retired QC Jocelyn Knight to prosecute; Joe hires her estranged protégée Sharon Bishop to defend him.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets up the courtroom rivalry that shapes every subsequent legal beat.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Sandbrook Returns",
+          "text": "Hardy reveals he stayed in Broadchurch to protect Claire, key witness in his old Sandbrook child-murder case, and her ex Lee Ashworth follows her to town.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the parallel Sandbrook plot and the triangle of Hardy, Claire and Lee that drives half the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Case Unravels",
+          "text": "Ellie's earlier assault on Joe gets his confession thrown out, and Bishop paints her and Hardy as lovers who framed him. The prosecution's spine collapses.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Explains why a seemingly solid case ends the way it does; the assault is Ellie's ongoing shame.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Claire's Lies",
+          "text": "Ellie spots Pippa's stolen pendant in a photo of Claire, and Hardy pieces together that Claire, not Lee, is the true architect of the Sandbrook murders.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Flips the Sandbrook villainy from Lee to Claire, which is the resolution the finale delivers.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Verdict and Truth",
+          "text": "The jury acquits Joe. Hardy arrests Claire and then Lee, and Ricky Gillespie confesses to killing his niece Lisa in a jealous rage.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The twin resolutions: Broadchurch loses its case, Sandbrook is finally solved.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Banished",
+          "text": "Mark and Nige kidnap the freed Joe; Ellie and Beth confront him at the beach house and force him to leave Broadchurch forever. Hardy, penance done, prepares to go too.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Establishes the exact status quo the next season opens on: Joe gone, community fractured, Hardy leaving.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Joe walks free from court and is then run out of town by the Latimers and Millers, denied any real justice. Hardy, his Sandbrook debt paid, packs to leave a Broadchurch that has been given no closure at all.",
+        "questions": [
+          "Can a town denied a verdict ever move on?",
+          "What happens to Ellie and Tom now that Joe is gone but not punished?",
+          "Is Hardy really finished with Broadchurch, or will something pull him back?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Ellie Miller",
+          "line": "Detective and Joe's wife, publicly humiliated on the stand and estranged from her son Tom, but reconciled with Hardy as a partner."
+        },
+        {
+          "name": "Alec Hardy",
+          "line": "Detective with a new pacemaker who has finally cracked Sandbrook and is preparing to leave Broadchurch, believing his penance is over."
+        },
+        {
+          "name": "Joe Miller",
+          "line": "Danny's confessed killer, acquitted at trial and then forced out of town by the Latimers and Millers under threat if he ever returns."
+        },
+        {
+          "name": "Beth Latimer",
+          "line": "Danny's mother, now with a newborn daughter Elizabeth, considering leaving Mark and left with no legal justice for her son."
+        },
+        {
+          "name": "Mark Latimer",
+          "line": "Danny's father, his affair with Becca exposed in court, trying to rebuild the marriage while quietly grieving in secret meetings with a boy who reminds him of Danny."
+        },
+        {
+          "name": "Jocelyn Knight",
+          "line": "Retired QC who prosecuted the Latimers' case and lost, hiding failing eyesight and a dying mother; reconciled with Maggie Radcliffe."
+        },
+        {
+          "name": "Sharon Bishop",
+          "line": "Defence barrister and Knight's estranged protégée, who won Joe's acquittal and made peace with Knight at the end."
+        },
+        {
+          "name": "Claire Ripley",
+          "line": "Sandbrook witness revealed as the real orchestrator of Pippa's murder, now arrested by Hardy."
+        },
+        {
+          "name": "Lee Ashworth",
+          "line": "Claire's violent ex-husband, arrested for the Sandbrook killings after Ellie finds the bodies hidden under his floorboards."
+        },
+        {
+          "name": "Paul Coates",
+          "line": "Local vicar dating Becca Fisher, who has been quietly counselling Joe and who brokered the beach-house confrontation that expelled him."
+        }
+      ]
     }
   }
 }

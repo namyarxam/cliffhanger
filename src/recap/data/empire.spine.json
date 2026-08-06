@@ -191,6 +191,307 @@
           "line": "Empire rapper and daughter of Frank Gathers; shot Jamal at the ASAs while trying to kill Lucious in revenge for her father."
         }
       ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Rooftop fall",
+          "text": "Anika and Rhonda fight on a rooftop; Rhonda goes over the edge and dies. Anika gives birth to Hakeem's daughter Bella, tying her forever to the Lyons.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Bella's existence and Rhonda's death drive Andre's grief-fuelled arc and the custody war that defines the back half.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Feds circle",
+          "text": "Tariq, a federal agent and Lucious's half-brother, launches a task force against Empire and plants a hidden camera in the house. He pressures Andre to flip.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets up the federal threat that hangs over the whole season and ends with Tariq dead in a bathroom.",
+          "needsVerify": true
+        },
+        {
+          "label": "S3 · Cookie and Angelo",
+          "text": "Cookie starts dating councilman Angelo Dubois and helps him win his mayoral primary. His mother Diana loathes the Lyons on sight.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The Dubois family becomes the season's antagonist; without Angelo the Bella kidnapping makes no sense.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Vegas play",
+          "text": "Andre partners with Giuliana, a Vegas contact, to expand Empire west. Lucious muscles in, revealing a past affair with Giuliana, and cuts Andre out of the deal.",
+          "anchorEpisode": 14,
+          "whyLoadBearing": "Explains why Andre orders the hit on Lucious that closes the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Cookie chooses Lucious",
+          "text": "Cookie admits she still loves Lucious. Angelo flies into a rage, and Diana vows to destroy the Lyon family.",
+          "anchorEpisode": 14,
+          "whyLoadBearing": "The romantic pivot that turns the Duboises from rivals into enemies and triggers the war over Bella.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Bella taken",
+          "text": "Child Protective Services seizes Bella; Diana Dubois has quietly adopted her as a Dubois. Leah stabs Tariq dead before he can expose them.",
+          "anchorEpisode": 17,
+          "whyLoadBearing": "The two shocks the finale is built on: the kidnapping the family cannot undo, and the corpse hidden in Lucious's bathroom.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Hit at Inferno",
+          "text": "Lucious hands Empire to Andre and prepares to retire with Cookie. Andre tries to call off his hit on Lucious, but Shyne carries it out anyway.",
+          "anchorEpisode": 18,
+          "whyLoadBearing": "The literal cliffhanger: Lucious in a coma with amnesia, Andre in charge, the hit unresolved.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Lucious wakes from Shyne's hit with amnesia, Andre now controls Empire, and Bella is legally a Dubois while Anika sits in jail framed for Tariq's murder.",
+        "questions": [
+          "How much of Lucious is left, and who gets to shape what he remembers?",
+          "Can the Lyons pry Bella back from Diana Dubois, and what will it cost them?",
+          "When Andre's role in the hit surfaces, does the family survive it?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Lucious Lyon",
+          "line": "Empire's founder, shot at his own Vegas opening and left in a coma with amnesia after handing the company to Andre."
+        },
+        {
+          "name": "Cookie Lyon",
+          "line": "Chose Lucious over Angelo Dubois and was preparing to retire alongside him when the hit went down."
+        },
+        {
+          "name": "Andre Lyon",
+          "line": "Eldest son, newly installed as head of Empire; ordered the hit on his father over the Vegas betrayal and tried to call it off too late."
+        },
+        {
+          "name": "Hakeem Lyon",
+          "line": "Youngest son and Bella's father, jilted at the altar in the premiere and now fighting to get his daughter back from the Duboises."
+        },
+        {
+          "name": "Jamal Lyon",
+          "line": "Middle son, working through PTSD from being shot; reconciled with Lucious enough to record Inferno with him."
+        },
+        {
+          "name": "Anika",
+          "line": "Bella's mother, killed Rhonda in the rooftop fall and ends the season framed by Leah for Tariq's murder."
+        },
+        {
+          "name": "Diana Dubois",
+          "line": "Angelo's mother and the season's true enemy; has legally adopted Bella as a Dubois in revenge for Cookie humiliating her son."
+        },
+        {
+          "name": "Giuliana",
+          "line": "Lucious's former lover and Vegas partner, now cut out of the deal and squaring off against Cookie."
+        },
+        {
+          "name": "Shyne Johnson",
+          "line": "Street rival turned uneasy ally who pulled the trigger on Lucious at Inferno despite Andre's last-minute change of heart."
+        },
+        {
+          "name": "Leah Walker",
+          "line": "Lucious's mother, back in the fold; stabbed Tariq to death and pinned it on Anika."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Memory Wiped",
+          "text": "Five months after the Vegas explosion, Lucious wakes with no memory of himself or his family. Cookie leads him back into Empire while nurse Claudia hovers close.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the season's premise: amnesiac Lucious and the unexplained bomb that everyone is circling.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Bella Taken",
+          "text": "Diana DuBois wages war on the Lyons, and her scheming wins Anika full custody of Bella. Hakeem loses his daughter and the family closes ranks.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Establishes the DuBois feud that drives the middle of the season and the custody stakes around Bella.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · DuBois Fall",
+          "text": "The Lyons expose Diana at the Captain's Ball and she is arrested, returning Bella to Hakeem. In the chaos Jamal kills Angelo, and Claudia drugs and abducts Lucious.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Ends the DuBois arc and pivots the threat inward to Claudia and the still-unknown bomber.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Andre Confesses",
+          "text": "Cookie rescues Lucious from Claudia's cabin. At a family dinner Andre admits he planted the car bomb, Lucious beats him, and the shock triggers Cookie's heart attack.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The bomb mystery finally resolves and fractures the family from the inside, resetting every relationship.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Eddie's Play",
+          "text": "Family friend Eddie Barker turns out to be plotting with tech buyer Kelly Patel to seize Empire. He wins the board and pushes Lucious out of his own company.",
+          "anchorEpisode": 16,
+          "whyLoadBearing": "Introduces the endgame antagonist and the corporate threat that replaces the DuBois feud.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Shyne Killed",
+          "text": "Lucious discovers Shyne was also behind the Vegas bomb and has him shot dead. Eddie later surfaces evidence tying Lucious to the murder and uses it to blackmail the family.",
+          "anchorEpisode": 15,
+          "whyLoadBearing": "The leverage that forces Cookie's final sacrifice and hands Empire to Kelly Patel.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Empire Sold",
+          "text": "To keep Lucious out of prison, Cookie trades Empire to Kelly Patel for his freedom. Anika dies in a fall engineered by Andre, and Cookie and Lucious quietly marry at City Hall.",
+          "anchorEpisode": 18,
+          "whyLoadBearing": "Leaves the family married but stripped of the company, setting the terms of the next season.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Cookie and Lucious have just married after losing Empire to Kelly Patel, when Blake's white-supremacist father opens fire at a gathering with Hakeem, Bella, and Tiana in the line of fire.",
+        "questions": [
+          "Who survives the shooting, and who does not?",
+          "Can the Lyons ever claw Empire back from Kelly Patel?",
+          "How does Lucious punish Andre now that he knows Andre planted the bomb?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Lucious Lyon",
+          "line": "Empire's founder, memory restored, newly married to Cookie but stripped of his company and hunted by his own guilt over Shyne."
+        },
+        {
+          "name": "Cookie Lyon",
+          "line": "The family's strategist, recovering from a heart attack and having just traded Empire itself to save Lucious from prison."
+        },
+        {
+          "name": "Andre Lyon",
+          "line": "The eldest son, exposed as the Vegas bomber and barely tolerated by his father after nearly being beaten to death by him."
+        },
+        {
+          "name": "Jamal Lyon",
+          "line": "The middle son, cleared of Angelo's killing, now recording in secret with the collective Anonymous and stepping away from the spotlight."
+        },
+        {
+          "name": "Hakeem Lyon",
+          "line": "The youngest son, engaged to Tiana, Bella back in his arms, and caught in the shootout that closes the season."
+        },
+        {
+          "name": "Eddie Barker",
+          "line": "Longtime family friend turned traitor who seized Empire's board and is blackmailing Lucious with proof he killed Shyne."
+        },
+        {
+          "name": "Kelly Patel",
+          "line": "The tech mogul who has just bought Empire from Cookie in exchange for Lucious's freedom."
+        },
+        {
+          "name": "Anika Calhoun",
+          "line": "Hakeem's rival for Bella, dead after Andre drugged her and she fell from a balcony."
+        },
+        {
+          "name": "Claudia",
+          "line": "Lucious's former nurse, arrested after kidnapping and nearly killing him in an obsessive rage."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Starting over",
+          "text": "Two years after losing Empire to Eddie, Lucious and Cookie start over. Andre is jailed for Anika's murder, Jamal is in London with new boyfriend Kai, Hakeem is with Tiana.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the reset — the Lyons are outside Empire, scattered, and rebuilding.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · A new rival",
+          "text": "The family reunites at home to launch Lyon Family Management. At Empire, new CEO Jeff Kingsley harbours a hidden grudge against Lucious and allies with Diana DuBois.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Introduces Kingsley as the season's antagonist and the LFM/Empire split that drives the plot.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · A hidden son",
+          "text": "Lucious discovers Kingsley is his secret son by ex-lover Tracy. At the LFM showcase, Kingsley outs the connection to the whole family, throwing both companies into chaos.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The reveal reframes every Kingsley scene going forward and sets up the emotional stakes of his suicide.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Damon returns",
+          "text": "With Kingsley exposed, the Lyons reclaim Empire and hire Cookie's old flame Damon Cross to track Eddie's stolen money. Cookie is torn between Damon and Lucious.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Plants the Damon/Cookie affair and the federal thread that ends the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Tour disaster",
+          "text": "Andre is diagnosed with stage-four lymphoma. On the Trust Tour, Treasure forces herself on Lucious; a furious Cookie storms to Damon's room but flees before anything happens.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "Andre's cancer and the Treasure incident are the pivots that fracture the marriage and Lucious's judgement.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · A brother's heart",
+          "text": "Chemo destroys Andre's heart, and he plans to end his life. Kingsley, torn between his father and the FBI, shoots himself at Empire — his heart is transplanted into Andre.",
+          "anchorEpisode": 18,
+          "whyLoadBearing": "Explains why Andre is alive, why Kingsley is gone, and why Lucious enters the finale gutted.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Marriage ends",
+          "text": "With the feds closing in and Lucious convinced Damon is their source, he plans to flee town with Cookie. She refuses, confesses she slept with Damon, and ends the marriage.",
+          "anchorEpisode": 18,
+          "whyLoadBearing": "This is the state the next season opens in: Cookie out, Lucious hunted, Empire leaderless.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Andre is alive with Kingsley's heart, but the FBI has cornered Lucious and his marriage to Cookie is over — she has left him for Damon Cross, whom Lucious believes is the informant sinking them all.",
+        "questions": [
+          "Can Lucious evade Agent Conway's investigation now that Cookie has walked away?",
+          "Is Damon Cross really working with the feds, or is Lucious wrong about him?",
+          "Will Andre survive to raise the son Teri is secretly carrying?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Lucious Lyon",
+          "line": "Empire's founder, on the run from the feds after his marriage collapsed and his newly-discovered son Kingsley died at his feet."
+        },
+        {
+          "name": "Cookie Lyon",
+          "line": "Lucious's ex-wife and Empire co-founder, who has finally left him after finding comfort with Damon Cross."
+        },
+        {
+          "name": "Andre Lyon",
+          "line": "Eldest son, alive after receiving Kingsley's heart in transplant; engaged to Teri, who is quietly carrying his baby boy."
+        },
+        {
+          "name": "Jamal Lyon",
+          "line": "Middle son, newly married to Kai and settled back in New York after years in London."
+        },
+        {
+          "name": "Hakeem Lyon",
+          "line": "Youngest son, separated from Tiana, rebuilding his music career and co-parenting their surviving twin Bella."
+        },
+        {
+          "name": "Jeff Kingsley",
+          "line": "Lucious's secret son by Tracy who ran Empire and worked with the FBI to destroy him, then shot himself; his heart now beats in Andre."
+        },
+        {
+          "name": "Damon Cross",
+          "line": "Cookie's old flame, hired to recover Eddie's stolen money; Cookie has slept with him, and Lucious is convinced he is a federal informant."
+        },
+        {
+          "name": "Kai Givens",
+          "line": "Jamal's new husband, a reporter who is HIV-positive and publicly out about it since their wedding."
+        },
+        {
+          "name": "Teri",
+          "line": "Andre's fiancée and hospital-wedding wife, standing by him through cancer while secretly carrying his son."
+        }
+      ]
     }
   }
 }

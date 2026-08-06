@@ -96,6 +96,308 @@
           "line": "Real-estate developer squeezing the ranch financially, currently alive but broken after Rip hung him from a tree to name every co-conspirator."
         }
       ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · John Steps Back",
+          "text": "A ruptured ulcer nearly kills John and forces him to slow down. He starts grooming Kayce to run the ranch, sidelining Rip and unsettling the family hierarchy.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Establishes the succession question that drives every family beat this season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Beth Backs Jamie's Rival",
+          "text": "Furious at Jamie, Beth recruits Cassidy Reid to run against him for Attorney General. Jamie's political path — and his standing in the family — starts collapsing.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Sets up Jamie's isolation, which triggers the murder that defines his arc going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Jamie Kills The Reporter",
+          "text": "Jamie vents family secrets to journalist Sarah Nguyen. When she refuses to kill the story, he murders her on a riverbank to bury it.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The secret Jamie now carries becomes leverage over him for seasons to come.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Becks Declare War",
+          "text": "Casino rivals Malcolm and Teal Beck are exposed as the enemy behind the cattle attacks and a deputy's death. John allies with Rainwater and Jenkins to fight them.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Names the season's true villains and the unlikely coalition formed against them.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Tate Is Taken",
+          "text": "The Becks retaliate by kidnapping Kayce's son Tate from the ranch. The whole family mobilises for a rescue that turns into open warfare.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "The kidnapping is the emotional pivot that reshapes Kayce and Monica going into next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Becks Fall",
+          "text": "John and Kayce hunt the Becks down and get Tate back, ending the war in blood. Rip, meanwhile, receives an inheritance from a dying figure from his past.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Resolves the season's central threat and quietly repositions Rip's standing with the family.",
+          "needsVerify": true
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Becks are dead and Tate is home, but the family is shaken — Kayce and Monica are raw from the kidnapping, Jamie is a murderer nobody knows about, and John's health has forced a real succession question into the open.",
+        "questions": [
+          "How will Tate and Monica live with what happened to them?",
+          "How long can Jamie hide killing Sarah Nguyen, and who finds out first?",
+          "Who really runs the Yellowstone now that John has stepped back?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "John Dutton",
+          "line": "The patriarch, recovering from near-fatal surgery and finally admitting he cannot run the ranch alone forever."
+        },
+        {
+          "name": "Kayce Dutton",
+          "line": "John's youngest son, now a livestock officer and heir apparent, tested in his first real leadership role.",
+          "note": "Married to Monica; father to Tate."
+        },
+        {
+          "name": "Beth Dutton",
+          "line": "John's daughter and financial attack dog, waging open war on Jamie and on developer Dan Jenkins."
+        },
+        {
+          "name": "Jamie Dutton",
+          "line": "The lawyer son, cut out of the family after leaking to a reporter and now secretly a murderer.",
+          "note": "Killed journalist Sarah Nguyen to bury the story."
+        },
+        {
+          "name": "Rip Wheeler",
+          "line": "John's fiercely loyal ranch foreman, pushed aside by Kayce's rise but still the family's enforcer."
+        },
+        {
+          "name": "Monica Dutton",
+          "line": "Kayce's wife, a new college instructor rebuilding her life apart from the ranch, and shattered by Tate's kidnapping."
+        },
+        {
+          "name": "Tate Dutton",
+          "line": "Kayce and Monica's young son, kidnapped by the Becks and rescued only after violence he witnessed firsthand."
+        },
+        {
+          "name": "Thomas Rainwater",
+          "line": "Chief of the neighboring reservation; a rival turned reluctant ally against the Becks."
+        },
+        {
+          "name": "Dan Jenkins",
+          "line": "The developer Beth has been tormenting; forced into the anti-Beck alliance after their attacks hit him too."
+        },
+        {
+          "name": "Jimmy Hurdstrom",
+          "line": "A young ranch hand paying off his past debts and chasing rodeo money to keep his grandfather safe."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Succession Shuffle",
+          "text": "John steps down as Livestock Commissioner and installs Jamie, then swaps him into interim Attorney General so Kayce can take the badge instead.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Resets every Dutton's job title going into S4 — Jamie in state law, Kayce as commissioner, John free to fight the developers directly.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The Airport Play",
+          "text": "Market Equities, fronted by Roarke Morris and CEO Willa Hays, moves to seize 50,000 Dutton acres for a resort and airport, pressuring the Governor toward eminent domain.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Names the season's antagonist and the specific threat driving every Dutton decision from here on.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · The Abortion Clinic",
+          "text": "A flashback reveals teenage Jamie took a pregnant Beth to a reservation clinic that sterilised her without warning. Beth finally tells John, and the family rift becomes permanent.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Explains Beth's hatred of Jamie and why she cannot have children with Rip — the emotional engine of everything she does next.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Jamie's Real Father",
+          "text": "Jamie discovers John is not his biological father and confronts the man who is, a revelation that begins pulling him away from the family that raised him.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "The single most important character shift of the season — Jamie's loyalty is now genuinely in play.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Rip and Beth",
+          "text": "Beth asks Rip to marry her, cementing him as her chosen family as she is fired by Willa Hays and turns her full firepower on Market Equities.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Locks in the Rip/Beth partnership and Beth's personal war footing heading into the finale attacks.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Broken Rock Awakens",
+          "text": "A murdered girl on the reservation radicalises Monica, and Angela Blue Thunder tells Chief Rainwater the land must be taken back by force, not negotiated for.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Sets Rainwater on a more militant path and reframes the reservation as its own power moving against Market Equities.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Coordinated Hit",
+          "text": "Cornered at the negotiating table, John refuses to sell. Within hours the Duttons are hunted one by one in coordinated assassination attempts.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "This is the literal cliffhanger — the state of the family as S4 opens.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "After John rejects Market Equities' final offer, the Duttons are attacked simultaneously in an orchestrated hit — leaving John, Beth and Kayce all fighting for their lives at once.",
+        "questions": [
+          "Who ordered the attacks — Market Equities, the reservation, or someone closer to home?",
+          "Which Duttons survive the night?",
+          "Now that Jamie knows John isn't his real father, whose side will he take when the family bleeds?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "John Dutton",
+          "line": "Patriarch who has handed off the Livestock Commissioner badge to fight Market Equities directly, and has just refused to sell an acre."
+        },
+        {
+          "name": "Beth Dutton",
+          "line": "Fired by Willa Hays and out for revenge, newly engaged to Rip, and finally free of the secret about what Jamie did to her."
+        },
+        {
+          "name": "Jamie Dutton",
+          "line": "Interim Attorney General who has just learned John is not his biological father and met the man who is.",
+          "note": "His loyalty to the family is, for the first time, genuinely uncertain."
+        },
+        {
+          "name": "Kayce Dutton",
+          "line": "The new Livestock Commissioner, still living rough at the summer camp with Monica and Tate."
+        },
+        {
+          "name": "Rip Wheeler",
+          "line": "Ranch foreman and Beth's fiancé, having just killed the Duttons' rival Wade Morrow and branded a reluctant Walker back into the fold."
+        },
+        {
+          "name": "Monica Dutton",
+          "line": "Kayce's wife, radicalised by the murder of a girl on Broken Rock and newly committed to justice for Native women."
+        },
+        {
+          "name": "Thomas Rainwater",
+          "line": "Chief of the Broken Rock reservation, allied with John against Market Equities but being pushed by Angela Blue Thunder to take the land back by force."
+        },
+        {
+          "name": "Willa Hays",
+          "line": "CEO of Market Equities, the developer running the airport-and-resort play against the ranch."
+        },
+        {
+          "name": "Roarke Morris",
+          "line": "Willa's hedge-fund fixer on the ground in the valley, and Beth's personal target all season."
+        },
+        {
+          "name": "Jimmy Hurdstrom",
+          "line": "Ranch hand chasing a rodeo career with girlfriend Mia, recovering from a serious accident."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Family Survives Hits",
+          "text": "The Duttons survive the coordinated attacks: John is shot but stabilised, Beth walks out of her bombed office, and Kayce guns down his ambushers.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes that the season opens with the family alive but hunting whoever ordered the hit — the engine of everything that follows.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Trail to Riggins",
+          "text": "John and Kayce hunt the hit squads and trace the plot to an imprisoned felon named Riggins. John hands the file to Jamie as a loyalty test.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Sets up the mechanism by which the family will eventually prove Jamie's complicity.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Jamie's Father",
+          "text": "Jamie learns Riggins shared a cell with his biological father, Garrett Randall. Garrett hands him a son by ex-girlfriend Christina and pulls him deeper into a new family.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The Garrett-Jamie bond is the whole reason Jamie ends the season compromised.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · John Runs",
+          "text": "Governor Perry publicly endorses John for Governor instead of Jamie, humiliating him. Garrett and Christina push Jamie to run against his own father anyway.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Turns the family fight into an open political war heading into next season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Beth And Rip",
+          "text": "Beth is fired from Market Equities as the company prepares a major lawsuit against the ranch. She kidnaps a priest and marries Rip that same night.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Locks in Rip as family and leaves Market Equities as the ranch's open legal enemy.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Kayce's Vision",
+          "text": "Kayce undergoes a four-day warrior initiation on the mountain. He returns with a vision that convinces him his marriage to Monica is ill-fated.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Plants the crisis that defines Kayce and Monica's storyline going in.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Beth Owns Jamie",
+          "text": "Beth gets Riggins to name Garrett as the man who hired the hit, with Jamie's knowledge. She forces Jamie to kill Garrett and dump the body, then blackmails him into obedience.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "This is the state of play as season 5 opens: Jamie is Beth's puppet, and he knows it.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "John is running for Governor while Beth quietly owns Jamie, having forced him to murder his own father and buried the evidence. Jamie is caged, humiliated, and told nothing about what Beth has done for John.",
+        "questions": [
+          "How long can Jamie stay leashed before he turns on Beth?",
+          "What does a Dutton governorship actually cost the family?",
+          "Can Kayce's marriage to Monica survive the vision he came back with?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "John Dutton",
+          "line": "Ranch patriarch, recovered from the assassination attempt and now the endorsed candidate for Governor of Montana."
+        },
+        {
+          "name": "Beth Dutton",
+          "line": "Newly married to Rip, freshly fired from Market Equities, and holding blackmail evidence that makes Jamie hers."
+        },
+        {
+          "name": "Jamie Dutton",
+          "line": "Broken adopted son who has just killed his biological father at Beth's gunpoint and remains under her control."
+        },
+        {
+          "name": "Garrett Randall",
+          "line": "Jamie's biological father, exposed as the man who ordered the hits on the Duttons; killed by Jamie in the finale.",
+          "note": "Dead, but the reason Jamie is compromised going forward."
+        },
+        {
+          "name": "Kayce Dutton",
+          "line": "Returned from a tribal warrior initiation with a vision that has shaken his belief in his marriage to Monica."
+        },
+        {
+          "name": "Rip Wheeler",
+          "line": "Officially married to Beth and now raising a teenage boy, Carter, that Beth brought home from the hospital."
+        },
+        {
+          "name": "Christina",
+          "line": "Jamie's ex-girlfriend, mother of his young son, and the political operative shaping his campaign against John."
+        },
+        {
+          "name": "Summer Higgins",
+          "line": "Animal-rights activist John took an interest in; now serving a prison sentence after the airport protest arrests."
+        },
+        {
+          "name": "Lynelle Perry",
+          "line": "Outgoing Governor running for U.S. Senate who endorsed John over Jamie, triggering the family's political rupture."
+        }
+      ]
     }
   }
 }

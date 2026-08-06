@@ -256,7 +256,8 @@ async function main() {
 
     const { stats } = verdict;
     console.log(
-      `\n▸ ${show.slug} — ${stats.seasons} seasons fetched, usable S1-S${verdict.usableThrough} ` +
+      `\n▸ ${show.slug} — ${stats.seasons} seasons fetched, usable S1-S${verdict.usableThrough}` +
+        `${verdict.generateThrough < verdict.usableThrough ? `, generating S1-S${verdict.generateThrough}` : ''} ` +
         `(${stats.usableEpisodes} eps), coverage ${Math.round(stats.coverage * 100)}%, ` +
         `cast continuity ${Math.round(stats.continuity * 100)}%`,
     );
@@ -275,8 +276,10 @@ async function main() {
         '--slug', show.slug,
         '--whole-show',
         // Never generate past what eligibility judged writable — the seasons
-        // beyond it are the ones Wikipedia has not caught up on.
-        '--through', String(verdict.usableThrough),
+        // beyond it are the ones Wikipedia has not caught up on. generateThrough
+        // rather than usableThrough so a finished show stops one short of its
+        // final season, which no returning viewer needs.
+        '--through', String(verdict.generateThrough),
       ]);
       const text = r.out + r.err;
       if (r.code !== 0) {

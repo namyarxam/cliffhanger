@@ -203,6 +203,101 @@
           "line": "ISB officer whose loyalty is quietly fracturing after his icy-moon ordeal with Zeb; sitting alone in his quarters, deep in thought."
         }
       ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Vader hunts Lothal",
+          "text": "Vader crushes any resistance on Lothal to flush the Ghost crew out. Cornered and demoralised, they flee off-world and formally join Ahsoka's wider rebel cell.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the season's premise: the small crew is now part of the Rebellion and Vader is personally hunting them.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ahsoka feels him",
+          "text": "In the battle that follows, Ahsoka's mind touches Vader's through the Force. She senses her old master Anakin beneath the mask and is left reeling.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Ahsoka's whole S3 arc, ending on Malachor, is driven by this realisation. Without it the finale doesn't land.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Clones return",
+          "text": "Searching for Outer Rim hideouts the crew finds Captain Rex and two other clones, veterans who join the fight as new Inquisitors close in on the Jedi.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Rex is a regular from here on and the Inquisitor threat frames every Jedi beat this season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Ezra's parents",
+          "text": "Ezra tracks his parents' fate to Lothal and learns they died leading a prison break his own broadcasts inspired. He carries the grief into everything after.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Closes Ezra's oldest storyline and explains the darker, more reckless Ezra who reaches for Maul and the holocron later.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Kallus doubts",
+          "text": "Marooned with Zeb on an icy moon, Kallus admits he never approved of the Empire's slaughter of the Lasats. He returns to his post shaken and quietly changed.",
+          "anchorEpisode": 17,
+          "whyLoadBearing": "Turns the season's antagonist into an ambiguous figure and sets up his role going forward.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Malachor and Maul",
+          "text": "A vision of Yoda sends Ezra to the Sith world Malachor. There he meets an old hermit — Maul — who offers to help him kill the Inquisitors and take him as an apprentice.",
+          "anchorEpisode": 21,
+          "whyLoadBearing": "Introduces Maul's return and the Sith temple that drives the finale and Ezra's next-season temptation.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Blindness and betrayal",
+          "text": "Together they kill the Inquisitors, then Maul blinds Kanan and flees. Ahsoka stays inside the crumbling temple to face Vader while Ezra escapes with a Sith holocron.",
+          "anchorEpisode": 21,
+          "whyLoadBearing": "This is the state the show is in at the door of S4: Kanan blind, Ahsoka gone, Maul loose, Ezra holding a Sith artefact.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Ezra flees Malachor with an opened Sith holocron, Kanan blinded beside him and Ahsoka left behind duelling Vader in the collapsing temple. Maul is somewhere out there in the galaxy, and the Rebellion has a fragile new base but a hunter who now knows exactly who they are.",
+        "questions": [
+          "Did Ahsoka survive her duel with Vader inside the temple?",
+          "What will Ezra learn — or become — now that the Sith holocron is open?",
+          "Where has Maul gone, and will he come back for his apprentice?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Ezra Bridger",
+          "line": "Force-sensitive teenager and Kanan's apprentice, orphaned and grieving, now holding an opened Sith holocron."
+        },
+        {
+          "name": "Kanan Jarrus",
+          "line": "Jedi Knight and Ezra's master, blinded by Maul on Malachor and adjusting to fighting without sight."
+        },
+        {
+          "name": "Ahsoka Tano",
+          "line": "Former Jedi and senior rebel leader; last seen inside the collapsing Sith temple duelling Vader, fate unknown."
+        },
+        {
+          "name": "Darth Vader",
+          "line": "The Emperor's enforcer personally hunting the Ghost crew, revealed to Ahsoka as her fallen master Anakin Skywalker."
+        },
+        {
+          "name": "Maul",
+          "line": "Old Sith survivor who tried to take Ezra as his apprentice; blinded Kanan, then fled Malachor alive."
+        },
+        {
+          "name": "Agent Kallus",
+          "line": "Imperial ISB officer stranded with Zeb on an icy moon; returned to his post secretly questioning the Empire."
+        },
+        {
+          "name": "Captain Rex",
+          "line": "Veteran clone trooper who removed his control chip; now fights alongside the Ghost crew as a rebel soldier."
+        },
+        {
+          "name": "Hera Syndulla",
+          "line": "Pilot and captain of the Ghost, commanding the Lothal cell inside the wider Rebellion."
+        }
+      ]
     }
   }
 }

@@ -200,6 +200,395 @@
           "line": "Rejoined Hearts to resume his purge of mortals; erased by Hearts once the Universe Seed was fully absorbed."
         }
       ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Champa's wager",
+          "text": "Beerus's twin Champa arrives, revealing Universe Six's Earth was destroyed. He proposes a tournament; the winning universe claims the other's Earth.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the entire premise: why the tournament exists and what is at stake.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Team assembled",
+          "text": "Bulma builds a Super Dragon Radar to hunt the final Super Dragon Ball. Beerus's team fills out with Goku, Vegeta, Piccolo, Buu, and the mysterious Monaka.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Names the roster and plants Monaka and the Super Dragon Ball wish, both live threads.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Written exam",
+          "text": "At the arena, Buu falls asleep during the written exam and is disqualified. Goku fights first, then Piccolo, Vegeta, and Monaka last.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Sets the fight order and removes Buu, so the reader can follow who steps up next.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Frost cheats",
+          "text": "Goku dispatches Botamo, then faces Frost, a beloved Universe Six hero resembling Frieza. Frost secretly drugs Goku with a hidden weapon and knocks him from the ring.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Goku is out of the tournament and Frost's true nature becomes the pivot for the next beat.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Frost unmasked",
+          "text": "After Jaco exposes Frost's cheating and criminal empire, Piccolo wins by disqualification. Vegeta demands a rematch and beats Frost cleanly.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Clears Frost off the board and hands momentum to Vegeta going into his streak.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Vegeta and Cabba",
+          "text": "Vegeta wins against Magetta and Cabba, a young Universe Six Saiyan, awakening the youth's Super Saiyan form by provoking him before knocking him out.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Introduces Cabba as a Universe Six Saiyan Vegeta has now mentored — a bond that outlives this season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Hit arrives",
+          "text": "Universe Six's last fighter, the assassin Hit, uses a time-skip technique to floor Vegeta. Goku steps up, and both agree to fight at full power.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "This is the exact match the next season opens on; the reader needs to know why Goku is squaring off with Hit.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The tournament has come down to Goku versus the assassin Hit, both preparing for a final full-power showdown. If Universe Six wins, Champa takes Earth.",
+        "questions": [
+          "Can Goku crack Hit's time-skip in time to win?",
+          "What are Monaka's 'true colors' that Whis keeps hinting at?",
+          "If Champa loses, will he honour the wager?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Goku",
+          "line": "Universe Seven's lead fighter; knocked out by Frost's poison but reinstated, now facing Hit at full power."
+        },
+        {
+          "name": "Vegeta",
+          "line": "Beat Frost, Magetta, and Cabba back-to-back before Hit's time-skip put him down; watching Goku from the sidelines."
+        },
+        {
+          "name": "Hit",
+          "line": "The Universe Six assassin whose time-skip freezes a tenth of a second for everyone but him; the last fighter standing between Universe Seven and the win."
+        },
+        {
+          "name": "Champa",
+          "line": "Beerus's twin and Universe Six's God of Destruction; staged the whole tournament to claim Universe Seven's Earth after his own was destroyed."
+        },
+        {
+          "name": "Beerus",
+          "line": "Universe Seven's God of Destruction; accepted the wager and personally recruited Monaka as his hidden card."
+        },
+        {
+          "name": "Cabba",
+          "line": "Young Universe Six Saiyan who has just awakened Super Saiyan under Vegeta's provocation, and left the ring with Vegeta's advice to surpass all others."
+        },
+        {
+          "name": "Bulma",
+          "line": "Built the Super Dragon Radar to hunt the last ball; suspicious of what Beerus would wish for if his side wins."
+        },
+        {
+          "name": "Monaka",
+          "line": "Beerus's mysterious final pick, held in reserve as the closer; Whis has quietly hinted his 'true colors' are not what Goku assumes."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Black Kills Bulma",
+          "text": "In an alternate future, a Goku look-alike calling himself Black hunts Future Trunks, killing Future Bulma and seemingly Future Mai as Trunks flees to the Time Capsule.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the new villain and the catastrophe that drives Trunks back to the present.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Trunks Returns",
+          "text": "Future Trunks lands in the present and, mistaking Goku for Black, attacks him before Bulma calms him and he explains the future's slaughter to the group.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Reintroduces Future Trunks to the cast and sets the mission to save his timeline.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Black Follows",
+          "text": "Black tears a hole through time using a Supreme Kai's Time Ring and fights Goku in the present, then destroys the Time Machine before being dragged back to the future.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Confirms Black wields Kai-level technology and strands Trunks, forcing Bulma's rebuild.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · A Familiar Energy",
+          "text": "Beerus and Whis note that Black's ki feels eerily familiar, and Bulma reveals she still owns Cell's old time machine to rebuild for a return trip.",
+          "anchorEpisode": 4,
+          "whyLoadBearing": "Plants the mystery of Black's identity and gives the heroes a path back to the future.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Meeting Zamasu",
+          "text": "Goku, Beerus and Whis travel to the Tenth Universe and meet the apprentice Kai Zamasu, whose contempt for mortals and ki signature both mirror Black's.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Names the prime suspect and links Black's identity to the Kai hierarchy.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Sparring Goku",
+          "text": "Goku easily outmatches Zamasu in a spar, but the humiliation only hardens the Kai's ideology that mortals are an abomination that must be erased.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Shows the ideology and the personal grudge that will fuel Zamasu's turn.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Gowasu's Lesson",
+          "text": "Vegeta pushes Future Trunks to keep growing stronger, while Gowasu promotes Zamasu and uses a Time Ring to show him a fledgling race on Planet Babari.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Puts a Time Ring in Zamasu's hands and ends the season on the verge of his fall.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Goku Black is loose across two timelines with a stolen Time Ring, and every clue points to the apprentice Kai Zamasu, who has just been handed the same power by his own master.",
+        "questions": [
+          "Is Zamasu actually Goku Black, or something worse?",
+          "How did a Kai come to wear Goku's face?",
+          "Can Bulma finish the Time Machine before Black finishes the future?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Future Trunks",
+          "line": "The lone survivor of a devastated timeline, now stranded in the present waiting on Bulma to rebuild a way home."
+        },
+        {
+          "name": "Goku Black",
+          "line": "A Goku look-alike wielding a Supreme Kai's Time Ring, bent on exterminating every mortal he deems inferior."
+        },
+        {
+          "name": "Zamasu",
+          "line": "Apprentice Kai of the Tenth Universe who despises mortals and has just been humbled in a spar by Goku."
+        },
+        {
+          "name": "Gowasu",
+          "line": "Supreme Kai of the Tenth Universe and Zamasu's mentor, trying to teach his apprentice patience with mortal life."
+        },
+        {
+          "name": "Goku",
+          "line": "Curious about Black's familiar energy and training on King Kai's world between fights, now summoned by Zeno."
+        },
+        {
+          "name": "Vegeta",
+          "line": "Training with Whis and pushing Future Trunks to keep striving, unsatisfied with merely matching Black."
+        },
+        {
+          "name": "Bulma",
+          "line": "Repairing Cell's old time machine using her future self's journal so the fight can be taken back to Black."
+        },
+        {
+          "name": "Beerus & Whis",
+          "line": "The God of Destruction and his attendant, unsettled by Black's ki and now closely watching the Kai hierarchy."
+        }
+      ]
+    },
+    "5": {
+      "beats": [
+        {
+          "label": "S5 · Zeno's whim",
+          "text": "Bored, the two Grand Zenos agree to Goku's tournament idea. The Grand Minister announces the Tournament of Power: losing universes are erased from existence.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the stakes that drive every subsequent action this season and next.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Expo warning",
+          "text": "In a preview Zeno Expo, Universe 7 fights Universe 9's Trio of Danger. Buu wins, Gohan ties by poison, and Goku beats Bergamo in Super Saiyan Blue.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Signals other universes will target Goku for triggering the tournament, and shows the field's power tier.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Top's threat",
+          "text": "Universe 11's Pride Trooper leader Top nearly kills Goku before the fight is stopped. Top warns that his comrade Jiren is stronger still.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Plants Jiren as the season's ultimate opponent without him appearing yet.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Bulla's birth",
+          "text": "Vegeta refuses to leave the pregnant Bulma, so Whis warps time to bring the birth forward. Their daughter Bulla is born, freeing Vegeta to compete.",
+          "anchorEpisode": 7,
+          "whyLoadBearing": "Explains why Vegeta joins the team and sets up his new family stake going in.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Building the ten",
+          "text": "Goku and Gohan lock in Vegeta, Piccolo, Buu, Krillin, Master Roshi and 18. Sparring with Krillin teaches Goku the tournament is a battle royal, not duels.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "Sets the roster and the tactical lesson Goku carries into the arena.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Rivals assemble",
+          "text": "Champa orders Cabba to recruit Universe 6's Saiyans, and Top gathers his Pride Troopers to enlist Jiren. Every universe now hunts Goku's team.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Shows the opposing teams forming, which is the shape of the tournament to come.",
+          "needsVerify": false
+        },
+        {
+          "label": "S5 · Finding 17",
+          "text": "Dende leads Goku to Android 17, now a ranger on a wildlife reserve. Goku pitches the tournament, but 17 is unmoved even after hearing universes will be erased.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Leaves the tenth roster slot unfilled — the direct hook into the next season.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Tournament of Power is set and nine fighters are locked in, but Android 17 has refused to join and poachers are closing on his island. Universe 7 is still one warrior short with the clock running out.",
+        "questions": [
+          "Will Android 17 change his mind and take the final slot?",
+          "How will Universe 7 stand against Jiren and the assembled universes?",
+          "What happens to the seven universes that lose?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Goku",
+          "line": "Triggered the Tournament of Power by pitching it to bored Zenos, and is now scrambling to assemble Universe 7's ten fighters."
+        },
+        {
+          "name": "The Grand Zenos",
+          "line": "The childlike omnipotent rulers whose boredom set the tournament in motion and whose word erases universes.",
+          "note": "Present and Future Zeno, side by side."
+        },
+        {
+          "name": "Beerus",
+          "line": "Universe 7's Destroyer, furious at Goku for putting their existence on the line but forced to back the team."
+        },
+        {
+          "name": "Vegeta",
+          "line": "Newly a father to Bulla; Whis's time-warp let him join the tournament without abandoning Bulma."
+        },
+        {
+          "name": "Gohan",
+          "line": "Recruited as co-strategist, tied his Zeno Expo match against Lavender's poison and is helping Goku fill the roster."
+        },
+        {
+          "name": "Top",
+          "line": "Leader of Universe 11's Pride Troopers, personally rivals Goku and is building his team around Jiren."
+        },
+        {
+          "name": "Jiren",
+          "line": "The Pride Trooper Top calls stronger than himself; recruited off-screen, unseen in combat so far."
+        },
+        {
+          "name": "Android 17",
+          "line": "Living quietly as a wildlife ranger with a family, has refused Goku's tournament invitation despite the stakes."
+        },
+        {
+          "name": "The Grand Minister",
+          "line": "The Zenos' attendant who runs the tournament rules and enforces its terms on every universe."
+        }
+      ]
+    },
+    "6": {
+      "beats": [
+        {
+          "label": "S6 · False Universe",
+          "text": "Trapped in Fu's copy of Universe Seven, Goku is attacked by Frieza and Cooler until Hearts, pulled from Hell by Demigra, offers alliance against Fu.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the setting, the rules (damage transfers to real Earth), and the enemy-of-my-enemy pact driving the season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Masked Saiyan",
+          "text": "A masked Saiyan empowers Frieza and Cooler with Dark Dragon Balls, but a cloaked Super Saiyan intervenes and steals the balls back before vanishing.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces both mystery figures whose reveals drive the season's turns.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Gather the Balls",
+          "text": "Hearts reveals duplicate Dragon Balls exist in this false universe, and Goku realises collecting all seven may be their only way out.",
+          "anchorEpisode": 2,
+          "whyLoadBearing": "Sets the season's objective and explains why every faction converges on the same goal.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Black Returns",
+          "text": "The masked Saiyan unmasks as Goku Black, an alternate spared before Future Zeno's erasure, who has trained by killing Gokus across ninety-nine timelines.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "The season's central antagonist reveal; the reader must know why Black is back and why he is this strong.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Training Chamber",
+          "text": "Demigra's ally Shurum opens a pocket dimension so Goku and Vegeta can master Ultra Instinct and Vegeta's absorbed evil ki while the cloaked Saiyan holds Black off.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "Explains how the heroes suddenly have controlled access to their trump-card forms in the finale.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Gogeta vs Black",
+          "text": "Black's mask absorbs the false universe's energy to keep healing him, until Goku and Vegeta fuse into Gogeta, reach Blue Evolved, and shatter the mask.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Resolves the immediate Black threat and shows the fusion is now the heroes' ceiling.",
+          "needsVerify": false
+        },
+        {
+          "label": "S6 · Fu's Trap",
+          "text": "The cloaked Saiyan uses the diversion to gather all seven false Dragon Balls and activate them, teleporting Goku alone to the Universe Tree to face a younger Fu.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "The cliffhanger hand-off: the cloaked ally's true purpose is unresolved, and Goku is now isolated with Fu.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The cloaked Super Saiyan has used the finale's chaos to summon the false universe's Dragon Balls and rip Goku away from the others. He now stands alone before the Universe Tree, face to face with a younger version of Fu.",
+        "questions": [
+          "Who is the cloaked Saiyan, and was helping Goku ever his real goal?",
+          "What did he wish for on the false universe's Dragon Balls?",
+          "Why is Fu suddenly younger, and what does he want with Goku at the Universe Tree?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Goku",
+          "line": "Trapped in the false universe, can tap Ultra Instinct but not sustain it; just fused into Gogeta to beat Black before being teleported away alone."
+        },
+        {
+          "name": "Vegeta",
+          "line": "Absorbed Cumber's evil ki via Turles and learned to control it in the pocket dimension; currently separated from Goku after the Dragon Ball wish."
+        },
+        {
+          "name": "Goku Black",
+          "line": "An alternate Black who survived Future Zeno's erasure and trained across ninety-nine timelines; his mask was shattered by Gogeta and he disintegrated."
+        },
+        {
+          "name": "Fu",
+          "line": "Architect of the false Universe Seven built from the Universe Seed; now appears in a younger form and has Goku alone at the Universe Tree."
+        },
+        {
+          "name": "Hearts",
+          "line": "Pulled from Hell by Demigra as a temporary ally, driven by wanting Fu dead for misusing the Universe Seed; can read minds but hides what he learns."
+        },
+        {
+          "name": "The Cloaked Saiyan",
+          "line": "An unidentified Super Saiyan who fought Black, quietly gathered all seven false Dragon Balls during the fusion battle, and activated them to pull Goku away."
+        },
+        {
+          "name": "Cell",
+          "line": "Also retrieved from Hell in a spirit body by Demigra's faction; publicly allied with the heroes but privately vowing revenge on the Z-Fighters."
+        },
+        {
+          "name": "Cumber",
+          "line": "The evil Saiyan whose dark ki Vegeta absorbed and turned into a new power source; currently knocked out and travelling with the group."
+        },
+        {
+          "name": "Shurum",
+          "line": "A former Demon God working with Demigra who opened the pocket-dimension training space that let Goku and Vegeta master their forms in time for the finale."
+        }
+      ]
     }
   }
 }

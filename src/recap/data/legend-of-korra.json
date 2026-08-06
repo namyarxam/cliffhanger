@@ -1,5 +1,5 @@
 {
-  "slug": "legend-of-korra",
+  "slug": "_probe-legend-of-korra",
   "tmdbId": 33880,
   "tvmazeId": 178,
   "matchedBy": "imdb_id",
@@ -232,7 +232,7 @@
           "episode": 3,
           "name": "Civil Wars (1)",
           "overview": "While tensions flare between the Northern and Southern Water Tribes, Korra struggles to remain neutral.",
-          "plot": null,
+          "plot": "Part 1: As the Southerners resist Northern occupation, Unalaq offers to protect the southern portal while Korra opens its northern counterpart, claiming that this will deepen the connection between humanity and the spirits and prevent further dark spirit attacks. Eccentric Southern Tribe inventor and entrepreneur Varrick, whose business suffers from Unalaq's blockade, begins a revolt. Korra prevents an abduction of Unalaq by Southern rebels. As she tries to reconcile with her mother, Senna, and Tonraq, Unalaq appears to arrest them for conspiring to assassinate him. At the Southern Air Temple, Ikki disappears and Tenzin, Kya, and Bumi search for her while recalling their childhood with their late father, Avatar Aang. Part 2: After her father is sentenced to life in prison for conspiring to assassinate Unalaq, Korra discovers that Unalaq staged the trial, as well as Tonraq's much earlier banishment from the Northern Tribe, where Tonraq had been expected to succeed as chief. With the help of her friends and Varrick, Korra frees Tonraq and other condemned rebels from prison, and extracts Bolin from an impending forced marriage to Eska. She promises to seek the United Republic's support for the Southern rebellion. At the Southern Air Temple, Ikki and Tenzin each reconcile with their siblings.",
           "airDate": "2013-09-20",
           "still": "https://image.tmdb.org/t/p/original/gxQWnbcK3CkUddw0dgjwotyJGU7.jpg",
           "stills": [
@@ -279,7 +279,7 @@
           "episode": 7,
           "name": "Beginnings (1)",
           "overview": "Korra learns about the epic and mythic origins of the first Avatar.",
-          "plot": null,
+          "plot": "Part 1: While being healed by the Fire Sages, Korra has visions of Wan, the first Avatar, who lived 10,000 years earlier. At this time, humans lived on the shells of the giant lion turtles to protect themselves from the spirit wilds that dominate the physical world. Wan and his friends live in poverty, under the nepotistic family that rules his city. As a form of protection, the lion turtles grant the power to bend elements for a limited time when humans venture into the wilds. After Wan violates the prohibition against bringing his bending into the city to steal food for his friends, he is banished, but allowed to keep his firebending. He survives by befriending the spirits in the forest. Two years later, while exploring, he encounters two powerful spirits battling each other. One of the spirits, Vaatu, asks Wan for assistance, when he is held down by the other, Raava. When Wan separates the two, Vaatu escapes. Raava, explains that she is the spirit of light and peace, and Vaatu is the spirit of darkness and war; by inadvertently freeing Vaatu, Wan has inadvertently initiated an age of darkness for the world. Part 2: Vaatu turns other spirits dark and threatens to destroy the world. To stop Vaatu, Wan resolves to master additional elements with Raava's help, and prepare for the 'Harmonic Convergence', during which Vaatu and an increasingly weakened Raava will battle for the world's fate. Wan and Raava fail to stop a war initiated between the humans and spirits by Vaatu. At the Southern spirit portal, Wan and Raava enter the spirit world and join the battle against Vaatu by having Raava temporarily inhabit Wan. The battle goes poorly, but when the Convergence begins, Wan and Raava fuse together permanently, thereby becoming the first Avatar. After sealing Vaatu in the Tree of Time, Wan convinces the spirits to return to the spirit world and seals the portals, becoming the \"bridge\" between the two worlds. Years later, a dying Wan lies on a battlefield and apologizes to Raava for not bringing peace to the world. Raava says that their journey has just begun; they will have many lives together in the avatar cycle of reincarnation. Korra awakens, memories restored, and leaves the island to stop Unalaq's plans for the next Harmonic Convergence, which is weeks away.",
           "airDate": "2013-10-18",
           "still": "https://image.tmdb.org/t/p/original/oz3X1elprfQsDpM5lSt4VImDDi4.jpg",
           "stills": [
@@ -1460,7 +1460,49 @@
       "episodeCount": 1,
       "profile": "https://image.tmdb.org/t/p/original/6zfuSfLGtLXtFxXBUftMQbgfH6q.jpg",
       "inCharacter": null
+    },
+    {
+      "name": "Maria Bamford",
+      "character": "Pema (voice)",
+      "episodeCount": 19,
+      "profile": "https://image.tmdb.org/t/p/original/7nhgW2aGeSEL9aN3ThhM8KXwzmh.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Jim Cummings",
+      "character": "Deep Voice Narrator / Karu (voice)",
+      "episodeCount": 4,
+      "profile": "https://image.tmdb.org/t/p/original/c0sQPRCM5Ri3F4gVyxPr4AcPmIq.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Zach Callison",
+      "character": "Skoochy (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/nyUKVTJeIfcwIcZkdqmHjZOpLfE.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Kevin Michael Richardson",
+      "character": "Old Salt (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/xXt9Nh7RAT5bOen66TaXreNYmCl.jpg",
+      "inCharacter": null
+    },
+    {
+      "name": "Nicholas Braico",
+      "character": "Tarrlok - age 3, 5, and 7 (voice)",
+      "episodeCount": 2,
+      "profile": null,
+      "inCharacter": "https://static.tvmaze.com/uploads/images/original_untouched/1/3612.jpg"
+    },
+    {
+      "name": "Gary Cole",
+      "character": "Dai Li Sergeant / Rich Man (voice)",
+      "episodeCount": 2,
+      "profile": "https://image.tmdb.org/t/p/original/uWsqIlfHbyxkmBJLmq2mR93musF.jpg",
+      "inCharacter": null
     }
   ],
-  "generatedAt": "2026-07-23T19:58:10.973Z"
+  "generatedAt": "2026-08-06T01:02:41.155Z"
 }

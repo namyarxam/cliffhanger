@@ -359,7 +359,7 @@ async function fetchWikipediaSummaries(showName, maxSeason, verify = null) {
     // number; the next description cell is that episode's summary. Empty vevent
     // spacer rows carry no title cell and are ignored, so they cannot desync
     // the pairing.
-    const out = new Map();
+    const rows = [];
     let season = pageSeason ?? 1;
     let prevEp = 0;
     let curEp = null;
@@ -382,11 +382,48 @@ async function fetchWikipediaSummaries(showName, maxSeason, verify = null) {
         prevEp = curEp;
         const ep = curEp;
         curEp = null;
-        // The gate. Anything past the boundary never enters the dataset.
-        if (season > maxSeason) continue;
         const text = cleanHtml(m[2]);
-        if (text.length > 80) out.set(`${season}x${ep}`, text);
+        if (text.length > 80) rows.push({ season, ep, text });
       }
+    }
+
+    // A per-season article may number its episodes OVERALL rather than
+    // in-season, and when it carries only one numeric column there is nothing
+    // in the row to say which. Broadchurch series 2 numbers its eight episodes
+    // 9-16; TMDB numbers them 1-8, so every key missed and the season read as
+    // uncovered while the log cheerfully reported "8 summaries (S2:8)".
+    //
+    // "Starts above 1" is NOT sufficient evidence on its own, and assuming it
+    // was nearly corrupted the dataset: Falling Skies season 2 yields only 3 of
+    // its 10 rows, numbered 8-10, and rebasing those to 1-3 would have filed
+    // three late episodes' summaries under the season opener. Wrong plot text
+    // attached to a real episode is far worse than a season with no text at all,
+    // because nothing downstream can see it.
+    //
+    // So the rebase demands the full pattern of a continued overall count:
+    // every episode of the season present, contiguous, and starting exactly
+    // where the preceding seasons left off. Without TMDB's season sizes to
+    // check against, it does not fire at all.
+    const expected = verify?.seasonSizes?.[pageSeason];
+    const priorEpisodes = pageSeason
+      ? Object.entries(verify?.seasonSizes ?? {})
+          .filter(([n]) => Number(n) < pageSeason)
+          .reduce((a, [, size]) => a + size, 0)
+      : 0;
+    if (pageSeason !== null && expected && rows.length === expected && rows[0].ep > 1) {
+      const contiguous = rows.every((r, i) => i === 0 || r.ep === rows[i - 1].ep + 1);
+      const offset = rows[0].ep - 1;
+      if (contiguous && offset === priorEpisodes) {
+        console.log(`    · "${title}" numbers episodes ${rows[0].ep}-${rows[rows.length - 1].ep} (overall) — rebased to 1-${rows.length}`);
+        for (const r of rows) r.ep -= offset;
+      }
+    }
+
+    const out = new Map();
+    for (const r of rows) {
+      // The gate. Anything past the boundary never enters the dataset.
+      if (r.season > maxSeason) continue;
+      out.set(`${r.season}x${r.ep}`, r.text);
     }
 
     if (out.size > 0) {
@@ -648,6 +685,39 @@ async function build({ showName, slug, through: throughArg }) {
   console.log(`\n✓ ${outPath}`);
   const inChar = cast.filter(c => c.inCharacter).length;
   console.log(`  ${backdrops.length} textless backdrops · ${stillCount} episode stills (${poolCount} in pool) · ${cast.length} cast (${inChar} in-character)\n`);
+
+  // Did the summaries we parsed actually LAND on episodes?
+  //
+  // These are different questions and only the first was ever asked. Broadchurch
+  // parsed 8 summaries for season 2 and attached 0: its per-season article
+  // numbers episodes 9-16 (overall) while TMDB numbers them 1-8, so every key
+  // missed. The log said "8 summaries (S2:8)" and looked like success, then
+  // eligibility read 0% coverage and bounded the show to season 1.
+  //
+  // A season Wikipedia never covered is fine and expected — that is the lag this
+  // pipeline is built around. A season Wikipedia DID cover that we failed to
+  // attach is always a bug in this file.
+  const mismatched = [];
+  for (const s of seasons) {
+    const claimed = [...wiki.keys()].filter(k => Number(k.split('x')[0]) === s.season).length;
+    const attached = s.episodes.filter(e => e.plot).length;
+    if (claimed > 0 && attached < claimed * 0.8) mismatched.push({ season: s.season, claimed, attached });
+  }
+  if (mismatched.length) {
+    console.error('✗ episode-key mismatch — summaries were parsed but did not attach:\n');
+    for (const m of mismatched) {
+      const got = [...wiki.keys()]
+        .filter(k => Number(k.split('x')[0]) === m.season)
+        .map(k => k.split('x')[1]);
+      console.error(
+        `    S${m.season}: parsed ${m.claimed}, attached ${m.attached}` +
+          `\n      Wikipedia episode numbers: ${got.join(',')}` +
+          `\n      TMDB episode numbers:      ${seasons.find(s => s.season === m.season).episodes.map(e => e.episode).join(',')}`,
+      );
+    }
+    console.error('\n  The dataset was written, but these seasons will read as uncovered downstream.\n');
+    process.exitCode = 1;
+  }
 }
 
 // ---------------------------------------------------------------- cli
