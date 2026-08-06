@@ -1,5 +1,6 @@
 import { memo, useState, useRef, useMemo } from 'react';
 import { View, Text, StyleSheet, PanResponder, LayoutChangeEvent } from 'react-native';
+import * as Haptics from 'expo-haptics';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 
@@ -38,52 +39,125 @@ function RatingSelector({ rating, onRate, onDragStart, onDragEnd }: Props) {
   const [tempRating, setTempRating] = useState<number | null>(null);
   const trackPageX = useRef(0);
 
+  // The pan responder is created ONCE (see the useRef below) and lives for
+  // the component's whole life, so everything it reads has to come through
+  // refs — props and state captured in its closures are frozen at mount.
+  // Recreating it per render is the classic PanResponder bug: a re-render
+  // mid-drag (which setTempRating guarantees) swaps in a fresh responder
+  // whose internal gestureState restarts, and any math built on it glitches.
+  const trackWidthRef = useRef(0);
+  trackWidthRef.current = trackWidth;
+  const ratingRef = useRef(rating);
+  ratingRef.current = rating;
+  const callbacksRef = useRef({ onRate, onDragStart, onDragEnd });
+  callbacksRef.current = { onRate, onDragStart, onDragEnd };
+
   const displayRating = tempRating ?? rating;
   const color = displayRating ? getUserRatingColor(displayRating) : theme.textDim;
 
-  function pageXToRating(pageX: number): number {
+  function pageXToRaw(pageX: number): number {
+    const w = trackWidthRef.current;
     const x = pageX - trackPageX.current;
-    const clamped = Math.max(0, Math.min(x, trackWidth));
-    const raw = 1.0 + (clamped / trackWidth) * 9.0;
-    // Magnetic snap to integers. Without this the slider rounds to 0.1
-    // increments uniformly — anyone aiming for a whole number has to land
-    // within the default ±0.05 of it. Widening the integer zone to ±0.10
-    // gives a soft "stick at whole numbers" feel while still letting users
-    // dial in 7.3 / 7.7 / etc. between integer ticks.
-    const MAGNETIC_RADIUS = 0.10;
-    const nearestInt = Math.round(raw);
-    if (Math.abs(raw - nearestInt) <= MAGNETIC_RADIUS) return nearestInt;
-    return Math.round(raw * 10) / 10;
+    const clamped = Math.max(0, Math.min(x, w));
+    return 1.0 + (clamped / w) * 9.0;
   }
 
   function ratingToX(r: number): number {
-    return ((r - 1.0) / 9.0) * trackWidth;
+    return ((r - 1.0) / 9.0) * trackWidthRef.current;
   }
 
-  const panResponder = PanResponder.create({
-    onStartShouldSetPanResponder: () => true,
-    onMoveShouldSetPanResponder: () => true,
-    onPanResponderGrant: (evt) => {
-      setDragging(true);
-      onDragStart?.();
-      setTempRating(pageXToRating(evt.nativeEvent.pageX));
-    },
-    onPanResponderMove: (evt) => {
-      setTempRating(pageXToRating(evt.nativeEvent.pageX));
-    },
-    onPanResponderRelease: (evt) => {
-      setDragging(false);
-      onDragEnd?.();
-      const finalRating = pageXToRating(evt.nativeEvent.pageX);
-      setTempRating(null);
-      onRate(finalRating);
-    },
-    onPanResponderTerminate: () => {
-      setDragging(false);
-      onDragEnd?.();
-      setTempRating(null);
-    },
-  });
+  /**
+   * Speed-adaptive scrubbing — the slider's position tracks accumulated
+   * finger *movement*, not finger *position*, and each movement's gain
+   * scales with its speed (the same idea as pointer acceleration, or the
+   * iOS scrubber's precision mode).
+   *
+   * Why: the track maps ~350pt onto 90 steps of 0.1, under 4pt per step —
+   * beneath finger accuracy, so an absolute mapping made tenths nearly
+   * unselectable. With gain, a flick still sweeps the whole range, while a
+   * slow deliberate drag runs at FINE_GAIN, where one 0.1 step costs ~25pt
+   * of travel.
+   *
+   * The integer magnet only engages at speed. When fine-tuning it is off —
+   * at the old always-on ±0.10 radius, x.9 and x.1 snapped to the integer
+   * and were literally impossible to select.
+   */
+  const FINE_GAIN = 0.15; // floor; slow drags run here
+  const FULL_SPEED = 0.5; // finger speed (pt/ms) at which gain reaches 1
+  const dragValue = useRef(0); // unrounded 1..10 accumulator during a drag
+  const lastPageX = useRef(0); // deltas and speed come from raw positions —
+  const lastMoveTime = useRef(0); // never from gestureState's bookkeeping
+  const gainAvg = useRef(1); // smoothed so gain doesn't flutter per-event
+  const lastTicked = useRef<number | null>(null); // last haptic'd display value
+
+  function displayed(raw: number, gain: number): number {
+    const nearestInt = Math.round(raw);
+    if (gain > 0.5 && Math.abs(raw - nearestInt) <= 0.1) return nearestInt;
+    return Math.round(raw * 10) / 10;
+  }
+
+  function tick(value: number) {
+    if (value === lastTicked.current) return;
+    const wasInteger = value === Math.round(value);
+    // Integers always click. Tenths only click in fine mode — a full-range
+    // flick crosses ninety of them, which reads as buzz, not detents.
+    if (wasInteger) void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+    else if (gainAvg.current <= 0.5) void Haptics.selectionAsync();
+    lastTicked.current = value;
+  }
+
+  const panResponder = useRef(
+    PanResponder.create({
+      onStartShouldSetPanResponder: () => true,
+      onMoveShouldSetPanResponder: () => true,
+      onPanResponderGrant: (evt) => {
+        setDragging(true);
+        callbacksRef.current.onDragStart?.();
+        const { pageX, timestamp } = evt.nativeEvent;
+        const current = ratingRef.current;
+        // Touching at/near the thumb picks it up in place, so a fine-tune
+        // starts from the exact current value instead of wherever the finger
+        // landed. Touching elsewhere jumps, keeping tap-to-set.
+        const grabbed =
+          current != null && Math.abs(pageX - trackPageX.current - ratingToX(current)) < 28;
+        dragValue.current = grabbed ? current : pageXToRaw(pageX);
+        lastPageX.current = pageX;
+        lastMoveTime.current = timestamp;
+        gainAvg.current = 1;
+        lastTicked.current = null;
+        setTempRating(displayed(dragValue.current, 1));
+      },
+      onPanResponderMove: (evt) => {
+        const { pageX, timestamp } = evt.nativeEvent;
+        const delta = pageX - lastPageX.current;
+        const dt = timestamp - lastMoveTime.current;
+        lastPageX.current = pageX;
+        lastMoveTime.current = timestamp;
+        if (dt <= 0) return;
+        const speed = Math.abs(delta) / dt; // pt/ms, platform-independent
+        const target = Math.min(1, speed / FULL_SPEED);
+        gainAvg.current = gainAvg.current * 0.7 + target * 0.3;
+        const gain = Math.max(FINE_GAIN, gainAvg.current);
+        const next = dragValue.current + (delta / trackWidthRef.current) * 9.0 * gain;
+        dragValue.current = Math.max(1, Math.min(10, next));
+        const shown = displayed(dragValue.current, gain);
+        tick(shown);
+        setTempRating(shown);
+      },
+      onPanResponderRelease: () => {
+        setDragging(false);
+        callbacksRef.current.onDragEnd?.();
+        const finalRating = displayed(dragValue.current, gainAvg.current);
+        setTempRating(null);
+        callbacksRef.current.onRate(finalRating);
+      },
+      onPanResponderTerminate: () => {
+        setDragging(false);
+        callbacksRef.current.onDragEnd?.();
+        setTempRating(null);
+      },
+    }),
+  ).current;
 
   const trackRef = useRef<View>(null);
 
