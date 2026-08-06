@@ -22,7 +22,12 @@ export const qk = {
   airingToday: (userId: string | undefined) => ['airingToday', userId] as const,
   watchedCounts: (userId: string | undefined) => ['watchedCounts', userId] as const,
   returnAnnouncements: (userId: string | undefined) => ['returnAnnouncements', userId] as const,
-  popular: (userId: string | undefined, limit?: number) => ['popular', userId, limit] as const,
+  // The limit element is omitted, not set to undefined, when absent: React
+  // Query's partial matcher compares filter keys index-by-index, and an
+  // explicit trailing `undefined` fails against a stored `25` — so the
+  // limit-less form used as an invalidation filter would match nothing.
+  popular: (userId: string | undefined, limit?: number) =>
+    limit === undefined ? (['popular', userId] as const) : (['popular', userId, limit] as const),
   airingThisWeek: (userId: string | undefined) => ['airingThisWeek', userId] as const,
   topRated: (userId: string | undefined) => ['topRated', userId] as const,
   displayList: (userId: string | undefined) => ['displayList', userId] as const,
@@ -91,6 +96,29 @@ export function invalidateProgress(
     qk.watchedCounts(userId),
     qk.recaps(userId),
   ]) {
+    queryClient.invalidateQueries({ queryKey: key });
+  }
+}
+
+/**
+ * Invalidate the Explore rails — Popular with Friends, Airing This Week,
+ * Top Rated. All three exclude every show the caller has a user_shows row
+ * for (muted included), so they go stale exactly when the TRACKED SET
+ * changes: adding a show, removing one, or muting an untracked one.
+ *
+ * Deliberately NOT part of invalidateProgress. Progress marks fire on every
+ * episode tap and never change the exclusion — but tab screens stay mounted,
+ * so an invalidation here refetches three rails immediately, not lazily.
+ * The reverse failure is why this exists: muting from the show-detail screen
+ * invalidated progress keys only, and the muted show sat in Explore's
+ * mounted, never-refetching carousels indefinitely.
+ */
+export function invalidateDiscover(
+  queryClient: { invalidateQueries: (o: { queryKey: readonly unknown[] }) => unknown },
+  userId: string | undefined,
+) {
+  if (!userId) return;
+  for (const key of [qk.popular(userId), qk.airingThisWeek(userId), qk.topRated(userId)]) {
     queryClient.invalidateQueries({ queryKey: key });
   }
 }

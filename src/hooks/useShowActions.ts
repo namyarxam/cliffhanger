@@ -14,7 +14,7 @@ import {
 } from '@/src/lib/watchlist';
 import { addListItem, removeListItem } from '@/src/lib/lists';
 import { silentCatch } from '@/src/lib/errorLog';
-import { qk, invalidateProgress } from '@/src/lib/queryKeys';
+import { qk, invalidateProgress, invalidateDiscover } from '@/src/lib/queryKeys';
 import type { ShowFull, Season, WatchStatus, UserShow } from '@/src/lib/types';
 
 // Walk back one episode within a season, or to the last episode of the prior
@@ -134,11 +134,13 @@ export function useShowActions(deps: ShowActionsDeps) {
         setUserShow(prev => prev ? { ...prev, current_season: currentSeason, current_episode: currentEpisode } : null);
       }
       invalidateMyShows();
+      // The tracked set changed — Explore's rails exclude tracked shows.
+      invalidateDiscover(queryClient, userId);
     } catch (e) {
       silentCatch('show:addWithStatus')(e);
       setUserShow(null);
     }
-  }, [userId, show, setUserShow, invalidateMyShows]);
+  }, [userId, show, setUserShow, invalidateMyShows, queryClient]);
 
   const handleStatusChange = useCallback(async (status: WatchStatus, opts?: { confirm?: boolean }) => {
     if (!userId || !id || !userShow) return;
@@ -154,6 +156,8 @@ export function useShowActions(deps: ShowActionsDeps) {
           await removeShow(userId, id);
           setUserShow(null);
           invalidateMyShows();
+          // The tracked set changed — the show may re-enter Explore's rails.
+          invalidateDiscover(queryClient, userId);
         } catch (e) { silentCatch('show:remove')(e); }
       };
       if (!confirm) {
@@ -211,7 +215,7 @@ export function useShowActions(deps: ShowActionsDeps) {
         setUserShow(prevUserShow);
       }
     }
-  }, [userId, id, userShow, show, setUserShow, setWatchedEps, refetchWatchedEps, invalidateMyShows]);
+  }, [userId, id, userShow, show, setUserShow, setWatchedEps, refetchWatchedEps, invalidateMyShows, queryClient]);
 
   const handleCatchUp = useCallback(async () => {
     if (!userId || !id || !show) return;
@@ -310,6 +314,8 @@ export function useShowActions(deps: ShowActionsDeps) {
         lastAiredAirdate: lastAired?.airdate ?? null,
         totalAiredEpisodes: countAiredEpisodes(show.seasons),
       });
+      // Auto-add put the show into the tracked set — Explore must drop it.
+      invalidateDiscover(queryClient, userId);
       const targetSeason = show.seasons.find(s => s.number === season);
       const targetEp = targetSeason?.episodes.find(e => e.number === episode);
       const tapCaughtUp = lastAired != null && season === lastAired.season && episode === lastAired.episode;
@@ -363,7 +369,7 @@ export function useShowActions(deps: ShowActionsDeps) {
     } catch {
       refetchWatchedEps();
     }
-  }, [userId, id, show, userShow, setUserShow, setWatchedEps, refetchWatchedEps, invalidateMyShows]);
+  }, [userId, id, show, userShow, setUserShow, setWatchedEps, refetchWatchedEps, invalidateMyShows, queryClient]);
 
   const handleToggleNotify = useCallback(async () => {
     if (!userId || !id || !userShow) return;

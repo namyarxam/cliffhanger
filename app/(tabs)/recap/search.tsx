@@ -43,7 +43,7 @@ import { searchShows } from '@/src/lib/data';
 import { listRecaps } from '@/src/lib/recaps';
 import type { RecapListEntry } from '@/src/lib/recaps';
 import { addShow, getUserShows } from '@/src/lib/watchlist';
-import { qk } from '@/src/lib/queryKeys';
+import { qk, invalidateDiscover } from '@/src/lib/queryKeys';
 import { silentCatch } from '@/src/lib/errorLog';
 import {
   getRecapSearchState,
@@ -313,6 +313,8 @@ function ResultRow({
       await addShow(userId!, show.id, 'currently_watching', show.title, show.image, show.network);
       queryClient.invalidateQueries({ queryKey: qk.userShows.all(userId) });
       queryClient.invalidateQueries({ queryKey: qk.recaps(userId) });
+      // Newly tracked — Explore's rails exclude tracked shows.
+      invalidateDiscover(queryClient, userId);
       onOpenShow(); // set progress there; the recap unlocks with it
     });
 
