@@ -200,14 +200,18 @@ export async function buildQueue(db, { probe = true } = {}) {
 
 export function printQueue({ stale, errors, requests, reportsBySlug }) {
   const today = new Date().toISOString().slice(0, 10);
+  // A deadline slightly in the past is the OPPOSITE of a dead show: the next
+  // season premiered while the library lagged, so returning viewers are
+  // hitting the gap right now. Only a deadline years past means the coverage
+  // has had its chance and stagnated — those were bounded at generation and
+  // will not improve; listing them as waiting would cry wolf weekly.
+  const staleCutoff = new Date(Date.now() - 400 * 86400e3).toISOString().slice(0, 10);
   const ready = stale.filter(s => s.ready);
-  // Two very different kinds of not-ready. A recent finale is WAITING —
-  // Wikipedia catches up in days to weeks and the show becomes ready on its
-  // own. A show whose next season premiered YEARS ago was bounded at
-  // generation time by coverage that has already had years to improve and
-  // hasn't; listing it as waiting would cry wolf in every weekly report.
+  const overdue = stale.filter(
+    s => !s.ready && s.deadline && s.deadline < today && s.deadline >= staleCutoff,
+  );
   const waiting = stale.filter(s => !s.ready && !(s.deadline && s.deadline < today));
-  const unlikely = stale.filter(s => !s.ready && s.deadline && s.deadline < today);
+  const unlikely = stale.filter(s => !s.ready && s.deadline && s.deadline < staleCutoff);
 
   const line = s => {
     const seasons = `S${s.missing.join(',S')}`;
@@ -222,6 +226,12 @@ export function printQueue({ stale, errors, requests, reportsBySlug }) {
     console.log(`\n▸ READY TO EXTEND (${ready.length}) — soonest deadline first`);
     for (const s of ready) console.log(line(s));
     console.log(`\n    node scripts/recap.mjs extend --slug <slug>`);
+  }
+  if (overdue.length) {
+    console.log(
+      `\n▸ OVERDUE (${overdue.length}) — the next season already premiered; viewers are hitting this gap NOW. Coverage still short: check whether Wikipedia moved, or whether the probe is missing the article.`,
+    );
+    for (const s of overdue) console.log(line(s));
   }
   if (waiting.length) {
     console.log(`\n▸ WAITING ON WIKIPEDIA (${waiting.length}) — self-resolves, re-check next week`);
