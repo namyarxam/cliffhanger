@@ -470,7 +470,30 @@ async function main() {
       continue;
     }
 
-    const { error: showErr } = await db.from('recap_shows').upsert(show, { onConflict: 'slug' });
+    // UPDATE-or-INSERT rather than upsert, because recap_shows carries TWO
+    // unique indexes — slug (primary key) and show_id — and Postgres arbitrates
+    // ON CONFLICT against exactly one of them. `upsert(..., {onConflict:'slug'})`
+    // therefore raises on the show_id index instead of resolving:
+    //
+    //   duplicate key value violates unique constraint "recap_shows_show_id_key"
+    //
+    // Every upload until now was a first insert for its slug, so no row held
+    // that show_id yet and the second index never fired. Re-uploading an
+    // existing show has never once worked — which is precisely the operation
+    // "a new season aired, add it" needs, so the update path was broken before
+    // anything ever tried to use it.
+    const { data: existing, error: findErr } = await db
+      .from('recap_shows')
+      .select('slug')
+      .eq('slug', show.slug)
+      .maybeSingle();
+    if (findErr) {
+      console.error(`  ✗ recap_shows lookup: ${findErr.message}`);
+      continue;
+    }
+    const { error: showErr } = existing
+      ? await db.from('recap_shows').update(show).eq('slug', show.slug)
+      : await db.from('recap_shows').insert(show);
     if (showErr) {
       console.error(`  ✗ recap_shows: ${showErr.message}`);
       continue;
