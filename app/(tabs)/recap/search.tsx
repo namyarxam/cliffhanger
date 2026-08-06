@@ -31,7 +31,7 @@ import {
 import { Image } from 'expo-image';
 import { useRouter } from 'expo-router';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { useQuery, useQueryClient } from '@tanstack/react-query';
+import { useQuery, useQueryClient, keepPreviousData } from '@tanstack/react-query';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
@@ -60,20 +60,29 @@ export default function RecapSearchScreen() {
   const [query, setQuery] = useState('');
   const debounced = useDebounce(query, 350);
 
+  // Results and their recap states arrive as ONE query, each row already
+  // paired with its state. They used to be two — TVMaze first, then the
+  // state RPC keyed on the returned ids — which gave every new results page
+  // a couple of frames where rows rendered with a stale or default
+  // affordance ("Track" on a show that needed "Request") before the second
+  // fetch landed. Atomic pairs make that window unrepresentable.
+  //
+  // keepPreviousData holds the old page while the next one is in flight;
+  // old rows carry their own old states, so what's on screen is always
+  // internally consistent, just momentarily previous.
   const resultsQ = useQuery({
     queryKey: ['recapSearch', debounced],
-    queryFn: () => searchShows(debounced),
+    queryFn: async () => {
+      const shows = await searchShows(debounced);
+      const states = userId
+        ? await getRecapSearchState(shows.map(s => s.id))
+        : new Map<string, RecapSearchState>();
+      return shows.map(show => ({ show, state: states.get(show.id) ?? null }));
+    },
     enabled: debounced.trim().length > 1,
+    placeholderData: keepPreviousData,
   });
   const results = resultsQ.data ?? [];
-
-  // One RPC round trip for the whole results page: which of these ids have
-  // recaps, which were declined, how many requested, did I request.
-  const stateQ = useQuery({
-    queryKey: ['recapSearchState', results.map(r => r.id).join(',')],
-    queryFn: () => getRecapSearchState(results.map(r => r.id)),
-    enabled: results.length > 0 && !!userId,
-  });
 
   const trackedQ = useQuery({
     queryKey: qk.userShows.all(userId),
@@ -86,7 +95,7 @@ export default function RecapSearchScreen() {
   );
 
   const refreshStates = useCallback(
-    () => queryClient.invalidateQueries({ queryKey: ['recapSearchState'] }),
+    () => queryClient.invalidateQueries({ queryKey: ['recapSearch'] }),
     [queryClient],
   );
 
@@ -132,19 +141,19 @@ export default function RecapSearchScreen() {
 
       <FlatList
         data={results}
-        keyExtractor={item => item.id}
+        keyExtractor={item => item.show.id}
         keyboardShouldPersistTaps="handled"
         contentContainerStyle={styles.list}
         renderItem={({ item }) => (
           <ResultRow
-            show={item}
-            state={stateQ.data?.get(item.id) ?? null}
-            tracked={trackedIds.has(item.id)}
+            show={item.show}
+            state={item.state}
+            tracked={trackedIds.has(item.show.id)}
             userId={userId}
             styles={styles}
             theme={theme}
             onChanged={refreshStates}
-            onOpenShow={() => router.push(`/show/${item.id}`)}
+            onOpenShow={() => router.push(`/show/${item.show.id}`)}
             onOpenRecapTab={() => router.push('/recap')}
           />
         )}
@@ -250,7 +259,10 @@ function ResultRow({
       subtitle = `${state.requests} ${state.requests === 1 ? 'person wants' : 'people want'} this`;
     }
     trailing = (
-      <Pressable disabled={busy || !state} onPress={() => act(() => requestRecap(userId!, show))} hitSlop={10}>
+      // state === null is now definitive (no recap, no requests) rather than
+      // "not loaded yet" — the row and its state arrive together — so the
+      // button no longer waits on it.
+      <Pressable disabled={busy} onPress={() => act(() => requestRecap(userId!, show))} hitSlop={10}>
         <View style={styles.trailing}>
           <FontAwesome name="plus" size={11} color={theme.accent} />
           <Text style={styles.trailingAction}>Request</Text>
