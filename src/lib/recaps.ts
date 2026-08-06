@@ -2,12 +2,17 @@
 //
 // Recaps are not bundled into the app. A finale airs and the recap has to
 // exist that week, which a binary release cycle cannot do. They are generated
-// offline (scripts/fetch-recap.mjs → generate-spine.mjs → upload-recap.mjs)
-// and read from here.
+// offline and read from here.
+//
+// The generation pipeline (fetch → spine → upload) lived in scripts/ and was
+// removed to be rebuilt; `git show d035de6:scripts/` has all of it. Nothing in
+// the app ever imported it, so its absence changes no runtime behaviour — but
+// it does mean the library is currently read-only: no new show, no new season,
+// and no fix for a recap someone reports.
 //
 // Frames arrive already composed. The pairing of a beat with its picture, and
-// of a character with a cast photo, happens once at upload — see the note at
-// the top of upload-recap.mjs. This module orders frames and nothing else.
+// of a character with a cast photo, happened once at upload. This module orders
+// frames and nothing else.
 //
 // THE SEASON CAP IS NOT ENFORCED HERE
 //
