@@ -143,12 +143,20 @@ export async function fetchShow(id: string): Promise<ShowFull> {
   const episodes: TVMazeEpisode[] = data._embedded?.episodes ?? [];
   const seasons = groupEpisodes(episodes);
 
-  // Cast: prefer character image (recognizable in costume) over person headshot.
+  // Cast: prefer character image (recognizable in costume) over person
+  // headshot — EXCEPT for animation, where the "character" is a drawing and
+  // the person is a voice actor. A cast row exists to name real people, so
+  // there the human face is the interesting image. (The recap pipeline makes
+  // the opposite call on purpose: recap cards depict the story, so animated
+  // shows get character art or nothing, never an actor's face.)
+  const animated = show.type === 'Animation';
   const castRaw: TVMazeCastEntry[] = data._embedded?.cast ?? [];
   const cast: CastMember[] = castRaw.map(entry => ({
     personName: entry.person?.name ?? 'Unknown',
     characterName: entry.character?.name ?? 'Unknown',
-    image: entry.character?.image?.medium ?? entry.person?.image?.medium ?? null,
+    image: animated
+      ? entry.person?.image?.medium ?? entry.character?.image?.medium ?? null
+      : entry.character?.image?.medium ?? entry.person?.image?.medium ?? null,
   }));
 
   const nextEp = data._embedded?.nextepisode;
