@@ -104,6 +104,311 @@
           "line": "Barksdale enforcer and the organisation's designated fall guy, confessing to a stack of murders including ones he did not commit."
         }
       ]
+    },
+    "2": {
+      "beats": [
+        {
+          "label": "S2 · Empire in trouble",
+          "text": "Stringer runs the corners while Avon serves out his sentence. Avon burns a supplier for a shorter bid, and New York cuts the Barksdales off.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Sets the supply crisis that pushes Stringer to Joe, which triggers everything else this season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · The Greek's docks",
+          "text": "Union chief Frank Sobotka smuggles containers for a crime boss called the Greek to save his dying docks. A container arrives full of dead women.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the parallel plot and the killing that becomes the season's investigative hook.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · A grudge detail",
+          "text": "Valchek's petty feud with Sobotka wins Daniels a detail. It stumbles onto the smuggling and realises Sobotka's docks are the Greek's pipeline.",
+          "anchorEpisode": 3,
+          "whyLoadBearing": "Explains why the detail exists and why it ends up pointed at the Greek instead of a street case.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Stringer moves",
+          "text": "Desperate for product, Stringer cuts a deal with Joe for his supply. Fearing D'Angelo will snitch from prison, he has him murdered and staged as suicide.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Two Stringer power plays that fracture the Barksdale family and reshape who supplies Baltimore.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Avon strikes back",
+          "text": "Avon, furious Stringer sold his territory to Joe, hires New York enforcer Brother Mouzone. Stringer tricks Omar into shooting Mouzone with a lie about Brandon.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "Opens the Avon/Stringer rift and creates two enemies who now know Stringer plays dirty.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · Sobotka silenced",
+          "text": "The detail traces the smuggling to the Greek and arrests Sobotka. He agrees to flip, but a bent FBI agent tips the Greeks off and Sobotka is murdered.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Explains why the docks storyline ends without prosecution and how the Greek walks away clean.",
+          "needsVerify": false
+        },
+        {
+          "label": "S2 · New pipeline",
+          "text": "Nick informs, but the Greek and Vondas have already fled the country. Joe takes over their pipeline, and the detail pivots to hunt him and Stringer.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Sets the S3-forward state: Joe is now the supply, Stringer is the new target.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Stringer and Joe now share Baltimore's drug supply, with the Greek's operation quietly folded into theirs. The detail is coming for both, and Avon is still watching from prison.",
+        "questions": [
+          "How will Avon respond from prison to the alliance Stringer built without him?",
+          "Now that Omar and Mouzone both know Stringer set them up, who moves first?",
+          "Can the detail bring Stringer and Joe down without Sobotka's testimony to lean on?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Stringer Bell",
+          "line": "Runs the Barksdales while Avon is inside; cut a supply deal with Joe against Avon's orders, had D'Angelo killed, and set Omar on Mouzone."
+        },
+        {
+          "name": "Avon Barksdale",
+          "line": "Still in prison, furious Stringer sold territory to Joe behind his back and hired Brother Mouzone to defend the corners."
+        },
+        {
+          "name": "Jimmy McNulty",
+          "line": "Detective who forced the harbor case back to Baltimore and joined the detail chasing the drug trade at the top."
+        },
+        {
+          "name": "Cedric Daniels",
+          "line": "Runs the new detail; scrapped his plan to leave the force and is now aimed at Stringer and Joe."
+        },
+        {
+          "name": "Proposition Joe",
+          "line": "East side kingpin who has taken over the Greek's Baltimore supply and is now Stringer's partner."
+        },
+        {
+          "name": "Omar Little",
+          "line": "Freelance stick-up artist; shot Mouzone after Stringer's lie about Brandon, then realised he had been played."
+        },
+        {
+          "name": "Brother Mouzone",
+          "line": "New York enforcer hired by Avon to hold the corners; survived Omar's ambush and knows Stringer set him up."
+        },
+        {
+          "name": "Frank Sobotka",
+          "line": "Stevedore union chief who smuggled for the Greek to fund the docks; killed by the Greeks before he could testify."
+        },
+        {
+          "name": "The Greek",
+          "line": "Baltimore's shadow smuggling boss; fled overseas with his lieutenant Vondas after a bent FBI contact tipped him off."
+        }
+      ]
+    },
+    "3": {
+      "beats": [
+        {
+          "label": "S3 · Corners Razed",
+          "text": "With Barksdale corners razed by the city, Stringer forms a dealer co-op to share supply. Young rival Marlo Stanfield refuses to join and starts taking corners.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the Marlo threat and Stringer's business-first pivot that will drive the whole season.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Hamsterdam",
+          "text": "Sick of the drug war, Major Colvin quietly designates three abandoned blocks where dealers can sell without arrest. Crime in his district plummets.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The season's central experiment; its collapse is the political event that reshapes the department and Carcetti's opening.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Avon Returns",
+          "text": "Avon Barksdale is paroled and demands war on Marlo, while Stringer wants to abandon the corners for real estate. Their partnership fractures.",
+          "anchorEpisode": 5,
+          "whyLoadBearing": "The schism at the top of the Barksdale organization sets up the mutual betrayal that ends it.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · D'Angelo's Death",
+          "text": "McNulty proves D'Angelo's jailhouse death was murder and confronts Brianna. Cornered by Avon, Stringer admits he ordered the hit to protect the family.",
+          "anchorEpisode": 8,
+          "whyLoadBearing": "The confession is the point of no return between the two men; every later betrayal traces to this moment.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Mutual Betrayal",
+          "text": "They sell each other out. Stringer hands Avon's address to Colvin; Avon feeds Stringer's location to Omar and Brother Mouzone.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The mechanism that removes both Barksdales from the board in a single stroke, leaving Marlo unopposed.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Stringer's End",
+          "text": "Omar and Mouzone corner Stringer in a half-built development and shoot him dead. McNulty arrests Avon the next day; Marlo watches from a distance.",
+          "anchorEpisode": 11,
+          "whyLoadBearing": "The vacuum Marlo will fill in season 4 is created here. Both faces of the old regime are gone.",
+          "needsVerify": false
+        },
+        {
+          "label": "S3 · Hamsterdam Falls",
+          "text": "The press exposes Hamsterdam. Rawls raids it, Colvin is forced out, and Carcetti uses the scandal to launch his mayoral campaign.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Ends Colvin's police career and gives Carcetti the platform his S4 mayoral run is built on.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "The Barksdale organization is gone — Stringer dead in a half-built condo, Avon back in prison. Marlo Stanfield is left standing on empty corners, and Hamsterdam is a scandal the whole city just watched fail.",
+        "questions": [
+          "Can Marlo take Baltimore without anyone left to stop him?",
+          "Does Carcetti's Hamsterdam speech actually get him City Hall?",
+          "Is there any way back for Colvin after being forced out in disgrace?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Marlo Stanfield",
+          "line": "A cold young dealer with a habit of killing witnesses; refused Stringer's co-op and now stands to inherit the streets uncontested."
+        },
+        {
+          "name": "Tommy Carcetti",
+          "line": "A white councilman who spent the season courting a run against Mayor Royce and now has Hamsterdam as his opening scandal."
+        },
+        {
+          "name": "Bunny Colvin",
+          "line": "The Western District major who invented Hamsterdam, publicly disgraced when the press found out and pushed out of the department."
+        },
+        {
+          "name": "Jimmy McNulty",
+          "line": "The homicide detective who chased Stringer for years; with Stringer dead he asks off the detail and starts seeing Beadie Russell."
+        },
+        {
+          "name": "Cedric Daniels",
+          "line": "The detail's commander, promoted into Colvin's old major's job, now openly together with prosecutor Rhonda Pearlman."
+        },
+        {
+          "name": "Roland Pryzbylewski (Prez)",
+          "line": "The detail's tech-savvy cop who just shot a Black plainclothes officer he mistook for a shooter; his police career is over."
+        },
+        {
+          "name": "Dennis 'Cutty' Wise",
+          "line": "A Barksdale enforcer paroled after fourteen years who walked away from the game and opened a boxing gym for local kids."
+        },
+        {
+          "name": "Omar Little",
+          "line": "The shotgun-toting stick-up artist who set Stringer up to be killed with Brother Mouzone after Stringer broke the Sunday truce trying to shoot him."
+        },
+        {
+          "name": "Bubbles",
+          "line": "The detail's veteran drug-addict informant, last seen alone with Colvin in the wreckage of Hamsterdam."
+        }
+      ]
+    },
+    "4": {
+      "beats": [
+        {
+          "label": "S4 · Bodies in vacants",
+          "text": "Marlo Stanfield's enforcers Chris and Snoop kill a rival dealer and seal him inside a boarded-up rowhouse — the method that will hide every body Marlo wants gone.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Establishes the vacants MO that becomes the season's central case and the investigation carried into S5.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Four boys",
+          "text": "Prez, now a middle-school teacher, watches four kids drift toward the corner: Michael, Randy, Namond, Dukie. Namond's mother pushes him to deal; Michael refuses Marlo's money.",
+          "anchorEpisode": 1,
+          "whyLoadBearing": "Introduces the four boys whose diverging fates are the season's spine and who must be recognisable in S5.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Colvin's study",
+          "text": "Retired major Bunny Colvin joins a university study at the same school, sorting the corner-bound kids from the rest. He sees Namond as one he might still pull back.",
+          "anchorEpisode": 9,
+          "whyLoadBearing": "Sets up Colvin's bond with Namond and the season's argument about which kids the city can still save.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Carcetti wins",
+          "text": "Scandals sink Mayor Royce, and Councilman Carcetti — a white politician in a Black city — takes the primary and the mayoralty, only to inherit a $54 million school deficit.",
+          "anchorEpisode": 6,
+          "whyLoadBearing": "Carcetti as mayor and the budget hole he's inherited are the political engine of S5.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Randy exposed",
+          "text": "Herc, chasing a bust of his own, lets Randy's name slip as a snitch. Marlo hears the boy talked, has his foster house firebombed, and Randy is sent to a group home.",
+          "anchorEpisode": 12,
+          "whyLoadBearing": "Randy's ruin is the season's clearest verdict on the police, and the outcome the returning viewer will remember first.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Michael turns",
+          "text": "Michael's abusive stepfather Devar returns from prison. With no one else to trust, Michael goes to Marlo; Chris beats Devar to death, binding Michael to Marlo for good.",
+          "anchorEpisode": 10,
+          "whyLoadBearing": "Michael's move into Marlo's orbit produces the young soldier who is central to S5.",
+          "needsVerify": false
+        },
+        {
+          "label": "S4 · Vacants opened",
+          "text": "Freamon opens the vacants and finds Marlo's dead. Bodie is killed after McNulty turns him, Sherrod dies on Bubbles's poison, Colvin adopts Namond, and Michael takes Bodie's corner.",
+          "anchorEpisode": 13,
+          "whyLoadBearing": "The finale sets S5's opening board: Freamon's case, McNulty back on it, Bubbles at rock bottom, Michael on the corner.",
+          "needsVerify": false
+        }
+      ],
+      "cliffhanger": {
+        "text": "Freamon has opened the vacants and grasped the scale of Marlo's killing. Carcetti has just inherited the mayoralty, a $54 million school deficit, and the biggest homicide investigation the city has ever seen.",
+        "questions": [
+          "Can Freamon build a case on Marlo before more bodies vanish?",
+          "Does Carcetti fund the vacants investigation, the schools, or neither?",
+          "What becomes of Michael, Dukie, and Randy now that their paths have split?"
+        ]
+      },
+      "characters": [
+        {
+          "name": "Marlo Stanfield",
+          "line": "The rising drug boss whose crew hides its bodies sealed inside abandoned rowhouses; the police are only just catching on."
+        },
+        {
+          "name": "Michael Lee",
+          "line": "Bright, guarded eighth-grader who went to Marlo for protection from his stepfather and is now Marlo's newest young soldier."
+        },
+        {
+          "name": "Chris Partlow",
+          "line": "Marlo's chief enforcer; kills quietly with Snoop and buries the bodies in vacants."
+        },
+        {
+          "name": "Tommy Carcetti",
+          "line": "New mayor of Baltimore, elected on reform, walking into office with a $54 million school deficit on his desk."
+        },
+        {
+          "name": "Lester Freamon",
+          "line": "Now running major crimes; has just opened the vacants and grasped the scale of Marlo's murders."
+        },
+        {
+          "name": "Jimmy McNulty",
+          "line": "Left the detail for Western patrol and a stable home life; returned to major crimes at season's end after turning Bodie."
+        },
+        {
+          "name": "Bunny Colvin",
+          "line": "Retired major from the Hamsterdam year; ran a school study of corner-bound kids and, at season's end, took Namond home to raise."
+        },
+        {
+          "name": "Namond Brice",
+          "line": "Wee-Bey's teenage son; pushed into the game by his mother, then rescued and adopted by Colvin."
+        },
+        {
+          "name": "Randy Wagstaff",
+          "line": "Foster kid marked as a snitch by Marlo; his foster mother was badly burned when the house was firebombed and he was sent to a group home."
+        },
+        {
+          "name": "Dukie Weems",
+          "line": "The other bright kid Prez tried to save; homeless, pushed up to a high school he can't handle, now working for Marlo."
+        },
+        {
+          "name": "Bubbles",
+          "line": "Longtime informant whose young friend Sherrod died on heroin Bubbles had poisoned for someone else; now in rehab, guilt-crushed."
+        }
+      ]
     }
   }
 }

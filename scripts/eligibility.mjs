@@ -249,9 +249,35 @@ export function evaluate(data) {
     warnings.push('short-form comedy — confirm it is serialised enough to be worth recapping');
   }
 
+  // --- the final season of a finished show is not worth writing -------------
+  //
+  // A recap answers "what do I need to remember before the next season". For
+  // the last season of a show that has ended there is no next season, so the
+  // only reader it could serve is someone who has already watched the whole
+  // thing — and list_recaps_for_user already files those under the spent tier,
+  // where the value is nostalgia rather than preparation.
+  //
+  // Forward-only by design. Shows that already hold their final season keep it:
+  // the cost of carrying it is a slightly longer recap for someone who finished
+  // the show, and that is not worth deleting reviewed content over.
+  const ended = /ended|canceled|cancelled|to be determined/i.test(data.status ?? '');
+  const generateThrough = ended ? Math.min(usableThrough, (data.totalSeasons ?? 0) - 1) : usableThrough;
+  if (ended && generateThrough < usableThrough) {
+    warnings.push(
+      `ended after S${data.totalSeasons} — generating through S${generateThrough}; ` +
+        `the final season has no next season to prepare for`,
+    );
+  }
+
   return {
-    ok: reasons.length === 0 && usableThrough > 0,
+    // usableThrough > 0 stays the liveness test. generateThrough can legitimately
+    // be 0 — a two-season show that ended, where only S1 is usable — and that is
+    // a show with nothing to write, not a show that failed a bar.
+    ok: reasons.length === 0 && usableThrough > 0 && generateThrough > 0,
     usableThrough,
+    // What the generator should actually be asked for. Callers pass THIS to
+    // --through; usableThrough remains the honest source-coverage number.
+    generateThrough,
     reasons,
     warnings,
     perSeason,

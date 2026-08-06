@@ -30,7 +30,7 @@
  *   node scripts/generate-spine.mjs --slug silo
  */
 
-import { readFile, writeFile } from 'node:fs/promises';
+import { readFile, writeFile, rename } from 'node:fs/promises';
 import { spawn } from 'node:child_process';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -322,22 +322,51 @@ async function main() {
       console.log(`  (bounded to S1-S${throughArg} of ${before} fetched)`);
     }
   }
+  // Generate only from this season on, merging into whatever the spine already
+  // holds.
+  //
+  // Without this, adding a season means regenerating the whole show, which
+  // rewrites text that has already been reviewed and shipped — so the cheap,
+  // safe operation (one new season) carried the cost and risk of the expensive
+  // one, and nobody ran it. Prior seasons still supply CONTEXT below; they are
+  // just not re-asked for.
+  const fromArg = argv.indexOf('--from') >= 0 ? Number(argv[argv.indexOf('--from') + 1]) : null;
+  if (fromArg && wholeShow) {
+    throw new Error('--from and --whole-show are incompatible: the whole-show call rewrites every season by definition');
+  }
+
+  const path = resolve(ROOT, `src/recap/data/${outName}`);
+  const out = { slug, generatedFor: show.title, seasons: {} };
+
+  // Seed from the existing spine so untargeted seasons survive byte-identically.
+  // EVERY existing season is carried, not just those below --from; the targets
+  // overwrite their own entries below. Seeding only the seasons under --from
+  // would silently drop anything above the range — regenerating S3 of a spine
+  // holding S1 and S5 would take S5 with it.
+  if (fromArg) {
+    const existing = JSON.parse(await readFile(path, 'utf8').catch(() => 'null'));
+    if (existing?.seasons) {
+      for (const [n, v] of Object.entries(existing.seasons)) out.seasons[n] = v;
+      const kept = Object.keys(out.seasons);
+      if (kept.length) console.log(`  (carrying existing S${kept.join(',S')})`);
+    }
+  }
+
+  const targets = show.seasons.filter(s => !fromArg || s.season >= fromArg);
+  if (!targets.length) throw new Error(`no seasons to generate (--from ${fromArg}, --through ${throughArg})`);
+
   console.log(
-    `\n▸ Generating spine for "${show.title}" (${show.seasons.length} seasons fetched)` +
+    `\n▸ Generating spine for "${show.title}" (${show.seasons.length} seasons fetched, ` +
+      `generating S${targets.map(s => s.season).join(',S')})` +
       `${wholeShow ? ' — whole-show mode, 1 call' : ''}${model ? ` — model ${model}` : ''}\n`,
   );
-
-  const out = { slug, generatedFor: show.title, seasons: {} };
 
   if (wholeShow) {
     process.stdout.write('  all seasons … ');
     const parsed = extractJSON(await askClaude(buildWholeShowPrompt(show), model));
-    for (const season of show.seasons) {
+    for (const season of targets) {
       const entry = parsed.seasons?.[String(season.season)];
-      if (!entry) {
-        console.warn(`\n    ⚠ S${season.season} missing from response`);
-        continue;
-      }
+      if (!entry) continue;
       out.seasons[season.season] = validateSeason(entry, season, `S${season.season}`);
     }
     const counts = Object.entries(out.seasons)
@@ -345,7 +374,9 @@ async function main() {
       .join(' ');
     console.log(counts);
   } else {
-    for (const season of show.seasons) {
+    for (const season of targets) {
+      // Prior context comes from the full fetched set, not from `targets` — an
+      // incremental run for S5 must still know that S1-S4 happened.
       const prior = show.seasons.filter(s => s.season < season.season).map(s => s.season);
       process.stdout.write(`  S${season.season} … `);
       const parsed = validateSeason(
@@ -359,9 +390,26 @@ async function main() {
     }
   }
 
-  const path = resolve(ROOT, `src/recap/data/${outName}`);
-  await writeFile(path, JSON.stringify(out, null, 2));
-  console.log(`\n✓ ${path}\n`);
+  // Every season we asked for must have come back. This used to `continue` past
+  // a missing season with a warning, which in a 500-show batch scrolled away
+  // unread — and the file still wrote, and upload still set through_season to
+  // whatever arrived. 145 seasons across 66 shows went missing that way, all of
+  // them looking downstream like shows that simply have fewer seasons.
+  const missing = targets.map(s => s.season).filter(n => !out.seasons[n]);
+  if (missing.length) {
+    throw new Error(
+      `S${missing.join(', S')} missing from the response — asked for ` +
+        `${targets.length} season(s), got ${targets.length - missing.length}. ` +
+        `Nothing written; re-run${wholeShow ? ' (whole-show mode drops seasons under length pressure; try per-season)' : ''}.`,
+    );
+  }
+
+  // Temp-and-rename: an incremental run holds already-approved seasons in this
+  // same file, so a partial write would corrupt shipped content.
+  const tmp = `${path}.tmp`;
+  await writeFile(tmp, JSON.stringify(out, null, 2));
+  await rename(tmp, path);
+  console.log(`\n✓ ${path} (S${Object.keys(out.seasons).join(',S')})\n`);
 }
 
 main().catch(err => {
