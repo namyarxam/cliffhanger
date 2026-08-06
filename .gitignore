@@ -48,9 +48,7 @@ supabase/.temp/
 /ios
 /android
 
-# Recap batch checkpoints — machine state, rewritten on every run
-src/recap/data/_batch-state.json
-# Audit findings and ranking debug — regenerated every run, not source of truth
-src/recap/data/*.audit.json
-src/recap/data/_candidates.debug.json
-src/recap/data/_repair-state.json
+# Recap generation working directory. The pipeline that wrote it was removed
+# and the recaps themselves live in Supabase; this only needs to exist again if
+# something is rebuilt to write here.
+src/recap/data/
