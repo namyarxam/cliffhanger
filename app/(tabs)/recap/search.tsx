@@ -1,6 +1,9 @@
-// Recap search — the one door into everything not already on the Recap tab.
+// Recap search — the one door into everything not already on the Recap tab,
+// and the filter for what IS. Typing matches your own recap library first
+// ("Your recaps", instant and local — the tab list outgrew scanning), with
+// TVMaze results below for everything you don't have.
 //
-// Every result lands in exactly one state, and the row says which:
+// Every TVMaze result lands in exactly one state, and the row says which:
 //
 //   available + tracked    → it's on your Recap tab already (lock state and
 //                            season chips live there, not here)
@@ -37,6 +40,8 @@ import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
 import { useDebounce } from '@/src/hooks/useDebounce';
 import { searchShows } from '@/src/lib/data';
+import { listRecaps } from '@/src/lib/recaps';
+import type { RecapListEntry } from '@/src/lib/recaps';
 import { addShow, getUserShows } from '@/src/lib/watchlist';
 import { qk } from '@/src/lib/queryKeys';
 import { silentCatch } from '@/src/lib/errorLog';
@@ -94,6 +99,35 @@ export default function RecapSearchScreen() {
     [trackedQ.data],
   );
 
+  // Your own recap library, filtered as you type. Same query key as the
+  // Recap tab, so this is usually served from cache. Filtered on the RAW
+  // query, not the debounced one — local matching is free, and the instant
+  // response is what makes it feel like a filter rather than a search.
+  const recapsQ = useQuery({
+    queryKey: qk.recaps(userId),
+    queryFn: listRecaps,
+    enabled: !!userId,
+  });
+  const myRecaps = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    if (q.length <= 1) return [];
+    return (recapsQ.data ?? [])
+      .filter(e => e.maxSeason >= 1 && e.title.toLowerCase().includes(q))
+      .sort(
+        (a, b) =>
+          a.title.toLowerCase().indexOf(q) - b.title.toLowerCase().indexOf(q) ||
+          a.title.localeCompare(b.title),
+      );
+  }, [recapsQ.data, query]);
+  const myRecapIds = useMemo(() => new Set(myRecaps.map(e => e.showId)), [myRecaps]);
+
+  // A show already listed under "Your recaps" doesn't need its TVMaze row —
+  // that row's whole state would be "on your Recap tab", one section up.
+  const globalResults = useMemo(
+    () => results.filter(r => !myRecapIds.has(r.show.id)),
+    [results, myRecapIds],
+  );
+
   const refreshStates = useCallback(
     () => queryClient.invalidateQueries({ queryKey: ['recapSearch'] }),
     [queryClient],
@@ -125,9 +159,12 @@ export default function RecapSearchScreen() {
         <ActivityIndicator style={styles.spinner} color={theme.textDim} />
       )}
 
-      {!resultsQ.isFetching && debounced.trim().length > 1 && results.length === 0 && (
-        <Text style={styles.emptyText}>Nothing found for “{debounced.trim()}”.</Text>
-      )}
+      {!resultsQ.isFetching &&
+        debounced.trim().length > 1 &&
+        results.length === 0 &&
+        myRecaps.length === 0 && (
+          <Text style={styles.emptyText}>Nothing found for “{debounced.trim()}”.</Text>
+        )}
 
       {debounced.trim().length <= 1 && (
         <View style={styles.intro}>
@@ -140,10 +177,31 @@ export default function RecapSearchScreen() {
       )}
 
       <FlatList
-        data={results}
+        data={globalResults}
         keyExtractor={item => item.show.id}
         keyboardShouldPersistTaps="handled"
         contentContainerStyle={styles.list}
+        ListHeaderComponent={
+          myRecaps.length > 0 ? (
+            <View style={styles.librarySection}>
+              <Text style={styles.sectionHeader}>Your recaps</Text>
+              {myRecaps.map(e => (
+                <MyRecapRow
+                  key={e.slug}
+                  entry={e}
+                  styles={styles}
+                  theme={theme}
+                  onOpen={() =>
+                    router.push(`/recap/${e.slug}?from=${e.maxSeason}&through=${e.maxSeason}`)
+                  }
+                />
+              ))}
+              {globalResults.length > 0 && (
+                <Text style={styles.sectionHeader}>Everything else</Text>
+              )}
+            </View>
+          ) : null
+        }
         renderItem={({ item }) => (
           <ResultRow
             show={item.show}
@@ -159,6 +217,45 @@ export default function RecapSearchScreen() {
         )}
       />
     </View>
+  );
+}
+
+/**
+ * A row from the viewer's own library. Tapping plays the latest finished
+ * season directly — the same default as the Recap tab's card hero; earlier
+ * seasons keep living behind the card's sheet on the tab.
+ */
+function MyRecapRow({
+  entry,
+  styles,
+  theme,
+  onOpen,
+}: {
+  entry: RecapListEntry;
+  styles: ReturnType<typeof createStyles>;
+  theme: Theme;
+  onOpen: () => void;
+}) {
+  return (
+    <Pressable
+      style={({ pressed }) => [styles.row, pressed && { opacity: 0.6 }]}
+      onPress={onOpen}
+    >
+      <Image
+        source={{ uri: entry.poster ?? entry.backdrop ?? undefined }}
+        style={styles.poster}
+        contentFit="cover"
+      />
+      <View style={styles.rowBody}>
+        <Text style={styles.rowTitle} numberOfLines={1}>
+          {entry.title}
+        </Text>
+        <Text style={styles.rowSubtitle} numberOfLines={1}>
+          Recap · through S{entry.maxSeason}
+        </Text>
+      </View>
+      <FontAwesome name="play" size={12} color={theme.accent} />
+    </Pressable>
   );
 }
 
@@ -343,6 +440,18 @@ const createStyles = (theme: Theme) =>
     list: {
       padding: 16,
       gap: 14,
+    },
+    // Matches the FlatList cell gap so library rows and network rows read as
+    // one continuous list with quiet section labels.
+    librarySection: {
+      gap: 14,
+    },
+    sectionHeader: {
+      fontSize: 11,
+      fontFamily: 'DMSans_700Bold',
+      color: theme.textFaint,
+      letterSpacing: 0.8,
+      textTransform: 'uppercase',
     },
     row: {
       flexDirection: 'row',
