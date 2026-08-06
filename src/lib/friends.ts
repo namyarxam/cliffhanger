@@ -128,6 +128,22 @@ export async function getFriends(userId: string): Promise<FriendWithProfile[]> {
     .filter((f): f is NonNullable<typeof f> => f !== null) as FriendWithProfile[];
 }
 
+/**
+ * Just the number, for the tab badge. A HEAD request with count — zero rows
+ * over the wire, where the badge poll used to pull every request row (and
+ * its profile joins) only to take .length.
+ */
+export async function getPendingRequestCount(userId: string): Promise<number> {
+  const { count, error } = await supabase
+    .from('friendships')
+    .select('*', { count: 'exact', head: true })
+    .eq('friend_id', userId)
+    .eq('status', 'pending');
+
+  if (error) throw error;
+  return count ?? 0;
+}
+
 export async function getPendingRequests(
   userId: string,
 ): Promise<FriendWithProfile[]> {

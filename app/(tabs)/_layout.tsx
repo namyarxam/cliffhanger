@@ -3,11 +3,12 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { View, Text, Pressable, StyleSheet } from 'react-native';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Tabs, usePathname } from 'expo-router';
+import * as Notifications from 'expo-notifications';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { useTheme } from '@/src/providers/ThemeProvider';
 import type { Theme } from '@/src/lib/theme';
 import { useAuth } from '@/src/providers/AuthProvider';
-import { getPendingRequests } from '@/src/lib/friends';
+import { getPendingRequestCount } from '@/src/lib/friends';
 import { qk } from '@/src/lib/queryKeys';
 import { silentCatch } from '@/src/lib/errorLog';
 
@@ -27,19 +28,36 @@ export default function TabLayout() {
   const queryClient = useQueryClient();
   const pathname = usePathname();
 
-  // Polled badge counts. refetchInterval handles the foreground polling;
-  // refetchIntervalInBackground=false pauses when the app backgrounds —
-  // wired up via the focusManager+AppState bridge in app/_layout.tsx,
-  // without which TanStack treats RN as permanently focused and the
-  // option is a no-op.
+  // Polled badge count — a HEAD count request, zero rows over the wire.
+  // 60s is a backstop, not the delivery path: friend requests arrive as
+  // pushes, and the listener below refreshes the badge the moment one
+  // lands in the foreground. refetchIntervalInBackground=false pauses the
+  // poll when the app backgrounds — wired up via the focusManager+AppState
+  // bridge in app/_layout.tsx, without which TanStack treats RN as
+  // permanently focused and the option is a no-op.
   const pendingRequestsCountQ = useQuery({
     queryKey: qk.pendingRequestCount(userId),
-    queryFn: async () => (await getPendingRequests(userId!)).length,
+    queryFn: () => getPendingRequestCount(userId!),
     enabled: !!userId,
-    refetchInterval: 10000,
+    refetchInterval: 60000,
     refetchIntervalInBackground: false,
   });
   const pendingCount = pendingRequestsCountQ.data ?? 0;
+
+  // Push-driven refresh: a friend-request notification received while the
+  // app is open updates the badge immediately instead of waiting out the
+  // poll. (Taps on notifications route via the handler in app/_layout.tsx;
+  // this one fires for foreground deliveries.)
+  useEffect(() => {
+    if (!userId) return;
+    const sub = Notifications.addNotificationReceivedListener(n => {
+      const data = n.request.content.data as { type?: string } | undefined;
+      if (data?.type === 'friend_request') {
+        queryClient.invalidateQueries({ queryKey: qk.pendingRequestCount(userId) });
+      }
+    });
+    return () => sub.remove();
+  }, [userId, queryClient]);
 
   // Forward query errors to Sentry. The pre-migration setInterval fetches
   // ran through silentCatch on every tick; after the TanStack switch the
