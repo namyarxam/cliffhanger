@@ -222,6 +222,61 @@ export default function ShowDetailScreen() {
     return behind;
   };
 
+  // Built once, rendered in state-dependent spots: above the fold while the
+  // user is evaluating an untracked/watchlisted show, after the rating and
+  // friends sections once it's finished.
+  const aboutSection = (
+    <View style={styles.aboutSection}>
+      {show.summary && (
+        <Text style={styles.aboutSummary}>{show.summary}</Text>
+      )}
+
+      {show.runtime != null && (
+        <Text style={styles.aboutRuntime}>~{show.runtime} min per episode</Text>
+      )}
+
+      {show.nextEpisode && show.status === 'Running' && (
+        <View style={styles.aboutNextEp}>
+          <Text style={styles.aboutNextEpLabel}>Next Episode</Text>
+          <Text style={styles.aboutNextEpTitle} numberOfLines={1}>
+            S{show.nextEpisode.season} · E{show.nextEpisode.number}
+            {show.nextEpisode.name ? ` — ${show.nextEpisode.name}` : ''}
+          </Text>
+          {show.nextEpisode.airdate && (
+            <Text style={styles.aboutNextEpDate}>
+              {formatAirdate(show.nextEpisode.airdate)}
+            </Text>
+          )}
+        </View>
+      )}
+
+      {show.cast.length > 0 && (
+        <View>
+          <Text style={styles.aboutSectionTitle}>Cast</Text>
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={styles.castRow}
+          >
+            {show.cast.slice(0, 12).map((c, i) => (
+              <View key={`${c.personName}-${i}`} style={styles.castCard}>
+                {c.image ? (
+                  <Image source={{ uri: c.image }} style={styles.castImage} contentFit="cover" transition={200} />
+                ) : (
+                  <View style={[styles.castImage, styles.castPlaceholder]}>
+                    <Text style={styles.castPlaceholderText}>👤</Text>
+                  </View>
+                )}
+                <Text style={styles.castCharacter} numberOfLines={1}>{c.characterName}</Text>
+                <Text style={styles.castPerson} numberOfLines={1}>{c.personName}</Text>
+              </View>
+            ))}
+          </ScrollView>
+        </View>
+      )}
+    </View>
+  );
+
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.content} scrollEnabled={scrollEnabled}>
@@ -568,60 +623,13 @@ export default function ShowDetailScreen() {
           </View>
         )}
 
-        {/* About — surface details before the user commits to the show.
-            Only shown for unadded shows; once added, the user's in action mode
-            and the pills/picker dominate the page. */}
-        {!userShow && (
-          <View style={styles.aboutSection}>
-            {show.summary && (
-              <Text style={styles.aboutSummary}>{show.summary}</Text>
-            )}
-
-            {show.runtime != null && (
-              <Text style={styles.aboutRuntime}>~{show.runtime} min per episode</Text>
-            )}
-
-            {show.nextEpisode && show.status === 'Running' && (
-              <View style={styles.aboutNextEp}>
-                <Text style={styles.aboutNextEpLabel}>Next Episode</Text>
-                <Text style={styles.aboutNextEpTitle} numberOfLines={1}>
-                  S{show.nextEpisode.season} · E{show.nextEpisode.number}
-                  {show.nextEpisode.name ? ` — ${show.nextEpisode.name}` : ''}
-                </Text>
-                {show.nextEpisode.airdate && (
-                  <Text style={styles.aboutNextEpDate}>
-                    {formatAirdate(show.nextEpisode.airdate)}
-                  </Text>
-                )}
-              </View>
-            )}
-
-            {show.cast.length > 0 && (
-              <View>
-                <Text style={styles.aboutSectionTitle}>Cast</Text>
-                <ScrollView
-                  horizontal
-                  showsHorizontalScrollIndicator={false}
-                  contentContainerStyle={styles.castRow}
-                >
-                  {show.cast.slice(0, 12).map((c, i) => (
-                    <View key={`${c.personName}-${i}`} style={styles.castCard}>
-                      {c.image ? (
-                        <Image source={{ uri: c.image }} style={styles.castImage} contentFit="cover" transition={200} />
-                      ) : (
-                        <View style={[styles.castImage, styles.castPlaceholder]}>
-                          <Text style={styles.castPlaceholderText}>👤</Text>
-                        </View>
-                      )}
-                      <Text style={styles.castCharacter} numberOfLines={1}>{c.characterName}</Text>
-                      <Text style={styles.castPerson} numberOfLines={1}>{c.personName}</Text>
-                    </View>
-                  ))}
-                </ScrollView>
-              </View>
-            )}
-          </View>
-        )}
+        {/* About — surface details before the user commits to the show, and
+            keep them for the two settled states (Watchlist, Finished), where
+            the page has room to be informative again. Only Watching drops it:
+            there the episode picker dominates, and mid-show is also where a
+            synopsis is closest to a spoiler. Above the pills' sections when
+            evaluating, below them once added — action mode leads. */}
+        {(!userShow || userShow.status === 'want_to_watch') && aboutSection}
 
         {/* Currently Watching: episode picker */}
         {userShow && userShow.status === 'currently_watching' && (
@@ -691,6 +699,7 @@ export default function ShowDetailScreen() {
                   })}
               </View>
             )}
+            {aboutSection}
           </>
         )}
         </View>
